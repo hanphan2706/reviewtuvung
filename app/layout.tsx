@@ -1,20 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Noto_Serif } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+import "./(marketing)/khoa-hoc/course-content.css";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
+  weight: "variable",
+});
+
+const notoSerif = Noto_Serif({
+  variable: "--font-noto-serif",
+  subsets: ["latin", "latin-ext", "vietnamese"],
+  display: "swap",
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
-  title: "anthichtuhoc",
-  description: "Vocabulary review and decks.",
+  title: "Ân thích tự học | Tiếng Anh & IELTS",
+  description:
+    "Khoá học tiếng Anh tổng quát, Pinball IELTS và coaching — học online; ôn từ vựng SRS.",
 };
 
 export default function RootLayout({
@@ -24,10 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      lang="vi"
+      className={`${geistMono.variable} ${notoSerif.variable} h-full antialiased`}
     >
-      <body className="min-h-full min-h-dvh flex flex-col bg-[#f5f5f7]">{children}</body>
+      <body className="flex min-h-dvh flex-col bg-[#f5f5f7] font-sans">{children}</body>
     </html>
   );
 }

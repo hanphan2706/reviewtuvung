@@ -2,24 +2,48 @@
 
 :root {
   --background: #f5f5f7;
-  --foreground: #171717;
+  --foreground: color-mix(in srgb, #000001 50%, #e2e2e5 50%);
+  --brand-purple: #4b2876;
+  --brand-purple-dark: #3d2660;
+  --font-sans-stack: "Helvetica Neue", Helvetica, ui-sans-serif, system-ui, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: #000001;
+  /** Chữ phụ: #000001 pha sáng, tông hơi xanh so với xám trung tính. */
+  --color-ink-muted: color-mix(in srgb, #000001 52%, #e8e8ec 48%);
+  --color-ink-faint: color-mix(in srgb, #000001 30%, #eceef0 70%);
+  --font-sans: var(--font-sans-stack);
+  --font-serif: var(--font-noto-serif), Georgia, serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
+/* Helvetica system stack; mặc định `body` dùng `ink` pha sáng (foreground). */
 html {
   background: #f5f5f7;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
   background: #f5f5f7;
   color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-sans-stack);
+  font-size: 1rem;
+  line-height: 1.65;
+  font-weight: 400;
+  font-synthesis: none;
+  font-feature-settings: "kern" 1, "liga" 1;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
 }
 
 @keyframes review-card-in {
@@ -35,4 +59,25 @@ body {
 
 .animate-review-card-in {
   animation: review-card-in 0.45s ease-out;
+}
+
+@keyframes on-tap-page-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-tap-page-in {
+  animation: on-tap-page-in 0.22s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-on-tap-page-in {
+    animation: none;
+  }
 }

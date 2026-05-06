@@ -6,6 +6,15 @@ export type UserId = string;
 
 export type Rating = "hard" | "ok" | "easy";
 
+/** Số lượt chấm điểm theo từng ngày (local), key `YYYY-MM-DD`. */
+export interface ReviewDayTally {
+  hard: number;
+  ok: number;
+  easy: number;
+}
+
+export type ReviewDayTalliesMap = Record<string, ReviewDayTally>;
+
 export interface UserSettings {
   dailyReviewLimit: number;
 }
@@ -21,6 +30,7 @@ export interface Word {
   id: string;
   userId: UserId;
   deckId: string;
+  /** Rich text (HTML được phép: b, strong, span color, br). */
   term: string;
   definition: string;
   createdAt: number;
@@ -40,4 +50,5 @@ export interface UserSrsPayload {
   decks: Deck[];
   words: Word[];
   settings: UserSettings;
+  reviewDayTallies: ReviewDayTalliesMap;
 }

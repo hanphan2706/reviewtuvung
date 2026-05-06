@@ -1,0 +1,304 @@
+/* Nội dung export Notion trong .course-page — ăn khớp tông trang landing (ink, brand tím, zinc). */
+/* Cùng hệ thống với trang: kế thừa từ body (font-sans = Helvetica stack trong globals). */
+.course-page {
+  --ink: #000001;
+  --ink-muted: color-mix(in srgb, #000001 52%, #e8e8ec 48%);
+  --brand: #4b2876;
+  --surface: #ffffff;
+  --border: rgb(212 212 216 / 0.75);
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.65;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.course-page * {
+  box-sizing: border-box;
+}
+
+/* Như export Notion: màu chữ link kế thừa từ mark/đoạn (highlight giữ tông). */
+.course-page a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.course-page .page-body {
+  min-width: 0;
+}
+
+.course-page h1,
+.course-page h2,
+.course-page h3 {
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+}
+
+.course-page h1 {
+  font-size: clamp(1.5rem, 1.1rem + 1.2vw, 1.875rem);
+}
+
+.course-page h3 {
+  font-size: 1.05rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0;
+  padding: 0.4rem 0.55rem;
+  border: 0;
+}
+
+.course-page strong {
+  font-weight: 600;
+  color: inherit;
+}
+
+.course-page p {
+  margin: 0.4rem 0 0.6rem;
+  line-height: 1.65;
+  color: var(--ink);
+  padding-left: 0.55rem;
+  padding-right: 0.15rem;
+  box-sizing: border-box;
+}
+
+.course-page p:first-of-type {
+  margin-top: 0;
+}
+
+.course-page em {
+  color: var(--ink-muted);
+}
+
+.course-page blockquote {
+  margin: 0.75rem 0 1.25rem;
+  padding: 0.9rem 1rem 0.9rem 1rem;
+  border-left: 3px solid color-mix(in srgb, var(--brand) 40%, #d4d4d8);
+  border-radius: 0;
+  background: rgb(250 250 250);
+  color: var(--ink);
+  font-size: 0.9375rem;
+}
+
+.course-page .bulleted-list,
+.course-page .numbered-list {
+  margin: 0.4rem 0 0.75rem 0.55rem;
+  padding-left: 1.35rem;
+  color: var(--ink);
+}
+
+.course-page .bulleted-list li,
+.course-page .numbered-list li {
+  margin: 0.35em 0;
+  padding-left: 0.1em;
+}
+
+.course-page .simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.9rem 0 1.25rem;
+  font-size: 0.9375rem;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: 0 1px 0 0 rgb(24 24 27 / 0.05);
+}
+
+.course-page .simple-table tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.course-page .simple-table tr:last-child {
+  border-bottom: 0;
+}
+
+.course-page .simple-table td,
+.course-page .simple-table th {
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+  color: var(--ink);
+  border: 0;
+}
+
+.course-page .simple-table td strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.course-page .simple-table p {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.course-page .callout {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 0;
+  padding: 0.9rem 1rem;
+  margin: 0.9rem 0 1.1rem;
+  box-shadow: 0 1px 0 0 rgb(228 228 231 / 0.6);
+}
+
+.course-page figure {
+  margin: 1rem 0;
+}
+
+.course-page img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+.course-page .link-to-page a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.55rem;
+  border-radius: 0;
+  background: color-mix(in srgb, var(--brand) 6%, #fff);
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid color-mix(in srgb, var(--brand) 20%, #e4e4e7);
+  font-size: 0.9375rem;
+}
+
+.course-page .link-to-page a:hover {
+  background: color-mix(in srgb, var(--brand) 10%, #fff);
+}
+
+/* Profile giáo viên: bỏ khung callout (viền/nền/bóng), giữ flex icon + nội dung. */
+.course-page figure.callout.course-teacher-profile {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0.5rem 0 1.1rem;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.course-page figure.callout.course-teacher-profile > div:first-child {
+  padding-top: 0.1em;
+  line-height: 0;
+  flex-shrink: 0;
+}
+
+.course-page figure.callout.course-teacher-profile > div:first-child img,
+.course-page figure.callout.course-teacher-profile > div:first-child .notion-static-icon,
+.course-page figure.callout.course-teacher-profile > div:first-child .icon {
+  display: block;
+  vertical-align: initial;
+  margin-right: 0;
+}
+
+.course-page figure.callout.course-teacher-profile > div:nth-child(2) {
+  min-width: 0;
+}
+
+.course-page figure.callout.course-teacher-profile p {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Profile: chỉ bold, không viền/khung (các thẻ course-teacher-inline-link trong General English). */
+.course-page .course-teacher-inline-link {
+  margin: 0.4rem 0 0.6rem;
+}
+
+/* Cùng tông xanh nước biển như chữ highlight-blue / link trong nội dung (vd. “ở đây”). */
+.course-page a.course-teacher-plain {
+  color: rgba(56, 125, 201, 1) !important;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, rgba(56, 125, 201, 1) 65%, transparent);
+  text-underline-offset: 0.15em;
+  background: none;
+  border: 0;
+  padding: 0;
+  display: inline;
+}
+
+.course-page a.course-teacher-plain strong {
+  font-weight: 700;
+  color: inherit;
+}
+
+.course-page a.course-teacher-plain:hover {
+  color: rgb(42, 105, 175) !important;
+  text-decoration-color: color-mix(in srgb, rgb(42, 105, 175) 75%, transparent);
+}
+
+/* Ẩn tạm (giữ HTML để bật lại): xoá .course-temp-hidden ngoài CSDL hoặc bỏ rule. */
+.course-page .course-temp-hidden {
+  display: none !important;
+}
+
+/* Mark: trong Notion là chữ in đậm + màu; export dùng mark + class _background — không tô nền. */
+.course-page mark[class*="highlight"] {
+  background: transparent !important;
+  font-weight: 600;
+  padding: 0;
+  border-radius: 0;
+}
+
+.course-page mark:not([class]) {
+  background: transparent;
+  color: var(--ink);
+  font-weight: 600;
+  padding: 0;
+}
+
+/* Cùng mã màu chữ như export Notion (bản highlight-default … highlight-red; _background ánh xạ cùng tông chữ). */
+.course-page .highlight-default,
+.course-page .highlight-default_background { color: rgba(44, 44, 43, 1); }
+.course-page .highlight-gray,
+.course-page .highlight-gray_background { color: rgba(125, 122, 117, 1); }
+.course-page .highlight-brown,
+.course-page .highlight-brown_background { color: rgba(159, 118, 90, 1); }
+.course-page .highlight-orange,
+.course-page .highlight-orange_background { color: rgba(210, 123, 45, 1); }
+.course-page .highlight-yellow,
+.course-page .highlight-yellow_background { color: rgba(203, 148, 52, 1); }
+.course-page .highlight-teal,
+.course-page .highlight-teal_background { color: rgba(80, 148, 110, 1); }
+.course-page .highlight-blue,
+.course-page .highlight-blue_background { color: rgba(56, 125, 201, 1); }
+.course-page .highlight-purple,
+.course-page .highlight-purple_background { color: rgba(154, 107, 180, 1); }
+.course-page .highlight-pink,
+.course-page .highlight-pink_background { color: rgba(193, 76, 138, 1); }
+.course-page .highlight-red,
+.course-page .highlight-red_background { color: rgba(207, 81, 72, 1); }
+
+/* Tiêu đề khối h3 (block color) — Notion. */
+.course-page .block-color-default { color: inherit; }
+.course-page .block-color-gray { color: rgba(125, 122, 117, 1); }
+.course-page .block-color-brown { color: rgba(159, 118, 90, 1); }
+.course-page .block-color-orange { color: rgba(210, 123, 45, 1); }
+.course-page .block-color-yellow { color: rgba(203, 148, 52, 1); }
+.course-page .block-color-teal { color: rgba(80, 148, 110, 1); }
+.course-page .block-color-blue { color: rgba(56, 125, 201, 1); }
+.course-page .block-color-purple { color: rgba(154, 107, 180, 1); }
+.course-page .block-color-pink { color: rgba(193, 76, 138, 1); }
+.course-page .block-color-red { color: rgba(207, 81, 72, 1); }
+
+.course-page .block-color-default_background { color: inherit; }
+.course-page .block-color-gray_background { background: rgba(240, 239, 237, 1); }
+.course-page .block-color-brown_background { background: rgba(245, 237, 233, 1); }
+.course-page .block-color-orange_background { background: rgba(251, 235, 222, 1); }
+.course-page .block-color-yellow_background { background: rgba(249, 243, 220, 1); }
+.course-page .block-color-teal_background { background: rgba(232, 241, 236, 1); }
+.course-page .block-color-blue_background { background: rgba(229, 242, 252, 1); }
+.course-page .block-color-purple_background { background: rgba(243, 235, 249, 1); }
+.course-page .block-color-pink_background { background: rgba(250, 233, 241, 1); }
+.course-page .block-color-red_background { background: rgba(252, 233, 231, 1); }
+

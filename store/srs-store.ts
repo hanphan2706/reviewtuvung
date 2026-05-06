@@ -2,8 +2,10 @@
 
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
+import { bumpReviewDayTally, pruneReviewDayTallies } from "@/lib/review-day-stats";
 import { scheduleAfterRating, sortDueForSession, takeSessionQueue } from "@/lib/srs";
-import type { Deck, Rating, UserId, UserSettings, Word } from "@/lib/types";
+import { htmlToPlainTrim } from "@/lib/sanitize-word-html";
+import type { Deck, Rating, ReviewDayTalliesMap, UserId, UserSettings, UserSrsPayload, Word } from "@/lib/types";
 
 const DEFAULT_USER_ID = "local-user";
 
@@ -42,10 +44,14 @@ interface SrsState {
   viewingDeckId: string | null;
   words: Word[];
   settings: UserSettings;
+  /** Chấm điểm ôn theo ngày (local), phục vụ biểu đồ recall. */
+  reviewDayTallies: ReviewDayTalliesMap;
   sessionQueueIds: string[];
   sessionIndex: number;
 
   setUserId: (userId: UserId) => void;
+  replacePayload: (payload: UserSrsPayload) => void;
+  getPayload: () => UserSrsPayload;
   setDailyReviewLimit: (n: number) => void;
   createDeck: (name: string) => string;
   openDeck: (deckId: string) => void;
@@ -75,10 +81,34 @@ export const useSrsStore = create<SrsState>()(
       viewingDeckId: null,
       words: [],
       settings: defaultSettings,
+      reviewDayTallies: {},
       sessionQueueIds: [],
       sessionIndex: 0,
 
       setUserId: (userId) => set({ userId }),
+
+      replacePayload: (payload) => {
+        const now = Date.now();
+        const tallies =
+          payload.reviewDayTallies && typeof payload.reviewDayTallies === "object"
+            ? pruneReviewDayTallies(payload.reviewDayTallies as ReviewDayTalliesMap, now)
+            : {};
+        set({
+          userId: payload.userId,
+          decks: payload.decks,
+          words: payload.words,
+          settings: payload.settings,
+          reviewDayTallies: tallies,
+          viewingDeckId: null,
+          sessionQueueIds: [],
+          sessionIndex: 0,
+        });
+      },
+
+      getPayload: () => {
+        const { userId, decks, words, settings, reviewDayTallies } = get();
+        return { userId, decks, words, settings, reviewDayTallies };
+      },
 
       setDailyReviewLimit: (n) => {
         const dailyReviewLimit = Number.isFinite(n) && n > 0 ? Math.min(500, Math.floor(n)) : defaultSettings.dailyReviewLimit;
@@ -120,19 +150,20 @@ export const useSrsStore = create<SrsState>()(
       },
 
       addWord: (term, definition) => {
-        const t = term.trim();
-        if (!t) return;
+        if (!htmlToPlainTrim(term)) return;
         const { userId, viewingDeckId } = get();
         if (!viewingDeckId) return;
         const now = Date.now();
+        const t = term.trim();
+        const def = definition.trim();
         set((s) => ({
-          words: [...s.words, newWord(userId, viewingDeckId, t, definition, now)],
+          words: [...s.words, newWord(userId, viewingDeckId, t, def, now)],
         }));
       },
 
       updateWord: (id, term, definition) => {
+        if (!htmlToPlainTrim(term)) return;
         const t = term.trim();
-        if (!t) return;
         const def = definition.trim();
         set((s) => ({
           words: s.words.map((w) => (w.id === id ? { ...w, term: t, definition: def } : w)),
@@ -165,7 +196,7 @@ export const useSrsStore = create<SrsState>()(
       },
 
       rateCurrent: (rating) => {
-        const { sessionQueueIds, sessionIndex, words } = get();
+        const { sessionQueueIds, sessionIndex, words, reviewDayTallies } = get();
         const id = sessionQueueIds[sessionIndex];
         if (!id) return;
         const now = Date.now();
@@ -177,6 +208,7 @@ export const useSrsStore = create<SrsState>()(
         set({
           words: nextWords,
           sessionIndex: sessionIndex + 1,
+          reviewDayTallies: bumpReviewDayTally(reviewDayTallies, now, rating),
         });
       },
 
@@ -200,13 +232,14 @@ export const useSrsStore = create<SrsState>()(
     }),
     {
       name: storageKey,
-      version: 2,
+      version: 3,
       storage: createJSONStorage(() => localStorage),
       partialize: (s) => ({
         userId: s.userId,
         decks: s.decks,
         words: s.words,
         settings: s.settings,
+        reviewDayTallies: s.reviewDayTallies,
         viewingDeckId: s.viewingDeckId,
       }),
       migrate: (persisted, version) => {
@@ -216,6 +249,7 @@ export const useSrsStore = create<SrsState>()(
           decks?: Deck[];
           settings?: UserSettings;
           viewingDeckId?: string | null;
+          reviewDayTallies?: ReviewDayTalliesMap;
         };
         if (version < 2 && p.words?.length) {
           const hasDeckIds = p.words.some((w) => "deckId" in w && (w as Word).deckId);
@@ -226,10 +260,13 @@ export const useSrsStore = create<SrsState>()(
             p.words = p.words.map((w) => ({ ...(w as Word), deckId }));
           }
         }
+        if (version < 3) {
+          p.reviewDayTallies = p.reviewDayTallies && typeof p.reviewDayTallies === "object" ? p.reviewDayTallies : {};
+        }
         return persisted as typeof persisted;
       },
-    }
-  )
+    },
+  ),
 );
 
 export { DEFAULT_USER_ID, defaultSettings };
