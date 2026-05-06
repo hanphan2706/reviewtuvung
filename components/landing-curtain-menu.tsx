@@ -6,6 +6,7 @@ import Link from "next/link";
 import { X } from "lucide-react";
 import { LANDING } from "@/lib/landing-content";
 import { FooterCopyrightLine } from "@/components/landing-footer";
+import { LandingSectionLink } from "@/components/landing-section-link";
 import { ThreadsIcon } from "@/components/threads-icon";
 
 export function LandingCurtainMenu({
@@ -120,6 +121,19 @@ export function LandingCurtainMenu({
               </p>
               <ul className="mt-1.5 space-y-1 sm:mt-2 sm:space-y-1.5 [@media(max-height:640px)]:mt-1 [@media(max-height:640px)]:space-y-0.5">
                 {LANDING.nav.map((item) => {
+                  if ("scrollSection" in item && item.scrollSection) {
+                    return (
+                      <li key={item.label}>
+                        <LandingSectionLink
+                          sectionId={item.scrollSection}
+                          onNavigate={onClose}
+                          className="inline-block max-w-full wrap-break-word text-sm font-semibold leading-snug text-ink transition hover:opacity-90 sm:text-base [@media(max-height:640px)]:text-[0.8125rem]"
+                        >
+                          {item.label}
+                        </LandingSectionLink>
+                      </li>
+                    );
+                  }
                   const isOnTap = item.href.startsWith("/");
                   const isExternal = item.href.startsWith("http");
                   return (

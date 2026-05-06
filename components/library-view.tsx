@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Check, ChevronRight, Play, Plus, Settings2, Trash2 } from "lucide-react";
+import { LandingSectionLink } from "@/components/landing-section-link";
 import { SignedInTopBar } from "@/components/signed-in-top-bar";
 import { countDue } from "@/lib/srs";
 import { useSrsStore } from "@/store/srs-store";
@@ -61,12 +62,12 @@ export function LibraryView() {
       <div className="@container flex w-full max-w-md flex-col items-center gap-6">
         <SignedInTopBar
           left={
-            <Link
-              href="/#tu-hoc"
+            <LandingSectionLink
+              sectionId="tu-hoc"
               className="inline-flex w-fit cursor-pointer items-center gap-2 rounded-xl px-2 py-1.5 text-sm font-medium text-ink-muted"
             >
               ← Tự học
-            </Link>
+            </LandingSectionLink>
           }
         />
 

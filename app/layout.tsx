@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Noto_Serif } from "next/font/google";
 import "./globals.css";
-import "./(marketing)/khoa-hoc/course-content.css";
+import "./(marketing)/di-hoc/course-content.css";
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",

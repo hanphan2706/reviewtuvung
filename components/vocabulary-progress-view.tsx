@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo } from "react";
-import Link from "next/link";
+import { LandingSectionLink } from "@/components/landing-section-link";
 import { SignedInTopBar } from "@/components/signed-in-top-bar";
 import { buildRecallPercentSeries, type RecallDayPoint } from "@/lib/review-day-stats";
 import { countDue } from "@/lib/srs";
@@ -120,12 +120,12 @@ export function VocabularyProgressView() {
       <div className="flex w-full max-w-md flex-col gap-6">
         <SignedInTopBar
           left={
-            <Link
-              href="/#tu-hoc"
+            <LandingSectionLink
+              sectionId="tu-hoc"
               className="inline-flex w-fit cursor-pointer items-center gap-2 rounded-xl px-2 py-1.5 text-sm font-medium text-ink-muted"
             >
               ← Tự học
-            </Link>
+            </LandingSectionLink>
           }
         />
 

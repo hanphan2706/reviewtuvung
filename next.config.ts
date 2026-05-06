@@ -5,12 +5,42 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/khoa-hoc/coaching-ielts",
-        destination: "/khoa-hoc/coaching",
+        destination: "/di-hoc/coaching",
         permanent: false,
       },
       {
         source: "/khoa-hoc/coaching-general-english",
-        destination: "/khoa-hoc/coaching",
+        destination: "/di-hoc/coaching",
+        permanent: false,
+      },
+      {
+        source: "/on-tap",
+        destination: "/tu-hoc/tu-vung",
+        permanent: true,
+      },
+      {
+        source: "/on-tap/phuong-phap",
+        destination: "/tu-hoc/tu-vung/phuong-phap",
+        permanent: true,
+      },
+      {
+        source: "/on-tap/tien-do",
+        destination: "/tu-hoc/tu-vung/tien-do",
+        permanent: true,
+      },
+      {
+        source: "/khoa-hoc/:slug",
+        destination: "/di-hoc/:slug",
+        permanent: true,
+      },
+      {
+        source: "/di-hoc/coaching-ielts",
+        destination: "/di-hoc/coaching",
+        permanent: false,
+      },
+      {
+        source: "/di-hoc/coaching-general-english",
+        destination: "/di-hoc/coaching",
         permanent: false,
       },
     ];

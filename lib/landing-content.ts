@@ -24,13 +24,13 @@ export const LANDING = {
 
   locationLabel: "Học online · Việt Nam",
 
-  /** Link từ hero tới #khoa-hoc. */
+  /** Link từ hero tới section khoá học (cuộn bằng JS, không ghi hash lên URL). */
   heroScrollToCoursesLabel: "Tự học hay đi học?" as const,
 
   nav: [
     { href: "/gioi-thieu", label: "Giới thiệu" },
-    { href: "#khoa-hoc", label: "Đi học" },
-    { href: "#tu-hoc", label: "Tự học" },
+    { href: "/", label: "Đi học", scrollSection: "khoa-hoc" as const },
+    { href: "/", label: "Tự học", scrollSection: "tu-hoc" as const },
     { href: FACEBOOK_PAGE_URL, label: "Giải bày" },
   ] as const,
 

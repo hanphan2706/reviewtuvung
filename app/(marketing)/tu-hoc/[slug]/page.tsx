@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LANDING } from "@/lib/landing-content";
+import { LandingSectionLink } from "@/components/landing-section-link";
 import { MarketingSubpageShell } from "@/components/marketing-subpage-shell";
 
 const PLACEHOLDER_SLUGS = {
@@ -48,12 +48,12 @@ export default async function TuHocPlaceholderPage({ params }: PageProps) {
         Tính năng này đang được cập nhật. Bạn quay lại sau nha — mình sẽ thông báo trên trang chủ khi đã sẵn sàng.
       </p>
       <p className="mt-6">
-        <Link
-          href="/#tu-hoc"
+        <LandingSectionLink
+          sectionId="tu-hoc"
           className="text-sm font-semibold text-[#4b2876] underline decoration-[#4b2876]/30 underline-offset-2 transition hover:decoration-[#4b2876]/70"
         >
           ← Về mục Tự học
-        </Link>
+        </LandingSectionLink>
       </p>
     </MarketingSubpageShell>
   );

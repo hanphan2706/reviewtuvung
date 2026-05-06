@@ -1,22 +1,46 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { LANDING } from "@/lib/landing-content";
+import {
+  consumeLandingScrollSection,
+  scrollToLandingSection,
+  type LandingScrollSectionId,
+} from "@/lib/landing-scroll";
 import { LandingCurtainMenu } from "@/components/landing-curtain-menu";
 import { LandingFooter } from "@/components/landing-footer";
+import { LandingSectionLink } from "@/components/landing-section-link";
 
 /** ~card width + `gap-3` for snap scroll. */
 const CAROUSEL_STEP = 334;
 
 export function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const closeMenu = () => {
     setMenuOpen(false);
   };
+
+  useEffect(() => {
+    if (pathname !== "/") return;
+    const fromSession = consumeLandingScrollSection();
+    const hash = typeof window !== "undefined" ? window.location.hash.slice(1) : "";
+    const fromHash: LandingScrollSectionId | null =
+      hash === "khoa-hoc" || hash === "tu-hoc" ? hash : null;
+    const target = fromSession ?? fromHash;
+    if (!target) return;
+    requestAnimationFrame(() => {
+      scrollToLandingSection(target);
+      if (typeof window !== "undefined" && window.location.hash) {
+        window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
+      }
+    });
+  }, [pathname]);
 
   const navBarMain = LANDING.nav.filter((item) => item.label !== "Giải bày");
   const navBarContact = LANDING.nav.find((item) => item.label === "Giải bày");
@@ -41,6 +65,17 @@ export function LandingPage() {
               aria-label="Điều hướng chính"
             >
               {navBarMain.map((item) => {
+                if ("scrollSection" in item && item.scrollSection) {
+                  return (
+                    <LandingSectionLink
+                      key={item.label}
+                      sectionId={item.scrollSection}
+                      className="shrink-0 text-base font-medium text-ink transition hover:opacity-90"
+                    >
+                      {item.label}
+                    </LandingSectionLink>
+                  );
+                }
                 const isOnTap = item.href.startsWith("/");
                 const isExternal = item.href.startsWith("http");
                 if (isOnTap) {
@@ -127,8 +162,8 @@ export function LandingPage() {
           <div className="mx-auto grid w-full min-h-0 max-w-[1600px] flex-none grid-cols-1 gap-0 px-6 pb-3 sm:pb-4 md:grid-cols-2 md:gap-12 md:px-10 lg:gap-16">
             <div className="hidden min-h-0 md:block" aria-hidden />
             <p className="m-0 pt-0 text-left text-sm text-ink-muted">
-              <a
-                href="#khoa-hoc"
+              <LandingSectionLink
+                sectionId="khoa-hoc"
                 className="group inline-flex max-w-full items-baseline gap-1.5 text-left transition hover:opacity-90"
               >
                 <span className="shrink-0 font-normal text-[#4b2876]" aria-hidden>
@@ -137,7 +172,7 @@ export function LandingPage() {
                 <span className="border-b border-[#4b2876] font-normal text-[#4b2876] transition group-hover:border-[#4b2876]">
                   {LANDING.heroScrollToCoursesLabel}
                 </span>
-              </a>
+              </LandingSectionLink>
             </p>
           </div>
           <div
@@ -254,7 +289,7 @@ function CourseCarouselSection({
           {LANDING.courses.map((c) => (
             <Link
               key={c.slug}
-              href={`/khoa-hoc/${c.slug}`}
+              href={`/di-hoc/${c.slug}`}
               id={id ? `course-${c.slug}` : undefined}
               className="flex min-h-[390px] w-[min(100%,320px)] shrink-0 snap-center flex-col overflow-hidden rounded-lg border border-zinc-200/90 bg-white text-ink no-underline shadow-sm ring-1 ring-zinc-950/5 transition hover:shadow-md sm:min-h-[410px] sm:w-[304px] md:min-h-[430px] md:w-[320px]"
             >
@@ -310,7 +345,7 @@ function SelfStudySection() {
   const selfStudyCards = [
     {
       slug: "general-english" as const,
-      href: "/on-tap",
+      href: "/tu-hoc/tu-vung",
       priceHint: "Từ vựng",
       image: "/tuvung%20image.jpg",
       summary:

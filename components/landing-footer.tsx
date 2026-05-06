@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { LANDING } from "@/lib/landing-content";
+import { LandingSectionLink } from "@/components/landing-section-link";
 import { ThreadsIcon } from "@/components/threads-icon";
 
 export function FooterCopyrightLine({ align }: { align: "left" | "right" }) {
@@ -86,6 +87,18 @@ export function LandingFooter() {
                   {LANDING.nav
                     .filter((item) => item.href !== "/gioi-thieu")
                     .map((item) => {
+                      if ("scrollSection" in item && item.scrollSection) {
+                        return (
+                          <li key={item.label}>
+                            <LandingSectionLink
+                              sectionId={item.scrollSection}
+                              className="text-sm font-bold text-ink transition hover:opacity-80"
+                            >
+                              {item.label}
+                            </LandingSectionLink>
+                          </li>
+                        );
+                      }
                       const isOnTap = item.href.startsWith("/");
                       const isExternal = item.href.startsWith("http");
                       if (isOnTap) {

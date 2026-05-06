@@ -20,7 +20,7 @@ const PRODUCE_MIN_CHARS = 15;
 /** Khoảng cách tiêu đề ↔ thẻ = thẻ ↔ dòng “Nhấn thẻ…” (cùng token). */
 const REVIEW_SECTION_GAP = "gap-4";
 
-/** Cùng khoảng trên với màn /on-tap (pt-10); dưới giữ safe area cho vùng nút chấm điểm. */
+/** Cùng khoảng trên với màn từ vựng (pt-10); dưới giữ safe area cho vùng nút chấm điểm. */
 const REVIEW_SHELL_EDGE_Y =
   "pt-[max(2.5rem,env(safe-area-inset-top,0px))] pb-[max(0.75rem,env(safe-area-inset-bottom,0px)+0.25rem)] sm:pb-4";
 
@@ -82,7 +82,7 @@ export function ReviewView(props: ReviewViewProps) {
 
     if (allDecks) {
       if (decks.length === 0) {
-        router.replace("/on-tap");
+        router.replace("/tu-hoc/tu-vung");
         return;
       }
       closeDeck();
@@ -90,7 +90,7 @@ export function ReviewView(props: ReviewViewProps) {
       return;
     }
     if (!deckId || !decks.some((d) => d.id === deckId)) {
-      router.replace("/on-tap");
+      router.replace("/tu-hoc/tu-vung");
       return;
     }
     openDeck(deckId);
@@ -114,7 +114,7 @@ export function ReviewView(props: ReviewViewProps) {
     }, 220);
   };
 
-  const backHref = allDecks ? "/on-tap" : `/deck/${deckId}`;
+  const backHref = allDecks ? "/tu-hoc/tu-vung" : `/deck/${deckId}`;
   const backLabel = allDecks ? "All decks" : (activeDeck?.name ?? "Bộ thẻ");
 
   const startActiveLearning = () => {

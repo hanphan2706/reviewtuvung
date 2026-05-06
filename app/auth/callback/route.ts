@@ -21,7 +21,7 @@ export async function GET(request: NextRequest) {
 
   if (popup) {
     if (!code || oauthError) {
-      const errHtml = `<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"/></head><body style="margin:0;font-family:system-ui,sans-serif;padding:1rem;text-align:center"><p>Không đăng nhập được.</p><script>(function(){try{if(window.opener&&!window.opener.closed){window.close();return;}}catch(e){}window.location.assign(window.location.origin+"/on-tap");})();</script></body></html>`;
+      const errHtml = `<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"/></head><body style="margin:0;font-family:system-ui,sans-serif;padding:1rem;text-align:center"><p>Không đăng nhập được.</p><script>(function(){try{if(window.opener&&!window.opener.closed){window.close();return;}}catch(e){}window.location.assign(window.location.origin+"/tu-hoc/tu-vung");})();</script></body></html>`;
       return new NextResponse(errHtml, {
         status: 200,
         headers: { "Content-Type": "text/html; charset=utf-8" },

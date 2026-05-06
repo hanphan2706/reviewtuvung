@@ -21,7 +21,7 @@ export function AddWordView({ deckId }: { deckId: string }) {
 
   useEffect(() => {
     if (!decks.some((d) => d.id === deckId)) {
-      router.replace("/on-tap");
+      router.replace("/tu-hoc/tu-vung");
       return;
     }
     openDeck(deckId);

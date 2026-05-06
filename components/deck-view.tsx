@@ -33,7 +33,7 @@ export function DeckView({ deckId }: { deckId: string }) {
 
   useEffect(() => {
     if (!decks.some((d) => d.id === deckId)) {
-      router.replace("/on-tap");
+      router.replace("/tu-hoc/tu-vung");
       return;
     }
     openDeck(deckId);
@@ -71,7 +71,7 @@ export function DeckView({ deckId }: { deckId: string }) {
         <SignedInTopBar
           left={
             <Link
-              href="/on-tap"
+              href="/tu-hoc/tu-vung"
               className="inline-flex w-fit cursor-pointer items-center gap-2 rounded-xl px-2 py-1.5 text-sm font-medium text-ink-muted"
             >
               <ArrowLeft className="h-4 w-4" strokeWidth={2} />

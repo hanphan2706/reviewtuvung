@@ -4,14 +4,16 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BookOpen, Layers, LineChart } from "lucide-react";
 
+const VOCAB_ROOT = "/tu-hoc/tu-vung" as const;
+
 const tabs = [
-  { href: "/on-tap/phuong-phap", label: "Phương pháp", ariaLabel: "Phương pháp học" },
-  { href: "/on-tap", label: "Từ vựng", ariaLabel: "Tạo deck và danh sách từ vựng" },
-  { href: "/on-tap/tien-do", label: "Tiến độ", ariaLabel: "Theo dõi tiến độ" },
+  { href: `${VOCAB_ROOT}/phuong-phap`, label: "Phương pháp", ariaLabel: "Phương pháp học" },
+  { href: VOCAB_ROOT, label: "Từ vựng", ariaLabel: "Tạo deck và danh sách từ vựng" },
+  { href: `${VOCAB_ROOT}/tien-do`, label: "Tiến độ", ariaLabel: "Theo dõi tiến độ" },
 ] as const;
 
 function isActive(pathname: string, href: string) {
-  if (href === "/on-tap") return pathname === "/on-tap" || pathname === "/on-tap/";
+  if (href === VOCAB_ROOT) return pathname === VOCAB_ROOT || pathname === `${VOCAB_ROOT}/`;
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 
@@ -27,7 +29,8 @@ export function OnTapBottomNav() {
         <div className="grid min-w-0 grid-cols-3 gap-0.5">
           {tabs.map(({ href, label, ariaLabel }) => {
             const active = isActive(pathname, href);
-            const Icon = href === "/on-tap/phuong-phap" ? BookOpen : href === "/on-tap" ? Layers : LineChart;
+            const Icon =
+              href === `${VOCAB_ROOT}/phuong-phap` ? BookOpen : href === VOCAB_ROOT ? Layers : LineChart;
             return (
               <Link
                 key={href}

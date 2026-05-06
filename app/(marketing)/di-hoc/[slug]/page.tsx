@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LANDING } from "@/lib/landing-content";
+import { LandingSectionLink } from "@/components/landing-section-link";
 import { getCoursePageBodyHtml, isValidCourseNotionSlug } from "@/lib/course-notion-document";
 
 type PageProps = { params: Promise<{ slug: string }> };
@@ -37,12 +37,12 @@ export default async function KhoaHocNotionPage({ params }: PageProps) {
     <div className="min-h-dvh text-ink">
       <div className="mx-auto w-full max-w-3xl px-5 py-5 sm:px-7 sm:py-6 md:px-10 md:py-8">
         <nav className="mb-6" aria-label="Breadcrumb">
-          <Link
-            href="/#khoa-hoc"
+          <LandingSectionLink
+            sectionId="khoa-hoc"
             className="text-sm font-medium text-[#4b2876] underline decoration-[#4b2876]/30 underline-offset-2 transition hover:decoration-[#4b2876]/60"
           >
             ← Các khoá học nổi bật
-          </Link>
+          </LandingSectionLink>
         </nav>
         <article
           className="rounded-lg border border-zinc-200/90 bg-white p-4 shadow-sm ring-1 ring-zinc-950/5 sm:p-6 md:p-8"

@@ -58,7 +58,7 @@ export function AuthButton(props: AuthButtonProps) {
 
     if (props.mode === "sign-in") {
       const origin = window.location.origin;
-      const next = safeInternalPath(props.next ?? "/on-tap");
+      const next = safeInternalPath(props.next ?? "/tu-hoc/tu-vung");
       const redirectTo = `${origin}/auth/callback?next=${encodeURIComponent(next)}&popup=1`;
 
       const { data, error } = await supabase.auth.signInWithOAuth({

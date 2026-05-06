@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { LandingSectionLink } from "@/components/landing-section-link";
 import { SignedInTopBar } from "@/components/signed-in-top-bar";
 import { VocabularyMethodIntro } from "@/components/vocabulary-method-intro";
 
@@ -10,12 +10,12 @@ export function VocabularyPhuongPhapView() {
       <div className="flex w-full max-w-md flex-col gap-4">
         <SignedInTopBar
           left={
-            <Link
-              href="/#tu-hoc"
+            <LandingSectionLink
+              sectionId="tu-hoc"
               className="inline-flex w-fit shrink-0 cursor-pointer items-center gap-2 rounded-xl px-2 py-1.5 text-sm font-medium text-ink-muted"
             >
               ← Tự học
-            </Link>
+            </LandingSectionLink>
           }
         />
 
