@@ -6,19 +6,19 @@ import { MarketingSubpageShell } from "@/components/marketing-subpage-shell";
 export const metadata: Metadata = {
   title: `Credits | ${LANDING.brand}`,
   description:
-    "ANTHICHTUHOC từ fanpage đến webapp — dự án solo, giá trị cốt lõi và lời cảm ơn.",
+    "anthichtuhoc từ fanpage đến webapp — dự án solo, giá trị cốt lõi và lời cảm ơn.",
 };
 
 export default function CreditsPage() {
   return (
     <MarketingSubpageShell title="Credits">
       <p>
-        <strong>ANTHICHTUHOC</strong>, tiền thân là một fanpage trên mạng xã hội, lập ra để chia sẻ kiến thức và các
+        <strong>anthichtuhoc</strong>, tiền thân là một fanpage trên mạng xã hội, lập ra để chia sẻ kiến thức và các
         kinh nghiệm tự học của mình.
       </p>
       <p>
         Vì muốn loại bỏ các hạn chế và thực sự tạo ra một nền tảng để hỗ trợ và tối ưu hoá việc tự học cho mọi người,
-        mình quyết định nâng cấp ANTHICHTUHOC thành một webapp hoàn chỉnh, với đầy đủ các tính năng thiết thực.
+        mình quyết định nâng cấp anthichtuhoc thành một webapp hoàn chỉnh, với đầy đủ các tính năng thiết thực.
       </p>
       <p>
         Đây hoàn toàn là một <strong>dự án cá nhân (solo)</strong> do{" "}
@@ -40,7 +40,7 @@ export default function CreditsPage() {
         Phản hồi của bạn là một phần của “credit” vô hình đối với một dự án nhỏ như thế này.
       </p>
       <p>
-        Cảm ơn bạn đã ghé qua <strong>ANTHICHTUHOC</strong>.
+        Cảm ơn bạn đã ghé qua <strong>anthichtuhoc</strong>.
       </p>
     </MarketingSubpageShell>
   );

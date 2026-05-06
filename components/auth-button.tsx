@@ -101,7 +101,17 @@ export function AuthButton(props: AuthButtonProps) {
       onClick={onClick}
       className={props.className ?? defaultClassName}
     >
-      {props.mode === "sign-in" ? "Đăng nhập để bắt đầu học, lưu và theo dõi tiến độ" : (props.signOutLabel ?? "Đăng xuất")}
+      {props.mode === "sign-in" ? (
+        <>
+          <span className="hidden sm:inline">Đăng nhập để bắt đầu học, lưu và theo dõi tiến độ</span>
+          <span className="flex flex-col items-center gap-0.5 leading-snug sm:hidden">
+            <span>Đăng nhập để bắt đầu học,</span>
+            <span>lưu và theo dõi tiến độ</span>
+          </span>
+        </>
+      ) : (
+        (props.signOutLabel ?? "Đăng xuất")
+      )}
     </button>
   );
 }

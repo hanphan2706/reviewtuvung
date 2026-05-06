@@ -150,9 +150,8 @@ export function LandingFooter() {
             {/* Dưới max-lg: social; line; một block: privacy, cookie, copyright + credits. */}
             <div className="hidden w-full min-w-0 flex-col text-sm text-ink max-lg:flex max-lg:gap-6">
               <div className="flex min-w-0 items-center gap-x-2.5 pl-0.5 sm:pl-0">
-                <a
-                  href={LANDING.footer.social.instagram}
-                  className="inline-flex h-6 w-6 shrink-0 self-center text-ink transition hover:opacity-70"
+                <span
+                  className="inline-flex h-6 w-6 shrink-0 items-center justify-center self-center text-ink opacity-80"
                   aria-label="Instagram"
                   title="Instagram"
                 >
@@ -182,7 +181,7 @@ export function LandingFooter() {
                     />
                     <circle cx="16.2" cy="7.5" r="0.7" fill="currentColor" />
                   </svg>
-                </a>
+                </span>
                 <span
                   className="inline-flex h-6 w-6 shrink-0 items-center justify-center self-center text-ink opacity-80"
                   aria-label="Threads"
@@ -244,9 +243,8 @@ export function LandingFooter() {
             <div className="mt-6 flex w-full min-w-0 flex-col gap-3 sm:mt-7 max-lg:hidden lg:flex-row lg:items-end lg:justify-between lg:gap-12">
               <div className="grid min-w-0 w-full max-w-2xl flex-1 grid-cols-1 content-start items-start gap-y-3 pl-0.5 sm:pl-0 lg:grid-cols-2 lg:items-center lg:gap-y-0 lg:gap-x-8 xl:gap-x-12">
                 <div className="flex min-w-0 items-center gap-x-2.5">
-                  <a
-                    href={LANDING.footer.social.instagram}
-                    className="inline-flex h-6 w-6 shrink-0 self-center text-ink transition hover:opacity-70"
+                  <span
+                    className="inline-flex h-6 w-6 shrink-0 items-center justify-center self-center text-ink opacity-80"
                     aria-label="Instagram"
                     title="Instagram"
                   >
@@ -276,7 +274,7 @@ export function LandingFooter() {
                       />
                       <circle cx="16.2" cy="7.5" r="0.7" fill="currentColor" />
                     </svg>
-                  </a>
+                  </span>
                   <span
                     className="inline-flex h-6 w-6 shrink-0 items-center justify-center self-center text-ink opacity-80"
                     aria-label="Threads"

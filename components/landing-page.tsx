@@ -307,20 +307,30 @@ function CourseCarouselSection({
 }
 
 function SelfStudySection() {
-  const selfStudyCourses = LANDING.courses.map((course) =>
-    course.slug === "general-english"
-      ? {
-          ...course,
-          href: "/on-tap",
-          priceHint: "Từ vựng",
-          image: "/tuvung%20image.jpg",
-          summary: "Học từ vựng thực sự hiệu quả và sử dụng được với phương pháp Spaced-repetition và Active learning",
-        }
-      : {
-          ...course,
-          href: "/on-tap",
-        },
-  );
+  const selfStudyCards = [
+    {
+      slug: "general-english" as const,
+      href: "/on-tap",
+      priceHint: "Từ vựng",
+      image: "/tuvung%20image.jpg",
+      summary:
+        "Học từ vựng thực sự hiệu quả và sử dụng được với phương pháp Spaced-repetition và Active learning",
+    },
+    {
+      slug: "pinball-ielts" as const,
+      href: "/tu-hoc/luyen-nghe",
+      priceHint: "Luyện nghe",
+      image: "/luyen%20nghe%201.jpg",
+      summary: "Bạn có biết nghe cũng phải đúng kỹ thuật và có mục đích thì mới tiến bộ không?",
+    },
+    {
+      slug: "coaching" as const,
+      href: "/tu-hoc/luyen-noi-ai",
+      priceHint: "Luyện nói cùng AI",
+      image: "/luyen%20noi.jpg",
+      summary: "Bí quyết để nói tốt hơn là gì? Không có cách nào khác ngoài nói nhiều vào!",
+    },
+  ];
 
   return (
     <section
@@ -335,7 +345,7 @@ function SelfStudySection() {
         </div>
 
         <div className="mx-auto grid w-full max-w-[760px] items-start gap-y-20 gap-x-8 sm:grid-cols-2 sm:gap-y-22 md:gap-x-8 md:gap-y-24">
-          {selfStudyCourses.map((course, index) => (
+          {selfStudyCards.map((course, index) => (
             <Link
               key={course.slug}
               href={course.href}
@@ -359,9 +369,7 @@ function SelfStudySection() {
                       className={
                         course.slug === "general-english"
                           ? "object-cover object-[50%_36%]"
-                          : course.slug === "pinball-ielts"
-                            ? "object-cover object-[50%_42%]"
-                            : "object-cover"
+                          : "object-cover object-center"
                       }
                       sizes="(max-width:640px) 100vw, 280px"
                     />

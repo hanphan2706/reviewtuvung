@@ -8,6 +8,8 @@ const NOTION_CERTIFICATE_INFO_URL =
 const NOTION_STUDENT_FEEDBACK_URL =
   "https://www.notion.so/angia/M-t-s-feedback-c-a-h-c-vi-n-m-nh-2d8f8af06218810c8010f78d8409fee2?source=copy_link" as const;
 
+const SITE_FEEDBACK_FORM_URL = "https://forms.gle/v2HwjBU72uynCxLfA" as const;
+
 export const LANDING = {
   brand: "Ân thích tự học",
   brandShort: "ANTHICHTUHOC",
@@ -102,6 +104,7 @@ export const LANDING = {
     { label: "Giới thiệu", href: "/gioi-thieu" },
     { label: "Thông tin về chứng chỉ", href: NOTION_CERTIFICATE_INFO_URL },
     { label: "Feedback học viên", href: NOTION_STUDENT_FEEDBACK_URL },
+    { label: "Góp ý cải thiện", href: SITE_FEEDBACK_FORM_URL },
   ] as const,
 
   contactNote:
