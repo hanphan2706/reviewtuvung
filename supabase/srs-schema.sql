@@ -34,6 +34,13 @@ create table if not exists public.srs_settings (
 alter table public.srs_settings
   add column if not exists review_day_tallies jsonb not null default '{}'::jsonb;
 
+-- Bảng đã tạo trước khi có accent thẻ (Notion-style): chạy một lần trên project cũ — đồng bộ với `add-accent-color-column.sql`.
+alter table public.srs_words
+  add column if not exists accent_color text check (
+    accent_color is null
+    or accent_color in ('gray', 'brown', 'orange', 'yellow', 'blue')
+  );
+
 alter table public.srs_decks enable row level security;
 alter table public.srs_words enable row level security;
 alter table public.srs_settings enable row level security;

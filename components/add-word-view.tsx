@@ -69,7 +69,7 @@ export function AddWordView({ deckId }: { deckId: string }) {
             <RichTextField
               value={term}
               onChange={setTerm}
-              hint="Bôi đen để chọn màu chữ và/hoặc in đậm."
+              hint="Bôi đen để in đậm / chọn màu. Enter để xuống dòng."
               minHeightClass="min-h-14"
               lang="en"
               aria-label="Term"

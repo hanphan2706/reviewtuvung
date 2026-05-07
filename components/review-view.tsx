@@ -12,11 +12,6 @@ import { useSrsStore } from "@/store/srs-store";
 
 type ReviewViewProps = { allDecks?: false; deckId: string } | { allDecks: true };
 
-type AlStep = "input" | "reflect";
-
-/** Độ dài tối thiểu bài produce (ký tự, sau trim). */
-const PRODUCE_MIN_CHARS = 15;
-
 /** Khoảng cách tiêu đề ↔ thẻ = thẻ ↔ dòng “Nhấn thẻ…” (cùng token). */
 const REVIEW_SECTION_GAP = "gap-4";
 
@@ -63,6 +58,8 @@ export function ReviewView(props: ReviewViewProps) {
   const [alActive, setAlActive] = useState(false);
   const [alComplete, setAlComplete] = useState(false);
   const [alQueueSnapshot, setAlQueueSnapshot] = useState<string[]>([]);
+  /** `pick` = vừa vào review, chọn Flashcard hoặc Active learning (không gộp hai luồng). */
+  const [reviewMode, setReviewMode] = useState<"pick" | "flashcard" | "al">("pick");
   const isTtTablet = useTtTabletLayout();
 
   const activeDeck = deckId ? (decks.find((d) => d.id === deckId) ?? null) : null;
@@ -79,6 +76,7 @@ export function ReviewView(props: ReviewViewProps) {
     setAlActive(false);
     setAlComplete(false);
     setAlQueueSnapshot([]);
+    setReviewMode("pick");
 
     if (allDecks) {
       if (decks.length === 0) {
@@ -117,10 +115,11 @@ export function ReviewView(props: ReviewViewProps) {
   const backHref = allDecks ? "/tu-hoc/tu-vung" : `/deck/${deckId}`;
   const backLabel = allDecks ? "All decks" : (activeDeck?.name ?? "Bộ thẻ");
 
-  const startActiveLearning = () => {
+  const startActiveLearningFromPick = () => {
     setAlQueueSnapshot([...sessionQueueIds]);
     setAlActive(true);
     setAlComplete(false);
+    setReviewMode("al");
   };
 
   const finishActiveLearning = () => {
@@ -128,10 +127,20 @@ export function ReviewView(props: ReviewViewProps) {
     setAlComplete(true);
   };
 
-  const showPostSessionMenu = completedSessionWithCards && !alActive && !alComplete;
   const showAlFlow = alActive && alQueueSnapshot.length > 0;
   const showAlDone = alComplete && !alActive;
   const showEmptyQueueScreen = noCardsToReview;
+  const showModePicker =
+    !showEmptyQueueScreen &&
+    reviewMode === "pick" &&
+    sessionQueueIds.length > 0 &&
+    !sessionDone;
+  const showFlashcardSession =
+    reviewMode === "flashcard" && sessionActive && !sessionDone && atCard && current;
+  const showFlashcardComplete =
+    completedSessionWithCards && reviewMode === "flashcard" && !alActive && !alComplete;
+  /** Cùng lời chúc cho kết thúc phiên flashcard hoặc active learning. */
+  const showCongratsComplete = showFlashcardComplete || showAlDone;
 
   return (
     <div
@@ -177,10 +186,15 @@ export function ReviewView(props: ReviewViewProps) {
             onFinish={finishActiveLearning}
             vocabularyHref={backHref}
           />
-        ) : showAlDone ? (
+        ) : showCongratsComplete ? (
           <div className="flex min-h-0 flex-1 flex-col items-center justify-start overflow-y-auto px-3 py-8">
             <div className="w-full max-w-md space-y-6 text-center text-sm font-medium leading-snug text-[#4b2876] sm:text-[15px]">
-              <p>Bạn đã hoàn thành phần active learning cho phiên vừa rồi.</p>
+              <div>
+                <p>Đã hết phiên ôn.</p>
+                <p className="mt-2 sm:mt-2.5">
+                  Chúc mừng bạn đã tiến thêm một bước nhỏ trên con đường học tập của mình!
+                </p>
+              </div>
               <Link
                 href={backHref}
                 className="inline-flex w-full max-w-xs justify-center rounded-xl bg-[#4b2876] px-5 py-3.5 text-sm font-semibold text-white shadow-sm"
@@ -189,34 +203,25 @@ export function ReviewView(props: ReviewViewProps) {
               </Link>
             </div>
           </div>
-        ) : showPostSessionMenu ? (
+        ) : showModePicker ? (
           <div className="flex min-h-0 flex-1 flex-col items-center justify-start overflow-y-auto px-3 py-8">
-            <div className="w-full max-w-md space-y-5 text-center text-sm font-medium leading-snug text-[#4b2876] sm:text-[15px]">
-              <div>
-                <p>Đã hết phiên ôn.</p>
-                <p className="mt-2 sm:mt-2.5">
-                  Chúc mừng bạn đã tiến thêm một bước nhỏ trên con đường học tập của mình!
-                </p>
-              </div>
-              <div className="flex flex-col gap-3 pt-2">
-                <div className="space-y-1.5">
-                  <button
-                    type="button"
-                    onClick={startActiveLearning}
-                    className="w-full rounded-xl bg-[#4b2876] px-5 py-3.5 text-sm font-semibold text-white shadow-sm transition active:scale-[0.99]"
-                  >
-                    Active learning
-                  </button>
-                  <p className="text-[11px] font-normal leading-snug text-ink-muted">
-                    Đặt câu hoặc giải thích nghĩa — gói trả phí sẽ mở thêm gợi ý AI.
-                  </p>
-                </div>
-                <Link
-                  href={backHref}
-                  className="w-full rounded-xl border border-zinc-300 bg-white py-3.5 text-center text-sm font-semibold text-ink shadow-sm"
+            <div className="w-full max-w-md space-y-6 text-center text-sm font-medium leading-snug text-[#4b2876] sm:text-[15px]">
+              <p className="text-base font-semibold sm:text-lg">Chọn cách ôn</p>
+              <div className="flex w-full flex-col gap-3 sm:flex-row sm:gap-4">
+                <button
+                  type="button"
+                  onClick={() => setReviewMode("flashcard")}
+                  className="min-w-0 flex-1 rounded-xl bg-[#4b2876] px-4 py-3.5 text-sm font-semibold text-white shadow-sm transition active:scale-[0.99]"
                 >
-                  Không cần — về từ vựng
-                </Link>
+                  Flashcard
+                </button>
+                <button
+                  type="button"
+                  onClick={startActiveLearningFromPick}
+                  className="min-w-0 flex-1 rounded-xl border border-zinc-200/90 bg-white px-4 py-3.5 text-sm font-semibold text-ink shadow-sm ring-1 ring-zinc-950/5 transition active:scale-[0.99]"
+                >
+                  Active learning
+                </button>
               </div>
             </div>
           </div>
@@ -229,11 +234,11 @@ export function ReviewView(props: ReviewViewProps) {
               <p
                 className={`text-center text-xs text-ink-muted sm:text-sm ${allDecks ? "mt-1" : "mt-0.5"}`}
               >
-                {atCard ? `Thẻ ${progress.current} / ${progress.total}` : "…"}
+                {showFlashcardSession && atCard ? `Thẻ ${progress.current} / ${progress.total}` : "…"}
               </p>
             </div>
 
-            {atCard && current && (
+            {showFlashcardSession && current ? (
               <FlashcardReviewBlock
                 key={current.id}
                 word={current}
@@ -241,7 +246,7 @@ export function ReviewView(props: ReviewViewProps) {
                 cardExiting={cardExiting}
                 onRate={handleRate}
               />
-            )}
+            ) : null}
           </>
         )}
       </div>
@@ -316,8 +321,6 @@ function FlashcardReviewBlock({ word, isTtTablet, cardExiting, onRate }: Flashca
   );
 }
 
-type AlMode = "sentence" | "explain";
-
 type ActiveLearningFlowProps = {
   queueIds: string[];
   words: Word[];
@@ -333,20 +336,27 @@ function ActiveLearningFlow({
   onFinish,
   vocabularyHref,
 }: ActiveLearningFlowProps) {
+  const recordActiveLearningHard = useSrsStore((s) => s.recordActiveLearningHard);
+
   const list = queueIds
     .map((id) => words.find((w) => w.id === id))
     .filter((w): w is Word => Boolean(w));
 
   const [index, setIndex] = useState(0);
-  const [step, setStep] = useState<AlStep>("input");
-  const [mode, setMode] = useState<AlMode>("sentence");
   const [draft, setDraft] = useState("");
+  /** Sau “Gửi và xem gợi ý”: hiện gợi ý + tự đánh giá ngay dưới ô nhập, không đổi màn. */
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
   /** Placeholder cho API AI — hiển thị cùng màn tự đánh giá. */
   const [aiFeedback, setAiFeedback] = useState<string | null>(null);
+  /** Sau lần đầu “Chưa ổn” (đã quay lại gửi): nút phải đổi thành «Ghi nhận chưa nhớ». */
+  const [alSecondTry, setAlSecondTry] = useState(false);
 
   const word = list[index];
   const total = list.length;
-  const produceOk = draft.trim().length >= PRODUCE_MIN_CHARS;
+
+  useEffect(() => {
+    setAlSecondTry(false);
+  }, [word.id]);
 
   if (!word || total === 0) {
     return (
@@ -360,11 +370,10 @@ function ActiveLearningFlow({
   }
 
   const submitInput = () => {
-    if (!produceOk) return;
     setAiFeedback(
       "Gợi ý AI sẽ hiện ở đây sau khi tích hợp API (dự kiến bản trả phí). Hiện tại bạn có thể tự đánh giá bên dưới.",
     );
-    setStep("reflect");
+    setFeedbackOpen(true);
   };
 
   const advanceAfterReflect = () => {
@@ -372,11 +381,23 @@ function ActiveLearningFlow({
       onFinish();
       return;
     }
-    setStep("input");
+    setFeedbackOpen(false);
     setDraft("");
     setAiFeedback(null);
-    setMode("sentence");
+    setAlSecondTry(false);
     setIndex((i) => i + 1);
+  };
+
+  const finishWithHardTally = () => {
+    recordActiveLearningHard();
+    advanceAfterReflect();
+  };
+
+  /** Lần đầu «Chưa ổn»: quay lại màn Gửi ngay; lần sau nút đổi thành «Ghi nhận chưa nhớ». */
+  const onChuaOnFirstRound = () => {
+    setFeedbackOpen(false);
+    setAiFeedback(null);
+    setAlSecondTry(true);
   };
 
   return (
@@ -390,99 +411,95 @@ function ActiveLearningFlow({
 
       <div className="flex min-h-0 flex-1 flex-col overflow-y-auto overflow-x-hidden scroll-py-4">
         <div
-          className={`mx-auto flex w-full max-w-md flex-1 flex-col gap-4 px-0 py-4 ${isTtTablet ? "max-w-xl" : ""}`}
+          className={`mx-auto flex w-full max-w-md flex-1 flex-col gap-4 px-3 py-4 sm:px-4 ${isTtTablet ? "max-w-xl" : ""}`}
         >
-          {step === "input" ? (
-            <>
-              <div className="flex rounded-xl border border-zinc-200 bg-white p-1 shadow-sm">
-                <button
-                  type="button"
-                  onClick={() => setMode("sentence")}
-                  className={`flex-1 rounded-lg py-2 text-xs font-semibold sm:text-sm ${mode === "sentence" ? "bg-[#4b2876] text-white" : "text-ink-muted"}`}
-                >
-                  Đặt câu
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setMode("explain")}
-                  className={`flex-1 rounded-lg py-2 text-xs font-semibold sm:text-sm ${mode === "explain" ? "bg-[#4b2876] text-white" : "text-ink-muted"}`}
-                >
-                  Giải thích nghĩa
-                </button>
-              </div>
+          <div className="space-y-2.5 text-left text-sm font-medium leading-snug text-[#4b2876] sm:text-[15px]">
+            <p>
+              Đặt một câu hoàn chỉnh có chứa thuật ngữ này. Thêm các thông tin khác (nếu có) để tạo thành một đoạn nói
+              ngắn.
+            </p>
+            <p className="text-sm font-normal leading-relaxed text-ink sm:text-[15px]">
+              <span className="block text-ink-muted">Ví dụ:</span>
+              <span className="mt-1 block font-normal italic text-zinc-500 sm:text-[15px]">
+                I tried to <strong className="font-bold">blend into</strong>{" "}
+                the crowd. I didn&apos;t want to be noticed. I wasn&apos;t comfortable with that.
+              </span>
+            </p>
+          </div>
 
-              <div>
-                <p className="mb-2 text-center text-sm font-semibold text-[#4b2876]">
-                  {mode === "sentence"
-                    ? "Đặt một câu có chứa thuật ngữ này"
-                    : "Giải thích nghĩa của thuật ngữ bằng lời của bạn"}
-                </p>
-                <div className="rounded-xl border border-zinc-200 bg-white px-3 py-2.5 text-center shadow-sm">
-                  <WordRichDisplay
-                    html={word.term}
-                    className="inline-block max-w-full text-base font-medium text-ink [&_b]:font-bold [&_strong]:font-bold sm:text-lg"
-                  />
-                </div>
-              </div>
+          <div>
+            <div className="rounded-xl border border-zinc-200/90 bg-white px-3 py-2.5 text-center shadow-sm ring-1 ring-zinc-950/5">
+              <WordRichDisplay
+                html={word.term}
+                className="inline-block max-w-full text-base font-medium text-ink [&_b]:font-bold [&_strong]:font-bold sm:text-lg"
+              />
+            </div>
+          </div>
 
-              <div>
-                <label htmlFor={`al-draft-${word.id}`} className="sr-only">
-                  Bài làm của bạn
-                </label>
-                <textarea
-                  id={`al-draft-${word.id}`}
-                  value={draft}
-                  onChange={(e) => setDraft(e.target.value)}
-                  rows={5}
-                  placeholder={
-                    mode === "sentence" ? "Viết câu hoàn chỉnh…" : "Viết vài dòng giải thích…"
-                  }
-                  className="w-full resize-y rounded-xl border border-zinc-200 bg-white px-3 py-3 text-sm text-ink shadow-sm outline-none ring-zinc-400 placeholder:text-ink-faint focus-visible:ring-2 sm:text-[15px]"
-                />
-                <p className="mt-1.5 text-center text-[11px] text-ink-muted">
-                  Tối thiểu {PRODUCE_MIN_CHARS} ký tự · đã nhập {draft.trim().length}
-                </p>
-              </div>
+          <div>
+            <label htmlFor={`al-draft-${word.id}`} className="sr-only">
+              Bài làm của bạn
+            </label>
+            <textarea
+              id={`al-draft-${word.id}`}
+              value={draft}
+              onChange={(e) => setDraft(e.target.value)}
+              rows={5}
+              spellCheck
+              lang="en"
+              placeholder="Viết đoạn của bạn bằng tiếng Anh…"
+              className="w-full resize-y rounded-xl border border-zinc-200/90 bg-white px-4 py-3 text-sm text-ink outline-none ring-zinc-300/80 placeholder:text-ink-faint focus-visible:border-zinc-400 focus-visible:ring-1 sm:text-[15px]"
+            />
+          </div>
 
-              <button
-                type="button"
-                disabled={!produceOk}
-                onClick={submitInput}
-                className="w-full rounded-xl bg-[#4b2876] py-3.5 text-sm font-semibold text-white shadow-sm transition enabled:active:scale-[0.99] disabled:cursor-not-allowed disabled:bg-zinc-300 disabled:text-zinc-600"
-              >
-                Gửi và xem gợi ý
-              </button>
-            </>
-          ) : (
-            <>
+          {!feedbackOpen ? (
+            <button
+              type="button"
+              onClick={submitInput}
+              className="w-full rounded-xl bg-[#4b2876] py-3.5 text-sm font-semibold text-white shadow-sm transition active:scale-[0.99]"
+            >
+              Gửi và xem gợi ý
+            </button>
+          ) : null}
+
+          {feedbackOpen ? (
+            <div className="flex flex-col gap-5 border-t border-zinc-200/90 pt-5">
               {aiFeedback ? (
-                <div className="rounded-xl border border-[#4b2876]/25 bg-white px-4 py-3 text-left shadow-sm">
-                  <p className="text-[11px] font-semibold uppercase tracking-wide text-[#4b2876]">
-                    Gợi ý (AI)
-                  </p>
+                <div className="rounded-xl border border-zinc-200/90 bg-white px-4 py-3 text-left shadow-sm ring-1 ring-zinc-950/5">
+                  <p className="text-[11px] font-semibold uppercase tracking-wide text-[#4b2876]">Gợi ý (AI)</p>
                   <p className="mt-1.5 text-sm leading-relaxed text-ink">{aiFeedback}</p>
                 </div>
               ) : null}
 
               <div className="space-y-4">
                 <p className="text-center text-sm font-medium leading-snug text-ink sm:text-[15px]">
-                  Bạn tự đánh giá: bài làm của bạn có ổn không?
+                  Tự đánh giá bài làm
                 </p>
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                   <button
                     type="button"
                     onClick={advanceAfterReflect}
-                    className="rounded-xl border-2 border-[#4b2876]/35 bg-white px-4 py-4 text-center text-sm font-semibold text-[#4b2876] shadow-sm transition active:scale-[0.99]"
+                    className="rounded-xl border border-zinc-200/90 bg-white px-4 py-4 text-center text-sm font-semibold text-[#4b2876] shadow-sm ring-1 ring-zinc-950/5 transition active:scale-[0.99]"
                   >
                     Ổn, đúng hướng
                   </button>
-                  <button
-                    type="button"
-                    onClick={advanceAfterReflect}
-                    className="rounded-xl border-2 border-zinc-300 bg-white px-4 py-4 text-center text-sm font-semibold text-ink shadow-sm transition active:scale-[0.99]"
-                  >
-                    Chưa ổn
-                  </button>
+                  {alSecondTry ? (
+                    <button
+                      type="button"
+                      onClick={finishWithHardTally}
+                      className="rounded-xl border border-zinc-200/90 bg-white px-4 py-4 text-center text-sm font-semibold text-ink shadow-sm ring-1 ring-zinc-950/5 transition active:scale-[0.99]"
+                    >
+                      Ghi nhận chưa nhớ
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={onChuaOnFirstRound}
+                      className="rounded-xl border border-zinc-200/90 bg-white px-4 py-4 text-center text-sm font-semibold text-ink shadow-sm ring-1 ring-zinc-950/5 transition active:scale-[0.99]"
+                    >
+                      Chưa ổn
+                    </button>
+                  )}
                 </div>
               </div>
 
@@ -492,8 +509,8 @@ function ActiveLearningFlow({
               >
                 Thoát — về từ vựng
               </Link>
-            </>
-          )}
+            </div>
+          ) : null}
         </div>
       </div>
     </div>

@@ -63,6 +63,8 @@ interface SrsState {
   removeWord: (id: string) => void;
   startOrRefreshSession: (opts?: { allDecks?: boolean }) => void;
   rateCurrent: (rating: Rating) => void;
+  /** Active learning “Chưa ổn” → ghi nhận như Hard trong biểu đồ tiến độ (không đổi lịch SRS). */
+  recordActiveLearningHard: () => void;
   getCurrentWord: () => Word | null;
   getSessionProgress: () => { current: number; total: number };
   wordsForDeck: (deckId: string) => Word[];
@@ -217,6 +219,14 @@ export const useSrsStore = create<SrsState>()(
           words: nextWords,
           sessionIndex: sessionIndex + 1,
           reviewDayTallies: bumpReviewDayTally(reviewDayTallies, now, rating),
+        });
+      },
+
+      recordActiveLearningHard: () => {
+        const { reviewDayTallies } = get();
+        const now = Date.now();
+        set({
+          reviewDayTallies: bumpReviewDayTally(reviewDayTallies, now, "hard"),
         });
       },
 

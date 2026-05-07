@@ -5,6 +5,48 @@ import { createPortal } from "react-dom";
 import { WORD_NOTION_TEXT_COLORS } from "@/lib/word-text-colors";
 import { prepareWordHtmlForEdit, sanitizeWordHtml } from "@/lib/sanitize-word-html";
 
+/** Chèn xuống dòng không phụ thuộc `execCommand` (hay fail khi ô mới / Safari). Caret đặt sau `<br>` bằng ZWSP rồi strip khi sync. */
+function insertBrAtCaret(editor: HTMLDivElement): boolean {
+  try {
+    editor.focus();
+    const sel = window.getSelection();
+    if (!sel) return false;
+
+    const ensureRange = (): Range => {
+      if (sel.rangeCount > 0) {
+        const r = sel.getRangeAt(0);
+        if (editor.contains(r.commonAncestorContainer)) return r;
+      }
+      const r = document.createRange();
+      r.selectNodeContents(editor);
+      r.collapse(false);
+      sel.removeAllRanges();
+      sel.addRange(r);
+      return r;
+    };
+
+    const range = ensureRange();
+    range.deleteContents();
+    const br = document.createElement("br");
+    range.insertNode(br);
+
+    const pad = document.createTextNode("\u200B");
+    const parent = br.parentNode;
+    if (parent) {
+      parent.insertBefore(pad, br.nextSibling);
+    }
+
+    const nextRange = document.createRange();
+    nextRange.setStart(pad, 0);
+    nextRange.collapse(true);
+    sel.removeAllRanges();
+    sel.addRange(nextRange);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 export type RichTextFieldProps = {
   value: string;
   onChange: (html: string) => void;
@@ -47,7 +89,8 @@ export function RichTextField({
   const syncFromDom = useCallback(() => {
     const el = ref.current;
     if (!el) return;
-    onChange(sanitizeWordHtml(el.innerHTML));
+    const raw = el.innerHTML.replace(/\u200B/g, "");
+    onChange(sanitizeWordHtml(raw));
   }, [onChange]);
 
   const updateToolbar = useCallback(() => {
@@ -163,11 +206,28 @@ export function RichTextField({
         }}
         onKeyDown={(e) => {
           if (e.key === "Enter" && !(e.metaKey || e.ctrlKey)) {
+            /** IME (VD: gõ tiếng Việt): Enter để chọn từ — không chặn, không chèn `<br>`. */
+            const ne = e.nativeEvent;
+            if ("isComposing" in ne && ne.isComposing) return;
+            if (e.keyCode === 229) return;
+
             e.preventDefault();
-            try {
-              document.execCommand("insertLineBreak");
-            } catch {
-              document.execCommand("insertHTML", false, "<br>");
+            e.stopPropagation();
+
+            const el = ref.current;
+            if (el) {
+              const ok = insertBrAtCaret(el);
+              if (!ok) {
+                try {
+                  document.execCommand("insertHTML", false, "<br>");
+                } catch {
+                  try {
+                    document.execCommand("insertLineBreak");
+                  } catch {
+                    /* ignore */
+                  }
+                }
+              }
             }
             isUserTypingRef.current = true;
             syncFromDom();
@@ -183,9 +243,9 @@ export function RichTextField({
           for (let i = 0; i < lines.length; i++) {
             if (i > 0) {
               try {
-                document.execCommand("insertLineBreak");
-              } catch {
                 document.execCommand("insertHTML", false, "<br>");
+              } catch {
+                document.execCommand("insertLineBreak");
               }
             }
             document.execCommand("insertText", false, lines[i] ?? "");
@@ -194,7 +254,7 @@ export function RichTextField({
           syncFromDom();
           updateToolbar();
         }}
-        className={`w-full resize-y rounded-xl border border-zinc-200/90 bg-white px-4 py-3 text-sm text-ink outline-none ring-zinc-300/80 focus-visible:border-zinc-400 focus-visible:ring-1 ${minHeightClass} ${className}`.trim()}
+        className={`w-full resize-y wrap-break-word rounded-xl border border-zinc-200/90 bg-white px-4 py-3 text-sm text-ink outline-none ring-zinc-300/80 focus-visible:border-zinc-400 focus-visible:ring-1 ${minHeightClass} ${className}`.trim()}
       />
 
       {toolbar && typeof document !== "undefined"

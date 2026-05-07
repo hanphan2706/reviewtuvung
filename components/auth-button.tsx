@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { createBrowserSupabaseClient } from "@/lib/supabase/client";
+import { OAUTH_NEXT_COOKIE, OAUTH_POPUP_COOKIE } from "@/lib/oauth-return-cookies";
 import { safeInternalPath } from "@/lib/safe-internal-path";
 import { DEFAULT_USER_ID, defaultSettings, useSrsStore } from "@/store/srs-store";
 
@@ -37,6 +38,25 @@ function oauthPopupFeatures(): string {
   return `width=${OAUTH_POPUP_W},height=${OAUTH_POPUP_H},left=${left},top=${top},scrollbars=yes,resizable=yes`;
 }
 
+/** PKCE (code verifier) nằm cookie cùng ngữ cảnh tab. Popup đi Google rồi về thường tách partition → /auth/callback từ popup thiếu cookie → đổi code thất bại. Trên loopback bắt buộc cùng tab. */
+function isLoopbackDevHost(): boolean {
+  if (typeof window === "undefined") return false;
+  const h = window.location.hostname;
+  return h === "localhost" || h === "127.0.0.1" || h === "[::1]";
+}
+
+/** Supabase chỉ khớp Redirect URL không có query — `.../auth/callback?next=` làm fail → Site URL production. */
+function setOAuthReturnCookies(nextInternalPath: string, popupFlow: boolean) {
+  const maxAge = 600;
+  const enc = encodeURIComponent(nextInternalPath);
+  document.cookie = `${OAUTH_NEXT_COOKIE}=${enc}; Path=/; Max-Age=${maxAge}; SameSite=Lax`;
+  if (popupFlow) {
+    document.cookie = `${OAUTH_POPUP_COOKIE}=1; Path=/; Max-Age=${maxAge}; SameSite=Lax`;
+  } else {
+    document.cookie = `${OAUTH_POPUP_COOKIE}=; Path=/; Max-Age=0`;
+  }
+}
+
 export function AuthButton(props: AuthButtonProps) {
   const router = useRouter();
   const popupPollRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -65,7 +85,27 @@ export function AuthButton(props: AuthButtonProps) {
 
       const origin = window.location.origin;
       const next = safeInternalPath(props.next ?? "/tu-hoc/tu-vung");
-      const redirectTo = `${origin}/auth/callback?next=${encodeURIComponent(next)}&popup=1`;
+
+      const sameTabLoopback = isLoopbackDevHost();
+
+      const redirectTo = `${origin}/auth/callback`;
+
+      if (sameTabLoopback) {
+        setOAuthReturnCookies(next, false);
+        const { data, error } = await supabase.auth.signInWithOAuth({
+          provider: "google",
+          options: {
+            redirectTo,
+            skipBrowserRedirect: true,
+          },
+        });
+        if (!error && data?.url) {
+          window.location.assign(data.url);
+        }
+        return;
+      }
+
+      setOAuthReturnCookies(next, true);
 
       /** Mở popup ngay (trước await) để không mất “user gesture” — trình duyệt hay chặn window.open sau async. */
       const popupName = "supabase-google-oauth";
@@ -95,7 +135,8 @@ export function AuthButton(props: AuthButtonProps) {
         popupPollRef.current = setInterval(() => {
           if (popup.closed) {
             clearPopupPoll();
-            router.refresh();
+            /** reload để server đọc lại cookie session — router.refresh() đôi khi không đổi shell đăng nhập trên localhost */
+            window.location.reload();
           }
         }, 500);
         return;
