@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, type ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { createBrowserSupabaseClient } from "@/lib/supabase/client";
 import { createSupabaseSrsRepository } from "@/lib/srs-supabase-repository";
 import { defaultSettings, useSrsStore } from "@/store/srs-store";
@@ -17,6 +17,8 @@ function formatSupabaseLikeError(error: unknown): string {
 
 export function SrsSyncProvider({ userId, children }: { userId: string; children: ReactNode }) {
   const saveTimerRef = useRef<number | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [saveError, setSaveError] = useState<string | null>(null);
 
   useEffect(() => {
     const supabase = createBrowserSupabaseClient();
@@ -38,6 +40,7 @@ export function SrsSyncProvider({ userId, children }: { userId: string; children
     let remoteStarted = false;
 
     const loadAndSubscribe = async () => {
+      setLoadError(null);
       try {
         const remotePayload = await repository.fetchUserPayload(userId);
         if (cancelled) return;
@@ -55,13 +58,22 @@ export function SrsSyncProvider({ userId, children }: { userId: string; children
         unsubscribe = useSrsStore.subscribe((state) => {
           clearSaveTimer();
           saveTimerRef.current = window.setTimeout(() => {
-            repository.upsertUserPayload(state.getPayload()).catch((error) => {
-              console.warn("[SRS sync] Failed to persist payload:", formatSupabaseLikeError(error));
-            });
+            repository
+              .upsertUserPayload(state.getPayload())
+              .then(() => {
+                if (!cancelled) setSaveError(null);
+              })
+              .catch((error) => {
+                const msg = formatSupabaseLikeError(error);
+                console.warn("[SRS sync] Failed to persist payload:", msg);
+                if (!cancelled) setSaveError(msg);
+              });
           }, 600);
         });
       } catch (error) {
-        console.warn("[SRS sync] Failed to load remote payload:", formatSupabaseLikeError(error));
+        const msg = formatSupabaseLikeError(error);
+        console.warn("[SRS sync] Failed to load remote payload:", msg);
+        if (!cancelled) setLoadError(msg);
       }
     };
 
@@ -88,5 +100,33 @@ export function SrsSyncProvider({ userId, children }: { userId: string; children
     };
   }, [userId]);
 
-  return children;
+  return (
+    <>
+      {loadError ? (
+        <div
+          role="alert"
+          className="border-b border-red-200 bg-red-50 px-4 py-3 text-center text-sm text-red-900"
+        >
+          <strong>Không tải được dữ liệu từ tài khoản.</strong> Kiểm tra mạng và bảng{" "}
+          <code className="rounded bg-red-100 px-1">srs_*</code> trên Supabase (RLS / schema). Chi tiết: {loadError}
+        </div>
+      ) : null}
+      {saveError ? (
+        <div
+          role="alert"
+          className="border-b border-amber-200 bg-amber-50 px-4 py-3 text-center text-sm text-amber-950"
+        >
+          <strong>Không lưu được lên server.</strong> Thay đổi chỉ còn trên máy này. Chi tiết: {saveError}
+          <button
+            type="button"
+            className="ml-2 underline"
+            onClick={() => setSaveError(null)}
+          >
+            Đóng
+          </button>
+        </div>
+      ) : null}
+      {children}
+    </>
+  );
 }

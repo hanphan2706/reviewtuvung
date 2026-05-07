@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { createBrowserSupabaseClient } from "@/lib/supabase/client";
 import { safeInternalPath } from "@/lib/safe-internal-path";
@@ -40,6 +40,8 @@ function oauthPopupFeatures(): string {
 export function AuthButton(props: AuthButtonProps) {
   const router = useRouter();
   const popupPollRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const fallbackOAuthUrlRef = useRef<string | null>(null);
+  const [popupBlocked, setPopupBlocked] = useState(false);
 
   const clearPopupPoll = useCallback(() => {
     if (popupPollRef.current != null) {
@@ -58,6 +60,9 @@ export function AuthButton(props: AuthButtonProps) {
     }
 
     if (props.mode === "sign-in") {
+      setPopupBlocked(false);
+      fallbackOAuthUrlRef.current = null;
+
       const origin = window.location.origin;
       const next = safeInternalPath(props.next ?? "/tu-hoc/tu-vung");
       const redirectTo = `${origin}/auth/callback?next=${encodeURIComponent(next)}&popup=1`;
@@ -96,7 +101,9 @@ export function AuthButton(props: AuthButtonProps) {
         return;
       }
 
-      window.location.assign(data.url);
+      /** Adblock / “Block pop-ups” thường làm `window.open` trả về null — không redirect ngay để người dùng chủ động trên tab này. */
+      fallbackOAuthUrlRef.current = data.url;
+      setPopupBlocked(true);
       return;
     }
 
@@ -111,14 +118,27 @@ export function AuthButton(props: AuthButtonProps) {
     router.refresh();
   };
 
+  if (props.mode === "sign-out") {
+    return (
+      <button
+        type="button"
+        disabled={props.disabled}
+        onClick={onClick}
+        className={props.className ?? defaultClassName}
+      >
+        {props.signOutLabel ?? "Đăng xuất"}
+      </button>
+    );
+  }
+
   return (
-    <button
-      type="button"
-      disabled={props.disabled}
-      onClick={onClick}
-      className={props.className ?? defaultClassName}
-    >
-      {props.mode === "sign-in" ? (
+    <div className="flex w-full flex-col gap-3">
+      <button
+        type="button"
+        disabled={props.disabled}
+        onClick={onClick}
+        className={props.className ?? defaultClassName}
+      >
         <>
           <span className="hidden sm:inline">Đăng nhập để bắt đầu học, lưu và theo dõi tiến độ</span>
           <span className="flex flex-col items-center gap-0.5 leading-snug sm:hidden">
@@ -126,9 +146,29 @@ export function AuthButton(props: AuthButtonProps) {
             <span>lưu và theo dõi tiến độ</span>
           </span>
         </>
-      ) : (
-        (props.signOutLabel ?? "Đăng xuất")
-      )}
-    </button>
+      </button>
+
+      {popupBlocked && fallbackOAuthUrlRef.current ? (
+        <output
+          aria-live="polite"
+          className="block rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-950 shadow-sm"
+        >
+          <p className="mb-2 leading-snug">
+            Trình duyệt đã chặn cửa sổ đăng nhập (thường do Adblock hoặc chặn pop-up). Bạn có thể đăng nhập trên{" "}
+            <strong>cùng tab này</strong>, hoặc tạm tắt chặn pop-up cho trang này rồi thử lại.
+          </p>
+          <button
+            type="button"
+            className="w-full rounded-lg bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm"
+            onClick={() => {
+              const url = fallbackOAuthUrlRef.current;
+              if (url) window.location.assign(url);
+            }}
+          >
+            Tiếp tục đăng nhập Google trên tab này
+          </button>
+        </output>
+      ) : null}
+    </div>
   );
 }
