@@ -262,7 +262,7 @@ function CourseCarouselSection({
               </p>
             ) : null}
           </div>
-          <div className="flex shrink-0 gap-2.5 self-start md:self-auto">
+          <div className="flex shrink-0 gap-2.5 self-start md:self-auto min-[1400px]:hidden">
             <button
               type="button"
               onClick={() => scrollCourses("prev")}

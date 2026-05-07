@@ -12,6 +12,8 @@ export type RichTextFieldProps = {
   hint?: string;
   className?: string;
   minHeightClass?: string;
+  /** Ngôn ngữ gợi ý cho kiểm tra chính tả trình duyệt (tiếng Anh vocabulary). */
+  lang?: string;
   "aria-label"?: string;
 };
 
@@ -21,6 +23,7 @@ export function RichTextField({
   hint,
   className = "",
   minHeightClass = "min-h-14",
+  lang = "en",
   "aria-label": ariaLabel,
 }: RichTextFieldProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -148,6 +151,8 @@ export function RichTextField({
         role="textbox"
         aria-multiline="true"
         aria-label={ariaLabel}
+        lang={lang}
+        tabIndex={0}
         contentEditable
         suppressContentEditableWarning
         spellCheck
@@ -156,11 +161,38 @@ export function RichTextField({
           syncFromDom();
           updateToolbar();
         }}
-        onKeyDown={onBold}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" && !(e.metaKey || e.ctrlKey)) {
+            e.preventDefault();
+            try {
+              document.execCommand("insertLineBreak");
+            } catch {
+              document.execCommand("insertHTML", false, "<br>");
+            }
+            isUserTypingRef.current = true;
+            syncFromDom();
+            updateToolbar();
+            return;
+          }
+          onBold(e);
+        }}
         onPaste={(e) => {
           e.preventDefault();
           const text = e.clipboardData.getData("text/plain");
-          document.execCommand("insertText", false, text);
+          const lines = text.split(/\n/);
+          for (let i = 0; i < lines.length; i++) {
+            if (i > 0) {
+              try {
+                document.execCommand("insertLineBreak");
+              } catch {
+                document.execCommand("insertHTML", false, "<br>");
+              }
+            }
+            document.execCommand("insertText", false, lines[i] ?? "");
+          }
+          isUserTypingRef.current = true;
+          syncFromDom();
+          updateToolbar();
         }}
         className={`w-full resize-y rounded-xl border border-zinc-200/90 bg-white px-4 py-3 text-sm text-ink outline-none ring-zinc-300/80 focus-visible:border-zinc-400 focus-visible:ring-1 ${minHeightClass} ${className}`.trim()}
       />

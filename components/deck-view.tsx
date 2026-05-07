@@ -115,14 +115,16 @@ export function DeckView({ deckId }: { deckId: string }) {
                         onChange={setEditTerm}
                         hint="Bôi đen để chọn màu chữ và/hoặc in đậm."
                         minHeightClass="min-h-14"
+                        lang="en"
                         aria-label="Edit term"
                       />
                       <RichTextField
                         key={`${w.id}-d`}
                         value={editDefinition}
                         onChange={setEditDefinition}
-                        hint="Định nghĩa (tuỳ chọn)"
+                        hint="Định nghĩa (tuỳ chọn). Enter để xuống dòng."
                         minHeightClass="min-h-24"
+                        lang="vi"
                         aria-label="Edit definition"
                       />
                       <div className="flex flex-wrap gap-2">

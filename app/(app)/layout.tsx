@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { AppShell } from "@/components/app-shell";
+import { OAuthPopupListener } from "@/components/oauth-popup-listener";
 
 export const dynamic = "force-dynamic";
 
@@ -8,5 +9,10 @@ export const dynamic = "force-dynamic";
  * URL: /tu-hoc/tu-vung, /review, /deck/...
  */
 export default function AppGroupLayout({ children }: { children: ReactNode }) {
-  return <AppShell>{children}</AppShell>;
+  return (
+    <>
+      <OAuthPopupListener />
+      <AppShell>{children}</AppShell>
+    </>
+  );
 }

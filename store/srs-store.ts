@@ -54,6 +54,7 @@ interface SrsState {
   getPayload: () => UserSrsPayload;
   setDailyReviewLimit: (n: number) => void;
   createDeck: (name: string) => string;
+  renameDeck: (deckId: string, name: string) => void;
   openDeck: (deckId: string) => void;
   closeDeck: () => void;
   deleteDeck: (deckId: string) => void;
@@ -121,6 +122,13 @@ export const useSrsStore = create<SrsState>()(
         const deck = newDeck(userId, name, now);
         set((s) => ({ decks: [...s.decks, deck] }));
         return deck.id;
+      },
+
+      renameDeck: (deckId, name) => {
+        const trimmed = name.trim() || "Untitled deck";
+        set((s) => ({
+          decks: s.decks.map((d) => (d.id === deckId ? { ...d, name: trimmed } : d)),
+        }));
       },
 
       openDeck: (deckId) => {

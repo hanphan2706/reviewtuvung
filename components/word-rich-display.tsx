@@ -20,7 +20,7 @@ export function WordRichDisplay({
 
   return (
     <Tag
-      className={`word-rich-html [&_b]:font-bold [&_strong]:font-bold ${className ?? ""}`.trim()}
+      className={`word-rich-html [&_b]:font-bold [&_strong]:font-bold [&_br]:block ${className ?? ""}`.trim()}
       dangerouslySetInnerHTML={{ __html: safe }}
     />
   );

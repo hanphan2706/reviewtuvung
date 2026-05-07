@@ -4,7 +4,8 @@ import { createServerSupabaseClient } from "@/lib/supabase/server";
 
 function popupCloseHtml(nextPath: string): string {
   const nextJson = JSON.stringify(nextPath);
-  return `<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Đăng nhập</title></head><body style="margin:0;font-family:system-ui,sans-serif;background:#f5f5f7;color:#444;padding:1rem;text-align:center"><p>Đã đăng nhập.</p><p style="font-size:0.875rem">Bạn có thể đóng cửa sổ này.</p><script>(function(){var next=${nextJson};var go=window.location.origin+next;try{if(window.opener&&!window.opener.closed){window.opener.location.assign(go);window.close();return;}}catch(e){}window.location.assign(go);})();</script></body></html>`;
+  const msgType = JSON.stringify("anthichtuhoc-oauth");
+  return `<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Đăng nhập</title></head><body style="margin:0;font-family:system-ui,sans-serif;background:#f5f5f7;color:#444;padding:1rem;text-align:center"><p>Đã đăng nhập.</p><p style="font-size:0.875rem">Bạn có thể đóng cửa sổ này.</p><script>(function(){var next=${nextJson};var go=(next&&next.charAt(0)==="/"?next:"/tu-hoc/tu-vung");var type=${msgType};try{if(window.opener&&!window.opener.closed){window.opener.postMessage({type:type,ok:true,next:go},"*");window.close();return;}}catch(e){}window.location.assign(window.location.origin+go);})();</script></body></html>`;
 }
 
 export async function GET(request: NextRequest) {
@@ -21,7 +22,7 @@ export async function GET(request: NextRequest) {
 
   if (popup) {
     if (!code || oauthError) {
-      const errHtml = `<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"/></head><body style="margin:0;font-family:system-ui,sans-serif;padding:1rem;text-align:center"><p>Không đăng nhập được.</p><script>(function(){try{if(window.opener&&!window.opener.closed){window.close();return;}}catch(e){}window.location.assign(window.location.origin+"/tu-hoc/tu-vung");})();</script></body></html>`;
+      const errHtml = `<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"/></head><body style="margin:0;font-family:system-ui,sans-serif;padding:1rem;text-align:center"><p>Không đăng nhập được.</p><script>(function(){var type="anthichtuhoc-oauth";try{if(window.opener&&!window.opener.closed){window.opener.postMessage({type:type,ok:false},"*");window.close();return;}}catch(e){}window.location.assign(window.location.origin+"/tu-hoc/tu-vung");})();</script></body></html>`;
       return new NextResponse(errHtml, {
         status: 200,
         headers: { "Content-Type": "text/html; charset=utf-8" },

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Check, ChevronRight, Play, Plus, Settings2, Trash2 } from "lucide-react";
+import { Check, ChevronRight, Pencil, Play, Plus, Settings2, Trash2 } from "lucide-react";
 import { LandingSectionLink } from "@/components/landing-section-link";
 import { SignedInTopBar } from "@/components/signed-in-top-bar";
 import { countDue } from "@/lib/srs";
@@ -17,6 +17,7 @@ export function LibraryView() {
   const settings = useSrsStore((s) => s.settings);
   const setDailyReviewLimit = useSrsStore((s) => s.setDailyReviewLimit);
   const createDeck = useSrsStore((s) => s.createDeck);
+  const renameDeck = useSrsStore((s) => s.renameDeck);
   const deleteDeck = useSrsStore((s) => s.deleteDeck);
   const words = useSrsStore((s) => s.words);
   const closeDeck = useSrsStore((s) => s.closeDeck);
@@ -26,6 +27,9 @@ export function LibraryView() {
   const [deckCreateOpen, setDeckCreateOpen] = useState(false);
   const [newDeckName, setNewDeckName] = useState("");
   const newDeckNameInputRef = useRef<HTMLInputElement>(null);
+  const [renameDeckId, setRenameDeckId] = useState<string | null>(null);
+  const [renameDeckDraft, setRenameDeckDraft] = useState("");
+  const renameInputRef = useRef<HTMLInputElement>(null);
 
   const limitDisplay = limitDraft ?? String(settings.dailyReviewLimit);
 
@@ -50,11 +54,30 @@ export function LibraryView() {
     }
   }, [deckCreateOpen]);
 
+  useEffect(() => {
+    if (renameDeckId) {
+      renameInputRef.current?.focus();
+      renameInputRef.current?.select();
+    }
+  }, [renameDeckId]);
+
   const onCreateDeck = () => {
     const id = createDeck(newDeckName);
     setNewDeckName("");
     setDeckCreateOpen(false);
     router.push(`/deck/${id}`);
+  };
+
+  const commitRenameDeck = () => {
+    if (!renameDeckId) return;
+    renameDeck(renameDeckId, renameDeckDraft);
+    setRenameDeckId(null);
+    setRenameDeckDraft("");
+  };
+
+  const cancelRenameDeck = () => {
+    setRenameDeckId(null);
+    setRenameDeckDraft("");
   };
 
   return (
@@ -190,26 +213,71 @@ export function LibraryView() {
                 const due = countDue(w, now);
                 return (
                   <li key={d.id} className="flex items-stretch gap-1 rounded-xl border border-zinc-200/60 bg-zinc-50/40 px-2 py-2">
-                    <Link
-                      href={`/deck/${d.id}`}
-                      className="flex min-w-0 flex-1 cursor-pointer items-center justify-between gap-3 rounded-lg px-2 py-2 text-left"
-                    >
-                      <div className="min-w-0">
-                        <p className="text-sm font-semibold text-[#4b2876]">{d.name}</p>
-                        <p className="text-xs text-ink-muted">
-                          {w.length} từ · {due} đến hạn
-                        </p>
+                    {renameDeckId === d.id ? (
+                      <div className="flex min-w-0 flex-1 flex-wrap items-center gap-2 px-1 py-1">
+                        <input
+                          ref={renameInputRef}
+                          value={renameDeckDraft}
+                          onChange={(e) => setRenameDeckDraft(e.target.value)}
+                          onKeyDown={(e) => {
+                            if (e.key === "Enter") {
+                              e.preventDefault();
+                              commitRenameDeck();
+                            }
+                            if (e.key === "Escape") {
+                              e.preventDefault();
+                              cancelRenameDeck();
+                            }
+                          }}
+                          className="min-w-0 flex-1 rounded-lg border border-[#eadff2] bg-white px-3 py-2 text-sm font-semibold text-[#4b2876] outline-none ring-[#4b2876]/20 focus:border-[#4b2876]/40 focus:ring-1"
+                          aria-label="Tên deck"
+                        />
+                        <button
+                          type="button"
+                          onClick={commitRenameDeck}
+                          className="inline-flex shrink-0 cursor-pointer items-center justify-center rounded-lg bg-zinc-900 px-3 py-2 text-white"
+                          aria-label="Lưu tên deck"
+                        >
+                          <Check className="h-5 w-5" strokeWidth={2} />
+                        </button>
                       </div>
-                      <ChevronRight className="h-5 w-5 shrink-0 text-ink-faint" strokeWidth={2} />
-                    </Link>
-                    <button
-                      type="button"
-                      onClick={() => deleteDeck(d.id)}
-                      className="-mr-1 inline-flex shrink-0 cursor-pointer items-center justify-center rounded-lg px-3 py-2 text-ink-faint"
-                      aria-label={`Delete deck ${d.name}`}
-                    >
-                      <Trash2 className="h-5 w-5" strokeWidth={1.75} />
-                    </button>
+                    ) : (
+                      <Link
+                        href={`/deck/${d.id}`}
+                        className="flex min-w-0 flex-1 cursor-pointer items-center justify-between gap-3 rounded-lg px-2 py-2 text-left"
+                      >
+                        <div className="min-w-0">
+                          <p className="text-sm font-semibold text-[#4b2876]">{d.name}</p>
+                          <p className="text-xs text-ink-muted">
+                            {w.length} từ · {due} đến hạn
+                          </p>
+                        </div>
+                        <ChevronRight className="h-5 w-5 shrink-0 text-ink-faint" strokeWidth={2} />
+                      </Link>
+                    )}
+                    {renameDeckId === d.id ? null : (
+                      <>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setRenameDeckId(d.id);
+                            setRenameDeckDraft(d.name);
+                          }}
+                          className="-mr-1 inline-flex shrink-0 cursor-pointer items-center justify-center rounded-lg px-3 py-2 text-ink-faint hover:text-[#4b2876]"
+                          aria-label={`Đổi tên deck ${d.name}`}
+                        >
+                          <Pencil className="h-5 w-5" strokeWidth={1.75} />
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => deleteDeck(d.id)}
+                          className="-mr-1 inline-flex shrink-0 cursor-pointer items-center justify-center rounded-lg px-3 py-2 text-ink-faint"
+                          aria-label={`Delete deck ${d.name}`}
+                        >
+                          <Trash2 className="h-5 w-5" strokeWidth={1.75} />
+                        </button>
+                      </>
+                    )}
                   </li>
                 );
               })}

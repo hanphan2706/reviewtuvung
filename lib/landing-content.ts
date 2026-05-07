@@ -102,6 +102,7 @@ export const LANDING = {
 
   moreLinks: [
     { label: "Giới thiệu", href: "/gioi-thieu" },
+    { label: "Newsletter", href: "/newsletter" },
     { label: "Thông tin về chứng chỉ", href: NOTION_CERTIFICATE_INFO_URL },
     { label: "Feedback học viên", href: NOTION_STUDENT_FEEDBACK_URL },
     { label: "Góp ý cải thiện", href: SITE_FEEDBACK_FORM_URL },

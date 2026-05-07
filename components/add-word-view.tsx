@@ -32,7 +32,10 @@ export function AddWordView({ deckId }: { deckId: string }) {
     addWord(term, definition);
     setTerm("");
     setDefinition("");
-    router.push(`/deck/${deckId}`);
+    requestAnimationFrame(() => {
+      const el = document.querySelector('[aria-label="Term"]') as HTMLElement | null;
+      el?.focus();
+    });
   };
 
   if (!deck) {
@@ -68,24 +71,35 @@ export function AddWordView({ deckId }: { deckId: string }) {
               onChange={setTerm}
               hint="Bôi đen để chọn màu chữ và/hoặc in đậm."
               minHeightClass="min-h-14"
+              lang="en"
               aria-label="Term"
             />
             <RichTextField
               value={definition}
               onChange={setDefinition}
-              hint="Định nghĩa (tuỳ chọn)"
+              hint="Định nghĩa (tuỳ chọn). Enter để xuống dòng."
               minHeightClass="min-h-24"
+              lang="vi"
               aria-label="Definition"
             />
-            <button
-              type="button"
-              onClick={onSave}
-              disabled={!htmlToPlainTrim(term)}
-              className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-xl bg-zinc-900 px-4 py-3 text-sm font-semibold text-white shadow-sm disabled:pointer-events-none disabled:opacity-40"
-            >
-              <BookOpen className="h-4 w-4" strokeWidth={2} />
-              Save word
-            </button>
+            <div className="flex flex-col gap-2 sm:flex-row sm:justify-center sm:gap-3">
+              <button
+                type="button"
+                onClick={onSave}
+                disabled={!htmlToPlainTrim(term)}
+                className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-xl bg-zinc-900 px-4 py-3 text-sm font-semibold text-white shadow-sm disabled:pointer-events-none disabled:opacity-40"
+              >
+                <BookOpen className="h-4 w-4" strokeWidth={2} />
+                Save word
+              </button>
+              <button
+                type="button"
+                onClick={() => router.push(`/deck/${deckId}`)}
+                className="inline-flex cursor-pointer items-center justify-center rounded-xl border border-zinc-300 bg-white px-4 py-3 text-sm font-semibold text-ink shadow-sm"
+              >
+                Cancel
+              </button>
+            </div>
           </div>
         </section>
       </div>

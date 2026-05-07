@@ -91,8 +91,12 @@ function escapeHtml(s: string): string {
     .replace(/"/g, "&quot;");
 }
 
-/** Legacy: plain text với `**đoạn**` → HTML (không có thẻ). */
+/** Legacy: plain text với `**đoạn**` → HTML (không có thẻ); giữ xuống dòng bằng `<br>`. */
 export function legacyPlainToStyledHtml(raw: string): string {
+  if (raw.includes("\n")) {
+    const chunks = raw.split("\n");
+    return chunks.map((line) => legacyPlainToStyledHtml(line.replace(/\n/g, ""))).join("<br>");
+  }
   if (!raw.includes("**")) return escapeHtml(raw);
   const parts = raw.split(/(\*\*[^*]+\*\*)/g);
   return parts
