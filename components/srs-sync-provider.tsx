@@ -35,6 +35,8 @@ export function SrsSyncProvider({ userId, children }: { userId: string; children
       }
     };
 
+    let remoteStarted = false;
+
     const loadAndSubscribe = async () => {
       try {
         const remotePayload = await repository.fetchUserPayload(userId);
@@ -63,12 +65,26 @@ export function SrsSyncProvider({ userId, children }: { userId: string; children
       }
     };
 
-    void loadAndSubscribe();
+    const startRemoteOnce = () => {
+      if (cancelled || remoteStarted) return;
+      remoteStarted = true;
+      void loadAndSubscribe();
+    };
+
+    /** Đợi persist (localStorage) hydrate xong rồi mới merge remote — tránh local ghi đè cloud sau đó. */
+    const unsubHydration = useSrsStore.persist.onFinishHydration(() => {
+      startRemoteOnce();
+    });
+
+    if (useSrsStore.persist.hasHydrated()) {
+      startRemoteOnce();
+    }
 
     return () => {
       cancelled = true;
       clearSaveTimer();
       unsubscribe?.();
+      unsubHydration();
     };
   }, [userId]);
 

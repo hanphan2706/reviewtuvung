@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { createBrowserSupabaseClient } from "@/lib/supabase/client";
 import { safeInternalPath } from "@/lib/safe-internal-path";
+import { DEFAULT_USER_ID, defaultSettings, useSrsStore } from "@/store/srs-store";
 
 type AuthButtonProps =
   | {
@@ -61,6 +62,10 @@ export function AuthButton(props: AuthButtonProps) {
       const next = safeInternalPath(props.next ?? "/tu-hoc/tu-vung");
       const redirectTo = `${origin}/auth/callback?next=${encodeURIComponent(next)}&popup=1`;
 
+      /** Mở popup ngay (trước await) để không mất “user gesture” — trình duyệt hay chặn window.open sau async. */
+      const popupName = "supabase-google-oauth";
+      const popup = window.open("", popupName, oauthPopupFeatures());
+
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: "google",
         options: {
@@ -70,27 +75,39 @@ export function AuthButton(props: AuthButtonProps) {
       });
 
       if (error || !data?.url) {
+        popup?.close();
         return;
       }
 
-      const win = window.open(data.url, "supabase-google-oauth", oauthPopupFeatures());
-      if (!win) {
-        window.location.assign(data.url);
-        return;
-      }
-
-      clearPopupPoll();
-      popupPollRef.current = setInterval(() => {
-        if (win.closed) {
-          clearPopupPoll();
-          router.refresh();
+      if (popup && !popup.closed) {
+        try {
+          popup.location.href = data.url;
+        } catch {
+          popup.location.assign(data.url);
         }
-      }, 500);
 
+        clearPopupPoll();
+        popupPollRef.current = setInterval(() => {
+          if (popup.closed) {
+            clearPopupPoll();
+            router.refresh();
+          }
+        }, 500);
+        return;
+      }
+
+      window.location.assign(data.url);
       return;
     }
 
     await supabase.auth.signOut();
+    useSrsStore.getState().replacePayload({
+      userId: DEFAULT_USER_ID,
+      decks: [],
+      words: [],
+      settings: defaultSettings,
+      reviewDayTallies: {},
+    });
     router.refresh();
   };
 

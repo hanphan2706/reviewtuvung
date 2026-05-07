@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 
 /** Khớp với script trong `app/auth/callback/route.ts` (popup đăng nhập xong). */
 export const AUTH_POPUP_MESSAGE_TYPE = "anthichtuhoc-oauth";
@@ -14,8 +13,6 @@ function isAllowedMessageOrigin(origin: string): boolean {
 }
 
 export function OAuthPopupListener() {
-  const router = useRouter();
-
   useEffect(() => {
     function onMessage(event: MessageEvent) {
       const data = event.data as { type?: string; ok?: boolean; next?: string } | null;
@@ -23,16 +20,15 @@ export function OAuthPopupListener() {
       if (!isAllowedMessageOrigin(event.origin)) return;
 
       if (data.ok) {
-        router.refresh();
         const next =
           typeof data.next === "string" && data.next.startsWith("/") ? data.next : "/tu-hoc/tu-vung";
-        router.push(next);
+        window.location.assign(`${window.location.origin}${next}`);
       }
     }
 
     window.addEventListener("message", onMessage);
     return () => window.removeEventListener("message", onMessage);
-  }, [router]);
+  }, []);
 
   return null;
 }
