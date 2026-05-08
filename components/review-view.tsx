@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
+import { ActiveLearningDraftSection } from "@/components/active-learning-draft-section";
 import { SignedInTopBar } from "@/components/signed-in-top-bar";
 import { WordRichDisplay } from "@/components/word-rich-display";
 import { htmlToPlainTrim } from "@/lib/sanitize-word-html";
@@ -73,10 +74,12 @@ export function ReviewView(props: ReviewViewProps) {
   const completedSessionWithCards = sessionDone && sessionQueueIds.length > 0;
 
   useEffect(() => {
-    setAlActive(false);
-    setAlComplete(false);
-    setAlQueueSnapshot([]);
-    setReviewMode("pick");
+    queueMicrotask(() => {
+      setAlActive(false);
+      setAlComplete(false);
+      setAlQueueSnapshot([]);
+      setReviewMode("pick");
+    });
 
     if (allDecks) {
       if (decks.length === 0) {
@@ -183,8 +186,8 @@ export function ReviewView(props: ReviewViewProps) {
             queueIds={alQueueSnapshot}
             words={words}
             isTtTablet={isTtTablet}
+            allDecks={allDecks}
             onFinish={finishActiveLearning}
-            vocabularyHref={backHref}
           />
         ) : showCongratsComplete ? (
           <div className="flex min-h-0 flex-1 flex-col items-center justify-start overflow-y-auto px-3 py-8">
@@ -325,17 +328,60 @@ type ActiveLearningFlowProps = {
   queueIds: string[];
   words: Word[];
   isTtTablet: boolean;
+  allDecks: boolean;
   onFinish: () => void;
-  vocabularyHref: string;
 };
 
-function ActiveLearningFlow({
-  queueIds,
-  words,
-  isTtTablet,
-  onFinish,
-  vocabularyHref,
-}: ActiveLearningFlowProps) {
+const AL_AI_HINT =
+  "Gợi ý AI sẽ hiện ở đây sau khi tích hợp API. Hiện tại bạn có thể tự đánh giá bên dưới.";
+
+type AlTurn = { userText: string; aiText: string };
+
+const AL_PROMPT_EMOJI_POOL = [
+  "✨",
+  "💡",
+  "🎯",
+  "📌",
+  "🔗",
+  "⚖️",
+  "🔄",
+  "✍️",
+  "🧩",
+  "📎",
+  "🌟",
+  "💬",
+  "🔮",
+  "📝",
+  "🎓",
+  "🌿",
+  "🔑",
+  "🧠",
+  "📚",
+  "🤝",
+  "🪄",
+  "🌈",
+  "☘️",
+] as const;
+
+function pickFourLineEmojis(): [string, string, string, string] {
+  const pool = [...AL_PROMPT_EMOJI_POOL];
+  const out: string[] = [];
+  for (let i = 0; i < 4; i++) {
+    const j = Math.floor(Math.random() * pool.length);
+    out.push(pool[j]!);
+    pool.splice(j, 1);
+  }
+  return [out[0]!, out[1]!, out[2]!, out[3]!];
+}
+
+const AL_PROMPT_LINES = [
+  "Tạo một ví dụ cá nhân với từ này",
+  "So sánh từ này với một từ đồng nghĩa/gần nghĩa khác",
+  "So sánh từ này với một từ trái nghĩa khác",
+  "Từ này hay đi chung với các từ nào?",
+] as const;
+
+function ActiveLearningFlow({ queueIds, words, isTtTablet, allDecks, onFinish }: ActiveLearningFlowProps) {
   const recordActiveLearningHard = useSrsStore((s) => s.recordActiveLearningHard);
 
   const list = queueIds
@@ -344,47 +390,59 @@ function ActiveLearningFlow({
 
   const [index, setIndex] = useState(0);
   const [draft, setDraft] = useState("");
-  /** Sau “Gửi và xem gợi ý”: hiện gợi ý + tự đánh giá ngay dưới ô nhập, không đổi màn. */
+  /** Sau “Gửi và xem gợi ý”: hiện gợi ý + tự đánh giá cho lượt gửi cuối. */
   const [feedbackOpen, setFeedbackOpen] = useState(false);
-  /** Placeholder cho API AI — hiển thị cùng màn tự đánh giá. */
-  const [aiFeedback, setAiFeedback] = useState<string | null>(null);
   /** Sau lần đầu “Chưa ổn” (đã quay lại gửi): nút phải đổi thành «Ghi nhận chưa nhớ». */
   const [alSecondTry, setAlSecondTry] = useState(false);
+  /** Mỗi lần gửi: thêm { tin nhắn người dùng + đoạn gợi ý }; giữ lại các lượt trước khi gửi lại sau «Chưa ổn». */
+  const [turns, setTurns] = useState<AlTurn[]>([]);
+  const [promptLineEmojis, setPromptLineEmojis] = useState<[string, string, string, string]>(() =>
+    pickFourLineEmojis(),
+  );
 
+  const messagesEndRef = useRef<HTMLDivElement>(null);
   const word = list[index];
   const total = list.length;
 
   useEffect(() => {
-    setAlSecondTry(false);
+    queueMicrotask(() => {
+      setAlSecondTry(false);
+      setTurns([]);
+      setFeedbackOpen(false);
+      setPromptLineEmojis(pickFourLineEmojis());
+    });
   }, [word.id]);
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
+  }, [feedbackOpen, turns.length, word.id, alSecondTry]);
 
   if (!word || total === 0) {
     return (
       <div className="flex flex-1 flex-col items-center justify-center px-3 py-8 text-center text-sm text-ink-muted">
         <p>Không tìm thấy thẻ để ôn active learning.</p>
-        <Link href={vocabularyHref} className="mt-4 text-[#4b2876] underline">
-          Về từ vựng
-        </Link>
       </div>
     );
   }
 
   const submitInput = () => {
-    setAiFeedback(
-      "Gợi ý AI sẽ hiện ở đây sau khi tích hợp API (dự kiến bản trả phí). Hiện tại bạn có thể tự đánh giá bên dưới.",
-    );
+    const t = draft.trim();
+    setTurns((prev) => [...prev, { userText: t, aiText: AL_AI_HINT }]);
+    setDraft("");
     setFeedbackOpen(true);
   };
 
   const advanceAfterReflect = () => {
     if (index >= total - 1) {
+      setTurns([]);
+      setFeedbackOpen(false);
       onFinish();
       return;
     }
     setFeedbackOpen(false);
     setDraft("");
-    setAiFeedback(null);
     setAlSecondTry(false);
+    setTurns([]);
     setIndex((i) => i + 1);
   };
 
@@ -393,125 +451,117 @@ function ActiveLearningFlow({
     advanceAfterReflect();
   };
 
-  /** Lần đầu «Chưa ổn»: quay lại màn Gửi ngay; lần sau nút đổi thành «Ghi nhận chưa nhớ». */
+  /** «Chưa ổn»: đóng tự đánh giá, giữ các lượt đã gửi + gợi ý; cho phép gửi thêm lượt mới. */
   const onChuaOnFirstRound = () => {
     setFeedbackOpen(false);
-    setAiFeedback(null);
     setAlSecondTry(true);
   };
 
+  /** Giống ChatGPT (light): chỉ khoảng trống + bo góc, không kẻ ngăn giữa các khối. */
+  const chatSurface = "bg-[#f5f5f7]";
+
+  const userBubbleRight =
+    "max-w-[min(85%,24rem)] rounded-[1.35rem] bg-[#4b2876] px-3.5 py-2.5 text-[15px] leading-relaxed text-white";
+
+  /** Xám nhạt kiểu bubble phụ (ChatGPT light), không viền. */
+  const reflectBubbleRight =
+    "max-w-[min(85%,24rem)] rounded-[1.35rem] bg-zinc-200/80 px-3 py-2.5";
+
   return (
-    <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
-      <div className="mt-2 shrink-0 text-center sm:mt-3">
-        <p className="text-sm font-medium text-[#4b2876]">Active learning</p>
-        <p className={`mt-0.5 text-xs text-ink-muted sm:text-sm ${isTtTablet ? "text-base" : ""}`}>
+    <div className={`flex min-h-0 flex-1 flex-col overflow-hidden ${chatSurface}`}>
+      <div className={`shrink-0 px-4 py-3 sm:py-3.5 ${chatSurface}`}>
+        {allDecks ? <p className="text-center text-sm font-medium text-[#4b2876]">Tất cả deck</p> : null}
+        <p className={`text-center text-xs text-ink-muted sm:text-sm ${isTtTablet ? "text-base" : ""}`}>
           Thẻ {index + 1} / {total}
         </p>
       </div>
 
-      <div className="flex min-h-0 flex-1 flex-col overflow-y-auto overflow-x-hidden scroll-py-4">
+      <div className="min-h-0 flex-1 overflow-y-auto overflow-x-hidden scroll-py-4">
         <div
-          className={`mx-auto flex w-full max-w-md flex-1 flex-col gap-4 px-3 py-4 sm:px-4 ${isTtTablet ? "max-w-xl" : ""}`}
+          className={`mx-auto flex w-full max-w-md flex-col gap-10 px-3 py-6 sm:px-4 ${isTtTablet ? "max-w-xl gap-12" : ""}`}
         >
-          <div className="space-y-2.5 text-left text-sm font-medium leading-snug text-[#4b2876] sm:text-[15px]">
-            <p>
-              Đặt một câu hoàn chỉnh có chứa thuật ngữ này. Thêm các thông tin khác (nếu có) để tạo thành một đoạn nói
-              ngắn.
-            </p>
-            <p className="text-sm font-normal leading-relaxed text-ink sm:text-[15px]">
-              <span className="block text-ink-muted">Ví dụ:</span>
-              <span className="mt-1 block font-normal italic text-zinc-500 sm:text-[15px]">
-                I tried to <strong className="font-bold">blend into</strong>{" "}
-                the crowd. I didn&apos;t want to be noticed. I wasn&apos;t comfortable with that.
-              </span>
-            </p>
-          </div>
-
-          <div>
-            <div className="rounded-xl border border-zinc-200/90 bg-white px-3 py-2.5 text-center shadow-sm ring-1 ring-zinc-950/5">
-              <WordRichDisplay
-                html={word.term}
-                className="inline-block max-w-full text-base font-medium text-ink [&_b]:font-bold [&_strong]:font-bold sm:text-lg"
-              />
+          <div className="w-full max-w-[min(100%,42rem)]">
+            <div
+              key={word.id}
+              className="text-[15px] font-bold leading-relaxed text-ink [&_*]:text-inherit [&_b]:font-bold [&_strong]:font-bold"
+            >
+              <WordRichDisplay html={word.term} className="inline-block max-w-full" />
+            </div>
+            <div className="mt-3 text-[15px] leading-relaxed text-[#142238]">
+              <p className="font-medium">Bạn có thể:</p>
+              <ul className="mt-2 list-none space-y-2 pl-0">
+                {AL_PROMPT_LINES.map((line, i) => (
+                  <li key={line} className="flex gap-2.5">
+                    <span className="shrink-0 select-none" aria-hidden>
+                      {promptLineEmojis[i]}
+                    </span>
+                    <span>{line}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
-          <div>
-            <label htmlFor={`al-draft-${word.id}`} className="sr-only">
-              Bài làm của bạn
-            </label>
-            <textarea
-              id={`al-draft-${word.id}`}
-              value={draft}
-              onChange={(e) => setDraft(e.target.value)}
-              rows={5}
-              spellCheck
-              lang="en"
-              placeholder="Viết đoạn của bạn bằng tiếng Anh…"
-              className="w-full resize-y rounded-xl border border-zinc-200/90 bg-white px-4 py-3 text-sm text-ink outline-none ring-zinc-300/80 placeholder:text-ink-faint focus-visible:border-zinc-400 focus-visible:ring-1 sm:text-[15px]"
-            />
-          </div>
-
-          {!feedbackOpen ? (
-            <button
-              type="button"
-              onClick={submitInput}
-              className="w-full rounded-xl bg-[#4b2876] py-3.5 text-sm font-semibold text-white shadow-sm transition active:scale-[0.99]"
-            >
-              Gửi và xem gợi ý
-            </button>
-          ) : null}
+          {turns.map((turn, turnIdx) => (
+            <div key={`${word.id}-${turnIdx}`} className="flex flex-col gap-8">
+              <div className="flex justify-end">
+                <div className={userBubbleRight}>{turn.userText}</div>
+              </div>
+              <div className="w-full max-w-[min(100%,42rem)]">
+                <p className="text-[15px] leading-relaxed text-ink">{turn.aiText}</p>
+              </div>
+            </div>
+          ))}
 
           {feedbackOpen ? (
-            <div className="flex flex-col gap-5 border-t border-zinc-200/90 pt-5">
-              {aiFeedback ? (
-                <div className="rounded-xl border border-zinc-200/90 bg-white px-4 py-3 text-left shadow-sm ring-1 ring-zinc-950/5">
-                  <p className="text-[11px] font-semibold uppercase tracking-wide text-[#4b2876]">Gợi ý (AI)</p>
-                  <p className="mt-1.5 text-sm leading-relaxed text-ink">{aiFeedback}</p>
-                </div>
-              ) : null}
-
-              <div className="space-y-4">
-                <p className="text-center text-sm font-medium leading-snug text-ink sm:text-[15px]">
-                  Tự đánh giá bài làm
-                </p>
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <div className="flex justify-end">
+              <div className={reflectBubbleRight}>
+                <p className="mb-2 text-xs font-medium text-ink/75">Tự đánh giá</p>
+                <div className="flex flex-col gap-1.5 sm:flex-row sm:flex-wrap sm:gap-2">
                   <button
                     type="button"
                     onClick={advanceAfterReflect}
-                    className="rounded-xl border border-zinc-200/90 bg-white px-4 py-4 text-center text-sm font-semibold text-[#4b2876] shadow-sm ring-1 ring-zinc-950/5 transition active:scale-[0.99]"
+                    className="rounded-xl bg-white px-2.5 py-1.5 text-left text-[13px] leading-snug text-[#4b2876] transition hover:bg-violet-50/90 active:scale-[0.99]"
                   >
-                    Ổn, đúng hướng
+                    <span aria-hidden>⚡️</span> <span>Ổn, đúng hướng</span>
                   </button>
                   {alSecondTry ? (
                     <button
                       type="button"
                       onClick={finishWithHardTally}
-                      className="rounded-xl border border-zinc-200/90 bg-white px-4 py-4 text-center text-sm font-semibold text-ink shadow-sm ring-1 ring-zinc-950/5 transition active:scale-[0.99]"
+                      className="rounded-xl bg-white px-2.5 py-1.5 text-left text-[13px] leading-snug text-ink transition hover:bg-white/90 active:scale-[0.99]"
                     >
-                      Ghi nhận chưa nhớ
+                      <span aria-hidden>😣</span> <span>Ghi nhận chưa nhớ</span>
                     </button>
                   ) : (
                     <button
                       type="button"
                       onClick={onChuaOnFirstRound}
-                      className="rounded-xl border border-zinc-200/90 bg-white px-4 py-4 text-center text-sm font-semibold text-ink shadow-sm ring-1 ring-zinc-950/5 transition active:scale-[0.99]"
+                      className="rounded-xl bg-white px-2.5 py-1.5 text-left text-[13px] leading-snug text-ink transition hover:bg-white/90 active:scale-[0.99]"
                     >
-                      Chưa ổn
+                      <span aria-hidden>🤔</span> <span>Chưa ổn</span>
                     </button>
                   )}
                 </div>
               </div>
-
-              <Link
-                href={vocabularyHref}
-                className="block text-center text-sm text-ink-muted underline underline-offset-2"
-              >
-                Thoát — về từ vựng
-              </Link>
             </div>
           ) : null}
+
+          <div ref={messagesEndRef} className="h-px shrink-0" aria-hidden />
         </div>
+      </div>
+
+      <div
+        className={`shrink-0 px-3 pb-[max(0.75rem,env(safe-area-inset-bottom,0px))] pt-3 ${chatSurface}`}
+      >
+        <ActiveLearningDraftSection
+          draft={draft}
+          onDraftChange={setDraft}
+          inputId={`al-draft-${word.id}`}
+          voiceDisabled={feedbackOpen}
+          onSubmit={feedbackOpen ? undefined : submitInput}
+          submitDisabled={feedbackOpen || draft.trim() === ""}
+        />
       </div>
     </div>
   );
