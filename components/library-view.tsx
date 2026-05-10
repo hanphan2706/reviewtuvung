@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { Check, ChevronRight, Pencil, Play, Plus, Settings2, Trash2 } from "lucide-react";
 import { LandingSectionLink } from "@/components/landing-section-link";
 import { SignedInTopBar } from "@/components/signed-in-top-bar";
@@ -11,7 +10,6 @@ import { useSrsStore } from "@/store/srs-store";
 import { useNowTick } from "@/hooks/use-now-tick";
 
 export function LibraryView() {
-  const router = useRouter();
   const now = useNowTick();
   const decks = useSrsStore((s) => s.decks);
   const settings = useSrsStore((s) => s.settings);
@@ -62,10 +60,9 @@ export function LibraryView() {
   }, [renameDeckId]);
 
   const onCreateDeck = () => {
-    const id = createDeck(newDeckName);
+    createDeck(newDeckName);
     setNewDeckName("");
     setDeckCreateOpen(false);
-    router.push(`/deck/${id}`);
   };
 
   const commitRenameDeck = () => {
@@ -163,7 +160,7 @@ export function LibraryView() {
                   }
                 }}
                 placeholder="Deck name"
-                className="min-w-0 flex-1 rounded-xl border border-[#eadff2] bg-[#fbf8fd] px-4 py-3 text-sm text-ink placeholder:text-[#4b2876]/35 outline-none ring-[#4b2876]/20 focus:border-[#4b2876]/40 focus:ring-1"
+                className="min-w-0 flex-1 rounded-xl border border-[#eadff2] bg-[#fbf8fd] px-4 py-3 text-base text-ink placeholder:text-[#4b2876]/35 outline-none ring-[#4b2876]/20 focus:border-[#4b2876]/40 focus:ring-1"
               />
               <button
                 type="button"
@@ -196,7 +193,7 @@ export function LibraryView() {
                     }
                   }}
                   onBlur={onLimitBlur}
-                  className="w-24 rounded-xl border border-[#eadff2] bg-[#fbf8fd] px-4 py-2.5 text-sm font-medium text-ink outline-none ring-[#4b2876]/20 focus:border-[#4b2876]/40 focus:ring-1"
+                  className="w-24 rounded-xl border border-[#eadff2] bg-[#fbf8fd] px-4 py-2.5 text-base font-medium text-ink outline-none ring-[#4b2876]/20 focus:border-[#4b2876]/40 focus:ring-1"
                 />
                 <span className="text-sm text-ink-muted">words / session</span>
               </div>
@@ -229,7 +226,7 @@ export function LibraryView() {
                               cancelRenameDeck();
                             }
                           }}
-                          className="min-w-0 flex-1 rounded-lg border border-[#eadff2] bg-white px-3 py-2 text-sm font-semibold text-[#4b2876] outline-none ring-[#4b2876]/20 focus:border-[#4b2876]/40 focus:ring-1"
+                          className="min-w-0 flex-1 rounded-lg border border-[#eadff2] bg-white px-3 py-2 text-base font-semibold text-[#4b2876] outline-none ring-[#4b2876]/20 focus:border-[#4b2876]/40 focus:ring-1"
                           aria-label="Tên deck"
                         />
                         <button

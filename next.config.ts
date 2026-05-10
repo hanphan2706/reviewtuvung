@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  /**
+   * Dev: Turbopack/HMR khi mở site qua IP LAN. Wildcard theo cùng quy tắc như docs Next (`*.example.com`);
+   * `192.168.*.*` khớp mọi host `192.168.x.y` — không cần sửa khi DHCP đổi octet cuối.
+   */
+  allowedDevOrigins: ["192.168.*.*", "*.ngrok-free.dev"],
   async redirects() {
     return [
       {

@@ -254,7 +254,7 @@ export function RichTextField({
           syncFromDom();
           updateToolbar();
         }}
-        className={`w-full resize-y wrap-break-word rounded-xl border border-zinc-200/90 bg-white px-4 py-3 text-sm text-ink outline-none ring-zinc-300/80 focus-visible:border-zinc-400 focus-visible:ring-1 ${minHeightClass} ${className}`.trim()}
+        className={`w-full resize-y wrap-break-word rounded-xl border border-zinc-200/90 bg-white px-4 py-3 text-base text-ink outline-none ring-zinc-300/80 focus-visible:border-zinc-400 focus-visible:ring-1 ${minHeightClass} ${className}`.trim()}
       />
 
       {toolbar && typeof document !== "undefined"

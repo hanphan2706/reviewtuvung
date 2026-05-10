@@ -500,13 +500,13 @@ export function ActiveLearningDraftSection({
    * Một dòng: bọc flex items-center + textarea py-0 + leading cố định — Chrome/macOS căn chữ trong ô cao min-h-10 ổn định hơn là chỉ padding.
    */
   const singleLineTextareaClasses = chatDark
-    ? "min-h-0 w-full flex-1 resize-none appearance-none border-0 bg-transparent py-0 text-sm leading-[22px] text-zinc-100 outline-none placeholder:text-zinc-500 focus:ring-0 focus-visible:outline-none sm:text-[15px]"
-    : "min-h-0 w-full flex-1 resize-none appearance-none border-0 bg-transparent py-0 text-sm leading-[22px] text-ink outline-none focus:ring-0 focus-visible:outline-none sm:text-[15px]";
+    ? "min-h-0 w-full flex-1 resize-none appearance-none border-0 bg-transparent py-0 text-base leading-[22px] text-zinc-100 outline-none placeholder:text-zinc-500 focus:ring-0 focus-visible:outline-none"
+    : "min-h-0 w-full flex-1 resize-none appearance-none border-0 bg-transparent py-0 text-base leading-[22px] text-ink outline-none focus:ring-0 focus-visible:outline-none";
 
   /** Nhiều dòng: line-height đồng bộ; padding dọc đưa vào vỏ (shell) để khỏi lệch baseline. */
   const multilineTextareaClasses = chatDark
-    ? "min-h-11 w-full resize-none appearance-none border-0 bg-transparent px-0 py-0 text-sm leading-[22px] text-zinc-100 outline-none placeholder:text-zinc-500 focus:ring-0 sm:text-[15px]"
-    : "min-h-11 w-full resize-none appearance-none border-0 bg-transparent px-0 py-0 text-sm leading-[22px] text-ink outline-none focus:ring-0 sm:text-[15px]";
+    ? "min-h-11 w-full resize-none appearance-none border-0 bg-transparent px-0 py-0 text-base leading-[22px] text-zinc-100 outline-none placeholder:text-zinc-500 focus:ring-0"
+    : "min-h-11 w-full resize-none appearance-none border-0 bg-transparent px-0 py-0 text-base leading-[22px] text-ink outline-none focus:ring-0";
 
   const textareaShell = (
     <div
@@ -518,7 +518,7 @@ export function ActiveLearningDraftSection({
     >
       {draftEmpty && !showListeningWave ? (
         <p
-          className={`pointer-events-none absolute inset-y-0 left-0 right-1 z-0 flex items-center text-left text-sm italic leading-[22px] sm:text-[15px] ${multiline ? "hidden" : ""} ${showExampleBehindTextarea ? (chatDark ? "text-zinc-500" : "text-ink-muted") : "text-transparent"}`}
+          className={`pointer-events-none absolute inset-y-0 left-0 right-1 z-0 flex items-center text-left text-base italic leading-[22px] ${multiline ? "hidden" : ""} ${showExampleBehindTextarea ? (chatDark ? "text-zinc-500" : "text-ink-muted") : "text-transparent"}`}
           aria-hidden
         >
           <span className="min-w-0 truncate">Ví dụ: I tried to blend in with the crowd.</span>
