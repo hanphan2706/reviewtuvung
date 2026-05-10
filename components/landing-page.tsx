@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -233,6 +233,29 @@ function CourseCarouselSection({
   tuckUp?: boolean;
 }) {
   const carouselRef = useRef<HTMLDivElement>(null);
+  /** Chỉ ẩn nút khi toàn bộ track thật sự nằm gọn trong vùng cuộn — không dùng breakpoint viewport (khung carousel hẹp hơn màn hình). */
+  const [carouselHasOverflow, setCarouselHasOverflow] = useState(true);
+
+  const updateCarouselOverflow = useCallback(() => {
+    const el = carouselRef.current;
+    if (!el) return;
+    setCarouselHasOverflow(el.scrollWidth > el.clientWidth + 2);
+  }, []);
+
+  useLayoutEffect(() => {
+    const el = carouselRef.current;
+    if (!el) return;
+    updateCarouselOverflow();
+    const ro = new ResizeObserver(() => {
+      updateCarouselOverflow();
+    });
+    ro.observe(el);
+    window.addEventListener("resize", updateCarouselOverflow);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", updateCarouselOverflow);
+    };
+  }, [updateCarouselOverflow]);
 
   const scrollCourses = (dir: "prev" | "next") => {
     const el = carouselRef.current;
@@ -262,24 +285,26 @@ function CourseCarouselSection({
               </p>
             ) : null}
           </div>
-          <div className="flex shrink-0 gap-2.5 self-start md:self-auto min-[1400px]:hidden">
-            <button
-              type="button"
-              onClick={() => scrollCourses("prev")}
-              className="flex h-9 w-9 items-center justify-center border border-zinc-900/10 bg-zinc-900/10 text-zinc-400 transition hover:bg-zinc-900/15 md:h-10 md:w-10"
-              aria-label="Khoá học trước"
-            >
-              <ChevronLeft className="h-4 w-4 md:h-5 md:w-5" strokeWidth={2} />
-            </button>
-            <button
-              type="button"
-              onClick={() => scrollCourses("next")}
-              className="flex h-9 w-9 items-center justify-center border border-zinc-900/90 bg-zinc-900 text-white transition hover:bg-zinc-800 md:h-10 md:w-10"
-              aria-label="Khoá học tiếp"
-            >
-              <ChevronRight className="h-4 w-4 md:h-5 md:w-5" strokeWidth={2} />
-            </button>
-          </div>
+          {carouselHasOverflow ? (
+            <div className="flex shrink-0 gap-2.5 self-start md:self-auto">
+              <button
+                type="button"
+                onClick={() => scrollCourses("prev")}
+                className="flex h-9 w-9 items-center justify-center border border-zinc-900/10 bg-zinc-900/10 text-zinc-400 transition hover:bg-zinc-900/15 md:h-10 md:w-10"
+                aria-label="Khoá học trước"
+              >
+                <ChevronLeft className="h-4 w-4 md:h-5 md:w-5" strokeWidth={2} />
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollCourses("next")}
+                className="flex h-9 w-9 items-center justify-center border border-zinc-900/90 bg-zinc-900 text-white transition hover:bg-zinc-800 md:h-10 md:w-10"
+                aria-label="Khoá học tiếp"
+              >
+                <ChevronRight className="h-4 w-4 md:h-5 md:w-5" strokeWidth={2} />
+              </button>
+            </div>
+          ) : null}
         </div>
 
         <div

@@ -126,3 +126,21 @@ body {
     opacity: 0.65;
   }
 }
+
+/** `<dialog>`: Safari iOS hay bỏ qua `backdrop:` của Tailwind — style `::backdrop` tường minh. */
+dialog.newsletter-dialog {
+  margin: 0;
+  outline: none;
+  max-width: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+dialog.newsletter-dialog:focus {
+  outline: none;
+}
+
+dialog.newsletter-dialog::backdrop {
+  background: rgb(24 24 27 / 0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
