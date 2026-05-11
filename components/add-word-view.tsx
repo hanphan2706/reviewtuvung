@@ -61,7 +61,7 @@ export function AddWordView({ deckId }: { deckId: string }) {
               </Link>
             }
           />
-          <h1 className="text-center text-xl font-bold tracking-tight text-[#4b2876]">Add word</h1>
+          <h1 className="text-center text-xl font-bold tracking-tight text-[#4b2876]">Thêm từ mới</h1>
         </header>
 
         <section className="w-full rounded-lg border border-zinc-200/80 bg-white p-5 shadow-sm ring-1 ring-zinc-950/5">

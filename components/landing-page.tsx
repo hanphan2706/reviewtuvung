@@ -42,7 +42,9 @@ export function LandingPage() {
     });
   }, [pathname]);
 
-  const navBarMain = LANDING.nav.filter((item) => item.label !== "Giải bày");
+  const navBarMain = LANDING.nav.filter(
+    (item) => item.label !== "Giải bày" && item.label !== "Giới thiệu",
+  );
   const navBarContact = LANDING.nav.find((item) => item.label === "Giải bày");
 
   return (
@@ -76,27 +78,24 @@ export function LandingPage() {
                     </LandingSectionLink>
                   );
                 }
-                const isOnTap = item.href.startsWith("/");
-                const isExternal = item.href.startsWith("http");
+                const { href, label } = item as { href: string; label: string };
+                const isOnTap = href.startsWith("/");
+                const isExternal = href.startsWith("http");
                 if (isOnTap) {
                   return (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="shrink-0 text-base font-medium text-ink transition hover:opacity-90"
-                    >
-                      {item.label}
+                    <Link key={href} href={href} className="shrink-0 text-base font-medium text-ink transition hover:opacity-90">
+                      {label}
                     </Link>
                   );
                 }
                 return (
                   <a
-                    key={item.href}
-                    href={item.href}
+                    key={href}
+                    href={href}
                     {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                     className="shrink-0 text-base font-medium text-ink transition hover:opacity-90"
                   >
-                    {item.label}
+                    {label}
                   </a>
                 );
               })}

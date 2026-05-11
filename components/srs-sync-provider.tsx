@@ -3,7 +3,8 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { createBrowserSupabaseClient } from "@/lib/supabase/client";
 import { createSupabaseSrsRepository } from "@/lib/srs-supabase-repository";
-import { defaultSettings, useSrsStore } from "@/store/srs-store";
+import { createStarterUserPayload } from "@/lib/srs-starter-payload";
+import { useSrsStore } from "@/store/srs-store";
 
 function formatSupabaseLikeError(error: unknown): string {
   if (error && typeof error === "object") {
@@ -45,15 +46,7 @@ export function SrsSyncProvider({ userId, children }: { userId: string; children
         const remotePayload = await repository.fetchUserPayload(userId);
         if (cancelled) return;
 
-        useSrsStore.getState().replacePayload(
-          remotePayload ?? {
-            userId,
-            decks: [],
-            words: [],
-            settings: defaultSettings,
-            reviewDayTallies: {},
-          },
-        );
+        useSrsStore.getState().replacePayload(remotePayload ?? createStarterUserPayload(userId));
 
         unsubscribe = useSrsStore.subscribe((state) => {
           clearSaveTimer();

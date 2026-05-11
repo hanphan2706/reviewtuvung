@@ -3,6 +3,16 @@ import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 import { getSupabaseBrowserConfig } from "@/lib/supabase/config";
 
+/** Chỉ các route cần làm mới JWT — tránh gọi Supabase trên mọi trang marketing (giảm độ trễ lần tải đầu). */
+function needsSupabaseSessionRefresh(pathname: string): boolean {
+  if (pathname.startsWith("/auth/callback")) return true;
+  if (pathname.startsWith("/deck/")) return true;
+  if (pathname === "/review") return true;
+  if (pathname.startsWith("/tu-hoc/tu-vung")) return true;
+  if (pathname.startsWith("/api/")) return true;
+  return false;
+}
+
 /**
  * 1) OAuth đôi khi redirect nhầm về `/` với `?code=` → chuyển sang `/auth/callback`.
  * 2) Làm mới session cookie (chuẩn @supabase/ssr + Next.js) — tránh tab sau OAuth không có JWT.
@@ -27,6 +37,10 @@ export async function middleware(request: NextRequest) {
   const response = NextResponse.next({
     request: { headers: request.headers },
   });
+
+  if (!needsSupabaseSessionRefresh(url.pathname)) {
+    return response;
+  }
 
   const config = getSupabaseBrowserConfig();
   if (!config) {

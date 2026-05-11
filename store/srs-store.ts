@@ -28,11 +28,16 @@ function newWord(userId: UserId, deckId: string, term: string, definition: strin
   };
 }
 
+function normalizeDeckName(raw: string): string {
+  const s = raw.replace(/\r?\n/g, " ").replace(/\s+/g, " ").trim();
+  return s || "Untitled deck";
+}
+
 function newDeck(userId: UserId, name: string, now: number): Deck {
   return {
     id: crypto.randomUUID(),
     userId,
-    name: name.trim() || "Untitled deck",
+    name: normalizeDeckName(name),
     createdAt: now,
   };
 }
@@ -127,7 +132,7 @@ export const useSrsStore = create<SrsState>()(
       },
 
       renameDeck: (deckId, name) => {
-        const trimmed = name.trim() || "Untitled deck";
+        const trimmed = normalizeDeckName(name);
         set((s) => ({
           decks: s.decks.map((d) => (d.id === deckId ? { ...d, name: trimmed } : d)),
         }));

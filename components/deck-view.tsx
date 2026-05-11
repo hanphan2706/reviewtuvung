@@ -81,7 +81,9 @@ export function DeckView({ deckId }: { deckId: string }) {
         />
 
         <section className="w-full rounded-xl border border-zinc-200/80 bg-white p-6 shadow-sm ring-1 ring-zinc-950/5">
-          <h1 className="text-center font-serif text-2xl font-bold tracking-tight text-[#4b2876]">{activeDeck.name}</h1>
+          <h1 className="break-words px-1 text-center text-balance font-serif text-2xl font-bold tracking-tight text-[#4b2876]">
+            {activeDeck.name}
+          </h1>
           <p className="mt-2 text-center text-sm text-zinc-500">
             {deckWords.length} từ · {dueInDeck} đến hạn
           </p>
@@ -89,16 +91,16 @@ export function DeckView({ deckId }: { deckId: string }) {
           <div className="mt-6 flex flex-wrap items-center justify-end gap-2">
             <Link
               href={`/deck/${deckId}/add-word`}
-              className="inline-flex cursor-pointer items-center gap-2 rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-sm font-semibold text-ink shadow-sm"
+              className="inline-flex min-h-10 cursor-pointer items-center justify-center gap-2 rounded-xl border border-zinc-200 bg-white px-4 py-2 text-sm font-semibold leading-none text-ink shadow-sm"
             >
-              Add word
+              Thêm từ mới
             </Link>
             <Link
               href={`/deck/${deckId}/review`}
-              className="inline-flex cursor-pointer items-center gap-2 rounded-xl bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm"
+              className="inline-flex min-h-10 cursor-pointer items-center justify-center gap-2 rounded-xl border border-zinc-900 bg-zinc-900 px-4 py-2 text-sm font-semibold leading-none text-white shadow-sm"
             >
-              <Play className="h-4 w-4" />
-              Start review
+              <Play className="h-4 w-4 shrink-0" strokeWidth={2} />
+              Ôn tập
             </Link>
           </div>
 

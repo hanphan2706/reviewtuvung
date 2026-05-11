@@ -116,7 +116,7 @@ export function ReviewView(props: ReviewViewProps) {
   };
 
   const backHref = allDecks ? "/tu-hoc/tu-vung" : `/deck/${deckId}`;
-  const backLabel = allDecks ? "All decks" : (activeDeck?.name ?? "Bộ thẻ");
+  const backLabel = allDecks ? "Tất cả decks" : (activeDeck?.name ?? "Bộ thẻ");
 
   const startActiveLearningFromPick = () => {
     setAlQueueSnapshot([...sessionQueueIds]);
@@ -232,7 +232,7 @@ export function ReviewView(props: ReviewViewProps) {
           <>
             <div className="mt-2 shrink-0 sm:mt-3">
               {allDecks ? (
-                <p className="text-center text-sm font-medium text-[#4b2876]">Tất cả deck</p>
+                <p className="text-center text-sm font-medium text-[#4b2876]">Tất cả decks</p>
               ) : null}
               <p
                 className={`text-center text-xs text-ink-muted sm:text-sm ${allDecks ? "mt-1" : "mt-0.5"}`}
@@ -470,7 +470,7 @@ function ActiveLearningFlow({ queueIds, words, isTtTablet, allDecks, onFinish }:
   return (
     <div className={`flex min-h-0 flex-1 flex-col overflow-hidden ${chatSurface}`}>
       <div className={`shrink-0 px-4 py-3 sm:py-3.5 ${chatSurface}`}>
-        {allDecks ? <p className="text-center text-sm font-medium text-[#4b2876]">Tất cả deck</p> : null}
+        {allDecks ? <p className="text-center text-sm font-medium text-[#4b2876]">Tất cả decks</p> : null}
         <p className={`text-center text-xs text-ink-muted sm:text-sm ${isTtTablet ? "text-base" : ""}`}>
           Thẻ {index + 1} / {total}
         </p>

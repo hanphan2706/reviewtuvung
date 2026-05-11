@@ -120,7 +120,7 @@ export function LandingCurtainMenu({
                 {LANDING.footer.columnDiscoverTitle}
               </p>
               <ul className="mt-1.5 space-y-1 sm:mt-2 sm:space-y-1.5 [@media(max-height:640px)]:mt-1 [@media(max-height:640px)]:space-y-0.5">
-                {LANDING.nav.map((item) => {
+                {LANDING.nav.filter((item) => item.label !== "Giới thiệu").map((item) => {
                   if ("scrollSection" in item && item.scrollSection) {
                     return (
                       <li key={item.label}>

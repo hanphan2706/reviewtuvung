@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { Check, ChevronRight, Pencil, Play, Plus, Settings2, Trash2 } from "lucide-react";
+import { Check, ChevronRight, Pencil, Play, Plus, Settings2, Trash2, X } from "lucide-react";
+import { EmojiPickerAnchor } from "@/components/emoji-picker-anchor";
 import { LandingSectionLink } from "@/components/landing-section-link";
 import { SignedInTopBar } from "@/components/signed-in-top-bar";
 import { countDue } from "@/lib/srs";
@@ -24,10 +25,10 @@ export function LibraryView() {
   const [showDailyLimit, setShowDailyLimit] = useState(false);
   const [deckCreateOpen, setDeckCreateOpen] = useState(false);
   const [newDeckName, setNewDeckName] = useState("");
-  const newDeckNameInputRef = useRef<HTMLInputElement>(null);
+  const newDeckNameInputRef = useRef<HTMLTextAreaElement>(null);
   const [renameDeckId, setRenameDeckId] = useState<string | null>(null);
   const [renameDeckDraft, setRenameDeckDraft] = useState("");
-  const renameInputRef = useRef<HTMLInputElement>(null);
+  const renameInputRef = useRef<HTMLTextAreaElement>(null);
 
   const limitDisplay = limitDraft ?? String(settings.dailyReviewLimit);
 
@@ -76,6 +77,66 @@ export function LibraryView() {
     setRenameDeckId(null);
     setRenameDeckDraft("");
   };
+
+  const insertEmojiNewDeck = useCallback(
+    (emoji: string) => {
+      const el = newDeckNameInputRef.current;
+      let start = newDeckName.length;
+      let end = newDeckName.length;
+      if (
+        el &&
+        document.activeElement === el &&
+        typeof el.selectionStart === "number" &&
+        typeof el.selectionEnd === "number"
+      ) {
+        start = el.selectionStart;
+        end = el.selectionEnd;
+      }
+      const caret = start + emoji.length;
+      const next = newDeckName.slice(0, start) + emoji + newDeckName.slice(end);
+      setNewDeckName(next);
+      queueMicrotask(() => {
+        const input = newDeckNameInputRef.current;
+        input?.focus();
+        try {
+          input?.setSelectionRange(caret, caret);
+        } catch {
+          /* ignore */
+        }
+      });
+    },
+    [newDeckName],
+  );
+
+  const insertEmojiRename = useCallback(
+    (emoji: string) => {
+      const el = renameInputRef.current;
+      let start = renameDeckDraft.length;
+      let end = renameDeckDraft.length;
+      if (
+        el &&
+        document.activeElement === el &&
+        typeof el.selectionStart === "number" &&
+        typeof el.selectionEnd === "number"
+      ) {
+        start = el.selectionStart;
+        end = el.selectionEnd;
+      }
+      const caret = start + emoji.length;
+      const next = renameDeckDraft.slice(0, start) + emoji + renameDeckDraft.slice(end);
+      setRenameDeckDraft(next);
+      queueMicrotask(() => {
+        const input = renameInputRef.current;
+        input?.focus();
+        try {
+          input?.setSelectionRange(caret, caret);
+        } catch {
+          /* ignore */
+        }
+      });
+    },
+    [renameDeckDraft],
+  );
 
   return (
     <div className="flex min-h-dvh w-full flex-col items-center px-5 pb-6 pt-10">
@@ -147,29 +208,53 @@ export function LibraryView() {
           </div>
 
           {deckCreateOpen ? (
-            <div className="flex w-full gap-2">
-              <input
-                ref={newDeckNameInputRef}
-                value={newDeckName}
-                onChange={(e) => setNewDeckName(e.target.value)}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") onCreateDeck();
-                  if (e.key === "Escape") {
+            <div className="flex w-full flex-col gap-2">
+              <div className="relative min-w-0 flex-1">
+                <textarea
+                  ref={newDeckNameInputRef}
+                  value={newDeckName}
+                  rows={2}
+                  onChange={(e) => setNewDeckName(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter" && !e.shiftKey) {
+                      e.preventDefault();
+                      onCreateDeck();
+                    }
+                    if (e.key === "Escape") {
+                      setDeckCreateOpen(false);
+                      setNewDeckName("");
+                    }
+                  }}
+                  placeholder="Deck name"
+                  className="min-h-[3.5rem] w-full resize-none wrap-break-word rounded-xl border border-[#eadff2] bg-[#fbf8fd] py-2.5 pl-4 pr-11 text-base leading-snug text-ink placeholder:text-[#4b2876]/35 outline-none ring-[#4b2876]/20 focus:border-[#4b2876]/40 focus:ring-1"
+                />
+                <EmojiPickerAnchor
+                  placement="center-right"
+                  onPick={insertEmojiNewDeck}
+                  aria-label="Chèn emoji vào tên deck"
+                />
+              </div>
+              <div className="flex shrink-0 items-stretch justify-end gap-2">
+                <button
+                  type="button"
+                  onClick={() => {
                     setDeckCreateOpen(false);
                     setNewDeckName("");
-                  }
-                }}
-                placeholder="Deck name"
-                className="min-w-0 flex-1 rounded-xl border border-[#eadff2] bg-[#fbf8fd] px-4 py-3 text-base text-ink placeholder:text-[#4b2876]/35 outline-none ring-[#4b2876]/20 focus:border-[#4b2876]/40 focus:ring-1"
-              />
-              <button
-                type="button"
-                onClick={onCreateDeck}
-                className="inline-flex shrink-0 cursor-pointer items-center justify-center rounded-xl bg-zinc-900 px-4 py-3 text-white shadow-sm"
-                aria-label="Save deck"
-              >
-                <Check className="h-5 w-5" strokeWidth={2} />
-              </button>
+                  }}
+                  className="inline-flex shrink-0 cursor-pointer items-center justify-center rounded-xl border border-zinc-200 bg-white px-3 py-3 text-ink shadow-sm"
+                  aria-label="Huỷ"
+                >
+                  <X className="h-5 w-5 shrink-0" strokeWidth={2} aria-hidden />
+                </button>
+                <button
+                  type="button"
+                  onClick={onCreateDeck}
+                  className="inline-flex shrink-0 cursor-pointer items-center justify-center rounded-xl bg-zinc-900 px-4 py-3 text-white shadow-sm"
+                  aria-label="Lưu deck"
+                >
+                  <Check className="h-5 w-5" strokeWidth={2} />
+                </button>
+              </div>
             </div>
           ) : null}
 
@@ -211,32 +296,50 @@ export function LibraryView() {
                 return (
                   <li key={d.id} className="flex items-stretch gap-1 rounded-xl border border-zinc-200/60 bg-zinc-50/40 px-2 py-2">
                     {renameDeckId === d.id ? (
-                      <div className="flex min-w-0 flex-1 flex-wrap items-center gap-2 px-1 py-1">
-                        <input
-                          ref={renameInputRef}
-                          value={renameDeckDraft}
-                          onChange={(e) => setRenameDeckDraft(e.target.value)}
-                          onKeyDown={(e) => {
-                            if (e.key === "Enter") {
-                              e.preventDefault();
-                              commitRenameDeck();
-                            }
-                            if (e.key === "Escape") {
-                              e.preventDefault();
-                              cancelRenameDeck();
-                            }
-                          }}
-                          className="min-w-0 flex-1 rounded-lg border border-[#eadff2] bg-white px-3 py-2 text-base font-semibold text-[#4b2876] outline-none ring-[#4b2876]/20 focus:border-[#4b2876]/40 focus:ring-1"
-                          aria-label="Tên deck"
-                        />
-                        <button
-                          type="button"
-                          onClick={commitRenameDeck}
-                          className="inline-flex shrink-0 cursor-pointer items-center justify-center rounded-lg bg-zinc-900 px-3 py-2 text-white"
-                          aria-label="Lưu tên deck"
-                        >
-                          <Check className="h-5 w-5" strokeWidth={2} />
-                        </button>
+                      <div className="flex min-w-0 flex-1 flex-col gap-2 px-1 py-1">
+                        <div className="relative min-w-0 flex-1">
+                          <textarea
+                            ref={renameInputRef}
+                            value={renameDeckDraft}
+                            rows={2}
+                            onChange={(e) => setRenameDeckDraft(e.target.value)}
+                            onKeyDown={(e) => {
+                              if (e.key === "Enter" && !e.shiftKey) {
+                                e.preventDefault();
+                                commitRenameDeck();
+                              }
+                              if (e.key === "Escape") {
+                                e.preventDefault();
+                                cancelRenameDeck();
+                              }
+                            }}
+                            className="min-h-[3.25rem] w-full resize-none wrap-break-word rounded-lg border border-[#eadff2] bg-white py-2 pl-3 pr-11 text-base font-semibold leading-snug text-[#4b2876] outline-none ring-[#4b2876]/20 focus:border-[#4b2876]/40 focus:ring-1"
+                            aria-label="Tên deck"
+                          />
+                          <EmojiPickerAnchor
+                            placement="center-right"
+                            onPick={insertEmojiRename}
+                            aria-label="Chèn emoji vào tên deck"
+                          />
+                        </div>
+                        <div className="flex shrink-0 items-stretch justify-end gap-2">
+                          <button
+                            type="button"
+                            onClick={cancelRenameDeck}
+                            className="inline-flex shrink-0 cursor-pointer items-center justify-center rounded-lg border border-zinc-200 bg-white px-3 py-2 text-ink shadow-sm"
+                            aria-label="Huỷ"
+                          >
+                            <X className="h-5 w-5 shrink-0" strokeWidth={2} aria-hidden />
+                          </button>
+                          <button
+                            type="button"
+                            onClick={commitRenameDeck}
+                            className="inline-flex shrink-0 cursor-pointer items-center justify-center rounded-lg bg-zinc-900 px-3 py-2 text-white"
+                            aria-label="Lưu tên deck"
+                          >
+                            <Check className="h-5 w-5" strokeWidth={2} />
+                          </button>
+                        </div>
                       </div>
                     ) : (
                       <Link
