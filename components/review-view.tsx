@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, useSyncExternalStore } from "react";
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
@@ -10,11 +10,20 @@ import { WordRichDisplay } from "@/components/word-rich-display";
 import { htmlToPlainTrim } from "@/lib/sanitize-word-html";
 import type { Rating, Word } from "@/lib/types";
 import { useSrsStore } from "@/store/srs-store";
+import { pickRandomPhraseEmoji } from "@/lib/phrase-emojis";
 
 type ReviewViewProps = { allDecks?: false; deckId: string } | { allDecks: true };
 
 /** Khoảng cách tiêu đề ↔ thẻ = thẻ ↔ dòng “Nhấn thẻ…” (cùng token). */
 const REVIEW_SECTION_GAP = "gap-4";
+
+/** Lời kết ngẫu nhiên khi hết phiên ôn (flashcard hoặc active learning). */
+const REVIEW_CLOSING_LINES = [
+  "Ôn tập ngắn nhưng đều đặn mỗi ngày là chìa khoá để củng cố kiến thức và trí nhớ.",
+  "Bạn có thấy các từ hôm nay càng ngày càng dễ nhớ và sử dụng hơn không?",
+  "Mỗi ngày chỉ cần một bước nhỏ như vậy là được!",
+  "Những từ hôm qua bạn quên, hôm nay bạn đã nhớ tốt hơn chưa?",
+] as const;
 
 /** Cùng khoảng trên với màn từ vựng (pt-10); dưới giữ safe area cho vùng nút chấm điểm. */
 const REVIEW_SHELL_EDGE_Y =
@@ -62,6 +71,7 @@ export function ReviewView(props: ReviewViewProps) {
   /** `pick` = vừa vào review, chọn Flashcard hoặc Active learning (không gộp hai luồng). */
   const [reviewMode, setReviewMode] = useState<"pick" | "flashcard" | "al">("pick");
   const isTtTablet = useTtTabletLayout();
+  const [closingPick, setClosingPick] = useState<{ line: number; tailEmoji: string } | null>(null);
 
   const activeDeck = deckId ? (decks.find((d) => d.id === deckId) ?? null) : null;
   const current = getCurrentWord();
@@ -145,6 +155,19 @@ export function ReviewView(props: ReviewViewProps) {
   /** Cùng lời chúc cho kết thúc phiên flashcard hoặc active learning. */
   const showCongratsComplete = showFlashcardComplete || showAlDone;
 
+  useEffect(() => {
+    if (showCongratsComplete) {
+      setClosingPick((prev) =>
+        prev ?? {
+          line: Math.floor(Math.random() * REVIEW_CLOSING_LINES.length),
+          tailEmoji: pickRandomPhraseEmoji(),
+        },
+      );
+    } else {
+      setClosingPick(null);
+    }
+  }, [showCongratsComplete]);
+
   return (
     <div
       className={`flex h-dvh max-h-dvh w-full flex-col overflow-hidden bg-[#f5f5f7] px-5 ${REVIEW_SHELL_EDGE_Y}`}
@@ -190,17 +213,20 @@ export function ReviewView(props: ReviewViewProps) {
             onFinish={finishActiveLearning}
           />
         ) : showCongratsComplete ? (
-          <div className="flex min-h-0 flex-1 flex-col items-center justify-start overflow-y-auto px-3 py-8">
-            <div className="w-full max-w-md space-y-6 text-center text-sm font-medium leading-snug text-[#4b2876] sm:text-[15px]">
-              <div>
-                <p>Đã hết phiên ôn.</p>
-                <p className="mt-2 sm:mt-2.5">
-                  Chúc mừng bạn đã tiến thêm một bước nhỏ trên con đường học tập của mình!
-                </p>
-              </div>
+          <div className="flex min-h-0 flex-1 flex-col items-center justify-center overflow-y-auto px-3 py-8">
+            <div className="flex w-full max-w-md flex-col items-center gap-4 text-center text-sm font-medium leading-snug text-[#4b2876] sm:text-[15px]">
+              <p className="max-w-prose text-pretty">
+                {REVIEW_CLOSING_LINES[closingPick?.line ?? 0]}
+                {closingPick ? (
+                  <>
+                    {" "}
+                    <span aria-hidden>{closingPick.tailEmoji}</span>
+                  </>
+                ) : null}
+              </p>
               <Link
                 href={backHref}
-                className="inline-flex w-full max-w-xs justify-center rounded-xl bg-[#4b2876] px-5 py-3.5 text-sm font-semibold text-white shadow-sm"
+                className="box-border inline-flex h-10 w-auto max-w-full shrink-0 items-center justify-center gap-1 whitespace-nowrap rounded-lg bg-[#4b2876] px-3.5 text-center text-xs font-semibold leading-none text-white shadow-sm @max-[320px]:text-[10px] @min-[400px]:h-auto @min-[400px]:px-3.5 @min-[400px]:py-2 @min-[400px]:leading-normal @min-[640px]:px-4 @min-[640px]:text-sm"
               >
                 Về từ vựng
               </Link>
@@ -337,48 +363,12 @@ const AL_AI_HINT =
 
 type AlTurn = { userText: string; aiText: string };
 
-const AL_PROMPT_EMOJI_POOL = [
-  "✨",
-  "💡",
-  "🎯",
-  "📌",
-  "🔗",
-  "⚖️",
-  "🔄",
-  "✍️",
-  "🧩",
-  "📎",
-  "🌟",
-  "💬",
-  "🔮",
-  "📝",
-  "🎓",
-  "🌿",
-  "🔑",
-  "🧠",
-  "📚",
-  "🤝",
-  "🪄",
-  "🌈",
-  "☘️",
-] as const;
-
-function pickFourLineEmojis(): [string, string, string, string] {
-  const pool = [...AL_PROMPT_EMOJI_POOL];
-  const out: string[] = [];
-  for (let i = 0; i < 4; i++) {
-    const j = Math.floor(Math.random() * pool.length);
-    out.push(pool[j]!);
-    pool.splice(j, 1);
-  }
-  return [out[0]!, out[1]!, out[2]!, out[3]!];
-}
-
-const AL_PROMPT_LINES = [
-  "Tạo một ví dụ cá nhân với từ này",
-  "So sánh từ này với một từ đồng nghĩa/gần nghĩa khác",
-  "So sánh từ này với một từ trái nghĩa khác",
-  "Từ này hay đi chung với các từ nào?",
+const AL_TASK_PROMPTS = [
+  "Đưa một ví dụ cá nhân liên quan đến từ này.",
+  "So sánh từ này với một từ khác cùng/gần nghĩa.",
+  "Giải thích từ này bằng ngôn ngữ của riêng bạn.",
+  "Từ này hay đi chung với các từ nào (collocation)?",
+  "Bạn đã từng gặp và dùng từ này trong thực tế chưa? Như thế nào?",
 ] as const;
 
 function ActiveLearningFlow({ queueIds, words, isTtTablet, allDecks, onFinish }: ActiveLearningFlowProps) {
@@ -396,26 +386,24 @@ function ActiveLearningFlow({ queueIds, words, isTtTablet, allDecks, onFinish }:
   const [alSecondTry, setAlSecondTry] = useState(false);
   /** Mỗi lần gửi: thêm { tin nhắn người dùng + đoạn gợi ý }; giữ lại các lượt trước khi gửi lại sau «Chưa ổn». */
   const [turns, setTurns] = useState<AlTurn[]>([]);
-  const [promptLineEmojis, setPromptLineEmojis] = useState<[string, string, string, string]>(() =>
-    pickFourLineEmojis(),
-  );
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const word = list[index];
   const total = list.length;
+  const taskLeadEmoji = useMemo(() => pickRandomPhraseEmoji(), [word?.id]);
+  const taskPrompt = AL_TASK_PROMPTS[index % AL_TASK_PROMPTS.length];
 
   useEffect(() => {
     queueMicrotask(() => {
       setAlSecondTry(false);
       setTurns([]);
       setFeedbackOpen(false);
-      setPromptLineEmojis(pickFourLineEmojis());
     });
-  }, [word.id]);
+  }, [word?.id]);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth", block: "end" });
-  }, [feedbackOpen, turns.length, word.id, alSecondTry]);
+  }, [feedbackOpen, turns.length, word?.id, alSecondTry]);
 
   if (!word || total === 0) {
     return (
@@ -488,17 +476,12 @@ function ActiveLearningFlow({ queueIds, words, isTtTablet, allDecks, onFinish }:
               <WordRichDisplay html={word.term} className="inline-block max-w-full" />
             </div>
             <div className="mt-3 text-[15px] leading-relaxed text-[#142238]">
-              <p className="font-medium">Bạn có thể:</p>
-              <ul className="mt-2 list-none space-y-2 pl-0">
-                {AL_PROMPT_LINES.map((line, i) => (
-                  <li key={line} className="flex gap-2.5">
-                    <span className="shrink-0 select-none" aria-hidden>
-                      {promptLineEmojis[i]}
-                    </span>
-                    <span>{line}</span>
-                  </li>
-                ))}
-              </ul>
+              <p className="font-medium text-ink">
+                <span className="select-none" aria-hidden>
+                  {taskLeadEmoji}
+                </span>{" "}
+                {taskPrompt}
+              </p>
             </div>
           </div>
 

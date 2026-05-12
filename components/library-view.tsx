@@ -9,6 +9,15 @@ import { SignedInTopBar } from "@/components/signed-in-top-bar";
 import { countDue } from "@/lib/srs";
 import { useSrsStore } from "@/store/srs-store";
 import { useNowTick } from "@/hooks/use-now-tick";
+import { pickRandomPhraseEmoji } from "@/lib/phrase-emojis";
+
+const VOCAB_HEADLINE_ROTATIONS = [
+  "Hôm nay có một vài từ đợi bạn ôn nè.",
+  "Bạn có dùng được các từ này một cách tự nhiên không?",
+  "Chỉ 2 phút để cải thiện trí nhớ.",
+  "Bạn sắp chuyển được vài từ sang active vocabulary rồi đó!",
+  "Hôm nay tiếp tục củng cố trí nhớ nha!",
+] as const;
 
 export function LibraryView() {
   const now = useNowTick();
@@ -29,6 +38,9 @@ export function LibraryView() {
   const [renameDeckId, setRenameDeckId] = useState<string | null>(null);
   const [renameDeckDraft, setRenameDeckDraft] = useState("");
   const renameInputRef = useRef<HTMLTextAreaElement>(null);
+
+  const [vocabHeadlineIndex] = useState(() => Math.floor(Math.random() * VOCAB_HEADLINE_ROTATIONS.length));
+  const [headlineTailEmoji] = useState(() => pickRandomPhraseEmoji());
 
   const limitDisplay = limitDraft ?? String(settings.dailyReviewLimit);
 
@@ -154,11 +166,14 @@ export function LibraryView() {
 
         <section className="w-full rounded-xl border border-zinc-200/80 bg-white p-6 shadow-sm ring-1 ring-zinc-950/5">
           <h1 className="text-center font-serif text-2xl font-bold tracking-tight text-[#4b2876]">Từ vựng</h1>
-          <p className="mt-2 text-center text-sm text-zinc-500">
-            <span className="inline-flex max-w-full flex-col items-center gap-y-1 @min-[400px]:w-full @min-[400px]:flex-row @min-[400px]:flex-wrap @min-[400px]:justify-center @min-[400px]:gap-x-1 @min-[400px]:gap-y-0">
-              <span>Giới hạn từ cho hôm nay là {settings.dailyReviewLimit}.</span>
+          <p className="mt-4 text-center text-sm text-zinc-500">
+            <span className="inline-flex max-w-full flex-col items-center gap-y-1 text-pretty">
+              <span>
+                {VOCAB_HEADLINE_ROTATIONS[vocabHeadlineIndex]}{" "}
+                <span aria-hidden>{headlineTailEmoji}</span>
+              </span>
               <span className="inline-flex flex-wrap items-center justify-center gap-x-0.5 @min-[400px]:hidden">
-                Bạn có thể chỉnh lại ở đây{" "}
+                Bạn có thể chỉnh lại giới hạn từ ở đây{" "}
                 <button
                   type="button"
                   onClick={() => setShowDailyLimit((v) => !v)}
@@ -168,7 +183,6 @@ export function LibraryView() {
                   <Settings2 className="h-3.5 w-3.5" strokeWidth={1.75} aria-hidden />
                 </button>
               </span>
-              <span className="hidden @min-[400px]:inline">Bạn có thể chỉnh lại trong mục option.</span>
             </span>
           </p>
 
@@ -200,7 +214,7 @@ export function LibraryView() {
             <button
               type="button"
               onClick={() => setShowDailyLimit((v) => !v)}
-              className="col-span-2 row-start-2 box-border hidden h-10 w-10 shrink-0 cursor-pointer items-center justify-center justify-self-center rounded-lg bg-zinc-900 text-white shadow-sm @min-[400px]:col-span-1 @min-[400px]:row-start-1 @min-[400px]:inline-flex @min-[400px]:justify-self-auto"
+              className="col-span-2 row-start-2 box-border hidden h-9 w-9 shrink-0 cursor-pointer items-center justify-center justify-self-center rounded-lg bg-zinc-900 text-white shadow-sm @min-[400px]:col-span-1 @min-[400px]:row-start-1 @min-[400px]:inline-flex @min-[400px]:h-10 @min-[400px]:w-10 @min-[400px]:justify-self-auto"
               aria-label="Giới hạn ôn tập mỗi ngày (tùy chọn)"
             >
               <Settings2 className="h-3 w-3 shrink-0 @min-[400px]:h-3.5 @min-[400px]:w-3.5" strokeWidth={1.75} />
@@ -259,9 +273,11 @@ export function LibraryView() {
           ) : null}
 
           {showDailyLimit ? (
-            <div className="w-full max-w-sm rounded-xl border border-zinc-200/90 bg-zinc-50/50 p-5">
-              <p className="text-center text-xs text-ink-muted">Only this many cards per session (queue can be larger).</p>
-              <div className="mt-4 flex items-center justify-center gap-3">
+            <div className="w-full max-w-sm rounded-xl border border-zinc-200/90 bg-zinc-50/50 p-5 @min-[400px]:mx-auto @min-[400px]:max-w-[min(100%,220px)] @min-[400px]:p-3">
+              <p className="text-center text-[11px] leading-snug text-ink-muted @min-[400px]:text-[10px]">
+                Số thẻ tối đa mỗi phiên (hàng đợi có thể dài hơn).
+              </p>
+              <div className="mt-4 flex items-center justify-center gap-3 @min-[400px]:mt-2 @min-[400px]:gap-2">
                 <input
                   type="number"
                   min={1}
@@ -278,9 +294,9 @@ export function LibraryView() {
                     }
                   }}
                   onBlur={onLimitBlur}
-                  className="w-24 rounded-xl border border-[#eadff2] bg-[#fbf8fd] px-4 py-2.5 text-base font-medium text-ink outline-none ring-[#4b2876]/20 focus:border-[#4b2876]/40 focus:ring-1"
+                  className="w-24 rounded-xl border border-[#eadff2] bg-[#fbf8fd] px-4 py-2.5 text-base font-medium text-ink outline-none ring-[#4b2876]/20 focus:border-[#4b2876]/40 focus:ring-1 @min-[400px]:w-14 @min-[400px]:px-2 @min-[400px]:py-1.5 @min-[400px]:text-sm"
                 />
-                <span className="text-sm text-ink-muted">words / session</span>
+                <span className="text-xs text-ink-muted @min-[400px]:text-[10px]">từ / phiên</span>
               </div>
             </div>
           ) : null}
