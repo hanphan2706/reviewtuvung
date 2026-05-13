@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { EmojiPickerAnchor, type EmojiPickerAnchorPlacement } from "@/components/emoji-picker-anchor";
+import { useCoarsePointer } from "@/hooks/use-coarse-pointer";
 import { insertPlainTextAtCaret } from "@/lib/insert-text-at-caret";
 import { WORD_NOTION_TEXT_COLORS } from "@/lib/word-text-colors";
 import { prepareWordHtmlForEdit, sanitizeWordHtml } from "@/lib/sanitize-word-html";
@@ -59,7 +60,7 @@ export type RichTextFieldProps = {
   /** Ngôn ngữ gợi ý cho kiểm tra chính tả trình duyệt (tiếng Anh vocabulary). */
   lang?: string;
   "aria-label"?: string;
-  /** Nút emoji góc dưới phải (từ vựng). */
+  /** Nút emoji góc dưới phải (từ vựng); tự ẩn trên thiết bị cảm ứng (`pointer: coarse`). */
   showEmojiPicker?: boolean;
   emojiPlacement?: EmojiPickerAnchorPlacement;
 };
@@ -75,6 +76,8 @@ export function RichTextField({
   showEmojiPicker = true,
   emojiPlacement = "corner-bottom",
 }: RichTextFieldProps) {
+  const isCoarsePointer = useCoarsePointer();
+  const showEmojiPickerUi = showEmojiPicker && !isCoarsePointer;
   const ref = useRef<HTMLDivElement>(null);
   const wrapRef = useRef<HTMLDivElement>(null);
   const isUserTypingRef = useRef(false);
@@ -449,9 +452,9 @@ export function RichTextField({
             syncFromDom();
             updateToolbar();
           }}
-          className={`w-full resize-y wrap-break-word rounded-xl border border-zinc-200/90 bg-white py-3 pl-4 text-base text-ink outline-none ring-zinc-300/80 focus-visible:border-zinc-400 focus-visible:ring-1 ${showEmojiPicker ? "pr-11 pb-10" : "pr-4"} ${minHeightClass} ${className}`.trim()}
+          className={`w-full resize-y wrap-break-word rounded-xl border border-zinc-200/90 bg-white py-3 pl-4 text-base text-ink outline-none ring-zinc-300/80 focus-visible:border-zinc-400 focus-visible:ring-1 ${showEmojiPickerUi ? "pr-11 pb-10" : "pr-4"} ${minHeightClass} ${className}`.trim()}
         />
-        {showEmojiPicker ? (
+        {showEmojiPickerUi ? (
           <EmojiPickerAnchor
             placement={emojiPlacement}
             onPick={insertEmoji}
