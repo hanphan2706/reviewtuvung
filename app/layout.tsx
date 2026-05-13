@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Noto_Serif } from "next/font/google";
+import { GoogleAnalytics } from "@/components/google-analytics";
 import "./globals.css";
 import "./(marketing)/di-hoc/course-content.css";
 
@@ -33,7 +34,10 @@ export default function RootLayout({
       lang="vi"
       className={`${geistMono.variable} ${notoSerif.variable} h-full antialiased`}
     >
-      <body className="flex min-h-dvh flex-col bg-[#f5f5f7] font-sans">{children}</body>
+      <body className="flex min-h-dvh flex-col bg-[#f5f5f7] font-sans">
+        {children}
+        <GoogleAnalytics />
+      </body>
     </html>
   );
 }
