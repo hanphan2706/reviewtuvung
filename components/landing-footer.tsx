@@ -34,9 +34,11 @@ function FacebookHighlightLabel() {
   const path = slash >= 0 ? label.slice(slash + 1) : "";
 
   return (
-    <span className="inline-flex flex-col items-start gap-0 leading-tight whitespace-nowrap text-left md:items-end md:text-right">
-      <span>{host}</span>
-      {path ? <span>{path}</span> : null}
+    <span className="inline-flex flex-col items-start gap-0 leading-tight whitespace-nowrap text-left underline decoration-1 underline-offset-[0.12em] [text-decoration-skip-ink:none] md:items-end md:text-right">
+      <span className="underline decoration-1 underline-offset-[0.12em] [text-decoration-skip-ink:none]">{host}</span>
+      {path ? (
+        <span className="underline decoration-1 underline-offset-[0.12em] [text-decoration-skip-ink:none]">{path}</span>
+      ) : null}
     </span>
   );
 }
