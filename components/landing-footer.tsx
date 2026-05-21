@@ -34,13 +34,10 @@ function FacebookHighlightLabel() {
   const path = slash >= 0 ? label.slice(slash + 1) : "";
 
   return (
-    <>
-      <span className="md:hidden">{label}</span>
-      <span className="hidden md:flex md:flex-col md:items-end md:gap-0 md:leading-tight">
-        <span>{host}</span>
-        {path ? <span>{path}</span> : null}
-      </span>
-    </>
+    <span className="inline-flex flex-col items-start gap-0 leading-tight whitespace-nowrap text-left md:items-end md:text-right">
+      <span>{host}</span>
+      {path ? <span>{path}</span> : null}
+    </span>
   );
 }
 
@@ -54,8 +51,8 @@ export function LandingFooter() {
         <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col rounded-lg border border-zinc-200/90 bg-white px-6 py-5 shadow-sm ring-1 ring-zinc-950/5 sm:px-8 sm:py-6 md:px-10 md:py-7">
           <div className="shrink-0">
             {/* max-lg: tiêu đề + link cùng một dòng chảy, khe nhỏ như xuống dòng. lg+: 2 cột. */}
-            <div className="grid w-full min-w-0 grid-cols-1 max-lg:gap-1.5 max-lg:gap-y-0 lg:grid-cols-2 lg:items-start lg:gap-x-8 lg:gap-y-0 xl:gap-x-12">
-              <div className="min-w-0 space-y-1 text-pretty text-left text-[clamp(1.2rem,3.2vw,2.35rem)] font-normal leading-[1.15] tracking-[-0.025em] sm:space-y-1.5 lg:max-w-[min(100%,40rem)]">
+            <div className="grid w-full min-w-0 grid-cols-1 gap-3 sm:gap-4 md:grid-cols-2 md:items-start md:gap-x-8 md:gap-y-0 xl:gap-x-12">
+              <div className="min-w-0 space-y-1 text-pretty text-left text-[clamp(1.2rem,3.2vw,2.35rem)] font-normal leading-[1.15] tracking-[-0.025em] sm:space-y-1.5 md:max-w-[min(100%,40rem)]">
                 {LANDING.footer.ctaLines.map((line) => (
                   <p key={line} className="text-ink-muted">
                     {line}
@@ -66,7 +63,7 @@ export function LandingFooter() {
                 href={LANDING.footer.contactHighlight.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full min-w-0 max-w-full text-left text-[clamp(1.1rem,3.8vw,2.6rem)] font-extrabold leading-snug text-ink underline decoration-1 underline-offset-[0.1em] transition wrap-anywhere text-balance max-lg:mt-0 max-lg:pt-0 hover:opacity-80 lg:max-w-[min(100%,20rem)] lg:justify-self-end lg:pt-1 lg:leading-tight lg:text-right md:max-w-[24rem] md:text-[clamp(1.5rem,2.5vw,2.75rem)]"
+                className="w-full min-w-0 shrink-0 text-[clamp(1.1rem,3.8vw,2.6rem)] font-extrabold leading-snug text-ink underline decoration-1 underline-offset-[0.1em] transition hover:opacity-80 max-sm:text-left sm:max-w-none md:max-w-[min(100%,20rem)] md:justify-self-end md:pt-1 md:text-right md:text-[clamp(1.35rem,2.4vw,2.75rem)]"
               >
                 <FacebookHighlightLabel />
               </a>

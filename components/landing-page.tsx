@@ -63,7 +63,7 @@ export function LandingPage() {
           </div>
           <div className="flex w-full min-w-0 flex-1 items-center justify-end gap-3 md:gap-4 lg:justify-start lg:gap-0">
             <nav
-              className="hidden min-w-0 sm:flex sm:flex-1 sm:flex-nowrap sm:items-center sm:justify-end sm:gap-x-3 sm:gap-y-0 md:gap-x-4 lg:justify-start lg:gap-x-6"
+              className="hidden min-w-0 lg:flex lg:flex-1 lg:flex-nowrap lg:items-center lg:justify-start lg:gap-x-6"
               aria-label="Điều hướng chính"
             >
               {navBarMain.map((item) => {
@@ -265,21 +265,17 @@ function CourseCarouselSection({
 
   return (
     <section
-      className={`flex min-h-svh flex-col justify-center overflow-hidden scroll-mt-16 bg-zinc-50/80 px-6 pt-8 sm:scroll-mt-20 sm:px-7 sm:pt-10 md:px-10 md:pt-12 ${tuckUp ? "-mb-[16svh] -mt-[20svh] pb-0 sm:pb-0 md:pb-0" : "pb-1 sm:pb-2 md:pb-3"}`}
+      className={`flex min-h-svh flex-col justify-center overflow-x-hidden scroll-mt-16 bg-zinc-50/80 px-6 pt-8 sm:scroll-mt-20 sm:px-7 sm:pt-10 md:px-10 md:pt-12 ${tuckUp ? "-mb-[16svh] -mt-[20svh] pb-0 sm:pb-0 md:pb-0" : "pb-1 sm:pb-2 md:pb-3"}`}
       id={id}
     >
-      <div
-        className={`flex w-[94%] max-w-[1504px] -translate-y-[10%] flex-col pt-0 ${
-          align === "right" ? "ml-0 mr-auto translate-x-[6%]" : "ml-auto mr-0 -translate-x-[6%]"
-        }`}
-      >
+      <div className="mx-auto flex w-full min-w-0 max-w-[1504px] -translate-y-[10%] flex-col pt-0">
         <div className="mb-5 flex flex-col gap-3 md:mb-6 md:flex-row md:items-end md:justify-between">
           <div className="text-left">
             <h2 className="text-2xl font-semibold tracking-[-0.03em] text-[#4b2876] md:text-3xl md:leading-tight">
               {title}
             </h2>
             {subheadline ? (
-              <p className="mt-1.5 max-w-none text-sm font-normal leading-relaxed text-ink-muted sm:text-base md:whitespace-nowrap md:text-lg">
+              <p className="mt-1.5 max-w-2xl text-pretty text-sm font-normal leading-relaxed text-ink-muted sm:text-base md:max-w-3xl md:text-lg">
                 {subheadline}
               </p>
             ) : null}
@@ -376,18 +372,20 @@ function SelfStudySection() {
         "Học từ vựng thực sự hiệu quả và sử dụng được với phương pháp Spaced-repetition và Active learning",
     },
     {
+      slug: "coaching" as const,
+      href: "/tu-hoc/luyen-doc",
+      priceHint: "Luyện đọc",
+      image:
+        "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80&auto=format&fit=crop",
+      summary:
+        "Đọc chủ động với bài IELTS Academic — bôi từ, tra nghĩa và lưu từ vào deck của bạn.",
+    },
+    {
       slug: "pinball-ielts" as const,
       href: "/tu-hoc/luyen-nghe",
       priceHint: "Luyện nghe",
       image: "/luyen%20nghe%201.jpg",
       summary: "Bạn có biết nghe cũng phải đúng kỹ thuật và có mục đích thì mới tiến bộ không?",
-    },
-    {
-      slug: "coaching" as const,
-      href: "/tu-hoc/luyen-noi-ai",
-      priceHint: "Luyện nói cùng AI",
-      image: "/luyen%20noi.jpg",
-      summary: "Bí quyết để nói tốt hơn là gì? Không có cách nào khác ngoài nói nhiều vào!",
     },
   ];
 
