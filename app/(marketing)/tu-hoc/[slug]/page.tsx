@@ -4,7 +4,18 @@ import { LANDING } from "@/lib/landing-content";
 import { LandingSectionLink } from "@/components/landing-section-link";
 import { MarketingSubpageShell } from "@/components/marketing-subpage-shell";
 
-const PLACEHOLDER_SLUGS = {
+type PlaceholderEntry = {
+  title: string;
+  description: string;
+  shellTitle?: string;
+};
+
+const PLACEHOLDER_SLUGS: Record<string, PlaceholderEntry> = {
+  "luyen-doc": {
+    title: "Luyện đọc",
+    shellTitle: "Đang cập nhật",
+    description: "Luyện đọc — đang được cập nhật trên anthichtuhoc.",
+  },
   "luyen-nghe": {
     title: "Luyện nghe",
     description: "Luyện nghe IELTS và nội dung theo chủ đề — đang được cập nhật.",
@@ -13,19 +24,17 @@ const PLACEHOLDER_SLUGS = {
     title: "Luyện nói cùng AI",
     description: "Luyện nói với AI — đang được cập nhật.",
   },
-} as const;
-
-type SlugKey = keyof typeof PLACEHOLDER_SLUGS;
+};
 
 type PageProps = { params: Promise<{ slug: string }> };
 
-export function generateStaticParams(): { slug: SlugKey }[] {
-  return Object.keys(PLACEHOLDER_SLUGS).map((slug) => ({ slug: slug as SlugKey }));
+export function generateStaticParams() {
+  return Object.keys(PLACEHOLDER_SLUGS).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const entry = PLACEHOLDER_SLUGS[slug as SlugKey];
+  const entry = PLACEHOLDER_SLUGS[slug];
   if (!entry) {
     return { title: `Tự học | ${LANDING.brand}` };
   }
@@ -37,14 +46,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function TuHocPlaceholderPage({ params }: PageProps) {
   const { slug } = await params;
-  const entry = PLACEHOLDER_SLUGS[slug as SlugKey];
+  const entry = PLACEHOLDER_SLUGS[slug];
   if (!entry) {
     notFound();
   }
 
+  const shellTitle = entry.shellTitle ?? entry.title;
+
   return (
-    <MarketingSubpageShell title={entry.title}>
-      <p className="text-[15px] leading-relaxed text-ink-muted">
+    <MarketingSubpageShell title={shellTitle}>
+      {entry.shellTitle ? (
+        <p className="text-sm font-semibold text-[#4b2876]">{entry.title}</p>
+      ) : null}
+      <p className={`text-[15px] leading-relaxed text-ink-muted ${entry.shellTitle ? "mt-3" : ""}`}>
         Tính năng này đang được cập nhật. Bạn quay lại sau nha — mình sẽ thông báo trên trang chủ khi đã sẵn sàng.
       </p>
       <p className="mt-6">
