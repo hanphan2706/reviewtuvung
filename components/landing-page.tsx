@@ -375,10 +375,9 @@ function SelfStudySection() {
       slug: "coaching" as const,
       href: "/tu-hoc/luyen-doc",
       priceHint: "Luyện đọc",
-      image:
-        "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80&auto=format&fit=crop",
+      image: "/luyen-doc-image-2.jpg",
       summary:
-        "Đọc chủ động với bài IELTS Academic — bôi từ, tra nghĩa và lưu từ vào deck của bạn.",
+        "Đọc chủ động và đều đặn để tăng khả năng suy nghĩ sâu và tập trung hơn, từ các nguồn đọc đa dạng như IELTS, NatGeo, The Economist hoặc fiction.",
     },
     {
       slug: "pinball-ielts" as const,
@@ -426,7 +425,9 @@ function SelfStudySection() {
                       className={
                         course.slug === "general-english"
                           ? "object-cover object-[50%_36%]"
-                          : "object-cover object-center"
+                          : course.slug === "coaching"
+                            ? "object-cover object-[50%_28%]"
+                            : "object-cover object-center"
                       }
                       sizes="(max-width:640px) 100vw, 280px"
                     />
