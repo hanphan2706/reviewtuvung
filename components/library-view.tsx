@@ -39,13 +39,8 @@ export function LibraryView() {
   const [renameDeckDraft, setRenameDeckDraft] = useState("");
   const renameInputRef = useRef<HTMLTextAreaElement>(null);
 
-  const [vocabHeadlineIndex, setVocabHeadlineIndex] = useState(0);
-  const [headlineTailEmoji, setHeadlineTailEmoji] = useState("");
-
-  useEffect(() => {
-    setVocabHeadlineIndex(Math.floor(Math.random() * VOCAB_HEADLINE_ROTATIONS.length));
-    setHeadlineTailEmoji(pickRandomPhraseEmoji());
-  }, []);
+  const [vocabHeadlineIndex] = useState(() => Math.floor(Math.random() * VOCAB_HEADLINE_ROTATIONS.length));
+  const [headlineTailEmoji] = useState(() => pickRandomPhraseEmoji());
 
   const limitDisplay = limitDraft ?? String(settings.dailyReviewLimit);
 

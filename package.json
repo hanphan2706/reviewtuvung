@@ -11,8 +11,7 @@
     "prod": "next build && next start",
     "prod:lan": "next build && next start -H 0.0.0.0",
     "ngrok": "ngrok http 3000",
-    "lint": "eslint",
-    "transcript:clean": "npx tsx scripts/clean-listening-transcript.ts"
+    "lint": "eslint"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.2",

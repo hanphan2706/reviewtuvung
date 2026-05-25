@@ -9,16 +9,7 @@ import { SignedInTopBar } from "@/components/signed-in-top-bar";
 import { htmlToPlainTrim } from "@/lib/sanitize-word-html";
 import { useSrsStore } from "@/store/srs-store";
 
-export function AddWordView({
-  deckId,
-  initialTerm,
-  initialDefinition,
-}: {
-  deckId: string;
-  /** Query `?term=` — plain text, URI-encoded. */
-  initialTerm?: string | null;
-  initialDefinition?: string | null;
-}) {
+export function AddWordView({ deckId }: { deckId: string }) {
   const router = useRouter();
   const decks = useSrsStore((s) => s.decks);
   const openDeck = useSrsStore((s) => s.openDeck);
@@ -35,23 +26,6 @@ export function AddWordView({
     }
     openDeck(deckId);
   }, [deckId, decks, openDeck, router]);
-
-  useEffect(() => {
-    if (initialTerm) {
-      try {
-        setTerm(decodeURIComponent(initialTerm));
-      } catch {
-        setTerm(initialTerm);
-      }
-    }
-    if (initialDefinition) {
-      try {
-        setDefinition(decodeURIComponent(initialDefinition));
-      } catch {
-        setDefinition(initialDefinition);
-      }
-    }
-  }, [initialTerm, initialDefinition]);
 
   const onSave = () => {
     if (!htmlToPlainTrim(term)) return;
