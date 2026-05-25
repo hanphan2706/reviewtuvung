@@ -17,8 +17,13 @@ async function main() {
   const landingSource = fs.readFileSync(landingPath, "utf8");
   assert.match(
     landingSource,
-    /Đọc sâu và chủ động hơn/,
-    "Expected landing page reading card to use the updated copy",
+    /\/luyen-doc-image-2\.jpg/,
+    "Expected landing page reading card to use the localhost image asset",
+  );
+  assert.match(
+    landingSource,
+    /Đọc chủ động và đều đặn để tăng khả năng suy nghĩ sâu và tập trung hơn/,
+    "Expected landing page reading card to use the localhost copy",
   );
 }
 
