@@ -11,7 +11,13 @@
     "prod": "next build && next start",
     "prod:lan": "next build && next start -H 0.0.0.0",
     "ngrok": "ngrok http 3000",
-    "lint": "eslint"
+    "lint": "eslint",
+    "transcript:clean": "npx tsx scripts/clean-listening-transcript.ts",
+    "dictionary:import-vi": "npx tsx scripts/import-wiktionary-vi.ts --academic-only",
+    "dictionary:import-vi:all": "npx tsx scripts/import-wiktionary-vi.ts",
+    "dictionary:import-vi:quick": "npx tsx scripts/import-wiktionary-vi.ts --academic-only --limit 50",
+    "reading:trim-compass-audio": "node scripts/trim-reading-challenge-audio.mjs",
+    "reading:upload-audio": "npx tsx scripts/upload-reading-audio.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.2",
@@ -25,6 +31,7 @@
     "zustand": "^5.0.12"
   },
   "devDependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

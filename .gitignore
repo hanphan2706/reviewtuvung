@@ -41,3 +41,16 @@ yarn-error.log*
 next-env.d.ts
 
 certificates
+
+# Tài liệu / audio bản quyền hoặc file lớn — không commit lên repo công khai.
+/materials/
+/transcript/
+
+# Bài đọc raw (Cambridge…) — chỉ local.
+/reading raw/
+
+# Audio nghe pilot (Cambridge…) — chỉ local / deploy riêng, không commit mp3.
+/public/listening-assets/cam19/*.mp3
+
+# Audio luyện đọc — upload Supabase Storage (bucket private), không commit.
+/public/reading-audio/*.mp3

@@ -1,68 +1,85 @@
-import { createServerClient } from "@supabase/ssr";
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
-import { getSupabaseBrowserConfig } from "@/lib/supabase/config";
-
-/** Chỉ các route cần làm mới JWT — tránh gọi Supabase trên mọi trang marketing (giảm độ trễ lần tải đầu). */
-function needsSupabaseSessionRefresh(pathname: string): boolean {
-  if (pathname.startsWith("/auth/callback")) return true;
-  if (pathname.startsWith("/deck/")) return true;
-  if (pathname === "/review") return true;
-  if (pathname.startsWith("/tu-hoc/tu-vung")) return true;
-  if (pathname.startsWith("/api/")) return true;
-  return false;
-}
+import {
+  AUTH_ENTRY_PATH,
+  isProtectedApiPath,
+  isProtectedAppPath,
+  isPublicReadingExamApi,
+  isPublicReadingExamBootApi,
+  isPublicStudyHubPath,
+} from "@/lib/auth/protected-routes";
+import { isPrivateReadingAudioPath } from "@/lib/reading/reading-audio-storage";
+import { OAUTH_NEXT_COOKIE, OAUTH_POPUP_COOKIE } from "@/lib/oauth-return-cookies";
+import {
+  OAUTH_ORIGIN_COOKIE,
+  readOAuthNextFromCookieValue,
+  readOAuthOriginFromCookieValue,
+} from "@/lib/oauth-return-path";
+import { normalizeAppOrigin } from "@/lib/app-origin";
+import { refreshSupabaseSession } from "@/lib/supabase/middleware-session";
 
 /**
  * 1) OAuth đôi khi redirect nhầm về `/` với `?code=` → chuyển sang `/auth/callback`.
- * 2) Làm mới session cookie (chuẩn @supabase/ssr + Next.js) — tránh tab sau OAuth không có JWT.
+ * 2) Làm mới session cookie (@supabase/ssr).
+ * 3) Chặn route/API học tập khi chưa đăng nhập.
  */
 export async function middleware(request: NextRequest) {
   const url = request.nextUrl;
+  const pathname = url.pathname;
 
-  if (url.pathname === "/" && url.searchParams.has("code")) {
-    const target = new URL("/auth/callback", url.origin);
+  if (pathname === "/" && url.searchParams.has("code")) {
+    const stashedOrigin = readOAuthOriginFromCookieValue(request.cookies.get(OAUTH_ORIGIN_COOKIE)?.value);
+    const callbackOrigin = stashedOrigin ?? normalizeAppOrigin(url.origin);
+    const target = new URL("/auth/callback", callbackOrigin);
     url.searchParams.forEach((value, key) => {
       target.searchParams.set(key, value);
     });
     if (!target.searchParams.has("next")) {
-      target.searchParams.set("next", "/tu-hoc/tu-vung");
+      const fromCookie = readOAuthNextFromCookieValue(request.cookies.get(OAUTH_NEXT_COOKIE)?.value);
+      if (fromCookie) {
+        target.searchParams.set("next", fromCookie);
+      }
     }
-    if (!target.searchParams.has("popup")) {
+    if (!target.searchParams.has("popup") && request.cookies.get(OAUTH_POPUP_COOKIE)?.value === "1") {
       target.searchParams.set("popup", "1");
     }
     return NextResponse.redirect(target);
   }
 
-  const response = NextResponse.next({
-    request: { headers: request.headers },
-  });
-
-  if (!needsSupabaseSessionRefresh(url.pathname)) {
-    return response;
+  if (pathname.startsWith("/auth/callback")) {
+    return NextResponse.next();
   }
 
-  const config = getSupabaseBrowserConfig();
-  if (!config) {
-    return response;
+  const { response: supabaseResponse, user } = await refreshSupabaseSession(request);
+
+  if (isPrivateReadingAudioPath(pathname)) {
+    return new NextResponse(null, { status: 404 });
   }
 
-  const supabase = createServerClient(config.url, config.anonKey, {
-    cookies: {
-      getAll() {
-        return request.cookies.getAll();
-      },
-      setAll(cookiesToSet) {
-        for (const { name, value, options } of cookiesToSet) {
-          response.cookies.set(name, value, options);
-        }
-      },
-    },
-  });
+  if (isPublicStudyHubPath(pathname)) {
+    return supabaseResponse;
+  }
 
-  await supabase.auth.getUser();
+  const publicReadingApi =
+    isPublicReadingExamApi(pathname, url.searchParams) ||
+    isPublicReadingExamBootApi(pathname, url.searchParams);
 
-  return response;
+  if (!user && isProtectedApiPath(pathname) && !publicReadingApi) {
+    return NextResponse.json({ error: "Đăng nhập để tiếp tục." }, { status: 401 });
+  }
+
+  if (!user && isProtectedAppPath(pathname)) {
+    if (pathname === AUTH_ENTRY_PATH || pathname.startsWith(`${AUTH_ENTRY_PATH}/`)) {
+      return supabaseResponse;
+    }
+
+    const login = new URL(AUTH_ENTRY_PATH, url.origin);
+    const returnPath = `${pathname}${url.search}`;
+    login.searchParams.set("next", returnPath);
+    return NextResponse.redirect(login);
+  }
+
+  return supabaseResponse;
 }
 
 export const config = {

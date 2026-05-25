@@ -64,6 +64,8 @@ interface SrsState {
   closeDeck: () => void;
   deleteDeck: (deckId: string) => void;
   addWord: (term: string, definition: string) => void;
+  /** Thêm từ vào deck cụ thể (không cần `openDeck`). */
+  addWordToDeck: (deckId: string, term: string, definition: string) => void;
   updateWord: (id: string, term: string, definition: string) => void;
   removeWord: (id: string) => void;
   startOrRefreshSession: (opts?: { allDecks?: boolean }) => void;
@@ -165,14 +167,20 @@ export const useSrsStore = create<SrsState>()(
       },
 
       addWord: (term, definition) => {
-        if (!htmlToPlainTrim(term)) return;
-        const { userId, viewingDeckId } = get();
+        const { viewingDeckId } = get();
         if (!viewingDeckId) return;
+        get().addWordToDeck(viewingDeckId, term, definition);
+      },
+
+      addWordToDeck: (deckId, term, definition) => {
+        if (!htmlToPlainTrim(term)) return;
+        const { userId, decks } = get();
+        if (!decks.some((d) => d.id === deckId)) return;
         const now = Date.now();
         const t = term.trim();
         const def = definition.trim();
         set((s) => ({
-          words: [...s.words, newWord(userId, viewingDeckId, t, def, now)],
+          words: [...s.words, newWord(userId, deckId, t, def, now)],
         }));
       },
 
