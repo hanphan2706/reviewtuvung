@@ -13,6 +13,7 @@ import {
 } from "@/lib/landing-scroll";
 import { LandingCurtainMenu } from "@/components/landing-curtain-menu";
 import { LandingFooter } from "@/components/landing-footer";
+import { LandingReadingLaunchModal } from "@/components/landing-reading-launch-modal";
 import { LandingSectionLink } from "@/components/landing-section-link";
 
 /** ~card width + `gap-3` for snap scroll. */
@@ -20,11 +21,16 @@ const CAROUSEL_STEP = 334;
 
 export function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [readingLaunchModalOpen, setReadingLaunchModalOpen] = useState(false);
   const pathname = usePathname();
 
   const closeMenu = () => {
     setMenuOpen(false);
   };
+
+  const dismissReadingLaunchModal = useCallback(() => {
+    setReadingLaunchModalOpen(false);
+  }, []);
 
   useEffect(() => {
     if (pathname !== "/") return;
@@ -40,6 +46,15 @@ export function LandingPage() {
         window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
       }
     });
+  }, [pathname]);
+
+  useEffect(() => {
+    if (pathname !== "/") return;
+    if (typeof window === "undefined") return;
+    const timeoutId = window.setTimeout(() => {
+      setReadingLaunchModalOpen(true);
+    }, 0);
+    return () => window.clearTimeout(timeoutId);
   }, [pathname]);
 
   const navBarMain = LANDING.nav.filter(
@@ -131,6 +146,11 @@ export function LandingPage() {
       </header>
 
       <LandingCurtainMenu open={menuOpen} onClose={closeMenu} />
+      <LandingReadingLaunchModal
+        open={readingLaunchModalOpen}
+        onClose={dismissReadingLaunchModal}
+        onExplore={dismissReadingLaunchModal}
+      />
 
       <main className="bg-white">
         <section
