@@ -378,7 +378,7 @@ function SelfStudySection() {
       image:
         "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80&auto=format&fit=crop",
       summary:
-        "Đọc chủ động với bài IELTS Academic — bôi từ, tra nghĩa và lưu từ vào deck của bạn.",
+        "Đọc sâu và chủ động hơn với bài IELTS Academic — bôi từ, tra nghĩa và lưu từ vào deck của bạn.",
     },
     {
       slug: "pinball-ielts" as const,
