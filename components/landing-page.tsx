@@ -330,12 +330,12 @@ function CourseCarouselSection({
                 />
               </div>
               <div className="flex min-h-0 flex-1 flex-col items-center px-5 pb-5 pt-4 text-center sm:px-6 sm:pb-5 sm:pt-4.5 md:px-7">
-                <div className="flex min-h-0 flex-1 items-center pt-2 sm:pt-3">
+                <div className="flex min-h-0 flex-1 items-center justify-center pt-2 pb-4 sm:pt-3 sm:pb-5">
                   <p className="line-clamp-5 text-pretty font-serif text-[15px] font-medium leading-snug text-ink-muted sm:text-base sm:leading-snug">
                     &ldquo;{c.summary}&rdquo;
                   </p>
                 </div>
-                <p className="mt-auto w-full border-t border-zinc-200/80 pt-2.5 text-sm font-semibold leading-snug sm:pt-3">
+                <p className="w-full border-t border-zinc-200/80 pt-2.5 text-sm font-semibold leading-snug sm:pt-3">
                   {c.priceHint}
                 </p>
               </div>
