@@ -141,10 +141,13 @@ const authButtonClassName =
 export function VocabularyMethodIntro({
   includeAuthSection,
   supabaseConfigured = true,
+  oauthNext,
 }: {
   /** Khi false: chỉ nội dung giới thiệu (đã đăng nhập), không có nút đăng nhập. */
   includeAuthSection: boolean;
   supabaseConfigured?: boolean;
+  /** Sau đăng nhập, chuyển tới path nội bộ (từ `?next=` trên URL đăng nhập). */
+  oauthNext?: string;
 }) {
   const [openPanel, setOpenPanel] = useState<number | null>(null);
 
@@ -244,7 +247,12 @@ export function VocabularyMethodIntro({
         {includeAuthSection ? (
           <>
             <div className="mt-6">
-              <AuthButton mode="sign-in" disabled={!supabaseConfigured} className={authButtonClassName} />
+              <AuthButton
+                mode="sign-in"
+                disabled={!supabaseConfigured}
+                className={authButtonClassName}
+                next={oauthNext}
+              />
             </div>
             {!supabaseConfigured ? (
               <p className="mt-4 text-xs leading-relaxed text-red-600">

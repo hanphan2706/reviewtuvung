@@ -1,7 +1,11 @@
 import { NextResponse } from "next/server";
+import { requireApiUser } from "@/lib/auth/require-api-user";
 
 /** GET: client biết có thể dùng Whisper hay chỉ nhận giọng trình duyệt. */
 export async function GET() {
+  const auth = await requireApiUser();
+  if (auth.response) return auth.response;
+
   return NextResponse.json({
     configured: Boolean(process.env.OPENAI_API_KEY?.trim()),
   });
@@ -9,6 +13,9 @@ export async function GET() {
 
 /** POST multipart `file`: gửi OpenAI Whisper (tiếng Anh active learning). */
 export async function POST(req: Request) {
+  const auth = await requireApiUser();
+  if (auth.response) return auth.response;
+
   const key = process.env.OPENAI_API_KEY?.trim();
   if (!key) {
     return NextResponse.json({ error: "Transcription chưa cấu hình." }, { status: 503 });

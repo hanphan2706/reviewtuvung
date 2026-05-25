@@ -1,6 +1,15 @@
 import { AddWordView } from "@/components/add-word-view";
 
-export default async function AddWordPage({ params }: { params: Promise<{ deckId: string }> }) {
+type Search = { term?: string; definition?: string };
+
+export default async function AddWordPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ deckId: string }>;
+  searchParams: Promise<Search>;
+}) {
   const { deckId } = await params;
-  return <AddWordView deckId={deckId} />;
+  const sp = await searchParams;
+  return <AddWordView deckId={deckId} initialTerm={sp.term} initialDefinition={sp.definition} />;
 }

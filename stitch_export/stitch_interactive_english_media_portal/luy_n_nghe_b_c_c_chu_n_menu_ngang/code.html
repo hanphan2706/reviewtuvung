@@ -1,0 +1,335 @@
+<html class="light" lang="vi"><head></head><body class="bg-background">```html
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Luyện nghe - Linguist Scholar</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Serif:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fdf8f8;
+            color: #1c1b1c;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Dropdown Menu styles */
+        .dropdown-menu {
+            transition: all 0.2s ease-in-out;
+            opacity: 0;
+            transform: translateY(-8px);
+            pointer-events: none;
+        }
+        .group:hover .dropdown-menu {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "accent-purple": "#4B2876",
+                    "on-tertiary-fixed": "#1d1b16",
+                    "inverse-primary": "#c8c5ca",
+                    "secondary-fixed-dim": "#c6c6c8",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#c8c5cb",
+                    "on-error-container": "#93000a",
+                    "surface-container": "#f1eded",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#cbc6bd",
+                    "surface-container-highest": "#e5e2e1",
+                    "surface-container-high": "#ebe7e7",
+                    "secondary": "#5d5e60",
+                    "error-container": "#ffdad6",
+                    "text-muted": "#71717A",
+                    "primary-fixed-dim": "#c8c5ca",
+                    "background": "#fdf8f8",
+                    "tertiary-fixed": "#e8e2d9",
+                    "primary-container": "#1b1b1e",
+                    "on-primary-fixed-variant": "#47464a",
+                    "on-secondary-fixed-variant": "#454749",
+                    "on-primary-fixed": "#1b1b1e",
+                    "surface-variant": "#e5e2e1",
+                    "outline": "#77767b",
+                    "on-secondary-fixed": "#1a1c1d",
+                    "inverse-surface": "#313030",
+                    "primary": "#000000",
+                    "on-surface-variant": "#47464b",
+                    "on-primary-container": "#858387",
+                    "secondary-container": "#dfdfe1",
+                    "surface-border": "#E4E4E7",
+                    "on-surface": "#1c1b1c",
+                    "secondary-fixed": "#e2e2e4",
+                    "primary-fixed": "#e4e1e6",
+                    "inverse-on-surface": "#f4f0ef",
+                    "surface-bright": "#fdf8f8",
+                    "on-tertiary-fixed-variant": "#494640",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#5f5e61",
+                    "on-background": "#1c1b1c",
+                    "surface-container-low": "#f7f3f2",
+                    "surface-dim": "#ddd9d9",
+                    "on-secondary-container": "#616365",
+                    "tertiary": "#000000",
+                    "surface": "#fdf8f8",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#1d1b16",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-container": "#88837c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "card-gap": "12px",
+                    "gutter": "16px",
+                    "unit": "4px",
+                    "container-padding": "24px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Noto Serif"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Noto Serif"],
+                    "body-md": ["Inter"],
+                    "headline-sm": ["Noto Serif"],
+                    "label-caps": ["Inter"]
+            },
+            "fontSize": {
+                    "display-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-sm": ["22px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          }
+        }
+      }
+    </script>
+<!-- Header Area - Matches SCREEN_17 Style Exactly -->
+<header class="w-full bg-white border-b border-surface-border sticky top-0 z-50">
+<div class="max-w-[1440px] mx-auto px-10 py-5 flex items-center justify-between">
+<!-- Left: Logo & Dropdowns -->
+<div class="flex items-center gap-12">
+<a class="font-inter font-bold text-[18px] tracking-tight text-primary uppercase" href="#">LUYỆN NGHE</a>
+<nav class="hidden md:flex items-center space-x-8">
+<div class="relative group">
+<button class="flex items-center space-x-1 font-inter font-medium text-[16px] text-primary hover:opacity-70 transition-opacity">
+<span>Tất cả chất giọng</span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<!-- Dropdown Overlay -->
+<div class="dropdown-menu absolute top-full left-0 mt-2 w-48 bg-white border border-surface-border shadow-lg rounded-lg py-2">
+<a class="block px-4 py-2 text-sm hover:bg-surface-container-low" href="#">Anh - Anh</a>
+<a class="block px-4 py-2 text-sm hover:bg-surface-container-low" href="#">Anh - Mỹ</a>
+<a class="block px-4 py-2 text-sm hover:bg-surface-container-low" href="#">Anh - Úc</a>
+</div>
+</div>
+<div class="relative group">
+<button class="flex items-center space-x-1 font-inter font-medium text-[16px] text-primary hover:opacity-70 transition-opacity">
+<span>Độ khó</span>
+<span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<div class="dropdown-menu absolute top-full left-0 mt-2 w-48 bg-white border border-surface-border shadow-lg rounded-lg py-2">
+<a class="block px-4 py-2 text-sm hover:bg-surface-container-low" href="#">Cơ bản</a>
+<a class="block px-4 py-2 text-sm hover:bg-surface-container-low" href="#">Trung bình</a>
+<a class="block px-4 py-2 text-sm hover:bg-surface-container-low" href="#">Nâng cao</a>
+</div>
+</div>
+</nav>
+</div>
+<!-- Right: Utility Links & Profile -->
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center gap-6 border-r border-surface-border pr-6">
+<button class="font-inter font-semibold text-[13px] text-accent-purple hover:opacity-70 transition-all">Nâng cấp Premium</button>
+<button class="font-inter font-medium text-[13px] text-on-surface-variant hover:text-primary transition-all">Trung tâm trợ giúp</button>
+<button class="font-inter font-medium text-[13px] text-on-surface-variant hover:text-primary transition-all">Tài khoản</button>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">notifications</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">settings</span>
+<div class="w-8 h-8 rounded-full bg-surface-container overflow-hidden border border-surface-border cursor-pointer">
+<img alt="User profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9mt6Lq58uFy5a7jDdUjxPqPctL-Wcu7h500Nqv-APCCuV5nWsxkEvXHnBiiS6gnFwAYPEjVwsCv4MMemOKVGpy9E_exXYgo-5X4x1IGQrHjYr7SO6aIECY9m1rbmAWZGf2mgCQwSgqco2n9O_VEb5BTTUOPMdTw7XBX18S38fumCM7LOGXOIa3XQKVgtZZpo55qQzZ2QaT1ol1kyekE1_TEnCS5mJ6O7-7G_9cIbg3qE6hvoYnc3BdxxJlQy4Orp0jGcr5rlsbMVm"/>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content - Constrained to 1100px -->
+<div class="max-w-[1100px] mx-auto px-gutter py-12">
+<main class="w-full">
+<!-- Featured Lesson Hero -->
+<section class="mb-16">
+<div class="relative w-full h-[450px] rounded-lg overflow-hidden border border-surface-border group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdcLI-47kL3T1mM4yoWuLsQ2Xj5MGL46ufhu2XpmPOmZ_COLno2bFgwDVTjrCvxvLB3EsIdJuyICWHBEh8WPcUrNRcxw98BXO3290Iy15eTMt9gMg3JtIiwqMqrIfxUimwm5NP5eOjqHQR2L-G9aEUZ1QpmNa297weXa9mnDIWVY9P8IeQX9Axf3yu6S1ImA9aueBmJT-wHv5SLskbW2EtbX-oAJy_qs7Ly7AClz-U3RhLwWfYcuXgMBE09vKka11qPyLQLJi1k03q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-10">
+<div class="flex items-center gap-4 mb-4">
+<span class="bg-accent-purple text-white px-3 py-1 rounded-sm font-label-caps text-[10px] uppercase tracking-wider">Nổi bật</span>
+<span class="text-white/90 font-body-md text-sm">Sắc thái ngữ âm (Phonetic Nuances)</span>
+</div>
+<h1 class="font-display-lg text-[40px] text-white mb-8 leading-tight">Làm chủ sự tinh tế trong phát âm bản xứ</h1>
+<div class="flex items-center gap-8">
+<button class="bg-white text-primary px-8 py-3 rounded-lg flex items-center gap-3 font-headline-sm text-lg hover:bg-surface-container-low transition-colors duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                            Bắt đầu nghe
+                        </button>
+<span class="text-white/80 font-body-md text-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">timer</span> 12 phút
+                        </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Accent Categories Grid -->
+<section class="mb-16">
+<div class="flex justify-between items-end mb-8">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Khám phá các chất giọng</h2>
+<p class="text-on-surface-variant font-body-md text-body-md">Lựa chọn vùng miền để bắt đầu hành trình luyện tập</p>
+</div>
+<button class="text-accent-purple font-label-caps text-label-caps flex items-center gap-1 hover:underline">
+                    Xem tất cả <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- UK Card -->
+<div class="bg-white border border-surface-border rounded-lg p-8 hover:shadow-md transition-all duration-300 group cursor-pointer flex flex-col">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-6 group-hover:bg-accent-purple/10 transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-accent-purple">language_gb_english</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Anh - Anh</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-8">Tìm hiểu chất giọng Received Pronunciation (RP) và Cockney phổ biến.</p>
+<div class="mt-auto flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps border-t border-surface-container pt-4">
+<span class="">45 bài học</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- US Card -->
+<div class="bg-white border border-surface-border rounded-lg p-8 hover:shadow-md transition-all duration-300 group cursor-pointer flex flex-col">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-6 group-hover:bg-accent-purple/10 transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-accent-purple">public</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Anh - Mỹ</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-8">Chất giọng tiêu chuẩn dùng trong truyền thông và kinh doanh quốc tế.</p>
+<div class="mt-auto flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps border-t border-surface-container pt-4">
+<span class="">128 bài học</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- AU Card -->
+<div class="bg-white border border-surface-border rounded-lg p-8 hover:shadow-md transition-all duration-300 group cursor-pointer flex flex-col">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-6 group-hover:bg-accent-purple/10 transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-accent-purple">explore</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-3">Anh - Úc</h3>
+<p class="text-on-surface-variant font-body-md text-body-md mb-8">Luyện tập nghe các nguyên âm kéo dài đặc trưng của người Úc.</p>
+<div class="mt-auto flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps border-t border-surface-container pt-4">
+<span class="">32 bài học</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Activity Table -->
+<section class="mb-16">
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Lịch sử luyện tập gần đây</h2>
+<div class="bg-white border border-surface-border rounded-lg overflow-hidden shadow-sm">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low border-b border-surface-border">
+<th class="px-8 py-5 font-label-caps text-[11px] text-on-surface-variant uppercase tracking-[0.2em] font-bold">Bài học</th>
+<th class="px-8 py-5 font-label-caps text-[11px] text-on-surface-variant uppercase tracking-[0.2em] font-bold">Ngày học</th>
+<th class="px-8 py-5 font-label-caps text-[11px] text-on-surface-variant uppercase tracking-[0.2em] font-bold">Độ khó</th>
+<th class="px-8 py-5 font-label-caps text-[11px] text-on-surface-variant uppercase tracking-[0.2em] font-bold text-right">Kết quả</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-border">
+<tr class="hover:bg-surface-container-lowest transition-colors cursor-pointer group">
+<td class="px-8 py-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-accent-purple transition-colors">headset</span>
+<div>
+<p class="font-body-md text-primary font-bold">Thảo luận về Kinh tế vĩ mô</p>
+<p class="text-on-surface-variant text-xs mt-1">Giọng Anh - Mỹ • 15 phút</p>
+</div>
+</div>
+</td>
+<td class="px-8 py-6 text-on-surface-variant font-body-md text-sm">Hôm nay, 10:30</td>
+<td class="px-8 py-6">
+<span class="bg-surface-container text-on-surface-variant px-3 py-1 rounded text-[10px] font-bold uppercase tracking-wider">Nâng cao</span>
+</td>
+<td class="px-8 py-6 text-right">
+<span class="text-accent-purple font-headline-sm text-2xl">92%</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors cursor-pointer group">
+<td class="px-8 py-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-accent-purple transition-colors">headset</span>
+<div>
+<p class="font-body-md text-primary font-bold">Hướng dẫn du lịch London</p>
+<p class="text-on-surface-variant text-xs mt-1">Giọng Anh - Anh • 8 phút</p>
+</div>
+</div>
+</td>
+<td class="px-8 py-6 text-on-surface-variant font-body-md text-sm">Hôm qua</td>
+<td class="px-8 py-6">
+<span class="bg-surface-container text-on-surface-variant px-3 py-1 rounded text-[10px] font-bold uppercase tracking-wider">Cơ bản</span>
+</td>
+<td class="px-8 py-6 text-right">
+<span class="text-accent-purple font-headline-sm text-2xl">100%</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest transition-colors cursor-pointer group">
+<td class="px-8 py-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-accent-purple transition-colors">headset</span>
+<div>
+<p class="font-body-md text-primary font-bold">Phỏng vấn Giáo sư Khoa học</p>
+<p class="text-on-surface-variant text-xs mt-1">Giọng Anh - Úc • 22 phút</p>
+</div>
+</div>
+</td>
+<td class="px-8 py-6 text-on-surface-variant font-body-md text-sm">22/10/2023</td>
+<td class="px-8 py-6">
+<span class="bg-surface-container text-on-surface-variant px-3 py-1 rounded text-[10px] font-bold uppercase tracking-wider">Trung bình</span>
+</td>
+<td class="px-8 py-6 text-right">
+<span class="text-accent-purple font-headline-sm text-2xl">85%</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Community Section -->
+<section class="bg-surface-container rounded-lg p-10 flex flex-col md:flex-row items-center gap-12 border border-surface-border mb-12">
+<div class="flex-1">
+<h2 class="font-headline-md text-headline-md mb-6">Thử thách nghe hàng tuần</h2>
+<p class="text-on-surface-variant font-body-lg text-lg mb-8">Đăng ký nhận các bài tập nghe chọn lọc và bản tin phân tích ngữ âm từ các học giả ngôn ngữ hàng đầu.</p>
+<div class="flex gap-3">
+<input class="flex-1 border border-surface-border rounded-lg px-6 py-3 focus:ring-1 focus:ring-primary outline-none transition-all bg-white" placeholder="Email của bạn" type="email"/>
+<button class="bg-primary text-white px-8 py-3 rounded-lg font-label-caps text-xs tracking-widest hover:bg-black/90 transition-all font-bold uppercase">ĐĂNG KÝ NGAY</button>
+</div>
+</div>
+<div class="w-full md:w-1/3 flex justify-center">
+<div class="relative w-56 h-56">
+<div class="absolute inset-0 bg-accent-purple/5 rounded-full blur-3xl"></div>
+<img class="w-full h-full object-contain relative z-10 rounded-lg shadow-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwmzio2HFF_foNcoKYRPuhDFO_36mVLdPmh6Xt2EQjvzym-GkmxdF1jSslHvQhQphW_HrIYGah29IPVTOxprFlqNvBfH1S7TS3b1r5M3efLudhorwwEXi4BYu2MdgGc2Lwt_9iAG2yQCPLWnvdsFk8byYf2heE8G_y-sG-sVju5T26s1WpdzzpcUwdcrcuZ3mQ3BoonGPiVcjMGJ2ECBSEwl4R1VtuR8bIYZhkDsBXo8X2wfP1cyyi-RbgR9GUGOsYpqIgYQZOsunM"/>
+</div>
+</div>
+</section>
+</main>
+</div>
+```</body></html>

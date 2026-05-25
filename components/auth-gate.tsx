@@ -1,9 +1,14 @@
 "use client";
 
+import { useSearchParams } from "next/navigation";
 import { LandingSectionLink } from "@/components/landing-section-link";
 import { VocabularyMethodIntro } from "@/components/vocabulary-method-intro";
+import { safeInternalPath } from "@/lib/safe-internal-path";
 
 export function AuthGate({ supabaseConfigured }: { supabaseConfigured: boolean }) {
+  const searchParams = useSearchParams();
+  const oauthNext = safeInternalPath(searchParams.get("next"));
+
   return (
     <main className="flex min-h-dvh w-full flex-col items-center px-5 pb-10 pt-10">
       <div className="w-full max-w-md">
@@ -14,7 +19,11 @@ export function AuthGate({ supabaseConfigured }: { supabaseConfigured: boolean }
           ← Tự học
         </LandingSectionLink>
 
-        <VocabularyMethodIntro includeAuthSection supabaseConfigured={supabaseConfigured} />
+        <VocabularyMethodIntro
+          includeAuthSection
+          supabaseConfigured={supabaseConfigured}
+          oauthNext={oauthNext}
+        />
       </div>
     </main>
   );
