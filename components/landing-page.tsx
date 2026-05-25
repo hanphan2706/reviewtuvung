@@ -275,7 +275,7 @@ function CourseCarouselSection({
               {title}
             </h2>
             {subheadline ? (
-              <p className="mt-1.5 max-w-2xl text-pretty text-sm font-normal leading-relaxed text-ink-muted sm:text-base md:max-w-3xl md:text-lg">
+              <p className="mt-1.5 text-pretty text-sm font-normal leading-relaxed text-ink-muted sm:text-base md:text-lg lg:max-w-none">
                 {subheadline}
               </p>
             ) : null}
@@ -329,10 +329,12 @@ function CourseCarouselSection({
                   priority={id === "khoa-hoc" && c.slug === "general-english"}
                 />
               </div>
-              <div className="flex min-h-0 flex-1 flex-col items-center gap-2 px-5 pb-4 pt-3 text-center sm:px-6 sm:pb-4 sm:pt-3.5 md:px-7">
-                <p className="my-auto line-clamp-5 text-pretty font-serif text-[15px] font-medium leading-snug text-ink-muted sm:text-base sm:leading-snug">
-                  &ldquo;{c.summary}&rdquo;
-                </p>
+              <div className="flex min-h-0 flex-1 flex-col items-center px-5 pb-5 pt-4 text-center sm:px-6 sm:pb-5 sm:pt-4.5 md:px-7">
+                <div className="flex min-h-0 flex-1 items-center pt-2 sm:pt-3">
+                  <p className="line-clamp-5 text-pretty font-serif text-[15px] font-medium leading-snug text-ink-muted sm:text-base sm:leading-snug">
+                    &ldquo;{c.summary}&rdquo;
+                  </p>
+                </div>
                 <p className="mt-auto w-full border-t border-zinc-200/80 pt-2.5 text-sm font-semibold leading-snug sm:pt-3">
                   {c.priceHint}
                 </p>

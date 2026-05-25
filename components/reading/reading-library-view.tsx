@@ -44,7 +44,7 @@ function ReadingLibraryViewInner({
           signInNext={pathname}
         />
         <div className={`${studyHubContainerClass} py-10 md:py-12`}>
-          <header className="mb-10 max-w-2xl">
+          <header className="mb-10 max-w-4xl xl:max-w-none">
             <h1 className="font-serif text-3xl font-bold leading-tight text-[#1c1b1c] md:text-[2rem]">{pageTitle}</h1>
             {pageDescription ? (
               <p className="mt-3 text-base leading-relaxed text-[#47464b]">{pageDescription}</p>

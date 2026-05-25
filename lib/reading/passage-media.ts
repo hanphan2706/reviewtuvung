@@ -17,7 +17,7 @@ const READING_ARTICLE_IMAGES: Record<string, string> = {
   "reading-challenge-1-p4":
     "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-1-p5":
-    "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1200&q=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1528518075085-9b611b334e85?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-1-p6":
     "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-1-p7":
@@ -25,19 +25,19 @@ const READING_ARTICLE_IMAGES: Record<string, string> = {
   "reading-challenge-1-p8":
     "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-1-p9":
-    "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1759661881353-5b9cc55e1cf4?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-1-p10":
-    "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&q=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1561400494-b382c3713d76?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-1-p11":
     "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-1-p12":
     "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-1-p13":
-    "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200&q=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1772289093245-218447e77b64?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-1-p14":
-    "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1660668435924-ee5bcddc236c?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-1-p15":
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1639013166378-c556a9ef4758?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-1-p16":
     "https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-1-p17":
@@ -95,11 +95,14 @@ export function readingArticleImage(articleId: string, passageFallback = 1): str
   return raw;
 }
 
-/** Ưu tiên `IMAGE` trong file .txt; không có thì map curated / fallback. */
+/** Ưu tiên ảnh curated để hub/reader nhất quán; nếu chưa có mới lấy `IMAGE` từ file .txt. */
 export function resolveReadingArticleImage(
   articleId: string,
   passage?: { imageUrl?: string; passage?: number },
 ): string {
+  if (READING_ARTICLE_IMAGES[articleId]) {
+    return readingArticleImage(articleId, passage?.passage ?? 1);
+  }
   const fromTxt = passage?.imageUrl?.trim();
   if (fromTxt) return fromTxt;
   return readingArticleImage(articleId, passage?.passage ?? 1);
