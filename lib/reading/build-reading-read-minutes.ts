@@ -1,7 +1,7 @@
 import "server-only";
 
 import { estimateReadMinutes } from "@/lib/reading/estimate-read-minutes";
-import { READING_HUB_ARTICLES } from "@/lib/reading/hub-articles";
+import { isCompassPublishingPilot, READING_HUB_ARTICLES } from "@/lib/reading/hub-articles";
 import { loadReadingPassages } from "@/lib/reading/load-reading-raw";
 
 /** Server: per-article read estimates from passage bodies (hub hero, etc.). */
@@ -16,7 +16,11 @@ export async function buildReadingReadMinutesByArticleId(): Promise<Record<strin
       byPilot.set(article.pilotId, passages);
     }
     const block = passages.find((p) => p.passage === article.passage);
-    out[article.id] = block ? estimateReadMinutes(block.body) : 13;
+    out[article.id] = block
+      ? estimateReadMinutes(block.body, article.pilotId)
+      : isCompassPublishingPilot(article.pilotId)
+        ? 3
+        : 13;
   }
   return out;
 }

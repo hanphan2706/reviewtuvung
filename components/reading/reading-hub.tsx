@@ -8,7 +8,12 @@ import { StudyHubHeader } from "@/components/study-module/study-hub-header";
 import { studyHubContainerClass, studyHubPageBgClass } from "@/components/study-module/study-hub-shell";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 import { ensureSentenceEnd } from "@/lib/reading/format-sentence-end";
-import { READING_HUB_ARTICLES, readingArticleHeroMetaLine, type ReadingHubArticle } from "@/lib/reading/hub-articles";
+import {
+  isCompassPublishingPilot,
+  READING_HUB_ARTICLES,
+  readingArticleHeroMetaLine,
+  type ReadingHubArticle,
+} from "@/lib/reading/hub-articles";
 import { pickReadingHubLayout, type ReadingHubLayout } from "@/lib/reading/hub-layout";
 
 type ReadingHubProps = {
@@ -52,7 +57,9 @@ function ReadingHubContent({
   readMinutesByArticleId: Record<string, number>;
 }) {
   const { hero, textTopLeft, textTopRight, wide, dark } = layout;
-  const heroMeta = readingArticleHeroMetaLine(hero, readMinutesByArticleId[hero.id] ?? 13);
+  const heroReadMin =
+    readMinutesByArticleId[hero.id] ?? (isCompassPublishingPilot(hero.pilotId) ? 3 : 13);
+  const heroMeta = readingArticleHeroMetaLine(hero, heroReadMin);
 
   return (
     <div className={`${studyHubContainerClass} py-10 md:py-12`}>
@@ -69,7 +76,7 @@ function ReadingHubContent({
         tabIndex={0}
         aria-label={`Mở bài đọc: ${hero.title}`}
       >
-        <div className="relative aspect-[4/3] min-h-[220px] w-full overflow-hidden rounded-lg border border-[#E4E4E7] sm:min-h-[260px] md:min-h-[280px]">
+        <div className="relative aspect-[4/3] min-h-[220px] w-full min-w-0 self-stretch overflow-hidden rounded-lg border border-[#E4E4E7] sm:min-h-[260px] md:aspect-auto md:min-h-[280px] md:h-full">
           <Image
             src={hero.imageUrl}
             alt=""
@@ -79,7 +86,7 @@ function ReadingHubContent({
             priority
           />
         </div>
-        <div className="flex flex-col justify-between gap-8 md:py-1">
+        <div className="flex min-h-0 min-w-0 flex-col justify-between gap-8 md:py-1">
           <div>
             <span className="inline-block rounded-sm bg-[#ebebeb] px-2.5 py-0.5 text-[9px] font-normal uppercase tracking-[0.18em] text-[#47464b]">
               Bài đọc nổi bật
@@ -99,11 +106,11 @@ function ReadingHubContent({
         <div className="grid min-h-0 gap-6 md:col-span-2 md:grid-cols-2 md:grid-rows-[minmax(300px,1fr)_minmax(300px,auto)] md:items-stretch">
           <ReadingArticleCard article={textTopLeft} textOnly onClick={() => onStartArticle(textTopLeft)} />
           <ReadingArticleCard article={textTopRight} textOnly onClick={() => onStartArticle(textTopRight)} />
-          <div className="flex md:col-span-2 md:min-h-0 md:h-full">
+          <div className="flex items-stretch md:col-span-2 md:min-h-0 md:h-full">
             <ReadingArticleCard
               article={wide}
               wide
-              className="h-full w-full"
+              className="h-full min-h-0 w-full"
               onClick={() => onStartArticle(wide)}
             />
           </div>

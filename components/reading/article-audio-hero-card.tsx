@@ -9,6 +9,7 @@ import type { ReadingDifficulty, ReadingTopic } from "@/lib/reading/hub-articles
 type ArticleAudioHeroCardProps = {
   title: string;
   imageUrl: string;
+  imageObjectPosition?: string;
   audioUrl: string;
   metaPill: string;
   readMin?: number;
@@ -30,6 +31,7 @@ function formatMinutes(seconds: number): string {
 export function ArticleAudioHeroCard({
   title,
   imageUrl,
+  imageObjectPosition = "object-center",
   audioUrl,
   metaPill,
   readMin,
@@ -64,7 +66,7 @@ export function ArticleAudioHeroCard({
               src={imageUrl}
               alt=""
               fill
-              className="object-cover"
+              className={`object-cover ${imageObjectPosition}`}
               sizes="104px"
               priority
             />

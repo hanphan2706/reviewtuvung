@@ -1,5 +1,6 @@
 import { buildCompassPassageVocabulary } from "@/lib/reading/compass-idioms";
 import { READING_CHALLENGE_1_VOCABULARY } from "@/lib/reading/reading-challenge-1-vocabulary";
+import { READING_CHALLENGE_2_VOCABULARY } from "@/lib/reading/reading-challenge-2-vocabulary";
 import {
   getReadingHubArticleById,
   isCompassPublishingPilot,
@@ -122,7 +123,8 @@ export function getPassageVocabulary(
   const pilotId = passage?.pilotId ?? getReadingHubArticleById(articleId)?.pilotId;
 
   if (pilotId && isCompassPublishingPilot(pilotId)) {
-    const curated = READING_CHALLENGE_1_VOCABULARY[articleId];
+    const curated =
+      READING_CHALLENGE_1_VOCABULARY[articleId] ?? READING_CHALLENGE_2_VOCABULARY[articleId];
     if (curated?.length) return curated;
     if (passage?.idiomsText?.trim()) {
       const extra = COMPASS_VOCAB_EXTRA_BY_ARTICLE[articleId] ?? [];

@@ -40,6 +40,7 @@ import {
   type PassageVocabItem,
 } from "@/lib/reading/passage-vocabulary";
 import type { ReadingPassageBlock } from "@/lib/reading/split-passages";
+import { readingArticleImageObjectPosition } from "@/lib/reading/passage-media";
 import { useSrsStore } from "@/store/srs-store";
 
 function LabelCaps({ children }: { children: React.ReactNode }) {
@@ -97,6 +98,7 @@ export function ArticleReader({
   const scrollRef = useRef<HTMLDivElement>(null);
   const progressSentRef = useRef(false);
   const decks = useSrsStore((s) => s.decks);
+  const imageObjectPosition = readingArticleImageObjectPosition(articleId);
 
   const hasTranslation = Boolean(translationParagraphs?.length);
   const [showTranslation, setShowTranslation] = useState(
@@ -109,6 +111,7 @@ export function ArticleReader({
   const [dictLoading, setDictLoading] = useState(false);
   const [dictLookup, setDictLookup] = useState<ReadingLookupResult | null>(null);
   const popoverAnchorRef = useRef<SelectionAnchor | null>(null);
+  const pickedRef = useRef<ReturnType<typeof parseReadingSelection>>(null);
 
   const { selection, clearSelection } = useArticleTextSelection(articleRef);
   const selectionText = selection?.text ?? null;
@@ -116,9 +119,20 @@ export function ArticleReader({
     () => (selectionText ? parseReadingSelection(selectionText) : null),
     [selectionText],
   );
-  const lookupKey = picked ? `${picked.mode}\0${picked.query}` : null;
+  if (picked) pickedRef.current = picked;
 
-  const readMin = useMemo(() => estimateReadMinutes(passage.body), [passage.body]);
+  const popoverAnchor = selection ?? popoverAnchorRef.current;
+  const showDictionaryPopover = Boolean(popoverAnchor && dictLookup);
+  const pickedForLookup =
+    picked ?? (showDictionaryPopover ? pickedRef.current : null);
+  const lookupKey = pickedForLookup
+    ? `${pickedForLookup.mode}\0${pickedForLookup.query}`
+    : null;
+
+  const readMin = useMemo(
+    () => estimateReadMinutes(passage.body, pilotId),
+    [passage.body, pilotId],
+  );
   const preparedBody = useMemo(
     () => prepareArticleBody(passage.body, subheadline, passage.deckText),
     [passage.body, subheadline, passage.deckText],
@@ -148,14 +162,13 @@ export function ArticleReader({
     });
   }, [vocabularyItemsProp, articleId, pilotId, passage.idiomsText]);
 
-  const canAddWord = Boolean(isLoggedIn && picked && picked.mode !== "translate-only");
+  const canAddWord = Boolean(
+    isLoggedIn && pickedForLookup && pickedForLookup.mode !== "translate-only",
+  );
 
   useEffect(() => {
     if (selection) popoverAnchorRef.current = selection;
   }, [selection]);
-
-  const popoverAnchor = selection ?? popoverAnchorRef.current;
-  const showDictionaryPopover = Boolean(popoverAnchor && dictLookup);
 
   useEffect(() => {
     const el = scrollRef.current;
@@ -230,6 +243,7 @@ export function ArticleReader({
     clearSelection();
     setDictLookup(null);
     popoverAnchorRef.current = null;
+    pickedRef.current = null;
   }, [clearSelection]);
 
   return (
@@ -249,6 +263,7 @@ export function ArticleReader({
                 <ArticleAudioHeroCard
                   title={passage.title}
                   imageUrl={imageUrl}
+                  imageObjectPosition={imageObjectPosition}
                   audioUrl={audioUrl}
                   metaPill={source ?? metaLabel}
                   readMin={readMin}
@@ -264,7 +279,7 @@ export function ArticleReader({
                       src={imageUrl}
                       alt=""
                       fill
-                      className="object-cover"
+                      className={`object-cover ${imageObjectPosition}`}
                       sizes="(max-width:768px) 100vw, 700px"
                     />
                   </div>
@@ -297,7 +312,7 @@ export function ArticleReader({
                       src={imageUrl}
                       alt=""
                       fill
-                      className="object-cover"
+                      className={`object-cover ${imageObjectPosition}`}
                       sizes="(max-width:768px) 100vw, 700px"
                       priority
                     />

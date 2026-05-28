@@ -2,7 +2,7 @@ export const READING_AUDIO_BUCKET = "reading-audio";
 
 /** Object key trong Supabase Storage (bucket private). */
 export function readingAudioObjectKey(articleId: string): string | null {
-  if (/^reading-challenge-1-p\d+$/i.test(articleId)) {
+  if (/^reading-challenge-[12]-p\d+$/i.test(articleId)) {
     return `${articleId.toLowerCase()}.mp3`;
   }
   return null;

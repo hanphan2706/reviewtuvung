@@ -214,7 +214,7 @@ export function MobileTranslationFab({ open, onToggle }: MobileTranslationFabPro
   return createPortal(
     <div
       ref={fabRef}
-      className={`fixed z-[45] select-none md:hidden ${dragging ? "scale-[1.04]" : ""}`}
+      className={`fixed z-[45] select-none ${dragging ? "scale-[1.04]" : ""}`}
       style={{
         left: position.x,
         top: position.y,

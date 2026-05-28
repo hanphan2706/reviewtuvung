@@ -7,7 +7,8 @@ import { loadReadingPassage } from "@/lib/reading/load-reading-raw";
 import { loadReadingPassageTranslation } from "@/lib/reading/load-reading-translation";
 import { getPassageVocabulary } from "@/lib/reading/passage-vocabulary";
 import { translationMatchesPassage } from "@/lib/reading/reading-translation";
-import { createServerSupabaseClient, getCurrentUser } from "@/lib/supabase/server";
+import { getServerAuthState } from "@/lib/auth/server-auth-state";
+import { createServerSupabaseClient } from "@/lib/supabase/server";
 
 export async function renderReadingArticlePage(routeSegment: string) {
   const article = resolveReadingArticleRoute(routeSegment);
@@ -26,7 +27,7 @@ export async function renderReadingArticlePage(routeSegment: string) {
     idiomsText: initialPassage?.idiomsText,
   });
   const supabase = await createServerSupabaseClient();
-  const user = await getCurrentUser();
+  const { user, loggedIn, devBypass } = await getServerAuthState();
 
   const view = (
     <ReadingArticleSessionView
@@ -34,13 +35,13 @@ export async function renderReadingArticlePage(routeSegment: string) {
       initialPassage={initialPassage}
       vocabularyItems={vocabularyItems}
       translationParagraphs={translationParagraphs}
-      isLoggedIn={Boolean(user)}
-      userProfile={studyHubUserProfileFromAuthUser(user)}
+      isLoggedIn={loggedIn}
+      userProfile={devBypass ? null : studyHubUserProfileFromAuthUser(user)}
       supabaseConfigured={Boolean(supabase)}
     />
   );
 
-  if (user) {
+  if (user && !devBypass) {
     return <SrsSyncProvider userId={user.id}>{view}</SrsSyncProvider>;
   }
 

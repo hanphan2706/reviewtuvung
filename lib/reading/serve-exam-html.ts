@@ -11,6 +11,7 @@ const PILOT_LABELS: Record<ReadingPilotId, string> = {
   "cam20-test3": "Cambridge 20 · Test 3",
   "cam20-test4": "Cambridge 20 · Test 4",
   "reading-challenge-1": "Compass Publishing",
+  "reading-challenge-2": "Compass Publishing",
 };
 
 export type ExamBootPayload = Awaited<ReturnType<typeof buildExamBootPayload>>;

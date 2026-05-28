@@ -11,6 +11,7 @@ import {
 } from "react";
 import { Languages } from "lucide-react";
 import { MobileTranslationFab } from "@/components/reading/mobile-translation-fab";
+import { useCoarsePointer } from "@/hooks/use-coarse-pointer";
 import {
   alignTranslationToParagraphs,
   prepareArticleBody,
@@ -30,8 +31,6 @@ type ArticleBodyContentProps = {
   /** Deck/hook hiển thị dưới tiêu đề — không lặp trong thân bài. */
   deckInHeader?: boolean;
 };
-
-const READING_ANCHOR_RATIO = 0.28;
 
 function ParagraphTranslationToggle({
   open,
@@ -59,21 +58,6 @@ function ParagraphTranslationToggle({
   );
 }
 
-function pickActiveParagraphIndex(
-  scrollRoot: HTMLElement,
-  paragraphEls: (HTMLDivElement | null)[],
-): number {
-  const anchorY = scrollRoot.getBoundingClientRect().top + scrollRoot.clientHeight * READING_ANCHOR_RATIO;
-  let active = 0;
-  for (let i = 0; i < paragraphEls.length; i++) {
-    const el = paragraphEls[i];
-    if (!el) continue;
-    if (el.getBoundingClientRect().top <= anchorY) active = i;
-    else break;
-  }
-  return active;
-}
-
 export function ArticleBodyContent({
   body,
   deckText = "",
@@ -88,11 +72,11 @@ export function ArticleBodyContent({
   const paragraphRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [showAllTranslationsInternal, setShowAllTranslationsInternal] = useState(false);
   const showAllTranslations = showTranslationProp ?? showAllTranslationsInternal;
-  const [activeParagraph, setActiveParagraph] = useState(0);
-  const [floatingToggleTop, setFloatingToggleTop] = useState(0);
+  const isCoarsePointer = useCoarsePointer();
 
   const hasTranslation = Boolean(translationParagraphs?.length);
-  const useFloatingToggle = hasTranslation && Boolean(scrollContainerRef);
+  const showTouchFab = hasTranslation && isCoarsePointer;
+  const showDesktopToggle = hasTranslation && !isCoarsePointer;
 
   const { deck, paragraphs, alignedVi, quote, insertAfterIndex } = useMemo(() => {
     const prepared = prepareArticleBody(body, subheadline, deckText);
@@ -114,76 +98,32 @@ export function ArticleBodyContent({
   const showDeckInBody = Boolean(deck) && !deckInHeader;
   const slotCount = (showDeckInBody ? 1 : 0) + paragraphs.length;
 
-  const syncReadingAnchor = useCallback(() => {
-    const scrollRoot = scrollContainerRef?.current;
-    const wrapper = bodyWrapperRef.current;
-    if (!scrollRoot || !wrapper) return;
-
-    const nextActive = pickActiveParagraphIndex(scrollRoot, paragraphRefs.current);
-    setActiveParagraph(nextActive);
-
-    const anchorEl = paragraphRefs.current[nextActive];
-    if (!anchorEl) return;
-    setFloatingToggleTop(anchorEl.offsetTop);
-  }, [scrollContainerRef]);
-
   useLayoutEffect(() => {
     paragraphRefs.current = paragraphRefs.current.slice(0, slotCount);
-    syncReadingAnchor();
-  }, [slotCount, body, syncReadingAnchor]);
-
-  useEffect(() => {
-    if (!useFloatingToggle) return;
-    const scrollRoot = scrollContainerRef?.current;
-    if (!scrollRoot) return;
-
-    syncReadingAnchor();
-    scrollRoot.addEventListener("scroll", syncReadingAnchor, { passive: true });
-    window.addEventListener("resize", syncReadingAnchor);
-
-    const ro = typeof ResizeObserver !== "undefined" ? new ResizeObserver(syncReadingAnchor) : null;
-    ro?.observe(scrollRoot);
-    if (bodyWrapperRef.current) ro?.observe(bodyWrapperRef.current);
-
-    return () => {
-      scrollRoot.removeEventListener("scroll", syncReadingAnchor);
-      window.removeEventListener("resize", syncReadingAnchor);
-      ro?.disconnect();
-    };
-  }, [useFloatingToggle, scrollContainerRef, syncReadingAnchor]);
+  }, [slotCount, body]);
 
   const toggleAllTranslations = useCallback(() => {
     if (onToggleTranslation) onToggleTranslation();
     else setShowAllTranslationsInternal((v) => !v);
   }, [onToggleTranslation]);
 
-  const showFloatingToggle = useFloatingToggle;
-
   if (slotCount === 0) {
     return <p className="text-[#47464b]">Chưa có nội dung bài đọc.</p>;
   }
 
   return (
-    <div ref={bodyWrapperRef} className="relative md:overflow-visible">
-      {showFloatingToggle ? (
-        <div
-          className="pointer-events-none absolute right-full top-0 z-10 hidden pr-5 md:block"
-          style={{
-            top: floatingToggleTop,
-            transition: "top 0.55s cubic-bezier(0.22, 1, 0.36, 1)",
-          }}
-        >
-          <div className="pointer-events-auto">
-            <ParagraphTranslationToggle open={showAllTranslations} onToggle={toggleAllTranslations} />
-          </div>
+    <div ref={bodyWrapperRef} className="relative">
+      {showDesktopToggle ? (
+        <div className="mb-6">
+          <ParagraphTranslationToggle open={showAllTranslations} onToggle={toggleAllTranslations} />
         </div>
       ) : null}
 
-      {hasTranslation ? (
+      {showTouchFab ? (
         <MobileTranslationFab open={showAllTranslations} onToggle={toggleAllTranslations} />
       ) : null}
 
-      <div className="select-text space-y-6 font-serif text-lg leading-[1.8] text-[#1c1b1c]">
+      <div className="select-text touch-callout-none space-y-6 font-serif text-lg leading-[1.8] text-[#1c1b1c]">
         {paragraphs.map((para, index) => {
           const slotIndex = showDeckInBody ? index + 1 : index;
           const vi = alignedVi[slotIndex];

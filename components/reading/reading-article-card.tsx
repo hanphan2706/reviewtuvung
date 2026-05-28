@@ -9,6 +9,7 @@ import {
   type ReadingHubArticle,
 } from "@/lib/reading/hub-articles";
 import { ensureSentenceEnd } from "@/lib/reading/format-sentence-end";
+import { readingArticleImageObjectPosition } from "@/lib/reading/passage-media";
 
 function LabelCaps({ children, light }: { children: React.ReactNode; light?: boolean }) {
   return (
@@ -47,6 +48,7 @@ export function ReadingArticleCard({
 }) {
   const sourceTopic = readingArticleSourceTopicLabel(article);
   const level = readingArticleDifficultyLabel(article);
+  const imageObjectPosition = readingArticleImageObjectPosition(article.id);
   const subheadline = article.subheadline ? ensureSentenceEnd(article.subheadline) : "";
   const compactGrid = !wide && !dark && !textOnly;
   const adaptiveBodyClamp = compactGrid || dark;
@@ -80,22 +82,24 @@ export function ReadingArticleCard({
             src={article.imageUrl}
             alt=""
             fill
-            className="object-cover"
+            className={`object-cover ${imageObjectPosition}`}
             sizes="(max-width:768px) 100vw, 33vw"
           />
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-black/65 to-black/25" aria-hidden />
         </>
       ) : textOnly ? null : (
         <div
-          className={`relative w-full shrink-0 overflow-hidden ${
-            wide ? "aspect-[4/3] sm:aspect-auto sm:h-full sm:min-h-[260px] sm:w-48 md:min-h-[300px] md:w-56" : "aspect-[16/10]"
+          className={`relative min-w-0 overflow-hidden ${
+            wide
+              ? "aspect-[4/3] min-h-[200px] w-full self-stretch sm:aspect-auto sm:min-h-0 sm:h-full"
+              : "aspect-[16/10] w-full"
           }`}
         >
           <Image
             src={article.imageUrl}
             alt=""
             fill
-            className="object-cover"
+            className={`object-cover ${imageObjectPosition}`}
             sizes={wide ? "224px" : "(max-width:768px) 100vw, 33vw"}
           />
         </div>
@@ -151,9 +155,11 @@ export function ReadingArticleCard({
   );
 
   const className = [
-    "group relative flex h-full min-h-0 overflow-hidden rounded-lg border text-left transition",
-    textOnly ? "min-h-[300px] md:min-h-0" : "",
-    wide ? "min-h-[260px] flex-col sm:min-h-[280px] sm:flex-row md:min-h-[300px]" : "flex-col",
+    "group relative h-full min-h-0 overflow-hidden rounded-lg border text-left transition",
+    textOnly ? "flex min-h-[300px] flex-col md:min-h-0" : wide ? "" : "flex flex-col",
+    wide
+      ? "grid min-h-[260px] grid-cols-1 sm:min-h-[280px] sm:grid-cols-[12rem_minmax(0,1fr)] md:min-h-[300px] md:grid-cols-[14rem_minmax(0,1fr)]"
+      : "",
     dark ? "border-[#1c1b1c] bg-[#1c1b1c]" : "border-[#E4E4E7] bg-white hover:shadow-md",
     disabled ? "cursor-default opacity-60" : "cursor-pointer",
     classNameProp,

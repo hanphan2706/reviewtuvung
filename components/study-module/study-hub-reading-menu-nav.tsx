@@ -29,7 +29,7 @@ function NavGroup({
     <div>
       <button
         type="button"
-        className="flex min-h-6 w-full cursor-pointer items-center justify-between gap-2 rounded-lg px-2 text-left transition hover:bg-white/80"
+        className="flex min-h-6 w-full cursor-pointer items-center justify-between gap-2 px-2 text-left transition hover:opacity-80"
         aria-expanded={open}
         aria-controls={panelId}
         aria-label={`${open ? "Thu gọn" : "Mở"} ${title}`}
@@ -48,7 +48,7 @@ function NavGroup({
               <Link
                 href={item.href}
                 onClick={onNavigate}
-                className="block cursor-pointer rounded-lg px-2 py-2 text-sm font-medium text-ink transition hover:bg-white"
+                className="block cursor-pointer px-2 py-2 text-sm font-medium text-ink transition hover:opacity-80"
               >
                 {item.label}
               </Link>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type FormEvent } from "react";
 import {
   ArrowLeft,
   ArrowRight,
@@ -13,6 +13,7 @@ import {
   X,
 } from "lucide-react";
 import type { SelectionAnchor } from "@/components/reading/use-article-text-selection";
+import { useCoarsePointer } from "@/hooks/use-coarse-pointer";
 import { formatLookupForDeck, type LookupPronunciation, type ReadingLookupResult } from "@/lib/reading/lookup-types";
 import { htmlToPlainTrim } from "@/lib/sanitize-word-html";
 import type { Deck } from "@/lib/types";
@@ -61,10 +62,38 @@ function PronunciationButton({ label, data }: { label: string; data: LookupPronu
   );
 }
 
-function popoverLayout(anchor: SelectionAnchor) {
+type PopoverLayout =
+  | {
+      mode: "sheet";
+      left: number;
+      right: number;
+      bottom: number;
+      maxHeight: number;
+    }
+  | {
+      mode: "anchored";
+      left: number;
+      top?: number;
+      bottom?: number;
+      maxHeight: number;
+    };
+
+/** Desktop: neo cạnh vùng chọn. Touch: sheet dưới màn hình — tránh đè menu Copy/Look Up của iOS. */
+function popoverLayout(anchor: SelectionAnchor, touchSheet: boolean): PopoverLayout {
   const pad = 12;
   const gap = 8;
   const maxW = 380;
+
+  if (touchSheet) {
+    const safeBottom = 12;
+    return {
+      mode: "sheet",
+      left: pad,
+      right: pad,
+      bottom: safeBottom,
+      maxHeight: Math.min(440, Math.max(240, Math.floor(window.innerHeight * 0.42))),
+    };
+  }
 
   const left = Math.min(
     Math.max(pad, anchor.rect.left + anchor.rect.width / 2 - maxW / 2),
@@ -78,17 +107,17 @@ function popoverLayout(anchor: SelectionAnchor) {
 
   if (flipAbove) {
     return {
+      mode: "anchored",
       left,
-      top: undefined as number | undefined,
       bottom: window.innerHeight - anchor.rect.top + gap,
       maxHeight,
     };
   }
 
   return {
+    mode: "anchored",
     left,
     top: anchor.rect.bottom + gap,
-    bottom: undefined as number | undefined,
     maxHeight,
   };
 }
@@ -217,13 +246,18 @@ export function DictionaryPopover({
   const [definition, setDefinition] = useState("");
   const panelRef = useRef<HTMLDivElement>(null);
   const openedAtRef = useRef(0);
+  const lookupIdentityRef = useRef<string | null>(null);
   const newDeckInputRef = useRef<HTMLInputElement>(null);
+  const isCoarsePointer = useCoarsePointer();
 
   useEffect(() => {
+    const identity = lookup ? `${lookup.kind}\0${lookup.query}` : null;
+    if (identity === lookupIdentityRef.current) return;
+    lookupIdentityRef.current = identity;
     setPhase("lookup");
     setCreatingDeck(false);
     setNewDeckName("");
-  }, [lookup?.query, lookup?.kind]);
+  }, [lookup?.query, lookup?.kind, lookup]);
 
   useEffect(() => {
     setSelectedDeckId((prev) =>
@@ -246,21 +280,24 @@ export function DictionaryPopover({
   }, [lookup?.query]);
 
   useEffect(() => {
-    const onDocumentClick = (event: MouseEvent) => {
-      if (performance.now() - openedAtRef.current < 120) return;
+    if (isCoarsePointer) return;
+    const onDocumentPointerDown = (event: PointerEvent) => {
+      if (performance.now() - openedAtRef.current < 200) return;
       const panel = panelRef.current;
       const target = event.target;
       if (!(target instanceof Node)) return;
       if (panel?.contains(target)) return;
+      if ((target as HTMLElement).closest?.("[data-reading-dictionary-popover]")) return;
       onClose();
     };
-    document.addEventListener("click", onDocumentClick, true);
-    return () => document.removeEventListener("click", onDocumentClick, true);
-  }, [onClose]);
+    document.addEventListener("pointerdown", onDocumentPointerDown, true);
+    return () => document.removeEventListener("pointerdown", onDocumentPointerDown, true);
+  }, [onClose, isCoarsePointer]);
 
   if (!anchor || !lookup) return null;
 
-  const layout = popoverLayout(anchor);
+  const layout = popoverLayout(anchor, isCoarsePointer);
+  const isSheet = layout.mode === "sheet";
   const isTranslateOnly = Boolean(lookup.phraseGlossVi && lookup.senses.length === 0 && !lookup.error);
   const showAddButton =
     canAddWord &&
@@ -269,14 +306,16 @@ export function DictionaryPopover({
     (lookup.kind === "word" || (lookup.kind === "phrase" && Boolean(lookup.phraseGlossVi)));
   const selectedDeck = decks.find((d) => d.id === selectedDeckId) ?? null;
 
-  const onCreateDeck = () => {
-    const name = newDeckName.trim();
+  const submitNewDeck = useCallback(() => {
+    const raw = newDeckInputRef.current?.value ?? newDeckName;
+    const name = raw.trim();
     if (!name) return;
     const id = createDeck(name);
     setSelectedDeckId(id);
     setNewDeckName("");
+    if (newDeckInputRef.current) newDeckInputRef.current.value = "";
     setCreatingDeck(false);
-  };
+  }, [createDeck, newDeckName]);
 
   const onSaveWord = () => {
     if (!selectedDeckId || !htmlToPlainTrim(term)) return;
@@ -298,18 +337,42 @@ export function DictionaryPopover({
   const pickDeckHeader = phase === "pick-deck";
 
   return (
-    <Root
-      ref={panelRef}
-      data-reading-dictionary-popover
-      aria-label="Từ điển"
-      className="fixed z-[100] flex w-[min(380px,calc(100vw-24px))] flex-col overflow-hidden rounded-xl border border-[#E4E4E7] bg-white shadow-[0_8px_30px_rgb(0_0_0/0.12)]"
-      style={{
-        left: layout.left,
-        top: layout.top,
-        bottom: layout.bottom,
-        maxHeight: layout.maxHeight,
-      }}
-    >
+    <>
+      {isSheet ? (
+        <Root
+          className="fixed inset-0 z-[99] bg-black/25"
+          aria-hidden
+          onClick={(e) => {
+            if (e.target !== e.currentTarget) return;
+            onClose();
+          }}
+        />
+      ) : null}
+      <Root
+        ref={panelRef}
+        data-reading-dictionary-popover
+        aria-label="Từ điển"
+        className={`fixed z-[100] flex flex-col overflow-hidden border border-[#E4E4E7] bg-white shadow-[0_8px_30px_rgb(0_0_0/0.12)] ${
+          isSheet
+            ? `mx-auto max-w-lg rounded-t-2xl rounded-b-xl ${phase !== "lookup" ? "min-h-[min(360px,42dvh)]" : ""}`
+            : "w-[min(380px,calc(100vw-24px))] rounded-xl"
+        }`}
+        style={
+          isSheet
+            ? {
+                left: layout.left,
+                right: layout.right,
+                bottom: `max(${layout.bottom}px, env(safe-area-inset-bottom, 0px))`,
+                maxHeight: layout.maxHeight,
+              }
+            : {
+                left: layout.left,
+                top: layout.top,
+                bottom: layout.bottom,
+                maxHeight: layout.maxHeight,
+              }
+        }
+      >
       <Root className="flex shrink-0 items-center gap-1 border-b border-[#f1eded] px-3 py-2.5">
         {phase !== "lookup" ? (
           <button
@@ -346,7 +409,11 @@ export function DictionaryPopover({
         </button>
       </Root>
 
-      <Root className="min-h-0 flex-1 overflow-y-auto overscroll-y-contain px-4 py-3 [-webkit-overflow-scrolling:touch]">
+      <Root
+        className={`min-h-0 flex-1 overflow-y-auto overscroll-y-contain px-4 py-3 [-webkit-overflow-scrolling:touch] ${
+          phase !== "lookup" ? "min-h-[10rem]" : ""
+        }`}
+      >
         {phase === "lookup" ? <LookupBody lookup={lookup} loading={loading} /> : null}
 
         {phase === "pick-deck" ? (
@@ -368,7 +435,14 @@ export function DictionaryPopover({
                 {!creatingDeck ? (
                   <button
                     type="button"
-                    onClick={() => setCreatingDeck(true)}
+                    onClick={() => {
+                      setNewDeckName("");
+                      setCreatingDeck(true);
+                      queueMicrotask(() => {
+                        if (newDeckInputRef.current) newDeckInputRef.current.value = "";
+                        newDeckInputRef.current?.focus();
+                      });
+                    }}
                     className="inline-flex shrink-0 items-center gap-0.5 text-xs font-semibold text-[#4b2876] hover:text-[#3d1f5c]"
                   >
                     <Plus className="size-3.5" strokeWidth={2.5} aria-hidden />
@@ -378,43 +452,9 @@ export function DictionaryPopover({
               </Root>
 
               {creatingDeck ? (
-                <Root className="mb-2 flex items-center gap-1.5 rounded-lg border border-[#E4E4E7] bg-[#fafafa] p-1.5">
-                  <input
-                    ref={newDeckInputRef}
-                    type="text"
-                    value={newDeckName}
-                    onChange={(e) => setNewDeckName(e.target.value)}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter") onCreateDeck();
-                      if (e.key === "Escape") {
-                        setCreatingDeck(false);
-                        setNewDeckName("");
-                      }
-                    }}
-                    placeholder="Tên bộ thẻ mới…"
-                    className="min-w-0 flex-1 rounded-md border border-[#E4E4E7] bg-white px-2.5 py-1.5 text-sm text-[#1c1b1c] outline-none focus:border-[#4b2876]/50 focus:ring-1 focus:ring-[#4b2876]/15"
-                  />
-                  <button
-                    type="button"
-                    onClick={onCreateDeck}
-                    disabled={!newDeckName.trim()}
-                    className="inline-flex size-7 shrink-0 items-center justify-center rounded-full bg-[#4b2876] text-white disabled:opacity-40"
-                    aria-label="Tạo bộ thẻ"
-                  >
-                    <Check className="size-3.5" aria-hidden />
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setCreatingDeck(false);
-                      setNewDeckName("");
-                    }}
-                    className="inline-flex size-7 shrink-0 items-center justify-center rounded-full text-[#71717A] hover:bg-zinc-200/80"
-                    aria-label="Huỷ"
-                  >
-                    <X className="size-3.5" aria-hidden />
-                  </button>
-                </Root>
+                <p className="mb-2 text-center text-xs text-[#71717A]">
+                  Nhập tên bộ thẻ ở thanh dưới cùng, rồi bấm <span className="font-semibold">Tạo bộ thẻ</span>.
+                </p>
               ) : null}
 
               {decks.length === 0 ? (
@@ -475,7 +515,7 @@ export function DictionaryPopover({
                 value={term}
                 onChange={(e) => setTerm(e.target.value)}
                 rows={2}
-                className="mt-1 w-full resize-none rounded-lg border border-[#E4E4E7] px-3 py-2 text-sm text-[#1c1b1c] outline-none focus:border-[#1c1b1c]"
+                className="mt-1 w-full resize-none rounded-lg border border-[#E4E4E7] px-3 py-2 text-base text-[#1c1b1c] outline-none focus:border-[#1c1b1c]"
                 lang="en"
               />
             </label>
@@ -487,7 +527,7 @@ export function DictionaryPopover({
                 value={definition}
                 onChange={(e) => setDefinition(e.target.value)}
                 rows={5}
-                className="mt-1 w-full resize-y rounded-lg border border-[#E4E4E7] px-3 py-2 text-sm leading-relaxed text-[#1c1b1c] outline-none focus:border-[#1c1b1c]"
+                className="mt-1 w-full resize-y rounded-lg border border-[#E4E4E7] px-3 py-2 text-base leading-relaxed text-[#1c1b1c] outline-none focus:border-[#1c1b1c]"
                 lang="vi"
               />
             </label>
@@ -518,11 +558,72 @@ export function DictionaryPopover({
         <Root className="shrink-0 border-t border-[#f1eded] px-4 py-3">
           <button
             type="button"
-            onClick={() => setPhase("pick-deck")}
+            onClick={(e) => {
+              e.stopPropagation();
+              setPhase("pick-deck");
+            }}
             className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#1c1b1c] px-3 py-2.5 text-xs font-semibold text-white hover:bg-black/90"
           >
             <BookOpen className="size-3.5" aria-hidden />
             Thêm vào bộ thẻ
+          </button>
+        </Root>
+      ) : null}
+
+      {phase === "pick-deck" && creatingDeck ? (
+        <Root className="shrink-0 border-t border-[#f1eded] bg-white px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
+          <form
+            className="flex items-center gap-2"
+            onSubmit={(e: FormEvent) => {
+              e.preventDefault();
+              submitNewDeck();
+            }}
+          >
+            <input
+              ref={newDeckInputRef}
+              type="text"
+              enterKeyHint="done"
+              autoComplete="off"
+              autoCorrect="off"
+              defaultValue={newDeckName}
+              onInput={(e) => setNewDeckName(e.currentTarget.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Escape") {
+                  e.preventDefault();
+                  setCreatingDeck(false);
+                  setNewDeckName("");
+                  if (newDeckInputRef.current) newDeckInputRef.current.value = "";
+                }
+              }}
+              placeholder="Tên bộ thẻ mới…"
+              className="min-h-11 min-w-0 flex-1 rounded-lg border border-[#E4E4E7] bg-white px-3 py-2 text-base text-[#1c1b1c] outline-none focus:border-[#4b2876]/50 focus:ring-1 focus:ring-[#4b2876]/15"
+            />
+            <button
+              type="submit"
+              className="inline-flex size-11 shrink-0 cursor-pointer touch-manipulation items-center justify-center rounded-full bg-[#4b2876] text-white active:opacity-90"
+              aria-label="Tạo bộ thẻ"
+            >
+              <Check className="size-5 pointer-events-none" aria-hidden />
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setCreatingDeck(false);
+                setNewDeckName("");
+                if (newDeckInputRef.current) newDeckInputRef.current.value = "";
+              }}
+              className="inline-flex size-11 shrink-0 cursor-pointer touch-manipulation items-center justify-center rounded-full text-[#71717A] active:bg-zinc-200/80"
+              aria-label="Huỷ"
+            >
+              <X className="size-5 pointer-events-none" aria-hidden />
+            </button>
+          </form>
+          <button
+            type="button"
+            onClick={() => submitNewDeck()}
+            className="mt-3 inline-flex min-h-11 w-full cursor-pointer touch-manipulation items-center justify-center rounded-lg bg-[#1c1b1c] px-3 py-2.5 text-sm font-semibold text-white active:bg-black/90"
+          >
+            Tạo bộ thẻ
           </button>
         </Root>
       ) : null}
@@ -567,5 +668,6 @@ export function DictionaryPopover({
         </Root>
       ) : null}
     </Root>
+    </>
   );
 }
