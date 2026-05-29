@@ -4,6 +4,7 @@ import {
   collectParaphrasesGlossaryOnly,
 } from "@/lib/reading/collect-paraphrases";
 import { collectScoredDefinitions, pickPronunciations } from "@/lib/reading/lookup-dictionary-utils";
+import { curatedCollocationGloss } from "@/lib/reading/collocation-glossary";
 import { toDictionaryHeadword } from "@/lib/reading/lemma-headword";
 import {
   isLiteralDefinitionTranslation,
@@ -11,6 +12,7 @@ import {
   isSuspiciousPhraseTranslation,
   pickDisplayGlossVi,
 } from "@/lib/reading/lookup-translation-quality";
+import { resolveLookupForm } from "@/lib/reading/resolve-lookup-form";
 import { isGoogleTranslateConfigured, translateGoogleVi } from "@/lib/reading/google-translate";
 import { parseReadingSelection } from "@/lib/reading/parse-selection";
 import { vietnameseGlossaryGloss } from "@/lib/reading/vietnamese-gloss-glossary";
@@ -184,6 +186,24 @@ async function fetchFreeDictionary(lemma: string): Promise<DictEntry[] | null> {
   }
 }
 
+async function fetchDictionaryEntries(lemma: string, headword: string): Promise<DictEntry[] | null> {
+  const primary = await fetchFreeDictionary(lemma);
+  if (headword === lemma) return primary;
+
+  const base = await fetchFreeDictionary(headword);
+  if (!primary?.length) return base;
+  if (!base?.length) return primary;
+  return [...primary, ...base];
+}
+
+function glossaryGlossForLookup(
+  lemma: string,
+  headword: string,
+  primaryPos: string,
+): string | null {
+  return vietnameseGlossaryGloss(lemma, primaryPos, headword);
+}
+
 function getCachedLookup(key: string): ReadingLookupResult | null {
   const hit = lookupCache.get(key);
   if (!hit) return null;
@@ -204,7 +224,7 @@ async function resolveHeadwordGlossVi(
   headword: string,
   primaryPos: string,
 ): Promise<{ glossVi: string; glossViReliable: boolean }> {
-  const fromGlossary = vietnameseGlossaryGloss(lemma, primaryPos, headword);
+  const fromGlossary = glossaryGlossForLookup(lemma, headword, primaryPos);
   if (fromGlossary) {
     return { glossVi: fromGlossary, glossViReliable: true };
   }
@@ -241,16 +261,16 @@ function buildSensesFast(
 async function buildSensesFromDictionary(
   entries: DictEntry[],
   lemma: string,
+  headword: string,
   translateHeadwordPromise?: ReturnType<typeof translateViBest>,
 ): Promise<{
   senses: LookupSense[];
   paraphrases: LookupParaphrase[];
 }> {
-  const headword = toDictionaryHeadword(lemma);
-  const picked = collectScoredDefinitions(entries, MAX_SENSES, lemma);
+  const picked = collectScoredDefinitions(entries, MAX_SENSES, lemma, headword);
   const primaryPos = picked[0]?.partOfSpeech ?? "word";
 
-  const fromGlossary = vietnameseGlossaryGloss(lemma, primaryPos, headword);
+  const fromGlossary = glossaryGlossForLookup(lemma, headword, primaryPos);
   let headwordGloss: { glossVi: string; glossViReliable: boolean };
   if (fromGlossary) {
     headwordGloss = { glossVi: fromGlossary, glossViReliable: true };
@@ -281,10 +301,11 @@ export async function enrichWordLookup(query: string): Promise<LookupParaphrase[
   const cached = getCachedLookup(cacheKey);
   if (cached?.paraphrases.length) return cached.paraphrases;
 
-  const entries = await fetchFreeDictionary(lemma);
+  const headword = toDictionaryHeadword(lemma);
+  const entries = await fetchDictionaryEntries(lemma, headword);
   if (!entries?.length) return [];
 
-  const picked = collectScoredDefinitions(entries, MAX_SENSES, lemma);
+  const picked = collectScoredDefinitions(entries, MAX_SENSES, lemma, headword);
   const primaryPos = picked[0]?.partOfSpeech ?? "word";
   const paraEns = await collectParaphrases(lemma, primaryPos);
   if (!paraEns.length) return [];
@@ -309,7 +330,8 @@ export async function enrichWordLookup(query: string): Promise<LookupParaphrase[
 }
 
 async function lookupWord(query: string): Promise<ReadingLookupResult> {
-  const lemma = normalizeLemma(query);
+  const resolved = resolveLookupForm(query);
+  const lemma = resolved?.surface ?? normalizeLemma(query);
   if (!lemma) {
     return {
       query,
@@ -321,19 +343,47 @@ async function lookupWord(query: string): Promise<ReadingLookupResult> {
     };
   }
 
-  const cacheKey = `word:${lemma}`;
-  const cached = getCachedLookup(cacheKey);
-  if (cached) return { ...cached, query };
+  const headword = resolved?.headword ?? toDictionaryHeadword(lemma);
+  const formNote = resolved?.formNote;
 
-  const headword = toDictionaryHeadword(lemma);
+  const cacheKey = `word:${lemma}:${headword}`;
+  const cached = getCachedLookup(cacheKey);
+  if (cached) return { ...cached, query, formNote: cached.formNote ?? formNote };
+
   const translateHeadwordPromise = translateViBest(headword);
-  const entries = await fetchFreeDictionary(lemma);
+  const entries = await fetchDictionaryEntries(lemma, headword);
   if (!entries?.length) {
+    const offlineGloss = glossaryGlossForLookup(lemma, headword, "word");
+    if (offlineGloss) {
+      const result: ReadingLookupResult = {
+        query,
+        kind: "word",
+        headword: headword !== lemma ? headword : undefined,
+        formNote,
+        senses: [
+          {
+            partOfSpeech: "word",
+            partOfSpeechVi: "từ",
+            glossVi: offlineGloss,
+            glossViReliable: true,
+            definitionEn: query,
+            examples: [],
+          },
+        ],
+        paraphrases: [],
+        source: "WiktionaryVI+StarDict",
+      };
+      setCachedLookup(cacheKey, result);
+      return result;
+    }
+
     const { glossVi, reliable } = pickDisplayGlossVi(query, await translateViCached(query));
     if (glossVi && glossVi !== query) {
       const result: ReadingLookupResult = {
         query,
         kind: "word",
+        headword: headword !== lemma ? headword : undefined,
+        formNote,
         senses: [
           {
             partOfSpeech: "word",
@@ -361,7 +411,12 @@ async function lookupWord(query: string): Promise<ReadingLookupResult> {
   }
 
   const pronunciation = pickPronunciations(entries[0]?.phonetics);
-  const { senses, paraphrases } = await buildSensesFromDictionary(entries, lemma, translateHeadwordPromise);
+  const { senses, paraphrases } = await buildSensesFromDictionary(
+    entries,
+    lemma,
+    headword,
+    translateHeadwordPromise,
+  );
 
   if (!senses.length) {
     return {
@@ -377,10 +432,12 @@ async function lookupWord(query: string): Promise<ReadingLookupResult> {
   const result: ReadingLookupResult = {
     query,
     kind: "word",
+    headword: headword !== lemma ? headword : undefined,
+    formNote,
     pronunciation: Object.keys(pronunciation).length ? pronunciation : undefined,
     senses,
     paraphrases,
-    source: "FreeDictionary+WiktionaryVI+Datamuse+MyMemory",
+    source: "FreeDictionary+WiktionaryVI+StarDict+Datamuse+MyMemory",
   };
   setCachedLookup(cacheKey, result);
   return result;
@@ -390,6 +447,20 @@ async function lookupPhrase(query: string, preferGoogle = false): Promise<Readin
   const cacheKey = `phrase:${query.toLowerCase()}:${preferGoogle ? "g" : "m"}`;
   const cached = getCachedLookup(cacheKey);
   if (cached) return { ...cached, query };
+
+  const curated = curatedCollocationGloss(query);
+  if (curated) {
+    const result: ReadingLookupResult = {
+      query,
+      kind: "phrase",
+      phraseGlossVi: curated,
+      senses: [],
+      paraphrases: [],
+      source: "PassageGlossary",
+    };
+    setCachedLookup(cacheKey, result);
+    return result;
+  }
 
   const { vi: glossVi, provider } = await translateViBest(query, {
     preferGoogle,

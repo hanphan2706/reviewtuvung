@@ -1,9 +1,14 @@
-/** Đưa dạng bôi đen (including, included) về headword tra từ điển (include). */
+import * as lemmatizer from "wink-lemmatizer";
+
+/** Đưa dạng bôi đen (including, built) về headword tra từ điển (include, build). */
 
 const OVERRIDES: Record<string, string> = {
   including: "include",
   included: "include",
   includes: "include",
+  built: "build",
+  breaching: "breach",
+  breached: "breach",
   wrinkled: "wrinkle",
   organized: "organize",
   organised: "organize",
@@ -27,10 +32,25 @@ const OVERRIDES: Record<string, string> = {
   changing: "change",
 };
 
+function winkLemma(word: string): string | null {
+  const w = word.toLowerCase().replace(/[^a-z'-]/g, "");
+  if (!w) return null;
+  const verb = lemmatizer.verb(w);
+  if (verb && verb !== w) return verb;
+  const noun = lemmatizer.noun(w);
+  if (noun && noun !== w) return noun;
+  const adj = lemmatizer.adjective(w);
+  if (adj && adj !== w) return adj;
+  return null;
+}
+
 export function toDictionaryHeadword(lemma: string): string {
   const w = lemma.toLowerCase().replace(/[^a-z'-]/g, "");
   if (!w) return lemma.toLowerCase();
   if (OVERRIDES[w]) return OVERRIDES[w];
+
+  const fromWink = winkLemma(w);
+  if (fromWink && fromWink !== w) return fromWink;
 
   if (w.endsWith("ing") && w.length > 5) {
     if (w.endsWith("ying")) {
@@ -55,7 +75,6 @@ export function toDictionaryHeadword(lemma: string): string {
     return `${stem}e`;
   }
 
-  // similarities → similarity (not similaritie)
   if (w.endsWith("ies") && w.length > 4) {
     return `${w.slice(0, -3)}y`;
   }

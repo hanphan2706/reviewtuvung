@@ -1,6 +1,7 @@
 import type { ReadingLookupResult } from "@/lib/reading/lookup-types";
 
-const CACHE_KEY = "reading-lookup-v1";
+/** Tăng version khi đổi pipeline tra từ — tránh sessionStorage giữ bản cũ. */
+const CACHE_KEY = "reading-lookup-v2";
 const TTL_MS = 1000 * 60 * 60 * 12;
 const MAX_ENTRIES = 120;
 

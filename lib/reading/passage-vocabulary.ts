@@ -116,6 +116,48 @@ const COMPASS_VOCAB_EXTRA_BY_ARTICLE: Record<string, PassageVocabItem[]> = {
   ],
 };
 
+function collectAllCuratedItems(): PassageVocabItem[] {
+  const out: PassageVocabItem[] = [];
+  const seen = new Set<string>();
+
+  const push = (items: PassageVocabItem[]) => {
+    for (const item of items) {
+      const key = item.term.toLowerCase().trim();
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      out.push(item);
+    }
+  };
+
+  push(Object.values(VOCAB_BY_ARTICLE).flat());
+  push(Object.values(COMPASS_VOCAB_EXTRA_BY_ARTICLE).flat());
+  push(Object.values(READING_CHALLENGE_1_VOCABULARY).flat());
+  push(Object.values(READING_CHALLENGE_2_VOCABULARY).flat());
+
+  return out;
+}
+
+/** Toàn bộ từ curated (merge vào chỉ mục offline). */
+export function listAllCuratedPassageVocab(): PassageVocabItem[] {
+  return collectAllCuratedItems();
+}
+
+const PASSAGE_GLOSSARY = (() => {
+  const map = new Map<string, string>();
+  for (const item of collectAllCuratedItems()) {
+    const key = item.term.toLowerCase().trim().replace(/\s+/g, " ");
+    if (!key) continue;
+    if (!map.has(key)) map.set(key, item.definitionVi.trim());
+  }
+  return map;
+})();
+
+/** Nghĩa VI curated theo từ/cụm (lookup). */
+export function passageVocabGlossaryGloss(term: string, _primaryPos?: string): string | null {
+  const key = term.toLowerCase().trim().replace(/\s+/g, " ");
+  return PASSAGE_GLOSSARY.get(key) ?? null;
+}
+
 export function getPassageVocabulary(
   articleId: string,
   passage?: PassageVocabInput,

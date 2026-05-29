@@ -129,7 +129,7 @@ function LookupBody({
   lookup: ReadingLookupResult;
   loading: boolean;
 }) {
-  const { pronunciation, senses, paraphrases, phraseGlossVi, error, kind } = lookup;
+  const { pronunciation, senses, paraphrases, phraseGlossVi, error, kind, formNote, headword } = lookup;
   const isTranslateOnly = phraseGlossVi && senses.length === 0 && !error;
   const showPronunciation = kind === "word" && pronunciation && (pronunciation.us || pronunciation.uk);
   const Root = "di" + "v" as "div";
@@ -154,6 +154,14 @@ function LookupBody({
           {pronunciation?.us ? <PronunciationButton label="US" data={pronunciation.us} /> : null}
           {pronunciation?.uk ? <PronunciationButton label="UK" data={pronunciation.uk} /> : null}
         </Root>
+      ) : null}
+
+      {formNote ? (
+        <p className="mb-3 text-xs leading-relaxed text-[#71717A]">{formNote}</p>
+      ) : headword && headword !== lookup.query.toLowerCase() ? (
+        <p className="mb-3 text-xs text-[#71717A]">
+          Từ gốc: <span className="font-medium text-[#1c1b1c]">{headword}</span>
+        </p>
       ) : null}
 
       {phraseGlossVi && (kind === "phrase" || isTranslateOnly) ? (

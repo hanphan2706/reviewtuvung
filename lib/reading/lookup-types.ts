@@ -32,6 +32,10 @@ export type LookupParaphrase = {
 export type ReadingLookupResult = {
   query: string;
   kind: "word" | "phrase";
+  /** Từ gốc tra từ điển khi bôi dạng biến đổi (built → build). */
+  headword?: string;
+  /** Gợi ý dạng từ (UI). */
+  formNote?: string;
   error?: string;
   pronunciation?: LookupPronunciationPair;
   senses: LookupSense[];

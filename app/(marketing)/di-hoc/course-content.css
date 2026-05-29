@@ -302,3 +302,225 @@
 .course-page .block-color-pink_background { background: rgba(250, 233, 241, 1); }
 .course-page .block-color-red_background { background: rgba(252, 233, 231, 1); }
 
+/* Pinball / Stitch-style course layout (Notion-compatible markup) */
+.course-page .course-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0.75rem 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .course-page .course-overview-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.course-page .course-overview-card {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 1rem 0.85rem;
+  text-align: center;
+  box-shadow: 0 1px 0 0 rgb(24 24 27 / 0.04);
+}
+
+.course-page .course-overview-emoji {
+  display: block;
+  font-size: 1.35rem;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.course-page .course-overview-label {
+  margin: 0 0 0.2rem;
+  padding: 0;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.course-page .course-overview-value {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.course-page .course-schedule-banner {
+  margin: 0 0 1.25rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--brand) 18%, #e4e4e7);
+  background: color-mix(in srgb, var(--brand) 4%, #fafafa);
+}
+
+.course-page .course-curriculum-accordion {
+  margin: 0.5rem 0 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.course-page .course-curriculum-item {
+  border-bottom: 1px solid var(--border);
+}
+
+.course-page .course-curriculum-item > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.85rem 0.55rem;
+  font-size: 1rem;
+}
+
+.course-page .course-curriculum-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+.course-page .course-curriculum-item > summary::after {
+  content: "▾";
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  transition: transform 0.2s ease;
+}
+
+.course-page .course-curriculum-item[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+.course-page .course-curriculum-item > summary:hover {
+  background: rgb(250 250 250);
+}
+
+.course-page .course-curriculum-item .bulleted-list {
+  margin-top: 0;
+  padding-bottom: 0.75rem;
+}
+
+.course-page .course-panel {
+  border: 1px solid var(--border);
+  background: rgb(250 250 250);
+  padding: 1rem 1rem 0.85rem;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.course-page .course-panel--entrance p {
+  padding-left: 0;
+}
+
+.course-page .column-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin: 0.65rem 0 0.25rem;
+}
+
+.course-page .column-list .column {
+  flex: 1 1 7.5rem;
+  min-width: 0;
+}
+
+.course-page .column-list p {
+  padding-left: 0;
+  margin: 0;
+}
+
+.course-page .course-panel--notes .numbered-list {
+  margin-left: 0.55rem;
+}
+
+.course-page .course-tuition-layout {
+  display: grid;
+  gap: 1.25rem;
+  margin: 0.5rem 0 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .course-page .course-tuition-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
+    align-items: start;
+  }
+}
+
+.course-page .course-tuition-benefits .bulleted-list {
+  margin-left: 0.15rem;
+}
+
+.course-page .course-pricing-card {
+  border: 1px solid color-mix(in srgb, var(--brand) 35%, #1b1b1e);
+  background: #1b1b1e;
+  color: #fff;
+  padding: 1.35rem 1.15rem;
+  text-align: center;
+}
+
+.course-page .course-pricing-label {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 0.6);
+}
+
+.course-page .course-pricing-main {
+  margin: 0;
+  padding: 0;
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.course-page .course-pricing-main span {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.course-page .course-pricing-sub {
+  margin: 0.35rem 0 0;
+  padding: 0;
+  font-size: 1.05rem;
+  color: rgb(255 255 255 / 0.82);
+}
+
+.course-page .course-pricing-note {
+  margin: 1rem 0 0;
+  padding: 0;
+  font-size: 0.78rem;
+  font-style: italic;
+  color: rgb(255 255 255 / 0.58);
+  line-height: 1.45;
+}
+
+.course-page .course-teacher-layout {
+  display: grid;
+  gap: 1.25rem;
+  margin: 0.5rem 0 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .course-page .course-teacher-layout {
+    grid-template-columns: minmax(180px, 260px) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+.course-page .course-teacher-photo {
+  margin: 0;
+}
+
+.course-page .course-teacher-photo img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border);
+  filter: grayscale(1) contrast(1.12) brightness(0.92);
+}
+
+.course-page .course-teacher-bio figure.course-teacher-profile {
+  margin-top: 0;
+}
+

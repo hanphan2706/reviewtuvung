@@ -12,6 +12,7 @@ import {
 import { Languages } from "lucide-react";
 import { MobileTranslationFab } from "@/components/reading/mobile-translation-fab";
 import { useCoarsePointer } from "@/hooks/use-coarse-pointer";
+import { useMinMdViewport } from "@/hooks/use-min-md-viewport";
 import {
   alignTranslationToParagraphs,
   prepareArticleBody,
@@ -31,6 +32,8 @@ type ArticleBodyContentProps = {
   /** Deck/hook hiển thị dưới tiêu đề — không lặp trong thân bài. */
   deckInHeader?: boolean;
 };
+
+const READING_ANCHOR_RATIO = 0.28;
 
 function ParagraphTranslationToggle({
   open,
@@ -58,6 +61,21 @@ function ParagraphTranslationToggle({
   );
 }
 
+function pickActiveParagraphIndex(
+  scrollRoot: HTMLElement,
+  paragraphEls: (HTMLDivElement | null)[],
+): number {
+  const anchorY = scrollRoot.getBoundingClientRect().top + scrollRoot.clientHeight * READING_ANCHOR_RATIO;
+  let active = 0;
+  for (let i = 0; i < paragraphEls.length; i++) {
+    const el = paragraphEls[i];
+    if (!el) continue;
+    if (el.getBoundingClientRect().top <= anchorY) active = i;
+    else break;
+  }
+  return active;
+}
+
 export function ArticleBodyContent({
   body,
   deckText = "",
@@ -72,11 +90,14 @@ export function ArticleBodyContent({
   const paragraphRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [showAllTranslationsInternal, setShowAllTranslationsInternal] = useState(false);
   const showAllTranslations = showTranslationProp ?? showAllTranslationsInternal;
+  const [floatingToggleTop, setFloatingToggleTop] = useState(0);
   const isCoarsePointer = useCoarsePointer();
+  const isMinMdViewport = useMinMdViewport();
 
   const hasTranslation = Boolean(translationParagraphs?.length);
-  const showTouchFab = hasTranslation && isCoarsePointer;
-  const showDesktopToggle = hasTranslation && !isCoarsePointer;
+  const useFloatingToggle =
+    hasTranslation && Boolean(scrollContainerRef) && !isCoarsePointer && isMinMdViewport;
+  const showTouchFab = hasTranslation && !useFloatingToggle;
 
   const { deck, paragraphs, alignedVi, quote, insertAfterIndex } = useMemo(() => {
     const prepared = prepareArticleBody(body, subheadline, deckText);
@@ -98,9 +119,42 @@ export function ArticleBodyContent({
   const showDeckInBody = Boolean(deck) && !deckInHeader;
   const slotCount = (showDeckInBody ? 1 : 0) + paragraphs.length;
 
+  const syncReadingAnchor = useCallback(() => {
+    const scrollRoot = scrollContainerRef?.current;
+    const wrapper = bodyWrapperRef.current;
+    if (!scrollRoot || !wrapper) return;
+
+    const nextActive = pickActiveParagraphIndex(scrollRoot, paragraphRefs.current);
+
+    const anchorEl = paragraphRefs.current[nextActive];
+    if (!anchorEl) return;
+    setFloatingToggleTop(anchorEl.offsetTop);
+  }, [scrollContainerRef]);
+
   useLayoutEffect(() => {
     paragraphRefs.current = paragraphRefs.current.slice(0, slotCount);
-  }, [slotCount, body]);
+    syncReadingAnchor();
+  }, [slotCount, body, syncReadingAnchor]);
+
+  useEffect(() => {
+    if (!useFloatingToggle) return;
+    const scrollRoot = scrollContainerRef?.current;
+    if (!scrollRoot) return;
+
+    syncReadingAnchor();
+    scrollRoot.addEventListener("scroll", syncReadingAnchor, { passive: true });
+    window.addEventListener("resize", syncReadingAnchor);
+
+    const ro = typeof ResizeObserver !== "undefined" ? new ResizeObserver(syncReadingAnchor) : null;
+    ro?.observe(scrollRoot);
+    if (bodyWrapperRef.current) ro?.observe(bodyWrapperRef.current);
+
+    return () => {
+      scrollRoot.removeEventListener("scroll", syncReadingAnchor);
+      window.removeEventListener("resize", syncReadingAnchor);
+      ro?.disconnect();
+    };
+  }, [useFloatingToggle, scrollContainerRef, syncReadingAnchor]);
 
   const toggleAllTranslations = useCallback(() => {
     if (onToggleTranslation) onToggleTranslation();
@@ -112,10 +166,18 @@ export function ArticleBodyContent({
   }
 
   return (
-    <div ref={bodyWrapperRef} className="relative">
-      {showDesktopToggle ? (
-        <div className="mb-6">
-          <ParagraphTranslationToggle open={showAllTranslations} onToggle={toggleAllTranslations} />
+    <div ref={bodyWrapperRef} className="relative md:overflow-visible">
+      {useFloatingToggle ? (
+        <div
+          className="pointer-events-none absolute right-full top-0 z-10 pr-5"
+          style={{
+            top: floatingToggleTop,
+            transition: "top 0.55s cubic-bezier(0.22, 1, 0.36, 1)",
+          }}
+        >
+          <div className="pointer-events-auto">
+            <ParagraphTranslationToggle open={showAllTranslations} onToggle={toggleAllTranslations} />
+          </div>
         </div>
       ) : null}
 

@@ -21,7 +21,12 @@ export function isTechnicalDefinition(text: string): boolean {
   return false;
 }
 
-export function scoreDefinition(def: DictDefinition, lemma?: string, partOfSpeech?: string): number {
+export function scoreDefinition(
+  def: DictDefinition,
+  surfaceLemma?: string,
+  partOfSpeech?: string,
+  headword?: string,
+): number {
   const en = def.definition?.trim() ?? "";
   if (!en) return -999;
   let score = 0;
@@ -30,11 +35,18 @@ export function scoreDefinition(def: DictDefinition, lemma?: string, partOfSpeec
   else if (en.length <= 110) score += 10;
   else if (en.length > MAX_DEFINITION_CHARS) score -= 40;
   if (isTechnicalDefinition(en)) score -= 80;
-  if (lemma && partOfSpeech) score += preferredPosBoost(lemma, partOfSpeech);
+  if (surfaceLemma && partOfSpeech) {
+    score += preferredPosBoost(surfaceLemma, partOfSpeech, headword ?? surfaceLemma);
+  }
   return score;
 }
 
-export function collectScoredDefinitions(entries: DictEntry[], limit: number, lemma?: string): ScoredDefinition[] {
+export function collectScoredDefinitions(
+  entries: DictEntry[],
+  limit: number,
+  surfaceLemma?: string,
+  headword?: string,
+): ScoredDefinition[] {
   const ranked: ScoredDefinition[] = [];
 
   for (const entry of entries) {
@@ -47,7 +59,7 @@ export function collectScoredDefinitions(entries: DictEntry[], limit: number, le
           partOfSpeech: pos,
           definitionEn,
           exampleEn: def.example?.trim() || undefined,
-          score: scoreDefinition(def, lemma, pos),
+          score: scoreDefinition(def, surfaceLemma, pos, headword ?? surfaceLemma),
         });
       }
     }

@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { PinballIeltsStitchContent } from "@/components/courses/pinball-ielts-stitch-content";
+import { CourseStitchContent } from "@/components/courses/course-stitch-content";
 import "material-symbols/outlined.css";
 import { LANDING } from "@/lib/landing-content";
 import { LandingSectionLink } from "@/components/landing-section-link";
+import { getCourseStitchConfig } from "@/lib/course-stitch-registry";
 import {
   getCoursePageBodyHtml,
   isStitchCourseSlug,
   isValidCourseNotionSlug,
+  type CourseNotionSlug,
 } from "@/lib/course-notion-document";
 import "../course-content.css";
 import "../course-stitch-pinball.css";
@@ -41,6 +43,10 @@ export default async function KhoaHocNotionPage({ params }: PageProps) {
   }
 
   if (isStitchCourseSlug(slug)) {
+    const stitchConfig = getCourseStitchConfig(slug as CourseNotionSlug);
+    if (!stitchConfig) {
+      notFound();
+    }
     return (
       <div className="pinball-stitch-page min-h-dvh bg-[#f8f8fa] text-[#000001]">
         <div className="pinball-stitch-page-header pt-6">
@@ -53,7 +59,7 @@ export default async function KhoaHocNotionPage({ params }: PageProps) {
             </LandingSectionLink>
           </nav>
         </div>
-        <PinballIeltsStitchContent />
+        <CourseStitchContent config={stitchConfig} />
       </div>
     );
   }

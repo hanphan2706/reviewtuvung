@@ -5,7 +5,7 @@ const SLUGS = ["general-english", "pinball-ielts", "coaching"] as const;
 export type CourseNotionSlug = (typeof SLUGS)[number];
 
 /** Khoá dùng layout Stitch (không render HTML Notion). */
-export const STITCH_COURSE_SLUGS = ["pinball-ielts"] as const;
+export const STITCH_COURSE_SLUGS = ["general-english", "pinball-ielts", "coaching"] as const;
 export type StitchCourseSlug = (typeof STITCH_COURSE_SLUGS)[number];
 
 export function isStitchCourseSlug(slug: string): slug is StitchCourseSlug {

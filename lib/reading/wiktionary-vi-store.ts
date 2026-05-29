@@ -2,19 +2,46 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { EnViWiktionaryIndex, WiktionaryViByPos } from "@/lib/reading/wiktionary-vi-types";
 
-const INDEX_PATH = join(process.cwd(), "data/dictionary/en-vi-wiktionary.json");
+const WIKI_PATH = join(process.cwd(), "data/dictionary/en-vi-wiktionary.json");
+const STARDICT_PATH = join(process.cwd(), "data/dictionary/en-vi-stardict.json");
 
-let indexCache: EnViWiktionaryIndex | null = null;
+let wikiCache: EnViWiktionaryIndex | null = null;
+let stardictCache: EnViWiktionaryIndex | null = null;
+let stardictLoadLogged = false;
 
-function loadIndex(): EnViWiktionaryIndex {
-  if (indexCache) return indexCache;
+function loadWikiIndex(): EnViWiktionaryIndex {
+  if (wikiCache) return wikiCache;
   try {
-    const raw = readFileSync(INDEX_PATH, "utf8");
-    indexCache = JSON.parse(raw) as EnViWiktionaryIndex;
+    const raw = readFileSync(WIKI_PATH, "utf8");
+    wikiCache = JSON.parse(raw) as EnViWiktionaryIndex;
   } catch {
-    indexCache = {};
+    wikiCache = {};
   }
-  return indexCache;
+  return wikiCache;
+}
+
+function loadStardictIndex(): EnViWiktionaryIndex {
+  if (stardictCache) return stardictCache;
+  try {
+    const raw = readFileSync(STARDICT_PATH, "utf8");
+    stardictCache = JSON.parse(raw) as EnViWiktionaryIndex;
+    if (process.env.NODE_ENV === "development" && !stardictLoadLogged) {
+      stardictLoadLogged = true;
+      const n = Object.keys(stardictCache).length;
+      if (n > 0) {
+        console.info(`[dictionary] StarDict offline: ${n.toLocaleString()} headwords`);
+      } else {
+        console.info("[dictionary] StarDict chưa có — chạy npm run dictionary:import-stardict");
+      }
+    }
+  } catch {
+    stardictCache = {};
+    if (process.env.NODE_ENV === "development" && !stardictLoadLogged) {
+      stardictLoadLogged = true;
+      console.info("[dictionary] StarDict chưa có — chạy npm run dictionary:import-stardict");
+    }
+  }
+  return stardictCache;
 }
 
 function normalizeLookupPos(primaryPos: string): keyof WiktionaryViByPos {
@@ -31,17 +58,15 @@ function pickGlossList(entry: WiktionaryViByPos, pos: string): string[] {
   const key = normalizeLookupPos(pos);
   const direct = entry[key];
   if (direct?.length) return direct;
-  const any = Object.values(entry).flat();
-  return any;
+  return Object.values(entry).flat();
 }
 
-/** Nghĩa VI từ chỉ mục Wiktionary đã import (kiểu từ điển, không dịch máy câu EN). */
-export function wiktionaryViGloss(
+export function pickViGlossFromIndex(
+  index: EnViWiktionaryIndex,
   lemma: string,
   primaryPos: string,
   headword?: string,
 ): string | null {
-  const index = loadIndex();
   const keys = [lemma.toLowerCase(), headword?.toLowerCase()].filter(Boolean) as string[];
 
   for (const key of keys) {
@@ -54,6 +79,17 @@ export function wiktionaryViGloss(
   return null;
 }
 
+/** Nghĩa VI từ chỉ mục Wiktionary (passage merge) rồi StarDict offline. */
+export function wiktionaryViGloss(
+  lemma: string,
+  primaryPos: string,
+  headword?: string,
+): string | null {
+  const fromWiki = pickViGlossFromIndex(loadWikiIndex(), lemma, primaryPos, headword);
+  if (fromWiki) return fromWiki;
+  return pickViGlossFromIndex(loadStardictIndex(), lemma, primaryPos, headword);
+}
+
 export function wiktionaryIndexSize(): number {
-  return Object.keys(loadIndex()).length;
+  return Object.keys(loadWikiIndex()).length;
 }

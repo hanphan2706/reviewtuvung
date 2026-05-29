@@ -1,14 +1,45 @@
+const IRREGULAR_PAST_TO_BASE: Record<string, string> = {
+  built: "build",
+  sent: "send",
+  spent: "spend",
+  meant: "mean",
+  left: "leave",
+  kept: "keep",
+  felt: "feel",
+  held: "hold",
+  sold: "sell",
+  told: "tell",
+  found: "find",
+  brought: "bring",
+  bought: "buy",
+  thought: "think",
+  taught: "teach",
+  caught: "catch",
+  fought: "fight",
+  sought: "seek",
+  wrought: "work",
+};
+
 /** Gợi ý loại từ theo hình thái (lemma) — ưu tiên sense phù hợp ngữ cảnh đọc. */
-export function preferredPosBoost(lemma: string, partOfSpeech: string): number {
+export function preferredPosBoost(lemma: string, partOfSpeech: string, headword?: string): number {
   const w = lemma.toLowerCase().replace(/[^a-z'-]/g, "");
+  const hw = (headword ?? w).toLowerCase();
   const pos = partOfSpeech.toLowerCase();
+  const isInflected = w !== hw || IRREGULAR_PAST_TO_BASE[w];
+
+  if (isInflected) {
+    if (pos === "verb") return 55;
+    if (pos === "adjective") return 50;
+    if (pos === "noun") return -25;
+  }
 
   if (w.endsWith("ed") && w.length > 4) {
     if (pos === "adjective") return 40;
     if (pos === "verb") return -20;
   }
   if (w.endsWith("ing") && w.length > 5) {
-    if (pos === "noun" || pos === "adjective") return 12;
+    if (pos === "noun") return 20;
+    if (pos === "adjective") return 12;
     if (pos === "verb") return 4;
   }
   if (w.endsWith("ly") && w.length > 4) {

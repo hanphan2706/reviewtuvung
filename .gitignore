@@ -42,6 +42,10 @@ next-env.d.ts
 
 certificates
 
+# Từ điển StarDict / Kindle — chỉ local (bản quyền + file lớn).
+/dictionaries/
+data/dictionary/en-vi-stardict.json
+
 # Tài liệu / audio bản quyền hoặc file lớn — không commit lên repo công khai.
 /materials/
 /transcript/
