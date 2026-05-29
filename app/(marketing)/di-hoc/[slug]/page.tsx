@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { PinballIeltsStitchContent } from "@/components/courses/pinball-ielts-stitch-content";
+import "material-symbols/outlined.css";
 import { LANDING } from "@/lib/landing-content";
 import { LandingSectionLink } from "@/components/landing-section-link";
-import { getCoursePageBodyHtml, isValidCourseNotionSlug } from "@/lib/course-notion-document";
+import {
+  getCoursePageBodyHtml,
+  isStitchCourseSlug,
+  isValidCourseNotionSlug,
+} from "@/lib/course-notion-document";
+import "../course-content.css";
+import "../course-stitch-pinball.css";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
@@ -31,6 +39,25 @@ export default async function KhoaHocNotionPage({ params }: PageProps) {
   if (!c) {
     notFound();
   }
+
+  if (isStitchCourseSlug(slug)) {
+    return (
+      <div className="pinball-stitch-page min-h-dvh bg-[#f8f8fa] text-[#000001]">
+        <div className="pinball-stitch-page-header pt-6">
+          <nav className="mb-2" aria-label="Breadcrumb">
+            <LandingSectionLink
+              sectionId="khoa-hoc"
+              className="text-sm font-medium text-[#4b2876] underline decoration-[#4b2876]/30 underline-offset-2 transition hover:decoration-[#4b2876]/60"
+            >
+              ← Các khoá học nổi bật
+            </LandingSectionLink>
+          </nav>
+        </div>
+        <PinballIeltsStitchContent />
+      </div>
+    );
+  }
+
   const bodyHtml = getCoursePageBodyHtml(slug);
 
   return (
@@ -44,16 +71,11 @@ export default async function KhoaHocNotionPage({ params }: PageProps) {
             ← Các khoá học nổi bật
           </LandingSectionLink>
         </nav>
-        <article
-          className="rounded-lg border border-zinc-200/90 bg-white p-4 shadow-sm ring-1 ring-zinc-950/5 sm:p-6 md:p-8"
-        >
+        <article className="rounded-lg border border-zinc-200/90 bg-white p-4 shadow-sm ring-1 ring-zinc-950/5 sm:p-6 md:p-8">
           <h1 className="mb-6 text-balance text-2xl font-semibold leading-tight tracking-[-0.03em] text-ink md:text-3xl">
             {c.title}
           </h1>
-          <div
-            className="course-page"
-            dangerouslySetInnerHTML={{ __html: bodyHtml }}
-          />
+          <div className="course-page" dangerouslySetInnerHTML={{ __html: bodyHtml }} />
         </article>
       </div>
     </div>

@@ -13,6 +13,7 @@ import {
 } from "@/lib/landing-scroll";
 import { LandingCurtainMenu } from "@/components/landing-curtain-menu";
 import { LandingFooter } from "@/components/landing-footer";
+import { LandingReadingLaunchModal } from "@/components/landing-reading-launch-modal";
 import { LandingSectionLink } from "@/components/landing-section-link";
 
 /** ~card width + `gap-3` for snap scroll. */
@@ -20,11 +21,16 @@ const CAROUSEL_STEP = 334;
 
 export function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [readingLaunchModalOpen, setReadingLaunchModalOpen] = useState(false);
   const pathname = usePathname();
 
   const closeMenu = () => {
     setMenuOpen(false);
   };
+
+  const dismissReadingLaunchModal = useCallback(() => {
+    setReadingLaunchModalOpen(false);
+  }, []);
 
   useEffect(() => {
     if (pathname !== "/") return;
@@ -40,6 +46,15 @@ export function LandingPage() {
         window.history.replaceState(null, "", `${window.location.pathname}${window.location.search}`);
       }
     });
+  }, [pathname]);
+
+  useEffect(() => {
+    if (pathname !== "/") return;
+    if (typeof window === "undefined") return;
+    const timeoutId = window.setTimeout(() => {
+      setReadingLaunchModalOpen(true);
+    }, 0);
+    return () => window.clearTimeout(timeoutId);
   }, [pathname]);
 
   const navBarMain = LANDING.nav.filter(
@@ -131,6 +146,11 @@ export function LandingPage() {
       </header>
 
       <LandingCurtainMenu open={menuOpen} onClose={closeMenu} />
+      <LandingReadingLaunchModal
+        open={readingLaunchModalOpen}
+        onClose={dismissReadingLaunchModal}
+        onExplore={dismissReadingLaunchModal}
+      />
 
       <main className="bg-white">
         <section
@@ -275,7 +295,7 @@ function CourseCarouselSection({
               {title}
             </h2>
             {subheadline ? (
-              <p className="mt-1.5 max-w-2xl text-pretty text-sm font-normal leading-relaxed text-ink-muted sm:text-base md:max-w-3xl md:text-lg">
+              <p className="mt-1.5 text-pretty text-sm font-normal leading-relaxed text-ink-muted sm:text-base md:text-lg lg:max-w-none">
                 {subheadline}
               </p>
             ) : null}
@@ -329,11 +349,13 @@ function CourseCarouselSection({
                   priority={id === "khoa-hoc" && c.slug === "general-english"}
                 />
               </div>
-              <div className="flex min-h-0 flex-1 flex-col items-center gap-2 px-5 pb-4 pt-3 text-center sm:px-6 sm:pb-4 sm:pt-3.5 md:px-7">
-                <p className="my-auto line-clamp-5 text-pretty font-serif text-[15px] font-medium leading-snug text-ink-muted sm:text-base sm:leading-snug">
-                  &ldquo;{c.summary}&rdquo;
-                </p>
-                <p className="mt-auto w-full border-t border-zinc-200/80 pt-2.5 text-sm font-semibold leading-snug sm:pt-3">
+              <div className="flex min-h-0 flex-1 flex-col items-center px-5 pb-5 pt-4 text-center sm:px-6 sm:pb-5 sm:pt-4.5 md:px-7">
+                <div className="flex min-h-0 flex-1 items-center justify-center pt-2 pb-4 sm:pt-3 sm:pb-5">
+                  <p className="line-clamp-5 text-pretty font-serif text-[15px] font-medium leading-snug text-ink-muted sm:text-base sm:leading-snug">
+                    &ldquo;{c.summary}&rdquo;
+                  </p>
+                </div>
+                <p className="w-full border-t border-zinc-200/80 pt-2.5 text-sm font-semibold leading-snug sm:pt-3">
                   {c.priceHint}
                 </p>
               </div>

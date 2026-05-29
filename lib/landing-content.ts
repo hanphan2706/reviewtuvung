@@ -61,7 +61,7 @@ export const LANDING = {
 
   /** Thẻ CTA cuối carousel (như khối coral trong tham chiếu, dùng màu tím). */
   courseCarouselCta: {
-    title: "Không biết mình phù hợp với khóa nào?",
+    title: "Không biết phù hợp với khóa nào?",
     subtitle: "Nhắn mình để kiểm tra trình độ miễn phí và giải đáp thắc mắc nha.",
     buttonLabel: "Liên hệ",
     href: "#lien-he",

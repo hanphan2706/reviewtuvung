@@ -1,0 +1,969 @@
+@import "material-symbols/outlined.css";
+
+/* Stitch design tokens — course info/DESIGN.md + code.html */
+@theme {
+  --color-accent-purple: #4b2876;
+  --color-surface-border: #e4e4e7;
+  --color-on-surface: #000001;
+  --color-on-surface-variant: #47464b;
+  --color-stitch-secondary: #5d5e60;
+  --color-primary: #000001;
+  --color-surface-container-low: #f7f3f2;
+  --color-surface-container-high: #ebe7e7;
+  --color-stitch-surface: #ffffff;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-text-muted: #71717a;
+  --spacing-container-padding: 24px;
+}
+
+@utility font-body-md {
+  font-family: var(--font-sans);
+}
+
+@utility font-body-lg {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@utility font-label-caps {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+@utility font-headline-md {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+@utility font-headline-sm {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+@utility font-display-lg {
+  font-family: var(--font-serif);
+}
+
+@utility text-display-lg {
+  font-size: clamp(2rem, 1.4rem + 2vw, 2.5rem);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* Hero — ảnh full width cột nội dung, chữ overlay + scrim 50% */
+.pinball-stitch-hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Pill badge — dùng chung hero "Khóa học 2026" + banner lịch học */
+.pinball-stitch-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius: 9999px;
+  padding: 0.35rem 1rem;
+  background-color: color-mix(in srgb, #4b2876 10%, #ffffff);
+  color: #4b2876;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+}
+
+.pinball-stitch-pill .material-symbols-outlined {
+  font-size: 1rem;
+  color: inherit;
+}
+
+.pinball-stitch-hero__badge {
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.pinball-stitch-page {
+  overflow-x: clip;
+}
+
+.pinball-stitch-page-header {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 5vw, var(--spacing-container-padding, 24px));
+}
+
+.pinball-stitch-hero-banner {
+  position: relative;
+  container-type: size;
+  width: 100%;
+  max-width: 100%;
+  height: clamp(15rem, 42vw, 22rem);
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #1a1a1c;
+  isolation: isolate;
+}
+
+/* ảnh portrait xoay 90° — phủ đủ cả ngang lẫn dọc khung hero */
+.pinball-stitch-hero-banner__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  width: 100cqh;
+  height: 100cqi;
+  min-width: 100cqh;
+  min-height: 100cqi;
+  object-fit: cover;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.pinball-stitch-hero-banner__scrim {
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 1 / 50%);
+  pointer-events: none;
+}
+
+.pinball-stitch-hero-banner__content {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+}
+
+.pinball-stitch-hero__badge--on-image {
+  background: rgb(255 255 255 / 14%);
+  border: 1px solid rgb(255 255 255 / 32%);
+  color: #fff;
+}
+
+.pinball-stitch-hero-banner__content .pinball-stitch-hero__title {
+  margin: 0;
+  max-width: 100%;
+  font-family: var(--pinball-serif);
+  font-size: clamp(1.75rem, 1.1rem + 2.5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.pinball-stitch-hero-banner__content .pinball-stitch-hero__subtitle {
+  margin: 0.5rem 0 0;
+  max-width: 42rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6;
+  color: rgb(255 255 255 / 92%);
+}
+
+/* Noto Serif (tiêu đề) + Helvetica (nội dung phụ) */
+.pinball-stitch-root {
+  --pinball-ink: #000001;
+  --pinball-serif: var(--font-noto-serif), var(--font-serif), Georgia, "Noto Serif", serif;
+  --pinball-muted: #6f6f72;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  padding-inline: clamp(1rem, 5vw, var(--spacing-container-padding, 24px));
+  overflow-x: clip;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--pinball-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.pinball-stitch-root h1,
+.pinball-stitch-root h2,
+.pinball-stitch-root h3,
+.pinball-stitch-root h4,
+.pinball-stitch-root .font-headline-md,
+.pinball-stitch-root .font-headline-sm,
+.pinball-stitch-root .font-display-lg,
+.pinball-stitch-root .pinball-stitch-section-title {
+  font-family: var(--pinball-serif);
+  color: var(--pinball-ink);
+}
+
+.pinball-stitch-root .ps-text-secondary,
+.pinball-stitch-root .ps-text-variant {
+  color: var(--pinball-muted);
+}
+
+.pinball-stitch-root .ps-text-primary {
+  color: var(--pinball-ink);
+}
+
+.pinball-stitch-root .ps-accent {
+  color: #4b2876;
+}
+
+/* Kiểm tra đầu vào — text + 3 thẻ link */
+.pinball-stitch-entrance__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  font-family: var(--pinball-serif);
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--pinball-ink);
+}
+
+.pinball-stitch-entrance__text {
+  margin: 0.75rem 0 0;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--pinball-muted);
+}
+
+.pinball-stitch-entrance__text p {
+  margin: 0;
+}
+
+.pinball-stitch-entrance__text p + p {
+  margin-top: 0.5rem;
+}
+
+.pinball-stitch-entrance__options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.625rem;
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .pinball-stitch-entrance__options {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
+}
+
+.pinball-stitch-entrance-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 3.25rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: var(--pinball-ink);
+  text-decoration: none;
+  box-shadow:
+    0 1px 2px 0 rgb(0 0 0 / 0.05),
+    0 0 0 1px rgb(9 9 11 / 0.05);
+  transition: background-color 0.2s ease;
+}
+
+.pinball-stitch-entrance-option:hover {
+  background-color: #f4f4f5;
+}
+
+.pinball-stitch-entrance-option__icon {
+  color: #4b2876;
+}
+
+.pinball-stitch-entrance-option__label {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.pinball-stitch-entrance-option__arrow {
+  flex-shrink: 0;
+  width: 0.875rem;
+  height: 0.875rem;
+  color: var(--pinball-ink);
+}
+
+.pinball-stitch-root .material-symbols-outlined {
+  font-size: 24px;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.pinball-stitch-root .material-symbols-outlined.ps-icon-lg {
+  font-size: 1.875rem;
+}
+
+.pinball-stitch-root .material-symbols-outlined.ps-icon-sm {
+  font-size: 0.875rem;
+}
+
+.pinball-stitch-root .pinball-stitch-entrance__title .material-symbols-outlined {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  font-size: 1.125rem;
+  line-height: 1;
+  flex-shrink: 0;
+  vertical-align: unset;
+}
+
+.pinball-stitch-root .pinball-stitch-entrance-option__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.125rem;
+  height: 1.125rem;
+  font-size: 1.125rem;
+  line-height: 1;
+  flex-shrink: 0;
+  vertical-align: unset;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
+}
+
+.bento-card {
+  background-color: #fff;
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.pinball-stitch-root .academic-link {
+  transition: all 0.2s ease;
+  color: var(--pinball-ink);
+  text-decoration: none;
+}
+
+.pinball-stitch-root .academic-link:hover {
+  color: #4b2876;
+  text-decoration: underline;
+}
+
+/* Tiêu đề section — lớn, đậm, không gạch dưới */
+.pinball-stitch-section-title {
+  margin: 0 0 1rem;
+  padding: 0;
+  border: 0;
+  font-family: var(--pinball-serif);
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--pinball-ink);
+}
+
+.pinball-stitch-overview {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  /* Khớp khoảng title → dòng đầu (accordion có padding-top 0.875rem trên trigger) */
+  margin-top: 0.875rem;
+}
+
+.pinball-stitch-overview__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.625rem;
+}
+
+@media (min-width: 640px) {
+  .pinball-stitch-overview__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+.pinball-stitch-overview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.375rem;
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 0.75rem 0.625rem;
+  text-align: center;
+  cursor: default;
+  box-shadow:
+    0 1px 2px 0 rgb(0 0 0 / 0.05),
+    0 0 0 1px rgb(9 9 11 / 0.05);
+  transition:
+    transform 0.3s ease-out,
+    box-shadow 0.3s ease-out;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .pinball-stitch-overview-card:hover {
+    transform: scale(1.025);
+    box-shadow:
+      0 4px 6px -1px rgb(0 0 0 / 0.1),
+      0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+}
+
+.pinball-stitch-overview-card .material-symbols-outlined {
+  font-size: 1.25rem;
+  color: #4b2876;
+}
+
+.pinball-stitch-overview-card__label {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--pinball-muted);
+}
+
+.pinball-stitch-overview-card__value {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--pinball-ink);
+}
+
+.pinball-stitch-pill.pinball-stitch-schedule {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0;
+  border-radius: 8px;
+}
+
+.pinball-stitch-pill.pinball-stitch-schedule .material-symbols-outlined {
+  font-size: 15px;
+}
+
+.pinball-stitch-section {
+  margin: 0;
+  display: flow-root;
+}
+
+.pinball-stitch-section--last {
+  margin-bottom: 0;
+}
+
+/* Khớp khoảng title → khung như .pinball-stitch-overview */
+.pinball-stitch-curriculum {
+  margin-top: 0.875rem;
+}
+
+/* Accordion — từng thẻ riêng + icon (Stitch) */
+.pinball-stitch-accordion {
+  --accordion-pad-x: 1.25rem;
+  --accordion-icon-size: 1.25rem;
+  --accordion-gap: 0.75rem;
+  --accordion-trigger-min-h: 3.5rem;
+  --accordion-content-indent: calc(
+    var(--accordion-pad-x) + var(--accordion-icon-size) + var(--accordion-gap)
+  );
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pinball-stitch-accordion__item {
+  overflow: hidden;
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow:
+    0 1px 2px 0 rgb(0 0 0 / 0.05),
+    0 0 0 1px rgb(9 9 11 / 0.05);
+}
+
+.pinball-stitch-accordion__trigger {
+  display: flex;
+  width: 100%;
+  min-height: var(--accordion-trigger-min-h);
+  align-items: center;
+  gap: var(--accordion-gap);
+  border: 0;
+  background: transparent;
+  padding: 0.875rem var(--accordion-pad-x);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pinball-stitch-accordion__trigger:hover {
+  background-color: #f4f4f5;
+}
+
+.pinball-stitch-accordion__icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: var(--accordion-icon-size);
+  height: var(--accordion-icon-size);
+  font-size: var(--accordion-icon-size);
+  line-height: 1;
+  color: #4b2876;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.pinball-stitch-root .pinball-stitch-accordion__icon {
+  font-size: var(--accordion-icon-size);
+}
+
+.pinball-stitch-accordion__title {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: var(--accordion-icon-size);
+  color: var(--pinball-ink);
+}
+
+.pinball-stitch-accordion__chevron {
+  height: 1.125rem;
+  width: 1.125rem;
+  flex-shrink: 0;
+  color: #47464b;
+  transition: transform 0.3s ease-out;
+}
+
+.pinball-stitch-accordion__item.is-open .pinball-stitch-accordion__chevron {
+  color: #4b2876;
+}
+
+.pinball-stitch-accordion__chevron.is-open {
+  transform: rotate(180deg);
+}
+
+.pinball-stitch-accordion__panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.pinball-stitch-accordion__panel.is-open {
+  grid-template-rows: 1fr;
+}
+
+.pinball-stitch-accordion__panel-inner {
+  overflow: hidden;
+}
+
+.pinball-stitch-accordion__item.is-open .pinball-stitch-accordion__panel-inner {
+  border-top: 1px solid rgb(228 228 231 / 0.85);
+}
+
+.pinball-stitch-accordion__list {
+  margin: 0;
+  padding: 0.75rem var(--accordion-pad-x) 1.25rem var(--accordion-content-indent);
+  list-style: disc;
+  list-style-position: outside;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.625;
+  color: #47464b;
+}
+
+.pinball-stitch-accordion__list li {
+  margin: 0.35em 0;
+  padding-left: 0.25rem;
+}
+
+.pinball-stitch-accordion__list li::marker {
+  color: #47464b;
+}
+
+.pinball-stitch-accordion__list li strong {
+  font-weight: 600;
+  color: var(--pinball-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pinball-stitch-accordion__panel {
+    transition: none;
+  }
+
+  .pinball-stitch-accordion__chevron {
+    transition: none;
+  }
+}
+
+/* Quyền lợi — accordion giống Từ vựng (divide-y, không khung) */
+.pinball-stitch-tuition-accordion__trigger {
+  border: 0;
+  background: transparent;
+  font-size: 15px;
+  color: var(--pinball-ink);
+}
+
+.pinball-stitch-tuition-accordion__body {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.625;
+  color: var(--pinball-muted);
+}
+
+.pinball-stitch-tuition-accordion__body .bulleted-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.pinball-stitch-tuition-accordion__body .bulleted-list li {
+  margin: 0.35em 0;
+}
+
+.pinball-stitch-tuition-accordion__body ul.bulleted-list,
+.pinball-stitch-tuition-accordion__body ul.bulleted-list li,
+.pinball-stitch-tuition-accordion__body ul.bulleted-list em,
+.pinball-stitch-tuition-accordion__body ul.bulleted-list mark,
+.pinball-stitch-tuition-accordion__body ul.bulleted-list mark strong,
+.pinball-stitch-tuition-accordion__body ul.bulleted-list strong {
+  color: var(--pinball-muted);
+  background: transparent;
+}
+
+.pinball-stitch-tuition-accordion__body a {
+  color: #4b2876;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.pinball-stitch-tuition-accordion__body a:hover {
+  color: #3a1f5c;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pinball-stitch-tuition-accordion__panel {
+    transition: none;
+  }
+}
+
+/* Cột học phí: cao theo accordion nhưng thẻ đen không giãn — căn giữa thẻ trong cột */
+@media (min-width: 768px) {
+  .pinball-stitch-tuition-layout {
+    align-items: stretch;
+  }
+
+  .pinball-stitch-pricing-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Thẻ học phí đen — hẹp hơn cột, cao vừa nội dung */
+.pinball-stitch-pricing-card {
+  display: flex;
+  width: 100%;
+  max-width: 19.5rem;
+  margin-inline: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.875rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #000000;
+  padding: 1.35rem 1.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.pinball-stitch-pricing-card .pinball-stitch-pricing-amount {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.pinball-stitch-pricing-card .pinball-stitch-pricing-amount span {
+  font-size: 0.9375rem;
+  font-weight: 400;
+}
+
+.pinball-stitch-pricing-card .pinball-stitch-pricing-note {
+  margin: 0;
+  max-width: 16rem;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.45;
+  color: rgb(255 255 255 / 0.65);
+}
+
+.pinball-stitch-pricing-card .pinball-stitch-pricing-cta {
+  display: inline-block;
+  width: auto;
+  min-width: 9rem;
+  margin-top: 0.25rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffffff;
+  padding: 0.625rem 1.125rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--pinball-ink);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.pinball-stitch-pricing-card .pinball-stitch-pricing-cta:hover {
+  background-color: #f7f3f2;
+}
+
+/* Lưu ý quan trọng — bento-card + 4 section (2×2) */
+.pinball-stitch-notes-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pinball-stitch-notes-intro {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.625;
+  color: var(--pinball-muted);
+}
+
+.pinball-stitch-notes-intro strong {
+  color: var(--pinball-ink);
+  font-weight: 600;
+}
+
+.pinball-stitch-notes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .pinball-stitch-notes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+    row-gap: 1.75rem;
+  }
+}
+
+.pinball-stitch-notes-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pinball-stitch-notes-section-title {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #4b2876;
+}
+
+.pinball-stitch-notes-section-body {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.625;
+  color: var(--pinball-muted);
+}
+
+.pinball-stitch-notes-section-body p {
+  margin: 0;
+}
+
+/* Profile giáo viên */
+.pinball-stitch-teacher-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.pinball-stitch-teacher-photo {
+  flex-shrink: 0;
+  width: 5.5rem;
+}
+
+.pinball-stitch-teacher-photo__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .pinball-stitch-teacher-layout {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1.75rem;
+  }
+
+  .pinball-stitch-teacher-photo {
+    grid-column: span 4;
+    width: auto;
+  }
+
+  .pinball-stitch-teacher-photo__img {
+    width: 100%;
+    aspect-ratio: auto;
+    border-radius: 12px;
+  }
+
+  .pinball-stitch-teacher-content {
+    grid-column: span 8;
+  }
+}
+
+.pinball-stitch-teacher-content {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pinball-stitch-teacher-greeting {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--pinball-ink);
+}
+
+.pinball-stitch-teacher-scores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .pinball-stitch-teacher-scores {
+    gap: 1rem;
+  }
+}
+
+.pinball-stitch-teacher-score {
+  border: none;
+  border-radius: 8px;
+  background-color: color-mix(in srgb, #4b2876 10%, #ffffff);
+  padding: 0.3rem 0.65rem;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #4b2876;
+}
+
+.pinball-stitch-teacher-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.625;
+  color: var(--pinball-muted);
+}
+
+.pinball-stitch-teacher-body p {
+  margin: 0;
+}
+
+.pinball-stitch-teacher-body strong {
+  color: var(--pinball-ink);
+  font-weight: 600;
+}
+
+.pinball-stitch-teacher-body--intro,
+.pinball-stitch-teacher-body--intro p {
+  font-weight: 600;
+  font-style: normal;
+  color: var(--pinball-muted);
+}
+
+.pinball-stitch-teacher-body--intro strong {
+  font-weight: inherit;
+  color: inherit;
+}
+
+.pinball-stitch-teacher-links {
+  margin: 0.25rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pinball-stitch-teacher-links li {
+  margin: 0;
+}
+
+.pinball-stitch-teacher-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #4b2876;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.pinball-stitch-teacher-link:hover {
+  color: #3a1f5c;
+}
+
+.pinball-stitch-teacher-link__icon {
+  font-size: 1.125rem;
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 20;
+  color: #4b2876;
+  text-decoration: none;
+}
+
+.pinball-stitch-teacher-link__label {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.pinball-stitch-teacher-link:hover .pinball-stitch-teacher-link__label {
+  color: #3a1f5c;
+}
+

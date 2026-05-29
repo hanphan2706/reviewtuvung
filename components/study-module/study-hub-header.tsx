@@ -1,0 +1,207 @@
+"use client";
+
+import { useState } from "react";
+import type { ReactNode } from "react";
+import Link from "next/link";
+import { ChevronDown } from "lucide-react";
+import { StudyHubBackLink } from "@/components/study-module/study-hub-back-link";
+import { StudyHubCurtainMenu } from "@/components/study-module/study-hub-curtain-menu";
+import { useStudyHubDesktopNav } from "@/hooks/use-study-hub-desktop-nav";
+import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
+import {
+  READING_DIFFICULTY_NAV,
+  READING_HUB_HREF,
+  READING_LIBRARY_ALL_HREF,
+  READING_SOURCE_NAV,
+  READING_TOPIC_NAV,
+  type ReadingLibraryNavItem,
+} from "@/lib/reading/library-nav";
+import {
+  studyHubContainerClass,
+  studyHubHeaderBarClass,
+  studyHubHeaderTextClass,
+} from "@/components/study-module/study-hub-shell";
+
+/** Cùng line box cho tiêu đề, dropdown và link — tránh lệch hàng. */
+const headerNavItemClass = `inline-flex items-center gap-1 leading-none ${studyHubHeaderTextClass}`;
+
+/** Menu ngang đầy đủ — chỉ từ xl trở lên; tablet / nửa màn hình dùng curtain. */
+const desktopNavClass = "hidden xl:flex min-w-0 flex-nowrap items-center gap-3 2xl:gap-4";
+
+type HubDropdownItem = string | ReadingLibraryNavItem;
+
+function HubDropdown({
+  label,
+  items,
+}: {
+  label: string;
+  items: readonly HubDropdownItem[];
+}) {
+  return (
+    <div className="group relative shrink-0">
+      <button
+        type="button"
+        className={`${headerNavItemClass} transition-opacity hover:opacity-70`}
+        aria-haspopup="menu"
+      >
+        <span>{label}</span>
+        <ChevronDown className="size-4 shrink-0 opacity-80" aria-hidden />
+      </button>
+      <div
+        className="pointer-events-none absolute left-0 top-full z-50 w-56 pt-2 opacity-0 transition-opacity duration-150 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100"
+        role="menu"
+      >
+        <div className="rounded-lg border border-[#E4E4E7] bg-white py-2 shadow-lg">
+          {items.map((item) => {
+            if (typeof item === "string") {
+              return (
+                <span
+                  key={item}
+                  className="block cursor-default px-4 py-2 text-sm text-[#47464b] hover:bg-zinc-50"
+                >
+                  {item}
+                </span>
+              );
+            }
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                role="menuitem"
+                className="block px-4 py-2 text-sm text-[#47464b] transition hover:bg-zinc-50"
+              >
+                {item.label}
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function HamburgerButton({ open, onOpen }: { open: boolean; onOpen: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onOpen}
+      className="inline-flex shrink-0 cursor-pointer items-center justify-center p-1.5 text-ink transition hover:cursor-pointer hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
+      aria-expanded={open}
+      aria-haspopup="dialog"
+      aria-label="Mở menu"
+    >
+      <span className="flex w-[22px] flex-col justify-center gap-[5px]" aria-hidden>
+        <span className="h-0.5 w-full rounded-full bg-zinc-900" />
+        <span className="h-0.5 w-full rounded-full bg-zinc-900" />
+      </span>
+    </button>
+  );
+}
+
+export function StudyHubHeader({
+  title,
+  center,
+  showListeningFilters = false,
+  showReadingFilters = false,
+  onTitleClick,
+  isLoggedIn,
+  userProfile = null,
+  supabaseConfigured = true,
+  signInNext,
+}: {
+  title: string;
+  center?: ReactNode;
+  showListeningFilters?: boolean;
+  showReadingFilters?: boolean;
+  /** Khi đang session trên cùng URL hub — reset về trang chủ Luyện đọc. */
+  onTitleClick?: () => void;
+  isLoggedIn: boolean;
+  userProfile?: StudyHubUserProfile | null;
+  supabaseConfigured?: boolean;
+  signInNext?: string;
+}) {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
+  const desktopNav = useStudyHubDesktopNav();
+  const readingNavInMenu = showReadingFilters && !desktopNav;
+  const listeningNavInMenu = showListeningFilters && !desktopNav;
+
+  return (
+    <>
+      <header className="sticky top-0 z-50 w-full overflow-x-clip bg-white shadow-[0_1px_0_0_rgb(228_228_231_/_0.95)]">
+        <div className={`${studyHubHeaderBarClass} ${studyHubContainerClass}`}>
+          <div className="flex w-full min-w-0 items-center gap-2 sm:gap-3">
+            <StudyHubBackLink />
+
+            <div className="flex min-h-0 min-w-0 flex-1 items-center gap-2 sm:gap-3 md:gap-4">
+              {showListeningFilters ? (
+                <>
+                  <h1
+                    className={`m-0 flex shrink-0 items-center uppercase tracking-[-0.02em] leading-none ${studyHubHeaderTextClass}`}
+                  >
+                    {title}
+                  </h1>
+                  <nav className={`${desktopNavClass}`} aria-label="Bộ lọc luyện nghe">
+                    <HubDropdown label="Tất cả chất giọng" items={["Anh - Anh", "Anh - Mỹ", "Anh - Úc"]} />
+                    <HubDropdown label="Độ khó" items={["Cơ bản", "Trung bình", "Nâng cao"]} />
+                  </nav>
+                </>
+              ) : showReadingFilters ? (
+                <>
+                  <h1 className="m-0 flex min-w-0 shrink-0 items-center leading-none">
+                    <Link
+                      href={READING_HUB_HREF}
+                      onClick={onTitleClick}
+                      className={`${headerNavItemClass} truncate uppercase tracking-[-0.02em] transition-opacity hover:opacity-70`}
+                    >
+                      {title}
+                    </Link>
+                  </h1>
+                  <nav className={`${desktopNavClass}`} aria-label="Luyện đọc">
+                    <HubDropdown label="Nguồn bài đọc" items={READING_SOURCE_NAV} />
+                    <HubDropdown label="Độ khó" items={READING_DIFFICULTY_NAV} />
+                    <HubDropdown label="Bài đọc theo chủ đề" items={READING_TOPIC_NAV} />
+                    <Link
+                      href={READING_LIBRARY_ALL_HREF}
+                      className={`${headerNavItemClass} shrink-0 whitespace-nowrap transition-opacity hover:opacity-70`}
+                    >
+                      Toàn bộ thư viện bài đọc
+                    </Link>
+                  </nav>
+                </>
+              ) : (
+                <h1
+                  className={`m-0 flex min-w-0 shrink-0 items-center truncate uppercase tracking-[-0.02em] leading-none ${studyHubHeaderTextClass}`}
+                >
+                  {title}
+                </h1>
+              )}
+
+              {!showListeningFilters && !showReadingFilters && center ? (
+                <nav className={`${desktopNavClass}`} aria-label="Điều hướng luyện đọc">
+                  {center}
+                </nav>
+              ) : null}
+
+              <div className="ml-auto flex shrink-0 items-center pl-1">
+                <HamburgerButton open={menuOpen} onOpen={() => setMenuOpen(true)} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <StudyHubCurtainMenu
+        open={menuOpen}
+        onClose={closeMenu}
+        pageTitle={title}
+        showReadingNav={readingNavInMenu}
+        showListeningNav={listeningNavInMenu}
+        isLoggedIn={isLoggedIn}
+        userProfile={userProfile}
+        supabaseConfigured={supabaseConfigured}
+        signInNext={signInNext}
+      />
+    </>
+  );
+}

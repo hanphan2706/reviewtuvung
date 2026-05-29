@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANTHICHTUHOC | Luyện đọc IELTS</title>
+<link href="https://api.fontshare.com/v2/css?f[]=garet@400,500,600,700,1&display=swap" rel="stylesheet">
+<script>
+(function(){
+  try{
+    var p=new URLSearchParams(location.search);
+    if(p.get('requireLogin')==='1')return;
+    if(p.get('skipLogin')==='1'){document.documentElement.classList.add('exam-skip-login');return;}
+    if(/^cam20-test[1234]$/i.test((p.get('pilot')||'').trim())){document.documentElement.classList.add('exam-skip-login');return;}
+  }catch(e){}
+})();
+</script>
+<style>
+:root{
+  --exam-chrome-bg:#fff;
+  --exam-chrome-surface:#f5f5f7;
+  --exam-chrome-border:#E4E4E7;
+  --exam-chrome-text:#1c1b1c;
+  --exam-chrome-muted:#47464b;
+  --exam-chrome-subtle:#71717A;
+  --exam-header-bg:#000001;
+  --exam-header-text:#f7faf8;
+  --exam-header-muted:rgba(247,250,248,.78);
+  --exam-header-border:rgba(255,255,255,.14);
+  --exam-header-surface:rgba(255,255,255,.1);
+  --exam-submit-bg:#1c1b1c;
+  --exam-submit-hover:#000001;
+  --exam-question-ink:#1c1b1c;
+  --exam-purple:#4b2876;
+  --exam-purple-dark:#3a1f5c;
+  --exam-purple-soft:#ebe6f4;
+  --exam-purple-border:#d4c8e4;
+  --exam-passage-bg:#fff;
+  --exam-questions-bg:#fff;
+  --exam-content-text:#1c1b1c;
+}
+html.exam-skip-login #login-screen{display:none!important}
+html.exam-skip-login #exam-screen{display:flex!important;flex-direction:column;height:100vh;overflow:hidden}
+*{box-sizing:border-box;margin:0;padding:0}
+/* Garet for top bar, login brand, passage titles, success title (loaded from Fontshare — no upload needed) */
+#topbar,.tb-title,.login-logo .org-name,.login-title h1,.p-title,.sumtitle,.stitle{font-family:'Garet',system-ui,sans-serif;}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--exam-chrome-surface);color:var(--exam-chrome-text);font-size:14px}
+
+/* ===== LOGIN ===== */
+#login-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--exam-chrome-surface)}
+.login-card{background:var(--exam-chrome-bg);border:1px solid var(--exam-chrome-border);border-radius:14px;box-shadow:0 6px 32px rgba(28,27,28,.08);padding:44px 52px;width:440px;max-width:95vw}
+.login-logo{text-align:center;margin-bottom:22px}
+.login-logo .org-name{font-size:22px;font-weight:800;color:var(--exam-chrome-text);letter-spacing:1.5px;line-height:1.35}
+.login-title{text-align:center;margin-bottom:28px}
+.login-title h1{font-size:21px;font-weight:700;color:var(--exam-chrome-text)}
+.login-title p{font-size:13px;color:var(--exam-chrome-muted);margin-top:5px}
+.form-group{margin-bottom:18px}
+.form-group label{display:block;font-size:12px;font-weight:700;color:var(--exam-chrome-muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em}
+.form-group input{width:100%;padding:11px 14px;border:1.5px solid var(--exam-chrome-border);border-radius:8px;font-size:14px;outline:none;transition:border-color .2s;color:var(--exam-chrome-text);background:#fff}
+.form-group input:focus{border-color:var(--exam-chrome-text)}
+.start-btn{width:100%;padding:13px;background:var(--exam-submit-bg);color:#fff;border:none;border-radius:9px;font-size:15px;font-weight:700;cursor:pointer;transition:background .2s;margin-top:6px}
+.start-btn:hover{background:var(--exam-submit-hover)}
+.login-note{font-size:11.5px;color:var(--exam-chrome-subtle);text-align:center;margin-top:16px;line-height:1.6}
+
+/* ===== EXAM SHELL (header = #000001; body chrome light; content keeps purple accents) ===== */
+#exam-screen{display:none;flex-direction:column;height:100vh;overflow:hidden;--exam-zoom:1;background:var(--exam-chrome-surface)}
+#topbar{background:var(--exam-header-bg);color:var(--exam-header-text);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;gap:12px;border-bottom:1px solid var(--exam-header-border);box-shadow:0 1px 0 rgb(0 0 0 / 0.12)}
+.tb-left{display:flex;align-items:center;gap:14px}
+.tb-back{
+  display:inline-flex;align-items:center;flex-shrink:0;
+  font-size:13px;font-weight:600;line-height:1.25;color:var(--exam-header-text);
+  text-decoration:none;white-space:nowrap;
+  transition:opacity .15s,color .15s;
+}
+.tb-back:hover{opacity:1;color:var(--exam-header-muted)}
+.tb-title{font-size:13px;color:var(--exam-header-muted);white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.tb-right{display:flex;align-items:center;gap:14px;flex-shrink:0}
+#student-badge{font-size:12px;text-align:right;line-height:1.5;color:var(--exam-header-muted)}
+
+/* Timer + zoom on dark header */
+#timer-box{
+  display:flex;align-items:center;justify-content:center;
+  min-width:78px;min-height:34px;padding:7px 14px;
+  font-size:15px;font-weight:500;letter-spacing:2.5px;color:var(--exam-header-text);
+  font-variant-numeric:tabular-nums;
+  text-align:center;line-height:1;
+  border:1px solid var(--exam-header-border);
+  border-radius:9px;
+  background:var(--exam-header-surface);
+}
+#timer-box.warn{
+  background:rgba(255,235,238,.95);
+  border-color:#e57373;
+  color:#b71c1c;
+}
+
+.zoom-ctl{
+  display:flex;align-items:center;gap:5px;flex-shrink:0;
+  min-height:34px;padding:4px 7px;
+  border:1px solid var(--exam-header-border);
+  border-radius:9px;
+  background:var(--exam-header-surface);
+}
+.zoom-btn{
+  display:flex;align-items:center;justify-content:center;
+  width:26px;height:26px;flex-shrink:0;padding:0;
+  border:1px solid var(--exam-header-border);
+  border-radius:7px;
+  background:rgba(255,255,255,.06);
+  color:var(--exam-header-text);font-size:14px;font-weight:400;line-height:1;cursor:pointer;font-family:inherit;
+}
+.zoom-btn:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.22)}
+.zoom-btn:active{transform:scale(.96)}
+.zoom-pct{
+  font-size:11px;font-weight:400;min-width:37px;text-align:center;
+  color:var(--exam-header-muted);padding:0 3px;letter-spacing:.02em;
+}
+
+.ptab-bar{background:var(--exam-chrome-bg);border-bottom:1px solid var(--exam-chrome-border);display:flex;flex-shrink:0}
+.ptab{padding:10px 26px;font-size:13px;font-weight:600;color:var(--exam-chrome-subtle);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;transition:all .15s}
+.ptab:hover{color:var(--exam-chrome-text);background:var(--exam-chrome-surface)}
+.ptab.active{color:var(--exam-chrome-text);border-bottom-color:var(--exam-chrome-text)}
+
+#prog-wrap{height:4px;background:var(--exam-chrome-border);flex-shrink:0}
+#prog-bar{height:4px;background:var(--exam-chrome-text);width:0%;transition:width .3s}
+#track-wrap{background:transparent;padding:0;flex:1;min-width:0}
+.track-groups{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:flex-start}
+.track-grp{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+.track-label{font-size:10px;font-weight:800;color:var(--exam-chrome-muted);text-transform:uppercase;letter-spacing:.04em;flex-shrink:0}
+.track-grid{display:flex;flex-wrap:wrap;gap:3px}
+.qt{min-width:22px;height:22px;padding:0;border:1.5px solid var(--exam-chrome-border);border-radius:4px;background:var(--exam-chrome-bg);color:var(--exam-chrome-muted);font-weight:700;font-size:10px;cursor:pointer;font-family:inherit;line-height:1;transition:background .15s,border-color .15s,color .15s}
+.qt:hover{border-color:#c4c4cc;color:var(--exam-chrome-text);background:var(--exam-chrome-surface)}
+.qt.qt-done{background:#e6f4ea;border-color:#34a853;color:#1a7a30}
+.track-hint{margin:5px 0 0;font-size:10px;color:var(--exam-chrome-subtle);text-align:left;line-height:1.35}
+
+#main{display:flex;flex:1;overflow:hidden;zoom:var(--exam-zoom);background:var(--exam-passage-bg)}
+
+/* ===== PASSAGE PANEL (purple accents) ===== */
+#passage-panel{width:50%;border-right:1px solid var(--exam-chrome-border);overflow-y:auto;background:var(--exam-passage-bg)}
+.passage-content{display:none;padding:26px 30px 40px}
+.passage-content.active{display:block}
+.p-badge{font-size:11px;font-weight:700;color:var(--exam-purple);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.p-instr{font-size:13px;color:var(--exam-chrome-muted);font-style:italic;padding:8px 12px;background:var(--exam-chrome-surface);border-left:3px solid var(--exam-submit-bg);border-radius:0 5px 5px 0;margin-bottom:14px;line-height:1.6}
+.p-title{font-size:19px;font-weight:800;color:var(--exam-content-text);margin-bottom:4px}
+.p-sub{font-size:13px;color:#666;font-style:italic;margin-bottom:18px}
+.p-body{font-size:13.5px;line-height:1.85;color:var(--exam-content-text)}
+.p-body p{margin-bottom:13px}
+.pid{font-weight:800;font-style:italic;margin-right:2px}
+mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
+.hl-popover{position:fixed;z-index:1000;display:none;flex-direction:row;align-items:center;gap:2px;padding:3px 4px;background:#fff;border-radius:8px;box-shadow:0 4px 18px rgba(75,40,118,.18),0 0 0 1px rgba(160,140,200,.45);font-family:inherit}
+.hl-popover[aria-hidden="true"]{pointer-events:none}
+.hl-btn{font-size:11px;font-weight:700;padding:5px 10px;border-radius:5px;border:none;background:transparent;cursor:pointer;color:#333;font-family:inherit;white-space:nowrap}
+.hl-btn:hover{background:var(--exam-purple-soft);color:var(--exam-purple)}
+.hl-btn:active{transform:scale(.97)}
+.hl-btn.hl-btn-primary{background:var(--exam-purple);color:#fff}
+.hl-btn.hl-btn-primary:hover{background:var(--exam-purple-dark);color:#fff}
+.hl-btn.hl-remove-btn{color:#b71c1c}
+.hl-btn.hl-remove-btn:hover{background:#ffebee;color:#c62828}
+
+/* ===== QUESTIONS PANEL (purple: section + question labels only) ===== */
+#questions-panel{width:50%;overflow-y:auto;background:var(--exam-passage-bg);border-left:1px solid var(--exam-chrome-border)}
+.qsection{display:none;padding:26px 28px 40px}
+.qsection.active{display:block}
+
+.sec-hdr{margin-bottom:18px;padding-bottom:12px;border-bottom:2px solid var(--exam-purple-border)}
+.sec-range{font-size:13px;font-weight:800;color:var(--exam-purple);text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px}
+.sec-instr{font-size:13px;color:#333;line-height:1.65}
+.sec-instr p{margin:0 0 8px}
+.sec-instr p:last-child{margin-bottom:0}
+.sec-instr-tfng-def{margin-top:2px}
+.sec-instr b{font-weight:700}
+
+/* Note completion table */
+.ntable{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:6px}
+.ntable th{background:#e2daf0;padding:8px 12px;font-weight:700;border:1px solid var(--exam-purple-border);text-align:left;color:var(--exam-purple)}
+.ntable td{padding:9px 12px;border:1px solid var(--exam-purple-border);vertical-align:middle;line-height:1.75}
+.ntable td:first-child{font-weight:700;width:88px;white-space:nowrap;background:#ede8f4;text-align:center;color:var(--exam-purple)}
+.ntable tr > td:only-of-type{font-weight:400;background:transparent;text-align:left}
+
+/* Inline fill blank */
+.fi-stack{display:inline-flex;flex-direction:row;align-items:baseline;gap:3px;vertical-align:baseline;margin:0 2px;}
+.fi-stack .fi-num{font-size:13px;font-weight:700;color:var(--exam-question-ink);white-space:nowrap;}
+.fi-stack .fi{width:118px;min-width:72px;}
+.fi{border:none;border-bottom:1px solid var(--exam-question-ink);background:transparent;outline:none;font-size:13px;padding:1px 4px;font-family:'Segoe UI',Arial,sans-serif;color:var(--exam-question-ink);font-weight:500}
+.fi:focus{border-bottom-color:var(--exam-question-ink)}
+.fi.done{border-bottom-color:#5cb572;border-bottom-width:1px}
+.si-wrap{display:inline-flex;flex-direction:row;align-items:baseline;gap:3px;vertical-align:baseline;}
+.si-wrap .si-num{font-weight:700;color:var(--exam-question-ink);font-size:13px;white-space:nowrap}
+
+/* Q block */
+.qb{margin-bottom:20px}
+.qnum{font-size:14px;font-weight:700;color:var(--exam-question-ink);margin-bottom:5px}
+.qtext{font-size:13px;line-height:1.6;margin-bottom:10px;color:var(--exam-content-text)}
+
+/* T/F/NG — select beside question */
+.qb-tfng{display:grid;grid-template-columns:1fr auto;column-gap:12px;row-gap:4px;align-items:start}
+.qb-tfng .qnum{grid-column:1/-1;grid-row:1;margin-bottom:0}
+.qb-tfng .qtext{grid-column:1;grid-row:2;margin-bottom:0;min-width:0}
+.qb-tfng .tfng{grid-column:2;grid-row:2;margin:0;align-self:start}
+.tfngsel{width:auto;min-width:108px;max-width:132px;border:1.5px solid #d4c8e4;border-radius:6px;padding:6px 30px 6px 10px;font-size:12px;outline:none;background:#fff;color:#1a1a2e;cursor:pointer;font-family:'Segoe UI',Arial,sans-serif;
+  appearance:none;-webkit-appearance:none;-moz-appearance:none;
+  background-color:#fff;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%234b2876' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 11px center;background-size:11px}
+.tfngsel:focus{border-color:var(--exam-purple)}
+.tfngsel.done{border-color:#34a853;background:#f4fbf5}
+@media (max-width:540px){
+  .qb-tfng{grid-template-columns:1fr}
+  .qb-tfng .qnum{grid-row:1}
+  .qb-tfng .qtext{grid-column:1;grid-row:2}
+  .qb-tfng .tfng{grid-column:1;grid-row:3;justify-self:start}
+}
+
+/* MCQ */
+.opts{display:flex;flex-direction:column;gap:7px}
+.opt{display:flex;align-items:flex-start;gap:10px;cursor:pointer;padding:8px 12px;border-radius:7px;border:1.5px solid #d4c8e4;background:#fff;font-size:13px;line-height:1.55;transition:all .15s}
+.opt:hover{border-color:var(--exam-purple);background:var(--exam-purple-soft)}
+.opt input{margin-top:2px;flex-shrink:0;accent-color:var(--exam-purple);width:14px;height:14px}
+.opt.sel{border-color:var(--exam-purple);background:#e2daf0;font-weight:500}
+
+/* Matching / MCQ compact selects */
+.msel{border:1.5px solid var(--exam-purple-border);border-radius:7px;outline:none;background:#fff;color:var(--exam-content-text);cursor:pointer;font-family:'Segoe UI',Arial,sans-serif}
+.msel:focus{border-color:var(--exam-purple)}
+.msel.done{border-color:#34a853;background:#f4fbf5}
+.sel-compact{width:auto;min-width:76px;max-width:118px;padding:6px 30px 6px 10px;font-size:13px;line-height:1.35;
+  appearance:none;-webkit-appearance:none;-moz-appearance:none;
+  background-color:#fff;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%234b2876' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 11px center;background-size:11px}
+.mrow{margin-bottom:14px}
+.mrow-top{display:flex;align-items:center;gap:10px;width:100%}
+.mqnum{background:#000001;color:#f5f5f5;border-radius:5px;padding:3px 9px;font-size:12px;font-weight:700;flex-shrink:0;align-self:center}
+.mtext{flex:1;min-width:0;font-size:13px;line-height:1.6;color:var(--exam-content-text)}
+.mrow-top .sel-compact{margin-left:auto;align-self:center;flex-shrink:0}
+.qb-mcq{display:block;margin-bottom:20px}
+.qb-mcq .qnum{margin-bottom:5px}
+.qb-mcq .qtext{margin-bottom:10px}
+.qb-mcq .opts{margin-top:4px}
+.mcq-block{margin-top:4px}
+.opt-letter{font-weight:800;color:var(--exam-purple);min-width:1.25em;flex-shrink:0}
+.opt-text{flex:1;min-width:0;color:var(--exam-content-text)}
+@media (max-width:540px){
+  .mrow-top{flex-wrap:wrap}
+  .mrow-top .sel-compact{margin-left:0;margin-top:6px}
+}
+
+/* Word bank */
+.wbank{width:100%;box-sizing:border-box;background:#fff;border:1.5px solid #d4c8e4;border-radius:9px;padding:14px 18px;margin-bottom:18px}
+.wbank-title{font-size:11px;font-weight:800;color:#555;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+.wbank-grid{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;min-height:36px;width:100%}
+.wbank-grid>.wbchip{flex:0 0 auto;max-width:100%}
+.wbank-grid .wbchip-body{flex:0 1 auto;min-width:auto;display:inline-flex;align-items:center;flex-wrap:nowrap;white-space:nowrap}
+.wbchip{display:flex;align-items:stretch;overflow:hidden;background:#ebe6f4;border:1px solid #d4c8e4;border-radius:5px;font-size:12px;line-height:1.3;color:#333;text-align:left}
+.wbchip-body{flex:1;min-width:0;padding:6px 10px;cursor:text;user-select:text;-webkit-user-select:text}
+.wbchip.dragging,.wbchip.pick-active{opacity:.82}
+.wbchip.pick-active .wbchip-drag-handle{outline:2px solid var(--exam-purple);outline-offset:-2px;background:#d4c8e8}
+.wbchip-letter{font-weight:800;color:var(--exam-purple);margin-right:4px}
+.wbchip-text{color:#333}
+.wbchip-drag-handle{display:flex;align-items:center;justify-content:center;width:28px;flex-shrink:0;background:#ddd5e8;border-left:1px solid #d4c8e4;cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none}
+.wbchip-drag-handle:active{cursor:grabbing}
+.wbchip-grip{display:block;width:10px;height:14px;background:radial-gradient(circle,#5a4a78 1.5px,transparent 1.6px) center/5px 5px repeat-y}
+.wbank-grid.phrase-bank-drag-over,.phrase-drop.phrase-drop-over{background:rgba(92,70,140,.08);border-radius:4px}
+
+/* People / expert matching bank */
+.people-bank{width:100%;box-sizing:border-box;background:#fff;border:1.5px solid #d4c8e4;border-radius:9px;padding:14px 18px;margin-bottom:18px}
+.people-bank-title{font-size:11px;font-weight:800;color:#555;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
+.people-bank-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.people-bank-list li{display:flex;align-items:baseline;gap:8px;font-size:13px;line-height:1.4;color:var(--exam-content-text)}
+.people-bank-letter{font-weight:800;color:var(--exam-purple);min-width:1.25em}
+
+/* Summary fill */
+.sumbox{background:#fff;border:1.5px solid #d4c8e4;border-radius:9px;padding:18px 22px;margin-bottom:8px}
+.sumtitle{font-weight:800;text-align:center;margin-bottom:12px;font-size:14px}
+.sumtext{font-size:13.5px;line-height:2.2;color:var(--exam-content-text)}
+.si{border:none;border-bottom:1px solid var(--exam-question-ink);background:transparent;outline:none;font-size:13px;padding:1px 4px;font-family:'Segoe UI',Arial,sans-serif;color:var(--exam-question-ink);font-weight:500}
+.si:focus{border-bottom-color:var(--exam-question-ink)}
+.si.done{border-bottom-color:#5cb572;border-bottom-width:1px}
+
+/* Summary phrase drag-and-drop gaps */
+.phrase-drop{display:inline-flex;align-items:center;justify-content:center;min-width:92px;min-height:24px;border-bottom:1px dashed #8a7aa8;vertical-align:baseline;padding:0 2px 2px;margin:0 2px}
+.phrase-drop.done{border-bottom-style:solid;border-bottom-color:#5cb572}
+.phrase-drop .wbchip{max-width:min(280px,100%);font-size:12px}
+.phrase-drop .wbchip-body{padding:2px 6px;white-space:normal;display:block}
+@media (max-width:520px){
+  .wbank-grid .wbchip-body{white-space:normal}
+  .wbank-grid>.wbchip{flex:1 1 100%}
+}
+.phrase-gap-stack{align-items:baseline}
+.exam-review-mode .wbchip-drag-handle{cursor:default;pointer-events:none}
+
+/* Bottom bar (tracker + submit, same row) */
+#bot-bar{background:var(--exam-chrome-bg);border-top:1px solid var(--exam-chrome-border);padding:10px 16px 12px;display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 16px;flex-shrink:0;box-shadow:0 -1px 0 rgb(0 0 0 / 0.04)}
+#sub-btn{flex-shrink:0;background:var(--exam-submit-bg);color:#fff;border:none;border-radius:8px;padding:10px 22px;font-size:14px;font-weight:700;cursor:pointer;transition:background .15s}
+#sub-btn:hover{background:var(--exam-submit-hover)}
+
+/* Success overlay */
+#success-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,1,.92);align-items:center;justify-content:center;z-index:100}
+.scard{background:#fff;border-radius:16px;padding:50px 52px;text-align:center;max-width:520px;width:92%}
+.scheck{width:64px;height:64px;border-radius:50%;background:#e6f4ea;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:32px;color:#1e8f3c}
+.stitle{font-size:24px;font-weight:800;color:#1a7a30;margin-bottom:8px}
+.ssub{font-size:14px;color:#777;margin-bottom:24px;line-height:1.6}
+.sdetail{background:#ebe6f4;border-radius:9px;padding:16px 22px;text-align:left;font-size:14px;line-height:2.1;color:#333}
+.sdetail b{color:var(--exam-purple)}
+.pdf-dl-btn{margin-top:18px;width:100%;padding:12px 16px;font-size:15px;font-weight:700;background:#3a3a40;color:#fff;border:none;border-radius:10px;cursor:pointer;font-family:inherit;transition:background .15s}
+.pdf-dl-btn:hover{background:#52525b}
+.pdf-dl-hint{font-size:12px;color:#666;margin-top:10px;line-height:1.45;text-align:center}
+.notes-list{font-size:13px;line-height:1.85;color:var(--exam-content-text);padding:4px 0 8px}
+.notes-list p{margin-bottom:10px}
+.notes-list .notes-title{font-size:15px;font-weight:800;color:var(--exam-content-text);margin:0 0 12px}
+.notes-list .notes-subheading{font-weight:700;margin:14px 0 6px;color:var(--exam-question-ink)}
+.sec-spacer{margin-top:28px}
+#review-banner{display:none;background:#f7f3f2;color:var(--exam-chrome-muted);text-align:center;font-size:12px;padding:8px 14px;border-bottom:1px solid var(--exam-chrome-border);line-height:1.45}
+#exam-load-error{display:none;background:#fff8e6;color:#7a4f00;text-align:center;font-size:13px;padding:10px 16px;border-bottom:1px solid #ffe0a3;line-height:1.5}
+#exam-load-error a{color:var(--exam-chrome-text);font-weight:700}
+#exam-screen.exam-review-mode #questions-panel input,
+#exam-screen.exam-review-mode #questions-panel select,
+#exam-screen.exam-review-mode #questions-panel label.opt{pointer-events:none!important}
+#exam-screen.exam-review-mode #questions-panel input,
+#exam-screen.exam-review-mode #questions-panel select{opacity:.92}
+#exam-screen.exam-review-mode #sub-btn{display:none}
+#exam-screen.exam-review-mode .track-hint{color:var(--exam-chrome-subtle)}
+.ans-review-line{margin-top:6px;font-size:11px;line-height:1.45;display:flex;flex-wrap:wrap;gap:6px 14px}
+.ans-review-line .ans-your{color:#555}
+.ans-review-line .ans-correct{color:#1a7a30;font-weight:700}
+.ans-review-line.is-correct .ans-your{color:#1a7a30}
+.ans-review-line.is-wrong .ans-your{color:#b71c1c}
+.mrow .ans-review-line{width:100%;margin-top:8px}
+.qb-tfng .ans-review-line{margin-top:8px}
+.choose-two-pick .ans-review-line{width:100%;margin-top:4px;text-align:right}
+.choose-two-block{margin-bottom:8px}
+.choose-two-qtext{font-size:13px;line-height:1.6;color:var(--exam-content-text);margin-bottom:12px}
+.choose-two-picks{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.choose-two-pick{display:flex;align-items:center;justify-content:flex-end;gap:10px;width:100%}
+.choose-two-label{font-size:13px;font-weight:800;color:#fff;background:var(--exam-purple);border-radius:5px;min-width:28px;padding:3px 8px;text-align:center;flex-shrink:0}
+.choose-two-sel{flex-shrink:0}
+</style>
+</head>
+<body>
+
+<!-- ==================== LOGIN ==================== -->
+<div id="login-screen">
+  <div class="login-card">
+    <div class="login-logo">
+      <div class="org-name">ANTHICHTUHOC</div>
+    </div>
+    <div class="login-title">
+      <h1 id="login-exam-title">IELTS Reading — Passage</h1>
+      <p id="login-exam-meta">20 minutes · one passage</p>
+    </div>
+    <div class="form-group">
+      <label>Full name</label>
+      <input type="text" id="inp-name" placeholder="Enter your full name..." autocomplete="off" onkeydown="if(event.key==='Enter')startExam()">
+    </div>
+    <div class="form-group">
+      <label>Course</label>
+      <input type="text" id="inp-course" placeholder="Enter your course..." autocomplete="off" onkeydown="if(event.key==='Enter')startExam()">
+    </div>
+    <button class="start-btn" onclick="startExam()">Start exam &rarr;</button>
+    <div class="login-note">Once you start, the 60-minute timer will begin immediately.<br>Do not close or refresh this tab during the exam.</div>
+  </div>
+</div>
+
+<!-- ==================== EXAM ==================== -->
+<div id="exam-screen">
+
+  <div id="topbar">
+    <div class="tb-left">
+      <a id="tb-back-link" class="tb-back" href="/tu-hoc/luyen-doc">← Quay lại bài đọc</a>
+      <div class="tb-title" id="tb-passage-title">IELTS Reading</div>
+    </div>
+    <div class="tb-right">
+      <div class="zoom-ctl" title="Zoom passage and questions">
+        <button type="button" class="zoom-btn" onclick="examZoomOut()" aria-label="Zoom out">&minus;</button>
+        <span id="zoom-pct" class="zoom-pct">100%</span>
+        <button type="button" class="zoom-btn" onclick="examZoomIn()" aria-label="Zoom in">+</button>
+        <button type="button" class="zoom-btn" onclick="examZoomReset()" aria-label="Reset zoom" title="Reset">&#8635;</button>
+      </div>
+      <div id="student-badge"></div>
+      <div id="timer-box">60:00</div>
+    </div>
+  </div>
+
+  <div id="review-banner" role="status">Đã nộp bài · Chế độ xem đáp án (chỉ được bôi đen phần bài đọc)</div>
+  <div id="exam-load-error" role="alert"></div>
+
+  <div id="prog-wrap"><div id="prog-bar"></div></div>
+
+  <div id="main">
+
+    <!-- ========== LEFT: PASSAGES ========== -->
+    <div id="passage-panel">
+      <div id="passage-mount" class="passage-content active">
+        <p style="padding:28px 30px;color:#666">Đang tải bài đọc…</p>
+      </div>
+    </div><!-- /passage-panel -->
+
+    <!-- ========== RIGHT: QUESTIONS ========== -->
+    <div id="questions-panel">
+      <div id="questions-mount" class="qsection active">
+        <p style="padding:28px;color:#666">Đang tải câu hỏi…</p>
+      </div>
+    </div><!-- /questions-panel -->
+  </div><!-- /main -->
+
+  <div id="bot-bar">
+    <div id="track-wrap" aria-label="Question progress">
+      <div class="track-groups">
+        <div class="track-grp"><span class="track-label" id="track-range-label">Questions</span><div id="track-grid" class="track-grid"></div></div>
+      </div>
+      <p class="track-hint">Green = answered · Grey = not yet · Click a number to open that question</p>
+    </div>
+    <button id="sub-btn" onclick="submitExam()">Submit answers</button>
+  </div>
+
+  <!-- SUCCESS -->
+  <div id="success-overlay">
+    <div class="scard">
+      <div class="scheck">&#10003;</div>
+      <div class="stitle">Submission successful!</div>
+      <div class="ssub">Thank you for completing the exam.<br>You will receive the results within 48 hours.</div>
+      <div class="sdetail" id="sdetail"></div>
+      <button type="button" class="pdf-dl-btn" id="pdf-download-btn">Open print view (save as PDF)</button>
+      <p class="pdf-dl-hint">Includes passages, highlights, questions, and your answers for your own review.</p>
+    </div>
+  </div>
+
+  <div id="hl-popover" class="hl-popover" role="toolbar" aria-label="Text highlight" aria-hidden="true">
+    <button type="button" class="hl-btn hl-btn-primary" id="hl-pop-add">Highlight</button>
+    <button type="button" class="hl-btn hl-remove-btn" id="hl-pop-remove" style="display:none">Remove</button>
+  </div>
+
+</div><!-- /exam-screen -->
+
+<script>
+/* Correct answers live only in the Sheet (AnswerKey / AnswerKey_Listening). Grading runs in Apps Script; score may be shown after submit if the server returns it. */
+
+var sName='', sCourse='', timeLeft=1200, timerInt=null, examTimerStarted=false, answered={};
+var trackerBuilt=false;
+var examMeta=null;
+var QUESTION_NUMS=[];
+var TOTAL_Q=0;
+var examLoadError=null;
+var examAnswerKey=null;
+var examReviewMode=false;
+var userAnswersSnapshot={};
+
+function getQueryParams(){
+  var p=new URLSearchParams(location.search);
+  return {
+    pilot:(p.get('pilot')||'').trim(),
+    passage:parseInt(p.get('passage')||'1',10)||1,
+    back:decodeURIComponent(p.get('back')||'/tu-hoc/luyen-doc')
+  };
+}
+
+function getExamBackHref(){
+  if(window.__EXAM_BOOT__&&window.__EXAM_BOOT__.back)return String(window.__EXAM_BOOT__.back);
+  return getQueryParams().back;
+}
+
+function updateExamBackLink(){
+  var a=document.getElementById('tb-back-link');
+  if(!a)return;
+  var href=getExamBackHref();
+  if(href)a.setAttribute('href',href);
+}
+
+function shouldSkipLogin(){
+  if(window.__EXAM_BOOT__&&window.__EXAM_BOOT__.skipLogin)return true;
+  if(document.documentElement.classList.contains('exam-skip-login'))return true;
+  if(lamBaiSlugFromPath())return true;
+  var p=new URLSearchParams(location.search);
+  if(p.get('requireLogin')==='1')return false;
+  if(p.get('skipLogin')==='1')return true;
+  var pilot=(p.get('pilot')||'').trim();
+  if(/^cam20-test[1234]$/i.test(pilot))return true;
+  return false;
+}
+
+function applySkipLoginLayout(){
+  if(!shouldSkipLogin())return;
+  document.documentElement.classList.add('exam-skip-login');
+  var ls=document.getElementById('login-screen');
+  var es=document.getElementById('exam-screen');
+  if(ls)ls.style.display='none';
+  if(es)es.style.display='flex';
+}
+
+function showExamLoadError(msg){
+  var el=document.getElementById('exam-load-error');
+  if(!el)return;
+  var back=getQueryParams().back.replace(/"/g,'&quot;');
+  el.innerHTML=msg+(shouldSkipLogin()?' <a href="'+back+'">← Quay lại bài đọc</a>':'');
+  el.style.display='block';
+}
+
+function examFetchHeaders(){
+  var h={Accept:'application/json'};
+  if(/ngrok/i.test(location.hostname))h['ngrok-skip-browser-warning']='true';
+  return h;
+}
+
+function applyExamPayload(data){
+  if(!data){
+    examLoadError='Không tải được đề bài.';
+    showExamLoadError(examLoadError);
+    showMountLoadError(examLoadError);
+    return false;
+  }
+  var passagePanel=document.getElementById('passage-panel');
+  var questionsPanel=document.getElementById('questions-panel');
+  var ssr=!!(data.ssr||passagePanel&&passagePanel.getAttribute('data-exam-ssr')==='1');
+  if(!ssr&&!data.passageHtml){
+    examLoadError='Không tải được đề bài.';
+    showExamLoadError(examLoadError);
+    showMountLoadError(examLoadError);
+    return false;
+  }
+  var errEl=document.getElementById('exam-load-error');
+  if(errEl)errEl.style.display='none';
+  examMeta=data;
+  QUESTION_NUMS=data.questionNums||[];
+  TOTAL_Q=QUESTION_NUMS.length;
+  timeLeft=(data.timeMinutes||20)*60;
+  examAnswerKey=data.answerKey&&typeof data.answerKey==='object'?data.answerKey:null;
+  if(!ssr){
+    if(passagePanel&&data.passageHtml)passagePanel.innerHTML=data.passageHtml;
+    if(questionsPanel){
+      questionsPanel.removeAttribute('data-answer-dnd-init');
+      questionsPanel.querySelectorAll('[data-bank-drop-bound]').forEach(function(el){
+        el.removeAttribute('data-bank-drop-bound');
+      });
+      if(data.questionsHtml)questionsPanel.innerHTML='<div class="qsection active" id="q1-section">'+data.questionsHtml+'</div>';
+    }
+  }
+  var loginTitle=document.getElementById('login-exam-title');
+  if(loginTitle)loginTitle.textContent=data.title;
+  var loginMeta=document.getElementById('login-exam-meta');
+  if(loginMeta&&QUESTION_NUMS.length)loginMeta.textContent=data.pilotLabel+' · Questions '+QUESTION_NUMS[0]+'–'+QUESTION_NUMS[QUESTION_NUMS.length-1];
+  var tb=document.getElementById('tb-passage-title');
+  if(tb)tb.textContent=data.title;
+  updateExamBackLink();
+  document.title='ANTHICHTUHOC | '+data.title;
+  var tr=document.getElementById('track-range-label');
+  if(tr&&QUESTION_NUMS.length)tr.textContent='Q'+QUESTION_NUMS[0]+'–'+QUESTION_NUMS[QUESTION_NUMS.length-1];
+  trackerBuilt=false;
+  ensureQuestionTracker();
+  initAnswerDragDrop();
+  if(shouldSkipLogin())startExam();
+  return true;
+}
+
+function lamBaiSlugFromPath(){
+  var m=location.pathname.match(/\/bai\/([^/]+)\/lam-bai\/?$/i);
+  return m&&m[1]?decodeURIComponent(m[1]):'';
+}
+
+function tryRedirectToLamBai(){
+  if(window.__EXAM_BOOT__)return false;
+  if(!shouldSkipLogin())return false;
+  if(lamBaiSlugFromPath())return false;
+  var back=getQueryParams().back||'';
+  var m=back.match(/\/bai\/([^/?#]+)/i);
+  if(!m||!m[1])return false;
+  location.replace('/tu-hoc/luyen-doc/bai/'+encodeURIComponent(decodeURIComponent(m[1]))+'/lam-bai');
+  return true;
+}
+
+function fetchExamBootBySlug(slug){
+  var ctrl=typeof AbortController!=='undefined'?new AbortController():null;
+  var timer=ctrl?setTimeout(function(){ctrl.abort();},12000):null;
+  return fetch('/api/reading/exam/boot?slug='+encodeURIComponent(slug),{
+    credentials:'include',
+    headers:examFetchHeaders(),
+    signal:ctrl?ctrl.signal:undefined
+  }).then(function(res){
+    if(timer)clearTimeout(timer);
+    return res.text().then(function(text){
+      var data=null;
+      try{data=JSON.parse(text);}catch(e){
+        if(/<!DOCTYPE/i.test(text)&&/ngrok/i.test(location.hostname)){
+          throw new Error('Ngrok chặn tải đề — thử hard refresh (Cmd+Shift+R) hoặc mở trên localhost.');
+        }
+        throw new Error('Phản hồi không hợp lệ.');
+      }
+      return {ok:res.ok,data:data};
+    });
+  });
+}
+
+function loadExamContent(){
+  if(window.__EXAM_BOOT_ERROR__){
+    examLoadError='Lỗi đọc đề nhúng: '+window.__EXAM_BOOT_ERROR__;
+    showExamLoadError(examLoadError);
+    showMountLoadError(examLoadError);
+    return Promise.resolve();
+  }
+  if(window.__EXAM_BOOT__){
+    if(window.__EXAM_BOOT__.back){
+      try{
+        var u=new URL(location.href);
+        if(!u.searchParams.get('back')){u.searchParams.set('back',window.__EXAM_BOOT__.back);history.replaceState(null,'',u.toString());}
+      }catch(e){}
+    }
+    applyExamPayload(window.__EXAM_BOOT__);
+    return Promise.resolve();
+  }
+  if(tryRedirectToLamBai())return Promise.resolve();
+  var slugBoot=lamBaiSlugFromPath();
+  if(slugBoot){
+    return fetchExamBootBySlug(slugBoot).then(function(r){
+      if(!r.ok||!r.data||!r.data.passageHtml){
+        examLoadError=r.data&&r.data.error?String(r.data.error):'Không tải được đề (boot API).';
+        showExamLoadError(examLoadError);
+        showMountLoadError(examLoadError);
+        return;
+      }
+      window.__EXAM_BOOT__=r.data;
+      applyExamPayload(r.data);
+    }).catch(function(err){
+      if(timer)clearTimeout(timer);
+      examLoadError=err&&err.name==='AbortError'?'Tải đề quá lâu (ngrok/mạng). Hard refresh (Cmd+Shift+R) hoặc mở localhost:3000.':(err&&err.message?err.message:'Lỗi tải đề qua boot API.');
+      showExamLoadError(examLoadError);
+      showMountLoadError(examLoadError);
+    });
+  }
+  var q=getQueryParams();
+  if(!q.pilot){
+    examLoadError='Thiếu tham số pilot trong URL.';
+    showMountLoadError(examLoadError);
+    return Promise.resolve();
+  }
+  var publicParam=shouldSkipLogin()?'&public=1':'';
+  return fetch('/api/reading/exam?pilot='+encodeURIComponent(q.pilot)+'&passage='+q.passage+publicParam,{
+    credentials:'include',
+    headers:examFetchHeaders()
+  })
+    .then(function(res){
+      return res.text().then(function(text){
+        var data=null;
+        try{data=JSON.parse(text);}catch(e){
+          if(/<!DOCTYPE/i.test(text)&&/ngrok/i.test(location.hostname)){
+            throw new Error('Ngrok chặn API — mở bài qua nút Thử thách (/lam-bai) thay vì link .html.');
+          }
+          throw new Error('Phản hồi không hợp lệ từ server.');
+        }
+        return {ok:res.ok,data:data};
+      });
+    })
+    .then(function(r){
+      if(!r.ok||!r.data.passageHtml){
+        if(r.ok===false&&r.data&&r.data.error==='Đăng nhập để tiếp tục.'){
+          examLoadError='Bạn cần đăng nhập trên trang chủ trước khi làm bài — hoặc mở lại từ nút Thử thách trong bài đọc.';
+        }else{
+          examLoadError=r.data&&r.data.error?String(r.data.error):'Không tải được đề bài.';
+        }
+        showExamLoadError(examLoadError);
+        showMountLoadError(examLoadError);
+        return;
+      }
+      applyExamPayload(r.data);
+    })
+    .catch(function(err){
+      examLoadError=err&&err.message?err.message:'Lỗi mạng khi tải đề bài. Mở từ nút Thử thách trong bài đọc.';
+      showExamLoadError(examLoadError);
+      showMountLoadError(examLoadError);
+    });
+}
+
+function showMountLoadError(msg){
+  var esc=pdfEscHtml(msg||'Không tải được đề.');
+  var back=getQueryParams().back.replace(/"/g,'&quot;');
+  var link=shouldSkipLogin()?' <a href="'+back+'" style="color:#1c1b1c;font-weight:700">← Quay lại bài đọc</a>':'';
+  var html='<p style="padding:28px 30px;color:#7a4f00;line-height:1.55">'+esc+link+'</p>';
+  var pp=document.getElementById('passage-panel');
+  var qp=document.getElementById('questions-panel');
+  if(pp)pp.innerHTML=html;
+  if(qp)qp.innerHTML=html;
+}
+
+function bootExamPage(){
+  applySkipLoginLayout();
+  updateExamBackLink();
+  var q=getQueryParams();
+  if(!shouldSkipLogin()){
+    var note=document.querySelector('.login-note');
+    if(note){
+      note.innerHTML='Timer starts when you click Start.<br><a href="'+q.back.replace(/"/g,'&quot;')+'" style="color:#1c1b1c;font-weight:700">← Quay lại bài đọc</a>';
+    }
+  }
+  loadExamContent();
+}
+
+function initExamPage(){
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',bootExamPage,{once:true});
+  }else{
+    bootExamPage();
+  }
+}
+initExamPage();
+
+/* Google Sheets: paste your Apps Script “Web app” URL here (ends with /exec). Leave empty to skip. */
+var GOOGLE_SHEET_WEB_APP_URL='https://script.google.com/macros/s/AKfycbxpQjAT8OqacKq6gAPuXhN0kiuuwGWRkcdrD8JeJkVprfmKaqqGQES10b7uVtZs78JpSg/exec';
+
+var examZoom=1;
+var ZOOM_MIN=0.75,ZOOM_MAX=1.5,ZOOM_STEP=0.1;
+try{
+  var zs=parseFloat(localStorage.getItem('anthicExamZoom'));
+  if(!isNaN(zs)&&zs>=ZOOM_MIN&&zs<=ZOOM_MAX)examZoom=Math.round(zs*100)/100;
+}catch(e){}
+
+function applyExamZoom(){
+  var ex=document.getElementById('exam-screen');
+  if(!ex)return;
+  ex.style.setProperty('--exam-zoom',String(examZoom));
+  var pct=document.getElementById('zoom-pct');
+  if(pct)pct.textContent=Math.round(examZoom*100)+'%';
+  try{localStorage.setItem('anthicExamZoom',String(examZoom));}catch(e){}
+}
+function examZoomIn(){
+  examZoom=Math.min(ZOOM_MAX,Math.round((examZoom+ZOOM_STEP)*100)/100);
+  applyExamZoom();
+}
+function examZoomOut(){
+  examZoom=Math.max(ZOOM_MIN,Math.round((examZoom-ZOOM_STEP)*100)/100);
+  applyExamZoom();
+}
+function examZoomReset(){
+  examZoom=1;
+  applyExamZoom();
+}
+
+function pad(n){return n<10?'0'+n:n;}
+
+function renderTimer(){
+  var box=document.getElementById('timer-box');
+  if(!box)return;
+  var m=Math.max(0,Math.floor(timeLeft/60));
+  var s=Math.max(0,timeLeft%60);
+  box.textContent=pad(m)+':'+pad(s);
+  if(timeLeft<=300)box.classList.add('warn');
+}
+
+function stopExamTimer(){
+  if(timerInt!=null){clearInterval(timerInt);timerInt=null;}
+  examTimerStarted=false;
+}
+
+function startExamTimer(){
+  if(examTimerStarted)return;
+  stopExamTimer();
+  renderTimer();
+  timerInt=setInterval(tick,1000);
+  examTimerStarted=true;
+}
+
+function startExam(){
+  if(examLoadError){alert(examLoadError);return;}
+  if(!examMeta||!TOTAL_Q){alert('Đề bài chưa tải xong. Đợi vài giây rồi thử lại.');return;}
+  if(shouldSkipLogin()){
+    sName=examMeta.title||'Luyện đọc';
+    sCourse='';
+  }else{
+    sName=document.getElementById('inp-name').value.trim();
+    sCourse=document.getElementById('inp-course').value.trim();
+    if(!sName){alert('Please enter your full name.');return;}
+    if(!sCourse){alert('Please enter your course.');return;}
+  }
+  document.getElementById('login-screen').style.display='none';
+  document.getElementById('exam-screen').style.display='flex';
+  var badge=document.getElementById('student-badge');
+  if(badge)badge.innerHTML=sCourse?sName+'<br>'+sCourse:sName;
+  applyExamZoom();
+  startExamTimer();
+  ensureQuestionTracker();
+  updateProg();
+}
+
+function tick(){
+  if(timeLeft<=0){stopExamTimer();autoSubmit();return;}
+  renderTimer();
+  timeLeft--;
+}
+
+function switchPassage(n){/* single passage */}
+
+function ensureQuestionTracker(){
+  if(trackerBuilt)return;
+  var grid=document.getElementById('track-grid');
+  if(!grid)return;
+  grid.innerHTML='';
+  for(var i=0;i<QUESTION_NUMS.length;i++){
+    var n=QUESTION_NUMS[i];
+    var b=document.createElement('button');
+    b.type='button';
+    b.className='qt';
+    b.id='qt-'+n;
+    b.textContent=n;
+    b.setAttribute('aria-label','Question '+n+' — not answered');
+    (function(num){b.onclick=function(){goToQuestion(num);};})(n);
+    grid.appendChild(b);
+  }
+  trackerBuilt=true;
+}
+
+function goToQuestion(n){
+  if(QUESTION_NUMS.indexOf(n)<0)return;
+  var el=null;
+  el=document.getElementById('q'+n);
+  if(!el)el=document.getElementById('sel-q'+n);
+  if(!el)el=document.querySelector('input[name="q'+n+'"]');
+  if(!el)el=document.querySelector('[onchange*="\'q'+n+'\'"]');
+  if(el)el.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+function updateProg(){
+  var c=Object.keys(answered).length;
+  document.getElementById('prog-bar').style.width=(TOTAL_Q?Math.round((c/TOTAL_Q)*100):0)+'%';
+  for(var i=0;i<QUESTION_NUMS.length;i++){
+    var qn=QUESTION_NUMS[i];
+    var qid='q'+qn;
+    var cell=document.getElementById('qt-'+qn);
+    if(!cell)continue;
+    var done=!!answered[qid];
+    cell.classList.toggle('qt-done',done);
+    cell.setAttribute('aria-label','Question '+qn+(done?' — answered':' — not answered'));
+  }
+}
+
+var phrasePickChip=null;
+
+function getPhraseBankGrid(){
+  return document.querySelector('#questions-panel [data-phrase-bank-grid]');
+}
+
+function getChipHomeBank(chip){
+  if(!chip)return null;
+  var scope=chip.getAttribute('data-mcq-scope');
+  if(scope){
+    return document.querySelector('#questions-panel .mcq-opt-group[data-mcq-opt-group="'+scope+'"] .mcq-opt-chips');
+  }
+  return getPhraseBankGrid();
+}
+
+function chipsCompatibleWithZone(chip,zone){
+  if(!chip||!zone)return false;
+  var chipScope=chip.getAttribute('data-mcq-scope');
+  if(!chipScope)return true;
+  var zoneScope=zone.getAttribute('data-mcq-scope')||zone.getAttribute('data-qid')||zone.id;
+  return chipScope===zoneScope;
+}
+
+function returnPhraseChipToBank(chip){
+  if(!chip)return;
+  var bank=getChipHomeBank(chip);
+  if(bank)bank.appendChild(chip);
+}
+
+function clearPhrasePick(){
+  if(phrasePickChip)phrasePickChip.classList.remove('pick-active');
+  phrasePickChip=null;
+}
+
+function markPhraseGap(qid,letter){
+  if(examReviewMode)return;
+  var zone=document.getElementById(qid);
+  if(!zone||!zone.classList.contains('phrase-drop'))return;
+  if(letter&&String(letter).trim()){
+    answered[qid]=true;
+    zone.classList.add('done');
+  }else{
+    delete answered[qid];
+    zone.classList.remove('done');
+  }
+  updateProg();
+}
+
+function placePhraseChip(zone,chip){
+  if(examReviewMode||!zone||!chip)return;
+  if(!chipsCompatibleWithZone(chip,zone))return;
+  var qid=zone.id||zone.getAttribute('data-qid');
+  if(!qid)return;
+  var letter=chip.getAttribute('data-letter')||'';
+  var prevDrop=chip.closest('.phrase-drop');
+  if(prevDrop&&prevDrop!==zone){
+    prevDrop.classList.remove('done');
+    markPhraseGap(prevDrop.id||prevDrop.getAttribute('data-qid'),'');
+  }
+  var existing=zone.querySelector('.wbchip');
+  if(existing&&existing!==chip){
+    returnPhraseChipToBank(existing);
+  }
+  zone.appendChild(chip);
+  markPhraseGap(qid,letter);
+}
+
+function clearPhraseGap(zone){
+  if(examReviewMode||!zone)return;
+  var chip=zone.querySelector('.wbchip');
+  if(chip)returnPhraseChipToBank(chip);
+  var qid=zone.id||zone.getAttribute('data-qid');
+  zone.classList.remove('done');
+  if(qid)markPhraseGap(qid,'');
+}
+
+function initAnswerDragDrop(){
+  var panel=document.getElementById('questions-panel');
+  if(!panel||panel.getAttribute('data-answer-dnd-init')==='1')return;
+  var phraseBank=getPhraseBankGrid();
+  var hasMcq=false;
+  if(!phraseBank&&!hasMcq)return;
+  panel.setAttribute('data-answer-dnd-init','1');
+
+  function allowDrop(e,zone){
+    if(examReviewMode)return;
+    var chip=window.__phraseDragChip;
+    if(zone&&chip&&!chipsCompatibleWithZone(chip,zone))return;
+    e.preventDefault();
+    if(e.dataTransfer)e.dataTransfer.dropEffect='move';
+  }
+
+  function bindBankDropTarget(bank){
+    if(!bank||bank.getAttribute('data-bank-drop-bound')==='1')return;
+    bank.setAttribute('data-bank-drop-bound','1');
+    bank.addEventListener('dragover',function(e){
+      allowDrop(e);
+      bank.classList.add('phrase-bank-drag-over');
+    });
+    bank.addEventListener('dragleave',function(){bank.classList.remove('phrase-bank-drag-over');});
+    bank.addEventListener('drop',function(e){
+      e.preventDefault();
+      bank.classList.remove('phrase-bank-drag-over');
+      var chip=window.__phraseDragChip;
+      if(!chip)return;
+      var fromDrop=chip.closest('.phrase-drop');
+      if(fromDrop)clearPhraseGap(fromDrop);
+      else returnPhraseChipToBank(chip);
+      clearPhrasePick();
+    });
+  }
+
+  if(phraseBank)bindBankDropTarget(phraseBank);
+  panel.querySelectorAll('[data-mcq-opt-bank], .mcq-opt-chips').forEach(bindBankDropTarget);
+
+  panel.querySelectorAll('.wbchip-drag-handle').forEach(function(handle){
+    handle.addEventListener('dragstart',function(e){
+      if(examReviewMode){e.preventDefault();return;}
+      var chip=handle.closest('.wbchip');
+      if(!chip){e.preventDefault();return;}
+      e.stopPropagation();
+      chip.classList.add('dragging');
+      if(e.dataTransfer){
+        e.dataTransfer.setData('text/plain',chip.getAttribute('data-letter')||'');
+        e.dataTransfer.effectAllowed='move';
+      }
+      window.__phraseDragChip=chip;
+    });
+    handle.addEventListener('dragend',function(){
+      var chip=handle.closest('.wbchip');
+      if(chip)chip.classList.remove('dragging');
+      window.__phraseDragChip=null;
+      panel.querySelectorAll('.phrase-drop-over,.phrase-bank-drag-over').forEach(function(n){
+        n.classList.remove('phrase-drop-over','phrase-bank-drag-over');
+      });
+    });
+    handle.addEventListener('click',function(e){
+      e.stopPropagation();
+      if(examReviewMode)return;
+      var chip=handle.closest('.wbchip');
+      if(!chip)return;
+      if(phrasePickChip===chip){
+        clearPhrasePick();
+        return;
+      }
+      clearPhrasePick();
+      phrasePickChip=chip;
+      chip.classList.add('pick-active');
+    });
+    handle.addEventListener('mousedown',function(e){e.stopPropagation();});
+  });
+
+  panel.querySelectorAll('.phrase-drop').forEach(function(zone){
+    zone.addEventListener('dragover',function(e){
+      allowDrop(e,zone);
+      if(window.__phraseDragChip&&chipsCompatibleWithZone(window.__phraseDragChip,zone)){
+        zone.classList.add('phrase-drop-over');
+      }
+    });
+    zone.addEventListener('dragleave',function(){zone.classList.remove('phrase-drop-over');});
+    zone.addEventListener('drop',function(e){
+      e.preventDefault();
+      zone.classList.remove('phrase-drop-over');
+      var chip=window.__phraseDragChip;
+      if(chip)placePhraseChip(zone,chip);
+      clearPhrasePick();
+    });
+    zone.addEventListener('click',function(){
+      if(examReviewMode)return;
+      if(phrasePickChip){
+        placePhraseChip(zone,phrasePickChip);
+        clearPhrasePick();
+        return;
+      }
+      if(zone.querySelector('.wbchip'))clearPhraseGap(zone);
+    });
+  });
+}
+
+function initPhraseDragDrop(){
+  initAnswerDragDrop();
+}
+
+function markFill(qid,val){
+  if(examReviewMode)return;
+  var el=document.getElementById(qid);
+  if(el&&el.classList.contains('phrase-drop')){
+    markPhraseGap(qid,val);
+    return;
+  }
+  if(val.trim()){answered[qid]=true;document.getElementById(qid).classList.add('done');}
+  else{delete answered[qid];document.getElementById(qid).classList.remove('done');}
+  updateProg();
+}
+
+function selTFNG(qid,sel){
+  if(examReviewMode)return;
+  if(sel.value){answered[qid]=true;sel.classList.add('done');}
+  else{delete answered[qid];sel.classList.remove('done');}
+  updateProg();
+}
+
+function selMCQ(qid,inp){
+  if(examReviewMode)return;
+  var c=document.getElementById(qid+'-opts');
+  c.querySelectorAll('.opt').forEach(function(l){l.classList.remove('sel');});
+  inp.closest('.opt').classList.add('sel');
+  answered[qid]=true;updateProg();
+}
+
+function selMatch(qid,sel){
+  if(examReviewMode)return;
+  if(sel.value){answered[qid]=true;sel.classList.add('done');}
+  else{delete answered[qid];sel.classList.remove('done');}
+  updateProg();
+}
+
+function collectAnswers(){
+  var r={};
+  document.querySelectorAll('#questions-panel .fi,#questions-panel .si').forEach(function(el){
+    if(el.id)r[el.id]=el.value.trim();
+  });
+  document.querySelectorAll('#questions-panel select.tfngsel').forEach(function(el){
+    if(el.id)r[el.id.replace('sel-','')]=el.value;
+  });
+  document.querySelectorAll('#questions-panel select.msel,#questions-panel select.wbsel').forEach(function(el){
+    var oc=el.getAttribute('onchange')||'';
+    var m=oc.match(/'q(\d+)'/);
+    if(m)r['q'+m[1]]=el.value;
+  });
+  document.querySelectorAll('#questions-panel .phrase-drop').forEach(function(zone){
+    if(!zone.id)return;
+    var chip=zone.querySelector('.wbchip');
+    r[zone.id]=chip?(chip.getAttribute('data-letter')||''):'';
+  });
+  for(var i=0;i<QUESTION_NUMS.length;i++){
+    var qid='q'+QUESTION_NUMS[i];
+    var sel=document.querySelector('#questions-panel input[name="'+qid+'"]:checked');
+    if(sel)r[qid]=sel.value;
+  }
+  return r;
+}
+
+function getTimeTakenStr(){
+  var elapsed=3600-timeLeft;
+  var em=Math.floor(elapsed/60),es=elapsed%60;
+  return pad(em)+':'+pad(es);
+}
+
+function sendSubmissionToGoogleSheet(){
+  var url=(GOOGLE_SHEET_WEB_APP_URL||'').trim();
+  if(!url)return Promise.resolve(null);
+  var payload={
+    testType:'Reading',
+    fullName:sName,
+    course:sCourse,
+    timeTaken:getTimeTakenStr(),
+    answeredCount:Object.keys(answered).length,
+    answers:collectAnswers()
+  };
+  /* text/plain avoids CORS preflight; Apps Script reads JSON from postData.contents */
+  return fetch(url,{
+    method:'POST',
+    headers:{'Content-Type':'text/plain'},
+    body:JSON.stringify(payload)
+  })
+    .then(function(res){return res.json();})
+    .then(function(data){return data&&data.ok?data:null;})
+    .catch(function(err){
+      if(typeof console!=='undefined'&&console.error)console.error('Google Sheet sync failed:',err);
+      return null;
+    });
+}
+
+function normalizeAns(v){
+  return String(v||'').trim().toLowerCase().replace(/\s+/g,' ');
+}
+
+function reviewLineHtml(userVal,correctVal){
+  var u=pdfEscHtml(userVal||'—');
+  var c=pdfEscHtml(correctVal||'—');
+  var match=userVal&&correctVal&&normalizeAns(userVal)===normalizeAns(correctVal);
+  var cls='ans-review-line'+(match?' is-correct':' is-wrong');
+  return '<div class="'+cls+'"><span class="ans-your">Bạn: '+u+'</span><span class="ans-correct">Đáp án: '+c+'</span></div>';
+}
+
+function insertReviewLineAfter(el,html){
+  if(!el||el.nextElementSibling&&el.nextElementSibling.classList.contains('ans-review-line'))return;
+  var d=document.createElement('div');
+  d.innerHTML=html;
+  var line=d.firstElementChild;
+  if(!line)return;
+  if(el.parentNode)el.parentNode.insertBefore(line,el.nextSibling);
+}
+
+function applyReviewAnswers(){
+  if(!examAnswerKey||!TOTAL_Q)return;
+  for(var i=0;i<QUESTION_NUMS.length;i++){
+    var n=QUESTION_NUMS[i];
+    var qid='q'+n;
+    var correct=examAnswerKey[qid]||examAnswerKey[String(n)]||'';
+    if(!String(correct).trim())continue;
+    var user=userAnswersSnapshot[qid]||'';
+    var html=reviewLineHtml(user,correct);
+    var inp=document.getElementById(qid);
+    if(inp){
+      if(inp.classList.contains('phrase-drop')){
+        insertReviewLineAfter(inp.closest('.phrase-gap-stack')||inp,html);
+      }else{
+        insertReviewLineAfter(inp.closest('.fi-stack')||inp,html);
+      }
+      continue;
+    }
+    var sel=document.getElementById('sel-'+qid);
+    if(sel){
+      insertReviewLineAfter(sel.closest('.tfng')||sel,html);
+      continue;
+    }
+    var radio=document.querySelector('#questions-panel input[name="'+qid+'"]:checked');
+    if(radio){
+      insertReviewLineAfter(radio.closest('.qb')||radio,html);
+      continue;
+    }
+    var msel=document.querySelector('#questions-panel [onchange*="'+qid+'"]');
+    if(msel){
+      var host=msel.closest('.choose-two-pick')||msel.closest('.mrow')||msel;
+      insertReviewLineAfter(host,html);
+    }
+  }
+}
+
+function lockExamInputs(){
+  document.querySelectorAll('#questions-panel input, #questions-panel select').forEach(function(el){
+    el.disabled=true;
+  });
+  document.querySelectorAll('#questions-panel .wbchip-drag-handle').forEach(function(handle){
+    handle.setAttribute('draggable','false');
+  });
+  clearPhrasePick();
+}
+
+function enterReviewMode(){
+  if(examReviewMode)return;
+  examReviewMode=true;
+  stopExamTimer();
+  userAnswersSnapshot=collectAnswers();
+  var ex=document.getElementById('exam-screen');
+  if(ex)ex.classList.add('exam-review-mode');
+  var banner=document.getElementById('review-banner');
+  if(banner)banner.style.display='block';
+  lockExamInputs();
+  if(examAnswerKey)applyReviewAnswers();
+  var hint=document.querySelector('.track-hint');
+  if(hint){
+    hint.textContent=examAnswerKey
+      ?'Đã nộp · Xanh = đã trả lời · Xem đáp án bên dưới mỗi câu'
+      :'Đã nộp bài · Không có đáp án trong file — chỉ xem lại bài làm';
+  }
+  if(!shouldSkipLogin())sendSubmissionToGoogleSheet();
+}
+
+function autoSubmit(){enterReviewMode();}
+
+function submitExam(){
+  if(examReviewMode)return;
+  if(!confirm('Nộp bài và xem lại trên trang này?'))return;
+  stopExamTimer();
+  enterReviewMode();
+}
+
+function pdfEscHtml(s){
+  var d=document.createElement('div');
+  d.textContent=s==null?'':String(s);
+  return d.innerHTML;
+}
+
+function pdfStripIds(root){
+  if(!root)return;
+  if(root.getAttribute&&root.getAttribute('id'))root.removeAttribute('id');
+  root.querySelectorAll('[id]').forEach(function(n){ n.removeAttribute('id'); });
+}
+
+/** cloneNode does not copy live .checked / .value — sync from live panel before PDF flatten. */
+function pdfCssEscapeId(id){
+  if(typeof CSS!=='undefined'&&CSS.escape)return CSS.escape(id);
+  return String(id||'').replace(/([^\w-])/g,'\\$1');
+}
+
+function pdfSyncFormStateFromLive(liveRoot, cloneRoot){
+  if(!liveRoot||!cloneRoot)return;
+  liveRoot.querySelectorAll('input').forEach(function(src){
+    var t=(src.type||'').toLowerCase();
+    if(t==='radio'){
+      if(!src.checked)return;
+      var nm=String(src.name||'').replace(/\\/g,'\\\\').replace(/"/g,'\\"');
+      var val=String(src.value||'').replace(/\\/g,'\\\\').replace(/"/g,'\\"');
+      var dst=cloneRoot.querySelector('input[type="radio"][name="'+nm+'"][value="'+val+'"]');
+      if(dst) dst.checked=true;
+      return;
+    }
+    if(t==='checkbox'){
+      if(!src.id)return;
+      var c=cloneRoot.querySelector('#'+pdfCssEscapeId(src.id));
+      if(c&&c.type==='checkbox') c.checked=src.checked;
+      return;
+    }
+    if(t==='hidden')return;
+    if(src.id){
+      var inp=cloneRoot.querySelector('#'+pdfCssEscapeId(src.id));
+      if(inp&&inp.type!=='radio'&&inp.type!=='checkbox') inp.value=src.value;
+    }
+  });
+  var liveSels=liveRoot.querySelectorAll('select');
+  var cloneSels=cloneRoot.querySelectorAll('select');
+  if(liveSels.length===cloneSels.length){
+    for(var si=0;si<liveSels.length;si++){
+      cloneSels[si].selectedIndex=liveSels[si].selectedIndex;
+    }
+  }else{
+    liveRoot.querySelectorAll('select').forEach(function(src){
+      if(!src.id)return;
+      var sel=cloneRoot.querySelector('#'+pdfCssEscapeId(src.id));
+      if(sel) sel.selectedIndex=src.selectedIndex;
+    });
+  }
+}
+
+/** Replace MCQ radio groups with one block per question (html2canvas does not paint radios). */
+function pdfFlattenRadioGroups(root){
+  if(!root)return;
+  var guard=0;
+  while(root.querySelector('input[type=radio]')&&guard++<200){
+    var inp=root.querySelector('input[type=radio]');
+    var container=inp.closest&&inp.closest('.opts');
+    if(!container||!container.parentNode){
+      inp.parentNode&&inp.parentNode.removeChild(inp);
+      continue;
+    }
+    var checked=container.querySelector('input[type=radio]:checked');
+    var line=document.createElement('div');
+    line.className='pdf-mcq-result';
+    if(checked){
+      var lab=checked.closest('label.opt');
+      var span=lab&&lab.querySelector('span');
+      line.textContent=span?String(span.textContent).replace(/\s+/g,' ').trim():String(checked.value);
+    }else{
+      line.textContent='\u2014';
+      line.style.color='#718096';
+    }
+    container.parentNode.replaceChild(line,container);
+  }
+}
+
+/** Replace <mark> with <span.pdf-hl> — underline style renders reliably in html2canvas vs. multi-line backgrounds. */
+function pdfConvertMarksForPdf(root){
+  if(!root)return;
+  root.querySelectorAll('mark.user-hl').forEach(function(m){
+    var s=document.createElement('span');
+    s.className='pdf-hl';
+    while(m.firstChild)s.appendChild(m.firstChild);
+    if(m.parentNode)m.parentNode.replaceChild(s,m);
+  });
+}
+
+function pdfFlattenInputs(root){
+  if(!root)return;
+  pdfFlattenRadioGroups(root);
+  root.querySelectorAll('input').forEach(function(inp){
+    var type=(inp.type||'').toLowerCase();
+    if(type==='hidden'||type==='radio'||type==='checkbox')return;
+    var s=document.createElement('span');
+    s.className='pdf-answer-line';
+    s.textContent=inp.value?String(inp.value):'\u2014';
+    inp.parentNode.replaceChild(s,inp);
+  });
+  root.querySelectorAll('select').forEach(function(sel){
+    var t=sel.options[sel.selectedIndex]?sel.options[sel.selectedIndex].text:'\u2014';
+    var sp=document.createElement('span');
+    sp.className='pdf-answer-select';
+    sp.textContent=t;
+    sel.parentNode.replaceChild(sp,sel);
+  });
+}
+
+function pdfSafeFilenamePart(s){
+  var t=String(s||'student').replace(/[^\w\-\s]/g,'').replace(/\s+/g,'-').slice(0,48);
+  return t||'student';
+}
+
+/** Flatten rowspan so each row is a full <tr> for stable print/PDF layout. */
+function pdfFlattenRowspanInTables(root){
+  if(!root)return;
+  root.querySelectorAll('table.ntable').forEach(function(table){
+    var guard=0;
+    while(table.querySelector('td[rowspan],th[rowspan]')&&guard++<80){
+      var cell=table.querySelector('td[rowspan],th[rowspan]');
+      var rs=parseInt(cell.getAttribute('rowspan'),10)||1;
+      var idx=cell.cellIndex;
+      if(rs<=1){
+        cell.removeAttribute('rowspan');
+        continue;
+      }
+      cell.removeAttribute('rowspan');
+      var row=cell.parentElement;
+      for(var k=1;k<rs;k++){
+        row=row.nextElementSibling;
+        if(!row||row.tagName!=='TR')break;
+        var dup=cell.cloneNode(true);
+        dup.removeAttribute('rowspan');
+        if(idx===0)row.insertBefore(dup,row.firstChild);
+        else if(row.cells&&row.cells[idx])row.insertBefore(dup,row.cells[idx]);
+        else row.appendChild(dup);
+      }
+    }
+  });
+}
+
+function buildReadingPdfRoot(){
+  var wrap=document.createElement('div');
+  wrap.className='pdf-work-root';
+  var st=document.createElement('style');
+  st.textContent=
+    '.pdf-work-root{box-sizing:border-box;width:100%;max-width:100%;color:#1a1a2e;margin:0;padding:0;transform:none!important;'+
+    'font-family:Cambria,Georgia,\"Times New Roman\",serif;font-size:11pt;line-height:1.5;}'+
+    '.pdf-work-root *{box-sizing:border-box;}'+
+    '.pdf-banner-title{font-family:Calibri,\"Segoe UI\",Arial,sans-serif;font-size:15pt;font-weight:700;color:#4b2876;margin:0 0 10px;letter-spacing:0.02em;}'+
+    '.pdf-banner-line{height:4px;background:#4b2876;border:none;margin:0 0 18px;border-radius:1px;}'+
+    '.pdf-banner-line--thin{height:2px;background:#d4c8e4;margin:16px 0 20px;}'+
+    '.pdf-meta-table{width:100%;table-layout:fixed;border-collapse:collapse;margin:0 0 4px;font-size:10.5pt;font-family:Calibri,\"Segoe UI\",Arial,sans-serif;}'+
+    '.pdf-meta-table th{text-align:left;font-weight:700;padding:8px 12px;width:32%;border:1px solid #d4c8e4;background:#ede8f4;color:#3d2660;vertical-align:middle;}'+
+    '.pdf-meta-table td{padding:8px 12px;border:1px solid #d4c8e4;background:#fff;vertical-align:middle;}'+
+    '.pdf-block-title{font-family:Calibri,\"Segoe UI\",Arial,sans-serif;font-size:11.5pt;font-weight:800;color:#4b2876;text-transform:uppercase;letter-spacing:0.06em;margin:22px 0 14px;padding:0 0 6px;border-bottom:3px solid #4b2876;page-break-after:avoid;}'+
+    '.pdf-block-title small{display:block;font-weight:400;font-size:9.5pt;color:#4a5568;text-transform:none;letter-spacing:0;margin-top:4px;}'+
+    '.pdf-work-root .passage-panel-pdf,.pdf-work-root .questions-panel-pdf{'+
+    'width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important;padding:0!important;float:none!important;'+
+    'position:static!important;display:block!important;flex:none!important;border:none!important;border-right:0!important;outline:none!important;'+
+    'box-shadow:none!important;background:#fff!important;overflow:visible!important;}'+
+    '.pdf-work-root .passage-content{display:block!important;width:100%!important;margin:0 0 22px!important;padding:0!important;max-width:100%;}'+
+    '.pdf-work-root .passage-panel-pdf .p-body{overflow-wrap:anywhere;word-wrap:break-word;max-width:100%;}'+
+    '.pdf-work-root .p-badge{font-size:9pt;font-weight:800;letter-spacing:0.12em;color:#4b2876;margin:0 0 8px;font-family:Calibri,\"Segoe UI\",Arial,sans-serif;}'+
+    '.pdf-work-root .p-instr{font-size:10.5pt;padding:10px 14px;background:#f5f5f7;border-left:5px solid #1c1b1c;margin:0 0 14px;line-height:1.55;font-style:italic;color:#47464b;'+
+    'break-inside:avoid;page-break-inside:avoid;}'+
+    '.pdf-work-root .p-title{font-size:14pt;font-weight:800;margin:10px 0 6px;font-family:Cambria,Georgia,serif;letter-spacing:0.04em;}'+
+    '.pdf-work-root .p-sub{font-size:10.5pt;color:#4a5568;margin:0 0 14px;font-style:italic;}'+
+    '.pdf-work-root .passage-panel-pdf .p-body p{margin:0 0 11px;text-align:left;font-size:11pt;line-height:1.65;'+
+    'break-inside:avoid;page-break-inside:avoid;-webkit-column-break-inside:avoid;word-spacing:normal;letter-spacing:normal;}'+
+    '.pdf-work-root .pdf-hl{color:inherit;display:inline;background-color:#fff59d;padding:0 2px;border-radius:2px;'+
+    'box-decoration-break:clone;-webkit-box-decoration-break:clone;text-decoration:none!important;}'+
+    '.pdf-work-root .questions-panel-pdf .qsection{display:block!important;width:100%!important;margin:0 0 18px!important;padding:0!important;}'+
+    '.pdf-work-root .sec-hdr{margin:16px 0 10px;}'+
+    '.pdf-work-root .sec-range{font-family:Calibri,\"Segoe UI\",Arial,sans-serif;font-size:10.5pt;font-weight:800;color:#4b2876;text-transform:uppercase;letter-spacing:0.04em;border-bottom:2px solid #d4c8e4;padding-bottom:4px;margin:0 0 6px;}'+
+    '.pdf-work-root .sec-instr{font-size:10pt;line-height:1.55;margin:6px 0 12px;font-style:italic;color:#4a5568;}'+
+    '.pdf-work-root .ntable{width:100%;table-layout:fixed;border-collapse:collapse;font-size:10pt;margin:10px 0;font-family:Calibri,\"Segoe UI\",Arial,sans-serif;}'+
+    '.pdf-work-root .ntable th{background:#e2daf0!important;color:#1a1a2e!important;font-weight:700;border:1px solid #d4c8e4!important;padding:8px 10px!important;}'+
+    '.pdf-work-root .ntable td{border:1px solid #d4c8e4!important;padding:8px 10px!important;vertical-align:top;background:#fff!important;'+
+    'word-wrap:break-word;overflow-wrap:anywhere;hyphens:auto;text-align:left!important;word-spacing:normal!important;letter-spacing:normal!important;'+
+    'text-rendering:optimizeLegibility;font-kerning:normal;-webkit-font-feature-settings:"kern" 1;font-feature-settings:"kern" 1;}'+
+    '.pdf-work-root .ntable tr{break-inside:avoid;page-break-inside:avoid;}'+
+    '.pdf-work-root .ntable td:first-child{white-space:normal!important;width:22%;}'+
+    '.pdf-work-root .pdf-answer-line{background:#fff5f7;border:1px dashed #c53030;color:#1a202c;font-weight:600;padding:1px 5px;border-radius:3px;min-width:1.5em;max-width:100%;display:inline;font-size:10pt;font-family:Calibri,\"Segoe UI\",Arial,sans-serif;'+
+    'word-wrap:break-word;vertical-align:baseline;white-space:normal;}'+
+    '.pdf-work-root .fi-stack,.pdf-work-root .si-wrap{display:inline;white-space:normal;word-spacing:normal;letter-spacing:normal;}'+
+    '.pdf-work-root .fi-num,.pdf-work-root .si-num{margin-right:4px;}'+
+    '.pdf-work-root .pdf-mcq-result{font-size:10.5pt;line-height:1.5;margin:6px 0;padding:8px 10px;border:1px solid #d4c8e4;border-radius:6px;background:#fafafa;color:#1a1a2e;}'+
+    '.pdf-work-root .pdf-answer-select{background:#e9e4f0;border:2px solid #4b2876;color:#4b2876;font-weight:700;padding:3px 12px;border-radius:4px;display:inline-block;font-size:10pt;font-family:Calibri,\"Segoe UI\",Arial,sans-serif;}'+
+    '.pdf-work-root .qb{margin:0 0 14px;page-break-inside:avoid;}'+
+    '.pdf-work-root .qnum{font-weight:800;font-size:10.5pt;color:#4b2876;font-family:Calibri,\"Segoe UI\",Arial,sans-serif;}'+
+    '.pdf-work-root .qtext{margin:6px 0 10px;font-size:10.5pt;line-height:1.5;}'+
+    '.pdf-work-root .mrow{display:block!important;width:100%!important;min-width:0!important;}'+
+    '.pdf-work-root .mrow-top{display:flex!important;flex-direction:row!important;align-items:center!important;gap:8px!important;'+
+    'width:100%!important;min-width:0!important;flex-wrap:nowrap!important;}'+
+    '.pdf-work-root .mrow .mtext{flex:1;min-width:0;}'+
+    '.pdf-work-root .mrow{margin:0 0 14px!important;}'+
+    '.pdf-work-root .mqnum{display:inline-block!important;margin:0 8px 4px 0!important;padding:2px 8px!important;font-size:10pt!important;font-weight:800!important;'+
+    'background:#000001!important;color:#f5f5f5!important;border:none!important;border-radius:5px!important;}'+
+    '.pdf-work-root .opts{display:block!important;width:100%!important;gap:0!important;}'+
+    '.pdf-work-root .opt{display:block!important;width:100%!important;border:1px solid #d4c8e4!important;margin:0 0 7px!important;padding:8px 10px!important;border-radius:4px;background:#fafafa!important;}'+
+    '.pdf-work-root .sumtext,.pdf-work-root .sumbox{text-align:left!important;word-spacing:normal!important;letter-spacing:normal!important;}';
+  wrap.appendChild(st);
+  var answeredN=Object.keys(answered).length;
+  var head=document.createElement('div');
+  head.className='pdf-header-block';
+  head.innerHTML='<div class="pdf-banner-title">MID-TERM TEST &mdash; READING (60&rsquo;)</div>'+
+    '<div class="pdf-banner-line" role="presentation"></div>'+
+    '<table class="pdf-meta-table" role="presentation">'+
+    '<tr><th>Full name</th><td>'+pdfEscHtml(sName)+'</td></tr>'+
+    '<tr><th>Course</th><td>'+pdfEscHtml(sCourse)+'</td></tr>'+
+    '<tr><th>Date</th><td>'+pdfEscHtml(new Date().toLocaleString('en-GB'))+'</td></tr>'+
+    '<tr><th>Time taken</th><td>'+pdfEscHtml(getTimeTakenStr())+'</td></tr>'+
+    '<tr><th>Questions answered</th><td>'+answeredN+' / '+TOTAL_Q+'</td></tr>'+
+    '</table>'+
+    '<div class="pdf-banner-line pdf-banner-line--thin" role="presentation"></div>';
+  wrap.appendChild(head);
+
+  var h1=document.createElement('div');
+  h1.className='pdf-block-title';
+  h1.innerHTML='Reading passages <small>Highlights use the same yellow as on screen.</small>';
+  wrap.appendChild(h1);
+  var pp=document.getElementById('passage-panel');
+  var pClone=pp.cloneNode(true);
+  pClone.classList.add('passage-panel-pdf');
+  pClone.querySelectorAll('.passage-content').forEach(function(el){
+    el.style.display='block';
+  });
+  pdfSyncFormStateFromLive(pp, pClone);
+  pdfStripIds(pClone);
+  pClone.style.setProperty('width','100%','important');
+  pClone.style.setProperty('max-width','100%','important');
+  pClone.style.setProperty('min-width','0','important');
+  pdfConvertMarksForPdf(pClone);
+  pdfFlattenRowspanInTables(pClone);
+  pdfStripIds(pClone);
+  pdfFlattenInputs(pClone);
+  wrap.appendChild(pClone);
+
+  var h2=document.createElement('div');
+  h2.className='pdf-block-title';
+  h2.innerHTML='Questions <small>Statements, gaps, matching, and selected options &mdash; your attempt.</small>';
+  wrap.appendChild(h2);
+  var qp=document.getElementById('questions-panel');
+  var qClone=qp.cloneNode(true);
+  qClone.classList.add('questions-panel-pdf');
+  qClone.querySelectorAll('.qsection').forEach(function(el){ el.style.display='block'; });
+  pdfSyncFormStateFromLive(qp, qClone);
+  pdfStripIds(qClone);
+  qClone.style.setProperty('width','100%','important');
+  qClone.style.setProperty('max-width','100%','important');
+  qClone.style.setProperty('min-width','0','important');
+  pdfConvertMarksForPdf(qClone);
+  pdfFlattenRowspanInTables(qClone);
+  pdfStripIds(qClone);
+  pdfFlattenInputs(qClone);
+  wrap.appendChild(qClone);
+  return wrap;
+}
+
+function downloadReadingPdf(){
+  var w=window.open('','_blank');
+  if(!w){
+    alert('Your browser blocked the new tab. Allow pop-ups for this site, then try again.');
+    return;
+  }
+  var root=buildReadingPdfRoot();
+  var d=w.document;
+  d.open();
+  d.write('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">');
+  d.write('<title>ANTHICHTUHOC — Reading (print / PDF)</title>');
+  d.write('<style>');
+  d.write('@media print{ .pdf-print-hint{display:none!important;} .pdf-print-shell{padding:0!important;background:#fff!important;} }');
+  d.write('body{margin:0;background:#f4f2f8;font-family:Segoe UI,system-ui,sans-serif;}');
+  d.write('.pdf-print-shell{max-width:880px;margin:0 auto;padding:20px 16px 48px;box-sizing:border-box;}');
+  d.write('.pdf-print-hint{position:sticky;top:0;z-index:9;padding:14px 18px;margin:0 0 20px;background:#ebe6f4;border:1px solid #d4c8e4;border-radius:10px;color:#3d2660;font-size:14px;line-height:1.55;}');
+  d.write('.pdf-print-hint kbd{display:inline-block;background:#fff;border:1px solid #c4b8d4;border-radius:5px;padding:3px 10px;font-size:13px;font-family:inherit;}');
+  d.write('</style></head><body><div class="pdf-print-shell">');
+  d.write('<div class="pdf-print-hint" role="status">');
+  d.write('<strong>Save as PDF:</strong> Press <kbd>Ctrl</kbd>+<kbd>P</kbd> (Windows/Linux) or <kbd>Cmd</kbd>+<kbd>P</kbd> (Mac), then choose <strong>Save as PDF</strong> or <strong>Microsoft Print to PDF</strong>. You can print to paper instead if you prefer.');
+  d.write('</div><div id="pdf-print-mount"></div></div></body></html>');
+  d.close();
+  var mount=d.getElementById('pdf-print-mount');
+  if(mount) mount.appendChild(d.importNode(root, true));
+}
+
+(function setupPdfDownloadBtn(){
+  function go(){
+    var b=document.getElementById('pdf-download-btn');
+    if(b)b.addEventListener('click',downloadReadingPdf);
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);
+  else go();
+})();
+
+// Prevent accidental page close during exam (skip when leaving via back link)
+window.addEventListener('beforeunload',function(e){
+  if(examReviewMode||window.__EXAM_LEAVING__)return;
+  if(document.getElementById('exam-screen').style.display!=='none'){
+    e.preventDefault();e.returnValue='';
+  }
+});
+document.addEventListener('click',function(e){
+  var t=e.target;
+  if(!t||!t.closest)return;
+  var a=t.closest('a[href]');
+  if(a&&a.getAttribute('href')&&a.getAttribute('href').indexOf('/tu-hoc/luyen-doc')!==-1)window.__EXAM_LEAVING__=true;
+},true);
+
+window.addEventListener('keydown',function(e){
+  var ex=document.getElementById('exam-screen');
+  if(!ex||ex.style.display==='none')return;
+  if(examReviewMode)return;
+  if(!(e.ctrlKey||e.metaKey))return;
+  if(e.key==='='||e.key==='+'){
+    e.preventDefault();examZoomIn();
+  }else if(e.key==='-'||e.code==='Minus'){
+    e.preventDefault();examZoomOut();
+  }else if(e.key==='0'){
+    e.preventDefault();examZoomReset();
+  }
+});
+
+function getHighlightRootForRange(range){
+  if(!range)return null;
+  var anc=range.commonAncestorContainer;
+  var passage=document.querySelector('#passage-panel .p-body');
+  if(examReviewMode){
+    if(passage&&passage.contains(anc))return passage;
+    return null;
+  }
+  var questions=document.querySelector('#questions-panel .qsection.active,#questions-panel #q1-section');
+  if(passage&&passage.contains(anc))return passage;
+  if(questions&&questions.contains(anc))return questions;
+  return null;
+}
+
+function getHighlightBlockElements(root){
+  if(!root)return[];
+  if(root.classList&&root.classList.contains('p-body')){
+    return root.querySelectorAll('p');
+  }
+  return root.querySelectorAll(
+    'p, td, th, .sec-range, .sec-instr, .qtext, .qnum, .mtext, .sumtext, .sumtitle, .wbchip-body, label.opt, .opt-text, .opt-letter, .mqnum, .wbank-title'
+  );
+}
+
+function clipRangeToContainer(range,el){
+  var sub=document.createRange();
+  var startsInside=el.contains(range.startContainer);
+  var endsInside=el.contains(range.endContainer);
+  if(startsInside&&endsInside){
+    sub.setStart(range.startContainer,range.startOffset);
+    sub.setEnd(range.endContainer,range.endOffset);
+  }else if(startsInside&&!endsInside){
+    sub.setStart(range.startContainer,range.startOffset);
+    sub.setEnd(el,el.childNodes.length);
+  }else if(!startsInside&&endsInside){
+    sub.setStart(el,0);
+    sub.setEnd(range.endContainer,range.endOffset);
+  }else if(range.intersectsNode(el)){
+    sub.selectNodeContents(el);
+  }else{
+    return null;
+  }
+  return sub;
+}
+
+function wrapRangeWithMark(sub){
+  var mark=document.createElement('mark');
+  mark.className='user-hl';
+  try{
+    sub.surroundContents(mark);
+  }catch(err){
+    var frag=sub.extractContents();
+    mark.appendChild(frag);
+    sub.insertNode(mark);
+  }
+}
+
+function unwrapMark(mark){
+  var parent=mark.parentNode;
+  if(!parent)return;
+  while(mark.firstChild)parent.insertBefore(mark.firstChild,mark);
+  parent.removeChild(mark);
+}
+
+var hlSavedRange=null;
+var hlAnchorMark=null;
+var hlPopoverTimer=null;
+
+function selectionOverlapsUserHighlight(root,range){
+  if(!root)return false;
+  var marks=root.querySelectorAll('mark.user-hl');
+  for(var i=0;i<marks.length;i++){
+    if(range.intersectsNode(marks[i]))return true;
+  }
+  return false;
+}
+
+function positionHlPopover(){
+  var pop=document.getElementById('hl-popover');
+  if(!pop)return;
+  var r;
+  if(hlAnchorMark){
+    r=hlAnchorMark.getBoundingClientRect();
+  }else if(hlSavedRange){
+    r=hlSavedRange.getBoundingClientRect();
+  }else{
+    return;
+  }
+  if(r.width<1&&r.height<1){hideHlPopover();return;}
+  pop.style.display='flex';
+  pop.style.visibility='hidden';
+  pop.style.left='0';
+  pop.style.top='0';
+  var pw=pop.offsetWidth||140;
+  var ph=pop.offsetHeight||30;
+  var left=r.left+r.width/2-pw/2;
+  left=Math.max(8,Math.min(left,window.innerWidth-pw-8));
+  var gap=6;
+  var top=r.top-ph-gap;
+  if(top<8)top=r.bottom+gap;
+  if(top+ph>window.innerHeight-8)top=Math.max(8,window.innerHeight-ph-8);
+  pop.style.left=left+'px';
+  pop.style.top=top+'px';
+  pop.style.visibility='visible';
+}
+
+function hideHlPopover(){
+  var pop=document.getElementById('hl-popover');
+  if(pop){
+    pop.style.display='none';
+    pop.style.visibility='';
+    pop.setAttribute('aria-hidden','true');
+  }
+  hlSavedRange=null;
+  hlAnchorMark=null;
+  var addBtn=document.getElementById('hl-pop-add');
+  var remBtn=document.getElementById('hl-pop-remove');
+  if(addBtn)addBtn.style.display='inline-block';
+  if(remBtn)remBtn.style.display='none';
+}
+
+function findMarkAtCaret(range,root){
+  if(!range.collapsed)return null;
+  var n=range.startContainer;
+  if(n.nodeType===3)n=n.parentElement;
+  var m=n&&n.closest&&n.closest('mark.user-hl');
+  if(m&&root.contains(m))return m;
+  return null;
+}
+
+function syncHlPopover(){
+  var exam=document.getElementById('exam-screen');
+  if(!exam||window.getComputedStyle(exam).display==='none'){hideHlPopover();return;}
+  var sel=window.getSelection();
+  if(!sel.rangeCount){hideHlPopover();return;}
+  var range=sel.getRangeAt(0);
+  var root=getHighlightRootForRange(range);
+  if(!root){hideHlPopover();return;}
+  var addBtn=document.getElementById('hl-pop-add');
+  var remBtn=document.getElementById('hl-pop-remove');
+  var pop=document.getElementById('hl-popover');
+  hlAnchorMark=null;
+  if(range.collapsed){
+    var mk=findMarkAtCaret(range,root);
+    if(!mk){hideHlPopover();return;}
+    hlSavedRange=range.cloneRange();
+    hlAnchorMark=mk;
+    if(addBtn)addBtn.style.display='none';
+    if(remBtn)remBtn.style.display='inline-block';
+    if(pop)pop.setAttribute('aria-hidden','false');
+    requestAnimationFrame(function(){
+      requestAnimationFrame(positionHlPopover);
+    });
+    return;
+  }
+  hlSavedRange=range.cloneRange();
+  if(addBtn)addBtn.style.display='inline-block';
+  if(remBtn){
+    remBtn.style.display=selectionOverlapsUserHighlight(root,range)?'inline-block':'none';
+  }
+  if(pop)pop.setAttribute('aria-hidden','false');
+  requestAnimationFrame(function(){
+    requestAnimationFrame(positionHlPopover);
+  });
+}
+
+function applyHighlightFromRange(range){
+  var root=getHighlightRootForRange(range);
+  if(!root||!range||range.collapsed)return;
+  if(!root.contains(range.commonAncestorContainer))return;
+  var blocks=getHighlightBlockElements(root);
+  var subs=[];
+  for(var i=0;i<blocks.length;i++){
+    var el=blocks[i];
+    if(!range.intersectsNode(el))continue;
+    var sub=clipRangeToContainer(range,el);
+    if(sub&&!sub.collapsed)subs.push(sub);
+  }
+  for(var j=subs.length-1;j>=0;j--){
+    wrapRangeWithMark(subs[j]);
+  }
+  window.getSelection().removeAllRanges();
+}
+
+function removeHighlightFromRange(range){
+  var root=getHighlightRootForRange(range);
+  if(!root||!range||range.collapsed)return;
+  if(!root.contains(range.commonAncestorContainer))return;
+  var marks=root.querySelectorAll('mark.user-hl');
+  var toUnwrap=[];
+  for(var j=0;j<marks.length;j++){
+    if(range.intersectsNode(marks[j]))toUnwrap.push(marks[j]);
+  }
+  for(var k=0;k<toUnwrap.length;k++)unwrapMark(toUnwrap[k]);
+  window.getSelection().removeAllRanges();
+}
+
+(function setupHlPopover(){
+  var pop=document.getElementById('hl-popover');
+  var addBtn=document.getElementById('hl-pop-add');
+  var remBtn=document.getElementById('hl-pop-remove');
+  if(!pop||!addBtn||!remBtn)return;
+
+  pop.addEventListener('mousedown',function(e){e.preventDefault();});
+
+  addBtn.addEventListener('click',function(){
+    if(!hlSavedRange)return;
+    applyHighlightFromRange(hlSavedRange.cloneRange());
+    hideHlPopover();
+  });
+  remBtn.addEventListener('click',function(){
+    if(hlAnchorMark){
+      unwrapMark(hlAnchorMark);
+      hideHlPopover();
+      return;
+    }
+    if(!hlSavedRange)return;
+    removeHighlightFromRange(hlSavedRange.cloneRange());
+    hideHlPopover();
+  });
+
+  document.addEventListener('selectionchange',function(){
+    clearTimeout(hlPopoverTimer);
+    hlPopoverTimer=setTimeout(syncHlPopover,40);
+  });
+
+  function repositionHlIfOpen(){
+    if(hlSavedRange&&document.getElementById('hl-popover').style.display==='flex'){
+      positionHlPopover(hlSavedRange);
+    }
+  }
+  var pp=document.getElementById('passage-panel');
+  if(pp)pp.addEventListener('scroll',repositionHlIfOpen,{passive:true});
+  var qp=document.getElementById('questions-panel');
+  if(qp)qp.addEventListener('scroll',repositionHlIfOpen,{passive:true});
+  window.addEventListener('resize',repositionHlIfOpen);
+})();
+</script>
+</body>
+</html>

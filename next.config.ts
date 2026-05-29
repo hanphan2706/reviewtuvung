@@ -48,6 +48,11 @@ const nextConfig: NextConfig = {
         destination: "/di-hoc/coaching",
         permanent: false,
       },
+      {
+        source: "/tu-hoc/luyen-noi-ai",
+        destination: "/tu-hoc/luyen-doc",
+        permanent: true,
+      },
     ];
   },
   turbopack: {

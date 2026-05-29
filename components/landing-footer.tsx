@@ -51,7 +51,7 @@ export function LandingFooter() {
     >
       <div className="mx-auto flex w-full min-h-0 max-w-[1600px] flex-1 flex-col px-5 pb-5 pt-4 sm:px-7 sm:pb-6 sm:pt-5 md:px-10 md:pb-7">
         <div className="flex min-h-0 w-full min-w-0 flex-1 flex-col rounded-lg border border-zinc-200/90 bg-white px-6 py-5 shadow-sm ring-1 ring-zinc-950/5 sm:px-8 sm:py-6 md:px-10 md:py-7">
-          <div className="shrink-0">
+          <div className="shrink-0 max-lg:pb-3">
             {/* max-lg: tiêu đề + link cùng một dòng chảy, khe nhỏ như xuống dòng. lg+: 2 cột. */}
             <div className="grid w-full min-w-0 grid-cols-1 gap-3 sm:gap-4 md:grid-cols-2 md:items-start md:gap-x-8 md:gap-y-0 xl:gap-x-12">
               <div className="min-w-0 space-y-1 text-pretty text-left text-[clamp(1.2rem,3.2vw,2.35rem)] font-normal leading-[1.15] tracking-[-0.025em] sm:space-y-1.5 md:max-w-[min(100%,40rem)]">
@@ -76,7 +76,7 @@ export function LandingFooter() {
             max-lg: gap-6 thống nhất giữa: Khám phá | social | block (line + legal + copyright).
             lg: giữ bố cục hàng ngang cũ.
           */}
-          <div className="mt-auto flex min-h-0 w-full min-w-0 flex-col max-lg:gap-6">
+          <div className="mt-auto flex min-h-0 w-full min-w-0 flex-col max-lg:gap-8">
             <div className="grid max-w-2xl grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-8 md:gap-12">
               <div>
                 <p className="text-xs font-medium leading-tight text-ink-muted sm:text-sm">

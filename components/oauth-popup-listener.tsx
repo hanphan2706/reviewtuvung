@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-/** Khớp với script trong `app/auth/callback/route.ts` (popup đăng nhập xong). */
+/** Nhận postMessage từ tab OAuth popup (nếu bật lại luồng popup). */
 export const AUTH_POPUP_MESSAGE_TYPE = "anthichtuhoc-oauth";
 
 function isAllowedMessageOrigin(origin: string): boolean {
