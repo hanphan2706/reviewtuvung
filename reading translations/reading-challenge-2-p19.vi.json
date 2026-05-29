@@ -1,0 +1,10 @@
+{
+  "paragraphs": [
+    "Khi máy tính phổ biến hơn, nhu cầu an ninh càng quan trọng. Một trong những mối đe dọa lớn nhất trên mạng là hack máy tính — truy cập trái phép vào máy hoặc mạng. Hacker là người xâm nhập hệ thống bất hợp pháp.",
+    "Họ có thể sửa hoặc xóa thông tin, trộm dữ liệu riêng, hoặc phát virus phá hủy tệp. Làm sao hacker vào được? Hầu hết lợi dụng giao thức (protocols) có sẵn trong phần mềm — cho phép máy tính tương tác với nhau.",
+    "Giao thức giống “cảnh sát” máy tính: khi máy kết nối hệ thống khác, giao thức kiểm tra truy cập có hợp lệ và quyết định chia sẻ bao nhiêu thông tin. Hacker có thể thao túng giao thức để có quyền truy cập không giới hạn.",
+    "Chỉ việc vào mạng đã được coi là hack — gọi là hack thụ động. Hacker thụ động “phê” vì chỉ vào được hệ thống khó như ngân hàng hay quân sự. Loại khác cố gây hại — sau khi vào, phát virus hoặc sửa, xóa, lấy thông tin.",
+    "Gọi là hacker chủ động — rõ ràng nguy hiểm hơn. Cách bảo vệ dễ nhất là mật khẩu tốt — dài và lạ, khó đoán. Để an toàn hơn, một số dịch vụ dùng hệ thống “password-plus”.",
+    "Người dùng nhập mật khẩu rồi mã thứ hai đổi sau mỗi lần truy cập — qua thẻ hoặc thiết bị riêng. Dù hacker lấy mật khẩu cũng không có mã; lấy được mã cũng không biết mật khẩu."
+  ]
+}

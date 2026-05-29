@@ -20,6 +20,7 @@
     "dictionary:merge-passage-vi": "npx tsx scripts/merge-passage-glossary-into-wiktionary.ts",
     "dictionary:import-stardict": "npx tsx scripts/import-stardict-vi.ts",
     "dictionary:import-stardict:quick": "npx tsx scripts/import-stardict-vi.ts --limit 8000",
+    "dictionary:upload-stardict": "npx tsx scripts/upload-stardict.ts",
     "reading:build-challenge-2": "python3 scripts/build-reading-challenge-2.py",
     "reading:apply-challenge-2-vi": "npx tsx scripts/apply-reading-challenge-2-vi.ts",
     "reading:trim-compass-audio": "node scripts/trim-reading-challenge-audio.mjs",

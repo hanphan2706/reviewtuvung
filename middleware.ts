@@ -15,6 +15,7 @@ import {
   readOAuthNextFromCookieValue,
   readOAuthOriginFromCookieValue,
 } from "@/lib/oauth-return-path";
+import { isDevAuthBypassForHost, resolveRequestHostname } from "@/lib/auth/dev-auth-bypass";
 import { normalizeAppOrigin } from "@/lib/app-origin";
 import { refreshSupabaseSession } from "@/lib/supabase/middleware-session";
 
@@ -51,6 +52,9 @@ export async function middleware(request: NextRequest) {
   }
 
   const { response: supabaseResponse, user } = await refreshSupabaseSession(request);
+  const hostname = resolveRequestHostname(url.hostname, request.headers.get("host"));
+  const devBypass = !user && isDevAuthBypassForHost(hostname);
+  const allowAccess = Boolean(user) || devBypass;
 
   if (isPrivateReadingAudioPath(pathname)) {
     return new NextResponse(null, { status: 404 });
@@ -64,11 +68,11 @@ export async function middleware(request: NextRequest) {
     isPublicReadingExamApi(pathname, url.searchParams) ||
     isPublicReadingExamBootApi(pathname, url.searchParams);
 
-  if (!user && isProtectedApiPath(pathname) && !publicReadingApi) {
+  if (!allowAccess && isProtectedApiPath(pathname) && !publicReadingApi) {
     return NextResponse.json({ error: "Đăng nhập để tiếp tục." }, { status: 401 });
   }
 
-  if (!user && isProtectedAppPath(pathname)) {
+  if (!allowAccess && isProtectedAppPath(pathname)) {
     if (pathname === AUTH_ENTRY_PATH || pathname.startsWith(`${AUTH_ENTRY_PATH}/`)) {
       return supabaseResponse;
     }

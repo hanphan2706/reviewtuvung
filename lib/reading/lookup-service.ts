@@ -13,6 +13,7 @@ import {
   pickDisplayGlossVi,
 } from "@/lib/reading/lookup-translation-quality";
 import { resolveLookupForm } from "@/lib/reading/resolve-lookup-form";
+import { ensureStardictIndexLoaded } from "@/lib/reading/stardict-index-loader";
 import { isGoogleTranslateConfigured, translateGoogleVi } from "@/lib/reading/google-translate";
 import { parseReadingSelection } from "@/lib/reading/parse-selection";
 import { vietnameseGlossaryGloss } from "@/lib/reading/vietnamese-gloss-glossary";
@@ -294,6 +295,7 @@ async function buildSensesFromDictionary(
 
 /** Bổ sung paraphrase (Datamuse + dịch VI) — gọi nền sau khi popover đã hiện nghĩa chính. */
 export async function enrichWordLookup(query: string): Promise<LookupParaphrase[]> {
+  await ensureStardictIndexLoaded();
   const lemma = normalizeLemma(query);
   if (!lemma) return [];
 
@@ -330,6 +332,7 @@ export async function enrichWordLookup(query: string): Promise<LookupParaphrase[
 }
 
 async function lookupWord(query: string): Promise<ReadingLookupResult> {
+  await ensureStardictIndexLoaded();
   const resolved = resolveLookupForm(query);
   const lemma = resolved?.surface ?? normalizeLemma(query);
   if (!lemma) {

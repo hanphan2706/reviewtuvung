@@ -1,13 +1,21 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import type { EnViWiktionaryIndex, WiktionaryViByPos } from "@/lib/reading/wiktionary-vi-types";
+import { STARDICT_LOCAL_PATH } from "@/lib/reading/stardict-storage";
 
 const WIKI_PATH = join(process.cwd(), "data/dictionary/en-vi-wiktionary.json");
-const STARDICT_PATH = join(process.cwd(), "data/dictionary/en-vi-stardict.json");
+const STARDICT_PATH = join(process.cwd(), STARDICT_LOCAL_PATH);
 
 let wikiCache: EnViWiktionaryIndex | null = null;
 let stardictCache: EnViWiktionaryIndex | null = null;
-let stardictLoadLogged = false;
+
+export function getStardictIndexCache(): EnViWiktionaryIndex | null {
+  return stardictCache;
+}
+
+export function setStardictIndexCache(index: EnViWiktionaryIndex): void {
+  stardictCache = index;
+}
 
 function loadWikiIndex(): EnViWiktionaryIndex {
   if (wikiCache) return wikiCache;
@@ -25,21 +33,8 @@ function loadStardictIndex(): EnViWiktionaryIndex {
   try {
     const raw = readFileSync(STARDICT_PATH, "utf8");
     stardictCache = JSON.parse(raw) as EnViWiktionaryIndex;
-    if (process.env.NODE_ENV === "development" && !stardictLoadLogged) {
-      stardictLoadLogged = true;
-      const n = Object.keys(stardictCache).length;
-      if (n > 0) {
-        console.info(`[dictionary] StarDict offline: ${n.toLocaleString()} headwords`);
-      } else {
-        console.info("[dictionary] StarDict chưa có — chạy npm run dictionary:import-stardict");
-      }
-    }
   } catch {
     stardictCache = {};
-    if (process.env.NODE_ENV === "development" && !stardictLoadLogged) {
-      stardictLoadLogged = true;
-      console.info("[dictionary] StarDict chưa có — chạy npm run dictionary:import-stardict");
-    }
   }
   return stardictCache;
 }
