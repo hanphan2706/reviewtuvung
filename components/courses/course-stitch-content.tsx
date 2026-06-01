@@ -26,7 +26,7 @@ function MIcon({
 }
 
 export function CourseStitchContent({ config }: { config: CourseStitchConfig }) {
-  const registerHref = LANDING.contactFacebook;
+  const registerHref = LANDING.courseRegistrationForm;
 
   return (
     <main className="pinball-stitch-root mx-auto flex max-w-[1000px] flex-col gap-[50px] py-11 antialiased">

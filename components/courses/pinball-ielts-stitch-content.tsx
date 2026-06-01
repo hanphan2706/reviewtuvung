@@ -37,7 +37,7 @@ function MIcon({
 }
 
 export function PinballIeltsStitchContent() {
-  const registerHref = LANDING.contactFacebook;
+  const registerHref = LANDING.courseRegistrationForm;
   const heroBanner = courseHeroBannerFromLanding("pinball-ielts");
 
   return (

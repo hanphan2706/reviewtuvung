@@ -10,6 +10,8 @@ const NOTION_STUDENT_FEEDBACK_URL =
 
 const SITE_FEEDBACK_FORM_URL = "https://forms.gle/v2HwjBU72uynCxLfA" as const;
 
+const COURSE_REGISTRATION_FORM_URL = "https://forms.gle/Ww82YX9WxkmtneLk6" as const;
+
 export const LANDING = {
   brand: "Ân thích tự học",
   brandShort: "ANTHICHTUHOC",
@@ -111,6 +113,8 @@ export const LANDING = {
   contactNote:
     "Mình thích học, đơn giản là học vì kiến thức. Bạn có thể ghé thăm Facebook để đọc thêm các bài chia sẻ và liên hệ trực tiếp với mình trên đó nha. Much gratitude!",
   contactFacebook: FACEBOOK_PAGE_URL,
+  /** Form đăng ký khoá học (CTA trên trang /di-hoc/*). */
+  courseRegistrationForm: COURSE_REGISTRATION_FORM_URL,
 
   /** Giao diện footer tối giản (2 dòng CTA trái + dòng nổi bật phải, cột link, dòng legal + social). */
   footer: {
