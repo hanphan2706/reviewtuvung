@@ -147,7 +147,7 @@ export const GENERAL_ENGLISH_STITCH_CONFIG: CourseStitchConfig = {
     { icon: "assignment", label: "Đánh giá", value: "Mid-term & Final Test" },
     { icon: "cloud_done", label: "Nộp bài tập", value: "Classroom & Drive" },
   ],
-  schedulePill: "Ngày và giờ học dự kiến: Lớp tháng 4/2026 đã khai giảng",
+  schedulePill: "Ngày và giờ học dự kiến: Thứ 3 & Thứ 5 (19:00 - 20:30) - 30/06/2026",
   curriculum: {
     intro: "Lộ trình tiêu chuẩn, bao gồm 6 cấp độ từ A1 (mất gốc) – C1 (nâng cao).",
     items: GENERAL_ENGLISH_CURRICULUM,
