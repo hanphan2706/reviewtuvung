@@ -1,9 +1,9 @@
 import type { CourseNotionSlug } from "@/lib/course-notion-document";
+import { courseHeroBannerFromLanding } from "@/lib/course-stitch-hero";
 import { COACHING_STITCH_CONFIG } from "@/lib/coaching-stitch-data";
 import { GENERAL_ENGLISH_STITCH_CONFIG } from "@/lib/general-english-stitch-data";
 import type { CourseStitchConfig } from "@/lib/course-stitch-types";
 import {
-  PINBALL_BANNER_IMAGE,
   PINBALL_CURRICULUM,
   PINBALL_ENTRANCE_OPTIONS,
   PINBALL_LINKS,
@@ -22,7 +22,7 @@ export const PINBALL_IELTS_STITCH_CONFIG: CourseStitchConfig = {
   hero: {
     title: "Pinball IELTS 2.0 (4.5+ - 6.0+)",
     subtitle: "A scholarly journey designed for academic discipline and linguistic mastery",
-    bannerImage: PINBALL_BANNER_IMAGE,
+    bannerImage: courseHeroBannerFromLanding("pinball-ielts").bannerImage,
   },
   overview: PINBALL_OVERVIEW,
   schedulePill: "Ngày và giờ học dự kiến: Lớp tháng 4/2026 đã khai giảng",
@@ -70,5 +70,15 @@ const STITCH_CONFIGS: Record<string, CourseStitchConfig> = {
 };
 
 export function getCourseStitchConfig(slug: CourseNotionSlug): CourseStitchConfig | null {
-  return STITCH_CONFIGS[slug] ?? null;
+  const base = STITCH_CONFIGS[slug];
+  if (!base) return null;
+  const banner = courseHeroBannerFromLanding(slug);
+  return {
+    ...base,
+    hero: {
+      ...base.hero,
+      bannerImage: banner.bannerImage,
+      bannerObjectPosition: banner.bannerObjectPosition,
+    },
+  };
 }

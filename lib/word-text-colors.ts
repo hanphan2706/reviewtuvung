@@ -3,7 +3,7 @@
  * Thứ tự giống tham chiếu UI: trắng → xám → nâu → cam → vàng → xanh lá → xanh dương → tím.
  */
 export const WORD_NOTION_TEXT_COLORS = [
-  { id: "white", hex: "#ffffff" },
+  { id: "white", hex: "#FAFAFA" },
   { id: "gray", hex: "#787774" },
   { id: "brown", hex: "#9f6b53" },
   { id: "orange", hex: "#d9730d" },

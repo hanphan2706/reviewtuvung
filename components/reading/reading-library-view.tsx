@@ -73,7 +73,7 @@ function ReadingLibraryViewInner({
         <div className={`${studyHubContainerClass} py-10 md:py-12`}>
           <header className="mb-8 flex flex-col gap-6 sm:mb-10 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
-              <h1 className="font-serif text-3xl font-bold leading-tight text-[#1c1b1c] md:text-[2rem]">
+              <h1 className="font-serif text-3xl font-bold leading-tight text-[#000001] md:text-[2rem]">
                 {pageTitle}
               </h1>
               {pageDescription ? (

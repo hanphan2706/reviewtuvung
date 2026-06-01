@@ -4,7 +4,7 @@
   --ink: #000001;
   --ink-muted: color-mix(in srgb, #000001 52%, #e8e8ec 48%);
   --brand: #4b2876;
-  --surface: #ffffff;
+  --surface: #FAFAFA;
   --border: rgb(212 212 216 / 0.75);
   color: var(--ink);
   font-family: inherit;
@@ -162,7 +162,7 @@
   gap: 0.4rem;
   padding: 0.4rem 0.55rem;
   border-radius: 0;
-  background: color-mix(in srgb, var(--brand) 6%, #fff);
+  background: color-mix(in srgb, var(--brand) 6%, #FAFAFA);
   text-decoration: none;
   color: var(--ink);
   border: 1px solid color-mix(in srgb, var(--brand) 20%, #e4e4e7);
@@ -170,7 +170,7 @@
 }
 
 .course-page .link-to-page a:hover {
-  background: color-mix(in srgb, var(--brand) 10%, #fff);
+  background: color-mix(in srgb, var(--brand) 10%, #FAFAFA);
 }
 
 /* Profile giáo viên: bỏ khung callout (viền/nền/bóng), giữ flex icon + nội dung. */
@@ -449,9 +449,9 @@
 }
 
 .course-page .course-pricing-card {
-  border: 1px solid color-mix(in srgb, var(--brand) 35%, #1b1b1e);
-  background: #1b1b1e;
-  color: #fff;
+  border: 1px solid color-mix(in srgb, var(--brand) 35%, #000001);
+  background: #000001;
+  color: #FAFAFA;
   padding: 1.35rem 1.15rem;
   text-align: center;
 }
@@ -463,7 +463,7 @@
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: rgb(255 255 255 / 0.6);
+  color: rgb(250 250 250 / 0.6);
 }
 
 .course-page .course-pricing-main {
@@ -472,7 +472,7 @@
   font-size: 1.65rem;
   font-weight: 700;
   line-height: 1.2;
-  color: #fff;
+  color: #FAFAFA;
 }
 
 .course-page .course-pricing-main span {
@@ -484,7 +484,7 @@
   margin: 0.35rem 0 0;
   padding: 0;
   font-size: 1.05rem;
-  color: rgb(255 255 255 / 0.82);
+  color: rgb(250 250 250 / 0.82);
 }
 
 .course-page .course-pricing-note {
@@ -492,7 +492,7 @@
   padding: 0;
   font-size: 0.78rem;
   font-style: italic;
-  color: rgb(255 255 255 / 0.58);
+  color: rgb(250 250 250 / 0.58);
   line-height: 1.45;
 }
 

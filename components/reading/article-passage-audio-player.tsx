@@ -189,7 +189,7 @@ export function ArticlePassageAudioPlayer({
           <button
             type="button"
             onClick={togglePlay}
-            className="inline-flex size-11 items-center justify-center rounded-full bg-[#1c1b1c] text-white shadow-md transition hover:bg-[#333]"
+            className="inline-flex size-11 items-center justify-center rounded-full bg-[#000001] text-white shadow-md transition hover:bg-black/90"
             aria-label={playing ? "Tạm dừng" : "Phát"}
           >
             {playing ? <Pause className="size-5 fill-current" /> : <Play className="size-5 fill-current pl-0.5" />}

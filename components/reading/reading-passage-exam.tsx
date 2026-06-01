@@ -42,7 +42,7 @@ export function ReadingPassageExam({ passage, title, backHref }: ReadingPassageE
 
       <div className="grid min-h-0 flex-1 grid-cols-1 md:grid-cols-2">
         <div className="overflow-y-auto border-r border-[#E4E4E7] bg-white p-6 md:p-8">
-          <h2 className="mb-6 font-serif text-2xl font-bold text-[#1c1b1c]">{passage.title}</h2>
+          <h2 className="mb-6 font-serif text-2xl font-bold text-[#000001]">{passage.title}</h2>
           <ArticleBodyContent body={passage.body} />
         </div>
 
@@ -54,7 +54,7 @@ export function ReadingPassageExam({ passage, title, backHref }: ReadingPassageE
             <div className="space-y-8">
               {sections.map((sec) => (
                 <section key={sec.title} className="rounded-lg border border-[#E4E4E7] bg-white p-4">
-                  <p className="text-sm font-bold text-[#1c1b1c]">{sec.title}</p>
+                  <p className="text-sm font-bold text-[#000001]">{sec.title}</p>
                   {sec.instructionLines.length > 0 ? (
                     sec.kind === "tfng" ? (
                       <div className="mt-2 space-y-2 text-xs leading-relaxed text-[#47464b]">
@@ -76,7 +76,7 @@ export function ReadingPassageExam({ passage, title, backHref }: ReadingPassageE
                     <ul className="mt-4 space-y-4">
                       {sec.statements.map((st) => (
                         <li key={st.num} className="text-sm">
-                          <p className="mb-2 font-medium text-[#1c1b1c]">
+                          <p className="mb-2 font-medium text-[#000001]">
                             {st.num}. {st.text}
                           </p>
                           <div className="flex flex-wrap gap-2">
@@ -114,7 +114,7 @@ export function ReadingPassageExam({ passage, title, backHref }: ReadingPassageE
                     <ul className="mt-4 space-y-6">
                       {sec.mcqQuestions.map((q) => (
                         <li key={q.num} className="text-sm">
-                          <p className="mb-3 font-medium text-[#1c1b1c]">
+                          <p className="mb-3 font-medium text-[#000001]">
                             {q.num}. {q.text}
                           </p>
                           <div className="flex flex-col gap-2">

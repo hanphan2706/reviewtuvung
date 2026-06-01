@@ -32,7 +32,7 @@ export function StudyLoginPrompt({
         >
           <X className="h-5 w-5" />
         </button>
-        <h2 id="study-login-title" className="pr-8 font-serif text-xl font-semibold text-[#1c1b1c]">
+        <h2 id="study-login-title" className="pr-8 font-serif text-xl font-semibold text-[#000001]">
           {title}
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-[#47464b]">{description}</p>
@@ -50,7 +50,7 @@ export function StudyLoginPrompt({
         <button
           type="button"
           onClick={onClose}
-          className="mt-4 w-full text-center text-sm font-medium text-[#47464b] hover:text-[#1c1b1c]"
+          className="mt-4 w-full text-center text-sm font-medium text-[#47464b] hover:text-[#000001]"
         >
           Để sau
         </button>

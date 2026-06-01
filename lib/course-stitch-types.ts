@@ -41,12 +41,19 @@ export type CourseTeacherLink = {
   href: string;
 };
 
+export type CoursePricingLine = {
+  amount: string;
+  suffix: string;
+};
+
 export type CourseStitchConfig = {
   slug: string;
   hero: {
     title: string;
     subtitle: string;
     bannerImage: string;
+    /** Khớp object-position trên carousel landing (vd. `50% 36%`). */
+    bannerObjectPosition?: string;
   };
   overview: readonly CourseOverviewItem[];
   schedulePill: string;
@@ -61,9 +68,11 @@ export type CourseStitchConfig = {
   };
   tuitionPanels: readonly CourseTuitionPanel[];
   pricing: {
-    amount: string;
+    amount?: string;
     amountSuffix?: string;
+    amountSuffixBlock?: boolean;
     note?: string;
+    lines?: readonly CoursePricingLine[];
   };
   notes?: {
     introHtml: string;

@@ -119,7 +119,7 @@ export function ReadingArticleCard({
         <h3
           ref={titleRef}
           className={`mt-3 font-serif text-xl font-semibold leading-snug md:text-[22px] ${
-            dark ? "text-white" : "text-[#1c1b1c]"
+            dark ? "text-white" : "text-[#000001]"
           } ${textOnly || compactGrid || dark ? "line-clamp-3" : ""}`}
         >
           {article.title}
@@ -148,7 +148,7 @@ export function ReadingArticleCard({
           >
             {level}
           </span>
-          <ArrowRight className={`h-4 w-4 ${dark ? "text-white" : "text-[#1c1b1c]"}`} aria-hidden />
+          <ArrowRight className={`h-4 w-4 ${dark ? "text-white" : "text-[#000001]"}`} aria-hidden />
         </div>
       </div>
     </>
@@ -160,7 +160,7 @@ export function ReadingArticleCard({
     wide
       ? "grid min-h-[260px] grid-cols-1 sm:min-h-[280px] sm:grid-cols-[12rem_minmax(0,1fr)] md:min-h-[300px] md:grid-cols-[14rem_minmax(0,1fr)]"
       : "",
-    dark ? "border-[#1c1b1c] bg-[#1c1b1c]" : "border-[#E4E4E7] bg-white hover:shadow-md",
+    dark ? "border-[#000001] bg-[#000001]" : "border-[#E4E4E7] bg-white hover:shadow-md",
     disabled ? "cursor-default opacity-60" : "cursor-pointer",
     classNameProp,
   ]

@@ -158,7 +158,7 @@ export const GENERAL_ENGLISH_STITCH_CONFIG: CourseStitchConfig = {
       "Bạn vào link này để làm bài test từ vựng / ngữ pháp / nghe, và gửi kết quả cho mình nha.",
     ],
     options: [
-      { icon: "menu_book", label: "Từ vựng / Ngữ pháp", href: EXAMENGLISH_GRAMMAR },
+      { icon: "menu_book", label: "Từ vựng /\u00A0Ngữ pháp", href: EXAMENGLISH_GRAMMAR },
       { icon: "headphones", label: "Nghe", href: EXAMENGLISH_LISTENING },
     ],
   },

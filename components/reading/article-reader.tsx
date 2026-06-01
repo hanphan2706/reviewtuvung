@@ -294,7 +294,7 @@ export function ArticleReader({
                     </span>
                     <LabelCaps>· {readMin} PHÚT ĐỌC</LabelCaps>
                   </div>
-                  <h1 className="font-serif text-3xl font-bold leading-tight tracking-tight text-[#1c1b1c] md:text-[2.5rem]">
+                  <h1 className="font-serif text-3xl font-bold leading-tight tracking-tight text-[#000001] md:text-[2.5rem]">
                     {passage.title}
                   </h1>
                   {underTitleText ? (
@@ -337,7 +337,7 @@ export function ArticleReader({
         <aside className="flex flex-col gap-3 md:col-span-4">
           <ArticleCard className="p-6">
             <div className="flex items-center justify-between border-b border-[#E4E4E7] pb-3">
-              <h3 className="flex items-center gap-2 font-serif text-lg font-semibold text-[#1c1b1c]">
+              <h3 className="flex items-center gap-2 font-serif text-lg font-semibold text-[#000001]">
                 <BookOpen className="size-5 text-[#4b2876]" aria-hidden />
                 Từ vựng quan trọng
               </h3>
@@ -354,7 +354,7 @@ export function ArticleReader({
           <ArticleCard className="bg-[#f7f3f2] p-6">
             <div className="flex items-center gap-2 border-b border-[#E4E4E7] pb-3">
               <CircleHelp className="size-5 text-[#4b2876]" aria-hidden />
-              <h3 className="font-serif text-lg font-semibold text-[#1c1b1c]">Kiểm tra nhanh</h3>
+              <h3 className="font-serif text-lg font-semibold text-[#000001]">Kiểm tra nhanh</h3>
             </div>
             <ArticleQuickCheckPanel
               articleId={articleId}

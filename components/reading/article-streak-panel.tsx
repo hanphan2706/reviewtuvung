@@ -55,7 +55,7 @@ export function ArticleStreakPanel({ articleKey, isLoggedIn }: ArticleStreakPane
   }, [articleKey, isLoggedIn]);
 
   return (
-    <section className="rounded-lg border-none bg-[#1c1b1c] p-6 text-white shadow-sm">
+    <section className="rounded-lg border-none bg-[#000001] p-6 text-white shadow-sm">
       <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/70">
         CHUỖI NGÀY HIỆN TẠI
       </span>

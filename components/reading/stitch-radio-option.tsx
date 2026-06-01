@@ -44,7 +44,7 @@ export function StitchRadioOption({
       </span>
       <span
         className={`text-sm leading-snug ${
-          checked && boldWhenSelected ? "font-semibold text-[#1c1b1c]" : "text-[#47464b]"
+          checked && boldWhenSelected ? "font-semibold text-[#000001]" : "text-[#47464b]"
         }`}
       >
         {label}

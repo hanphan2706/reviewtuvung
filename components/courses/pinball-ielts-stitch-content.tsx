@@ -6,8 +6,8 @@ import {
   PINBALL_NOTES_INTRO_HTML,
   PINBALL_NOTES_SECTIONS,
 } from "@/lib/pinball-notes-content";
+import { courseHeroBannerFromLanding } from "@/lib/course-stitch-hero";
 import {
-  PINBALL_BANNER_IMAGE,
   PINBALL_ENTRANCE_OPTIONS,
   PINBALL_LINKS,
   PINBALL_OVERVIEW,
@@ -38,6 +38,7 @@ function MIcon({
 
 export function PinballIeltsStitchContent() {
   const registerHref = LANDING.contactFacebook;
+  const heroBanner = courseHeroBannerFromLanding("pinball-ielts");
 
   return (
     <main className="pinball-stitch-root mx-auto flex max-w-[1000px] flex-col gap-[50px] py-11 antialiased">
@@ -46,10 +47,13 @@ export function PinballIeltsStitchContent() {
           {/* eslint-disable-next-line @next/next/no-img-element -- ảnh public */}
           <img
             className="pinball-stitch-hero-banner__img"
-            src={PINBALL_BANNER_IMAGE}
+            src={heroBanner.bannerImage}
             alt=""
-            width={750}
-            height={1777}
+            style={
+              heroBanner.bannerObjectPosition
+                ? { objectPosition: heroBanner.bannerObjectPosition }
+                : undefined
+            }
             decoding="async"
             loading="eager"
           />
@@ -70,7 +74,7 @@ export function PinballIeltsStitchContent() {
             {PINBALL_OVERVIEW.map((item) => (
               <div key={item.icon} className="pinball-stitch-overview-card">
                 <MIcon name={item.icon} />
-                <div>
+                <div className="pinball-stitch-overview-card__text">
                   <p className="pinball-stitch-overview-card__label">{item.label}</p>
                   <p className="pinball-stitch-overview-card__value">{item.value}</p>
                 </div>

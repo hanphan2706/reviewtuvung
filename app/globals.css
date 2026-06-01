@@ -6,6 +6,8 @@
   --brand-purple: #4b2876;
   --brand-purple-dark: #3d2660;
   --font-sans-stack: "Helvetica Neue", Helvetica, ui-sans-serif, system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+  --surface-white: #FAFAFA;
+  --surface-dark: #000001;
 }
 
 @theme inline {
@@ -15,6 +17,13 @@
   /** Chữ phụ: #000001 pha sáng, tông hơi xanh so với xám trung tính. */
   --color-ink-muted: color-mix(in srgb, #000001 52%, #e8e8ec 48%);
   --color-ink-faint: color-mix(in srgb, #000001 30%, #eceef0 70%);
+  /** Chuẩn hoá: white/black Tailwind + zinc đen → #FAFAFA / #000001 */
+  --color-white: #FAFAFA;
+  --color-black: #000001;
+  /** Hover nút tối (zinc-800) — nhẹ hơn black một chút. */
+  --color-zinc-800: color-mix(in srgb, #000001 88%, #FAFAFA 12%);
+  --color-zinc-900: #000001;
+  --color-zinc-950: #000001;
   --font-sans: var(--font-sans-stack);
   --font-serif: var(--font-noto-serif), Georgia, serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;

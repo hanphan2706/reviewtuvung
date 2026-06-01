@@ -160,7 +160,7 @@ function LookupBody({
         <p className="mb-3 text-xs leading-relaxed text-[#71717A]">{formNote}</p>
       ) : headword && headword !== lookup.query.toLowerCase() ? (
         <p className="mb-3 text-xs text-[#71717A]">
-          Từ gốc: <span className="font-medium text-[#1c1b1c]">{headword}</span>
+          Từ gốc: <span className="font-medium text-[#000001]">{headword}</span>
         </p>
       ) : null}
 
@@ -170,7 +170,7 @@ function LookupBody({
             <p className="text-sm italic leading-relaxed text-[#47464b]">&ldquo;{lookup.query}&rdquo;</p>
           ) : null}
           <p
-            className={`text-sm font-medium leading-relaxed text-[#1c1b1c] ${
+            className={`text-sm font-medium leading-relaxed text-[#000001] ${
               isTranslateOnly ? "mt-2" : ""
             }`}
           >
@@ -188,11 +188,11 @@ function LookupBody({
             >
               <p className="text-xs font-medium lowercase text-[#c45c26]">{sense.partOfSpeech}</p>
               {sense.glossVi && sense.glossViReliable !== false ? (
-                <p className="mt-1 text-sm font-semibold leading-relaxed text-[#1c1b1c]">{sense.glossVi}</p>
+                <p className="mt-1 text-sm font-semibold leading-relaxed text-[#000001]">{sense.glossVi}</p>
               ) : null}
               <p
                 className={`text-sm leading-relaxed text-[#47464b] ${
-                  sense.glossVi && sense.glossViReliable !== false ? "mt-1" : "mt-1 font-medium text-[#1c1b1c]"
+                  sense.glossVi && sense.glossViReliable !== false ? "mt-1" : "mt-1 font-medium text-[#000001]"
                 }`}
               >
                 {sense.definitionEn}
@@ -205,7 +205,7 @@ function LookupBody({
               {sense.examples.map((ex) => (
                 <Root key={ex.en} className="mt-2 rounded-md bg-[#fafafa] px-3 py-2 text-sm">
                   <p className="italic text-[#47464b]">&ldquo;{ex.en}&rdquo;</p>
-                  {ex.vi ? <p className="mt-1 text-[#1c1b1c]">{ex.vi}</p> : null}
+                  {ex.vi ? <p className="mt-1 text-[#000001]">{ex.vi}</p> : null}
                 </Root>
               ))}
             </Root>
@@ -224,7 +224,7 @@ function LookupBody({
                 key={p.en}
                 className="rounded-md border border-[#E4E4E7] bg-[#fafafa] px-2.5 py-1.5 text-sm leading-snug"
               >
-                <span className="font-medium text-[#1c1b1c]">{p.en}</span>
+                <span className="font-medium text-[#000001]">{p.en}</span>
                 {p.vi ? <span className="mt-0.5 block text-xs text-[#47464b]">{p.vi}</span> : null}
               </li>
             ))}
@@ -398,13 +398,13 @@ export function DictionaryPopover({
         <Root className={`min-w-0 flex-1 ${pickDeckHeader ? "text-center" : ""}`}>
           {phase === "lookup" ? (
             <Root className="flex flex-wrap items-center gap-2">
-              <p className="font-serif text-lg font-semibold capitalize text-[#1c1b1c]">{headerTitle}</p>
+              <p className="font-serif text-lg font-semibold capitalize text-[#000001]">{headerTitle}</p>
               <span className="rounded-full bg-[#ebebeb] px-2 py-0.5 text-[9px] font-medium uppercase tracking-wide text-[#47464b]">
                 {isTranslateOnly ? "Dịch nhanh" : "Tra nhanh"}
               </span>
             </Root>
           ) : (
-            <p className="text-sm font-semibold text-[#1c1b1c]">{headerTitle}</p>
+            <p className="text-sm font-semibold text-[#000001]">{headerTitle}</p>
           )}
         </Root>
         <button
@@ -430,7 +430,7 @@ export function DictionaryPopover({
               <p className="text-[10px] font-bold uppercase leading-none tracking-wider text-[#71717A]">
                 Từ đang chọn
               </p>
-              <p className="mt-1 font-serif text-base font-semibold capitalize leading-tight text-[#1c1b1c]">
+              <p className="mt-1 font-serif text-base font-semibold capitalize leading-tight text-[#000001]">
                 {lookup.query}
               </p>
             </Root>
@@ -496,7 +496,7 @@ export function DictionaryPopover({
                           </span>
                           <span
                             className={`min-w-0 flex-1 truncate ${
-                              selected ? "font-medium text-[#1c1b1c]" : "font-normal text-[#47464b]"
+                              selected ? "font-medium text-[#000001]" : "font-normal text-[#47464b]"
                             }`}
                           >
                             {deck.name}
@@ -523,7 +523,7 @@ export function DictionaryPopover({
                 value={term}
                 onChange={(e) => setTerm(e.target.value)}
                 rows={2}
-                className="mt-1 w-full resize-none rounded-lg border border-[#E4E4E7] px-3 py-2 text-base text-[#1c1b1c] outline-none focus:border-[#1c1b1c]"
+                className="mt-1 w-full resize-none rounded-lg border border-[#E4E4E7] px-3 py-2 text-base text-[#000001] outline-none focus:border-[#000001]"
                 lang="en"
               />
             </label>
@@ -535,7 +535,7 @@ export function DictionaryPopover({
                 value={definition}
                 onChange={(e) => setDefinition(e.target.value)}
                 rows={5}
-                className="mt-1 w-full resize-y rounded-lg border border-[#E4E4E7] px-3 py-2 text-base leading-relaxed text-[#1c1b1c] outline-none focus:border-[#1c1b1c]"
+                className="mt-1 w-full resize-y rounded-lg border border-[#E4E4E7] px-3 py-2 text-base leading-relaxed text-[#000001] outline-none focus:border-[#000001]"
                 lang="vi"
               />
             </label>
@@ -552,7 +552,7 @@ export function DictionaryPopover({
             <span className="inline-flex size-12 items-center justify-center rounded-full bg-[#ecfdf3] text-[#15803d]">
               <Check className="size-6" strokeWidth={2.5} aria-hidden />
             </span>
-            <p className="text-sm font-medium text-[#1c1b1c]">
+            <p className="text-sm font-medium text-[#000001]">
               Đã thêm &ldquo;{htmlToPlainTrim(term) || lookup.query}&rdquo;
             </p>
             {selectedDeck ? (
@@ -570,7 +570,7 @@ export function DictionaryPopover({
               e.stopPropagation();
               setPhase("pick-deck");
             }}
-            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#1c1b1c] px-3 py-2.5 text-xs font-semibold text-white hover:bg-black/90"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#000001] px-3 py-2.5 text-xs font-semibold text-white hover:bg-black/90"
           >
             <BookOpen className="size-3.5" aria-hidden />
             Thêm vào bộ thẻ
@@ -604,7 +604,7 @@ export function DictionaryPopover({
                 }
               }}
               placeholder="Tên bộ thẻ mới…"
-              className="min-h-11 min-w-0 flex-1 rounded-lg border border-[#E4E4E7] bg-white px-3 py-2 text-base text-[#1c1b1c] outline-none focus:border-[#4b2876]/50 focus:ring-1 focus:ring-[#4b2876]/15"
+              className="min-h-11 min-w-0 flex-1 rounded-lg border border-[#E4E4E7] bg-white px-3 py-2 text-base text-[#000001] outline-none focus:border-[#4b2876]/50 focus:ring-1 focus:ring-[#4b2876]/15"
             />
             <button
               type="submit"
@@ -629,7 +629,7 @@ export function DictionaryPopover({
           <button
             type="button"
             onClick={() => submitNewDeck()}
-            className="mt-3 inline-flex min-h-11 w-full cursor-pointer touch-manipulation items-center justify-center rounded-lg bg-[#1c1b1c] px-3 py-2.5 text-sm font-semibold text-white active:bg-black/90"
+            className="mt-3 inline-flex min-h-11 w-full cursor-pointer touch-manipulation items-center justify-center rounded-lg bg-[#000001] px-3 py-2.5 text-sm font-semibold text-white active:bg-black/90"
           >
             Tạo bộ thẻ
           </button>
@@ -642,7 +642,7 @@ export function DictionaryPopover({
             type="button"
             onClick={() => setPhase("add")}
             disabled={!selectedDeckId}
-            className="inline-flex w-full items-center justify-center gap-1.5 rounded-lg bg-[#1c1b1c] px-3 py-2.5 text-xs font-semibold text-white hover:bg-black/90 disabled:opacity-40"
+            className="inline-flex w-full items-center justify-center gap-1.5 rounded-lg bg-[#000001] px-3 py-2.5 text-xs font-semibold text-white hover:bg-black/90 disabled:opacity-40"
           >
             Tiếp tục — chỉnh sửa & lưu
             <ArrowRight className="size-3.5" aria-hidden />
@@ -656,7 +656,7 @@ export function DictionaryPopover({
             type="button"
             onClick={onSaveWord}
             disabled={!htmlToPlainTrim(term) || !selectedDeckId}
-            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#1c1b1c] px-3 py-2.5 text-xs font-semibold text-white hover:bg-black/90 disabled:opacity-40"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-[#000001] px-3 py-2.5 text-xs font-semibold text-white hover:bg-black/90 disabled:opacity-40"
           >
             <BookOpen className="size-3.5" aria-hidden />
             Lưu từ
@@ -669,7 +669,7 @@ export function DictionaryPopover({
           <button
             type="button"
             onClick={onClose}
-            className="inline-flex w-full items-center justify-center rounded-lg border border-[#E4E4E7] px-3 py-2.5 text-xs font-semibold text-[#1c1b1c] hover:bg-zinc-50"
+            className="inline-flex w-full items-center justify-center rounded-lg border border-[#E4E4E7] px-3 py-2.5 text-xs font-semibold text-[#000001] hover:bg-zinc-50"
           >
             Tiếp tục đọc
           </button>

@@ -66,7 +66,7 @@ export function ReadingArticleSessionView({
           />
         ) : (
           <div className="mx-auto max-w-3xl px-4 py-16 text-center text-[#47464b]">
-            <p className="font-serif text-xl text-[#1c1b1c]">{article.title}</p>
+            <p className="font-serif text-xl text-[#000001]">{article.title}</p>
             <p className="mt-3 text-sm">Đăng nhập để mở bài đọc, tra từ và thêm vào deck.</p>
           </div>
         )}

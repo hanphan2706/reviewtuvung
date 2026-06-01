@@ -35,7 +35,7 @@ export function ArticleVocabularyPanel({
           >
             <div className="min-w-0">
               <div className="flex items-center gap-1.5">
-                <p className="font-semibold leading-none text-[#1c1b1c]">{w.term}</p>
+                <p className="font-semibold leading-none text-[#000001]">{w.term}</p>
                 <button
                   type="button"
                   onClick={() => speakEnglish(w.term)}
@@ -53,7 +53,7 @@ export function ArticleVocabularyPanel({
       </div>
       <Link
         href={flashcardsHref}
-        className="mt-4 flex w-full items-center justify-center rounded-lg border border-[#1c1b1c] py-3 text-[10px] font-bold uppercase tracking-wider text-[#1c1b1c] transition hover:bg-[#1c1b1c] hover:text-white"
+        className="mt-4 flex w-full items-center justify-center rounded-lg border border-[#000001] py-3 text-[10px] font-bold uppercase tracking-wider text-[#000001] transition hover:bg-black/90 hover:text-white"
       >
         Luyện tập flashcards
       </Link>

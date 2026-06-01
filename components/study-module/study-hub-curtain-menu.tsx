@@ -118,7 +118,7 @@ export function StudyHubCurtainMenu({
             </p>
             <button
               type="button"
-              className="mt-4 w-full rounded-lg bg-[#1c1b1c] px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition hover:bg-black/90"
+              className="mt-4 w-full rounded-lg bg-[#000001] px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition hover:bg-black/90"
             >
               Nâng cấp ngay
             </button>

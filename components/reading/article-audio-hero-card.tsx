@@ -76,7 +76,7 @@ export function ArticleAudioHeroCard({
             <span className="w-fit rounded-md bg-[#f7f3f2] px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-[#616365]">
               {metaPill}
             </span>
-            <h1 className="font-serif text-2xl font-bold leading-tight tracking-tight text-[#1c1b1c] md:text-[1.75rem]">
+            <h1 className="font-serif text-2xl font-bold leading-tight tracking-tight text-[#000001] md:text-[1.75rem]">
               {title}
             </h1>
             {deck ? (

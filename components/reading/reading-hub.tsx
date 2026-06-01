@@ -41,7 +41,7 @@ function ReadingHubSkeleton() {
           <div className="min-h-[300px] animate-pulse rounded-lg bg-[#ebebeb]" />
           <div className="min-h-[200px] animate-pulse rounded-lg bg-[#ebebeb] md:col-span-2" />
         </div>
-        <div className="min-h-[300px] animate-pulse rounded-lg bg-[#1c1b1c]/10" />
+        <div className="min-h-[300px] animate-pulse rounded-lg bg-[#000001]/10" />
       </div>
     </div>
   );
@@ -91,7 +91,7 @@ function ReadingHubContent({
             <span className="inline-block rounded-sm bg-[#ebebeb] px-2.5 py-0.5 text-[9px] font-normal uppercase tracking-[0.18em] text-[#47464b]">
               Bài đọc nổi bật
             </span>
-            <h1 className="mt-5 font-serif text-3xl font-normal leading-tight text-[#1c1b1c] md:text-[2.25rem]">
+            <h1 className="mt-5 font-serif text-3xl font-normal leading-tight text-[#000001] md:text-[2.25rem]">
               {hero.title}
             </h1>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-[#47464b]">

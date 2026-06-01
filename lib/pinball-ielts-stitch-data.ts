@@ -1,6 +1,6 @@
 /** Nội dung & link Pinball — bullets khớp course info/code.html; URL từ Notion. */
 
-export const PINBALL_BANNER_IMAGE = "/pinball.jpg";
+export const PINBALL_BANNER_IMAGE = "/course%202.jpg";
 
 export const PINBALL_TEACHER_SCORES = [
   "IELTS 8.0 Overall",

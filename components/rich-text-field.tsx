@@ -344,7 +344,7 @@ export function RichTextField({
         B
       </button>
       {WORD_NOTION_TEXT_COLORS.map((c) => {
-        const isWhite = c.hex.toLowerCase() === "#ffffff";
+        const isWhite = c.hex.toLowerCase() === "#fafafa" || c.hex.toLowerCase() === "#ffffff";
         return (
           <button
             key={c.id}

@@ -37,8 +37,11 @@ export function CourseStitchContent({ config }: { config: CourseStitchConfig }) 
             className="pinball-stitch-hero-banner__img"
             src={config.hero.bannerImage}
             alt=""
-            width={750}
-            height={1777}
+            style={
+              config.hero.bannerObjectPosition
+                ? { objectPosition: config.hero.bannerObjectPosition }
+                : undefined
+            }
             decoding="async"
             loading="eager"
           />
@@ -97,7 +100,11 @@ export function CourseStitchContent({ config }: { config: CourseStitchConfig }) 
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
-          <div className="pinball-stitch-entrance__options">
+          <div
+            className={`pinball-stitch-entrance__options${
+              config.entrance.options.length === 2 ? " pinball-stitch-entrance__options--duo" : ""
+            }`}
+          >
             {config.entrance.options.map((option) => (
               <a
                 key={option.label}
@@ -109,7 +116,13 @@ export function CourseStitchContent({ config }: { config: CourseStitchConfig }) 
                 <span className="material-symbols-outlined pinball-stitch-entrance-option__icon" aria-hidden>
                   {option.icon}
                 </span>
-                <span className="pinball-stitch-entrance-option__label">{option.label}</span>
+                <span
+                  className={`pinball-stitch-entrance-option__label${
+                    option.label.includes("/") ? " pinball-stitch-entrance-option__label--nowrap" : ""
+                  }`}
+                >
+                  {option.label}
+                </span>
                 <ArrowRight className="pinball-stitch-entrance-option__arrow" strokeWidth={1.75} aria-hidden />
               </a>
             ))}
@@ -125,10 +138,31 @@ export function CourseStitchContent({ config }: { config: CourseStitchConfig }) 
           </div>
           <div className="pinball-stitch-pricing-col md:col-span-5">
             <div className="pinball-stitch-pricing-card">
-              <p className="pinball-stitch-pricing-amount">
-                {config.pricing.amount}
-                {config.pricing.amountSuffix ? <span> {config.pricing.amountSuffix}</span> : null}
-              </p>
+              {config.pricing.lines ? (
+                <div className="pinball-stitch-pricing-lines">
+                  {config.pricing.lines.map((line) => (
+                    <p key={line.amount + line.suffix} className="pinball-stitch-pricing-amount">
+                      {line.amount}
+                      <span> {line.suffix}</span>
+                    </p>
+                  ))}
+                </div>
+              ) : (
+                <p className="pinball-stitch-pricing-amount">
+                  {config.pricing.amount}
+                  {config.pricing.amountSuffix ? (
+                    <span
+                      className={
+                        config.pricing.amountSuffixBlock ? "pinball-stitch-pricing-suffix" : undefined
+                      }
+                    >
+                      {config.pricing.amountSuffixBlock
+                        ? config.pricing.amountSuffix
+                        : ` ${config.pricing.amountSuffix}`}
+                    </span>
+                  ) : null}
+                </p>
+              )}
               {config.pricing.note ? (
                 <p className="pinball-stitch-pricing-note">{config.pricing.note}</p>
               ) : null}

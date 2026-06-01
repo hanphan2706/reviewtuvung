@@ -185,7 +185,7 @@ export function ArticleBodyContent({
         <MobileTranslationFab open={showAllTranslations} onToggle={toggleAllTranslations} />
       ) : null}
 
-      <div className="select-text touch-callout-none space-y-6 font-serif text-lg leading-[1.8] text-[#1c1b1c]">
+      <div className="select-text touch-callout-none space-y-6 font-serif text-lg leading-[1.8] text-[#000001]">
         {paragraphs.map((para, index) => {
           const slotIndex = showDeckInBody ? index + 1 : index;
           const vi = alignedVi[slotIndex];

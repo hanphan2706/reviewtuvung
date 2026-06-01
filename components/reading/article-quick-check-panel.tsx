@@ -63,7 +63,7 @@ export function ArticleQuickCheckPanel({
         )}
         <a
           href={examHref}
-          className="flex w-full items-center justify-center rounded-lg border border-[#1c1b1c] bg-white px-4 py-3 text-center text-[10px] font-bold uppercase tracking-wider text-[#1c1b1c] transition hover:bg-[#1c1b1c] hover:text-white"
+          className="flex w-full items-center justify-center rounded-lg border border-[#000001] bg-white px-4 py-3 text-center text-[10px] font-bold uppercase tracking-wider text-[#000001] transition hover:bg-black/90 hover:text-white"
         >
           Thử thách làm bài đọc IELTS
         </a>
@@ -81,7 +81,7 @@ export function ArticleQuickCheckPanel({
 
   return (
     <div className="mt-4 space-y-4">
-      <p className="text-[15px] font-semibold leading-relaxed text-[#1c1b1c]">{quiz.question}</p>
+      <p className="text-[15px] font-semibold leading-relaxed text-[#000001]">{quiz.question}</p>
       <div className="flex flex-col gap-2">
         {quiz.options.map((opt, i) => (
           <StitchRadioOption
@@ -101,7 +101,7 @@ export function ArticleQuickCheckPanel({
         type="button"
         disabled={picked === null}
         onClick={() => setSubmitted(true)}
-        className="flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#1c1b1c] bg-white py-2.5 text-[10px] font-bold uppercase tracking-wider text-[#1c1b1c] transition hover:bg-[#1c1b1c] hover:text-white disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white disabled:hover:text-[#1c1b1c]"
+        className="flex w-full cursor-pointer items-center justify-center rounded-lg border border-[#000001] bg-white py-2.5 text-[10px] font-bold uppercase tracking-wider text-[#000001] transition hover:bg-black/90 hover:text-white disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white disabled:hover:text-[#000001]"
       >
         {showTranslation ? "Kiểm tra đáp án" : "Check answer"}
       </button>
