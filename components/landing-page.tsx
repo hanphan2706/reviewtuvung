@@ -19,6 +19,9 @@ import { LandingSectionLink } from "@/components/landing-section-link";
 /** ~card width + `gap-3` for snap scroll. */
 const CAROUSEL_STEP = 334;
 
+/** Reset khi hard refresh; giữ qua client-nav trong cùng tab. */
+let landingLaunchModalShownThisDocument = false;
+
 export function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [readingLaunchModalOpen, setReadingLaunchModalOpen] = useState(false);
@@ -51,7 +54,9 @@ export function LandingPage() {
   useEffect(() => {
     if (pathname !== "/") return;
     if (typeof window === "undefined") return;
+    if (landingLaunchModalShownThisDocument) return;
     const timeoutId = window.setTimeout(() => {
+      landingLaunchModalShownThisDocument = true;
       setReadingLaunchModalOpen(true);
     }, 0);
     return () => window.clearTimeout(timeoutId);
@@ -399,7 +404,7 @@ function SelfStudySection() {
       priceHint: "Luyện đọc",
       image: "/luyen-doc-image-2.jpg",
       summary:
-        "Đọc chủ động và đều đặn để tăng khả năng suy nghĩ sâu và tập trung hơn, từ các nguồn đọc đa dạng như IELTS, NatGeo, The Economist hoặc fiction.",
+        "Đọc chủ động và đều đặn để tăng khả năng suy nghĩ sâu và tập trung hơn, từ các nguồn đọc đa dạng như IELTS, NatGeo, The Economist hoặc fiction",
     },
     {
       slug: "pinball-ielts" as const,

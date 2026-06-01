@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { StudyHubBackLink } from "@/components/study-module/study-hub-back-link";
 import { StudyHubCurtainMenu } from "@/components/study-module/study-hub-curtain-menu";
+import { StudyHubHamburgerButton } from "@/components/study-module/study-hub-hamburger-button";
 import { useStudyHubDesktopNav } from "@/hooks/use-study-hub-desktop-nav";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 import {
@@ -81,21 +82,7 @@ function HubDropdown({
 }
 
 function HamburgerButton({ open, onOpen }: { open: boolean; onOpen: () => void }) {
-  return (
-    <button
-      type="button"
-      onClick={onOpen}
-      className="inline-flex shrink-0 cursor-pointer items-center justify-center p-1.5 text-ink transition hover:cursor-pointer hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
-      aria-expanded={open}
-      aria-haspopup="dialog"
-      aria-label="Mở menu"
-    >
-      <span className="flex w-[22px] flex-col justify-center gap-[5px]" aria-hidden>
-        <span className="h-0.5 w-full rounded-full bg-zinc-900" />
-        <span className="h-0.5 w-full rounded-full bg-zinc-900" />
-      </span>
-    </button>
-  );
+  return <StudyHubHamburgerButton open={open} onClick={onOpen} />;
 }
 
 export function StudyHubHeader({
