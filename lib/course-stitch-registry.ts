@@ -38,6 +38,7 @@ export const PINBALL_IELTS_STITCH_CONFIG: CourseStitchConfig = {
     options: PINBALL_ENTRANCE_OPTIONS,
   },
   tuitionPanels: PINBALL_TUITION_PANELS,
+  tuitionDefaultOpenId: "tuition-6",
   pricing: {
     amount: "8.400.000đ",
     amountSuffix: "/ khoá",

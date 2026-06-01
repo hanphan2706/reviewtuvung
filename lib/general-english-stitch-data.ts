@@ -163,6 +163,7 @@ export const GENERAL_ENGLISH_STITCH_CONFIG: CourseStitchConfig = {
     ],
   },
   tuitionPanels: GENERAL_ENGLISH_TUITION_PANELS,
+  tuitionDefaultOpenId: "ge-tuition-1",
   pricing: {
     amount: "4.950.000đ",
     amountSuffix: "/ khoá",

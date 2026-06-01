@@ -67,6 +67,8 @@ export type CourseStitchConfig = {
     options: readonly CourseEntranceOption[];
   };
   tuitionPanels: readonly CourseTuitionPanel[];
+  /** Panel quyền lợi mở sẵn (mặc định: «Tương tác trên lớp» nếu có). */
+  tuitionDefaultOpenId?: string;
   pricing: {
     amount?: string;
     amountSuffix?: string;

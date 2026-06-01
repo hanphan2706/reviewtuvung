@@ -134,7 +134,10 @@ export function CourseStitchContent({ config }: { config: CourseStitchConfig }) 
         <h2 className="pinball-stitch-section-title">Quyền lợi và Học phí</h2>
         <div className="pinball-stitch-tuition-layout grid grid-cols-1 items-start gap-7 md:grid-cols-12">
           <div className="md:col-span-7">
-            <CourseTuitionAccordion panels={config.tuitionPanels} />
+            <CourseTuitionAccordion
+              panels={config.tuitionPanels}
+              defaultOpenId={config.tuitionDefaultOpenId}
+            />
           </div>
           <div className="pinball-stitch-pricing-col md:col-span-5">
             <div className="pinball-stitch-pricing-card">

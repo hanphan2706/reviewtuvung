@@ -2,10 +2,19 @@
 
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { resolveTuitionDefaultOpenId } from "@/lib/course-stitch-accordion";
 import type { CourseTuitionPanel } from "@/lib/course-stitch-types";
 
-export function CourseTuitionAccordion({ panels }: { panels: readonly CourseTuitionPanel[] }) {
-  const [openId, setOpenId] = useState<string | null>(null);
+export function CourseTuitionAccordion({
+  panels,
+  defaultOpenId,
+}: {
+  panels: readonly CourseTuitionPanel[];
+  defaultOpenId?: string;
+}) {
+  const [openId, setOpenId] = useState<string | null>(() =>
+    resolveTuitionDefaultOpenId(panels, defaultOpenId),
+  );
 
   return (
     <div className="divide-y divide-zinc-200/90">
