@@ -1,6 +1,18 @@
 import { resolveReadingArticleRoute } from "@/lib/reading/article-routes";
 import type { ReadingPilotId } from "@/lib/reading/hub-articles";
 
+/** Landing + trang khoá học — không cần session Supabase trên middleware. */
+export function isPublicMarketingPath(pathname: string): boolean {
+  if (pathname === "/") return true;
+  if (pathname === "/di-hoc" || pathname.startsWith("/di-hoc/")) return true;
+  if (pathname === "/gioi-thieu" || pathname.startsWith("/gioi-thieu/")) return true;
+  if (pathname === "/privacy" || pathname.startsWith("/privacy/")) return true;
+  if (pathname === "/cookies" || pathname.startsWith("/cookies/")) return true;
+  if (pathname === "/credits" || pathname.startsWith("/credits/")) return true;
+  if (pathname === "/newsletter" || pathname.startsWith("/newsletter/")) return true;
+  return false;
+}
+
 /** Hub Luyện nghe — xem được khi chưa đăng nhập. Luyện đọc: chỉ hub/thư viện; bài đọc cần login. */
 export function isPublicStudyHubPath(pathname: string): boolean {
   if (pathname === "/tu-hoc/luyen-nghe" || pathname.startsWith("/tu-hoc/luyen-nghe/")) return true;

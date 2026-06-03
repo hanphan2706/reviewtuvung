@@ -6,6 +6,7 @@ import {
   isProtectedAppPath,
   isPublicReadingExamApi,
   isPublicReadingExamBootApi,
+  isPublicMarketingPath,
   isPublicStudyHubPath,
 } from "@/lib/auth/protected-routes";
 import { isPrivateReadingAudioPath } from "@/lib/reading/reading-audio-storage";
@@ -51,14 +52,18 @@ export async function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  if (isPrivateReadingAudioPath(pathname)) {
+    return new NextResponse(null, { status: 404 });
+  }
+
+  if (isPublicMarketingPath(pathname)) {
+    return NextResponse.next();
+  }
+
   const { response: supabaseResponse, user } = await refreshSupabaseSession(request);
   const hostname = resolveRequestHostname(url.hostname, request.headers.get("host"));
   const devBypass = !user && isDevAuthBypassForHost(hostname);
   const allowAccess = Boolean(user) || devBypass;
-
-  if (isPrivateReadingAudioPath(pathname)) {
-    return new NextResponse(null, { status: 404 });
-  }
 
   if (isPublicStudyHubPath(pathname)) {
     return supabaseResponse;

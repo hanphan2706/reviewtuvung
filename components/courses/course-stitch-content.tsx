@@ -1,57 +1,22 @@
 import { ArrowRight } from "lucide-react";
 import { CourseCurriculumAccordion } from "@/components/courses/course-curriculum-accordion";
+import { CourseStitchHeroBanner } from "@/components/courses/course-stitch-hero-banner";
+import { CourseStitchIcon } from "@/components/courses/course-stitch-icon";
 import { CourseTuitionAccordion } from "@/components/courses/course-tuition-accordion";
 import { LANDING } from "@/lib/landing-content";
 import type { CourseStitchConfig } from "@/lib/course-stitch-types";
-
-function MIcon({
-  name,
-  size = "md",
-  className = "",
-}: {
-  name: string;
-  size?: "sm" | "md" | "lg";
-  className?: string;
-}) {
-  const sizeClass =
-    size === "lg" ? "ps-icon-lg" : size === "sm" ? "ps-icon-sm" : "";
-  return (
-    <span
-      className={`material-symbols-outlined ${sizeClass} ${className}`.trim()}
-      aria-hidden
-    >
-      {name}
-    </span>
-  );
-}
 
 export function CourseStitchContent({ config }: { config: CourseStitchConfig }) {
   const registerHref = LANDING.courseRegistrationForm;
 
   return (
     <main className="pinball-stitch-root mx-auto flex max-w-[1000px] flex-col gap-[50px] py-11 antialiased">
-      <header className="pinball-stitch-hero">
-        <div className="pinball-stitch-hero-banner">
-          {/* eslint-disable-next-line @next/next/no-img-element -- ảnh public */}
-          <img
-            className="pinball-stitch-hero-banner__img"
-            src={config.hero.bannerImage}
-            alt=""
-            style={
-              config.hero.bannerObjectPosition
-                ? { objectPosition: config.hero.bannerObjectPosition }
-                : undefined
-            }
-            decoding="async"
-            loading="eager"
-          />
-          <div className="pinball-stitch-hero-banner__scrim" aria-hidden />
-          <div className="pinball-stitch-hero-banner__content">
-            <h1 className="pinball-stitch-hero__title">{config.hero.title}</h1>
-            <p className="pinball-stitch-hero__subtitle">{config.hero.subtitle}</p>
-          </div>
-        </div>
-      </header>
+      <CourseStitchHeroBanner
+        bannerImage={config.hero.bannerImage}
+        bannerObjectPosition={config.hero.bannerObjectPosition}
+        title={config.hero.title}
+        subtitle={config.hero.subtitle}
+      />
 
       <section className="pinball-stitch-section" id="overview">
         <h2 className="pinball-stitch-section-title">Tổng quan khoá học</h2>
@@ -59,7 +24,7 @@ export function CourseStitchContent({ config }: { config: CourseStitchConfig }) 
           <div className="pinball-stitch-overview__grid">
             {config.overview.map((item) => (
               <div key={item.icon + item.label} className="pinball-stitch-overview-card">
-                <MIcon name={item.icon} />
+                <CourseStitchIcon name={item.icon} />
                 <div className="pinball-stitch-overview-card__text">
                   <p className="pinball-stitch-overview-card__label">{item.label}</p>
                   <p className="pinball-stitch-overview-card__value">{item.value}</p>
@@ -68,7 +33,7 @@ export function CourseStitchContent({ config }: { config: CourseStitchConfig }) 
             ))}
           </div>
           <div className="pinball-stitch-pill pinball-stitch-schedule">
-            <MIcon name="calendar_month" />
+            <CourseStitchIcon name="calendar_month" />
             <span>{config.schedulePill}</span>
           </div>
         </div>
@@ -92,7 +57,7 @@ export function CourseStitchContent({ config }: { config: CourseStitchConfig }) 
       {config.entrance ? (
         <section className="pinball-stitch-section pinball-stitch-entrance" id="entrance-test">
           <h2 className="pinball-stitch-entrance__title">
-            <MIcon name="quiz" className="ps-accent" />
+            <CourseStitchIcon name="quiz" className="ps-accent" />
             Kiểm tra đầu vào
           </h2>
           <div className="pinball-stitch-entrance__text">
@@ -113,9 +78,7 @@ export function CourseStitchContent({ config }: { config: CourseStitchConfig }) 
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="material-symbols-outlined pinball-stitch-entrance-option__icon" aria-hidden>
-                  {option.icon}
-                </span>
+                <CourseStitchIcon name={option.icon} className="pinball-stitch-entrance-option__icon" />
                 <span
                   className={`pinball-stitch-entrance-option__label${
                     option.label.includes("/") ? " pinball-stitch-entrance-option__label--nowrap" : ""
@@ -244,9 +207,7 @@ export function CourseStitchContent({ config }: { config: CourseStitchConfig }) 
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className="material-symbols-outlined pinball-stitch-teacher-link__icon" aria-hidden>
-                      {link.icon}
-                    </span>
+                    <CourseStitchIcon name={link.icon} className="pinball-stitch-teacher-link__icon" />
                     <span className="pinball-stitch-teacher-link__label">{link.label}</span>
                   </a>
                 </li>

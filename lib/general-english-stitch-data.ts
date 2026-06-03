@@ -93,7 +93,7 @@ export const GENERAL_ENGLISH_TUITION_PANELS = [
     id: "ge-tuition-1",
     title: "Tương tác trên lớp",
     bodyHtml:
-      'Lớp học luôn được thiết kế để bạn <mark class="highlight-red"><strong>tương tác</strong></mark> và tạo cơ hội để bạn <mark class="highlight-red"><strong>sử dụng tiếng Anh</strong></mark> nhiều nhất có thể, chứ không phải “cô giảng, trò nghe”. Bạn có thể xem thử <mark class="highlight-blue"><a href="https://drive.google.com/file/d/1D9VXInTUNDcpF0fDffN2VwgHHL3THTPk/view?usp=sharing">recording</a></mark> một buổi học của mình.',
+      'Lớp học luôn được thiết kế để bạn <mark class="highlight-red"><strong>tương tác</strong></mark> và tạo cơ hội để bạn <mark class="highlight-red"><strong>sử dụng tiếng Anh</strong></mark> nhiều nhất có thể, chứ không phải “cô giảng, trò nghe”. Bạn có thể xem thử <mark class="highlight-blue"><a href="https://drive.google.com/drive/folders/1Cz3ZqAE0UBdFT6HPnHrk6qPrzaSy4tNm?usp=sharing">recording</a></mark> một buổi học của mình.',
   },
   {
     id: "ge-tuition-2",
@@ -123,7 +123,7 @@ export const GENERAL_ENGLISH_TUITION_PANELS = [
     id: "ge-tuition-6",
     title: "Recording & thanh toán học phí",
     bodyHtml:
-      'Bạn có thể xem <mark class="highlight-blue"><a href="https://drive.google.com/file/d/1D9VXInTUNDcpF0fDffN2VwgHHL3THTPk/view?usp=sharing">recording</a></mark> một buổi học của mình, sau đó nếu cảm thấy hài lòng bạn có thể hoàn thành học phí trước <mark class="highlight-blue"><strong>50% hoặc 100% cho cả khoá.</strong></mark>',
+      'Bạn có thể xem <mark class="highlight-blue"><a href="https://drive.google.com/drive/folders/1Cz3ZqAE0UBdFT6HPnHrk6qPrzaSy4tNm?usp=sharing">recording</a></mark> một buổi học của mình, sau đó nếu cảm thấy hài lòng bạn có thể hoàn thành học phí trước <mark class="highlight-blue"><strong>50% hoặc 100% cho cả khoá.</strong></mark>',
   },
 ] as const;
 

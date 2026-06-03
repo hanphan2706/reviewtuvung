@@ -1,6 +1,7 @@
 "use client";
 
 import { ChevronDown } from "lucide-react";
+import { CourseStitchIcon } from "@/components/courses/course-stitch-icon";
 import { useState } from "react";
 import type { CourseCurriculumBullet, CourseCurriculumItem } from "@/lib/course-stitch-types";
 
@@ -67,9 +68,7 @@ export function CourseCurriculumAccordion({
               aria-expanded={isOpen}
               onClick={() => setOpenId(isOpen ? "" : item.id)}
             >
-              <span className="material-symbols-outlined pinball-stitch-accordion__icon" aria-hidden>
-                {item.icon}
-              </span>
+              <CourseStitchIcon name={item.icon} className="pinball-stitch-accordion__icon" />
               <span className="pinball-stitch-accordion__title">{item.title}</span>
               <ChevronDown
                 className={`pinball-stitch-accordion__chevron${isOpen ? " is-open" : ""}`}

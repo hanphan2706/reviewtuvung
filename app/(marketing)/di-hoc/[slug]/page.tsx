@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CourseStitchContent } from "@/components/courses/course-stitch-content";
-import "material-symbols/outlined.css";
 import { LANDING } from "@/lib/landing-content";
 import { LandingSectionLink } from "@/components/landing-section-link";
 import { getCourseStitchConfig } from "@/lib/course-stitch-registry";

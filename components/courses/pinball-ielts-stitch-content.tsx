@@ -1,5 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { PinballCurriculumAccordion } from "@/components/courses/pinball-curriculum-accordion";
+import { CourseStitchHeroBanner } from "@/components/courses/course-stitch-hero-banner";
+import { CourseStitchIcon } from "@/components/courses/course-stitch-icon";
 import { PinballTuitionAccordion } from "@/components/courses/pinball-tuition-accordion";
 import { LANDING } from "@/lib/landing-content";
 import {
@@ -15,57 +17,18 @@ import {
   PINBALL_TEACHER_SCORES,
 } from "@/lib/pinball-ielts-stitch-data";
 
-function MIcon({
-  name,
-  size = "md",
-  className = "",
-}: {
-  name: string;
-  size?: "sm" | "md" | "lg";
-  className?: string;
-}) {
-  const sizeClass =
-    size === "lg" ? "ps-icon-lg" : size === "sm" ? "ps-icon-sm" : "";
-  return (
-    <span
-      className={`material-symbols-outlined ${sizeClass} ${className}`.trim()}
-      aria-hidden
-    >
-      {name}
-    </span>
-  );
-}
-
 export function PinballIeltsStitchContent() {
   const registerHref = LANDING.courseRegistrationForm;
   const heroBanner = courseHeroBannerFromLanding("pinball-ielts");
 
   return (
     <main className="pinball-stitch-root mx-auto flex max-w-[1000px] flex-col gap-[50px] py-11 antialiased">
-      <header className="pinball-stitch-hero">
-        <div className="pinball-stitch-hero-banner">
-          {/* eslint-disable-next-line @next/next/no-img-element -- ảnh public */}
-          <img
-            className="pinball-stitch-hero-banner__img"
-            src={heroBanner.bannerImage}
-            alt=""
-            style={
-              heroBanner.bannerObjectPosition
-                ? { objectPosition: heroBanner.bannerObjectPosition }
-                : undefined
-            }
-            decoding="async"
-            loading="eager"
-          />
-          <div className="pinball-stitch-hero-banner__scrim" aria-hidden />
-          <div className="pinball-stitch-hero-banner__content">
-            <h1 className="pinball-stitch-hero__title">Pinball IELTS 2.0 (4.5+ - 6.0+)</h1>
-            <p className="pinball-stitch-hero__subtitle">
-              A scholarly journey designed for academic discipline and linguistic mastery
-            </p>
-          </div>
-        </div>
-      </header>
+      <CourseStitchHeroBanner
+        bannerImage={heroBanner.bannerImage}
+        bannerObjectPosition={heroBanner.bannerObjectPosition}
+        title="Pinball IELTS 2.0 (4.5+ - 6.0+)"
+        subtitle="A scholarly journey designed for academic discipline and linguistic mastery"
+      />
 
       <section className="pinball-stitch-section" id="overview">
         <h2 className="pinball-stitch-section-title">Tổng quan khoá học</h2>
@@ -73,7 +36,7 @@ export function PinballIeltsStitchContent() {
           <div className="pinball-stitch-overview__grid">
             {PINBALL_OVERVIEW.map((item) => (
               <div key={item.icon} className="pinball-stitch-overview-card">
-                <MIcon name={item.icon} />
+                <CourseStitchIcon name={item.icon} />
                 <div className="pinball-stitch-overview-card__text">
                   <p className="pinball-stitch-overview-card__label">{item.label}</p>
                   <p className="pinball-stitch-overview-card__value">{item.value}</p>
@@ -82,7 +45,7 @@ export function PinballIeltsStitchContent() {
             ))}
           </div>
           <div className="pinball-stitch-pill pinball-stitch-schedule">
-            <MIcon name="calendar_month" />
+            <CourseStitchIcon name="calendar_month" />
             <span>Ngày và giờ học dự kiến: Lớp tháng 4/2026 đã khai giảng</span>
           </div>
         </div>
@@ -97,7 +60,7 @@ export function PinballIeltsStitchContent() {
 
       <section className="pinball-stitch-section pinball-stitch-entrance" id="entrance-test">
         <h2 className="pinball-stitch-entrance__title">
-          <MIcon name="quiz" className="ps-accent" />
+          <CourseStitchIcon name="quiz" className="ps-accent" />
           Kiểm tra đầu vào
         </h2>
         <div className="pinball-stitch-entrance__text">
@@ -116,9 +79,7 @@ export function PinballIeltsStitchContent() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="material-symbols-outlined pinball-stitch-entrance-option__icon" aria-hidden>
-                {option.icon}
-              </span>
+              <CourseStitchIcon name={option.icon} className="pinball-stitch-entrance-option__icon" />
               <span className="pinball-stitch-entrance-option__label">{option.label}</span>
               <ArrowRight className="pinball-stitch-entrance-option__arrow" strokeWidth={1.75} aria-hidden />
             </a>
@@ -221,9 +182,7 @@ export function PinballIeltsStitchContent() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="material-symbols-outlined pinball-stitch-teacher-link__icon" aria-hidden>
-                    school
-                  </span>
+                  <CourseStitchIcon name="school" className="pinball-stitch-teacher-link__icon" />
                   <span className="pinball-stitch-teacher-link__label">
                     Thông tin về chứng chỉ của mình
                   </span>
@@ -236,9 +195,7 @@ export function PinballIeltsStitchContent() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="material-symbols-outlined pinball-stitch-teacher-link__icon" aria-hidden>
-                    newspaper
-                  </span>
+                  <CourseStitchIcon name="newspaper" className="pinball-stitch-teacher-link__icon" />
                   <span className="pinball-stitch-teacher-link__label">
                     Một số feedback của học viên mình
                   </span>
