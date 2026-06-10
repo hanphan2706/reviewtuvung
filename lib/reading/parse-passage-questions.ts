@@ -1,3 +1,5 @@
+import { extractGapNumbersFromLine, hasFillGap, textHasBlankChars } from "@/lib/reading/fill-gap-pattern";
+
 export type ExamStatementItem = {
   num: number;
   text: string;
@@ -93,21 +95,14 @@ function parseNumberedStatement(line: string): { num: number; text: string } | n
   if (!m?.[2]) return null;
   const text = m[2].trim();
   if (text.length < 8) return null;
-  if (/_{2,}/.test(text)) return null;
+  if (textHasBlankChars(text)) return null;
   return { num: Number.parseInt(m[1], 10), text };
 }
 
 function extractGapNums(lines: string[]): number[] {
   const nums: number[] = [];
-  const re = /(\d{1,2})\s*_{2,}/g;
   for (const line of lines) {
-    let m = re.exec(line);
-    while (m !== null) {
-      const n = Number.parseInt(m[1] ?? "", 10);
-      if (!Number.isNaN(n)) nums.push(n);
-      m = re.exec(line);
-    }
-    re.lastIndex = 0;
+    nums.push(...extractGapNumbersFromLine(line));
   }
   return nums;
 }
@@ -239,7 +234,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
           instructionLines.push(line);
           continue;
         }
-        if (/^●|^○/.test(line) || /(\d{1,2})\s*_{2,}/.test(line)) {
+        if (/^●|^○/.test(line) || hasFillGap(line)) {
           bodyLines.push(line);
           phase = "body";
           continue;
@@ -249,7 +244,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
           bodyLines.push(line);
           continue;
         }
-        if (/^[A-Z]/.test(line) && line.length < 72 && !/(\d{1,2})\s*_{2,}/.test(line)) {
+        if (/^[A-Z]/.test(line) && line.length < 72 && !hasFillGap(line)) {
           bodyLines.push(line);
           phase = "body";
           continue;

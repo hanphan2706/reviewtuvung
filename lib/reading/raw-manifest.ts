@@ -2,6 +2,11 @@
  * Pilot đọc — file nằm trong `reading raw/` (gitignore). Thêm bài: thêm entry + copy file .txt.
  */
 export const READING_RAW_FILES: Record<string, string> = {
+  "cam19-test4": "cam 19 test 4.txt",
+  "cam19-test3": "cam 19 test 3.txt",
+  "cam19-test2": "cam 19 test 2.txt",
+  "cam19-test1": "cam 19 test 1.txt",
+  "cam18-test1": "cam 18 test 1.txt",
   "cam20-test1": "cam 20 test 1.txt",
   "cam20-test2": "cam 20 test 2.txt",
   "cam20-test3": "cam 20 test 3.txt",

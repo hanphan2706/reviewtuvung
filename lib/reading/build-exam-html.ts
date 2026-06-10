@@ -1,3 +1,4 @@
+import { FILL_GAP_BLANK, FILL_GAP_RE, hasFillGap } from "@/lib/reading/fill-gap-pattern";
 import { splitBodyParagraphs } from "@/lib/reading/format-paragraphs";
 import { splitTfngInstructionSegments } from "@/lib/reading/format-tfng-instruction";
 import {
@@ -135,7 +136,7 @@ function formatPassageParagraphs(body: string): string {
 function renderGapText(raw: string): { html: string; nums: number[] } {
   const nums: number[] = [];
   const parts: string[] = [];
-  const re = /(\d{1,2})\s*_{2,}/g;
+  const re = new RegExp(FILL_GAP_RE.source, "g");
   let last = 0;
   let m = re.exec(raw);
   while (m !== null) {
@@ -148,14 +149,36 @@ function renderGapText(raw: string): { html: string; nums: number[] } {
     last = m.index + m[0].length;
     m = re.exec(raw);
   }
-  parts.push(escHtml(raw.slice(last)));
-  return { html: parts.join(""), nums };
+  if (nums.length > 0) {
+    parts.push(escHtml(raw.slice(last)));
+    return { html: parts.join(""), nums };
+  }
+
+  const lead = raw.match(/^(\d{1,2})\s+(.+)$/);
+  if (lead?.[1] && lead[2]) {
+    const n = Number.parseInt(lead[1], 10);
+    const body = lead[2];
+    const blankRe = new RegExp(FILL_GAP_BLANK);
+    const bm = blankRe.exec(body);
+    if (bm && bm.index !== undefined && !Number.isNaN(n)) {
+      nums.push(n);
+      const before = escHtml(body.slice(0, bm.index));
+      const after = escHtml(body.slice(bm.index + bm[0].length));
+      const input = `<span class="fi-stack"><span class="fi-num">(${n})</span><input class="fi" id="q${n}" autocomplete="off" oninput="markFill('q${n}',this.value)"></span>`;
+      return {
+        html: `<span class="sentence-qnum">${n}</span>\u00a0\u00a0${before}${input}${after}`,
+        nums,
+      };
+    }
+  }
+
+  return { html: escHtml(raw), nums };
 }
 
 function renderGapPhraseBank(raw: string, _options: McqOption[]): { html: string; nums: number[] } {
   const nums: number[] = [];
   const parts: string[] = [];
-  const re = /(\d{1,2})\s*_{2,}/g;
+  const re = new RegExp(FILL_GAP_RE.source, "g");
   let last = 0;
   let m = re.exec(raw);
   while (m !== null) {
@@ -283,11 +306,11 @@ function renderSummaryFill(section: ExamQuestionSection): { html: string; nums: 
   const allNums: number[] = [];
   const lines = section.bodyLines;
   const titleLine =
-    lines.find((l) => /\?$/.test(l) && !/(\d{1,2})\s*_{2,}/.test(l)) ??
+    lines.find((l) => /\?$/.test(l) && !hasFillGap(l)) ??
     lines.find(
       (l) =>
         /^[A-Z]/.test(l) &&
-        !/(\d{1,2})\s*_{2,}/.test(l) &&
+        !hasFillGap(l) &&
         l.length < 72 &&
         !/^Complete the summary/i.test(l),
     );
@@ -319,7 +342,7 @@ function renderNoteFill(section: ExamQuestionSection): { html: string; nums: num
   const titleFromBody = section.bodyLines.find(
     (l) =>
       !/^[●○]/.test(l) &&
-      !/(\d{1,2})\s*_{2,}/.test(l) &&
+      !hasFillGap(l) &&
       l.length < 56 &&
       !/^Arrival of|^Protecting\b/i.test(l),
   );
@@ -336,7 +359,7 @@ function renderNoteFill(section: ExamQuestionSection): { html: string; nums: num
       allNums.push(...nums);
       const isSubheading =
         !/^●|^○/.test(line) &&
-        !/(\d{1,2})\s*_{2,}/.test(line) &&
+        !hasFillGap(line) &&
         nums.length === 0 &&
         /^[A-Z]/.test(line.trim()) &&
         line.trim().length < 72;

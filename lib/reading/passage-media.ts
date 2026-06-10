@@ -63,7 +63,7 @@ const READING_ARTICLE_IMAGES: Record<string, string> = {
   "reading-challenge-2-p7":
     "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-2-p8":
-    "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&q=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-2-p9":
     "https://images.unsplash.com/photo-1768005419000-d53e45851b50?w=1200&q=80&auto=format&fit=crop",
   "reading-challenge-2-p10":
@@ -140,6 +140,36 @@ const READING_ARTICLE_IMAGES: Record<string, string> = {
     "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&q=80&auto=format&fit=crop",
   "cam20-test4-p3":
     "https://images.unsplash.com/photo-1695738881481-8c8695197fea?w=1200&q=80&auto=format&fit=crop",
+  "cam19-test4-p1":
+    "https://images.unsplash.com/photo-1587405254461-abd1d1c7440e?w=1200&q=80&auto=format&fit=crop",
+  "cam19-test4-p2":
+    "https://images.unsplash.com/photo-1674736921632-8b7fd0cff5bc?w=1200&q=80&auto=format&fit=crop",
+  "cam19-test4-p3":
+    "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&q=80&auto=format&fit=crop",
+  "cam19-test3-p1":
+    "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1200&q=80&auto=format&fit=crop",
+  "cam19-test3-p2":
+    "https://images.unsplash.com/photo-1632505650704-3ee94dc083cc?w=1200&q=80&auto=format&fit=crop",
+  "cam19-test3-p3":
+    "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=1200&q=80&auto=format&fit=crop",
+  "cam19-test2-p1":
+    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&q=80&auto=format&fit=crop",
+  "cam19-test2-p2":
+    "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=1200&q=80&auto=format&fit=crop",
+  "cam19-test2-p3":
+    "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=80&auto=format&fit=crop",
+  "cam19-test1-p1":
+    "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=1200&q=80&auto=format&fit=crop",
+  "cam19-test1-p2":
+    "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&q=80&auto=format&fit=crop",
+  "cam19-test1-p3":
+    "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&q=80&auto=format&fit=crop",
+  "cam18-test1-p1":
+    "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1200&q=80&auto=format&fit=crop",
+  "cam18-test1-p2":
+    "https://images.unsplash.com/photo-1511497584788-876760111969?w=1200&q=80&auto=format&fit=crop",
+  "cam18-test1-p3":
+    "https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=1200&q=80&auto=format&fit=crop",
 };
 
 function assertUniqueArticleImages(map: Record<string, string>): void {
@@ -199,6 +229,8 @@ export function resolveReadingArticleImage(
 /** `object-position` cho ảnh crop chật (vd. tượng Shakespeare cần giữ phần đầu). */
 const READING_ARTICLE_IMAGE_OBJECT_POSITION: Partial<Record<string, string>> = {
   "reading-challenge-2-p11": "object-top",
+  "cam19-test4-p2": "object-[center_35%]",
+  "cam19-test4-p3": "object-center",
 };
 
 export function readingArticleImageObjectPosition(articleId: string): string {

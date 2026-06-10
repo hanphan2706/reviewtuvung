@@ -1,3 +1,4 @@
+import { CAMBRIDGE_18_19_QUIZ } from "@/lib/reading/cambridge-18-19-quiz";
 import { parseCompassQuickCheckText } from "@/lib/reading/compass-quick-check";
 import { READING_CHALLENGE_1_QUIZ } from "@/lib/reading/reading-challenge-1-quiz";
 import { READING_CHALLENGE_2_QUIZ } from "@/lib/reading/reading-challenge-2-quiz";
@@ -272,5 +273,5 @@ export function getQuickCheckQuiz(
     return null;
   }
 
-  return QUIZ_BY_ARTICLE[articleId] ?? null;
+  return QUIZ_BY_ARTICLE[articleId] ?? CAMBRIDGE_18_19_QUIZ[articleId] ?? null;
 }

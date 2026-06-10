@@ -6,6 +6,11 @@ import { loadReadingPassage } from "@/lib/reading/load-reading-raw";
 import { READING_RAW_FILES } from "@/lib/reading/raw-manifest";
 
 const PILOT_LABELS: Record<ReadingPilotId, string> = {
+  "cam19-test4": "Cambridge 19 · Test 4",
+  "cam19-test3": "Cambridge 19 · Test 3",
+  "cam19-test2": "Cambridge 19 · Test 2",
+  "cam19-test1": "Cambridge 19 · Test 1",
+  "cam18-test1": "Cambridge 18 · Test 1",
   "cam20-test1": "Cambridge 20 · Test 1",
   "cam20-test2": "Cambridge 20 · Test 2",
   "cam20-test3": "Cambridge 20 · Test 3",

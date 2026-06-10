@@ -3,8 +3,20 @@ import { readingArticleImage } from "@/lib/reading/passage-media";
 import { READING_CHALLENGE_1_UNITS } from "@/lib/reading/reading-challenge-1-meta";
 import { READING_CHALLENGE_2_UNITS } from "@/lib/reading/reading-challenge-2-meta";
 import { READING_CHALLENGE_3_UNITS } from "@/lib/reading/reading-challenge-3-meta";
+import {
+  CAM18_TEST1,
+  CAM19_TEST1,
+  CAM19_TEST2,
+  CAM19_TEST3,
+  CAM19_TEST4,
+} from "@/lib/reading/cambridge-18-19-articles";
 
 export type ReadingPilotId =
+  | "cam19-test4"
+  | "cam19-test3"
+  | "cam19-test2"
+  | "cam19-test1"
+  | "cam18-test1"
   | "cam20-test1"
   | "cam20-test2"
   | "cam20-test3"
@@ -263,6 +275,11 @@ export const READING_HUB_ARTICLES: ReadingHubArticle[] = [
   ...COMPASS_PUBLISHING_1,
   ...COMPASS_PUBLISHING_2,
   ...COMPASS_PUBLISHING_3,
+  ...CAM19_TEST4,
+  ...CAM19_TEST3,
+  ...CAM19_TEST2,
+  ...CAM19_TEST1,
+  ...CAM18_TEST1,
   ...CAM20_TEST4,
   ...CAM20_TEST3,
   ...CAM20_TEST2,
