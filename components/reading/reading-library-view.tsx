@@ -5,11 +5,14 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ReadingArticleGrid } from "@/components/reading/reading-article-grid";
 import { ReadingLibrarySortSelect } from "@/components/reading/reading-library-sort";
 import { StudyHubHeader } from "@/components/study-module/study-hub-header";
-import { studyHubContainerClass, studyHubPageBgClass } from "@/components/study-module/study-hub-shell";
+import { StudyHubLibraryPageHeader } from "@/components/study-module/study-hub-library-page-header";
+import {
+  studyHubPageBgClass,
+  studyHubSubpageContentClass,
+} from "@/components/study-module/study-hub-shell";
 import { StudyLoginPrompt } from "@/components/study-module/study-login-prompt";
 import { useStudyHubLoggedIn } from "@/hooks/use-study-hub-logged-in";
 import { useReadingArticleNav } from "@/hooks/use-reading-article-nav";
-import { useReadingArticleReadCounts } from "@/hooks/use-reading-article-read-counts";
 import type { ReadingHubArticle } from "@/lib/reading/hub-articles";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 import {
@@ -22,6 +25,7 @@ type ReadingLibraryViewProps = {
   pageTitle: string;
   pageDescription: string;
   articles: ReadingHubArticle[];
+  readMinutesByArticleId?: Record<string, number>;
   isLoggedIn: boolean;
   userProfile?: StudyHubUserProfile | null;
   supabaseConfigured: boolean;
@@ -31,6 +35,7 @@ function ReadingLibraryViewInner({
   pageTitle,
   pageDescription,
   articles,
+  readMinutesByArticleId = {},
   isLoggedIn,
   userProfile = null,
   supabaseConfigured,
@@ -40,12 +45,11 @@ function ReadingLibraryViewInner({
   const router = useRouter();
   const searchParams = useSearchParams();
   const sort = parseReadingLibrarySort(searchParams.get("sap-xep"));
-  const { readCounts, loading: readCountsLoading } = useReadingArticleReadCounts();
   const { openArticle, loginArticle, closeLoginPrompt, loginOauthNext } = useReadingArticleNav(loggedIn);
 
   const sortedArticles = useMemo(
-    () => sortReadingLibraryArticles(articles, sort, readCounts),
-    [articles, sort, readCounts],
+    () => sortReadingLibraryArticles(articles, sort, readMinutesByArticleId),
+    [articles, sort, readMinutesByArticleId],
   );
 
   const setSort = (next: ReadingLibrarySort) => {
@@ -70,23 +74,14 @@ function ReadingLibraryViewInner({
           supabaseConfigured={supabaseConfigured}
           signInNext={pathname}
         />
-        <div className={`${studyHubContainerClass} py-10 md:py-12`}>
-          <header className="mb-8 flex flex-col gap-6 sm:mb-10 lg:flex-row lg:items-end lg:justify-between">
-            <div className="max-w-2xl">
-              <h1 className="font-serif text-3xl font-bold leading-tight text-[#000001] md:text-[2rem]">
-                {pageTitle}
-              </h1>
-              {pageDescription ? (
-                <p className="mt-3 text-base leading-relaxed text-[#47464b]">{pageDescription}</p>
-              ) : null}
-            </div>
-            <ReadingLibrarySortSelect
-              className="self-end"
-              value={sort}
-              onChange={setSort}
-              disabled={sort === "reads-desc" && readCountsLoading}
-            />
-          </header>
+        <div className={studyHubSubpageContentClass}>
+          <StudyHubLibraryPageHeader
+            title={pageTitle}
+            description={pageDescription || undefined}
+            sort={
+              <ReadingLibrarySortSelect scope="articles" value={sort} onChange={setSort} />
+            }
+          />
           <ReadingArticleGrid articles={sortedArticles} onStartArticle={openArticle} />
         </div>
       </div>

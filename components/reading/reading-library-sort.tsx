@@ -2,11 +2,15 @@
 
 import { ChevronDown } from "lucide-react";
 import {
+  READING_IELTS_LIBRARY_SORT_OPTIONS,
   READING_LIBRARY_SORT_OPTIONS,
   type ReadingLibrarySort,
 } from "@/lib/reading/library-sort";
 
+type ReadingLibrarySortScope = "articles" | "ielts";
+
 type ReadingLibrarySortProps = {
+  scope?: ReadingLibrarySortScope;
   value: ReadingLibrarySort;
   onChange: (value: ReadingLibrarySort) => void;
   disabled?: boolean;
@@ -32,12 +36,14 @@ function SortLinesIcon({ className }: { className?: string }) {
 }
 
 export function ReadingLibrarySortSelect({
+  scope = "articles",
   value,
   onChange,
   disabled,
   className = "",
 }: ReadingLibrarySortProps) {
-  const current = READING_LIBRARY_SORT_OPTIONS.find((o) => o.value === value);
+  const options = scope === "ielts" ? READING_IELTS_LIBRARY_SORT_OPTIONS : READING_LIBRARY_SORT_OPTIONS;
+  const current = options.find((o) => o.value === value) ?? READING_LIBRARY_SORT_OPTIONS[0];
 
   return (
     <label className={`inline-flex shrink-0 ${className}`.trim()}>
@@ -50,7 +56,7 @@ export function ReadingLibrarySortSelect({
           className="font-sans cursor-pointer appearance-none rounded-lg border border-[#4a4a4a] bg-white py-1.5 pr-7 pl-8 text-xs font-bold text-[#4a4a4a] transition hover:bg-[#fafafa] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4a4a4a] disabled:cursor-not-allowed disabled:opacity-60"
           aria-label="Sắp xếp bài đọc"
         >
-          {READING_LIBRARY_SORT_OPTIONS.map((option) => (
+          {options.map((option) => (
             <option key={option.value} value={option.value}>
               {option.label}
             </option>

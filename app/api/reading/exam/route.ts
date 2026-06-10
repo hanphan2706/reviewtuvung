@@ -12,6 +12,7 @@ const PILOT_LABELS: Record<ReadingPilotId, string> = {
   "cam20-test4": "Cambridge 20 · Test 4",
   "reading-challenge-1": "Compass Publishing",
   "reading-challenge-2": "Compass Publishing",
+  "reading-challenge-3": "Compass Publishing",
 };
 
 export async function GET(request: Request) {

@@ -39,7 +39,7 @@ export function ArticleVocabularyPanel({
                 <button
                   type="button"
                   onClick={() => speakEnglish(w.term)}
-                  className="inline-flex size-7 shrink-0 items-center justify-center rounded-md text-[#71717A] transition hover:bg-[#f7f3f2] hover:text-[#4b2876]"
+                  className="inline-flex size-7 shrink-0 items-center justify-center rounded-md text-[#71717A] transition hover:bg-[#f3f0f8] hover:text-[#4b2876]"
                   title="Nghe phát âm"
                   aria-label={`Nghe phát âm ${w.term}`}
                 >

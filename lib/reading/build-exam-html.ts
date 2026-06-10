@@ -22,6 +22,19 @@ export type ReadingExamPayload = {
   hasAnswerKey: boolean;
 };
 
+export type ReadingPassageQuestionRange = {
+  passage: number;
+  min: number;
+  max: number;
+  title: string;
+};
+
+export type ReadingFullTestExamPayload = Omit<ReadingExamPayload, "passageNumber"> & {
+  isFullTest: true;
+  passageNumber: 0;
+  passageQuestionRanges: ReadingPassageQuestionRange[];
+};
+
 function escHtml(text: string): string {
   return text
     .replace(/&/g, "&amp;")
@@ -475,5 +488,68 @@ export function buildReadingExamPayload(
     timeMinutes: 20,
     answerKey: hasAnswerKey ? answerKey : null,
     hasAnswerKey,
+  };
+}
+
+function remapPassageHtmlForFullTest(passageHtml: string, passageNumber: number, active: boolean): string {
+  const className = active ? "passage-content active" : "passage-content";
+  return passageHtml
+    .replace(/class="passage-content active"/, `class="${className}"`)
+    .replace('id="p1-text"', `id="p${passageNumber}-text"`);
+}
+
+export function buildReadingFullTestExamPayload(
+  pilotId: string,
+  passages: ReadingPassageBlock[],
+  pilotLabel: string,
+): ReadingFullTestExamPayload | null {
+  const examPassages = passages.filter((block) => block.hasExamQuestions).sort((a, b) => a.passage - b.passage);
+  if (examPassages.length === 0) return null;
+
+  const passageHtmlParts: string[] = [];
+  const questionHtmlParts: string[] = [];
+  const allNums: number[] = [];
+  const answerKey: Record<string, string> = {};
+  const passageQuestionRanges: ReadingPassageQuestionRange[] = [];
+
+  for (const block of examPassages) {
+    const single = buildReadingExamPayload(pilotId, block, pilotLabel);
+    if (!single) continue;
+
+    passageHtmlParts.push(remapPassageHtmlForFullTest(single.passageHtml, block.passage, block.passage === 1));
+    questionHtmlParts.push(
+      `<div class="qsection${block.passage === 1 ? " active" : ""}" id="q${block.passage}-section">${single.questionsHtml}</div>`,
+    );
+    allNums.push(...single.questionNums);
+    if (single.answerKey) Object.assign(answerKey, single.answerKey);
+
+    const minQ = single.questionNums[0] ?? 1;
+    const maxQ = single.questionNums[single.questionNums.length - 1] ?? minQ;
+    passageQuestionRanges.push({
+      passage: block.passage,
+      min: minQ,
+      max: maxQ,
+      title: block.title,
+    });
+  }
+
+  if (passageHtmlParts.length === 0 || questionHtmlParts.length === 0) return null;
+
+  const questionNums = [...new Set(allNums)].sort((a, b) => a - b);
+  const hasAnswerKey = questionNums.some((n) => answerKey[`q${n}`] != null && answerKey[`q${n}`] !== "");
+
+  return {
+    pilotId,
+    passageNumber: 0,
+    title: pilotLabel,
+    pilotLabel,
+    passageHtml: passageHtmlParts.join("\n"),
+    questionsHtml: questionHtmlParts.join("\n"),
+    questionNums,
+    timeMinutes: 60,
+    answerKey: hasAnswerKey ? answerKey : null,
+    hasAnswerKey,
+    isFullTest: true,
+    passageQuestionRanges,
   };
 }

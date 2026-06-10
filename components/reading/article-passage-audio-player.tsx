@@ -1,9 +1,18 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState } from "react";
 import { Gauge, Pause, Play, RotateCcw, RotateCw, Volume2, VolumeX } from "lucide-react";
 
 const SPEEDS = [1, 1.25, 1.5, 1.75] as const;
+
+export type ArticlePassageAudioPlayerHandle = {
+  seekTo: (seconds: number) => void;
+  play: () => void;
+  pause: () => void;
+  resetToStart: () => void;
+  resetAndPlay: () => void;
+  playSegment: (start: number, end: number) => void;
+};
 
 function formatAudioTime(seconds: number): string {
   if (!Number.isFinite(seconds) || seconds < 0) return "0:00";
@@ -19,15 +28,26 @@ type ArticlePassageAudioPlayerProps = {
   /** Nằm trong hero card — bỏ viền/card riêng. */
   embedded?: boolean;
   onDurationChange?: (seconds: number) => void;
+  /** Thời điểm phát hiện tại (giây) — dùng đồng bộ transcript. */
+  onTimeUpdate?: (seconds: number) => void;
+  onEnded?: () => void;
 };
 
-export function ArticlePassageAudioPlayer({
-  src,
-  title,
-  embedded = false,
-  onDurationChange,
-}: ArticlePassageAudioPlayerProps) {
+export const ArticlePassageAudioPlayer = forwardRef<
+  ArticlePassageAudioPlayerHandle,
+  ArticlePassageAudioPlayerProps
+>(function ArticlePassageAudioPlayer(
+  { src, title, embedded = false, onDurationChange, onTimeUpdate, onEnded },
+  ref,
+) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const segmentEndHandlerRef = useRef<((this: HTMLMediaElement, ev: Event) => void) | null>(null);
+  const onDurationChangeRef = useRef(onDurationChange);
+  const onTimeUpdateRef = useRef(onTimeUpdate);
+  const onEndedRef = useRef(onEnded);
+  onDurationChangeRef.current = onDurationChange;
+  onTimeUpdateRef.current = onTimeUpdate;
+  onEndedRef.current = onEnded;
   const [playing, setPlaying] = useState(false);
   const [current, setCurrent] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -50,11 +70,17 @@ export function ArticlePassageAudioPlayer({
       setDuration(audio.duration);
       setReady(true);
       if (Number.isFinite(audio.duration) && audio.duration > 0) {
-        onDurationChange?.(audio.duration);
+        onDurationChangeRef.current?.(audio.duration);
       }
     };
-    const onTime = () => setCurrent(audio.currentTime);
-    const onEnded = () => setPlaying(false);
+    const onTime = () => {
+      setCurrent(audio.currentTime);
+      onTimeUpdateRef.current?.(audio.currentTime);
+    };
+    const onEnded = () => {
+      setPlaying(false);
+      onEndedRef.current?.();
+    };
     const onPlay = () => setPlaying(true);
     const onPause = () => setPlaying(false);
 
@@ -65,6 +91,10 @@ export function ArticlePassageAudioPlayer({
     audio.addEventListener("pause", onPause);
 
     return () => {
+      if (segmentEndHandlerRef.current) {
+        audio.removeEventListener("timeupdate", segmentEndHandlerRef.current);
+        segmentEndHandlerRef.current = null;
+      }
       audio.pause();
       audio.removeEventListener("loadedmetadata", onLoaded);
       audio.removeEventListener("timeupdate", onTime);
@@ -73,7 +103,7 @@ export function ArticlePassageAudioPlayer({
       audio.removeEventListener("pause", onPause);
       audioRef.current = null;
     };
-  }, [src, onDurationChange]);
+  }, [src]);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -114,6 +144,79 @@ export function ArticlePassageAudioPlayer({
   const cycleSpeed = useCallback(() => {
     setSpeedIdx((i) => (i + 1) % SPEEDS.length);
   }, []);
+
+  const seekTo = useCallback((seconds: number) => {
+    const audio = audioRef.current;
+    if (!audio || !Number.isFinite(audio.duration)) return;
+    audio.currentTime = Math.min(Math.max(0, seconds), audio.duration);
+    setCurrent(audio.currentTime);
+    onTimeUpdateRef.current?.(audio.currentTime);
+  }, []);
+
+  const play = useCallback(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    void audio.play().catch(() => undefined);
+  }, []);
+
+  const pause = useCallback(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.pause();
+  }, []);
+
+  const resetToStart = useCallback(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    if (segmentEndHandlerRef.current) {
+      audio.removeEventListener("timeupdate", segmentEndHandlerRef.current);
+      segmentEndHandlerRef.current = null;
+    }
+
+    audio.pause();
+    audio.currentTime = 0;
+    setCurrent(0);
+    onTimeUpdateRef.current?.(0);
+  }, []);
+
+  const resetAndPlay = useCallback(() => {
+    resetToStart();
+    play();
+  }, [play, resetToStart]);
+
+  const playSegment = useCallback((start: number, end: number) => {
+    const audio = audioRef.current;
+    if (!audio || !Number.isFinite(audio.duration)) return;
+
+    if (segmentEndHandlerRef.current) {
+      audio.removeEventListener("timeupdate", segmentEndHandlerRef.current);
+      segmentEndHandlerRef.current = null;
+    }
+
+    const clampedStart = Math.min(Math.max(0, start), audio.duration);
+    const clampedEnd = Math.min(Math.max(clampedStart, end), audio.duration);
+    audio.currentTime = clampedStart;
+    setCurrent(clampedStart);
+    onTimeUpdateRef.current?.(clampedStart);
+
+    const onTime = () => {
+      if (audio.currentTime >= clampedEnd) {
+        audio.pause();
+        audio.removeEventListener("timeupdate", onTime);
+        segmentEndHandlerRef.current = null;
+      }
+    };
+    segmentEndHandlerRef.current = onTime;
+    audio.addEventListener("timeupdate", onTime);
+    void audio.play().catch(() => undefined);
+  }, []);
+
+  useImperativeHandle(
+    ref,
+    () => ({ seekTo, play, pause, resetToStart, resetAndPlay, playSegment }),
+    [seekTo, play, pause, resetToStart, resetAndPlay, playSegment],
+  );
 
   return (
     <div
@@ -166,7 +269,7 @@ export function ArticlePassageAudioPlayer({
           <button
             type="button"
             onClick={() => setMuted((m) => !m)}
-            className="inline-flex size-9 items-center justify-center rounded-full text-[#47464b] transition hover:bg-[#f7f3f2] hover:text-[#4b2876]"
+            className="inline-flex size-9 items-center justify-center rounded-full text-[#47464b] transition hover:bg-[#f3f0f8] hover:text-[#4b2876]"
             aria-label={muted ? "Bật âm thanh" : "Tắt âm thanh"}
           >
             {muted ? <VolumeX className="size-5" /> : <Volume2 className="size-5" />}
@@ -177,7 +280,7 @@ export function ArticlePassageAudioPlayer({
           <button
             type="button"
             onClick={() => seekBy(-10)}
-            className="inline-flex size-8 items-center justify-center rounded-full text-[#47464b] transition hover:bg-[#f7f3f2]"
+            className="inline-flex size-8 items-center justify-center rounded-full text-[#47464b] transition hover:bg-[#f3f0f8]"
             aria-label="Lùi 10 giây"
           >
             <span className="relative flex size-6 items-center justify-center">
@@ -198,7 +301,7 @@ export function ArticlePassageAudioPlayer({
           <button
             type="button"
             onClick={() => seekBy(30)}
-            className="inline-flex size-8 items-center justify-center rounded-full text-[#47464b] transition hover:bg-[#f7f3f2]"
+            className="inline-flex size-8 items-center justify-center rounded-full text-[#47464b] transition hover:bg-[#f3f0f8]"
             aria-label="Tới 30 giây"
           >
             <span className="relative flex size-6 items-center justify-center">
@@ -212,4 +315,4 @@ export function ArticlePassageAudioPlayer({
       </div>
     </div>
   );
-}
+});

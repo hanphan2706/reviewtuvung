@@ -27,7 +27,7 @@ export function StudyLoginPrompt({
         <button
           type="button"
           onClick={onClose}
-          className="absolute right-4 top-4 rounded-lg p-1 text-[#47464b] hover:bg-[#f7f3f2]"
+          className="absolute right-4 top-4 rounded-lg p-1 text-[#47464b] hover:bg-[#f3f0f8]"
           aria-label="Đóng"
         >
           <X className="h-5 w-5" />

@@ -139,7 +139,7 @@ export function ReadingArticleCard({
         <div
           className={`mt-auto flex shrink-0 items-center justify-between border-t ${
             textOnly || dark || wide ? "pt-6" : "pt-4"
-          } ${dark ? "border-white/20 text-white/70" : "border-[#f1eded] text-[#47464b]"}`}
+          } ${dark ? "border-white/20 text-white/70" : "border-[#ebe6f4] text-[#47464b]"}`}
         >
           <span
             className={`text-[10px] font-bold uppercase ${

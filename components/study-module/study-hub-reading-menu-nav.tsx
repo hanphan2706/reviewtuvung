@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import {
   READING_DIFFICULTY_NAV,
+  READING_IELTS_EXAM_HREF,
   READING_LIBRARY_ALL_HREF,
   READING_SOURCE_NAV,
   READING_TOPIC_NAV,
@@ -78,6 +79,23 @@ function LibraryNavRow({ onNavigate }: { onNavigate?: () => void }) {
   );
 }
 
+function IeltsExamNavRow({ onNavigate }: { onNavigate?: () => void }) {
+  return (
+    <div>
+      <div className="flex min-h-6 items-center justify-between gap-2 px-2">
+        <Link
+          href={READING_IELTS_EXAM_HREF}
+          onClick={onNavigate}
+          className={`cursor-pointer transition hover:opacity-80 ${sectionTitleClass}`}
+        >
+          Luyện đề IELTS
+        </Link>
+        <span className="inline-flex size-6 shrink-0" aria-hidden />
+      </div>
+    </div>
+  );
+}
+
 /** Điều hướng Luyện đọc trong menu curtain — chỉ khi header chưa hiện menu ngang. */
 export function StudyHubReadingMenuNav({ onNavigate }: { onNavigate?: () => void }) {
   return (
@@ -85,6 +103,7 @@ export function StudyHubReadingMenuNav({ onNavigate }: { onNavigate?: () => void
       <NavGroup title="Nguồn bài đọc" items={READING_SOURCE_NAV} onNavigate={onNavigate} />
       <NavGroup title="Độ khó" items={READING_DIFFICULTY_NAV} onNavigate={onNavigate} />
       <NavGroup title="Bài đọc theo chủ đề" items={READING_TOPIC_NAV} onNavigate={onNavigate} />
+      <IeltsExamNavRow onNavigate={onNavigate} />
       <LibraryNavRow onNavigate={onNavigate} />
     </nav>
   );

@@ -150,7 +150,7 @@ function LookupBody({
   return (
     <>
       {showPronunciation ? (
-        <Root className="mb-4 flex flex-wrap gap-4 border-b border-[#f1eded] pb-3">
+        <Root className="mb-4 flex flex-wrap gap-4 border-b border-[#ebe6f4] pb-3">
           {pronunciation?.us ? <PronunciationButton label="US" data={pronunciation.us} /> : null}
           {pronunciation?.uk ? <PronunciationButton label="UK" data={pronunciation.uk} /> : null}
         </Root>
@@ -165,7 +165,7 @@ function LookupBody({
       ) : null}
 
       {phraseGlossVi && (kind === "phrase" || isTranslateOnly) ? (
-        <Root className="rounded-lg bg-[#f7f3f2] px-3 py-3">
+        <Root className="rounded-lg bg-[#f3f0f8] px-3 py-3">
           {isTranslateOnly ? (
             <p className="text-sm italic leading-relaxed text-[#47464b]">&ldquo;{lookup.query}&rdquo;</p>
           ) : null}
@@ -184,7 +184,7 @@ function LookupBody({
           {senses.map((sense) => (
             <Root
               key={`${sense.partOfSpeech}-${sense.definitionEn.slice(0, 40)}`}
-              className="border-b border-[#f1eded] pb-4 last:border-0 last:pb-0"
+              className="border-b border-[#ebe6f4] pb-4 last:border-0 last:pb-0"
             >
               <p className="text-xs font-medium lowercase text-[#c45c26]">{sense.partOfSpeech}</p>
               {sense.glossVi && sense.glossViReliable !== false ? (
@@ -214,7 +214,7 @@ function LookupBody({
       ) : null}
 
       {paraphrases.length > 0 ? (
-        <Root className="mt-4 border-t border-[#f1eded] pt-4">
+        <Root className="mt-4 border-t border-[#ebe6f4] pt-4">
           <p className="text-[10px] font-bold uppercase tracking-wider text-[#71717A]">
             Diễn đạt khác (paraphrase)
           </p>
@@ -381,7 +381,7 @@ export function DictionaryPopover({
               }
         }
       >
-      <Root className="flex shrink-0 items-center gap-1 border-b border-[#f1eded] px-3 py-2.5">
+      <Root className="flex shrink-0 items-center gap-1 border-b border-[#ebe6f4] px-3 py-2.5">
         {phase !== "lookup" ? (
           <button
             type="button"
@@ -563,7 +563,7 @@ export function DictionaryPopover({
       </Root>
 
       {phase === "lookup" && showAddButton && !loading ? (
-        <Root className="shrink-0 border-t border-[#f1eded] px-4 py-3">
+        <Root className="shrink-0 border-t border-[#ebe6f4] px-4 py-3">
           <button
             type="button"
             onClick={(e) => {
@@ -579,7 +579,7 @@ export function DictionaryPopover({
       ) : null}
 
       {phase === "pick-deck" && creatingDeck ? (
-        <Root className="shrink-0 border-t border-[#f1eded] bg-white px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
+        <Root className="shrink-0 border-t border-[#ebe6f4] bg-white px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
           <form
             className="flex items-center gap-2"
             onSubmit={(e: FormEvent) => {
@@ -637,7 +637,7 @@ export function DictionaryPopover({
       ) : null}
 
       {phase === "pick-deck" && !creatingDeck ? (
-        <Root className="shrink-0 border-t border-[#f1eded] px-4 py-3">
+        <Root className="shrink-0 border-t border-[#ebe6f4] px-4 py-3">
           <button
             type="button"
             onClick={() => setPhase("add")}
@@ -651,7 +651,7 @@ export function DictionaryPopover({
       ) : null}
 
       {phase === "add" ? (
-        <Root className="shrink-0 border-t border-[#f1eded] px-4 py-3">
+        <Root className="shrink-0 border-t border-[#ebe6f4] px-4 py-3">
           <button
             type="button"
             onClick={onSaveWord}
@@ -665,7 +665,7 @@ export function DictionaryPopover({
       ) : null}
 
       {phase === "done" ? (
-        <Root className="shrink-0 border-t border-[#f1eded] px-4 py-3">
+        <Root className="shrink-0 border-t border-[#ebe6f4] px-4 py-3">
           <button
             type="button"
             onClick={onClose}

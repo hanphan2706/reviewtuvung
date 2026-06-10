@@ -51,8 +51,8 @@ function ParagraphTranslationToggle({
       aria-expanded={open}
       className={`inline-flex shrink-0 cursor-pointer items-center gap-1 rounded-full border font-bold uppercase tracking-wide shadow-sm transition ${
         inline
-          ? "mt-2 border-[#E4E4E7] bg-white px-3 py-1.5 text-[10px] text-[#47464b] hover:bg-[#f7f3f2]"
-          : "border-[#E4E4E7] bg-white px-3 py-1 text-[10px] text-[#47464b] hover:bg-[#f7f3f2]"
+          ? "mt-2 border-[#E4E4E7] bg-white px-3 py-1.5 text-[10px] text-[#47464b] hover:bg-[#f3f0f8]"
+          : "border-[#E4E4E7] bg-white px-3 py-1 text-[10px] text-[#47464b] hover:bg-[#f3f0f8]"
       } ${open ? "border-[#4b2876]/40 bg-[#4b2876]/10 text-[#4b2876]" : ""}`}
     >
       <Languages className="size-3 opacity-80" aria-hidden />

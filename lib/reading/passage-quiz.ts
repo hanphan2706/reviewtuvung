@@ -1,6 +1,7 @@
 import { parseCompassQuickCheckText } from "@/lib/reading/compass-quick-check";
 import { READING_CHALLENGE_1_QUIZ } from "@/lib/reading/reading-challenge-1-quiz";
 import { READING_CHALLENGE_2_QUIZ } from "@/lib/reading/reading-challenge-2-quiz";
+import { READING_CHALLENGE_3_QUIZ } from "@/lib/reading/reading-challenge-3-quiz";
 import {
   getReadingHubArticleById,
   isCompassPublishingPilot,
@@ -260,7 +261,10 @@ export function getQuickCheckQuiz(
   const pilotId = passage?.pilotId ?? getReadingHubArticleById(articleId)?.pilotId;
 
   if (pilotId && isCompassPublishingPilot(pilotId)) {
-    const curated = READING_CHALLENGE_1_QUIZ[articleId] ?? READING_CHALLENGE_2_QUIZ[articleId];
+    const curated =
+      READING_CHALLENGE_1_QUIZ[articleId] ??
+      READING_CHALLENGE_2_QUIZ[articleId] ??
+      READING_CHALLENGE_3_QUIZ[articleId];
     if (curated) return curated;
     if (passage?.quickCheckText?.trim()) {
       return patchCompassQuizEn(articleId, parseCompassQuickCheckText(passage.quickCheckText));

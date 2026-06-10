@@ -23,6 +23,8 @@ export function isPublicStudyHubPath(pathname: string): boolean {
   if (pathname.startsWith("/tu-hoc/luyen-doc/nguon/")) return true;
   if (pathname === "/tu-hoc/luyen-doc/do-kho") return true;
   if (pathname.startsWith("/tu-hoc/luyen-doc/do-kho/")) return true;
+  if (pathname === "/tu-hoc/luyen-doc/luyen-de-ielts") return true;
+  if (pathname.startsWith("/tu-hoc/luyen-doc/luyen-de-ielts/")) return true;
   return false;
 }
 

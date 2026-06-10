@@ -1,7 +1,8 @@
-import { ensureSentenceEnd } from "@/lib/reading/format-sentence-end";
+import { ensureSentenceEnd, ensureSentenceStart } from "@/lib/reading/format-sentence-end";
 import { readingArticleImage } from "@/lib/reading/passage-media";
 import { READING_CHALLENGE_1_UNITS } from "@/lib/reading/reading-challenge-1-meta";
 import { READING_CHALLENGE_2_UNITS } from "@/lib/reading/reading-challenge-2-meta";
+import { READING_CHALLENGE_3_UNITS } from "@/lib/reading/reading-challenge-3-meta";
 
 export type ReadingPilotId =
   | "cam20-test1"
@@ -9,7 +10,8 @@ export type ReadingPilotId =
   | "cam20-test3"
   | "cam20-test4"
   | "reading-challenge-1"
-  | "reading-challenge-2";
+  | "reading-challenge-2"
+  | "reading-challenge-3";
 
 export type ReadingDifficulty = "Dễ" | "Trung bình" | "Trung bình – khó" | "Khó";
 
@@ -206,8 +208,19 @@ const CAM20_TEST4: ReadingHubArticle[] = [
   },
 ];
 
+type CompassPilotId = Extract<
+  ReadingPilotId,
+  "reading-challenge-1" | "reading-challenge-2" | "reading-challenge-3"
+>;
+
+const COMPASS_PUBLISHING_SOURCE: Record<CompassPilotId, string> = {
+  "reading-challenge-1": "Compass Publishing 1",
+  "reading-challenge-2": "Compass Publishing 2",
+  "reading-challenge-3": "Compass Publishing 3",
+};
+
 function mapCompassUnits(
-  pilotId: "reading-challenge-1" | "reading-challenge-2",
+  pilotId: CompassPilotId,
   units: typeof READING_CHALLENGE_1_UNITS,
   bookLabel: string,
 ): ReadingHubArticle[] {
@@ -218,8 +231,8 @@ function mapCompassUnits(
       pilotId,
       passage: unit.passage,
       title: unit.title,
-      subheadline: ensureSentenceEnd(unit.subheadline),
-      source: "Compass Publishing",
+      subheadline: ensureSentenceEnd(ensureSentenceStart(unit.subheadline)),
+      source: COMPASS_PUBLISHING_SOURCE[pilotId],
       topic: unit.topic,
       difficulty: unit.difficulty,
       imageUrl: readingArticleImage(id),
@@ -239,10 +252,17 @@ const COMPASS_PUBLISHING_2 = mapCompassUnits(
   "Reading Challenge 2",
 );
 
+const COMPASS_PUBLISHING_3 = mapCompassUnits(
+  "reading-challenge-3",
+  READING_CHALLENGE_3_UNITS,
+  "Reading Challenge 3",
+);
+
 /** Toàn bộ bài — pool hub (random layout) + thư viện + reader. */
 export const READING_HUB_ARTICLES: ReadingHubArticle[] = [
   ...COMPASS_PUBLISHING_1,
   ...COMPASS_PUBLISHING_2,
+  ...COMPASS_PUBLISHING_3,
   ...CAM20_TEST4,
   ...CAM20_TEST3,
   ...CAM20_TEST2,
@@ -287,5 +307,5 @@ export function getReadingHubArticleById(id: string): ReadingHubArticle | undefi
 
 /** Compass Publishing (Reading Challenge) — kiểm tra nhanh trong reader, không mở exam HTML IELTS. */
 export function isCompassPublishingPilot(pilotId: ReadingPilotId): boolean {
-  return pilotId === "reading-challenge-1" || pilotId === "reading-challenge-2";
+  return pilotId === "reading-challenge-1" || pilotId === "reading-challenge-2" || pilotId === "reading-challenge-3";
 }

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { ReadingArticleCard } from "@/components/reading/reading-article-card";
 import { StudyHubHeader } from "@/components/study-module/study-hub-header";
-import { studyHubContainerClass, studyHubPageBgClass } from "@/components/study-module/study-hub-shell";
+import { studyHubPageBgClass, studyHubPageContentClass } from "@/components/study-module/study-hub-shell";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 import { ensureSentenceEnd } from "@/lib/reading/format-sentence-end";
 import {
@@ -26,7 +26,7 @@ type ReadingHubProps = {
 
 function ReadingHubSkeleton() {
   return (
-    <div className={`${studyHubContainerClass} py-10 md:py-12`}>
+    <div className={studyHubPageContentClass}>
       <div className="mb-14 grid gap-8 md:grid-cols-2">
         <div className="aspect-[4/3] min-h-[220px] animate-pulse rounded-lg bg-[#ebebeb] md:min-h-[280px]" />
         <div className="flex flex-col justify-center gap-4">
@@ -62,7 +62,7 @@ function ReadingHubContent({
   const heroMeta = readingArticleHeroMetaLine(hero, heroReadMin);
 
   return (
-    <div className={`${studyHubContainerClass} py-10 md:py-12`}>
+    <div className={studyHubPageContentClass}>
       <section
         className="mb-14 grid cursor-pointer gap-8 rounded-lg md:grid-cols-2 md:items-stretch"
         onClick={() => onStartArticle(hero)}

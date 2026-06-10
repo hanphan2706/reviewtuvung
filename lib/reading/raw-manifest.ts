@@ -8,6 +8,7 @@ export const READING_RAW_FILES: Record<string, string> = {
   "cam20-test4": "cam 20 test 4.txt",
   "reading-challenge-1": "reading challenge 1.txt",
   "reading-challenge-2": "reading challenge 2.txt",
+  "reading-challenge-3": "reading challenge 3.txt",
 };
 
 export function readingRawAllowlist(): Set<string> {

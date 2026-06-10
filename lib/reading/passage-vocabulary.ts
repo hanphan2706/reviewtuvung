@@ -1,6 +1,7 @@
 import { buildCompassPassageVocabulary } from "@/lib/reading/compass-idioms";
 import { READING_CHALLENGE_1_VOCABULARY } from "@/lib/reading/reading-challenge-1-vocabulary";
 import { READING_CHALLENGE_2_VOCABULARY } from "@/lib/reading/reading-challenge-2-vocabulary";
+import { READING_CHALLENGE_3_VOCABULARY } from "@/lib/reading/reading-challenge-3-vocabulary";
 import {
   getReadingHubArticleById,
   isCompassPublishingPilot,
@@ -133,6 +134,7 @@ function collectAllCuratedItems(): PassageVocabItem[] {
   push(Object.values(COMPASS_VOCAB_EXTRA_BY_ARTICLE).flat());
   push(Object.values(READING_CHALLENGE_1_VOCABULARY).flat());
   push(Object.values(READING_CHALLENGE_2_VOCABULARY).flat());
+  push(Object.values(READING_CHALLENGE_3_VOCABULARY).flat());
 
   return out;
 }
@@ -166,7 +168,9 @@ export function getPassageVocabulary(
 
   if (pilotId && isCompassPublishingPilot(pilotId)) {
     const curated =
-      READING_CHALLENGE_1_VOCABULARY[articleId] ?? READING_CHALLENGE_2_VOCABULARY[articleId];
+      READING_CHALLENGE_1_VOCABULARY[articleId] ??
+      READING_CHALLENGE_2_VOCABULARY[articleId] ??
+      READING_CHALLENGE_3_VOCABULARY[articleId];
     if (curated?.length) return curated;
     if (passage?.idiomsText?.trim()) {
       const extra = COMPASS_VOCAB_EXTRA_BY_ARTICLE[articleId] ?? [];

@@ -1,0 +1,11 @@
+{
+  "paragraphs": [
+    "Khám phá và làm việc trong không gian. Đặc biệt, nhiều robot đã được gửi khám phá Sao Hỏa. Robot thường trông như hộp có bánh xe. Dù hữu ích, bản chất chúng không đáng tin, cực kỳ đắt và dễ hỏng. Chúng cũng không làm được nhiều việc.",
+    "Vì những vấn đề này, các nhà khoa học đang phát triển loại robot mới và khác thường. Robot mới di chuyển như rắn, nên được gọi là “snakebots”. Hình dạng rắn giúp len vào không gian rất nhỏ, như khe đá. Rắn cũng có thể đẩy mình dưới đất hoặc leo lên nhiều vật như đá cao và cây.",
+    "Khả năng đó giải thích tính hữu ích của robot thiết kế như rắn. Snakebot cũng làm được những việc đó, hiệu quả hơn nhiều so với robot bánh xe dễ kẹt hoặc ngã. Vì mang được dụng cụ, snakebot cũng có thể làm việc trong không gian.",
+    "Chúng có thể, ví dụ, giúp sửa Trạm Vũ trụ Quốc tế. Nhưng hình dạng robot rắn làm thế nào? Snakebot được lắp như chuỗi khoảng ba mươi phần, hay module. Mỗi module về cơ bản giống nhau: đều có máy tính nhỏ và bánh xe hỗ trợ di chuyển. Máy tính lớn trong “đầu” rắn điều phối mọi module hoạt động cùng nhau.",
+    "Thiết kế module của snakebot có nhiều ưu điểm. Nếu một module hỏng, có thể thêm module khác dễ dàng. Module cũng mang nhiều loại dụng cụ và camera. Vì mỗi module thực ra là robot riêng, một module có thể hoạt động tách khỏi phần còn lại khi cần.",
+    "Tức là mọi module có thể tách ra di chuyển độc lập, rồi sau đó kết nối lại thành robot lớn hơn. Các nhà nghiên cứu cũng cố phát triển snakebot bằng nhựa đặc biệt đổi hình dạng bằng điện, gần như cơ bắp động vật. Snakebot làm bằng nhựa này sẽ rất chắc và khó vỡ.",
+    "Nhìn chung, thiết kế snakebot đơn giản hơn nhiều so với robot thông thường. Vì vậy, snakebot rẻ hơn nhiều để chế tạo. Ví dụ, robot gần đây gửi lên Sao Hỏa tốn hơn một trăm triệu đô la, trong khi snakebot có thể chỉ vài trăm đô la. Với tính linh hoạt và giá phải chăng, snakebot dường như là làn sóng tương lai — ít nhất với robot không gian."
+  ]
+}

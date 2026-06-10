@@ -4,6 +4,9 @@ import {
   type ReadingHubArticle,
   type ReadingTopic,
 } from "@/lib/reading/hub-articles";
+import { READING_IELTS_EXAM_HREF } from "@/lib/reading/ielts-test-catalog";
+
+export { READING_IELTS_EXAM_HREF };
 
 export type ReadingLibraryNavItem = {
   label: string;
@@ -152,5 +155,18 @@ export function readingLibraryByTopic(slug: string): ReadingLibraryPageConfig | 
     title: `Chủ đề: ${topic}`,
     description: `${articles.length} bài thuộc chủ đề ${topic}.`,
     articles,
+  };
+}
+
+export type ReadingIeltsExamPageConfig = {
+  title: string;
+  description: string;
+};
+
+export function readingIeltsExamPage(): ReadingIeltsExamPageConfig {
+  return {
+    title: "Luyện đề IELTS",
+    description:
+      "Làm full test với giao diện giống như thi thật, giúp bạn chuẩn bị tốt hơn cho kì thi.",
   };
 }

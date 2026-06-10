@@ -116,10 +116,11 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--exam-chrome-surfac
   color:var(--exam-header-muted);padding:0 3px;letter-spacing:.02em;
 }
 
-.ptab-bar{background:var(--exam-chrome-bg);border-bottom:1px solid var(--exam-chrome-border);display:flex;flex-shrink:0}
-.ptab{padding:10px 26px;font-size:13px;font-weight:600;color:var(--exam-chrome-subtle);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;transition:all .15s}
-.ptab:hover{color:var(--exam-chrome-text);background:var(--exam-chrome-surface)}
-.ptab.active{color:var(--exam-chrome-text);border-bottom-color:var(--exam-chrome-text)}
+.ptab-bar{background:#fff;border-bottom:1px solid var(--exam-chrome-border);display:flex;flex-shrink:0}
+.ptab{padding:10px 26px;font-size:13px;font-weight:600;color:#888;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s;user-select:none;-webkit-user-select:none}
+.ptab:hover{color:#000001;background:var(--exam-chrome-surface)}
+.ptab.active{color:#000001;border-bottom-color:#000001}
+.ptab small{font-size:13px}
 
 #prog-wrap{height:4px;background:var(--exam-chrome-border);flex-shrink:0}
 #prog-bar{height:4px;background:var(--exam-chrome-text);width:0%;transition:width .3s}
@@ -162,7 +163,7 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 .qsection{display:none;padding:26px 28px 40px}
 .qsection.active{display:block}
 
-.sec-hdr{margin-bottom:18px;padding-bottom:12px;border-bottom:2px solid var(--exam-purple-border)}
+.sec-hdr{margin-bottom:18px;padding-bottom:12px;border-bottom:2px solid var(--exam-chrome-border)}
 .sec-range{font-size:13px;font-weight:800;color:var(--exam-purple);text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px}
 .sec-instr{font-size:13px;color:#333;line-height:1.65}
 .sec-instr p{margin:0 0 8px}
@@ -310,6 +311,7 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 .notes-list .notes-subheading{font-weight:700;margin:14px 0 6px;color:var(--exam-question-ink)}
 .sec-spacer{margin-top:28px}
 #review-banner{display:none;background:#f7f3f2;color:var(--exam-chrome-muted);text-align:center;font-size:12px;padding:8px 14px;border-bottom:1px solid var(--exam-chrome-border);line-height:1.45}
+#sub-btn .review-score-band{font-weight:600;color:rgba(250,250,250,.82)}
 #exam-load-error{display:none;background:#fff8e6;color:#7a4f00;text-align:center;font-size:13px;padding:10px 16px;border-bottom:1px solid #ffe0a3;line-height:1.5}
 #exam-load-error a{color:var(--exam-chrome-text);font-weight:700}
 #exam-screen.exam-review-mode #questions-panel input,
@@ -317,14 +319,24 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 #exam-screen.exam-review-mode #questions-panel label.opt{pointer-events:none!important}
 #exam-screen.exam-review-mode #questions-panel input,
 #exam-screen.exam-review-mode #questions-panel select{opacity:.92}
-#exam-screen.exam-review-mode #sub-btn{display:none}
+#exam-screen.exam-review-mode #sub-btn{cursor:default;pointer-events:none}
+#exam-screen.exam-review-mode #sub-btn:hover{background:var(--exam-submit-bg)}
 #exam-screen.exam-review-mode .track-hint{color:var(--exam-chrome-subtle)}
 .ans-review-line{margin-top:6px;font-size:11px;line-height:1.45;display:flex;flex-wrap:wrap;gap:6px 14px}
 .ans-review-line .ans-your{color:#555}
 .ans-review-line .ans-correct{color:#1a7a30;font-weight:700}
 .ans-review-line.is-correct .ans-your{color:#1a7a30}
 .ans-review-line.is-wrong .ans-your{color:#b71c1c}
-.mrow .ans-review-line{width:100%;margin-top:8px}
+#exam-screen.exam-review-mode #questions-panel .mtext,
+#exam-screen.exam-review-mode #questions-panel .qtext,
+#exam-screen.exam-review-mode #questions-panel .sec-instr,
+#exam-screen.exam-review-mode #questions-panel .sec-range,
+#exam-screen.exam-review-mode #questions-panel .sumtext,
+#exam-screen.exam-review-mode #questions-panel .sumtitle,
+#exam-screen.exam-review-mode #questions-panel .people-bank-name,
+#exam-screen.exam-review-mode #questions-panel .wbchip-text,
+#exam-screen.exam-review-mode #questions-panel .opt-text{user-select:text;-webkit-user-select:text}
+.mrow .ans-review-line{width:100%;margin-top:8px;flex-basis:100%}
 .qb-tfng .ans-review-line{margin-top:8px}
 .choose-two-pick .ans-review-line{width:100%;margin-top:4px;text-align:right}
 .choose-two-block{margin-bottom:8px}
@@ -380,7 +392,7 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
     </div>
   </div>
 
-  <div id="review-banner" role="status">Đã nộp bài · Chế độ xem đáp án (chỉ được bôi đen phần bài đọc)</div>
+  <div id="review-banner" role="status">Đã nộp bài · Chế độ xem đáp án · Bôi đen được ở bài đọc và phần câu hỏi</div>
   <div id="exam-load-error" role="alert"></div>
 
   <div id="prog-wrap"><div id="prog-bar"></div></div>
@@ -409,7 +421,7 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
       </div>
       <p class="track-hint">Green = answered · Grey = not yet · Click a number to open that question</p>
     </div>
-    <button id="sub-btn" onclick="submitExam()">Submit answers</button>
+    <button id="sub-btn" type="button" onclick="submitExam()" aria-live="polite">Submit answers</button>
   </div>
 
   <!-- SUCCESS -->
@@ -443,6 +455,8 @@ var examLoadError=null;
 var examAnswerKey=null;
 var examReviewMode=false;
 var userAnswersSnapshot={};
+var currentPassage=1;
+var passageQuestionRanges=[];
 
 function getQueryParams(){
   var p=new URLSearchParams(location.search);
@@ -530,15 +544,26 @@ function applyExamPayload(data){
       questionsPanel.querySelectorAll('[data-bank-drop-bound]').forEach(function(el){
         el.removeAttribute('data-bank-drop-bound');
       });
-      if(data.questionsHtml)questionsPanel.innerHTML='<div class="qsection active" id="q1-section">'+data.questionsHtml+'</div>';
+      if(data.questionsHtml){
+        if(data.isFullTest){
+          questionsPanel.innerHTML=data.questionsHtml;
+        }else{
+          questionsPanel.innerHTML='<div class="qsection active" id="q1-section">'+data.questionsHtml+'</div>';
+        }
+      }
     }
+  }
+  if(data.isFullTest){
+    passageQuestionRanges=data.passageQuestionRanges||[];
+    currentPassage=1;
+    initFullTestTabs();
   }
   var loginTitle=document.getElementById('login-exam-title');
   if(loginTitle)loginTitle.textContent=data.title;
   var loginMeta=document.getElementById('login-exam-meta');
   if(loginMeta&&QUESTION_NUMS.length)loginMeta.textContent=data.pilotLabel+' · Questions '+QUESTION_NUMS[0]+'–'+QUESTION_NUMS[QUESTION_NUMS.length-1];
   var tb=document.getElementById('tb-passage-title');
-  if(tb)tb.textContent=data.title;
+  if(tb)tb.textContent=data.isFullTest?getPassageToolbarTitle():data.title;
   updateExamBackLink();
   document.title='ANTHICHTUHOC | '+data.title;
   var tr=document.getElementById('track-range-label');
@@ -783,10 +808,82 @@ function tick(){
   timeLeft--;
 }
 
-function switchPassage(n){/* single passage */}
+function getPassageToolbarTitle(){
+  if(!examMeta||!examMeta.isFullTest)return examMeta&&examMeta.title?examMeta.title:'';
+  for(var i=0;i<passageQuestionRanges.length;i++){
+    var range=passageQuestionRanges[i];
+    if(range.passage===currentPassage)return range.title||examMeta.title;
+  }
+  return examMeta.title||'';
+}
+
+function buildPassageTabsMarkup(){
+  if(!passageQuestionRanges.length)return '';
+  var parts=[];
+  for(var i=0;i<passageQuestionRanges.length;i++){
+    var r=passageQuestionRanges[i];
+    var active=r.passage===1?' active':'';
+    parts.push('<div class="ptab'+active+'" data-passage="'+r.passage+'" onclick="switchPassage('+r.passage+')">Passage '+r.passage+' &nbsp;<small style="font-weight:400;opacity:.7">Q'+r.min+'–'+r.max+'</small></div>');
+  }
+  return parts.join('');
+}
+
+function initFullTestTabs(){
+  var tabs=document.getElementById('passage-tabs');
+  if(!tabs){
+    var prog=document.getElementById('prog-wrap');
+    if(prog&&prog.parentNode&&passageQuestionRanges.length){
+      var bar=document.createElement('div');
+      bar.className='ptab-bar';
+      bar.id='passage-tabs';
+      bar.innerHTML=buildPassageTabsMarkup();
+      prog.parentNode.insertBefore(bar,prog);
+    }
+  }else if(passageQuestionRanges.length){
+    tabs.innerHTML=buildPassageTabsMarkup();
+  }
+}
+
+function switchPassage(n){
+  if(!examMeta||!examMeta.isFullTest)return;
+  currentPassage=n;
+  if(typeof hideHlPopover==='function')hideHlPopover();
+  document.querySelectorAll('#passage-panel .passage-content').forEach(function(el){
+    var match=el.id&&el.id.match(/^p(\d)-text$/);
+    el.classList.toggle('active',!!(match&&parseInt(match[1],10)===n));
+  });
+  document.querySelectorAll('#questions-panel .qsection').forEach(function(el){
+    var match=el.id&&el.id.match(/^q(\d)-section$/);
+    el.classList.toggle('active',!!(match&&parseInt(match[1],10)===n));
+  });
+  document.querySelectorAll('#passage-tabs .ptab').forEach(function(el){
+    el.classList.toggle('active',parseInt(el.getAttribute('data-passage'),10)===n);
+  });
+  var pp=document.getElementById('passage-panel');
+  var qp=document.getElementById('questions-panel');
+  if(pp)pp.scrollTop=0;
+  if(qp)qp.scrollTop=0;
+  var tb=document.getElementById('tb-passage-title');
+  if(tb)tb.textContent=getPassageToolbarTitle();
+}
+
+function passageForQuestion(n){
+  for(var i=0;i<passageQuestionRanges.length;i++){
+    var range=passageQuestionRanges[i];
+    if(n>=range.min&&n<=range.max)return range.passage;
+  }
+  return 1;
+}
 
 function ensureQuestionTracker(){
   if(trackerBuilt)return;
+  if(examMeta&&examMeta.isFullTest){
+    var preset=document.querySelectorAll('#track-wrap .track-grid .qt');
+    if(preset.length){
+      trackerBuilt=true;
+      return;
+    }
+  }
   var grid=document.getElementById('track-grid');
   if(!grid)return;
   grid.innerHTML='';
@@ -806,6 +903,10 @@ function ensureQuestionTracker(){
 
 function goToQuestion(n){
   if(QUESTION_NUMS.indexOf(n)<0)return;
+  if(examMeta&&examMeta.isFullTest){
+    var targetPassage=passageForQuestion(n);
+    if(targetPassage!==currentPassage)switchPassage(targetPassage);
+  }
   var el=null;
   el=document.getElementById('q'+n);
   if(!el)el=document.getElementById('sel-q'+n);
@@ -1106,6 +1207,71 @@ function normalizeAns(v){
   return String(v||'').trim().toLowerCase().replace(/\s+/g,' ');
 }
 
+function ieltsAcademicReadingBandFromRaw40(raw){
+  var r=Math.max(0,Math.min(40,Math.round(raw)));
+  if(r>=39)return 9;
+  if(r>=37)return 8.5;
+  if(r>=35)return 8;
+  if(r>=33)return 7.5;
+  if(r>=30)return 7;
+  if(r>=27)return 6.5;
+  if(r>=23)return 6;
+  if(r>=19)return 5.5;
+  if(r>=15)return 5;
+  if(r>=13)return 4.5;
+  if(r>=10)return 4;
+  if(r>=8)return 3.5;
+  if(r>=6)return 3;
+  if(r>=4)return 2.5;
+  if(r>=2)return 2;
+  if(r>=1)return 1;
+  return 0;
+}
+
+function formatIeltsBand(band){
+  return Number(band).toFixed(1);
+}
+
+function computeExamScore(){
+  if(!examAnswerKey||!QUESTION_NUMS.length)return null;
+  var gradable=0;
+  var correct=0;
+  for(var i=0;i<QUESTION_NUMS.length;i++){
+    var n=QUESTION_NUMS[i];
+    var qid='q'+n;
+    var key=examAnswerKey[qid]||examAnswerKey[String(n)]||'';
+    if(!String(key).trim())continue;
+    gradable++;
+    var user=userAnswersSnapshot[qid]||'';
+    if(user&&normalizeAns(user)===normalizeAns(key))correct++;
+  }
+  if(!gradable)return null;
+  var rawForBand=gradable===40?correct:Math.round((correct/gradable)*40);
+  return {
+    correct:correct,
+    total:gradable,
+    band:ieltsAcademicReadingBandFromRaw40(rawForBand),
+    equivalent:gradable!==40
+  };
+}
+
+function renderReviewScore(){
+  var btn=document.getElementById('sub-btn');
+  if(!btn)return;
+  var score=computeExamScore();
+  if(!score){
+    btn.textContent='Submit answers';
+    btn.disabled=false;
+    btn.removeAttribute('aria-label');
+    return;
+  }
+  var bandLabel=score.equivalent?'Band tương đương ':'Band ';
+  btn.innerHTML='<span>'+score.correct+'/'+score.total+' câu đúng</span>'+
+    '<span class="review-score-band"> · '+bandLabel+formatIeltsBand(score.band)+'</span>';
+  btn.disabled=true;
+  btn.setAttribute('aria-label',score.correct+' trên '+score.total+' câu đúng, '+bandLabel+formatIeltsBand(score.band));
+}
+
 function reviewLineHtml(userVal,correctVal){
   var u=pdfEscHtml(userVal||'—');
   var c=pdfEscHtml(correctVal||'—');
@@ -1143,7 +1309,8 @@ function applyReviewAnswers(){
     }
     var sel=document.getElementById('sel-'+qid);
     if(sel){
-      insertReviewLineAfter(sel.closest('.tfng')||sel,html);
+      var host=sel.closest('.choose-two-pick')||sel.closest('.mrow')||sel.closest('.tfng')||sel;
+      insertReviewLineAfter(host,html);
       continue;
     }
     var radio=document.querySelector('#questions-panel input[name="'+qid+'"]:checked');
@@ -1180,6 +1347,7 @@ function enterReviewMode(){
   if(banner)banner.style.display='block';
   lockExamInputs();
   if(examAnswerKey)applyReviewAnswers();
+  renderReviewScore();
   var hint=document.querySelector('.track-hint');
   if(hint){
     hint.textContent=examAnswerKey
@@ -1378,7 +1546,7 @@ function buildReadingPdfRoot(){
     'box-decoration-break:clone;-webkit-box-decoration-break:clone;text-decoration:none!important;}'+
     '.pdf-work-root .questions-panel-pdf .qsection{display:block!important;width:100%!important;margin:0 0 18px!important;padding:0!important;}'+
     '.pdf-work-root .sec-hdr{margin:16px 0 10px;}'+
-    '.pdf-work-root .sec-range{font-family:Calibri,\"Segoe UI\",Arial,sans-serif;font-size:10.5pt;font-weight:800;color:#4b2876;text-transform:uppercase;letter-spacing:0.04em;border-bottom:2px solid #d4c8e4;padding-bottom:4px;margin:0 0 6px;}'+
+    '.pdf-work-root .sec-range{font-family:Calibri,\"Segoe UI\",Arial,sans-serif;font-size:10.5pt;font-weight:800;color:#4b2876;text-transform:uppercase;letter-spacing:0.04em;border-bottom:2px solid #E4E4E7;padding-bottom:4px;margin:0 0 6px;}'+
     '.pdf-work-root .sec-instr{font-size:10pt;line-height:1.55;margin:6px 0 12px;font-style:italic;color:#4a5568;}'+
     '.pdf-work-root .ntable{width:100%;table-layout:fixed;border-collapse:collapse;font-size:10pt;margin:10px 0;font-family:Calibri,\"Segoe UI\",Arial,sans-serif;}'+
     '.pdf-work-root .ntable th{background:#e2daf0!important;color:#1a1a2e!important;font-weight:700;border:1px solid #d4c8e4!important;padding:8px 10px!important;}'+
@@ -1527,15 +1695,22 @@ window.addEventListener('keydown',function(e){
   }
 });
 
+function getActiveQuestionsPanelRoot(){
+  return document.querySelector('#questions-panel .qsection.active')||
+    document.querySelector('#questions-panel #q1-section')||
+    document.querySelector('#questions-panel');
+}
+
 function getHighlightRootForRange(range){
   if(!range)return null;
   var anc=range.commonAncestorContainer;
   var passage=document.querySelector('#passage-panel .p-body');
+  var questions=getActiveQuestionsPanelRoot();
   if(examReviewMode){
     if(passage&&passage.contains(anc))return passage;
+    if(questions&&questions.contains(anc))return questions;
     return null;
   }
-  var questions=document.querySelector('#questions-panel .qsection.active,#questions-panel #q1-section');
   if(passage&&passage.contains(anc))return passage;
   if(questions&&questions.contains(anc))return questions;
   return null;

@@ -67,6 +67,36 @@ const nextConfig: NextConfig = {
         hostname: "images.unsplash.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "eu-assets.simpleview-europe.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "encrypted-tbn0.gstatic.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "prehistoric-britain.co.uk",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "covers.openlibrary.org",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn1.fahasa.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "i.natgeofe.com",
+        pathname: "/**",
+      },
     ],
   },
 };

@@ -40,6 +40,7 @@ import {
   type PassageVocabItem,
 } from "@/lib/reading/passage-vocabulary";
 import type { ReadingPassageBlock } from "@/lib/reading/split-passages";
+import { studySourcePillClassName } from "@/components/study-module/study-tokens";
 import { readingArticleImageObjectPosition } from "@/lib/reading/passage-media";
 import { useSrsStore } from "@/store/srs-store";
 
@@ -289,7 +290,7 @@ export function ArticleReader({
               <>
                 <header className="flex flex-col gap-4">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="rounded-full bg-[#dfdfe1] px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-[#616365]">
+                    <span className={`rounded-full px-3 py-1 ${studySourcePillClassName}`}>
                       {metaLabel}
                     </span>
                     <LabelCaps>· {readMin} PHÚT ĐỌC</LabelCaps>
@@ -351,7 +352,7 @@ export function ArticleReader({
             />
           </ArticleCard>
 
-          <ArticleCard className="bg-[#f7f3f2] p-6">
+          <ArticleCard className="bg-[#f3f0f8] p-6">
             <div className="flex items-center gap-2 border-b border-[#E4E4E7] pb-3">
               <CircleHelp className="size-5 text-[#4b2876]" aria-hidden />
               <h3 className="font-serif text-lg font-semibold text-[#000001]">Kiểm tra nhanh</h3>

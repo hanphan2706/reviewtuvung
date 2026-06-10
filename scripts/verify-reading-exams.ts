@@ -13,6 +13,7 @@ const PILOT_LABELS: Record<ReadingPilotId, string> = {
   "cam20-test4": "Cambridge 20 · Test 4",
   "reading-challenge-1": "Compass Publishing · RC1",
   "reading-challenge-2": "Compass Publishing · RC2",
+  "reading-challenge-3": "Compass Publishing · RC3",
 };
 
 let failed = 0;
