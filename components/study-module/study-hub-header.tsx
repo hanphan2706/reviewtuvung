@@ -12,6 +12,7 @@ import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 import {
   READING_DIFFICULTY_NAV,
   READING_HUB_HREF,
+  READING_IELTS_EXAM_HREF,
   READING_LIBRARY_ALL_HREF,
   READING_SOURCE_NAV,
   READING_TOPIC_NAV,
@@ -148,6 +149,12 @@ export function StudyHubHeader({
                     <HubDropdown label="Nguồn bài đọc" items={READING_SOURCE_NAV} />
                     <HubDropdown label="Độ khó" items={READING_DIFFICULTY_NAV} />
                     <HubDropdown label="Bài đọc theo chủ đề" items={READING_TOPIC_NAV} />
+                    <Link
+                      href={READING_IELTS_EXAM_HREF}
+                      className={`${headerNavItemClass} shrink-0 whitespace-nowrap transition-opacity hover:opacity-70`}
+                    >
+                      Luyện đề IELTS
+                    </Link>
                     <Link
                       href={READING_LIBRARY_ALL_HREF}
                       className={`${headerNavItemClass} shrink-0 whitespace-nowrap transition-opacity hover:opacity-70`}
