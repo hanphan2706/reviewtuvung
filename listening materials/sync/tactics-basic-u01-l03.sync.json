@@ -1,0 +1,338 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u01-l03",
+  "audioFile": "Unit01-Listening03.mp3",
+  "durationSeconds": 158.224739,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Hi, Jack.",
+      "start": 0,
+      "end": 1.98
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Hi.",
+      "start": 1.98,
+      "end": 2.78
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Elise. From math class.",
+      "start": 2.78,
+      "end": 6.36
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Oh, of course. How are you, Denise?",
+      "start": 6.36,
+      "end": 9.32
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Actually, it's Elise.",
+      "start": 9.32,
+      "end": 11.62
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "E-L-I-S-E.",
+      "start": 11.62,
+      "end": 15.1
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Oh, Elise. Sorry about that.",
+      "start": 15.1,
+      "end": 19.91
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "2. Hey, Sarah. How are you?",
+      "start": 19.91,
+      "end": 23.31
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Oh, hi. I'm sorry. I've forgotten your name.",
+      "start": 23.31,
+      "end": 29.29
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "It's Mick.",
+      "start": 29.29,
+      "end": 30.41
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Oh, that's right, Nick.",
+      "start": 30.41,
+      "end": 33.05
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Actually, it's Mick with an M. M-I-C-K.",
+      "start": 33.05,
+      "end": 39.15
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Mick got it.",
+      "start": 39.15,
+      "end": 41.35
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "So, Mick, are you going to the gym this weekend?",
+      "start": 41.35,
+      "end": 46.29
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "3.",
+      "start": 46.29,
+      "end": 47.71
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Mike. Hello.",
+      "start": 47.71,
+      "end": 50.37
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Oh, hello.",
+      "start": 50.37,
+      "end": 52.49
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Hannah. We met at Ellie's party.",
+      "start": 52.49,
+      "end": 56.03
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Oh, right. How are you doing, Anna?",
+      "start": 56.03,
+      "end": 58.71
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Pretty good.",
+      "start": 58.71,
+      "end": 60.31
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Actually, my name's Hannah, not Anna.",
+      "start": 60.31,
+      "end": 64.15
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "H-A-N-N-A-H.",
+      "start": 64.15,
+      "end": 68.78
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "4.",
+      "start": 68.78,
+      "end": 70.3
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Excuse me. Don't I know you from somewhere?",
+      "start": 70.3,
+      "end": 74.26
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "I think so. You look familiar.",
+      "start": 74.26,
+      "end": 78.02
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Do you go to Eastern University?",
+      "start": 78.02,
+      "end": 80.6
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "No, I don't.",
+      "start": 80.6,
+      "end": 82.26
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Wait a minute. Don't we wait at the same bus stop every morning?",
+      "start": 82.26,
+      "end": 86.74
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Oh, that's right. But I'm always too tired to talk.",
+      "start": 86.74,
+      "end": 90.62
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "My name's Stacy, by the way.",
+      "start": 90.62,
+      "end": 92.94
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Hi, Stacy. I'm Devon.",
+      "start": 92.94,
+      "end": 95.14
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Nice to meet you, Evan.",
+      "start": 95.14,
+      "end": 96.94
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Oh, actually, it's Devon.",
+      "start": 96.94,
+      "end": 99.36
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "D-E-V-O-N.",
+      "start": 99.36,
+      "end": 102.63
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "5.",
+      "start": 102.63,
+      "end": 104.41
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Excuse me. Aren't you Beth Filio's son, Mike, right?",
+      "start": 104.41,
+      "end": 109.61
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Yes, I am. Actually, it's I-K-E.",
+      "start": 109.61,
+      "end": 116.87
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "Oh, I-K. Sorry about that.",
+      "start": 116.87,
+      "end": 120.87
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "I'm Liz Jones. I work with your mother.",
+      "start": 120.87,
+      "end": 124.29
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "Oh, of course. Good to see you again, Miss Jones.",
+      "start": 124.29,
+      "end": 130.22
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "6.",
+      "start": 130.22,
+      "end": 131.94
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "Hi, Tony. How are you?",
+      "start": 131.94,
+      "end": 134.72
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "Oh, I'm fine. Thank you. I'm sorry. I should know your name.",
+      "start": 134.72,
+      "end": 139.08
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "Tandy. I work in the accounting department.",
+      "start": 139.08,
+      "end": 143.42
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "Oh, that's right. How have you been, Mandy?",
+      "start": 143.42,
+      "end": 147.2
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "Actually, it's Tandy. T-A-N-D-Y.",
+      "start": 147.2,
+      "end": 152.64
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "It's an unusual name. I know.",
+      "start": 152.64,
+      "end": 158.225
+    }
+  ]
+}

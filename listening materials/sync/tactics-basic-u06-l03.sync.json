@@ -1,0 +1,303 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u06-l03",
+  "audioFile": "Unit06-Listening03.mp3",
+  "durationSeconds": 148.465714,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "So, how do you like your job, Chris?",
+      "start": 0,
+      "end": 2.46
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Well, it was okay at first, but now, after two years, I don't like it.",
+      "start": 2.46,
+      "end": 8.24
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Oh, why is that?",
+      "start": 8.24,
+      "end": 9.8
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "It's boring. I do the same thing every day. I'm really sick of it.",
+      "start": 9.8,
+      "end": 14.84
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "So, why don't you change jobs?",
+      "start": 14.84,
+      "end": 17.04
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "I'm well paid. I like the money.",
+      "start": 17.04,
+      "end": 19.92
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Oh, I see. But you should leave if you're not happy.",
+      "start": 19.92,
+      "end": 23.98
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Yeah, maybe I should.",
+      "start": 23.98,
+      "end": 27.63
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Two. Do you like teaching children, Alexa?",
+      "start": 27.63,
+      "end": 31.69
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Oh, yes. I love working with kids. There's so much fun.",
+      "start": 31.69,
+      "end": 37.15
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Well, I guess you have the perfect job.",
+      "start": 37.15,
+      "end": 39.69
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Yeah, I like it a lot. There's just one thing I don't like.",
+      "start": 39.69,
+      "end": 45.59
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "What's that?",
+      "start": 45.59,
+      "end": 46.69
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "The distance to school. It's too far away.",
+      "start": 46.69,
+      "end": 51.29
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "It takes me an hour to drive there every day.",
+      "start": 51.29,
+      "end": 55.75
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Wow, that must be awful.",
+      "start": 55.75,
+      "end": 57.83
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "It is, but the schools that are near me aren't as good.",
+      "start": 57.83,
+      "end": 63.37
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Three. How's your new job going, Anna?",
+      "start": 63.37,
+      "end": 67.43
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Good things. I really like it.",
+      "start": 67.43,
+      "end": 70.41
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "What do you like best about it?",
+      "start": 70.41,
+      "end": 72.47
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "I think it's the people I work with. They are so nice.",
+      "start": 72.47,
+      "end": 76.87
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "People make all the difference in the job, don't they?",
+      "start": 76.87,
+      "end": 80.31
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "They sure do. The only trouble is I have to travel a lot.",
+      "start": 80.31,
+      "end": 85.29
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "I'm away from home about two weeks every month.",
+      "start": 85.29,
+      "end": 88.69
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Yeah, that can be difficult.",
+      "start": 88.69,
+      "end": 91.09
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "It is. I hope I won't have to travel so much next year.",
+      "start": 91.09,
+      "end": 97.04
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Four. Do you enjoy being a salesperson, Rachel?",
+      "start": 97.04,
+      "end": 101.5
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Yes, I do like it. I get to meet so many people.",
+      "start": 101.5,
+      "end": 105.74
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Is it hard work?",
+      "start": 105.74,
+      "end": 107.02
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Yes, it can be. I don't like the long hours.",
+      "start": 107.02,
+      "end": 111.22
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "I'm always really tired when I get home at night.",
+      "start": 111.22,
+      "end": 114.38
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "That's too bad. Why don't you quit?",
+      "start": 114.38,
+      "end": 117.02
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Because I think my boss is great to work for.",
+      "start": 117.02,
+      "end": 121.67
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Five.",
+      "start": 121.67,
+      "end": 123.23
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "How long have you been working in a restaurant, Martin?",
+      "start": 123.23,
+      "end": 126.25
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "For more than five years.",
+      "start": 126.25,
+      "end": 128.55
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Wow, you must really enjoy it.",
+      "start": 128.55,
+      "end": 131.89
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "Oh no, I don't enjoy it at all.",
+      "start": 131.89,
+      "end": 134.57
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "It's hard work and pretty tiring, too.",
+      "start": 134.57,
+      "end": 136.71
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "I'm on my feet all night.",
+      "start": 136.71,
+      "end": 139.21
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "Oh, I see.",
+      "start": 139.21,
+      "end": 141.21
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "But, the tips are great. I really should find a better job soon though.",
+      "start": 141.21,
+      "end": 148.466
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+# Local Whisper cho `npm run listening:sync-transcript` (chỉ chạy trên máy dev/CI build).
+# Cài: python3 -m venv .venv-listening && source .venv-listening/bin/activate
+#      pip install -r scripts/requirements-listening-whisper.txt
+faster-whisper>=1.0.0

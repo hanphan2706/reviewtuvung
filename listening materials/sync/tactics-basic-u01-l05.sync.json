@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u01-l05",
+  "audioFile": "Unit01-Listening05.mp3",
+  "durationSeconds": 36.045918,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Fun party, isn't it?",
+      "start": 0,
+      "end": 2.24
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Sure is. My name is Emma, by the way.",
+      "start": 2.24,
+      "end": 5.92
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "It's nice to meet you, Emma. I'm Justin.",
+      "start": 5.92,
+      "end": 9.22
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Nice to meet you, Justin. Do you live in LA?",
+      "start": 9.22,
+      "end": 13.04
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "No. I'm from San Francisco. I'm visiting my sister here.",
+      "start": 13.04,
+      "end": 18.54
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Oh, I love San Francisco. I go there sometimes for work.",
+      "start": 18.54,
+      "end": 23
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Really? Call me next time you're there.",
+      "start": 23,
+      "end": 26.6
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Let me give you my phone number.",
+      "start": 26.6,
+      "end": 28.82
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Okay. Hope to see you again.",
+      "start": 28.82,
+      "end": 31.48
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Have a great time here in LA.",
+      "start": 31.48,
+      "end": 36.046
+    }
+  ]
+}

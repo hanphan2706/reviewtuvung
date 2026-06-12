@@ -1,0 +1,254 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u05-l01",
+  "audioFile": "Unit05-Listening01.mp3",
+  "durationSeconds": 81.644898,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Listening 1. 1.",
+      "start": 0,
+      "end": 4.43
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Have you been here long?",
+      "start": 4.43,
+      "end": 6.35
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "No. We arrived a few days ago on the first of the month.",
+      "start": 6.35,
+      "end": 10.37
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "And how long are you staying?",
+      "start": 10.37,
+      "end": 12.17
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "We're staying exactly two weeks. We leave on the 14th.",
+      "start": 12.17,
+      "end": 17.96
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Two.",
+      "start": 17.96,
+      "end": 19.32
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "When did you get here?",
+      "start": 19.32,
+      "end": 21.42
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "I arrived on the 4th.",
+      "start": 21.42,
+      "end": 23.46
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Will you be here long?",
+      "start": 23.46,
+      "end": 24.58
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Until the 13th. Not long enough, really.",
+      "start": 24.58,
+      "end": 30.11
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Three.",
+      "start": 30.11,
+      "end": 31.55
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Did you just arrive?",
+      "start": 31.55,
+      "end": 33.47
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "I arrived on July 2nd.",
+      "start": 33.47,
+      "end": 35.57
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Are you enjoying your vacation?",
+      "start": 35.57,
+      "end": 37.53
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Oh, yes.",
+      "start": 37.53,
+      "end": 38.65
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "But it's too short.",
+      "start": 38.65,
+      "end": 40.59
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "I leave on the 10th.",
+      "start": 40.59,
+      "end": 43.86
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Four.",
+      "start": 43.86,
+      "end": 45.5
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "When did you arrive?",
+      "start": 45.5,
+      "end": 47.56
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "We got in on the 5th.",
+      "start": 47.56,
+      "end": 49.28
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "How long are you staying?",
+      "start": 49.28,
+      "end": 51
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "We're leaving on the 15th.",
+      "start": 51,
+      "end": 52.8
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "We're just staying 10 days.",
+      "start": 52.8,
+      "end": 56.24
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Five.",
+      "start": 56.24,
+      "end": 57.72
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Did you just arrive?",
+      "start": 57.72,
+      "end": 60.06
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "We got here on the 3rd.",
+      "start": 60.06,
+      "end": 61.94
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "And do you plan to stay long?",
+      "start": 61.94,
+      "end": 64.14
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Yes. We're not leaving until the end of the month.",
+      "start": 64.14,
+      "end": 67.76
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "The 31st?",
+      "start": 67.76,
+      "end": 69
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "That's right.",
+      "start": 69,
+      "end": 71.75
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Six.",
+      "start": 71.75,
+      "end": 73.39
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "When did you arrive?",
+      "start": 73.39,
+      "end": 75.01
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "On the 6th.",
+      "start": 75.01,
+      "end": 76.29
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "And when are you leaving?",
+      "start": 76.29,
+      "end": 77.91
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "On the 16th.",
+      "start": 77.91,
+      "end": 81.645
+    }
+  ]
+}

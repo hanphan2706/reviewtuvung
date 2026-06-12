@@ -1,0 +1,393 @@
+{
+  "version": 1,
+  "partId": "cam19-t2-p1",
+  "audioFile": "Test2 Part1.mp3",
+  "durationSeconds": 481.880816,
+  "method": "whisper-local",
+  "preambleSeconds": 101.33,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "WOMAN",
+      "text": "Hi Coleman, how are you?",
+      "start": 89.17,
+      "end": 97.856,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "COLEMAN",
+      "text": "Good, thanks.",
+      "start": 97.856,
+      "end": 101.33,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "WOMAN",
+      "text": "I wanted to have a chat with you because our friend Josh told me that you’ve joined a guitar group and it sounds interesting. I’d really like to learn myself.",
+      "start": 101.33,
+      "end": 107.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "COLEMAN",
+      "text": "Why don’t you come along? I’m sure there’s room for another person.",
+      "start": 107.43,
+      "end": 112.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "WOMAN",
+      "text": "Really? So – who runs the classes?",
+      "start": 112.09,
+      "end": 115.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "COLEMAN",
+      "text": "He’s called a ‘coordinator’ – his name’s Gary Mathieson. Q1",
+      "start": 115.65,
+      "end": 122.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "WOMAN",
+      "text": "Let me note that down. Gary. . . . How do you spell his surname?",
+      "start": 122.11,
+      "end": 128.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "COLEMAN",
+      "text": "It’s M-A-T-H-I-E-S-O-N.",
+      "start": 128.75,
+      "end": 138.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "WOMAN",
+      "text": "Right, thanks.",
+      "start": 138.87,
+      "end": 141.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "COLEMAN",
+      "text": "He’s retired, actually, but he’s a really nice guy and he used to play in a lot of bands.",
+      "start": 141.65,
+      "end": 149.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "WOMAN",
+      "text": "Thanks. So how long have you been going?",
+      "start": 149.71,
+      "end": 154.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "COLEMAN",
+      "text": "About a month now.",
+      "start": 154.77,
+      "end": 156.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "WOMAN",
+      "text": "And could you play anything before you started?",
+      "start": 156.65,
+      "end": 160.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "COLEMAN",
+      "text": "I knew a few chords, but that’s all.",
+      "start": 160.69,
+      "end": 164.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "WOMAN",
+      "text": "I’m sure everyone will be better than me.",
+      "start": 164.01,
+      "end": 166.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "COLEMAN",
+      "text": "That’s what I thought, too. When I first spoke to Gary on the phone, he said it was a class for beginners, but I was still worried that everyone would be better than me, but we were all equally hopeless! Q2",
+      "start": 166.31,
+      "end": 182.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "WOMAN",
+      "text": "Oh, that’s reassuring. So where do you meet?",
+      "start": 182.01,
+      "end": 186.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "COLEMAN",
+      "text": "Well, when I joined the group, they were meeting in Gary’s home, but as the group got bigger, he decided to book a room at the college in town. I prefer going there. Q3",
+      "start": 186.51,
+      "end": 200.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "WOMAN",
+      "text": "I know that place. I used to go to tap dancing classes there when I was at secondary school. I haven’t been since, though and I can’t remember what road it’s in… is it Lock Street?",
+      "start": 200.07,
+      "end": 216.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "COLEMAN",
+      "text": "It’s just beyond there at the bottom of New Street near the city roundabout. Q4",
+      "start": 216.77,
+      "end": 223.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "WOMAN",
+      "text": "Yes, of course.",
+      "start": 223.37,
+      "end": 225.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "COLEMAN",
+      "text": "The guitar club is on the first floor in Room T347.",
+      "start": 225.69,
+      "end": 231.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "WOMAN",
+      "text": "Right. And when do you meet? Is it at the weekend?",
+      "start": 231.67,
+      "end": 238.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "COLEMAN",
+      "text": "We meet on Thursdays. It used to be 10.30 and that suited me well, but now we meet at 11. The class that’s in there before us asked if they could have the room for another 30 minutes. Q5",
+      "start": 238.61,
+      "end": 255.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "WOMAN",
+      "text": "Oh, I see. Well, I’d love to come, but I don’t have a guitar.",
+      "start": 255.43,
+      "end": 263.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "COLEMAN",
+      "text": "Well, you can always buy a second-hand one. There’s a website called ‘The perfect instrument’ that sells all kinds of guitars, violins and so on. I’m sure you’ll find something there. Q6",
+      "start": 263.15,
+      "end": 277.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "————————————–",
+      "start": 277.19,
+      "end": 313.93
+    },
+    {
+      "id": "cue-28",
+      "speaker": "WOMAN",
+      "text": "So what’s a typical lesson like with Gary?",
+      "start": 313.93,
+      "end": 318.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "COLEMAN",
+      "text": "Well, he always starts by getting us to tune our guitars. That takes about five minutes.",
+      "start": 318.79,
+      "end": 326.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "WOMAN",
+      "text": "Uhuh.",
+      "start": 326.55,
+      "end": 327.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "COLEMAN",
+      "text": "Some people have an app they use, but others do it by ear. Gary goes round and helps them. And while he’s doing that, he tells us what he’s going to do during the lesson. Q7",
+      "start": 327.83,
+      "end": 342.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "WOMAN",
+      "text": "Right.",
+      "start": 342.33,
+      "end": 343.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "COLEMAN",
+      "text": "First, we usually spend about ten minutes doing some strumming.",
+      "start": 343.97,
+      "end": 349.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "WOMAN",
+      "text": "So is that using . . . what are they called . . . plectrums?",
+      "start": 349.61,
+      "end": 357.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "COLEMAN",
+      "text": "No – we just use our thumbs.",
+      "start": 357.11,
+      "end": 360.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "WOMAN",
+      "text": "Much easier.",
+      "start": 360.87,
+      "end": 363.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "COLEMAN",
+      "text": "Gary reminds us where to put our fingers for each chord and then we play them together. Sometimes we all just start laughing because we’re so bad at keeping time, so Gary starts clapping to help us. Q8",
+      "start": 363.43,
+      "end": 379.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "WOMAN",
+      "text": "Do you learn to play any songs?",
+      "start": 379.87,
+      "end": 382.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "COLEMAN",
+      "text": "Yes – we do at least one song with words and chords. I mean that’s harder than you think.",
+      "start": 382.79,
+      "end": 390.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "WOMAN",
+      "text": "Oh, I’m sure it is!",
+      "start": 390.63,
+      "end": 393.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "COLEMAN",
+      "text": "That part of the lesson takes about 15 minutes. He often brings a recording of the song and plays it to us first. Then he hands out the song and if there’s a new chord in it, we practise that before we play it together – but really slowly. Q9",
+      "start": 393.99,
+      "end": 415.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "WOMAN",
+      "text": "Do you do any finger picking?",
+      "start": 415.51,
+      "end": 418.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "COLEMAN",
+      "text": "That’s the last ten minutes of the lesson, when we pick out the individual notes from a tune he’s made up. It’s always quite simple.",
+      "start": 418.21,
+      "end": 428.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": "WOMAN",
+      "text": "That must be hard, though.",
+      "start": 428.89,
+      "end": 431.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": "COLEMAN",
+      "text": "It is, but people like it because they can really concentrate and if we’re all playing well, it sounds quite impressive. The only trouble is that he sometimes gets us to play one at a time – you know, alone. Q10",
+      "start": 431.03,
+      "end": 449.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": "WOMAN",
+      "text": "That’s scary.",
+      "start": 449.99,
+      "end": 452.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": "COLEMAN",
+      "text": "It is, but I’ve got used to it now. At the end he spends about five minutes telling us what to practise for the following week.",
+      "start": 452.31,
+      "end": 463.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": "WOMAN",
+      "text": "Well, thanks Coleman. I’ll go and have a look at that website, I think.",
+      "start": 463.49,
+      "end": 481.881,
+      "preAudio": false
+    }
+  ]
+}

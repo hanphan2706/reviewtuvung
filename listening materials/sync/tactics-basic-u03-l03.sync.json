@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u03-l03",
+  "audioFile": "Unit03-Listening03.mp3",
+  "durationSeconds": 89.689796,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Sonia was very well dressed. She had on a jacket and a long dark blue skirt. She was also wearing a yellow blouse.",
+      "start": 0,
+      "end": 10.16
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "She wasn't carrying a bag, but she did have a small wallet with her. Oh, and I remember she had nice gold earrings.",
+      "start": 10.16,
+      "end": 18.46
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "I also remember her shoes. She was wearing black shoes with very high heels.",
+      "start": 18.46,
+      "end": 26.37
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Two. Matt was very casually dressed. He was wearing some really old jeans, you know, the ones with holes in them, with a wide leather belt and a blue shirt with buttons.",
+      "start": 26.37,
+      "end": 37.87
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "He had on some boots too, high brown ones. They looked really nice. He was also wearing glasses. He usually wears a couple of big rings, but he was only wearing one today.",
+      "start": 37.87,
+      "end": 47.57
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Three. Kevin was wearing a yellow shirt and green tie. I didn't like the tie, but I liked the shirt. He also had on brown pants.",
+      "start": 47.57,
+      "end": 61.19
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "He was wearing sneakers with long white socks. Kind of cute, actually. And he had a leather bag over one shoulder.",
+      "start": 61.19,
+      "end": 71.23
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Four. Amy looked really good. She had on a long skirt and a beautiful black jacket.",
+      "start": 71.23,
+      "end": 78.05
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "And she had some expensive glasses on. She also had on a collared shirt. She didn't have a bag. She was wearing sandals.",
+      "start": 78.05,
+      "end": 89.69
+    }
+  ]
+}

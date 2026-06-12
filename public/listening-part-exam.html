@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANTHICHTUHOC | Luyện nghe IELTS</title>
+<link href="https://api.fontshare.com/v2/css?f[]=garet@400,500,600,700,1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --exam-chrome-bg:#FAFAFA;
+  --exam-chrome-surface:#f5f5f7;
+  --exam-chrome-border:#E4E4E7;
+  --exam-chrome-text:#000001;
+  --exam-chrome-muted:#47464b;
+  --exam-header-bg:#000001;
+  --exam-header-text:#f7faf8;
+  --exam-header-muted:rgba(247,250,248,.78);
+  --exam-header-border:rgba(250,250,250,.14);
+  --exam-header-surface:rgba(250,250,250,.1);
+  --exam-submit-bg:#000001;
+  --exam-submit-text:#FAFAFA;
+  --exam-purple:#4b2876;
+  --exam-purple-border:#d4c8e4;
+  --exam-purple-soft:#ebe6f4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html.exam-skip-login #login-screen{display:none!important}
+html.exam-skip-login #exam-screen{display:flex!important;flex-direction:column;height:100vh;overflow:hidden}
+#topbar,.tb-title,.login-logo .org-name,.login-title h1,.sec-topic,.stitle{font-family:'Garet',system-ui,sans-serif}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--exam-chrome-surface);color:var(--exam-chrome-text);font-size:14px}
+#login-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--exam-chrome-surface)}
+.login-card{background:var(--exam-chrome-bg);border:1px solid var(--exam-chrome-border);border-radius:14px;box-shadow:0 6px 32px rgba(28,27,28,.08);padding:44px 52px;width:440px;max-width:95vw}
+.login-logo{text-align:center;margin-bottom:22px}
+.login-logo .org-name{font-size:22px;font-weight:800;color:var(--exam-chrome-text);letter-spacing:1.5px}
+.login-title{text-align:center;margin-bottom:28px}
+.login-title h1{font-size:21px;font-weight:700}
+.start-btn{width:100%;padding:13px;background:var(--exam-submit-bg);color:var(--exam-submit-text);border:none;border-radius:9px;font-size:15px;font-weight:700;cursor:pointer;margin-top:6px}
+#exam-screen{display:none;flex-direction:column;height:100vh;overflow:hidden;--exam-zoom:1;background:var(--exam-chrome-surface)}
+#topbar{background:var(--exam-header-bg);color:var(--exam-header-text);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;gap:12px;border-bottom:1px solid var(--exam-header-border)}
+.tb-left{display:flex;align-items:center;gap:14px;min-width:0}
+.tb-back{color:var(--exam-header-text);text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap}
+.tb-back:hover{color:var(--exam-header-muted)}
+.tb-title{font-size:13px;color:var(--exam-header-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tb-right{display:flex;align-items:center;gap:14px;flex-shrink:0}
+#timer-box{min-width:78px;padding:7px 14px;font-size:15px;letter-spacing:2.5px;border:1px solid var(--exam-header-border);border-radius:9px;font-variant-numeric:tabular-nums;color:var(--exam-header-text);background:var(--exam-header-surface)}
+#timer-box.warn{background:rgba(255,235,238,.95);border-color:#e57373;color:#b71c1c}
+.zoom-ctl{display:flex;align-items:center;gap:5px;border:1px solid var(--exam-header-border);border-radius:9px;padding:4px 7px;background:var(--exam-header-surface)}
+.zoom-btn{width:26px;height:26px;border:1px solid rgba(255,255,255,.28);border-radius:7px;background:transparent;color:var(--exam-header-text);cursor:pointer}
+.zoom-pct{font-size:11px;min-width:37px;text-align:center;color:var(--exam-header-text)}
+.ptab-bar{background:#fff;border-bottom:1px solid var(--exam-chrome-border);display:flex;flex-shrink:0}
+.ptab{padding:10px 26px;font-size:13px;font-weight:600;color:#888;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s;user-select:none;-webkit-user-select:none}
+.ptab:hover{color:#000001;background:var(--exam-chrome-surface)}
+.ptab.active{color:#000001;border-bottom-color:#000001}
+.ptab small{font-size:13px}
+#prog-wrap{height:4px;background:var(--exam-chrome-border);flex-shrink:0}
+#prog-bar{height:4px;background:var(--exam-header-bg);width:0%;transition:width .3s}
+#main{display:flex;flex:1;flex-direction:column;overflow:hidden;min-height:0;zoom:var(--exam-zoom);background:var(--exam-chrome-surface)}
+.audio-sr-only{position:absolute;width:0;height:0;overflow:hidden;clip:rect(0 0 0 0);pointer-events:none}
+.audio-done{padding:8px 20px;font-size:12px;color:var(--exam-chrome-muted);background:var(--exam-chrome-bg);border-bottom:1px solid var(--exam-chrome-border);display:none}
+#exam-body{display:flex;flex:1;flex-direction:column;min-height:0;overflow:hidden}
+#left-review-column{display:none;flex-direction:column;width:50%;min-width:0;border-right:1px solid var(--exam-chrome-border);background:var(--exam-chrome-bg)}
+#transcript-panel{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
+.transcript-scroll{flex:1;overflow-y:auto;min-height:0;padding:18px 22px 16px}
+.transcript-body{font-size:13.5px;line-height:1.75;color:var(--exam-chrome-text);user-select:text;-webkit-user-select:text}
+.transcript-body.transcript-by-part .transcript-part-panel{display:none}
+.transcript-body.transcript-by-part .transcript-part-panel.active{display:block}
+.transcript-empty{font-size:13px;color:var(--exam-chrome-muted);line-height:1.6}
+#review-audio-bar{display:none;flex-shrink:0;padding:6px 10px 8px;background:#fff;border-top:1px solid var(--exam-chrome-border)}
+#exam-screen.exam-review-mode #exam-body{flex-direction:row}
+#exam-screen.exam-review-mode #left-review-column{display:flex}
+#exam-screen.exam-review-mode #questions-panel{width:50%;flex:1;border-left:none}
+#exam-screen.exam-review-mode.no-transcript #transcript-panel{display:none}
+#exam-screen.exam-review-mode.no-transcript #left-review-column{width:100%;border-right:none;border-bottom:1px solid var(--exam-chrome-border)}
+#exam-screen.exam-review-mode.no-transcript #exam-body{flex-direction:column}
+#exam-screen.exam-review-mode.no-transcript #questions-panel{width:100%;flex:1}
+#exam-screen.exam-review-mode #review-audio-bar{display:block}
+#exam-screen.exam-review-mode #prog-wrap{display:none}
+#exam-screen.exam-review-mode #timer-box{display:none}
+.transcript-audio-dock .review-audio-card{border:none;box-shadow:none;padding:0;max-width:none;margin:0;display:flex;flex-direction:column;gap:0}
+.review-audio-seek{cursor:pointer}
+.review-audio-seek-track{height:5px;border-radius:999px;background:#E4E4E7;overflow:hidden}
+.review-audio-seek-fill{height:100%;width:0%;border-radius:999px;background:#4b2876;transition:width .1s linear}
+.review-audio-times{display:flex;justify-content:space-between;margin-top:4px;font-size:11px;line-height:1;color:#47464b;font-variant-numeric:tabular-nums}
+.review-audio-controls{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:2px}
+.review-audio-side{display:flex;align-items:center;gap:6px;min-width:60px}
+.review-audio-side-spacer{width:3.5rem;min-width:3.5rem;flex-shrink:0}
+.review-audio-speed{display:inline-flex;align-items:center;gap:4px;border:none;background:transparent;color:#47464b;font-size:12px;font-weight:600;cursor:pointer;padding:0;font-family:inherit}
+.review-audio-speed:hover{color:#4b2876}
+.review-audio-mute{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border:none;border-radius:999px;background:transparent;color:#47464b;cursor:pointer;padding:0}
+.review-audio-mute:hover{background:#f3f0f8;color:#4b2876}
+.review-audio-center{display:flex;align-items:center;justify-content:center;gap:6px}
+.review-audio-skip{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:none;border-radius:999px;background:transparent;color:#47464b;cursor:pointer;padding:0}
+.review-audio-skip:hover{background:#f3f0f8}
+.review-audio-skip-wrap{position:relative;display:flex;width:20px;height:20px;align-items:center;justify-content:center}
+.review-audio-skip-num{position:absolute;font-size:7px;font-weight:700;line-height:1}
+.review-audio-play{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:none;border-radius:999px;background:#000001;color:#fff;cursor:pointer;padding:0;box-shadow:0 2px 4px rgba(0,0,1,.12)}
+.review-audio-play .ra-icon-play{padding-left:1px}
+.review-audio-play:hover{background:rgba(0,0,1,.9)}
+.ra-icon{display:block;flex-shrink:0}
+.ra-icon-gauge{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ra-icon-vol{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ra-icon-rotate{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.ra-icon-play{width:16px;height:16px;fill:currentColor;stroke:none}
+.ra-icon-pause{width:16px;height:16px;fill:currentColor;stroke:none}
+#review-audio{display:none}
+#exam-screen.exam-review-mode #audio-finished-msg{display:none!important}
+#exam-screen.exam-review-mode #transcript-scroll mark.user-hl{background:#fff59d}
+#questions-panel{width:100%;flex:1;overflow-y:auto;min-height:0;background:var(--exam-chrome-bg)}
+.qsection{display:none;padding:26px 28px 40px}
+.qsection.active{display:block}
+#exam-screen:not(.exam-full-test) #questions-panel .qsection{display:block}
+.sec-hdr{margin-bottom:18px;padding-bottom:12px;border-bottom:2px solid #E4E4E7}
+.sec-topic{font-size:16px;font-weight:700;margin-bottom:10px}
+.sec-range{font-size:13px;font-weight:800;color:var(--exam-purple);text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px}
+.sec-instr{font-size:13px;line-height:1.65;color:var(--exam-chrome-text)}
+.sumbox{background:var(--exam-chrome-bg);border:1.5px solid var(--exam-chrome-border);border-radius:9px;padding:18px 22px;margin-bottom:8px}
+.sumtext{font-size:13.5px;line-height:2;color:var(--exam-chrome-text)}
+.note-doc-title{font-weight:800;font-size:15px;line-height:1.45;color:var(--exam-chrome-text);margin:0 0 10px}
+.note-section-title{font-weight:700;line-height:1.45;color:var(--exam-chrome-text);margin:14px 0 8px}
+.note-line{margin:0 0 8px;line-height:2;color:var(--exam-chrome-text)}
+.note-line.note-gap{margin-bottom:8px}
+.note-bullet-0{padding-left:0}
+.note-bullet-1{padding-left:1.35em}
+.note-bullet-mark{display:inline-block;min-width:1em;color:var(--exam-chrome-text)}
+.sumtext .note-doc-title:first-child,.sumtext .note-section-title:first-child{margin-top:0}
+.note-form-table,.note-grid-table{width:100%;border-collapse:collapse;margin:4px 0 8px;font-size:13.5px;line-height:1.65;color:var(--exam-chrome-text)}
+.note-form-table th,.note-form-table td,.note-grid-table th,.note-grid-table td{border:1px solid var(--exam-chrome-border);padding:10px 14px;vertical-align:top;text-align:left}
+.note-form-table th.note-form-label{width:38%;max-width:220px;font-weight:700;background:rgba(75,40,118,.04);white-space:nowrap}
+.note-form-table td.note-form-value{line-height:2}
+.note-grid-table thead th.note-grid-th{font-weight:700;background:rgba(75,40,118,.06)}
+.note-grid-table tbody td.note-grid-td{line-height:2}
+.note-form-table .fi,.note-grid-table .fi{width:100px;min-width:64px;max-width:160px}
+mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
+.hl-popover{position:fixed;z-index:1000;display:none;flex-direction:row;align-items:center;gap:2px;padding:3px 4px;background:#FAFAFA;border-radius:8px;box-shadow:0 4px 18px rgba(28,27,28,.12),0 0 0 1px rgba(228,228,231,.95);font-family:inherit}
+.hl-popover[aria-hidden="true"]{pointer-events:none}
+.hl-btn{font-size:11px;font-weight:700;padding:5px 10px;border-radius:5px;border:none;background:transparent;cursor:pointer;color:#333;font-family:inherit;white-space:nowrap}
+.hl-btn:hover{background:var(--exam-purple-soft);color:var(--exam-purple)}
+.hl-btn.hl-btn-primary{background:var(--exam-header-bg);color:#FAFAFA}
+.hl-btn.hl-btn-primary:hover{opacity:.92}
+.hl-btn.hl-remove-btn{color:#b71c1c}
+.hl-btn.hl-remove-btn:hover{background:#ffebee;color:#c62828}
+.fi-stack{display:inline-flex;align-items:baseline;gap:3px;margin:0 2px}
+.fi-stack .fi-num{font-size:13px;font-weight:700;color:var(--exam-purple)}
+.fi{border:none;border-bottom:1px solid var(--exam-chrome-border);background:transparent;outline:none;font-size:13px;padding:1px 4px;color:var(--exam-purple);font-weight:500;width:118px;min-width:72px}
+.fi.done,.msel.done{border-bottom-color:#5cb572}
+.qb{margin-bottom:20px}
+.qnum{font-size:14px;font-weight:700;color:var(--exam-purple);margin-bottom:5px}
+.qtext{font-size:13px;line-height:1.6;margin-bottom:10px;color:var(--exam-chrome-text)}
+.opts{display:flex;flex-direction:column;gap:7px;width:max-content;min-width:min(400px,100%);max-width:min(640px,100%)}
+.opt{display:flex;align-items:flex-start;gap:10px;cursor:pointer;padding:8px 12px;border-radius:7px;border:1.5px solid var(--exam-chrome-border);background:var(--exam-chrome-bg);font-size:13px;line-height:1.55;width:100%;box-sizing:border-box}
+.opt:hover{border-color:var(--exam-chrome-text);background:var(--exam-chrome-surface)}
+.opt input{margin-top:2px;accent-color:var(--exam-purple)}
+.opt.sel{border-color:var(--exam-purple);background:var(--exam-purple-soft);font-weight:500}
+.mrow{margin-bottom:14px}
+.mrow-top{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(96px,120px);gap:10px;align-items:center;width:100%;max-width:min(720px,100%)}
+.mqnum{background:var(--exam-header-bg);color:var(--exam-header-text);border-radius:5px;padding:3px 9px;font-size:12px;font-weight:700;justify-self:start}
+.mtext{font-size:13px;line-height:1.6;min-width:0;color:var(--exam-chrome-text)}
+.msel{border:1.5px solid var(--exam-chrome-border);border-radius:7px;padding:7px 10px;font-size:13px;background:var(--exam-chrome-bg);cursor:pointer;width:100%;min-width:0;box-sizing:border-box;color:var(--exam-chrome-text)}
+.msel.done{border-color:#34a853;background:#f4fbf5}
+.map-img-wrap{margin:14px 0 18px;text-align:center}
+.map-img{max-width:100%;height:auto;border:1px solid var(--exam-chrome-border);border-radius:8px;background:var(--exam-chrome-bg)}
+.people-bank{margin-bottom:16px;padding:14px 16px;background:var(--exam-chrome-bg);border:1.5px solid var(--exam-chrome-border);border-radius:9px}
+.people-bank-title{font-size:13px;font-weight:800;margin-bottom:10px;color:var(--exam-chrome-text)}
+.people-bank-list{list-style:none;display:grid;gap:6px}
+.people-bank-list li{display:flex;gap:8px;font-size:13px;line-height:1.5;color:var(--exam-chrome-text)}
+.people-bank-letter{font-weight:800;color:var(--exam-purple);min-width:18px}
+.choose-two-prompt{margin-bottom:14px;user-select:text;-webkit-user-select:text}
+.choose-two-block{max-width:min(720px,100%)}
+.choose-two-bank{margin-bottom:14px}
+.choose-two-options .people-bank-name,.choose-two-options .people-bank-letter{user-select:text;-webkit-user-select:text}
+.choose-two-answers{display:flex;flex-direction:column;gap:10px}
+.choose-two-row{display:grid;grid-template-columns:auto minmax(120px,160px);gap:10px;align-items:center}
+.choose-two-label{font-size:13px;font-weight:700;color:var(--exam-purple)}
+.choose-two-review{display:none;grid-column:2;font-size:13px;line-height:1.5}
+#exam-screen.exam-review-mode .choose-two-row .choose-two-sel{display:none}
+#exam-screen.exam-review-mode .choose-two-row .choose-two-review{display:block}
+#track-wrap{background:transparent;padding:0;flex:1;min-width:0}
+#bot-bar{background:var(--exam-chrome-bg);border-top:1px solid var(--exam-chrome-border);padding:10px 16px 12px;display:flex;flex-direction:row;flex-wrap:nowrap;align-items:flex-start;justify-content:space-between;gap:12px 16px;flex-shrink:0}
+.track-groups{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:flex-start}
+.track-grp{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+.track-label{font-size:10px;font-weight:800;color:var(--exam-chrome-muted);text-transform:uppercase}
+.track-grid{display:flex;flex-wrap:wrap;gap:3px}
+.qt{min-width:22px;height:22px;border:1.5px solid var(--exam-chrome-border);border-radius:4px;background:var(--exam-chrome-bg);color:var(--exam-chrome-muted);font-weight:700;font-size:10px;cursor:pointer}
+.qt.qt-done{background:#e6f4ea;border-color:#34a853;color:#1a7a30}
+.track-hint{margin:5px 0 0;font-size:10px;color:var(--exam-chrome-muted)}
+#sub-btn{flex-shrink:0;align-self:flex-start;background:var(--exam-submit-bg);color:var(--exam-submit-text);border:none;border-radius:8px;padding:10px 22px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap}
+#sub-btn:hover{opacity:.92}
+#sub-btn .review-score-band{font-weight:600;color:rgba(250,250,250,.82)}
+#exam-screen.exam-review-mode .opt.review-user{border-color:var(--exam-purple);background:var(--exam-purple-soft);font-weight:500}
+#exam-screen.exam-review-mode .opt.review-correct{border-color:#34a853;background:#f4fbf5;font-weight:500}
+#exam-screen.exam-review-mode .opt.review-user.review-correct{border-color:#34a853;background:#e8f5e9;box-shadow:inset 0 0 0 2px var(--exam-purple)}
+#exam-screen.exam-review-mode .msel.review-user{border-color:var(--exam-purple);background:var(--exam-purple-soft);font-weight:500}
+#exam-screen.exam-review-mode .msel.review-correct{border-color:#34a853;background:#f4fbf5;font-weight:500}
+#exam-screen.exam-review-mode .msel.review-user.review-correct{border-color:#34a853;background:#e8f5e9;box-shadow:inset 0 0 0 2px var(--exam-purple)}
+#exam-screen.exam-review-mode .fi.review-user{border-bottom-color:var(--exam-purple)}
+#exam-screen.exam-review-mode .fi.review-correct{border-bottom-color:#34a853}
+#exam-screen.exam-review-mode .fi.review-user.review-wrong{border-bottom-color:#e57373}
+.review-correct-pill{display:block;margin:0;padding:0;border:none;background:transparent;color:#1a7a30;font-size:11px;font-weight:600;line-height:1.35;white-space:nowrap;text-align:right}
+.review-correct-pill::before{content:'Đáp án đúng: ';color:#5a6b5f;font-weight:500}
+.mrow .review-correct-pill{width:100%;margin-top:2px;text-align:right}
+#exam-screen.exam-review-mode #questions-panel input,
+#exam-screen.exam-review-mode #questions-panel select,
+#exam-screen.exam-review-mode #questions-panel label.opt{pointer-events:none!important}
+#exam-screen.exam-review-mode #questions-panel input,
+#exam-screen.exam-review-mode #questions-panel select{opacity:.92}
+#exam-screen.exam-review-mode #sub-btn{cursor:default;pointer-events:none}
+#exam-screen.exam-review-mode #sub-btn:hover{opacity:1}
+#exam-screen.exam-review-mode .track-hint{color:var(--exam-chrome-muted)}
+.ans-review-line{margin:0 0 10px;padding:0 0 0 2px;font-size:11px;line-height:1.45;display:flex;flex-wrap:wrap;gap:6px 14px}
+.sumtext p+.ans-review-line{margin-top:-2px}
+.ans-review-line .ans-your{color:#555}
+.ans-review-line .ans-correct{color:#1a7a30;font-weight:700}
+.ans-review-line.is-correct .ans-your{color:#1a7a30}
+.ans-review-line.is-wrong .ans-your{color:#b71c1c}
+#exam-screen.exam-review-mode #questions-panel .mtext,
+#exam-screen.exam-review-mode #questions-panel .qtext,
+#exam-screen.exam-review-mode #questions-panel .sec-instr,
+#exam-screen.exam-review-mode #questions-panel .sumtext,
+#exam-screen.exam-review-mode #questions-panel .note-section-title,
+#exam-screen.exam-review-mode #questions-panel .note-doc-title,
+#exam-screen.exam-review-mode #questions-panel .note-line{user-select:text;-webkit-user-select:text}
+#questions-panel .mtext,
+#questions-panel .qtext,
+#questions-panel .sec-instr,
+#questions-panel .sumtext,
+#questions-panel .note-section-title,
+#questions-panel .note-doc-title,
+#questions-panel .note-line,
+#questions-panel label.opt span{user-select:text;-webkit-user-select:text}
+#audio-intro-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,1,.72);align-items:center;justify-content:center;z-index:200;padding:20px}
+#audio-intro-overlay.is-open{display:flex}
+.audio-intro-inner{background:var(--exam-chrome-bg);border:1px solid var(--exam-chrome-border);border-radius:16px;padding:32px 36px;max-width:520px;width:100%;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.12)}
+.audio-intro-main{font-size:15px;line-height:1.65;margin-bottom:10px;color:var(--exam-chrome-text)}
+.audio-intro-sub{font-size:13px;color:var(--exam-chrome-muted);margin-bottom:18px}
+.audio-play-btn{background:var(--exam-submit-bg);color:var(--exam-submit-text);border:none;border-radius:10px;padding:12px 28px;font-size:15px;font-weight:700;cursor:pointer}
+</style>
+</head>
+<body>
+
+<div id="login-screen">
+  <div class="login-card">
+    <div class="login-logo"><div class="org-name">ANTHICHTUHOC</div></div>
+    <div class="login-title"><h1>IELTS Listening</h1></div>
+    <button class="start-btn" onclick="startExam()">Start exam &rarr;</button>
+  </div>
+</div>
+
+<div id="exam-screen">
+  <div id="topbar">
+    <div class="tb-left">
+      <a class="tb-back" id="exam-back-link" href="#">← Quay lại</a>
+      <div class="tb-title" id="exam-subtitle">IELTS Listening</div>
+    </div>
+    <div class="tb-right">
+      <div class="zoom-ctl">
+        <button type="button" class="zoom-btn" onclick="examZoomOut()" aria-label="Zoom out">&minus;</button>
+        <span id="zoom-pct" class="zoom-pct">100%</span>
+        <button type="button" class="zoom-btn" onclick="examZoomIn()" aria-label="Zoom in">+</button>
+      </div>
+      <div id="timer-box">00:00</div>
+    </div>
+  </div>
+
+  <div id="prog-wrap"><div id="prog-bar"></div></div>
+
+  <div id="main">
+    <div class="audio-sr-only" aria-hidden="true">
+      <audio id="exam-audio" preload="auto" playsinline src="">Your browser does not support audio.</audio>
+    </div>
+    <p id="audio-finished-msg" class="audio-done" role="status">Audio has finished. You cannot replay the recording.</p>
+
+    <div id="exam-body">
+      <div id="left-review-column" class="left-review-column">
+        <aside id="transcript-panel" class="transcript-panel" aria-label="Transcript">
+          <div class="transcript-scroll" id="transcript-scroll">
+            <div class="transcript-body" id="transcript-body"><p class="transcript-empty">Transcript sẽ hiện sau khi nộp bài.</p></div><!-- /transcript-body -->
+          </div>
+        </aside>
+        <div id="review-audio-bar" class="transcript-audio-dock" aria-label="Nghe lại recording">
+          <div class="review-audio-card">
+            <div class="review-audio-seek" id="review-audio-seek" role="slider" aria-label="Tiến độ audio" tabindex="0">
+              <div class="review-audio-seek-track"><div class="review-audio-seek-fill" id="review-audio-seek-fill"></div></div>
+              <div class="review-audio-times">
+                <span id="review-audio-current">0:00</span>
+                <span id="review-audio-duration">—:—</span>
+              </div>
+            </div>
+            <div class="review-audio-controls">
+              <div class="review-audio-side">
+                <button type="button" class="review-audio-speed" id="review-audio-speed" title="Tốc độ nghe">
+                  <svg class="ra-icon ra-icon-gauge" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+                  <span id="review-audio-speed-label">1x</span>
+                </button>
+                <button type="button" class="review-audio-mute" id="review-audio-mute" aria-label="Tắt âm thanh" title="Tắt âm thanh">
+                  <svg class="ra-icon ra-icon-vol" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+                </button>
+              </div>
+              <div class="review-audio-center">
+                <button type="button" class="review-audio-skip" id="review-audio-back" aria-label="Lùi 10 giây">
+                  <span class="review-audio-skip-wrap">
+                    <svg class="ra-icon ra-icon-rotate" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                    <span class="review-audio-skip-num">10</span>
+                  </span>
+                </button>
+                <button type="button" class="review-audio-play" id="review-audio-play" aria-label="Phát">
+                  <svg class="ra-icon ra-icon-play" viewBox="0 0 24 24" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                </button>
+                <button type="button" class="review-audio-skip" id="review-audio-fwd" aria-label="Tới 30 giây">
+                  <span class="review-audio-skip-wrap">
+                    <svg class="ra-icon ra-icon-rotate" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+                    <span class="review-audio-skip-num">30</span>
+                  </span>
+                </button>
+              </div>
+              <div class="review-audio-side-spacer" aria-hidden="true"></div>
+            </div>
+            <audio id="review-audio" preload="metadata" playsinline src=""></audio>
+          </div>
+        </div>
+      </div>
+
+      <div id="questions-panel">
+        <div class="qsection active" id="q-section"><p>Loading questions…</p></div>
+      </div><!-- /questions-panel -->
+    </div><!-- /exam-body -->
+  </div>
+
+  <div id="bot-bar">
+    <div id="track-wrap">
+      <div class="track-groups"><div class="track-grp"><span class="track-label">Q</span><div class="track-grid" id="track-grid"></div></div></div><!-- /track-groups -->
+      <p class="track-hint">Xanh = đã trả lời · Xám = chưa · Bấm số câu để mở</p>
+    </div>
+    <button id="sub-btn" type="button" onclick="submitExam()" aria-live="polite">Submit answers</button>
+  </div>
+
+  <div id="hl-popover" class="hl-popover" role="toolbar" aria-label="Text highlight" aria-hidden="true">
+    <button type="button" class="hl-btn hl-btn-primary" id="hl-pop-add">Highlight</button>
+    <button type="button" class="hl-btn hl-remove-btn" id="hl-pop-remove" style="display:none">Remove</button>
+  </div>
+</div>
+
+<div id="audio-intro-overlay" aria-modal="true" role="dialog">
+  <div class="audio-intro-inner">
+    <p class="audio-intro-main">You will listen to the recording once. You cannot pause or rewind while answering.</p>
+    <p class="audio-intro-sub">Click Play to start the audio and timer.</p>
+    <button type="button" class="audio-play-btn" id="audio-play-btn" onclick="beginListeningExam()">&#9654; Play</button>
+  </div>
+</div>
+
+<script>
+/* listening-part-exam boot */
+var EXAM_DURATION_SEC=600;
+var timeLeft=EXAM_DURATION_SEC,timerInt,answered={},examStarted=false,examAnswerKey=null,questionNums=[];
+var examReviewMode=false,userAnswersSnapshot={};
+var examZoom=1,ZOOM_MIN=0.75,ZOOM_MAX=1.5,ZOOM_STEP=0.1;
+var examMeta=null,isFullTest=false,audioUrls=[],audioDurations=[],currentListeningPart=1,partQuestionRanges=[];
+var reviewAudioParts=[],reviewActivePartIndex=0,reviewGlobalTime=0,reviewGlobalDuration=0,reviewTimeUpdateBound=false;
+
+function pad(n){return n<10?'0'+n:n;}
+
+function applyExamPayload(data){
+  if(!data)return;
+  examMeta=data;
+  isFullTest=!!data.isFullTest;
+  if(data.back){var bl=document.getElementById('exam-back-link');if(bl)bl.href=data.back;}
+  if(!isFullTest&&data.timeMinutes){
+    EXAM_DURATION_SEC=Math.max(60,data.timeMinutes*60);
+    timeLeft=EXAM_DURATION_SEC;
+  }
+  if(Array.isArray(data.questionNums))questionNums=data.questionNums;
+  examAnswerKey=data.answerKey&&typeof data.answerKey==='object'?data.answerKey:null;
+  if(isFullTest){
+    audioUrls=Array.isArray(data.audioUrls)?data.audioUrls.slice():[];
+    partQuestionRanges=Array.isArray(data.partQuestionRanges)?data.partQuestionRanges.slice():[];
+    var ex=document.getElementById('exam-screen');
+    if(ex)ex.classList.add('exam-full-test');
+    if(data.hasTranscript===false){
+      if(ex)ex.classList.add('no-transcript');
+    }
+  } else if(data.audioUrl){
+    var ae=document.getElementById('exam-audio');
+    var ra=document.getElementById('review-audio');
+    if(ae&&!ae.getAttribute('src'))ae.src=data.audioUrl;
+    if(ra&&!ra.getAttribute('src'))ra.src=data.audioUrl;
+    if(data.hasTranscript===false){
+      var ex2=document.getElementById('exam-screen');
+      if(ex2)ex2.classList.add('no-transcript');
+    }
+  }
+  updateTimerDisplay();
+}
+
+function updateTimerDisplay(){
+  var tb=document.getElementById('timer-box');
+  if(tb)tb.textContent=pad(Math.floor(timeLeft/60))+':'+pad(timeLeft%60);
+}
+
+function updateTranscriptForPart(n){
+  var body=document.getElementById('transcript-body');
+  if(!body||!body.classList.contains('transcript-by-part'))return;
+  body.querySelectorAll('.transcript-part-panel').forEach(function(el){
+    el.classList.toggle('active',parseInt(el.getAttribute('data-part'),10)===n);
+  });
+  var scroll=document.getElementById('transcript-scroll');
+  if(scroll)scroll.scrollTop=0;
+}
+
+function switchListeningPart(n){
+  if(!isFullTest)return;
+  currentListeningPart=n;
+  document.querySelectorAll('#part-tabs .ptab').forEach(function(el){
+    el.classList.toggle('active',parseInt(el.getAttribute('data-part'),10)===n);
+  });
+  document.querySelectorAll('#questions-panel .qsection').forEach(function(el){
+    var partNum=parseInt(el.id.replace('q','').replace('-section',''),10);
+    el.classList.toggle('active',partNum===n);
+  });
+  if(examReviewMode)updateTranscriptForPart(n);
+}
+
+function preloadAudioDurations(urls,cb){
+  if(!urls.length){cb(1800);return;}
+  var pending=urls.length,total=0;
+  audioDurations=new Array(urls.length).fill(0);
+  urls.forEach(function(url,i){
+    var probe=new Audio();
+    probe.preload='metadata';
+    probe.src=url;
+    var done=function(sec){
+      audioDurations[i]=sec||0;
+      total+=audioDurations[i];
+      pending--;
+      if(pending===0)cb(Math.max(60,Math.ceil(total)));
+    };
+    probe.addEventListener('loadedmetadata',function(){done(probe.duration);},{once:true});
+    probe.addEventListener('error',function(){done(0);},{once:true});
+  });
+}
+
+function playExamAudioAtIndex(index){
+  var ae=document.getElementById('exam-audio');
+  if(!ae||!audioUrls[index])return;
+  ae.onended=null;
+  ae.src=audioUrls[index];
+  ae.load();
+  ae.onended=function(){
+    if(index<audioUrls.length-1)playExamAudioAtIndex(index+1);
+    else onExamAudioEnded();
+  };
+  var p=ae.play();
+  if(p&&p.catch)p.catch(function(){});
+}
+
+function startFullTestAudioAndTimer(){
+  preloadAudioDurations(audioUrls,function(totalSec){
+    EXAM_DURATION_SEC=totalSec;
+    timeLeft=totalSec;
+    updateTimerDisplay();
+    timerInt=setInterval(tick,1000);
+    playExamAudioAtIndex(0);
+  });
+}
+
+function applyExamZoom(){
+  var ex=document.getElementById('exam-screen');if(!ex)return;
+  ex.style.setProperty('--exam-zoom',String(examZoom));
+  var pct=document.getElementById('zoom-pct');if(pct)pct.textContent=Math.round(examZoom*100)+'%';
+}
+function examZoomIn(){examZoom=Math.min(ZOOM_MAX,Math.round((examZoom+ZOOM_STEP)*100)/100);applyExamZoom();}
+function examZoomOut(){examZoom=Math.max(ZOOM_MIN,Math.round((examZoom-ZOOM_STEP)*100)/100);applyExamZoom();}
+
+function startExam(){
+  document.getElementById('login-screen').style.display='none';
+  document.getElementById('exam-screen').style.display='flex';
+  applyExamZoom();
+  updateProg();
+  var aio=document.getElementById('audio-intro-overlay');
+  if(aio)aio.classList.add('is-open');
+}
+
+function beginListeningExam(){
+  if(examStarted)return;
+  examStarted=true;
+  var aio=document.getElementById('audio-intro-overlay');
+  if(aio)aio.classList.remove('is-open');
+  if(isFullTest&&audioUrls.length){
+    startFullTestAudioAndTimer();
+    return;
+  }
+  timerInt=setInterval(tick,1000);
+  var ae=document.getElementById('exam-audio');
+  if(ae){
+    ae.addEventListener('ended',onExamAudioEnded,{once:true});
+    if(ae.src){ae.currentTime=0;var p=ae.play();if(p&&p.catch)p.catch(function(){});}
+  }
+}
+
+function onExamAudioEnded(){
+  var msg=document.getElementById('audio-finished-msg');if(msg)msg.style.display='block';
+  if(isFullTest&&!examReviewMode)autoSubmit();
+}
+
+function tick(){
+  if(timeLeft<=0){clearInterval(timerInt);autoSubmit();return;}
+  var m=Math.floor(timeLeft/60),s=timeLeft%60;
+  var tb=document.getElementById('timer-box');
+  if(tb){tb.textContent=pad(m)+':'+pad(s);tb.classList.toggle('warn',timeLeft<=300);}
+  timeLeft--;
+}
+
+function goToQuestion(n){
+  if(isFullTest&&partQuestionRanges.length){
+    var targetPart=currentListeningPart;
+    for(var i=0;i<partQuestionRanges.length;i++){
+      var r=partQuestionRanges[i];
+      if(n>=r.min&&n<=r.max){targetPart=r.part;break;}
+    }
+    if(targetPart!==currentListeningPart)switchListeningPart(targetPart);
+  }
+  var el=document.getElementById('q'+n)||document.getElementById('sel-q'+n)||document.querySelector('[name="q'+n+'"]');
+  if(el)el.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+function updateProg(){
+  var total=questionNums.length||10;
+  var c=Object.keys(answered).length;
+  document.getElementById('prog-bar').style.width=Math.round((c/total)*100)+'%';
+  questionNums.forEach(function(i){
+    var cell=document.getElementById('qt-'+i);
+    if(!cell)return;
+    var done=!!answered['q'+i];
+    cell.classList.toggle('qt-done',done);
+  });
+}
+
+function markFill(qid,val){
+  var el=document.getElementById(qid);
+  if(val.trim()){answered[qid]=true;if(el)el.classList.add('done');}
+  else{delete answered[qid];if(el)el.classList.remove('done');}
+  updateProg();
+}
+
+function selMCQ(qid,inp){
+  var c=document.getElementById(qid+'-opts');
+  if(c)c.querySelectorAll('.opt').forEach(function(l){l.classList.remove('sel');});
+  inp.closest('.opt').classList.add('sel');
+  answered[qid]=true;updateProg();
+}
+
+function selMatch(qid,sel){
+  if(sel.value){answered[qid]=true;sel.classList.add('done');}
+  else{delete answered[qid];sel.classList.remove('done');}
+  updateProg();
+}
+
+function normAns(v){return String(v||'').trim().toLowerCase().replace(/\s+/g,' ');}
+
+function collectAnswer(qnum){
+  var qid='q'+qnum;
+  var inp=document.getElementById(qid);
+  if(inp&&inp.tagName==='INPUT')return inp.value;
+  var sel=document.getElementById('sel-'+qid);
+  if(sel&&sel.tagName==='SELECT')return sel.value;
+  var radio=document.querySelector('input[name="'+qid+'"]:checked');
+  if(radio)return radio.value;
+  return '';
+}
+
+function collectAnswers(){
+  var r={};
+  questionNums.forEach(function(n){
+    r['q'+n]=collectAnswer(n);
+  });
+  return r;
+}
+
+function stopExamTimer(){
+  if(timerInt){clearInterval(timerInt);timerInt=null;}
+}
+
+function stopExamAudio(){
+  var ae=document.getElementById('exam-audio');
+  if(!ae)return;
+  ae.pause();
+  try{ae.currentTime=0;}catch(e){}
+}
+
+function getReviewOffsetForPart(partIndex){
+  var offset=0;
+  for(var i=0;i<partIndex;i++)offset+=(audioDurations[i]||0);
+  return offset;
+}
+
+function seekReviewGlobalTime(t){
+  reviewGlobalTime=Math.max(0,Math.min(reviewGlobalDuration,t));
+  var acc=0,idx=0,local=0;
+  for(var i=0;i<reviewAudioParts.length;i++){
+    var d=audioDurations[i]||reviewAudioParts[i].duration||0;
+    if(reviewGlobalTime<=acc+d||i===reviewAudioParts.length-1){
+      idx=i;local=Math.max(0,reviewGlobalTime-acc);break;
+    }
+    acc+=d;
+  }
+  reviewActivePartIndex=idx;
+  reviewAudioParts.forEach(function(a,j){
+    if(j!==idx){a.pause();}
+  });
+  var active=reviewAudioParts[idx];
+  if(active){
+    active.currentTime=local;
+    updateReviewAudioUi();
+  }
+}
+
+function updateFullTestReviewAudioUi(){
+  var fill=document.getElementById('review-audio-seek-fill');
+  var cur=document.getElementById('review-audio-current');
+  var dur=document.getElementById('review-audio-duration');
+  var playBtn=document.getElementById('review-audio-play');
+  var active=reviewAudioParts[reviewActivePartIndex];
+  if(active&&!active.paused){
+    reviewGlobalTime=getReviewOffsetForPart(reviewActivePartIndex)+active.currentTime;
+  }
+  var progress=reviewGlobalDuration>0?Math.min(1,reviewGlobalTime/reviewGlobalDuration):0;
+  if(fill)fill.style.width=Math.round(progress*100)+'%';
+  if(cur)cur.textContent=formatAudioTime(reviewGlobalTime);
+  if(dur)dur.textContent=reviewGlobalDuration>0?formatAudioTime(reviewGlobalDuration):'—:—';
+  if(playBtn){
+    var playing=reviewAudioParts.some(function(a){return a&&!a.paused;});
+    playBtn.innerHTML=playing?REVIEW_ICON_PAUSE:REVIEW_ICON_PLAY;
+    playBtn.setAttribute('aria-label',playing?'Tạm dừng':'Phát');
+  }
+}
+
+function wireFullTestReviewAudioPlayer(){
+  if(reviewAudioWired)return;
+  var seek=document.getElementById('review-audio-seek');
+  var playBtn=document.getElementById('review-audio-play');
+  var backBtn=document.getElementById('review-audio-back');
+  var fwdBtn=document.getElementById('review-audio-fwd');
+  var speedBtn=document.getElementById('review-audio-speed');
+  var muteBtn=document.getElementById('review-audio-mute');
+  if(!seek||!playBtn||!audioUrls.length)return;
+  reviewAudioWired=true;
+  reviewAudioParts=audioUrls.map(function(url){
+    var a=new Audio();
+    a.src=url;
+    a.preload='metadata';
+    return a;
+  });
+  var pending=reviewAudioParts.length;
+  reviewGlobalDuration=0;
+  audioDurations=new Array(reviewAudioParts.length).fill(0);
+  reviewAudioParts.forEach(function(a,i){
+    a.addEventListener('loadedmetadata',function(){
+      audioDurations[i]=a.duration||0;
+      reviewGlobalDuration=audioDurations.reduce(function(s,d){return s+d;},0);
+      pending--;
+      if(pending===0)updateFullTestReviewAudioUi();
+    });
+    a.addEventListener('ended',function(){
+      if(reviewActivePartIndex<reviewAudioParts.length-1){
+        reviewActivePartIndex++;
+        var next=reviewAudioParts[reviewActivePartIndex];
+        if(next){next.currentTime=0;next.play().catch(function(){});}
+      }
+      updateFullTestReviewAudioUi();
+    });
+    a.addEventListener('timeupdate',updateFullTestReviewAudioUi);
+  });
+
+  playBtn.addEventListener('click',function(){
+    var active=reviewAudioParts[reviewActivePartIndex]||reviewAudioParts[0];
+    if(!active)return;
+    if(active.paused){active.play().catch(function(){});}
+    else reviewAudioParts.forEach(function(a){a.pause();});
+    updateFullTestReviewAudioUi();
+  });
+  backBtn.addEventListener('click',function(){
+    seekReviewGlobalTime(reviewGlobalTime-10);
+  });
+  fwdBtn.addEventListener('click',function(){
+    seekReviewGlobalTime(reviewGlobalTime+30);
+  });
+  speedBtn.addEventListener('click',function(){
+    reviewSpeedIdx=(reviewSpeedIdx+1)%REVIEW_SPEEDS.length;
+    var speed=REVIEW_SPEEDS[reviewSpeedIdx];
+    reviewAudioParts.forEach(function(a){a.playbackRate=speed;});
+    var speedLabel=document.getElementById('review-audio-speed-label');
+    if(speedLabel)speedLabel.textContent=speed+'x';
+  });
+  muteBtn.addEventListener('click',function(){
+    var nextMuted=!reviewAudioParts[0].muted;
+    reviewAudioParts.forEach(function(a){a.muted=nextMuted;});
+    setReviewMuteIcon(nextMuted);
+  });
+  seek.addEventListener('click',function(e){
+    if(!reviewGlobalDuration)return;
+    var rect=seek.getBoundingClientRect();
+    var ratio=Math.min(1,Math.max(0,(e.clientX-rect.left)/rect.width));
+    seekReviewGlobalTime(ratio*reviewGlobalDuration);
+    updateFullTestReviewAudioUi();
+  });
+  updateFullTestReviewAudioUi();
+}
+
+function showReviewAudioPlayer(){
+  stopExamAudio();
+  if(isFullTest&&audioUrls.length){
+    wireFullTestReviewAudioPlayer();
+    return;
+  }
+  var ae=document.getElementById('exam-audio');
+  var reviewAe=document.getElementById('review-audio');
+  if(!reviewAe)return;
+  var src=ae&&ae.src?ae.src:(reviewAe.src||'');
+  if(src&&!reviewAe.src)reviewAe.src=src;
+  wireReviewAudioPlayer();
+}
+
+var reviewAudioWired=false;
+var REVIEW_SPEEDS=[1,1.25,1.5,1.75];
+var reviewSpeedIdx=0;
+var REVIEW_ICON_PLAY='<svg class="ra-icon ra-icon-play" viewBox="0 0 24 24" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>';
+var REVIEW_ICON_PAUSE='<svg class="ra-icon ra-icon-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>';
+var REVIEW_ICON_VOLUME='<svg class="ra-icon ra-icon-vol" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>';
+var REVIEW_ICON_VOLUME_X='<svg class="ra-icon ra-icon-vol" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="22" x2="16" y1="9" y2="15"/><line x1="16" x2="22" y1="9" y2="15"/></svg>';
+
+function formatAudioTime(seconds){
+  if(!Number.isFinite(seconds)||seconds<0)return '0:00';
+  var total=Math.floor(seconds);
+  var m=Math.floor(total/60);
+  var s=total%60;
+  return m+':'+(s<10?'0':'')+s;
+}
+
+function updateReviewAudioUi(){
+  var audio=document.getElementById('review-audio');
+  var fill=document.getElementById('review-audio-seek-fill');
+  var cur=document.getElementById('review-audio-current');
+  var dur=document.getElementById('review-audio-duration');
+  var playBtn=document.getElementById('review-audio-play');
+  if(!audio)return;
+  var progress=audio.duration>0?Math.min(1,audio.currentTime/audio.duration):0;
+  if(fill)fill.style.width=Math.round(progress*100)+'%';
+  if(cur)cur.textContent=formatAudioTime(audio.currentTime);
+  if(dur)dur.textContent=audio.duration>0?formatAudioTime(audio.duration):'—:—';
+  if(playBtn){
+    playBtn.innerHTML=audio.paused?REVIEW_ICON_PLAY:REVIEW_ICON_PAUSE;
+    playBtn.setAttribute('aria-label',audio.paused?'Phát':'Tạm dừng');
+  }
+}
+
+function setReviewMuteIcon(muted){
+  var muteBtn=document.getElementById('review-audio-mute');
+  if(!muteBtn)return;
+  muteBtn.innerHTML=muted?REVIEW_ICON_VOLUME_X:REVIEW_ICON_VOLUME;
+  muteBtn.setAttribute('aria-label',muted?'Bật âm thanh':'Tắt âm thanh');
+}
+
+function wireReviewAudioPlayer(){
+  if(reviewAudioWired)return;
+  var audio=document.getElementById('review-audio');
+  var seek=document.getElementById('review-audio-seek');
+  var playBtn=document.getElementById('review-audio-play');
+  var backBtn=document.getElementById('review-audio-back');
+  var fwdBtn=document.getElementById('review-audio-fwd');
+  var speedBtn=document.getElementById('review-audio-speed');
+  var muteBtn=document.getElementById('review-audio-mute');
+  if(!audio||!seek||!playBtn)return;
+  reviewAudioWired=true;
+
+  audio.addEventListener('loadedmetadata',updateReviewAudioUi);
+  audio.addEventListener('timeupdate',updateReviewAudioUi);
+  audio.addEventListener('play',updateReviewAudioUi);
+  audio.addEventListener('pause',updateReviewAudioUi);
+  audio.addEventListener('ended',updateReviewAudioUi);
+
+  playBtn.addEventListener('click',function(){
+    if(audio.paused){var p=audio.play();if(p&&p.catch)p.catch(function(){});}
+    else audio.pause();
+  });
+  backBtn.addEventListener('click',function(){
+    if(!Number.isFinite(audio.duration))return;
+    audio.currentTime=Math.max(0,audio.currentTime-10);
+    updateReviewAudioUi();
+  });
+  fwdBtn.addEventListener('click',function(){
+    if(!Number.isFinite(audio.duration))return;
+    audio.currentTime=Math.min(audio.duration,audio.currentTime+30);
+    updateReviewAudioUi();
+  });
+  speedBtn.addEventListener('click',function(){
+    reviewSpeedIdx=(reviewSpeedIdx+1)%REVIEW_SPEEDS.length;
+    var speed=REVIEW_SPEEDS[reviewSpeedIdx];
+    audio.playbackRate=speed;
+    var speedLabel=document.getElementById('review-audio-speed-label');
+    if(speedLabel)speedLabel.textContent=speed+'x';
+  });
+  muteBtn.addEventListener('click',function(){
+    audio.muted=!audio.muted;
+    setReviewMuteIcon(audio.muted);
+  });
+  seek.addEventListener('click',function(e){
+    if(!Number.isFinite(audio.duration))return;
+    var rect=seek.getBoundingClientRect();
+    var ratio=Math.min(1,Math.max(0,(e.clientX-rect.left)/rect.width));
+    audio.currentTime=ratio*audio.duration;
+    updateReviewAudioUi();
+  });
+  updateReviewAudioUi();
+}
+
+function splitAnswerLetters(value){
+  return String(value||'').split(/[,/]/).map(function(x){return x.trim();}).filter(Boolean);
+}
+
+function getCorrectAnswerForQuestion(num){
+  var key=String(num);
+  if(examAnswerKey&&examAnswerKey[key])return examAnswerKey[key];
+  if(!examAnswerKey)return '';
+  var keys=Object.keys(examAnswerKey);
+  for(var i=0;i<keys.length;i++){
+    var k=keys[i];
+    if(k.indexOf('&')<0)continue;
+    var parts=k.split('&').map(function(p){return parseInt(p,10);});
+    var idx=parts.indexOf(num);
+    if(idx<0)continue;
+    var letters=splitAnswerLetters(examAnswerKey[k]);
+    if(letters.length===parts.length)return letters[idx];
+    return examAnswerKey[k];
+  }
+  return '';
+}
+
+function answersMatch(userVal,correctVal){
+  if(!userVal||!correctVal)return false;
+  var userNorm=normAns(userVal);
+  var alts=String(correctVal).split(/\//).map(function(x){return normAns(x);}).filter(Boolean);
+  if(alts.length===0)alts=[normAns(correctVal)];
+  if(alts.indexOf(userNorm)>=0)return true;
+  if(alts.some(function(a){return normAns(userVal.replace(/[^a-z0-9\s]/gi,''))===a.replace(/[^a-z0-9\s]/gi,'');}))return true;
+  return false;
+}
+
+function isAnswerCorrect(num,userVal){
+  var direct=examAnswerKey&&examAnswerKey[String(num)];
+  if(direct)return answersMatch(userVal,direct);
+  if(!examAnswerKey)return false;
+  var keys=Object.keys(examAnswerKey);
+  for(var i=0;i<keys.length;i++){
+    var k=keys[i];
+    if(k.indexOf('&')<0)continue;
+    var parts=k.split('&').map(function(p){return parseInt(p,10);});
+    if(parts.indexOf(num)<0)continue;
+    var expected=splitAnswerLetters(examAnswerKey[k]).map(function(x){return normAns(x);});
+    return expected.indexOf(normAns(userVal))>=0;
+  }
+  return false;
+}
+
+function ieltsListeningBandFromRaw40(raw){
+  var r=Math.max(0,Math.min(40,Math.round(raw)));
+  if(r>=39)return 9;
+  if(r>=37)return 8.5;
+  if(r>=35)return 8;
+  if(r>=33)return 7.5;
+  if(r>=30)return 7;
+  if(r>=27)return 6.5;
+  if(r>=23)return 6;
+  if(r>=19)return 5.5;
+  if(r>=15)return 5;
+  if(r>=13)return 4.5;
+  if(r>=10)return 4;
+  if(r>=8)return 3.5;
+  if(r>=6)return 3;
+  if(r>=4)return 2.5;
+  if(r>=2)return 2;
+  if(r>=1)return 1;
+  return 0;
+}
+
+function formatIeltsBand(band){
+  return Number(band).toFixed(1);
+}
+
+function computeExamScore(){
+  if(!examAnswerKey||!questionNums.length)return null;
+  var correct=0,total=0;
+  questionNums.forEach(function(n){
+    var correctVal=getCorrectAnswerForQuestion(n);
+    if(!String(correctVal).trim())return;
+    total++;
+    if(isAnswerCorrect(n,userAnswersSnapshot['q'+n]||''))correct++;
+  });
+  if(!total)return null;
+  var rawForBand=total===40?correct:Math.round((correct/total)*40);
+  return {
+    correct:correct,
+    total:total,
+    band:ieltsListeningBandFromRaw40(rawForBand),
+    equivalent:total!==40
+  };
+}
+
+function renderReviewScore(){
+  var btn=document.getElementById('sub-btn');
+  if(!btn)return;
+  var score=computeExamScore();
+  if(!score){
+    btn.textContent='Submit answers';
+    btn.disabled=false;
+    btn.removeAttribute('aria-label');
+    return;
+  }
+  var bandLabel=score.equivalent?'Band tương đương ':'Band ';
+  btn.innerHTML='<span>'+score.correct+'/'+score.total+' câu đúng</span>'+
+    '<span class="review-score-band"> · '+bandLabel+formatIeltsBand(score.band)+'</span>';
+  btn.disabled=true;
+  btn.setAttribute('aria-label',score.correct+' trên '+score.total+' câu đúng, '+bandLabel+formatIeltsBand(score.band));
+}
+
+function reviewEscHtml(s){
+  var d=document.createElement('div');
+  d.textContent=s==null?'':String(s);
+  return d.innerHTML;
+}
+
+function reviewLineHtml(userVal,correctVal,num){
+  var u=reviewEscHtml(userVal||'—');
+  var c=reviewEscHtml(correctVal||'—');
+  var match=typeof num==='number'?isAnswerCorrect(num,userVal):answersMatch(userVal,correctVal);
+  var cls='ans-review-line'+(match?' is-correct':' is-wrong');
+  return '<div class="'+cls+'"><span class="ans-your">Bạn: '+u+'</span><span class="ans-correct">Đáp án: '+c+'</span></div>';
+}
+
+function insertReviewLineAfterParagraph(qnum,user,correct){
+  var inp=document.getElementById('q'+qnum);
+  if(!inp)return;
+  var p=inp.closest('p');
+  if(!p||!p.parentNode)return;
+  if(p.parentNode.querySelector('.ans-review-line[data-q="'+qnum+'"]'))return;
+  var html=reviewLineHtml(user,correct,qnum);
+  var d=document.createElement('div');
+  d.innerHTML=html;
+  var line=d.firstElementChild;
+  if(!line)return;
+  line.setAttribute('data-q',String(qnum));
+  p.parentNode.insertBefore(line,p.nextSibling);
+}
+
+function formatBankAnswer(block,letter){
+  if(!block||!String(letter||'').trim())return '—';
+  var key=String(letter).trim().toUpperCase();
+  var li=block.querySelector('.choose-two-options [data-letter="'+key+'"]');
+  if(!li)return key;
+  var name=li.querySelector('.people-bank-name');
+  var text=name?name.textContent.trim():'';
+  return text?key+' — '+text:key;
+}
+
+function highlightChooseTwoRowReview(sel,userVal,correctVal,num,row){
+  var block=row.closest('.choose-two-block');
+  var userDisplay=formatBankAnswer(block,userVal);
+  var correctDisplay=formatBankAnswer(block,correctVal);
+  var reviewEl=row.querySelector('.choose-two-review');
+  if(!reviewEl){
+    reviewEl=document.createElement('div');
+    reviewEl.className='choose-two-review';
+    row.appendChild(reviewEl);
+  }
+  reviewEl.innerHTML=reviewLineHtml(userDisplay,correctDisplay,num);
+  sel.classList.remove('review-user','review-correct');
+  var userNorm=normAns(userVal);
+  var match=isAnswerCorrect(num,userVal);
+  if(userNorm)sel.classList.add('review-user');
+  if(match)sel.classList.add('review-correct');
+}
+
+function highlightSelectReview(sel,userVal,correctVal,num){
+  if(!sel)return;
+  var chooseTwoRow=sel.closest('.choose-two-row');
+  if(chooseTwoRow){
+    highlightChooseTwoRowReview(sel,userVal,correctVal,num,chooseTwoRow);
+    return;
+  }
+  var pillId='review-pill-sel-q'+num;
+  sel.classList.remove('review-user','review-correct');
+  var userNorm=normAns(userVal);
+  var match=isAnswerCorrect(num,userVal);
+  if(userNorm)sel.classList.add('review-user');
+  if(match)sel.classList.add('review-correct');
+  var existing=document.getElementById(pillId);
+  if(existing)existing.remove();
+  if(!match&&String(correctVal).trim()){
+    var pill=document.createElement('span');
+    pill.id=pillId;
+    pill.className='review-correct-pill';
+    pill.textContent=correctVal;
+    var wrap=sel.closest('.mrow')||sel.parentNode;
+    if(wrap)wrap.appendChild(pill);
+  }
+}
+
+function highlightMcqReview(qid,userVal,correctVal,num){
+  var opts=document.getElementById(qid+'-opts');
+  if(!opts)return;
+  var userNorm=normAns(userVal);
+  var expectedLetters=[normAns(correctVal)];
+  opts.querySelectorAll('.opt').forEach(function(lab){
+    var inp=lab.querySelector('input[type="radio"]');
+    if(!inp)return;
+    var val=normAns(inp.value);
+    lab.classList.remove('review-user','review-correct');
+    if(userNorm&&val===userNorm)lab.classList.add('review-user');
+    if(expectedLetters.indexOf(val)>=0)lab.classList.add('review-correct');
+  });
+}
+
+function highlightFillReview(inp,userVal,correctVal,num){
+  if(!inp)return;
+  inp.classList.remove('review-user','review-correct','review-wrong');
+  if(!String(userVal).trim())return;
+  if(isAnswerCorrect(num,userVal))inp.classList.add('review-user','review-correct');
+  else{inp.classList.add('review-user','review-wrong');}
+}
+
+function applyReviewAnswers(){
+  if(!examAnswerKey||!questionNums.length)return;
+  questionNums.forEach(function(n){
+    var qid='q'+n;
+    var correct=getCorrectAnswerForQuestion(n);
+    if(!String(correct).trim())return;
+    var user=userAnswersSnapshot[qid]||'';
+    var inp=document.getElementById(qid);
+    if(inp&&inp.tagName==='INPUT'&&inp.type!=='radio'){
+      highlightFillReview(inp,user,correct,n);
+      insertReviewLineAfterParagraph(n,user,correct);
+      return;
+    }
+    var sel=document.getElementById('sel-'+qid);
+    if(sel&&sel.tagName==='SELECT'){
+      highlightSelectReview(sel,user,correct,n);
+      return;
+    }
+    var optsEl=document.getElementById(qid+'-opts');
+    if(optsEl){
+      highlightMcqReview(qid,user,correct,n);
+    }
+  });
+}
+
+function lockExamInputs(){
+  document.querySelectorAll('#questions-panel input, #questions-panel select').forEach(function(el){
+    el.disabled=true;
+  });
+}
+
+function enterReviewMode(){
+  if(examReviewMode)return;
+  examReviewMode=true;
+  stopExamTimer();
+  stopExamAudio();
+  userAnswersSnapshot=collectAnswers();
+  var ex=document.getElementById('exam-screen');
+  if(ex)ex.classList.add('exam-review-mode');
+  if(isFullTest)updateTranscriptForPart(currentListeningPart);
+  showReviewAudioPlayer();
+  lockExamInputs();
+  if(examAnswerKey)applyReviewAnswers();
+  renderReviewScore();
+  var hint=document.querySelector('.track-hint');
+  if(hint){
+    hint.textContent=examAnswerKey
+      ?'Đã nộp · Tím = bạn chọn · Xanh lá = đáp án đúng'
+      :'Đã nộp bài · Không có đáp án trong file — chỉ xem lại bài làm';
+  }
+}
+
+function autoSubmit(){enterReviewMode();}
+
+function submitExam(){
+  if(examReviewMode)return;
+  if(!confirm('Nộp bài và xem lại trên trang này?'))return;
+  stopExamTimer();
+  enterReviewMode();
+}
+
+(function init(){
+  if(window.__EXAM_BOOT__){
+    applyExamPayload(window.__EXAM_BOOT__);
+    startExam();
+  }
+})();
+
+function getHighlightRootForRange(range){
+  if(!range)return null;
+  var anc=range.commonAncestorContainer;
+  if(anc.nodeType===3)anc=anc.parentElement;
+  if(anc&&anc.closest&&anc.closest('input,select,textarea,button,.fi,.msel,.fi-num,.mqnum'))return null;
+  var qp=document.getElementById('questions-panel');
+  var ts=document.getElementById('transcript-scroll');
+  if(examReviewMode){
+    if(ts&&anc&&ts.contains(anc))return ts;
+    if(qp&&anc&&qp.contains(anc))return qp;
+    return null;
+  }
+  if(!qp||!anc||!qp.contains(anc))return null;
+  return qp;
+}
+
+function getHighlightBlockElements(root){
+  if(!root)return[];
+  if(root.id==='transcript-scroll'){
+    var body=root.querySelector('.transcript-body');
+    return body?[body]:[];
+  }
+  return root.querySelectorAll(
+    'p, .sec-range, .sec-instr, .sec-topic, .qtext, .qnum, .mtext, .sumtext, .note-section-title, .note-doc-title, .note-line, label.opt span, .people-bank-name, .people-bank-title, .choose-two-prompt, .choose-two-options .people-bank-name'
+  );
+}
+
+function clipRangeToContainer(range,el){
+  var sub=document.createRange();
+  var startsInside=el.contains(range.startContainer);
+  var endsInside=el.contains(range.endContainer);
+  if(startsInside&&endsInside){
+    sub.setStart(range.startContainer,range.startOffset);
+    sub.setEnd(range.endContainer,range.endOffset);
+  }else if(startsInside&&!endsInside){
+    sub.setStart(range.startContainer,range.startOffset);
+    sub.setEnd(el,el.childNodes.length);
+  }else if(!startsInside&&endsInside){
+    sub.setStart(el,0);
+    sub.setEnd(range.endContainer,range.endOffset);
+  }else if(range.intersectsNode(el)){
+    sub.selectNodeContents(el);
+  }else{
+    return null;
+  }
+  return sub;
+}
+
+function wrapRangeWithMark(sub){
+  var mark=document.createElement('mark');
+  mark.className='user-hl';
+  try{
+    sub.surroundContents(mark);
+  }catch(err){
+    var frag=sub.extractContents();
+    mark.appendChild(frag);
+    sub.insertNode(mark);
+  }
+}
+
+function unwrapMark(mark){
+  var parent=mark.parentNode;
+  if(!parent)return;
+  while(mark.firstChild)parent.insertBefore(mark.firstChild,mark);
+  parent.removeChild(mark);
+}
+
+var hlSavedRange=null;
+var hlAnchorMark=null;
+var hlPopoverTimer=null;
+
+function selectionOverlapsUserHighlight(root,range){
+  if(!root)return false;
+  var marks=root.querySelectorAll('mark.user-hl');
+  for(var i=0;i<marks.length;i++){
+    if(range.intersectsNode(marks[i]))return true;
+  }
+  return false;
+}
+
+function positionHlPopover(){
+  var pop=document.getElementById('hl-popover');
+  if(!pop)return;
+  var r;
+  if(hlAnchorMark){
+    r=hlAnchorMark.getBoundingClientRect();
+  }else if(hlSavedRange){
+    r=hlSavedRange.getBoundingClientRect();
+  }else{
+    return;
+  }
+  if(r.width<1&&r.height<1){hideHlPopover();return;}
+  pop.style.display='flex';
+  pop.style.visibility='hidden';
+  pop.style.left='0';
+  pop.style.top='0';
+  var pw=pop.offsetWidth||140;
+  var ph=pop.offsetHeight||30;
+  var left=r.left+r.width/2-pw/2;
+  left=Math.max(8,Math.min(left,window.innerWidth-pw-8));
+  var gap=6;
+  var top=r.top-ph-gap;
+  if(top<8)top=r.bottom+gap;
+  if(top+ph>window.innerHeight-8)top=Math.max(8,window.innerHeight-ph-8);
+  pop.style.left=left+'px';
+  pop.style.top=top+'px';
+  pop.style.visibility='visible';
+}
+
+function hideHlPopover(){
+  var pop=document.getElementById('hl-popover');
+  if(pop){
+    pop.style.display='none';
+    pop.style.visibility='';
+    pop.setAttribute('aria-hidden','true');
+  }
+  hlSavedRange=null;
+  hlAnchorMark=null;
+  var addBtn=document.getElementById('hl-pop-add');
+  var remBtn=document.getElementById('hl-pop-remove');
+  if(addBtn)addBtn.style.display='inline-block';
+  if(remBtn)remBtn.style.display='none';
+}
+
+function findMarkAtCaret(range,root){
+  if(!range.collapsed)return null;
+  var n=range.startContainer;
+  if(n.nodeType===3)n=n.parentElement;
+  var m=n&&n.closest&&n.closest('mark.user-hl');
+  if(m&&root.contains(m))return m;
+  return null;
+}
+
+function syncHlPopover(){
+  var exam=document.getElementById('exam-screen');
+  if(!exam||window.getComputedStyle(exam).display==='none'){hideHlPopover();return;}
+  var sel=window.getSelection();
+  if(!sel.rangeCount){hideHlPopover();return;}
+  var range=sel.getRangeAt(0);
+  var root=getHighlightRootForRange(range);
+  if(!root){hideHlPopover();return;}
+  var addBtn=document.getElementById('hl-pop-add');
+  var remBtn=document.getElementById('hl-pop-remove');
+  var pop=document.getElementById('hl-popover');
+  hlAnchorMark=null;
+  if(range.collapsed){
+    var mk=findMarkAtCaret(range,root);
+    if(!mk){hideHlPopover();return;}
+    hlSavedRange=range.cloneRange();
+    hlAnchorMark=mk;
+    if(addBtn)addBtn.style.display='none';
+    if(remBtn)remBtn.style.display='inline-block';
+    if(pop)pop.setAttribute('aria-hidden','false');
+    requestAnimationFrame(function(){requestAnimationFrame(positionHlPopover);});
+    return;
+  }
+  hlSavedRange=range.cloneRange();
+  if(addBtn)addBtn.style.display='inline-block';
+  if(remBtn)remBtn.style.display=selectionOverlapsUserHighlight(root,range)?'inline-block':'none';
+  if(pop)pop.setAttribute('aria-hidden','false');
+  requestAnimationFrame(function(){requestAnimationFrame(positionHlPopover);});
+}
+
+function applyHighlightFromRange(range){
+  var root=getHighlightRootForRange(range);
+  if(!root||!range||range.collapsed)return;
+  if(!root.contains(range.commonAncestorContainer))return;
+  var blocks=getHighlightBlockElements(root);
+  var subs=[];
+  for(var i=0;i<blocks.length;i++){
+    var el=blocks[i];
+    if(!range.intersectsNode(el))continue;
+    var sub=clipRangeToContainer(range,el);
+    if(sub&&!sub.collapsed)subs.push(sub);
+  }
+  for(var j=subs.length-1;j>=0;j--){
+    wrapRangeWithMark(subs[j]);
+  }
+  window.getSelection().removeAllRanges();
+}
+
+function removeHighlightFromRange(range){
+  var root=getHighlightRootForRange(range);
+  if(!root||!range||range.collapsed)return;
+  if(!root.contains(range.commonAncestorContainer))return;
+  var marks=root.querySelectorAll('mark.user-hl');
+  var toUnwrap=[];
+  for(var j=0;j<marks.length;j++){
+    if(range.intersectsNode(marks[j]))toUnwrap.push(marks[j]);
+  }
+  for(var k=0;k<toUnwrap.length;k++)unwrapMark(toUnwrap[k]);
+  window.getSelection().removeAllRanges();
+}
+
+(function setupHlPopover(){
+  var pop=document.getElementById('hl-popover');
+  var addBtn=document.getElementById('hl-pop-add');
+  var remBtn=document.getElementById('hl-pop-remove');
+  if(!pop||!addBtn||!remBtn)return;
+
+  pop.addEventListener('mousedown',function(e){e.preventDefault();});
+
+  addBtn.addEventListener('click',function(){
+    if(!hlSavedRange)return;
+    applyHighlightFromRange(hlSavedRange.cloneRange());
+    hideHlPopover();
+  });
+  remBtn.addEventListener('click',function(){
+    if(hlAnchorMark){
+      unwrapMark(hlAnchorMark);
+      hideHlPopover();
+      return;
+    }
+    if(!hlSavedRange)return;
+    removeHighlightFromRange(hlSavedRange.cloneRange());
+    hideHlPopover();
+  });
+
+  document.addEventListener('selectionchange',function(){
+    clearTimeout(hlPopoverTimer);
+    hlPopoverTimer=setTimeout(syncHlPopover,40);
+  });
+
+  function repositionHlIfOpen(){
+    if(hlSavedRange&&document.getElementById('hl-popover').style.display==='flex'){
+      positionHlPopover();
+    }
+  }
+  var qp=document.getElementById('questions-panel');
+  var ts=document.getElementById('transcript-scroll');
+  if(qp)qp.addEventListener('scroll',repositionHlIfOpen,{passive:true});
+  if(ts)ts.addEventListener('scroll',repositionHlIfOpen,{passive:true});
+  window.addEventListener('resize',repositionHlIfOpen);
+})();
+</script>
+</body>
+</html>

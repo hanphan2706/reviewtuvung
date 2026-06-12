@@ -1,0 +1,212 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u04-l01",
+  "audioFile": "Unit04-Listening01.mp3",
+  "durationSeconds": 73.568813,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Unit 4, routines, page 14, track 18, listening 1, 1.",
+      "start": 0.02,
+      "end": 11.51
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Excuse me, what's the time?",
+      "start": 11.51,
+      "end": 14.77
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "It's 10-15.",
+      "start": 14.77,
+      "end": 17.39
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Thanks.",
+      "start": 17.39,
+      "end": 19.88
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "2.",
+      "start": 19.88,
+      "end": 21
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Do you have the time?",
+      "start": 21,
+      "end": 23.32
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Let me see.",
+      "start": 23.32,
+      "end": 24.94
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Yeah, it's 10 after 2.",
+      "start": 24.94,
+      "end": 27.3
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "2-10.",
+      "start": 27.3,
+      "end": 28.66
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Thanks.",
+      "start": 28.66,
+      "end": 31.15
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "3.",
+      "start": 31.15,
+      "end": 32.41
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "What time is it now?",
+      "start": 32.41,
+      "end": 34.93
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Hey, it's exactly 12 o'clock.",
+      "start": 34.93,
+      "end": 37.57
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Midnight, happy new year.",
+      "start": 37.57,
+      "end": 41.5
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "4.",
+      "start": 41.5,
+      "end": 42.96
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Can you tell me the time, please?",
+      "start": 42.96,
+      "end": 45.7
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Yeah, it's 11.30.",
+      "start": 45.7,
+      "end": 48.12
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Wow, I'm late.",
+      "start": 48.12,
+      "end": 50.16
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Thanks.",
+      "start": 50.16,
+      "end": 52.78
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "5.",
+      "start": 52.78,
+      "end": 54.24
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Do you know what time it is?",
+      "start": 54.24,
+      "end": 55.94
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Yeah, it's a quarter to four.",
+      "start": 55.94,
+      "end": 58.82
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Thanks a lot.",
+      "start": 58.82,
+      "end": 61.65
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "6.",
+      "start": 61.65,
+      "end": 62.93
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "I'm late again.",
+      "start": 62.93,
+      "end": 64.45
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "What time is it now?",
+      "start": 64.45,
+      "end": 66.25
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "It's 7.50.",
+      "start": 66.25,
+      "end": 67.91
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Class starts at 8.",
+      "start": 67.91,
+      "end": 69.55
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "I've only got 10 minutes.",
+      "start": 69.55,
+      "end": 73.569
+    }
+  ]
+}

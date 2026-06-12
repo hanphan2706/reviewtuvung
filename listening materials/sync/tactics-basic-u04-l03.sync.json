@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u04-l03",
+  "audioFile": "Unit04-Listening03.mp3",
+  "durationSeconds": 111.689592,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Let's see. I get up at 5.15 every morning and go running.",
+      "start": 0,
+      "end": 5.4
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Then, after I have a shower and a quick breakfast, I take the subway to work.",
+      "start": 5.4,
+      "end": 10.68
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "I usually do some work on the subway.",
+      "start": 10.68,
+      "end": 13.44
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "I get to work at 7 in the morning and I usually work until 8 at night.",
+      "start": 13.44,
+      "end": 19.24
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "After I get home, I have dinner. Then, I read the newspaper before bed.",
+      "start": 19.24,
+      "end": 25.42
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "I usually go to bed about 11 o'clock.",
+      "start": 25.42,
+      "end": 30.04
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "2. Amelia.",
+      "start": 30.04,
+      "end": 32.64
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "I'm pretty busy these days. I get up early around 6.30.",
+      "start": 32.64,
+      "end": 37.96
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Then, have breakfast, usually cereal and a big cup of tea.",
+      "start": 37.96,
+      "end": 42.6
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Then, I take the bus to school.",
+      "start": 42.6,
+      "end": 44.66
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "While I'm on the bus, I usually text my friends.",
+      "start": 44.66,
+      "end": 48.24
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Let's see. I have classes from 9 until 3.",
+      "start": 48.24,
+      "end": 52.2
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "After classes, I go home and study for a few hours.",
+      "start": 52.2,
+      "end": 56.22
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Then, I have dinner with my family.",
+      "start": 56.22,
+      "end": 58.48
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "After dinner, I play video games for an hour or so, then chat with my friends online.",
+      "start": 58.48,
+      "end": 64.28
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Finally, I take a shower, then go to bed.",
+      "start": 64.28,
+      "end": 67.78
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Usually, around 10 o'clock.",
+      "start": 67.78,
+      "end": 71.4
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "3. Charlie. My routine?",
+      "start": 71.4,
+      "end": 75.32
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Well, I'm looking for a job at the moment, so I don't have much of a routine.",
+      "start": 75.32,
+      "end": 79.98
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Every day is a little different, but I usually get up around 11.",
+      "start": 79.98,
+      "end": 83.84
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Then, I go running.",
+      "start": 83.84,
+      "end": 85.98
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "After that, I have a big lunch.",
+      "start": 85.98,
+      "end": 87.72
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "I'm always hungry because I don't have breakfast.",
+      "start": 87.72,
+      "end": 90.68
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "After lunch, I play video games for a couple of hours.",
+      "start": 90.68,
+      "end": 93.96
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Then, I go online to look for jobs, but no luck yet.",
+      "start": 93.96,
+      "end": 98.06
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "After that, I usually watch some TV. Then, have dinner.",
+      "start": 98.06,
+      "end": 101.44
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "In the evening, I usually hang out with friends and play some more video games.",
+      "start": 101.44,
+      "end": 106.4
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "I usually go to bed at 1 or 2 in the morning.",
+      "start": 106.4,
+      "end": 111.69
+    }
+  ]
+}

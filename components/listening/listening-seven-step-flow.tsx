@@ -1,0 +1,580 @@
+"use client";
+
+import { useEffect, useMemo, useState } from "react";
+import { Check, Languages, Play, Volume2 } from "lucide-react";
+import type { ListeningPartMeta } from "@/lib/listening/content-manifest";
+import type { ListeningTranscriptCue } from "@/lib/listening/listening-transcript-sync-types";
+import { ListeningTranscriptPanel } from "@/components/listening/listening-transcript-panel";
+import { LISTENING_FLOW_COPY, type ListeningFlowLocale } from "@/lib/listening/listening-seven-step-copy";
+import { resolveFlowExerciseContent, resolveFlowExerciseFromLesson } from "@/lib/listening/tactics-basic-flow-content";
+import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
+import { LISTENING_SEVEN_STEPS, type ListeningSevenStepId } from "@/lib/listening/listening-seven-steps";
+
+type ListeningSevenStepFlowProps = {
+  meta: ListeningPartMeta;
+  lessonId: string;
+  audioCurrentTime: number;
+  onCueSeek: (cue: ListeningTranscriptCue) => void;
+  onStepChange?: (step: ListeningSevenStepId) => void;
+  onReplayConversation?: (conversationNumber: number) => void;
+  flowLessonContent?: ListeningFlowLessonContent | null;
+};
+
+const fieldClass =
+  "mt-2 w-full rounded-xl border border-[#E4E4E7] bg-white px-3 py-2.5 text-sm text-[#000001] outline-none placeholder:text-[#616365] focus:border-[#4B2876] focus:ring-1 focus:ring-[#4B2876]/20 sm:px-4 sm:py-3 sm:text-[15px]";
+
+function FlowLocaleToggle({
+  locale,
+  onToggle,
+}: {
+  locale: ListeningFlowLocale;
+  onToggle: () => void;
+}) {
+  const copy = LISTENING_FLOW_COPY[locale];
+  const showEnglish = locale === "vi";
+
+  return (
+    <button
+      type="button"
+      onClick={onToggle}
+      aria-pressed={locale === "en"}
+      className={`inline-flex shrink-0 cursor-pointer items-center gap-1 rounded-full border border-[#E4E4E7] bg-white px-3 py-1.5 text-[10px] font-bold uppercase tracking-wide text-[#47464b] shadow-sm transition hover:bg-[#f3f0f8] ${
+        locale === "en" ? "border-[#4b2876]/40 bg-[#4b2876]/10 text-[#4b2876]" : ""
+      }`}
+    >
+      <Languages className="size-3 opacity-80" aria-hidden />
+      {showEnglish ? copy.localeToggleShowEn : copy.localeToggleShowVi}
+    </button>
+  );
+}
+
+function StepCircle({
+  stepId,
+  isActive,
+  isComplete,
+}: {
+  stepId: number;
+  isActive: boolean;
+  isComplete: boolean;
+}) {
+  if (isActive) {
+    return (
+      <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-[#000001] text-[10px] font-semibold leading-none text-white">
+        {stepId}
+      </span>
+    );
+  }
+
+  if (isComplete) {
+    return (
+      <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-[#000001] text-white">
+        <Check className="size-3" strokeWidth={2.5} aria-hidden />
+      </span>
+    );
+  }
+
+  return (
+    <span className="flex size-6 shrink-0 items-center justify-center rounded-full border border-[#E4E4E7] bg-white text-[10px] font-medium leading-none text-[#9CA3AF]">
+      {stepId}
+    </span>
+  );
+}
+
+function Stepper({
+  currentStep,
+  shortLabels,
+  onSelect,
+}: {
+  currentStep: ListeningSevenStepId;
+  shortLabels: readonly string[];
+  onSelect: (step: ListeningSevenStepId) => void;
+}) {
+  const activeLabel = shortLabels[currentStep - 1];
+
+  return (
+    <div className="min-w-0 flex-1">
+      <div className="flex w-full min-w-0 items-center">
+        {LISTENING_SEVEN_STEPS.map((step, index) => {
+          const isActive = step.id === currentStep;
+          const isComplete = step.id < currentStep;
+          const isLast = index === LISTENING_SEVEN_STEPS.length - 1;
+          const shortLabel = shortLabels[index] ?? "";
+
+          return (
+            <div key={step.id} className={`flex min-w-0 items-center ${isLast ? "shrink-0" : "min-w-0 flex-1"}`}>
+              <button
+                type="button"
+                onClick={() => onSelect(step.id)}
+                className="group flex shrink-0 items-center gap-1.5"
+                aria-current={isActive ? "step" : undefined}
+                aria-label={`${step.id}. ${shortLabel}`}
+              >
+                <StepCircle stepId={step.id} isActive={isActive} isComplete={isComplete} />
+                {isActive ? (
+                  <span className="hidden shrink-0 whitespace-nowrap text-[9px] font-bold uppercase tracking-[0.12em] text-[#000001] sm:inline">
+                    {shortLabel}
+                  </span>
+                ) : null}
+              </button>
+
+              {!isLast ? (
+                <div
+                  className={`mx-1.5 h-px min-w-[6px] flex-1 sm:mx-2 ${
+                    step.id < currentStep ? "bg-[#000001]" : "bg-[#E4E4E7]"
+                  }`}
+                  aria-hidden
+                />
+              ) : null}
+            </div>
+          );
+        })}
+      </div>
+
+      {activeLabel ? (
+        <p className="mt-2 text-center text-[9px] font-bold uppercase tracking-[0.12em] text-[#000001] sm:hidden">
+          {activeLabel}
+        </p>
+      ) : null}
+    </div>
+  );
+}
+
+function StepHeading({ title }: { title: string }) {
+  return <h2 className="font-serif text-2xl font-semibold text-[#000001] md:text-[1.65rem]">{title}</h2>;
+}
+
+function ConversationReplayButton({
+  label,
+  onClick,
+}: {
+  label: string;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-label={label}
+      title={label}
+      className="ml-1 inline-flex shrink-0 cursor-pointer items-center border-0 bg-transparent p-0 align-middle text-emerald-800 transition hover:text-emerald-950"
+    >
+      <Volume2 className="size-3.5 translate-y-[0.5px]" strokeWidth={2.25} aria-hidden />
+    </button>
+  );
+}
+
+function StepActions({ children }: { children: React.ReactNode }) {
+  return <div className="flex flex-wrap items-center justify-center gap-3 pt-2">{children}</div>;
+}
+
+function PrimaryButton({
+  children,
+  onClick,
+  type = "button",
+  disabled = false,
+}: {
+  children: React.ReactNode;
+  onClick?: () => void;
+  type?: "button" | "submit";
+  disabled?: boolean;
+}) {
+  return (
+    <button
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      className="inline-flex cursor-pointer items-center justify-center gap-2 rounded-full bg-[#000001] px-8 py-3.5 text-xs font-bold uppercase tracking-[0.12em] text-white transition hover:bg-[#1a1a1b] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-[#000001]"
+    >
+      {children}
+    </button>
+  );
+}
+
+function SecondaryButton({ children, onClick }: { children: React.ReactNode; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className="inline-flex cursor-pointer items-center justify-center rounded-full border border-[#E4E4E7] bg-white px-6 py-3 text-xs font-bold uppercase tracking-widest text-[#000001] transition hover:bg-[#f3f0f8]"
+    >
+      {children}
+    </button>
+  );
+}
+
+function isGistAnswerCorrect(selected: ReadonlySet<string>, correctKeys: readonly string[]): boolean {
+  if (correctKeys.length === 0) return false;
+  if (selected.size !== correctKeys.length) return false;
+  return correctKeys.every((key) => selected.has(key));
+}
+
+function OptionGrid({
+  options,
+  selected,
+  onToggle,
+  revealed,
+  correctKeys,
+}: {
+  options: readonly { key: string; label: string }[];
+  selected: ReadonlySet<string>;
+  onToggle: (key: string) => void;
+  revealed?: boolean;
+  correctKeys?: readonly string[];
+}) {
+  const correctSet = new Set(correctKeys ?? []);
+
+  return (
+    <div className="grid gap-2 sm:grid-cols-2 sm:gap-3">
+      {options.map((option) => {
+        const checked = selected.has(option.key);
+        const isCorrectOption = revealed && correctSet.has(option.key);
+        const isWrongSelection = revealed && checked && !correctSet.has(option.key);
+        const showCheck = checked || isCorrectOption;
+
+        let optionClass =
+          "flex cursor-pointer items-center gap-2.5 rounded-xl border px-3 py-3 text-left transition sm:gap-3 sm:px-4 sm:py-4 ";
+        if (isCorrectOption) {
+          optionClass += checked
+            ? "border-emerald-600 bg-emerald-50 shadow-sm"
+            : "border-emerald-500 bg-emerald-50/70 shadow-sm";
+        } else if (isWrongSelection) {
+          optionClass += "border-red-400 bg-red-50 shadow-sm";
+        } else if (checked) {
+          optionClass += "border-[#4B2876] bg-[#f3f0f8] shadow-sm";
+        } else {
+          optionClass += "border-[#E4E4E7] bg-white hover:border-[#d4d4d8]";
+        }
+
+        return (
+          <button
+            key={option.key}
+            type="button"
+            onClick={() => onToggle(option.key)}
+            className={optionClass}
+          >
+            <span
+              className={`flex size-4 shrink-0 items-center justify-center rounded border sm:size-5 ${
+                isCorrectOption
+                  ? "border-emerald-600 bg-emerald-600 text-white"
+                  : isWrongSelection
+                    ? "border-red-500 bg-red-500 text-white"
+                    : checked
+                      ? "border-[#4B2876] bg-[#4B2876] text-white"
+                      : "border-[#d4d4d8] bg-white"
+              }`}
+              aria-hidden
+            >
+              {showCheck ? <Check className="size-3 sm:size-3.5" strokeWidth={3} /> : null}
+            </span>
+            <span className="text-sm font-medium text-[#000001] sm:text-[15px]">{option.label}</span>
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function ReflectionOptionList({
+  options,
+  selected,
+  onToggle,
+}: {
+  options: readonly { id: string; label: string }[];
+  selected: Record<string, boolean>;
+  onToggle: (id: string) => void;
+}) {
+  return (
+    <ul className="space-y-2">
+      {options.map((opt) => {
+        const checked = Boolean(selected[opt.id]);
+        return (
+          <li key={opt.id}>
+            <button
+              type="button"
+              onClick={() => onToggle(opt.id)}
+              className={`flex w-full cursor-pointer items-start gap-2.5 rounded-xl border px-3 py-2.5 text-left transition sm:gap-3 sm:px-4 sm:py-3 ${
+                checked
+                  ? "border-[#4B2876] bg-[#f3f0f8] shadow-sm"
+                  : "border-[#E4E4E7] bg-white hover:border-[#d4d4d8] hover:bg-[#FAFAFA]"
+              }`}
+            >
+              <span
+                className={`mt-0.5 flex size-4 shrink-0 items-center justify-center rounded border sm:size-5 ${
+                  checked ? "border-[#4B2876] bg-[#4B2876] text-white" : "border-[#d4d4d8] bg-white"
+                }`}
+                aria-hidden
+              >
+                {checked ? <Check className="size-3 sm:size-3.5" strokeWidth={3} /> : null}
+              </span>
+              <span className="text-sm text-[#000001] sm:text-[15px]">{opt.label}</span>
+            </button>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+export function ListeningSevenStepFlow({
+  meta,
+  lessonId,
+  audioCurrentTime,
+  onCueSeek,
+  onStepChange,
+  onReplayConversation,
+  flowLessonContent = null,
+}: ListeningSevenStepFlowProps) {
+  const [locale, setLocale] = useState<ListeningFlowLocale>("en");
+  const [currentStep, setCurrentStep] = useState<ListeningSevenStepId>(1);
+  const [predictionChoices, setPredictionChoices] = useState<Set<string>>(new Set());
+  const [gistChoices, setGistChoices] = useState<Set<string>>(new Set());
+  const [memoryText, setMemoryText] = useState("");
+  const [detailAnswers, setDetailAnswers] = useState<Record<string, string>>({});
+  const [gistChecked, setGistChecked] = useState(false);
+  const [detailChecked, setDetailChecked] = useState(false);
+  const [transcriptHasSync, setTranscriptHasSync] = useState(false);
+  const [reflection, setReflection] = useState<Record<string, boolean>>({});
+
+  const copy = LISTENING_FLOW_COPY[locale];
+  const exercise = useMemo(
+    () =>
+      flowLessonContent
+        ? resolveFlowExerciseFromLesson(flowLessonContent, locale, lessonId)
+        : resolveFlowExerciseContent(lessonId, locale),
+    [flowLessonContent, lessonId, locale],
+  );
+  const stepTitle = copy.stepTitles[currentStep - 1] ?? "";
+
+  useEffect(() => {
+    setCurrentStep(1);
+    setPredictionChoices(new Set());
+    setGistChoices(new Set());
+    setMemoryText("");
+    setDetailAnswers({});
+    setGistChecked(false);
+    setDetailChecked(false);
+    setReflection({});
+  }, [lessonId]);
+
+  const restartLesson = () => {
+    setCurrentStep(1);
+    setPredictionChoices(new Set());
+    setGistChoices(new Set());
+    setMemoryText("");
+    setDetailAnswers({});
+    setGistChecked(false);
+    setDetailChecked(false);
+    setReflection({});
+  };
+
+  useEffect(() => {
+    onStepChange?.(currentStep);
+  }, [currentStep, onStepChange]);
+
+  const goToStep = (step: ListeningSevenStepId) => setCurrentStep(step);
+  const toggleLocale = () => setLocale((prev) => (prev === "vi" ? "en" : "vi"));
+
+  const togglePrediction = (key: string) => {
+    setPredictionChoices((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  };
+
+  const toggleReflection = (id: string) => {
+    setReflection((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
+
+  const toggleGist = (key: string) => {
+    setGistChoices((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+    setGistChecked(false);
+  };
+
+  const gistIsCorrect =
+    gistChecked &&
+    isGistAnswerCorrect(gistChoices, exercise.gistCorrectKeys);
+
+  return (
+    <section className="overflow-hidden rounded-xl border border-[#E4E4E7] bg-white shadow-sm">
+      <div className="flex items-start gap-3 border-b border-[#E4E4E7] px-4 py-4 md:items-center md:px-8 md:py-5">
+        <Stepper currentStep={currentStep} shortLabels={copy.stepShortLabels} onSelect={goToStep} />
+        <FlowLocaleToggle locale={locale} onToggle={toggleLocale} />
+      </div>
+
+      <div className="px-5 py-8 md:px-8 md:py-10">
+        {currentStep === 1 ? (
+          <div className="mx-auto flex max-w-2xl flex-col items-center gap-8 text-center">
+            <div className="space-y-3">
+              <StepHeading title={stepTitle} />
+              <p className="text-[15px] leading-relaxed text-[#47464b]">{copy.step1Prompt}</p>
+            </div>
+            <div className="w-full text-left">
+              <OptionGrid options={exercise.predictionOptions} selected={predictionChoices} onToggle={togglePrediction} />
+            </div>
+            <PrimaryButton onClick={() => goToStep(2)}>
+              <Play className="size-4 fill-current" aria-hidden />
+              {copy.step1Start}
+            </PrimaryButton>
+          </div>
+        ) : null}
+
+        {currentStep === 2 ? (
+          <div className="mx-auto flex max-w-2xl flex-col gap-6">
+            <StepHeading title={stepTitle} />
+            <p className="text-[15px] leading-relaxed text-[#47464b]">{copy.step2Prompt}</p>
+            <OptionGrid
+              options={exercise.gistOptions}
+              selected={gistChoices}
+              onToggle={toggleGist}
+              revealed={gistChecked}
+              correctKeys={exercise.gistCorrectKeys}
+            />
+            {gistChecked && exercise.gistCorrectKeys.length > 0 ? (
+              <p className={`text-sm ${gistIsCorrect ? "text-emerald-700" : "text-[#47464b]"}`}>
+                {gistIsCorrect ? copy.gistCorrect : copy.gistIncorrect}
+              </p>
+            ) : null}
+            <StepActions>
+              <SecondaryButton onClick={() => goToStep(1)}>{copy.back}</SecondaryButton>
+              {gistChecked ? (
+                <PrimaryButton onClick={() => goToStep(3)}>{copy.next}</PrimaryButton>
+              ) : (
+                <PrimaryButton
+                  disabled={gistChoices.size === 0}
+                  onClick={() => {
+                    if (gistChoices.size === 0) return;
+                    setGistChecked(true);
+                  }}
+                >
+                  {copy.checkAnswer}
+                </PrimaryButton>
+              )}
+            </StepActions>
+          </div>
+        ) : null}
+
+        {currentStep === 3 ? (
+          <div className="mx-auto flex max-w-2xl flex-col gap-6">
+            <StepHeading title={stepTitle} />
+            <p className="text-[15px] leading-relaxed text-[#47464b]">{copy.step3Prompt}</p>
+            <textarea
+              className={`${fieldClass} min-h-32`}
+              value={memoryText}
+              onChange={(e) => setMemoryText(e.target.value)}
+              placeholder={exercise.memoryPlaceholder}
+              rows={5}
+            />
+            <StepActions>
+              <SecondaryButton onClick={() => goToStep(2)}>{copy.back}</SecondaryButton>
+              <PrimaryButton onClick={() => goToStep(4)}>{copy.next}</PrimaryButton>
+            </StepActions>
+          </div>
+        ) : null}
+
+        {currentStep === 4 ? (
+          <div className="mx-auto flex max-w-2xl flex-col gap-6">
+            <StepHeading title={stepTitle} />
+            <p className="text-[15px] leading-relaxed text-[#47464b]">{copy.step4Prompt}</p>
+            {exercise.detailQuestions.map((question) => (
+              <div key={question.key}>
+                <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#616365]">
+                  {question.conversation}
+                </p>
+                <label className="mt-1.5 block text-sm font-medium text-[#000001]">
+                  {question.question}
+                  <input
+                    className={fieldClass}
+                    value={detailAnswers[question.key] ?? ""}
+                    onChange={(e) => {
+                      setDetailAnswers((prev) => ({ ...prev, [question.key]: e.target.value }));
+                      setDetailChecked(false);
+                    }}
+                  />
+                </label>
+                {detailChecked ? (
+                  <div className="mt-2 rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2.5 text-sm text-emerald-900">
+                    <p className="leading-relaxed">
+                      <span className="font-semibold">{copy.modelAnswerLabel}: </span>
+                      <span className="inline">
+                        {question.answer}
+                        {question.conversationNumber !== null && onReplayConversation ? (
+                          <ConversationReplayButton
+                            label={copy.replayConversation}
+                            onClick={() => onReplayConversation(question.conversationNumber!)}
+                          />
+                        ) : null}
+                      </span>
+                    </p>
+                  </div>
+                ) : null}
+              </div>
+            ))}
+            <StepActions>
+              <SecondaryButton onClick={() => goToStep(3)}>{copy.back}</SecondaryButton>
+              {detailChecked ? (
+                <PrimaryButton onClick={() => goToStep(5)}>{copy.step4ListenAgain}</PrimaryButton>
+              ) : (
+                <PrimaryButton onClick={() => setDetailChecked(true)}>{copy.checkAnswer}</PrimaryButton>
+              )}
+            </StepActions>
+          </div>
+        ) : null}
+
+        {currentStep === 5 ? (
+          <div className="mx-auto flex max-w-2xl flex-col gap-6">
+            <div className="flex items-start justify-between gap-4">
+              <div className="space-y-3">
+                <StepHeading title={stepTitle} />
+                <p className="text-[15px] leading-relaxed text-[#47464b]">{copy.step5Prompt}</p>
+              </div>
+              <span className="inline-flex shrink-0 items-center gap-1.5 pt-1 text-[10px] font-bold uppercase tracking-wider text-[#616365]">
+                <span
+                  className={`size-1.5 rounded-full ${transcriptHasSync ? "bg-[#4b2876] animate-pulse" : "bg-zinc-300"}`}
+                  aria-hidden
+                />
+                {transcriptHasSync ? copy.step5SyncedLabel : copy.step5NotSyncedLabel}
+              </span>
+            </div>
+            <ListeningTranscriptPanel
+              part={meta.part}
+              partId={meta.id}
+              examSlug={meta.examSlug}
+              transcriptTryFiles={meta.transcriptTryFiles}
+              audioCurrentTime={audioCurrentTime}
+              onCueSeek={onCueSeek}
+              variant="flow"
+              onSyncStatusChange={setTranscriptHasSync}
+            />
+            <StepActions>
+              <SecondaryButton onClick={() => goToStep(4)}>{copy.back}</SecondaryButton>
+              <PrimaryButton onClick={() => goToStep(6)}>{copy.next}</PrimaryButton>
+            </StepActions>
+          </div>
+        ) : null}
+
+        {currentStep === 6 ? (
+          <div className="mx-auto flex max-w-2xl flex-col gap-6">
+            <StepHeading title={stepTitle} />
+            <p className="text-[15px] leading-relaxed text-[#47464b]">{copy.step6Prompt}</p>
+            <ReflectionOptionList
+              options={copy.step6ReflectionOptions}
+              selected={reflection}
+              onToggle={toggleReflection}
+            />
+            <StepActions>
+              <SecondaryButton onClick={() => goToStep(5)}>{copy.back}</SecondaryButton>
+              <PrimaryButton onClick={restartLesson}>{copy.step6Restart}</PrimaryButton>
+            </StepActions>
+          </div>
+        ) : null}
+      </div>
+    </section>
+  );
+}

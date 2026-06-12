@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u08-l03",
+  "audioFile": "Unit08-Listening03.mp3",
+  "durationSeconds": 130.759184,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "There's a really good sports club near my school. During the week, I play tennis there",
+      "start": 0,
+      "end": 5.04
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "for an hour before school starts. On weekends, I usually work out at the gym near my house",
+      "start": 5.04,
+      "end": 11.16
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "for a few hours. I also play baseball with some friends from school. It's so much fun.",
+      "start": 11.16,
+      "end": 19.23
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "2. I don't like jogging or doing anything too energetic. I prefer taking walks.",
+      "start": 19.23,
+      "end": 25.47
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "I like to take a short walk every day through the park across from my house.",
+      "start": 25.47,
+      "end": 29.67
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Sometimes my boyfriend goes with me. It's nice to talk and look at the flowers and trees.",
+      "start": 29.67,
+      "end": 35.05
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "On Sunday, I like to swim, but for only about a half hour, I sleep the rest of the weekend.",
+      "start": 35.05,
+      "end": 42.47
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "3. I am a big soccer fan, but I only watch it on TV. I can't stand playing",
+      "start": 42.47,
+      "end": 49.87
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "it. There are great games to watch on weekends. I also enjoy watching tennis. I'd like to learn",
+      "start": 49.87,
+      "end": 56.85
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "someday, but I don't like to sweat. I love chess, and often play with my younger sister.",
+      "start": 56.85,
+      "end": 63.47
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "She's really good at it, and usually wins. On weekends, I love to play video games with some",
+      "start": 63.47,
+      "end": 70.27
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "of my friends. 4. I just love to exercise. I like many different sports. Let's see.",
+      "start": 70.27,
+      "end": 81.28
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "I like swimming a lot. I get up very early, around 5 a.m., and swim for two hours from Monday to Friday.",
+      "start": 81.28,
+      "end": 90.38
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "I also enjoy basketball and play with a group of friends from work every Tuesday night.",
+      "start": 90.38,
+      "end": 96.8
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "And I've also started playing golf this year. Before playing, I jog to warm up.",
+      "start": 96.8,
+      "end": 104.65
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "5. I enjoy exercise, but I don't do it as much as I should. I meet a friend every Wednesday,",
+      "start": 104.65,
+      "end": 111.39
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "and we play tennis. I'm not a very good player, but it's fun, and we usually play for an hour.",
+      "start": 111.39,
+      "end": 117.35
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "On weekends, I like to bike around our neighborhood. I guess I spend an hour or two doing that.",
+      "start": 117.35,
+      "end": 123.11
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Oh, and I love baseball, but only watching it while sitting on the couch eating popcorn.",
+      "start": 123.11,
+      "end": 130.759
+    }
+  ]
+}

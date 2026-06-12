@@ -1,0 +1,261 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u04-l02",
+  "audioFile": "Unit04-Listening02.mp3",
+  "durationSeconds": 134.737551,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Maybe. What time?",
+      "start": 0,
+      "end": 2.72
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "How about the 9-15 show?",
+      "start": 2.72,
+      "end": 5.04
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Oh, that's too late for me. I usually go to bed at 8-30.",
+      "start": 5.04,
+      "end": 10.18
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "So early?",
+      "start": 10.18,
+      "end": 11.5
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Yeah, I have to get up at 5am to study before school.",
+      "start": 11.5,
+      "end": 16.9
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "5am? Why don't you study at night?",
+      "start": 16.9,
+      "end": 19.8
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "I don't like to stay up late. I'm a morning person.",
+      "start": 19.8,
+      "end": 24.93
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "2. You look tired, John.",
+      "start": 24.93,
+      "end": 28.81
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Yeah, well I'm always tired.",
+      "start": 28.81,
+      "end": 30.83
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Really? What time do you go to bed?",
+      "start": 30.83,
+      "end": 33.77
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Usually around midnight. I like to stay up late, but I have to get up at 6-15 to go to work.",
+      "start": 33.77,
+      "end": 41.43
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "3. Do you want to go running tomorrow morning, Sam?",
+      "start": 41.43,
+      "end": 45.19
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "It depends. What time?",
+      "start": 45.19,
+      "end": 48.45
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "How about 6 o'clock?",
+      "start": 48.45,
+      "end": 50.25
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "6 o'clock? I don't get up until around 9-30.",
+      "start": 50.25,
+      "end": 54.89
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Wow, you get a lot of sleep.",
+      "start": 54.89,
+      "end": 57.63
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Not really. I usually stay up until about 3 in the morning.",
+      "start": 57.63,
+      "end": 63.94
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "4. Are you a morning person or a night person, Grace?",
+      "start": 63.94,
+      "end": 69.28
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Oh, definitely a night person.",
+      "start": 69.28,
+      "end": 72.46
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Really?",
+      "start": 72.46,
+      "end": 73.28
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Yeah, I can't fall asleep before midnight.",
+      "start": 73.28,
+      "end": 76.68
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "I usually go to bed around 1am.",
+      "start": 76.68,
+      "end": 79.9
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Huh, do you sleep late in the morning?",
+      "start": 79.9,
+      "end": 82.62
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Not really. I usually get up at a quarter to 8.",
+      "start": 82.62,
+      "end": 88.19
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "5. Did you watch the 11 o'clock news last night, Mia?",
+      "start": 88.19,
+      "end": 93.11
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "No, I was asleep. I usually go to bed around 10.",
+      "start": 93.11,
+      "end": 98.47
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "10 o'clock? That's pretty early, isn't it?",
+      "start": 98.47,
+      "end": 101.21
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Yeah, well, I'd like to stay up later, but I have to get up at 6am to go to work.",
+      "start": 101.21,
+      "end": 110.29
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "6.",
+      "start": 110.29,
+      "end": 111.65
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Hi, James. What's new?",
+      "start": 111.65,
+      "end": 113.77
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Well, I got a new job a few weeks ago.",
+      "start": 113.77,
+      "end": 116.47
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Really? Congratulations. How do you like it?",
+      "start": 116.47,
+      "end": 119.59
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Well, it's great except for the hours. I work the night shift.",
+      "start": 119.59,
+      "end": 124.17
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Oh no. When do you sleep?",
+      "start": 124.17,
+      "end": 126.69
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Well, I go to bed at 8 in the morning. I sleep all day and get up at 4 in the afternoon.",
+      "start": 126.69,
+      "end": 131.71
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "I sleep all day and get up at 8 in the afternoon.",
+      "start": 131.71,
+      "end": 134.738
+    }
+  ]
+}

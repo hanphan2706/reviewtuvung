@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u01-l04",
+  "audioFile": "Unit01-Listening04.mp3",
+  "durationSeconds": 22.405306,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "My name is Tim.",
+      "start": 0,
+      "end": 3.33
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "2. My email address is TimR at tmail.com.",
+      "start": 3.33,
+      "end": 10.72
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "3. I live in New York.",
+      "start": 10.72,
+      "end": 16.14
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "4. I have a reservation for tonight.",
+      "start": 16.14,
+      "end": 22.405
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u02-l03",
+  "audioFile": "Unit02-Listening03.mp3",
+  "durationSeconds": 133.2778,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Excuse me, I've lost my little boy. We were looking at microwaves and he was bored and...",
+      "start": 0,
+      "end": 7.9
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Calm down, sir. Can you describe him?",
+      "start": 7.9,
+      "end": 11.5
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Yes, he's 9. Really cute.",
+      "start": 11.5,
+      "end": 15.66
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "And what color is his hair? Dark brown.",
+      "start": 15.66,
+      "end": 19.18
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Okay, let's see where he is. Just sit down and relax.",
+      "start": 19.18,
+      "end": 25.48
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "2. It's my son. We were looking for some pants for my husband. Now I can't find him.",
+      "start": 25.48,
+      "end": 33.86
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Don't worry, ma'am. We'll find him. How old is he?",
+      "start": 33.86,
+      "end": 37.22
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "He's 11. I see. And what color is his hair?",
+      "start": 37.22,
+      "end": 41.72
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "It's light brown. Don't worry. We'll find him for you.",
+      "start": 41.72,
+      "end": 47.2
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "3. Excuse me, I can't find my daughter. I was buying these clothes at the register",
+      "start": 47.2,
+      "end": 53.48
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "and she was right behind me and now she's gone. Don't worry, I'm sure we'll find her.",
+      "start": 53.48,
+      "end": 59.48
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "So how old is she? She's 10. Okay, and what color is her hair?",
+      "start": 59.48,
+      "end": 65.6
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "It's blonde and kind of long and straight. 4. My daughter was here a minute ago and now I can't",
+      "start": 65.6,
+      "end": 75.61
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "find her. She's probably in the toy section. Can you describe her? Yes, she's 12 years old.",
+      "start": 75.61,
+      "end": 83.15
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "And what color hair does she have? Brown, and it's very curly.",
+      "start": 83.15,
+      "end": 87.69
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "All right, let's go to the toy section and see if she's there.",
+      "start": 87.69,
+      "end": 93.71
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "5. Has anyone seen a young kid? How old, sir?",
+      "start": 93.71,
+      "end": 99.31
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "He's 10. He's always getting lost. Drives me crazy.",
+      "start": 99.31,
+      "end": 103.71
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Where did you last see him? Over by the video equipment.",
+      "start": 103.71,
+      "end": 107.59
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "What color is his hair? Blonde and pretty long. Too long.",
+      "start": 107.59,
+      "end": 114.1
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "6. Excuse me, I've lost my daughter. Is she around 13 about average height with red hair?",
+      "start": 114.1,
+      "end": 122.84
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Why, yes, she's looking for you. Over there in the shoe department. Thanks a lot.",
+      "start": 122.84,
+      "end": 133.278
+    }
+  ]
+}

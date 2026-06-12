@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u02-l02",
+  "audioFile": "Unit02-Listening02.mp3",
+  "durationSeconds": 62.912449,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "2. Tell me about your boyfriend, Anne. Well, his name's Daniel. He's 17. Let me see. Well, he has curly blonde hair.",
+      "start": 0,
+      "end": 13.36
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "He's not very tall about average, but he's really good looking. 3. So, Matt, what's the new girl in class look like?",
+      "start": 13.36,
+      "end": 27.23
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "She's pretty tall, about 170 centimeters. She wears glasses and has short curly hair. I think she's about 20.",
+      "start": 27.23,
+      "end": 37.09
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "What's her name? I can't remember. Anne, I think. 4. So, tell me about your cousin, Paul. Well, she's very pretty. Really? Is she blonde? No, she has dark brown hair. Everybody likes her. She's an actress. Really? I'd like to meet her.",
+      "start": 37.09,
+      "end": 62.912
+    }
+  ]
+}

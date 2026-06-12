@@ -6,9 +6,7 @@ import {
   READING_AUDIO_BUCKET,
   readingAudioObjectKey,
 } from "@/lib/reading/reading-audio-storage";
-import { createServerSupabaseClient } from "@/lib/supabase/server";
-
-const SIGNED_URL_TTL_SEC = 60 * 60;
+import { createServiceRoleSupabaseClient } from "@/lib/supabase/service-role";
 
 async function streamLocalDevMp3(objectKey: string): Promise<NextResponse | null> {
   if (process.env.NODE_ENV === "production") return null;
@@ -18,12 +16,32 @@ async function streamLocalDevMp3(objectKey: string): Promise<NextResponse | null
     return new NextResponse(bytes, {
       headers: {
         "Content-Type": "audio/mpeg",
+        "Content-Length": String(bytes.length),
         "Cache-Control": "private, no-store",
+        "Accept-Ranges": "bytes",
       },
     });
   } catch {
     return null;
   }
+}
+
+async function streamSupabaseMp3(objectKey: string): Promise<NextResponse | null> {
+  const supabase = createServiceRoleSupabaseClient();
+  if (!supabase) return null;
+
+  const { data, error } = await supabase.storage.from(READING_AUDIO_BUCKET).download(objectKey);
+  if (error || !data) return null;
+
+  const bytes = Buffer.from(await data.arrayBuffer());
+  return new NextResponse(bytes, {
+    headers: {
+      "Content-Type": "audio/mpeg",
+      "Content-Length": String(bytes.length),
+      "Cache-Control": "private, no-store",
+      "Accept-Ranges": "bytes",
+    },
+  });
 }
 
 export async function GET(request: Request) {
@@ -36,16 +54,8 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "unknown article" }, { status: 400 });
   }
 
-  const supabase = await createServerSupabaseClient();
-  if (supabase) {
-    const { data, error } = await supabase.storage
-      .from(READING_AUDIO_BUCKET)
-      .createSignedUrl(objectKey, SIGNED_URL_TTL_SEC);
-
-    if (!error && data?.signedUrl) {
-      return NextResponse.redirect(data.signedUrl);
-    }
-  }
+  const remote = await streamSupabaseMp3(objectKey);
+  if (remote) return remote;
 
   const local = await streamLocalDevMp3(objectKey);
   if (local) return local;

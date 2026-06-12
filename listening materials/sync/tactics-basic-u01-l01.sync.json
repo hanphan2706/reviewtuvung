@@ -1,0 +1,261 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u01-l01",
+  "audioFile": "Unit01-Listening01.mp3",
+  "durationSeconds": 128.958367,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "1. What's your name?",
+      "start": 0,
+      "end": 3.44
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "It's Alina Smith.",
+      "start": 3.44,
+      "end": 5.4
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Alina?",
+      "start": 5.4,
+      "end": 6.54
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "No, Alina.",
+      "start": 6.54,
+      "end": 8.64
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "A-L-I-N-A.",
+      "start": 8.64,
+      "end": 11.7
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Oh, Alina. It's nice to meet you, Alina.",
+      "start": 11.7,
+      "end": 17.33
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "2.",
+      "start": 17.33,
+      "end": 18.29
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Your name, please?",
+      "start": 18.29,
+      "end": 20.45
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Matt Rosenblum.",
+      "start": 20.45,
+      "end": 22.29
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Rosenblum.",
+      "start": 22.29,
+      "end": 23.19
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "How do you spell that, Mr. Rosenblum?",
+      "start": 23.19,
+      "end": 26.41
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "R-O-S-E-N-B-L-U-M.",
+      "start": 26.41,
+      "end": 32.07
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Okay, thank you.",
+      "start": 32.07,
+      "end": 35.64
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "3.",
+      "start": 35.64,
+      "end": 37.1
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Could I please have your email address?",
+      "start": 37.1,
+      "end": 40.04
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Sure. It's Nat Wilson at T-Mail.com.",
+      "start": 40.04,
+      "end": 44.08
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Okay. Matt Nilsson.",
+      "start": 44.08,
+      "end": 47.48
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Actually, it's Nat Wilson.",
+      "start": 47.48,
+      "end": 49.58
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "N-A-T-W-I-L-S-O-N at T-Mail.com.",
+      "start": 49.58,
+      "end": 56.36
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Nat Wilson. Got it. Thanks.",
+      "start": 56.36,
+      "end": 62.31
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "4. And your email address is...",
+      "start": 62.31,
+      "end": 67.13
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "It's CoolGal at R-O-L.com.",
+      "start": 67.13,
+      "end": 70.73
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Cool PAL?",
+      "start": 70.73,
+      "end": 73.31
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "No, CoolGal, G-A-L at R-O-L.com.",
+      "start": 73.31,
+      "end": 80.96
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "5.",
+      "start": 80.96,
+      "end": 82.82
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "May I have your phone number, please?",
+      "start": 82.82,
+      "end": 86.2
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Sure. It's 555-2398.",
+      "start": 86.2,
+      "end": 90.86
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Okay. 555-2358.",
+      "start": 90.86,
+      "end": 96.32
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Actually, it's 98-2398.",
+      "start": 96.32,
+      "end": 100.34
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Oh, 2398. Thank you.",
+      "start": 100.34,
+      "end": 106.42
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "6. So, could I give you a call sometime?",
+      "start": 106.42,
+      "end": 110.26
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Sure. That would be great.",
+      "start": 110.26,
+      "end": 112.92
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "My cell is 555-7216.",
+      "start": 112.92,
+      "end": 119.7
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "555-7216?",
+      "start": 119.7,
+      "end": 121.42
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Yep. That's right.",
+      "start": 121.42,
+      "end": 123.18
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Okay. I'll give you a call this weekend then.",
+      "start": 123.18,
+      "end": 128.958
+    }
+  ]
+}

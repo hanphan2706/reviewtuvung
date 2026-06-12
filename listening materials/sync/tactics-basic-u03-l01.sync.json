@@ -1,0 +1,247 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u03-l01",
+  "audioFile": "Unit03-Listening01.mp3",
+  "durationSeconds": 108.750612,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Which is David?",
+      "start": 0,
+      "end": 2.12
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "David? There he is. He's wearing a jacket and tie and he has reddish blonde hair.",
+      "start": 2.12,
+      "end": 8.66
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Okay, thanks.",
+      "start": 8.66,
+      "end": 11.96
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "2. I'm looking for Monica.",
+      "start": 11.96,
+      "end": 16.02
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Oh, she's wearing a long dress. And she wears glasses.",
+      "start": 16.02,
+      "end": 20.67
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Does she have long hair?",
+      "start": 20.67,
+      "end": 22.84
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "No, it's not really long.",
+      "start": 22.84,
+      "end": 27.16
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "3. Which one is Nick?",
+      "start": 27.16,
+      "end": 30.7
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "He's wearing a dark suit and a tie and sneakers.",
+      "start": 30.7,
+      "end": 34.46
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Sneakers? Okay, thanks.",
+      "start": 34.46,
+      "end": 39.28
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "4. I'm looking for Emma.",
+      "start": 39.28,
+      "end": 42.38
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "There she is, over there.",
+      "start": 42.38,
+      "end": 44.52
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "She's wearing white pants and a red blouse.",
+      "start": 44.52,
+      "end": 47.56
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "The one with a scarf?",
+      "start": 47.56,
+      "end": 49.1
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Yeah.",
+      "start": 49.1,
+      "end": 51.52
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "5.",
+      "start": 51.52,
+      "end": 53
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Who's Andrew?",
+      "start": 53,
+      "end": 54.86
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "He's wearing shorts and a t-shirt. He has short blonde hair.",
+      "start": 54.86,
+      "end": 58.72
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Oh, I see him. Thanks.",
+      "start": 58.72,
+      "end": 62.6
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "6. I'm looking for Kate.",
+      "start": 62.6,
+      "end": 66.48
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Hmm. There she is.",
+      "start": 66.48,
+      "end": 69.02
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "She's wearing a yellow skirt, a blue blouse and red sandals.",
+      "start": 69.02,
+      "end": 73.6
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Thanks. 7.",
+      "start": 73.6,
+      "end": 77.92
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Is Mary here tonight?",
+      "start": 77.92,
+      "end": 80.02
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Yes, she is. See her over there.",
+      "start": 80.02,
+      "end": 82.62
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "She's wearing jeans and a green shirt.",
+      "start": 82.62,
+      "end": 85.88
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Jeans and a green shirt.",
+      "start": 85.88,
+      "end": 87.94
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Yes, and she's wearing a funny hat.",
+      "start": 87.94,
+      "end": 92.56
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "8.",
+      "start": 92.56,
+      "end": 94.32
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Where's Ben?",
+      "start": 94.32,
+      "end": 95.88
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Oh, the body builder.",
+      "start": 95.88,
+      "end": 97.78
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "He's wearing sneakers, shorts and a tight shirt, as usual.",
+      "start": 97.78,
+      "end": 102.08
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "A tight shirt?",
+      "start": 102.08,
+      "end": 103.58
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Yeah, he likes to show off his muscles.",
+      "start": 103.58,
+      "end": 108.751
+    }
+  ]
+}

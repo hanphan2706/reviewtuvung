@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u06-l01",
+  "audioFile": "Unit06-Listening01.mp3",
+  "durationSeconds": 66.007551,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "I'm a salesperson. I sell computers. I like my job. It's really interesting. And I meet lots of interesting people.",
+      "start": 0,
+      "end": 9.04
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "2. Yes, I like it a lot. I like acting in front of lots of people. One day, I hope to write a book about my work.",
+      "start": 9.04,
+      "end": 18.82
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "3. It's an interesting job. And it's good for me because I love travel and flying. I visit lots of countries every year. And well, I know it's silly, but I like my uniform.",
+      "start": 18.82,
+      "end": 33.44
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "4. It's a good job for me because I like food and I love cooking. Lots of famous people come to our restaurant too.",
+      "start": 33.44,
+      "end": 44.13
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "5. Nursing is a good job for me. I like helping people.",
+      "start": 44.13,
+      "end": 49.87
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "6. You know. Sick people. 6. I like my work because I work outside. It's hard work, but the pay's good, and it keeps me in shape.",
+      "start": 49.87,
+      "end": 66.008
+    }
+  ]
+}

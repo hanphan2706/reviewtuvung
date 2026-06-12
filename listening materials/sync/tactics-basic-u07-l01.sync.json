@@ -1,0 +1,261 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u07-l01",
+  "audioFile": "Unit07-Listening01.mp3",
+  "durationSeconds": 145.431688,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Unit 7, Favorites, Page 26, Track 36, Listening 1, 1, Sorry, I can't go out tonight.",
+      "start": 0.11,
+      "end": 14.02
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "I'm staying home to watch the world's greatest talent.",
+      "start": 14.02,
+      "end": 17.16
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Really? Huh, I've never seen that.",
+      "start": 17.16,
+      "end": 20.8
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "You're kidding, you have to watch it. Tonight's the finals. Everyone's gonna be watching it.",
+      "start": 20.8,
+      "end": 26.96
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Okay, okay, maybe I will.",
+      "start": 26.96,
+      "end": 29.72
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Two.",
+      "start": 29.72,
+      "end": 33.63
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Isn't she amazing?",
+      "start": 33.63,
+      "end": 36.13
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Yeah, she has a beautiful voice.",
+      "start": 36.13,
+      "end": 39.39
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "And she writes such great songs.",
+      "start": 39.39,
+      "end": 42.35
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Yeah, she's so creative. Three.",
+      "start": 42.35,
+      "end": 47.94
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "She's incredible.",
+      "start": 47.94,
+      "end": 50.04
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Yeah, she's the best.",
+      "start": 50.04,
+      "end": 51.8
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Did you know she started playing when she was only two years old?",
+      "start": 51.8,
+      "end": 55.08
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Two. I was still learning to walk at that age.",
+      "start": 55.08,
+      "end": 58.66
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Yeah, and she started playing professionally when she was only sixteen.",
+      "start": 58.66,
+      "end": 63.32
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "And I think she scored something like a hundred goals in her professional career.",
+      "start": 63.32,
+      "end": 68.82
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Four.",
+      "start": 68.82,
+      "end": 70.3
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "What are you doing? Studying?",
+      "start": 70.3,
+      "end": 72.8
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Well, sort of. I'm taking a little break.",
+      "start": 72.8,
+      "end": 76.44
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Hey, take a look at this. It's really cool.",
+      "start": 76.44,
+      "end": 79.08
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "You have to sneak past the guards and shoot King Everest to get to the next level.",
+      "start": 79.08,
+      "end": 83.52
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "I only started playing it a few days ago and I've already gotten to the fourth level.",
+      "start": 83.52,
+      "end": 87.36
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Awesome. Can I have a turn?",
+      "start": 87.36,
+      "end": 90.94
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "I'll bet I can get to the fourth level on my first try.",
+      "start": 90.94,
+      "end": 96.65
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Five.",
+      "start": 96.65,
+      "end": 97.91
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Hey, Sam. Wanna go to Giovanni's tonight?",
+      "start": 97.91,
+      "end": 101.75
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Giovanni's? I don't think I've ever been there.",
+      "start": 101.75,
+      "end": 105.09
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "You haven't? They have the best pizza in the world.",
+      "start": 105.09,
+      "end": 109.89
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "They do? Well, then let's go right now.",
+      "start": 109.89,
+      "end": 112.99
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "I'm really hungry. Six.",
+      "start": 112.99,
+      "end": 117.79
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Can you change the station? Let's listen to 97.9.",
+      "start": 117.79,
+      "end": 122.57
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Oh, come on. I want to listen to this sports talk show.",
+      "start": 122.57,
+      "end": 126.43
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "What's so great about 97.9 anyway?",
+      "start": 126.43,
+      "end": 129.69
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Well, they play the top hits. Only new stuff.",
+      "start": 129.69,
+      "end": 133.09
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Right. Only the top hits. Don't you get tired of listening to the same ten songs all day?",
+      "start": 133.09,
+      "end": 139.91
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "No, not if they're my favorite songs.",
+      "start": 139.91,
+      "end": 145.432
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u07-l02",
+  "audioFile": "Unit07-Listening02.mp3",
+  "durationSeconds": 96.26229,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "This website is great. They have a great selection. Rock, rap, jazz, old, new, international.",
+      "start": 0,
+      "end": 9.72
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "And it's not as expensive as other sites. I've downloaded hundreds of songs.",
+      "start": 9.72,
+      "end": 16.93
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "2. This is my favorite website because it helps me stay in touch with my friends and family.",
+      "start": 16.93,
+      "end": 23.59
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Also, I've made lots of new friends. The only problem is that I spend too much time on it when I should be studying.",
+      "start": 23.59,
+      "end": 32.85
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "3. This site is so much fun. I'm always finding really funny videos.",
+      "start": 32.85,
+      "end": 38.95
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "I haven't posted any of my own videos yet, though. I'll probably start doing that soon.",
+      "start": 38.95,
+      "end": 45.58
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "4. This is a great website for planning vacations.",
+      "start": 45.58,
+      "end": 49.62
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "It has lots of terrific information about interesting places to visit, hotels, and how to get good deals.",
+      "start": 49.62,
+      "end": 58.09
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "5. I hardly ever go to the mall. Why should I?",
+      "start": 58.09,
+      "end": 63.57
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "I can buy almost everything I need at this website. They have a big selection. They deliver quickly.",
+      "start": 63.57,
+      "end": 70.27
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "And their prices are the best on the internet. Sometimes they offer free shipping too.",
+      "start": 70.27,
+      "end": 77.9
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "6. I like to know what's happening in the world.",
+      "start": 77.9,
+      "end": 80.42
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "So I check out this site every day while I'm eating breakfast. I also really like the celebrity gossip news.",
+      "start": 80.42,
+      "end": 87
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "I just found out today that Jeb Hawkes and Alison Romano broke up last week while they were starring in a movie together.",
+      "start": 87,
+      "end": 96.262
+    }
+  ]
+}

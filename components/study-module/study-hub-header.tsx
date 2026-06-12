@@ -9,6 +9,13 @@ import { StudyHubCurtainMenu } from "@/components/study-module/study-hub-curtain
 import { StudyHubHamburgerButton } from "@/components/study-module/study-hub-hamburger-button";
 import { useStudyHubDesktopNav } from "@/hooks/use-study-hub-desktop-nav";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
+import { LISTENING_HUB_HREF } from "@/lib/listening/listening-hub-nav";
+import {
+  LISTENING_DIFFICULTY_NAV,
+  LISTENING_IELTS_EXAM_HREF,
+  LISTENING_LIBRARY_ALL_HREF,
+  LISTENING_SOURCE_NAV,
+} from "@/lib/listening/library-nav";
 import {
   READING_DIFFICULTY_NAV,
   READING_HUB_HREF,
@@ -90,6 +97,7 @@ export function StudyHubHeader({
   title,
   center,
   showListeningFilters = false,
+  listeningHubTitleLink = false,
   showReadingFilters = false,
   onTitleClick,
   isLoggedIn,
@@ -100,8 +108,10 @@ export function StudyHubHeader({
   title: string;
   center?: ReactNode;
   showListeningFilters?: boolean;
+  /** Tiêu đề link về `/tu-hoc/luyen-nghe` (player) — không bật bộ lọc ngang. */
+  listeningHubTitleLink?: boolean;
   showReadingFilters?: boolean;
-  /** Khi đang session trên cùng URL hub — reset về trang chủ Luyện đọc. */
+  /** Khi đang session trên cùng URL hub — reset về trang chủ (Luyện đọc / Luyện nghe). */
   onTitleClick?: () => void;
   isLoggedIn: boolean;
   userProfile?: StudyHubUserProfile | null;
@@ -112,7 +122,8 @@ export function StudyHubHeader({
   const closeMenu = () => setMenuOpen(false);
   const desktopNav = useStudyHubDesktopNav();
   const readingNavInMenu = showReadingFilters && !desktopNav;
-  const listeningNavInMenu = showListeningFilters && !desktopNav;
+  const listeningNavInMenu = (showListeningFilters || listeningHubTitleLink) && !desktopNav;
+  const listeningTitleLink = showListeningFilters || listeningHubTitleLink;
 
   return (
     <>
@@ -122,17 +133,35 @@ export function StudyHubHeader({
             <StudyHubBackLink />
 
             <div className="flex min-h-0 min-w-0 flex-1 items-center gap-2 sm:gap-3 md:gap-4">
-              {showListeningFilters ? (
+              {listeningTitleLink ? (
                 <>
-                  <h1
-                    className={`m-0 flex shrink-0 items-center uppercase tracking-[-0.02em] leading-none ${studyHubHeaderTextClass}`}
-                  >
-                    {title}
+                  <h1 className="m-0 flex min-w-0 shrink-0 items-center leading-none">
+                    <Link
+                      href={LISTENING_HUB_HREF}
+                      onClick={onTitleClick}
+                      className={`${headerNavItemClass} truncate uppercase tracking-[-0.02em] transition-opacity hover:opacity-70`}
+                    >
+                      {title}
+                    </Link>
                   </h1>
-                  <nav className={`${desktopNavClass}`} aria-label="Bộ lọc luyện nghe">
-                    <HubDropdown label="Tất cả chất giọng" items={["Anh - Anh", "Anh - Mỹ", "Anh - Úc"]} />
-                    <HubDropdown label="Độ khó" items={["Cơ bản", "Trung bình", "Nâng cao"]} />
-                  </nav>
+                  {showListeningFilters ? (
+                    <nav className={`${desktopNavClass}`} aria-label="Bộ lọc luyện nghe">
+                      <HubDropdown label="Nguồn bài nghe" items={LISTENING_SOURCE_NAV} />
+                      <HubDropdown label="Độ khó" items={LISTENING_DIFFICULTY_NAV} />
+                      <Link
+                        href={LISTENING_IELTS_EXAM_HREF}
+                        className={`${headerNavItemClass} shrink-0 whitespace-nowrap transition-opacity hover:opacity-70`}
+                      >
+                        Luyện đề IELTS
+                      </Link>
+                      <Link
+                        href={LISTENING_LIBRARY_ALL_HREF}
+                        className={`${headerNavItemClass} shrink-0 whitespace-nowrap transition-opacity hover:opacity-70`}
+                      >
+                        Tất cả bài luyện nghe
+                      </Link>
+                    </nav>
+                  ) : null}
                 </>
               ) : showReadingFilters ? (
                 <>
@@ -171,7 +200,7 @@ export function StudyHubHeader({
                 </h1>
               )}
 
-              {!showListeningFilters && !showReadingFilters && center ? (
+              {!listeningTitleLink && !showReadingFilters && center ? (
                 <nav className={`${desktopNavClass}`} aria-label="Điều hướng luyện đọc">
                   {center}
                 </nav>

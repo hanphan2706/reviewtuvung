@@ -10,15 +10,16 @@ import {
 type StudyHubLibraryPageHeaderProps = {
   title: string;
   description?: string;
-  sort: ReactNode;
+  /** Hàng toolbar (search + sort) hoặc chỉ sort. */
+  toolbar: ReactNode;
   className?: string;
 };
 
-/** Tiêu đề → phụ đề → sort — layout chung cho trang thư viện luyện đọc / luyện nghe. */
+/** Tiêu đề → phụ đề → toolbar — layout chung cho trang thư viện luyện đọc / luyện nghe. */
 export function StudyHubLibraryPageHeader({
   title,
   description,
-  sort,
+  toolbar,
   className = "",
 }: StudyHubLibraryPageHeaderProps) {
   return (
@@ -29,7 +30,7 @@ export function StudyHubLibraryPageHeader({
           <p className={studyHubSubpageLibraryDescriptionClass}>{description}</p>
         ) : null}
       </div>
-      <div className={studyHubSubpageLibrarySortRowClass}>{sort}</div>
+      {toolbar}
     </header>
   );
 }

@@ -1,0 +1,305 @@
+{
+  "version": 1,
+  "partId": "cam19-t1-p3",
+  "audioFile": "Test1 Part3.mp3",
+  "durationSeconds": 420.231837,
+  "method": "whisper-local",
+  "preambleSeconds": 46.43,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "COLIN",
+      "text": "I haven’t seen you for a bit, Marie.",
+      "start": 46.43,
+      "end": 47.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "MARIE",
+      "text": "No. I’ve been busy with my project.",
+      "start": 47.87,
+      "end": 50.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "COLIN",
+      "text": "You’re making a vegan alternative to eggs, aren’t you? Something that doesn’t use animal products?",
+      "start": 50.55,
+      "end": 57.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "MARIE",
+      "text": "Yes. I’m using chickpeas. I had two main aims when I first started looking for an alternative to eggs, but actually I’ve found chickpeas have got more advantages.",
+      "start": 57.65,
+      "end": 69.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "COLIN",
+      "text": "Right.",
+      "start": 69.83,
+      "end": 71.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "MARIE",
+      "text": "But how about your project on reusing waste food – you were looking at bread, weren’t you?",
+      "start": 71.51,
+      "end": 78.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "COLIN",
+      "text": "Yes. It’s been hard work, but I’ve enjoyed it. The basic process was quite straightforward – breaking the stale bread down to a paste then reforming it.",
+      "start": 78.27,
+      "end": 90.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "MARIE",
+      "text": "But you were using 3-D printing, weren’t you, to make the paste into biscuits?",
+      "start": 90.93,
+      "end": 96.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "COLIN",
+      "text": "Yeah, I’d used that before, but in this project, I had time to play around with different patterns for the biscuits and finding how I could add fruit and vegetables to make them a more appetising colour, and I was really pleased with what I managed to produce. Q21/22",
+      "start": 96.07,
+      "end": 114.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "MARIE",
+      "text": "It must’ve been a great feeling to make something appetising out of bits of old bread that would’ve been thrown away otherwise. Q21/22",
+      "start": 114.03,
+      "end": 122.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "COLIN",
+      "text": "It was. And I’m hoping that some of the restaurants in town will be interested in the biscuits. I’m going to send them some samples.",
+      "start": 122.53,
+      "end": 131.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "MARIE",
+      "text": "I came across something on the internet yesterday that might interest you. It was a company that’s developed touch-sensitive sensors for food labels.",
+      "start": 131.73,
+      "end": 141.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "COLIN",
+      "text": "Mmm?",
+      "start": 141.61,
+      "end": 142.83
+    },
+    {
+      "id": "cue-14",
+      "speaker": "MARIE",
+      "text": "It’s a special sort of label on the food package. When the label’s smooth, the food is fresh and then when you can feel bumps on the label, that means the food’s gone bad. It started off as a project to help visually impaired people know whether food was fit to eat or not.",
+      "start": 142.83,
+      "end": 163.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "COLIN",
+      "text": "Interesting. So just solid food?",
+      "start": 163.25,
+      "end": 167.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "MARIE",
+      "text": "No, things like milk and juice as well. But actually, I thought it might be really good for drug storage in hospitals and pharmacies. Q23/24",
+      "start": 167.11,
+      "end": 177.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "COLIN",
+      "text": "Right. And coming back to food, maybe it’d be possible to use it for other things besides freshness. Like how many kilograms a joint of meat is. for example. Q23/24",
+      "start": 177.59,
+      "end": 189.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "MARIE",
+      "text": "Yes, there’s all sorts of possibilities.",
+      "start": 189.79,
+      "end": 241.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "COLIN",
+      "text": "I was reading an article about food trends predicting how eating habits might change in the next few years.",
+      "start": 241.35,
+      "end": 249.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "MARIE",
+      "text": "Oh – things like more focus on local products? That seems so obvious, but the shops are still full of imported foods. Q25",
+      "start": 249.09,
+      "end": 258.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "COLIN",
+      "text": "Yes, they need to be more proactive to address that.",
+      "start": 258.71,
+      "end": 262.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "MARIE",
+      "text": "And somehow motivate consumers to change, yes.",
+      "start": 262.33,
+      "end": 266.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "COLIN",
+      "text": "One thing everyone’s aware of is the need for a reduction in unnecessary packaging – but just about everything you buy in supermarkets is still covered in plastic. The government needs to do something about it. Q26",
+      "start": 266.29,
+      "end": 281.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "MARIE",
+      "text": "Absolutely. It’s got to change.",
+      "start": 281.13,
+      "end": 284.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "COLIN",
+      "text": "Do you think there’ll be more interest in gluten – and lactose-free food?",
+      "start": 284.65,
+      "end": 290.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "MARIE",
+      "text": "For people with allergies or food intolerances? I don’t know. Lots of people I know have been buying that type of food for years now. Q27",
+      "start": 290.35,
+      "end": 300.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "COLIN",
+      "text": "Yes, even if they haven’t been diagnosed with an allergy.",
+      "start": 300.67,
+      "end": 303.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "MARIE",
+      "text": "That’s right. One thing I ’ve noticed is the number of branded products related to celebrity chefs – people watch them cooking on TV and then buy things like spice mixes or frozen foods with the chef’s name on . . . I bought something like that once, but I won’t again. Q28",
+      "start": 303.89,
+      "end": 325.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "COLIN",
+      "text": "Yeah – I bought a ready-made spice mix for chicken which was supposed to be used by a chef I’d seen on television, and it didn’t actually taste of anything.",
+      "start": 325.21,
+      "end": 337.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "MARIE",
+      "text": "Mm. Did the article mention ‘ghost kitchens’ used to produce takeaway food?",
+      "start": 337.31,
+      "end": 342.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "COLIN",
+      "text": "No. What are they?",
+      "start": 342.97,
+      "end": 344.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "MARIE",
+      "text": "Well, they might have the name of a restaurant, but actually they’re a cooking facility just for delivery meals – the public don’t ever go there. But people aren’t aware of that – it’s all kept very quiet. Q29",
+      "start": 344.85,
+      "end": 359.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "COLIN",
+      "text": "So people don’t realise the food’s not actually from the restaurant?",
+      "start": 359.07,
+      "end": 363.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "MARIE",
+      "text": "Right.",
+      "start": 363.85,
+      "end": 365.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "COLIN",
+      "text": "Did you know more and more people are using all sorts of different mushrooms now, to treat different health concerns? Things like heart problems?",
+      "start": 365.43,
+      "end": 376.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "MARIE",
+      "text": "Hmm. They might be taking a big risk there. Q30",
+      "start": 376.63,
+      "end": 379.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "COLIN",
+      "text": "Yes, it’s hard to know which varieties are safe to eat. Anyway maybe now…",
+      "start": 379.55,
+      "end": 420.232,
+      "preAudio": false
+    }
+  ]
+}

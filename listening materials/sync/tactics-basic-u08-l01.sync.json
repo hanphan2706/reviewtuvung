@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u08-l01",
+  "audioFile": "Unit08-Listening01.mp3",
+  "durationSeconds": 115.417,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Unit 8, sports and exercise.",
+      "start": 0,
+      "end": 3.34
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Page 30, Track 41, Listening 1, 1.",
+      "start": 3.34,
+      "end": 10.89
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Do you play sports on weekends, Rita?",
+      "start": 10.89,
+      "end": 14.31
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "No, I hate sports.",
+      "start": 14.31,
+      "end": 16.79
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Really? So what do you do on weekends?",
+      "start": 16.79,
+      "end": 20.51
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Uh, I watch my favorite programs on TV.",
+      "start": 20.51,
+      "end": 24.41
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Well, that's not too tiring.",
+      "start": 24.41,
+      "end": 29.01
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Two.",
+      "start": 29.01,
+      "end": 30.03
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Do you like sports, Curtis?",
+      "start": 30.03,
+      "end": 31.89
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Sure. I play a lot of sports.",
+      "start": 31.89,
+      "end": 35.51
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "So what sports do you play?",
+      "start": 35.51,
+      "end": 37.79
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Well, everything.",
+      "start": 37.79,
+      "end": 39.33
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Baseball, volleyball, swimming.",
+      "start": 39.33,
+      "end": 41.77
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "But my favorite sport is tennis.",
+      "start": 41.77,
+      "end": 44.41
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Oh, yeah?",
+      "start": 44.41,
+      "end": 45.31
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Yeah. I play every day after work.",
+      "start": 45.31,
+      "end": 50.4
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Three.",
+      "start": 50.4,
+      "end": 51.86
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "You're in great shape, Robert.",
+      "start": 51.86,
+      "end": 54.66
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Thanks.",
+      "start": 54.66,
+      "end": 55.88
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "So how do you do it?",
+      "start": 55.88,
+      "end": 57.86
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Well, I go to the pool about three times a week",
+      "start": 57.86,
+      "end": 60.34
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "and I swim for about two hours.",
+      "start": 60.34,
+      "end": 62.18
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Two hours? Are you practicing for the Olympic Games or something?",
+      "start": 62.18,
+      "end": 69.24
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Four.",
+      "start": 69.24,
+      "end": 70.9
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "How do you keep in shape, John?",
+      "start": 70.9,
+      "end": 73.34
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Me? My travel.",
+      "start": 73.34,
+      "end": 74.88
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "What do you mean you travel?",
+      "start": 74.88,
+      "end": 77.3
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Well, I ride my bike about 20 miles every weekend.",
+      "start": 77.3,
+      "end": 82.3
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Five.",
+      "start": 82.3,
+      "end": 83.72
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Wow, what happened?",
+      "start": 83.72,
+      "end": 86.56
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "I went skiing.",
+      "start": 86.56,
+      "end": 88.44
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Gee, that looks pretty bad.",
+      "start": 88.44,
+      "end": 91.52
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Yeah.",
+      "start": 91.52,
+      "end": 92.7
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Do you ski often?",
+      "start": 92.7,
+      "end": 93.9
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "No. It was my first time.",
+      "start": 93.9,
+      "end": 99.06
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Six.",
+      "start": 99.06,
+      "end": 100.4
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Do you get much exercise, Joe?",
+      "start": 100.4,
+      "end": 103.24
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "Yes, I do. I walk a lot.",
+      "start": 103.24,
+      "end": 105.98
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "Where?",
+      "start": 105.98,
+      "end": 106.88
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "To McDonald's.",
+      "start": 106.88,
+      "end": 108.28
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "Yeah. I walked there about four times a week to get a hamburger and fries.",
+      "start": 108.28,
+      "end": 115.417
+    }
+  ]
+}

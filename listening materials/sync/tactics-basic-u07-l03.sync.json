@@ -1,0 +1,156 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u07-l03",
+  "audioFile": "Unit07-Listening03.mp3",
+  "durationSeconds": 96.420408,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "One.",
+      "start": 0,
+      "end": 1.66
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "And this weekend the country's most popular movie was The Terror in August.",
+      "start": 1.66,
+      "end": 7.62
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "It made $20 million. It seems Americans want to be really scared.",
+      "start": 7.62,
+      "end": 14.23
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Two.",
+      "start": 14.23,
+      "end": 15.57
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Spring is here.",
+      "start": 15.57,
+      "end": 17.27
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "The Freeville Blue Jays' first game of the season is always a fun event for our town.",
+      "start": 17.27,
+      "end": 22.71
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "And this year, Freeville's favorite team is giving away free baseballs for one night only.",
+      "start": 22.71,
+      "end": 31.09
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Three. And what is the favorite store of your favorite celebrities?",
+      "start": 31.09,
+      "end": 36.37
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Star Rocker Clothes, of course. And next week they're having their once-a-year sale.",
+      "start": 36.37,
+      "end": 41.93
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Everything is 50% off.",
+      "start": 41.93,
+      "end": 46.02
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Four.",
+      "start": 46.02,
+      "end": 47.54
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Every girl's new favorite band is the Brady Brothers.",
+      "start": 47.54,
+      "end": 50.78
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "There are two concerts in Boston sold out in five minutes, so they've added two more shows.",
+      "start": 50.78,
+      "end": 57.2
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Good luck getting tickets.",
+      "start": 57.2,
+      "end": 60.55
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Five. And the new favorite restaurant in town is Superburger.",
+      "start": 60.55,
+      "end": 66.33
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Everyone is going there to try the new menu. Even celebrities are going.",
+      "start": 66.33,
+      "end": 71.75
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Get there before it opens at 11 o'clock or you won't get a table.",
+      "start": 71.75,
+      "end": 77.95
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Six.",
+      "start": 77.95,
+      "end": 79.41
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "And for the third week in a row, the most popular TV show in America is The Island.",
+      "start": 79.41,
+      "end": 86.49
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Everyone seems to love the exciting adventures of Captain Smith.",
+      "start": 86.49,
+      "end": 91.41
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Will you be watching on Sunday?",
+      "start": 91.41,
+      "end": 96.42
+    }
+  ]
+}

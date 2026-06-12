@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useLayoutEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { StudyHubAccountMenuSections } from "@/components/study-module/study-hub-account-menu-sections";
+import { StudyHubListeningMenuNav } from "@/components/study-module/study-hub-listening-menu-nav";
 import { StudyHubReadingMenuNav } from "@/components/study-module/study-hub-reading-menu-nav";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 
@@ -100,10 +101,9 @@ export function StudyHubCurtainMenu({
               <StudyHubReadingMenuNav onNavigate={onClose} />
             </div>
           ) : showListeningNav ? (
-            <nav className="mb-5 rounded-lg border border-[#E4E4E7] bg-white/60 px-2 py-3" aria-label="Luyện nghe">
-              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#47464b]">Bộ lọc (sắp có)</p>
-              <p className="mt-2 text-sm text-[#47464b]">Chất giộng · Độ khó</p>
-            </nav>
+            <div className="mb-5">
+              <StudyHubListeningMenuNav onNavigate={onClose} />
+            </div>
           ) : null}
 
           {/* Premium + tài khoản */}

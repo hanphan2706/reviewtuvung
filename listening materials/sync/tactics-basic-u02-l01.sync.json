@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u02-l01",
+  "audioFile": "Unit02-Listening01.mp3",
+  "durationSeconds": 91.803469,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "So is your boss young?",
+      "start": 0,
+      "end": 2.36
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "He's in his 30s, I guess. About 35.",
+      "start": 2.36,
+      "end": 8.29
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "2. It's pretty long.",
+      "start": 8.29,
+      "end": 11.69
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "What color is it?",
+      "start": 11.69,
+      "end": 13.57
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "It's light brown, and it's a little curly.",
+      "start": 13.57,
+      "end": 16.15
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "3. He's really not very tall, about 5 feet 8 inches.",
+      "start": 16.15,
+      "end": 23.92
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Oh yeah, that's not so tall.",
+      "start": 23.92,
+      "end": 28.8
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "4. He looks about 17.",
+      "start": 28.8,
+      "end": 33.18
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "No, he's older than that. He's almost 25.",
+      "start": 33.18,
+      "end": 37.46
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "No, I don't believe it. He doesn't look that old.",
+      "start": 37.46,
+      "end": 43.47
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "5. She likes to wear it really short.",
+      "start": 43.47,
+      "end": 47.23
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Yeah, and is it straight or curly?",
+      "start": 47.23,
+      "end": 51.69
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Curly, really curly. You can't miss her when you see her.",
+      "start": 51.69,
+      "end": 57.63
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "6. Is she short?",
+      "start": 57.63,
+      "end": 60.95
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "No, she's really tall, about 6 feet.",
+      "start": 60.95,
+      "end": 65.67
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "7. Is she in her teens or her 20s?",
+      "start": 65.67,
+      "end": 70.05
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "I think she's in her 20s. She's really nice. Do you want to meet her?",
+      "start": 70.05,
+      "end": 75.39
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Yeah, sure.",
+      "start": 75.39,
+      "end": 78.39
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "8.",
+      "start": 78.39,
+      "end": 79.69
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "It's not very long, but it is very straight.",
+      "start": 79.69,
+      "end": 83.07
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "And sometimes it's green.",
+      "start": 83.07,
+      "end": 85.01
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Green?",
+      "start": 85.01,
+      "end": 86.31
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Yeah, he sings in a rock band, I think.",
+      "start": 86.31,
+      "end": 91.803
+    }
+  ]
+}

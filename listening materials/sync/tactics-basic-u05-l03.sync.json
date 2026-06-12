@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "partId": "tactics-basic-u05-l03",
+  "audioFile": "Unit05-Listening03.mp3",
+  "durationSeconds": 69.941633,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Isn't it your birthday this month, Henry?",
+      "start": 0,
+      "end": 3.4
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Hey, it was a month ago.",
+      "start": 3.4,
+      "end": 5.78
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Oh, sorry, I forgot all about it.",
+      "start": 5.78,
+      "end": 9.96
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "So, did you have a big party or something?",
+      "start": 9.96,
+      "end": 13.72
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Nah, I had to study because of the exams at school.",
+      "start": 13.72,
+      "end": 18.68
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "2. Have you had your birthday yet, Eva?",
+      "start": 18.68,
+      "end": 22.38
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "No, it's in two months.",
+      "start": 22.38,
+      "end": 23.84
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Oh, that's right. So, what are you planning to do this time?",
+      "start": 23.84,
+      "end": 28.24
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "I'm going to New York with my mom and dad.",
+      "start": 28.24,
+      "end": 30.76
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Hey, fabulous. 3. Have you had your birthday yet, Julia?",
+      "start": 30.76,
+      "end": 38.12
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "No, it's not till next month. Don't forget this time.",
+      "start": 38.12,
+      "end": 42.5
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Don't worry, I won't.",
+      "start": 42.5,
+      "end": 44.76
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "I'm planning to have a barbecue. 4.",
+      "start": 44.76,
+      "end": 50.15
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Is your birthday this month or next month, Luke? I can't remember.",
+      "start": 50.15,
+      "end": 54.41
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Oh, it was a month ago.",
+      "start": 54.41,
+      "end": 57.63
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Really? So, how was it?",
+      "start": 57.63,
+      "end": 60.91
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "It was okay, but very quiet. I had a family party at home.",
+      "start": 60.91,
+      "end": 65.89
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Oh, that sounds nice.",
+      "start": 65.89,
+      "end": 69.942
+    }
+  ]
+}

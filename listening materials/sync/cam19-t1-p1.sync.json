@@ -1,0 +1,238 @@
+{
+  "version": 1,
+  "partId": "cam19-t1-p1",
+  "audioFile": "Test1 Part1.mp3",
+  "durationSeconds": 472.633469,
+  "method": "whisper-local",
+  "preambleSeconds": 120.54,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "SALLY",
+      "text": "Good morning. Hinchingbrooke Country Park, Sally speaking. I’m one of the rangers.",
+      "start": 106.54,
+      "end": 110.412,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "JOHN",
+      "text": "Oh hello. My name’s John Chapman, and I’m a teaching assistant at a local primary school. I’ve been asked to arrange a visit to the park for two of our classes.",
+      "start": 110.412,
+      "end": 120.54,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "SALLY",
+      "text": "OK. What would you like to know?",
+      "start": 120.54,
+      "end": 122.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "JOHN",
+      "text": "Well, I’m new to this area, so perhaps you could tell me something about the park first, please.",
+      "start": 122.56,
+      "end": 129.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "SALLY",
+      "text": "Of course. Altogether the park covers 170 acres, that’s 69 hectares. There are three main types of habitat: wetland, grassland and woodland. The woods are well established and varied, with an oak plantation, and other areas of mixed species. Q1",
+      "start": 129.82,
+      "end": 152.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "JOHN",
+      "text": "Right.",
+      "start": 152.22,
+      "end": 153.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "SALLY",
+      "text": "The wetland is quite varied, too. The original farmland was dug up around 40 years ago to extract gravel. Once this work was completed, the gravel pits filled with water, forming the two large lakes. There are also several smaller ones, ponds and a stream that flows through the park. Q2",
+      "start": 153.38,
+      "end": 176.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "JOHN",
+      "text": "OK, so I suppose with these different habitats there’s quite a variety of wildlife.",
+      "start": 176.32,
+      "end": 183.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "SALLY",
+      "text": "There certainly is – a lot of different species of birds and insects, and also animals like deer and rabbits.",
+      "start": 183.92,
+      "end": 193.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "JOHN",
+      "text": "And I understand you organise educational visits for school parties.",
+      "start": 193.32,
+      "end": 198.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "SALLY",
+      "text": "That’s right. We can organise a wide range of activities and adapt them to suit all ages.",
+      "start": 198.54,
+      "end": 205.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "JOHN",
+      "text": "Can you give me some examples of the activities?",
+      "start": 205.48,
+      "end": 209.4
+    },
+    {
+      "id": "cue-13",
+      "speaker": "SALLY",
+      "text": "Well, one focus is on science, where we help children to discover and study plants, trees and insects. They also collect and analyse data about the things they see. Q3",
+      "start": 209.4,
+      "end": 222.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "JOHN",
+      "text": "Uhuh.",
+      "start": 222.96,
+      "end": 223.16
+    },
+    {
+      "id": "cue-15",
+      "speaker": "SALLY",
+      "text": "Another focus is on geography. The park is a great environment to learn and practice reading a map and using a compass to navigate around the park. Q4",
+      "start": 222.96,
+      "end": 236.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "JOHN",
+      "text": "Do you do anything connected with history?",
+      "start": 236.04,
+      "end": 239.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "SALLY",
+      "text": "Yes, we do. For instance, the children can explore how the use of the land has changed over time. Then there’s leisure and tourism.",
+      "start": 239.86,
+      "end": 249.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "JOHN",
+      "text": "That focuses on your visitors, I would imagine. Q5",
+      "start": 249.84,
+      "end": 254.1
+    },
+    {
+      "id": "cue-19",
+      "speaker": "SALLY",
+      "text": "Yes, mostly. The children find out about them, their requirements, the problems they may cause and how we manage these. And another subject we cover is music: here the children experiment with natural materials to create sounds and explore rhythm and tempo. Q6",
+      "start": 254.1,
+      "end": 275.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "JOHN",
+      "text": "That must be fun!",
+      "start": 275.46,
+      "end": 277.44
+    },
+    {
+      "id": "cue-21",
+      "speaker": "SALLY",
+      "text": "Most children really enjoy it.",
+      "start": 277.44,
+      "end": 315.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "SALLY",
+      "text": "And of course, all the activities are educational, too. Learning outside the classroom encourages children to be creative, and to explore and discover for themselves.",
+      "start": 315.98,
+      "end": 329.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "JOHN",
+      "text": "I would imagine they get a sense of freedom that might not be a normal part of their lives. Q7",
+      "start": 329.48,
+      "end": 335.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "SALLY",
+      "text": "That’s right. And very often the children discover that they can do things they didn’t know they could do, and they develop new skills. This gives them greater self-confidence. Q8",
+      "start": 335.88,
+      "end": 348.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "JOHN",
+      "text": "It sounds great. So, what about the practical side of it? How much does it cost for a full-day visit? We would expect to bring between 30 and 40 children.",
+      "start": 348.52,
+      "end": 363.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "SALLY",
+      "text": "If there are over 30, it costs £4.95 for each child who attends on the day. We invoice you afterwards, so you don’t pay for children who can’t come because of sickness, for example. There’s no charge for leaders and other adults – as many as you want to bring. Q9 Q10",
+      "start": 363.12,
+      "end": 387.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "JOHN",
+      "text": "That sounds very fair. Well, thanks for all the information. I’ll need to discuss it with my colleagues, and I hope to get back to you soon to make a booking.",
+      "start": 387.82,
+      "end": 396.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "SALLY",
+      "text": "We’ll look forward to hearing from you. Goodbye.",
+      "start": 396.66,
+      "end": 400.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "JOHN",
+      "text": "Goodbye, and thank you.",
+      "start": 400.1,
+      "end": 472.633,
+      "preAudio": false
+    }
+  ]
+}

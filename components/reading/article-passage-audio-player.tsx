@@ -2,6 +2,7 @@
 
 import { forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState } from "react";
 import { Gauge, Pause, Play, RotateCcw, RotateCw, Volume2, VolumeX } from "lucide-react";
+import { resolveProtectedAudioSrc } from "@/lib/media/resolve-protected-audio-src";
 
 const SPEEDS = [1, 1.25, 1.5, 1.75] as const;
 
@@ -59,48 +60,66 @@ export const ArticlePassageAudioPlayer = forwardRef<
   const progress = duration > 0 ? Math.min(1, current / duration) : 0;
 
   useEffect(() => {
-    const audio = new Audio(src);
-    audioRef.current = audio;
-    setPlaying(false);
-    setCurrent(0);
-    setDuration(0);
-    setReady(false);
+    let cancelled = false;
+    let revokeObjectUrl: (() => void) | undefined;
+    let audio: HTMLAudioElement | null = null;
 
-    const onLoaded = () => {
-      setDuration(audio.duration);
-      setReady(true);
-      if (Number.isFinite(audio.duration) && audio.duration > 0) {
-        onDurationChangeRef.current?.(audio.duration);
-      }
-    };
-    const onTime = () => {
-      setCurrent(audio.currentTime);
-      onTimeUpdateRef.current?.(audio.currentTime);
-    };
-    const onEnded = () => {
-      setPlaying(false);
-      onEndedRef.current?.();
-    };
-    const onPlay = () => setPlaying(true);
-    const onPause = () => setPlaying(false);
+    void resolveProtectedAudioSrc(src)
+      .then(({ src: resolvedSrc, revoke }) => {
+        if (cancelled) {
+          revoke?.();
+          return;
+        }
+        revokeObjectUrl = revoke;
 
-    audio.addEventListener("loadedmetadata", onLoaded);
-    audio.addEventListener("timeupdate", onTime);
-    audio.addEventListener("ended", onEnded);
-    audio.addEventListener("play", onPlay);
-    audio.addEventListener("pause", onPause);
+        audio = new Audio(resolvedSrc);
+        audioRef.current = audio;
+        setPlaying(false);
+        setCurrent(0);
+        setDuration(0);
+        setReady(false);
+
+        const activeAudio = audio;
+        if (!activeAudio) return;
+
+        const onLoaded = () => {
+          setDuration(activeAudio.duration);
+          setReady(true);
+          if (Number.isFinite(activeAudio.duration) && activeAudio.duration > 0) {
+            onDurationChangeRef.current?.(activeAudio.duration);
+          }
+        };
+        const onTime = () => {
+          setCurrent(activeAudio.currentTime);
+          onTimeUpdateRef.current?.(activeAudio.currentTime);
+        };
+        const onEnded = () => {
+          setPlaying(false);
+          onEndedRef.current?.();
+        };
+        const onPlay = () => setPlaying(true);
+        const onPause = () => setPlaying(false);
+
+        audio.addEventListener("loadedmetadata", onLoaded);
+        audio.addEventListener("timeupdate", onTime);
+        audio.addEventListener("ended", onEnded);
+        audio.addEventListener("play", onPlay);
+        audio.addEventListener("pause", onPause);
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setReady(false);
+        setPlaying(false);
+      });
 
     return () => {
-      if (segmentEndHandlerRef.current) {
+      cancelled = true;
+      revokeObjectUrl?.();
+      if (segmentEndHandlerRef.current && audio) {
         audio.removeEventListener("timeupdate", segmentEndHandlerRef.current);
         segmentEndHandlerRef.current = null;
       }
-      audio.pause();
-      audio.removeEventListener("loadedmetadata", onLoaded);
-      audio.removeEventListener("timeupdate", onTime);
-      audio.removeEventListener("ended", onEnded);
-      audio.removeEventListener("play", onPlay);
-      audio.removeEventListener("pause", onPause);
+      audio?.pause();
       audioRef.current = null;
     };
   }, [src]);
