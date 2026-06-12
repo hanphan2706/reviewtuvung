@@ -11,10 +11,6 @@ type PlaceholderEntry = {
 };
 
 const PLACEHOLDER_SLUGS: Record<string, PlaceholderEntry> = {
-  "luyen-nghe": {
-    title: "Luyện nghe",
-    description: "Luyện nghe IELTS và nội dung theo chủ đề — đang được cập nhật.",
-  },
   "luyen-noi-ai": {
     title: "Luyện nói cùng AI",
     description: "Luyện nói với AI — đang được cập nhật.",

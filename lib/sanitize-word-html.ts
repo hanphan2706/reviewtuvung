@@ -1,5 +1,3 @@
-import DOMPurify from "isomorphic-dompurify";
-
 let hookRegistered = false;
 
 /** Giá trị `color:` an toàn. */
@@ -64,9 +62,16 @@ function convertFontTagsToSpans(html: string): string {
   });
 }
 
+function getBrowserDOMPurify(): typeof import("dompurify").default {
+  // Chỉ load trên browser — tránh kéo dompurify (và jsdom) vào server bundle.
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  return require("dompurify") as typeof import("dompurify").default;
+}
+
 function ensureStyleHook() {
-  if (hookRegistered) return;
+  if (typeof window === "undefined" || hookRegistered) return;
   hookRegistered = true;
+  const DOMPurify = getBrowserDOMPurify();
   DOMPurify.addHook("uponSanitizeAttribute", (node, data) => {
     if (node.nodeName === "SPAN" && data.attrName !== "style") {
       data.keepAttr = false;
@@ -112,10 +117,34 @@ export function looksLikeHtmlMarkup(s: string): boolean {
   return /<[a-z][\s\S]*?>/i.test(s);
 }
 
+/** Server / SSR: allowlist sanitizer — tránh jsdom (lỗi ESM trên Vercel). */
+function sanitizeWordHtmlAllowlist(html: string): string {
+  const withoutComments = html.replace(/<!--[\s\S]*?-->/g, "");
+  return withoutComments.replace(/<\/?([a-z]+)([^>]*)>/gi, (full, tag: string, attrs: string) => {
+    const t = tag.toLowerCase();
+    if (t === "br") return "<br>";
+    if (t === "b" || t === "strong") {
+      return full.startsWith("</") ? `</${t}>` : `<${t}>`;
+    }
+    if (t === "span") {
+      if (full.startsWith("</")) return "</span>";
+      const quoted = /\bstyle\s*=\s*(["'])([^"']*)\1/i.exec(attrs);
+      const unquoted = quoted ? null : /\bstyle\s*=\s*([^\s>]+)/i.exec(attrs);
+      const rawStyle = quoted?.[2] ?? unquoted?.[1] ?? "";
+      const style = normalizeSpanStyle(rawStyle);
+      return style ? `<span style="${style}">` : "<span>";
+    }
+    return "";
+  });
+}
+
 export function sanitizeWordHtml(dirty: string): string {
-  ensureStyleHook();
   const normalized = convertFontTagsToSpans(dirty);
-  return DOMPurify.sanitize(normalized, {
+  if (typeof window === "undefined") {
+    return sanitizeWordHtmlAllowlist(normalized);
+  }
+  ensureStyleHook();
+  return getBrowserDOMPurify().sanitize(normalized, {
     ALLOWED_TAGS: ["b", "strong", "span", "br"],
     ALLOWED_ATTR: ["style"],
   });
