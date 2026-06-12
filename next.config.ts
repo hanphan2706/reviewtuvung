@@ -2,6 +2,19 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /**
+   * MP3/PDF trong repo chỉ dùng local dev — production phát qua Supabase Storage.
+   * Không trace vào serverless (Vercel giới hạn ~250MB/function).
+   */
+  outputFileTracingExcludes: {
+    "*": [
+      "./listening materials/**",
+      "./reading raw/**",
+      "./public/reading-audio/**",
+      "./dictionaries/**",
+      "./materials/**",
+    ],
+  },
+  /**
    * Dev: Turbopack/HMR khi mở site qua IP LAN. Wildcard theo cùng quy tắc như docs Next (`*.example.com`);
    * `192.168.*.*` khớp mọi host `192.168.x.y` — không cần sửa khi DHCP đổi octet cuối.
    */
