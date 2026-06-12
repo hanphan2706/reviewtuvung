@@ -3,7 +3,7 @@
  * Upload MP3 Luyện đọc (Compass) lên Supabase Storage bucket private.
  *
  * Cần: NEXT_PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
- * File nguồn: public/reading-audio/reading-challenge-1-p*.mp3
+ * File nguồn: public/reading-audio/reading-challenge-{1,2,3}-p*.mp3
  */
 import { readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
@@ -14,7 +14,7 @@ import { createServiceRoleSupabaseClient } from "../lib/supabase/service-role";
 loadEnvLocal();
 
 const AUDIO_DIR = path.join(process.cwd(), "public", "reading-audio");
-const PATTERN = /^reading-challenge-1-p\d+\.mp3$/i;
+const PATTERN = /^reading-challenge-[123]-p\d+\.mp3$/i;
 
 async function main() {
   const supabase = createServiceRoleSupabaseClient();
