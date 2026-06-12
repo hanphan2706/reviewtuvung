@@ -1,8 +1,14 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import type { NextConfig } from "next";
 
-const isDev = process.env.NODE_ENV === "development";
+/** Cố định root Turbopack — tránh Next chọn nhầm lockfile ở thư mục cha trên Vercel/local. */
+const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
 const nextConfig: NextConfig = {
+  turbopack: {
+    root: projectRoot,
+  },
   /**
    * MP3/PDF trong repo chỉ dùng local dev — production phát qua Supabase Storage.
    * Không trace vào serverless (Vercel giới hạn ~250MB/function).
@@ -72,7 +78,6 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  ...(isDev ? { turbopack: { root: process.cwd() } } : {}),
   images: {
     /** Cho phép `quality` trên `next/image` cao hơn mặc định (75). */
     qualities: [75, 90, 100],

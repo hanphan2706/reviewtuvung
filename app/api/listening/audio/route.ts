@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import { NextResponse } from "next/server";
 import { requireApiUser } from "@/lib/auth/require-api-user";
+import { mp3NextResponse } from "@/lib/http/mp3-response";
 import {
   LISTENING_AUDIO_BUCKET,
   listeningAudioObjectKey,
@@ -8,49 +9,6 @@ import {
 import { resolveListeningAudioPath } from "@/lib/listening/listening-materials-fs";
 import { isAllowedListeningAudioFile } from "@/lib/listening/listening-materials-urls";
 import { createServiceRoleSupabaseClient } from "@/lib/supabase/service-role";
-
-function parseByteRange(
-  rangeHeader: string | null,
-  size: number,
-): { start: number; end: number } | null {
-  if (!rangeHeader?.startsWith("bytes=")) return null;
-  const [startStr, endStr] = rangeHeader.replace(/^bytes=/, "").split("-");
-  const start = startStr ? Number.parseInt(startStr, 10) : 0;
-  const end = endStr ? Number.parseInt(endStr, 10) : size - 1;
-  if (!Number.isFinite(start) || !Number.isFinite(end) || start < 0 || end >= size || start > end) {
-    return null;
-  }
-  return { start, end };
-}
-
-function audioResponse(bytes: Buffer, request: Request): NextResponse {
-  const size = bytes.length;
-  const range = parseByteRange(request.headers.get("range"), size);
-
-  if (range) {
-    const { start, end } = range;
-    const chunk = bytes.subarray(start, end + 1);
-    return new NextResponse(chunk, {
-      status: 206,
-      headers: {
-        "Content-Type": "audio/mpeg",
-        "Content-Length": String(chunk.length),
-        "Content-Range": `bytes ${start}-${end}/${size}`,
-        "Accept-Ranges": "bytes",
-        "Cache-Control": "private, no-store",
-      },
-    });
-  }
-
-  return new NextResponse(bytes, {
-    headers: {
-      "Content-Type": "audio/mpeg",
-      "Content-Length": String(size),
-      "Accept-Ranges": "bytes",
-      "Cache-Control": "private, no-store",
-    },
-  });
-}
 
 async function streamSupabaseMp3(objectKey: string, request: Request): Promise<NextResponse | null> {
   const supabase = createServiceRoleSupabaseClient();
@@ -60,12 +18,11 @@ async function streamSupabaseMp3(objectKey: string, request: Request): Promise<N
   if (error || !data) return null;
 
   const bytes = Buffer.from(await data.arrayBuffer());
-  return audioResponse(bytes, request);
+  return mp3NextResponse(bytes, request);
 }
 
 function streamLocalFile(filePath: string, request: Request): NextResponse {
-  const bytes = fs.readFileSync(filePath);
-  return audioResponse(bytes, request);
+  return mp3NextResponse(fs.readFileSync(filePath), request);
 }
 
 export async function GET(request: Request) {

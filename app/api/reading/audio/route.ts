@@ -2,6 +2,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { NextResponse } from "next/server";
 import { requireApiUser } from "@/lib/auth/require-api-user";
+import { mp3NextResponse } from "@/lib/http/mp3-response";
 import {
   READING_AUDIO_BUCKET,
   readingAudioObjectKey,
@@ -13,14 +14,7 @@ async function streamLocalDevMp3(objectKey: string): Promise<NextResponse | null
   const localPath = path.join(process.cwd(), "public", "reading-audio", objectKey);
   try {
     const bytes = await readFile(localPath);
-    return new NextResponse(bytes, {
-      headers: {
-        "Content-Type": "audio/mpeg",
-        "Content-Length": String(bytes.length),
-        "Cache-Control": "private, no-store",
-        "Accept-Ranges": "bytes",
-      },
-    });
+    return mp3NextResponse(bytes);
   } catch {
     return null;
   }
@@ -34,14 +28,7 @@ async function streamSupabaseMp3(objectKey: string): Promise<NextResponse | null
   if (error || !data) return null;
 
   const bytes = Buffer.from(await data.arrayBuffer());
-  return new NextResponse(bytes, {
-    headers: {
-      "Content-Type": "audio/mpeg",
-      "Content-Length": String(bytes.length),
-      "Cache-Control": "private, no-store",
-      "Accept-Ranges": "bytes",
-    },
-  });
+  return mp3NextResponse(bytes);
 }
 
 export async function GET(request: Request) {
