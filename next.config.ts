@@ -10,12 +10,16 @@ const nextConfig: NextConfig = {
     root: projectRoot,
   },
   /**
-   * MP3/PDF trong repo chỉ dùng local dev — production phát qua Supabase Storage.
-   * Không trace vào serverless (Vercel giới hạn ~250MB/function).
+   * MP3/PDF/zip trong repo chỉ dùng local dev — production phát audio qua Supabase Storage.
+   * Giữ QnA + transcript + sync JSON (text nhỏ) trong bundle để lam-bai / API transcript chạy trên Vercel.
    */
   outputFileTracingExcludes: {
     "/*": [
-      "./listening materials/**",
+      "./listening materials/Audio cam 19/**",
+      "./listening materials/Audio tactics-basic/**",
+      "./listening materials/*.zip",
+      "./listening materials/*.pdf",
+      "./listening materials/sync/*.whisper-words.json",
       "./reading raw/**",
       "./public/reading-audio/**",
       "./public/listening-assets/cam19/**",
