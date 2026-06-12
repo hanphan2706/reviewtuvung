@@ -1,6 +1,7 @@
 "use client";
 
 import { ChevronDown } from "lucide-react";
+import { studyHubLibraryToolbarControlClass } from "@/components/study-module/study-hub-shell";
 import {
   READING_IELTS_LIBRARY_SORT_OPTIONS,
   READING_LIBRARY_SORT_OPTIONS,
@@ -40,20 +41,20 @@ export function ReadingLibrarySortSelect({
   value,
   onChange,
   disabled,
-  className = "",
+  className = studyHubLibraryToolbarControlClass,
 }: ReadingLibrarySortProps) {
   const options = scope === "ielts" ? READING_IELTS_LIBRARY_SORT_OPTIONS : READING_LIBRARY_SORT_OPTIONS;
   const current = options.find((o) => o.value === value) ?? READING_LIBRARY_SORT_OPTIONS[0];
 
   return (
     <label className={`inline-flex shrink-0 ${className}`.trim()}>
-      <span className="relative inline-flex items-center">
+      <span className="relative inline-flex w-full items-center">
         <SortLinesIcon className="pointer-events-none absolute left-2.5 top-1/2 size-3.5 -translate-y-1/2 text-[#4a4a4a]" />
         <select
           value={value}
           disabled={disabled}
           onChange={(e) => onChange(e.target.value as ReadingLibrarySort)}
-          className="font-sans cursor-pointer appearance-none rounded-lg border border-[#4a4a4a] bg-white py-1.5 pr-7 pl-8 text-xs font-bold text-[#4a4a4a] transition hover:bg-[#fafafa] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4a4a4a] disabled:cursor-not-allowed disabled:opacity-60"
+          className="w-full cursor-pointer appearance-none rounded-lg border border-[#4a4a4a] bg-white py-1.5 pr-7 pl-8 text-xs font-bold text-[#4a4a4a] transition hover:bg-[#fafafa] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4a4a4a] disabled:cursor-not-allowed disabled:opacity-60"
           aria-label="Sắp xếp bài đọc"
         >
           {options.map((option) => (

@@ -6,13 +6,18 @@ import type { ReadingHubArticle } from "@/lib/reading/hub-articles";
 type ReadingArticleGridProps = {
   articles: ReadingHubArticle[];
   onStartArticle: (article: ReadingHubArticle) => void;
+  emptyMessage?: string;
 };
 
-export function ReadingArticleGrid({ articles, onStartArticle }: ReadingArticleGridProps) {
+export function ReadingArticleGrid({
+  articles,
+  onStartArticle,
+  emptyMessage = "Chưa có bài đọc trong mục này.",
+}: ReadingArticleGridProps) {
   if (articles.length === 0) {
     return (
       <p className="rounded-lg border border-dashed border-[#E4E4E7] bg-white px-6 py-12 text-center text-sm text-[#47464b]">
-        Chưa có bài đọc trong mục này.
+        {emptyMessage}
       </p>
     );
   }

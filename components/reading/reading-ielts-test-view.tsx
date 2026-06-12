@@ -1,11 +1,14 @@
 "use client";
 
-import { Suspense, useMemo } from "react";
+import { Suspense, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ReadingIeltsTestGrid } from "@/components/reading/reading-ielts-test-grid";
 import { ReadingLibrarySortSelect } from "@/components/reading/reading-library-sort";
 import { StudyHubHeader } from "@/components/study-module/study-hub-header";
 import { StudyHubLibraryPageHeader } from "@/components/study-module/study-hub-library-page-header";
+import { StudyHubLibraryPagination } from "@/components/study-module/study-hub-library-pagination";
+import { StudyHubLibrarySearchInput } from "@/components/study-module/study-hub-library-search-input";
+import { StudyHubLibraryToolbar } from "@/components/study-module/study-hub-library-toolbar";
 import {
   studyHubPageBgClass,
   studyHubSubpageContentClass,
@@ -21,6 +24,8 @@ import {
   sortReadingIeltsTests,
   type ReadingLibrarySort,
 } from "@/lib/reading/ielts-test-sort";
+import { useStudyHubLibraryGrid } from "@/hooks/use-study-hub-library-grid";
+import { filterReadingIeltsTests } from "@/lib/study-hub/library-search";
 
 type ReadingIeltsTestViewProps = {
   pageTitle: string;
@@ -41,11 +46,19 @@ function ReadingIeltsTestViewInner({
   const router = useRouter();
   const searchParams = useSearchParams();
   const sort = parseReadingLibrarySort(searchParams.get("sap-xep"));
+  const [query, setQuery] = useState("");
 
   const sortedTests = useMemo(
     () => sortReadingIeltsTests(READING_CAMBRIDGE_TESTS, sort),
     [sort],
   );
+
+  const filteredTests = useMemo(
+    () => filterReadingIeltsTests(sortedTests, query),
+    [sortedTests, query],
+  );
+
+  const { pageItems, totalPages } = useStudyHubLibraryGrid(filteredTests);
 
   const setSort = (next: ReadingLibrarySort) => {
     const params = new URLSearchParams(searchParams.toString());
@@ -54,8 +67,18 @@ function ReadingIeltsTestViewInner({
     } else {
       params.set("sap-xep", next);
     }
-    const query = params.toString();
-    router.replace(query ? `${pathname}?${query}` : pathname, { scroll: false });
+    const queryString = params.toString();
+    router.replace(queryString ? `${pathname}?${queryString}` : pathname, { scroll: false });
+  };
+
+  const handleSearchChange = (next: string) => {
+    setQuery(next);
+    if (searchParams.get("trang")) {
+      const params = new URLSearchParams(searchParams.toString());
+      params.delete("trang");
+      const queryString = params.toString();
+      router.replace(queryString ? `${pathname}?${queryString}` : pathname, { scroll: false });
+    }
   };
 
   const startTest = (test: ReadingIeltsTest) => {
@@ -77,11 +100,28 @@ function ReadingIeltsTestViewInner({
           className="mb-8 md:mb-10"
           title={pageTitle}
           description={pageDescription || undefined}
-          sort={
-            <ReadingLibrarySortSelect scope="ielts" value={sort} onChange={setSort} />
+          toolbar={
+            <StudyHubLibraryToolbar
+              search={
+                <StudyHubLibrarySearchInput
+                  value={query}
+                  onChange={handleSearchChange}
+                  placeholder="Tìm kiếm đề IELTS..."
+                  aria-label="Tìm kiếm đề IELTS"
+                />
+              }
+              sort={
+                <ReadingLibrarySortSelect scope="ielts" value={sort} onChange={setSort} />
+              }
+            />
           }
         />
-        <ReadingIeltsTestGrid tests={sortedTests} onStartTest={startTest} />
+        <ReadingIeltsTestGrid
+          tests={pageItems}
+          onStartTest={startTest}
+          emptyMessage={query.trim() ? "Không tìm thấy đề IELTS phù hợp." : "Chưa có đề IELTS trong mục này."}
+        />
+        <StudyHubLibraryPagination totalPages={totalPages} ariaLabel="Phân trang luyện đề IELTS" />
       </div>
     </div>
   );
