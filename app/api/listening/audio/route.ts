@@ -1,6 +1,4 @@
 import fs from "node:fs";
-import { createReadStream } from "node:fs";
-import { Readable } from "node:stream";
 import { NextResponse } from "next/server";
 import { requireApiUser } from "@/lib/auth/require-api-user";
 import {
@@ -10,8 +8,6 @@ import {
 import { resolveListeningAudioPath } from "@/lib/listening/listening-materials-fs";
 import { isAllowedListeningAudioFile } from "@/lib/listening/listening-materials-urls";
 import { createServiceRoleSupabaseClient } from "@/lib/supabase/service-role";
-
-const SIGNED_URL_TTL_SEC = 60 * 60;
 
 function parseByteRange(
   rangeHeader: string | null,
@@ -27,47 +23,49 @@ function parseByteRange(
   return { start, end };
 }
 
-async function signedSupabaseUrl(objectKey: string): Promise<string | null> {
-  const supabase = createServiceRoleSupabaseClient();
-  if (!supabase) return null;
-
-  const { data, error } = await supabase.storage
-    .from(LISTENING_AUDIO_BUCKET)
-    .createSignedUrl(objectKey, SIGNED_URL_TTL_SEC);
-
-  if (error || !data?.signedUrl) return null;
-  return data.signedUrl;
-}
-
-function streamLocalFile(filePath: string, request: Request): NextResponse {
-  const stat = fs.statSync(filePath);
-  const range = parseByteRange(request.headers.get("range"), stat.size);
+function audioResponse(bytes: Buffer, request: Request): NextResponse {
+  const size = bytes.length;
+  const range = parseByteRange(request.headers.get("range"), size);
 
   if (range) {
     const { start, end } = range;
-    const stream = createReadStream(filePath, { start, end });
-    const webStream = Readable.toWeb(stream) as ReadableStream<Uint8Array>;
-    return new NextResponse(webStream, {
+    const chunk = bytes.subarray(start, end + 1);
+    return new NextResponse(chunk, {
       status: 206,
       headers: {
         "Content-Type": "audio/mpeg",
-        "Content-Length": String(end - start + 1),
-        "Content-Range": `bytes ${start}-${end}/${stat.size}`,
+        "Content-Length": String(chunk.length),
+        "Content-Range": `bytes ${start}-${end}/${size}`,
         "Accept-Ranges": "bytes",
-        "Cache-Control": "private, max-age=3600",
+        "Cache-Control": "private, no-store",
       },
     });
   }
 
-  const webStream = Readable.toWeb(createReadStream(filePath)) as ReadableStream<Uint8Array>;
-  return new NextResponse(webStream, {
+  return new NextResponse(bytes, {
     headers: {
       "Content-Type": "audio/mpeg",
-      "Content-Length": String(stat.size),
+      "Content-Length": String(size),
       "Accept-Ranges": "bytes",
-      "Cache-Control": "private, max-age=3600",
+      "Cache-Control": "private, no-store",
     },
   });
+}
+
+async function streamSupabaseMp3(objectKey: string, request: Request): Promise<NextResponse | null> {
+  const supabase = createServiceRoleSupabaseClient();
+  if (!supabase) return null;
+
+  const { data, error } = await supabase.storage.from(LISTENING_AUDIO_BUCKET).download(objectKey);
+  if (error || !data) return null;
+
+  const bytes = Buffer.from(await data.arrayBuffer());
+  return audioResponse(bytes, request);
+}
+
+function streamLocalFile(filePath: string, request: Request): NextResponse {
+  const bytes = fs.readFileSync(filePath);
+  return audioResponse(bytes, request);
 }
 
 export async function GET(request: Request) {
@@ -81,10 +79,8 @@ export async function GET(request: Request) {
 
   const objectKey = listeningAudioObjectKey(file);
   if (objectKey) {
-    const signedUrl = await signedSupabaseUrl(objectKey);
-    if (signedUrl) {
-      return NextResponse.redirect(signedUrl);
-    }
+    const remote = await streamSupabaseMp3(objectKey, request);
+    if (remote) return remote;
   }
 
   const filePath = resolveListeningAudioPath(file);
