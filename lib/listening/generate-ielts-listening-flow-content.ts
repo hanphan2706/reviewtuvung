@@ -3,9 +3,9 @@ import type { ListeningPartMeta } from "@/lib/listening/content-manifest";
 import {
   getListeningPartQnaRef,
   getListeningTestQnaRef,
-  listeningQnaFilePath,
   type ListeningPartQnaRef,
 } from "@/lib/listening/listening-qna-catalog";
+import { listeningQnaFilePath } from "@/lib/listening/listening-materials-fs";
 import {
   getListeningQnaPart,
   parseListeningQnaText,

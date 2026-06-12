@@ -1,6 +1,3 @@
-import path from "node:path";
-import { LISTENING_MATERIALS_ROOT } from "@/lib/listening/listening-materials-paths";
-
 /** File QnA trong `listening materials/` — một file có thể chứa nhiều Part. */
 export type ListeningQnaFileRef = {
   fileName: string;
@@ -43,10 +40,6 @@ export const LISTENING_PART_QNA: Record<string, ListeningPartQnaRef> = {
   "cam19-t2-p3": { ...CAM19_TEST2_QNA, part: 3 },
   "cam19-t2-p4": { ...CAM19_TEST2_QNA, part: 4 },
 };
-
-export function listeningQnaFilePath(fileName: string): string {
-  return path.join(process.cwd(), LISTENING_MATERIALS_ROOT, fileName);
-}
 
 export function getListeningPartQnaRef(partId: string): ListeningPartQnaRef | null {
   return LISTENING_PART_QNA[partId] ?? null;

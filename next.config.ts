@@ -1,17 +1,21 @@
 import type { NextConfig } from "next";
 
+const isDev = process.env.NODE_ENV === "development";
+
 const nextConfig: NextConfig = {
   /**
    * MP3/PDF trong repo chỉ dùng local dev — production phát qua Supabase Storage.
    * Không trace vào serverless (Vercel giới hạn ~250MB/function).
    */
   outputFileTracingExcludes: {
-    "*": [
+    "/*": [
       "./listening materials/**",
       "./reading raw/**",
       "./public/reading-audio/**",
+      "./public/listening-assets/cam19/**",
       "./dictionaries/**",
       "./materials/**",
+      "./data/dictionary/**",
     ],
   },
   /**
@@ -68,9 +72,7 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  turbopack: {
-    root: process.cwd(),
-  },
+  ...(isDev ? { turbopack: { root: process.cwd() } } : {}),
   images: {
     /** Cho phép `quality` trên `next/image` cao hơn mặc định (75). */
     qualities: [75, 90, 100],

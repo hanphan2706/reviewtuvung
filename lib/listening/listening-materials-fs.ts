@@ -1,6 +1,7 @@
 import "server-only";
 
 import fs from "node:fs";
+import path from "node:path";
 import {
   listeningAudioCandidates,
   listeningTranscriptCandidates,
@@ -14,6 +15,10 @@ export {
   LISTENING_MATERIALS_ROOT,
   LISTENING_TRANSCRIPT_SUBDIR,
 } from "@/lib/listening/listening-materials-paths";
+
+export function listeningQnaFilePath(fileName: string): string {
+  return path.join(process.cwd(), LISTENING_MATERIALS_ROOT, fileName);
+}
 
 export function resolveListeningAudioPath(fileName: string): string | null {
   for (const p of listeningAudioCandidates(fileName)) {
