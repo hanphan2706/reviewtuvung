@@ -20,6 +20,12 @@ import {
   type ReadingIeltsTest,
 } from "@/lib/reading/ielts-test-catalog";
 import {
+  filterRealExams,
+  READING_REAL_EXAMS,
+  readingRealExamHref,
+  type RealExamListing,
+} from "@/lib/exam/real-exam-catalog";
+import {
   parseReadingLibrarySort,
   sortReadingIeltsTests,
   type ReadingLibrarySort,
@@ -47,6 +53,11 @@ function ReadingIeltsTestViewInner({
   const searchParams = useSearchParams();
   const sort = parseReadingLibrarySort(searchParams.get("sap-xep"));
   const [query, setQuery] = useState("");
+
+  const filteredRealExams = useMemo(
+    () => filterRealExams(READING_REAL_EXAMS, query),
+    [query],
+  );
 
   const sortedTests = useMemo(
     () => sortReadingIeltsTests(READING_CAMBRIDGE_TESTS, sort),
@@ -79,6 +90,10 @@ function ReadingIeltsTestViewInner({
       const queryString = params.toString();
       router.replace(queryString ? `${pathname}?${queryString}` : pathname, { scroll: false });
     }
+  };
+
+  const startRealExam = (exam: RealExamListing) => {
+    window.location.assign(readingRealExamHref(exam.slug));
   };
 
   const startTest = (test: ReadingIeltsTest) => {
@@ -117,7 +132,9 @@ function ReadingIeltsTestViewInner({
           }
         />
         <ReadingIeltsTestGrid
+          realExams={filteredRealExams}
           tests={pageItems}
+          onStartRealExam={startRealExam}
           onStartTest={startTest}
           emptyMessage={query.trim() ? "Không tìm thấy đề IELTS phù hợp." : "Chưa có đề IELTS trong mục này."}
         />

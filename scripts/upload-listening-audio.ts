@@ -4,7 +4,8 @@
  *
  * Cần: NEXT_PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
  * Nguồn:
- * - listening materials/Audio cam 19/Test*.mp3
+ * - listening materials/Audio cam/Test*.mp3
+ * - listening materials/Audio real test/real test *.mp3
  * - listening materials/Audio tactics-basic/Unit*-Listening*.mp3 (không .full)
  */
 import { readdirSync, readFileSync } from "node:fs";
@@ -13,11 +14,13 @@ import { loadEnvLocal } from "./load-env-local";
 import { LISTENING_AUDIO_BUCKET } from "../lib/listening/listening-audio-storage";
 import { isAllowedListeningAudioFile } from "../lib/listening/listening-materials-urls";
 import { createServiceRoleSupabaseClient } from "../lib/supabase/service-role";
+import { SUPABASE_FREE_MAX_BYTES } from "./prepare-listening-audio-for-upload";
 
 loadEnvLocal();
 
 const SOURCE_DIRS = [
-  path.join(process.cwd(), "listening materials", "Audio cam 19"),
+  path.join(process.cwd(), "listening materials", "Audio cam"),
+  path.join(process.cwd(), "listening materials", "Audio real test"),
   path.join(process.cwd(), "listening materials", "Audio tactics-basic"),
 ];
 
@@ -44,7 +47,7 @@ async function main() {
 
   const sorted = [...files].sort();
   if (!sorted.length) {
-    console.error("Không thấy MP3 hợp lệ trong listening materials/Audio cam 19 hoặc Audio tactics-basic");
+    console.error("Không thấy MP3 hợp lệ trong listening materials/Audio cam, Audio real test hoặc Audio tactics-basic");
     process.exit(1);
   }
 
@@ -64,6 +67,12 @@ async function main() {
     }
 
     const bytes = readFileSync(localPath);
+    if (bytes.length > SUPABASE_FREE_MAX_BYTES) {
+      console.error(
+        `FAIL ${name}: ${(bytes.length / 1024 / 1024).toFixed(1)} MB > 50 MB (Supabase Free). Chạy: npm run listening:prepare-audio-for-upload`,
+      );
+      process.exit(1);
+    }
     const { error } = await supabase.storage.from(LISTENING_AUDIO_BUCKET).upload(name, bytes, {
       contentType: "audio/mpeg",
       upsert: true,

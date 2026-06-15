@@ -5,6 +5,8 @@
   --foreground: color-mix(in srgb, #000001 50%, #e2e2e5 50%);
   --brand-purple: #4b2876;
   --brand-purple-dark: #3d2660;
+  --brand-purple-muted: #f3f0f8;
+  --brand-purple-container: #ebe6f4;
   --font-sans-stack: "Helvetica Neue", Helvetica, ui-sans-serif, system-ui, "Segoe UI", Roboto, Arial, sans-serif;
   --surface-white: #FAFAFA;
   --surface-dark: #000001;
@@ -152,4 +154,21 @@ dialog.newsletter-dialog::backdrop {
   background: rgb(24 24 27 / 0.45);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
+}
+
+/** Desktop / thiết bị có hover: con trỏ bàn tay cho mọi control bấm được. */
+@media (hover: hover) {
+  button:not(:disabled):not([aria-disabled="true"]),
+  [role="button"]:not([aria-disabled="true"]),
+  a[href],
+  label[for],
+  select:not(:disabled),
+  summary,
+  input[type="button"]:not(:disabled),
+  input[type="submit"]:not(:disabled),
+  input[type="reset"]:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    cursor: pointer;
+  }
 }

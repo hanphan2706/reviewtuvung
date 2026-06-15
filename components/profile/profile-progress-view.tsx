@@ -11,6 +11,7 @@ import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 import { useProfileReturnPath } from "@/hooks/use-profile-return-path";
 import { profilePageHref } from "@/lib/profile/profile-return-path";
 import {
+  LISTENING_LESSONS_TOTAL,
   READING_ARTICLES_TOTAL,
   vocabularyReviewedToday,
   type ProfileLearningProgress,
@@ -30,6 +31,8 @@ const EMPTY_SUMMARY: ProfileLearningProgress = {
   vocabularyDueToday: 0,
   readingArticlesCompleted: 0,
   readingArticlesTotal: READING_ARTICLES_TOTAL,
+  listeningLessonsCompleted: 0,
+  listeningLessonsTotal: LISTENING_LESSONS_TOTAL,
 };
 
 function formatCount(n: number): string {
@@ -108,6 +111,8 @@ export function ProfileProgressView({
           vocabularyDueToday: data.vocabularyDueToday ?? 0,
           readingArticlesCompleted: data.readingArticlesCompleted ?? 0,
           readingArticlesTotal: data.readingArticlesTotal ?? READING_ARTICLES_TOTAL,
+          listeningLessonsCompleted: data.listeningLessonsCompleted ?? 0,
+          listeningLessonsTotal: data.listeningLessonsTotal ?? LISTENING_LESSONS_TOTAL,
         });
       })
       .catch(() => undefined)
@@ -140,12 +145,19 @@ export function ProfileProgressView({
       vocabularyDueToday: clientVocab.due || base.vocabularyDueToday,
       readingArticlesCompleted: base.readingArticlesCompleted,
       readingArticlesTotal: base.readingArticlesTotal || READING_ARTICLES_TOTAL,
+      listeningLessonsCompleted: base.listeningLessonsCompleted,
+      listeningLessonsTotal: base.listeningLessonsTotal || LISTENING_LESSONS_TOTAL,
     };
   }, [remote, clientVocab, isLoggedIn, localReading]);
 
   const readingPct =
     stats.readingArticlesTotal > 0
       ? Math.round((stats.readingArticlesCompleted / stats.readingArticlesTotal) * 100)
+      : 0;
+
+  const listeningPct =
+    stats.listeningLessonsTotal > 0
+      ? Math.round((stats.listeningLessonsCompleted / stats.listeningLessonsTotal) * 100)
       : 0;
 
   const signInNext = profilePageHref();
@@ -213,6 +225,32 @@ export function ProfileProgressView({
               />
 
               <ProgressRow
+                label="Bài nghe đã hoàn thành"
+                metric={
+                  <p className={metricValueClass}>
+                    {formatCount(stats.listeningLessonsCompleted)}
+                    <span className={metricSuffixClass}>
+                      {" "}
+                      / {formatCount(stats.listeningLessonsTotal)}
+                    </span>
+                  </p>
+                }
+                trailing={
+                  <Link href="/tu-hoc/luyen-nghe" className={rowLinkClass}>
+                    Mở thư viện luyện nghe →
+                  </Link>
+                }
+                footnote={
+                  <div className="h-2 overflow-hidden rounded-full bg-zinc-100">
+                    <div
+                      className="h-full rounded-full transition-[width] duration-300"
+                      style={{ width: `${listeningPct}%`, backgroundColor: studyTokens.accent }}
+                    />
+                  </div>
+                }
+              />
+
+              <ProgressRow
                 label="Bài đọc đã hoàn thành"
                 metric={
                   <p className={metricValueClass}>
@@ -258,7 +296,7 @@ export function ProfileProgressView({
         {!isLoggedIn ? (
           <div className="mt-4 flex flex-col items-center gap-3">
             <p className="text-center text-xs text-ink-muted">
-              Đăng nhập để đồng bộ tiến độ đọc và từ vựng trên mọi thiết bị.
+              Đăng nhập để đồng bộ tiến độ đọc, nghe và từ vựng trên mọi thiết bị.
             </p>
             <AuthButton mode="sign-in" next={signInNext} signInLabel="Đăng nhập" />
           </div>

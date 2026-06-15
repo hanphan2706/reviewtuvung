@@ -12,7 +12,7 @@ export function StudyHubUserAvatar({
 }) {
   return (
     <span
-      className={`inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#f1eded] text-[#47464b] ${className}`}
+      className={`inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#ebe6f4] text-[#47464b] ${className}`}
     >
       {profile?.avatarUrl ? (
         // eslint-disable-next-line @next/next/no-img-element -- URL Google OAuth, đổi theo user

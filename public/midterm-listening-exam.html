@@ -1,0 +1,2517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANTHICHTUHOC | Đề thi thật 1 · Luyện nghe</title>
+<link href="https://api.fontshare.com/v2/css?f[]=garet@400,500,600,700,1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --exam-chrome-bg:#FAFAFA;
+  --exam-chrome-surface:#f5f5f7;
+  --exam-chrome-border:#E4E4E7;
+  --exam-chrome-text:#000001;
+  --exam-chrome-muted:#47464b;
+  --exam-chrome-subtle:#71717A;
+  --exam-header-bg:#000001;
+  --exam-header-text:#f7faf8;
+  --exam-header-muted:rgba(247,250,248,.78);
+  --exam-header-border:rgba(250,250,250,.14);
+  --exam-header-surface:rgba(250,250,250,.1);
+  --exam-submit-bg:#000001;
+  --exam-submit-text:#FAFAFA;
+  --exam-submit-hover:#000001;
+  --exam-passage-bg:#FAFAFA;
+  --exam-questions-bg:#FAFAFA;
+  --exam-content-text:#000001;
+  --exam-question-ink:#000001;
+  --exam-purple:#000001;
+  --exam-purple-dark:#000001;
+  --exam-purple-soft:#f5f5f7;
+  --exam-purple-border:#E4E4E7;
+  --exam-accent:#000001;
+  --exam-accent-soft:#f5f5f7;
+  --exam-accent-border:#E4E4E7;
+}
+
+html.exam-skip-login #login-screen{display:none!important}
+html.exam-skip-login #exam-screen{display:flex!important;flex-direction:column;height:100vh;overflow:hidden}
+#student-badge{display:none!important}
+
+*{box-sizing:border-box;margin:0;padding:0}
+/* Garet for top bar, login brand, passage titles, success title (loaded from Fontshare — no upload needed) */
+#topbar,.tb-logo,.tb-title,.login-logo .org-name,.login-title h1,.p-title,.sumtitle,.stitle{font-family:'Garet',system-ui,sans-serif;}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--exam-chrome-surface);color:var(--exam-chrome-text);font-size:14px}
+
+/* ===== LOGIN ===== */
+#login-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--exam-chrome-surface)}
+.login-card{background:#fff;border-radius:14px;box-shadow:0 6px 32px rgba(28,27,28,.08);padding:44px 52px;width:440px;max-width:95vw}
+.login-logo{text-align:center;margin-bottom:22px}
+.login-logo .org-name{font-size:22px;font-weight:800;color:var(--exam-chrome-text);letter-spacing:1.5px;line-height:1.35}
+.login-title{text-align:center;margin-bottom:28px}
+.login-title h1{font-size:21px;font-weight:700;color:var(--exam-chrome-text)}
+.login-title p{font-size:13px;color:var(--exam-chrome-muted);margin-top:5px}
+.form-group{margin-bottom:18px}
+.form-group label{display:block;font-size:12px;font-weight:700;color:var(--exam-chrome-muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em}
+.form-group input{width:100%;padding:11px 14px;border:1.5px solid var(--exam-chrome-border);border-radius:8px;font-size:14px;outline:none;transition:border-color .2s;color:var(--exam-chrome-text)}
+.form-group input:focus{border-color:var(--exam-chrome-text)}
+.start-btn{width:100%;padding:13px;background:var(--exam-chrome-text);color:#fff;border:none;border-radius:9px;font-size:15px;font-weight:700;cursor:pointer;transition:background .2s;margin-top:6px}
+.start-btn:hover{background:var(--exam-chrome-text)}
+.login-note{font-size:11.5px;color:var(--exam-chrome-subtle);text-align:center;margin-top:16px;line-height:1.6}
+
+/* ===== EXAM ===== */
+#exam-screen{display:none;flex-direction:column;height:100vh;overflow:hidden;--exam-zoom:1}
+#topbar{background:var(--exam-chrome-text);color:#fff;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;gap:12px}
+.tb-left{display:flex;align-items:center;gap:14px}
+.tb-logo{font-weight:800;font-size:13px;letter-spacing:.3px;line-height:1.25;max-width:min(52vw,320px)}
+.tb-title{font-size:13px;opacity:.82;white-space:nowrap}
+.tb-right{display:flex;align-items:center;gap:14px;flex-shrink:0}
+#student-badge{font-size:12px;opacity:.92;text-align:right;line-height:1.5;color:#fff}
+
+/* Timer + zoom: light border, transparent fills, normal-weight type */
+#timer-box{
+  display:flex;align-items:center;justify-content:center;
+  min-width:78px;min-height:34px;padding:7px 14px;
+  font-size:15px;font-weight:400;letter-spacing:2.5px;color:#fff;
+  font-variant-numeric:tabular-nums;
+  text-align:center;line-height:1;
+  border:1px solid rgba(245,240,235,.52);
+  border-radius:9px;
+  background:transparent;
+}
+#timer-box.warn{
+  background:transparent;
+  border-color:rgba(255,180,175,.75);
+}
+
+.zoom-ctl{
+  display:flex;align-items:center;gap:5px;flex-shrink:0;
+  min-height:34px;padding:4px 7px;
+  border:1px solid rgba(245,240,235,.52);
+  border-radius:9px;
+  background:transparent;
+}
+.zoom-btn{
+  display:flex;align-items:center;justify-content:center;
+  width:26px;height:26px;flex-shrink:0;padding:0;
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:7px;
+  background:transparent;
+  color:#fff;font-size:14px;font-weight:400;line-height:1;cursor:pointer;font-family:inherit;
+}
+.zoom-btn:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.42)}
+.zoom-btn:active{transform:scale(.96)}
+.zoom-pct{
+  font-size:11px;font-weight:400;min-width:37px;text-align:center;
+  color:#fff;padding:0 3px;letter-spacing:.02em;
+}
+
+.ptab-bar{background:#fff;border-bottom:1px solid #E4E4E7;display:flex;flex-shrink:0;width:100%}
+.ptab{flex:1;min-width:0;text-align:center;padding:10px 8px;font-size:13px;font-weight:600;color:#888;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s}
+.ptab:hover{color:#000001;background:#f5f5f7}
+.ptab.active{color:#000001;border-bottom-color:#000001}
+
+#prog-wrap{height:4px;background:#d0c6e2;flex-shrink:0}
+#prog-bar{height:4px;background:var(--exam-chrome-text);width:0%;transition:width .3s}
+#track-wrap{background:transparent;padding:0;flex:1;min-width:0}
+.track-groups{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:flex-start}
+.track-grp{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+.track-label{font-size:10px;font-weight:800;color:var(--exam-chrome-text);text-transform:uppercase;letter-spacing:.04em;flex-shrink:0}
+.track-grid{display:flex;flex-wrap:wrap;gap:3px}
+.qt{min-width:22px;height:22px;padding:0;border:1.5px solid var(--exam-chrome-border);border-radius:4px;background:#fff;color:var(--exam-chrome-muted);font-weight:700;font-size:10px;cursor:pointer;font-family:inherit;line-height:1;transition:background .15s,border-color .15s,color .15s}
+.qt:hover{border-color:var(--exam-chrome-text);color:var(--exam-chrome-text);background:var(--exam-chrome-surface)}
+.qt.qt-done{background:#e6f4ea;border-color:#34a853;color:#1a7a30}
+.track-hint{margin:5px 0 0;font-size:10px;color:#8860a8;text-align:left;line-height:1.35}
+
+#main{display:flex;flex:1;flex-direction:column;overflow:hidden;min-height:0;zoom:var(--exam-zoom);position:relative}
+
+/* Hidden player: audio runs in background only (no controls, no focus, no layout space) */
+.audio-sr-only{
+  position:absolute;
+  width:0;
+  height:0;
+  overflow:hidden;
+  clip:rect(0 0 0 0);
+  clip-path:inset(50%);
+  white-space:nowrap;
+  border:0;
+  padding:0;
+  margin:0;
+  pointer-events:none;
+}
+.audio-sr-only audio{display:block;width:0;height:0;opacity:0}
+.audio-done{margin-top:0;padding:8px 20px;font-size:12px;color:var(--exam-chrome-muted);font-weight:600;background:var(--exam-chrome-surface);border-bottom:1px solid #e0d8ec;display:none}
+
+.passage-content{display:none;padding:26px 30px 40px}
+.passage-content.active{display:block}
+.p-badge{font-size:11px;font-weight:700;color:var(--exam-chrome-text);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.p-instr{font-size:13px;color:var(--exam-chrome-muted);font-style:italic;padding:8px 12px;background:var(--exam-chrome-surface);border-left:3px solid var(--exam-chrome-text);border-radius:0 5px 5px 0;margin-bottom:14px;line-height:1.6}
+.p-title{font-size:19px;font-weight:800;color:var(--exam-chrome-text);margin-bottom:4px}
+.p-sub{font-size:13px;color:var(--exam-chrome-muted);font-style:italic;margin-bottom:18px}
+.p-body{font-size:13.5px;line-height:1.85;color:var(--exam-chrome-text)}
+.p-body p{margin-bottom:13px}
+.pid{font-weight:800;font-style:italic;margin-right:2px}
+mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
+.hl-popover{position:fixed;z-index:1000;display:none;flex-direction:row;align-items:center;gap:2px;padding:3px 4px;background:#fff;border-radius:8px;box-shadow:0 4px 18px rgba(28,27,28,.12),0 0 0 1px rgba(228,228,231,.9);font-family:inherit}
+.hl-popover[aria-hidden="true"]{pointer-events:none}
+.hl-btn{font-size:11px;font-weight:700;padding:5px 10px;border-radius:5px;border:none;background:transparent;cursor:pointer;color:#333;font-family:inherit;white-space:nowrap}
+.hl-btn:hover{background:var(--exam-chrome-surface);color:var(--exam-chrome-text)}
+.hl-btn:active{transform:scale(.97)}
+.hl-btn.hl-btn-primary{background:var(--exam-chrome-text);color:#fff}
+.hl-btn.hl-btn-primary:hover{background:var(--exam-chrome-text);color:#fff}
+.hl-btn.hl-remove-btn{color:#b71c1c}
+.hl-btn.hl-remove-btn:hover{background:#ffebee;color:#c62828}
+
+/* ===== QUESTIONS PANEL ===== */
+#questions-panel{width:100%;flex:1;overflow-y:auto;min-height:0;background:var(--exam-chrome-bg)}
+.qsection{display:none;padding:26px 28px 40px}
+.qsection.active{display:block}
+#q2-section.qsection-narrow,#q3-section.qsection-narrow{max-width:66.67%;box-sizing:border-box}
+
+.sec-hdr{margin-bottom:18px;padding-bottom:12px;border-bottom:2px solid #E4E4E7}
+.sec-topic{font-size:16px;font-weight:700;color:var(--exam-chrome-text);margin-bottom:10px;line-height:1.35;font-family:'Garet',system-ui,sans-serif}
+.sec-range{font-size:13px;font-weight:800;color:var(--exam-chrome-text);text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px}
+.sec-instr{font-size:13px;color:#333;line-height:1.65}
+.sec-instr b{font-weight:700}
+
+/* Note completion table */
+.ntable{width:100%;border-collapse:collapse;font-size:13px;margin-bottom:6px}
+.ntable th{background:var(--exam-chrome-surface);padding:8px 12px;font-weight:700;border:1px solid var(--exam-chrome-border);text-align:left}
+.ntable td{padding:9px 12px;border:1px solid var(--exam-chrome-border);vertical-align:middle;line-height:1.75}
+.ntable td:first-child{font-weight:700;width:88px;white-space:nowrap;background:var(--exam-chrome-surface);text-align:center}
+.ntable tr > td:only-of-type{font-weight:400;background:transparent;text-align:left}
+
+/* Inline fill blank */
+.fi-stack{display:inline-flex;flex-direction:row;align-items:baseline;gap:3px;vertical-align:baseline;margin:0 2px;}
+.fi-stack .fi-num{font-size:13px;font-weight:700;color:var(--exam-chrome-text);white-space:nowrap;}
+.fi-stack .fi{width:118px;min-width:72px;}
+.fi{border:none;border-bottom:1px solid var(--exam-chrome-border);background:transparent;outline:none;font-size:13px;padding:1px 4px;font-family:'Segoe UI',Arial,sans-serif;color:var(--exam-chrome-text);font-weight:500}
+.fi:focus{border-bottom-color:var(--exam-chrome-text)}
+.fi.done{border-bottom-color:#5cb572;border-bottom-width:1px}
+.si-wrap{display:inline-flex;flex-direction:row;align-items:baseline;gap:3px;vertical-align:baseline;}
+.si-wrap .si-num{font-weight:700;color:var(--exam-chrome-text);font-size:13px;white-space:nowrap}
+
+/* Q block */
+.qb{margin-bottom:20px}
+.qnum{font-size:14px;font-weight:700;color:var(--exam-chrome-text);margin-bottom:5px}
+.qtext{font-size:13px;line-height:1.6;margin-bottom:10px;color:var(--exam-chrome-text)}
+
+/* T/F/NG — select beside question */
+.qb-tfng{display:grid;grid-template-columns:1fr auto;column-gap:12px;row-gap:4px;align-items:start}
+.qb-tfng .qnum{grid-column:1/-1;grid-row:1;margin-bottom:0}
+.qb-tfng .qtext{grid-column:1;grid-row:2;margin-bottom:0;min-width:0}
+.qb-tfng .tfng{grid-column:2;grid-row:2;margin:0;align-self:start}
+.tfngsel{width:auto;min-width:108px;max-width:132px;border:1.5px solid var(--exam-chrome-border);border-radius:6px;padding:4px 6px;font-size:12px;outline:none;background:#fff;color:var(--exam-chrome-text);cursor:pointer;font-family:'Segoe UI',Arial,sans-serif}
+.tfngsel:focus{border-color:var(--exam-chrome-text)}
+.tfngsel.done{border-color:#34a853;background:#f4fbf5}
+@media (max-width:540px){
+  .qb-tfng{grid-template-columns:1fr}
+  .qb-tfng .qnum{grid-row:1}
+  .qb-tfng .qtext{grid-column:1;grid-row:2}
+  .qb-tfng .tfng{grid-column:1;grid-row:3;justify-self:start}
+}
+
+/* MCQ */
+.opts{display:flex;flex-direction:column;gap:7px}
+.opt{display:flex;align-items:flex-start;gap:10px;cursor:pointer;padding:8px 12px;border-radius:7px;border:1.5px solid var(--exam-chrome-border);background:#fff;font-size:13px;line-height:1.55;transition:all .15s}
+.opt:hover{border-color:var(--exam-chrome-text);background:var(--exam-chrome-surface)}
+.opt input{margin-top:2px;flex-shrink:0;accent-color:var(--exam-chrome-text);width:14px;height:14px}
+.opt.sel{border-color:var(--exam-chrome-text);background:var(--exam-chrome-surface);font-weight:500}
+
+/* Matching selects */
+.mrow{margin-bottom:14px}
+.mrow-top{display:flex;align-items:flex-start;gap:10px}
+.mqnum{background:var(--exam-chrome-text);color:#fff;border-radius:5px;padding:3px 9px;font-size:12px;font-weight:700;flex-shrink:0;margin-top:2px}
+.mtext{font-size:13px;line-height:1.6;color:var(--exam-chrome-text)}
+.msel{width:100%;border:1.5px solid var(--exam-chrome-border);border-radius:7px;padding:7px 10px;font-size:13px;outline:none;background:#fff;color:var(--exam-chrome-text);margin-top:7px;cursor:pointer;font-family:'Segoe UI',Arial,sans-serif}
+.msel:focus{border-color:var(--exam-chrome-text)}
+.msel.done{border-color:#34a853;background:#f4fbf5}
+#q2-section .mrow{display:flex;flex-direction:row;flex-wrap:wrap;align-items:flex-start;gap:8px 12px;margin-bottom:14px}
+#q2-section .mrow .mrow-top{flex:1 1 0;min-width:0}
+#q2-section .mrow .msel{width:auto;min-width:88px;max-width:138px;padding:4px 6px;font-size:12px;border-radius:6px;margin-top:0;align-self:flex-start}
+#q2-section .mrow-inline .mrow-top{display:flex;flex-direction:row;align-items:center;flex-wrap:wrap;gap:8px 12px;width:100%}
+#q2-section .mrow-inline .mrow-top .mtext{flex:1 1 140px;min-width:0}
+#q2-section .mrow-inline .mrow-top .msel{margin-top:0;width:auto;min-width:100px;max-width:160px;flex-shrink:0}
+@media (max-width:480px){
+  #q2-section .mrow{flex-direction:column}
+  #q2-section .mrow .msel{max-width:100%;align-self:stretch}
+  #q2-section .mrow-inline .mrow-top .msel{max-width:100%}
+}
+
+/* Drag-and-drop matching (two columns); .dnd-zoom-fix counters #main zoom so drag/drop hit-testing works */
+.dnd-zoom-fix{position:relative;z-index:1}
+.dnd-careers-wrap{margin-bottom:8px}
+.dnd-hint{font-size:12px;color:var(--exam-chrome-muted);margin-bottom:14px;line-height:1.55}
+.dnd-match-layout{display:flex;flex-wrap:wrap;gap:22px 32px;align-items:flex-start;justify-content:space-between}
+.dnd-col{min-width:0}
+.dnd-col-left{flex:1 1 300px}
+.dnd-col-right{flex:1 1 280px}
+.dnd-col-title{font-size:14px;font-weight:800;color:var(--exam-chrome-text);margin-bottom:12px;font-family:'Garet',system-ui,sans-serif}
+.dnd-rows{display:flex;flex-direction:column;gap:14px}
+.dnd-row{display:flex;flex-wrap:wrap;align-items:stretch;gap:12px 16px;justify-content:space-between}
+.dnd-label{font-size:13px;color:var(--exam-chrome-text);align-self:center;flex:0 1 140px;line-height:1.4}
+.dnd-slot{
+  flex:1 1 200px;min-width:180px;max-width:100%;min-height:48px;border:1px dashed #1a1a1a;border-radius:8px;background:#fff;
+  display:flex;align-items:center;justify-content:center;padding:8px 10px;transition:background .15s,border-color .15s;box-sizing:border-box
+}
+/* Q27–30: compact drop targets */
+.dnd-slot.dnd-slot-sm{
+  flex:0 1 120px;min-width:88px;max-width:140px;min-height:32px;max-height:120px;padding:4px 6px;overflow:auto;
+  align-items:center;justify-content:center
+}
+.dnd-slot.dnd-slot-sm[data-qnum]:empty::before{font-size:13px}
+.dnd-slot.dnd-slot-sm .dnd-pill-row{max-height:100px;overflow:auto;align-items:flex-start}
+.dnd-slot.dnd-slot-sm .dnd-pill-text{max-height:88px;overflow:auto}
+.dnd-slot[data-qnum]:empty::before{content:attr(data-qnum);color:#333;font-weight:700;font-size:15px;font-variant-numeric:tabular-nums}
+.dnd-slot:not(:empty){justify-content:stretch}
+.dnd-slot.dnd-drag-over{background:var(--exam-chrome-surface);border-color:var(--exam-chrome-text);border-style:solid}
+.dnd-slot.done{border:1px solid #5bc0de;background:#f7fcff}
+.dnd-bank{
+  display:flex;flex-direction:column;gap:10px;padding:14px;background:#fafafa;border:1px solid #ddd;border-radius:10px;min-height:120px
+}
+/* Row = selectable text + drag handle only (avoids native DnD vs zoom bugs; allows text highlight) */
+.dnd-pill-row{
+  display:flex;align-items:stretch;gap:0;width:100%;border:1px solid #ccc;border-radius:8px;background:#fff;box-sizing:border-box;overflow:hidden
+}
+.dnd-pill-text{
+  flex:1;min-width:0;padding:10px 12px;font-size:12.5px;line-height:1.45;color:var(--exam-chrome-text);cursor:text;user-select:text;-webkit-user-select:text
+}
+.dnd-handle{
+  flex-shrink:0;width:34px;min-height:100%;padding:0;border:none;border-left:1px solid #ddd;background:var(--exam-chrome-surface);color:var(--exam-chrome-text);font-size:14px;line-height:1;cursor:grab;user-select:none;-webkit-user-select:none
+}
+.dnd-handle:hover{background:#ddd}
+.dnd-handle:active{cursor:grabbing}
+.dnd-bank .dnd-pill-row.dnd-pill-hidden{display:none}
+.dnd-slot .dnd-pill-row{margin:0;width:100%}
+.dnd-slot-sm .dnd-pill-text{font-size:11px;padding:5px 7px;line-height:1.35}
+.dnd-slot-sm .dnd-handle{width:28px;font-size:12px}
+body.dnd-dragging .dnd-handle{cursor:grabbing}
+.dnd-pill-row.dnd-drag-source{opacity:.42;transition:opacity .12s ease}
+.dnd-drag-ghost{
+  position:fixed;left:0;top:0;z-index:10050;margin:0;padding:0;
+  pointer-events:none;box-sizing:border-box;
+  box-shadow:0 10px 28px rgba(26,26,46,.22),0 2px 8px rgba(0,0,0,.08);
+  border-radius:8px;overflow:hidden;
+  opacity:.96;transform:rotate(-1deg);
+  max-width:min(92vw,440px)
+}
+.dnd-drag-ghost .dnd-pill-row{width:100%;margin:0;background:#fff}
+
+/* Audio intro (before listening starts) */
+#audio-intro-overlay{
+  display:none;position:fixed;inset:0;z-index:200;align-items:center;justify-content:center;flex-direction:column;
+  padding:28px;background:rgba(38,38,38,.88);overflow-x:auto;-webkit-overflow-scrolling:touch;box-sizing:border-box
+}
+#audio-intro-overlay.is-open{display:flex}
+.audio-intro-inner{
+  align-self:center;flex-shrink:0;width:max-content;max-width:min(98vw,1180px);min-width:min-content;
+  margin-left:auto;margin-right:auto;text-align:center;color:#fff;box-sizing:border-box;
+  overflow-x:auto;-webkit-overflow-scrolling:touch
+}
+#audio-intro-heading{display:block;width:max-content;max-width:min(98vw,1180px);margin-left:auto;margin-right:auto}
+.audio-intro-icon{font-size:56px;line-height:1;margin-bottom:20px;opacity:.95}
+#audio-intro-overlay p.audio-intro-main{
+  font-size:16px;line-height:1.55;margin-bottom:14px;font-weight:500;
+  white-space:nowrap;word-break:normal;overflow-wrap:normal;max-width:none
+}
+.audio-intro-sub{font-size:14px;opacity:.88;margin-bottom:22px}
+.audio-play-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#111;color:#fff;border:none;border-radius:10px;padding:14px 32px;font-size:16px;font-weight:700;cursor:pointer;font-family:inherit;
+  transition:background .15s,transform .1s
+}
+.audio-play-btn:hover{background:#000}
+.audio-play-btn:active{transform:scale(.98)}
+.audio-play-btn .audio-play-glyph{font-size:20px;line-height:1}
+
+/* Word bank */
+.wbank{background:#fff;border:1.5px solid var(--exam-chrome-border);border-radius:9px;padding:12px 16px;margin-bottom:18px}
+.wbank-title{font-size:11px;font-weight:800;color:var(--exam-chrome-muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:9px}
+.wbank-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.wbitem{background:var(--exam-chrome-surface);border:1px solid var(--exam-chrome-border);border-radius:5px;padding:5px 7px;font-size:12px;text-align:center;color:#333}
+.wbitem b{color:var(--exam-chrome-text)}
+
+/* Summary fill */
+.sumbox{background:#fff;border:1.5px solid var(--exam-chrome-border);border-radius:9px;padding:18px 22px;margin-bottom:8px}
+.sumtitle{font-weight:800;text-align:center;margin-bottom:12px;font-size:14px}
+.sumtext{font-size:13.5px;line-height:2.2;color:var(--exam-chrome-text)}
+.si{border:none;border-bottom:1px solid var(--exam-chrome-border);background:transparent;outline:none;font-size:13px;padding:1px 4px;font-family:'Segoe UI',Arial,sans-serif;color:var(--exam-chrome-text);font-weight:500}
+.si:focus{border-bottom-color:var(--exam-chrome-text)}
+.si.done{border-bottom-color:#5cb572;border-bottom-width:1px}
+
+/* Word bank summary select */
+.wbsel{border:none;border-bottom:1px solid var(--exam-chrome-border);background:transparent;outline:none;font-size:13px;padding:1px 4px;font-family:'Segoe UI',Arial,sans-serif;color:var(--exam-chrome-text);font-weight:500;cursor:pointer;min-width:80px}
+.wbsel.done{border-bottom-color:#5cb572;border-bottom-width:1px;color:#1a7a30}
+
+/* Bottom bar (tracker + submit, same row) */
+#bot-bar{background:#fff;border-top:2px solid var(--exam-chrome-border);padding:10px 16px 12px;display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 16px;flex-shrink:0}
+#sub-btn{flex-shrink:0;background:var(--exam-chrome-text);color:#fff;border:none;border-radius:8px;padding:10px 22px;font-size:14px;font-weight:700;cursor:pointer;transition:background .15s}
+#sub-btn:hover{background:var(--exam-chrome-text)}
+
+/* Success overlay */
+#success-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,1,.92);align-items:center;justify-content:center;z-index:100}
+.scard{background:#fff;border-radius:16px;padding:50px 52px;text-align:center;max-width:520px;width:92%}
+.scheck{width:64px;height:64px;border-radius:50%;background:#e6f4ea;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:32px;color:#1e8f3c}
+.stitle{font-size:24px;font-weight:800;color:#1a7a30;margin-bottom:8px}
+.ssub{font-size:14px;color:var(--exam-chrome-muted);margin-bottom:24px;line-height:1.6}
+.sdetail{background:var(--exam-chrome-surface);border-radius:9px;padding:16px 22px;text-align:left;font-size:14px;line-height:2.1;color:#333}
+.sdetail b{color:var(--exam-chrome-text)}
+.pdf-dl-btn{margin-top:18px;width:100%;padding:12px 16px;font-size:15px;font-weight:700;background:var(--exam-chrome-text);color:#fff;border:none;border-radius:10px;cursor:pointer;font-family:inherit;transition:background .15s}
+.pdf-dl-btn:hover{background:var(--exam-chrome-text)}
+.pdf-dl-hint{font-size:12px;color:var(--exam-chrome-muted);margin-top:10px;line-height:1.45;text-align:center}
+
+/* Cambridge shell overrides */
+
+#exam-screen{background:var(--exam-chrome-surface)}
+#topbar{background:var(--exam-header-bg);color:var(--exam-header-text);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;gap:12px;border-bottom:1px solid var(--exam-header-border);box-shadow:0 1px 0 rgb(0 0 0 / 0.12)}
+.tb-left{display:flex;align-items:center;gap:14px;min-width:0}
+.tb-back{color:var(--exam-header-text);text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap;flex-shrink:0}
+.tb-back:hover{color:var(--exam-header-muted)}
+.tb-title{font-size:13px;color:var(--exam-header-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#timer-box{min-width:78px;min-height:34px;padding:7px 14px;font-size:15px;font-weight:500;letter-spacing:2.5px;border:1px solid var(--exam-header-border);border-radius:9px;font-variant-numeric:tabular-nums;color:var(--exam-header-text);background:var(--exam-header-surface);display:flex;align-items:center;justify-content:center;line-height:1;text-align:center}
+#timer-box.warn{background:rgba(255,235,238,.95);border-color:#e57373;color:#b71c1c}
+.zoom-ctl{display:flex;align-items:center;gap:5px;border:1px solid var(--exam-header-border);border-radius:9px;padding:4px 7px;background:var(--exam-header-surface);min-height:34px}
+.zoom-btn{display:flex;align-items:center;justify-content:center;width:26px;height:26px;border:1px solid var(--exam-header-border);border-radius:7px;background:rgba(250,250,250,.06);color:var(--exam-header-text);font-size:14px;cursor:pointer;font-family:inherit}
+.zoom-btn:hover{background:rgba(250,250,250,.14)}
+.zoom-pct{font-size:11px;min-width:37px;text-align:center;color:var(--exam-header-muted)}
+#prog-bar{height:4px;background:var(--exam-header-bg)}
+#passage-panel{border-right:1px solid var(--exam-chrome-border);background:var(--exam-passage-bg)}
+#questions-panel{background:var(--exam-questions-bg);border-left:1px solid var(--exam-chrome-border)}
+#bot-bar{background:var(--exam-chrome-bg);border-top:1px solid var(--exam-chrome-border);padding:10px 16px 12px;display:flex;flex-direction:row;flex-wrap:nowrap;align-items:flex-start;justify-content:space-between;gap:12px 16px;flex-shrink:0;box-shadow:0 -1px 0 rgb(0 0 0 / 0.04)}
+#sub-btn{flex-shrink:0;align-self:flex-start;background:var(--exam-submit-bg);color:var(--exam-submit-text);border:none;border-radius:8px;padding:10px 22px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;transition:opacity .15s}
+#sub-btn:hover{opacity:.92}
+#success-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,1,.92);align-items:center;justify-content:center;z-index:100}
+.sdetail{background:var(--exam-chrome-surface);border:1px solid var(--exam-chrome-border)}
+#audio-intro-overlay{background:rgba(0,0,1,.72)}
+.audio-play-btn{background:var(--exam-submit-bg);color:var(--exam-submit-text)}
+.audio-done{color:var(--exam-chrome-muted);background:var(--exam-chrome-bg);border-bottom:1px solid var(--exam-chrome-border)}
+.qt{border-color:var(--exam-chrome-border);background:var(--exam-chrome-bg);color:var(--exam-chrome-muted)}
+.qt.qt-done{background:#E4E4E7;border-color:var(--exam-chrome-text);color:var(--exam-chrome-text)}
+.sec-range{color:var(--exam-chrome-text)}
+.p-badge{color:var(--exam-chrome-muted)}
+.fi,.si,.wbsel{border-bottom-color:var(--exam-chrome-border);color:var(--exam-question-ink)}
+.fi:focus,.si:focus,.wbsel:focus{border-bottom-color:var(--exam-chrome-text)}
+.opt{border-color:var(--exam-chrome-border);background:var(--exam-chrome-bg)}
+.opt:hover{border-color:var(--exam-chrome-text);background:var(--exam-chrome-surface)}
+.opt.sel{border-color:var(--exam-chrome-text);background:var(--exam-chrome-surface);font-weight:500}
+.ntable th,.ntable td:first-child{background:var(--exam-chrome-surface);color:var(--exam-chrome-text)}
+
+
+/* Mid-term listening review (Cambridge shell) */
+
+#exam-body{display:flex;flex:1;flex-direction:column;min-height:0;overflow:hidden}
+#left-review-column{display:none;flex-direction:column;width:50%;min-width:0;border-right:1px solid var(--exam-chrome-border);background:var(--exam-chrome-bg)}
+#transcript-panel{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
+.transcript-scroll{flex:1;overflow-y:auto;min-height:0;padding:18px 22px 16px}
+.transcript-body{font-size:13.5px;line-height:1.75;color:var(--exam-chrome-text);user-select:text;-webkit-user-select:text}
+.transcript-empty{font-size:13px;color:var(--exam-chrome-muted);line-height:1.6}
+#review-audio-bar{display:none;flex-shrink:0;padding:6px 10px 8px;background:#fff;border-top:1px solid var(--exam-chrome-border)}
+#exam-screen.exam-review-mode #exam-body{flex-direction:row}
+#exam-screen.exam-review-mode #left-review-column{display:flex}
+#exam-screen.exam-review-mode #questions-panel{width:50%;flex:1;border-left:none}
+#exam-screen.exam-review-mode.no-transcript #transcript-panel{display:none}
+#exam-screen.exam-review-mode.no-transcript #left-review-column{width:100%;border-right:none;border-bottom:1px solid var(--exam-chrome-border)}
+#exam-screen.exam-review-mode.no-transcript #questions-panel{width:100%;flex:1}
+#exam-screen.exam-review-mode #review-audio-bar{display:block}
+#exam-screen.exam-review-mode #prog-wrap{display:none}
+#exam-screen.exam-review-mode #timer-box{display:none}
+#exam-screen.exam-review-mode #audio-finished-msg{display:none!important}
+#exam-screen.exam-review-mode #transcript-scroll mark.user-hl{background:#fff59d}
+.transcript-audio-dock .review-audio-card{border:none;box-shadow:none;padding:0;max-width:none;margin:0;display:flex;flex-direction:column;gap:0}
+.review-audio-seek{cursor:pointer}
+.review-audio-seek-track{height:5px;border-radius:999px;background:#E4E4E7;overflow:hidden}
+.review-audio-seek-fill{height:100%;width:0%;border-radius:999px;background:#000001;transition:width .1s linear}
+.review-audio-times{display:flex;justify-content:space-between;margin-top:4px;font-size:11px;line-height:1;color:#47464b;font-variant-numeric:tabular-nums}
+.review-audio-controls{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:2px}
+.review-audio-side{display:flex;align-items:center;gap:6px;min-width:60px}
+.review-audio-side-spacer{width:3.5rem;min-width:3.5rem;flex-shrink:0}
+.review-audio-speed{display:inline-flex;align-items:center;gap:4px;border:none;background:transparent;color:#47464b;font-size:12px;font-weight:600;cursor:pointer;padding:0;font-family:inherit}
+.review-audio-mute{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border:none;border-radius:999px;background:transparent;color:#47464b;cursor:pointer;padding:0}
+.review-audio-center{display:flex;align-items:center;justify-content:center;gap:6px}
+.review-audio-skip{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:none;border-radius:999px;background:transparent;color:#47464b;cursor:pointer;padding:0}
+.review-audio-skip-wrap{position:relative;display:flex;width:20px;height:20px;align-items:center;justify-content:center}
+.review-audio-skip-num{position:absolute;font-size:7px;font-weight:700;line-height:1}
+.review-audio-play{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:none;border-radius:999px;background:#000001;color:#fff;cursor:pointer;padding:0;box-shadow:0 2px 4px rgba(0,0,1,.12)}
+.ra-icon{display:block;flex-shrink:0}
+.ra-icon-gauge{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ra-icon-vol{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ra-icon-rotate{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.ra-icon-play{width:16px;height:16px;fill:currentColor;stroke:none}
+.ra-icon-pause{width:16px;height:16px;fill:currentColor;stroke:none}
+#review-audio{display:none}
+#exam-screen.exam-review-mode .fi.review-user,
+#exam-screen.exam-review-mode .si.review-user{border-bottom-color:var(--exam-purple)}
+#exam-screen.exam-review-mode .fi.review-correct,
+#exam-screen.exam-review-mode .si.review-correct{border-bottom-color:#34a853}
+#exam-screen.exam-review-mode .fi.review-user.review-wrong,
+#exam-screen.exam-review-mode .si.review-user.review-wrong{border-bottom-color:#e57373}
+#exam-screen.exam-review-mode .opt.review-user{border-color:var(--exam-purple);background:var(--exam-purple-soft);font-weight:500}
+#exam-screen.exam-review-mode .opt.review-correct{border-color:#34a853;background:#f4fbf5;font-weight:500}
+#exam-screen.exam-review-mode .opt.review-user.review-correct{border-color:#34a853;background:#e8f5e9;box-shadow:inset 0 0 0 2px var(--exam-purple)}
+.ans-review-line{margin:4px 0 8px;padding:0;font-size:11px;line-height:1.45;display:flex;flex-wrap:wrap;gap:6px 14px}
+.ans-review-line .ans-your{color:#555}
+.ans-review-line .ans-correct{color:#1a7a30;font-weight:700}
+.ans-review-line.is-correct .ans-your{color:#1a7a30}
+.ans-review-line.is-wrong .ans-your{color:#b71c1c}
+.fill-review,.dnd-review{margin-top:6px;font-size:11px;line-height:1.45;width:100%}
+.dnd-row .dnd-review{grid-column:1/-1}
+.ntable .fill-review{display:block;margin-top:4px;max-width:220px}
+.ntable td{vertical-align:top}
+.transcript-cue{display:flex;width:100%;gap:10px;align-items:flex-start;border:none;background:transparent;padding:8px 10px;margin:0 0 4px;border-radius:8px;text-align:left;cursor:pointer;font:inherit;color:inherit}
+.transcript-cue-time{width:42px;flex-shrink:0;font-size:12px;font-weight:600;color:rgba(75,40,118,.55);font-variant-numeric:tabular-nums;padding-top:2px}
+.transcript-cue-speaker{font-weight:600;color:#4b2876}
+.transcript-q-marker{font-weight:700;color:#4b2876}
+.transcript-cue.is-active{background:rgba(75,40,118,.07)}
+.transcript-cue.is-active .transcript-cue-time{color:#4b2876;font-weight:700}
+.transcript-cue.is-active .transcript-cue-text{font-weight:600;color:#000001}
+#success-overlay{display:none!important}
+#sub-btn .review-score-band{font-weight:600;color:rgba(250,250,250,.82)}
+#exam-screen.exam-review-mode #bot-bar{align-items:center;flex-wrap:nowrap}
+#exam-screen.exam-review-mode #sub-btn{cursor:default;pointer-events:none;flex-shrink:0;font-size:13px;padding:8px 14px;white-space:nowrap}
+#exam-screen.exam-review-mode #sub-btn:hover{opacity:1}
+#exam-screen.exam-review-mode .track-hint{display:none}
+#exam-screen.exam-review-mode .track-groups{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+#exam-screen.exam-review-mode .track-grp{flex-wrap:nowrap;flex-shrink:0}
+#exam-screen.exam-review-mode .track-grid{flex-wrap:nowrap}
+
+</style>
+</head>
+<body>
+
+<!-- ==================== LOGIN ==================== -->
+<div id="login-screen">
+  <div class="login-card">
+    <div class="login-logo">
+      <div class="org-name">ANTHICHTUHOC</div>
+    </div>
+    <div class="login-title">
+      <h1>Đề thi thật 1</h1>
+      <p>40 minutes &nbsp;·&nbsp; 4 parts &nbsp;·&nbsp; 40 questions</p>
+    </div>
+    <div class="form-group">
+      <label>Full name</label>
+      <input type="text" id="inp-name" placeholder="Enter your full name..." autocomplete="off" onkeydown="if(event.key==='Enter')startExam()">
+    </div>
+    <div class="form-group">
+      <label>Course</label>
+      <input type="text" id="inp-course" placeholder="Enter your course..." autocomplete="off" onkeydown="if(event.key==='Enter')startExam()">
+    </div>
+    <button class="start-btn" onclick="startExam()">Start exam &rarr;</button>
+    <div class="login-note">Next you will see a short listening notice &mdash; click <b>Play</b> to start the audio and the 40-minute timer.<br>Do not close or refresh this tab during the exam.</div>
+  </div>
+</div>
+
+<!-- ==================== EXAM ==================== -->
+<div id="exam-screen">
+
+  <div id="topbar">
+    <div class="tb-left">
+      <a class="tb-back" href="/tu-hoc/luyen-nghe/luyen-de-ielts">← Luyện đề IELTS</a>
+      <div class="tb-title" id="exam-subtitle">IELTS Listening &mdash; Đề thi thật 1 &middot; Questions 1&ndash;40</div>
+    </div>
+    <div class="tb-right">
+      <div class="zoom-ctl" title="Zoom exam content">
+        <button type="button" class="zoom-btn" onclick="examZoomOut()" aria-label="Zoom out">&minus;</button>
+        <span id="zoom-pct" class="zoom-pct">100%</span>
+        <button type="button" class="zoom-btn" onclick="examZoomIn()" aria-label="Zoom in">+</button>
+        <button type="button" class="zoom-btn" onclick="examZoomReset()" aria-label="Reset zoom" title="Reset">&#8635;</button>
+      </div>
+      <div id="student-badge"></div>
+      <div id="timer-box">40:00</div>
+    </div>
+  </div>
+
+  <div class="ptab-bar">
+    <div class="ptab active" onclick="switchPassage(1)">Part 1 &nbsp;<small style="font-weight:400;opacity:.7">Q1–10</small></div>
+    <div class="ptab" onclick="switchPassage(2)">Part 2 &nbsp;<small style="font-weight:400;opacity:.7">Q11–20</small></div>
+    <div class="ptab" onclick="switchPassage(3)">Part 3 &nbsp;<small style="font-weight:400;opacity:.7">Q21–30</small></div>
+    <div class="ptab" onclick="switchPassage(4)">Part 4 &nbsp;<small style="font-weight:400;opacity:.7">Q31–40</small></div>
+  </div>
+
+  <div id="prog-wrap"><div id="prog-bar"></div></div>
+
+  <div id="main">
+    <div class="audio-sr-only" aria-hidden="true">
+      <audio id="exam-audio" preload="auto" playsinline src="/midterm-assets/midterm-listening-full.mp3">Your browser does not support audio.</audio>
+    </div>
+    <p id="audio-finished-msg" class="audio-done" role="status">Audio has finished. You cannot replay the recording.</p>
+
+    
+    <div id="exam-body">
+      <div id="left-review-column" class="left-review-column">
+        <aside id="transcript-panel" class="transcript-panel" aria-label="Transcript">
+          <div class="transcript-scroll" id="transcript-scroll">
+            <div class="transcript-body" id="transcript-body"><p class="transcript-empty">Transcript sẽ hiện sau khi nộp bài.</p></div>
+          </div>
+        </aside>
+        <div id="review-audio-bar" class="transcript-audio-dock" aria-label="Nghe lại recording">
+          <div class="review-audio-card">
+            <div class="review-audio-seek" id="review-audio-seek" role="slider" aria-label="Tiến độ audio" tabindex="0">
+              <div class="review-audio-seek-track"><div class="review-audio-seek-fill" id="review-audio-seek-fill"></div></div>
+              <div class="review-audio-times">
+                <span id="review-audio-current">0:00</span>
+                <span id="review-audio-duration">—:—</span>
+              </div>
+            </div>
+            <div class="review-audio-controls">
+              <div class="review-audio-side">
+                <button type="button" class="review-audio-speed" id="review-audio-speed" title="Tốc độ nghe">
+                  <svg class="ra-icon ra-icon-gauge" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+                  <span id="review-audio-speed-label">1x</span>
+                </button>
+                <button type="button" class="review-audio-mute" id="review-audio-mute" aria-label="Tắt âm thanh" title="Tắt âm thanh">
+                  <svg class="ra-icon ra-icon-vol" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+                </button>
+              </div>
+              <div class="review-audio-center">
+                <button type="button" class="review-audio-skip" id="review-audio-back" aria-label="Lùi 10 giây">
+                  <span class="review-audio-skip-wrap">
+                    <svg class="ra-icon ra-icon-rotate" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                    <span class="review-audio-skip-num">10</span>
+                  </span>
+                </button>
+                <button type="button" class="review-audio-play" id="review-audio-play" aria-label="Phát">
+                  <svg class="ra-icon ra-icon-play" viewBox="0 0 24 24" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+                </button>
+                <button type="button" class="review-audio-skip" id="review-audio-fwd" aria-label="Tới 30 giây">
+                  <span class="review-audio-skip-wrap">
+                    <svg class="ra-icon ra-icon-rotate" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a9 9 0 1 1-9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+                    <span class="review-audio-skip-num">30</span>
+                  </span>
+                </button>
+              </div>
+              <div class="review-audio-side-spacer" aria-hidden="true"></div>
+            </div>
+            <audio id="review-audio" preload="metadata" playsinline src=""></audio>
+          </div>
+        </div>
+      </div>
+      <div id="questions-panel">
+
+      <!-- ===== PART 1: Q1–10 ===== -->
+      <div class="qsection active" id="q1-section">
+
+        <div class="sec-hdr">
+          <div class="sec-range">Part 1 &mdash; Questions 1&ndash;10</div>
+          <div class="sec-instr">Complete the form below. Write <b>NO MORE THAN TWO WORDS AND/OR A NUMBER</b> for each answer.</div>
+        </div>
+
+        <p class="qtext" style="margin-bottom:14px;font-weight:700">Fearnley Sports Center &mdash; Lifeguard Application Form</p>
+
+        <table class="ntable">
+          <tr><th colspan="2">Personal details</th></tr>
+          <tr>
+            <td>Name</td>
+            <td>Peter Smith</td>
+          </tr>
+          <tr>
+            <td>Home address</td>
+            <td>130 South Main Street, Lake <span class="fi-stack"><span class="fi-num">(1)</span><input class="fi" id="q1" autocomplete="off" oninput="markFill('q1',this.value)"></span></td>
+          </tr>
+          <tr>
+            <td>Contact number</td>
+            <td><span class="fi-stack"><span class="fi-num">(2)</span><input class="fi" id="q2" autocomplete="off" oninput="markFill('q2',this.value)"></span> (cell phone)</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Present occupation</td>
+            <td>&bull; has temporary job as a part-time <span class="fi-stack"><span class="fi-num">(3)</span><input class="fi" id="q3" autocomplete="off" oninput="markFill('q3',this.value)"></span></td>
+          </tr>
+          <tr><td>&bull; is studying PE</td></tr>
+          <tr><td>&bull; wants to be a high school <span class="fi-stack"><span class="fi-num">(4)</span><input class="fi" id="q4" autocomplete="off" oninput="markFill('q4',this.value)"></span> coach</td></tr>
+          <tr><th colspan="2">Qualifications</th></tr>
+          <tr>
+            <td>Already holds</td>
+            <td>water safety certificate</td>
+          </tr>
+          <tr>
+            <td>Certificate expires in</td>
+            <td><span class="fi-stack"><span class="fi-num">(5)</span><input class="fi" id="q5" autocomplete="off" oninput="markFill('q5',this.value)"></span></td>
+          </tr>
+          <tr><th colspan="2">Relevant work experience</th></tr>
+          <tr>
+            <td>Lifeguard at</td>
+            <td>the <span class="fi-stack"><span class="fi-num">(6)</span><input class="fi" id="q6" autocomplete="off" oninput="markFill('q6',this.value)"></span> in Fearnley</td>
+          </tr>
+          <tr>
+            <td>Additional relevant skills</td>
+            <td><span class="fi-stack"><span class="fi-num">(7)</span><input class="fi" id="q7" autocomplete="off" oninput="markFill('q7',this.value)"></span></td>
+          </tr>
+          <tr>
+            <td rowspan="3">Other information</td>
+            <td>is happy to</td>
+          </tr>
+          <tr><td>&bull; work on <span class="fi-stack"><span class="fi-num">(8)</span><input class="fi" id="q8" autocomplete="off" oninput="markFill('q8',this.value)"></span> mornings</td></tr>
+          <tr><td>&bull; start at <span class="fi-stack"><span class="fi-num">(9)</span><input class="fi" id="q9" autocomplete="off" oninput="markFill('q9',this.value)"></span> o&rsquo;clock</td></tr>
+          <tr>
+            <td>How did the applicant find out about this job?</td>
+            <td>on the <span class="fi-stack"><span class="fi-num">(10)</span><input class="fi" id="q10" autocomplete="off" oninput="markFill('q10',this.value)"></span></td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- ===== PART 2: Q11–20 ===== -->
+      <div class="qsection qsection-narrow" id="q2-section">
+
+        <div class="sec-hdr">
+          <div class="sec-topic">Becoming a millionaire</div>
+          <div class="sec-range">Part 2 &mdash; Questions 11&ndash;16</div>
+          <div class="sec-instr">Choose the correct answer.</div>
+        </div>
+
+        <div class="qb">
+          <div class="qnum">Question 11</div>
+          <div class="qtext">Arthur feels that when starting a business, mistakes should be</div>
+          <div class="opts" id="q11-opts">
+            <label class="opt"><input type="radio" name="q11" value="A" onchange="selMCQ('q11',this)"> <span><b>A.</b> seen as an opportunity to learn.</span></label>
+            <label class="opt"><input type="radio" name="q11" value="B" onchange="selMCQ('q11',this)"> <span><b>B.</b> predicted and minimised.</span></label>
+            <label class="opt"><input type="radio" name="q11" value="C" onchange="selMCQ('q11',this)"> <span><b>C.</b> avoided at all costs.</span></label>
+          </div>
+        </div>
+        <div class="qb">
+          <div class="qnum">Question 12</div>
+          <div class="qtext">Recent American studies found that confidence will</div>
+          <div class="opts" id="q12-opts">
+            <label class="opt"><input type="radio" name="q12" value="A" onchange="selMCQ('q12',this)"> <span><b>A.</b> sometimes reduce people&rsquo;s chances of success.</span></label>
+            <label class="opt"><input type="radio" name="q12" value="B" onchange="selMCQ('q12',this)"> <span><b>B.</b> be increased by reading self-help books.</span></label>
+            <label class="opt"><input type="radio" name="q12" value="C" onchange="selMCQ('q12',this)"> <span><b>C.</b> ensure good results on business courses.</span></label>
+          </div>
+        </div>
+        <div class="qb">
+          <div class="qnum">Question 13</div>
+          <div class="qtext">The American studies recommended that new entrepreneurs</div>
+          <div class="opts" id="q13-opts">
+            <label class="opt"><input type="radio" name="q13" value="A" onchange="selMCQ('q13',this)"> <span><b>A.</b> listen to their colleagues&rsquo; advice.</span></label>
+            <label class="opt"><input type="radio" name="q13" value="B" onchange="selMCQ('q13',this)"> <span><b>B.</b> get professional help when things go wrong.</span></label>
+            <label class="opt"><input type="radio" name="q13" value="C" onchange="selMCQ('q13',this)"> <span><b>C.</b> remain concentrated on their aims.</span></label>
+          </div>
+        </div>
+        <div class="qb">
+          <div class="qnum">Question 14</div>
+          <div class="qtext">What does Arthur say about his own experience of marketing?</div>
+          <div class="opts" id="q14-opts">
+            <label class="opt"><input type="radio" name="q14" value="A" onchange="selMCQ('q14',this)"> <span><b>A.</b> He relied on what he already knew.</span></label>
+            <label class="opt"><input type="radio" name="q14" value="B" onchange="selMCQ('q14',this)"> <span><b>B.</b> He hired an expert to take care of it.</span></label>
+            <label class="opt"><input type="radio" name="q14" value="C" onchange="selMCQ('q14',this)"> <span><b>C.</b> He realised its importance too late.</span></label>
+          </div>
+        </div>
+        <div class="qb">
+          <div class="qnum">Question 15</div>
+          <div class="qtext">What does Arthur think is an important quality shared by good leaders?</div>
+          <div class="opts" id="q15-opts">
+            <label class="opt"><input type="radio" name="q15" value="A" onchange="selMCQ('q15',this)"> <span><b>A.</b> They are ambitious for their company.</span></label>
+            <label class="opt"><input type="radio" name="q15" value="B" onchange="selMCQ('q15',this)"> <span><b>B.</b> They can deal with difficult people.</span></label>
+            <label class="opt"><input type="radio" name="q15" value="C" onchange="selMCQ('q15',this)"> <span><b>C.</b> They earn the respect of their workforce.</span></label>
+          </div>
+        </div>
+        <div class="qb">
+          <div class="qnum">Question 16</div>
+          <div class="qtext">What does Arthur say about taking risks?</div>
+          <div class="opts" id="q16-opts">
+            <label class="opt"><input type="radio" name="q16" value="A" onchange="selMCQ('q16',this)"> <span><b>A.</b> He advises being cautious.</span></label>
+            <label class="opt"><input type="radio" name="q16" value="B" onchange="selMCQ('q16',this)"> <span><b>B.</b> He favours a long-term view.</span></label>
+            <label class="opt"><input type="radio" name="q16" value="C" onchange="selMCQ('q16',this)"> <span><b>C.</b> He believes it is financially advantageous.</span></label>
+          </div>
+        </div>
+
+        <div class="sec-hdr" style="margin-top:28px">
+          <div class="sec-range">Questions 17&ndash;18</div>
+          <div class="sec-instr">Choose <b>TWO</b> correct answers. Which TWO things does Arthur say people should focus on when developing their business idea?</div>
+        </div>
+        <div class="dnd-group dnd-zoom-fix">
+          <p class="dnd-hint">Drag an option into each box. Each option can only be used once.</p>
+          <div class="dnd-match-layout">
+            <div class="dnd-col dnd-col-left">
+              <div class="dnd-col-title">Your answers</div>
+              <div class="dnd-rows">
+                <div class="dnd-row" id="anchor-q17">
+                  <span class="dnd-label">First answer</span>
+                  <div class="dnd-slot dnd-slot-sm" data-qid="q17" data-qnum="17" aria-label="Drop zone for question 17"></div>
+                </div>
+                <div class="dnd-row" id="anchor-q18">
+                  <span class="dnd-label">Second answer</span>
+                  <div class="dnd-slot dnd-slot-sm" data-qid="q18" data-qnum="18" aria-label="Drop zone for question 18"></div>
+                </div>
+              </div>
+            </div>
+            <div class="dnd-col dnd-col-right">
+              <div class="dnd-col-title">Options</div>
+              <div class="dnd-bank" id="dnd-bank-q17">
+                <div class="dnd-pill-row" data-letter="A"><span class="dnd-pill-text">making sure the idea is original</span><button type="button" class="dnd-handle" data-letter="A" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="B"><span class="dnd-pill-text">offering a better deal than competitors</span><button type="button" class="dnd-handle" data-letter="B" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="C"><span class="dnd-pill-text">being committed to it</span><button type="button" class="dnd-handle" data-letter="C" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="D"><span class="dnd-pill-text">paying attention to detail</span><button type="button" class="dnd-handle" data-letter="D" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="E"><span class="dnd-pill-text">fixing realistic prices</span><button type="button" class="dnd-handle" data-letter="E" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" id="sel-q17" value="">
+        <input type="hidden" id="sel-q18" value="">
+
+        <div class="sec-hdr" style="margin-top:28px">
+          <div class="sec-range">Questions 19&ndash;20</div>
+          <div class="sec-instr">Choose <b>TWO</b> correct answers. Which TWO things does Arthur say helped him get his business started?</div>
+        </div>
+        <div class="dnd-group dnd-zoom-fix">
+          <p class="dnd-hint">Drag an option into each box. Each option can only be used once.</p>
+          <div class="dnd-match-layout">
+            <div class="dnd-col dnd-col-left">
+              <div class="dnd-col-title">Your answers</div>
+              <div class="dnd-rows">
+                <div class="dnd-row" id="anchor-q19">
+                  <span class="dnd-label">First answer</span>
+                  <div class="dnd-slot dnd-slot-sm" data-qid="q19" data-qnum="19" aria-label="Drop zone for question 19"></div>
+                </div>
+                <div class="dnd-row" id="anchor-q20">
+                  <span class="dnd-label">Second answer</span>
+                  <div class="dnd-slot dnd-slot-sm" data-qid="q20" data-qnum="20" aria-label="Drop zone for question 20"></div>
+                </div>
+              </div>
+            </div>
+            <div class="dnd-col dnd-col-right">
+              <div class="dnd-col-title">Options</div>
+              <div class="dnd-bank" id="dnd-bank-q19">
+                <div class="dnd-pill-row" data-letter="A"><span class="dnd-pill-text">family support</span><button type="button" class="dnd-handle" data-letter="A" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="B"><span class="dnd-pill-text">getting a loan from a bank</span><button type="button" class="dnd-handle" data-letter="B" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="C"><span class="dnd-pill-text">good business advice</span><button type="button" class="dnd-handle" data-letter="C" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="D"><span class="dnd-pill-text">a favourable economic climate</span><button type="button" class="dnd-handle" data-letter="D" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="E"><span class="dnd-pill-text">an effective approach to business</span><button type="button" class="dnd-handle" data-letter="E" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" id="sel-q19" value="">
+        <input type="hidden" id="sel-q20" value="">
+      </div>
+
+      <!-- ===== PART 3: Q21–30 ===== -->
+      <div class="qsection qsection-narrow" id="q3-section">
+
+        <div class="sec-hdr">
+          <div class="sec-topic">Feedback on second year of Performance Arts Course</div>
+          <div class="sec-range">Part 3 &mdash; Questions 21&ndash;26</div>
+          <div class="sec-instr">Choose the correct answer.</div>
+        </div>
+
+        <div class="qb">
+          <div class="qnum">Question 21</div>
+          <div class="qtext">Gina chose to study performance arts at this university because the course</div>
+          <div class="opts" id="q21-opts">
+            <label class="opt"><input type="radio" name="q21" value="A" onchange="selMCQ('q21',this)"> <span><b>A.</b> has a very good reputation.</span></label>
+            <label class="opt"><input type="radio" name="q21" value="B" onchange="selMCQ('q21',this)"> <span><b>B.</b> has links with various theatres.</span></label>
+            <label class="opt"><input type="radio" name="q21" value="C" onchange="selMCQ('q21',this)"> <span><b>C.</b> has an international flavour.</span></label>
+          </div>
+        </div>
+        <div class="qb">
+          <div class="qnum">Question 22</div>
+          <div class="qtext">Which of the options they chose have Gina and Charlie both found useful?</div>
+          <div class="opts" id="q22-opts">
+            <label class="opt"><input type="radio" name="q22" value="A" onchange="selMCQ('q22',this)"> <span><b>A.</b> Movement Analysis</span></label>
+            <label class="opt"><input type="radio" name="q22" value="B" onchange="selMCQ('q22',this)"> <span><b>B.</b> Dance and Drama</span></label>
+            <label class="opt"><input type="radio" name="q22" value="C" onchange="selMCQ('q22',this)"> <span><b>C.</b> The Body in Dance</span></label>
+          </div>
+        </div>
+        <div class="qb">
+          <div class="qnum">Question 23</div>
+          <div class="qtext">What did Charlie do during his work experience?</div>
+          <div class="opts" id="q23-opts">
+            <label class="opt"><input type="radio" name="q23" value="A" onchange="selMCQ('q23',this)"> <span><b>A.</b> He worked in a costume department.</span></label>
+            <label class="opt"><input type="radio" name="q23" value="B" onchange="selMCQ('q23',this)"> <span><b>B.</b> He performed with a ballet company.</span></label>
+            <label class="opt"><input type="radio" name="q23" value="C" onchange="selMCQ('q23',this)"> <span><b>C.</b> He helped out at a dance school for children.</span></label>
+          </div>
+        </div>
+        <div class="qb">
+          <div class="qnum">Question 24</div>
+          <div class="qtext">What does Gina say she learnt from her work experience?</div>
+          <div class="opts" id="q24-opts">
+            <label class="opt"><input type="radio" name="q24" value="A" onchange="selMCQ('q24',this)"> <span><b>A.</b> how to organise her time better</span></label>
+            <label class="opt"><input type="radio" name="q24" value="B" onchange="selMCQ('q24',this)"> <span><b>B.</b> how to work better in a team</span></label>
+            <label class="opt"><input type="radio" name="q24" value="C" onchange="selMCQ('q24',this)"> <span><b>C.</b> how to cope when under pressure</span></label>
+          </div>
+        </div>
+        <div class="qb">
+          <div class="qnum">Question 25</div>
+          <div class="qtext">What does Charlie say about his dissertation topic?</div>
+          <div class="opts" id="q25-opts">
+            <label class="opt"><input type="radio" name="q25" value="A" onchange="selMCQ('q25',this)"> <span><b>A.</b> He wanted it to be different from those of other students.</span></label>
+            <label class="opt"><input type="radio" name="q25" value="B" onchange="selMCQ('q25',this)"> <span><b>B.</b> He had already done an assignment in this area.</span></label>
+            <label class="opt"><input type="radio" name="q25" value="C" onchange="selMCQ('q25',this)"> <span><b>C.</b> He was inspired to choose it by a performance he saw.</span></label>
+          </div>
+        </div>
+        <div class="qb">
+          <div class="qnum">Question 26</div>
+          <div class="qtext">Which aspect of writing a dissertation is Gina worried about?</div>
+          <div class="opts" id="q26-opts">
+            <label class="opt"><input type="radio" name="q26" value="A" onchange="selMCQ('q26',this)"> <span><b>A.</b> finding enough to say</span></label>
+            <label class="opt"><input type="radio" name="q26" value="B" onchange="selMCQ('q26',this)"> <span><b>B.</b> doing the background reading</span></label>
+            <label class="opt"><input type="radio" name="q26" value="C" onchange="selMCQ('q26',this)"> <span><b>C.</b> presenting it in an appropriate way</span></label>
+          </div>
+        </div>
+
+        <div class="sec-hdr" style="margin-top:28px">
+          <div class="sec-range">Questions 27&ndash;30</div>
+          <div class="sec-instr">What do the students say about each of the following types of careers in performance arts? Drag each <b>comment</b> from the list into the box next to the correct career. Each comment can only be used once.</div>
+        </div>
+
+        <div class="dnd-group dnd-zoom-fix">
+        <div class="dnd-careers-wrap" id="dnd-careers-wrap">
+          <p class="dnd-hint">Drag a comment from the right column into the matching box on the left. Drag a comment back to the bank to remove it, or drop it onto another row to swap.</p>
+          <div class="dnd-match-layout">
+            <div class="dnd-col dnd-col-left">
+              <div class="dnd-col-title">Types of careers</div>
+              <div class="dnd-rows">
+                <div class="dnd-row" id="anchor-q27">
+                  <span class="dnd-label">Performance</span>
+                  <div class="dnd-slot dnd-slot-sm" data-qid="q27" data-qnum="27" aria-label="Drop zone for question 27"></div>
+                </div>
+                <div class="dnd-row" id="anchor-q28">
+                  <span class="dnd-label">Education</span>
+                  <div class="dnd-slot dnd-slot-sm" data-qid="q28" data-qnum="28" aria-label="Drop zone for question 28"></div>
+                </div>
+                <div class="dnd-row" id="anchor-q29">
+                  <span class="dnd-label">Theatre management</span>
+                  <div class="dnd-slot dnd-slot-sm" data-qid="q29" data-qnum="29" aria-label="Drop zone for question 29"></div>
+                </div>
+                <div class="dnd-row" id="anchor-q30">
+                  <span class="dnd-label">Marketing</span>
+                  <div class="dnd-slot dnd-slot-sm" data-qid="q30" data-qnum="30" aria-label="Drop zone for question 30"></div>
+                </div>
+              </div>
+            </div>
+            <div class="dnd-col dnd-col-right">
+              <div class="dnd-col-title">Comments</div>
+              <div class="dnd-bank" id="dnd-bank-careers">
+                <div class="dnd-pill-row" data-letter="A"><span class="dnd-pill-text">The pay can be low.</span><button type="button" class="dnd-handle" data-letter="A" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="B"><span class="dnd-pill-text">There is a lot of competition.</span><button type="button" class="dnd-handle" data-letter="B" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="C"><span class="dnd-pill-text">An additional qualification is required.</span><button type="button" class="dnd-handle" data-letter="C" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="D"><span class="dnd-pill-text">Good communication skills are required.</span><button type="button" class="dnd-handle" data-letter="D" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="E"><span class="dnd-pill-text">People with experience feel very positive about it.</span><button type="button" class="dnd-handle" data-letter="E" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="F"><span class="dnd-pill-text">It is a relatively unpopular choice.</span><button type="button" class="dnd-handle" data-letter="F" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <input type="hidden" id="sel-q27" value="">
+        <input type="hidden" id="sel-q28" value="">
+        <input type="hidden" id="sel-q29" value="">
+        <input type="hidden" id="sel-q30" value="">
+      </div>
+
+      <!-- ===== PART 4: Q31–40 ===== -->
+      <div class="qsection" id="q4-section">
+
+        <div class="sec-hdr">
+          <div class="sec-range">Part 4 &mdash; Questions 31&ndash;40</div>
+          <div class="sec-instr">Complete the notes below. Write <b>ONE WORD ONLY</b> for each answer.</div>
+        </div>
+
+        <div class="sumbox">
+          <div class="sumtitle">Sea lion tracking study (Western Australia)</div>
+          <div class="sumtext">
+            <p style="margin-bottom:10px"><b>Reason for the study</b></p>
+            <p style="margin-bottom:8px">&bull; The Australian sea lion is an endangered species</p>
+            <p style="margin-bottom:8px">&bull; Until 1892, numbers were affected by hunting</p>
+            <p style="margin-bottom:14px">&bull; Sea lions are now affected by nets used to control <span class="si-wrap"><span class="si-num">(31)</span><input class="si" id="q31" style="width:120px" autocomplete="off" oninput="markFill('q31',this.value)"></span></p>
+            <p style="margin-bottom:10px"><b>Animal tracking systems</b></p>
+            <p style="margin-bottom:8px">&bull; Considerations when choosing a tracking method include <span class="si-wrap"><span class="si-num">(32)</span><input class="si" id="q32" style="width:120px" autocomplete="off" oninput="markFill('q32',this.value)"></span> and ease of use.</p>
+            <p style="margin-bottom:8px">&bull; Plastic tags: the animal must be easy to <span class="si-wrap"><span class="si-num">(33)</span><input class="si" id="q33" style="width:120px" autocomplete="off" oninput="markFill('q33',this.value)"></span></p>
+            <p style="margin-bottom:8px">&bull; GPS tracking will not work in the <span class="si-wrap"><span class="si-num">(34)</span><input class="si" id="q34" style="width:140px" autocomplete="off" oninput="markFill('q34',this.value)"></span></p>
+            <p style="margin-bottom:8px">&bull; In isolated regions, some animals are tracked by <span class="si-wrap"><span class="si-num">(35)</span><input class="si" id="q35" style="width:120px" autocomplete="off" oninput="markFill('q35',this.value)"></span> (e.g. the polar bear)</p>
+            <p style="margin-bottom:14px">&bull; Some animals are identified by markings (e.g. the dolphin is identified by its scars).</p>
+            <p style="margin-bottom:10px"><b>Challenges of tracking sea lions</b></p>
+            <p style="margin-bottom:8px">&bull; Perth study: the sea lions lost their tags. (They rubbed against <span class="si-wrap"><span class="si-num">(36)</span><input class="si" id="q36" style="width:130px" autocomplete="off" oninput="markFill('q36',this.value)"></span> to remove them.)</p>
+            <p style="margin-bottom:14px">&bull; Californian researchers used <span class="si-wrap"><span class="si-num">(37)</span><input class="si" id="q37" style="width:130px" autocomplete="off" oninput="markFill('q37',this.value)"></span> to identify sea lions. (This was unreliable due to regular loss of fur.)</p>
+            <p style="margin-bottom:10px"><b>Our study</b></p>
+            <p style="margin-bottom:8px"><b>Aims:</b></p>
+            <p style="margin-bottom:6px">i) to find out if sea lions&rsquo; whiskers can be used to identify them</p>
+            <p style="margin-bottom:12px">ii) to create a <span class="si-wrap"><span class="si-num">(38)</span><input class="si" id="q38" style="width:130px" autocomplete="off" oninput="markFill('q38',this.value)"></span> to use as a guide</p>
+            <p style="margin-bottom:8px"><b>Methods:</b></p>
+            <p style="margin-bottom:6px">i) contacting <span class="si-wrap"><span class="si-num">(39)</span><input class="si" id="q39" style="width:130px" autocomplete="off" oninput="markFill('q39',this.value)"></span> in Australia for photographs</p>
+            <p style="margin-bottom:4px">ii) asking the <span class="si-wrap"><span class="si-num">(40)</span><input class="si" id="q40" style="width:130px" autocomplete="off" oninput="markFill('q40',this.value)"></span> to get involved</p>
+          </div>
+        </div>
+      </div><!-- /q4-section -->
+
+    </div><!-- /questions-panel -->
+    </div><!-- /exam-body -->
+  </div><!-- /main -->
+
+  <div id="bot-bar">
+    <div id="track-wrap" aria-label="Question progress">
+      <div class="track-groups">
+        <div class="track-grp"><span class="track-label">Q1–10</span><div id="track-grid-1" class="track-grid"></div></div>
+        <div class="track-grp"><span class="track-label">Q11–20</span><div id="track-grid-2" class="track-grid"></div></div>
+        <div class="track-grp"><span class="track-label">Q21–30</span><div id="track-grid-3" class="track-grid"></div></div>
+        <div class="track-grp"><span class="track-label">Q31–40</span><div id="track-grid-4" class="track-grid"></div></div>
+      </div>
+      <p class="track-hint">Green = answered · Grey = not yet · Click a number to open that question</p>
+    </div>
+    <button id="sub-btn" onclick="submitExam()">Submit answers</button>
+  </div>
+
+  <!-- SUCCESS -->
+  <div id="success-overlay">
+    <div class="scard">
+      <div class="scheck">&#10003;</div>
+      <div class="stitle">Submission successful!</div>
+      <div class="ssub">Thank you for completing the exam.<br>You will receive the results within 48 hours.</div>
+      <div class="sdetail" id="sdetail"></div>
+      <button type="button" class="pdf-dl-btn" id="pdf-download-btn">Open print view (save as PDF)</button>
+      <p class="pdf-dl-hint">Includes all parts, highlights, questions, and your answers for your own review.</p>
+    </div>
+  </div>
+
+  <div id="hl-popover" class="hl-popover" role="toolbar" aria-label="Text highlight" aria-hidden="true">
+    <button type="button" class="hl-btn hl-btn-primary" id="hl-pop-add">Highlight</button>
+    <button type="button" class="hl-btn hl-remove-btn" id="hl-pop-remove" style="display:none">Remove</button>
+  </div>
+
+</div><!-- /exam-screen -->
+
+  <!-- Audio intro (outside #exam-screen so width/overflow do not force line wraps) -->
+  <div id="audio-intro-overlay" aria-modal="true" role="dialog" aria-labelledby="audio-intro-heading">
+    <div class="audio-intro-inner">
+      <div class="audio-intro-icon" aria-hidden="true">&#127911;</div>
+      <div id="audio-intro-heading">
+        <p class="audio-intro-main">You will be listening to an audio clip during this test. You will not be permitted to pause or rewind the audio while answering the questions.</p>
+        <p class="audio-intro-sub">To continue, click Play.</p>
+      </div>
+      <button type="button" class="audio-play-btn" id="audio-play-btn" onclick="beginListeningExam()">
+        <span class="audio-play-glyph" aria-hidden="true">&#9654;</span> Play
+      </button>
+    </div>
+  </div>
+
+<script>
+/* Correct answers live only in the Sheet (AnswerKey_Listening). Grading runs in Apps Script; score may be shown after submit if the server returns it. */
+
+var EXAM_DURATION_SEC=2400;
+var sName='', sCourse='', timeLeft=EXAM_DURATION_SEC, timerInt, answered={};
+var trackerBuilt=false;
+var examStarted=false;
+
+/* Q27–30: display text for each option; hidden answers still store A–F */
+var CAREER_OPTION_TEXT={
+  A:'The pay can be low.',
+  B:'There is a lot of competition.',
+  C:'An additional qualification is required.',
+  D:'Good communication skills are required.',
+  E:'People with experience feel very positive about it.',
+  F:'It is a relatively unpopular choice.'
+};
+var Q17_OPTION_TEXT={
+  A:'making sure the idea is original',
+  B:'offering a better deal than competitors',
+  C:'being committed to it',
+  D:'paying attention to detail',
+  E:'fixing realistic prices'
+};
+var Q19_OPTION_TEXT={
+  A:'family support',
+  B:'getting a loan from a bank',
+  C:'good business advice',
+  D:'a favourable economic climate',
+  E:'an effective approach to business'
+};
+
+/* Google Sheets: paste your Apps Script “Web app” URL here (ends with /exec). Leave empty to skip. */
+var GOOGLE_SHEET_WEB_APP_URL='https://script.google.com/macros/s/AKfycbxpQjAT8OqacKq6gAPuXhN0kiuuwGWRkcdrD8JeJkVprfmKaqqGQES10b7uVtZs78JpSg/exec';
+
+var examZoom=1;
+var ZOOM_MIN=0.75,ZOOM_MAX=1.5,ZOOM_STEP=0.1;
+try{
+  var zs=parseFloat(localStorage.getItem('anthicExamZoomListen'));
+  if(!isNaN(zs)&&zs>=ZOOM_MIN&&zs<=ZOOM_MAX)examZoom=Math.round(zs*100)/100;
+}catch(e){}
+
+function applyExamZoom(){
+  var ex=document.getElementById('exam-screen');
+  if(!ex)return;
+  ex.style.setProperty('--exam-zoom',String(examZoom));
+  var pct=document.getElementById('zoom-pct');
+  if(pct)pct.textContent=Math.round(examZoom*100)+'%';
+  try{localStorage.setItem('anthicExamZoomListen',String(examZoom));}catch(e){}
+  /* Counteract #main zoom so HTML5 drag/drop hit-testing matches visuals */
+  document.querySelectorAll('.dnd-zoom-fix').forEach(function(el){
+    try{el.style.zoom=String(1/examZoom);}catch(e2){}
+  });
+}
+function examZoomIn(){
+  examZoom=Math.min(ZOOM_MAX,Math.round((examZoom+ZOOM_STEP)*100)/100);
+  applyExamZoom();
+}
+function examZoomOut(){
+  examZoom=Math.max(ZOOM_MIN,Math.round((examZoom-ZOOM_STEP)*100)/100);
+  applyExamZoom();
+}
+function examZoomReset(){
+  examZoom=1;
+  applyExamZoom();
+}
+
+function pad(n){return n<10?'0'+n:n;}
+
+function onExamAudioEnded(){
+  var ae=document.getElementById('exam-audio');
+  if(!ae)return;
+  ae.pause();
+  ae.removeAttribute('src');
+  ae.load();
+  var msg=document.getElementById('audio-finished-msg');
+  if(msg)msg.style.display='block';
+}
+
+function wireExamAudioOnce(){
+  var ae=document.getElementById('exam-audio');
+  if(!ae||ae.dataset.wired==='1')return;
+  ae.dataset.wired='1';
+  ae.addEventListener('ended',onExamAudioEnded);
+}
+
+function startExam(){
+  sName=document.getElementById('inp-name').value.trim();
+  sCourse=document.getElementById('inp-course').value.trim();
+  if(!sName){alert('Please enter your full name.');return;}
+  if(!sCourse){alert('Please enter your course.');return;}
+  document.getElementById('login-screen').style.display='none';
+  document.getElementById('exam-screen').style.display='flex';
+  /* student badge hidden in integrated shell */
+  applyExamZoom();
+  ensureQuestionTracker();
+  updateProg();
+  var aio=document.getElementById('audio-intro-overlay');
+  if(aio)aio.classList.add('is-open');
+  setTimeout(function(){
+    var pb=document.getElementById('audio-play-btn');
+    if(pb)pb.focus();
+  },80);
+}
+
+function beginListeningExam(){
+  if(examStarted)return;
+  examStarted=true;
+  var aio=document.getElementById('audio-intro-overlay');
+  if(aio)aio.classList.remove('is-open');
+  timerInt=setInterval(tick,1000);
+  updateProg();
+  wireExamAudioOnce();
+  var ae=document.getElementById('exam-audio');
+  if(ae){
+    var boot=window.__EXAM_BOOT__||{};
+    var src=ae.getAttribute('src')||(boot.audioUrl||boot.audioFallbackUrl)||'';
+    if(src){
+      if(boot.audioFallbackUrl)ae.dataset.fallback=boot.audioFallbackUrl;
+      if(ae.getAttribute('src')!==src)ae.setAttribute('src',src);
+      ae.load();
+      ae.currentTime=0;
+      ae.addEventListener('error',function onErr(){
+        ae.removeEventListener('error',onErr);
+        tryFallbackAudio(ae);
+        ae.play().catch(function(err){console.error('[exam-audio]',err);});
+      },{once:true});
+      var playPromise=ae.play();
+      if(playPromise&&typeof playPromise.catch==='function'){
+        playPromise.catch(function(err){console.error('[exam-audio]',err);});
+      }
+    }
+  }
+}
+
+function tick(){
+  if(timeLeft<=0){clearInterval(timerInt);autoSubmit();return;}
+  var m=Math.floor(timeLeft/60),s=timeLeft%60;
+  document.getElementById('timer-box').textContent=pad(m)+':'+pad(s);
+  if(timeLeft<=300)document.getElementById('timer-box').classList.add('warn');
+  timeLeft--;
+}
+
+function switchPassage(n){
+  if(n<1||n>4)return;
+  hideHlPopover();
+  document.querySelectorAll('.qsection').forEach(function(e){e.classList.remove('active');});
+  document.querySelectorAll('.ptab').forEach(function(e){e.classList.remove('active');});
+  document.getElementById('q'+n+'-section').classList.add('active');
+  document.querySelectorAll('.ptab')[n-1].classList.add('active');
+  var qp=document.getElementById('questions-panel');
+  if(qp)qp.scrollTop=0;
+}
+
+function ensureQuestionTracker(){
+  if(trackerBuilt)return;
+  var grids=[document.getElementById('track-grid-1'),document.getElementById('track-grid-2'),document.getElementById('track-grid-3'),document.getElementById('track-grid-4')];
+  var ranges=[[1,10],[11,20],[21,30],[31,40]];
+  for(var g=0;g<4;g++){
+    if(!grids[g])continue;
+    for(var n=ranges[g][0];n<=ranges[g][1];n++){
+      var b=document.createElement('button');
+      b.type='button';
+      b.className='qt';
+      b.id='qt-'+n;
+      b.textContent=n;
+      b.setAttribute('aria-label','Question '+n+' — not answered');
+      (function(num){b.onclick=function(){goToQuestion(num);};})(n);
+      grids[g].appendChild(b);
+    }
+  }
+  trackerBuilt=true;
+}
+
+function goToQuestion(n){
+  if(n<1||n>40)return;
+  var pid=n<=10?1:(n<=20?2:(n<=30?3:4));
+  switchPassage(pid);
+  setTimeout(function(){
+    var el=null;
+    if((n>=1&&n<=10)||(n>=31&&n<=40))el=document.getElementById('q'+n);
+    else if(n>=11&&n<=16)el=document.querySelector('#q2-section input[name="q'+n+'"]');
+    else if(n>=17&&n<=20)el=document.getElementById('anchor-q'+n);
+    else if(n>=21&&n<=26)el=document.querySelector('#q3-section input[name="q'+n+'"]');
+    else if(n>=27&&n<=30)el=document.getElementById('anchor-q'+n);
+    if(el)el.scrollIntoView({behavior:'smooth',block:'center'});
+  },90);
+}
+
+function updateProg(){
+  var c=Object.keys(answered).length;
+  var left=40-c;
+  var ac=document.getElementById('ans-count');
+  if(ac)ac.textContent=c;
+  var al=document.getElementById('ans-left');
+  if(al)al.textContent=left;
+  document.getElementById('prog-bar').style.width=Math.round((c/40)*100)+'%';
+  var i,cell,done,qid;
+  for(i=1;i<=40;i++){
+    qid='q'+i;
+    cell=document.getElementById('qt-'+i);
+    if(!cell)continue;
+    done=!!answered[qid];
+    cell.classList.toggle('qt-done',done);
+    cell.setAttribute('aria-label','Question '+i+(done?' — answered':' — not answered'));
+  }
+}
+
+function markFill(qid,val){
+  if(val.trim()){answered[qid]=true;document.getElementById(qid).classList.add('done');}
+  else{delete answered[qid];document.getElementById(qid).classList.remove('done');}
+  updateProg();
+}
+
+function selTFNG(qid,sel){
+  if(sel.value){answered[qid]=true;sel.classList.add('done');}
+  else{delete answered[qid];sel.classList.remove('done');}
+  updateProg();
+}
+
+function selMCQ(qid,inp){
+  var c=document.getElementById(qid+'-opts');
+  c.querySelectorAll('.opt').forEach(function(l){l.classList.remove('sel');});
+  inp.closest('.opt').classList.add('sel');
+  answered[qid]=true;updateProg();
+}
+
+function refreshSlotAnswered(qid){
+  var el=document.getElementById('sel-'+qid);
+  var slot=document.querySelector('.dnd-slot[data-qid="'+qid+'"]');
+  if(!el||!slot)return;
+  if(el.value){
+    answered[qid]=true;
+    slot.classList.add('done');
+  }else{
+    delete answered[qid];
+    slot.classList.remove('done');
+  }
+  updateProg();
+}
+
+var DND_GROUPS={};
+var dndPointerDrag=null;
+
+function dndFindTargetFromPoint(x,y){
+  var el=document.elementFromPoint(x,y);
+  if(!el)return null;
+  var slot=el.closest('.dnd-slot[data-qid]');
+  if(slot)return {type:'slot',el:slot};
+  var bank=el.closest('.dnd-bank');
+  if(bank)return {type:'bank',el:bank};
+  return null;
+}
+
+function dndClearSlotHighlight(){
+  document.querySelectorAll('.dnd-slot.dnd-drag-over').forEach(function(s){
+    s.classList.remove('dnd-drag-over');
+  });
+}
+
+function dndDisposeDragVisuals(){
+  if(!dndPointerDrag)return;
+  document.body.classList.remove('dnd-dragging');
+  dndClearSlotHighlight();
+  if(dndPointerDrag.ghostEl&&dndPointerDrag.ghostEl.parentNode){
+    dndPointerDrag.ghostEl.parentNode.removeChild(dndPointerDrag.ghostEl);
+  }
+  if(dndPointerDrag.sourceRow){
+    dndPointerDrag.sourceRow.classList.remove('dnd-drag-source');
+  }
+}
+
+function dndCreateGhostFromRow(row){
+  var wrap=document.createElement('div');
+  wrap.className='dnd-drag-ghost';
+  wrap.setAttribute('aria-hidden','true');
+  wrap.appendChild(row.cloneNode(true));
+  document.body.appendChild(wrap);
+  return wrap;
+}
+
+function dndOnPointerMove(e){
+  if(!dndPointerDrag)return;
+  if(dndPointerDrag.ghostEl){
+    dndPointerDrag.ghostEl.style.left=(e.clientX-dndPointerDrag.ghostOffsetX)+'px';
+    dndPointerDrag.ghostEl.style.top=(e.clientY-dndPointerDrag.ghostOffsetY)+'px';
+  }
+  dndClearSlotHighlight();
+  var t=dndFindTargetFromPoint(e.clientX,e.clientY);
+  if(t&&t.type==='slot'){
+    var qid=t.el.getAttribute('data-qid');
+    if(dndPointerDrag.qids.indexOf(qid)!==-1)t.el.classList.add('dnd-drag-over');
+  }
+}
+
+function dndOnPointerUp(e){
+  if(!dndPointerDrag)return;
+  var d=dndPointerDrag;
+  var t=dndFindTargetFromPoint(e.clientX,e.clientY);
+  dndDisposeDragVisuals();
+  dndPointerDrag=null;
+  if(!t)return;
+  if(t.type==='bank'){
+    if(t.el.id!==d.bankId)return;
+    if(d.src==='slot'&&d.fromQ&&d.qids.indexOf(d.fromQ)!==-1)d.setSlot(d.fromQ,'');
+    return;
+  }
+  if(t.type!=='slot')return;
+  var targetQ=t.el.getAttribute('data-qid');
+  if(d.qids.indexOf(targetQ)===-1)return;
+  if(d.src==='bank'){
+    d.qids.forEach(function(q){
+      if(q!==targetQ){
+        var inp=document.getElementById('sel-'+q);
+        if(inp&&inp.value===d.letter)d.setSlot(q,'');
+      }
+    });
+    d.setSlot(targetQ,d.letter);
+    return;
+  }
+  if(d.src==='slot'&&d.fromQ&&d.qids.indexOf(d.fromQ)!==-1){
+    if(d.fromQ===targetQ)return;
+    var a=document.getElementById('sel-'+d.fromQ).value;
+    var b=document.getElementById('sel-'+targetQ).value;
+    d.setSlot(d.fromQ,b||'');
+    d.setSlot(targetQ,a||'');
+  }
+}
+
+function dndWirePointerListenersOnce(){
+  if(window._dndPointerDnDListeners)return;
+  window._dndPointerDnDListeners=true;
+  document.addEventListener('mousemove',dndOnPointerMove);
+  document.addEventListener('mouseup',dndOnPointerUp);
+  window.addEventListener('blur',function(){
+    if(!dndPointerDrag)return;
+    dndDisposeDragVisuals();
+    dndPointerDrag=null;
+  });
+}
+
+function dndWireHandleDownOnce(){
+  if(window._dndHandleMousedownWire)return;
+  window._dndHandleMousedownWire=true;
+  document.addEventListener('mousedown',function(e){
+    if(e.button!==0)return;
+    var h=e.target.closest('.dnd-handle');
+    if(!h)return;
+    var row=h.closest('.dnd-pill-row');
+    if(!row||row.classList.contains('dnd-pill-hidden'))return;
+    var g=row.closest('.dnd-group');
+    if(!g)return;
+    var bankEl=g.querySelector('.dnd-bank[data-dnd-bank-id]');
+    if(!bankEl)return;
+    var bankId=bankEl.getAttribute('data-dnd-bank-id');
+    var grp=DND_GROUPS[bankId];
+    if(!grp)return;
+    var letter=row.getAttribute('data-letter')||h.getAttribute('data-letter');
+    if(!letter)return;
+    var inBank=!!row.closest('.dnd-bank');
+    var slotEl=row.closest('.dnd-slot');
+    var fromQ=slotEl?slotEl.getAttribute('data-qid'):'';
+    e.preventDefault();
+    var rect=row.getBoundingClientRect();
+    var ghost=dndCreateGhostFromRow(row);
+    ghost.style.width=Math.round(rect.width)+'px';
+    ghost.style.left=rect.left+'px';
+    ghost.style.top=rect.top+'px';
+    row.classList.add('dnd-drag-source');
+    dndPointerDrag={
+      bankId:bankId,
+      letter:letter,
+      src:inBank?'bank':'slot',
+      fromQ:fromQ,
+      qids:grp.qids,
+      setSlot:grp.setSlot,
+      ghostEl:ghost,
+      ghostOffsetX:e.clientX-rect.left,
+      ghostOffsetY:e.clientY-rect.top,
+      sourceRow:row
+    };
+    document.body.classList.add('dnd-dragging');
+  },true);
+}
+
+function initDnDGroup(opts){
+  var bank=document.getElementById(opts.bankId);
+  if(!bank||bank.dataset.dndWired==='1')return;
+  bank.dataset.dndWired='1';
+  bank.setAttribute('data-dnd-bank-id',opts.bankId);
+  var qids=opts.qids;
+  var textMap=opts.textMap;
+  var scope=bank.closest('.dnd-group');
+  if(!scope)scope=bank.parentElement;
+
+  function syncBankVisibility(){
+    var used={};
+    qids.forEach(function(qid){
+      var v=document.getElementById('sel-'+qid);
+      if(v&&v.value)used[v.value]=true;
+    });
+    bank.querySelectorAll('.dnd-pill-row[data-letter]').forEach(function(row){
+      var L=row.getAttribute('data-letter');
+      if(used[L])row.classList.add('dnd-pill-hidden');
+      else row.classList.remove('dnd-pill-hidden');
+    });
+  }
+
+  function setSlot(qid, letter){
+    var inp=document.getElementById('sel-'+qid);
+    var slot=scope.querySelector('.dnd-slot[data-qid="'+qid+'"]');
+    if(!inp||!slot)return;
+    inp.value=letter||'';
+    slot.innerHTML='';
+    if(letter){
+      var row=document.createElement('div');
+      row.className='dnd-pill-row';
+      row.setAttribute('data-letter',letter);
+      var text=document.createElement('span');
+      text.className='dnd-pill-text';
+      text.textContent=textMap[letter]||letter;
+      var btn=document.createElement('button');
+      btn.type='button';
+      btn.className='dnd-handle';
+      btn.setAttribute('data-letter',letter);
+      btn.setAttribute('aria-label','Drag to answer');
+      btn.setAttribute('title','Drag');
+      btn.textContent='⋮⋮';
+      row.appendChild(text);
+      row.appendChild(btn);
+      slot.appendChild(row);
+    }
+    syncBankVisibility();
+    refreshSlotAnswered(qid);
+  }
+
+  DND_GROUPS[opts.bankId]={bankId:opts.bankId,qids:qids,setSlot:setSlot};
+  dndWireHandleDownOnce();
+  dndWirePointerListenersOnce();
+  syncBankVisibility();
+}
+
+initDnDGroup({ bankId:'dnd-bank-careers', qids:['q27','q28','q29','q30'], textMap:CAREER_OPTION_TEXT });
+initDnDGroup({ bankId:'dnd-bank-q17', qids:['q17','q18'], textMap:Q17_OPTION_TEXT });
+initDnDGroup({ bankId:'dnd-bank-q19', qids:['q19','q20'], textMap:Q19_OPTION_TEXT });
+
+function collectAnswers(){
+  var r={};
+  var i;
+  for(i=1;i<=10;i++){
+    var fi=document.getElementById('q'+i);
+    r['q'+i]=fi?fi.value.trim():'';
+  }
+  for(i=31;i<=40;i++){
+    var fj=document.getElementById('q'+i);
+    r['q'+i]=fj?fj.value.trim():'';
+  }
+  ['q11','q12','q13','q14','q15','q16','q21','q22','q23','q24','q25','q26'].forEach(function(qid){
+    var sel=document.querySelector('input[name="'+qid+'"]:checked');
+    r[qid]=sel?sel.value:'';
+  });
+  ['q17','q18','q19','q20','q27','q28','q29','q30'].forEach(function(qid){
+    var el=document.getElementById('sel-'+qid);
+    r[qid]=el?el.value:'';
+  });
+  return r;
+}
+
+function getTimeTakenStr(){
+  var elapsed=EXAM_DURATION_SEC-timeLeft;
+  var em=Math.floor(elapsed/60),es=elapsed%60;
+  return pad(em)+':'+pad(es);
+}
+
+function sendSubmissionToGoogleSheet(){
+  var url=(GOOGLE_SHEET_WEB_APP_URL||'').trim();
+  if(!url)return Promise.resolve(null);
+  var payload={
+    testType:'Listening',
+    fullName:sName,
+    course:sCourse,
+    timeTaken:getTimeTakenStr(),
+    answeredCount:Object.keys(answered).length,
+    answers:collectAnswers()
+  };
+  return fetch(url,{
+    method:'POST',
+    headers:{'Content-Type':'text/plain'},
+    body:JSON.stringify(payload)
+  })
+    .then(function(res){return res.json();})
+    .then(function(data){return data&&data.ok?data:null;})
+    .catch(function(err){
+      if(typeof console!=='undefined'&&console.error)console.error('Google Sheet sync failed:',err);
+      return null;
+    });
+}
+
+
+var QUESTION_NUMS=[];
+for(var _qi=1;_qi<=40;_qi++)QUESTION_NUMS.push(_qi);
+var TOTAL_Q=40;
+var examAnswerKey=(window.__EXAM_BOOT__&&window.__EXAM_BOOT__.answerKey)||null;
+var examReviewMode=false;
+var userAnswersSnapshot={};
+
+function stopExamTimer(){
+  if(timerInt){clearInterval(timerInt);timerInt=null;}
+}
+
+function stopExamAudio(){
+  var ae=document.getElementById('exam-audio');
+  if(ae){try{ae.pause();}catch(e){}}
+}
+
+function clearPhrasePick(){}
+
+function normalizeAns(v){
+  return String(v||'').trim().toLowerCase().replace(/\s+/g,' ');
+}
+
+function ieltsAcademicReadingBandFromRaw40(raw){
+  var r=Math.max(0,Math.min(40,Math.round(raw)));
+  if(r>=39)return 9;
+  if(r>=37)return 8.5;
+  if(r>=35)return 8;
+  if(r>=33)return 7.5;
+  if(r>=30)return 7;
+  if(r>=27)return 6.5;
+  if(r>=23)return 6;
+  if(r>=19)return 5.5;
+  if(r>=15)return 5;
+  if(r>=13)return 4.5;
+  if(r>=10)return 4;
+  if(r>=8)return 3.5;
+  if(r>=6)return 3;
+  if(r>=4)return 2.5;
+  if(r>=2)return 2;
+  if(r>=1)return 1;
+  return 0;
+}
+
+function ieltsListeningBandFromRaw40(raw){
+  var r=Math.max(0,Math.min(40,Math.round(raw)));
+  if(r>=39)return 9;
+  if(r>=37)return 8.5;
+  if(r>=35)return 8;
+  if(r>=32)return 7.5;
+  if(r>=30)return 7;
+  if(r>=26)return 6.5;
+  if(r>=23)return 6;
+  if(r>=18)return 5.5;
+  if(r>=16)return 5;
+  if(r>=13)return 4.5;
+  if(r>=10)return 4;
+  if(r>=8)return 3.5;
+  if(r>=6)return 3;
+  if(r>=4)return 2.5;
+  if(r>=2)return 2;
+  if(r>=1)return 1;
+  return 0;
+}
+
+function formatIeltsBand(band){
+  return Number(band).toFixed(1);
+}
+
+function splitAnswerLetters(val){
+  return String(val||'').split(/[,，/]/).map(function(x){return x.trim();}).filter(Boolean);
+}
+
+function getCorrectAnswerForQuestion(num){
+  if(examAnswerKey&&examAnswerKey['q'+num])return examAnswerKey['q'+num];
+  if(examAnswerKey&&examAnswerKey[String(num)])return examAnswerKey[String(num)];
+  if(!examAnswerKey)return '';
+  var keys=Object.keys(examAnswerKey);
+  for(var i=0;i<keys.length;i++){
+    var k=keys[i];
+    if(k.indexOf('&')<0)continue;
+    var parts=k.split('&').map(function(p){return parseInt(p,10);});
+    var idx=parts.indexOf(num);
+    if(idx<0)continue;
+    var letters=splitAnswerLetters(examAnswerKey[k]);
+    if(letters.length===parts.length)return letters[idx];
+    return examAnswerKey[k];
+  }
+  return '';
+}
+
+function answersMatch(userVal,correctVal){
+  if(!userVal||!correctVal)return false;
+  var userNorm=normalizeAns(userVal);
+  var alts=String(correctVal).split(/\//).map(function(x){return normalizeAns(x);}).filter(Boolean);
+  if(alts.length===0)alts=[normalizeAns(correctVal)];
+  return alts.indexOf(userNorm)>=0;
+}
+
+function isAnswerCorrect(num,userVal){
+  var direct=getCorrectAnswerForQuestion(num);
+  if(direct)return answersMatch(userVal,direct);
+  return false;
+}
+
+function computeExamScore(){
+  if(!examAnswerKey||!QUESTION_NUMS.length)return null;
+  var correct=0,total=0;
+  for(var i=0;i<QUESTION_NUMS.length;i++){
+    var n=QUESTION_NUMS[i];
+    var correctVal=getCorrectAnswerForQuestion(n);
+    if(!String(correctVal).trim())continue;
+    total++;
+    if(isAnswerCorrect(n,userAnswersSnapshot['q'+n]||''))correct++;
+  }
+  if(!total)return null;
+  var rawForBand=total===40?correct:Math.round((correct/total)*40);
+  var bandFn=typeof ieltsListeningBandFromRaw40==='function'&&document.getElementById('exam-audio')
+    ?ieltsListeningBandFromRaw40
+    :ieltsAcademicReadingBandFromRaw40;
+  return {
+    correct:correct,
+    total:total,
+    band:bandFn(rawForBand),
+    equivalent:total!==40
+  };
+}
+
+function renderReviewScore(){
+  var btn=document.getElementById('sub-btn');
+  if(!btn)return;
+  var score=computeExamScore();
+  if(!score){
+    btn.textContent='Submit answers';
+    btn.disabled=false;
+    btn.removeAttribute('aria-label');
+    return;
+  }
+  var bandLabel=score.equivalent?'Band tương đương ':'Band ';
+  btn.innerHTML='<span>'+score.correct+'/'+score.total+' câu đúng</span>'+
+    '<span class="review-score-band"> · '+bandLabel+formatIeltsBand(score.band)+'</span>';
+  btn.disabled=true;
+  btn.setAttribute('aria-label',score.correct+' trên '+score.total+' câu đúng, '+bandLabel+formatIeltsBand(score.band));
+}
+
+var reviewAudioWired=false;
+var REVIEW_SPEEDS=[1,1.25,1.5,1.75];
+var reviewSpeedIdx=0;
+var REVIEW_ICON_PLAY='<svg class="ra-icon ra-icon-play" viewBox="0 0 24 24" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>';
+var REVIEW_ICON_PAUSE='<svg class="ra-icon ra-icon-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>';
+var REVIEW_ICON_VOLUME='<svg class="ra-icon ra-icon-vol" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>';
+var REVIEW_ICON_VOLUME_X='<svg class="ra-icon ra-icon-vol" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="22" x2="16" y1="9" y2="15"/><line x1="16" x2="22" y1="9" y2="15"/></svg>';
+
+function bindExamAudioSrc(audio,src,fallback){
+  if(!audio||!src)return;
+  audio.src=src;
+  if(fallback)audio.dataset.fallback=fallback;
+  else delete audio.dataset.fallback;
+  audio.dataset.fallbackTried='';
+  try{audio.load();}catch(e){}
+}
+
+function applyExamPayload(data){
+  if(!data)return;
+  if(data.answerKey&&typeof data.answerKey==='object')examAnswerKey=data.answerKey;
+  if(data.audioUrl||data.audioFallbackUrl){
+    var ae=document.getElementById('exam-audio');
+    var ra=document.getElementById('review-audio');
+    var src=data.audioUrl||data.audioFallbackUrl;
+    var fb=data.audioUrl&&data.audioFallbackUrl&&data.audioUrl!==data.audioFallbackUrl?data.audioFallbackUrl:'';
+    bindExamAudioSrc(ae,src,fb);
+    bindExamAudioSrc(ra,src,fb);
+  }
+  if(data.transcriptHtml){
+    var body=document.getElementById('transcript-body');
+    if(body)body.innerHTML=data.transcriptHtml;
+  }else if(data.hasTranscript===false){
+    var ex=document.getElementById('exam-screen');
+    if(ex)ex.classList.add('no-transcript');
+  }
+}
+
+function formatAudioTime(seconds){
+  if(!Number.isFinite(seconds)||seconds<0)return '0:00';
+  var total=Math.floor(seconds);
+  var m=Math.floor(total/60);
+  var s=total%60;
+  return m+':'+(s<10?'0':'')+s;
+}
+
+function updateReviewAudioUi(){
+  var audio=document.getElementById('review-audio');
+  var fill=document.getElementById('review-audio-seek-fill');
+  var cur=document.getElementById('review-audio-current');
+  var dur=document.getElementById('review-audio-duration');
+  var playBtn=document.getElementById('review-audio-play');
+  if(!audio)return;
+  var progress=audio.duration>0?Math.min(1,audio.currentTime/audio.duration):0;
+  if(fill)fill.style.width=Math.round(progress*100)+'%';
+  if(cur)cur.textContent=formatAudioTime(audio.currentTime);
+  if(dur)dur.textContent=audio.duration>0?formatAudioTime(audio.duration):'—:—';
+  if(playBtn){
+    playBtn.innerHTML=audio.paused?REVIEW_ICON_PLAY:REVIEW_ICON_PAUSE;
+    playBtn.setAttribute('aria-label',audio.paused?'Phát':'Tạm dừng');
+  }
+}
+
+function setReviewMuteIcon(muted){
+  var muteBtn=document.getElementById('review-audio-mute');
+  if(!muteBtn)return;
+  muteBtn.innerHTML=muted?REVIEW_ICON_VOLUME_X:REVIEW_ICON_VOLUME;
+  muteBtn.setAttribute('aria-label',muted?'Bật âm thanh':'Tắt âm thanh');
+}
+
+function updateTranscriptCueHighlight(){
+  var audio=document.getElementById('review-audio');
+  if(!audio)return;
+  var t=audio.currentTime;
+  var activeEl=null;
+  document.querySelectorAll('.transcript-cue').forEach(function(el){
+    var start=parseFloat(el.getAttribute('data-start'));
+    var end=parseFloat(el.getAttribute('data-end'));
+    var on=Number.isFinite(start)&&Number.isFinite(end)&&t>=start&&t<=end;
+    el.classList.toggle('is-active',on);
+    if(on)activeEl=el;
+  });
+  if(activeEl)activeEl.scrollIntoView({block:'nearest',behavior:'smooth'});
+}
+
+function wireTranscriptCueClicks(audio){
+  document.querySelectorAll('.transcript-cue').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var start=parseFloat(btn.getAttribute('data-start'));
+      if(!Number.isFinite(start))return;
+      audio.currentTime=start;
+      if(audio.paused){var p=audio.play();if(p&&p.catch)p.catch(function(){});}
+      updateReviewAudioUi();
+      updateTranscriptCueHighlight();
+    });
+  });
+}
+
+function wireReviewAudioPlayer(){
+  if(reviewAudioWired)return;
+  var audio=document.getElementById('review-audio');
+  var seek=document.getElementById('review-audio-seek');
+  var playBtn=document.getElementById('review-audio-play');
+  var backBtn=document.getElementById('review-audio-back');
+  var fwdBtn=document.getElementById('review-audio-fwd');
+  var speedBtn=document.getElementById('review-audio-speed');
+  var muteBtn=document.getElementById('review-audio-mute');
+  if(!audio||!seek||!playBtn)return;
+  reviewAudioWired=true;
+  audio.addEventListener('error',function(){tryFallbackAudio(audio);});
+  audio.addEventListener('loadedmetadata',updateReviewAudioUi);
+  audio.addEventListener('timeupdate',function(){
+    updateReviewAudioUi();
+    if(examReviewMode)updateTranscriptCueHighlight();
+  });
+  audio.addEventListener('play',updateReviewAudioUi);
+  audio.addEventListener('pause',updateReviewAudioUi);
+  audio.addEventListener('ended',updateReviewAudioUi);
+  wireTranscriptCueClicks(audio);
+  playBtn.addEventListener('click',function(){
+    if(audio.paused){var p=audio.play();if(p&&p.catch)p.catch(function(){});}
+    else audio.pause();
+  });
+  if(backBtn)backBtn.addEventListener('click',function(){
+    if(!Number.isFinite(audio.duration))return;
+    audio.currentTime=Math.max(0,audio.currentTime-10);
+    updateReviewAudioUi();
+  });
+  if(fwdBtn)fwdBtn.addEventListener('click',function(){
+    if(!Number.isFinite(audio.duration))return;
+    audio.currentTime=Math.min(audio.duration,audio.currentTime+30);
+    updateReviewAudioUi();
+  });
+  if(speedBtn)speedBtn.addEventListener('click',function(){
+    reviewSpeedIdx=(reviewSpeedIdx+1)%REVIEW_SPEEDS.length;
+    var speed=REVIEW_SPEEDS[reviewSpeedIdx];
+    audio.playbackRate=speed;
+    var speedLabel=document.getElementById('review-audio-speed-label');
+    if(speedLabel)speedLabel.textContent=speed+'x';
+  });
+  if(muteBtn)muteBtn.addEventListener('click',function(){
+    audio.muted=!audio.muted;
+    setReviewMuteIcon(audio.muted);
+  });
+  seek.addEventListener('click',function(e){
+    if(!Number.isFinite(audio.duration)||!audio.duration)return;
+    var rect=seek.getBoundingClientRect();
+    var ratio=Math.min(1,Math.max(0,(e.clientX-rect.left)/rect.width));
+    audio.currentTime=ratio*audio.duration;
+    updateReviewAudioUi();
+  });
+  updateReviewAudioUi();
+}
+
+function setReviewAudioSrc(audio,src){
+  if(!audio||!src)return;
+  audio.src=src;
+  try{audio.load();}catch(e){}
+}
+
+function audioSrcPath(src){
+  try{var u=new URL(src,window.location.origin);return u.pathname+u.search;}catch(e){return String(src||'');}
+}
+
+function tryFallbackAudio(audio){
+  if(!audio||audio.dataset.fallbackTried==='1')return;
+  var fb=audio.dataset.fallback||'';
+  if(!fb||audioSrcPath(audio.src)===audioSrcPath(fb))return;
+  audio.dataset.fallbackTried='1';
+  setReviewAudioSrc(audio,fb);
+}
+
+function showReviewAudioPlayer(){
+  stopExamAudio();
+  var boot=window.__EXAM_BOOT__||{};
+  var src=boot.audioUrl||boot.audioFallbackUrl||'';
+  var ae=document.getElementById('exam-audio');
+  var reviewAe=document.getElementById('review-audio');
+  if(!reviewAe)return;
+  if(!src&&ae)src=ae.getAttribute('src')||ae.src||'';
+  if(src){
+    if(boot.audioFallbackUrl)reviewAe.dataset.fallback=boot.audioFallbackUrl;
+    setReviewAudioSrc(reviewAe,src);
+  }
+  wireReviewAudioPlayer();
+  updateTranscriptCueHighlight();
+}
+
+function reviewLineHtml(userVal,correctVal,num){
+  var u=pdfEscHtml(userVal||'—');
+  var c=pdfEscHtml(correctVal||'—');
+  var match=typeof num==='number'?isAnswerCorrect(num,userVal):answersMatch(userVal,correctVal);
+  var cls='ans-review-line'+(match?' is-correct':' is-wrong');
+  return '<div class="'+cls+'"><span class="ans-your">Bạn: '+u+'</span><span class="ans-correct">Đáp án: '+c+'</span></div>';
+}
+
+function insertReviewLineAfterParagraph(qnum,user,correct){
+  var inp=document.getElementById('q'+qnum);
+  if(!inp)return;
+  var p=inp.closest('p');
+  if(!p||!p.parentNode)return;
+  if(p.parentNode.querySelector('.ans-review-line[data-q="'+qnum+'"]'))return;
+  var html=reviewLineHtml(user,correct,qnum);
+  var d=document.createElement('div');
+  d.innerHTML=html;
+  var line=d.firstElementChild;
+  if(!line)return;
+  line.setAttribute('data-q',String(qnum));
+  p.parentNode.insertBefore(line,p.nextSibling);
+}
+
+function highlightMcqReview(qid,userVal,correctVal,num){
+  var opts=document.getElementById(qid+'-opts');
+  if(!opts)return;
+  var userNorm=normalizeAns(userVal);
+  var correctNorm=normalizeAns(correctVal);
+  opts.querySelectorAll('.opt').forEach(function(lab){
+    var inp=lab.querySelector('input[type="radio"]');
+    if(!inp)return;
+    var val=normalizeAns(inp.value);
+    lab.classList.remove('review-user','review-correct');
+    if(userNorm&&val===userNorm)lab.classList.add('review-user');
+    if(correctNorm&&val===correctNorm)lab.classList.add('review-correct');
+  });
+}
+
+function lockExamInputs(){
+  document.querySelectorAll('#questions-panel input, #questions-panel select, #questions-panel textarea').forEach(function(el){
+    el.disabled=true;
+  });
+  document.querySelectorAll('#questions-panel .dnd-handle').forEach(function(handle){
+    handle.setAttribute('draggable','false');
+    handle.style.pointerEvents='none';
+  });
+  document.querySelectorAll('#questions-panel .dnd-slot, #questions-panel .dnd-pill-row').forEach(function(el){
+    el.style.pointerEvents='none';
+  });
+}
+
+function highlightFillReview(inp,userVal,correctVal,num){
+  if(!inp)return;
+  inp.classList.remove('review-user','review-correct','review-wrong');
+  if(!String(userVal).trim()&&!String(correctVal).trim())return;
+  if(String(userVal).trim()){
+    if(isAnswerCorrect(num,userVal))inp.classList.add('review-user','review-correct');
+    else inp.classList.add('review-user','review-wrong');
+  }
+  var stack=inp.closest('.fi-stack')||inp.closest('.si-wrap');
+  var host=stack?stack.parentElement:inp.parentElement;
+  if(!host)return;
+  var rev=host.querySelector('.fill-review[data-q="'+num+'"]');
+  if(!rev){
+    rev=document.createElement('div');
+    rev.className='fill-review';
+    rev.setAttribute('data-q',String(num));
+    if(stack)host.insertBefore(rev,stack.nextSibling);
+    else host.appendChild(rev);
+  }
+  rev.innerHTML=reviewLineHtml(userVal,correctVal,num);
+}
+
+function highlightDndReview(qid,userVal,correctVal,num){
+  var row=document.getElementById('anchor-'+qid);
+  if(!row){
+    var slot=document.querySelector('.dnd-slot[data-qid="'+qid+'"]');
+    if(slot)row=slot.closest('.dnd-row');
+  }
+  if(!row)return;
+  var rev=row.querySelector('.dnd-review');
+  if(!rev){
+    rev=document.createElement('div');
+    rev.className='dnd-review';
+    row.appendChild(rev);
+  }
+  rev.innerHTML=reviewLineHtml(userVal,correctVal,num);
+}
+
+function applyReviewAnswers(){
+  if(!examAnswerKey||!QUESTION_NUMS.length)return;
+  for(var i=0;i<QUESTION_NUMS.length;i++){
+    var n=QUESTION_NUMS[i];
+    var qid='q'+n;
+    var correct=getCorrectAnswerForQuestion(n);
+    if(!String(correct).trim())continue;
+    var user=userAnswersSnapshot[qid]||'';
+    var inp=document.getElementById(qid);
+    if(inp&&inp.tagName==='INPUT'&&inp.type!=='radio'&&inp.type!=='hidden'){
+      highlightFillReview(inp,user,correct,n);
+      continue;
+    }
+    var sel=document.getElementById('sel-'+qid);
+    if(sel&&sel.type==='hidden'){
+      highlightDndReview(qid,user,correct,n);
+      continue;
+    }
+    var optsEl=document.getElementById(qid+'-opts');
+    if(optsEl){
+      highlightMcqReview(qid,user,correct,n);
+    }
+  }
+}
+
+function enterReviewMode(){
+  if(examReviewMode)return;
+  examReviewMode=true;
+  stopExamTimer();
+  stopExamAudio();
+  userAnswersSnapshot=collectAnswers();
+  var ex=document.getElementById('exam-screen');
+  if(ex)ex.classList.add('exam-review-mode');
+  showReviewAudioPlayer();
+  lockExamInputs();
+  if(examAnswerKey)applyReviewAnswers();
+  renderReviewScore();
+  sendSubmissionToGoogleSheet();
+}
+
+function showSuccess(){enterReviewMode();}
+
+function autoSubmit(){enterReviewMode();}
+
+function submitExam(){
+  if(examReviewMode)return;
+  if(!examStarted){
+    alert('Please click Play on the listening screen to start the exam before submitting.');
+    return;
+  }
+  if(!confirm('Nộp bài và xem lại trên trang này?'))return;
+  stopExamTimer();
+  enterReviewMode();
+}
+
+function pdfEscHtml(s){
+  var d=document.createElement('div');
+  d.textContent=s==null?'':String(s);
+  return d.innerHTML;
+}
+
+function pdfStripIds(root){
+  if(!root)return;
+  if(root.getAttribute&&root.getAttribute('id'))root.removeAttribute('id');
+  root.querySelectorAll('[id]').forEach(function(n){ n.removeAttribute('id'); });
+}
+
+function pdfCssEscapeId(id){
+  if(typeof CSS!=='undefined'&&CSS.escape)return CSS.escape(id);
+  return String(id||'').replace(/([^\w-])/g,'\\$1');
+}
+
+function pdfSyncFormStateFromLive(liveRoot, cloneRoot){
+  if(!liveRoot||!cloneRoot)return;
+  liveRoot.querySelectorAll('input').forEach(function(src){
+    var t=(src.type||'').toLowerCase();
+    if(t==='radio'){
+      if(!src.checked)return;
+      var nm=String(src.name||'').replace(/\\/g,'\\\\').replace(/"/g,'\\"');
+      var val=String(src.value||'').replace(/\\/g,'\\\\').replace(/"/g,'\\"');
+      var dst=cloneRoot.querySelector('input[type="radio"][name="'+nm+'"][value="'+val+'"]');
+      if(dst) dst.checked=true;
+      return;
+    }
+    if(t==='checkbox'){
+      if(!src.id)return;
+      var c=cloneRoot.querySelector('#'+pdfCssEscapeId(src.id));
+      if(c&&c.type==='checkbox') c.checked=src.checked;
+      return;
+    }
+    if(t==='hidden')return;
+    if(src.id){
+      var inp=cloneRoot.querySelector('#'+pdfCssEscapeId(src.id));
+      if(inp&&inp.type!=='radio'&&inp.type!=='checkbox') inp.value=src.value;
+    }
+  });
+  var liveSels=liveRoot.querySelectorAll('select');
+  var cloneSels=cloneRoot.querySelectorAll('select');
+  if(liveSels.length===cloneSels.length){
+    for(var si=0;si<liveSels.length;si++){
+      cloneSels[si].selectedIndex=liveSels[si].selectedIndex;
+    }
+  }else{
+    liveRoot.querySelectorAll('select').forEach(function(src){
+      if(!src.id)return;
+      var sel=cloneRoot.querySelector('#'+pdfCssEscapeId(src.id));
+      if(sel) sel.selectedIndex=src.selectedIndex;
+    });
+  }
+}
+
+function pdfFlattenRadioGroups(root){
+  if(!root)return;
+  var guard=0;
+  while(root.querySelector('input[type=radio]')&&guard++<200){
+    var inp=root.querySelector('input[type=radio]');
+    var container=inp.closest&&inp.closest('.opts');
+    if(!container||!container.parentNode){
+      inp.parentNode&&inp.parentNode.removeChild(inp);
+      continue;
+    }
+    var checked=container.querySelector('input[type=radio]:checked');
+    var line=document.createElement('div');
+    line.className='pdf-mcq-result';
+    if(checked){
+      var lab=checked.closest('label.opt');
+      var span=lab&&lab.querySelector('span');
+      line.textContent=span?String(span.textContent).replace(/\s+/g,' ').trim():String(checked.value);
+    }else{
+      line.textContent='\u2014';
+      line.style.color='#718096';
+    }
+    container.parentNode.replaceChild(line,container);
+  }
+}
+
+function pdfConvertMarksForPdf(root){
+  if(!root)return;
+  root.querySelectorAll('mark.user-hl').forEach(function(m){
+    var s=document.createElement('span');
+    s.className='pdf-hl';
+    while(m.firstChild)s.appendChild(m.firstChild);
+    if(m.parentNode)m.parentNode.replaceChild(s,m);
+  });
+}
+
+function pdfFlattenInputs(root){
+  if(!root)return;
+  pdfFlattenRadioGroups(root);
+  root.querySelectorAll('input').forEach(function(inp){
+    var type=(inp.type||'').toLowerCase();
+    if(type==='hidden'||type==='radio'||type==='checkbox')return;
+    var s=document.createElement('span');
+    s.className='pdf-answer-line';
+    s.textContent=inp.value?String(inp.value):'\u2014';
+    inp.parentNode.replaceChild(s,inp);
+  });
+  root.querySelectorAll('select').forEach(function(sel){
+    var t=sel.options[sel.selectedIndex]?sel.options[sel.selectedIndex].text:'\u2014';
+    var sp=document.createElement('span');
+    sp.className='pdf-answer-select';
+    sp.textContent=t;
+    sel.parentNode.replaceChild(sp,sel);
+  });
+}
+
+function pdfSafeFilenamePart(s){
+  var t=String(s||'student').replace(/[^\w\-\s]/g,'').replace(/\s+/g,'-').slice(0,48);
+  return t||'student';
+}
+
+function pdfFlattenRowspanInTables(root){
+  if(!root)return;
+  root.querySelectorAll('table.ntable').forEach(function(table){
+    var guard=0;
+    while(table.querySelector('td[rowspan],th[rowspan]')&&guard++<80){
+      var cell=table.querySelector('td[rowspan],th[rowspan]');
+      var rs=parseInt(cell.getAttribute('rowspan'),10)||1;
+      var idx=cell.cellIndex;
+      if(rs<=1){
+        cell.removeAttribute('rowspan');
+        continue;
+      }
+      cell.removeAttribute('rowspan');
+      var row=cell.parentElement;
+      for(var k=1;k<rs;k++){
+        row=row.nextElementSibling;
+        if(!row||row.tagName!=='TR')break;
+        var dup=cell.cloneNode(true);
+        dup.removeAttribute('rowspan');
+        if(idx===0)row.insertBefore(dup,row.firstChild);
+        else if(row.cells&&row.cells[idx])row.insertBefore(dup,row.cells[idx]);
+        else row.appendChild(dup);
+      }
+    }
+  });
+}
+
+function buildListeningPdfRoot(){
+  var wrap=document.createElement('div');
+  wrap.className='pdf-work-root';
+  var st=document.createElement('style');
+  st.textContent=
+    '.pdf-work-root{box-sizing:border-box;width:100%;max-width:100%;color:var(--exam-chrome-text);margin:0;padding:0;transform:none!important;'+
+    'font-family:Cambria,Georgia,\"Times New Roman\",serif;font-size:11pt;line-height:1.5;}'+
+    '.pdf-work-root *{box-sizing:border-box;}'+
+    '.pdf-banner-title{font-family:Calibri,\"Segoe UI\",Arial,sans-serif;font-size:15pt;font-weight:700;color:var(--exam-chrome-text);margin:0 0 10px;letter-spacing:0.02em;}'+
+    '.pdf-banner-line{height:4px;background:var(--exam-chrome-text);border:none;margin:0 0 18px;border-radius:1px;}'+
+    '.pdf-banner-line--thin{height:2px;background:var(--exam-chrome-border);margin:16px 0 20px;}'+
+    '.pdf-doc-note{font-size:9.5pt;color:#4a5568;margin:0 0 16px;line-height:1.45;font-family:Calibri,\"Segoe UI\",Arial,sans-serif;font-style:italic;}'+
+    '.pdf-meta-table{width:100%;table-layout:fixed;border-collapse:collapse;margin:0 0 4px;font-size:10.5pt;font-family:Calibri,\"Segoe UI\",Arial,sans-serif;}'+
+    '.pdf-meta-table th{text-align:left;font-weight:700;padding:8px 12px;width:32%;border:1px solid var(--exam-chrome-border);background:var(--exam-chrome-surface);color:var(--exam-chrome-text);vertical-align:middle;}'+
+    '.pdf-meta-table td{padding:8px 12px;border:1px solid var(--exam-chrome-border);background:#fff;vertical-align:middle;}'+
+    '.pdf-block-title{font-family:Calibri,\"Segoe UI\",Arial,sans-serif;font-size:11.5pt;font-weight:800;color:var(--exam-chrome-text);text-transform:uppercase;letter-spacing:0.06em;margin:22px 0 14px;padding:0 0 6px;border-bottom:3px solid var(--exam-chrome-text);page-break-after:avoid;}'+
+    '.pdf-block-title small{display:block;font-weight:400;font-size:9.5pt;color:#4a5568;text-transform:none;letter-spacing:0;margin-top:4px;}'+
+    '.pdf-work-root .questions-panel-pdf{'+
+    'width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important;padding:0!important;float:none!important;'+
+    'position:static!important;display:block!important;flex:none!important;border:none!important;outline:none!important;box-shadow:none!important;'+
+    'background:#fff!important;overflow:visible!important;}'+
+    '.pdf-work-root .questions-panel-pdf .qsection{display:block!important;width:100%!important;margin:0 0 18px!important;padding:0!important;}'+
+    '.pdf-work-root .pdf-hl{color:inherit;display:inline;background-color:#fff59d;padding:0 2px;border-radius:2px;'+
+    'box-decoration-break:clone;-webkit-box-decoration-break:clone;text-decoration:none!important;}'+
+    '.pdf-work-root mark.user-hl{background-color:#fff59d;padding:0 2px;border-radius:2px;}'+
+    '.pdf-work-root .dnd-handle{display:none!important;}'+
+    '.pdf-work-root .dnd-pill-row{border:1px solid var(--exam-chrome-border);border-radius:4px;margin:8px 0;width:100%;background:#fafafa;}'+
+    '.pdf-work-root .dnd-pill-text{padding:8px 10px!important;display:block;font-size:10.5pt;line-height:1.45;}'+
+    '.pdf-work-root .dnd-match-layout,.pdf-work-root .dnd-rows{flex-wrap:wrap!important;width:100%!important;}'+
+    '.pdf-work-root .dnd-row{display:block!important;width:100%!important;margin:6px 0!important;}'+
+    '.pdf-work-root .dnd-slot{min-height:auto!important;border:1px dashed #8860a8!important;padding:8px!important;border-radius:4px;background:#fff;}'+
+    '.pdf-work-root .ntable{width:100%;table-layout:fixed;border-collapse:collapse;font-size:10pt;margin:10px 0;font-family:Calibri,\"Segoe UI\",Arial,sans-serif;}'+
+    '.pdf-work-root .ntable th{background:var(--exam-chrome-surface)!important;color:var(--exam-chrome-text)!important;font-weight:700;border:1px solid var(--exam-chrome-border)!important;padding:8px 10px!important;}'+
+    '.pdf-work-root .ntable td{border:1px solid var(--exam-chrome-border)!important;padding:8px 10px!important;vertical-align:top;background:#fff!important;'+
+    'word-wrap:break-word;overflow-wrap:anywhere;hyphens:auto;text-align:left!important;word-spacing:normal!important;letter-spacing:normal!important;'+
+    'text-rendering:optimizeLegibility;font-kerning:normal;-webkit-font-feature-settings:"kern" 1;font-feature-settings:"kern" 1;}'+
+    '.pdf-work-root .ntable tr{break-inside:avoid;page-break-inside:avoid;}'+
+    '.pdf-work-root .ntable td:first-child{white-space:normal!important;width:22%;}'+
+    '.pdf-work-root .pdf-answer-line{background:#fff5f7;border:1px dashed #c53030;color:#1a202c;font-weight:600;padding:1px 5px;border-radius:3px;min-width:1.5em;max-width:100%;display:inline;font-size:10pt;font-family:Calibri,\"Segoe UI\",Arial,sans-serif;'+
+    'word-wrap:break-word;vertical-align:baseline;white-space:normal;}'+
+    '.pdf-work-root .fi-stack,.pdf-work-root .si-wrap{display:inline;white-space:normal;word-spacing:normal;letter-spacing:normal;}'+
+    '.pdf-work-root .fi-num,.pdf-work-root .si-num{margin-right:4px;}'+
+    '.pdf-work-root .pdf-mcq-result{font-size:10.5pt;line-height:1.5;margin:6px 0;padding:8px 10px;border:1px solid var(--exam-chrome-border);border-radius:6px;background:#fafafa;color:var(--exam-chrome-text);}'+
+    '.pdf-work-root .pdf-answer-select{background:var(--exam-chrome-surface);border:2px solid var(--exam-chrome-text);color:var(--exam-chrome-text);font-weight:700;padding:3px 12px;border-radius:4px;display:inline-block;font-size:10pt;font-family:Calibri,\"Segoe UI\",Arial,sans-serif;}'+
+    '.pdf-work-root .qb{margin:0 0 14px;page-break-inside:avoid;}'+
+    '.pdf-work-root .qnum{font-weight:800;font-size:10.5pt;color:var(--exam-chrome-text);font-family:Calibri,\"Segoe UI\",Arial,sans-serif;}'+
+    '.pdf-work-root .qtext{margin:6px 0 10px;font-size:10.5pt;line-height:1.5;}'+
+    '.pdf-work-root .sec-hdr{margin:16px 0 10px;}'+
+    '.pdf-work-root .sec-range{font-family:Calibri,\"Segoe UI\",Arial,sans-serif;font-size:10.5pt;font-weight:800;color:var(--exam-chrome-text);text-transform:uppercase;letter-spacing:0.04em;border-bottom:2px solid #E4E4E7;padding-bottom:4px;margin:0 0 6px;}'+
+    '.pdf-work-root .sec-instr{font-size:10pt;line-height:1.55;margin:6px 0 12px;font-style:italic;color:#4a5568;}'+
+    '.pdf-work-root .mrow{display:block!important;width:100%!important;min-width:0!important;}'+
+    '.pdf-work-root .mrow-top{display:flex!important;flex-direction:row!important;align-items:flex-start!important;gap:8px!important;'+
+    'width:100%!important;min-width:0!important;flex-wrap:nowrap!important;}'+
+    '.pdf-work-root .mrow .mtext{flex:1;min-width:0;}'+
+    '.pdf-work-root .mrow{margin:0 0 14px!important;}'+
+    '.pdf-work-root .mqnum{display:inline-block!important;margin:0 8px 4px 0!important;padding:2px 8px!important;font-size:10pt!important;font-weight:800!important;'+
+    'background:transparent!important;color:var(--exam-chrome-text)!important;border:1px solid var(--exam-chrome-border)!important;border-radius:5px!important;}'+
+    '.pdf-work-root .opts{display:block!important;width:100%!important;gap:0!important;}'+
+    '.pdf-work-root .opt{display:block!important;width:100%!important;border:1px solid var(--exam-chrome-border)!important;margin:0 0 7px!important;padding:8px 10px!important;border-radius:4px;background:#fafafa!important;}'+
+    '.pdf-work-root .sumtext,.pdf-work-root .sumbox{text-align:left!important;word-spacing:normal!important;letter-spacing:normal!important;}'+
+    '.pdf-work-root .sumtext{font-size:10.5pt;line-height:1.75;}'+
+    '.pdf-work-root .sumtitle{font-size:11pt;margin-bottom:8px;font-weight:700;}'+
+    '.pdf-work-root .dnd-match-layout{display:block!important;width:100%!important;}'+
+    '.pdf-work-root .dnd-col{display:block!important;width:100%!important;max-width:100%!important;margin:12px 0!important;}'+
+    '.pdf-work-root .dnd-careers-wrap{width:100%!important;}';
+  wrap.appendChild(st);
+  var answeredN=Object.keys(answered).length;
+  var head=document.createElement('div');
+  head.className='pdf-header-block';
+  head.innerHTML='<div class="pdf-banner-title">MID-TERM TEST &mdash; LISTENING (40&rsquo;)</div>'+
+    '<div class="pdf-banner-line" role="presentation"></div>'+
+    '<p class="pdf-doc-note">Audio was played during the exam. This printout is the question paper and your answers only.</p>'+
+    '<table class="pdf-meta-table" role="presentation">'+
+    '<tr><th>Full name</th><td>'+pdfEscHtml(sName)+'</td></tr>'+
+    '<tr><th>Course</th><td>'+pdfEscHtml(sCourse)+'</td></tr>'+
+    '<tr><th>Date</th><td>'+pdfEscHtml(new Date().toLocaleString('en-GB'))+'</td></tr>'+
+    '<tr><th>Time taken</th><td>'+pdfEscHtml(getTimeTakenStr())+'</td></tr>'+
+    '<tr><th>Questions answered</th><td>'+answeredN+' / 40</td></tr>'+
+    '</table>'+
+    '<div class="pdf-banner-line pdf-banner-line--thin" role="presentation"></div>';
+  wrap.appendChild(head);
+  var h2=document.createElement('div');
+  h2.className='pdf-block-title';
+  h2.innerHTML='All parts <small>Questions, highlights, drag-and-drop placements, and written or selected answers.</small>';
+  wrap.appendChild(h2);
+  var qp=document.getElementById('questions-panel');
+  var qClone=qp.cloneNode(true);
+  qClone.classList.add('questions-panel-pdf');
+  qClone.querySelectorAll('.qsection').forEach(function(el){ el.style.display='block'; });
+  pdfSyncFormStateFromLive(qp, qClone);
+  pdfStripIds(qClone);
+  qClone.style.setProperty('width','100%','important');
+  qClone.style.setProperty('max-width','100%','important');
+  qClone.style.setProperty('min-width','0','important');
+  pdfConvertMarksForPdf(qClone);
+  pdfFlattenRowspanInTables(qClone);
+  pdfStripIds(qClone);
+  pdfFlattenInputs(qClone);
+  wrap.appendChild(qClone);
+  return wrap;
+}
+
+function downloadListeningPdf(){
+  var w=window.open('','_blank');
+  if(!w){
+    alert('Your browser blocked the new tab. Allow pop-ups for this site, then try again.');
+    return;
+  }
+  var root=buildListeningPdfRoot();
+  var d=w.document;
+  d.open();
+  d.write('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">');
+  d.write('<title>ANTHICHTUHOC — Listening (print / PDF)</title>');
+  d.write('<style>');
+  d.write('@media print{ .pdf-print-hint{display:none!important;} .pdf-print-shell{padding:0!important;background:#fff!important;} }');
+  d.write('body{margin:0;background:var(--exam-chrome-surface);font-family:Segoe UI,system-ui,sans-serif;}');
+  d.write('.pdf-print-shell{max-width:880px;margin:0 auto;padding:20px 16px 48px;box-sizing:border-box;}');
+  d.write('.pdf-print-hint{position:sticky;top:0;z-index:9;padding:14px 18px;margin:0 0 20px;background:var(--exam-chrome-surface);border:1px solid var(--exam-chrome-border);border-radius:10px;color:var(--exam-chrome-text);font-size:14px;line-height:1.55;}');
+  d.write('.pdf-print-hint kbd{display:inline-block;background:#fff;border:1px solid var(--exam-chrome-border);border-radius:5px;padding:3px 10px;font-size:13px;font-family:inherit;}');
+  d.write('</style></head><body><div class="pdf-print-shell">');
+  d.write('<div class="pdf-print-hint" role="status">');
+  d.write('<strong>Save as PDF:</strong> Press <kbd>Ctrl</kbd>+<kbd>P</kbd> (Windows/Linux) or <kbd>Cmd</kbd>+<kbd>P</kbd> (Mac), then choose <strong>Save as PDF</strong> or <strong>Microsoft Print to PDF</strong>. You can print to paper instead if you prefer.');
+  d.write('</div><div id="pdf-print-mount"></div></div></body></html>');
+  d.close();
+  var mount=d.getElementById('pdf-print-mount');
+  if(mount) mount.appendChild(d.importNode(root, true));
+}
+
+(function setupPdfDownloadBtnListen(){
+  function go(){
+    var b=document.getElementById('pdf-download-btn');
+    if(b)b.addEventListener('click',downloadListeningPdf);
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);
+  else go();
+})();
+
+// Prevent accidental page close during exam
+window.addEventListener('beforeunload',function(e){
+  if(document.getElementById('exam-screen').style.display!=='none'&&!examReviewMode){
+    e.preventDefault();e.returnValue='';
+  }
+});
+
+window.addEventListener('keydown',function(e){
+  var ex=document.getElementById('exam-screen');
+  if(!ex||ex.style.display==='none')return;
+  var aio=document.getElementById('audio-intro-overlay');
+  if(aio&&aio.classList.contains('is-open'))return;
+  if(examReviewMode)return;
+  if(!(e.ctrlKey||e.metaKey))return;
+  if(e.key==='='||e.key==='+'){
+    e.preventDefault();examZoomIn();
+  }else if(e.key==='-'||e.code==='Minus'){
+    e.preventDefault();examZoomOut();
+  }else if(e.key==='0'){
+    e.preventDefault();examZoomReset();
+  }
+});
+
+function getHighlightRootForRange(range){
+  if(!range)return null;
+  var anc=range.commonAncestorContainer;
+  if(anc.nodeType===3)anc=anc.parentElement;
+  if(anc&&anc.closest&&anc.closest('input,select,textarea,button,.fi,.msel,.fi-num,.mqnum,.si'))return null;
+  var qp=document.getElementById('questions-panel');
+  var ts=document.getElementById('transcript-scroll');
+  if(examReviewMode){
+    if(ts&&anc&&ts.contains(anc))return ts;
+    if(qp&&anc&&qp.contains(anc))return qp;
+    return null;
+  }
+  if(!qp||!anc||!qp.contains(anc))return null;
+  return qp;
+}
+
+function getHighlightBlockElements(root){
+  if(!root)return[];
+  if(root.id==='transcript-scroll'){
+    var body=root.querySelector('.transcript-body');
+    return body?[body]:[];
+  }
+  return root.querySelectorAll(
+    'p, td, th, .sec-topic, .sec-range, .sec-instr, .qtext, .qnum, .mtext, .sumtext, .sumtitle, .wbitem, label.opt, .mqnum, .wbank-title, .dnd-pill-text, .dnd-label, .dnd-col-title'
+  );
+}
+
+function clipRangeToContainer(range,el){
+  var sub=document.createRange();
+  var startsInside=el.contains(range.startContainer);
+  var endsInside=el.contains(range.endContainer);
+  if(startsInside&&endsInside){
+    sub.setStart(range.startContainer,range.startOffset);
+    sub.setEnd(range.endContainer,range.endOffset);
+  }else if(startsInside&&!endsInside){
+    sub.setStart(range.startContainer,range.startOffset);
+    sub.setEnd(el,el.childNodes.length);
+  }else if(!startsInside&&endsInside){
+    sub.setStart(el,0);
+    sub.setEnd(range.endContainer,range.endOffset);
+  }else if(range.intersectsNode(el)){
+    sub.selectNodeContents(el);
+  }else{
+    return null;
+  }
+  return sub;
+}
+
+function wrapRangeWithMark(sub){
+  var mark=document.createElement('mark');
+  mark.className='user-hl';
+  try{
+    sub.surroundContents(mark);
+  }catch(err){
+    var frag=sub.extractContents();
+    mark.appendChild(frag);
+    sub.insertNode(mark);
+  }
+}
+
+function unwrapMark(mark){
+  var parent=mark.parentNode;
+  if(!parent)return;
+  while(mark.firstChild)parent.insertBefore(mark.firstChild,mark);
+  parent.removeChild(mark);
+}
+
+var hlSavedRange=null;
+var hlAnchorMark=null;
+var hlPopoverTimer=null;
+
+function selectionOverlapsUserHighlight(root,range){
+  if(!root)return false;
+  var marks=root.querySelectorAll('mark.user-hl');
+  for(var i=0;i<marks.length;i++){
+    if(range.intersectsNode(marks[i]))return true;
+  }
+  return false;
+}
+
+function positionHlPopover(){
+  var pop=document.getElementById('hl-popover');
+  if(!pop)return;
+  var r;
+  if(hlAnchorMark){
+    r=hlAnchorMark.getBoundingClientRect();
+  }else if(hlSavedRange){
+    r=hlSavedRange.getBoundingClientRect();
+  }else{
+    return;
+  }
+  if(r.width<1&&r.height<1){hideHlPopover();return;}
+  pop.style.display='flex';
+  pop.style.visibility='hidden';
+  pop.style.left='0';
+  pop.style.top='0';
+  var pw=pop.offsetWidth||140;
+  var ph=pop.offsetHeight||30;
+  var left=r.left+r.width/2-pw/2;
+  left=Math.max(8,Math.min(left,window.innerWidth-pw-8));
+  var gap=6;
+  var top=r.top-ph-gap;
+  if(top<8)top=r.bottom+gap;
+  if(top+ph>window.innerHeight-8)top=Math.max(8,window.innerHeight-ph-8);
+  pop.style.left=left+'px';
+  pop.style.top=top+'px';
+  pop.style.visibility='visible';
+}
+
+function hideHlPopover(){
+  var pop=document.getElementById('hl-popover');
+  if(pop){
+    pop.style.display='none';
+    pop.style.visibility='';
+    pop.setAttribute('aria-hidden','true');
+  }
+  hlSavedRange=null;
+  hlAnchorMark=null;
+  var addBtn=document.getElementById('hl-pop-add');
+  var remBtn=document.getElementById('hl-pop-remove');
+  if(addBtn)addBtn.style.display='inline-block';
+  if(remBtn)remBtn.style.display='none';
+}
+
+function findMarkAtCaret(range,root){
+  if(!range.collapsed)return null;
+  var n=range.startContainer;
+  if(n.nodeType===3)n=n.parentElement;
+  var m=n&&n.closest&&n.closest('mark.user-hl');
+  if(m&&root.contains(m))return m;
+  return null;
+}
+
+function syncHlPopover(){
+  var exam=document.getElementById('exam-screen');
+  if(!exam||window.getComputedStyle(exam).display==='none'){hideHlPopover();return;}
+  var sel=window.getSelection();
+  if(!sel.rangeCount){hideHlPopover();return;}
+  var range=sel.getRangeAt(0);
+  var root=getHighlightRootForRange(range);
+  if(!root){hideHlPopover();return;}
+  var addBtn=document.getElementById('hl-pop-add');
+  var remBtn=document.getElementById('hl-pop-remove');
+  var pop=document.getElementById('hl-popover');
+  hlAnchorMark=null;
+  if(range.collapsed){
+    var mk=findMarkAtCaret(range,root);
+    if(!mk){hideHlPopover();return;}
+    hlSavedRange=range.cloneRange();
+    hlAnchorMark=mk;
+    if(addBtn)addBtn.style.display='none';
+    if(remBtn)remBtn.style.display='inline-block';
+    if(pop)pop.setAttribute('aria-hidden','false');
+    requestAnimationFrame(function(){
+      requestAnimationFrame(positionHlPopover);
+    });
+    return;
+  }
+  hlSavedRange=range.cloneRange();
+  if(addBtn)addBtn.style.display='inline-block';
+  if(remBtn){
+    remBtn.style.display=selectionOverlapsUserHighlight(root,range)?'inline-block':'none';
+  }
+  if(pop)pop.setAttribute('aria-hidden','false');
+  requestAnimationFrame(function(){
+    requestAnimationFrame(positionHlPopover);
+  });
+}
+
+function applyHighlightFromRange(range){
+  var root=getHighlightRootForRange(range);
+  if(!root||!range||range.collapsed)return;
+  if(!root.contains(range.commonAncestorContainer))return;
+  var blocks=getHighlightBlockElements(root);
+  var subs=[];
+  for(var i=0;i<blocks.length;i++){
+    var el=blocks[i];
+    if(!range.intersectsNode(el))continue;
+    var sub=clipRangeToContainer(range,el);
+    if(sub&&!sub.collapsed)subs.push(sub);
+  }
+  for(var j=subs.length-1;j>=0;j--){
+    wrapRangeWithMark(subs[j]);
+  }
+  window.getSelection().removeAllRanges();
+}
+
+function removeHighlightFromRange(range){
+  var root=getHighlightRootForRange(range);
+  if(!root||!range||range.collapsed)return;
+  if(!root.contains(range.commonAncestorContainer))return;
+  var marks=root.querySelectorAll('mark.user-hl');
+  var toUnwrap=[];
+  for(var j=0;j<marks.length;j++){
+    if(range.intersectsNode(marks[j]))toUnwrap.push(marks[j]);
+  }
+  for(var k=0;k<toUnwrap.length;k++)unwrapMark(toUnwrap[k]);
+  window.getSelection().removeAllRanges();
+}
+
+(function setupHlPopover(){
+  var pop=document.getElementById('hl-popover');
+  var addBtn=document.getElementById('hl-pop-add');
+  var remBtn=document.getElementById('hl-pop-remove');
+  if(!pop||!addBtn||!remBtn)return;
+
+  pop.addEventListener('mousedown',function(e){e.preventDefault();});
+
+  addBtn.addEventListener('click',function(){
+    if(!hlSavedRange)return;
+    applyHighlightFromRange(hlSavedRange.cloneRange());
+    hideHlPopover();
+  });
+  remBtn.addEventListener('click',function(){
+    if(hlAnchorMark){
+      unwrapMark(hlAnchorMark);
+      hideHlPopover();
+      return;
+    }
+    if(!hlSavedRange)return;
+    removeHighlightFromRange(hlSavedRange.cloneRange());
+    hideHlPopover();
+  });
+
+  document.addEventListener('selectionchange',function(){
+    clearTimeout(hlPopoverTimer);
+    hlPopoverTimer=setTimeout(syncHlPopover,40);
+  });
+
+  function repositionHlIfOpen(){
+    if(hlSavedRange&&document.getElementById('hl-popover').style.display==='flex'){
+      positionHlPopover(hlSavedRange);
+    }
+  }
+  var qp=document.getElementById('questions-panel');
+  if(qp)qp.addEventListener('scroll',repositionHlIfOpen,{passive:true});
+  window.addEventListener('resize',repositionHlIfOpen);
+})();
+</script>
+
+<script>
+(function(){
+  document.documentElement.classList.add('exam-skip-login');
+  function bootExam(){
+    var nameEl=document.getElementById('inp-name');
+    var courseEl=document.getElementById('inp-course');
+    if(nameEl&&!nameEl.value)nameEl.value='Học viên';
+    if(courseEl&&!courseEl.value)courseEl.value='Đề thi thật 1';
+    if(window.__EXAM_BOOT__&&typeof applyExamPayload==='function')applyExamPayload(window.__EXAM_BOOT__);
+    if(typeof startExam==='function')startExam();
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',bootExam);
+  else bootExam();
+})();
+</script></body>
+</html>

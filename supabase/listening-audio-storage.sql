@@ -1,5 +1,7 @@
 -- Bucket private cho audio Luyện nghe (Cam 19, Tactics Basic…).
--- Chạy trong Supabase SQL Editor, rồi: npm run listening:upload-audio
+-- Supabase Free: tối đa 50 MB / file (global, không tăng được trên Free).
+-- File lớn (vd. real test 1.mp3 ~86 MB): npm run listening:prepare-audio-for-upload rồi upload.
+-- Chạy SQL này trong Supabase SQL Editor, rồi: npm run listening:upload-audio
 
 insert into storage.buckets (id, name, public, file_size_limit, allowed_mime_types)
 values (

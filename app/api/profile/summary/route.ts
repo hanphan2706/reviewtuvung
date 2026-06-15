@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 import { requireApiUser } from "@/lib/auth/require-api-user";
 import {
+  countCompletedListeningLessons,
   countCompletedReadingArticles,
+  LISTENING_LESSONS_TOTAL,
   READING_ARTICLES_TOTAL,
   vocabularyReviewedToday,
 } from "@/lib/profile/learning-progress";
@@ -22,13 +24,14 @@ export async function GET() {
   const userId = auth.user.id;
   const now = Date.now();
 
-  const [progressResult, logResult, wordsResult, settingsResult] = await Promise.all([
+  const [progressResult, logResult, listeningLogResult, wordsResult, settingsResult] = await Promise.all([
     supabase
       .from("reading_progress")
       .select("current_streak,longest_streak,last_read_date,articles_opened")
       .eq("user_id", userId)
       .maybeSingle(),
     supabase.from("reading_article_log").select("article_key,progress").eq("user_id", userId),
+    supabase.from("listening_lesson_log").select("lesson_id,progress").eq("user_id", userId),
     supabase.from("srs_words").select("id,next_review_at").eq("user_id", userId),
     supabase
       .from("srs_settings")
@@ -41,9 +44,13 @@ export async function GET() {
     return NextResponse.json({ configured: true, error: progressResult.error.message }, { status: 500 });
   }
 
-  if (logResult.error || wordsResult.error || settingsResult.error) {
+  if (logResult.error || listeningLogResult.error || wordsResult.error || settingsResult.error) {
     const message =
-      logResult.error?.message ?? wordsResult.error?.message ?? settingsResult.error?.message ?? "Lỗi tải dữ liệu";
+      logResult.error?.message ??
+      listeningLogResult.error?.message ??
+      wordsResult.error?.message ??
+      settingsResult.error?.message ??
+      "Lỗi tải dữ liệu";
     return NextResponse.json({ configured: true, error: message }, { status: 500 });
   }
 
@@ -58,6 +65,11 @@ export async function GET() {
   const logRows =
     (logResult.data as { article_key: string; progress: number }[] | null)?.filter(
       (r) => typeof r.article_key === "string",
+    ) ?? [];
+
+  const listeningLogRows =
+    (listeningLogResult.data as { lesson_id: string; progress: number }[] | null)?.filter(
+      (r) => typeof r.lesson_id === "string",
     ) ?? [];
 
   const wordRows =
@@ -88,6 +100,8 @@ export async function GET() {
     readingLongestStreak: streak.longestStreak,
     readingArticlesCompleted: countCompletedReadingArticles(logRows),
     readingArticlesTotal: READING_ARTICLES_TOTAL,
+    listeningLessonsCompleted: countCompletedListeningLessons(listeningLogRows),
+    listeningLessonsTotal: LISTENING_LESSONS_TOTAL,
     vocabularyTotal: wordRows.length,
     vocabularyReviewedToday: vocabularyReviewedToday(tallies, now),
     vocabularyDueToday: countDue(wordsForDue, now),

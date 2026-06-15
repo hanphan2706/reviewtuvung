@@ -1,3 +1,5 @@
+import { createReadStream, statSync } from "node:fs";
+import { Readable } from "node:stream";
 import { NextResponse } from "next/server";
 
 function parseByteRange(
@@ -36,6 +38,37 @@ export function mp3NextResponse(bytes: Buffer, request?: Request): NextResponse 
   }
 
   return new NextResponse(body, {
+    headers: {
+      "Content-Type": "audio/mpeg",
+      "Content-Length": String(size),
+      "Accept-Ranges": "bytes",
+      "Cache-Control": "private, no-store",
+    },
+  });
+}
+
+/** Stream MP3 from disk — avoids loading large files entirely into memory. */
+export function mp3FileNextResponse(filePath: string, request?: Request): NextResponse {
+  const size = statSync(filePath).size;
+  const range = parseByteRange(request?.headers.get("range") ?? null, size);
+
+  if (range) {
+    const { start, end } = range;
+    const stream = createReadStream(filePath, { start, end });
+    return new NextResponse(Readable.toWeb(stream) as ReadableStream, {
+      status: 206,
+      headers: {
+        "Content-Type": "audio/mpeg",
+        "Content-Length": String(end - start + 1),
+        "Content-Range": `bytes ${start}-${end}/${size}`,
+        "Accept-Ranges": "bytes",
+        "Cache-Control": "private, no-store",
+      },
+    });
+  }
+
+  const stream = createReadStream(filePath);
+  return new NextResponse(Readable.toWeb(stream) as ReadableStream, {
     headers: {
       "Content-Type": "audio/mpeg",
       "Content-Length": String(size),

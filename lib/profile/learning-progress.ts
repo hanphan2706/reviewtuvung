@@ -1,3 +1,5 @@
+import { LISTENING_PARTS_PILOT } from "@/lib/listening/content-manifest";
+import { countCompletedListeningLessons } from "@/lib/listening/listening-progress";
 import { READING_HUB_ARTICLES } from "@/lib/reading/hub-articles";
 import { localDayKey } from "@/lib/review-day-stats";
 import type { ReviewDayTalliesMap } from "@/lib/types";
@@ -14,6 +16,8 @@ export type ProfileLearningProgress = {
   vocabularyDueToday: number;
   readingArticlesCompleted: number;
   readingArticlesTotal: number;
+  listeningLessonsCompleted: number;
+  listeningLessonsTotal: number;
 };
 
 export function normalizeReadingArticleKey(key: string): string | null {
@@ -38,6 +42,8 @@ export function countCompletedReadingArticles(
   return completed;
 }
 
+export { countCompletedListeningLessons };
+
 export function vocabularyReviewedToday(tallies: ReviewDayTalliesMap, now = Date.now()): number {
   const tally = tallies[localDayKey(now)];
   if (!tally) return 0;
@@ -45,3 +51,4 @@ export function vocabularyReviewedToday(tallies: ReviewDayTalliesMap, now = Date
 }
 
 export const READING_ARTICLES_TOTAL = READING_HUB_ARTICLES.length;
+export const LISTENING_LESSONS_TOTAL = LISTENING_PARTS_PILOT.length;

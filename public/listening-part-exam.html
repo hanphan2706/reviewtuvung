@@ -19,9 +19,9 @@
   --exam-header-surface:rgba(250,250,250,.1);
   --exam-submit-bg:#000001;
   --exam-submit-text:#FAFAFA;
-  --exam-purple:#4b2876;
-  --exam-purple-border:#d4c8e4;
-  --exam-purple-soft:#ebe6f4;
+  --exam-purple:#000001;
+  --exam-purple-border:#E4E4E7;
+  --exam-purple-soft:#f5f5f7;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html.exam-skip-login #login-screen{display:none!important}
@@ -79,18 +79,18 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--exam-chrome-surfac
 .transcript-audio-dock .review-audio-card{border:none;box-shadow:none;padding:0;max-width:none;margin:0;display:flex;flex-direction:column;gap:0}
 .review-audio-seek{cursor:pointer}
 .review-audio-seek-track{height:5px;border-radius:999px;background:#E4E4E7;overflow:hidden}
-.review-audio-seek-fill{height:100%;width:0%;border-radius:999px;background:#4b2876;transition:width .1s linear}
+.review-audio-seek-fill{height:100%;width:0%;border-radius:999px;background:#000001;transition:width .1s linear}
 .review-audio-times{display:flex;justify-content:space-between;margin-top:4px;font-size:11px;line-height:1;color:#47464b;font-variant-numeric:tabular-nums}
 .review-audio-controls{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:2px}
 .review-audio-side{display:flex;align-items:center;gap:6px;min-width:60px}
 .review-audio-side-spacer{width:3.5rem;min-width:3.5rem;flex-shrink:0}
 .review-audio-speed{display:inline-flex;align-items:center;gap:4px;border:none;background:transparent;color:#47464b;font-size:12px;font-weight:600;cursor:pointer;padding:0;font-family:inherit}
-.review-audio-speed:hover{color:#4b2876}
+.review-audio-speed:hover{color:#000001}
 .review-audio-mute{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border:none;border-radius:999px;background:transparent;color:#47464b;cursor:pointer;padding:0}
-.review-audio-mute:hover{background:#f3f0f8;color:#4b2876}
+.review-audio-mute:hover{background:#f5f5f7;color:#000001}
 .review-audio-center{display:flex;align-items:center;justify-content:center;gap:6px}
 .review-audio-skip{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border:none;border-radius:999px;background:transparent;color:#47464b;cursor:pointer;padding:0}
-.review-audio-skip:hover{background:#f3f0f8}
+.review-audio-skip:hover{background:#f5f5f7}
 .review-audio-skip-wrap{position:relative;display:flex;width:20px;height:20px;align-items:center;justify-content:center}
 .review-audio-skip-num{position:absolute;font-size:7px;font-weight:700;line-height:1}
 .review-audio-play{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:none;border-radius:999px;background:#000001;color:#fff;cursor:pointer;padding:0;box-shadow:0 2px 4px rgba(0,0,1,.12)}
@@ -1069,12 +1069,6 @@ function enterReviewMode(){
   lockExamInputs();
   if(examAnswerKey)applyReviewAnswers();
   renderReviewScore();
-  var hint=document.querySelector('.track-hint');
-  if(hint){
-    hint.textContent=examAnswerKey
-      ?'Đã nộp · Tím = bạn chọn · Xanh lá = đáp án đúng'
-      :'Đã nộp bài · Không có đáp án trong file — chỉ xem lại bài làm';
-  }
 }
 
 function autoSubmit(){enterReviewMode();}

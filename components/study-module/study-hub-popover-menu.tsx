@@ -117,7 +117,6 @@ export function StudyHubPopoverMenu({
           open={open}
           onClick={() => setOpen((v) => !v)}
           matchNavLink
-          className="text-ink-muted"
         />
       </div>
       {panel ? createPortal(panel, document.body) : null}

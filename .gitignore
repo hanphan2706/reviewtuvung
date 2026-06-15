@@ -50,12 +50,14 @@ data/dictionary/en-vi-stardict.json
 /materials/
 /transcript/
 
-# Bài đọc raw (Cambridge…) — chỉ local.
-/reading raw/
+# Bài đọc raw (Cambridge…) — chỉ local; đáp án đề thi thật được commit.
+/reading raw/*
+!/reading raw/real test 1.txt
 
 # Audio nghe pilot (Cambridge…) — chỉ local / deploy riêng, không commit mp3.
 /public/listening-assets/cam19/*.mp3
-/listening materials/Audio cam 19/*.mp3
+/listening materials/Audio cam/*.mp3
+/listening materials/Audio real test/*.mp3
 /listening materials/*.zip
 
 # Cache Whisper build (regen bằng npm run listening:sync-transcript).

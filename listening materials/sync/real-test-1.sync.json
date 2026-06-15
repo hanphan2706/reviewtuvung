@@ -1,0 +1,1042 @@
+{
+  "version": 1,
+  "partId": "real-test-1",
+  "audioFile": "real test 1.mp3",
+  "durationSeconds": 2255,
+  "method": "whisper-local",
+  "preambleSeconds": 80.37,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "STAFF",
+      "text": "Hello, Fernley sports center. How can I help you?",
+      "start": 80.37,
+      "end": 87.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "PETER",
+      "text": "Yes, I'd like to apply for one of the lifeguard jobs you advertise this week.",
+      "start": 87.76,
+      "end": 93.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "STAFF",
+      "text": "Right, we can do that now over the phone. I'll just need some information from you. Let me get a form.",
+      "start": 93.14,
+      "end": 101.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "PETER",
+      "text": "Okay, so let's start with your name. Peter Smith.",
+      "start": 101.24,
+      "end": 106.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "STAFF",
+      "text": "Okay, can you let me have your home address?",
+      "start": 106.92,
+      "end": 110.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "PETER",
+      "text": "It's 130 South Main Street, Lake Elsonore.",
+      "start": 110.92,
+      "end": 116.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "STAFF",
+      "text": "Okay, I'm new around here. Can you spell that for me?",
+      "start": 116.08,
+      "end": 122.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "PETER",
+      "text": "Yes, it's E-L-S-I-N-O-R-E. Q1",
+      "start": 122.32,
+      "end": 129.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "STAFF",
+      "text": "Okay, got that. And your phone number?",
+      "start": 129.18,
+      "end": 133.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "PETER",
+      "text": "My home numbers 951-674-3124. Q9",
+      "start": 133.44,
+      "end": 141.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "STAFF",
+      "text": "But it's best to ring me on my cell phone. That's 0778-96245. Q2",
+      "start": 141.36,
+      "end": 153.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "PETER",
+      "text": "Now, what do you do? Are you still in college or are you working full time? I'm in my second year here at Fernley and this vacation I've got a job as a part-time waiter. Q3",
+      "start": 153.15,
+      "end": 165.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "STAFF",
+      "text": "Okay, I guess if you're at Fernley College, you'll be studying physical education.",
+      "start": 165.59,
+      "end": 170.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "PETER",
+      "text": "And they all seem to do that there. That's right. Then I hope to go on and coach baseball in high school. Something like that. Q4",
+      "start": 170.95,
+      "end": 178.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "STAFF",
+      "text": "I guess it all depends on how I do in my final exams.",
+      "start": 178.75,
+      "end": 182.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "PETER",
+      "text": "Okay, sounds good to me.",
+      "start": 182.27,
+      "end": 230.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "STAFF",
+      "text": "Now, the next part of the form deals with qualifications. Do you have the water safety certificate? We absolutely insist on that.",
+      "start": 230.73,
+      "end": 239.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "PETER",
+      "text": "Yes, I do.",
+      "start": 239.83,
+      "end": 241.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "STAFF",
+      "text": "So how long will it last before you have to do a refresher course?",
+      "start": 241.09,
+      "end": 245.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "PETER",
+      "text": "I took it last November so it'll run out in October. Q5",
+      "start": 245.13,
+      "end": 248.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "STAFF",
+      "text": "Okay, good. Now, what about work experience as a lifeguard?",
+      "start": 248.55,
+      "end": 252.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "PETER",
+      "text": "Well, I've had about four months experience.",
+      "start": 252.97,
+      "end": 256.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "STAFF",
+      "text": "Which swimming pool was that at? I need to have details if your employer obviously so we can get a reference.",
+      "start": 256.99,
+      "end": 263.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "PETER",
+      "text": "Oh, it was at the beach here in Fernley. I can get the number of the person you need to contact. Q6",
+      "start": 263.53,
+      "end": 269.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "STAFF",
+      "text": "Good. And do you have any other additional skills I can put down?",
+      "start": 269.59,
+      "end": 274.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "PETER",
+      "text": "You can put down diving. I've done that for a long time now. Q7",
+      "start": 274.33,
+      "end": 278.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "STAFF",
+      "text": "I'm also keen on rock climbing but that's not really relevant here.",
+      "start": 278.03,
+      "end": 282.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "PETER",
+      "text": "No, okay. And I need to ask when you would prefer to work. You can choose either Saturday mornings or any time Monday to Friday. Q8",
+      "start": 282.95,
+      "end": 293.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "STAFF",
+      "text": "We've got enough people on Sundays at the moment.",
+      "start": 293.67,
+      "end": 296.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "PETER",
+      "text": "Well, not Monday to Friday because I'm at the restaurant weekday evenings.",
+      "start": 296.95,
+      "end": 301.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "STAFF",
+      "text": "Okay. We open at 6. Could you start that early?",
+      "start": 301.79,
+      "end": 305.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "PETER",
+      "text": "No, that's fine. I'd prefer that to working late.",
+      "start": 305.95,
+      "end": 309.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "STAFF",
+      "text": "Okay. Now I need to speak to the committee who run the sports center here.",
+      "start": 309.93,
+      "end": 315.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "PETER",
+      "text": "But you should hear back from us pretty soon and then they'll probably arrange an interview.",
+      "start": 315.13,
+      "end": 319.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "STAFF",
+      "text": "Thanks very much. Great. Now, before you go, I'd just like to ask you how you found out about our advertisement. We always ask this. Was it from the newspaper or the radio? I heard the advertisement this morning when I was driving into college. I don't usually read the local paper. Q10",
+      "start": 319.99,
+      "end": 336.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "PETER",
+      "text": "All right. Thanks. Well, that's all. Hope to see you soon.",
+      "start": 336.79,
+      "end": 417.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "ARTHUR",
+      "text": "on how to become a self-made millionaire.",
+      "start": 417.9,
+      "end": 471.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "SUE",
+      "text": "Now, listen carefully and answer questions 11 to 16.",
+      "start": 471.62,
+      "end": 479.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "ARTHUR",
+      "text": "Everybody dreams of becoming a millionaire one day. So we asked Arthur Knowles, who made his millions in the plumbing business",
+      "start": 479.31,
+      "end": 487.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "SUE",
+      "text": "to give the budding entrepreneurs among you a few tips on how to make your first million. Arthur, welcome to the program. Thanks, Sue. So, Arthur, what advice do you have for our listeners?",
+      "start": 487.97,
+      "end": 502.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "ARTHUR",
+      "text": "Well, one thing I've heard people say is that when you're starting up a business,",
+      "start": 502.07,
+      "end": 506.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "SUE",
+      "text": "you can't afford to make mistakes.",
+      "start": 506.67,
+      "end": 509.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "ARTHUR",
+      "text": "Well, I believe in the old saying a person who never made a mistake, never made anything. Q11",
+      "start": 509.17,
+      "end": 515.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": "SUE",
+      "text": "You can't really predict when you'll make mistakes and you have to look at them as a positive experience",
+      "start": 515.61,
+      "end": 521.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": "ARTHUR",
+      "text": "and one that means you won't make the same mistake again.",
+      "start": 521.33,
+      "end": 525.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": "SUE",
+      "text": "You need to be able to cope with the world of business.",
+      "start": 525.39,
+      "end": 529.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": "ARTHUR",
+      "text": "But according to recent American business school studies, believing in yourself isn't enough by itself to guarantee success.",
+      "start": 529.07,
+      "end": 537.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": "SUE",
+      "text": "Confidence can be a good thing, but a person can have too much confidence. Q12",
+      "start": 537.59,
+      "end": 543.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": "ARTHUR",
+      "text": "And people who try to learn to be confident by buying those how to succeed books are just wasting their time.",
+      "start": 543.47,
+      "end": 551.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": "SUE",
+      "text": "The advice given in these American studies was that being a successful entrepreneur comes down to having the right attitude.",
+      "start": 551.35,
+      "end": 560.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": "ARTHUR",
+      "text": "It's no good getting depressed every time something goes wrong.",
+      "start": 560.53,
+      "end": 565.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": "SUE",
+      "text": "Always keep your goals in mind and never give up. Q13",
+      "start": 565.11,
+      "end": 568.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": "ARTHUR",
+      "text": "And don't listen to all the people around you who say, oh, this will never work.",
+      "start": 568.73,
+      "end": 574.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-54",
+      "speaker": "SUE",
+      "text": "One thing I've learned in business is that you don't have to be an expert in everything, like marketing, for example. Q14",
+      "start": 574.29,
+      "end": 582.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": "ARTHUR",
+      "text": "When I started my business, I tried to do it all myself.",
+      "start": 582.77,
+      "end": 586.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-56",
+      "speaker": "SUE",
+      "text": "But I soon realized that although I knew everything there was to know about plumbing, I didn't have much idea about how to sell my ideas.",
+      "start": 586.55,
+      "end": 594.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-57",
+      "speaker": "ARTHUR",
+      "text": "So I got someone who knew more about this to take care of the marketing side of things for me.",
+      "start": 594.95,
+      "end": 601.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-58",
+      "speaker": "SUE",
+      "text": "Then as for leadership, well, you've got to be someone your workers look up to because you've been seen to make the right decisions. Q15",
+      "start": 601.07,
+      "end": 610.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-59",
+      "speaker": "ARTHUR",
+      "text": "You have to be able to control people, but listen to them at the same time.",
+      "start": 610.21,
+      "end": 615.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-60",
+      "speaker": "SUE",
+      "text": "Some people are driven to make their companies successful, but that too often leads to a ruthless approach.",
+      "start": 615.65,
+      "end": 624.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-61",
+      "speaker": "ARTHUR",
+      "text": "Then there's the question of taking risks, even calculated ones.",
+      "start": 624.09,
+      "end": 628.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-62",
+      "speaker": "SUE",
+      "text": "I personally feel it's actually better to tread carefully when it comes to taking short-term risks. Q16",
+      "start": 628.31,
+      "end": 636.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-63",
+      "speaker": "ARTHUR",
+      "text": "You need a degree of vision certainly, but it's easy to get carried away by your desire to increase profits.",
+      "start": 636.19,
+      "end": 643.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-64",
+      "speaker": "SUE",
+      "text": "And if things go wrong, you can end up losing more than you gain.",
+      "start": 643.95,
+      "end": 685.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-65",
+      "speaker": "ARTHUR",
+      "text": "So if you have a great idea for a business, what should you do next?",
+      "start": 685.13,
+      "end": 690.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-66",
+      "speaker": "SUE",
+      "text": "Well, the first thing to ask yourself is whether there's a need for your product or service. Q17",
+      "start": 690.51,
+      "end": 696.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-67",
+      "speaker": "ARTHUR",
+      "text": "Can you cater for people's needs better than existing companies?",
+      "start": 696.61,
+      "end": 701.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-68",
+      "speaker": "SUE",
+      "text": "You don't need to worry about whether it's original or not because there isn't always enough of a demand for completely new ideas. Q19",
+      "start": 701.41,
+      "end": 708.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-69",
+      "speaker": "ARTHUR",
+      "text": "And the second thing to ask yourself is not what color should the packet be or how much should it cost, Q20",
+      "start": 708.17,
+      "end": 716.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-70",
+      "speaker": "SUE",
+      "text": "but do I care enough about this idea to dedicate the next 10 years of my life to it? Q18",
+      "start": 716.47,
+      "end": 722.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-71",
+      "speaker": "ARTHUR",
+      "text": "Because realistically, that's how long it will take. Tell us how you got started, Arthur. How do you explain your early success? Well, I started my business just as the economy was going into a recession, which wasn't the best time.",
+      "start": 722.35,
+      "end": 737.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-72",
+      "speaker": "SUE",
+      "text": "And I was lucky to survive, especially as the banks weren't being particularly supportive to small businesses at that time.",
+      "start": 737.71,
+      "end": 745.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-73",
+      "speaker": "ARTHUR",
+      "text": "If I'd listened to the business advice I was given back then, I'd never have got started. My strengths were that I knew I could provide a better service than my competitors, who really hadn't spotted the opportunities that were out there.",
+      "start": 745.33,
+      "end": 760.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-74",
+      "speaker": "SUE",
+      "text": "And that my wife had a good job and was able to pay the household bills while I was getting the company on its feet.",
+      "start": 760.45,
+      "end": 766.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-75",
+      "speaker": "ARTHUR",
+      "text": "The first couple of years were very tough, but I knew I would make it eventually.",
+      "start": 766.53,
+      "end": 773.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-76",
+      "speaker": "SUE",
+      "text": "Okay, now we're going to take some calls from listeners.",
+      "start": 773.01,
+      "end": 886.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-77",
+      "speaker": "CHARLIE",
+      "text": "So Gina, we've got to give our tutors some feedback on how we feel about the course now we've come to the end of our second year.",
+      "start": 886.02,
+      "end": 893.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-78",
+      "speaker": "GINA",
+      "text": "Is it okay with you if we have a chat together before we go and see him?",
+      "start": 893.66,
+      "end": 897.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-79",
+      "speaker": "CHARLIE",
+      "text": "Sure, Charlie.",
+      "start": 897.54,
+      "end": 899.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-80",
+      "speaker": "GINA",
+      "text": "So did you choose this university to do performance arts because it's got such a good reputation? Q27",
+      "start": 899.08,
+      "end": 905,
+      "preAudio": false
+    },
+    {
+      "id": "cue-81",
+      "speaker": "CHARLIE",
+      "text": "That's what hooked me in.",
+      "start": 905,
+      "end": 906.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-82",
+      "speaker": "GINA",
+      "text": "Well, there are other good places which I also considered, but when I looked into things further, I was impressed by the connections this course has with a whole range of theatres of different types. Q21",
+      "start": 906.56,
+      "end": 920.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-83",
+      "speaker": "CHARLIE",
+      "text": "So even though I was tempted to go and study abroad, I decided to come here in the end.",
+      "start": 920.04,
+      "end": 926.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-84",
+      "speaker": "GINA",
+      "text": "And you don't regret it? No, it's been brilliant, especially the options this year.",
+      "start": 926.5,
+      "end": 934.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-85",
+      "speaker": "CHARLIE",
+      "text": "The body and dance option I did for this term has been particularly stimulating.",
+      "start": 934.36,
+      "end": 939.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-86",
+      "speaker": "GINA",
+      "text": "I'm sorry I didn't go for that one too, but I did dance and drama, which was brilliant too.",
+      "start": 939.98,
+      "end": 946.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-87",
+      "speaker": "CHARLIE",
+      "text": "I think the most valuable option I've done was the movement analysis course we did in the first year. Q22",
+      "start": 946.88,
+      "end": 952.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-88",
+      "speaker": "GINA",
+      "text": "Absolutely. It's provided a great foundation for all our other works since then.",
+      "start": 952.18,
+      "end": 959.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-89",
+      "speaker": "CHARLIE",
+      "text": "So let's talk about our work experience last summer.",
+      "start": 959.36,
+      "end": 963.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-90",
+      "speaker": "GINA",
+      "text": "You went to Finland, didn't you?",
+      "start": 963.96,
+      "end": 966.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-91",
+      "speaker": "CHARLIE",
+      "text": "That's right. I was at their National Ballet Theatre.",
+      "start": 966.6,
+      "end": 970.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-92",
+      "speaker": "GINA",
+      "text": "I didn't get the chance to go on stage, but I helped out with sewing clothes for current productions and even with designing some for future shows. Q23",
+      "start": 970.62,
+      "end": 978.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-93",
+      "speaker": "CHARLIE",
+      "text": "It was brilliant. I got to know a lot of students studying at the local dance school and I may get the chance to go back there next summer.",
+      "start": 978.82,
+      "end": 989,
+      "preAudio": false
+    },
+    {
+      "id": "cue-94",
+      "speaker": "GINA",
+      "text": "I've been offered more work at the place where I was working in Canada. Great. So what do you think you gained most from the experience?",
+      "start": 989,
+      "end": 998.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-95",
+      "speaker": "CHARLIE",
+      "text": "I think I've got much better at controlling my stress levels.",
+      "start": 998.86,
+      "end": 1002.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-96",
+      "speaker": "GINA",
+      "text": "For me, it was probably the fact that I learned a lot about collaborating with others rather than working independently. Q24",
+      "start": 1002.3,
+      "end": 1012,
+      "preAudio": false
+    },
+    {
+      "id": "cue-97",
+      "speaker": "CHARLIE",
+      "text": "I was lucky to be able to do that in a situation that wasn't too stressful.",
+      "start": 1012,
+      "end": 1017.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-98",
+      "speaker": "GINA",
+      "text": "Also, I had to organise my time well, but I've always been reasonably good at that.",
+      "start": 1017.96,
+      "end": 1025.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-99",
+      "speaker": "CHARLIE",
+      "text": "That's good. So we've got quite a few things ready to say to our tutor.",
+      "start": 1025.14,
+      "end": 1029.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-100",
+      "speaker": "GINA",
+      "text": "It would be a good chance to ask him any questions we have to, of course.",
+      "start": 1029.84,
+      "end": 1034.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-101",
+      "speaker": "CHARLIE",
+      "text": "I also think it could be helpful to discuss our future plans.",
+      "start": 1034.9,
+      "end": 1040.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-102",
+      "speaker": "GINA",
+      "text": "For example, what we're planning to do are dissertations on.",
+      "start": 1040.34,
+      "end": 1045.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-103",
+      "speaker": "CHARLIE",
+      "text": "Sure. I was unsure about whether to focus on globalisation in dance or on stage design.",
+      "start": 1045.38,
+      "end": 1052.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-104",
+      "speaker": "GINA",
+      "text": "I did an essay on globalisation in my first year and really enjoyed it.",
+      "start": 1052.26,
+      "end": 1056.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-105",
+      "speaker": "CHARLIE",
+      "text": "But then I saw a spectacular production at the Royal Opera House, and that settled me on stage design. Q25",
+      "start": 1056.96,
+      "end": 1064.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-106",
+      "speaker": "GINA",
+      "text": "I know another student who's planning to work on that too, so we can discuss things together a bit.",
+      "start": 1064.46,
+      "end": 1070.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-107",
+      "speaker": "CHARLIE",
+      "text": "Okay. That could be useful.",
+      "start": 1070.26,
+      "end": 1073.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-108",
+      "speaker": "GINA",
+      "text": "I'm planning to do something on current trends and contemporary dance for my dissertation.",
+      "start": 1073.1,
+      "end": 1078.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-109",
+      "speaker": "CHARLIE",
+      "text": "That sounds pretty challenging. It's a big topic.",
+      "start": 1078.9,
+      "end": 1082.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-110",
+      "speaker": "GINA",
+      "text": "It might not be easy to organise in a coherent way.",
+      "start": 1082.6,
+      "end": 1086.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-111",
+      "speaker": "CHARLIE",
+      "text": "I've thought about it quite a lot, and I think that'll be okay, and I feel confident about how to write a longer piece of work.",
+      "start": 1086.94,
+      "end": 1096.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-112",
+      "speaker": "GINA",
+      "text": "I'm in a bit of a panic, though, about how I'll get through all the literature. Q26",
+      "start": 1096.3,
+      "end": 1102.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-113",
+      "speaker": "CHARLIE",
+      "text": "There seems to be so much. Hopefully it won't all be relevant.",
+      "start": 1102.6,
+      "end": 1107.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-114",
+      "speaker": "GINA",
+      "text": "Quite.",
+      "start": 1107.5,
+      "end": 1144.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-115",
+      "speaker": "CHARLIE",
+      "text": "So have you made any career plans yet?",
+      "start": 1144.73,
+      "end": 1147.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-116",
+      "speaker": "GINA",
+      "text": "I'm still undecided. I've thought about performance, of course.",
+      "start": 1147.71,
+      "end": 1152.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-117",
+      "speaker": "CHARLIE",
+      "text": "Yes, I think lots of graduates from here take that route, but it's a hard life involving lots of tough repetitive practice,",
+      "start": 1152.91,
+      "end": 1160.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-118",
+      "speaker": "GINA",
+      "text": "as well as actually appearing on stage.",
+      "start": 1160.45,
+      "end": 1163.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-119",
+      "speaker": "CHARLIE",
+      "text": "Yes, but the performance I've met know that's essential for the job, and say they wouldn't change what they do for the world.",
+      "start": 1163.29,
+      "end": 1171.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-120",
+      "speaker": "GINA",
+      "text": "I know lots of graduates go into education, teaching at various levels, but that means doing some kind of post-grad certificate. Q28",
+      "start": 1171.75,
+      "end": 1179.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-121",
+      "speaker": "CHARLIE",
+      "text": "But I think it would be interesting, rewarding work.",
+      "start": 1179.69,
+      "end": 1183.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-122",
+      "speaker": "GINA",
+      "text": "I was wondering about theatre management as a possible option. Q29",
+      "start": 1183.27,
+      "end": 1187.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-123",
+      "speaker": "CHARLIE",
+      "text": "That's what our tutor did before he got into teaching, isn't it?",
+      "start": 1187.21,
+      "end": 1191.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-124",
+      "speaker": "GINA",
+      "text": "Yes, but he said he quickly realised it wasn't for him. He wasn't earning enough to live on.",
+      "start": 1191.07,
+      "end": 1197.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-125",
+      "speaker": "CHARLIE",
+      "text": "I can imagine his communication skills are better than his business skills as well.",
+      "start": 1197.79,
+      "end": 1203.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-126",
+      "speaker": "GINA",
+      "text": "Marketing's a possibility, of course. Q30",
+      "start": 1203.43,
+      "end": 1205.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-127",
+      "speaker": "CHARLIE",
+      "text": "Sure. I've read something saying it can be an interesting career, though I don't think many graduates go for this.",
+      "start": 1205.81,
+      "end": 1213.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-128",
+      "speaker": "GINA",
+      "text": "But that might mean there's not so much competition as in many other fields of dance. Right. So now should we make a list?",
+      "start": 1213.41,
+      "end": 1332.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-129",
+      "speaker": "LECTURER",
+      "text": "Hello everybody. I'm here today to tell you about a new research study that my team here at the University is doing on the sea lions that live along the coast of Western Australia. You may be wondering why we've been studying this animal. Well, Australian sea lions have been identified as an endangered species. So there's a real need to count them and find out just how many there are. Up until 1892 the population of these animals was severely depleted because of hunting. That's no longer allowed. But today there is a new danger. Sea lions often forage for food in the same areas along the coastlines where there are nets used to catch sharks. Unfortunately, they tend to get caught up in the nets by accident and drown. Now we wanted to monitor the population of sea lions in this area, but we weren't sure of the best way to do it. There are several different animal tracking methods which vary in their effectiveness and there are different factors to consider. One of the most important of these is the cost. But you also have to consider how easy your chosen method is to use. You may choose a traditional method like a plastic tag. They're relatively straightforward to attach, but they're really only suitable to use with animals that you can catch quite easily. You might also go with a more modern method like GPS tracking, which uses satellite technology to transmit data on the animal around the clock. One drawback for marine animals though is that they don't transmit a signal in the ocean. You only get data when they're on land. There are certain large animals in remote areas that have to be tracked using a helicopter. The polar bear is a good example. Now, an important part of tracking is being able to clearly identify the animal. Some, like zebras, are identified by markings such as their stripes. While the dolphin usually has distinguishing scars on its body that can help tell them apart. Sea lions don't have any markings like this, which is just one of the challenges of tracking them. When researchers in Perth tried to use electronic tags in a sea lion study, they found that the sea lions had removed their tracking devices by deliberately rubbing up against rocks. This was something the researchers hadn't anticipated. Researchers in California studying American sea lions tried a different method. They applied paint to the animals. They thought this would be a better, less invasive means of identification. Unfortunately, this didn't work so well either because sea lions molt every year and shed their fur along with the identifying mark. So let's look at our current study. We have several aims that we'd like to achieve. The first of these is to try to establish where the sea lions can be identified from the whiskers on their face. These are much coarser than a cat's whiskers so easier to see. Our theory is that the pattern of these whiskers may be as individual as a fingerprint on a human. If this is in fact true, then we think this could be an effective way to identify them. Our second aim is to come up with a diagram of sea lion whisker patterns, so this can be used as a guide for us and other studies. We're using a few different methods to help us do all this. We know that we need to build up a wide range of visual data. So firstly, we've been in touch with zoos around Australia to gather photographs from them or the faces of any sea lions they have. This won't be enough to achieve our purpose though, so we're also broadening our search by inviting the public to take part in our research. We're hoping this will result in hundreds of useful images we can use. You now have ten minutes to transfer your answers to the listening answer sheet. You have two minutes left. You have one minute left. Please stop writing and wait for your question booklet to be collected. Q31",
+      "start": 1332.64,
+      "end": 2255,
+      "preAudio": false
+    }
+  ]
+}

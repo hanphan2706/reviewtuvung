@@ -30,7 +30,7 @@ function tacticsBasicPartMeta(lesson: TacticsBasicLessonCatalog): ListeningPartM
 /**
  * Nguồn nội dung listening — chỉnh **một file này** khi thêm test/part hoặc file transcript mới.
  *
- * - **Audio:** `listening materials/Audio cam 19/` (vd. `Test1 Part1.mp3`) — phát qua `/api/listening/audio`.
+ * - **Audio:** `listening materials/Audio cam/` (vd. `Test1 Part1.mp3`) — phát qua `/api/listening/audio`.
  * - **Transcript:** `listening materials/transcript/` (fallback `transcript/` legacy).
  * - **Trước khi nghe:** xem `LISTENING_TEST_CONTEXTS` — tuỳ chọn intro ngắn trong materials hoặc `public/listening-assets/cam19/`.
  */

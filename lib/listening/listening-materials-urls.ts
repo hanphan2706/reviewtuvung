@@ -1,7 +1,8 @@
 /** URL + tên file — an toàn cho client (không dùng `fs`). */
 
-const CAM19_AUDIO_FILE = /^Test[1-4] Part[1-4]\.mp3$/;
+const CAM_AUDIO_FILE = /^Test[1-4] Part[1-4]\.mp3$/;
 const TACTICS_BASIC_AUDIO_FILE = /^Unit\d{2}-Listening\d{2}\.mp3$/;
+const REAL_TEST_AUDIO_FILE = /^real test \d+\.mp3$/i;
 
 export function listeningPartAudioFileName(test: number, part: number): string {
   return `Test${test} Part${part}.mp3`;
@@ -21,6 +22,19 @@ export function tacticsBasicListeningAudioApiPath(unit: number, listening: numbe
   return `/api/listening/audio?file=${encodeURIComponent(file)}`;
 }
 
+export function realTestListeningAudioFileName(seriesNumber: number): string {
+  return `real test ${seriesNumber}.mp3`;
+}
+
+export function realTestListeningAudioApiPath(seriesNumber: number): string {
+  const file = realTestListeningAudioFileName(seriesNumber);
+  return `/api/listening/audio?file=${encodeURIComponent(file)}`;
+}
+
 export function isAllowedListeningAudioFile(fileName: string): boolean {
-  return CAM19_AUDIO_FILE.test(fileName) || TACTICS_BASIC_AUDIO_FILE.test(fileName);
+  return (
+    CAM_AUDIO_FILE.test(fileName) ||
+    TACTICS_BASIC_AUDIO_FILE.test(fileName) ||
+    REAL_TEST_AUDIO_FILE.test(fileName)
+  );
 }

@@ -19,6 +19,12 @@ import {
   listeningIeltsTestExamHref,
   type ListeningIeltsTest,
 } from "@/lib/listening/ielts-test-catalog";
+import {
+  filterRealExams,
+  LISTENING_REAL_EXAMS,
+  listeningRealExamHref,
+  type RealExamListing,
+} from "@/lib/exam/real-exam-catalog";
 import { useStudyHubLibraryGrid } from "@/hooks/use-study-hub-library-grid";
 import { filterReadingIeltsTests } from "@/lib/study-hub/library-search";
 import {
@@ -47,6 +53,11 @@ function ListeningIeltsTestViewInner({
   const searchParams = useSearchParams();
   const sort = parseReadingLibrarySort(searchParams.get("sap-xep"));
   const [query, setQuery] = useState("");
+
+  const filteredRealExams = useMemo(
+    () => filterRealExams(LISTENING_REAL_EXAMS, query),
+    [query],
+  );
 
   const sortedTests = useMemo(() => {
     const asReading = LISTENING_CAMBRIDGE_TESTS.map((test) => ({
@@ -99,6 +110,10 @@ function ListeningIeltsTestViewInner({
     }
   };
 
+  const startRealExam = (exam: RealExamListing) => {
+    window.location.assign(listeningRealExamHref(exam.slug));
+  };
+
   const startTest = (test: ListeningIeltsTest) => {
     window.location.assign(listeningIeltsTestExamHref(test.testId));
   };
@@ -133,7 +148,9 @@ function ListeningIeltsTestViewInner({
           }
         />
         <ListeningIeltsTestGrid
+          realExams={filteredRealExams}
           tests={pageItems}
+          onStartRealExam={startRealExam}
           onStartTest={startTest}
           emptyMessage={query.trim() ? "Không tìm thấy đề IELTS phù hợp." : "Chưa có đề IELTS trong mục này."}
         />

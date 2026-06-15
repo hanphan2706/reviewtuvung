@@ -1,7 +1,6 @@
-import fs from "node:fs";
 import { NextResponse } from "next/server";
 import { requireApiUser } from "@/lib/auth/require-api-user";
-import { mp3NextResponse } from "@/lib/http/mp3-response";
+import { mp3FileNextResponse, mp3NextResponse } from "@/lib/http/mp3-response";
 import {
   LISTENING_AUDIO_BUCKET,
   listeningAudioObjectKey,
@@ -22,7 +21,7 @@ async function streamSupabaseMp3(objectKey: string, request: Request): Promise<N
 }
 
 function streamLocalFile(filePath: string, request: Request): NextResponse {
-  return mp3NextResponse(fs.readFileSync(filePath), request);
+  return mp3FileNextResponse(filePath, request);
 }
 
 export async function GET(request: Request) {
@@ -35,14 +34,17 @@ export async function GET(request: Request) {
   }
 
   const objectKey = listeningAudioObjectKey(file);
+  const filePath = resolveListeningAudioPath(file);
+  if (filePath) {
+    return streamLocalFile(filePath, request);
+  }
+
   if (objectKey) {
     const remote = await streamSupabaseMp3(objectKey, request);
     if (remote) return remote;
   }
 
-  const filePath = resolveListeningAudioPath(file);
-  if (!filePath) {
-    return NextResponse.json(
+  return NextResponse.json(
       {
         error: "audio file not found",
         missing: true,
@@ -50,7 +52,4 @@ export async function GET(request: Request) {
       },
       { status: 404 },
     );
-  }
-
-  return streamLocalFile(filePath, request);
 }

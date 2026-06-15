@@ -35,7 +35,7 @@ export function ListeningIeltsTestCard({
           {footerLabel}
         </h3>
         <div className="min-h-4 flex-1" aria-hidden />
-        <div className="mt-auto flex shrink-0 items-center justify-between border-t border-[#ebe6f4] pt-4 text-[#47464b]">
+        <div className="mt-auto flex shrink-0 items-center justify-between border-t border-[#E4E4E7] pt-4 text-[#47464b]">
           <span className="text-[10px] font-bold uppercase tracking-[0.14em]">Academic Listening</span>
           <ArrowRight className="h-4 w-4 text-[#000001]" aria-hidden />
         </div>

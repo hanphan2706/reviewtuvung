@@ -15,7 +15,8 @@ const nextConfig: NextConfig = {
    */
   outputFileTracingExcludes: {
     "/*": [
-      "./listening materials/Audio cam 19/**",
+      "./listening materials/Audio cam/**",
+      "./listening materials/Audio real test/**",
       "./listening materials/Audio tactics-basic/**",
       "./listening materials/*.zip",
       "./listening materials/*.pdf",
@@ -35,6 +36,13 @@ const nextConfig: NextConfig = {
     "/*": [
       "./listening materials/cam 19 test * qna.txt",
       "./listening materials/transcript/cam19-test*.txt",
+      "./public/midterm-reading-exam.html",
+      "./public/midterm-listening-exam.html",
+      "./reading raw/real test 1.txt",
+      "./listening materials/real test 1 qna.txt",
+      "./listening materials/transcript/real-test-1.txt",
+      "./listening materials/transcript/real-test-1.cleaned.txt",
+      "./listening materials/sync/real-test-1.sync.json",
     ],
   },
   /**

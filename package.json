@@ -15,6 +15,8 @@
     "ngrok": "ngrok http 3000",
     "lint": "eslint",
     "transcript:clean": "npx tsx scripts/clean-listening-transcript.ts",
+    "listening:prepare-real-test-transcript": "npx tsx scripts/prepare-real-test-listening-transcript.ts",
+    "listening:generate-real-test-transcript": "npx tsx scripts/generate-real-test-listening-transcript.ts",
     "dictionary:import-vi": "npx tsx scripts/import-wiktionary-vi.ts --academic-only",
     "dictionary:import-vi:all": "npx tsx scripts/import-wiktionary-vi.ts",
     "dictionary:import-vi:quick": "npx tsx scripts/import-wiktionary-vi.ts --academic-only --limit 50",
@@ -26,9 +28,11 @@
     "reading:apply-challenge-2-vi": "npx tsx scripts/apply-reading-challenge-2-vi.ts",
     "reading:trim-compass-audio": "node scripts/trim-reading-challenge-audio.mjs",
     "reading:upload-audio": "npx tsx scripts/upload-reading-audio.ts",
+    "listening:prepare-audio-for-upload": "npx tsx scripts/prepare-listening-audio-for-upload.ts",
     "listening:upload-audio": "npx tsx scripts/upload-listening-audio.ts",
     "reading:sync-images": "npx tsx scripts/sync-reading-images.ts",
-    "listening:sync-tactics": "npx tsx scripts/sync-tactics-listening.ts"
+    "listening:sync-tactics": "npx tsx scripts/sync-tactics-listening.ts",
+    "exam:build-midterm": "node scripts/build-midterm-exam-html.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.2",
