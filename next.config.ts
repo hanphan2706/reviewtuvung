@@ -29,6 +29,15 @@ const nextConfig: NextConfig = {
     ],
   },
   /**
+   * QnA/transcript đọc qua fs + tên file động — Next không tự trace; bắt buộc include trên Vercel.
+   */
+  outputFileTracingIncludes: {
+    "/*": [
+      "./listening materials/cam 19 test * qna.txt",
+      "./listening materials/transcript/cam19-test*.txt",
+    ],
+  },
+  /**
    * Dev: Turbopack/HMR khi mở site qua IP LAN. Wildcard theo cùng quy tắc như docs Next (`*.example.com`);
    * `192.168.*.*` khớp mọi host `192.168.x.y` — không cần sửa khi DHCP đổi octet cuối.
    */
