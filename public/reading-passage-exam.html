@@ -116,7 +116,7 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--exam-chrome-surfac
   color:var(--exam-header-muted);padding:0 3px;letter-spacing:.02em;
 }
 
-.ptab-bar{background:#fff;border-bottom:1px solid var(--exam-chrome-border);display:flex;flex-shrink:0}
+.ptab-bar{background:#fff;border-bottom:1px solid var(--exam-chrome-border);display:flex;flex-shrink:0;align-items:center;flex-wrap:wrap;gap:4px 12px}
 .ptab{padding:10px 26px;font-size:13px;font-weight:600;color:#888;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s;user-select:none;-webkit-user-select:none}
 .ptab:hover{color:#000001;background:var(--exam-chrome-surface)}
 .ptab.active{color:#000001;border-bottom-color:#000001}
@@ -1433,6 +1433,7 @@ function enterReviewMode(){
   renderReviewScore();
   recordIeltsPracticeAttempt();
   if(!shouldSkipLogin())sendSubmissionToGoogleSheet();
+  if(typeof window.__examDictEnterReviewMode==="function")window.__examDictEnterReviewMode();
 }
 
 function autoSubmit(){enterReviewMode();}
@@ -1911,6 +1912,7 @@ function findMarkAtCaret(range,root){
 }
 
 function syncHlPopover(){
+  if(examReviewMode){hideHlPopover();return;}
   var exam=document.getElementById('exam-screen');
   if(!exam||window.getComputedStyle(exam).display==='none'){hideHlPopover();return;}
   var sel=window.getSelection();

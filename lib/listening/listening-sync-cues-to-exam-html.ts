@@ -34,10 +34,10 @@ export function listeningSyncCuesToExamHtml(sync: ListeningTranscriptSyncFile): 
       const speaker = cue.speaker
         ? `<span class="transcript-cue-speaker">${escapeHtml(cue.speaker)}:</span> `
         : "";
-      return `<button type="button" class="transcript-cue" data-cue-id="${escapeHtml(cue.id)}" data-start="${cue.start}" data-end="${cue.end}">
+      return `<div role="button" tabindex="0" class="transcript-cue" data-cue-id="${escapeHtml(cue.id)}" data-start="${cue.start}" data-end="${cue.end}">
   <time class="transcript-cue-time">${formatCueTime(cue.start)}</time>
   <span class="transcript-cue-text">${speaker}${highlightQuestionMarkers(cue.text)}</span>
-</button>`;
+</div>`;
     })
     .join("\n");
 }

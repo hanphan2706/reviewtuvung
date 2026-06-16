@@ -1,6 +1,7 @@
 /** Cambridge-style inline review patch for mid-term reading/listening HTML. */
 
 import { injectExamCopyFriction } from "../lib/exam/inject-exam-copy-friction.mjs";
+import { injectExamDictionaryPopover } from "../lib/exam/inject-exam-dictionary-popover.mjs";
 
 export const REVIEW_CSS = `
 #exam-screen.exam-review-mode .opt.review-user{border-color:var(--exam-purple);background:#ebe6f4;font-weight:500}
@@ -342,6 +343,7 @@ function enterReviewMode(){
   renderReviewScore();
   recordIeltsPracticeAttempt();
   sendSubmissionToGoogleSheet();
+  if(typeof window.__examDictEnterReviewMode==="function")window.__examDictEnterReviewMode();
 }
 `;
 
@@ -424,5 +426,13 @@ export function applyCambridgeReviewPatch(html, kind) {
     "if(examReviewMode)return;",
   );
 
-  return injectExamCopyFriction(out, kind === "listening" ? "listening" : "reading");
+  out = out.replace(
+    /function syncHlPopover\(\)\{\s*\n\s*var exam=document\.getElementById\('exam-screen'\);/,
+    `function syncHlPopover(){
+  if(examReviewMode){hideHlPopover();return;}
+  var exam=document.getElementById('exam-screen');`,
+  );
+
+  const withFriction = injectExamCopyFriction(out, kind === "listening" ? "listening" : "reading");
+  return injectExamDictionaryPopover(withFriction, kind === "listening" ? "listening" : "reading");
 }

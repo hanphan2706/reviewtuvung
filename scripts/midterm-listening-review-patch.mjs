@@ -1,6 +1,7 @@
 /** Cambridge listening review shell + grading for mid-term listening HTML. */
 
 import { injectExamCopyFriction } from "../lib/exam/inject-exam-copy-friction.mjs";
+import { injectExamDictionaryPopover } from "../lib/exam/inject-exam-dictionary-popover.mjs";
 import { REVIEW_HELPERS } from "./midterm-cambridge-review.mjs";
 
 const LEFT_REVIEW_COLUMN_HTML = `
@@ -113,13 +114,16 @@ const LISTENING_REVIEW_CSS = `
 .dnd-row .dnd-review{grid-column:1/-1}
 .ntable .fill-review{display:block;margin-top:4px;max-width:220px}
 .ntable td{vertical-align:top}
-.transcript-cue{display:flex;width:100%;gap:10px;align-items:flex-start;border:none;background:transparent;padding:8px 10px;margin:0 0 4px;border-radius:8px;text-align:left;cursor:pointer;font:inherit;color:inherit}
-.transcript-cue-time{width:42px;flex-shrink:0;font-size:12px;font-weight:600;color:rgba(75,40,118,.55);font-variant-numeric:tabular-nums;padding-top:2px}
-.transcript-cue-speaker{font-weight:600;color:#4b2876}
-.transcript-q-marker{font-weight:700;color:#4b2876}
-.transcript-cue.is-active{background:rgba(75,40,118,.07)}
-.transcript-cue.is-active .transcript-cue-time{color:#4b2876;font-weight:700}
+.transcript-cue{display:flex;width:100%;gap:10px;align-items:flex-start;border:none;background:transparent;padding:8px 10px;margin:0 0 4px;border-radius:8px;text-align:left;cursor:text;font:inherit;color:inherit;user-select:text;-webkit-user-select:text}
+.transcript-cue-time{width:42px;flex-shrink:0;font-size:12px;font-weight:600;color:#71717A;font-variant-numeric:tabular-nums;padding-top:2px;user-select:none;-webkit-user-select:none;cursor:text}
+.transcript-cue-speaker{font-weight:600;color:#47464b}
+.transcript-q-marker{font-weight:700;color:#47464b}
+.transcript-cue-text{flex:1;min-width:0;cursor:text}
+.transcript-cue.is-active{background:#f5f5f7}
+.transcript-cue.is-active .transcript-cue-time{color:#000001;font-weight:700}
 .transcript-cue.is-active .transcript-cue-text{font-weight:600;color:#000001}
+#exam-screen.exam-review-mode .transcript-scroll,
+#exam-screen.exam-review-mode .transcript-body{cursor:text}
 #success-overlay{display:none!important}
 #sub-btn .review-score-band{font-weight:600;color:rgba(250,250,250,.82)}
 #exam-screen.exam-review-mode #bot-bar{align-items:center;flex-wrap:nowrap}
@@ -219,12 +223,19 @@ function updateTranscriptCueHighlight(){
 function wireTranscriptCueClicks(audio){
   document.querySelectorAll('.transcript-cue').forEach(function(btn){
     btn.addEventListener('click',function(){
+      var sel=window.getSelection();
+      if(sel&&!sel.isCollapsed&&sel.toString().trim())return;
       var start=parseFloat(btn.getAttribute('data-start'));
       if(!Number.isFinite(start))return;
       audio.currentTime=start;
       if(audio.paused){var p=audio.play();if(p&&p.catch)p.catch(function(){});}
       updateReviewAudioUi();
       updateTranscriptCueHighlight();
+    });
+    btn.addEventListener('keydown',function(e){
+      if(e.key!=='Enter'&&e.key!==' ')return;
+      e.preventDefault();
+      btn.click();
     });
   });
 }
@@ -446,6 +457,7 @@ function enterReviewMode(){
   if(examAnswerKey)applyReviewAnswers();
   renderReviewScore();
   sendSubmissionToGoogleSheet();
+  if(typeof window.__examDictEnterReviewMode==="function")window.__examDictEnterReviewMode();
 }
 `;
 
@@ -624,5 +636,12 @@ function submitExam(){
 
   out = patchCambridgeAudioIntro(out);
 
-  return injectExamCopyFriction(out, "listening");
+  out = out.replace(
+    /function syncHlPopover\(\)\{\s*\n\s*var exam=document\.getElementById\('exam-screen'\);/,
+    `function syncHlPopover(){
+  if(examReviewMode){hideHlPopover();return;}
+  var exam=document.getElementById('exam-screen');`,
+  );
+
+  return injectExamDictionaryPopover(injectExamCopyFriction(out, "listening"), "listening");
 }

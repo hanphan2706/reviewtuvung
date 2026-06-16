@@ -78,7 +78,7 @@ const CAMBRIDGE_CHROME_CSS = `
 .sdetail{background:var(--exam-chrome-surface);border:1px solid var(--exam-chrome-border)}
 .audio-done{color:var(--exam-chrome-muted);background:var(--exam-chrome-bg);border-bottom:1px solid var(--exam-chrome-border)}
 .qt{border-color:var(--exam-chrome-border);background:var(--exam-chrome-bg);color:var(--exam-chrome-muted)}
-.qt.qt-done{background:#E4E4E7;border-color:var(--exam-chrome-text);color:var(--exam-chrome-text)}
+.qt.qt-done{background:#ebe6f4;border-color:var(--exam-purple);color:var(--exam-purple)}
 .sec-range{color:var(--exam-chrome-text)}
 .p-badge{color:var(--exam-chrome-muted)}
 .fi,.si,.wbsel{border-bottom-color:var(--exam-chrome-border);color:var(--exam-question-ink)}
@@ -228,6 +228,12 @@ function injectSkipLoginBoot(html) {
   return html.slice(0, idx) + boot + html.slice(idx);
 }
 
+function patchMidtermTabBarIds(html, kind) {
+  const id = kind === "listening" ? "part-tabs" : "passage-tabs";
+  if (html.includes(`id="${id}"`)) return html;
+  return html.replace(/<div class="ptab-bar">/, `<div class="ptab-bar" id="${id}">`);
+}
+
 function buildReading() {
   const src = path.join(repoRoot, "index.html");
   let html = fs.readFileSync(src, "utf8");
@@ -244,6 +250,7 @@ function buildReading() {
   html = patchLoginCopy(html);
   html = patchStartExam(html);
   html = applyCambridgeReviewPatch(html, "reading");
+  html = patchMidtermTabBarIds(html, "reading");
   html = injectReadingPassageTitleSync(html);
   html = injectSkipLoginBoot(html);
   const out = path.join(root, "public/midterm-reading-exam.html");
@@ -271,6 +278,7 @@ function buildListening() {
   html = patchLoginCopy(html);
   html = patchStartExam(html);
   html = applyMidtermListeningReviewPatch(html);
+  html = patchMidtermTabBarIds(html, "listening");
   html = injectSkipLoginBoot(html);
   const out = path.join(root, "public/midterm-listening-exam.html");
   fs.writeFileSync(out, html, "utf8");

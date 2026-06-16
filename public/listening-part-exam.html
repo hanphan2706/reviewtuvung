@@ -86,8 +86,8 @@ html.exam-skip-login #student-badge{display:none!important}
   font-size:11px;font-weight:400;min-width:37px;text-align:center;
   color:var(--exam-header-muted);padding:0 3px;letter-spacing:.02em;
 }
-.ptab-bar{background:#fff;border-bottom:1px solid var(--exam-chrome-border);display:flex;flex-shrink:0}
-.ptab{padding:10px 26px;font-size:13px;font-weight:600;color:#888;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s;user-select:none;-webkit-user-select:none}
+.ptab-bar{background:#fff;border-bottom:1px solid var(--exam-chrome-border);display:flex;flex-shrink:0;align-items:center;flex-wrap:nowrap;gap:0;overflow:hidden}
+.ptab{padding:10px 26px;font-size:13px;font-weight:600;color:#888;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s;user-select:none;-webkit-user-select:none;flex:0 0 auto}
 .ptab:hover{color:#000001;background:var(--exam-chrome-surface)}
 .ptab.active{color:#000001;border-bottom-color:#000001}
 .ptab small{font-size:13px}
@@ -169,6 +169,7 @@ html.exam-skip-login #student-badge{display:none!important}
 .note-grid-table thead th.note-grid-th{font-weight:700;background:rgba(75,40,118,.06)}
 .note-grid-table tbody td.note-grid-td{line-height:2}
 .note-form-table .fi,.note-grid-table .fi{width:100px;min-width:64px;max-width:160px}
+.note-form-table .ans-review-line,.note-grid-table .ans-review-line{display:block;margin-top:6px}
 mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 .hl-popover{position:fixed;z-index:1000;display:none;flex-direction:row;align-items:center;gap:2px;padding:3px 4px;background:#FAFAFA;border-radius:8px;box-shadow:0 4px 18px rgba(28,27,28,.12),0 0 0 1px rgba(228,228,231,.95);font-family:inherit}
 .hl-popover[aria-hidden="true"]{pointer-events:none}
@@ -217,11 +218,18 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 #bot-bar{background:var(--exam-chrome-bg);border-top:1px solid var(--exam-chrome-border);padding:10px 16px 12px;display:flex;flex-direction:row;flex-wrap:nowrap;align-items:flex-start;justify-content:space-between;gap:12px 16px;flex-shrink:0}
 .track-groups{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:flex-start}
 .track-grp{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
-.track-label{font-size:10px;font-weight:800;color:var(--exam-chrome-muted);text-transform:uppercase}
+.track-label{font-size:10px;font-weight:800;color:var(--exam-chrome-muted);text-transform:uppercase;white-space:nowrap;flex-shrink:0}
 .track-grid{display:flex;flex-wrap:wrap;gap:3px}
-.qt{min-width:22px;height:22px;border:1.5px solid var(--exam-chrome-border);border-radius:4px;background:var(--exam-chrome-bg);color:var(--exam-chrome-muted);font-weight:700;font-size:10px;cursor:pointer}
-.qt.qt-done{background:#e6f4ea;border-color:#34a853;color:#1a7a30}
+.qt{min-width:22px;height:22px;border:1.5px solid var(--exam-chrome-border);border-radius:4px;background:var(--exam-chrome-bg);color:var(--exam-chrome-muted);font-weight:700;font-size:10px;cursor:pointer;flex-shrink:0}
+.qt.qt-done{background:#ebe6f4;border-color:var(--exam-purple);color:var(--exam-purple)}
 .track-hint{margin:5px 0 0;font-size:10px;color:var(--exam-chrome-muted)}
+#exam-screen.exam-full-test .track-groups{flex-wrap:nowrap;overflow-x:auto;gap:8px 12px;min-width:0;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+#exam-screen.exam-full-test .track-grp{flex-wrap:nowrap;flex-shrink:0}
+#exam-screen.exam-full-test .track-grid{flex-wrap:nowrap}
+#exam-screen.exam-review-mode #bot-bar{align-items:center}
+#exam-screen.exam-review-mode .track-groups{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+#exam-screen.exam-review-mode .track-grp{flex-wrap:nowrap;flex-shrink:0}
+#exam-screen.exam-review-mode .track-grid{flex-wrap:nowrap}
 #sub-btn{flex-shrink:0;align-self:flex-start;background:var(--exam-submit-bg);color:var(--exam-submit-text);border:none;border-radius:8px;padding:10px 22px;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap}
 #sub-btn:hover{opacity:.92}
 #sub-btn .review-score-band{font-weight:600;color:rgba(250,250,250,.82)}
@@ -371,7 +379,7 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
   <div id="bot-bar">
     <div id="track-wrap">
       <div class="track-groups"><div class="track-grp"><span class="track-label">Q</span><div class="track-grid" id="track-grid"></div></div></div><!-- /track-groups -->
-      <p class="track-hint">Xanh = đã trả lời · Xám = chưa · Bấm số câu để mở</p>
+      <p class="track-hint">Tím = đã trả lời · Xám = chưa · Bấm số câu để mở</p>
     </div>
     <button id="sub-btn" type="button" onclick="submitExam()" aria-live="polite">Submit answers</button>
   </div>
@@ -1006,19 +1014,23 @@ function reviewLineHtml(userVal,correctVal,num){
   return '<div class="'+cls+'"><span class="ans-your">Bạn: '+u+'</span><span class="ans-correct">Đáp án: '+c+'</span></div>';
 }
 
-function insertReviewLineAfterParagraph(qnum,user,correct){
-  var inp=document.getElementById('q'+qnum);
-  if(!inp)return;
-  var p=inp.closest('p');
-  if(!p||!p.parentNode)return;
-  if(p.parentNode.querySelector('.ans-review-line[data-q="'+qnum+'"]'))return;
-  var html=reviewLineHtml(user,correct,qnum);
+function insertReviewLineAfter(el,html,qnum){
+  if(!el||!el.parentNode)return;
+  if(el.parentNode.querySelector('.ans-review-line[data-q="'+qnum+'"]'))return;
   var d=document.createElement('div');
   d.innerHTML=html;
   var line=d.firstElementChild;
   if(!line)return;
   line.setAttribute('data-q',String(qnum));
-  p.parentNode.insertBefore(line,p.nextSibling);
+  el.parentNode.insertBefore(line,el.nextSibling);
+}
+
+function insertReviewLineAfterFill(qnum,user,correct){
+  var inp=document.getElementById('q'+qnum);
+  if(!inp)return;
+  var anchor=inp.closest('.fi-stack')||inp;
+  var html=reviewLineHtml(user,correct,qnum);
+  insertReviewLineAfter(anchor,html,qnum);
 }
 
 function formatBankAnswer(block,letter){
@@ -1094,7 +1106,7 @@ function highlightFillReview(inp,userVal,correctVal,num){
   inp.classList.remove('review-user','review-correct','review-wrong');
   if(!String(userVal).trim())return;
   if(isAnswerCorrect(num,userVal))inp.classList.add('review-user','review-correct');
-  else{inp.classList.add('review-user','review-wrong');}
+  else inp.classList.add('review-user','review-wrong');
 }
 
 function applyReviewAnswers(){
@@ -1107,7 +1119,7 @@ function applyReviewAnswers(){
     var inp=document.getElementById(qid);
     if(inp&&inp.tagName==='INPUT'&&inp.type!=='radio'){
       highlightFillReview(inp,user,correct,n);
-      insertReviewLineAfterParagraph(n,user,correct);
+      insertReviewLineAfterFill(n,user,correct);
       return;
     }
     var sel=document.getElementById('sel-'+qid);
@@ -1163,6 +1175,7 @@ function enterReviewMode(){
   if(examAnswerKey)applyReviewAnswers();
   renderReviewScore();
   recordIeltsPracticeAttempt();
+  if(typeof window.__examDictEnterReviewMode==="function")window.__examDictEnterReviewMode();
 }
 
 function autoSubmit(){enterReviewMode();}
@@ -1315,6 +1328,7 @@ function findMarkAtCaret(range,root){
 }
 
 function syncHlPopover(){
+  if(examReviewMode){hideHlPopover();return;}
   var exam=document.getElementById('exam-screen');
   if(!exam||window.getComputedStyle(exam).display==='none'){hideHlPopover();return;}
   var sel=window.getSelection();

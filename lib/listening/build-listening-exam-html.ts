@@ -1,3 +1,4 @@
+import { formatExamInstructionHtml } from "@/lib/exam/format-exam-instruction-html";
 import { getListeningPartById, type ListeningPartMeta } from "@/lib/listening/content-manifest";
 import { loadListeningFullTestTranscriptByPart } from "@/lib/listening/load-listening-full-test-transcript";
 import { loadListeningTranscriptText } from "@/lib/listening/load-listening-transcript-text";
@@ -91,21 +92,6 @@ function escHtml(text: string): string {
     .replace(/"/g, "&quot;");
 }
 
-function formatInstructionHtml(lines: string[]): string {
-  const text = lines.join(" ").trim();
-  if (!text) return "";
-  return escHtml(text)
-    .replace(/\bONE WORD AND\/OR A NUMBER\b/gi, "<b>ONE WORD AND/OR A NUMBER</b>")
-    .replace(/\bONE WORD ONLY\b/gi, "<b>ONE WORD ONLY</b>")
-    .replace(/\bNO MORE THAN TWO WORDS AND\/OR A NUMBER\b/gi, "<b>NO MORE THAN TWO WORDS AND/OR A NUMBER</b>")
-    .replace(/\bTWO\b/g, (m, offset, s) => {
-      const before = s.slice(Math.max(0, offset - 12), offset);
-      return /Choose\s+$/i.test(before) ? "<b>TWO</b>" : m;
-    })
-    .replace(/\bSIX\b/gi, "<b>SIX</b>")
-    .replace(/([A-H])(–|-|to)([A-H])/gi, "<b>$1$2$3</b>");
-}
-
 function letterRangeToLetters(range: string | undefined, fallback = 8): string[] {
   if (!range) {
     return Array.from({ length: fallback }, (_, i) => String.fromCharCode(65 + i));
@@ -137,7 +123,7 @@ function renderSectionHeader(
   return `<div class="sec-hdr">
   ${topicLine ? `<div class="sec-topic">${escHtml(topicLine)}</div>` : ""}
   <div class="sec-range">Part ${partNumber} &mdash; Questions ${minQ}&ndash;${maxQ}</div>
-  <div class="sec-instr">${formatInstructionHtml(instructionLines)}</div>
+  <div class="sec-instr">${formatExamInstructionHtml(instructionLines, { includeSix: true })}</div>
 </div>`;
 }
 

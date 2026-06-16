@@ -19,6 +19,7 @@ import { loadListeningQnaPart } from "@/lib/listening/generate-ielts-listening-f
 import { getListeningPartQnaRef } from "@/lib/listening/listening-qna-catalog";
 import { listeningLessonHrefBySlug } from "@/lib/listening/listening-hub-nav";
 import { injectExamCopyFriction } from "@/lib/exam/inject-exam-copy-friction";
+import { injectExamDictionaryPopover } from "@/lib/exam/inject-exam-dictionary-popover";
 
 const PILOT_LABELS: Record<string, string> = {
   cam19: "Cambridge 19",
@@ -203,7 +204,10 @@ export async function buildListeningPartExamHtml(slug: string): Promise<string> 
     hasAnswerKey: payload.hasAnswerKey,
   };
 
-  return injectExamCopyFriction(injectExamBootScript(withContent, slimBoot), "listening");
+  return injectExamDictionaryPopover(
+    injectExamCopyFriction(injectExamBootScript(withContent, slimBoot), "listening"),
+    "listening",
+  );
 }
 
 export async function buildListeningFullTestExamHtml(testId: ListeningIeltsTestId): Promise<string> {
@@ -239,5 +243,8 @@ export async function buildListeningFullTestExamHtml(testId: ListeningIeltsTestI
     hasAnswerKey: payload.hasAnswerKey,
   };
 
-  return injectExamCopyFriction(injectExamBootScript(withContent, slimBoot), "listening");
+  return injectExamDictionaryPopover(
+    injectExamCopyFriction(injectExamBootScript(withContent, slimBoot), "listening"),
+    "listening",
+  );
 }

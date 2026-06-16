@@ -165,12 +165,12 @@ function LookupBody({
       ) : null}
 
       {phraseGlossVi && (kind === "phrase" || isTranslateOnly) ? (
-        <Root className="rounded-lg bg-[#f3f0f8] px-3 py-3">
+        <Root>
           {isTranslateOnly ? (
             <p className="text-sm italic leading-relaxed text-[#47464b]">&ldquo;{lookup.query}&rdquo;</p>
           ) : null}
           <p
-            className={`text-sm font-medium leading-relaxed text-[#000001] ${
+            className={`text-sm font-semibold leading-relaxed text-[#000001] ${
               isTranslateOnly ? "mt-2" : ""
             }`}
           >

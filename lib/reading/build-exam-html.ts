@@ -1,4 +1,8 @@
 import { FILL_GAP_BLANK, FILL_GAP_RE, hasFillGap } from "@/lib/reading/fill-gap-pattern";
+import {
+  boldTfngInstructionSegment,
+  formatExamInstructionHtml,
+} from "@/lib/exam/format-exam-instruction-html";
 import { splitBodyParagraphs } from "@/lib/reading/format-paragraphs";
 import { splitTfngInstructionSegments } from "@/lib/reading/format-tfng-instruction";
 import {
@@ -44,35 +48,6 @@ function escHtml(text: string): string {
     .replace(/"/g, "&quot;");
 }
 
-function formatInstructionHtml(lines: string[]): string {
-  const text = lines.join(" ").trim();
-  if (!text) return "";
-  return escHtml(text)
-    .replace(/\bONE WORD AND\/OR A NUMBER\b/gi, "<b>ONE WORD AND/OR A NUMBER</b>")
-    .replace(/\bONE WORD ONLY\b/gi, "<b>ONE WORD ONLY</b>")
-    .replace(/\bNO MORE THAN TWO WORDS AND\/OR A NUMBER\b/gi, "<b>NO MORE THAN TWO WORDS AND/OR A NUMBER</b>")
-    .replace(/\bTWO\b/g, (m, offset, s) => {
-      const before = s.slice(Math.max(0, offset - 12), offset);
-      return /Choose\s+$/i.test(before) ? "<b>TWO</b>" : m;
-    })
-    .replace(/\bTRUE\b/gi, "<b>TRUE</b>")
-    .replace(/\bFALSE\b/gi, "<b>FALSE</b>")
-    .replace(/\bNOT GIVEN\b/gi, "<b>NOT GIVEN</b>")
-    .replace(/\bYES\b/gi, "<b>YES</b>")
-    .replace(/\bNO\b/gi, "<b>NO</b>")
-    .replace(/([A-F])(–|-)([A-F])/g, "<b>$1$2$3</b>");
-}
-
-function boldTfngKeywords(text: string): string {
-  return text
-    .replace(/\bNOT GIVEN\b/gi, "<b>NOT GIVEN</b>")
-    .replace(/\bTRUE\b/gi, "<b>TRUE</b>")
-    .replace(/\bFALSE\b/gi, "<b>FALSE</b>")
-    .replace(/\bYES\b/gi, "<b>YES</b>")
-    .replace(/\bNO\b/gi, "<b>NO</b>");
-}
-
-/** YES/NO/NOT GIVEN (or TRUE/FALSE/NOT GIVEN): mỗi định nghĩa một dòng. */
 function formatTfngInstructionHtml(
   lines: string[],
   variant: "true-false-ng" | "yes-no-ng",
@@ -82,12 +57,12 @@ function formatTfngInstructionHtml(
 
   const segments = splitTfngInstructionSegments(text, variant);
   if (segments.length <= 1) {
-    return `<p class="sec-instr-lead">${boldTfngKeywords(escHtml(text))}</p>`;
+    return `<p class="sec-instr-lead">${boldTfngInstructionSegment(text)}</p>`;
   }
 
   return segments
     .map((seg, i) => {
-      const inner = boldTfngKeywords(escHtml(seg));
+      const inner = boldTfngInstructionSegment(seg);
       const cls = i === 0 ? "sec-instr-lead" : "sec-instr-tfng-def";
       return `<p class="${cls}">${inner}</p>`;
     })
@@ -101,7 +76,7 @@ function renderSectionHeader(section: ExamQuestionSection): string {
           section.instructionLines,
           section.statements[0]?.kind === "yes-no-ng" ? "yes-no-ng" : "true-false-ng",
         )
-      : formatInstructionHtml(section.instructionLines);
+      : formatExamInstructionHtml(section.instructionLines);
   const instrBlock = instr ? `<div class="sec-instr">${instr}</div>` : "";
   return `<div class="sec-hdr"><div class="sec-range">${escHtml(section.title)}</div>${instrBlock}</div>`;
 }
