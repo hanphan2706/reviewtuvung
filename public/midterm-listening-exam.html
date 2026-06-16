@@ -120,7 +120,7 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--exam-chrome-surfac
 .track-grid{display:flex;flex-wrap:wrap;gap:3px}
 .qt{min-width:22px;height:22px;padding:0;border:1.5px solid var(--exam-chrome-border);border-radius:4px;background:#fff;color:var(--exam-chrome-muted);font-weight:700;font-size:10px;cursor:pointer;font-family:inherit;line-height:1;transition:background .15s,border-color .15s,color .15s}
 .qt:hover{border-color:var(--exam-chrome-text);color:var(--exam-chrome-text);background:var(--exam-chrome-surface)}
-.qt.qt-done{background:var(--exam-chrome-surface);border-color:var(--exam-purple);color:var(--exam-purple)}
+.qt.qt-done{background:#e6f4ea;border-color:#34a853;color:#1a7a30}
 .track-hint{margin:5px 0 0;font-size:10px;color:#8860a8;text-align:left;line-height:1.35}
 
 #main{display:flex;flex:1;flex-direction:column;overflow:hidden;min-height:0;zoom:var(--exam-zoom);position:relative}
@@ -451,8 +451,9 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
 .ntable td{vertical-align:top}
 .transcript-cue{display:flex;width:100%;gap:10px;align-items:flex-start;border:none;background:transparent;padding:8px 10px;margin:0 0 4px;border-radius:8px;text-align:left;cursor:text;font:inherit;color:inherit;user-select:text;-webkit-user-select:text}
 .transcript-cue-time{width:42px;flex-shrink:0;font-size:12px;font-weight:600;color:#71717A;font-variant-numeric:tabular-nums;padding-top:2px;user-select:none;-webkit-user-select:none;cursor:text}
-.transcript-cue-speaker{font-weight:600;color:#47464b}
-.transcript-q-marker{font-weight:700;color:#47464b}
+.transcript-cue-speaker{font-weight:600;color:#4b2876}
+.transcript-cue.is-active .transcript-cue-speaker{color:#4b2876}
+.transcript-q-marker{font-weight:700;color:#4b2876}
 .transcript-cue-text{flex:1;min-width:0;cursor:text}
 .transcript-cue.is-active{background:#f5f5f7}
 .transcript-cue.is-active .transcript-cue-time{color:#000001;font-weight:700}
@@ -1613,6 +1614,200 @@ function renderReviewScore(){
   btn.setAttribute('aria-label',score.correct+' trên '+score.total+' câu đúng, '+bandLabel+formatIeltsBand(score.band));
 }
 
+var reviewAudioWired=false;
+var REVIEW_SPEEDS=[1,1.25,1.5,1.75];
+var reviewSpeedIdx=0;
+var REVIEW_ICON_PLAY='<svg class="ra-icon ra-icon-play" viewBox="0 0 24 24" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"/></svg>';
+var REVIEW_ICON_PAUSE='<svg class="ra-icon ra-icon-pause" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>';
+var REVIEW_ICON_VOLUME='<svg class="ra-icon ra-icon-vol" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>';
+var REVIEW_ICON_VOLUME_X='<svg class="ra-icon ra-icon-vol" viewBox="0 0 24 24" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="22" x2="16" y1="9" y2="15"/><line x1="16" x2="22" y1="9" y2="15"/></svg>';
+
+function bindExamAudioSrc(audio,src,fallback){
+  if(!audio||!src)return;
+  audio.src=src;
+  if(fallback)audio.dataset.fallback=fallback;
+  else delete audio.dataset.fallback;
+  audio.dataset.fallbackTried='';
+  try{audio.load();}catch(e){}
+}
+
+function applyExamPayload(data){
+  if(!data)return;
+  if(data.answerKey&&typeof data.answerKey==='object')examAnswerKey=data.answerKey;
+  if(data.audioUrl||data.audioFallbackUrl){
+    var ae=document.getElementById('exam-audio');
+    var ra=document.getElementById('review-audio');
+    var src=data.audioUrl||data.audioFallbackUrl;
+    var fb=data.audioUrl&&data.audioFallbackUrl&&data.audioUrl!==data.audioFallbackUrl?data.audioFallbackUrl:'';
+    bindExamAudioSrc(ae,src,fb);
+    bindExamAudioSrc(ra,src,fb);
+  }
+  if(data.transcriptHtml){
+    var body=document.getElementById('transcript-body');
+    if(body)body.innerHTML=data.transcriptHtml;
+  }else if(data.hasTranscript===false){
+    var ex=document.getElementById('exam-screen');
+    if(ex)ex.classList.add('no-transcript');
+  }
+}
+
+function formatAudioTime(seconds){
+  if(!Number.isFinite(seconds)||seconds<0)return '0:00';
+  var total=Math.floor(seconds);
+  var m=Math.floor(total/60);
+  var s=total%60;
+  return m+':'+(s<10?'0':'')+s;
+}
+
+function updateReviewAudioUi(){
+  var audio=document.getElementById('review-audio');
+  var fill=document.getElementById('review-audio-seek-fill');
+  var cur=document.getElementById('review-audio-current');
+  var dur=document.getElementById('review-audio-duration');
+  var playBtn=document.getElementById('review-audio-play');
+  if(!audio)return;
+  var progress=audio.duration>0?Math.min(1,audio.currentTime/audio.duration):0;
+  if(fill)fill.style.width=Math.round(progress*100)+'%';
+  if(cur)cur.textContent=formatAudioTime(audio.currentTime);
+  if(dur)dur.textContent=audio.duration>0?formatAudioTime(audio.duration):'—:—';
+  if(playBtn){
+    playBtn.innerHTML=audio.paused?REVIEW_ICON_PLAY:REVIEW_ICON_PAUSE;
+    playBtn.setAttribute('aria-label',audio.paused?'Phát':'Tạm dừng');
+  }
+}
+
+function setReviewMuteIcon(muted){
+  var muteBtn=document.getElementById('review-audio-mute');
+  if(!muteBtn)return;
+  muteBtn.innerHTML=muted?REVIEW_ICON_VOLUME_X:REVIEW_ICON_VOLUME;
+  muteBtn.setAttribute('aria-label',muted?'Bật âm thanh':'Tắt âm thanh');
+}
+
+function updateTranscriptCueHighlight(){
+  var audio=document.getElementById('review-audio');
+  if(!audio)return;
+  var t=audio.currentTime;
+  var activeEl=null;
+  document.querySelectorAll('.transcript-cue').forEach(function(el){
+    var start=parseFloat(el.getAttribute('data-start'));
+    var end=parseFloat(el.getAttribute('data-end'));
+    var on=Number.isFinite(start)&&Number.isFinite(end)&&t>=start&&t<=end;
+    el.classList.toggle('is-active',on);
+    if(on)activeEl=el;
+  });
+  if(activeEl)activeEl.scrollIntoView({block:'nearest',behavior:'smooth'});
+}
+
+function wireTranscriptCueClicks(audio){
+  document.querySelectorAll('.transcript-cue').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var sel=window.getSelection();
+      if(sel&&!sel.isCollapsed&&sel.toString().trim())return;
+      var start=parseFloat(btn.getAttribute('data-start'));
+      if(!Number.isFinite(start))return;
+      audio.currentTime=start;
+      if(audio.paused){var p=audio.play();if(p&&p.catch)p.catch(function(){});}
+      updateReviewAudioUi();
+      updateTranscriptCueHighlight();
+    });
+    btn.addEventListener('keydown',function(e){
+      if(e.key!=='Enter'&&e.key!==' ')return;
+      e.preventDefault();
+      btn.click();
+    });
+  });
+}
+
+function wireReviewAudioPlayer(){
+  if(reviewAudioWired)return;
+  var audio=document.getElementById('review-audio');
+  var seek=document.getElementById('review-audio-seek');
+  var playBtn=document.getElementById('review-audio-play');
+  var backBtn=document.getElementById('review-audio-back');
+  var fwdBtn=document.getElementById('review-audio-fwd');
+  var speedBtn=document.getElementById('review-audio-speed');
+  var muteBtn=document.getElementById('review-audio-mute');
+  if(!audio||!seek||!playBtn)return;
+  reviewAudioWired=true;
+  audio.addEventListener('error',function(){tryFallbackAudio(audio);});
+  audio.addEventListener('loadedmetadata',updateReviewAudioUi);
+  audio.addEventListener('timeupdate',function(){
+    updateReviewAudioUi();
+    if(examReviewMode)updateTranscriptCueHighlight();
+  });
+  audio.addEventListener('play',updateReviewAudioUi);
+  audio.addEventListener('pause',updateReviewAudioUi);
+  audio.addEventListener('ended',updateReviewAudioUi);
+  wireTranscriptCueClicks(audio);
+  playBtn.addEventListener('click',function(){
+    if(audio.paused){var p=audio.play();if(p&&p.catch)p.catch(function(){});}
+    else audio.pause();
+  });
+  if(backBtn)backBtn.addEventListener('click',function(){
+    if(!Number.isFinite(audio.duration))return;
+    audio.currentTime=Math.max(0,audio.currentTime-10);
+    updateReviewAudioUi();
+  });
+  if(fwdBtn)fwdBtn.addEventListener('click',function(){
+    if(!Number.isFinite(audio.duration))return;
+    audio.currentTime=Math.min(audio.duration,audio.currentTime+30);
+    updateReviewAudioUi();
+  });
+  if(speedBtn)speedBtn.addEventListener('click',function(){
+    reviewSpeedIdx=(reviewSpeedIdx+1)%REVIEW_SPEEDS.length;
+    var speed=REVIEW_SPEEDS[reviewSpeedIdx];
+    audio.playbackRate=speed;
+    var speedLabel=document.getElementById('review-audio-speed-label');
+    if(speedLabel)speedLabel.textContent=speed+'x';
+  });
+  if(muteBtn)muteBtn.addEventListener('click',function(){
+    audio.muted=!audio.muted;
+    setReviewMuteIcon(audio.muted);
+  });
+  seek.addEventListener('click',function(e){
+    if(!Number.isFinite(audio.duration)||!audio.duration)return;
+    var rect=seek.getBoundingClientRect();
+    var ratio=Math.min(1,Math.max(0,(e.clientX-rect.left)/rect.width));
+    audio.currentTime=ratio*audio.duration;
+    updateReviewAudioUi();
+  });
+  updateReviewAudioUi();
+}
+
+function setReviewAudioSrc(audio,src){
+  if(!audio||!src)return;
+  audio.src=src;
+  try{audio.load();}catch(e){}
+}
+
+function audioSrcPath(src){
+  try{var u=new URL(src,window.location.origin);return u.pathname+u.search;}catch(e){return String(src||'');}
+}
+
+function tryFallbackAudio(audio){
+  if(!audio||audio.dataset.fallbackTried==='1')return;
+  var fb=audio.dataset.fallback||'';
+  if(!fb||audioSrcPath(audio.src)===audioSrcPath(fb))return;
+  audio.dataset.fallbackTried='1';
+  setReviewAudioSrc(audio,fb);
+}
+
+function showReviewAudioPlayer(){
+  stopExamAudio();
+  var boot=window.__EXAM_BOOT__||{};
+  var src=boot.audioUrl||boot.audioFallbackUrl||'';
+  var ae=document.getElementById('exam-audio');
+  var reviewAe=document.getElementById('review-audio');
+  if(!reviewAe)return;
+  if(!src&&ae)src=ae.getAttribute('src')||ae.src||'';
+  if(src){
+    if(boot.audioFallbackUrl)reviewAe.dataset.fallback=boot.audioFallbackUrl;
+    setReviewAudioSrc(reviewAe,src);
+  }
+  wireReviewAudioPlayer();
+  updateTranscriptCueHighlight();
+}
+
 function reviewLineHtml(userVal,correctVal,num){
   var u=pdfEscHtml(userVal||'—');
   var c=pdfEscHtml(correctVal||'—');
@@ -1621,48 +1816,19 @@ function reviewLineHtml(userVal,correctVal,num){
   return '<div class="'+cls+'"><span class="ans-your">Bạn: '+u+'</span><span class="ans-correct">Đáp án: '+c+'</span></div>';
 }
 
-function insertReviewLineAfter(el,html){
-  if(!el||el.nextElementSibling&&el.nextElementSibling.classList.contains('ans-review-line'))return;
+function insertReviewLineAfterParagraph(qnum,user,correct){
+  var inp=document.getElementById('q'+qnum);
+  if(!inp)return;
+  var p=inp.closest('p');
+  if(!p||!p.parentNode)return;
+  if(p.parentNode.querySelector('.ans-review-line[data-q="'+qnum+'"]'))return;
+  var html=reviewLineHtml(user,correct,qnum);
   var d=document.createElement('div');
   d.innerHTML=html;
   var line=d.firstElementChild;
   if(!line)return;
-  if(el.parentNode)el.parentNode.insertBefore(line,el.nextSibling);
-}
-
-function highlightSelectReview(sel,userVal,correctVal,num){
-  if(!sel)return;
-  var pillKey=sel.id;
-  if(!pillKey){
-    var oc=sel.getAttribute('onchange')||'';
-    var m=oc.match(/'q(\d+)'/);
-    if(m)pillKey='sel-q'+m[1];
-  }
-  var pillId=pillKey?'review-pill-'+pillKey:null;
-  sel.classList.remove('review-user','review-correct');
-  var userNorm=normalizeAns(userVal);
-  var match=typeof num==='number'?isAnswerCorrect(num,userVal):answersMatch(userVal,correctVal);
-  if(userNorm)sel.classList.add('review-user');
-  if(match)sel.classList.add('review-correct');
-  if(pillId){
-    var existing=document.getElementById(pillId);
-    if(existing)existing.remove();
-  }
-  if(!match&&String(correctVal||'').trim()){
-    var pill=document.createElement('span');
-    if(pillId)pill.id=pillId;
-    pill.className='review-correct-pill';
-    pill.textContent=correctVal;
-    var tfngWrap=sel.closest('.tfng');
-    var mrowTop=sel.closest('.mrow-top');
-    if(tfngWrap){
-      tfngWrap.appendChild(pill);
-    }else if(mrowTop&&mrowTop.parentNode){
-      mrowTop.parentNode.insertBefore(pill,mrowTop.nextSibling);
-    }else if(sel.parentNode){
-      sel.parentNode.insertBefore(pill,sel.nextSibling);
-    }
-  }
+  line.setAttribute('data-q',String(qnum));
+  p.parentNode.insertBefore(line,p.nextSibling);
 }
 
 function highlightMcqReview(qid,userVal,correctVal,num){
@@ -1680,75 +1846,80 @@ function highlightMcqReview(qid,userVal,correctVal,num){
   });
 }
 
+function lockExamInputs(){
+  document.querySelectorAll('#questions-panel input, #questions-panel select, #questions-panel textarea').forEach(function(el){
+    el.disabled=true;
+  });
+  document.querySelectorAll('#questions-panel .dnd-handle').forEach(function(handle){
+    handle.setAttribute('draggable','false');
+    handle.style.pointerEvents='none';
+  });
+  document.querySelectorAll('#questions-panel .dnd-slot, #questions-panel .dnd-pill-row').forEach(function(el){
+    el.style.pointerEvents='none';
+  });
+}
+
+function highlightFillReview(inp,userVal,correctVal,num){
+  if(!inp)return;
+  inp.classList.remove('review-user','review-correct','review-wrong');
+  if(!String(userVal).trim()&&!String(correctVal).trim())return;
+  if(String(userVal).trim()){
+    if(isAnswerCorrect(num,userVal))inp.classList.add('review-user','review-correct');
+    else inp.classList.add('review-user','review-wrong');
+  }
+  var stack=inp.closest('.fi-stack')||inp.closest('.si-wrap');
+  var host=stack?stack.parentElement:inp.parentElement;
+  if(!host)return;
+  var rev=host.querySelector('.fill-review[data-q="'+num+'"]');
+  if(!rev){
+    rev=document.createElement('div');
+    rev.className='fill-review';
+    rev.setAttribute('data-q',String(num));
+    if(stack)host.insertBefore(rev,stack.nextSibling);
+    else host.appendChild(rev);
+  }
+  rev.innerHTML=reviewLineHtml(userVal,correctVal,num);
+}
+
+function highlightDndReview(qid,userVal,correctVal,num){
+  var row=document.getElementById('anchor-'+qid);
+  if(!row){
+    var slot=document.querySelector('.dnd-slot[data-qid="'+qid+'"]');
+    if(slot)row=slot.closest('.dnd-row');
+  }
+  if(!row)return;
+  var rev=row.querySelector('.dnd-review');
+  if(!rev){
+    rev=document.createElement('div');
+    rev.className='dnd-review';
+    row.appendChild(rev);
+  }
+  rev.innerHTML=reviewLineHtml(userVal,correctVal,num);
+}
+
 function applyReviewAnswers(){
-  if(!examAnswerKey||!TOTAL_Q)return;
+  if(!examAnswerKey||!QUESTION_NUMS.length)return;
   for(var i=0;i<QUESTION_NUMS.length;i++){
     var n=QUESTION_NUMS[i];
     var qid='q'+n;
     var correct=getCorrectAnswerForQuestion(n);
     if(!String(correct).trim())continue;
     var user=userAnswersSnapshot[qid]||'';
-    var html=reviewLineHtml(user,correct,n);
     var inp=document.getElementById(qid);
-    if(inp){
-      if(inp.classList&&inp.classList.contains('phrase-drop')){
-        insertReviewLineAfter(inp.closest('.phrase-gap-stack')||inp,html);
-      }else{
-        insertReviewLineAfter(inp.closest('.fi-stack')||inp,html);
-      }
+    if(inp&&inp.tagName==='INPUT'&&inp.type!=='radio'&&inp.type!=='hidden'){
+      highlightFillReview(inp,user,correct,n);
       continue;
     }
     var sel=document.getElementById('sel-'+qid);
-    if(sel){
-      if(sel.type==='hidden'){
-        var dndRow=document.getElementById('anchor-'+qid)||sel.closest('.dnd-row');
-        if(dndRow)insertReviewLineAfter(dndRow,html);
-      }else{
-        highlightSelectReview(sel,user,correct,n);
-      }
+    if(sel&&sel.type==='hidden'){
+      highlightDndReview(qid,user,correct,n);
       continue;
     }
     var optsEl=document.getElementById(qid+'-opts');
     if(optsEl){
       highlightMcqReview(qid,user,correct,n);
-      continue;
-    }
-    var msel=document.querySelector('#questions-panel [onchange*="'+qid+'"]');
-    if(msel&&msel.tagName==='SELECT'){
-      highlightSelectReview(msel,user,correct,n);
     }
   }
-}
-
-function lockExamInputs(){
-  document.querySelectorAll('#questions-panel input, #questions-panel select').forEach(function(el){
-    el.disabled=true;
-  });
-  document.querySelectorAll('#questions-panel .wbchip-drag-handle').forEach(function(handle){
-    handle.setAttribute('draggable','false');
-  });
-  clearPhrasePick();
-}
-
-function recordIeltsPracticeAttempt(){
-  var score=computeExamScore();
-  if(!score||!Number.isFinite(score.band))return;
-  var skill=document.getElementById('exam-audio')?'listening':'reading';
-  try{
-    var key='anthicIeltsAttempts:'+skill;
-    var prev=JSON.parse(localStorage.getItem(key)||'[]');
-    if(!Array.isArray(prev))prev=[];
-    prev.unshift({band:score.band,at:Date.now()});
-    localStorage.setItem(key,JSON.stringify(prev.slice(0,20)));
-  }catch(e){}
-  try{
-    fetch('/api/ielts/practice-attempt',{
-      method:'POST',
-      credentials:'include',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({skill:skill,band:score.band,examKey:window.location.pathname||''})
-    }).catch(function(){});
-  }catch(e){}
 }
 
 function enterReviewMode(){
@@ -1759,6 +1930,7 @@ function enterReviewMode(){
   userAnswersSnapshot=collectAnswers();
   var ex=document.getElementById('exam-screen');
   if(ex)ex.classList.add('exam-review-mode');
+  showReviewAudioPlayer();
   lockExamInputs();
   if(examAnswerKey)applyReviewAnswers();
   renderReviewScore();
@@ -2527,11 +2699,13 @@ function removeHighlightFromRange(range){
 #exam-screen.exam-review-mode #hl-popover{display:none!important;pointer-events:none!important}
 .transcript-cue{display:flex;width:100%;gap:10px;align-items:flex-start;border:none;background:transparent;padding:8px 10px;margin:0 0 4px;border-radius:8px;text-align:left;cursor:text;font:inherit;color:inherit;user-select:text;-webkit-user-select:text}
 .transcript-cue-time{width:42px;flex-shrink:0;font-size:12px;font-weight:600;color:#71717A;font-variant-numeric:tabular-nums;padding-top:2px;user-select:none;-webkit-user-select:none;cursor:text}
-.transcript-cue-speaker{font-weight:600;color:#47464b}
+.transcript-cue-speaker{font-weight:600;color:#4b2876}
+.transcript-cue.is-active .transcript-cue-speaker{color:#4b2876}
 .transcript-cue-text{flex:1;min-width:0;cursor:text}
 .transcript-cue.is-active{background:#f5f5f7}
 .transcript-cue.is-active .transcript-cue-time{color:#000001;font-weight:700}
 .transcript-cue.is-active .transcript-cue-text{font-weight:600;color:#000001}
+.transcript-q-marker{font-weight:700;color:#4b2876}
 #exam-screen.exam-review-mode .transcript-scroll,
 #exam-screen.exam-review-mode .transcript-body{cursor:text}
 </style>

@@ -116,8 +116,9 @@ const LISTENING_REVIEW_CSS = `
 .ntable td{vertical-align:top}
 .transcript-cue{display:flex;width:100%;gap:10px;align-items:flex-start;border:none;background:transparent;padding:8px 10px;margin:0 0 4px;border-radius:8px;text-align:left;cursor:text;font:inherit;color:inherit;user-select:text;-webkit-user-select:text}
 .transcript-cue-time{width:42px;flex-shrink:0;font-size:12px;font-weight:600;color:#71717A;font-variant-numeric:tabular-nums;padding-top:2px;user-select:none;-webkit-user-select:none;cursor:text}
-.transcript-cue-speaker{font-weight:600;color:#47464b}
-.transcript-q-marker{font-weight:700;color:#47464b}
+.transcript-cue-speaker{font-weight:600;color:#4b2876}
+.transcript-cue.is-active .transcript-cue-speaker{color:#4b2876}
+.transcript-q-marker{font-weight:700;color:#4b2876}
 .transcript-cue-text{flex:1;min-width:0;cursor:text}
 .transcript-cue.is-active{background:#f5f5f7}
 .transcript-cue.is-active .transcript-cue-time{color:#000001;font-weight:700}
@@ -456,13 +457,14 @@ function enterReviewMode(){
   lockExamInputs();
   if(examAnswerKey)applyReviewAnswers();
   renderReviewScore();
+  recordIeltsPracticeAttempt();
   sendSubmissionToGoogleSheet();
   if(typeof window.__examDictEnterReviewMode==="function")window.__examDictEnterReviewMode();
 }
 `;
 
 export const LISTENING_REVIEW_HELPERS = REVIEW_HELPERS.replace(
-  /function reviewLineHtml\(userVal,correctVal,num\)\{[\s\S]*?sendSubmissionToGoogleSheet\(\);\n\}/,
+  /function reviewLineHtml\(userVal,correctVal,num\)\{[\s\S]*?if\(typeof window\.__examDictEnterReviewMode==="function"\)window\.__examDictEnterReviewMode\(\);\n\}/,
   LISTENING_REVIEW_TAIL.trim(),
 );
 
