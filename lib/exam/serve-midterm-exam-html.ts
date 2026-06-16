@@ -5,7 +5,7 @@ import { loadRealExamAnswerKey } from "@/lib/exam/real-exam-answer-key-files";
 import { loadRealExamTranscriptSync } from "@/lib/exam/real-exam-sync-files";
 import { loadRealExamTranscriptHtml } from "@/lib/exam/real-exam-transcript-files";
 import { listeningAudioApiPath } from "@/lib/listening/listening-audio-storage";
-import { listeningSyncCuesToExamHtml } from "@/lib/listening/listening-sync-cues-to-exam-html";
+import { listeningSyncCuesToExamHtmlByPart } from "@/lib/listening/listening-sync-cues-to-exam-html";
 import { realTestListeningAudioFileName } from "@/lib/listening/listening-materials-urls";
 import { injectExamCopyFriction } from "@/lib/exam/inject-exam-copy-friction";
 import { injectExamDictionaryPopover } from "@/lib/exam/inject-exam-dictionary-popover";
@@ -61,7 +61,7 @@ function injectListeningTranscript(html: string, transcriptHtml: string | null):
 
   return html.replace(
     /<div class="transcript-body" id="transcript-body">[\s\S]*?<\/div>/,
-    `<div class="transcript-body" id="transcript-body">${inner}</div>`,
+    `<div class="transcript-body transcript-by-part" id="transcript-body">${inner}</div>`,
   );
 }
 
@@ -101,7 +101,7 @@ function buildMidtermExamHtml(slug: RealExamSlug, kind: "reading" | "listening")
 
     const sync = loadRealExamTranscriptSync(slug);
     const transcriptHtml = sync
-      ? listeningSyncCuesToExamHtml(sync)
+      ? listeningSyncCuesToExamHtmlByPart(sync)
       : loadRealExamTranscriptHtml(slug);
     boot.audioUrl = audioUrl;
     if (audioFallbackUrl) boot.audioFallbackUrl = audioFallbackUrl;

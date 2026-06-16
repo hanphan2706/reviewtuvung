@@ -396,6 +396,8 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
 #transcript-panel{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
 .transcript-scroll{flex:1;overflow-y:auto;min-height:0;padding:18px 22px 16px}
 .transcript-body{font-size:13.5px;line-height:1.75;color:var(--exam-chrome-text);user-select:text;-webkit-user-select:text}
+.transcript-body.transcript-by-part .transcript-part-panel{display:none}
+.transcript-body.transcript-by-part .transcript-part-panel.active{display:block}
 .transcript-empty{font-size:13px;color:var(--exam-chrome-muted);line-height:1.6}
 #review-audio-bar{display:none;flex-shrink:0;padding:6px 10px 8px;background:#fff;border-top:1px solid var(--exam-chrome-border)}
 #exam-screen.exam-review-mode #exam-body{flex-direction:row}
@@ -1123,6 +1125,7 @@ function switchPassage(n){
   document.querySelectorAll('.ptab')[n-1].classList.add('active');
   var qp=document.getElementById('questions-panel');
   if(qp)qp.scrollTop=0;
+  if(examReviewMode)updateTranscriptForPart(n);
 }
 
 function ensureQuestionTracker(){
@@ -1644,7 +1647,12 @@ function applyExamPayload(data){
   }
   if(data.transcriptHtml){
     var body=document.getElementById('transcript-body');
-    if(body)body.innerHTML=data.transcriptHtml;
+    if(body){
+      body.innerHTML=data.transcriptHtml;
+      if(body.querySelector('.transcript-part-panel'))body.classList.add('transcript-by-part');
+      else body.classList.remove('transcript-by-part');
+      if(examReviewMode)updateTranscriptForPart(activeListeningPart());
+    }
   }else if(data.hasTranscript===false){
     var ex=document.getElementById('exam-screen');
     if(ex)ex.classList.add('no-transcript');
@@ -1792,6 +1800,24 @@ function tryFallbackAudio(audio){
   setReviewAudioSrc(audio,fb);
 }
 
+function activeListeningPart(){
+  var tabs=document.querySelectorAll('.ptab');
+  for(var i=0;i<tabs.length;i++){
+    if(tabs[i].classList.contains('active'))return i+1;
+  }
+  return 1;
+}
+
+function updateTranscriptForPart(n){
+  var body=document.getElementById('transcript-body');
+  if(!body||!body.classList.contains('transcript-by-part'))return;
+  body.querySelectorAll('.transcript-part-panel').forEach(function(el){
+    el.classList.toggle('active',parseInt(el.getAttribute('data-part'),10)===n);
+  });
+  var scroll=document.getElementById('transcript-scroll');
+  if(scroll)scroll.scrollTop=0;
+}
+
 function showReviewAudioPlayer(){
   stopExamAudio();
   var boot=window.__EXAM_BOOT__||{};
@@ -1805,6 +1831,7 @@ function showReviewAudioPlayer(){
     setReviewAudioSrc(reviewAe,src);
   }
   wireReviewAudioPlayer();
+  updateTranscriptForPart(activeListeningPart());
   updateTranscriptCueHighlight();
 }
 

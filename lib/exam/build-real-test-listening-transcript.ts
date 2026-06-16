@@ -41,6 +41,23 @@ const MCQ_ANSWER_HINTS: Record<number, string[]> = {
   30: ["marketing", "not so much competition"],
 };
 
+/** Gợi ý vị trí chèn Q31–Q40 trong monologue Part 4 (đề thi thật 1). */
+const PART4_ANSWER_HINTS: Record<number, string[]> = {
+  31: ["catch sharks", "nets used to catch sharks"],
+  32: ["the cost", "important of these is the cost"],
+  33: ["catch quite easily"],
+  34: ["in the ocean", "signal in the ocean"],
+  35: ["helicopter", "polar bear"],
+  36: ["against rocks", "rubbing up against rocks"],
+  37: ["applied paint", "less invasive"],
+  38: ["diagram", "whisker patterns"],
+  39: ["zoos around australia", "zoos around Australia"],
+  40: ["inviting the public", "the public to take part"],
+};
+
+const LISTENING_OUTRO_RE =
+  /\s*You now have ten minutes[\s\S]*?(?:question booklet to be collected\.?)?\s*$/i;
+
 function normalizeToken(value: string): string {
   return value.toLowerCase().replace(/[^a-z0-9]/g, "");
 }
@@ -148,6 +165,47 @@ function answerSearchTerms(answer: string): string[] {
   return terms;
 }
 
+function stripListeningOutro(text: string): string {
+  return text.replace(LISTENING_OUTRO_RE, "").trim();
+}
+
+function findMarkerInsertPos(text: string, terms: string[], minIndex: number): number {
+  const lower = text.toLowerCase();
+  let best = -1;
+  for (const term of terms) {
+    const t = term.trim();
+    if (t.length < 3) continue;
+    const idx = lower.indexOf(t.toLowerCase(), minIndex);
+    if (idx < 0) continue;
+    const end = idx + t.length;
+    if (best < 0 || end < best) best = end;
+  }
+  return best;
+}
+
+function injectPart4Markers(text: string, answers: RealTestAnswerKey): string {
+  let result = stripListeningOutro(text);
+  let searchFrom = 0;
+
+  for (let q = 31; q <= 40; q += 1) {
+    const key = `q${q}`;
+    const answer = answers[key] ?? answers[String(q)] ?? "";
+    const hints = PART4_ANSWER_HINTS[q] ?? [];
+    const pos = findMarkerInsertPos(result, [...hints, ...answerSearchTerms(answer)], searchFrom);
+    if (pos < 0) continue;
+    const marker = ` Q${q}`;
+    const before = result.slice(0, pos);
+    if (before.includes(marker) || before.endsWith(`Q${q}`)) {
+      searchFrom = pos;
+      continue;
+    }
+    result = `${before}${marker}${result.slice(pos)}`;
+    searchFrom = pos + marker.length;
+  }
+
+  return result;
+}
+
 function findMarkerLineIndex(turns: DialogueLine[], qNum: number, answer: string, used: Set<number>): number {
   const hints = MCQ_ANSWER_HINTS[qNum] ?? [];
   const terms = [...hints, ...answerSearchTerms(answer)];
@@ -179,7 +237,7 @@ function injectQuestionMarkers(turns: DialogueLine[], answers: RealTestAnswerKey
   const out = turns.map((t) => ({ ...t, text: t.text }));
   const used = new Set<number>();
 
-  for (let q = 1; q <= 40; q += 1) {
+  for (let q = 1; q <= 30; q += 1) {
     const key = `q${q}`;
     const answer = answers[key] ?? answers[String(q)] ?? "";
     const idx = findMarkerLineIndex(out, q, answer, used);
@@ -189,6 +247,12 @@ function injectQuestionMarkers(turns: DialogueLine[], answers: RealTestAnswerKey
     if (!out[idx]!.text.includes(marker)) {
       out[idx]!.text = `${out[idx]!.text.replace(/\s+$/, "")}${marker}`;
     }
+  }
+
+  for (let i = 0; i < out.length; i += 1) {
+    if (out[i]!.part !== 4) continue;
+    out[i]!.text = injectPart4Markers(out[i]!.text, answers);
+    break;
   }
 
   return out;
