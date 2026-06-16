@@ -1,5 +1,6 @@
 /** Cambridge listening review shell + grading for mid-term listening HTML. */
 
+import { injectExamCopyFriction } from "../lib/exam/inject-exam-copy-friction.mjs";
 import { REVIEW_HELPERS } from "./midterm-cambridge-review.mjs";
 
 const LEFT_REVIEW_COLUMN_HTML = `
@@ -453,6 +454,41 @@ export const LISTENING_REVIEW_HELPERS = REVIEW_HELPERS.replace(
   LISTENING_REVIEW_TAIL.trim(),
 );
 
+const CAMBRIDGE_AUDIO_INTRO_CSS = `
+#audio-intro-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,1,.72);align-items:center;justify-content:center;z-index:200;padding:20px}
+#audio-intro-overlay.is-open{display:flex}
+.audio-intro-inner{background:var(--exam-chrome-bg);border:1px solid var(--exam-chrome-border);border-radius:16px;padding:32px 36px;max-width:520px;width:100%;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.12)}
+.audio-intro-main{font-size:15px;line-height:1.65;margin-bottom:10px;color:var(--exam-chrome-text)}
+.audio-intro-sub{font-size:13px;color:var(--exam-chrome-muted);margin-bottom:18px}
+.audio-play-btn{background:var(--exam-submit-bg);color:var(--exam-submit-text);border:none;border-radius:10px;padding:12px 28px;font-size:15px;font-weight:700;cursor:pointer;outline:none}
+.audio-play-btn:focus,.audio-play-btn:focus-visible{outline:none;box-shadow:none}
+`;
+
+const CAMBRIDGE_AUDIO_INTRO_HTML = `<div id="audio-intro-overlay" aria-modal="true" role="dialog">
+    <div class="audio-intro-inner">
+      <p class="audio-intro-main">You will listen to the recording once. You cannot pause or rewind while answering.</p>
+      <p class="audio-intro-sub">Click Play to start the audio and timer.</p>
+      <button type="button" class="audio-play-btn" id="audio-play-btn" onclick="beginListeningExam()">&#9654; Play</button>
+    </div>
+  </div>`;
+
+function patchCambridgeAudioIntro(html) {
+  let out = html;
+  out = out.replace(
+    /\/\* Audio intro \(before listening starts\) \*\/[\s\S]*?\.audio-play-btn \.audio-play-glyph\{[^}]+\}/,
+    `/* Audio intro (Cambridge shell) */${CAMBRIDGE_AUDIO_INTRO_CSS}`,
+  );
+  out = out.replace(
+    /<!-- Audio intro[\s\S]*?<div id="audio-intro-overlay"[\s\S]*?<\/div>\s*\n\s*<\/div>/,
+    `<!-- Audio intro (Cambridge shell) -->\n  ${CAMBRIDGE_AUDIO_INTRO_HTML}`,
+  );
+  out = out.replace(
+    /\n#audio-intro-overlay\{background:rgba\(0,0,1,\.72\)\}\n\.audio-play-btn\{background:var\(--exam-submit-bg\);color:var\(--exam-submit-text\)\}/g,
+    "",
+  );
+  return out;
+}
+
 export function applyMidtermListeningReviewPatch(html) {
   let out = html;
 
@@ -581,5 +617,12 @@ function submitExam(){
 }`,
   );
 
-  return out;
+  out = out.replace(
+    /var aio=document\.getElementById\('audio-intro-overlay'\);\s*if\(aio\)aio\.classList\.add\('is-open'\);\s*setTimeout\(function\(\)\{\s*var pb=document\.getElementById\('audio-play-btn'\);\s*if\(pb\)pb\.focus\(\);\s*\},80\);/,
+    "var aio=document.getElementById('audio-intro-overlay');\n  if(aio)aio.classList.add('is-open');",
+  );
+
+  out = patchCambridgeAudioIntro(out);
+
+  return injectExamCopyFriction(out, "listening");
 }

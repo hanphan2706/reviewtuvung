@@ -220,7 +220,9 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
       }
 
       if (kind === "summary-fill") {
-        if (/^Complete the summary|^Write the correct letter/i.test(line)) {
+        if (
+          /^Complete the summary|^Write the correct letter|^Choose\s+(ONE|NO MORE|TWO)/i.test(line)
+        ) {
           instructionLines.push(line);
           continue;
         }

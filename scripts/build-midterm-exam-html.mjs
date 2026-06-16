@@ -47,15 +47,26 @@ const THEME_CSS = `
 const CAMBRIDGE_CHROME_CSS = `
 #exam-screen{background:var(--exam-chrome-surface)}
 #topbar{background:var(--exam-header-bg);color:var(--exam-header-text);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;gap:12px;border-bottom:1px solid var(--exam-header-border);box-shadow:0 1px 0 rgb(0 0 0 / 0.12)}
-.tb-left{display:flex;align-items:center;gap:14px;min-width:0}
-.tb-back{color:var(--exam-header-text);text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap;flex-shrink:0}
-.tb-back:hover{color:var(--exam-header-muted)}
-.tb-title{font-size:13px;color:var(--exam-header-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tb-left{display:flex;align-items:center;gap:14px}
+.tb-back{
+  display:inline-flex;align-items:center;flex-shrink:0;
+  font-size:13px;font-weight:600;line-height:1.25;color:var(--exam-header-text);
+  text-decoration:none;white-space:nowrap;
+  transition:opacity .15s,color .15s;
+}
+.tb-back:hover{opacity:1;color:var(--exam-header-muted)}
+.tb-title{font-size:13px;color:var(--exam-header-muted);white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.tb-exam-meta{
+  font-size:12px;font-weight:600;color:var(--exam-header-muted);
+  text-align:center;line-height:1.35;
+  max-width:min(300px,30vw);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+#student-badge{font-size:12px;text-align:right;line-height:1.5;color:var(--exam-header-muted)}
 #timer-box{min-width:78px;min-height:34px;padding:7px 14px;font-size:15px;font-weight:500;letter-spacing:2.5px;border:1px solid var(--exam-header-border);border-radius:9px;font-variant-numeric:tabular-nums;color:var(--exam-header-text);background:var(--exam-header-surface);display:flex;align-items:center;justify-content:center;line-height:1;text-align:center}
 #timer-box.warn{background:rgba(255,235,238,.95);border-color:#e57373;color:#b71c1c}
 .zoom-ctl{display:flex;align-items:center;gap:5px;border:1px solid var(--exam-header-border);border-radius:9px;padding:4px 7px;background:var(--exam-header-surface);min-height:34px}
 .zoom-btn{display:flex;align-items:center;justify-content:center;width:26px;height:26px;border:1px solid var(--exam-header-border);border-radius:7px;background:rgba(250,250,250,.06);color:var(--exam-header-text);font-size:14px;cursor:pointer;font-family:inherit}
-.zoom-btn:hover{background:rgba(250,250,250,.14)}
+.zoom-btn:hover{background:rgba(250,250,250,.14);border-color:rgba(250,250,250,.22)}
 .zoom-pct{font-size:11px;min-width:37px;text-align:center;color:var(--exam-header-muted)}
 #prog-bar{height:4px;background:var(--exam-header-bg)}
 #passage-panel{border-right:1px solid var(--exam-chrome-border);background:var(--exam-passage-bg)}
@@ -65,8 +76,6 @@ const CAMBRIDGE_CHROME_CSS = `
 #sub-btn:hover{opacity:.92}
 #success-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,1,.92);align-items:center;justify-content:center;z-index:100}
 .sdetail{background:var(--exam-chrome-surface);border:1px solid var(--exam-chrome-border)}
-#audio-intro-overlay{background:rgba(0,0,1,.72)}
-.audio-play-btn{background:var(--exam-submit-bg);color:var(--exam-submit-text)}
 .audio-done{color:var(--exam-chrome-muted);background:var(--exam-chrome-bg);border-bottom:1px solid var(--exam-chrome-border)}
 .qt{border-color:var(--exam-chrome-border);background:var(--exam-chrome-bg);color:var(--exam-chrome-muted)}
 .qt.qt-done{background:#E4E4E7;border-color:var(--exam-chrome-text);color:var(--exam-chrome-text)}
@@ -134,15 +143,46 @@ function applyGrayTheme(html) {
   return out;
 }
 
-function patchExamHeader(html, { backHref, backLabel, examTitle }) {
+function patchExamMetaLabel(html, label = "Đề thi thật 1") {
+  return html.replace(
+    /<div id="student-badge"><\/div>/,
+    `<div id="tb-exam-meta" class="tb-exam-meta">${label}</div>\n      <div id="student-badge"></div>`,
+  );
+}
+
+function patchExamHeader(html, { backHref, backLabel }) {
   return html.replace(
     /<div class="tb-left">[\s\S]*?<\/div>\s*\n\s*<div class="tb-right">/,
     `<div class="tb-left">
-      <a class="tb-back" href="${backHref}">${backLabel}</a>
-      <div class="tb-title" id="exam-subtitle">${examTitle}</div>
+      <a id="tb-back-link" class="tb-back" href="${backHref}">${backLabel}</a>
+      <div class="tb-title" id="tb-passage-title"></div>
     </div>
     <div class="tb-right">`,
   );
+}
+
+/** Reading full test: toolbar title follows active passage .p-title (Cambridge shell). */
+function injectReadingPassageTitleSync(html) {
+  const script = `<script>
+(function(){
+  function syncPassageTitle(){
+    var active=document.querySelector('#passage-panel .passage-content.active .p-title');
+    var tb=document.getElementById('tb-passage-title');
+    if(tb)tb.textContent=active?active.textContent.trim():'';
+  }
+  if(typeof switchPassage==='function'&&!window.__midtermPassageTitlePatched){
+    window.__midtermPassageTitlePatched=true;
+    var _orig=switchPassage;
+    switchPassage=function(n){_orig(n);syncPassageTitle();};
+  }
+  function boot(){syncPassageTitle();}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);
+  else boot();
+})();
+</script>`;
+  const idx = html.lastIndexOf("</body>");
+  if (idx === -1) return html + script;
+  return html.slice(0, idx) + script + html.slice(idx);
 }
 
 function patchLoginCopy(html) {
@@ -198,12 +238,13 @@ function buildReading() {
   html = applyGrayTheme(html);
   html = patchExamHeader(html, {
     backHref: "/tu-hoc/luyen-doc/luyen-de-ielts",
-    backLabel: "← Luyện đề IELTS",
-    examTitle: "IELTS Reading &mdash; Đề thi thật 1 &middot; Questions 1&ndash;40",
+    backLabel: "← Quay lại bài đọc",
   });
+  html = patchExamMetaLabel(html);
   html = patchLoginCopy(html);
   html = patchStartExam(html);
   html = applyCambridgeReviewPatch(html, "reading");
+  html = injectReadingPassageTitleSync(html);
   html = injectSkipLoginBoot(html);
   const out = path.join(root, "public/midterm-reading-exam.html");
   fs.writeFileSync(out, html, "utf8");
@@ -224,9 +265,9 @@ function buildListening() {
   html = applyGrayTheme(html);
   html = patchExamHeader(html, {
     backHref: "/tu-hoc/luyen-nghe/luyen-de-ielts",
-    backLabel: "← Luyện đề IELTS",
-    examTitle: "IELTS Listening &mdash; Đề thi thật 1 &middot; Questions 1&ndash;40",
+    backLabel: "← Quay lại bài nghe",
   });
+  html = patchExamMetaLabel(html);
   html = patchLoginCopy(html);
   html = patchStartExam(html);
   html = applyMidtermListeningReviewPatch(html);

@@ -1,7 +1,8 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { WordRichDisplay } from "@/components/word-rich-display";
+import { useListeningCopyFriction } from "@/hooks/use-listening-copy-friction";
 import { LISTENING_PARTS_PILOT, getListeningPartOrDefault, getListeningTestContext } from "@/lib/listening/content-manifest";
 import { listeningTranscriptPlainToSafeHtml } from "@/lib/listening/transcript-to-display-html";
 
@@ -81,11 +82,14 @@ export function ListeningPilotSession() {
   const [transcriptLoading, setTranscriptLoading] = useState(false);
   const [transcriptError, setTranscriptError] = useState(false);
   const [selfChoice, setSelfChoice] = useState<string | null>(null);
+  const transcriptRef = useRef<HTMLDivElement>(null);
 
   const transcriptHtml = useMemo(
     () => (transcriptText ? listeningTranscriptPlainToSafeHtml(transcriptText) : ""),
     [transcriptText],
   );
+
+  useListeningCopyFriction(transcriptRef, step === "transcript" && Boolean(transcriptHtml));
 
   const audioSrc = meta.audioPublicPath;
 
@@ -291,7 +295,10 @@ export function ListeningPilotSession() {
             </p>
           )}
           {!transcriptLoading && transcriptHtml ? (
-            <div className="max-h-[min(70vh,28rem)] overflow-auto rounded-xl border border-zinc-200 bg-white p-4 text-sm leading-relaxed text-ink">
+            <div
+              ref={transcriptRef}
+              className="max-h-[min(70vh,28rem)] overflow-auto rounded-xl border border-zinc-200 bg-white p-4 text-sm leading-relaxed text-ink select-text"
+            >
               <WordRichDisplay
                 html={transcriptHtml}
                 as="div"

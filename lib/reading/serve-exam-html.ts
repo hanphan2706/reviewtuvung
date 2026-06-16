@@ -9,6 +9,7 @@ import { readingArticleHref } from "@/lib/reading/article-routes";
 import type { ReadingHubArticle, ReadingPilotId } from "@/lib/reading/hub-articles";
 import { READING_IELTS_EXAM_HREF } from "@/lib/reading/ielts-test-catalog";
 import { loadReadingPassage, loadReadingPassages } from "@/lib/reading/load-reading-raw";
+import { injectExamCopyFriction } from "@/lib/exam/inject-exam-copy-friction";
 
 const PILOT_LABELS: Record<ReadingPilotId, string> = {
   "cam19-test4": "Cambridge 19 · Test 4",
@@ -194,7 +195,7 @@ export async function buildExamRunnerHtml(article: ReadingHubArticle): Promise<s
     hasAnswerKey: boot.hasAnswerKey,
   };
 
-  return injectExamBootScript(withContent, slimBoot);
+  return injectExamCopyFriction(injectExamBootScript(withContent, slimBoot), "reading");
 }
 
 /** HTML làm bài full test (3 passage) — render sẵn trên server. */
@@ -218,5 +219,5 @@ export async function buildFullTestExamRunnerHtml(pilotId: ReadingPilotId): Prom
     hasAnswerKey: boot.hasAnswerKey,
   };
 
-  return injectExamBootScript(withContent, slimBoot);
+  return injectExamCopyFriction(injectExamBootScript(withContent, slimBoot), "reading");
 }

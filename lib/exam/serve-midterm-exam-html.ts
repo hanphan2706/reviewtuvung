@@ -7,6 +7,7 @@ import { loadRealExamTranscriptHtml } from "@/lib/exam/real-exam-transcript-file
 import { listeningAudioApiPath } from "@/lib/listening/listening-audio-storage";
 import { listeningSyncCuesToExamHtml } from "@/lib/listening/listening-sync-cues-to-exam-html";
 import { realTestListeningAudioFileName } from "@/lib/listening/listening-materials-urls";
+import { injectExamCopyFriction } from "@/lib/exam/inject-exam-copy-friction";
 
 const MAIN_SCRIPT_MARKER = "<script>\n/* Correct answers";
 
@@ -109,7 +110,10 @@ function buildMidtermExamHtml(slug: RealExamSlug, kind: "reading" | "listening")
     template = injectListeningTranscript(template, transcriptHtml);
   }
 
-  return injectMidtermBootInit(injectMidtermExamBoot(template, boot));
+  return injectExamCopyFriction(
+    injectMidtermBootInit(injectMidtermExamBoot(template, boot)),
+    kind,
+  );
 }
 
 export function loadMidtermReadingExamHtml(slug: RealExamSlug = "de-thi-that-1"): string {

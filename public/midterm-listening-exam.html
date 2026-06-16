@@ -297,31 +297,15 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
 }
 .dnd-drag-ghost .dnd-pill-row{width:100%;margin:0;background:#fff}
 
-/* Audio intro (before listening starts) */
-#audio-intro-overlay{
-  display:none;position:fixed;inset:0;z-index:200;align-items:center;justify-content:center;flex-direction:column;
-  padding:28px;background:rgba(38,38,38,.88);overflow-x:auto;-webkit-overflow-scrolling:touch;box-sizing:border-box
-}
+/* Audio intro (Cambridge shell) */
+#audio-intro-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,1,.72);align-items:center;justify-content:center;z-index:200;padding:20px}
 #audio-intro-overlay.is-open{display:flex}
-.audio-intro-inner{
-  align-self:center;flex-shrink:0;width:max-content;max-width:min(98vw,1180px);min-width:min-content;
-  margin-left:auto;margin-right:auto;text-align:center;color:#fff;box-sizing:border-box;
-  overflow-x:auto;-webkit-overflow-scrolling:touch
-}
-#audio-intro-heading{display:block;width:max-content;max-width:min(98vw,1180px);margin-left:auto;margin-right:auto}
-.audio-intro-icon{font-size:56px;line-height:1;margin-bottom:20px;opacity:.95}
-#audio-intro-overlay p.audio-intro-main{
-  font-size:16px;line-height:1.55;margin-bottom:14px;font-weight:500;
-  white-space:nowrap;word-break:normal;overflow-wrap:normal;max-width:none
-}
-.audio-intro-sub{font-size:14px;opacity:.88;margin-bottom:22px}
-.audio-play-btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#111;color:#fff;border:none;border-radius:10px;padding:14px 32px;font-size:16px;font-weight:700;cursor:pointer;font-family:inherit;
-  transition:background .15s,transform .1s
-}
-.audio-play-btn:hover{background:#000}
-.audio-play-btn:active{transform:scale(.98)}
-.audio-play-btn .audio-play-glyph{font-size:20px;line-height:1}
+.audio-intro-inner{background:var(--exam-chrome-bg);border:1px solid var(--exam-chrome-border);border-radius:16px;padding:32px 36px;max-width:520px;width:100%;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.12)}
+.audio-intro-main{font-size:15px;line-height:1.65;margin-bottom:10px;color:var(--exam-chrome-text)}
+.audio-intro-sub{font-size:13px;color:var(--exam-chrome-muted);margin-bottom:18px}
+.audio-play-btn{background:var(--exam-submit-bg);color:var(--exam-submit-text);border:none;border-radius:10px;padding:12px 28px;font-size:15px;font-weight:700;cursor:pointer;outline:none}
+.audio-play-btn:focus,.audio-play-btn:focus-visible{outline:none;box-shadow:none}
+
 
 /* Word bank */
 .wbank{background:#fff;border:1.5px solid var(--exam-chrome-border);border-radius:9px;padding:12px 16px;margin-bottom:18px}
@@ -363,15 +347,26 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
 
 #exam-screen{background:var(--exam-chrome-surface)}
 #topbar{background:var(--exam-header-bg);color:var(--exam-header-text);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;gap:12px;border-bottom:1px solid var(--exam-header-border);box-shadow:0 1px 0 rgb(0 0 0 / 0.12)}
-.tb-left{display:flex;align-items:center;gap:14px;min-width:0}
-.tb-back{color:var(--exam-header-text);text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap;flex-shrink:0}
-.tb-back:hover{color:var(--exam-header-muted)}
-.tb-title{font-size:13px;color:var(--exam-header-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tb-left{display:flex;align-items:center;gap:14px}
+.tb-back{
+  display:inline-flex;align-items:center;flex-shrink:0;
+  font-size:13px;font-weight:600;line-height:1.25;color:var(--exam-header-text);
+  text-decoration:none;white-space:nowrap;
+  transition:opacity .15s,color .15s;
+}
+.tb-back:hover{opacity:1;color:var(--exam-header-muted)}
+.tb-title{font-size:13px;color:var(--exam-header-muted);white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.tb-exam-meta{
+  font-size:12px;font-weight:600;color:var(--exam-header-muted);
+  text-align:center;line-height:1.35;
+  max-width:min(300px,30vw);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+#student-badge{font-size:12px;text-align:right;line-height:1.5;color:var(--exam-header-muted)}
 #timer-box{min-width:78px;min-height:34px;padding:7px 14px;font-size:15px;font-weight:500;letter-spacing:2.5px;border:1px solid var(--exam-header-border);border-radius:9px;font-variant-numeric:tabular-nums;color:var(--exam-header-text);background:var(--exam-header-surface);display:flex;align-items:center;justify-content:center;line-height:1;text-align:center}
 #timer-box.warn{background:rgba(255,235,238,.95);border-color:#e57373;color:#b71c1c}
 .zoom-ctl{display:flex;align-items:center;gap:5px;border:1px solid var(--exam-header-border);border-radius:9px;padding:4px 7px;background:var(--exam-header-surface);min-height:34px}
 .zoom-btn{display:flex;align-items:center;justify-content:center;width:26px;height:26px;border:1px solid var(--exam-header-border);border-radius:7px;background:rgba(250,250,250,.06);color:var(--exam-header-text);font-size:14px;cursor:pointer;font-family:inherit}
-.zoom-btn:hover{background:rgba(250,250,250,.14)}
+.zoom-btn:hover{background:rgba(250,250,250,.14);border-color:rgba(250,250,250,.22)}
 .zoom-pct{font-size:11px;min-width:37px;text-align:center;color:var(--exam-header-muted)}
 #prog-bar{height:4px;background:var(--exam-header-bg)}
 #passage-panel{border-right:1px solid var(--exam-chrome-border);background:var(--exam-passage-bg)}
@@ -381,8 +376,6 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
 #sub-btn:hover{opacity:.92}
 #success-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,1,.92);align-items:center;justify-content:center;z-index:100}
 .sdetail{background:var(--exam-chrome-surface);border:1px solid var(--exam-chrome-border)}
-#audio-intro-overlay{background:rgba(0,0,1,.72)}
-.audio-play-btn{background:var(--exam-submit-bg);color:var(--exam-submit-text)}
 .audio-done{color:var(--exam-chrome-muted);background:var(--exam-chrome-bg);border-bottom:1px solid var(--exam-chrome-border)}
 .qt{border-color:var(--exam-chrome-border);background:var(--exam-chrome-bg);color:var(--exam-chrome-muted)}
 .qt.qt-done{background:#E4E4E7;border-color:var(--exam-chrome-text);color:var(--exam-chrome-text)}
@@ -505,8 +498,8 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
 
   <div id="topbar">
     <div class="tb-left">
-      <a class="tb-back" href="/tu-hoc/luyen-nghe/luyen-de-ielts">← Luyện đề IELTS</a>
-      <div class="tb-title" id="exam-subtitle">IELTS Listening &mdash; Đề thi thật 1 &middot; Questions 1&ndash;40</div>
+      <a id="tb-back-link" class="tb-back" href="/tu-hoc/luyen-nghe/luyen-de-ielts">← Quay lại bài nghe</a>
+      <div class="tb-title" id="tb-passage-title"></div>
     </div>
     <div class="tb-right">
       <div class="zoom-ctl" title="Zoom exam content">
@@ -515,6 +508,7 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
         <button type="button" class="zoom-btn" onclick="examZoomIn()" aria-label="Zoom in">+</button>
         <button type="button" class="zoom-btn" onclick="examZoomReset()" aria-label="Reset zoom" title="Reset">&#8635;</button>
       </div>
+      <div id="tb-exam-meta" class="tb-exam-meta">Đề thi thật 1</div>
       <div id="student-badge"></div>
       <div id="timer-box">40:00</div>
     </div>
@@ -968,17 +962,12 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
 
 </div><!-- /exam-screen -->
 
-  <!-- Audio intro (outside #exam-screen so width/overflow do not force line wraps) -->
-  <div id="audio-intro-overlay" aria-modal="true" role="dialog" aria-labelledby="audio-intro-heading">
+  <!-- Audio intro (Cambridge shell) -->
+  <div id="audio-intro-overlay" aria-modal="true" role="dialog">
     <div class="audio-intro-inner">
-      <div class="audio-intro-icon" aria-hidden="true">&#127911;</div>
-      <div id="audio-intro-heading">
-        <p class="audio-intro-main">You will be listening to an audio clip during this test. You will not be permitted to pause or rewind the audio while answering the questions.</p>
-        <p class="audio-intro-sub">To continue, click Play.</p>
-      </div>
-      <button type="button" class="audio-play-btn" id="audio-play-btn" onclick="beginListeningExam()">
-        <span class="audio-play-glyph" aria-hidden="true">&#9654;</span> Play
-      </button>
+      <p class="audio-intro-main">You will listen to the recording once. You cannot pause or rewind while answering.</p>
+      <p class="audio-intro-sub">Click Play to start the audio and timer.</p>
+      <button type="button" class="audio-play-btn" id="audio-play-btn" onclick="beginListeningExam()">&#9654; Play</button>
     </div>
   </div>
 
@@ -1081,10 +1070,6 @@ function startExam(){
   updateProg();
   var aio=document.getElementById('audio-intro-overlay');
   if(aio)aio.classList.add('is-open');
-  setTimeout(function(){
-    var pb=document.getElementById('audio-play-btn');
-    if(pb)pb.focus();
-  },80);
 }
 
 function beginListeningExam(){
@@ -2498,7 +2483,134 @@ function removeHighlightFromRange(range){
   window.addEventListener('resize',repositionHlIfOpen);
 })();
 </script>
+<script id="exam-copy-friction-script">
+(function(){
+  var KIND="listening";
+  var MIN_CHARS=140;
+  var LONG_SINGLE=280;
+  var FOOTER="\n\nfrom anthichtuhoc\n";
+  var ALPHABET="bcdfghjklmnpqrstvwxyz23456789";
 
+  function noiseToken(seed,len){
+    len=len||8;
+    var token="",s=seed,i;
+    for(i=0;i<len;i++){
+      s=(s*1103515245+12345)&0x7fffffff;
+      token+=ALPHABET[s%ALPHABET.length];
+    }
+    return "["+token+"]";
+  }
+
+  function normalizeParagraph(text){
+    return text.replace(/\s+/g," ").trim();
+  }
+
+  function splitCopyParagraphs(text){
+    var normalized=text.replace(/\r\n/g,"\n").trim();
+    if(!normalized)return [];
+    var byDouble=normalized.split(/\n\s*\n/).map(normalizeParagraph).filter(Boolean);
+    if(byDouble.length>=2)return byDouble;
+    var bySingle=normalized.split(/\n/).map(normalizeParagraph).filter(Boolean);
+    if(bySingle.length>=2){
+      var substantial=bySingle.filter(function(line){return line.length>=40;});
+      if(substantial.length>=2)return substantial;
+      if(bySingle.length>=3)return bySingle;
+    }
+    if(byDouble.length)return byDouble;
+    if(bySingle.length)return bySingle;
+    return [normalized];
+  }
+
+  function shouldApplyCopyFriction(text){
+    var trimmed=text.replace(/\r\n/g,"\n").trim();
+    if(!trimmed)return false;
+    if(trimmed.length<MIN_CHARS)return false;
+    var paragraphs=splitCopyParagraphs(trimmed);
+    if(paragraphs.length>=2)return true;
+    return trimmed.length>=LONG_SINGLE;
+  }
+
+  function insertMidParagraphNoise(text,paragraphIndex){
+    var words=text.split(/\s+/).filter(Boolean);
+    if(words.length===0)return text;
+    if(words.length<4){
+      var mid=Math.max(1,Math.floor(words.length/2));
+      words.splice(mid,0,noiseToken(paragraphIndex*17+3,7));
+      return words.join(" ");
+    }
+    function insertAt(ratio,seed){
+      var idx=Math.max(1,Math.min(words.length-1,Math.floor(words.length*ratio)));
+      words.splice(idx,0,noiseToken(seed,8));
+    }
+    insertAt(0.5,paragraphIndex*7919+11);
+    if(words.length>=55)insertAt(0.33,paragraphIndex*7919+29);
+    if(words.length>=90)insertAt(0.66,paragraphIndex*7919+47);
+    return words.join(" ");
+  }
+
+  function applyCopyFriction(text){
+    var paragraphs=splitCopyParagraphs(text);
+    var blocks=paragraphs.length>0
+      ?paragraphs.map(function(p,i){return insertMidParagraphNoise(p,i);})
+      :[insertMidParagraphNoise(normalizeParagraph(text),0)];
+    return blocks.join("\n\n")+FOOTER;
+  }
+
+  function preprocessListening(raw){
+    return raw.replace(/\r\n/g,"\n").split("\n").map(function(line){
+      var t=line.trim();
+      t=t.replace(/^\d{1,2}:\d{2}\s*/,"");
+      t=t.replace(/^[A-Z][A-Z'\s]{0,22}:\s*/,"");
+      return t.trim();
+    }).filter(Boolean).join("\n");
+  }
+
+  function shouldApply(raw){
+    if(KIND==="listening")return shouldApplyCopyFriction(preprocessListening(raw));
+    return shouldApplyCopyFriction(raw);
+  }
+
+  function apply(raw){
+    if(KIND==="listening")return applyCopyFriction(preprocessListening(raw));
+    return applyCopyFriction(raw);
+  }
+
+  function selectionInside(root){
+    var sel=window.getSelection();
+    if(!sel||!sel.rangeCount||sel.isCollapsed)return false;
+    return root.contains(sel.getRangeAt(0).commonAncestorContainer);
+  }
+
+  function attach(root){
+    if(!root||root.getAttribute("data-copy-friction"))return;
+    root.setAttribute("data-copy-friction","1");
+    root.addEventListener("copy",function(event){
+      if(!selectionInside(root))return;
+      var raw=window.getSelection().toString()||"";
+      if(!shouldApply(raw))return;
+      var plain=apply(raw);
+      event.preventDefault();
+      if(event.clipboardData){
+        event.clipboardData.clearData();
+        event.clipboardData.setData("text/plain",plain);
+      }
+    });
+  }
+
+  function boot(){
+    if(KIND==="listening"){
+      var tb=document.getElementById("transcript-body");
+      if(tb)attach(tb);
+      return;
+    }
+    var pp=document.getElementById("passage-panel");
+    if(pp)attach(pp);
+  }
+
+  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",boot);
+  else boot();
+})();
+</script>
 <script>
 (function(){
   document.documentElement.classList.add('exam-skip-login');

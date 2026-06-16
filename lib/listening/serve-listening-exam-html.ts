@@ -18,6 +18,7 @@ import {
 import { loadListeningQnaPart } from "@/lib/listening/generate-ielts-listening-flow-content";
 import { getListeningPartQnaRef } from "@/lib/listening/listening-qna-catalog";
 import { listeningLessonHrefBySlug } from "@/lib/listening/listening-hub-nav";
+import { injectExamCopyFriction } from "@/lib/exam/inject-exam-copy-friction";
 
 const PILOT_LABELS: Record<string, string> = {
   cam19: "Cambridge 19",
@@ -53,6 +54,28 @@ function buildPartTabsHtml(ranges: readonly ListeningPartQuestionRange[]): strin
   return `<div class="ptab-bar" id="part-tabs">\n  ${tabs}\n</div>`;
 }
 
+function formatListeningExamMetaLabel(boot: {
+  pilotLabel?: string;
+  partNumber?: number;
+  isFullTest?: boolean;
+}): string {
+  const parts: string[] = [];
+  if (boot.pilotLabel) parts.push(boot.pilotLabel);
+  if (!boot.isFullTest && boot.partNumber) parts.push(`Part ${boot.partNumber}`);
+  return parts.join(" · ");
+}
+
+function injectListeningExamMeta(html: string, boot: Parameters<typeof formatListeningExamMetaLabel>[0]): string {
+  const label = formatListeningExamMetaLabel(boot)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+  return html.replace(
+    /<div id="tb-exam-meta" class="tb-exam-meta">[\s\S]*?<\/div>/,
+    `<div id="tb-exam-meta" class="tb-exam-meta">${label}</div>`,
+  );
+}
+
 function injectServerRenderedExam(template: string, boot: ListeningExamPayload): string {
   let html = template.replace('<html lang="en">', '<html lang="en" class="exam-skip-login">');
 
@@ -82,9 +105,11 @@ function injectServerRenderedExam(template: string, boot: ListeningExamPayload):
   );
 
   html = html.replace(
-    /<div class="tb-title" id="exam-subtitle">[\s\S]*?<\/div>/,
-    `<div class="tb-title" id="exam-subtitle">IELTS Listening &mdash; ${boot.pilotLabel} · Part ${boot.partNumber}</div>`,
+    /<div class="tb-title" id="tb-passage-title">[\s\S]*?<\/div>/,
+    `<div class="tb-title" id="tb-passage-title">${boot.title}</div>`,
   );
+
+  html = injectListeningExamMeta(html, boot);
 
   return html;
 }
@@ -126,9 +151,11 @@ function injectFullTestServerRenderedExam(template: string, boot: ListeningFullT
   );
 
   html = html.replace(
-    /<div class="tb-title" id="exam-subtitle">[\s\S]*?<\/div>/,
-    `<div class="tb-title" id="exam-subtitle">IELTS Listening &mdash; ${boot.pilotLabel} · Questions ${minQ}&ndash;${maxQ}</div>`,
+    /<div class="tb-title" id="tb-passage-title">[\s\S]*?<\/div>/,
+    `<div class="tb-title" id="tb-passage-title"></div>`,
   );
+
+  html = injectListeningExamMeta(html, { ...boot, isFullTest: true });
 
   return html;
 }
@@ -176,7 +203,7 @@ export async function buildListeningPartExamHtml(slug: string): Promise<string> 
     hasAnswerKey: payload.hasAnswerKey,
   };
 
-  return injectExamBootScript(withContent, slimBoot);
+  return injectExamCopyFriction(injectExamBootScript(withContent, slimBoot), "listening");
 }
 
 export async function buildListeningFullTestExamHtml(testId: ListeningIeltsTestId): Promise<string> {
@@ -212,5 +239,5 @@ export async function buildListeningFullTestExamHtml(testId: ListeningIeltsTestI
     hasAnswerKey: payload.hasAnswerKey,
   };
 
-  return injectExamBootScript(withContent, slimBoot);
+  return injectExamCopyFriction(injectExamBootScript(withContent, slimBoot), "listening");
 }

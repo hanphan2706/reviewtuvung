@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { WordRichDisplay } from "@/components/word-rich-display";
 import { ListeningSyncedTranscriptBody } from "@/components/listening/listening-synced-transcript-body";
+import { useListeningCopyFriction } from "@/hooks/use-listening-copy-friction";
 import type { ListeningPartMeta } from "@/lib/listening/content-manifest";
 import type { ListeningTranscriptCue, ListeningTranscriptSyncFile } from "@/lib/listening/listening-transcript-sync-types";
 import {
@@ -62,6 +63,8 @@ export function ListeningTranscriptPanel({
   const [error, setError] = useState(false);
   const [loginRequired, setLoginRequired] = useState(false);
   const usesPartSplit = listeningTranscriptUsesPartSplit({ examSlug });
+  const transcriptRef = useRef<HTMLDivElement>(null);
+  useListeningCopyFriction(transcriptRef, !loading && !error && Boolean(text || sync));
 
   useEffect(() => {
     let cancelled = false;
@@ -112,7 +115,7 @@ export function ListeningTranscriptPanel({
 
   return (
     <div className={`relative ${scrollMaxClass}`}>
-      <div className={`h-full overflow-auto ${scrollMaxClass}`}>
+      <div ref={transcriptRef} className={`h-full overflow-auto select-text ${scrollMaxClass}`}>
         {loading ? (
           <p className="font-serif text-base text-[#47464b]">Đang tải bản dịch…</p>
         ) : null}

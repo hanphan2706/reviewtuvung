@@ -1,5 +1,7 @@
 /** Cambridge-style inline review patch for mid-term reading/listening HTML. */
 
+import { injectExamCopyFriction } from "../lib/exam/inject-exam-copy-friction.mjs";
+
 export const REVIEW_CSS = `
 #exam-screen.exam-review-mode .opt.review-user{border-color:var(--exam-purple);background:#ebe6f4;font-weight:500}
 #exam-screen.exam-review-mode .opt.review-correct{border-color:#34a853;background:#f4fbf5;font-weight:500}
@@ -422,5 +424,5 @@ export function applyCambridgeReviewPatch(html, kind) {
     "if(examReviewMode)return;",
   );
 
-  return out;
+  return injectExamCopyFriction(out, kind === "listening" ? "listening" : "reading");
 }

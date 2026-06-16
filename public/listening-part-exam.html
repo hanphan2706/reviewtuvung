@@ -36,17 +36,56 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--exam-chrome-surfac
 .login-title h1{font-size:21px;font-weight:700}
 .start-btn{width:100%;padding:13px;background:var(--exam-submit-bg);color:var(--exam-submit-text);border:none;border-radius:9px;font-size:15px;font-weight:700;cursor:pointer;margin-top:6px}
 #exam-screen{display:none;flex-direction:column;height:100vh;overflow:hidden;--exam-zoom:1;background:var(--exam-chrome-surface)}
-#topbar{background:var(--exam-header-bg);color:var(--exam-header-text);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;gap:12px;border-bottom:1px solid var(--exam-header-border)}
-.tb-left{display:flex;align-items:center;gap:14px;min-width:0}
-.tb-back{color:var(--exam-header-text);text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap}
-.tb-back:hover{color:var(--exam-header-muted)}
-.tb-title{font-size:13px;color:var(--exam-header-muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#topbar{background:var(--exam-header-bg);color:var(--exam-header-text);padding:10px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;gap:12px;border-bottom:1px solid var(--exam-header-border);box-shadow:0 1px 0 rgb(0 0 0 / 0.12)}
+.tb-left{display:flex;align-items:center;gap:14px}
+.tb-back{
+  display:inline-flex;align-items:center;flex-shrink:0;
+  font-size:13px;font-weight:600;line-height:1.25;color:var(--exam-header-text);
+  text-decoration:none;white-space:nowrap;
+  transition:opacity .15s,color .15s;
+}
+.tb-back:hover{opacity:1;color:var(--exam-header-muted)}
+.tb-title{font-size:13px;color:var(--exam-header-muted);white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis}
 .tb-right{display:flex;align-items:center;gap:14px;flex-shrink:0}
-#timer-box{min-width:78px;padding:7px 14px;font-size:15px;letter-spacing:2.5px;border:1px solid var(--exam-header-border);border-radius:9px;font-variant-numeric:tabular-nums;color:var(--exam-header-text);background:var(--exam-header-surface)}
+.tb-exam-meta{
+  font-size:12px;font-weight:600;color:var(--exam-header-muted);
+  text-align:center;line-height:1.35;
+  max-width:min(300px,30vw);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+html.exam-skip-login #student-badge{display:none!important}
+#student-badge{font-size:12px;text-align:right;line-height:1.5;color:var(--exam-header-muted)}
+#timer-box{
+  display:flex;align-items:center;justify-content:center;
+  min-width:78px;min-height:34px;padding:7px 14px;
+  font-size:15px;font-weight:500;letter-spacing:2.5px;color:var(--exam-header-text);
+  font-variant-numeric:tabular-nums;
+  text-align:center;line-height:1;
+  border:1px solid var(--exam-header-border);
+  border-radius:9px;
+  background:var(--exam-header-surface);
+}
 #timer-box.warn{background:rgba(255,235,238,.95);border-color:#e57373;color:#b71c1c}
-.zoom-ctl{display:flex;align-items:center;gap:5px;border:1px solid var(--exam-header-border);border-radius:9px;padding:4px 7px;background:var(--exam-header-surface)}
-.zoom-btn{width:26px;height:26px;border:1px solid rgba(255,255,255,.28);border-radius:7px;background:transparent;color:var(--exam-header-text);cursor:pointer}
-.zoom-pct{font-size:11px;min-width:37px;text-align:center;color:var(--exam-header-text)}
+.zoom-ctl{
+  display:flex;align-items:center;gap:5px;flex-shrink:0;
+  min-height:34px;padding:4px 7px;
+  border:1px solid var(--exam-header-border);
+  border-radius:9px;
+  background:var(--exam-header-surface);
+}
+.zoom-btn{
+  display:flex;align-items:center;justify-content:center;
+  width:26px;height:26px;flex-shrink:0;padding:0;
+  border:1px solid var(--exam-header-border);
+  border-radius:7px;
+  background:rgba(250,250,250,.06);
+  color:var(--exam-header-text);font-size:14px;font-weight:400;line-height:1;cursor:pointer;font-family:inherit;
+}
+.zoom-btn:hover{background:rgba(250,250,250,.14);border-color:rgba(250,250,250,.22)}
+.zoom-btn:active{transform:scale(.96)}
+.zoom-pct{
+  font-size:11px;font-weight:400;min-width:37px;text-align:center;
+  color:var(--exam-header-muted);padding:0 3px;letter-spacing:.02em;
+}
 .ptab-bar{background:#fff;border-bottom:1px solid var(--exam-chrome-border);display:flex;flex-shrink:0}
 .ptab{padding:10px 26px;font-size:13px;font-weight:600;color:#888;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s;user-select:none;-webkit-user-select:none}
 .ptab:hover{color:#000001;background:var(--exam-chrome-surface)}
@@ -232,7 +271,8 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 .audio-intro-inner{background:var(--exam-chrome-bg);border:1px solid var(--exam-chrome-border);border-radius:16px;padding:32px 36px;max-width:520px;width:100%;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.12)}
 .audio-intro-main{font-size:15px;line-height:1.65;margin-bottom:10px;color:var(--exam-chrome-text)}
 .audio-intro-sub{font-size:13px;color:var(--exam-chrome-muted);margin-bottom:18px}
-.audio-play-btn{background:var(--exam-submit-bg);color:var(--exam-submit-text);border:none;border-radius:10px;padding:12px 28px;font-size:15px;font-weight:700;cursor:pointer}
+.audio-play-btn{background:var(--exam-submit-bg);color:var(--exam-submit-text);border:none;border-radius:10px;padding:12px 28px;font-size:15px;font-weight:700;cursor:pointer;outline:none}
+.audio-play-btn:focus,.audio-play-btn:focus-visible{outline:none;box-shadow:none}
 </style>
 </head>
 <body>
@@ -248,16 +288,19 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 <div id="exam-screen">
   <div id="topbar">
     <div class="tb-left">
-      <a class="tb-back" id="exam-back-link" href="#">← Quay lại</a>
-      <div class="tb-title" id="exam-subtitle">IELTS Listening</div>
+      <a id="tb-back-link" class="tb-back" href="/tu-hoc/luyen-nghe">← Quay lại bài nghe</a>
+      <div class="tb-title" id="tb-passage-title"></div>
     </div>
     <div class="tb-right">
-      <div class="zoom-ctl">
+      <div class="zoom-ctl" title="Zoom transcript and questions">
         <button type="button" class="zoom-btn" onclick="examZoomOut()" aria-label="Zoom out">&minus;</button>
         <span id="zoom-pct" class="zoom-pct">100%</span>
         <button type="button" class="zoom-btn" onclick="examZoomIn()" aria-label="Zoom in">+</button>
+        <button type="button" class="zoom-btn" onclick="examZoomReset()" aria-label="Reset zoom" title="Reset">&#8635;</button>
       </div>
-      <div id="timer-box">00:00</div>
+      <div id="tb-exam-meta" class="tb-exam-meta"></div>
+      <div id="student-badge"></div>
+      <div id="timer-box">10:00</div>
     </div>
   </div>
 
@@ -358,17 +401,45 @@ var reviewAudioParts=[],reviewActivePartIndex=0,reviewGlobalTime=0,reviewGlobalD
 
 function pad(n){return n<10?'0'+n:n;}
 
+function getExamBackHref(){
+  if(window.__EXAM_BOOT__&&window.__EXAM_BOOT__.back)return String(window.__EXAM_BOOT__.back);
+  return '/tu-hoc/luyen-nghe';
+}
+
+function updateExamBackLink(){
+  var a=document.getElementById('tb-back-link');
+  if(!a)return;
+  a.setAttribute('href',getExamBackHref());
+}
+
+function formatListeningExamMeta(data){
+  if(!data)return '';
+  var bits=[];
+  if(data.pilotLabel)bits.push(data.pilotLabel);
+  if(!data.isFullTest&&data.partNumber)bits.push('Part '+data.partNumber);
+  return bits.join(' · ');
+}
+
+function updateListeningExamMeta(data){
+  var el=document.getElementById('tb-exam-meta');
+  if(el)el.textContent=formatListeningExamMeta(data);
+}
+
 function applyExamPayload(data){
   if(!data)return;
   examMeta=data;
   isFullTest=!!data.isFullTest;
-  if(data.back){var bl=document.getElementById('exam-back-link');if(bl)bl.href=data.back;}
+  updateExamBackLink();
+  updateListeningExamMeta(data);
+  var tb=document.getElementById('tb-passage-title');
+  if(tb)tb.textContent=isFullTest?'':(data.title||'');
   if(!isFullTest&&data.timeMinutes){
     EXAM_DURATION_SEC=Math.max(60,data.timeMinutes*60);
     timeLeft=EXAM_DURATION_SEC;
   }
   if(Array.isArray(data.questionNums))questionNums=data.questionNums;
   examAnswerKey=data.answerKey&&typeof data.answerKey==='object'?data.answerKey:null;
+  if(data.title)document.title='ANTHICHTUHOC | '+data.title;
   if(isFullTest){
     audioUrls=Array.isArray(data.audioUrls)?data.audioUrls.slice():[];
     partQuestionRanges=Array.isArray(data.partQuestionRanges)?data.partQuestionRanges.slice():[];
@@ -468,6 +539,7 @@ function applyExamZoom(){
 }
 function examZoomIn(){examZoom=Math.min(ZOOM_MAX,Math.round((examZoom+ZOOM_STEP)*100)/100);applyExamZoom();}
 function examZoomOut(){examZoom=Math.max(ZOOM_MIN,Math.round((examZoom-ZOOM_STEP)*100)/100);applyExamZoom();}
+function examZoomReset(){examZoom=1;applyExamZoom();}
 
 function startExam(){
   document.getElementById('login-screen').style.display='none';
