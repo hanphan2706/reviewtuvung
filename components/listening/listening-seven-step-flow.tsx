@@ -38,7 +38,7 @@ function FlowLocaleToggle({
       type="button"
       onClick={onToggle}
       aria-pressed={locale === "en"}
-      className={`inline-flex shrink-0 cursor-pointer items-center gap-1 rounded-full border border-[#E4E4E7] bg-white px-3 py-1.5 text-[10px] font-bold uppercase tracking-wide text-[#47464b] shadow-sm transition hover:bg-[#f3f0f8] ${
+      className={`inline-flex shrink-0 cursor-pointer items-center gap-1 rounded-full border border-[#E4E4E7] bg-white px-2 py-1 text-[9px] font-bold uppercase tracking-wide text-[#47464b] shadow-sm transition hover:bg-[#f3f0f8] sm:px-3 sm:py-1.5 sm:text-[10px] ${
         locale === "en" ? "border-[#4b2876]/40 bg-[#4b2876]/10 text-[#4b2876]" : ""
       }`}
     >
@@ -80,6 +80,15 @@ function StepCircle({
   );
 }
 
+function StepIntro({ title, description }: { title: string; description: string }) {
+  return (
+    <div className="space-y-1.5 sm:space-y-2">
+      <StepHeading title={title} />
+      <p className="text-sm leading-snug text-[#47464b] sm:text-[15px] sm:leading-relaxed">{description}</p>
+    </div>
+  );
+}
+
 function Stepper({
   currentStep,
   shortLabels,
@@ -89,8 +98,6 @@ function Stepper({
   shortLabels: readonly string[];
   onSelect: (step: ListeningSevenStepId) => void;
 }) {
-  const activeLabel = shortLabels[currentStep - 1];
-
   return (
     <div className="min-w-0 flex-1">
       <div className="flex w-full min-w-0 items-center">
@@ -119,7 +126,7 @@ function Stepper({
 
               {!isLast ? (
                 <div
-                  className={`mx-1.5 h-px min-w-[6px] flex-1 sm:mx-2 ${
+                  className={`mx-1 h-px min-w-[4px] flex-1 sm:mx-2 ${
                     step.id < currentStep ? "bg-[#000001]" : "bg-[#E4E4E7]"
                   }`}
                   aria-hidden
@@ -129,12 +136,6 @@ function Stepper({
           );
         })}
       </div>
-
-      {activeLabel ? (
-        <p className="mt-2 text-center text-[9px] font-bold uppercase tracking-[0.12em] text-[#000001] sm:hidden">
-          {activeLabel}
-        </p>
-      ) : null}
     </div>
   );
 }
@@ -403,18 +404,15 @@ export function ListeningSevenStepFlow({
 
   return (
     <section className="overflow-hidden rounded-xl border border-[#E4E4E7] bg-white shadow-sm">
-      <div className="flex items-start gap-3 border-b border-[#E4E4E7] px-4 py-4 md:items-center md:px-8 md:py-5">
+      <div className="flex items-center gap-2 border-b border-[#E4E4E7] px-4 py-3.5 md:gap-3 md:px-8 md:py-5">
         <Stepper currentStep={currentStep} shortLabels={copy.stepShortLabels} onSelect={goToStep} />
         <FlowLocaleToggle locale={locale} onToggle={toggleLocale} />
       </div>
 
-      <div className="px-5 py-8 md:px-8 md:py-10">
+      <div className="px-5 py-6 md:px-8 md:py-10">
         {currentStep === 1 ? (
-          <div className="mx-auto flex max-w-2xl flex-col items-center gap-8 text-center">
-            <div className="space-y-3">
-              <StepHeading title={stepTitle} />
-              <p className="text-[15px] leading-relaxed text-[#47464b]">{copy.step1Prompt}</p>
-            </div>
+          <div className="mx-auto flex max-w-2xl flex-col items-center gap-6 text-center md:gap-8">
+            <StepIntro title={stepTitle} description={copy.step1Prompt} />
             <div className="w-full text-left">
               <OptionGrid options={exercise.predictionOptions} selected={predictionChoices} onToggle={togglePrediction} />
             </div>
@@ -426,9 +424,8 @@ export function ListeningSevenStepFlow({
         ) : null}
 
         {currentStep === 2 ? (
-          <div className="mx-auto flex max-w-2xl flex-col gap-6">
-            <StepHeading title={stepTitle} />
-            <p className="text-[15px] leading-relaxed text-[#47464b]">{copy.step2Prompt}</p>
+          <div className="mx-auto flex max-w-2xl flex-col gap-4 md:gap-6">
+            <StepIntro title={stepTitle} description={copy.step2Prompt} />
             <OptionGrid
               options={exercise.gistOptions}
               selected={gistChoices}
@@ -461,9 +458,8 @@ export function ListeningSevenStepFlow({
         ) : null}
 
         {currentStep === 3 ? (
-          <div className="mx-auto flex max-w-2xl flex-col gap-6">
-            <StepHeading title={stepTitle} />
-            <p className="text-[15px] leading-relaxed text-[#47464b]">{copy.step3Prompt}</p>
+          <div className="mx-auto flex max-w-2xl flex-col gap-4 md:gap-6">
+            <StepIntro title={stepTitle} description={copy.step3Prompt} />
             <textarea
               className={`${fieldClass} min-h-32`}
               value={memoryText}
@@ -479,9 +475,8 @@ export function ListeningSevenStepFlow({
         ) : null}
 
         {currentStep === 4 ? (
-          <div className="mx-auto flex max-w-2xl flex-col gap-6">
-            <StepHeading title={stepTitle} />
-            <p className="text-[15px] leading-relaxed text-[#47464b]">{copy.step4Prompt}</p>
+          <div className="mx-auto flex max-w-2xl flex-col gap-4 md:gap-6">
+            <StepIntro title={stepTitle} description={copy.step4Prompt} />
             {exercise.detailQuestions.map((question) => (
               <div key={question.key}>
                 <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#616365]">
@@ -528,19 +523,21 @@ export function ListeningSevenStepFlow({
         ) : null}
 
         {currentStep === 5 ? (
-          <div className="mx-auto flex max-w-2xl flex-col gap-6">
-            <div className="flex items-start justify-between gap-4">
-              <div className="space-y-3">
+          <div className="mx-auto flex max-w-2xl flex-col gap-4 md:gap-6">
+            <div className="space-y-1.5 sm:space-y-2">
+              <div className="flex items-start justify-between gap-3">
                 <StepHeading title={stepTitle} />
-                <p className="text-[15px] leading-relaxed text-[#47464b]">{copy.step5Prompt}</p>
+                <span className="inline-flex shrink-0 items-center gap-1.5 pt-0.5 text-[10px] font-bold uppercase tracking-wider text-[#616365]">
+                  <span
+                    className={`size-1.5 rounded-full ${transcriptHasSync ? "bg-[#4b2876] animate-pulse" : "bg-zinc-300"}`}
+                    aria-hidden
+                  />
+                  {transcriptHasSync ? copy.step5SyncedLabel : copy.step5NotSyncedLabel}
+                </span>
               </div>
-              <span className="inline-flex shrink-0 items-center gap-1.5 pt-1 text-[10px] font-bold uppercase tracking-wider text-[#616365]">
-                <span
-                  className={`size-1.5 rounded-full ${transcriptHasSync ? "bg-[#4b2876] animate-pulse" : "bg-zinc-300"}`}
-                  aria-hidden
-                />
-                {transcriptHasSync ? copy.step5SyncedLabel : copy.step5NotSyncedLabel}
-              </span>
+              <p className="text-sm leading-snug text-[#47464b] sm:text-[15px] sm:leading-relaxed">
+                {copy.step5Prompt}
+              </p>
             </div>
             <ListeningTranscriptPanel
               part={meta.part}
@@ -560,9 +557,8 @@ export function ListeningSevenStepFlow({
         ) : null}
 
         {currentStep === 6 ? (
-          <div className="mx-auto flex max-w-2xl flex-col gap-6">
-            <StepHeading title={stepTitle} />
-            <p className="text-[15px] leading-relaxed text-[#47464b]">{copy.step6Prompt}</p>
+          <div className="mx-auto flex max-w-2xl flex-col gap-4 md:gap-6">
+            <StepIntro title={stepTitle} description={copy.step6Prompt} />
             <ReflectionOptionList
               options={copy.step6ReflectionOptions}
               selected={reflection}

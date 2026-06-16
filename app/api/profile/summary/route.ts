@@ -9,8 +9,31 @@ import {
 } from "@/lib/profile/learning-progress";
 import { parseReviewDayTallies } from "@/lib/review-day-stats";
 import { countDue } from "@/lib/srs";
+import { averageBandsFromAttempts } from "@/lib/ielts/ielts-practice-attempts";
 import { mapServerStreak } from "@/lib/reading/reading-progress";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
+
+async function fetchIeltsBandAverage(
+  supabase: NonNullable<Awaited<ReturnType<typeof createServerSupabaseClient>>>,
+  userId: string,
+  skill: "reading" | "listening",
+): Promise<number | null> {
+  const { data, error } = await supabase
+    .from("ielts_practice_attempt_log")
+    .select("band")
+    .eq("user_id", userId)
+    .eq("skill", skill)
+    .order("attempted_at", { ascending: false })
+    .limit(3);
+
+  if (error || !data?.length) return null;
+
+  const bands = data
+    .map((row) => Number((row as { band?: unknown }).band))
+    .filter((band) => Number.isFinite(band));
+
+  return averageBandsFromAttempts(bands.map((band) => ({ band })));
+}
 
 export async function GET() {
   const auth = await requireApiUser();
@@ -94,6 +117,11 @@ export async function GET() {
     (settingsResult.data as { review_day_tallies?: unknown } | null)?.review_day_tallies,
   );
 
+  const [ieltsReadingBandAverage, ieltsListeningBandAverage] = await Promise.all([
+    fetchIeltsBandAverage(supabase, userId, "reading"),
+    fetchIeltsBandAverage(supabase, userId, "listening"),
+  ]);
+
   return NextResponse.json({
     configured: true,
     readingStreak: streak.currentStreak,
@@ -105,5 +133,7 @@ export async function GET() {
     vocabularyTotal: wordRows.length,
     vocabularyReviewedToday: vocabularyReviewedToday(tallies, now),
     vocabularyDueToday: countDue(wordsForDue, now),
+    ieltsReadingBandAverage,
+    ieltsListeningBandAverage,
   });
 }

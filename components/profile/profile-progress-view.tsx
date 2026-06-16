@@ -16,6 +16,10 @@ import {
   vocabularyReviewedToday,
   type ProfileLearningProgress,
 } from "@/lib/profile/learning-progress";
+import { formatIeltsBandDisplay } from "@/lib/ielts/ielts-band-average";
+import { readLocalIeltsBandAverage } from "@/lib/ielts/ielts-practice-attempts";
+import { LISTENING_IELTS_EXAM_HREF } from "@/lib/listening/ielts-test-catalog";
+import { READING_IELTS_EXAM_HREF } from "@/lib/reading/ielts-test-catalog";
 import { localStreakSnapshot } from "@/lib/reading/reading-progress";
 import { countDue } from "@/lib/srs";
 import { useSrsStore } from "@/store/srs-store";
@@ -33,6 +37,8 @@ const EMPTY_SUMMARY: ProfileLearningProgress = {
   readingArticlesTotal: READING_ARTICLES_TOTAL,
   listeningLessonsCompleted: 0,
   listeningLessonsTotal: LISTENING_LESSONS_TOTAL,
+  ieltsReadingBandAverage: null,
+  ieltsListeningBandAverage: null,
 };
 
 function formatCount(n: number): string {
@@ -46,6 +52,9 @@ const metricSuffixClass = "text-lg font-semibold text-ink-muted";
 
 const rowLinkClass =
   "max-w-[9.5rem] shrink-0 text-right text-xs font-medium leading-snug text-[#4b2876] underline decoration-[#4b2876]/30 underline-offset-2";
+
+const ieltsBandValueClass =
+  "font-serif text-2xl font-bold leading-none text-[#000001]";
 
 function ProgressRow({
   label,
@@ -113,6 +122,8 @@ export function ProfileProgressView({
           readingArticlesTotal: data.readingArticlesTotal ?? READING_ARTICLES_TOTAL,
           listeningLessonsCompleted: data.listeningLessonsCompleted ?? 0,
           listeningLessonsTotal: data.listeningLessonsTotal ?? LISTENING_LESSONS_TOTAL,
+          ieltsReadingBandAverage: data.ieltsReadingBandAverage ?? null,
+          ieltsListeningBandAverage: data.ieltsListeningBandAverage ?? null,
         });
       })
       .catch(() => undefined)
@@ -135,6 +146,25 @@ export function ProfileProgressView({
     [words, reviewDayTallies, now],
   );
 
+  const [localIeltsBands, setLocalIeltsBands] = useState({
+    reading: null as number | null,
+    listening: null as number | null,
+  });
+
+  useEffect(() => {
+    const refreshLocalIeltsBands = () => {
+      setLocalIeltsBands({
+        reading: readLocalIeltsBandAverage("reading"),
+        listening: readLocalIeltsBandAverage("listening"),
+      });
+    };
+    refreshLocalIeltsBands();
+    window.addEventListener("focus", refreshLocalIeltsBands);
+    return () => window.removeEventListener("focus", refreshLocalIeltsBands);
+  }, []);
+
+  const localIeltsBandsSnapshot = localIeltsBands;
+
   const stats = useMemo((): ProfileLearningProgress => {
     const base = remote ?? EMPTY_SUMMARY;
     return {
@@ -147,8 +177,14 @@ export function ProfileProgressView({
       readingArticlesTotal: base.readingArticlesTotal || READING_ARTICLES_TOTAL,
       listeningLessonsCompleted: base.listeningLessonsCompleted,
       listeningLessonsTotal: base.listeningLessonsTotal || LISTENING_LESSONS_TOTAL,
+      ieltsReadingBandAverage: isLoggedIn
+        ? (base.ieltsReadingBandAverage ?? localIeltsBandsSnapshot.reading)
+        : localIeltsBandsSnapshot.reading,
+      ieltsListeningBandAverage: isLoggedIn
+        ? (base.ieltsListeningBandAverage ?? localIeltsBandsSnapshot.listening)
+        : localIeltsBandsSnapshot.listening,
     };
-  }, [remote, clientVocab, isLoggedIn, localReading]);
+  }, [remote, clientVocab, isLoggedIn, localReading, localIeltsBandsSnapshot]);
 
   const readingPct =
     stats.readingArticlesTotal > 0
@@ -277,6 +313,36 @@ export function ProfileProgressView({
               />
             </>
           )}
+
+          <div className="border-b border-zinc-200/90 px-5 pt-3.5 pb-5 last:border-b-0">
+            <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-ink-muted">
+              Tiến độ luyện đề IELTS
+            </p>
+            <div className="mt-3 flex flex-col gap-5">
+              <div className="flex items-baseline justify-between gap-5">
+                <div className="flex items-baseline gap-5">
+                  <span className="text-sm font-medium text-ink-muted">Đọc</span>
+                  <span className={ieltsBandValueClass}>
+                    {formatIeltsBandDisplay(stats.ieltsReadingBandAverage)}
+                  </span>
+                </div>
+                <Link href={READING_IELTS_EXAM_HREF} className={rowLinkClass}>
+                  Luyện đề đọc →
+                </Link>
+              </div>
+              <div className="flex items-baseline justify-between gap-5">
+                <div className="flex items-baseline gap-5">
+                  <span className="text-sm font-medium text-ink-muted">Nghe</span>
+                  <span className={ieltsBandValueClass}>
+                    {formatIeltsBandDisplay(stats.ieltsListeningBandAverage)}
+                  </span>
+                </div>
+                <Link href={LISTENING_IELTS_EXAM_HREF} className={rowLinkClass}>
+                  Luyện đề nghe →
+                </Link>
+              </div>
+            </div>
+          </div>
         </section>
 
         {isLoggedIn ? (
@@ -287,6 +353,7 @@ export function ProfileProgressView({
                 mode="sign-out"
                 menuRow
                 signOutLabel="Đăng xuất"
+                redirectTo="/"
                 className="cursor-pointer text-xs font-medium text-red-600 sm:text-sm"
               />
             </div>

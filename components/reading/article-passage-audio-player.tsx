@@ -275,25 +275,15 @@ export const ArticlePassageAudioPlayer = forwardRef<
       </div>
 
       <div className={`flex items-center justify-between gap-3 ${embedded ? "" : "mt-4"}`}>
-        <div className="flex items-center gap-3">
-          <button
-            type="button"
-            onClick={cycleSpeed}
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#47464b] transition hover:text-[#4b2876]"
-            title="Tốc độ đọc"
-          >
-            <Gauge className="size-4 shrink-0" aria-hidden />
-            <span>{speed}x</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => setMuted((m) => !m)}
-            className="inline-flex size-9 items-center justify-center rounded-full text-[#47464b] transition hover:bg-[#f3f0f8] hover:text-[#4b2876]"
-            aria-label={muted ? "Bật âm thanh" : "Tắt âm thanh"}
-          >
-            {muted ? <VolumeX className="size-5" /> : <Volume2 className="size-5" />}
-          </button>
-        </div>
+        <button
+          type="button"
+          onClick={cycleSpeed}
+          className="inline-flex h-9 min-w-[4.5rem] items-center gap-1.5 text-sm font-semibold text-[#47464b] transition hover:text-[#4b2876]"
+          title="Tốc độ đọc"
+        >
+          <Gauge className="size-4 shrink-0" aria-hidden />
+          <span>{speed}x</span>
+        </button>
 
         <div className="flex items-center gap-2.5">
           <button
@@ -330,7 +320,14 @@ export const ArticlePassageAudioPlayer = forwardRef<
           </button>
         </div>
 
-        <div className="w-[4.5rem]" aria-hidden />
+        <button
+          type="button"
+          onClick={() => setMuted((m) => !m)}
+          className="inline-flex h-9 min-w-[4.5rem] items-center justify-end text-[#47464b] transition hover:text-[#4b2876]"
+          aria-label={muted ? "Bật âm thanh" : "Tắt âm thanh"}
+        >
+          {muted ? <VolumeX className="size-4 shrink-0" /> : <Volume2 className="size-4 shrink-0" />}
+        </button>
       </div>
     </div>
   );

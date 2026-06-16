@@ -34,6 +34,8 @@ type AuthButtonProps =
 			/** Mặc định: "Đăng xuất". */
 			signOutLabel?: string;
 			menuRow?: boolean;
+			/** Sau đăng xuất — chỉ redirect khi truyền rõ (vd. trang hồ sơ → `/`). */
+			redirectTo?: string;
 	  };
 
 const defaultClassName =
@@ -107,6 +109,11 @@ export function AuthButton(props: AuthButtonProps) {
 			settings: defaultSettings,
 			reviewDayTallies: {},
 		});
+		const redirectTo = props.mode === "sign-out" ? props.redirectTo : undefined;
+		if (redirectTo) {
+			window.location.assign(redirectTo);
+			return;
+		}
 		router.refresh();
 	};
 

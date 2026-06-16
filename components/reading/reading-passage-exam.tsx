@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { ArrowLeft } from "lucide-react";
 import { ArticleBodyContent } from "@/components/reading/article-body-content";
+import { useReadingCopyFriction } from "@/hooks/use-reading-copy-friction";
 import { splitTfngInstructionSegments } from "@/lib/reading/format-tfng-instruction";
 import { parsePassageExamSections } from "@/lib/reading/parse-passage-questions";
 import type { ReadingPassageBlock } from "@/lib/reading/split-passages";
@@ -20,6 +21,8 @@ export function ReadingPassageExam({ passage, title, backHref }: ReadingPassageE
     [passage.questionsText],
   );
   const [answers, setAnswers] = useState<Record<number, string>>({});
+  const passageRef = useRef<HTMLDivElement>(null);
+  useReadingCopyFriction(passageRef);
 
   return (
     <div className="flex h-[calc(100dvh-3.5rem)] flex-col overflow-hidden bg-[#f5f5f7]">
@@ -41,7 +44,7 @@ export function ReadingPassageExam({ passage, title, backHref }: ReadingPassageE
       </header>
 
       <div className="grid min-h-0 flex-1 grid-cols-1 md:grid-cols-2">
-        <div className="overflow-y-auto border-r border-[#E4E4E7] bg-white p-6 md:p-8">
+        <div ref={passageRef} className="overflow-y-auto border-r border-[#E4E4E7] bg-white p-6 md:p-8">
           <h2 className="mb-6 font-serif text-2xl font-bold text-[#000001]">{passage.title}</h2>
           <ArticleBodyContent body={passage.body} />
         </div>

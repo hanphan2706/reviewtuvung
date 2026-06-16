@@ -18,6 +18,8 @@ export type ProfileLearningProgress = {
   readingArticlesTotal: number;
   listeningLessonsCompleted: number;
   listeningLessonsTotal: number;
+  ieltsReadingBandAverage: number | null;
+  ieltsListeningBandAverage: number | null;
 };
 
 export function normalizeReadingArticleKey(key: string): string | null {

@@ -306,6 +306,27 @@ function lockExamInputs(){
   clearPhrasePick();
 }
 
+function recordIeltsPracticeAttempt(){
+  var score=computeExamScore();
+  if(!score||!Number.isFinite(score.band))return;
+  var skill=document.getElementById('exam-audio')?'listening':'reading';
+  try{
+    var key='anthicIeltsAttempts:'+skill;
+    var prev=JSON.parse(localStorage.getItem(key)||'[]');
+    if(!Array.isArray(prev))prev=[];
+    prev.unshift({band:score.band,at:Date.now()});
+    localStorage.setItem(key,JSON.stringify(prev.slice(0,20)));
+  }catch(e){}
+  try{
+    fetch('/api/ielts/practice-attempt',{
+      method:'POST',
+      credentials:'include',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({skill:skill,band:score.band,examKey:window.location.pathname||''})
+    }).catch(function(){});
+  }catch(e){}
+}
+
 function enterReviewMode(){
   if(examReviewMode)return;
   examReviewMode=true;
@@ -317,6 +338,7 @@ function enterReviewMode(){
   lockExamInputs();
   if(examAnswerKey)applyReviewAnswers();
   renderReviewScore();
+  recordIeltsPracticeAttempt();
   sendSubmissionToGoogleSheet();
 }
 `;

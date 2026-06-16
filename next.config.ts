@@ -36,6 +36,9 @@ const nextConfig: NextConfig = {
     "/*": [
       "./listening materials/cam 19 test * qna.txt",
       "./listening materials/transcript/cam19-test*.txt",
+      "./listening materials/transcript/tactics-basic-*.txt",
+      "./listening materials/sync/cam19-*.sync.json",
+      "./listening materials/sync/tactics-basic-*.sync.json",
       "./public/midterm-reading-exam.html",
       "./public/midterm-listening-exam.html",
       "./reading raw/real test 1.txt",

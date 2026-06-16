@@ -11,10 +11,10 @@ import { ArticleQuickCheckPanel } from "@/components/reading/article-quick-check
 import { ArticleStreakPanel } from "@/components/reading/article-streak-panel";
 import { ArticleVocabularyPanel } from "@/components/reading/article-vocabulary-panel";
 import { DictionaryPopover } from "@/components/reading/dictionary-popover";
-import {
-  useArticleTextSelection,
+import { useArticleTextSelection,
   type SelectionAnchor,
 } from "@/components/reading/use-article-text-selection";
+import { useReadingCopyFriction } from "@/hooks/use-reading-copy-friction";
 import { studyHubContainerClass } from "@/components/study-module/study-hub-shell";
 import {
   fetchDictionaryEnrich,
@@ -115,6 +115,7 @@ export function ArticleReader({
   const pickedRef = useRef<ReturnType<typeof parseReadingSelection>>(null);
 
   const { selection, clearSelection } = useArticleTextSelection(articleRef);
+  useReadingCopyFriction(articleRef);
   const selectionText = selection?.text ?? null;
   const picked = useMemo(
     () => (selectionText ? parseReadingSelection(selectionText) : null),
