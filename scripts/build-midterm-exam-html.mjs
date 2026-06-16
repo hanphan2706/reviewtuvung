@@ -196,6 +196,10 @@ function patchLoginCopy(html) {
     .replace(
       /IELTS Listening &mdash; Mid-Term Test/g,
       "IELTS Listening &mdash; Đề thi thật 1 &middot; Questions 1&ndash;40",
+    )
+    .replace(
+      /Green = answered · Grey = not yet · Click a number to open that question/g,
+      "Purple = answered · Grey = not yet · Click a number to open that question",
     );
 }
 
