@@ -47,9 +47,9 @@ const PART4_ANSWER_HINTS: Record<number, string[]> = {
   32: ["the cost", "important of these is the cost"],
   33: ["catch quite easily"],
   34: ["in the ocean", "signal in the ocean"],
-  35: ["helicopter", "polar bear"],
+  35: ["tracked using a helicopter", "have to be tracked using a helicopter"],
   36: ["against rocks", "rubbing up against rocks"],
-  37: ["applied paint", "less invasive"],
+  37: ["less invasive means of identification", "applied paint to the animals"],
   38: ["diagram", "whisker patterns"],
   39: ["zoos around australia", "zoos around Australia"],
   40: ["inviting the public", "the public to take part"],
@@ -171,16 +171,20 @@ function stripListeningOutro(text: string): string {
 
 function findMarkerInsertPos(text: string, terms: string[], minIndex: number): number {
   const lower = text.toLowerCase();
-  let best = -1;
+  let bestEnd = -1;
+  let bestTermLen = 0;
   for (const term of terms) {
     const t = term.trim();
     if (t.length < 3) continue;
     const idx = lower.indexOf(t.toLowerCase(), minIndex);
     if (idx < 0) continue;
     const end = idx + t.length;
-    if (best < 0 || end < best) best = end;
+    if (t.length > bestTermLen || (t.length === bestTermLen && end > bestEnd)) {
+      bestTermLen = t.length;
+      bestEnd = end;
+    }
   }
-  return best;
+  return bestEnd;
 }
 
 function injectPart4Markers(text: string, answers: RealTestAnswerKey): string {
@@ -258,6 +262,51 @@ function injectQuestionMarkers(turns: DialogueLine[], answers: RealTestAnswerKey
   return out;
 }
 
+/** Tách monologue Part 4 thành từng đoạn kết thúc bằng Q31–Q40 (một cue / câu review). */
+export function splitPart4TextByQuestionMarkers(text: string): string[] {
+  const markerRe = /\s+(Q3[1-9]|Q40)\b/g;
+  const segments: string[] = [];
+  let start = 0;
+  let match: RegExpExecArray | null = markerRe.exec(text);
+  while (match !== null) {
+    let end = match.index + match[0].length;
+    const trailingPunct = text.slice(end).match(/^([.!?]+\s*)/);
+    if (trailingPunct) end += trailingPunct[1]!.length;
+    const chunk = text.slice(start, end).trim();
+    if (chunk) segments.push(chunk);
+    start = end;
+    match = markerRe.exec(text);
+  }
+  const tail = text.slice(start).trim();
+  if (tail) segments.push(tail);
+
+  const merged: string[] = [];
+  for (const seg of segments) {
+    const hasQ = /\bQ(?:3[1-9]|40)\b/.test(seg);
+    if (!hasQ && merged.length > 0) {
+      merged[merged.length - 1] = `${merged[merged.length - 1]!} ${seg}`.replace(/\s+/g, " ").trim();
+    } else {
+      merged.push(seg);
+    }
+  }
+
+  return merged.length > 0 ? merged : [text.trim()];
+}
+
+function expandPart4Turns(turns: DialogueLine[]): DialogueLine[] {
+  const out: DialogueLine[] = [];
+  for (const turn of turns) {
+    if (turn.part === 4 && turn.speaker === "LECTURER") {
+      for (const text of splitPart4TextByQuestionMarkers(turn.text)) {
+        out.push({ speaker: turn.speaker, text, part: turn.part });
+      }
+      continue;
+    }
+    out.push(turn);
+  }
+  return out;
+}
+
 function formatCambridgeTranscript(turns: DialogueLine[]): string {
   const chunks: string[] = [];
   let currentPart = 0;
@@ -279,7 +328,8 @@ export function buildRealTestListeningTranscriptFromWhisper(rawWhisper: string, 
   const lines = rawWhisper.split(/\r?\n/);
   const turns = mergeDialogueTurns(lines);
   const marked = injectQuestionMarkers(turns, answers);
-  return formatCambridgeTranscript(marked);
+  const expanded = expandPart4Turns(marked);
+  return formatCambridgeTranscript(expanded);
 }
 
 export function realTestListeningTranscriptToHtml(plain: string): string {
