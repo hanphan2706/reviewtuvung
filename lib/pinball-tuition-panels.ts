@@ -33,6 +33,6 @@ export const PINBALL_TUITION_PANELS = [
   {
     id: "tuition-6",
     title: "Recording & thanh toán học phí",
-    bodyHtml: "Bạn có thể xem <mark class=\"highlight-blue\"><a href=\"https://drive.google.com/file/d/17ghhfSPCc2PVC6eXUPgWr01JTD-EnEsH/view?usp=sharing\">recording</a></mark> một buổi học của mình, sau đó nếu cảm thấy hài lòng bạn có thể hoàn thành học phí trước <mark class=\"highlight-blue\"><strong>từng tháng</strong></mark> (trước ngày 10 hằng tháng) hoặc <mark class=\"highlight-blue\"><strong>từng khoá</strong></mark>.",
+    bodyHtml: "Bạn có thể xem <mark class=\"highlight-blue\"><a href=\"https://drive.google.com/drive/folders/1enCHAbbWypl1Yp31vMQEMmK937drTQxa?usp=sharing\">recording</a></mark> một buổi học của mình, sau đó nếu cảm thấy hài lòng bạn có thể hoàn thành học phí trước <mark class=\"highlight-blue\"><strong>từng tháng</strong></mark> (trước ngày 10 hằng tháng) hoặc <mark class=\"highlight-blue\"><strong>từng khoá</strong></mark>.",
   },
 ] as const;
