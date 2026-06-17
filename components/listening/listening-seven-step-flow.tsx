@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Check, Languages, Play, Volume2 } from "lucide-react";
 import type { ListeningPartMeta } from "@/lib/listening/content-manifest";
 import type { ListeningTranscriptCue } from "@/lib/listening/listening-transcript-sync-types";
@@ -9,16 +9,20 @@ import { LISTENING_FLOW_COPY, type ListeningFlowLocale } from "@/lib/listening/l
 import { resolveFlowExerciseContent, resolveFlowExerciseFromLesson } from "@/lib/listening/tactics-basic-flow-content";
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
 import { LISTENING_SEVEN_STEPS, type ListeningSevenStepId } from "@/lib/listening/listening-seven-steps";
+import { useListeningFlowDictionary } from "@/hooks/use-listening-flow-dictionary";
 
 type ListeningSevenStepFlowProps = {
   meta: ListeningPartMeta;
   lessonId: string;
   audioCurrentTime: number;
+  isLoggedIn: boolean;
   onCueSeek: (cue: ListeningTranscriptCue) => void;
   onStepChange?: (step: ListeningSevenStepId) => void;
   onReplayConversation?: (conversationNumber: number) => void;
   flowLessonContent?: ListeningFlowLessonContent | null;
 };
+
+const DICT_ENABLED_STEPS = new Set<ListeningSevenStepId>([1, 2, 4, 5]);
 
 const fieldClass =
   "mt-2 w-full rounded-xl border border-[#E4E4E7] bg-white px-3 py-2.5 text-sm text-[#000001] outline-none placeholder:text-[#616365] focus:border-[#4B2876] focus:ring-1 focus:ring-[#4B2876]/20 sm:px-4 sm:py-3 sm:text-[15px]";
@@ -84,7 +88,9 @@ function StepIntro({ title, description }: { title: string; description: string 
   return (
     <div className="space-y-1.5 sm:space-y-2">
       <StepHeading title={title} />
-      <p className="text-sm leading-snug text-[#47464b] sm:text-[15px] sm:leading-relaxed">{description}</p>
+      <p className="cursor-text select-text text-sm leading-snug text-[#47464b] sm:text-[15px] sm:leading-relaxed">
+        {description}
+      </p>
     </div>
   );
 }
@@ -233,7 +239,7 @@ function OptionGrid({
         const showCheck = checked || isCorrectOption;
 
         let optionClass =
-          "flex cursor-pointer items-center gap-2.5 rounded-xl border px-3 py-3 text-left transition sm:gap-3 sm:px-4 sm:py-4 ";
+          "flex items-center gap-2.5 rounded-xl border px-3 py-3 text-left transition sm:gap-3 sm:px-4 sm:py-4 ";
         if (isCorrectOption) {
           optionClass += checked
             ? "border-emerald-600 bg-emerald-50 shadow-sm"
@@ -247,28 +253,33 @@ function OptionGrid({
         }
 
         return (
-          <button
-            key={option.key}
-            type="button"
-            onClick={() => onToggle(option.key)}
-            className={optionClass}
-          >
-            <span
-              className={`flex size-4 shrink-0 items-center justify-center rounded border sm:size-5 ${
-                isCorrectOption
-                  ? "border-emerald-600 bg-emerald-600 text-white"
-                  : isWrongSelection
-                    ? "border-red-500 bg-red-500 text-white"
-                    : checked
-                      ? "border-[#4B2876] bg-[#4B2876] text-white"
-                      : "border-[#d4d4d8] bg-white"
-              }`}
-              aria-hidden
+          <div key={option.key} className={optionClass}>
+            <button
+              type="button"
+              onClick={() => onToggle(option.key)}
+              aria-pressed={checked}
+              aria-label={option.label}
+              className="inline-flex shrink-0 cursor-pointer border-0 bg-transparent p-0"
             >
-              {showCheck ? <Check className="size-3 sm:size-3.5" strokeWidth={3} /> : null}
+              <span
+                className={`flex size-4 items-center justify-center rounded border sm:size-5 ${
+                  isCorrectOption
+                    ? "border-emerald-600 bg-emerald-600 text-white"
+                    : isWrongSelection
+                      ? "border-red-500 bg-red-500 text-white"
+                      : checked
+                        ? "border-[#4B2876] bg-[#4B2876] text-white"
+                        : "border-[#d4d4d8] bg-white"
+                }`}
+                aria-hidden
+              >
+                {showCheck ? <Check className="size-3 sm:size-3.5" strokeWidth={3} /> : null}
+              </span>
+            </button>
+            <span className="min-w-0 flex-1 cursor-text select-text text-sm font-medium text-[#000001] sm:text-[15px]">
+              {option.label}
             </span>
-            <span className="text-sm font-medium text-[#000001] sm:text-[15px]">{option.label}</span>
-          </button>
+          </div>
         );
       })}
     </div>
@@ -320,11 +331,13 @@ export function ListeningSevenStepFlow({
   meta,
   lessonId,
   audioCurrentTime,
+  isLoggedIn,
   onCueSeek,
   onStepChange,
   onReplayConversation,
   flowLessonContent = null,
 }: ListeningSevenStepFlowProps) {
+  const flowContentRef = useRef<HTMLDivElement>(null);
   const [locale, setLocale] = useState<ListeningFlowLocale>("en");
   const [currentStep, setCurrentStep] = useState<ListeningSevenStepId>(1);
   const [predictionChoices, setPredictionChoices] = useState<Set<string>>(new Set());
@@ -402,6 +415,12 @@ export function ListeningSevenStepFlow({
     gistChecked &&
     isGistAnswerCorrect(gistChoices, exercise.gistCorrectKeys);
 
+  const dictEnabled = DICT_ENABLED_STEPS.has(currentStep);
+  const { popover: dictionaryPopover } = useListeningFlowDictionary(flowContentRef, {
+    enabled: dictEnabled,
+    isLoggedIn,
+  });
+
   return (
     <section className="overflow-hidden rounded-xl border border-[#E4E4E7] bg-white shadow-sm">
       <div className="flex items-center gap-2 border-b border-[#E4E4E7] px-4 py-3.5 md:gap-3 md:px-8 md:py-5">
@@ -409,7 +428,7 @@ export function ListeningSevenStepFlow({
         <FlowLocaleToggle locale={locale} onToggle={toggleLocale} />
       </div>
 
-      <div className="px-5 py-6 md:px-8 md:py-10">
+      <div ref={flowContentRef} className="px-5 py-6 md:px-8 md:py-10">
         {currentStep === 1 ? (
           <div className="mx-auto flex max-w-2xl flex-col items-center gap-6 text-center md:gap-8">
             <StepIntro title={stepTitle} description={copy.step1Prompt} />
@@ -479,11 +498,13 @@ export function ListeningSevenStepFlow({
             <StepIntro title={stepTitle} description={copy.step4Prompt} />
             {exercise.detailQuestions.map((question) => (
               <div key={question.key}>
-                <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#616365]">
+                <p className="cursor-text select-text text-[10px] font-bold uppercase tracking-[0.14em] text-[#616365]">
                   {question.conversation}
                 </p>
-                <label className="mt-1.5 block text-sm font-medium text-[#000001]">
-                  {question.question}
+                <div className="mt-1.5">
+                  <p className="cursor-text select-text text-sm font-medium text-[#000001]">
+                    {question.question}
+                  </p>
                   <input
                     className={fieldClass}
                     value={detailAnswers[question.key] ?? ""}
@@ -492,12 +513,12 @@ export function ListeningSevenStepFlow({
                       setDetailChecked(false);
                     }}
                   />
-                </label>
+                </div>
                 {detailChecked ? (
                   <div className="mt-2 rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2.5 text-sm text-emerald-900">
                     <p className="leading-relaxed">
                       <span className="font-semibold">{copy.modelAnswerLabel}: </span>
-                      <span className="inline">
+                      <span className="inline cursor-text select-text">
                         {question.answer}
                         {question.conversationNumber !== null && onReplayConversation ? (
                           <ConversationReplayButton
@@ -535,7 +556,7 @@ export function ListeningSevenStepFlow({
                   {transcriptHasSync ? copy.step5SyncedLabel : copy.step5NotSyncedLabel}
                 </span>
               </div>
-              <p className="text-sm leading-snug text-[#47464b] sm:text-[15px] sm:leading-relaxed">
+              <p className="cursor-text select-text text-sm leading-snug text-[#47464b] sm:text-[15px] sm:leading-relaxed">
                 {copy.step5Prompt}
               </p>
             </div>
@@ -571,6 +592,7 @@ export function ListeningSevenStepFlow({
           </div>
         ) : null}
       </div>
+      {dictionaryPopover}
     </section>
   );
 }

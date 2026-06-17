@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, type ReactNode } from "react";
+import { hasNonEmptyTextSelection } from "@/hooks/use-flow-text-selection";
 import { findActiveCueId } from "@/lib/listening/build-transcript-sync";
 import type { ListeningTranscriptCue, ListeningTranscriptSyncFile } from "@/lib/listening/listening-transcript-sync-types";
 
@@ -86,27 +87,20 @@ export function ListeningSyncedTranscriptBody({
           </time>
         );
 
-        const textBlock = (
-          <span
-            className={`min-w-0 flex-1 transition-all duration-300 ${
-              isActive
-                ? "font-semibold text-[#0a0a0a]"
-                : "font-normal text-[#b3b3b3]"
-            } ${preAudio && !isActive ? "italic" : ""}`}
-          >
+        const textClass = `min-w-0 flex-1 cursor-text select-text transition-all duration-300 ${
+          isActive
+            ? "font-semibold text-[#0a0a0a]"
+            : "font-normal text-[#b3b3b3]"
+        } ${preAudio && !isActive ? "italic" : ""}`;
+
+        const textContent = (
+          <>
             {cue.speaker ? (
               <span className={isActive ? "font-semibold text-[#4b2876]" : "font-medium text-[#4b2876]/50"}>
                 {cue.speaker}:{" "}
               </span>
             ) : null}
             {highlightQuestionMarkers(cue.text, !isActive)}
-          </span>
-        );
-
-        const rowInner = (
-          <>
-            {timestamp}
-            {textBlock}
           </>
         );
 
@@ -114,9 +108,14 @@ export function ListeningSyncedTranscriptBody({
           isActive
             ? "relative bg-[#4b2876]/[0.07] px-3 py-3 shadow-[inset_0_-12px_12px_-8px_rgba(255,255,255,0.85)]"
             : seekable
-              ? "cursor-pointer hover:bg-[#faf8fb]"
+              ? "cursor-text hover:bg-[#faf8fb]"
               : ""
         }`;
+
+        const seekToCue = () => {
+          if (hasNonEmptyTextSelection()) return;
+          onCueSeek?.(cue);
+        };
 
         if (!seekable) {
           return (
@@ -126,26 +125,33 @@ export function ListeningSyncedTranscriptBody({
               className={rowClass}
               title={preAudio ? "Trước đoạn thoại trên file audio (intro / đọc đề IELTS)" : undefined}
             >
-              {rowInner}
+              {timestamp}
+              <span className={textClass}>{textContent}</span>
             </div>
           );
         }
 
         return (
-          <button
+          <div
             key={cue.id}
-            type="button"
             data-cue-id={cue.id}
-            onClick={() => onCueSeek?.(cue)}
             className={rowClass}
             title={
               preAudio
                 ? `Ước lượng · nghe từ ${formatCueTime(cue.start)}`
-                : `Nghe từ ${formatCueTime(cue.start)}`
+                : `Nghe từ ${formatCueTime(cue.start)} · bôi đen để tra từ`
             }
           >
-            {rowInner}
-          </button>
+            <button
+              type="button"
+              onClick={seekToCue}
+              className="inline-flex shrink-0 cursor-pointer border-0 bg-transparent p-0 pt-0.5"
+              aria-label={`Nghe từ ${formatCueTime(cue.start)}`}
+            >
+              {timestamp}
+            </button>
+            <span className={textClass}>{textContent}</span>
+          </div>
         );
       })}
     </div>

@@ -181,6 +181,7 @@ export function ListeningLessonView({
             <ListeningSevenStepFlow
               meta={meta}
               lessonId={meta.id}
+              isLoggedIn={isLoggedIn}
               audioCurrentTime={audioCurrentTime}
               onCueSeek={(cue) => {
                 audioRef.current?.seekTo(cue.start);
@@ -208,6 +209,7 @@ export function ListeningLessonView({
                 <ListeningSevenStepFlow
                   meta={meta}
                   lessonId={meta.id}
+                  isLoggedIn={isLoggedIn}
                   flowLessonContent={flowContent}
                   audioCurrentTime={audioCurrentTime}
                   onCueSeek={(cue) => {
