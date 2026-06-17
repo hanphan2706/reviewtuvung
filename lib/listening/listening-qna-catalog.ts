@@ -19,17 +19,29 @@ const CAM19_TEST2_QNA: ListeningQnaFileRef = {
   test: 2,
 };
 
+const CAM19_TEST3_QNA: ListeningQnaFileRef = {
+  fileName: "cam 19 test 3 qna.txt",
+  test: 3,
+};
+
+const CAM19_TEST4_QNA: ListeningQnaFileRef = {
+  fileName: "cam 19 test 4 qna.txt",
+  test: 4,
+};
+
 /** Full test — một file QnA cho cả 4 Part. */
 export const LISTENING_TEST_QNA: Record<string, ListeningQnaFileRef> = {
   "cam19-test1": CAM19_TEST1_QNA,
   "cam19-test2": CAM19_TEST2_QNA,
+  "cam19-test3": CAM19_TEST3_QNA,
+  "cam19-test4": CAM19_TEST4_QNA,
 };
 
 export function getListeningTestQnaRef(testId: string): ListeningQnaFileRef | null {
   return LISTENING_TEST_QNA[testId] ?? null;
 }
 
-/** Cam 19 Test 1–2 — thêm file QnA mới rồi map part id tại đây. */
+/** Cam 19 Test 1–4 — thêm file QnA mới rồi map part id tại đây. */
 export const LISTENING_PART_QNA: Record<string, ListeningPartQnaRef> = {
   "cam19-t1-p1": { ...CAM19_TEST1_QNA, part: 1 },
   "cam19-t1-p2": { ...CAM19_TEST1_QNA, part: 2 },
@@ -39,6 +51,14 @@ export const LISTENING_PART_QNA: Record<string, ListeningPartQnaRef> = {
   "cam19-t2-p2": { ...CAM19_TEST2_QNA, part: 2 },
   "cam19-t2-p3": { ...CAM19_TEST2_QNA, part: 3 },
   "cam19-t2-p4": { ...CAM19_TEST2_QNA, part: 4 },
+  "cam19-t3-p1": { ...CAM19_TEST3_QNA, part: 1 },
+  "cam19-t3-p2": { ...CAM19_TEST3_QNA, part: 2 },
+  "cam19-t3-p3": { ...CAM19_TEST3_QNA, part: 3 },
+  "cam19-t3-p4": { ...CAM19_TEST3_QNA, part: 4 },
+  "cam19-t4-p1": { ...CAM19_TEST4_QNA, part: 1 },
+  "cam19-t4-p2": { ...CAM19_TEST4_QNA, part: 2 },
+  "cam19-t4-p3": { ...CAM19_TEST4_QNA, part: 3 },
+  "cam19-t4-p4": { ...CAM19_TEST4_QNA, part: 4 },
 };
 
 export function getListeningPartQnaRef(partId: string): ListeningPartQnaRef | null {

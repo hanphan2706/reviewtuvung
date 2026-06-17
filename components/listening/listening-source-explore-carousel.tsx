@@ -51,7 +51,7 @@ function ListeningSourceHubCard({
   );
 }
 
-/** Carousel nguồn nghe trên hub — 3 thẻ/lượt, nút trái phải như block Đi học trang chủ. */
+/** Carousel nguồn nghe trên hub — 2 thẻ/lượt (tablet), 3 thẻ trên desktop rộng. */
 export function ListeningSourceExploreCarousel({ onOpenSource }: ListeningSourceExploreCarouselProps) {
   const carouselRef = useRef<HTMLDivElement>(null);
   const [carouselHasOverflow, setCarouselHasOverflow] = useState(false);
@@ -128,7 +128,7 @@ export function ListeningSourceExploreCarousel({ onOpenSource }: ListeningSource
 
       <div
         ref={carouselRef}
-        className="grid auto-cols-[100%] grid-flow-col items-stretch gap-6 overflow-x-auto scroll-smooth pb-1 snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none] md:auto-cols-[calc((100%-3rem)/3)] [&::-webkit-scrollbar]:hidden [&>*]:snap-start"
+        className="grid auto-cols-[100%] grid-flow-col items-stretch gap-6 overflow-x-auto scroll-smooth pb-1 snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none] md:auto-cols-[calc((100%-1.5rem)/2)] xl:auto-cols-[calc((100%-3rem)/3)] [&::-webkit-scrollbar]:hidden [&>*]:snap-start"
       >
         {LISTENING_SOURCE_CATEGORIES.map((card) => (
           <ListeningSourceHubCard key={card.id} card={card} onOpen={onOpenSource} />

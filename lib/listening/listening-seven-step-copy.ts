@@ -65,7 +65,8 @@ export const LISTENING_FLOW_COPY: Record<ListeningFlowLocale, ListeningFlowCopy>
     step4Q1: "Ai đang nói / tên người chính là gì?",
     step4Q2: "Chi tiết nào bạn nhớ rõ nhất?",
     step4ListenAgain: "Nghe lại & tiếp",
-    step5Prompt: "Đọc theo audio và shadowing từng dòng. Chạm vào câu để nhảy tới đoạn đó.",
+    step5Prompt:
+      "Đọc theo audio và shadowing từng dòng. Chạm vào câu để nhảy tới đoạn đó. Bôi đen text để tra từ.",
     step5SyncedLabel: "Đồng bộ",
     step5NotSyncedLabel: "Chưa có mốc thời gian",
     step6Prompt: "Bạn nghe sai/thiếu hoặc chưa được 80% là vì các lý do nào?",
@@ -104,7 +105,8 @@ export const LISTENING_FLOW_COPY: Record<ListeningFlowLocale, ListeningFlowCopy>
     step4Q1: "Who is speaking / what is the main person's name?",
     step4Q2: "What detail do you remember clearly?",
     step4ListenAgain: "Listen again & continue",
-    step5Prompt: "Read along and shadow each line. Tap a sentence to jump to that moment.",
+    step5Prompt:
+      "Read along with the audio and shadow each line. Tap a sentence to jump to that moment. Highlight text to look up words.",
     step5SyncedLabel: "Synced",
     step5NotSyncedLabel: "No timestamps yet",
     step6Prompt: "Why did you miss words, hear incorrectly, or get less than 80% correct?",

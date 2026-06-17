@@ -1,7 +1,11 @@
 import { LISTENING_HUB_HREF } from "@/lib/listening/listening-hub-nav";
 import { CAMBRIDGE_IELTS_19_COVER_URL } from "@/lib/reading/ielts-test-catalog";
 
-export type ListeningIeltsTestId = "cam19-test1" | "cam19-test2";
+export type ListeningIeltsTestId =
+  | "cam19-test1"
+  | "cam19-test2"
+  | "cam19-test3"
+  | "cam19-test4";
 
 export type ListeningIeltsTest = {
   testId: ListeningIeltsTestId;
@@ -20,6 +24,22 @@ export function listeningIeltsTestExamHref(testId: ListeningIeltsTestId): string
 }
 
 export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
+  {
+    testId: "cam19-test4",
+    label: "Cambridge 19 · Test 4",
+    bookTitle: "Cambridge IELTS 19 Academic",
+    testNumber: 4,
+    coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
+    catalogOrder: 4,
+  },
+  {
+    testId: "cam19-test3",
+    label: "Cambridge 19 · Test 3",
+    bookTitle: "Cambridge IELTS 19 Academic",
+    testNumber: 3,
+    coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
+    catalogOrder: 3,
+  },
   {
     testId: "cam19-test2",
     label: "Cambridge 19 · Test 2",

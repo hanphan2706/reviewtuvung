@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState, type RefObject } from "react";
+import { useCallback, useEffect, useRef, useState, type PointerEvent, type RefObject } from "react";
 
 export type FlowSelectionAnchor = {
   text: string;
@@ -126,4 +126,63 @@ export function useFlowTextSelection(
 export function hasNonEmptyTextSelection(): boolean {
   const sel = window.getSelection();
   return Boolean(sel && !sel.isCollapsed && sel.toString().trim());
+}
+
+const CUE_SEEK_DRAG_THRESHOLD_PX = 5;
+
+export type CueSeekGestureState = {
+  startX: number;
+  startY: number;
+  dragged: boolean;
+};
+
+export function createCueSeekGestureState(): CueSeekGestureState {
+  return { startX: 0, startY: 0, dragged: false };
+}
+
+export function recordCueSeekPointerDown(
+  state: CueSeekGestureState,
+  clientX: number,
+  clientY: number,
+): void {
+  state.startX = clientX;
+  state.startY = clientY;
+  state.dragged = false;
+}
+
+export function recordCueSeekPointerMove(
+  state: CueSeekGestureState,
+  clientX: number,
+  clientY: number,
+): void {
+  if (state.dragged) return;
+  if (Math.hypot(clientX - state.startX, clientY - state.startY) > CUE_SEEK_DRAG_THRESHOLD_PX) {
+    state.dragged = true;
+  }
+}
+
+/** Click-to-seek on transcript rows — skip when user dragged to select or double-clicked a word. */
+export function shouldPerformCueSeek(state: CueSeekGestureState, clickDetail = 1): boolean {
+  if (clickDetail >= 2) return false;
+  if (state.dragged) return false;
+  if (hasNonEmptyTextSelection()) return false;
+  return true;
+}
+
+export function useCueSeekGesture() {
+  const gestureRef = useRef<CueSeekGestureState>(createCueSeekGestureState());
+
+  const onPointerDown = useCallback((event: PointerEvent) => {
+    recordCueSeekPointerDown(gestureRef.current, event.clientX, event.clientY);
+  }, []);
+
+  const onPointerMove = useCallback((event: PointerEvent) => {
+    recordCueSeekPointerMove(gestureRef.current, event.clientX, event.clientY);
+  }, []);
+
+  const canSeekFromClick = useCallback((clickDetail = 1) => {
+    return shouldPerformCueSeek(gestureRef.current, clickDetail);
+  }, []);
+
+  return { onPointerDown, onPointerMove, canSeekFromClick };
 }

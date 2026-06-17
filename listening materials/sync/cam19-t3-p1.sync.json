@@ -1,0 +1,425 @@
+{
+  "version": 1,
+  "partId": "cam19-t3-p1",
+  "audioFile": "Test3 Part1.mp3",
+  "durationSeconds": 396.173061,
+  "method": "whisper-local",
+  "preambleSeconds": 111.74,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "LEON",
+      "text": "Hi Shannon – how are you settling into your new flat?",
+      "start": 98.331,
+      "end": 101.602,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "SHANNON",
+      "text": "Really well, thanks.",
+      "start": 101.602,
+      "end": 102.583,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "LEON",
+      "text": "You look like you’re going shopping.",
+      "start": 102.583,
+      "end": 104.872,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": "SHANNON",
+      "text": "Yes, I am. My cousins are coming to stay for a couple of days, and I have to cook for them.",
+      "start": 104.872,
+      "end": 111.74,
+      "preAudio": true
+    },
+    {
+      "id": "cue-5",
+      "speaker": "LEON",
+      "text": "Well, there are plenty of places to buy food in Kite Place – it’s the area by the harbour. Q1",
+      "start": 111.74,
+      "end": 114.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "SHANNON",
+      "text": "Oh. OK, I’ll find that on the map. Thanks.",
+      "start": 114.24,
+      "end": 119.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "LEON",
+      "text": "What sort of food do you need to get?",
+      "start": 119.1,
+      "end": 121.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "SHANNON",
+      "text": "Well, neither of them eats meat but they both like fish.",
+      "start": 121.72,
+      "end": 125.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "LEON",
+      "text": "Well, there’s a really good fish market there.",
+      "start": 125.78,
+      "end": 128.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "SHANNON",
+      "text": "Oh great – where is it exactly?",
+      "start": 128.78,
+      "end": 131.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "LEON",
+      "text": "It’s at the far end of Kite Place, so you have to go over the bridge and then it’s on the right. Q2",
+      "start": 131.74,
+      "end": 140.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "SHANNON",
+      "text": "OK – is it open all day?",
+      "start": 140.08,
+      "end": 142.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "LEON",
+      "text": "It doesn’t close until four, but I’d recommend going earlier than that – it does run out of some things.",
+      "start": 142.9,
+      "end": 150.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "SHANNON",
+      "text": "Oh, I don’t want that to happen.",
+      "start": 150.4,
+      "end": 152.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "LEON",
+      "text": "As long as you get there by 3.30. you should be fine. It’s only 11 now, so plenty of time. Q3",
+      "start": 152.7,
+      "end": 159.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "SHANNON",
+      "text": "Right.",
+      "start": 159.88,
+      "end": 161.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "LEON",
+      "text": "Do you need to buy vegetables too?",
+      "start": 161.16,
+      "end": 163.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "SHANNON",
+      "text": "I do, and I want to avoid all the plastic packaging in the supermarket!",
+      "start": 163.68,
+      "end": 168.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "LEON",
+      "text": "Well, there’s a really nice organic shop there. Now what’s it called … it’s the name of a flower. I know, it’s ‘Rose’. Q4",
+      "start": 168.54,
+      "end": 178.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "SHANNON",
+      "text": "That’s a nice name.",
+      "start": 178.64,
+      "end": 180.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "LEON",
+      "text": "Yeah – it sells vegetables and quite a lot of other stuff.",
+      "start": 180.2,
+      "end": 184.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "SHANNON",
+      "text": "And where’s that?",
+      "start": 184.22,
+      "end": 185.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "LEON",
+      "text": "Well, as you reach the market, you’ll see a big grey building on your left – I think it used to be a warehouse. Anyway, now it’s a restaurant upstairs, but the ground floor has two shops either side of the entrance and it’s the one on the left.",
+      "start": 185.54,
+      "end": 203.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "SHANNON",
+      "text": "That’s easy enough.",
+      "start": 203.24,
+      "end": 204.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "LEON",
+      "text": "You can’t miss it – there’s also a big sign on the pavement so you can look for that. Q5",
+      "start": 204.72,
+      "end": 211.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "SHANNON",
+      "text": "Fine! I guess if I need anything else, I’ll have to go to the supermarket.",
+      "start": 211.42,
+      "end": 217.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "LEON",
+      "text": "Yeah – you should be able to get everything you need, but there’s a minibus that goes to the supermarket if you need it. It’s purple and the number is 289. Q6",
+      "start": 217.16,
+      "end": 229.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "SHANNON",
+      "text": "Thanks, that’s great.",
+      "start": 229.66,
+      "end": 268.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "LEON",
+      "text": "So what do you need to get at the fish market? The salmon is always very good and the shellfish.",
+      "start": 268.2,
+      "end": 275.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "SHANNON",
+      "text": "I’m going to make a curry, I think, and I need about 12 prawns for that.",
+      "start": 275.48,
+      "end": 281.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "LEON",
+      "text": "They’ll have plenty of those.",
+      "start": 281.06,
+      "end": 282.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "SHANNON",
+      "text": "OK.",
+      "start": 282.58,
+      "end": 283.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "LEON",
+      "text": "Have you ever tried samphire? Q7",
+      "start": 283.86,
+      "end": 286.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "SHANNON",
+      "text": "No – what’s that?",
+      "start": 286.22,
+      "end": 288.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "LEON",
+      "text": "It’s a type of seaweed. I just ask for a handful and you fry it in butter. It’s delicious!",
+      "start": 288.18,
+      "end": 294.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "SHANNON",
+      "text": "Oh, I might try that- how do you spell it?",
+      "start": 294.48,
+      "end": 299.84
+    },
+    {
+      "id": "cue-37",
+      "speaker": "LEON",
+      "text": "It’s S-A-M-P-H-l-R-E.",
+      "start": 299.84,
+      "end": 309.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "SHANNON",
+      "text": "Great – it’s always good to try something different.",
+      "start": 309.68,
+      "end": 313.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "LEON",
+      "text": "Yeah.",
+      "start": 313.18,
+      "end": 314.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "SHANNON",
+      "text": "I’ll see what beans they have in the organic shop and I think I’ll get something for dessert there.",
+      "start": 314.42,
+      "end": 321.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "LEON",
+      "text": "How about a mango?",
+      "start": 321.48,
+      "end": 323.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "SHANNON",
+      "text": "I’m not sure – they’re not always ripe. I’d prefer a melon – it’s bigger too. Q8",
+      "start": 323.24,
+      "end": 330.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "LEON",
+      "text": "Good idea. The owner also sells a lot of spices there that you can put in a curry, and things like coconut. Q9",
+      "start": 330.24,
+      "end": 339.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": "SHANNON",
+      "text": "Oh, that’s very helpful. I’ll have a look.",
+      "start": 339.68,
+      "end": 343,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": "LEON",
+      "text": "No problem.",
+      "start": 343,
+      "end": 344.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": "SHANNON",
+      "text": "I know bread doesn’t really go with curry but I always like to have some in case.",
+      "start": 344.22,
+      "end": 350.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": "LEON",
+      "text": "As I said – all the bread is home-made and there’s lots of variety. I like the brown bread myself.",
+      "start": 350.16,
+      "end": 357.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": "SHANNON",
+      "text": "Mm, sounds good.",
+      "start": 357.8,
+      "end": 359.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": "LEON",
+      "text": "They sell other things there too.",
+      "start": 359.9,
+      "end": 362.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": "SHANNON",
+      "text": "Like cakes? I love chocolate cake.",
+      "start": 362.04,
+      "end": 365.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": "LEON",
+      "text": "Well – not that, but they have a whole range of tarts and the best are the strawberry ones. Q10",
+      "start": 365.76,
+      "end": 374.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": "SHANNON",
+      "text": "Perfect – hopefully I won t even have to go to the supermarket!",
+      "start": 374.34,
+      "end": 396.173,
+      "preAudio": false
+    }
+  ]
+}

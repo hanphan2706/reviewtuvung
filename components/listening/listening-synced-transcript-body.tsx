@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef, type ReactNode } from "react";
-import { hasNonEmptyTextSelection } from "@/hooks/use-flow-text-selection";
+import { useEffect, useRef, type MouseEvent, type ReactNode } from "react";
+import { useCueSeekGesture } from "@/hooks/use-flow-text-selection";
 import { findActiveCueId } from "@/lib/listening/build-transcript-sync";
 import type { ListeningTranscriptCue, ListeningTranscriptSyncFile } from "@/lib/listening/listening-transcript-sync-types";
 
@@ -43,6 +43,7 @@ export function ListeningSyncedTranscriptBody({
 }: ListeningSyncedTranscriptBodyProps) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const activeId = findActiveCueId(sync.cues, audioCurrentTime);
+  const { onPointerDown, onPointerMove, canSeekFromClick } = useCueSeekGesture();
 
   useEffect(() => {
     if (!activeId || !scrollRef.current) return;
@@ -51,6 +52,15 @@ export function ListeningSyncedTranscriptBody({
       el.scrollIntoView({ block: "nearest", behavior: "smooth" });
     }
   }, [activeId]);
+
+  const seekToCue = (cue: ListeningTranscriptCue, clickDetail = 1) => {
+    if (!canSeekFromClick(clickDetail)) return;
+    onCueSeek?.(cue);
+  };
+
+  const handleRowClick = (event: MouseEvent<HTMLButtonElement>, cue: ListeningTranscriptCue) => {
+    seekToCue(cue, event.detail);
+  };
 
   return (
     <div
@@ -104,18 +114,13 @@ export function ListeningSyncedTranscriptBody({
           </>
         );
 
-        const rowClass = `flex w-full items-start gap-3 rounded-lg px-1 py-2 text-left transition-all duration-300 ${
+        const rowClass = `flex w-full items-start gap-3 rounded-lg border-0 bg-transparent px-1 py-2 text-left font-inherit text-inherit transition-all duration-300 ${
           isActive
             ? "relative bg-[#4b2876]/[0.07] px-3 py-3 shadow-[inset_0_-12px_12px_-8px_rgba(255,255,255,0.85)]"
             : seekable
-              ? "cursor-text hover:bg-[#faf8fb]"
+              ? "cursor-pointer hover:bg-[#faf8fb]"
               : ""
         }`;
-
-        const seekToCue = () => {
-          if (hasNonEmptyTextSelection()) return;
-          onCueSeek?.(cue);
-        };
 
         if (!seekable) {
           return (
@@ -132,26 +137,19 @@ export function ListeningSyncedTranscriptBody({
         }
 
         return (
-          <div
+          <button
+            type="button"
             key={cue.id}
             data-cue-id={cue.id}
             className={rowClass}
-            title={
-              preAudio
-                ? `Ước lượng · nghe từ ${formatCueTime(cue.start)}`
-                : `Nghe từ ${formatCueTime(cue.start)} · bôi đen để tra từ`
-            }
+            aria-label={`Nghe từ ${formatCueTime(cue.start)}`}
+            onPointerDown={onPointerDown}
+            onPointerMove={onPointerMove}
+            onClick={(event) => handleRowClick(event, cue)}
           >
-            <button
-              type="button"
-              onClick={seekToCue}
-              className="inline-flex shrink-0 cursor-pointer border-0 bg-transparent p-0 pt-0.5"
-              aria-label={`Nghe từ ${formatCueTime(cue.start)}`}
-            >
-              {timestamp}
-            </button>
+            {timestamp}
             <span className={textClass}>{textContent}</span>
-          </div>
+          </button>
         );
       })}
     </div>

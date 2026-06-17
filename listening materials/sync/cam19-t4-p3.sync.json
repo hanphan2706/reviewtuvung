@@ -1,0 +1,495 @@
+{
+  "version": 1,
+  "partId": "cam19-t4-p3",
+  "audioFile": "Test4 Part3.mp3",
+  "durationSeconds": 429.374694,
+  "method": "whisper-local",
+  "preambleSeconds": 70.59,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "KIERAN",
+      "text": "So Jane – you’ll be off to Denmark soon to do your work placement.",
+      "start": 62.119,
+      "end": 64.814,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "JANE",
+      "text": "Yes, I’m really looking forward to it and I’ve just started packing up all my books to put in storage.",
+      "start": 64.814,
+      "end": 69.05,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "KIERAN",
+      "text": "Well, I hope they don’t get spoilt.",
+      "start": 69.05,
+      "end": 70.59,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": "JANE",
+      "text": "It’s OK – my grandfather works in a bookshop and he told me how to pack them.",
+      "start": 70.59,
+      "end": 75.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "KIERAN",
+      "text": "Oh, that’s helpful.",
+      "start": 75.87,
+      "end": 77.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "JANE",
+      "text": "He says you have to support the spine otherwise the paper can come away from the cover. Q21",
+      "start": 77.49,
+      "end": 82.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "KIERAN",
+      "text": "Yeah – that’s obvious.",
+      "start": 82.99,
+      "end": 84.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "JANE",
+      "text": "He also told me to pack them flat in the box not on their side – again because they can bend and if you leave them like that for, say, a year, it’s quite hard to get them back to their normal shape.",
+      "start": 84.77,
+      "end": 99.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "KIERAN",
+      "text": "Well, it’s pretty clear that ruins them, but a lot of people just can’t be bothered to protect their books.",
+      "start": 99.11,
+      "end": 105.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "JANE",
+      "text": "He always says it’s such a shame that publishers don’t use better-quality paper.",
+      "start": 105.07,
+      "end": 110.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "KIERAN",
+      "text": "It’s the acid in the paper that causes the problem, isn’t it?",
+      "start": 110.19,
+      "end": 113.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "JANE",
+      "text": "Yeah – that’s why old books go yellow. You know some of the books my grandfather’s given me are like that already.",
+      "start": 113.59,
+      "end": 121.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "KIERAN",
+      "text": "Oh . . .",
+      "start": 121.69,
+      "end": 122.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "JANE",
+      "text": "I should dump them really if they’re going to deteriorate further, but I’d feel bad. They’ll always remind me of him. He’s quite a collector, you know. Q22",
+      "start": 122.27,
+      "end": 132.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "KIERAN",
+      "text": "Well, if they’re important to you . . .",
+      "start": 132.67,
+      "end": 134.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "JANE",
+      "text": "Yeah – I’d regret just throwing them away.",
+      "start": 134.43,
+      "end": 137.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "KIERAN",
+      "text": "You know, maybe it’s because I was taught to treasure books . . . but I hate seeing students force open the pages – of paperbacks. They press so hard they end up breaking the spine.",
+      "start": 137.67,
+      "end": 148.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "JANE",
+      "text": "I know, but unfortunately, paperbacks aren’t designed to last a long time and people know that. Hardbacks aren’t quite as weak.",
+      "start": 148.47,
+      "end": 158.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "KIERAN",
+      "text": "Yeah, they’re different, I suppose. But I still don’t think people value hardbacks like they used to.",
+      "start": 158.29,
+      "end": 164.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "JANE",
+      "text": "Well, they aren’t decorative, are they, like other objects. Plus, nowadays, people don’t keep them out on shelves as much as they used to.",
+      "start": 164.41,
+      "end": 174.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "KIERAN",
+      "text": "That’s such a pity. When I visit someone – if they have, say, a colorful book on a table, it’s the first thing I’m drawn to. Q23",
+      "start": 174.79,
+      "end": 182.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "JANE",
+      "text": "I agree – and book covers can be a work of art in themselves. Some are really eye-catching.",
+      "start": 182.95,
+      "end": 191.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "KIERAN",
+      "text": "I’ve always been taught to handle books carefully. If you watch someone take a book off a shelf, well, they usually do it wrong.",
+      "start": 191.23,
+      "end": 198.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "JANE",
+      "text": "Ah, my grandfather says, you should put your hand right over the top of the book . . . or if you can’t do that, pull the other books on the shelf aside so that you can hold the whole cover.",
+      "start": 198.91,
+      "end": 212.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "KIERAN",
+      "text": "When did you learn all this?",
+      "start": 212.21,
+      "end": 214.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "JANE",
+      "text": "He watched me pull a heavy book off the shelf when I was small, and it fell on the floor and broke apart. Q24",
+      "start": 214.05,
+      "end": 220.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "KIERAN",
+      "text": "Oh dear!",
+      "start": 220.85,
+      "end": 221.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "KIERAN",
+      "text": "I can still remember it!",
+      "start": 221.91,
+      "end": 224.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "JANE",
+      "text": "You know what I really like?",
+      "start": 224.55,
+      "end": 226.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "KIERAN",
+      "text": "What?",
+      "start": 226.23,
+      "end": 226.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "JANE",
+      "text": "The smell of new books.",
+      "start": 226.77,
+      "end": 228.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "KIERAN",
+      "text": "Me too.",
+      "start": 228.75,
+      "end": 229.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "JANE",
+      "text": "My parents used to laugh at me when I was a kid because I loved putting books up to my nose. Almost as much as reading them!",
+      "start": 229.83,
+      "end": 236.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "KIERAN",
+      "text": "New books aren’t cheap, though, are they? Q25",
+      "start": 236.29,
+      "end": 239.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "JANE",
+      "text": "I guess we’re lucky we can buy them.",
+      "start": 239.05,
+      "end": 241.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "KIERAN",
+      "text": "My grandfather stocks second-hand books as well as new ones and they don’t smell quite as good.",
+      "start": 241.11,
+      "end": 286.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "KIERAN",
+      "text": "I’d love to have a bookshop like your grandfather. What’s it like?",
+      "start": 286.54,
+      "end": 295.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "JANE",
+      "text": "Well, it’s quite big – it’s got two floors and an attic, and he stocks all kinds of books really.",
+      "start": 295.06,
+      "end": 303.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "KIERAN",
+      "text": "I guess he treasures things like first editions and other rare books.",
+      "start": 303.66,
+      "end": 307.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "JANE",
+      "text": "Yeah – you might think he’d keep those in the attic or somewhere.",
+      "start": 307.64,
+      "end": 312.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "KIERAN",
+      "text": ". . . so they’d be hidden?",
+      "start": 312.04,
+      "end": 313.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "JANE",
+      "text": "Yeah. But he likes people to know that he has them. So, he puts them out in the shop but makes sure you need a ladder to get them. Q26",
+      "start": 313.34,
+      "end": 322.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "KIERAN",
+      "text": "Right. That would prevent any thefts!",
+      "start": 322.94,
+      "end": 324.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": "JANE",
+      "text": "Uhuh.",
+      "start": 324.92,
+      "end": 325
+    },
+    {
+      "id": "cue-45",
+      "speaker": "KIERAN",
+      "text": "Does he stock books for children?",
+      "start": 325,
+      "end": 327.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": "JANE",
+      "text": "He does. He particularly likes to encourage kids to read; he always says that he used to sit under the stairs as a child with a pile of books and read them all.",
+      "start": 327.78,
+      "end": 339.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": "KIERAN",
+      "text": "Is that where he keeps them, then?",
+      "start": 339.4,
+      "end": 341,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": "JANE",
+      "text": "Not exactly – he’s got a dedicated area on the ground floor with cushions so that parents can enter with their toddlers, go there and spend some time reading to them. Q27",
+      "start": 341,
+      "end": 352.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": "KIERAN",
+      "text": "Oh cool.",
+      "start": 352.54,
+      "end": 354.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": "JANE",
+      "text": "And then there’s a place for pushchairs by the front door. And a café if anyone needs refreshments.",
+      "start": 354.06,
+      "end": 360.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": "KIERAN",
+      "text": "That’s good to know.",
+      "start": 360.54,
+      "end": 361.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": "JANE",
+      "text": "As I said, it’s a big shop and there’s a storage area out the back as well.",
+      "start": 361.6,
+      "end": 367.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": "KIERAN",
+      "text": "Oh, what does he keep there? Books he wants to throw away?",
+      "start": 367.26,
+      "end": 370.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-54",
+      "speaker": "JANE",
+      "text": "He hardly ever throws anything away – he just leaves unwanted books by the front door for customers to take. Q28",
+      "start": 370.96,
+      "end": 378.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": "KIERAN",
+      "text": "Well, that’s very nice.",
+      "start": 378.5,
+      "end": 380.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-56",
+      "speaker": "JANE",
+      "text": "Yeah – and books people or institutions have requested, they all go at the far end. Q29",
+      "start": 380.26,
+      "end": 387.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-57",
+      "speaker": "KIERAN",
+      "text": "Oh.",
+      "start": 387.38,
+      "end": 388.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-58",
+      "speaker": "JANE",
+      "text": "He thinks it’s best to keep these out of the main shopping area as they’re boxed and new.",
+      "start": 388.08,
+      "end": 393.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-59",
+      "speaker": "KIERAN",
+      "text": "Did you get your coursebooks from him?",
+      "start": 393.88,
+      "end": 395.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-60",
+      "speaker": "JANE",
+      "text": "Naturally. He stocks books for a lot of the colleges. He used to keep these books on the first floor, but now there’s a new university in my hometown, he’s moved them downstairs to attract the students. They’re actually part of the coffee shop, on low shelves all around it. Q30",
+      "start": 395.56,
+      "end": 407.44
+    },
+    {
+      "id": "cue-61",
+      "speaker": "KIERAN",
+      "text": "Pretty central then. You’ll have to take me there some time!",
+      "start": 407.44,
+      "end": 429.375
+    }
+  ]
+}

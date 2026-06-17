@@ -15,6 +15,7 @@ import {
   LISTENING_IELTS_EXAM_HREF,
   LISTENING_LIBRARY_ALL_HREF,
   LISTENING_SOURCE_NAV,
+  LISTENING_TOPIC_NAV,
 } from "@/lib/listening/library-nav";
 import {
   READING_DIFFICULTY_NAV,
@@ -148,6 +149,7 @@ export function StudyHubHeader({
                     <nav className={`${desktopNavClass}`} aria-label="Bộ lọc luyện nghe">
                       <HubDropdown label="Nguồn bài nghe" items={LISTENING_SOURCE_NAV} />
                       <HubDropdown label="Độ khó" items={LISTENING_DIFFICULTY_NAV} />
+                      <HubDropdown label="Bài nghe theo chủ đề" items={LISTENING_TOPIC_NAV} />
                       <Link
                         href={LISTENING_IELTS_EXAM_HREF}
                         className={`${headerNavItemClass} shrink-0 whitespace-nowrap transition-opacity hover:opacity-70`}

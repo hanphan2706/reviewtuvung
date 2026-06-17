@@ -1,0 +1,409 @@
+{
+  "version": 1,
+  "partId": "cam19-t4-p1",
+  "audioFile": "Test4 Part1.mp3",
+  "durationSeconds": 405.133061,
+  "method": "whisper-local",
+  "preambleSeconds": 93.82,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "KAEDEN",
+      "text": "Hello Charlotte. I’m Kaeden, one of the supervisors. Welcome to the team.",
+      "start": 93.82,
+      "end": 98.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "CHARLOTTE",
+      "text": "Hi Aiden.",
+      "start": 98.94,
+      "end": 99.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "KAEDEN",
+      "text": "It’s Kaeden. Q1",
+      "start": 99.64,
+      "end": 100.9
+    },
+    {
+      "id": "cue-4",
+      "speaker": "CHARLOTTE",
+      "text": "I’m so sorry.",
+      "start": 100.9,
+      "end": 103.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "KAEDEN",
+      "text": "Don’t worry. People often get my name wrong; they never know how to spell it. It’s K-A-E-D-E-N, in case you ever need to write it.",
+      "start": 103.08,
+      "end": 114.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "CHARLOTTE",
+      "text": "I’ll try and remember.",
+      "start": 114.26,
+      "end": 117.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "KAEDEN",
+      "text": "So, there are a few practical things you need to sort out this morning. Then I’ll show you what you’re going to do today.",
+      "start": 117.36,
+      "end": 125.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "CHARLOTTE",
+      "text": "The email I received said to go to the front desk, to show my letter of appointment and pick up my badge.",
+      "start": 125.04,
+      "end": 132.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "KAEDEN",
+      "text": "You’ll need that for the staffroom and other areas of the supermarket where shoppers aren’t allowed. So, after you’ve finished at the front desk, I’ll take you to the staffroom. Put your coat and rucksack in one of the lockers there. Take whichever one is free. Q2",
+      "start": 132.78,
+      "end": 149.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "CHARLOTTE",
+      "text": "Will I have a key?",
+      "start": 149.04,
+      "end": 150.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "KAEDEN",
+      "text": "Yes. Try not to lose it. At the end of the day, leave it in the door for the next person to use.",
+      "start": 150.88,
+      "end": 157.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "CHARLOTTE",
+      "text": "Will do.",
+      "start": 157.52,
+      "end": 158.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "KAEDEN",
+      "text": "You also need to go to the HR department to see Tiffany. She’s really helpful.",
+      "start": 158.64,
+      "end": 164.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "CHARLOTTE",
+      "text": "I was told to bring my passport with me. HR need to take a note of the number in it. Q3",
+      "start": 164.48,
+      "end": 170.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "KAEDEN",
+      "text": "That’s right. Or you can show your ID card.",
+      "start": 170.52,
+      "end": 173.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "CHARLOTTE",
+      "text": "I don’t have one of those.",
+      "start": 173.3,
+      "end": 175.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "KAEDEN",
+      "text": "OK. Tiffany will give you a uniform. They have lots in different sizes, so you just tell her what you need. I won’t come with you to HR – I’ve got to go and sort something else out. Problem with a bread slicer. Q4",
+      "start": 175.14,
+      "end": 189.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "CHARLOTTE",
+      "text": "Is the HR office near the staffroom?",
+      "start": 189.08,
+      "end": 192.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "KAEDEN",
+      "text": "The staffroom’s on the first floor, and HR are a couple of floors above that, on the third floor. There’s a staircase outside the staffroom. Q5",
+      "start": 192.32,
+      "end": 200.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "CHARLOTTE",
+      "text": "OK.",
+      "start": 200.72,
+      "end": 201.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "KAEDEN",
+      "text": "When you’ve finished with HR, come and find me in the bakery section of the shop.",
+      "start": 201.86,
+      "end": 206.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "CHARLOTTE",
+      "text": "I’m looking forward to getting started.",
+      "start": 206.38,
+      "end": 209,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "KAEDEN",
+      "text": "I’ll just give you my phone number, in case you can’t find me. Have you got your phone there?",
+      "start": 209,
+      "end": 214.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "CHARLOTTE",
+      "text": "Yes … OK, ready.",
+      "start": 214.8,
+      "end": 234.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "KAEDEN",
+      "text": "It’s oh-four-one-two double-six-five nine-oh-three. Q6",
+      "start": 234.79,
+      "end": 260.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "CHARLOTTE",
+      "text": "OK, done.",
+      "start": 260.23,
+      "end": 265.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "KAEDEN",
+      "text": "So, Charlotte, your tasks today are in the bakery section, on the sushi counter, and on the meat and fish counters. The first job is to check sell-by dates on the bread and cakes. If any of the dates are today’s, put a new price label on the packaging.",
+      "start": 265.06,
+      "end": 283.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "CHARLOTTE",
+      "text": "What if any of the labels are yesterday’s dates, or older? Do I throw those items away?",
+      "start": 283.3,
+      "end": 289.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "KAEDEN",
+      "text": "Yes, but that shouldn’t happen – we check the stock every day. When something needs a new price label, put a yellow one on the package, next to the original price. Q7",
+      "start": 289.88,
+      "end": 299.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "CHARLOTTE",
+      "text": "OK.",
+      "start": 299.54,
+      "end": 300.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "KAEDEN",
+      "text": "After that, you’ll go to the sushi takeaway counter.",
+      "start": 300.72,
+      "end": 304.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "CHARLOTTE",
+      "text": "Will I be preparing boxes of food?",
+      "start": 304.32,
+      "end": 307.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "KAEDEN",
+      "text": "For today, you’ll just be helping the staff.",
+      "start": 307.42,
+      "end": 310.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "CHARLOTTE",
+      "text": "Yes, of course.",
+      "start": 310.22,
+      "end": 311.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "KAEDEN",
+      "text": "You’ll see lots of flat cardboard boxes at one end of the counter. Beneath those is where we keep the plastic boxes -we run out of those really quickly, so you should bring more from the storeroom. Q8",
+      "start": 311.7,
+      "end": 323.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "CHARLOTTE",
+      "text": "Is that my only task on the sushi counter?",
+      "start": 323.44,
+      "end": 326.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "KAEDEN",
+      "text": "No. You also need to clean the area where they prepare the dishes. There are cloths and bottles of spray by the sink. Oh, and please make sure you clean that too.",
+      "start": 326.94,
+      "end": 336.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "CHARLOTTE",
+      "text": "Sure. That’s important, isn’t it?",
+      "start": 336.34,
+      "end": 339.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "KAEDEN",
+      "text": "Absolutely. But you mustn’t wash up knives. You have to do some training before you’re allowed to touch sharp objects.",
+      "start": 339.08,
+      "end": 345.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "CHARLOTTE",
+      "text": "What should I do if there are any?",
+      "start": 345.86,
+      "end": 348.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "KAEDEN",
+      "text": "Ask someone to put them in the dishwasher.",
+      "start": 348.42,
+      "end": 350.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "CHARLOTTE",
+      "text": "OK, thanks. I don’t want to get anything wrong.",
+      "start": 350.48,
+      "end": 353.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "KAEDEN",
+      "text": "Don’t worry. You’ll be fine. And I’ll be around to help.",
+      "start": 353.9,
+      "end": 356.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": "CHARLOTTE",
+      "text": "Right.",
+      "start": 356.96,
+      "end": 358.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": "KAEDEN",
+      "text": "Finally, the meat and fish counters. You need to clean the area where staff serve customers, including wiping the weighing scales.",
+      "start": 358.32,
+      "end": 366.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": "CHARLOTTE",
+      "text": "OK. Anything else?",
+      "start": 366.44,
+      "end": 370.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": "KAEDEN",
+      "text": "The fish is laid on ice, but when that starts to melt, you’ll need to get more from the cold-room. Q9",
+      "start": 370.22,
+      "end": 375.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": "CHARLOTTE",
+      "text": "I know the staff on the food counters wear a hat. Will that be the same for me?",
+      "start": 375.96,
+      "end": 381.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": "KAEDEN",
+      "text": "You won’t be serving customers directly, so no. But make sure you put on thermal gloves when you take anything out of the cold-room. The temperature’s low enough in there to get frostbite from touching things. Q10",
+      "start": 381.9,
+      "end": 393.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": "CHARLOTTE",
+      "text": "Understood.",
+      "start": 393.1,
+      "end": 405.133,
+      "preAudio": false
+    }
+  ]
+}

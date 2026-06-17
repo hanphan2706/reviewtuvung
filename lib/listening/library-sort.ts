@@ -1,7 +1,14 @@
+import { listeningDifficultyForLesson } from "@/lib/listening/estimate-listening-level";
 import { listeningLessonCatalogOrder } from "@/lib/listening/listening-catalog-order";
 import type { ListeningPartMeta } from "@/lib/listening/content-manifest";
+import { readingDifficultyRank } from "@/lib/reading/library-sort";
 
-export const LISTENING_LIBRARY_SORT_VALUES = ["newest", "oldest", "listens-desc"] as const;
+export const LISTENING_LIBRARY_SORT_VALUES = [
+  "newest",
+  "oldest",
+  "difficulty-asc",
+  "listens-desc",
+] as const;
 
 export type ListeningLibrarySort = (typeof LISTENING_LIBRARY_SORT_VALUES)[number];
 
@@ -15,6 +22,7 @@ export type ListeningLibrarySortOption = {
 export const LISTENING_LIBRARY_SORT_OPTIONS: ListeningLibrarySortOption[] = [
   { value: "newest", label: "Mới nhất → Cũ nhất" },
   { value: "oldest", label: "Cũ nhất → Mới nhất" },
+  { value: "difficulty-asc", label: "Dễ nhất → Khó nhất" },
   { value: "listens-desc", label: "Nhiều lượt nghe → Ít lượt nghe" },
 ];
 
@@ -34,6 +42,13 @@ export function sortListeningLibraryLessons(
   list.sort((a, b) => {
     if (sort === "listens-desc") {
       const diff = (listenCounts[b.id] ?? 0) - (listenCounts[a.id] ?? 0);
+      if (diff !== 0) return diff;
+      return listeningLessonCatalogOrder(b) - listeningLessonCatalogOrder(a);
+    }
+    if (sort === "difficulty-asc") {
+      const diff =
+        readingDifficultyRank(listeningDifficultyForLesson(a)) -
+        readingDifficultyRank(listeningDifficultyForLesson(b));
       if (diff !== 0) return diff;
       return listeningLessonCatalogOrder(b) - listeningLessonCatalogOrder(a);
     }

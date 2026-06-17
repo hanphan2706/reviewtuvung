@@ -72,7 +72,9 @@ export function ListeningCourseLibrarySidebar({ lessons, isLoggedIn }: Listening
   const { stats, loading } = useListeningCourseCompletion(lessonIds, isLoggedIn);
 
   return (
-    <aside className={`flex flex-col ${studyHubCourseSectionStackClass}`}>
+    <aside
+      className={`grid grid-cols-1 gap-6 sm:grid-cols-2 lg:flex lg:flex-col ${studyHubCourseSectionStackClass}`}
+    >
       <ListeningWeeklyChallengeCard />
       <ListeningCertificateCard
         totalLessons={lessons.length}

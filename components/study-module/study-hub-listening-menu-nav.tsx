@@ -8,6 +8,7 @@ import {
   LISTENING_IELTS_EXAM_HREF,
   LISTENING_LIBRARY_ALL_HREF,
   LISTENING_SOURCE_NAV,
+  LISTENING_TOPIC_NAV,
   type ListeningLibraryNavItem,
 } from "@/lib/listening/library-nav";
 
@@ -91,6 +92,7 @@ export function StudyHubListeningMenuNav({ onNavigate }: { onNavigate?: () => vo
     <nav className="flex flex-col gap-5" aria-label="Luyện nghe">
       <SourceNavGroup title="Nguồn bài nghe" items={LISTENING_SOURCE_NAV} onNavigate={onNavigate} />
       <SourceNavGroup title="Độ khó" items={LISTENING_DIFFICULTY_NAV} onNavigate={onNavigate} />
+      <SourceNavGroup title="Bài nghe theo chủ đề" items={LISTENING_TOPIC_NAV} onNavigate={onNavigate} />
       <TopLevelNavRow href={LISTENING_IELTS_EXAM_HREF} label="Luyện đề IELTS" onNavigate={onNavigate} />
       <TopLevelNavRow
         href={LISTENING_LIBRARY_ALL_HREF}

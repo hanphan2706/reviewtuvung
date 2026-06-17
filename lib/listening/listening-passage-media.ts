@@ -29,6 +29,30 @@ const LISTENING_PART_IMAGES: Record<string, string> = {
   /** Tardigrades — water bear (NatGeo) */
   "cam19-t2-p4":
     "https://i.natgeofe.com/n/f0a339b8-a3b0-4189-a75b-22c34000f454/og-image-tardigrades-sciencesource_ss2437867_16x9.jpg?w=1200",
+  /** Kite Place — chợ thực phẩm / rau củ quầy ngoài trời (harbour food shops) */
+  "cam19-t3-p1":
+    "https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200&q=80&auto=format&fit=crop",
+  /** Children's book festival */
+  "cam19-t3-p2":
+    "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=1200&q=80&auto=format&fit=crop",
+  /** Science experiment — lab */
+  "cam19-t3-p3":
+    "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80&auto=format&fit=crop",
+  /** Microplastics — ocean pollution */
+  "cam19-t3-p4":
+    "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&q=80&auto=format&fit=crop",
+  /** First day at work — supermarket */
+  "cam19-t4-p1":
+    "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1200&q=80&auto=format&fit=crop",
+  /** Running club */
+  "cam19-t4-p2":
+    "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=1200&q=80&auto=format&fit=crop",
+  /** Bookshop */
+  "cam19-t4-p3":
+    "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=1200&q=80&auto=format&fit=crop",
+  /** Reforestation — forest landscape */
+  "cam19-t4-p4":
+    "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200&q=80&auto=format&fit=crop",
   /** Tactics Basic Unit 1 — classroom listening */
   "tactics-basic-u01-l01":
     "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1200&q=80&auto=format&fit=crop",
@@ -129,6 +153,7 @@ export function listeningPartHeroImage(partId: string): string {
 const LISTENING_PART_IMAGE_OBJECT_POSITION: Partial<Record<string, string>> = {
   "cam19-t1-p1": "object-center",
   "cam19-t1-p3": "object-center",
+  "cam19-t3-p1": "object-[center_40%]",
 };
 
 export function listeningPartHeroImageObjectPosition(partId: string): string {

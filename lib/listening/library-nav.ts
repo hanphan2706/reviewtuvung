@@ -2,6 +2,7 @@ import {
   LISTENING_PARTS_PILOT,
   type ListeningPartMeta,
 } from "@/lib/listening/content-manifest";
+import type { ReadingTopic } from "@/lib/reading/hub-articles";
 import {
   LISTENING_DIFFICULTY_BANDS,
   listeningDifficultyBandForLesson,
@@ -82,6 +83,51 @@ export const LISTENING_DIFFICULTY_NAV: ListeningLibraryNavItem[] = LISTENING_DIF
   }),
 );
 
+const TOPIC_SLUG: Record<ReadingTopic, string> = {
+  Education: "education",
+  Science: "science",
+  Wildlife: "wildlife",
+  Environment: "environment",
+  Technology: "technology",
+  Psychology: "psychology",
+  Social: "social",
+  Health: "health",
+  Sports: "sports",
+  "Culture and Leisure": "culture-and-leisure",
+};
+
+const TOPIC_BY_SLUG = Object.fromEntries(
+  Object.entries(TOPIC_SLUG).map(([label, slug]) => [slug, label as ReadingTopic]),
+) as Record<string, ReadingTopic>;
+
+const TOPIC_ORDER: ReadingTopic[] = [
+  "Education",
+  "Science",
+  "Wildlife",
+  "Environment",
+  "Technology",
+  "Psychology",
+  "Social",
+  "Health",
+  "Sports",
+  "Culture and Leisure",
+];
+
+function usedListeningTopics(): ReadingTopic[] {
+  const set = new Set<ReadingTopic>();
+  for (const lesson of LISTENING_PARTS_PILOT) {
+    for (const topic of lesson.topics) {
+      set.add(topic);
+    }
+  }
+  return TOPIC_ORDER.filter((topic) => set.has(topic));
+}
+
+export const LISTENING_TOPIC_NAV: ListeningLibraryNavItem[] = usedListeningTopics().map((topic) => ({
+  label: topic,
+  href: `${LISTENING_HUB_HREF}/chu-de/${TOPIC_SLUG[topic]}`,
+}));
+
 export type ListeningLibraryLayout = "grid" | "course-list";
 
 export type ListeningLibraryPageConfig = {
@@ -142,6 +188,17 @@ export function listeningLibraryByDifficulty(slug: string): ListeningLibraryPage
   return {
     title: `Độ khó: ${band}`,
     description: `${lessons.length} bài nghe mức ${band} — transcript đồng bộ, luyện nghe chủ động.`,
+    lessons: sortListeningLessons(lessons),
+  };
+}
+
+export function listeningLibraryByTopic(slug: string): ListeningLibraryPageConfig | null {
+  const topic = TOPIC_BY_SLUG[slug];
+  if (!topic) return null;
+  const lessons = LISTENING_PARTS_PILOT.filter((lesson) => lesson.topics.includes(topic));
+  return {
+    title: `Chủ đề: ${topic}`,
+    description: `${lessons.length} bài nghe thuộc chủ đề ${topic}.`,
     lessons: sortListeningLessons(lessons),
   };
 }

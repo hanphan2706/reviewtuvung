@@ -77,6 +77,70 @@ export const LISTENING_SYNC_PART_CONFIG: Partial<Record<string, ListeningSyncPar
     anchorText: "tardigrades",
     anchorAtSeconds: 92,
   },
+  /** Cam 19 T3 P1 — Kite Place food shops (~1:00). */
+  "cam19-t3-p1": {
+    dialogueMinStartSeconds: 55,
+    maxDialogueEndSeconds: 470,
+    firstDialogueLineIndex: 0,
+    anchorText: "harbour",
+    anchorAtSeconds: 62,
+  },
+  /** Cam 19 T3 P2 — Children's book festival (~1:00). */
+  "cam19-t3-p2": {
+    dialogueMinStartSeconds: 58,
+    maxDialogueEndSeconds: 372,
+    firstDialogueLineIndex: 0,
+    anchorText: "book festival",
+    anchorAtSeconds: 65,
+  },
+  /** Cam 19 T3 P3 — Year 12 science experiment (~0:48). */
+  "cam19-t3-p3": {
+    dialogueMinStartSeconds: 45,
+    maxDialogueEndSeconds: 400,
+    firstDialogueLineIndex: 0,
+    anchorText: "science class",
+    anchorAtSeconds: 50,
+  },
+  /** Cam 19 T3 P4 — Microplastics lecture (~1:30). */
+  "cam19-t3-p4": {
+    dialogueMinStartSeconds: 88,
+    maxDialogueEndSeconds: 415,
+    firstDialogueLineIndex: 0,
+    anchorText: "microplastics",
+    anchorAtSeconds: 92,
+  },
+  /** Cam 19 T4 P1 — First day at work (~1:00). */
+  "cam19-t4-p1": {
+    dialogueMinStartSeconds: 55,
+    maxDialogueEndSeconds: 470,
+    firstDialogueLineIndex: 0,
+    anchorText: "supervisor",
+    anchorAtSeconds: 62,
+  },
+  /** Cam 19 T4 P2 — Compton Park Runners (~1:00). */
+  "cam19-t4-p2": {
+    dialogueMinStartSeconds: 58,
+    maxDialogueEndSeconds: 372,
+    firstDialogueLineIndex: 0,
+    anchorText: "running coach",
+    anchorAtSeconds: 65,
+  },
+  /** Cam 19 T4 P3 — Grandfather's bookshop (~0:48). */
+  "cam19-t4-p3": {
+    dialogueMinStartSeconds: 45,
+    maxDialogueEndSeconds: 400,
+    firstDialogueLineIndex: 0,
+    anchorText: "pack them",
+    anchorAtSeconds: 50,
+  },
+  /** Cam 19 T4 P4 — Tree planting lecture (~1:30). */
+  "cam19-t4-p4": {
+    dialogueMinStartSeconds: 88,
+    maxDialogueEndSeconds: 415,
+    firstDialogueLineIndex: 0,
+    anchorText: "reforestation",
+    anchorAtSeconds: 92,
+  },
 };
 
 /** @deprecated Dùng LISTENING_SYNC_PART_CONFIG */

@@ -3,6 +3,7 @@ import { getListeningPartById, type ListeningPartMeta } from "@/lib/listening/co
 import { loadListeningFullTestTranscriptByPart } from "@/lib/listening/load-listening-full-test-transcript";
 import { loadListeningTranscriptText } from "@/lib/listening/load-listening-transcript-text";
 import {
+  getListeningIeltsTest,
   listeningPartIdForTest,
   type ListeningIeltsTestId,
 } from "@/lib/listening/ielts-test-catalog";
@@ -478,7 +479,9 @@ export function buildListeningFullTestExamPayload(
   const parsed = loadListeningQnaTest(testId);
   if (!parsed) return null;
 
-  const testNumber = testId === "cam19-test1" ? 1 : 2;
+  const testMeta = getListeningIeltsTest(testId);
+  if (!testMeta) return null;
+  const testNumber = testMeta.testNumber;
   const questionHtmlParts: string[] = [];
   const allNums: number[] = [];
   const answerKey: Record<string, string> = {};
