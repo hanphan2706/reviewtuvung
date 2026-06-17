@@ -14,7 +14,7 @@ const LISTENING_PART_IMAGES: Record<string, string> = {
   /** Student food projects — Colin & Marie conversation */
   "cam19-t1-p3":
     "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1200&q=80&auto=format&fit=crop",
-  /** Céide Fields — Neolithic archaeological site */
+  /** Céide Fields — Neolithic archaeological site (thumbnail nhỏ — loại khỏi hero hub). */
   "cam19-t1-p4":
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz7_k_3h-M32S8P8EmwRj0OvYOW_c_Sz6DVg&s",
   /** Guitar group classes */
@@ -144,6 +144,11 @@ function assertListeningPartImages(map: Record<string, string>): void {
 }
 
 assertListeningPartImages(LISTENING_PART_IMAGES);
+
+/** Bài không xoay lên hero hub — ảnh nguồn quá nhỏ / mờ khi phóng to full-width. */
+export const LISTENING_HUB_HERO_EXCLUDED_PART_IDS = new Set<string>([
+  "cam19-t1-p4",
+]);
 
 export function listeningPartHeroImage(partId: string): string {
   return LISTENING_PART_IMAGES[partId] ?? LISTENING_PART_IMAGE_FALLBACK;

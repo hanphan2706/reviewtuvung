@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Headphones, Play, Timer } from "lucide-react";
@@ -10,10 +11,11 @@ import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 import { ListeningSuggestionsSection } from "@/components/listening/listening-suggestions-section";
 import { useListeningRecentHistory } from "@/hooks/use-listening-recent-history";
 import {
-  getListeningFeaturedPart,
+  LISTENING_PARTS_PILOT,
   listeningPartDurationMinutes,
   type ListeningPartMeta,
 } from "@/lib/listening/content-manifest";
+import { pickListeningHubFeaturedPart } from "@/lib/listening/listening-hub-layout";
 import { LISTENING_LIBRARY_ALL_HREF } from "@/lib/listening/library-nav";
 
 function formatDurationMinutes(minutes: number): string {
@@ -28,6 +30,14 @@ type ListeningHubProps = {
   userProfile?: StudyHubUserProfile | null;
   supabaseConfigured: boolean;
 };
+
+function ListeningHubHeroSkeleton() {
+  return (
+    <section className="mb-14" aria-hidden>
+      <div className="aspect-[16/10] max-h-[min(400px,52vh)] w-full animate-pulse rounded-lg border border-[#E4E4E7] bg-[#ebebeb] sm:aspect-[21/9] sm:max-h-[min(440px,58vh)]" />
+    </section>
+  );
+}
 
 function ListeningHubHero({
   featuredPart,
@@ -93,8 +103,12 @@ export function ListeningHub({
   supabaseConfigured,
 }: ListeningHubProps) {
   const pathname = usePathname();
-  const featuredPart = getListeningFeaturedPart();
+  const [featuredPart, setFeaturedPart] = useState<ListeningPartMeta | null>(null);
   const { items: recentHistory, loading: recentHistoryLoading } = useListeningRecentHistory(isLoggedIn);
+
+  useEffect(() => {
+    setFeaturedPart(pickListeningHubFeaturedPart(LISTENING_PARTS_PILOT));
+  }, []);
 
   return (
     <div className={studyHubPageBgClass}>
@@ -108,7 +122,11 @@ export function ListeningHub({
       />
 
       <div className={studyHubPageContentClass}>
-        <ListeningHubHero featuredPart={featuredPart} onStartFeatured={onStartFeatured} />
+        {featuredPart ? (
+          <ListeningHubHero featuredPart={featuredPart} onStartFeatured={onStartFeatured} />
+        ) : (
+          <ListeningHubHeroSkeleton />
+        )}
 
         <ListeningSourceExploreCarousel onOpenSource={onOpenLibrary} />
 

@@ -1,5 +1,5 @@
 import type { ReadingTopic } from "@/lib/reading/hub-articles";
-import { listeningPartHeroImage } from "@/lib/listening/listening-passage-media";
+import { listeningPartHeroImage, LISTENING_HUB_HERO_EXCLUDED_PART_IDS } from "@/lib/listening/listening-passage-media";
 import { listeningPartAudioApiPath, tacticsBasicListeningAudioApiPath } from "@/lib/listening/listening-materials-urls";
 import {
   TACTICS_BASIC_LESSONS,
@@ -141,11 +141,6 @@ export function getListeningTestContext(contextKey: string): ListeningTestContex
   };
 }
 
-/** Bài cố định trên hero hub Luyện nghe — không xoay ngẫu nhiên (một số ảnh bài chất lượng thấp). */
-export const LISTENING_HUB_FEATURED = {
-  partId: "cam19-t1-p1",
-} as const;
-
 export function getListeningPartById(id: string): ListeningPartMeta | undefined {
   return LISTENING_PARTS_PILOT.find((p) => p.id === id);
 }
@@ -155,9 +150,10 @@ export function getListeningPartBySlug(slug: string): ListeningPartMeta | undefi
 }
 
 export function getListeningFeaturedPart(): ListeningPartMeta {
-  const featured = getListeningPartById(LISTENING_HUB_FEATURED.partId);
-  if (featured) return featured;
-  const first = LISTENING_PARTS_PILOT[0];
+  const eligible = LISTENING_PARTS_PILOT.filter(
+    (part) => !LISTENING_HUB_HERO_EXCLUDED_PART_IDS.has(part.id),
+  );
+  const first = eligible[0] ?? LISTENING_PARTS_PILOT[0];
   if (!first) throw new Error("LISTENING_PARTS_PILOT must not be empty");
   return first;
 }
