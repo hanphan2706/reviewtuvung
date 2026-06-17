@@ -177,3 +177,93 @@ export const CAM18_TEST1: ReadingHubArticle[] = [
     "Cambridge 18 · Test 1",
   ),
 ];
+
+export const CAM18_TEST2: ReadingHubArticle[] = [
+  camArticle(
+    "cam18-test2",
+    1,
+    "Stonehenge",
+    "For centuries, historians and archaeologists have puzzled over the many mysteries of Stonehenge, a prehistoric monument on Salisbury Plain.",
+    "Culture and Leisure",
+    "Trung bình",
+    "Cambridge 18 · Test 2",
+  ),
+  camArticle(
+    "cam18-test2",
+    2,
+    "Living with artificial intelligence",
+    "Powerful AI needs to be reliably aligned with human values — but does this mean AI will eventually have to police our ethics?",
+    "Technology",
+    "Trung bình – khó",
+    "Cambridge 18 · Test 2",
+  ),
+  camArticle(
+    "cam18-test2",
+    3,
+    "An ideal city",
+    "Leonardo da Vinci's ideal city was centuries ahead of its time.",
+    "Culture and Leisure",
+    "Khó",
+    "Cambridge 18 · Test 2",
+  ),
+];
+
+export const CAM18_TEST3: ReadingHubArticle[] = [
+  camArticle(
+    "cam18-test3",
+    1,
+    "Materials to take us beyond concrete",
+    "Concrete is everywhere, but it is bad for the planet — alternatives are being developed.",
+    "Environment",
+    "Trung bình",
+    "Cambridge 18 · Test 3",
+  ),
+  camArticle(
+    "cam18-test3",
+    2,
+    "The steam car",
+    "The successes and failures of the Doble brothers and their steam cars.",
+    "Technology",
+    "Trung bình – khó",
+    "Cambridge 18 · Test 3",
+  ),
+  camArticle(
+    "cam18-test3",
+    3,
+    "The case for mixed-ability classes",
+    "Should students of different abilities be taught together in the same classroom?",
+    "Education",
+    "Khó",
+    "Cambridge 18 · Test 3",
+  ),
+];
+
+export const CAM18_TEST4: ReadingHubArticle[] = [
+  camArticle(
+    "cam18-test4",
+    1,
+    "Green roofs",
+    "Rooftops covered with vegetation are now a common sight in many cities around the world.",
+    "Environment",
+    "Trung bình",
+    "Cambridge 18 · Test 4",
+  ),
+  camArticle(
+    "cam18-test4",
+    2,
+    "The growth mindset",
+    "The idea that intelligence is not fixed has taken root in the educational landscape.",
+    "Education",
+    "Trung bình – khó",
+    "Cambridge 18 · Test 4",
+  ),
+  camArticle(
+    "cam18-test4",
+    3,
+    "Alfred Wegener: science, exploration and the theory of continental drift",
+    "The life and scientific work of Alfred Wegener, remembered for the theory of continental drift.",
+    "Science",
+    "Khó",
+    "Cambridge 18 · Test 4",
+  ),
+];

@@ -121,7 +121,7 @@ export function splitReadingPassages(raw: string): ReadingPassageBlock[] {
 
     let questionsEnd = lines.length;
     for (let j = questionsStart + 1; j < lines.length; j += 1) {
-      if (/^answers?\s*:?\s*$/i.test((lines[j] ?? "").trim())) {
+      if (/^answers?(?:\s+key)?\s*:?\s*$/i.test((lines[j] ?? "").trim())) {
         questionsEnd = j;
         break;
       }

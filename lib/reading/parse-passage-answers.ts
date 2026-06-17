@@ -53,7 +53,7 @@ export function parsePassageAnswerKey(text: string): Record<number, string> {
   return out;
 }
 
-const ANSWERS_BLOCK_RE = /\n(?:ANSWERS|Answers?)\s*:?\s*\n([\s\S]*)$/i;
+const ANSWERS_BLOCK_RE = /\n(?:ANSWERS|Answers?|Answer\s+key)\s*:?\s*\n([\s\S]*)$/i;
 
 /** Khối đáp án chung cuối file Cambridge (sau cả 3 passage). */
 export function extractGlobalAnswerKeyFromRaw(raw: string): Record<number, string> {

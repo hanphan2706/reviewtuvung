@@ -170,6 +170,24 @@ const READING_ARTICLE_IMAGES: Record<string, string> = {
     "https://images.unsplash.com/photo-1511497584788-876760111969?w=1200&q=80&auto=format&fit=crop",
   "cam18-test1-p3":
     "https://images.unsplash.com/photo-1614728263952-84ea256f9679?w=1200&q=80&auto=format&fit=crop",
+  "cam18-test2-p1":
+    "https://images.unsplash.com/photo-1590073246989-059c967f5d50?w=1200&q=80&auto=format&fit=crop",
+  "cam18-test2-p2":
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&q=80&auto=format&fit=crop",
+  "cam18-test2-p3":
+    "https://images.unsplash.com/photo-1477959858617-f475336e7a51?w=1200&q=80&auto=format&fit=crop",
+  "cam18-test3-p1":
+    "https://images.unsplash.com/photo-1504308809628-4b3ab0a9e7a8?w=1200&q=80&auto=format&fit=crop",
+  "cam18-test3-p2":
+    "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=1200&q=80&auto=format&fit=crop",
+  "cam18-test3-p3":
+    "https://images.unsplash.com/photo-1523050855928-73df7baf67f1?w=1200&q=80&auto=format&fit=crop",
+  "cam18-test4-p1":
+    "https://images.unsplash.com/photo-1518173946083-d56fd2dafa9a?w=1200&q=80&auto=format&fit=crop",
+  "cam18-test4-p2":
+    "https://images.unsplash.com/photo-1503674502228-681c048c0659?w=1200&q=80&auto=format&fit=crop",
+  "cam18-test4-p3":
+    "https://images.unsplash.com/photo-1614732415884-89145a4f63a2?w=1200&q=80&auto=format&fit=crop",
 };
 
 function assertUniqueArticleImages(map: Record<string, string>): void {

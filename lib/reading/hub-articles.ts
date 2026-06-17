@@ -5,6 +5,9 @@ import { READING_CHALLENGE_2_UNITS } from "@/lib/reading/reading-challenge-2-met
 import { READING_CHALLENGE_3_UNITS } from "@/lib/reading/reading-challenge-3-meta";
 import {
   CAM18_TEST1,
+  CAM18_TEST2,
+  CAM18_TEST3,
+  CAM18_TEST4,
   CAM19_TEST1,
   CAM19_TEST2,
   CAM19_TEST3,
@@ -16,6 +19,9 @@ export type ReadingPilotId =
   | "cam19-test3"
   | "cam19-test2"
   | "cam19-test1"
+  | "cam18-test4"
+  | "cam18-test3"
+  | "cam18-test2"
   | "cam18-test1"
   | "cam20-test1"
   | "cam20-test2"
@@ -279,6 +285,9 @@ export const READING_HUB_ARTICLES: ReadingHubArticle[] = [
   ...CAM19_TEST3,
   ...CAM19_TEST2,
   ...CAM19_TEST1,
+  ...CAM18_TEST4,
+  ...CAM18_TEST3,
+  ...CAM18_TEST2,
   ...CAM18_TEST1,
   ...CAM20_TEST4,
   ...CAM20_TEST3,
