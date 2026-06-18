@@ -80,6 +80,7 @@ function detectSectionKind(chunk: string): ExamSectionKind {
   if (/Choose\s+TWO\s+(letters|correct\s+answers)/i.test(chunk)) return "choose-two";
   if (/Match each statement with the correct (person|expert)/i.test(chunk)) return "people-match";
   if (/Which (paragraph|section) contains the following information/i.test(chunk)) return "paragraph-match";
+  if (/Choose the correct heading/i.test(chunk)) return "paragraph-match";
   if (/Complete the summary below/i.test(chunk)) return "summary-fill";
   if (/Complete the summary using/i.test(chunk)) return "summary-fill";
   if (/Complete the notes below/i.test(chunk)) return "note-fill";
@@ -110,6 +111,12 @@ function parsePhraseBankOption(line: string): McqOption | null {
   const m = line.match(/^([A-J])\.\s*(.+)$/i);
   if (!m?.[1] || !m[2]) return null;
   return { letter: m[1].toUpperCase(), text: m[2].trim() };
+}
+
+function parseRomanHeadingOption(line: string): McqOption | null {
+  const m = line.match(/^([ivxlc]{1,4})\s+(.+)$/i);
+  if (!m?.[1] || !m[2]) return null;
+  return { letter: m[1].toLowerCase(), text: m[2].trim() };
 }
 
 function parseNumberedStatement(line: string): { num: number; text: string } | null {
@@ -393,7 +400,20 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
       }
 
       if (kind === "paragraph-match") {
-        instructionLines.push(line);
+        if (/^List of Headings/i.test(line)) continue;
+        const romanOpt = parseRomanHeadingOption(line);
+        if (romanOpt) {
+          options.push(romanOpt);
+          continue;
+        }
+        if (
+          /^Reading Passage/i.test(line) ||
+          /^Choose the correct heading/i.test(line) ||
+          /^Write the correct number/i.test(line)
+        ) {
+          instructionLines.push(line);
+          continue;
+        }
         continue;
       }
 

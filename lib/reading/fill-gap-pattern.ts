@@ -4,8 +4,8 @@ export const FILL_GAP_BLANK = "(?:_{2,}|…{2,}|\\.{3,})";
 /** Number immediately followed by a blank (note/summary inline gaps). */
 export const FILL_GAP_RE = new RegExp(`(\\d{1,2})\\s*${FILL_GAP_BLANK}`, "g");
 
-/** Bare gap in vertical Cambridge PDFs: "entirely 1 diet" (not thousands like "3,100"). */
-export const BARE_GAP_RE = /\s(\d{1,2})(?!\d)(?:,(?!\d)|(?=[\s.…]|$))/g;
+/** Bare gap in vertical Cambridge PDFs: "entirely 1 diet" (not thousands like "3,100" or years like "70 CE"). */
+export const BARE_GAP_RE = /\s([1-9]|[12]\d|3[0-9]|40)(?!\d)(?:,(?!\d)|(?=[\s.…]|$))/g;
 
 export function textHasBlankChars(text: string): boolean {
   return new RegExp(FILL_GAP_BLANK).test(text);
@@ -28,7 +28,7 @@ export function extractGapNumbersFromLine(line: string): number[] {
   let bm = bare.exec(line);
   while (bm !== null) {
     const n = Number.parseInt(bm[1] ?? "", 10);
-    if (!Number.isNaN(n)) nums.push(n);
+    if (!Number.isNaN(n) && n >= 1 && n <= 40) nums.push(n);
     bm = bare.exec(line);
   }
   if (nums.length > 0) return [...new Set(nums)];

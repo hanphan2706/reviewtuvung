@@ -1,4 +1,5 @@
-const BLANK_RE = /(\d+)\s*(?:£\s*)?(?:\.{3,}|…{2,})/g;
+const BLANK_RE =
+  /(\d+)\s*(?:£\s*)?(?:['\u2018\u2019"]?(?:\.{3,}|…{2,})(?:\.?['\u2018\u2019"]?)?|\.{3,}|…{2,})/g;
 const PART_HEADER_RE = /^PART\s+(\d+)\s*$/i;
 const QUESTIONS_RANGE_RE = /^Questions?\s+(\d+)\s*(?:and|&|–|-)\s*(\d+)\s*$/i;
 const SINGLE_QUESTION_RE = /^Questions?\s+(\d+)\s*$/i;
@@ -315,8 +316,16 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
           /^Label the map/i.test(instr) ||
           /^Write the correct (letter|answer)/i.test(instr) ||
           /^What\s/i.test(instr) ||
-          /^What is the students/i.test(instr)
+          /^What is the students/i.test(instr) ||
+          /^Where\s/i.test(instr) ||
+          /^Who\s/i.test(instr) ||
+          CHOOSE_FROM_BOX_RE.test(instr)
         ) {
+          instructionLines.push(instr);
+          j += 1;
+          continue;
+        }
+        if (CHOOSE_FROM_BOX_RE.test(peekLines(rawLines, j, 6).join(" "))) {
           instructionLines.push(instr);
           j += 1;
           continue;

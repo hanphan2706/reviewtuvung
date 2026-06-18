@@ -474,7 +474,8 @@ export function buildReadingExamPayload(
     allNums.push(...rendered.nums);
   }
 
-  const questionNums = [...new Set(allNums)].sort((a, b) => a - b);
+  const sectionNums = sections.flatMap((section) => section.questionNums);
+  const questionNums = [...new Set([...allNums, ...sectionNums])].sort((a, b) => a - b);
   const minQ = questionNums[0] ?? 1;
   const maxQ = questionNums[questionNums.length - 1] ?? minQ;
 

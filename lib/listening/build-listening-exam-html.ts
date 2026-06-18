@@ -8,7 +8,7 @@ import {
   type ListeningIeltsTestId,
 } from "@/lib/listening/ielts-test-catalog";
 import { loadListeningQnaTest } from "@/lib/listening/generate-ielts-listening-flow-content";
-import { getListeningQnaPart } from "@/lib/listening/parse-listening-qna";
+import { BLANK_RE, getListeningQnaPart } from "@/lib/listening/parse-listening-qna";
 import {
   collectBlankNumbersFromLines,
   inferNoteBodyLayout,
@@ -25,8 +25,6 @@ import type {
   ListeningQnaSection,
 } from "@/lib/listening/parse-listening-qna";
 import { listeningTranscriptPlainToSafeHtml } from "@/lib/listening/transcript-to-display-html";
-
-const BLANK_RE = /(\d+)\s*(?:£\s*)?(?:\.{3,}|…{2,})/g;
 
 export type ListeningExamPayload = {
   partId: string;
@@ -504,8 +502,8 @@ export function buildListeningFullTestExamPayload(
     Object.assign(answerKey, qnaPart.answers);
     audioUrls.push(meta.audioPublicPath);
 
-    const minQ = chunk.nums[0] ?? (part - 1) * 10 + 1;
-    const maxQ = chunk.nums[chunk.nums.length - 1] ?? part * 10;
+    const minQ = (part - 1) * 10 + 1;
+    const maxQ = part * 10;
     partQuestionRanges.push({ part, min: minQ, max: maxQ });
   }
 
