@@ -1,4 +1,4 @@
-import { FILL_GAP_BLANK, FILL_GAP_RE, hasFillGap } from "@/lib/reading/fill-gap-pattern";
+import { BARE_GAP_RE, FILL_GAP_BLANK, FILL_GAP_RE, hasFillGap } from "@/lib/reading/fill-gap-pattern";
 import {
   boldTfngInstructionSegment,
   formatExamInstructionHtml,
@@ -108,27 +108,41 @@ function formatPassageParagraphs(body: string): string {
     .join("\n");
 }
 
-function renderGapText(raw: string): { html: string; nums: number[] } {
+function gapFillInputHtml(n: number): string {
+  return `<span class="fi-stack"><span class="fi-num">(${n})</span><input class="fi" id="q${n}" autocomplete="off" oninput="markFill('q${n}',this.value)"></span>`;
+}
+
+function replaceGapPattern(
+  raw: string,
+  pattern: RegExp,
+  renderToken: (n: number) => string,
+): { html: string; nums: number[] } | null {
   const nums: number[] = [];
   const parts: string[] = [];
-  const re = new RegExp(FILL_GAP_RE.source, "g");
+  const re = new RegExp(pattern.source, "g");
   let last = 0;
   let m = re.exec(raw);
   while (m !== null) {
     const n = Number.parseInt(m[1] ?? "", 10);
     if (!Number.isNaN(n)) nums.push(n);
     parts.push(escHtml(raw.slice(last, m.index)));
-    parts.push(
-      `<span class="fi-stack"><span class="fi-num">(${n})</span><input class="fi" id="q${n}" autocomplete="off" oninput="markFill('q${n}',this.value)"></span>`,
-    );
+    parts.push(renderToken(n));
     last = m.index + m[0].length;
     m = re.exec(raw);
   }
-  if (nums.length > 0) {
-    parts.push(escHtml(raw.slice(last)));
-    return { html: parts.join(""), nums };
-  }
+  if (nums.length === 0) return null;
+  parts.push(escHtml(raw.slice(last)));
+  return { html: parts.join(""), nums };
+}
 
+function renderGapText(raw: string): { html: string; nums: number[] } {
+  const underscored = replaceGapPattern(raw, FILL_GAP_RE, gapFillInputHtml);
+  if (underscored) return underscored;
+
+  const bare = replaceGapPattern(raw, BARE_GAP_RE, gapFillInputHtml);
+  if (bare) return bare;
+
+  const nums: number[] = [];
   const lead = raw.match(/^(\d{1,2})\s+(.+)$/);
   if (lead?.[1] && lead[2]) {
     const n = Number.parseInt(lead[1], 10);
@@ -139,9 +153,8 @@ function renderGapText(raw: string): { html: string; nums: number[] } {
       nums.push(n);
       const before = escHtml(body.slice(0, bm.index));
       const after = escHtml(body.slice(bm.index + bm[0].length));
-      const input = `<span class="fi-stack"><span class="fi-num">(${n})</span><input class="fi" id="q${n}" autocomplete="off" oninput="markFill('q${n}',this.value)"></span>`;
       return {
-        html: `<span class="sentence-qnum">${n}</span>\u00a0\u00a0${before}${input}${after}`,
+        html: `<span class="sentence-qnum">${n}</span>\u00a0\u00a0${before}${gapFillInputHtml(n)}${after}`,
         nums,
       };
     }
@@ -150,24 +163,18 @@ function renderGapText(raw: string): { html: string; nums: number[] } {
   return { html: escHtml(raw), nums };
 }
 
+function gapPhraseDropHtml(n: number): string {
+  return `<span class="fi-stack phrase-gap-stack"><span class="fi-num">(${n})</span><span class="phrase-drop" id="q${n}" data-qid="q${n}"></span></span>`;
+}
+
 function renderGapPhraseBank(raw: string, _options: McqOption[]): { html: string; nums: number[] } {
-  const nums: number[] = [];
-  const parts: string[] = [];
-  const re = new RegExp(FILL_GAP_RE.source, "g");
-  let last = 0;
-  let m = re.exec(raw);
-  while (m !== null) {
-    const n = Number.parseInt(m[1] ?? "", 10);
-    if (!Number.isNaN(n)) nums.push(n);
-    parts.push(escHtml(raw.slice(last, m.index)));
-    parts.push(
-      `<span class="fi-stack phrase-gap-stack"><span class="fi-num">(${n})</span><span class="phrase-drop" id="q${n}" data-qid="q${n}"></span></span>`,
-    );
-    last = m.index + m[0].length;
-    m = re.exec(raw);
-  }
-  parts.push(escHtml(raw.slice(last)));
-  return { html: parts.join(""), nums };
+  const underscored = replaceGapPattern(raw, FILL_GAP_RE, gapPhraseDropHtml);
+  if (underscored) return underscored;
+
+  const bare = replaceGapPattern(raw, BARE_GAP_RE, gapPhraseDropHtml);
+  if (bare) return bare;
+
+  return { html: escHtml(raw), nums: [] };
 }
 
 function renderDragAnswerChip(letter: string, text: string, extraAttrs = ""): string {
@@ -362,17 +369,27 @@ function renderChooseTwo(section: ExamQuestionSection): { html: string; nums: nu
   const nums = section.questionNums;
   const optHtml = mcqOptionTags(section.options);
   const questionText = section.bodyLines.find((l) => /^Which TWO/i.test(l)) ?? section.bodyLines[0] ?? "";
+  const bank =
+    section.options.length > 0
+      ? `<div class="choose-two-bank people-bank"><ul class="choose-two-options people-bank-list">${section.options
+          .map(
+            (o) =>
+              `<li data-letter="${escHtml(o.letter)}"><span class="people-bank-letter">${escHtml(o.letter)}</span><span class="people-bank-name">${escHtml(o.text)}</span></li>`,
+          )
+          .join("")}</ul></div>`
+      : "";
 
   const selects = nums
     .map(
       (n) =>
-        `<div class="choose-two-pick"><span class="choose-two-label">${n}</span><select class="msel sel-compact choose-two-sel" onchange="selMatch('q${n}',this)"><option value="">—</option>${optHtml}</select></div>`,
+        `<div class="choose-two-pick"><span class="choose-two-label">${n}</span><select class="msel sel-compact choose-two-sel" id="sel-q${n}" onchange="selMatch('q${n}',this)"><option value="">—</option>${optHtml}</select></div>`,
     )
     .join("");
 
   return {
     html: `${renderSectionHeader(section)}<div class="choose-two-block">
       <p class="choose-two-qtext">${escHtml(questionText)}</p>
+      ${bank}
       <div class="choose-two-picks">${selects}</div>
     </div>`,
     nums,

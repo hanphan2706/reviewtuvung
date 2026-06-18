@@ -11,6 +11,10 @@
 export function normalizeExamAnswerValue(ans: string): string {
   const trimmed = ans.trim();
   const upper = trimmed.toUpperCase();
+  /** Section / MCQ letter (Cam 17 tab keys: `14. F`) — must not become FALSE. */
+  if (trimmed.length === 1 && /^[A-J]$/i.test(trimmed)) {
+    return upper;
+  }
   if (upper === "T") return "TRUE";
   if (upper === "F") return "FALSE";
   if (upper === "NG" || upper === "N0") return "NOT GIVEN";

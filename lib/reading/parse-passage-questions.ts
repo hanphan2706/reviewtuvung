@@ -77,12 +77,13 @@ function soloOptionLetter(line: string): string | null {
 }
 
 function detectSectionKind(chunk: string): ExamSectionKind {
-  if (/Choose\s+TWO\s+letters/i.test(chunk)) return "choose-two";
+  if (/Choose\s+TWO\s+(letters|correct\s+answers)/i.test(chunk)) return "choose-two";
   if (/Match each statement with the correct (person|expert)/i.test(chunk)) return "people-match";
   if (/Which (paragraph|section) contains the following information/i.test(chunk)) return "paragraph-match";
   if (/Complete the summary below/i.test(chunk)) return "summary-fill";
   if (/Complete the summary using/i.test(chunk)) return "summary-fill";
   if (/Complete the notes below/i.test(chunk)) return "note-fill";
+  if (/Choose the correct answer/i.test(chunk)) return "mcq-single";
   if (/Choose the correct letter,\s*A,\s*B,\s*C or D/i.test(chunk)) return "mcq-single";
   if (/Choose the correct answer,\s*A,\s*B,\s*C or D/i.test(chunk)) return "mcq-single";
   if (
@@ -101,6 +102,12 @@ function isSkippableLine(line: string): boolean {
 
 function parseOptionLine(line: string): McqOption | null {
   const m = line.match(/^([A-H])\s+(.+)$/i);
+  if (!m?.[1] || !m[2]) return null;
+  return { letter: m[1].toUpperCase(), text: m[2].trim() };
+}
+
+function parsePhraseBankOption(line: string): McqOption | null {
+  const m = line.match(/^([A-J])\.\s*(.+)$/i);
   if (!m?.[1] || !m[2]) return null;
   return { letter: m[1].toUpperCase(), text: m[2].trim() };
 }
@@ -264,9 +271,15 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
         }
       }
 
-      const phraseOpt =
-        kind === "summary-fill" || kind === "choose-two" ? parseOptionLine(line) : null;
-      if (phraseOpt && kind === "summary-fill") {
+      const phraseBankOpt = kind === "summary-fill" ? parsePhraseBankOption(line) : null;
+      if (phraseBankOpt) {
+        options.push(phraseBankOpt);
+        phase = "opts";
+        continue;
+      }
+
+      const phraseOpt = kind === "choose-two" ? parseOptionLine(line) : null;
+      if (phraseOpt && kind === "choose-two") {
         options.push(phraseOpt);
         continue;
       }
@@ -303,8 +316,32 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
 
       if (kind === "choose-two") {
         if (/^Which TWO/i.test(line)) {
-          bodyLines.push(line);
+          if (!bodyLines.some((l) => /^Which TWO/i.test(l))) {
+            bodyLines.push(line);
+          }
           phase = "body";
+          continue;
+        }
+        if (/^Choose\s+TWO/i.test(line)) {
+          if (phase === "instr") instructionLines.push(line);
+          continue;
+        }
+        const slotNum = soloQuestionNum(line);
+        if (line === "-" || (slotNum !== null && titleNums.includes(slotNum))) {
+          continue;
+        }
+        const sharedOpt = parseOptionLine(line);
+        if (sharedOpt) {
+          options.push(sharedOpt);
+          phase = "opts";
+          continue;
+        }
+        if ((phase === "body" || phase === "opts") && line.length >= 12 && !isSkippableLine(line)) {
+          const letter = String.fromCharCode(65 + options.length);
+          if (options.length < 8) {
+            options.push({ letter, text: line });
+            phase = "opts";
+          }
           continue;
         }
         if (phase === "instr") instructionLines.push(line);
