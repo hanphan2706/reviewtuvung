@@ -38,3 +38,7 @@ export function isAllowedListeningAudioFile(fileName: string): boolean {
     REAL_TEST_AUDIO_FILE.test(fileName)
   );
 }
+
+export function listeningMapImageApiPath(fileName: string): string {
+  return `/api/listening/image?file=${encodeURIComponent(fileName)}`;
+}

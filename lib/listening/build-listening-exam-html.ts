@@ -8,6 +8,7 @@ import {
   type ListeningIeltsTestId,
 } from "@/lib/listening/ielts-test-catalog";
 import { loadListeningQnaTest } from "@/lib/listening/generate-ielts-listening-flow-content";
+import { enrichListeningQnaPartMapImages } from "@/lib/listening/listening-map-image";
 import { BLANK_RE, getListeningQnaPart } from "@/lib/listening/parse-listening-qna";
 import {
   collectBlankNumbersFromLines,
@@ -289,17 +290,21 @@ function renderMapSection(section: ListeningQnaMapSection, partNumber: number): 
   const maxQ = nums[nums.length - 1] ?? partNumber * 10;
   const letters = letterRangeToLetters(section.letterRange);
   const letterOpts = renderLetterSelectOptions(letters);
-  const img = section.imageUrl
-    ? `<div class="map-img-wrap"><img src="${escHtml(section.imageUrl)}" alt="Map for questions ${minQ}–${maxQ}" class="map-img"></div>`
-    : "";
   const rows = section.items
     .map((item) => {
       const qid = `q${item.number}`;
       return `<div class="mrow mrow-inline"><div class="mrow-top"><div class="mqnum">${item.number}</div><div class="mtext">${escHtml(item.label)}</div><select class="msel" id="sel-${qid}" onchange="selMatch('${qid}',this)"><option value="">—</option>${letterOpts}</select></div></div>`;
     })
     .join("");
+  const questionsBlock = `<div class="map-layout-questions">${rows}</div>`;
+  const mapBlock = section.imageUrl
+    ? `<div class="map-layout-map"><div class="map-img-wrap"><img src="${escHtml(section.imageUrl)}" alt="Map for questions ${minQ}–${maxQ}" class="map-img"></div></div>`
+    : "";
+  const layout = section.imageUrl
+    ? `<div class="map-layout">${mapBlock}${questionsBlock}</div>`
+    : questionsBlock;
   return {
-    html: `${renderSectionHeader(partNumber, minQ, maxQ, section.instructionLines)}${img}${rows}`,
+    html: `${renderSectionHeader(partNumber, minQ, maxQ, section.instructionLines)}${layout}`,
     nums,
   };
 }
@@ -383,13 +388,18 @@ export function buildListeningExamPayload(
   qnaPart: ListeningQnaPart,
   options: { back: string; pilotLabel: string },
 ): ListeningExamPayload | null {
-  if (qnaPart.sections.length === 0) return null;
+  const enrichedPart = enrichListeningQnaPartMapImages(qnaPart, {
+    examSlug: meta.examSlug,
+    test: meta.test,
+    part: meta.part,
+  });
+  if (enrichedPart.sections.length === 0) return null;
 
   const chunks: string[] = [];
   const questionNums: number[] = [];
 
-  for (const section of qnaPart.sections) {
-    const rendered = renderSection(section, qnaPart.partNumber);
+  for (const section of enrichedPart.sections) {
+    const rendered = renderSection(section, enrichedPart.partNumber);
     if (rendered.html) chunks.push(rendered.html);
     questionNums.push(...rendered.nums);
   }
@@ -408,7 +418,7 @@ ${chunks.join('<div style="margin-top:28px"></div>')}
 
   return {
     partId: meta.id,
-    partNumber: qnaPart.partNumber,
+    partNumber: enrichedPart.partNumber,
     title: meta.title,
     pilotLabel: options.pilotLabel,
     questionsHtml,
@@ -417,7 +427,7 @@ ${chunks.join('<div style="margin-top:28px"></div>')}
     audioUrl: meta.audioPublicPath,
     transcriptHtml,
     hasTranscript: transcriptHtml.length > 0,
-    answerKey: qnaPart.answers,
+    answerKey: enrichedPart.answers,
     hasAnswerKey: Object.keys(qnaPart.answers).length > 0,
     back: options.back,
     skipLogin: true,
@@ -453,13 +463,18 @@ function buildListeningPartQuestionsChunk(
   meta: ListeningPartMeta,
   qnaPart: ListeningQnaPart,
 ): { html: string; nums: number[] } | null {
-  if (qnaPart.sections.length === 0) return null;
+  const enrichedPart = enrichListeningQnaPartMapImages(qnaPart, {
+    examSlug: meta.examSlug,
+    test: meta.test,
+    part: meta.part,
+  });
+  if (enrichedPart.sections.length === 0) return null;
 
   const chunks: string[] = [];
   const questionNums: number[] = [];
 
-  for (const section of qnaPart.sections) {
-    const rendered = renderSection(section, qnaPart.partNumber);
+  for (const section of enrichedPart.sections) {
+    const rendered = renderSection(section, enrichedPart.partNumber);
     if (rendered.html) chunks.push(rendered.html);
     questionNums.push(...rendered.nums);
   }

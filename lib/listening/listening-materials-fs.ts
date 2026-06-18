@@ -34,3 +34,5 @@ export function resolveListeningTranscriptPath(fileName: string): string | null 
   }
   return null;
 }
+
+export { resolveListeningMapImagePath } from "@/lib/listening/listening-map-image";

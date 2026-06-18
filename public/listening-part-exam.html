@@ -197,8 +197,49 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 .mtext{font-size:13px;line-height:1.6;min-width:0;color:var(--exam-chrome-text)}
 .msel{border:1.5px solid var(--exam-chrome-border);border-radius:7px;padding:7px 10px;font-size:13px;background:var(--exam-chrome-bg);cursor:pointer;width:100%;min-width:0;box-sizing:border-box;color:var(--exam-chrome-text)}
 .msel.done{border-color:#34a853;background:#f4fbf5}
-.map-img-wrap{margin:14px 0 18px;text-align:center}
-.map-img{max-width:100%;height:auto;border:1px solid var(--exam-chrome-border);border-radius:8px;background:var(--exam-chrome-bg)}
+.map-layout{
+  display:grid;
+  grid-template-columns:minmax(240px,420px) minmax(220px,1fr);
+  gap:16px 32px;
+  align-items:center;
+  margin-top:6px;
+}
+.map-layout-map{
+  position:sticky;
+  top:10px;
+  z-index:1;
+  align-self:start;
+  min-width:0;
+}
+.map-layout-questions{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  justify-content:center;
+  min-width:0;
+  min-height:min(calc(100dvh - 260px),380px);
+  padding:12px 0 8px;
+  box-sizing:border-box;
+}
+.map-layout-questions .mrow-top{max-width:none}
+.map-img-wrap{margin:0;display:flex;justify-content:center;align-items:flex-start}
+.map-img{
+  display:block;
+  width:auto;
+  max-width:100%;
+  max-height:min(calc(100dvh - 260px),380px);
+  height:auto;
+  object-fit:contain;
+  border:1px solid var(--exam-chrome-border);
+  border-radius:8px;
+  background:var(--exam-chrome-bg);
+}
+@media (max-width:768px){
+  .map-layout{grid-template-columns:1fr;align-items:start}
+  .map-layout-map{position:static}
+  .map-layout-questions{min-height:0;padding:8px 0 0}
+  .map-img{max-height:min(52vh,320px);margin:0 auto}
+}
 .people-bank{margin-bottom:16px;padding:14px 16px;background:var(--exam-chrome-bg);border:1.5px solid var(--exam-chrome-border);border-radius:9px}
 .people-bank-title{font-size:13px;font-weight:800;margin-bottom:10px;color:var(--exam-chrome-text)}
 .people-bank-list{list-style:none;display:grid;gap:6px}

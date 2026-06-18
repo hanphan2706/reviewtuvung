@@ -35,6 +35,10 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/*": [
       "./listening materials/cam 19 test * qna.txt",
+      "./listening materials/cam * test * part * map.jpg",
+      "./listening materials/cam * test * part * map.jpeg",
+      "./listening materials/cam * test * part * map.png",
+      "./listening materials/cam * test * part * map.webp",
       "./listening materials/transcript/cam19-test*.txt",
       "./listening materials/transcript/tactics-basic-*.txt",
       "./listening materials/sync/cam19-*.sync.json",
