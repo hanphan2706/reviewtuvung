@@ -123,6 +123,11 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "encrypted-tbn1.gstatic.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
         hostname: "prehistoric-britain.co.uk",
         pathname: "/**",
       },

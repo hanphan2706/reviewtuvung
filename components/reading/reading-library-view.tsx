@@ -72,6 +72,7 @@ function ReadingLibraryViewInner({
     } else {
       params.set("sap-xep", next);
     }
+    params.delete("trang");
     const queryString = params.toString();
     router.replace(queryString ? `${pathname}?${queryString}` : pathname, { scroll: false });
   };

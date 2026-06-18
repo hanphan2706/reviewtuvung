@@ -6,11 +6,15 @@
 import fs from "node:fs";
 import path from "node:path";
 import { splitBodyParagraphs } from "../lib/reading/format-paragraphs";
-import { CAM18_TEST1, CAM18_TEST2, CAM18_TEST3, CAM18_TEST4, CAM19_TEST1, CAM19_TEST2, CAM19_TEST3, CAM19_TEST4 } from "../lib/reading/cambridge-18-19-articles";
+import { CAM17_TEST1, CAM17_TEST2, CAM17_TEST3, CAM17_TEST4, CAM18_TEST1, CAM18_TEST2, CAM18_TEST3, CAM18_TEST4, CAM19_TEST1, CAM19_TEST2, CAM19_TEST3, CAM19_TEST4 } from "../lib/reading/cambridge-18-19-articles";
 import { READING_RAW_FILES } from "../lib/reading/raw-manifest";
 import { splitReadingPassages } from "../lib/reading/split-passages";
 
 const ARTICLES = [
+  ...CAM17_TEST4,
+  ...CAM17_TEST3,
+  ...CAM17_TEST2,
+  ...CAM17_TEST1,
   ...CAM19_TEST4,
   ...CAM19_TEST3,
   ...CAM19_TEST2,

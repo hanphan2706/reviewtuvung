@@ -51,6 +51,13 @@ export function parseReadingLibrarySort(raw: string | null | undefined): Reading
   return READING_LIBRARY_SORT_DEFAULT;
 }
 
+export function parseReadingIeltsLibrarySort(raw: string | null | undefined): ReadingIeltsLibrarySort {
+  if (raw && (READING_IELTS_LIBRARY_SORT_VALUES as readonly string[]).includes(raw)) {
+    return raw as ReadingIeltsLibrarySort;
+  }
+  return "newest";
+}
+
 export function readingDifficultyRank(difficulty: ReadingDifficulty): number {
   return READING_DIFFICULTY_ORDER.indexOf(difficulty);
 }

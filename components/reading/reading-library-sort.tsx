@@ -5,18 +5,27 @@ import { studyHubLibraryToolbarControlClass } from "@/components/study-module/st
 import {
   READING_IELTS_LIBRARY_SORT_OPTIONS,
   READING_LIBRARY_SORT_OPTIONS,
+  type ReadingIeltsLibrarySort,
   type ReadingLibrarySort,
 } from "@/lib/reading/library-sort";
 
 type ReadingLibrarySortScope = "articles" | "ielts";
 
-type ReadingLibrarySortProps = {
-  scope?: ReadingLibrarySortScope;
-  value: ReadingLibrarySort;
-  onChange: (value: ReadingLibrarySort) => void;
-  disabled?: boolean;
-  className?: string;
-};
+type ReadingLibrarySortProps =
+  | {
+      scope?: "articles";
+      value: ReadingLibrarySort;
+      onChange: (value: ReadingLibrarySort) => void;
+      disabled?: boolean;
+      className?: string;
+    }
+  | {
+      scope: "ielts";
+      value: ReadingIeltsLibrarySort;
+      onChange: (value: ReadingIeltsLibrarySort) => void;
+      disabled?: boolean;
+      className?: string;
+    };
 
 function SortLinesIcon({ className }: { className?: string }) {
   return (
@@ -53,7 +62,11 @@ export function ReadingLibrarySortSelect({
         <select
           value={value}
           disabled={disabled}
-          onChange={(e) => onChange(e.target.value as ReadingLibrarySort)}
+          onChange={(e) => {
+            (onChange as (value: ReadingLibrarySort | ReadingIeltsLibrarySort) => void)(
+              e.target.value as ReadingLibrarySort | ReadingIeltsLibrarySort,
+            );
+          }}
           className="w-full cursor-pointer appearance-none rounded-lg border border-[#4a4a4a] bg-white py-1.5 pr-7 pl-8 text-xs font-bold text-[#4a4a4a] transition hover:bg-[#fafafa] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4a4a4a] disabled:cursor-not-allowed disabled:opacity-60"
           aria-label="Sắp xếp bài đọc"
         >

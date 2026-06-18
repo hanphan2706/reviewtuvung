@@ -61,10 +61,25 @@ function parseQuestionNumsFromTitle(title: string): number[] {
   return [];
 }
 
+function isTfngLabelLine(line: string): boolean {
+  return /^(TRUE|FALSE|NOT\s+GIVEN|YES|NO)$/i.test(line.trim());
+}
+
+function soloQuestionNum(line: string): number | null {
+  const m = line.match(/^(\d{1,2})$/);
+  if (!m?.[1]) return null;
+  return Number.parseInt(m[1], 10);
+}
+
+function soloOptionLetter(line: string): string | null {
+  const m = line.match(/^([A-H])$/i);
+  return m?.[1]?.toUpperCase() ?? null;
+}
+
 function detectSectionKind(chunk: string): ExamSectionKind {
   if (/Choose\s+TWO\s+letters/i.test(chunk)) return "choose-two";
   if (/Match each statement with the correct (person|expert)/i.test(chunk)) return "people-match";
-  if (/Which paragraph contains the following information/i.test(chunk)) return "paragraph-match";
+  if (/Which (paragraph|section) contains the following information/i.test(chunk)) return "paragraph-match";
   if (/Complete the summary below/i.test(chunk)) return "summary-fill";
   if (/Complete the summary using/i.test(chunk)) return "summary-fill";
   if (/Complete the notes below/i.test(chunk)) return "note-fill";
@@ -129,7 +144,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
     const mcqQuestions: McqQuestion[] = [];
     let currentMcq: McqQuestion | null = null;
 
-    let phase: "instr" | "body" | "stmt" | "opts" = "instr";
+    let phase: "instr" | "body" | "stmt" | "opts" | "skip-tfng" = "instr";
 
     if (kind === "people-match") {
       for (let i = 1; i < lines.length; i++) {
@@ -170,6 +185,83 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
       if (/^NB\b/i.test(line)) {
         instructionLines.push(line);
         continue;
+      }
+
+      if (phase === "skip-tfng") {
+        if (soloQuestionNum(line) !== null || /^Questions/i.test(line)) {
+          phase = "instr";
+        } else if (isTfngLabelLine(line) || line === "-") {
+          continue;
+        } else {
+          phase = "instr";
+        }
+      }
+
+      const qNum = soloQuestionNum(line);
+      if (qNum !== null && kind === "paragraph-match") {
+        const stmt = (lines[i + 1] ?? "").trim();
+        if (
+          stmt &&
+          soloQuestionNum(stmt) === null &&
+          !parseOptionLine(stmt) &&
+          !/^Questions/i.test(stmt)
+        ) {
+          statementLines.push(`${qNum} ${stmt}`);
+          i += 1;
+          continue;
+        }
+      }
+
+      if (qNum !== null && kind === "tfng") {
+        let j = i + 1;
+        while (j < lines.length && (isTfngLabelLine(lines[j] ?? "") || (lines[j] ?? "") === "-")) {
+          j += 1;
+        }
+        const stmt = (lines[j] ?? "").trim();
+        if (
+          stmt &&
+          !isTfngLabelLine(stmt) &&
+          soloQuestionNum(stmt) === null &&
+          !/^Questions/i.test(stmt)
+        ) {
+          statementLines.push(`${qNum} ${stmt}`);
+          i = j;
+          phase = "skip-tfng";
+          continue;
+        }
+      }
+
+      if (qNum !== null && kind === "mcq-single") {
+        if (currentMcq) mcqQuestions.push(currentMcq);
+        const textParts: string[] = [];
+        let j = i + 1;
+        while (j < lines.length) {
+          const next = lines[j] ?? "";
+          if (soloQuestionNum(next) !== null) break;
+          if (/^Questions/i.test(next)) break;
+          if (soloOptionLetter(next)) break;
+          textParts.push(next);
+          j += 1;
+        }
+        currentMcq = { num: qNum, text: textParts.join(" ").trim(), options: [] };
+        i = j - 1;
+        phase = "body";
+        continue;
+      }
+
+      const optLetter = soloOptionLetter(line);
+      if (optLetter && currentMcq && kind === "mcq-single") {
+        const optText = (lines[i + 1] ?? "").trim();
+        if (
+          optText &&
+          soloOptionLetter(optText) === null &&
+          soloQuestionNum(optText) === null &&
+          !/^Questions/i.test(optText)
+        ) {
+          currentMcq.options.push({ letter: optLetter, text: optText });
+          i += 1;
+          continue;
+        }
       }
 
       const phraseOpt =
@@ -232,11 +324,11 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
       }
 
       if (kind === "note-fill") {
-        if (/^Complete the notes|^Choose\s+(ONE|NO MORE|TWO)/i.test(line)) {
+        if (/^Complete the (notes|sentences)|^Choose\s+(ONE|NO MORE|TWO)/i.test(line)) {
           instructionLines.push(line);
           continue;
         }
-        if (/^●|^○/.test(line) || hasFillGap(line)) {
+        if (/^[•●○]|^●|^○/.test(line) || hasFillGap(line)) {
           bodyLines.push(line);
           phase = "body";
           continue;

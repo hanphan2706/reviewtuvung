@@ -1,14 +1,14 @@
-import {
-  parseReadingLibrarySort,
-  type ReadingLibrarySort,
-} from "@/lib/reading/library-sort";
+import type { ReadingIeltsLibrarySort } from "@/lib/reading/library-sort";
 import type { ReadingIeltsTest } from "@/lib/reading/ielts-test-catalog";
 
-export { parseReadingLibrarySort, type ReadingLibrarySort };
+export {
+  parseReadingIeltsLibrarySort,
+  type ReadingIeltsLibrarySort,
+} from "@/lib/reading/library-sort";
 
 export function sortReadingIeltsTests(
   tests: readonly ReadingIeltsTest[],
-  sort: ReadingLibrarySort,
+  sort: ReadingIeltsLibrarySort,
 ): ReadingIeltsTest[] {
   const list = [...tests];
   list.sort((a, b) => {

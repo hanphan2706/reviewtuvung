@@ -9,9 +9,18 @@ export type ReadingIeltsTest = {
   coverImageUrl: string;
   /** Tuỳ chỉnh crop ảnh bìa trên thẻ Luyện đề (vd. `50% 42%`). */
   coverImageObjectPosition?: string;
+  /** Phóng to ảnh nguồn có viền trắng (vd. bìa Fahasa ISBN). */
+  coverImageScale?: number;
   /** Thứ tự catalog — mới hơn = chỉ số lớn hơn. */
   catalogOrder: number;
 };
+
+export const CAMBRIDGE_IELTS_17_COVER_URL = "/cambridge-ielts-17-academic.jpg";
+
+/** Bìa local portrait 915px — cùng kiểu full-bleed như Fahasa Cam 18–20. */
+const CAMBRIDGE_IELTS_17_COVER_STYLE = {
+  coverImageObjectPosition: "40% 39.5%",
+} as const;
 
 export const CAMBRIDGE_IELTS_19_COVER_URL =
   "https://cdn1.fahasa.com/media/catalog/product/b/i/bia1_ielts_19aca.jpg";
@@ -31,36 +40,40 @@ export function readingIeltsTestExamHref(pilotId: ReadingPilotId): string {
 
 export const READING_CAMBRIDGE_TESTS: readonly ReadingIeltsTest[] = [
   {
-    pilotId: "cam19-test4",
-    label: "Cambridge 19 · Test 4",
-    bookTitle: "Cambridge IELTS 19 Academic",
+    pilotId: "cam17-test4",
+    label: "Cambridge 17 · Test 4",
+    bookTitle: "Cambridge IELTS 17 Academic",
     testNumber: 4,
-    coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
-    catalogOrder: 11,
+    coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
+    ...CAMBRIDGE_IELTS_17_COVER_STYLE,
+    catalogOrder: 15,
   },
   {
-    pilotId: "cam19-test3",
-    label: "Cambridge 19 · Test 3",
-    bookTitle: "Cambridge IELTS 19 Academic",
+    pilotId: "cam17-test3",
+    label: "Cambridge 17 · Test 3",
+    bookTitle: "Cambridge IELTS 17 Academic",
     testNumber: 3,
-    coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
-    catalogOrder: 10,
+    coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
+    ...CAMBRIDGE_IELTS_17_COVER_STYLE,
+    catalogOrder: 14,
   },
   {
-    pilotId: "cam19-test2",
-    label: "Cambridge 19 · Test 2",
-    bookTitle: "Cambridge IELTS 19 Academic",
+    pilotId: "cam17-test2",
+    label: "Cambridge 17 · Test 2",
+    bookTitle: "Cambridge IELTS 17 Academic",
     testNumber: 2,
-    coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
-    catalogOrder: 9,
+    coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
+    ...CAMBRIDGE_IELTS_17_COVER_STYLE,
+    catalogOrder: 13,
   },
   {
-    pilotId: "cam19-test1",
-    label: "Cambridge 19 · Test 1",
-    bookTitle: "Cambridge IELTS 19 Academic",
+    pilotId: "cam17-test1",
+    label: "Cambridge 17 · Test 1",
+    bookTitle: "Cambridge IELTS 17 Academic",
     testNumber: 1,
-    coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
-    catalogOrder: 8,
+    coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
+    ...CAMBRIDGE_IELTS_17_COVER_STYLE,
+    catalogOrder: 12,
   },
   {
     pilotId: "cam18-test4",
@@ -69,7 +82,7 @@ export const READING_CAMBRIDGE_TESTS: readonly ReadingIeltsTest[] = [
     testNumber: 4,
     coverImageUrl: CAMBRIDGE_IELTS_18_COVER_URL,
     coverImageObjectPosition: "50% 42%",
-    catalogOrder: 7,
+    catalogOrder: 11,
   },
   {
     pilotId: "cam18-test3",
@@ -78,7 +91,7 @@ export const READING_CAMBRIDGE_TESTS: readonly ReadingIeltsTest[] = [
     testNumber: 3,
     coverImageUrl: CAMBRIDGE_IELTS_18_COVER_URL,
     coverImageObjectPosition: "50% 42%",
-    catalogOrder: 6,
+    catalogOrder: 10,
   },
   {
     pilotId: "cam18-test2",
@@ -87,7 +100,7 @@ export const READING_CAMBRIDGE_TESTS: readonly ReadingIeltsTest[] = [
     testNumber: 2,
     coverImageUrl: CAMBRIDGE_IELTS_18_COVER_URL,
     coverImageObjectPosition: "50% 42%",
-    catalogOrder: 5,
+    catalogOrder: 9,
   },
   {
     pilotId: "cam18-test1",
@@ -96,6 +109,38 @@ export const READING_CAMBRIDGE_TESTS: readonly ReadingIeltsTest[] = [
     testNumber: 1,
     coverImageUrl: CAMBRIDGE_IELTS_18_COVER_URL,
     coverImageObjectPosition: "50% 42%",
+    catalogOrder: 8,
+  },
+  {
+    pilotId: "cam19-test4",
+    label: "Cambridge 19 · Test 4",
+    bookTitle: "Cambridge IELTS 19 Academic",
+    testNumber: 4,
+    coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
+    catalogOrder: 7,
+  },
+  {
+    pilotId: "cam19-test3",
+    label: "Cambridge 19 · Test 3",
+    bookTitle: "Cambridge IELTS 19 Academic",
+    testNumber: 3,
+    coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
+    catalogOrder: 6,
+  },
+  {
+    pilotId: "cam19-test2",
+    label: "Cambridge 19 · Test 2",
+    bookTitle: "Cambridge IELTS 19 Academic",
+    testNumber: 2,
+    coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
+    catalogOrder: 5,
+  },
+  {
+    pilotId: "cam19-test1",
+    label: "Cambridge 19 · Test 1",
+    bookTitle: "Cambridge IELTS 19 Academic",
+    testNumber: 1,
+    coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
     catalogOrder: 4,
   },
   {

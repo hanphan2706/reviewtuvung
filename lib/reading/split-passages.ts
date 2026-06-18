@@ -133,7 +133,7 @@ export function splitReadingPassages(raw: string): ReadingPassageBlock[] {
     const mergedAnswers = { ...globalAnswerKey, ...fromSegment };
     const answerKey = pickAnswerKeyForQuestionNums(mergedAnswers, qNums);
 
-    const rawBody = bodyLines.join("\n").trim();
+    const rawBody = bodyLines.join("\n").trim().replace(/\u00a0/g, " ");
     const explicitDeck = parsePassageDeckText(deckLines.join("\n"));
     const cambridge = explicitDeck
       ? { deck: explicitDeck, body: rawBody }

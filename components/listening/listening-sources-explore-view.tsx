@@ -56,6 +56,7 @@ function ListeningSourcesExploreViewInner({
     } else {
       params.set("sap-xep", next);
     }
+    params.delete("trang");
     const q = params.toString();
     router.replace(q ? `${pathname}?${q}` : pathname, { scroll: false });
   };

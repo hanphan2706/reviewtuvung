@@ -15,22 +15,22 @@ import {
 } from "@/components/study-module/study-hub-shell";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 import {
-  READING_CAMBRIDGE_TESTS,
-  readingIeltsTestExamHref,
-  type ReadingIeltsTest,
-} from "@/lib/reading/ielts-test-catalog";
-import {
   filterRealExams,
   READING_REAL_EXAMS,
   readingRealExamHref,
   type RealExamListing,
 } from "@/lib/exam/real-exam-catalog";
 import {
-  parseReadingLibrarySort,
-  sortReadingIeltsTests,
-  type ReadingLibrarySort,
-} from "@/lib/reading/ielts-test-sort";
+  READING_CAMBRIDGE_TESTS,
+  readingIeltsTestExamHref,
+  type ReadingIeltsTest,
+} from "@/lib/reading/ielts-test-catalog";
+import {
+  parseReadingIeltsLibrarySort,
+  type ReadingIeltsLibrarySort,
+} from "@/lib/reading/library-sort";
 import { useStudyHubLibraryGrid } from "@/hooks/use-study-hub-library-grid";
+import { buildReadingIeltsExamGridItems } from "@/lib/study-hub/ielts-exam-grid";
 import { filterReadingIeltsTests } from "@/lib/study-hub/library-search";
 
 type ReadingIeltsTestViewProps = {
@@ -51,33 +51,25 @@ function ReadingIeltsTestViewInner({
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
-  const sort = parseReadingLibrarySort(searchParams.get("sap-xep"));
+  const sort = parseReadingIeltsLibrarySort(searchParams.get("sap-xep"));
   const [query, setQuery] = useState("");
 
-  const filteredRealExams = useMemo(
-    () => filterRealExams(READING_REAL_EXAMS, query),
-    [query],
-  );
+  const gridItems = useMemo(() => {
+    const filteredRealExams = filterRealExams(READING_REAL_EXAMS, query);
+    const filteredTests = filterReadingIeltsTests(READING_CAMBRIDGE_TESTS, query);
+    return buildReadingIeltsExamGridItems(filteredRealExams, filteredTests, sort);
+  }, [query, sort]);
 
-  const sortedTests = useMemo(
-    () => sortReadingIeltsTests(READING_CAMBRIDGE_TESTS, sort),
-    [sort],
-  );
+  const { pageItems, totalPages } = useStudyHubLibraryGrid(gridItems);
 
-  const filteredTests = useMemo(
-    () => filterReadingIeltsTests(sortedTests, query),
-    [sortedTests, query],
-  );
-
-  const { pageItems, totalPages } = useStudyHubLibraryGrid(filteredTests);
-
-  const setSort = (next: ReadingLibrarySort) => {
+  const setSort = (next: ReadingIeltsLibrarySort) => {
     const params = new URLSearchParams(searchParams.toString());
     if (next === "newest") {
       params.delete("sap-xep");
     } else {
       params.set("sap-xep", next);
     }
+    params.delete("trang");
     const queryString = params.toString();
     router.replace(queryString ? `${pathname}?${queryString}` : pathname, { scroll: false });
   };
@@ -132,8 +124,7 @@ function ReadingIeltsTestViewInner({
           }
         />
         <ReadingIeltsTestGrid
-          realExams={filteredRealExams}
-          tests={pageItems}
+          items={pageItems}
           onStartRealExam={startRealExam}
           onStartTest={startTest}
           emptyMessage={query.trim() ? "Không tìm thấy đề IELTS phù hợp." : "Chưa có đề IELTS trong mục này."}

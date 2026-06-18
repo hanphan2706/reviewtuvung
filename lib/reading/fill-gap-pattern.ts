@@ -20,6 +20,13 @@ export function extractGapNumbersFromLine(line: string): number[] {
   }
   if (nums.length > 0) return nums;
 
+  /** Bare number gap (một số bản PDF Cambridge): "stays 23 even", "mother's 3". */
+  for (const m of line.matchAll(/\s(\d{1,2})(?=[\s,.]|$)/g)) {
+    const n = Number.parseInt(m[1] ?? "", 10);
+    if (!Number.isNaN(n) && (m.index ?? 0) > 0) nums.push(n);
+  }
+  if (nums.length > 0) return [...new Set(nums)];
+
   const lead = line.match(/^(\d{1,2})\s+(.+)$/);
   if (lead?.[1] && lead[2] && textHasBlankChars(lead[2])) {
     const n = Number.parseInt(lead[1], 10);

@@ -15,23 +15,23 @@ import {
 } from "@/components/study-module/study-hub-shell";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 import {
-  LISTENING_CAMBRIDGE_TESTS,
-  listeningIeltsTestExamHref,
-  type ListeningIeltsTest,
-} from "@/lib/listening/ielts-test-catalog";
-import {
   filterRealExams,
   LISTENING_REAL_EXAMS,
   listeningRealExamHref,
   type RealExamListing,
 } from "@/lib/exam/real-exam-catalog";
-import { useStudyHubLibraryGrid } from "@/hooks/use-study-hub-library-grid";
-import { filterReadingIeltsTests } from "@/lib/study-hub/library-search";
 import {
-  parseReadingLibrarySort,
-  type ReadingLibrarySort,
+  LISTENING_CAMBRIDGE_TESTS,
+  listeningIeltsTestExamHref,
+  type ListeningIeltsTest,
+} from "@/lib/listening/ielts-test-catalog";
+import {
+  parseReadingIeltsLibrarySort,
+  type ReadingIeltsLibrarySort,
 } from "@/lib/reading/library-sort";
-import { sortReadingIeltsTests } from "@/lib/reading/ielts-test-sort";
+import { useStudyHubLibraryGrid } from "@/hooks/use-study-hub-library-grid";
+import { buildListeningIeltsExamGridItems } from "@/lib/study-hub/ielts-exam-grid";
+import { filterReadingIeltsTests } from "@/lib/study-hub/library-search";
 
 type ListeningIeltsTestViewProps = {
   pageTitle: string;
@@ -51,51 +51,35 @@ function ListeningIeltsTestViewInner({
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
-  const sort = parseReadingLibrarySort(searchParams.get("sap-xep"));
+  const sort = parseReadingIeltsLibrarySort(searchParams.get("sap-xep"));
   const [query, setQuery] = useState("");
 
-  const filteredRealExams = useMemo(
-    () => filterRealExams(LISTENING_REAL_EXAMS, query),
-    [query],
-  );
+  const gridItems = useMemo(() => {
+    const filteredRealExams = filterRealExams(LISTENING_REAL_EXAMS, query);
+    const filteredTests = filterReadingIeltsTests(
+      LISTENING_CAMBRIDGE_TESTS.map((test) => ({
+        pilotId: test.testId,
+        label: test.label,
+        bookTitle: test.bookTitle,
+        testNumber: test.testNumber,
+        coverImageUrl: test.coverImageUrl,
+        catalogOrder: test.catalogOrder,
+      })),
+      query,
+    ).map((item) => LISTENING_CAMBRIDGE_TESTS.find((test) => test.testId === item.pilotId)!);
+    return buildListeningIeltsExamGridItems(filteredRealExams, filteredTests, sort);
+  }, [query, sort]);
 
-  const sortedTests = useMemo(() => {
-    const asReading = LISTENING_CAMBRIDGE_TESTS.map((test) => ({
-      pilotId: test.testId,
-      label: test.label,
-      bookTitle: test.bookTitle,
-      testNumber: test.testNumber,
-      coverImageUrl: test.coverImageUrl,
-      catalogOrder: test.catalogOrder,
-    }));
-    return sortReadingIeltsTests(asReading, sort).map(
-      (item) => LISTENING_CAMBRIDGE_TESTS.find((test) => test.testId === item.pilotId)!,
-    );
-  }, [sort]);
+  const { pageItems, totalPages } = useStudyHubLibraryGrid(gridItems);
 
-  const filteredTests = useMemo(() => {
-    const asReading = sortedTests.map((test) => ({
-      pilotId: test.testId,
-      label: test.label,
-      bookTitle: test.bookTitle,
-      testNumber: test.testNumber,
-      coverImageUrl: test.coverImageUrl,
-      catalogOrder: test.catalogOrder,
-    }));
-    return filterReadingIeltsTests(asReading, query).map(
-      (item) => LISTENING_CAMBRIDGE_TESTS.find((test) => test.testId === item.pilotId)!,
-    );
-  }, [sortedTests, query]);
-
-  const { pageItems, totalPages } = useStudyHubLibraryGrid(filteredTests);
-
-  const setSort = (next: ReadingLibrarySort) => {
+  const setSort = (next: ReadingIeltsLibrarySort) => {
     const params = new URLSearchParams(searchParams.toString());
     if (next === "newest") {
       params.delete("sap-xep");
     } else {
       params.set("sap-xep", next);
     }
+    params.delete("trang");
     const queryString = params.toString();
     router.replace(queryString ? `${pathname}?${queryString}` : pathname, { scroll: false });
   };
@@ -148,8 +132,7 @@ function ListeningIeltsTestViewInner({
           }
         />
         <ListeningIeltsTestGrid
-          realExams={filteredRealExams}
-          tests={pageItems}
+          items={pageItems}
           onStartRealExam={startRealExam}
           onStartTest={startTest}
           emptyMessage={query.trim() ? "Không tìm thấy đề IELTS phù hợp." : "Chưa có đề IELTS trong mục này."}

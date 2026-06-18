@@ -26,12 +26,17 @@ export function ReadingIeltsTestCard({
           src={test.coverImageUrl}
           alt=""
           fill
+          quality={90}
           className="object-cover object-center"
-          style={
-            test.coverImageObjectPosition
+          style={{
+            objectFit: "cover",
+            ...(test.coverImageObjectPosition
               ? { objectPosition: test.coverImageObjectPosition }
-              : undefined
-          }
+              : {}),
+            ...(test.coverImageScale
+              ? { transform: `scale(${test.coverImageScale})`, transformOrigin: "center center" }
+              : {}),
+          }}
           sizes="(max-width:768px) 100vw, 33vw"
         />
       </div>

@@ -4,7 +4,7 @@ const CATALOG_ORDER_BY_ID = new Map(
   READING_HUB_ARTICLES.map((article, index) => [article.id, index]),
 );
 
-/** Thứ tự xuất bản trong app: RC1 → RC2 → Cambridge (mới hơn = chỉ số lớn hơn). */
+/** Thứ tự thêm vào app (index trong READING_HUB_ARTICLES) — mới hơn = chỉ số lớn hơn. */
 export function readingArticleCatalogOrder(article: Pick<ReadingHubArticle, "id">): number {
   return CATALOG_ORDER_BY_ID.get(article.id) ?? 0;
 }

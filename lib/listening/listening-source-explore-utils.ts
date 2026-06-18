@@ -1,5 +1,14 @@
 import type { ListeningLibrarySort } from "@/lib/listening/library-sort";
-import type { ListeningSourceCategory } from "@/lib/listening/listening-source-catalog";
+import type {
+  ListeningSourceCategory,
+  ListeningSourceDifficulty,
+} from "@/lib/listening/listening-source-catalog";
+
+const SOURCE_DIFFICULTY_ORDER: ListeningSourceDifficulty[] = ["Beginner", "Intermediate", "Advanced"];
+
+function sourceDifficultyRank(difficulty: ListeningSourceDifficulty): number {
+  return SOURCE_DIFFICULTY_ORDER.indexOf(difficulty);
+}
 
 export function filterListeningSourceCategories(
   categories: readonly ListeningSourceCategory[],
@@ -24,13 +33,17 @@ export function sortListeningSourceCategories(
     if (sort === "listens-desc") {
       const diff = b.lessonCount - a.lessonCount;
       if (diff !== 0) return diff;
-      return a.catalogOrder - b.catalogOrder;
-    }
-    if (sort === "oldest") {
       return b.catalogOrder - a.catalogOrder;
     }
-    // Mặc định — cùng thứ tự hub: chất giọng → beginners → IELTS parts → Luyện đề IELTS
-    return a.catalogOrder - b.catalogOrder;
+    if (sort === "difficulty-asc") {
+      const diff = sourceDifficultyRank(a.difficulty) - sourceDifficultyRank(b.difficulty);
+      if (diff !== 0) return diff;
+      return b.catalogOrder - a.catalogOrder;
+    }
+    if (sort === "oldest") {
+      return a.catalogOrder - b.catalogOrder;
+    }
+    return b.catalogOrder - a.catalogOrder;
   });
   return list;
 }

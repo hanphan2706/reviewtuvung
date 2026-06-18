@@ -13,6 +13,10 @@ import { injectExamCopyFriction } from "@/lib/exam/inject-exam-copy-friction";
 import { injectExamDictionaryPopover } from "@/lib/exam/inject-exam-dictionary-popover";
 
 const PILOT_LABELS: Record<ReadingPilotId, string> = {
+  "cam17-test4": "Cambridge 17 · Test 4",
+  "cam17-test3": "Cambridge 17 · Test 3",
+  "cam17-test2": "Cambridge 17 · Test 2",
+  "cam17-test1": "Cambridge 17 · Test 1",
   "cam19-test4": "Cambridge 19 · Test 4",
   "cam19-test3": "Cambridge 19 · Test 3",
   "cam19-test2": "Cambridge 19 · Test 2",
