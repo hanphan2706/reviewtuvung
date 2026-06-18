@@ -215,6 +215,62 @@ function parseNoteCompletionBlock(
   };
 }
 
+function parseOptionsItemsMatchingBlock(
+  rawLines: string[],
+  startIndex: number,
+): {
+  optionsTitle: string;
+  options: { letter: string; text: string }[];
+  itemsTitle: string;
+  items: { number: number; label: string }[];
+  nextIndex: number;
+} {
+  let optionsTitle = "Options";
+  const options: { letter: string; text: string }[] = [];
+  let itemsTitle = "";
+  const items: { number: number; label: string }[] = [];
+  let j = startIndex;
+
+  while (j < rawLines.length) {
+    const row = normalizeLine(rawLines[j] ?? "");
+    if (!row) {
+      j += 1;
+      continue;
+    }
+    const opt = row.match(MCQ_OPTION_RE);
+    if (opt && items.length === 0) {
+      options.push({ letter: opt[1]!.toUpperCase(), text: opt[2]!.trim() });
+      j += 1;
+      continue;
+    }
+    const itemMatch = row.match(MAP_ITEM_RE);
+    if (itemMatch) {
+      items.push({ number: Number.parseInt(itemMatch[1]!, 10), label: itemMatch[2]!.trim() });
+      j += 1;
+      continue;
+    }
+    if (QUESTIONS_RANGE_RE.test(row) || SINGLE_QUESTION_RE.test(row) || PART_HEADER_RE.test(row)) break;
+    if (
+      options.length === 0 &&
+      !/^Choose\s/i.test(row) &&
+      !/^What\s/i.test(row) &&
+      !/^Write the correct (letter|answer)/i.test(row)
+    ) {
+      optionsTitle = row;
+      j += 1;
+      continue;
+    }
+    if (options.length > 0 && items.length === 0) {
+      itemsTitle = row;
+      j += 1;
+      continue;
+    }
+    j += 1;
+  }
+
+  return { optionsTitle, options, itemsTitle, items, nextIndex: j };
+}
+
 function parsePartBody(partNumber: number, body: string, answers: Record<string, string>): ListeningQnaPart {
   const rawLines = body.split(/\r?\n/);
   const sections: ListeningQnaSection[] = [];
@@ -257,7 +313,7 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
         if (
           /^Choose/i.test(instr) ||
           /^Label the map/i.test(instr) ||
-          /^Write the correct letter/i.test(instr) ||
+          /^Write the correct (letter|answer)/i.test(instr) ||
           /^What\s/i.test(instr) ||
           /^What is the students/i.test(instr)
         ) {
@@ -336,45 +392,20 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
       }
 
       if (CHOOSE_FROM_BOX_RE.test(instructionLines.join(" "))) {
-        let optionsTitle = "Options";
-        const options: { letter: string; text: string }[] = [];
-        let itemsTitle = "";
-        const items: { number: number; label: string }[] = [];
-        j = i + 1;
-        while (j < rawLines.length) {
-          const row = normalizeLine(rawLines[j] ?? "");
-          if (!row) {
-            j += 1;
-            continue;
-          }
-          const opt = row.match(MCQ_OPTION_RE);
-          if (opt && items.length === 0) {
-            options.push({ letter: opt[1]!.toUpperCase(), text: opt[2]!.trim() });
-            j += 1;
-            continue;
-          }
-          const itemMatch = row.match(/^(\d+)\s+(.+?)\s*(?:\.{3,}|…{2,})\s*$/);
-          if (itemMatch) {
-            items.push({ number: Number.parseInt(itemMatch[1]!, 10), label: itemMatch[2]!.trim() });
-            j += 1;
-            continue;
-          }
-          if (QUESTIONS_RANGE_RE.test(row) || SINGLE_QUESTION_RE.test(row) || PART_HEADER_RE.test(row)) break;
-          if (options.length === 0 && !/^Choose\s/i.test(row) && !/^What\s/i.test(row) && !/^Write the correct letter/i.test(row)) {
-            optionsTitle = row;
-            j += 1;
-            continue;
-          }
-          if (options.length > 0 && items.length === 0) {
-            itemsTitle = row;
-            j += 1;
-            continue;
-          }
-          j += 1;
-        }
+        const { optionsTitle, options, itemsTitle, items, nextIndex } = parseOptionsItemsMatchingBlock(rawLines, i + 1);
         sections.push({ kind: "matching", instructionLines, optionsTitle, options, itemsTitle, items });
-        i = j;
+        i = nextIndex;
         continue;
+      }
+
+      const instrText = instructionLines.join(" ");
+      if (/Write the correct (letter|answer)/i.test(instrText) && !/Label the map below/i.test(instrText)) {
+        const { optionsTitle, options, itemsTitle, items, nextIndex } = parseOptionsItemsMatchingBlock(rawLines, j);
+        if (items.length > 0) {
+          sections.push({ kind: "matching", instructionLines, optionsTitle, options, itemsTitle, items });
+          i = nextIndex;
+          continue;
+        }
       }
 
       const questions: ListeningQnaMcqQuestion[] = [];
@@ -408,7 +439,9 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
         if (QUESTIONS_RANGE_RE.test(row) || SINGLE_QUESTION_RE.test(row) || PART_HEADER_RE.test(row)) break;
         j += 1;
       }
-      sections.push({ kind: "mcq", instructionLines, questions });
+      if (questions.length > 0) {
+        sections.push({ kind: "mcq", instructionLines, questions });
+      }
       i = j;
       continue;
     }

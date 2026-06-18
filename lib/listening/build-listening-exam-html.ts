@@ -264,6 +264,7 @@ function renderNoteSection(section: ListeningQnaNoteSection, partNumber: number)
 
 function renderMcqSection(section: ListeningQnaMcqSection, partNumber: number): { html: string; nums: number[] } {
   const nums = section.questions.map((q) => q.number);
+  if (nums.length === 0) return { html: "", nums: [] };
   const minQ = nums[0] ?? (partNumber - 1) * 10 + 1;
   const maxQ = nums[nums.length - 1] ?? partNumber * 10;
   const blocks = section.questions
