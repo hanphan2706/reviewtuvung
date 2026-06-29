@@ -1,7 +1,7 @@
 import type { SpeechAccentSample } from "@/lib/listening/speech-accent-catalog";
 
 export const ACCENT_EXPLORE_PAGE_DESCRIPTION =
-  "Thành thạo hệ thống IPA (International Phonetic Alphabet) để nắm bắt mọi sắc thái giọng nói. Tìm hiểu sự khác biệt tinh tế giữa các chất giộng Anh phổ biến.";
+  "Tìm hiểu sự khác biệt tinh tế giữa các chất giọng Anh phổ biến.";
 
 export const ACCENT_SAMPLE_PARAGRAPH_NOTE =
   "Đây là đoạn văn chuẩn (Stella paragraph) dùng trong Speech Accent Archive để so sánh phát âm giữa các vùng miền.";

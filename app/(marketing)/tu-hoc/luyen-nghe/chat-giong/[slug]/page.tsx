@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { LANDING } from "@/lib/landing-content";
-import { LISTENING_ACCENT_HUB_HREF } from "@/lib/listening/accent-nav";
+import { LISTENING_ACCENT_CLASSIC_HREF, LISTENING_ACCENT_HUB_HREF } from "@/lib/listening/accent-nav";
 
 export const dynamic = "force-dynamic";
 
@@ -20,5 +20,5 @@ export default async function ListeningAccentRegionRedirectPage({ params }: Page
     australian: "set-1",
   };
   const setId = legacyMap[slug];
-  redirect(setId ? `${LISTENING_ACCENT_HUB_HREF}?bo=${setId}` : LISTENING_ACCENT_HUB_HREF);
+  redirect(setId ? `${LISTENING_ACCENT_CLASSIC_HREF}?bo=${setId}` : LISTENING_ACCENT_HUB_HREF);
 }

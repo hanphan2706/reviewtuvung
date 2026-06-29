@@ -7,6 +7,11 @@ import {
 
 export const LISTENING_ACCENT_HUB_HREF = `${LISTENING_HUB_HREF}/chat-giong`;
 
+/** Layout IPA + 4 bộ so sánh + ghi âm — giữ cho tái sử dụng sau này. */
+export const LISTENING_ACCENT_CLASSIC_HREF = `${LISTENING_ACCENT_HUB_HREF}/classic`;
+
+export const LISTENING_ACCENT_CHALLENGE_HREF = `${LISTENING_ACCENT_HUB_HREF}/thu-thach`;
+
 export function listeningAccentCompareHref(setId?: string): string {
   if (!setId) return LISTENING_ACCENT_HUB_HREF;
   return `${LISTENING_ACCENT_HUB_HREF}?bo=${encodeURIComponent(setId)}`;

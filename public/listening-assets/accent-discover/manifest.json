@@ -1,0 +1,26 @@
+{
+  "passages": [
+    "north-wind",
+    "rainbow",
+    "arthur"
+  ],
+  "words": [
+    "tomato",
+    "schedule",
+    "privacy",
+    "leisure",
+    "herb",
+    "garage",
+    "either",
+    "advertisement",
+    "vase",
+    "route",
+    "laboratory",
+    "data"
+  ],
+  "voices": {
+    "british": "en-GB-SoniaNeural",
+    "american": "en-US-JennyNeural",
+    "australian": "en-AU-NatashaNeural"
+  }
+}

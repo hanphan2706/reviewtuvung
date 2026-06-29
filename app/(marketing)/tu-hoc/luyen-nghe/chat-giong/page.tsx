@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { LANDING } from "@/lib/landing-content";
 import { listeningAccentExplorePage } from "@/lib/listening/accent-nav";
 import { isListeningAccentExploreLive } from "@/lib/listening/accent-explore-release";
-import { renderListeningAccentExplorePage } from "@/lib/listening/accent-page";
+import { renderListeningAccentDiscoverPage } from "@/lib/listening/accent-page";
 
 export const dynamic = "force-dynamic";
 
@@ -18,5 +18,5 @@ export const metadata: Metadata = {
 };
 
 export default async function ListeningAccentExplorePage() {
-  return renderListeningAccentExplorePage(page);
+  return renderListeningAccentDiscoverPage(page);
 }
