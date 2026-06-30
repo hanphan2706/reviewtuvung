@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "partId": "cam20-t2-p2",
+  "audioFile": "Cam20 Test2 Part2.mp3",
+  "durationSeconds": 428.847891,
+  "method": "whisper-local",
+  "preambleSeconds": 59.28,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Good morning everyone.",
+      "start": 52.166,
+      "end": 59.28,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "I’m Steve Wainwright from Elmley Town Council and I organise the town’s volunteer scheme.",
+      "start": 59.28,
+      "end": 66.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "I’m delighted you’re all interested in joining the scheme.",
+      "start": 66.5,
+      "end": 70.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Our volunteers help to create a sense of community among the many people who live in our historic town of Elmley and make residents and visitors feel welcome at local events.",
+      "start": 70.42,
+      "end": 82.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "First, I’ll mention just a few of the activities that volunteers carry out.",
+      "start": 82.78,
+      "end": 88.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "One is to walk around the town centre streets wearing our volunteer T-shirt.",
+      "start": 88.42,
+      "end": 94.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Tourists often ask how to get to a particular shop, and they might also be grateful for recommendations about what to visit.",
+      "start": 94.52,
+      "end": 103.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "The town holds a large number of concerts each year and part of the volunteers’ role is to get everyone in the audience to the right place as smoothly as possible.",
+      "start": 103.14,
+      "end": 114.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "You’d be surprised how many people buy tickets, then don’t check them, and head for the wrong section of the hall.",
+      "start": 114.44,
+      "end": 122.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Volunteers may get involved with community groups, such as sports clubs or gardeners’ associations.",
+      "start": 122.02,
+      "end": 129.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Here, the volunteers talk about how groups can help each other.",
+      "start": 129.8,
+      "end": 134.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "For instance, a writing group might want to travel to another town to hear a talk by a well-known author, but may not know that another club has a coach they could travel in.",
+      "start": 134.58,
+      "end": 147.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "The town produces a monthly magazine, and anyone who lives in the town can send in articles.",
+      "start": 147.1,
+      "end": 153.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "It’s free to residents and is paid for by local businesses.",
+      "start": 153.66,
+      "end": 158.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "That’s the responsibility of the council’s advertising department we depend on volunteers though to find out what people think of events they’ve attended and any suggestions they have for the future the volunteers then send a summary to the editors there are a number of clubs for retired people and every year the council arranges lunch for all the members the volunteers welcome the guests and when everyone’s sitting down and relaxing after the meal, some volunteers put on a show.",
+      "start": 158.12,
+      "end": 192.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Usually around half an hour of songs and short plays, the club members really welcome the chance to chat to the volunteers at these events.",
+      "start": 192.66,
+      "end": 202.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "The town council has a website, of course, and volunteers are asked to help by making sure residents know about it It updated every day with information about future activities and we want as many people as possible to use it.",
+      "start": 202.28,
+      "end": 221.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Before you hear the rest of the talk, you have some time to look at questions 17 to 20. Now listen and answer questions 17 to 20. OK, now you know some of the things our volunteers do, I’ll go on to some practical matters.",
+      "start": 221.18,
+      "end": 272.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "As you probably know, the town arranges three major festivals every year, and they all depend on a large number of volunteers.",
+      "start": 272.78,
+      "end": 281.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "The book festival lasts three days, and uses several venues which all need volunteers.",
+      "start": 281.82,
+      "end": 287.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "More are needed for the music festival because that lasts a whole week, and even more help is required for the science festival, even though it’s only two days long.",
+      "start": 287.98,
+      "end": 298.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "It involves quite a lot of venues, though.",
+      "start": 298.18,
+      "end": 300.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "It’s a good idea to help at the festival you’re most interested in, because you can attend most of the events for free.",
+      "start": 300.9,
+      "end": 308.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "We try to use volunteers who are flexible, though, because some festival events are held outdoors and the weather may affect the size of the audience and even whether the event can take place so there can be changes at short notice What essential though is being able to get on well with other people and also to deal with someone who’s behaving badly, as occasionally happens.",
+      "start": 308.72,
+      "end": 335.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Our plan is to get you all working in September, after a week’s training starting on the 2nd, so we’ll be timetabling you for duties the following week from the 9th onward.",
+      "start": 335.5,
+      "end": 347.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Later in the week beginning September 23rd we have a chat with each of you to find out how you feel about being a volunteer and what extra support you need.",
+      "start": 347.76,
+      "end": 359.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "As a thank you to the volunteers we arrange an annual event.",
+      "start": 359.08,
+      "end": 364,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "In recent years we’ve had a party in the Town Hall and last year a barbecue in Chamber Park.",
+      "start": 364,
+      "end": 371.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Our forthcoming event is a trip along the canal from here to Dewhurst and back.",
+      "start": 371.82,
+      "end": 377.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "It’s on Saturday, September the 28th.",
+      "start": 377.16,
+      "end": 379.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "And if you’d like to attend, you can sign up once you start work.",
+      "start": 379.74,
+      "end": 384.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Now, this is the Volunteer’s T-shirt.",
+      "start": 384.5,
+      "end": 428.848,
+      "preAudio": false
+    }
+  ]
+}

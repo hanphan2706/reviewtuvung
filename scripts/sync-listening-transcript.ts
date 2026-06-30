@@ -4,7 +4,8 @@
  * Mặc định: faster-whisper trên máy (miễn phí API).
  *   npm run listening:sync-transcript
  *   npm run listening:sync-transcript -- --part 2
- *   npm run listening:sync-transcript -- --all
+ *   npm run listening:sync-transcript -- --exam cam19 --all
+ *   npm run listening:sync-transcript -- --exam cam18 --all-tests --all
  *
  * Cài Whisper local (một lần):
  *   python3 -m venv .venv-listening && source .venv-listening/bin/activate
@@ -34,15 +35,30 @@ import {
   listeningTranscriptCandidates,
 } from "../lib/listening/listening-materials-paths";
 import { LISTENING_SYNC_ANCHORS, getListeningSyncPartConfig } from "../lib/listening/listening-sync-presets";
+import { parseListeningTranscriptLines } from "../lib/listening/parse-listening-transcript-lines";
 import { sanitizeListeningTranscript } from "../lib/sanitize-listening-transcript";
 import { splitTranscriptByPart } from "../lib/listening/split-transcript-parts";
 import { whisperApiTranscribeFileWords } from "../lib/listening/whisper-transcribe-file";
+import { listeningPartAudioFileName } from "../lib/listening/listening-materials-urls";
 import {
   listeningWhisperWordsCachePath,
   whisperLocalTranscribe,
 } from "../lib/listening/whisper-transcribe-local";
 
+type ExamSlug = "cam19" | "cam18" | "cam20";
 type SyncMode = "local" | "api" | "proportional";
+
+function deriveAnchorTextFromPlain(plain: string): string | undefined {
+  for (const line of parseListeningTranscriptLines(plain)) {
+    const text = line.text.trim();
+    if (text.length < 6) continue;
+    if (/^before you hear/i.test(text) || /^now listen/i.test(text)) continue;
+    const tokens = text.match(/[A-Za-z']+/g);
+    if (!tokens || tokens.length < 2) continue;
+    return tokens.slice(0, Math.min(4, tokens.length)).join(" ");
+  }
+  return undefined;
+}
 
 function resolveListeningAudioPath(fileName: string): string | null {
   for (const p of listeningAudioCandidates(fileName)) {
@@ -60,17 +76,20 @@ function resolveListeningTranscriptPath(fileName: string): string | null {
 
 function parseArgs(argv: string[]): {
   parts: number[];
+  tests: number[];
   mode: SyncMode;
-  test: number;
+  exam: ExamSlug;
   anchorText: string | null;
   anchorAt: number | null;
   speechStart: number | null;
   useCache: boolean;
 } {
   let mode: SyncMode = "local";
+  let exam: ExamSlug = "cam19";
   let test = 1;
   let part = 1;
   let all = false;
+  let allTests = false;
   let anchorText: string | null = null;
   let anchorAt: number | null = null;
   let speechStart: number | null = null;
@@ -82,7 +101,9 @@ function parseArgs(argv: string[]): {
     if (a === "--api" || a === "--whisper") mode = "api";
     if (a === "--proportional") mode = "proportional";
     if (a === "--all") all = true;
+    if (a === "--all-tests") allTests = true;
     if (a === "--no-cache") useCache = false;
+    if (a === "--exam" && argv[i + 1]) exam = argv[i + 1] as ExamSlug;
     if (a === "--part" && argv[i + 1]) part = Number.parseInt(argv[i + 1]!, 10);
     if (a === "--test" && argv[i + 1]) test = Number.parseInt(argv[i + 1]!, 10);
     if (a === "--anchor" && argv[i + 1]) anchorText = argv[i + 1]!;
@@ -97,7 +118,18 @@ function parseArgs(argv: string[]): {
     }
   }
 
-  return { parts, mode, test, anchorText, anchorAt, speechStart, useCache };
+  const tests = allTests ? [1, 2, 3, 4] : [test];
+  for (const t of tests) {
+    if (!Number.isFinite(t) || t < 1 || t > 4) {
+      throw new Error("--test must be 1–4");
+    }
+  }
+
+  if (!["cam19", "cam18", "cam20"].includes(exam)) {
+    throw new Error("--exam must be cam19, cam18 or cam20");
+  }
+
+  return { parts, tests, mode, exam, anchorText, anchorAt, speechStart, useCache };
 }
 
 function probeDurationSeconds(audioPath: string): number {
@@ -117,6 +149,7 @@ function probeDurationSeconds(audioPath: string): number {
 async function buildSyncForPart(
   part: number,
   test: number,
+  exam: ExamSlug,
   mode: SyncMode,
   opts: {
     anchorText: string | null;
@@ -125,18 +158,18 @@ async function buildSyncForPart(
     useCache: boolean;
   },
 ): Promise<void> {
-  const partId = `cam19-t${test}-p${part}`;
-  const audioFile = `Test${test} Part${part}.mp3`;
+  const partId = `${exam}-t${test}-p${part}`;
+  const audioFile = listeningPartAudioFileName(exam, test, part);
   const audioPath = resolveListeningAudioPath(audioFile);
   if (!audioPath) {
     throw new Error(`Không tìm thấy audio: ${audioFile}`);
   }
 
   const transcriptPath =
-    resolveListeningTranscriptPath(`cam19-test${test}.cleaned.txt`) ??
-    resolveListeningTranscriptPath(`cam19-test${test}.txt`);
+    resolveListeningTranscriptPath(`${exam}-test${test}.cleaned.txt`) ??
+    resolveListeningTranscriptPath(`${exam}-test ${test}.txt`);
   if (!transcriptPath) {
-    throw new Error(`Không tìm thấy cam19-test${test}.cleaned.txt hoặc cam19-test${test}.txt`);
+    throw new Error(`Không tìm thấy ${exam}-test${test}.cleaned.txt hoặc ${exam}-test ${test}.txt`);
   }
 
   const full = sanitizeListeningTranscript(readFileSync(transcriptPath, "utf8"));
@@ -155,6 +188,7 @@ async function buildSyncForPart(
     });
     console.log(`  words: ${payload.words.length}, segments: ${payload.segments.length}`);
     const partCfg = getListeningSyncPartConfig(partId);
+    const anchorText = partCfg.anchorText ?? deriveAnchorTextFromPlain(plain);
     sync = buildWhisperAlignedTranscriptSync({
       partId,
       audioFile,
@@ -163,7 +197,7 @@ async function buildSyncForPart(
       whisperWords: payload.words,
       whisperSegments: payload.segments,
       method: "whisper-local",
-      anchorText: partCfg.anchorText,
+      anchorText,
       dialogueMinStartSeconds: partCfg.dialogueMinStartSeconds,
       maxDialogueEndSeconds: partCfg.maxDialogueEndSeconds,
     });
@@ -221,17 +255,19 @@ function writeSync(
 }
 
 async function main(): Promise<void> {
-  const { parts, mode, test, anchorText, anchorAt, speechStart, useCache } = parseArgs(
+  const { parts, tests, mode, exam, anchorText, anchorAt, speechStart, useCache } = parseArgs(
     process.argv.slice(2),
   );
 
-  for (const part of parts) {
-    await buildSyncForPart(part, test, mode, {
-      anchorText,
-      anchorAt,
-      speechStart,
-      useCache,
-    });
+  for (const test of tests) {
+    for (const part of parts) {
+      await buildSyncForPart(part, test, exam, mode, {
+        anchorText,
+        anchorAt,
+        speechStart,
+        useCache,
+      });
+    }
   }
 }
 

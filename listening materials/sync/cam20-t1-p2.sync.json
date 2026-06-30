@@ -1,0 +1,394 @@
+{
+  "version": 1,
+  "partId": "cam20-t1-p2",
+  "audioFile": "Cam20 Test1 Part2.mp3",
+  "durationSeconds": 514.506304,
+  "method": "whisper-local",
+  "preambleSeconds": 74.24,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Hello and welcome.",
+      "start": 74.24,
+      "end": 76.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "My name’s Heather McCallum and I’m one of the potters who work here at Edelman Pottery.",
+      "start": 76.54,
+      "end": 83.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Before we go into the workshop, I just want to say a bit about the craft of pottery.",
+      "start": 83.6,
+      "end": 89.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Then we’ll have a look at the equipment and you can try making a pot of your own.",
+      "start": 89.88,
+      "end": 96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Like many people, I’m sure you know that pottery as an art form is tens of thousands of years old.",
+      "start": 96,
+      "end": 104.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "And we know this because it stands the test of time.",
+      "start": 104.42,
+      "end": 109.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Things like baskets and pictures don’t survive on the earth in the same way that pots do. and even if ancient pots are found in small pieces they still provide a lot of information about the past.",
+      "start": 109.74,
+      "end": 126.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "There no doubt that pottery has given archaeologists a fascinating insight into how ancient hills lived The shape of an artefact may have been lost but archaeologists can tell whether the pots were for, say, storage or cooking by examining the impressions on the clay, the scratches from tools, and the clay itself can reveal where the pots came from.",
+      "start": 126.22,
+      "end": 158.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "When I ask people why they want to take a pottery class with me, they sometimes talk about these things.",
+      "start": 158.14,
+      "end": 166.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Like our ancestors, they hope that something they create will also last longer than they do, that their work, whether it is good or not, might say something about humanity many years after their death.",
+      "start": 166.64,
+      "end": 184.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Of course, you will all have your own reasons for coming here.",
+      "start": 184.1,
+      "end": 188.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "As far as I’m concerned, what I love most is the concentration you need to make a good pot.",
+      "start": 188.74,
+      "end": 197.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "That focus takes you away from the stresses of everyday life.",
+      "start": 197.2,
+      "end": 202.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "If you’re elderly, it’s also good exercise for hands and wrists and helps with arthritis.",
+      "start": 202.66,
+      "end": 209.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "And of course, it’s a fun activity for children because it’s so messy.",
+      "start": 209.32,
+      "end": 216.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Here at Edelman Pottery, we show you some of the basic pottery techniques so that you can use these to create whatever you wish.",
+      "start": 216.14,
+      "end": 225.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "A gift for a friend, perhaps.",
+      "start": 225.4,
+      "end": 228.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Like nearly everyone who comes here, I’m sure this is the first time you will have tried the art so we’ll keep things simple today.",
+      "start": 228.14,
+      "end": 238.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Now, before we move on, can I just say a word about what you’re wearing?",
+      "start": 238.02,
+      "end": 243.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "As we said in our email please remove any watches, necklaces etc and put them somewhere safe.",
+      "start": 243.88,
+      "end": 253.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "If you have long hair do tie it back now.",
+      "start": 253.32,
+      "end": 257.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "We provide aprons later but I trust your clothes are old but comfortable, not your favourite T-shirt or jeans.",
+      "start": 257.82,
+      "end": 269.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Before you hear the rest of the talk, you have some time to look at questions 17 to 20. Now listen and answer questions 17 to 20.",
+      "start": 269.7,
+      "end": 304.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "So now we’re in the workshop.",
+      "start": 304.3,
+      "end": 307.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Have a look around.",
+      "start": 307.28,
+      "end": 308.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "There’s a lot going on.",
+      "start": 308.98,
+      "end": 311.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "To make pottery that will last, you need a potter’s wheel, a kiln, which is basically a very hot oven where you fire the pottery, and some tools.",
+      "start": 311.18,
+      "end": 324.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "So, first, the kiln.",
+      "start": 324.12,
+      "end": 327.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "If you look over in the far corner, you’ll see one of ours.",
+      "start": 327.24,
+      "end": 332.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Since their invention, kilns have changed very little, though in the past 20 years a lot of progress has been made in temperature control.",
+      "start": 332.22,
+      "end": 342.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Basically, a kiln removes the water from clay at temperatures of around 1000 degrees Celsius.",
+      "start": 342.7,
+      "end": 351.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "This allows anything you’ve made to set permanently in shape.",
+      "start": 351.56,
+      "end": 357.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "It’s a pretty ugly heavy object that’s hard to keep in a house or flat, so most people don’t have one.",
+      "start": 357.44,
+      "end": 366.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "You may think, can’t I use my oven?",
+      "start": 366.14,
+      "end": 370.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Well, that’s possible, but domestic ovens don’t really get hot enough and eventually the clay will crack and fall apart.",
+      "start": 370.26,
+      "end": 380.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Some people fire pottery in a fire pit outside but bear in mind… that can be dangerous.",
+      "start": 380.38,
+      "end": 390.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "You also need to know about safety procedures for kilns as they release toxic compounds into the air.",
+      "start": 390.16,
+      "end": 399.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "Every potter needs a potter’s wheel.",
+      "start": 399.12,
+      "end": 403.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "This machine is used to shape the clay into an object with circular walls or sides, such as a bowl.",
+      "start": 403.04,
+      "end": 413,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "Its invention revolutionised the pottery industry, allowing multiple items to be produced in a day.",
+      "start": 413,
+      "end": 422.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "Lastly, there are a number of different tools that potters use, depending on what they want to make.",
+      "start": 422.34,
+      "end": 430.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "When you start, your hands can make all kinds of shapes and curves without relying on a sculpting tool.",
+      "start": 430.42,
+      "end": 438.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "However, there are some basic tools that you will need to handle the clay on the wheel.",
+      "start": 438.42,
+      "end": 445.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "Some look very strange and have even odder names that you may find hard to remember.",
+      "start": 445.6,
+      "end": 453.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "Rather than go through them all now, I’ll just name a few tools as we go along.",
+      "start": 453.54,
+      "end": 460.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "We can provide these and I wouldn’t recommend spending money on them yet.",
+      "start": 460.06,
+      "end": 466.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "So, let’s try making a pot of your own.",
+      "start": 466.16,
+      "end": 469.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "If you sit down…",
+      "start": 469.44,
+      "end": 514.506,
+      "preAudio": false
+    }
+  ]
+}

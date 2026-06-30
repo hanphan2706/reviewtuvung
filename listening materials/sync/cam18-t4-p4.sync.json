@@ -1,0 +1,337 @@
+{
+  "version": 1,
+  "partId": "cam18-t4-p4",
+  "audioFile": "Cam18 Test4 Part4.mp3",
+  "durationSeconds": 497.431688,
+  "method": "whisper-local",
+  "preambleSeconds": 89.586,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "The person I’ve chosen to talk about is the French writer Victor Hugo – many people have heard of him because his novel, Les Miserables, which he wrote in 1862, is famous around the world.",
+      "start": 77.686,
+      "end": 89.586,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "It became a stage musical in the 1980s, and a film version was also released in 2012.",
+      "start": 89.586,
+      "end": 95.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "So, some of us, I’m sure, have a pretty general idea of the plot, but we know much less about the author.",
+      "start": 95.9,
+      "end": 104.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Today, I’m going to provide a little more insight into this talented man and I’m going to talk particularly about the home he had on the island of Guernsey in the British Channel Islands.",
+      "start": 104.48,
+      "end": 116.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Q31",
+      "start": 116.3,
+      "end": 117.18
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "But first, his early career … as I’ve said, he was a writer, he was at the height of his career in Paris and he was very highly regarded by his colleagues.",
+      "start": 117.18,
+      "end": 129.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "As far as literature was concerned, he was the leading figure of the Romantic movement.",
+      "start": 129.58,
+      "end": 135.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "However, as well as being a literary genius, he also gave many speeches about issues like the level of poverty in his society.",
+      "start": 135.76,
+      "end": 145.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "He felt very strongly about this and about other areas where change was needed, like education.",
+      "start": 145.68,
+      "end": 154.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "This kind of outspoken criticism was not well liked by the rulers of France and, eventually, the emperor – Napoleon III – told Victor Hugo to leave Paris and not return; in other words, he sent him into exile.",
+      "start": 154.14,
+      "end": 171.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Q32",
+      "start": 171.48,
+      "end": 172.7
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "So Victor Hugo was forced to reside in other parts of Europe.",
+      "start": 172.7,
+      "end": 178.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Q33 Guernsey was actually his third place of exile and he landed there in 1855.",
+      "start": 178.52,
+      "end": 185.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "He produced a lot while on Guernsey – including Les Miserables – and to do this, he had to spend a great deal of time in the home that he had there.",
+      "start": 185.56,
+      "end": 196.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "This was a property that he bought using the money he’d made in France from the publication of a collection of his poetry.",
+      "start": 196.72,
+      "end": 204.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "It was the only property he ever owned, and he was very proud of it.",
+      "start": 204.54,
+      "end": 209.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Q34",
+      "start": 209.64,
+      "end": 212.05
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "——",
+      "start": 212.05,
+      "end": 214.68
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "The property Victor Hugo bought on Guernsey was a large, five-storey house in the capital town of St Peter Port and he lived there for 15 years, returning to France in 1870 when Napoleon’s Empire collapsed.",
+      "start": 214.68,
+      "end": 231.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "He decorated and furnished each level, or floor, of the house in unique and wonderful ways, and many people consider the inside of the house to be a ‘work of art’.",
+      "start": 231.1,
+      "end": 244.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Today it’s a museum that attracts 200,000 visitors a year.",
+      "start": 244.5,
+      "end": 251,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "He lived in the house with his family … and portraits of its members still hang in rooms on the ground floor, along with drawings that he did during his travels that he felt were important to him.",
+      "start": 251,
+      "end": 266.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Q35 In other ground-floor rooms, there are huge tapestries that he would have designed and loved.",
+      "start": 266.12,
+      "end": 273.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "The walls are covered in dark wood panelling that Victor Hugo created himself using wooden furniture that he bought in the market.",
+      "start": 273.16,
+      "end": 282.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "The items were relatively inexpensive, and he used them to create intricate carvings.",
+      "start": 282.66,
+      "end": 289.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "They gave an atmosphere on the lower level that was shadowy and rather solemn.",
+      "start": 289.44,
+      "end": 295.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Q36",
+      "start": 295.18,
+      "end": 296.02
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "On the next level of the house there are two impressive lounges, where he entertained his guests.",
+      "start": 296.02,
+      "end": 304.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "One lounge has entirely red furnishings, such as sofas and wall coverings, and the other blue.",
+      "start": 304.2,
+      "end": 313.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "There’s a strong Chinese influence in these areas in things like the wallpaper pattern and the lamps – which he would have made himself by copying original versions.",
+      "start": 313.6,
+      "end": 325.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Q37",
+      "start": 325.12,
+      "end": 327.14
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "His library, where he left many of his favourite books, forms the hallway to the third floor and was a comfortable area where he could relax and enjoy his afternoons.",
+      "start": 327.14,
+      "end": 339.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "And then, at the very top of the house, there’s a room called the Lookout – called that because it looks out over the harbour.",
+      "start": 339.5,
+      "end": 349.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "In contrast to the rather dark lower levels, it’s full of light and was like a glass office where he would write until lunchtime- often at his desk.",
+      "start": 349.5,
+      "end": 361.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Q38",
+      "start": 361.22,
+      "end": 362.26
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "So, Victor Hugo was a man of many talents, but he was also true to his values.",
+      "start": 362.26,
+      "end": 370.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "While living in his house on Guernsey, he entertained many other famous writers, but he also invited a large group of local children from the deprived areas of the island to dinner once a week.",
+      "start": 370.12,
+      "end": 384.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "What’s more, he served them their food, which was an extraordinary gesture for the time period.",
+      "start": 384.42,
+      "end": 390.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "Q39",
+      "start": 390.96,
+      "end": 392.68
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "In 1927, the house was owned by his relatives, and they decided to donate it to the city of Paris.",
+      "start": 392.68,
+      "end": 401.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "It has since been restored using photographs from the period and, as I mentioned earlier, is now a museum that is open to the public.",
+      "start": 401.82,
+      "end": 412.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "Q40",
+      "start": 412.38,
+      "end": 497.432
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 const BLANK_RE =
-  /(\d+)\s*(?:£\s*)?(?:['\u2018\u2019"]?(?:\.{3,}|…{2,})(?:\.?['\u2018\u2019"]?)?|\.{3,}|…{2,})/g;
+  /(\d+)\s*(?:£\s*)?(?:['\u2018\u2019"]?(?:\.{3,}|_{3,}|…{2,})(?:\.?['\u2018\u2019"]?)?|\.{3,}|_{3,}|…{2,})/g;
 const PART_HEADER_RE = /^PART\s+(\d+)\s*$/i;
 const QUESTIONS_RANGE_RE = /^Questions?\s+(\d+)\s*(?:and|&|–|-)\s*(\d+)\s*$/i;
 const SINGLE_QUESTION_RE = /^Questions?\s+(\d+)\s*$/i;
 const MCQ_OPTION_RE = /^([A-H])\s+(.+)$/;
-const MAP_ITEM_RE = /^(\d+)\s+(.+?)\s*(?:\.{3,}|…{2,})\s*$/;
+const MAP_ITEM_RE = /^(\d+)\s+(.+?)\s*(?:\.{3,}|_{3,}|…{2,})\s*$/;
 const IMAGE_LINE_RE = /^IMAGE\s*\|\s*(.+)\s*$/i;
-const ANSWERS_HEADER_RE = /^Answers:\s*$/im;
+const ANSWERS_HEADER_RE = /^Answers?:\s*$|^Answer key:\s*$/im;
 const PAIRED_ANSWER_RE = /^(\d+)\s*&\s*(\d+)\s+(.+)$/i;
 /** Form / table / flowchart completion blocks (not only "notes"). */
 const COMPLETE_BELOW_RE = /Complete the (?:notes|form|table|flowchart) below/i;
@@ -77,6 +77,13 @@ function normalizeLine(line: string): string {
   return line.replace(/\u00a0/g, " ").trim();
 }
 
+function isQnaNoiseLine(line: string): boolean {
+  const t = normalizeLine(line);
+  if (!t) return true;
+  if (/^advertisements?$/i.test(t)) return true;
+  return false;
+}
+
 function parseAnswerKey(lines: readonly string[]): Record<string, string> {
   const answers: Record<string, string> = {};
   for (const raw of lines) {
@@ -123,7 +130,7 @@ function splitPartBlocks(text: string): { partNumber: number; body: string }[] {
       currentPart = Number.parseInt(partMatch[1]!, 10);
       continue;
     }
-    if (currentPart !== null) {
+    if (currentPart !== null && !isQnaNoiseLine(raw)) {
       buffer.push(raw);
     }
   }

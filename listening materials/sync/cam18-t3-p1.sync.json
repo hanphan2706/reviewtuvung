@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "partId": "cam18-t3-p1",
+  "audioFile": "Cam18 Test3 Part1.mp3",
+  "durationSeconds": 470.577813,
+  "method": "whisper-local",
+  "preambleSeconds": 115.39,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "BREDA",
+      "text": "Hello, Wayside Camera Club, Breda speaking.",
+      "start": 101.543,
+      "end": 115.39,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "DAN",
+      "text": "Oh, hello, um, my name’s Dan and I’d like to join your club.",
+      "start": 115.39,
+      "end": 119.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "BREDA",
+      "text": "That’s great, Dan. We have an application form- would you like to complete it over the phone, then you can ask any questions you might have?",
+      "start": 119.81,
+      "end": 128.65
+    },
+    {
+      "id": "cue-4",
+      "speaker": "DAN",
+      "text": "Oh, yes, thanks.",
+      "start": 128.65,
+      "end": 129.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "BREDA",
+      "text": "OK, so what’s your family name?",
+      "start": 129.67,
+      "end": 131.71
+    },
+    {
+      "id": "cue-6",
+      "speaker": "DAN",
+      "text": "It’s Green- Dan Green.",
+      "start": 131.71,
+      "end": 132.03
+    },
+    {
+      "id": "cue-7",
+      "speaker": "BREDA",
+      "text": "So – can I take your email address?",
+      "start": 132.03,
+      "end": 134.75
+    },
+    {
+      "id": "cue-8",
+      "speaker": "DAN",
+      "text": "Yes, it’s dan1068@market.com.",
+      "start": 134.75,
+      "end": 135.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "BREDA",
+      "text": "Thanks. And what about your home address?",
+      "start": 135.77,
+      "end": 138.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "DAN",
+      "text": "Well, I’m about ten miles away from your club in Peacetown. I live in a house there.",
+      "start": 138.15,
+      "end": 143.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "BREDA",
+      "text": "OK, so what’s the house number and street?",
+      "start": 143.93,
+      "end": 146.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "DAN",
+      "text": "It’s 52 Marrowfield Street. Q1",
+      "start": 146.65,
+      "end": 148.35
+    },
+    {
+      "id": "cue-13",
+      "speaker": "BREDA",
+      "text": "Is that M-A double R-O-W-F-l-E-L-D?",
+      "start": 148.35,
+      "end": 150.05
+    },
+    {
+      "id": "cue-14",
+      "speaker": "DAN",
+      "text": "That’s right.",
+      "start": 150.05,
+      "end": 150.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "BREDA",
+      "text": "… and that’s Peacetown, you said?",
+      "start": 150.73,
+      "end": 152.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "DAN",
+      "text": "Uhuh.",
+      "start": 152.77,
+      "end": 153.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "DAN",
+      "text": "——",
+      "start": 153.22,
+      "end": 153.67
+    },
+    {
+      "id": "cue-18",
+      "speaker": "BREDA",
+      "text": "So how did you hear about our club? Did you look on the internet?",
+      "start": 153.67,
+      "end": 158.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "DAN",
+      "text": "I usually do that, but this time, well, I was talking to a relative the other day and he suggested it. Q2",
+      "start": 158.43,
+      "end": 165.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "BREDA",
+      "text": "Oh, is he a member too?",
+      "start": 165.91,
+      "end": 167.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "DAN",
+      "text": "He belongs to another club – but he’d heard good things about yours.",
+      "start": 167.95,
+      "end": 172.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "BREDA",
+      "text": "OK. So what do you hope to get from joining?",
+      "start": 172.37,
+      "end": 175.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "DAN",
+      "text": "Well, one thing that really interests me is the competitions that you have. I enjoy entering those.",
+      "start": 175.77,
+      "end": 180.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "BREDA",
+      "text": "Right. Anything else?",
+      "start": 180.13,
+      "end": 181.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "DAN",
+      "text": "Well, I also like to socialise with other photographers. Q3",
+      "start": 181.47,
+      "end": 186.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "BREDA",
+      "text": "That’s great. So what type of membership would you like?",
+      "start": 186.17,
+      "end": 190.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "DAN",
+      "text": "What are the options?",
+      "start": 190.41,
+      "end": 191.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "BREDA",
+      "text": "It’s £30 a year for full membership or £20 a year if you’re an associate. Q4",
+      "start": 191.77,
+      "end": 208.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "DAN",
+      "text": "I think I’ll go for the full membership, then.",
+      "start": 208.85,
+      "end": 212.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "BREDA",
+      "text": "That’s a good idea because you can’t vote in meetings with an associate membership.",
+      "start": 212.05,
+      "end": 248.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "BREDA",
+      "text": "——",
+      "start": 248.59,
+      "end": 252.06
+    },
+    {
+      "id": "cue-32",
+      "speaker": "BREDA",
+      "text": "If I could just find out a bit more about you …",
+      "start": 252.06,
+      "end": 256.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "DAN",
+      "text": "OK.",
+      "start": 256.14,
+      "end": 256.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "BREDA",
+      "text": "So you said you wanted to compete- have you ever won any photography competitions?",
+      "start": 256.59,
+      "end": 262.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "DAN",
+      "text": "Not yet, but I have entered three in the past.",
+      "start": 262.48,
+      "end": 266.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "BREDA",
+      "text": "Oh, that’s interesting. So why don’t you tell me something about those? Let’s start with the first one.",
+      "start": 266.94,
+      "end": 274.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "DAN",
+      "text": "Well, the theme was entitled ‘Domestic Life’. Q5",
+      "start": 274.38,
+      "end": 278.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "BREDA",
+      "text": "I see – so it had to be something related to the home?",
+      "start": 278.7,
+      "end": 283.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "DAN",
+      "text": "Yeah. I chose to take a photo of a family sitting round the dinner table having a meal, and, urn, I didn’t win, but I did get some feedback.",
+      "start": 283.22,
+      "end": 295.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "BREDA",
+      "text": "Oh, what did the judges say?",
+      "start": 295.68,
+      "end": 298.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "DAN",
+      "text": "That it was too ‘busy’ as a picture.",
+      "start": 298.1,
+      "end": 300.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "BREDA",
+      "text": "Aha – so it was the composition of the picture that they criticised?",
+      "start": 300.88,
+      "end": 306.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "DAN",
+      "text": "That’s right – and once they’d told me that, I could see my mistake.",
+      "start": 306.46,
+      "end": 312.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": "BREDA",
+      "text": "So what was the theme of the second competition?",
+      "start": 312.18,
+      "end": 315.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": "DAN",
+      "text": "Well, my university was on the coast and that area gets a lot of beautiful sunsets so that was the theme.",
+      "start": 315.8,
+      "end": 324.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": "BREDA",
+      "text": "Oh, sunsets, that’s a great theme.",
+      "start": 324.86,
+      "end": 328.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": "DAN",
+      "text": "Yes. The instructions were to capture the clouds as well – it couldn’t just be blue sky and a setting sun. Q6",
+      "start": 328.36,
+      "end": 336.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": "BREDA",
+      "text": "Sure, cause they give you all those amazing pinks and purples.",
+      "start": 336.46,
+      "end": 341.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": "DAN",
+      "text": "Yeah – and I thought I’d done that well, but the feedback was that I should have waited a bit longer to get the shot.",
+      "start": 341.08,
+      "end": 349.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": "BREDA",
+      "text": "I see. So the timing wasn’t right. Q7",
+      "start": 349.58,
+      "end": 353.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": "DAN",
+      "text": "Yes – I took it too soon, basically. And then the third competition I entered was called ‘Animal Magic’. Q8",
+      "start": 353.1,
+      "end": 361.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": "BREDA",
+      "text": "Well, that’s a difficult subject!",
+      "start": 361.68,
+      "end": 364.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": "DAN",
+      "text": "I know! I had to take hundreds of shots.",
+      "start": 364.52,
+      "end": 368.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-54",
+      "speaker": "BREDA",
+      "text": "I’m sure – because animals move all the time.",
+      "start": 368.36,
+      "end": 371.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": "DAN",
+      "text": "That’s what we had to show – there had to be some movement in the scene. Q9 I got a great shot of a fox in the end, but I took it at night and, well, I suspected that it was a bit dark, which is what I was told. Q10",
+      "start": 371.9,
+      "end": 388.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-56",
+      "speaker": "BREDA",
+      "text": "Well Dan – you seem to be really keen and we’d be delighted to have you in our club. I’m sure we can help with all those areas that you’ve outlined.",
+      "start": 388.92,
+      "end": 399.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-57",
+      "speaker": "DAN",
+      "text": "Thanks, that’s great.",
+      "start": 399.46,
+      "end": 470.578,
+      "preAudio": false
+    }
+  ]
+}

@@ -184,6 +184,89 @@ function roundSec(n: number): number {
   return Math.round(n * 1000) / 1000;
 }
 
+function countCueWords(text: string): number {
+  return text.trim().split(/\s+/).filter(Boolean).length;
+}
+
+/** Ước lượng thời lượng tối thiểu theo số từ (tránh cue sập do whisper trùng mốc). */
+function estimateMinCueDuration(text: string): number {
+  const words = countCueWords(text);
+  return Math.max(0.45, Math.min(14, words * 0.34));
+}
+
+function cueDuration(cue: ListeningTranscriptCue): number {
+  return Math.max(0, cue.end - cue.start);
+}
+
+function isCollapsedCue(cue: ListeningTranscriptCue): boolean {
+  if (cue.preAudio) return false;
+  return cueDuration(cue) < estimateMinCueDuration(cue.text) * 0.85;
+}
+
+function redistributeCueRun(
+  cues: ListeningTranscriptCue[],
+  runStart: number,
+  runEnd: number,
+  windowEnd: number,
+): void {
+  const run = cues.slice(runStart, runEnd + 1);
+  const start = run[0]!.start;
+  const available = Math.max(0.6, windowEnd - start);
+  const weights = run.map((cue) => Math.max(1, countCueWords(cue.text)));
+  const total = weights.reduce((sum, w) => sum + w, 0) || run.length;
+  let cursor = start;
+
+  run.forEach((cue, index) => {
+    const isLast = index === run.length - 1;
+    const share = (weights[index]! / total) * available;
+    const minDur = estimateMinCueDuration(cue.text);
+    const span = isLast ? windowEnd - cursor : Math.max(minDur * 0.6, share);
+    cue.start = roundSec(cursor);
+    cue.end = roundSec(isLast ? windowEnd : cursor + span);
+    cursor = cue.end;
+  });
+}
+
+function repairCollapsedCueRuns(cues: ListeningTranscriptCue[], durationSeconds: number): void {
+  let i = 0;
+  while (i < cues.length) {
+    const cur = cues[i];
+    if (!cur || !isCollapsedCue(cur)) {
+      i += 1;
+      continue;
+    }
+
+    let runEnd = i;
+    while (runEnd + 1 < cues.length && isCollapsedCue(cues[runEnd + 1]!)) {
+      runEnd += 1;
+    }
+
+    let windowEnd = durationSeconds;
+    for (let j = runEnd + 1; j <= cues.length; j += 1) {
+      const boundary = j < cues.length ? cues[j]!.start : durationSeconds;
+      if (boundary - cues[i]!.start >= 1.5) {
+        windowEnd = boundary;
+        break;
+      }
+    }
+
+    redistributeCueRun(cues, i, runEnd, windowEnd);
+
+    for (let j = i + 1; j < cues.length; j += 1) {
+      const prev = cues[j - 1]!;
+      const next = cues[j]!;
+      if (next.start < prev.end) {
+        next.start = roundSec(prev.end);
+      }
+      if (next.end <= next.start) {
+        next.end = roundSec(next.start + estimateMinCueDuration(next.text));
+      }
+    }
+
+    i = runEnd + 1;
+  }
+}
+
 const TOKEN_EQUIVALENTS: Record<string, readonly string[]> = {
   ok: ["ok", "okay"],
   okay: ["ok", "okay"],
@@ -768,7 +851,10 @@ function interpolateCueTimes(
       const next = cues[i + 1];
       if (!cur || !next) continue;
       if (next.start > cur.start) {
-        cur.end = roundSec(next.start);
+        const minEnd = cur.start + estimateMinCueDuration(cur.text);
+        cur.end = roundSec(
+          next.start - cur.start >= minEnd - cur.start ? next.start : Math.max(cur.end, minEnd),
+        );
       }
     }
     cues[cues.length - 1]!.end = roundSec(durationSeconds);
@@ -799,7 +885,9 @@ export function normalizeCueTimeline(
     const prev = cues[i - 1];
     const cur = cues[i];
     if (!prev || !cur) continue;
-    if (cur.start < prev.start) {
+    if (cur.start < prev.end) {
+      cur.start = roundSec(prev.end);
+    } else if (cur.start < prev.start) {
       cur.start = roundSec(prev.start + 0.05);
     }
   }
@@ -809,14 +897,46 @@ export function normalizeCueTimeline(
     const next = cues[i + 1];
     if (!cur || !next) continue;
     if (next.start > cur.start) {
-      cur.end = roundSec(next.start);
+      const minEnd = cur.start + estimateMinCueDuration(cur.text);
+      cur.end = roundSec(
+        next.start - cur.start >= minEnd - cur.start ? next.start : Math.max(cur.end, minEnd),
+      );
     } else if (cur.end <= cur.start) {
       cur.end = roundSec(cur.start + 0.35);
     }
   }
 
-  const last = cues[cues.length - 1];
-  if (last) last.end = roundSec(durationSeconds);
+  if (cues[cues.length - 1]) {
+    cues[cues.length - 1]!.end = roundSec(durationSeconds);
+  }
+
+  repairCollapsedCueRuns(cues, durationSeconds);
+
+  for (let i = 1; i < cues.length; i += 1) {
+    const prev = cues[i - 1]!;
+    const cur = cues[i]!;
+    if (cur.start < prev.end) {
+      cur.start = roundSec(prev.end);
+    }
+    if (cur.end <= cur.start) {
+      cur.end = roundSec(cur.start + estimateMinCueDuration(cur.text));
+    }
+  }
+
+  for (let i = 0; i < cues.length - 1; i += 1) {
+    const cur = cues[i]!;
+    const next = cues[i + 1]!;
+    if (cur.end > next.start) {
+      cur.end = roundSec(next.start);
+    }
+    if (cur.end <= cur.start) {
+      cur.end = roundSec(Math.min(next.start, cur.start + estimateMinCueDuration(cur.text)));
+    }
+  }
+
+  if (cues[cues.length - 1]) {
+    cues[cues.length - 1]!.end = roundSec(durationSeconds);
+  }
 
   return cues;
 }

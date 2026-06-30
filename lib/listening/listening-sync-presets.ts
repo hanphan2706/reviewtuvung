@@ -154,10 +154,26 @@ export const LISTENING_SYNC_ANCHORS: Partial<
   ),
 );
 
+function defaultSyncConfigByPartNumber(partNum: number): ListeningSyncPartConfig {
+  switch (partNum) {
+    case 1:
+      return { dialogueMinStartSeconds: 115 };
+    case 2:
+      return { dialogueMinStartSeconds: 58 };
+    case 3:
+      return { dialogueMinStartSeconds: 45 };
+    case 4:
+      return { dialogueMinStartSeconds: 88 };
+    default:
+      return { dialogueMinStartSeconds: 115 };
+  }
+}
+
 export function getListeningSyncPartConfig(partId: string): ListeningSyncPartConfig {
-  return (
-    LISTENING_SYNC_PART_CONFIG[partId] ?? {
-      dialogueMinStartSeconds: 115,
-    }
-  );
+  const explicit = LISTENING_SYNC_PART_CONFIG[partId];
+  if (explicit) return explicit;
+
+  const partMatch = partId.match(/-p(\d)$/);
+  const partNum = partMatch ? Number.parseInt(partMatch[1] ?? "1", 10) : 1;
+  return defaultSyncConfigByPartNumber(partNum);
 }

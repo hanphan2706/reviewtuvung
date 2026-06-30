@@ -1,0 +1,434 @@
+{
+  "version": 1,
+  "partId": "cam20-t4-p3",
+  "audioFile": "Cam20 Test4 Part3.mp3",
+  "durationSeconds": 472.687166,
+  "method": "whisper-local",
+  "preambleSeconds": 50.47,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "MAN",
+      "text": "How are you getting on with the assignment on handwriting?",
+      "start": 50.47,
+      "end": 53.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "WOMAN",
+      "text": "Not too bad.",
+      "start": 53.93,
+      "end": 55.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "WOMAN",
+      "text": "You know, I hadn’t realised that children benefit in so many ways from learning to write.",
+      "start": 55.71,
+      "end": 61.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "WOMAN",
+      "text": "It’s such an important skill, and yet most people think handwriting is less important than in the past, because people hardly ever write by hand these days.",
+      "start": 61.75,
+      "end": 72.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "MAN",
+      "text": "Yes, and all the evidence suggests children should learn to write by hand before they learn to type, not least because it helps their memory.",
+      "start": 72.29,
+      "end": 81.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "WOMAN",
+      "text": "That’s right. The physical act of writing helps children to remember letters. That seems pretty obvious when you think about it.",
+      "start": 81.19,
+      "end": 90.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "MAN",
+      "text": "What’s less obvious is how it helps develop their concentration. They have to sit still and focus on one thing.",
+      "start": 90.49,
+      "end": 97.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "WOMAN",
+      "text": "Yeah, that aspect of handwriting had never occurred to me before.",
+      "start": 97.77,
+      "end": 102.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "MAN",
+      "text": "Same here. I’m not sure I understand how it improves children’s imagination, though.",
+      "start": 102.11,
+      "end": 108.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "WOMAN",
+      "text": "Well there was that study which showed that primary age children generated more ideas when they were writing by hand than using a keyboard I would have guessed that would be the case.",
+      "start": 108.31,
+      "end": 120.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "MAN",
+      "text": "Hmm yeah I never associated spatial awareness with handwriting either. I thought spatial awareness was more to do with knowing where you are in relation to objects or other people.",
+      "start": 120.29,
+      "end": 133.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "WOMAN",
+      "text": "I thought that too.",
+      "start": 133.77,
+      "end": 135.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "WOMAN",
+      "text": "But good spatial awareness is essential for writing because you have to space words correctly.",
+      "start": 135.21,
+      "end": 142.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "WOMAN",
+      "text": "It’s not just fine motor skills that improve through writing, as I’d always assumed.",
+      "start": 142.09,
+      "end": 148.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "MAN",
+      "text": "Handwriting is so much harder for children with dyspraxia, who have problems coordinating movement.",
+      "start": 148.33,
+      "end": 154.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "MAN",
+      "text": "It’s good there are lots of things you can do in the classroom to help them.",
+      "start": 154.87,
+      "end": 160.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "MAN",
+      "text": "They need so much more support with letter formation.",
+      "start": 160.31,
+      "end": 163.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "MAN",
+      "text": "You need to play lots of games to help them distinguish letter shapes.",
+      "start": 163.37,
+      "end": 167.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "MAN",
+      "text": "It takes a lot of patience.",
+      "start": 167.79,
+      "end": 168.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "WOMAN",
+      "text": "Yeah, I like the idea of using one of those pens that lights up if you press too hard. That seems like a really simple solution.",
+      "start": 168.53,
+      "end": 177.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "MAN",
+      "text": "Yes, absolutely.",
+      "start": 177.37,
+      "end": 178.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "MAN",
+      "text": "I’m not sure there’s much you can do about children with dyspraxia writing very slowly.",
+      "start": 178.67,
+      "end": 184.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "MAN",
+      "text": "It’s more important to focus on accuracy and as they get more confident, I think they eventually speed up.",
+      "start": 184.37,
+      "end": 192.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "WOMAN",
+      "text": "One quite simple thing you can do is to use grid paper. So they write each letter in a box and that trains them to space the letters correctly.",
+      "start": 192.27,
+      "end": 202.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "MAN",
+      "text": "Indeed, that’s more important for legibility than trying to get them to write in a straight line.",
+      "start": 202.35,
+      "end": 210.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30. you. Now listen and answer questions 25 to 30.",
+      "start": 210.86,
+      "end": 275.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "MAN",
+      "text": "For some children, it might be better to teach them to write on a laptop rather than by hand, like children with dyslexia. They often really struggle with handwriting and some just give up.",
+      "start": 275.65,
+      "end": 288.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "WOMAN",
+      "text": "Yeah, it’s not as frustrating for them if they get things wrong. On a keyboard, they can be more willing to have a go. But I read that developing fluency isn’t any faster.",
+      "start": 288.73,
+      "end": 300.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "MAN",
+      "text": "That’s right. Did you read that article on the benefits of teaching print rather than cursive handwriting, where the letters are joined up?",
+      "start": 300.73,
+      "end": 309.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "WOMAN",
+      "text": "Yes.",
+      "start": 309.89,
+      "end": 311.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "WOMAN",
+      "text": "Well, in the past, cursive writing was certainly considered more stylish and educated, but not anymore.",
+      "start": 311.11,
+      "end": 319.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "WOMAN",
+      "text": "Teachers’ attitudes have changed because it’s been proved that cursive is more difficult to learn, especially for children with learning difficulties who find joining up letters really challenging.",
+      "start": 319.05,
+      "end": 331.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "MAN",
+      "text": "I agree.",
+      "start": 331.33,
+      "end": 332.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "MAN",
+      "text": "I was always worried that my poor handwriting affected my exam results, and now research shows that I was right to worry.",
+      "start": 332.69,
+      "end": 341.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "MAN",
+      "text": "I’m sure a lot of students think it’s unfair that they’re being judged on their handwriting, not just their knowledge.",
+      "start": 341.59,
+      "end": 348.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "WOMAN",
+      "text": "Marks are definitely affected if examiners can read the script.",
+      "start": 348.39,
+      "end": 352.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "WOMAN",
+      "text": "That is why it has always been so important to teach children to write legibly.",
+      "start": 352.57,
+      "end": 357.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "WOMAN",
+      "text": "Do you think the role of handwriting will change in the future",
+      "start": 357.67,
+      "end": 362.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "MAN",
+      "text": "I can’t see that changing much.",
+      "start": 362.23,
+      "end": 364.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "MAN",
+      "text": "Touch typing still isn’t taught in most schools, which is a shame.",
+      "start": 364.93,
+      "end": 369.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "MAN",
+      "text": "But maybe that won’t be necessary in the future, because people will also be able to write by hand on digital devices.",
+      "start": 369.41,
+      "end": 377.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "MAN",
+      "text": "Anyway, teachers understand the value of handwriting.",
+      "start": 377.07,
+      "end": 380.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "MAN",
+      "text": "It’s a basic life skill.",
+      "start": 380.85,
+      "end": 383.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": "WOMAN",
+      "text": "True. However, the fact is that people are writing by hand less and less and relying on digital devices. That does cause some problems.",
+      "start": 383.43,
+      "end": 394.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": "MAN",
+      "text": "You mean like note-taking. There are lots of apps for that.",
+      "start": 394.51,
+      "end": 398.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": "WOMAN",
+      "text": "And for reading historical documents, apparently.",
+      "start": 398.81,
+      "end": 402.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": "WOMAN",
+      "text": "But my mum is shocked by my awful spelling and the fact that my punctuation is really inconsistent.",
+      "start": 402.37,
+      "end": 409.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": "WOMAN",
+      "text": "I think you can put that down to lack of practice.",
+      "start": 409.23,
+      "end": 412.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": "MAN",
+      "text": "I expect so. Personally, I miss writing by hand. I hardly ever write anything now. I remember my",
+      "start": 412.97,
+      "end": 420.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": "MAN",
+      "text": "grandparents had such beautiful handwriting and it was so individual. Nobody I know would",
+      "start": 420.43,
+      "end": 426.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": "MAN",
+      "text": "be able to identify my handwriting now. It’s a shame.",
+      "start": 426.79,
+      "end": 430.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": "WOMAN",
+      "text": "I know. I feel the same way. I used to write a diary by hand and now I do that digitally. It just",
+      "start": 430.67,
+      "end": 438.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": "WOMAN",
+      "text": "seems less effort to do it that way. So it’s not just a problem…",
+      "start": 438.89,
+      "end": 472.687,
+      "preAudio": false
+    }
+  ]
+}

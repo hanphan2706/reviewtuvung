@@ -4,6 +4,7 @@ import { useEffect, useRef, type MouseEvent, type ReactNode } from "react";
 import { useCueSeekGesture } from "@/hooks/use-flow-text-selection";
 import { findActiveCueId } from "@/lib/listening/build-transcript-sync";
 import type { ListeningTranscriptCue, ListeningTranscriptSyncFile } from "@/lib/listening/listening-transcript-sync-types";
+import { resolveCueSpeakerAndBody } from "@/lib/listening/parse-transcript-speaker";
 
 function highlightQuestionMarkers(text: string, muted: boolean): ReactNode[] {
   const parts = text.split(/(Q\d+)/g);
@@ -103,14 +104,16 @@ export function ListeningSyncedTranscriptBody({
             : "font-normal text-[#b3b3b3]"
         } ${preAudio && !isActive ? "italic" : ""}`;
 
+        const { speaker, body } = resolveCueSpeakerAndBody(cue.speaker, cue.text);
+
         const textContent = (
           <>
-            {cue.speaker ? (
+            {speaker ? (
               <span className={isActive ? "font-semibold text-[#4b2876]" : "font-medium text-[#4b2876]/50"}>
-                {cue.speaker}:{" "}
+                {speaker}:{" "}
               </span>
             ) : null}
-            {highlightQuestionMarkers(cue.text, !isActive)}
+            {highlightQuestionMarkers(body, !isActive)}
           </>
         );
 

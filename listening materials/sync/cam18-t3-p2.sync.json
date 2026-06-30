@@ -1,0 +1,315 @@
+{
+  "version": 1,
+  "partId": "cam18-t3-p2",
+  "audioFile": "Cam18 Test3 Part2.mp3",
+  "durationSeconds": 467.417,
+  "method": "whisper-local",
+  "preambleSeconds": 63.65,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "PRESENTER",
+      "text": "This evening we’re delighted to welcome Dan Beagle, who’s just written a book on looking for and finding food in the wild. He’s going to tell us everything we need to know about picking wild mushrooms.",
+      "start": 51.41,
+      "end": 63.65,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "DAN",
+      "text": "Thank you very much. Well, I need to start by talking about safety. You really need to know what you’re doing because some mushrooms are extremely poisonous. Having said that, once you know what to look for, it’s really worth doing for the amazing variety of mushrooms available – which you can’t get in the shops. But of course, you have to be very careful and that’s why I always say you should never consume mushrooms picked by friends or neighbours – always remember that some poisonous mushrooms look very similar to edible ones and it’s easy for people to get confused. The other thing to avoid is mushrooms growing beside busy roads for obvious reasons. But nothing beats the taste of freshly picked mushrooms – don’t forget that the ones in the shops are often several days old and past their best. Q11/12",
+      "start": 63.65,
+      "end": 122.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "DAN",
+      "text": "There are certain ideas about wild mushrooms that it’s important to be aware of.",
+      "start": 122.64,
+      "end": 129.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "DAN",
+      "text": "Don’t listen to people who tell you that it’s only OK to eat mushrooms that are pale or dull – this is completely untrue.",
+      "start": 129.4,
+      "end": 141.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "DAN",
+      "text": "Some edible mushrooms are bright red, for example.",
+      "start": 141.34,
+      "end": 145.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "DAN",
+      "text": "Personally, I prefer mushrooms cooked but it won’t do you any harm to eat them uncooked in salads – it’s not necessary to peel them.",
+      "start": 145.78,
+      "end": 157.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "DAN",
+      "text": "Another thing you should remember is that you can’t tell if a mushroom is safe to eat by its smell – some of the most deadly mushrooms have no smell and taste quite nice, apparently.",
+      "start": 157.08,
+      "end": 171.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "DAN",
+      "text": "Finally, just because deer or squirrels eat a particular mushroom doesn’t mean that you can.",
+      "start": 171.98,
+      "end": 237.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "DAN",
+      "text": "Q13/14",
+      "start": 237.18,
+      "end": 237.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "DAN",
+      "text": "—–",
+      "start": 237.96,
+      "end": 241.39
+    },
+    {
+      "id": "cue-11",
+      "speaker": "DAN",
+      "text": "Of course, mushroom picking is associated with the countryside but if you haven’t got a car, your local park can be a great place to start.",
+      "start": 241.39,
+      "end": 252.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "DAN",
+      "text": "There are usually a range of habitats where mushrooms grow, such as playing fields and wooded areas.",
+      "start": 252.69,
+      "end": 261.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "DAN",
+      "text": "But you need to be there first thing in the morning, as there’s likely be a lot of competition – not just from people but wildlife too.",
+      "start": 261.53,
+      "end": 272.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "DAN",
+      "text": "The deer often get the best mushrooms in my local park.",
+      "start": 272.31,
+      "end": 276.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "DAN",
+      "text": "Q15",
+      "start": 276.35,
+      "end": 277.51
+    },
+    {
+      "id": "cue-16",
+      "speaker": "DAN",
+      "text": "If you’re a complete beginner, I wouldn’t recommend going alone or relying on photos in a book, even the one I’ve written!",
+      "start": 277.51,
+      "end": 289.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "DAN",
+      "text": "There are some really good phone apps for identifying mushrooms, but you can’t always rely on getting a good signal in the middle of a wood.",
+      "start": 289.05,
+      "end": 298.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "DAN",
+      "text": "If possible, you should go with a group led by an expert – you’ll stay safe and learn a lot that way.",
+      "start": 298.87,
+      "end": 306.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "DAN",
+      "text": "Q16",
+      "start": 306.75,
+      "end": 308.35
+    },
+    {
+      "id": "cue-20",
+      "speaker": "DAN",
+      "text": "Conservation is a really important consideration and you must follow a few basic rules.",
+      "start": 308.35,
+      "end": 315.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "DAN",
+      "text": "You should never pick all the mushrooms in one area – collect only enough for your own needs.",
+      "start": 315.13,
+      "end": 323.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "DAN",
+      "text": "Be very careful that you don’t trample on young mushrooms or other plants.",
+      "start": 323.41,
+      "end": 329.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "DAN",
+      "text": "And make sure you don’t pick any mushrooms that are endangered and protected by law.",
+      "start": 329.85,
+      "end": 336.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "DAN",
+      "text": "Q17",
+      "start": 336.41,
+      "end": 338.11
+    },
+    {
+      "id": "cue-25",
+      "speaker": "DAN",
+      "text": "There’s been a decline in some varieties of wild mushrooms in this part of the country.",
+      "start": 338.11,
+      "end": 344.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "DAN",
+      "text": "Restaurants are becoming more interested in locally sourced food like wild mushrooms, but the biggest problem is that so many new houses have been built in this area in the last ten years.",
+      "start": 344.65,
+      "end": 359.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "DAN",
+      "text": "And more water is being taken from rivers and reservoirs because of this, and mushroom habitats have been destroyed.",
+      "start": 359.31,
+      "end": 367.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "DAN",
+      "text": "Q18",
+      "start": 367.43,
+      "end": 368.57
+    },
+    {
+      "id": "cue-29",
+      "speaker": "DAN",
+      "text": "Anyway, a word of advice on storing mushrooms.",
+      "start": 368.57,
+      "end": 373.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "DAN",
+      "text": "Collect them in a brown paper bag and as soon as you get home, put them in the fridge.",
+      "start": 373.79,
+      "end": 380.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "DAN",
+      "text": "They’ll be fine for a couple of days, but it’s best to cook them as soon as possible – after washing them really carefully first, of course.",
+      "start": 380.25,
+      "end": 389.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "DAN",
+      "text": "Q19",
+      "start": 389.43,
+      "end": 390.03
+    },
+    {
+      "id": "cue-33",
+      "speaker": "DAN",
+      "text": "So everybody knows what a mushroom tastes like, right?",
+      "start": 390.03,
+      "end": 394.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "DAN",
+      "text": "Well, you’ll be surprised by the huge variety of wild mushrooms there are.",
+      "start": 394.89,
+      "end": 400.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "DAN",
+      "text": "Be adventurous!",
+      "start": 400.87,
+      "end": 402.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "DAN",
+      "text": "They’re great in so many dishes – stir fries, risottos, pasta.",
+      "start": 402.83,
+      "end": 409.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "DAN",
+      "text": "But just be aware that some people can react badly to certain varieties so it’s a good idea not to eat huge quantities to begin with.",
+      "start": 409.45,
+      "end": 420.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "DAN",
+      "text": "Q20",
+      "start": 420.01,
+      "end": 420.93
+    },
+    {
+      "id": "cue-39",
+      "speaker": "DAN",
+      "text": "OK, so now I’m going to show you …",
+      "start": 420.93,
+      "end": 467.417,
+      "preAudio": false
+    }
+  ]
+}

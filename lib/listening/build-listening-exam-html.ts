@@ -2,6 +2,8 @@ import { formatExamInstructionHtml } from "@/lib/exam/format-exam-instruction-ht
 import { getListeningPartById, type ListeningPartMeta } from "@/lib/listening/content-manifest";
 import { loadListeningFullTestTranscriptByPart } from "@/lib/listening/load-listening-full-test-transcript";
 import { loadListeningTranscriptText } from "@/lib/listening/load-listening-transcript-text";
+import { listeningSyncCuesToExamHtml } from "@/lib/listening/listening-sync-cues-to-exam-html";
+import { readListeningSyncFile } from "@/lib/listening/listening-sync-fs";
 import {
   getListeningIeltsTest,
   listeningPartIdForTest,
@@ -82,6 +84,30 @@ export function buildListeningFullTestTranscriptBodyHtml(
     })
     .join("\n");
   return panels;
+}
+
+function buildSyncedTranscriptHtmlForPart(partId: string): string | null {
+  const sync = readListeningSyncFile(partId);
+  if (!sync) return null;
+  return listeningSyncCuesToExamHtml(sync);
+}
+
+function buildSyncedFullTestTranscriptHtmlByPart(
+  testId: ListeningIeltsTestId,
+): Partial<Record<number, string>> | null {
+  const transcriptHtmlByPart: Partial<Record<number, string>> = {};
+  let hasAny = false;
+
+  for (const part of [1, 2, 3, 4] as const) {
+    const partId = listeningPartIdForTest(testId, part);
+    const html = buildSyncedTranscriptHtmlForPart(partId);
+    if (html) {
+      transcriptHtmlByPart[part] = html;
+      hasAny = true;
+    }
+  }
+
+  return hasAny ? transcriptHtmlByPart : null;
 }
 
 function escHtml(text: string): string {
@@ -414,7 +440,9 @@ ${chunks.join('<div style="margin-top:28px"></div>')}
 </div>`;
 
   const transcriptText = loadListeningTranscriptText(meta);
-  const transcriptHtml = transcriptText ? listeningTranscriptPlainToSafeHtml(transcriptText) : "";
+  const syncedTranscriptHtml = buildSyncedTranscriptHtmlForPart(meta.id);
+  const transcriptHtml = syncedTranscriptHtml
+    ?? (transcriptText ? listeningTranscriptPlainToSafeHtml(transcriptText) : "");
 
   return {
     partId: meta.id,
@@ -495,7 +523,6 @@ export function buildListeningFullTestExamPayload(
 
   const testMeta = getListeningIeltsTest(testId);
   if (!testMeta) return null;
-  const testNumber = testMeta.testNumber;
   const questionHtmlParts: string[] = [];
   const allNums: number[] = [];
   const answerKey: Record<string, string> = {};
@@ -504,7 +531,7 @@ export function buildListeningFullTestExamPayload(
 
   for (let part = 1; part <= 4; part += 1) {
     const qnaPart = getListeningQnaPart(parsed, part);
-    const meta = getListeningPartById(listeningPartIdForTest(testNumber, part));
+    const meta = getListeningPartById(listeningPartIdForTest(testId, part));
     if (!qnaPart || !meta) return null;
 
     const chunk = buildListeningPartQuestionsChunk(meta, qnaPart);
@@ -525,11 +552,14 @@ export function buildListeningFullTestExamPayload(
   const questionNums = [...new Set(allNums)].sort((a, b) => a - b);
   if (questionNums.length === 0) return null;
 
-  const transcriptByPart = loadListeningFullTestTranscriptByPart(testNumber);
-  const transcriptHtmlByPart: Partial<Record<number, string>> = {};
-  for (const part of [1, 2, 3, 4] as const) {
-    const text = transcriptByPart[part];
-    if (text) transcriptHtmlByPart[part] = listeningTranscriptPlainToSafeHtml(text);
+  const transcriptByPart = loadListeningFullTestTranscriptByPart(testId);
+  const syncedByPart = buildSyncedFullTestTranscriptHtmlByPart(testId);
+  const transcriptHtmlByPart: Partial<Record<number, string>> = syncedByPart ?? {};
+  if (!syncedByPart) {
+    for (const part of [1, 2, 3, 4] as const) {
+      const text = transcriptByPart[part];
+      if (text) transcriptHtmlByPart[part] = listeningTranscriptPlainToSafeHtml(text);
+    }
   }
   const transcriptHtml = buildListeningFullTestTranscriptBodyHtml(transcriptHtmlByPart);
   const hasAnswerKey = questionNums.some((n) => answerKey[String(n)] != null && answerKey[String(n)] !== "");

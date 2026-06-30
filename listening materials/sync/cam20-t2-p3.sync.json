@@ -1,0 +1,466 @@
+{
+  "version": 1,
+  "partId": "cam20-t2-p3",
+  "audioFile": "Cam20 Test2 Part3.mp3",
+  "durationSeconds": 422.392744,
+  "method": "whisper-local",
+  "preambleSeconds": 49.54,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "ROSIE",
+      "text": "Colin, I’m really struggling to think of a topic for our human geography assignment.",
+      "start": 49.54,
+      "end": 54.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "COLIN",
+      "text": "Me too, Rosie. I’ll tell you what, let’s think about the different aspects of human geography and see if we can narrow the topic down a bit to help us decide.",
+      "start": 54.64,
+      "end": 65.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "ROSIE",
+      "text": "OK. So one aspect is population. That would be all about population density and migration and so on. Lots of facts and statistics. Maybe a bit boring?",
+      "start": 65.18,
+      "end": 74.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "COLIN",
+      "text": "Yeah, but quite straightforward to find on the internet.",
+      "start": 74.64,
+      "end": 78.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "ROSIE",
+      "text": "Suppose so.",
+      "start": 78.36,
+      "end": 79.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "ROSIE",
+      "text": "How about health?",
+      "start": 79.32,
+      "end": 81.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "ROSIE",
+      "text": "I’d never thought about the links between that and geography until Professor Lee gave us that lecture on cholera.",
+      "start": 81.26,
+      "end": 87.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "ROSIE",
+      "text": "How in the 19th century, a physician used street plans and plans of water supplies to find the source of a cholera epidemic.",
+      "start": 87.72,
+      "end": 95.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "COLIN",
+      "text": "Yes, fascinating, wasn’t it? Or we could do something more general like economies",
+      "start": 95.54,
+      "end": 101.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "ROSIE",
+      "text": "So how financial and commercial factors are linked to the physical environment",
+      "start": 101.08,
+      "end": 105.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "COLIN",
+      "text": "Yeah",
+      "start": 105.16,
+      "end": 105.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "ROSIE",
+      "text": "I thought that had been taken off the syllabus for this year",
+      "start": 105.72,
+      "end": 109.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "COLIN",
+      "text": "Has it",
+      "start": 109.8,
+      "end": 110.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "ROSIE",
+      "text": "I not sure but it might be best to avoid it",
+      "start": 110.48,
+      "end": 114.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "COLIN",
+      "text": "OK. Maybe we could do something on culture. We had that lecture about culture and geography last week.",
+      "start": 114.22,
+      "end": 120.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "ROSIE",
+      "text": "I didn’t get much out of that. It was all so general and the lecturer didn’t give any useful examples.",
+      "start": 120.02,
+      "end": 126.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "COLIN",
+      "text": "Yeah, I hardly took any notes. It didn’t seem worth it.",
+      "start": 126.82,
+      "end": 130.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "ROSIE",
+      "text": "Me neither.",
+      "start": 130.56,
+      "end": 131.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "COLIN",
+      "text": "We could focus on poverty. That’s something that’s a global problem.",
+      "start": 131.24,
+      "end": 135.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "ROSIE",
+      "text": "The trouble is, Dr Lee was saying, that you have to be careful with some of the figures relating to poverty. They’re sometimes deliberately manipulated.",
+      "start": 135.16,
+      "end": 143.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "COLIN",
+      "text": "You mean the information gets changed for political reasons?",
+      "start": 143.66,
+      "end": 146.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "ROSIE",
+      "text": "That sort of thing, yes.",
+      "start": 146.86,
+      "end": 151.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Before you hear the rest of the discussion, you have some time to look at questions 26 to 30. you Now listen and answer questions 26 to 30.",
+      "start": 151.51,
+      "end": 200.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "ROSIE",
+      "text": "So what are we going to do our assignment on?",
+      "start": 200.4,
+      "end": 203.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "ROSIE",
+      "text": "I’ll tell you what.",
+      "start": 203.8,
+      "end": 205.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "ROSIE",
+      "text": "One of the possibilities we have discussed is urbanisation and now over half the world population lives in cities.",
+      "start": 205.16,
+      "end": 211.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "ROSIE",
+      "text": "That really important",
+      "start": 211.62,
+      "end": 213,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "COLIN",
+      "text": "OK good idea Rosie Let do that",
+      "start": 213,
+      "end": 215.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "ROSIE",
+      "text": "I love living in a big city but of course there are problems",
+      "start": 215.96,
+      "end": 220.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "COLIN",
+      "text": "Things like theft and robbery?",
+      "start": 220.38,
+      "end": 222.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "ROSIE",
+      "text": "Yes, but where I come from, that’s linked to another more serious issue, which is that a lot of people don’t have jobs.",
+      "start": 222.08,
+      "end": 229.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "ROSIE",
+      "text": "That’s getting worse and worse.",
+      "start": 229.9,
+      "end": 230.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "ROSIE",
+      "text": "And we also still have quite a lot of people who are homeless, though that’s not quite so bad as it was.",
+      "start": 230.96,
+      "end": 238.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "COLIN",
+      "text": "It would be nice to talk about some positive developments, like some of the new developments on the outskirts of cities.",
+      "start": 238.44,
+      "end": 245.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "ROSIE",
+      "text": "Yeah, they’ve opened some massive new shopping centres outside my city.",
+      "start": 245.38,
+      "end": 249.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "COLIN",
+      "text": "Yeah, the same with mine, but it means a lot of the shops in the city centre are closing down.",
+      "start": 249.12,
+      "end": 254.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "COLIN",
+      "text": "But the outskirts are ideal for buildings that need a lot of space, like for conferences.",
+      "start": 254.04,
+      "end": 259.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "COLIN",
+      "text": "They’ve opened a couple of big ones.",
+      "start": 259.48,
+      "end": 261.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "ROSIE",
+      "text": "Yes, we’ve got some too. It’d be nicer to have more facilities for things like football too, but that’s not happening where I live.",
+      "start": 261.86,
+      "end": 269.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "COLIN",
+      "text": "Same in my area.",
+      "start": 269.82,
+      "end": 271.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "ROSIE",
+      "text": "We could include something about developing disused industrial sites. It seems like a good idea because you’re not doing any harm to the natural environment.",
+      "start": 271.18,
+      "end": 279.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "COLIN",
+      "text": "Yeah, but aren’t the buildings architecturally significant?",
+      "start": 279.1,
+      "end": 283.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "ROSIE",
+      "text": "Not really. And what people forget is that they often used quite dangerous materials, chemicals",
+      "start": 283.32,
+      "end": 288.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": "ROSIE",
+      "text": "and things, which haven’t been properly cleared away, so the whole site has to be made safe.",
+      "start": 288.96,
+      "end": 294.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": "COLIN",
+      "text": "Hmm, that can’t be cheap. And I bet it’s often not budgeted for.",
+      "start": 294.74,
+      "end": 299.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": "ROSIE",
+      "text": "You’re right.",
+      "start": 299.16,
+      "end": 299.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": "COLIN",
+      "text": "Have you read about Masdar City?",
+      "start": 299.84,
+      "end": 301.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": "ROSIE",
+      "text": "In Abu Dhabi? Yes. It was designed to be a green city, wasn’t it? That might be a good example of a city which set out to depend entirely on renewable energy.",
+      "start": 301.7,
+      "end": 312.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": "COLIN",
+      "text": "Yes we should say something about that It was designed to be totally pedestrianised too wasn’t it with the transport underground",
+      "start": 312.58,
+      "end": 320.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": "ROSIE",
+      "text": "Yes and they had big plans for recycling to reduce waste to the lowest possible level But let’s stick to talking about power sources.",
+      "start": 320.62,
+      "end": 329.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": "COLIN",
+      "text": "Then there’s that ecotown in England, Greenhill Abbotts.",
+      "start": 329.38,
+      "end": 333.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": "COLIN",
+      "text": "It set out to conform to the usual principles, sustainability and so on.",
+      "start": 333.72,
+      "end": 339.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": "COLIN",
+      "text": "A lot of people were against it at first.",
+      "start": 339.08,
+      "end": 342.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-54",
+      "speaker": "COLIN",
+      "text": "They said the plans were unrealistic.",
+      "start": 342.14,
+      "end": 344.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": "COLIN",
+      "text": "I’m not sure how far they’ve got with it.",
+      "start": 344.36,
+      "end": 347.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-56",
+      "speaker": "COLIN",
+      "text": "I’ll check.",
+      "start": 347.44,
+      "end": 348.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-57",
+      "speaker": "ROSIE",
+      "text": "Right. So it looks as if we have a sort of plan.",
+      "start": 348.14,
+      "end": 422.393,
+      "preAudio": false
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import type { ListeningTranscriptCue, ListeningTranscriptSyncFile } from "@/lib/listening/listening-transcript-sync-types";
+import { resolveCueSpeakerAndBody } from "@/lib/listening/parse-transcript-speaker";
 
 function buildTranscriptPartPanelsHtml(transcriptHtmlByPart: Partial<Record<number, string>>): string {
   return [1, 2, 3, 4]
@@ -75,12 +76,13 @@ function cuesToExamHtml(cues: ListeningTranscriptCue[]): string {
 
   return cues
     .map((cue: ListeningTranscriptCue) => {
-      const speaker = cue.speaker
-        ? `<span class="transcript-cue-speaker">${escapeHtml(cue.speaker)}:</span> `
+      const { speaker, body } = resolveCueSpeakerAndBody(cue.speaker, cue.text);
+      const speakerHtml = speaker
+        ? `<span class="transcript-cue-speaker">${escapeHtml(speaker)}:</span> `
         : "";
       return `<div role="button" tabindex="0" class="transcript-cue" data-cue-id="${escapeHtml(cue.id)}" data-start="${cue.start}" data-end="${cue.end}">
   <time class="transcript-cue-time">${formatCueTime(cue.start)}</time>
-  <span class="transcript-cue-text">${speaker}${highlightQuestionMarkers(cue.text)}</span>
+  <span class="transcript-cue-text">${speakerHtml}${highlightQuestionMarkers(body)}</span>
 </div>`;
     })
     .join("\n");

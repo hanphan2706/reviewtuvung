@@ -1,12 +1,15 @@
 import fs from "node:fs";
 import { getListeningPartById } from "@/lib/listening/content-manifest";
-import { listeningPartIdForTest } from "@/lib/listening/ielts-test-catalog";
+import {
+  listeningPartIdForTest,
+  type ListeningIeltsTestId,
+} from "@/lib/listening/ielts-test-catalog";
 import { resolveListeningTranscriptPath } from "@/lib/listening/listening-materials-fs";
 import { sanitizeListeningTranscript } from "@/lib/sanitize-listening-transcript";
 import { splitTranscriptByPart } from "@/lib/listening/split-transcript-parts";
 
-function readFullTestTranscriptByPart(testNumber: number): Partial<Record<number, string>> {
-  const meta = getListeningPartById(listeningPartIdForTest(testNumber, 1));
+function readFullTestTranscriptByPart(testId: ListeningIeltsTestId): Partial<Record<number, string>> {
+  const meta = getListeningPartById(listeningPartIdForTest(testId, 1));
   if (!meta) return {};
 
   for (const file of meta.transcriptTryFiles) {
@@ -32,8 +35,8 @@ function readFullTestTranscriptByPart(testNumber: number): Partial<Record<number
 }
 
 /** Transcript đủ 4 Part (ghép) — legacy. */
-export function loadListeningFullTestTranscriptText(testNumber: number): string {
-  const byPart = readFullTestTranscriptByPart(testNumber);
+export function loadListeningFullTestTranscriptText(testId: ListeningIeltsTestId): string {
+  const byPart = readFullTestTranscriptByPart(testId);
   return [1, 2, 3, 4]
     .map((part) => byPart[part] ?? "")
     .filter((text) => text.length > 0)
@@ -42,7 +45,7 @@ export function loadListeningFullTestTranscriptText(testNumber: number): string 
 
 /** Transcript theo từng Part cho full test listening. */
 export function loadListeningFullTestTranscriptByPart(
-  testNumber: number,
+  testId: ListeningIeltsTestId,
 ): Partial<Record<number, string>> {
-  return readFullTestTranscriptByPart(testNumber);
+  return readFullTestTranscriptByPart(testId);
 }

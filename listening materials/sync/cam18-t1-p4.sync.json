@@ -1,0 +1,356 @@
+{
+  "version": 1,
+  "partId": "cam18-t1-p4",
+  "audioFile": "Cam18 Test1 Part4.mp3",
+  "durationSeconds": 527.603125,
+  "method": "whisper-local",
+  "preambleSeconds": 88.21,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "For my presentation today I want to tell you about how groups of elephants have been moved and settled in new reserves.",
+      "start": 77.625,
+      "end": 88.21,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "This is known as translocation and has been carried out in Malawi in Africa in recent years.",
+      "start": 88.21,
+      "end": 93.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "The reason this is being done is because of overpopulation of elephants in some areas.",
+      "start": 93.99,
+      "end": 100.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Overpopulation is a good problem to have and not one we tend to hear about very often.",
+      "start": 100.27,
+      "end": 107.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "In Malawi’s Majete National Park the elephant population had been wiped out by poachers, who killed the elephants for their ivory.",
+      "start": 107.67,
+      "end": 118.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "But in 2003, the park was restocked and effective law enforcement was introduced.",
+      "start": 118.09,
+      "end": 126.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Since then, not a single elephant has been poached.",
+      "start": 126.21,
+      "end": 130.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "In this safe environment, the elephant population boomed.",
+      "start": 130.81,
+      "end": 136.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Breeding went so well that there were more elephants than the park could support.",
+      "start": 136.99,
+      "end": 144.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "This led to a number of problems.",
+      "start": 144.13,
+      "end": 147.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Firstly, there was more competition for food, which meant that some elephants were suffering from hunger.",
+      "start": 147.15,
+      "end": 156.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "As there was a limit to the amount of food in the national park, some elephants began looking further afield.",
+      "start": 156.31,
+      "end": 165.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Elephants were routinely knocking down fences around the park, which then had to be repaired at a significant cost.",
+      "start": 165.59,
+      "end": 175.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Q31",
+      "start": 175.71,
+      "end": 176.53
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "To solve this problem, the decision was made to move dozens of elephants from Majete National Park to Nkhotakota Wildlife Park, where there were no elephants.",
+      "start": 176.53,
+      "end": 190.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "But, obviously, attempting to move significant numbers of elephants to a new home 300 kilometres away is quite a challenge.",
+      "start": 190.15,
+      "end": 199.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "—–",
+      "start": 199.81,
+      "end": 205.28
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "So how did this translocation process work in practice?",
+      "start": 205.28,
+      "end": 211.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Elephants were moved in groups of between eight and twenty, all belonging to one family.",
+      "start": 211.5,
+      "end": 220,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Q32 Because relationships are very important to elephants, they all had to be moved at the same time.",
+      "start": 220,
+      "end": 228.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "A team of vets and park rangers flew over the park in helicopters and targeted a group, which were rounded up and directed to a designated open plain.",
+      "start": 228.36,
+      "end": 241.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Q33",
+      "start": 241.5,
+      "end": 243.14
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "The vets then used darts to immobilise the elephants – this was a tricky manoeuvre, as they not only had to select the right dose of tranquiliser for different-sized elephants but they had to dart the elephants as they were running around.",
+      "start": 243.14,
+      "end": 263.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "This also had to be done as quickly as possible so as to minimise the stress caused.",
+      "start": 263.14,
+      "end": 271.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "As soon as the elephants began to flop onto the ground, the team moved in to take care of them.",
+      "start": 271.82,
+      "end": 278.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Q34",
+      "start": 278.62,
+      "end": 279.07
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "To avoid the risk of suffocation, the team had to make sure none of the elephants were lying on their chests because their lungs could be crushed in this position.",
+      "start": 279.07,
+      "end": 291.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "So all the elephants had to be placed on their sides.",
+      "start": 291.6,
+      "end": 297.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Q35 One person stayed with each elephant while they waited for the vets to do checks.",
+      "start": 297.76,
+      "end": 304.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "It was very important to keep an eye on their breathing – if there were fewer than six breaths per minute, the elephant would need urgent medical attention.",
+      "start": 304.48,
+      "end": 318.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Q36 Collars were fitted to the matriarch in each group so their movements could be tracked in their new home.",
+      "start": 318.34,
+      "end": 327.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Measurements were taken of each elephant’s tusks – elephants with large tusks would be at greater risk from poachers – and also of their feet.",
+      "start": 327.06,
+      "end": 340.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "The elephants were then taken to a recovery area before being loaded onto trucks and transported to their new home.",
+      "start": 340.68,
+      "end": 349.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Q37",
+      "start": 349.64,
+      "end": 350.36
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "The elephants translocated to Nkhotakota settled in very well and the project has generally been accepted to have been a huge success – and not just for the elephants.",
+      "start": 350.36,
+      "end": 365.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Employment prospects have improved enormously, contributing to rising living standards for the whole community.",
+      "start": 365.7,
+      "end": 375.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Q38 Poaching is no longer an issue, as former poachers are able to find more reliable sources of income.",
+      "start": 375.42,
+      "end": 384.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "In fact, many of them volunteered to give up their weapons, as they were no longer of any use to them.",
+      "start": 384.48,
+      "end": 391.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "Q39",
+      "start": 391.62,
+      "end": 392.07
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "More than two dozen elephants have been born at Nkhotakota since relocation.",
+      "start": 392.07,
+      "end": 399.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "With an area of more than 1,800 square kilometres, there’s plenty of space for the elephant population to continue to grow.",
+      "start": 399.78,
+      "end": 409.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "Their presence is also helping to rebalance Nkhotakota’s damaged ecosystem and providing a sustainable conservation model, which could be replicated in other parks.",
+      "start": 409.6,
+      "end": 423.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "All this has been a big draw for tourism, which contributes five times more than the illegal wildlife trade to GDP, and this is mainly because of the elephants.",
+      "start": 423.52,
+      "end": 438.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "There’s also been a dramatic rise in interest … Q40",
+      "start": 438.6,
+      "end": 527.603,
+      "preAudio": false
+    }
+  ]
+}

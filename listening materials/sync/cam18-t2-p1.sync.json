@@ -1,0 +1,342 @@
+{
+  "version": 1,
+  "partId": "cam18-t2-p1",
+  "audioFile": "Cam18 Test2 Part1.mp3",
+  "durationSeconds": 468.8015,
+  "method": "whisper-local",
+  "preambleSeconds": 115.1,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "WOMAN",
+      "text": "So, I understand you’re interested in restaurant work?",
+      "start": 115.1,
+      "end": 120.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "MAN",
+      "text": "Yes. I’ve got a bit of experience and I can provide references.",
+      "start": 120.46,
+      "end": 125,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "WOMAN",
+      "text": "That’s good. I can check all that later. Now, Milo’s Restaurants have some vacancies at the moment. They’re a really good company to work for. Lots of benefits.",
+      "start": 125,
+      "end": 134.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "MAN",
+      "text": "Oh right.",
+      "start": 134.52,
+      "end": 136.843
+    },
+    {
+      "id": "cue-5",
+      "speaker": "WOMAN",
+      "text": "Yes. They’ve got a very good reputation for looking after staff. For example, all employees get training – even temporary staff. Q1",
+      "start": 136.843,
+      "end": 144.323
+    },
+    {
+      "id": "cue-6",
+      "speaker": "MAN",
+      "text": "Oh really? That’s quite unusual, isn’t it?",
+      "start": 144.323,
+      "end": 146.703,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "WOMAN",
+      "text": "Certainly is.",
+      "start": 146.703,
+      "end": 147.383,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "MAN",
+      "text": "And do staff get free uniforms too?",
+      "start": 147.383,
+      "end": 149.763
+    },
+    {
+      "id": "cue-9",
+      "speaker": "WOMAN",
+      "text": "Um … you just need to wear a white T-shirt and black trousers, it says here. So I guess not … But another benefit of working for a big company like this is that you can get a discount at any of their restaurants. Q2",
+      "start": 149.763,
+      "end": 159.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "MAN",
+      "text": "Even at weekends?",
+      "start": 159.3,
+      "end": 160.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "WOMAN",
+      "text": "No, but you’ll be working then anyway.",
+      "start": 160.32,
+      "end": 162.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "MAN",
+      "text": "Oh yes. I suppose so. Most of their restaurants are in the city centre, aren’t they? So, easy to get to by bus?",
+      "start": 162.7,
+      "end": 163.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "WOMAN",
+      "text": "Yes. That’s right. But if you have to do a late shift and finish work after midnight, the company will pay for you to get a taxi home. Q3",
+      "start": 163.56,
+      "end": 170.292,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "MAN",
+      "text": "I probably won’t need one. I think I’d use my bike.",
+      "start": 170.292,
+      "end": 174.032,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "WOMAN",
+      "text": "OK. Now, they do have some quite specific requirements for the kind of person they’re looking for. Milo’s is a young, dynamic company and they’re really keen on creating a strong team. It’s really important that you can fit in and get on well with everyone.",
+      "start": 174.032,
+      "end": 188.032,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "MAN",
+      "text": "Yeah. I’ve got no problem with that. It sounds good, actually. The last place I worked for was quite demanding too. We had to make sure we gave a really high level of service. Q4",
+      "start": 188.032,
+      "end": 188.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "WOMAN",
+      "text": "That’s good to hear because that will be equally important at Milo’s. I know they want people who have an eye for detail.",
+      "start": 188.36,
+      "end": 196.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "MAN",
+      "text": "That’s fine. I’m very used to working in that kind of environment.",
+      "start": 196.18,
+      "end": 200.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "WOMAN",
+      "text": "Perfect. So the only other thing that’s required is good communication skills, so you’ll need to have a certificate in English. Q5",
+      "start": 200.26,
+      "end": 207.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "MAN",
+      "text": "Sure.",
+      "start": 207.36,
+      "end": 248.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "MAN",
+      "text": "——",
+      "start": 248.19,
+      "end": 248.64
+    },
+    {
+      "id": "cue-22",
+      "speaker": "WOMAN",
+      "text": "OK. Let’s have a look at the current job vacancies at Milo’s. The first one is in Wivenhoe Street. Q6",
+      "start": 248.64,
+      "end": 255.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "MAN",
+      "text": "Sorry, where?",
+      "start": 255.44,
+      "end": 256.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "WOMAN",
+      "text": "Wivenhoe. W-l-V-E-N-H-O-E. It’s quite central, just off Cork Street.",
+      "start": 256.67,
+      "end": 266.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "MAN",
+      "text": "Oh right.",
+      "start": 266.61,
+      "end": 267.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "WOMAN",
+      "text": "They’re looking for a breakfast supervisor.",
+      "start": 267.71,
+      "end": 270.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "MAN",
+      "text": "That would be OK.",
+      "start": 270.43,
+      "end": 272.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "WOMAN",
+      "text": "So you’re probably familiar with the kind of responsibilities involved. Obviously checking that all the portions are correct, etc., and then things like checking all the procedures for cleaning the equipment are being followed. Q7",
+      "start": 272.19,
+      "end": 285.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "MAN",
+      "text": "OK. And what about the salary? In my last job I was getting £9.50 per hour. I was hoping to get a bit more than that.",
+      "start": 285.57,
+      "end": 295.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "WOMAN",
+      "text": "Well, to begin with, you’d be getting £9.75 but that goes up to £11.25 after three months. Q8",
+      "start": 295.53,
+      "end": 303.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "MAN",
+      "text": "That’s not too bad. And I suppose it’s a very early start?",
+      "start": 303.99,
+      "end": 308.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "WOMAN",
+      "text": "Mmm. That’s the only unattractive thing about this job. But then you have the afternoons and evenings free. So the restaurant starts serving breakfast from 7 a.m. And you’d have to be there at 5.30 to set everything up. But you’d be finished at 12.30.",
+      "start": 308.71,
+      "end": 326.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "MAN",
+      "text": "Mmm. Well, as you say, there are advantages to that.",
+      "start": 326.15,
+      "end": 329.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "WOMAN",
+      "text": "Now, you might also be interested in the job at the City Road branch. That’s for a junior chef, so again a position of responsibility.",
+      "start": 329.73,
+      "end": 338.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "MAN",
+      "text": "I might prefer that, actually.",
+      "start": 338.97,
+      "end": 341.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "WOMAN",
+      "text": "Right, well obviously this role would involve supporting the sous chef and other senior staff. And you’d be responsible for making sure there’s enough stock each week – and sorting out all the deliveries. Q9",
+      "start": 341.27,
+      "end": 354.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "MAN",
+      "text": "I’ve never done that before, but I imagine it’s fairly straightforward, once you get the hang of it.",
+      "start": 354.11,
+      "end": 360.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "WOMAN",
+      "text": "Yes, and you’d be working alongside more experienced staff to begin with, so I’m sure it wouldn’t be a problem. The salary’s slightly higher here. It’s an annual salary of £23,000.",
+      "start": 360.43,
+      "end": 373.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "MAN",
+      "text": "Right.",
+      "start": 373.33,
+      "end": 374.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "WOMAN",
+      "text": "I know that if they like you, it’s likely you’ll be promoted quite quickly. So that’s worth thinking about.",
+      "start": 374.31,
+      "end": 380.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "MAN",
+      "text": "Yes. It does sound interesting. What are the hours like?",
+      "start": 380.87,
+      "end": 385.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "WOMAN",
+      "text": "The usual, I think. There’s a lot of evening and weekend work, but they’re closed on Mondays. But you do get one Sunday off every four weeks. So would you like me to send off your … Q10",
+      "start": 385.09,
+      "end": 468.802,
+      "preAudio": false
+    }
+  ]
+}

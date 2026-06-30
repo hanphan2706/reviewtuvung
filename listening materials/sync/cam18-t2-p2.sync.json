@@ -1,0 +1,331 @@
+{
+  "version": 1,
+  "partId": "cam18-t2-p2",
+  "audioFile": "Cam18 Test2 Part2.mp3",
+  "durationSeconds": 437.219438,
+  "method": "whisper-local",
+  "preambleSeconds": 61.469,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Hello everyone.",
+      "start": 51.269,
+      "end": 51.949,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "It’s good to see that so many members of the public have shown up for our presentation on the new housing development planned on the outskirts of Nunston.",
+      "start": 51.949,
+      "end": 61.469,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "I’m Mark Reynolds and I’m Communications Manager at the development.",
+      "start": 61.469,
+      "end": 64.869,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "I’ll start by giving you a brief overview of our plans for the development.",
+      "start": 64.869,
+      "end": 69.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "So one thing I’m sure you’ll want to know is why we’ve selected this particular site for a housing development.",
+      "start": 69.4,
+      "end": 75.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "At present it’s being used for farming, like much of the land around Nunston.",
+      "start": 75.6,
+      "end": 83.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "But because of the new industrial centre in Nunston, there’s a lot of demand for housing for employees in the region, as many employees are having to commute long distances at present.",
+      "start": 83.26,
+      "end": 97.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Of course, there’s also the fact that we have an international airport just 20 minutes’ drive away, but although that’s certainly convenient, it wasn’t one of our major criteria for choosing the site.",
+      "start": 97.12,
+      "end": 112.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "We were more interested in the fact that there’s an excellent hospital just 15 kilometres away, and a large secondary school even closer than that.",
+      "start": 112.92,
+      "end": 124.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "One drawback to the site is that it’s on quite a steep slope, but we’ve taken account of that in our planning so it shouldn’t be a major problem.",
+      "start": 124.12,
+      "end": 137.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Q11/12",
+      "start": 137.7,
+      "end": 138.92
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "We’ve had a lot of positive feedback about the plans.",
+      "start": 138.92,
+      "end": 142.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "People like the wide variety of accommodation types and prices, and the fact that it’s only a short drive to get out into the countryside from the development.",
+      "start": 142.88,
+      "end": 155.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "We were particularly pleased that so many people liked the designs for the layout of the development, with the majority of people saying it generally made a good impression and blended in well with the natural features of the landscape, with provision made for protecting trees and wildlife on the site.",
+      "start": 155.26,
+      "end": 178.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Some people have mentioned that they’d like to see more facilities for cyclists, and we’ll look at that, but the overall feedback has been that the design and facilities of the development make it seem a place where people of all ages can live together happily.",
+      "start": 178.44,
+      "end": 245.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Q13/14",
+      "start": 245.06,
+      "end": 245.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "——",
+      "start": 245.51,
+      "end": 249.38
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "1\tSo I’ll put a map of the proposed development up on the screen.",
+      "start": 249.38,
+      "end": 257.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "You’ll see it’s bounded on the south side by the main road, which then goes on to Nunston.",
+      "start": 257.88,
+      "end": 265.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Another boundary is formed by London Road, on the western side of the development.",
+      "start": 265.56,
+      "end": 272.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Inside the development there’ll be about 400 houses and 3 apartment blocks.",
+      "start": 272.16,
+      "end": 279.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "There’ll also be a school for children up to 11 years old.",
+      "start": 279.96,
+      "end": 285.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "If you look at the South Entrance at the bottom of the map, there’s a road from there that goes right up through the development.",
+      "start": 285.62,
+      "end": 294.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "The school will be on that road, at the corner of the second turning to the left.",
+      "start": 294.32,
+      "end": 300.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Q15",
+      "start": 300.48,
+      "end": 301.92
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "A large sports centre is planned with facilities for indoor and outdoor activities. This will be on the western side of the development, just below the road that branches off from London Road. Q16",
+      "start": 301.92,
+      "end": 318.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "There’ll be a clinic where residents can go if they have any health problems.",
+      "start": 318.5,
+      "end": 324.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Can you see the lake towards the top of the map?",
+      "start": 324.72,
+      "end": 328.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "The clinic will be just below this, to the right of a street of houses.",
+      "start": 328.86,
+      "end": 334.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Q17",
+      "start": 334.14,
+      "end": 335
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "There’ll also be a community centre for people of all ages.",
+      "start": 335,
+      "end": 340.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "On the northeast side of the development, there’ll be a row of specially designed houses specifically for residents over 65, and the community centre will be adjoining this.",
+      "start": 340.24,
+      "end": 353.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Q18",
+      "start": 353.76,
+      "end": 355
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "We haven’t forgotten about shopping.",
+      "start": 355,
+      "end": 358.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "There’ll be a supermarket between the two entrances to the development.",
+      "start": 358.56,
+      "end": 363.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "We’re planning to leave the three large trees near London Road, and it’ll be just to the south of these.",
+      "start": 363.76,
+      "end": 371.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Q19",
+      "start": 371.36,
+      "end": 373.18
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "It’s planned to have a playground for younger children.",
+      "start": 373.18,
+      "end": 377.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "If you look at the road that goes up from the South Entrance, you’ll see it curves round to the left at the top, and the playground will be in that curve, with nice views of the lake.",
+      "start": 377.2,
+      "end": 391.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "Q20",
+      "start": 391.42,
+      "end": 392.18
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "OK, so now does anyone …",
+      "start": 392.18,
+      "end": 437.219,
+      "preAudio": false
+    }
+  ]
+}

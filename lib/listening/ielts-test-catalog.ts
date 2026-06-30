@@ -1,7 +1,19 @@
 import { LISTENING_HUB_HREF } from "@/lib/listening/listening-hub-nav";
-import { CAMBRIDGE_IELTS_19_COVER_URL } from "@/lib/reading/ielts-test-catalog";
+import {
+  CAMBRIDGE_IELTS_18_COVER_URL,
+  CAMBRIDGE_IELTS_19_COVER_URL,
+  CAMBRIDGE_IELTS_20_COVER_URL,
+} from "@/lib/reading/ielts-test-catalog";
 
 export type ListeningIeltsTestId =
+  | "cam20-test1"
+  | "cam20-test2"
+  | "cam20-test3"
+  | "cam20-test4"
+  | "cam18-test1"
+  | "cam18-test2"
+  | "cam18-test3"
+  | "cam18-test4"
   | "cam19-test1"
   | "cam19-test2"
   | "cam19-test3"
@@ -24,6 +36,38 @@ export function listeningIeltsTestExamHref(testId: ListeningIeltsTestId): string
 }
 
 export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
+  {
+    testId: "cam20-test4",
+    label: "Cambridge 20 · Test 4",
+    bookTitle: "Cambridge IELTS 20 Academic",
+    testNumber: 4,
+    coverImageUrl: CAMBRIDGE_IELTS_20_COVER_URL,
+    catalogOrder: 12,
+  },
+  {
+    testId: "cam20-test3",
+    label: "Cambridge 20 · Test 3",
+    bookTitle: "Cambridge IELTS 20 Academic",
+    testNumber: 3,
+    coverImageUrl: CAMBRIDGE_IELTS_20_COVER_URL,
+    catalogOrder: 11,
+  },
+  {
+    testId: "cam20-test2",
+    label: "Cambridge 20 · Test 2",
+    bookTitle: "Cambridge IELTS 20 Academic",
+    testNumber: 2,
+    coverImageUrl: CAMBRIDGE_IELTS_20_COVER_URL,
+    catalogOrder: 10,
+  },
+  {
+    testId: "cam20-test1",
+    label: "Cambridge 20 · Test 1",
+    bookTitle: "Cambridge IELTS 20 Academic",
+    testNumber: 1,
+    coverImageUrl: CAMBRIDGE_IELTS_20_COVER_URL,
+    catalogOrder: 9,
+  },
   {
     testId: "cam19-test4",
     label: "Cambridge 19 · Test 4",
@@ -56,6 +100,38 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
     catalogOrder: 1,
   },
+  {
+    testId: "cam18-test4",
+    label: "Cambridge 18 · Test 4",
+    bookTitle: "Cambridge IELTS 18 Academic",
+    testNumber: 4,
+    coverImageUrl: CAMBRIDGE_IELTS_18_COVER_URL,
+    catalogOrder: 8,
+  },
+  {
+    testId: "cam18-test3",
+    label: "Cambridge 18 · Test 3",
+    bookTitle: "Cambridge IELTS 18 Academic",
+    testNumber: 3,
+    coverImageUrl: CAMBRIDGE_IELTS_18_COVER_URL,
+    catalogOrder: 7,
+  },
+  {
+    testId: "cam18-test2",
+    label: "Cambridge 18 · Test 2",
+    bookTitle: "Cambridge IELTS 18 Academic",
+    testNumber: 2,
+    coverImageUrl: CAMBRIDGE_IELTS_18_COVER_URL,
+    catalogOrder: 6,
+  },
+  {
+    testId: "cam18-test1",
+    label: "Cambridge 18 · Test 1",
+    bookTitle: "Cambridge IELTS 18 Academic",
+    testNumber: 1,
+    coverImageUrl: CAMBRIDGE_IELTS_18_COVER_URL,
+    catalogOrder: 5,
+  },
 ] as const;
 
 const TEST_BY_ID = new Map(LISTENING_CAMBRIDGE_TESTS.map((test) => [test.testId, test]));
@@ -68,6 +144,8 @@ export function isListeningIeltsTestId(testId: string): testId is ListeningIelts
   return TEST_BY_ID.has(testId as ListeningIeltsTestId);
 }
 
-export function listeningPartIdForTest(testNumber: number, part: number): string {
-  return `cam19-t${testNumber}-p${part}`;
+export function listeningPartIdForTest(testId: ListeningIeltsTestId, part: number): string {
+  const m = testId.match(/^(cam\d+)-test(\d+)$/);
+  if (!m) throw new Error(`Invalid listening test id: ${testId}`);
+  return `${m[1]}-t${m[2]}-p${part}`;
 }

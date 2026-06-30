@@ -22,7 +22,9 @@ import { injectExamCopyFriction } from "@/lib/exam/inject-exam-copy-friction";
 import { injectExamDictionaryPopover } from "@/lib/exam/inject-exam-dictionary-popover";
 
 const PILOT_LABELS: Record<string, string> = {
+  cam20: "Cambridge 20",
   cam19: "Cambridge 19",
+  cam18: "Cambridge 18",
 };
 
 function pilotLabelForMeta(meta: ListeningPartMeta): string {

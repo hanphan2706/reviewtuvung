@@ -16,6 +16,8 @@ const nextConfig: NextConfig = {
   outputFileTracingExcludes: {
     "/*": [
       "./listening materials/Audio cam/**",
+      "./listening materials/Audio cam 18/**",
+      "./listening materials/Audio cam 20/**",
       "./listening materials/Audio real test/**",
       "./listening materials/Audio tactics-basic/**",
       "./listening materials/*.zip",
@@ -35,12 +37,18 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/*": [
       "./listening materials/cam 19 test * qna.txt",
+      "./listening materials/cam 18 test * qna.txt",
+      "./listening materials/cam 20 test * qna.txt",
       "./listening materials/cam * test * part * map.jpg",
       "./listening materials/cam * test * part * map.jpeg",
       "./listening materials/cam * test * part * map.png",
       "./listening materials/cam * test * part * map.webp",
+      "./listening materials/transcript/cam20-test*.txt",
       "./listening materials/transcript/cam19-test*.txt",
+      "./listening materials/transcript/cam18-test*.txt",
       "./listening materials/transcript/tactics-basic-*.txt",
+      "./listening materials/sync/cam20-*.sync.json",
+      "./listening materials/sync/cam18-*.sync.json",
       "./listening materials/sync/cam19-*.sync.json",
       "./listening materials/sync/tactics-basic-*.sync.json",
       "./public/midterm-reading-exam.html",

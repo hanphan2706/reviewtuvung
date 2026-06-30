@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "partId": "cam20-t3-p1",
+  "audioFile": "Cam20 Test3 Part1.mp3",
+  "durationSeconds": 439.64517,
+  "method": "whisper-local",
+  "preambleSeconds": 115.2,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "MAN",
+      "text": "Good morning",
+      "start": 101.376,
+      "end": 102.189,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "WOMAN",
+      "text": "Hi, this is Michelin Meyer. I’m renting your house on Archwood Avenue. I’m due to move in next week.",
+      "start": 102.189,
+      "end": 110.728,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "MAN",
+      "text": "Oh, yes. Hello, Ms. Meyer. What can I do for you?",
+      "start": 110.728,
+      "end": 115.2,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": "WOMAN",
+      "text": "When I viewed the house, I told you I’ll most probably need to rent some furniture, at least until I know whether my temporary work contract is going to be made permanent.",
+      "start": 115.2,
+      "end": 126.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "MAN",
+      "text": "Yes, of course. I remember. And I said I could give you some information about furniture rental companies in the city.",
+      "start": 126.08,
+      "end": 133.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "WOMAN",
+      "text": "That’s right.",
+      "start": 133.22,
+      "end": 133.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "MAN",
+      "text": "Well, the biggest company is called Peak Rentals. I’ve recommended them to other people and have always heard positive reports about them.",
+      "start": 133.9,
+      "end": 141.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "WOMAN",
+      "text": "Could you give me an idea of their costs?",
+      "start": 141.38,
+      "end": 143.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "MAN",
+      "text": "Sure. I actually have one of their brochures here. It says the monthly price per room starts at $105 and goes up to $239. That depends on which rooms you need furniture for, of course.",
+      "start": 143.96,
+      "end": 159.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "WOMAN",
+      "text": "Sure. It’s just to get a general idea of how much it’s going to cost. And you said you had some positive feedback about this company?",
+      "start": 159.66,
+      "end": 169.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "MAN",
+      "text": "Yes.",
+      "start": 169.58,
+      "end": 170.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "MAN",
+      "text": "People have mentioned that the furniture from Peak Rentals is more modern than any of the other companies.",
+      "start": 170.6,
+      "end": 177.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "MAN",
+      "text": "And also, once you place an order, the furniture will be delivered to you in just one or two days.",
+      "start": 177.1,
+      "end": 183.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "WOMAN",
+      "text": "That would be really helpful.",
+      "start": 183.9,
+      "end": 186.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "MAN",
+      "text": "Oh, and the brochure says that there’s a special offer at the moment.",
+      "start": 186.32,
+      "end": 191.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "MAN",
+      "text": "If you rent living room furniture, I believe that’s a set of chairs and a TV table, you’ll also get a lamp at no extra cost.",
+      "start": 191.16,
+      "end": 200.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "WOMAN",
+      "text": "Okay, but you know, that price range you gave is more than I was hoping to pay.",
+      "start": 200.34,
+      "end": 207.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "MAN",
+      "text": "Then you could try Aaron and Oliver.",
+      "start": 207.12,
+      "end": 210.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "WOMAN",
+      "text": "Sorry, what and Oliver?",
+      "start": 210.06,
+      "end": 213.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "MAN",
+      "text": "Aaron, double A-R-O-N",
+      "start": 213.68,
+      "end": 216.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "WOMAN",
+      "text": "OK, are they cheaper",
+      "start": 216.94,
+      "end": 220,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "MAN",
+      "text": "I say they are a mid company But if you chose them you need to be aware that they charge an extra 12 every month in case of damage",
+      "start": 220,
+      "end": 229.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "WOMAN",
+      "text": "Oh, I see. I’d have to do the math carefully then.",
+      "start": 229.86,
+      "end": 234.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "MAN",
+      "text": "Right. But one helpful thing is that they also do cleaning for customers.",
+      "start": 234.44,
+      "end": 239.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "WOMAN",
+      "text": "For the furniture?",
+      "start": 239.64,
+      "end": 241.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "MAN",
+      "text": "For the house.",
+      "start": 241.28,
+      "end": 242.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "WOMAN",
+      "text": "Oh, I see. I probably won’t need that.",
+      "start": 242.54,
+      "end": 290.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Now listen and answer questions 6 to 10.",
+      "start": 290.1,
+      "end": 297.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "MAN",
+      "text": "There’s another company called Larch Furniture. It’s quite new, and it has the lowest prices in town. That’s for both furniture and also electronic equipment.",
+      "start": 297.06,
+      "end": 308.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "WOMAN",
+      "text": "Well, that would be good. I’m not bringing much with me, and I won’t have much time to go shopping after I start my job.",
+      "start": 308.54,
+      "end": 317.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "MAN",
+      "text": "There are two things you need to know about large furniture. First of all you have to take out insurance on the furniture and you need to organize that yourself",
+      "start": 317.76,
+      "end": 327.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "WOMAN",
+      "text": "That wouldn’t be too hard.",
+      "start": 327.96,
+      "end": 329.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "MAN",
+      "text": "Also you can take out a contract for less than six months but I figure that might not be a problem for you. You’re renting the house for 12 months after all, aren’t you?",
+      "start": 329.98,
+      "end": 341.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "WOMAN",
+      "text": "Yes, okay. Well, I…",
+      "start": 341.54,
+      "end": 343.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "MAN",
+      "text": "Sorry to interrupt. I just thought of another furniture rental company. It’s called Space Rentals, and it’s located very near to the house.",
+      "start": 343.96,
+      "end": 353.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "WOMAN",
+      "text": "Okay.",
+      "start": 353.58,
+      "end": 354.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "MAN",
+      "text": "I don’t have any information about their charges, so it’s best to use their app to find out what it would cost you to use them.",
+      "start": 354.76,
+      "end": 363.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "WOMAN",
+      "text": "Okay, thanks. I’ll do that.",
+      "start": 363.6,
+      "end": 365.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "MAN",
+      "text": "One good thing about that company is that if you don’t like the furniture once it’s delivered, you can request exchanges, as long as you do that within a week of receiving it.",
+      "start": 365.94,
+      "end": 377.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "WOMAN",
+      "text": "That sounds really great. Okay, well, thanks very much. That’s so helpful",
+      "start": 377.16,
+      "end": 439.645,
+      "preAudio": false
+    }
+  ]
+}

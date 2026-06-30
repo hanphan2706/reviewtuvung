@@ -1,0 +1,279 @@
+{
+  "version": 1,
+  "partId": "cam20-t2-p1",
+  "audioFile": "Cam20 Test2 Part1.mp3",
+  "durationSeconds": 408.205351,
+  "method": "whisper-local",
+  "preambleSeconds": 115,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "WOMAN",
+      "text": "It’s really good to see you, Tom. Since I had to give up work, I feel I’m losing touch with my friends and colleagues.",
+      "start": 115,
+      "end": 123.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "MAN",
+      "text": "We really miss you in the office. We were all so sorry you had to leave. But you must be relieved to have more time to look after your mother. How is she?",
+      "start": 123.16,
+      "end": 134.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "WOMAN",
+      "text": "Well she is very cheerful, but she needs a lot of help.",
+      "start": 134.38,
+      "end": 138.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "MAN",
+      "text": "Have you tried to get any support from the local council?",
+      "start": 138.46,
+      "end": 141.22
+    },
+    {
+      "id": "cue-5",
+      "speaker": "WOMAN",
+      "text": "No, I didn’t know I could.",
+      "start": 141.22,
+      "end": 144.8
+    },
+    {
+      "id": "cue-6",
+      "speaker": "MAN",
+      "text": "Yes, they offer different kinds of practical support.",
+      "start": 144.8,
+      "end": 147.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "MAN",
+      "text": "They realise that carers sometimes need time for all the other responsibilities they have, apart from the person they’re caring for, and also that they sometimes need a break.",
+      "start": 147.52,
+      "end": 157.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "WOMAN",
+      "text": "Absolutely. OK, so tell me more. How do I go about getting this support?",
+      "start": 157.38,
+      "end": 162.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "MAN",
+      "text": "Well, you’d have to have an assessment of your mother’s needs.",
+      "start": 162.14,
+      "end": 165.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "MAN",
+      "text": "That means someone would come round and talk to you about the situation and what you need.",
+      "start": 165.88,
+      "end": 171.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "MAN",
+      "text": "So, for a start, they’d want to know the amount of time you spend looking after your mother every day.",
+      "start": 171.66,
+      "end": 178.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "WOMAN",
+      "text": "OK.",
+      "start": 178.46,
+      "end": 178.91
+    },
+    {
+      "id": "cue-13",
+      "speaker": "MAN",
+      "text": "Then they’ll probably ask you what sorts of tasks you do for your mother during the day. Things like if she needs help with getting dressed, for example.",
+      "start": 178.91,
+      "end": 188.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "WOMAN",
+      "text": "Right. I help her with that. And also I help her get into the shower in the morning.",
+      "start": 188.43,
+      "end": 194.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "MAN",
+      "text": "Yes, that sort of thing.",
+      "start": 194.55,
+      "end": 196.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "WOMAN",
+      "text": "Yes, that’s becoming a bit of a problem. She used to be very good at it, but not anymore.",
+      "start": 196.25,
+      "end": 202.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Before you hear the rest of the conversation, you have some time to look at questions five to ten. you Now listen and answer questions 5 to 10.",
+      "start": 202.71,
+      "end": 222.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "MAN",
+      "text": "And be ready to tell them about anything you find particularly difficult about caring for your mother.",
+      "start": 222.63,
+      "end": 228.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "WOMAN",
+      "text": "So, recently I’ve noticed she’s started to have quite bad problems with her memory.",
+      "start": 228.41,
+      "end": 234.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "WOMAN",
+      "text": "If I wasn’t there, I think she’d forget to eat, for example.",
+      "start": 234.71,
+      "end": 239.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "WOMAN",
+      "text": "And often she doesn’t seem quite sure what day it is.",
+      "start": 239.25,
+      "end": 242.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "MAN",
+      "text": "Yes, tell them about that. And are there any physical difficulties you have caring for her? Lifting her, for example?",
+      "start": 242.99,
+      "end": 250.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "WOMAN",
+      "text": "Yes, she’s quite heavy and I’m afraid of hurting my back. I’d be in real trouble if that happened.",
+      "start": 250.83,
+      "end": 258.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "MAN",
+      "text": "They can give you advice about that and also about how to avoid the possibility of your mum having a fall.",
+      "start": 258.91,
+      "end": 266.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "WOMAN",
+      "text": "Great. So once they’ve done this assessment, if I’m eligible, what happens next?",
+      "start": 266.05,
+      "end": 272.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "MAN",
+      "text": "Well, they might support you financially. So they might help you with transport costs, like if you have to get a taxi to take your mother for an appointment, for example.",
+      "start": 272.91,
+      "end": 283.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "WOMAN",
+      "text": "I usually drive her myself, actually. So, could I claim the petrol?",
+      "start": 283.45,
+      "end": 287.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "MAN",
+      "text": "You could. And you can claim for the insurance too.",
+      "start": 287.53,
+      "end": 290.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "WOMAN",
+      "text": "Oh, right.",
+      "start": 290.93,
+      "end": 292.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "MAN",
+      "text": "And if you need help with the housework, they can arrange for someone to come along once or twice a week. And one other thing. I hope you don’t mind me saying this, but it important you",
+      "start": 292.15,
+      "end": 304.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "MAN",
+      "text": "look after yourself And it seems to me you under quite a bit of stress",
+      "start": 304.73,
+      "end": 309.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "WOMAN",
+      "text": "I am yes",
+      "start": 309.83,
+      "end": 310.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "MAN",
+      "text": "Well tell the council because they may be able to give you some advice on how to minimise it",
+      "start": 310.85,
+      "end": 317.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "WOMAN",
+      "text": "Really? Though, actually, I feel so much better having talked to you. I’ll get in touch with the council straight away. Now, shall we go for coffee or something?",
+      "start": 317.31,
+      "end": 408.205,
+      "preAudio": false
+    }
+  ]
+}

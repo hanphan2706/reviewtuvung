@@ -1,4 +1,5 @@
 import { sanitizeWordHtml } from "@/lib/sanitize-word-html";
+import { splitTranscriptSpeakerLine } from "@/lib/listening/parse-transcript-speaker";
 
 function escapeHtml(s: string): string {
   return s
@@ -9,7 +10,6 @@ function escapeHtml(s: string): string {
 }
 
 const PART_LINE = /^PART\s+\d+\s*$/i;
-const SPEAKER_LINE = /^([A-Z][A-Z'\s]{1,22}):\s*(.*)$/;
 const RULE_LINE = /^[—\-_\s]{4,}$/;
 
 function qMarkers(htmlEscapedLine: string): string {
@@ -37,12 +37,10 @@ export function listeningTranscriptPlainToSafeHtml(plain: string): string {
       chunks.push('<br><span style="color: #a1a1aa">——————————————</span><br>');
       continue;
     }
-    const sm = raw.trimEnd().match(SPEAKER_LINE);
-    if (sm?.[1]) {
-      const label = sm[1].trim();
-      const rest = sm[2] ?? "";
+    const split = splitTranscriptSpeakerLine(raw.trimEnd());
+    if (split.speaker) {
       chunks.push(
-        `<br><span style="color:rgb(75,40,118);font-weight:600">${escapeHtml(label)}:</span> ${qMarkers(escapeHtml(rest))}<br>`,
+        `<br><span style="color:rgb(75,40,118);font-weight:600">${escapeHtml(split.speaker)}:</span> ${qMarkers(escapeHtml(split.body))}<br>`,
       );
       continue;
     }

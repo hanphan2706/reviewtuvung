@@ -22,13 +22,28 @@ export function isListeningTranscriptNoiseLine(line: string): boolean {
 
 /**
  * Lọc transcript listening: bỏ dòng rác + gom dòng trống thừa.
- * Giữ nguyên nội dung thoại (PART n, SALLY:, dấu gạch ngăn đoạn, Q1…).
+ * Tách đoạn monologue quá dài thành từng câu để sync transcript ↔ audio chính xác hơn.
  */
+function splitLongMonologueLine(line: string): string[] {
+  const t = line.replace(/\u00a0/g, " ").trim();
+  if (t.length < 200) return [line];
+  if (/^PART\s+\d/i.test(t)) return [line];
+  if (/^(MAN|WOMAN|LECTURER)\s+/i.test(t)) return [line];
+  if (/^[A-Z][A-Z\s']+:\s/.test(t)) return [line];
+  if (/^Before you hear/i.test(t)) return [line];
+  if (/^Now listen/i.test(t)) return [line];
+
+  const sentences = t.split(/(?<=[.!?])\s+(?=[A-Z"'(])/);
+  if (sentences.length <= 1) return [line];
+  return sentences.map((s) => s.trim()).filter(Boolean);
+}
+
 export function sanitizeListeningTranscript(raw: string): string {
   const lines = raw.split(/\r?\n/);
   const kept: string[] = [];
   for (const line of lines) {
-    if (!isListeningTranscriptNoiseLine(line)) kept.push(line);
+    if (isListeningTranscriptNoiseLine(line)) continue;
+    kept.push(...splitLongMonologueLine(line));
   }
   let out = kept.join("\n");
   out = out.replace(/\n{3,}/g, "\n\n");

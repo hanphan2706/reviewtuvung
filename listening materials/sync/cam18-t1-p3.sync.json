@@ -1,0 +1,360 @@
+{
+  "version": 1,
+  "partId": "cam18-t1-p3",
+  "audioFile": "Cam18 Test1 Part3.mp3",
+  "durationSeconds": 400.90925,
+  "method": "whisper-local",
+  "preambleSeconds": 69.76,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "HUGO",
+      "text": "Hi Chantal. What did you think of the talk, then?",
+      "start": 69.76,
+      "end": 73.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "CHANTAL",
+      "text": "Hi Hugo. I thought it was good once I’d moved seats.",
+      "start": 73.16,
+      "end": 77.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "HUGO",
+      "text": "Oh- were the people beside you chatting or something?",
+      "start": 77.7,
+      "end": 80.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "CHANTAL",
+      "text": "It wasn’t that. I went early so that I’d get a seat and not have to stand, but then this guy sat right in front of me and he was so tall!",
+      "start": 80.76,
+      "end": 91.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "HUGO",
+      "text": "It’s hard to see through people’s heads, isn’t it? Q21",
+      "start": 91.64,
+      "end": 95.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "CHANTAL",
+      "text": "Impossible! Anyway, to answer your question, I thought it was really interesting, especially what the speaker said about the job market.",
+      "start": 95.04,
+      "end": 103.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "HUGO",
+      "text": "Me too. I mean we know we’re going into a really competitive field so it’s obvious that we may struggle to get work.",
+      "start": 103.82,
+      "end": 111.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "CHANTAL",
+      "text": "That’s right – and we know we can’t all have that ‘dream job’.",
+      "start": 111.64,
+      "end": 116.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "HUGO",
+      "text": "Yeah, but it looks like there’s a whole range of … areas of work that we hadn’t even thought of – like fashion journalism, for instance. Q22",
+      "start": 116.24,
+      "end": 125.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "CHANTAL",
+      "text": "Yeah – I wasn’t expecting so many career options.",
+      "start": 125.42,
+      "end": 129.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "HUGO",
+      "text": "Mmm. Overall, she had quite a strong message, didn’t she?",
+      "start": 129.36,
+      "end": 132.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "CHANTAL",
+      "text": "She did. She kept saying things like ‘I know you all think this, but …’ and then she’d tell us how it really is.",
+      "start": 132.76,
+      "end": 140.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "HUGO",
+      "text": "Perhaps she thinks students are a bit narrow-minded about the industry.",
+      "start": 140.92,
+      "end": 144.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "CHANTAL",
+      "text": "It was a bit harsh, though! We know it’s a tough industry.",
+      "start": 144.7,
+      "end": 148.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "HUGO",
+      "text": "Yeah – and we’re only first years, after all. We’ve got a lot to learn. Q23",
+      "start": 148.78,
+      "end": 154.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "CHANTAL",
+      "text": "Exactly. Do you think our secondary-school education should have been more career-focused?",
+      "start": 154.22,
+      "end": 160,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "HUGO",
+      "text": "Well, we had numerous talks on careers, which was good, but none of them were very inspiring. They could have asked more people like today’s speaker to talk to us. Q24",
+      "start": 160,
+      "end": 170.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "CHANTAL",
+      "text": "I agree. We were told about lots of different careers – just when we needed to be, but not by the experts who really know stuff.",
+      "start": 170.54,
+      "end": 179.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "HUGO",
+      "text": "So did today’s talk influence your thoughts on what career you’d like to take up in the future?",
+      "start": 179.38,
+      "end": 185.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "CHANTAL",
+      "text": "Well. I promised myself that I’d go through this course and keep an open mind till the end. Q25",
+      "start": 185.5,
+      "end": 191.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "HUGO",
+      "text": "But I think it’s better to pick an area of the industry now and then aim to get better and better at it.",
+      "start": 191.96,
+      "end": 199.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "CHANTAL",
+      "text": "Well, I think we’ll just have to differ on that issue!",
+      "start": 199.78,
+      "end": 202.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "HUGO",
+      "text": "One thing’s for certain, though. From what she said, we’ll be unpaid assistants in the industry for quite a long time.",
+      "start": 202.56,
+      "end": 208.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "CHANTAL",
+      "text": "Mmm.",
+      "start": 208.74,
+      "end": 209.19
+    },
+    {
+      "id": "cue-25",
+      "speaker": "HUGO",
+      "text": "I’m prepared for that, aren’t you? Q26",
+      "start": 209.19,
+      "end": 209.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "CHANTAL",
+      "text": "Actually, I’m not going to accept that view.",
+      "start": 209.87,
+      "end": 212.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "HUGO",
+      "text": "Really? But she knows it’s the case- and everyone else says the same.",
+      "start": 212.92,
+      "end": 218.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "CHANTAL",
+      "text": "That doesn’t mean it has to be true for me.",
+      "start": 218.16,
+      "end": 221.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "HUGO",
+      "text": "OK. Well – I hope you’re right!",
+      "start": 221.56,
+      "end": 256.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "HUGO",
+      "text": "—–",
+      "start": 256.8,
+      "end": 257.25
+    },
+    {
+      "id": "cue-31",
+      "speaker": "CHANTAL",
+      "text": "I thought the speaker’s account of her first job was fascinating.",
+      "start": 257.25,
+      "end": 264.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "HUGO",
+      "text": "Yeah – she admitted she was lucky to get work being a personal dresser for a musician. She didn’t even apply for the job and there she was getting paid to choose all his clothes.",
+      "start": 264.56,
+      "end": 276.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "CHANTAL",
+      "text": "It must have felt amazing – though she said all she was looking for back then was experience, not financial reward.",
+      "start": 276.46,
+      "end": 283.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "HUGO",
+      "text": "Mmm. And then he was so mean, telling her she was more interested in her own appearance than his! Q27/28",
+      "start": 283.6,
+      "end": 290.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "CHANTAL",
+      "text": "But – she did realise he was right about that, which really made me think. I’m always considering my own clothes but now I can see you should be focusing on your client!",
+      "start": 290.4,
+      "end": 302.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "HUGO",
+      "text": "She obviously regretted losing the job.",
+      "start": 302.18,
+      "end": 304.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "CHANTAL",
+      "text": "Well, as she said, she should have hidden her negative feelings about him, but she didn’t. Q27/28",
+      "start": 304.64,
+      "end": 310.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "HUGO",
+      "text": "It was really brave the way she picked herself up and took that job in retail. Fancy working in a shop after that!",
+      "start": 310.42,
+      "end": 318.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "CHANTAL",
+      "text": "Yeah – well, she recommended we all do it at some point. I guess as a designer you’d get to find out some useful information, like how big or small the average shopper is.",
+      "start": 318.24,
+      "end": 330.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "HUGO",
+      "text": "I think that’s an issue for manufacturers, not designers. However, it would be useful to know if there’s a gap in the market – you know, an item that no one’s stocking but that consumers are looking for. Q29/30",
+      "start": 330.58,
+      "end": 343.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "CHANTAL",
+      "text": "Yeah, people don’t give up searching. They also take things back to the store if they aren’t right.",
+      "start": 343.84,
+      "end": 349.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "HUGO",
+      "text": "Yeah. Imagine you worked in an expensive shop and you found out the garments sold there were being returned because they … fell apart in the wash! Q29/30",
+      "start": 349.96,
+      "end": 359.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "CHANTAL",
+      "text": "Yeah, it would be good to know that kind of thing.",
+      "start": 359.48,
+      "end": 362.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": "HUGO",
+      "text": "Yeah.",
+      "start": 362.12,
+      "end": 400.909,
+      "preAudio": false
+    }
+  ]
+}

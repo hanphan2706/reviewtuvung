@@ -1,0 +1,431 @@
+{
+  "version": 1,
+  "partId": "cam18-t4-p2",
+  "audioFile": "Cam18 Test4 Part2.mp3",
+  "durationSeconds": 436.122313,
+  "method": "whisper-local",
+  "preambleSeconds": 58.18,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Good morning everyone, and welcome to the Museum of Farming Life.",
+      "start": 51.198,
+      "end": 58.18,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "I understand it’s your first visit here, so I’d like to give you some background information about the museum and then explain a little about what you can see during your visit.",
+      "start": 58.18,
+      "end": 69.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "So, where we’re standing at the moment is the entrance to a large building that was constructed in 1880 as the home of a local businessman.",
+      "start": 69.06,
+      "end": 78.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Alfred Palmer, of the Palmer biscuit factory.",
+      "start": 78.78,
+      "end": 82.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "It was later sold and became a hall of residence for students in 1911, and a museum in 1951.",
+      "start": 82.52,
+      "end": 92.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "In 2005, a modern extension was built to accommodate the museum’s collections.",
+      "start": 92.9,
+      "end": 99.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Q11",
+      "start": 99.1,
+      "end": 100.48
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "The museum’s owned by the university, and apart from two rooms that are our offices, the university uses the main part of the building.",
+      "start": 100.48,
+      "end": 111.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "You may see students going into the building for lessons, but it’s not open to museum visitors, I’m afraid.",
+      "start": 111.64,
+      "end": 119.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "It’s a shame because the interior architectural features are outstanding, especially the room that used to be the library.",
+      "start": 119.1,
+      "end": 127.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Q12",
+      "start": 127.44,
+      "end": 128.6
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Luckily, we’ve managed to keep entry to the museum free.",
+      "start": 128.6,
+      "end": 133.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "This includes access to all the galleries, outdoor areas and the rooms for special exhibitions.",
+      "start": 133.8,
+      "end": 141.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "We run activities for children and students, such as the museum club, for which there’s no charge.",
+      "start": 141.48,
+      "end": 150.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "We do have a donation box just over there so feel free to give whatever amount you consider appropriate.",
+      "start": 150.46,
+      "end": 158.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Q13",
+      "start": 158.36,
+      "end": 159.34
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "We do have a cloakroom, if you’d like to leave your coats and bags somewhere.",
+      "start": 159.34,
+      "end": 166.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Unlike other museums, photography is allowed here, so you might like to keep your cameras with you.",
+      "start": 166.1,
+      "end": 174.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "You might be more comfortable not carrying around heavy rucksacks, though keep your coats and jackets on as it’s quite cold in the museum garden today.",
+      "start": 174.14,
+      "end": 183.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Q14",
+      "start": 183.8,
+      "end": 205.435
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "——",
+      "start": 205.435,
+      "end": 227.07
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "I’d like to tell you about the different areas of the museum.",
+      "start": 227.07,
+      "end": 235.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Just inside, and outside the main gallery, we have an area called Four Seasons.",
+      "start": 235.38,
+      "end": 242.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Here you can watch a four-minute animation of a woodland scene.",
+      "start": 242.88,
+      "end": 247.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "It was designed especially for the museum by a group of young people on a film studies course, and it’s beautiful.",
+      "start": 247.65,
+      "end": 255.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Children absolutely love it, but then, so do adults.",
+      "start": 255.52,
+      "end": 258.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Q15",
+      "start": 258.98,
+      "end": 260.22
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "The main gallery’s called Town and Country.",
+      "start": 260.22,
+      "end": 263.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "It includes a photographic collection of prize-winning sheep and shepherds.",
+      "start": 263.8,
+      "end": 269.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Leaving Town and Country, you enter Farmhouse Kitchen, which is … well, self-explanatory.",
+      "start": 269.62,
+      "end": 276.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Here we have the oldest collection of equipment for making butter and cheese in the country.",
+      "start": 276.86,
+      "end": 283.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "And this morning, a specialist cheesemaker will be giving demonstrations of how it’s produced.",
+      "start": 283.64,
+      "end": 290.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "You may even get to try some.",
+      "start": 290.42,
+      "end": 292.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Q16",
+      "start": 292.8,
+      "end": 293.25
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "After that, you can go in two directions.",
+      "start": 293.25,
+      "end": 297.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "To the right is a staircase that takes you up to a landing from where you can look down on the galleries.",
+      "start": 297.22,
+      "end": 305.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "To the left is a room called A Year on the Farm.",
+      "start": 305.02,
+      "end": 309.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "There’s lots of seating here as sometimes we use the room for school visits, so it’s a good place to stop for a rest.",
+      "start": 309.28,
+      "end": 317.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "If you’re feeling competitive, you can take our memory test in which you answer questions about things you’ve seen in the museum.",
+      "start": 317.64,
+      "end": 325.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "Q17",
+      "start": 325.86,
+      "end": 326.52
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "The next area’s called Wagon Walk.",
+      "start": 326.52,
+      "end": 329.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "This contains farm carts from nearly every part of the country.",
+      "start": 329.6,
+      "end": 334.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "It’s surprising how much regional variation there was.",
+      "start": 334.96,
+      "end": 339.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "Beside the carts are display boards with information about each one.",
+      "start": 339.82,
+      "end": 344.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "The carts are old and fragile, so we ask you to keep your children close to you and ensure they don’t climb on the carts.",
+      "start": 344.82,
+      "end": 353.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "Q18",
+      "start": 353.62,
+      "end": 354.9
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "From Wagon Walk, you can either make your way back to reception or go out into the garden – or even go back to take another look in the galleries.",
+      "start": 354.9,
+      "end": 365.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "In the far corner of the garden is Bees are Magic, but we’re redeveloping this area so you can’t visit that at the moment.",
+      "start": 365.6,
+      "end": 374.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "You can still buy our honey in the shop, though.",
+      "start": 374.9,
+      "end": 378.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "Q19",
+      "start": 378.3,
+      "end": 378.75
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "Finally, there’s The Pond, which contains all kinds of interesting wildlife.",
+      "start": 378.75,
+      "end": 384.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "There are baby ducks that are only a few days old, as well as tiny frogs.",
+      "start": 384.5,
+      "end": 390.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "The Pond isn’t deep and there’s a fence around it, so it’s perfectly safe for children.",
+      "start": 390.52,
+      "end": 396.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "Q20",
+      "start": 396.22,
+      "end": 436.122
+    }
+  ]
+}

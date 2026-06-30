@@ -5,6 +5,54 @@ import { readingUnsplashBaseUrls } from "@/lib/reading/passage-media";
  * Không dùng lại ảnh luyện đọc; chủ đề khớp nội dung Cam 19 Test 1.
  */
 const LISTENING_PART_IMAGES: Record<string, string> = {
+  /** Restaurant recommendations */
+  "cam20-t1-p1":
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80&auto=format&fit=crop",
+  /** Edelman Pottery */
+  "cam20-t1-p2":
+    "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=1200&q=80&auto=format&fit=crop",
+  /** Loneliness and health */
+  "cam20-t1-p3":
+    "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=1200&q=80&auto=format&fit=crop",
+  /** Reclaiming urban rivers */
+  "cam20-t1-p4":
+    "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1200&q=80&auto=format&fit=crop",
+  /** Caring for elderly at home */
+  "cam20-t2-p1":
+    "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&q=80&auto=format&fit=crop",
+  /** Town volunteers */
+  "cam20-t2-p2":
+    "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1200&q=80&auto=format&fit=crop",
+  /** Human geography */
+  "cam20-t2-p3":
+    "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80&auto=format&fit=crop",
+  /** Developing food trends */
+  "cam20-t2-p4":
+    "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=1200&q=80&auto=format&fit=crop",
+  /** Furniture rental */
+  "cam20-t3-p1":
+    "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&q=80&auto=format&fit=crop",
+  /** Bidcaster archaeological dig */
+  "cam20-t3-p2":
+    "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&q=80&auto=format&fit=crop",
+  /** Theatre programmes */
+  "cam20-t3-p3":
+    "https://images.unsplash.com/photo-1503095396549-807759245b35?w=1200&q=80&auto=format&fit=crop",
+  /** Inclusive design */
+  "cam20-t3-p4":
+    "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80&auto=format&fit=crop",
+  /** Family visit advice */
+  "cam20-t4-p1":
+    "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=1200&q=80&auto=format&fit=crop",
+  /** Football stadium tour */
+  "cam20-t4-p2":
+    "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1200&q=80&auto=format&fit=crop",
+  /** Teaching handwriting */
+  "cam20-t4-p3":
+    "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1200&q=80&auto=format&fit=crop",
+  /** Chembe Bird Sanctuary */
+  "cam20-t4-p4":
+    "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=1200&q=80&auto=format&fit=crop",
   /** Hinchingbrooke Country Park — Wellington Country Park */
   "cam19-t1-p1":
     "https://eu-assets.simpleview-europe.com/hampshire2016/imageresizer/?image=%2Fdmsimgs%2FWellington_Country_Park_771332940.jpg&action=ProductDetail",
@@ -53,6 +101,54 @@ const LISTENING_PART_IMAGES: Record<string, string> = {
   /** Reforestation — forest landscape */
   "cam19-t4-p4":
     "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200&q=80&auto=format&fit=crop",
+  /** Transport survey — city bus */
+  "cam18-t1-p1":
+    "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&q=80&auto=format&fit=crop",
+  /** ACE volunteering — community help */
+  "cam18-t1-p2":
+    "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1200&q=80&auto=format&fit=crop",
+  /** Fashion design careers */
+  "cam18-t1-p3":
+    "https://images.unsplash.com/photo-1558171813-4c088753af8f?w=1200&q=80&auto=format&fit=crop",
+  /** Elephant translocation */
+  "cam18-t1-p4":
+    "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=1200&q=80&auto=format&fit=crop",
+  /** Milo's Restaurants */
+  "cam18-t2-p1":
+    "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80&auto=format&fit=crop",
+  /** Housing development */
+  "cam18-t2-p2":
+    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80&auto=format&fit=crop",
+  /** Laki eruption — volcanic landscape */
+  "cam18-t2-p3":
+    "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=1200&q=80&auto=format&fit=crop",
+  /** History of pockets — vintage tailoring */
+  "cam18-t2-p4":
+    "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=1200&q=80&auto=format&fit=crop",
+  /** Wayside Camera Club */
+  "cam18-t3-p1":
+    "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1200&q=80&auto=format&fit=crop",
+  /** Wild mushrooms */
+  "cam18-t3-p2":
+    "https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=1200&q=80&auto=format&fit=crop",
+  /** The Luddites — industrial history */
+  "cam18-t3-p3":
+    "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&q=80&auto=format&fit=crop",
+  /** Space traffic management */
+  "cam18-t3-p4":
+    "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1200&q=80&auto=format&fit=crop",
+  /** Fordham job agency */
+  "cam18-t4-p1":
+    "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80&auto=format&fit=crop",
+  /** Museum tour */
+  "cam18-t4-p2":
+    "https://images.unsplash.com/photo-1564399579883-451a5d44ec08?w=1200&q=80&auto=format&fit=crop",
+  /** Origami in class */
+  "cam18-t4-p3":
+    "https://images.unsplash.com/photo-1588072432836-e10032774350?w=1200&q=80&auto=format&fit=crop",
+  /** Victor Hugo — books / literature */
+  "cam18-t4-p4":
+    "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=80&auto=format&fit=crop",
   /** Tactics Basic Unit 1 — classroom listening */
   "tactics-basic-u01-l01":
     "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1200&q=80&auto=format&fit=crop",

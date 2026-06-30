@@ -1,6 +1,8 @@
-const SPEAKER_LINE = /^([A-Z][A-Z'\s]{1,22}):\s*(.*)$/;
+import { splitTranscriptSpeakerLine } from "@/lib/listening/parse-transcript-speaker";
+
 const RULE_LINE = /^[—\-_\s]{4,}$/;
 const PART_LINE = /^PART\s+\d+\s*$/i;
+const INSTRUCTION_LINE = /^(Before you hear|Now listen)/i;
 
 export type ParsedTranscriptLine = {
   speaker: string | null;
@@ -10,15 +12,26 @@ export type ParsedTranscriptLine = {
 /** Tách plain text Part (đã sanitize) thành các dòng thoại — bỏ PART header và gạch ngăn. */
 export function parseListeningTranscriptLines(plain: string): ParsedTranscriptLine[] {
   const out: ParsedTranscriptLine[] = [];
+  let lastSpeaker: string | null = null;
+
   for (const raw of plain.split(/\r?\n/)) {
     const t = raw.trim();
     if (t.length === 0 || PART_LINE.test(t) || RULE_LINE.test(t)) continue;
-    const sm = raw.trimEnd().match(SPEAKER_LINE);
-    if (sm?.[1]) {
-      out.push({ speaker: sm[1].trim(), text: (sm[2] ?? "").trim() });
+
+    const split = splitTranscriptSpeakerLine(raw.trimEnd());
+    if (split.speaker) {
+      lastSpeaker = split.speaker;
+      out.push({ speaker: split.speaker, text: split.body });
       continue;
     }
-    out.push({ speaker: null, text: t });
+
+    if (INSTRUCTION_LINE.test(t)) {
+      lastSpeaker = null;
+      out.push({ speaker: null, text: t });
+      continue;
+    }
+
+    out.push({ speaker: lastSpeaker, text: t });
   }
   return out;
 }

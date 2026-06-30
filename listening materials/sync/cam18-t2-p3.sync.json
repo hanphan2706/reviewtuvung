@@ -1,0 +1,249 @@
+{
+  "version": 1,
+  "partId": "cam18-t2-p3",
+  "audioFile": "Cam18 Test2 Part3.mp3",
+  "durationSeconds": 428.024375,
+  "method": "whisper-local",
+  "preambleSeconds": 65.94,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "ADAM",
+      "text": "So, Michelle, shall we make a start on our presentation? We haven’t got that much time left.",
+      "start": 65.94,
+      "end": 71.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "MICHELLE",
+      "text": "No, Adam. But at least we’ve done all the background reading. I found it really interesting – I’d never even heard of the Laki eruption before this.",
+      "start": 71.72,
+      "end": 81.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "ADAM",
+      "text": "Me neither. I suppose 1783 is a long time ago.",
+      "start": 81.62,
+      "end": 86.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "MICHELLE",
+      "text": "But it was a huge eruption and it had such devastating consequences.",
+      "start": 86.2,
+      "end": 91.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "ADAM",
+      "text": "I know. It was great there were so many primary sources to look at. It really gives you a sense of how catastrophic the volcano was. People were really trying to make sense of the science for the first time.",
+      "start": 91.18,
+      "end": 105.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "MICHELLE",
+      "text": "That’s right. But what I found more significant was how it impacted directly and indirectly on political events, as well as having massive social and economic consequences. Q21",
+      "start": 105.36,
+      "end": 117,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "ADAM",
+      "text": "I know. That should be the main focus of our presentation.",
+      "start": 117,
+      "end": 121.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "MICHELLE",
+      "text": "The observations made by people at the time were interesting, weren’t they? I mean, they all gave a pretty consistent account of what happened, even if they didn’t always use the same terminology.",
+      "start": 121.44,
+      "end": 134.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "ADAM",
+      "text": "Yeah. I was surprised there were so many weather stations established by that time – so, you know, you can see how the weather changed, often by the hour. Q22",
+      "start": 134.26,
+      "end": 144.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "MICHELLE",
+      "text": "Right. Writers at the time talked about the Laki haze to describe the volcanic fog that spread across Europe. They all realised that this wasn’t the sort of fog they were used to – and of course this was in pre-industrial times- so they hadn’t experienced sulphur-smelling fog before.",
+      "start": 144.46,
+      "end": 163.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "ADAM",
+      "text": "No, that’s true.",
+      "start": 163.04,
+      "end": 164.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "MICHELLE",
+      "text": "Reports from the period blamed the haze for an increase in headaches, respiratory issues and asthma attacks. And they all describe how it covered the sun and made it look a strange red colour. Q23",
+      "start": 164.48,
+      "end": 177.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "ADAM",
+      "text": "Must have been very weird.",
+      "start": 177.6,
+      "end": 179.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "MICHELLE",
+      "text": "It’s interesting that Benjamin Franklin wrote about the haze. Did you read that? He was the American ambassador in Paris at the time.",
+      "start": 179.92,
+      "end": 189.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "ADAM",
+      "text": "Yeah. At first no one realised that the haze was caused by the volcanic eruption in Iceland.",
+      "start": 189.22,
+      "end": 195.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "MICHELLE",
+      "text": "It was Benjamin Franklin who realised that before anyone else. Q24",
+      "start": 195.44,
+      "end": 199.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "ADAM",
+      "text": "He’s often credited with that, apparently. But a French naturalist beat him to it – I can’t remember his name. I’d have to look it up. Then other naturalists had the same idea – all independently of each other.",
+      "start": 199.66,
+      "end": 212.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "MICHELLE",
+      "text": "Oh right. We should talk about the immediate impact of the eruption, which was obviously enormous- especially in Iceland, where so many people died.",
+      "start": 212.92,
+      "end": 225.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "ADAM",
+      "text": "Mmm. You’d expect that- and the fact that the volcanic ash drifted so swiftly – but not that the effects would go on for so long. Or that two years after the eruption, strange weather events were being reported as far away as North America and North Africa. Q25/26",
+      "start": 225.62,
+      "end": 241.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "MICHELLE",
+      "text": "No. I found all that hard to believe too. It must have been terrible- and there was nothing anyone could do about it, even if they knew the ash cloud was coming in their direction.",
+      "start": 241.74,
+      "end": 255.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "MICHELLE",
+      "text": "——",
+      "start": 255.36,
+      "end": 292.36
+    },
+    {
+      "id": "cue-22",
+      "speaker": "MICHELLE",
+      "text": "We should run through some of the terrible consequences of the eruption experienced in different countries. There’s quite a varied range.",
+      "start": 292.36,
+      "end": 301.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "ADAM",
+      "text": "Starting with Iceland, where the impact on farming was devastating.",
+      "start": 301.09,
+      "end": 305.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "MICHELLE",
+      "text": "Mmm. One of the most dramatic things there was the effect on livestock as they grazed in the fields. They were poisoned because they ate vegetation that had been contaminated with fluorine as a result of the volcanic fallout. Q27",
+      "start": 305.97,
+      "end": 320.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "ADAM",
+      "text": "That was horrible. In Egypt, the bizarre weather patterns led to a severe drought and as a result the Nile didn’t flood, which meant the crops all failed.",
+      "start": 320.67,
+      "end": 332.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "MICHELLE",
+      "text": "It’s so far from where the eruption happened and yet the famine there led to more people dying than any other country. It was worse than the plague. Q28",
+      "start": 332.13,
+      "end": 342.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "ADAM",
+      "text": "OK. Then in the UK the mortality rate went up a lot- presumably from respiratory illnesses. According to one report it was about double the usual number and included an unusually high percentage of people under the age of 25. Q29",
+      "start": 342.85,
+      "end": 359.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "MICHELLE",
+      "text": "Mmm. I think people will be surprised to hear that the weather in the USA was badly affected too. George Washington even makes a note in his diary that they were snowbound until March in Virginia. That was before he became president.",
+      "start": 359.67,
+      "end": 377.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "ADAM",
+      "text": "Yes, and there was ice floating down the Mississippi, which was unprecedented. Q30",
+      "start": 377.49,
+      "end": 383.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "MICHELLE",
+      "text": "Astonishing, really. Anyway, what do you think …",
+      "start": 383.33,
+      "end": 428.024,
+      "preAudio": false
+    }
+  ]
+}

@@ -1,7 +1,6 @@
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
-import { IELTS_CAM19_T2_FLOW_CONTENT } from "@/lib/listening/ielts-cam19-t2-flow-content";
-import { IELTS_CAM19_T3_FLOW_CONTENT } from "@/lib/listening/ielts-cam19-t3-flow-content";
-import { IELTS_CAM19_T4_FLOW_CONTENT } from "@/lib/listening/ielts-cam19-t4-flow-content";
+
+export { getIeltsFlowLessonContent } from "@/lib/listening/ielts-flow-content-registry";
 
 /** Nội dung flow nghe hiểu IELTS — Cam 19 Test 1 (viết tay theo transcript + QnA). */
 const CAM19_T1_P1: ListeningFlowLessonContent = {
@@ -441,12 +440,3 @@ export const IELTS_CAM19_T1_FLOW_CONTENT: Record<string, ListeningFlowLessonCont
   "cam19-t1-p3": CAM19_T1_P3,
   "cam19-t1-p4": CAM19_T1_P4,
 };
-
-export function getIeltsFlowLessonContent(partId: string): ListeningFlowLessonContent | undefined {
-  return (
-    IELTS_CAM19_T1_FLOW_CONTENT[partId] ??
-    IELTS_CAM19_T2_FLOW_CONTENT[partId] ??
-    IELTS_CAM19_T3_FLOW_CONTENT[partId] ??
-    IELTS_CAM19_T4_FLOW_CONTENT[partId]
-  );
-}

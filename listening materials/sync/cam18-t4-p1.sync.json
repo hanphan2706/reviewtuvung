@@ -1,0 +1,330 @@
+{
+  "version": 1,
+  "partId": "cam18-t4-p1",
+  "audioFile": "Cam18 Test4 Part1.mp3",
+  "durationSeconds": 442.888,
+  "method": "whisper-local",
+  "preambleSeconds": 115.28,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "JULIE",
+      "text": "Hello?",
+      "start": 101.446,
+      "end": 101.923,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "GREG",
+      "text": "Oh, hello. Is that Julie Davison?",
+      "start": 101.923,
+      "end": 104.786,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "JULIE",
+      "text": "Yes.",
+      "start": 104.786,
+      "end": 105.263,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": "GREG",
+      "text": "This is Greg Preston from the Employment Agency. We met last week when you came in to enquire about office work.",
+      "start": 105.263,
+      "end": 115.28,
+      "preAudio": true
+    },
+    {
+      "id": "cue-5",
+      "speaker": "JULIE",
+      "text": "Oh, that’s right.",
+      "start": 115.28,
+      "end": 117.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "GREG",
+      "text": "Now we’ve just had some details come in of a job which might interest you.",
+      "start": 117.14,
+      "end": 122.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "JULIE",
+      "text": "OK.",
+      "start": 122.24,
+      "end": 122.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "GREG",
+      "text": "So this is a position for a receptionist – I believe you’ve done that sort of work before? Q1",
+      "start": 122.69,
+      "end": 129.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "JULIE",
+      "text": "Yes, I have, I worked in a sports centre for a couple of years before I got married and had the children.",
+      "start": 129.15,
+      "end": 136.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "GREG",
+      "text": "Right. Well, this job’s in Fordham, so not too far away for you, and it’s at the medical centre there. Q2",
+      "start": 136.23,
+      "end": 143.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "JULIE",
+      "text": "OK. So where exactly is that?",
+      "start": 143.4,
+      "end": 145.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "GREG",
+      "text": "It’s quite near the station, on Chastons Road. Q3",
+      "start": 145.44,
+      "end": 148.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "JULIE",
+      "text": "Sorry?",
+      "start": 148.5,
+      "end": 148.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "GREG",
+      "text": "Chastons Road- that’s C-H-A-S-T-O-N-S.",
+      "start": 148.95,
+      "end": 154.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "JULIE",
+      "text": "OK, thanks. So what would the work involve? Dealing with enquiries from patients?",
+      "start": 154.44,
+      "end": 158.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "GREG",
+      "text": "Yes, and you’d also be involved in making appointments, whether face to face or on the phone. And rescheduling them if necessary. Q4",
+      "start": 158.86,
+      "end": 166.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "JULIE",
+      "text": "Fine, that shouldn’t be a problem.",
+      "start": 166.68,
+      "end": 168.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "GREG",
+      "text": "And another of your duties would be keeping the centre’s database up-to-date. Then you might have other general administrative duties as well, but those would be the main ones. Q5",
+      "start": 168.72,
+      "end": 178.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "JULIE",
+      "text": "OK.",
+      "start": 178.92,
+      "end": 232.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "GREG",
+      "text": "Now when the details came in, I immediately thought of you because one thing they do require is someone with experience, and you did mention your work at the sports centre when you came in to see us. Q6",
+      "start": 232.8,
+      "end": 247.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "JULIE",
+      "text": "Yes, in fact I enjoyed that job. Is there anything else they’re looking for?",
+      "start": 247.24,
+      "end": 252.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "GREG",
+      "text": "Well, they say it’s quite a high-pressure environment, they’re always very busy, and patients are often under stress, so they want someone who can cope with that and stay calm, and at the same time be confident when interacting with the public. Q7",
+      "start": 252.76,
+      "end": 272.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "JULIE",
+      "text": "Well, after dealing with three children all under five, I reckon I can cope with that.",
+      "start": 272.48,
+      "end": 277.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "GREG",
+      "text": "I’m sure you can.",
+      "start": 277.94,
+      "end": 279.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "GREG",
+      "text": "And then another thing they mention is that they’re looking for someone with good IT skills …",
+      "start": 279.68,
+      "end": 287.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "JULIE",
+      "text": "Not a problem.",
+      "start": 287.24,
+      "end": 288.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "GREG",
+      "text": "So you’d be interested in following this up?",
+      "start": 288.5,
+      "end": 291.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "JULIE",
+      "text": "Sure. When would it start?",
+      "start": 291.5,
+      "end": 294.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "GREG",
+      "text": "Well, they’re looking for someone from the beginning of next month, but I should tell you that this isn’t a permanent job, it’s temporary, so the contract would be just to the end of September. But they do say that there could be further opportunities after that. Q8",
+      "start": 294.04,
+      "end": 311.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "JULIE",
+      "text": "OK. And what would the hours be?",
+      "start": 311.94,
+      "end": 315.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "GREG",
+      "text": "Well, they want someone who can start at a quarter to eight in the morning could you manage that?",
+      "start": 315.04,
+      "end": 321.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "JULIE",
+      "text": "Yes, my husband would have to get the kids up and off to my mother’s – she’s going to be looking after them while I’m at work. What time would I finish?",
+      "start": 321.5,
+      "end": 332.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "GREG",
+      "text": "One fifteen. Q9",
+      "start": 332.38,
+      "end": 333.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "JULIE",
+      "text": "That should work out all right. I can pick the kids up on my way home, and then I’ll have the afternoon with them. Oh, one thing … is there parking available for staff at the centre? Q10",
+      "start": 333.4,
+      "end": 345.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "GREG",
+      "text": "Yes, there is. and it’s also on a bus route.",
+      "start": 345.98,
+      "end": 348.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "JULIE",
+      "text": "Right. Well, I expect I’ll have the car but it’s good to know that. OK, so where do I go from here?",
+      "start": 348.54,
+      "end": 356.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "GREG",
+      "text": "Well, if you’re happy for me to do so, I’ll forward your CV and references, and then the best thing would probably be for you to phone them so they can arrange for an interview.",
+      "start": 356.02,
+      "end": 368.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "JULIE",
+      "text": "Great. Well thank you very much.",
+      "start": 368.18,
+      "end": 370.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "GREG",
+      "text": "You’re welcome. Bye now.",
+      "start": 370.56,
+      "end": 372.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "JULIE",
+      "text": "Bye.",
+      "start": 372.46,
+      "end": 442.888,
+      "preAudio": false
+    }
+  ]
+}

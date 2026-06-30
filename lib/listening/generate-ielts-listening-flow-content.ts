@@ -6,15 +6,15 @@ import {
   type ListeningPartQnaRef,
 } from "@/lib/listening/listening-qna-catalog";
 import { listeningQnaFilePath } from "@/lib/listening/listening-materials-fs";
+import { buildFlowDetailQuestionsFromQnaPart } from "@/lib/listening/build-flow-detail-from-qna";
 import {
   getListeningQnaPart,
   parseListeningQnaText,
-  type ListeningQnaMcqQuestion,
   type ListeningQnaPart,
   type ParsedListeningQnaFile,
 } from "@/lib/listening/parse-listening-qna";
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
-import { getIeltsFlowLessonContent } from "@/lib/listening/ielts-cam19-t1-flow-content";
+import { getIeltsFlowLessonContent } from "@/lib/listening/ielts-flow-content-registry";
 
 export function loadListeningQnaFile(ref: { fileName: string }): ParsedListeningQnaFile | null {
   const filePath = listeningQnaFilePath(ref.fileName);
@@ -32,18 +32,6 @@ export function loadListeningQnaTest(testId: string): ParsedListeningQnaFile | n
   const ref = getListeningTestQnaRef(testId);
   if (!ref) return null;
   return loadListeningQnaFile(ref);
-}
-
-function pickMcqQuestions(part: ListeningQnaPart, limit = 3): ListeningQnaMcqQuestion[] {
-  const out: ListeningQnaMcqQuestion[] = [];
-  for (const section of part.sections) {
-    if (section.kind !== "mcq") continue;
-    for (const q of section.questions) {
-      out.push(q);
-      if (out.length >= limit) return out;
-    }
-  }
-  return out;
 }
 
 function topicKeywords(text: string): string[] {
@@ -127,31 +115,12 @@ export function generateIeltsListeningFlowContent(
     },
   ];
 
-  const realMcq = pickMcqQuestions(qnaPart, 3);
-  const detailFromExam = realMcq.slice(0, 2).map((q) => ({
-    key: `exam-${q.number}`,
-    conversationEn: `Question ${q.number}`,
-    conversationVi: `Câu ${q.number}`,
-    questionEn: q.prompt,
-    questionVi: q.prompt,
-    answerEn: qnaPart.answers[String(q.number)] ?? "See transcript",
-    answerVi: qnaPart.answers[String(q.number)] ?? "Xem transcript",
-  }));
-
-  const generatedDetail = keywords.slice(0, 2).map((word, index) => ({
-    key: `gen-${index + 1}`,
-    conversationEn: "Listening detail",
-    conversationVi: "Chi tiết bài nghe",
-    questionEn: `What did you hear about “${word}”?`,
-    questionVi: `Bạn nghe được gì về “${word}”?`,
-    answerEn: `Note one detail from the audio related to ${word}.`,
-    answerVi: `Ghi một chi tiết liên quan đến ${word} từ bài nghe.`,
-  }));
+  const detailFromExam = buildFlowDetailQuestionsFromQnaPart(qnaPart, 6);
 
   return {
     predictionOptions,
     gistOptions,
-    detailQuestions: [...detailFromExam, ...generatedDetail].slice(0, 4),
-    memoryPlaceholder: "Ghi vài ý bạn nhớ sau lần nghe đầu…",
+    detailQuestions: detailFromExam,
+    memoryPlaceholder: `Ghi vài ý về ${meta.title} sau lần nghe đầu…`,
   };
 }

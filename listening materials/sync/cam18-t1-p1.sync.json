@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "partId": "cam18-t1-p1",
+  "audioFile": "Cam18 Test1 Part1.mp3",
+  "durationSeconds": 431.289688,
+  "method": "whisper-local",
+  "preambleSeconds": 121.217,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "MAN",
+      "text": "Excuse me. Would you mind if I asked you some questions? We’re doing a survey on transport.",
+      "start": 104.01,
+      "end": 109.79,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "SADIE",
+      "text": "Yes, that’s OK.",
+      "start": 109.79,
+      "end": 110.81,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "MAN",
+      "text": "First of all, can I take your name?",
+      "start": 110.81,
+      "end": 112.86,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": "SADIE",
+      "text": "Yes. It’s Sadie Jones.",
+      "start": 112.86,
+      "end": 113.11,
+      "preAudio": true
+    },
+    {
+      "id": "cue-5",
+      "speaker": "MAN",
+      "text": "Thanks very much. And could I have your date of birth – just the year will do, actually. Is that all right?",
+      "start": 113.11,
+      "end": 120.459,
+      "preAudio": true
+    },
+    {
+      "id": "cue-6",
+      "speaker": "SADIE",
+      "text": "Yes, that’s fine. It’s 1991.",
+      "start": 120.459,
+      "end": 121.217,
+      "preAudio": true
+    },
+    {
+      "id": "cue-7",
+      "speaker": "MAN",
+      "text": "So next your postcode, please.",
+      "start": 121.217,
+      "end": 121.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "SADIE",
+      "text": "It’s DW3Q 7YZ. Q1",
+      "start": 121.99,
+      "end": 127.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "MAN",
+      "text": "Great. Thanks. Is that in Wells?",
+      "start": 127.59,
+      "end": 131.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "SADIE",
+      "text": "No it’s actually in Harborne- Wells isn’t far from there, though.",
+      "start": 131.17,
+      "end": 136.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "MAN",
+      "text": "I really like that area. My grandmother lived there when I was a kid.",
+      "start": 136.35,
+      "end": 141.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "SADIE",
+      "text": "Yes, it is nice.",
+      "start": 141.35,
+      "end": 143.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "MAN",
+      "text": "Right, so now I want to ask you some questions about how you travelled here today. Did you use public transport?",
+      "start": 143.49,
+      "end": 152.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "SADIE",
+      "text": "Yes. I came by bus.",
+      "start": 152.43,
+      "end": 154.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "MAN",
+      "text": "OK. And that was today. It’s the 24th of April, isn’t it? Q2",
+      "start": 154.77,
+      "end": 160.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "SADIE",
+      "text": "Isn’t it the 25th? No, actually, you’re right.",
+      "start": 160.79,
+      "end": 167.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "MAN",
+      "text": "Ha ha. And what was the reason for your trip today? I can see you’ve got some shopping with you.",
+      "start": 167.23,
+      "end": 174.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "SADIE",
+      "text": "Yes. I did some shopping but the main reason I came here was to go to the dentist. Q3",
+      "start": 174.03,
+      "end": 180.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "MAN",
+      "text": "That’s not much fun. Hope it was nothing serious.",
+      "start": 180.81,
+      "end": 184.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "SADIE",
+      "text": "No, it was just a check-up. It’s fine.",
+      "start": 184.47,
+      "end": 187.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "MAN",
+      "text": "Good. Do you normally travel by bus into the city centre?",
+      "start": 187.75,
+      "end": 192.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "SADIE",
+      "text": "Yes. I stopped driving in ages ago because parking was so difficult to find and it costs so much. Q4",
+      "start": 192.23,
+      "end": 201.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "MAN",
+      "text": "I see.",
+      "start": 201.49,
+      "end": 202.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "SADIE",
+      "text": "The bus is much more convenient too. It only takes about 30 minutes.",
+      "start": 202.61,
+      "end": 208.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "MAN",
+      "text": "That’s good. So where did you start your journey?",
+      "start": 208.01,
+      "end": 211.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "SADIE",
+      "text": "At the bus stop on Claxby Street. Q5",
+      "start": 211.85,
+      "end": 215.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "MAN",
+      "text": "Is that C-L-A-X-B-Y?",
+      "start": 215.63,
+      "end": 220.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "SADIE",
+      "text": "That’s right.",
+      "start": 220.07,
+      "end": 220.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "SADIE",
+      "text": "—–",
+      "start": 220.75,
+      "end": 262.15
+    },
+    {
+      "id": "cue-30",
+      "speaker": "MAN",
+      "text": "And how satisfied with the service are you? Do you have any complaints?",
+      "start": 262.15,
+      "end": 266.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "SADIE",
+      "text": "Well, as I said, it’s very convenient and quick when it’s on time, but this morning it was late. Only about 10 minutes, but still. Q6",
+      "start": 266.77,
+      "end": 278.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "MAN",
+      "text": "Yes, I understand that’s annoying. And what about the timetable? Do you have any comments about that?",
+      "start": 278.49,
+      "end": 285.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "SADIE",
+      "text": "Mmm. I suppose I mainly use the bus during the day, but any time I’ve been in town in the evening – for dinner or at the cinema – I’ve noticed you have to wait a long time for a bus – there aren’t that many. Q7",
+      "start": 285.53,
+      "end": 303.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "MAN",
+      "text": "OK, thanks. So now I’d like to ask you about your car use.",
+      "start": 303.53,
+      "end": 309.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "SADIE",
+      "text": "Well, I have got a car but I don’t use it that often. Mainly just to go to the supermarket. But that’s about it really. My husband uses it at the weekends to go to the golf club. Q8",
+      "start": 309.35,
+      "end": 323.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "MAN",
+      "text": "And what about a bicycle?",
+      "start": 323.99,
+      "end": 325.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "SADIE",
+      "text": "I don’t actually have one at the moment.",
+      "start": 325.71,
+      "end": 328.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "MAN",
+      "text": "What about the city bikes you can rent? Do you ever use those?",
+      "start": 328.51,
+      "end": 332.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "SADIE",
+      "text": "No – I’m not keen on cycling there because of all the pollution. But I would like to get a bike – it would be good to use it to get to work. Q9",
+      "start": 332.93,
+      "end": 344.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "MAN",
+      "text": "So why haven’t you got one now?",
+      "start": 344.49,
+      "end": 346.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "SADIE",
+      "text": "Well, I live in a flat – on the second floor and it doesn’t have any storage – so we’d have to leave it in the hall outside the flat. Q10",
+      "start": 346.87,
+      "end": 356.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "MAN",
+      "text": "I see. OK. Well, I think that’s all …",
+      "start": 356.91,
+      "end": 431.29,
+      "preAudio": false
+    }
+  ]
+}

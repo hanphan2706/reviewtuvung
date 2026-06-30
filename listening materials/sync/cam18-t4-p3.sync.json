@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "partId": "cam18-t4-p3",
+  "audioFile": "Cam18 Test4 Part3.mp3",
+  "durationSeconds": 418.097813,
+  "method": "whisper-local",
+  "preambleSeconds": 61.19,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "TUTOR",
+      "text": "So now I want you to discuss the lesson we’ve just been watching on the video and think about the ways in which origami can be a useful educational tool. Can you all work with the person sitting next to you …",
+      "start": 61.19,
+      "end": 75.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "SEB",
+      "text": "I had no idea that such a simple thing like folding squares of paper to make the shape of something like a bird could be such an amazing tool. It’s made me see origami in a whole new light.",
+      "start": 75.83,
+      "end": 89.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "LIA",
+      "text": "I know. It was interesting to see the educational skills the children were developing by doing origami. On the video you could see them really listening hard to make sure they did all the steps in the right order to make the bird.",
+      "start": 89.09,
+      "end": 103.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "SEB",
+      "text": "That’s right. In this lesson they were working individually but it would also be interesting to see if the children could work out how to make something simple without being given any direction. That would help with building teamwork as well.",
+      "start": 103.09,
+      "end": 117.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "LIA",
+      "text": "Yes, but much more of a challenge. One thing that really stood out for me was that the children were all having fun while being taught something new. Q21/22",
+      "start": 117.09,
+      "end": 126.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "SEB",
+      "text": "Which is a key aim of any lesson with this age group. And although these kids had no problems with folding the paper, with younger children you could do origami to help practise fine motor skills.",
+      "start": 126.95,
+      "end": 139.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "LIA",
+      "text": "Absolutely. Shall we talk about the individual children we saw on the video? I wrote all their names down and took some notes.",
+      "start": 139.19,
+      "end": 148.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "SEB",
+      "text": "Yes, I did too.",
+      "start": 148.73,
+      "end": 150.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "LIA",
+      "text": "OK, good. Let’s start with Sid.",
+      "start": 150.15,
+      "end": 153.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "SEB",
+      "text": "He was interesting because before they started doing the origami, he was being quite disruptive.",
+      "start": 153.85,
+      "end": 160.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "LIA",
+      "text": "Yes. He really benefited from having to use his hands – it helped him to settle down and start concentrating. Q23",
+      "start": 160.35,
+      "end": 168.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "SEB",
+      "text": "Yes, I noticed that too. What about Jack? I noticed he seemed to want to work things out for himself.",
+      "start": 168.63,
+      "end": 176.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "LIA",
+      "text": "Mmm. You could see him trying out different things rather than asking the teacher for help. What did you make of Naomi? Q24",
+      "start": 176.97,
+      "end": 185.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "SEB",
+      "text": "She seemed to be losing interest at one point but then she decided she wanted her mouse to be the best and that motivated her to try harder. Q25",
+      "start": 185.67,
+      "end": 195.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "LIA",
+      "text": "She didn’t seem satisfied with hers in the end, though.",
+      "start": 195.53,
+      "end": 198.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "SEB",
+      "text": "No.",
+      "start": 198.93,
+      "end": 200.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "LIA",
+      "text": "Anya was such a star. She listened so carefully and then produced the perfect bird with very little effort. Q26",
+      "start": 200.09,
+      "end": 209.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "SEB",
+      "text": "Mmm – I think the teacher could have increased the level of difficulty for her.",
+      "start": 209.55,
+      "end": 214.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "LIA",
+      "text": "Maybe. I think it was the first time Zara had come across origami.",
+      "start": 214.65,
+      "end": 220.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "SEB",
+      "text": "She looked as if she didn’t really get what was going on.",
+      "start": 220.29,
+      "end": 224.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "LIA",
+      "text": "She seemed unsure about what she was supposed to do. but in the end hers didn’t turn out too badly. Q27",
+      "start": 224.37,
+      "end": 231.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "SEB",
+      "text": "Yeah. I’m sure it was a positive learning experience for her.",
+      "start": 231.51,
+      "end": 272.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "LIA",
+      "text": "Mmm.",
+      "start": 272.02,
+      "end": 272.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "LIA",
+      "text": "—–",
+      "start": 272.76,
+      "end": 275.96
+    },
+    {
+      "id": "cue-25",
+      "speaker": "LIA",
+      "text": "I think one reason why the origami activity worked so well in this class was that the teacher was well prepared.",
+      "start": 275.96,
+      "end": 284.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "SEB",
+      "text": "Right. I think it would have taken me ages to prepare examples, showing each of the steps involved in making the bird. But that was a really good idea. The children could see what they were aiming for – and much better for them to be able to hold something, rather than just looking at pictures. Q28",
+      "start": 284.02,
+      "end": 302.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "LIA",
+      "text": "Mmm – those physical examples supported her verbal explanations really well.",
+      "start": 302.4,
+      "end": 307.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "SEB",
+      "text": "It’s strange that origami isn’t used more widely. Why do you think that is?",
+      "start": 307.58,
+      "end": 313.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "LIA",
+      "text": "Well, teachers may just feel it’s not that appealing to children who are used to doing everything on computers, especially boys. Even if they’re aware of the benefits.",
+      "start": 313.4,
+      "end": 323.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "SEB",
+      "text": "Oh, I don’t know. It’s no different to any other craft activity. I bet it’s because so many teachers are clumsy like me. Q29",
+      "start": 323.02,
+      "end": 331.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "LIA",
+      "text": "That’s true – too much effort required if you’re not good with your hands.",
+      "start": 331.7,
+      "end": 336.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "SEB",
+      "text": "Well, anyway, I think we should try it out in our maths teaching practice with Year 3. I can see using origami is a really engaging way of reinforcing children’s knowledge of geometric shapes, like they were doing in the video, but I think it would also work really well for presenting fractions, which is coming up soon. Q30",
+      "start": 336.46,
+      "end": 358.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "LIA",
+      "text": "Good idea – that’s something most of the kids in that class might struggle with. Origami would also be good practice for using symmetry- but I think they did that last term.",
+      "start": 358.82,
+      "end": 370.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "SEB",
+      "text": "OK – well let’s try and get some ideas together and plan the lesson next week.",
+      "start": 370.02,
+      "end": 376.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "TUTOR",
+      "text": "OK, if you could all stop …",
+      "start": 376.06,
+      "end": 418.098,
+      "preAudio": false
+    }
+  ]
+}

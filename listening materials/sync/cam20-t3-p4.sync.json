@@ -1,0 +1,306 @@
+{
+  "version": 1,
+  "partId": "cam20-t3-p4",
+  "audioFile": "Cam20 Test3 Part4.mp3",
+  "durationSeconds": 512.950567,
+  "method": "whisper-local",
+  "preambleSeconds": 90.178,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "It’s only relatively recently that designers have become aware of the need to be inclusive when designing products.",
+      "start": 77.598,
+      "end": 83.718,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "But what does that mean exactly?",
+      "start": 83.718,
+      "end": 85.758,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Well, it simply means designing products that span economic, social and cultural barriers.",
+      "start": 85.758,
+      "end": 90.178,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "It means making sure products are accessible, so that as many different types of people as possible can use them, without any type of adaptation having to be made to the original design.",
+      "start": 90.178,
+      "end": 102.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Inclusive design is often linked with universal design, although they are not quite the same thing.",
+      "start": 102.16,
+      "end": 109.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Universal design aims to make products that work for everyone and that includes considering the needs of people who have cognitive difficulties, which can present quite a challenge.",
+      "start": 109.2,
+      "end": 121.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Today examples of successful inclusive design can be seen all around us.",
+      "start": 121.76,
+      "end": 128.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "In workplaces it is common to see desks which can be adjusted to suit people of different heights or for wheelchair users This still isn’t always the case, however, and is one reason why office workers often suffer from back or neck problems.",
+      "start": 128.02,
+      "end": 146.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "You’ll find another example in the public toilets of countless hotels, airports and offices.",
+      "start": 146.5,
+      "end": 154.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Taps that you activate by sensor require no pressing or twisting movements.",
+      "start": 154.28,
+      "end": 160.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "These are not only more hygienic, they’re also easier for people with dexterity or mobility issues.",
+      "start": 160.88,
+      "end": 168.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "The tech industry has been criticised in the past for focusing too much on young consumers, but this is changing.",
+      "start": 168.44,
+      "end": 178.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Many products are now designed with the elderly in mind.",
+      "start": 178.24,
+      "end": 182.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "For example, it’s well known that vision declines with age and that we also become worse at distinguishing between similar colours, in particular shades of blue, which is why software designers rarely create interfaces with this colour.",
+      "start": 182.7,
+      "end": 201.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Motor skills also decline with age and some people have difficulty doing everyday things like picking up a cup or opening a door.",
+      "start": 201.84,
+      "end": 211.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "This can also affect their ability to use a mouse or keyboard.",
+      "start": 211.78,
+      "end": 216.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "So voice access is now a routine way of making commands.",
+      "start": 216.92,
+      "end": 226.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "It’s worth looking at the problems non-inclusive designs cause when not enough consideration is given to a range of users, as it can have a serious impact on people’s lives.",
+      "start": 226.92,
+      "end": 240.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Access is one obvious example because it has such a huge impact on disabled people’s independence.",
+      "start": 240.66,
+      "end": 249.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Not being able to access public transport because buses or trains are not wheelchair means many disabled people can go out unless someone goes with them.",
+      "start": 249.3,
+      "end": 262.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Safety is another issue.",
+      "start": 262.58,
+      "end": 265.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Inexplicably, most cars are still crash-tested using a dummy based on an average-sized male.",
+      "start": 265.18,
+      "end": 272.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "This has safety implications for all women, particularly those who are pregnant, as the seatbelts worn by the dummy are not adapted to accommodate them.",
+      "start": 272.74,
+      "end": 284.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Over the past 100 years, workplaces in the UK have, on the whole, become considerably safer.",
+      "start": 284.72,
+      "end": 293.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Employers are legally required to provide well-maintained personal protective equipment, or PPE, anything from goggles to full bodysuits, to workers who need it, free of charge.",
+      "start": 293.36,
+      "end": 306.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "But most PPE is designed to fit men.",
+      "start": 306.74,
+      "end": 310.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "A recent report found that employers often think that when it comes to female workers, all they need to do to comply with this legal requirement is to buy jackets, for example, designed for a small man.",
+      "start": 310.9,
+      "end": 324.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "The problem with this is that women can be tall and still have much smaller shoulders than the average man.",
+      "start": 324.7,
+      "end": 333.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Ill-fitting PPE such as high-vis jackets, vests and body armour can put women at risk.",
+      "start": 333.46,
+      "end": 341.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "The report found that 95% of women said that their PPE often hampered their work and that this problem was worst in the emergency services. particularly the police.",
+      "start": 341.4,
+      "end": 355.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Another problem is related to comfort at work.",
+      "start": 355.88,
+      "end": 359.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "A very common scenario in offices in summertime is to see women wrapped in blankets or wearing sweaters while the air conditioning is on high.",
+      "start": 359.6,
+      "end": 370.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Meanwhile, the men are in shorts and T-shirts.",
+      "start": 370.64,
+      "end": 374.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "This is due to differences in metabolic rates for men and women.",
+      "start": 374.44,
+      "end": 379.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "There is a standard setting for air conditioning to be at a temperature of 21 degrees designed to suit men and in most modern offices it is not possible to turn the air conditioning up or down.",
+      "start": 379.3,
+      "end": 393.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "This means that many offices which mainly employ women are wasting energy by having the air conditioning set too high.",
+      "start": 393.56,
+      "end": 402.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "As you can see from the examples I’ve just mentioned, there are serious consequences for designs which don’t consider the needs of all users.",
+      "start": 402.86,
+      "end": 512.951,
+      "preAudio": false
+    }
+  ]
+}

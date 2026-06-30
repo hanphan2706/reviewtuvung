@@ -1,0 +1,378 @@
+{
+  "version": 1,
+  "partId": "cam20-t4-p1",
+  "audioFile": "Cam20 Test4 Part1.mp3",
+  "durationSeconds": 442.292245,
+  "method": "whisper-local",
+  "preambleSeconds": 115.01,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "MAN",
+      "text": "Sandra, I seem to remember you had some family visitors staying with you recently",
+      "start": 101.209,
+      "end": 107.871,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "WOMAN",
+      "text": "Yeah that right. My brother and his family were here a couple of months ago.",
+      "start": 107.871,
+      "end": 115.01,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "MAN",
+      "text": "OK, good. Well, I wanted to ask for your advice. I got my cousin and her family visiting next month and as I don’t have kids, I’ve no idea where to take them.",
+      "start": 115.01,
+      "end": 126.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "WOMAN",
+      "text": "Right. What about accommodation? Are they going to stay with you in your flat?",
+      "start": 126.23,
+      "end": 130.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "MAN",
+      "text": "No, thankfully. There wouldn’t be room. My cousin wants me to recommend a hotel. Do you know anywhere?",
+      "start": 130.99,
+      "end": 137.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "WOMAN",
+      "text": "Yes, I do actually. I always recommend people stay at the King’s Hotel.",
+      "start": 137.11,
+      "end": 141.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "MAN",
+      "text": "Where’s that near?",
+      "start": 141.95,
+      "end": 143.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "WOMAN",
+      "text": "It’s about a five minutes walk from Murray Station, so nice and central. It’s actually on George Street.",
+      "start": 143.33,
+      "end": 149.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "MAN",
+      "text": "Oh yes, I know.",
+      "start": 149.79,
+      "end": 151.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "WOMAN",
+      "text": "I think they’re on quite a tight budget, so how much roughly is it to stay there?",
+      "start": 151.73,
+      "end": 157.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "WOMAN",
+      "text": "If you book a family room, it’s about £125 per night.",
+      "start": 157.61,
+      "end": 163.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "WOMAN",
+      "text": "My brother paid for two double rooms in the end, and I think that was around £95 for each room.",
+      "start": 163.03,
+      "end": 169.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "MAN",
+      "text": "Oh, that’s not too bad.",
+      "start": 169.83,
+      "end": 171.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "WOMAN",
+      "text": "So how old are your cousins’ kids?",
+      "start": 171.53,
+      "end": 173.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "MAN",
+      "text": "Twelve and nine. So I want to organise some trips while they’re here. I was thinking of doing a bus tour of the city centre, as none of them have been here before.",
+      "start": 173.91,
+      "end": 185.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "WOMAN",
+      "text": "Those bus tours are quite expensive.",
+      "start": 185.13,
+      "end": 187.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "WOMAN",
+      "text": "I think it’s better to do a walking tour.",
+      "start": 187.63,
+      "end": 190.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "WOMAN",
+      "text": "It gives you a much better feel for the city.",
+      "start": 190.69,
+      "end": 194.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "WOMAN",
+      "text": "There’s one that starts from Colton Square.",
+      "start": 194.09,
+      "end": 196.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "WOMAN",
+      "text": "It takes a couple of hours and doesn’t cost that much.",
+      "start": 196.47,
+      "end": 200.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "MAN",
+      "text": "Sounds good. I’ll look that up. Thanks.",
+      "start": 200.09,
+      "end": 202.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "WOMAN",
+      "text": "If the weather’s nice, one thing you could do is visit the old fort. You could get there by boat. The whole trip takes half a day.",
+      "start": 202.05,
+      "end": 211.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "MAN",
+      "text": "That’s a really good idea. I’d like to do that myself. And if the weather bad I was thinking they could go to the science museum. But maybe they could do that when I at work.",
+      "start": 211.23,
+      "end": 222.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "WOMAN",
+      "text": "Yeah don forget it closed on Mondays",
+      "start": 222.85,
+      "end": 225.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "MAN",
+      "text": "They here from Saturday for four nights so Tuesday would be best I think",
+      "start": 225.23,
+      "end": 230.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "WOMAN",
+      "text": "And it won’t be so crowded then. Saturdays are terrible. I took my kids to the exhibition on old computers there and it was far too crowded. I wanted to go back but it’s finished now.",
+      "start": 230.51,
+      "end": 242.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "MAN",
+      "text": "That’s a shame. My cousin’s kids would have enjoyed that.",
+      "start": 242.75,
+      "end": 246.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "WOMAN",
+      "text": "There’s another one starting soon on space, which looks really good too.",
+      "start": 246.15,
+      "end": 250.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "MAN",
+      "text": "OK, well, I’ll mention that to my cousin.",
+      "start": 250.23,
+      "end": 255.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Before you hear the rest of the conversation, you have some time to look at questions 7 to 10. Now listen and answer questions 7 to 10.",
+      "start": 255.12,
+      "end": 288.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "WOMAN",
+      "text": "Have you thought about where to take them to eat?",
+      "start": 288.08,
+      "end": 291.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "MAN",
+      "text": "Well, I really like all the food stalls at Clacton Market. My cousin’s vegetarian. I know it’s one of the best places for that kind of food.",
+      "start": 291.48,
+      "end": 301.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "WOMAN",
+      "text": "Definitely, and there’ll be loads of choices for the kids too. You need to get there quite early, though. At the weekend, most of the stores stop serving lunch at 2.30.",
+      "start": 301.18,
+      "end": 311.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "MAN",
+      "text": "Good point. It’s all going to need careful planning. My cousin said she’d love to take the kids to a show at the theatre, but tickets are so expensive.",
+      "start": 311.72,
+      "end": 321.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "WOMAN",
+      "text": "I know. But you can get some good deals if you book online with bargained tickets for the following day. On some seats there a 75 discount",
+      "start": 321.58,
+      "end": 331.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "MAN",
+      "text": "Really. I must try and get some",
+      "start": 331.88,
+      "end": 334.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "WOMAN",
+      "text": "Yeah There are lots of things you can do for free as well. No need to spend a fortune.",
+      "start": 334.64,
+      "end": 341.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "MAN",
+      "text": "Like what?",
+      "start": 341.1,
+      "end": 341.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "WOMAN",
+      "text": "They’re coming next month, right? Well, check and see if it’s the same weekend as the Roots Music Festival in Blakewell Gardens.",
+      "start": 341.78,
+      "end": 349.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "MAN",
+      "text": "R-O-O-T-S?",
+      "start": 349.26,
+      "end": 352.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "WOMAN",
+      "text": "Yeah, check it out online. It’s always a family-friendly event and there’s no entry charge.",
+      "start": 352.24,
+      "end": 357.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "MAN",
+      "text": "That sounds perfect.",
+      "start": 357.7,
+      "end": 359.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "WOMAN",
+      "text": "And if you’re in Blakewell Gardens, climb Telegraph Hill. You’ll be able to look right down on the port. Everyone’s always really impressed because it’s so huge.",
+      "start": 359.18,
+      "end": 368.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": "MAN",
+      "text": "Oh yeah, I’ve been meaning to do that for ages. I’ve heard the view’s amazing.",
+      "start": 368.76,
+      "end": 374.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": "WOMAN",
+      "text": "Yeah, it’s really worth the effort.",
+      "start": 374.3,
+      "end": 377.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": "MAN",
+      "text": "Well, that’s given me loads of ideas. Thanks so much.",
+      "start": 377.1,
+      "end": 442.292,
+      "preAudio": false
+    }
+  ]
+}

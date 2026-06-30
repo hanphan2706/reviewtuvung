@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { getListeningPartById } from "@/lib/listening/content-manifest";
 import { generateIeltsListeningFlowContent } from "@/lib/listening/generate-ielts-listening-flow-content";
-import { getIeltsFlowLessonContent } from "@/lib/listening/ielts-cam19-t1-flow-content";
+import { getIeltsFlowLessonContent } from "@/lib/listening/ielts-flow-content-registry";
 import { loadListeningTranscriptText } from "@/lib/listening/load-listening-transcript-text";
 import { hasListeningPartExam } from "@/lib/listening/listening-qna-catalog";
 
