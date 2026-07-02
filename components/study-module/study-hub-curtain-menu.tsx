@@ -6,6 +6,7 @@ import { createPortal } from "react-dom";
 import { StudyHubAccountMenuSections } from "@/components/study-module/study-hub-account-menu-sections";
 import { StudyHubListeningMenuNav } from "@/components/study-module/study-hub-listening-menu-nav";
 import { StudyHubReadingMenuNav } from "@/components/study-module/study-hub-reading-menu-nav";
+import { StudyHubVocabularyMenuNav } from "@/components/study-module/study-hub-vocabulary-menu-nav";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 
 export function StudyHubCurtainMenu({
@@ -14,6 +15,7 @@ export function StudyHubCurtainMenu({
   pageTitle,
   showReadingNav = false,
   showListeningNav = false,
+  showVocabularyNav = false,
   isLoggedIn,
   userProfile,
   supabaseConfigured,
@@ -24,6 +26,7 @@ export function StudyHubCurtainMenu({
   pageTitle: string;
   showReadingNav?: boolean;
   showListeningNav?: boolean;
+  showVocabularyNav?: boolean;
   isLoggedIn: boolean;
   userProfile?: StudyHubUserProfile | null;
   supabaseConfigured: boolean;
@@ -103,6 +106,10 @@ export function StudyHubCurtainMenu({
           ) : showListeningNav ? (
             <div className="mb-5">
               <StudyHubListeningMenuNav onNavigate={onClose} />
+            </div>
+          ) : showVocabularyNav ? (
+            <div className="mb-5">
+              <StudyHubVocabularyMenuNav onNavigate={onClose} />
             </div>
           ) : null}
 

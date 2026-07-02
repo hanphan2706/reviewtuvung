@@ -7,6 +7,7 @@ import { ChevronDown } from "lucide-react";
 import { StudyHubBackLink } from "@/components/study-module/study-hub-back-link";
 import { StudyHubCurtainMenu } from "@/components/study-module/study-hub-curtain-menu";
 import { StudyHubHamburgerButton } from "@/components/study-module/study-hub-hamburger-button";
+import { VocabularyHeaderNav } from "@/components/vocabulary/vocabulary-header-nav";
 import { useStudyHubDesktopNav } from "@/hooks/use-study-hub-desktop-nav";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 import { LISTENING_HUB_HREF } from "@/lib/listening/listening-hub-nav";
@@ -32,10 +33,10 @@ import {
   studyHubHeaderTextClass,
 } from "@/components/study-module/study-hub-shell";
 
+const VOCAB_HUB_HREF = "/tu-hoc/tu-vung" as const;
+
 /** Cùng line box cho tiêu đề, dropdown và link — tránh lệch hàng. */
 const headerNavItemClass = `inline-flex items-center gap-1 leading-none ${studyHubHeaderTextClass}`;
-
-/** Menu ngang đầy đủ — chỉ từ xl trở lên; tablet / nửa màn hình dùng curtain. */
 const desktopNavClass = "hidden xl:flex min-w-0 flex-nowrap items-center gap-3 2xl:gap-4";
 
 type HubDropdownItem = string | ReadingLibraryNavItem;
@@ -100,6 +101,7 @@ export function StudyHubHeader({
   showListeningFilters = false,
   listeningHubTitleLink = false,
   showReadingFilters = false,
+  showVocabularyNav = false,
   onTitleClick,
   isLoggedIn,
   userProfile = null,
@@ -112,6 +114,7 @@ export function StudyHubHeader({
   /** Tiêu đề link về `/tu-hoc/luyen-nghe` (player) — không bật bộ lọc ngang. */
   listeningHubTitleLink?: boolean;
   showReadingFilters?: boolean;
+  showVocabularyNav?: boolean;
   /** Khi đang session trên cùng URL hub — reset về trang chủ (Luyện đọc / Luyện nghe). */
   onTitleClick?: () => void;
   isLoggedIn: boolean;
@@ -124,6 +127,7 @@ export function StudyHubHeader({
   const desktopNav = useStudyHubDesktopNav();
   const readingNavInMenu = showReadingFilters && !desktopNav;
   const listeningNavInMenu = (showListeningFilters || listeningHubTitleLink) && !desktopNav;
+  const vocabularyNavInMenu = showVocabularyNav && !desktopNav;
   const listeningTitleLink = showListeningFilters || listeningHubTitleLink;
 
   return (
@@ -194,6 +198,18 @@ export function StudyHubHeader({
                     </Link>
                   </nav>
                 </>
+              ) : showVocabularyNav ? (
+                <>
+                  <h1 className="m-0 flex min-w-0 shrink-0 items-center leading-none">
+                    <Link
+                      href={VOCAB_HUB_HREF}
+                      className={`${headerNavItemClass} truncate uppercase tracking-[-0.02em] transition-opacity hover:opacity-70`}
+                    >
+                      {title}
+                    </Link>
+                  </h1>
+                  <VocabularyHeaderNav />
+                </>
               ) : (
                 <h1
                   className={`m-0 flex min-w-0 shrink-0 items-center truncate uppercase tracking-[-0.02em] leading-none ${studyHubHeaderTextClass}`}
@@ -202,7 +218,7 @@ export function StudyHubHeader({
                 </h1>
               )}
 
-              {!listeningTitleLink && !showReadingFilters && center ? (
+              {!listeningTitleLink && !showReadingFilters && !showVocabularyNav && center ? (
                 <nav className={`${desktopNavClass}`} aria-label="Điều hướng luyện đọc">
                   {center}
                 </nav>
@@ -222,6 +238,7 @@ export function StudyHubHeader({
         pageTitle={title}
         showReadingNav={readingNavInMenu}
         showListeningNav={listeningNavInMenu}
+        showVocabularyNav={vocabularyNavInMenu}
         isLoggedIn={isLoggedIn}
         userProfile={userProfile}
         supabaseConfigured={supabaseConfigured}

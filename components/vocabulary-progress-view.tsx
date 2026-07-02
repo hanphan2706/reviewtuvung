@@ -1,16 +1,23 @@
 "use client";
 
 import { useEffect, useMemo } from "react";
-import { LandingSectionLink } from "@/components/landing-section-link";
-import { SignedInTopBar } from "@/components/signed-in-top-bar";
+import { studyHubSubpageContentClass } from "@/components/study-module/study-hub-shell";
+import { useVocabularyAuth } from "@/components/vocabulary/vocabulary-auth-context";
+import { VocabularyWeeklyChart } from "@/components/vocabulary/vocabulary-library-sections";
+import { VocabularySubpageHeader } from "@/components/vocabulary/vocabulary-subpage-header";
+import { useNowTick } from "@/hooks/use-now-tick";
+import { vocabularyReviewedToday } from "@/lib/profile/learning-progress";
 import { buildRecallPercentSeries, type RecallDayPoint } from "@/lib/review-day-stats";
+import {
+  buildVocabularyWeekBars,
+  computeVocabularyStreak,
+} from "@/lib/vocabulary/vocabulary-library-stats";
 import { countDue } from "@/lib/srs";
 import { useSrsStore } from "@/store/srs-store";
-import { useNowTick } from "@/hooks/use-now-tick";
 
 const CHART_DAYS = 14;
 
-function ProgressRecallChart({ series, className }: { series: RecallDayPoint[]; className?: string }) {
+function ProgressRecallChart({ series }: { series: RecallDayPoint[] }) {
   const W = 360;
   const H = 200;
   const padL = 40;
@@ -23,84 +30,82 @@ function ProgressRecallChart({ series, className }: { series: RecallDayPoint[]; 
 
   const xAt = (i: number) => padL + (n <= 1 ? innerW / 2 : (innerW * i) / (n - 1));
   const yPct = (p: number) => padT + innerH * (1 - p / 100);
-
   const linePts = series.map((s, i) => `${xAt(i)},${yPct(s.lineY)}`).join(" ");
-
   const labelIdx = [0, Math.floor((n - 1) / 2), n - 1].filter((i, j, a) => a.indexOf(i) === j);
 
   return (
-    <div className={className}>
-      <svg
-        viewBox={`0 0 ${W} ${H}`}
-        className="h-auto w-full max-h-[220px] text-zinc-400"
-        role="img"
-        aria-label="Biểu đồ khả năng ghi nhớ theo ngày, 14 ngày gần nhất"
-      >
-        <title>Khả năng ghi nhớ theo ngày</title>
-        {[0, 0.25, 0.5, 0.75, 1].map((t) => {
-          const y = padT + innerH * (1 - t);
-          const pct = Math.round(t * 100);
-          return (
-            <g key={t}>
-              <line
-                x1={padL}
-                y1={y}
-                x2={W - padR}
-                y2={y}
-                stroke="currentColor"
-                strokeOpacity={0.12}
-                strokeWidth={1}
-              />
-              <text x={padL - 6} y={y + 3} textAnchor="end" className="fill-zinc-400 text-[8px] font-medium tabular-nums">
-                {pct}%
-              </text>
-            </g>
-          );
-        })}
-        <polyline
-          fill="none"
-          stroke="#4b2876"
-          strokeWidth={2.25}
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          points={linePts}
-        />
-        {series.map((s, i) =>
-          s.recallPercent !== null ? (
-            <circle
-              key={i}
-              cx={xAt(i)}
-              cy={yPct(s.recallPercent)}
-              r={3.25}
-              fill="#4b2876"
-              stroke="white"
+    <svg
+      viewBox={`0 0 ${W} ${H}`}
+      className="h-auto w-full max-h-[240px] text-zinc-400"
+      role="img"
+      aria-label="Biểu đồ khả năng ghi nhớ theo ngày, 14 ngày gần nhất"
+    >
+      <title>Khả năng ghi nhớ theo ngày</title>
+      {[0, 0.25, 0.5, 0.75, 1].map((t) => {
+        const y = padT + innerH * (1 - t);
+        const pct = Math.round(t * 100);
+        return (
+          <g key={t}>
+            <line
+              x1={padL}
+              y1={y}
+              x2={W - padR}
+              y2={y}
+              stroke="currentColor"
+              strokeOpacity={0.12}
               strokeWidth={1}
             />
-          ) : null,
-        )}
-        {labelIdx.map((i) => {
-          const d = new Date(series[i].dayStart);
-          const label = `${d.getDate()}/${d.getMonth() + 1}`;
-          return (
-            <text
-              key={i}
-              x={xAt(i)}
-              y={H - 10}
-              textAnchor="middle"
-              className="fill-zinc-500 text-[9px] font-medium"
-            >
-              {label}
+            <text x={padL - 6} y={y + 3} textAnchor="end" className="fill-zinc-400 text-[8px] font-medium tabular-nums">
+              {pct}%
             </text>
-          );
-        })}
-      </svg>
-    </div>
+          </g>
+        );
+      })}
+      <polyline
+        fill="none"
+        stroke="#4b2876"
+        strokeWidth={2.25}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        points={linePts}
+      />
+      {series.map((s, i) =>
+        s.recallPercent !== null ? (
+          <circle
+            key={i}
+            cx={xAt(i)}
+            cy={yPct(s.recallPercent)}
+            r={3.25}
+            fill="#4b2876"
+            stroke="white"
+            strokeWidth={1}
+          />
+        ) : null,
+      )}
+      {labelIdx.map((i) => {
+        const d = new Date(series[i].dayStart);
+        const label = `${d.getDate()}/${d.getMonth() + 1}`;
+        return (
+          <text
+            key={i}
+            x={xAt(i)}
+            y={H - 10}
+            textAnchor="middle"
+            className="fill-zinc-500 text-[9px] font-medium"
+          >
+            {label}
+          </text>
+        );
+      })}
+    </svg>
   );
 }
 
 export function VocabularyProgressView() {
+  const { navigateWithAuth } = useVocabularyAuth();
   const now = useNowTick();
   const words = useSrsStore((s) => s.words);
+  const settings = useSrsStore((s) => s.settings);
   const reviewDayTallies = useSrsStore((s) => s.reviewDayTallies);
   const closeDeck = useSrsStore((s) => s.closeDeck);
 
@@ -113,46 +118,73 @@ export function VocabularyProgressView() {
     () => buildRecallPercentSeries(reviewDayTallies, now, CHART_DAYS),
     [reviewDayTallies, now],
   );
+  const weekBars = useMemo(
+    () => buildVocabularyWeekBars(reviewDayTallies, now, 7),
+    [reviewDayTallies, now],
+  );
+  const streakDays = useMemo(
+    () => computeVocabularyStreak(reviewDayTallies, now),
+    [reviewDayTallies, now],
+  );
+  const reviewedToday = useMemo(
+    () => vocabularyReviewedToday(reviewDayTallies, now),
+    [reviewDayTallies, now],
+  );
   const totalWords = words.length;
 
   return (
-    <div className="flex min-h-dvh w-full flex-col items-center px-5 pb-6 pt-10">
-      <div className="flex w-full max-w-md flex-col gap-6">
-        <SignedInTopBar
-          left={
-            <LandingSectionLink
-              sectionId="tu-hoc"
-              className="inline-flex w-fit cursor-pointer items-center gap-2 rounded-xl px-2 py-1.5 text-sm font-medium text-ink-muted"
-            >
-              ← Tự học
-            </LandingSectionLink>
-          }
+    <div className={studyHubSubpageContentClass}>
+      <VocabularySubpageHeader
+        title="Theo dõi tiến độ"
+        description="Xem lượt ôn tập, chuỗi học và mức ghi nhớ theo thời gian — dữ liệu lưu trên thiết bị của bạn."
+        trailing={
+          <button
+            type="button"
+            onClick={() => navigateWithAuth("/review")}
+            className="inline-flex h-10 items-center justify-center rounded-xl bg-[#4b2876] px-4 text-sm font-semibold text-white transition hover:bg-[#3f2163]"
+          >
+            Ôn tập ngay
+          </button>
+        }
+      />
+
+      <div className="grid gap-4 lg:grid-cols-2 lg:gap-5">
+        <VocabularyWeeklyChart
+          bars={weekBars}
+          reviewedToday={reviewedToday}
+          dailyGoal={settings.dailyReviewLimit}
+          streakDays={streakDays}
         />
 
-        <section className="w-full rounded-xl border border-zinc-200/80 bg-white p-6 shadow-sm ring-1 ring-zinc-950/5">
-          <h1 className="text-center font-serif text-2xl font-bold tracking-tight text-[#4b2876]">Theo dõi tiến độ</h1>
-          <p className="mt-2 text-center text-sm text-zinc-500">
-            Khả năng ghi nhớ theo từng ngày.
-            <br />
-            (Trong vòng 14 ngày gần nhất)
+        <section className="flex flex-col justify-center p-5 md:p-6">
+          <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#4b2876]">
+            Tổng quan
           </p>
-
-          <div className="mt-5 flex flex-wrap justify-center gap-3 text-center">
-            <div className="min-w-22 rounded-xl border border-zinc-200/90 bg-zinc-50/60 px-3 py-2.5">
-              <p className="text-lg font-bold tabular-nums text-orange-600">{dueAll}</p>
-              <p className="mt-0.5 text-[10px] font-medium text-ink-muted">Đến hạn</p>
+          <div className="mt-4 grid grid-cols-2 gap-3">
+            <div className="rounded-xl border border-[#E4E4E7] bg-[#fafafa] px-4 py-3">
+              <p className="font-serif text-2xl font-bold tabular-nums text-orange-600">{dueAll}</p>
+              <p className="mt-1 text-xs font-medium text-[#47464b]">Đến hạn</p>
             </div>
-            <div className="min-w-22 rounded-xl border border-zinc-200/90 bg-zinc-50/60 px-3 py-2.5">
-              <p className="text-lg font-bold tabular-nums text-[#4b2876]">{totalWords}</p>
-              <p className="mt-0.5 text-[10px] font-medium text-ink-muted">Tất cả từ</p>
+            <div className="rounded-xl border border-[#E4E4E7] bg-[#fafafa] px-4 py-3">
+              <p className="font-serif text-2xl font-bold tabular-nums text-[#4b2876]">{totalWords}</p>
+              <p className="mt-1 text-xs font-medium text-[#47464b]">Tất cả từ</p>
             </div>
-          </div>
-
-          <div className="mt-6 rounded-xl border border-zinc-200/80 bg-zinc-50/30 p-4">
-            <ProgressRecallChart series={series} />
           </div>
         </section>
       </div>
+
+      <section className="mt-6 rounded-2xl border border-[#E4E4E7] bg-white p-5 shadow-sm md:mt-8 md:p-6">
+        <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#4b2876]">
+          Khả năng ghi nhớ
+        </p>
+        <h2 className="mt-1 font-serif text-xl font-bold text-[#000001]">14 ngày gần nhất</h2>
+        <p className="mt-2 text-sm text-[#47464b]">
+          % recall ước lượng từ lượt chấm Hard / OK / Easy mỗi ngày.
+        </p>
+        <div className="mt-6 rounded-xl border border-[#E4E4E7] bg-[#fafafa] p-4 md:p-6">
+          <ProgressRecallChart series={series} />
+        </div>
+      </section>
     </div>
   );
 }

@@ -1,5 +1,9 @@
 "use client";
 
+/**
+ * Shell cũ: bottom nav 3 tab (Phương pháp / Từ vựng / Tiến độ).
+ * Từ 2026-03 dùng `VocabularyHubShell` trong `tu-vung/layout.tsx` thay thế.
+ */
 import type { ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import { OnTapBottomNav } from "@/components/on-tap-bottom-nav";

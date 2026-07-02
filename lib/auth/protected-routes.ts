@@ -25,6 +25,14 @@ export function isPublicStudyHubPath(pathname: string): boolean {
   if (pathname.startsWith("/tu-hoc/luyen-doc/do-kho/")) return true;
   if (pathname === "/tu-hoc/luyen-doc/luyen-de-ielts") return true;
   if (pathname.startsWith("/tu-hoc/luyen-doc/luyen-de-ielts/")) return true;
+  if (isPublicVocabularyPath(pathname)) return true;
+  return false;
+}
+
+/** Từ vựng — chỉ hub + phương pháp xem được khi chưa đăng nhập. */
+export function isPublicVocabularyPath(pathname: string): boolean {
+  if (pathname === "/tu-hoc/tu-vung") return true;
+  if (pathname === "/tu-hoc/tu-vung/phuong-phap") return true;
   return false;
 }
 

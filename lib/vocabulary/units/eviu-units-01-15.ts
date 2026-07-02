@@ -1,0 +1,660 @@
+import { EVIU_ELEMENTARY_CATALOG } from "../eviu-elementary-catalog";
+import type { VocabularyUnit } from "../vocabulary-unit-types";
+import { bold, buildEviuUnit, ex, fillBlank, mcq, purple, type UnitContentInput, type WordInput } from "./eviu-unit-builder";
+
+function catalogFor(unitNumber: number) {
+  const entry = EVIU_ELEMENTARY_CATALOG.find((item) => item.unitNumber === unitNumber);
+  if (!entry) {
+    throw new Error(`Missing catalog entry for unit ${unitNumber}`);
+  }
+  return entry;
+}
+
+function toOptions(labels: readonly string[]) {
+  return labels.map((label, index) => ({ key: String.fromCharCode(97 + index), label }));
+}
+
+function keyFor(labels: readonly string[], correctLabel: string) {
+  const index = labels.indexOf(correctLabel);
+  if (index === -1) {
+    throw new Error(`Correct label "${correctLabel}" not found in options`);
+  }
+  return String.fromCharCode(97 + index);
+}
+
+function fb(
+  unitNumber: number,
+  index: number,
+  prompt: string,
+  answer: string,
+  labels: readonly string[],
+  correctLabel: string,
+  alternatives?: string[],
+) {
+  return fillBlank(unitNumber, index, prompt, answer, toOptions(labels), keyFor(labels, correctLabel), alternatives);
+}
+
+function mq(unitNumber: number, index: number, question: string, labels: readonly string[], correctLabel: string) {
+  return mcq(unitNumber, index, question, toOptions(labels), keyFor(labels, correctLabel));
+}
+
+function w(term: string, definition: string, example: string, partOfSpeech = "NOUN"): WordInput {
+  return { term, definition, example, partOfSpeech };
+}
+
+function unit(unitNumber: number, content: UnitContentInput): VocabularyUnit {
+  return buildEviuUnit(catalogFor(unitNumber), content);
+}
+
+type WordTuple = [term: string, definition: string, example: string, partOfSpeech?: string];
+
+function wordList(entries: readonly WordTuple[]): WordInput[] {
+  return entries.map(([term, definition, example, partOfSpeech]) => w(term, definition, example, partOfSpeech ?? "NOUN"));
+}
+
+function autoExercises(unitNumber: number, words: readonly WordInput[]) {
+  const pick = (index: number) => words[index % words.length];
+  const exercises = [];
+  for (let i = 0; i < 5; i += 1) {
+    const target = pick(i);
+    const labels = [pick(i).term, pick(i + 1).term, pick(i + 2).term, pick(i + 3).term];
+    exercises.push(
+      fb(
+        unitNumber,
+        i + 1,
+        `Complete the sentence: The word for "${target.definition}" is ____.`,
+        target.term,
+        labels,
+        target.term,
+        [target.term.toLowerCase()],
+      ),
+    );
+  }
+  for (let i = 0; i < 5; i += 1) {
+    const target = pick(i + 5);
+    const labels = [pick(i + 5).term, pick(i + 6).term, pick(i + 7).term, pick(i + 8).term];
+    exercises.push(mq(unitNumber, i + 6, `Which word means: "${target.definition}"?`, labels, target.term));
+  }
+  return exercises;
+}
+
+const U1_WORDS = wordList([
+  ["mother", "mẹ", "My mother is very patient."],
+  ["father", "bố", "My father cooks on Sundays."],
+  ["brother", "anh/em trai", "My brother plays the guitar."],
+  ["sister", "chị/em gái", "My sister loves painting."],
+  ["parents", "bố mẹ", "My parents live in Hanoi."],
+  ["son", "con trai", "Their son is in grade five."],
+  ["daughter", "con gái", "Her daughter is very kind."],
+  ["husband", "chồng", "Her husband works in IT."],
+  ["wife", "vợ", "His wife is a doctor."],
+  ["child", "đứa trẻ; con", "The child is sleeping."],
+  ["children", "những đứa trẻ", "Their children are friendly."],
+  ["uncle", "chú/bác/cậu", "My uncle lives near us."],
+  ["aunt", "cô/dì/thím/mợ", "My aunt bakes cakes."],
+  ["cousin", "anh/chị/em họ", "My cousin studies law."],
+  ["grandfather", "ông", "My grandfather reads newspapers."],
+  ["grandmother", "bà", "My grandmother grows roses."],
+  ["grandparents", "ông bà", "My grandparents are healthy."],
+  ["nephew", "cháu trai", "My nephew likes robots."],
+  ["niece", "cháu gái", "My niece can sing well."],
+  ["relative", "họ hàng", "Many relatives came to visit."],
+  ["single", "độc thân", "He is single now.", "ADJECTIVE"],
+  ["married", "đã kết hôn", "They are married.", "ADJECTIVE"],
+  ["divorced", "đã ly hôn", "Her parents are divorced.", "ADJECTIVE"],
+  ["family tree", "gia phả", "We drew a family tree at school."],
+  ["generation", "thế hệ", "Three generations live together."],
+]);
+
+const U2_WORDS = wordList([
+  ["be born", "được sinh ra", "I was born in 2003.", "VERB"],
+  ["birth", "sự ra đời", "The birth of her baby was in April."],
+  ["baby", "em bé", "The baby is smiling."],
+  ["childhood", "thời thơ ấu", "My childhood was joyful."],
+  ["grow up", "lớn lên", "She grew up in a small town.", "VERB"],
+  ["adult", "người lớn", "At 18 you are an adult."],
+  ["pregnant", "mang thai", "She is pregnant.", "ADJECTIVE"],
+  ["engaged", "đính hôn", "They got engaged last week.", "ADJECTIVE"],
+  ["fiancé", "hôn phu", "Her fiancé is very polite."],
+  ["fiancée", "hôn thê", "His fiancée is from Hue."],
+  ["wedding", "đám cưới", "Their wedding was simple."],
+  ["bride", "cô dâu", "The bride looked happy."],
+  ["groom", "chú rể", "The groom wore a gray suit."],
+  ["marry", "kết hôn", "They plan to marry in June.", "VERB"],
+  ["married", "đã kết hôn", "My uncle is married.", "ADJECTIVE"],
+  ["marriage", "hôn nhân", "Respect is important in marriage."],
+  ["anniversary", "ngày kỷ niệm", "Today is their anniversary."],
+  ["die", "chết", "Fish can die in dirty water.", "VERB"],
+  ["death", "cái chết", "The death of his pet made him sad."],
+  ["pass away", "qua đời", "My teacher passed away last year.", "VERB"],
+  ["funeral", "lễ tang", "We attended the funeral."],
+  ["grave", "ngôi mộ", "They put flowers on the grave."],
+  ["widow", "góa phụ", "She became a widow at 50."],
+  ["widower", "góa vợ", "He is a widower now."],
+  ["memory", "kỷ niệm", "This photo is a good memory."],
+]);
+
+const U3_WORDS = wordList([
+  ["head", "đầu", "My head hurts."],
+  ["hair", "tóc", "Her hair is curly."],
+  ["face", "mặt", "Wash your face, please."],
+  ["eye", "mắt", "My eye is itchy."],
+  ["ear", "tai", "I have pain in my ear."],
+  ["nose", "mũi", "My nose is blocked."],
+  ["mouth", "miệng", "Open your mouth."],
+  ["tooth", "răng", "I have a bad tooth."],
+  ["teeth", "răng (số nhiều)", "Brush your teeth twice a day."],
+  ["neck", "cổ", "My neck feels stiff."],
+  ["shoulder", "vai", "He touched my shoulder."],
+  ["arm", "cánh tay", "She hurt her arm."],
+  ["hand", "bàn tay", "Wash your hands first."],
+  ["finger", "ngón tay", "He cut his finger."],
+  ["chest", "ngực", "He has chest pain."],
+  ["stomach", "bụng; dạ dày", "My stomach is full."],
+  ["back", "lưng", "My back hurts after work."],
+  ["leg", "chân", "His leg is injured."],
+  ["knee", "đầu gối", "I fell and hurt my knee."],
+  ["foot", "bàn chân", "My foot is wet."],
+  ["feet", "hai bàn chân", "My feet are cold."],
+  ["toe", "ngón chân", "I hit my toe."],
+  ["heart", "tim", "Running is good for your heart."],
+  ["blink", "chớp mắt", "Blink your eyes slowly.", "VERB"],
+  ["stretch", "duỗi", "I stretch every morning.", "VERB"],
+]);
+
+const U4_WORDS = wordList([
+  ["shirt", "áo sơ mi", "He wears a white shirt."],
+  ["T-shirt", "áo thun", "I bought a new T-shirt."],
+  ["blouse", "áo kiểu nữ", "Her blouse is pink."],
+  ["jacket", "áo khoác", "Take your jacket."],
+  ["coat", "áo khoác dài", "This coat is warm."],
+  ["sweater", "áo len", "My sweater is soft."],
+  ["dress", "váy liền", "She wore a red dress."],
+  ["skirt", "chân váy", "This skirt is too short."],
+  ["trousers", "quần dài", "These trousers are black."],
+  ["jeans", "quần jeans", "My jeans are old."],
+  ["shorts", "quần short", "I wear shorts in summer."],
+  ["socks", "vớ", "My socks are clean."],
+  ["shoes", "giày", "These shoes look nice."],
+  ["boots", "giày bốt", "She wears boots in winter."],
+  ["sandals", "dép quai", "I need new sandals."],
+  ["hat", "mũ", "He put on his hat."],
+  ["cap", "mũ lưỡi trai", "My cap is blue."],
+  ["scarf", "khăn quàng cổ", "She bought a scarf."],
+  ["gloves", "găng tay", "Wear gloves outside."],
+  ["belt", "thắt lưng", "His belt is brown."],
+  ["zip", "khóa kéo", "The zip is broken."],
+  ["button", "cúc áo", "I lost a button."],
+  ["tight", "chật", "These shoes are tight.", "ADJECTIVE"],
+  ["loose", "rộng", "This shirt is loose.", "ADJECTIVE"],
+  ["fit", "vừa vặn", "This dress fits well.", "VERB"],
+]);
+
+const U5_WORDS = wordList([
+  ["tall", "cao", "My brother is tall.", "ADJECTIVE"],
+  ["short", "thấp", "She is short.", "ADJECTIVE"],
+  ["slim", "thon gọn", "She is slim.", "ADJECTIVE"],
+  ["thin", "gầy", "He looks thin.", "ADJECTIVE"],
+  ["overweight", "thừa cân", "He is overweight.", "ADJECTIVE"],
+  ["young", "trẻ", "My teacher is young.", "ADJECTIVE"],
+  ["middle-aged", "trung niên", "The middle-aged woman is my aunt.", "ADJECTIVE"],
+  ["old", "già", "My old neighbor is kind.", "ADJECTIVE"],
+  ["handsome", "đẹp trai", "He is handsome.", "ADJECTIVE"],
+  ["pretty", "xinh xắn", "She is pretty.", "ADJECTIVE"],
+  ["good-looking", "ưa nhìn", "That actor is good-looking.", "ADJECTIVE"],
+  ["friendly", "thân thiện", "Our new classmate is friendly.", "ADJECTIVE"],
+  ["kind", "tốt bụng", "She is kind to animals.", "ADJECTIVE"],
+  ["polite", "lịch sự", "Please be polite.", "ADJECTIVE"],
+  ["rude", "thô lỗ", "That comment was rude.", "ADJECTIVE"],
+  ["quiet", "ít nói", "He is quiet in class.", "ADJECTIVE"],
+  ["talkative", "nói nhiều", "My cousin is talkative.", "ADJECTIVE"],
+  ["shy", "rụt rè", "I was shy as a child.", "ADJECTIVE"],
+  ["confident", "tự tin", "She feels confident now.", "ADJECTIVE"],
+  ["lazy", "lười", "He is lazy at home.", "ADJECTIVE"],
+  ["hard-working", "chăm chỉ", "My sister is hard-working.", "ADJECTIVE"],
+  ["funny", "hài hước", "Our coach is funny.", "ADJECTIVE"],
+  ["serious", "nghiêm túc", "He is serious about study.", "ADJECTIVE"],
+  ["strict", "nghiêm khắc", "My mother is strict.", "ADJECTIVE"],
+  ["helpful", "hay giúp đỡ", "The staff is helpful.", "ADJECTIVE"],
+]);
+
+const U6_WORDS = wordList([
+  ["health", "sức khỏe", "Walking is good for health."],
+  ["illness", "bệnh tật", "This illness spreads quickly."],
+  ["sick", "ốm", "I feel sick today.", "ADJECTIVE"],
+  ["headache", "đau đầu", "I have a headache."],
+  ["toothache", "đau răng", "She has a toothache."],
+  ["stomachache", "đau bụng", "He got a stomachache."],
+  ["backache", "đau lưng", "My backache is worse today."],
+  ["cough", "ho", "I have a dry cough."],
+  ["sore throat", "đau họng", "She has a sore throat."],
+  ["fever", "sốt", "The child has a fever."],
+  ["cold", "cảm lạnh", "I have a cold."],
+  ["flu", "cúm", "Many students had flu."],
+  ["doctor", "bác sĩ", "You should see a doctor."],
+  ["nurse", "y tá", "The nurse checked my pulse."],
+  ["hospital", "bệnh viện", "He is in hospital now."],
+  ["clinic", "phòng khám", "The clinic opens early."],
+  ["medicine", "thuốc", "Take your medicine on time."],
+  ["pill", "viên thuốc", "Take one pill after dinner."],
+  ["prescription", "đơn thuốc", "This prescription is from my doctor."],
+  ["rest", "nghỉ ngơi", "You need rest.", "NOUN"],
+  ["recover", "hồi phục", "She recovered quickly.", "VERB"],
+  ["pain", "cơn đau", "I feel pain in my leg."],
+  ["injury", "chấn thương", "He has a knee injury."],
+  ["healthy", "khỏe mạnh", "A healthy lifestyle helps a lot.", "ADJECTIVE"],
+  ["unhealthy", "không lành mạnh", "Too much soda is unhealthy.", "ADJECTIVE"],
+]);
+
+const U7_WORDS = wordList([
+  ["happy", "vui", "I feel happy today.", "ADJECTIVE"],
+  ["excited", "hào hứng", "We are excited about the trip.", "ADJECTIVE"],
+  ["proud", "tự hào", "I am proud of you.", "ADJECTIVE"],
+  ["relaxed", "thư giãn", "I feel relaxed now.", "ADJECTIVE"],
+  ["calm", "bình tĩnh", "Stay calm, please.", "ADJECTIVE"],
+  ["cheerful", "vui vẻ", "She is cheerful.", "ADJECTIVE"],
+  ["grateful", "biết ơn", "I am grateful for your support.", "ADJECTIVE"],
+  ["hopeful", "đầy hy vọng", "He is hopeful about the future.", "ADJECTIVE"],
+  ["sad", "buồn", "I felt sad yesterday.", "ADJECTIVE"],
+  ["upset", "buồn bực", "She is upset now.", "ADJECTIVE"],
+  ["angry", "tức giận", "He is angry with me.", "ADJECTIVE"],
+  ["worried", "lo lắng", "I am worried about the exam.", "ADJECTIVE"],
+  ["nervous", "hồi hộp", "She is nervous before interviews.", "ADJECTIVE"],
+  ["afraid", "sợ", "My son is afraid of dogs.", "ADJECTIVE"],
+  ["lonely", "cô đơn", "He felt lonely in a new city.", "ADJECTIVE"],
+  ["tired", "mệt", "I am tired after work.", "ADJECTIVE"],
+  ["bored", "chán", "The kids are bored.", "ADJECTIVE"],
+  ["stressed", "căng thẳng", "She is stressed lately.", "ADJECTIVE"],
+  ["embarrassed", "xấu hổ", "I was embarrassed by that mistake.", "ADJECTIVE"],
+  ["disappointed", "thất vọng", "We were disappointed by the result.", "ADJECTIVE"],
+  ["surprised", "ngạc nhiên", "I was surprised to see him.", "ADJECTIVE"],
+  ["calm down", "bình tĩnh lại", "Please calm down.", "VERB"],
+  ["smile", "mỉm cười", "She smiled at me.", "VERB"],
+  ["cry", "khóc", "The baby is crying.", "VERB"],
+  ["laugh", "cười", "We laughed at the joke.", "VERB"],
+]);
+
+const U8_WORDS = wordList([
+  ["hello", "xin chào", "Hello, everyone."],
+  ["hi", "chào (thân mật)", "Hi, Mai."],
+  ["good morning", "chào buổi sáng", "Good morning, teacher."],
+  ["good afternoon", "chào buổi chiều", "Good afternoon, Mr. Nam."],
+  ["good evening", "chào buổi tối", "Good evening, sir."],
+  ["good night", "chúc ngủ ngon", "Good night, Mom."],
+  ["bye", "tạm biệt", "Bye, see you tomorrow."],
+  ["see you later", "hẹn gặp lại", "See you later, Lan."],
+  ["nice to meet you", "rất vui được gặp bạn", "Nice to meet you, Peter."],
+  ["how are you", "bạn khỏe không", "How are you today?"],
+  ["I'm fine", "tôi khỏe", "I'm fine, thanks."],
+  ["thank you", "cảm ơn", "Thank you for helping me."],
+  ["you're welcome", "không có gì", "You're welcome."],
+  ["sorry", "xin lỗi", "Sorry, I'm late."],
+  ["excuse me", "xin phép", "Excuse me, where is the bank?"],
+  ["please", "làm ơn", "Please sit down."],
+  ["congratulations", "chúc mừng", "Congratulations on your result."],
+  ["happy birthday", "chúc mừng sinh nhật", "Happy birthday, Hoa."],
+  ["happy new year", "chúc mừng năm mới", "Happy New Year!"],
+  ["good luck", "chúc may mắn", "Good luck with your exam."],
+  ["best wishes", "lời chúc tốt đẹp", "Best wishes to you."],
+  ["take care", "giữ gìn sức khỏe", "Take care on your trip."],
+  ["have a nice day", "chúc một ngày tốt lành", "Have a nice day at work."],
+  ["same to you", "bạn cũng vậy", "Same to you."],
+  ["long time no see", "lâu rồi không gặp", "Long time no see, old friend."],
+]);
+
+const U9_WORDS = wordList([
+  ["really", "thật à", "Really? That's amazing.", "ADVERB"],
+  ["I see", "à, tôi hiểu", "I see. Thanks for explaining."],
+  ["right", "đúng vậy", "Yes, that's right."],
+  ["exactly", "chính xác", "Exactly, I agree.", "ADVERB"],
+  ["maybe", "có lẽ", "Maybe we can go tomorrow.", "ADVERB"],
+  ["perhaps", "có thể", "Perhaps he is busy now.", "ADVERB"],
+  ["I think", "tôi nghĩ", "I think this is useful."],
+  ["in my opinion", "theo ý kiến của tôi", "In my opinion, this plan is better."],
+  ["I agree", "tôi đồng ý", "I agree with you."],
+  ["I don't agree", "tôi không đồng ý", "I don't agree with that."],
+  ["no problem", "không vấn đề gì", "No problem. I can help."],
+  ["sure", "chắc chắn rồi", "Sure, let's start.", "ADVERB"],
+  ["of course", "tất nhiên", "Of course I remember.", "ADVERB"],
+  ["that's fine", "như vậy ổn", "That's fine with me."],
+  ["I'm not sure", "tôi không chắc", "I'm not sure about that."],
+  ["let me think", "để tôi nghĩ đã", "Let me think for a second."],
+  ["could you repeat that", "bạn có thể lặp lại được không", "Could you repeat that, please?"],
+  ["say that again", "nói lại lần nữa", "Can you say that again?"],
+  ["speak more slowly", "nói chậm hơn", "Please speak more slowly."],
+  ["what do you mean", "ý bạn là gì", "What do you mean by that?"],
+  ["how do you spell it", "đánh vần thế nào", "How do you spell it?"],
+  ["sorry to interrupt", "xin lỗi vì cắt lời", "Sorry to interrupt, may I ask?"],
+  ["just a moment", "đợi một chút", "Just a moment, please."],
+  ["that sounds great", "nghe hay đấy", "That sounds great!"],
+  ["I'm afraid I can't", "e là tôi không thể", "I'm afraid I can't join today."],
+]);
+
+const U11_WORDS = wordList([
+  ["kitchen", "nhà bếp", "Our kitchen is clean."],
+  ["fridge", "tủ lạnh", "Put the milk in the fridge."],
+  ["freezer", "ngăn đông", "The ice is in the freezer."],
+  ["stove", "bếp nấu", "Turn off the stove."],
+  ["oven", "lò nướng", "The bread is in the oven."],
+  ["microwave", "lò vi sóng", "Heat the soup in the microwave."],
+  ["sink", "bồn rửa", "The plates are in the sink."],
+  ["tap", "vòi nước", "The tap is broken."],
+  ["kettle", "ấm đun nước", "The kettle is boiling."],
+  ["toaster", "máy nướng bánh mì", "I use the toaster every morning."],
+  ["pan", "chảo", "Fry the eggs in a pan."],
+  ["pot", "nồi", "Boil rice in this pot."],
+  ["knife", "dao", "Use this knife carefully."],
+  ["fork", "nĩa", "Take a fork for your salad."],
+  ["spoon", "muỗng", "I need a spoon for soup."],
+  ["plate", "đĩa", "Put the fish on a plate."],
+  ["cup", "cốc", "He drinks tea in a cup."],
+  ["bowl", "bát", "Serve noodles in a bowl."],
+  ["chop", "băm/chặt", "Chop the garlic first.", "VERB"],
+  ["slice", "thái lát", "Slice the bread thinly.", "VERB"],
+  ["boil", "luộc/đun", "Boil water for tea.", "VERB"],
+  ["fry", "chiên", "Fry the fish for five minutes.", "VERB"],
+  ["bake", "nướng lò", "She bakes cookies every weekend.", "VERB"],
+  ["grill", "nướng vỉ", "We grill chicken outside.", "VERB"],
+  ["wash up", "rửa bát", "I wash up after dinner.", "VERB"],
+]);
+
+const U12_WORDS = wordList([
+  ["bed", "giường", "My bed is near the wall."],
+  ["pillow", "gối", "I need a soft pillow."],
+  ["blanket", "chăn", "Use a blanket at night."],
+  ["sheet", "ga giường", "Change the sheet weekly."],
+  ["wardrobe", "tủ quần áo", "Her clothes are in the wardrobe."],
+  ["drawer", "ngăn kéo", "My keys are in the drawer."],
+  ["lamp", "đèn ngủ", "Turn off the lamp before bed."],
+  ["alarm clock", "đồng hồ báo thức", "My alarm clock rings at 6 a.m."],
+  ["mirror", "gương", "I looked in the mirror."],
+  ["bathroom", "phòng tắm", "The bathroom is upstairs."],
+  ["toilet", "bồn cầu; nhà vệ sinh", "The toilet is clean."],
+  ["shower", "vòi sen; tắm vòi sen", "I take a shower at night."],
+  ["bathtub", "bồn tắm", "The children play in the bathtub."],
+  ["towel", "khăn tắm", "Take a clean towel."],
+  ["toothbrush", "bàn chải đánh răng", "My toothbrush is green."],
+  ["toothpaste", "kem đánh răng", "This toothpaste is minty."],
+  ["soap", "xà phòng", "Wash your hands with soap."],
+  ["shampoo", "dầu gội", "I need new shampoo."],
+  ["comb", "lược", "She uses a comb every morning."],
+  ["brush", "bàn chải", "Use a brush for your hair."],
+  ["wake up", "thức dậy", "I wake up early.", "VERB"],
+  ["go to bed", "đi ngủ", "I go to bed at 10 p.m.", "VERB"],
+  ["get dressed", "mặc quần áo", "He gets dressed quickly.", "VERB"],
+  ["take a shower", "tắm vòi sen", "I take a shower after running.", "VERB"],
+  ["make the bed", "dọn giường", "Please make the bed.", "VERB"],
+]);
+
+const U13_WORDS = wordList([
+  ["living room", "phòng khách", "We watch TV in the living room."],
+  ["sofa", "ghế sofa", "The cat sleeps on the sofa."],
+  ["armchair", "ghế bành", "My grandfather sits in the armchair."],
+  ["coffee table", "bàn trà", "Put the cups on the coffee table."],
+  ["bookcase", "kệ sách", "The bookcase is full."],
+  ["shelf", "kệ", "The photos are on the shelf."],
+  ["carpet", "thảm", "The carpet is soft."],
+  ["curtain", "rèm cửa", "Open the curtain, please."],
+  ["window", "cửa sổ", "The window is open."],
+  ["door", "cửa ra vào", "Close the door quietly."],
+  ["wall", "tường", "There is a picture on the wall."],
+  ["ceiling", "trần nhà", "The ceiling is high."],
+  ["floor", "sàn nhà", "The floor is clean."],
+  ["light", "đèn", "Turn on the light."],
+  ["lamp", "đèn bàn", "This lamp is new."],
+  ["television", "ti vi", "The television is on."],
+  ["remote control", "điều khiển từ xa", "Where is the remote control?"],
+  ["speaker", "loa", "The speaker is loud."],
+  ["decorate", "trang trí", "We decorate the room together.", "VERB"],
+  ["tidy", "gọn gàng", "Keep the room tidy.", "ADJECTIVE"],
+  ["messy", "bừa bộn", "His room is messy.", "ADJECTIVE"],
+  ["comfortable", "thoải mái", "This sofa is comfortable.", "ADJECTIVE"],
+  ["guest", "khách", "We have guests tonight."],
+  ["host", "chủ nhà", "The host welcomed everyone."],
+  ["relax", "thư giãn", "I relax in the living room.", "VERB"],
+]);
+
+const U14_WORDS = wordList([
+  ["job", "công việc", "She is looking for a new job."],
+  ["work", "làm việc; công việc", "I work in a hospital.", "VERB"],
+  ["worker", "công nhân", "The workers start at 8 a.m."],
+  ["office", "văn phòng", "His office is downtown."],
+  ["company", "công ty", "She works for an international company."],
+  ["manager", "quản lý", "Our manager is supportive."],
+  ["boss", "sếp", "My boss is strict but fair."],
+  ["colleague", "đồng nghiệp", "My colleagues are friendly."],
+  ["employee", "nhân viên", "Every employee has a card."],
+  ["employer", "người sử dụng lao động", "The employer offered training."],
+  ["teacher", "giáo viên", "My teacher explains clearly."],
+  ["doctor", "bác sĩ", "The doctor is on duty."],
+  ["nurse", "y tá", "The nurse gave me advice."],
+  ["engineer", "kỹ sư", "My brother is an engineer."],
+  ["driver", "tài xế", "The driver arrived early."],
+  ["chef", "đầu bếp", "The chef cooked delicious soup."],
+  ["farmer", "nông dân", "The farmer grows vegetables."],
+  ["police officer", "cảnh sát", "The police officer helped us."],
+  ["salary", "lương", "Her salary is good."],
+  ["part-time", "bán thời gian", "I have a part-time job.", "ADJECTIVE"],
+  ["full-time", "toàn thời gian", "He works full-time.", "ADJECTIVE"],
+  ["interview", "phỏng vấn", "I have an interview tomorrow."],
+  ["experience", "kinh nghiệm", "She has two years of experience."],
+  ["apply", "nộp đơn", "I want to apply for this position.", "VERB"],
+  ["retire", "nghỉ hưu", "My father will retire next year.", "VERB"],
+]);
+
+const U15_WORDS = wordList([
+  ["school", "trường học", "My school is near my house."],
+  ["university", "trường đại học", "She studies at university."],
+  ["student", "học sinh; sinh viên", "The students are in class."],
+  ["teacher", "giáo viên", "Our teacher is very kind."],
+  ["classroom", "phòng học", "The classroom is bright."],
+  ["lesson", "bài học", "Today's lesson is interesting."],
+  ["subject", "môn học", "Math is my favorite subject."],
+  ["homework", "bài tập về nhà", "I finished my homework."],
+  ["exam", "kỳ thi", "The exam starts at 9 a.m."],
+  ["test", "bài kiểm tra", "We have a test on Friday."],
+  ["grade", "điểm số", "She got a high grade."],
+  ["notebook", "vở ghi", "Write it in your notebook."],
+  ["textbook", "sách giáo khoa", "Bring your textbook tomorrow."],
+  ["pen", "bút mực", "I need a blue pen."],
+  ["pencil", "bút chì", "Use a pencil for the drawing."],
+  ["eraser", "cục tẩy", "My eraser is small."],
+  ["ruler", "thước kẻ", "Can I borrow your ruler?"],
+  ["library", "thư viện", "I read books in the library."],
+  ["laboratory", "phòng thí nghiệm", "The chemistry laboratory is new."],
+  ["scholarship", "học bổng", "She won a scholarship."],
+  ["graduate", "tốt nghiệp", "He will graduate this year.", "VERB"],
+  ["attend", "tham dự; đi học", "I attend class every day.", "VERB"],
+  ["study", "học", "They study English together.", "VERB"],
+  ["revise", "ôn tập", "I revise before exams.", "VERB"],
+  ["group project", "dự án nhóm", "Our group project is due Monday."],
+]);
+
+export const EVIU_UNITS_01_15: VocabularyUnit[] = [
+  unit(1, {
+    introVi: "Từ vựng nền tảng về gia đình và quan hệ họ hàng để giới thiệu bản thân tự nhiên hơn.",
+    structureSections: [{ label: "Core family", wordCount: 10 }, { label: "Extended family", wordCount: 8 }, { label: "Family life", wordCount: 7 }],
+    collocationHtml: `${purple("close family")}, ${purple("family tree")}, ${purple("get married")} là các cụm nên học theo nhóm.`,
+    mistakeHtml: `Nói ${bold("my cousin")} thay vì ${bold("my cousin brother")}; nói ${bold("She is married")} thay vì ${bold("She has married")}.`,
+    principles: [
+      { title: "Name close relations first", body: `Ưu tiên từ cơ bản như ${purple("mother")}, ${purple("father")}, ${purple("brother")}.`, examples: [ex("My father is a driver.", "Bố tôi là tài xế."), ex("This is my sister.", "Đây là chị/em gái của tôi.")] },
+      { title: "Use exact family roles", body: `Phân biệt ${purple("uncle")}, ${purple("aunt")}, ${purple("niece")}, ${purple("nephew")}.`, examples: [ex("My aunt lives in Da Nang.", "Dì/cô của tôi sống ở Đà Nẵng."), ex("Her nephew is ten.", "Cháu trai của cô ấy mười tuổi.")] },
+      { title: "Talk about status with be", body: `Dùng ${purple("be + single/married/divorced")} khi nói tình trạng hôn nhân.`, examples: [ex("He is single.", "Anh ấy còn độc thân."), ex("They are divorced now.", "Bây giờ họ đã ly hôn.")] },
+      { title: "Add family activities", body: `Mở rộng câu bằng cụm như ${purple("visit relatives")} hoặc ${purple("have dinner together")}.`, examples: [ex("We visit relatives at Tet.", "Chúng tôi đi thăm họ hàng vào dịp Tết."), ex("We have dinner together on Sunday.", "Chúng tôi ăn tối cùng nhau vào Chủ nhật.")] },
+    ],
+    words: U1_WORDS,
+    exercises: autoExercises(1, U1_WORDS),
+  }),
+  unit(2, {
+    introVi: "Bộ từ vựng để kể những sự kiện lớn trong đời: sinh ra, kết hôn và qua đời.",
+    structureSections: [{ label: "Birth and growth", wordCount: 9 }, { label: "Marriage events", wordCount: 8 }, { label: "Death and memory", wordCount: 8 }],
+    collocationHtml: `${purple("give birth")}, ${purple("get engaged")}, ${purple("wedding ceremony")}, ${purple("pass away")} giúp kể mốc đời tự nhiên.`,
+    mistakeHtml: `Dùng ${bold("get married to")} thay vì ${bold("marry with")}; dùng ${bold("pass away")} lịch sự hơn ${bold("die")} trong nhiều ngữ cảnh.`,
+    principles: [
+      { title: "Use timeline verbs", body: `Các động từ ${purple("be born")}, ${purple("grow up")}, ${purple("marry")} giúp kể chuyện theo thời gian.`, examples: [ex("She was born in 2002.", "Cô ấy sinh năm 2002."), ex("They got married in May.", "Họ kết hôn vào tháng Năm.")] },
+      { title: "Separate wedding and marriage", body: `${purple("wedding")} là sự kiện, ${purple("marriage")} là mối quan hệ hôn nhân.`, examples: [ex("Their wedding was small.", "Đám cưới của họ diễn ra nhỏ gọn."), ex("Their marriage is strong.", "Hôn nhân của họ rất bền chặt.")] },
+      { title: "Use polite death expressions", body: `Trong văn cảnh lịch sự, ưu tiên ${purple("pass away")} và ${purple("funeral")}.`, examples: [ex("Her grandfather passed away.", "Ông của cô ấy đã qua đời."), ex("We attended the funeral.", "Chúng tôi đã tham dự lễ tang.")] },
+    ],
+    words: U2_WORDS,
+    exercises: autoExercises(2, U2_WORDS),
+  }),
+  unit(3, {
+    introVi: "Từ vựng chỉ bộ phận cơ thể để mô tả ngoại hình, cơn đau và thói quen chăm sóc sức khỏe.",
+    structureSections: [{ label: "Main body parts", wordCount: 11 }, { label: "Face and senses", wordCount: 8 }, { label: "Body actions", wordCount: 6 }],
+    collocationHtml: `${purple("shake hands")}, ${purple("close your eyes")}, ${purple("brush your teeth")} là cụm giao tiếp phổ biến.`,
+    mistakeHtml: `Từ ${bold("hair")} thường không đếm được; phân biệt ${bold("leg")} (chân) và ${bold("foot")} (bàn chân).`,
+    principles: [
+      { title: "Learn from top to toe", body: `Học theo trật tự ${purple("head")} đến ${purple("toe")} giúp nhớ nhanh.`, examples: [ex("My head hurts.", "Đầu tôi bị đau."), ex("I hurt my toe.", "Tôi bị đau ngón chân.")] },
+      { title: "Use possessive adjectives", body: `Khi nói về cơ thể, dùng ${purple("my/your/his")} thay vì mạo từ.`, examples: [ex("Wash your hands.", "Hãy rửa tay của bạn."), ex("He broke his arm.", "Anh ấy bị gãy tay.")] },
+      { title: "Pair body parts with actions", body: `Gắn từ với hành động như ${purple("blink your eyes")} hoặc ${purple("stretch your legs")}.`, examples: [ex("Please blink slowly.", "Làm ơn chớp mắt chậm lại."), ex("I stretch my legs daily.", "Tôi duỗi chân mỗi ngày.")] },
+    ],
+    words: U3_WORDS,
+    exercises: autoExercises(3, U3_WORDS),
+  }),
+  unit(4, {
+    introVi: "Từ vựng về quần áo và phụ kiện để mô tả trang phục, kích cỡ và cách mặc phù hợp từng dịp.",
+    structureSections: [{ label: "Clothes", wordCount: 10 }, { label: "Accessories", wordCount: 8 }, { label: "Size and fit", wordCount: 7 }],
+    collocationHtml: `${purple("wear a coat")}, ${purple("put on shoes")}, ${purple("take off your hat")} xuất hiện rất thường xuyên.`,
+    mistakeHtml: `Nói ${bold("a pair of trousers")} thay vì ${bold("a trouser")}; dùng ${bold("It fits me")} thay cho ${bold("It is fit me")}.`,
+    principles: [
+      { title: "Differentiate wear and put on", body: `${purple("wear")} là trạng thái, ${purple("put on")} là hành động mặc vào.`, examples: [ex("She is wearing jeans.", "Cô ấy đang mặc quần jeans."), ex("He put on a jacket.", "Anh ấy đã khoác áo khoác vào.")] },
+      { title: "Use pair for two-part clothes", body: `Các từ như ${purple("trousers")} và ${purple("shorts")} đi với ${purple("a pair of")}.`, examples: [ex("I bought a pair of jeans.", "Tôi đã mua một chiếc quần jeans."), ex("This pair of shorts is cheap.", "Chiếc quần short này rẻ.")] },
+      { title: "Describe fit clearly", body: `Dùng ${purple("tight")}, ${purple("loose")}, ${purple("fit")} để nói kích cỡ chính xác.`, examples: [ex("These shoes are tight.", "Đôi giày này bị chật."), ex("The dress fits well.", "Chiếc váy vừa vặn rất đẹp.")] },
+    ],
+    words: U4_WORDS,
+    exercises: autoExercises(4, U4_WORDS),
+  }),
+  unit(5, {
+    introVi: "Bộ từ vựng để miêu tả ngoại hình, độ tuổi và tính cách theo cách lịch sự, tự nhiên.",
+    structureSections: [{ label: "Appearance", wordCount: 9 }, { label: "Personality", wordCount: 9 }, { label: "Style of speaking", wordCount: 7 }],
+    collocationHtml: `${purple("in her thirties")}, ${purple("quite friendly")}, ${purple("a bit shy")} giúp câu nói mềm mại và tự nhiên.`,
+    mistakeHtml: `Trong ngữ cảnh lịch sự, tránh dùng trực diện ${bold("fat")}; có thể dùng ${bold("overweight")} hoặc mô tả trung tính hơn.`,
+    principles: [
+      { title: "Start with neutral appearance", body: `Ưu tiên từ trung tính như ${purple("tall")}, ${purple("short")}, ${purple("slim")}.`, examples: [ex("He is tall.", "Anh ấy cao."), ex("She is short and energetic.", "Cô ấy thấp người và rất năng động.")] },
+      { title: "Use age ranges naturally", body: `Dùng cấu trúc ${purple("in his/her twenties")} để nói tuổi xấp xỉ.`, examples: [ex("She is in her thirties.", "Cô ấy đang ở độ tuổi ba mươi."), ex("He is in his forties.", "Anh ấy đang ở độ tuổi bốn mươi.")] },
+      { title: "Balance personality descriptions", body: `Kết hợp từ tích cực và trung tính như ${purple("friendly")} nhưng ${purple("quiet")}.`, examples: [ex("He is friendly but quiet.", "Anh ấy thân thiện nhưng ít nói."), ex("She is strict but helpful.", "Cô ấy nghiêm khắc nhưng hay giúp đỡ.")] },
+      { title: "Use soft modifiers", body: `Thêm ${purple("quite")}, ${purple("very")}, ${purple("a bit")} để điều chỉnh mức độ.`, examples: [ex("She is quite talkative.", "Cô ấy khá nói nhiều."), ex("I'm a bit nervous.", "Tôi hơi hồi hộp một chút.")] },
+    ],
+    words: U5_WORDS,
+    exercises: autoExercises(5, U5_WORDS),
+  }),
+  unit(6, {
+    introVi: "Từ vựng thiết yếu để mô tả triệu chứng, đi khám và thực hiện lời khuyên hồi phục sức khỏe.",
+    structureSections: [{ label: "Symptoms", wordCount: 9 }, { label: "Medical places", wordCount: 8 }, { label: "Recovery", wordCount: 8 }],
+    collocationHtml: `${purple("have a headache")}, ${purple("take medicine")}, ${purple("see a doctor")}, ${purple("stay in bed")} là cụm căn bản.`,
+    mistakeHtml: `Phân biệt ${bold("I am cold")} (tôi lạnh) với ${bold("I have a cold")} (tôi bị cảm).`,
+    principles: [
+      { title: "Use have + illness", body: `Nhiều bệnh đi với ${purple("have")}: ${purple("have a fever")}, ${purple("have the flu")}.`, examples: [ex("I have a fever.", "Tôi bị sốt."), ex("She has a cough.", "Cô ấy bị ho.")] },
+      { title: "Use hurt for body pain", body: `Khi chỉ vị trí đau, dùng ${purple("hurt")} với bộ phận cơ thể.`, examples: [ex("My back hurts.", "Lưng tôi bị đau."), ex("His knee hurts.", "Đầu gối của anh ấy bị đau.")] },
+      { title: "Combine treatment actions", body: `Dùng cụm ${purple("rest")}, ${purple("take pills")}, ${purple("see a doctor")} khi đưa lời khuyên.`, examples: [ex("You should rest today.", "Hôm nay bạn nên nghỉ ngơi."), ex("Take this pill after meals.", "Hãy uống viên thuốc này sau bữa ăn.")] },
+    ],
+    words: U6_WORDS,
+    exercises: autoExercises(6, U6_WORDS),
+  }),
+  unit(7, {
+    introVi: "Bộ từ vựng cảm xúc để diễn tả trạng thái tích cực, tiêu cực và phản hồi đồng cảm trong hội thoại.",
+    structureSections: [{ label: "Positive feelings", wordCount: 8 }, { label: "Negative feelings", wordCount: 10 }, { label: "Reactions", wordCount: 7 }],
+    collocationHtml: `${purple("feel happy")}, ${purple("be worried about")}, ${purple("calm down")} là cụm rất thường dùng.`,
+    mistakeHtml: `${bold("I am bored")} là cảm giác của người; ${bold("It is boring")} là đặc điểm của sự vật/sự việc.`,
+    principles: [
+      { title: "Use feel + adjective", body: `Mẫu ${purple("feel + tính từ")} là cấu trúc đơn giản và hiệu quả nhất ở trình độ cơ bản.`, examples: [ex("I feel tired.", "Tôi cảm thấy mệt."), ex("She feels excited.", "Cô ấy cảm thấy hào hứng.")] },
+      { title: "Differentiate emotional roles", body: `Phân biệt ${purple("bored")} và ${purple("boring")} để tránh lỗi phổ biến.`, examples: [ex("I am bored at home.", "Tôi thấy chán khi ở nhà."), ex("This show is boring.", "Chương trình này rất chán.")] },
+      { title: "Respond with empathy", body: `Dùng phản hồi ngắn như ${purple("Don't worry")} hoặc ${purple("I'm sorry to hear that")}.`, examples: [ex("Don't worry, you'll be fine.", "Đừng lo, rồi bạn sẽ ổn thôi."), ex("I'm sorry to hear that.", "Tôi rất tiếc khi nghe điều đó.")] },
+    ],
+    words: U7_WORDS,
+    exercises: autoExercises(7, U7_WORDS),
+  }),
+  unit(8, {
+    introVi: "Từ vựng chào hỏi và lời chúc để giao tiếp lịch sự trong những tình huống quen thuộc hằng ngày.",
+    structureSections: [{ label: "Greetings", wordCount: 10 }, { label: "Wishes", wordCount: 8 }, { label: "Polite responses", wordCount: 7 }],
+    collocationHtml: `${purple("Nice to meet you")}, ${purple("How are you?")}, ${purple("Congratulations on ...")} là cụm giao tiếp thiết yếu.`,
+    mistakeHtml: `Lần đầu gặp dùng ${bold("Nice to meet you")} chứ không phải ${bold("Nice to see you")} (thường dùng khi gặp lại).`,
+    principles: [
+      { title: "Match greeting with time", body: `Chọn ${purple("good morning")}, ${purple("good afternoon")}, ${purple("good evening")} theo thời điểm.`, examples: [ex("Good morning, class.", "Chào buổi sáng cả lớp."), ex("Good evening, sir.", "Chào buổi tối thưa ông.")] },
+      { title: "Return politeness naturally", body: `Sau câu hỏi ${purple("How are you?")} nên đáp lại rồi hỏi ngược lại để lịch sự.`, examples: [ex("I'm fine, thanks. And you?", "Tôi khỏe, cảm ơn. Còn bạn thì sao?"), ex("I'm good, thank you.", "Tôi vẫn ổn, cảm ơn bạn.")] },
+      { title: "Use event-based wishes", body: `Ghép đúng dịp: ${purple("Happy birthday")}, ${purple("Good luck")}, ${purple("Happy New Year")}.`, examples: [ex("Good luck with your exam!", "Chúc bạn thi tốt nhé!"), ex("Happy birthday, Linh!", "Chúc mừng sinh nhật Linh!")] },
+      { title: "Close conversations warmly", body: `Dùng cụm như ${purple("Take care")} hay ${purple("Have a nice day")} khi tạm biệt.`, examples: [ex("Bye, take care.", "Tạm biệt, nhớ giữ gìn sức khỏe nhé."), ex("Have a nice day!", "Chúc bạn một ngày tốt lành!")] },
+    ],
+    words: U8_WORDS,
+    exercises: autoExercises(8, U8_WORDS),
+  }),
+  unit(9, {
+    introVi: "Các từ và cụm hữu ích để giữ cuộc hội thoại mạch lạc: xác nhận, xin lặp lại, đồng ý và từ chối lịch sự.",
+    structureSections: [{ label: "Conversation flow", wordCount: 9 }, { label: "Opinions", wordCount: 8 }, { label: "Clarification", wordCount: 8 }],
+    collocationHtml: `${purple("I think so")}, ${purple("Could you repeat that?")}, ${purple("That sounds great")} giúp nói tự nhiên hơn.`,
+    mistakeHtml: `Tránh phản hồi cộc lốc ${bold("What?")} khi không nghe rõ; dùng ${bold("Sorry, could you say that again?")} lịch sự hơn.`,
+    principles: [
+      { title: "Use listener signals", body: `Các tín hiệu như ${purple("I see")}, ${purple("right")}, ${purple("exactly")} giúp người nói biết bạn đang theo dõi.`, examples: [ex("I see, thanks.", "À, tôi hiểu rồi, cảm ơn nhé."), ex("Right, that's true.", "Đúng rồi, điều đó đúng đấy.")] },
+      { title: "Ask for repetition politely", body: `Khi cần nghe lại, dùng ${purple("Could you repeat that?")} hoặc ${purple("Speak more slowly, please.")}.`, examples: [ex("Could you repeat that?", "Bạn có thể nói lại được không?"), ex("Can you speak more slowly?", "Bạn có thể nói chậm hơn được không?")] },
+      { title: "Give soft opinions", body: `Dùng ${purple("I think")}, ${purple("maybe")}, ${purple("in my opinion")} để ý kiến mềm và tự nhiên.`, examples: [ex("I think we should wait.", "Tôi nghĩ chúng ta nên chờ thêm."), ex("Maybe tomorrow is better.", "Có lẽ ngày mai sẽ tốt hơn.")] },
+    ],
+    words: U9_WORDS,
+    exercises: autoExercises(9, U9_WORDS),
+  }),
+  unit(11, {
+    introVi: "Từ vựng đồ dùng và thao tác trong bếp để nói về nấu nướng, dọn dẹp và phục vụ bữa ăn.",
+    structureSections: [{ label: "Kitchen tools", wordCount: 10 }, { label: "Cookware", wordCount: 8 }, { label: "Cooking actions", wordCount: 7 }],
+    collocationHtml: `${purple("boil water")}, ${purple("fry an egg")}, ${purple("wash up")} là cụm cơ bản trong căn bếp.`,
+    mistakeHtml: `Nói ${bold("wash up")} hoặc ${bold("do the dishes")} thay vì diễn đạt dài dòng không tự nhiên.`,
+    principles: [
+      { title: "Learn tools by function", body: `Nhóm dụng cụ theo nhiệm vụ: ${purple("pan")} để chiên, ${purple("pot")} để nấu, ${purple("knife")} để cắt.`, examples: [ex("Use a pan for eggs.", "Hãy dùng chảo để chiên trứng."), ex("Boil soup in a pot.", "Hãy nấu canh trong nồi.")] },
+      { title: "Use precise cooking verbs", body: `Phân biệt ${purple("boil")}, ${purple("fry")}, ${purple("bake")}, ${purple("grill")}.`, examples: [ex("I boil eggs.", "Tôi luộc trứng."), ex("She bakes bread.", "Cô ấy nướng bánh mì.")] },
+      { title: "Include cleaning routines", body: `Nấu ăn thường đi cùng việc ${purple("wash up")} và giữ khu vực bếp sạch sẽ.`, examples: [ex("I wash up every night.", "Tối nào tôi cũng rửa bát."), ex("Please clean the sink.", "Làm ơn lau sạch bồn rửa.")] },
+    ],
+    words: U11_WORDS,
+    exercises: autoExercises(11, U11_WORDS),
+  }),
+  unit(12, {
+    introVi: "Từ vựng về phòng ngủ và phòng tắm, kèm cụm hành động mô tả thói quen chăm sóc cá nhân hằng ngày.",
+    structureSections: [{ label: "Bedroom", wordCount: 9 }, { label: "Bathroom", wordCount: 9 }, { label: "Daily routines", wordCount: 7 }],
+    collocationHtml: `${purple("make the bed")}, ${purple("take a shower")}, ${purple("go to bed")} là cụm rất thường gặp.`,
+    mistakeHtml: `Dùng ${bold("go to bed")} cho hành động đi ngủ, không dùng các cụm dịch từng từ thiếu tự nhiên.`,
+    principles: [
+      { title: "Map items by room", body: `Nhóm từ theo không gian ${purple("bedroom")} và ${purple("bathroom")} để nhớ nhanh.`, examples: [ex("The wardrobe is in the bedroom.", "Tủ quần áo ở trong phòng ngủ."), ex("The mirror is in the bathroom.", "Chiếc gương ở trong phòng tắm.")] },
+      { title: "Use routine verbs", body: `Các động từ ${purple("wake up")}, ${purple("get dressed")}, ${purple("take a shower")} rất quan trọng ở A1.`, examples: [ex("I wake up at six.", "Tôi thức dậy lúc sáu giờ."), ex("He gets dressed quickly.", "Anh ấy mặc quần áo rất nhanh.")] },
+      { title: "Distinguish bath and shower", body: `${purple("take a bath")} là ngâm bồn, còn ${purple("take a shower")} là tắm vòi sen.`, examples: [ex("I take a shower daily.", "Tôi tắm vòi sen mỗi ngày."), ex("She takes a bath on Sunday.", "Cô ấy tắm bồn vào Chủ nhật.")] },
+    ],
+    words: U12_WORDS,
+    exercises: autoExercises(12, U12_WORDS),
+  }),
+  unit(13, {
+    introVi: "Từ vựng đồ đạc và mô tả không gian phòng khách để nói về nhà cửa và sinh hoạt chung trong gia đình.",
+    structureSections: [{ label: "Furniture", wordCount: 10 }, { label: "Room parts", wordCount: 8 }, { label: "Activities and style", wordCount: 7 }],
+    collocationHtml: `${purple("sit on the sofa")}, ${purple("turn on the light")}, ${purple("keep the room tidy")} là cụm rất hữu ích.`,
+    mistakeHtml: `Phân biệt ${bold("floor")} (sàn) và ${bold("ground")} (mặt đất bên ngoài) để dùng đúng ngữ cảnh trong nhà.`,
+    principles: [
+      { title: "Identify shared-space objects", body: `Các vật như ${purple("sofa")}, ${purple("coffee table")}, ${purple("television")} là từ cốt lõi của chủ đề phòng khách.`, examples: [ex("The remote is on the coffee table.", "Chiếc điều khiển nằm trên bàn trà."), ex("We sit on the sofa.", "Chúng tôi ngồi trên ghế sofa.")] },
+      { title: "Describe room condition", body: `Dùng ${purple("tidy")}, ${purple("messy")}, ${purple("comfortable")} để mô tả trạng thái không gian.`, examples: [ex("The room is tidy.", "Căn phòng rất gọn gàng."), ex("This armchair is comfortable.", "Chiếc ghế bành này rất thoải mái.")] },
+      { title: "Use simple home routines", body: `Kết hợp động từ như ${purple("decorate")}, ${purple("relax")}, ${purple("open/close")} để tạo câu tự nhiên.`, examples: [ex("We decorate the room at Tet.", "Chúng tôi trang trí phòng vào dịp Tết."), ex("I relax in the living room.", "Tôi thư giãn trong phòng khách.")] },
+    ],
+    words: U13_WORDS,
+    exercises: autoExercises(13, U13_WORDS),
+  }),
+  unit(14, {
+    introVi: "Từ vựng nghề nghiệp và môi trường làm việc để giới thiệu công việc, vai trò và kế hoạch nghề nghiệp.",
+    structureSections: [{ label: "Workplace nouns", wordCount: 10 }, { label: "Jobs and roles", wordCount: 8 }, { label: "Career actions", wordCount: 7 }],
+    collocationHtml: `${purple("apply for a job")}, ${purple("work full-time")}, ${purple("job interview")} là cụm nên ghi nhớ.`,
+    mistakeHtml: `Dùng ${bold("go to work")} cho đi làm; ${bold("job")} thường là danh từ đếm được còn ${bold("work")} hay dùng không đếm.`,
+    principles: [
+      { title: "Differentiate job and work", body: `${purple("job")} là vị trí cụ thể; ${purple("work")} là hoạt động hoặc khối lượng công việc.`, examples: [ex("I have a new job.", "Tôi có một công việc mới."), ex("I have too much work.", "Tôi có quá nhiều việc phải làm.")] },
+      { title: "Use role words clearly", body: `Phân biệt ${purple("manager")}, ${purple("employee")}, ${purple("employer")} để diễn đạt đúng quan hệ công việc.`, examples: [ex("She is our manager.", "Cô ấy là quản lý của chúng tôi."), ex("The employer offered insurance.", "Người sử dụng lao động đã đề nghị bảo hiểm.")] },
+      { title: "Talk about career steps", body: `Các động từ ${purple("apply")}, ${purple("interview")}, ${purple("retire")} giúp kể hành trình nghề nghiệp.`, examples: [ex("I applied for this role.", "Tôi đã nộp đơn cho vị trí này."), ex("My father will retire soon.", "Bố tôi sẽ sớm nghỉ hưu.")] },
+    ],
+    words: U14_WORDS,
+    exercises: autoExercises(14, U14_WORDS),
+  }),
+  unit(15, {
+    introVi: "Từ vựng học đường và đại học để nói về môn học, tài liệu học tập, bài kiểm tra và kế hoạch học tập.",
+    structureSections: [{ label: "School places", wordCount: 9 }, { label: "Learning materials", wordCount: 8 }, { label: "Study actions", wordCount: 8 }],
+    collocationHtml: `${purple("do homework")}, ${purple("take an exam")}, ${purple("revise for a test")} là cụm học tập quen thuộc.`,
+    mistakeHtml: `Nói ${bold("at school")} hoặc ${bold("at university")} tự nhiên hơn các bản dịch word-by-word.`,
+    principles: [
+      { title: "Use core education nouns", body: `Các từ như ${purple("student")}, ${purple("teacher")}, ${purple("classroom")}, ${purple("subject")} tạo nền tảng giao tiếp chủ đề học tập.`, examples: [ex("The student asked a question.", "Bạn học sinh đã đặt một câu hỏi."), ex("Our classroom is large.", "Lớp học của chúng tôi rất rộng.")] },
+      { title: "Group study tools", body: `Học theo nhóm ${purple("notebook")}, ${purple("textbook")}, ${purple("pen")}, ${purple("ruler")} để dễ ghi nhớ.`, examples: [ex("Bring your textbook.", "Hãy mang theo sách giáo khoa của bạn."), ex("I forgot my ruler.", "Tôi quên mang thước kẻ rồi.")] },
+      { title: "Talk about progress and goals", body: `Dùng động từ ${purple("study")}, ${purple("revise")}, ${purple("graduate")} khi nói về tiến trình học tập.`, examples: [ex("I revise every weekend.", "Cuối tuần nào tôi cũng ôn tập."), ex("She will graduate next year.", "Cô ấy sẽ tốt nghiệp vào năm sau.")] },
+      { title: "Mention collaborative learning", body: `Các cụm như ${purple("group project")} hay ${purple("attend class")} phản ánh cách học hiện đại.`, examples: [ex("Our group project is hard.", "Dự án nhóm của chúng tôi khá khó."), ex("I attend class regularly.", "Tôi đi học đều đặn.")] },
+    ],
+    words: U15_WORDS,
+    exercises: autoExercises(15, U15_WORDS),
+  }),
+];

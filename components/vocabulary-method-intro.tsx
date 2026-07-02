@@ -138,12 +138,102 @@ export const VOCABULARY_INFO_PANELS = [
 const authButtonClassName =
   "inline-flex w-full cursor-pointer items-center justify-center rounded-xl bg-[#4b2876] px-4 py-2.5 text-sm font-semibold text-white shadow-sm disabled:pointer-events-none disabled:opacity-45";
 
+function HermannPortrait({ className = "" }: { className?: string }) {
+  return (
+    // eslint-disable-next-line @next/next/no-img-element -- explicit portrait in public
+    <img
+      src="/hermann.jpg"
+      alt="Chân dung Hermann Ebbinghaus"
+      width={200}
+      height={285}
+      className={`h-auto w-[200px] max-w-full rounded-xl object-cover object-[50%_26%] shadow-sm ${className}`.trim()}
+      decoding="async"
+      loading="eager"
+    />
+  );
+}
+
+function VocabularyInfoPanels({
+  openPanel,
+  setOpenPanel,
+}: {
+  openPanel: number | null;
+  setOpenPanel: (index: number | null) => void;
+}) {
+  return (
+    <div className="divide-y divide-[#E4E4E7]">
+      {VOCABULARY_INFO_PANELS.map((panel, index) => {
+        const isOpen = openPanel === index;
+        const panelId = `vocab-info-panel-${index}`;
+
+        return (
+          <div key={panel.title}>
+            <button
+              type="button"
+              onClick={() => setOpenPanel(isOpen ? null : index)}
+              className="flex w-full cursor-pointer items-center justify-between gap-4 py-4 text-left text-sm font-semibold text-[#000001]"
+              aria-expanded={isOpen}
+              aria-controls={panelId}
+            >
+              <span>{panel.title}</span>
+              <ChevronDown
+                className={`h-4 w-4 shrink-0 text-[#47464b] transition-transform duration-300 ease-out ${isOpen ? "rotate-180" : ""}`}
+                strokeWidth={1.8}
+              />
+            </button>
+            <div
+              id={panelId}
+              className={`grid transition-all duration-300 ease-out ${
+                isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+              }`}
+            >
+              <div className="min-h-0 overflow-hidden">
+                <div className="pb-5 pt-0.5">
+                  {panel.body ? (
+                    <div className="space-y-4 text-sm font-medium leading-relaxed text-[#47464b]">
+                      {panel.body.map((paragraph) => (
+                        <p key={paragraph.id}>
+                          {paragraph.parts.map((part, pi) => {
+                            const purple = "purple" in part && part.purple === true;
+                            const bold = "strong" in part && part.strong === true;
+                            return bold ? (
+                              <strong
+                                key={`${paragraph.id}-b-${pi}`}
+                                className={`font-bold ${purple ? "text-[#4b2876]" : "text-[#000001]"}`}
+                              >
+                                {part.text}
+                              </strong>
+                            ) : (
+                              <span key={`${paragraph.id}-s-${pi}`}>{part.text}</span>
+                            );
+                          })}
+                        </p>
+                      ))}
+                    </div>
+                  ) : (
+                    <p className="text-sm leading-relaxed text-[#47464b]">
+                      Mục này không có phần nội dung mở trong clip bạn gửi.
+                    </p>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 export function VocabularyMethodIntro({
   includeAuthSection,
+  embedded = false,
   supabaseConfigured = true,
 }: {
   /** Khi false: chỉ nội dung giới thiệu (đã đăng nhập), không có nút đăng nhập. */
   includeAuthSection: boolean;
+  /** Layout hub Từ vựng: không khung card, accordion trái + ảnh phải. */
+  embedded?: boolean;
   supabaseConfigured?: boolean;
 }) {
   const [openPanel, setOpenPanel] = useState<number | null>(null);
@@ -153,76 +243,34 @@ export function VocabularyMethodIntro({
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, [includeAuthSection]);
 
+  if (embedded) {
+    return (
+      <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_220px] lg:items-start lg:gap-10 xl:grid-cols-[minmax(0,1fr)_240px]">
+        <div className="min-w-0">
+          <VocabularyInfoPanels openPanel={openPanel} setOpenPanel={setOpenPanel} />
+          <p className="mt-6 text-xs font-medium leading-relaxed text-[#47464b]">
+            *Hãy đảm bảo bạn đọc hết các mục ở trên để tối ưu hoá việc học từ vựng nha.
+          </p>
+        </div>
+        <div className="flex justify-center lg:sticky lg:top-24 lg:justify-end">
+          <HermannPortrait className="max-h-[320px]" />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <section className="rounded-xl border border-zinc-200/80 bg-white p-6 shadow-sm ring-1 ring-zinc-950/5">
       <div className="pt-2 text-center">
         <h1 className="font-serif text-2xl font-bold tracking-tight text-[#4b2876]">Từ vựng</h1>
         <p className="mt-3 text-sm leading-relaxed text-ink-muted">
           Tại sao lại là phương pháp
-          <br />
-          Spaced-repetition và Active learning?
+          <br className="sm:hidden" /> Spaced-repetition và Active learning?
         </p>
       </div>
 
-      <div className="mt-6 divide-y divide-zinc-200/90">
-        {VOCABULARY_INFO_PANELS.map((panel, index) => {
-          const isOpen = openPanel === index;
-          const panelId = `vocab-info-panel-${index}`;
-
-          return (
-            <div key={panel.title}>
-              <button
-                type="button"
-                onClick={() => setOpenPanel(isOpen ? null : index)}
-                className="flex w-full cursor-pointer items-center justify-between gap-4 rounded-md py-4 text-left text-sm font-semibold text-ink"
-                aria-expanded={isOpen}
-                aria-controls={panelId}
-              >
-                <span>
-                  <span className="block">{panel.title}</span>
-                </span>
-                <ChevronDown
-                  className={`h-4 w-4 shrink-0 transition-transform duration-300 ease-out ${isOpen ? "rotate-180" : ""}`}
-                  strokeWidth={1.8}
-                />
-              </button>
-              <div
-                id={panelId}
-                className={`grid transition-all duration-300 ease-out ${
-                  isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-                }`}
-              >
-                <div className="min-h-0 overflow-hidden">
-                  <div className="pb-5 pt-0.5">
-                    {panel.body ? (
-                      <div className="space-y-4 text-sm font-medium leading-relaxed text-ink-muted">
-                        {panel.body.map((paragraph) => (
-                          <p key={paragraph.id}>
-                            {paragraph.parts.map((part, pi) => {
-                              const purple = "purple" in part && part.purple === true;
-                              const bold = "strong" in part && part.strong === true;
-                              return bold ? (
-                                <strong key={`${paragraph.id}-b-${pi}`} className={`font-bold ${purple ? "text-[#4b2876]" : "text-ink"}`}>
-                                  {part.text}
-                                </strong>
-                              ) : (
-                                <span key={`${paragraph.id}-s-${pi}`}>{part.text}</span>
-                              );
-                            })}
-                          </p>
-                        ))}
-                      </div>
-                    ) : (
-                      <p className="text-sm leading-relaxed text-ink-muted">
-                        Mục này không có phần nội dung mở trong clip bạn gửi.
-                      </p>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        })}
+      <div className="mt-6">
+        <VocabularyInfoPanels openPanel={openPanel} setOpenPanel={setOpenPanel} />
       </div>
 
       <div className="border-t border-zinc-200/90 pt-5">
@@ -230,16 +278,7 @@ export function VocabularyMethodIntro({
           *Hãy đảm bảo bạn đọc hết các mục ở trên để tối ưu hoá việc học từ vựng nha.
         </p>
         <div className="mx-auto mt-5 flex justify-center">
-          {/* eslint-disable-next-line @next/next/no-img-element -- explicit portrait in public */}
-          <img
-            src="/hermann.jpg"
-            alt="Chân dung Hermann Ebbinghaus"
-            width={200}
-            height={285}
-            className="h-auto max-h-[280px] w-[200px] max-w-full rounded-xl object-cover object-[50%_26%]"
-            decoding="async"
-            loading="eager"
-          />
+          <HermannPortrait className="max-h-[280px]" />
         </div>
         {includeAuthSection ? (
           <>

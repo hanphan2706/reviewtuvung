@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { ActiveLearningDraftSection } from "@/components/active-learning-draft-section";
 import { SignedInTopBar } from "@/components/signed-in-top-bar";
@@ -50,6 +50,8 @@ function useTtTabletLayout() {
 
 export function ReviewView(props: ReviewViewProps) {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const flashcardOnly = searchParams.get("mode") === "flashcard";
   const allDecks = props.allDecks === true;
   const deckId = !allDecks ? props.deckId : undefined;
 
@@ -88,7 +90,7 @@ export function ReviewView(props: ReviewViewProps) {
       setAlActive(false);
       setAlComplete(false);
       setAlQueueSnapshot([]);
-      setReviewMode("pick");
+      setReviewMode(flashcardOnly ? "flashcard" : "pick");
     });
 
     if (allDecks) {
@@ -106,7 +108,7 @@ export function ReviewView(props: ReviewViewProps) {
     }
     openDeck(deckId);
     startOrRefreshSession();
-  }, [allDecks, deckId, decks, closeDeck, openDeck, router, startOrRefreshSession]);
+  }, [allDecks, deckId, decks, closeDeck, flashcardOnly, openDeck, router, startOrRefreshSession]);
 
   if (!allDecks && !activeDeck) {
     return (
@@ -144,6 +146,7 @@ export function ReviewView(props: ReviewViewProps) {
   const showAlDone = alComplete && !alActive;
   const showEmptyQueueScreen = noCardsToReview;
   const showModePicker =
+    !flashcardOnly &&
     !showEmptyQueueScreen &&
     reviewMode === "pick" &&
     sessionQueueIds.length > 0 &&

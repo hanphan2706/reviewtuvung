@@ -78,10 +78,6 @@ export async function middleware(request: NextRequest) {
   }
 
   if (!allowAccess && isProtectedAppPath(pathname)) {
-    if (pathname === AUTH_ENTRY_PATH || pathname.startsWith(`${AUTH_ENTRY_PATH}/`)) {
-      return supabaseResponse;
-    }
-
     const login = new URL(AUTH_ENTRY_PATH, url.origin);
     const returnPath = `${pathname}${url.search}`;
     login.searchParams.set("next", returnPath);
