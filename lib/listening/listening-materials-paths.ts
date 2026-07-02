@@ -21,6 +21,19 @@ export const LISTENING_AUDIO_TACTICS_BASIC_SUBDIR = path.join(
   "Audio tactics-basic",
 );
 
+/** Thư mục quét khi upload / nén MP3 lên Supabase (khớp thứ tự ưu tiên resolve local). */
+export const LISTENING_AUDIO_UPLOAD_SOURCE_SUBDIRS = [
+  LISTENING_AUDIO_CAM18_SUBDIR,
+  LISTENING_AUDIO_CAM20_SUBDIR,
+  LISTENING_AUDIO_CAM_SUBDIR,
+  LISTENING_AUDIO_REAL_TEST_SUBDIR,
+  LISTENING_AUDIO_TACTICS_BASIC_SUBDIR,
+] as const;
+
+export function listeningAudioUploadSourceDirs(cwd: string = process.cwd()): string[] {
+  return LISTENING_AUDIO_UPLOAD_SOURCE_SUBDIRS.map((subdir) => path.join(cwd, subdir));
+}
+
 const TACTICS_BASIC_AUDIO_FILE = /^Unit\d{2}-Listening\d{2}\.mp3$/;
 const CAM_AUDIO_FILE = /^Test[1-4] Part[1-4]\.mp3$/;
 const CAM18_AUDIO_FILE = /^Cam18 Test[1-4] Part[1-4]\.mp3$/i;

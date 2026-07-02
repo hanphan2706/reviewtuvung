@@ -3,26 +3,20 @@
  * Upload MP3 Luyện nghe lên Supabase Storage bucket private.
  *
  * Cần: NEXT_PUBLIC_SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
- * Nguồn:
- * - listening materials/Audio cam/Test*.mp3
- * - listening materials/Audio real test/real test *.mp3
- * - listening materials/Audio tactics-basic/Unit*-Listening*.mp3 (không .full)
+ * Nguồn: xem `listeningAudioUploadSourceDirs()` — Audio cam 18/20, Cam 19, real test, tactics-basic.
  */
 import { readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { loadEnvLocal } from "./load-env-local";
 import { LISTENING_AUDIO_BUCKET } from "../lib/listening/listening-audio-storage";
+import { listeningAudioUploadSourceDirs } from "../lib/listening/listening-materials-paths";
 import { isAllowedListeningAudioFile } from "../lib/listening/listening-materials-urls";
 import { createServiceRoleSupabaseClient } from "../lib/supabase/service-role";
 import { SUPABASE_FREE_MAX_BYTES } from "./prepare-listening-audio-for-upload";
 
 loadEnvLocal();
 
-const SOURCE_DIRS = [
-  path.join(process.cwd(), "listening materials", "Audio cam"),
-  path.join(process.cwd(), "listening materials", "Audio real test"),
-  path.join(process.cwd(), "listening materials", "Audio tactics-basic"),
-];
+const SOURCE_DIRS = listeningAudioUploadSourceDirs();
 
 async function main() {
   const supabase = createServiceRoleSupabaseClient();
@@ -47,7 +41,7 @@ async function main() {
 
   const sorted = [...files].sort();
   if (!sorted.length) {
-    console.error("Không thấy MP3 hợp lệ trong listening materials/Audio cam, Audio real test hoặc Audio tactics-basic");
+    console.error("Không thấy MP3 hợp lệ trong các thư mục listening materials/Audio cam* hoặc Audio real test / tactics-basic");
     process.exit(1);
   }
 

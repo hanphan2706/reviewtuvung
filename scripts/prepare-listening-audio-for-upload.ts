@@ -9,6 +9,7 @@ import { execFile } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { promisify } from "node:util";
+import { listeningAudioUploadSourceDirs } from "@/lib/listening/listening-materials-paths";
 import { isAllowedListeningAudioFile } from "@/lib/listening/listening-materials-urls";
 
 const execFileAsync = promisify(execFile);
@@ -17,11 +18,7 @@ const execFileAsync = promisify(execFile);
 export const SUPABASE_FREE_MAX_BYTES = 50 * 1024 * 1024;
 const TARGET_MAX_BYTES = 48 * 1024 * 1024;
 
-const SOURCE_DIRS = [
-  path.join(process.cwd(), "listening materials", "Audio cam"),
-  path.join(process.cwd(), "listening materials", "Audio real test"),
-  path.join(process.cwd(), "listening materials", "Audio tactics-basic"),
-];
+const SOURCE_DIRS = listeningAudioUploadSourceDirs();
 
 async function probeDurationSeconds(filePath: string): Promise<number> {
   const { stdout } = await execFileAsync("ffprobe", [
@@ -133,7 +130,10 @@ async function main(): Promise<void> {
   console.log(changed ? `Done: ${changed} file(s) compressed.` : "Done: không file nào cần nén.");
 }
 
-void main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+const isDirectRun = process.argv[1]?.includes("prepare-listening-audio-for-upload");
+if (isDirectRun) {
+  void main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
