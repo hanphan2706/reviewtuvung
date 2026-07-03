@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { useRouter } from "next/navigation";
 import { ListeningLessonView } from "@/components/listening/listening-lesson-view";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
@@ -26,14 +27,16 @@ export function ListeningLessonStudyView({
   if (!meta) return null;
 
   return (
-    <ListeningLessonView
-      partId={meta.id}
-      onSelectLesson={(slug) => router.push(listeningLessonHrefBySlug(slug))}
-      onTitleClick={() => router.replace(LISTENING_HUB_HREF, { scroll: false })}
-      isLoggedIn={isLoggedIn}
-      userProfile={userProfile}
-      supabaseConfigured={supabaseConfigured}
-      signInNext={signInNext}
-    />
+    <Suspense fallback={<div className="min-h-dvh bg-[#f5f5f7]" />}>
+      <ListeningLessonView
+        partId={meta.id}
+        onSelectLesson={(slug) => router.push(listeningLessonHrefBySlug(slug))}
+        onTitleClick={() => router.replace(LISTENING_HUB_HREF, { scroll: false })}
+        isLoggedIn={isLoggedIn}
+        userProfile={userProfile}
+        supabaseConfigured={supabaseConfigured}
+        signInNext={signInNext}
+      />
+    </Suspense>
   );
 }

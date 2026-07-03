@@ -1,8 +1,5 @@
-import { headers } from "next/headers";
 import { NextResponse } from "next/server";
-import { devAuthBypassUser } from "@/lib/auth/dev-auth-bypass-user";
-import { isDevAuthBypassForHost, resolveRequestHostname } from "@/lib/auth/dev-auth-bypass";
-import { AUTH_ENTRY_PATH } from "@/lib/auth/protected-routes";
+import { requireStudyExamUser } from "@/lib/auth/study-exam-auth";
 import { isListeningRealExamSlug } from "@/lib/exam/real-exam-catalog";
 import { loadMidtermListeningExamHtml } from "@/lib/exam/serve-midterm-exam-html";
 import {
@@ -10,36 +7,18 @@ import {
   LISTENING_IELTS_EXAM_HREF,
 } from "@/lib/listening/ielts-test-catalog";
 import { buildListeningFullTestExamHtml } from "@/lib/listening/serve-listening-exam-html";
-import { getCurrentUser } from "@/lib/supabase/server";
 
 export const dynamic = "force-dynamic";
 
 type RouteContext = { params: Promise<{ testId: string }> };
 
-async function requireListeningExamUser(request: Request) {
-  const user = await getCurrentUser();
-  if (user) return user;
-
-  const url = new URL(request.url);
-  const hostHeader = (await headers()).get("host");
-  const hostname = resolveRequestHostname(url.hostname, hostHeader);
-  if (isDevAuthBypassForHost(hostname)) return devAuthBypassUser();
-
-  return null;
-}
-
 export async function GET(request: Request, context: RouteContext) {
+  const auth = await requireStudyExamUser(request);
+  if (auth.response) return auth.response;
+
   const { testId } = await context.params;
 
   if (isListeningRealExamSlug(testId)) {
-    const user = await requireListeningExamUser(request);
-    if (!user) {
-      const url = new URL(request.url);
-      const login = new URL(AUTH_ENTRY_PATH, url.origin);
-      login.searchParams.set("next", `${url.pathname}${url.search}`);
-      return NextResponse.redirect(login);
-    }
-
     try {
       const html = loadMidtermListeningExamHtml();
       return new NextResponse(html, {

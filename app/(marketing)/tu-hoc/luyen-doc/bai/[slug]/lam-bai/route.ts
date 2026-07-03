@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { requireStudyExamUser } from "@/lib/auth/study-exam-auth";
 import { readingArticleHref, resolveReadingArticleRoute } from "@/lib/reading/article-routes";
 import { buildExamRunnerHtml } from "@/lib/reading/serve-exam-html";
 
@@ -7,6 +8,9 @@ export const dynamic = "force-dynamic";
 type RouteContext = { params: Promise<{ slug: string }> };
 
 export async function GET(request: Request, context: RouteContext) {
+  const auth = await requireStudyExamUser(request);
+  if (auth.response) return auth.response;
+
   const { slug } = await context.params;
   const article = resolveReadingArticleRoute(slug);
   if (!article) {

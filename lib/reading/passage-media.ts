@@ -191,21 +191,21 @@ const READING_ARTICLE_IMAGES: Record<string, string> = {
   "cam17-test1-p1":
     "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&q=80&auto=format&fit=crop",
   "cam17-test1-p2":
-    "https://images.unsplash.com/photo-1516450776894-9af09e8d297d?w=1200&q=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80&auto=format&fit=crop",
   "cam17-test1-p3":
     "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80&auto=format&fit=crop",
   "cam17-test2-p1":
-    "https://images.unsplash.com/photo-1564507592339-d5a3559a2a0b?w=1200&q=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&q=80&auto=format&fit=crop",
   "cam17-test2-p2":
-    "https://images.unsplash.com/photo-1526417920960-3365f107b882?w=1200&q=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=80&auto=format&fit=crop",
   "cam17-test2-p3":
     "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&q=80&auto=format&fit=crop",
   "cam17-test3-p1":
     "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80&auto=format&fit=crop",
   "cam17-test3-p2":
-    "https://images.unsplash.com/photo-1523580494023-62f5bd0d8a1e?w=1200&q=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&q=80&auto=format&fit=crop",
   "cam17-test3-p3":
-    "https://images.unsplash.com/photo-1496568816309-51d7c20d3f14?w=1200&q=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=1200&q=80&auto=format&fit=crop",
   "cam17-test4-p1":
     "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=1200&q=80&auto=format&fit=crop",
   "cam17-test4-p2":

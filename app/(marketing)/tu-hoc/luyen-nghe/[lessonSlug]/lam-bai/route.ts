@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { requireStudyExamUser } from "@/lib/auth/study-exam-auth";
 import { listeningLessonHrefBySlug } from "@/lib/listening/listening-hub-nav";
 import { buildListeningPartExamHtml } from "@/lib/listening/serve-listening-exam-html";
 import { getListeningPartBySlug } from "@/lib/listening/content-manifest";
@@ -7,7 +8,10 @@ export const dynamic = "force-dynamic";
 
 type RouteContext = { params: Promise<{ lessonSlug: string }> };
 
-export async function GET(_request: Request, context: RouteContext) {
+export async function GET(request: Request, context: RouteContext) {
+  const auth = await requireStudyExamUser(request);
+  if (auth.response) return auth.response;
+
   const { lessonSlug } = await context.params;
   const meta = getListeningPartBySlug(lessonSlug);
   if (!meta) {

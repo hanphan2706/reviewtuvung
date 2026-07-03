@@ -9,6 +9,8 @@ import { ListeningTranscriptCard } from "@/components/listening/listening-transc
 import { ListeningUpNextRow } from "@/components/listening/listening-up-next-row";
 import { StudyHubHeader } from "@/components/study-module/study-hub-header";
 import { studyHubPageBgClass, studyHubPageContentClass } from "@/components/study-module/study-hub-shell";
+import { StudyLoginPrompt } from "@/components/study-module/study-login-prompt";
+import { useStudyExamNav } from "@/hooks/use-study-exam-nav";
 import { useListeningLessonProgress } from "@/hooks/use-listening-lesson-progress";
 import { useListeningFlowAudio } from "@/hooks/use-listening-flow-audio";
 import { useTacticsConversationSegments } from "@/hooks/use-tactics-conversation-segments";
@@ -62,6 +64,7 @@ export function ListeningLessonView({
   const usesSevenStepFlow = meta.examSlug === "tactics-basic";
   const hasIeltsDualMode = hasListeningPartExam(meta.id);
   const [ieltsMode, setIeltsMode] = useState<"exam" | "comprehension" | null>(null);
+  const { openExamHref, loginPrompt, closeLoginPrompt } = useStudyExamNav(isLoggedIn);
   const [flowContent, setFlowContent] = useState<ListeningFlowLessonContent | null>(null);
   const [flowLoading, setFlowLoading] = useState(false);
   const [flowError, setFlowError] = useState<string | null>(null);
@@ -113,8 +116,8 @@ export function ListeningLessonView({
 
   const handleSelectExamMode = useCallback(() => {
     setIeltsMode("exam");
-    window.location.assign(listeningLessonExamHrefBySlug(meta.slug));
-  }, [meta.slug]);
+    openExamHref(listeningLessonExamHrefBySlug(meta.slug));
+  }, [meta.slug, openExamHref]);
 
   const handleSelectComprehensionMode = useCallback(() => {
     setIeltsMode("comprehension");
@@ -149,6 +152,7 @@ export function ListeningLessonView({
   }, [meta.part, meta.examSlug, meta.transcriptTryFiles]);
 
   return (
+    <>
     <div className={studyHubPageBgClass}>
       <StudyHubHeader
         title="Luyện nghe"
@@ -239,5 +243,15 @@ export function ListeningLessonView({
         </div>
       </div>
     </div>
+    {loginPrompt ? (
+      <StudyLoginPrompt
+        title={loginPrompt.title}
+        description={loginPrompt.description}
+        oauthNext={loginPrompt.oauthNext}
+        supabaseConfigured={supabaseConfigured}
+        onClose={closeLoginPrompt}
+      />
+    ) : null}
+    </>
   );
 }

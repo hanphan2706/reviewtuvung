@@ -16,6 +16,8 @@ import { useArticleTextSelection,
 } from "@/components/reading/use-article-text-selection";
 import { useReadingCopyFriction } from "@/hooks/use-reading-copy-friction";
 import { studyHubContainerClass } from "@/components/study-module/study-hub-shell";
+import { StudyLoginPrompt } from "@/components/study-module/study-login-prompt";
+import { useStudyExamNav } from "@/hooks/use-study-exam-nav";
 import {
   fetchDictionaryEnrich,
   fetchDictionaryEntry,
@@ -75,6 +77,7 @@ type ArticleReaderProps = {
   examHref: string | null;
   hasFullExam: boolean;
   isLoggedIn: boolean;
+  supabaseConfigured?: boolean;
 };
 
 export function ArticleReader({
@@ -94,7 +97,9 @@ export function ArticleReader({
   examHref,
   hasFullExam,
   isLoggedIn,
+  supabaseConfigured = true,
 }: ArticleReaderProps) {
+  const { openExamHref, loginPrompt, closeLoginPrompt } = useStudyExamNav(isLoggedIn);
   const articleRef = useRef<HTMLElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const progressSentRef = useRef(false);
@@ -364,6 +369,7 @@ export function ArticleReader({
               quickCheckText={passage.quickCheckText}
               showTranslation={hasTranslation && showTranslation}
               examHref={examHref}
+              onOpenExam={examHref ? openExamHref : undefined}
               questionsText={passage.questionsText}
               hasFullExam={hasFullExam}
             />
@@ -381,6 +387,15 @@ export function ArticleReader({
           canAddWord={canAddWord}
           decks={decks}
           onClose={closePopover}
+        />
+      ) : null}
+      {loginPrompt ? (
+        <StudyLoginPrompt
+          title={loginPrompt.title}
+          description={loginPrompt.description}
+          oauthNext={loginPrompt.oauthNext}
+          supabaseConfigured={supabaseConfigured}
+          onClose={closeLoginPrompt}
         />
       ) : null}
     </div>

@@ -13,7 +13,9 @@ import {
   studyHubPageBgClass,
   studyHubSubpageContentClass,
 } from "@/components/study-module/study-hub-shell";
-import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
+import { StudyLoginPrompt } from "@/components/study-module/study-login-prompt";
+import { useStudyHubLoggedIn } from "@/hooks/use-study-hub-logged-in";
+import { useStudyExamNav } from "@/hooks/use-study-exam-nav";
 import {
   filterRealExams,
   READING_REAL_EXAMS,
@@ -32,6 +34,7 @@ import {
 import { useStudyHubLibraryGrid } from "@/hooks/use-study-hub-library-grid";
 import { buildReadingIeltsExamGridItems } from "@/lib/study-hub/ielts-exam-grid";
 import { filterReadingIeltsTests } from "@/lib/study-hub/library-search";
+import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 
 type ReadingIeltsTestViewProps = {
   pageTitle: string;
@@ -48,11 +51,13 @@ function ReadingIeltsTestViewInner({
   userProfile = null,
   supabaseConfigured,
 }: ReadingIeltsTestViewProps) {
+  const loggedIn = useStudyHubLoggedIn(isLoggedIn);
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
   const sort = parseReadingIeltsLibrarySort(searchParams.get("sap-xep"));
   const [query, setQuery] = useState("");
+  const { openExamHref, loginPrompt, closeLoginPrompt } = useStudyExamNav(loggedIn);
 
   const gridItems = useMemo(() => {
     const filteredRealExams = filterRealExams(READING_REAL_EXAMS, query);
@@ -85,14 +90,15 @@ function ReadingIeltsTestViewInner({
   };
 
   const startRealExam = (exam: RealExamListing) => {
-    window.location.assign(readingRealExamHref(exam.slug));
+    openExamHref(readingRealExamHref(exam.slug));
   };
 
   const startTest = (test: ReadingIeltsTest) => {
-    window.location.assign(readingIeltsTestExamHref(test.pilotId));
+    openExamHref(readingIeltsTestExamHref(test.pilotId));
   };
 
   return (
+    <>
     <div className={studyHubPageBgClass}>
       <StudyHubHeader
         title="Luyện đọc"
@@ -132,6 +138,16 @@ function ReadingIeltsTestViewInner({
         <StudyHubLibraryPagination totalPages={totalPages} ariaLabel="Phân trang luyện đề IELTS" />
       </div>
     </div>
+    {loginPrompt ? (
+      <StudyLoginPrompt
+        title={loginPrompt.title}
+        description={loginPrompt.description}
+        oauthNext={loginPrompt.oauthNext}
+        supabaseConfigured={supabaseConfigured}
+        onClose={closeLoginPrompt}
+      />
+    ) : null}
+    </>
   );
 }
 

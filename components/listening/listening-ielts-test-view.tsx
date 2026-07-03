@@ -13,7 +13,9 @@ import {
   studyHubPageBgClass,
   studyHubSubpageContentClass,
 } from "@/components/study-module/study-hub-shell";
-import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
+import { StudyLoginPrompt } from "@/components/study-module/study-login-prompt";
+import { useStudyHubLoggedIn } from "@/hooks/use-study-hub-logged-in";
+import { useStudyExamNav } from "@/hooks/use-study-exam-nav";
 import {
   filterRealExams,
   LISTENING_REAL_EXAMS,
@@ -32,6 +34,7 @@ import {
 import { useStudyHubLibraryGrid } from "@/hooks/use-study-hub-library-grid";
 import { buildListeningIeltsExamGridItems } from "@/lib/study-hub/ielts-exam-grid";
 import { filterReadingIeltsTests } from "@/lib/study-hub/library-search";
+import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 
 type ListeningIeltsTestViewProps = {
   pageTitle: string;
@@ -48,11 +51,13 @@ function ListeningIeltsTestViewInner({
   userProfile = null,
   supabaseConfigured,
 }: ListeningIeltsTestViewProps) {
+  const loggedIn = useStudyHubLoggedIn(isLoggedIn);
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
   const sort = parseReadingIeltsLibrarySort(searchParams.get("sap-xep"));
   const [query, setQuery] = useState("");
+  const { openExamHref, loginPrompt, closeLoginPrompt } = useStudyExamNav(loggedIn);
 
   const gridItems = useMemo(() => {
     const filteredRealExams = filterRealExams(LISTENING_REAL_EXAMS, query);
@@ -95,14 +100,15 @@ function ListeningIeltsTestViewInner({
   };
 
   const startRealExam = (exam: RealExamListing) => {
-    window.location.assign(listeningRealExamHref(exam.slug));
+    openExamHref(listeningRealExamHref(exam.slug));
   };
 
   const startTest = (test: ListeningIeltsTest) => {
-    window.location.assign(listeningIeltsTestExamHref(test.testId));
+    openExamHref(listeningIeltsTestExamHref(test.testId));
   };
 
   return (
+    <>
     <div className={studyHubPageBgClass}>
       <StudyHubHeader
         title="Luyện nghe"
@@ -140,6 +146,16 @@ function ListeningIeltsTestViewInner({
         <StudyHubLibraryPagination totalPages={totalPages} ariaLabel="Phân trang luyện đề IELTS" />
       </div>
     </div>
+    {loginPrompt ? (
+      <StudyLoginPrompt
+        title={loginPrompt.title}
+        description={loginPrompt.description}
+        oauthNext={loginPrompt.oauthNext}
+        supabaseConfigured={supabaseConfigured}
+        onClose={closeLoginPrompt}
+      />
+    ) : null}
+    </>
   );
 }
 

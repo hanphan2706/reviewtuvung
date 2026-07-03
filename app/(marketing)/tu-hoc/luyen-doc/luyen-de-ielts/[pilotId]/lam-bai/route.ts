@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { requireStudyExamUser } from "@/lib/auth/study-exam-auth";
 import { isReadingRealExamSlug } from "@/lib/exam/real-exam-catalog";
 import { loadMidtermReadingExamHtml } from "@/lib/exam/serve-midterm-exam-html";
 import { isReadingIeltsTestPilotId, READING_IELTS_EXAM_HREF } from "@/lib/reading/ielts-test-catalog";
@@ -9,6 +10,9 @@ export const dynamic = "force-dynamic";
 type RouteContext = { params: Promise<{ pilotId: string }> };
 
 export async function GET(_request: Request, context: RouteContext) {
+  const auth = await requireStudyExamUser(_request);
+  if (auth.response) return auth.response;
+
   const { pilotId } = await context.params;
 
   if (isReadingRealExamSlug(pilotId)) {

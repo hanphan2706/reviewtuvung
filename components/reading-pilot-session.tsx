@@ -1,7 +1,7 @@
 "use client";
 
 import { Loader2 } from "lucide-react";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { ArticleReader } from "@/components/reading/article-reader";
 import { readingArticleHrefById } from "@/lib/reading/article-routes";
 import {
@@ -24,6 +24,7 @@ type ReadingPilotSessionProps = {
   vocabularyItems?: PassageVocabItem[];
   translationParagraphs?: string[] | null;
   isLoggedIn?: boolean;
+  supabaseConfigured?: boolean;
   onBack: () => void;
 };
 
@@ -34,6 +35,7 @@ export function ReadingPilotSession({
   vocabularyItems = [],
   translationParagraphs = null,
   isLoggedIn = false,
+  supabaseConfigured = true,
   onBack,
 }: ReadingPilotSessionProps) {
   const [loading, setLoading] = useState(!initialPassage);
@@ -120,24 +122,27 @@ export function ReadingPilotSession({
   const examHref = useIeltsExam ? `${readingArticleHrefById(articleId)}/lam-bai` : null;
 
   return (
-    <ArticleReader
-      key={articleId}
-      passage={current}
-      metaLabel={hubMeta ? readingArticleMetaLabel(hubMeta) : "IELTS Cambridge"}
-      subheadline={hubMeta?.subheadline ?? subheadlineFromBody(current.body)}
-      imageUrl={resolveReadingArticleImage(articleId, current)}
-      audioUrl={resolveReadingArticleAudio(articleId, current)}
-      edition={hubMeta?.edition}
-      source={hubMeta?.source}
-      topic={hubMeta?.topic}
-      difficulty={hubMeta?.difficulty}
-      articleId={articleId}
-      pilotId={pilotId}
-      vocabularyItems={vocabularyItems}
-      translationParagraphs={translationParagraphs}
-      examHref={examHref}
-      hasFullExam={useIeltsExam}
-      isLoggedIn={isLoggedIn}
-    />
+    <Suspense fallback={<p className="py-20 text-center text-sm text-[#47464b]">Đang tải bài đọc…</p>}>
+      <ArticleReader
+        key={articleId}
+        passage={current}
+        metaLabel={hubMeta ? readingArticleMetaLabel(hubMeta) : "IELTS Cambridge"}
+        subheadline={hubMeta?.subheadline ?? subheadlineFromBody(current.body)}
+        imageUrl={resolveReadingArticleImage(articleId, current)}
+        audioUrl={resolveReadingArticleAudio(articleId, current)}
+        edition={hubMeta?.edition}
+        source={hubMeta?.source}
+        topic={hubMeta?.topic}
+        difficulty={hubMeta?.difficulty}
+        articleId={articleId}
+        pilotId={pilotId}
+        vocabularyItems={vocabularyItems}
+        translationParagraphs={translationParagraphs}
+        examHref={examHref}
+        hasFullExam={useIeltsExam}
+        isLoggedIn={isLoggedIn}
+        supabaseConfigured={supabaseConfigured}
+      />
+    </Suspense>
   );
 }

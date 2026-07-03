@@ -14,6 +14,7 @@ type ArticleQuickCheckPanelProps = {
   quickCheckText?: string;
   showTranslation?: boolean;
   examHref: string | null;
+  onOpenExam?: (href: string) => void;
   questionsText?: string;
   hasFullExam: boolean;
 };
@@ -24,6 +25,7 @@ export function ArticleQuickCheckPanel({
   quickCheckText = "",
   showTranslation = false,
   examHref,
+  onOpenExam,
   questionsText = "",
   hasFullExam,
 }: ArticleQuickCheckPanelProps) {
@@ -61,12 +63,13 @@ export function ArticleQuickCheckPanel({
         ) : (
           <p className="text-sm text-[#47464b]">Bài có bộ câu hỏi IELTS kèm passage.</p>
         )}
-        <a
-          href={examHref}
+        <button
+          type="button"
+          onClick={() => onOpenExam?.(examHref)}
           className="flex w-full items-center justify-center rounded-lg border border-[#000001] bg-white px-4 py-3 text-center text-[10px] font-bold uppercase tracking-wider text-[#000001] transition hover:bg-black/90 hover:text-white"
         >
           Thử thách làm bài đọc IELTS
-        </a>
+        </button>
       </div>
     );
   }

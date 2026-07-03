@@ -62,6 +62,7 @@ export function ReadingArticleSessionView({
             vocabularyItems={vocabularyItems}
             translationParagraphs={translationParagraphs}
             isLoggedIn={loggedIn}
+            supabaseConfigured={supabaseConfigured}
             onBack={() => router.push(READING_HUB_HREF)}
           />
         ) : (

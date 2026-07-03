@@ -9,6 +9,7 @@ import {
   isPublicMarketingPath,
   isPublicStudyHubPath,
 } from "@/lib/auth/protected-routes";
+import { isStudyExamPath, studyExamAuthGatePath } from "@/lib/auth/study-exam-auth";
 import { isPrivateReadingAudioPath } from "@/lib/reading/reading-audio-storage";
 import { OAUTH_NEXT_COOKIE, OAUTH_POPUP_COOKIE } from "@/lib/oauth-return-cookies";
 import {
@@ -78,8 +79,9 @@ export async function middleware(request: NextRequest) {
   }
 
   if (!allowAccess && isProtectedAppPath(pathname)) {
-    const login = new URL(AUTH_ENTRY_PATH, url.origin);
     const returnPath = `${pathname}${url.search}`;
+    const loginPath = isStudyExamPath(pathname) ? studyExamAuthGatePath(returnPath) : AUTH_ENTRY_PATH;
+    const login = new URL(loginPath, url.origin);
     login.searchParams.set("next", returnPath);
     return NextResponse.redirect(login);
   }
