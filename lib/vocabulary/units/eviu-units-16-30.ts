@@ -3,6 +3,7 @@ import type { VocabularyUnit } from "../vocabulary-unit-types";
 import {
   bold,
   buildEviuUnit,
+  buildVariedWordExercises,
   ex,
   fillBlank,
   mcq,
@@ -47,28 +48,29 @@ function toOptions(seed: ExerciseSeed): { key: string; label: string }[] {
 }
 
 function buildExercises(unitNumber: number, seeds: ExerciseSeed[]) {
-  return seeds.flatMap((seed, index) => {
-    const itemIndex = index * 2 + 1;
+  return seeds.map((seed, index) => {
     const options = toOptions(seed);
-    return [
-      fillBlank(
+    const n = index + 1;
+    if (index % 2 === 0) {
+      return fillBlank(
         unitNumber,
-        itemIndex,
+        n,
         seed.sentence,
         seed.answer,
         options,
         "a",
         [seed.answer.toLowerCase()],
-      ),
-      mcq(
-        unitNumber,
-        itemIndex + 1,
-        `Choose the best word to complete: ${seed.sentence}`,
-        options,
-        "a",
-        "Chọn đáp án đúng",
-      ),
-    ];
+        "Điền từ vào chỗ trống",
+      );
+    }
+    return mcq(
+      unitNumber,
+      n,
+      seed.sentence,
+      options,
+      "a",
+      "Chọn từ thích hợp",
+    );
   });
 }
 
@@ -80,7 +82,10 @@ function buildUnitContent(draft: UnitDraft): UnitContentInput {
     mistakeHtml: draft.mistakeHtml,
     principles: draft.principles,
     words: draft.words,
-    exercises: buildExercises(draft.unitNumber, draft.seeds),
+    exercises: [
+      ...buildExercises(draft.unitNumber, draft.seeds),
+      ...buildVariedWordExercises(draft.unitNumber, draft.words, 5),
+    ],
   };
 }
 

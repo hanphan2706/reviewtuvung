@@ -40,10 +40,19 @@ function buildExercises(unitNumber: number, items: ExerciseInput[]): VocabularyE
   return items.map((item, index) => {
     const n = index + 1;
     const opts = options(item.answer, item.distractors[0], item.distractors[1], item.distractors[2]);
-    if (index % 2 === 0) {
-      return fillBlank(unitNumber, n, item.question, item.answer, opts, "a");
+    if (item.question.includes("___")) {
+      return fillBlank(
+        unitNumber,
+        n,
+        item.question,
+        item.answer,
+        opts,
+        "a",
+        [item.answer.toLowerCase()],
+        "Điền từ vào chỗ trống",
+      );
     }
-    return mcq(unitNumber, n, item.question, opts, "a");
+    return mcq(unitNumber, n, item.question, opts, "a", "Chọn đáp án đúng");
   });
 }
 

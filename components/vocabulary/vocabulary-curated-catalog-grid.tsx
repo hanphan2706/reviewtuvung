@@ -20,11 +20,11 @@ function CatalogUnitCard({ entry }: { entry: VocabularyUnitCatalogEntry }) {
       className="flex min-h-[148px] flex-col rounded-2xl border border-[#E4E4E7] bg-white p-5 text-left shadow-sm transition hover:border-[#4b2876]/25 hover:shadow-md"
     >
       <span className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#47464b]/60">
-        Unit {entry.unitNumber}
+        {entry.level}
       </span>
       <h3 className="mt-2 font-serif text-lg font-bold text-[#000001]">{entry.title}</h3>
       <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-[#47464b]">{entry.description}</p>
-      <span className="mt-auto pt-4 text-xs font-semibold text-[#4b2876]">Mở unit</span>
+      <span className="mt-auto pt-4 text-xs font-semibold text-[#4b2876]">Mở bộ thẻ</span>
     </button>
   );
 }

@@ -27,8 +27,33 @@ function getCorrectKey(ex: QuizExercise): string {
 }
 
 function getPrompt(ex: QuizExercise): string {
-  if (ex.type === "mcq") return ex.question;
-  return ex.prompt.replace(/___+/g, "________");
+  const raw = ex.type === "mcq" ? ex.question : ex.prompt;
+  const normalized = raw.replace(/___+/g, "________");
+  return stripRedundantInstruction(normalized, ex.label, ex.type);
+}
+
+const CONTENT_ONLY_LABELS = new Set([
+  "Điền từ vào chỗ trống",
+  "Hoàn thành câu",
+  "Chọn từ thích hợp",
+  "Chọn câu đúng",
+]);
+
+function stripRedundantInstruction(
+  text: string,
+  label: string | undefined,
+  type: QuizExercise["type"],
+): string {
+  const normalizedLabel = (label ?? "").replace(/^10\.\d+\s*·\s*/, "").trim();
+  if (!CONTENT_ONLY_LABELS.has(normalizedLabel)) return text;
+  if (type === "fill-blank") return text;
+
+  return text
+    .replace(/^Which word best fits this context\?\s*/i, "")
+    .replace(/^Choose the best word:\s*/i, "")
+    .replace(/^Choose the best word to complete:\s*/i, "")
+    .replace(/^Which sentence uses ".+?" correctly\?\s*/i, "")
+    .trim();
 }
 
 function formatExerciseLabel(raw: string | undefined, type: QuizExercise["type"]): string {

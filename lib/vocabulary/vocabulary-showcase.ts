@@ -44,7 +44,7 @@ function catalogToShowcaseItem(
       type: "unit",
       unitId: entry.id,
       variant,
-      badge: "EVIU · ELEMENTARY",
+      badge: entry.level,
       imageUrl: SECTION_IMAGES[entry.section] ?? DEFAULT_IMAGE,
     };
   }

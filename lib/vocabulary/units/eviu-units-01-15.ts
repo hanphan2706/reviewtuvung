@@ -1,6 +1,6 @@
 import { EVIU_ELEMENTARY_CATALOG } from "../eviu-elementary-catalog";
 import type { VocabularyUnit } from "../vocabulary-unit-types";
-import { bold, buildEviuUnit, ex, fillBlank, mcq, purple, type UnitContentInput, type WordInput } from "./eviu-unit-builder";
+import { bold, buildEviuUnit, buildVariedWordExercises, ex, purple, type UnitContentInput, type WordInput } from "./eviu-unit-builder";
 
 function catalogFor(unitNumber: number) {
   const entry = EVIU_ELEMENTARY_CATALOG.find((item) => item.unitNumber === unitNumber);
@@ -8,34 +8,6 @@ function catalogFor(unitNumber: number) {
     throw new Error(`Missing catalog entry for unit ${unitNumber}`);
   }
   return entry;
-}
-
-function toOptions(labels: readonly string[]) {
-  return labels.map((label, index) => ({ key: String.fromCharCode(97 + index), label }));
-}
-
-function keyFor(labels: readonly string[], correctLabel: string) {
-  const index = labels.indexOf(correctLabel);
-  if (index === -1) {
-    throw new Error(`Correct label "${correctLabel}" not found in options`);
-  }
-  return String.fromCharCode(97 + index);
-}
-
-function fb(
-  unitNumber: number,
-  index: number,
-  prompt: string,
-  answer: string,
-  labels: readonly string[],
-  correctLabel: string,
-  alternatives?: string[],
-) {
-  return fillBlank(unitNumber, index, prompt, answer, toOptions(labels), keyFor(labels, correctLabel), alternatives);
-}
-
-function mq(unitNumber: number, index: number, question: string, labels: readonly string[], correctLabel: string) {
-  return mcq(unitNumber, index, question, toOptions(labels), keyFor(labels, correctLabel));
 }
 
 function w(term: string, definition: string, example: string, partOfSpeech = "NOUN"): WordInput {
@@ -50,32 +22,6 @@ type WordTuple = [term: string, definition: string, example: string, partOfSpeec
 
 function wordList(entries: readonly WordTuple[]): WordInput[] {
   return entries.map(([term, definition, example, partOfSpeech]) => w(term, definition, example, partOfSpeech ?? "NOUN"));
-}
-
-function autoExercises(unitNumber: number, words: readonly WordInput[]) {
-  const pick = (index: number) => words[index % words.length];
-  const exercises = [];
-  for (let i = 0; i < 5; i += 1) {
-    const target = pick(i);
-    const labels = [pick(i).term, pick(i + 1).term, pick(i + 2).term, pick(i + 3).term];
-    exercises.push(
-      fb(
-        unitNumber,
-        i + 1,
-        `Complete the sentence: The word for "${target.definition}" is ____.`,
-        target.term,
-        labels,
-        target.term,
-        [target.term.toLowerCase()],
-      ),
-    );
-  }
-  for (let i = 0; i < 5; i += 1) {
-    const target = pick(i + 5);
-    const labels = [pick(i + 5).term, pick(i + 6).term, pick(i + 7).term, pick(i + 8).term];
-    exercises.push(mq(unitNumber, i + 6, `Which word means: "${target.definition}"?`, labels, target.term));
-  }
-  return exercises;
 }
 
 const U1_WORDS = wordList([
@@ -483,7 +429,7 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
       { title: "Add family activities", body: `Mở rộng câu bằng cụm như ${purple("visit relatives")} hoặc ${purple("have dinner together")}.`, examples: [ex("We visit relatives at Tet.", "Chúng tôi đi thăm họ hàng vào dịp Tết."), ex("We have dinner together on Sunday.", "Chúng tôi ăn tối cùng nhau vào Chủ nhật.")] },
     ],
     words: U1_WORDS,
-    exercises: autoExercises(1, U1_WORDS),
+    exercises: buildVariedWordExercises(1, U1_WORDS),
   }),
   unit(2, {
     introVi: "Bộ từ vựng để kể những sự kiện lớn trong đời: sinh ra, kết hôn và qua đời.",
@@ -496,7 +442,7 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
       { title: "Use polite death expressions", body: `Trong văn cảnh lịch sự, ưu tiên ${purple("pass away")} và ${purple("funeral")}.`, examples: [ex("Her grandfather passed away.", "Ông của cô ấy đã qua đời."), ex("We attended the funeral.", "Chúng tôi đã tham dự lễ tang.")] },
     ],
     words: U2_WORDS,
-    exercises: autoExercises(2, U2_WORDS),
+    exercises: buildVariedWordExercises(2, U2_WORDS),
   }),
   unit(3, {
     introVi: "Từ vựng chỉ bộ phận cơ thể để mô tả ngoại hình, cơn đau và thói quen chăm sóc sức khỏe.",
@@ -509,7 +455,7 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
       { title: "Pair body parts with actions", body: `Gắn từ với hành động như ${purple("blink your eyes")} hoặc ${purple("stretch your legs")}.`, examples: [ex("Please blink slowly.", "Làm ơn chớp mắt chậm lại."), ex("I stretch my legs daily.", "Tôi duỗi chân mỗi ngày.")] },
     ],
     words: U3_WORDS,
-    exercises: autoExercises(3, U3_WORDS),
+    exercises: buildVariedWordExercises(3, U3_WORDS),
   }),
   unit(4, {
     introVi: "Từ vựng về quần áo và phụ kiện để mô tả trang phục, kích cỡ và cách mặc phù hợp từng dịp.",
@@ -522,7 +468,7 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
       { title: "Describe fit clearly", body: `Dùng ${purple("tight")}, ${purple("loose")}, ${purple("fit")} để nói kích cỡ chính xác.`, examples: [ex("These shoes are tight.", "Đôi giày này bị chật."), ex("The dress fits well.", "Chiếc váy vừa vặn rất đẹp.")] },
     ],
     words: U4_WORDS,
-    exercises: autoExercises(4, U4_WORDS),
+    exercises: buildVariedWordExercises(4, U4_WORDS),
   }),
   unit(5, {
     introVi: "Bộ từ vựng để miêu tả ngoại hình, độ tuổi và tính cách theo cách lịch sự, tự nhiên.",
@@ -536,7 +482,7 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
       { title: "Use soft modifiers", body: `Thêm ${purple("quite")}, ${purple("very")}, ${purple("a bit")} để điều chỉnh mức độ.`, examples: [ex("She is quite talkative.", "Cô ấy khá nói nhiều."), ex("I'm a bit nervous.", "Tôi hơi hồi hộp một chút.")] },
     ],
     words: U5_WORDS,
-    exercises: autoExercises(5, U5_WORDS),
+    exercises: buildVariedWordExercises(5, U5_WORDS),
   }),
   unit(6, {
     introVi: "Từ vựng thiết yếu để mô tả triệu chứng, đi khám và thực hiện lời khuyên hồi phục sức khỏe.",
@@ -549,7 +495,7 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
       { title: "Combine treatment actions", body: `Dùng cụm ${purple("rest")}, ${purple("take pills")}, ${purple("see a doctor")} khi đưa lời khuyên.`, examples: [ex("You should rest today.", "Hôm nay bạn nên nghỉ ngơi."), ex("Take this pill after meals.", "Hãy uống viên thuốc này sau bữa ăn.")] },
     ],
     words: U6_WORDS,
-    exercises: autoExercises(6, U6_WORDS),
+    exercises: buildVariedWordExercises(6, U6_WORDS),
   }),
   unit(7, {
     introVi: "Bộ từ vựng cảm xúc để diễn tả trạng thái tích cực, tiêu cực và phản hồi đồng cảm trong hội thoại.",
@@ -562,7 +508,7 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
       { title: "Respond with empathy", body: `Dùng phản hồi ngắn như ${purple("Don't worry")} hoặc ${purple("I'm sorry to hear that")}.`, examples: [ex("Don't worry, you'll be fine.", "Đừng lo, rồi bạn sẽ ổn thôi."), ex("I'm sorry to hear that.", "Tôi rất tiếc khi nghe điều đó.")] },
     ],
     words: U7_WORDS,
-    exercises: autoExercises(7, U7_WORDS),
+    exercises: buildVariedWordExercises(7, U7_WORDS),
   }),
   unit(8, {
     introVi: "Từ vựng chào hỏi và lời chúc để giao tiếp lịch sự trong những tình huống quen thuộc hằng ngày.",
@@ -576,7 +522,7 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
       { title: "Close conversations warmly", body: `Dùng cụm như ${purple("Take care")} hay ${purple("Have a nice day")} khi tạm biệt.`, examples: [ex("Bye, take care.", "Tạm biệt, nhớ giữ gìn sức khỏe nhé."), ex("Have a nice day!", "Chúc bạn một ngày tốt lành!")] },
     ],
     words: U8_WORDS,
-    exercises: autoExercises(8, U8_WORDS),
+    exercises: buildVariedWordExercises(8, U8_WORDS),
   }),
   unit(9, {
     introVi: "Các từ và cụm hữu ích để giữ cuộc hội thoại mạch lạc: xác nhận, xin lặp lại, đồng ý và từ chối lịch sự.",
@@ -589,7 +535,7 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
       { title: "Give soft opinions", body: `Dùng ${purple("I think")}, ${purple("maybe")}, ${purple("in my opinion")} để ý kiến mềm và tự nhiên.`, examples: [ex("I think we should wait.", "Tôi nghĩ chúng ta nên chờ thêm."), ex("Maybe tomorrow is better.", "Có lẽ ngày mai sẽ tốt hơn.")] },
     ],
     words: U9_WORDS,
-    exercises: autoExercises(9, U9_WORDS),
+    exercises: buildVariedWordExercises(9, U9_WORDS),
   }),
   unit(11, {
     introVi: "Từ vựng đồ dùng và thao tác trong bếp để nói về nấu nướng, dọn dẹp và phục vụ bữa ăn.",
@@ -602,7 +548,7 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
       { title: "Include cleaning routines", body: `Nấu ăn thường đi cùng việc ${purple("wash up")} và giữ khu vực bếp sạch sẽ.`, examples: [ex("I wash up every night.", "Tối nào tôi cũng rửa bát."), ex("Please clean the sink.", "Làm ơn lau sạch bồn rửa.")] },
     ],
     words: U11_WORDS,
-    exercises: autoExercises(11, U11_WORDS),
+    exercises: buildVariedWordExercises(11, U11_WORDS),
   }),
   unit(12, {
     introVi: "Từ vựng về phòng ngủ và phòng tắm, kèm cụm hành động mô tả thói quen chăm sóc cá nhân hằng ngày.",
@@ -615,7 +561,7 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
       { title: "Distinguish bath and shower", body: `${purple("take a bath")} là ngâm bồn, còn ${purple("take a shower")} là tắm vòi sen.`, examples: [ex("I take a shower daily.", "Tôi tắm vòi sen mỗi ngày."), ex("She takes a bath on Sunday.", "Cô ấy tắm bồn vào Chủ nhật.")] },
     ],
     words: U12_WORDS,
-    exercises: autoExercises(12, U12_WORDS),
+    exercises: buildVariedWordExercises(12, U12_WORDS),
   }),
   unit(13, {
     introVi: "Từ vựng đồ đạc và mô tả không gian phòng khách để nói về nhà cửa và sinh hoạt chung trong gia đình.",
@@ -628,7 +574,7 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
       { title: "Use simple home routines", body: `Kết hợp động từ như ${purple("decorate")}, ${purple("relax")}, ${purple("open/close")} để tạo câu tự nhiên.`, examples: [ex("We decorate the room at Tet.", "Chúng tôi trang trí phòng vào dịp Tết."), ex("I relax in the living room.", "Tôi thư giãn trong phòng khách.")] },
     ],
     words: U13_WORDS,
-    exercises: autoExercises(13, U13_WORDS),
+    exercises: buildVariedWordExercises(13, U13_WORDS),
   }),
   unit(14, {
     introVi: "Từ vựng nghề nghiệp và môi trường làm việc để giới thiệu công việc, vai trò và kế hoạch nghề nghiệp.",
@@ -641,7 +587,7 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
       { title: "Talk about career steps", body: `Các động từ ${purple("apply")}, ${purple("interview")}, ${purple("retire")} giúp kể hành trình nghề nghiệp.`, examples: [ex("I applied for this role.", "Tôi đã nộp đơn cho vị trí này."), ex("My father will retire soon.", "Bố tôi sẽ sớm nghỉ hưu.")] },
     ],
     words: U14_WORDS,
-    exercises: autoExercises(14, U14_WORDS),
+    exercises: buildVariedWordExercises(14, U14_WORDS),
   }),
   unit(15, {
     introVi: "Từ vựng học đường và đại học để nói về môn học, tài liệu học tập, bài kiểm tra và kế hoạch học tập.",
@@ -655,6 +601,6 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
       { title: "Mention collaborative learning", body: `Các cụm như ${purple("group project")} hay ${purple("attend class")} phản ánh cách học hiện đại.`, examples: [ex("Our group project is hard.", "Dự án nhóm của chúng tôi khá khó."), ex("I attend class regularly.", "Tôi đi học đều đặn.")] },
     ],
     words: U15_WORDS,
-    exercises: autoExercises(15, U15_WORDS),
+    exercises: buildVariedWordExercises(15, U15_WORDS),
   }),
 ];

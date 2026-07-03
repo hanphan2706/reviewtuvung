@@ -153,4 +153,142 @@ export function fillBlank(
   };
 }
 
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function blankTermInText(text: string, term: string): string | null {
+  const pattern = new RegExp(`\\b${escapeRegExp(term)}\\b`, "i");
+  if (!pattern.test(text)) return null;
+  return text.replace(pattern, "___");
+}
+
+function shuffleWithSeed<T>(items: readonly T[], seed: number): T[] {
+  const next = [...items];
+  let state = seed;
+  for (let i = next.length - 1; i > 0; i -= 1) {
+    state = (state * 1103515245 + 12345) & 0x7fffffff;
+    const j = state % (i + 1);
+    [next[i], next[j]] = [next[j], next[i]];
+  }
+  return next;
+}
+
+function pickDistractorTerms(words: readonly WordInput[], targetIndex: number, count: number): string[] {
+  const target = words[targetIndex]?.term.toLowerCase();
+  if (!target) return [];
+  const picked: string[] = [];
+  for (let offset = 1; offset < words.length && picked.length < count; offset += 1) {
+    const term = words[(targetIndex + offset) % words.length].term;
+    if (term.toLowerCase() !== target && !picked.some((item) => item.toLowerCase() === term.toLowerCase())) {
+      picked.push(term);
+    }
+  }
+  return picked;
+}
+
+function buildTermOptions(correct: string, distractors: readonly string[], seed: number) {
+  const labels = shuffleWithSeed([correct, ...distractors], seed);
+  const options = labels.map((label, index) => ({ key: String.fromCharCode(97 + index), label }));
+  const correctKey = options.find((option) => option.label.toLowerCase() === correct.toLowerCase())?.key ?? "a";
+  return { options, correctKey };
+}
+
+function buildSentenceOptions(correct: string, distractors: readonly string[], seed: number) {
+  const labels = shuffleWithSeed([correct, ...distractors], seed);
+  const options = labels.map((label, index) => ({ key: String.fromCharCode(97 + index), label }));
+  const correctKey = options.find((option) => option.label === correct)?.key ?? "a";
+  return { options, correctKey };
+}
+
+function wordIndexOf(words: readonly WordInput[], target: WordInput): number {
+  const index = words.findIndex((word) => word.term === target.term);
+  return index >= 0 ? index : 0;
+}
+
+/**
+ * Tạo bài tập đa dạng từ ví dụ ngữ cảnh — tránh dạng máy móc "The word for … is ___".
+ * Mỗi từ chỉ xuất hiện một lần; luân phiên điền chỗ trống, chọn câu đúng, chọn từ lạ và hoàn thành ý.
+ */
+export function buildVariedWordExercises(
+  unitNumber: number,
+  words: readonly WordInput[],
+  count = 10,
+): VocabularyExercise[] {
+  if (words.length < 4) return [];
+
+  const exercises: VocabularyExercise[] = [];
+  const usedTerms = new Set<string>();
+  let exerciseIndex = 1;
+
+  for (let i = 0; i < words.length && exercises.length < count; i += 1) {
+    const target = words[i];
+    const termKey = target.term.toLowerCase();
+    if (usedTerms.has(termKey)) continue;
+
+    const targetIndex = wordIndexOf(words, target);
+    const distractorTerms = pickDistractorTerms(words, targetIndex, 3);
+    if (distractorTerms.length < 3) continue;
+
+    const variant = exercises.length % 3;
+    let created: VocabularyExercise | null = null;
+
+    if (variant === 0 && target.example) {
+      const prompt = blankTermInText(target.example, target.term);
+      if (prompt) {
+        const { options, correctKey } = buildTermOptions(target.term, distractorTerms, unitNumber * 100 + i);
+        created = fillBlank(
+          unitNumber,
+          exerciseIndex,
+          prompt,
+          target.term,
+          options,
+          correctKey,
+          [target.term.toLowerCase()],
+          "Điền từ vào chỗ trống",
+        );
+      }
+    } else if (variant === 1 && target.example) {
+      const wrongSentences = distractorTerms
+        .map((term) => words.find((word) => word.term === term)?.example)
+        .filter((sentence): sentence is string => Boolean(sentence));
+      if (wrongSentences.length >= 3) {
+        const { options, correctKey } = buildSentenceOptions(
+          target.example,
+          wrongSentences.slice(0, 3),
+          unitNumber * 100 + i + 17,
+        );
+        created = mcq(
+          unitNumber,
+          exerciseIndex,
+          `"${target.term}"`,
+          options,
+          correctKey,
+          "Chọn câu đúng",
+        );
+      }
+    } else if (target.example) {
+      const prompt = blankTermInText(target.example, target.term);
+      if (prompt) {
+        const { options, correctKey } = buildTermOptions(target.term, distractorTerms, unitNumber * 100 + i + 53);
+        created = mcq(
+          unitNumber,
+          exerciseIndex,
+          prompt,
+          options,
+          correctKey,
+          "Chọn từ thích hợp",
+        );
+      }
+    }
+
+    if (!created) continue;
+    usedTerms.add(termKey);
+    exerciseIndex += 1;
+    exercises.push(created);
+  }
+
+  return exercises.slice(0, count);
+}
+
 export { B, _B, P, _P };

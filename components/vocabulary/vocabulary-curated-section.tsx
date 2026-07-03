@@ -22,7 +22,8 @@ export function VocabularyCuratedSection({ showViewAll = false, hideHeading = fa
           <div className="max-w-2xl">
             <h2 className="font-serif text-xl font-bold text-[#000001] md:text-2xl">Bộ từ vựng gợi ý</h2>
             <p className="mt-2 text-sm leading-relaxed text-[#47464b] md:text-base">
-              Kho từ vựng chuyên sâu từ các nguồn uy tín.
+              Biến thư viện từ vựng từ các nguồn uy tín như English Vocabulary in Use hoặc Vocabulary for IELTS trở
+              nên càng hiệu quả hơn nữa với đầy đủ lý thuyết, bài tập tương tác và thẻ SRS!
             </p>
           </div>
           {showViewAll ? (
