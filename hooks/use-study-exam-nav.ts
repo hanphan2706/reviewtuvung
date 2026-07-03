@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { canAccessStudyFeature } from "@/lib/auth/can-access-study-feature";
-import { studyExamLoginCopy } from "@/lib/auth/study-exam-auth";
+import { studyExamLoginCopy } from "@/lib/auth/study-exam-auth-shared";
 
 export function useStudyExamNav(loggedIn: boolean) {
   const searchParams = useSearchParams();

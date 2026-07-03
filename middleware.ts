@@ -9,7 +9,7 @@ import {
   isPublicMarketingPath,
   isPublicStudyHubPath,
 } from "@/lib/auth/protected-routes";
-import { isStudyExamPath, studyExamAuthGatePath } from "@/lib/auth/study-exam-auth";
+import { isStudyExamPath, studyExamAuthGatePath } from "@/lib/auth/study-exam-auth-shared";
 import { isPrivateReadingAudioPath } from "@/lib/reading/reading-audio-storage";
 import { OAUTH_NEXT_COOKIE, OAUTH_POPUP_COOKIE } from "@/lib/oauth-return-cookies";
 import {
