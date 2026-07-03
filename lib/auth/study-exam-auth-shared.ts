@@ -6,6 +6,20 @@ export const STUDY_EXAM_LOGIN_DESCRIPTION_LISTENING =
 export const STUDY_EXAM_LOGIN_DESCRIPTION_READING =
   "Bạn có thể khám phá Luyện đọc khi chưa đăng nhập. Đăng nhập để mở đề IELTS đọc hiểu.";
 
+export const LISTENING_ACCENT_LOGIN_TITLE = "Đăng nhập để khám phá chất giọng";
+
+export const LISTENING_ACCENT_LOGIN_DESCRIPTION =
+  "Bạn có thể khám phá Luyện nghe khi chưa đăng nhập. Đăng nhập để nghe audio và so sánh các chất giọng vùng miền.";
+
+export function isListeningAccentPath(pathname: string): boolean {
+  return pathname === "/tu-hoc/luyen-nghe/chat-giong" || pathname.startsWith("/tu-hoc/luyen-nghe/chat-giong/");
+}
+
+/** Hub nguồn nghe — hiển thị popup đăng nhập, không redirect sang Từ vựng. */
+export function listeningAccentAuthGatePath(_returnPath: string): string {
+  return "/tu-hoc/luyen-nghe/kham-pha-nguon";
+}
+
 export function isStudyExamPath(pathname: string): boolean {
   return pathname.endsWith("/lam-bai");
 }

@@ -1,10 +1,11 @@
 "use client";
 
-import { Suspense, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ListeningLibrarySortSelect } from "@/components/listening/listening-library-sort";
 import { ListeningSourceCategoryCard } from "@/components/listening/listening-source-category-card";
 import { StudyHubHeader } from "@/components/study-module/study-hub-header";
+import { StudyLoginPrompt } from "@/components/study-module/study-login-prompt";
 import { StudyHubLibraryPagination } from "@/components/study-module/study-hub-library-pagination";
 import { StudyHubLibrarySearchInput } from "@/components/study-module/study-hub-library-search-input";
 import { StudyHubLibraryToolbar } from "@/components/study-module/study-hub-library-toolbar";
@@ -14,6 +15,12 @@ import {
   studyHubSubpageTitleWideClass,
 } from "@/components/study-module/study-hub-shell";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
+import {
+  isListeningAccentPath,
+  LISTENING_ACCENT_LOGIN_DESCRIPTION,
+  LISTENING_ACCENT_LOGIN_TITLE,
+} from "@/lib/auth/study-exam-auth-shared";
+import { useStudyHubLoggedIn } from "@/hooks/use-study-hub-logged-in";
 import { parseListeningLibrarySort } from "@/lib/listening/library-sort";
 import {
   LISTENING_SOURCE_CATEGORIES,
@@ -39,8 +46,17 @@ function ListeningSourcesExploreViewInner({
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
+  const loggedIn = useStudyHubLoggedIn(isLoggedIn);
   const sort = parseListeningLibrarySort(searchParams.get("sap-xep"));
   const [query, setQuery] = useState("");
+  const [pendingAccentNext, setPendingAccentNext] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (loggedIn) return;
+    const next = searchParams.get("next");
+    if (!next?.startsWith("/") || !isListeningAccentPath(next.split("?")[0] ?? next)) return;
+    setPendingAccentNext(next);
+  }, [loggedIn, searchParams]);
 
   const filteredCategories = useMemo(() => {
     const filtered = filterListeningSourceCategories(LISTENING_SOURCE_CATEGORIES, query);
@@ -76,7 +92,7 @@ function ListeningSourcesExploreViewInner({
       <StudyHubHeader
         title="Luyện nghe"
         showListeningFilters
-        isLoggedIn={isLoggedIn}
+        isLoggedIn={loggedIn}
         userProfile={userProfile}
         supabaseConfigured={supabaseConfigured}
         signInNext={pathname}
@@ -120,6 +136,16 @@ function ListeningSourcesExploreViewInner({
 
         <StudyHubLibraryPagination totalPages={totalPages} ariaLabel="Phân trang nguồn nghe" />
       </div>
+
+      {pendingAccentNext ? (
+        <StudyLoginPrompt
+          title={LISTENING_ACCENT_LOGIN_TITLE}
+          description={LISTENING_ACCENT_LOGIN_DESCRIPTION}
+          oauthNext={pendingAccentNext}
+          supabaseConfigured={supabaseConfigured}
+          onClose={() => setPendingAccentNext(null)}
+        />
+      ) : null}
     </div>
   );
 }

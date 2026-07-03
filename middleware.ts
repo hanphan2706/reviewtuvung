@@ -9,7 +9,12 @@ import {
   isPublicMarketingPath,
   isPublicStudyHubPath,
 } from "@/lib/auth/protected-routes";
-import { isStudyExamPath, studyExamAuthGatePath } from "@/lib/auth/study-exam-auth-shared";
+import {
+  isListeningAccentPath,
+  isStudyExamPath,
+  listeningAccentAuthGatePath,
+  studyExamAuthGatePath,
+} from "@/lib/auth/study-exam-auth-shared";
 import { isPrivateReadingAudioPath } from "@/lib/reading/reading-audio-storage";
 import { isBlockedPublicListeningAssetAudio } from "@/lib/media/media-audio-storage";
 import { OAUTH_NEXT_COOKIE, OAUTH_POPUP_COOKIE } from "@/lib/oauth-return-cookies";
@@ -85,7 +90,11 @@ export async function middleware(request: NextRequest) {
 
   if (!allowAccess && isProtectedAppPath(pathname)) {
     const returnPath = `${pathname}${url.search}`;
-    const loginPath = isStudyExamPath(pathname) ? studyExamAuthGatePath(returnPath) : AUTH_ENTRY_PATH;
+    const loginPath = isStudyExamPath(pathname)
+      ? studyExamAuthGatePath(returnPath)
+      : isListeningAccentPath(pathname)
+        ? listeningAccentAuthGatePath(returnPath)
+        : AUTH_ENTRY_PATH;
     const login = new URL(loginPath, url.origin);
     login.searchParams.set("next", returnPath);
     return NextResponse.redirect(login);
