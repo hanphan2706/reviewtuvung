@@ -1,4 +1,6 @@
 /** Giọng thực tế phát trong audio (TTS). */
+import { mediaAudioApiPath } from "@/lib/media/media-audio-storage";
+
 export type AccentChallengePlayedAccentId =
   | "british"
   | "american"
@@ -354,8 +356,6 @@ export const ACCENT_CHALLENGE_PAGE = {
   nextLabel: "Tiếp theo",
 } as const;
 
-const ACCENT_CHALLENGE_AUDIO_BASE = "/listening-assets/accent-challenge";
-
 export function playedAccentToAnswer(accent: AccentChallengePlayedAccentId): AccentChallengeAnswerId {
   if (accent === "british") return "british";
   if (accent === "american") return "american";
@@ -367,7 +367,7 @@ export function accentChallengeWordAudioUrl(
   accentId: AccentChallengePlayedAccentId,
   gender: AccentChallengeVoiceGender,
 ): string {
-  return `${ACCENT_CHALLENGE_AUDIO_BASE}/words/${wordId}/${accentId}-${gender}.mp3`;
+  return mediaAudioApiPath(`accent-challenge/words/${wordId}/${accentId}-${gender}.mp3`);
 }
 
 export function accentChallengeSentenceAudioUrl(
@@ -375,7 +375,7 @@ export function accentChallengeSentenceAudioUrl(
   accentId: AccentChallengePlayedAccentId,
   gender: AccentChallengeVoiceGender,
 ): string {
-  return `${ACCENT_CHALLENGE_AUDIO_BASE}/sentences/${sentenceId}/${accentId}-${gender}.mp3`;
+  return mediaAudioApiPath(`accent-challenge/sentences/${sentenceId}/${accentId}-${gender}.mp3`);
 }
 
 export function accentChallengeRoundAudioUrl(

@@ -1,4 +1,5 @@
 import type { ReadingTopic } from "@/lib/reading/hub-articles";
+import { mediaAudioApiPath } from "@/lib/media/media-audio-storage";
 import { listeningPartHeroImage, LISTENING_HUB_HERO_EXCLUDED_PART_IDS } from "@/lib/listening/listening-passage-media";
 import { listeningPartAudioApiPath, tacticsBasicListeningAudioApiPath } from "@/lib/listening/listening-materials-urls";
 import {
@@ -93,7 +94,7 @@ export const LISTENING_TEST_CONTEXTS: Record<string, ListeningTestContext> = {
     predictTitle: "Cam 19 — Test 1",
     predictBlurb:
       "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có vẻ là trao đổi qua điện thoại và liên quan tới một địa điểm / hoạt động cho nhóm đi tham quan — không cần đoán đúng chi tiết.",
-    introAudioPublicPath: "/listening-assets/cam19/Test1-intro.mp3",
+    introAudioPublicPath: mediaAudioApiPath("cam19/Test1-intro.mp3"),
   },
   "cam19-t2": {
     predictTitle: "Cam 19 — Test 2",

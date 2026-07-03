@@ -20,10 +20,10 @@ export const ACCENT_REGION_COLUMNS = [
   { key: "australian" as const, shortTitle: "Anh - Úc", flagEmoji: "🇦🇺" },
 ] as const;
 
-const ACCENT_AUDIO_PUBLIC_BASE = "/listening-assets/accents";
+import { mediaAudioApiPath } from "@/lib/media/media-audio-storage";
 
 export function speechAccentAudioUrl(sampleId: string): string {
-  return `${ACCENT_AUDIO_PUBLIC_BASE}/${sampleId}.wav`;
+  return mediaAudioApiPath(`accents/${sampleId}.wav`);
 }
 
 export function speechAccentArchiveSampleUrl(speakerId: number): string {

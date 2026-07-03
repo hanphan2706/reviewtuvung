@@ -28,6 +28,7 @@ import {
   accentChallengeWordPromptSegments,
 } from "@/lib/listening/accent-challenge-prompt-mask";
 import { AccentChallengePromptText } from "@/components/listening/accent-challenge-prompt-text";
+import { assignProtectedAudioSrc } from "@/lib/media/assign-protected-audio-src";
 import { usePathname } from "next/navigation";
 
 type ListeningAccentChallengeViewProps = {
@@ -48,6 +49,7 @@ export function ListeningAccentChallengeView({
 }: ListeningAccentChallengeViewProps) {
   const pathname = usePathname();
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const revokeRef = useRef<(() => void) | null>(null);
 
   const [queue, setQueue] = useState<AccentChallengeRound[] | null>(null);
   const [roundIndex, setRoundIndex] = useState(0);
@@ -80,6 +82,8 @@ export function ListeningAccentChallengeView({
     if (!audio) return;
     audio.pause();
     audio.currentTime = 0;
+    revokeRef.current?.();
+    revokeRef.current = null;
     setIsPlaying(false);
   }, []);
 
@@ -117,13 +121,13 @@ export function ListeningAccentChallengeView({
       return;
     }
 
-    audio.src = audioSrc;
-    const play = audio.play();
-    if (play) {
-      play
-        .then(() => setIsPlaying(true))
-        .catch(() => setIsPlaying(false));
-    }
+    void assignProtectedAudioSrc(audio, audioSrc)
+      .then((revoke) => {
+        revokeRef.current = revoke;
+        return audio.play();
+      })
+      .then(() => setIsPlaying(true))
+      .catch(() => setIsPlaying(false));
   };
 
   const submitAnswer = (selected: AccentChallengeAnswerId) => {

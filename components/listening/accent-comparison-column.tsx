@@ -1,6 +1,7 @@
 "use client";
 
 import { Volume2 } from "lucide-react";
+import { ProtectedAudio } from "@/components/media/protected-audio";
 import {
   speechAccentArchiveSampleUrl,
   speechAccentAudioUrl,
@@ -47,10 +48,10 @@ export function AccentComparisonColumn({
       </p>
       <div className="mt-5 flex items-center gap-2 border-t border-[#E4E4E7] pt-4">
         <Volume2 className="size-4 shrink-0 text-[#616365]" aria-hidden />
-        <audio
+        <ProtectedAudio
           controls
           preload="none"
-          src={speechAccentAudioUrl(sample.sampleId)}
+          apiSrc={speechAccentAudioUrl(sample.sampleId)}
           className="h-9 w-full min-w-0"
           aria-label={`Nghe giọng ${regionLabel}: ${sample.location}`}
         />

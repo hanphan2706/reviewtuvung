@@ -7,6 +7,7 @@ import {
   ACCENT_DISCOVER_WORD_PAIRS_PAGE_SIZE,
 } from "@/lib/listening/accent-discover-content";
 import { accentDiscoverWordAudioUrl } from "@/lib/listening/accent-discover-passages";
+import { assignProtectedAudioSrc } from "@/lib/media/assign-protected-audio-src";
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -55,6 +56,7 @@ function IpaSpeakerButton({
 
 export function AccentWordPairsSection() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const revokeRef = useRef<(() => void) | null>(null);
   const [playingKey, setPlayingKey] = useState<WordAudioKey | null>(null);
   const [page, setPage] = useState(0);
 
@@ -70,6 +72,8 @@ export function AccentWordPairsSection() {
     if (!audio) return;
     audio.pause();
     audio.currentTime = 0;
+    revokeRef.current?.();
+    revokeRef.current = null;
     setPlayingKey(null);
   }, []);
 
@@ -93,13 +97,13 @@ export function AccentWordPairsSection() {
     }
 
     stopAudio();
-    audio.src = accentDiscoverWordAudioUrl(pairId, variant);
-    const play = audio.play();
-    if (play) {
-      play
-        .then(() => setPlayingKey(key))
-        .catch(() => setPlayingKey(null));
-    }
+    void assignProtectedAudioSrc(audio, accentDiscoverWordAudioUrl(pairId, variant))
+      .then((revoke) => {
+        revokeRef.current = revoke;
+        return audio.play();
+      })
+      .then(() => setPlayingKey(key))
+      .catch(() => setPlayingKey(null));
   };
 
   return (

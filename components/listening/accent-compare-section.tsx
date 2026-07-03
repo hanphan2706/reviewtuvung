@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Info } from "lucide-react";
 import { AccentPlayerCard } from "@/components/listening/accent-player-card";
+import { ProtectedAudio } from "@/components/media/protected-audio";
 import {
   ACCENT_PLAYER_OPTIONS,
   ACCENT_SAMPLE_PARAGRAPH_NOTE,
@@ -157,18 +158,18 @@ export function AccentCompareSection({
                     isActive={activeAccentId === accentId}
                     onToggle={() => toggleAccent(accentId)}
                   />
-                  <audio
+                  <ProtectedAudio
                     ref={(node) => {
                       if (node) audioRefs.current[accentId] = node;
                     }}
                     preload="none"
-                    src={speechAccentAudioUrl(sample.sampleId)}
+                    apiSrc={speechAccentAudioUrl(sample.sampleId)}
                     onEnded={() => setPlayingAccentId(null)}
                     className="sr-only"
                     aria-label={`Mẫu giọng ${option.title}`}
                   >
                     <track kind="captions" />
-                  </audio>
+                  </ProtectedAudio>
                 </div>
               );
             })}

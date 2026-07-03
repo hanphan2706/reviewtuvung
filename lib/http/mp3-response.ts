@@ -16,8 +16,35 @@ function parseByteRange(
   return { start, end };
 }
 
-/** MP3 bytes → NextResponse (Uint8Array body — tránh lỗi TS Buffer vs BodyInit trên Vercel). */
-export function mp3NextResponse(bytes: Buffer, request?: Request): NextResponse {
+function audioResponseHeaders(
+  contentType: string,
+  size: number,
+  chunkSize?: number,
+  range?: { start: number; end: number },
+): Record<string, string> {
+  if (range && chunkSize !== undefined) {
+    return {
+      "Content-Type": contentType,
+      "Content-Length": String(chunkSize),
+      "Content-Range": `bytes ${range.start}-${range.end}/${size}`,
+      "Accept-Ranges": "bytes",
+      "Cache-Control": "private, no-store",
+    };
+  }
+  return {
+    "Content-Type": contentType,
+    "Content-Length": String(size),
+    "Accept-Ranges": "bytes",
+    "Cache-Control": "private, no-store",
+  };
+}
+
+/** Audio bytes (MP3/WAV) → NextResponse with private cache. */
+export function audioBytesNextResponse(
+  bytes: Buffer,
+  contentType: "audio/mpeg" | "audio/wav",
+  request?: Request,
+): NextResponse {
   const body = new Uint8Array(bytes);
   const size = body.byteLength;
   const range = parseByteRange(request?.headers.get("range") ?? null, size);
@@ -27,28 +54,21 @@ export function mp3NextResponse(bytes: Buffer, request?: Request): NextResponse 
     const chunk = body.subarray(start, end + 1);
     return new NextResponse(chunk, {
       status: 206,
-      headers: {
-        "Content-Type": "audio/mpeg",
-        "Content-Length": String(chunk.byteLength),
-        "Content-Range": `bytes ${start}-${end}/${size}`,
-        "Accept-Ranges": "bytes",
-        "Cache-Control": "private, no-store",
-      },
+      headers: audioResponseHeaders(contentType, size, chunk.byteLength, range),
     });
   }
 
   return new NextResponse(body, {
-    headers: {
-      "Content-Type": "audio/mpeg",
-      "Content-Length": String(size),
-      "Accept-Ranges": "bytes",
-      "Cache-Control": "private, no-store",
-    },
+    headers: audioResponseHeaders(contentType, size),
   });
 }
 
-/** Stream MP3 from disk — avoids loading large files entirely into memory. */
-export function mp3FileNextResponse(filePath: string, request?: Request): NextResponse {
+/** Stream audio file from disk. */
+export function audioFileNextResponse(
+  filePath: string,
+  contentType: "audio/mpeg" | "audio/wav",
+  request?: Request,
+): NextResponse {
   const size = statSync(filePath).size;
   const range = parseByteRange(request?.headers.get("range") ?? null, size);
 
@@ -57,23 +77,22 @@ export function mp3FileNextResponse(filePath: string, request?: Request): NextRe
     const stream = createReadStream(filePath, { start, end });
     return new NextResponse(Readable.toWeb(stream) as ReadableStream, {
       status: 206,
-      headers: {
-        "Content-Type": "audio/mpeg",
-        "Content-Length": String(end - start + 1),
-        "Content-Range": `bytes ${start}-${end}/${size}`,
-        "Accept-Ranges": "bytes",
-        "Cache-Control": "private, no-store",
-      },
+      headers: audioResponseHeaders(contentType, size, end - start + 1, range),
     });
   }
 
   const stream = createReadStream(filePath);
   return new NextResponse(Readable.toWeb(stream) as ReadableStream, {
-    headers: {
-      "Content-Type": "audio/mpeg",
-      "Content-Length": String(size),
-      "Accept-Ranges": "bytes",
-      "Cache-Control": "private, no-store",
-    },
+    headers: audioResponseHeaders(contentType, size),
   });
+}
+
+/** MP3 bytes → NextResponse (Uint8Array body — tránh lỗi TS Buffer vs BodyInit trên Vercel). */
+export function mp3NextResponse(bytes: Buffer, request?: Request): NextResponse {
+  return audioBytesNextResponse(bytes, "audio/mpeg", request);
+}
+
+/** Stream MP3 from disk — avoids loading large files entirely into memory. */
+export function mp3FileNextResponse(filePath: string, request?: Request): NextResponse {
+  return audioFileNextResponse(filePath, "audio/mpeg", request);
 }

@@ -30,6 +30,7 @@
     "reading:upload-audio": "npx tsx scripts/upload-reading-audio.ts",
     "listening:prepare-audio-for-upload": "npx tsx scripts/prepare-listening-audio-for-upload.ts",
     "listening:upload-audio": "npx tsx scripts/upload-listening-audio.ts",
+    "media:upload-audio": "npx tsx scripts/upload-media-audio.ts",
     "reading:sync-images": "npx tsx scripts/sync-reading-images.ts",
     "listening:sync-tactics": "npx tsx scripts/sync-tactics-listening.ts",
     "listening:sync-transcript": "npx tsx scripts/sync-listening-transcript.ts",

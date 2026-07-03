@@ -11,6 +11,7 @@ import {
 } from "@/lib/auth/protected-routes";
 import { isStudyExamPath, studyExamAuthGatePath } from "@/lib/auth/study-exam-auth-shared";
 import { isPrivateReadingAudioPath } from "@/lib/reading/reading-audio-storage";
+import { isBlockedPublicListeningAssetAudio } from "@/lib/media/media-audio-storage";
 import { OAUTH_NEXT_COOKIE, OAUTH_POPUP_COOKIE } from "@/lib/oauth-return-cookies";
 import {
   OAUTH_ORIGIN_COOKIE,
@@ -54,6 +55,10 @@ export async function middleware(request: NextRequest) {
   }
 
   if (isPrivateReadingAudioPath(pathname)) {
+    return new NextResponse(null, { status: 404 });
+  }
+
+  if (isBlockedPublicListeningAssetAudio(pathname)) {
     return new NextResponse(null, { status: 404 });
   }
 

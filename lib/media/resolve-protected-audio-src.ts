@@ -1,6 +1,11 @@
 /** API audio cần cookie auth; HTMLAudioElement không luôn theo redirect — resolve trước khi phát. */
 export function isProtectedAudioApiSrc(src: string): boolean {
-  return src.includes("/api/reading/audio") || src.includes("/api/listening/audio");
+  return (
+    src.includes("/api/reading/audio") ||
+    src.includes("/api/listening/audio") ||
+    src.includes("/api/media/audio") ||
+    src.includes("/lam-bai/audio")
+  );
 }
 
 export async function resolveProtectedAudioSrc(src: string): Promise<{ src: string; revoke?: () => void }> {

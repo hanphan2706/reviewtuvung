@@ -65,6 +65,20 @@ const nextConfig: NextConfig = {
    * `192.168.*.*` khớp mọi host `192.168.x.y` — không cần sửa khi DHCP đổi octet cuối.
    */
   allowedDevOrigins: ["192.168.*.*", "*.ngrok-free.dev"],
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: "/listening-assets/:path*.mp3",
+          destination: "/api/media/blocked",
+        },
+        {
+          source: "/listening-assets/:path*.wav",
+          destination: "/api/media/blocked",
+        },
+      ],
+    };
+  },
   async redirects() {
     return [
       {

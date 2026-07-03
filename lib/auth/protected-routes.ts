@@ -13,8 +13,11 @@ export function isPublicMarketingPath(pathname: string): boolean {
   return false;
 }
 
-/** Hub Luyện nghe — xem được khi chưa đăng nhập. Luyện đọc: chỉ hub/thư viện; bài đọc cần login. */
+/** Hub Luyện nghe — xem được khi chưa đăng nhập (trừ Khám phá chất giọng). Luyện đọc: chỉ hub/thư viện. */
 export function isPublicStudyHubPath(pathname: string): boolean {
+  if (pathname === "/tu-hoc/luyen-nghe/chat-giong" || pathname.startsWith("/tu-hoc/luyen-nghe/chat-giong/")) {
+    return false;
+  }
   if (pathname === "/tu-hoc/luyen-nghe" || pathname.startsWith("/tu-hoc/luyen-nghe/")) return true;
   if (pathname === "/tu-hoc/luyen-doc" || pathname.startsWith("/tu-hoc/luyen-doc/thu-vien")) return true;
   if (pathname === "/tu-hoc/luyen-doc/chu-de") return true;
@@ -48,6 +51,9 @@ export function isProtectedAppPath(pathname: string): boolean {
   if (pathname === "/review") return true;
   if (pathname.startsWith("/tu-hoc/tu-vung")) return true;
   if (isProtectedReadingContentPath(pathname)) return true;
+  if (pathname === "/tu-hoc/luyen-nghe/chat-giong" || pathname.startsWith("/tu-hoc/luyen-nghe/chat-giong/")) {
+    return true;
+  }
   return false;
 }
 
@@ -89,6 +95,7 @@ export function isPublicReadingExamBootApi(pathname: string, searchParams: URLSe
 export function isProtectedApiPath(pathname: string): boolean {
   if (pathname.startsWith("/api/reading/")) return true;
   if (pathname.startsWith("/api/listening/")) return true;
+  if (pathname.startsWith("/api/media/audio")) return true;
   if (pathname === "/api/transcribe") return true;
   return false;
 }

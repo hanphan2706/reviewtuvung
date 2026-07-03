@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { ProtectedAudio } from "@/components/media/protected-audio";
 import { WordRichDisplay } from "@/components/word-rich-display";
 import { useListeningCopyFriction } from "@/hooks/use-listening-copy-friction";
 import { LISTENING_PARTS_PILOT, getListeningPartOrDefault, getListeningTestContext } from "@/lib/listening/content-manifest";
@@ -53,8 +54,13 @@ function ListeningIntroClip({ src }: { src: string | undefined }) {
       <p className="text-xs text-zinc-500">
         File do bạn tự cắt/export (10–30s) từ audio đầy đủ — app không tự cắt trong code.
       </p>
-      <audio controls className="w-full max-w-md" preload="metadata" onError={() => setMissing(true)}>
-        <source src={src} type="audio/mpeg" />
+      <ProtectedAudio
+        controls
+        className="w-full max-w-md"
+        preload="metadata"
+        apiSrc={src}
+        onError={() => setMissing(true)}
+      >
         <track
           kind="captions"
           src="/listening-assets/cam19/pilot-placeholder.vtt"
@@ -62,7 +68,7 @@ function ListeningIntroClip({ src }: { src: string | undefined }) {
           label="Ghi chú pilot"
           default
         />
-      </audio>
+      </ProtectedAudio>
     </div>
   );
 }
@@ -203,8 +209,7 @@ export function ListeningPilotSession() {
 
       {step === "listen" && (
         <section className="space-y-4">
-          <audio controls className="w-full max-w-md" preload="metadata">
-            <source src={audioSrc} type="audio/mpeg" />
+          <ProtectedAudio controls className="w-full max-w-md" preload="metadata" apiSrc={audioSrc}>
             <track
               kind="captions"
               src="/listening-assets/cam19/pilot-placeholder.vtt"
@@ -213,7 +218,7 @@ export function ListeningPilotSession() {
               default
             />
             Trình duyệt không hỗ trợ audio.
-          </audio>
+          </ProtectedAudio>
           <p className="text-sm text-zinc-500">
             Nếu không phát được, kiểm tra đã copy đúng file MP3 vào{" "}
             <code className="text-ink">public/listening-assets/cam19/</code> chưa.

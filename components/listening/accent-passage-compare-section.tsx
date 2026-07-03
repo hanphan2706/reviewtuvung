@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { AccentPlayerCard } from "@/components/listening/accent-player-card";
+import { ProtectedAudio } from "@/components/media/protected-audio";
 import { ACCENT_PASSAGE_COMPARE_OPTIONS } from "@/lib/listening/accent-discover-content";
 import {
   ACCENT_DISCOVER_PASSAGES,
@@ -131,18 +132,19 @@ export function AccentPassageCompareSection() {
                     isActive={activeAccentId === accentId}
                     onToggle={() => toggleAccent(accentId)}
                   />
-                  <audio
+                  <ProtectedAudio
+                    key={`${activePassageId}-${option.id}`}
                     ref={(node) => {
                       if (node) audioRefs.current[accentId] = node;
                     }}
                     preload="none"
-                    src={accentDiscoverPassageAudioUrl(activePassageId, accentId)}
+                    apiSrc={accentDiscoverPassageAudioUrl(activePassageId, accentId)}
                     onEnded={() => setPlayingAccentId(null)}
                     className="sr-only"
                     aria-label={`Mẫu giọng ${option.title}`}
                   >
                     <track kind="captions" />
-                  </audio>
+                  </ProtectedAudio>
                 </div>
               );
             })}

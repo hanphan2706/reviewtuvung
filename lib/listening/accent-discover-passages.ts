@@ -1,3 +1,4 @@
+import { mediaAudioApiPath } from "@/lib/media/media-audio-storage";
 import { STELLA_ELICITATION_PARAGRAPH } from "@/lib/listening/stella-paragraph";
 import {
   ACCENT_COMPARISON_SETS,
@@ -49,8 +50,6 @@ export type PlayableAccentId = "british" | "american" | "australian";
 
 const DEFAULT_SET = ACCENT_COMPARISON_SETS[0];
 
-const ACCENT_DISCOVER_AUDIO_BASE = "/listening-assets/accent-discover";
-
 export function accentDiscoverPassageById(id: AccentDiscoverPassageId): AccentDiscoverPassage {
   const passage = ACCENT_DISCOVER_PASSAGES.find((item) => item.id === id);
   if (!passage) return ACCENT_DISCOVER_PASSAGES[0];
@@ -69,9 +68,9 @@ export function accentDiscoverPassageAudioUrl(
   if (passage.source === "archive") {
     return speechAccentAudioUrl(accentDiscoverArchiveSample(accentId).sampleId);
   }
-  return `${ACCENT_DISCOVER_AUDIO_BASE}/passages/${passageId}/${accentId}.mp3`;
+  return mediaAudioApiPath(`accent-discover/passages/${passageId}/${accentId}.mp3`);
 }
 
 export function accentDiscoverWordAudioUrl(pairId: string, variant: "uk" | "us"): string {
-  return `${ACCENT_DISCOVER_AUDIO_BASE}/words/${pairId}-${variant}.mp3`;
+  return mediaAudioApiPath(`accent-discover/words/${pairId}-${variant}.mp3`);
 }
