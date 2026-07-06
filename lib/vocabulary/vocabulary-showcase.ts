@@ -26,6 +26,23 @@ const SECTION_IMAGES: Partial<Record<VocabularyUnitCatalogEntry["section"], stri
 const DEFAULT_IMAGE =
   "https://images.unsplash.com/photo-1490645933887-1cefb8bd438d?auto=format&fit=crop&w=1200&q=80";
 
+/** Unsplash URLs that currently 404 — never use for the large featured hero card. */
+const BROKEN_SHOWCASE_IMAGE_URLS = new Set<string>([
+  SECTION_IMAGES.world,
+  SECTION_IMAGES.verbs,
+  SECTION_IMAGES.grammar,
+  DEFAULT_IMAGE,
+].filter((url): url is string => Boolean(url)));
+
+export function resolveShowcaseImageUrl(entry: VocabularyUnitCatalogEntry): string {
+  return SECTION_IMAGES[entry.section] ?? DEFAULT_IMAGE;
+}
+
+/** Featured card shows a full-bleed image — exclude decks whose section image is known broken. */
+export function isFeaturedShowcaseEligible(entry: VocabularyUnitCatalogEntry): boolean {
+  return !BROKEN_SHOWCASE_IMAGE_URLS.has(resolveShowcaseImageUrl(entry));
+}
+
 function shuffle<T>(items: readonly T[]): T[] {
   const next = [...items];
   for (let i = next.length - 1; i > 0; i -= 1) {
@@ -45,7 +62,7 @@ function catalogToShowcaseItem(
       unitId: entry.id,
       variant,
       badge: entry.level,
-      imageUrl: SECTION_IMAGES[entry.section] ?? DEFAULT_IMAGE,
+      imageUrl: resolveShowcaseImageUrl(entry),
     };
   }
 
@@ -57,7 +74,7 @@ function catalogToShowcaseItem(
     description: entry.description,
     badge: "EVIU · ELEMENTARY",
     icon: SECTION_ICONS[entry.section],
-    imageUrl: SECTION_IMAGES[entry.section] ?? DEFAULT_IMAGE,
+    imageUrl: resolveShowcaseImageUrl(entry),
   };
 }
 
@@ -65,8 +82,20 @@ function catalogToShowcaseItem(
 export function buildRandomVocabularyShowcase(
   catalog: readonly VocabularyUnitCatalogEntry[],
 ): CuratedShowcaseItem[] {
-  const picked = shuffle(catalog).slice(0, 4);
+  const shuffled = shuffle(catalog);
+  const featuredEntry =
+    shuffled.find(isFeaturedShowcaseEligible) ??
+    shuffle(catalog.filter(isFeaturedShowcaseEligible))[0];
+
+  if (!featuredEntry) {
+    throw new Error("No vocabulary units with a working showcase image for the featured slot.");
+  }
+
+  const secondary = shuffled.filter((entry) => entry.id !== featuredEntry.id).slice(0, 3);
   const variants: CuratedShowcaseItem["variant"][] = ["featured", "wide", "compact-purple", "compact"];
 
-  return picked.map((entry, index) => catalogToShowcaseItem(entry, variants[index] ?? "compact"));
+  return [
+    catalogToShowcaseItem(featuredEntry, "featured"),
+    ...secondary.map((entry, index) => catalogToShowcaseItem(entry, variants[index + 1] ?? "compact")),
+  ];
 }
