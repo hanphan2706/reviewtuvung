@@ -16,8 +16,13 @@ const VOCAB_ROOT = "/tu-hoc/tu-vung" as const;
 const NAV_ITEMS = [
   { href: `${VOCAB_ROOT}/phuong-phap`, label: "Phương pháp", public: true },
   { href: VOCABULARY_GOI_Y_HREF, label: "Bộ từ vựng gợi ý", public: false },
-  { href: `${VOCAB_ROOT}/tien-do`, label: "Tiến độ", public: false },
 ] as const;
+
+const TIEN_DO_ITEM = {
+  href: `${VOCAB_ROOT}/tien-do`,
+  label: "Tiến độ",
+  public: false,
+} as const;
 
 const linkClass =
   "block cursor-pointer px-2 py-2 text-sm font-medium text-ink transition hover:opacity-80";
@@ -131,6 +136,21 @@ export function StudyHubVocabularyMenuNav({ onNavigate }: { onNavigate?: () => v
           <LevelNavGroup items={VOCABULARY_LEVEL_NAV} onNavigate={onNavigate} />
         </div>
       ) : null}
+      <ul className="mt-0.5 space-y-0.5">
+        <li>
+          <button
+            type="button"
+            onClick={() => {
+              onNavigate?.();
+              navigateWithAuth(TIEN_DO_ITEM.href);
+            }}
+            className={`${linkClass} w-full text-left`}
+            aria-current={isActive(pathname, TIEN_DO_ITEM.href) ? "page" : undefined}
+          >
+            {TIEN_DO_ITEM.label}
+          </button>
+        </li>
+      </ul>
     </nav>
   );
 }

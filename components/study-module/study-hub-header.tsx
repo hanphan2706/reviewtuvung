@@ -137,7 +137,7 @@ export function StudyHubHeader({
           <div className="flex w-full min-w-0 items-center gap-2 sm:gap-3">
             <StudyHubBackLink />
 
-            <div className="flex min-h-0 min-w-0 flex-1 items-center gap-2 sm:gap-3 md:gap-4">
+            <div className="flex min-h-0 min-w-0 flex-1 flex-nowrap items-center gap-2 sm:gap-3 md:gap-4">
               {listeningTitleLink ? (
                 <>
                   <h1 className="m-0 flex min-w-0 shrink-0 items-center leading-none">

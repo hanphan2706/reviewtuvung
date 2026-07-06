@@ -16,12 +16,19 @@ const VOCAB_ROOT = "/tu-hoc/tu-vung" as const;
 const NAV_ITEMS = [
   { href: `${VOCAB_ROOT}/phuong-phap`, label: "Phương pháp", public: true },
   { href: VOCABULARY_GOI_Y_HREF, label: "Bộ từ vựng gợi ý", public: false },
-  { href: `${VOCAB_ROOT}/tien-do`, label: "Tiến độ", public: false },
 ] as const;
+
+const TIEN_DO_ITEM = {
+  href: `${VOCAB_ROOT}/tien-do`,
+  label: "Tiến độ",
+  public: false,
+} as const;
 
 /** Khớp `headerNavItemClass` trong StudyHubHeader — cùng line box, không lệch baseline. */
 const headerNavItemClass = `inline-flex items-center gap-1 leading-none ${studyHubHeaderTextClass}`;
 const linkClass = `${headerNavItemClass} shrink-0 whitespace-nowrap transition-opacity hover:opacity-70`;
+/** Reset nút auth — cùng box model với Link (Safari macOS hay lệch 2 mục cuối nav). */
+const navButtonClass = `${linkClass} m-0 cursor-pointer appearance-none border-0 bg-transparent p-0 font-inherit text-inherit`;
 
 function isGoiYPath(pathname: string): boolean {
   return pathname === VOCABULARY_GOI_Y_HREF || pathname.startsWith(`${VOCABULARY_GOI_Y_HREF}/`);
@@ -38,10 +45,10 @@ function LevelDropdown({ items }: { items: readonly VocabularyLevelNavItem[] }) 
   const active = items.some((item) => pathname === item.href);
 
   return (
-    <div className="group relative shrink-0">
+    <div className="group relative inline-flex shrink-0 items-center">
       <button
         type="button"
-        className={`${headerNavItemClass} transition-opacity hover:opacity-70`}
+        className={`${navButtonClass} transition-opacity hover:opacity-70`}
         aria-haspopup="menu"
         aria-current={active ? "page" : undefined}
       >
@@ -77,7 +84,7 @@ export function VocabularyHeaderNav() {
   const { navigateWithAuth } = useVocabularyAuth();
 
   return (
-    <nav className="hidden min-w-0 flex-nowrap items-center gap-3 xl:flex 2xl:gap-4" aria-label="Từ vựng">
+    <nav className="hidden shrink-0 flex-nowrap items-center gap-3 xl:flex 2xl:gap-4" aria-label="Từ vựng">
       {NAV_ITEMS.map(({ href, label, public: isPublic }) => {
         const active = isActive(pathname, href);
         if (isPublic) {
@@ -97,7 +104,7 @@ export function VocabularyHeaderNav() {
             key={href}
             type="button"
             onClick={() => navigateWithAuth(href)}
-            className={linkClass}
+            className={navButtonClass}
             aria-current={active ? "page" : undefined}
           >
             {label}
@@ -105,6 +112,14 @@ export function VocabularyHeaderNav() {
         );
       })}
       {VOCABULARY_LEVEL_NAV.length > 0 ? <LevelDropdown items={VOCABULARY_LEVEL_NAV} /> : null}
+      <button
+        type="button"
+        onClick={() => navigateWithAuth(TIEN_DO_ITEM.href)}
+        className={navButtonClass}
+        aria-current={isActive(pathname, TIEN_DO_ITEM.href) ? "page" : undefined}
+      >
+        {TIEN_DO_ITEM.label}
+      </button>
     </nav>
   );
 }
