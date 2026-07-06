@@ -1,24 +1,87 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ChevronDown } from "lucide-react";
 import { useVocabularyAuth } from "@/components/vocabulary/vocabulary-auth-context";
+import {
+  VOCABULARY_GOI_Y_HREF,
+  VOCABULARY_LEVEL_NAV,
+  type VocabularyLevelNavItem,
+} from "@/lib/vocabulary/vocabulary-level-nav";
 
 const VOCAB_ROOT = "/tu-hoc/tu-vung" as const;
-const VOCAB_GOI_Y = `${VOCAB_ROOT}/goi-y` as const;
 
 const NAV_ITEMS = [
   { href: `${VOCAB_ROOT}/phuong-phap`, label: "Phương pháp", public: true },
-  { href: VOCAB_GOI_Y, label: "Bộ từ vựng gợi ý", public: false },
+  { href: VOCABULARY_GOI_Y_HREF, label: "Bộ từ vựng gợi ý", public: false },
   { href: `${VOCAB_ROOT}/tien-do`, label: "Tiến độ", public: false },
 ] as const;
 
 const linkClass =
   "block cursor-pointer px-2 py-2 text-sm font-medium text-ink transition hover:opacity-80";
 
+const sectionTitleClass = "text-[10px] font-bold uppercase tracking-[0.14em] text-[#47464b]";
+
+function isGoiYPath(pathname: string): boolean {
+  return pathname === VOCABULARY_GOI_Y_HREF || pathname.startsWith(`${VOCABULARY_GOI_Y_HREF}/`);
+}
+
 function isActive(pathname: string, href: string): boolean {
-  if (href === VOCAB_GOI_Y) return pathname === VOCAB_GOI_Y || pathname.startsWith(`${VOCAB_GOI_Y}/`);
+  if (href === VOCABULARY_GOI_Y_HREF) return isGoiYPath(pathname);
   return pathname === href || pathname.startsWith(`${href}/`);
+}
+
+function LevelNavGroup({
+  items,
+  onNavigate,
+}: {
+  items: readonly VocabularyLevelNavItem[];
+  onNavigate?: () => void;
+}) {
+  const pathname = usePathname();
+  const { navigateWithAuth } = useVocabularyAuth();
+  const [open, setOpen] = useState(false);
+  const panelId = "vocabulary-menu-do-kho";
+
+  return (
+    <div>
+      <button
+        type="button"
+        className="flex min-h-6 w-full cursor-pointer items-center justify-between gap-2 px-2 text-left transition hover:opacity-80"
+        aria-expanded={open}
+        aria-controls={panelId}
+        aria-label={`${open ? "Thu gọn" : "Mở"} Độ khó`}
+        onClick={() => setOpen((v) => !v)}
+      >
+        <span className={sectionTitleClass}>Độ khó</span>
+        <ChevronDown
+          className={`size-4 shrink-0 text-[#47464b] transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+          aria-hidden
+        />
+      </button>
+      {open ? (
+        <ul id={panelId} className="mt-1 space-y-0.5">
+          {items.map((item) => (
+            <li key={item.href}>
+              <button
+                type="button"
+                onClick={() => {
+                  onNavigate?.();
+                  navigateWithAuth(item.href);
+                }}
+                className={`${linkClass} w-full text-left`}
+                aria-current={pathname === item.href ? "page" : undefined}
+              >
+                {item.label}
+              </button>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+    </div>
+  );
 }
 
 /** Điều hướng Từ vựng trong menu curtain — mobile / tablet. */
@@ -63,6 +126,11 @@ export function StudyHubVocabularyMenuNav({ onNavigate }: { onNavigate?: () => v
           );
         })}
       </ul>
+      {VOCABULARY_LEVEL_NAV.length > 0 ? (
+        <div className="mt-2">
+          <LevelNavGroup items={VOCABULARY_LEVEL_NAV} onNavigate={onNavigate} />
+        </div>
+      ) : null}
     </nav>
   );
 }

@@ -1,3 +1,7 @@
+import type { VocabularyUnitCatalogEntry } from "@/lib/vocabulary/vocabulary-catalog-types";
+
+export type { VocabularyUnitCatalogEntry } from "@/lib/vocabulary/vocabulary-catalog-types";
+
 export type EVIUElementarySection =
   | "people"
   | "at-home"
@@ -7,20 +11,6 @@ export type EVIUElementarySection =
   | "social"
   | "verbs"
   | "grammar";
-
-export type VocabularyUnitCatalogEntry = {
-  id: string;
-  unitNumber: number;
-  topic: string;
-  topicVi: string;
-  title: string;
-  titleVi: string;
-  description: string;
-  section: EVIUElementarySection;
-  level: "A1";
-  status: "published" | "coming-soon";
-  sourceBook: string;
-};
 
 export const EVIU_ELEMENTARY_SECTION_LABELS: Record<EVIUElementarySection, string> = {
   people: "Con người",

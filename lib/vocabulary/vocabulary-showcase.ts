@@ -1,4 +1,4 @@
-import type { VocabularyUnitCatalogEntry } from "@/lib/vocabulary/eviu-elementary-catalog";
+import type { VocabularyUnitCatalogEntry } from "@/lib/vocabulary/vocabulary-catalog-types";
 import type { CuratedShowcaseIcon, CuratedShowcaseItem } from "@/lib/vocabulary/vocabulary-unit-registry";
 
 const SECTION_ICONS: Record<VocabularyUnitCatalogEntry["section"], CuratedShowcaseIcon> = {
@@ -43,10 +43,31 @@ export function isFeaturedShowcaseEligible(entry: VocabularyUnitCatalogEntry): b
   return !BROKEN_SHOWCASE_IMAGE_URLS.has(resolveShowcaseImageUrl(entry));
 }
 
-function shuffle<T>(items: readonly T[]): T[] {
+function hashString(input: string): number {
+  let hash = 2166136261;
+  for (let i = 0; i < input.length; i += 1) {
+    hash ^= input.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return hash >>> 0;
+}
+
+/** Stable seed — same catalog + UTC day on server and client (avoids hydration mismatch). */
+function showcaseSeed(catalog: readonly VocabularyUnitCatalogEntry[]): number {
+  const ids = catalog
+    .map((entry) => entry.id)
+    .sort()
+    .join("\0");
+  const dayUtc = new Date().toISOString().slice(0, 10);
+  return hashString(`${ids}\n${dayUtc}`);
+}
+
+function seededShuffle<T>(items: readonly T[], seed: number): T[] {
   const next = [...items];
+  let state = seed;
   for (let i = next.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
+    state = (Math.imul(state, 1664525) + 1013904223) >>> 0;
+    const j = state % (i + 1);
     [next[i], next[j]] = [next[j], next[i]];
   }
   return next;
@@ -78,14 +99,15 @@ function catalogToShowcaseItem(
   };
 }
 
-/** Chọn ngẫu nhiên 4 unit cho khối gợi ý trên hub — layout featured + 3 ô phụ. */
+/** Chọn 4 unit cho khối gợi ý trên hub — xoay theo ngày UTC, deterministic khi hydrate. */
 export function buildRandomVocabularyShowcase(
   catalog: readonly VocabularyUnitCatalogEntry[],
 ): CuratedShowcaseItem[] {
-  const shuffled = shuffle(catalog);
+  const seed = showcaseSeed(catalog);
+  const shuffled = seededShuffle(catalog, seed);
+  const eligible = catalog.filter(isFeaturedShowcaseEligible);
   const featuredEntry =
-    shuffled.find(isFeaturedShowcaseEligible) ??
-    shuffle(catalog.filter(isFeaturedShowcaseEligible))[0];
+    shuffled.find(isFeaturedShowcaseEligible) ?? seededShuffle(eligible, seed + 1)[0];
 
   if (!featuredEntry) {
     throw new Error("No vocabulary units with a working showcase image for the featured slot.");

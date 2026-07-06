@@ -1,4 +1,4 @@
-import type { VocabularyUnitCatalogEntry } from "@/lib/vocabulary/eviu-elementary-catalog";
+import type { VocabularyUnitCatalogEntry } from "@/lib/vocabulary/vocabulary-catalog-types";
 import type {
   VocabularyExercise,
   VocabularyTheoryBlock,
@@ -94,7 +94,17 @@ function buildTheory(collocationHtml: string, mistakeHtml: string, principles: P
   ];
 }
 
-export function buildEviuUnit(catalog: VocabularyUnitCatalogEntry, content: UnitContentInput): VocabularyUnit {
+export function buildEviuUnit(
+  catalog: VocabularyUnitCatalogEntry,
+  content: UnitContentInput,
+  options?: { series?: "elementary" | "pre-intermediate" },
+): VocabularyUnit {
+  const series = options?.series ?? "elementary";
+  const seriesLabel =
+    series === "pre-intermediate"
+      ? "English Vocabulary in Use · Pre-Intermediate (4th ed.)"
+      : "English Vocabulary in Use · Elementary (3rd ed.)";
+
   return {
     id: catalog.id,
     topic: catalog.topic,
@@ -105,7 +115,7 @@ export function buildEviuUnit(catalog: VocabularyUnitCatalogEntry, content: Unit
     introVi: content.introVi,
     description: catalog.description,
     sourceBook: catalog.sourceBook,
-    sourceNote: `Unit ${catalog.unitNumber} ${catalog.topic}. Từ vựng và bài tập biên soạn theo chủ đề sách EVIU Elementary.`,
+    sourceNote: `Unit ${catalog.unitNumber} ${catalog.topic}. Từ vựng và bài tập biên soạn theo khung ${seriesLabel}; nội dung diễn đạt gốc, không sao chép sách.`,
     structureSections: content.structureSections,
     theory: buildTheory(content.collocationHtml, content.mistakeHtml, content.principles),
     exercises: content.exercises,

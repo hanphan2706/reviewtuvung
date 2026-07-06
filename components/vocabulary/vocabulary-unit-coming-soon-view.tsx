@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import type { VocabularyUnitCatalogEntry } from "@/lib/vocabulary/eviu-elementary-catalog";
+import type { VocabularyUnitCatalogEntry } from "@/lib/vocabulary/vocabulary-catalog-types";
 import { studyHubSubpageContentClass } from "@/components/study-module/study-hub-shell";
 
 export function VocabularyUnitComingSoonView({ entry }: { entry: VocabularyUnitCatalogEntry }) {
@@ -14,8 +14,8 @@ export function VocabularyUnitComingSoonView({ entry }: { entry: VocabularyUnitC
         <div className="mt-8 rounded-2xl border border-[#E4E4E7] bg-white p-6 shadow-sm">
           <p className="font-serif text-lg font-semibold text-[#000001]">Bộ từ này đang được biên soạn</p>
           <p className="mt-2 text-sm leading-relaxed text-[#47464b]">
-            Unit đã có trong danh mục EVIU Elementary. Lý thuyết, bài tập và thẻ SRS sẽ được bổ sung dần — bạn có thể
-            quay lại sau hoặc thử các unit đã mở.
+            Unit đã có trong danh mục {entry.sourceBook.split("·")[0]?.trim() ?? "EVIU"}. Lý thuyết, bài tập và thẻ SRS
+            sẽ được bổ sung dần — bạn có thể quay lại sau hoặc thử các unit đã mở.
           </p>
           <Link
             href="/tu-hoc/tu-vung/goi-y"
