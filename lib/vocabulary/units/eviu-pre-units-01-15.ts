@@ -1,6 +1,7 @@
 import { EVIU_PRE_INTERMEDIATE_CATALOG } from "../eviu-pre-intermediate-catalog";
 import { filterWordsNotInElementary } from "../eviu-vocabulary-dedup";
 import type { VocabularyUnit } from "../vocabulary-unit-types";
+import { MAX_VOCABULARY_UNIT_EXERCISES } from "../vocabulary-unit-types";
 import {
   bold,
   buildEviuUnit,
@@ -79,7 +80,12 @@ function preUnit(unitNumber: number, content: UnitContentInput): VocabularyUnit 
   const catalog = catalogFor(unitNumber);
   const filteredWords = filterWordsNotInElementary(content.words);
   const structureSections = rebuildStructureSections(content.structureSections, filteredWords.length);
-  const varied = filteredWords.length >= 4 ? buildVariedWordExercises(unitNumber, filteredWords, 8) : [];
+  const manualExercises = content.exercises;
+  const variedSlots = Math.max(0, MAX_VOCABULARY_UNIT_EXERCISES - manualExercises.length);
+  const varied =
+    filteredWords.length >= 4 && variedSlots > 0
+      ? buildVariedWordExercises(unitNumber, filteredWords, variedSlots)
+      : [];
 
   return buildEviuUnit(
     catalog,
@@ -87,7 +93,7 @@ function preUnit(unitNumber: number, content: UnitContentInput): VocabularyUnit 
       ...content,
       words: filteredWords,
       structureSections,
-      exercises: [...content.exercises, ...varied],
+      exercises: [...manualExercises, ...varied],
     },
     { series: "pre-intermediate" },
   );

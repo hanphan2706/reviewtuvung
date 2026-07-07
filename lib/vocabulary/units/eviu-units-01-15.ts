@@ -80,34 +80,6 @@ const U2_WORDS = wordList([
   ["memory", "kỷ niệm", "This photo is a good memory."],
 ]);
 
-const U3_WORDS = wordList([
-  ["head", "đầu", "My head hurts."],
-  ["hair", "tóc", "Her hair is curly."],
-  ["face", "mặt", "Wash your face, please."],
-  ["eye", "mắt", "My eye is itchy."],
-  ["ear", "tai", "I have pain in my ear."],
-  ["nose", "mũi", "My nose is blocked."],
-  ["mouth", "miệng", "Open your mouth."],
-  ["tooth", "răng", "I have a bad tooth."],
-  ["teeth", "răng (số nhiều)", "Brush your teeth twice a day."],
-  ["neck", "cổ", "My neck feels stiff."],
-  ["shoulder", "vai", "He touched my shoulder."],
-  ["arm", "cánh tay", "She hurt her arm."],
-  ["hand", "bàn tay", "Wash your hands first."],
-  ["finger", "ngón tay", "He cut his finger."],
-  ["chest", "ngực", "He has chest pain."],
-  ["stomach", "bụng; dạ dày", "My stomach is full."],
-  ["back", "lưng", "My back hurts after work."],
-  ["leg", "chân", "His leg is injured."],
-  ["knee", "đầu gối", "I fell and hurt my knee."],
-  ["foot", "bàn chân", "My foot is wet."],
-  ["feet", "hai bàn chân", "My feet are cold."],
-  ["toe", "ngón chân", "I hit my toe."],
-  ["heart", "tim", "Running is good for your heart."],
-  ["blink", "chớp mắt", "Blink your eyes slowly.", "VERB"],
-  ["stretch", "duỗi", "I stretch every morning.", "VERB"],
-]);
-
 const U4_WORDS = wordList([
   ["shirt", "áo sơ mi", "He wears a white shirt."],
   ["T-shirt", "áo thun", "I bought a new T-shirt."],
@@ -443,19 +415,6 @@ export const EVIU_UNITS_01_15: VocabularyUnit[] = [
     ],
     words: U2_WORDS,
     exercises: buildVariedWordExercises(2, U2_WORDS),
-  }),
-  unit(3, {
-    introVi: "Từ vựng chỉ bộ phận cơ thể để mô tả ngoại hình, cơn đau và thói quen chăm sóc sức khỏe.",
-    structureSections: [{ label: "Main body parts", wordCount: 11 }, { label: "Face and senses", wordCount: 8 }, { label: "Body actions", wordCount: 6 }],
-    collocationHtml: `${purple("shake hands")}, ${purple("close your eyes")}, ${purple("brush your teeth")} là cụm giao tiếp phổ biến.`,
-    mistakeHtml: `Từ ${bold("hair")} thường không đếm được; phân biệt ${bold("leg")} (chân) và ${bold("foot")} (bàn chân).`,
-    principles: [
-      { title: "Learn from top to toe", body: `Học theo trật tự ${purple("head")} đến ${purple("toe")} giúp nhớ nhanh.`, examples: [ex("My head hurts.", "Đầu tôi bị đau."), ex("I hurt my toe.", "Tôi bị đau ngón chân.")] },
-      { title: "Use possessive adjectives", body: `Khi nói về cơ thể, dùng ${purple("my/your/his")} thay vì mạo từ.`, examples: [ex("Wash your hands.", "Hãy rửa tay của bạn."), ex("He broke his arm.", "Anh ấy bị gãy tay.")] },
-      { title: "Pair body parts with actions", body: `Gắn từ với hành động như ${purple("blink your eyes")} hoặc ${purple("stretch your legs")}.`, examples: [ex("Please blink slowly.", "Làm ơn chớp mắt chậm lại."), ex("I stretch my legs daily.", "Tôi duỗi chân mỗi ngày.")] },
-    ],
-    words: U3_WORDS,
-    exercises: buildVariedWordExercises(3, U3_WORDS),
   }),
   unit(4, {
     introVi: "Từ vựng về quần áo và phụ kiện để mô tả trang phục, kích cỡ và cách mặc phù hợp từng dịp.",

@@ -32,7 +32,12 @@ function unit(
   section: EVIUElementarySection,
   status: VocabularyUnitCatalogEntry["status"] = "published",
 ): VocabularyUnitCatalogEntry {
-  const id = unitNumber === 10 ? "food-a1" : `eviu-el-${String(unitNumber).padStart(2, "0")}-${slug}`;
+  const id =
+    unitNumber === 3
+      ? "body-a1"
+      : unitNumber === 10
+        ? "food-a1"
+        : `eviu-el-${String(unitNumber).padStart(2, "0")}-${slug}`;
   return {
     id,
     unitNumber,

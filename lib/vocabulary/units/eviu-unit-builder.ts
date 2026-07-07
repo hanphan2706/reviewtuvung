@@ -5,6 +5,7 @@ import type {
   VocabularyUnit,
   VocabularyWordPreset,
 } from "@/lib/vocabulary/vocabulary-unit-types";
+import { MAX_VOCABULARY_UNIT_EXERCISES } from "@/lib/vocabulary/vocabulary-unit-types";
 
 const B = "<b>";
 const _B = "</b>";
@@ -17,6 +18,18 @@ export function purple(term: string): string {
 
 export function bold(term: string): string {
   return `${B}${term}${_B}`;
+}
+
+/** JSON book units store legacy `${purple("…")}` / `${bold("…")}` — render to HTML. */
+export function renderBookTemplateHtml(text: string): string {
+  if (!text.includes("${")) return text;
+  return text
+    .replace(/\$\{purple\("((?:\\"|[^"])*)"\)\}/g, (_, inner: string) =>
+      purple(inner.replace(/\\"/g, '"')),
+    )
+    .replace(/\$\{bold\("((?:\\"|[^"])*)"\)\}/g, (_, inner: string) =>
+      bold(inner.replace(/\\"/g, '"')),
+    );
 }
 
 export type WordInput = {
@@ -99,6 +112,12 @@ export function buildEviuUnit(
   content: UnitContentInput,
   options?: { series?: "elementary" | "pre-intermediate" },
 ): VocabularyUnit {
+  if (content.exercises.length > MAX_VOCABULARY_UNIT_EXERCISES) {
+    throw new Error(
+      `Unit ${catalog.unitNumber} (${catalog.id}) has ${content.exercises.length} exercises; max is ${MAX_VOCABULARY_UNIT_EXERCISES}.`,
+    );
+  }
+
   const series = options?.series ?? "elementary";
   const seriesLabel =
     series === "pre-intermediate"
@@ -227,11 +246,12 @@ export function buildVariedWordExercises(
 ): VocabularyExercise[] {
   if (words.length < 4) return [];
 
+  const limit = Math.min(count, MAX_VOCABULARY_UNIT_EXERCISES);
   const exercises: VocabularyExercise[] = [];
   const usedTerms = new Set<string>();
   let exerciseIndex = 1;
 
-  for (let i = 0; i < words.length && exercises.length < count; i += 1) {
+  for (let i = 0; i < words.length && exercises.length < limit; i += 1) {
     const target = words[i];
     const termKey = target.term.toLowerCase();
     if (usedTerms.has(termKey)) continue;
@@ -298,7 +318,7 @@ export function buildVariedWordExercises(
     exercises.push(created);
   }
 
-  return exercises.slice(0, count);
+  return exercises.slice(0, limit);
 }
 
 export { B, _B, P, _P };

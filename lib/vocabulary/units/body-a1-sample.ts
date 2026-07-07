@@ -1,0 +1,290 @@
+import type { VocabularyUnit } from "@/lib/vocabulary/vocabulary-unit-types";
+import { applyExercisePromptVi } from "@/lib/vocabulary/units/eviu-elementary-curated-exercises-01-15";
+import { SAMPLE_UNITS_PROMPT_VI } from "@/lib/vocabulary/units/eviu-elementary-curated-prompt-vi";
+
+const B = "<b>";
+const _B = "</b>";
+const P = '<span style="color: #4b2876">';
+const _P = "</span>";
+
+/**
+ * Unit 3 — Parts of the body (EVIU Elementary, 3rd ed.).
+ * Lý thuyết và từ vựng theo các mục A–F; từ SRS = từ in đậm trong unit.
+ * Bài tập: 3.1–3.4 từ sách (tối đa 20 câu / unit); 3.5 thay bằng ghép cặp.
+ */
+export const BODY_A1_SAMPLE_UNIT: VocabularyUnit = {
+  id: "body-a1",
+  topic: "Parts of the body",
+  topicVi: "Các bộ phận cơ thể",
+  level: "A1",
+  title: "Parts of the body",
+  titleVi: "Các bộ phận cơ thể",
+  introVi: "Tên các bộ phận cơ thể thường dùng khi mô tả ngoại hình hoặc nói về sức khỏe.",
+  description: "Tên các bộ phận cơ thể thường dùng khi mô tả hoặc nói về sức khỏe.",
+  sourceBook: "English Vocabulary in Use · Elementary · Unit 3",
+  sourceNote: "Unit 3 Parts of the body. Từ vựng theo từ in đậm; bài tập 3.1–3.4 từ sách.",
+  structureSections: [
+    { label: "Head and face", wordCount: 9 },
+    { label: "Arm and leg", wordCount: 11 },
+    { label: "Rest of body", wordCount: 7 },
+    { label: "Inside the body", wordCount: 3 },
+  ],
+  theory: [
+    {
+      type: "feature-cards",
+      cards: [
+        {
+          icon: "link",
+          title: "Số ít và số nhiều",
+          description: `${P}one foot – two feet${_P}; ${P}one tooth – two teeth${_P}.<br>${P}Hair${_P} là danh từ không đếm: My hair is very long – I must cut it soon.`,
+        },
+        {
+          icon: "lightbulb",
+          title: "Lỗi thường gặp",
+          description: `Thường dùng ${P}my / your / his / her${_P} với bộ phận cơ thể.<br>Katie is washing ${P}her hair${_P}. ${B}[NOT Jane is washing the hair]${_B}<br>I have a pain in ${P}my leg${_P}. ${B}[NOT I have a pain in the leg]${_B}`,
+        },
+      ],
+    },
+    {
+      type: "heading",
+      text: "Nguyên tắc sử dụng cơ bản",
+    },
+    {
+      type: "principles",
+      items: [
+        {
+          number: "01",
+          title: "HEAD AND FACE",
+          body: `${P}Hair${_P}, ${P}eye${_P}, ${P}nose${_P}, ${P}mouth${_P}, ${P}ear${_P}, ${P}lip${_P}, ${P}neck${_P} và ${P}tooth / teeth${_P} mô tả đầu và mặt.`,
+          exampleHtml:
+            "She has long hair and blue eyes. (Cô ấy có tóc dài và mắt xanh.)<br>Brush your teeth after meals. (Đánh răng sau bữa ăn.)<br>He has pain in his ear. (Anh ấy bị đau tai.)",
+        },
+        {
+          number: "02",
+          title: "ARM AND LEG",
+          body: `${P}Arm${_P}, ${P}hand${_P}, ${P}finger${_P}, ${P}thumb${_P}, ${P}shoulder${_P}, ${P}leg${_P}, ${P}knee${_P}, ${P}foot / feet${_P} và ${P}toe${_P} mô tả tay và chân.`,
+          exampleHtml:
+            "A hand has five fingers. (Một bàn tay có năm ngón.)<br>A foot has five toes. (Một bàn chân có năm ngón.)<br>She hurt her knee when she fell. (Cô ấy bị đau đầu gối khi ngã.)",
+        },
+        {
+          number: "03",
+          title: "REST OF BODY",
+          body: `${P}Chest${_P}, ${P}back${_P}, ${P}side${_P}, ${P}waist${_P}, ${P}stomach${_P}, ${P}hip${_P} và ${P}skin${_P} (da) bao phủ cơ thể.`,
+          exampleHtml:
+            "I have a pain in my side. (Tôi bị đau bên sườn.)<br>We have skin covering our bodies. (Chúng ta có da bao bọc cơ thể.)",
+        },
+        {
+          number: "04",
+          title: "INSIDE THE BODY",
+          body: `${P}Heart${_P}, ${P}brain${_P} và ${P}blood${_P} là từ vựng nội tạng cơ bản ở trình độ này.`,
+          exampleHtml:
+            "The heart is a symbol of love. (Trái tim là biểu tượng của tình yêu.)<br>You think with your brain. (Bạn suy nghĩ bằng não.)<br>Your blood type can be A, B, AB or O. (Nhóm máu có thể là A, B, AB hoặc O.)",
+        },
+      ],
+    },
+  ],
+  exercises: applyExercisePromptVi(
+    [
+    {
+      type: "fill-blank",
+      id: "ex-3-1-1",
+      label: "3.1 · Sắp xếp chữ cái",
+      prompt: "eken → ___",
+      answer: "knee",
+      alternatives: ["Knee"],
+      hint: "Chữ cái bị xáo trộn — gõ từ đúng.",
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-1-2",
+      label: "3.1 · Sắp xếp chữ cái",
+      prompt: "osen → ___",
+      answer: "nose",
+      alternatives: ["Nose"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-1-3",
+      label: "3.1 · Sắp xếp chữ cái",
+      prompt: "rathe → ___",
+      answer: "heart",
+      alternatives: ["Heart"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-1-4",
+      label: "3.1 · Sắp xếp chữ cái",
+      prompt: "hamcost → ___",
+      answer: "stomach",
+      alternatives: ["Stomach"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-1-5",
+      label: "3.1 · Sắp xếp chữ cái",
+      prompt: "olderush → ___",
+      answer: "shoulder",
+      alternatives: ["Shoulder"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-1-8",
+      label: "3.1 · Sắp xếp chữ cái",
+      prompt: "buhtm → ___",
+      answer: "thumb",
+      alternatives: ["Thumb"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-2-1",
+      label: "3.2 · Hoàn thành câu",
+      prompt: "A foot has five ___.",
+      answer: "toes",
+      alternatives: ["Toes"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-2-2",
+      label: "3.2 · Hoàn thành câu",
+      prompt: "An adult has 32 ___.",
+      answer: "teeth",
+      alternatives: ["Teeth"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-2-3",
+      label: "3.2 · Hoàn thành câu",
+      prompt: "You smell with your ___.",
+      answer: "nose",
+      alternatives: ["Nose"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-2-4",
+      label: "3.2 · Hoàn thành câu",
+      prompt: "The ___ is a symbol of love.",
+      answer: "heart",
+      alternatives: ["Heart"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-2-7",
+      label: "3.2 · Hoàn thành câu",
+      prompt: "Your ___ type can be A, B, AB or O.",
+      answer: "blood",
+      alternatives: ["Blood"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-2-8",
+      label: "3.2 · Hoàn thành câu",
+      prompt: "You think with your ___.",
+      answer: "brain",
+      alternatives: ["Brain"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-3-1",
+      label: "3.3 · Sửa lỗi",
+      prompt: "That woman has got very big foots. → That woman has got very big ___.",
+      answer: "feet",
+      alternatives: ["Feet"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-3-2",
+      label: "3.3 · Sửa lỗi",
+      prompt: "My grandfather has a pain in the shoulder. → My grandfather has a pain in ___ shoulder.",
+      answer: "his",
+      alternatives: ["His", "my", "My"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-3-3",
+      label: "3.3 · Sửa lỗi",
+      prompt: "The baby has already got two tooths. → The baby has already got two ___.",
+      answer: "teeth",
+      alternatives: ["Teeth"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-3-5",
+      label: "3.3 · Sửa lỗi",
+      prompt: "My hairs are dirty. → My ___ is dirty.",
+      answer: "hair",
+      alternatives: ["Hair"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-4-1",
+      label: "3.4 · Danh từ ghép",
+      prompt: "___ball (môn thể thao)",
+      answer: "foot",
+      alternatives: ["Foot"],
+      hint: "Gõ từ chỉ bộ phận cơ thể để tạo football.",
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-4-3",
+      label: "3.4 · Danh từ ghép",
+      prompt: "___brush",
+      answer: "hair",
+      alternatives: ["Hair"],
+    },
+    {
+      type: "fill-blank",
+      id: "ex-3-4-5",
+      label: "3.4 · Danh từ ghép",
+      prompt: "___bag",
+      answer: "hand",
+      alternatives: ["Hand"],
+    },
+    {
+      type: "match",
+      id: "ex-3-5-1",
+      instruction: "3.5 · Ghép bộ phận cơ thể với nghĩa tiếng Việt",
+      pairs: [
+        { left: "knee", right: "đầu gối" },
+        { left: "thumb", right: "ngón tay cái" },
+        { left: "waist", right: "eo" },
+        { left: "brain", right: "não" },
+        { left: "stomach", right: "dạ dày; bụng" },
+        { left: "shoulder", right: "vai" },
+      ],
+    },
+    ],
+    SAMPLE_UNITS_PROMPT_VI,
+  ),
+  words: [
+    { id: "w-hair", term: "hair", partOfSpeech: "NOUN", definition: "tóc", example: "My hair is very long – I must cut it soon." },
+    { id: "w-eye", term: "eye", partOfSpeech: "NOUN", definition: "mắt", example: "She has blue eyes." },
+    { id: "w-nose", term: "nose", partOfSpeech: "NOUN", definition: "mũi", example: "You smell with your nose." },
+    { id: "w-tooth", term: "tooth", partOfSpeech: "NOUN", definition: "răng (số ít)", example: "one tooth – two teeth" },
+    { id: "w-teeth", term: "teeth", partOfSpeech: "NOUN", definition: "răng (số nhiều)", example: "An adult has 32 teeth." },
+    { id: "w-mouth", term: "mouth", partOfSpeech: "NOUN", definition: "miệng", example: "Open your mouth, please." },
+    { id: "w-ear", term: "ear", partOfSpeech: "NOUN", definition: "tai", example: "You hear with your ears." },
+    { id: "w-lip", term: "lip", partOfSpeech: "NOUN", definition: "môi", example: "She has red lips." },
+    { id: "w-neck", term: "neck", partOfSpeech: "NOUN", definition: "cổ", example: "He wore a scarf around his neck." },
+    { id: "w-shoulder", term: "shoulder", partOfSpeech: "NOUN", definition: "vai", example: "The child sat on her father's shoulders." },
+    { id: "w-nail", term: "nail", partOfSpeech: "NOUN", definition: "móng tay", example: "She painted her nails red." },
+    { id: "w-leg", term: "leg", partOfSpeech: "NOUN", definition: "chân", example: "I have a pain in my leg." },
+    { id: "w-knee", term: "knee", partOfSpeech: "NOUN", definition: "đầu gối", example: "She hurt her knee." },
+    { id: "w-thumb", term: "thumb", partOfSpeech: "NOUN", definition: "ngón tay cái", example: "Hold it between your thumb and finger." },
+    { id: "w-finger", term: "finger", partOfSpeech: "NOUN", definition: "ngón tay", example: "A hand has five fingers." },
+    { id: "w-foot", term: "foot", partOfSpeech: "NOUN", definition: "bàn chân (số ít)", example: "one foot – two feet" },
+    { id: "w-feet", term: "feet", partOfSpeech: "NOUN", definition: "bàn chân (số nhiều)", example: "That woman has got very big feet." },
+    { id: "w-hand", term: "hand", partOfSpeech: "NOUN", definition: "bàn tay", example: "A hand has five fingers." },
+    { id: "w-toe", term: "toe", partOfSpeech: "NOUN", definition: "ngón chân", example: "A foot has five toes." },
+    { id: "w-arm", term: "arm", partOfSpeech: "NOUN", definition: "cánh tay", example: "He broke his arm." },
+    { id: "w-chest", term: "chest", partOfSpeech: "NOUN", definition: "ngực", example: "He has pain in his chest." },
+    { id: "w-back", term: "back", partOfSpeech: "NOUN", definition: "lưng", example: "My back hurts after work." },
+    { id: "w-side", term: "side", partOfSpeech: "NOUN", definition: "bên sườn", example: "I have a pain in my side." },
+    { id: "w-waist", term: "waist", partOfSpeech: "NOUN", definition: "eo", example: "The belt is too tight around my waist." },
+    { id: "w-stomach", term: "stomach", partOfSpeech: "NOUN", definition: "dạ dày; bụng", example: "My stomach is full." },
+    { id: "w-skin", term: "skin", partOfSpeech: "NOUN", definition: "da", example: "We have skin covering our bodies." },
+    { id: "w-hip", term: "hip", partOfSpeech: "NOUN", definition: "hông", example: "She put her hands on her hips." },
+    { id: "w-heart", term: "heart", partOfSpeech: "NOUN", definition: "tim", example: "The heart is a symbol of love." },
+    { id: "w-brain", term: "brain", partOfSpeech: "NOUN", definition: "não", example: "You think with your brain." },
+    { id: "w-blood", term: "blood", partOfSpeech: "NOUN", definition: "máu", example: "Your blood type can be A, B, AB or O." },
+  ],
+};

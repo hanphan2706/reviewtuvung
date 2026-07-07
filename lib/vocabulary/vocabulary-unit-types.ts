@@ -48,6 +48,8 @@ export type VocabularyExerciseFillBlank = {
   id: string;
   label?: string;
   prompt: string;
+  /** Giải thích / dịch tiếng Việt ngắn hiển thị dưới câu hỏi. */
+  promptVi?: string;
   answer: string;
   alternatives?: readonly string[];
   hint?: string;
@@ -60,6 +62,8 @@ export type VocabularyExerciseMcq = {
   id: string;
   label?: string;
   question: string;
+  /** Giải thích / dịch tiếng Việt ngắn hiển thị dưới câu hỏi. */
+  promptVi?: string;
   options: readonly { key: string; label: string }[];
   correctKey: string;
   explanation?: string;
@@ -69,6 +73,8 @@ export type VocabularyExerciseMatch = {
   type: "match";
   id: string;
   instruction: string;
+  /** Giải thích / dịch tiếng Việt ngắn hiển thị dưới hướng dẫn. */
+  promptVi?: string;
   pairs: readonly { left: string; right: string }[];
 };
 
@@ -76,6 +82,9 @@ export type VocabularyExercise =
   | VocabularyExerciseFillBlank
   | VocabularyExerciseMcq
   | VocabularyExerciseMatch;
+
+/** Mỗi unit từ vựng tối đa 20 bài tập (một match = một câu). */
+export const MAX_VOCABULARY_UNIT_EXERCISES = 20;
 
 /**
  * Unit lesson = lý thuyết + bài tập + preset SRS words.

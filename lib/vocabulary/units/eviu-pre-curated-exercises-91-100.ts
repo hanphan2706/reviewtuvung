@@ -1,0 +1,561 @@
+import { assertExerciseCount, cloze, match, mcq } from "./eviu-elementary-curated-helpers";
+import type { VocabularyExercise } from "@/lib/vocabulary/vocabulary-unit-types";
+
+const UNIT_91: VocabularyExercise[] = [
+  match("ex-pre-91-1", "91 · Ghép từ với nghĩa", [
+    { left: "carefully", right: "một cách cẩn thận, chú ý chi tiết" },
+    { left: "efficiently", right: "một cách hiệu quả, ít tốn thời gian/công sức" },
+    { left: "hardly ever", right: "hầu như không bao giờ" },
+    { left: "frequently", right: "thường xuyên, với tần suất cao" },
+    { left: "currently", right: "hiện tại, vào lúc này" },
+    { left: "extremely", right: "cực kỳ, ở mức rất cao" },
+  ]),
+  cloze("ex-pre-91-2", "91 · Điền từ", "Please read the instructions ___.", "carefully", ["Carefully"]),
+  cloze("ex-pre-91-3", "91 · Điền từ", "She manages her tasks ___.", "efficiently", ["Efficiently"]),
+  cloze("ex-pre-91-4", "91 · Điền từ", "Could you explain that ___?", "clearly", ["Clearly"]),
+  cloze("ex-pre-91-5", "91 · Điền cụm", "We ___ eat fast food.", "hardly ever", ["Hardly ever"]),
+  cloze("ex-pre-91-6", "91 · Điền từ", "This error occurs ___.", "frequently", ["Frequently"]),
+  cloze("ex-pre-91-7", "91 · Điền từ", "We are ___ reviewing your application.", "currently", ["Currently"]),
+  cloze("ex-pre-91-8", "91 · Điền từ", "They ___ reached an agreement.", "eventually", ["Eventually"]),
+  mcq("ex-pre-91-9", "91 · Chọn đáp án", "Từ nào có nghĩa là 'hầu như không bao giờ'?", "b", [
+    { key: "a", label: "constantly" },
+    { key: "b", label: "hardly ever" },
+    { key: "c", label: "efficiently" },
+    { key: "d", label: "absolutely" },
+  ]),
+  mcq("ex-pre-91-10", "91 · Chọn đáp án", "Từ nào chỉ tần suất thấp, không đều đặn?", "c", [
+    { key: "a", label: "constantly" },
+    { key: "b", label: "frequently" },
+    { key: "c", label: "occasionally" },
+    { key: "d", label: "currently" },
+  ]),
+  mcq("ex-pre-91-11", "91 · Chọn đáp án", "Từ nào nhấn mạnh mức độ rất cao?", "d", [
+    { key: "a", label: "fairly" },
+    { key: "b", label: "roughly" },
+    { key: "c", label: "almost" },
+    { key: "d", label: "extremely" },
+  ]),
+  mcq("ex-pre-91-12", "91 · Chọn đáp án", "Từ nào có nghĩa 'gần như, suýt nữa'?", "a", [
+    { key: "a", label: "almost" },
+    { key: "b", label: "absolutely" },
+    { key: "c", label: "barely" },
+    { key: "d", label: "recently" },
+  ]),
+  mcq("ex-pre-91-13", "91 · Chọn đáp án", "Từ nào chỉ thời điểm trước đó?", "b", [
+    { key: "a", label: "currently" },
+    { key: "b", label: "previously" },
+    { key: "c", label: "recently" },
+    { key: "d", label: "eventually" },
+  ]),
+  mcq("ex-pre-91-14", "91 · Chọn đáp án", "Từ nào có nghĩa 'một cách ước chừng'?", "c", [
+    { key: "a", label: "clearly" },
+    { key: "b", label: "politely" },
+    { key: "c", label: "roughly" },
+    { key: "d", label: "fairly" },
+  ]),
+];
+
+const UNIT_92: VocabularyExercise[] = [
+  match("ex-pre-92-1", "92 · Ghép từ với nghĩa", [
+    { left: "first of all", right: "trước hết, điều đầu tiên cần nói" },
+    { left: "meanwhile", right: "trong khi đó, cùng lúc ở diễn biến khác" },
+    { left: "simultaneously", right: "đồng thời, xảy ra cùng lúc" },
+    { left: "in the meantime", right: "trong lúc chờ đợi, tạm thời" },
+    { left: "from then on", right: "từ thời điểm đó trở đi" },
+    { left: "ultimately", right: "rốt cuộc, xét đến cùng" },
+  ]),
+  cloze("ex-pre-92-2", "92 · Điền cụm", "___, let's define the problem.", "First of all", ["first of all"]),
+  cloze("ex-pre-92-3", "92 · Điền từ", "The data was cleaned and ___ analyzed.", "subsequently", ["Subsequently"]),
+  cloze("ex-pre-92-4", "92 · Điền từ", "I prepared dinner; ___, he set the table.", "meanwhile", ["Meanwhile"]),
+  cloze("ex-pre-92-5", "92 · Điền từ", "Both systems were updated ___.", "simultaneously", ["Simultaneously"]),
+  cloze("ex-pre-92-6", "92 · Điền cụm", "The report will be ready tomorrow; ___, review the draft.", "in the meantime", ["In the meantime"]),
+  cloze("ex-pre-92-7", "92 · Điền từ", "___, I found the software confusing.", "At first", ["at first"]),
+  cloze("ex-pre-92-8", "92 · Điền từ", "___, submit your answer.", "Finally", ["finally"]),
+  mcq("ex-pre-92-9", "92 · Chọn đáp án", "Cụm nào phù hợp nhất để mở đầu một quy trình?", "a", [
+    { key: "a", label: "first of all" },
+    { key: "b", label: "from then on" },
+    { key: "c", label: "afterwards" },
+    { key: "d", label: "ultimately" },
+  ]),
+  mcq("ex-pre-92-10", "92 · Chọn đáp án", "Từ nào chỉ bước tiếp theo trong trình tự?", "b", [
+    { key: "a", label: "initially" },
+    { key: "b", label: "next" },
+    { key: "c", label: "beforehand" },
+    { key: "d", label: "earlier" },
+  ]),
+  mcq("ex-pre-92-11", "92 · Chọn đáp án", "Từ nào nhấn mạnh kết quả sau quá trình dài?", "c", [
+    { key: "a", label: "finally" },
+    { key: "b", label: "then" },
+    { key: "c", label: "eventually" },
+    { key: "d", label: "next" },
+  ]),
+  mcq("ex-pre-92-12", "92 · Chọn đáp án", "Từ nào có nghĩa 'trước đó, chuẩn bị từ sớm'?", "d", [
+    { key: "a", label: "afterwards" },
+    { key: "b", label: "later on" },
+    { key: "c", label: "meanwhile" },
+    { key: "d", label: "beforehand" },
+  ]),
+  mcq("ex-pre-92-13", "92 · Chọn đáp án", "Từ nào chỉ thời điểm sớm hơn?", "a", [
+    { key: "a", label: "earlier" },
+    { key: "b", label: "later on" },
+    { key: "c", label: "subsequently" },
+    { key: "d", label: "ultimately" },
+  ]),
+  mcq("ex-pre-92-14", "92 · Chọn đáp án", "Từ nào chỉ giai đoạn đầu tiên?", "b", [
+    { key: "a", label: "finally" },
+    { key: "b", label: "initially" },
+    { key: "c", label: "afterwards" },
+    { key: "d", label: "from then on" },
+  ]),
+];
+
+const UNIT_93: VocabularyExercise[] = [
+  match("ex-pre-93-1", "93 · Ghép từ với nghĩa", [
+    { left: "moreover", right: "hơn nữa, bổ sung ý theo hướng tăng cường" },
+    { left: "however", right: "tuy nhiên, chuyển sang ý đối lập" },
+    { left: "nevertheless", right: "dù vậy, mặc dù thế" },
+    { left: "whereas", right: "trong khi đó, dùng để nêu hai ý trái nhau" },
+    { left: "despite", right: "mặc cho, bất chấp" },
+    { left: "alternatively", right: "hoặc là, như một lựa chọn khác" },
+  ]),
+  cloze("ex-pre-93-2", "93 · Điền từ", "The course is practical; ___, it is affordable.", "moreover", ["Moreover"]),
+  cloze("ex-pre-93-3", "93 · Điền cụm", "___, the app supports offline mode.", "In addition", ["in addition"]),
+  cloze("ex-pre-93-4", "93 · Điền từ", "The design looks good; ___, it is hard to maintain.", "however", ["However"]),
+  cloze("ex-pre-93-5", "93 · Điền từ", "The task was difficult; ___, we finished it.", "nevertheless", ["Nevertheless"]),
+  cloze("ex-pre-93-6", "93 · Điền từ", "My sister likes cities, ___ I prefer small towns.", "whereas", ["Whereas"]),
+  cloze("ex-pre-93-7", "93 · Điền từ", "___ the delay, we arrived on time.", "Despite", ["despite"]),
+  cloze("ex-pre-93-8", "93 · Điền từ", "Let's email them ___.", "instead", ["Instead"]),
+  mcq("ex-pre-93-9", "93 · Chọn đáp án", "Từ nào phù hợp nhất để chuyển sang ý đối lập?", "c", [
+    { key: "a", label: "furthermore" },
+    { key: "b", label: "as well as" },
+    { key: "c", label: "however" },
+    { key: "d", label: "moreover" },
+  ]),
+  mcq("ex-pre-93-10", "93 · Chọn đáp án", "Cụm nào bổ sung thông tin theo hướng tăng cường?", "a", [
+    { key: "a", label: "furthermore" },
+    { key: "b", label: "in contrast" },
+    { key: "c", label: "although" },
+    { key: "d", label: "instead" },
+  ]),
+  mcq("ex-pre-93-11", "93 · Chọn đáp án", "Cụm nào nhấn mạnh hơn 'although'?", "b", [
+    { key: "a", label: "whereas" },
+    { key: "b", label: "even though" },
+    { key: "c", label: "moreover" },
+    { key: "d", label: "besides" },
+  ]),
+  mcq("ex-pre-93-12", "93 · Chọn đáp án", "Cụm nào đối chiếu hai phương pháp khác nhau?", "d", [
+    { key: "a", label: "in addition" },
+    { key: "b", label: "as well as" },
+    { key: "c", label: "furthermore" },
+    { key: "d", label: "by contrast" },
+  ]),
+  mcq("ex-pre-93-13", "93 · Chọn đáp án", "Cấu trúc nào diễn đạt 'không chỉ ... mà còn ...'?", "c", [
+    { key: "a", label: "as well as" },
+    { key: "b", label: "in spite of" },
+    { key: "c", label: "not only ... but also" },
+    { key: "d", label: "on the other hand" },
+  ]),
+  mcq("ex-pre-93-14", "93 · Chọn đáp án", "Cụm nào có nghĩa 'mặt khác, xét ở khía cạnh đối lập'?", "a", [
+    { key: "a", label: "on the other hand" },
+    { key: "b", label: "besides" },
+    { key: "c", label: "moreover" },
+    { key: "d", label: "in addition" },
+  ]),
+];
+
+const UNIT_94: VocabularyExercise[] = [
+  match("ex-pre-94-1", "94 · Ghép từ với nghĩa", [
+    { left: "because of", right: "bởi vì, do nguyên nhân nào đó" },
+    { left: "due to", right: "do, vì (thường dùng văn viết trang trọng hơn)" },
+    { left: "therefore", right: "vì vậy, do đó" },
+    { left: "as a result", right: "kết quả là" },
+    { left: "in order to", right: "để, nhằm mục đích" },
+    { left: "unless", right: "trừ khi, nếu không thì" },
+  ]),
+  cloze("ex-pre-94-2", "94 · Điền cụm", "The match was canceled ___ heavy rain.", "because of", ["Because of"]),
+  cloze("ex-pre-94-3", "94 · Điền cụm", "The delay was ___ technical issues.", "due to", ["Due to"]),
+  cloze("ex-pre-94-4", "94 · Điền từ", "The system was overloaded; ___, response time increased.", "therefore", ["Therefore"]),
+  cloze("ex-pre-94-5", "94 · Điền cụm", "Sales improved; ___, we hired more staff.", "as a result", ["As a result"]),
+  cloze("ex-pre-94-6", "94 · Điền cụm", "She took notes ___ remember key points.", "in order to", ["In order to"]),
+  cloze("ex-pre-94-7", "94 · Điền cụm", "Take an umbrella ___ it rains.", "in case", ["In case"]),
+  cloze("ex-pre-94-8", "94 · Điền từ", "Submit today; ___, your request may be rejected.", "otherwise", ["Otherwise"]),
+  mcq("ex-pre-94-9", "94 · Chọn đáp án", "Từ nào diễn đạt kết quả theo phong cách trang trọng?", "b", [
+    { key: "a", label: "if" },
+    { key: "b", label: "therefore" },
+    { key: "c", label: "in case" },
+    { key: "d", label: "unless" },
+  ]),
+  mcq("ex-pre-94-10", "94 · Chọn đáp án", "Cụm nào có nghĩa 'với điều kiện là'?", "c", [
+    { key: "a", label: "because of" },
+    { key: "b", label: "as a result" },
+    { key: "c", label: "provided that" },
+    { key: "d", label: "in order to" },
+  ]),
+  mcq("ex-pre-94-11", "94 · Chọn đáp án", "Cụm nào có nghĩa 'miễn là'?", "a", [
+    { key: "a", label: "as long as" },
+    { key: "b", label: "due to" },
+    { key: "c", label: "consequently" },
+    { key: "d", label: "otherwise" },
+  ]),
+  mcq("ex-pre-94-12", "94 · Chọn đáp án", "Từ nào diễn đạt hệ quả trang trọng tương đương 'therefore'?", "d", [
+    { key: "a", label: "since" },
+    { key: "b", label: "if" },
+    { key: "c", label: "in case" },
+    { key: "d", label: "consequently" },
+  ]),
+  mcq("ex-pre-94-13", "94 · Chọn đáp án", "Cụm nào diễn đạt mục đích bằng mệnh đề?", "b", [
+    { key: "a", label: "because of" },
+    { key: "b", label: "so that" },
+    { key: "c", label: "as a result" },
+    { key: "d", label: "thus" },
+  ]),
+  mcq("ex-pre-94-14", "94 · Chọn đáp án", "Từ nào có nghĩa 'trừ khi, nếu không thì'?", "a", [
+    { key: "a", label: "unless" },
+    { key: "b", label: "since" },
+    { key: "c", label: "therefore" },
+    { key: "d", label: "in case" },
+  ]),
+];
+
+const UNIT_95: VocabularyExercise[] = [
+  match("ex-pre-95-1", "95 · Ghép từ với nghĩa", [
+    { left: "formal register", right: "văn phong trang trọng dùng trong bối cảnh nghiêm túc" },
+    { left: "informal register", right: "văn phong thân mật trong giao tiếp gần gũi" },
+    { left: "contraction", right: "dạng rút gọn như I'm, don't" },
+    { left: "phrasal verb", right: "cụm động từ gồm động từ + tiểu từ/giới từ" },
+    { left: "slang", right: "từ lóng, cách nói không chuẩn mực" },
+    { left: "neutral tone", right: "giọng điệu trung tính, không quá trang trọng hay suồng sã" },
+  ]),
+  cloze("ex-pre-95-2", "95 · Điền cụm", "___ is expected in job applications.", "Formal register", ["formal register"]),
+  cloze("ex-pre-95-3", "95 · Điền từ", "Avoid too many ___ in formal emails.", "contractions", ["Contractions", "contraction"]),
+  cloze("ex-pre-95-4", "95 · Điền cụm", "___ are common in spoken English.", "Phrasal verbs", ["Phrasal verbs", "phrasal verb"]),
+  cloze("ex-pre-95-5", "95 · Điền từ", "The phrase sounds too ___ for a report.", "colloquial", ["Colloquial"]),
+  cloze("ex-pre-95-6", "95 · Điền cụm", "Use a ___ when writing to a new client.", "neutral tone", ["Neutral tone"]),
+  cloze("ex-pre-95-7", "95 · Điền cụm", "Please and thank you are basic ___.", "polite expressions", ["Polite expressions", "polite expression"]),
+  cloze("ex-pre-95-8", "95 · Điền cụm", "___ can build trust quickly.", "Professional wording", ["professional wording"]),
+  mcq("ex-pre-95-9", "95 · Chọn đáp án", "Khái niệm nào chỉ sự phù hợp văn phong theo bối cảnh?", "a", [
+    { key: "a", label: "appropriateness" },
+    { key: "b", label: "slang" },
+    { key: "c", label: "contraction" },
+    { key: "d", label: "phrasal verb" },
+  ]),
+  mcq("ex-pre-95-10", "95 · Chọn đáp án", "Cụm nào chỉ danh xưng lịch sự như Mr, Ms, Dr?", "c", [
+    { key: "a", label: "greeting line" },
+    { key: "b", label: "closing line" },
+    { key: "c", label: "courtesy title" },
+    { key: "d", label: "hedging language" },
+  ]),
+  mcq("ex-pre-95-11", "95 · Chọn đáp án", "Cụm nào chỉ lệch tông văn phong so với bối cảnh?", "d", [
+    { key: "a", label: "neutral tone" },
+    { key: "b", label: "polite expression" },
+    { key: "c", label: "formal register" },
+    { key: "d", label: "tone mismatch" },
+  ]),
+  mcq("ex-pre-95-12", "95 · Chọn đáp án", "Cụm nào chỉ cách làm mềm lời yêu cầu?", "b", [
+    { key: "a", label: "casual wording" },
+    { key: "b", label: "soften a request" },
+    { key: "c", label: "overly direct" },
+    { key: "d", label: "slang" },
+  ]),
+  mcq("ex-pre-95-13", "95 · Chọn đáp án", "Cụm nào chỉ ngôn ngữ giảm mức khẳng định tuyệt đối?", "a", [
+    { key: "a", label: "hedging language" },
+    { key: "b", label: "contraction" },
+    { key: "c", label: "phrasal verb" },
+    { key: "d", label: "greeting line" },
+  ]),
+  mcq("ex-pre-95-14", "95 · Chọn đáp án", "Cụm nào chỉ cách diễn đạt tự nhiên, thoải mái?", "c", [
+    { key: "a", label: "formal register" },
+    { key: "b", label: "professional wording" },
+    { key: "c", label: "casual wording" },
+    { key: "d", label: "courtesy title" },
+  ]),
+];
+
+const UNIT_96: VocabularyExercise[] = [
+  match("ex-pre-96-1", "96 · Ghép từ với nghĩa", [
+    { left: "application form", right: "mẫu đơn đăng ký thông tin" },
+    { left: "personal details", right: "thông tin cá nhân cơ bản" },
+    { left: "date of birth", right: "ngày tháng năm sinh" },
+    { left: "work experience", right: "kinh nghiệm làm việc" },
+    { left: "referee", right: "người được nêu để xác nhận thông tin ứng viên" },
+    { left: "cover letter", right: "thư xin việc gửi kèm CV" },
+  ]),
+  cloze("ex-pre-96-2", "96 · Điền cụm", "Please complete the ___ in block capitals.", "application form", ["Application form"]),
+  cloze("ex-pre-96-3", "96 · Điền cụm", "Enter your ___ accurately.", "personal details", ["Personal details"]),
+  cloze("ex-pre-96-4", "96 · Điền cụm", "Write your ___ in the correct format.", "date of birth", ["Date of birth"]),
+  cloze("ex-pre-96-5", "96 · Điền cụm", "Include a daytime ___.", "contact number", ["Contact number"]),
+  cloze("ex-pre-96-6", "96 · Điền từ", "Don't forget to add the ___.", "postcode", ["Postcode"]),
+  cloze("ex-pre-96-7", "96 · Điền cụm", "Highlight relevant ___ first.", "work experience", ["Work experience"]),
+  cloze("ex-pre-96-8", "96 · Điền cụm", "Attach a ___ tailored to the role.", "cover letter", ["Cover letter"]),
+  mcq("ex-pre-96-9", "96 · Chọn đáp án", "Từ nào chỉ người xác nhận thông tin nghề nghiệp của bạn?", "b", [
+    { key: "a", label: "postcode" },
+    { key: "b", label: "referee" },
+    { key: "c", label: "cover letter" },
+    { key: "d", label: "application form" },
+  ]),
+  mcq("ex-pre-96-10", "96 · Chọn đáp án", "Cụm nào chỉ sơ yếu lý lịch nghề nghiệp?", "c", [
+    { key: "a", label: "skills summary" },
+    { key: "b", label: "cover letter" },
+    { key: "c", label: "curriculum vitae" },
+    { key: "d", label: "application form" },
+  ]),
+  mcq("ex-pre-96-11", "96 · Chọn đáp án", "Cụm nào chỉ quá trình học tập và bằng cấp?", "a", [
+    { key: "a", label: "educational background" },
+    { key: "b", label: "employment history" },
+    { key: "c", label: "postal address" },
+    { key: "d", label: "emergency contact" },
+  ]),
+  mcq("ex-pre-96-12", "96 · Chọn đáp án", "Động từ nào nghĩa là 'khai báo, xác nhận thông tin là đúng'?", "d", [
+    { key: "a", label: "reference" },
+    { key: "b", label: "qualification" },
+    { key: "c", label: "nationality" },
+    { key: "d", label: "declare" },
+  ]),
+  mcq("ex-pre-96-13", "96 · Chọn đáp án", "Cụm nào chỉ phần tóm tắt kỹ năng nổi bật?", "b", [
+    { key: "a", label: "employment history" },
+    { key: "b", label: "skills summary" },
+    { key: "c", label: "personal details" },
+    { key: "d", label: "work experience" },
+  ]),
+  mcq("ex-pre-96-14", "96 · Chọn đáp án", "Cụm nào chỉ lịch sử các công việc đã làm?", "a", [
+    { key: "a", label: "employment history" },
+    { key: "b", label: "educational background" },
+    { key: "c", label: "skills summary" },
+    { key: "d", label: "date of birth" },
+  ]),
+];
+
+const UNIT_97: VocabularyExercise[] = [
+  match("ex-pre-97-1", "97 · Ghép từ với nghĩa", [
+    { left: "thesis statement", right: "câu nêu luận điểm chính của bài" },
+    { left: "topic sentence", right: "câu chủ đề mở đầu đoạn văn" },
+    { left: "body paragraph", right: "đoạn thân bài phát triển một ý chính" },
+    { left: "evidence", right: "dẫn chứng minh họa cho lập luận" },
+    { left: "coherence", right: "tính mạch lạc xuyên suốt bài viết" },
+    { left: "outline", right: "dàn ý trước khi viết bài đầy đủ" },
+  ]),
+  cloze("ex-pre-97-2", "97 · Điền cụm", "Read the ___ carefully before writing.", "essay question", ["Essay question"]),
+  cloze("ex-pre-97-3", "97 · Điền cụm", "Your ___ should be specific.", "thesis statement", ["Thesis statement"]),
+  cloze("ex-pre-97-4", "97 · Điền cụm", "Start each paragraph with a strong ___.", "topic sentence", ["Topic sentence"]),
+  cloze("ex-pre-97-5", "97 · Điền từ", "Use ___ from reliable sources.", "evidence", ["Evidence"]),
+  cloze("ex-pre-97-6", "97 · Điền từ", "Create an ___ before drafting.", "outline", ["Outline"]),
+  cloze("ex-pre-97-7", "97 · Điền từ", "Finish your first ___ quickly, then revise.", "draft", ["Draft"]),
+  cloze("ex-pre-97-8", "97 · Điền từ", "Stay within the ___.", "word limit", ["Word limit"]),
+  mcq("ex-pre-97-9", "97 · Chọn đáp án", "Thành phần nào nêu rõ luận điểm trung tâm của bài luận?", "b", [
+    { key: "a", label: "topic sentence" },
+    { key: "b", label: "thesis statement" },
+    { key: "c", label: "word limit" },
+    { key: "d", label: "transition" },
+  ]),
+  mcq("ex-pre-97-10", "97 · Chọn đáp án", "Cụm nào chỉ lập luận phản biện với ý kiến đối lập?", "c", [
+    { key: "a", label: "supporting idea" },
+    { key: "b", label: "topic sentence" },
+    { key: "c", label: "counterargument" },
+    { key: "d", label: "outline" },
+  ]),
+  mcq("ex-pre-97-11", "97 · Chọn đáp án", "Từ nào chỉ sự liên kết giữa các câu và đoạn?", "a", [
+    { key: "a", label: "cohesion" },
+    { key: "b", label: "argument" },
+    { key: "c", label: "draft" },
+    { key: "d", label: "evidence" },
+  ]),
+  mcq("ex-pre-97-12", "97 · Chọn đáp án", "Động từ nào nghĩa là 'chỉnh sửa lại nội dung và cấu trúc'?", "d", [
+    { key: "a", label: "outline" },
+    { key: "b", label: "draft" },
+    { key: "c", label: "transition" },
+    { key: "d", label: "revise" },
+  ]),
+  mcq("ex-pre-97-13", "97 · Chọn đáp án", "Cụm nào chỉ đoạn kết luận tổng hợp ý chính?", "b", [
+    { key: "a", label: "introduction paragraph" },
+    { key: "b", label: "concluding paragraph" },
+    { key: "c", label: "body paragraph" },
+    { key: "d", label: "topic sentence" },
+  ]),
+  mcq("ex-pre-97-14", "97 · Chọn đáp án", "Cụm nào chỉ văn phong học thuật, khách quan?", "a", [
+    { key: "a", label: "academic tone" },
+    { key: "b", label: "word limit" },
+    { key: "c", label: "draft" },
+    { key: "d", label: "transition" },
+  ]),
+];
+
+const UNIT_98: VocabularyExercise[] = [
+  match("ex-pre-98-1", "98 · Ghép từ với nghĩa", [
+    { left: "Dear Sir or Madam", right: "cụm chào trang trọng khi chưa biết tên người nhận" },
+    { left: "I am writing to", right: "cụm mở đầu nêu mục đích viết thư/email" },
+    { left: "please find attached", right: "xin gửi kèm theo" },
+    { left: "I look forward to", right: "tôi mong nhận được/được..." },
+    { left: "Yours faithfully", right: "kết thư trang trọng khi không biết tên người nhận" },
+    { left: "Yours sincerely", right: "kết thư trang trọng khi biết tên người nhận" },
+  ]),
+  cloze("ex-pre-98-2", "98 · Điền cụm", "Begin with ___ when no name is given.", "Dear Sir or Madam", ["dear sir or madam"]),
+  cloze("ex-pre-98-3", "98 · Điền cụm", "___ inquire about your services.", "I am writing to", ["I am writing to"]),
+  cloze("ex-pre-98-4", "98 · Điền cụm", "___ your email dated 5 May, ...", "With reference to", ["with reference to"]),
+  cloze("ex-pre-98-5", "98 · Điền cụm", "___ the signed contract.", "Please find attached", ["please find attached"]),
+  cloze("ex-pre-98-6", "98 · Điền cụm", "___ hearing from you.", "I look forward to", ["I look forward to"]),
+  cloze("ex-pre-98-7", "98 · Điền cụm", "Use ___ after Dear Sir or Madam.", "Yours faithfully", ["yours faithfully"]),
+  cloze("ex-pre-98-8", "98 · Điền cụm", "Use a clear ___ for urgent matters.", "subject heading", ["Subject heading"]),
+  mcq("ex-pre-98-9", "98 · Chọn đáp án", "Cụm nào dùng khi gửi kèm tài liệu trong email trang trọng?", "b", [
+    { key: "a", label: "by the way" },
+    { key: "b", label: "please find attached" },
+    { key: "c", label: "talk soon" },
+    { key: "d", label: "no worries" },
+  ]),
+  mcq("ex-pre-98-10", "98 · Chọn đáp án", "Cụm nào dùng khi biết tên người nhận?", "a", [
+    { key: "a", label: "Yours sincerely" },
+    { key: "b", label: "Yours faithfully" },
+    { key: "c", label: "Cheers" },
+    { key: "d", label: "Take care" },
+  ]),
+  mcq("ex-pre-98-11", "98 · Chọn đáp án", "Cụm nào có nghĩa 'khi thuận tiện sớm nhất có thể'?", "c", [
+    { key: "a", label: "further information" },
+    { key: "b", label: "with reference to" },
+    { key: "c", label: "at your earliest convenience" },
+    { key: "d", label: "I am writing to" },
+  ]),
+  mcq("ex-pre-98-12", "98 · Chọn đáp án", "Cụm nào dùng cho thư mở đầu trang trọng khi người nhận không cụ thể?", "d", [
+    { key: "a", label: "Dear Sir or Madam" },
+    { key: "b", label: "I look forward to" },
+    { key: "c", label: "could you please" },
+    { key: "d", label: "To whom it may concern" },
+  ]),
+  mcq("ex-pre-98-13", "98 · Chọn đáp án", "Cụm nào chỉ thư khiếu nại theo phong cách trang trọng?", "a", [
+    { key: "a", label: "formal complaint" },
+    { key: "b", label: "enquiry" },
+    { key: "c", label: "acknowledgement" },
+    { key: "d", label: "recipient" },
+  ]),
+  mcq("ex-pre-98-14", "98 · Chọn đáp án", "Cụm nào có nghĩa 'tôi sẽ rất cảm kích nếu...'?", "b", [
+    { key: "a", label: "could you please" },
+    { key: "b", label: "I would appreciate" },
+    { key: "c", label: "please find attached" },
+    { key: "d", label: "with reference to" },
+  ]),
+];
+
+const UNIT_99: VocabularyExercise[] = [
+  match("ex-pre-99-1", "99 · Ghép từ với nghĩa", [
+    { left: "Hey", right: "chào thân mật mở đầu tin nhắn" },
+    { left: "How's it going?", right: "dạo này thế nào rồi?" },
+    { left: "no worries", right: "không sao đâu, đừng lo" },
+    { left: "catch up", right: "gặp lại để cập nhật chuyện gần đây" },
+    { left: "talk soon", right: "nói chuyện lại sớm nhé" },
+    { left: "FYI", right: "viết tắt của for your information" },
+  ]),
+  cloze("ex-pre-99-2", "99 · Điền từ", "___, are you free this evening?", "Hey", ["hey"]),
+  cloze("ex-pre-99-3", "99 · Điền cụm", "___? I haven't seen you in weeks.", "How's it going", ["How's it going?", "how's it going"]),
+  cloze("ex-pre-99-4", "99 · Điền cụm", "___ check if you're okay.", "Just wanted to", ["just wanted to"]),
+  cloze("ex-pre-99-5", "99 · Điền cụm", "___, I found your book.", "By the way", ["by the way"]),
+  cloze("ex-pre-99-6", "99 · Điền cụm", "Let's ___ over coffee this weekend.", "catch up", ["Catch up"]),
+  cloze("ex-pre-99-7", "99 · Điền cụm", "Friday at 7 ___.", "sounds good", ["Sounds good"]),
+  cloze("ex-pre-99-8", "99 · Điền từ", "I'm in a meeting now, ___.", "talk soon", ["Talk soon"]),
+  mcq("ex-pre-99-9", "99 · Chọn đáp án", "Từ viết tắt nào nghĩa là 'for your information'?", "b", [
+    { key: "a", label: "ASAP" },
+    { key: "b", label: "FYI" },
+    { key: "c", label: "BTW" },
+    { key: "d", label: "ID" },
+  ]),
+  mcq("ex-pre-99-10", "99 · Chọn đáp án", "Từ viết tắt nào nghĩa là 'as soon as possible'?", "a", [
+    { key: "a", label: "ASAP" },
+    { key: "b", label: "FYI" },
+    { key: "c", label: "BTW" },
+    { key: "d", label: "ETA" },
+  ]),
+  mcq("ex-pre-99-11", "99 · Chọn đáp án", "Cụm nào có nghĩa 'đi chơi, dành thời gian cùng nhau'?", "c", [
+    { key: "a", label: "catch up" },
+    { key: "b", label: "take care" },
+    { key: "c", label: "hang out" },
+    { key: "d", label: "talk soon" },
+  ]),
+  mcq("ex-pre-99-12", "99 · Chọn đáp án", "Từ viết tắt nào là viết tắt của 'by the way'?", "d", [
+    { key: "a", label: "FYI" },
+    { key: "b", label: "ASAP" },
+    { key: "c", label: "ETA" },
+    { key: "d", label: "BTW" },
+  ]),
+  mcq("ex-pre-99-13", "99 · Chọn đáp án", "Cụm nào có nghĩa 'cảm ơn/bye thân mật (Anh-Anh)'?", "a", [
+    { key: "a", label: "cheers" },
+    { key: "b", label: "no worries" },
+    { key: "c", label: "sounds good" },
+    { key: "d", label: "Hey" },
+  ]),
+  mcq("ex-pre-99-14", "99 · Chọn đáp án", "Từ nào chỉ lỗi gõ nhầm khi nhắn nhanh?", "b", [
+    { key: "a", label: "emoji" },
+    { key: "b", label: "typing mistake" },
+    { key: "c", label: "voice note" },
+    { key: "d", label: "autocorrect" },
+  ]),
+];
+
+const UNIT_100: VocabularyExercise[] = [
+  match("ex-pre-100-1", "100 · Ghép từ với nghĩa", [
+    { left: "abbreviation", right: "từ/cụm từ viết tắt" },
+    { left: "acronym", right: "từ viết tắt đọc thành một từ hoàn chỉnh" },
+    { left: "initialism", right: "dạng viết tắt đọc từng chữ cái" },
+    { left: "e.g.", right: "viết tắt của for example, nghĩa là ví dụ" },
+    { left: "i.e.", right: "viết tắt của that is, nghĩa là tức là" },
+    { left: "N/A", right: "viết tắt của not applicable / not available" },
+  ]),
+  cloze("ex-pre-100-2", "100 · Điền từ", "___ is common in business writing.", "Abbreviation", ["abbreviation"]),
+  cloze("ex-pre-100-3", "100 · Điền từ", "NATO is an ___.", "acronym", ["Acronym"]),
+  cloze("ex-pre-100-4", "100 · Điền từ", "BBC is an ___.", "initialism", ["Initialism"]),
+  cloze("ex-pre-100-5", "100 · Điền từ", "Bring pens, paper, ___ to class.", "etc.", ["Etc."]),
+  cloze("ex-pre-100-6", "100 · Điền từ", "Use renewable energy, ___, wind and solar.", "e.g.", ["E.g."]),
+  cloze("ex-pre-100-7", "100 · Điền từ", "He is bilingual, ___, he speaks two languages.", "i.e.", ["I.e."]),
+  cloze("ex-pre-100-8", "100 · Điền từ", "Write ___ if a field does not apply.", "N/A", ["n/a"]),
+  mcq("ex-pre-100-9", "100 · Chọn đáp án", "Khái niệm nào chỉ dạng viết tắt đọc từng chữ cái (ví dụ BBC)?", "b", [
+    { key: "a", label: "acronym" },
+    { key: "b", label: "initialism" },
+    { key: "c", label: "abbreviation" },
+    { key: "d", label: "contraction" },
+  ]),
+  mcq("ex-pre-100-10", "100 · Chọn đáp án", "Viết tắt nào nghĩa là 'xấp xỉ'?", "c", [
+    { key: "a", label: "dept." },
+    { key: "b", label: "min." },
+    { key: "c", label: "approx." },
+    { key: "d", label: "vs." },
+  ]),
+  mcq("ex-pre-100-11", "100 · Chọn đáp án", "Viết tắt nào nghĩa là 'date of birth'?", "a", [
+    { key: "a", label: "DOB" },
+    { key: "b", label: "ETA" },
+    { key: "c", label: "FAQ" },
+    { key: "d", label: "ID" },
+  ]),
+  mcq("ex-pre-100-12", "100 · Chọn đáp án", "Viết tắt nào nghĩa là 'estimated time of arrival'?", "b", [
+    { key: "a", label: "DOB" },
+    { key: "b", label: "ETA" },
+    { key: "c", label: "FAQ" },
+    { key: "d", label: "N/A" },
+  ]),
+  mcq("ex-pre-100-13", "100 · Chọn đáp án", "Viết tắt nào nghĩa là 'frequently asked questions'?", "c", [
+    { key: "a", label: "ID" },
+    { key: "b", label: "ETA" },
+    { key: "c", label: "FAQ" },
+    { key: "d", label: "DOB" },
+  ]),
+  mcq("ex-pre-100-14", "100 · Chọn đáp án", "Viết tắt nào nghĩa là 'versus, đối với/so với'?", "d", [
+    { key: "a", label: "e.g." },
+    { key: "b", label: "i.e." },
+    { key: "c", label: "etc." },
+    { key: "d", label: "vs." },
+  ]),
+];
+
+export const CURATED_PRE_UNITS_91_100: Readonly<Partial<Record<number, readonly VocabularyExercise[]>>> = {
+  91: UNIT_91,
+  92: UNIT_92,
+  93: UNIT_93,
+  94: UNIT_94,
+  95: UNIT_95,
+  96: UNIT_96,
+  97: UNIT_97,
+  98: UNIT_98,
+  99: UNIT_99,
+  100: UNIT_100,
+};
+
+for (const [unitNumber, exercises] of Object.entries(CURATED_PRE_UNITS_91_100)) {
+  if (exercises) {
+    assertExerciseCount(Number(unitNumber), exercises);
+  }
+}

@@ -1,4 +1,6 @@
 import type { VocabularyUnit } from "@/lib/vocabulary/vocabulary-unit-types";
+import { applyExercisePromptVi } from "@/lib/vocabulary/units/eviu-elementary-curated-exercises-01-15";
+import { SAMPLE_UNITS_PROMPT_VI } from "@/lib/vocabulary/units/eviu-elementary-curated-prompt-vi";
 
 const B = "<b>";
 const _B = "</b>";
@@ -81,7 +83,8 @@ export const FOOD_A1_SAMPLE_UNIT: VocabularyUnit = {
       ],
     },
   ],
-  exercises: [
+  exercises: applyExercisePromptVi(
+    [
     {
       type: "fill-blank",
       id: "ex-10-1-1",
@@ -89,13 +92,6 @@ export const FOOD_A1_SAMPLE_UNIT: VocabularyUnit = {
       prompt: "___ is popular in Japan.",
       answer: "Rice",
       alternatives: ["rice"],
-      options: [
-        { key: "a", label: "Rice" },
-        { key: "b", label: "Pasta" },
-        { key: "c", label: "Pizza" },
-        { key: "d", label: "Bread" },
-      ],
-      correctKey: "a",
     },
     {
       type: "mcq",
@@ -117,13 +113,6 @@ export const FOOD_A1_SAMPLE_UNIT: VocabularyUnit = {
       prompt: "Chips are made from ___.",
       answer: "potatoes",
       alternatives: ["Potatoes"],
-      options: [
-        { key: "a", label: "potatoes" },
-        { key: "b", label: "rice" },
-        { key: "c", label: "bread" },
-        { key: "d", label: "pasta" },
-      ],
-      correctKey: "a",
     },
     {
       type: "fill-blank",
@@ -132,13 +121,6 @@ export const FOOD_A1_SAMPLE_UNIT: VocabularyUnit = {
       prompt: "Many British people eat ___.",
       answer: "fish and chips",
       alternatives: ["Fish and chips"],
-      options: [
-        { key: "a", label: "fish and chips" },
-        { key: "b", label: "pizza" },
-        { key: "c", label: "hamburgers" },
-        { key: "d", label: "pasta" },
-      ],
-      correctKey: "a",
     },
     {
       type: "fill-blank",
@@ -147,13 +129,6 @@ export const FOOD_A1_SAMPLE_UNIT: VocabularyUnit = {
       prompt: "Hamburgers are made from ___.",
       answer: "meat",
       alternatives: ["Meat"],
-      options: [
-        { key: "a", label: "meat" },
-        { key: "b", label: "fish" },
-        { key: "c", label: "rice" },
-        { key: "d", label: "vegetables" },
-      ],
-      correctKey: "a",
     },
     {
       type: "fill-blank",
@@ -162,13 +137,6 @@ export const FOOD_A1_SAMPLE_UNIT: VocabularyUnit = {
       prompt: "A ___ is a sausage inside a piece of bread.",
       answer: "hot dog",
       alternatives: ["Hot dog"],
-      options: [
-        { key: "a", label: "hot dog" },
-        { key: "b", label: "hamburger" },
-        { key: "c", label: "pizza" },
-        { key: "d", label: "sandwich" },
-      ],
-      correctKey: "a",
     },
     {
       type: "mcq",
@@ -242,7 +210,9 @@ export const FOOD_A1_SAMPLE_UNIT: VocabularyUnit = {
       ],
       correctKey: "c",
     },
-  ],
+    ],
+    SAMPLE_UNITS_PROMPT_VI,
+  ),
   words: [
     { id: "w-bread", term: "bread", partOfSpeech: "NOUN", definition: "bánh mì", example: "Would you like some bread?" },
     { id: "w-rice", term: "rice", partOfSpeech: "NOUN", definition: "cơm; gạo", example: "I love sushi because I love rice." },
