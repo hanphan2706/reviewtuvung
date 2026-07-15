@@ -1,0 +1,148 @@
+import type { GrammarExercise } from "@/lib/grammar/grammar-exercise-types";
+import { grammarCloze } from "@/lib/grammar/grammar-cloze";
+
+/**
+ * Unit 119 exercises — During / For / While (English Grammar in Use · Intermediate).
+ */
+export const U119_DURING_FOR_WHILE_EXERCISES: readonly GrammarExercise[] = [
+  grammarCloze(
+    "u119-1-1",
+    "119.1 · for / during",
+    "It rained __________ three days without stopping.",
+    "for",
+    { explanation: "for + khoảng thời gian (không: during three days)." },
+  ),
+  grammarCloze(
+    "u119-1-2",
+    "119.1 · for / during",
+    "I fell asleep __________ the movie.",
+    "during",
+    { explanation: "during the movie (= trong lúc bộ phim)." },
+  ),
+  grammarCloze(
+    "u119-1-3",
+    "119.1 · for / during",
+    "I went to the theatre last night. I met Sue __________ the interval.",
+    "during",
+    { explanation: "during the interval." },
+  ),
+  grammarCloze(
+    "u119-1-4",
+    "119.1 · for / during",
+    "I felt really ill last week. I could hardly eat anything __________ three days.",
+    "for",
+    { explanation: "for three days (= bao lâu)." },
+  ),
+  grammarCloze(
+    "u119-1-5",
+    "119.1 · for / during",
+    "We were stuck in a traffic jam __________ two hours.",
+    "for",
+    { explanation: "for two hours." },
+  ),
+  grammarCloze(
+    "u119-1-6",
+    "119.1 · for / during",
+    "Production at the factory was seriously affected __________ the strike.",
+    "during",
+    { explanation: "during the strike." },
+  ),
+  grammarCloze(
+    "u119-1-9",
+    "119.1 · for / during",
+    "I need a break. I think I'll go away __________ a few days.",
+    "for",
+    { explanation: "for a few days." },
+  ),
+  grammarCloze(
+    "u119-1-12",
+    "119.1 · for / during",
+    "We hadn't eaten anything __________ eight hours.",
+    "for",
+    { explanation: "for eight hours (= bao lâu)." },
+  ),
+  grammarCloze(
+    "u119-2-1",
+    "119.2 · during / while",
+    "We met a lot of interesting people __________ we were on holiday.",
+    "while",
+    { explanation: "while + S + V." },
+  ),
+  grammarCloze(
+    "u119-2-2",
+    "119.2 · during / while",
+    "We met a lot of interesting people __________ our holiday.",
+    "during",
+    { explanation: "during + noun." },
+  ),
+  grammarCloze(
+    "u119-2-3",
+    "119.2 · during / while",
+    "I met Mike __________ I was shopping.",
+    "while",
+    { explanation: "while I was shopping." },
+  ),
+  grammarCloze(
+    "u119-2-5",
+    "119.2 · during / while",
+    "I learnt a lot __________ the course. The teachers were very good.",
+    "during",
+    { explanation: "during the course." },
+  ),
+  grammarCloze(
+    "u119-2-8",
+    "119.2 · during / while",
+    "What did they say about me __________ I was out of the room?",
+    "while",
+    { explanation: "while I was out…." },
+  ),
+  grammarCloze(
+    "u119-2-10",
+    "119.2 · during / while",
+    "Please don't interrupt me __________ I'm speaking.",
+    "while",
+    { explanation: "while I'm speaking." },
+  ),
+  grammarCloze(
+    "u119-2-11",
+    "119.2 · during / while",
+    "__________ the festival, it's almost impossible to find a hotel room here.",
+    "During",
+    { alternatives: ["during"], explanation: "During the festival…." },
+  ),
+  grammarCloze(
+    "u119-3-1",
+    "119.3 · during / for / while",
+    "I used to live in Berlin. I lived there __________ five years.",
+    "for",
+    { explanation: "for five years." },
+  ),
+  grammarCloze(
+    "u119-3-2",
+    "119.3 · during / for / while",
+    "One of the runners fell __________ the race but managed to get up and continue.",
+    "during",
+    { explanation: "during the race." },
+  ),
+  grammarCloze(
+    "u119-3-3",
+    "119.3 · during / for / while",
+    "Nobody came to see me __________ I was in hospital.",
+    "while",
+    { explanation: "while I was in hospital." },
+  ),
+  grammarCloze(
+    "u119-3-6",
+    "119.3 · during / for / while",
+    "Can you hold my bag __________ I try on this jacket?",
+    "while",
+    { explanation: "while I try on…." },
+  ),
+  grammarCloze(
+    "u119-3-9",
+    "119.3 · during / for / while",
+    "My phone rang __________ we were having dinner.",
+    "while",
+    { explanation: "while we were having dinner." },
+  ),
+];

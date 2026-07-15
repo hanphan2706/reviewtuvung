@@ -1,0 +1,148 @@
+import type { GrammarExercise } from "@/lib/grammar/grammar-exercise-types";
+import { grammarCloze } from "@/lib/grammar/grammar-cloze";
+
+/**
+ * Unit 128 exercises — By (English Grammar in Use · Intermediate).
+ */
+export const U128_BY_EXERCISES: readonly GrammarExercise[] = [
+  grammarCloze(
+    "u128-1-1",
+    "128.1 · by / on purpose",
+    "We don't need cash. We can pay __________ credit card.",
+    "by",
+    { explanation: "pay by credit card." },
+  ),
+  grammarCloze(
+    "u128-1-2",
+    "128.1 · by / on purpose",
+    "Kate and James keep in touch with one another mainly __________ email.",
+    "by",
+    { explanation: "by email." },
+  ),
+  grammarCloze(
+    "u128-1-3",
+    "128.1 · by / on purpose",
+    "I didn't intend to take your umbrella. I took it __________ mistake.",
+    "by",
+    { explanation: "by mistake." },
+  ),
+  grammarCloze(
+    "u128-1-4",
+    "128.1 · by / on purpose",
+    "I think he arrived late __________ purpose. He wanted to keep us waiting.",
+    "on",
+    { explanation: "on purpose (= cố ý), không by purpose." },
+  ),
+  grammarCloze(
+    "u128-1-5",
+    "128.1 · by / on purpose",
+    "Some things are planned. Other things happen __________ chance.",
+    "by",
+    { explanation: "by chance." },
+  ),
+  grammarCloze(
+    "u128-1-6",
+    "128.1 · by / on purpose",
+    "Don't put my sweater in the washing machine. It has to be washed __________ hand.",
+    "by",
+    { explanation: "by hand." },
+  ),
+  grammarCloze(
+    "u128-2-1",
+    "128.2 · by / in / on",
+    "Jess usually goes to work __________ bus.",
+    "by",
+    { explanation: "by bus." },
+  ),
+  grammarCloze(
+    "u128-2-2",
+    "128.2 · by / in / on",
+    "I saw Jane this morning. She was __________ the bus.",
+    "on",
+    { explanation: "on the bus (không: by the bus)." },
+  ),
+  grammarCloze(
+    "u128-2-3",
+    "128.2 · by / in / on",
+    "How did you get here? Did you come __________ train?",
+    "by",
+    { explanation: "by train." },
+  ),
+  grammarCloze(
+    "u128-2-4",
+    "128.2 · by / in / on",
+    "I couldn't find a seat __________ the train. It was full.",
+    "on",
+    { explanation: "on the train." },
+  ),
+  grammarCloze(
+    "u128-2-5",
+    "128.2 · by / in / on",
+    "How much will it cost to the airport __________ taxi?",
+    "by",
+    { explanation: "by taxi." },
+  ),
+  grammarCloze(
+    "u128-2-6",
+    "128.2 · by / in / on",
+    "Did you come here __________ Sarah's car or yours?",
+    "in",
+    { explanation: "in Sarah's car (không: by Sarah's car)." },
+  ),
+  grammarCloze(
+    "u128-2-9",
+    "128.2 · by / in / on",
+    "He goes everywhere __________ bike or on foot.",
+    "by",
+    { explanation: "by bike … or on foot." },
+  ),
+  grammarCloze(
+    "u128-3-1",
+    "128.3 · by + agent",
+    "I was woken up in the night __________ a strange noise.",
+    "by",
+    { explanation: "by a strange noise." },
+  ),
+  grammarCloze(
+    "u128-3-4",
+    "128.3 · by + agent",
+    "'Mona Lisa' is a famous painting __________ Leonardo da Vinci.",
+    "by",
+    { explanation: "a painting by Leonardo da Vinci." },
+  ),
+  grammarCloze(
+    "u128-4-1",
+    "128.4 · by / with",
+    "Have you ever been bitten __________ a dog?",
+    "by",
+    { explanation: "bitten by a dog (tác nhân)." },
+  ),
+  grammarCloze(
+    "u128-4-2",
+    "128.4 · by / with",
+    "We managed to put the fire out __________ a fire extinguisher.",
+    "with",
+    { explanation: "with = dụng cụ." },
+  ),
+  grammarCloze(
+    "u128-4-3",
+    "128.4 · by / with",
+    "Who's that man standing __________ the window?",
+    "by",
+    { explanation: "by the window (= cạnh)." },
+  ),
+  grammarCloze(
+    "u128-4-10",
+    "128.4 · by + amount",
+    "The new railway line will reduce the journey time __________ two hours.",
+    "by",
+    { explanation: "reduce … by two hours." },
+  ),
+  grammarCloze(
+    "u128-5-1",
+    "128.5 · by + amount",
+    "Carl was five metres in front of the other runners. → Carl won __________ five metres.",
+    "by",
+    { explanation: "won by five metres." },
+  ),
+];

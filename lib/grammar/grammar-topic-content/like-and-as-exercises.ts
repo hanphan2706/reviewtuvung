@@ -1,0 +1,151 @@
+import type { GrammarExercise } from "@/lib/grammar/grammar-exercise-types";
+import { grammarCloze } from "@/lib/grammar/grammar-cloze";
+
+/**
+ * Unit 117 exercises — Like and As (English Grammar in Use · Intermediate).
+ */
+export const U117_LIKE_AND_AS_EXERCISES: readonly GrammarExercise[] = [
+  grammarCloze(
+    "u117-1-1",
+    "117.1 · like / as",
+    "It's raining again. I hate weather __________ this.",
+    "like",
+    { explanation: "like this (= giống thế này), không: as this." },
+  ),
+  grammarCloze(
+    "u117-1-3",
+    "117.1 · like / as",
+    "Do you think James looks __________ his father?",
+    "like",
+    { explanation: "looks like his father (= giống bố)." },
+  ),
+  grammarCloze(
+    "u117-1-4",
+    "117.1 · like / as",
+    "He gets on my nerves. I can't stand people __________ him.",
+    "like",
+    { explanation: "people like him (= kiểu như anh ta)." },
+  ),
+  grammarCloze(
+    "u117-1-7",
+    "117.1 · like / as",
+    "You never listen. Talking to you is __________ talking to the wall.",
+    "like",
+    { explanation: "like talking to the wall." },
+  ),
+  grammarCloze(
+    "u117-1-10",
+    "117.1 · like / as",
+    "She's a very good swimmer. She swims __________ a fish.",
+    "like",
+    { explanation: "swims like a fish (= bơi như cá)." },
+  ),
+  grammarCloze(
+    "u117-1-2",
+    "117.1 · like / as",
+    "You should have done it __________ I showed you.",
+    "as",
+    {
+      alternatives: ["like"],
+      explanation: "as I showed you (cũng chấp nhận like I showed you).",
+    },
+  ),
+  grammarCloze(
+    "u117-3-1",
+    "117.3 · like / as + noun",
+    "This house is beautiful. It's __________ a palace.",
+    "like",
+    { explanation: "It's like a palace." },
+  ),
+  grammarCloze(
+    "u117-3-2",
+    "117.3 · like / as + noun",
+    "My feet are really cold. They're __________ blocks of ice.",
+    "like",
+    { explanation: "like blocks of ice." },
+  ),
+  grammarCloze(
+    "u117-3-3",
+    "117.3 · like / as + noun",
+    "I've been playing tennis for years, but I still play __________ a beginner.",
+    "like",
+    { explanation: "play like a beginner." },
+  ),
+  grammarCloze(
+    "u117-3-4",
+    "117.3 · like / as + noun",
+    "Marion once had a part-time job __________ a tour guide.",
+    "as",
+    { explanation: "job as a tour guide (= làm hướng dẫn viên)." },
+  ),
+  grammarCloze(
+    "u117-3-5",
+    "117.3 · like / as + noun",
+    "I wonder what that building is. It looks __________ a theatre.",
+    "like",
+    { explanation: "looks like a theatre." },
+  ),
+  grammarCloze(
+    "u117-3-6",
+    "117.3 · like / as + noun",
+    "My brother gave me this watch __________ a birthday present a long time ago.",
+    "as",
+    { explanation: "as a birthday present." },
+  ),
+  grammarCloze(
+    "u117-3-8",
+    "117.3 · like / as + noun",
+    "He's 22 years old, but he sometimes behaves __________ a child.",
+    "like",
+    { explanation: "behaves like a child." },
+  ),
+  grammarCloze(
+    "u117-4-1",
+    "117.4 · like or as",
+    "We heard a noise __________ a baby crying.",
+    "like",
+    { explanation: "a noise like a baby crying." },
+  ),
+  grammarCloze(
+    "u117-4-3",
+    "117.4 · like or as",
+    "Hannah has been working __________ a waitress for the last two months.",
+    "as",
+    { explanation: "working as a waitress (= nghề / vai trò)." },
+  ),
+  grammarCloze(
+    "u117-4-6",
+    "117.4 · like or as",
+    "__________ you can imagine, we were very tired after such a long journey.",
+    "As",
+    { alternatives: ["as"], explanation: "As you can imagine…." },
+  ),
+  grammarCloze(
+    "u117-4-10",
+    "117.4 · like or as",
+    "The weather hasn't changed. It's the same __________ yesterday.",
+    "as",
+    { explanation: "the same as yesterday (không: the same like)." },
+  ),
+  grammarCloze(
+    "u117-4-11",
+    "117.4 · like or as",
+    "You're different from the other people I know. I don't know anyone else __________ you.",
+    "like",
+    { explanation: "anyone else like you." },
+  ),
+  grammarCloze(
+    "u117-4-12",
+    "117.4 · like or as",
+    "The news that they are getting married came __________ a complete surprise to me.",
+    "as",
+    { explanation: "came as a complete surprise." },
+  ),
+  grammarCloze(
+    "u117-4-15",
+    "117.4 · like or as",
+    "Right now I'm working in a shop. It's not great, but it's OK __________ a temporary job.",
+    "as",
+    { explanation: "OK as a temporary job (= với tư cách)." },
+  ),
+];

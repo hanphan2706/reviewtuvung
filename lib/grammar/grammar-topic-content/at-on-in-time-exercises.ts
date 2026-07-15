@@ -1,0 +1,151 @@
+import type { GrammarExercise } from "@/lib/grammar/grammar-exercise-types";
+import { grammarCloze } from "@/lib/grammar/grammar-cloze";
+
+/**
+ * Unit 121 exercises — At/On/In (Time) (English Grammar in Use · Intermediate).
+ */
+export const U121_AT_ON_IN_TIME_EXERCISES: readonly GrammarExercise[] = [
+  grammarCloze(
+    "u121-1-1",
+    "121.1 · at / on / in",
+    "Mozart was born in Salzburg __________ 1756.",
+    "in",
+    { explanation: "in + năm." },
+  ),
+  grammarCloze(
+    "u121-1-2",
+    "121.1 · at / on / in",
+    "I've been invited to a wedding __________ 14 February.",
+    "on",
+    { explanation: "on + ngày tháng." },
+  ),
+  grammarCloze(
+    "u121-1-3",
+    "121.1 · at / on / in",
+    "Amy's birthday is __________ May, but I don't know which date.",
+    "in",
+    { explanation: "in + tháng." },
+  ),
+  grammarCloze(
+    "u121-1-4",
+    "121.1 · at / on / in",
+    "This park gets very busy __________ weekends.",
+    "at",
+    {
+      alternatives: ["on"],
+      explanation: "at weekends (AmE: on weekends).",
+    },
+  ),
+  grammarCloze(
+    "u121-1-5",
+    "121.1 · at / on / in",
+    "I last saw her __________ Tuesday.",
+    "on",
+    { explanation: "on Tuesday." },
+  ),
+  grammarCloze(
+    "u121-1-6",
+    "121.1 · at / on / in",
+    "Jonathan will be retiring from his job __________ two years.",
+    "in",
+    { explanation: "in two years (= hai năm nữa)." },
+  ),
+  grammarCloze(
+    "u121-1-8",
+    "121.1 · at / on / in",
+    "Sam isn't here __________ the moment, but he'll be here this afternoon.",
+    "at",
+    { explanation: "at the moment." },
+  ),
+  grammarCloze(
+    "u121-1-9",
+    "121.1 · at / on / in",
+    "There are usually a lot of parties __________ New Year's Eve.",
+    "on",
+    { explanation: "on New Year's Eve." },
+  ),
+  grammarCloze(
+    "u121-1-10",
+    "121.1 · at / on / in",
+    "I try to avoid going out __________ night.",
+    "at",
+    { explanation: "at night (= về đêm nói chung)." },
+  ),
+  grammarCloze(
+    "u121-1-11",
+    "121.1 · at / on / in",
+    "It rained very hard __________ the night. Did you hear it?",
+    "in",
+    { explanation: "in the night (= đêm đó)." },
+  ),
+  grammarCloze(
+    "u121-1-13",
+    "121.1 · at / on / in",
+    "A lot of buses were leaving __________ the same time.",
+    "at",
+    { explanation: "at the same time." },
+  ),
+  grammarCloze(
+    "u121-1-14",
+    "121.1 · at / on / in",
+    "Helen and David always go out for dinner __________ their wedding anniversary.",
+    "on",
+    { explanation: "on their wedding anniversary." },
+  ),
+  grammarCloze(
+    "u121-1-16",
+    "121.1 · at / on / in",
+    "__________ midday, the sun is at its highest point in the sky.",
+    "At",
+    { alternatives: ["at"], explanation: "At midday." },
+  ),
+  grammarCloze(
+    "u121-1-17",
+    "121.1 · at / on / in",
+    "This building was built __________ the fifteenth century.",
+    "in",
+    { explanation: "in the fifteenth century." },
+  ),
+  grammarCloze(
+    "u121-1-18",
+    "121.1 · at / on / in",
+    "The office is closed __________ Wednesday afternoons.",
+    "on",
+    { explanation: "on Wednesday afternoons." },
+  ),
+  grammarCloze(
+    "u121-1-19",
+    "121.1 · at / on / in",
+    "In the UK many people go home to see their families __________ Christmas.",
+    "at",
+    { explanation: "at Christmas (nhưng on Christmas Day)." },
+  ),
+  grammarCloze(
+    "u121-1-20a",
+    "121.1 · at / on / in",
+    "My flight arrives __________ 5 o'clock in the morning.",
+    "at",
+    { explanation: "at 5 o'clock." },
+  ),
+  grammarCloze(
+    "u121-2-2",
+    "121.2 · at / on / in + phrase",
+    "If the sky is clear, you can see the stars __________ night.",
+    "at",
+    { explanation: "at night." },
+  ),
+  grammarCloze(
+    "u121-2-4",
+    "121.2 · at / on / in + phrase",
+    "Neil Armstrong was the first man to walk on the moon __________ 21 July 1969.",
+    "on",
+    { explanation: "on 21 July 1969." },
+  ),
+  grammarCloze(
+    "u121-2-7",
+    "121.2 · at / on / in + phrase",
+    "I'm just going out to the shop. I'll be back __________ about 20 minutes.",
+    "in",
+    { explanation: "in about 20 minutes." },
+  ),
+];

@@ -60,6 +60,7 @@ data/dictionary/en-vi-stardict.json
 # Tài liệu thả vào (PDF sách, zip audio…) — chỉ local
 /materials/
 /vocab materials/
+/grammar materials/
 /transcript/
 
 # Bản dịch WIP — chỉ local

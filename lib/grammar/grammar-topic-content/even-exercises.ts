@@ -1,0 +1,151 @@
+import type { GrammarExercise } from "@/lib/grammar/grammar-exercise-types";
+import { grammarCloze } from "@/lib/grammar/grammar-cloze";
+
+/**
+ * Unit 112 exercises — Even (English Grammar in Use · Intermediate).
+ */
+export const U112_EVEN_EXERCISES: readonly GrammarExercise[] = [
+  grammarCloze(
+    "u112-1-1",
+    "112.1 · even / not even",
+    "They stayed at a hotel. Everybody liked it, __________.",
+    "even Kate",
+    { explanation: "even Kate (cô ấy thường ghét khách sạn)." },
+  ),
+  grammarCloze(
+    "u112-1-2",
+    "112.1 · even / not even",
+    "They arranged to meet. They all arrived on time, __________.",
+    "even Lisa",
+    { explanation: "even Lisa (thường muộn)." },
+  ),
+  grammarCloze(
+    "u112-1-3",
+    "112.1 · even / not even",
+    "They went to an art gallery. Nobody enjoyed it, __________.",
+    "not even Amy",
+    { explanation: "not even Amy (cô ấy thích nghệ thuật)." },
+  ),
+  grammarCloze(
+    "u112-1-4",
+    "112.1 · even / not even",
+    "Yesterday they had to get up early. They all managed to do this, __________.",
+    "even Lisa",
+    { explanation: "even Lisa (khó dậy sớm)." },
+  ),
+  grammarCloze(
+    "u112-1-6",
+    "112.1 · even / not even",
+    "None of them took any pictures, __________.",
+    "not even Lisa",
+    { explanation: "not even Lisa (nhiếp ảnh gia)." },
+  ),
+  grammarCloze(
+    "u112-2-1",
+    "112.2 · even + verb",
+    "Laura has been all over the world. She has __________ to the Antarctic.",
+    "even been",
+    { explanation: "has even been to the Antarctic." },
+  ),
+  grammarCloze(
+    "u112-2-2",
+    "112.2 · even + verb",
+    "We painted the whole room. We __________ the floor.",
+    "even painted",
+    { explanation: "We even painted the floor." },
+  ),
+  grammarCloze(
+    "u112-2-3",
+    "112.2 · even + verb",
+    "Rachel has met lots of famous people. She has __________ the prime minister.",
+    "even met",
+    {
+      alternatives: ["She's even met"],
+      explanation: "She's even met the prime minister.",
+    },
+  ),
+  grammarCloze(
+    "u112-2-5",
+    "112.2 · not even",
+    "They didn't say anything to us. They didn't __________ hello.",
+    "even say",
+    { explanation: "didn't even say hello." },
+  ),
+  grammarCloze(
+    "u112-2-6",
+    "112.2 · not even",
+    "I can't remember anything about her. I can't __________ her name.",
+    "even remember",
+    { explanation: "can't even remember her name." },
+  ),
+  grammarCloze(
+    "u112-2-7",
+    "112.2 · not even",
+    "There isn't anything to do in this town. There isn't __________.",
+    "even a cinema",
+    { explanation: "There isn't even a cinema." },
+  ),
+  grammarCloze(
+    "u112-2-8",
+    "112.2 · not even",
+    "He didn't tell anybody where he was going. He didn't __________ his wife.",
+    "even tell",
+    { explanation: "didn't even tell his wife." },
+  ),
+  grammarCloze(
+    "u112-3-1",
+    "112.3 · even + comparative",
+    "It was very hot yesterday, but today it's __________.",
+    "even hotter",
+    { explanation: "even hotter." },
+  ),
+  grammarCloze(
+    "u112-3-2",
+    "112.3 · even + comparative",
+    "The church is 700 years old, but the house next to it is __________.",
+    "even older",
+    { explanation: "even older." },
+  ),
+  grammarCloze(
+    "u112-3-3",
+    "112.3 · even + comparative",
+    "That's a very good idea, but I've got an __________ one.",
+    "even better",
+    { explanation: "even better." },
+  ),
+  grammarCloze(
+    "u112-3-4",
+    "112.3 · even + comparative",
+    "The first question was very difficult. The second one was __________.",
+    "even more difficult",
+    { explanation: "even more difficult." },
+  ),
+  grammarCloze(
+    "u112-3-5",
+    "112.3 · even + comparative",
+    "I did very badly in the exam, but most of my friends did __________.",
+    "even worse",
+    { explanation: "even worse." },
+  ),
+  grammarCloze(
+    "u112-4-1",
+    "112.4 · even though / if",
+    "__________ she can't drive, she has a car.",
+    "Even though",
+    { explanation: "Even though + S + V." },
+  ),
+  grammarCloze(
+    "u112-4-3",
+    "112.4 · even though / if",
+    "The bus leaves in two minutes. We won't catch it now __________ we run.",
+    "even if",
+    { explanation: "even if = dù có chạy cũng không kịp." },
+  ),
+  grammarCloze(
+    "u112-4-5",
+    "112.4 · even though / if",
+    "Mark's Spanish isn't very good, __________ he lived in Spain for three years.",
+    "even though",
+    { explanation: "even though + mệnh đề quá khứ." },
+  ),
+];

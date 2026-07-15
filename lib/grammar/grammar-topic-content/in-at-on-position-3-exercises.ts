@@ -1,0 +1,148 @@
+import type { GrammarExercise } from "@/lib/grammar/grammar-exercise-types";
+import { grammarCloze } from "@/lib/grammar/grammar-cloze";
+
+/**
+ * Unit 125 exercises — In/At/On (Position) 3 (English Grammar in Use · Intermediate).
+ */
+export const U125_IN_AT_ON_POSITION_3_EXERCISES: readonly GrammarExercise[] = [
+  grammarCloze(
+    "u125-1-1",
+    "125.1 · in / at / on",
+    "You can hire a car __________ the airport.",
+    "at",
+    { explanation: "at the airport." },
+  ),
+  grammarCloze(
+    "u125-1-2",
+    "125.1 · in / at / on",
+    "Dave is __________ a train.",
+    "on",
+    { explanation: "on a train." },
+  ),
+  grammarCloze(
+    "u125-1-3",
+    "125.1 · in / at / on",
+    "Karen is __________ a conference.",
+    "at",
+    { explanation: "at a conference." },
+  ),
+  grammarCloze(
+    "u125-1-4",
+    "125.1 · in / at / on",
+    "Martin is __________ hospital.",
+    "in",
+    { explanation: "in hospital (BrE)." },
+  ),
+  grammarCloze(
+    "u125-1-5",
+    "125.1 · in / at / on",
+    "Judy is __________ the hairdresser's.",
+    "at",
+    { explanation: "at the hairdresser's." },
+  ),
+  grammarCloze(
+    "u125-1-6",
+    "125.1 · in / at / on",
+    "I saw Gary __________ his bike.",
+    "on",
+    { explanation: "on his bike." },
+  ),
+  grammarCloze(
+    "u125-1-7",
+    "125.1 · in / at / on",
+    "We spent a few days __________ New York.",
+    "in",
+    { explanation: "in New York." },
+  ),
+  grammarCloze(
+    "u125-1-8",
+    "125.1 · in / at / on",
+    "We went to a show __________ the Savoy Theatre.",
+    "at",
+    { explanation: "at the Savoy Theatre." },
+  ),
+  grammarCloze(
+    "u125-2-1",
+    "125.2 · in / at / on",
+    "Some people are __________ prison for crimes that they did not commit.",
+    "in",
+    { explanation: "in prison." },
+  ),
+  grammarCloze(
+    "u125-2-2",
+    "125.2 · in / at / on",
+    "We can get coffee __________ the station while we're waiting for our train.",
+    "at",
+    { explanation: "at the station." },
+  ),
+  grammarCloze(
+    "u125-2-3",
+    "125.2 · in / at / on",
+    "We walked to the restaurant, but we went home __________ a taxi.",
+    "in",
+    { explanation: "in a taxi." },
+  ),
+  grammarCloze(
+    "u125-2-5",
+    "125.2 · in / at / on",
+    "I enjoyed the flight, but the food __________ the plane was awful.",
+    "on",
+    { explanation: "on the plane." },
+  ),
+  grammarCloze(
+    "u125-2-6",
+    "125.2 · in / at / on",
+    "Vicky has gone to Japan. She's living __________ Tokyo.",
+    "in",
+    { explanation: "in Tokyo." },
+  ),
+  grammarCloze(
+    "u125-2-7",
+    "125.2 · in / at / on",
+    "'Does your sister have a job?' 'No, she's only 16. She's still __________ school.'",
+    "at",
+    { explanation: "at school." },
+  ),
+  grammarCloze(
+    "u125-3-1",
+    "125.3 · in / at / on",
+    "We went to a concert __________ the National Concert Hall.",
+    "at",
+    { explanation: "at the National Concert Hall." },
+  ),
+  grammarCloze(
+    "u125-3-2",
+    "125.3 · in / at / on",
+    "There isn't a shop __________ the village where I live.",
+    "in",
+    { explanation: "in the village." },
+  ),
+  grammarCloze(
+    "u125-3-3",
+    "125.3 · in / at / on",
+    "Joe wasn't __________ the party. I don't know why he didn't go.",
+    "at",
+    { explanation: "at the party." },
+  ),
+  grammarCloze(
+    "u125-3-5",
+    "125.3 · in / at / on",
+    "Perhaps I left my umbrella __________ the bus.",
+    "on",
+    { explanation: "on the bus." },
+  ),
+  grammarCloze(
+    "u125-3-7",
+    "125.3 · in / at / on",
+    "I didn't feel well when I woke up, so I stayed __________ bed.",
+    "in",
+    { explanation: "in bed." },
+  ),
+  grammarCloze(
+    "u125-3-10",
+    "125.3 · in / at / on",
+    "Shall we travel __________ your car or mine?",
+    "in",
+    { explanation: "in your car." },
+  ),
+];

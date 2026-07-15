@@ -1,0 +1,148 @@
+import type { GrammarExercise } from "@/lib/grammar/grammar-exercise-types";
+import { grammarCloze } from "@/lib/grammar/grammar-cloze";
+
+/**
+ * Unit 124 exercises — In/At/On (Position) 2 (English Grammar in Use · Intermediate).
+ */
+export const U124_IN_AT_ON_POSITION_2_EXERCISES: readonly GrammarExercise[] = [
+  grammarCloze(
+    "u124-1-1",
+    "124.1 · in / at / on",
+    "Where does Amy work? __________ the sales department.",
+    "In",
+    { alternatives: ["in"], explanation: "In the sales department." },
+  ),
+  grammarCloze(
+    "u124-1-2",
+    "124.1 · in / at / on",
+    "Where's Amy's flat exactly? __________ the second floor.",
+    "On",
+    { alternatives: ["on"], explanation: "On the second floor." },
+  ),
+  grammarCloze(
+    "u124-1-5",
+    "124.1 · in / at / on",
+    "Where's the cat? __________ the top of the stairs.",
+    "At",
+    { alternatives: ["at"], explanation: "At the top of the stairs." },
+  ),
+  grammarCloze(
+    "u124-1-6",
+    "124.1 · in / at / on",
+    "Where's the dog? __________ the back of the car.",
+    "In",
+    { alternatives: ["in"], explanation: "In the back of the car." },
+  ),
+  grammarCloze(
+    "u124-1-9",
+    "124.1 · in / at / on",
+    "Gary is at the cinema. Where is he sitting? __________ the back row.",
+    "In",
+    { alternatives: ["in"], explanation: "In the back row." },
+  ),
+  grammarCloze(
+    "u124-1-10",
+    "124.1 · in / at / on",
+    "Where is the bank? __________ the end of the street.",
+    "At",
+    { alternatives: ["at"], explanation: "At the end of the street." },
+  ),
+  grammarCloze(
+    "u124-2-1",
+    "124.2 · in / at / on",
+    "It's a lovely day. There isn't a cloud __________ the sky.",
+    "in",
+    { explanation: "in the sky." },
+  ),
+  grammarCloze(
+    "u124-2-2",
+    "124.2 · in / at / on",
+    "In most countries people drive __________ the right.",
+    "on",
+    { explanation: "on the right." },
+  ),
+  grammarCloze(
+    "u124-2-3",
+    "124.2 · in / at / on",
+    "What is the tallest building __________ the world?",
+    "in",
+    { explanation: "in the world." },
+  ),
+  grammarCloze(
+    "u124-2-4",
+    "124.2 · in / at / on",
+    "I met a friend of mine __________ the way to work this morning.",
+    "on",
+    { explanation: "on the way to work." },
+  ),
+  grammarCloze(
+    "u124-2-5",
+    "124.2 · in / at / on",
+    "San Francisco is __________ the west coast of the United States.",
+    "on",
+    { explanation: "on the west coast." },
+  ),
+  grammarCloze(
+    "u124-2-6",
+    "124.2 · in / at / on",
+    "We went to the theatre last night. We had seats __________ the front row.",
+    "in",
+    { explanation: "in the front row." },
+  ),
+  grammarCloze(
+    "u124-2-7",
+    "124.2 · in / at / on",
+    "I couldn't hear the teacher. I was sitting __________ the back of the class.",
+    "at",
+    { explanation: "at the back of the class." },
+  ),
+  grammarCloze(
+    "u124-2-8",
+    "124.2 · in / at / on",
+    "Could you write your address __________ the back of this card?",
+    "on",
+    { explanation: "on the back of this card." },
+  ),
+  grammarCloze(
+    "u124-3-1",
+    "124.3 · in / at / on",
+    "Write your name __________ the top of the page.",
+    "at",
+    { explanation: "at the top of the page." },
+  ),
+  grammarCloze(
+    "u124-3-2",
+    "124.3 · in / at / on",
+    "Is your sister __________ this photo? I don't recognise her.",
+    "in",
+    { explanation: "in this photo." },
+  ),
+  grammarCloze(
+    "u124-3-5",
+    "124.3 · in / at / on",
+    "We had to wait __________ a queue for an hour to check in at the airport.",
+    "in",
+    { explanation: "in a queue." },
+  ),
+  grammarCloze(
+    "u124-3-6",
+    "124.3 · in / at / on",
+    "There was a list of names, but my name wasn't __________ the list.",
+    "on",
+    { explanation: "on the list." },
+  ),
+  grammarCloze(
+    "u124-3-12",
+    "124.3 · in / at / on",
+    "Paris is __________ the (river) Seine.",
+    "on",
+    { explanation: "on the Seine." },
+  ),
+  grammarCloze(
+    "u124-3-13",
+    "124.3 · in / at / on",
+    "I'd much prefer to live __________ the country.",
+    "in",
+    { explanation: "in the country." },
+  ),
+];

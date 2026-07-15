@@ -1,0 +1,148 @@
+import type { GrammarExercise } from "@/lib/grammar/grammar-exercise-types";
+import { grammarCloze } from "@/lib/grammar/grammar-cloze";
+
+/**
+ * Unit 123 exercises — In/At/On (Position) 1 (English Grammar in Use · Intermediate).
+ */
+export const U123_IN_AT_ON_POSITION_1_EXERCISES: readonly GrammarExercise[] = [
+  grammarCloze(
+    "u123-1-1",
+    "123.1 · in / at / on",
+    "Where's the label? __________ the bottle.",
+    "On",
+    { alternatives: ["on"], explanation: "On the bottle." },
+  ),
+  grammarCloze(
+    "u123-1-3",
+    "123.1 · in / at / on",
+    "Where's the car waiting? __________ the traffic lights.",
+    "At",
+    { alternatives: ["at"], explanation: "At the traffic lights." },
+  ),
+  grammarCloze(
+    "u123-1-5",
+    "123.1 · in / at / on",
+    "Where are the shelves? __________ the wall.",
+    "On",
+    { alternatives: ["on"], explanation: "On the wall." },
+  ),
+  grammarCloze(
+    "u123-1-6",
+    "123.1 · in / at / on",
+    "Where's the Eiffel Tower? __________ Paris.",
+    "In",
+    { alternatives: ["in"], explanation: "In Paris." },
+  ),
+  grammarCloze(
+    "u123-1-8",
+    "123.1 · in / at / on",
+    "Where are the children playing? __________ the beach.",
+    "On",
+    { alternatives: ["on"], explanation: "On the beach." },
+  ),
+  grammarCloze(
+    "u123-2-1",
+    "123.2 · in / at / on",
+    "There were some people swimming __________ the river.",
+    "in",
+    { explanation: "in the river." },
+  ),
+  grammarCloze(
+    "u123-2-2",
+    "123.2 · in / at / on",
+    "One of the strings __________ my guitar is broken.",
+    "on",
+    { explanation: "on my guitar." },
+  ),
+  grammarCloze(
+    "u123-2-3",
+    "123.2 · in / at / on",
+    "Leave the motorway __________ junction 14 and then turn left.",
+    "at",
+    { explanation: "at junction 14." },
+  ),
+  grammarCloze(
+    "u123-2-4",
+    "123.2 · in / at / on",
+    "He was holding something __________ his hand, but I couldn't see what it was.",
+    "in",
+    { explanation: "in his hand." },
+  ),
+  grammarCloze(
+    "u123-2-6",
+    "123.2 · in / at / on",
+    "You can go skiing __________ the mountains near here.",
+    "in",
+    { explanation: "in the mountains." },
+  ),
+  grammarCloze(
+    "u123-2-7",
+    "123.2 · in / at / on",
+    "There's nobody living __________ the island. It's uninhabited.",
+    "on",
+    { explanation: "on the island." },
+  ),
+  grammarCloze(
+    "u123-2-8",
+    "123.2 · in / at / on",
+    "He spends most of the day sitting __________ the window and looking outside.",
+    "at",
+    { explanation: "at the window." },
+  ),
+  grammarCloze(
+    "u123-3-1",
+    "123.3 · in / at / on",
+    "There was a long queue of people __________ the bus stop.",
+    "at",
+    { explanation: "at the bus stop." },
+  ),
+  grammarCloze(
+    "u123-3-2",
+    "123.3 · in / at / on",
+    "Nicola was wearing a silver ring __________ her little finger.",
+    "on",
+    { explanation: "on her little finger." },
+  ),
+  grammarCloze(
+    "u123-3-3",
+    "123.3 · in / at / on",
+    "There was a security guard standing __________ the entrance to the building.",
+    "at",
+    { explanation: "at the entrance." },
+  ),
+  grammarCloze(
+    "u123-3-4",
+    "123.3 · in / at / on",
+    "There was no name __________ the door.",
+    "on",
+    { explanation: "on the door." },
+  ),
+  grammarCloze(
+    "u123-3-5",
+    "123.3 · in / at / on",
+    "There are plenty of shops and restaurants __________ the town centre.",
+    "in",
+    { explanation: "in the town centre." },
+  ),
+  grammarCloze(
+    "u123-3-6",
+    "123.3 · in / at / on",
+    "You'll find the weather forecast __________ the back page of the newspaper.",
+    "on",
+    { explanation: "on the back page." },
+  ),
+  grammarCloze(
+    "u123-3-8",
+    "123.3 · in / at / on",
+    "I couldn't spend the whole day sitting __________ a desk.",
+    "at",
+    { explanation: "at a desk." },
+  ),
+  grammarCloze(
+    "u123-3-11",
+    "123.3 · in / at / on",
+    "Have you ever slept __________ a tent?",
+    "in",
+    { explanation: "in a tent." },
+  ),
+];

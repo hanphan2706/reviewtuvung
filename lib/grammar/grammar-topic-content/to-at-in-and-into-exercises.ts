@@ -1,0 +1,151 @@
+import type { GrammarExercise } from "@/lib/grammar/grammar-exercise-types";
+import { grammarCloze } from "@/lib/grammar/grammar-cloze";
+
+/**
+ * Unit 126 exercises — To, At, In and Into (English Grammar in Use · Intermediate).
+ */
+export const U126_TO_AT_IN_AND_INTO_EXERCISES: readonly GrammarExercise[] = [
+  grammarCloze(
+    "u126-1-1",
+    "126.1 · to / at / in / into",
+    "Three people were taken __________ hospital after the accident.",
+    "to",
+    { explanation: "taken to hospital." },
+  ),
+  grammarCloze(
+    "u126-1-3",
+    "126.1 · to / at / in / into",
+    "We left our luggage __________ the station and went to find something to eat.",
+    "at",
+    { explanation: "at the station (vị trí)." },
+  ),
+  grammarCloze(
+    "u126-1-4",
+    "126.1 · to / at / in / into",
+    "Shall we take a taxi __________ the station or shall we walk?",
+    "to",
+    { explanation: "taxi to the station (di chuyển)." },
+  ),
+  grammarCloze(
+    "u126-1-5",
+    "126.1 · to / at / in / into",
+    "I have to go __________ the bank today. What time does it open?",
+    "to",
+    { explanation: "go to the bank." },
+  ),
+  grammarCloze(
+    "u126-1-6",
+    "126.1 · to / at / in / into",
+    "The Amazon flows __________ the Atlantic Ocean.",
+    "into",
+    { explanation: "flows into the Atlantic." },
+  ),
+  grammarCloze(
+    "u126-1-8",
+    "126.1 · to / at / in / into",
+    "Have you ever been __________ Canada?",
+    "to",
+    { explanation: "been to Canada." },
+  ),
+  grammarCloze(
+    "u126-1-9",
+    "126.1 · to / at / in / into",
+    "I lost my key, but I managed to climb __________ the house through a window.",
+    "into",
+    { explanation: "climb into the house." },
+  ),
+  grammarCloze(
+    "u126-1-10",
+    "126.1 · to / at / in / into",
+    "We got stuck in a traffic jam on our way __________ the airport.",
+    "to",
+    { explanation: "on our way to the airport." },
+  ),
+  grammarCloze(
+    "u126-1-11",
+    "126.1 · to / at / in / into",
+    "We had lunch __________ the airport while we were waiting for our plane.",
+    "at",
+    { explanation: "at the airport." },
+  ),
+  grammarCloze(
+    "u126-1-12",
+    "126.1 · to / at / in / into",
+    "It took us four hours to get __________ the top of the mountain.",
+    "to",
+    { explanation: "get to the top." },
+  ),
+  grammarCloze(
+    "u126-1-13",
+    "126.1 · to / at / in / into",
+    "Welcome __________ the hotel. We hope you enjoy your stay here.",
+    "to",
+    { explanation: "Welcome to… (không: Welcome in)." },
+  ),
+  grammarCloze(
+    "u126-1-14",
+    "126.1 · to / at / in / into",
+    "We drove two kilometres and then turned __________ a narrow side street.",
+    "into",
+    { explanation: "turned into a side street." },
+  ),
+  grammarCloze(
+    "u126-1-15",
+    "126.1 · to / at / in / into",
+    "Did you enjoy your visit __________ the zoo?",
+    "to",
+    { explanation: "visit to the zoo." },
+  ),
+  grammarCloze(
+    "u126-1-18",
+    "126.1 · to / at / in / into",
+    "Carl was born __________ Chicago, but his family moved to Boston when he was three.",
+    "in",
+    { explanation: "born in Chicago." },
+  ),
+  grammarCloze(
+    "u126-3-1",
+    "126.3 · get / arrive",
+    "What time does this train get __________ London?",
+    "to",
+    { explanation: "get to London." },
+  ),
+  grammarCloze(
+    "u126-3-2",
+    "126.3 · get / arrive",
+    "They arrived __________ Barcelona a few days ago.",
+    "in",
+    { explanation: "arrive in + thành phố." },
+  ),
+  grammarCloze(
+    "u126-3-4",
+    "126.3 · get / arrive",
+    "What time do you usually arrive __________ work in the morning?",
+    "at",
+    { explanation: "arrive at work." },
+  ),
+  grammarCloze(
+    "u126-3-5",
+    "126.3 · get / arrive",
+    "When we got __________ the cinema, there was a long queue outside.",
+    "to",
+    { explanation: "got to the cinema." },
+  ),
+  grammarCloze(
+    "u126-4-1",
+    "126.4 · get into / on / off",
+    "A friend stopped and offered you a lift. You opened the door. → I got __________ the car.",
+    "into",
+    {
+      alternatives: ["in"],
+      explanation: "got into / in the car.",
+    },
+  ),
+  grammarCloze(
+    "u126-4-2",
+    "126.4 · get into / on / off",
+    "Your bus came and the doors opened. → I got __________ the bus.",
+    "on",
+    { explanation: "got on the bus." },
+  ),
+];

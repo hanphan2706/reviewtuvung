@@ -413,6 +413,14 @@ function SelfStudySection() {
       image: "/luyen%20nghe%201.jpg",
       summary: "Bạn có biết nghe cũng phải đúng kỹ thuật và có mục đích thì mới tiến bộ không?",
     },
+    {
+      slug: "grammar" as const,
+      href: "/tu-hoc/ngu-phap",
+      priceHint: "Ngữ pháp",
+      image: "/ngu%20phap%202.jpg",
+      summary:
+        'Biến ngữ pháp trở thành một công cụ giúp bạn sử dụng tiếng Anh tốt hơn, chứ không còn là "nỗi ám ảnh vô cớ" nữa',
+    },
   ];
 
   return (
@@ -454,7 +462,9 @@ function SelfStudySection() {
                           ? "object-cover object-[50%_36%]"
                           : course.slug === "coaching"
                             ? "object-cover object-[50%_28%]"
-                            : "object-cover object-center"
+                            : course.slug === "grammar"
+                              ? "object-cover object-[50%_88%]"
+                              : "object-cover object-center"
                       }
                       sizes="(max-width:640px) 100vw, 280px"
                     />

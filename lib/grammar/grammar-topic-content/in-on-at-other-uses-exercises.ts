@@ -1,0 +1,148 @@
+import type { GrammarExercise } from "@/lib/grammar/grammar-exercise-types";
+import { grammarCloze } from "@/lib/grammar/grammar-cloze";
+
+/**
+ * Unit 127 exercises — In/On/At (Other Uses) (English Grammar in Use · Intermediate).
+ */
+export const U127_IN_ON_AT_OTHER_USES_EXERCISES: readonly GrammarExercise[] = [
+  grammarCloze(
+    "u127-1-1",
+    "127.1 · in + phrase",
+    "Don't go out __________ the rain. Wait until it stops.",
+    "in",
+    { explanation: "in the rain." },
+  ),
+  grammarCloze(
+    "u127-1-2",
+    "127.1 · in + phrase",
+    "Matt doesn't go out much __________ cold weather.",
+    "in",
+    { explanation: "in cold weather." },
+  ),
+  grammarCloze(
+    "u127-1-3",
+    "127.1 · in + phrase",
+    "The movie was __________ French with English subtitles.",
+    "in",
+    { explanation: "in French." },
+  ),
+  grammarCloze(
+    "u127-1-4",
+    "127.1 · in + phrase",
+    "They fell __________ love almost immediately.",
+    "in",
+    { explanation: "fell in love." },
+  ),
+  grammarCloze(
+    "u127-1-5",
+    "127.1 · in + phrase",
+    "I don't feel like going to a party tonight. I'm not __________ the mood.",
+    "in",
+    { explanation: "in the mood." },
+  ),
+  grammarCloze(
+    "u127-1-6",
+    "127.1 · in + phrase",
+    "It's too hot here. I'm going to sit __________ the shade under that tree.",
+    "in",
+    { explanation: "in the shade." },
+  ),
+  grammarCloze(
+    "u127-1-7",
+    "127.1 · in + phrase",
+    "Amanda thought the restaurant was OK, but __________ my opinion it wasn't very good.",
+    "in",
+    { explanation: "in my opinion." },
+  ),
+  grammarCloze(
+    "u127-2-1",
+    "127.2 · on + phrase",
+    "I heard the weather forecast __________ the radio.",
+    "on",
+    { explanation: "on the radio." },
+  ),
+  grammarCloze(
+    "u127-2-2",
+    "127.2 · on + phrase",
+    "Workers at the company have gone __________ strike for better pay.",
+    "on",
+    { explanation: "on strike." },
+  ),
+  grammarCloze(
+    "u127-2-4",
+    "127.2 · on + phrase",
+    "There was panic when people realised that the building was __________ fire.",
+    "on",
+    { explanation: "on fire." },
+  ),
+  grammarCloze(
+    "u127-2-7",
+    "127.2 · on + phrase",
+    "Is there anything worth watching __________ TV?",
+    "on",
+    { explanation: "on TV." },
+  ),
+  grammarCloze(
+    "u127-2-8",
+    "127.2 · on + phrase",
+    "I'm sorry. It was an accident. I didn't do it __________ purpose.",
+    "on",
+    { explanation: "on purpose." },
+  ),
+  grammarCloze(
+    "u127-2-9",
+    "127.2 · on + phrase",
+    "If you are __________ a diet, there are certain things you're not allowed to eat.",
+    "on",
+    { explanation: "on a diet." },
+  ),
+  grammarCloze(
+    "u127-2-10",
+    "127.2 · on + phrase",
+    "We'll be __________ holiday from Friday.",
+    "on",
+    { explanation: "on holiday." },
+  ),
+  grammarCloze(
+    "u127-2-11",
+    "127.2 · on + phrase",
+    "Jane often has to go away __________ business.",
+    "on",
+    { explanation: "on business." },
+  ),
+  grammarCloze(
+    "u127-2-12",
+    "127.2 · on + phrase",
+    "Some of the exam questions were hard, but __________ the whole it was OK.",
+    "on",
+    { explanation: "on the whole." },
+  ),
+  grammarCloze(
+    "u127-3-1",
+    "127.3 · in / on / at",
+    "Water boils __________ 100 degrees Celsius.",
+    "at",
+    { explanation: "at 100 degrees." },
+  ),
+  grammarCloze(
+    "u127-3-2",
+    "127.3 · in / on / at",
+    "When I was 14, I went __________ a trip to France organised by my school.",
+    "on",
+    { explanation: "on a trip." },
+  ),
+  grammarCloze(
+    "u127-3-3",
+    "127.3 · in / on / at",
+    "Julia's grandmother died recently __________ the age of 90.",
+    "at",
+    { explanation: "at the age of 90." },
+  ),
+  grammarCloze(
+    "u127-3-4",
+    "127.3 · in / on / at",
+    "Can you turn the light on? I don't want to sit __________ the dark.",
+    "in",
+    { explanation: "in the dark." },
+  ),
+];
