@@ -203,3 +203,62 @@ export function grammarProgressBarColor(difficulty: GrammarTopic["difficulty"]):
   if (difficulty === "Hard") return "bg-[#c0392b]";
   return "bg-[#000001]";
 }
+
+/** Card subtitle: keep cue like "I do", strip "khung Unit N" / book filler. */
+export function grammarTopicCardSubtitle(description: string): string | null {
+  const cleaned = description
+    .replace(/\s*[—–-]\s*khung\s+Unit\s+\d+\.?\s*$/i, "")
+    .replace(/\s*khung\s+Unit\s+\d+\.?\s*$/i, "")
+    .trim();
+  if (!cleaned) return null;
+  if (/^Unit\s+\d+\s+trong\s+English Grammar in Use/i.test(cleaned)) return null;
+  return cleaned;
+}
+
+export const GRAMMAR_PATH_LEVEL_DIFFICULTY: Record<
+  GrammarPathLevelId,
+  GrammarTopic["difficulty"]
+> = {
+  foundation: "Easy",
+  intermediate: "Medium",
+  advanced: "Hard",
+};
+
+export const GRAMMAR_PATH_LEVEL_IDS: readonly GrammarPathLevelId[] = [
+  "foundation",
+  "intermediate",
+  "advanced",
+] as const;
+
+export function isGrammarPathLevelId(value: string): value is GrammarPathLevelId {
+  return (GRAMMAR_PATH_LEVEL_IDS as readonly string[]).includes(value);
+}
+
+export function grammarPathLevelHref(levelId: GrammarPathLevelId): string {
+  return `/tu-hoc/ngu-phap/lo-trinh/${levelId}`;
+}
+
+export function getGrammarPathLevelDefinition(
+  levelId: GrammarPathLevelId,
+): Omit<GrammarPathLevel, "progressPercent" | "statusLabel" | "completed"> {
+  const level = buildGrammarPathLevels({ Easy: 0, Medium: 0, Hard: 0 }).find(
+    (item) => item.id === levelId,
+  );
+  if (!level) {
+    throw new Error(`Unknown grammar path level: ${levelId}`);
+  }
+  return {
+    id: level.id,
+    titleEn: level.titleEn,
+    titleVi: level.titleVi,
+    cefrLabel: level.cefrLabel,
+    description: level.description,
+    locked: level.locked,
+    topicCount: level.topicCount,
+  };
+}
+
+export function listTopicsForPathLevel(levelId: GrammarPathLevelId): readonly GrammarTopic[] {
+  const difficulty = GRAMMAR_PATH_LEVEL_DIFFICULTY[levelId];
+  return EGIU_GRAMMAR_TOPICS.filter((topic) => topic.difficulty === difficulty);
+}

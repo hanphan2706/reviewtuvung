@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight, Check, ListFilter, Search } from "lucide-react";
 import { useGrammarAuth } from "@/components/grammar/grammar-auth-context";
 import { studyHubPageContentClass } from "@/components/study-module/study-hub-shell";
@@ -15,6 +16,7 @@ import {
 import {
   buildGrammarPathLevels,
   filterGrammarTopics,
+  grammarPathLevelHref,
   GRAMMAR_CATEGORY_FILTER_OPTIONS,
   GRAMMAR_EXPLORE_TOPICS,
   GRAMMAR_LEARNING_PROGRESS_LABELS,
@@ -23,6 +25,7 @@ import {
   GRAMMAR_TOPICS_SECTION_SUBTITLE,
   grammarDifficultyColor,
   grammarProgressBarColor,
+  grammarTopicCardSubtitle,
   type GrammarCategoryFilter,
   type GrammarPathLevel,
   type GrammarTopic,
@@ -116,10 +119,10 @@ function LearningProgressCard({
 }
 
 function WeeklyFeaturedCard({
-  onLearn,
+  onPractice,
   onTheory,
 }: {
-  onLearn: (slug: string) => void;
+  onPractice: (slug: string) => void;
   onTheory: (slug: string) => void;
 }) {
   const featured = useMemo(() => getGrammarWeeklyFeatured(), []);
@@ -138,23 +141,25 @@ function WeeklyFeaturedCard({
       <div className="absolute inset-0 bg-black/50 pointer-events-none" aria-hidden />
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent pointer-events-none" aria-hidden />
 
-      <span className={`absolute top-6 right-6 z-20 md:top-8 md:right-8 ${grammarBadgeClass}`}>
-        Chủ điểm tuần này
-      </span>
+      <div className="relative z-10 flex min-h-0 flex-1 flex-col p-5 text-white sm:p-6 md:p-8">
+        <span className={`mb-3 self-end sm:absolute sm:right-6 sm:top-6 sm:mb-0 md:right-8 md:top-8 ${grammarBadgeClass}`}>
+          Chủ điểm tuần này
+        </span>
 
-      <div className="relative z-10 flex min-h-0 flex-1 flex-col p-6 text-white md:p-8 pr-28 md:pr-36">
-        <h2 className="font-serif text-3xl font-bold leading-tight text-white md:text-[2rem]">
+        <h2 className="mt-1 font-serif text-2xl font-bold leading-tight text-white sm:mt-0 sm:max-w-[calc(100%-9rem)] sm:text-3xl md:text-[2rem]">
           {featured.title}
         </h2>
-        <p className="mt-4 text-sm leading-relaxed text-white/75 md:text-base">{featured.description}</p>
+        <p className="mt-3 text-sm leading-relaxed text-white/75 sm:mt-4 md:text-base">
+          {featured.description}
+        </p>
 
-        <div className="mt-auto flex flex-wrap gap-3 pt-10">
+        <div className="mt-auto flex flex-wrap gap-3 pt-8 sm:pt-10">
           <button
             type="button"
-            onClick={() => onLearn(featured.slug)}
+            onClick={() => onPractice(featured.slug)}
             className="inline-flex h-10 items-center rounded-lg bg-white px-5 text-sm font-semibold text-[#000001] transition hover:bg-white/90"
           >
-            Học ngay
+            Kiểm tra ngay
           </button>
           <button
             type="button"
@@ -195,13 +200,9 @@ function PathLevelIcon({ level }: { level: GrammarPathLevel }) {
 function PathLevelRow({ level }: { level: GrammarPathLevel }) {
   const isActive = level.id === "intermediate";
   const isLocked = level.locked;
+  const href = grammarPathLevelHref(level.id);
 
-  return (
-    <article
-      className={`rounded-lg border bg-white p-5 shadow-sm md:p-6 ${
-        isLocked ? "border-[#E4E4E7] opacity-60" : "border-[#E4E4E7]"
-      } ${isActive ? "ring-1 ring-[#000001]/10" : ""}`}
-    >
+  const body = (
       <div className="flex gap-4 md:gap-5">
         <PathLevelIcon level={level} />
         <div className="min-w-0 flex-1">
@@ -248,7 +249,26 @@ function PathLevelRow({ level }: { level: GrammarPathLevel }) {
           </div>
         </div>
       </div>
-    </article>
+  );
+
+  const shellClass = `block w-full rounded-lg border bg-white p-5 text-left shadow-sm transition md:p-6 ${
+    isLocked
+      ? "cursor-not-allowed border-[#E4E4E7] opacity-60"
+      : "border-[#E4E4E7] hover:border-[#000001]/20 hover:shadow-md"
+  } ${isActive ? "ring-1 ring-[#000001]/10" : ""}`;
+
+  if (isLocked) {
+    return (
+      <div className={shellClass} aria-disabled>
+        {body}
+      </div>
+    );
+  }
+
+  return (
+    <Link href={href} className={shellClass}>
+      {body}
+    </Link>
   );
 }
 
@@ -261,6 +281,8 @@ function ExploreTopicCard({
   progressPercent: number;
   onOpen: (slug: string) => void;
 }) {
+  const subtitle = grammarTopicCardSubtitle(topic.description);
+
   return (
     <button
       type="button"
@@ -271,7 +293,11 @@ function ExploreTopicCard({
         Unit {topic.unitNumber} · {topic.categoryLabel}
       </p>
       <h3 className="mt-2 font-serif text-lg font-bold leading-snug text-[#000001]">{topic.title}</h3>
-      <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-[#47464b]">{topic.description}</p>
+      {subtitle ? (
+        <p className="mt-2 line-clamp-3 flex-1 text-sm leading-relaxed text-[#47464b]">{subtitle}</p>
+      ) : (
+        <div className="flex-1" />
+      )}
       <div className="mt-5 space-y-2">
         <div className="flex items-center justify-between gap-2 text-xs">
           <span className="text-[#47464b]/70">
@@ -384,7 +410,7 @@ export function GrammarHubView() {
   return (
     <div className={studyHubPageContentClass}>
       <div className="grid gap-4 lg:grid-cols-[minmax(0,1.85fr)_minmax(300px,1fr)] lg:items-stretch lg:gap-5">
-        <WeeklyFeaturedCard onLearn={openPractice} onTheory={openTheory} />
+        <WeeklyFeaturedCard onPractice={openPractice} onTheory={openTheory} />
         <LearningProgressCard
           loggedIn={loggedIn}
           progressBySlug={progressBySlug}
@@ -393,9 +419,9 @@ export function GrammarHubView() {
       </div>
 
       <section id={GRAMMAR_PATH_SECTION_ID} className="mt-12 scroll-mt-24 md:mt-14">
-        <div className="mb-6 flex items-center justify-between gap-4">
-          <h2 className="font-serif text-2xl font-bold leading-none text-[#000001]">Lộ trình học</h2>
-          <span className="shrink-0 text-right text-xs font-medium uppercase tracking-[0.12em] text-[#47464b]/60">
+        <div className="mb-6 flex flex-col gap-2 md:flex-row md:items-center md:justify-between md:gap-4">
+          <h2 className="font-serif text-2xl font-bold leading-tight text-[#000001]">Lộ trình học</h2>
+          <span className="text-xs font-medium uppercase tracking-[0.12em] text-[#47464b]/60 md:shrink-0 md:whitespace-nowrap md:text-right">
             Theo chuẩn khung tham chiếu CEFR
           </span>
         </div>
@@ -407,15 +433,16 @@ export function GrammarHubView() {
       </section>
 
       <section id={GRAMMAR_TOPICS_SECTION_ID} className="mt-12 scroll-mt-24 md:mt-14">
-        <div className="mb-6 flex items-start justify-between gap-4">
-          <div className="min-w-0 max-w-3xl">
+        <div className="mb-6 flex flex-col gap-4">
+          <div className="min-w-0">
             <h2 className="font-serif text-2xl font-bold text-[#000001]">Khám phá chủ điểm riêng lẻ</h2>
             <p className="mt-3 text-sm leading-relaxed text-[#47464b] md:text-base">
               {GRAMMAR_TOPICS_SECTION_SUBTITLE}
             </p>
           </div>
-          <div className="flex shrink-0 items-center gap-2 pt-1">
-            <div ref={filterRef} className="relative">
+
+          <div className="flex w-full items-center justify-end gap-2">
+            <div ref={filterRef} className="relative shrink-0">
               <button
                 type="button"
                 aria-label="Lọc theo chủ điểm"
@@ -462,9 +489,13 @@ export function GrammarHubView() {
             </div>
 
             <div
-              className={`flex h-9 flex-row-reverse items-center overflow-hidden rounded-lg border bg-white transition-[width,border-color] duration-300 ease-out ${
+              className={`flex h-10 min-w-0 flex-row-reverse items-center overflow-hidden rounded-lg border bg-white transition-[width,border-color] duration-300 ease-out ${
                 searchOpen || query.trim() ? "border-[#000001]/35" : "border-[#E4E4E7]"
-              } ${searchOpen ? "w-[min(100vw-5rem,15rem)]" : "w-9"}`}
+              } ${
+                searchOpen
+                  ? "w-full max-w-none flex-1 sm:w-[min(100%,18rem)] sm:flex-none"
+                  : "w-10 shrink-0"
+              }`}
             >
               <button
                 type="button"
@@ -479,7 +510,7 @@ export function GrammarHubView() {
                   setSearchOpen(true);
                   setFilterOpen(false);
                 }}
-                className="inline-flex size-9 shrink-0 items-center justify-center text-[#000001] transition hover:bg-[#fafafa]"
+                className="inline-flex size-10 shrink-0 items-center justify-center text-[#000001] transition hover:bg-[#fafafa]"
               >
                 <Search className="size-4" strokeWidth={2} aria-hidden />
               </button>
@@ -497,8 +528,8 @@ export function GrammarHubView() {
                 placeholder="Tìm chủ điểm..."
                 aria-label="Tìm chủ điểm theo tên"
                 tabIndex={searchOpen ? 0 : -1}
-                className={`h-full min-w-0 flex-1 border-0 bg-transparent text-xs font-medium text-[#000001] outline-none placeholder:text-[#47464b]/70 ${
-                  searchOpen ? "px-2 opacity-100" : "pointer-events-none w-0 px-0 opacity-0"
+                className={`h-full min-w-0 flex-1 border-0 bg-transparent text-base font-medium text-[#000001] outline-none placeholder:text-[#47464b]/70 ${
+                  searchOpen ? "px-3 opacity-100" : "pointer-events-none w-0 px-0 opacity-0"
                 }`}
               />
             </div>
