@@ -26,6 +26,12 @@ const SECTION_IMAGES: Partial<Record<VocabularyUnitCatalogEntry["section"], stri
 const DEFAULT_IMAGE =
   "https://images.unsplash.com/photo-1490645933887-1cefb8bd438d?auto=format&fit=crop&w=1200&q=80";
 
+/** Unit-specific images when the section default is off-topic. */
+const UNIT_SHOWCASE_IMAGES: Partial<Record<string, string>> = {
+  "eviu-el-22-eating-out":
+    "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+};
+
 /** Unsplash URLs that currently 404 — never use for the large featured hero card. */
 const BROKEN_SHOWCASE_IMAGE_URLS = new Set<string>([
   SECTION_IMAGES.world,
@@ -35,7 +41,7 @@ const BROKEN_SHOWCASE_IMAGE_URLS = new Set<string>([
 ].filter((url): url is string => Boolean(url)));
 
 export function resolveShowcaseImageUrl(entry: VocabularyUnitCatalogEntry): string {
-  return SECTION_IMAGES[entry.section] ?? DEFAULT_IMAGE;
+  return UNIT_SHOWCASE_IMAGES[entry.id] ?? SECTION_IMAGES[entry.section] ?? DEFAULT_IMAGE;
 }
 
 /** Featured card shows a full-bleed image — exclude decks whose section image is known broken. */
@@ -99,6 +105,30 @@ function catalogToShowcaseItem(
   };
 }
 
+/** Compact side cards are narrow — skip titles that typically wrap to 2+ lines. */
+const COMPACT_TITLE_MAX_CHARS = 22;
+const COMPACT_TITLE_MAX_WORDS = 3;
+
+function isCompactTitleFriendly(entry: VocabularyUnitCatalogEntry): boolean {
+  const title = entry.title.trim();
+  if (!title) return false;
+  const words = title.split(/\s+/).filter(Boolean);
+  if (words.length > COMPACT_TITLE_MAX_WORDS) return false;
+  return title.length <= COMPACT_TITLE_MAX_CHARS;
+}
+
+function takeNext(
+  pool: readonly VocabularyUnitCatalogEntry[],
+  used: Set<string>,
+  predicate?: (entry: VocabularyUnitCatalogEntry) => boolean,
+): VocabularyUnitCatalogEntry | undefined {
+  const found = pool.find(
+    (entry) => !used.has(entry.id) && (predicate ? predicate(entry) : true),
+  );
+  if (found) used.add(found.id);
+  return found;
+}
+
 /** Chọn 4 unit cho khối gợi ý trên hub — xoay theo ngày UTC, deterministic khi hydrate. */
 export function buildRandomVocabularyShowcase(
   catalog: readonly VocabularyUnitCatalogEntry[],
@@ -113,11 +143,24 @@ export function buildRandomVocabularyShowcase(
     throw new Error("No vocabulary units with a working showcase image for the featured slot.");
   }
 
-  const secondary = shuffled.filter((entry) => entry.id !== featuredEntry.id).slice(0, 3);
-  const variants: CuratedShowcaseItem["variant"][] = ["featured", "wide", "compact-purple", "compact"];
+  const used = new Set<string>([featuredEntry.id]);
+
+  // Prefer long titles in the wide row; keep compact duo single-line.
+  const wideEntry =
+    takeNext(shuffled, used, (entry) => !isCompactTitleFriendly(entry)) ??
+    takeNext(shuffled, used);
+  const compactPurple =
+    takeNext(shuffled, used, isCompactTitleFriendly) ?? takeNext(shuffled, used);
+  const compact =
+    takeNext(shuffled, used, isCompactTitleFriendly) ?? takeNext(shuffled, used);
+
+  const secondary = [wideEntry, compactPurple, compact].filter(
+    (entry): entry is VocabularyUnitCatalogEntry => Boolean(entry),
+  );
+  const variants: CuratedShowcaseItem["variant"][] = ["wide", "compact-purple", "compact"];
 
   return [
     catalogToShowcaseItem(featuredEntry, "featured"),
-    ...secondary.map((entry, index) => catalogToShowcaseItem(entry, variants[index + 1] ?? "compact")),
+    ...secondary.map((entry, index) => catalogToShowcaseItem(entry, variants[index] ?? "compact")),
   ];
 }

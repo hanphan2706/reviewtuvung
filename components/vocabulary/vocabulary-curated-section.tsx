@@ -18,8 +18,8 @@ export function VocabularyCuratedSection({ showViewAll = false, hideHeading = fa
   return (
     <section className={hideHeading ? "" : "mt-10 md:mt-14"}>
       {!hideHeading ? (
-        <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-          <div className="max-w-2xl">
+        <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
+          <div className="min-w-0 flex-1">
             <h2 className="font-serif text-xl font-bold text-[#000001] md:text-2xl">Bộ từ vựng gợi ý</h2>
             <p className="mt-2 text-sm leading-relaxed text-[#47464b] md:text-base">
               Biến thư viện từ vựng từ các nguồn uy tín như English Vocabulary in Use hoặc Vocabulary for IELTS trở

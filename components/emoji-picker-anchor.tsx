@@ -4,7 +4,7 @@ import { Smile } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
-export type EmojiPickerAnchorPlacement = "corner-bottom" | "center-right";
+export type EmojiPickerAnchorPlacement = "corner-bottom" | "center-right" | "inline";
 
 type EmojiPickerAnchorProps = {
   onPick: (emoji: string) => void;
@@ -12,7 +12,8 @@ type EmojiPickerAnchorProps = {
   "aria-label"?: string;
   /**
    * `corner-bottom`: góc dưới phải (ô nhiều dòng / rich text).
-   * `center-right`: giữa theo chiều dọc bên phải (input một dòng).
+   * `center-right`: giữa theo chiều dọc bên phải (input một dòng, absolute).
+   * `inline`: nút nằm trong flex hàng với input (không absolute).
    */
   placement?: EmojiPickerAnchorPlacement;
 };
@@ -129,9 +130,11 @@ export function EmojiPickerAnchor({
   };
 
   const btnPositionClass =
-    placement === "center-right"
-      ? "absolute right-1.5 top-1/2 z-10 -translate-y-1/2"
-      : "absolute bottom-1.5 right-1.5 z-10";
+    placement === "inline"
+      ? "relative z-10 shrink-0"
+      : placement === "center-right"
+        ? "absolute right-1.5 top-1/2 z-10 -translate-y-1/2"
+        : "absolute bottom-1.5 right-1.5 z-10";
 
   return (
     <>
@@ -142,12 +145,12 @@ export function EmojiPickerAnchor({
           e.preventDefault();
           toggle();
         }}
-        className={`${btnPositionClass} flex h-9 w-9 items-center justify-center rounded-lg text-zinc-500 transition hover:bg-zinc-100 hover:text-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#4b2876]/30`}
+        className={`${btnPositionClass} inline-flex size-8 items-center justify-center rounded-lg text-zinc-500 transition hover:bg-zinc-100 hover:text-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#4b2876]/30`}
         aria-label={ariaLabel}
         aria-expanded={open}
         aria-haspopup="dialog"
       >
-        <Smile className="h-[22px] w-[22px]" strokeWidth={1.75} aria-hidden />
+        <Smile className="size-[18px]" strokeWidth={1.75} aria-hidden />
       </button>
 
       {open && typeof document !== "undefined"

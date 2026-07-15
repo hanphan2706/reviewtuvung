@@ -55,17 +55,3 @@ export function computeDeckLearnedPercent(words: readonly Word[]): number {
   const studied = words.filter((w) => w.lastReviewedAt != null).length;
   return Math.round((studied / words.length) * 100);
 }
-
-export function inferDeckBadge(deckName: string): string {
-  const upper = deckName.toUpperCase();
-  if (/\bA1\b/.test(deckName) || upper.includes("ELEMENTARY")) return "A1";
-  if (/\bA2\b/.test(deckName)) return "A2";
-  if (/\bB1\b/.test(deckName)) return "B1";
-  if (/\bB2\b/.test(deckName)) return "B2";
-  if (upper.includes("IELTS")) return "IELTS";
-  if (upper.includes("SAT")) return "SAT";
-  if (upper.includes("TOEFL")) return "TOEFL";
-  if (upper.includes("BUSINESS")) return "BUSINESS";
-  if (upper.includes("MEDICAL")) return "MEDICAL";
-  return "Cá nhân";
-}

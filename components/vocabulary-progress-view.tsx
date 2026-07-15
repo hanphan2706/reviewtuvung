@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo } from "react";
 import { studyHubSubpageContentClass } from "@/components/study-module/study-hub-shell";
-import { useVocabularyAuth } from "@/components/vocabulary/vocabulary-auth-context";
 import { VocabularyWeeklyChart } from "@/components/vocabulary/vocabulary-library-sections";
 import { VocabularySubpageHeader } from "@/components/vocabulary/vocabulary-subpage-header";
 import { useNowTick } from "@/hooks/use-now-tick";
@@ -102,7 +101,6 @@ function ProgressRecallChart({ series }: { series: RecallDayPoint[] }) {
 }
 
 export function VocabularyProgressView() {
-  const { navigateWithAuth } = useVocabularyAuth();
   const now = useNowTick();
   const words = useSrsStore((s) => s.words);
   const settings = useSrsStore((s) => s.settings);
@@ -137,18 +135,9 @@ export function VocabularyProgressView() {
       <VocabularySubpageHeader
         title="Theo dõi tiến độ"
         description="Xem lượt ôn tập, chuỗi học và mức ghi nhớ theo thời gian — dữ liệu lưu trên thiết bị của bạn."
-        trailing={
-          <button
-            type="button"
-            onClick={() => navigateWithAuth("/review")}
-            className="inline-flex h-10 items-center justify-center rounded-xl bg-[#4b2876] px-4 text-sm font-semibold text-white transition hover:bg-[#3f2163]"
-          >
-            Ôn tập ngay
-          </button>
-        }
       />
 
-      <div className="grid gap-4 lg:grid-cols-2 lg:gap-5">
+      <div className="grid items-start gap-4 lg:grid-cols-2 lg:gap-5">
         <VocabularyWeeklyChart
           bars={weekBars}
           reviewedToday={reviewedToday}
@@ -156,7 +145,7 @@ export function VocabularyProgressView() {
           streakDays={streakDays}
         />
 
-        <section className="flex flex-col justify-center p-5 md:p-6">
+        <section className="flex flex-col">
           <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#4b2876]">
             Tổng quan
           </p>

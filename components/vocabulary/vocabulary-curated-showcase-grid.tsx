@@ -125,7 +125,7 @@ function SoonShowcaseCard({ item }: { item: Extract<CuratedShowcaseItem, { type:
       type="button"
       disabled
       title="Sắp ra mắt — bộ từ đang được biên soạn"
-      className={`${soonClass} group flex h-full min-h-[120px] w-full flex-col justify-between rounded-2xl p-5 text-left shadow-sm md:p-6 ${
+      className={`${soonClass} group flex h-full min-h-[120px] w-full flex-col rounded-2xl p-5 text-left shadow-sm md:p-6 ${
         purple ? "bg-[#4b2876] text-white" : "border border-[#E4E4E7] bg-white"
       }`}
     >
@@ -136,12 +136,12 @@ function SoonShowcaseCard({ item }: { item: Extract<CuratedShowcaseItem, { type:
       >
         <ShowcaseIcon icon={item.icon} />
       </span>
-      <div>
-        <h3 className={`font-serif text-lg font-bold ${purple ? "text-white" : "text-[#000001]"}`}>
-          {item.title}
-        </h3>
-        <p className={`mt-1 text-sm ${purple ? "text-white/75" : "text-[#47464b]"}`}>{item.description}</p>
-      </div>
+      <h3 className={`mt-4 font-serif text-lg font-bold leading-snug ${purple ? "text-white" : "text-[#000001]"}`}>
+        {item.title}
+      </h3>
+      <p className={`mt-1 line-clamp-2 text-sm ${purple ? "text-white/75" : "text-[#47464b]"}`}>
+        {item.description}
+      </p>
     </button>
   );
 }
@@ -181,7 +181,7 @@ function CompactUnitCard({ item }: { item: Extract<CuratedShowcaseItem, { type: 
     <button
       type="button"
       onClick={() => navigateWithAuth(href)}
-      className={`group flex h-full min-h-[120px] w-full flex-col justify-between rounded-2xl p-5 text-left shadow-sm transition md:p-6 ${
+      className={`group flex h-full min-h-[120px] w-full flex-col rounded-2xl p-5 text-left shadow-sm transition md:p-6 ${
         purple
           ? "bg-[#4b2876] text-white hover:bg-[#3f2163]"
           : "border border-[#E4E4E7] bg-white hover:border-[#4b2876]/25 hover:shadow-md"
@@ -194,12 +194,12 @@ function CompactUnitCard({ item }: { item: Extract<CuratedShowcaseItem, { type: 
       >
         <BookOpen className="size-5" strokeWidth={1.75} />
       </span>
-      <div>
-        <h3 className={`font-serif text-lg font-bold ${purple ? "text-white" : "text-[#000001]"}`}>{unit.title}</h3>
-        <p className={`mt-1 line-clamp-2 text-sm ${purple ? "text-white/75" : "text-[#47464b]"}`}>
-          {unit.description}
-        </p>
-      </div>
+      <h3 className={`mt-4 font-serif text-lg font-bold leading-snug ${purple ? "text-white" : "text-[#000001]"}`}>
+        {unit.title}
+      </h3>
+      <p className={`mt-1 line-clamp-2 text-sm ${purple ? "text-white/75" : "text-[#47464b]"}`}>
+        {unit.description}
+      </p>
     </button>
   );
 }

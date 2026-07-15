@@ -14,7 +14,6 @@ import {
   buildVocabularyWeekBars,
   computeDeckLearnedPercent,
   computeVocabularyStreak,
-  inferDeckBadge,
 } from "@/lib/vocabulary/vocabulary-library-stats";
 import { useSrsStore } from "@/store/srs-store";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
@@ -42,7 +41,12 @@ export function VocabularyLibraryView() {
   }, [closeDeck]);
 
   useEffect(() => {
-    if (deckCreateOpen) newDeckNameInputRef.current?.focus();
+    if (!deckCreateOpen) return;
+    const el = newDeckNameInputRef.current;
+    if (!el) return;
+    el.focus();
+    el.style.height = "auto";
+    el.style.height = `${el.scrollHeight}px`;
   }, [deckCreateOpen]);
 
   const weekBars = useMemo(
@@ -88,6 +92,13 @@ export function VocabularyLibraryView() {
     setDeckCreateOpen(false);
   }, [createDeck, newDeckName]);
 
+  const resizeNewDeckNameInput = useCallback(() => {
+    const el = newDeckNameInputRef.current;
+    if (!el) return;
+    el.style.height = "auto";
+    el.style.height = `${el.scrollHeight}px`;
+  }, []);
+
   const insertEmojiNewDeck = useCallback(
     (emoji: string) => {
       const el = newDeckNameInputRef.current;
@@ -113,9 +124,10 @@ export function VocabularyLibraryView() {
         } catch {
           /* ignore */
         }
+        resizeNewDeckNameInput();
       });
     },
-    [newDeckName],
+    [newDeckName, resizeNewDeckNameInput],
   );
 
   return (
@@ -148,12 +160,11 @@ export function VocabularyLibraryView() {
           {visibleDecks.map((deck) => {
             const deckWords = words.filter((w) => w.deckId === deck.id);
             const learnedPct = computeDeckLearnedPercent(deckWords);
-            const badge = inferDeckBadge(deck.name);
 
             return (
               <div
                 key={deck.id}
-                className="group relative flex min-h-[168px] flex-col rounded-2xl border border-[#E4E4E7] bg-white p-5 shadow-sm transition hover:border-[#4b2876]/25 hover:shadow-md"
+                className="group relative flex min-h-[132px] flex-col rounded-2xl border border-[#E4E4E7] bg-white p-4 shadow-sm transition hover:border-[#4b2876]/25 hover:shadow-md"
               >
                 <button
                   type="button"
@@ -174,10 +185,7 @@ export function VocabularyLibraryView() {
                   onClick={() => openDeck(deck.id)}
                   className="flex min-h-0 flex-1 flex-col text-left"
                 >
-                  <span className="inline-flex w-fit rounded-md bg-[#f5f5f7] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-[#47464b]">
-                    {badge}
-                  </span>
-                  <h3 className="mt-3 pr-8 font-serif text-lg font-bold leading-snug text-[#000001]">{deck.name}</h3>
+                  <h3 className="mt-2 pr-8 font-serif text-lg font-bold leading-snug text-[#000001]">{deck.name}</h3>
                   <div className="mt-auto space-y-3 pt-4">
                     <div className="flex items-center justify-between gap-2 text-xs text-[#47464b]">
                       <span>{deckWords.length} từ</span>
@@ -198,7 +206,7 @@ export function VocabularyLibraryView() {
           <button
             type="button"
             onClick={openCreateDeck}
-            className="flex min-h-[168px] flex-col items-center justify-center gap-2 rounded-2xl border border-dashed border-[#d4d4d8] bg-white/60 p-5 text-[#47464b] transition hover:border-[#4b2876]/40 hover:bg-[#fbf8fd] hover:text-[#4b2876]"
+            className="flex min-h-[132px] flex-col items-center justify-center gap-2 rounded-2xl border border-dashed border-[#d4d4d8] bg-white/60 p-4 text-[#47464b] transition hover:border-[#4b2876]/40 hover:bg-[#fbf8fd] hover:text-[#4b2876]"
           >
             <span className="inline-flex size-10 items-center justify-center rounded-full border border-[#E4E4E7] bg-white">
               <Plus className="size-5" strokeWidth={1.75} />
@@ -270,12 +278,18 @@ export function VocabularyLibraryView() {
                 <X className="size-5" strokeWidth={1.75} />
               </button>
             </div>
-            <div className="relative mt-4">
+
+            <div className="mt-4 flex items-center gap-0.5 rounded-xl border border-[#E4E4E7] bg-white pr-1.5 focus-within:border-[#000001]/30 focus-within:ring-1 focus-within:ring-[#000001]/15">
               <textarea
                 ref={newDeckNameInputRef}
                 value={newDeckName}
-                rows={2}
-                onChange={(e) => setNewDeckName(e.target.value)}
+                rows={1}
+                onChange={(e) => {
+                  setNewDeckName(e.target.value);
+                  const el = e.currentTarget;
+                  el.style.height = "auto";
+                  el.style.height = `${el.scrollHeight}px`;
+                }}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" && !e.shiftKey) {
                     e.preventDefault();
@@ -287,10 +301,10 @@ export function VocabularyLibraryView() {
                   }
                 }}
                 placeholder="Tên bộ thẻ..."
-                className="min-h-[3.5rem] w-full resize-none rounded-xl border border-[#eadff2] bg-[#fbf8fd] py-2.5 pl-4 pr-11 text-base leading-snug text-ink outline-none ring-[#4b2876]/20 focus:border-[#4b2876]/40 focus:ring-1"
+                className="max-h-40 min-w-0 flex-1 resize-none overflow-y-auto border-0 bg-transparent py-2.5 pl-4 pr-1 text-base leading-snug text-ink outline-none"
               />
               <EmojiPickerAnchor
-                placement="center-right"
+                placement="inline"
                 onPick={insertEmojiNewDeck}
                 aria-label="Chèn emoji vào tên deck"
               />
