@@ -20,7 +20,12 @@ function isTypedFillBlank(ex: Extract<VocabularyExercise, { type: "fill-blank" }
 }
 
 function normalizeAnswer(value: string): string {
-  return value.trim().toLowerCase();
+  return value
+    .trim()
+    .toLowerCase()
+    .replace(/[’‘‛]/g, "'")
+    .replace(/[.?!…]+$/g, "")
+    .replace(/\s+/g, " ");
 }
 
 function isFillBlankCorrect(
@@ -29,8 +34,22 @@ function isFillBlankCorrect(
 ): boolean {
   const normalized = normalizeAnswer(value);
   if (!normalized) return false;
-  const alts = ex.alternatives?.map((a) => normalizeAnswer(a)) ?? [];
-  return normalized === normalizeAnswer(ex.answer) || alts.includes(normalized);
+  const accepted = [ex.answer, ...(ex.alternatives ?? [])].map((a) => normalizeAnswer(a));
+  return accepted.includes(normalized);
+}
+
+function getAcceptedAnswers(
+  ex: Extract<VocabularyExercise, { type: "fill-blank" }>,
+): string[] {
+  const seen = new Set<string>();
+  const ordered: string[] = [];
+  for (const raw of [ex.answer, ...(ex.alternatives ?? [])]) {
+    const key = normalizeAnswer(raw);
+    if (!key || seen.has(key)) continue;
+    seen.add(key);
+    ordered.push(raw.trim());
+  }
+  return ordered;
 }
 
 function getExerciseOptions(ex: Extract<VocabularyExercise, { type: "fill-blank" | "mcq" }>): {
@@ -51,7 +70,9 @@ function getCorrectKey(ex: Extract<VocabularyExercise, { type: "fill-blank" | "m
 }
 
 function getPrompt(ex: QuizExercise): string {
-  if (ex.type === "match") return ex.instruction;
+  if (ex.type === "match") {
+    return stripExerciseLabelPrefix(ex.instruction);
+  }
   const raw = ex.type === "mcq" ? ex.question : ex.prompt;
   const normalized = raw.replace(/___+/g, "________");
   return stripRedundantInstruction(normalized, ex.label, ex.type);
@@ -69,8 +90,8 @@ const CONTENT_ONLY_LABELS = new Set([
   "Chọn câu đúng",
 ]);
 
-/** Strip book subsection (e.g. "16.2 ·") or pre-int unit tag (e.g. "3 ·") from exercise labels. */
-const EXERCISE_LABEL_PREFIX_RE = /^\d+(?:\.\d+)?\s*·\s*/;
+/** Strip book subsection (e.g. "16.2 ·", "4.2 •", "3 ·") from exercise titles/prompts. */
+const EXERCISE_LABEL_PREFIX_RE = /^\d+(?:\.\d+)?\s*[·•.\-–—]\s*/;
 
 function stripExerciseLabelPrefix(label: string | undefined): string {
   return (label ?? "").replace(EXERCISE_LABEL_PREFIX_RE, "").trim();
@@ -104,12 +125,15 @@ type VocabularyUnitExerciseQuizProps = {
   exercises: readonly VocabularyExercise[];
   completed: Record<string, boolean>;
   onComplete: (exerciseId: string) => void;
+  /** When true, wait for "Câu tiếp theo" instead of auto-advancing after check. */
+  manualAdvance?: boolean;
 };
 
 export function VocabularyUnitExerciseQuiz({
   exercises,
   completed,
   onComplete,
+  manualAdvance = false,
 }: VocabularyUnitExerciseQuizProps) {
   const quizRef = useRef<HTMLDivElement>(null);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -212,16 +236,25 @@ export function VocabularyUnitExerciseQuiz({
     setResult(ok ? "correct" : "wrong");
     if (ok) onComplete(current.id);
 
-    advanceTimerRef.current = setTimeout(() => {
-      if (index < total - 1) {
-        goToIndex(index + 1);
-      }
-    }, ANSWER_REVEAL_MS);
+    if (!manualAdvance) {
+      advanceTimerRef.current = setTimeout(() => {
+        if (index < total - 1) {
+          goToIndex(index + 1);
+        }
+      }, ANSWER_REVEAL_MS);
+    }
   };
 
   const handleSkip = () => {
     if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
     goToIndex(Math.min(total - 1, index + 1));
+  };
+
+  const handleContinue = () => {
+    if (advanceTimerRef.current) clearTimeout(advanceTimerRef.current);
+    if (index < total - 1) {
+      goToIndex(index + 1);
+    }
   };
 
   const canCheck =
@@ -358,18 +391,37 @@ export function VocabularyUnitExerciseQuiz({
         </div>
       ) : null}
 
-      {checked && result === "wrong" && isTyped && current.type === "fill-blank" ? (
-        <p className="mt-4 text-sm text-red-600">
-          Gợi ý: <span className="font-semibold">{current.answer}</span>
-        </p>
+      {checked && isTyped && current.type === "fill-blank" ? (
+        <div
+          className={`mt-4 space-y-2 rounded-xl border px-4 py-3 text-sm leading-relaxed ${
+            result === "correct"
+              ? "border-emerald-200 bg-emerald-50 text-emerald-900"
+              : "border-red-200 bg-red-50 text-red-900"
+          }`}
+        >
+          <p className="font-semibold">
+            {result === "correct" ? "Đúng rồi!" : "Chưa đúng."}
+          </p>
+          {result === "wrong" ? (
+            <p>
+              Đáp án gợi ý: <span className="font-semibold">{current.answer}</span>
+            </p>
+          ) : null}
+          {result === "wrong" && getAcceptedAnswers(current).length > 1 ? (
+            <p className="text-[13px] opacity-90">
+              Cũng chấp nhận:{" "}
+              {getAcceptedAnswers(current)
+                .filter((a) => normalizeAnswer(a) !== normalizeAnswer(current.answer))
+                .slice(0, 4)
+                .join(" · ")}
+            </p>
+          ) : null}
+          {current.explanation ? <p>{current.explanation}</p> : null}
+        </div>
       ) : null}
 
       {checked && result === "wrong" && current.type === "mcq" && current.explanation ? (
         <p className="mt-4 text-sm text-red-600">{current.explanation}</p>
-      ) : null}
-
-      {checked && result === "correct" && isTyped ? (
-        <p className="mt-4 text-sm font-medium text-emerald-700">Đúng rồi!</p>
       ) : null}
 
       <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -380,14 +432,24 @@ export function VocabularyUnitExerciseQuiz({
         >
           Bỏ qua câu này
         </button>
-        <button
-          type="button"
-          onClick={handleCheck}
-          disabled={!canCheck || checked}
-          className="inline-flex h-11 items-center justify-center rounded-xl bg-[#0a0a0a] px-6 text-[11px] font-bold uppercase tracking-wide text-white hover:bg-[#1a1a1a] disabled:opacity-40"
-        >
-          Kiểm tra đáp án
-        </button>
+        {manualAdvance && checked && index < total - 1 ? (
+          <button
+            type="button"
+            onClick={handleContinue}
+            className="inline-flex h-11 items-center justify-center rounded-xl bg-[#0a0a0a] px-6 text-[11px] font-bold uppercase tracking-wide text-white hover:bg-[#1a1a1a]"
+          >
+            Câu tiếp theo
+          </button>
+        ) : (
+          <button
+            type="button"
+            onClick={handleCheck}
+            disabled={!canCheck || checked}
+            className="inline-flex h-11 items-center justify-center rounded-xl bg-[#0a0a0a] px-6 text-[11px] font-bold uppercase tracking-wide text-white hover:bg-[#1a1a1a] disabled:opacity-40"
+          >
+            Kiểm tra đáp án
+          </button>
+        )}
       </div>
 
       {dictionaryPopover}

@@ -731,10 +731,12 @@ const UNIT_24: VocabularyExercise[] = [
 ];
 
 const UNIT_25: VocabularyExercise[] = [
+  // 25.1 in the book is picture-based ("What are these people doing?").
+  // Scene hints replace pictures; blank keeps the activity phrase off the prompt.
   mcq(
     "ex-25-1-1",
     "25.1 · Hoạt động",
-    "She's watching TV.",
+    "She's on the sofa with the remote control. She's ___.",
     "a",
     [
       { key: "a", label: "watching TV" },
@@ -746,7 +748,7 @@ const UNIT_25: VocabularyExercise[] = [
   mcq(
     "ex-25-1-2",
     "25.1 · Hoạt động",
-    "He's reading a newspaper.",
+    "He's looking at today's paper. He's ___.",
     "b",
     [
       { key: "a", label: "listening to music" },
@@ -758,7 +760,7 @@ const UNIT_25: VocabularyExercise[] = [
   mcq(
     "ex-25-1-3",
     "25.1 · Hoạt động",
-    "He's cooking.",
+    "He's in the kitchen with pans and food. He's ___.",
     "c",
     [
       { key: "a", label: "gardening" },
@@ -770,7 +772,7 @@ const UNIT_25: VocabularyExercise[] = [
   mcq(
     "ex-25-1-4",
     "25.1 · Hoạt động",
-    "She's using the Internet.",
+    "She's at a laptop, browsing websites. She's ___.",
     "d",
     [
       { key: "a", label: "reading a novel" },
@@ -782,7 +784,7 @@ const UNIT_25: VocabularyExercise[] = [
   mcq(
     "ex-25-1-5",
     "25.1 · Hoạt động",
-    "She's listening to music.",
+    "She's wearing headphones. She's ___.",
     "a",
     [
       { key: "a", label: "listening to music" },
@@ -794,7 +796,7 @@ const UNIT_25: VocabularyExercise[] = [
   mcq(
     "ex-25-1-6",
     "25.1 · Hoạt động",
-    "He's gardening.",
+    "He's outside with plants and flowers. He's ___.",
     "b",
     [
       { key: "a", label: "using the computer" },

@@ -236,7 +236,7 @@ const UNIT_7: VocabularyExercise[] = [
   mcq(
     "ex-7-4-2",
     "7.4 · Cảm xúc",
-    "Nicholas looks thirsty. How does he feel?",
+    "Nicholas is holding an empty glass. How does he feel?",
     "b",
     [
       { key: "a", label: "hungry" },
@@ -724,7 +724,7 @@ const UNIT_9: VocabularyExercise[] = [
   mcq(
     "ex-9-3-1",
     "9.3 · Tình huống",
-    "Oh dear! I didn't get that job.",
+    "___ I didn't get that job.",
     "a",
     [
       { key: "a", label: "Oh dear!" },

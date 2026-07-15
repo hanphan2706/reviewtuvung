@@ -52,6 +52,8 @@ export type VocabularyExerciseFillBlank = {
   promptVi?: string;
   answer: string;
   alternatives?: readonly string[];
+  /** Giải thích hiện sau khi kiểm tra đáp án. */
+  explanation?: string;
   hint?: string;
   options?: readonly { key: string; label: string }[];
   correctKey?: string;
