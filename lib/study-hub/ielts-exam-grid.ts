@@ -20,11 +20,11 @@ function sortByCatalogOrder<T extends { catalogOrder: number }>(
 }
 
 /** Đề thi thật luôn trên đầu; Cambridge sắp theo `catalogOrder` (mặc định Cam 21 → 16). */
-function buildIeltsExamGridItems<TItem>(
+function buildIeltsExamGridItems<TTest extends { catalogOrder: number }, TItem>(
   realExams: readonly RealExamListing[],
-  tests: readonly { catalogOrder: number }[],
+  tests: readonly TTest[],
   mapReal: (exam: RealExamListing) => TItem,
-  mapCambridge: (test: (typeof tests)[number]) => TItem,
+  mapCambridge: (test: TTest) => TItem,
   sort: ReadingIeltsLibrarySort,
 ): TItem[] {
   const realRows = sortByCatalogOrder(
@@ -43,7 +43,7 @@ export function buildReadingIeltsExamGridItems(
   tests: readonly ReadingIeltsTest[],
   sort: ReadingIeltsLibrarySort,
 ): ReadingIeltsExamGridItem[] {
-  return buildIeltsExamGridItems(
+  return buildIeltsExamGridItems<ReadingIeltsTest, ReadingIeltsExamGridItem>(
     realExams,
     tests,
     (exam) => ({ kind: "real", key: `real:${exam.slug}`, exam }),
@@ -57,7 +57,7 @@ export function buildListeningIeltsExamGridItems(
   tests: readonly ListeningIeltsTest[],
   sort: ReadingIeltsLibrarySort,
 ): ListeningIeltsExamGridItem[] {
-  return buildIeltsExamGridItems(
+  return buildIeltsExamGridItems<ListeningIeltsTest, ListeningIeltsExamGridItem>(
     realExams,
     tests,
     (exam) => ({ kind: "real", key: `real:${exam.slug}`, exam }),
