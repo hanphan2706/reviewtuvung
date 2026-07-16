@@ -57,10 +57,10 @@ export default function CookiesPage() {
         dự án — mình sẽ phản hồi trong khả năng có thể.
       </p>
 
-      <p className="text-sm text-zinc-500">
+      <aside>
         Trang này có thể được tinh chỉnh khi Website thêm công cụ đồng ý cookie hoặc phân tích mới; phần “Cập nhật”
         trên Chính sách quyền riêng tư cũng áp dụng cho các thay đổi liên quan.
-      </p>
+      </aside>
     </MarketingSubpageShell>
   );
 }

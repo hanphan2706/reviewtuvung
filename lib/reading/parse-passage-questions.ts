@@ -46,7 +46,7 @@ function detectTfngKind(block: string): "true-false-ng" | "yes-no-ng" {
 }
 
 function parseQuestionNumsFromTitle(title: string): number[] {
-  const range = title.match(/Questions\s+(\d{1,2})\s*[–-]\s*(\d{1,2})/i);
+  const range = title.match(/Questions?\s+(\d{1,2})\s*[–-]\s*(\d{1,2})/i);
   if (range?.[1] && range[2]) {
     const start = Number.parseInt(range[1], 10);
     const end = Number.parseInt(range[2], 10);
@@ -54,9 +54,14 @@ function parseQuestionNumsFromTitle(title: string): number[] {
       return Array.from({ length: end - start + 1 }, (_, i) => start + i);
     }
   }
-  const and = title.match(/Questions\s+(\d{1,2})\s+and\s+(\d{1,2})/i);
+  const and = title.match(/Questions?\s+(\d{1,2})\s+and\s+(\d{1,2})/i);
   if (and?.[1] && and[2]) {
     return [Number.parseInt(and[1], 10), Number.parseInt(and[2], 10)].filter((n) => !Number.isNaN(n));
+  }
+  const solo = title.match(/^Questions?\s+(\d{1,2})\s*$/i);
+  if (solo?.[1]) {
+    const n = Number.parseInt(solo[1], 10);
+    return Number.isNaN(n) ? [] : [n];
   }
   return [];
 }
@@ -84,6 +89,8 @@ function detectSectionKind(chunk: string): ExamSectionKind {
   if (/Complete the summary below/i.test(chunk)) return "summary-fill";
   if (/Complete the summary using/i.test(chunk)) return "summary-fill";
   if (/Complete the notes below/i.test(chunk)) return "note-fill";
+  if (/Label the diagrams?/i.test(chunk)) return "note-fill";
+  if (/Answer the questions below/i.test(chunk)) return "note-fill";
   if (/Choose the correct answer/i.test(chunk)) return "mcq-single";
   if (/Choose the correct letter,\s*A,\s*B,\s*C or D/i.test(chunk)) return "mcq-single";
   if (/Choose the correct answer,\s*A,\s*B,\s*C or D/i.test(chunk)) return "mcq-single";
@@ -141,7 +148,9 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
   if (!questionsText.trim()) return [];
 
   const normalized = questionsText.replace(/\u00a0/g, " ").replace(/\r\n/g, "\n");
-  const chunks = normalized.split(/(?=^Questions\s+\d+)/im).filter((c) => /^Questions/i.test(c.trim()));
+  const chunks = normalized
+    .split(/(?=^Questions?\s+\d+)/im)
+    .filter((c) => /^Questions?\s+\d+/i.test(c.trim()));
 
   const sections: ExamQuestionSection[] = [];
 
@@ -368,8 +377,17 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
       }
 
       if (kind === "note-fill") {
-        if (/^Complete the (notes|sentences)|^Choose\s+(ONE|NO MORE|TWO)/i.test(line)) {
+        if (
+          /^Complete the (notes|sentences)|^Label the diagrams?|^Choose\s+(ONE|NO MORE|TWO)|^Answer the questions/i.test(
+            line,
+          )
+        ) {
           instructionLines.push(line);
+          continue;
+        }
+        if (/^url\s*\|/i.test(line)) {
+          bodyLines.push(line);
+          phase = "body";
           continue;
         }
         if (/^[•●○]|^●|^○/.test(line) || hasFillGap(line)) {

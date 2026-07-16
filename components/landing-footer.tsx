@@ -251,9 +251,9 @@ export function LandingFooter() {
               </div>
             </div>
 
-            {/* Desktop: social | legal, cột phải copyright + credits */}
-            <div className="mt-6 flex w-full min-w-0 flex-col gap-3 sm:mt-7 max-lg:hidden lg:flex-row lg:items-end lg:justify-between lg:gap-12">
-              <div className="grid min-w-0 w-full max-w-2xl flex-1 grid-cols-1 content-start items-start gap-y-3 pl-0.5 sm:pl-0 lg:grid-cols-2 lg:items-center lg:gap-y-0 lg:gap-x-8 xl:gap-x-12">
+            {/* Desktop: social | legal+credits một hàng; cột phải copyright */}
+            <div className="mt-6 flex w-full min-w-0 flex-col gap-3 sm:mt-7 max-lg:hidden lg:flex-row lg:items-end lg:justify-between lg:gap-8 xl:gap-12">
+              <div className="grid min-w-0 w-full max-w-none flex-1 grid-cols-1 content-start items-start gap-y-3 pl-0.5 sm:pl-0 lg:grid-cols-[auto_minmax(0,1fr)] lg:items-center lg:gap-y-0 lg:gap-x-8 xl:gap-x-12">
                 <div className="flex min-w-0 items-center gap-x-2.5">
                   <span
                     className="inline-flex h-6 w-6 shrink-0 items-center justify-center self-center text-ink opacity-80"
@@ -306,7 +306,7 @@ export function LandingFooter() {
                   </a>
                 </div>
                 <nav
-                  className="flex min-w-0 flex-col gap-y-1.5 lg:flex-row lg:flex-wrap lg:items-center lg:gap-x-3 lg:gap-y-1"
+                  className="flex min-w-0 flex-nowrap items-center gap-x-3 overflow-x-auto"
                   aria-label="Pháp lý & quyền riêng tư"
                 >
                   {LANDING.footer.legal.map((l) =>
@@ -314,7 +314,7 @@ export function LandingFooter() {
                       <Link
                         key={l.href}
                         href={l.href}
-                        className="w-fit min-w-0 text-sm font-bold text-ink transition hover:opacity-80"
+                        className="shrink-0 whitespace-nowrap text-sm font-bold text-ink transition hover:opacity-80"
                       >
                         {l.label}
                       </Link>
@@ -322,25 +322,22 @@ export function LandingFooter() {
                       <a
                         key={l.href}
                         href={l.href}
-                        className="w-fit min-w-0 text-sm font-bold text-ink transition hover:opacity-80"
+                        className="shrink-0 whitespace-nowrap text-sm font-bold text-ink transition hover:opacity-80"
                       >
                         {l.label}
                       </a>
                     ),
                   )}
+                  <Link
+                    href={LANDING.footer.credits.href}
+                    className="shrink-0 whitespace-nowrap text-sm font-bold text-ink transition hover:opacity-80"
+                  >
+                    {LANDING.footer.credits.label}
+                  </Link>
                 </nav>
               </div>
-              <div className="flex w-full max-w-full shrink-0 flex-wrap items-center justify-end gap-x-2 gap-y-1 pl-0.5 text-right sm:ml-0 sm:w-auto sm:max-w-[min(100%,28rem)] sm:shrink-0 sm:pl-0 md:max-w-[28rem]">
+              <div className="flex w-full shrink-0 justify-end pl-0.5 text-right sm:w-auto sm:pl-0">
                 <FooterCopyrightLine align="right" />
-                <span className="select-none text-zinc-300" aria-hidden>
-                  |
-                </span>
-                <Link
-                  href={LANDING.footer.credits.href}
-                  className="text-sm font-bold leading-snug text-ink transition hover:opacity-80"
-                >
-                  {LANDING.footer.credits.label}
-                </Link>
               </div>
             </div>
           </div>

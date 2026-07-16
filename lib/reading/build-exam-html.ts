@@ -336,6 +336,11 @@ function renderNoteFill(section: ExamQuestionSection): { html: string; nums: num
   const body = section.bodyLines
     .filter((line) => line !== notesTitle && line !== "•" && line !== "●")
     .map((line) => {
+      const diagram = line.match(/^url\s*\|\s*(.+)$/i);
+      if (diagram?.[1]) {
+        const src = diagram[1].trim();
+        return `<p class="diagram-img"><img src="${escHtml(src)}" alt="Diagram for questions" loading="lazy" /></p>`;
+      }
       const raw = line.replace(/^[●○]\s*/, "");
       const { html, nums } = renderGapText(raw);
       allNums.push(...nums);

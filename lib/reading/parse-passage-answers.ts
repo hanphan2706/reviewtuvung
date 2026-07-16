@@ -17,7 +17,12 @@ export function normalizeExamAnswerValue(ans: string): string {
   }
   if (upper === "T") return "TRUE";
   if (upper === "F") return "FALSE";
-  if (upper === "NG" || upper === "N0") return "NOT GIVEN";
+  if (upper === "NG" || upper === "N0" || upper === "NOTGIVEN" || upper === "NOT GIVEN") {
+    return "NOT GIVEN";
+  }
+  if (upper === "TRUE" || upper === "FALSE" || upper === "YES" || upper === "NO") {
+    return upper;
+  }
   return trimmed;
 }
 

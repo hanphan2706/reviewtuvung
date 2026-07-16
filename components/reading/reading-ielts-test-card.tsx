@@ -34,7 +34,11 @@ export function ReadingIeltsTestCard({
               ? { objectPosition: test.coverImageObjectPosition }
               : {}),
             ...(test.coverImageScale
-              ? { transform: `scale(${test.coverImageScale})`, transformOrigin: "center center" }
+              ? {
+                  transform: `scale(${test.coverImageScale})`,
+                  transformOrigin:
+                    test.coverImageTransformOrigin ?? test.coverImageObjectPosition ?? "center center",
+                }
               : {}),
           }}
           sizes="(max-width:768px) 100vw, 33vw"

@@ -17,6 +17,16 @@ import {
   CAM19_TEST3,
   CAM19_TEST4,
 } from "@/lib/reading/cambridge-18-19-articles";
+import {
+  CAM16_TEST1,
+  CAM16_TEST2,
+  CAM16_TEST3,
+  CAM16_TEST4,
+  CAM21_TEST1,
+  CAM21_TEST2,
+  CAM21_TEST3,
+  CAM21_TEST4,
+} from "@/lib/reading/cambridge-16-21-articles";
 
 export type ReadingPilotId =
   | "cam17-test4"
@@ -35,6 +45,14 @@ export type ReadingPilotId =
   | "cam20-test2"
   | "cam20-test3"
   | "cam20-test4"
+  | "cam16-test1"
+  | "cam16-test2"
+  | "cam16-test3"
+  | "cam16-test4"
+  | "cam21-test1"
+  | "cam21-test2"
+  | "cam21-test3"
+  | "cam21-test4"
   | "reading-challenge-1"
   | "reading-challenge-2"
   | "reading-challenge-3";
@@ -306,6 +324,14 @@ export const READING_HUB_ARTICLES: ReadingHubArticle[] = [
   ...CAM17_TEST3,
   ...CAM17_TEST2,
   ...CAM17_TEST1,
+  ...CAM16_TEST1,
+  ...CAM16_TEST2,
+  ...CAM16_TEST3,
+  ...CAM16_TEST4,
+  ...CAM21_TEST1,
+  ...CAM21_TEST2,
+  ...CAM21_TEST3,
+  ...CAM21_TEST4,
 ];
 
 /** @deprecated dùng pilotId cụ thể */

@@ -1,3 +1,4 @@
+import { realIeltsExamCatalogOrder } from "@/lib/exam/ielts-catalog-order";
 import { LISTENING_IELTS_EXAM_HREF } from "@/lib/listening/ielts-test-catalog";
 import { READING_IELTS_EXAM_HREF } from "@/lib/reading/ielts-test-catalog";
 
@@ -22,7 +23,7 @@ export const READING_REAL_EXAMS: readonly RealExamListing[] = [
     seriesNumber: 1,
     title: "Đề thi thật 1",
     subtitle: "Mid-Term Reading · 60 phút · 3 passages · 40 câu",
-    catalogOrder: 100,
+    catalogOrder: realIeltsExamCatalogOrder(1),
   },
 ] as const;
 
@@ -32,7 +33,7 @@ export const LISTENING_REAL_EXAMS: readonly RealExamListing[] = [
     seriesNumber: 1,
     title: "Đề thi thật 1",
     subtitle: "Mid-Term Listening · 40 phút · 4 parts · 40 câu",
-    catalogOrder: 100,
+    catalogOrder: realIeltsExamCatalogOrder(1),
   },
 ] as const;
 

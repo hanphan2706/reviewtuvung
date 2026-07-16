@@ -1,4 +1,5 @@
 import { LISTENING_HUB_HREF } from "@/lib/listening/listening-hub-nav";
+import { cambridgeIeltsCatalogOrder } from "@/lib/exam/ielts-catalog-order";
 import {
   CAMBRIDGE_IELTS_18_COVER_URL,
   CAMBRIDGE_IELTS_19_COVER_URL,
@@ -42,7 +43,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 20 Academic",
     testNumber: 4,
     coverImageUrl: CAMBRIDGE_IELTS_20_COVER_URL,
-    catalogOrder: 12,
+    catalogOrder: cambridgeIeltsCatalogOrder(20, 4),
   },
   {
     testId: "cam20-test3",
@@ -50,7 +51,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 20 Academic",
     testNumber: 3,
     coverImageUrl: CAMBRIDGE_IELTS_20_COVER_URL,
-    catalogOrder: 11,
+    catalogOrder: cambridgeIeltsCatalogOrder(20, 3),
   },
   {
     testId: "cam20-test2",
@@ -58,7 +59,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 20 Academic",
     testNumber: 2,
     coverImageUrl: CAMBRIDGE_IELTS_20_COVER_URL,
-    catalogOrder: 10,
+    catalogOrder: cambridgeIeltsCatalogOrder(20, 2),
   },
   {
     testId: "cam20-test1",
@@ -66,7 +67,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 20 Academic",
     testNumber: 1,
     coverImageUrl: CAMBRIDGE_IELTS_20_COVER_URL,
-    catalogOrder: 9,
+    catalogOrder: cambridgeIeltsCatalogOrder(20, 1),
   },
   {
     testId: "cam19-test4",
@@ -74,7 +75,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 19 Academic",
     testNumber: 4,
     coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
-    catalogOrder: 4,
+    catalogOrder: cambridgeIeltsCatalogOrder(19, 4),
   },
   {
     testId: "cam19-test3",
@@ -82,7 +83,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 19 Academic",
     testNumber: 3,
     coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
-    catalogOrder: 3,
+    catalogOrder: cambridgeIeltsCatalogOrder(19, 3),
   },
   {
     testId: "cam19-test2",
@@ -90,7 +91,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 19 Academic",
     testNumber: 2,
     coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
-    catalogOrder: 2,
+    catalogOrder: cambridgeIeltsCatalogOrder(19, 2),
   },
   {
     testId: "cam19-test1",
@@ -98,7 +99,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 19 Academic",
     testNumber: 1,
     coverImageUrl: CAMBRIDGE_IELTS_19_COVER_URL,
-    catalogOrder: 1,
+    catalogOrder: cambridgeIeltsCatalogOrder(19, 1),
   },
   {
     testId: "cam18-test4",
@@ -106,7 +107,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 18 Academic",
     testNumber: 4,
     coverImageUrl: CAMBRIDGE_IELTS_18_COVER_URL,
-    catalogOrder: 8,
+    catalogOrder: cambridgeIeltsCatalogOrder(18, 4),
   },
   {
     testId: "cam18-test3",
@@ -114,7 +115,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 18 Academic",
     testNumber: 3,
     coverImageUrl: CAMBRIDGE_IELTS_18_COVER_URL,
-    catalogOrder: 7,
+    catalogOrder: cambridgeIeltsCatalogOrder(18, 3),
   },
   {
     testId: "cam18-test2",
@@ -122,7 +123,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 18 Academic",
     testNumber: 2,
     coverImageUrl: CAMBRIDGE_IELTS_18_COVER_URL,
-    catalogOrder: 6,
+    catalogOrder: cambridgeIeltsCatalogOrder(18, 2),
   },
   {
     testId: "cam18-test1",
@@ -130,7 +131,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 18 Academic",
     testNumber: 1,
     coverImageUrl: CAMBRIDGE_IELTS_18_COVER_URL,
-    catalogOrder: 5,
+    catalogOrder: cambridgeIeltsCatalogOrder(18, 1),
   },
 ] as const;
 

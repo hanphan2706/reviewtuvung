@@ -19,25 +19,37 @@ function sortByCatalogOrder<T extends { catalogOrder: number }>(
   return rows;
 }
 
+/** Đề thi thật luôn trên đầu; Cambridge sắp theo `catalogOrder` (mặc định Cam 21 → 16). */
+function buildIeltsExamGridItems<TItem>(
+  realExams: readonly RealExamListing[],
+  tests: readonly { catalogOrder: number }[],
+  mapReal: (exam: RealExamListing) => TItem,
+  mapCambridge: (test: (typeof tests)[number]) => TItem,
+  sort: ReadingIeltsLibrarySort,
+): TItem[] {
+  const realRows = sortByCatalogOrder(
+    realExams.map((exam) => ({ catalogOrder: exam.catalogOrder, item: mapReal(exam) })),
+    sort,
+  );
+  const camRows = sortByCatalogOrder(
+    tests.map((test) => ({ catalogOrder: test.catalogOrder, item: mapCambridge(test) })),
+    sort,
+  );
+  return [...realRows, ...camRows].map((row) => row.item);
+}
+
 export function buildReadingIeltsExamGridItems(
   realExams: readonly RealExamListing[],
   tests: readonly ReadingIeltsTest[],
   sort: ReadingIeltsLibrarySort,
 ): ReadingIeltsExamGridItem[] {
-  const rows = sortByCatalogOrder(
-    [
-      ...realExams.map((exam) => ({
-        catalogOrder: exam.catalogOrder,
-        item: { kind: "real" as const, key: `real:${exam.slug}`, exam },
-      })),
-      ...tests.map((test) => ({
-        catalogOrder: test.catalogOrder,
-        item: { kind: "cambridge" as const, key: test.pilotId, test },
-      })),
-    ],
+  return buildIeltsExamGridItems(
+    realExams,
+    tests,
+    (exam) => ({ kind: "real", key: `real:${exam.slug}`, exam }),
+    (test) => ({ kind: "cambridge", key: test.pilotId, test }),
     sort,
   );
-  return rows.map((row) => row.item);
 }
 
 export function buildListeningIeltsExamGridItems(
@@ -45,18 +57,11 @@ export function buildListeningIeltsExamGridItems(
   tests: readonly ListeningIeltsTest[],
   sort: ReadingIeltsLibrarySort,
 ): ListeningIeltsExamGridItem[] {
-  const rows = sortByCatalogOrder(
-    [
-      ...realExams.map((exam) => ({
-        catalogOrder: exam.catalogOrder,
-        item: { kind: "real" as const, key: `real:${exam.slug}`, exam },
-      })),
-      ...tests.map((test) => ({
-        catalogOrder: test.catalogOrder,
-        item: { kind: "cambridge" as const, key: test.testId, test },
-      })),
-    ],
+  return buildIeltsExamGridItems(
+    realExams,
+    tests,
+    (exam) => ({ kind: "real", key: `real:${exam.slug}`, exam }),
+    (test) => ({ kind: "cambridge", key: test.testId, test }),
     sort,
   );
-  return rows.map((row) => row.item);
 }

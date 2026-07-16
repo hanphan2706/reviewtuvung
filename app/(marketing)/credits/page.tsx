@@ -22,12 +22,7 @@ export default function CreditsPage() {
       </p>
       <p>
         Đây hoàn toàn là một <strong>dự án cá nhân (solo)</strong> do{" "}
-        <Link
-          href="/gioi-thieu"
-          className="font-semibold text-ink underline decoration-[#4b2876]/35 underline-offset-[0.15em] transition hover:decoration-[#4b2876]/70"
-        >
-          mình
-        </Link>{" "}
+        <Link href="/gioi-thieu">mình</Link>{" "}
         xây dựng và duy trì: từ nội dung giới thiệu, trải nghiệm học tập, cho đến phần kỹ thuật triển khai trên web.
       </p>
       <p>

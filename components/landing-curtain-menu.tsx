@@ -198,7 +198,7 @@ export function LandingCurtainMenu({
           </div>
 
           <div className="mt-5 flex min-w-0 flex-col gap-4 border-t border-zinc-200 pt-5 sm:mt-7 sm:gap-6 sm:pt-7 md:mt-9 md:pt-9 lg:flex-row lg:items-start lg:justify-between lg:gap-8 [@media(max-height:640px)]:mt-3 [@media(max-height:640px)]:gap-3 [@media(max-height:640px)]:pt-3">
-            <div className="w-fit max-w-full self-start rounded-lg border border-zinc-200/90 bg-zinc-50/80 p-3 sm:rounded-xl sm:p-4 md:p-5 [@media(max-height:640px)]:p-2.5">
+            <div className="w-fit max-w-full self-start rounded-lg border border-zinc-200/90 bg-zinc-50/80 p-3 sm:rounded-xl sm:p-4 md:p-5 lg:-mt-1 [@media(max-height:640px)]:p-2.5">
               {LANDING.footer.ctaLines.map((line) => (
                 <p
                   key={line}
@@ -209,9 +209,9 @@ export function LandingCurtainMenu({
               ))}
             </div>
 
-            <div className="flex min-w-0 w-full flex-col gap-3 sm:gap-5 lg:w-auto lg:min-w-0 lg:max-w-[min(100%,22rem)] lg:shrink-0 lg:items-end [@media(max-height:640px)]:gap-2">
+            <div className="flex min-w-0 w-full flex-col gap-3 sm:gap-4 lg:w-auto lg:max-w-none lg:shrink-0 lg:items-end lg:gap-3.5 [@media(max-height:640px)]:gap-2">
               <nav
-                className="flex w-full min-w-0 flex-wrap gap-x-3 gap-y-1.5 text-xs font-semibold sm:gap-x-4 sm:gap-y-2 sm:text-sm lg:justify-end [@media(max-height:640px)]:gap-x-2 [@media(max-height:640px)]:gap-y-1 [@media(max-height:640px)]:text-[0.6875rem]"
+                className="flex w-full min-w-0 flex-wrap items-center gap-x-3 gap-y-1.5 text-xs font-semibold leading-none sm:gap-x-4 sm:gap-y-2 sm:text-sm lg:w-auto lg:flex-nowrap lg:justify-end [@media(max-height:640px)]:gap-x-2 [@media(max-height:640px)]:gap-y-1 [@media(max-height:640px)]:text-[0.6875rem]"
                 aria-label="Pháp lý"
               >
                 {LANDING.footer.legal.map((l) =>
@@ -220,7 +220,7 @@ export function LandingCurtainMenu({
                       key={l.href}
                       href={l.href}
                       onClick={onClose}
-                      className="max-w-full wrap-break-word text-ink-muted underline decoration-zinc-300 underline-offset-2 transition hover:text-ink"
+                      className="max-w-full wrap-break-word text-ink-muted underline decoration-zinc-300 underline-offset-2 transition hover:text-ink lg:max-w-none lg:shrink-0 lg:whitespace-nowrap"
                     >
                       {l.label}
                     </Link>
@@ -228,7 +228,7 @@ export function LandingCurtainMenu({
                     <a
                       key={l.href}
                       href={l.href}
-                      className="max-w-full wrap-break-word text-ink-muted underline decoration-zinc-300 underline-offset-2 transition hover:text-ink"
+                      className="max-w-full wrap-break-word text-ink-muted underline decoration-zinc-300 underline-offset-2 transition hover:text-ink lg:max-w-none lg:shrink-0 lg:whitespace-nowrap"
                     >
                       {l.label}
                     </a>
@@ -237,7 +237,7 @@ export function LandingCurtainMenu({
                 <Link
                   href={LANDING.footer.credits.href}
                   onClick={onClose}
-                  className="max-w-full wrap-break-word text-ink-muted underline decoration-zinc-300 underline-offset-2 transition hover:text-ink"
+                  className="max-w-full wrap-break-word text-ink-muted underline decoration-zinc-300 underline-offset-2 transition hover:text-ink lg:max-w-none lg:shrink-0 lg:whitespace-nowrap"
                 >
                   {LANDING.footer.credits.label}
                 </Link>
@@ -278,7 +278,7 @@ export function LandingCurtainMenu({
                   f
                 </a>
               </div>
-              <div className="mt-2 w-full min-w-0 sm:mt-4 lg:text-right [@media(max-height:640px)]:mt-1">
+              <div className="w-full min-w-0 lg:text-right">
                 <FooterCopyrightLine align="right" />
               </div>
             </div>
