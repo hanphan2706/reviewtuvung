@@ -32,9 +32,13 @@ export async function refreshSupabaseSession(
     },
   });
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
-  return { response, user };
+  try {
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    return { response, user };
+  } catch {
+    // Network blips / Supabase timeouts must not break page loads.
+    return { response, user: null };
+  }
 }

@@ -61,13 +61,19 @@ export function useStudyHubLoggedIn(serverLoggedIn: boolean): boolean {
       }
     });
 
-    void supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session) {
-        setLoggedIn(true);
-      } else if (searchParams.get("auth_sync") === "1") {
-        void syncFromServer();
-      }
-    });
+    void supabase.auth
+      .getSession()
+      .then(({ data: { session } }) => {
+        if (cancelled) return;
+        if (session) {
+          setLoggedIn(true);
+        } else if (searchParams.get("auth_sync") === "1") {
+          void syncFromServer();
+        }
+      })
+      .catch(() => {
+        /* offline / Supabase unreachable */
+      });
 
     return () => {
       cancelled = true;

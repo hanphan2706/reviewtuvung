@@ -74,9 +74,13 @@ export async function getCurrentUser() {
     return null;
   }
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
-  return user;
+  try {
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
+    return user;
+  } catch {
+    // Supabase network timeout / offline — treat as signed out.
+    return null;
+  }
 }
