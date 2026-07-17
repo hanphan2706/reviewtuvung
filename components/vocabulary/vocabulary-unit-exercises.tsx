@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ExerciseChoiceBank } from "@/components/study-module/exercise-choice-bank";
 import type { VocabularyExercise } from "@/lib/vocabulary/vocabulary-unit-types";
 
 const fieldClass =
@@ -30,6 +31,9 @@ export function VocabularyUnitExercise({
       <div className="rounded-xl border border-[#E4E4E7] bg-white p-4 md:p-5">
         <p className="text-sm leading-relaxed text-[#000001]">{exercise.prompt}</p>
         {exercise.hint ? <p className="mt-1 text-xs text-[#47464b]/70">{exercise.hint}</p> : null}
+        {exercise.choiceBank && exercise.choiceBank.length > 0 ? (
+          <ExerciseChoiceBank words={exercise.choiceBank} />
+        ) : null}
         <input
           className={fieldClass}
           value={value}

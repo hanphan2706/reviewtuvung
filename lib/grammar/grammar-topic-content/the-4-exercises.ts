@@ -3,15 +3,50 @@ import { grammarCloze } from "@/lib/grammar/grammar-cloze";
 
 /**
  * Unit 76 exercises — The 4 (English Grammar in Use · Intermediate).
+ * 76.1 in the book uses a word box (animals / birds / inventions / currencies).
  */
+
+const ANIMALS_BANK = [
+  "tiger",
+  "elephant",
+  "rabbit",
+  "cheetah",
+  "giraffe",
+  "kangaroo",
+] as const;
+
+const BIRDS_BANK = ["eagle", "penguin", "swan", "owl", "parrot", "pigeon"] as const;
+
+const INVENTIONS_BANK = [
+  "telephone",
+  "wheel",
+  "telescope",
+  "laser",
+  "helicopter",
+  "typewriter",
+] as const;
+
+const CURRENCIES_BANK = ["dollar", "peso", "euro", "rupee", "rouble", "yen"] as const;
+
+const ADJECTIVE_PEOPLE_BANK = [
+  "elderly",
+  "injured",
+  "rich",
+  "sick",
+  "unemployed",
+  "young",
+] as const;
+
 export const U76_THE_4_EXERCISES: readonly GrammarExercise[] = [
-  // 76.1
+  // 76.1 — Choose from the box (animals / birds / inventions / currencies)
   grammarCloze(
     "u76-1-1b",
     "76.1 · the + loài / đồ",
     "Which animal can run the fastest? → __________",
     "the cheetah",
     {
+      promptVi: "Động vật nào trong bảng chạy nhanh nhất?",
+      choiceBank: ANIMALS_BANK,
       explanation: "loài → the cheetah.",
     },
   ),
@@ -21,8 +56,10 @@ export const U76_THE_4_EXERCISES: readonly GrammarExercise[] = [
     "Which of these animals is found in Australia? → __________",
     "the kangaroo",
     {
+      promptVi: "Động vật nào trong bảng có ở Úc?",
+      choiceBank: ANIMALS_BANK,
       alternatives: ["the kangaroo (and the rabbit)", "the kangaroo and the rabbit"],
-      explanation: "loài → the kangaroo.",
+      explanation: "loài → the kangaroo (rabbit cũng có ở Úc).",
     },
   ),
   grammarCloze(
@@ -31,6 +68,8 @@ export const U76_THE_4_EXERCISES: readonly GrammarExercise[] = [
     "Which of these birds has a long neck? → __________",
     "the swan",
     {
+      promptVi: "Loài chim nào trong bảng có cổ dài?",
+      choiceBank: BIRDS_BANK,
       explanation: "loài → the swan.",
     },
   ),
@@ -40,6 +79,8 @@ export const U76_THE_4_EXERCISES: readonly GrammarExercise[] = [
     "Which of these birds cannot fly? → __________",
     "the penguin",
     {
+      promptVi: "Loài chim nào trong bảng không biết bay?",
+      choiceBank: BIRDS_BANK,
       explanation: "loài → the penguin.",
     },
   ),
@@ -49,6 +90,8 @@ export const U76_THE_4_EXERCISES: readonly GrammarExercise[] = [
     "Which bird flies at night? → __________",
     "the owl",
     {
+      promptVi: "Loài chim nào trong bảng bay về đêm?",
+      choiceBank: BIRDS_BANK,
       explanation: "loài → the owl.",
     },
   ),
@@ -58,6 +101,8 @@ export const U76_THE_4_EXERCISES: readonly GrammarExercise[] = [
     "Which of these inventions is the oldest? → __________",
     "the wheel",
     {
+      promptVi: "Phát minh nào trong bảng là cổ nhất?",
+      choiceBank: INVENTIONS_BANK,
       explanation: "loại phát minh → the wheel.",
     },
   ),
@@ -67,6 +112,8 @@ export const U76_THE_4_EXERCISES: readonly GrammarExercise[] = [
     "Which one was especially important for astronomy? → __________",
     "the telescope",
     {
+      promptVi: "Phát minh nào trong bảng đặc biệt quan trọng với thiên văn?",
+      choiceBank: INVENTIONS_BANK,
       explanation: "loại phát minh → the telescope.",
     },
   ),
@@ -76,6 +123,8 @@ export const U76_THE_4_EXERCISES: readonly GrammarExercise[] = [
     "What is the currency of India? → __________",
     "the rupee",
     {
+      promptVi: "Đơn vị tiền tệ của Ấn Độ là gì?",
+      choiceBank: CURRENCIES_BANK,
       explanation: "loại tiền → the rupee.",
     },
   ),
@@ -137,13 +186,14 @@ export const U76_THE_4_EXERCISES: readonly GrammarExercise[] = [
     },
   ),
 
-  // 76.3
+  // 76.3 — Choose from the adjective box
   grammarCloze(
     "u76-3-2",
     "76.3 · the + tính từ",
     "Helen is a nurse. She's spent her life caring for __________.",
     "the sick",
     {
+      choiceBank: ADJECTIVE_PEOPLE_BANK,
       explanation: "the + adjective = nhóm người bệnh.",
     },
   ),
@@ -153,6 +203,7 @@ export const U76_THE_4_EXERCISES: readonly GrammarExercise[] = [
     "Life is all right if you have a job, but things are hard for __________.",
     "the unemployed",
     {
+      choiceBank: ADJECTIVE_PEOPLE_BANK,
       explanation: "the unemployed = người thất nghiệp.",
     },
   ),
@@ -162,6 +213,7 @@ export const U76_THE_4_EXERCISES: readonly GrammarExercise[] = [
     "Ambulances took __________ to hospital.",
     "the injured",
     {
+      choiceBank: ADJECTIVE_PEOPLE_BANK,
       explanation: "the injured = người bị thương.",
     },
   ),
@@ -171,6 +223,7 @@ export const U76_THE_4_EXERCISES: readonly GrammarExercise[] = [
     "How are we going to care for __________?",
     "the elderly",
     {
+      choiceBank: ADJECTIVE_PEOPLE_BANK,
       explanation: "the elderly = người cao tuổi.",
     },
   ),
@@ -180,6 +233,7 @@ export const U76_THE_4_EXERCISES: readonly GrammarExercise[] = [
     "It's nice to have lots of money, but __________ have their problems too.",
     "the rich",
     {
+      choiceBank: ADJECTIVE_PEOPLE_BANK,
       explanation: "the rich = người giàu.",
     },
   ),

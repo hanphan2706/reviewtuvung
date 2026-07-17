@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useListeningFlowDictionary } from "@/hooks/use-listening-flow-dictionary";
+import { ExerciseChoiceBank } from "@/components/study-module/exercise-choice-bank";
 import type { VocabularyExercise } from "@/lib/vocabulary/vocabulary-unit-types";
 
 const ANSWER_REVEAL_MS = 3000;
@@ -299,6 +300,9 @@ export function VocabularyUnitExerciseQuiz({
         ) : null}
         {current.type === "fill-blank" && current.hint && !checked ? (
           <p className="mt-2 text-sm text-[#47464b]/70">{current.hint}</p>
+        ) : null}
+        {current.type === "fill-blank" && current.choiceBank && current.choiceBank.length > 0 ? (
+          <ExerciseChoiceBank words={current.choiceBank} />
         ) : null}
         {isTyped ? (
           <input

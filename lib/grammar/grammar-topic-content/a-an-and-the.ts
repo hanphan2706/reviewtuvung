@@ -12,43 +12,43 @@ export const U72_A_AN_AND_THE_TOPIC: GrammarTopicDetail = {
   kindLabel: "Articles",
   sourceBook: "English Grammar in Use · Intermediate · Unit 72",
   sourceNote:
-    "Lần đầu a/an, lần sau the; the khi đã rõ đồ vật; the bank/doctor; once a week. Nên học kèm Units 71, 73–76.",
+    "Lần đầu nhắc đến dùng a/an, lần sau dùng the; the bank/doctor; once a week. Nên học kèm Unit 71 và Units 73–76.",
   intro:
-    "Lần đầu a/an, lần sau the; the khi đã rõ đồ vật; the bank/doctor; once a week. Nên học kèm Unit 71 và Units 73–76.",
+    "Bài này giúp bạn chọn a/an hay the khi nhắc đến vật lần đầu hay lần sau, và biết các trường hợp đặc biệt như the bank, the doctor hay once a week. Nên học kèm Unit 71 và Units 73–76.",
   structure: {
     affirmative:
-      "a/an (first mention / type) → the (known / specific) | the + light/door/station/bank/doctor | once a + time unit",
+      "a/an (lần đầu / nói về một loại) → the (đã biết / cụ thể) | the + light/door/station/bank/doctor | once a + đơn vị thời gian",
     negative:
-      "no the for first vague mention | no a/an when thing is already identified",
+      "Lần đầu nhắc mơ hồ thì không dùng the | Vật đã xác định rồi thì không dùng a/an",
   },
   usagePoints: [
     {
-      before: "Lần đầu: ",
+      before: "Lần đầu nhắc đến dùng ",
       strong: "a/an",
-      after: "; đã biết là cái nào: the.",
+      after: "; khi người nghe đã biết là cái nào thì dùng the.",
     },
     {
-      before: "the = ",
-      strong: "vật cụ thể / đã xác định",
+      before: "Dùng the khi nói về ",
+      strong: "vật cụ thể hoặc đã xác định",
       after: ": the chair nearest the door; I cleaned the car yesterday.",
     },
     {
-      before: "a/an = ",
-      strong: "loại / một trong nhiều",
+      before: "Dùng a/an khi nói về ",
+      strong: "một loại hoặc một trong nhiều",
       after: ": a very cheap hotel; Do you have a car?",
     },
     {
-      before: "Ngữ cảnh rõ trong phòng/thị trấn: ",
+      before: "Trong ngữ cảnh đã rõ trong phòng hoặc thị trấn thì dùng ",
       strong: "the light / the station / the manager",
       after: ".",
     },
     {
-      before: "go to ",
+      before: "Đi đến nơi dịch vụ thì nói go to ",
       strong: "the bank / the doctor / the dentist",
-      after: "; so: Is there a bank…? / My sister is a dentist.",
+      after: "; còn hỏi có nơi đó không hoặc nói nghề thì dùng a: Is there a bank…? / My sister is a dentist.",
     },
     {
-      before: "Tần suất: ",
+      before: "Nói tần suất hoặc giá thì dùng ",
       strong: "once a week / eight hours a day",
       after: " / £1.50 a kilo.",
     },
@@ -56,27 +56,27 @@ export const U72_A_AN_AND_THE_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "I had a sandwich and an apple for lunch. The sandwich wasn't very good.",
-      vietnamese: "Lần đầu a/an; lần sau the.",
+      vietnamese: "Lần đầu nhắc đến dùng a/an; lần sau dùng the.",
     },
     {
       english: "A man and a woman were sitting opposite me. The man was American.",
-      vietnamese: "Giới thiệu a → nhắc lại the.",
+      vietnamese: "Giới thiệu bằng a rồi nhắc lại bằng the.",
     },
     {
       english: "Can you turn off the light, please?",
-      vietnamese: "Đèn trong phòng này → the light.",
+      vietnamese: "Đèn trong phòng này nên dùng the light.",
     },
     {
       english: "I have to go to the bank. Is there a bank near here?",
-      vietnamese: "the bank = ngân hàng (cụ thể/ quen); a bank = có ngân hàng nào không.",
+      vietnamese: "the bank là đi đến ngân hàng; a bank là hỏi có ngân hàng nào không.",
     },
     {
       english: "I don't like going to the dentist. My sister is a dentist.",
-      vietnamese: "the dentist = đi khám; a dentist = nghề.",
+      vietnamese: "the dentist là đi khám; a dentist là nói về nghề.",
     },
     {
       english: "I go to the cinema about once a month.",
-      vietnamese: "once a month = mỗi tháng một lần.",
+      vietnamese: "once a month nghĩa là mỗi tháng một lần.",
     },
   ],
   practice: {

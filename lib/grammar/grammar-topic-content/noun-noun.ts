@@ -11,71 +11,71 @@ export const U80_NOUN_NOUN_TOPIC: GrammarTopicDetail = {
   kindLabel: "Nouns",
   sourceBook: "English Grammar in Use · Intermediate · Unit 80",
   sourceNote:
-    "Danh từ + danh từ (bus driver); chuỗi danh từ; coffee cup vs cup of coffee; a three-hour journey.",
+    "Ghép danh từ + danh từ (bus driver), chuỗi danh từ, coffee cup và cup of coffee, cụm đo lường a three-hour journey.",
   intro:
-    "Danh từ + danh từ (bus driver); chuỗi danh từ; coffee cup vs cup of coffee; a three-hour journey.",
+    "Bài này giúp bạn ghép hai hay nhiều danh từ để gọi tên người, đồ vật hay nơi chốn, phân biệt coffee cup và cup of coffee, và dùng cụm đo lường như a three-hour journey.",
   structure: {
     affirmative:
-      "N1 (sg) + N2 | N1 + N2 + N3… | number-unit + N (a three-hour journey)",
+      "danh từ 1 (số ít) + danh từ 2 | danh từ 1 + danh từ 2 + danh từ 3… | số + đơn vị đo + danh từ (a three-hour journey)",
     negative:
-      "no plural on measuring N before noun (not a three-hours flight) | coffee cup ≠ cup of coffee",
+      "Không thêm -s sau đơn vị đo đứng trước danh từ (không nói a three-hours flight) | coffee cup khác cup of coffee",
   },
   usagePoints: [
     {
-      before: "N1 + N2: N1 như ",
-      strong: "tính từ (loại gì)",
+      before: "Danh từ đầu hoạt động như ",
+      strong: "tính từ mô tả",
       after: ": bus driver, health problems, Paris hotel.",
     },
     {
-      before: "Có thể ",
+      before: "Có thể ghép thành ",
       strong: "chuỗi danh từ",
-      after: ": hotel reception desk; school football team.",
+      after: ": hotel reception desk, school football team.",
     },
     {
-      before: "N1 thường ",
+      before: "Danh từ đầu thường giữ ",
       strong: "số ít",
-      after: " dù nghĩa nhiều: car park, apple tree, ticket machine.",
+      after: " dù nghĩa số nhiều: car park, apple tree, ticket machine.",
     },
     {
-      before: "a coffee cup ≠ ",
-      strong: "a cup of coffee",
-      after: " (loại cốc vs cốc đang đựng).",
+      before: "A coffee cup nghĩa là ",
+      strong: "cái cốc dùng để uống cà phê",
+      after: "; a cup of coffee nghĩa là một cốc cà phê đang đựng.",
     },
     {
-      before: "Đo lường + danh từ: ",
+      before: "Cụm đo lường đứng trước danh từ: ",
       strong: "a three-hour journey",
-      after: " / a ten-pound note / a six-year-old child.",
+      after: ", a ten-pound note, a six-year-old child.",
     },
     {
-      before: "Sau số + đơn vị đứng ",
-      strong: "một mình → số nhiều",
-      after: ": The course lasted four weeks. It took two hours.",
+      before: "Khi số + đơn vị đo đứng ",
+      strong: "một mình",
+      after: " thì dùng số nhiều: The course lasted four weeks. It took two hours.",
     },
   ],
   examples: [
     {
       english: "A bus driver is someone who drives a bus. Income tax is tax on your income.",
-      vietnamese: "noun + noun = loại người / loại thuế.",
+      vietnamese: "Ghép danh từ + danh từ để gọi tên nghề hoặc loại thuế.",
     },
     {
       english: "You need a frying pan and a washing machine.",
-      vietnamese: "-ing + noun = dụng cụ dùng để…",
+      vietnamese: "Danh từ -ing + danh từ chỉ dụng cụ dùng để làm việc gì.",
     },
     {
       english: "I waited at the hotel reception desk.",
-      vietnamese: "ba danh từ ghép.",
+      vietnamese: "Ba danh từ ghép liên tiếp trong một cụm.",
     },
     {
       english: "a coffee cup / a cup of coffee",
-      vietnamese: "loại cốc vs một cốc cà phê.",
+      vietnamese: "Loại cốc khác với một cốc cà phê đang đựng.",
     },
     {
       english: "It was a four-week course. The course lasted four weeks.",
-      vietnamese: "tính từ đo lường số ít có gạch nối; predicate dùng số nhiều.",
+      vietnamese: "Cụm đo lường trước danh từ dùng số ít có gạch nối; vế sau dùng số nhiều.",
     },
     {
       english: "Sam has a six-year-old daughter. She is six years old.",
-      vietnamese: "six-year-old + noun; be + six years old.",
+      vietnamese: "Six-year-old đứng trước danh từ; be + six years old đứng riêng.",
     },
   ],
   practice: {

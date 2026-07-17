@@ -165,24 +165,56 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
     unitNumbers: [18],
   },
   69: {
-    message: "Nên học kèm Unit 70 để nắm trọn countable / uncountable.",
-    unitNumbers: [70],
+    message: "Nên học kèm Unit 70 và Unit 71 để nắm trọn countable / uncountable và a/an / some.",
+    unitNumbers: [70, 71],
   },
   70: {
-    message: "Nên học kèm Unit 69 (countable / uncountable 1) trước khi học phần 2.",
-    unitNumbers: [69],
+    message: "Nên học kèm Unit 69 (countable / uncountable 1) và Unit 71 (a/an and some).",
+    unitNumbers: [69, 71],
+  },
+  71: {
+    message: "Nên học kèm Units 69–70 (countable / uncountable) và Unit 72 (a/an and the).",
+    unitNumbers: [69, 70, 72],
   },
   72: {
-    message: "Nên học kèm Units 73–76 (the 1–4) để nắm cách dùng mạo từ the.",
-    unitNumbers: [73, 74, 75, 76],
+    message: "Nên học kèm Unit 71 và Units 73–76 (the 1–4) để nắm trọn mạo từ.",
+    unitNumbers: [71, 73, 74, 75, 76],
+  },
+  73: {
+    message: "Nên học kèm Unit 72 và Units 74–76 để nắm trọn chuỗi the.",
+    unitNumbers: [72, 74, 75, 76],
+  },
+  74: {
+    message: "Nên học kèm Unit 72 và Units 73, 75–76 để nắm trọn chuỗi the.",
+    unitNumbers: [72, 73, 75, 76],
+  },
+  75: {
+    message: "Nên học kèm Unit 72 và Units 73–74, 76 để nắm trọn chuỗi the.",
+    unitNumbers: [72, 73, 74, 76],
+  },
+  76: {
+    message: "Nên học kèm Unit 72 và Units 73–75; xem tiếp Units 77–78 về tên riêng.",
+    unitNumbers: [72, 73, 74, 75, 77, 78],
   },
   77: {
-    message: "Nên học kèm Unit 78 để nắm tên riêng có/không có the.",
-    unitNumbers: [78],
+    message: "Nên học kèm Unit 76 (the 4) và Unit 78 để nắm tên riêng có/không có the.",
+    unitNumbers: [76, 78],
   },
   78: {
     message: "Nên học kèm Unit 77 (names with/without the 1).",
     unitNumbers: [77],
+  },
+  81: {
+    message: "Nên học kèm Unit 80 (noun + noun) để đối chiếu 's / of với cụm danh từ.",
+    unitNumbers: [80],
+  },
+  82: {
+    message: "Nên học kèm Unit 83 (a friend of mine / my own / on my own).",
+    unitNumbers: [83],
+  },
+  83: {
+    message: "Nên học kèm Unit 82 (myself / yourself / themselves).",
+    unitNumbers: [82],
   },
   85: {
     message: "Nên học kèm Unit 86 (no/none/any / nothing/nobody) để đối chiếu some/any và phủ định.",

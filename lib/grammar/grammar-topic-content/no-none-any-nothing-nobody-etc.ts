@@ -12,71 +12,71 @@ export const U86_NO_NONE_ANY_NOTHING_NOBODY_ETC_TOPIC: GrammarTopicDetail = {
   kindLabel: "Determiners",
   sourceBook: "English Grammar in Use · Intermediate · Unit 86",
   sourceNote:
-    "no + noun; none (of); nothing/nobody/nowhere = not + any-; không phủ định kép; any = bất kỳ. Nên học kèm Unit 85.",
+    "No + danh từ; none (of …); nothing/nobody/nowhere = not + any-; tránh phủ định kép; any = bất kỳ. Nên học kèm Unit 85.",
   intro:
-    "Unit này giúp bạn nắm No/None/Any / Nothing/Nobody etc.: No + noun; none (of); nothing/nobody/nowhere = not + any-; không phủ định kép; any = bất kỳ. Nên học kèm Unit 85.",
+    "Bài này giúp bạn dùng no, none, nothing, nobody… để nói không có gì hay không ai, tránh phủ định kép, và phân biệt với any khi nghĩa là bất kỳ. Nên học kèm Unit 85.",
   structure: {
     affirmative:
-      "no + N | none (of …) | nothing/nobody/nowhere | not + any/anybody/anything",
+      "no + danh từ | none (of …) | nothing / nobody / nowhere | not + any / anybody / anything",
     negative:
-      "not I didn't say nothing | not none + noun without of when answering with noun form",
+      "Không nói I didn't say nothing (nói I didn't say anything) | Không dùng none + danh từ trực tiếp (nói none of …)",
   },
   usagePoints: [
     {
-      before: "no + ",
+      before: "No đi với ",
       strong: "danh từ",
       after: ": no bus, no trouble, no shops.",
     },
     {
-      before: "none = ",
-      strong: "không có (không kèm noun)",
-      after: "; none of + the/this/them…",
+      before: "None nghĩa là ",
+      strong: "không có",
+      after: " và không đi kèm danh từ; dùng none of + the/this/them…",
     },
     {
-      before: "nothing/nobody… = ",
-      strong: "not + anything/anybody…",
-      after: " — một phủ định thôi.",
+      before: "Nothing, nobody, nowhere… tương đương ",
+      strong: "not + anything/anybody/anywhere…",
+      after: " — chỉ dùng một phủ định trong câu.",
     },
     {
-      before: "nobody/no-one + ",
+      before: "Nobody/no-one đi với ",
       strong: "they/them/their",
       after: ".",
     },
     {
-      before: "any sau phủ định; any cũng = ",
+      before: "Any sau phủ định; any cũng có nghĩa ",
       strong: "bất kỳ",
-      after: " (Unit 85D).",
+      after: " (xem thêm Unit 85).",
     },
     {
-      before: "Nowhere / Nothing / Nobody có thể ",
+      before: "Nowhere, nothing, nobody có thể ",
       strong: "trả lời ngắn",
-      after: ".",
+      after: " một mình.",
     },
   ],
   examples: [
     {
       english: "There was no bus. There weren't any taxis. / There were no taxis.",
-      vietnamese: "no + N hoặc not + any.",
+      vietnamese: "No + danh từ hoặc not + any đều được.",
     },
     {
       english: "'How much money do you have?' 'None.'",
-      vietnamese: "none không kèm danh từ.",
+      vietnamese: "None trả lời một mình, không đi kèm danh từ.",
     },
     {
       english: "I said nothing. = I didn't say anything.",
-      vietnamese: "không phủ định kép.",
+      vietnamese: "Chỉ dùng một phủ định, không nói didn't say nothing.",
     },
     {
       english: "Nobody knows. / Nowhere. I'm staying here.",
-      vietnamese: "nobody / nowhere đứng một mình.",
+      vietnamese: "Nobody và nowhere có thể trả lời ngắn.",
     },
     {
       english: "You can take any bus. Anybody can do it.",
-      vietnamese: "any- = bất kỳ (không phải no-).",
+      vietnamese: "Any- ở đây nghĩa bất kỳ, không phải no-.",
     },
     {
       english: "None of the students were happy. / … was happy.",
-      vietnamese: "none of + số nhiều: động từ số ít hoặc số nhiều.",
+      vietnamese: "Sau none of + số nhiều, động từ số ít hoặc số nhiều đều được.",
     },
   ],
   practice: {

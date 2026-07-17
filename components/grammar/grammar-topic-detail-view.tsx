@@ -91,11 +91,29 @@ function StructureColumn({
 const unitLinkClass =
   "font-bold underline decoration-[#4b2876] underline-offset-2 text-[#4b2876] hover:opacity-80";
 
-/** Bold + underline “Unit 22” / “Units 20–22” mentions that have related-unit targets. */
+/** Parse "72", "73–74", "73-74, 76", "73–75, 77–78", "53–54, 56 và 58". */
+function parseUnitNumberList(listText: string): Array<{ start: number; end: number }> {
+  const refs: Array<{ start: number; end: number }> = [];
+  const tokenPattern = /(\d+)(?:\s*[–\-]\s*(\d+))?/g;
+  let token: RegExpExecArray | null = tokenPattern.exec(listText);
+  while (token !== null) {
+    const start = Number(token[1]);
+    const end = token[2] ? Number(token[2]) : start;
+    if (Number.isFinite(start) && Number.isFinite(end) && start > 0) {
+      refs.push({ start, end: end >= start ? end : start });
+    }
+    token = tokenPattern.exec(listText);
+  }
+  return refs;
+}
+
+/** Bold + underline “Unit 22” / “Units 20–22, 24” mentions that have related-unit targets. */
 function linkifyUnitMentions(text: string, units: GrammarRelatedStudy["units"]): ReactNode {
   const byNumber = new Map(units.map((unit) => [unit.unitNumber, unit]));
   const parts: ReactNode[] = [];
-  const pattern = /\bUnits?\s+(\d+)(?:\s*[–\-]\s*(\d+))?/gi;
+  // Matches: Unit 72 | Units 73–74 | Units 73–74, 76 | Units 73–75, 77–78 | Units 53–54, 56 và 58
+  const pattern =
+    /\bUnits?\s+(\d+(?:\s*[–\-]\s*\d+)?(?:\s*(?:,|và)\s*(?:Units?\s+)?\d+(?:\s*[–\-]\s*\d+)?)*)/gi;
   let lastIndex = 0;
   let match: RegExpExecArray | null;
   let key = 0;
@@ -105,39 +123,81 @@ function linkifyUnitMentions(text: string, units: GrammarRelatedStudy["units"]):
     if (match.index > lastIndex) {
       parts.push(text.slice(lastIndex, match.index));
     }
-    const start = Number(match[1]);
-    const end = match[2] ? Number(match[2]) : start;
-    const dash = match[0].includes("–") ? "–" : match[0].includes("-") ? "-" : "–";
 
-    if (start === end) {
-      const unit = byNumber.get(start);
+    const full = match[0];
+    const listText = match[1] ?? "";
+    const refs = parseUnitNumberList(listText);
+    const isPlural = /^Units\b/i.test(full);
+    const hasList = /(?:,|và)/i.test(full) || refs.some((ref) => ref.start !== ref.end) || refs.length > 1;
+
+    if (refs.length === 0) {
+      parts.push(full);
+    } else if (!hasList && refs[0] && refs[0].start === refs[0].end) {
+      const unit = byNumber.get(refs[0].start);
       parts.push(
         unit ? (
           <Link key={`u-${key++}`} href={grammarTopicHref(unit.slug)} className={unitLinkClass}>
-            {match[0]}
+            {full}
           </Link>
         ) : (
-          match[0]
+          full
         ),
       );
     } else {
-      const rangeNodes: ReactNode[] = ["Units "];
+      // Preserve original separators while linking numbers.
+      const nodes: ReactNode[] = [isPlural ? "Units " : "Unit "];
       let linkedAny = false;
-      for (let n = start; n <= end; n += 1) {
-        if (n > start) rangeNodes.push(dash);
-        const unit = byNumber.get(n);
-        if (unit) {
-          linkedAny = true;
-          rangeNodes.push(
-            <Link key={`u-${key++}-${n}`} href={grammarTopicHref(unit.slug)} className={unitLinkClass}>
-              {n}
-            </Link>,
-          );
+      const piecePattern =
+        /(\d+)(?:\s*([–\-])\s*(\d+))?|(\s*,\s*(?:Units?\s+)?|\s+và\s+(?:Units?\s+)?)/gi;
+      let piece: RegExpExecArray | null = piecePattern.exec(listText);
+      let pieceKey = 0;
+      while (piece !== null) {
+        if (piece[4]) {
+          nodes.push(piece[4].replace(/\bUnits?\s+/i, ""));
         } else {
-          rangeNodes.push(String(n));
+          const start = Number(piece[1]);
+          const end = piece[3] ? Number(piece[3]) : start;
+          const dash = piece[2] === "-" ? "-" : "–";
+          if (start === end) {
+            const unit = byNumber.get(start);
+            if (unit) {
+              linkedAny = true;
+              nodes.push(
+                <Link
+                  key={`u-${key}-${pieceKey++}`}
+                  href={grammarTopicHref(unit.slug)}
+                  className={unitLinkClass}
+                >
+                  {String(start)}
+                </Link>,
+              );
+            } else {
+              nodes.push(String(start));
+            }
+          } else {
+            for (let n = start; n <= end; n += 1) {
+              if (n > start) nodes.push(dash);
+              const unit = byNumber.get(n);
+              if (unit) {
+                linkedAny = true;
+                nodes.push(
+                  <Link
+                    key={`u-${key}-${pieceKey++}-${n}`}
+                    href={grammarTopicHref(unit.slug)}
+                    className={unitLinkClass}
+                  >
+                    {n}
+                  </Link>,
+                );
+              } else {
+                nodes.push(String(n));
+              }
+            }
+          }
         }
+        piece = piecePattern.exec(listText);
       }
-      parts.push(linkedAny ? <span key={`g-${key++}`}>{rangeNodes}</span> : match[0]);
+      parts.push(linkedAny ? <span key={`g-${key++}`}>{nodes}</span> : full);
     }
 
     lastIndex = match.index + match[0].length;

@@ -12,75 +12,75 @@ export const U81_S_AND_OF_TOPIC: GrammarTopicDetail = {
   kindLabel: "Nouns",
   sourceBook: "English Grammar in Use · Intermediate · Unit 81",
   sourceNote:
-    "-'s cho người/động vật/tổ chức/địa điểm/thời gian; of … cho đồ vật/ý niệm; a week's holiday / ten minutes' walk. Nên học kèm Unit 80.",
+    "Dùng -'s với người, động vật, tổ chức, địa điểm và thời gian; dùng of … với đồ vật và ý niệm; a week's holiday, ten minutes' walk. Nên học kèm Unit 80.",
   intro:
-    "-'s cho người/động vật/tổ chức/địa điểm/thời gian; of … cho đồ vật/ý niệm; a week's holiday / ten minutes' walk. Nên học kèm Unit 80 (noun + noun).",
+    "Bài này giúp bạn chọn -'s hay of … để nói sở hữu, phân biệt khi nói về người, đồ vật, tổ chức hay thời gian, và dùng cụm như a week's holiday. Nên học kèm Unit 80.",
   structure: {
     affirmative:
-      "person/animal + 's + N | plural -s' + N | of + thing/idea | time + 's / period + 's/'",
+      "người / động vật + 's + danh từ | danh từ số nhiều tận cùng -s + ' + danh từ | of + đồ vật / ý niệm | thời gian + 's / khoảng thời gian + 's hoặc s'",
     negative:
-      "not the computer of Tom (thường) | not the water's temperature | not the month's beginning",
+      "Không nói the computer of Tom (thường dùng Tom's computer) | Không nói the water's temperature | Không nói the month's beginning",
   },
   usagePoints: [
     {
-      before: "Người / động vật → ",
+      before: "Với người và động vật thì dùng ",
       strong: "-'s",
       after: ": Chris's children, the cat's tail. It's my sister's (= my sister's book).",
     },
     {
-      before: "Số nhiều hết -s → ",
+      before: "Danh từ số nhiều tận cùng bằng -s thì thêm ",
       strong: "s'",
-      after: ": my sisters' room, our neighbours' garden. men/children → 's: Children's clothes.",
+      after: ": my sisters' room, our neighbours' garden. Men/children → 's: children's clothes.",
     },
     {
-      before: "Đồ vật / ý niệm → ",
+      before: "Với đồ vật và ý niệm thì dùng ",
       strong: "of …",
       after: ": the temperature of the water, the top of the hill.",
     },
     {
-      before: "Tổ chức / địa điểm: ",
-      strong: "-'s hoặc of",
+      before: "Với tổ chức và địa điểm có thể dùng ",
+      strong: "-'s hoặc of …",
       after: ": the company's success / the success of the company; Britain's weather.",
     },
     {
-      before: "Thời gian: ",
-      strong: "yesterday's / Next week's",
-      after: "; khoảng thời gian: a week's holiday, twenty minutes' walk.",
+      before: "Với thời gian dùng ",
+      strong: "yesterday's / next week's",
+      after: "; với khoảng thời gian: a week's holiday, twenty minutes' walk.",
     },
     {
-      before: "Nhóm từ dài → ",
+      before: "Khi cụm danh từ dài thì dùng ",
       strong: "of …",
-      after: " (không: the man we met yesterday's mother).",
+      after: " (không nói the man we met yesterday's mother).",
     },
   ],
   examples: [
     {
       english: "What's your sister's name? How old are Chris's children?",
-      vietnamese: "-'s với người.",
+      vietnamese: "Dùng -'s khi nói về người.",
     },
     {
       english: "my sister's room / my sisters' room / a children's book",
-      vietnamese: "số ít 's; số nhiều s'; men/children dùng 's.",
+      vietnamese: "Số ít thêm 's; số nhiều tận cùng -s thêm s'; men/children thêm 's.",
     },
     {
       english: "the name of the book / the beginning of the month / the back of the car",
-      vietnamese: "đồ vật / phần → of …",
+      vietnamese: "Đồ vật và phần của vật thì dùng of …",
     },
     {
       english: "the government's decision or the decision of the government",
-      vietnamese: "tổ chức: cả hai đều được.",
+      vietnamese: "Với tổ chức, cả -'s và of … đều được.",
     },
     {
       english: "Last week's storm caused a lot of damage.",
-      vietnamese: "thời gian + 's.",
+      vietnamese: "Thời gian cụ thể đi với -'s.",
     },
     {
       english: "I've got a week's holiday. It's only ten minutes' walk.",
-      vietnamese: "khoảng thời gian: 's / s'.",
+      vietnamese: "Khoảng thời gian dùng 's hoặc s' tùy danh từ.",
     },
     {
       english: "Jack and Karen's children live next door.",
-      vietnamese: "-'s sau nhiều danh từ cùng sở hữu.",
+      vietnamese: "-'s đặt sau nhiều danh từ cùng sở hữu.",
     },
   ],
   practice: {

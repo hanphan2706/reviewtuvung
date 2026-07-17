@@ -12,71 +12,71 @@ export const U71_COUNTABLE_NOUNS_WITH_A_AN_AND_SOME_TOPIC: GrammarTopicDetail = 
   kindLabel: "Articles",
   sourceBook: "English Grammar in Use · Intermediate · Unit 71",
   sourceNote:
-    "a/an với số ít đếm được; loại đồ/người; nghề nghiệp; some với số nhiều. Nên học kèm Units 69–70 và 72.",
+    "Thêm a/an cho danh từ đếm được số ít; some cho số nhiều; nói chung một loại thì bỏ some. Nên học kèm Units 69–70 và 72.",
   intro:
-    "Unit này giúp bạn nắm Countable Nouns with a/an and some: A/an với số ít đếm được; loại đồ/người; nghề nghiệp; some với số nhiều. Nên học kèm Units 69–70 và Unit 72.",
+    "Bài này giúp bạn biết khi nào phải thêm a/an trước danh từ đếm được số ít, khi nào dùng some cho số nhiều, và khi nào không cần dùng gì cả. Nên học kèm Units 69–70 và Unit 72.",
   structure: {
     affirmative:
-      "a/an + singular countable | (some) + plural | S + be + a/an + job",
+      "a/an + danh từ đếm được số ít | some + danh từ số nhiều | chủ ngữ + be + a/an + nghề nghiệp",
     negative:
-      "no bare singular countable | no some for things in general | plural kind without some",
+      "Danh từ đếm được số ít luôn phải có a/an | Nói chung về một loại (số nhiều) thì bỏ some | Nói nghề nghiệp vẫn phải có a/an",
   },
   usagePoints: [
     {
-      before: "Số ít đếm được cần ",
+      before: "Danh từ đếm được ở số ít thì luôn phải có ",
       strong: "a/an",
-      after: ": She never wears a hat. What a beautiful day!",
+      after: " đứng trước: She never wears a hat. What a beautiful day!",
     },
     {
-      before: "a/an nói ",
-      strong: "loại đồ / người",
+      before: "Dùng a/an khi muốn nói đó là ",
+      strong: "một loại đồ vật hay một kiểu người",
       after: ": That's a nice table. Jane is a really nice person.",
     },
     {
-      before: "Số nhiều nói loại: ",
-      strong: "không some",
-      after: ": Those are nice chairs. What awful shoes! (không: some nice chairs)",
+      before: "Khi nói chung về cả một loại ở số nhiều thì ",
+      strong: "KHÔNG",
+      after: " dùng some: Those are nice chairs (không nói: some nice chairs).",
     },
     {
-      before: "Nghề nghiệp: ",
-      strong: "is a nurse / an English teacher",
-      after: " (không: is nurse).",
+      before: "Nói về nghề nghiệp của ai đó vẫn phải có a/an: ",
+      strong: "She is a nurse / an English teacher",
+      after: " (không nói: She is nurse).",
     },
     {
-      before: "some = ",
-      strong: "một số / vài / một đôi",
-      after: ": some good movies; some friends; some new sunglasses.",
+      before: "Dùng some khi muốn nói ",
+      strong: "một vài / một ít",
+      after: " (không phải tất cả): some good movies; some friends; some new sunglasses.",
     },
     {
-      before: "Không some khi ",
-      strong: "nói chung",
-      after: ": I love bananas. She writes books. (không: some bananas / some books)",
+      before: "Khi nói chung chung về sự vật thì ",
+      strong: "KHÔNG",
+      after: " dùng some: I love bananas. She writes books (không nói: some bananas / some books).",
     },
   ],
   examples: [
     {
       english: "Bye! Have a nice evening. Do you need an umbrella?",
-      vietnamese: "Số ít đếm được → a/an.",
+      vietnamese: "Danh từ đếm được số ít nên phải thêm a/an.",
     },
     {
       english: "A dog is an animal. Dogs are animals.",
-      vietnamese: "Số ít: a/an; số nhiều nói loại: không some.",
+      vietnamese: "Số ít thì thêm a/an; còn khi nói chung ở số nhiều thì bỏ some.",
     },
     {
       english: "Sandra is a nurse. Would you like to be an English teacher?",
-      vietnamese: "Nghề nghiệp luôn có a/an.",
+      vietnamese: "Nói nghề nghiệp thì luôn có a/an đứng trước.",
     },
     {
       english: "I've seen some good movies recently.",
-      vietnamese: "some = một số (không để trống khi nghĩa này).",
+      vietnamese: "some nghĩa là “một vài”, nên không thể bỏ trống ở đây.",
     },
     {
       english: "Some children learn very quickly.",
-      vietnamese: "some = một phần, không phải tất cả.",
+      vietnamese: "some ý chỉ một bộ phận, không phải toàn bộ trẻ em.",
     },
     {
       english: "My aunt is a writer. She writes books.",
-      vietnamese: "Nói chung → books (không: some books).",
+      vietnamese: "Nói chung về sách nên dùng books, không nói some books.",
     },
   ],
   practice: {

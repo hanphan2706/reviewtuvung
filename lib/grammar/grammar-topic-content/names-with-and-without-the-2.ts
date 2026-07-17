@@ -12,71 +12,71 @@ export const U78_NAMES_WITH_AND_WITHOUT_THE_2_TOPIC: GrammarTopicDetail = {
   kindLabel: "Articles",
   sourceBook: "English Grammar in Use · Intermediate · Unit 78",
   sourceNote:
-    "Đường phố/công viên; sân bay/đại học kiểu Place+Noun; khách sạn/bảo tàng; of…; 's; báo/hãng. Nên học kèm Unit 77.",
+    "Đường phố, công viên; sân bay/đại học kiểu Place+Noun; khách sạn/bảo tàng; of…; 's; báo/hãng. Nên học kèm Unit 76 và Unit 77.",
   intro:
-    "Đường phố/công viên; sân bay/đại học kiểu Place+Noun; khách sạn/bảo tàng; of…; 's; báo/hãng. Nên học kèm Unit 77.",
+    "Bài này giúp bạn nhớ quy tắc the với tên đường phố, công viên, sân bay, trường đại học, khách sạn, bảo tàng, tên có of… hoặc 's, và tên báo hay công ty. Nên học kèm Unit 76 và Unit 77.",
   structure: {
     affirmative:
-      "Ø + Street/Park/Airport/University (Place+Noun) / 's names | the + Hotel/Museum/of… / newspapers & many orgs",
+      "Ø + Street/Park/Airport/University (Place+Noun) / tên 's | the + Hotel/Museum/of… / tên báo và nhiều tổ chức",
     negative:
-      "no the Union Street / Buckingham Palace / McDonald's / Sony | the Royal Palace / the University of…",
+      "Không nói the Union Street / Buckingham Palace / McDonald's / Sony | the Royal Palace / the University of…",
   },
   usagePoints: [
     {
-      before: "Đường / công viên: ",
-      strong: "không the",
-      after: ": Fifth Avenue, Hyde Park, Times Square.",
+      before: "Tên đường phố và công viên thì ",
+      strong: "KHÔNG",
+      after: " có the: Fifth Avenue, Hyde Park, Times Square.",
     },
     {
-      before: "Place/Person + Airport/University/Station/Palace: ",
-      strong: "thường không the",
+      before: "Tên kiểu Place/Person + Airport/University/Station/Palace ",
+      strong: "thường không có the",
       after: ": Gatwick Airport, Cambridge University, Buckingham Palace.",
     },
     {
-      before: "Hotels, museums, many landmarks: ",
+      before: "Khách sạn, bảo tàng và nhiều địa danh nổi tiếng thì có ",
       strong: "the",
       after: ": the White House, the Eiffel Tower, the Acropolis.",
     },
     {
-      before: "… of … → ",
+      before: "Tên có … of … thì dùng ",
       strong: "the",
-      after: ": the Great Wall of China; the University of Cambridge vs Cambridge University.",
+      after: ": the Great Wall of China; the University of Cambridge (khác Cambridge University).",
     },
     {
-      before: "Tên 's / St …: ",
-      strong: "không the",
-      after: ": Harrison's, St Paul's Cathedral.",
+      before: "Tên có 's hoặc St … thì ",
+      strong: "KHÔNG",
+      after: " có the: Harrison's, St Paul's Cathedral.",
     },
     {
-      before: "Báo / nhiều tổ chức: ",
+      before: "Tên báo và nhiều tổ chức thì có ",
       strong: "the",
-      after: "; công ty / hãng bay: không the (Sony, Cathay Pacific).",
+      after: "; còn tên công ty hoặc hãng bay thì không: Sony, Cathay Pacific.",
     },
   ],
   examples: [
     {
       english: "Buckingham Palace is in London. The White House is in Washington.",
-      vietnamese: "Buckingham Palace không the; the White House có the.",
+      vietnamese: "Buckingham Palace không có the; the White House thì có.",
     },
     {
       english: "I'd like to see the Great Wall of China.",
-      vietnamese: "tên với of → the.",
+      vietnamese: "Tên có of thường phải có the.",
     },
     {
       english: "Jack is a student at Liverpool University.",
-      vietnamese: "Place + University → không the.",
+      vietnamese: "Place + University thường không có the.",
     },
     {
       english: "Many tourists visit St Paul's Cathedral.",
-      vietnamese: "St + tên → không the.",
+      vietnamese: "St + tên riêng thường không có the.",
     },
     {
       english: "Which newspaper? The Morning News.",
-      vietnamese: "tên báo thường có the.",
+      vietnamese: "Tên báo thường có the.",
     },
     {
       english: "He works for Cathay Pacific. This book is published by Cambridge University Press.",
-      vietnamese: "hãng / nhà xuất bản kiểu này thường không the.",
+      vietnamese: "Tên hãng bay và nhà xuất bản kiểu này thường không có the.",
     },
   ],
   practice: {

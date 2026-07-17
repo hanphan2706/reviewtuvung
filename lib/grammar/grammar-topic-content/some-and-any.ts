@@ -12,71 +12,71 @@ export const U85_SOME_AND_ANY_TOPIC: GrammarTopicDetail = {
   kindLabel: "Determiners",
   sourceBook: "English Grammar in Use · Intermediate · Unit 85",
   sourceNote:
-    "some (+) / any (−); câu hỏi; if + any; any = không quan trọng cái nào; somebody + they. Nên học kèm Unit 86.",
+    "Some trong câu khẳng định, any trong câu phủ định; some và any trong câu hỏi; if + any; any = không quan trọng cái nào; somebody + they. Nên học kèm Unit 86.",
   intro:
-    "Unit này giúp bạn nắm Some and Any: Some (+) / any (−); câu hỏi; if + any; any = không quan trọng cái nào; somebody + they. Nên học kèm Unit 86 (no / none / nothing…).",
+    "Bài này giúp bạn chọn some hay any trong câu khẳng định, phủ định và câu hỏi, hiểu any khi nghĩa là bất kỳ cái nào, và dùng they với somebody. Nên học kèm Unit 86.",
   structure: {
     affirmative:
-      "some / somebody / something (+) | any in − and most ? | any = it doesn't matter which",
+      "some / somebody / something (câu khẳng định) | any (câu phủ định và hầu hết câu hỏi) | any = không quan trọng cái nào",
     negative:
-      "not some in clear negatives | any after without / hardly / refuse",
+      "Không dùng some trong câu phủ định rõ ràng | Dùng any sau without / hardly / refuse",
   },
   usagePoints: [
     {
-      before: "Khẳng định → ",
+      before: "Câu khẳng định dùng ",
       strong: "some",
-      after: "; phủ định → any: some flowers / not any flowers.",
+      after: "; câu phủ định dùng any: some flowers / not any flowers.",
     },
     {
-      before: "Xin / mời / nghĩ là có → ",
-      strong: "some",
-      after: " trong câu hỏi: Can I have some…?",
+      before: "Trong câu phủ định rõ ràng thì ",
+      strong: "KHÔNG",
+      after: " dùng some: We didn't buy any flowers (không nói: some flowers).",
     },
     {
-      before: "Không chắc có hay không → ",
+      before: "Trong câu hỏi, dùng ",
+      strong: "some",
+      after: " khi xin, mời hoặc nghĩ là có: Can I have some…?",
+    },
+    {
+      before: "Trong câu hỏi, dùng ",
       strong: "any",
-      after: " trong câu hỏi: Do you have any luggage?",
+      after: " khi không chắc có hay không: Do you have any luggage?",
     },
     {
-      before: "any = ",
+      before: "Any cũng có nghĩa ",
       strong: "không quan trọng cái nào",
-      after: ": any bus / anybody / anything / anywhere.",
+      after: ": any bus, anybody, anything, anywhere.",
     },
     {
-      before: "if + ",
+      before: "Sau if thường dùng ",
       strong: "any / anyone / anything",
-      after: ".",
-    },
-    {
-      before: "someone/anybody + ",
-      strong: "they/them/their",
-      after: " (số ít về ngữ pháp, they theo nghĩa generic).",
+      after: "; someone/anybody đi với they/them/their theo nghĩa chung.",
     },
   ],
   examples: [
     {
       english: "We bought some flowers. We didn't buy any flowers.",
-      vietnamese: "some (+) / any (−).",
+      vietnamese: "Some trong câu khẳng định, any trong câu phủ định.",
     },
     {
       english: "Can I have some sugar, please? Do you have any luggage?",
-      vietnamese: "some khi xin; any khi không chắc.",
+      vietnamese: "Some khi xin; any khi không chắc có hay không.",
     },
     {
       english: "You can take any bus. They all go to the centre.",
-      vietnamese: "any = bất kỳ cái nào.",
+      vietnamese: "Any nghĩa là bất kỳ chiếc nào cũng được.",
     },
     {
       english: "I'm hungry. I want something to eat. — Anything. I don't mind.",
-      vietnamese: "something vs anything (= không quan trọng món nào).",
+      vietnamese: "Something chỉ một thứ cụ thể; anything nghĩa là món nào cũng được.",
     },
     {
       english: "Hardly anybody fails. She went out without any money.",
-      vietnamese: "nghĩa phủ định → any.",
+      vietnamese: "Nghĩa phủ định thì dùng any.",
     },
     {
       english: "Someone has forgotten their umbrella.",
-      vietnamese: "someone + their.",
+      vietnamese: "Someone đi với their theo nghĩa chung.",
     },
   ],
   practice: {

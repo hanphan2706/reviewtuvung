@@ -55,6 +55,11 @@ export type VocabularyExerciseFillBlank = {
   /** Giải thích hiện sau khi kiểm tra đáp án. */
   explanation?: string;
   hint?: string;
+  /**
+   * Bảng từ / đáp án chọn sẵn (EGIU “Choose from the box”).
+   * Chỉ hiển thị tham chiếu — vẫn gõ đáp án; khác `options` (MCQ).
+   */
+  choiceBank?: readonly string[];
   options?: readonly { key: string; label: string }[];
   correctKey?: string;
 };

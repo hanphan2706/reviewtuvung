@@ -12,71 +12,71 @@ export const U76_THE_4_TOPIC: GrammarTopicDetail = {
   kindLabel: "Articles",
   sourceBook: "English Grammar in Use · Intermediate · Unit 76",
   sourceNote:
-    "the + loài/máy móc/nhạc cụ; the + tính từ (the rich); quốc tịch (the French…). Nên học kèm Units 73–75, 77–78.",
+    "the + loài/máy móc/nhạc cụ; the + tính từ (the rich); quốc tịch (the French…). Nên học kèm Unit 72, Units 73–75 và Units 77–78.",
   intro:
-    "Unit này giúp bạn nắm The 4: The + loài/máy móc/nhạc cụ; the + tính từ (the rich); quốc tịch (the French…). Nên học kèm Units 73–75 và 77–78.",
+    "Bài này giúp bạn dùng the khi nói về cả một loài, máy móc hay nhạc cụ, khi the đi với tính từ để chỉ một nhóm người, và cách nói quốc tịch. Nên học kèm Unit 72, Units 73–75 và Units 77–78.",
   structure: {
     affirmative:
-      "the + type (giraffe/telephone/piano) | the + adjective (the rich) | the French / the Chinese | Italians / Mexican people",
+      "the + loài (giraffe/telephone/piano) | the + tính từ (the rich) | the French / the Chinese | Italians / Mexican people",
     negative:
-      "no the olds / a rich | no a French (alone) | man (= humans) without the",
+      "Không nói the olds / a rich | Không nói a French đứng một mình | man (= loài người) không có the",
   },
   usagePoints: [
     {
-      before: "the + danh từ = ",
-      strong: "loại",
+      before: "Dùng the + danh từ khi nói về ",
+      strong: "cả một loài hoặc loại",
       after: ": The giraffe is the tallest animal. When was the camera invented?",
     },
     {
-      before: "Nhạc cụ: ",
+      before: "Khi chơi nhạc cụ thì nói ",
       strong: "play the piano / the guitar",
-      after: "; có chiếc đàn → a piano.",
+      after: "; còn nói sở hữu một cái thì dùng a piano.",
     },
     {
-      before: "man không the = ",
+      before: "Man không có the nghĩa là ",
       strong: "loài người",
       after: ": the origins of man.",
     },
     {
-      before: "the + tính từ = ",
-      strong: "nhóm người",
-      after: ": the rich, the unemployed, the injured (số nhiều).",
+      before: "The + tính từ dùng để chỉ ",
+      strong: "một nhóm người",
+      after: ": the rich, the unemployed, the injured (coi như số nhiều).",
     },
     {
-      before: "the French / the English; ",
-      strong: "the Chinese / the Swiss",
-      after: "; Italians / Brazilians (thường không the).",
+      before: "Một số quốc tịch dùng the: ",
+      strong: "the French / the English; the Chinese / the Swiss",
+      after: "; còn Italians / Brazilians thường không có the.",
     },
     {
-      before: "Một người: ",
+      before: "Nói về một người thì dùng ",
       strong: "a French woman / a German",
-      after: " — không: a French / a rich.",
+      after: " — không nói: a French / a rich.",
     },
   ],
   examples: [
     {
       english: "The giraffe is the tallest of all animals. The dollar is the currency of the United States.",
-      vietnamese: "the = loại động vật / loại tiền.",
+      vietnamese: "The chỉ cả một loài động vật hoặc loại tiền.",
     },
     {
       english: "Can you play the guitar? I'd like to have a piano.",
-      vietnamese: "chơi nhạc cụ → the; sở hữu một cái → a.",
+      vietnamese: "Chơi nhạc cụ thì có the; sở hữu một cái thì dùng a.",
     },
     {
       english: "Do you think the rich should pay higher taxes?",
-      vietnamese: "the rich = người giàu (nhóm).",
+      vietnamese: "The rich nghĩa là người giàu như một nhóm.",
     },
     {
       english: "The French are famous for their food.",
-      vietnamese: "the + tính từ quốc tịch (-ch).",
+      vietnamese: "Một số quốc tịch kết thúc bằng -ch dùng the + tính từ.",
     },
     {
       english: "Italians are very friendly. / Italian people are very friendly.",
-      vietnamese: "quốc tịch -s thường không the; hoặc adj + people.",
+      vietnamese: "Quốc tịch dạng -s thường không có the; hoặc dùng adj + people.",
     },
     {
       english: "I met a French woman / an English guy.",
-      vietnamese: "Một người: a + nationality (+ noun).",
+      vietnamese: "Nói về một người thì dùng a + quốc tịch (+ danh từ).",
     },
   ],
   practice: {

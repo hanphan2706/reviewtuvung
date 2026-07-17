@@ -5,6 +5,8 @@ type GrammarClozeOptions = {
   alternatives?: readonly string[];
   explanation?: string;
   hint?: string;
+  /** Bảng từ “Choose from the box” — bắt buộc khi câu hỏi phụ thuộc danh sách chọn. */
+  choiceBank?: readonly string[];
 };
 
 /** Build a typed cloze item with primary answer + accepted variants. */
@@ -32,5 +34,6 @@ export function grammarCloze(
     promptVi: options.promptVi,
     explanation: options.explanation,
     hint: options.hint,
+    choiceBank: options.choiceBank,
   };
 }

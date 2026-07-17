@@ -12,71 +12,71 @@ export const U82_MYSELF_YOURSELF_THEMSELVES_ETC_TOPIC: GrammarTopicDetail = {
   kindLabel: "Pronouns",
   sourceBook: "English Grammar in Use · Intermediate · Unit 82",
   sourceNote:
-    "Đại từ phản thân khi chủ ngữ = tân ngữ; không sau feel/relax/concentrate/meet; -selves vs each other; nhấn mạnh. Nên học kèm Unit 83.",
+    "Đại từ phản thân khi chủ ngữ trùng tân ngữ; không dùng sau feel/relax/concentrate/meet; phân biệt -selves và each other; dùng để nhấn mạnh. Nên học kèm Unit 83.",
   intro:
-    "Đại từ phản thân khi chủ ngữ = tân ngữ; không sau feel/relax/concentrate/meet; -selves vs each other; nhấn mạnh. Nên học kèm Unit 83 (by myself / on my own).",
+    "Bài này giúp bạn dùng myself, yourself, themselves… khi chủ ngữ và tân ngữ là cùng một người, phân biệt với each other, và dùng đại từ phản thân để nhấn mạnh. Nên học kèm Unit 83.",
   structure: {
     affirmative:
-      "S + V + myself/yourself/… | S + V + each other / one another | S + V + … myself (emphasis)",
+      "chủ ngữ + động từ + myself/yourself/… | chủ ngữ + động từ + each other / one another | chủ ngữ + động từ + … + myself (nhấn mạnh)",
     negative:
-      "not pay for me (when S = object) | not concentrate yourself | not washed himself (thường)",
+      "Không nói I'll pay for me (khi chủ ngữ = tân ngữ) | Không nói concentrate yourself | Không nói washed himself (thường không dùng)",
   },
   usagePoints: [
     {
-      before: "Chủ ngữ = tân ngữ → ",
+      before: "Khi chủ ngữ và tân ngữ là cùng một người thì dùng ",
       strong: "myself / yourself / themselves …",
       after: ": He hurt himself. They enjoyed themselves.",
     },
     {
-      before: "Không dùng -self sau ",
-      strong: "feel / relax / concentrate / meet",
-      after: ".",
+      before: "Sau feel, relax, concentrate, meet thì ",
+      strong: "KHÔNG",
+      after: " dùng -self: I feel nervous. I can't relax. What time shall we meet?",
     },
     {
-      before: "themselves = nhìn chính họ; ",
-      strong: "each other",
-      after: " = lẫn nhau.",
+      before: "Themselves nghĩa là ",
+      strong: "nhìn chính mình",
+      after: "; each other nghĩa là lẫn nhau.",
     },
     {
-      before: "Nhấn mạnh: ",
+      before: "Dùng để nhấn mạnh: ",
       strong: "I did it myself",
-      after: " (= không ai khác làm).",
+      after: " nghĩa là không ai khác làm thay.",
     },
     {
-      before: "yourself (một người) / ",
-      strong: "yourselves",
-      after: " (nhiều người): Help yourself / Help yourselves.",
+      before: "Yourself nói với ",
+      strong: "một người",
+      after: "; yourselves nói với nhiều người: Help yourself / Help yourselves.",
     },
     {
-      before: "one another ≈ ",
-      strong: "each other",
+      before: "One another có nghĩa ",
+      strong: "tương tự each other",
       after: ".",
     },
   ],
   examples: [
     {
       english: "I'll pay for myself. She really enjoyed herself.",
-      vietnamese: "phản thân — chủ ngữ = tân ngữ.",
+      vietnamese: "Đại từ phản thân khi chủ ngữ và tân ngữ trùng nhau.",
     },
     {
       english: "I feel nervous. I can't relax. What time shall we meet?",
-      vietnamese: "không dùng -self sau feel / relax / meet.",
+      vietnamese: "Sau feel, relax và meet thì không dùng -self.",
     },
     {
       english: "They looked at themselves in the mirror. They looked at each other.",
-      vietnamese: "-selves vs each other.",
+      vietnamese: "Themselves là nhìn chính mình; each other là nhìn lẫn nhau.",
     },
     {
       english: "I repaired it myself. You can do it yourself.",
-      vietnamese: "nhấn mạnh: tự mình làm.",
+      vietnamese: "Dùng -self ở cuối câu để nhấn mạnh tự mình làm.",
     },
     {
       english: "If you want more to eat, help yourselves.",
-      vietnamese: "yourselves — nói với nhiều người.",
+      vietnamese: "Yourselves dùng khi nói với nhiều người.",
     },
     {
       english: "We'd never met before, so we introduced ourselves to each other.",
-      vietnamese: "kết hợp ourselves + each other.",
+      vietnamese: "Kết hợp ourselves và each other trong cùng một câu.",
     },
   ],
   practice: {

@@ -12,71 +12,71 @@ export const U74_THE_2_TOPIC: GrammarTopicDetail = {
   kindLabel: "Articles",
   sourceBook: "English Grammar in Use · Intermediate · Unit 74",
   sourceNote:
-    "school / the school; university, hospital, prison, church; bed, work, home. Nên học kèm Units 73, 75–76.",
+    "school / the school; university, hospital, prison, church; bed, work, home. Nên học kèm Unit 72, Unit 73 và Units 75–76.",
   intro:
-    "Trong unit này bạn sẽ nắm: school / the school; university, hospital, prison, church; bed, work, home. Nên học kèm Units 73 và 75–76.",
+    "Bài này giúp bạn phân biệt khi nào school, hospital, bed, work, home không có the (vì nói về hoạt động hoặc vai trò) và khi nào phải thêm the (vì nói về tòa nhà cụ thể). Nên học kèm Unit 72, Unit 73 và Units 75–76.",
   structure: {
     affirmative:
-      "go to / at / leave school (idea) | the school (building) | in hospital / to prison / to church (role) | to bed / to work / (at) home",
+      "go to / at / leave school (hoạt động) | the school (tòa nhà) | in hospital / to prison / to church (vai trò) | to bed / to work / (at) home",
     negative:
-      "no the with school/work/home as institutions/routines | the + school/hospital when meaning the building / as visitor",
+      "School/work/home nói về thói quen hoặc vai trò thì không có the | the + school/hospital khi nói về tòa nhà hoặc đi thăm",
   },
   usagePoints: [
     {
-      before: "school (không the) = ",
-      strong: "đi học / ý niệm trường",
+      before: "School không có the nghĩa là ",
+      strong: "đi học hoặc nói về trường học nói chung",
       after: ": at school, go to school, leave school.",
     },
     {
-      before: "the school = ",
-      strong: "tòa nhà / ngôi trường cụ thể",
+      before: "The school nghĩa là ",
+      strong: "tòa nhà hoặc ngôi trường cụ thể",
       after: ": waiting outside the school; the school you attended.",
     },
     {
-      before: "hospital / prison / university / church: ",
-      strong: "không the = vai trò",
-      after: "; the = thăm / tòa nhà cụ thể.",
+      before: "Với hospital / prison / university / church: ",
+      strong: "không có the",
+      after: " khi nói về vai trò; có the khi đi thăm hoặc nói về tòa nhà cụ thể.",
     },
     {
-      before: "go to bed / in bed; go to work / at work — ",
-      strong: "không the",
-      after: "; nhưng on the bed (đồ đạc).",
+      before: "Nói go to bed / in bed; go to work / at work thì ",
+      strong: "KHÔNG",
+      after: " dùng the; nhưng on the bed nghĩa là trên chiếc giường (đồ nội thất).",
     },
     {
-      before: "home: ",
+      before: "Với home thường nói ",
       strong: "go home / at home / arrive home",
-      after: " (thường không the).",
+      after: " (không có the).",
     },
     {
-      before: "Nơi khác (station, cinema…) ",
+      before: "Các nơi khác như station, cinema… ",
       strong: "vẫn dùng the",
-      after: " (xem Units 72–73).",
+      after: " (xem thêm Units 72–73).",
     },
   ],
   examples: [
     {
       english: "Every day she goes to school. She's at school now.",
-      vietnamese: "Học sinh đi học → school không the.",
+      vietnamese: "Học sinh đi học nên nói school, không có the.",
     },
     {
       english: "Ellie's mother has gone to the school to see the teacher.",
-      vietnamese: "Đến ngôi trường cụ thể → the school.",
+      vietnamese: "Đến ngôi trường cụ thể nên dùng the school.",
     },
     {
       english: "He was taken to hospital. Jane has gone to the hospital to visit him.",
-      vietnamese: "bệnh nhân: hospital; khách thăm: the hospital.",
+      vietnamese: "Bệnh nhân vào hospital; người thăm đến the hospital.",
     },
     {
       english: "I'm going to bed now. I sat down on the bed.",
-      vietnamese: "in/to bed ≠ the bed (đồ nội thất).",
+      vietnamese: "in/to bed là đi ngủ; the bed là chiếc giường cụ thể.",
     },
     {
       english: "Chris didn't go to work yesterday. Let's go home.",
-      vietnamese: "work / home không the trong các cụm này.",
+      vietnamese: "Work và home trong các cụm này không có the.",
     },
     {
       english: "When I leave school, I plan to go to university.",
-      vietnamese: "leave school; go to university (sinh viên).",
+      vietnamese: "Leave school và go to university đều không có the.",
     },
   ],
   practice: {

@@ -12,71 +12,71 @@ export const U77_NAMES_WITH_AND_WITHOUT_THE_1_TOPIC: GrammarTopicDetail = {
   kindLabel: "Articles",
   sourceBook: "English Grammar in Use · Intermediate · Unit 77",
   sourceNote:
-    "Tên người/địa danh; Mr/Doctor + tên; đại dương/sông/núi số nhiều; north vs northern. Nên học kèm Unit 78.",
+    "Tên người và địa danh; Mr/Doctor + tên; đại dương/sông/núi số nhiều; north vs northern. Nên học kèm Unit 76 và Unit 78.",
   intro:
-    "Tên người/địa danh; Mr/Doctor + tên; đại dương/sông/núi số nhiều; north vs northern. Nên học kèm Unit 78.",
+    "Bài này giúp bạn biết tên người, quốc gia, thành phố, sông, biển và dãy núi khi nào có the và khi nào không, cùng cách phân biệt north và northern. Nên học kèm Unit 76 và Unit 78.",
   structure: {
     affirmative:
-      "Ø + country/city/Mount/Lake/person title+name | the + Republic/Kingdom/States | the + ocean/sea/river/desert | the + plural names",
+      "Ø + quốc gia/thành phố/Mount/Lake/tên người | the + Republic/Kingdom/States | the + đại dương/biển/sông/sa mạc | the + tên số nhiều",
     negative:
-      "no the France / the Doctor Johnson / the Mount Everest | the north of… vs northern…",
+      "Không nói the France / the Doctor Johnson / the Mount Everest | the north of… khác northern…",
   },
   usagePoints: [
     {
-      before: "Hầu hết nước / thành phố / núi đơn: ",
-      strong: "không the",
-      after: ": France, Tokyo, Everest.",
+      before: "Hầu hết tên quốc gia, thành phố và núi đơn lẻ thì ",
+      strong: "KHÔNG",
+      after: " có the: France, Tokyo, Everest.",
     },
     {
-      before: "Có the: ",
+      before: "Một số tên quốc gia có the: ",
       strong: "the UK / the USA / the Czech Republic",
       after: ".",
     },
     {
-      before: "Doctor Johnson / President Kennedy — ",
-      strong: "không the",
-      after: "; the doctor / the President = chức danh không kèm tên.",
+      before: "Nói Doctor Johnson / President Kennedy thì ",
+      strong: "KHÔNG",
+      after: " có the; còn the doctor / the President là chức danh không kèm tên riêng.",
     },
     {
-      before: "Mount Everest / Lake Victoria — ",
-      strong: "không the",
-      after: "; the lake khi không có tên riêng kèm theo.",
+      before: "Nói Mount Everest / Lake Victoria thì ",
+      strong: "KHÔNG",
+      after: " có the; còn the lake là hồ đã rõ trong ngữ cảnh.",
     },
     {
-      before: "Oceans, seas, rivers, deserts → ",
+      before: "Đại dương, biển, sông, sa mạc thì dùng ",
       strong: "the",
       after: ": the Pacific, the Mediterranean, the Amazon, the Sahara.",
     },
     {
-      before: "Số nhiều / dãy núi / quần đảo → ",
+      before: "Tên số nhiều, dãy núi hoặc quần đảo thì dùng ",
       strong: "the",
-      after: ": the Andes, the Canaries, the Wilsons. the north of… ≠ northern…",
+      after: ": the Andes, the Canaries, the Wilsons. the north of… khác với northern…",
     },
   ],
   examples: [
     {
       english: "Have you been to Canada or the United States?",
-      vietnamese: "Canada không the; the United States có the.",
+      vietnamese: "Canada không có the; the United States thì có.",
     },
     {
       english: "We called the doctor. We called Doctor Johnson.",
-      vietnamese: "the doctor vs Doctor + tên.",
+      vietnamese: "the doctor là gọi bác sĩ; Doctor + tên là gọi đúng người.",
     },
     {
       english: "They live near Lake Superior. They live near the lake.",
-      vietnamese: "Lake + tên không the; the lake = hồ (đã rõ).",
+      vietnamese: "Lake + tên riêng không có the; the lake là hồ đã rõ.",
     },
     {
       english: "The River Volga flows into the Caspian Sea.",
-      vietnamese: "sông / biển → the.",
+      vietnamese: "Sông và biển thường có the.",
     },
     {
       english: "The highest mountain in the Andes is Aconcagua.",
-      vietnamese: "dãy núi số nhiều → the Andes.",
+      vietnamese: "Dãy núi số nhiều nên nói the Andes.",
     },
     {
       english: "Sweden is in northern Europe; Spain is in the south.",
-      vietnamese: "northern… không the; the south (of Europe).",
+      vietnamese: "northern… không có the; the south (of Europe) thì có.",
     },
   ],
   practice: {

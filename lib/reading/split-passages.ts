@@ -8,6 +8,7 @@ import { parsePassageAudioUrl } from "@/lib/reading/parse-passage-audio";
 import { parsePassageDeckText } from "@/lib/reading/parse-passage-deck";
 import { parsePassageImageUrl } from "@/lib/reading/parse-passage-image";
 import { parsePassageExamSections } from "@/lib/reading/parse-passage-questions";
+import { stripReadingWebAdNoise } from "@/lib/reading/strip-reading-web-ad-noise";
 
 function questionNumsForPassage(questionsText: string): number[] {
   const sections = parsePassageExamSections(questionsText);
@@ -46,7 +47,7 @@ export type ReadingPassageBlock = {
  * cắt trước dòng bắt đầu bằng `Questions` (giữ phần đọc, ẩn đề).
  */
 export function splitReadingPassages(raw: string): ReadingPassageBlock[] {
-  const normalized = raw.replace(/\r\n/g, "\n");
+  const normalized = stripReadingWebAdNoise(raw);
   const globalAnswerKey = extractGlobalAnswerKeyFromRaw(normalized);
   const segments = normalized.split(/(?=^READING PASSAGE \d+\s*$)/im).filter((s) => /^READING PASSAGE \d+/im.test(s.trim()));
 
