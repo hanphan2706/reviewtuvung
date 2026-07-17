@@ -12,71 +12,71 @@ export const U92_RELATIVE_CLAUSES_1_TOPIC: GrammarTopicDetail = {
   kindLabel: "Relative",
   sourceBook: "English Grammar in Use · Intermediate · Unit 92",
   sourceNote:
-    "who/that (người); that/which (vật); không he/she/they trong mệnh đề quan hệ; what ≠ that. Nên học kèm Units 93–96.",
+    "Mệnh đề quan hệ xác định khi đại từ quan hệ là chủ ngữ: who/that (người), that/which (vật); không thêm đại từ thừa; phân biệt what và that. Nên học kèm Units 93–96.",
   intro:
-    "Unit này giúp bạn nắm Relative Clauses 1: Who/that (người); that/which (vật); không he/she/they trong mệnh đề quan hệ; what ≠ that. Nên học kèm Units 93–96.",
+    "Bài này giúp bạn dùng mệnh đề quan hệ xác định với who, that và which khi đại từ quan hệ đóng vai trò chủ ngữ, biết chọn đại từ cho người hay vật, và tránh thêm đại từ thừa trong mệnh đề. Nên học kèm Units 93–96.",
   structure: {
     affirmative:
-      "noun + who/that + V (people) | noun + that/which + V (things) | What + V = the thing(s) that…",
+      "Người: danh từ + who/that + V | Vật: danh từ + that/which + V | What + V = the thing(s) that…",
     negative:
-      "not which for people | not who for things | not he/she/they/it in the clause | not Everything what…",
+      "Người: KHÔNG dùng which | Vật: KHÔNG dùng who | Trong mệnh đề quan hệ KHÔNG thêm he/she/they/it | KHÔNG nói Everything what…",
   },
   usagePoints: [
     {
-      before: "Relative clause ",
-      strong: "chỉ rõ người/vật nào",
-      after: ": the woman who lives next door to me.",
+      before: "Mệnh đề quan hệ ",
+      strong: "chỉ rõ",
+      after: " người hoặc vật nào: the woman who lives next door to me.",
     },
     {
-      before: "Người → ",
-      strong: "who / that",
-      after: " (không which): An architect is someone who designs buildings.",
+      before: "Chỉ người thì dùng ",
+      strong: "who hoặc that",
+      after: " (không dùng which): An architect is someone who designs buildings.",
     },
     {
-      before: "Vật → ",
-      strong: "that / which",
-      after: " (không who): Grace works for a company that/which makes furniture.",
+      before: "Chỉ vật thì dùng ",
+      strong: "that hoặc which",
+      after: " (không dùng who): Grace works for a company that/which makes furniture.",
     },
     {
-      before: "Không dùng ",
-      strong: "he / she / they / it",
-      after: " trong mệnh đề quan hệ: Where are the keys that were on the table?",
+      before: "Trong mệnh đề quan hệ ",
+      strong: "KHÔNG",
+      after: " thêm he, she, they hay it: Where are the keys that were on the table? (không nói: that they were…)",
     },
     {
-      before: "what = ",
+      before: "What = ",
       strong: "the thing(s) that",
-      after: ": What happened was my fault. ≠ Everything that happened…",
+      after: ": What happened was my fault. Khác với Everything that happened…",
     },
     {
-      before: "that với vật ",
-      strong: "thường hơn which",
-      after: "; đôi khi bắt buộc which — Unit 95.",
+      before: "Với vật, ",
+      strong: "that",
+      after: " thường dùng hơn which; đôi khi bắt buộc dùng which — xem thêm Unit 95.",
     },
   ],
   examples: [
     {
       english: "Everybody who came to the party enjoyed it.",
-      vietnamese: "who = những người đến buổi tiệc.",
+      vietnamese: "Mệnh đề quan hệ chỉ những người đã đến buổi tiệc.",
     },
     {
       english: "The woman who/that lives next door to me is a doctor.",
-      vietnamese: "Người → who hoặc that (không which).",
+      vietnamese: "Chỉ người nên dùng who hoặc that, không dùng which.",
     },
     {
       english: "I don't like stories that/which have unhappy endings.",
-      vietnamese: "Vật → that hoặc which.",
+      vietnamese: "Chỉ vật nên dùng that hoặc which.",
     },
     {
       english: "I met a Canadian woman who is an English teacher.",
-      vietnamese: "Gộp hai câu — không: who she is…",
+      vietnamese: "Gộp hai câu bằng mệnh đề quan hệ, không thêm she sau who.",
     },
     {
       english: "What happened was my fault. Everything that happened was my fault.",
-      vietnamese: "what ≠ that sau everything.",
+      vietnamese: "Sau everything phải dùng that, không dùng what.",
     },
     {
       english: "Do you know anyone who wants to buy a car?",
-      vietnamese: "who + V trong mệnh đề quan hệ.",
+      vietnamese: "Who đứng trước động từ vì là chủ ngữ trong mệnh đề quan hệ.",
     },
   ],
   practice: {

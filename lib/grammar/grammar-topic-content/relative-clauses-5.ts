@@ -12,71 +12,71 @@ export const U96_RELATIVE_CLAUSES_5_TOPIC: GrammarTopicDetail = {
   kindLabel: "Relative",
   sourceBook: "English Grammar in Use · Intermediate · Unit 96",
   sourceNote:
-    "prep + whom/which; all/most of + whom/which; which (= cả câu trước), không what. Nên học kèm Units 92–95.",
+    "Giới từ + whom/which (trang trọng); all/most/some/none of whom/which; which chỉ cả ý câu trước, không dùng what. Nên học kèm Units 92–95.",
   intro:
-    "Unit này giúp bạn nắm Relative Clauses 5: Prep + whom/which; all/most of + whom/which; which (= cả câu trước), không what. Nên học kèm Units 92–95.",
+    "Bài này giúp bạn dùng giới từ kèm whom/which trong mệnh đề thêm thông tin, cấu trúc all/most/some/none of whom/which, và which để nói về cả ý câu đứng trước. Nên học kèm Units 92–95.",
   structure: {
     affirmative:
-      ", prep + whom/which, … | , all/most/none of + whom/which, … | …, which (+ clause about whole idea)",
+      ", giới từ + whom/which, … | , all/most/some/none of + whom/which, … | …, which + mệnh đề (về cả ý trước)",
     negative:
-      "not whom when prep is at end | not what for whole previous idea — use which",
+      "Giới từ ở cuối mệnh đề: KHÔNG dùng whom | Muốn nói về cả ý câu trước: KHÔNG dùng what — dùng which",
   },
   usagePoints: [
     {
-      before: "Giới từ + ",
-      strong: "whom / which",
+      before: "Trong mệnh đề thêm thông tin, giới từ đứng trước ",
+      strong: "whom hoặc which",
       after: " (trang trọng hơn): without which, with whom, of which…",
     },
     {
-      before: "Nói: giữ giới từ ",
-      strong: "sau động từ",
-      after: " + who (không whom): who I spoke to…",
+      before: "Khi giới từ đặt ",
+      strong: "cuối mệnh đề",
+      after: " thì dùng who, không dùng whom: Mr Lee, who I spoke to at the meeting…",
     },
     {
-      before: "all of / most of / none of + ",
-      strong: "whom (người) / which (vật)",
-      after: ": none of which fitted him.",
+      before: "All of / most of / some of / none of + ",
+      strong: "whom (người) hoặc which (vật)",
+      after: ": Helen has three brothers, all of whom are married.",
     },
     {
-      before: "the name/cause of which… = ",
-      strong: "noun + of which",
+      before: "The name/cause of which… = ",
+      strong: "danh từ + of which",
       after: ": a hotel, the name of which I don't remember.",
     },
     {
-      before: "which = ",
-      strong: "cả ý trước",
-      after: " (không what): …, which was a shame.",
+      before: "Which có thể chỉ ",
+      strong: "cả ý câu trước",
+      after: " (không dùng what): Joe got the job, which surprised everybody.",
     },
     {
-      before: "Xem thêm ",
-      strong: "all of / both of",
-      after: " (Units 88–89) và relative Type 1–2 (92–95).",
+      before: "Cấu trúc all of / both of xem thêm ",
+      strong: "Units 88–89",
+      after: "; loại mệnh đề quan hệ 1–2 xem Units 92–95.",
     },
   ],
   examples: [
     {
       english: "Fortunately we had a good map, without which we would have got lost.",
-      vietnamese: "without which = nếu không có bản đồ.",
+      vietnamese: "Without which nghĩa là nếu không có bản đồ đó.",
     },
     {
       english: "Mr Lee, who I spoke to at the meeting, is interested in our proposal.",
-      vietnamese: "giới từ cuối → who, không whom.",
+      vietnamese: "Giới từ ở cuối nên dùng who, không dùng whom.",
     },
     {
       english: "Helen has three brothers, all of whom are married.",
-      vietnamese: "all of whom = cả ba người.",
+      vietnamese: "All of whom chỉ cả ba người anh.",
     },
     {
       english: "They asked me a lot of questions, most of which I couldn't answer.",
-      vietnamese: "most of which = hầu hết các câu hỏi.",
+      vietnamese: "Most of which chỉ phần lớn các câu hỏi.",
     },
     {
       english: "Joe got the job, which surprised everybody.",
-      vietnamese: "which = việc Joe được việc (không what).",
+      vietnamese: "Which ám chỉ việc Joe được việc, không dùng what.",
     },
     {
       english: "We stayed at a beautiful hotel, the name of which I don't remember now.",
-      vietnamese: "the name of which…",
+      vietnamese: "The name of which thay cho whose name trong văn trang trọng.",
     },
   ],
   practice: {

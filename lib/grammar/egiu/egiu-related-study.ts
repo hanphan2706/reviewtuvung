@@ -228,6 +228,22 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
     message: "Nên học kèm Units 93–96 để nắm trọn relative clauses.",
     unitNumbers: [93, 94, 95, 96],
   },
+  93: {
+    message: "Nên học kèm Unit 92 và Units 94–96 để nắm trọn relative clauses.",
+    unitNumbers: [92, 94, 95, 96],
+  },
+  94: {
+    message: "Nên học kèm Units 92–93 và Units 95–96 để nắm trọn relative clauses.",
+    unitNumbers: [92, 93, 95, 96],
+  },
+  95: {
+    message: "Nên học kèm Units 92–94 và Unit 96 để phân biệt mệnh đề xác định và mệnh đề thêm thông tin.",
+    unitNumbers: [92, 93, 94, 96],
+  },
+  96: {
+    message: "Nên học kèm Units 92–95 trước khi học các cấu trúc relative clause nâng cao.",
+    unitNumbers: [92, 93, 94, 95],
+  },
   97: {
     message: "Nên học kèm Unit 92 (relative) và Unit 98 (-ing/-ed adjectives) để phân biệt mệnh đề rút gọn và tính từ.",
     unitNumbers: [92, 98],

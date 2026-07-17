@@ -12,40 +12,40 @@ export const U93_RELATIVE_CLAUSES_2_TOPIC: GrammarTopicDetail = {
   kindLabel: "Relative",
   sourceBook: "English Grammar in Use · Intermediate · Unit 93",
   sourceNote:
-    "who/that/which bắt buộc khi là chủ ngữ; được bỏ khi là tân ngữ; giới từ cuối mệnh đề; what vs that. Nên học kèm Units 92, 94–96.",
+    "Đại từ quan hệ là chủ ngữ thì bắt buộc giữ; là tân ngữ thì có thể bỏ; giới từ thường đặt cuối mệnh đề; phân biệt what và that. Nên học kèm Unit 92 và Units 94–96.",
   intro:
-    "Unit này giúp bạn nắm Relative Clauses 2: Who/that/which bắt buộc khi là chủ ngữ; được bỏ khi là tân ngữ; giới từ cuối mệnh đề; what vs that. Nên học kèm Unit 92 và Units 94–96.",
+    "Bài này giúp bạn biết khi nào phải giữ who, that hay which và khi nào có thể bỏ, đặt giới từ tự nhiên ở cuối mệnh đề quan hệ, và phân biệt what với that. Nên học kèm Unit 92 và Units 94–96.",
   structure: {
     affirmative:
-      "noun + who/that/which + V (subject — keep) | noun + (who/that/which) + S + V (object — optional) | … prep at end",
+      "Chủ ngữ: danh từ + who/that/which + V (bắt buộc giữ) | Tân ngữ: danh từ + (who/that/which) + S + V (có thể bỏ) | … + giới từ ở cuối mệnh đề",
     negative:
-      "don't drop subject who/that/which | not … you lost them | not Everything what…",
+      "Khi là chủ ngữ: KHÔNG bỏ who/that/which | KHÔNG thêm them/it sau động từ | KHÔNG dùng what sau everything/all the money…",
   },
   usagePoints: [
     {
-      before: "who/that/which là ",
-      strong: "chủ ngữ → bắt buộc",
-      after: ": The people who work in the office are friendly.",
+      before: "Khi who/that/which là ",
+      strong: "chủ ngữ",
+      after: " thì bắt buộc giữ: The people who work in the office are friendly.",
     },
     {
-      before: "who/that/which là ",
-      strong: "tân ngữ → có thể bỏ",
-      after: ": Did you find the keys (that) you lost?",
+      before: "Khi who/that/which là ",
+      strong: "tân ngữ",
+      after: " thì có thể bỏ: Did you find the keys (that) you lost?",
     },
     {
-      before: "Không thêm ",
-      strong: "them / it",
-      after: " sau động từ: the dress Lisa bought (không: bought it).",
+      before: "Sau khi bỏ đại từ quan hệ tân ngữ thì ",
+      strong: "KHÔNG",
+      after: " thêm them hay it: the dress Lisa bought (không nói: bought it).",
     },
     {
       before: "Giới từ ",
-      strong: "thường cuối mệnh đề",
-      after: ": Do you know the woman Tom is talking to?",
+      strong: "thường đặt cuối",
+      after: " mệnh đề quan hệ: Do you know the woman Tom is talking to?",
     },
     {
-      before: "Everything/all the money + ",
+      before: "Sau everything, all the money… dùng ",
       strong: "(that)",
-      after: " — không what: all the money (that) I had.",
+      after: " hoặc bỏ that, không dùng what: all the money (that) I had.",
     },
     {
       before: "What = ",
@@ -56,27 +56,27 @@ export const U93_RELATIVE_CLAUSES_2_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "The woman who lives next door to me is a doctor.",
-      vietnamese: "who = chủ ngữ → không bỏ.",
+      vietnamese: "Who là chủ ngữ nên không được bỏ.",
     },
     {
       english: "The woman I wanted to see was away. / The woman who I wanted to see…",
-      vietnamese: "who = tân ngữ → có thể bỏ.",
+      vietnamese: "Who là tân ngữ nên có thể bỏ trong nói thường.",
     },
     {
       english: "Did you find the keys you lost?",
-      vietnamese: "không: the keys you lost them.",
+      vietnamese: "Không thêm them sau lost.",
     },
     {
       english: "Are these the books you were looking for?",
-      vietnamese: "giới từ for ở cuối.",
+      vietnamese: "Giới từ for đặt ở cuối mệnh đề quan hệ.",
     },
     {
       english: "I gave her all the money (that) I had. What they said was true.",
-      vietnamese: "that (hoặc bỏ) vs what.",
+      vietnamese: "Sau all the money dùng that hoặc bỏ; what dùng riêng ở đầu câu.",
     },
     {
       english: "The bed I slept in wasn't comfortable.",
-      vietnamese: "mệnh đề quan hệ + giới từ cuối.",
+      vietnamese: "Mệnh đề quan hệ kèm giới từ in ở cuối.",
     },
   ],
   practice: {

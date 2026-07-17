@@ -12,71 +12,71 @@ export const U94_RELATIVE_CLAUSES_3_TOPIC: GrammarTopicDetail = {
   kindLabel: "Relative",
   sourceBook: "English Grammar in Use · Intermediate · Unit 94",
   sourceNote:
-    "whose; whom (trang trọng) / bỏ whom; where; the day/time/reason (+ that/why). Nên học kèm Units 92–93, 95–96.",
+    "whose (sở hữu); whom (trang trọng, tân ngữ); where (nơi chốn); the day/time/reason (+ that/why). Nên học kèm Units 92–93 và Units 95–96.",
   intro:
-    "Unit này giúp bạn nắm Relative Clauses 3: Whose; whom (trang trọng) / bỏ whom; where; the day/time/reason (+ that/why). Nên học kèm Units 92–93 và 95–96.",
+    "Bài này giúp bạn dùng whose để nói sở hữu, whom trong văn trang trọng, where cho nơi chốn, và cách nối mệnh đề sau the day, the time hay the reason. Nên học kèm Units 92–93 và Units 95–96.",
   structure: {
     affirmative:
-      "noun + whose + noun… | whom / prep + whom (formal) | where + clause | the day/time/reason (+ that/why)…",
+      "danh từ + whose + danh từ… | whom / giới từ + whom (trang trọng) | danh từ (nơi) + where + mệnh đề | the day/time/reason (+ that/why)…",
     negative:
-      "don't confuse whose / who's | whom rare in speech — prefer leave out or who/that",
+      "KHÔNG nhầm whose với who's | Trong nói thường hiếm dùng whom — ưu tiên bỏ đại từ hoặc dùng who/that",
   },
   usagePoints: [
     {
-      before: "whose = ",
+      before: "Whose = ",
       strong: "của người đó",
-      after: ": I felt someone whose brother I went to school with.",
+      after: " (sở hữu): I felt someone whose brother I went to school with.",
     },
     {
-      before: "who vs ",
+      before: "Who chỉ người; ",
       strong: "whose",
-      after: ": a man who knows you vs a man whose sister knows you.",
+      after: " chỉ sở hữu: a man who knows you / a man whose sister knows you.",
     },
     {
-      before: "who's = ",
-      strong: "who is / who has",
-      after: " — khác whose: a friend who's learning Arabic.",
+      before: "Who's = ",
+      strong: "who is hoặc who has",
+      after: " — khác hoàn toàn với whose: a friend who's learning Arabic.",
     },
     {
-      before: "whom = trang trọng (tân ngữ); ",
-      strong: "nói thường bỏ / dùng who",
-      after: ": a person I admire / who I admire.",
+      before: "Whom dùng trong văn ",
+      strong: "trang trọng",
+      after: " khi là tân ngữ; nói thường thì bỏ hoặc dùng who: a person I admire / who I admire.",
     },
     {
-      before: "where = ",
+      before: "Where = ",
       strong: "nơi chốn",
       after: ": the restaurant where we had lunch.",
     },
     {
-      before: "the day / the reason… ",
-      strong: "(+ that / why)",
+      before: "The day / the reason… ",
+      strong: "có thể thêm that hoặc why",
       after: ": That's the day I'm going away. The reason (why/that) I'm calling…",
     },
   ],
   examples: [
     {
       english: "We helped some people whose car had broken down.",
-      vietnamese: "whose car = xe của họ.",
+      vietnamese: "Whose car nghĩa là chiếc xe của họ.",
     },
     {
       english: "I have a friend who's learning Arabic. / whose sister is learning Arabic.",
-      vietnamese: "who's ≠ whose.",
+      vietnamese: "Who's (who is) khác với whose (của ai).",
     },
     {
       english: "I met a friend whom I hadn't seen for years. / a friend I hadn't seen…",
-      vietnamese: "whom trang trọng; bỏ whom thì thân mật hơn.",
+      vietnamese: "Whom trang trọng; bỏ whom thì tự nhiên hơn trong nói thường.",
     },
     {
       english: "I recently went back to the town where I grew up.",
-      vietnamese: "where = nơi tôi lớn lên.",
+      vietnamese: "Where chỉ thị trấn nơi tôi lớn lên.",
     },
     {
       english: "That's the day I'm going away. The reason I'm calling is to ask your advice.",
-      vietnamese: "the day / the reason + mệnh đề.",
+      vietnamese: "The day và the reason có thể nối trực tiếp với mệnh đề.",
     },
     {
       english: "A pacifist is a person who believes that all wars are wrong.",
-      vietnamese: "who khi là chủ ngữ.",
+      vietnamese: "Who là chủ ngữ trong mệnh đề quan hệ.",
     },
   ],
   practice: {

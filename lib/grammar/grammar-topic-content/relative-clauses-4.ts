@@ -12,71 +12,71 @@ export const U95_RELATIVE_CLAUSES_4_TOPIC: GrammarTopicDetail = {
   kindLabel: "Relative",
   sourceBook: "English Grammar in Use · Intermediate · Unit 95",
   sourceNote:
-    "Type 1 (xác định, không dấu phẩy) vs Type 2 (thêm thông tin, có dấu phẩy); that chỉ Type 1; không bỏ who/which ở Type 2. Nên học kèm Units 92–94, 96.",
+    "Loại 1 (xác định, không dấu phẩy) và loại 2 (thêm thông tin, có dấu phẩy); that chỉ loại 1; loại 2 không bỏ who/which. Nên học kèm Units 92–94 và Unit 96.",
   intro:
-    "Type 1 (xác định, không dấu phẩy) vs Type 2 (thêm thông tin, có dấu phẩy); that chỉ Type 1; không bỏ who/which ở Type 2. Nên học kèm Units 92–94 và Unit 96.",
+    "Bài này giúp bạn phân biệt mệnh đề quan hệ xác định (loại 1) và mệnh đề quan hệ thêm thông tin (loại 2), biết khi nào dùng dấu phẩy, và quy tắc dùng that hay who/which. Nên học kèm Units 92–94 và Unit 96.",
   structure: {
     affirmative:
-      "Type 1: no commas; who/that/which; object pronoun optional | Type 2: , who/which/whom…, ; commas required",
+      "Loại 1: không dấu phẩy; who/that/which; tân ngữ có thể bỏ | Loại 2: , who/which/whom…, ; bắt buộc có dấu phẩy",
     negative:
-      "Type 2: not that | Type 2: don't drop who/which | Type 1: usually no commas",
+      "Loại 2: KHÔNG dùng that | Loại 2: KHÔNG bỏ who/which | Loại 1: thường không có dấu phẩy",
   },
   usagePoints: [
     {
-      before: "Type 1 = ",
-      strong: "chỉ rõ ai/cái gì",
-      after: " — không dấu phẩy: We know people who live in London.",
+      before: "Loại 1 ",
+      strong: "chỉ rõ",
+      after: " ai hay cái gì — không dấu phẩy: We know people who live in London.",
     },
     {
-      before: "Type 2 = ",
+      before: "Loại 2 ",
       strong: "thêm thông tin",
       after: " — có dấu phẩy: Ben, who lives in Hong Kong, is an architect.",
     },
     {
-      before: "Type 1: được dùng ",
+      before: "Loại 1 được dùng ",
       strong: "that",
-      after: "; Type 2: không that → who/which.",
+      after: "; loại 2 chỉ dùng who hoặc which, không dùng that.",
     },
     {
-      before: "Type 1: bỏ who/that/which khi ",
-      strong: "là tân ngữ",
-      after: "; Type 2: không bỏ.",
+      before: "Loại 1: bỏ who/that/which khi là ",
+      strong: "tân ngữ",
+      after: "; loại 2 thì không được bỏ.",
     },
     {
-      before: "Type 2: có thể ",
+      before: "Loại 2 có thể dùng ",
       strong: "whom",
-      after: " (tân ngữ người): Chris, whom I hadn't seen for ages…",
+      after: " khi là tân ngữ chỉ người: Chris, whom I hadn't seen for ages…",
     },
     {
-      before: "Cả hai loại: ",
-      strong: "whose / where",
+      before: "Cả hai loại đều dùng được ",
+      strong: "whose và where",
       after: ": Lisa, whose car…; Sweden, where her daughter lives.",
     },
   ],
   examples: [
     {
       english: "The woman who lives next door to me is a doctor.",
-      vietnamese: "Type 1 — xác định người nào.",
+      vietnamese: "Loại 1 — mệnh đề quan hệ xác định người phụ nữ nào.",
     },
     {
       english: "My brother Ben, who lives in Hong Kong, is an architect.",
-      vietnamese: "Type 2 — thêm thông tin, có dấu phẩy.",
+      vietnamese: "Loại 2 — thêm thông tin về Ben, có dấu phẩy hai bên.",
     },
     {
       english: "We stayed at the hotel (that) you recommended.",
-      vietnamese: "Type 1 — that được; bỏ được khi là tân ngữ.",
+      vietnamese: "Loại 1 — that được dùng; bỏ được khi là tân ngữ.",
     },
     {
       english: "We stayed at the Park Hotel, which a friend of ours recommended.",
-      vietnamese: "Type 2 — which, không that, không bỏ.",
+      vietnamese: "Loại 2 — dùng which, không dùng that, không bỏ đại từ.",
     },
     {
       english: "Anna told me about her new job, which she's enjoying a lot.",
-      vietnamese: "Type 2 — không: that she's enjoying.",
+      vietnamese: "Loại 2 không dùng that she's enjoying.",
     },
     {
       english: "Kate has just been to Sweden, where her daughter lives.",
-      vietnamese: "where trong Type 2.",
+      vietnamese: "Where dùng trong mệnh đề quan hệ loại 2.",
     },
   ],
   practice: {
