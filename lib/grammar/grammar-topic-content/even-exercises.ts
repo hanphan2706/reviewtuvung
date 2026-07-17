@@ -3,40 +3,45 @@ import { grammarCloze } from "@/lib/grammar/grammar-cloze";
 
 /**
  * Unit 112 exercises — Even (English Grammar in Use · Intermediate).
+ * 112.1 uses Amy/Kate/Lisa holiday profile facts in each prompt.
+ * 112.4 is a choose-from list (if / even / even if / even though).
  */
+
+const EVEN_IF_THOUGH_BANK = ["if", "even", "even if", "even though"] as const;
+
 export const U112_EVEN_EXERCISES: readonly GrammarExercise[] = [
   grammarCloze(
     "u112-1-1",
     "112.1 · even / not even",
-    "They stayed at a hotel. Everybody liked it, __________.",
+    "They stayed at a hotel. Everybody liked it, __________. (Kate usually hates hotels)",
     "even Kate",
     { explanation: "even Kate (cô ấy thường ghét khách sạn)." },
   ),
   grammarCloze(
     "u112-1-2",
     "112.1 · even / not even",
-    "They arranged to meet. They all arrived on time, __________.",
+    "They arranged to meet. They all arrived on time, __________. (Lisa is almost always late)",
     "even Lisa",
     { explanation: "even Lisa (thường muộn)." },
   ),
   grammarCloze(
     "u112-1-3",
     "112.1 · even / not even",
-    "They went to an art gallery. Nobody enjoyed it, __________.",
+    "They went to an art gallery. Nobody enjoyed it, __________. (Amy is very interested in art)",
     "not even Amy",
     { explanation: "not even Amy (cô ấy thích nghệ thuật)." },
   ),
   grammarCloze(
     "u112-1-4",
     "112.1 · even / not even",
-    "Yesterday they had to get up early. They all managed to do this, __________.",
+    "Yesterday they had to get up early. They all managed to do this, __________. (Lisa isn't very good at getting up)",
     "even Lisa",
     { explanation: "even Lisa (khó dậy sớm)." },
   ),
   grammarCloze(
     "u112-1-6",
     "112.1 · even / not even",
-    "None of them took any pictures, __________.",
+    "None of them took any pictures, __________. (Lisa is a keen photographer)",
     "not even Lisa",
     { explanation: "not even Lisa (nhiếp ảnh gia)." },
   ),
@@ -132,20 +137,29 @@ export const U112_EVEN_EXERCISES: readonly GrammarExercise[] = [
     "112.4 · even though / if",
     "__________ she can't drive, she has a car.",
     "Even though",
-    { explanation: "Even though + S + V." },
+    {
+      choiceBank: EVEN_IF_THOUGH_BANK,
+      explanation: "Even though + S + V.",
+    },
   ),
   grammarCloze(
     "u112-4-3",
     "112.4 · even though / if",
     "The bus leaves in two minutes. We won't catch it now __________ we run.",
     "even if",
-    { explanation: "even if = dù có chạy cũng không kịp." },
+    {
+      choiceBank: EVEN_IF_THOUGH_BANK,
+      explanation: "even if = dù có chạy cũng không kịp.",
+    },
   ),
   grammarCloze(
     "u112-4-5",
     "112.4 · even though / if",
     "Mark's Spanish isn't very good, __________ he lived in Spain for three years.",
     "even though",
-    { explanation: "even though + mệnh đề quá khứ." },
+    {
+      choiceBank: EVEN_IF_THOUGH_BANK,
+      explanation: "even though + mệnh đề quá khứ.",
+    },
   ),
 ];

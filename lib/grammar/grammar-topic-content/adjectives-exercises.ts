@@ -4,6 +4,23 @@ import { grammarCloze } from "@/lib/grammar/grammar-cloze";
 /**
  * Unit 99 exercises — Adjectives (English Grammar in Use · Intermediate).
  */
+
+/** 99.2 — Verb box + adjective box (combined for choose-from display). */
+const U99_2_VERB_ADJ_BANK = [
+  "feel",
+  "look",
+  "seem",
+  "smell",
+  "sound",
+  "taste",
+  "awful",
+  "nervous",
+  "interesting",
+  "nice",
+  "upset",
+  "wet",
+] as const;
+
 export const U99_ADJECTIVES_EXERCISES: readonly GrammarExercise[] = [
   grammarCloze(
     "u99-1-2",
@@ -102,6 +119,7 @@ export const U99_ADJECTIVES_EXERCISES: readonly GrammarExercise[] = [
     "tastes awful",
     {
       alternatives: ["tasted awful"],
+      choiceBank: U99_2_VERB_ADJ_BANK,
       explanation: "taste + adj: tastes/tasted awful.",
     },
   ),
@@ -111,6 +129,7 @@ export const U99_ADJECTIVES_EXERCISES: readonly GrammarExercise[] = [
     "It's normal to __________ before an exam or an interview.",
     "feel nervous",
     {
+      choiceBank: U99_2_VERB_ADJ_BANK,
       explanation: "feel nervous.",
     },
   ),
@@ -120,6 +139,7 @@ export const U99_ADJECTIVES_EXERCISES: readonly GrammarExercise[] = [
     "What beautiful flowers! They __________ too.",
     "smell nice",
     {
+      choiceBank: U99_2_VERB_ADJ_BANK,
       explanation: "smell nice.",
     },
   ),
@@ -129,6 +149,7 @@ export const U99_ADJECTIVES_EXERCISES: readonly GrammarExercise[] = [
     "You __________ . Have you been out in the rain?",
     "look wet",
     {
+      choiceBank: U99_2_VERB_ADJ_BANK,
       explanation: "look wet.",
     },
   ),
@@ -139,13 +160,14 @@ export const U99_ADJECTIVES_EXERCISES: readonly GrammarExercise[] = [
     "sounds interesting",
     {
       alternatives: ["sounded interesting"],
+      choiceBank: U99_2_VERB_ADJ_BANK,
       explanation: "sound(s/ed) interesting.",
     },
   ),
   grammarCloze(
     "u99-3-2",
     "99.3 · adj / adv",
-    "I usually feel __________ when the sun is shining.",
+    "I usually feel __________ when the sun is shining. (happy / happily)",
     "happy",
     {
       explanation: "feel + adj: happy.",
@@ -154,7 +176,7 @@ export const U99_ADJECTIVES_EXERCISES: readonly GrammarExercise[] = [
   grammarCloze(
     "u99-3-3",
     "99.3 · adj / adv",
-    "The children were playing __________ in the garden.",
+    "The children were playing __________ in the garden. (happy / happily)",
     "happily",
     {
       explanation: "play + adv: happily.",
@@ -163,7 +185,7 @@ export const U99_ADJECTIVES_EXERCISES: readonly GrammarExercise[] = [
   grammarCloze(
     "u99-3-5",
     "99.3 · adj / adv",
-    "There's no point in doing a job if you don't do it __________.",
+    "There's no point in doing a job if you don't do it __________. (proper / properly)",
     "properly",
     {
       explanation: "do it properly (adv).",

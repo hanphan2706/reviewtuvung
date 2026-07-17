@@ -12,41 +12,47 @@ export const U112_EVEN_TOPIC: GrammarTopicDetail = {
   kindLabel: "Adverb",
   sourceBook: "English Grammar in Use · Intermediate · Unit 112",
   sourceNote:
-    "even / not even; even + comparative; even though / even when / even if (không even + S + V). Nên học kèm Unit 113 (even though).",
+    "even nhấn mạnh điều bất ngờ; not even; even + so sánh hơn; even though/even when/even if trước mệnh đề, không dùng even một mình như liên từ. Nên học kèm Unit 113.",
   intro:
-    "Unit này giúp bạn nắm Even: Even / not even; even + comparative; even though / even when / even if (không even + S + V). Nên học kèm Unit 113.",
+    "Bài này giúp bạn dùng even để nhấn mạnh điều bất ngờ, tăng mức so sánh bằng even + comparative, và chọn đúng even though, even when hoặc even if khi theo sau là một mệnh đề. Nên học kèm Unit 113.",
   structure: {
     affirmative: "even + noun/phrase | S + even + V | even + comparative | even though/if/when + S + V",
-    negative: "not even … | can't/don't/didn't even + V",
+    negative:
+      "not even … | can't/don't/didn't even + V | KHÔNG dùng even + S + V → dùng even though/when/if",
   },
   usagePoints: [
     {
-      before: "",
+      before: "Dùng ",
       strong: "even",
       after: " = bất thường/ngạc nhiên: even the bathroom; She's even been to the Antarctic.",
     },
     {
-      before: "",
+      before: "Trong câu phủ định, dùng ",
       strong: "not even / can't even",
       after: ": They didn't even say hello. I can't even boil an egg.",
     },
     {
-      before: "",
+      before: "Để tăng mức so sánh, dùng ",
       strong: "even + comparative",
       after: ": even hotter, even more surprised, even less.",
     },
     {
-      before: "",
+      before: "Trước một mệnh đề, dùng ",
       strong: "even though / even when / even if + S + V",
-      after: " — không: even + S + V.",
+      after: " — KHÔNG dùng even + S + V.",
     },
     {
-      before: "even if = dù thế nào; ",
-      strong: "if",
-      after: " = điều kiện: We're going even if the weather is bad. vs We won't go if it's bad.",
+      before: "even if = ",
+      strong: "dù điều kiện đó xảy ra hay không",
+      after: ": We're going even if the weather is bad.",
     },
     {
-      before: "even (không if) + cụm: ",
+      before: "if = ",
+      strong: "chỉ khi điều kiện xảy ra",
+      after: ": We won't go if the weather is bad.",
+    },
+    {
+      before: "Trước một cụm từ, dùng even trực tiếp: ",
       strong: "even for … / even with …",
       after: ": even for strong swimmers; even with glasses.",
     },
@@ -54,7 +60,7 @@ export const U112_EVEN_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "She has a television in every room, even the bathroom.",
-      vietnamese: "Cô ấy có TV mọi phòng, kể cả phòng tắm.",
+      vietnamese: "Even nhấn mạnh phòng tắm là nơi ít ai ngờ cũng có TV.",
     },
     {
       english: "She's even been to the Antarctic.",
@@ -66,11 +72,11 @@ export const U112_EVEN_TOPIC: GrammarTopicDetail = {
     },
     {
       english: "Today it's even hotter than yesterday.",
-      vietnamese: "Hôm nay còn nóng hơn cả hôm qua.",
+      vietnamese: "Even đứng trước hotter để tăng mức so sánh.",
     },
     {
       english: "Even though Tina can't drive, she has a car.",
-      vietnamese: "Dù Tina không lái được xe, cô ấy vẫn có xe. (không: Even she can't drive)",
+      vietnamese: "Theo sau là mệnh đề nên dùng even though, không dùng even một mình.",
     },
     {
       english: "We're going even if the weather is bad.",

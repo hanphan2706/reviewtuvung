@@ -11,43 +11,44 @@ export const U111_STILL_ANY_MORE_YET_ALREADY_TOPIC: GrammarTopicDetail = {
   kindLabel: "Adverb",
   sourceBook: "English Grammar in Use · Intermediate · Unit 111",
   sourceNote:
-    "still / not … any more (any longer) / no longer; yet; already; still … not vs yet. Word order → Unit 110.",
+    "still = vẫn còn; not … any more/any longer và no longer = không còn; already = đã sớm hơn dự kiến; yet trong câu hỏi/phủ định; still … not nhấn mạnh hơn yet. Nên học kèm Unit 110.",
   intro:
-    "Trong unit này bạn sẽ nắm: still / not … any more (any longer) / no longer; yet; already; still … not vs yet. Word order → Unit 110.",
+    "Bài này giúp bạn phân biệt still, any more/any longer, no longer, already và yet theo nghĩa lẫn vị trí trong câu, đặc biệt sự khác nhau giữa still … not và not … yet. Nên học kèm Unit 110 về vị trí trạng từ.",
   structure: {
     affirmative: "S + still + V | S + already + V / V + already | S + no longer + V",
-    negative: "S + don't/doesn't + V + any more/any longer | S + hasn't + V3 + yet | still hasn't + V3",
+    negative:
+      "not … any more/any longer ở cuối câu | no longer ở giữa câu | still + not nhấn mạnh sự chậm trễ hơn not … yet",
   },
   usagePoints: [
     {
-      before: "",
+      before: "Dùng ",
       strong: "still",
       after: " = vẫn còn tiếp diễn: Do you still want to go away?",
     },
     {
-      before: "",
+      before: "Đặt ",
       strong: "not … any more / any longer",
       after: " (cuối câu): Lucy doesn't work here any more.",
     },
     {
-      before: "",
+      before: "Đặt ",
       strong: "no longer",
-      after: " giữa câu: Lucy no longer works here. (không: no more friends theo nghĩa này)",
+      after: " giữa câu: Lucy no longer works here. (KHÔNG dùng no more theo nghĩa này)",
     },
     {
-      before: "",
+      before: "Dùng ",
       strong: "already",
       after: " = sớm hơn mong đợi: She has already left.",
     },
     {
-      before: "",
+      before: "Dùng ",
       strong: "yet",
       after: " phủ định/câu hỏi, thường cuối: Isn't he here yet? Have you decided yet?",
     },
     {
-      before: "",
+      before: "Dùng ",
       strong: "still + not",
-      after: " mạnh hơn yet: He still hasn't replied. (= lẽ ra phải trả lời rồi)",
+      after: " để nhấn mạnh hơn yet: He still hasn't replied. (= lẽ ra phải trả lời rồi)",
     },
   ],
   examples: [
@@ -61,11 +62,11 @@ export const U111_STILL_ANY_MORE_YET_ALREADY_TOPIC: GrammarTopicDetail = {
     },
     {
       english: "Lucy no longer works here.",
-      vietnamese: "Lucy không còn làm ở đây. (no longer giữa câu)",
+      vietnamese: "No longer đứng giữa câu, trước động từ thường works.",
     },
     {
       english: "She has already left.",
-      vietnamese: "Cô ấy đã đi rồi. (sớm hơn bạn nghĩ)",
+      vietnamese: "Already cho biết cô ấy đi sớm hơn người nói dự đoán.",
     },
     {
       english: "Have you decided what to do yet?",
@@ -77,7 +78,7 @@ export const U111_STILL_ANY_MORE_YET_ALREADY_TOPIC: GrammarTopicDetail = {
     },
     {
       english: "I sent him an invitation weeks ago and he still hasn't replied.",
-      vietnamese: "Tôi gửi lời mời cách đây vài tuần mà anh ấy vẫn chưa trả lời.",
+      vietnamese: "Still hasn't nhấn mạnh rằng đã chờ lâu và lẽ ra anh ấy phải trả lời rồi.",
     },
   ],
   practice: {

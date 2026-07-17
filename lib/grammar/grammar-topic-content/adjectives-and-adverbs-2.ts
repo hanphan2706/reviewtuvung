@@ -12,34 +12,39 @@ export const U101_ADJECTIVES_AND_ADVERBS_2_TOPIC: GrammarTopicDetail = {
   kindLabel: "Adverb",
   sourceBook: "English Grammar in Use · Intermediate · Unit 101",
   sourceNote:
-    "good/well; well-known…; fast/hard/late; hardly (= almost not); hardly any/ever. Nên học kèm Unit 100.",
+    "Phân biệt good/well, hard/hardly và late/lately; fast/hard/late có dạng tính từ và trạng từ giống nhau; hardly = almost not. Nên học kèm Unit 100.",
   intro:
-    "Trong unit này bạn sẽ nắm: good/well; well-known…; fast/hard/late; hardly (= almost not); hardly any/ever. Nên học kèm Unit 100.",
+    "Bài này giúp bạn dùng đúng good và well, nhận ra fast/hard/late không thêm -ly khi làm trạng từ, và tránh nhầm hard với hardly hay late với lately vì nghĩa hoàn toàn khác nhau. Nên học kèm Unit 100.",
   structure: {
     affirmative:
       "good (adj) / well (adv, health) | fast/hard/late (adj=adv) | hardly + V | hardly any/ever…",
     negative:
-      "not works hardly (= barely) when you mean hard | not know each other hardly | not good as adverb of manner",
+      "Muốn nói làm việc chăm chỉ: KHÔNG nói work hardly → work hard | KHÔNG dùng good để mô tả cách làm → dùng well",
   },
   usagePoints: [
     {
-      before: "good → noun/be; ",
-      strong: "well → động từ / khỏe / V3",
-      after: ": plays well; well-known; I'm well.",
+      before: "good là ",
+      strong: "tính từ",
+      after: ": good English, The food is good.",
     },
     {
-      before: "fast / hard / late: ",
-      strong: "adj và adv giống form",
+      before: "well là ",
+      strong: "trạng từ / khỏe mạnh",
+      after: ": speaks well, I'm well; well-known đứng trước danh từ.",
+    },
+    {
+      before: "fast / hard / late có dạng ",
+      strong: "tính từ và trạng từ giống nhau",
       after: ": a fast runner / run fast; work hard.",
     },
     {
-      before: "lately = ",
+      before: "late = muộn; lately = ",
       strong: "recently",
-      after: "; late = muộn.",
+      after: " (gần đây) — hai từ KHÔNG cùng nghĩa.",
     },
     {
-      before: "hardly = ",
-      strong: "almost not",
+      before: "hard = chăm chỉ/mạnh; hardly = ",
+      strong: "gần như không",
       after: ": He hardly tried. I can hardly read it.",
     },
     {
@@ -56,7 +61,7 @@ export const U101_ADJECTIVES_AND_ADVERBS_2_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Your English is good. You speak English well.",
-      vietnamese: "good (adj) / well (adv).",
+      vietnamese: "Good mô tả danh từ English; well mô tả hành động speak.",
     },
     {
       english: "Sophie's father is a well-known writer. I'm very well, thanks.",
@@ -64,11 +69,11 @@ export const U101_ADJECTIVES_AND_ADVERBS_2_TOPIC: GrammarTopicDetail = {
     },
     {
       english: "Kate works hard. He hardly tried.",
-      vietnamese: "hard ≠ hardly.",
+      vietnamese: "Hard nghĩa là chăm chỉ; hardly nghĩa là gần như không.",
     },
     {
       english: "Sorry I'm late. Have you seen Kate lately?",
-      vietnamese: "late / lately.",
+      vietnamese: "Late nghĩa là muộn; lately nghĩa là gần đây.",
     },
     {
       english: "I can hardly walk. There's hardly anything in the fridge.",

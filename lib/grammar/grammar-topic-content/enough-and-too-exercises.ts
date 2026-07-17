@@ -4,6 +4,21 @@ import { grammarCloze } from "@/lib/grammar/grammar-cloze";
 /**
  * Unit 103 exercises — Enough and Too (English Grammar in Use · Intermediate).
  */
+
+/** 103.1 — enough + word from the box. */
+const U103_1_ENOUGH_BANK = [
+  "buses",
+  "chairs",
+  "cups",
+  "hard",
+  "room",
+  "tall",
+  "time",
+  "vegetables",
+  "warm",
+  "wide",
+] as const;
+
 export const U103_ENOUGH_AND_TOO_EXERCISES: readonly GrammarExercise[] = [
   grammarCloze(
     "u103-1-3",
@@ -11,6 +26,7 @@ export const U103_ENOUGH_AND_TOO_EXERCISES: readonly GrammarExercise[] = [
     "Public transport isn't good here. There aren't __________.",
     "enough buses",
     {
+      choiceBank: U103_1_ENOUGH_BANK,
       explanation: "enough + noun: enough buses.",
     },
   ),
@@ -20,6 +36,7 @@ export const U103_ENOUGH_AND_TOO_EXERCISES: readonly GrammarExercise[] = [
     "I can't park the car here. The space isn't __________.",
     "wide enough",
     {
+      choiceBank: U103_1_ENOUGH_BANK,
       explanation: "adj + enough: wide enough.",
     },
   ),
@@ -29,6 +46,7 @@ export const U103_ENOUGH_AND_TOO_EXERCISES: readonly GrammarExercise[] = [
     "I always have to rush. There's never __________.",
     "enough time",
     {
+      choiceBank: U103_1_ENOUGH_BANK,
       explanation: "enough time.",
     },
   ),
@@ -38,6 +56,7 @@ export const U103_ENOUGH_AND_TOO_EXERCISES: readonly GrammarExercise[] = [
     "You need to change your diet. You don't eat __________.",
     "enough vegetables",
     {
+      choiceBank: U103_1_ENOUGH_BANK,
       explanation: "enough vegetables.",
     },
   ),
@@ -47,6 +66,7 @@ export const U103_ENOUGH_AND_TOO_EXERCISES: readonly GrammarExercise[] = [
     "I'm not good at basketball. I'm not __________.",
     "tall enough",
     {
+      choiceBank: U103_1_ENOUGH_BANK,
       explanation: "tall enough.",
     },
   ),
@@ -56,6 +76,7 @@ export const U103_ENOUGH_AND_TOO_EXERCISES: readonly GrammarExercise[] = [
     "Do you think there's __________ for five of us?",
     "enough room",
     {
+      choiceBank: U103_1_ENOUGH_BANK,
       explanation: "enough room.",
     },
   ),
@@ -65,15 +86,17 @@ export const U103_ENOUGH_AND_TOO_EXERCISES: readonly GrammarExercise[] = [
     "Are you __________? Or shall I switch on the heating?",
     "warm enough",
     {
+      choiceBank: U103_1_ENOUGH_BANK,
       explanation: "warm enough.",
     },
   ),
   grammarCloze(
     "u103-1-10",
     "103.1 · enough",
-    "We don't have __________.",
+    "We can't all have coffee at the same time. We don't have __________.",
     "enough cups",
     {
+      choiceBank: U103_1_ENOUGH_BANK,
       explanation: "enough cups.",
     },
   ),

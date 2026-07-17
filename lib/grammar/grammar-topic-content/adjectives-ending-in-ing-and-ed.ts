@@ -12,40 +12,45 @@ export const U98_ADJECTIVES_ENDING_IN_ING_AND_ED_TOPIC: GrammarTopicDetail = {
   kindLabel: "Adjective",
   sourceBook: "English Grammar in Use · Intermediate · Unit 98",
   sourceNote:
-    "-ing = tính chất khiến người khác cảm thấy thế; -ed = cảm xúc của người. Nên học kèm Unit 97.",
+    "Tính từ -ing mô tả người/vật gây ra cảm giác; tính từ -ed mô tả người đang có cảm giác đó. Nên học kèm Unit 97.",
   intro:
-    "-ing = tính chất khiến người khác cảm thấy thế; -ed = cảm xúc của người. Nên học kèm Unit 97 (mệnh đề -ing/-ed).",
+    "Bài này giúp bạn phân biệt tính từ tận cùng bằng -ing (người/vật gây ra cảm giác) với -ed (cảm xúc của người), và dùng đúng giới từ trong interested in, bored with hay surprised by. Nên học kèm Unit 97 (mệnh đề -ing/-ed).",
   structure: {
     affirmative:
       "something/someone + -ing | somebody + -ed (+ with/in/about…) | get + -ed",
     negative:
-      "not Jane is boring (= she causes boredom) when you mean she feels bored | not interesting in…",
+      "Muốn nói Jane thấy chán: KHÔNG nói Jane is boring → Jane is bored | KHÔNG nói interesting in → interested in",
   },
   usagePoints: [
     {
-      before: "-ing = ",
-      strong: "gây cảm giác",
+      before: "Tính từ -ing mô tả ",
+      strong: "người/vật gây ra cảm giác",
       after: ": The movie was disappointing. He's really boring.",
     },
     {
-      before: "-ed = ",
-      strong: "cảm xúc của người",
+      before: "Tính từ -ed mô tả ",
+      strong: "người đang có cảm giác",
       after: ": We were disappointed with the movie. I'm bored with my job.",
     },
     {
       before: "interested ",
       strong: "in",
-      after: " (không interesting in): Are you interested in buying a car?",
+      after: " (KHÔNG dùng interesting in): Are you interested in buying a car?",
     },
     {
-      before: "get + -ed: ",
+      before: "Dùng get + -ed khi cảm xúc ",
       strong: "get bored / get embarrassed",
-      after: "… vì thời tiết / tình huống.",
+      after: " bắt đầu xuất hiện hoặc thay đổi.",
     },
     {
-      before: "Người boring = ",
+      before: "Một người boring = ",
       strong: "làm người khác chán",
-      after: "; người bored = chính họ chán.",
+      after: ".",
+    },
+    {
+      before: "Một người bored = ",
+      strong: "chính họ cảm thấy chán",
+      after: ".",
     },
     {
       before: "Cặp hay gặp: ",
@@ -56,15 +61,15 @@ export const U98_ADJECTIVES_ENDING_IN_ING_AND_ED_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Jane's job is boring. Jane is bored with her job.",
-      vietnamese: "-ing việc; -ed cảm xúc.",
+      vietnamese: "Công việc gây chán nên dùng boring; Jane cảm thấy chán nên dùng bored.",
     },
     {
       english: "Julia thinks politics is interesting. Julia is interested in politics.",
-      vietnamese: "interesting vs interested in.",
+      vietnamese: "Politics gây hứng thú; Julia là người cảm thấy hứng thú.",
     },
     {
       english: "It was surprising that he passed. Everybody was surprised.",
-      vietnamese: "surprising / surprised.",
+      vietnamese: "Việc anh ấy đỗ gây bất ngờ; mọi người là người cảm thấy bất ngờ.",
     },
     {
       english: "The movie was disappointing. We were disappointed with it.",

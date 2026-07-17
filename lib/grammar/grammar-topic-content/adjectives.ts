@@ -12,59 +12,59 @@ export const U99_ADJECTIVES_TOPIC: GrammarTopicDetail = {
   kindLabel: "Adjective",
   sourceBook: "English Grammar in Use · Intermediate · Unit 99",
   sourceNote:
-    "opinion trước fact; thứ tự fact; sau be/look/feel…; the first two / next few…. Nên học kèm Units 100–101.",
+    "Tính từ chỉ ý kiến đứng trước tính từ chỉ đặc điểm; thứ tự các tính từ đặc điểm; tính từ sau be/look/feel…; the first two / next few…. Nên học kèm Units 100–101.",
   intro:
-    "Unit này giúp bạn nắm Adjectives: Opinion trước fact; thứ tự fact; sau be/look/feel…; the first two / next few… Nên học kèm Units 100–101.",
+    "Bài này giúp bạn sắp xếp nhiều tính từ trước danh từ, dùng tính từ đúng sau be/look/feel/sound…, và đặt số đúng vị trí trong the first two, the next few hay the last ten. Nên học kèm Units 100–101.",
   structure: {
     affirmative:
       "opinion + fact(s) + noun | be/look/feel/sound/taste/smell + adj | the first/next/last + number + noun",
     negative:
-      "not fact before opinion (usually) | not Drive careful | not the two first days",
+      "KHÔNG thường đặt đặc điểm trước ý kiến | KHÔNG nói Drive careful → Drive carefully | KHÔNG nói the two first days → the first two days",
   },
   usagePoints: [
     {
-      before: "Opinion ",
-      strong: "trước",
-      after: " fact: a nice long holiday; an interesting young man.",
+      before: "Tính từ chỉ ý kiến đứng ",
+      strong: "trước tính từ chỉ đặc điểm",
+      after: ": a nice long holiday; an interesting young man.",
     },
     {
-      before: "Fact gợi ý: ",
+      before: "Các tính từ chỉ đặc điểm thường theo thứ tự ",
       strong: "size → age → colour → origin → material",
       after: ": a small black plastic bag.",
     },
     {
-      before: "Hai màu: ",
+      before: "Giữa hai màu dùng ",
       strong: "and",
-      after: "; tính từ khác trước danh từ thường không and: a long black dress.",
+      after: ": a black and white dress. Các tính từ khác thường KHÔNG có and: a long black dress.",
     },
     {
-      before: "Sau ",
+      before: "Dùng tính từ sau ",
       strong: "be / look / feel / sound / taste / smell",
       after: ": She seems nice. The dinner smells good.",
     },
     {
-      before: "Cách làm → ",
+      before: "Khi mô tả cách thực hiện hành động, dùng ",
       strong: "trạng từ",
       after: " (Unit 100): Drive carefully. plays … well.",
     },
     {
-      before: "the first two / the next few / the last ten… — ",
-      strong: "không đảo số",
-      after: " trước first/next/last.",
+      before: "Đặt first/next/last trước số: ",
+      strong: "the first two / the next few / the last ten",
+      after: " (KHÔNG nói the two first).",
     },
   ],
   examples: [
     {
       english: "My brother lives in a nice new house.",
-      vietnamese: "opinion (nice) trước fact (new).",
+      vietnamese: "Nice là ý kiến nên đứng trước new là đặc điểm.",
     },
     {
       english: "In the kitchen there was a beautiful large round wooden table.",
-      vietnamese: "opinion + size + shape + material.",
+      vietnamese: "Thứ tự: ý kiến + kích thước + hình dáng + chất liệu.",
     },
     {
       english: "a black and white dress; a long black dress",
-      vietnamese: "hai màu + and; không long and black.",
+      vietnamese: "Hai màu nối bằng and; không dùng and giữa long và black.",
     },
     {
       english: "You look tired. This tea tastes a bit strange.",
@@ -76,7 +76,7 @@ export const U99_ADJECTIVES_TOPIC: GrammarTopicDetail = {
     },
     {
       english: "I didn't enjoy the first two days of the course.",
-      vietnamese: "the first two (không: the two first).",
+      vietnamese: "Đặt first trước số: the first two, KHÔNG nói the two first.",
     },
   ],
   practice: {

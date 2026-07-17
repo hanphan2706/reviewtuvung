@@ -12,40 +12,45 @@ export const U103_ENOUGH_AND_TOO_TOPIC: GrammarTopicDetail = {
   kindLabel: "Structure",
   sourceBook: "English Grammar in Use · Intermediate · Unit 103",
   sourceNote:
-    "adj/adv + enough; enough + noun; too vs not enough; enough/too + for / to…; too hot to eat (không … it). Nên học kèm Units 102, 104.",
+    "enough đứng sau tính từ/trạng từ nhưng trước danh từ; phân biệt too và not enough; enough/too + for / to…; không lặp tân ngữ sau too … to. Nên học kèm Units 102, 104.",
   intro:
-    "Unit này giúp bạn nắm Enough and Too: Adj/adv + enough; enough + noun; too vs not enough; enough/too + for / to…; too hot to eat (không … it). Nên học kèm Units 102 và 104.",
+    "Bài này giúp bạn đặt enough đúng vị trí, phân biệt too (quá mức cần thiết) với not … enough (chưa đủ), và dùng các mẫu enough/too … for … / to do mà không lặp tân ngữ. Nên học kèm Units 102 và 104.",
   structure: {
     affirmative:
       "adj/adv + enough | enough + noun | too + adj/adv | enough/too … for … | enough/too … to + V",
     negative:
-      "not enough fit | not too hot to eat it | too much/many vs not enough…",
+      "KHÔNG nói enough fit → fit enough | KHÔNG lặp tân ngữ: too hot to eat, không to eat it | KHÔNG nhầm too với very",
   },
   usagePoints: [
     {
-      before: "adj/adv + ",
-      strong: "enough",
+      before: "enough đứng sau ",
+      strong: "tính từ / trạng từ",
       after: ": I'm not fit enough. We've waited long enough.",
     },
     {
-      before: "enough + ",
-      strong: "noun",
+      before: "enough đứng trước ",
+      strong: "danh từ",
       after: " (hoặc một mình): enough money; We have enough.",
     },
     {
-      before: "too… = ",
-      strong: "quá nhiều",
-      after: "; not … enough = chưa đủ.",
+      before: "too … = ",
+      strong: "quá mức cần thiết",
+      after: ".",
     },
     {
-      before: "enough/too … ",
-      strong: "for … / to do…",
+      before: "not … enough = ",
+      strong: "chưa đủ",
+      after: ".",
+    },
+    {
+      before: "Dùng enough/too … với ",
+      strong: "for … / to do …",
       after: ": too small for you; enough experience to do the job.",
     },
     {
-      before: "too + adj + ",
-      strong: "to + V",
-      after: " — không lặp tân ngữ: too hot to eat (không: to eat it).",
+      before: "Sau too + tính từ + to + V, ",
+      strong: "KHÔNG lặp tân ngữ",
+      after: ": too hot to eat (KHÔNG nói: to eat it).",
     },
     {
       before: "too much/many vs ",
@@ -56,15 +61,15 @@ export const U103_ENOUGH_AND_TOO_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "I'm not fit enough. We've waited long enough.",
-      vietnamese: "enough sau adj/adv.",
+      vietnamese: "Enough đứng sau tính từ fit và trạng từ long.",
     },
     {
       english: "We have enough money. There weren't enough chairs.",
-      vietnamese: "enough trước noun.",
+      vietnamese: "Enough đứng trước danh từ money và chairs.",
     },
     {
       english: "You work too hard. You don't work hard enough.",
-      vietnamese: "too vs not enough.",
+      vietnamese: "Too hard là quá sức; not hard enough là chưa đủ chăm chỉ.",
     },
     {
       english: "She's not old enough to have a driving licence.",

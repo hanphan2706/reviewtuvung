@@ -4,6 +4,28 @@ import { grammarCloze } from "@/lib/grammar/grammar-cloze";
 /**
  * Unit 104 exercises — Quite, Pretty, Rather and Fairly (EGIU Intermediate).
  */
+
+/** 104.1 — Choose from: famous, hungry, late… */
+const U104_1_QUITE_BANK = [
+  "famous",
+  "hungry",
+  "late",
+  "noisy",
+  "often",
+  "old",
+  "surprised",
+] as const;
+
+/** 104.5 — quite (= completely): different, impossible… */
+const U104_5_QUITE_BANK = [
+  "different",
+  "impossible",
+  "right",
+  "safe",
+  "sure",
+  "true",
+] as const;
+
 export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_EXERCISES: readonly GrammarExercise[] = [
   grammarCloze(
     "u104-1-2",
@@ -11,6 +33,7 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_EXERCISES: readonly GrammarExer
     "I'm __________ . Is there anything to eat?",
     "quite hungry",
     {
+      choiceBank: U104_1_QUITE_BANK,
       explanation: "quite hungry.",
     },
   ),
@@ -20,6 +43,7 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_EXERCISES: readonly GrammarExer
     "We go to the cinema __________ — maybe once a month.",
     "quite often",
     {
+      choiceBank: U104_1_QUITE_BANK,
       explanation: "quite often.",
     },
   ),
@@ -29,6 +53,7 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_EXERCISES: readonly GrammarExer
     "We live near a very busy road, so it's often __________.",
     "quite noisy",
     {
+      choiceBank: U104_1_QUITE_BANK,
       explanation: "quite noisy.",
     },
   ),
@@ -38,6 +63,7 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_EXERCISES: readonly GrammarExer
     "I didn't expect Lisa to contact me. I was __________ when she phoned.",
     "quite surprised",
     {
+      choiceBank: U104_1_QUITE_BANK,
       explanation: "quite surprised.",
     },
   ),
@@ -47,6 +73,7 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_EXERCISES: readonly GrammarExer
     "I went to bed __________ last night, so I'm a bit tired this morning.",
     "quite late",
     {
+      choiceBank: U104_1_QUITE_BANK,
       explanation: "quite late.",
     },
   ),
@@ -56,6 +83,7 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_EXERCISES: readonly GrammarExer
     "I don't know exactly when this house was built, but it's __________.",
     "quite old",
     {
+      choiceBank: U104_1_QUITE_BANK,
       explanation: "quite old.",
     },
   ),
@@ -138,6 +166,7 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_EXERCISES: readonly GrammarExer
     "You won't fall. The ladder is __________.",
     "quite safe",
     {
+      choiceBank: U104_5_QUITE_BANK,
       explanation: "quite safe = completely safe.",
     },
   ),
@@ -147,6 +176,7 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_EXERCISES: readonly GrammarExer
     "I'm afraid I can't do what you ask. It's __________.",
     "quite impossible",
     {
+      choiceBank: U104_5_QUITE_BANK,
       explanation: "quite impossible = completely impossible.",
     },
   ),
@@ -156,6 +186,7 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_EXERCISES: readonly GrammarExer
     "I completely agree with you. You are __________.",
     "quite right",
     {
+      choiceBank: U104_5_QUITE_BANK,
       explanation: "quite right = completely right.",
     },
   ),
@@ -165,6 +196,7 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_EXERCISES: readonly GrammarExer
     "You can't compare the two things. They are __________.",
     "quite different",
     {
+      choiceBank: U104_5_QUITE_BANK,
       explanation: "quite different = completely different.",
     },
   ),
@@ -174,6 +206,7 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_EXERCISES: readonly GrammarExer
     "I think I saw them go out, but I'm not __________.",
     "quite sure",
     {
+      choiceBank: U104_5_QUITE_BANK,
       explanation: "not quite sure.",
     },
   ),
@@ -183,6 +216,7 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_EXERCISES: readonly GrammarExer
     "I didn't believe her at first, but in fact what she said was __________.",
     "quite true",
     {
+      choiceBank: U104_5_QUITE_BANK,
       explanation: "quite true = completely true.",
     },
   ),

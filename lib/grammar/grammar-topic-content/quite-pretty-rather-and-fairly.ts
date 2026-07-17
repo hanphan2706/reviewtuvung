@@ -12,40 +12,40 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_TOPIC: GrammarTopicDetail = {
   kindLabel: "Adverb",
   sourceBook: "English Grammar in Use · Intermediate · Unit 104",
   sourceNote:
-    "quite/pretty ≈ vừa phải; quite a…; rather (hay tiêu cực / bất ngờ tích cực); fairly yếu hơn; quite = completely. Nên học kèm Units 102–103.",
+    "quite/pretty chỉ mức độ khá; quite a/an + danh từ; rather thường mang sắc thái tiêu cực hoặc bất ngờ; fairly yếu hơn; quite đôi khi = completely. Nên học kèm Units 102–103.",
   intro:
-    "Unit này giúp bạn nắm Quite, Pretty, Rather and Fairly: Quite/pretty ≈ vừa phải; quite a…; rather (hay tiêu cực / bất ngờ tích cực); fairly yếu hơn; quite = completely. Nên học kèm Units 102–103.",
+    "Bài này giúp bạn phân biệt mức độ và sắc thái của quite, pretty, rather và fairly, đặt a/an đúng vị trí sau quite, và nhận ra khi quite mang nghĩa khá hay hoàn toàn. Nên học kèm Units 102–103.",
   structure: {
     affirmative:
       "quite/pretty + adj/adv | quite a/an (+ adj) + noun | rather + adj | fairly + adj | quite (= completely) + adj/verb",
     negative:
-      "not a quite old house | pretty ≠ completely | fairly < quite/rather/pretty",
+      "KHÔNG nói a quite old house → quite an old house | Pretty KHÔNG mang nghĩa completely | Fairly yếu hơn quite/rather/pretty",
   },
   usagePoints: [
     {
-      before: "quite / pretty = ",
-      strong: "hơn một chút, kém very",
+      before: "quite / pretty thường mang nghĩa ",
+      strong: "khá, nhưng chưa đến mức very",
       after: ": She's quite/pretty famous.",
     },
     {
-      before: "quite ",
-      strong: "a/an …",
-      after: " (không: a quite…): quite an old house; quite a surprise.",
+      before: "Đặt a/an sau quite: ",
+      strong: "quite a/an …",
+      after: " (KHÔNG nói a quite…): quite an old house; quite a surprise.",
     },
     {
-      before: "rather: hay ",
-      strong: "tiêu cực",
-      after: "; với tốt → thường = bất ngờ: rather good.",
+      before: "rather thường có sắc thái ",
+      strong: "tiêu cực hoặc không như mong đợi",
+      after: ": rather cloudy; rather good = tốt hơn dự đoán.",
     },
     {
-      before: "fairly = ",
-      strong: "yếu hơn",
-      after: " quite/rather/pretty: fairly big, but I'd prefer bigger.",
+      before: "fairly diễn tả mức độ ",
+      strong: "yếu hơn quite/rather/pretty",
+      after: ": fairly big, but I'd prefer bigger.",
     },
     {
-      before: "quite = ",
+      before: "Với sure/right/true/different/impossible…, quite = ",
       strong: "completely",
-      after: " với sure/right/true/different/impossible…",
+      after: ".",
     },
     {
       before: "not quite = ",
@@ -56,7 +56,7 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "She's quite famous. / She's pretty famous.",
-      vietnamese: "quite ≈ pretty (pretty nói miệng).",
+      vietnamese: "Quite và pretty đều nghĩa là khá; pretty thường dùng trong văn nói.",
     },
     {
       english: "We live in quite an old house. Sarah has quite a good job.",
@@ -64,7 +64,7 @@ export const U104_QUITE_PRETTY_RATHER_AND_FAIRLY_TOPIC: GrammarTopicDetail = {
     },
     {
       english: "It's rather cloudy. These oranges are rather good.",
-      vietnamese: "rather: tiêu cực / bất ngờ tích cực.",
+      vietnamese: "Rather cloudy mang sắc thái tiêu cực; rather good cho thấy kết quả tốt ngoài dự đoán.",
     },
     {
       english: "My room is fairly big, but I'd prefer a bigger one.",

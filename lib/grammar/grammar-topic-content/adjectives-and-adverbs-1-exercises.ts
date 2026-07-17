@@ -4,11 +4,58 @@ import { grammarCloze } from "@/lib/grammar/grammar-cloze";
 /**
  * Unit 100 exercises — Adjectives and Adverbs 1 (EGIU Intermediate).
  */
+
+/** 100.3 — Adjective/adverb stems from the box. */
+const U100_3_BOX_BANK = [
+  "careful",
+  "carefully",
+  "complete",
+  "completely",
+  "dangerous",
+  "dangerously",
+  "financial",
+  "financially",
+  "fluent",
+  "fluently",
+  "frequent",
+  "frequently",
+  "nervous",
+  "nervously",
+  "perfect",
+  "perfectly",
+  "permanent",
+  "permanently",
+  "special",
+  "specially",
+] as const;
+
+/** 100.4 — Two boxes: intensifiers + adjectives/participles. */
+const U100_4_TWO_WORD_BANK = [
+  "absolutely",
+  "badly",
+  "completely",
+  "happily",
+  "reasonably",
+  "seriously",
+  "slightly",
+  "unnecessarily",
+  "unusually",
+  "changed",
+  "cheap",
+  "damaged",
+  "enormous",
+  "ill",
+  "long",
+  "married",
+  "planned",
+  "quiet",
+] as const;
+
 export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[] = [
   grammarCloze(
     "u100-1-2",
     "100.1 · adverb",
-    "I found a flat quite __________.",
+    "I found a flat quite ea__________.",
     "easily",
     {
       explanation: "easily (easy + -ly).",
@@ -17,7 +64,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
   grammarCloze(
     "u100-1-3",
     "100.1 · adverb",
-    "We waited __________.",
+    "We waited pat__________.",
     "patiently",
     {
       explanation: "patiently.",
@@ -26,7 +73,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
   grammarCloze(
     "u100-1-4",
     "100.1 · adverb",
-    "He arrived __________.",
+    "He arrived unex__________.",
     "unexpectedly",
     {
       explanation: "unexpectedly.",
@@ -35,7 +82,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
   grammarCloze(
     "u100-1-5",
     "100.1 · adverb",
-    "Mike keeps fit by playing tennis __________.",
+    "Mike keeps fit by playing tennis reg__________.",
     "regularly",
     {
       explanation: "regularly.",
@@ -44,7 +91,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
   grammarCloze(
     "u100-2-2",
     "100.2 · adj / adv",
-    "I think you behaved very __________.",
+    "I think you behaved very __________. (selfish / selfishly)",
     "selfishly",
     {
       explanation: "behaved + adv: selfishly.",
@@ -53,7 +100,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
   grammarCloze(
     "u100-2-3",
     "100.2 · adj / adv",
-    "The weather changed __________.",
+    "The weather changed __________. (sudden / suddenly)",
     "suddenly",
     {
       explanation: "changed + adv: suddenly.",
@@ -62,7 +109,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
   grammarCloze(
     "u100-2-4",
     "100.2 · adj / adv",
-    "There was a __________ change in the weather.",
+    "There was a __________ change in the weather. (sudden / suddenly)",
     "sudden",
     {
       explanation: "a sudden change (adj + noun).",
@@ -71,7 +118,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
   grammarCloze(
     "u100-2-5",
     "100.2 · adj / adv",
-    "Liz fell and hurt herself really __________.",
+    "Liz fell and hurt herself really __________. (bad / badly)",
     "badly",
     {
       explanation: "hurt … badly.",
@@ -80,7 +127,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
   grammarCloze(
     "u100-2-6",
     "100.2 · adj / adv",
-    "I think I have flu. I feel __________.",
+    "I think I have flu. I feel __________. (awful / awfully)",
     "awful",
     {
       explanation: "feel + adj: awful.",
@@ -89,7 +136,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
   grammarCloze(
     "u100-2-7",
     "100.2 · adj / adv",
-    "Tanya is __________ upset about losing her job.",
+    "Tanya is __________ upset about losing her job. (terrible / terribly)",
     "terribly",
     {
       explanation: "terribly upset (adv + adj).",
@@ -98,7 +145,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
   grammarCloze(
     "u100-2-8",
     "100.2 · adj / adv",
-    "I could sit in this chair all day. It's very __________.",
+    "I could sit in this chair all day. It's very __________. (comfortable / comfortably)",
     "comfortable",
     {
       explanation: "be + adj: comfortable.",
@@ -107,7 +154,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
   grammarCloze(
     "u100-2-12",
     "100.2 · adj / adv",
-    "I'm glad you had a good trip and got home __________.",
+    "I'm glad you had a good trip and got home __________. (safe / safely)",
     "safely",
     {
       explanation: "got home safely (adv).",
@@ -119,6 +166,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
     "He's late sometimes, but it doesn't happen __________.",
     "frequently",
     {
+      choiceBank: U100_3_BOX_BANK,
       explanation: "happen frequently.",
     },
   ),
@@ -128,6 +176,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
     "Maria's English is very __________ although she makes quite a lot of mistakes.",
     "fluent",
     {
+      choiceBank: U100_3_BOX_BANK,
       explanation: "English is fluent (adj).",
     },
   ),
@@ -137,6 +186,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
     "I cooked this meal __________ for you.",
     "specially",
     {
+      choiceBank: U100_3_BOX_BANK,
       explanation: "specially for you.",
     },
   ),
@@ -146,6 +196,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
     "I tried on the shoes and they fitted me __________.",
     "perfectly",
     {
+      choiceBank: U100_3_BOX_BANK,
       explanation: "fitted … perfectly.",
     },
   ),
@@ -155,6 +206,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
     "Dan likes to take risks. He lives __________.",
     "dangerously",
     {
+      choiceBank: U100_3_BOX_BANK,
       explanation: "lives dangerously.",
     },
   ),
@@ -164,6 +216,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
     "Will's mother is __________ in hospital.",
     "seriously ill",
     {
+      choiceBank: U100_4_TWO_WORD_BANK,
       explanation: "seriously ill.",
     },
   ),
@@ -173,6 +226,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
     "This house is so big! It's __________.",
     "absolutely enormous",
     {
+      choiceBank: U100_4_TWO_WORD_BANK,
       explanation: "absolutely enormous.",
     },
   ),
@@ -182,6 +236,7 @@ export const U100_ADJECTIVES_AND_ADVERBS_1_EXERCISES: readonly GrammarExercise[]
     "It wasn't a serious accident. The car was only __________.",
     "slightly damaged",
     {
+      choiceBank: U100_4_TWO_WORD_BANK,
       explanation: "slightly damaged.",
     },
   ),

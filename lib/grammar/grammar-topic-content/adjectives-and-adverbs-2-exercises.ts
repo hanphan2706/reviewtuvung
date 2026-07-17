@@ -4,6 +4,28 @@ import { grammarCloze } from "@/lib/grammar/grammar-cloze";
 /**
  * Unit 101 exercises — Adjectives and Adverbs 2 (EGIU Intermediate).
  */
+
+/** 101.2 — well + participle from the box. */
+const U101_2_PARTICIPLE_BANK = [
+  "behaved",
+  "informed",
+  "kept",
+  "known",
+  "paid",
+  "written",
+] as const;
+
+/** 101.4 — Verbs used with hardly + … */
+const U101_4_VERB_BANK = [
+  "change",
+  "hear",
+  "know",
+  "recognise",
+  "say",
+  "sleep",
+  "speak",
+] as const;
+
 export const U101_ADJECTIVES_AND_ADVERBS_2_EXERCISES: readonly GrammarExercise[] = [
   grammarCloze(
     "u101-1-2",
@@ -66,6 +88,7 @@ export const U101_ADJECTIVES_AND_ADVERBS_2_EXERCISES: readonly GrammarExercise[]
     "well-known",
     {
       alternatives: ["well known"],
+      choiceBank: U101_2_PARTICIPLE_BANK,
       explanation: "well-known.",
     },
   ),
@@ -76,6 +99,7 @@ export const U101_ADJECTIVES_AND_ADVERBS_2_EXERCISES: readonly GrammarExercise[]
     "well-kept",
     {
       alternatives: ["well kept"],
+      choiceBank: U101_2_PARTICIPLE_BANK,
       explanation: "well-kept.",
     },
   ),
@@ -86,6 +110,7 @@ export const U101_ADJECTIVES_AND_ADVERBS_2_EXERCISES: readonly GrammarExercise[]
     "well-written",
     {
       alternatives: ["well written"],
+      choiceBank: U101_2_PARTICIPLE_BANK,
       explanation: "well-written.",
     },
   ),
@@ -96,6 +121,7 @@ export const U101_ADJECTIVES_AND_ADVERBS_2_EXERCISES: readonly GrammarExercise[]
     "well-paid",
     {
       alternatives: ["well paid"],
+      choiceBank: U101_2_PARTICIPLE_BANK,
       explanation: "well-paid.",
     },
   ),
@@ -141,6 +167,7 @@ export const U101_ADJECTIVES_AND_ADVERBS_2_EXERCISES: readonly GrammarExercise[]
     "You're speaking very quietly. I can __________ you.",
     "hardly hear",
     {
+      choiceBank: U101_4_VERB_BANK,
       explanation: "can hardly hear you.",
     },
   ),
@@ -150,6 +177,7 @@ export const U101_ADJECTIVES_AND_ADVERBS_2_EXERCISES: readonly GrammarExercise[]
     "I don't feel good this morning. I __________ last night.",
     "hardly slept",
     {
+      choiceBank: U101_4_VERB_BANK,
       explanation: "I hardly slept.",
     },
   ),
@@ -159,6 +187,7 @@ export const U101_ADJECTIVES_AND_ADVERBS_2_EXERCISES: readonly GrammarExercise[]
     "Kate was very quiet this evening. She __________ anything.",
     "hardly said",
     {
+      choiceBank: U101_4_VERB_BANK,
       explanation: "She hardly said anything.",
     },
   ),

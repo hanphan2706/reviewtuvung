@@ -12,40 +12,45 @@ export const U102_SO_AND_SUCH_TOPIC: GrammarTopicDetail = {
   kindLabel: "Structure",
   sourceBook: "English Grammar in Use · Intermediate · Unit 102",
   sourceNote:
-    "so + adj/adv; such (+ adj) + noun; such a…; so/such … (that); so long / such a long time. Nên học kèm Units 103–104.",
+    "so + tính từ/trạng từ; such + (tính từ) + danh từ; such a/an với danh từ số ít; so/such … (that); so long / such a long time. Nên học kèm Units 103–104.",
   intro:
-    "Trong unit này bạn sẽ nắm: so + adj/adv; such (+ adj) + noun; such a…; so/such … (that); so long / such a long time. Nên học kèm Units 103–104.",
+    "Bài này giúp bạn chọn so trước tính từ/trạng từ và such trước cụm danh từ, đặt a/an đúng vị trí trong such a/an…, và dùng so/such … (that) để diễn tả kết quả. Nên học kèm Units 103–104.",
   structure: {
     affirmative:
       "so + adj/adv | such (+ adj) + noun | such a + singular noun | so/such … (that)…",
     negative:
-      "not a so stupid story | not so nice people | not so long time → such a long time | no such…",
+      "KHÔNG nói a so stupid story → such a stupid story | KHÔNG nói so nice people → such nice people | KHÔNG nói so long time → such a long time",
   },
   usagePoints: [
     {
-      before: "so + ",
-      strong: "adj / adv",
+      before: "Dùng so trước ",
+      strong: "tính từ / trạng từ",
       after: ": I'm so tired. He talks so quietly.",
     },
     {
-      before: "such + ",
-      strong: "noun / adj + noun",
+      before: "Dùng such trước ",
+      strong: "danh từ / tính từ + danh từ",
       after: ": such nice people; such a stupid story.",
     },
     {
-      before: "such a… — ",
-      strong: "không a such",
-      after: ": such a big dog.",
+      before: "Với danh từ số ít, đặt a/an sau such: ",
+      strong: "such a big dog",
+      after: " (KHÔNG nói a such big dog).",
     },
     {
-      before: "so/such … (that)… — ",
-      strong: "that thường bỏ",
+      before: "Trong so/such … (that)…, ",
+      strong: "có thể bỏ that",
       after: ": I was so tired (that) I fell asleep.",
     },
     {
-      before: "so long ↔ ",
-      strong: "such a long time",
-      after: "; so far ↔ such a long way; so much ↔ such a lot of.",
+      before: "Không có danh từ: ",
+      strong: "so long / so far / so much",
+      after: ".",
+    },
+    {
+      before: "Có cụm danh từ: ",
+      strong: "such a long time / such a long way / such a lot of",
+      after: ".",
     },
     {
       before: "no such… = ",
@@ -56,11 +61,11 @@ export const U102_SO_AND_SUCH_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "The story was so stupid. It was such a stupid story.",
-      vietnamese: "so + adj; such a + adj + noun.",
+      vietnamese: "So đứng trước stupid; such đứng trước cả cụm a stupid story.",
     },
     {
       english: "They are such nice people. (not so nice people)",
-      vietnamese: "such + adj + plural noun.",
+      vietnamese: "Có danh từ people nên dùng such, không dùng so.",
     },
     {
       english: "I was so tired (that) I fell asleep in the armchair.",

@@ -12,31 +12,32 @@ export const U109_WORD_ORDER_1_TOPIC: GrammarTopicDetail = {
   kindLabel: "Word order",
   sourceBook: "English Grammar in Use · Intermediate · Unit 109",
   sourceNote:
-    "verb + object; place then time. Nên học kèm Unit 110 (adverbs with the verb).",
+    "Động từ và tân ngữ đi liền nhau; nơi chốn thường đứng trước thời gian; cụm thời gian có thể đưa lên đầu câu. Nên học kèm Unit 110.",
   intro:
-    "Trong unit này bạn sẽ nắm: verb + object; place then time. Nên học kèm Unit 110.",
+    "Bài này giúp bạn giữ động từ và tân ngữ cạnh nhau, đặt nơi chốn trước thời gian ở cuối câu, và biết khi nào có thể đưa cụm thời gian lên đầu câu. Nên học kèm Unit 110.",
   structure: {
     affirmative: "S + V + object (+ place) (+ time) | Time + S + V …",
-    negative: "S + aux + not + V + object (+ place) (+ time)",
+    negative:
+      "KHÔNG chen trạng từ giữa V và object | KHÔNG đặt time trước place ở cuối câu | Phủ định: S + aux + not + V + object",
   },
   usagePoints: [
     {
-      before: "Động từ + tân ngữ ",
+      before: "Động từ và tân ngữ phải ",
       strong: "đi liền nhau",
-      after: ": I like my job very much. (không: I like very much my job)",
+      after: ": I like my job very much. (KHÔNG nói: I like very much my job)",
     },
     {
-      before: "Có tân ngữ: ",
+      before: "Khi có tân ngữ và nơi chốn, dùng ",
       strong: "verb + object + place",
       after: ": We took the children to the zoo.",
     },
     {
-      before: "Thời gian thường ",
-      strong: "sau place",
-      after: ": Ben walks to work every morning. (không: every morning to work)",
+      before: "Ở cuối câu, nơi chốn đứng ",
+      strong: "trước thời gian",
+      after: ": Ben walks to work every morning. (KHÔNG nói: every morning to work)",
     },
     {
-      before: "Có thể đặt thời gian ",
+      before: "Để nhấn mạnh hoặc tạo mốc, có thể đặt thời gian ",
       strong: "ở đầu câu",
       after: ": On Monday I'm going to Paris.",
     },
@@ -46,19 +47,19 @@ export const U109_WORD_ORDER_1_TOPIC: GrammarTopicDetail = {
       after: " (giữa câu, với động từ).",
     },
     {
-      before: "Không tách ",
-      strong: "V + object",
-      after: " bằng trạng từ: Dan won the race easily. (không: won easily the race)",
+      before: "Trạng từ chỉ cách thức đứng sau tân ngữ, ",
+      strong: "KHÔNG tách V + object",
+      after: ": Dan won the race easily. (KHÔNG nói: won easily the race)",
     },
   ],
   examples: [
     {
       english: "I like my job very much.",
-      vietnamese: "Tôi rất thích công việc của mình.",
+      vietnamese: "Tân ngữ my job đứng ngay sau like; very much đứng sau tân ngữ.",
     },
     {
       english: "Our guide spoke English fluently.",
-      vietnamese: "Hướng dẫn viên nói tiếng Anh lưu loát. (không: spoke fluently English)",
+      vietnamese: "Fluently đứng sau tân ngữ English, không chen giữa spoke và English.",
     },
     {
       english: "We took the children to the zoo.",
@@ -66,7 +67,7 @@ export const U109_WORD_ORDER_1_TOPIC: GrammarTopicDetail = {
     },
     {
       english: "Ben walks to work every morning.",
-      vietnamese: "Ben đi bộ đến chỗ làm mỗi sáng.",
+      vietnamese: "Nơi chốn to work đứng trước thời gian every morning.",
     },
     {
       english: "On Monday I'm going to Paris.",

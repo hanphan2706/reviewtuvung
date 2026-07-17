@@ -153,7 +153,7 @@ export const U102_SO_AND_SUCH_EXERCISES: readonly GrammarExercise[] = [
   grammarCloze(
     "u102-3-4",
     "102.3 · word order",
-    "He said he worked for Elcron, but __________.",
+    "He said he worked for Elcron, but __________. (such / there's / company / no)",
     "there's no such company",
     {
       alternatives: ["there is no such company"],
@@ -163,7 +163,7 @@ export const U102_SO_AND_SUCH_EXERCISES: readonly GrammarExercise[] = [
   grammarCloze(
     "u102-3-5",
     "102.3 · word order",
-    "I don't know why __________.",
+    "I don't know why __________. (such / thing / I / did / a / stupid)",
     "I did such a stupid thing",
     {
       explanation: "why I did such a stupid thing.",
@@ -172,7 +172,7 @@ export const U102_SO_AND_SUCH_EXERCISES: readonly GrammarExercise[] = [
   grammarCloze(
     "u102-3-6",
     "102.3 · word order",
-    "Why __________? Can't you drive faster?",
+    "Why __________? Can't you drive faster? (driving / so / you / slowly / are)",
     "are you driving so slowly",
     {
       explanation: "Why are you driving so slowly?",
@@ -181,7 +181,7 @@ export const U102_SO_AND_SUCH_EXERCISES: readonly GrammarExercise[] = [
   grammarCloze(
     "u102-3-8",
     "102.3 · word order",
-    "Why __________? You could have got a cheaper one.",
+    "Why __________? You could have got a cheaper one. (expensive / you / an / phone / did / such / buy)",
     "did you buy such an expensive phone",
     {
       explanation: "Why did you buy such an expensive phone?",
