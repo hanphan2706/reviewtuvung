@@ -11,71 +11,71 @@ export const U87_MUCH_MANY_LITTLE_FEW_A_LOT_PLENTY_TOPIC: GrammarTopicDetail = {
   kindLabel: "Determiners",
   sourceBook: "English Grammar in Use · Intermediate · Unit 87",
   sourceNote:
-    "much/little + không đếm; many/few + số nhiều; a lot of / plenty of; little ≠ a little; few ≠ a few.",
+    "much/little + danh từ không đếm được; many/few + danh từ số nhiều; a lot of / plenty of dùng cho cả hai; phân biệt little/few và a little/a few.",
   intro:
-    "Unit này giúp bạn nắm Much, Many, Little, Few, a Lot, Plenty: Much/little + không đếm; many/few + số nhiều; a lot of / plenty of; little ≠ a little; few ≠ a few.",
+    "Bài này giúp bạn chọn đúng much, many, a lot of và plenty of theo loại danh từ, đồng thời phân biệt little/few (quá ít, gần như không có) với a little/a few (vẫn có một ít).",
   structure: {
     affirmative:
-      "much/little + uncountable | many/few + plural | a lot of / plenty of + both | a little / a few",
+      "much/little + danh từ không đếm được | many/few + danh từ số nhiều | a lot of / plenty of + cả hai loại | a little / a few",
     negative:
-      "avoid much in + spoken statements | not only little / only few",
+      "Trong câu khẳng định thông thường, ưu tiên a lot of thay vì much | KHÔNG nói only little / only few",
   },
   usagePoints: [
     {
-      before: "much / little + ",
-      strong: "không đếm được",
-      after: "; many / few + số nhiều.",
+      before: "much / little đi với ",
+      strong: "danh từ không đếm được",
+      after: "; many / few đi với danh từ số nhiều.",
     },
     {
-      before: "a lot of / plenty of: ",
+      before: "a lot of / plenty of dùng với ",
       strong: "cả hai loại danh từ",
-      after: "; plenty = hơn đủ.",
+      after: "; plenty of mang nghĩa nhiều hơn mức cần thiết.",
     },
     {
-      before: "Câu khẳng định nói: ",
+      before: "Trong câu khẳng định thông thường, dùng ",
       strong: "a lot (of)",
-      after: " thay much; too/so/as much vẫn OK.",
+      after: " tự nhiên hơn much; much vẫn dùng sau too, so và as.",
     },
     {
       before: "little / few = ",
-      strong: "ít (thiếu)",
-      after: "; a little / a few = một ít / một vài.",
+      strong: "quá ít, gần như không có",
+      after: "; a little / a few = có một ít, một vài.",
     },
     {
-      before: "only ",
+      before: "Sau only phải dùng ",
       strong: "a little / a few",
-      after: " (không: only little/few).",
+      after: " (KHÔNG nói: only little/few).",
     },
     {
-      before: "many years / many weeks: ",
-      strong: "thường many",
-      after: " (không thường a lot of years).",
+      before: "Với khoảng thời gian như years / weeks, ",
+      strong: "many",
+      after: " thường tự nhiên hơn a lot of: many years, many weeks.",
     },
   ],
   examples: [
     {
       english: "We didn't spend much money. We spent a lot of money.",
-      vietnamese: "much trong phủ định; khẳng định → a lot of.",
+      vietnamese: "Much tự nhiên trong câu phủ định; câu khẳng định thường dùng a lot of.",
     },
     {
       english: "There's no need to hurry. We've got plenty of time.",
-      vietnamese: "plenty of = hơn đủ.",
+      vietnamese: "Plenty of time nghĩa là có dư thời gian, không cần vội.",
     },
     {
       english: "He has little time for other things. She has few friends there.",
-      vietnamese: "little/few = ít (thiếu).",
+      vietnamese: "Little/few nhấn mạnh số lượng quá ít hoặc không đủ.",
     },
     {
       english: "We have a little time before the train. I have a few friends here.",
-      vietnamese: "a little / a few = một ít / một vài (đủ).",
+      vietnamese: "A little/a few cho biết vẫn có một lượng nhỏ, không mang ý thiếu hụt.",
     },
     {
       english: "Hurry! We only have a little time. There were only a few houses.",
-      vietnamese: "only a little / only a few.",
+      vietnamese: "Sau only dùng a little hoặc a few, không bỏ a.",
     },
     {
       english: "We've lived here for many years.",
-      vietnamese: "many years (không thường a lot of years).",
+      vietnamese: "Với years, many thường tự nhiên hơn a lot of.",
     },
   ],
   practice: {

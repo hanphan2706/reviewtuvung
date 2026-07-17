@@ -11,71 +11,71 @@ export const U89_BOTH_NEITHER_EITHER_TOPIC: GrammarTopicDetail = {
   kindLabel: "Determiners",
   sourceBook: "English Grammar in Use · Intermediate · Unit 89",
   sourceNote:
-    "both/neither/either cho 2 thứ; of + the/these/us…; both…and / neither…nor / either…or; so với any/none/all.",
+    "both/neither/either chỉ dùng khi có hai người hoặc vật; of + the/these/us…; các cặp both…and / neither…nor / either…or; trên hai lựa chọn dùng all/none/any.",
   intro:
-    "Unit này giúp bạn nắm Both / Neither / Either: Both/neither/either cho 2 thứ; of + the/these/us…; both…and / neither…nor / either…or; so với any/none/all.",
+    "Bài này giúp bạn diễn tả cả hai, không bên nào hoặc một trong hai bằng both, neither và either; dùng đúng of trước từ hạn định/đại từ; và phân biệt các từ này với all, none, any khi có hơn hai lựa chọn.",
   structure: {
     affirmative:
       "both/neither/either (+ N) | both/neither/either of + the/these/us… | both…and / neither…nor / either…or",
     negative:
-      "not the both | not both us | either/neither only for two",
+      "KHÔNG nói the both | KHÔNG nói both us | both/neither/either chỉ dùng cho hai",
   },
   usagePoints: [
     {
-      before: "Hai thứ: ",
+      before: "Khi có đúng hai người hoặc vật: ",
       strong: "both (= cả hai) / neither (= không bên nào) / either (= một trong hai)",
       after: ".",
     },
     {
-      before: "both of / neither of / either of + ",
+      before: "Dùng both of / neither of / either of trước ",
       strong: "the/these/my…",
-      after: "; both ± of.",
+      after: "; riêng both có thể bỏ of.",
     },
     {
-      before: "both of us/you/them: ",
-      strong: "of bắt buộc",
-      after: ".",
+      before: "Trước us/you/them, ",
+      strong: "of là bắt buộc",
+      after: ": both of us, neither of them.",
     },
     {
-      before: "Cặp liên từ: ",
+      before: "Ba cặp liên từ tương ứng là ",
       strong: "both… and / neither… nor / either… or",
       after: ".",
     },
     {
-      before: ">2 thứ → ",
+      before: "Khi có hơn hai lựa chọn, dùng ",
       strong: "any / none / all",
-      after: " (không either/neither/both).",
+      after: " (KHÔNG dùng either/neither/both).",
     },
     {
-      before: "neither of…: động từ ",
+      before: "Sau neither of…, động từ có thể ở ",
       strong: "số ít hoặc số nhiều",
-      after: ".",
+      after: ": Neither of them is/are ready.",
     },
   ],
   examples: [
     {
       english: "Both restaurants are good. Neither restaurant is expensive. Either is fine.",
-      vietnamese: "both / neither / either với hai lựa chọn.",
+      vietnamese: "Both, neither và either đều đang nói về đúng hai nhà hàng.",
     },
     {
       english: "Both of these restaurants are good. / Both these restaurants…",
-      vietnamese: "both ± of.",
+      vietnamese: "Trước these, both có thể dùng có hoặc không có of.",
     },
     {
       english: "Neither of them knew. Both of us were tired.",
-      vietnamese: "… of them/us.",
+      vietnamese: "Trước đại từ them/us phải có of.",
     },
     {
       english: "Both Chris and Paul were late. Neither Joe nor Sam has a car.",
-      vietnamese: "both…and / neither…nor.",
+      vietnamese: "Dùng both…and để nối hai ý khẳng định; neither…nor để phủ định cả hai.",
     },
     {
       english: "She's either Spanish or Italian. We can leave either today or tomorrow.",
-      vietnamese: "either… or…",
+      vietnamese: "Either…or trình bày hai khả năng hoặc lựa chọn.",
     },
     {
       english: "Two hotels: either of them. Many hotels: any of them.",
-      vietnamese: "2 vs >2.",
+      vietnamese: "Hai khách sạn dùng either; nhiều hơn hai dùng any.",
     },
   ],
   practice: {

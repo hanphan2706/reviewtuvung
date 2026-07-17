@@ -12,71 +12,71 @@ export const U91_EACH_AND_EVERY_TOPIC: GrammarTopicDetail = {
   kindLabel: "Determiners",
   sourceBook: "English Grammar in Use · Intermediate · Unit 91",
   sourceNote:
-    "each = từng cái một; every ≈ all; each cho 2; every cho tần suất; each of / every one of; everyone vs every one. Nên học kèm Unit 90.",
+    "each nhấn mạnh từng cá thể; every nhìn toàn bộ nhóm; đúng hai dùng each; tần suất dùng every; each of / every one of; phân biệt everyone và every one. Nên học kèm Unit 90.",
   intro:
-    "Unit này giúp bạn nắm Each and Every: Each = từng cái một; every ≈ all; each cho 2; every cho tần suất; each of / every one of; everyone vs every one. Nên học kèm Unit 90.",
+    "Bài này giúp bạn phân biệt each (xét từng người/vật riêng lẻ) với every (nhìn tất cả thành một nhóm), dùng đúng each of / every one of, và tránh nhầm everyone với every one. Nên học kèm Unit 90.",
   structure: {
     affirmative:
       "each/every + N | each of + the/them… | every one (of …) | N + each | … each + V",
     negative:
-      "not every of | not each day (for frequency) | not every team (for exactly two)",
+      "KHÔNG nói every of | Tần suất thường dùng every day, không each day | Đúng hai đối tượng dùng each",
   },
   usagePoints: [
     {
-      before: "each = ",
-      strong: "từng cái một",
-      after: " (thường số nhỏ); every ≈ all (thường số lớn).",
+      before: "each nhấn mạnh ",
+      strong: "từng cá thể riêng lẻ",
+      after: " (thường là nhóm nhỏ); every nhìn tất cả thành một nhóm.",
     },
     {
-      before: "Đúng hai thứ → ",
+      before: "Khi có đúng hai người hoặc vật, dùng ",
       strong: "each",
-      after: " (không every): each team has eleven players.",
+      after: " (KHÔNG dùng every): each team has eleven players.",
     },
     {
-      before: "Tần suất → ",
+      before: "Để diễn tả tần suất, dùng ",
       strong: "every day / every ten minutes",
-      after: " (không each day).",
+      after: " (thường KHÔNG dùng each day).",
     },
     {
-      before: "each of the/them…; ",
+      before: "Dùng each of the/them… nhưng phải nói ",
       strong: "every one of …",
-      after: " (không: every of).",
+      after: " (KHÔNG nói: every of).",
     },
     {
-      before: "Giá / phân phối: ",
+      before: "Khi nói giá hoặc phần được chia cho từng người/vật, dùng ",
       strong: "a pound each",
       after: "; were each given…",
     },
     {
-      before: "everyone = everybody; ",
+      before: "everyone (một từ) = everybody; ",
       strong: "every one",
-      after: " = từng cái/người (hai từ).",
+      after: " (hai từ) = từng cái hoặc từng người trong một nhóm.",
     },
   ],
   examples: [
     {
       english: "Each book was a different colour. Every window in the house was open.",
-      vietnamese: "each từng cái; every ≈ all.",
+      vietnamese: "Each nhấn mạnh từng cuốn sách; every nói tất cả cửa sổ trong nhà.",
     },
     {
       english: "In football, each team has eleven players.",
-      vietnamese: "hai đội → each (không every).",
+      vietnamese: "Một trận có hai đội nên dùng each, không dùng every.",
     },
     {
       english: "'How often do you use your car?' 'Every day.'",
-      vietnamese: "tần suất → every.",
+      vietnamese: "Tần suất lặp lại dùng every day.",
     },
     {
       english: "Each of the books was a different colour. I've read every one of them.",
-      vietnamese: "each of… / every one of…",
+      vietnamese: "Dùng each of…, nhưng với every phải nói every one of…",
     },
     {
       english: "Those oranges are 40 pence each. We paid 200 dollars each.",
-      vietnamese: "each = mỗi cái / mỗi người.",
+      vietnamese: "Each đứng sau số tiền để nói giá mỗi quả hoặc phần mỗi người trả.",
     },
     {
       english: "Everyone enjoyed the party. She goes to every one. (= every party)",
-      vietnamese: "everyone vs every one.",
+      vietnamese: "Everyone là mọi người; every one là từng buổi tiệc trong một nhóm.",
     },
   ],
   practice: {

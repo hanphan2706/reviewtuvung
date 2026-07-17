@@ -12,71 +12,71 @@ export const U90_ALL_EVERY_WHOLE_TOPIC: GrammarTopicDetail = {
   kindLabel: "Determiners",
   sourceBook: "English Grammar in Use · Intermediate · Unit 90",
   sourceNote:
-    "everybody/everything không all một mình; whole + singular; every day vs all day / the whole day; every time vs all the time. Nên học kèm Units 88, 91.",
+    "everybody/everything thay cho all đứng một mình; whole + danh từ đếm được số ít; phân biệt every day với all day/the whole day và every time với all the time. Nên học kèm Units 88, 91.",
   intro:
-    "Unit này giúp bạn nắm All, Every, Whole: Everybody/everything không all một mình; whole + singular; every day vs all day / the whole day; every time vs all the time. Nên học kèm Unit 88 (all of) và Unit 91 (each/every).",
+    "Bài này giúp bạn phân biệt all, every và whole: dùng everybody/everything khi nói mọi người/mọi thứ, đặt whole trước danh từ đếm được số ít, và tránh nhầm every day với all day hay every time với all the time. Nên học kèm Unit 88 (all of) và Unit 91 (each/every).",
   structure: {
     affirmative:
-      "everybody/everything | all + N / all of us | the whole + singular N | every + period | all day / the whole day",
+      "everybody/everything | all + N / all of us | the whole + danh từ đếm được số ít | every + khoảng thời gian | all day / the whole day",
     negative:
-      "not all were happy | not the whole money | not all days | not all the day",
+      "not all were happy | KHÔNG nói the whole money | KHÔNG nói all days | KHÔNG nói all the day",
   },
   usagePoints: [
     {
-      before: "Người / mọi thứ: ",
+      before: "Khi everybody/everything làm chủ ngữ, dùng ",
       strong: "everybody / everything",
-      after: " (không chỉ all một mình).",
+      after: " — KHÔNG dùng all đứng một mình.",
     },
     {
-      before: "whole + ",
+      before: "whole đi với ",
       strong: "danh từ số ít đếm được",
       after: ": the whole book / the whole team.",
     },
     {
-      before: "Không đếm được → ",
+      before: "Với danh từ không đếm được, dùng ",
       strong: "all the money / all the information",
-      after: " (không: the whole money).",
+      after: " (KHÔNG nói: the whole money).",
     },
     {
-      before: "every day = ",
-      strong: "mỗi ngày",
-      after: "; all day / the whole day = cả ngày.",
+      before: "Phân biệt ",
+      strong: "every day = mỗi ngày",
+      after: " với all day / the whole day = suốt cả ngày.",
     },
     {
-      before: "all the time ≠ ",
-      strong: "every time",
-      after: " (liên tục vs mỗi lần).",
+      before: "all the time = ",
+      strong: "liên tục",
+      after: "; every time = mỗi lần — hai cụm KHÔNG cùng nghĩa.",
     },
     {
-      before: "everybody + ",
+      before: "everybody đi với ",
       strong: "động từ số ít",
-      after: "; đại từ theo sau: they/their.",
+      after: "; khi nhắc lại có thể dùng they/their.",
     },
   ],
   examples: [
     {
       english: "Everybody had a great time. All I've eaten today is a banana.",
-      vietnamese: "everybody; all = the only thing.",
+      vietnamese: "Everybody chỉ mọi người; all trong câu sau mang nghĩa the only thing.",
     },
     {
       english: "I read the whole book. I read all the information carefully.",
-      vietnamese: "whole + singular; all + uncountable.",
+      vietnamese: "Whole đi với book số ít; information không đếm được nên dùng all.",
     },
     {
       english: "We went to the beach every day. We spent all day / the whole day on the beach.",
-      vietnamese: "every day vs all day.",
+      vietnamese: "Every day là mỗi ngày; all day/the whole day là suốt cả ngày.",
     },
     {
       english: "They're at home all the time. Every time I see you, you look different.",
-      vietnamese: "all the time vs every time.",
+      vietnamese: "All the time nghĩa là liên tục; every time nghĩa là mỗi lần.",
     },
     {
       english: "Everybody has arrived. Everybody said they enjoyed themselves.",
-      vietnamese: "số ít + they.",
+      vietnamese: "Everybody dùng động từ số ít has; có thể dùng they khi nhắc lại.",
     },
     {
       english: "There's a bus every ten minutes.",
-      vietnamese: "every + khoảng thời gian.",
+      vietnamese: "Every + khoảng thời gian diễn tả tần suất lặp lại.",
     },
   ],
   practice: {
