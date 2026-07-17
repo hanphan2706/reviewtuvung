@@ -12,9 +12,9 @@ export const U57_VERB_ING_OR_TO_2_TOPIC: GrammarTopicDetail = {
   kindLabel: "Verb pattern",
   sourceBook: "English Grammar in Use · Intermediate · Unit 57",
   sourceNote:
-    "try to … vs try -ing; need to … vs need -ing; help (to) do; can't help -ing. Nên học kèm Units 53–54, 56, 58.",
+    "try to … (cố) khác try -ing (thử); need to … khác need -ing (= cần được…); help (to) do; can't help -ing. Nên học kèm Units 53–54, 56, 58.",
   intro:
-    "Trong unit này bạn sẽ nắm: try to … vs try -ing; need to … vs need -ing; help (to) do; can't help -ing. Nên học kèm Units 53–54, 56 và 58.",
+    "Bài này giúp bạn phân biệt try to … với try -ing, need to … với need -ing (cần được làm gì), và nắm help (to) do cùng can't help -ing. Nên học kèm Units 53–54, 56 và 58.",
   structure: {
     affirmative:
       "try + to + V | try + V-ing | need + to + V | need + V-ing | help (+ O) (+ to) + V | can't help + V-ing",
@@ -25,27 +25,27 @@ export const U57_VERB_ING_OR_TO_2_TOPIC: GrammarTopicDetail = {
     {
       before: "try + ",
       strong: "to …",
-      after: " = cố gắng: I tried to move the table, but it was too heavy.",
+      after: " = cố gắng làm: I tried to move the table, but it was too heavy.",
     },
     {
       before: "try + ",
       strong: "-ing",
-      after: " = thử xem: Try pressing the green button. I tried moving the table to the other side.",
+      after: " = thử một cách xem sao: Try pressing the green button.",
     },
     {
       before: "need + ",
       strong: "to …",
-      after: " = cần phải: He needs to work harder. I need to charge my phone.",
+      after: " = cần phải làm: He needs to work harder. I need to charge my phone.",
     },
     {
       before: "something + ",
       strong: "needs -ing",
-      after: " (= needs to be …): My phone needs charging. Does your suit need cleaning?",
+      after: " = cần được… (= needs to be …): My phone needs charging.",
     },
     {
       before: "help: ",
       strong: "(to) do",
-      after: " — hai dạng: Everybody helped (to) clean up. Can you help me (to) move…?",
+      after: " — hai dạng đều đúng: Everybody helped (to) clean up.",
     },
     {
       before: "can't help + ",
@@ -56,31 +56,31 @@ export const U57_VERB_ING_OR_TO_2_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "I was very tired. I tried to keep my eyes open, but I couldn't.",
-      vietnamese: "Tôi rất mệt. Tôi cố mở mắt nhưng không được.",
+      vietnamese: "Cố giữ mắt mở — try + to …",
     },
     {
       english: "The photocopier doesn't work. Try pressing the green button.",
-      vietnamese: "Máy photocopy không chạy. Thử nhấn nút xanh xem.",
+      vietnamese: "Thử một cách khắc phục — try + -ing.",
     },
     {
       english: "I need to charge my phone. / My phone needs charging.",
-      vietnamese: "Tôi cần sạc điện thoại. / Điện thoại tôi cần được sạc.",
+      vietnamese: "Tôi cần sạc / Máy cần được sạc — need to … vs need -ing.",
     },
     {
       english: "Does your suit need cleaning?",
-      vietnamese: "Áo của bạn có cần giặt không? (= need to be cleaned)",
+      vietnamese: "Áo có cần được giặt không? (= need to be cleaned)",
     },
     {
       english: "Everybody helped (to) clean up after the party.",
-      vietnamese: "Mọi người giúp dọn sau buổi tiệc. (có/không to đều đúng)",
+      vietnamese: "help + (to) do — có hoặc không to đều được.",
     },
     {
       english: "She tried to be serious, but she couldn't help laughing.",
-      vietnamese: "Cô ấy cố nghiêm túc nhưng không nhịn được cười.",
+      vietnamese: "Không nhịn được cười — can't help + -ing.",
     },
     {
       english: "I'm sorry I'm so nervous. I can't help it.",
-      vietnamese: "Xin lỗi tôi quá lo. Tôi không thể không thế.",
+      vietnamese: "can't help it = không thể làm khác được.",
     },
   ],
   practice: {

@@ -12,9 +12,9 @@ export const U60_PREPOSITION_ING_TOPIC: GrammarTopicDetail = {
   kindLabel: "Verb pattern",
   sourceBook: "English Grammar in Use · Intermediate · Unit 60",
   sourceNote:
-    "giới từ + -ing; before/after/by/without + -ing; to như giới từ → to + -ing (look forward to). Nên học kèm Unit 53.",
+    "Sau giới từ động từ luôn -ing; before/after/by/without + -ing; to là giới từ → to + -ing (look forward to). Nên học kèm Unit 53.",
   intro:
-    "Unit này giúp bạn nắm Preposition + -ing: Giới từ + -ing; before/after/by/without + -ing; to như giới từ → to + -ing (look forward to). Nên học kèm Unit 53 (Verb + -ing).",
+    "Bài này giúp bạn luôn dùng -ing sau giới từ (interested in, before, without…), và nhận ra khi to là giới từ — như look forward to — thì theo -ing chứ không phải nguyên thể. Nên học kèm Unit 53 (Verb + -ing).",
   structure: {
     affirmative:
       "prep (in/for/about/of…) + V-ing | before/after/by/without + V-ing | look forward to + V-ing | prefer … to + V-ing",
@@ -23,9 +23,9 @@ export const U60_PREPOSITION_ING_TOPIC: GrammarTopicDetail = {
   },
   usagePoints: [
     {
-      before: "Giới từ + động từ → ",
+      before: "Giới từ + động từ → luôn ",
       strong: "-ing",
-      after: ": interested in working; good at learning; fed up with studying; thanks for inviting.",
+      after: ": interested in working; good at learning; thanks for inviting.",
     },
     {
       before: "before / after + ",
@@ -35,7 +35,7 @@ export const U60_PREPOSITION_ING_TOPIC: GrammarTopicDetail = {
     {
       before: "by + ",
       strong: "-ing",
-      after: " = bằng cách: She made herself ill by not eating properly.",
+      after: " = bằng cách: You can improve your English by reading more.",
     },
     {
       before: "without + ",
@@ -43,44 +43,44 @@ export const U60_PREPOSITION_ING_TOPIC: GrammarTopicDetail = {
       after: ": We ran ten kilometres without stopping. I said it without thinking.",
     },
     {
-      before: "to như giới từ → ",
+      before: "Khi to là giới từ → ",
       strong: "to + -ing",
-      after: ": looking forward to going; prefer driving to travelling. (không: to go / to travel)",
+      after: ": looking forward to going; prefer driving to travelling. (KHÔNG: to go / to travel)",
     },
     {
-      before: "So với ",
+      before: "Khác với ",
       strong: "to + infinitive",
-      after: ": We decided to travel by train. Would you like to meet for lunch?",
+      after: " sau decide / would like…: We decided to travel by train.",
     },
   ],
   examples: [
     {
       english: "Are you interested in working for us?",
-      vietnamese: "Bạn có quan tâm làm việc với chúng tôi không?",
+      vietnamese: "Sau giới từ in phải dùng -ing.",
     },
     {
       english: "Before going out, I phoned Sarah.",
-      vietnamese: "Trước khi ra ngoài, tôi gọi Sarah. (không: Before to go)",
+      vietnamese: "Before + -ing, không Before to go…",
     },
     {
       english: "You can improve your English by reading more.",
-      vietnamese: "Bạn có thể cải thiện tiếng Anh bằng cách đọc thêm.",
+      vietnamese: "by + -ing = bằng cách làm gì.",
     },
     {
       english: "We ran ten kilometres without stopping.",
-      vietnamese: "Chúng tôi chạy mười kilomet mà không dừng.",
+      vietnamese: "without + -ing = mà không / không cần…",
     },
     {
       english: "Are you looking forward to going on holiday?",
-      vietnamese: "Bạn có mong chờ đi nghỉ không? (không: looking forward to go)",
+      vietnamese: "to trong look forward to là giới từ → + -ing.",
     },
     {
       english: "I prefer driving to travelling by train.",
-      vietnamese: "Tôi thích lái xe hơn đi tàu. (to = giới từ → -ing)",
+      vietnamese: "to sau prefer … to cũng là giới từ → -ing.",
     },
     {
       english: "I'm fed up with people telling me what to do.",
-      vietnamese: "Tôi chán việc người khác bảo tôi phải làm gì.",
+      vietnamese: "fed up with + -ing / danh từ + -ing.",
     },
   ],
   practice: {

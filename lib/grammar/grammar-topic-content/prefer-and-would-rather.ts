@@ -14,7 +14,7 @@ export const U59_PREFER_AND_WOULD_RATHER_TOPIC: GrammarTopicDetail = {
   sourceNote:
     "prefer to … / -ing; prefer A to B; prefer to do rather than…; would prefer to…; would rather + V; I'd rather you + past. Nên học kèm Unit 58.",
   intro:
-    "Trong unit này bạn sẽ nắm: prefer to … / -ing; prefer A to B; prefer to do rather than…; would prefer to…; would rather + V; I'd rather you + past. Nên học kèm Unit 58 (would like / like patterns).",
+    "Bài này giúp bạn nói sở thích bằng prefer và would rather: so sánh hai lựa chọn (prefer A to B), muốn lúc này (I'd prefer to / I'd rather), và mẫu I'd rather you + quá khứ khi muốn người khác làm (hoặc đừng làm) gì. Nên học kèm Unit 58 (would like / like patterns).",
   structure: {
     affirmative:
       "prefer + N/V-ing + to + N/V-ing | prefer + to + V + rather than (+ V) | would prefer + to + V | would rather + V | I'd rather + S + V2",
@@ -28,7 +28,7 @@ export const U59_PREFER_AND_WOULD_RATHER_TOPIC: GrammarTopicDetail = {
       after: ": I prefer living / to live in the country.",
     },
     {
-      before: "So sánh: ",
+      before: "So sánh hai lựa chọn: ",
       strong: "prefer A to B",
       after: " / prefer doing to doing / prefer to do rather than (do).",
     },
@@ -39,7 +39,7 @@ export const U59_PREFER_AND_WOULD_RATHER_TOPIC: GrammarTopicDetail = {
     },
     {
       before: "I'd rather + ",
-      strong: "V (không to)",
+      strong: "V (KHÔNG to)",
       after: ": I'd rather drive. I'd rather not go out this evening.",
     },
     {
@@ -56,31 +56,31 @@ export const U59_PREFER_AND_WOULD_RATHER_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "I prefer driving to travelling by train.",
-      vietnamese: "Tôi thích lái xe hơn đi tàu.",
+      vietnamese: "Thích A hơn B — prefer + -ing + to + -ing.",
     },
     {
       english: "I prefer to drive rather than travel by train.",
-      vietnamese: "Tôi thích lái xe hơn là đi tàu.",
+      vietnamese: "Cùng ý với câu trên — prefer to … rather than …",
     },
     {
       english: "'Shall we go by train?' 'I'd prefer to drive.' / 'I'd rather drive.'",
-      vietnamese: "—'Mình đi tàu nhé?' —'Tôi thích lái xe hơn.'",
+      vietnamese: "Muốn lúc này: I'd prefer to … hoặc I'd rather + V.",
     },
     {
       english: "I'm tired. I'd rather not go out this evening.",
-      vietnamese: "Tôi mệt. Tôi muốn không ra ngoài tối nay hơn.",
+      vietnamese: "Muốn không làm gì — I'd rather not + V.",
     },
     {
       english: "'Who's going to drive?' 'I'd rather you drove.'",
-      vietnamese: "—'Ai lái?' —'Tôi muốn bạn lái hơn.' (quá khứ = hiện tại)",
+      vietnamese: "Muốn người khác lái — I'd rather + you + quá khứ (nghĩa hiện tại).",
     },
     {
       english: "I'd rather you didn't tell anyone what I said.",
-      vietnamese: "Tôi muốn bạn đừng kể với ai những gì tôi nói.",
+      vietnamese: "Muốn người kia đừng kể — I'd rather you didn't …",
     },
     {
       english: "I'd rather stay at home tonight than go to the cinema.",
-      vietnamese: "Tối nay tôi muốn ở nhà hơn là đi xem phim.",
+      vietnamese: "Ở nhà hơn đi xem phim — would rather … than …",
     },
   ],
   practice: {

@@ -30,9 +30,18 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
     message: "Nên học kèm Unit 13 để hoàn thiện quy tắc chọn giữa present perfect và past simple.",
     unitNumbers: [13],
   },
+  18: {
+    message: "Nên học kèm Unit 61 (be/get used to) để phân biệt used to do và am/is/are used to doing.",
+    unitNumbers: [61],
+  },
   19: {
-    message: "Xem thêm I'm going to (Unit 20), will (Units 21–22) và present simple sau when/if (Unit 25).",
-    unitNumbers: [20, 21, 22, 25],
+    message:
+      "Xem thêm I'm going to (Units 20, 23), will (Units 21–22) và present simple sau when/if (Unit 25); ôn lại present continuous/simple ở Units 1–4.",
+    unitNumbers: [1, 2, 3, 4, 20, 21, 22, 23, 25],
+  },
+  20: {
+    message: "Nên học kèm Unit 19 (present tenses for the future) và Unit 23 (I will and I'm going to).",
+    unitNumbers: [19, 23],
   },
   21: {
     message:
@@ -47,22 +56,26 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
     message: "Nên học kèm Units 20–22 để nắm trọn will và going to trước khi so sánh hai dạng.",
     unitNumbers: [20, 21, 22],
   },
+  24: {
+    message: "Nên học kèm Units 21–22 (will/shall) và Unit 120 (by then / by the time).",
+    unitNumbers: [21, 22, 120],
+  },
   26: {
     message: "Nên học kèm Unit 27 (could / could have) và Unit 37 (can/could you…?) để mở rộng cách dùng can/could.",
     unitNumbers: [27, 37],
   },
   27: {
-    message: "Nên học kèm Unit 26 (can/could/able to) trước khi học could have (done).",
-    unitNumbers: [26],
+    message: "Nên học kèm Unit 26 trước, rồi Unit 29 để so sánh could với may/might.",
+    unitNumbers: [26, 29],
   },
   28: {
     message:
-      "Nên học kèm Unit 31 để phân biệt must suy đoán chắc chắn (Unit 28) và must / have to mang nghĩa bắt buộc (Unit 31).",
-    unitNumbers: [31],
+      "Nên học kèm Unit 26 (can't khả năng), Unit 27 (couldn't have), Unit 31 (must / have to bắt buộc) và Unit 32 (mustn't / needn't).",
+    unitNumbers: [26, 27, 31, 32],
   },
   29: {
-    message: "Nên học kèm Unit 30 để nắm trọn may/might cho khả năng hiện tại và hành động tương lai.",
-    unitNumbers: [30],
+    message: "Nên học kèm Unit 30 (may/might với tương lai) và Unit 27 (could) để so sánh khả năng.",
+    unitNumbers: [30, 27],
   },
   30: {
     message: "Nên học kèm Unit 29 (may/might 1 — khả năng hiện tại/quá khứ) để có bức tranh đầy đủ.",
@@ -99,8 +112,8 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
   },
   38: {
     message:
-      "Nên học kèm Unit 39 (if I knew / I wish I knew) và Unit 40 (if I had known) để nắm trọn điều kiện giả định; xem thêm Unit 36 (would).",
-    unitNumbers: [39, 40, 36],
+      "Nên học kèm Unit 39 (if I knew), Unit 40 (if I had known); so với Unit 25 (if/when) và Unit 36 (would).",
+    unitNumbers: [39, 40, 25, 36],
   },
   39: {
     message:
@@ -133,36 +146,68 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
     unitNumbers: [42, 43, 44],
   },
   47: {
-    message: "Nên học kèm Unit 48 để nắm trọn reported speech (câu tường thuật).",
-    unitNumbers: [48],
+    message: "Nên học kèm Unit 48 (say/tell) và Unit 50B (câu hỏi tường thuật).",
+    unitNumbers: [48, 50],
   },
   48: {
     message: "Nên học kèm Unit 47 (reported speech 1) trước khi mở rộng các mẫu tường thuật.",
     unitNumbers: [47],
   },
   49: {
-    message: "Nên học kèm Unit 50 (questions 2) để nắm đủ các kiểu câu hỏi.",
-    unitNumbers: [50],
+    message: "Nên học kèm Unit 50 (Do you know where…?) và Unit 52 (question tags).",
+    unitNumbers: [50, 52],
   },
   50: {
-    message: "Nên học kèm Unit 49 (questions 1) để có nền tảng hỏi đáp đầy đủ.",
-    unitNumbers: [49],
+    message: "Nên học kèm Unit 49 và Units 47–48 (reported speech).",
+    unitNumbers: [49, 47, 48],
+  },
+  51: {
+    message: "Nên học kèm Units 49–50 (câu hỏi) và Unit 52 (question tags).",
+    unitNumbers: [49, 50, 52],
+  },
+  52: {
+    message: "Nên học kèm Unit 51 (trợ động từ) và Units 49–50 (câu hỏi).",
+    unitNumbers: [51, 49, 50],
   },
   53: {
     message: "Nên học kèm Unit 54 (verb + to) và Units 56–58 (khi -ing và to đổi nghĩa).",
     unitNumbers: [54, 56, 57, 58],
   },
   54: {
-    message: "Nên học kèm Unit 53 (verb + -ing) và Unit 55 (verb + object + to).",
-    unitNumbers: [53, 55],
+    message: "Nên học kèm Unit 53 (-ing) và Units 55–58 (verb + to / -ing or to).",
+    unitNumbers: [53, 55, 56, 57, 58],
+  },
+  55: {
+    message: "Nên học kèm Unit 54 (verb + to).",
+    unitNumbers: [54],
   },
   56: {
-    message: "Nên học kèm Units 57–58 để nắm trọn các cặp verb + -ing / to khác nghĩa.",
-    unitNumbers: [57, 58],
+    message: "Nên học kèm Units 53–54 và 57–58.",
+    unitNumbers: [53, 54, 57, 58],
+  },
+  57: {
+    message: "Nên học kèm Units 53–54, 56 và 58.",
+    unitNumbers: [53, 54, 56, 58],
+  },
+  58: {
+    message: "Nên học kèm Units 53–57 và Unit 59 (prefer / would rather).",
+    unitNumbers: [53, 54, 55, 56, 57, 59],
+  },
+  59: {
+    message: "Nên học kèm Unit 58 (would like / like patterns).",
+    unitNumbers: [58],
+  },
+  60: {
+    message: "Nên học kèm Unit 53 (Verb + -ing).",
+    unitNumbers: [53],
   },
   61: {
     message: "Nên học kèm Unit 18 (used to do) để phân biệt used to và be/get used to.",
     unitNumbers: [18],
+  },
+  62: {
+    message: "Nên học kèm Unit 60 (preposition + -ing).",
+    unitNumbers: [60],
   },
   69: {
     message: "Nên học kèm Unit 70 và Unit 71 để nắm trọn countable / uncountable và a/an / some.",
@@ -201,8 +246,8 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
     unitNumbers: [76, 78],
   },
   78: {
-    message: "Nên học kèm Unit 77 (names with/without the 1).",
-    unitNumbers: [77],
+    message: "Nên học kèm Unit 76 và Unit 77.",
+    unitNumbers: [76, 77],
   },
   81: {
     message: "Nên học kèm Unit 80 (noun + noun) để đối chiếu 's / of với cụm danh từ.",
@@ -223,6 +268,18 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
   86: {
     message: "Nên học kèm Unit 85 (some and any) trước khi học no/none/any.",
     unitNumbers: [85],
+  },
+  88: {
+    message: "Nên học kèm Unit 90 (all / every / whole).",
+    unitNumbers: [90],
+  },
+  90: {
+    message: "Nên học kèm Unit 88 (all of) và Unit 91 (each/every).",
+    unitNumbers: [88, 91],
+  },
+  91: {
+    message: "Nên học kèm Unit 90 (all / every / whole).",
+    unitNumbers: [90],
   },
   92: {
     message: "Nên học kèm Units 93–96 để nắm trọn relative clauses.",
@@ -248,6 +305,14 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
     message: "Nên học kèm Unit 92 (relative) và Unit 98 (-ing/-ed adjectives) để phân biệt mệnh đề rút gọn và tính từ.",
     unitNumbers: [92, 98],
   },
+  98: {
+    message: "Nên học kèm Unit 97 (mệnh đề -ing/-ed).",
+    unitNumbers: [97],
+  },
+  99: {
+    message: "Nên học kèm Units 100–101 (adjectives and adverbs).",
+    unitNumbers: [100, 101],
+  },
   100: {
     message: "Nên học kèm Unit 101 (adjectives and adverbs 2).",
     unitNumbers: [101],
@@ -255,6 +320,18 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
   101: {
     message: "Nên học kèm Unit 100 (adjectives and adverbs 1).",
     unitNumbers: [100],
+  },
+  102: {
+    message: "Nên học kèm Units 103–104 (enough/too và quite/pretty/rather/fairly).",
+    unitNumbers: [103, 104],
+  },
+  103: {
+    message: "Nên học kèm Units 102 và 104.",
+    unitNumbers: [102, 104],
+  },
+  104: {
+    message: "Nên học kèm Units 102–103.",
+    unitNumbers: [102, 103],
   },
   105: {
     message: "Nên học kèm Units 106–108 (comparative 2–3 và superlative).",
@@ -280,17 +357,77 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
     message: "Nên học kèm Unit 109 (word order 1).",
     unitNumbers: [109],
   },
+  111: {
+    message: "Nên học kèm Unit 110 (word order 2).",
+    unitNumbers: [110],
+  },
+  112: {
+    message: "Nên học kèm Unit 113 (although / though / even though).",
+    unitNumbers: [113],
+  },
+  113: {
+    message: "Nên học kèm Units 114–115 và câu điều kiện.",
+    unitNumbers: [114, 115],
+  },
+  114: {
+    message: "Nên học kèm Units 113, 115 và if.",
+    unitNumbers: [113, 115],
+  },
+  115: {
+    message: "Nên học kèm Units 113–114 và if.",
+    unitNumbers: [113, 114],
+  },
+  116: {
+    message: "Nên học kèm Unit 117 (like and as).",
+    unitNumbers: [117],
+  },
   117: {
     message: "Nên học kèm Unit 116 (as) và Unit 118 (like / as if) để phân biệt like và as.",
     unitNumbers: [116, 118],
+  },
+  118: {
+    message: "Nên học kèm Unit 117 (like and as).",
+    unitNumbers: [117],
+  },
+  119: {
+    message: "Nên học kèm for/while và Unit 12 (for and since).",
+    unitNumbers: [12],
+  },
+  120: {
+    message: "Nên học kèm Unit 128 (by khác nghĩa).",
+    unitNumbers: [128],
   },
   121: {
     message: "Nên học kèm Unit 122 (on time / in time · at the end / in the end).",
     unitNumbers: [122],
   },
+  122: {
+    message: "Nên học kèm Unit 121 (at/on/in — time).",
+    unitNumbers: [121],
+  },
   123: {
     message: "Nên học kèm Units 124–125 để nắm trọn in/at/on (position).",
     unitNumbers: [124, 125],
+  },
+  124: {
+    message: "Nên học kèm Units 123, 125.",
+    unitNumbers: [123, 125],
+  },
+  125: {
+    message: "Nên học kèm Units 123–124, 126.",
+    unitNumbers: [123, 124, 126],
+  },
+  126: {
+    message: "Nên học kèm Units 123–125.",
+    unitNumbers: [123, 124, 125],
+  },
+  127: {
+    message: "Nên học kèm Units 121, 123–125.",
+    unitNumbers: [121, 123, 124, 125],
+  },
+  128: {
+    message: "Nên học kèm Unit 120 (by and until / by the time).",
+    unitNumbers: [120],
   },
 };
 

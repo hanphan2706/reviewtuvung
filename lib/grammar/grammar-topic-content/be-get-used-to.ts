@@ -12,9 +12,9 @@ export const U61_BE_GET_USED_TO_TOPIC: GrammarTopicDetail = {
   kindLabel: "Verb pattern",
   sourceBook: "English Grammar in Use · Intermediate · Unit 61",
   sourceNote:
-    "be/get used to something / doing something = đã quen / dần quen. Phân biệt I am used to doing ≠ I used to do (Unit 18). Nên học kèm Unit 18; to + -ing ➜ Unit 60C.",
+    "be used to = đã quen; get used to = dần quen; sau to dùng -ing hoặc danh từ. Phân biệt I am used to doing ≠ I used to do (Unit 18). Nên học kèm Unit 18.",
   intro:
-    "Unit này giúp bạn nắm Be/Get Used To …: Be/get used to something / doing something = đã quen / dần quen. Phân biệt I am used to doing ≠ I used to do (Unit 18). Nên học kèm Unit 18 để khỏi nhầm hai cấu trúc.",
+    "Bài này giúp bạn nói đã quen hoặc đang dần quen với việc gì bằng be/get used to + -ing (hoặc danh từ), và tránh nhầm với I used to do — thói quen cũ không còn nữa ở Unit 18. Nên học kèm Unit 18 để khỏi nhầm hai cấu trúc.",
   structure: {
     affirmative:
       "S + am/is/are used to + N / V-ing | S + get/got used to + N / V-ing",
@@ -35,10 +35,10 @@ export const U61_BE_GET_USED_TO_TOPIC: GrammarTopicDetail = {
     {
       before: "Sau used to (nghĩa này) dùng ",
       strong: "-ing hoặc danh từ",
-      after: " — không nguyên thể: I'm used to living alone (không: to live).",
+      after: " — KHÔNG nguyên thể: I'm used to living alone (không: to live).",
     },
     {
-      before: "to là ",
+      before: "to ở đây là ",
       strong: "giới từ",
       after: " (như in/for/about): We're not used to the noise / to living here.",
     },
@@ -56,27 +56,27 @@ export const U61_BE_GET_USED_TO_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "She wasn't used to driving on the left.",
-      vietnamese: "Cô ấy chưa quen lái bên trái. (người Mỹ thường lái bên phải)",
+      vietnamese: "Chưa quen lái bên trái — be used to + -ing.",
     },
     {
       english: "She got used to driving on the left.",
-      vietnamese: "Cô ấy đã dần quen lái bên trái.",
+      vietnamese: "Đã dần quen — get used to + -ing.",
     },
     {
       english: "He's used to living alone.",
-      vietnamese: "Anh ấy đã quen sống một mình. (không: used to live alone ở nghĩa này)",
+      vietnamese: "Đã quen sống một mình — không dùng to live ở nghĩa này.",
     },
     {
       english: "I expect we'll get used to the noise.",
-      vietnamese: "Tôi nghĩ chúng tôi sẽ dần quen với tiếng ồn.",
+      vietnamese: "Sẽ dần quen với tiếng ồn — get used to + danh từ.",
     },
     {
       english: "She isn't used to getting up so early.",
-      vietnamese: "Cô ấy chưa quen dậy sớm thế.",
+      vietnamese: "Chưa quen dậy sớm thế.",
     },
     {
       english: "I used to drive to work every day, but these days I usually go by bike.",
-      vietnamese: "Trước đây tôi thường lái xe đi làm; giờ thường đi xe đạp. (Unit 18)",
+      vietnamese: "Thói quen cũ không còn — I used to do (Unit 18), khác be used to.",
     },
   ],
   practice: {

@@ -12,9 +12,9 @@ export const U62_VERB_PREPOSITION_ING_TOPIC: GrammarTopicDetail = {
   kindLabel: "Verb pattern",
   sourceBook: "English Grammar in Use · Intermediate · Unit 62",
   sourceNote:
-    "succeed in -ing, insist on -ing, look forward to -ing…; accuse of, prevent from, thank for… Nên học kèm Unit 60 (preposition + -ing).",
+    "succeed in / insist on / look forward to + -ing; accuse of, prevent from, thank for + object + -ing. Nên học kèm Unit 60.",
   intro:
-    "Trong unit này bạn sẽ nắm: succeed in -ing, insist on -ing, look forward to -ing…; accuse of, prevent from, thank for…. Nên học kèm Unit 60.",
+    "Bài này giúp bạn nhớ các cặp động từ + giới từ thường gặp (succeed in, insist on, look forward to…) và mẫu verb + object + prep + -ing như accuse of, prevent from, thank for. Nên học kèm Unit 60.",
   structure: {
     affirmative:
       "V + prep + V-ing | V + object + prep + V-ing (accuse of, prevent from…)",
@@ -50,33 +50,33 @@ export const U62_VERB_PREPOSITION_ING_TOPIC: GrammarTopicDetail = {
     {
       before: "apologise ",
       strong: "to somebody for …",
-      after: " (không: apologise them): I apologised to them for keeping them waiting.",
+      after: " (KHÔNG: apologise them): I apologised to them for keeping them waiting.",
     },
   ],
   examples: [
     {
       english: "We talked about going to South America.",
-      vietnamese: "Chúng tôi nói về việc đi Nam Mỹ.",
+      vietnamese: "talk about + -ing — nói về việc làm gì.",
     },
     {
       english: "They insisted on paying for the meal.",
-      vietnamese: "Họ nhất định trả tiền bữa ăn.",
+      vietnamese: "insist on + -ing — nhất định làm gì.",
     },
     {
       english: "Are you looking forward to going away?",
-      vietnamese: "Bạn có mong được đi chơi không?",
+      vietnamese: "look forward to + -ing — mong chờ.",
     },
     {
       english: "What prevented you from coming to see us?",
-      vietnamese: "Điều gì đã ngăn bạn đến thăm chúng tôi?",
+      vietnamese: "prevent + object + from + -ing.",
     },
     {
       english: "He accused me of not telling the truth.",
-      vietnamese: "Anh ấy buộc tội tôi không nói sự thật.",
+      vietnamese: "accuse + object + of + -ing / not -ing.",
     },
     {
       english: "I apologised to them for keeping them waiting.",
-      vietnamese: "Tôi xin lỗi họ vì đã để họ phải chờ. (không: apologised them)",
+      vietnamese: "apologise to somebody for … — không quên to trước người.",
     },
   ],
   practice: {

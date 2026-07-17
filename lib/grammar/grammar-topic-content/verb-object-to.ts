@@ -12,9 +12,9 @@ export const U55_VERB_OBJECT_TO_TOPIC: GrammarTopicDetail = {
   kindLabel: "Verb pattern",
   sourceBook: "English Grammar in Use · Intermediate · Unit 55",
   sourceNote:
-    "want/expect/ask/help/would like + (object) + to …; tell/advise/remind/warn… + object + to …; make/let (không to); be made to. Nên học kèm Unit 54.",
+    "Muốn/mong/nhờ ai đó làm gì: want/expect/ask… + (object) + to …; tell/advise/warn… + object + to …; make/let không dùng to; bị động be made to. Nên học kèm Unit 54.",
   intro:
-    "Unit này giúp bạn nắm Verb (+ Object) + to …: Want/expect/ask/help/would like + (object) + to …; tell/advise/remind/warn… + object + to …; make/let (không to); be made to. Nên học kèm Unit 54.",
+    "Bài này giúp bạn nhờ hoặc bảo ai đó làm gì bằng mẫu verb (+ object) + to …, phân biệt nhóm tell/advise/warn với make/let (không có to), và nhận ra dạng bị động be made to / be allowed to. Nên học kèm Unit 54.",
   structure: {
     affirmative:
       "want/expect/ask… + (O) + to + V | tell/advise/warn… + O + to + V | make/let + O + V | be made to + V",
@@ -23,64 +23,64 @@ export const U55_VERB_OBJECT_TO_TOPIC: GrammarTopicDetail = {
   },
   usagePoints: [
     {
-      before: "want / expect / would like + ",
+      before: "want / expect / would like có thể theo ",
       strong: "(object) + to …",
-      after: ": He doesn't want to know. / He doesn't want anybody to know.",
+      after: ": He doesn't want anybody to know. Would you like me to go now?",
     },
     {
-      before: "Không nói ",
+      before: "KHÔNG nói ",
       strong: "want that …",
-      after: ": Do you want me to come with you?",
+      after: ": Do you want me to come with you? (không: want that I come…)",
     },
     {
-      before: "tell / advise / remind / warn / persuade… + ",
+      before: "tell / advise / remind / warn / persuade… luôn cần ",
       strong: "object + to …",
-      after: ": I wouldn't advise you to stay there. She warned me not to touch it.",
+      after: ": Can you remind me to call Sam? She warned me not to touch it.",
     },
     {
       before: "help: ",
       strong: "help (somebody) (to) do",
-      after: " — có hoặc không to: Can you help me (to) move this table?",
+      after: " — to có hoặc không đều được: Can you help me (to) move this table?",
     },
     {
       before: "make / let + ",
       strong: "somebody + V",
-      after: " (không to): Hot weather makes me feel tired. Let me carry your bag.",
+      after: " (KHÔNG dùng to): Hot weather makes me feel tired. Let me carry your bag.",
     },
     {
       before: "Bị động: ",
       strong: "be made to / be allowed to",
-      after: ": We were made to wait for two hours. Are we allowed to park here?",
+      after: " (có to): We were made to wait for two hours. Are we allowed to park here?",
     },
   ],
   examples: [
     {
       english: "Would you like me to go now?",
-      vietnamese: "Bạn muốn tôi đi ngay bây giờ không?",
+      vietnamese: "Hỏi xem người kia có muốn mình đi ngay không — object + to …",
     },
     {
       english: "Do you want me to come with you? (not want that I come)",
-      vietnamese: "Bạn có muốn tôi đi cùng không? (không: want that…)",
+      vietnamese: "Dùng want + object + to, không dùng want that…",
     },
     {
       english: "Can you remind me to call Sam tomorrow?",
-      vietnamese: "Bạn nhắc tôi gọi Sam ngày mai nhé?",
+      vietnamese: "remind luôn kèm object trước to …",
     },
     {
       english: "Joe warned me not to touch the switch.",
-      vietnamese: "Joe cảnh báo tôi đừng chạm vào công tắc.",
+      vietnamese: "Cảnh báo đừng làm gì: warn + object + not to …",
     },
     {
       english: "Her parents wouldn't let her go out alone.",
-      vietnamese: "Bố mẹ cô ấy không cho cô ấy ra ngoài một mình. (không: to go)",
+      vietnamese: "let + object + V nguyên mẫu, không có to.",
     },
     {
       english: "We were made to wait for two hours.",
-      vietnamese: "Chúng tôi bị bắt phải chờ hai giờ. (passive + to)",
+      vietnamese: "Bị động của make phải dùng be made to + V.",
     },
     {
       english: "Jane suggested that I ask you for advice. (not suggested me to ask)",
-      vietnamese: "Jane đề nghị tôi hỏi bạn lời khuyên. (không: suggested me to…)",
+      vietnamese: "suggest không theo mẫu object + to; dùng that-clause.",
     },
   ],
   practice: {
