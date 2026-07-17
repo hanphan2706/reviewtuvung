@@ -260,6 +260,18 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
     message: "Nên học kèm Units 106–108 (comparative 2–3 và superlative).",
     unitNumbers: [106, 107, 108],
   },
+  106: {
+    message: "Nên học kèm Unit 105 và Units 107–108 để nắm trọn comparative và superlative.",
+    unitNumbers: [105, 107, 108],
+  },
+  107: {
+    message: "Nên học kèm Units 105–106 và Unit 108 để nắm trọn comparative và superlative.",
+    unitNumbers: [105, 106, 108],
+  },
+  108: {
+    message: "Nên học kèm Units 105–107 trước khi học superlative.",
+    unitNumbers: [105, 106, 107],
+  },
   109: {
     message: "Nên học kèm Unit 110 (word order 2 — vị trí trạng từ).",
     unitNumbers: [110],

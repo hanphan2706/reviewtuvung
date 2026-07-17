@@ -12,74 +12,75 @@ export const U106_COMPARATIVE_2_TOPIC: GrammarTopicDetail = {
   kindLabel: "Comparative",
   sourceBook: "English Grammar in Use · Intermediate · Unit 106",
   sourceNote:
-    "much/a lot/far/a bit + comparative; any/no + comparative; better and better; the … the …; older/elder. Nên học kèm Units 105, 107–108.",
+    "Nhấn mạnh mức chênh lệch bằng much, a lot, far, slightly; any và no với dạng so sánh hơn; better and better; the … the …; older và elder. Nên học kèm Unit 105 và Units 107–108.",
   intro:
-    "Trong unit này bạn sẽ nắm: much/a lot/far/a bit + comparative; any/no + comparative; better and better; the … the …; older/elder. Nên học kèm Units 105, 107–108.",
+    "Bài này giúp bạn nhấn mạnh mức độ chênh lệch bằng much, a lot, far, slightly, dùng any và no với dạng so sánh hơn, nói sự thay đổi dần dần, và dùng cấu trúc the … the …. Nên học kèm Unit 105 và Units 107–108.",
   structure: {
     affirmative:
-      "much/a lot/far/a bit + comparative | better and better | the + comparative, the + comparative | my elder/older sister",
-    negative: "not + any + comparative | no + comparative (+ than)",
+      "much / a lot / far / a bit / slightly + dạng so sánh hơn | better and better / more and more … | the + dạng so sánh hơn, the + dạng so sánh hơn | my elder/older sister",
+    negative:
+      "not … any + dạng so sánh hơn = không … thêm nữa | no + dạng so sánh hơn = không hơn",
   },
   usagePoints: [
     {
-      before: "Cường độ: ",
-      strong: "much / a lot / far / a bit / slightly + comparative",
-      after: ": much better, a bit more slowly, far more serious.",
+      before: "Để nhấn mạnh mức chênh lệch, đặt ",
+      strong: "much / a lot / far / a bit / slightly",
+      after: " trước dạng so sánh hơn: much better, a bit more slowly, far more serious.",
     },
     {
-      before: "any / no + comparative: ",
+      before: "Any và no đi với dạng so sánh hơn: ",
       strong: "any longer / no bigger",
       after: ": I'm not waiting any longer. It's no bigger than ours.",
     },
     {
-      before: "Lặp: ",
+      before: "Cấu trúc ",
       strong: "better and better / more and more …",
-      after: " = thay đổi liên tục: It's getting more and more difficult.",
+      after: " diễn tả sự thay đổi liên tục: It's getting more and more difficult.",
     },
     {
-      before: "",
+      before: "Cấu trúc ",
       strong: "the … the …",
-      after: ": The sooner the better. The younger you are, the easier it is to learn.",
+      after: " nối hai mức độ tương ứng: The sooner the better. The younger you are, the easier it is to learn.",
     },
     {
-      before: "old → ",
+      before: "Với tuổi tác thường dùng ",
       strong: "older",
-      after: " (thường). elder chỉ với người trong gia đình: my elder sister.",
+      after: "; elder chỉ dùng với người trong gia đình: my elder sister.",
     },
     {
-      before: "Không nói ",
-      strong: "somebody is elder than …",
-      after: ": My sister is older than me. (không: elder than me)",
+      before: "Khi so sánh tuổi, ",
+      strong: "KHÔNG",
+      after: " dùng elder than; hãy nói: My sister is older than me.",
     },
   ],
   examples: [
     {
       english: "I feel much better now.",
-      vietnamese: "Bây giờ tôi thấy khỏe hơn nhiều.",
+      vietnamese: "Much nhấn mạnh mức khỏe hơn rõ rệt so với trước.",
     },
     {
       english: "I'm not waiting any longer.",
-      vietnamese: "Tôi không đợi thêm nữa.",
+      vietnamese: "Any longer nghĩa là thêm nữa, thường đi với phủ định.",
     },
     {
       english: "It's getting bigger and bigger.",
-      vietnamese: "Nó ngày càng to hơn.",
+      vietnamese: "Cấu trúc lặp diễn tả sự thay đổi dần theo thời gian.",
     },
     {
       english: "The sooner we leave, the earlier we'll arrive.",
-      vietnamese: "Càng đi sớm, càng đến sớm.",
+      vietnamese: "Càng đi sớm thì càng đến sớm.",
     },
     {
       english: "The more I thought about the plan, the less I liked it.",
-      vietnamese: "Càng nghĩ về kế hoạch, tôi càng ít thích nó.",
+      vietnamese: "Hai vế the … the … thể hiện mối quan hệ tương ứng.",
     },
     {
       english: "My elder sister is a TV producer.",
-      vietnamese: "Chị tôi là nhà sản xuất TV. (cũng: older sister)",
+      vietnamese: "Elder chỉ dùng với người thân trong gia đình.",
     },
     {
       english: "My sister is older than me.",
-      vietnamese: "Chị tôi lớn tuổi hơn tôi. (không: elder than me)",
+      vietnamese: "Khi so sánh tuổi tác thì dùng older than, không dùng elder than.",
     },
   ],
   practice: {

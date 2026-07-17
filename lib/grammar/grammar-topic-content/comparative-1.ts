@@ -12,73 +12,75 @@ export const U105_COMPARATIVE_1_TOPIC: GrammarTopicDetail = {
   kindLabel: "Comparative",
   sourceBook: "English Grammar in Use · Intermediate · Unit 105",
   sourceNote:
-    "Comparative: -er / more … ; irregular better/worse/further. Nên học kèm Units 106–108.",
+    "Dạng so sánh hơn với -er hoặc more; bất quy tắc better, worse, further; than khi so sánh hai đối tượng. Nên học kèm Units 106–108.",
   intro:
-    "Trong unit này bạn sẽ nắm: Comparative: -er / more … ; irregular better/worse/further. Nên học kèm Units 106–108.",
+    "Bài này giúp bạn lập dạng so sánh hơn bằng -er hoặc more, nắm các dạng bất quy tắc better, worse, further, và cách dùng than khi so sánh hai đối tượng. Nên học kèm Units 106–108.",
   structure: {
-    affirmative: "adj/adv + -er (+ than) | more + adj/adv (+ than) | better / worse / further",
-    negative: "not + comparative | less + adj (xem Unit 107)",
+    affirmative:
+      "Tính từ/trạng từ ngắn + -er (+ than) | more + tính từ/trạng từ (+ than) | better / worse / further (farther)",
+    negative:
+      "Không dùng more với tính từ đã thêm -er | Muốn diễn tả mức thấp hơn, dùng less + tính từ (xem Unit 107)",
   },
   usagePoints: [
     {
-      before: "Từ ngắn (1 âm tiết) → ",
+      before: "Tính từ hoặc trạng từ một âm tiết thường thêm ",
       strong: "-er",
-      after: ": cheap → cheaper, fast → faster, thin → thinner.",
+      after: ": cheaper, faster, thinner.",
     },
     {
-      before: "Từ hai âm tiết tận cùng ",
-      strong: "-y → -ier",
-      after: ": easy → easier, early → earlier, lucky → luckier.",
+      before: "Tính từ hai âm tiết tận cùng ",
+      strong: "-y",
+      after: " đổi thành -ier: easier, earlier, luckier.",
     },
     {
-      before: "Từ dài hơn → ",
+      before: "Tính từ hoặc trạng từ dài hơn dùng ",
       strong: "more …",
       after: ": more serious, more expensive, more comfortable.",
     },
     {
       before: "Trạng từ tận cùng ",
-      strong: "-ly → more …",
-      after: ": more slowly, more carefully, more easily.",
+      strong: "-ly",
+      after: " thường dùng more: more slowly, more carefully, more easily.",
     },
     {
       before: "Bất quy tắc: ",
       strong: "better / worse / further (farther)",
-      after: ". further cũng = additional: any further news.",
+      after: ". Further còn nghĩa thêm nữa: any further news.",
     },
     {
-      before: "clever / quiet / simple…: ",
+      before: "Một số tính từ như clever, quiet, simple có thể dùng ",
       strong: "-er hoặc more …",
-      after: " đều được: quieter / more quiet.",
+      after: " đều được: quieter hoặc more quiet.",
     },
   ],
   examples: [
     {
       english: "Let's drive. It's cheaper than going by train.",
-      vietnamese: "Lái xe đi. Rẻ hơn đi tàu.",
+      vietnamese: "So sánh hai cách đi: lái xe rẻ hơn đi tàu.",
     },
     {
       english: "Going by train is more expensive than driving.",
-      vietnamese: "Đi tàu đắt hơn lái xe.",
+      vietnamese: "Tính từ dài dùng more expensive thay vì -er.",
     },
     {
       english: "The exam was easier than I expected.",
-      vietnamese: "Bài thi dễ hơn tôi nghĩ.",
+      vietnamese: "Bài thi dễ hơn so với dự đoán của tôi.",
     },
     {
       english: "Can you walk a bit more slowly?",
-      vietnamese: "Bạn đi chậm lại một chút được không?",
+      vietnamese: "Trạng từ slowly dùng more để so sánh mức độ.",
     },
     {
       english: "I'd like to have a more reliable car.",
-      vietnamese: "Tôi muốn có chiếc xe đáng tin cậy hơn.",
+      vietnamese: "Muốn chiếc xe đáng tin cậy hơn chiếc hiện tại.",
     },
     {
       english: "He did badly in the exam — worse than expected.",
-      vietnamese: "Anh ấy làm bài kém — tệ hơn dự kiến.",
+      vietnamese: "Worse là dạng bất quy tắc của bad.",
     },
     {
       english: "Let me know if you hear any further news.",
-      vietnamese: "Báo tôi nếu bạn nghe thêm tin gì. (further = additional)",
+      vietnamese: "Further ở đây nghĩa là thêm nữa, không phải so sánh khoảng cách.",
     },
   ],
   practice: {

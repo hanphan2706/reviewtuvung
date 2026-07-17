@@ -12,78 +12,80 @@ export const U108_SUPERLATIVE_TOPIC: GrammarTopicDetail = {
   kindLabel: "Comparative",
   sourceBook: "English Grammar in Use · Intermediate · Unit 108",
   sourceNote:
-    "the …-est / the most …; best/worst/furthest; oldest/eldest; in vs of; present perfect after superlative. Nên học kèm Units 105–107.",
+    "Dạng so sánh nhất the …-est hoặc the most …; best, worst, furthest; oldest và eldest; in và of; present perfect sau superlative. Nên học kèm Units 105–107.",
   intro:
-    "Trong unit này bạn sẽ nắm: the …-est / the most …; best/worst/furthest; oldest/eldest; in vs of; present perfect after superlative. Nên học kèm Units 105–107.",
+    "Bài này giúp bạn lập dạng so sánh nhất với the …-est hoặc the most …, phân biệt oldest và eldest, chọn in hay of sau superlative, và dùng present perfect khi hỏi về kinh nghiệm cá nhân. Nên học kèm Units 105–107.",
   structure: {
-    affirmative: "the + adj-est | the most + adj | the best/worst | one of the + superlative + plural",
-    negative: "not the + superlative | (so sánh bằng comparative thay thế)",
+    affirmative:
+      "the + tính từ-est | the most + tính từ | the best / the worst | one of the + dạng so sánh nhất + danh từ số nhiều",
+    negative:
+      "Không bỏ the trước dạng so sánh nhất | Không dùng eldest cho đồ vật hoặc khi so sánh ngoài gia đình",
   },
   usagePoints: [
     {
-      before: "Từ ngắn → ",
+      before: "Tính từ ngắn thường thêm ",
       strong: "the …-est",
       after: ": the longest, the hottest, the easiest.",
     },
     {
-      before: "Từ dài → ",
+      before: "Tính từ dài dùng ",
       strong: "the most …",
       after: ": the most famous, the most difficult.",
     },
     {
       before: "Bất quy tắc: ",
-      strong: "best / worst / furthest",
+      strong: "the best / the worst / the furthest",
       after: ".",
     },
     {
-      before: "Địa điểm/nhóm → ",
-      strong: "in",
-      after: ": the longest river in the world (không: of the world).",
+      before: "Sau superlative, nói về ",
+      strong: "địa điểm hoặc nhóm",
+      after: " thì dùng in: the longest river in the world (không nói of the world).",
     },
     {
-      before: "Khoảng thời gian → ",
-      strong: "of",
-      after: ": the hottest day of the year.",
+      before: "Sau superlative, nói về ",
+      strong: "khoảng thời gian",
+      after: " thì dùng of: the hottest day of the year.",
     },
     {
-      before: "Thường dùng ",
+      before: "Sau superlative thường dùng ",
       strong: "present perfect",
-      after: " sau superlative: What's the best movie you've ever seen?",
+      after: " khi hỏi về kinh nghiệm: What's the best movie you've ever seen?",
     },
     {
-      before: "eldest: ",
-      strong: "chỉ người trong gia đình",
-      after: ": their eldest son. That church is the oldest building (không eldest).",
+      before: "Eldest chỉ dùng với ",
+      strong: "người trong gia đình",
+      after: ": their eldest son. That church is the oldest building (không dùng eldest).",
     },
   ],
   examples: [
     {
       english: "What is the longest river in the world?",
-      vietnamese: "Sông nào dài nhất thế giới?",
+      vietnamese: "In the world chỉ phạm vi so sánh, không dùng of.",
     },
     {
       english: "Yesterday was the hottest day of the year.",
-      vietnamese: "Hôm qua là ngày nóng nhất trong năm.",
+      vietnamese: "Of the year chỉ khoảng thời gian cụ thể.",
     },
     {
       english: "She's one of the nicest people I know.",
-      vietnamese: "Cô ấy là một trong những người dễ thương nhất tôi biết.",
+      vietnamese: "One of the … nói thuộc nhóm cao nhất, không nhất thiết là duy nhất.",
     },
     {
       english: "This hotel is the cheapest in town.",
-      vietnamese: "Khách sạn này rẻ nhất trong thị trấn.",
+      vietnamese: "In town chỉ phạm vi địa điểm sau superlative.",
     },
     {
       english: "Their eldest son is 13 years old.",
-      vietnamese: "Con trai cả của họ 13 tuổi. (cũng: oldest)",
+      vietnamese: "Eldest chỉ dùng với con cái trong gia đình.",
     },
     {
       english: "What's the most important decision you've ever made?",
-      vietnamese: "Quyết định quan trọng nhất bạn từng đưa ra là gì?",
+      vietnamese: "Present perfect sau superlative khi hỏi về kinh nghiệm cá nhân.",
     },
     {
       english: "Who is the youngest student in the class?",
-      vietnamese: "Ai là học sinh trẻ nhất trong lớp? (in, không of)",
+      vietnamese: "In the class chỉ nhóm so sánh, không dùng of.",
     },
   ],
   practice: {
