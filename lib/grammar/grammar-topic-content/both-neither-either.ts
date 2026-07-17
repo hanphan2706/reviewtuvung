@@ -18,12 +18,22 @@ export const U89_BOTH_NEITHER_EITHER_TOPIC: GrammarTopicDetail = {
     affirmative:
       "both/neither/either (+ N) | both/neither/either of + the/these/us… | both…and / neither…nor / either…or",
     negative:
-      "KHÔNG nói the both | KHÔNG nói both us | both/neither/either chỉ dùng cho hai",
+      "KHÔNG nói the both | KHÔNG nói both us (phải both of us) | KHÔNG dùng both/neither/either khi có hơn hai lựa chọn",
   },
   usagePoints: [
     {
-      before: "Khi có đúng hai người hoặc vật: ",
-      strong: "both (= cả hai) / neither (= không bên nào) / either (= một trong hai)",
+      before: "both = ",
+      strong: "cả hai",
+      after: ".",
+    },
+    {
+      before: "neither = ",
+      strong: "không bên nào",
+      after: ".",
+    },
+    {
+      before: "either = ",
+      strong: "một trong hai",
       after: ".",
     },
     {

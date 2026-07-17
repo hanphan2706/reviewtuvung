@@ -19,13 +19,18 @@ export const U91_EACH_AND_EVERY_TOPIC: GrammarTopicDetail = {
     affirmative:
       "each/every + N | each of + the/them… | every one (of …) | N + each | … each + V",
     negative:
-      "KHÔNG nói every of | Tần suất thường dùng every day, không each day | Đúng hai đối tượng dùng each",
+      "KHÔNG nói every of (phải every one of) | Tần suất: KHÔNG dùng each day → dùng every day | Đúng hai đối tượng: dùng each, KHÔNG every",
   },
   usagePoints: [
     {
       before: "each nhấn mạnh ",
       strong: "từng cá thể riêng lẻ",
-      after: " (thường là nhóm nhỏ); every nhìn tất cả thành một nhóm.",
+      after: " (thường là nhóm nhỏ).",
+    },
+    {
+      before: "every nhìn ",
+      strong: "tất cả thành một nhóm",
+      after: ".",
     },
     {
       before: "Khi có đúng hai người hoặc vật, dùng ",
@@ -38,7 +43,7 @@ export const U91_EACH_AND_EVERY_TOPIC: GrammarTopicDetail = {
       after: " (thường KHÔNG dùng each day).",
     },
     {
-      before: "Dùng each of the/them… nhưng phải nói ",
+      before: "Dùng each of the/them… nhưng với every phải nói ",
       strong: "every one of …",
       after: " (KHÔNG nói: every of).",
     },
@@ -48,9 +53,14 @@ export const U91_EACH_AND_EVERY_TOPIC: GrammarTopicDetail = {
       after: "; were each given…",
     },
     {
-      before: "everyone (một từ) = everybody; ",
-      strong: "every one",
-      after: " (hai từ) = từng cái hoặc từng người trong một nhóm.",
+      before: "everyone (một từ) = ",
+      strong: "everybody",
+      after: ".",
+    },
+    {
+      before: "every one (hai từ) = ",
+      strong: "từng cái / từng người",
+      after: " trong một nhóm.",
     },
   ],
   examples: [

@@ -18,13 +18,18 @@ export const U87_MUCH_MANY_LITTLE_FEW_A_LOT_PLENTY_TOPIC: GrammarTopicDetail = {
     affirmative:
       "much/little + danh từ không đếm được | many/few + danh từ số nhiều | a lot of / plenty of + cả hai loại | a little / a few",
     negative:
-      "Trong câu khẳng định thông thường, ưu tiên a lot of thay vì much | KHÔNG nói only little / only few",
+      "Câu khẳng định thông thường: KHÔNG dùng much → dùng a lot of | KHÔNG nói only little / only few → only a little / a few",
   },
   usagePoints: [
     {
       before: "much / little đi với ",
       strong: "danh từ không đếm được",
-      after: "; many / few đi với danh từ số nhiều.",
+      after: ".",
+    },
+    {
+      before: "many / few đi với ",
+      strong: "danh từ số nhiều",
+      after: ".",
     },
     {
       before: "a lot of / plenty of dùng với ",
@@ -39,7 +44,12 @@ export const U87_MUCH_MANY_LITTLE_FEW_A_LOT_PLENTY_TOPIC: GrammarTopicDetail = {
     {
       before: "little / few = ",
       strong: "quá ít, gần như không có",
-      after: "; a little / a few = có một ít, một vài.",
+      after: ".",
+    },
+    {
+      before: "a little / a few = ",
+      strong: "có một ít / một vài",
+      after: ".",
     },
     {
       before: "Sau only phải dùng ",

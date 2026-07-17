@@ -19,7 +19,7 @@ export const U88_ALL_ALL_OF_MOST_MOST_OF_NO_NONE_OF_ETC_TOPIC: GrammarTopicDetai
     affirmative:
       "Nói chung: all/most/some + N | Nhóm cụ thể: all/most/some of + the/my/these… | Đại từ: … of it/us/them",
     negative:
-      "KHÔNG nói some of people | KHÔNG nói all us | KHÔNG nói the half",
+      "KHÔNG nói some of people (phải some people hoặc some of the people) | KHÔNG nói all us (phải all of us) | KHÔNG nói the half",
   },
   usagePoints: [
     {
@@ -33,9 +33,9 @@ export const U88_ALL_ALL_OF_MOST_MOST_OF_NO_NONE_OF_ETC_TOPIC: GrammarTopicDetai
       after: " — có of trước the/these/my…",
     },
     {
-      before: "Với all / half, ",
+      before: "Với all / half trước the/my…, ",
       strong: "có thể bỏ of",
-      after: " trước the/my…: All (of) my friends.",
+      after: ": All (of) my friends.",
     },
     {
       before: "Trước it/us/you/them, ",

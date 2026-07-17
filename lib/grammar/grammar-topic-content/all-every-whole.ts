@@ -19,11 +19,11 @@ export const U90_ALL_EVERY_WHOLE_TOPIC: GrammarTopicDetail = {
     affirmative:
       "everybody/everything | all + N / all of us | the whole + danh từ đếm được số ít | every + khoảng thời gian | all day / the whole day",
     negative:
-      "not all were happy | KHÔNG nói the whole money | KHÔNG nói all days | KHÔNG nói all the day",
+      "KHÔNG dùng all đứng một mình thay everybody/everything | KHÔNG nói the whole money | KHÔNG nói all days | KHÔNG nói all the day",
   },
   usagePoints: [
     {
-      before: "Khi everybody/everything làm chủ ngữ, dùng ",
+      before: "Khi nói mọi người / mọi thứ, dùng ",
       strong: "everybody / everything",
       after: " — KHÔNG dùng all đứng một mình.",
     },
@@ -38,14 +38,24 @@ export const U90_ALL_EVERY_WHOLE_TOPIC: GrammarTopicDetail = {
       after: " (KHÔNG nói: the whole money).",
     },
     {
-      before: "Phân biệt ",
-      strong: "every day = mỗi ngày",
-      after: " với all day / the whole day = suốt cả ngày.",
+      before: "every day = ",
+      strong: "mỗi ngày",
+      after: ".",
+    },
+    {
+      before: "all day / the whole day = ",
+      strong: "suốt cả ngày",
+      after: ".",
     },
     {
       before: "all the time = ",
       strong: "liên tục",
-      after: "; every time = mỗi lần — hai cụm KHÔNG cùng nghĩa.",
+      after: ".",
+    },
+    {
+      before: "every time = ",
+      strong: "mỗi lần",
+      after: " — KHÔNG cùng nghĩa với all the time.",
     },
     {
       before: "everybody đi với ",
