@@ -12,20 +12,20 @@ export const U65_ADJECTIVE_TO_TOPIC: GrammarTopicDetail = {
   kindLabel: "Structure",
   sourceBook: "English Grammar in Use · Intermediate · Unit 65",
   sourceNote:
-    "hard/easy/impossible to …; nice of somebody to …; sorry/surprised/glad to …; the first/last/only to …; bound/sure/likely to …",
+    "hard/easy/impossible to …; nice of somebody to …; sorry/surprised/glad to …; the first/last/only to …; bound/sure/likely to …. Nên học kèm Unit 66.",
   intro:
-    "Trong unit này bạn sẽ nắm: hard/easy/impossible to …; nice of somebody to …; sorry/surprised/glad to …; the first/last/only to …; bound/sure/likely to ….",
+    "Bài này giúp bạn dùng tính từ + to …: hard/easy/impossible to …, nice of somebody to …, sorry/glad/surprised to …, the first/last/only to …, và bound/sure/likely to …. Nên học kèm Unit 66 (afraid to / afraid of).",
   structure: {
     affirmative:
       "It is + adj + to + V | S + is + adj + to + V | It's + adj + of somebody + to + V | be + the first/last/only + to + V",
     negative:
-      "It isn't / isn't + adj + to + V | not likely to + V | không lặp tân ngữ: He is hard to understand (không: … understand him)",
+      "KHÔNG lặp tân ngữ: He is hard to understand (không: … understand him) | not likely to + V",
   },
   usagePoints: [
     {
       before: "It is hard to understand him = ",
       strong: "He is hard to understand",
-      after: " (không thêm him ở cuối).",
+      after: " (KHÔNG thêm him ở cuối).",
     },
     {
       before: "Cũng dùng với ",
@@ -33,22 +33,22 @@ export const U65_ADJECTIVE_TO_TOPIC: GrammarTopicDetail = {
       after: ": This is a difficult question to answer.",
     },
     {
-      before: "",
+      before: "Đánh giá hành động của ai đó: ",
       strong: "It's nice/kind/silly of somebody to …",
       after: ": It was nice of you to take me to the airport.",
     },
     {
-      before: "Phản ứng: ",
+      before: "Phản ứng cảm xúc: ",
       strong: "sorry / glad / surprised / disappointed + to …",
       after: ": I'm sorry to hear that. We were glad to get home.",
     },
     {
-      before: "",
+      before: "Với thứ tự / số lượng: ",
       strong: "the first / last / only / next + to …",
       after: ": I was the only one to arrive on time. You'll be the first to know.",
     },
     {
-      before: "",
+      before: "Khả năng / chắc chắn: ",
       strong: "bound / sure / (not) likely to …",
       after: ": She's bound to pass. It's not likely to rain.",
     },
@@ -56,27 +56,27 @@ export const U65_ADJECTIVE_TO_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Do you think this water is safe to drink?",
-      vietnamese: "Bạn nghĩ nước này uống có an toàn không? (không: to drink it)",
+      vietnamese: "Safe to drink — KHÔNG lặp it: to drink it.",
     },
     {
       english: "Nicola is interesting to talk to.",
-      vietnamese: "Nói chuyện với Nicola rất thú vị. (không: to talk to her)",
+      vietnamese: "Interesting to talk to — KHÔNG thêm her ở cuối.",
     },
     {
       english: "It was nice of you to take me to the airport.",
-      vietnamese: "Bạn thật tốt khi đưa tôi ra sân bay.",
+      vietnamese: "Nice of somebody to … đánh giá hành động của người đó.",
     },
     {
       english: "Was Julia surprised to see you?",
-      vietnamese: "Julia có ngạc nhiên khi gặp bạn không?",
+      vietnamese: "Surprised to … = ngạc nhiên khi làm/gặp gì.",
     },
     {
       english: "I was the only one to arrive on time.",
-      vietnamese: "Tôi là người duy nhất đến đúng giờ.",
+      vietnamese: "The only one to … = người duy nhất làm gì.",
     },
     {
       english: "She's bound to pass the exam.",
-      vietnamese: "Cô ấy chắc chắn sẽ đậu kỳ thi.",
+      vietnamese: "Bound to … = chắc chắn sẽ xảy ra.",
     },
   ],
   practice: {

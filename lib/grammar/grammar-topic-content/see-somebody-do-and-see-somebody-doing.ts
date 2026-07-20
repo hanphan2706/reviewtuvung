@@ -12,9 +12,9 @@ export const U67_SEE_SOMEBODY_DO_AND_SEE_SOMEBODY_DOING_TOPIC: GrammarTopicDetai
   kindLabel: "Verb pattern",
   sourceBook: "English Grammar in Use · Intermediate · Unit 67",
   sourceNote:
-    "see/hear/watch/feel + somebody do (toàn bộ hành động) vs + somebody doing (đang diễn ra giữa chừng); smell/find + -ing.",
+    "see/hear/watch/feel + somebody do (toàn bộ hành động) vs + somebody doing (đang diễn ra giữa chừng); smell/find + -ing. Nên học kèm Units 5–6.",
   intro:
-    "Unit này giúp bạn nắm See Somebody Do and See Somebody Doing: See/hear/watch/feel + somebody do (toàn bộ hành động) vs + somebody doing (đang diễn ra giữa chừng); smell/find + -ing.",
+    "Bài này giúp bạn phân biệt see/hear/watch/feel + somebody do (thấy cả hành động) với + somebody doing (thấy đang diễn ra giữa chừng), và dùng smell/find + -ing. Nên học kèm Units 5–6 (past simple / continuous).",
   structure: {
     affirmative:
       "see/hear/watch/feel + somebody + V (bare infinitive) | see/hear/find/smell + somebody + V-ing",
@@ -25,7 +25,7 @@ export const U67_SEE_SOMEBODY_DO_AND_SEE_SOMEBODY_DOING_TOPIC: GrammarTopicDetai
     {
       before: "see somebody ",
       strong: "do",
-      after: " = thấy cả hành động: I saw him jump over the wall and run away.",
+      after: " = thấy cả hành động từ đầu đến cuối: I saw him jump over the wall and run away.",
     },
     {
       before: "see somebody ",
@@ -56,27 +56,27 @@ export const U67_SEE_SOMEBODY_DO_AND_SEE_SOMEBODY_DOING_TOPIC: GrammarTopicDetai
   examples: [
     {
       english: "I saw Tom get into his car and drive off.",
-      vietnamese: "Tôi thấy Tom lên xe và lái đi. (cả chuỗi hành động)",
+      vietnamese: "See + do = thấy cả chuỗi hành động hoàn chỉnh.",
     },
     {
       english: "I saw Kate waiting for a bus.",
-      vietnamese: "Tôi thấy Kate đang chờ xe buýt.",
+      vietnamese: "See + doing = thấy đang làm giữa chừng.",
     },
     {
       english: "I didn't hear you come in.",
-      vietnamese: "Tôi không nghe thấy bạn vào.",
+      vietnamese: "Hear + do = không nghe thấy toàn bộ việc vào.",
     },
     {
       english: "I could hear it raining.",
-      vietnamese: "Tôi nghe thấy trời đang mưa.",
+      vietnamese: "Hear + -ing = nghe thấy việc đang diễn ra.",
     },
     {
       english: "Can you smell something burning?",
-      vietnamese: "Bạn có ngửi thấy mùi gì đang cháy không?",
+      vietnamese: "Smell thường theo -ing.",
     },
     {
       english: "We found him sitting under a tree eating an apple.",
-      vietnamese: "Chúng tôi tìm thấy anh ấy đang ngồi dưới gốc cây ăn táo.",
+      vietnamese: "Find somebody + -ing = tìm thấy ai đang làm gì.",
     },
   ],
   practice: {

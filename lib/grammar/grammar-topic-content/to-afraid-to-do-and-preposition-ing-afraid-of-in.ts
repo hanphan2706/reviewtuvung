@@ -12,20 +12,20 @@ export const U66_TO_AFRAID_TO_DO_AND_PREPOSITION_ING_AFRAID_OF_IN_TOPIC: Grammar
   kindLabel: "Verb pattern",
   sourceBook: "English Grammar in Use · Intermediate · Unit 66",
   sourceNote:
-    "afraid to do vs afraid of -ing; interested in -ing vs interested to hear/see/know; sorry for -ing vs sorry to …; đối chiếu want/hope to vs think of / succeed in…",
+    "afraid to do vs afraid of -ing; interested in -ing vs interested to hear/see/know; sorry for -ing vs sorry to …. Nên học kèm Units 62, 65.",
   intro:
-    "Unit này giúp bạn nắm To … (Afraid to Do) and Preposition + -ing (Afraid of -ing): Afraid to do vs afraid of -ing; interested in -ing vs interested to hear/see/know; sorry for -ing vs sorry to …; đối chiếu want/hope to vs think of / succeed in…",
+    "Bài này giúp bạn phân biệt afraid to do với afraid of -ing, interested in -ing với interested to hear/see/know, và sorry for -ing với sorry to …. Nên học kèm Unit 62 (verb + prep + -ing) và Unit 65 (adjective + to).",
   structure: {
     affirmative:
       "afraid to + V | afraid of + V-ing | interested in + V-ing | interested to + hear/see/know | sorry for + V-ing | sorry to + V",
     negative:
-      "not afraid to + V | don't be afraid to + V | not interested in + V-ing",
+      "KHÔNG nhầm afraid to với afraid of | KHÔNG nói interested to buy → interested in buying",
   },
   usagePoints: [
     {
       before: "afraid to do = ",
-      strong: "không dám/không muốn làm",
-      after: " (vì nguy hiểm): James was afraid to tell his parents.",
+      strong: "không dám / không muốn làm",
+      after: " vì nguy hiểm hoặc lo lắng: James was afraid to tell his parents.",
     },
     {
       before: "afraid of -ing = ",
@@ -33,50 +33,50 @@ export const U66_TO_AFRAID_TO_DO_AND_PREPOSITION_ING_AFRAID_OF_IN_TOPIC: Grammar
       after: ": We were afraid of falling. I'm afraid of being bitten.",
     },
     {
-      before: "interested in doing = muốn làm; ",
-      strong: "interested to hear/see/know",
-      after: " = thú vị khi biết: interested in joining; interested to hear that…",
+      before: "interested in doing = ",
+      strong: "muốn / quan tâm đến việc làm gì",
+      after: ": Nobody was interested in buying my car.",
     },
     {
-      before: "sorry for doing = xin lỗi vì đã làm; ",
-      strong: "sorry to hear / to bother",
-      after: " = tiếc khi nghe / xin phép lúc đang nói.",
+      before: "interested to hear/see/know = ",
+      strong: "thấy thú vị khi biết / thấy / nghe",
+      after: ": I was interested to hear that Tanya left her job.",
     },
     {
-      before: "want / hope / fail / promise + to …; think of / succeed in / look forward to / insist on + ",
-      strong: "-ing",
-      after: ".",
+      before: "sorry for doing = ",
+      strong: "xin lỗi vì đã làm",
+      after: "; sorry to hear / to bother = tiếc khi nghe / xin phép lúc đang nói.",
     },
     {
-      before: "prevent somebody from -ing; allow somebody ",
+      before: "want / hope / fail / promise + ",
       strong: "to …",
-      after: " — đối chiếu động từ + to vs prep + -ing.",
+      after: "; think of / succeed in / look forward to / insist on + -ing.",
     },
   ],
   examples: [
     {
       english: "People are afraid to walk here at night.",
-      vietnamese: "Người ta không dám đi bộ ở đây ban đêm.",
+      vietnamese: "Afraid to … = không dám làm vì nguy hiểm.",
     },
     {
       english: "We walked carefully. We were afraid of falling.",
-      vietnamese: "Chúng tôi đi cẩn thận vì sợ ngã. (không: afraid to fall)",
+      vietnamese: "Afraid of -ing = sợ việc xấu xảy ra (không: afraid to fall).",
     },
     {
       english: "Nobody was interested in buying my car.",
-      vietnamese: "Không ai muốn mua xe của tôi. (không: interested to buy)",
+      vietnamese: "Interested in + -ing = quan tâm đến việc làm gì.",
     },
     {
       english: "I was interested to hear that Tanya left her job.",
-      vietnamese: "Tôi thấy thú vị khi nghe Tanya nghỉ việc.",
+      vietnamese: "Interested to hear = thấy thú vị khi nghe tin.",
     },
     {
       english: "I'm sorry for shouting at you yesterday.",
-      vietnamese: "Tôi xin lỗi vì đã hét vào bạn hôm qua.",
+      vietnamese: "Sorry for + -ing = xin lỗi vì đã làm gì.",
     },
     {
       english: "I'm sorry to bother you, but I need to ask a question.",
-      vietnamese: "Xin lỗi làm phiền, nhưng tôi cần hỏi một câu.",
+      vietnamese: "Sorry to … = xin phép / tiếc khi đang làm phiền.",
     },
   ],
   practice: {

@@ -209,6 +209,22 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
     message: "Nên học kèm Unit 60 (preposition + -ing).",
     unitNumbers: [60],
   },
+  65: {
+    message: "Nên học kèm Unit 66 (afraid to / afraid of).",
+    unitNumbers: [66],
+  },
+  66: {
+    message: "Nên học kèm Unit 62 (verb + prep + -ing) và Unit 65 (adjective + to).",
+    unitNumbers: [62, 65],
+  },
+  67: {
+    message: "Nên học kèm Units 5–6 (past simple / past continuous).",
+    unitNumbers: [5, 6],
+  },
+  68: {
+    message: "Nên học kèm Unit 60 (preposition + -ing) và Units 92–97 (relative / -ing clauses).",
+    unitNumbers: [60, 92, 93, 94, 95, 96, 97],
+  },
   69: {
     message: "Nên học kèm Unit 70 và Unit 71 để nắm trọn countable / uncountable và a/an / some.",
     unitNumbers: [70, 71],

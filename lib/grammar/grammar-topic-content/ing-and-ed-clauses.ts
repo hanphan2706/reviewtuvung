@@ -12,33 +12,33 @@ export const U97_ING_AND_ED_CLAUSES_TOPIC: GrammarTopicDetail = {
   kindLabel: "Clause",
   sourceBook: "English Grammar in Use · Intermediate · Unit 97",
   sourceNote:
-    "-ing = đang làm / đặc trưng; -ed/V3 = bị động; there is/was + -ing/-ed; left = còn lại. Nên học kèm Units 92, 98.",
+    "Mệnh đề rút gọn -ing (đang làm / đặc trưng) và -ed/V3 (bị động); There is/was + -ing/-ed; left = còn lại. Nên học kèm Units 92, 98.",
   intro:
-    "-ing = đang làm / đặc trưng; -ed/V3 = bị động; there is/was + -ing/-ed; left = còn lại. Nên học kèm Units 92, 98.",
+    "Bài này giúp bạn rút gọn mệnh đề sau danh từ bằng -ing (đang làm hoặc đặc trưng) và -ed/V3 (bị động), dùng There is/was + -ing/-ed, và nhận ra left mang nghĩa còn lại. Nên học kèm Unit 92 (relative) và Unit 98 (-ing/-ed adjectives).",
   structure: {
     affirmative:
       "noun + V-ing… | noun + V3/-ed… | There is/was + noun + V-ing/V3 | There are … left",
     negative:
-      "-ing ≠ passive meaning | -ed clause ≠ 'feeling' adjective (→ Unit 98)",
+      "KHÔNG dùng -ing khi nghĩa bị động | KHÔNG nhầm mệnh đề -ed với tính từ cảm xúc ở Unit 98",
   },
   usagePoints: [
     {
-      before: "-ing clause = ",
-      strong: "đang làm / luôn làm",
+      before: "Mệnh đề -ing mô tả người/vật ",
+      strong: "đang làm hoặc luôn làm gì",
       after: ": Who is the woman talking to Tom?",
     },
     {
-      before: "-ed / V3 clause = ",
+      before: "Mệnh đề -ed / V3 mang nghĩa ",
       strong: "bị động",
       after: ": the boy injured in the accident; goods made in this factory.",
     },
     {
-      before: "Phân từ bất quy tắc: ",
+      before: "Phân từ bất quy tắc vẫn dùng được: ",
       strong: "stolen / made / built…",
-      after: " — không chỉ kết thúc -ed.",
+      after: " — không chỉ các từ tận cùng bằng -ed.",
     },
     {
-      before: "There is/was + ",
+      before: "There is/was + danh từ + ",
       strong: "-ing / -ed",
       after: ": There's nobody living in it. There was nobody injured.",
     },
@@ -56,27 +56,27 @@ export const U97_ING_AND_ED_CLAUSES_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "I was woken up by a bell ringing.",
-      vietnamese: "-ing: chuông đang reo.",
+      vietnamese: "-ing: chuông đang reo — việc chủ động đang xảy ra.",
     },
     {
       english: "The boy injured in the accident was taken to hospital.",
-      vietnamese: "-ed: cậu bé bị thương.",
+      vietnamese: "-ed: cậu bé bị thương — nghĩa bị động.",
     },
     {
       english: "George showed me some pictures painted by his father.",
-      vietnamese: "painted = được vẽ bởi.",
+      vietnamese: "Painted = được vẽ bởi — mệnh đề bị động rút gọn.",
     },
     {
       english: "The police never found the money stolen in the robbery.",
-      vietnamese: "stolen (bất quy tắc).",
+      vietnamese: "Stolen là phân từ bất quy tắc, vẫn dùng như mệnh đề -ed.",
     },
     {
       english: "There were some children swimming in the river.",
-      vietnamese: "There + -ing.",
+      vietnamese: "There + danh từ + -ing = có ai đó đang làm gì.",
     },
     {
       english: "There's nobody living in that house. There are only a few left.",
-      vietnamese: "living / left.",
+      vietnamese: "Living = đang sống; left = còn lại.",
     },
   ],
   practice: {
