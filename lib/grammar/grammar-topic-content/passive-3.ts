@@ -12,14 +12,14 @@ export const U44_PASSIVE_3_TOPIC: GrammarTopicDetail = {
   kindLabel: "Passive",
   sourceBook: "English Grammar in Use · Intermediate · Unit 44",
   sourceNote:
-    "I was given…; being + V3; I was born; get + V3 (informal). Nên học kèm Units 42–43.",
+    "I was given…; being + V3; I was born; get + V3 (thân mật, sự kiện). KHÔNG dùng get cho trạng thái. Nên học kèm Units 42–43.",
   intro:
-    "Unit này mở rộng bị động: động từ hai tân ngữ (I was given…), being + V3, was born, và get + V3 (không trang trọng). Nên học kèm Units 42–43.",
+    "Bài này giúp bạn mở rộng bị động với động từ hai tân ngữ (I was given…), dạng being + V3, was born, và get + V3 mang tính thân mật khi có sự kiện xảy ra. Nên học kèm Units 42–43 trước khi sang Unit 45 (it is said that / he is supposed to).",
   structure: {
     affirmative:
-      "S + be + V3 + object | being + V3 | was born | get + V3",
+      "S + be + V3 (+ object) | being + V3 | was/were born | get + V3",
     negative:
-      "wasn't/weren't + V3 | don't like being + V3 | don't get + V3 | not supposed…",
+      "KHÔNG: I am born → I was born | KHÔNG dùng get cho trạng thái: gets liked → is liked | don't like being + V3 | don't get + V3",
   },
   usagePoints: [
     {
@@ -56,31 +56,31 @@ export const U44_PASSIVE_3_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "I've been offered the job, but I don't think I want it.",
-      vietnamese: "Tôi được đề nghị công việc, nhưng tôi không nghĩ mình muốn.",
+      vietnamese: "I've been offered = tôi được đề nghị — bị động bắt đầu bằng người nhận.",
     },
     {
       english: "I was shown a copy of the document.",
-      vietnamese: "Tôi được cho xem một bản sao của tài liệu.",
+      vietnamese: "I was shown = tôi được cho xem — show có hai tân ngữ, ưu tiên người làm chủ ngữ bị động.",
     },
     {
       english: "I don't like being told what to do.",
-      vietnamese: "Tôi không thích bị bảo phải làm gì.",
+      vietnamese: "being told = bị bảo — dạng bị động của -ing sau like.",
     },
     {
       english: "We climbed over the wall without being seen.",
-      vietnamese: "Chúng tôi trèo tường mà không bị phát hiện.",
+      vietnamese: "without being seen = không bị nhìn thấy — being + V3 sau giới từ.",
     },
     {
       english: "I was born in Chicago. Where were you born?",
-      vietnamese: "Tôi sinh ra ở Chicago. Bạn sinh ở đâu?",
+      vietnamese: "was born = sinh ra — luôn quá khứ, không dùng am born.",
     },
     {
       english: "There was a fight, but nobody got hurt.",
-      vietnamese: "Có đánh nhau, nhưng không ai bị thương.",
+      vietnamese: "got hurt = bị thương — get + V3 thân mật cho sự kiện xảy ra.",
     },
     {
       english: "I don't get invited to many parties.",
-      vietnamese: "Tôi không được mời đến nhiều tiệc. (= I'm not invited)",
+      vietnamese: "don't get invited ≈ I'm not invited — get bị động thân mật, không trang trọng bằng be.",
     },
   ],
   practice: {

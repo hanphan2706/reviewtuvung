@@ -190,8 +190,8 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
     unitNumbers: [42, 44],
   },
   44: {
-    message: "Nên học kèm Units 42–43 trước khi học các dạng passive phức hơn.",
-    unitNumbers: [42, 43],
+    message: "Nên học kèm Units 42–43 trước khi học các dạng passive phức hơn; xem tiếp Unit 45 (it is said that / supposed to).",
+    unitNumbers: [42, 43, 45],
   },
   45: {
     message: "Nên học kèm Units 42–44 (passive) trước khi học it is said that / he is said to / supposed to.",

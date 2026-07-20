@@ -13,14 +13,14 @@ export const U45_IT_IS_SAID_THAT_HE_IS_SAID_TO_HE_IS_SUPPOSED_TO_TOPIC: GrammarT
     kindLabel: "Passive",
     sourceBook: "English Grammar in Use · Intermediate · Unit 45",
     sourceNote:
-      "It is said/believed… that; He is said/expected to…; supposed to (người ta nói / theo dự định). Nên học kèm Units 42–44.",
+      "It is said that ↔ He is said to; to have + V3 cho quá khứ; supposed to = người ta nói hoặc theo kế hoạch/quy định. Nên học kèm Units 42–44.",
     intro:
-      "It is said/believed… that; He is said/expected to…; supposed to (người ta nói / theo dự định). Nên học kèm Units 42–44 (bị động).",
+      "Bài này giúp bạn chuyển It is said/believed that… sang He is said/expected to…, dùng to have + V3 khi báo cáo việc đã xảy ra, và phân biệt supposed to theo nghĩa người ta nói với theo kế hoạch/quy định. Nên học kèm Units 42–44 (bị động).",
     structure: {
       affirmative:
         "It is said/believed that + clause | S + is said/expected to + V / have + V3 | S + is supposed to + V",
       negative:
-        "You're not supposed to + V | S + isn't supposed to + V",
+        "KHÔNG nhầm supposed to (kế hoạch/quy định) với said to (đồn đoán) | You're not supposed to + V = không được / không nên",
     },
     usagePoints: [
       {
@@ -57,31 +57,31 @@ export const U45_IT_IS_SAID_THAT_HE_IS_SAID_TO_HE_IS_SUPPOSED_TO_TOPIC: GrammarT
     examples: [
       {
         english: "It is said that he is 108 years old. / He is said to be 108 years old.",
-        vietnamese: "Người ta nói ông ấy 108 tuổi. (hai cách tương đương)",
+        vietnamese: "Hai mẫu tương đương — It is said that… ↔ He is said to… cùng nghĩa 'người ta nói'.",
       },
       {
         english: "The strike is expected to end soon.",
-        vietnamese: "Cuộc đình công được kỳ vọng sẽ sớm kết thúc.",
+        vietnamese: "is expected to = được kỳ vọng sẽ — bị động báo chí với to + V.",
       },
       {
         english: "He is alleged to have stolen a car.",
-        vietnamese: "Anh ấy bị cáo buộc đã đánh cắp xe.",
+        vietnamese: "to have stolen = bị cáo buộc đã… — to have + V3 khi việc đã xảy ra.",
       },
       {
         english: "It's supposed to be a good film.",
-        vietnamese: "Người ta bảo phim này hay. (= people say)",
+        vietnamese: "supposed to ≈ people say — nghĩa đồn đoán, giống said to.",
       },
       {
         english: "You're supposed to be on holiday. What are you doing at work?",
-        vietnamese: "Bạn đáng lẽ đang nghỉ. Sao lại ở công ty?",
+        vietnamese: "supposed to = đáng lẽ theo kế hoạch — khác nghĩa 'người ta nói'.",
       },
       {
         english: "You're not supposed to park your car here.",
-        vietnamese: "Bạn không được đỗ xe ở đây.",
+        vietnamese: "not supposed to = không được / không nên theo quy định.",
       },
       {
         english: "Jane was supposed to phone me last night, but she didn't.",
-        vietnamese: "Jane đáng lẽ gọi tôi tối qua, nhưng không gọi.",
+        vietnamese: "was supposed to = đáng lẽ phải — kế hoạch quá khứ nhưng không xảy ra.",
       },
     ],
     practice: {
