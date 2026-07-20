@@ -12,12 +12,13 @@ export const U27_COULD_DO_AND_COULD_HAVE_DONE_TOPIC: GrammarTopicDetail = {
   kindLabel: "Modal",
   sourceBook: "English Grammar in Use · Intermediate · Unit 27",
   sourceNote:
-    "could (do) and could have (done): gợi ý, khả năng kém chắc, giả định không thực tế, could have (đã có thể nhưng không). Nên học kèm Unit 26 và Unit 29.",
+    "could (do) / could have (done): gợi ý, khả năng kém chắc, giả định không thực tế, và điều đã có thể xảy ra nhưng không. Nên học kèm Unit 26 và Unit 29.",
   intro:
-    "Unit này giúp bạn nắm Could (Do) and Could Have (Done): Could (do) and could have (done): gợi ý, khả năng kém chắc, giả định không thực tế, could have (đã có thể nhưng không). Nên học kèm Unit 26 trước, rồi Unit 29 để so sánh could với may/might.",
+    "Bài này giúp bạn dùng could để gợi ý, nói khả năng kém chắc hoặc giả định không thực tế, và dùng could have để nói điều đã có thể xảy ra nhưng thực tế không. Nên học kèm Unit 26 trước, rồi Unit 29 để so sánh could với may/might.",
   structure: {
     affirmative: "S + could + V (gợi ý / khả năng / giả định) | S + could have + V3 (quá khứ: đã có thể nhưng không)",
-    negative: "S + couldn't + V | S + couldn't have + V3",
+    negative:
+      "KHÔNG dùng can cho gợi ý, giả định không thực tế hay khả năng lúc này → could | couldn't / couldn't have",
   },
   usagePoints: [
     {
@@ -33,7 +34,17 @@ export const U27_COULD_DO_AND_COULD_HAVE_DONE_TOPIC: GrammarTopicDetail = {
     {
       before: "could (không can) khi nói điều gì ",
       strong: "có thể đúng/xảy ra lúc này",
-      after: ": The story could be true. So sánh: The weather can change quickly (chung) vs It could change later (lúc này).",
+      after: ": The story could be true.",
+    },
+    {
+      before: "can dùng cho ",
+      strong: "khả năng chung",
+      after: ": The weather can change quickly.",
+    },
+    {
+      before: "could dùng cho ",
+      strong: "khả năng lúc này / sau này",
+      after: ": It could change later.",
     },
     {
       before: "could have + V3 = ",
@@ -43,42 +54,52 @@ export const U27_COULD_DO_AND_COULD_HAVE_DONE_TOPIC: GrammarTopicDetail = {
     {
       before: "couldn't do = ",
       strong: "sẽ không thể / không muốn tưởng tượng làm",
-      after: " (hiện tại): I couldn't live in a big city. Quá khứ giả định: It couldn't have been better.",
+      after: " (hiện tại): I couldn't live in a big city.",
     },
     {
-      before: "Lưu ý ",
-      strong: "couldn't có hai nghĩa",
-      after: ": (1) hiện không thể — I couldn't run ten kilometres now; (2) quá khứ thật — I couldn't run yesterday because I'd hurt my leg.",
+      before: "couldn't have = ",
+      strong: "chắc đã không / không thể đã",
+      after: " (quá khứ giả định): It couldn't have been better.",
+    },
+    {
+      before: "couldn't (hiện tại) = ",
+      strong: "bây giờ không thể",
+      after: ": I couldn't run ten kilometres now.",
+    },
+    {
+      before: "couldn't (quá khứ thật) = ",
+      strong: "hôm qua không thể vì lý do cụ thể",
+      after: ": I couldn't run yesterday because I'd hurt my leg.",
     },
   ],
   examples: [
     {
       english: "We could go to the cinema.",
-      vietnamese: "Chúng ta có thể đi xem phim. (gợi ý)",
+      vietnamese: "Could = gợi ý — kém chắc hơn can khi đề xuất.",
     },
     {
       english: "I'm so tired, I could sleep for a week.",
-      vietnamese: "Tôi mệt đến mức có thể ngủ cả tuần. (không thực tế)",
+      vietnamese: "Could = giả định không thực tế — KHÔNG dùng can.",
     },
     {
       english: "The story could be true.",
-      vietnamese: "Câu chuyện có thể là thật.",
+      vietnamese: "Could = có thể đúng lúc này — không dùng can cho ý này.",
     },
     {
       english: "You could have stayed with me.",
-      vietnamese: "Bạn đáng lẽ đã có thể ở với tôi. (nhưng đã không)",
+      vietnamese: "Could have = đáng lẽ đã có thể ở với tôi — nhưng đã không.",
     },
     {
       english: "I couldn't live in a big city.",
-      vietnamese: "Tôi không thể sống ở thành phố lớn.",
+      vietnamese: "Couldn't = không thể tưởng tượng sống ở đó — giả định hiện tại.",
     },
     {
       english: "It couldn't have been better.",
-      vietnamese: "Không thể tốt hơn được nữa.",
+      vietnamese: "Couldn't have = chắc không thể tốt hơn nữa — quá khứ giả định.",
     },
     {
       english: "Be careful climbing that tree. You could fall.",
-      vietnamese: "Cẩn thận khi leo cây đó. Bạn có thể ngã.",
+      vietnamese: "Could = có thể xảy ra — cảnh báo khả năng.",
     },
   ],
   practice: {

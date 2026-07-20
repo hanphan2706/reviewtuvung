@@ -12,12 +12,13 @@ export const U29_MAY_AND_MIGHT_1_TOPIC: GrammarTopicDetail = {
   kindLabel: "Modal",
   sourceBook: "English Grammar in Use · Intermediate · Unit 29",
   sourceNote:
-    "may and might 1: khả năng hiện tại (may/might be…), quá khứ (may/might have…), phân biệt might not have vs couldn't have. Nên học kèm Unit 30.",
+    "may / might 1: khả năng hiện tại (may/might be…), quá khứ (may/might have…), phân biệt might not have với couldn't have. Nên học kèm Unit 30 và Unit 27.",
   intro:
-    "Unit này giúp bạn nắm May and Might 1: May and might 1: khả năng hiện tại (may/might be…), quá khứ (may/might have…), phân biệt might not have vs couldn't have. Nên học kèm Unit 30 (may/might với tương lai và might as well) và Unit 27 (could).",
+    "Bài này giúp bạn dùng may và might để nói có lẽ (hiện tại và quá khứ), phân biệt may be với maybe, và chọn đúng giữa might not have và couldn't have. Nên học kèm Unit 30 (may/might với tương lai và might as well) và Unit 27 (could).",
   structure: {
     affirmative: "S + may/might + V / be / be -ing | S + may/might have + V3",
-    negative: "S + may not / might not + V | S + may/might not have + V3",
+    negative:
+      "KHÔNG nhầm may be (2 từ, động từ) với maybe (1 từ, trạng từ) | might not have (có lẽ chưa) ≠ couldn't have (chắc không thể đã)",
   },
   usagePoints: [
     {
@@ -31,9 +32,14 @@ export const U29_MAY_AND_MIGHT_1_TOPIC: GrammarTopicDetail = {
       after: ": It may not be true. She might not know.",
     },
     {
-      before: "Phân biệt ",
-      strong: "may be (2 từ) vs maybe (1 từ)",
-      after: ": It may be true (= động từ). 'Is it true?' 'Maybe.' (= trạng từ).",
+      before: "may be = ",
+      strong: "có lẽ (đúng)",
+      after: " — hai từ, động từ: It may be true.",
+    },
+    {
+      before: "maybe = ",
+      strong: "có lẽ",
+      after: " — một từ, trạng từ đứng đầu câu: 'Is it true?' 'Maybe.'",
     },
     {
       before: "Quá khứ: ",
@@ -48,33 +54,38 @@ export const U29_MAY_AND_MIGHT_1_TOPIC: GrammarTopicDetail = {
     {
       before: "couldn't have = ",
       strong: "chắc chắn không đã xảy ra",
-      after: "; might not have = có lẽ không: She couldn't have received it (không thể) vs She might not have received it (có lẽ chưa).",
+      after: ": She couldn't have received it.",
+    },
+    {
+      before: "might not have = ",
+      strong: "có lẽ chưa / có lẽ không",
+      after: ": She might not have received it.",
     },
   ],
   examples: [
     {
       english: "It may be true. / It might be true.",
-      vietnamese: "Có lẽ điều đó đúng.",
+      vietnamese: "May/might be = có lẽ đúng — hai modal tương đương.",
     },
     {
       english: "She might know.",
-      vietnamese: "Có lẽ cô ấy biết.",
+      vietnamese: "Might know = có lẽ biết — kém chắc hơn must.",
     },
     {
       english: "He may be in his office.",
-      vietnamese: "Có lẽ anh ấy đang ở văn phòng.",
+      vietnamese: "May be in = có lẽ đang ở văn phòng — may be là cụm động từ.",
     },
     {
       english: "She may have been asleep.",
-      vietnamese: "Có lẽ lúc đó cô ấy đang ngủ.",
+      vietnamese: "May have been = có lẽ lúc đó đang ngủ — suy đoán quá khứ.",
     },
     {
       english: "You might have left it at work.",
-      vietnamese: "Có lẽ bạn để quên ở chỗ làm.",
+      vietnamese: "Might have left = có lẽ để quên ở chỗ làm.",
     },
     {
       english: "She might not have received it.",
-      vietnamese: "Có lẽ cô ấy chưa nhận được. (khác couldn't have)",
+      vietnamese: "Might not have = có lẽ chưa nhận — khác couldn't have (chắc không thể).",
     },
   ],
   practice: {

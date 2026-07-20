@@ -12,14 +12,14 @@ export const U41_WISH_TOPIC: GrammarTopicDetail = {
   kindLabel: "Wish",
   sourceBook: "English Grammar in Use · Intermediate · Unit 41",
   sourceNote:
-    "wish somebody luck/success…; wish vs hope; wish + past / had; wish + could; wish + would (muốn đổi / phàn nàn). Nên học kèm Units 39–40.",
+    "wish somebody luck…; hope cho việc bạn muốn xảy ra (không phải wish + present); wish + past / had / could / would. KHÔNG dùng wish + would cho tình trạng bạn mong muốn. Nên học kèm Units 39–40.",
   intro:
-    "Unit này giúp bạn nắm Wish: Wish somebody luck/success…; wish vs hope; wish + past / had; wish + could; wish + would (muốn đổi / phàn nàn). Nên học kèm Units 39–40.",
+    "Bài này giúp bạn dùng wish để chúc may mắn, phân biệt wish với hope, nói tiếc nuối về hiện tại (wish + past) và quá khứ (wish + had), và dùng wish + would để phàn nàn hoặc muốn ai đó thay đổi. Nên học kèm Units 39–40.",
   structure: {
     affirmative:
       "wish + somebody + luck/success… | I wish + S + V2 / had + V3 / could… | I wish + S + would + V",
     negative:
-      "I hope + S + don't/doesn't… (không: I wish S + V) | I wish + S + wouldn't + V | I wish + S + hadn't + V3",
+      "KHÔNG dùng wish + present cho hope → I hope you feel better (không: I wish you feel) | KHÔNG dùng wish + would be / would have → I wish Sarah was here (không: I wish Sarah would be here) | I wish + wouldn't / hadn't + V3",
   },
   usagePoints: [
     {
@@ -29,58 +29,63 @@ export const U41_WISH_TOPIC: GrammarTopicDetail = {
     },
     {
       before: "Muốn việc gì xảy ra → dùng ",
-      strong: "hope",
-      after: " (không wish + hiện tại): I hope you feel better soon. (không: I wish you feel)",
+      strong: "hope + present/future",
+      after: ": I hope you feel better soon. (= I want this to happen)",
     },
     {
-      before: "wish + quá khứ = ",
-      strong: "tiếc hiện tại",
-      after: " (Unit 39): I wish I knew what to do. I wish you didn't have to go so soon.",
+      before: "KHÔNG nói ",
+      strong: "wish + present",
+      after: " cho hope: (không: I wish you feel)",
+    },
+    {
+      before: "wish + past = ",
+      strong: "tiếc hiện tại (Unit 39)",
+      after: ": I wish I knew what to do. I wish you didn't have to go so soon.",
     },
     {
       before: "wish + had… = ",
-      strong: "tiếc quá khứ",
-      after: " (Unit 40): I wish I'd known about the party. I wish I hadn't said it.",
+      strong: "tiếc quá khứ (Unit 40)",
+      after: ": I wish I'd known about the party. I wish I hadn't said it.",
     },
     {
-      before: "wish + would = ",
-      strong: "muốn đổi / phàn nàn",
+      before: "Muốn ai đó thay đổi hành vi → ",
+      strong: "wish + would / wouldn't",
       after: ": I wish it would stop raining. I wish you wouldn't keep interrupting me.",
     },
     {
-      before: "Không dùng wish + would cho ",
-      strong: "tình trạng mong muốn",
+      before: "Mong có tình trạng khác → ",
+      strong: "wish + past / had",
       after: ": I wish Sarah was here. I wish I had a car. (không: would be / would have)",
     },
   ],
   examples: [
     {
       english: "I wish you all the best in the future.",
-      vietnamese: "Tôi chúc bạn mọi điều tốt đẹp nhất trong tương lai.",
+      vietnamese: "Wish somebody + danh từ = chúc may mắn — không phải tiếc nuối.",
     },
     {
       english: "I'm sorry you're not well. I hope you feel better soon.",
-      vietnamese: "Tiếc là bạn không khỏe. Tôi hy vọng bạn mau khá hơn. (không: I wish you feel)",
+      vietnamese: "Hope + present = muốn việc xảy ra — KHÔNG nói I wish you feel.",
     },
     {
       english: "I wish I knew what to do about the problem.",
-      vietnamese: "Giá như tôi biết phải làm gì với vấn đề này. (tiếc hiện tại)",
+      vietnamese: "Wish + past = tiếc hiện tại — thực tế tôi không biết phải làm gì.",
     },
     {
       english: "I wish I hadn't said it.",
-      vietnamese: "Giá như tôi đừng nói thế. (tiếc quá khứ)",
+      vietnamese: "Wish + hadn't = tiếc quá khứ — đã nói rồi, giờ hối hận.",
     },
     {
       english: "I wish it would stop raining.",
-      vietnamese: "Ước gì trời ngừng mưa. (muốn thay đổi — thường phàn nàn)",
+      vietnamese: "Wish + would = muốn trời đổi — thường mang ý phàn nàn.",
     },
     {
       english: "I wish you wouldn't keep interrupting me.",
-      vietnamese: "Ước gì bạn đừng cứ cắt ngang tôi mãi. (= please stop)",
+      vietnamese: "Wish + wouldn't = muốn bạn ngừng hành vi — please stop.",
     },
     {
       english: "I wish I had a car.",
-      vietnamese: "Giá như tôi có xe. (không: I wish I would have a car)",
+      vietnamese: "Wish + past cho tình trạng mong muốn — KHÔNG nói I wish I would have a car.",
     },
   ],
   practice: {

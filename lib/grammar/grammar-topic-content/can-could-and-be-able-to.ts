@@ -12,13 +12,14 @@ export const U26_CAN_COULD_AND_BE_ABLE_TO_TOPIC: GrammarTopicDetail = {
   kindLabel: "Modal",
   sourceBook: "English Grammar in Use · Intermediate · Unit 26",
   sourceNote:
-    "can, could and (be) able to: khả năng, được phép, can vs be able to, could vs was able to/managed to. Nên học kèm Unit 27 (could have done) và Unit 37 (can/could you…?).",
+    "can / could / (be) able to: khả năng, được phép; chọn can hay be able to; phân biệt could (khả năng chung) với was able to / managed to (thành công cụ thể). Nên học kèm Unit 27 và Unit 37.",
   intro:
-    "Unit này giúp bạn nắm Can, Could and (Be) Able To: Can, could and (be) able to: khả năng, được phép, can vs be able to, could vs was able to/managed to. Nên học kèm Unit 27 để mở rộng could / could have done.",
+    "Bài này giúp bạn dùng can và could cho khả năng hoặc được phép, chọn can hay (be) able to khi cần các dạng thì khác, và phân biệt could (khả năng chung quá khứ) với was/were able to hoặc managed to (thành công trong một tình huống cụ thể). Nên học kèm Unit 27 và Unit 37.",
   structure: {
     affirmative:
       "S + can + V | S + be able to + V | S + could + V (khả năng chung / giác quan) | S + was/were able to / managed to + V (thành công cụ thể)",
-    negative: "S + can't/cannot + V | S + couldn't + V | S + haven't been able to + V",
+    negative:
+      "KHÔNG dùng could cho thành công cụ thể quá khứ → was/were able to hoặc managed to | can't / couldn't / haven't been able to cho phủ định khả năng",
   },
   usagePoints: [
     {
@@ -27,9 +28,14 @@ export const U26_CAN_COULD_AND_BE_ABLE_TO_TOPIC: GrammarTopicDetail = {
       after: " để nói khả năng, được phép, hoặc điều có thể xảy ra: We can see the lake from our hotel. I'm afraid I can't come to the party.",
     },
     {
-      before: "be able to cũng được, nhưng ",
+      before: "Khi có thể dùng can, ",
       strong: "can thông dụng hơn",
-      after: " khi có thể dùng can. can chỉ có hai dạng → đôi khi bắt buộc dùng (be) able to: I haven't been able to sleep recently. She might be able to help you.",
+      after: " be able to.",
+    },
+    {
+      before: "can chỉ có hai dạng → đôi khi ",
+      strong: "bắt buộc dùng (be) able to",
+      after: ": I haven't been able to sleep recently. She might be able to help you.",
     },
     {
       before: "could = khả năng chung trong quá khứ, hoặc với ",
@@ -55,31 +61,31 @@ export const U26_CAN_COULD_AND_BE_ABLE_TO_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "We can see the lake from our hotel.",
-      vietnamese: "Chúng tôi có thể nhìn thấy hồ từ khách sạn.",
+      vietnamese: "Can + V = có thể làm / khả năng hiện tại.",
     },
     {
       english: "I'm afraid I can't come to the party on Friday.",
-      vietnamese: "Tôi e là không đến được tiệc thứ Sáu.",
+      vietnamese: "Can't = không thể đến / không được phép — phủ định của can.",
     },
     {
       english: "My grandfather could speak five languages.",
-      vietnamese: "Ông tôi có thể nói năm thứ tiếng. (khả năng chung)",
+      vietnamese: "Could = khả năng chung quá khứ — không nói một lần cụ thể.",
     },
     {
       english: "Everybody was able to escape.",
-      vietnamese: "Mọi người đều thoát được. (thành công trong tình huống cụ thể)",
+      vietnamese: "Was able to = thoát được trong tình huống cụ thể — KHÔNG nói could escape.",
     },
     {
       english: "I managed to find him in the end.",
-      vietnamese: "Cuối cùng tôi đã tìm được anh ấy.",
+      vietnamese: "Managed to = cuối cùng đã làm được — thay cho was able to.",
     },
     {
       english: "I haven't been able to sleep recently.",
-      vietnamese: "Gần đây tôi không ngủ được. (cần be able to vì perfect)",
+      vietnamese: "Have been able to = cần be able to vì can không có dạng perfect.",
     },
     {
       english: "Ask Katherine. She might be able to help you.",
-      vietnamese: "Hỏi Katherine đi. Có thể cô ấy giúp được bạn.",
+      vietnamese: "Might be able to = có thể giúp — modal khác cũng đi với be able to.",
     },
   ],
   practice: {

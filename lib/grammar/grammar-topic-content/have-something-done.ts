@@ -12,14 +12,14 @@ export const U46_HAVE_SOMETHING_DONE_TOPIC: GrammarTopicDetail = {
   kindLabel: "Causative",
   sourceBook: "English Grammar in Use · Intermediate · Unit 46",
   sourceNote:
-    "have/get + object + past participle (thuê làm); have something done = bị xảy ra với mình. Word order: have + object + V3.",
+    "have/get + object + V3: thuê nhờ người làm hoặc bị xảy ra với mình; thứ tự cố định have + object + V3. Nên học kèm Unit 42 (bị động cơ bản).",
   intro:
-    "Unit này giúp bạn nắm Have Something Done: Have/get + object + past participle (thuê làm); have something done = bị xảy ra với mình. Word order: have + object + V3.",
+    "Bài này giúp bạn nói thuê hoặc nhờ người khác làm việc với have/get + object + past participle, giữ đúng thứ tự từ, và phân biệt nghĩa thuê dịch vụ với nghĩa bị xảy ra với mình. Nên học kèm Unit 42 (is done / was done).",
   structure: {
     affirmative:
       "have/get + object + V3 | She had the roof repaired | They had their bags stolen",
     negative:
-      "don't/didn't have + object + V3 | I don't like having my picture taken",
+      "KHÔNG đảo thứ tự: have serviced your car / having built a garage → have your car serviced / have a garage built | don't/didn't have + object + V3",
   },
   usagePoints: [
     {
@@ -35,17 +35,17 @@ export const U46_HAVE_SOMETHING_DONE_TOPIC: GrammarTopicDetail = {
     {
       before: "get + object + V3 ≈ ",
       strong: "have … done",
-      after: ": When are you going to get the roof repaired?",
+      after: " (thân mật hơn): When are you going to get the roof repaired?",
     },
     {
-      before: "Nghĩa khác: ",
-      strong: "bị xảy ra với mình",
-      after: ": They had their bags stolen. Have you ever had your bike stolen?",
-    },
-    {
-      before: "Ví dụ thuê dịch vụ: ",
+      before: "Nghĩa thuê dịch vụ: ",
       strong: "have hair cut / car serviced / eyes tested",
       after: ", get document translated, get ears pierced…",
+    },
+    {
+      before: "Nghĩa khác — ",
+      strong: "bị xảy ra với mình",
+      after: ": They had their bags stolen. Have you ever had your bike stolen?",
     },
     {
       before: "Continuous: ",
@@ -56,27 +56,27 @@ export const U46_HAVE_SOMETHING_DONE_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Lisa had the roof repaired yesterday.",
-      vietnamese: "Lisa đã nhờ người sửa mái hôm qua. (không tự sửa)",
+      vietnamese: "had the roof repaired = nhờ người sửa mái — Lisa không tự sửa.",
     },
     {
       english: "How often do you have your car serviced?",
-      vietnamese: "Bạn bảo dưỡng xe bao lâu một lần?",
+      vietnamese: "have your car serviced = thuê bảo dưỡng xe định kỳ.",
     },
     {
       english: "Your hair looks nice. Did you have it cut?",
-      vietnamese: "Tóc bạn đẹp. Bạn có cắt tóc không? (nhờ thợ)",
+      vietnamese: "have it cut = nhờ thợ cắt — không tự cắt.",
     },
     {
       english: "I think you should get your hair cut really short.",
-      vietnamese: "Tôi nghĩ bạn nên cắt tóc thật ngắn. (get ≈ have)",
+      vietnamese: "get your hair cut ≈ have … done — get thân mật hơn have.",
     },
     {
       english: "Paul and Karen had their bags stolen while they were travelling.",
-      vietnamese: "Paul và Karen bị mất túi khi đi du lịch. (= bags were stolen)",
+      vietnamese: "had their bags stolen = bị mất túi (= their bags were stolen).",
     },
     {
       english: "Gary had his nose broken in a fight.",
-      vietnamese: "Gary bị gãy mũi trong một trận đánh nhau.",
+      vietnamese: "had his nose broken = bị gãy mũi — nghĩa bị xảy ra, không phải thuê dịch vụ.",
     },
   ],
   practice: {

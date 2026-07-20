@@ -12,13 +12,14 @@ export const U34_SHOULD_2_TOPIC: GrammarTopicDetail = {
   kindLabel: "Modal",
   sourceBook: "English Grammar in Use · Intermediate · Unit 34",
   sourceNote:
-    "Should 2: that … should sau insist/suggest…; tính từ cảm xúc; if … should / Should …; I should… (= lời khuyên). Nên học kèm Unit 33.",
+    "should 2: that … should sau insist/suggest…; tính từ cảm xúc; if … should / Should …; I should… (= lời khuyên). Nên học kèm Unit 33.",
   intro:
-    "Should 2: that … should sau insist/suggest…; tính từ cảm xúc; if … should / Should …; I should… (= lời khuyên). Nên học kèm Unit 33.",
+    "Bài này giúp bạn dùng should sau động từ như insist/suggest, sau tính từ cảm xúc, trong mẫu if … should / Should … cho khả năng nhỏ, và I should… như lời khuyên cho người nghe. Nên học kèm Unit 33.",
   structure: {
     affirmative:
       "insist/suggest that + S + should + V | If S should + V… / Should + S + V… | I should + V",
-    negative: "I shouldn't + V | ought not to + V (see Unit 33)",
+    negative:
+      "KHÔNG nói suggest somebody to do → suggest (that) S (should) do | ought not to (xem Unit 33)",
   },
   usagePoints: [
     {
@@ -32,9 +33,14 @@ export const U34_SHOULD_2_TOPIC: GrammarTopicDetail = {
       after: " hoặc dùng thì bình thường: It's essential that everyone be / is here on time.",
     },
     {
-      before: "Không dùng ",
+      before: "Đúng: ",
+      strong: "suggest (that) we (should) do",
+      after: ": What do you suggest we (should) do?",
+    },
+    {
+      before: "Sai: ",
       strong: "suggest somebody to do",
-      after: ": What do you suggest we (should) do? (không: suggest us to do)",
+      after: " — không dùng cấu trúc này.",
     },
     {
       before: "Sau tính từ như ",
@@ -55,27 +61,27 @@ export const U34_SHOULD_2_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "The doctor recommended that I should eat more fruit.",
-      vietnamese: "Bác sĩ khuyến nghị tôi nên ăn nhiều trái cây hơn.",
+      vietnamese: "That I should eat = khuyến nghị chính thức sau recommend.",
     },
     {
       english: "It's essential that everyone should be here on time.",
-      vietnamese: "Điều thiết yếu là mọi người phải có mặt đúng giờ.",
+      vietnamese: "That everyone should be = điều thiết yếu — có thể bỏ should.",
     },
     {
       english: "It's strange that he should be late. He's usually on time.",
-      vietnamese: "Lạ là anh ấy lại muộn. Thường thì anh ấy đúng giờ.",
+      vietnamese: "That he should be late = lạ vì thường đúng giờ — cảm xúc/bất ngờ.",
     },
     {
       english: "If the situation should change, we'll contact you.",
-      vietnamese: "Nếu tình hình có đổi, chúng tôi sẽ liên hệ.",
+      vietnamese: "If … should change = nếu (dù hiếm) tình hình đổi — formal hơn if thường.",
     },
     {
       english: "Should the situation change, we'll let you know.",
-      vietnamese: "Nếu tình hình có đổi, chúng tôi sẽ báo bạn. (= If it should change…)",
+      vietnamese: "Should … change = cùng nghĩa If it should change — đảo should lên đầu.",
     },
     {
       english: "'Shall I leave now?' 'No, I should wait a bit.'",
-      vietnamese: "'Tôi đi bây giờ nhé?' 'Không, tôi khuyên bạn đợi một chút.'",
+      vietnamese: "I should wait = tôi khuyên bạn đợi — không phải ý định của tôi.",
     },
   ],
   practice: {

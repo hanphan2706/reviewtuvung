@@ -12,13 +12,14 @@ export const U30_MAY_AND_MIGHT_2_TOPIC: GrammarTopicDetail = {
   kindLabel: "Modal",
   sourceBook: "English Grammar in Use · Intermediate · Unit 30",
   sourceNote:
-    "may and might 2: khả năng tương lai, might be -ing, might be able to / might have to, might as well. Nên học kèm Unit 29.",
+    "may / might 2: khả năng tương lai, might be -ing, might be able to / might have to, might as well. Nên học kèm Unit 29.",
   intro:
-    "Unit này giúp bạn nắm May and Might 2: May and might 2: khả năng tương lai, might be -ing, might be able to / might have to, might as well. Nên học kèm Unit 29 trước.",
+    "Bài này giúp bạn dùng may/might cho tương lai chưa chắc, might be -ing cho hành động đang/sẽ đang diễn ra, và might as well khi không còn lựa chọn tốt hơn. Nên học kèm Unit 29 trước.",
   structure: {
     affirmative:
       "S + may/might + V (tương lai) | S + might be -ing | S + might be able to / might have to + V | S + might/may as well + V",
-    negative: "S + may not / might not (mightn't) + V",
+    negative:
+      "KHÔNG dùng may trong câu giả định không thật → might | may not / might not = có lẽ sẽ không",
   },
   usagePoints: [
     {
@@ -27,9 +28,14 @@ export const U30_MAY_AND_MIGHT_2_TOPIC: GrammarTopicDetail = {
       after: " trong tương lai: I may go to Ireland. It might rain later. Amy may not go out tonight.",
     },
     {
-      before: "So sánh ",
-      strong: "I'm going to (chắc) vs I may/might (có thể)",
-      after: ": I'm going to buy a car (đã quyết) vs I may/might buy a car (chưa chắc).",
+      before: "I'm going to = ",
+      strong: "chắc / đã quyết",
+      after: ": I'm going to buy a car.",
+    },
+    {
+      before: "I may/might = ",
+      strong: "có thể, chưa chắc",
+      after: ": I may/might buy a car.",
     },
     {
       before: "Tình huống ",
@@ -55,27 +61,27 @@ export const U30_MAY_AND_MIGHT_2_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "I may go to Ireland.",
-      vietnamese: "Có lẽ tôi sẽ đi Ireland.",
+      vietnamese: "May go = có lẽ sẽ đi — chưa quyết, khác going to.",
     },
     {
       english: "It might rain later.",
-      vietnamese: "Có lẽ lát nữa mưa.",
+      vietnamese: "Might rain = có lẽ lát nữa mưa — khả năng tương lai.",
     },
     {
       english: "Amy may not go out tonight.",
-      vietnamese: "Có lẽ tối nay Amy không ra ngoài.",
+      vietnamese: "May not go = có lẽ tối nay không ra — phủ định khả năng.",
     },
     {
       english: "If they paid me better, I might work harder.",
-      vietnamese: "Nếu họ trả cao hơn, tôi có thể làm chăm hơn. (tình huống không thật)",
+      vietnamese: "Might = câu giả định không thật — KHÔNG dùng may ở đây.",
     },
     {
       english: "I might be watching the football on TV.",
-      vietnamese: "Lúc đó có lẽ tôi đang xem bóng đá.",
+      vietnamese: "Might be -ing = có lẽ lúc đó đang xem bóng.",
     },
     {
       english: "We might as well walk.",
-      vietnamese: "Thôi thì đi bộ luôn vậy.",
+      vietnamese: "Might as well = thôi đi bộ luôn — không có phương án hay hơn.",
     },
   ],
   practice: {

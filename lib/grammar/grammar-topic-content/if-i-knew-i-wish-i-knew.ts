@@ -12,30 +12,35 @@ export const U39_IF_I_KNEW_I_WISH_I_KNEW_TOPIC: GrammarTopicDetail = {
   kindLabel: "Conditional",
   sourceBook: "English Grammar in Use · Intermediate · Unit 39",
   sourceNote:
-    "if + quá khứ / wish + quá khứ (nghĩa hiện tại); were/was; không if … would / wish … would have. Nên học kèm Units 38, 40, 41.",
+    "if + past + would / wish + past = nói về hiện tại trái thực tế (không phải quá khứ thật); were hoặc was; could = would be able to. KHÔNG dùng if … would hay wish … would have. Nên học kèm Units 38, 40, 41.",
   intro:
-    "Unit này giúp bạn nắm If I Knew … I Wish I Knew …: If + quá khứ / wish + quá khứ (nghĩa hiện tại); were/was; không if … would / wish … would have. Nên học kèm Unit 38 (if I do / if I did), Unit 40 (if I had known), Unit 41 (wish + would).",
+    "Bài này giúp bạn dùng if + quá khứ và I wish + quá khứ để nói về tình huống hiện tại trái thực tế, chọn were/was sau if và wish, và tránh if … would / wish … would have. Nên học kèm Unit 38 (if I do / if I did), Unit 40 (if I had known), Unit 41 (wish + would).",
   structure: {
     affirmative:
       "If + S + V2…, S + would/'d + V | I wish + S + V2 / were / could…",
     negative:
-      "If + S + didn't + V…, S + wouldn't + V | I wish + S + didn't / weren't…",
+      "KHÔNG dùng if … would hay wish … would have → If I were rich, I would travel (không: If I would be rich) | I wish I didn't / weren't… (không: I wish I don't)",
   },
   usagePoints: [
     {
-      before: "if + quá khứ + would = ",
+      before: "if + past + would = ",
       strong: "tưởng tượng hiện tại (trái thực tế)",
-      after: ": I'd phone him if I knew his number.",
+      after: ": I'd phone him if I knew his number. (= I don't know it)",
     },
     {
-      before: "wish + quá khứ = ",
-      strong: "nuối tiếc hiện tại",
+      before: "wish + past = ",
+      strong: "tiếc vì hiện tại",
       after: ": I wish I knew Paul's phone number. (= I don't know it)",
     },
     {
-      before: "So sánh ",
-      strong: "I'm glad I live vs I wish I lived",
-      after: ": I'm glad I live here. / I wish I lived here. (tôi không sống ở đây)",
+      before: "I'm glad + present = ",
+      strong: "tôi mừng vì thực tế",
+      after: ": I'm glad I live here. (= tôi sống ở đây)",
+    },
+    {
+      before: "I wish + past = ",
+      strong: "tiếc vì không phải thực tế",
+      after: ": I wish I lived here. (= tôi không sống ở đây)",
     },
     {
       before: "Sau if/wish có thể dùng ",
@@ -56,27 +61,27 @@ export const U39_IF_I_KNEW_I_WISH_I_KNEW_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "I'd phone him if I knew his number.",
-      vietnamese: "Tôi sẽ gọi anh ấy nếu tôi biết số. (nhưng tôi không biết)",
+      vietnamese: "If + past + would = giả định hiện tại — thực tế tôi không biết số.",
     },
     {
       english: "There are many things I'd like to do if I had more time.",
-      vietnamese: "Có nhiều việc tôi muốn làm nếu có thêm thời gian. (nhưng không có)",
+      vietnamese: "If I had = nói về hiện tại trái thực tế — thực tế không có thêm thời gian.",
     },
     {
       english: "I wish I knew Paul's phone number.",
-      vietnamese: "Giá như tôi biết số điện thoại của Paul. (tiếc vì không biết)",
+      vietnamese: "Wish + past = tiếc vì hiện tại — khác if I knew nhưng cùng nghĩa không biết.",
     },
     {
       english: "I wish there weren't so many people.",
-      vietnamese: "Giá như đừng có nhiều người vậy. (thực tế có rất nhiều)",
+      vietnamese: "Wish + weren't = tiếc vì thực tế có rất nhiều người.",
     },
     {
       english: "If I were you, I wouldn't buy that coat.",
-      vietnamese: "Nếu tôi là bạn, tôi sẽ không mua áo đó. (were hoặc was)",
+      vietnamese: "Were (hoặc was) sau if khi nói giả định — tôi không phải bạn.",
     },
     {
       english: "I wish I could help you.",
-      vietnamese: "Giá như tôi có thể giúp bạn. (= I wish I was able)",
+      vietnamese: "Could = would be able to — giá như tôi có thể giúp (thực tế không thể).",
     },
   ],
   practice: {

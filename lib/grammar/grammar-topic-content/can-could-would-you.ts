@@ -14,11 +14,12 @@ export const U37_CAN_COULD_WOULD_YOU_TOPIC: GrammarTopicDetail = {
   sourceNote:
     "Can/Could/Would you…?: nhờ vả, xin đồ, xin phép, đề nghị/mời. Nên học kèm Unit 26 (can, could and (be) able to).",
   intro:
-    "Can/Could/Would you…?: nhờ vả, xin đồ, xin phép, đề nghị/mời. Nên học kèm Unit 26.",
+    "Bài này giúp bạn dùng Can/Could/Would you…? để nhờ vả, xin đồ, xin phép, đề nghị giúp và mời — cùng I'd like như cách nói lịch sự. Nên học kèm Unit 26.",
   structure: {
     affirmative:
       "Can/Could you + V…? | Can/Could/May I (have)…? | Would you like…? | I'd like (+ noun / to + V)",
-    negative: "Do you mind if I…? (trả lời No = đồng ý) | I'd rather not…",
+    negative:
+      "KHÔNG nói Do you think you can…? → Do you think you could…? | Do you mind if I…? — trả lời No = đồng ý",
   },
   usagePoints: [
     {
@@ -35,6 +36,11 @@ export const U37_CAN_COULD_WOULD_YOU_TOPIC: GrammarTopicDetail = {
       before: "Xin phép: ",
       strong: "Can/Could/May I…?",
       after: " / Do you mind if I…? / Is it OK if I…?: Could I use your phone charger?",
+    },
+    {
+      before: "Do you mind if I…? — trả lời ",
+      strong: "No = đồng ý",
+      after: " (không phải từ chối).",
     },
     {
       before: "Đề nghị giúp: ",
@@ -55,27 +61,27 @@ export const U37_CAN_COULD_WOULD_YOU_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Could you open the door, please?",
-      vietnamese: "Bạn mở cửa giúp được không?",
+      vietnamese: "Could you = nhờ lịch sự — lịch sự hơn Can you.",
     },
     {
       english: "Can I have these postcards, please?",
-      vietnamese: "Cho tôi mấy tấm bưu thiếp này được không?",
+      vietnamese: "Can I have = xin mua/lấy — không phải hỏi thích hay không.",
     },
     {
       english: "Could I use your phone charger?",
-      vietnamese: "Tôi mượn sạc điện thoại được không?",
+      vietnamese: "Could I = xin phép mượn — lịch sự hơn Can I.",
     },
     {
       english: "Can I help you? / Can I give you a hand?",
-      vietnamese: "Tôi giúp gì được không?",
+      vietnamese: "Can I help = đề nghị giúp — chủ động offer.",
     },
     {
       english: "Would you like some coffee?",
-      vietnamese: "Bạn dùng cà phê chứ?",
+      vietnamese: "Would you like = mời uống — KHÔNG nói Do you like coffee? (sở thích).",
     },
     {
       english: "I'd like some information about hotels, please.",
-      vietnamese: "Tôi muốn thông tin về khách sạn, làm ơn.",
+      vietnamese: "I'd like = muốn (lịch sự) — thay cho I want trong giao tiếp.",
     },
   ],
   practice: {

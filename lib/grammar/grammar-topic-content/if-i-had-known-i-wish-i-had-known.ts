@@ -12,25 +12,25 @@ export const U40_IF_I_HAD_KNOWN_I_WISH_I_HAD_KNOWN_TOPIC: GrammarTopicDetail = {
   kindLabel: "Conditional",
   sourceBook: "English Grammar in Use · Intermediate · Unit 40",
   sourceNote:
-    "if + had + V3 / wish + had + V3 (quá khứ trái thực tế); would have; 'd = had hoặc would. Nên học kèm Units 39, 41.",
+    "if + had + V3 + would have = quá khứ trái thực tế; wish + had… = tiếc về quá khứ; 'd = had hoặc would. KHÔNG dùng if … would have. Nên học kèm Units 39, 41.",
   intro:
-    "Unit này giúp bạn nắm If I Had Known … I Wish I Had Known …: If + had + V3 / wish + had + V3 (quá khứ trái thực tế); would have; 'd = had hoặc would. Nên học kèm Unit 39 và Unit 41.",
+    "Bài này giúp bạn nói về quá khứ trái thực tế bằng if + had + V3 và I wish + had + V3, hiểu 'd có thể là had hoặc would, và phân biệt would have (quá khứ) với would (nghĩa hiện tại). Nên học kèm Unit 39 và Unit 41.",
   structure: {
     affirmative:
       "If + S + had/'d + V3…, S + would have/'d have + V3 | I wish + S + had/'d + V3…",
     negative:
-      "If + S + hadn't + V3…, S + wouldn't have + V3 | I wish + S + hadn't + V3…",
+      "KHÔNG dùng if … would have → If I had seen you, I would have said hello (không: If I would have seen) | If + hadn't…, wouldn't have… / I wish + hadn't + V3",
   },
   usagePoints: [
     {
-      before: "if + had + V3 + would have = ",
-      strong: "quá khứ trái thực tế",
-      after: ": If I'd seen you, I would have said hello.",
+      before: "if + past + would = ",
+      strong: "hiện tại trái thực tế (Unit 39)",
+      after: ": If I was hungry, I would eat something. (= tôi không đói bây giờ)",
     },
     {
-      before: "So sánh ",
-      strong: "hiện tại vs quá khứ",
-      after: ": If I was hungry, I would eat… / If I had been hungry, I would have eaten…",
+      before: "if + had + V3 + would have = ",
+      strong: "quá khứ trái thực tế",
+      after: ": If I had been hungry, I would have eaten something. (= tôi không đói hồi đó)",
     },
     {
       before: "Không dùng ",
@@ -56,27 +56,27 @@ export const U40_IF_I_HAD_KNOWN_I_WISH_I_HAD_KNOWN_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "If I'd known you were in hospital, I would have gone to visit you.",
-      vietnamese: "Nếu tôi biết bạn nằm viện, tôi đã đến thăm. (nhưng không biết)",
+      vietnamese: "If + had + would have = quá khứ trái thực tế — thực tế tôi không biết nên không đến.",
     },
     {
       english: "They would have gone out if they hadn't been so tired.",
-      vietnamese: "Họ đã ra ngoài nếu không mệt quá. (nhưng họ mệt)",
+      vietnamese: "Would have = đã ra ngoài nếu không mệt — thực tế họ mệt nên ở nhà.",
     },
     {
       english: "I would have taken some pictures if I'd had a camera with me.",
-      vietnamese: "Tôi đã chụp ảnh nếu mang máy theo. (nhưng không có máy)",
+      vietnamese: "Had + V3 trong cả hai mệnh đề — thực tế không mang máy ảnh.",
     },
     {
       english: "I wish I'd known that Gary was ill.",
-      vietnamese: "Giá như tôi biết Gary bị ốm. (tiếc vì không biết)",
+      vietnamese: "Wish + had = tiếc về quá khứ — khác if I'd known nhưng cùng nghĩa không biết.",
     },
     {
       english: "I feel sick. I wish I hadn't eaten so much.",
-      vietnamese: "Tôi thấy buồn nôn. Giá như đừng ăn nhiều vậy.",
+      vietnamese: "Wish + hadn't = tiếc vì đã ăn quá nhiều — không thể đổi quá khứ.",
     },
     {
       english: "If I'd gone to the party last night, I would be tired now.",
-      vietnamese: "Nếu tối qua tôi đi tiệc, giờ tôi sẽ mệt. (would = hiện tại)",
+      vietnamese: "Would have (quá khứ) vs would (hiện tại) — đi tiệc tối qua → mệt bây giờ.",
     },
   ],
   practice: {

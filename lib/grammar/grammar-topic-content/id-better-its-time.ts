@@ -14,10 +14,11 @@ export const U35_ID_BETTER_ITS_TIME_TOPIC: GrammarTopicDetail = {
   sourceNote:
     "I'd better / it's time: lời khuyên cụ thể có hậu quả; It's time we went (past form, nghĩa hiện tại). Nên học kèm Unit 33 (should).",
   intro:
-    "I'd better / it's time: lời khuyên cụ thể có hậu quả; It's time we went (past form, nghĩa hiện tại). Nên học kèm Unit 33.",
+    "Bài này giúp bạn dùng I'd better cho lời khuyên cụ thể kèm hậu quả, phân biệt với should, và dùng It's time + past để nói đã đến lúc (thường phàn nàn). Nên học kèm Unit 33.",
   structure: {
     affirmative: "S + 'd/had better + V | It's time (for O) to + V | It's (about) time + S + past V",
-    negative: "S + 'd better not + V",
+    negative:
+      "KHÔNG nói had better to do → had better do | KHÔNG dùng had better cho lời khuyên chung → should",
   },
   usagePoints: [
     {
@@ -31,9 +32,14 @@ export const U35_ID_BETTER_ITS_TIME_TOPIC: GrammarTopicDetail = {
       after: ": You'd better not go out tonight. I'd better not disturb her.",
     },
     {
-      before: "had better chỉ cho ",
+      before: "had better cho ",
       strong: "tình huống cụ thể",
-      after: "; should dùng được cả chung: You should go out more often (không: had better).",
+      after: " có hậu quả: I'd better go now or I'll be late.",
+    },
+    {
+      before: "should cho ",
+      strong: "lời khuyên chung",
+      after: ": You should go out more often (không: had better).",
     },
     {
       before: "I'd better do ",
@@ -54,27 +60,27 @@ export const U35_ID_BETTER_ITS_TIME_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "I'd better go now or I'll be late.",
-      vietnamese: "Tôi nên đi ngay kẻo muộn.",
+      vietnamese: "Had better = nên đi ngay kẻo muộn — hậu quả cụ thể.",
     },
     {
       english: "You don't look well. You'd better not go out tonight.",
-      vietnamese: "Bạn trông không khỏe. Tối nay tốt hơn đừng ra ngoài.",
+      vietnamese: "Had better not = tốt hơn đừng ra — lời khuyên cảnh báo.",
     },
     {
       english: "You're always at home. You should go out more often.",
-      vietnamese: "Bạn lúc nào cũng ở nhà. Bạn nên ra ngoài nhiều hơn (chung — không dùng had better).",
+      vietnamese: "Should = lời khuyên chung — KHÔNG dùng had better ở đây.",
     },
     {
       english: "It's time to go home. / It's time for us to go home.",
-      vietnamese: "Đến lúc về nhà rồi.",
+      vietnamese: "It's time to/for = đến lúc về — cấu trúc thông thường.",
     },
     {
       english: "It's late. It's time we went home.",
-      vietnamese: "Muộn rồi. Đến lúc chúng ta về rồi (past form, nghĩa hiện tại).",
+      vietnamese: "It's time + past (went) = đến lúc về rồi — nghĩa hiện tại, thường phàn nàn.",
     },
     {
       english: "It's about time he did something instead of just talking.",
-      vietnamese: "Đã đến lúc anh ấy làm gì đó thay vì chỉ nói.",
+      vietnamese: "It's about time + past = đã đến lúc anh ấy làm gì đó — nhấn trễ.",
     },
   ],
   practice: {

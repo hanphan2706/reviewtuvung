@@ -12,12 +12,13 @@ export const U32_MUST_MUSTNT_NEEDNT_TOPIC: GrammarTopicDetail = {
   kindLabel: "Modal",
   sourceBook: "English Grammar in Use · Intermediate · Unit 32",
   sourceNote:
-    "Must / mustn't / needn't: bắt buộc, cấm, không cần; needn't have (đã làm thừa) vs didn't need to. Nên học kèm Unit 31 (have to and must).",
+    "must / mustn't / needn't: bắt buộc, cấm, không cần; needn't have (đã làm thừa) vs didn't need to (không cần phải). Nên học kèm Unit 31.",
   intro:
-    "Must / mustn't / needn't: bắt buộc, cấm, không cần; needn't have (đã làm thừa) vs didn't need to. Nên học kèm Unit 31 để nắm trọn have to / must / mustn't / don't have to.",
+    "Bài này giúp bạn phân biệt must (cần phải), mustn't (cấm), và needn't (không cần), cùng needn't have versus didn't need to cho quá khứ. Nên học kèm Unit 31 để nắm trọn have to / must / mustn't / don't have to.",
   structure: {
     affirmative: "S + must + V | S + needn't / don't need to + V | S + needn't have + V3",
-    negative: "S + mustn't + V | S + didn't need to / didn't have to + V",
+    negative:
+      "KHÔNG nhầm needn't (không cần) với mustn't (cấm) | needn't have (đã làm thừa) ≠ didn't need to (không cần phải làm)",
   },
   usagePoints: [
     {
@@ -33,12 +34,27 @@ export const U32_MUST_MUSTNT_NEEDNT_TOPIC: GrammarTopicDetail = {
     {
       before: "needn't / don't need to = ",
       strong: "không cần",
-      after: " (vẫn có thể làm nếu muốn): We needn't hurry. / We don't need to hurry. —needn't do (không to); don't need to do (có to).",
+      after: " (vẫn có thể làm nếu muốn): We needn't hurry. / We don't need to hurry.",
     },
     {
-      before: "So sánh: ",
-      strong: "needn't ≠ mustn't",
-      after: " — You needn't tell Steve (= không cần) vs You mustn't tell Steve (= không được).",
+      before: "needn't + V ",
+      strong: "(không to)",
+      after: ": We needn't hurry.",
+    },
+    {
+      before: "don't need ",
+      strong: "to + V",
+      after: ": We don't need to hurry.",
+    },
+    {
+      before: "You needn't tell Steve = ",
+      strong: "không cần nói",
+      after: " (vẫn có thể nói nếu muốn).",
+    },
+    {
+      before: "You mustn't tell Steve = ",
+      strong: "không được nói",
+      after: " (cấm).",
     },
     {
       before: "needn't have + V3 = ",
@@ -54,27 +70,27 @@ export const U32_MUST_MUSTNT_NEEDNT_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Don't tell anybody what I said. You must keep it a secret.",
-      vietnamese: "Đừng nói với ai những gì tôi nói. Bạn phải giữ bí mật.",
+      vietnamese: "Must = phải giữ bí mật — nghĩa vụ bắt buộc.",
     },
     {
       english: "You must keep it a secret. You mustn't tell anyone.",
-      vietnamese: "Bạn phải giữ bí mật. Bạn không được nói với ai.",
+      vietnamese: "Mustn't = cấm nói — đối lập với must (phải giữ).",
     },
     {
       english: "We have plenty of time. We needn't hurry.",
-      vietnamese: "Chúng ta còn nhiều thời gian. Không cần vội.",
+      vietnamese: "Needn't = không cần vội — khác mustn't (cấm vội).",
     },
     {
       english: "You needn't tell Steve. I can tell him myself.",
-      vietnamese: "Không cần nói với Steve. Tôi có thể tự nói với anh ấy.",
+      vietnamese: "Needn't tell = không cần nói với Steve — tùy chọn.",
     },
     {
       english: "Everything was OK. You needn't have worried.",
-      vietnamese: "Mọi thứ ổn cả. Đáng lẽ bạn không cần lo (nhưng bạn đã lo).",
+      vietnamese: "Needn't have worried = đáng lẽ không cần lo — nhưng bạn đã lo.",
     },
     {
       english: "They needn't have reserved a table. The restaurant was almost empty.",
-      vietnamese: "Họ đặt bàn không cần thiết. Nhà hàng gần như trống.",
+      vietnamese: "Needn't have reserved = đặt bàn thừa — việc đã làm nhưng không cần.",
     },
   ],
   practice: {

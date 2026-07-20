@@ -12,13 +12,13 @@ export const U31_HAVE_TO_AND_MUST_TOPIC: GrammarTopicDetail = {
   kindLabel: "Modal",
   sourceBook: "English Grammar in Use · Intermediate · Unit 31",
   sourceNote:
-    "have to and must: nghĩa vụ/sự cần thiết, must vs have to (ý kiến vs sự thật), mustn't ≠ don't have to, have got to. Nên học kèm Unit 32 và phân biệt Unit 28.",
+    "have to / must: nghĩa vụ và sự cần thiết; must vs have to (ý kiến vs sự thật); mustn't ≠ don't have to; have got to. Nên học kèm Unit 32 và phân biệt Unit 28.",
   intro:
-    "Unit này giúp bạn nắm Have To and Must: Have to and must: nghĩa vụ/sự cần thiết, must vs have to (ý kiến vs sự thật), mustn't ≠ don't have to, have got to. Nên học kèm Unit 32 và đừng nhầm với must suy đoán ở Unit 28.",
+    "Bài này giúp bạn nói nghĩa vụ bằng have to và must, phân biệt must (ý kiến cá nhân) với have to (quy định/sự thật), và không nhầm mustn't (cấm) với don't have to (không cần). Nên học kèm Unit 32 và đừng nhầm với must suy đoán ở Unit 28.",
   structure: {
     affirmative: "S + have/has/had to + V | S + must + V | S + have got to + V",
     negative:
-      "S + don't/doesn't/didn't have to + V (không cần) | S + mustn't + V (không được)",
+      "KHÔNG nhầm mustn't (cấm, không được) với don't have to (không cần) | KHÔNG dùng must ở quá khứ → had to",
   },
   usagePoints: [
     {
@@ -34,7 +34,12 @@ export const U31_HAVE_TO_AND_MUST_TOPIC: GrammarTopicDetail = {
     {
       before: "Ý kiến cá nhân: ",
       strong: "must hoặc have to",
-      after: " đều được: I must/have to phone her. Nghĩa vụ khách quan/sự thật → thường have to: I have to work from 8.30 to 5.30.",
+      after: " đều được: I must/have to phone her.",
+    },
+    {
+      before: "Nghĩa vụ khách quan/sự thật → thường ",
+      strong: "have to",
+      after: ": I have to work from 8.30 to 5.30.",
     },
     {
       before: "Quá khứ chỉ dùng ",
@@ -60,31 +65,31 @@ export const U31_HAVE_TO_AND_MUST_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "You have to turn left.",
-      vietnamese: "Bạn phải rẽ trái.",
+      vietnamese: "Have to = phải rẽ trái — nghĩa vụ khách quan.",
     },
     {
       english: "What do I have to do to get a new licence?",
-      vietnamese: "Tôi phải làm gì để lấy bằng mới?",
+      vietnamese: "Do I have to = câu hỏi với do/does — không nói must I have to.",
     },
     {
       english: "Karen doesn't have to work Saturdays.",
-      vietnamese: "Karen không phải làm thứ Bảy.",
+      vietnamese: "Doesn't have to = không bắt buộc làm thứ Bảy.",
     },
     {
       english: "I must phone her. / I have to phone her.",
-      vietnamese: "Tôi phải gọi cô ấy. (ý kiến cá nhân)",
+      vietnamese: "Must / have to = phải gọi — ý kiến cá nhân, cả hai đều được.",
     },
     {
       english: "You mustn't tell anyone.",
-      vietnamese: "Bạn không được nói với ai.",
+      vietnamese: "Mustn't = cấm nói — khác don't have to (không cần nói).",
     },
     {
       english: "You don't have to come with me.",
-      vietnamese: "Bạn không cần đi cùng tôi.",
+      vietnamese: "Don't have to = không cần đi — vẫn có thể đi nếu muốn.",
     },
     {
       english: "I had to leave early yesterday.",
-      vietnamese: "Hôm qua tôi phải đi sớm. (quá khứ — không dùng must)",
+      vietnamese: "Had to = quá khứ — KHÔNG nói must leave yesterday.",
     },
   ],
   practice: {

@@ -12,12 +12,13 @@ export const U33_SHOULD_1_TOPIC: GrammarTopicDetail = {
   kindLabel: "Modal",
   sourceBook: "English Grammar in Use · Intermediate · Unit 33",
   sourceNote:
-    "Should 1: lời khuyên/ý kiến, kỳ vọng, should have (done), ought to ≈ should. Nên học kèm Unit 34 (should 2).",
+    "should 1: lời khuyên và ý kiến, kỳ vọng, should have (đáng lẽ nên nhưng không), ought to ≈ should. Nên học kèm Unit 34.",
   intro:
-    "Should 1: lời khuyên/ý kiến, kỳ vọng, should have (done), ought to ≈ should. Nên học kèm Unit 34.",
+    "Bài này giúp bạn dùng should cho lời khuyên, ý kiến và kỳ vọng, should have cho điều đáng lẽ nên làm nhưng không, và ought to như should. Nên học kèm Unit 34.",
   structure: {
     affirmative: "S + should / ought to + V | S + should have / ought to have + V3",
-    negative: "S + shouldn't / ought not to + V | S + shouldn't have + V3",
+    negative:
+      "shouldn't / ought not to = không nên | shouldn't have = đáng lẽ không nên (nhưng đã làm)",
   },
   usagePoints: [
     {
@@ -31,9 +32,14 @@ export const U33_SHOULD_1_TOPIC: GrammarTopicDetail = {
       after: ": I don't think you should work so hard. Do you think I should apply?",
     },
     {
-      before: "Yếu hơn ",
-      strong: "must / have to",
-      after: ": You should apologise (= nên) vs You must / have to apologise (= không còn lựa chọn).",
+      before: "should = ",
+      strong: "nên",
+      after: " (lời khuyên, yếu hơn): You should apologise.",
+    },
+    {
+      before: "must / have to = ",
+      strong: "phải / không còn lựa chọn",
+      after: ": You must / have to apologise.",
     },
     {
       before: "should cũng diễn tả ",
@@ -43,7 +49,12 @@ export const U33_SHOULD_1_TOPIC: GrammarTopicDetail = {
     {
       before: "should have + V3 = ",
       strong: "đáng lẽ nên (nhưng không)",
-      after: "; shouldn't have = đáng lẽ không nên (nhưng đã): You should have come. I shouldn't have eaten so much.",
+      after: ": You should have come.",
+    },
+    {
+      before: "shouldn't have + V3 = ",
+      strong: "đáng lẽ không nên (nhưng đã)",
+      after: ": I shouldn't have eaten so much.",
     },
     {
       before: "ought to ≈ ",
@@ -54,27 +65,27 @@ export const U33_SHOULD_1_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "You look tired. You should go to bed.",
-      vietnamese: "Bạn trông mệt. Bạn nên đi ngủ.",
+      vietnamese: "Should = lời khuyên nên đi ngủ — không bắt buộc như must.",
     },
     {
       english: "You shouldn't believe everything you read in newspapers.",
-      vietnamese: "Bạn không nên tin hết những gì đọc được trên báo.",
+      vietnamese: "Shouldn't = không nên tin hết — lời khuyên phủ định.",
     },
     {
       english: "Where's Tina? She should be here by now.",
-      vietnamese: "Tina đâu rồi? Lẽ ra lúc này cô ấy phải ở đây rồi.",
+      vietnamese: "Should be = lẽ ra lúc này phải ở đây — kỳ vọng.",
     },
     {
       english: "You missed a great party. You should have come.",
-      vietnamese: "Bạn đã bỏ lỡ một buổi tiệc hay. Đáng lẽ bạn nên đến.",
+      vietnamese: "Should have come = đáng lẽ nên đến — nhưng đã không.",
     },
     {
       english: "I'm feeling sick. I shouldn't have eaten so much.",
-      vietnamese: "Tôi đang buồn nôn. Đáng lẽ tôi không nên ăn nhiều thế.",
+      vietnamese: "Shouldn't have eaten = đáng lẽ không nên ăn nhiều — nhưng đã ăn.",
     },
     {
       english: "It was a great party. You ought to have come.",
-      vietnamese: "Buổi tiệc tuyệt thật. Đáng lẽ bạn nên đến. (= should have)",
+      vietnamese: "Ought to have = cùng nghĩa should have — có to sau ought.",
     },
   ],
   practice: {

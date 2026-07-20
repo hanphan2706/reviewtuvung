@@ -12,13 +12,13 @@ export const U28_MUST_AND_CANT_TOPIC: GrammarTopicDetail = {
   kindLabel: "Modal",
   sourceBook: "English Grammar in Use · Intermediate · Unit 28",
   sourceNote:
-    "must and can't: suy đoán chắc chắn (hiện tại/quá khứ) — must have / can't have. Khác must nghĩa vụ ở Units 31–32. Nên học kèm Unit 27 (couldn't have).",
+    "must / can't: suy đoán chắc chắn (hiện tại và quá khứ) — must have / can't have. Khác must nghĩa vụ ở Units 31–32. Nên học kèm Unit 27 (couldn't have).",
   intro:
-    "Unit này giúp bạn nắm Must and Can't: Must and can't: suy đoán chắc chắn (hiện tại/quá khứ) — must have / can't have. Khác must nghĩa vụ ở Units 31–32. Nên học kèm Unit 26 (can't khả năng) và Unit 27 (couldn't have).",
+    "Bài này giúp bạn dùng must và can't để suy đoán chắc chắn dựa trên bằng chứng logic, gồm must have / can't have cho quá khứ — khác hẳn must nghĩa vụ ở Units 31–32. Nên học kèm Unit 26 (can't khả năng) và Unit 27 (couldn't have).",
   structure: {
     affirmative: "S + must + be / be -ing / V (chắc chắn) | S + must have + V3 / been -ing (quá khứ)",
     negative:
-      "S + can't + be / be -ing / V (chắc không) | S + can't/couldn't have + V3 / been -ing",
+      "KHÔNG nhầm must (suy đoán) với must (bắt buộc Unit 31–32) | can't / can't have / couldn't have = chắc không thể / chắc đã không",
   },
   usagePoints: [
     {
@@ -52,35 +52,40 @@ export const U28_MUST_AND_CANT_TOPIC: GrammarTopicDetail = {
       after: " thay cho can't have với cùng nghĩa suy đoán chắc chắn không: Sarah couldn't have got my message.",
     },
     {
-      before: "Đừng nhầm với ",
-      strong: "must nghĩa vụ",
-      after: " (Units 31–32): You must be tired = suy đoán; You must phone her = bắt buộc/ý kiến cần làm.",
+      before: "must (suy đoán): ",
+      strong: "You must be tired",
+      after: " = chắc bạn mệt (dựa trên bằng chứng).",
+    },
+    {
+      before: "must (nghĩa vụ, Unit 31–32): ",
+      strong: "You must phone her",
+      after: " = bạn phải/nên gọi (bắt buộc hoặc ý kiến cần làm).",
     },
   ],
   examples: [
     {
       english: "You've been travelling all day. You must be tired.",
-      vietnamese: "Bạn đi đường cả ngày rồi. Chắc bạn mệt rồi.",
+      vietnamese: "Must be = chắc mệt rồi — suy đoán từ bằng chứng, không phải lệnh.",
     },
     {
       english: "You've just had lunch. You can't be hungry already.",
-      vietnamese: "Bạn vừa ăn trưa xong. Không thể đói ngay được.",
+      vietnamese: "Can't be = chắc không thể đói ngay — logic phủ định.",
     },
     {
       english: "They must have gone out.",
-      vietnamese: "Họ chắc đã đi ra ngoài.",
+      vietnamese: "Must have gone = chắc đã ra ngoài — suy đoán quá khứ.",
     },
     {
       english: "I must have dropped it somewhere.",
-      vietnamese: "Chắc tôi đã làm rơi đâu đó.",
+      vietnamese: "Must have dropped = chắc đã làm rơi đâu đó.",
     },
     {
       english: "She can't have got my message.",
-      vietnamese: "Cô ấy chắc chưa nhận được tin nhắn của tôi.",
+      vietnamese: "Can't have got = chắc chưa nhận được — khác might not have (có lẽ chưa).",
     },
     {
       english: "He can't have been looking where he was going.",
-      vietnamese: "Anh ấy chắc không nhìn đường.",
+      vietnamese: "Can't have been -ing = chắc không nhìn đường lúc đó.",
     },
   ],
   practice: {
