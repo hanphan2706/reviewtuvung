@@ -11,12 +11,13 @@ export const HAVE_AND_HAVE_GOT_TOPIC: GrammarTopicDetail = {
   kindLabel: "Verb",
   sourceBook: "English Grammar in Use · Intermediate · Unit 17",
   sourceNote:
-    "Have and have got. Have (got) cho sở hữu/quan hệ/bệnh tật/hẹn; have (không có got) cho các hoạt động/trải nghiệm như have breakfast, have a shower...",
+    "have (got) cho sở hữu/quan hệ/bệnh tật/hẹn — dùng như nhau; have (không got) cho hoạt động/trải nghiệm như have breakfast, have a shower.",
   intro:
-    "Have and have got. Have (got) cho sở hữu/quan hệ/bệnh tật/hẹn; have (không có got) cho các hoạt động/trải nghiệm như have breakfast, have a shower.",
+    "Bài này giúp bạn dùng have và have got đúng chỗ: cả hai đều được cho sở hữu, quan hệ, bệnh tật, cuộc hẹn, nhưng chỉ have (không thêm got) mới đi được với các cụm hoạt động/trải nghiệm như have breakfast, have a shower, have a good time.",
   structure: {
     affirmative: "S + have/has (got) + noun (sở hữu) | S + have + noun (hoạt động/trải nghiệm)",
-    negative: "S + don't/doesn't have + noun | S + haven't/hasn't got + noun",
+    negative:
+      "KHÔNG dùng got với cụm hoạt động (have got a shower, have got a good time) — bỏ got: have a shower | KHÔNG thêm got ở quá khứ (had got long hair) — chỉ dùng had: Lisa had long hair",
   },
   usagePoints: [
     {
@@ -27,7 +28,7 @@ export const HAVE_AND_HAVE_GOT_TOPIC: GrammarTopicDetail = {
     {
       before: "Với nghĩa sở hữu, ",
       strong: "không dùng dạng tiếp diễn",
-      after: " (I'm having không đúng nghĩa này): We have / We've got a nice room (not We're having a nice room).",
+      after: ": We have / We've got a nice room (not We're having a nice room).",
     },
     {
       before: "Ở quá khứ chỉ dùng ",
@@ -42,7 +43,7 @@ export const HAVE_AND_HAVE_GOT_TOPIC: GrammarTopicDetail = {
     {
       before: "have (không có got) còn dùng cho ",
       strong: "hoạt động/trải nghiệm",
-      after: ": have breakfast, have a shower, have a good time, have an accident... — những cụm này có thể dùng continuous (having a shower) và dùng do/does/did trong câu hỏi/phủ định.",
+      after: ": have breakfast, have a shower, have a good time, have an accident... — những cụm này dùng được continuous (having a shower) và dùng do/does/did trong câu hỏi/phủ định.",
     },
     {
       before: "",
@@ -53,31 +54,31 @@ export const HAVE_AND_HAVE_GOT_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "They have a new car.",
-      vietnamese: "Họ có một chiếc ô tô mới.",
+      vietnamese: "have = sở hữu — đổi thành have got vẫn giữ đúng nghĩa.",
     },
     {
       english: "Lisa has got two brothers.",
-      vietnamese: "Lisa có hai anh/em trai.",
+      vietnamese: "has got = quan hệ gia đình — hoàn toàn tương đương has two brothers.",
     },
     {
       english: "I have a headache.",
-      vietnamese: "Tôi bị đau đầu.",
+      vietnamese: "have = bệnh tật/tình trạng cơ thể, có thể thêm got: I've got a headache.",
     },
     {
       english: "Lisa had long hair when she was a child.",
-      vietnamese: "Lisa từng có tóc dài khi còn nhỏ.",
+      vietnamese: "quá khứ chỉ dùng had, không nói had got long hair.",
     },
     {
       english: "Do you have any questions? / Have you got any questions?",
-      vietnamese: "Bạn có câu hỏi nào không?",
+      vietnamese: "hai cách hỏi tương đương nhau cho nghĩa sở hữu.",
     },
     {
       english: "He's having a shower.",
-      vietnamese: "Anh ấy đang tắm.",
+      vietnamese: "having a shower = đang tắm — đây là hoạt động, nên dùng được continuous, không dùng got.",
     },
     {
       english: "Did you have trouble finding somewhere to stay?",
-      vietnamese: "Bạn có gặp khó khăn khi tìm chỗ ở không?",
+      vietnamese: "have trouble = trải nghiệm/tình huống, dùng did để hỏi, không dùng have got.",
     },
   ],
   practice: {

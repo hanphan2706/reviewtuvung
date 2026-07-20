@@ -11,12 +11,13 @@ export const U20_IM_GOING_TO_DO_TOPIC: GrammarTopicDetail = {
   kindLabel: "Tense",
   sourceBook: "English Grammar in Use · Intermediate · Unit 20",
   sourceNote:
-    "I'm going to (do). So sánh với I am doing (Unit 19A) và I will (Unit 23). was/were going to cho kế hoạch đã bỏ.",
+    "am/is/are + going to + V cho ý định đã quyết định hoặc dự đoán rõ ràng từ tình huống hiện tại; was/were + going to = đã định làm nhưng rồi không làm. Nên học kèm Unit 19 (am doing) và Unit 23 (I will and I'm going to).",
   intro:
-    "I'm going to (do). So sánh với I am doing (Unit 19A) và I will (Unit 23). was/were going to cho kế hoạch đã bỏ.",
+    "Bài này giúp bạn dùng am/is/are + going to + V khi đã quyết định hoặc có ý định làm gì, dùng going to để dự đoán dựa trên tình huống hiện tại, và dùng was/were + going to cho ý định đã bỏ hoặc thay đổi. So sánh với I am doing (Unit 19) và I will (Unit 23).",
   structure: {
     affirmative: "S + am/is/are + going to + V | S + was/were + going to + V (quá khứ, không thực hiện)",
-    negative: "S + am/is/are + not + going to + V | S + was/were + not + going to + V",
+    negative:
+      "KHÔNG nhầm am/is/are + not + going to (chưa có ý định) với was/were + not + going to (đã định nhưng rồi không làm) → We were going to travel by train, but then we decided to drive. | S + am/is/are + not + going to + V | S + was/were + not + going to + V",
   },
   usagePoints: [
     {
@@ -48,31 +49,31 @@ export const U20_IM_GOING_TO_DO_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "'Are you going to eat anything?' 'No, I'm not hungry.'",
-      vietnamese: "'Bạn có ăn gì không?' 'Không, tôi không đói.'",
+      vietnamese: "Going to eat = hỏi về ý định, chưa chắc đã sắp xếp cụ thể.",
     },
     {
       english: "She's going to buy a new car.",
-      vietnamese: "Cô ấy sẽ mua một chiếc xe mới. (đã quyết định)",
+      vietnamese: "Going to buy = đã quyết định, dù chưa chắc đã hẹn mua ở đâu.",
     },
     {
       english: "This cheese smells horrible. I'm not going to eat it.",
-      vietnamese: "Miếng phô mai này có mùi kinh khủng. Tôi sẽ không ăn nó.",
+      vietnamese: "'m not going to eat = phủ định ý định, quyết định ngay từ tình huống trước mắt.",
     },
     {
       english: "The man isn't looking where he is going. He is going to walk into the wall.",
-      vietnamese: "Người đó không nhìn đường đi. Anh ta sắp đâm vào tường. (dự đoán từ tình huống hiện tại)",
+      vietnamese: "Is going to walk into = dự đoán từ tình huống hiện tại đã rõ ràng.",
     },
     {
       english: "We were going to travel by train, but then we decided to drive instead.",
-      vietnamese: "Chúng tôi định đi tàu, nhưng sau đó quyết định lái xe.",
+      vietnamese: "Were going to travel = ý định cũ đã bị đổi — was/were going to cho kế hoạch bỏ.",
     },
     {
       english: "I thought it was going to rain, but it didn't.",
-      vietnamese: "Tôi nghĩ là sẽ mưa, nhưng cuối cùng không mưa.",
+      vietnamese: "Was going to rain = dự đoán quá khứ không đúng, việc không xảy ra.",
     },
     {
       english: "I feel terrible. I think I'm going to be sick.",
-      vietnamese: "Tôi thấy khó chịu quá. Tôi nghĩ tôi sắp bị ốm/nôn.",
+      vietnamese: "Going to be sick = dự đoán dựa trên cảm giác hiện tại, sắp xảy ra.",
     },
   ],
   practice: {

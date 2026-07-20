@@ -12,12 +12,13 @@ export const U23_I_WILL_AND_IM_GOING_TO_TOPIC: GrammarTopicDetail = {
   kindLabel: "Tense",
   sourceBook: "English Grammar in Use · Intermediate · Unit 23",
   sourceNote:
-    "I will and I'm going to: đối chiếu quyết định tức thời (will) với ý định đã có từ trước (going to), và cách cả hai đều dùng để dự đoán. Nên học kèm Units 20–22 (will vs going to) để đối chiếu trọn vẹn.",
+    "will = quyết định mới ngay lúc nói; going to = đã quyết định từ trước; cả hai đều dùng để dự đoán tương lai. Nên học kèm Units 20–22 (will và going to riêng lẻ).",
   intro:
-    "I will and I'm going to: đối chiếu quyết định tức thời (will) với ý định đã có từ trước (going to), và cách cả hai đều dùng để dự đoán. Nên học kèm Units 20–22 để nắm trọn cách will và going to hoạt động riêng lẻ trước khi so sánh.",
+    "Bài này giúp bạn phân biệt will (quyết định mới, đưa ra ngay lúc nói) với I'm going to (đã quyết định từ trước khi nói câu đó), và biết cả hai đều dùng để dự đoán tương lai. Nên học kèm Units 20–22 để nắm trọn will và going to hoạt động riêng lẻ trước khi so sánh.",
   structure: {
     affirmative: "S + will/'ll + V (quyết định mới, ngay lúc nói) | S + am/is/are + going to + V (đã quyết định từ trước)",
-    negative: "S + will not/won't + V | S + am/is/are + not + going to + V",
+    negative:
+      "KHÔNG dùng going to cho quyết định vừa nảy ra ngay lúc nói → OK, I'll call him. (không: I'm going to call him, nếu ý định chưa có từ trước) | S + will not/won't + V | S + am/is/are + not + going to + V",
   },
   usagePoints: [
     {
@@ -49,31 +50,31 @@ export const U23_I_WILL_AND_IM_GOING_TO_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "'Gary has been trying to contact you.' 'Has he? OK, I'll call him.'",
-      vietnamese: "'Gary đã cố liên lạc với bạn đấy.' 'Vậy sao? OK, tôi sẽ gọi cho anh ấy.' (quyết định mới)",
+      vietnamese: "'ll call = quyết định vừa nảy ra ngay lúc nghe tin.",
     },
     {
       english: "'Anna is in hospital.' 'Yes, I know. I'm going to visit her this evening.'",
-      vietnamese: "'Anna đang nằm viện.' 'Vâng, tôi biết. Tôi sẽ đến thăm cô ấy tối nay.' (đã định trước)",
+      vietnamese: "Going to visit = ý định đã có từ trước khi nghe câu nói kia.",
     },
     {
       english: "Let's have a party. — That's a great idea. We'll invite lots of people.",
-      vietnamese: "Hãy tổ chức tiệc đi. — Ý tưởng tuyệt đấy. Chúng ta sẽ mời nhiều người. (quyết định vừa chốt)",
+      vietnamese: "'ll invite = quyết định vừa chốt ngay lúc nói.",
     },
     {
       english: "Sarah and I have decided to have a party. We're going to invite lots of people.",
-      vietnamese: "Sarah và tôi đã quyết định tổ chức tiệc. Chúng tôi sẽ mời nhiều người. (đã định từ trước)",
+      vietnamese: "Going to invite = kế hoạch đã quyết định từ trước, không phải ý mới.",
     },
     {
       english: "Those shoes are well-made. They'll last a long time.",
-      vietnamese: "Đôi giày đó làm tốt lắm. Chúng sẽ bền lâu. (dự đoán, niềm tin cá nhân)",
+      vietnamese: "'ll last = dự đoán dựa trên suy nghĩ, niềm tin cá nhân.",
     },
     {
       english: "Look at those black clouds. It's going to rain.",
-      vietnamese: "Nhìn những đám mây đen kia. Trời sắp mưa rồi. (dự đoán từ dấu hiệu rõ ràng)",
+      vietnamese: "Going to rain = dự đoán từ dấu hiệu rõ ràng ngay trước mắt.",
     },
     {
       english: "We're going to be late. The meeting starts in five minutes.",
-      vietnamese: "Chúng ta sẽ muộn mất. Cuộc họp bắt đầu trong năm phút nữa.",
+      vietnamese: "Going to be late = dự đoán dựa trên tình huống hiện tại (giờ họp).",
     },
   ],
   practice: {

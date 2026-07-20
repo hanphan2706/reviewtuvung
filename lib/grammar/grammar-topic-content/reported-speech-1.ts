@@ -12,14 +12,14 @@ export const U47_REPORTED_SPEECH_1_TOPIC: GrammarTopicDetail = {
   kindLabel: "Reported speech",
   sourceBook: "English Grammar in Use · Intermediate · Unit 47",
   sourceNote:
-    "Direct → reported; lùi thì (am→was, will→would…); that có thể lược. Nên học kèm Unit 48; reported questions ➜ Unit 50.",
+    "Direct speech → reported speech: lùi thì một bậc (am/is→was, will→would…); that có thể lược. Nên học kèm Unit 48; câu hỏi tường thuật ➜ Unit 50.",
   intro:
-    "Direct → reported; lùi thì (am→was, will→would…); that có thể lược. Nên học kèm Unit 48 (say/tell, không luôn lùi thì) và Unit 50B (câu hỏi tường thuật).",
+    "Bài này giúp bạn chuyển lời nói trực tiếp sang reported speech bằng cách lùi thì một bậc (am/is → was, will → would, can → could…), biết khi nào có thể bỏ that, và đổi đại từ/sở hữu theo người nói. Nên học kèm Unit 48 (say/tell, không luôn phải lùi thì) và Unit 50B (câu hỏi tường thuật).",
   structure: {
     affirmative:
       "S + said/told … (that) + S + past verb | Paul said he was feeling ill",
     negative:
-      "… said (that) + S + didn't / wasn't / wouldn't / couldn't…",
+      "KHÔNG giữ nguyên thì hiện tại khi động từ tường thuật ở quá khứ → she said she didn't have any money (không: she said she doesn't have) | said/told (that) + S + didn't/wasn't/wouldn't/couldn't…",
   },
   usagePoints: [
     {
@@ -56,27 +56,27 @@ export const U47_REPORTED_SPEECH_1_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Paul said that he was feeling ill.",
-      vietnamese: "Paul nói rằng anh ấy đang cảm thấy ốm.",
+      vietnamese: "Was feeling = am/is lùi thành was trong reported speech.",
     },
     {
       english: "Anna said that she had lost her phone.",
-      vietnamese: "Anna nói rằng cô đã mất điện thoại. ('I've lost…')",
+      vietnamese: "Had lost = have lùi thành had (present perfect → past perfect).",
     },
     {
       english: "She said that she couldn't come to the party on Friday.",
-      vietnamese: "Cô ấy nói không thể đến tiệc thứ Sáu.",
+      vietnamese: "Couldn't = can lùi thành could trong reported speech.",
     },
     {
       english: "She said she was going away and would phone me when she got back.",
-      vietnamese: "Cô ấy nói sẽ đi vài ngày và sẽ gọi khi về.",
+      vietnamese: "Would phone = will lùi thành would.",
     },
     {
       english: "Paul said he woke up feeling ill, so he didn't go to work.",
-      vietnamese: "Paul nói anh thức dậy thấy ốm nên không đi làm. (past có thể giữ)",
+      vietnamese: "Woke up / didn't go = past simple có thể giữ nguyên trong reported speech.",
     },
     {
       english: "Paul said he had woken up feeling ill, so he hadn't gone to work.",
-      vietnamese: "Cũng đúng với past perfect.",
+      vietnamese: "Had woken up / hadn't gone = past simple cũng có thể đổi thành past perfect.",
     },
   ],
   practice: {

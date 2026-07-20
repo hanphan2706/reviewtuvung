@@ -12,12 +12,13 @@ export const PRESENT_PERFECT_AND_PAST_1_TOPIC: GrammarTopicDetail = {
   kindLabel: "Tense",
   sourceBook: "English Grammar in Use · Intermediate · Unit 13",
   sourceNote:
-    "Present perfect and past 1 (I have done and I did). Nên học kèm Unit 14 để nắm trọn bộ khi nào dùng present perfect và khi nào dùng past simple.",
+    "Present perfect nói tình huống ở hiện tại; past simple chỉ kể việc đã xảy ra, không rõ tình trạng bây giờ. Nên học kèm Unit 14 để nắm trọn bộ quy tắc chọn giữa hai thời.",
   intro:
-    "Trong unit này bạn sẽ nắm: Present perfect and past 1 (I have done and I did). Nên học kèm Unit 14 để có bức tranh đầy đủ về sự khác biệt giữa hai thời này.",
+    "Bài này giúp bạn chọn đúng giữa present perfect (I have done) khi tình huống còn liên quan đến hiện tại và past simple (I did) khi chỉ kể lại việc đã xảy ra trong quá khứ, kể cả trường hợp present perfect đưa tin mới rồi chuyển ngay sang past simple để kể chi tiết. Nên học kèm Unit 14 để có bức tranh đầy đủ về sự khác biệt giữa hai thời này.",
   structure: {
     affirmative: "S + have/has + V3 (còn liên quan hiện tại) | S + V-ed/V2 (chỉ nói về quá khứ)",
-    negative: "S + haven't/hasn't + V3 | S + didn't + V",
+    negative:
+      "KHÔNG dùng present perfect cho việc đã xa, không còn mới (Mozart has written 600 pieces) — dùng past simple: Mozart wrote 600 pieces | S + haven't/hasn't + V3 | S + didn't + V",
   },
   usagePoints: [
     {
@@ -49,31 +50,31 @@ export const PRESENT_PERFECT_AND_PAST_1_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Tom has lost his key. He can't find it.",
-      vietnamese: "Tom đã làm mất chìa khóa. Anh ấy không tìm được.",
+      vietnamese: "has lost = hiện tại đang không có chìa khóa — present perfect nói tình huống bây giờ.",
     },
     {
       english: "He lost his key, but now he has found it.",
-      vietnamese: "Anh ấy đã làm mất chìa khóa, nhưng giờ đã tìm lại được.",
+      vietnamese: "lost (past simple) kể việc đã qua; has found (present perfect) là tình huống hiện tại.",
     },
     {
       english: "I've repaired the washing machine. It's working OK now.",
-      vietnamese: "Tôi đã sửa máy giặt. Giờ nó chạy tốt rồi.",
+      vietnamese: "tin mới, gần đây — có thể đổi thành I repaired the washing machine mà nghĩa tương tự.",
     },
     {
       english: "Mozart was a composer. He wrote more than 600 pieces of music.",
-      vietnamese: "Mozart là một nhà soạn nhạc. Ông đã viết hơn 600 tác phẩm âm nhạc.",
+      vietnamese: "việc đã xa, không còn mới — chỉ dùng wrote, không dùng has written.",
     },
     {
       english: "Somebody has invented a new type of washing machine.",
-      vietnamese: "Ai đó đã phát minh ra một loại máy giặt mới.",
+      vietnamese: "tin tức mới nói chung, chưa cần biết ai/khi nào — present perfect phù hợp.",
     },
     {
       english: "Who invented the telephone?",
-      vietnamese: "Ai đã phát minh ra điện thoại?",
+      vietnamese: "hỏi về sự kiện lịch sử cụ thể, đã xa — dùng past simple, không dùng has invented.",
     },
     {
       english: "I've burnt myself. — How did you do that? — I picked up a hot dish.",
-      vietnamese: "Tôi bị bỏng. — Sao bị vậy? — Tôi cầm một cái đĩa nóng.",
+      vietnamese: "câu đầu là tin mới (present perfect); hỏi/đáp chi tiết tiếp theo chuyển sang past simple.",
     },
   ],
   practice: {

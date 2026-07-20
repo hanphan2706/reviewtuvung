@@ -12,14 +12,14 @@ export const U52_QUESTION_TAGS_TOPIC: GrammarTopicDetail = {
   kindLabel: "Question",
   sourceBook: "English Grammar in Use · Intermediate · Unit 52",
   sourceNote:
-    "Tag = mini-question; khẳng định + tag phủ định / ngược lại; Let's… shall we?; Don't… will you?; I'm… aren't I?. Nên học kèm Unit 51.",
+    "Question tag = mini-question ở cuối câu; câu khẳng định + tag phủ định và ngược lại; I'm…→ aren't I?; Let's…→ shall we?; Don't…→ will you?. Nên học kèm Unit 51.",
   intro:
-    "Tag = mini-question; khẳng định + tag phủ định / ngược lại; Let's… shall we?; Don't… will you?; I'm… aren't I? Nên học kèm Unit 51 (trợ động từ) và Units 49–50 (câu hỏi).",
+    "Bài này giúp bạn thêm question tag vào cuối câu để xác nhận hoặc hỏi lại: câu khẳng định đi với tag phủ định, câu phủ định đi với tag khẳng định, cùng các trường hợp đặc biệt như I'm… → aren't I?, Let's… → shall we? và Don't… → will you? Nên học kèm Unit 51 (trợ động từ) và Units 49–50 (câu hỏi).",
   structure: {
     affirmative:
       "Positive sentence, negative tag? | Let's…, shall we? | I'm…, aren't I?",
     negative:
-      "Negative sentence, positive tag? | Don't…, will you?",
+      "KHÔNG dùng amn't I → I'm right, aren't I? (không: amn't I) | Negative sentence, positive tag? | Don't…, will you?",
   },
   usagePoints: [
     {
@@ -56,27 +56,27 @@ export const U52_QUESTION_TAGS_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "It's a nice day, isn't it?",
-      vietnamese: "Hôm nay đẹp trời, đúng không? (chờ đồng ý)",
+      vietnamese: "Isn't it = tag phủ định sau câu khẳng định.",
     },
     {
       english: "You haven't seen Kate today, have you?",
-      vietnamese: "Hôm nay bạn chưa gặp Kate chứ? (hỏi thật)",
+      vietnamese: "Have you = tag khẳng định sau câu phủ định.",
     },
     {
       english: "Let's go for a walk, shall we?",
-      vietnamese: "Đi dạo thôi, được không?",
+      vietnamese: "Shall we = tag đặc biệt sau Let's….",
     },
     {
       english: "Don't be late, will you?",
-      vietnamese: "Đừng muộn nhé, được chứ?",
+      vietnamese: "Will you = tag đặc biệt sau câu ra lệnh/yêu cầu (Don't…).",
     },
     {
       english: "I'm right, aren't I?",
-      vietnamese: "Tôi đúng chứ? (= am I not)",
+      vietnamese: "Aren't I = tag đặc biệt cho I'm…, KHÔNG dùng amn't I.",
     },
     {
       english: "You couldn't do me a favour, could you?",
-      vietnamese: "Bạn làm ơn giúp mình được không?",
+      vietnamese: "Could you = phủ định + tag khẳng định dùng để nhờ vả lịch sự.",
     },
   ],
   practice: {

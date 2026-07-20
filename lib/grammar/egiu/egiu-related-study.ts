@@ -10,6 +10,15 @@ type RelatedStudySpec = {
  * Companion / contrast units — used to deep-link Unit N mentions in the intro.
  */
 const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
+  1: {
+    message: "Nên học kèm Unit 2 (present simple) để có đủ hai vế trước khi so sánh trực tiếp ở Unit 3.",
+    unitNumbers: [2, 3],
+  },
+  2: {
+    message:
+      "Nên học kèm Unit 1 (present continuous) để phân biệt việc đang xảy ra với việc lặp lại, rồi xem Unit 3 khi so sánh trực tiếp hai thời này.",
+    unitNumbers: [1, 3],
+  },
   3: {
     message: "Nên học kèm Unit 4 để nắm đủ đối chiếu present continuous và present simple.",
     unitNumbers: [4],
@@ -18,9 +27,39 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
     message: "Nên học kèm Unit 3 để có bức tranh đầy đủ về đối chiếu continuous và simple.",
     unitNumbers: [3],
   },
+  5: {
+    message: "Nên học kèm Unit 6 (past continuous) để biết cách kết hợp hai thời này khi kể chuyện.",
+    unitNumbers: [6],
+  },
+  6: {
+    message: "Nên học kèm Unit 5 (past simple) để phân biệt việc đã hoàn tất với việc đang diễn ra.",
+    unitNumbers: [5],
+  },
+  7: {
+    message:
+      "Nên học kèm Unit 8 (kinh nghiệm sống) và Unit 9 (present perfect continuous) để nắm trọn nhóm thời present perfect.",
+    unitNumbers: [8, 9],
+  },
+  8: {
+    message: "Nên học kèm Unit 7 (present perfect 1) và Unit 9 (present perfect continuous) để nắm trọn nhóm thời này.",
+    unitNumbers: [7, 9],
+  },
+  9: {
+    message:
+      "Nên học kèm Unit 7 và Unit 8 (present perfect 1–2) để thấy sự khác nhau giữa continuous và simple trong nhóm thời present perfect.",
+    unitNumbers: [7, 8],
+  },
   10: {
     message: "Nên học kèm Unit 9 (continuous) và Units 7–8 (simple) để thấy rõ sự khác biệt giữa hai dạng.",
     unitNumbers: [9, 7, 8],
+  },
+  11: {
+    message: "Nên học kèm Unit 10 (continuous và simple) và Unit 12 (for and since) để nắm trọn cụm present perfect chỉ khoảng thời gian.",
+    unitNumbers: [10, 12],
+  },
+  12: {
+    message: "Nên học kèm Unit 11 (how long have you been) để ôn lại present perfect chỉ khoảng thời gian trước khi đi sâu vào for và since.",
+    unitNumbers: [11],
   },
   13: {
     message: "Nên học kèm Unit 14 để nắm trọn bộ khi nào dùng present perfect và khi nào dùng past simple.",
@@ -29,6 +68,14 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
   14: {
     message: "Nên học kèm Unit 13 để hoàn thiện quy tắc chọn giữa present perfect và past simple.",
     unitNumbers: [13],
+  },
+  15: {
+    message: "Nên học kèm Unit 16 (past perfect continuous) và Units 13–14 (present perfect and past) để phân biệt các mốc thời gian trong quá khứ.",
+    unitNumbers: [16, 13, 14],
+  },
+  16: {
+    message: "Nên học kèm Unit 15 (past perfect) trước khi học dạng tiếp diễn của thời này.",
+    unitNumbers: [15],
   },
   18: {
     message: "Nên học kèm Unit 61 (be/get used to) để phân biệt used to do và am/is/are used to doing.",
@@ -59,6 +106,11 @@ const RELATED_STUDY_BY_UNIT: Readonly<Record<number, RelatedStudySpec>> = {
   24: {
     message: "Nên học kèm Units 21–22 (will/shall) và Unit 120 (by then / by the time).",
     unitNumbers: [21, 22, 120],
+  },
+  25: {
+    message:
+      "Nên học kèm Unit 19 (present tenses cho tương lai) và Unit 7 (present perfect) trước khi kết hợp với when/if; so sánh với Unit 38 (if I do và if I did) để phân biệt if thật với if giả định.",
+    unitNumbers: [19, 7, 38],
   },
   26: {
     message: "Nên học kèm Unit 27 (could / could have) và Unit 37 (can/could you…?) để mở rộng cách dùng can/could.",

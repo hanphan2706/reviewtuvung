@@ -12,14 +12,14 @@ export const U50_QUESTIONS_2_TOPIC: GrammarTopicDetail = {
   kindLabel: "Question",
   sourceBook: "English Grammar in Use · Intermediate · Unit 50",
   sourceNote:
-    "Câu hỏi gián tiếp (Do you know…?); if/whether; reported questions. Nên học kèm Unit 49; Units 47–48.",
+    "Câu hỏi gián tiếp (Do you know…?) giữ nguyên trật tự chủ ngữ + động từ, không đảo, không dùng do/does/did; if/whether khi không có từ hỏi. Nên học kèm Unit 49; Units 47–48.",
   intro:
-    "Câu hỏi gián tiếp (Do you know…?); if/whether; reported questions. Nên học kèm Unit 49 và Units 47–48.",
+    "Bài này giúp bạn giữ nguyên trật tự chủ ngữ trước động từ trong câu hỏi gián tiếp (Do you know where…?) và trong reported questions, bỏ do/does/did, và dùng if/whether khi câu hỏi không có từ hỏi. Nên học kèm Unit 49 (câu hỏi trực tiếp) và Units 47–48 (reported speech).",
   structure: {
     affirmative:
       "Do you know + question word + S + verb…? | asked if/whether + S + verb | asked + wh- + S + verb",
     negative:
-      "I don't know if/whether… | I wonder why she left… (không đảo)",
+      "KHÔNG đảo trợ động từ lên trước chủ ngữ trong câu hỏi gián tiếp → Do you know where Tom has gone? (không: where has Tom gone) | I don't know if/whether…",
   },
   usagePoints: [
     {
@@ -56,27 +56,27 @@ export const U50_QUESTIONS_2_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Do you know where Tom has gone?",
-      vietnamese: "Bạn có biết Tom đã đi đâu không? (không: where has Tom gone)",
+      vietnamese: "Where Tom has gone = giữ nguyên trật tự S trước V, không đảo.",
     },
     {
       english: "Do you know what time the film starts?",
-      vietnamese: "Bạn có biết phim bắt đầu lúc mấy không?",
+      vietnamese: "The film starts = KHÔNG dùng does trong câu hỏi gián tiếp.",
     },
     {
       english: "I don't know if anybody saw me.",
-      vietnamese: "Tôi không biết có ai thấy tôi không. (if/whether)",
+      vietnamese: "If anybody saw = dùng if khi câu hỏi gốc không có từ hỏi.",
     },
     {
       english: "The police officer asked us where we were going.",
-      vietnamese: "Cảnh sát hỏi chúng tôi đang đi đâu.",
+      vietnamese: "Where we were going = reported question giữ nguyên trật tự S–V.",
     },
     {
       english: "She asked if I was willing to travel.",
-      vietnamese: "Cô ấy hỏi liệu tôi có sẵn sàng đi công tác không.",
+      vietnamese: "If I was willing = if/whether trong reported question.",
     },
     {
       english: "She wanted to know what I did in my spare time.",
-      vietnamese: "Cô ấy muốn biết tôi làm gì lúc rảnh.",
+      vietnamese: "What I did = did lùi từ do trong reported question.",
     },
   ],
   practice: {

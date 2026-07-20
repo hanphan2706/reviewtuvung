@@ -12,14 +12,14 @@ export const U51_AUXILIARY_VERBS_TOPIC: GrammarTopicDetail = {
   kindLabel: "Auxiliary",
   sourceBook: "English Grammar in Use · Intermediate · Unit 51",
   sourceNote:
-    "Trợ động từ tránh lặp; phản hồi ngạc nhiên; so / neither; I think so / I hope not…. Nên học kèm Units 49–50, 52.",
+    "Trợ động từ (have/do/can…) thay cho lặp cả động từ; so am I / neither do I; I think so / I hope not thay cho lặp cả mệnh đề. Nên học kèm Units 49–50, Unit 52.",
   intro:
-    "Trợ động từ tránh lặp; phản hồi ngạc nhiên; so / neither; I think so / I hope not… Nên học kèm Units 49–50, 52.",
+    "Bài này giúp bạn dùng trợ động từ để tránh lặp lại động từ đã nói trước đó, phản hồi bằng so/neither + trợ động từ + chủ ngữ, và dùng I think so / I hope not để tránh lặp cả mệnh đề. Nên học kèm Units 49–50 (câu hỏi) và Unit 52 (question tags).",
   structure: {
     affirmative:
       "Yes, I have/do/can… | So + aux + S | I think/hope/expect so",
     negative:
-      "No, I'm not / I don't… | Neither/Nor + aux + S | I don't think so | I hope not",
+      "KHÔNG nói I don't hope so → I hope not. (không: I don't hope so) | No, I'm not/I don't… | Neither/Nor + aux + S",
   },
   usagePoints: [
     {
@@ -56,27 +56,27 @@ export const U51_AUXILIARY_VERBS_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "'Have you locked the door?' 'Yes, I have.'",
-      vietnamese: "—'Bạn khóa cửa chưa?' —'Rồi.' (= I have locked…)",
+      vietnamese: "Yes, I have = trợ động từ have thay cho 'I have locked the door'.",
     },
     {
       english: "'You're sitting in my place.' 'No, I'm not.'",
-      vietnamese: "—'Bạn đang ngồi chỗ tôi.' —'Không phải.'",
+      vietnamese: "No, I'm not = trợ động từ am thay cho lặp cả câu.",
     },
     {
       english: "'I'm tired.' 'So am I.'",
-      vietnamese: "—'Tôi mệt.' —'Tôi cũng vậy.'",
+      vietnamese: "So am I = so + trợ động từ + chủ ngữ, không đảo ngược lại.",
     },
     {
       english: "'I never read newspapers.' 'Neither do I.'",
-      vietnamese: "—'Tôi không bao giờ đọc báo.' —'Tôi cũng không.'",
+      vietnamese: "Neither do I = neither + trợ động từ + chủ ngữ, ý phủ định giống nhau.",
     },
     {
       english: "'Are those people Korean?' 'I think so.'",
-      vietnamese: "—'Họ có phải người Hàn không?' —'Tôi nghĩ vậy.'",
+      vietnamese: "I think so = tránh lặp cả mệnh đề khẳng định.",
     },
     {
       english: "'Do you think it will rain?' 'I hope not.'",
-      vietnamese: "—'Bạn nghĩ trời sẽ mưa?' —'Hy vọng là không.' (không: I don't hope so)",
+      vietnamese: "I hope not = phủ định của hope, KHÔNG nói I don't hope so.",
     },
   ],
   practice: {

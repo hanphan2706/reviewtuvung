@@ -3,6 +3,7 @@ import type { GrammarTopicDetail } from "@/lib/grammar/grammar-topic-types";
 /**
  * Unit 12 — For and since (when ...? and how long ...?).
  * Lý thuyết theo khung English Grammar in Use · Intermediate, mục A–C.
+ * Nên học kèm Unit 11 (how long have you been).
  */
 export const FOR_AND_SINCE_TOPIC: GrammarTopicDetail = {
   slug: "u12-for-and-since",
@@ -11,12 +12,13 @@ export const FOR_AND_SINCE_TOPIC: GrammarTopicDetail = {
   kindLabel: "Tense",
   sourceBook: "English Grammar in Use · Intermediate · Unit 12",
   sourceNote:
-    "For and since — khi nào dùng each; so sánh when ...? (+ past simple) và how long ...? (+ present perfect).",
+    "for + khoảng thời gian, since + mốc bắt đầu; when...? đi với past simple, how long...? đi với present perfect. Nên học kèm Unit 11.",
   intro:
-    "Phân biệt for (khoảng thời gian) và since (mốc bắt đầu); so sánh when…? với past simple và how long…? với present perfect.",
+    "Bài này giúp bạn phân biệt for (khoảng thời gian) và since (mốc bắt đầu) khi nói how long, và so sánh when...? + past simple với how long...? + present perfect để không dùng lẫn hai câu hỏi này. Nên học kèm Unit 11 (how long have you been) để ôn lại present perfect chỉ khoảng thời gian trước khi đi sâu vào for và since.",
   structure: {
     affirmative: "... for + khoảng thời gian | ... since + điểm mốc bắt đầu",
-    negative: "S + haven't/hasn't + V3 + for/since ...",
+    negative:
+      "KHÔNG dùng for trước all (for all my life) — bỏ for: I've lived here all my life | Câu phủ định PHẢI giữ for (hoặc dùng in): haven't ... for/in ten years",
   },
   usagePoints: [
     {
@@ -32,7 +34,12 @@ export const FOR_AND_SINCE_TOPIC: GrammarTopicDetail = {
     {
       before: "Có thể ",
       strong: "bỏ for trong câu khẳng định",
-      after: ", nhưng câu phủ định cần giữ for (hoặc dùng in thay thế): They haven't had a holiday for/in ten years.",
+      after: ": Sally has been working here six months (vẫn đúng, nhưng ít phổ biến hơn).",
+    },
+    {
+      before: "Câu phủ định ",
+      strong: "cần giữ for (hoặc dùng in thay thế)",
+      after: ": They haven't had a holiday for/in ten years.",
     },
     {
       before: "Không dùng for với ",
@@ -53,31 +60,31 @@ export const FOR_AND_SINCE_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "We've been waiting for two hours.",
-      vietnamese: "Chúng tôi đã chờ hai giờ rồi.",
+      vietnamese: "for + khoảng thời gian = đã chờ suốt hai giờ, không nói mốc bắt đầu.",
     },
     {
       english: "We've been waiting since 8 o'clock.",
-      vietnamese: "Chúng tôi đã chờ từ 8 giờ.",
+      vietnamese: "since + mốc bắt đầu = chờ từ lúc 8 giờ tới giờ, không nói tổng thời gian.",
     },
     {
       english: "Sally has been working here for six months.",
-      vietnamese: "Sally làm việc ở đây được sáu tháng rồi.",
+      vietnamese: "for six months = khoảng thời gian, có thể bỏ for mà nghĩa vẫn không đổi.",
     },
     {
       english: "I haven't seen Tom for three days.",
-      vietnamese: "Tôi chưa gặp Tom ba ngày rồi.",
+      vietnamese: "câu phủ định giữ nguyên for, không bỏ được như câu khẳng định.",
     },
     {
       english: "I've lived here all my life.",
-      vietnamese: "Tôi đã sống ở đây cả đời.",
+      vietnamese: "all my life không đi với for — nói for all my life là sai.",
     },
     {
       english: "When did it start raining? — It started raining an hour ago.",
-      vietnamese: "Trời bắt đầu mưa từ khi nào? — Bắt đầu mưa một giờ trước.",
+      vietnamese: "when...? luôn đi với past simple, hỏi thời điểm bắt đầu, không hỏi tổng thời gian.",
     },
     {
       english: "It's two years since I last saw Joe.",
-      vietnamese: "Đã hai năm rồi từ lần cuối tôi gặp Joe.",
+      vietnamese: "It's ... since ... = đã hai năm tính từ lần cuối một việc xảy ra.",
     },
   ],
   practice: {

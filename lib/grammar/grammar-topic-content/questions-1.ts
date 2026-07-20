@@ -12,14 +12,14 @@ export const U49_QUESTIONS_1_TOPIC: GrammarTopicDetail = {
   kindLabel: "Question",
   sourceBook: "English Grammar in Use · Intermediate · Unit 49",
   sourceNote:
-    "Đảo trợ động từ; do/does/did; who/what làm chủ ngữ; giới từ cuối câu; câu hỏi phủ định. Nên học kèm Unit 50; tags ➜ Unit 52.",
+    "Đảo trợ động từ lên trước chủ ngữ; do/does/did cho present/past simple; who/what làm chủ ngữ thì không cần do. Nên học kèm Unit 50; question tags ➜ Unit 52.",
   intro:
-    "Đảo trợ động từ; do/does/did; who/what làm chủ ngữ; giới từ cuối câu; câu hỏi phủ định. Nên học kèm Unit 50 (Do you know where…?) và Unit 52 (question tags).",
+    "Bài này giúp bạn đảo trợ động từ lên trước chủ ngữ khi đặt câu hỏi, dùng do/does/did cho present/past simple, biết khi nào who/what là chủ ngữ (không cần do) và khi nào là tân ngữ (cần do/did), cùng cách đặt giới từ ở cuối câu. Nên học kèm Unit 50 (Do you know where…?) và Unit 52 (question tags).",
   structure: {
     affirmative:
       "Aux + subject + …? | Do/Does/Did + subject + V? | Who/What + V…? (subject)",
     negative:
-      "Don't/Doesn't/Didn't + subject + V…? | Isn't/Wasn't…? | Why don't/doesn't…?",
+      "KHÔNG thêm do/does/did khi who/what làm chủ ngữ của câu → What happened last night? (không: What did happen) | Don't/Doesn't/Didn't + subject + V…?",
   },
   usagePoints: [
     {
@@ -56,27 +56,27 @@ export const U49_QUESTIONS_1_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Where do you live? When was the house built?",
-      vietnamese: "Bạn sống ở đâu? Ngôi nhà được xây khi nào?",
+      vietnamese: "Do you live = đảo trợ động từ do lên trước chủ ngữ you.",
     },
     {
       english: "Who phoned Emma? / Who did Emma phone?",
-      vietnamese: "Ai gọi Emma? / Emma gọi ai? (chủ ngữ vs tân ngữ)",
+      vietnamese: "Who phoned (chủ ngữ, không do) / Who did Emma phone (tân ngữ, có did).",
     },
     {
       english: "What happened to you last night?",
-      vietnamese: "Tối qua chuyện gì xảy ra với bạn? (không: What did happen)",
+      vietnamese: "Happened = what là chủ ngữ, KHÔNG dùng did happen.",
     },
     {
       english: "Who do you want to speak to?",
-      vietnamese: "Bạn muốn nói chuyện với ai?",
+      vietnamese: "Speak to = giới từ to đặt ở cuối câu hỏi.",
     },
     {
       english: "Didn't you hear the doorbell? I rang it three times.",
-      vietnamese: "Bạn không nghe chuông cửa à? Tôi bấm ba lần. (ngạc nhiên)",
+      vietnamese: "Didn't you hear…? = câu hỏi phủ định thể hiện ngạc nhiên.",
     },
     {
       english: "Why don't we eat out tonight?",
-      vietnamese: "Sao tối nay mình không ra ngoài ăn? (không: Why we don't)",
+      vietnamese: "Why don't we…? = trợ động từ don't đảo lên trước chủ ngữ we.",
     },
   ],
   practice: {

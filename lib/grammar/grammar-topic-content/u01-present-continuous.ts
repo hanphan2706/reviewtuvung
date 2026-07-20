@@ -3,6 +3,7 @@ import type { GrammarTopicDetail } from "@/lib/grammar/grammar-topic-types";
 /**
  * Unit 1 — Present continuous (I am doing).
  * Lý thuyết theo khung English Grammar in Use · Intermediate, mục A–C.
+ * Nên học kèm Unit 2 (present simple) và Unit 3 (đối chiếu hai thời).
  */
 export const U01_PRESENT_CONTINUOUS_TOPIC: GrammarTopicDetail = {
   slug: "u01-present-continuous",
@@ -10,68 +11,70 @@ export const U01_PRESENT_CONTINUOUS_TOPIC: GrammarTopicDetail = {
   levelLabel: "Intermediate",
   kindLabel: "Tense",
   sourceBook: "English Grammar in Use · Intermediate · Unit 1",
-  sourceNote: "Present continuous (I am doing). Hành động đang diễn ra, tình huống tạm thời, sự thay đổi.",
+  sourceNote:
+    "Present continuous (I am doing): hành động đang diễn ra, tình huống tạm thời, xu hướng thay đổi. Nên học kèm Unit 2 (present simple) và Unit 3 (đối chiếu hai thời).",
   intro:
-    "Present continuous (I am doing). Hành động đang diễn ra, tình huống tạm thời, sự thay đổi.",
+    "Bài này giúp bạn dùng present continuous (I am doing) để nói về việc đang xảy ra ngay lúc nói, một tình huống tạm thời quanh hiện tại, hoặc một xu hướng đang thay đổi. Nên học kèm Unit 2 (present simple) để có đủ hai vế trước khi ghép chúng lại trong Unit 3 (so sánh trực tiếp hai thời).",
   structure: {
     affirmative: "S + am/is/are + V-ing",
-    negative: "S + am/is/are + not + V-ing",
+    negative:
+      "KHÔNG bỏ am/is/are khi phủ định (KHÔNG nói She not working) → đúng là S + am/is/are + not + V-ing (She isn't working today).",
   },
   usagePoints: [
     {
-      before: "Dùng cho hành động ",
+      before: "Dùng cho việc ",
       strong: "đang xảy ra ngay lúc nói",
-      after: " — người nói đang ở giữa việc làm, đã bắt đầu nhưng chưa xong (I'm trying to work; He's having a shower).",
+      after: ", người nói đang ở giữa hành động, đã bắt đầu nhưng chưa xong: I'm trying to work. He's having a shower.",
     },
     {
       before: "Không nhất thiết đúng ",
       strong: "chính xác tại thời điểm nói",
-      after: ", mà là trong một giai đoạn quanh hiện tại như today/this week/this year (Kate is learning Italian).",
+      after: ", mà đúng trong một giai đoạn quanh hiện tại như today/this week/this year: Kate is learning Italian.",
     },
     {
       before: "Diễn tả ",
       strong: "tình huống tạm thời",
-      after: " đang tiếp diễn trong thời gian ngắn, khác với thói quen lâu dài (I'm living with friends until I find a flat).",
+      after: " kéo dài trong thời gian ngắn, khác với việc lâu dài, cố định: I'm living with friends until I find a flat.",
     },
     {
       before: "Dùng với các động từ chỉ ",
       strong: "sự thay đổi, xu hướng",
-      after: ": getting, becoming, changing, improving, starting, beginning, increasing, rising, falling, growing.",
+      after: ": getting, becoming, changing, improving, increasing, rising, falling, growing.",
     },
     {
       before: "Câu hỏi và phủ định mượn trợ động từ ",
       strong: "am/is/are",
-      after: ", đứng trước chủ ngữ hoặc thêm not (Are you enjoying it? / It isn't raining any more).",
+      after: ", đứng trước chủ ngữ hoặc thêm not: Are you enjoying it? It isn't raining any more.",
     },
   ],
   examples: [
     {
       english: "I'm reading a really good book at the moment.",
-      vietnamese: "Tôi đang đọc một cuốn sách rất hay (chưa đọc xong).",
+      vietnamese: "Continuous vì việc đọc đang diễn ra, chưa xong — 'at the moment' neo vào lúc nói.",
     },
     {
       english: "Please don't make so much noise. I'm trying to work.",
-      vietnamese: "Làm ơn đừng gây ồn. Tôi đang cố gắng làm việc.",
+      vietnamese: "I'm trying to work = đang cố làm việc ngay lúc này, việc chưa hoàn thành.",
     },
     {
       english: "Where's Mark? He's having a shower.",
-      vietnamese: "Mark đâu rồi? Anh ấy đang tắm.",
+      vietnamese: "He's having a shower = đang tắm, hành động đang diễn ra ngay lúc được hỏi.",
     },
     {
       english: "It isn't raining any more. Let's go out now.",
-      vietnamese: "Trời không còn mưa nữa. Đi ra ngoài thôi.",
+      vietnamese: "isn't raining = phủ định continuous bằng not sau am/is/are, không chia lại động từ.",
     },
     {
       english: "Kate wants to work in Italy, so she's learning Italian.",
-      vietnamese: "Kate muốn làm việc ở Ý, nên cô ấy đang học tiếng Ý (giai đoạn hiện tại, chưa chắc đang học ngay lúc này).",
+      vietnamese: "is learning = trong giai đoạn học tiếng Ý hiện tại, không cần đúng ngay lúc nói câu này.",
     },
     {
       english: "The population of the world is increasing very fast.",
-      vietnamese: "Dân số thế giới đang tăng rất nhanh.",
+      vietnamese: "is increasing = xu hướng đang thay đổi theo thời gian, một động từ continuous đặc trưng.",
     },
     {
       english: "Is your English getting better?",
-      vietnamese: "Tiếng Anh của bạn có đang tiến bộ hơn không?",
+      vietnamese: "Is … getting better = hỏi về xu hướng tiến bộ đang diễn ra, không phải một sự thật cố định.",
     },
   ],
   practice: {

@@ -12,14 +12,14 @@ export const U48_REPORTED_SPEECH_2_TOPIC: GrammarTopicDetail = {
   kindLabel: "Reported speech",
   sourceBook: "English Grammar in Use · Intermediate · Unit 48",
   sourceNote:
-    "Không luôn lùi thì nếu tình huống vẫn đúng; say vs tell; tell/ask somebody to…. Nên học kèm Unit 47.",
+    "Không luôn phải lùi thì nếu tình huống vẫn đúng; say (không kèm người nghe) khác tell (luôn kèm người nghe); tell/ask somebody to…. Nên học kèm Unit 47.",
   intro:
-    "Không luôn lùi thì nếu tình huống vẫn đúng; say vs tell; tell/ask somebody to… Nên học kèm Unit 47.",
+    "Bài này giúp bạn giữ nguyên thì hiện tại khi tình huống được tường thuật vẫn còn đúng, phân biệt say (không kèm người nghe trực tiếp) với tell (luôn kèm người nghe), và dùng tell/ask + somebody + to + V để tường thuật lời yêu cầu, đề nghị. Nên học kèm Unit 47 (reported speech 1) trước khi mở rộng các mẫu này.",
   structure: {
     affirmative:
       "said/told (that) + clause | tell/ask + somebody + to + V | say (not) to + V",
     negative:
-      "told + somebody + not to + V | said not to + V | (không: said me…)",
+      "KHÔNG nói say + người nghe hoặc said + tân ngữ người trực tiếp → tell the police (không: say the police); said goodbye to me (không: said me goodbye) | told + somebody + not to + V | said not to + V",
   },
   usagePoints: [
     {
@@ -56,31 +56,31 @@ export const U48_REPORTED_SPEECH_2_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Paul said that his new job is boring.",
-      vietnamese: "Paul nói công việc mới chán. (vẫn còn đúng — có thể giữ is)",
+      vietnamese: "Is boring (giữ hiện tại) = tình huống vẫn còn đúng khi tường thuật.",
     },
     {
       english: "Joe, Rachel said you were in hospital.",
-      vietnamese: "Joe, Rachel bảo bạn nằm viện. (không: are — vì rõ là không)",
+      vietnamese: "Were (quá khứ) = tình huống rõ đã không còn đúng.",
     },
     {
       english: "Rachel told me that you were in hospital.",
-      vietnamese: "Rachel bảo tôi rằng bạn nằm viện. (tell + me)",
+      vietnamese: "Told me = tell luôn kèm người nghe (không nói said me).",
     },
     {
       english: "Anna said goodbye to me and left.",
-      vietnamese: "Anna nói tạm biệt với tôi rồi đi. (không: said me goodbye)",
+      vietnamese: "Said goodbye to me = say + to + người nghe, không nói said me goodbye.",
     },
     {
       english: "The doctor told me to drink plenty of water.",
-      vietnamese: "Bác sĩ bảo tôi uống nhiều nước.",
+      vietnamese: "Told me to = tell/ask + somebody + to + V cho lời yêu cầu.",
     },
     {
       english: "I told Joe not to work too hard.",
-      vietnamese: "Tôi bảo Joe đừng làm việc quá sức.",
+      vietnamese: "Told … not to = phủ định của tell somebody to.",
     },
     {
       english: "Jackie asked me to help her.",
-      vietnamese: "Jackie nhờ tôi giúp cô ấy.",
+      vietnamese: "Asked me to = ask + somebody + to + V cho lời đề nghị, nhờ vả.",
     },
   ],
   practice: {

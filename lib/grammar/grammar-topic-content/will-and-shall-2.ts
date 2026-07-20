@@ -12,12 +12,13 @@ export const U22_WILL_AND_SHALL_2_TOPIC: GrammarTopicDetail = {
   kindLabel: "Modal",
   sourceBook: "English Grammar in Use · Intermediate · Unit 22",
   sourceNote:
-    "Will and shall 2: dự đoán, niềm tin về tương lai (probably, I'm sure, I think, I wonder), shall chỉ dùng với I/we. Nên học kèm Unit 21 (will and shall 1 — quyết định tức thời) để nắm trọn cách dùng will/shall.",
+    "will/shall để dự đoán, nói niềm tin về tương lai (probably, I'm sure, I think); shall chỉ dùng với I/we. Nên học kèm Unit 21 (will/shall cho quyết định tức thời).",
   intro:
-    "Will/shall để dự đoán hoặc nói niềm tin về tương lai (I think / I'm sure…). Nên học kèm Unit 21.",
+    "Bài này giúp bạn dùng will để dự đoán hoặc nói niềm tin về tương lai, thường đi cùng probably/I'm sure/I think, phân biệt will (dự đoán) với going to (đã quyết định), và biết rằng shall chỉ dùng với I/we. Nên học kèm Unit 21 để nắm cả will/shall dùng cho quyết định tức thời.",
   structure: {
     affirmative: "S + will/shall + V (dự đoán, niềm tin về tương lai)",
-    negative: "S + will not/won't + V | I shall not/shan't + V",
+    negative:
+      "KHÔNG dùng will sau hope → I hope Kate passes the driving test. (không: I hope Kate will pass) | S + will not/won't + V | I shall not/shan't + V",
   },
   usagePoints: [
     {
@@ -54,31 +55,31 @@ export const U22_WILL_AND_SHALL_2_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Do you think Kate will pass the driving test? Yes, she'll pass easily.",
-      vietnamese: "Bạn nghĩ Kate sẽ đỗ bài thi lái xe không? Có, cô ấy sẽ đỗ dễ dàng. (dự đoán)",
+      vietnamese: "Will pass = dự đoán dựa trên suy nghĩ, không phải quyết định.",
     },
     {
       english: "That plate is hot. If you touch it, you'll burn yourself.",
-      vietnamese: "Cái đĩa đó nóng. Nếu bạn chạm vào, bạn sẽ bị bỏng.",
+      vietnamese: "'ll burn = dự đoán hậu quả sẽ xảy ra.",
     },
     {
       english: "I'll probably be home late tonight.",
-      vietnamese: "Có thể tối nay tôi sẽ về nhà muộn.",
+      vietnamese: "'ll probably = dự đoán kèm mức độ chắc chắn.",
     },
     {
       english: "Don't worry about the exam. I'm sure you'll pass.",
-      vietnamese: "Đừng lo về kỳ thi. Tôi tin chắc bạn sẽ đỗ.",
+      vietnamese: "I'm sure you'll = niềm tin mạnh về tương lai.",
     },
     {
       english: "I hope it doesn't rain tomorrow.",
-      vietnamese: "Tôi hy vọng ngày mai trời không mưa. (sau hope dùng present simple)",
+      vietnamese: "Hope + present simple = KHÔNG dùng will sau hope.",
     },
     {
       english: "Don't phone Amy now. She'll be busy.",
-      vietnamese: "Đừng gọi cho Amy bây giờ. Chắc cô ấy đang bận. (will nói về hiện tại)",
+      vietnamese: "'ll be busy = will suy đoán về hiện tại, không phải tương lai.",
     },
     {
       english: "I shall be late this evening. We'll probably go to France in June.",
-      vietnamese: "Tối nay tôi sẽ về muộn. Chúng tôi có thể sẽ đi Pháp vào tháng Sáu.",
+      vietnamese: "Shall = will với I/we; không dùng shall với he/she/they.",
     },
   ],
   practice: {

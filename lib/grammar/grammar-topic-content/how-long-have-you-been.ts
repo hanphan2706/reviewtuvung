@@ -3,6 +3,7 @@ import type { GrammarTopicDetail } from "@/lib/grammar/grammar-topic-types";
 /**
  * Unit 11 — How long have you (been) ... ?
  * Lý thuyết theo khung English Grammar in Use · Intermediate, mục A–C.
+ * Nên học kèm Unit 10 (continuous và simple) và Unit 12 (for and since).
  */
 export const HOW_LONG_HAVE_YOU_BEEN_TOPIC: GrammarTopicDetail = {
   slug: "u11-how-long-have-you-been",
@@ -11,18 +12,24 @@ export const HOW_LONG_HAVE_YOU_BEEN_TOPIC: GrammarTopicDetail = {
   kindLabel: "Tense",
   sourceBook: "English Grammar in Use · Intermediate · Unit 11",
   sourceNote:
-    "How long have you (been) ...? Present perfect cho việc bắt đầu trong quá khứ và còn tiếp diễn tới hiện tại; so sánh với thời hiện tại đơn/tiếp diễn.",
+    "Hỏi how long về việc bắt đầu trong quá khứ và còn tiếp diễn tới hiện tại phải dùng present perfect, không dùng hiện tại đơn/tiếp diễn. Nên học kèm Unit 10 và Unit 12.",
   intro:
-    "Dùng present perfect (đơn hoặc tiếp diễn) để nói về việc bắt đầu trong quá khứ và vẫn còn tiếp diễn tới hiện tại — khi hỏi 'how long', không dùng thời hiện tại thường.",
+    "Bài này giúp bạn dùng present perfect (đơn hoặc tiếp diễn) để hỏi và trả lời how long về việc bắt đầu trong quá khứ và vẫn tiếp diễn tới hiện tại, thay vì dùng nhầm hiện tại đơn/tiếp diễn. Nên học kèm Unit 10 (continuous và simple) để chọn đúng dạng, và xem tiếp Unit 12 (for and since) để nắm cách nói khoảng thời gian.",
   structure: {
     affirmative: "How long + have/has + S + (been) + V-ing/V3 ...?",
-    negative: "S + haven't/hasn't + (been) + V-ing/V3 + for/since ...",
+    negative:
+      "KHÔNG dùng hiện tại đơn/tiếp diễn với since/for khi việc vẫn còn tiếp diễn (Paul is in hospital since Monday) — dùng present perfect: He's been in hospital since Monday | S + haven't/hasn't + (been) + V-ing/V3 + for/since ...",
   },
   usagePoints: [
     {
-      before: "So sánh hiện tại đơn/tiếp diễn (",
+      before: "Hiện tại đơn/tiếp diễn (",
       strong: "Paul is in hospital",
-      after: ") với present perfect (He's been in hospital since Monday) — không nói 'Paul is in hospital since Monday'.",
+      after: ") chỉ nói tình trạng lúc này, không cho biết đã bao lâu.",
+    },
+    {
+      before: "Muốn nói đã kéo dài bao lâu, dùng ",
+      strong: "present perfect",
+      after: ": He's been in hospital since Monday (not Paul is in hospital since Monday).",
     },
     {
       before: "Khi hỏi/nói 'how long', ",
@@ -53,31 +60,31 @@ export const HOW_LONG_HAVE_YOU_BEEN_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "He's been in hospital since Monday.",
-      vietnamese: "Anh ấy nằm viện từ thứ Hai.",
+      vietnamese: "present perfect + since = nằm viện từ thứ Hai tới giờ, vẫn còn nằm viện.",
     },
     {
       english: "We've known each other for a long time.",
-      vietnamese: "Chúng tôi biết nhau đã lâu.",
+      vietnamese: "know là động từ trạng thái — luôn dùng simple, không thêm been.",
     },
     {
       english: "How long have they had their car?",
-      vietnamese: "Họ có chiếc xe đó bao lâu rồi?",
+      vietnamese: "have (sở hữu) không dùng continuous — hỏi thời gian sở hữu bằng present perfect simple.",
     },
     {
       english: "They have been married for 20 years.",
-      vietnamese: "Họ đã kết hôn được 20 năm.",
+      vietnamese: "have been married = trạng thái kéo dài 20 năm, tính đến hiện tại.",
     },
     {
       english: "Julia has been living in this house for a long time.",
-      vietnamese: "Julia đã sống trong căn nhà này rất lâu.",
+      vietnamese: "live cho phép cả continuous và simple — has lived cũng đúng nghĩa tương tự.",
     },
     {
       english: "I've always lived in the country.",
-      vietnamese: "Tôi luôn sống ở vùng nông thôn (từ trước tới nay).",
+      vietnamese: "always luôn đi với simple, không nói always been living.",
     },
     {
       english: "I haven't seen Tom since Monday.",
-      vietnamese: "Tôi chưa gặp Tom từ thứ Hai.",
+      vietnamese: "haven't + since = lần cuối gặp là thứ Hai, từ đó đến nay chưa gặp lại.",
     },
   ],
   practice: {

@@ -12,12 +12,13 @@ export const U21_WILL_AND_SHALL_1_TOPIC: GrammarTopicDetail = {
   kindLabel: "Modal",
   sourceBook: "English Grammar in Use · Intermediate · Unit 21",
   sourceNote:
-    "Will and shall 1: quyết định ngay lúc nói, đề nghị/hứa/đồng ý, shall I…?/shall we…? Nên học kèm Unit 22 (will and shall 2 — dự đoán tương lai) để nắm trọn cách dùng will/shall.",
+    "will/'ll cho quyết định ngay lúc nói, đề nghị/hứa/đồng ý; shall I…?/shall we…? để xin ý kiến. Nên học kèm Unit 22 (will/shall cho dự đoán tương lai).",
   intro:
-    "Will/shall cho quyết định ngay lúc nói, đề nghị, hứa và đồng ý; shall I…?/shall we…? để xin ý kiến. Nên học kèm Unit 22.",
+    "Bài này giúp bạn dùng will/'ll cho quyết định vừa đưa ra ngay lúc nói, để đề nghị giúp đỡ, hứa hẹn hoặc đồng ý làm gì, và dùng shall I…?/shall we…? để xin ý kiến người nghe. Nên học kèm Unit 22 để nắm cả will/shall dùng cho dự đoán tương lai.",
   structure: {
     affirmative: "S + will/'ll + V (quyết định ngay lúc nói) | Shall I/we + V…?",
-    negative: "S + will not/won't + V",
+    negative:
+      "KHÔNG dùng will cho việc đã quyết định/sắp xếp từ trước → I'm going on holiday next Saturday. (không: I'll go on holiday next Saturday) | S + will not/won't + V",
   },
   usagePoints: [
     {
@@ -54,31 +55,31 @@ export const U21_WILL_AND_SHALL_1_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Oh, I left the door open. I'll go and shut it.",
-      vietnamese: "Ồ, tôi để quên cửa mở. Tôi sẽ đi đóng lại. (quyết định ngay lúc nói)",
+      vietnamese: "'ll go = quyết định vừa nảy ra ngay lúc nói, không dùng present simple.",
     },
     {
       english: "'What would you like to drink?' 'I'll have orange juice, please.'",
-      vietnamese: "'Bạn muốn uống gì?' 'Tôi sẽ dùng nước cam, cảm ơn.'",
+      vietnamese: "'ll have = quyết định tức thời ngay khi được hỏi.",
     },
     {
       english: "That bag looks heavy. I'll help you with it.",
-      vietnamese: "Cái túi đó trông nặng đấy. Để tôi giúp bạn xách nó. (đề nghị giúp đỡ)",
+      vietnamese: "'ll help = đề nghị giúp đỡ ngay khi thấy tình huống.",
     },
     {
       english: "Thanks for lending me the money. I'll pay you back on Friday.",
-      vietnamese: "Cảm ơn đã cho tôi vay tiền. Tôi sẽ trả lại bạn vào thứ Sáu. (hứa hẹn)",
+      vietnamese: "'ll pay back = lời hứa, không phải kế hoạch đã định từ trước.",
     },
     {
       english: "I've tried to give her advice, but she won't listen.",
-      vietnamese: "Tôi đã thử khuyên cô ấy, nhưng cô ấy không chịu nghe.",
+      vietnamese: "Won't listen = từ chối/không chịu nghe, không phải 'sẽ không nghe'.",
     },
     {
       english: "Will you please turn the music down? It's too loud.",
-      vietnamese: "Làm ơn giảm nhạc xuống được không? Nó to quá.",
+      vietnamese: "Will you…? = yêu cầu lịch sự, làm ơn hãy làm gì.",
     },
     {
       english: "Shall I open the window?",
-      vietnamese: "Tôi mở cửa sổ nhé? (hỏi xem người kia có muốn không)",
+      vietnamese: "Shall I…? = xin ý kiến người nghe, không phải tuyên bố quyết định.",
     },
   ],
   practice: {

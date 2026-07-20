@@ -12,12 +12,13 @@ export const PRESENT_PERFECT_AND_PAST_2_TOPIC: GrammarTopicDetail = {
   kindLabel: "Tense",
   sourceBook: "English Grammar in Use · Intermediate · Unit 14",
   sourceNote:
-    "Present perfect and past 2 (I have done and I did). Nên học kèm Unit 13 để hoàn thiện quy tắc chọn giữa present perfect và past simple.",
+    "Present perfect cho khoảng thời gian chưa kết thúc (today, this week); past simple cho mốc/khoảng đã kết thúc (yesterday, last week). Nên học kèm Unit 13.",
   intro:
-    "Trong unit này bạn sẽ nắm: Present perfect and past 2 (I have done and I did). Nên học kèm Unit 13 để nắm trọn quy tắc.",
+    "Bài này giúp bạn tránh lỗi dùng present perfect với mốc thời gian đã kết thúc (yesterday, last year, ten minutes ago) và biết chọn past simple cho khoảng thời gian đã xong, present perfect cho khoảng thời gian còn tính đến hiện tại (today, this week, since 2010). Nên học kèm Unit 13 để nắm trọn quy tắc chọn giữa present perfect và past simple.",
   structure: {
     affirmative: "S + V-ed/V2 + [mốc thời gian đã kết thúc] | S + have/has + V3 + [khoảng thời gian chưa kết thúc]",
-    negative: "S + didn't + V | S + haven't/hasn't + V3",
+    negative:
+      "KHÔNG dùng present perfect với mốc thời gian đã kết thúc (I have seen him yesterday) — dùng past simple: I saw him yesterday | S + haven't/hasn't + V3 | S + didn't + V",
   },
   usagePoints: [
     {
@@ -46,39 +47,39 @@ export const PRESENT_PERFECT_AND_PAST_2_TOPIC: GrammarTopicDetail = {
       after: " (vẫn còn là buổi sáng) với Did you see Anna this morning? (đã sang buổi chiều/tối).",
     },
     {
-      before: "Cuối kỳ nghỉ vẫn đang diễn ra: ",
+      before: "Trong kỳ nghỉ vẫn đang diễn ra dùng present perfect: ",
       strong: "It's been a really good holiday",
-      after: "; sau khi về: It was a really good holiday.",
+      after: "; sau khi về nhà mới dùng past simple: It was a really good holiday.",
     },
   ],
   examples: [
     {
       english: "It was very cold yesterday.",
-      vietnamese: "Hôm qua rất lạnh.",
+      vietnamese: "yesterday là mốc đã kết thúc — chỉ dùng was, không dùng has been.",
     },
     {
       english: "Paul and Lucy arrived ten minutes ago.",
-      vietnamese: "Paul và Lucy đã đến mười phút trước.",
+      vietnamese: "ago luôn đi với past simple, đánh dấu mốc thời gian đã qua rõ ràng.",
     },
     {
       english: "It hasn't rained this week.",
-      vietnamese: "Tuần này chưa mưa.",
+      vietnamese: "this week vẫn chưa kết thúc (tính đến hôm nay) — dùng present perfect.",
     },
     {
       english: "I've been working here since 2010.",
-      vietnamese: "Tôi đã làm việc ở đây từ năm 2010 (đến giờ).",
+      vietnamese: "since 2010 đến giờ vẫn đang tiếp diễn — present perfect, khác with từ 2010 đến 2014 ở câu dưới.",
     },
     {
       english: "I worked here from 2010 to 2014.",
-      vietnamese: "Tôi đã làm việc ở đây từ 2010 đến 2014 (giờ không còn làm nữa).",
+      vietnamese: "from...to... là khoảng đã kết thúc (giờ không còn làm nữa) — dùng past simple.",
     },
     {
       english: "Have you seen Anna this morning?",
-      vietnamese: "Sáng nay bạn có gặp Anna không? (vẫn còn là buổi sáng)",
+      vietnamese: "hỏi lúc vẫn còn là buổi sáng — present perfect vì khoảng thời gian chưa kết thúc.",
     },
     {
       english: "Did you see Anna this morning?",
-      vietnamese: "Sáng nay bạn có gặp Anna không? (giờ đã qua buổi sáng)",
+      vietnamese: "hỏi khi đã qua buổi sáng (giờ là chiều/tối) — past simple vì khoảng thời gian đã kết thúc.",
     },
   ],
   practice: {
