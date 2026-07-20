@@ -12,33 +12,39 @@ export const U114_IN_CASE_TOPIC: GrammarTopicDetail = {
   kindLabel: "Conjunction",
   sourceBook: "English Grammar in Use · Intermediate · Unit 114",
   sourceNote:
-    "in case (= because it is possible…); in case vs if; in case + past; in case of. Không will sau in case. Nên học kèm Units 113, 115.",
+    "in case = phòng khi có thể xảy ra; phân biệt in case và if; in case + past cho việc đã làm; in case of + noun trong thông báo. KHÔNG dùng will sau in case. Nên học kèm Units 113, 115.",
   intro:
-    "Unit này giúp bạn nắm In Case: In case (= because it is possible…); in case vs if; in case + past; in case of. Không will sau in case. Nên học kèm Units 113, 115 và if.",
+    "Bài này giúp bạn chuẩn bị trước phòng khi điều gì có thể xảy ra bằng in case, phân biệt in case với if, và dùng in case of trong thông báo. Nên học kèm Units 113, 115 và if.",
   structure: {
     affirmative: "… in case + S + present/past | just in case | In case of + noun, …",
-    negative: "… in case + S + don't/doesn't / didn't … | (không: in case + will)",
+    negative:
+      "KHÔNG dùng will sau in case → in case I forget (không: will forget) | KHÔNG nhầm in case với if khi nói chuẩn bị trước",
   },
   usagePoints: [
     {
-      before: "",
-      strong: "in case",
-      after: " = phòng khi có thể xảy ra: Write down your password in case you forget it.",
+      before: "in case = ",
+      strong: "phòng khi có thể xảy ra",
+      after: ": Write down your password in case you forget it.",
     },
     {
-      before: "Không dùng ",
+      before: "KHÔNG dùng ",
       strong: "will",
       after: " sau in case: in case I forget (không: will forget).",
     },
     {
-      before: "",
-      strong: "in case ≠ if",
-      after: ": Buy food in case Tom comes (= mua sẵn). Buy food if Tom comes (= chỉ mua khi anh ấy đến).",
+      before: "in case = ",
+      strong: "chuẩn bị trước",
+      after: ": Buy food in case Tom comes (= mua sẵn, dù anh ấy có đến hay không).",
+    },
+    {
+      before: "if = ",
+      strong: "chỉ khi điều kiện xảy ra",
+      after: ": Buy food if Tom comes (= chỉ mua khi anh ấy đến).",
     },
     {
       before: "",
       strong: "just in case",
-      after: " = khả năng nhỏ: I'll take an umbrella just in case.",
+      after: " = phòng khi khả năng nhỏ: I'll take an umbrella just in case.",
     },
     {
       before: "in case + ",
@@ -54,31 +60,31 @@ export const U114_IN_CASE_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Your car should have a spare wheel in case you have a puncture.",
-      vietnamese: "Xe nên có bánh dự phòng phòng khi thủng lốp.",
+      vietnamese: "In case = phòng khi thủng lốp — chuẩn bị trước, không chờ lốp thủng mới lo.",
     },
     {
       english: "I'll write down my password in case I forget it.",
-      vietnamese: "Tôi sẽ ghi mật khẩu phòng khi quên. (không: will forget)",
+      vietnamese: "Sau in case dùng present — KHÔNG nói will forget.",
     },
     {
       english: "We'll buy some more food in case Tom comes.",
-      vietnamese: "Mua thêm đồ ăn sẵn — dù Tom có đến hay không.",
+      vietnamese: "In case = mua sẵn phòng Tom đến — dù anh ấy có đến hay không.",
     },
     {
       english: "We'll buy some more food if Tom comes.",
-      vietnamese: "Chỉ mua thêm nếu Tom đến.",
+      vietnamese: "If = chỉ mua thêm khi Tom thật sự đến.",
     },
     {
       english: "I don't think it will rain, but I'll take an umbrella just in case.",
-      vietnamese: "Tôi không nghĩ trời mưa, nhưng mang ô phòng khi cần.",
+      vietnamese: "Just in case = phòng khi cần, dù khả năng mưa thấp.",
     },
     {
       english: "I drew a map for Sarah in case she had a problem finding our house.",
-      vietnamese: "Tôi vẽ bản đồ cho Sarah phòng khi cô ấy khó tìm nhà.",
+      vietnamese: "In case + past giải thích lý do đã vẽ bản đồ trước đó.",
     },
     {
       english: "In case of fire, please leave the building as quickly as possible.",
-      vietnamese: "Nếu có cháy, hãy rời tòa nhà càng nhanh càng tốt.",
+      vietnamese: "In case of + noun dùng trong thông báo chính thức.",
     },
   ],
   practice: {

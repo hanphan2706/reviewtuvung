@@ -12,18 +12,19 @@ export const U115_UNLESS_AS_LONG_AS_PROVIDED_TOPIC: GrammarTopicDetail = {
   kindLabel: "Conjunction",
   sourceBook: "English Grammar in Use · Intermediate · Unit 115",
   sourceNote:
-    "unless = except if; as long as / so long as; provided / providing (that). Không will sau các liên từ này khi nói tương lai. Nên học kèm Units 113–114.",
+    "unless = except if; as long as / so long as = với điều kiện; provided / providing (that). KHÔNG dùng will sau các liên từ này khi nói tương lai. Nên học kèm Units 113–114.",
   intro:
-    "Unit này giúp bạn nắm Unless / As Long As / Provided: Unless = except if; as long as / so long as; provided / providing (that). Không will sau các liên từ này khi nói tương lai. Nên học kèm Units 113–114 và if.",
+    "Bài này giúp bạn nói điều kiện bằng unless (= trừ khi), as long as / so long as (= miễn là), và provided / providing (that), đồng thời tránh dùng will sau các liên từ này khi nói tương lai. Nên học kèm Units 113–114 và if.",
   structure: {
     affirmative:
       "… unless + S + present | … as long as / so long as + S + V | provided/providing (that) + S + V",
-    negative: "… unless + S + don't/doesn't … | (không: unless/as long as + will …)",
+    negative:
+      "KHÔNG dùng will sau unless / as long as / provided → unless it stops raining (không: will stop) | unless ≈ if … not",
   },
   usagePoints: [
     {
-      before: "",
-      strong: "unless = except if",
+      before: "unless = ",
+      strong: "except if / trừ khi",
       after: ": I'll see you tomorrow unless I have to work late.",
     },
     {
@@ -32,19 +33,19 @@ export const U115_UNLESS_AS_LONG_AS_PROVIDED_TOPIC: GrammarTopicDetail = {
       after: ": Unless we leave now, we'll be late. = If we don't leave now…",
     },
     {
-      before: "",
-      strong: "as long as / so long as",
-      after: " = với điều kiện: You can borrow my car as long as you promise not to drive too fast.",
+      before: "as long as / so long as = ",
+      strong: "với điều kiện / miễn là",
+      after: ": You can borrow my car as long as you promise not to drive too fast.",
     },
     {
-      before: "",
-      strong: "provided / providing (that)",
+      before: "provided / providing (that) = ",
+      strong: "miễn là / với điều kiện",
       after: ": Providing the weather is good, we're going to have a picnic.",
     },
     {
-      before: "Tương lai: ",
-      strong: "không will",
-      after: " sau unless/as long as/provided: unless it stops raining.",
+      before: "Khi nói tương lai, KHÔNG dùng ",
+      strong: "will",
+      after: " sau unless / as long as / provided: unless it stops raining.",
     },
     {
       before: "Not unless… = ",
@@ -55,31 +56,31 @@ export const U115_UNLESS_AS_LONG_AS_PROVIDED_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "You can't go in unless you are a member.",
-      vietnamese: "Bạn không được vào trừ khi là hội viên.",
+      vietnamese: "Unless = trừ khi là hội viên — điều kiện bắt buộc.",
     },
     {
       english: "I'll see you tomorrow unless I have to work late.",
-      vietnamese: "Mai gặp bạn trừ khi tôi phải làm muộn.",
+      vietnamese: "Unless nói trường hợp ngoại lệ làm bạn không gặp được.",
     },
     {
       english: "Unless we leave now, we'll be late.",
-      vietnamese: "Nếu chúng ta không đi ngay, sẽ muộn. (= If we don't leave now…)",
+      vietnamese: "Unless = if we don't leave now — hai cách nói cùng ý.",
     },
     {
       english: "You can borrow my car as long as you promise not to drive too fast.",
-      vietnamese: "Bạn mượn xe được miễn là hứa không lái quá nhanh.",
+      vietnamese: "As long as = miễn là bạn hứa không lái quá nhanh.",
     },
     {
       english: "Travelling by car is convenient provided you have somewhere to park.",
-      vietnamese: "Đi ô tô tiện miễn là có chỗ đỗ.",
+      vietnamese: "Provided = miễn là có chỗ đỗ — điều kiện để việc tiện lợi.",
     },
     {
       english: "I'm not going out unless it stops raining.",
-      vietnamese: "Tôi không ra ngoài trừ khi trời tạnh. (không: will stop)",
+      vietnamese: "Nói tương lai dùng present sau unless — KHÔNG nói will stop.",
     },
     {
       english: "Providing the weather is good, we're going to have a picnic tomorrow.",
-      vietnamese: "Miễn thời tiết đẹp, ngày mai chúng tôi đi picnic.",
+      vietnamese: "Providing (that) = miễn thời tiết đẹp thì mới đi picnic.",
     },
   ],
   practice: {

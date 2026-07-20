@@ -14,12 +14,12 @@ export const U124_IN_AT_ON_POSITION_2_TOPIC: GrammarTopicDetail = {
   sourceNote:
     "in a line/row/picture/sky; on the left/floor/map/coast/way; at the top/bottom/end; front/back; corner. Nên học kèm Units 123, 125.",
   intro:
-    "Trong unit này bạn sẽ nắm: in a line/row/picture/sky; on the left/floor/map/coast/way; at the top/bottom/end; front/back; corner. Nên học kèm Units 123, 125.",
+    "Bài này giúp bạn dùng in, on và at với các cụm vị trí cố định: in a row/picture/sky, on the left/floor/map/way, at the top/bottom/end of…, và phân biệt in/at/on với front, back và corner. Nên học kèm Units 123, 125.",
   structure: {
     affirmative:
       "in a row/picture/sky… | on the left/floor/list/way… | at the top/bottom/end | in/at/on + front/back/corner",
     negative:
-      "in the corner (phòng) ≠ at/on the corner (đường)",
+      "KHÔNG nhầm in the corner (góc phòng) với at/on the corner (góc phố) | KHÔNG nhầm in the back of a car với at the back of a building",
   },
   usagePoints: [
     {
@@ -40,7 +40,12 @@ export const U124_IN_AT_ON_POSITION_2_TOPIC: GrammarTopicDetail = {
     {
       before: "in the front / back ",
       strong: "of a car",
-      after: "; at the front / back of a building or cinema.",
+      after: ": I was in the back of the car when we had the accident.",
+    },
+    {
+      before: "at the front / back ",
+      strong: "of a building or cinema",
+      after: ": The entrance is at the front of the building.",
     },
     {
       before: "on the front / back ",
@@ -50,37 +55,42 @@ export const U124_IN_AT_ON_POSITION_2_TOPIC: GrammarTopicDetail = {
     {
       before: "in the corner ",
       strong: "of a room",
-      after: "; at/on the corner of a street.",
+      after: ": The TV is in the corner of the room.",
+    },
+    {
+      before: "at/on the corner ",
+      strong: "of a street",
+      after: ": There's a shop on the corner.",
     },
   ],
   examples: [
     {
       english: "When I go to the cinema, I like to sit in the front row.",
-      vietnamese: "Khi đi xem phim tôi thích ngồi hàng ghế đầu.",
+      vietnamese: "in the front row = trong hàng ghế đầu (thuộc dãy ghế).",
     },
     {
       english: "Do you drive on the left or on the right in your country?",
-      vietnamese: "Ở nước bạn lái bên trái hay bên phải?",
+      vietnamese: "on the left/right = bên trái/phải (phía bề mặt đường).",
     },
     {
       english: "Our apartment is on the second floor of the building.",
-      vietnamese: "Căn hộ chúng tôi ở tầng hai.",
+      vietnamese: "on the second floor = ở tầng hai (tầng như bề mặt xếp chồng).",
     },
     {
       english: "We stopped at a shop on the way home.",
-      vietnamese: "Chúng tôi ghé một cửa hàng trên đường về nhà.",
+      vietnamese: "on the way home = trên đường về nhà.",
     },
     {
       english: "Write your name at the top of the page.",
-      vietnamese: "Viết tên bạn ở đầu trang.",
+      vietnamese: "at the top of = ở đầu/cuối một phạm vi (trang, danh sách…).",
     },
     {
       english: "I was in the back of the car when we had the accident.",
-      vietnamese: "Tôi ngồi phía sau xe khi tai nạn xảy ra.",
+      vietnamese: "in the back of a car = ngồi bên trong phía sau xe.",
     },
     {
       english: "The TV is in the corner of the room. / There's a shop on the corner.",
-      vietnamese: "TV ở góc phòng. / Có cửa hàng ở góc phố.",
+      vietnamese: "in the corner = góc phòng; on the corner = góc phố.",
     },
   ],
   practice: {

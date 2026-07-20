@@ -12,14 +12,14 @@ export const U117_LIKE_AND_AS_TOPIC: GrammarTopicDetail = {
   kindLabel: "Conjunction",
   sourceBook: "English Grammar in Use · Intermediate · Unit 117",
   sourceNote:
-    "like + noun/-ing (= giống); as + S + V; as usual / as always / the same as; as a … (= vai trò) vs like a … (= giống). Nên học kèm Units 116, 118.",
+    "like + noun / -ing (= giống); as + S + V (= theo cách / đúng như); as usual / as always / the same as; as a … (= vai trò) vs like a … (= giống). Nên học kèm Units 116, 118.",
   intro:
-    "Unit này giúp bạn nắm Like and As: Like + noun/-ing (= giống); as + S + V; as usual / as always / the same as; as a … (= vai trò) vs like a … (= giống). Nên học kèm Units 116, 118.",
+    "Bài này giúp bạn dùng like để so sánh giống nhau trước danh từ hoặc -ing, dùng as + S + V khi theo sau là mệnh đề, và phân biệt as a … (vai trò thật) với like a … (chỉ giống). Nên học kèm Units 116, 118.",
   structure: {
     affirmative:
       "like + noun / pronoun / -ing | as + S + V | as usual / as always | the same as | as + noun (vai trò)",
     negative:
-      "không: as a palace / as this / the same like | as ≠ like khi nói 'giống như'",
+      "KHÔNG nói as a palace / as this khi ý là giống → dùng like | KHÔNG nói the same like → the same as | like ≠ as khi nói giống nhau",
   },
   usagePoints: [
     {
@@ -38,9 +38,14 @@ export const U117_LIKE_AND_AS_TOPIC: GrammarTopicDetail = {
       after: ": Leave everything as it was. Do it as I showed you. (cũng: like I showed you)",
     },
     {
-      before: "as usual / as always; ",
+      before: "",
+      strong: "as usual / as always",
+      after: ": You're late as usual.",
+    },
+    {
+      before: "Dùng ",
       strong: "the same as",
-      after: " (không the same like): You're late as usual. Your phone is the same as mine.",
+      after: " (KHÔNG nói the same like): Your phone is the same as mine.",
     },
     {
       before: "as you know / as I said / ",
@@ -49,38 +54,43 @@ export const U117_LIKE_AND_AS_TOPIC: GrammarTopicDetail = {
     },
     {
       before: "as + noun = ",
-      strong: "vai trò / hình thức",
-      after: "; like = giống: I worked as a photographer. I'm like a taxi driver (không phải tài xế).",
+      strong: "vai trò / hình thức thật",
+      after: ": I worked as a photographer.",
+    },
+    {
+      before: "like + noun = ",
+      strong: "chỉ giống, không phải thật",
+      after: ": I'm like a taxi driver (không phải tài xế thật).",
     },
   ],
   examples: [
     {
       english: "What a beautiful house! It's like a palace.",
-      vietnamese: "Ngôi nhà đẹp quá! Giống như một cung điện. (không: as a palace)",
+      vietnamese: "Like = giống như cung điện — KHÔNG nói as a palace.",
     },
     {
       english: "I left everything as it was.",
-      vietnamese: "Tôi để mọi thứ nguyên như cũ.",
+      vietnamese: "As + mệnh đề = để nguyên như cũ — không phải so sánh giống.",
     },
     {
       english: "You should have done it as I showed you.",
-      vietnamese: "Bạn lẽ ra phải làm như tôi đã chỉ. (cũng: like I showed you)",
+      vietnamese: "As I showed you = làm đúng cách tôi đã chỉ (cũng: like I showed you).",
     },
     {
       english: "You're late as usual.",
-      vietnamese: "Bạn muộn như thường lệ.",
+      vietnamese: "As usual = như thường lệ — cụm cố định.",
     },
     {
       english: "Your phone is the same as mine.",
-      vietnamese: "Điện thoại bạn giống của tôi. (không: the same like)",
+      vietnamese: "The same as — KHÔNG nói the same like.",
     },
     {
       english: "Many years ago I worked as a photographer.",
-      vietnamese: "Nhiều năm trước tôi làm nhiếp ảnh gia. (= đó là nghề của tôi)",
+      vietnamese: "As a photographer = đó thật sự là nghề của tôi.",
     },
     {
       english: "Everyone wants me to drive them. I'm like a taxi driver.",
-      vietnamese: "Ai cũng muốn tôi chở — tôi giống tài xế taxi. (nhưng không phải)",
+      vietnamese: "Like a taxi driver = chỉ giống tài xế — tôi không phải tài xế thật.",
     },
   ],
   practice: {

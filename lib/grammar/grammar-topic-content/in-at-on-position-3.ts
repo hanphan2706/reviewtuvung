@@ -14,12 +14,12 @@ export const U125_IN_AT_ON_POSITION_3_TOPIC: GrammarTopicDetail = {
   sourceNote:
     "in bed/hospital/prison; at home/work/school; at a party; in/at buildings; in towns vs at Oxford (ga); on a bus / in a car. Nên học kèm Units 123–124, 126.",
   intro:
-    "Trong unit này bạn sẽ nắm: in bed/hospital/prison; at home/work/school; at a party; in/at buildings; in towns vs at Oxford (ga); on a bus / in a car. Nên học kèm Units 123–124, 126.",
+    "Bài này giúp bạn nắm các cụm vị trí cố định với in, at và on: in bed/hospital/prison, at home/work/school, at a party/conference, in/at buildings, in Paris versus at Oxford (ga), và on a bus versus in a car. Nên học kèm Units 123–124, 126.",
   structure: {
     affirmative:
       "in bed/hospital… | at home/work/party… | in/at + building | in + town | on a bus / in a car",
     negative:
-      "không: at Paris (sống) | arrive to → xem Unit 126",
+      "KHÔNG nói at Paris khi sống/làm việc → in Paris | KHÔNG nói arrive to → arrive in/at (xem Unit 126)",
   },
   usagePoints: [
     {
@@ -35,7 +35,12 @@ export const U125_IN_AT_ON_POSITION_3_TOPIC: GrammarTopicDetail = {
     {
       before: "Sự kiện tại tòa nhà → ",
       strong: "at",
-      after: "; nghĩ về bên trong tòa nhà → in: dinner at the hotel / rooms in the hotel.",
+      after: ": We went to a concert at the National Concert Hall.",
+    },
+    {
+      before: "Nghĩ về bên trong tòa nhà → ",
+      strong: "in",
+      after: ": dinner at the hotel / rooms in the hotel.",
     },
     {
       before: "at the station / ",
@@ -43,9 +48,14 @@ export const U125_IN_AT_ON_POSITION_3_TOPIC: GrammarTopicDetail = {
       after: "; at Helen's (house).",
     },
     {
-      before: "Thành phố/làng: ",
+      before: "Sống/làm việc ở thành phố → ",
       strong: "in Paris",
-      after: "; điểm dừng: Does this train stop at Oxford?",
+      after: ": The Louvre is in Paris.",
+    },
+    {
+      before: "Tàu dừng tại điểm → ",
+      strong: "at Oxford",
+      after: ": Does this train stop at Oxford?",
     },
     {
       before: "on a bus / train / plane; ",
@@ -56,31 +66,31 @@ export const U125_IN_AT_ON_POSITION_3_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Anna's mother is in hospital. I'll be at work until 5.30.",
-      vietnamese: "Mẹ Anna đang nằm viện. Tôi sẽ ở chỗ làm đến 5h30.",
+      vietnamese: "in hospital = nằm viện; at work = ở chỗ làm (cụm cố định).",
     },
     {
       english: "Were there many people at the party?",
-      vietnamese: "Có nhiều người ở buổi tiệc không?",
+      vietnamese: "at the party = tham dự buổi tiệc (sự kiện, không phải 'trong').",
     },
     {
       english: "We went to a concert at the National Concert Hall.",
-      vietnamese: "Chúng tôi đi xem hòa nhạc tại National Concert Hall.",
+      vietnamese: "at + tòa nhà khi nói sự kiện diễn ra tại đó.",
     },
     {
       english: "I was at Helen's last night. It's always cold in Helen's house.",
-      vietnamese: "Tối qua tôi ở nhà Helen. Trong nhà Helen lúc nào cũng lạnh.",
+      vietnamese: "at Helen's = ở nhà Helen; in Helen's house = bên trong ngôi nhà.",
     },
     {
       english: "The Louvre is a famous art museum in Paris.",
-      vietnamese: "Louvre là bảo tàng nổi tiếng ở Paris. (không: at Paris)",
+      vietnamese: "in Paris = sống/làm việc/đặt tại thành phố — KHÔNG dùng at Paris.",
     },
     {
       english: "Does this train stop at Oxford?",
-      vietnamese: "Tàu này có dừng ở Oxford không? (= ga Oxford)",
+      vietnamese: "at Oxford = dừng tại ga Oxford, không phải 'trong thành phố'.",
     },
     {
       english: "There were too many people on the bus. Laura arrived in a taxi.",
-      vietnamese: "Xe buýt quá đông. Laura đến bằng taxi.",
+      vietnamese: "on a bus = trên xe buýt; in a taxi = bên trong taxi.",
     },
   ],
   practice: {

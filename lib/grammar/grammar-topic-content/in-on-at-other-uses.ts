@@ -14,12 +14,12 @@ export const U127_IN_ON_AT_OTHER_USES_TOPIC: GrammarTopicDetail = {
   sourceNote:
     "in the rain/sun/language/love/mood/opinion; on TV/phone/fire/purpose/holiday; at the age of / at 100 degrees. Nên học kèm Units 121, 123–125.",
   intro:
-    "Trong unit này bạn sẽ nắm: in the rain/sun/language/love/mood/opinion; on TV/phone/fire/purpose/holiday; at the age of / at 100 degrees. Nên học kèm Units 121, 123–125.",
+    "Bài này giúp bạn dùng in, on và at trong các ngữ cảnh đặc biệt ngoài thời gian và vị trí thông thường: in the rain/language/love/opinion, on TV/phone/purpose/holiday, và at the age of / at 100 degrees. Nên học kèm Units 121, 123–125.",
   structure: {
     affirmative:
       "in the rain/sun… | in love / in my opinion | on TV / on purpose / on holiday | at the age of… / at + speed/temp",
     negative:
-      "on purpose ≠ by accident (Unit 128); for a holiday cũng đúng",
+      "KHÔNG nhầm on purpose (= cố ý) với by accident (Unit 128) | on holiday cũng đúng; go to France for a holiday cũng được",
   },
   usagePoints: [
     {
@@ -34,8 +34,18 @@ export const U127_IN_ON_AT_OTHER_USES_TOPIC: GrammarTopicDetail = {
     },
     {
       before: "on TV / radio / the phone; ",
-      strong: "on fire / on purpose",
-      after: "; on the whole (= nói chung).",
+      strong: "on fire",
+      after: ": I heard the weather forecast on the radio.",
+    },
+    {
+      before: "on purpose = ",
+      strong: "cố ý",
+      after: ": I'm sorry. I didn't do it on purpose.",
+    },
+    {
+      before: "on the whole = ",
+      strong: "nói chung",
+      after: ": On the whole, I enjoyed the trip.",
     },
     {
       before: "on holiday / on a trip / ",
@@ -56,31 +66,31 @@ export const U127_IN_ON_AT_OTHER_USES_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "Don't go out in the rain. We sat in the shade.",
-      vietnamese: "Đừng ra ngoài lúc mưa. Chúng tôi ngồi trong bóng râm.",
+      vietnamese: "in the rain/shade = trong điều kiện mưa/bóng râm.",
     },
     {
       english: "How do you say 'thank you' in Russian?",
-      vietnamese: "Nói 'cảm ơn' bằng tiếng Nga thế nào?",
+      vietnamese: "in Russian = bằng tiếng Nga (ngôn ngữ).",
     },
     {
       english: "I heard the weather forecast on the radio.",
-      vietnamese: "Tôi nghe dự báo thời tiết trên đài.",
+      vietnamese: "on the radio = qua sóng đài, không phải 'trong' đài.",
     },
     {
       english: "I'm sorry. I didn't do it on purpose.",
-      vietnamese: "Xin lỗi. Tôi không cố ý.",
+      vietnamese: "on purpose = cố ý — đối lập by accident (Unit 128).",
     },
     {
       english: "I'm going on holiday next week. Emma's away on business.",
-      vietnamese: "Tuần sau tôi đi nghỉ. Emma đang đi công tác.",
+      vietnamese: "on holiday/on business = đi nghỉ/đi công tác (trạng thái).",
     },
     {
       english: "Tracy left school at the age of 16. / at 16.",
-      vietnamese: "Tracy nghỉ học năm 16 tuổi.",
+      vietnamese: "at the age of / at 16 = ở tuổi 16.",
     },
     {
       english: "Water boils at 100 degrees Celsius.",
-      vietnamese: "Nước sôi ở 100 độ C.",
+      vietnamese: "at + nhiệt độ = ở mức nhiệt độ đó.",
     },
   ],
   practice: {

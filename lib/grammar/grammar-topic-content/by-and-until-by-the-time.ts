@@ -12,14 +12,14 @@ export const U120_BY_AND_UNTIL_BY_THE_TIME_TOPIC: GrammarTopicDetail = {
   kindLabel: "Preposition",
   sourceBook: "English Grammar in Use · Intermediate · Unit 120",
   sourceNote:
-    "by = không muộn hơn; until/till = tình trạng kéo dài đến; by the time…; by then. Nên học kèm Unit 128 (by khác nghĩa).",
+    "by = không muộn hơn / chậm hơn; until / till = tình trạng kéo dài đến; by the time…; by then / by that time. Nên học kèm Unit 128 (by khác nghĩa).",
   intro:
-    "Unit này giúp bạn nắm By and Until / By the Time …: By = không muộn hơn; until/till = tình trạng kéo dài đến; by the time…; by then. Nên học kèm Unit 128 (by khác nghĩa).",
+    "Bài này giúp bạn dùng by để nói không muộn hơn mốc thời gian, until / till để nói tình trạng kéo dài đến lúc đó, và by the time / by then khi một việc xảy ra trước mốc khác. Nên học kèm Unit 128 (by khác nghĩa).",
   structure: {
     affirmative:
       "by + time | until/till + time/clause | by the time + clause | by then / by that time",
     negative:
-      "until = kéo dài; by = hoàn thành/đến trước — không đổi chỗ tuỳ tiện",
+      "KHÔNG nhầm by (= không muộn hơn) với until (= kéo dài đến) | away until Monday ≠ back by Monday",
   },
   usagePoints: [
     {
@@ -29,13 +29,28 @@ export const U120_BY_AND_UNTIL_BY_THE_TIME_TOPIC: GrammarTopicDetail = {
     },
     {
       before: "until / till = ",
-      strong: "đến tận lúc…",
+      strong: "đến tận lúc… / kéo dài đến",
       after: ": Wait until it stops raining. I'll be working until 11.30.",
     },
     {
-      before: "So sánh: away ",
+      before: "away ",
       strong: "until Monday",
-      after: " vs back by Monday; finish by 11.30 vs working until 11.30.",
+      after: " = vắng đến hết thứ Hai.",
+    },
+    {
+      before: "back ",
+      strong: "by Monday",
+      after: " = về không muộn hơn thứ Hai.",
+    },
+    {
+      before: "finish ",
+      strong: "by 11.30",
+      after: " = xong trước hoặc đúng 11.30.",
+    },
+    {
+      before: "working ",
+      strong: "until 11.30",
+      after: " = làm việc kéo dài đến 11.30.",
     },
     {
       before: "by the time + ",
@@ -48,39 +63,39 @@ export const U120_BY_AND_UNTIL_BY_THE_TIME_TOPIC: GrammarTopicDetail = {
       after: ", most of the other guests had left.",
     },
     {
-      before: "by then / ",
-      strong: "by that time",
+      before: "",
+      strong: "by then / by that time",
       after: ": She got there at midnight, but by then most guests had left.",
     },
   ],
   examples: [
     {
       english: "I sent the documents today, so they should arrive by Monday.",
-      vietnamese: "Tôi gửi hôm nay nên chúng sẽ đến không muộn hơn thứ Hai.",
+      vietnamese: "By Monday = đến không muộn hơn thứ Hai — mốc hạn chót.",
     },
     {
       english: "Where's Sarah? She should be here by now.",
-      vietnamese: "Sarah đâu rồi? Cô ấy lẽ ra đã ở đây rồi chứ.",
+      vietnamese: "By now = lẽ ra đã ở đây rồi — không muộn hơn bây giờ.",
     },
     {
       english: "Let's wait until it stops raining.",
-      vietnamese: "Hãy chờ đến khi mưa tạnh.",
+      vietnamese: "Until = chờ kéo dài đến khi mưa tạnh — không phải mốc hạn.",
     },
     {
       english: "Joe will be away until Monday. / Joe will be back by Monday.",
-      vietnamese: "Joe vắng đến thứ Hai. / Joe sẽ về không muộn hơn thứ Hai.",
+      vietnamese: "Until = vắng đến hết thứ Hai; by = về không muộn hơn thứ Hai.",
     },
     {
       english: "By the time we get there, the bank will be closed.",
-      vietnamese: "Đến lúc chúng ta tới nơi thì ngân hàng đã đóng.",
+      vietnamese: "By the time = đến lúc chúng ta tới thì ngân hàng đã đóng.",
     },
     {
       english: "By the time she arrived, most of the other guests had left.",
-      vietnamese: "Khi cô ấy tới, hầu hết khách đã về.",
+      vietnamese: "By the time + quá khứ = khi cô ấy tới thì hầu hết khách đã về.",
     },
     {
       english: "I was very tired by the time I finished.",
-      vietnamese: "Tôi mệt lử khi làm xong.",
+      vietnamese: "By the time I finished = khi làm xong thì đã mệt lử.",
     },
   ],
   practice: {

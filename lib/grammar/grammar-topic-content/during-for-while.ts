@@ -12,43 +12,53 @@ export const U119_DURING_FOR_WHILE_TOPIC: GrammarTopicDetail = {
   kindLabel: "Preposition",
   sourceBook: "English Grammar in Use · Intermediate · Unit 119",
   sourceNote:
-    "during + noun (khi nào); for + period (bao lâu); while + S + V. Nên học kèm for/while và Unit 12.",
+    "during + noun (khi nào); for + period (bao lâu); while + S + V. KHÔNG dùng during + khoảng thời gian hay while + will. Nên học kèm for/while và Unit 12.",
   intro:
-    "Unit này giúp bạn nắm During / For / While: During + noun (khi nào); for + period (bao lâu); while + S + V. Nên học kèm for/while và Unit 12.",
+    "Bài này giúp bạn chọn during khi hỏi khi nào (theo sau là danh từ), for khi hỏi bao lâu, và while khi theo sau là mệnh đề. Nên học kèm for/while và Unit 12.",
   structure: {
     affirmative:
       "during + noun | for + period | while + S + V (present cho tương lai)",
     negative:
-      "không: during two hours / during five years | không: while + will…",
+      "KHÔNG nói during two hours / during five years → for two hours / for five years | KHÔNG nói while I will be → while I am / while I'm there",
   },
   usagePoints: [
     {
       before: "during = ",
       strong: "khi nào (trong lúc…)",
-      after: ": We met nice people during our holiday. It rained during the night. / in the night.",
+      after: ": We met nice people during our holiday. It rained during the night.",
     },
     {
       before: "for = ",
       strong: "bao lâu",
-      after: ": We watched TV for two hours. (không: during two hours)",
+      after: ": We watched TV for two hours. (KHÔNG: during two hours)",
     },
     {
-      before: "So sánh: ",
+      before: "Hỏi ",
       strong: "When? → during",
-      after: "; How long? → for: During the movie. / For half an hour.",
+      after: ": During the movie. / in the night.",
+    },
+    {
+      before: "Hỏi ",
+      strong: "How long? → for",
+      after: ": For half an hour. / for three days.",
     },
     {
       before: "during + ",
       strong: "noun",
-      after: "; while + S + V: during the exam / while he was doing the exam.",
+      after: ": during the exam.",
+    },
+    {
+      before: "while + ",
+      strong: "S + V",
+      after: ": while he was doing the exam.",
     },
     {
       before: "while + ",
       strong: "present",
-      after: " khi nói tương lai: I hope the weather is good while I'm there. (không: while I will be)",
+      after: " khi nói tương lai: I hope the weather is good while I'm there. (KHÔNG: while I will be)",
     },
     {
-      before: "Ví dụ while: ",
+      before: "",
       strong: "while we were waiting",
       after: "; While you were out…; Alex read while Amy watched TV.",
     },
@@ -56,31 +66,31 @@ export const U119_DURING_FOR_WHILE_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "I fell asleep during the movie.",
-      vietnamese: "Tôi ngủ gật trong lúc xem phim.",
+      vietnamese: "During + danh từ = trong lúc xem phim — hỏi khi nào.",
     },
     {
       english: "It rained for three days without stopping.",
-      vietnamese: "Trời mưa ba ngày liên tục. (không: during three days)",
+      vietnamese: "For + khoảng thời gian = bao lâu — KHÔNG nói during three days.",
     },
     {
       english: "I fell asleep while I was watching TV.",
-      vietnamese: "Tôi ngủ gật khi đang xem TV.",
+      vietnamese: "While + mệnh đề = khi đang xem TV thì ngủ gật.",
     },
     {
       english: "We met a lot of interesting people during our holiday.",
-      vietnamese: "Chúng tôi gặp nhiều người thú vị trong kỳ nghỉ.",
+      vietnamese: "During our holiday = trong kỳ nghỉ — theo sau là danh từ.",
     },
     {
       english: "We met a lot of interesting people while we were on holiday.",
-      vietnamese: "… trong lúc chúng tôi đi nghỉ. (while + S + V)",
+      vietnamese: "While we were on holiday = cùng ý nhưng theo sau là mệnh đề.",
     },
     {
       english: "I hope the weather will be good while I'm there.",
-      vietnamese: "Tôi hy vọng thời tiết đẹp trong lúc tôi ở đó. (không: while I will be)",
+      vietnamese: "Nói tương lai dùng present sau while — KHÔNG nói while I will be.",
     },
     {
       english: "What are you going to do while you're waiting?",
-      vietnamese: "Bạn định làm gì trong lúc chờ?",
+      vietnamese: "While you're waiting = trong lúc chờ — present cho tương lai.",
     },
   ],
   practice: {

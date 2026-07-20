@@ -12,14 +12,14 @@ export const U118_LIKE_AS_IF_TOPIC: GrammarTopicDetail = {
   kindLabel: "Conjunction",
   sourceBook: "English Grammar in Use · Intermediate · Unit 118",
   sourceNote:
-    "look/sound/feel like / as if / as though + S + V; It looks like…; as if + past (không thật). Nên học kèm Unit 117.",
+    "look / sound / feel + like / as if / as though + S + V; It looks like…; as if + past cho ý không thật (hiện tại). Nên học kèm Unit 117.",
   intro:
-    "Unit này giúp bạn nắm Like / As If: Look/sound/feel like / as if / as though + S + V; It looks like…; as if + past (không thật). Nên học kèm Unit 117.",
+    "Bài này giúp bạn mô tả ấn tượng bằng look / sound / feel + like / as if / as though, phân biệt look + tính từ với look like / as if + mệnh đề, và dùng as if + past cho ý không thật. Nên học kèm Unit 117.",
   structure: {
     affirmative:
       "look/sound/feel + like / as if / as though + S + V | It looks/sounds like… | as if + past (không thật)",
     negative:
-      "không: look like tired | as if + will… cho ý không thật → dùng past / were",
+      "KHÔNG nói look like tired → look tired hoặc look as if you haven't slept | as if + ý không thật dùng past / were, không dùng will",
   },
   usagePoints: [
     {
@@ -28,13 +28,18 @@ export const U118_LIKE_AS_IF_TOPIC: GrammarTopicDetail = {
       after: " + S + V: Amy sounded like she had a cold. I don't feel as if I've had a holiday.",
     },
     {
-      before: "look + adjective vs ",
-      strong: "look like / as if + mệnh đề",
-      after: ": You look tired. / You look as if you haven't slept.",
+      before: "look + ",
+      strong: "adjective",
+      after: " (tính từ trực tiếp): You look tired.",
     },
     {
-      before: "It looks like… / ",
-      strong: "It sounds like…",
+      before: "look + ",
+      strong: "like / as if + mệnh đề",
+      after: ": You look as if you haven't slept.",
+    },
+    {
+      before: "",
+      strong: "It looks like… / It sounds like…",
       after: ": It looks like she isn't coming. It sounds like they're having a party.",
     },
     {
@@ -43,9 +48,9 @@ export const U118_LIKE_AS_IF_TOPIC: GrammarTopicDetail = {
       after: ": He ran like he was running for his life. They looked at me as though I was mad.",
     },
     {
-      before: "as if + quá khứ = ",
-      strong: "ý không thật (hiện tại)",
-      after: ": He talks as if he knew everything. (= he doesn't)",
+      before: "as if + ",
+      strong: "past",
+      after: " = ý không thật (hiện tại): He talks as if he knew everything. (= he doesn't)",
     },
     {
       before: "Có thể dùng ",
@@ -56,31 +61,31 @@ export const U118_LIKE_AS_IF_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "That house looks like it's going to fall down.",
-      vietnamese: "Ngôi nhà trông như sắp sụp. (cũng: looks as if…)",
+      vietnamese: "Look like + mệnh đề = trông như sắp sụp (cũng: looks as if…).",
     },
     {
       english: "You look tired. / You look as if you haven't slept.",
-      vietnamese: "Bạn trông mệt. / Bạn trông như chưa ngủ.",
+      vietnamese: "Look tired = tính từ trực tiếp; look as if = mệnh đề giải thích vì sao trông mệt.",
     },
     {
       english: "It looks like she isn't coming.",
-      vietnamese: "Hình như cô ấy không đến.",
+      vietnamese: "It looks like = hình như / có vẻ cô ấy không đến.",
     },
     {
       english: "It sounds as though they're having a party.",
-      vietnamese: "Nghe như họ đang tíu tít tiệc tùng.",
+      vietnamese: "It sounds as though = nghe như đang có tiệc.",
     },
     {
       english: "He talks as if he knew everything.",
-      vietnamese: "Anh ta nói như thể biết hết mọi thứ. (ý không thật — không dùng like kiểu này)",
+      vietnamese: "As if + past = nói như thể biết hết — thực ra không biết.",
     },
     {
       english: "Why do you talk about him as if he were an old man?",
-      vietnamese: "Sao bạn nói về anh ấy như thể ông già? (were hoặc was)",
+      vietnamese: "Were (hoặc was) sau as if khi ý không thật — anh ấy không phải ông già.",
     },
     {
       english: "They treat me as if I was their own son.",
-      vietnamese: "Họ đối xử với tôi như con ruột. (tôi không phải)",
+      vietnamese: "As if I was = đối xử như con ruột — thực ra tôi không phải.",
     },
   ],
   practice: {

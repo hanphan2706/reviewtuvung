@@ -12,12 +12,13 @@ export const U116_AS_TOPIC: GrammarTopicDetail = {
   kindLabel: "Conjunction",
   sourceBook: "English Grammar in Use · Intermediate · Unit 116",
   sourceNote:
-    "as = at the same time as; as = because; as vs when. Nên học kèm Unit 117 (like and as).",
+    "as = at the same time as (cùng lúc); as = because (vì); phân biệt as với when khi hai việc diễn ra tuần tự. Nên học kèm Unit 117 (like and as).",
   intro:
-    "Trong unit này bạn sẽ nắm: as = at the same time as; as = because; as vs when. Nên học kèm Unit 117 (like and as).",
+    "Bài này giúp bạn dùng as để nói hai việc cùng lúc, dùng as thay because khi giải thích lý do, và chọn when thay vì as khi việc này xảy ra sau việc kia. Nên học kèm Unit 117 (like and as).",
   structure: {
     affirmative: "As + S + V, … | … as + S + was/were + -ing | Just as + S + V, …",
-    negative: "As + S + don't/didn't …, … | (dùng when, không as, nếu tuần tự)",
+    negative:
+      "KHÔNG dùng as khi việc này xảy ra sau việc kia → When I got home, I had something to eat | as (lý do) ≠ when (thời điểm)",
   },
   usagePoints: [
     {
@@ -32,18 +33,28 @@ export const U116_AS_TOPIC: GrammarTopicDetail = {
     },
     {
       before: "as = ",
-      strong: "because",
+      strong: "because / vì",
       after: ": As it's late and we're tired, let's get a taxi.",
     },
     {
       before: "Hai việc ",
       strong: "đồng thời → as",
-      after: "; việc này sau việc kia → when: When I got home, I had something to eat.",
+      after: ": As I drove home, I listened to music.",
     },
     {
-      before: "as (lý do) ≠ when (thời điểm): ",
-      strong: "As they lived near us",
-      after: " (= because) vs When they lived near us…",
+      before: "Việc này ",
+      strong: "sau việc kia → when",
+      after: ": When I got home, I had something to eat.",
+    },
+    {
+      before: "As they lived near us = ",
+      strong: "because",
+      after: " (lý do): As they lived near us, we saw them often.",
+    },
+    {
+      before: "When they lived near us = ",
+      strong: "thời gian",
+      after: " (khi còn sống gần): When they lived near us, we saw them often.",
     },
     {
       before: "",
@@ -54,31 +65,31 @@ export const U116_AS_TOPIC: GrammarTopicDetail = {
   examples: [
     {
       english: "We all waved goodbye to Liz as she drove away.",
-      vietnamese: "Tất cả chúng tôi vẫy chào Liz khi cô ấy lái xe đi.",
+      vietnamese: "As = cùng lúc cô ấy lái xe đi — hai việc song song.",
     },
     {
       english: "Kate slipped as she was getting off the bus.",
-      vietnamese: "Kate trượt chân lúc đang xuống xe buýt.",
+      vietnamese: "As + was/were + -ing = trong lúc đang làm gì.",
     },
     {
       english: "Just as I sat down, the doorbell rang.",
-      vietnamese: "Đúng lúc tôi ngồi xuống thì chuông cửa reo.",
+      vietnamese: "Just as = đúng khoảnh khắc ngồi xuống thì chuông reo.",
     },
     {
       english: "As I was hungry, I decided to find somewhere to eat.",
-      vietnamese: "Vì đói, tôi quyết định tìm chỗ ăn. (= because)",
+      vietnamese: "As = vì đói — giải thích lý do, tương đương because.",
     },
     {
       english: "As I drove home, I listened to music.",
-      vietnamese: "Trong lúc lái xe về, tôi nghe nhạc. (đồng thời)",
+      vietnamese: "As = trong lúc lái xe về — hai việc cùng lúc.",
     },
     {
       english: "When I got home, I had something to eat.",
-      vietnamese: "Khi về đến nhà, tôi ăn gì đó. (sau đó — không dùng as)",
+      vietnamese: "When = về đến nhà rồi mới ăn — việc tuần tự, không dùng as.",
     },
     {
       english: "As the day went on, the weather got worse.",
-      vietnamese: "Càng về sau trong ngày, thời tiết càng xấu.",
+      vietnamese: "As the day went on = càng về sau trong ngày — tiến triển song song.",
     },
   ],
   practice: {

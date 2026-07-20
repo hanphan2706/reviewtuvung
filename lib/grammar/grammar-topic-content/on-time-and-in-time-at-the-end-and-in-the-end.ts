@@ -12,14 +12,14 @@ export const U122_ON_TIME_AND_IN_TIME_AT_THE_END_AND_IN_THE_END_TOPIC: GrammarTo
   kindLabel: "Preposition",
   sourceBook: "English Grammar in Use · Intermediate · Unit 122",
   sourceNote:
-    "on time = đúng giờ; in time = kịp; at the end of…; in the end = cuối cùng. Nên học kèm Unit 121.",
+    "on time = đúng giờ theo kế hoạch; in time = kịp; at the end of… = lúc kết thúc; in the end = cuối cùng. Nên học kèm Unit 121.",
   intro:
-    "Unit này giúp bạn nắm On Time and In Time / At the End and In the End: On time = đúng giờ; in time = kịp; at the end of…; in the end = cuối cùng. Nên học kèm Unit 121.",
+    "Bài này giúp bạn phân biệt on time (đúng giờ theo kế hoạch) với in time (kịp), và at the end of… (lúc kết thúc một giai đoạn) với in the end (cuối cùng, sau cùng). Bạn cũng học just in time và cặp at first … in the end. Nên học kèm Unit 121.",
   structure: {
     affirmative:
       "on time | in time (for / to…) | just in time | at the end of… | in the end",
     negative:
-      "không: in the end of January | in the end ≠ at the end of…",
+      "KHÔNG nói in the end of January → at the end of January | KHÔNG nhầm in the end (= cuối cùng) với at the end of… (= lúc kết thúc)",
   },
   usagePoints: [
     {
@@ -56,31 +56,31 @@ export const U122_ON_TIME_AND_IN_TIME_AT_THE_END_AND_IN_THE_END_TOPIC: GrammarTo
   examples: [
     {
       english: "The 11.45 train left on time.",
-      vietnamese: "Chuyến 11h45 khởi hành đúng giờ.",
+      vietnamese: "on time = khởi hành đúng giờ theo lịch, không trễ.",
     },
     {
       english: "Will you be home in time for dinner?",
-      vietnamese: "Bạn có về kịp ăn tối không?",
+      vietnamese: "in time for = kịp để làm gì (ở đây: kịp ăn tối).",
     },
     {
       english: "We got to the station just in time for our train.",
-      vietnamese: "Chúng tôi tới ga vừa kịp chuyến tàu.",
+      vietnamese: "just in time = vừa kịp, suýt nữa là trễ.",
     },
     {
       english: "I'm going away at the end of January.",
-      vietnamese: "Tôi đi vào cuối tháng Một. (không: in the end of January)",
+      vietnamese: "at the end of = vào cuối giai đoạn — KHÔNG dùng in the end of.",
     },
     {
       english: "We had a lot of problems with our car. We sold it in the end.",
-      vietnamese: "Xe nhiều vấn đề. Cuối cùng chúng tôi bán.",
+      vietnamese: "in the end = sau cùng quyết định bán — không chỉ 'cuối tháng'.",
     },
     {
       english: "At first we didn't get on very well, but in the end we became good friends.",
-      vietnamese: "Lúc đầu không hợp, nhưng cuối cùng trở thành bạn tốt.",
+      vietnamese: "at first … in the end = lúc đầu … nhưng cuối cùng.",
     },
     {
       english: "I got home too late to watch the game on TV.",
-      vietnamese: "Tôi về quá muộn nên không xem được trận trên TV. (đối nghĩa in time)",
+      vietnamese: "too late = không in time — về quá muộn nên không xem được.",
     },
   ],
   practice: {
