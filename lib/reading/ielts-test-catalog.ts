@@ -44,6 +44,18 @@ const CAMBRIDGE_IELTS_16_COVER_STYLE = {
   coverImageTransformOrigin: "40% 52%",
 } as const;
 
+export const CAMBRIDGE_IELTS_15_COVER_URL = "/cam 15.jpg";
+
+const CAMBRIDGE_IELTS_15_COVER_STYLE = {
+  coverImageObjectPosition: "50% 40%",
+} as const;
+
+export const CAMBRIDGE_IELTS_14_COVER_URL = "/cam 14.webp";
+
+const CAMBRIDGE_IELTS_14_COVER_STYLE = {
+  coverImageObjectPosition: "50% 40%",
+} as const;
+
 export const CAMBRIDGE_IELTS_21_COVER_URL = "/cam 21.png";
 
 export const READING_IELTS_EXAM_HREF = "/tu-hoc/luyen-doc/luyen-de-ielts";
@@ -120,6 +132,78 @@ export const READING_CAMBRIDGE_TESTS: readonly ReadingIeltsTest[] = [
     coverImageUrl: CAMBRIDGE_IELTS_16_COVER_URL,
     ...CAMBRIDGE_IELTS_16_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(16, 1),
+  },
+  {
+    pilotId: "cam15-test4",
+    label: "Cambridge 15 · Test 4",
+    bookTitle: "Cambridge IELTS 15 Academic",
+    testNumber: 4,
+    coverImageUrl: CAMBRIDGE_IELTS_15_COVER_URL,
+    ...CAMBRIDGE_IELTS_15_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(15, 4),
+  },
+  {
+    pilotId: "cam15-test3",
+    label: "Cambridge 15 · Test 3",
+    bookTitle: "Cambridge IELTS 15 Academic",
+    testNumber: 3,
+    coverImageUrl: CAMBRIDGE_IELTS_15_COVER_URL,
+    ...CAMBRIDGE_IELTS_15_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(15, 3),
+  },
+  {
+    pilotId: "cam15-test2",
+    label: "Cambridge 15 · Test 2",
+    bookTitle: "Cambridge IELTS 15 Academic",
+    testNumber: 2,
+    coverImageUrl: CAMBRIDGE_IELTS_15_COVER_URL,
+    ...CAMBRIDGE_IELTS_15_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(15, 2),
+  },
+  {
+    pilotId: "cam15-test1",
+    label: "Cambridge 15 · Test 1",
+    bookTitle: "Cambridge IELTS 15 Academic",
+    testNumber: 1,
+    coverImageUrl: CAMBRIDGE_IELTS_15_COVER_URL,
+    ...CAMBRIDGE_IELTS_15_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(15, 1),
+  },
+  {
+    pilotId: "cam14-test4",
+    label: "Cambridge 14 · Test 4",
+    bookTitle: "Cambridge IELTS 14 Academic",
+    testNumber: 4,
+    coverImageUrl: CAMBRIDGE_IELTS_14_COVER_URL,
+    ...CAMBRIDGE_IELTS_14_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(14, 4),
+  },
+  {
+    pilotId: "cam14-test3",
+    label: "Cambridge 14 · Test 3",
+    bookTitle: "Cambridge IELTS 14 Academic",
+    testNumber: 3,
+    coverImageUrl: CAMBRIDGE_IELTS_14_COVER_URL,
+    ...CAMBRIDGE_IELTS_14_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(14, 3),
+  },
+  {
+    pilotId: "cam14-test2",
+    label: "Cambridge 14 · Test 2",
+    bookTitle: "Cambridge IELTS 14 Academic",
+    testNumber: 2,
+    coverImageUrl: CAMBRIDGE_IELTS_14_COVER_URL,
+    ...CAMBRIDGE_IELTS_14_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(14, 2),
+  },
+  {
+    pilotId: "cam14-test1",
+    label: "Cambridge 14 · Test 1",
+    bookTitle: "Cambridge IELTS 14 Academic",
+    testNumber: 1,
+    coverImageUrl: CAMBRIDGE_IELTS_14_COVER_URL,
+    ...CAMBRIDGE_IELTS_14_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(14, 1),
   },
   {
     pilotId: "cam17-test4",

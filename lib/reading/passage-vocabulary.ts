@@ -1,3 +1,4 @@
+import { CAMBRIDGE_14_15_VOCABULARY } from "@/lib/reading/cambridge-14-15-vocabulary";
 import { CAMBRIDGE_16_21_VOCABULARY } from "@/lib/reading/cambridge-16-21-vocabulary";
 import { CAMBRIDGE_18_19_VOCABULARY } from "@/lib/reading/cambridge-18-19-vocabulary";
 import { buildCompassPassageVocabulary } from "@/lib/reading/compass-idioms";
@@ -137,6 +138,8 @@ function collectAllCuratedItems(): PassageVocabItem[] {
   push(Object.values(READING_CHALLENGE_1_VOCABULARY).flat());
   push(Object.values(READING_CHALLENGE_2_VOCABULARY).flat());
   push(Object.values(READING_CHALLENGE_3_VOCABULARY).flat());
+  push(Object.values(CAMBRIDGE_14_15_VOCABULARY).flat());
+  push(Object.values(CAMBRIDGE_16_21_VOCABULARY).flat());
   push(Object.values(CAMBRIDGE_18_19_VOCABULARY).flat());
 
   return out;
@@ -184,6 +187,7 @@ export function getPassageVocabulary(
 
   return (
     VOCAB_BY_ARTICLE[articleId] ??
+    CAMBRIDGE_14_15_VOCABULARY[articleId] ??
     CAMBRIDGE_16_21_VOCABULARY[articleId] ??
     CAMBRIDGE_18_19_VOCABULARY[articleId] ??
     []

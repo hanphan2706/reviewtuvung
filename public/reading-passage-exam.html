@@ -1787,7 +1787,10 @@ function getActiveQuestionsPanelRoot(){
 function getHighlightRootForRange(range){
   if(!range)return null;
   var anc=range.commonAncestorContainer;
-  var passage=document.querySelector('#passage-panel .p-body');
+  if(anc.nodeType===3)anc=anc.parentElement;
+  if(anc&&anc.closest&&anc.closest('input,select,textarea,button,.fi,.msel,.fi-num,.mqnum'))return null;
+  var passage=document.querySelector('#passage-panel .passage-content.active .p-body')||
+    document.querySelector('#passage-panel .p-body');
   var questions=getActiveQuestionsPanelRoot();
   if(examReviewMode){
     if(passage&&passage.contains(anc))return passage;

@@ -1,3 +1,4 @@
+import { CAMBRIDGE_14_15_QUIZ } from "@/lib/reading/cambridge-14-15-quiz";
 import { CAMBRIDGE_16_21_QUIZ } from "@/lib/reading/cambridge-16-21-quiz";
 import { CAMBRIDGE_18_19_QUIZ } from "@/lib/reading/cambridge-18-19-quiz";
 import { parseCompassQuickCheckText } from "@/lib/reading/compass-quick-check";
@@ -276,6 +277,7 @@ export function getQuickCheckQuiz(
 
   return (
     QUIZ_BY_ARTICLE[articleId] ??
+    CAMBRIDGE_14_15_QUIZ[articleId] ??
     CAMBRIDGE_16_21_QUIZ[articleId] ??
     CAMBRIDGE_18_19_QUIZ[articleId] ??
     null
