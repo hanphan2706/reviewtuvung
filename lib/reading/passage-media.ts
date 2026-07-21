@@ -1,3 +1,8 @@
+import {
+  assertNoBannedPassageImages,
+  unsplashImageBaseUrl,
+} from "@/lib/exam/banned-passage-images";
+
 /** Ảnh bài đọc trong `/public` — hub + reader (cùng article id = cùng ảnh). */
 const READING_ARTICLE_IMAGES: Record<string, string> = {
   "cam20-test2-p1": "/manatees.avif",
@@ -212,54 +217,40 @@ const READING_ARTICLE_IMAGES: Record<string, string> = {
     "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&q=80&auto=format&fit=crop",
   "cam17-test4-p3":
     "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=1200&q=80&auto=format&fit=crop",
-  "cam15-test1-p1":
-    "https://images.unsplash.com/photo-1596040033229-a0b08ace2ef5?w=1200&q=80&auto=format&fit=crop",
+  "cam15-test1-p1": "/reading-article-images/cam15-test1-p1.jpg",
   "cam15-test1-p2":
     "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=80&auto=format&fit=crop",
-  "cam15-test1-p3":
-    "https://images.unsplash.com/photo-1476514525535-0745ffee4d8f?w=1200&q=80&auto=format&fit=crop",
+  "cam15-test1-p3": "/reading-article-images/cam15-test1-p3.jpg",
   "cam15-test2-p1":
     "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1200&q=80&auto=format&fit=crop",
-  "cam15-test2-p2":
-    "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&q=80&auto=format&fit=crop",
-  "cam15-test2-p3":
-    "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80&auto=format&fit=crop",
-  "cam15-test3-p1":
-    "https://images.unsplash.com/photo-1518998053901-536d576cb4c0?w=1200&q=80&auto=format&fit=crop",
+  "cam15-test2-p2": "/reading-article-images/cam15-test2-p2.jpg",
+  "cam15-test2-p3": "/reading-article-images/cam15-test2-p3.jpg",
+  "cam15-test3-p1": "/reading-article-images/cam15-test3-p1.jpg",
   "cam15-test3-p2":
     "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=1200&q=80&auto=format&fit=crop",
   "cam15-test3-p3":
     "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1200&q=80&auto=format&fit=crop",
   "cam15-test4-p1":
     "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1200&q=80&auto=format&fit=crop",
-  "cam15-test4-p2":
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80&auto=format&fit=crop",
+  "cam15-test4-p2": "/reading-article-images/cam15-test4-p2.jpg",
   "cam15-test4-p3":
     "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&auto=format&fit=crop",
-  "cam14-test1-p1":
-    "https://images.unsplash.com/photo-1503455637927-22c934e8d36e?w=1200&q=80&auto=format&fit=crop",
-  "cam14-test1-p2":
-    "https://images.unsplash.com/photo-1529429617124-aee711a70412?w=1200&q=80&auto=format&fit=crop",
+  "cam14-test1-p1": "/reading-article-images/cam14-test1-p1.jpg",
+  "cam14-test1-p2": "/reading-article-images/cam14-test1-p2.jpg",
   "cam14-test1-p3":
     "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1200&q=80&auto=format&fit=crop",
-  "cam14-test2-p1":
-    "https://images.unsplash.com/photo-1452587925148-ce57a3bd4b2e?w=1200&q=80&auto=format&fit=crop",
+  "cam14-test2-p1": "/reading-article-images/cam14-test2-p1.jpg",
   "cam14-test2-p2":
     "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=1200&q=80&auto=format&fit=crop",
   "cam14-test2-p3":
     "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&auto=format&fit=crop",
-  "cam14-test3-p1":
-    "https://images.unsplash.com/photo-1509062522246-37559779237d?w=1200&q=80&auto=format&fit=crop",
-  "cam14-test3-p2":
-    "https://images.unsplash.com/photo-1530210123960-750b9ded1c87?w=1200&q=80&auto=format&fit=crop",
-  "cam14-test3-p3":
-    "https://images.unsplash.com/photo-1472162072943-4bf365af129e?w=1200&q=80&auto=format&fit=crop",
+  "cam14-test3-p1": "/reading-article-images/cam14-test3-p1.jpg",
+  "cam14-test3-p2": "/reading-article-images/cam14-test3-p2.jpg",
+  "cam14-test3-p3": "/reading-article-images/cam14-test3-p3.jpg",
   "cam14-test4-p1":
     "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200&q=80&auto=format&fit=crop",
-  "cam14-test4-p2":
-    "https://images.unsplash.com/photo-1564349684021-80cfb2915aed?w=1200&q=80&auto=format&fit=crop",
-  "cam14-test4-p3":
-    "https://images.unsplash.com/photo-1621451537084-482008f01c1d?w=1200&q=80&auto=format&fit=crop",
+  "cam14-test4-p2": "/reading-article-images/cam14-test4-p2.jpg",
+  "cam14-test4-p3": "/reading-article-images/cam14-test4-p3.jpg",
   "cam16-test1-p1":
     "https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=1200&q=80&auto=format&fit=crop",
   "cam16-test1-p2":
@@ -296,8 +287,7 @@ const READING_ARTICLE_IMAGES: Record<string, string> = {
     "https://images.unsplash.com/photo-1523805009345-7448845a9e53?w=1200&q=80&auto=format&fit=crop",
   "cam21-test2-p3":
     "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80&auto=format&fit=crop",
-  "cam21-test3-p1":
-    "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&q=80&auto=format&fit=crop",
+  "cam21-test3-p1": "/reading-article-images/cam21-test3-p1.jpg",
   "cam21-test3-p2":
     "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80&auto=format&fit=crop",
   "cam21-test3-p3":
@@ -311,9 +301,10 @@ const READING_ARTICLE_IMAGES: Record<string, string> = {
 };
 
 function assertUniqueArticleImages(map: Record<string, string>): void {
+  assertNoBannedPassageImages(map, "luyện đọc");
   const byBaseUrl = new Map<string, string[]>();
   for (const [articleId, url] of Object.entries(map)) {
-    const base = url.split("?")[0] ?? url;
+    const base = unsplashImageBaseUrl(url);
     const ids = byBaseUrl.get(base) ?? [];
     ids.push(articleId);
     byBaseUrl.set(base, ids);
@@ -369,6 +360,8 @@ const READING_ARTICLE_IMAGE_OBJECT_POSITION: Partial<Record<string, string>> = {
   "reading-challenge-2-p11": "object-top",
   "cam19-test4-p2": "object-[center_35%]",
   "cam19-test4-p3": "object-center",
+  "cam14-test2-p1": "object-[center_20%]",
+  "cam15-test3-p1": "object-[center_15%]",
 };
 
 export function readingArticleImageObjectPosition(articleId: string): string {

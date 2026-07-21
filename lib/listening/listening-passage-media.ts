@@ -1,3 +1,7 @@
+import {
+  assertNoBannedPassageImages,
+  unsplashImageBaseUrl,
+} from "@/lib/exam/banned-passage-images";
 import { readingUnsplashBaseUrls } from "@/lib/reading/passage-media";
 
 /**
@@ -210,10 +214,11 @@ const LISTENING_PART_IMAGE_FALLBACK =
   "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&q=80&auto=format&fit=crop";
 
 function unsplashBase(url: string): string {
-  return url.split("?")[0] ?? url;
+  return unsplashImageBaseUrl(url);
 }
 
 function assertListeningPartImages(map: Record<string, string>): void {
+  assertNoBannedPassageImages(map, "luyện nghe");
   const readingUrls = readingUnsplashBaseUrls();
   const byBase = new Map<string, string[]>();
 
