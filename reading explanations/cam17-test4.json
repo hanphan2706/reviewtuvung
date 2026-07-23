@@ -1,0 +1,2002 @@
+{
+  "pilotId": "cam17-test4",
+  "schemaVersion": 4,
+  "note": "Cam 17 R T4 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Bats to the rescue",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Does education fuel economic growth?",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Timur Gareyev – blindfold chess champion",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Madagascar's forests are being converted to agricultural land at a rate of one percent every year. Much of this destruction is fuelled by the cultivation of the country's main staple crop: rice."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhiều rừng Madagascar có bị phá hủy trực tiếp do côn trùng tấn công hay không — so với bài:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“destroyed by attacks from insects” (bị phá hủy do côn trùng tấn công)",
+              "p": "Bài nói rừng bị chuyển thành đất nông nghiệp (“converted to agricultural land”) — nguyên nhân là trồng lúa, không phải côn trùng tấn công rừng"
+            },
+            {
+              "q": "Vai trò của côn trùng",
+              "p": "Côn trùng phá hoại mùa màng (“insect pests are destroying vast quantities of what is grown”), khiến nông dân phải phá rừng để mở ruộng mới — khác với “rừng bị côn trùng tấn công”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "forests are being destroyed",
+              "p": "forests are being converted to agricultural land"
+            },
+            {
+              "q": "by attacks from insects",
+              "p": "insect pests are destroying ... what is grown ... leading them to clear forest"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Côn trùng hại cây trồng, từ đó thúc đẩy phá rừng — chứ bài không nói rừng bị côn trùng tấn công trực tiếp."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "but not all species are suffering. In fact, some of the island's insectivorous bats are currently thriving"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mất môi trường sống có làm dơi ăn côn trùng ở Madagascar suy giảm nặng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Loss of habitat has badly affected insectivorous bats” (mất môi trường sống ảnh hưởng xấu tới dơi ăn côn trùng)",
+              "p": "Bài viết “some of the island's insectivorous bats are currently thriving” — một số loài dơi ăn côn trùng đang phát triển tốt"
+            },
+            {
+              "q": "“badly affected”",
+              "p": "“not all species are suffering” — không phải tất cả đều gặp khó"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "badly affected",
+              "p": "currently thriving"
+            },
+            {
+              "q": "loss of habitat",
+              "p": "devastating habitat and biodiversity loss"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ một số dơi ăn côn trùng đang phát triển — trái với “badly affected”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Enter University of Cambridge zoologist Ricardo Rocha. He's passionate about conservation, and bats."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ricardo Rocha có nghiên cứu dơi ở nhiều vùng khác nhau trên thế giới không — bài có nói không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“carried out studies of bats in different parts of the world”",
+              "p": "Bài chỉ giới thiệu Rocha (Cambridge) và nghiên cứu ở Madagascar — không nhắc nghiên cứu ở các vùng khác trên thế giới"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "different parts of the world",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "studies of bats",
+              "p": "Rocha's new study ... in Madagascar"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ có nghiên cứu Madagascar; không có thông tin về các khu vực khác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "several species of indigenous bats are taking advantage of habitat modification to hunt insects swarming above the country's rice fields."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc thay đổi môi trường sống có khiến dơi bản địa trở nên hữu ích cho nông dân không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Habitat modification has resulted in indigenous bats ... becoming useful to farmers”",
+              "p": "Bài viết dơi bản địa “taking advantage of habitat modification to hunt insects” trên ruộng lúa, và “giving Madagascar's rice farmers a vital pest control service”"
+            },
+            {
+              "q": "“useful to farmers”",
+              "p": "“biological pest suppressors” / “pest control service”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "habitat modification",
+              "p": "taking advantage of habitat modification"
+            },
+            {
+              "q": "useful to farmers",
+              "p": "vital pest control service"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Dơi bản địa tận dụng ruộng lúa để săn sâu bệnh — trực tiếp giúp nông dân."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "They include the Malagasy mouse-eared bat, Major's long-fingered bat, the Malagasy white-bellied free-tailed bat and Peters' wrinkle-lipped bat."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dơi Malagasy mouse-eared có phổ biến hơn các loài dơi bản địa khác không — bài có so sánh không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“more common than other indigenous bat species”",
+              "p": "Bài chỉ liệt kê loài này trong nhóm “winner species” — không so sánh mức độ phổ biến với các loài khác"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more common than",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "Malagasy mouse-eared bat",
+              "p": "They include the Malagasy mouse-eared bat"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có nhắc tên loài nhưng không nói nó phổ biến hơn các loài khác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "We found that six species of bat are preying on rice pests, including the paddy swarming caterpillar and grass webworm."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dơi có thể ăn sâu paddy swarming caterpillar và grass webworm không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Bats may feed on paddy swarming caterpillars and grass webworms”",
+              "p": "Bài viết sáu loài dơi “preying on rice pests, including the paddy swarming caterpillar and grass webworm”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may feed on",
+              "p": "preying on rice pests, including"
+            },
+            {
+              "q": "paddy swarming caterpillars and grass webworms",
+              "p": "the paddy swarming caterpillar and grass webworm"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nêu rõ hai loại sâu này nằm trong thức ăn của dơi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "droppings",
+      "evidence": {
+        "quoteEn": "The next used DNA barcoding techniques to analyse droppings collected from bats at the different sites."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phân tích DNA từ vật gì của dơi — một từ trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “DNA analysis of bat …” cần một danh từ (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“DNA analysis of bat …”",
+              "p": "“analyse droppings collected from bats” — phân tích phân dơi"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "DNA analysis of bat",
+              "p": "DNA barcoding techniques to analyse droppings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“droppings” khớp trực tiếp với mô tả phương pháp phân tích DNA."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "droppings"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "coffee",
+      "evidence": {
+        "quoteEn": "the bats were consuming pests of other crops, including the black twig borer (which infests coffee plants)"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dơi ăn sâu bệnh của lúa và cây trồng nào khác (trước mía, hạt và trái cây) — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Trong chuỗi “pests of rice, …, sugarcane, nuts and fruit” cần một danh từ chỉ cây trồng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“ate pests of rice, …, sugarcane, nuts and fruit”",
+              "p": "Bài liệt kê black twig borer (hại cây cà phê), sugarcane cicada, macadamia nut-borer, sober tabby (citrus) — ô trống là coffee"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "pests of rice",
+              "p": "economically important insect pests / rice pests"
+            },
+            {
+              "q": "(blank crop)",
+              "p": "black twig borer (which infests coffee plants)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sâu black twig borer hại cây cà phê — điền coffee."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "coffee"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "mosquitoes",
+      "evidence": {
+        "quoteEn": "Rocha and his team found evidence that Malagasy bats feed not just on crop pests but also on mosquitoes – carriers of malaria"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dơi ngăn lây bệnh bằng cách ăn gì (cùng với ruồi đen) — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “by eating … and blackflies” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“prevent the spread of disease by eating … and blackflies”",
+              "p": "Bài viết dơi cũng ăn “mosquitoes – carriers of malaria” và blackflies"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "prevent the spread of disease",
+              "p": "feed ... on mosquitoes"
+            },
+            {
+              "q": "blackflies",
+              "p": "blackflies, which spread river blindness"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Muỗi mang bệnh sốt rét — điền mosquitoes."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "mosquitoes"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "protein",
+      "evidence": {
+        "quoteEn": "When food is scarce, bats become a crucial source of protein for local people."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dơi cung cấp thức ăn giàu gì cho người địa phương — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “food rich in …” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“they provide food rich in …”",
+              "p": "“bats become a crucial source of protein for local people”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "food rich in",
+              "p": "a crucial source of protein"
+            },
+            {
+              "q": "provide food",
+              "p": "bats become a crucial source"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“protein” khớp trực tiếp với “source of protein”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "protein"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "unclean",
+      "evidence": {
+        "quoteEn": "the bats sometimes roost in buildings, but are not welcomed there because they make them unclean."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nơi dơi trú ẩn (nhà cửa) trở nên như thế nào — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the buildings where they roost become …” cần tính từ hoặc danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the buildings where they roost become …”",
+              "p": "“they make them unclean” — làm nhà cửa bẩn/không sạch"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "become",
+              "p": "make them unclean"
+            },
+            {
+              "q": "buildings where they roost",
+              "p": "roost in buildings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Người dân không muốn dơi ở nhà vì làm nhà “unclean”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "unclean"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "culture",
+      "evidence": {
+        "quoteEn": "they can be viewed as beings between worlds, which makes them very significant in the culture of the people."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dơi đóng vai trò quan trọng trong lĩnh vực gì của người địa phương — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “important role in local …” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“they play an important role in local …”",
+              "p": "“very significant in the culture of the people” — quan trọng trong văn hóa địa phương"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "important role in local",
+              "p": "very significant in the culture of the people"
+            },
+            {
+              "q": "play an important role",
+              "p": "associated with sacred caves and the ancestors"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Dơi gắn với hang thiêng và tổ tiên — “culture” khớp trực tiếp."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "culture"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "houses",
+      "evidence": {
+        "quoteEn": "farmers can promote this mutually beneficial relationship by installing bat houses."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nông dân nên cung cấp loại chỗ ở đặc biệt nào cho dơi — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “provide special …” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“farmers should provide special … to support the bat population”",
+              "p": "“installing bat houses” — lắp nhà cho dơi"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "provide special",
+              "p": "installing bat"
+            },
+            {
+              "q": "support the bat population",
+              "p": "promote this mutually beneficial relationship"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“bat houses” → điền houses (ONE WORD ONLY)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "houses"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "One way to look at whether education causes economic growth is to 'hold wealth constant'. This involves following the lives of different people with the same level of wealth over a period of time."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích vì sao nghiên cứu cần tập trung vào cá nhân có thu nhập/tài sản tương đối ổn định."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“individuals with a fairly consistent income” (cá nhân có thu nhập tương đối ổn định)",
+              "p": "Đoạn E: “hold wealth constant” — giữ mức tài sản không đổi; theo dõi người cùng mức wealth qua thời gian"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fairly consistent income",
+              "p": "hold wealth constant / same level of wealth"
+            },
+            {
+              "q": "need for research to focus on individuals",
+              "p": "following the lives of different people with the same level of wealth"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ đoạn E giải thích phương pháp “giữ wealth không đổi” để cô lập vai trò giáo dục."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "It includes court records, guild ledgers, parish registers, village censuses, tax lists and – the most recent addition – 9,000 handwritten inventories"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu ví dụ các nguồn dữ liệu dùng để xây dựng cơ sở dữ liệu."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“examples of the sources the database has been compiled from”",
+              "p": "Đoạn A liệt kê court records, guild ledgers, parish registers, village censuses, tax lists, inventories"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "sources the database has been compiled from",
+              "p": "It includes court records, guild ledgers, parish registers"
+            },
+            {
+              "q": "examples",
+              "p": "9,000 handwritten inventories listing over a million personal possessions"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn A là nơi duy nhất liệt kê đầy đủ các loại nguồn tài liệu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "When Juliana continued taking jobs reserved for male guild members, she was summoned before the guild court and told to pay a fine"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn kể về một người từ chối tuân theo lệnh/quy định."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“one individual's refusal to obey an order”",
+              "p": "Đoạn D: Juliana Schweickherdt bị guild phê bình vì vi phạm quy chế, vẫn tiếp tục nhận việc dành cho nam giới — “continued taking jobs”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "refusal to obey an order",
+              "p": "continued taking jobs reserved for male guild members"
+            },
+            {
+              "q": "one individual",
+              "p": "Juliana Schweickherdt, a 50-year-old spinster"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Juliana cố tình vi phạm quy định guild — đúng kiểu “refusal to obey”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "'German-speaking central Europe is an excellent laboratory for testing theories of economic growth,' she explains."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói một vùng đặc biệt phù hợp để nghiên cứu mối liên hệ giáo dục–tăng trưởng kinh tế."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a region being particularly suited to research into the link between education and economic growth”",
+              "p": "Đoạn F: Trung Âu nói tiếng Đức là “an excellent laboratory for testing theories of economic growth”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "particularly suited to research",
+              "p": "an excellent laboratory for testing theories"
+            },
+            {
+              "q": "link between education and economic growth",
+              "p": "the relationship between education and economic growth"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn F gọi vùng này là “laboratory” lý tưởng để kiểm tra lý thuyết tăng trưởng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "From badger skins to Bibles, sewing machines to scarlet bodices – the villagers' entire worldly goods are included."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu ví dụ các vật dụng trong danh sách tài sản cá nhân."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“examples of the items included in a list of personal possessions”",
+              "p": "Đoạn C: badger skins, Bibles, sewing machines, scarlet bodices — toàn bộ worldly goods"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "items included in a list of personal possessions",
+              "p": "the villagers' entire worldly goods are included"
+            },
+            {
+              "q": "examples",
+              "p": "From badger skins to Bibles, sewing machines to scarlet bodices"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn C liệt kê cụ thể các món đồ trong inventories."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "descendants",
+      "evidence": {
+        "quoteEn": "We can follow the same people – and their descendants – across 300 years of educational and economic change"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cơ sở dữ liệu theo dõi cuộc sống của nhiều cá nhân và cả ai nữa qua 300 năm:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “as well as those of their …” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“those of their …, over a 300-year period”",
+              "p": "“follow the same people – and their descendants – across 300 years”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "their …",
+              "p": "their descendants"
+            },
+            {
+              "q": "300-year period",
+              "p": "across 300 years"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“descendants” khớp trực tiếp với bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "descendants"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "sermon",
+      "evidence": {
+        "quoteEn": "Ana Regina and Magdalena Riethmüllerin, who were chastised in 1707 for reading books in church instead of listening to the sermon."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hai người phụ nữ bị khiển trách vì đọc sách thay vì chú ý tới gì trong nhà thờ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “paying attention to a …” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“paying attention to a …”",
+              "p": "“reading books in church instead of listening to the sermon”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "paying attention to",
+              "p": "listening to the sermon"
+            },
+            {
+              "q": "reading while they should have been",
+              "p": "reading books in church instead of"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Họ lẽ ra phải nghe sermon — điền sermon."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "sermon"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "fine",
+      "evidence": {
+        "quoteEn": "she was summoned before the guild court and told to pay a fine equivalent to one third of a servant's annual wage."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Juliana bị phạt bằng hình thức gì sau khi vi phạm quy tắc guild:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “she was later given a …” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“As a punishment, she was later given a …”",
+              "p": "“told to pay a fine equivalent to one third of a servant's annual wage”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "given a …",
+              "p": "told to pay a fine"
+            },
+            {
+              "q": "punishment",
+              "p": "summoned before the guild court"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hình phạt là nộp tiền phạt — điền fine."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fine"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "innovation",
+      "evidence": {
+        "quoteEn": "The dominance of guilds not only prevented people from using their skills, but also held back even the simplest industrial innovation."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Guild có thể ngăn cản điều gì và chặn người có kỹ năng làm việc:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “could prevent …” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“prevent … and stop skilled people from working”",
+              "p": "“held back even the simplest industrial innovation” và “prevented people from using their skills”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "prevent",
+              "p": "held back"
+            },
+            {
+              "q": "stop skilled people from working",
+              "p": "prevented people from using their skills"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Guild kìm hãm cả đổi mới công nghiệp đơn giản nhất — điền innovation."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "innovation"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "B",
+      "answerPair": [
+        23,
+        24
+      ],
+      "correctLetters": [
+        "B",
+        "E"
+      ],
+      "evidence": {
+        "quoteEn": "Between 1600 and 1900, England had only mediocre literacy rates by European standards, yet its economy grew fast ... Germany and Scandinavia had excellent literacy rates"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai ý đúng về tỷ lệ biết chữ trong đoạn B:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý B: tỷ lệ biết chữ ở Đức 1600–1900 rất tốt (“Literacy rates in Germany ... were very good”).",
+              "p": "Bài viết “Germany and Scandinavia had excellent literacy rates” — Đức có tỷ lệ biết chữ xuất sắc."
+            },
+            {
+              "q": "Ý E: tăng trưởng kinh tế có thể giúp cải thiện tỷ lệ biết chữ (“Economic growth can help to improve literacy rates”).",
+              "p": "Bài viết “there is plenty of evidence that growth increases education” — bằng chứng cho thấy tăng trưởng làm tăng giáo dục/biết chữ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Literacy rates in Germany between 1600 and 1900 were very good",
+              "p": "Germany and Scandinavia had excellent literacy rates"
+            },
+            {
+              "q": "Economic growth can help to improve literacy rates",
+              "p": "growth increases education"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai ý B và E đều được bài nêu rõ trong đoạn B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B và E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói “very little research” về mối liên hệ biết chữ–thu nhập; chỉ nói khó tìm bằng chứng nhân quả giáo dục–tăng trưởng."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài viết các phân tích hiện đại “struggled to find evidence that education causes economic growth” — trái với “strong evidence”."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Anh có tỷ lệ biết chữ “mediocre” nhưng vẫn industrialise sớm — không phải ví dụ cho thấy biết chữ cao giúp công nghiệp hóa."
+            }
+          ]
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "E",
+      "answerPair": [
+        23,
+        24
+      ],
+      "correctLetters": [
+        "B",
+        "E"
+      ],
+      "evidence": {
+        "quoteEn": "Modern cross-country analyses have also struggled to find evidence that education causes economic growth, even though there is plenty of evidence that growth increases education"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 23–24 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý E: tăng trưởng kinh tế giúp cải thiện tỷ lệ biết chữ.",
+              "p": "“there is plenty of evidence that growth increases education” — tăng trưởng làm tăng giáo dục."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Economic growth can help to improve literacy rates",
+              "p": "growth increases education"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý E; đi cùng B trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần “Các lựa chọn còn lại” ở câu 23."
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "B",
+      "answerPair": [
+        25,
+        26
+      ],
+      "correctLetters": [
+        "B",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "In villages throughout the region, guilds blocked labour migration and resisted changes that might reduce their influence."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai ý đúng về guild ở Trung Âu nói tiếng Đức (1600–1900) trong đoạn F:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý B: họ phản đối người di cư đến vùng để làm việc (“opposed to people moving to an area for work”).",
+              "p": "Bài viết guild “blocked labour migration” — chặn di cư lao động."
+            },
+            {
+              "q": "Ý D: họ phản đối các thực hành đe dọa quyền kiểm soát nghề (“opposed practices that threatened their control over a trade”).",
+              "p": "Guild “legislated against anything that undermined their monopolies” và “resisted changes that might reduce their influence”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "opposed to people moving to an area for work",
+              "p": "blocked labour migration"
+            },
+            {
+              "q": "threatened their control over a trade",
+              "p": "undermined their monopolies / reduce their influence"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai ý B và D đều có bằng chứng rõ trong đoạn F."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B và D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đoạn F không nói guild giúp thanh niên học nghề."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không so sánh hồ sơ guild ở vùng này với các vùng khác trên thế giới."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Không nói guild chủ yếu gồm thương nhân giàu."
+            }
+          ]
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "D",
+      "answerPair": [
+        25,
+        26
+      ],
+      "correctLetters": [
+        "B",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "local guilds and merchant associations were extremely powerful and legislated against anything that undermined their monopolies."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 25–26 — ý còn lại:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý D: phản đối thực hành đe dọa quyền kiểm soát nghề.",
+              "p": "“legislated against anything that undermined their monopolies” — lập luật chống lại điều gì làm suy yếu độc quyền."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "opposed practices that threatened their control",
+              "p": "legislated against anything that undermined their monopolies"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý D; đi cùng B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần loại đáp án ở câu 25."
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "The first recorded game in Europe was played in 13th-century Florence. In 1947, the Argentinian grandmaster Miguel Najdorf played 45 simultaneous games in his mind"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới các ví dụ cờ úp từ trước đây."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a reference to earlier examples of blindfold chess”",
+              "p": "Đoạn D: trận đầu tiên ghi lại ở Florence thế kỷ 13; năm 1947 Najdorf chơi 45 ván đồng thời trong đầu"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "earlier examples",
+              "p": "The first recorded game ... 13th-century Florence / In 1947 ... Najdorf"
+            },
+            {
+              "q": "blindfold chess",
+              "p": "played 45 simultaneous games in his mind"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn D liệt kê các ví dụ lịch sử về cờ úp."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "The nature of the game is to run through possible moves in the mind to see how they play out. From this, regular players develop a memory for the patterns the pieces make"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn mô tả cờ úp gồm những gì / hoạt động như thế nào."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“an outline of what blindfold chess involves”",
+              "p": "Đoạn E: kỳ thủ chạy các nước đi trong đầu, ghi nhớ mẫu quân cờ; phải nhớ và cập nhật vị trí từng bàn khi chơi nhiều ván"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "what blindfold chess involves",
+              "p": "run through possible moves in the mind / recreate it in your mind"
+            },
+            {
+              "q": "outline",
+              "p": "Not only must the positions of each piece on every board be memorised"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn E giải thích chi tiết cơ chế chơi cờ trong đầu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "We didn't find anything other than playing chess that he seems to be supremely gifted at."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn cho rằng tài năng của Gareyev chỉ giới hạn ở cờ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a claim that Gareyev's skill is limited to chess”",
+              "p": "Đoạn F: Rissman nói không thấy Gareyev xuất sắc ở việc gì khác ngoài chơi cờ — “anything other than playing chess”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "skill is limited to chess",
+              "p": "anything other than playing chess that he seems to be supremely gifted at"
+            },
+            {
+              "q": "claim",
+              "p": "He was not exceptional on any of these standard tests"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Các bài test trí nhớ thông thường bình thường — chỉ cờ là đặc biệt."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "In the hope of understanding how he and others like him can perform such mental feats, researchers at the University of California in Los Angeles (UCLA) called him in for tests."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích vì sao kỹ năng của Gareyev thu hút các nhà khoa học."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“why Gareyev's skill is of interest to scientists”",
+              "p": "Đoạn B: nhà nghiên cứu UCLA mời anh tham gia test “in the hope of understanding how he ... can perform such mental feats”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "of interest to scientists",
+              "p": "researchers ... called him in for tests"
+            },
+            {
+              "q": "why",
+              "p": "In the hope of understanding how he and others like him can perform such mental feats"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn B nêu rõ động cơ nghiên cứu: hiểu các kỳ tích trí não."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "H",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "The most important part of blindfold chess for me is that I have found the one thing that I can fully dedicate myself to. I miss having an obsession."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu ưu tiên/thứ Gareyev coi trọng nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“an outline of Gareyev's priorities”",
+              "p": "Đoạn H: phần quan trọng nhất là tìm được một thứ có thể “fully dedicate myself to”; anh “miss having an obsession”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "priorities",
+              "p": "The most important part of blindfold chess for me"
+            },
+            {
+              "q": "outline",
+              "p": "I don't worry too much about the winning percentage"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn H cho thấy anh ưu tiên đam mê/cống hiến hơn tỷ lệ thắng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "But the ends of games are taxing too, as exhaustion sets in."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích vì sao giai đoạn cuối trận có thể khó."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a reason why the last part of a game may be difficult”",
+              "p": "Đoạn E: “the ends of games are taxing too, as exhaustion sets in” — cuối ván cũng mệt vì kiệt sức"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the last part of a game may be difficult",
+              "p": "the ends of games are taxing too"
+            },
+            {
+              "q": "reason",
+              "p": "as exhaustion sets in"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Kiệt sức khiến giai đoạn cuối khó nhớ và ra nước đi chính xác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "While his challengers will play the games as normal, Gareyev himself will be blindfolded."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong các trận sắp tới, tất cả người tham gia có bị bịt mắt không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“all the participants will be blindfolded”",
+              "p": "“his challengers will play the games as normal, Gareyev himself will be blindfolded” — chỉ Gareyev bịt mắt"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "all the participants will be blindfolded",
+              "p": "Gareyev himself will be blindfolded (challengers as normal)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đối thủ chơi bình thường — không phải tất cả đều úp."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "he gets his kicks from the adventure sport of BASE jumping."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Gareyev có thắng các cuộc thi BASE jumping không — bài có nói không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“has won competitions in BASE jumping”",
+              "p": "Bài chỉ nói anh thích (“gets his kicks from”) BASE jumping — không nhắc thắng giải"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "won competitions in BASE jumping",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "BASE jumping",
+              "p": "gets his kicks from the adventure sport of BASE jumping"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có nhắc sở thích nhưng không có thông tin về thắng cuộc thi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "researchers at the University of California in Los Angeles (UCLA) called him in for tests. They now have their first results."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "UCLA có phải trường đại học đầu tiên nghiên cứu kỳ thủ cờ úp không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“UCLA is the first university to carry out research into blindfold chess players”",
+              "p": "Bài chỉ nói UCLA mời Gareyev test — không so sánh với trường khác hay nói “first”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the first university",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "research into blindfold chess players",
+              "p": "called him in for tests"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có thông tin UCLA là đơn vị đầu tiên."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "The ability to play a game of chess with your eyes closed is not a far reach for most accomplished player ... A lot of players are capable of doing what I'm doing."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kỳ thủ giỏi có khả năng chơi cờ úp không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Good chess players are likely to be able to play blindfold chess”",
+              "p": "“not a far reach for most accomplished player” và “A lot of players are capable of doing what I'm doing”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Good chess players",
+              "p": "most accomplished player / regular players"
+            },
+            {
+              "q": "likely to be able to play blindfold chess",
+              "p": "not a far reach ... with your eyes closed"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói nhiều kỳ thủ có thể chơi úp."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "memory",
+      "evidence": {
+        "quoteEn": "The scientists first had Gareyev perform some standard memory tests."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhà nghiên cứu bắt đầu bằng cách kiểm tra điều gì của Gareyev:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “testing Gareyev's …” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“testing Gareyev's …”",
+              "p": "“perform some standard memory tests” — các bài test trí nhớ tiêu chuẩn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "testing Gareyev's",
+              "p": "standard memory tests"
+            },
+            {
+              "q": "The researchers started by",
+              "p": "The scientists first had Gareyev perform"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“memory” khớp với “memory tests”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "memory"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "numbers",
+      "evidence": {
+        "quoteEn": "One classic test measures how many numbers a person can repeat, both forwards and backwards, soon after hearing them."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Anh phải nhớ lại một dãy gì theo thứ tự và ngược lại:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “recall a string of …” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“recall a string of … in order and also in reverse order”",
+              "p": "“how many numbers a person can repeat, both forwards and backwards”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a string of",
+              "p": "how many numbers"
+            },
+            {
+              "q": "in order and also in reverse order",
+              "p": "forwards and backwards"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài test cổ điển dùng dãy số — điền numbers."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "numbers"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "communication",
+      "evidence": {
+        "quoteEn": "the scans found much greater than average communication between parts of Gareyev's brain that make up what is called the frontoparietal control network."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "MRI cho thấy lượng bất thường của gì giữa các vùng não liên quan tới điều hướng sự chú ý:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “an unusual amount of … within the areas” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“unusual amount of … within the areas … concerned with directing attention”",
+              "p": "“much greater than average communication between parts of Gareyev's brain” trong frontoparietal control network — mạng phân bổ attention"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "unusual amount of",
+              "p": "much greater than average communication"
+            },
+            {
+              "q": "directing attention",
+              "p": "allocate attention / frontoparietal control network"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“communication” khớp trực tiếp với kết quả scan."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "communication"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "visual",
+      "evidence": {
+        "quoteEn": "the areas of his brain that process visual images – such as chess boards – may have stronger links to other brain regions"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Scan gợi ý sức mạnh bất thường ở vùng não xử lý loại input gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Trước “input” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“parts of his brain that deal with … input”",
+              "p": "“areas of his brain that process visual images – such as chess boards” — xử lý hình ảnh trực quan"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "deal with … input",
+              "p": "process visual images"
+            },
+            {
+              "q": "unusual strength",
+              "p": "may have stronger links to other brain regions"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vùng xử lý hình ảnh → điền visual."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "visual"
+        }
+      ]
+    }
+  }
+}

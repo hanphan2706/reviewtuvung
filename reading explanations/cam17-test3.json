@@ -1,0 +1,1948 @@
+{
+  "pilotId": "cam17-test3",
+  "schemaVersion": 4,
+  "note": "Cam 17 R T3 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The thylacine",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Palm oil",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Building the Skyline: The Birth and Growth of Manhattan's Skyscrapers",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "carnivorous",
+      "evidence": {
+        "quoteEn": "In terms of feeding, it was exclusively carnivorous, and its stomach was muscular with an ability to distend so that it could eat large amounts of food at one time"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: thylacine ăn chế độ hoàn toàn như thế nào (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “an entirely … diet” cần tính từ hoặc danh từ mô tả loại ăn."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“ate an entirely … diet”",
+              "p": "“was exclusively carnivorous” — chỉ ăn thịt, không ăn thực vật."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "ate an entirely … diet",
+              "p": "exclusively carnivorous"
+            },
+            {
+              "q": "entirely",
+              "p": "exclusively"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói thẳng thylacine chỉ ăn thịt → carnivorous."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "carnivorous"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "scent",
+      "evidence": {
+        "quoteEn": "During long-distance chases, thylacines were likely to have relied more on scent than any other sense."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi săn mồi, thylacine có lẽ chủ yếu dựa vào gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “depended mainly on … when hunting” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“probably depended mainly on … when hunting”",
+              "p": "“relied more on scent than any other sense” trong các cuộc rượt đuổi dài."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "depended mainly on",
+              "p": "relied more on"
+            },
+            {
+              "q": "when hunting",
+              "p": "during long-distance chases"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Giác quan được nhấn mạnh nhất khi săn là mùi → scent."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "scent"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "pouch",
+      "evidence": {
+        "quoteEn": "Newborns crawled into the pouch on the belly of their mother, and attached themselves to one of the four teats, remaining there for up to three months."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Con non ở trong bộ phận nào của mẹ trong vài tháng đầu (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “inside its mother's …” cần danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“young spent first months of life inside its mother's …”",
+              "p": "Sơ sinh “crawled into the pouch on the belly of their mother” và bám vú tới ba tháng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "inside its mother's …",
+              "p": "the pouch on the belly of their mother"
+            },
+            {
+              "q": "first months of life",
+              "p": "remaining there for up to three months"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thylacine là marsupial — con non ở trong túi → pouch."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "pouch"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "fossil",
+      "evidence": {
+        "quoteEn": "The most recent, well-dated occurrence of a thylacine on the mainland is a carbon-dated fossil from Murray Cave in Western Australia, which is around 3,100 years old."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bằng chứng cuối cùng ở đại lục Úc là một … 3.100 năm tuổi (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Trước “3,100-year-old” cần danh từ chỉ loại bằng chứng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“last evidence … is a 3,100-year-old …”",
+              "p": "“carbon-dated fossil from Murray Cave” — hóa thạch được xác định niên đại bằng carbon."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "last evidence in mainland Australia",
+              "p": "most recent, well-dated occurrence of a thylacine on the mainland"
+            },
+            {
+              "q": "3,100-year-old",
+              "p": "around 3,100 years old"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bằng chứng cổ nhất trên đại lục là hóa thạch → fossil."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fossil"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "habitat",
+      "evidence": {
+        "quoteEn": "These include competition with wild dogs introduced by European settlers, loss of habitat along with the disappearance of prey species, and a distemper-like disease which may also have affected the thylacine."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Suy giảm ở Tasmania một phần do mất … và nguồn thức ăn (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “reduction in …” cần danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“reduction in … and available sources of food”",
+              "p": "“loss of habitat along with the disappearance of prey species” — mất môi trường sống kèm con mồi biến mất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reduction in",
+              "p": "loss of"
+            },
+            {
+              "q": "available sources of food",
+              "p": "disappearance of prey species"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Một trong các yếu tố suy giảm là mất habitat."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "habitat"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "The dramatic decline of the thylacine in Tasmania, which began in the 1830s and continued for a century, is generally attributed to the relentless efforts of sheep farmers and bounty hunters with shotguns."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Từ thập niên 1830 trở đi, có nhiều thylacine bị con người giết không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Significant numbers … were killed by humans from the 1830s onwards”",
+              "p": "Suy giảm mạnh “began in the 1830s” do nông dân nuôi cừu và thợ săn tiền thưởng “with shotguns” — số lượng lớn bị giết."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "from the 1830s onwards",
+              "p": "began in the 1830s and continued for a century"
+            },
+            {
+              "q": "killed by humans",
+              "p": "sheep farmers and bounty hunters with shotguns"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài gán nguyên nhân chính cho việc giết hàng loạt từ 1830 — khớp TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "There was only one successful attempt to breed a thylacine in captivity, at Melbourne Zoo in 1899."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cuối thế kỷ 1800 có nhiều thylacine sinh ở sở thú không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Several thylacines were born in zoos during the late 1800s”",
+              "p": "Chỉ “one successful attempt to breed a thylacine in captivity” năm 1899 — không phải “several”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Several thylacines were born",
+              "p": "only one successful attempt to breed"
+            },
+            {
+              "q": "in zoos during the late 1800s",
+              "p": "at Melbourne Zoo in 1899"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ một lần sinh sản thành công — mâu thuẫn “several” → FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "The famous naturalist John Gould foresaw the thylacine's demise when he published his Mammals of Australia between 1848 and 1863, writing, 'The numbers of this singular animal will speedily diminish, extermination will have its full sway'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dự đoán của John Gould có làm một số nhà sinh vật học ngạc nhiên không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Gould's prediction … surprised some biologists”",
+              "p": "Bài chỉ nói Gould “foresaw the thylacine's demise” — không nhắc phản ứng của nhà sinh vật học."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "surprised some biologists",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "prediction about the thylacine",
+              "p": "foresaw the thylacine's demise"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có dự đoán nhưng không nói ai ngạc nhiên → NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "However, there seems to have been little public pressure to preserve the thylacine, nor was much concern expressed by scientists at the decline of this species in the decades that followed."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đầu thế kỷ 1900, nhiều nhà khoa học lo ngại thylacine tuyệt chủng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“many scientists became worried about the possible extinction”",
+              "p": "“nor was much concern expressed by scientists” — hầu như không thấy lo ngại từ giới khoa học."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "many scientists became worried",
+              "p": "nor was much concern expressed by scientists"
+            },
+            {
+              "q": "in the early 1900s",
+              "p": "in the decades that followed"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ không có nhiều lo ngại từ nhà khoa học → FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "In 1914, he was sufficiently concerned about the scarcity of the thylacine to suggest that some should be captured and placed on a small island."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề xuất của T.T. Flynn về việc đưa thylacine nuôi nhốt ra đảo có được chứng minh là không khả thi không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Flynn's proposal … proved to be impractical”",
+              "p": "Flynn chỉ “suggest that some should be captured and placed on a small island” — không nói đã thử hay thất bại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "proved to be impractical",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "rehome captive thylacines on an island",
+              "p": "captured and placed on a small island"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có đề xuất nhưng không có thông tin về tính khả thi → NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "But it was not until 1929, with the species on the very edge of extinction, that Tasmania's Animals and Birds Protection Board passed a motion protecting thylacines only for the month of December"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi luật bảo vệ trong mùa sinh sản được thông qua, vẫn còn số lượng thylacine đáng kể không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“There were still reasonable numbers … when … legislation … was passed”",
+              "p": "1929 là lúc loài “on the very edge of extinction” — sắp tuyệt chủng, không còn số lượng ổn định."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reasonable numbers in existence",
+              "p": "on the very edge of extinction"
+            },
+            {
+              "q": "legislation protecting the species during their breeding season",
+              "p": "protecting thylacines only for the month of December"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khi luật ra đời loài đã bờ tuyệt chủng — trái “reasonable numbers” → FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "The last known wild thylacine to be killed was shot by a farmer in the north-east of Tasmania in 1930, leaving just captive specimens. Official protection of the species by the Tasmanian government was introduced in July 1936, 59 days before the last known individual died in Hobart Zoo on 7th September, 1936."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Từ 1930 đến 1936, các thylacine còn sống được biết đến đều ở nuôi nhốt không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“From 1930 to 1936, the only known living thylacines were all in captivity”",
+              "p": "1930 con hoang cuối bị bắn, “leaving just captive specimens”; cá thể cuối chết ở sở thú 1936."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "only known living thylacines were all in captivity",
+              "p": "leaving just captive specimens"
+            },
+            {
+              "q": "From 1930 to 1936",
+              "p": "1930 … last known individual died … 1936"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sau 1930 chỉ còn cá thể nuôi nhốt cho đến khi chết 1936 → TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "There have been numerous expeditions and searches for the thylacine over the years, none of which has produced definitive evidence that thylacines still exist."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hiện nay hiếm khi có chuyến tìm thylacine còn sống không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Attempts to find living thylacines are now rarely made”",
+              "p": "Bài nói “numerous expeditions and searches … over the years” — nhiều cuộc tìm kiếm, không nói hiện nay hiếm hay thường xuyên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "now rarely made",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "Attempts to find living thylacines",
+              "p": "numerous expeditions and searches for the thylacine"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có nhiều cuộc tìm kiếm qua các năm nhưng không nói tần suất hiện tại → NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "Oil palm plantations produce at least four and potentially up to ten times more oil per hectare than soybean, rapeseed, sunflower or other competing oils."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn chứa thông tin: Examples of a range of potential environmental advantages of oil palm tree cultivation."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Examples of a range of potential environmental advantages of oil palm tree cultivation",
+              "p": "Đoạn F: Đoạn F so sánh năng suất dầu/hecta và khả năng hấp thụ carbon — nêu nhiều lợi thế môi trường tiềm năng (ít phải phá thêm đất hơn nếu thay cây dầu khác)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Examples",
+              "p": "Oil palm plantations produce at least four and potentially up to ten times more oil per he"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ đoạn F khớp nội dung câu hỏi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "The industry is now regulated by a group called the Roundtable on Sustainable Palm Oil (RSPO), consisting of palm growers, retailers, product manufacturers, and other interested parties."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn chứa thông tin: Description of an organisation which controls the environmental impact of palm oil production."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Description of an organisation which controls the environmental impact of palm oil production",
+              "p": "Đoạn G: Đoạn G mô tả RSPO — tổ chức quy định tiêu chuẩn dầu cọ bền vững."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Description",
+              "p": "The industry is now regulated by a group called the Roundtable on Sustainable Palm Oil (RS"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ đoạn G khớp nội dung câu hỏi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "It's almost certainly in the soap we wash with in the morning, the sandwich we have for lunch, and the biscuits we snack on during the day."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn chứa thông tin: Examples of the widespread global use of palm oil."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Examples of the widespread global use of palm oil",
+              "p": "Đoạn A: Đoạn A liệt kê xà phòng, bánh mì kẹp, bánh quy — dầu cọ có mặt khắp nơi trong đời sống hàng ngày."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Examples",
+              "p": "It's almost certainly in the soap we wash with in the morning, the sandwich we have for lu"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ đoạn A khớp nội dung câu hỏi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "H",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "The bird's nest fern (Asplenium nidus) grows on trees in an epiphytic fashion (meaning it's dependent on the tree only for support, not for nutrients), and is native to many tropical regions"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn chứa thông tin: Reference to a particular species which could benefit the ecosystem of oil palm plantations."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Reference to a particular species which could benefit the ecosystem of oil palm plantations",
+              "p": "Đoạn H: Đoạn H giới thiệu dương xỉ tổ chim — loài có thể giúp phục hồi đa dạng sinh học trong đồn điền."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Reference to a particular species which could benefit the ecosystem",
+              "p": "The bird's nest fern (Asplenium nidus) grows on trees in an epiphytic fashion (meaning it'"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ đoạn H khớp nội dung câu hỏi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "Between 1990 and 2012, the global land area devoted to growing oil palm trees grew from 6 to 17 million hectares, now accounting for around ten percent of total cropland in the entire world."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn chứa thông tin: Figures illustrating the rapid expansion of the palm oil industry."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Figures illustrating the rapid expansion of the palm oil industry",
+              "p": "Đoạn B: Đoạn B đưa số liệu diện tích trồng cọ và sản lượng tăng vọt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Figures illustrating the rapid expansion",
+              "p": "Between 1990 and 2012, the global land area devoted to growing oil palm trees grew from 6 "
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ đoạn B khớp nội dung câu hỏi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "One response to the boycott movement has been the argument for the vital role palm oil plays in lifting many millions of people in the developing world out of poverty."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn chứa thông tin: An economic justification for not opposing the palm oil industry."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "An economic justification for not opposing the palm oil industry",
+              "p": "Đoạn E: Đoạn E lập luận kinh tế: dầu cọ giúp hàng triệu người thoát nghèo — lý do không nên chống đối toàn bộ ngành."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "An economic justification for not opposing th",
+              "p": "One response to the boycott movement has been the argument for the vital role palm oil pla"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ đoạn E khớp nội dung câu hỏi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Endangered species – most famously the Sumatran orangutan, but also rhinos, elephants, tigers, and numerous other fauna – have suffered from the unstoppable spread of oil palm plantations."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn chứa thông tin: Examples of creatures badly affected by the establishment of oil palm plantations."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Examples of creatures badly affected by the establishment of oil palm plantations",
+              "p": "Đoạn C: Đoạn C kể orangutan, tê giác, voi, hổ… bị ảnh hưởng nặng bởi đồn điền cọ dầu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Examples",
+              "p": "Endangered species – most famously the Sumatran orangutan, but also rhinos, elephants, tig"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ đoạn C khớp nội dung câu hỏi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "B",
+      "answerPair": [
+        21,
+        22
+      ],
+      "correctLetters": [
+        "B",
+        "C"
+      ],
+      "evidence": {
+        "quoteEn": "The RSPO insists upon no virgin forest clearing, transparency and regular assessment of carbon stocks, among other criteria."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai ý đúng về Roundtable on Sustainable Palm Oil (RSPO):"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý B: yêu cầu nhà sản xuất được chứng nhận minh bạch (“open and honest about their practices”).",
+              "p": "RSPO “insists upon … transparency” — đòi hỏi minh bạch trong hoạt động."
+            },
+            {
+              "q": "Ý C: mất nhiều năm mới thống nhất bộ tiêu chí (“took several years to establish its set of criteria”).",
+              "p": "“Over the past decade or so, an agreement has gradually been reached regarding standards” — tiêu chuẩn được thống nhất dần qua nhiều năm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "open and honest about their practices",
+              "p": "transparency"
+            },
+            {
+              "q": "took several years to establish its set of criteria",
+              "p": "gradually been reached regarding standards"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai ý B và C đều có bằng chứng rõ trong đoạn G."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B và C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói số thành viên RSPO tăng đều đặn trong thập kỷ qua (“membership has grown steadily”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không so sánh RSPO nghiêm hơn các ngành khác (“stricter than those governing other industries”)."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Không nói RSPO được thành lập theo yêu cầu của nhà môi trường (“formed at the request of environmentalists”)."
+            }
+          ]
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "C",
+      "answerPair": [
+        21,
+        22
+      ],
+      "correctLetters": [
+        "B",
+        "C"
+      ],
+      "evidence": {
+        "quoteEn": "Over the past decade or so, an agreement has gradually been reached regarding standards that producers of palm oil have to meet in order for their product to be regarded as officially 'sustainable'."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 21–22 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý C: mất nhiều năm mới thống nhất tiêu chí chứng nhận bền vững.",
+              "p": "“Over the past decade or so, an agreement has gradually been reached” — thỏa thuận tiêu chuẩn hình thành từ từ, không chỉ trong một năm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "took several years to establish its set of criteria",
+              "p": "gradually been reached regarding standards"
+            },
+            {
+              "q": "sustainable palm oil certification",
+              "p": "regarded as officially 'sustainable'"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý C; đi cùng B trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần “Các lựa chọn còn lại” ở câu 21."
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "solid",
+      "evidence": {
+        "quoteEn": "Primarily because its unique properties – such as remaining solid at room temperature – make it an ideal ingredient for long-term preservation"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một lợi thế của dầu cọ cho nhà sản xuất: nó vẫn … khi không bảo quản lạnh (tối đa hai từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “stays … even when not refrigerated” cần tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“it stays … even when not refrigerated”",
+              "p": "“remaining solid at room temperature” — vẫn ở thể rắn ở nhiệt độ phòng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "stays … even when not refrigerated",
+              "p": "remaining solid at room temperature"
+            },
+            {
+              "q": "not refrigerated",
+              "p": "at room temperature"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tính chất được nhắc là vẫn rắn ở nhiệt độ phòng → solid."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "solid"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "orangutan",
+      "answerAlternatives": [
+        "Sumatran orang-utan",
+        "Sumatran orangutan",
+        "orang-utan"
+      ],
+      "evidence": {
+        "quoteEn": "Endangered species – most famously the Sumatran orangutan, but also rhinos, elephants, tigers, and numerous other fauna – have suffered from the unstoppable spread of oil palm plantations."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Loài nào nổi tiếng nhất trong số các động vật mất môi trường sống vì đồn điền cọ dầu (tối đa hai từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chỗ trống là danh từ chỉ loài vật."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“The … is the best known of the animals suffering habitat loss”",
+              "p": "“most famously the Sumatran orangutan” — được nhắc nổi bật nhất trong các loài nguy cấp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "best known of the animals suffering habitat loss",
+              "p": "most famously the Sumatran orangutan"
+            },
+            {
+              "q": "spread of oil palm plantations",
+              "p": "unstoppable spread of oil palm plantations"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đáp án chính: orangutan; key cũng chấp nhận Sumatran orangutan / orang-utan."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "orangutan"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "carbon stocks",
+      "evidence": {
+        "quoteEn": "The RSPO insists upon no virgin forest clearing, transparency and regular assessment of carbon stocks, among other criteria."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "RSPO yêu cầu người trồng kiểm tra … định kỳ (tối đa hai từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “check … on a routine basis” cần cụm danh từ (tối đa hai từ)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“growers check … on a routine basis”",
+              "p": "RSPO “insists upon … regular assessment of carbon stocks” — đánh giá trữ lượng carbon thường xuyên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "check … on a routine basis",
+              "p": "regular assessment of carbon stocks"
+            },
+            {
+              "q": "criteria for the certification of sustainable palm oil",
+              "p": "insists upon … among other criteria"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tiêu chí RSPO là đánh giá carbon stocks → carbon stocks."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "carbon stocks"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "biodiversity",
+      "evidence": {
+        "quoteEn": "Ellwood believes that reintroducing the bird's nest fern into oil palm plantations could potentially allow these areas to recover their biodiversity, providing a home for all manner of species"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ellwood nghiên cứu liệu dương xỉ tổ chim có thể phục hồi … ở khu trồng cọ dầu không (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “restore …” cần danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“could restore … in areas where oil palm trees are grown”",
+              "p": "“allow these areas to recover their biodiversity” — phục hồi đa dạng sinh học."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "restore",
+              "p": "recover their biodiversity"
+            },
+            {
+              "q": "bird's nest fern",
+              "p": "reintroducing the bird's nest fern"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mục tiêu nghiên cứu là phục hồi biodiversity."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "biodiversity"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "The book combines geology, history, economics, and a lot of data to explain why business clusters developed where they did and how the early decisions of workers and firms shaped the skyline we see today."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn đầu, Shester nhấn điểm gì về cuốn sách của Barr?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: sách bao quát nhiều yếu tố ảnh hưởng phát triển New York (“covers a range of factors”).",
+              "p": "Bài nói sách kết hợp địa chất, lịch sử, kinh tế và dữ liệu — đúng nhiều yếu tố."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "covers a range of factors that affected the development of New York",
+              "p": "combines geology, history, economics, and a lot of data"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn mở đầu liệt kê nhiều lĩnh vực cùng lúc — khớp đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không gọi giải thích là “highly original”."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Chỉ phần hai mới lồng bài nghiên cứu — không phải xuyên suốt (“incorporated throughout”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không so sánh với sách khác trên cùng chủ đề."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "I would have liked Barr to expand upon his claim that existing tenements prevented skyscrapers in certain neighborhoods because 'likely no skyscraper developer was interested in performing the necessary \"slum clearance\"'."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Shester phản hồi thế nào về phần tenements trong sách?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: Shester chỉ ra vấn đề tiềm ẩn trong phân tích của Barr (“potential problem with Barr's analysis”).",
+              "p": "Shester muốn Barr giải thích thêm tại sao slum clearance hạn chế nhà cao tầng — gợi ý phân tích chưa đủ thuyết phục."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "indicates a potential problem with Barr's analysis",
+              "p": "I would have liked Barr to expand upon his claim"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Shester không bác bỏ hẳn mà yêu cầu mở rộng lập luận — đúng ý chỉ ra vấn đề tiềm ẩn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không mô tả lý do Barr quan tâm tenements."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không so sánh kết luận Barr với tác giả khác."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không liệt kê nguồn Barr dùng."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "While less technical than the research paper on which the chapter is based, it is probably more technical than would be preferred by a general audience."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Shester nói gì về chương sáu của cuốn sách?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: quá chuyên sâu cho đa số độc giả (“too specialised for most readers”).",
+              "p": "Shester nói chương 6 “probably more technical than would be preferred by a general audience”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "too specialised for most readers",
+              "p": "more technical than would be preferred by a general audience"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây là nhận xét về mức độ chuyên môn cao — khớp C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói dữ liệu mâu thuẫn (“conflicting data”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không phàn nàn tập trung quá vào xu hướng (“possible trends”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói nghiên cứu lỗi thời (“out of date”)."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Chapter eight contains lengthy discussions of urban economic theory that may serve as a distraction to readers primarily interested in New York. However, they would be well-suited for undergraduates learning about the economics of cities."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Shester gợi ý gì về các chương nói về cơn bùng nổ xây dựng thập niên 1920?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: một số phần chỉ hấp dẫn với nhóm độc giả nhất định (“limited appeal to certain people”).",
+              "p": "Chương 8 có đoạn lý thuyết kinh tế đô thị dài có thể gây xao nhãng — phù hợp sinh viên kinh tế đô thị hơn độc giả phổ thông."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Some parts will have limited appeal to certain people",
+              "p": "may serve as a distraction to readers primarily interested in New York"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Một phần hấp dẫn sinh viên kinh tế, phần khác có thể làm xao nhãng — limited appeal."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói nên sắp xếp thông tin khác đi."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Barr đã dùng dữ liệu đánh giá tài chính — không thiếu facts."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Shester đồng ý giải thích bùng nổ nhà cửa dựa trên cung cầu — không gọi là unlikely."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "The data work that went into these estimations is particularly impressive."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điều gì ở chương về giá đất khiến Shester ấn tượng nhất?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: ấn tượng bởi bản chất nghiên cứu (“the nature of the research into the topic”).",
+              "p": "Shester khen “The data work … is particularly impressive” — công sức xử lý dữ liệu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the nature of the research into the topic",
+              "p": "The data work that went into these estimations is particularly impressive"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Điều ấn tượng nhất là chất lượng nghiên cứu/dữ liệu — khớp C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Thời gian bao phủ rộng được nhắc nhưng không phải điều ấn tượng nhất."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nhấn câu hỏi thú vị Barr đặt ra."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Khuyến nghị chính sách ở epilogue, không phải điểm ấn tượng nhất của chương giá đất."
+            }
+          ]
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Barr begins chapter one by taking the reader on a 'helicopter time-machine' ride – giving a fascinating account of how the New York landscape in 1609 might have looked from the sky."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mô tả New York từ trên cao đầu thế kỷ 1600 thiếu hấp dẫn không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“The description … lacks interest”",
+              "p": "“giving a fascinating account” — mô tả hấp dẫn, trái “lacks interest”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lacks interest",
+              "p": "giving a fascinating account"
+            },
+            {
+              "q": "looked from the air in the early 1600s",
+              "p": "how the New York landscape in 1609 might have looked from the sky"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Shester gọi mô tả là fascinating — trái với lacks interest → NO."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Both chapters are informative and well researched and set the stage for the economic analysis that comes later in the book."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hai chương 2–3 chuẩn bị tốt cho phần sau không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Chapters two and three prepare the reader well for material yet to come”",
+              "p": "“set the stage for the economic analysis that comes later” — chuẩn bị nền tảng cho phần kinh tế phía sau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "prepare the reader well for material yet to come",
+              "p": "set the stage for the economic analysis that comes later"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai chương đầu dẫn vào phân tích kinh tế sau — khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Barr identifies four primary immigrant enclaves and analyses their locations in terms of the amenities available in the area."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vấn đề lớn nhất của khu nhập cư thế kỷ 19 là thiếu tiện ích không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“The biggest problem … was a lack of amenities”",
+              "p": "Bài phân tích vị trí theo amenities nhưng không nói thiếu tiện ích là vấn đề lớn nhất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "biggest problem … was a lack of amenities",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "nineteenth-century New York immigrant neighbourhoods",
+              "p": "four primary immigrant enclaves"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có nhắc amenities nhưng không xếp hạng “biggest problem” → NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Most of these enclaves were located on the least valuable land, between the industries located on the waterfront and the wealthy neighborhoods bordering Central Park."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khu nhập cư thế kỷ 19 thường tập trung quanh bến cảng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“immigrant neighbourhoods tended to concentrate around the harbour”",
+              "p": "Enclaves nằm giữa công nghiệp ven sông và khu giàu gần Central Park — không chỉ “around the harbour”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "concentrate around the harbour",
+              "p": "between the industries located on the waterfront and the wealthy neighborhoods bordering Central Park"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vị trí là vùng đệm giữa bờ sông và khu giàu — không tập trung quanh harbour → NO."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "H",
+      "evidence": {
+        "quoteEn": "Chapter seven tackles the 'bedrock myth', the assumption that the absence of bedrock close to the surface between Downtown and Midtown New York is the reason for skyscrapers not being built between the two urban centers."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền cụm phù hợp trong summary “The bedrock myth” — ô 36."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống cần cụm specific areas.",
+              "p": "Bài viết: “between Downtown and Midtown New York” → chọn H (specific areas)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "specific areas",
+              "p": "between Downtown and Midtown New York"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thiếu bedrock gần mặt đất không giải thích vì sao nhà cao tầng vắng giữa hai trung tâm đô thị → H (specific areas)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Rather, Barr argues that while deeper bedrock does increase foundation costs, these costs were neither prohibitively high nor were they large compared to the overall cost of building a skyscraper."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền cụm phù hợp trong summary “The bedrock myth” — ô 37."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống cần cụm excessive expense.",
+              "p": "Bài viết: “prohibitively high” → chọn D (excessive expense)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "excessive expense",
+              "p": "prohibitively high"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chi phí móng tăng nhưng “neither prohibitively high” — không thể coi là chi phí quá mức → D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "I",
+      "evidence": {
+        "quoteEn": "these costs were neither prohibitively high nor were they large compared to the overall cost of building a skyscraper."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền cụm phù hợp trong summary “The bedrock myth” — ô 38."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống cần cụm total expenditure.",
+              "p": "Bài viết: “the overall cost of building a skyscraper” → chọn I (total expenditure)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "total expenditure",
+              "p": "the overall cost of building a skyscraper"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "So với “overall cost of building a skyscraper” thì chi phí móng không lớn → I (total expenditure)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "I"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "He describes the use of caissons, which enable workers to dig down for considerable distances, often below the water table, until they reach bedrock."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền cụm phù hợp trong summary “The bedrock myth” — ô 39."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống cần cụm deep excavations.",
+              "p": "Bài viết: “dig down for considerable distances” → chọn B (deep excavations)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "deep excavations",
+              "p": "dig down for considerable distances"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Caisson cho phép đào sâu xuống → B (deep excavations)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "Barr's thorough technological history discusses not only how caissons work, but also the dangers involved."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền cụm phù hợp trong summary “The bedrock myth” — ô 40."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống cần cụm associated risks.",
+              "p": "Bài viết: “the dangers involved” → chọn F (associated risks)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "associated risks",
+              "p": "the dangers involved"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Barr bàn cả “the dangers involved” khi dùng caisson → F (associated risks)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    }
+  }
+}

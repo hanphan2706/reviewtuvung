@@ -1,0 +1,2062 @@
+{
+  "pilotId": "cam17-test2",
+  "schemaVersion": 4,
+  "note": "Cam 17 R T2 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The Dead Sea Scrolls",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "A second attempt at domesticating the tomato",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Insight or evolution?",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "rock",
+      "evidence": {
+        "quoteEn": "One of these young shepherds tossed a rock into an opening on the side of a cliff and was surprised to hear a shattering sound."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một cậu chăn cừu ném cái gì vào lỗ trên vách đá và nghe tiếng vỡ — điền một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “threw a …” cần danh từ (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“heard a noise of breaking when one teenager threw a …”",
+              "p": "“tossed a rock into an opening … and was surprised to hear a shattering sound”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "threw a …",
+              "p": "tossed a rock"
+            },
+            {
+              "q": "noise of breaking",
+              "p": "shattering sound"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói thẳng cậu ta ném đá (rock)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "rock"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "cave",
+      "evidence": {
+        "quoteEn": "He and his companions later entered the cave and stumbled across a collection of large clay jars"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ba cậu vào đâu và thấy các bình đựng cuộn giấy — điền một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “went into the …” cần danh từ chỉ nơi chốn."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“teenagers went into the … and found a number of containers”",
+              "p": "“entered the cave and stumbled across a collection of large clay jars”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "went into the …",
+              "p": "entered the cave"
+            },
+            {
+              "q": "containers",
+              "p": "clay jars"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Họ bước vào hang (cave)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "cave"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "clay",
+      "evidence": {
+        "quoteEn": "He and his companions later entered the cave and stumbled across a collection of large clay jars"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các bình đựng cuộn giấy làm bằng chất liệu gì — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “containers made of …” cần danh từ vật liệu."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“containers made of …”",
+              "p": "“a collection of large clay jars”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "containers made of",
+              "p": "large clay jars"
+            },
+            {
+              "q": "made of",
+              "p": "clay"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bình làm bằng đất sét → clay."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "clay"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Essenes",
+      "evidence": {
+        "quoteEn": "The area was known as Judea at that time, and the people are thought to have belonged to a group called the Essenes, a devout Jewish sect."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cuộn giấy được cho là do nhóm người nào viết — ghi tên trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “known as the …” cần danh từ riêng chỉ nhóm người."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“written by group of people known as the …”",
+              "p": "“belonged to a group called the Essenes, a devout Jewish sect”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "group of people known as",
+              "p": "group called the Essenes"
+            },
+            {
+              "q": "written by",
+              "p": "belonged to"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Lý thuyết phổ biến: tác giả là Essenes."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Essenes"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Hebrew",
+      "evidence": {
+        "quoteEn": "The majority of the texts on the Dead Sea Scrolls are in Hebrew, with some fragments written in an ancient version of its alphabet"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cuộn giấy chủ yếu viết bằng ngôn ngữ gì — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “written mainly in the … language” cần tên ngôn ngữ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“written mainly in the … language”",
+              "p": "“The majority of the texts … are in Hebrew”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "written mainly in the … language",
+              "p": "The majority … are in Hebrew"
+            },
+            {
+              "q": "mainly",
+              "p": "majority"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phần lớn văn bản bằng tiếng Hebrew."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Hebrew"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "The teenagers took the seven scrolls to a nearby town where they were sold for a small sum to a local antiquities dealer."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ba cậu Bedouin có thất vọng vì được trả quá ít tiền không — bài có nói không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“disappointed by how little money they received”",
+              "p": "Bài chỉ nói “sold for a small sum” — không nhắc cảm xúc thất vọng hay hài lòng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "disappointed by how little money",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "received for them",
+              "p": "sold for a small sum"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có số tiền ít, nhưng không nói họ thất vọng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "The origin of the Dead Sea Scrolls, which were written around 2,000 years ago between 150 BCE and 70 CE, is still the subject of scholarly debate even today."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giới học thuật có đồng thuận về nguồn gốc cuộn giấy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“There is agreement among academics about the origin”",
+              "p": "“is still the subject of scholarly debate even today” — vẫn còn tranh luận, không đồng thuận."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "agreement among academics",
+              "p": "subject of scholarly debate"
+            },
+            {
+              "q": "about the origin",
+              "p": "The origin of the Dead Sea Scrolls"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ vẫn còn tranh luận → trái với “agreement”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "The Dead Sea Scrolls include fragments from every book of the Old Testament of the Bible except for the Book of Esther."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phần lớn sách Kinh Thánh trên cuộn giấy có phải bản không đầy đủ không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Most of the books … are incomplete”",
+              "p": "“include fragments from every book” — chỉ còn mảnh vỡ (fragments), không phải sách nguyên vẹn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Most of the books … are incomplete",
+              "p": "fragments from every book"
+            },
+            {
+              "q": "incomplete",
+              "p": "fragments"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Fragments = mảnh, không phải toàn bộ → hầu hết không đầy đủ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Using an unconventional vocabulary and odd spelling, it describes 64 underground hiding places"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thông tin trên Cuộn Đồng có được viết theo cách bất thường không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“written in an unusual way”",
+              "p": "“Using an unconventional vocabulary and odd spelling” — từ vựng và chính tả lạ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "written in an unusual way",
+              "p": "unconventional vocabulary and odd spelling"
+            },
+            {
+              "q": "The information on the Copper Scroll",
+              "p": "it describes 64 underground hiding places"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài mô tả rõ cách viết khác thường."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "In 1948, a Syrian Orthodox archbishop known as Mar Samuel acquired four of the original seven scrolls from a Jerusalem shoemaker and part-time antiquity dealer, paying less than $100 for them."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mar Samuel được tặng cuộn giấy hay phải mua:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Mar Samuel was given some of the scrolls as a gift”",
+              "p": "“acquired four … from a Jerusalem shoemaker … paying less than $100” — mua, trả tiền, không phải quà tặng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "given … as a gift",
+              "p": "acquired … paying less than $100"
+            },
+            {
+              "q": "some of the scrolls",
+              "p": "four of the original seven scrolls"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ông mua bằng tiền → trái với “given as a gift”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "He then travelled to the United States and unsuccessfully offered them to a number of universities, including Yale."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đầu những năm 1950, nhiều trường Mỹ có hào hứng mua cuộn giấy từ Mar Samuel không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a number of educational establishments in the US were keen to buy scrolls”",
+              "p": "“unsuccessfully offered them to a number of universities” — đề nghị bán nhưng không thành, không ai mua."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "keen to buy",
+              "p": "unsuccessfully offered"
+            },
+            {
+              "q": "educational establishments",
+              "p": "universities, including Yale"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đề nghị thất bại → không có dấu hiệu “keen to buy”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "The scroll names celebrations that indicate shifts in seasons and details two yearly religious events known from another Dead Sea Scroll."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cuộn ghép lại năm 2017 có thông tin về các dịp hàng năm 2.000 năm trước không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“contains information about annual occasions … 2,000 years ago”",
+              "p": "“names celebrations … shifts in seasons and details two yearly religious events” — lễ hội và sự kiện tôn giáo hàng năm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "annual occasions",
+              "p": "celebrations … two yearly religious events"
+            },
+            {
+              "q": "2,000 years ago",
+              "p": "the community of people who wrote it"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cuộn nêu lễ hội và sự kiện tôn giáo theo mùa/năm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Only one more known scroll remains untranslated."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giảng viên Haifa hiện đang nghiên cứu cách giải mã cuộn cuối cùng không — bài có nói không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“currently researching how to decipher the final scroll”",
+              "p": "Bài chỉ nói “one more known scroll remains untranslated” — còn một cuộn chưa dịch, không nói đang nghiên cứu cách giải mã."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "currently researching how to decipher",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "the final scroll",
+              "p": "one more known scroll remains untranslated"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có cuộn chưa dịch, nhưng không nói ai đang nghiên cứu giải mã."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "In this way they managed to create a strain resistant to a common disease called bacterial spot race, which can devastate yields.",
+        "paragraphLetter": "C"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc loại cà chua chống được bệnh nguy hiểm."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a type of tomato that can resist a dangerous infection”",
+              "p": "Đoạn C: đội Trung Quốc tạo giống “resistant to a common disease called bacterial spot race” — kháng bệnh đốm vi khuẩn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "resist a dangerous infection",
+              "p": "resistant to a common disease called bacterial spot race"
+            },
+            {
+              "q": "type of tomato",
+              "p": "strain"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn C mô tả giống kháng bacterial spot race."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "But every time a single plant with a mutation is taken from a larger population for breeding, much genetic diversity is lost.",
+        "paragraphLetter": "B"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích vấn đề khi chỉ chọn lọc một kiểu cây cà chua nhất định."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“problems can arise from focusing only on a certain type of tomato plant”",
+              "p": "Đoạn B: mỗi lần lấy một cây đột biến để lai, “much genetic diversity is lost” — mất đa dạng gen; giống siêu thị mất vị."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "focusing only on a certain type",
+              "p": "a single plant with a mutation is taken from a larger population"
+            },
+            {
+              "q": "problems can arise",
+              "p": "much genetic diversity is lost"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn B phân tích hậu quả chọn lọc hẹp."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "The three teams already have their eye on other plants that could be 'catapulted into the mainstream', including foxtail, oat-grass and cowpea.",
+        "paragraphLetter": "E"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn liệt kê cây chưa được trồng rộng nhưng có thể hữu ích làm thực phẩm."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“plants that are not cultivated at present but could be useful as food sources”",
+              "p": "Đoạn E: foxtail, oat-grass, cowpea — cây hoang có thể đưa vào dòng chính."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not cultivated at present",
+              "p": "could be 'catapulted into the mainstream'"
+            },
+            {
+              "q": "useful as food sources",
+              "p": "other plants"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn E nêu ba loài cây hoang tiềm năng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "It took at least 3,000 years for humans to learn how to domesticate the wild tomato and cultivate it for food. Now two separate teams in Brazil and China have done it all over again in less than three years.",
+        "paragraphLetter": "A"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn so sánh thuần hóa cà chua thuở đầu với nghiên cứu gần đây."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a comparison between the early domestication of the tomato and more recent research”",
+              "p": "Đoạn A: 3.000 năm xưa vs “less than three years” với CRISPR — đối chiếu trực tiếp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "early domestication",
+              "p": "at least 3,000 years"
+            },
+            {
+              "q": "more recent research",
+              "p": "done it all over again in less than three years"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ đoạn A đặt hai mốc thời gian cạnh nhau."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "'They are quite tasty,' says Kudla. 'A little bit strong. And very aromatic.'",
+        "paragraphLetter": "C"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn có phản ứng cá nhân về hương vị cà chua đã chỉnh gen."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a personal reaction to the flavour of a tomato that has been genetically edited”",
+              "p": "Đoạn C: Kudla nếm thử và nhận xét “quite tasty … very aromatic” — phản ứng trực tiếp về vị."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "personal reaction to the flavour",
+              "p": "They are quite tasty … very aromatic"
+            },
+            {
+              "q": "genetically edited",
+              "p": "newly domesticated one has five times as much"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Kudla mô tả vị cà chua mới — phản ứng cá nhân."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "By choosing wild plants that are drought or heat tolerant, says Gao, we could create crops that will thrive even as the planet warms."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng thuần hóa một số cây giúp chúng thích nghi thách thức môi trường tương lai?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Domestication of certain plants could allow them to adapt to future environmental challenges",
+              "p": "Caixia Gao (B): chọn cây hoang chịu hạn/nhiệt → tạo cây trồng “thrive even as the planet warms”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "adapt to future environmental challenges",
+              "p": "thrive even as the planet warms"
+            },
+            {
+              "q": "drought or heat tolerant",
+              "p": "wild plants that are drought or heat tolerant"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Gao nói thẳng về cây chịu được biến đổi khí hậu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Kudla nói về biến đổi thực phẩm và 15 cây trồng chính, không bàn thích nghi khí hậu tương lai."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Van Eck bàn groundcherry và chi phí giấy phép CRISPR, không nói cây chịu hạn/nhiệt."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Jones nói thực phẩm lạ khó thành cây lương thực chính, không bàn thích nghi môi trường."
+            }
+          ]
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "But it will be hard for new foods to grow so popular with farmers and consumers that they become new staple crops, he thinks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng ý tưởng trồng và ăn cây lạ có thể không được chấp nhận rộng rãi?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "The idea of growing and eating unusual plants may not be accepted on a large scale",
+              "p": "Jonathan Jones (D): khó để thực phẩm mới “become new staple crops” — khó phổ biến với nông dân và người tiêu dùng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may not be accepted on a large scale",
+              "p": "hard for new foods to grow so popular"
+            },
+            {
+              "q": "unusual plants",
+              "p": "new foods"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Jones nghi ngờ thực phẩm mới trở thành lương thực chính."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Kudla lạc quan về biến đổi thực phẩm, không nói bị từ chối rộng rãi."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Gao nói thuần hóa cây hoang, không bàn mức chấp nhận của công chúng."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Van Eck thấy groundcherry có tiềm năng thương mại."
+            }
+          ]
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "But Kudla didn't want to reveal which species were in his team's sights, because CRISPR has made the process so easy."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng không nên công khai hướng nghiên cứu tương lai?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "It is not advisable for the future direction of certain research to be made public",
+              "p": "Jorg Kudla (A): “didn't want to reveal which species were in his team's sights” — không muốn tiết lộ loài đang nhắm tới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not advisable … to be made public",
+              "p": "didn't want to reveal"
+            },
+            {
+              "q": "future direction of certain research",
+              "p": "which species were in his team's sights"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Kudla giữ kín loài đang nghiên cứu vì CRISPR quá dễ làm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Gao nói công khai về thuần hóa cây hoang."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Van Eck nói về chi phí giấy phép, không giấu hướng nghiên cứu."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Jones bàn tiềm năng thực phẩm mới."
+            }
+          ]
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "But she adds that taking the work further would be expensive because of the need to pay for a licence for the CRISPR technology and get regulatory approval."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai nói nỗ lực thuần hóa một loại quả hoang bị hạn chế bởi chi phí?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Present efforts to domesticate one wild fruit are limited by the costs involved",
+              "p": "Joyce Van Eck (C): đưa groundcherry ra thương mại “would be expensive” vì phí bản quyền CRISPR và phê duyệt quy định."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "limited by the costs involved",
+              "p": "would be expensive because of the need to pay for a licence"
+            },
+            {
+              "q": "domesticate one wild fruit",
+              "p": "domesticate the groundcherry"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Van Eck nhấn chi phí giấy phép và quy định."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Kudla không bàn chi phí thuần hóa groundcherry."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Gao tập trung giống cà chua, không nói chi phí giấy phép."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Jones nói khó phổ biến hóa, không nêu chi phí CRISPR."
+            }
+          ]
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "'There are 50,000 edible plants in the world, but 90 percent of our energy comes from just 15 crops.'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai nói con người chỉ dùng một phần nhỏ thực vật ăn được trên Trái Đất?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Humans only make use of a small proportion of the plant food available on Earth",
+              "p": "Jorg Kudla (A): 50.000 cây ăn được nhưng 90% năng lượng từ 15 cây — tỷ lệ sử dụng rất nhỏ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "small proportion of the plant food available",
+              "p": "90 percent of our energy comes from just 15 crops"
+            },
+            {
+              "q": "50,000 edible plants",
+              "p": "edible plants in the world"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Kudla đưa con số 50.000 vs 15 cây trồng chính."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Gao không so sánh 50.000 cây với 15 cây."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Van Eck không nêu tỷ lệ thực vật ăn được."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Jones không đưa con số 50.000/15."
+            }
+          ]
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "flavour",
+      "evidence": {
+        "quoteEn": "For instance, the tomato strains grown for supermarkets have lost much of their flavour."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đột biến gen có thể gây mất đặc tính không mong muốn như mất … — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “loss of …” cần danh từ (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“An undesirable trait such as loss of … may be caused by a mutation”",
+              "p": "“desirable mutations come with less desirable traits. For instance … lost much of their flavour”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "loss of …",
+              "p": "lost much of their flavour"
+            },
+            {
+              "q": "undesirable trait",
+              "p": "less desirable traits"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ví dụ cụ thể: giống siêu thị mất vị → flavour."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "flavour"
+        }
+      ],
+      "answerAlternatives": [
+        "flavor"
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "size",
+      "evidence": {
+        "quoteEn": "For instance, they tripled the size of fruit by editing a gene called FRUIT WEIGHT"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chỉnh một gen giúp cà chua lớn gấp ba … ban đầu — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “three times its original …” cần danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“made the tomato three times its original …”",
+              "p": "“tripled the size of fruit by editing a gene called FRUIT WEIGHT”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "three times its original …",
+              "p": "tripled the size of fruit"
+            },
+            {
+              "q": "By modifying one gene",
+              "p": "editing a gene called FRUIT WEIGHT"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tripled the size → điền size."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "size"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "salt",
+      "evidence": {
+        "quoteEn": "They also created another strain that is more salt tolerant – and has higher levels of vitamin C."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giống cà chua Trung Quốc chịu … tốt và giàu vitamin C — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “not badly affected by …” cần danh từ (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“A type of tomato which was not badly affected by …, and was rich in vitamin C”",
+              "p": "“more salt tolerant – and has higher levels of vitamin C”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not badly affected by …",
+              "p": "more salt tolerant"
+            },
+            {
+              "q": "rich in vitamin C",
+              "p": "higher levels of vitamin C"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Salt tolerant → điền salt."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "salt"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Scientific discovery is popularly believed to result from the sheer genius of such intellectual stars as naturalist Charles Darwin and theoretical physicist Albert Einstein."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mục đích đoạn đầu là gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: phác thảo một quan niệm phổ biến (“outline a common assumption”).",
+              "p": "Đoạn 1 mô tả niềm tin phổ biến: phát minh đến từ thiên tài, ý tưởng bật ra đột ngột — chưa phản bác, chỉ trình bày giả định."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "outline a common assumption",
+              "p": "popularly believed to result from the sheer genius"
+            },
+            {
+              "q": "ideas spontaneously pop into someone's head",
+              "p": "insight in promoting breakthrough scientific achievements"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn 1 liệt kê quan niệm phổ biến về thiên tài và linh cảm — chưa phản bác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đoạn 1 chưa bênh vực quan điểm nào."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không so sánh hai niềm tin song song."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Phản bác ở đoạn 2, không phải đoạn 1."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "However, we believe that it largely misrepresents the real nature of scientific discovery, as well as that of creativity and innovation in many other realms of human endeavor."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả đang làm gì ở đoạn 2?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: phê phán một quan điểm (“criticising an opinion”).",
+              "p": "“However, we believe that it largely misrepresents …” — bác bỏ cách nhìn ở đoạn 1."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "criticising an opinion",
+              "p": "it largely misrepresents the real nature"
+            },
+            {
+              "q": "However",
+              "p": "contrasts with paragraph 1"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn 2 chuyển sang phản bác quan niệm thiên tài/linh cảm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Chưa biện minh chi tiết — mới phê phán."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Chưa giải thích phương pháp cụ thể."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Chưa ủng hộ bằng ví dụ."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Setting aside such greats as Darwin and Einstein – whose monumental contributions are duly celebrated – we suggest that innovation is more a process of trial and error"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Về Darwin và Einstein, tác giả gợi ý điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: họ là ngoại lệ so với quy tắc chung (“represent an exception to a general rule”).",
+              "p": "“Setting aside such greats as Darwin and Einstein” — tách họ ra khỏi quy luật thử-sai thông thường."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "exception to a general rule",
+              "p": "Setting aside such greats as Darwin and Einstein"
+            },
+            {
+              "q": "innovation is more a process of trial and error",
+              "p": "general rule for most innovation"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai ông được xem là ngoại lệ; phần lớn đổi mới là thử-sai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Không nói cách làm việc của họ bị hiểu sai."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không khuyên noi theo hai ông."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Đã được tôn vinh sẵn."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Niels Bohr, the Nobel prize-winning father of modern atomic theory, jumped off from this interesting idea to conceive his now-famous model of the atom."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "John Nicholson là ví dụ về người có ý tưởng như thế nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: ý tưởng là nền tảng cho đột phá của người khác (“laid the foundations for someone else's breakthrough”).",
+              "p": "Nicholson sai về proto-elements nhưng Bohr “jumped off from this interesting idea” để tạo mô hình nguyên tử."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "laid the foundations for someone else's breakthrough",
+              "p": "jumped off from this interesting idea to conceive his now-famous model"
+            },
+            {
+              "q": "John Nicholson",
+              "p": "postulated the existence of 'proto-elements'"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ý tưởng Nicholson (dù sai) giúp Bohr đi tiếp."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Nicholson “unheralded” — không lập danh tiếng lớn."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói ý tưởng chỉ được hiểu đầy đủ sau này."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói cộng đồng nghi ngờ."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "He suffered a leg injury, which left him unable to fully bend his left knee. His modification just happened to coincide with enhanced left-hand turning performance."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điểm thú vị chính về cách đặt yên acey-deucy là gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: lý do đơn giản vì sao phát minh ra (“the simple reason why it was invented”).",
+              "p": "Westrope bị chấn thương chân, không cố ý nghiên cứu — “just happened to coincide” với lợi thế khi rẽ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the simple reason why it was invented",
+              "p": "He suffered a leg injury … unable to fully bend his left knee"
+            },
+            {
+              "q": "Had he foreseen the speed advantage?",
+              "p": "No."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phát minh do chấn thương, không do kế hoạch — lý do đơn giản."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Mức phổ biến không phải “key point of interest”."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài nói rõ không có nghiên cứu có phương pháp."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không ca ngợi sự thông minh của người phát minh."
+            }
+          ]
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "These notions merely label rather than explain the evolution of human innovations."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Gọi Plato hay da Vinci là thiên tài có giúp hiểu cách tạo ý tưởng mới không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Acknowledging people such as Plato or da Vinci as geniuses will help us understand the process",
+              "p": "“These notions merely label rather than explain the evolution of human innovations” — chỉ gắn nhãn, không giải thích."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "will help us understand the process",
+              "p": "merely label rather than explain"
+            },
+            {
+              "q": "geniuses",
+              "p": "notions of insight, creativity and genius"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả cho rằng khái niệm thiên tài không giải thích được quá trình."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "The Law of Effect was advanced by psychologist Edward Thorndike in 1898, some 40 years after Charles Darwin published his groundbreaking work on biological evolution, On the Origin of Species."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Luật Hiệu ứng được phát hiện khi các nhà tâm lý đang tìm lý do khoa học cho sự sáng tạo — bài có nói không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "The Law of Effect was discovered at a time when psychologists were seeking a scientific reason why creativity occurs",
+              "p": "Bài chỉ nêu năm 1898 và liên hệ 40 năm sau Darwin — không nói động cơ tìm lý do sáng tạo của giới tâm lý học."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "psychologists were seeking a scientific reason why creativity occurs",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "The Law of Effect was advanced",
+              "p": "advanced by psychologist Edward Thorndike in 1898"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có thời điểm và tác giả, nhưng không nói vì sao họ nghiên cứu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Just like Darwin's Law of Natural Selection, the Law of Effect involves an entirely mechanical process of variation and selection, without any end objective in sight."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Luật Hiệu ứng có nói hành vi sinh vật không liên quan đến lập kế hoạch không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "The Law of Effect states that no planning is involved in the behaviour of organisms",
+              "p": "“entirely mechanical process of variation and selection, without any end objective in sight” — cơ học, không mục tiêu đặt trước."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "no planning is involved",
+              "p": "entirely mechanical process … without any end objective in sight"
+            },
+            {
+              "q": "behaviour of organisms",
+              "p": "organisms tend to repeat successful behaviors"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Quy trình hoàn toàn cơ học, không có mục tiêu cuối → không lập kế hoạch."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Of course, the origin of human innovation demands much further study. In particular, the provenance of the raw material on which the Law of Effect operates is not as clearly known as that of the genetic mutations on which the Law of Natural Selection operates."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Luật Hiệu ứng có đưa ra giải thích rõ ràng về nguồn gốc ý tưởng mới không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "The Law of Effect sets out clear explanations about the sources of new ideas and behaviours",
+              "p": "“provenance of the raw material … is not as clearly known” — nguồn gốc chưa rõ ràng như đột biến gen."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "sets out clear explanations",
+              "p": "not as clearly known"
+            },
+            {
+              "q": "sources of new ideas and behaviours",
+              "p": "provenance of the raw material on which the Law of Effect operates"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả thừa nhận nguồn gốc ý tưởng chưa rõ — trái với “clear explanations”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "The time seems right for abandoning the naïve notion of intelligent design and genius, and for scientifically exploring the true origins of creative behavior."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhiều nhà khoa học đang quay lưng với quan niệm thiết kế thông minh và thiên tài — bài có nói không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Many scientists are now turning away from the notion of intelligent design and genius",
+              "p": "Tác giả đề xuất “The time seems right for abandoning …” — thời điểm thích hợp để bỏ quan niệm, không nói nhiều nhà khoa học đang làm vậy."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Many scientists are now turning away",
+              "p": "(not stated — author's suggestion only)"
+            },
+            {
+              "q": "intelligent design and genius",
+              "p": "naïve notion of intelligent design and genius"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây là l lời kêu gọi của tác giả, không phải mô tả xu hướng hiện tại."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "Conventional wisdom also places great weight on insight in promoting breakthrough scientific achievements, as if ideas spontaneously pop into someone's head – fully formed and functional."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Quan niệm truyền thống: đột phá đến từ … đột ngột của một bộ óc vĩ đại — chọn A–G:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“sudden …” (breakthroughs happen when a single great mind has sudden …)",
+              "p": "“ideas spontaneously pop into someone's head – fully formed and functional” — cảm hứng/linh cảm bất chợt → F (inspiration)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "sudden …",
+              "p": "spontaneously pop into someone's head"
+            },
+            {
+              "q": "inspiration",
+              "p": "insight … fully formed and functional"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ý tưởng bật ra đột ngột = inspiration (F)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "By combining different numbers of weights of these proto-elements' atoms, Nicholson could recover the weights of all the elements in the then-known periodic table. These successes are all the more noteworthy given the fact that Nicholson was wrong about the presence of proto-elements: they do not actually exist."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Quá trình đôi khi liên quan đến … — ví dụ lý thuyết proto-elements của Nicholson:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“this process involves …, such as Nicholson's theory about proto-elements”",
+              "p": "Nicholson sai về proto-elements (“they do not actually exist”) — lý thuyết sai → D (mistakes)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "involves …",
+              "p": "Nicholson was wrong about the presence of proto-elements"
+            },
+            {
+              "q": "mistakes",
+              "p": "wrong about … they do not actually exist"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Lý thuyết sai nhưng vẫn hữu ích → mistakes (D)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "Plenty of other stories show that fresh advances can arise from error, misadventure, and also pure serendipity – a happy accident."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thường có yếu tố … — ví dụ Post-It note:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“There is also often an element of …, for example, the coincidence of ideas that led to the invention of the Post-It note”",
+              "p": "Bài gọi “pure serendipity – a happy accident” — may mắn/tình cờ → E (luck)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "element of …",
+              "p": "pure serendipity – a happy accident"
+            },
+            {
+              "q": "luck",
+              "p": "serendipity / happy accident"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Post-It từ tình cờ ghép hai vấn đề → luck (E)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Just like Darwin's Law of Natural Selection, the Law of Effect involves an entirely mechanical process of variation and selection, without any end objective in sight."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cả hai luật đều có thể không có … rõ ràng — chỉ biến dị và chọn lọc:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“there may be no clear … involved, but merely a process of variation and selection”",
+              "p": "“without any end objective in sight” — không mục tiêu đích → B (goals)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "no clear … involved",
+              "p": "without any end objective in sight"
+            },
+            {
+              "q": "goals",
+              "p": "end objective"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có mục tiêu cuối = goals (B)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    }
+  }
+}

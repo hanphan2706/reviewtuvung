@@ -1,0 +1,2095 @@
+{
+  "pilotId": "cam17-test1",
+  "schemaVersion": 4,
+  "note": "Cam 17 R T1 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The development of the London underground railway",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Stadiums: past, present and future",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "To catch a king",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "population",
+      "evidence": {
+        "quoteEn": "In the first half of the 1800s, London's population grew at an astonishing rate"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giữa năm 1800 và 1850, điều gì ở London tăng rất nhanh?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “The … of London” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "The ______ of London increased rapidly",
+              "p": "London's population grew at an astonishing rate"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "increased rapidly",
+              "p": "grew at an astonishing rate"
+            },
+            {
+              "q": "between 1800 and 1850",
+              "p": "In the first half of the 1800s"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ dân số London tăng nhanh → population."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "population"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "suburbs",
+      "evidence": {
+        "quoteEn": "His idea was to relocate the poor workers who lived in the inner-city slums to newly constructed suburbs"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Pearson muốn chuyển người nghèo tới nơi ở tốt hơn ở đâu?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “in the …” cần một danh từ chỉ nơi chốn."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "move people to better housing in the ______",
+              "p": "relocate the poor workers … to newly constructed suburbs"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "better housing",
+              "p": "newly constructed suburbs"
+            },
+            {
+              "q": "move people",
+              "p": "relocate the poor workers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ông đề xuất chuyển công nhân nghèo ra vùng ngoại ô mới xây → suburbs."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "suburbs"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "businessmen",
+      "evidence": {
+        "quoteEn": "Pearson's ideas gained support amongst some businessmen and in 1851 he submitted a plan to Parliament"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhóm nào ủng hộ ý tưởng đường sắt ngầm của Pearson?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “A number of …” cần danh từ chỉ người."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "A number of ______ agreed with Pearson's idea",
+              "p": "Pearson's ideas gained support amongst some businessmen"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "agreed with",
+              "p": "gained support amongst"
+            },
+            {
+              "q": "A number of",
+              "p": "some"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nêu một số doanh nhân ủng hộ → businessmen."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "businessmen"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "funding",
+      "evidence": {
+        "quoteEn": "The organisation had difficulty in raising the funding for such a radical and expensive scheme"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Công ty ban đầu gặp khó khăn gì để triển khai dự án?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “getting the … needed” cần danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "problems getting the ______ needed for the project",
+              "p": "difficulty in raising the funding for such a radical and expensive scheme"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "getting the ______ needed",
+              "p": "raising the funding"
+            },
+            {
+              "q": "problems",
+              "p": "difficulty"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Công ty khó huy động vốn → funding."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "funding"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "press",
+      "evidence": {
+        "quoteEn": "not least because of the critical articles printed by the press"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bài báo tiêu cực về dự án xuất hiện ở đâu?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “in the …” cần danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Negative articles appeared in the ______",
+              "p": "critical articles printed by the press"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Negative articles",
+              "p": "critical articles"
+            },
+            {
+              "q": "appeared in",
+              "p": "printed by"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Báo chí in các bài chỉ trích → press."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "press"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "soil",
+      "evidence": {
+        "quoteEn": "A two-metre-deep layer of soil was laid on top of the tunnel and the road above rebuilt"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sau khi hoàn thành vòm gạch, hầm được phủ bằng gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “covered with …” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "the tunnel was covered with ______",
+              "p": "A two-metre-deep layer of soil was laid on top of the tunnel"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "covered with",
+              "p": "laid on top of"
+            },
+            {
+              "q": "two-metre-deep layer",
+              "p": "layer of soil"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Một lớp đất dày hai mét được trải lên hầm → soil."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "soil"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "The Metropolitan line, which opened on 10 January 1863, was the world's first underground railway"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trước khi tuyến Metropolitan khai trương, các nước khác đã có đường sắt ngầm chưa?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Other countries had built underground railways before the Metropolitan line",
+              "p": "Metropolitan line … was the world's first underground railway — không có nước nào trước đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "before the Metropolitan line opened",
+              "p": "world's first underground railway"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định đây là tuyến ngầm đầu tiên trên thế giới → mâu thuẫn với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "On its first day, almost 40,000 passengers were carried between Paddington and Farringdon"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngày đầu có nhiều hành khách hơn dự kiến không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "More people than predicted travelled on the first day",
+              "p": "Bài chỉ nêu gần 40.000 hành khách — không so sánh với con số dự báo."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "than predicted",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có số liệu hành khách nhưng không nhắc dự đoán trước đó."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "However, smoke and fumes remained a problem, even though ventilation shafts were added to the tunnels"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thêm ống thông gió có ngăn được ô nhiễm trong hầm không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "ventilation shafts failed to prevent pollution",
+              "p": "smoke and fumes remained a problem, even though ventilation shafts were added"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "failed to prevent pollution",
+              "p": "remained a problem"
+            },
+            {
+              "q": "ventilation shafts",
+              "p": "ventilation shafts were added"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Dù có ống thông gió, khói và khí độc vẫn là vấn đề → TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "The 'cut and cover' method of construction was not an option in this part of the capital. The only alternative was to tunnel deep underground"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở trung tâm London có cần phương pháp khác “cut and cover” không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "A different approach from 'cut and cover' was required in London's central area",
+              "p": "cut and cover … was not an option … The only alternative was to tunnel deep underground"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "different approach",
+              "p": "only alternative was to tunnel deep underground"
+            },
+            {
+              "q": "central area",
+              "p": "this part of the capital"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cut and cover không dùng được ở trung tâm — phải đào sâu → TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "The carriages were narrow and had tiny windows just below the roof because it was thought that passengers would not want to look out at the tunnel walls"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cửa sổ trên tàu City & South London ở ngang tầm mắt không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "windows … at eye level",
+              "p": "tiny windows just below the roof — ngay dưới trần, không phải ngang mắt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "at eye level",
+              "p": "just below the roof"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cửa sổ nhỏ ngay dưới trần, trái với “eye level” → FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Although the City & South London Railway was a great technical achievement, it did not make a profit"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tuyến City & South London có lãi không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "was a financial success",
+              "p": "it did not make a profit"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "financial success",
+              "p": "did not make a profit"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ không có lợi nhuận → FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "in 1900, the Central London Railway, known as the 'Tuppenny Tube', began operation using new electric locomotives. It was very popular"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tàu Tuppenny Tube có gần như luôn chạy đúng giờ không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Trains on the 'Tuppenny Tube' nearly always ran on time",
+              "p": "Bài chỉ nói tuyến rất phổ biến — không nhắc đúng giờ hay trễ giờ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "ran on time",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có thông tin về độ đúng giờ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "Today, however, stadiums are regarded with growing scepticism. Construction costs can soar above £1 billion"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào nói tới thái độ tiêu cực đối với việc xây sân vận động?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "negative attitudes towards stadium building projects",
+              "p": "Đoạn A: growing scepticism, chi phí vượt £1 tỷ, sân Olympic/World Cup bị bỏ hoang."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "negative attitudes",
+              "p": "regarded with growing scepticism"
+            },
+            {
+              "q": "stadium building projects",
+              "p": "Construction costs can soar above £1 billion"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ đoạn A mở đầu bằng sự hoài nghi và chi phí khổng lồ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "This reduces the annual output of carbon dioxide by 660 tons and supplies up to 80 percent of the surrounding area"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào nêu con số về lợi ích môi trường của một sân cụ thể?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "figures demonstrating the environmental benefits of a certain stadium",
+              "p": "Đoạn F: Kaohsiung Stadium — giảm 660 tấn CO₂/năm, cung cấp tới 80% điện cho khu vực xung quanh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "environmental benefits",
+              "p": "reduction of CO2 emissions"
+            },
+            {
+              "q": "figures",
+              "p": "660 tons … 80 percent"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn F có số liệu CO₂ và điện năng từ sân Kaohsiung."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "There's a growing trend for stadiums to be equipped with public spaces and services that serve a function beyond sport, such as hotels, retail outlets, conference centres, restaurants and bars, children's playgrounds and green space"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào liệt kê nhiều loại tiện ích ở sân vận động mới?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "examples of the wide range of facilities available at some new stadiums",
+              "p": "Đoạn E: khách sạn, cửa hàng, trung tâm hội nghị, nhà hàng, quán bar, sân chơi trẻ em, không gian xanh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "wide range of facilities",
+              "p": "hotels, retail outlets, conference centres, restaurants and bars, children's playgrounds and green space"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn E liệt kê đa dạng tiện ích ngoài thể thao."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "Many such stadiums are situated in suburban areas, designed for sporting use only and surrounded by parking lots. These factors mean that they may not be as accessible to the general public"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào nói nhược điểm của sân vận động thời kỳ nhất định?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "disadvantages of the stadiums built during a certain era",
+              "p": "Đoạn D: sân thế kỷ 20 ở ngoại ô, chỉ phục vụ thể thao, bãi đậu xe — khó tiếp cận, tốn năng lượng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "disadvantages",
+              "p": "may not be as accessible … require more energy"
+            },
+            {
+              "q": "a certain era",
+              "p": "beginning of the 20th century"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn D so sánh sân hiện đại thế kỷ 20 với đấu trường La Mã và nêu hạn chế."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "fortress",
+      "evidence": {
+        "quoteEn": "Built by the Romans in 90 AD, it became a fortress with four towers after the fifth century"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đấu trường Arles được chuyển thành gì trước khi thành khu dân cư?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “converted first into a …” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "converted first into a ______",
+              "p": "it became a fortress with four towers after the fifth century"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "converted into",
+              "p": "became a fortress"
+            },
+            {
+              "q": "first",
+              "p": "after the fifth century (before residential area)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sau thế kỷ V, Arles trở thành pháo đài → fortress."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fortress"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "bullfights",
+      "evidence": {
+        "quoteEn": "it was converted back into an arena for the staging of bullfights, thereby returning the structure to its original use as a venue for public spectacles"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cuối cùng khán giả xem gì tại Arles?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “watch …” cần danh từ (một từ)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "spectators could watch ______",
+              "p": "an arena for the staging of bullfights"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "watch",
+              "p": "staging of"
+            },
+            {
+              "q": "arena",
+              "p": "venue for public spectacles"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sân được dùng tổ chức đấu bò → bullfights."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "bullfights"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "opera",
+      "evidence": {
+        "quoteEn": "It has endured the centuries and is currently considered one of the world's prime sites for opera, thanks to its outstanding acoustics"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đấu trường Verona nổi tiếng vì loại hình biểu diễn nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “where … is performed” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "a venue where ______ is performed",
+              "p": "one of the world's prime sites for opera"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "is performed",
+              "p": "prime sites for"
+            },
+            {
+              "q": "venue",
+              "p": "arena of Verona"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Verona là địa điểm opera hàng đầu → opera."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "opera"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "salt",
+      "evidence": {
+        "quoteEn": "variously used as houses, a salt depot and a prison"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Amphitheatre Lucca từng được dùng để cất trữ gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “storage of …” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "including the storage of ______",
+              "p": "a salt depot"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "storage of",
+              "p": "salt depot"
+            },
+            {
+              "q": "depot",
+              "p": "storage"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từng là kho muối → salt."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "salt"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "shops",
+      "evidence": {
+        "quoteEn": "Today, the ruins of the amphitheatre remain embedded in the various shops and residences surrounding the public square"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Quảng trường chợ hiện có gì lẫn trong di tích đấu trường?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “with … and homes” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "a market square with ______ and homes incorporated",
+              "p": "embedded in the various shops and residences"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "shops and homes",
+              "p": "shops and residences"
+            },
+            {
+              "q": "incorporated into the remains",
+              "p": "remain embedded"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Di tích nằm trong các cửa hàng và nhà ở → shops."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "shops"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Many such stadiums are situated in suburban areas, designed for sporting use only and surrounded by parking lots. These factors mean that they may not be as accessible to the general public"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "So sánh sân thế kỷ 20 với đấu trường La Mã — chọn hai nhược điểm tác giả nêu:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: ở vị trí kém thuận tiện hơn (less convenient locations)",
+              "p": "situated in suburban areas … may not be as accessible to the general public"
+            },
+            {
+              "q": "D: kém linh hoạt hơn (less versatile)",
+              "p": "some of the flexibility was lost at the beginning of the 20th century"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "less convenient locations",
+              "p": "suburban areas … not as accessible"
+            },
+            {
+              "q": "less versatile",
+              "p": "flexibility was lost"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "C và D đều có trong đoạn D: vị trí ngoại ô khó tiếp cận; mất tính đa năng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C và D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói sân thiếu sáng tạo trong thiết kế (less imaginatively designed)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không so sánh diện tích rộng hẹp (less spacious)."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Sân dùng thép và bê tông — không nói kém bền (less durable materials)."
+            }
+          ]
+        }
+      ],
+      "answerPair": [
+        23,
+        24
+      ],
+      "correctLetters": [
+        "C",
+        "D"
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "But some of the flexibility was lost at the beginning of the 20th century, as stadiums were developed using new products such as steel and reinforced concrete"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 23–24 — chọn ý còn lại trong cặp đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "D: kém linh hoạt hơn (less versatile)",
+              "p": "some of the flexibility was lost at the beginning of the 20th century"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "less versatile",
+              "p": "flexibility was lost"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "D nói sân thế kỷ 20 mất tính đa năng — đi cùng C trong cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần “Các lựa chọn còn lại” ở câu 23."
+        }
+      ],
+      "answerPair": [
+        23,
+        24
+      ],
+      "correctLetters": [
+        "C",
+        "D"
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Creating mixed-use developments such as this reinforces compactness and multi-functionality, making more efficient use of land and helping to regenerate urban spaces. This opens the space up to families and a wider cross-section of society"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai lợi thế của thiết kế sân vận động hiện đại mà tác giả nêu:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: đưa đời sống cộng đồng trở lại đô thị (bringing community life back into the city environment)",
+              "p": "regenerate urban spaces … opens the space up to families and a wider cross-section of society"
+            },
+            {
+              "q": "E: phù hợp lắp đặt nguồn năng lượng tái tạo (providing a suitable site for renewable power generators)",
+              "p": "canopies have a large surface area for fitting photovoltaic panels … micro wind turbines"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "regenerate urban spaces",
+              "p": "bringing community life back into the city"
+            },
+            {
+              "q": "photovoltaic panels",
+              "p": "renewable power generators"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "B và E đều có bằng chứng rõ trong đoạn E và F."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B và E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nhấn tiện nghi cho khán giả thể thao (improved amenities for sports events)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nói sân thúc đẩy nghiên cứu năng lượng mặt trời/gió (facilitating research)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Sân cung cấp điện cho khu vực lân cận khi không dùng, nhưng không nói cư dân giảm tiêu thụ điện (reduce their consumption)."
+            }
+          ]
+        }
+      ],
+      "answerPair": [
+        25,
+        26
+      ],
+      "correctLetters": [
+        "B",
+        "E"
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "Stadiums are ideal for these purposes, because their canopies have a large surface area for fitting photovoltaic panels and rise high enough (more than 40 metres) to make use of micro wind turbines"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 25–26 — chọn ý còn lại trong cặp đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "E: phù hợp lắp đặt nguồn năng lượng tái tạo",
+              "p": "canopies … for fitting photovoltaic panels … micro wind turbines"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "renewable power generators",
+              "p": "photovoltaic panels and micro wind turbines"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "E nói mái sân lý tưởng cho pin mặt trời và tuabin gió — đi cùng B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần “Các lựa chọn còn lại” ở câu 25."
+        }
+      ],
+      "answerPair": [
+        25,
+        26
+      ],
+      "correctLetters": [
+        "B",
+        "E"
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "H",
+      "evidence": {
+        "quoteEn": "the young Charles II sacrificed one of the very principles his father had died for and did a deal with Scots"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Charles II kết hợp với người Scotland theo hình thức gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Charles II then formed a ______ with the Scots",
+              "p": "did a deal with Scots → strategic alliance (H)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "formed a … with the Scots",
+              "p": "did a deal with Scots"
+            },
+            {
+              "q": "strategic alliance",
+              "p": "deal with Scots"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Did a deal with Scots” = liên minh chiến lược → H."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "C",
+              "whyVi": "Không nói âm mưu rộng rãi (widespread conspiracy) — chỉ thỏa thuận với Scotland."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Không thành lập chính phủ mới (new government)."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "J",
+      "evidence": {
+        "quoteEn": "thereby accepting Presbyterianism as the national religion in return for being crowned King of Scots"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trở thành Vua Scotland, Charles II đã từ bỏ điều gì cha ông giữ vững?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "he abandoned an important ______ that was held by his father",
+              "p": "sacrificed one of the very principles his father had died for … accepting Presbyterianism → religious conviction (J)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "abandoned … held by his father",
+              "p": "sacrificed one of the very principles his father had died for"
+            },
+            {
+              "q": "religious conviction",
+              "p": "accepting Presbyterianism as the national religion"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ông hy sinh nguyên tắc tôn giáo của cha → J."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "J"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "G",
+              "whyVi": "Không phải tranh luận chính trị (political debate)."
+            },
+            {
+              "letter": "I",
+              "whyVi": "Không phải giải pháp được dân ủng hộ (popular solution)."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "After being comprehensively defeated on the meadows outside the city by the Parliamentarian army"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trận Worcester mang lại kết quả gì cho phe Quốc hội?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "The battle led to a ______ for the Parliamentarians",
+              "p": "comprehensively defeated … by the Parliamentarian army → decisive victory (F)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "led to a … for the Parliamentarians",
+              "p": "comprehensively defeated (Charles)"
+            },
+            {
+              "q": "decisive victory",
+              "p": "comprehensively defeated"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Charles bị đánh bại toàn diện → phe Quốc hội thắng quyết định → F."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nhắc đổi mới quân sự (military innovation)."
+            },
+            {
+              "letter": "G",
+              "whyVi": "Không phải tranh luận chính trị (political debate)."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "the 21-year-old king found himself the subject of a national manhunt, with a huge sum offered for his capture"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người ta treo gì để bắt Charles?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "A ______ was offered for Charles's capture",
+              "p": "a huge sum offered for his capture → large reward (B)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "offered for … capture",
+              "p": "huge sum offered for his capture"
+            },
+            {
+              "q": "large reward",
+              "p": "huge sum"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Huge sum” = phần thưởng lớn → B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "C",
+              "whyVi": "Không nói âm mưu (widespread conspiracy) — chỉ tiền thưởng bắt giữ."
+            },
+            {
+              "letter": "I",
+              "whyVi": "Không phải giải pháp phổ biến (popular solution)."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "to evade the Parliamentarians before seeking refuge in France"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sau sáu tuần ẩn náu, Charles tới đâu ở châu Âu?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "he eventually managed to reach the ______ of continental Europe",
+              "p": "seeking refuge in France → relative safety (D)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reach the … of continental Europe",
+              "p": "seeking refuge in France"
+            },
+            {
+              "q": "relative safety",
+              "p": "refuge"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Trốn sang Pháp tìm nơi an toàn → D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "E",
+              "whyVi": "Pháp là nơi trú ẩn, không phải chính phủ mới (new government)."
+            },
+            {
+              "letter": "A",
+              "whyVi": "Không nhắc đổi mới quân sự (military innovation)."
+            }
+          ]
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "His intention when asking Pepys to commit his story to paper was to ensure that this most extraordinary episode was never forgotten"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Charles chọn Pepys vì tin ông ấy đáng tin cậy phải không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Charles chose Pepys because he considered him to be trustworthy",
+              "p": "Bài chỉ nói mục đích là ghi lại để không ai quên — không nêu lý do tin cậy."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "trustworthy",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có lý do ghi chép nhưng không nói vì Pepys đáng tin."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Over two three-hour sittings, the king related to him in great detail his personal recollections of the six weeks he had spent as a fugitive"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Charles kể cho Pepys quá sơ sài, thiếu chi tiết phải không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Charles's personal recollection … lacked sufficient detail",
+              "p": "related to him in great detail his personal recollections — kể rất chi tiết, trái với đề."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lacked sufficient detail",
+              "p": "in great detail"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói vua kể rất chi tiết → mâu thuẫn đề → NO."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "After the battle was so absolutely lost as to be beyond hope of recovery, I began to think of the best way of saving myself"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Charles đã lên kế hoạch trốn trước trận đánh phải không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Charles indicated … he had planned his escape before the battle",
+              "p": "After the battle was so absolutely lost … I began to think of the best way of saving myself — chỉ nghĩ cách thoát sau khi thua."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "before the battle",
+              "p": "After the battle … I began to think"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vua tự kể chỉ bắt đầu nghĩ cách thoát sau trận thua → NO."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "One of the joys of Spencer's book, a result not least of its use of Charles II's own narrative as well as those of his supporters, is just how close the reader gets to the action"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc đưa lời kể của Charles vào sách là điểm tích cực phải không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "The inclusion of Charles's account is a positive aspect of the book",
+              "p": "One of the joys of Spencer's book … use of Charles II's own narrative … just how close the reader gets to the action"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "positive aspect",
+              "p": "One of the joys"
+            },
+            {
+              "q": "Charles's account",
+              "p": "Charles II's own narrative"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Reviewer gọi đó là một trong những điểm hay của sách → YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Charles Spencer's latest book, To Catch a King, tells us the story of the hunt for King Charles II in the six weeks after his resounding defeat at the Battle of Worcester in September 1651"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mục đích chính của reviewer ở đoạn đầu là gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: tóm tắt hoàn cảnh dẫn tới cuộc trốn của Charles II (circumstances leading to Charles II's escape)",
+              "p": "Đoạn 1 kể toàn bộ diễn biến từ thua trận Worcester, truy nã sáu tuần, tới sang Pháp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "circumstances leading to … escape",
+              "p": "the hunt for King Charles II in the six weeks after his resounding defeat"
+            },
+            {
+              "q": "give an account",
+              "p": "tells us the story"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn mở đầu là bản tóm tắt bối cảnh và diễn biến trốn thoát → B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không mô tả chi tiết trận Worcester — chỉ nói thua và trốn."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không trình bày quan điểm chính trị phe Quốc hội."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không so sánh niềm tin Charles II với cha."
+            }
+          ]
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "The day-by-day retelling of the fugitives' doings provides delicious details: the cutting of the king's long hair with agricultural shears, the use of walnut leaves to dye his pale skin"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Reviewer đưa ví dụ về hành vi của nhóm trốn để làm gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: minh họa sáu tuần ẩn náu được tái hiện sinh động (how the events of the six weeks are brought to life)",
+              "p": "delicious details … just how close the reader gets to the action — chi tiết kể từng ngày khiến độc giả như ở ngay hiện trường."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "brought to life",
+              "p": "delicious details … close the reader gets to the action"
+            },
+            {
+              "q": "examples of the fugitives' behaviour",
+              "p": "cutting of the king's long hair … walnut leaves to dye his pale skin"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Các chi tiết cụ thể giúp độc giả cảm nhận sự kiện sống động → C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nhấn Charles suýt mất mạng — mà nhấn cách kể chuyện."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói phe ủng hộ chuẩn bị kém."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không tranh luận khía cạnh nào ít được biết đến."
+            }
+          ]
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "It is hard to imagine many other kings marking the lowest point in their life so enthusiastically, or indeed pulling off such an escape in the first place"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Reviewer nói gì về thái độ của Charles II ở đoạn 4?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "A: ông chọn ăn mừng điều về bản chất là một thất bại (celebrate what was essentially a defeat)",
+              "p": "Charles loved the story … set in train initiatives to memorialise it … marking the lowest point in their life so enthusiastically"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "celebrate … a defeat",
+              "p": "marking the lowest point in their life so enthusiastically"
+            },
+            {
+              "q": "memorialise",
+              "p": "Knights of the Royal Oak … enormous oil paintings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vua coi thời kỳ thua trận/trốn là kỷ niệm đáng tưởng nhớ → A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Không nói Charles hiểu sai động cơ đối thủ."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nói mục tiêu khôi phục niềm tin vào quân chủ."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nhấn Charles muốn được yêu mến."
+            }
+          ]
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "He has even-handed sympathy for both the fugitive king and the fierce republican regime that hunted him"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Reviewer nói gì về Charles Spencer ở đoạn 5?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: tiếp cận cân bằng, không thiên vị (unbiased approach)",
+              "p": "even-handed sympathy for both the fugitive king and the fierce republican regime"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "unbiased approach",
+              "p": "even-handed sympathy for both"
+            },
+            {
+              "q": "subject matter",
+              "p": "fugitive king and the fierce republican regime"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Spencer cảm thông công bằng với cả hai phe → B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói việc viết sách gây bất ngờ."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Reviewer khen văn phong sống động, không chê thiếu chi tiết."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Spencer cố tránh thành ngữ hiện đại — không hướng tới độc giả thế kỷ 21."
+            }
+          ]
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Would Charles II have been a different king had these six weeks never happened? … This is the one area where the book doesn't quite hit the mark"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi nói sách “doesn't quite hit the mark”, reviewer muốn nói điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "D: sách không trả lời liệu trải nghiệm sáu tuần có ảnh hưởng lâu dài tới Charles II (lasting influence on him)",
+              "p": "Would Charles II have been a different king had these six weeks never happened? … This is the one area where the book doesn't quite hit the mark"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lasting influence on him",
+              "p": "Would Charles II have been a different king had these six weeks never happened?"
+            },
+            {
+              "q": "doesn't quite hit the mark",
+              "p": "the one area where the book doesn't quite hit the mark"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Reviewer tiếc vì sách không phân tích tác động lâu dài lên nhân cách vua → D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói sách bỏ qua tác động lên người dân thường."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không thiếu phân tích quan điểm phổ biến về quân chủ."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Sách kể nhiều mưu mẹo trốn thoát — không bỏ qua sự lừa dối."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

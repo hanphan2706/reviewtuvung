@@ -89,6 +89,9 @@ function detectSectionKind(chunk: string): ExamSectionKind {
   if (/Complete the summary below/i.test(chunk)) return "summary-fill";
   if (/Complete the summary using/i.test(chunk)) return "summary-fill";
   if (/Complete the notes below/i.test(chunk)) return "note-fill";
+  if (/Complete the sentences below/i.test(chunk)) return "note-fill";
+  if (/Complete the table below/i.test(chunk)) return "note-fill";
+  if (/Complete the flow-?chart below/i.test(chunk)) return "note-fill";
   if (/Label the diagrams?/i.test(chunk)) return "note-fill";
   if (/Answer the questions below/i.test(chunk)) return "note-fill";
   if (/Choose the correct answer/i.test(chunk)) return "mcq-single";
@@ -402,12 +405,16 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
 
       if (kind === "note-fill") {
         if (
-          /^Complete the (notes|sentences)|^Label the diagrams?|^Choose\s+(ONE|NO MORE|TWO)|^Answer the questions/i.test(
+          /^Complete the (notes|sentences|table|flow-?chart)|^Label the diagrams?|^Choose\s+(ONE|NO MORE|TWO)|^Answer the questions/i.test(
             line,
           )
         ) {
           instructionLines.push(line);
           continue;
+        }
+        // Do not swallow the next passage / next question block into note body.
+        if (/^READING PASSAGE\b/i.test(line) || /^Questions?\s+\d+/i.test(line)) {
+          break;
         }
         if (/^url\s*\|/i.test(line)) {
           bodyLines.push(line);
@@ -421,6 +428,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
         }
         if (phase === "body") {
           if (line === "•" || line === "●") continue;
+          if (/^READING PASSAGE\b/i.test(line) || /^Questions?\s+\d+/i.test(line)) break;
           bodyLines.push(line);
           continue;
         }

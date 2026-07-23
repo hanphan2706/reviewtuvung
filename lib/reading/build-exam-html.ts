@@ -336,34 +336,40 @@ function renderSummaryFill(section: ExamQuestionSection): { html: string; nums: 
 
 function renderNoteFill(section: ExamQuestionSection): { html: string; nums: number[] } {
   const allNums: number[] = [];
-  const instrOnly = section.instructionLines.filter((l) =>
-    /^(Complete the notes|Choose\s|Write your|In boxes)/i.test(l),
-  );
+  const isNoteInstruction = (l: string) =>
+    /^(Complete the (notes|sentences|table|flow-?chart)|Choose\s|Write your|In boxes)/i.test(l);
+  const instrOnly = section.instructionLines.filter((l) => isNoteInstruction(l));
   const titleFromBody = section.bodyLines.find(
     (l) =>
-      !/^[●○]/.test(l) &&
+      !/^[•●○]/.test(l) &&
       !hasFillGap(l) &&
       l.length < 56 &&
-      !/^Arrival of|^Protecting\b/i.test(l),
+      !/^Arrival of|^Protecting\b/i.test(l) &&
+      !/^READING PASSAGE\b/i.test(l),
   );
   const notesTitle =
-    section.instructionLines.find(
-      (l) => !/^(Complete the notes|Choose\s|Write your|In boxes|NB\b)/i.test(l),
-    ) ?? titleFromBody;
+    section.instructionLines.find((l) => !isNoteInstruction(l) && !/^NB\b/i.test(l)) ??
+    titleFromBody;
 
   const body = section.bodyLines
-    .filter((line) => line !== notesTitle && line !== "•" && line !== "●")
+    .filter(
+      (line) =>
+        line !== notesTitle &&
+        line !== "•" &&
+        line !== "●" &&
+        !/^READING PASSAGE\b/i.test(line.trim()),
+    )
     .map((line) => {
       const diagram = line.match(/^url\s*\|\s*(.+)$/i);
       if (diagram?.[1]) {
         const src = diagram[1].trim();
         return `<p class="diagram-img"><img src="${escHtml(src)}" alt="Diagram for questions" loading="lazy" /></p>`;
       }
-      const raw = line.replace(/^[●○]\s*/, "");
+      const raw = line.replace(/^[•●○]\s*/, "");
       const { html, nums } = renderGapText(raw);
       allNums.push(...nums);
       const isSubheading =
-        !/^●|^○/.test(line) &&
+        !/^[•●○]/.test(line) &&
         !hasFillGap(line) &&
         nums.length === 0 &&
         /^[A-Z]/.test(line.trim()) &&
@@ -371,7 +377,7 @@ function renderNoteFill(section: ExamQuestionSection): { html: string; nums: num
       if (isSubheading) {
         return `<p class="notes-subheading"><strong>${escHtml(line.trim())}</strong></p>`;
       }
-      const prefix = /^[●○]/.test(line) ? "● " : "";
+      const prefix = /^[•●○]/.test(line) ? "● " : "";
       return `<p>${prefix}${html}</p>`;
     })
     .join("");
