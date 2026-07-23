@@ -1,0 +1,2141 @@
+{
+  "pilotId": "cam21-test4",
+  "schemaVersion": 4,
+  "note": "Cam 21 R T4 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Water hyacinth in Kenya",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "How could multilingualism benefit India's poorest schoolchildren?",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "The Globemakers",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "In east Africa the plant arrived with Belgian colonists in Rwanda, who liked the look of its glossy leaves and delicate purple flowers floating in their ponds."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Lục bình tím có được đưa vào Đông Phi như cây trang trí không — xem ai mang nó tới và vì sao:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói water hyacinth “introduced as a decorative plant” (đưa vào như cây trang trí) ở Đông Phi",
+              "p": "Bài viết thực vật “arrived with Belgian colonists in Rwanda, who liked the look of its glossy leaves and delicate purple flowers floating in their ponds” — người Bỉ trồng vì thích vẻ lá bóng và hoa tím"
+            },
+            {
+              "q": "“in east Africa”",
+              "p": "“in Rwanda” — thuộc khu vực Đông Phi"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "introduced as a decorative plant",
+              "p": "liked the look of its glossy leaves and delicate purple flowers"
+            },
+            {
+              "q": "decorative plant",
+              "p": "floating in their ponds"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ người Bỉ mang cây tới vì thích vẻ đẹp trang trí — khớp TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "In east Africa the plant arrived with Belgian colonists in Rwanda, who liked the look of its glossy leaves and delicate purple flowers floating in their ponds. But by the 1980s, it had 'escaped' out of the country via the Kagera river and made its way downstream to Lake Victoria."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngư dân có mang lục bình tím tới Hồ Victoria không — bài kể ai đưa cây tới:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “Fishermen took some water hyacinth plants to Lake Victoria” (ngư dân mang cây tới Hồ Victoria)",
+              "p": "Bài viết cây “arrived with Belgian colonists in Rwanda” rồi “'escaped' out of the country via the Kagera river” — tự lan theo sông, không phải do ngư dân mang"
+            },
+            {
+              "q": "“to Lake Victoria”",
+              "p": "“made its way downstream to Lake Victoria” — nhưng không phải do ngư dân"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Fishermen took some water hyacinth plants",
+              "p": "arrived with Belgian colonists in Rwanda"
+            },
+            {
+              "q": "took ... to Lake Victoria",
+              "p": "escaped ... via the Kagera river"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cây tới Hồ Victoria do tự lan theo sông Kagera, không phải ngư dân mang — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "the plant began spreading in the open water, blocking fishing routes and providing a new habitat for disease-carrying mosquitoes."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giờ thuyền có khó lách qua lớp lục bình dày trên Hồ Victoria không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “difficult to force boats through the thick water hyacinth” (khó đẩy thuyền qua lớp cây dày)",
+              "p": "Bài viết thuyền đánh cá “struggle to navigate through the mass of plants” và cây “blocking fishing routes” — cản trở đường đi"
+            },
+            {
+              "q": "“thick water hyacinth”",
+              "p": "“mass of plants”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "difficult to force boats through",
+              "p": "struggle to navigate through the mass of plants"
+            },
+            {
+              "q": "blocking fishing routes",
+              "p": "mass of plants"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thuyền phải vật lộn lách qua mảng cây dày — đúng là khó đi, khớp TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "the plant began spreading in the open water, blocking fishing routes and providing a new habitat for disease-carrying mosquitoes."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hóa chất từ lục bình có làm giảm số cá trên Hồ Victoria không — bài có nói không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “Chemicals produced by the water hyacinth plants are affecting the numbers of fish” (hóa chất từ cây ảnh hưởng số cá)",
+              "p": "Bài chỉ nói cây “blocking fishing routes”, gây “declining income” cho phụ nữ hun khói cá, và là “habitat for disease-carrying mosquitoes” — không nhắc hóa chất hay số lượng cá"
+            },
+            {
+              "q": "“affecting the numbers of fish”",
+              "p": "(không được nêu trong bài)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Chemicals produced by the water hyacinth plants",
+              "p": "(không được nêu trong bài)"
+            },
+            {
+              "q": "affecting the numbers of fish",
+              "p": "declining income / blocking fishing routes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không đề cập hóa chất từ cây hay số lượng cá bị ảnh hưởng — chỉ nói cản đường đánh bắt."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "About three out of four families in Kenya depend on wood or charcoal to cook their daily meals, and the rate is even higher in rural areas, Kenya's latest demographic and health survey shows. Using solid fuels like these for cooking increases indoor pollution."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nấu bằng than có được chứng minh gây hại sức khỏe hơn nấu bằng củi không — bài có so sánh không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói than “even worse for people's health than cooking with wood” (tệ hơn củi)",
+              "p": "Bài chỉ nói “About three out of four families ... depend on wood or charcoal” và “Using solid fuels like these for cooking increases indoor pollution” — gom chung củi và than, không so sánh mức độ"
+            },
+            {
+              "q": "“even worse ... than cooking with wood”",
+              "p": "(không có phép so sánh trong bài)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cooking with charcoal has been proved to be even worse ... than cooking with wood",
+              "p": "(không được nêu trong bài)"
+            },
+            {
+              "q": "solid fuels like these",
+              "p": "wood or charcoal"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói cả củi lẫn than đều gây ô nhiễm trong nhà, nhưng không so sánh cái nào tệ hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Some years ago, on the shores of Lake Victoria, huge piles of water hyacinth that villagers had taken out of the water in an attempt to clear it were a common sight."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người dân có thật sự không thể dọn bớt lục bình khỏi Hồ Victoria không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “impossible to remove much water hyacinth” (không thể dọn bớt)",
+              "p": "Bài viết “huge piles of water hyacinth that villagers had taken out of the water in an attempt to clear it were a common sight” — dân làng đã kéo cây lên, thành đống lớn ven hồ"
+            },
+            {
+              "q": "“impossible to remove”",
+              "p": "“villagers had taken out of the water”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "impossible to remove much water hyacinth",
+              "p": "villagers had taken out of the water"
+            },
+            {
+              "q": "remove",
+              "p": "taken out of the water in an attempt to clear it"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài cho thấy dân làng đã kéo cây lên khá nhiều — trái với ý “impossible” trong đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "It's a magic combination that has captivated researchers' imaginations since as early as the 1980s when, across the world, they began to explore its potential as a biofuel."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các nhà khoa học có bắt đầu nghiên cứu dùng lục bình làm biogas từ thế kỷ trước không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “in the last century” (thế kỷ trước)",
+              "p": "Bài viết “since as early as the 1980s ... they began to explore its potential as a biofuel” — từ những năm 1980, thuộc thế kỷ XX"
+            },
+            {
+              "q": "“investigating the possibility of using water hyacinth to generate biogas”",
+              "p": "“explore its potential as a biofuel”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "in the last century",
+              "p": "since as early as the 1980s"
+            },
+            {
+              "q": "generate biogas",
+              "p": "potential as a biofuel"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Những năm 1980 thuộc thế kỷ XX — bài nói rõ nghiên cứu bắt đầu từ đó, khớp TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "flow-fill",
+      "answer": "cow dung",
+      "evidence": {
+        "quoteEn": "The community received a pair of donated biogas digesters – machines that would transform a mix of water hyacinth and cow dung into biogas for cooking."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bước đầu trong sơ đồ: cho lục bình và thứ gì vào bể digester — tối đa hai từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “together with some ______” cần một cụm danh từ chỉ nguyên liệu trộn thêm."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“place water hyacinth together with some ______ into a digester”",
+              "p": "Bài viết máy “transform a mix of water hyacinth and cow dung into biogas” — trộn lục bình với phân bò"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "together with some",
+              "p": "and cow dung"
+            },
+            {
+              "q": "into a digester",
+              "p": "biogas digesters"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nguyên liệu trộn cùng lục bình là phân bò — điền cow dung."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "cow dung"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "flow-fill",
+      "answer": "fermentation",
+      "evidence": {
+        "quoteEn": "The mixture goes in one end – think of it as a mouth – and over the next 20 to 30 days, it goes through a fermentation process and breaks down, giving off gas that comes out the other end."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để hỗn hợp trong bể cho đến khi quá trình gì hoàn tất — tối đa hai từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “until the ______ is completed” cần một danh từ chỉ quá trình xử lý."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Leave the mixture until the ______ is completed”",
+              "p": "Bài viết “it goes through a fermentation process and breaks down” — trải qua quá trình lên men rồi phân hủy"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "until the ... is completed",
+              "p": "goes through a fermentation process"
+            },
+            {
+              "q": "fermentation",
+              "p": "fermentation process"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Quá trình cần chờ hoàn tất là lên men — điền fermentation (cũng chấp nhận fermentation process)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fermentation"
+        }
+      ],
+      "answerAlternatives": [
+        "fermentation process"
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "flow-fill",
+      "answer": "pipes",
+      "evidence": {
+        "quoteEn": "From there, the clean-burning gas is passed through pipes to the point of use, just like traditional domestic gas."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dùng thứ gì để dẫn khí từ bể tới từng nhà — tối đa hai từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “use ______ to transport it” cần danh từ chỉ đường ống/vật dẫn khí."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“use ______ to transport it to individual homes”",
+              "p": "Bài viết khí “is passed through pipes to the point of use, just like traditional domestic gas” — chuyển qua ống dẫn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "transport it to individual homes",
+              "p": "passed through pipes to the point of use"
+            },
+            {
+              "q": "pipes",
+              "p": "passed through pipes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khí được dẫn tới nơi sử dụng bằng ống — điền pipes."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "pipes"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "time",
+      "evidence": {
+        "quoteEn": "Besides, they don't have to devote a lot of time every day to gathering firewood, which is a great relief."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phụ nữ trong làng không còn phải dành quá nhiều thứ gì để đi kiếm nhiên liệu — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “so much ______ collecting fuel” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“no need for them to spend so much ______ collecting fuel”",
+              "p": "Bài viết “don't have to devote a lot of time every day to gathering firewood” — không còn mất nhiều thời gian nhặt củi mỗi ngày"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "spend so much ... collecting fuel",
+              "p": "devote a lot of time ... to gathering firewood"
+            },
+            {
+              "q": "time",
+              "p": "a lot of time every day"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Lợi ích rõ nhất là tiết kiệm thời gian đi kiếm củi — điền time."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "time"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "money",
+      "evidence": {
+        "quoteEn": "As a result, they're able to make more money for their families from other enterprises."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Họ có thể tập trung vào việc khác mang lại thứ gì — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “bring in ______” cần một danh từ chỉ lợi ích kinh tế."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“focus on different tasks that bring in ______”",
+              "p": "Bài viết “they're able to make more money for their families from other enterprises” — kiếm thêm tiền từ việc khác"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "bring in",
+              "p": "make more money"
+            },
+            {
+              "q": "different tasks",
+              "p": "other enterprises"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhờ không mất thời gian nhặt củi, họ kiếm thêm tiền — điền money."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "money"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "price",
+      "evidence": {
+        "quoteEn": "But unless the price of the machines drops, it's pretty clear that most communities will never be able to afford any, since they sell for about $750."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điểm bất lợi: ______ của bể digester vượt khả năng chi trả của hầu hết làng — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the ______ of the digesters” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the ______ of the digesters is beyond the reach of most villages”",
+              "p": "Bài viết “unless the price of the machines drops ... most communities will never be able to afford any” — giá máy quá cao"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "beyond the reach of most villages",
+              "p": "never be able to afford any"
+            },
+            {
+              "q": "price",
+              "p": "price of the machines"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Rào cản chính là giá máy khoảng $750 — điền price."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "price"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "I",
+      "evidence": {
+        "quoteEn": "The crowded and bustling streets of Delhi teem with life. Stop to listen and, above the din of rickshaws and buses, you'll hear a multitude of languages, as more than 20 million people go about their daily lives."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Delhi có đặc điểm gì khiến trên phố nghe thấy nhiều ngôn ngữ — chọn từ trong bảng A–J:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “The city of Delhi has a ______”.",
+              "p": "Bài mô tả “crowded and bustling streets” và “more than 20 million people” — thành phố đông đúc, dân số lớn → chọn I (dense population)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "has a ______",
+              "p": "dense population"
+            },
+            {
+              "q": "dense population",
+              "p": "more than 20 million people / crowded and bustling streets"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Delhi có hơn 20 triệu dân, đường phố đông đúc — khớp dense population (I)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "I"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "G",
+              "whyVi": "Bài không nói Delhi có nền kinh tế phồn vinh (thriving economy)."
+            },
+            {
+              "letter": "A",
+              "whyVi": "“Basic outlook” không liên quan mô tả đông đúc hay đa ngôn ngữ trên phố."
+            }
+          ]
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "J",
+      "evidence": {
+        "quoteEn": "Many were born and raised here, and many millions more have recently made India's capital their home, having moved from surrounding neighbourhoods, cities and states or across the country"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một số người sống cả đời ở Delhi, còn số khác là ai — chọn A–J:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “others are ______”.",
+              "p": "Bài viết “many millions more have recently made India's capital their home” — hàng triệu người mới dọn tới gần đây → J (new immigrants)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "others are",
+              "p": "new immigrants"
+            },
+            {
+              "q": "new immigrants",
+              "p": "have recently made India's capital their home"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhóm còn lại là người mới chuyển tới thủ đô — chọn J."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "J"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "C",
+              "whyVi": "Không phải du khách giàu (wealthy visitors)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Họ đến từ vùng lân cận hoặc trong nước, không phải “distant country”."
+            }
+          ]
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "H",
+      "evidence": {
+        "quoteEn": "having moved from surrounding neighbourhoods, cities and states or across the country"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dù đến từ đâu — vùng lân cận hay tận bên kia Ấn Độ — họ đều tìm việc tốt hơn:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Whether they have come from a ______”.",
+              "p": "Bài viết “moved from surrounding neighbourhoods, cities and states” — vùng lân cận, thành phố, bang gần → H (nearby district)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "come from a ______",
+              "p": "nearby district"
+            },
+            {
+              "q": "nearby district",
+              "p": "surrounding neighbourhoods, cities and states"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nguồn di cư bao gồm vùng lân cận quanh Delhi — chọn H."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "D",
+              "whyVi": "“Distant country” sai vì họ đến từ trong Ấn Độ, không phải nước ngoài."
+            }
+          ]
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "often in the hope of gaining better jobs and a better life."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Họ tới Delhi tìm kiếm thứ gì, ví dụ việc làm tốt hơn — chọn A–J:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “in search of things such as improved ______”.",
+              "p": "Bài viết “in the hope of gaining better jobs and a better life” → B (employment opportunities)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "improved ______",
+              "p": "employment opportunities"
+            },
+            {
+              "q": "employment opportunities",
+              "p": "better jobs and a better life"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Better jobs” tương ứng employment opportunities — chọn B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "G",
+              "whyVi": "Bài không nhắc nền kinh tế phồn vinh mà nhấn việc làm và cuộc sống tốt hơn."
+            }
+          ]
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "The overriding aim of the four-year project, called 'Multilingualism and Multiliteracy', is to find out why"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mục tiêu chính của dự án nghiên cứu là gì — chọn A–J:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “The ______ of the research is to discover why”.",
+              "p": "Bài viết “The overriding aim of the four-year project ... is to find out why” → E (primary objective)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "The ______ of the research",
+              "p": "primary objective"
+            },
+            {
+              "q": "primary objective",
+              "p": "overriding aim ... is to find out why"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Overriding aim” = mục tiêu chính — chọn E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "“Basic outlook” không khớp nghĩa mục tiêu nghiên cứu."
+            }
+          ]
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "the many benefits of speaking more than one language, observed in schools in Europe for instance, do not apply to many of India's schoolchildren."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vì sao trẻ Ấn Độ đa ngôn ngữ không được hưởng lợi ích như trẻ châu Âu — chọn A–J:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “do not experience ______ to those that multilingual schoolchildren in Europe experience”.",
+              "p": "Bài viết lợi ích đa ngôn ngữ “observed in schools in Europe ... do not apply” ở Ấn → F (similar advantages)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "do not experience ______",
+              "p": "similar advantages"
+            },
+            {
+              "q": "similar advantages",
+              "p": "the many benefits ... observed in schools in Europe"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Trẻ Ấn không có lợi thế tương tự trẻ đa ngôn ngữ ở châu Âu — chọn F."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Employment opportunities không liên quan lợi ích học đa ngôn ngữ ở trường."
+            }
+          ]
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "'Each year across India, 600,000 children are tested, and year after year over 50% of children in Standard 5 [ten-year-olds] cannot read a Standard 2 [seven-year-olds] task fluently, and just under 50% of them cannot solve a Standard 2 subtraction task,' says Tsimpli."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trẻ 10 tuổi ở Ấn có làm bài đọc hiểu tốt hơn bài toán trừ không, theo tác giả:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói trẻ “perform better in literacy tests than in numeracy tests” (đọc tốt hơn tính toán)",
+              "p": "Bài viết hơn 50% không đọc trôi chảy bài lớp 2, và “just under 50%” không giải được phép trừ lớp 2 — hai tỷ lệ gần nhau, không nói đọc tốt hơn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "perform better in literacy tests than in numeracy tests",
+              "p": "(không được nêu — cả hai đều kém)"
+            },
+            {
+              "q": "literacy tests",
+              "p": "cannot read a Standard 2 task fluently"
+            },
+            {
+              "q": "numeracy tests",
+              "p": "cannot solve a Standard 2 subtraction task"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài đưa hai tỷ lệ thất bại gần tương đương, không khẳng định đọc giỏi hơn tính — trái đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "She explains that low educational achievement can lead to many of these students dropping out of school – a problem disproportionately affecting female students."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tsimpli có gặp khó khi thuyết phục nữ sinh tham gia nghiên cứu không — bài có nói không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Tsimpli “had problems convincing some female students to take part” (khó thuyết phục nữ sinh tham gia)",
+              "p": "Bài chỉ nói nữ sinh “disproportionately” bỏ học do thành tích kém — không nhắc khó khăn khi mời tham gia nghiên cứu"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "had problems convincing some female students to take part in the study",
+              "p": "(không được nêu trong bài)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói nữ sinh bỏ học nhiều hơn, nhưng không đề cập việc mời tham gia khảo sát."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Tsimpli and her colleagues are investigating whether these low learning outcomes could be caused by an Indian school system where the language that children are taught in often differs from the language used at home."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhóm Tsimpli có muốn biết thành tích kém có liên quan tới việc dạy bằng ngôn ngữ không quen thuộc không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói muốn biết “connection between poor academic performance and being taught in an unfamiliar language”",
+              "p": "Bài viết “investigating whether these low learning outcomes could be caused by ... the language that children are taught in often differs from the language used at home”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "connection between poor academic performance and being taught in an unfamiliar language",
+              "p": "investigating whether these low learning outcomes could be caused by ... language ... differs from the language used at home"
+            },
+            {
+              "q": "unfamiliar language",
+              "p": "differs from the language used at home"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đúng trọng tâm nghiên cứu — họ đang kiểm tra mối liên hệ đó, khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "They intend to look not only at test results, but also at variables such as the standard of schooling, the environment and the teaching practices themselves. It's possible that one of the causes of low performance is the lack of pupil-centred teaching methods"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các nhà nghiên cứu có quyết định không xem xét phương pháp dạy ảnh hưởng kết quả học tập không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói họ “decided against investigating the impact teaching methodology may have” (bỏ không nghiên cứu phương pháp dạy)",
+              "p": "Bài viết họ “intend to look ... at ... the teaching practices themselves” và gợi ý “lack of pupil-centred teaching methods” có thể là nguyên nhân — tức là có xem xét"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "decided against investigating the impact teaching methodology may have",
+              "p": "intend to look ... at ... the teaching practices themselves"
+            },
+            {
+              "q": "teaching methodology",
+              "p": "pupil-centred teaching methods"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Họ dự định phân tích cả phương pháp dạy — trái với ý “decided against” trong đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "According to Tsimpli, most of the evidence from this and other projects shows that English instruction for children from low socio-economic areas might not be the best way for them to learn, at least in the first three years of primary education."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn sáu, tác giả nói gì về trường tiểu học ở Ấn:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: trẻ nghèo có thể càng bất lợi khi được dạy bằng tiếng Anh (“Poor children may be disadvantaged further by being instructed in English”)",
+              "p": "Bài viết “English instruction for children from low socio-economic areas might not be the best way for them to learn” — dạy bằng Anh có thể không phù hợp với trẻ vùng nghèo"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "disadvantaged further by being instructed in English",
+              "p": "English instruction for children from low socio-economic areas might not be the best way"
+            },
+            {
+              "q": "Poor children",
+              "p": "children from low socio-economic areas"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bằng chứng cho thấy dạy bằng Anh có thể làm trẻ nghèo học kém hơn — khớp C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đoạn không nói tiếp xúc tiếng Anh ngoài trường có ích hay hạn chế."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nhắc động lực học tiếng Anh."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không bàn sự không nhất quán giữa các trường về dạy Anh."
+            }
+          ]
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "'What we would recommend for everyone, not just low socio-economic status children, would be to start learning in the language they feel comfortable learning in ... English can still be used, but perhaps not as the medium of instruction in primary schools. It could, for example, be one of the subjects that are being taught alongside other subjects. We are not suggesting that English be withdrawn – that ship has sailed – but we perhaps have to think more about learner needs.'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi Tsimpli nói “that ship has sailed”, bà đang gợi ý điều gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: quá muộn để loại bỏ hoàn toàn tiếng Anh khỏi ngôn ngữ giảng dạy (“It is too late to remove English completely as a language of instruction”)",
+              "p": "Bài viết “We are not suggesting that English be withdrawn – that ship has sailed” — không đề xuất rút tiếng Anh, vì “con tàu đã khởi hành”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "that ship has sailed",
+              "p": "not suggesting that English be withdrawn"
+            },
+            {
+              "q": "too late to remove English completely",
+              "p": "English be withdrawn"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thành ngữ “that ship has sailed” = việc đã quá muộn để đảo ngược — không thể rút Anh khỏi giảng dạy — khớp D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói kết quả nghiên cứu ít giúp ích cho trẻ."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bà đề xuất điều chỉnh cách dùng Anh, không phải giải thích thành ngữ theo hướng “adapted”."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nhắc thành công hạn chế khi dạy Anh như môn riêng."
+            }
+          ]
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "an unanticipated finding has been that children from slum backgrounds do not seem to lag behind children from other urban poor backgrounds – and in some cases outperform them (e.g. in numeracy and literacy tasks)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn tám, điều gì khiến các nhà nghiên cứu bất ngờ:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: kỹ năng đọc-viết và tính toán của trẻ khu ổ chuột không thấp hơn trẻ nghèo thành thị khác (“The literacy and numeracy skills of slum children are not lower than those of children from other urban poor backgrounds”)",
+              "p": "Bài viết “children from slum backgrounds do not seem to lag behind ... and in some cases outperform them (e.g. in numeracy and literacy tasks)” — phát hiện bất ngờ"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "literacy and numeracy skills ... are not lower",
+              "p": "do not seem to lag behind ... in numeracy and literacy tasks"
+            },
+            {
+              "q": "surprised researchers",
+              "p": "unanticipated finding"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phát hiện bất ngờ là trẻ ổ chuột không kém, thậm chí giỏi hơn ở một số bài — khớp D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Mức trí tuệ chung tương đương được nói trước đó, không phải điểm “surprised” chính ở đoạn này."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói tuổi chuyển vào ổ chuột ảnh hưởng thành tích."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nói trải nghiệm sống giống nhau, mà nói kết quả học tập bất ngờ."
+            }
+          ]
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "What seemed simple enough to start with triggered an almost obsessive, decade-long journey, marked by a series of obstacles that would have deterred anyone less determined."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kế hoạch tặng cha một quả địa cầu hóa ra là việc gì — chọn A–J:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “was an unexpectedly ______”.",
+              "p": "Bài viết ý tưởng đơn giản “triggered an almost obsessive, decade-long journey, marked by a series of obstacles” — trở thành nhiệm vụ đầy thử thách → G (challenging task)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "unexpectedly",
+              "p": "challenging task"
+            },
+            {
+              "q": "challenging task",
+              "p": "decade-long journey, marked by a series of obstacles"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Món quà sinh nhật biến thành hành trình một thập kỷ đầy chướng ngại — chọn G."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "H",
+              "whyVi": "“Memorable object” mô tả vật quà, không phải bản chất công việc phải làm."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "J",
+      "evidence": {
+        "quoteEn": "marked by a series of obstacles that would have deterred anyone less determined."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bellerby phải vượt qua điều gì trong hành trình làm địa cầu — chọn A–J:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “had to overcome ______”.",
+              "p": "Bài viết hành trình “marked by a series of obstacles” — hàng loạt trở ngại → J (numerous problems)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "overcome",
+              "p": "numerous problems"
+            },
+            {
+              "q": "numerous problems",
+              "p": "a series of obstacles"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“A series of obstacles” = vô số khó khăn — chọn J."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "J"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Rare materials không phải trọng tâm; bài nhấn trở ngại kỹ thuật và quy trình."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "I",
+      "evidence": {
+        "quoteEn": "The first surprise in The Globemakers, Bellerby's account of this impulsive enterprise, is that obtaining such a globe was not simply a matter of a quick online order and a repressed sigh at the shipping costs."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bellerby sớm nhận ra không thể mua địa cầu theo cách nào đơn giản — chọn A–J:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a straightforward ______ would not be possible”.",
+              "p": "Bài viết “not simply a matter of a quick online order” — không thể đặt mua nhanh trên mạng → I (internet purchase)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "straightforward",
+              "p": "internet purchase"
+            },
+            {
+              "q": "internet purchase",
+              "p": "a quick online order"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không thể chỉ đặt mua online — chọn I."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "I"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "D",
+              "whyVi": "Product exchange markets không được nhắc; bài nói đặt hàng trực tuyến."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Bellerby came across shoddy commercial versions designed for school classrooms and genuine antiques in auction houses that would have bust his budget."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trên thị trường có loại địa cầu nào kém chất lượng — chọn A–J:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Some ______ that had been intended for ... were available”.",
+              "p": "Bài viết “shoddy commercial versions designed for school classrooms” — bản thương mại kém chất lượng → C (inferior makes)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Some ______",
+              "p": "inferior makes"
+            },
+            {
+              "q": "inferior makes",
+              "p": "shoddy commercial versions"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Shoddy commercial versions” = sản phẩm kém chất lượng — chọn C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Rare materials không khớp “shoddy commercial versions”."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Bellerby came across shoddy commercial versions designed for school classrooms"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Những bản kém chất lượng đó được làm cho mục đích gì — chọn A–J:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “intended for ______”.",
+              "p": "Bài viết “designed for school classrooms” — dùng trong lớp học → A (educational use)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "intended for",
+              "p": "educational use"
+            },
+            {
+              "q": "educational use",
+              "p": "designed for school classrooms"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Địa cầu thương mại kém được thiết kế cho lớp học — chọn A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "F",
+              "whyVi": "International không liên quan mục đích dùng trong phòng học."
+            }
+          ]
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "Even his trips to Morocco and India, where surely the knowledge of artisan cartographers* had been preserved, drew a blank."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bellerby tìm ở Maroc và Ấn Độ xem còn ai giữ điều gì của nghề vẽ bản đồ thủ công — chọn A–J:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “people might still have the ______”.",
+              "p": "Bài viết “where surely the knowledge of artisan cartographers had been preserved” — kiến thức/nghề của thợ bản đồ → E (necessary skills)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have the ______",
+              "p": "necessary skills"
+            },
+            {
+              "q": "necessary skills",
+              "p": "the knowledge of artisan cartographers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Anh tìm nơi còn giữ kỹ năng làm bản đồ thủ công — chọn E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Rare materials không phải thứ anh đi tìm ở Maroc/Ấn."
+            }
+          ]
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "After all, contrary to stubbornly held popular views of our ancestors' geographical ignorance, we have known that the world is spherical since at least the 6th century BCE."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Quan niệm phổ biến rằng người xưa ít biết địa lý có đúng theo tác giả không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói giả định “people in the past knew very little about geography is correct” (người xưa ít biết địa lý — đúng)",
+              "p": "Bài viết “contrary to stubbornly held popular views of our ancestors' geographical ignorance, we have known that the world is spherical since at least the 6th century BCE” — trái với quan niệm đó"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "people in the past knew very little about geography",
+              "p": "contrary to ... popular views of our ancestors' geographical ignorance"
+            },
+            {
+              "q": "is correct",
+              "p": "we have known that the world is spherical since at least the 6th century BCE"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả bác quan niệm người xưa mù địa lý — từ thế kỷ VI TCN đã biết Trái Đất hình cầu — trái đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "The ancient Greek philosopher Plato in his work Phaedo likened it to a leather ball"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Plato có bị chỉ trích vì nói Trái Đất giống quả bóng da không, theo tác giả:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Plato “was criticised for saying the world was shaped like a leather ball”",
+              "p": "Bài chỉ nêu Plato “likened it to a leather ball” trong Phaedo — không nhắc ai chỉ trích"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "was criticised for saying the world was shaped like a leather ball",
+              "p": "(không được nêu trong bài)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ trích dẫn ví von của Plato, không nói ông bị phê phán."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "the accolade of producing the first recorded globe goes to the ancient Greek philosopher Crates of Mallus, who is said to have made one in around 150 BCE."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Quả địa cầu của Crates of Mallus có phải bản đồ chính xác của thế giới đã biết lúc đó không, theo tác giả:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói quả cầu đó “was an accurate representation of the known world” (mô tả chính xác)",
+              "p": "Bài chỉ nói Crates “producing the first recorded globe” khoảng 150 TCN — không đánh giá độ chính xác"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "was an accurate representation of the known world",
+              "p": "(không được nêu trong bài)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài ghi nhận đây là quả cầu cổ nhất còn lại, không bàn mức độ chính xác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Surely, Bellerby reasoned, a good-quality globe wouldn't be difficult to find."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bellerby có cho rằng mình sẽ dễ tìm được địa cầu làm tốt không, theo tác giả:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Bellerby “assumed he would have few problems locating a well-made globe”",
+              "p": "Bài viết “Surely, Bellerby reasoned, a good-quality globe wouldn't be difficult to find” — anh nghĩ sẽ không khó tìm"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "assumed he would have few problems locating a well-made globe",
+              "p": "a good-quality globe wouldn't be difficult to find"
+            },
+            {
+              "q": "few problems",
+              "p": "wouldn't be difficult to find"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ban đầu anh tin chắc sẽ tìm được địa cầu chất lượng — khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Right at the end of the process, he learnt that the paper had stretched slightly and so the final one overlapped the first by a centimetre (which may not seem a great deal, but when that represents 2 per cent of the Earth's diameter, it's equivalent to obliterating the Himalayas or wiping out Chile)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi Bellerby dán các mảnh gores lên quả cầu, chuyện gì xảy ra:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: anh phát hiện vấn đề bất ngờ (“he became aware of an unexpected issue”)",
+              "p": "Bài viết “Right at the end of the process, he learnt that the paper had stretched slightly and so the final one overlapped the first by a centimetre” — giấy giãn, mảnh cuối chồng lên mảnh đầu"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "became aware of an unexpected issue",
+              "p": "he learnt that the paper had stretched slightly"
+            },
+            {
+              "q": "attach the gores",
+              "p": "the final one overlapped the first by a centimetre"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cuối quy trình anh mới biết giấy giãn gây lệch — vấn đề không lường trước — khớp B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài mô tả quy trình tỉ mỉ, không khuyên làm nhanh."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Lo ngại chất lượng vật liệu không phải điểm chính ở câu này; vấn đề là giấy giãn sau khi dán."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Anh thất vọng nhưng không nói suýt bỏ cả dự án ở bước này."
+            }
+          ]
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Bellerby clearly found a kindred spirit in Martin Behaim. He was the Nuremberg entrepreneur who in 1492 created the Erdapfel, the world's oldest surviving globe, beautifully finished by a workshop of painters and other craftsmen, only to find that the explorer Christopher Columbus had stumbled upon the Americas the very same year, rendering his masterpiece instantly out of date. Something of Bellerby's unflinching ambition is reflected in the even more heroic efforts of the Italian cartographer Vincenzo Coronelli"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người viết nhắc các nhà làm địa cầu xưa vì lý do gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: Bellerby có điểm chung với từng người (“Bellerby had something in common with each of them”)",
+              "p": "Bài viết “found a kindred spirit in Martin Behaim” và “Something of Bellerby's unflinching ambition is reflected in ... Vincenzo Coronelli” — thấy mình đồng điệu với họ"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "something in common with each of them",
+              "p": "found a kindred spirit / unflinching ambition is reflected"
+            },
+            {
+              "q": "other globe makers of the past",
+              "p": "Martin Behaim ... Vincenzo Coronelli"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Reviewer liên hệ Bellerby với các thợ làm cầu xưa qua tinh thần và tham vọng tương đồng — khớp C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không chỉ nói cảm hứng từ một người; bài so sánh với ít nhất hai nhân vật."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nhấn thành tựu của họ ít được biết đến."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói khó khăn của họ có thể tránh được."
+            }
+          ]
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Although a celebration of the revival of an ancient craft, Bellerby's book is also a lament for the fading away of centuries-old traditions. When he embarked on his globemaking odyssey, he struggled to find artisans with the skills to make the right moulds for the globes or foundries that could shape the meridians (the metal frames which girdle globes) in just the right way. Although he finally located the right craftsmen, some simply dropping in, serendipitously, to his workshop (by now in more suitable premises than his back room), many of these have now retired or passed away."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn bảy, điểm nào được nói về Bellerby:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: anh tiếc nuối vì mất đi nhiều kỹ năng làm địa cầu (“He regrets the loss of many globe-making skills”)",
+              "p": "Bài viết sách “is also a lament for the fading away of centuries-old traditions” và nhiều thợ “have now retired or passed away” — nghề cổ đang mai một"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "regrets the loss of many globe-making skills",
+              "p": "lament for the fading away of centuries-old traditions"
+            },
+            {
+              "q": "globe-making skills",
+              "p": "artisans with the skills to make the right moulds"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sách vừa ca ngợi hồi sinh nghề, vừa than thở truyền thống đang mất — khớp D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Một số thợ ghé qua tình cờ, không mô tả quan hệ làm việc lâu dài với nhiều người."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Anh không bàn thiếu quan tâm với nghề thủ công nói chung."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Đoạn nhấn khó tìm thợ và mất dần kỹ năng, không ca ngợi lập kế hoạch cẩn thận."
+            }
+          ]
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "His book, beautifully illustrated with photographs of the various stages of his venture and a few illustrations of historic globes and maps, is hardly a blueprint for commercial success."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người viết nói gì về cuốn sách của Bellerby ở đoạn cuối:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: sách không hướng dẫn cách tạo doanh nghiệp sinh lời (“It does not tell you how to create a profitable business”)",
+              "p": "Bài viết sách “is hardly a blueprint for commercial success” — hầu như không phải cẩm nang kinh doanh thành công"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "does not tell you how to create a profitable business",
+              "p": "hardly a blueprint for commercial success"
+            },
+            {
+              "q": "profitable business",
+              "p": "commercial success"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Reviewer nói thẳng sách không phải bản thiết kế kinh doanh — khớp A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Sách có xen kẽ các nhà làm bản đồ xưa, không “overlooks” họ."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không bàn tương lai của nghề làm địa cầu."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nhấn thiếu chi tiết về khách hàng cá nhân."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

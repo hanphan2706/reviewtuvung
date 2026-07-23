@@ -1,0 +1,2075 @@
+{
+  "pilotId": "cam21-test1",
+  "schemaVersion": 4,
+  "note": "Cam 21 R T1 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The Davies Sisters",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Why we need silence",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Book review: The World of Sugar by Ulbe Bosma",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "mining",
+      "evidence": {
+        "quoteEn": "a Welshman who amassed a fortune in the shipping and mining industries"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ông ngoại hai chị em kiếm được tài sản từ những ngành nghề nào — cần tìm từ còn thiếu bên cạnh transportation:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “came from ______ and transportation businesses”, cần một danh từ chỉ ngành nghề (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“wealth came from ______ and transportation businesses”",
+              "p": "“amassed a fortune in the shipping and mining industries” — vận tải và khai thác mỏ"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "transportation businesses",
+              "p": "shipping"
+            },
+            {
+              "q": "______ (missing industry)",
+              "p": "mining"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài liệt kê shipping và mining — ô trống điền mining."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "mining"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "education",
+      "evidence": {
+        "quoteEn": "Their London school focused on cultural rather than academic study"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điều gì của hai chị em được thiết kế để khơi dậy hứng thú sưu tầm nghệ thuật:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “their ______ was designed to give them an interest in … collecting art”, cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“their ______ was designed to give them an interest in activities such as collecting art”",
+              "p": "“Their London school focused on cultural rather than academic study” — trường ở London nhấn mạnh văn hóa hơn học thuật"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "was designed to give them an interest in collecting art",
+              "p": "education was rigorously geared toward such pursuits / school focused on cultural study"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói giáo dục được định hướng cho các hoạt động văn hóa như sưu tầm — điền education."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "education"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "notes",
+      "evidence": {
+        "quoteEn": "visiting art galleries and making extensive notes on the collections there"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Governess đưa hai chị em đi thăm phòng trưng bày và viết gì dài dòng về những gì họ thấy:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “they took lengthy ______ about the things they saw”, cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“took lengthy ______ about the things they saw in art galleries”",
+              "p": "“making extensive notes on the collections there” — ghi chú chi tiết về các bộ sưu tập"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "took lengthy ______",
+              "p": "making extensive notes"
+            },
+            {
+              "q": "about the things they saw",
+              "p": "on the collections there"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Họ ghi chú kỹ lưỡng khi tham quan phòng trưng bày — điền notes."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "notes"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "journals",
+      "evidence": {
+        "quoteEn": "The sisters' journals reveal their preference for Old Master** paintings"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nguồn nào cho thấy hai chị em thích tranh Old Master dù không mua được nhiều:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “their ______ showed they liked Old Master paintings”, cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“their ______ showed they liked Old Master paintings, but they were expensive to buy”",
+              "p": "“The sisters' journals reveal their preference for Old Master paintings” — nhật ký bộc lộ sở thích"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "showed they liked Old Master paintings",
+              "p": "journals reveal their preference for Old Master paintings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhật ký của hai chị em ghi rõ sở thích Old Master — điền journals."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "journals"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Venice",
+      "evidence": {
+        "quoteEn": "their first purchases of Impressionist art, made in October 1912, were scenes of Venice by the French artist Claude Monet"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Những bức tranh Ấn tượng đầu tiên họ mua miêu tả địa điểm nào:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “showed places in ______”, cần một danh từ riêng chỉ địa danh."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the first Impressionist paintings they bought showed places in ______”",
+              "p": "“first purchases … were scenes of Venice by … Claude Monet” — cảnh Venice của Monet"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "showed places in ______",
+              "p": "scenes of Venice"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bức đầu tiên là cảnh Venice của Monet — điền Venice."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Venice"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "canteen",
+      "evidence": {
+        "quoteEn": "both sisters decided to volunteer at a canteen for troops at Troyes, in northern France"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hai chị em làm việc ở đâu phục vụ binh lính trong Thế chiến I:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “worked in a ______ for soldiers in France”, cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“worked in a ______ for soldiers in France”",
+              "p": "“volunteer at a canteen for troops at Troyes” — tình nguyện tại căn tin cho quân đội"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "for soldiers",
+              "p": "for troops"
+            },
+            {
+              "q": "worked in a ______",
+              "p": "volunteer at a canteen"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Họ tình nguyện tại căn tin phục vụ binh lính ở Troyes — điền canteen."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "canteen"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "friends",
+      "evidence": {
+        "quoteEn": "the fact that they didn't make friends with artists or gallery owners"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hai chị em không được xem là nhà sưu tập điển hình vì sống cô lập và không có ai là nghệ sĩ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “did not have any ______ who were artists”, cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“did not have any ______ who were artists”",
+              "p": "“didn't make friends with artists or gallery owners” — không kết bạn với họa sĩ hay chủ phòng trưng bày"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "did not have any ______ who were artists",
+              "p": "didn't make friends with artists"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói họ không kết bạn với nghệ sĩ — điền friends."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "friends"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Their religious upbringing in rural Wales gave them a deep sense of social responsibility and they chose to use their inheritance for cultural and philanthropic* purposes"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thời thơ ấu có ảnh hưởng tới cách hai chị em quyết định dùng tài sản không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “childhood influenced the way they decided to use their wealth”",
+              "p": "Bài viết “religious upbringing … gave them a deep sense of social responsibility and they chose to use their inheritance for cultural and philanthropic purposes” — nuôi dưỡng tôn giáo tạo ý thức trách nhiệm xã hội và dẫn tới quyết định dùng tiền cho mục đích văn hóa, từ thiện"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "childhood influenced the way they decided to use their wealth",
+              "p": "religious upbringing gave them a deep sense of social responsibility and they chose to use their inheritance"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nuôi dưỡng thuở nhỏ trực tiếp giải thích vì sao họ chọn dùng tiền thừa kế cho mục đích xã hội."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "their early purchases were of the fashionable, safe variety, and included, for example, paintings by the French artist Jean-Baptiste-Camille Corot"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tranh Corot trong bộ sưu tập có được mua từ phòng trưng bày ở Pháp không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói tranh Corot “were purchased from a gallery in France”",
+              "p": "Bài chỉ nói mua tranh Corot và có đi Paris, nhưng không nói tranh Corot mua từ phòng trưng bày Pháp nào"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "purchased from a gallery in France",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có nhắc tranh Corot và chuyến đi Paris, nhưng không nói rõ mua từ phòng trưng bày Pháp."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "We know that Hugh Blaker, as a champion of contemporary French art had a hand in the decision"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hugh Blaker có phản đối quyết định mua tranh Ấn tượng Pháp của hai chị em không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Hugh Blaker “opposed” quyết định mua tranh Ấn tượng Pháp",
+              "p": "Bài viết Hugh Blaker “as a champion of contemporary French art had a hand in the decision” — ủng hộ nghệ thuật Pháp đương đại và góp phần vào quyết định"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Hugh Blaker opposed the decision to buy art by French Impressionists",
+              "p": "champion of contemporary French art had a hand in the decision"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hugh Blaker không phản đối mà còn thúc đẩy hướng sưu tầm Ấn tượng — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "where they became the first works by Cézanne to go on display in a public gallery in Britain"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Triển lãm tranh Cézanne ở Bath có được công chúng yêu thích không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói triển lãm “was very popular with the public”",
+              "p": "Bài chỉ nói tranh Cézanne “became the first works by Cézanne to go on display in a public gallery in Britain” — không nhắc mức độ phổ biến"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "was very popular with the public",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ nêu đây là lần trưng bày Cézanne đầu tiên ở Anh, không nói công chúng có thích hay không."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "By the early 1920s, Gwendoline felt increasingly uncomfortable buying art works when faced with the poverty and social upheaval created by the First World War"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thế chiến I có khiến Gwendoline suy nghĩ lại việc sưu tầm tranh không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “The impact of the First World War encouraged Gwendoline to reconsider her interest in collecting art”",
+              "p": "Bài viết đến đầu những năm 1920 Gwendoline “felt increasingly uncomfortable buying art works when faced with the poverty and social upheaval created by the First World War” — bất ổn xã hội sau chiến tranh khiến bà do dự mua tranh"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "encouraged Gwendoline to reconsider her interest in collecting art",
+              "p": "felt increasingly uncomfortable buying art works when faced with the poverty and social upheaval created by the First World War"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hậu quả chiến tranh khiến bà cảm thấy không thoải mái khi tiếp tục mua tranh — đúng là suy nghĩ lại."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "The sisters collected French Impressionist paintings at a time when such art was routinely ignored by individuals and institutions alike"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hai chị em mua tranh Ấn tượng Pháp vào thời ít người làm vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói họ mua “during a period when very few people were doing so”",
+              "p": "Bài viết “at a time when such art was routinely ignored by individuals and institutions alike” — nghệ thuật ấy thường bị bỏ qua bởi cả cá nhân lẫn tổ chức"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "very few people were doing so",
+              "p": "routinely ignored by individuals and institutions alike"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định tranh Ấn tượng lúc đó bị phớt lờ rộng rãi — khớp ý ít người sưu tầm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "By providing recommendations for quieter buses, reducing noise from roads and also controlling noise from aircraft, they were able to make the city quieter"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu ví dụ về chiến lược giảm tiếng ồn công chúng phải chịu. Đề viết: “examples of strategies to decrease the noise that the public are exposed to”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn có ví dụ chiến lược giảm tiếng ồn cho công chúng",
+              "p": "Đoạn C: London khuyến nghị xe buýt êm hơn, giảm tiếng ồn đường bộ và máy bay; các thành phố khác dùng lớp phủ đường, cây xanh, cấm máy thổi lá xăng, phạt xe chỉnh pô ồn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "strategies to decrease the noise",
+              "p": "recommendations for quieter buses, reducing noise from roads … noise-reducing road coatings … greenery that muffles sound"
+            },
+            {
+              "q": "the public are exposed to",
+              "p": "make the city quieter"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn C liệt kê nhiều biện pháp cụ thể các thành phố đang áp dụng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "with at least 1 in 5 people consistently exposed to levels considered harmful to health"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn có số liệu cho thấy quy mô vấn đề tiếng ồn quá mức. Đề viết: “data indicating the extent of the problem of excessive noise”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần số liệu về mức độ nghiêm trọng của tiếng ồn",
+              "p": "Đoạn B: WHO gọi tiếng ồn là “underestimated threat”; người ở Mumbai, Tokyo, Buenos Aires vượt 40 decibel ban đêm; báo cáo châu Âu: ít nhất 1/5 dân bị phơi nhiễm mức có hại"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "data indicating the extent of the problem",
+              "p": "at least 1 in 5 people consistently exposed to levels considered harmful to health"
+            },
+            {
+              "q": "excessive noise",
+              "p": "far more than the recommended 40 decibels of noise at night"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn B tập trung vào thống kê và cảnh báo y tế."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "Our blood pressure goes up, muscles tense and glands release hormones that prepare us for fight or flight"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn mô tả thay đổi sinh lý khi nghe tiếng ồn bất ngờ. Đề viết: “physiological changes in our bodies when we hear sudden noises”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần mô tả thay đổi sinh lý khi nghe tiếng ồn đột ngột",
+              "p": "Đoạn A: “Our blood pressure goes up, muscles tense and glands release hormones that prepare us for fight or flight” — huyết áp tăng, cơ căng, tuyến tiết hormone phản ứng fight-or-flight"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "physiological changes in our bodies",
+              "p": "blood pressure goes up, muscles tense and glands release hormones"
+            },
+            {
+              "q": "when we hear sudden noises",
+              "p": "loud or unexpected noises get the attention they deserve / our internal chemistry alters in response to them"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn A mô tả phản ứng cơ thể trước tiếng ồn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "participants reported more relaxation and less boredom when they sat quietly in an outdoor garden compared with a completely silent room"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn có bằng chứng môi trường tương đối yên tĩnh có thể tốt hơn hoàn toàn im lặng. Đề viết: “evidence that a relatively quiet environment can be more beneficial than a totally silent one”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần bằng chứng môi trường khá yên tĩnh tốt hơn im lặng hoàn toàn",
+              "p": "Đoạn G: Pfeifer thấy người tham gia “reported more relaxation and less boredom” khi ngồi yên trong vườn ngoài trời “compared with a completely silent room” — vườn yên tĩnh cho kết quả tốt hơn phòng im lặng tuyệt đối"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "relatively quiet environment can be more beneficial",
+              "p": "more relaxation and less boredom … in an outdoor garden"
+            },
+            {
+              "q": "than a totally silent one",
+              "p": "compared with a completely silent room"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thí nghiệm của Pfeifer so sánh vườn yên tĩnh với phòng im lặng hoàn toàn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "breath",
+      "evidence": {
+        "quoteEn": "But it is the ability to focus on the breath that helps people reach a relaxed or meditative state"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo Feinstein, bể float giúp người ta tập trung vào gì để thư giãn và thiền:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “concentrate on their own ______”, cần ONE WORD ONLY."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“concentrate on their own ______, which helps them relax and enables them to meditate”",
+              "p": "“the ability to focus on the breath that helps people reach a relaxed or meditative state” — tập trung vào hơi thở"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "concentrate on their own ______",
+              "p": "focus on the breath"
+            },
+            {
+              "q": "relax and meditate",
+              "p": "reach a relaxed or meditative state"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Feinstein nhấn mạnh tập trung vào hơi thở — điền breath."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "breath"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "questionnaire",
+      "evidence": {
+        "quoteEn": "had them answer a questionnaire prior to and following a flotation session"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "50 người bị stress được yêu cầu hoàn thành gì trước và sau khi dùng bể float:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “were given a ______ to complete before and after”, cần ONE WORD ONLY."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“were given a ______ to complete before and after using a flotation tank”",
+              "p": "“answer a questionnaire prior to and following a flotation session” — trả lời bảng câu hỏi trước và sau phiên float"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "to complete before and after",
+              "p": "prior to and following a flotation session"
+            },
+            {
+              "q": "given a ______",
+              "p": "answer a questionnaire"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thí nghiệm dùng bảng câu hỏi khảo sát — điền questionnaire."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "questionnaire"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "wellbeing",
+      "evidence": {
+        "quoteEn": "alongside an increase in feelings of relaxation and overall wellbeing"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sau một giờ trong bể, người tham gia báo cáo thư giãn và cải thiện điều gì về sức khỏe tổng thể:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “improved general ______”, cần ONE WORD ONLY."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“signs of relaxation and improved general ______”",
+              "p": "“an increase in feelings of relaxation and overall wellbeing” — cảm giác thư giãn và phúc lợi tổng thể tăng lên"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "improved general ______",
+              "p": "increase in … overall wellbeing"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài dùng wellbeing cho sức khỏe/tinh thần tổng thể — điền wellbeing."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "wellbeing"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "depression",
+      "evidence": {
+        "quoteEn": "Float sessions uniquely decreased activity in the default mode network (DMN), a collection of brain regions commonly linked with depression"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Quét não cho thấy hoạt động giảm ở vùng não liên quan tới bệnh gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “parts of the brain associated with ______”, cần ONE WORD ONLY."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“decreased activity in parts of the brain associated with ______”",
+              "p": "“decreased activity in the default mode network (DMN), … commonly linked with depression” — mạng DMN gắn với trầm cảm"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "associated with ______",
+              "p": "commonly linked with depression"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "DMN được bài liên kết với trầm cảm — điền depression."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "depression"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "When people do not want silence, it can be very distressing"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng bị đặt vào môi trường im lặng khi không muốn sẽ rất khó chịu. Đề viết: “It is unpleasant and upsetting for people to be placed in a silent environment against their will”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói im lặng “against their will” (chống ý muốn) sẽ khó chịu",
+              "p": "Ben-Soussan (C): “When people do not want silence, it can be very distressing” — không muốn im lặng thì rất đau khổ"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "against their will / unpleasant and upsetting",
+              "p": "do not want silence … very distressing"
+            },
+            {
+              "q": "silent environment",
+              "p": "silence"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ben-Soussan nhấn mạnh phải tự nguyện — nếu không muốn im lặng sẽ rất khổ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Antonio nói về giảm tiếng ồn đô thị, không bàn việc bị ép im lặng."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Feinstein mô tả trải nghiệm trong bể float, không nói việc bị ép im lặng."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Pfeifer khuyên tiếp cận im lặng từ từ, không nói việc bị ép khiến khổ sở."
+            }
+          ]
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "I expect we will see much more of this in the future"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng xu hướng xây dựng đô thị yên tĩnh hơn sẽ tiếp tục tăng. Đề viết: “The trend towards creating quieter urban locations is likely to increase in the coming years”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói xu hướng thành phố yên tĩnh hơn sẽ tăng trong tương lai",
+              "p": "Antonio (A): “I expect we will see much more of this in the future” — sau khi nói người dân thấy lợi ích của môi trường yên hơn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "likely to increase in the coming years",
+              "p": "we will see much more of this in the future"
+            },
+            {
+              "q": "quieter urban locations",
+              "p": "more quiet environments in their cities"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Antonio dự đoán các thành phố sẽ làm thêm nhiều biện pháp giảm ồn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Feinstein nghiên cứu bể float, không nói xu hướng đô thị."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Ben-Soussan bàn im lặng như liệu pháp cá nhân, không nói chính sách thành phố."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Pfeifer nói im lặng trong đời sống hàng ngày, không dự báo xu hướng đô thị."
+            }
+          ]
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "When you don't have external sensory stimuli coming in, the brain tries to fill the void to make sense of this dark and silent world"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng khi giác quan bị cắt hoàn toàn, não bù đắp bằng cách tạo ảo giác hình ảnh và âm thanh. Đề viết: “When our body's senses are completely deprived of input, our minds compensate for this by creating the illusion of images and sounds”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói não tạo ảo giác hình ảnh và âm thanh khi cắt kích thích bên ngoài",
+              "p": "Feinstein (B): “the brain tries to fill the void” và một số người nghe “subtle humming sounds and visual effects” — não tự bù khi thiếu kích thích"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "senses completely deprived of input",
+              "p": "don't have external sensory stimuli coming in"
+            },
+            {
+              "q": "creating the illusion of images and sounds",
+              "p": "brain tries to fill the void … subtle humming sounds and visual effects"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Feinstein giải thích não tự tạo âm thanh/hình ảnh khi thiếu kích thích."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Antonio nói về tiếng ồn và chính sách thành phố, không bàn não bù đắp cảm giác."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Ben-Soussan nói im lặng nội tâm giúp nhận thức tốt hơn, không nói ảo giác."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Pfeifer so sánh vườn yên tĩnh với phòng im lặng, không nói não tạo ảo giác."
+            }
+          ]
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "You don't need to spend hours in silence … It is likely better to have more frequency of silence for a few minutes at a time"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng chỉ cần một khoảng im lặng ngắn cũng có thể có tác dụng tích cực. Đề viết: “Even a short amount of silent time can have a positive impact”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói thời gian im lặng ngắn vẫn có lợi",
+              "p": "Pfeifer (D): “You don't need to spend hours in silence” và “better to have more frequency of silence for a few minutes at a time” — vài phút mỗi lần đã đủ"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Even a short amount of silent time",
+              "p": "a few minutes at a time"
+            },
+            {
+              "q": "can have a positive impact",
+              "p": "can make a big difference"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Pfeifer khẳng định không cần im lặng hàng giờ — vài phút cũng có ích."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Antonio nói về giảm tiếng ồn đô thị, không bàn thời lượng im lặng cá nhân."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Feinstein mô tả phiên float 90 phút, không nhấn mạnh chỉ cần vài phút."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Ben-Soussan nói im lặng giúp nhận thức tốt hơn, không nói thời lượng ngắn."
+            }
+          ]
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "When we find ways to be quiet, we are not only quiet in our environment, but quiet in our inner selves … This allows us to be more aware of what is happening around us"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng im lặng bên ngoài lẫn bên trong giúp ta ý thức hơn về môi trường và phản ứng phù hợp. Đề viết: “External and internal quietness makes us more conscious of events occurring in our surroundings and helps us react appropriately to these events”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói im lặng bên ngoài và bên trong giúp nhận thức và phản ứng tốt hơn",
+              "p": "Ben-Soussan (C): “quiet in our environment, but quiet in our inner selves” và “more aware of what is happening around us … provide a more adequate response”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "External and internal quietness",
+              "p": "quiet in our environment … quiet in our inner selves"
+            },
+            {
+              "q": "more conscious of events … react appropriately",
+              "p": "more aware of what is happening around us … provide a more adequate response"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ben-Soussan liên kết im lặng nội ngoại với nhận thức và phản ứng phù hợp."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Antonio nói về tiếng ồn đô thị, không bàn im lặng nội tâm."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Feinstein mô tả trải nghiệm trong bể float, không nói im lặng nội tâm giúp phản ứng với môi trường."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Pfeifer nói im lặng ngắn giúp thư giãn, không nhấn mạnh nhận thức môi trường xung quanh."
+            }
+          ]
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "It has also been massively subsidised and sold at artificially low prices on world markets, threatening the livelihood of producers of cane sugar"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người viết bài gợi ý gì về trồng trọt và buôn bán đường ở đoạn đầu:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: đường củ cải đã cạnh tranh hơn trên thị trường quốc tế (“Beet sugar has been made more internationally competitive”)",
+              "p": "Bài viết đường củ cải “massively subsidised and sold at artificially low prices on world markets, threatening the livelihood of producers of cane sugar” — trợ cấp lớn, bán giá thấp nhân tạo, đe dọa người trồng mía"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "made more internationally competitive",
+              "p": "massively subsidised and sold at artificially low prices on world markets"
+            },
+            {
+              "q": "beet sugar",
+              "p": "Beet sugar is grown mainly in Europe and the United States"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn đầu nhấn đường củ cải được trợ cấp và bán rẻ trên thị trường thế giới — khớp B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đoạn không bàn quan hệ quốc tế, mà bàn thị trường và trợ cấp."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không so sánh chất lượng mía và củ cải."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói về địa điểm trồng mới mở rộng sản lượng."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "The sweet-toothed British first bought cane sugar from their own slavery-dependent colonial plantations. Following the abolition of slavery … cane sugar was imported … from places which retained the practice, such as Cuba and Brazil. Towards the end of the 19th century, the British started to import beet sugar from continental Europe"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi bàn thị trường đường ở Anh, người viết nhấn mạnh điều gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: nguồn cung thay đổi theo thời gian (“how the sources used changed over time”)",
+              "p": "Đoạn 2 lần lượt: mía từ thuộc địa phụ thuộc nô lệ → mía từ Cuba/Brazil → đường củ cải từ châu Âu → phát triển ngành củ cải nội địa thế kỷ 20"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how the sources used changed over time",
+              "p": "first bought cane sugar … imported … from Cuba and Brazil … started to import beet sugar … move to develop a national beet sugar industry"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn 2 kể lại sự chuyển dịch nguồn cung qua các giai đoạn — khớp A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Không tập trung vào phát triển nông nghiệp ảnh hưởng thương mại."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nhấn nhu cầu tiêu thụ tăng."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không bàn ủng hộ phương thức trồng đạo đức."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Contrary to popular belief, cane sugar production was never just restricted to large, dedicated plantations owned by rich men"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người viết đang làm gì ở đoạn thứ ba:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: bác bỏ quan niệm sai về trồng mía (“addressing a misconception about the growing of sugar cane”)",
+              "p": "Bài mở đầu “Contrary to popular belief” và cho ví dụ Java: mía trồng cùng lúa, nông dân nhỏ — không chỉ đồn điền lớn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "addressing a misconception",
+              "p": "Contrary to popular belief"
+            },
+            {
+              "q": "about the growing of sugar cane",
+              "p": "cane sugar production was never just restricted to large, dedicated plantations"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn 3 mở bằng “Contrary to popular belief” và đưa ví dụ Java — khớp C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không mô tả phương pháp hiệu quả, mà phản bác quan niệm sai."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không giải thích vì sao đồn điền suy giảm."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không so sánh/đánh giá nhiều cách trồng mía."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "He shows that we could always have done without sugar and that today we have many alternative sources of sweetness"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thông điệp tổng thể của sách Bosma theo người viết là gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: đường là sản phẩm có hại và không cần thiết (“Sugar is a harmful and unnecessary product”)",
+              "p": "Bài kết: Bosma “shows that we could always have done without sugar” và “today we have many alternative sources of sweetness” — luôn có thể không cần đường, giờ còn nhiều lựa chọn thay thế"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "harmful and unnecessary product",
+              "p": "we could always have done without sugar … many alternative sources of sweetness"
+            },
+            {
+              "q": "overall message",
+              "p": "as the consumption of sugar has increased, so has the harm it does"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn cuối nhấn đường không cần thiết và có thể thay thế — khớp A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Không kêu gọi áp lực kinh tế để kiểm soát sản xuất."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không tập trung vào cải thiện điều kiện lao động."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Marketing được nhắc nhưng không phải thông điệp tổng thể của sách."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "H",
+      "evidence": {
+        "quoteEn": "German beet fields employed Polish workers; Mexicans and many others, including Sicilians, were vital to US sugar production"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngành đường lớn ở Đức và Mỹ phụ thuộc vào ai — chọn từ A–I:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “sugar farming depended on 31……… ” (ở Đức và Mỹ)",
+              "p": "Bài viết “German beet fields employed Polish workers; Mexicans and many others, including Sicilians, were vital to US sugar production” — lao động di cư (H: migrant workers)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "depended on 31",
+              "p": "employed Polish workers / Mexicans and many others … were vital"
+            },
+            {
+              "q": "migrant workers (H)",
+              "p": "imported labour has been used for much large-scale production"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả Đức lẫn Mỹ đều dùng lao động nhập cư — chọn H."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "D",
+              "whyVi": "untrained workers không khớp — bài nói lao động nhập cư cụ thể (Ba Lan, Mexico…)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "agricultural developments là tiến bộ kỹ thuật, không phải lao động."
+            }
+          ]
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "this type of sugar production dominated in South Asia and Latin America"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở Nam Á và Mỹ Latin, hình thức nào của sản xuất đường vẫn tiếp tục — chọn từ A–I:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “in South Asia and Latin America, 32……… continued”",
+              "p": "Bài viết “continuity of the use of traditional methods on small farms” và “this type of sugar production dominated in South Asia and Latin America” — canh tác quy mô nhỏ (E: small-scale cultivation)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "32 continued",
+              "p": "traditional methods on small farms … dominated"
+            },
+            {
+              "q": "small-scale cultivation (E)",
+              "p": "small farms"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nam Á và Mỹ Latin vẫn chủ yếu sản xuất quy mô nhỏ — chọn E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "F",
+              "whyVi": "outdated methods quá tiêu cực — bài nói “continuity of traditional methods”, không gọi là lỗi thời."
+            },
+            {
+              "letter": "B",
+              "whyVi": "agricultural developments là tiến bộ mới, không phải hình thức tiếp tục ở Nam Á/Latin."
+            }
+          ]
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "I",
+      "evidence": {
+        "quoteEn": "This is also a history of capitalists and sugar dynasties, as well as corporations that in some cases have remained influential over very long periods"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sản xuất đường còn liên quan tới ai muốn bảo vệ thị trường — chọn từ A–I:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “has also involved 33……… who were eager to protect their markets”",
+              "p": "Bài viết về “capitalists and sugar dynasties, as well as corporations” và “Great firms and great interests” — cá nhân và doanh nghiệp quyền lực (I)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "eager to protect their markets",
+              "p": "interests were consequently protected by trade barriers and subsidies"
+            },
+            {
+              "q": "powerful individuals and businesses (I)",
+              "p": "capitalists and sugar dynasties … corporations … Great firms and great interests"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nhấn các tập đoàn và gia tộc đường muốn bảo vệ thị trường — chọn I."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "I"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "national governments xuất hiện ở câu sau (ảnh hưởng chính trị), không phải ô 33."
+            },
+            {
+              "letter": "C",
+              "whyVi": "less wealthy nations là nạn nhân, không phải người bảo vệ thị trường."
+            }
+          ]
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "a powerful sugar bourgeoisie played a major role in politics and their interests were consequently protected by trade barriers and subsidies"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở Cuba, ngành đường ảnh hưởng lớn tới lĩnh vực nào — chọn từ A–I:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the sugar industry therefore had a major influence on 34……… ” (ở Cuba)",
+              "p": "Bài viết “a powerful sugar bourgeoisie played a major role in politics” — tầng lớp tư sản đường đóng vai trò lớn trong chính trị → chính phủ quốc gia (A: national governments)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "major influence on 34",
+              "p": "played a major role in politics"
+            },
+            {
+              "q": "national governments (A)",
+              "p": "policies of states / politics"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tầng lớp tư sản đường chi phối chính trị — chọn A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "G",
+              "whyVi": "financial controls là biện pháp bảo vệ (câu 35), không phải thứ bị ảnh hưởng ở câu 34."
+            },
+            {
+              "letter": "I",
+              "whyVi": "powerful individuals là chủ thể gây ảnh hưởng, không phải lĩnh vực bị ảnh hưởng."
+            }
+          ]
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "their interests were consequently protected by trade barriers and subsidies"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để bảo vệ lợi ích nhà sản xuất đường, điều gì được thiết lập — chọn từ A–I:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “To support the interests of sugar producers, 35……… were established”",
+              "p": "Bài viết lợi ích “protected by trade barriers and subsidies” — rào cản thương mại và trợ cấp → kiểm soát tài chính (G: financial controls)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "35 were established",
+              "p": "protected by trade barriers and subsidies"
+            },
+            {
+              "q": "financial controls (G)",
+              "p": "trade barriers and subsidies"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Rào cản thương mại và trợ cấp là biện pháp kiểm soát tài chính — chọn G."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "national governments là chủ thể chính trị, không phải biện pháp được thiết lập."
+            },
+            {
+              "letter": "B",
+              "whyVi": "agricultural developments là tiến bộ kỹ thuật, không phải biện pháp bảo hộ thị trường."
+            }
+          ]
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "In the battle for control of the industry, it was inevitably the poor countries which came off worse"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hệ quả của các biện pháp bảo hộ là ai bị thiệt — chọn từ A–I:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “As a result of this, 36……… were penalised”",
+              "p": "Bài viết “it was inevitably the poor countries which came off worse” — các nước nghèo chịu thiệt (C: less wealthy nations)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "were penalised",
+              "p": "came off worse"
+            },
+            {
+              "q": "less wealthy nations (C)",
+              "p": "poor countries"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Các nước nghèo là bên thua cuộc trong cuộc chiến kiểm soát ngành — chọn C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "H",
+              "whyVi": "migrant workers bị bóc lột nhưng không phải đối tượng “bị phạt” do biện pháp bảo hộ thị trường ở câu này."
+            },
+            {
+              "letter": "I",
+              "whyVi": "powerful individuals là bên được bảo vệ, không phải bên bị thiệt."
+            }
+          ]
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "now new techniques, varieties, fertilisers, irrigation systems and much more have turned gleaming white sugar into a ubiquitous chemical"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đường giờ có sẵn số lượng lớn nhờ nhiều tiến bộ nông nghiệp — người viết có đồng ý không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói đường “available in large quantities due to a range of agricultural developments”",
+              "p": "Bài viết “new techniques, varieties, fertilisers, irrigation systems and much more have turned gleaming white sugar into a ubiquitous chemical” — kỹ thuật, giống, phân bón, tưới tiêu… biến đường thành hóa chất phổ biến"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "available in large quantities",
+              "p": "turned … into a ubiquitous chemical"
+            },
+            {
+              "q": "agricultural developments",
+              "p": "new techniques, varieties, fertilisers, irrigation systems"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Người viết liệt kê nhiều tiến bộ nông nghiệp khiến đường trở nên phổ biến — đồng ý với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Once regarded as a luxury, sugar came to be promoted as a valuable source of energy"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Quảng cáo ban đầu tiếp thị đường như hàng xa xỉ — người viết có nói vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “Advertisers initially marketed sugar as a luxury product”",
+              "p": "Bài viết “Once regarded as a luxury, sugar came to be promoted as a valuable source of energy” — từng được xem là xa xỉ, sau được quảng bá là nguồn năng lượng; nhưng không nói cụ thể “advertisers initially marketed” như vậy"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Advertisers initially marketed sugar as a luxury product",
+              "p": "(not explicitly stated — only 'Once regarded as a luxury')"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói đường từng được coi là xa xỉ, nhưng không nói rõ nhà quảng cáo ban đầu tiếp thị như hàng xa xỉ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "It is now widely consumed … and is regarded as a leading cause of obesity"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phát minh syrup ngô fructose cao là phát triển tích cực — người viết có đồng ý không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói phát minh “was a positive development”",
+              "p": "Bài viết HFCS “is regarded as a leading cause of obesity” và nằm trong “worrying new developments in mass sweetening” — được xem là nguyên nhân béo phì, là diễn biến đáng lo"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "was a positive development",
+              "p": "regarded as a leading cause of obesity / worrying new developments"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Người viết gắn HFCS với béo phì và gọi là diễn biến đáng lo — trái với “positive”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "having been adopted in the making of soft drinks and a large number of processed foods"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "HFCS có trong nhiều thực phẩm chế biến — người viết có đồng ý không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói HFCS “is an ingredient in many processed foods”",
+              "p": "Bài viết HFCS “adopted in the making of soft drinks and a large number of processed foods” — được dùng trong nước ngọt và rất nhiều thực phẩm chế biến"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an ingredient in many processed foods",
+              "p": "adopted in the making of soft drinks and a large number of processed foods"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ HFCS có trong nước ngọt và nhiều thực phẩm chế biến — đồng ý với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    }
+  }
+}

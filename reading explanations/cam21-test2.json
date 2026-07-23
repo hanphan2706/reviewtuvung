@@ -1,0 +1,1904 @@
+{
+  "pilotId": "cam21-test2",
+  "schemaVersion": 4,
+  "note": "Cam 21 R T2 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Do animals dream?",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Mapungubwe",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Artificial Intelligence",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "rats",
+      "evidence": {
+        "quoteEn": "researchers compared the brain patterns of rats running through a maze when awake with their brain patterns during REM sleep. They found the patterns were very similar and concluded that the sleeping rats were dreaming about going through the maze."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dòng bảng ngay dưới mục Humans nói về loài vật nào cũng có dấu hiệu giống đang mơ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Ô trống đứng đầu dòng, thay cho tên loài vật → cần một danh từ số nhiều chỉ con vật."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Dòng bảng cần điền tên loài vật, có “similar brain patterns … when active and sleeping”.",
+              "p": "Bài viết: “researchers compared the brain patterns of rats running through a maze when awake with their brain patterns during REM sleep” — so sánh não bộ chuột lúc thức và lúc ngủ mơ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "similar brain patterns were observed when active and sleeping",
+              "p": "brain patterns of rats running through a maze when awake with their brain patterns during REM sleep"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Loài vật được so sánh não lúc thức và lúc ngủ REM chính là chuột — nên đây là từ cần điền."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "rats"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "visual",
+      "evidence": {
+        "quoteEn": "REM sleep activity was high in brain regions involved in processing visual information, especially images related to physical activities such as flying"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi ngủ, bồ câu có hoạt động ở vùng não xử lý loại thông tin gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “deal with ______ input” cần một tính từ mô tả loại thông tin."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “parts of the brain that deal with ______ input”.",
+              "p": "Bài viết: “REM sleep activity was high in brain regions involved in processing visual information” — vùng não xử lý thông tin thị giác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ input",
+              "p": "visual information"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vùng não hoạt động mạnh khi bồ câu ngủ REM là vùng xử lý hình ảnh, liên quan tới việc bay."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "visual"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "half",
+      "evidence": {
+        "quoteEn": "which do not shut down their entire brain when they sleep, but only half of it, keeping the rest awake."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cá voi và cá heo khi ngủ vẫn giữ phần nào của não thức:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “still have ______ their brain awake” cần một từ chỉ tỉ lệ/phần."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “still have ______ their brain awake when they sleep”.",
+              "p": "Bài viết: “do not shut down their entire brain … but only half of it, keeping the rest awake” — chỉ tắt một nửa não."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ their brain awake",
+              "p": "only half of it, keeping the rest awake"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chúng chỉ tắt một nửa não khi ngủ, nửa còn lại vẫn thức."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "half"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "temperature",
+      "evidence": {
+        "quoteEn": "It's thought that they don't experience REM sleep because during REM sleep animals are more vulnerable to extremes of temperature."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vì sao cá voi, cá heo không trải qua REM sleep — liên quan đến độ nhạy với yếu tố gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “sensitivity to ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “as this could affect their sensitivity to ______”.",
+              "p": "Bài viết: “during REM sleep animals are more vulnerable to extremes of temperature” — dễ bị ảnh hưởng bởi nhiệt độ cực đoan."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "sensitivity to ______",
+              "p": "vulnerable to extremes of temperature"
+            },
+            {
+              "q": "as this could affect their sensitivity to ______",
+              "p": "during REM sleep animals are more vulnerable to extremes of temperature"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "REM sleep khiến động vật dễ bị ảnh hưởng bởi nhiệt độ khắc nghiệt."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "temperature"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "vivid",
+      "evidence": {
+        "quoteEn": "suggesting that they may only experience non-REM dreams, which are less vivid."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giấc mơ của cá voi, cá heo (nếu có) được đánh giá là không mấy như thế nào:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “not very ______” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “their dreams are probably not very ______”.",
+              "p": "Bài viết: “they may only experience non-REM dreams, which are less vivid” — giấc mơ non-REM kém sống động."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not very ______",
+              "p": "less vivid"
+            },
+            {
+              "q": "their dreams are probably not very ______",
+              "p": "they may only experience non-REM dreams, which are less vivid"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Giấc mơ non-REM được cho là kém sống động hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vivid"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "It is believed that when events are replayed in dreams, this helps to integrate memories into longer-term storage."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc lặp lại trải nghiệm trong mơ có giúp hình thành trí nhớ lâu dài không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “dreaming about past experiences helps us to create lasting memories of them”.",
+              "p": "Bài viết: “when events are replayed in dreams, this helps to integrate memories into longer-term storage” — sự kiện tái hiện trong mơ giúp đưa trí nhớ vào lưu trữ dài hạn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "helps us to create lasting memories",
+              "p": "helps to integrate memories into longer-term storage"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định trực tiếp việc mơ lại sự kiện giúp lưu trí nhớ dài hạn — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "We are quick to interpret the twitching limbs and quiet barks of sleeping dogs, but the truth is that we don't know if there is an internal experience of chasing rabbits that comes along with that."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hiện nay ta đã biết được loại giấc mơ mà một con chó đang trải qua chưa:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “it is now possible to tell what type of dream a dog is having”.",
+              "p": "Bài viết: “we don't know if there is an internal experience of chasing rabbits that comes along with that” — ta không biết chó có thực sự trải nghiệm mơ đuổi thỏ hay không."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "possible to tell what type of dream a dog is having",
+              "p": "we don't know if there is an internal experience"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ ta không biết trải nghiệm nội tâm của chó — ngược với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "In 2019, while making a documentary, David Scheel of Alaska Pacific University in the USA housed an octopus named Heidi in a tank in his living room."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bộ phim tài liệu của David Scheel có tạo ảnh hưởng tới các nghiên cứu khác về giấc ngủ của mực không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: phim “was influential on other research into the sleeping patterns of octopuses”.",
+              "p": "Bài chỉ kể Scheel làm phim và quan sát Heidi mơ — không nhắc gì đến việc phim ảnh hưởng tới các nghiên cứu khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "influential on other research",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ mô tả sự việc với Heidi, không so sánh hay nói về ảnh hưởng của bộ phim đến nghiên cứu khác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Costello, as the octopus was called, thrashed around, extended his mantle as if trying to make himself look bigger, and squirted ink as though he were being attacked by a predator."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong lúc ngủ, mực Costello có phản ứng như thể đang đi săn không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: Costello “reacted as if it was hunting”.",
+              "p": "Bài viết: Costello “squirted ink as though he were being attacked by a predator” — phản ứng như đang bị kẻ săn mồi tấn công, tức tự vệ chứ không phải đi săn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "as if it was hunting",
+              "p": "as though he were being attacked by a predator"
+            },
+            {
+              "q": "reacted as if it was hunting",
+              "p": "squirted ink as though he were being attacked by a predator"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hành động của Costello giống như đang bị tấn công (phòng thủ), không phải đang săn mồi — ngược với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "He argues that as well as outward behaviour, brain imaging is needed to show that the octopuses are replaying sequences of activities from their waking lives in dreams."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Scheel có cho rằng cần nghiên cứu thêm về giấc mơ của mực không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: Scheel “believes more research into octopuses' dreams should be carried out”.",
+              "p": "Bài viết: nghiên cứu hiện “is only based on one animal”, và ông “argues that … brain imaging is needed” — cần thêm bằng chứng như chụp ảnh não."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more research … should be carried out",
+              "p": "brain imaging is needed to show that"
+            },
+            {
+              "q": "believes more research into octopuses' dreams should be carried out",
+              "p": "is only based on one animal"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Scheel nói nghiên cứu hiện tại mới dựa trên một cá thể và cần thêm dữ liệu — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "The trouble is that we will never be able to experience any animal's dreams. That goes for other humans' dreams too."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Con người có thể sớm chia sẻ được giấc mơ của nhau không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “we may soon be able to share the dreams of other human beings”.",
+              "p": "Bài viết: “we will never be able to experience any animal's dreams. That goes for other humans' dreams too” — khẳng định KHÔNG BAO GIỜ, không phải “sắp”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may soon be able to share",
+              "p": "will never be able to experience"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài dùng “never” — trái ngược hoàn toàn với ý “sẽ sớm làm được” trong đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "For example, vision is the dominant sense for many humans, and so our dreams are heavily visual too. Dogs primarily navigate the world using smell while spiders rely much more on vibrations."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thính giác có phải là phần quan trọng trong giấc mơ của một số loài vật không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “hearing may be an important part of the dreams of some animals”.",
+              "p": "Bài chỉ nhắc thị giác (con người), khứu giác (chó) và cảm nhận rung động (nhện) — không đề cập thính giác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "hearing",
+              "p": "(not mentioned; passage lists vision, smell, vibrations)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài liệt kê các giác quan khác nhưng không nói gì về thính giác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "It is likely that dreaming has served multiple purposes since the first complex animals evolved. And if this is the case, it is possible that better understanding of these purposes might shed light on the true purpose of our own dreams."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sự quan tâm tới lý do vì sao con người mơ có tăng mạnh gần đây không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “interest in the reasons why humans dream has increased greatly in recent times”.",
+              "p": "Bài chỉ kết luận rằng hiểu thêm mục đích giấc mơ động vật có thể giúp hiểu giấc mơ con người — không nói gì về mức độ quan tâm tăng lên gần đây."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "has increased greatly in recent times",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có thông tin nào về xu hướng quan tâm tăng theo thời gian."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "The figures may have been used in ceremonies as offerings to ancestors, but their precise function is not known."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói tới việc không rõ mục đích thật của một số hiện vật. Đề viết: “a mention of the uncertainty regarding the purpose of certain objects”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn có ý “uncertainty regarding the purpose of certain objects”.",
+              "p": "Đoạn E: “The figures may have been used in ceremonies as offerings to ancestors, but their precise function is not known” — không rõ chức năng chính xác của các tượng nhỏ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "uncertainty regarding the purpose of certain objects",
+              "p": "their precise function is not known"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn E là đoạn duy nhất nói rõ chức năng của các bức tượng nhỏ chưa được xác định."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "a situation that may have been brought to a crisis point by a series of droughts."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói tới khả năng một yếu tố khí hậu khiến khó khăn của Mapungubwe thêm nghiêm trọng. Đề viết: “the likelihood that a climatic factor increased the problems Mapungubwe faced”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn có ý “a climatic factor increased the problems Mapungubwe faced”.",
+              "p": "Đoạn G: “a situation that may have been brought to a crisis point by a series of droughts” — một loạt hạn hán có thể đã đẩy tình hình tới điểm khủng hoảng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a climatic factor increased the problems",
+              "p": "brought to a crisis point by a series of droughts"
+            },
+            {
+              "q": "a climatic factor increased the problems Mapungubwe faced",
+              "p": "a situation that may have been brought to a crisis point by a series of droughts"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hạn hán (yếu tố khí hậu) được nêu là nguyên nhân khiến khủng hoảng thêm trầm trọng, đúng ở đoạn G."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "There were some grander residences dotted around the outskirts of Babandyanalo, and these probably belonged to male relatives of the king."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới nơi người ta cho là các thành viên trong gia đình vua đã sinh sống. Đề viết: “a mention of the location where members of the king's family are thought to have lived”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về nơi ở của người thân nhà vua.",
+              "p": "Đoạn C: “There were some grander residences dotted around the outskirts of Babandyanalo, and these probably belonged to male relatives of the king” — nhà ở lớn hơn ở ngoại vi Babandyanalo có thể là của người thân nam giới của vua."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the location where members of the king's family are thought to have lived",
+              "p": "grander residences … probably belonged to male relatives of the king"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn C là đoạn duy nhất chỉ rõ nơi ở khả dĩ của người thân nhà vua."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "who, in turn, traded with merchants travelling from India by sea."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới những người mang hàng hoá tới bằng đường biển. Đề viết: “a reference to people who brought goods by ship”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn có ý “people who brought goods by ship”.",
+              "p": "Đoạn D: “traded with merchants travelling from India by sea” — thương nhân đi tàu biển từ Ấn Độ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "people who brought goods by ship",
+              "p": "merchants travelling from India by sea"
+            },
+            {
+              "q": "people who brought goods by ship",
+              "p": "traded with merchants travelling from India by sea"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn D nói rõ về thương nhân đi đường biển từ Ấn Độ mang hàng tới."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "The total population of Mapungubwe at its peak in the mid-13th century was around 5,000 people."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn ước tính quy mô mà cộng đồng Mapungubwe đạt tới. Đề viết: “an estimate of the size to which the Mapungubwe community grew”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn có ý “an estimate of the size … community grew”.",
+              "p": "Đoạn B: “The total population of Mapungubwe at its peak … was around 5,000 people” — ước tính khoảng 5.000 người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an estimate of the size to which the community grew",
+              "p": "total population … was around 5,000 people"
+            },
+            {
+              "q": "an estimate of the size … community grew",
+              "p": "The total population of Mapungubwe at its peak … was around 5,000 people"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn B đưa ra con số cụ thể về dân số ở thời kỳ đỉnh điểm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "cattle herding and other types of farming brought plenty of food and a surplus that could be traded for needed goods."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới việc nông sản được đem đổi lấy những thứ khác. Đề viết: “a mention of agricultural produce being exchanged for other items”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn có ý “agricultural produce being exchanged for other items”.",
+              "p": "Đoạn A: “cattle herding and other types of farming brought plenty of food and a surplus that could be traded for needed goods” — sản phẩm nông nghiệp dư thừa được đem trao đổi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "agricultural produce being exchanged for other items",
+              "p": "a surplus that could be traded for needed goods"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn A nói rõ nông sản dư được trao đổi lấy hàng hoá cần thiết."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "B",
+      "answerPair": [
+        20,
+        21
+      ],
+      "correctLetters": [
+        "B",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "These objects were all found at the royal burial site and date to c. 1150."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai thông tin đúng mà tác giả nêu về vàng và Mapungubwe:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý B: hiện vật vàng được đặt gần nơi chôn cất các vua Mapungubwe.",
+              "p": "Bài viết: “These objects were all found at the royal burial site and date to c. 1150” — các hiện vật vàng đều được tìm thấy tại khu chôn cất hoàng gia."
+            },
+            {
+              "q": "Ý D: cách trang trí vàng ở Mapungubwe cũng được thực hiện ở một vương quốc khác.",
+              "p": "Bài viết: “A type of decoration, found nowhere else except Great Zimbabwe, involved the crafting of gold into small rectangular sheets and carving geometrical patterns into it” — kiểu trang trí này chỉ có ở Mapungubwe và Great Zimbabwe."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "items of gold were placed close to where kings were buried",
+              "p": "found at the royal burial site"
+            },
+            {
+              "q": "the way gold was decorated was also practised in another kingdom",
+              "p": "found nowhere else except Great Zimbabwe"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả B và D đều được bài nêu rõ bằng chứng cụ thể."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B và D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài chỉ nói vàng bắt đầu có giá trị nội tại (không phải tiền tệ) — không nói ai dùng hay không dùng vàng làm phương tiện thanh toán."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Cây trượng (sceptre) chỉ được nói là “may have been” — không khẳng định đó là hiện vật giá trị nhất."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Bài không nói nghề chế tác vàng có được coi trọng như một nghề danh giá hay không."
+            }
+          ]
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "D",
+      "answerPair": [
+        20,
+        21
+      ],
+      "correctLetters": [
+        "B",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "A type of decoration, found nowhere else except Great Zimbabwe, involved the crafting of gold into small rectangular sheets and carving geometrical patterns into it."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 20–21 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý D: cách trang trí vàng ở Mapungubwe cũng được thực hiện ở một vương quốc khác.",
+              "p": "Bài viết: “found nowhere else except Great Zimbabwe” — kiểu trang trí này chỉ xuất hiện ở Mapungubwe và Great Zimbabwe."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the way gold was decorated in Mapungubwe was also practised in another kingdom",
+              "p": "found nowhere else except Great Zimbabwe"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý D; đi cùng B trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần loại đáp án ở câu 20."
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "prosperity",
+      "evidence": {
+        "quoteEn": "is another indicator of the prosperity of Mapungubwe society."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Số lượng gốm được làm chuyên nghiệp cho thấy điều gì về cộng đồng Mapungubwe?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “community's ______ is indicated by” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “The Mapungubwe community's ______ is indicated by the amount of professionally made pottery”.",
+              "p": "Bài viết: “is another indicator of the prosperity of Mapungubwe society” — dấu hiệu của sự thịnh vượng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "community's ______",
+              "p": "prosperity of Mapungubwe society"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Gốm chuyên nghiệp là dấu hiệu của sự thịnh vượng — từ cần điền lấy trực tiếp từ bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "prosperity"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "whistles",
+      "evidence": {
+        "quoteEn": "There are also ceramic discs, and whistles."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài đĩa gốm tròn, còn tìm thấy vật gì khác bằng gốm?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Nằm trong danh sách liệt kê nối bằng dấu phẩy → cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “round ceramic objects, ______ and figures of various animals”.",
+              "p": "Bài viết: “There are also ceramic discs, and whistles” — có cả đĩa gốm và sáo/tù và gốm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "round ceramic objects, ______",
+              "p": "ceramic discs, and whistles"
+            },
+            {
+              "q": "round ceramic objects, ______ and figures of various animals",
+              "p": "There are also ceramic discs, and whistles"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sau “ceramic discs” (đĩa gốm tròn), bài liệt kê tiếp “whistles” — từ cần điền."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "whistles"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "bodies",
+      "evidence": {
+        "quoteEn": "small figures of highly stylised humans with elongated bodies and short limbs have been found."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các mô hình người có phần nào trên cơ thể bị kéo dài ra?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “stretched ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “models of people with stretched ______”.",
+              "p": "Bài viết: “highly stylised humans with elongated bodies and short limbs” — thân hình kéo dài, chân tay ngắn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "stretched ______",
+              "p": "elongated bodies"
+            },
+            {
+              "q": "models of people with stretched ______",
+              "p": "highly stylised humans with elongated bodies and short limbs"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Elongated bodies” (thân hình kéo dài) ứng với “stretched ______” trong đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "bodies"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "ancestors",
+      "evidence": {
+        "quoteEn": "The figures may have been used in ceremonies as offerings to ancestors, but their precise function is not known."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các hiện vật này có thể được dùng trong lễ nghi để tôn vinh ai?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “to honour ______” cần một danh từ, thường số nhiều, chỉ đối tượng được tôn vinh."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “ceremonies to honour ______”.",
+              "p": "Bài viết: “used in ceremonies as offerings to ancestors” — làm vật cúng tổ tiên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "to honour ______",
+              "p": "offerings to ancestors"
+            },
+            {
+              "q": "ceremonies to honour ______",
+              "p": "used in ceremonies as offerings to ancestors"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói các hiện vật có thể là đồ cúng tổ tiên trong lễ nghi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ancestors"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "jewellery",
+      "answerAlternatives": [
+        "jewelry"
+      ],
+      "evidence": {
+        "quoteEn": "Other discoveries include small jewellery items made from locally sourced copper."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài các hiện vật trên, người ta còn tìm thấy vật gì làm từ kim loại địa phương?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “pieces of ______ made from a local metal” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “pieces of ______ made from a local metal”.",
+              "p": "Bài viết: “small jewellery items made from locally sourced copper” — đồ trang sức nhỏ làm từ đồng khai thác tại chỗ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "pieces of ______ made from a local metal",
+              "p": "small jewellery items made from locally sourced copper"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đồng là kim loại địa phương, và các vật làm từ đồng đó là đồ trang sức (jewellery)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "jewellery"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "In many countries in the West, hysteria about the future of artificial intelligence (AI) is everywhere."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn văn đầu tiên, tác giả đang làm gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: mô tả cách công chúng nhìn nhận AI hiện nay.",
+              "p": "Bài viết: “hysteria about the future of artificial intelligence (AI) is everywhere” và “Just looking at the media headlines, you might think that we are already living in a future where AI has infiltrated every aspect of society” — mô tả ấn tượng công chúng có được từ truyền thông, không phải nhận định riêng của tác giả."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "describing a public perception of AI",
+              "p": "hysteria … is everywhere … you might think"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn văn dùng từ “hysteria” và “you might think” để chỉ cách người ta (qua truyền thông) đang nhìn nhận AI, chứ không phải tác giả tự đưa ra dự đoán hay đánh giá lợi ích."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đoạn không dự đoán tác động tương lai của AI, mà nói về ấn tượng hiện tại từ truyền thông."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Lợi ích (chữa bệnh, sáng tạo…) chỉ được nhắc như ví dụ tin tức giật gân, không phải trọng tâm đoạn."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Đoạn nói về cảm nhận, ấn tượng của công chúng, chứ không khẳng định mức độ ảnh hưởng thực tế của AI."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "this mindset actually jeopardises the value of machine intelligence by disregarding important AI safety principles and setting unrealistic expectations about what AI can really do for humanity."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi bàn về ‘AI solutionism’ ở đoạn hai, tác giả đang làm gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: chỉ ra một rủi ro liên quan.",
+              "p": "Bài viết: “this mindset actually jeopardises the value of machine intelligence by disregarding important AI safety principles” — tư duy này gây nguy hại vì bỏ qua nguyên tắc an toàn AI."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "points out a risk involved",
+              "p": "jeopardises the value of machine intelligence by disregarding important AI safety principles"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả nhấn mạnh việc bỏ qua nguyên tắc an toàn AI và đặt kỳ vọng phi thực tế chính là một rủi ro của tư duy AI solutionism."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Nguồn gốc của tư duy này (Silicon Valley) được nói ở đoạn sau, không phải đoạn này."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Đoạn này không nêu tên những người ủng hộ chính của AI solutionism."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Đoạn tập trung vào mặt nguy hại hơn là cân đối ưu và nhược điểm."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "many politicians proclaim the transformative effects of the coming 'AI revolution', they fail to realise the complexity around deploying advanced machine learning systems in the real world."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn bốn, tác giả cho rằng nhiều chính trị gia có thể như thế nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: không nhận ra những khó khăn khi triển khai các sáng kiến AI quốc gia.",
+              "p": "Bài viết: “they fail to realise the complexity around deploying advanced machine learning systems in the real world” — họ không nhận ra sự phức tạp khi triển khai thực tế."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "be unaware of the challenges of implementing national AI initiatives",
+              "p": "fail to realise the complexity around deploying advanced machine learning systems"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ chính trị gia “fail to realise the complexity” khi triển khai AI — đúng ý “không nhận ra khó khăn”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Ngược lại, họ đề cao quá mức tiềm năng AI chứ không phải chưa thấy hết tiềm năng."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói họ hiểu lầm chức năng của lĩnh vực machine-learning."
+            },
+            {
+              "letter": "D",
+              "whyVi": "“Compete in a race” chỉ mô tả hành động của chính phủ, không phải trọng tâm nhận định về nhận thức của chính trị gia trong câu hỏi."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "adding a neural network to a system of government does not mean it will be instantaneously more inclusive or fair."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhiều chính trị gia tin rằng chỉ cần thêm mạng nơ-ron là sẽ tạo ra giải pháp và thúc đẩy điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “produce solutions and promote ______”.",
+              "p": "Bài viết: “adding a neural network to a system of government does not mean it will be instantaneously more inclusive or fair” — không tự nhiên khiến hệ thống công bằng hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "promote ______",
+              "p": "more inclusive or fair"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Fair” (công bằng) tương ứng với “equality” trong danh sách từ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "the public sector typically does not have the appropriate data infrastructure to support advanced machine learning."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khu vực công thiếu điều gì để quản lý lượng dữ liệu khổng lồ cần cho AI?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “have not set up the necessary ______ to manage the huge amount of data”.",
+              "p": "Bài viết: “does not have the appropriate data infrastructure to support advanced machine learning” — thiếu hạ tầng dữ liệu phù hợp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the necessary ______",
+              "p": "appropriate data infrastructure"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Data infrastructure” (hạ tầng dữ liệu) tương ứng với “framework” trong danh sách từ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "I",
+      "evidence": {
+        "quoteEn": "data is spread across different government departments that each require special permissions to be accessed."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mỗi người liên quan cần có gì để truy cập dữ liệu nằm rải rác ở các bộ phận khác nhau?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “each person involved needs ______ to access the relevant data”.",
+              "p": "Bài viết: “each require special permissions to be accessed” — cần được cấp phép đặc biệt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "needs ______",
+              "p": "require special permissions"
+            },
+            {
+              "q": "each person involved needs ______ to access the relevant data",
+              "p": "each require special permissions to be accessed"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Special permissions” (được cấp phép) tương ứng với “approval” trong danh sách từ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "I"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "the public sector typically lacks the human talent with the right technological capabilities to fully reap the benefits of machine intelligence."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vấn đề chính là ít nhân viên khu vực công có gì để khai thác hết lợi ích của AI?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “few public sector employees have the ______ to take full advantage of machine intelligence”.",
+              "p": "Bài viết: “lacks the human talent with the right technological capabilities” — thiếu nhân lực có năng lực công nghệ phù hợp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have the ______",
+              "p": "human talent with the right technological capabilities"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Technological capabilities” (năng lực công nghệ) tương ứng với “skills” trong danh sách từ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "human experts found it hard to trust the machine."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngành y có ít niềm tin vào điều gì của chương trình AI, khiến nó bị bỏ dùng?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “had little faith in its ______”.",
+              "p": "Bài viết: “human experts found it hard to trust the machine” — chuyên gia khó tin tưởng máy."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "little faith in its ______",
+              "p": "hard to trust the machine"
+            },
+            {
+              "q": "had little faith in its ______",
+              "p": "human experts found it hard to trust the machine"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Trust” (tin tưởng) tương ứng với “reliability” (độ tin cậy) trong danh sách từ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "The system was found to amplify structural racial discrimination and was later abandoned."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Toà án Mỹ bỏ thuật toán khi phát hiện nó phản chiếu và khuếch đại điều gì có sẵn trong ngành luật?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “reflected and magnified the existing ______ within the legal profession”.",
+              "p": "Bài viết: “found to amplify structural racial discrimination” — khuếch đại nạn phân biệt chủng tộc có hệ thống."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the existing ______",
+              "p": "structural racial discrimination"
+            },
+            {
+              "q": "reflected and magnified the existing ______ within the legal profession",
+              "p": "found to amplify structural racial discrimination"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Discrimination” (phân biệt) tương ứng với “prejudices” (định kiến) trong danh sách từ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Stuart Russell, a professor of computer science at the University of California, Berkeley, has long advocated a more sensible and realistic approach that focuses on simple everyday applications of AI instead of the hypothetical takeover by super-intelligent robots."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề xuất của Stuart Russell về việc dùng AI có phi thực tế không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Stuart Russell's proposals regarding the use of AI are impractical”.",
+              "p": "Bài viết: Russell “advocated a more sensible and realistic approach that focuses on simple everyday applications of AI” — ông đề xuất cách tiếp cận hợp lý, thực tế."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "are impractical",
+              "p": "a more sensible and realistic approach"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài mô tả đề xuất của Russell là hợp lý và thực tế — ngược với ý “phi thực tế” trong đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Rodney Brooks, professor of robotics at Massachusetts Institute of Technology, writes that 'almost all innovations in robotics and AI take far, far, longer to be really widely deployed than people in the field and outside the field imagine'."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Quan điểm của Rodney Brooks có bị những người ủng hộ AI phản đối một cách bất công không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: quan điểm của Brooks “has attracted unfair criticism from supporters of AI”.",
+              "p": "Bài chỉ trích dẫn lời Brooks về việc đổi mới AI/robot luôn mất nhiều thời gian hơn người ta tưởng — không nhắc gì đến việc quan điểm này bị chỉ trích."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "attracted unfair criticism",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ trích dẫn quan điểm của Brooks, không đề cập việc quan điểm đó bị ai phản đối."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Still, AI security remains an often overlooked topic when machine learning systems are installed."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngày nay, việc bảo vệ hệ thống AI luôn được tính đến khi thiết lập chúng?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “the need to protect AI systems is always taken into account when they are set up”.",
+              "p": "Bài viết: “AI security remains an often overlooked topic when machine learning systems are installed” — an ninh AI vẫn thường bị bỏ qua."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "is always taken into account",
+              "p": "remains an often overlooked topic"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói an ninh AI thường bị bỏ qua — trái với ý “luôn được tính đến” trong đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "we need to have a discussion about AI ethics and the distrust that many people have towards machine learning."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để hưởng lợi từ AI và giảm thiểu tác hại, ta có cần tìm hiểu những lo ngại của người dân về việc dùng AI không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “we have to explore people's concerns about its use”.",
+              "p": "Bài viết: “we need to have a discussion about AI ethics and the distrust that many people have towards machine learning” — cần thảo luận về đạo đức AI và sự nghi ngờ của nhiều người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "explore people's concerns about its use",
+              "p": "the distrust that many people have towards machine learning"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định cần bàn về sự nghi ngờ, lo ngại của công chúng để tận dụng lợi ích và giảm hại của AI — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "These examples demonstrate that there is no AI solution for everything. Using AI simply for the sake of AI may not always be productive or useful, and not every issue is best addressed by applying machine intelligence to it."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tiêu đề phụ nào phù hợp nhất cho Reading Passage 3?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: Vì sao AI có thể không phải là câu trả lời cho mọi vấn đề của chúng ta.",
+              "p": "Bài kết: “there is no AI solution for everything … not every issue is best addressed by applying machine intelligence to it” — không phải vấn đề nào cũng nên dùng AI."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "why AI may not be the answer to our problems",
+              "p": "there is no AI solution for everything"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Toàn bài phản biện việc kỳ vọng quá mức vào AI, kết luận rằng AI không phải giải pháp cho mọi việc — khớp với tiêu đề B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không tập trung hướng dẫn cách tận dụng tối đa AI, mà phản biện sự kỳ vọng thái quá."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nói chính phủ không nên đầu tư vào AI, chỉ cảnh báo cách tiếp cận thiếu thực tế."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không chứng minh AI cải thiện hiệu quả khu vực công — ngược lại còn chỉ ra nhiều rào cản."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

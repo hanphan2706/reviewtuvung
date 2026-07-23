@@ -1,0 +1,1973 @@
+{
+  "pilotId": "cam21-test3",
+  "schemaVersion": 4,
+  "note": "Cam 21 R T3 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Saving the saiga",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "The problems of getting around the city of Dar es Salaam",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Rethinking the Past",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "dust",
+      "evidence": {
+        "quoteEn": "The swollen nostrils of the nose serve several purposes: they filter out dust and cool the blood during hot, dry summers"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mũi to của saiga giúp lọc bỏ thứ gì ra khỏi không khí — cần tìm đúng từ đó trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “keep ______ out”, chỗ trống cần một danh từ chỉ thứ bị ngăn/lọc lại."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“keep ______ out” (giữ ... ở ngoài)",
+              "p": "“they filter out dust” — lọc bụi ra ngoài"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "keep ______ out",
+              "p": "filter out dust"
+            },
+            {
+              "q": "keep",
+              "p": "filter ... out"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mũi sưng của saiga có tác dụng đầu tiên là lọc bụi — từ cần điền là dust."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "dust"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "blood",
+      "evidence": {
+        "quoteEn": "they filter out dust and cool the blood during hot, dry summers"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vào mùa hè, mũi saiga giúp hạ nhiệt độ của thứ gì trong cơ thể — điền từ đó:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the temperature of its ______”, cần một danh từ chỉ chất/bộ phận trong cơ thể."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“lower the temperature of its ______ in summer”",
+              "p": "“cool the blood during hot, dry summers” — làm mát máu vào mùa hè nóng khô"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lower the temperature of its ______",
+              "p": "cool the blood"
+            },
+            {
+              "q": "lower the temperature of its ______ in summer",
+              "p": "cool the blood during hot, dry summers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mũi giúp hạ nhiệt độ máu vào mùa hè — điền blood."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "blood"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "coat",
+      "evidence": {
+        "quoteEn": "a heavy winter coat that the saiga sheds when the weather warms up"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Saiga mọc một lớp gì dày vào mùa đông rồi rụng khi sang xuân — tìm từ trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “grows a thick ______ in winter”, cần một danh từ chỉ lớp lông/áo khoác tự nhiên."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“grows a thick ______ in winter, which it loses in spring”",
+              "p": "“a heavy winter coat that the saiga sheds when the weather warms up”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "grows a thick ______",
+              "p": "a heavy winter coat"
+            },
+            {
+              "q": "loses in spring",
+              "p": "sheds when the weather warms up"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Lớp lông dày mùa đông được bài gọi là coat — điền coat."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "coat"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "horns",
+      "evidence": {
+        "quoteEn": "their horns are highly prized by traditional medicine practitioners"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nạn săn trộm nhắm vào saiga đực chủ yếu vì bộ phận nào của chúng — điền từ đó:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “for the ______ of male saiga”, cần một danh từ số nhiều chỉ bộ phận cơ thể."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“poaching, especially for the ______ of male saiga”",
+              "p": "“Male saiga are a particular target, because their horns are highly prized by traditional medicine practitioners”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "especially for the ______ of male saiga",
+              "p": "their horns are highly prized"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sừng (horns) của saiga đực bị săn lùng nhiều nhất — điền horns."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "horns"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "habitat",
+      "evidence": {
+        "quoteEn": "Another threat to the survival of the saiga is loss of habitat, as a result of agricultural expansion and human settlement."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc mở rộng nông trại và khu dân cư đã làm thu hẹp thứ gì của saiga — điền từ đó:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the size of the saiga's ______”, cần một danh từ chỉ nơi sinh sống."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“reduction in the size of the saiga's ______”",
+              "p": "“Another threat to the survival of the saiga is loss of habitat, as a result of agricultural expansion and human settlement”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reduction in the size of the saiga's ______",
+              "p": "loss of habitat"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài gọi đây là mất môi trường sống — điền habitat."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "habitat"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "routes",
+      "evidence": {
+        "quoteEn": "Physical barriers such as railways, pipelines and fences can block the seasonal migration routes of this transboundary species."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đường sắt, ống dẫn, hàng rào đã chặn mất thứ gì mà saiga dùng để di cư — điền từ đó:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the ______ which they use for migration”, cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“loss of access to the ______ which they use for migration”",
+              "p": "“Physical barriers ... can block the seasonal migration routes of this transboundary species”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ which they use for migration",
+              "p": "seasonal migration routes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Các tuyến di cư (routes) bị chặn — điền routes."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "routes"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "streams",
+      "evidence": {
+        "quoteEn": "many of the smaller streams that the species normally depended on have dried up and vanished"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Biến đổi khí hậu khiến thứ gì mà saiga từng phụ thuộc biến mất — điền từ đó:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the disappearance of ______ which the saiga relied on”, cần một danh từ số nhiều chỉ nguồn nước."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“causing the disappearance of ______ which the saiga relied on”",
+              "p": "“many of the smaller streams that the species normally depended on have dried up and vanished”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the disappearance of ______",
+              "p": "have dried up and vanished"
+            },
+            {
+              "q": "relied on",
+              "p": "depended on"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Các dòng suối nhỏ (streams) mà saiga phụ thuộc đã cạn — điền streams."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "streams"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "This country is estimated to be home to well over 90% of the global saiga population, with Russia, Mongolia and Uzbekistan accounting for the rest."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngày nay saiga có được phân bố đều ở bốn nước Trung Á hay không — xem lại số liệu trong bài:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói số lượng saiga “distributed evenly” (phân bố đều) trên bốn nước Kazakhstan, Nga, Mông Cổ, Uzbekistan",
+              "p": "Bài viết saiga “largely confined to a single country: Kazakhstan” với “well over 90%” — gần như chỉ tập trung ở một nước, ba nước còn lại chia nhau phần rất nhỏ"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "distributed evenly across four nations",
+              "p": "well over 90% of the global saiga population ... Russia, Mongolia and Uzbekistan accounting for the rest"
+            },
+            {
+              "q": "distributed evenly",
+              "p": "largely confined to a single country: Kazakhstan"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Kazakhstan chiếm hơn 90% saiga toàn cầu, hoàn toàn không đều so với ba nước còn lại — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Legal protection ensured its survival for a while, and numbers steadily recovered throughout most of the 20th century."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Suốt phần lớn thế kỷ 20, số lượng saiga có giảm dần không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói số lượng saiga “were falling” (giảm) trong phần lớn thế kỷ 20",
+              "p": "Bài viết “numbers steadily recovered throughout most of the 20th century” — số lượng phục hồi đều đặn, không phải giảm"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the population of saiga were falling",
+              "p": "numbers steadily recovered"
+            },
+            {
+              "q": "were falling",
+              "p": "numbers steadily recovered throughout most of the 20th century"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định số lượng phục hồi trong phần lớn thế kỷ 20 — ngược với đề nói giảm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Poaching reached epidemic levels after misguided conservationists tried to relieve the pressure on threatened African rhinos by actively encouraging the use of saiga horns in traditional medicine as an alternative to those of rhinos."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nỗ lực bảo vệ tê giác châu Phi có thật sự ảnh hưởng tới quần thể saiga không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói việc bảo vệ tê giác “had a significant effect” lên số lượng saiga",
+              "p": "Bài viết việc khuyến khích dùng sừng saiga thay sừng tê giác khiến “poaching reached epidemic levels” và “Male saiga were almost wiped out”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "had a significant effect on saiga populations",
+              "p": "poaching reached epidemic levels ... male saiga were almost wiped out"
+            },
+            {
+              "q": "had a significant effect",
+              "p": "poaching reached epidemic levels"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Việc khuyến khích dùng sừng saiga thay sừng tê giác đã gây ra đợt săn trộm khiến saiga đực gần như tuyệt chủng — đúng là ảnh hưởng đáng kể."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Climate change poses a further threat. Although well adapted to cold winters and hot summers, saiga struggle to cope with temperature extremes and unpredictable fluctuations in climate."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khí hậu bất ổn có đang đe dọa động vật hoang dã ở Trung Á nhiều hơn các vùng khác trên thế giới không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề so sánh mức đe dọa ở Trung Á với “other parts of the world”",
+              "p": "Bài chỉ nói khí hậu là một mối đe dọa với saiga (“Climate change poses a further threat”), không hề so sánh với khu vực khác"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "threatening the wildlife of Central Asia more than in other parts of the world",
+              "p": "(không được nêu trong bài)"
+            },
+            {
+              "q": "other parts of the world",
+              "p": "Climate change poses a further threat"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không có phép so sánh nào giữa Trung Á với các vùng khác trên thế giới."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Its purpose is to protect and restore Kazakhstan's steppe, semi-desert and desert ecosystems and the many species they support, including the critically endangered saiga."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sáng kiến Altyn Dala được lập ra chỉ để cứu saiga, hay còn vì nhiều loài khác nữa:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói sáng kiến này “for the benefit of a number of different animals” (vì lợi ích của nhiều loài)",
+              "p": "Bài viết mục đích là bảo vệ hệ sinh thái “and the many species they support, including the critically endangered saiga” — saiga chỉ là một trong số đó"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "formed for the benefit of a number of different animals",
+              "p": "the many species they support, including the critically endangered saiga"
+            },
+            {
+              "q": "for the benefit of a number of different animals",
+              "p": "and the many species they support, including the critically endangered saiga"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sáng kiến bảo vệ cả hệ sinh thái với nhiều loài, không chỉ riêng saiga — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "In 2022 the United Nations recognised the initiative as a World Restoration Flagship project, an accolade reserved for the ten best examples of large-scale ecosystem restoration around the globe."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc được Liên Hợp Quốc công nhận có giúp sáng kiến này nhận thêm tiền tài trợ quốc tế không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói việc công nhận “attracted additional international funding” (thu hút thêm tài trợ)",
+              "p": "Bài chỉ nói UN “recognised the initiative as a World Restoration Flagship project” — chỉ dừng ở công nhận danh hiệu, không nhắc gì đến tài trợ"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "attracted additional international funding for the scheme",
+              "p": "(không được nêu trong bài)"
+            },
+            {
+              "q": "attracted additional international funding",
+              "p": "recognised the initiative as a World Restoration Flagship project"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ dừng ở việc công nhận danh hiệu, không đề cập tới việc có thêm tài trợ hay không."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "United Nations projections anticipate it will become a megacity within seven years as its population passes 10 million, reaching 13.4 million by 2035."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dân số Dar es Salaam có đang tăng nhanh hơn những gì từng được dự đoán trước đây không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói dân số “rising more rapidly than was previously predicted” (tăng nhanh hơn so với dự đoán cũ)",
+              "p": "Bài chỉ đưa ra các con số dự báo (tăng gấp 8 lần từ 1980, UN dự báo 13,4 triệu vào 2035, Hoornweg dự báo 73,7 triệu vào 2100) chứ không so sánh tốc độ hiện tại với một dự đoán trước đó đã bị vượt qua"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "rising more rapidly than was previously predicted",
+              "p": "(không có phép so sánh này trong bài)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài liệt kê nhiều con số dự báo khác nhau nhưng không nói tốc độ tăng hiện nay có vượt một dự đoán cũ nào hay không."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Today, four out of five of its people live in single-storey informal settlements on the spreading edges of the city"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phần lớn cư dân Dar es Salaam có sống trong nhà cao tầng ở rìa thành phố không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói dân sống trong “high-rise blocks” (nhà cao tầng) ở rìa thành phố",
+              "p": "Bài viết “four out of five of its people live in single-storey informal settlements” — nhà một tầng, không phải nhà cao tầng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "high-rise blocks on the edge of the city",
+              "p": "single-storey informal settlements on the spreading edges of the city"
+            },
+            {
+              "q": "high-rise blocks",
+              "p": "four out of five of its people live in single-storey informal settlements"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ đó là nhà một tầng, không phải nhà cao tầng — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "A single suburban rail line serves residents in a few areas to the south but is tiny in the context of the wider city."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người dân có được hỏi ý kiến về tuyến đường sắt ngoại ô của thành phố không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói cư dân “have been consulted” (được tham vấn ý kiến) về tuyến đường sắt",
+              "p": "Bài chỉ mô tả quy mô tuyến đường sắt (“serves residents in a few areas ... but is tiny”) — không nhắc gì đến việc tham vấn ý kiến"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "consulted about their views on the suburban rail line",
+              "p": "(không được nêu trong bài)"
+            },
+            {
+              "q": "have been consulted",
+              "p": "serves residents in a few areas ... but is tiny"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không đề cập việc lấy ý kiến người dân về tuyến đường sắt."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Nearly all the expansion is happening on the periphery, and nearly all takes place informally without any agreed strategy."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phần lớn việc phát triển khu dân cư hiện nay ở Dar es Salaam có theo quy hoạch không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói phần lớn phát triển dân cư hiện tại là “unplanned” (không theo quy hoạch)",
+              "p": "Bài viết “nearly all takes place informally without any agreed strategy” — gần như toàn bộ diễn ra tự phát, không có chiến lược thống nhất"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the majority of the present residential development ... is unplanned",
+              "p": "nearly all takes place informally without any agreed strategy"
+            },
+            {
+              "q": "unplanned",
+              "p": "nearly all takes place informally without any agreed strategy"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“informally without any agreed strategy” đúng nghĩa không có quy hoạch — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Unlike many cities on the continent, Dar es Salaam isn't trying to build a metro. It has chosen a less exciting but cheaper and more achievable method: the bus."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chính quyền Dar es Salaam có chọn đi theo mô hình giao thông công cộng mà nhiều thành phố châu Phi khác đã áp dụng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói thành phố đã theo kế hoạch mà “a large number of African cities” (nhiều thành phố châu Phi) đã chọn",
+              "p": "Bài viết “Unlike many cities on the continent, Dar es Salaam isn't trying to build a metro” — Dar chọn con đường khác hẳn (xe buýt) thay vì đi theo xu hướng chung"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "follow the public transport plan adopted by a large number of African cities",
+              "p": "unlike many cities on the continent, Dar es Salaam isn't trying to build a metro"
+            },
+            {
+              "q": "a large number of African cities",
+              "p": "Unlike many cities on the continent, Dar es Salaam isn't trying to build a metro"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ Dar es Salaam đi ngược lại xu hướng chung (metro) của nhiều thành phố châu Phi khác, chọn xe buýt thay vì theo họ — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "lanes",
+      "evidence": {
+        "quoteEn": "The DART bus rapid transit (BRT) system runs on bus lanes separated from other traffic, mostly in the middle of the road to reduce stoppages."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Xe buýt DART chạy trên loại đường riêng nào để giảm bị chậm — điền từ đó:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “designated ______”, cần một danh từ số nhiều chỉ làn đường."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the buses use designated ______ to cut down on delays”",
+              "p": "“runs on bus lanes separated from other traffic ... to reduce stoppages”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "designated ______ to cut down on delays",
+              "p": "bus lanes separated from other traffic ... to reduce stoppages"
+            },
+            {
+              "q": "the buses use designated ______ to cut down on delays",
+              "p": "runs on bus lanes separated from other traffic ... to reduce stoppages"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Xe chạy trên làn riêng (bus lanes) — điền lanes."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "lanes"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "boarding",
+      "evidence": {
+        "quoteEn": "Ticket purchase and control takes place at stations prior to boarding"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hành khách phải trả tiền vé trước khi làm gì — điền từ đó:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “pay fares before ______”, cần một danh từ/động danh từ chỉ hành động lên xe."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“passengers pay fares before ______”",
+              "p": "“Ticket purchase and control takes place at stations prior to boarding”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "pay fares before ______",
+              "p": "ticket purchase ... prior to boarding"
+            },
+            {
+              "q": "passengers pay fares before ______",
+              "p": "Ticket purchase and control takes place at stations prior to boarding"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vé được mua trước khi lên xe (boarding) — điền boarding."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "boarding"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "wheelchairs",
+      "evidence": {
+        "quoteEn": "the buses are step-free, which means the entire route is accessible to people using wheelchairs or who are travelling with baby buggies"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhờ xe không có bậc thềm, hành khách dùng phương tiện gì có thể tiếp cận mọi phần của hệ thống — điền từ đó:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “passengers in ______”, cần một danh từ số nhiều chỉ người dùng thiết bị hỗ trợ di chuyển."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“passengers in ______ can use every part of the system”",
+              "p": "“the entire route is accessible to people using wheelchairs”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "passengers in ______ can use every part of the system",
+              "p": "the entire route is accessible to people using wheelchairs"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Người dùng xe lăn (wheelchairs) được tiếp cận toàn tuyến — điền wheelchairs."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "wheelchairs"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "fuel",
+      "evidence": {
+        "quoteEn": "He says it is not perfect, though, complaining that drivers often refuse to turn on the air conditioning to save fuel."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tài xế đôi khi không bật điều hòa để tiết kiệm thứ gì — điền từ đó:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “to reduce ______ use”, cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the temperature control is sometimes not activated in order to reduce ______ use”",
+              "p": "“drivers often refuse to turn on the air conditioning to save fuel”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reduce ______ use",
+              "p": "to save fuel"
+            },
+            {
+              "q": "the temperature control is sometimes not activated in order to reduce ______ use",
+              "p": "drivers often refuse to turn on the air conditioning to save fuel"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tắt điều hòa là để tiết kiệm nhiên liệu — điền fuel."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fuel"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "flood",
+      "evidence": {
+        "quoteEn": "A shortage of buses after a serious flood at the main depot during the rainy season means the system is carrying 200,000 people a day"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vì sao thiếu xe buýt phục vụ — do hậu quả của sự cố gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “due to the effects of a severe ______”, cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“insufficient number of vehicles are available due to the effects of a severe ______”",
+              "p": "“A shortage of buses after a serious flood at the main depot”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the effects of a severe ______",
+              "p": "a serious flood at the main depot"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Trận lụt (flood) ở kho xe gây thiếu xe buýt — điền flood."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "flood"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "smartcards",
+      "evidence": {
+        "quoteEn": "Smartcards can't be used as the mechanical readers aren't working either, forcing passengers to buy individual paper tickets for every journey."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vì máy đọc thẻ bị hỏng nên hành khách không dùng được thứ gì — điền từ đó:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “passengers are unable to use ______”, cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“passengers are unable to use ______ because some equipment is out of action”",
+              "p": "“Smartcards can't be used as the mechanical readers aren't working either”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "unable to use ______",
+              "p": "smartcards can't be used"
+            },
+            {
+              "q": "passengers are unable to use ______ because some equipment is out of action",
+              "p": "Smartcards can't be used as the mechanical readers aren't working either"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thẻ thông minh (smartcards) không dùng được do máy đọc hỏng — điền smartcards."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "smartcards"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "gates",
+      "evidence": {
+        "quoteEn": "Staff stand by the gates and tear tickets as people enter."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vé được kiểm tra thủ công ở vị trí nào của trạm — điền từ đó:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “station ______”, cần một danh từ số nhiều chỉ vị trí ra vào."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“tickets have to be checked manually at station ______”",
+              "p": "“Staff stand by the gates and tear tickets as people enter”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "checked manually at station ______",
+              "p": "staff stand by the gates and tear tickets"
+            },
+            {
+              "q": "tickets have to be checked manually at station ______",
+              "p": "Staff stand by the gates and tear tickets as people enter"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhân viên xé vé ở các cổng (gates) — điền gates."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "gates"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "queues",
+      "evidence": {
+        "quoteEn": "As a result, queues are considerable at peak times."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vào giờ cao điểm, điều gì thường xảy ra do cách bán vé thủ công — điền từ đó:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chỗ trống cần một danh từ số nhiều chỉ hiện tượng người xếp hàng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“______ frequently build up during rush hours”",
+              "p": "“As a result, queues are considerable at peak times”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ frequently build up during rush hours",
+              "p": "queues are considerable at peak times"
+            },
+            {
+              "q": "______ frequently build up during rush hours",
+              "p": "As a result, queues are considerable at peak times"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hàng người xếp (queues) đông vào giờ cao điểm — điền queues."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "queues"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "One is the growing evidence that many supposedly 'advanced' behaviours, such as architecture and art, can be traced much further back in time than we thought ... And the other is that we have badly misunderstood gender roles in prehistoric societies"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn văn thứ hai, tác giả đang làm việc gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: chỉ ra một số thay đổi quan trọng trong hiểu biết về thời tiền sử (“pinpointing some key changes in our understanding of prehistory”)",
+              "p": "Đoạn văn nêu ra “two things stand out” — hành vi “advanced” như kiến trúc, nghệ thuật có từ sớm hơn nhiều so với nghĩ trước đây, và quan niệm về giới trong xã hội tiền sử đã bị hiểu sai — đây chính là những thay đổi lớn trong nhận thức"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "pinpointing some key changes in our understanding of prehistory",
+              "p": "the growing evidence that many supposedly 'advanced' behaviours ... can be traced much further back in time"
+            },
+            {
+              "q": "key changes",
+              "p": "we have badly misunderstood gender roles in prehistoric societies"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn này nêu ra hai điểm mấu chốt làm thay đổi cách hiểu về thời tiền sử — khớp phương án A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Đoạn không nói về những gì còn mơ hồ, mà nói về những gì gần đây đã được làm rõ."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không phải tổng hợp thái độ của mọi người, mà là nêu thẳng hai kết luận chính từ các phát hiện."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Đoạn này không nhắc đến bất đồng nào giữa các nhà khảo cổ."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Evolution usually works by incremental steps and so does technology. The first birds weren't great at flying, and the first mobile phones weren't great at, well, anything really."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn thứ sáu, tác giả nhắc tới điện thoại di động để minh họa cho điều gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: hầu hết các bước phát triển đều diễn ra từ từ (“most developments happen in a gradual way”)",
+              "p": "Bài viết “Evolution usually works by incremental steps and so does technology. The first ... mobile phones weren't great at ... anything really” — công nghệ, cũng như tiến hóa, đi từng bước nhỏ"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "most developments happen in a gradual way",
+              "p": "evolution usually works by incremental steps and so does technology"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ví dụ điện thoại đời đầu còn kém cỏi minh họa cho việc mọi thứ tiến bộ dần dần, từng bước — khớp A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Không bàn về nguồn gốc đa dạng của sự sáng tạo."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nói về mặt tích cực hay tiêu cực của công nghệ."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Ngược lại, đoạn này nhấn mạnh tính từng bước chứ không phải khó lường."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Archaeology was invented by individuals with now unfashionably patriarchal views about gender, and those notions fed into their research. Today's researchers are trying to unpick this stuff"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn thứ bảy, cụm “unpick this stuff” đang nói đến việc gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: đánh giá lại các nghiên cứu bị ảnh hưởng bởi quan niệm lỗi thời về xã hội (“reevaluating research influenced by outdated beliefs about society”)",
+              "p": "Bài viết khảo cổ học từng bị ảnh hưởng bởi “unfashionably patriarchal views about gender” ngấm vào nghiên cứu, nên “today's researchers are trying to unpick this stuff” — gỡ bỏ ảnh hưởng đó"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reevaluating research influenced by outdated beliefs about society",
+              "p": "unfashionably patriarchal views about gender ... fed into their research"
+            },
+            {
+              "q": "reevaluating research influenced by outdated beliefs about society",
+              "p": "unfashionably patriarchal views about gender"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Unpick” ở đây nghĩa là gỡ bỏ, xem lại ảnh hưởng của quan niệm phụ hệ cũ trong nghiên cứu khảo cổ — khớp D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không phải đánh giá tác động của nghiên cứu mới, mà là sửa lại thiên kiến trong nghiên cứu cũ."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Vấn đề không phải tính xác thực của bằng chứng, mà là cách diễn giải bị ảnh hưởng bởi quan niệm giới."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Quá chung chung, chưa nêu được ý cốt lõi là gỡ bỏ thiên kiến phụ hệ cũ."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Inequality, authoritarianism and patriarchy aren't inevitable. They're choices, and prehistory shows us that we can choose differently."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn cuối cùng, tác giả đang gợi ý điều gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: nghiên cứu xã hội xưa có thể giúp ta xây dựng một xã hội công bằng hơn ngày nay (“could help us create a fairer society today”)",
+              "p": "Bài viết “Inequality, authoritarianism and patriarchy aren't inevitable ... prehistory shows us that we can choose differently” — thời tiền sử cho thấy ta có thể lựa chọn khác đi, ngụ ý cho hiện tại"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "could help us create a fairer society today",
+              "p": "prehistory shows us that we can choose differently"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Câu kết luận “we can choose differently” ngụ ý bài học cho xã hội hiện tại — khớp A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Không nói về việc đánh giá xã hội xưa theo chuẩn hiện đại."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Đoạn này đưa ra kết luận dứt khoát (bất bình đẳng không phải tất yếu), không phải nói còn nhiều điều chưa biết."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không bàn về việc diễn giải bằng chứng theo nhiều cách."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "researchers found buried logs that had been shaped with stone tools so that they interlocked. They seem to have once been part of a larger structure, perhaps a building. This would be unsurprising if they weren't 476,000 years old. That's almost 200,000 years before our species, Homo sapiens, evolved."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 31 nói về phát hiện ở Kalambo Falls — cần ghép với kết luận phù hợp trong 6 lựa chọn A-F:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án E: Homo sapiens có lẽ không phải loài duy nhất có khả năng chế tác tinh xảo (“probably not the only species capable of sophisticated workmanship”)",
+              "p": "Bài viết những khúc gỗ “shaped with stone tools so that they interlocked”, có từ “476,000 years old ... almost 200,000 years before ... Homo sapiens, evolved” — kỹ thuật ghép gỗ tinh vi đã có từ trước loài người hiện đại"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "probably not the only species capable of sophisticated workmanship",
+              "p": "logs ... shaped with stone tools so that they interlocked ... 200,000 years before ... Homo sapiens, evolved"
+            },
+            {
+              "q": "probably not the only species capable of sophisticated workmanship",
+              "p": "shaped with stone tools so that they interlocked"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Các khúc gỗ được đẽo khớp với nhau cho thấy kỹ thuật chế tác phức tạp đã có từ trước loài người hiện đại — khớp E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đoạn này không nói về thời điểm Homo sapiens xuất hiện, mà nói về khả năng chế tác của một loài khác."
+            },
+            {
+              "letter": "F",
+              "whyVi": "F nói về khả năng sinh tồn ở môi trường khắc nghiệt — không liên quan tới việc dựng công trình bằng gỗ."
+            }
+          ]
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "we now know that extinct hominins such as the Denisovans lived on the frozen heights of high-altitude regions 200,000 years ago – upending the old notion that such environments were only settled by modern humans around 3,600 years ago"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 32 nói về bằng chứng ở vùng cao — chọn kết luận đúng trong A-F:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án F: các loài khác đã sống sót ở môi trường khắc nghiệt trước khi Homo sapiens xuất hiện (“other species managed to survive in harsh environments before the arrival of Homo sapiens”)",
+              "p": "Bài viết “extinct hominins such as the Denisovans lived on the frozen heights of high-altitude regions 200,000 years ago” — sống ở vùng cao lạnh giá rất lâu trước người hiện đại"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "other species managed to survive in harsh environments before the arrival of Homo sapiens",
+              "p": "Denisovans lived on the frozen heights of high-altitude regions 200,000 years ago"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Denisovans sống ở vùng cao lạnh giá rất lâu trước khi người hiện đại tới — khớp F."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đoạn này không nhắc thời điểm Homo sapiens xuất hiện, mà nói về loài khác sinh tồn ở nơi khắc nghiệt."
+            }
+          ]
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "a meta-analysis published in June 2023 compiled data on several dozen foraging societies and found women hunted in 80 per cent of them"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 33 nói về một công bố học thuật tháng 6/2023 — chọn kết luận đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: các chuyên gia có thể đã nhầm về việc ai đi kiếm ăn trong cộng đồng người thời sơ khai (“experts may have been mistaken about who looked for food in early human communities”)",
+              "p": "Bài viết “a meta-analysis published in June 2023 ... found women hunted in 80 per cent of them” — phụ nữ cũng đi săn ở phần lớn xã hội, khác với quan niệm cũ “Man the Hunter”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "experts may have been mistaken about who looked for food",
+              "p": "found women hunted in 80 per cent of them"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nghiên cứu cho thấy phụ nữ cũng đi săn rất phổ biến, phản bác quan niệm cũ chỉ đàn ông đi săn — khớp D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "B nói về quyền lực/địa vị lãnh đạo, không phải chuyện ai đi kiếm ăn."
+            }
+          ]
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "an Iberian leader from around 4000 years ago turned out to be female, not male as many had assumed, when proteins in her teeth were analysed"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 34 nói về việc phân tích một thủ lĩnh Iberia 4000 năm tuổi — chọn kết luận đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: các giả định trước đây về việc ai nắm quyền lực trong thế giới tiền sử là sai (“previous assumptions about who had power in the prehistoric world were inaccurate”)",
+              "p": "Bài viết “an Iberian leader ... turned out to be female, not male as many had assumed” — người ta từng cho là nam nhưng thực chất là nữ"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "previous assumptions about who had power ... were inaccurate",
+              "p": "turned out to be female, not male as many had assumed"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vị thủ lĩnh nắm quyền hóa ra là nữ chứ không phải nam như từng nghĩ — khớp B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "D",
+              "whyVi": "D nói về việc kiếm ăn/đi săn, không liên quan tới vị thủ lĩnh nắm quyền lực."
+            }
+          ]
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Even earlier species, such as Homo erectus, may also have made art, for example by engraving patterns on shells."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả có cho rằng tranh vẽ trong hang của người Neanderthal là tác phẩm nghệ thuật đầu tiên từng được tạo ra không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cho rằng tranh hang Neanderthal “were the first examples of artwork ever created” (tác phẩm nghệ thuật đầu tiên)",
+              "p": "Bài viết “Even earlier species, such as Homo erectus, may also have made art” — Homo erectus có thể đã làm nghệ thuật còn sớm hơn Neanderthal"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the first examples of artwork ever created",
+              "p": "even earlier species, such as Homo erectus, may also have made art"
+            },
+            {
+              "q": "were the first examples of artwork ever created",
+              "p": "Even earlier species, such as Homo erectus, may also have made art"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả gợi ý Homo erectus có thể làm nghệ thuật từ trước Neanderthal — phản bác ý “đầu tiên” trong đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "for example by engraving patterns on shells"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo tác giả, việc tìm thấy nghệ thuật tiền sử khắc trên vỏ sò có phải là chuyện hiếm gặp không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói việc này “very rare” (rất hiếm gặp)",
+              "p": "Bài chỉ nêu một ví dụ “engraving patterns on shells” của Homo erectus, không đánh giá mức độ phổ biến hay hiếm gặp của việc này"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "very rare to find prehistoric artwork carved onto shells",
+              "p": "(không được nêu trong bài)"
+            },
+            {
+              "q": "very rare",
+              "p": "engraving patterns on shells"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ đưa ra một ví dụ, không nói gì về việc chuyện đó phổ biến hay hiếm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "The dispute has only been heightened by the way the results were released, in a non-traditional journal that publishes peer reviews publicly alongside the paper."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phương pháp mà các nhà nghiên cứu dùng để khảo sát hang Rising Star có bị coi là khác thường không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “the methods ... to examine” hang Rising Star “rather unconventional” (khá khác thường)",
+              "p": "Bài chỉ nói cách công bố kết quả khác thường (“released, in a non-traditional journal”), không nói về phương pháp khai quật/nghiên cứu thực địa"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the methods ... used to examine the Rising Star cave system",
+              "p": "(bài chỉ nói về cách công bố kết quả, không phải cách nghiên cứu hang)"
+            },
+            {
+              "q": "the methods ... to examine",
+              "p": "released, in a non-traditional journal"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chi tiết “non-traditional” chỉ nói về cách công bố kết quả, không phải cách nghiên cứu hang động."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "researchers have found what seem to be etchings – resembling rudimentary artwork – on the cave walls, though these have yet to be firmly dated"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tuổi của những vết khắc trong hang Rising Star đã được xác định rõ ràng chưa:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói tuổi của các vết khắc “unclear” (chưa rõ ràng)",
+              "p": "Bài viết các vết khắc “have yet to be firmly dated” và tác giả nhấn mạnh cần thêm bằng chứng “with regard to the dating of the etchings”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "unclear how old the etchings ... are",
+              "p": "these have yet to be firmly dated"
+            },
+            {
+              "q": "unclear",
+              "p": "have yet to be firmly dated"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ tuổi các vết khắc chưa được xác định chắc chắn — khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "The dispute has only been heightened by the way the results were released, in a non-traditional journal that publishes peer reviews publicly alongside the paper."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cách công bố phát hiện ở hang Rising Star có góp phần làm tranh cãi thêm căng thẳng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói cách công bố “added to the controversy” (làm tăng thêm tranh cãi)",
+              "p": "Bài viết “The dispute has only been heightened by the way the results were released, in a non-traditional journal”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "added to the controversy that surrounds them",
+              "p": "the dispute has only been heightened by the way the results were released"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cách công bố trên tạp chí phi truyền thống được nói rõ là làm tranh cãi thêm gay gắt — khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "I think the species' small brains are a distraction. Palaeoanthropologists got fixated on brain size because it was what they could see"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kích thước não của H. naledi có phải là yếu tố then chốt quyết định việc chúng có làm được nghệ thuật hay không, theo tác giả:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói kích thước não “is a key factor” (yếu tố then chốt)",
+              "p": "Bài viết “I think the species' small brains are a distraction ... other properties, such as the brain's internal wiring, are surely equally important” — tác giả cho rằng chú trọng kích thước não là bị phân tâm, không phải yếu tố then chốt"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "is a key factor",
+              "p": "the species' small brains are a distraction"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả cho rằng chú trọng vào kích thước não là bị phân tâm khỏi vấn đề thật sự — trái với ý “yếu tố then chốt” trong đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    }
+  }
+}
