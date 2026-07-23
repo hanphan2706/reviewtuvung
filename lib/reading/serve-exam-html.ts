@@ -9,6 +9,10 @@ import { readingArticleHref } from "@/lib/reading/article-routes";
 import type { ReadingHubArticle, ReadingPilotId } from "@/lib/reading/hub-articles";
 import { READING_IELTS_EXAM_HREF } from "@/lib/reading/ielts-test-catalog";
 import { loadReadingPassage, loadReadingPassages } from "@/lib/reading/load-reading-raw";
+import {
+  loadReadingExamExplanations,
+  slimReadingExplanationsForBoot,
+} from "@/lib/reading/load-reading-explanations";
 import { injectExamCopyFriction } from "@/lib/exam/inject-exam-copy-friction";
 import { injectExamDictionaryPopover } from "@/lib/exam/inject-exam-dictionary-popover";
 
@@ -90,10 +94,15 @@ export async function buildExamBootPayload(article: ReadingHubArticle) {
     throw new Error("no exam questions");
   }
 
+  const explanations = slimReadingExplanationsForBoot(
+    loadReadingExamExplanations(article.pilotId),
+  );
+
   return {
     ...payload,
     back: readingArticleHref(article),
     skipLogin: true as const,
+    explanations,
   };
 }
 
@@ -108,11 +117,25 @@ export async function buildFullTestExamBootPayload(pilotId: ReadingPilotId) {
     throw new Error("no exam questions");
   }
 
+  const explanations = slimReadingExplanationsForBoot(loadReadingExamExplanations(pilotId));
+
   return {
     ...payload,
     back: READING_IELTS_EXAM_HREF,
     skipLogin: true as const,
+    explanations,
   };
+}
+
+function questionsPanelInnerHtml(questionsHtml: string): string {
+  return `<div id="questions-scroll">${questionsHtml}</div>
+<aside id="explanation-panel" class="explanation-panel" hidden aria-live="polite">
+  <div class="explanation-panel-head">
+    <div class="explanation-panel-title" id="explanation-panel-title">Gợi ý</div>
+    <button type="button" class="explanation-panel-close" id="explanation-panel-close" aria-label="Đóng giải thích">×</button>
+  </div>
+  <div class="explanation-panel-body" id="explanation-panel-body"></div>
+</aside>`;
 }
 
 const MAIN_SCRIPT_MARKER = "<script>\n/* Correct answers";
@@ -144,7 +167,7 @@ function injectServerRenderedExam(template: string, boot: ExamBootPayload): stri
 
   html = html.replace(
     /<div id="questions-panel">[\s\S]*?<\/div><!-- \/questions-panel -->/,
-    `<div id="questions-panel" data-exam-ssr="1"><div class="qsection active" id="q1-section">${boot.questionsHtml}</div></div><!-- /questions-panel -->`,
+    `<div id="questions-panel" data-exam-ssr="1">${questionsPanelInnerHtml(`<div class="qsection active" id="q1-section">${boot.questionsHtml}</div>`)}</div><!-- /questions-panel -->`,
   );
 
   html = html
@@ -179,7 +202,7 @@ function injectFullTestServerRenderedExam(template: string, boot: FullTestExamBo
 
   html = html.replace(
     /<div id="questions-panel">[\s\S]*?<\/div><!-- \/questions-panel -->/,
-    `<div id="questions-panel" data-exam-ssr="1">${boot.questionsHtml}</div><!-- /questions-panel -->`,
+    `<div id="questions-panel" data-exam-ssr="1">${questionsPanelInnerHtml(boot.questionsHtml)}</div><!-- /questions-panel -->`,
   );
 
   html = html.replace(
@@ -217,6 +240,7 @@ export async function buildExamRunnerHtml(article: ReadingHubArticle): Promise<s
     ssr: true,
     answerKey: boot.answerKey,
     hasAnswerKey: boot.hasAnswerKey,
+    explanations: boot.explanations,
   };
 
   return injectExamDictionaryPopover(
@@ -243,6 +267,7 @@ export async function buildFullTestExamRunnerHtml(pilotId: ReadingPilotId): Prom
     passageQuestionRanges: boot.passageQuestionRanges,
     answerKey: boot.answerKey,
     hasAnswerKey: boot.hasAnswerKey,
+    explanations: boot.explanations,
   };
 
   return injectExamDictionaryPopover(

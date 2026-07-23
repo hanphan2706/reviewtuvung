@@ -2,6 +2,10 @@ import { NextResponse } from "next/server";
 import { requireApiUser } from "@/lib/auth/require-api-user";
 import { buildReadingExamPayload } from "@/lib/reading/build-exam-html";
 import type { ReadingPilotId } from "@/lib/reading/hub-articles";
+import {
+  loadReadingExamExplanations,
+  slimReadingExplanationsForBoot,
+} from "@/lib/reading/load-reading-explanations";
 import { loadReadingPassage } from "@/lib/reading/load-reading-raw";
 import { READING_RAW_FILES } from "@/lib/reading/raw-manifest";
 
@@ -71,7 +75,9 @@ export async function GET(request: Request) {
       return NextResponse.json({ error: "no exam questions" }, { status: 404 });
     }
 
-    return NextResponse.json(payload);
+    const explanations = slimReadingExplanationsForBoot(loadReadingExamExplanations(pilotId));
+
+    return NextResponse.json({ ...payload, explanations });
   } catch {
     return NextResponse.json({ error: "file missing", missing: true }, { status: 404 });
   }

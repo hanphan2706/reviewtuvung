@@ -1,0 +1,1885 @@
+{
+  "pilotId": "cam19-test3",
+  "schemaVersion": 4,
+  "note": "Cam 19 R T3 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Archaeologists discover evidence of prehistoric island settlers",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "The global importance of wetlands",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Is the era of artificial speech translation upon us?",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "In early April 2019, Dr Ceri Shipton and his colleagues from Australian National University became the first archaeologists to explore Obi, one of many tropical islands in Indonesia's Maluku Utara province."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem trước khi Shipton và nhóm ông đến, đã từng có nghiên cứu khảo cổ trên đảo Obi chưa:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo đã có “archaeological research” trên Obi “before the arrival of” Shipton",
+              "p": "Bài khẳng định nhóm Shipton “became the first archaeologists to explore Obi” — tức chưa ai khảo cổ trước đó"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Archaeological research had taken place … before … Shipton",
+              "p": "became the first archaeologists to explore Obi"
+            },
+            {
+              "q": "had taken place before",
+              "p": "first archaeologists (i.e. no earlier research)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ đây mới là lần đầu có khảo cổ học trên Obi — trái với nhận định trong câu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Axes made from clam shells from roughly the same time had also previously been found elsewhere in this region, including on the nearby island of Gebe to the northeast."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Rìu vỏ sò ở Kelo có phải lần đầu tiên loại rìu này được phát hiện trong khu vực không — bài có nói vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo đây là “the first clam shell axes ever to be discovered in the region”",
+              "p": "Bài cho biết rìu vỏ sò cùng thời kỳ “had also previously been found elsewhere in this region”, chẳng hạn ở đảo Gebe gần đó"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the first clam shell axes ever to be discovered in the region",
+              "p": "Axes made from clam shells … had also previously been found elsewhere in this region"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Loại rìu này đã từng được tìm thấy ở nơi khác trước đó — không phải lần đầu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Sea levels were about 120 metres lower, meaning Obi was a much larger island, encompassing what is today the separate island of Bisa, as well as several other small islands nearby."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Obi ngày nay có nhỏ hơn so với 18.000 năm trước không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the size of Obi today is less than it was 18,000 years ago”",
+              "p": "Mực nước biển thấp hơn 120m nên Obi “was a much larger island”, gộp cả đảo Bisa và vài đảo nhỏ hiện đã tách riêng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "The size of Obi today is less than it was 18,000 years ago",
+              "p": "Obi was a much larger island (sea levels were about 120 metres lower)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Obi từng lớn hơn nhiều (gộp cả Bisa và các đảo nhỏ) — nghĩa là ngày nay nó nhỏ hơn, đúng với câu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Roughly 11,700 years ago, as the most recent ice age ended, the climate became significantly warmer and wetter, no doubt making Obi's jungle much thicker."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thay đổi khí hậu 11.700 năm trước có ảnh hưởng đến Obi mạnh hơn các đảo xung quanh không — bài có so sánh không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“had a greater impact on Obi than on the surrounding islands”",
+              "p": "Bài chỉ nói khí hậu ấm và ẩm hơn khiến rừng Obi rậm hơn (“making Obi's jungle much thicker”) — không so sánh với các đảo lân cận"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "had a greater impact on Obi than on the surrounding islands",
+              "p": "making Obi's jungle much thicker (no comparison with surrounding islands)"
+            },
+            {
+              "q": "greater impact … than on the surrounding islands",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không đề cập mức độ ảnh hưởng ở các đảo khác để so sánh."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "According to the researchers, it is no coincidence that around this time the first axes crafted from stone rather than sea shells appear, likely in response to their heavy-duty use for clearing and modification of the increasingly dense rainforest."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các nhà nghiên cứu có tin thời tiết ấm, ẩm hơn liên quan đến việc đổi vật liệu làm rìu không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the researchers believe there is a connection between warmer, wetter weather and a change in the material used to make axes”",
+              "p": "Bài viết “it is no coincidence” rằng đúng lúc khí hậu ấm ẩm hơn thì rìu đá bắt đầu xuất hiện thay cho rìu vỏ sò"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "connection between warmer, wetter weather and a change in the material used to make axes",
+              "p": "it is no coincidence that around this time the first axes crafted from stone rather than shell appear"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cụm “no coincidence” cho thấy các nhà nghiên cứu tin có mối liên hệ nhân quả — đúng với câu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Judging by the bones which the researchers unearthed in the Kelo caves, people living there mainly hunted the Rothschild's cuscus, a possum-like creature that still lives on Obi today."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhóm Shipton có ngạc nhiên khi tìm thấy chứng cứ về việc săn bắt của người Obi không — bài có nói không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Shipton's team were surprised to find evidence of the Obi islanders' hunting practices”",
+              "p": "Bài chỉ nêu họ tìm thấy xương và suy ra loài họ săn bắt chính — không hề nhắc tới cảm xúc “ngạc nhiên”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "were surprised to find evidence of … hunting practices",
+              "p": "Judging by the bones … people … mainly hunted … (no mention of surprise)"
+            },
+            {
+              "q": "were surprised",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có thông tin về việc nhóm nghiên cứu có bất ngờ hay không."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "But then, about 8,000 years ago, both were abandoned. … there is no evidence for use of the Kelo shelters after this time, until about 1,000 years ago, when they were re-occupied by people who owned pottery"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các hang trú ẩn Kelo có được sử dụng liên tục cho tới khoảng 1.000 năm trước không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“occupied continuously until about 1,000 years ago”",
+              "p": "Các hang bị bỏ (“abandoned”) từ khoảng 8.000 năm trước, “no evidence for use” cho tới khi được chiếm dụng lại 1.000 năm trước — có khoảng gián đoạn dài"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "occupied continuously until about 1,000 years ago",
+              "p": "abandoned … about 8,000 years ago … no evidence for use … until occupied again about 1,000 years ago"
+            },
+            {
+              "q": "continuously until about 1,000 years ago",
+              "p": "gap of ~7,000 years with no evidence of use"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có một giai đoạn bỏ trống hàng nghìn năm giữa hai lần sử dụng — không phải liên tục."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "caves",
+      "evidence": {
+        "quoteEn": "Just inland from the village of Kelo on Obi's northern coast, Shipton and his colleagues found two caves containing prehistoric rock shelters that were suitable for excavation."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: hang trú ẩn nằm bên trong loại địa hình gì gần làng Kelo — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “rock shelters inside ______” cần một danh từ chỉ địa hình."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“rock shelters inside ______ near the village of Kelo”",
+              "p": "Họ tìm thấy “two caves containing prehistoric rock shelters” gần làng Kelo"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "rock shelters inside ______",
+              "p": "caves containing prehistoric rock shelters"
+            },
+            {
+              "q": "inside",
+              "p": "containing"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hang trú ẩn nằm bên trong caves — bài nói rõ “caves containing … rock shelters”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "caves"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "stone",
+      "evidence": {
+        "quoteEn": "the first axes crafted from stone rather than sea shells appear"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: loại vật liệu mới dùng làm rìu, xuất hiện khoảng 11.700 năm trước — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “axes made out of ______” cần một danh từ chỉ vật liệu."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“axes made out of ______, dating from around 11,700 years ago”",
+              "p": "Xuất hiện “the first axes crafted from stone” thay cho rìu vỏ sò"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "made out of",
+              "p": "crafted from"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vật liệu mới được nhắc tới là stone."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "stone"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "bones",
+      "evidence": {
+        "quoteEn": "Judging by the bones which the researchers unearthed in the Kelo caves, people living there mainly hunted the Rothschild's cuscus"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: bộ phận nào của một loài vật cho biết người xưa ăn gì — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“______ of an animal” → danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“______ of an animal: evidence of what ancient islanders ate”",
+              "p": "Dựa vào “the bones which the researchers unearthed” để suy ra họ ăn/săn gì"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ of an animal",
+              "p": "the bones … unearthed"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bằng chứng chính là bones — bài viết “Judging by the bones …”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "bones"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "beads",
+      "evidence": {
+        "quoteEn": "It also revealed particular types of beads, similar to those previously found on islands in southern Wallacea."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: vật gì tìm được giống với vật ở các đảo khác — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“______ which resembled ones found on other islands” → danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“______ which resembled ones found on other islands”",
+              "p": "Tìm thấy “particular types of beads, similar to those previously found on islands in southern Wallacea”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "resembled",
+              "p": "similar to"
+            },
+            {
+              "q": "ones found",
+              "p": "those previously found"
+            },
+            {
+              "q": "on other islands",
+              "p": "on islands in southern Wallacea"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vật giống nhau giữa các đảo chính là beads."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "beads"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "pottery",
+      "evidence": {
+        "quoteEn": "when they were re-occupied by people who owned pottery as well as items made out of gold and silver."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: ngoài kim loại, người chiếm dụng lại còn sở hữu vật gì — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“had ______ as well as items made out of metal” → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“had ______ as well as items made out of metal”",
+              "p": "Người chiếm dụng lại “owned pottery as well as items made out of gold and silver”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "metal",
+              "p": "gold and silver"
+            },
+            {
+              "q": "as well as / items",
+              "p": "giữ nguyên"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đồ vật song song với đồ kim loại là pottery."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "pottery"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "spices",
+      "evidence": {
+        "quoteEn": "this final phase of occupation also saw the Kelo shelters used by people involved in the historic trade in spices between the Maluku islands and the rest of the world."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: họ có thể đã tham gia sản xuất và buôn bán mặt hàng gì — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“the production and sale of ______” → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“probably took part in the production and sale of ______”",
+              "p": "Nhắc “the historic trade in spices between the Maluku islands and the rest of the world”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "production and sale of ______",
+              "p": "the historic trade in spices"
+            },
+            {
+              "q": "production and sale",
+              "p": "trade"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mặt hàng buôn bán là spices — “trade in spices”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "spices"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "'The idea is that people in a developing country will only protect wetlands if they value and profit from them,' says McCartney. 'For sustainability, it's essential that local people are involved in wetland planning and decision making and have clear rights to use wetlands.'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói cần đảm bảo cư dân vùng đất ngập nước tiếp tục hưởng lợi từ nơi đó. Đề viết: “the need to ensure that inhabitants of wetland regions continue to benefit from them”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về việc đảm bảo cư dân vẫn được lợi từ đất ngập nước (“continue to benefit from them”)",
+              "p": "Đoạn G: McCartney nói người dân “will only protect wetlands if they value and profit from them”, và cần có “clear rights to use wetlands”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "people will only protect wetlands if they benefit",
+              "p": "will only protect wetlands if they value and profit from them"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "according to the World Wide Fund for Nature (WWFN), half of the world's wetlands have disappeared since 1990"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói tỷ lệ đất ngập nước đã biến mất. Đề viết: “the proportion of wetlands which have already been lost”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề muốn biết tỷ lệ đất ngập nước đã mất (“the proportion … already been lost”)",
+              "p": "Đoạn A: “half of the world's wetlands have disappeared since 1990” — một nửa số đất ngập nước trên thế giới đã mất"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a problem linked to channels dug through peat",
+              "p": "dig ditches … drain water out of the peatlands"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "H",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "'Awareness of the importance of wetlands is growing,' he says. … my impression is that things are slowly changing."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói người ta đang dần nhận ra giá trị của đất ngập nước. Đề viết: “people are beginning to appreciate the value of wetlands”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần ý người ta bắt đầu trân trọng giá trị đất ngập nước (“beginning to appreciate the value”)",
+              "p": "Đoạn H: McCartney nói “awareness … is growing” và “things are slowly changing” — nhận thức đang tăng dần"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "awareness of wetlands is increasing",
+              "p": "Awareness of the importance of wetlands is growing"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "Consequently, they are of considerable religious, historical and archaeological value to many communities around the world."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới ý nghĩa văn hóa của đất ngập nước. Đề viết: “mention of the cultural significance of wetlands”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về giá trị văn hóa (“cultural significance”)",
+              "p": "Đoạn B: đất ngập nước có giá trị “religious, historical and archaeological” với nhiều cộng đồng — chính là ý nghĩa văn hóa"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "why businesses target peatlands",
+              "p": "rich sources for in-demand commodities, such as palm oil and pulpwood"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "carbon",
+      "evidence": {
+        "quoteEn": "When peatlands are drained for cultivation, they become net carbon emitters instead of active carbon stores"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đất than bùn bị rút nước bắt đầu thải ra chất gì thay vì lưu trữ nó — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “release ______ instead of storing it” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Peatlands which have been drained begin to release ______ instead of storing it.”",
+              "p": "Khi đất than bùn bị rút nước để canh tác, chúng “become net carbon emitters instead of active carbon stores”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Peatlands which have been drained",
+              "p": "When peatlands are drained for cultivation"
+            },
+            {
+              "q": "release ______ instead of storing it",
+              "p": "become net carbon emitters instead of active carbon stores"
+            },
+            {
+              "q": "release … instead of storing",
+              "p": "emitters instead of … stores"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thay vì lưu trữ carbon, chúng trở thành nguồn thải carbon — đáp án là carbon."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "carbon"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "fires",
+      "evidence": {
+        "quoteEn": "The clearance of peatlands for planting also increases the risk of forest fires, which release huge amounts of CO₂."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sau khi đất than bùn được dọn sạch, việc gì dễ xảy ra hơn — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “______ are more likely to occur” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Once peatland areas have been cleared, ______ are more likely to occur.”",
+              "p": "Việc dọn đất than bùn “increases the risk of forest fires”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Once peatland areas have been cleared",
+              "p": "The clearance of peatlands for planting"
+            },
+            {
+              "q": "are more likely to occur",
+              "p": "increases the risk of"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Rủi ro tăng lên là cháy rừng — điền fires."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fires"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "biodiversity",
+      "evidence": {
+        "quoteEn": "huge peatland forests with extremely high biodiversity value being lost for a few decades of oil palm revenues"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mở đường cho đồn điền cọ dầu phá hủy điều gì của môi trường địa phương — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “destroys the ______ of the local environment” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Clearing peatland forests to make way for oil palm plantations destroys the ______ of the local environment.”",
+              "p": "Rừng than bùn có “extremely high biodiversity value” đang “being lost” vì lợi nhuận cọ dầu"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Clearing peatland forests",
+              "p": "peatland forests … being lost"
+            },
+            {
+              "q": "to make way for oil palm plantations",
+              "p": "for a few decades of oil palm revenues"
+            },
+            {
+              "q": "destroys",
+              "p": "being lost"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thứ bị phá hủy chính là biodiversity — bài nói “biodiversity value … being lost”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "biodiversity"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "ditches",
+      "evidence": {
+        "quoteEn": "They dig ditches to enter the peat swamps by boat and then float the logs out the same way. These are then used to drain water out of the peatlands"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nước bị rút khỏi đất than bùn qua thứ gì do công ty khai thác gỗ tạo ra — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “through the ______ which are created by logging companies” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Water is drained out of peatlands through the ______ which are created by logging companies.”",
+              "p": "Công ty khai thác gỗ “dig ditches”, rồi dùng chúng để “drain water out of the peatlands”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Water is drained out … through the ______",
+              "p": "ditches … used to drain water out of the peatlands"
+            },
+            {
+              "q": "created by logging companies",
+              "p": "They dig ditches"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Họ đào ditches rồi dùng để rút nước — đáp án là ditches."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ditches"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "subsidence",
+      "evidence": {
+        "quoteEn": "the remainder of the solid matter in the peat starts to move downwards, in a process known as subsidence"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Rút nước khỏi đất than bùn dẫn tới hiện tượng gì, cuối cùng có thể gây ngập và mất đất — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “leads to ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Draining peatlands leads to ______: … coastal flooding and land loss.”",
+              "p": "Quá trình đất than bùn lún xuống được gọi là “subsidence”, về lâu dài có thể gây ngập và mất đất"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "leads to ______",
+              "p": "a process known as subsidence"
+            },
+            {
+              "q": "flooding and land loss",
+              "p": "become flooded … / lose … landmass"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài gọi tên hiện tượng này là subsidence."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "subsidence"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "'For sustainability, it's essential that local people are involved in wetland planning and decision making and have clear rights to use wetlands.'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai nói cộng đồng sống ở vùng đất ngập nước phải được đưa vào các cuộc thảo luận về tương lai khu vực đó — “Communities living in wetland regions must be included in discussions about the future of these areas”:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Cộng đồng “must be included” vào quyết định về tương lai vùng đất ngập nước",
+              "p": "Matthew McCartney: “it's essential that local people are involved in wetland planning and decision making” — người dân địa phương phải tham gia lập kế hoạch và ra quyết định"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Communities … must be included in discussions",
+              "p": "local people are involved in wetland planning and decision making"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "McCartney nhấn mạnh sự tham gia của cộng đồng địa phương là điều thiết yếu — đáp án A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "'Different governments have different attitudes,' he says, and goes on to explain that some countries place a high priority on restoring wetlands, while others still deny the issue."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai nói chính sách chính thức đối với đất ngập nước khác nhau giữa các quốc gia — “Official policies towards wetlands vary from one nation to the next”:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Chính sách các nước “vary” giữa nước này với nước khác",
+              "p": "Marcel Silvius: “different governments have different attitudes” — có nước ưu tiên phục hồi đất ngập nước, có nước vẫn phủ nhận vấn đề"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Official policies … vary from one nation to the next",
+              "p": "Different governments have different attitudes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Silvius chỉ rõ các chính phủ có thái độ khác nhau — đáp án C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "'I've worked on wetland issues for 20 years and have never met anybody who wanted to damage a wetland,' he says. 'It isn't something that people generally set out to do. Quite often, the effects simply come from people trying to make a living.'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai nói con người gây hại cho đất ngập nước mà không hề có ý định làm vậy — “People cause harm to wetlands without having any intention to do so”:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Gây hại “without … any intention” (không hề chủ ý)",
+              "p": "Dave Tickner: chưa từng gặp ai “wanted to damage a wetland”, thiệt hại thường chỉ là hệ quả của việc người ta “trying to make a living”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "People cause harm without intending to",
+              "p": "never met anybody who wants to destroy wetlands"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tickner khẳng định thiệt hại không phải do cố ý — đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "'It can be as simple as planting a few trees per hectare to create shade and substantially change a microclimate,' he says. 'Implementing climate change projects isn't so much about money.'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai nói các biện pháp khắc phục thiệt hại môi trường không cần phải phức tạp — “Initiatives to reverse environmental damage need not be complex”:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Biện pháp khắc phục “need not be complex” (không cần phức tạp)",
+              "p": "Pieter van Eijk: khôi phục rừng ven biển “can be as simple as planting a few trees per hectare” — chỉ đơn giản như trồng vài cây mỗi hecta cũng đủ tạo thay đổi rõ rệt"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Initiatives to reverse damage need not be complex",
+              "p": "as simple as planting a few trees per hectare"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Van Eijk cho rằng phục hồi môi trường có thể rất đơn giản — đáp án B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "I'm struggling to follow him in English, on a scratchy line that reminds me we are nearly 10,000 kilometers apart – and that distance is still an obstacle to communication even if you're speaking the same language, as we are."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn 1, tác giả cho biết điều gì về cuộc trò chuyện với Waibel:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: có những khía cạnh khiến cả hai người đều gặp khó khăn (“aspects of the conversation are challenging for both speakers”)",
+              "p": "Tác giả “struggling to follow” vì đường truyền “scratchy” và khoảng cách “nearly 10,000 kilometers” — dù nói cùng ngôn ngữ vẫn là “an obstacle to communication”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "D — point about talking to Waibel / what we learn first",
+              "p": "I'm struggling to follow him in English, on a scratchy line that reminds me we are nearly 10,000 kil"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhiễu sóng và khoảng cách là những khía cạnh gây khó khăn cho cả hai — đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Cả hai đang nói cùng một ngôn ngữ (tiếng Anh) — không phải “different languages”."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Waibel đang ở ga Kyoto, nơi ông quen thuộc — không phải cả hai đều “unfamiliar with their environment”."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Khó khăn nằm ở đường truyền và khoảng cách, không phải ở chủ đề nói chuyện (“the topic … is difficult”)."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "It helps that lecturers speak clearly, don't have to compete with background chatter, and say much the same thing each year."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Yếu tố gì giúp bộ dịch điện tử hoạt động tốt trong các bài giảng ở Karlsruhe:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: nội dung bài giảng được lặp lại (“the repeated content of lectures”)",
+              "p": "Giảng viên “say much the same thing each year” — nói cùng nội dung mỗi năm, giúp hệ thống dịch dễ xử lý hơn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "noise is a major challenge for speech translation",
+              "p": "Noise … is one of the major challenges that artificial speech translation has to meet"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nội dung lặp lại qua các năm là yếu tố hỗ trợ được nêu rõ — đáp án A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài chỉ nói sinh viên đọc văn bản trên máy — không nói kỹ năng đọc của họ hỗ trợ bộ dịch."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Ngôn ngữ dùng (Đức – Anh) không phải yếu tố “assists” hệ thống, chỉ là hai ngôn ngữ được dịch."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói tới kỹ năng công nghệ của giảng viên (“the lecturers' technical ability”)."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "It came to represent one of those devices that technology enthusiasts dream of long before they become practically realizable, like TVs flat enough to hang on walls: objects that we once could only dream of having but that are now commonplace."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi nhắc tới cuốn The Hitchhiker's Guide to the Galaxy, tác giả muốn ngụ ý gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: việc công nghệ dịch giọng nói xuất hiện không phải điều bất ngờ (“artificial speech translation was not a surprising development”)",
+              "p": "Bài so sánh “Babel fish” với “TVs flat enough to hang on walls” — những thứ người ta mơ ước từ lâu rồi cuối cùng cũng thành hiện thực (“now commonplace”)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "systems should address people in culturally appropriate ways",
+              "p": "need to be socially aware by addressing people in the right way"
+            },
+            {
+              "q": "etiquette / good manners",
+              "p": "Etiquette-sensitive artificial translators"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "So sánh với TV màn hình phẳng cho thấy đây là quá trình tự nhiên, dễ đoán — đáp án C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không có ý Babel fish bị coi là thứ không mong muốn (“considered undesirable at the time”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói cuốn sách này không có ý định dự đoán tương lai một cách nghiêm túc."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Đoạn này không so sánh kỹ thuật dịch nào tốt hơn (“some … techniques are better than others”)."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "'We find that there's a barrier with sharing one of the earphones with a stranger,' says Ochoa. That can't have been totally unexpected."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả nói gì về việc chia sẻ tai nghe phiên dịch với người lạ:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: sự ngần ngại này là điều dễ hiểu (“the reluctance to do this is understandable”)",
+              "p": "Ngại chia sẻ tai nghe với người lạ (“barrier with sharing … with a stranger”) “can't have been totally unexpected” — không có gì đáng ngạc nhiên"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "help users keep local customs",
+              "p": "help to preserve local customs"
+            },
+            {
+              "q": "slow global English habits",
+              "p": "slowing the spread of habits associated with international English"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Can't have been totally unexpected” cho thấy tác giả thấy phản ứng ngại ngùng này hoàn toàn hợp lý — đáp án B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài chỉ nói vấn đề sẽ được giải quyết nếu tai nghe phổ biến hơn — không khẳng định người dùng “sẽ quen” với việc chia sẻ."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nói thiết bị này sẽ trở nên không cần thiết trong tương lai."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Ngược lại, đây được nêu là một rào cản thực sự — không phải điều “ít người cần lo lắng”."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Waibel highlights the significance of certain Asian nations, noting that voice translation has really taken off in countries such as Japan with a range of systems. There is still a long way to go, though."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nối câu: “Speech translation methods are developing fast in Japan” … với vế kết đúng, A–F:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu: dịch giọng nói ở Nhật phát triển nhanh, đã “taken off … with a range of systems”",
+              "p": "Ngay sau đó bài viết “There is still a long way to go” — vẫn còn thiếu sót, tức phát triển nhanh nhưng chưa hoàn thiện"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Speech translation methods are developing fast in Japan",
+              "p": "taken off … with a range of systems"
+            },
+            {
+              "q": "but they are far from perfect (C)",
+              "p": "There is still a long way to go"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vế C “but they are far from perfect” tương ứng với “still a long way to go”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "A translation system needs to be simultaneous, like the translator's voice speaking over the foreign politician being interviewed on the TV, rather than in sections that oblige speakers to pause after every few remarks and wait for the translation to be delivered."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nối câu: “TV interviews that use translation voiceover methods are successful” … với vế kết đúng, A–F:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu: lồng tiếng dịch trên TV “are successful”",
+              "p": "Hệ thống cần “simultaneous” — giọng dịch chạy chồng lên lời người được phỏng vấn ngay lúc đó, khác với kiểu ngắt quãng chờ dịch"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "TV interviews using translation voiceover are successful",
+              "p": "voiceover methods work well for TV interviews"
+            },
+            {
+              "q": "because translation is immediate (E)",
+              "p": "translation is immediate / delivered at once"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vế E “because translation is immediate” tương ứng với “simultaneous”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "Systems not only need to cope with physical challenges such as noise, they will also need to be socially aware by addressing people in the right way. Some cultural traditions demand solemn respect for academic status, for example, and it is only polite to respect this."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nối câu: “Future translation systems should address people appropriately” … với vế kết đúng, A–F:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu: hệ thống cần “address people appropriately” (xưng hô/nói đúng cách)",
+              "p": "Hệ thống cần “socially aware”, tôn trọng truyền thống văn hóa đòi hỏi sự trang trọng với địa vị học thuật"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Future systems should address people appropriately",
+              "p": "addressing people in the right way"
+            },
+            {
+              "q": "and have an awareness of good manners (F)",
+              "p": "Etiquette-sensitive … respect … polite"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vế F “and have an awareness of good manners” phù hợp với việc tôn trọng chuẩn mực văn hóa."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "At the same time, they might help to preserve local customs, slowing the spread of habits associated with international English, such as its readiness to get on first-name terms."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nối câu: “Users may be able to maintain their local customs” … với vế kết đúng, A–F:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu: người dùng “maintain their local customs” (giữ phong tục địa phương)",
+              "p": "Công cụ dịch có thể “preserve local customs”, làm chậm sự lan tràn thói quen của tiếng Anh quốc tế như xưng tên riêng ngay (“first-name terms”)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Users may maintain their local customs",
+              "p": "help to preserve local customs"
+            },
+            {
+              "q": "as systems do not need to conform to standard practices (B)",
+              "p": "slowing the spread of habits associated with international English"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vế B “as systems do not need to conform to standard practices” phù hợp vì hệ thống không cần rập khuôn theo tiếng Anh quốc tế."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Professors and other professionals will not outsource language awareness to software, though."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Công nghệ dịch giọng nói sẽ được xem là rất hữu dụng khắp giới học thuật và chuyên nghiệp không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“will be seen as very useful throughout the academic and professional worlds”",
+              "p": "“professors and other professionals will not outsource language awareness to software” — họ sẽ không giao hẳn việc hiểu ngôn ngữ cho máy; trước đó bài cũng nói thiết bị hiện chỉ là “eye-catching novelties”, hợp cho khách sạn hơn công việc chuyên môn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "will be seen as very useful throughout the academic and professional worlds",
+              "p": "professors and other professionals will not outsource language awareness to software"
+            },
+            {
+              "q": "very useful for professionals",
+              "p": "eye-catching novelties (more for hotels than serious professional work)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Giới chuyên môn không dựa hẳn vào phần mềm dịch — phản bác ý “rất hữu dụng” trong câu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Whether it will help people conduct their family lives or relationships is open to question"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giá trị tổng thể của dịch tự động với đời sống gia đình vẫn chưa được chứng minh rõ ràng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the overall value … to family life is yet to be shown”",
+              "p": "Việc nó có giúp được đời sống gia đình hay không “is open to question” — tức vẫn còn chưa rõ, chưa được chứng minh"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the overall value … to family life is yet to be shown",
+              "p": "Whether it will help people conduct their family lives … is open to question"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Open to question” tương ứng với “yet to be shown” — câu đúng (YES)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "one noteworthy possibility is that it could overcome the language barriers that often arise between generations after migration, leaving children and their grandparents without a shared language."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dịch tự động có thể khiến cuộc sống của các gia đình nhập cư khó khăn hơn không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“could make life more difficult for immigrant families”",
+              "p": "Ngược lại, công nghệ này có thể “overcome the language barriers” giữa các thế hệ sau khi di cư — tức là giúp đỡ, không phải gây khó khăn thêm"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "could make life more difficult for immigrant families",
+              "p": "could overcome the language barriers that often arise between generations after migration"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài cho rằng công nghệ có thể giúp vượt rào cản ngôn ngữ giữa các thế hệ — trái với ý “gây khó khăn hơn”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Even if voice-morphing technology simulates the speaker's voice, their lip movements won't match, and they will look like they are in a dubbed movie."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các nhà khoa học có đang tìm cách xử lý khía cạnh hình ảnh (visual) của việc dịch ngôn ngữ không — bài có nói không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“visual aspects … are being considered by scientists”",
+              "p": "Bài chỉ nêu hạn chế: cử động môi sẽ không khớp giọng, giống “dubbed movie” — nêu ra như nhược điểm khó tránh, không nói ai đang tìm cách xử lý"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Visual aspects of language translation are being considered by scientists",
+              "p": "lip movements won't match … like a dubbed movie (limitation noted — not that scientists are working on it)"
+            },
+            {
+              "q": "are being considered by scientists",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ mô tả hạn chế hình ảnh, không nói các nhà khoa học đang nghiên cứu giải quyết nó."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Sharing a language can promote a sense of belonging and community, as with the international scientists who use English as a lingua franca, where their predecessors used Latin."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các nhà khoa học quốc tế có thấy tiếng Anh dễ dịch sang ngôn ngữ khác hơn tiếng Latin không — bài có so sánh không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“found English easier to translate into other languages than Latin”",
+              "p": "Bài chỉ nói các nhà khoa học quốc tế dùng tiếng Anh làm “lingua franca” thay cho tiếng Latin trước đây — không so sánh độ dễ dịch"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "English easier to translate into other languages than Latin",
+              "p": "scientists use English as a lingua franca (replacing Latin historically) — no comparison of translation ease"
+            },
+            {
+              "q": "easier to translate … than Latin",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không đề cập việc so sánh độ dễ dịch giữa tiếng Anh và tiếng Latin."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Though the practical need for a common language will diminish, the social value of sharing one will persist."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có sự khác biệt giữa nhu cầu xã hội và nhu cầu thực tiễn của con người đối với ngôn ngữ không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a difference between people's social and practical needs”",
+              "p": "Nhu cầu thực tiễn (“practical need”) về một ngôn ngữ chung sẽ giảm đi, nhưng giá trị xã hội (“social value”) của việc chia sẻ ngôn ngữ vẫn tồn tại — đây là sự khác biệt rõ ràng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a difference between people’s social and practical needs",
+              "p": "the practical need for a common language will diminish, [but] the social value of sharing one will remain"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả phân biệt rõ nhu cầu thực tiễn (sẽ giảm) và giá trị xã hội (vẫn còn) của ngôn ngữ — câu đúng (YES)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    }
+  }
+}

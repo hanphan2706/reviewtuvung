@@ -1,0 +1,1901 @@
+{
+  "pilotId": "cam19-test2",
+  "schemaVersion": 4,
+  "note": "Cam 19 R T2 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The Industrial Revolution in Britain",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Athletes and stress",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "An inquiry into the existence of the gifted child",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "piston",
+      "evidence": {
+        "quoteEn": "Watt later worked with the English manufacturer Matthew Boulton to invent a new steam engine driven by both the forward and backward strokes of the piston, while the gear mechanism it was connected to produced rotary motion."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: trong máy hơi nước của Watt và Boulton, chuyển động của bộ phận nào được nối với hệ bánh răng — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the movement of the ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "notes: “the movement of the ______ was linked to a gear system”",
+              "p": "bài: “driven by both the forward and backward strokes of the piston, while the gear mechanism it was connected to produced rotary motion” — pít-tông chuyển động tới lui, nối với cơ cấu bánh răng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "linked to a gear system",
+              "p": "connected to the gear mechanism"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói máy chạy nhờ “forward and backward strokes of the piston”, rồi “the gear mechanism it was connected to” — chính pít-tông được nối với bánh răng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "piston"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "coal",
+      "evidence": {
+        "quoteEn": "The demand for coal, which was a relatively cheap energy source, grew rapidly during the Industrial Revolution, as it was needed to run not only the factories used to produce manufactured goods, but also steam-powered transportation."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: nguồn năng lượng nào cần cung cấp nhiều hơn để chạy máy hơi nước — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “A greater supply of ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "notes: “A greater supply of ______ was required to power steam engines”",
+              "p": "bài: “The demand for coal … grew rapidly” — nhu cầu than đá tăng để vận hành nhà máy và giao thông hơi nước"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a greater supply of",
+              "p": "growing demand for"
+            },
+            {
+              "q": "required to power steam engines",
+              "p": "needed to run factories and transportation"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài viết “The demand for coal … grew rapidly … as it was needed to run … factories … but also steam-powered transportation” — nhu cầu than đá tăng mạnh."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "coal"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "workshops",
+      "evidence": {
+        "quoteEn": "the British textile business was a true ‘cottage industry’, with the work performed in small workshops or even homes by individual spinners, weavers and dyers."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: trước Cách mạng Công nghiệp, thợ dệt làm việc tại nhà và ở đâu nữa — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “at home and in ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "notes: “spinners and weavers worked at home and in ______”",
+              "p": "bài: “the work performed in small workshops or even homes by individual spinners, weavers and dyers” — tại xưởng nhỏ hoặc ngay tại nhà"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "at home",
+              "p": "giữ nguyên"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài kể công việc được thực hiện “in small workshops or even homes” — ngoài nhà còn có các xưởng nhỏ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "workshops"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "labour",
+      "answerAlternatives": [
+        "labor",
+        "labour / labor"
+      ],
+      "evidence": {
+        "quoteEn": "With these machines, relatively little labour was required to produce cloth, and the new, mechanised textile factories that opened around the country were quickly able to meet customer demand"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: khi có spinning jenny và power loom, dệt vải cần ít cái gì hơn — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “Not as much ______ was needed” cần một danh từ không đếm được."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "notes: “Not as much ______ was needed to produce cloth”",
+              "p": "bài: “relatively little labour was required to produce cloth” — ít nhân công/lao động hơn hẳn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not as much ... was needed",
+              "p": "relatively little ... was required"
+            },
+            {
+              "q": "to produce cloth",
+              "p": "giữ nguyên"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài viết “relatively little labour was required to produce cloth” — máy mới giúp cần ít lao động hơn (chấp nhận cả labor)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "labour"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "quality",
+      "evidence": {
+        "quoteEn": "This method was cheaper and produced metals that were of a higher quality, enabling Britain’s iron and steel production to expand"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: nung sắt bằng coke cho ra vật liệu tốt hơn về mặt gì — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “better ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "notes: “resulted in material that was better ______”",
+              "p": "bài: “produced metals that were of a higher quality” — kim loại chất lượng cao hơn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "resulted in material that was better",
+              "p": "produced metals of a higher quality"
+            },
+            {
+              "q": "better",
+              "p": "higher quality"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói phương pháp này “produced metals that were of a higher quality” — chất lượng kim loại cao hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "quality"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "railway",
+      "answerAlternatives": [
+        "railways",
+        "railway(s)"
+      ],
+      "evidence": {
+        "quoteEn": "enabling Britain’s iron and steel production to expand in response to demand created by the Napoleonic Wars (1803-15) and the expansion of the railways from the 1830s."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: nhu cầu sắt tăng cùng với sự phát triển của ngành gì — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the growth of the ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "notes: “Demand for iron increased with the growth of the ______”",
+              "p": "bài: “the expansion of the railways from the 1830s” — đường sắt mở rộng kéo theo nhu cầu sắt"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the growth of",
+              "p": "the expansion of"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài liệt kê nhu cầu tạo ra bởi “the expansion of the railways from the 1830s” — sự mở rộng đường sắt."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "railway(s)"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "sanitation",
+      "evidence": {
+        "quoteEn": "This rapid urbanisation brought significant challenges, as overcrowded cities suffered from pollution and inadequate sanitation."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: thành phố mới bẩn, đông đúc và còn thiếu cái gì — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “lacked sufficient ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "notes: “The new cities … lacked sufficient ______”",
+              "p": "bài: “overcrowded cities suffered from pollution and inadequate sanitation” — thiếu vệ sinh môi trường"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lacked sufficient",
+              "p": "suffered from inadequate"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài viết “overcrowded cities suffered from pollution and inadequate sanitation” — thiếu hệ thống vệ sinh."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "sanitation"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "steam-powered boats and ships were widely used to carry goods along Britain’s canals as well as across the Atlantic."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem bài có nói mạng lưới kênh đào Anh tự nó phát triển nhanh để chở thêm hàng hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề: “Britain’s canal network grew rapidly” để chở thêm hàng",
+              "p": "bài: “steam-powered boats and ships were widely used to carry goods along Britain’s canals” — chỉ nói tàu chạy trên kênh, không nói mạng lưới mở rộng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Britain's canal network grew rapidly",
+              "p": "steam-powered boats and ships were widely used to carry goods along Britain's canals"
+            },
+            {
+              "q": "so that more goods could be transported",
+              "p": "no mention of the canal network itself expanding - not stated"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ nhắc tàu hơi nước vận chuyển hàng trên kênh đào, không hề nói mạng lưới kênh đào được mở rộng nhanh — NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "This method was cheaper and produced metals that were of a higher quality"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem bài có nói chi phí ngành sắt tăng lên khi dùng coke để nung hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề: chi phí (“Costs … rose”) khi nung sắt bằng coke",
+              "p": "bài: “This method was cheaper and produced metals that were of a higher quality” — phương pháp mới rẻ hơn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Costs ... rose",
+              "p": "cheaper"
+            },
+            {
+              "q": "smelting iron ore with coke",
+              "p": "giữ nguyên"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định “This method was cheaper” — rẻ hơn, trái hẳn với ý chi phí tăng trong đề → FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "In 1837, British inventors William Cooke and Charles Wheatstone patented the first commercial telegraphy system. In the 1830s and 1840s, Samuel Morse and other inventors worked on their own versions in the United States."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem bài có so sánh độ tin cậy giữa hệ thống Morse và hệ thống Cooke–Wheatstone hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề: hệ thống Morse “more reliable” hơn Cooke & Wheatstone",
+              "p": "bài: Morse “worked on their own versions in the United States” cùng thời kỳ — không so sánh độ tin cậy"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more reliable than Cooke & Wheatstone's system",
+              "p": "not stated - bài chỉ kể hai hệ thống song song, không so sánh"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ kể hai hệ thống cùng thời kỳ, không hề nói cái nào đáng tin cậy hơn — NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Although industrialisation increased the country’s economic output overall and improved the standard of living for the middle and upper classes, many poor people continued to struggle."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem bài có nói lợi ích kinh tế công nghiệp hóa chỉ đến một số tầng lớp xã hội hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề: lợi ích kinh tế “limited to certain sectors of society”",
+              "p": "bài: “improved the standard of living for the middle and upper classes” trong khi “many poor people continued to struggle”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "economic benefits of industrialisation were limited to certain sectors of society",
+              "p": "improved the standard of living for the middle and upper classes"
+            },
+            {
+              "q": "limited to certain sectors",
+              "p": "many poor people continued to struggle"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói công nghiệp hóa “improved the standard of living for the middle and upper classes” nhưng “many poor people continued to struggle” — lợi ích không lan rộng → TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Many had spent years learning their craft, and they feared that unskilled machine operators were robbing them of their livelihood."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem bài có nói thợ dệt lành nghề tin máy mới sẽ khiến họ mất việc hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề: thợ dệt tin máy mới sẽ dẫn tới “job losses”",
+              "p": "bài: “feared that unskilled machine operators were robbing them of their livelihood” — sợ bị cướp mất sinh kế"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "believed ... would lead to job losses",
+              "p": "feared that unskilled machine operators were robbing them of their livelihood"
+            },
+            {
+              "q": "skilled weavers",
+              "p": "Many had spent years learning their craft"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài viết họ “feared that unskilled machine operators were robbing them of their livelihood” — lo mất sinh kế, tức mất việc → TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "In the days that followed, other Luddites were arrested, and dozens were hanged or transported to Australia."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem bài có nói người dân địa phương thương cảm những Luddite bị bắt gần Huddersfield hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề: có “some sympathy among local people” với người bị bắt",
+              "p": "bài: “other Luddites were arrested, and dozens were hanged or transported to Australia” — chỉ kể sự kiện, không nói phản ứng dân địa phương"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "some sympathy among local people",
+              "p": "not stated - bài chỉ kể bị bắt/treo cổ/đày đi, không nói cảm xúc"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ kể bị bắt, treo cổ, đày sang Úc — không một dòng nào về cảm xúc người dân địa phương → NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "both affect the production of adrenaline and cortisol – also known as ‘stress hormones’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới hai hợp chất hóa học ảnh hưởng thành tích. Đề viết: “reference to two chemical compounds which impact on performance”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề cần đoạn nói hai hợp chất hóa học tác động thành tích (“two chemical compounds which impact on performance”)",
+              "p": "đoạn D: “adrenaline” và “cortisol” — “also known as ‘stress hormones’” — hai hormone stress ảnh hưởng trực tiếp hiệu suất"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "two chemical compounds which impact on performance",
+              "p": "adrenaline and cortisol - also known as 'stress hormones'"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "there are many ways athletes can ensure they respond positively under pressure. Positive stress responses can be promoted through the language that they and others – such as coaches or parents — use."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn đưa ví dụ chiến lược giảm tác động stress. Đề viết: “examples of strategies for minimising the effects of stress”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề muốn ví dụ chiến lược giảm stress (“strategies for minimising the effects of stress”)",
+              "p": "đoạn F: liệt kê ngôn ngữ tích cực, “visualisation”, tạo áp lực cạnh tranh khi tập — đều là chiến lược cụ thể"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "strategies for minimising stress",
+              "p": "ngôn ngữ tích cực, visualisation, tạo áp lực cạnh tranh khi tập"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "she later attributed to ‘the accumulation of the excitement and the buzz’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn kể một VĐV tự lý giải trải nghiệm stress của mình. Đề viết: “how a sportsperson accounted for their own experience of stress”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề cần đoạn VĐV tự giải thích trải nghiệm stress (“accounted for their own experience of stress”)",
+              "p": "đoạn A: Emma Raducanu quy khó thở, tim đập nhanh về “the accumulation of the excitement and the buzz” — chính cô tự lý giải"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how a sportsperson accounted for their own experience of stress",
+              "p": "which she later attributed to 'the accumulation of the excitement and the buzz'"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Research shows that the challenge states lead to good performance, while threat states lead to poorer performance."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn có kết quả nghiên cứu về liên hệ phản ứng stress và thành tích. Đề viết: “study results indicating links between stress responses and performance”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề cần kết quả nghiên cứu nối stress với thành tích (“links between stress responses and performance”)",
+              "p": "đoạn C: “Research shows that the challenge states lead to good performance, while threat states lead to poorer performance”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "study results on stress and performance",
+              "p": "challenge state → tốt hơn, threat state → kém hơn"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "Psychologists can also help athletes change how they see their physiological responses – such as helping them see a higher heart rate as excitement, rather than nerves."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc những người có thể ảnh hưởng cách VĐV nhìn nhận phản ứng stress. Đề viết: “mention of people who can influence how athletes perceive their stress responses”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề cần đoạn nói ai có thể tác động cách VĐV nhìn stress (“influence how athletes perceive their stress responses”)",
+              "p": "đoạn F: “coaches or parents” dùng ngôn ngữ tích cực; “Psychologists can also help athletes change how they see their physiological responses”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "people who can influence how athletes perceive their stress responses",
+              "p": "coaches or parents"
+            },
+            {
+              "q": "influence how athletes perceive",
+              "p": "Psychologists can also help athletes change how they see their physiological responses"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "injury",
+      "evidence": {
+        "quoteEn": "any potential dangers such as injury."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, cần điền từ gì vào chỗ trống về rủi ro tiềm ẩn khi thi đấu (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the possible risk of ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "câu hỏi: “coping with the possible risk of ______”",
+              "p": "bài: “any potential dangers such as injury” — nguy hiểm tiềm ẩn như chấn thương"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the possible risk of",
+              "p": "potential dangers such as"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài liệt kê các “demands” gồm “any potential dangers such as injury” — nguy cơ chấn thương."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "injury"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "serves",
+      "evidence": {
+        "quoteEn": "cortisol has been associated with more unsuccessful serves and greater anxiety."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, cortisol khiến tay vợt tạo ra ít cái gì tốt hơn — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “fewer good ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "câu hỏi: “Cortisol can cause tennis players to produce fewer good ______”",
+              "p": "bài: “cortisol has been associated with more unsuccessful serves and greater anxiety” — nhiều cú giao bóng thất bại hơn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fewer good",
+              "p": "more unsuccessful"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài viết cortisol gắn với “more unsuccessful serves” — nhiều cú giao bóng hỏng hơn, tức ít “good serves”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "serves"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "excitement",
+      "evidence": {
+        "quoteEn": "helping them see a higher heart rate as excitement, rather than nerves."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, nhà tâm lý giúp VĐV coi phản ứng cơ thể như biểu hiện cảm giác tích cực nào — điền từ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “such as ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "câu hỏi: “the effect of a positive feeling such as ______”",
+              "p": "bài: “see a higher heart rate as excitement, rather than nerves” — tim đập nhanh = excitement, không phải lo lắng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a positive feeling",
+              "p": "excitement (rather than nerves)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói nhà tâm lý giúp VĐV “see a higher heart rate as excitement, rather than nerves” — coi tim đập nhanh là hào hứng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "excitement"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "Visualisation",
+      "answerAlternatives": [
+        "Visualization",
+        "Visualisation / Visualization"
+      ],
+      "evidence": {
+        "quoteEn": "Developing psychological skills, such as visualisation, can also help decrease physiological responses to threat."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, kỹ thuật tâm lý nào giúp giảm phản ứng stress của VĐV — điền từ gì (một từ, viết hoa đầu câu):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Đầu câu cần viết hoa — vẫn là một danh từ chỉ tên kỹ thuật cụ thể."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "câu hỏi: “______ is an example of a psychological technique which can reduce an athlete’s stress responses”",
+              "p": "bài: “Developing psychological skills, such as visualisation, can also help decrease physiological responses to threat”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reduce … stress responses",
+              "p": "decrease physiological responses to threat"
+            },
+            {
+              "q": "reduce",
+              "p": "decrease"
+            },
+            {
+              "q": "stress responses",
+              "p": "physiological responses to threat"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nêu “Developing psychological skills, such as visualisation, can also help decrease physiological responses to threat”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Visualisation"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "B",
+      "answerPair": [
+        23,
+        24
+      ],
+      "correctLetters": [
+        "B",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "she began having difficulty regulating her breathing and heart rate during a match, which she later attributed to ‘the accumulation of the excitement and the buzz’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai ý được nhắc trong bài về việc Emma Raducanu rút lui khỏi Wimbledon:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: các triệu chứng stress thi đấu cô gặp tại giải (“symptoms of her performance stress at the tournament”)",
+              "p": "bài: cô “began having difficulty regulating her breathing and heart rate during a match” — khó điều hòa nhịp thở và tim"
+            },
+            {
+              "q": "D: khía cạnh Wimbledon khiến stress của cô tăng (“aspects of the Wimbledon tournament which increased her stress levels”)",
+              "p": "bài: “a much larger audience, higher expectations and facing a more skilful opponent” — khán giả đông, kỳ vọng cao, đối thủ giỏi hơn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "symptoms of her performance stress at the tournament",
+              "p": "began having difficulty regulating her breathing and heart rate during a match"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "B và D đều có bằng chứng rõ: B — triệu chứng stress thi đấu; D — yếu tố của giải làm tăng áp lực."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B và D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói rõ cô rút lui ở vòng/giai đoạn nào (“the stage at which she dropped out”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không có chi tiết biện pháp cô đã dùng để kiểm soát stress (“measures which she had taken to manage her stress levels”)."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Không nhắc phản ứng công chúng với bài đăng mạng xã hội (“reactions to her social media posts”)."
+            }
+          ]
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "D",
+      "answerPair": [
+        23,
+        24
+      ],
+      "correctLetters": [
+        "B",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "a much larger audience, higher expectations and facing a more skilful opponent, may all have led her to feel there were greater demands being placed on her at Wimbledon"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 23–24 — chọn ý còn lại trong cặp đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "D: khía cạnh giải làm stress tăng (“aspects of the tournament which increased her stress levels”)",
+              "p": "bài: “a much larger audience, higher expectations and facing a more skilful opponent” — áp lực từ chính giải đấu"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "aspects of the Wimbledon tournament which increased her stress levels",
+              "p": "a much larger audience, higher expectations and facing a more skilful opponent"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "D nói các yếu tố của Wimbledon làm tăng áp lực — đi cùng B trong cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần “Các lựa chọn còn lại” ở câu 23."
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "A",
+      "answerPair": [
+        25,
+        26
+      ],
+      "correctLetters": [
+        "A",
+        "E"
+      ],
+      "evidence": {
+        "quoteEn": "The intensity with which a person experiences anxiety depends on the demands and resources they have."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai ý về anxiety được nhắc trong đoạn E:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "A: yếu tố quyết định mức độ nghiêm trọng (“the factors which determine how severe it may be”)",
+              "p": "bài: “The intensity with which a person experiences anxiety depends on the demands and resources they have”"
+            },
+            {
+              "q": "E: tác hại nếu VĐV trải qua anxiety quá thường xuyên (“the harm that can result if athletes experience it too often”)",
+              "p": "bài: “repeated episodes of anxiety coupled with negative responses can increase risk of heart disease and depression”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "factors determining severity",
+              "p": "phụ thuộc vào demands và resources"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "A và E đều có trong đoạn E: A — yếu tố quyết định mức độ nghiêm trọng; E — hậu quả nếu lặp lại quá thường xuyên."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A và E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Không nói bao lâu thì triệu chứng anxiety xuất hiện (“how long it takes for its effects to become apparent”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài liệt kê triệu chứng nhưng không xếp cái nào phổ biến nhất (“which of its symptoms is most frequently encountered”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói loại VĐV nào dễ bị anxiety nhất (“the types of athletes who are most likely to suffer from it”)."
+            }
+          ]
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "E",
+      "answerPair": [
+        25,
+        26
+      ],
+      "correctLetters": [
+        "A",
+        "E"
+      ],
+      "evidence": {
+        "quoteEn": "repeated episodes of anxiety coupled with negative responses can increase risk of heart disease and depression."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 25–26 — chọn ý còn lại trong cặp đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "E: tác hại khi trải qua anxiety quá thường xuyên (“the harm that can result if … too often”)",
+              "p": "bài: “repeated episodes of anxiety … can increase risk of heart disease and depression”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "harm from frequent anxiety",
+              "p": "tăng nguy cơ bệnh tim và trầm cảm"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "E nói hậu quả sức khỏe khi anxiety lặp lại nhiều lần — đi cùng A trong cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần “Các lựa chọn còn lại” ở câu 25."
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "H",
+      "evidence": {
+        "quoteEn": "She was the only woman to win the Fields Medal – the mathematical equivalent of a Nobel prize."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn tóm tắt: Mirzakhani được xem là 27……… trong ngành toán học — chọn từ nào:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "tóm tắt: “regarded as ______ in the field of mathematics”",
+              "p": "bài: “She was the only woman to win the Fields Medal” — người phụ nữ duy nhất đoạt giải → unique (H)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "unique",
+              "p": "the only woman (to win the Fields Medal)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bà là “the only woman to win the Fields Medal” — duy nhất, nên chọn H (unique)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "but maths wasn’t her interest – reading was."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn tóm tắt: toán học giữ rất ít 28……… đối với bà lúc nhỏ — chọn từ nào:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "tóm tắt: “maths held little ______ for her as a child”",
+              "p": "bài: “maths wasn’t her interest – reading was” → appeal (A): sức hút"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "held little appeal",
+              "p": "wasn't her interest"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói “maths wasn’t her interest – reading was” — toán không hấp dẫn bà, nên chọn A (appeal)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "became interested when her elder brother told her about what he’d learned. He shared a famous maths problem from a magazine that fascinated her"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn tóm tắt: bà chỉ trở nên 29……… bởi bài toán khó anh trai đưa — chọn từ nào:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "tóm tắt: “until she was ______ by a difficult puzzle that one of her siblings showed her”",
+              "p": "bài: bài toán từ tạp chí “fascinated her” → intrigued (C)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "intrigued",
+              "p": "fascinated"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài toán “fascinated her” — bị cuốn hút, tương đương intrigued (C)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "she was curious, excited by what she did and also resolute in the face of setbacks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn tóm tắt: khi mọi việc không suôn sẻ, bà chứng tỏ mình là người 30……… — chọn từ nào:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "tóm tắt: “proved herself to be ______ when things did not go smoothly”",
+              "p": "bài: “resolute in the face of setbacks” → determined (B)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "determined",
+              "p": "resolute"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài mô tả bà “resolute in the face of setbacks” — kiên định trước khó khăn → determined (B)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "J",
+      "evidence": {
+        "quoteEn": "the most rewarding part is the “Aha” moment, the excitement of discovery and enjoyment of understanding something new"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn tóm tắt: bà nhận 31……… lớn nhất từ các phát hiện đột phá — chọn từ nào:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "tóm tắt: “she got the greatest ______ from making ground-breaking discoveries”",
+              "p": "bài: “the most rewarding part … enjoyment of understanding something new” → satisfaction (J)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "greatest satisfaction",
+              "p": "the most rewarding part / enjoyment"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói “the most rewarding part is the ‘Aha’ moment … enjoyment of understanding something new” → satisfaction (J)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "J"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "I",
+      "evidence": {
+        "quoteEn": "That trail took her to the heights of original research into mathematics."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn tóm tắt: bà chịu trách nhiệm một số nghiên cứu toán cực kỳ 32……… — chọn từ nào:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "tóm tắt: “she was responsible for some extremely ______ mathematical studies”",
+              "p": "bài: “the heights of original research into mathematics” → innovative (I)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "innovative",
+              "p": "original (research)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài viết “original research into mathematics” — nghiên cứu mang tính nguyên bản → innovative (I)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "I"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Most Nobel prize winners were unexceptional in childhood."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem bài có nói nhiều người đoạt giải trí tuệ danh giá thời trẻ chỉ đạt mức bình thường hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề: người thắng giải “only reached an average standard when young”",
+              "p": "bài: “Most Nobel prize winners were unexceptional in childhood” — hầu hết không nổi bật thời bé"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "only reached an average standard when young",
+              "p": "Most Nobel prize winners were unexceptional in childhood"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài viết “Most Nobel prize winners were unexceptional in childhood” — đúng như đề → YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "He failed the general part of the entry test to Zurich Polytechnic … He struggled at work initially, but he kept plugging away"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem bài có nói thất bại thời trẻ của Einstein do thiếu tự tin hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề: thất bại Einstein “were due to his lack of confidence”",
+              "p": "bài: “failed the general part of the entry test” và “struggled at work initially” — không nói do thiếu tự tin"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lack of confidence",
+              "p": "not stated - bài chỉ kể ông thi trượt, gặp khó ban đầu"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ kể ông thi trượt, gặp khó ban đầu — không đưa ra nguyên nhân là thiếu tự tin → NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "While the jury is out on giftedness being innate and other factors potentially making the difference"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem bài có nói việc trẻ sinh ra đã “gifted” vẫn còn gây tranh cãi hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề: “difficult to reach agreement on whether some children are actually born gifted”",
+              "p": "bài: “the jury is out on giftedness being innate” — chưa kết luận năng khiếu có bẩm sinh hay không"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "difficult to reach agreement on whether some children are actually born gifted",
+              "p": "the jury is out on giftedness being innate"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài viết “the jury is out on giftedness being innate” — chưa có đồng thuận → YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Most people say it is the intellect which makes a great scientist. They are wrong: it is character."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem bài có nói Einstein buồn vì cách công chúng nhìn nhận công trình cả đời ông hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề: Einstein “was upset by the public’s view of his life’s work”",
+              "p": "bài: trích “Most people say it is the intellect … They are wrong: it is character” — không nói ông buồn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "upset by public's view of his work",
+              "p": "not stated - bài chỉ trích lời ông về trí tuệ và tính cách"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ trích lời ông về trí tuệ và tính cách — không nhắc cảm xúc buồn bực với đánh giá công chúng → NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "It’s not that I’m so smart, it’s just that I stay with problems longer."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem bài có nói Einstein quy thành công cho tốc độ xử lý câu hỏi khoa học hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đề: thành công nhờ “the speed at which he dealt with scientific questions”",
+              "p": "bài: “it’s not that I’m so smart, it’s just that I stay with problems longer” — nhấn kiên trì, không phải nhanh"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "put his success down to the speed at which he dealt with scientific questions",
+              "p": "it's not that I'm so smart, it's just that I stay with problems longer"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ông nói “it’s just that I stay with problems longer” — bám trụ lâu, không phải tốc độ → NO."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "they must be taught the right attitudes and approaches to their learning and develop the attributes of high performers – curiosity, persistence and hard work, for example"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo Eyre, trẻ em cần điều gì để đạt chuẩn “gifted”?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: phát triển tinh thần ham tìm hiểu (“the development of a spirit of inquiry towards their studies”)",
+              "p": "bài: “develop the attributes of high performers – curiosity, persistence and hard work” — curiosity = tinh thần ham tìm hiểu"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the development of a spirit of inquiry towards their studies",
+              "p": "develop the attributes of high performers - curiosity, persistence and hard work"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói trẻ cần phát triển “curiosity, persistence and hard work” — curiosity tương ứng “spirit of inquiry” ở đáp án C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói cần “strict discipline from the teaching staff”."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nhắc hỗ trợ từ bạn học (“assistance from their peers in the classroom”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói mục tiêu vượt thành tích người khác (“surpass everyone else’s achievements”) — mà phát triển thái độ học đúng."
+            }
+          ]
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "he doesn’t think unique and innate talents are at the heart of performance… random students, trained in memory techniques for the study, went on to outperform others thought to have innately superior memories"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kết quả nghiên cứu của Ericsson là gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: sinh ra có năng khiếu đặc biệt không phải yếu tố quyết định (“Being born with a special gift is not the key factor in becoming expert”)",
+              "p": "bài: “random students, trained in memory techniques … went on to outperform others thought to have innately superior memories”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "special gift not the key factor",
+              "p": "học viên luyện ghi nhớ vượt người được coi có năng khiếu bẩm sinh"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ông “doesn’t think unique and innate talents are at the heart of performance”; học viên luyện ghi nhớ vượt cả người được coi có năng khiếu bẩm sinh → B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói học sinh có năng khiếu thì không cần cải thiện kỹ năng ghi nhớ."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không đề cập thời gian tập thể dục (“time for physical exercise”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài nói 10.000 giờ “is not a magic number” — không khẳng định chắc chắn tạo thiên tài."
+            }
+          ]
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Interviews uncovered strong evidence of an adult or adults in the child’s life who valued and supported education, either in the immediate or extended family or in the child’s wider community."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn áp cuối, điều gì được cho là chìa khóa thành công của một số trẻ em thiếu điều kiện?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "D: sự dẫn dắt của người hiểu lợi ích học tập (“the guidance of someone who recognises the benefits of learning”)",
+              "p": "bài: “strong evidence of an adult or adults … who valued and supported education” — luôn có người lớn ủng hộ việc học"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "guidance of someone valuing learning",
+              "p": "luôn có người lớn coi trọng, ủng hộ việc học của trẻ"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài tìm thấy “an adult or adults … who valued and supported education” — người lớn coi trọng và ủng hộ việc học, tương ứng đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói chế độ ăn đều đặn, đủ dưỡng chất tại nhà."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Thực tế hơn nửa số trẻ sống với cha/mẹ đơn thân — không phải “more than one parent”."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nói cộng đồng có cơ sở học tập đầu tư tốt (“well-funded facilities”) — chỉ nói cộng đồng coi trọng giáo dục."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

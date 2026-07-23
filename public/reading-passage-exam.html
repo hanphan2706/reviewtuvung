@@ -159,7 +159,53 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 .hl-btn.hl-remove-btn:hover{background:#ffebee;color:#c62828}
 
 /* ===== QUESTIONS PANEL (purple: section + question labels only) ===== */
-#questions-panel{width:50%;overflow-y:auto;background:var(--exam-passage-bg);border-left:1px solid var(--exam-chrome-border)}
+#questions-panel{width:50%;overflow:hidden;background:var(--exam-passage-bg);border-left:1px solid var(--exam-chrome-border);display:flex;flex-direction:column;min-height:0}
+#questions-scroll{flex:1;min-height:0;overflow-y:auto}
+.explanation-panel{display:none;flex-direction:column;flex:0 0 min(46%,400px);min-height:200px;max-height:52%;border-top:1px solid #e4e4e7;background:#fff}
+.explanation-panel.is-open{display:flex}
+.explanation-panel-head{display:flex;align-items:center;justify-content:flex-end;gap:10px;padding:6px 10px 0;flex-shrink:0;background:#fff}
+.explanation-panel-title{display:none}
+.explanation-panel-close{border:none;background:transparent;font-size:18px;line-height:1;cursor:pointer;color:#a1a1aa;padding:2px 6px;border-radius:6px}
+.explanation-panel-close:hover{background:#f4f4f5;color:#52525b}
+.explanation-panel-body{flex:1;min-height:0;overflow-y:auto;padding:4px 16px 18px;font-size:13px;line-height:1.65;color:#27272a}
+.exp-analysis-head{display:flex;align-items:center;gap:8px;margin:0 0 10px}
+.exp-analysis-head svg{width:16px;height:16px;flex-shrink:0;color:#000001}
+.exp-analysis-title{font-size:14px;font-weight:700;color:#000001;margin:0}
+.exp-intro{margin:0 0 12px;color:#3f3f46}
+.exp-compare-wrap{margin:0 0 14px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.exp-compare-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:12.5px;line-height:1.55;border:1px solid #E4E4E7;border-radius:8px;overflow:hidden}
+.exp-compare-table th,.exp-compare-table td{width:50%;padding:10px 12px;vertical-align:top;border:1px solid #E4E4E7;color:#27272a;word-break:break-word}
+.exp-compare-table th{background:#f5f5f7;font-weight:700;color:#000001;text-align:left;font-size:12px}
+.exp-compare-table tbody tr:nth-child(even) td{background:#fafafa}
+.exp-p-main{margin:0 0 6px}
+.exp-para-inline{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px}
+.exp-para-inline li{margin:0;font-size:12px;line-height:1.45;color:#3f3f46}
+.exp-para-inline .exp-para-q,.exp-para-inline .exp-para-p{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:11.5px;color:#18181b}
+.exp-para-inline .exp-para-eq{margin:0 5px;color:#71717a;font-weight:700}
+.exp-conclusion{margin:0 0 12px;padding:12px 14px;background:#f5f5f7;border-left:4px solid #000001;border-radius:0 8px 8px 0;color:#27272a}
+.exp-conclusion strong{font-weight:700;color:#000001}
+.exp-reject{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px}
+.exp-reject-title{font-size:12px;font-weight:700;color:#52525b;margin:0 0 4px}
+.exp-reject li{margin:0;padding:8px 10px;border-radius:8px;background:#fafafa;border:1px solid #E4E4E7;font-size:12.5px}
+.exp-reject .exp-letter{font-weight:700}
+.explain-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:20px;height:20px;margin-left:5px;padding:0;vertical-align:middle;
+  border:1px solid #d4d4d8;border-radius:6px;background:#fff;color:#52525b;
+  cursor:pointer;flex-shrink:0;position:relative;
+}
+.explain-btn:hover,.explain-btn.is-active{background:#18181b;border-color:#18181b;color:#fff}
+.explain-btn svg{width:11px;height:11px;display:block}
+.explain-btn[data-tip]::after{
+  content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);
+  white-space:nowrap;font-size:10px;font-weight:600;color:#fafafa;background:#18181b;
+  border:none;border-radius:6px;padding:4px 8px;opacity:0;pointer-events:none;
+}
+.explain-btn:hover[data-tip]::after{opacity:1}
+.ans-correct-wrap{display:inline-flex;align-items:center;gap:2px;flex-wrap:nowrap;white-space:nowrap;max-width:100%}
+.review-correct-pill-wrap{display:inline-flex;align-items:center;gap:4px;flex-wrap:nowrap}
+mark.evidence-hl{background:#fde68a;padding:0 1px;border-radius:2px;color:inherit}
+.p-body p.is-evidence-para{background:rgba(253,230,138,.35);border-radius:4px}
 .qsection{display:none;padding:26px 28px 40px}
 .qsection.active{display:block}
 
@@ -283,7 +329,9 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 .people-bank-title{font-size:11px;font-weight:800;color:#555;text-transform:uppercase;letter-spacing:.05em;margin-bottom:10px}
 .people-bank-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
 .people-bank-list li{display:flex;align-items:baseline;gap:8px;font-size:13px;line-height:1.4;color:var(--exam-content-text)}
-.people-bank-letter{font-weight:800;color:var(--exam-purple);min-width:1.25em}
+.people-bank-letter{font-weight:800;color:var(--exam-purple);min-width:1.25em;user-select:text;-webkit-user-select:text}
+.people-bank-name{flex:1;min-width:0;user-select:text;-webkit-user-select:text}
+.headings-bank .people-bank-letter{min-width:2.25em;text-transform:lowercase}
 
 /* Summary fill */
 .sumbox{background:#FAFAFA;border:1.5px solid #d4c8e4;border-radius:9px;padding:18px 22px;margin-bottom:8px}
@@ -335,12 +383,13 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 #exam-screen.exam-review-mode #questions-panel input,
 #exam-screen.exam-review-mode #questions-panel select,
 #exam-screen.exam-review-mode #questions-panel label.opt{pointer-events:none!important}
+#exam-screen.exam-review-mode #questions-panel .explain-btn{pointer-events:auto!important;cursor:pointer}
 #exam-screen.exam-review-mode #questions-panel input,
 #exam-screen.exam-review-mode #questions-panel select{opacity:.92}
 #exam-screen.exam-review-mode #sub-btn{cursor:default;pointer-events:none}
 #exam-screen.exam-review-mode #sub-btn:hover{background:var(--exam-submit-bg)}
 #exam-screen.exam-review-mode .track-hint{color:var(--exam-chrome-subtle)}
-.ans-review-line{margin-top:6px;font-size:11px;line-height:1.45;display:flex;flex-wrap:wrap;gap:6px 14px}
+.ans-review-line{margin-top:6px;font-size:11px;line-height:1.45;display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px}
 .ans-review-line .ans-your{color:#555}
 .ans-review-line .ans-correct{color:#1a7a30;font-weight:700}
 .ans-review-line.is-correct .ans-your{color:#1a7a30}
@@ -427,9 +476,18 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 
     <!-- ========== RIGHT: QUESTIONS ========== -->
     <div id="questions-panel">
-      <div id="questions-mount" class="qsection active">
-        <p style="padding:28px;color:#666">Đang tải câu hỏi…</p>
+      <div id="questions-scroll">
+        <div id="questions-mount" class="qsection active">
+          <p style="padding:28px;color:#666">Đang tải câu hỏi…</p>
+        </div>
       </div>
+      <aside id="explanation-panel" class="explanation-panel" hidden aria-live="polite">
+        <div class="explanation-panel-head">
+          <div class="explanation-panel-title" id="explanation-panel-title">Gợi ý</div>
+          <button type="button" class="explanation-panel-close" id="explanation-panel-close" aria-label="Đóng giải thích">×</button>
+        </div>
+        <div class="explanation-panel-body" id="explanation-panel-body"></div>
+      </aside>
     </div><!-- /questions-panel -->
   </div><!-- /main -->
 
@@ -472,10 +530,12 @@ var QUESTION_NUMS=[];
 var TOTAL_Q=0;
 var examLoadError=null;
 var examAnswerKey=null;
+var examExplanations=null;
 var examReviewMode=false;
 var userAnswersSnapshot={};
 var currentPassage=1;
 var passageQuestionRanges=[];
+var activeExplanationQ=null;
 
 function getQueryParams(){
   var p=new URLSearchParams(location.search);
@@ -556,6 +616,7 @@ function applyExamPayload(data){
   TOTAL_Q=QUESTION_NUMS.length;
   timeLeft=(data.timeMinutes||20)*60;
   examAnswerKey=data.answerKey&&typeof data.answerKey==='object'?data.answerKey:null;
+  examExplanations=data.explanations&&typeof data.explanations==='object'?data.explanations:null;
   if(!ssr){
     if(passagePanel&&data.passageHtml)passagePanel.innerHTML=data.passageHtml;
     if(questionsPanel){
@@ -564,14 +625,16 @@ function applyExamPayload(data){
         el.removeAttribute('data-bank-drop-bound');
       });
       if(data.questionsHtml){
-        if(data.isFullTest){
-          questionsPanel.innerHTML=data.questionsHtml;
-        }else{
-          questionsPanel.innerHTML='<div class="qsection active" id="q1-section">'+data.questionsHtml+'</div>';
-        }
+        var qInner=data.isFullTest?data.questionsHtml:('<div class="qsection active" id="q1-section">'+data.questionsHtml+'</div>');
+        questionsPanel.innerHTML='<div id="questions-scroll">'+qInner+'</div>'+
+          '<aside id="explanation-panel" class="explanation-panel" hidden aria-live="polite">'+
+          '<div class="explanation-panel-head"><div class="explanation-panel-title" id="explanation-panel-title">Gợi ý</div>'+
+          '<button type="button" class="explanation-panel-close" id="explanation-panel-close" aria-label="Đóng giải thích">×</button></div>'+
+          '<div class="explanation-panel-body" id="explanation-panel-body"></div></aside>';
       }
     }
   }
+  bindExplanationPanelUi();
   if(data.isFullTest){
     passageQuestionRanges=data.passageQuestionRanges||[];
     currentPassage=1;
@@ -863,8 +926,10 @@ function initFullTestTabs(){
   }
 }
 
-function switchPassage(n){
+function switchPassage(n,opts){
   if(!examMeta||!examMeta.isFullTest)return;
+  opts=opts||{};
+  var already=currentPassage===n;
   currentPassage=n;
   if(typeof hideHlPopover==='function')hideHlPopover();
   document.querySelectorAll('#passage-panel .passage-content').forEach(function(el){
@@ -878,10 +943,12 @@ function switchPassage(n){
   document.querySelectorAll('#passage-tabs .ptab').forEach(function(el){
     el.classList.toggle('active',parseInt(el.getAttribute('data-passage'),10)===n);
   });
-  var pp=document.getElementById('passage-panel');
-  var qp=document.getElementById('questions-panel');
-  if(pp)pp.scrollTop=0;
-  if(qp)qp.scrollTop=0;
+  if(!opts.preserveScroll&&!already){
+    var pp=document.getElementById('passage-panel');
+    var qs=document.getElementById('questions-scroll');
+    if(pp)pp.scrollTop=0;
+    if(qs)qs.scrollTop=0;
+  }
   var tb=document.getElementById('tb-passage-title');
   if(tb)tb.textContent=getPassageToolbarTitle();
 }
@@ -1291,12 +1358,59 @@ function renderReviewScore(){
   btn.setAttribute('aria-label',score.correct+' trên '+score.total+' câu đúng, '+bandLabel+formatIeltsBand(score.band));
 }
 
-function reviewLineHtml(userVal,correctVal){
+function reviewLineHtml(userVal,correctVal,qNum){
   var u=pdfEscHtml(userVal||'—');
   var c=pdfEscHtml(correctVal||'—');
   var match=userVal&&correctVal&&normalizeAns(userVal)===normalizeAns(correctVal);
   var cls='ans-review-line'+(match?' is-correct':' is-wrong');
-  return '<div class="'+cls+'"><span class="ans-your">Bạn: '+u+'</span><span class="ans-correct">Đáp án: '+c+'</span></div>';
+  var btn=explainBtnHtml(qNum);
+  return '<div class="'+cls+'"><span class="ans-your">Bạn: '+u+'</span>'+
+    '<span class="ans-correct-wrap"><span class="ans-correct">Đáp án: '+c+'</span>'+btn+'</span></div>';
+}
+
+function explainBtnHtml(qNum){
+  if(!examExplanations||!examExplanations[String(qNum)])return '';
+  return '<button type="button" class="explain-btn" data-q="'+qNum+'" data-tip="Giải thích" aria-label="Giải thích câu '+qNum+'" onclick="openQuestionExplanation('+qNum+')">'+
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a8 8 0 0 0-8 8c0 2.4 1.1 4.5 2.8 6l.7.7V19a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-2.3l.7-.7A7.96 7.96 0 0 0 20 10a8 8 0 0 0-8-8zm-1 16v-1h2v1h-2zm1.1-3.3-.5-.5A5.95 5.95 0 0 1 6 10a6 6 0 1 1 10.9 3.5l-.5.5-.4.4V15h-4v-.4l-.4-.4-.5-.5z"/></svg>'+
+    '</button>';
+}
+
+function appendExplainBtnNear(el,qNum){
+  if(!el||!examExplanations||!examExplanations[String(qNum)])return;
+  var root=el.closest('.tfng, .mrow, .choose-two-pick, .qb, .qb-tfng')||el.parentNode;
+  if(root&&root.querySelector('.explain-btn[data-q="'+qNum+'"]'))return;
+  var wrap=document.createElement('span');
+  wrap.innerHTML=explainBtnHtml(qNum);
+  var btn=wrap.firstElementChild;
+  if(!btn)return;
+  var pill=root?root.querySelector('.review-correct-pill'):null;
+  if(pill){
+    if(!pill.parentNode.classList||!pill.parentNode.classList.contains('review-correct-pill-wrap')){
+      var pillWrap=document.createElement('span');
+      pillWrap.className='review-correct-pill-wrap';
+      pill.parentNode.insertBefore(pillWrap,pill);
+      pillWrap.appendChild(pill);
+      pillWrap.appendChild(btn);
+      return;
+    }
+    pill.parentNode.appendChild(btn);
+    return;
+  }
+  /* Never nest explain button inside label.opt — review mode sets pointer-events:none on labels. */
+  var qnumEl=root?root.querySelector('.qnum'):null;
+  if(qnumEl){
+    qnumEl.appendChild(btn);
+    return;
+  }
+  if(el.tagName==='SELECT'&&el.parentNode){
+    el.parentNode.insertBefore(btn,el.nextSibling);
+    return;
+  }
+  if(el.classList&&el.classList.contains('opts')&&el.parentNode){
+    el.parentNode.insertBefore(btn,el.nextSibling);
+    return;
+  }
+  if(el.parentNode)el.parentNode.appendChild(btn);
 }
 
 function insertReviewLineAfter(el,html){
@@ -1367,7 +1481,7 @@ function applyReviewAnswers(){
     var correct=examAnswerKey[qid]||examAnswerKey[String(n)]||'';
     if(!String(correct).trim())continue;
     var user=userAnswersSnapshot[qid]||'';
-    var html=reviewLineHtml(user,correct);
+    var html=reviewLineHtml(user,correct,n);
     var inp=document.getElementById(qid);
     if(inp){
       if(inp.classList.contains('phrase-drop')){
@@ -1380,18 +1494,366 @@ function applyReviewAnswers(){
     var sel=document.getElementById('sel-'+qid);
     if(sel){
       highlightSelectReview(sel,user,correct);
+      appendExplainBtnNear(sel.closest('.tfng')||sel.closest('.mrow')||sel,n);
       continue;
     }
     var optsEl=document.getElementById(qid+'-opts');
     if(optsEl){
       highlightMcqReview(qid,user,correct);
+      insertReviewLineAfter(optsEl,html);
       continue;
     }
     var msel=document.querySelector('#questions-panel [onchange*="'+qid+'"]');
     if(msel&&msel.tagName==='SELECT'){
       highlightSelectReview(msel,user,correct);
+      appendExplainBtnNear(msel.closest('.mrow')||msel,n);
     }
   }
+}
+
+function bindExplanationPanelUi(){
+  var closeBtn=document.getElementById('explanation-panel-close');
+  if(closeBtn&&!closeBtn.getAttribute('data-bound')){
+    closeBtn.setAttribute('data-bound','1');
+    closeBtn.addEventListener('click',closeQuestionExplanation);
+  }
+}
+
+function clearEvidenceHighlights(){
+  document.querySelectorAll('mark.evidence-hl').forEach(function(mark){
+    var parent=mark.parentNode;
+    if(!parent)return;
+    while(mark.firstChild)parent.insertBefore(mark.firstChild,mark);
+    parent.removeChild(mark);
+    parent.normalize();
+  });
+  document.querySelectorAll('.p-body p.is-evidence-para').forEach(function(p){
+    p.classList.remove('is-evidence-para');
+  });
+}
+
+function getActivePassageBody(){
+  return document.querySelector('#passage-panel .passage-content.active .p-body')||
+    document.querySelector('#passage-panel .p-body');
+}
+
+function scrollElementWithinPanel(el,panel){
+  if(!el||!panel)return;
+  try{
+    var er=el.getBoundingClientRect();
+    var pr=panel.getBoundingClientRect();
+    var delta=(er.top+er.bottom)/2-(pr.top+pr.bottom)/2;
+    panel.scrollTop+=delta;
+  }catch(e){}
+}
+
+function foldEvidenceText(text){
+  var out='';
+  var map=[];
+  var s=String(text||'');
+  for(var i=0;i<s.length;i++){
+    var ch=s.charAt(i);
+    var rep=ch;
+    if(ch==='\u2018'||ch==='\u2019'||ch==='\u201A'||ch==='\u2032')rep="'";
+    else if(ch==='\u201C'||ch==='\u201D'||ch==='\u201E'||ch==='\u2033')rep='"';
+    else if(ch==='\u00a0')rep=' ';
+    else if(ch==='\u2026')rep='...';
+    for(var j=0;j<rep.length;j++){
+      out+=rep.charAt(j);
+      map.push(i);
+    }
+  }
+  var folded='';
+  var foldedMap=[];
+  var prevSpace=false;
+  for(var k=0;k<out.length;k++){
+    var c=out.charAt(k);
+    var isSpace=c===' '||c==='\n'||c==='\r'||c==='\t';
+    if(isSpace){
+      if(prevSpace)continue;
+      folded+=' ';
+      foldedMap.push(map[k]);
+      prevSpace=true;
+    }else{
+      folded+=c;
+      foldedMap.push(map[k]);
+      prevSpace=false;
+    }
+  }
+  var start=0;
+  var end=folded.length;
+  while(start<end&&folded.charAt(start)===' ')start++;
+  while(end>start&&folded.charAt(end-1)===' ')end--;
+  return {text:folded.slice(start,end), map:foldedMap.slice(start,end)};
+}
+
+/** Split a quote on ellipsis so non-contiguous evidence can highlight as separate spans. */
+function expandEvidenceQuoteSegments(quote){
+  var raw=String(quote||'').replace(/\s+/g,' ').trim();
+  if(!raw)return [];
+  var parts=raw.split(/\s*(?:\u2026|\.{3}|…)\s*/);
+  var out=[];
+  parts.forEach(function(part){
+    var p=String(part||'').trim();
+    // Skip tiny leftovers from "a … b … c" paraphrases.
+    if(p.length>=12)out.push(p);
+  });
+  return out.length?out:[raw];
+}
+
+function collectEvidenceQuotes(evidence){
+  var list=[];
+  var seen={};
+  function push(q){
+    expandEvidenceQuoteSegments(q).forEach(function(seg){
+      var key=seg.toLowerCase();
+      if(seen[key])return;
+      seen[key]=true;
+      list.push(seg);
+    });
+  }
+  if(evidence&&evidence.quotesEn&&evidence.quotesEn.length){
+    evidence.quotesEn.forEach(push);
+  }
+  if(evidence&&evidence.quoteEn)push(evidence.quoteEn);
+  return list;
+}
+
+function highlightEvidenceQuote(quote,opts){
+  var body=getActivePassageBody();
+  if(!body||!quote)return false;
+  var shouldScroll=!opts||opts.scroll!==false;
+  var walker=document.createTreeWalker(body,NodeFilter.SHOW_TEXT,null);
+  var full='';
+  var map=[];
+  while(walker.nextNode()){
+    var node=walker.currentNode;
+    var text=node.nodeValue||'';
+    for(var i=0;i<text.length;i++){
+      map.push({node:node,offset:i});
+      full+=text.charAt(i);
+    }
+  }
+  if(!full)return false;
+
+  var foldedFull=foldEvidenceText(full);
+  var foldedNeedle=foldEvidenceText(String(quote).replace(/\s+/g,' ').trim());
+  if(!foldedNeedle.text)return false;
+
+  var idx=foldedFull.text.indexOf(foldedNeedle.text);
+  var matchLen=foldedNeedle.text.length;
+  if(idx<0){
+    // Prefer a longer loose prefix so short accidental matches are rarer.
+    var looseLen=Math.min(72,foldedNeedle.text.length);
+    var loose=foldedNeedle.text.slice(0,looseLen);
+    idx=foldedFull.text.indexOf(loose);
+    if(idx<0)return false;
+    matchLen=loose.length;
+  }
+
+  // Map folded indices back to original character positions.
+  var origStart=foldedFull.map[idx];
+  var origEnd=foldedFull.map[idx+matchLen-1];
+  if(origStart==null||origEnd==null)return false;
+  var start=map[origStart];
+  var end=map[origEnd];
+  if(!start||!end)return false;
+
+  var panel=document.getElementById('passage-panel');
+  try{
+    var range=document.createRange();
+    range.setStart(start.node,start.offset);
+    range.setEnd(end.node,end.offset+1);
+    var mark=document.createElement('mark');
+    mark.className='evidence-hl';
+    range.surroundContents(mark);
+    if(shouldScroll)scrollElementWithinPanel(mark,panel);
+    return true;
+  }catch(e){
+    var p=start.node.parentElement&&start.node.parentElement.closest('p');
+    if(p){
+      p.classList.add('is-evidence-para');
+      if(shouldScroll)scrollElementWithinPanel(p,panel);
+      return true;
+    }
+    return false;
+  }
+}
+
+function highlightEvidenceQuotes(quotes){
+  if(!quotes||!quotes.length)return false;
+  var any=false;
+  var scrolled=false;
+  quotes.forEach(function(q){
+    var ok=highlightEvidenceQuote(q,{scroll:!scrolled});
+    if(ok){
+      any=true;
+      scrolled=true;
+    }
+  });
+  return any;
+}
+
+function highlightEvidenceLetter(letter){
+  var body=getActivePassageBody();
+  if(!body||!letter)return false;
+  var want=String(letter).trim().toUpperCase();
+  var paras=body.querySelectorAll('p');
+  var panel=document.getElementById('passage-panel');
+  for(var i=0;i<paras.length;i++){
+    var pid=paras[i].querySelector('.pid');
+    var label=(pid?pid.textContent:paras[i].textContent||'').trim().charAt(0).toUpperCase();
+    if(label===want){
+      paras[i].classList.add('is-evidence-para');
+      scrollElementWithinPanel(paras[i],panel);
+      return true;
+    }
+  }
+  return false;
+}
+
+function renderExplanationSteps(steps){
+  if(!steps||!steps.length)return '<p>Chưa có ghi chú cho câu này.</p>';
+
+  var ask='', grammar='', reason='', verdict='', rejectHtml='';
+  var pairs=[];
+  var paraphrases=[];
+  steps.forEach(function(step){
+    var id=step.id||'';
+    if(id==='ask'&&step.bodyVi)ask=step.bodyVi;
+    else if(id==='grammar'&&step.bodyVi)grammar=step.bodyVi;
+    else if(id==='bridge'){
+      if(step.pairs&&step.pairs.length){
+        pairs=pairs.concat(step.pairs);
+        step.pairs.forEach(function(pair){
+          if(pair.paraphrases&&pair.paraphrases.length)paraphrases=paraphrases.concat(pair.paraphrases);
+        });
+      }
+      if(step.paraphrases&&step.paraphrases.length)paraphrases=paraphrases.concat(step.paraphrases);
+    }
+    else if(id==='reason'&&step.bodyVi)reason=step.bodyVi;
+    else if(id==='verdict'&&step.bodyVi)verdict=step.bodyVi;
+    else if(id==='reject'){
+      if(typeof step.distractors==='string'){
+        rejectHtml='<p class="exp-intro">'+pdfEscHtml(step.distractors)+'</p>';
+      }else if(step.distractors&&step.distractors.length){
+        rejectHtml='<div class="exp-reject-title">Các lựa chọn còn lại</div><ul class="exp-reject">';
+        step.distractors.forEach(function(d){
+          rejectHtml+='<li><span class="exp-letter">'+pdfEscHtml(d.letter)+'.</span> '+pdfEscHtml(d.whyVi)+'</li>';
+        });
+        rejectHtml+='</ul>';
+      }
+    }else if(step.bodyVi&&!ask&&(id==='understand'||!id)){
+      ask=step.bodyVi;
+    }else if(step.pairs&&step.pairs.length){
+      pairs=pairs.concat(step.pairs);
+      step.pairs.forEach(function(pair){
+        if(pair.paraphrases&&pair.paraphrases.length)paraphrases=paraphrases.concat(pair.paraphrases);
+      });
+    }else if(step.paraphrases&&step.paraphrases.length){
+      paraphrases=paraphrases.concat(step.paraphrases);
+    }
+  });
+
+  var chartIcon='<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 19h3V9H4v10zm6.5 0h3V5h-3v14zM17 19h3v-7h-3v7z"/></svg>';
+  var html='<div class="exp-analysis-head">'+chartIcon+'<h3 class="exp-analysis-title">Phân tích chi tiết</h3></div>';
+
+  var intro=ask||'';
+  if(grammar)intro=(intro?intro+' ':'')+grammar;
+  if(intro){
+    var introText=intro;
+    if(!/[:：]$/.test(introText.trim())&&pairs.length)introText=introText.replace(/[.?؟]*\s*$/,'')+':';
+    html+='<p class="exp-intro">'+pdfEscHtml(introText)+'</p>';
+  }
+
+  if(pairs.length){
+    html+='<div class="exp-compare-wrap"><table class="exp-compare-table"><thead><tr>'+
+      '<th scope="col">Trong câu hỏi</th>'+
+      '<th scope="col">Trong bài đọc</th>'+
+      '</tr></thead><tbody>';
+    pairs.forEach(function(pair, idx){
+      var maps=(pair.paraphrases&&pair.paraphrases.length)?pair.paraphrases.slice():[];
+      if(idx===0&&paraphrases.length){
+        paraphrases.forEach(function(row){maps.push(row);});
+      }
+      var pCell='';
+      if(pair.p)pCell+='<div class="exp-p-main">'+pdfEscHtml(pair.p)+'</div>';
+      if(maps.length){
+        pCell+='<ul class="exp-para-inline">';
+        maps.forEach(function(row){
+          pCell+='<li><span class="exp-para-q">'+pdfEscHtml(row.q||'')+'</span><span class="exp-para-eq">=</span><span class="exp-para-p">'+pdfEscHtml(row.p||'')+'</span></li>';
+        });
+        pCell+='</ul>';
+      }
+      if(!pCell)pCell='—';
+      html+='<tr><td>'+pdfEscHtml(pair.q||'—')+'</td><td>'+pCell+'</td></tr>';
+    });
+    html+='</tbody></table></div>';
+  }
+
+  var conclusionParts=[];
+  if(reason){
+    var reasonTrim=String(reason).trim();
+    if(!/^Đúng đoạn\s+[A-Z]\.?$/i.test(reasonTrim)&&!/^→\s*\S+\.?$/i.test(reasonTrim)){
+      if(!/[.!?…]$/.test(reasonTrim))reasonTrim+='.';
+      conclusionParts.push(pdfEscHtml(reasonTrim));
+    }
+  }
+  if(verdict){
+    var v=String(verdict).trim().replace(/\.$/,'');
+    var prefix=conclusionParts.length?'Do đó, đáp án chính xác là ':'Đáp án chính xác là ';
+    conclusionParts.push(prefix+'<strong>'+pdfEscHtml(v)+'</strong>.');
+  }
+  if(conclusionParts.length){
+    html+='<div class="exp-conclusion">'+conclusionParts.join(' ')+'</div>';
+  }
+
+  if(rejectHtml)html+=rejectHtml;
+  return html;
+}
+
+function openQuestionExplanation(qNum){
+  if(!examReviewMode||!examExplanations)return;
+  var item=examExplanations[String(qNum)];
+  if(!item)return;
+  var qs=document.getElementById('questions-scroll');
+  var savedQsScroll=qs?qs.scrollTop:0;
+  if(item.passage&&passageQuestionRanges.length&&typeof switchPassage==='function'){
+    try{switchPassage(item.passage,{preserveScroll:true});}catch(e){}
+  }
+  if(qs)qs.scrollTop=savedQsScroll;
+  clearEvidenceHighlights();
+  var evidence=item.evidence||{};
+  if(evidence.paragraphLetter)highlightEvidenceLetter(evidence.paragraphLetter);
+  // Matching headings (and any multi-span evidence) may highlight several quotes.
+  highlightEvidenceQuotes(collectEvidenceQuotes(evidence));
+  if(qs)qs.scrollTop=savedQsScroll;
+
+  var panel=document.getElementById('explanation-panel');
+  var title=document.getElementById('explanation-panel-title');
+  var body=document.getElementById('explanation-panel-body');
+  if(title)title.textContent='';
+  if(body)body.innerHTML=renderExplanationSteps(item.steps||[]);
+  if(panel){
+    panel.hidden=false;
+    panel.classList.add('is-open');
+  }
+  document.querySelectorAll('.explain-btn.is-active').forEach(function(b){b.classList.remove('is-active');});
+  var btn=document.querySelector('.explain-btn[data-q="'+qNum+'"]');
+  if(btn)btn.classList.add('is-active');
+  activeExplanationQ=qNum;
+  if(qs)qs.scrollTop=savedQsScroll;
+}
+
+function closeQuestionExplanation(){
+  var panel=document.getElementById('explanation-panel');
+  if(panel){
+    panel.classList.remove('is-open');
+    panel.hidden=true;
+  }
+  document.querySelectorAll('.explain-btn.is-active').forEach(function(b){b.classList.remove('is-active');});
+  clearEvidenceHighlights();
+  activeExplanationQ=null;
 }
 
 function lockExamInputs(){
@@ -1808,7 +2270,7 @@ function getHighlightBlockElements(root){
     return root.querySelectorAll('p');
   }
   return root.querySelectorAll(
-    'p, td, th, .sec-range, .sec-instr, .qtext, .qnum, .mtext, .sumtext, .sumtitle, .wbchip-body, label.opt, .opt-text, .opt-letter, .mqnum, .wbank-title'
+    'p, td, th, .sec-range, .sec-instr, .qtext, .qnum, .mtext, .sumtext, .sumtitle, .wbchip-body, label.opt, .opt-text, .opt-letter, .mqnum, .wbank-title, .people-bank-name, .people-bank-letter, .people-bank-list li, .people-bank-title'
   );
 }
 

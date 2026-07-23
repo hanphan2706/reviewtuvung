@@ -212,19 +212,37 @@ function renderLetterSelectOptions(options: McqOption[], maxLetters = 6): string
 }
 
 function renderParagraphMatch(section: ExamQuestionSection): { html: string; nums: number[] } {
-  const letterOpts = renderLetterSelectOptions(section.options, 6);
+  const letterOpts = renderLetterSelectOptions(section.options, 8);
+  const optionsWithText = section.options.filter((o) => o.text.trim().length > 0);
+  const looksLikeHeadings =
+    optionsWithText.length > 0 &&
+    optionsWithText.every((o) => /^[ivxlcdm]+$/i.test(o.letter.trim()));
+  const bankTitle = looksLikeHeadings
+    ? "List of Headings"
+    : optionsWithText.length > 0
+      ? "List of options"
+      : "";
+  const headingsBank =
+    optionsWithText.length > 0
+      ? `<div class="people-bank headings-bank" data-headings-bank="1"><div class="people-bank-title">${escHtml(bankTitle)}</div><ul class="people-bank-list">${optionsWithText
+          .map(
+            (o) =>
+              `<li><span class="people-bank-letter">${escHtml(o.letter)}</span><span class="people-bank-name">${escHtml(o.text)}</span></li>`,
+          )
+          .join("")}</ul></div>`
+      : "";
 
   const blocks = section.statements
     .map((s) => {
       const qid = `q${s.num}`;
       return `<div class="mrow">
-          <div class="mrow-top"><div class="mqnum">${s.num}</div><div class="mtext">${escHtml(s.text)}</div><select class="msel sel-compact" onchange="selMatch('${qid}',this)"><option value="">—</option>${letterOpts}</select></div>
+          <div class="mrow-top"><div class="mqnum">${s.num}</div><div class="mtext">${escHtml(s.text)}</div><select class="msel sel-compact" id="sel-${qid}" onchange="selMatch('${qid}',this)"><option value="">—</option>${letterOpts}</select></div>
         </div>`;
     })
     .join("");
 
   return {
-    html: `${renderSectionHeader(section)}${blocks}`,
+    html: `${renderSectionHeader(section)}${headingsBank}${blocks}`,
     nums: section.statements.map((s) => s.num),
   };
 }

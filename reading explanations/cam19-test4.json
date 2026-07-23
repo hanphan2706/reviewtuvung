@@ -1,0 +1,1834 @@
+{
+  "pilotId": "cam19-test4",
+  "schemaVersion": 4,
+  "note": "Cam 19 R T4 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The impact of climate change on butterflies in Britain",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Deep-sea mining",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "The Unselfish Gene",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "According to conservationists, populations of around two thirds of butterfly species have declined in Britain over the past 40 years."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem 40 năm trước bướm ở Anh có ít hơn bây giờ không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo 40 năm trước “there were fewer butterflies … than at present” (bướm ít hơn bây giờ)",
+              "p": "Bài nói ngược lại: “populations … have declined … over the past 40 years” — số lượng đã giảm trong 40 năm qua, nghĩa là ngày xưa nhiều hơn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fewer butterflies 40 years ago than at present",
+              "p": "populations have declined over the past 40 years"
+            },
+            {
+              "q": "there were fewer species then",
+              "p": "two thirds of species have declined"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài cho thấy xu hướng giảm — 40 năm trước bướm nhiều hơn hiện tại, trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "these insects, which are the second stage in a new butterfly’s lifecycle, consume vast quantities of plant material, and in turn act as prey for"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sâu bướm có bị nhiều loài khác nhau săn ăn không — bài có nói rõ không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Caterpillars are eaten by a number of different predators” (bị nhiều loài khác nhau ăn)",
+              "p": "Bài viết sâu bướm “act as prey for birds as well as bats and other small mammals” — làm mồi cho chim, dơi và các loài thú nhỏ khác"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "eaten by a number of different predators",
+              "p": "act as prey for birds as well as bats and other small mammals"
+            },
+            {
+              "q": "different predators",
+              "p": "birds, bats and other small mammals"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chim, dơi và thú nhỏ đều ăn sâu bướm — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Scientists refer to the timing of such lifecycle events as ‘phenology’"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "“Phenology” có phải là khả năng đổi vị trí (location) của một giai đoạn sống không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề định nghĩa phenology là “ability to alter the location of a lifecycle event” (đổi vị trí)",
+              "p": "Bài định nghĩa là “the timing of such lifecycle events” — nói về thời điểm (timing), không phải địa điểm"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "ability to alter the location of a lifecycle event",
+              "p": "the timing of such lifecycle events"
+            },
+            {
+              "q": "location of a lifecycle event",
+              "p": "timing of a lifecycle event"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phenology liên quan đến thời điểm, không phải vị trí — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "species have advanced by between three days and a week on average, to keep in line with cooler temperatures."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một số loài bướm có bị rút ngắn tuổi thọ do nhiệt độ xuân tăng không — bài có nhắc không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a reduced lifespan due to spring temperature increases” (tuổi thọ ngắn hơn)",
+              "p": "Bài chỉ nói các loài “advanced their phenology” — đổi thời điểm hoạt động sớm hơn, không nhắc gì đến tuổi thọ bị rút ngắn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a reduced lifespan",
+              "p": "advanced their phenology"
+            },
+            {
+              "q": "due to spring temperature increases",
+              "p": "to keep in line with cooler temperatures"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ đề cập thay đổi thời điểm hoạt động, không có thông tin về tuổi thọ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Is this a sign that butterflies are well equipped to cope with climate change, and readily adjust to new temperatures? Or are these populations under stress … The answer is still unknown"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nguyên nhân của sự thích nghi này đã rõ ràng chưa — bài nói gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“there is a clear reason for the adaptations” (lý do đã rõ)",
+              "p": "Bài đặt câu hỏi liệu bướm chủ động thích nghi hay bị buộc thích nghi, rồi khẳng định “the answer is still unknown” — câu trả lời vẫn chưa rõ"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a clear reason for the adaptations",
+              "p": "the answer is still unknown"
+            },
+            {
+              "q": "adaptations to climate change",
+              "p": "advancing their phenology"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định nguyên nhân và bản chất sự thích nghi còn chưa rõ — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "the researchers pulled together data from millions of records that had been submitted by butterfly enthusiasts – people who spend their free time observing the activities of different species."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dữ liệu nghiên cứu có lấy từ công việc của người quan sát bướm không chuyên không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Dữ liệu “taken from the work of amateur butterfly watchers” (người theo dõi bướm không chuyên)",
+              "p": "Bài nói dữ liệu từ “butterfly enthusiasts” — “people who spend their free time observing” — người dùng thời gian rảnh để quan sát"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "amateur butterfly watchers",
+              "p": "butterfly enthusiasts who spend their free time observing"
+            },
+            {
+              "q": "the work of",
+              "p": "records submitted by"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“butterfly enthusiasts” làm việc này trong thời gian rảnh — đúng nghĩa không chuyên như đề mô tả."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "colonies",
+      "evidence": {
+        "quoteEn": "the dainty Small Blue, whose colonies are up to a hundred strong"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: Small Blue sống trong nhóm gọi là gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “lives in large ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“lives in large ______”",
+              "p": "Bài viết “whose colonies are up to a hundred strong” — các quần thể (colonies) của loài này có thể lên tới cả trăm cá thể"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "large ______",
+              "p": "colonies up to a hundred strong"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Loài này sống trong các quần thể lớn → colonies."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "colonies"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "spring",
+      "evidence": {
+        "quoteEn": "some develop into butterflies early in spring"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: Small Blue xuất hiện lần đầu vào lúc bắt đầu mùa nào (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “start of ______” cần một danh từ chỉ mùa."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“first appears at the start of ______”",
+              "p": "Bài viết “some develop into butterflies early in spring” — một số phát triển thành bướm sớm ngay từ mùa xuân"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "at the start of",
+              "p": "early in"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói “early in spring” — mùa cần điền là spring."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "spring"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "endangered",
+      "evidence": {
+        "quoteEn": "The beautiful High Brown Fritillary, often described as Britain’s most endangered butterfly"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: High Brown Fritillary được coi là gì hơn các loài khác (một tính từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “is considered to be more ______” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“is considered to be more ______ than other species”",
+              "p": "Bài gọi loài này “Britain's most endangered butterfly” — bị coi là loài bướm nguy cấp (endangered) nhất nước Anh"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more ______ than other species",
+              "p": "Britain's most endangered butterfly"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài mô tả loài này là “most endangered” → endangered."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "endangered"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "habitat(s)",
+      "evidence": {
+        "quoteEn": "It is found only in coppiced woodland and limestone pavement habitats."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: sâu bướm loài này chỉ sống trong phạm vi hẹp của cái gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a limited range of ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“its caterpillars occupy a limited range of ______”",
+              "p": "Bài viết “found only in coppiced woodland and limestone pavement habitats” — chỉ sống trong vài loại môi trường sống (habitats) nhất định"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a limited range of ______",
+              "p": "found only in coppiced woodland and limestone pavement"
+            },
+            {
+              "q": "a limited range of",
+              "p": "found only in"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói loài này chỉ sống ở một số loại habitats → habitat(s)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "habitat(s)"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Europe",
+      "evidence": {
+        "quoteEn": "Many of Britain’s single-generation species show the capacity, in continental Europe, to add a second generation in years that are sufficiently warm."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: Silver-studded Blue đã sinh sản hai lần một năm ở vùng ấm của đâu (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “warm areas of ______” cần một danh từ riêng (địa danh)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“is already able to reproduce twice a year in warm areas of ______”",
+              "p": "Bài viết khả năng này được thấy “in continental Europe” — ở châu Âu lục địa, tại những vùng đủ ấm"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reproduce twice a year",
+              "p": "add a second generation"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nhắc “continental Europe” → Europe."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Europe"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "southern",
+      "evidence": {
+        "quoteEn": "The White Admiral of southern England"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: White Admiral sống ở vùng nào của nước Anh (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Trước “areas of England” cần một tính từ chỉ hướng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“is found in ______ areas of England”",
+              "p": "Bài viết “The White Admiral of southern England” — loài này thuộc vùng miền nam (southern) nước Anh"
+            }
+          ],
+          "paraphrases": []
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài gọi “The White Admiral of southern England” → southern."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "southern"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "diet",
+      "evidence": {
+        "quoteEn": "This may be because the caterpillar exists solely on a diet of a plant called honeysuckle."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: ngoài biến đổi khí hậu, nguyên nhân suy giảm còn liên quan tới cái gì của sâu bướm (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the ______ of the caterpillar” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“both climate change and the ______ of the caterpillar are possible reasons for decline”",
+              "p": "Bài viết sâu bướm “exists solely on a diet of a plant called honeysuckle” — chỉ ăn đúng một loại cây, tức chế độ ăn (diet) quá hẹp"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ of the caterpillar",
+              "p": "exists solely on a diet of honeysuckle"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sâu bướm chỉ ăn một loại cây — yếu tố liên quan là diet."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "diet"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "demand for resources such as copper, aluminum, cobalt for electric car batteries and other metals to power technology and smartphones, is soaring."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói về nhu cầu tăng nhanh với một nguyên liệu thô trong ngành giao thông. Đề viết: “the rapidly increasing need for one raw material in the transport industry”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói nhu cầu tăng nhanh với một nguyên liệu cho ngành vận tải (“rapidly increasing need … in the transport industry”)",
+              "p": "Đoạn C: nhu cầu “cobalt for electric car batteries … is soaring” — cobalt cho pin xe điện tăng vọt, đúng ngành vận tải"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "rapidly increasing need",
+              "p": "demand ... is soaring"
+            },
+            {
+              "q": "one raw material in the transport industry",
+              "p": "cobalt for electric car batteries"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "The oceans occupy around 70% of the planet"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn ước tính diện tích Trái Đất mà đại dương chiếm. Đề viết: “a rough estimate of the area of the Earth covered by the oceans”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn ước lượng tỷ lệ diện tích Trái Đất là đại dương",
+              "p": "Đoạn F mở đầu: “The oceans occupy around 70% of the planet” — đại dương chiếm khoảng 70% hành tinh"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a rough estimate of the area covered by the oceans",
+              "p": "the oceans occupy around 70% of the planet"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "hydrothermal vents, which are created when seawater meets volcanic magma"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích một môi trường sống dưới biển — nơi khoáng chất và sinh vật cùng tồn tại — được hình thành thế nào. Đề viết: “how a particular underwater habitat … is formed”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói cách hình thành nơi có cả khoáng chất và sinh vật (“minerals and organisms co-exist”)",
+              "p": "Đoạn E: “hydrothermal vents, which are created when seawater meets volcanic magma” — miệng phun thủy nhiệt hình thành khi nước biển gặp magma núi lửa, xung quanh có nhiều sinh vật sinh sống"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how a particular underwater habitat is formed",
+              "p": "created when seawater meets volcanic magma"
+            },
+            {
+              "q": "minerals and organisms co-exist",
+              "p": "mineral-rich vents ... home to many well-known animals"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "the global regulatory framework is not yet drafted."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc việc các nước chưa thống nhất luật lệ khai thác đáy biển. Đề viết: “the countries of the world have yet to agree on rules for the exploration of the seabed”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói các nước chưa đồng thuận về quy định khai thác đáy biển",
+              "p": "Đoạn D: “the global regulatory framework is not yet drafted” — khung pháp lý toàn cầu còn chưa được soạn ra"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have yet to agree on rules",
+              "p": "the global regulatory framework is not yet drafted"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "‘It makes sense to explore this untapped potential in an environmentally sustainable way, instead of continually looking at the fast depleting land resources of the planet to meet society’s rising needs.’"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng việc rời bỏ khai thác các mỏ đã cạn kiệt trên đất liền là ý tưởng hay. Đề viết: “A move away from the exploration of heavily mined reserves on land is a good idea.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần người cho rằng nên rời khai thác mỏ cạn kiệt trên đất liền (“move away from … heavily mined reserves on land”)",
+              "p": "Mike Johnston (đoạn F) nói nên khám phá đại dương “instead of continually looking at the fast depleting land resources” — thay vì cứ dựa vào tài nguyên đất liền đang cạn nhanh"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "move away from ... reserves on land",
+              "p": "instead of continually looking at the fast depleting land resources"
+            },
+            {
+              "q": "is a good idea",
+              "p": "it makes sense to explore this untapped potential"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "a general disregard for environmental and social impacts, and the marginalisation of indigenous peoples and their rights"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng tác động tiêu cực của khai thác dưới biển với khu vực và người dân địa phương đang bị bỏ qua. Đề viết: “The negative effects of undersea exploration on local areas and their inhabitants are being ignored.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần người nói tác động xấu tới cộng đồng địa phương đang bị phớt lờ (“being ignored”)",
+              "p": "Hunter, Aguon và Singh (đoạn D) viết về “a general disregard for environmental and social impacts, and the marginalisation of indigenous peoples” — thái độ coi thường tác động và gạt người bản địa ra ngoài"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "are being ignored",
+              "p": "a general disregard for environmental and social impacts"
+            },
+            {
+              "q": "local areas and their inhabitants",
+              "p": "the marginalisation of indigenous peoples"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "‘We’re looking at the bioactive potential of marine resources, to see if there are any more medicines or drugs down there before we destroy it for ever,’ says Upton"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng có những thứ đáng khai thác từ biển hơn là khoáng sản. Đề viết: “There are more worthwhile things to extract from the sea than minerals.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần người coi trọng thứ khác hơn khoáng sản khi nói về biển",
+              "p": "Upton (đoạn B) nhấn vào “bioactive potential” — khả năng tìm ra thuốc, dược liệu mới từ biển — trước khi bị phá hủy vì khai khoáng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more worthwhile things to extract than minerals",
+              "p": "the bioactive potential ... more medicines or drugs"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "‘Mining will be the greatest assault on deep-sea ecosystems ever inflicted by humans,’ according to hydrothermal vent expert Verena Tunnicliffe"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng không hình thức khai thác nào của con người sẽ gây hại cho sinh vật biển như khai thác đáy biển sâu. Đề viết: “No other form of human exploration will have such a destructive impact on marine life as deep-sea mining.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần người khẳng định khai thác đáy biển là hình thức gây hại lớn nhất từng có",
+              "p": "Verena Tunnicliffe (đoạn F) gọi khai khoáng là “the greatest assault on deep-sea ecosystems ever inflicted by humans” — cuộc tấn công lớn nhất từng có của con người lên hệ sinh thái đáy biển"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "no other form ... such a destructive impact",
+              "p": "the greatest assault ... ever inflicted by humans"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "The surface of the Moon, Mars and even Venus have all been mapped and studied in much greater detail, leading marine scientists to commonly remark that, with respect to the deep sea, ‘We don’t yet know what we need to know’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng người ta biết nhiều về không gian hơn những gì nằm dưới đại dương. Đề viết: “More is known about outer space than about what lies beneath the oceans.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần người so sánh hiểu biết về vũ trụ với hiểu biết về đáy biển",
+              "p": "Hunter, Aguon và Singh (đoạn D) viết Mặt Trăng, Sao Hỏa, Sao Kim đều “mapped and studied in much greater detail” hơn đáy biển sâu"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more is known about outer space",
+              "p": "mapped and studied in much greater detail"
+            },
+            {
+              "q": "than about what lies beneath the oceans",
+              "p": "we don't yet know what we need to know"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "‘On deep sea vents, scientists are clear,’ says Dr Jon Copley of the National Oceanography Centre, Southampton: ‘We don’t want mining on them.’"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng có một môi trường sống biển mà các chuyên gia đồng thuận không nên khai thác. Đề viết: “There is one marine life habitat where experts agree mining should not take place.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần người nói rõ có một nơi giới chuyên gia đồng ý không nên khai thác",
+              "p": "Dr Jon Copley (đoạn E) nói về miệng phun thủy nhiệt: “scientists are clear … we don't want mining on them” — các nhà khoa học đồng thuận không muốn khai thác ở đó"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "experts agree mining should not take place",
+              "p": "scientists are clear ... we don't want mining on them"
+            },
+            {
+              "q": "one marine life habitat",
+              "p": "deep sea vents"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "waste",
+      "evidence": {
+        "quoteEn": "They say that deep-sea mining could yield far superior ore to land mining with little, if any, waste."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong tóm tắt: khai thác khoáng sản dưới biển được cho là không tạo ra nhiều gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “without producing much ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“these can be removed without producing much ______”",
+              "p": "Bài viết khai thác biển cho ra quặng tốt hơn “with little, if any, waste” — hầu như không có chất thải"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "without producing much",
+              "p": "with little, if any"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“without producing much waste” tương ứng “with little, if any, waste” → waste."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "waste"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "machinery",
+      "evidence": {
+        "quoteEn": "most involve employing some form of converted machinery previously used in terrestrial mining"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong tóm tắt: khai thác thường thực hiện bằng cách chuyển đổi cái gì đã dùng trên đất liền (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “adapting the ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“often done by adapting the ______ that has already been used to work on land”",
+              "p": "Bài viết dùng “converted machinery previously used in terrestrial mining” — máy móc từng dùng khai thác trên đất liền được chuyển đổi để dùng dưới biển"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "adapting the ______",
+              "p": "converted machinery"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“adapting the machinery” tương ứng “converted machinery … used in terrestrial mining” → machinery."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "machinery"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "caution",
+      "evidence": {
+        "quoteEn": "environmental and legal groups have urged caution, arguing there are potentially massive and unknown ramifications for the environment"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong tóm tắt: các nhóm quan ngại tin điều gì là cần thiết trước những hậu quả chưa rõ (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chủ ngữ trống “______ is necessary” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“concerned groups strongly believe that ______ is necessary”",
+              "p": "Bài viết các nhóm môi trường và pháp lý “urged caution” — kêu gọi sự cẩn trọng trước hậu quả khó lường"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ is necessary",
+              "p": "urged caution"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“______ is necessary” tương ứng “urged caution” → caution."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "caution"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "There has long been a general assumption that human beings are essentially selfish."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn đầu, tác giả đang làm gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: mô tả một niềm tin phổ biến về hành vi con người (“describing a commonly held belief about people's behaviour”)",
+              "p": "Bài mở đầu bằng “There has long been a general assumption that human beings are essentially selfish” — chỉ trình bày lại một giả định phổ biến, chưa phải quan điểm riêng của tác giả"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "describing a commonly held belief",
+              "p": "there has long been a general assumption"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn 1 thuần miêu tả một niềm tin lâu đời — chưa phải ý kiến cá nhân của tác giả, nên chọn C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài chỉ nêu một quan điểm (con người vốn ích kỷ), không đặt hai luồng ý kiến đối lập (“two opposing views”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Đây chưa phải ý kiến của chính tác giả — ông đang miêu tả niềm tin của người khác, không “justify” quan điểm cá nhân."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Tác giả không giải thích lý do ông tin con người ích kỷ (“why he thinks”) — ông chỉ tường lại giả định chung."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "became popular because it fitted so well with – and helped to justify – the competitive and individualistic ethos that was so prevalent in late 20th-century societies."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điểm nào được nói về cuốn The Selfish Gene của Dawkins:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: cuốn sách trình bày quan điểm phù hợp với tinh thần thời đại của nó (“in line with the attitudes of its time”)",
+              "p": "Bài viết sách nổi tiếng “because it fitted so well with … the competitive and individualistic ethos … prevalent in late 20th-century societies” — phù hợp tư tưởng cạnh tranh, cá nhân phổ biến cuối thế kỷ 20"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "in line with the attitudes of its time",
+              "p": "fitted so well with ... prevalent in late 20th-century societies"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sách được ưa chuộng vì phù hợp không khí xã hội thời đó — đáp án C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói sức hút nằm ở tính cách tân (“radical nature”) của ý tưởng — ngược lại, nó ăn khớp với tư tưởng đang có sẵn."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không có chỗ nói thành công là nhờ “scientific support” — mà là nhờ phù hợp bối cảnh xã hội."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói cách tiếp cận của sách là “innovative” trong phân tích tâm lý con người."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "With such small population densities, it seems unlikely that prehistoric hunter-gatherer groups had to compete against each other for resources"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả gợi ý gì về thời tiền sử ở đoạn bốn:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: nguồn tài nguyên tự nhiên khi đó có lẽ khá dư dả (“probably relatively plentiful”)",
+              "p": "Bài viết dân số quá thấp (“around 15,000 years ago, the population of Europe was only 29,000”) nên “unlikely … had to compete … for resources” — không cần tranh giành tài nguyên, ngụ ý tài nguyên đủ dùng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "probably relatively plentiful",
+              "p": "unlikely ... had to compete against each other for resources"
+            },
+            {
+              "q": "such small population densities",
+              "p": "the world was very sparsely populated"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mật độ dân số thấp khiến tài nguyên dư dả so với nhu cầu — đáp án B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đoạn này không nói xã hội thời đó phức tạp hơn người ta nghĩ (“more complex than many people believe”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Tác giả trích số liệu dân số như một sự thật, không nói các ước tính đó “likely to be inaccurate”."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không có nội dung về việc con người di chuyển giữa các lục địa (“moved across continents”)."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "hunter-gatherers are characterized by ‘extreme political and sexual egalitarianism’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả dẫn nghiên cứu của Bruce Knauft để ủng hộ ý gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: tính ích kỷ là một phát triển tương đối gần đây trong xã hội loài người (“a relatively recent development”)",
+              "p": "Knauft cho thấy các nhóm săn bắt-hái lượm hiện đại rất bình đẳng, không tích lũy của riêng — làm bằng chứng rằng ích kỷ không phải bản chất từ tiền sử mà xuất hiện muộn hơn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a relatively recent development",
+              "p": "extreme political and sexual egalitarianism"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Dẫn chứng Knauft nhằm chứng minh ích kỷ là chuyện về sau — đáp án A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói chỉ cộng đồng biệt lập (“isolated communities”) mới sống vô tư lợi — Knauft nói chung về hunter-gatherer."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không có ý so sánh số lượng lối sống còn giữ nguyên từ tiền sử (“very few lifestyles have survived unchanged”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói các nền văn hóa săn bắt-hái lượm đang suy giảm về số lượng (“declining in number”) ở đoạn này."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "egalitarianism",
+      "evidence": {
+        "quoteEn": "hunter-gatherers are characterized by ‘extreme political and sexual egalitarianism’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong tóm tắt: các xã hội săn bắt-hái lượm hiện đại có xu hướng thể hiện mức độ cao của điều gì trong mọi mặt đời sống (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a high level of ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“tend to exhibit a high level of ______ in all areas of life”",
+              "p": "Bài viết Knauft nhận thấy các nhóm này có “extreme political and sexual egalitarianism” — tính bình đẳng cực cao cả về chính trị và giới"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a high level of",
+              "p": "extreme"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“a high level of egalitarianism” tương ứng “extreme … egalitarianism” → egalitarianism."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "egalitarianism"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "status",
+      "evidence": {
+        "quoteEn": "have methods of preserving egalitarianism by ensuring that disparities of status don’t arise."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong tóm tắt: các xã hội này có chiến lược ngăn sự khác biệt về điều gì xảy ra (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “differences in ______ occurring” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“employ strategies to prevent differences in ______ occurring”",
+              "p": "Bài viết họ có cách “ensuring that disparities of status don't arise” — đảm bảo sự chênh lệch địa vị (status) không xảy ra"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "differences in",
+              "p": "disparities of"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“differences in status” tương ứng “disparities of status” → status."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "status"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "hunting",
+      "evidence": {
+        "quoteEn": "The !Kung people of southern Africa, for example, swap arrows before going hunting and when an animal is killed, the acclaim does not go to the person who fired the arrow, but to the person the arrow belongs to."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong tóm tắt: người !Kung có phong tục trao công cho người khác khi thành công trong việc gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “success at ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the credit for one person's success at ______ is given to another member of the group”",
+              "p": "Bài viết họ “swap arrows before going hunting” và khi có thú bị giết, vinh danh thuộc về chủ mũi tên chứ không phải người bắn — công của việc đi săn (hunting) được trao cho người khác"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "success at",
+              "p": "before going (hunting)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phong tục liên quan đến việc đi săn → hunting."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "hunting"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "domineering",
+      "evidence": {
+        "quoteEn": "if a person becomes too domineering, the other members of the group ostracise them, exiling the offender from society."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong tóm tắt: những cá nhân hành xử theo kiểu nào sẽ bị loại khỏi nhóm (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “behave in a ______ manner” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“individuals who behave in a ______ manner are punished by being excluded from the group”",
+              "p": "Bài viết ai “becomes too domineering” — quá áp đặt, chèn ép người khác — sẽ bị “ostracise … exiling” khỏi nhóm"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "behave in a ______ manner",
+              "p": "becomes too domineering"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ai quá áp đặt sẽ bị loại → domineering."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "domineering"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "autonomy",
+      "evidence": {
+        "quoteEn": "Women in hunter-gatherer groups worldwide often benefit from a high level of autonomy, being able to select their own marriage partners, decide what work they do and work whenever they choose to."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong tóm tắt: phụ nữ có mức độ cao của điều gì trong lựa chọn công việc và hôn nhân (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a considerable amount of ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“women have a considerable amount of ______ in choices regarding work and marriage”",
+              "p": "Bài viết phụ nữ “benefit from a high level of autonomy” — có quyền tự quyết cao khi chọn bạn đời, công việc"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a considerable amount of",
+              "p": "a high level of"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phụ nữ có quyền tự quyết cao → autonomy."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "autonomy"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Many anthropologists believe that societies such as the !Kung were normal until a few thousand years ago, when population growth led to the development of agriculture and a settled lifestyle."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có phải một số nhà nhân học đã sai về thời điểm mà các xã hội như !Kung bắt đầu suy giảm số lượng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“some anthropologists are mistaken about the point when the number of societies such as the !Kung began to decline”",
+              "p": "Bài chỉ nói nhiều nhà nhân học tin các xã hội này “were normal” (phổ biến) đến vài nghìn năm trước, rồi nông nghiệp xuất hiện — không đề cập việc ai đó “mistaken” về thời điểm suy giảm"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "mistaken about the point when the number began to decline",
+              "p": "were normal until a few thousand years ago"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không bàn đến việc các nhà nhân học có sai hay không về mốc suy giảm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Individuals who behaved selfishly and ruthlessly would be less likely to survive, since they would have been ostracised from their groups."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Con người phát triển đặc điểm ưa chiến tranh từ thời tiền sử có lợi thế hơn người không có đặc điểm đó không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“humans who developed warlike traits … would have had an advantage over those who did not”",
+              "p": "Bài viết ngược lại: người hành xử ích kỷ, tàn nhẫn “would be less likely to survive” vì bị nhóm loại trừ — bất lợi, không phải lợi thế"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "would have had an advantage over those who did not",
+              "p": "would be less likely to survive"
+            },
+            {
+              "q": "warlike traits",
+              "p": "behaved selfishly and ruthlessly"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài phản bác trực tiếp: đặc điểm đó khiến khó sống sót hơn — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "It makes more sense, then, to see traits such as cooperation, egalitarianism, altruism and peacefulness as innate characteristics of human beings."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sống hòa bình, hợp tác có phải là cách hành xử tự nhiên của con người không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“being peaceful and cooperative is a natural way for people to behave”",
+              "p": "Tác giả coi “cooperation … and peacefulness as innate characteristics of human beings” — những đặc tính bẩm sinh (innate) chính là “natural”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a natural way for people to behave",
+              "p": "innate characteristics of human beings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả trực tiếp ủng hộ ý này — chọn YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "So, it could well be that the same thing has happened to us."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các đặc điểm tiêu cực có rõ rệt hơn ở một số nền văn hóa hiện đại so với nền văn hóa khác không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“negative traits are more apparent in some modern cultures than in others”",
+              "p": "Bài chỉ nói chung việc con người trở nên ích kỷ hơn sau khi môi trường sống bị xáo trộn, không so sánh mức độ giữa các nền văn hóa hiện đại khác nhau"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more apparent in some modern cultures than in others",
+              "p": "the same thing has happened to us"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có sự so sánh giữa các nền văn hóa cụ thể trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Research has shown repeatedly that when the natural habitats of primates such as apes and gorillas are disrupted, they tend to become more violent and hierarchical."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các nghiên cứu trên động vật có thất bại trong việc tìm ra liên hệ giữa thay đổi môi trường sống và sự xuất hiện của tính hung hăng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“animal research has failed to reveal a link between changes in the environment and the emergence of aggressive tendencies”",
+              "p": "Bài viết ngược lại: nghiên cứu “has shown repeatedly” rằng khi môi trường sống của khỉ, vượn bị xáo trộn, chúng “become more violent” — nghiên cứu đã tìm ra liên hệ, không phải thất bại"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "failed to reveal a link",
+              "p": "has shown repeatedly ... a link"
+            },
+            {
+              "q": "aggressive tendencies",
+              "p": "become more violent and hierarchical"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nghiên cứu đã chỉ ra liên hệ rõ ràng — trái với “failed to reveal”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    }
+  }
+}

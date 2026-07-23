@@ -1,0 +1,2033 @@
+{
+  "pilotId": "cam19-test1",
+  "schemaVersion": 4,
+  "note": "Cam 19 R T1 — tiếng Việt tự nhiên theo chuẩn pilot; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "How tennis rackets have changed",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "The pirates of the ancient Mediterranean",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "The persistence and peril of misinformation",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Yet five years previously, he had been regarded as a talented outsider who entered but never won the major tournaments."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem bài có nói mọi người đã kỳ vọng Murray lên số 1 từ lâu trước 2016 hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo người ta đã “kỳ vọng” (expected) Murray thành số 1 thế giới ít nhất năm năm trước 2016",
+              "p": "Bài gọi ông là “talented outsider” (người ngoài cuộc tài năng), “entered but never won the major tournaments” (vào giải lớn nhưng không thắng)"
+            },
+            {
+              "q": "“for at least five years before 2016”",
+              "p": "“five years previously” — nhưng ngữ cảnh là chưa phải ứng viên số 1"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "expected ... to become the world's top tennis player",
+              "p": "regarded as a talented outsider"
+            },
+            {
+              "q": "for at least five years before 2016",
+              "p": "five years previously"
+            },
+            {
+              "q": "become the world's number one",
+              "p": "entered but never won the major tournaments"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ năm năm trước đó Murray chưa phải ngôi sao được kỳ vọng lên đỉnh — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Another change was so subtle as to pass more or less unnoticed. … in 2012 he switched to a synthetic string for the mains."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thay đổi trên vợt của Murray có bị chú ý nhiều không — so với những gì bài viết:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“attracted a lot of attention” (thu hút nhiều sự chú ý)",
+              "p": "“so subtle as to pass more or less unnoticed” (tinh tế đến mức gần như chẳng ai để ý)"
+            },
+            {
+              "q": "Thay đổi vợt",
+              "p": "“switched to a synthetic string for the mains” (đổi dây synthetic cho các sợi dọc)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "attracted a lot of attention",
+              "p": "so subtle as to pass more or less unnoticed"
+            },
+            {
+              "q": "the change ... made to his rackets",
+              "p": "switched to a synthetic string for the mains"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đổi dây vợt bị bài gọi là gần như không ai để ý — không phải “attracted a lot of attention”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "‘Touring professionals have their rackets customised to their specific needs,’ says Colin Triplow, a UK-based professional racket stringer."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hầu hết tay vợt top có mang stringer theo tour không — bài có nói rõ không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“take a professional racket stringer on tour” (mang stringer theo tour)",
+              "p": "Chỉ có “professional racket stringer” (Colin Triplow) và “rackets customised” — không nói mang theo khi đi tour"
+            },
+            {
+              "q": "“most of the world’s top players”",
+              "p": "Bài không nêu tỷ lệ / “most”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "take a professional racket stringer on tour",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "most of the world's top players",
+              "p": "touring professionals have their rackets customised"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có nhắc stringer và custom vợt, nhưng không có chi tiết mang theo tour hay “most”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "The rackets they use now weigh more than the average model and also have a denser string pattern"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời câu này, ta cần so sánh trọng lượng vợt của anh em Bryan với vợt thông thường:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vợt của họ “nhẹ” (light) so với đa số vợt khác",
+              "p": "Bài khẳng định vợt họ “weigh more than” (nặng hơn) “the average model” (mẫu trung bình)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "light in comparison to the majority of rackets",
+              "p": "weigh more than the average model"
+            },
+            {
+              "q": "the majority of rackets",
+              "p": "the average model"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thông tin trong bài trực tiếp phản bác (contradict) thông tin trong câu hỏi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Werner Fischer started playing with the so-called spaghetti-strung racket."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Fischer có tự thiết kế vợt spaghetti rồi mới chơi không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“that he designed himself” (do chính ông thiết kế)",
+              "p": "Chỉ có “started playing with the so-called spaghetti-strung racket” — không nói ai thiết kế"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "that he designed himself",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "played with a spaghetti-strung racket",
+              "p": "started playing with the so-called spaghetti-strung racket"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ nói ông bắt đầu chơi với loại vợt đó; phần “tự thiết kế” không có."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "They will continually change it depending on various factors including the court surface, climatic conditions, and game styles."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thời tiết có ảnh hưởng cách chỉnh dây không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the weather can affect” cách chỉnh dây",
+              "p": "“climatic conditions” nằm trong các yếu tố khiến họ “continually change” dây / độ căng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the weather can affect",
+              "p": "climatic conditions"
+            },
+            {
+              "q": "how ... adjust the strings",
+              "p": "continually change it depending on various factors"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khí hậu được liệt kê rõ là một lý do đổi dây — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "much of the serving power of US professional player Pete Sampras was attributed to the addition of four to five lead weights onto his rackets"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người ta có tin thay đổi vợt của Sampras giúp cú giao mạnh không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“it was believed … contributed to his strong serve”",
+              "p": "“serving power … was attributed to” việc gắn “lead weights” vào vợt"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "it was believed",
+              "p": "was attributed to"
+            },
+            {
+              "q": "contributed to his strong serve",
+              "p": "serving power ... was attributed to"
+            },
+            {
+              "q": "the change ... made to his rackets",
+              "p": "addition of four to five lead weights"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“attributed to” đúng nghĩa “được cho là nhờ / góp phần” — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "paint",
+      "evidence": {
+        "quoteEn": "They explain how they have adjusted not only racket length, but even experimented with different kinds of paint."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: anh em Bryan đổi loại gì trên khung vợt (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “types of …” cần danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“types of ______ used on their racket frames”",
+              "p": "“experimented with different kinds of paint” (thử nhiều loại sơn trên khung)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "types of ______",
+              "p": "different kinds of paint"
+            },
+            {
+              "q": "types of / kinds of",
+              "p": "giữ nguyên ý “loại”"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là paint."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "paint"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "topspin",
+      "evidence": {
+        "quoteEn": "It created a string bed that generated so much topspin that it was quickly banned by the International Tennis Federation."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vợt spaghetti bị cấm vì tạo ra quá nhiều thứ gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“the amount of ______” → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“not allowed … because of the amount of ______ it created”",
+              "p": "“generated so much topspin” rồi “quickly banned”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the amount of ______",
+              "p": "so much topspin"
+            },
+            {
+              "q": "not allowed",
+              "p": "banned"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Topspin quá mạnh nên bị cấm → topspin."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "topspin"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "training",
+      "evidence": {
+        "quoteEn": "Today it is, in many ways, an aspect of the game that is equal in significance to nutrition or training."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sửa vợt được coi ngang tầm với chế độ ăn và … của VĐV:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Song song với nutrition → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“as important as players’ diets or the ______ they do”",
+              "p": "“equal in significance to nutrition or training”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "diets or the ______ they do",
+              "p": "nutrition or training"
+            },
+            {
+              "q": "diets",
+              "p": "nutrition"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cặp nutrition / training → training."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "training"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "intestines",
+      "answerAlternatives": [
+        "gut",
+        "intestines / gut"
+      ],
+      "evidence": {
+        "quoteEn": "At one time, all tennis rackets were strung with natural gut made from the outer layer of sheep or cow intestines."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dây vợt tự nhiên ngày xưa lấy từ bộ phận nào của động vật:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“the ______ of animals” → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“natural strings made from the ______ of animals”",
+              "p": "“natural gut made from … sheep or cow intestines”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ of animals",
+              "p": "sheep or cow intestines"
+            },
+            {
+              "q": "natural strings",
+              "p": "natural gut"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Một từ lấy từ bài: intestines (một số key cũng nhận gut)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "intestines"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "weights",
+      "evidence": {
+        "quoteEn": "the addition of four to five lead weights onto his rackets"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sampras gắn thêm những miếng kim loại gì vào khung:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“metal ______” → danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“metal ______ put into the frames”",
+              "p": "“lead weights onto his rackets”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "metal ______",
+              "p": "lead weights"
+            },
+            {
+              "q": "put into the frames",
+              "p": "onto his rackets"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Lead weights → weights."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "weights"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "grips",
+      "evidence": {
+        "quoteEn": "Gonçalo Oliveira replaced the original grips of his rackets with something thinner"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Oliveira thay phần nào trên cán vợt:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“changed the ______ on his racket handles” → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“changed the ______ on his racket handles”",
+              "p": "“replaced the original grips … with something thinner”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "changed the ______ on his racket handles",
+              "p": "replaced the original grips … with something thinner"
+            },
+            {
+              "q": "changed / replaced",
+              "p": "giữ ý thay đổi"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ông thay grips → grips."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "grips"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "The king of Alashiya (modern Cyprus) rejected Akhenaten’s claims of a connection with the Lukka"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn có ai phủ nhận liên quan tới cướp biển. Đề viết: “a denial of involvement in piracy”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về việc phủ nhận dính líu tới cướp biển (“a denial of involvement in piracy”).",
+              "p": "Đoạn D: vua Alashiya “rejected … claims of a connection with the Lukka” — bác bỏ cáo buộc liên hệ với Lukka (nhóm bị coi là hải tặc). “denied involvement” ≈ “rejected … connection”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a denial of involvement in piracy",
+              "p": "rejected Akhenaten's claims of a connection with the Lukka"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "Pompey divided the entire Mediterranean into 13 districts, assigning a fleet and commander to each. After cleansing one district of pirates, the fleet would join another"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn kể chiến dịch dẹp cướp biển diễn ra thế nào. Đề viết: “details of how a campaign to eradicate piracy was carried out”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề muốn chi tiết cách tiến hành chiến dịch diệt hải tặc (“how a campaign … was carried out”).",
+              "p": "Đoạn G: Pompey chia biển thành 13 khu (“divided … into 13 districts”), hạm đội quét xong khu này rồi sang khu khác (“cleansing one district … join another”). Đó chính là phần “how”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how a campaign to eradicate piracy was carried out",
+              "p": "divided the entire Mediterranean into 13 districts"
+            },
+            {
+              "q": "carried out",
+              "p": "cleansing one district of pirates, the fleet would join another"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "it was not unknown … for governments to resort to pirates’ services, especially during wartime"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói nhà nước cổ đại khi nào dùng hải tặc. Đề viết: “circumstances in which states … would make use of pirates”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Hoàn cảnh nhà nước tận dụng hải tặc (“make use of pirates”).",
+              "p": "Đoạn C: chính quyền “resort to pirates’ services, especially during wartime” — nhờ dịch vụ hải tặc, nhất là lúc chiến tranh. “make use of” ≈ “resort to … services”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "circumstances in which states ... would make use of pirates",
+              "p": "resort to pirates' services"
+            },
+            {
+              "q": "make use of pirates",
+              "p": "especially during wartime"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "When one mentions pirates, an image springs to most people’s minds of a crew of misfits … in the Caribbean Sea."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói hình ảnh cướp biển người nay hay nghĩ tới. Đề viết: “how people today commonly view pirates”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Cách người hiện đại thường hình dung hải tặc (“how people today commonly view pirates”).",
+              "p": "Đoạn A mở đầu bằng “an image springs to most people’s minds” — hình ảnh thủy thủ đoàn lệch lạc trên tàu buồm ở Caribbean. “commonly view” ≈ “image springs to most people’s minds”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how people today commonly view pirates",
+              "p": "an image springs to most people's minds"
+            },
+            {
+              "q": "commonly view",
+              "p": "a crew of misfits, daredevils and adventurers ... in the Caribbean Sea"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "many more were offered land in fertile areas located far from the sea. Instead of a maritime menace, Rome got productive farmers"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích vì sao một số người được kéo khỏi nghề cướp biển. Đề viết: “encouraged not to return to piracy”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói việc khuyến khích không quay lại nghề hải tặc (“encouraged not to return to piracy”).",
+              "p": "Đoạn G: họ được cấp đất xa biển (“offered land … far from the sea”) và trở thành nông dân (“productive farmers”), không còn là mối đe dọa trên biển. Đó là cách “kéo” họ khỏi nghề cũ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "encouraged not to return to piracy",
+              "p": "offered land in fertile areas located far from the sea"
+            },
+            {
+              "q": "not to return to piracy",
+              "p": "Rome got productive farmers"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "ships could not easily cross long distances over open water. Thus, in the ancient world most were restricted to a few well-known navigable routes that followed the coastline."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói nhiều tàu phải bám gần bờ. Đề viết: “the need … to stay relatively close to land”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Về nhu cầu bám gần đất liền / bờ biển (“stay relatively close to land”).",
+              "p": "Đoạn B: tàu khó vượt khoảng cách dài trên biển mở, nên đa số đi theo lộ trình “followed the coastline”. “stay close to land” ≈ “followed the coastline”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the need for many sailing vessels to stay relatively close to land",
+              "p": "restricted to a few well-known navigable routes that followed the coastline"
+            },
+            {
+              "q": "stay relatively close to land",
+              "p": "could not easily cross long distances over open water"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "B",
+      "answerPair": [
+        20,
+        21
+      ],
+      "correctLetters": [
+        "B",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "knowledge of the local area helped the pirates to avoid retaliation once a state fleet arrived."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai ý đúng về cư dân vùng Địa Trung Hải thời cổ:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý B: họ thoát bị bắt vì thuộc địa bàn (“escape capture … because they knew the area so well”).",
+              "p": "Bài viết: “knowledge of the local area … avoid retaliation” — nhờ hiểu rõ khu vực nên tránh được đòn trả đũa khi hạm đội nhà nước tới. “knew the area” ≈ “knowledge of the local area”."
+            },
+            {
+              "q": "Ý D: họ dựa vào biển nhiều hơn nông nghiệp (“depended more on the sea … than on farming”).",
+              "p": "Bài viết vùng này “relied heavily on marine resources, including fish and salt” — sống chủ yếu nhờ tài nguyên biển. “depended on the sea” ≈ “relied heavily on marine resources”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "escape capture by the authorities",
+              "p": "avoid retaliation once a state fleet arrived"
+            },
+            {
+              "q": "because they knew the area so well",
+              "p": "knowledge of the local area"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai ý B và D đều được bài nêu rõ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B và D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không thấy chuyện dùng “stolen vessels” (tàu bị cướp) để tiếp tục đi cướp."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không có chuyện trả tiền mua tin lộ trình tàu buôn (“paid for information about the routes merchant ships would take”)."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Vịnh nhỏ (coves) dùng để giấu thuyền / đánh úp — không nói là kho chứa hàng cướp được (“storehouses for stolen goods”)."
+            }
+          ]
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "D",
+      "answerPair": [
+        20,
+        21
+      ],
+      "correctLetters": [
+        "B",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "the inhabitants of these areas relied heavily on marine resources, including fish and salt."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 20–21 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý D: dựa vào biển nhiều hơn nông nghiệp (“depended more on the sea … than on farming”).",
+              "p": "Bài viết: “relied heavily on marine resources, including fish and salt” — sống chủ yếu nhờ cá và muối từ biển."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "depended more on the sea for their livelihood than on farming",
+              "p": "relied heavily on marine resources"
+            },
+            {
+              "q": "the sea for their livelihood",
+              "p": "including fish and salt"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý D; đi cùng B trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần “Các lựa chọn còn lại” ở câu 20."
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "C",
+      "answerPair": [
+        22,
+        23
+      ],
+      "correctLetters": [
+        "C",
+        "E"
+      ],
+      "evidence": {
+        "quoteEn": "Even high-ranking members of the state were not beyond engaging in such activities. According to the Greek orator Demosthenes, in 355 BCE, Athenian ambassadors … capture a ship"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai ý đúng về hải tặc và Hy Lạp cổ:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý C: quan chức cấp cao đôi khi cũng tham gia cướp biển (“Important officials … occasionally take part in piracy”).",
+              "p": "Bài nhắc “high-ranking members of the state” và vụ sứ thần Athens (“Athenian ambassadors”) cũng bắt tàu. “important officials” ≈ “high-ranking members”."
+            },
+            {
+              "q": "Ý E: một số văn bản Hy Lạp nhìn hải tặc khá tích cực (“a favourable view of piracy … in certain ancient Greek texts”).",
+              "p": "Homer không chỉ chấp nhận mà còn “praises” hành động hải tặc; Thucydides cũng “glorified” một số vụ. “favourable view” ≈ “condones / praises / glorified”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "important officials ... occasionally take part in piracy",
+              "p": "high-ranking members of the state were not beyond engaging in such activities"
+            },
+            {
+              "q": "officials ... take part in piracy",
+              "p": "Athenian ambassadors ... capture a ship"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "C và E đều có bằng chứng rõ trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C và E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài nói hải tặc đông và khó kiểm soát — không phải “very few people” làm nghề này."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Quan điểm gần như không đổi qua nhiều thế kỷ sau Homer — không phải đổi ngay sau Iliad/Odyssey (“attitudes changed soon after”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Thucydides còn khen cả vụ đánh thành phố — không phải ai cũng cho hải tặc là không chấp nhận được (“universally regarded as unacceptable”)."
+            }
+          ]
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "E",
+      "answerPair": [
+        22,
+        23
+      ],
+      "correctLetters": [
+        "C",
+        "E"
+      ],
+      "evidence": {
+        "quoteEn": "in his works the Iliad and the Odyssey, the ancient Greek writer Homer not only condones, but praises the lifestyle and actions of pirates."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 22–23 — ý còn lại:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý E: cái nhìn tích cực về hải tặc trong một số văn bản Hy Lạp (“favourable view of piracy”).",
+              "p": "Homer “not only condones, but praises” lối sống và hành động hải tặc — đúng nghĩa nhìn nhận tích cực."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a favourable view of piracy",
+              "p": "not only condones, but praises"
+            },
+            {
+              "q": "certain ancient Greek texts",
+              "p": "the Iliad and the Odyssey"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý E; đi cùng C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần loại đáp án ở câu 22."
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "grain",
+      "evidence": {
+        "quoteEn": "Pirate attacks on grain ships, which were essential to Roman citizens, led to angry voices in the Senate"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tấn công tàu chở gì về Rome khiến nghị sĩ nổi nóng?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “vessels transporting ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “vessels transporting ______ to Rome”.",
+              "p": "Bài viết “Pirate attacks on grain ships” — tấn công tàu chở ngũ cốc."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "vessels transporting ______",
+              "p": "grain ships"
+            },
+            {
+              "q": "transporting ______",
+              "p": "grain (ships)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“vessels transporting grain” chính là “grain ships”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "grain"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "punishment",
+      "evidence": {
+        "quoteEn": "led to angry voices in the Senate, demanding punishment of the culprits."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Họ đòi gì cho bọn hải tặc gây chuyện?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “calls for ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “calls for ______ for the pirates responsible”.",
+              "p": "Bài viết “demanding punishment of the culprits” — đòi trừng phạt thủ phạm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "calls for ______",
+              "p": "demanding punishment"
+            },
+            {
+              "q": "calls for",
+              "p": "demanding"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“calls for punishment” khớp với “demanding punishment”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "punishment"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "ransom",
+      "evidence": {
+        "quoteEn": "emboldened pirates kidnapped prominent Roman dignitaries, asking for a large ransom to be paid."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bắt quan chức Rome rồi đòi cái gì để thả?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “demanding a ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “demanding a ______ for the return of … officials”.",
+              "p": "Bài viết “asking for a large ransom” — đòi tiền chuộc lớn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "demanding a ______",
+              "p": "asking for a large ransom"
+            },
+            {
+              "q": "demanding / asking for",
+              "p": "giữ ý đòi hỏi"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“demanding a ransom” khớp với “asking for a large ransom”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ransom"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Deceiving others can offer an apparent opportunity to gain strategic advantage, to motivate others to action, or even to protect interpersonal bonds. Moreover, people inadvertently have been sharing inaccurate information"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn đầu, tác giả muốn nhấn điểm gì về misinformation?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: tin sai lan vì nhiều lý do khác nhau (“a number of reasons for the spread of misinformation”).",
+              "p": "Bài kể vừa cố ý (lợi thế chiến lược, thúc đẩy hành động, giữ quan hệ) vừa vô tình chia sẻ sai (“inadvertently … sharing inaccurate information”) — đúng là nhiều lý do."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a number of reasons for the spread of misinformation",
+              "p": "gain strategic advantage ... motivate others to action ... protect interpersonal bonds"
+            },
+            {
+              "q": "reasons for the spread of misinformation",
+              "p": "people inadvertently have been sharing inaccurate information"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn 1 liệt kê cả cố ý lẫn vô tình. Đáp án chính xác là D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài nói đây không phải chuyện mới (“not a recent phenomenon”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không bàn ai dễ nhận ra tin giả (“easy to identify misinformation”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nói tin bị biến dạng khi truyền miệng (“changes as it is passed from one person to another”)."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Yet the means to correct misinformation might, over time, be found in those same patterns of mass communication and of the facilitated spread of information."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Công nghệ đóng vai trò gì theo tác giả?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: công nghệ rồi cũng có thể giúp xử lý tin sai (“may … provide us with a solution to misinformation”).",
+              "p": "Bài viết: cách sửa tin sai (“means to correct misinformation”) có thể tìm thấy ngay trong các kênh truyền thông đại chúng. “provide a solution” ≈ “means to correct”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may ... provide us with a solution to misinformation",
+              "p": "the means to correct misinformation might ... be found"
+            },
+            {
+              "q": "the role of technology",
+              "p": "those same patterns of mass communication"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cùng kênh làm tin lan nhanh cũng có thể chứa cách chữa tin sai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Không khẳng định công nghệ đổi căn bản cách người ta nhìn thông tin (“fundamentally alter the way people regard information”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không bàn tổ chức dùng misinformation thế nào (“how organisations use misinformation”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói công nghệ giúp kiểm chứng dễ hơn (“easier to check whether information is accurate”)."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "At least three observations related to misinformation in the contemporary mass-media environment warrant the attention … First of all … Secondly … Thirdly …"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn bốn, tác giả đang làm gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: phác những vấn đề đáng chú ý hôm nay (“outlining which issues … are significant today”).",
+              "p": "Bài nêu “three observations … warrant the attention”, rồi lần lượt First / Secondly / Thirdly — đúng kiểu phác vấn đề then chốt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "outlining which issues ... are significant today",
+              "p": "three observations ... warrant the attention"
+            },
+            {
+              "q": "outlining which issues",
+              "p": "First of all ... Secondly ... Thirdly"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây là đoạn phác ba vấn đề chính, khớp đáp án C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không so ý kiến trái chiều của công chúng (“comparing different opinions people have”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không giải thích tác động đổi theo thời gian ngay đoạn này (“how the effects … have changed over time”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Chỉ gợi ý nhà hoạch định chính sách nên quan tâm — không mô tả thái độ của họ (“describing the attitude of policy makers”)."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Such programs, although laudable and useful, do not keep false advertising off the airwaves."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Quy định ở Mỹ có điểm gì theo bài?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: quy định không chặn được tin sai lên truyền thông (“fails to prevent misinformation from appearing in the media”).",
+              "p": "Bài viết các chương trình giám sát “do not keep false advertising off the airwaves” — không giữ quảng cáo sai lệch khỏi sóng phát thanh/truyền hình."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fails to prevent misinformation from appearing in the media",
+              "p": "do not keep false advertising off the airwaves"
+            },
+            {
+              "q": "point ... make about regulation",
+              "p": "such programs, although laudable and useful"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Quy định không chặn trước được tin sai trên sóng, khớp đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không kêu gọi đơn giản hóa guideline của FDA (“guidelines … need to be simplified”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói quy định chẳng ảnh hưởng ý kiến về thuốc kê đơn (“does not affect people’s opinions of new prescription drugs”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không so số cơ quan quản lý với nước khác (“more regulatory bodies than most other countries”)."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "people who encounter misinformation tend to believe it, at least initially"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền cụm phù hợp: people have ______ to misinformation."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống sau “have ______ to misinformation”.",
+              "p": "Bài nói người gặp tin sai thường tin ngay (“tend to believe it”) → chọn “frequent exposure” (G): thường xuyên tiếp xúc với tin sai."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have ______ to",
+              "p": "frequent exposure to"
+            },
+            {
+              "q": "tend to believe misinformation when encountering it",
+              "p": "frequent exposure"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“have frequent exposure to misinformation” khớp ý thường xuyên gặp và dễ tin tin sai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "J",
+      "evidence": {
+        "quoteEn": "Descartes argued … Spinoza argued … with conflicting predictions"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Descartes và Spinoza có ______ về cách tiếp nhận thông tin."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “philosophers … had ______ about how people engage”.",
+              "p": "Hai nhà triết học đưa ra dự đoán trái chiều (“conflicting predictions”) → chọn “different ideas” (J)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "had ______",
+              "p": "different ideas"
+            },
+            {
+              "q": "different ideas",
+              "p": "conflicting predictions"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“had different ideas” khớp với “conflicting predictions”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "J"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "H",
+      "evidence": {
+        "quoteEn": "verify or reject it through a separate cognitive process"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Spinoza nói có một ______ riêng cho bước kiểm tra sau."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a distinct ______ is involved in these stages”.",
+              "p": "Bài viết “separate cognitive process” → chọn “mental operation” (H): một thao tác / quá trình tâm trí riêng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a distinct ______",
+              "p": "mental operation"
+            },
+            {
+              "q": "mental operation",
+              "p": "separate cognitive process"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“distinct mental operation” khớp với “separate cognitive process”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "empirical evidence … has supported Spinoza’s account"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nghiên cứu gần đây cung cấp ______ cho thuyết Spinoza."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Recent research has provided ______ for Spinoza’s theory”.",
+              "p": "Bài viết “empirical evidence … has supported” → chọn “additional evidence” (B): thêm bằng chứng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "provided ______ for",
+              "p": "additional evidence for"
+            },
+            {
+              "q": "additional evidence",
+              "p": "empirical evidence … has supported"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“provided additional evidence” khớp với “empirical evidence … has supported”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "even if only momentarily"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chấp nhận thông tin như đúng dù chỉ trong một ______ cực ngắn."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “even if this is for an extremely ______”.",
+              "p": "Bài viết “even if only momentarily” → chọn “short period” (E): khoảng thời gian ngắn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an extremely ______",
+              "p": "short period"
+            },
+            {
+              "q": "short period",
+              "p": "only momentarily"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“extremely short period” khớp với “only momentarily”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "mental resources for skepticism physically reside in a different part of the brain than the resources used in perceiving and encoding"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nguồn lực hoài nghi và tiếp nhận nằm ở ______ trong não."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “are in ______ in the brain”.",
+              "p": "Bài viết chúng nằm ở “different part of the brain” → chọn “different locations” (C)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "in ______ in the brain",
+              "p": "different locations"
+            },
+            {
+              "q": "different locations",
+              "p": "different part of the brain"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“in different locations” khớp với “different part of the brain”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "For corrective campaigns to be persuasive, audiences need to be able to comprehend them"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nếu người xem không hiểu chiến dịch sửa tin giả thì chiến dịch có đạt mục đích không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: chiến dịch sẽ thất bại nếu người ta không hiểu (“will fail … if people are unable to understand them”).",
+              "p": "Bài viết: muốn thuyết phục thì khán giả phải “comprehend them”. “unable to understand” ≈ “need to be able to comprehend”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "will fail ... if people are unable to understand them",
+              "p": "audiences need to be able to comprehend them"
+            },
+            {
+              "q": "for corrective campaigns to be persuasive",
+              "p": "need to be able to comprehend them"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Muốn thuyết phục thì phải hiểu được — khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "That some audiences might be unaware of the potential for misinformation also suggests the utility of media literacy efforts as early as elementary school."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc dạy học sinh tiểu học về tin giả đã bị phản đối chưa?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói các nỗ lực dạy tiểu học “have been opposed” (đã bị phản đối).",
+              "p": "Bài chỉ gợi ý dạy sớm là hữu ích (“media literacy … as early as elementary school”) — không nhắc chuyện bị phản đối."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have been opposed",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "teach elementary school students about misinformation",
+              "p": "media literacy efforts as early as elementary school"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có gợi ý dạy sớm; phần bị phản đối thì không có."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "The journey forward undoubtedly will be a long and arduous one. … rather than any singular one-time panacea"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có thể xử lý misinformation trong thời gian tương đối ngắn không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: xử lý được trong “a relatively short period”.",
+              "p": "Bài bảo hành trình “long and arduous”, cần nỗ lực dài hơi — không phải “one-time panacea”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "in a relatively short period",
+              "p": "a long and arduous one"
+            },
+            {
+              "q": "overcome the problem ... quickly",
+              "p": "coordinated efforts over time, rather than any singular one-time panacea"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nhấn đây là chặng đường dài và vất vả — phản bác ý “short period”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Misinformation arises as a result of human fallibility and human information needs."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhu cầu theo kịp tin mới có bị phóng đại quá mức hôm nay không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: nhu cầu cập nhật tin “is hugely exaggerated” (bị thổi phồng).",
+              "p": "Bài chỉ nhắc “human information needs” như một nguyên nhân — không đánh giá là bị phóng đại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "is hugely exaggerated",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "the need to keep up with new information",
+              "p": "human fallibility and human information needs"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có chỗ bàn việc nhu cầu cập nhật tin bị thổi phồng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    }
+  }
+}

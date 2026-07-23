@@ -114,10 +114,32 @@ function parseOptionLine(line: string): McqOption | null {
   return { letter: m[1].toUpperCase(), text: m[2].trim() };
 }
 
+/**
+ * Phrase-bank lines in Cambridge OCR may be:
+ * - `A. development plans`
+ * - `A   constant conflict` (letter + 2+ spaces/nbsp, no period)
+ * - two options on one line: `A   foo      B   bar`
+ * Require period OR 2+ whitespace after the letter so sentence starts like
+ * "Although …" are not treated as option A.
+ */
+function parsePhraseBankOptionsFromLine(line: string): McqOption[] {
+  const normalized = line.replace(/\u00a0/g, " ").trim();
+  if (!normalized) return [];
+
+  const re = /\b([A-J])(?:\.\s+|\s{2,})([A-Za-z][\s\S]*?)(?=\s+[A-J](?:\.\s+|\s{2,})|$)/gi;
+  const out: McqOption[] = [];
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(normalized)) !== null) {
+    const letter = m[1]?.toUpperCase();
+    const text = m[2]?.replace(/\s+/g, " ").trim();
+    if (!letter || !text) continue;
+    out.push({ letter, text });
+  }
+  return out;
+}
+
 function parsePhraseBankOption(line: string): McqOption | null {
-  const m = line.match(/^([A-J])\.\s*(.+)$/i);
-  if (!m?.[1] || !m[2]) return null;
-  return { letter: m[1].toUpperCase(), text: m[2].trim() };
+  return parsePhraseBankOptionsFromLine(line)[0] ?? null;
 }
 
 function parseRomanHeadingOption(line: string): McqOption | null {
@@ -287,11 +309,13 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
         }
       }
 
-      const phraseBankOpt = kind === "summary-fill" ? parsePhraseBankOption(line) : null;
-      if (phraseBankOpt) {
-        options.push(phraseBankOpt);
-        phase = "opts";
-        continue;
+      if (kind === "summary-fill") {
+        const phraseBankOpts = parsePhraseBankOptionsFromLine(line);
+        if (phraseBankOpts.length > 0) {
+          options.push(...phraseBankOpts);
+          phase = "opts";
+          continue;
+        }
       }
 
       const phraseOpt = kind === "choose-two" ? parseOptionLine(line) : null;

@@ -1,0 +1,1796 @@
+{
+  "pilotId": "cam20-test1",
+  "schemaVersion": 4,
+  "note": "Cam 20 R T1 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The kākāpō",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "To Britain",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "How stress affects our judgement",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "It is the world’s only flightless parrot, and is also possibly one of the world’s longest-living birds, with a reported lifespan of up to 100 years."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để trả lời, ta cần xem bài có nói tới loài vẹt nào khác cũng không bay được như kākāpō hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo có loài vẹt khác cũng “share the kākāpō’s inability to fly” — cùng không bay được",
+              "p": "Nhưng bài khẳng định kākāpō “is the world’s only flightless parrot” — loài vẹt không bay duy nhất trên thế giới, không chia sẻ đặc điểm này với ai"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "other parrots share … inability to fly",
+              "p": "the world’s only flightless parrot"
+            },
+            {
+              "q": "share the inability to fly",
+              "p": "only … flightless (i.e. no other flightless parrot)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ kākāpō là loài vẹt duy nhất không biết bay, nên không thể có loài nào khác chia sẻ đặc điểm ấy."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Kākāpō breed in summer and autumn, but only in years when food is plentiful."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ta cần xem kākāpō trưởng thành có sinh sản đều đặn mỗi năm hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cho rằng chúng “produce chicks every year” — năm nào cũng sinh sản",
+              "p": "Nhưng bài nói chúng chỉ làm điều đó “in years when food is plentiful” — những năm thức ăn dồi dào, không phải năm nào cũng vậy"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "produce chicks every year",
+              "p": "breed … only in years when food is plentiful"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Việc sinh sản phụ thuộc vào lượng thức ăn từng năm, nên không thể nói năm nào chúng cũng đẻ con."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Males play no part in incubation or chick-rearing – females alone incubate eggs and feed the chicks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ta cần xem kākāpō đực có phụ con cái mang thức ăn về trong lúc ấp trứng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo con đực “bring food back to nesting females” — có mang thức ăn về",
+              "p": "Nhưng bài khẳng định “males play no part in incubation or chick-rearing” — con đực đứng ngoài hoàn toàn, chỉ “females alone” tự lo ấp trứng và cho con ăn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "males bring food back to nesting females",
+              "p": "males play no part … females alone incubate eggs and feed the chicks"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rất rõ con đực không hề tham gia, nên chuyện mang thức ăn về cho con cái là không có."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "They ate its meat and used its feathers to make soft cloaks. With them came the Polynesian dog and rat, which also preyed on kākāpō."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ta cần xem bài có so sánh mức độ đe dọa giữa chuột Polynesia và người định cư không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cho rằng “the Polynesian rat was a greater threat … than Polynesian settlers” — chuột nguy hiểm hơn người",
+              "p": "Bài chỉ kể người định cư ăn thịt, lấy lông làm áo, còn chuột và chó theo chân họ cũng “preyed on kākāpō” — không có câu nào đem hai bên ra so sánh"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a greater threat than Polynesian settlers",
+              "p": "also preyed on kākāpō (no comparison made)"
+            },
+            {
+              "q": "greater threat",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có đoạn nào cân đo ai nguy hiểm hơn ai, nên đề này không thể xác nhận đúng hay sai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Unfortunately, predation by feral cats on Rakiura Island led to a rapid decline in kākāpō numbers. As a result, during 1980-97, the surviving population was evacuated to three island sanctuaries: Codfish Island, Maud Island and Little Barrier Island."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ta cần xem việc di chuyển kākāpō khỏi đảo Rakiura có đúng là vì mèo hoang không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói chúng “were transferred from Rakiura Island … because they were at risk from feral cats”",
+              "p": "Và bài xác nhận đúng như vậy: “predation by feral cats … led to a rapid decline”, nên “as a result” toàn bộ số còn sống bị đưa đi “to three island sanctuaries”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "transferred … because they were at risk from feral cats",
+              "p": "predation by feral cats … led to a rapid decline … as a result … was evacuated"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mèo hoang thực sự là nguyên nhân khiến số lượng sụt giảm, kéo theo quyết định di dời cả đàn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "This involved moving the birds between islands, supplementary feeding of adults and rescuing and hand-raising any failing chicks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ta cần xem Recovery Plan có bao gồm việc chăm sóc những chim non đang gặp khó khăn không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói việc “caring for struggling young birds” từng nằm trong các biện pháp phục hồi số lượng",
+              "p": "Và bài nêu đúng biện pháp đó: “rescuing and hand-raising any failing chicks” — cứu và tự tay nuôi những chim non yếu, ốm"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "caring for struggling young birds",
+              "p": "rescuing and hand-raising any failing chicks"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cứu và nuôi tay chim non yếu đúng là một trong những việc Recovery Plan đã làm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "bulbs",
+      "evidence": {
+        "quoteEn": "with their diet including the leaves, roots and bark of trees as well as bulbs, and fern fronds."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài lá dương xỉ và các phần của cây, kākāpō còn ăn thêm gì nữa (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “fern fronds, various parts of a tree and ______” cần một danh từ chỉ loại thức ăn."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “diet consists of fern fronds, various parts of a tree and ______”.",
+              "p": "Bài viết chế độ ăn của kākāpō còn có “bulbs” bên cạnh “the leaves, roots and bark of trees … and fern fronds” — tức là củ, rễ cây."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "various parts of a tree",
+              "p": "the leaves, roots and bark of trees"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Món còn thiếu trong danh sách chính là bulbs (củ)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Bulbs"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "soil",
+      "evidence": {
+        "quoteEn": "The 1-4 eggs are laid in soil, which is repeatedly turned over before and during incubation."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trứng kākāpō được đặt trong loại vật liệu gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “nests are created in ______ where eggs are laid” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “nests are created in ______ where eggs are laid”.",
+              "p": "Bài viết trứng được đặt “in soil” — trong đất, và lớp đất này được xới lại nhiều lần trước và trong lúc ấp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "nests are created in ______",
+              "p": "eggs are laid in soil"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vật liệu ấy chính là soil (đất)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Soil"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "feathers",
+      "evidence": {
+        "quoteEn": "They ate its meat and used its feathers to make soft cloaks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bộ phận nào của kākāpō được người định cư dùng để làm quần áo (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the ______ of the kākāpō were used to make clothes” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the ______ of the kākāpō were used to make clothes”.",
+              "p": "Bài viết người định cư “used its feathers to make soft cloaks” — lấy lông chim (feathers) làm áo choàng mềm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "used to make clothes",
+              "p": "used … to make soft cloaks"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bộ phận được lấy để làm áo là feathers (lông chim)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Feathers"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "deer",
+      "evidence": {
+        "quoteEn": "introduced species such as deer depleted the remaining forests of food."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Loài vật nào do người châu Âu mang tới đã ăn hết nguồn thức ăn của kākāpō (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “______ were an animal which they introduced that ate the kākāpō’s food sources” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “______ were an animal which they introduced that ate the kākāpō’s food sources”.",
+              "p": "Bài viết “introduced species such as deer depleted the remaining forests of food” — deer (hươu) ăn sạch thức ăn còn lại trong rừng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "ate the kākāpō’s food sources",
+              "p": "depleted the remaining forests of food"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Loài vật gây ra chuyện đó là deer (hươu)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Deer"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "1980",
+      "evidence": {
+        "quoteEn": "and in 1980 it was confirmed females were also present."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Năm nào người ta xác nhận có kākāpō cái trên đảo Rakiura (một số):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a definite sighting … was reported in the year ______” cần một số chỉ năm."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a definite sighting of female kākāpō on Rakiura Island was reported in the year ______”.",
+              "p": "Bài viết “in 1980 it was confirmed females were also present” — năm xác nhận là 1980."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a definite sighting … was reported",
+              "p": "it was confirmed females were also present"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Năm được xác nhận là 1980."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "1980"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "funding",
+      "evidence": {
+        "quoteEn": "together with a specialist advisory group called the Kākāpō Scientific and Technical Advisory Committee and a higher amount of funding."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Recovery Plan năm 1996 đã tăng thêm điều gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the Recovery Plan included an increase in ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the Recovery Plan included an increase in ______”.",
+              "p": "Bài viết Recovery Plan năm 1996 đi kèm “a higher amount of funding” — nguồn kinh phí được tăng lên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an increase in ______",
+              "p": "a higher amount of funding"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là funding — tức kinh phí."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Funding"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "stakeholders",
+      "evidence": {
+        "quoteEn": "ensure stakeholders continue to be fully engaged in the preservation of the species."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mục tiêu hiện nay của Recovery Plan là duy trì sự tham gia của ai (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “maintain the involvement of ______ in kākāpō protection” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a current goal of the Recovery Plan is to maintain the involvement of ______”.",
+              "p": "Bài viết mục tiêu là “ensure stakeholders continue to be fully engaged” — giữ cho các bên liên quan tiếp tục tham gia."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "maintain the involvement of ______",
+              "p": "stakeholders continue to be fully engaged"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đối tượng cần giữ chân là stakeholders (các bên liên quan)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Stakeholders"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Nevertheless, opportunities are limited as the number of these mature survivors is relatively small."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói tới khó khăn nghiên cứu vì chỉ còn quá ít cây du trưởng thành sống sót. Đề viết: “reference to the research problems that arise from there being only a few surviving large elms”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói khó khăn nghiên cứu vì cây du lớn sống sót “only a few” — chỉ còn rất ít.",
+              "p": "Đoạn C: Russell nói “opportunities are limited as the number of these mature survivors is relatively small” — cơ hội nghiên cứu bị hạn chế vì số cây trưởng thành sống sót còn lại quá ít. “research problems … only a few” ≈ “opportunities are limited … relatively small”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "research problems … only a few surviving large elms",
+              "p": "opportunities are limited as the number of these mature survivors is relatively small"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "For her, the environmental case for reintroducing elm is strong."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói về sự bất đồng quan điểm quanh giá trị của việc tái trồng cây du ở Anh. Đề viết: “details of a difference of opinion about the value of reintroducing elms to Britain”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn cho thấy có người ủng hộ, có người còn nghi ngại — đúng là “a difference of opinion”.",
+              "p": "Đoạn G: Russell tin “the environmental case for reintroducing elm is strong”, còn Elliot thấy “it seems like a good idea” nhưng lo đây thực chất chỉ là “cloning” và có thể kéo theo bệnh mới. Hai luồng ý kiến trái chiều rõ ràng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a difference of opinion about the value of reintroducing elms",
+              "p": "the environmental case … is strong (Russell) vs. seems like a good idea but effectively cloning (Elliot)"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "in the ’70s a second epidemic was triggered by shipments of elm from Canada."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói cách bệnh Dutch elm disease được đưa vào Anh. Đề viết: “reference to how Dutch elm disease was brought into Britain”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói con đường bệnh “was brought into Britain” — được mang vào bằng cách nào.",
+              "p": "Đoạn B: “in the ’70s a second epidemic was triggered by shipments of elm from Canada” — dịch bùng lần hai vì các lô gỗ du nhập từ Canada mang theo bọ cánh cứng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how the disease was brought into Britain",
+              "p": "a second epidemic was triggered by shipments of elm from Canada"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "Strong winds from the sea make it difficult for the determined elm bark beetle to attack this coastal city’s elm population."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn mô tả điều kiện giúp một địa điểm ở Anh tránh được Dutch elm disease. Đề viết: “a description of the conditions that have enabled a location in Britain to escape Dutch elm disease”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói vì sao một nơi cụ thể lại “escape” được bệnh này.",
+              "p": "Đoạn E: Brighton tránh được nhờ “strong winds from the sea make it difficult for … the beetle to attack this coastal city’s elm population” — gió biển mạnh cản bọ cánh cứng tấn công."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "conditions that have enabled a location to escape the disease",
+              "p": "strong winds from the sea make it difficult for … the beetle to attack"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Once the trunk of the elm reaches 10-15 centimetres or so in diameter, it becomes a perfect size for beetles to lay eggs and for the fungus to take hold."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói giai đoạn nào khiến cây du non trở nên dễ nhiễm Dutch elm disease. Đề viết: “reference to the stage at which young elms become vulnerable to Dutch elm disease”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn chỉ ra lúc nào cây du non bắt đầu “become vulnerable” — dễ bị nhiễm bệnh.",
+              "p": "Đoạn C: “once the trunk … reaches 10-15 centimetres … becomes a perfect size for beetles to lay eggs and for the fungus to take hold” — khi thân đạt cỡ đó, cây trở thành mồi ngon cho bọ và nấm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the stage at which young elms become vulnerable",
+              "p": "once the trunk … reaches 10-15 centimetres … becomes a perfect size for beetles"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "‘The effects are very quick,’ says Russell. ‘You return in four to six weeks and trees that are resistant show no symptoms, whereas those that are susceptible show leaf loss and may even have died completely.’"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai là người từng nói rằng một khi cây nhiễm Dutch elm disease, thiệt hại sẽ lộ ra rất nhanh? Đề viết: “If a tree gets infected with Dutch elm disease, the damage rapidly becomes visible”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói thiệt hại “rapidly becomes visible” — lộ ra rất nhanh sau khi nhiễm bệnh.",
+              "p": "Karen Russell là người khẳng định “the effects are very quick” — chỉ sau 4-6 tuần, cây dễ nhiễm đã “show leaf loss and may even have died completely”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the damage rapidly becomes visible",
+              "p": "the effects are very quick … show leaf loss"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chính Russell là người mô tả triệu chứng hiện ra nhanh đến mức nào."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "‘Sometimes the best thing you can do is just give nature time to recover over time, you might get resistance,’ says Elliot."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai là người cho rằng có thể tốt hơn nếu cứ chờ xem những cây du trưởng thành sống sót có tiếp tục phát triển tốt không? Đề viết: “It may be better to wait and see if the mature elms that have survived continue to flourish”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói nên “wait and see” — chờ xem, thay vì can thiệp ngay.",
+              "p": "Matt Elliot là người khuyên vậy: “the best thing you can do is just give nature time to recover … you might get resistance” — cứ để tự nhiên có thời gian, rồi có thể sẽ dần có sức đề kháng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "wait and see if the mature elms continue to flourish",
+              "p": "give nature time to recover … you might get resistance"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Elliot chính là người ủng hộ hướng chờ đợi tự nhiên hơn là can thiệp ngay."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "I don’t see how it can be entirely down to luck."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai là người cho rằng phải có lý do giải thích cho sự sống sót của một số cây du trưởng thành, chứ không thể chỉ là may mắn? Đề viết: “There must be an explanation for the survival of some mature elms”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói sự sống sót “must be” có lý do giải thích, không thể ngẫu nhiên.",
+              "p": "Karen Russell nói thẳng: “I don’t see how it can be entirely down to luck” — bà không tin đó hoàn toàn là may mắn, hẳn phải có nguyên nhân (tránh, chịu đựng hay đề kháng)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "there must be an explanation for the survival",
+              "p": "I don’t see how it can be entirely down to luck"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chính Russell là người phát biểu rằng không thể chỉ đổ cho may mắn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "‘The beetles can just march in if we’re not careful, as the threat is right on our doorstep,’ says Bourne."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai là người nhấn mạnh rằng côn trùng mang Dutch elm disease không ở quá xa chúng ta? Đề viết: “We need to be aware that insects carrying Dutch elm disease are not very far away”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói côn trùng mang bệnh “are not very far away” — không ở xa.",
+              "p": "Peter Bourne cảnh báo: “the beetles can just march in if we’re not careful, as the threat is right on our doorstep” — mối đe dọa đang ở ngay ngưỡng cửa."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "insects carrying the disease are not very far away",
+              "p": "the threat is right on our doorstep"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bourne chính là người cảnh báo bọ cánh cứng có thể tràn vào bất cứ lúc nào vì ở rất gần."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "You look at old photographs from the 1960s and it’s only then that you realise the impact [elms had]"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai là người nói rằng bạn chỉ thực sự hiểu được tác động của Dutch elm disease khi nhìn thấy bằng chứng cây du từng nổi bật thế nào? Đề viết: “You understand the effect Dutch elm disease has had when you see evidence of how prominent the tree once was”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói chỉ hiểu rõ tác động khi thấy “evidence of how prominent the tree once was” — bằng chứng về sự nổi bật trước đây.",
+              "p": "Matt Elliot chia sẻ: “you look at old photographs from the 1960s and it’s only then that you realise the impact [elms had]” — chỉ khi nhìn ảnh cũ mới nhận ra cây du từng quan trọng thế nào."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "see evidence of how prominent the tree once was",
+              "p": "old photographs from the 1960s … realise the impact"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Elliot là người kể rằng chính những tấm ảnh cũ mới giúp ông nhận ra mức độ ảnh hưởng ấy."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "oak",
+      "evidence": {
+        "quoteEn": "elm ran a close second to oak as the hardwood tree of choice in Britain and was in many instances the most prominent tree in the landscape."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Loại cây nào từng phổ biến hơn cả cây du ở Anh trong nhiều thế kỷ (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the only tree that was more popular in Britain than elm was ______” cần một danh từ chỉ loại cây."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the only tree that was more popular in Britain than elm was ______”.",
+              "p": "Bài viết cây du “ran a close second to oak” — chỉ đứng sau oak (cây sồi) trong danh sách cây gỗ cứng được ưa chuộng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more popular … than elm",
+              "p": "elm ran a close second to ______"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Loại cây đứng trên cây du về độ phổ biến là oak (cây sồi)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Oak"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "flooring",
+      "evidence": {
+        "quoteEn": "its wood was used for items such as storage crates and flooring."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài hộp đựng, gỗ du thế kỷ 18 còn được dùng làm gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “to provide wood for boxes and ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “it was grown to provide wood for boxes and ______”.",
+              "p": "Bài viết gỗ du dùng “for items such as storage crates and flooring” — vừa làm hộp đựng (storage crates ≈ boxes), vừa lát sàn (flooring)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "boxes",
+              "p": "storage crates"
+            },
+            {
+              "q": "and ______",
+              "p": "and flooring"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vật dụng cần điền là flooring (sàn nhà)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Flooring"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "keel",
+      "evidence": {
+        "quoteEn": "used to build the keel of the 19th-century sailing ship Cutty Sark as well as mining equipment."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bộ phận nào của tàu Cutty Sark được làm từ gỗ du (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the Cutty Sark’s ______ was also constructed from elm” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the Cutty Sark’s ______ was also constructed from elm”.",
+              "p": "Bài viết gỗ du được dùng “to build the keel of the 19th-century sailing ship Cutty Sark” — đóng phần sống tàu (keel)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "constructed from elm",
+              "p": "used to build … Cutty Sark"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bộ phận đó là keel (sống tàu)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Keel"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "we are all sometimes required to weigh up information under stressful conditions."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn 1, tác giả mở đầu chủ đề bài viết bằng cách nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: nhắc đến một thử thách mà ai cũng gặp phải (“mentioning a challenge faced by everyone”).",
+              "p": "Bài viết “we are all sometimes required to weigh up information under stressful conditions” — ai cũng đôi lúc phải xử lý thông tin trong lúc căng thẳng, đây là thử thách chung."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a challenge faced by everyone",
+              "p": "we are all sometimes required to weigh up information under stressful conditions"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ngay từ câu mở đầu, tác giả đã nêu một tình huống ai cũng từng gặp, đúng như đáp án C mô tả."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không hề đưa ra định nghĩa cho bất kỳ thuật ngữ nào (“defining … terms”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không có giả định phổ biến nào bị nghi vấn ở đây (“questioning a widely held assumption”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không chỉ ra một tình huống cụ thể khiến ta lo lắng nhất (“specifying a situation which makes us most anxious”) — chỉ nói chung về nhiều loại quyết định."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "These ups and downs presented the perfect setting for an experiment on how people’s ability to use information changes when they feel under pressure."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả nêu điều gì về lính cứu hỏa ở đoạn 2?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: sự thay đổi thường xuyên về mức độ căng thẳng trong công việc khiến họ là đối tượng nghiên cứu lý tưởng (“ideal study subjects”).",
+              "p": "Bài viết những ngày căng thẳng và thư thái xen kẽ (“ups and downs”) “presented the perfect setting for an experiment” — chính là bối cảnh hoàn hảo để nghiên cứu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "ideal study subjects",
+              "p": "the perfect setting for an experiment"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chính sự lên xuống thất thường trong mức độ căng thẳng công việc khiến lính cứu hỏa trở thành đối tượng nghiên cứu lý tưởng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói tới cách lính cứu hỏa tự đối phó với stress (“the strategies they use to handle stress”), chỉ dùng họ làm đối tượng thí nghiệm."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không so sánh nghề này với các nghề dịch vụ công khác (“typical of many public service professions”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không có ý nói tính cách của lính cứu hỏa đặc biệt phù hợp để làm việc dưới áp lực."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "We asked the firefighters to estimate their likelihood of experiencing 40 different adverse events in their life, such as being involved in an accident or becoming a victim of card fraud. We then gave them either good news (that their likelihood of experiencing these events was lower than they’d thought) or bad news (that it was higher) and asked them to provide new estimates."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả đang làm gì ở đoạn 4?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: mô tả phương pháp nghiên cứu (“describing their methodology”).",
+              "p": "Bài viết chi tiết từng bước thí nghiệm: yêu cầu ước tính khả năng gặp 40 sự kiện xấu, rồi đưa tin tốt/xấu và yêu cầu ước tính lại — đây là quy trình thực hiện, không phải kết quả hay mục tiêu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "describing their methodology",
+              "p": "We asked the firefighters to estimate … We then gave them either good news … or bad news … and asked them to provide new estimates"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả đoạn chỉ đơn giản là thuật lại từng bước thí nghiệm đã diễn ra thế nào."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đây là bước tiến hành thí nghiệm, kết quả (“findings”) chỉ được nêu ở đoạn sau."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không có lời biện minh cho cách tiếp cận (“justifying their approach”), chỉ mô tả cách làm."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Mục tiêu nghiên cứu đã được nêu trước đó, đoạn này là các bước cụ thể, không phải “objectives”."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "When we experience stressful events, a physiological change is triggered that causes us to take in warnings and focus on what might go wrong."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn 7, tác giả mô tả một cơ chế trong não bộ có tác dụng gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: tạo ra sự nhạy cảm cao hơn với các dấu hiệu đe dọa từ bên ngoài (“heightened sensitivity to indications of external threats”).",
+              "p": "Bài viết cơ chế này “causes us to take in warnings and focus on what might go wrong”, đặc biệt phản ứng với “unexpected warning signs, such as faces expressing fear” — tức tăng độ nhạy với các tín hiệu cảnh báo/đe dọa."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "heightened sensitivity to indications of external threats",
+              "p": "causes us to take in warnings and focus on what might go wrong … unexpected warning signs"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cơ chế này khiến con người nhạy hơn với các dấu hiệu nguy hiểm từ bên ngoài, đúng như đáp án C nêu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói cơ chế này giúp phản ứng nhanh hơn nói chung (“respond more quickly”), mà là tập trung/hấp thụ cảnh báo."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Ngược lại, cơ chế này làm ta tập trung vào lo lắng hơn — không giúp “control” (kiểm soát) mức độ lo âu."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Đây là cơ chế tiếp nhận cảnh báo, không phải cơ chế để chính ta “communicate a sense of danger” cho người khác."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "People are normally quite optimistic – they will ignore bad news and embrace the good. This is what happened when the firefighters were relaxed;"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu “At times when they were relaxed, the firefighters usually …” (những lúc thư thái, lính cứu hỏa thường) cần nối với vế kết nào trong A–G?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu nói lúc thư thái, họ “usually …” — theo đúng xu hướng lạc quan tự nhiên của con người.",
+              "p": "Bài viết “people are normally quite optimistic – they will ignore bad news and embrace the good”, và “this is what happened when the firefighters were relaxed” — lúc thư thái họ cũng lạc quan, phớt lờ tin xấu như vậy."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "took relatively little notice of bad news (B)",
+              "p": "they will ignore bad news"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vế B “took relatively little notice of bad news” (ít để tâm đến tin xấu) chính là cách diễn đạt khác của “ignore bad news”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "but when they were under stress, a different pattern emerged. Under these conditions, they became hyper-vigilant to bad news, even when it had nothing to do with their job (such as learning that the likelihood of card fraud was higher than they’d thought), and altered their beliefs in response."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu “The researchers noted that when the firefighters were stressed, they …” (các nhà nghiên cứu ghi nhận khi lính cứu hỏa căng thẳng, họ) cần nối với vế kết nào trong A–G?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu nói lúc căng thẳng, phản ứng của họ khác hẳn — “became hyper-vigilant to bad news” (cảnh giác cao độ với tin xấu).",
+              "p": "Bài viết họ “altered their beliefs in response” — tức tin rằng khả năng gặp chuyện xấu cao hơn, không còn lạc quan như trước."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "thought it more likely that they would experience something bad (G)",
+              "p": "became hyper-vigilant to bad news … altered their beliefs in response"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vế G mô tả đúng điều đó: họ bắt đầu nghĩ khả năng gặp chuyện xấu là cao hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "In contrast, stress didn’t change how they responded to good news (such as learning that the likelihood of card fraud was lower than they’d thought)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu “When the firefighters were told good news, they always …” (khi được báo tin tốt, lính cứu hỏa luôn) cần nối với vế kết nào trong A–G?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu nói phản ứng với tin tốt diễn ra “always” — một cách nhất quán, không đổi.",
+              "p": "Bài viết “stress didn’t change how they responded to good news” — dù thư thái hay căng thẳng, cách họ phản ứng với tin tốt vẫn không đổi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "behaved in a similar manner, regardless of the circumstances (F)",
+              "p": "stress didn’t change how they responded to good news"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vế F “behaved in a similar manner, regardless of the circumstances” diễn tả đúng việc stress không hề làm thay đổi phản ứng của họ với tin tốt."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "we observed the same pattern in students who were told they had to give a surprise public speech, which would be judged by a panel, recorded and posted online. Sure enough, their cortisol levels spiked, their heart rates went up"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu “The students’ cortisol levels and heart rates were affected when the researchers …” (nồng độ cortisol và nhịp tim của sinh viên bị ảnh hưởng khi các nhà nghiên cứu) cần nối với vế kết nào trong A–G?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu hỏi nồng độ cortisol/nhịp tim tăng lên khi các nhà nghiên cứu đã làm gì với sinh viên.",
+              "p": "Bài viết sinh viên “were told they had to give a surprise public speech” — bị đặt vào tình huống bất ngờ gây căng thẳng, ngay sau đó “cortisol levels spiked, their heart rates went up”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "put them in a stressful situation (E)",
+              "p": "told they had to give a surprise public speech … judged by a panel, recorded and posted online"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vế E “put them in a stressful situation” chính là hành động thông báo bài phát biểu bất ngờ đó."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "they became hyper-vigilant to bad news"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu “In both experiments, negative information was processed better when the subjects …” (ở cả hai thí nghiệm, thông tin tiêu cực được xử lý tốt hơn khi đối tượng) cần nối với vế kết nào trong A–G?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu hỏi tin xấu được xử lý tốt hơn khi đối tượng đang ở trạng thái nào.",
+              "p": "Bài viết cả lính cứu hỏa (khi “under stress”) và sinh viên (sau khi bị đặt vào tình huống gây stress) đều xử lý tốt hơn các thông tin đáng lo — tức là lúc đang chịu áp lực."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "were feeling under stress (D)",
+              "p": "under stress … became hyper-vigilant / better at processing … alarming information"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả hai thí nghiệm đều cho thấy điều này xảy ra khi đối tượng “were feeling under stress” — vế D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Studies show that if we observe positive feeds on social media, such as images of a pink sunset, we are more likely to post uplifting messages ourselves. If we observe negative posts, such as complaints about a long queue at the coffee shop, we will in turn create more negative posts."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giọng điệu những gì ta đăng trên mạng xã hội có thực sự phản ánh đúng bản chất các bài đăng ta thấy trong feed không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói giọng điệu bài ta đăng “tends to reflect the nature of the posts in our feeds”.",
+              "p": "Bài viết đúng như vậy: thấy bài tích cực ta “more likely to post uplifting messages”, thấy bài tiêu cực ta “will in turn create more negative posts”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the tone of what we post reflects the nature of our feed",
+              "p": "positive feeds … post uplifting messages … negative posts … create more negative posts"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả chiều tích cực và tiêu cực đều được bài viết xác nhận là phản ánh qua lại như vậy."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Repeatedly checking your phone, according to a survey conducted by the American Psychological Association, is related to stress."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điện thoại có thực sự gây stress nhiều hơn các thiết bị điện tử khác không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cho rằng “phones have a greater impact on our stress levels than other electronic media devices”.",
+              "p": "Bài chỉ nói việc kiểm tra điện thoại liên tục “is related to stress” — không có câu nào đem điện thoại ra so sánh với thiết bị khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "phones have a greater impact … than other devices",
+              "p": "checking your phone … is related to stress (no comparison with other devices)"
+            },
+            {
+              "q": "greater impact than other devices",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có chỗ nào trong bài so sánh điện thoại với thiết bị khác về mức gây stress."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "After a stressful public event, such as a natural disaster or major financial crash, there is often a wave of alarming information in traditional and social media, which individuals become very aware of. But that has the effect of exaggerating existing danger."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đọc càng nhiều tin về một sự kiện gây căng thẳng trên mạng xã hội, ta có càng kém khả năng tiếp nhận thông tin đó không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cho rằng “the more we read … the less able we are to take the information in”.",
+              "p": "Bài chỉ nói làn sóng thông tin khiến người ta “become very aware of” nó, và điều đó “exaggerating existing danger” — không hề nói khả năng tiếp nhận thông tin bị suy giảm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the less able we are to take the information in",
+              "p": "individuals become very aware of … exaggerating existing danger (no mention of reduced ability to process)"
+            },
+            {
+              "q": "less able to take information in",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không hề nhắc tới việc khả năng tiếp nhận thông tin giảm đi khi đọc nhiều hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "As a result, trips are cancelled, even if the disaster took place across the globe; stocks are sold, even when holding on is the best thing to do."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Stress do các bài đăng trên mạng xã hội gây ra có thể khiến ta làm những việc phòng ngừa không cần thiết không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói stress từ mạng xã hội “can lead us to take unnecessary precautions”.",
+              "p": "Bài viết hệ quả là “trips are cancelled” dù thảm họa ở rất xa, và “stocks are sold” dù giữ lại mới là lựa chọn tốt nhất — toàn là phòng ngừa thái quá."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "take unnecessary precautions",
+              "p": "trips are cancelled … stocks are sold, even when holding on is the best thing to do"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hủy chuyến đi hay bán cổ phiếu trong những trường hợp đó đúng là phòng ngừa thái quá, không cần thiết."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "The good news, however, is that positive emotions, such as hope, are contagious too, and are powerful in inducing people to act to find solutions."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Xu hướng bị lây cảm xúc từ người khác có thể được dùng theo hướng tích cực không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói xu hướng bị lây cảm xúc “can be used in a positive way”.",
+              "p": "Bài viết cảm xúc tích cực như “hope” cũng “contagious” và “powerful in inducing people to act to find solutions” — đúng là có thể tạo tác động tốt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "can be used in a positive way",
+              "p": "positive emotions … are contagious too … powerful in inducing people to act to find solutions"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hy vọng lây lan được và thúc đẩy người ta hành động tìm giải pháp — đúng là mặt tích cực của việc lây cảm xúc."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    }
+  }
+}

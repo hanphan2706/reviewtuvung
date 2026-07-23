@@ -1,0 +1,1967 @@
+{
+  "pilotId": "cam20-test3",
+  "schemaVersion": 4,
+  "note": "Cam 20 R T3 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Frozen Food",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Can the planet’s coral reefs be saved?",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Robots and us",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "potatoes",
+      "evidence": {
+        "quoteEn": "They froze them overnight, then trampled them to squeeze out the moisture, then dried them in the sun. This preserved their nutritional value"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người Andean bảo tồn giá trị dinh dưỡng của thứ gì bằng cách đông rồi sấy khô (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “conserved the nutritional value of ______” cần danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“conserved the nutritional value of ______, using a method of freezing then drying”",
+              "p": "Bài viết: họ đông rồi sấy khoai (“potatoes”) để giữ giá trị dinh dưỡng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "conserved the nutritional value of ______",
+              "p": "preserved their nutritional value (potatoes)"
+            },
+            {
+              "q": "freezing then drying",
+              "p": "froze … then … dried"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là potatoes — loại củ họ đông rồi sấy để giữ dinh dưỡng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Potatoes"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "butter",
+      "evidence": {
+        "quoteEn": "railroads first began putting blocks of ice in insulated rail cars to send butter from Ogdensburg, New York, to Boston"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thứ gì được giữ lạnh bằng đá khi vận chuyển bằng tàu lửa đặc biệt năm 1851 (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “______ was kept cool by ice” cần danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“______ was kept cool by ice during transportation in specially adapted trains”",
+              "p": "Bài viết: gửi “butter” trong toa lạnh từ Ogdensburg tới Boston."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "kept cool by ice / specially adapted trains",
+              "p": "blocks of ice in insulated rail cars"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là butter — mặt hàng được ướp đá khi chở bằng toa tàu đặc biệt."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Butter"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "meat",
+      "evidence": {
+        "quoteEn": "a shipment of Australian beef and mutton was sent, frozen, to England"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hai loại gì là thực phẩm đông lạnh đầu tiên được gửi từ Úc sang Anh (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“Two kinds of ______” → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Two kinds of ______ were the first frozen food shipped to England”",
+              "p": "Bài viết: lô “Australian beef and mutton” đông lạnh gửi sang Anh — tức là meat."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Two kinds of ______",
+              "p": "beef and mutton"
+            },
+            {
+              "q": "beef and mutton",
+              "p": "meat"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là meat — beef và mutton đông lạnh được gộp chung vào một từ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Meat"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "crystals",
+      "evidence": {
+        "quoteEn": "During the freezing process, crystals formed within the cells of the food, and when the ice expanded and the cells burst, this spoilt the flavor and texture of the food"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Birdseye dùng đông nhanh để thứ gì không làm hỏng thức ăn (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“so that ______ did not spoil the food” → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“quick-freezing methods, so that ______ did not spoil the food”",
+              "p": "Bài viết: trong quá trình đông, “crystals” hình thành trong tế bào làm hỏng vị/kết cấu; Birdseye giảm thiệt hại do crystals."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ did not spoil the food",
+              "p": "crystals … spoilt the flavor and texture"
+            },
+            {
+              "q": "spoil",
+              "p": "spoilt"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là crystals — các tinh thể đá hình thành trong tế bào làm hỏng vị và kết cấu thức ăn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Crystals"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "cellophane",
+      "evidence": {
+        "quoteEn": "He also introduced the use of cellophane, the first transparent material for food packaging, which allowed consumers to see the quality of the product"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Birdseye đóng gói bằng gì để nhìn thấy sản phẩm (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“packaging products with ______” → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“packaging products with ______ so the product was visible”",
+              "p": "Bài viết: ông dùng “cellophane” — vật liệu trong suốt đầu tiên cho bao bì thực phẩm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "so the product was visible",
+              "p": "allowed consumers to see the quality"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là cellophane — vật liệu trong suốt đầu tiên dùng làm bao bì thực phẩm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Cellophane"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "tin",
+      "evidence": {
+        "quoteEn": "tin was being used for munitions. Canned foods were rationed to save tin for the war effort, while frozen foods were abundant and cheap"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thực phẩm đông lạnh phổ biến đầu những năm 1940 vì thiếu thứ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“because of a shortage of ______” → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Frozen food became popular because of a shortage of ______”",
+              "p": "Bài viết: thiếc (“tin”) dùng làm đạn dược; đồ hộp bị hạn chế để tiết kiệm tin."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a shortage of ______",
+              "p": "tin was being used for munitions / Canned foods were rationed to save tin"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là tin — thiếc dùng làm đạn dược nên đồ hộp bị hạn chế để tiết kiệm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Tin"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "refrigerator",
+      "evidence": {
+        "quoteEn": "By 1953, 33 million US families owned a refrigerator"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Năm 1950s nhiều nhà đã có thứ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“A large number of homes now had a ______” → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“A large number of homes now had a ______”",
+              "p": "Bài viết: đến 1953, 33 triệu gia đình Mỹ sở hữu “a refrigerator”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "homes … had a ______",
+              "p": "families owned a refrigerator"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là refrigerator — thiết bị mà hàng triệu gia đình Mỹ đã sở hữu vào năm 1953."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Refrigerator"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "In the early 1800s, ship owners from Boston, USA, had enormous blocks of Arctic ice towed all over the Atlantic for the purpose of food preservation"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc vận chuyển đá có làm một số chủ tàu Boston rất giàu vào đầu những năm 1800 không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“made some Boston ship owners very wealthy”",
+              "p": "Bài chỉ nói chủ tàu Boston kéo khối đá Bắc Cực đi khắp Đại Tây Dương để bảo quản thực phẩm — không nhắc giàu có."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "very wealthy",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có nhắc vận chuyển đá, nhưng không có thông tin về mức độ giàu có."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "While the food frozen this way was still palatable, there was some deterioration. … this spoilt the flavor and texture of the food"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Quy trình đông lạnh của Úc có nhược điểm là ảnh hưởng đến vị thức ăn không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“affected the taste of food”",
+              "p": "Bài viết: dù vẫn ăn được nhưng có “deterioration”, crystals làm “spoilt the flavor and texture”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "affected the taste",
+              "p": "spoilt the flavor"
+            },
+            {
+              "q": "a disadvantage",
+              "p": "some deterioration"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài xác nhận đông lạnh kiểu này làm giảm chất lượng vị ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "ran out of money and went to Labrador in Canada to trap and trade furs. While he was there, he became fascinated with how the Inuit would quickly freeze fish"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Birdseye sang Labrador để học cách người Inuit đông cá không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“travelled to Labrador in order to learn how the Inuit people froze fish”",
+              "p": "Bài viết: ông đi vì hết tiền, để “trap and trade furs”; việc đông cá chỉ là thứ ông tình cờ thấy và bị cuốn hút."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "in order to learn how … froze fish",
+              "p": "went … to trap and trade furs"
+            },
+            {
+              "q": "purpose = learn freezing",
+              "p": "purpose = fur trading (freezing discovered later)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mục đích chuyến đi là buôn lông thú, không phải học đông cá — FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "with the help of a clever name and a huge advertising budget, it launched the first 'TV Dinner'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Swanson có đầu tư nhiều tiền để quảng bá TV Dinner không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“invested a great deal of money in the promotion of the TV Dinner”",
+              "p": "Bài viết: “a huge advertising budget” khi ra mắt TV Dinner."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a great deal of money in the promotion",
+              "p": "a huge advertising budget"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ngân sách quảng cáo lớn = đầu tư nhiều cho promotion — TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "served in the same segmented aluminum tray that was used by airlines"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Swanson có thiết kế kiểu hộp mới cho lần ra mắt TV Dinner không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“developed a new style of container”",
+              "p": "Bài viết: dùng “the same segmented aluminum tray that was used by airlines” — cùng khay máy bay, không phải kiểu mới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a new style of container",
+              "p": "the same … tray that was used by airlines"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khay không mới — FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Today, the US frozen food industry has a turnover of over $67 billion annually"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngành thực phẩm đông lạnh Mỹ hiện có lớn nhất thế giới không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“currently the largest in the world”",
+              "p": "Bài chỉ nêu doanh thu ngành Mỹ — không so với các nước khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the largest in the world",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có so sánh quốc tế — NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "v",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quotesEn": [
+          "we want to show people how wonderful they are",
+          "we also want to highlight the research and conservation efforts that are now being carried out to try to save them from the threat of global warming",
+          "They want people to see what is being done to try to save these wonders"
+        ],
+        "quoteEn": "we want to show people how wonderful they are"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A đang nói về điều gì? Heading cần tìm là kiểu nêu hai mục tiêu giáo dục rõ ràng (“Two clear educational goals”)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading: “Two clear educational goals”",
+              "p": "Đoạn A nói khu bảo tồn muốn cho người xem thấy san hô đẹp đến mức nào, đồng thời làm nổi bật công tác nghiên cứu và bảo tồn — đúng hai mục tiêu giáo dục song song."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Two clear educational goals",
+              "p": "want to show … wonderful … also … highlight … research and conservation"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn A nêu đúng hai việc: khoe vẻ đẹp san hô và giới thiệu nỗ lực nghiên cứu/bảo tồn. Heading phù hợp là v."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "V"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "ii",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quotesEn": [
+          "get their brilliant tones of pink, orange, blue, green, etc. from algae that live within them, which in turn get protection, while their photosynthesising of the sun's rays provides nutrients for the polyps",
+          "This comfortable symbiotic relationship has led to the growth of coral reefs"
+        ],
+        "quoteEn": "This comfortable symbiotic relationship has led to the growth of coral reefs"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B đang nói về điều gì? Heading cần tìm là kiểu nói về sự hợp tác dưới đáy biển (“Cooperation beneath the waves”)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading: “Cooperation beneath the waves”",
+              "p": "Đoạn B kể polyps và tảo sống cộng sinh: tảo được bảo vệ, còn quá trình quang hợp của tảo lại cung cấp dưỡng chất cho polyps — đúng kiểu hợp tác dưới nước."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Cooperation beneath the waves",
+              "p": "symbiotic relationship (polyps + algae)"
+            },
+            {
+              "q": "cooperation",
+              "p": "symbiotic / in turn get protection … provides nutrients"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Quan hệ hai bên cùng có lợi giữa polyps và tảo trong đoạn B chính là một kiểu hợp tác dưới biển. Heading phù hợp là ii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Ii"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "iv",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quotesEn": [
+          "coral reefs are often described as the 'rainforests of the sea', though the comparison is dismissed by some naturalists, including David Attenborough",
+          "People say you cannot beat the rainforest,' Attenborough has stated. 'But that is simply not true",
+          "No, if you want beauty and wildlife, you want a coral reef"
+        ],
+        "quoteEn": "coral reefs are often described as the 'rainforests of the sea', though the comparison is dismissed by some naturalists, including David Attenborough"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C đang nói về điều gì? Heading cần tìm là kiểu bất đồng về một cụm từ (“Disagreement about the accuracy of a certain phrase”)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading: “Disagreement about the accuracy of a certain phrase”",
+              "p": "Đoạn C nhắc cụm “rainforests of the sea”, nhưng Attenborough bác bỏ so sánh này — ông cho rằng rạn san hô còn ấn tượng hơn rừng mưa. Đây đúng kiểu bất đồng về cách gọi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Disagreement about … a certain phrase",
+              "p": "comparison is dismissed"
+            },
+            {
+              "q": "a certain phrase",
+              "p": "rainforests of the sea"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có người dùng, có người phản đối cụm “rainforests of the sea” — đúng là bất đồng quanh một cách gọi. Heading phù hợp là iv."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Iv"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quotesEn": [
+          "these majestic sights are now under very serious threat, with the most immediate problem coming in the form of thermal stress",
+          "scientists advise that more than 90% of reefs could be lost by 2050 unless urgent action is taken",
+          "when things start to go wrong in the oceans, then corals will be the first to react",
+          "Coral reefs are dying and they are telling us that all is not well with our planet"
+        ],
+        "quoteEn": "scientists advise that more than 90% of reefs could be lost by 2050 unless urgent action is taken"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D đang nói về điều gì? Heading cần tìm là kiểu cảnh báo về rủi ro sắp tới (“A warning of further trouble ahead”)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading: “A warning of further trouble ahead”",
+              "p": "Đoạn D cảnh báo hơn 90% rạn san hô có thể biến mất vào năm 2050 nếu không hành động gấp, và ví san hô như lời báo trước rằng có gì đó không ổn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "A warning of further trouble ahead",
+              "p": "more than 90% … lost by 2050 / telling us that all is not well"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn D đưa ra con số đáng lo và coi san hô như tín hiệu cảnh báo cho tương lai. Heading phù hợp là vii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Vii"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quotesEn": [
+          "scientists are trying to pinpoint hardy types of coral that could survive our overheated oceans, and some of this research will be carried out at London Zoo",
+          "carry out research on species to find those that can survive best in warm, acidic waters",
+          "Another will be to try to increase coral breeding rates",
+          "aquarium-based research has enabled some corals to spawn artificially, which can assist coral reef restoration efforts",
+          "we could consider the launching of coral-spawning programmes several times a year"
+        ],
+        "quoteEn": "scientists are trying to pinpoint hardy types of coral that could survive our overheated oceans, and some of this research will be carried out at London Zoo"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E đang nói về điều gì? Heading cần tìm là kiểu nói về nỗ lực giảm bớt vấn đề (“Working to lessen the problems”)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading: “Working to lessen the problems”",
+              "p": "Đoạn E kể các nhà khoa học đang tìm loại san hô chịu nhiệt tốt, tăng tỷ lệ sinh sản và hỗ trợ phục hồi rạn — tức đang cố giảm bớt thiệt hại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Working to lessen the problems",
+              "p": "pinpoint hardy types … increase breeding … restoration efforts"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Các hướng nghiên cứu trong đoạn E đều nhằm hạn chế vấn đề san hô đang gặp. Heading phù hợp là iii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Iii"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quotesEn": [
+          "the progress we make in making coral better able to survive in a warming world can be shown to the public and encourage them to believe that we can do something to save the planet's reefs",
+          "Saving our coral reefs is now a critically important ecological goal"
+        ],
+        "quoteEn": "encourage them to believe that we can do something to save the planet's reefs"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F đang nói về điều gì? Heading cần tìm là kiểu truyền đi sự lạc quan (“Promoting hope”)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading: “Promoting hope”",
+              "p": "Đoạn F nói về việc cho công chúng thấy những tiến bộ đã đạt được, để họ tin rằng con người vẫn có thể cứu được rạn san hô."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Promoting hope",
+              "p": "encourage them to believe that we can do something to save … reefs"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mục đích đoạn F là gieo niềm tin rằng vẫn còn cơ hội cứu san hô. Heading phù hợp là vi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Vi"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Other menaces include ocean acidification, sea level increase, pollution by humans, deoxygenation and ocean current changes"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn HAI nguyên nhân gây hại rạn san hô được bài nhắc tới:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C — “the contamination of the sea from waste”",
+              "p": "Bài liệt kê “pollution by humans”."
+            },
+            {
+              "q": "E — “alterations in the usual flow of water in the seas”",
+              "p": "Bài liệt kê “ocean current changes”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "contamination … from waste / pollution",
+              "p": "pollution by humans"
+            },
+            {
+              "q": "alterations in … flow of water",
+              "p": "ocean current changes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Pollution by humans” và “ocean current changes” đều nằm trong danh sách mối đe dọa mà đoạn D nêu, khớp C và E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C và E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nhắc “extreme storms” như nguyên nhân."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói việc đánh bắt cá quá mức (“removal of too many fish”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói bệnh tăng ở loài biển (“increased disease”)."
+            }
+          ]
+        }
+      ],
+      "answerPair": [
+        20,
+        21
+      ],
+      "correctLetters": [
+        "C",
+        "E"
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "pollution by humans, deoxygenation and ocean current changes"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm 20–21 — ý còn lại:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "E — thay đổi dòng chảy biển (“ocean current changes”)",
+              "p": "Nằm trong danh sách menaces của đoạn D."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "alterations in the usual flow of water",
+              "p": "ocean current changes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý E; đi cùng C trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần loại đáp án ở câu 20."
+        }
+      ],
+      "answerPair": [
+        20,
+        21
+      ],
+      "correctLetters": [
+        "C",
+        "E"
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "One aim will be to carry out research on species to find those that can survive best in warm, acidic waters. Another will be to try to increase coral breeding rates"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn HAI ý đúng về các nhà nghiên cứu ở London Zoo:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B — “identify corals that can cope well with the changed sea conditions”",
+              "p": "Bài: tìm loài “survive best in warm, acidic waters”."
+            },
+            {
+              "q": "D — “speed up reproduction in some corals”",
+              "p": "Bài: “increase coral breeding rates” / spawn artificially."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cope well with changed sea conditions",
+              "p": "survive best in warm, acidic waters"
+            },
+            {
+              "q": "speed up reproduction",
+              "p": "increase coral breeding rates"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả hai mục tiêu nghiên cứu ở London Zoo đều khớp: tìm loài chịu được điều kiện biển mới (B) và tăng tỷ lệ sinh sản (D)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B và D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói mở rộng số loài san hô khác nhau đang được nuôi (“expand the numbers of different corals”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không bàn tạo artificial reefs để san hô mọc."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Không nghiên cứu vật liệu bảo vệ rạn khỏi nhiệt độ cao."
+            }
+          ]
+        }
+      ],
+      "answerPair": [
+        22,
+        23
+      ],
+      "correctLetters": [
+        "B",
+        "D"
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "try to increase coral breeding rates … aquarium-based research has enabled some corals to spawn artificially"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm 22–23:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "D — đẩy nhanh sinh sản ở một số san hô",
+              "p": "“increase coral breeding rates” / “spawn artificially”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "speed up reproduction",
+              "p": "increase … breeding rates / spawn artificially"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý D; đi cùng B trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem câu 22."
+        }
+      ],
+      "answerPair": [
+        22,
+        23
+      ],
+      "correctLetters": [
+        "B",
+        "D"
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "tentacles",
+      "evidence": {
+        "quoteEn": "Corals are composed of tiny animals, known as polyps, with tentacles for capturing small marine creatures"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "San hô có gì để bắt thức ăn (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“a number of ______ which they use to collect their food” → danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a number of ______ which they use to collect their food”",
+              "p": "Bài viết polyps có “tentacles for capturing small marine creatures”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "collect their food",
+              "p": "capturing small marine creatures"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là tentacles — xúc tu mà polyps dùng để bắt những con mồi nhỏ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Tentacles"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "protection",
+      "evidence": {
+        "quoteEn": "algae that live within them, which in turn get protection, while their photosynthesising of the sun's rays provides nutrients for the polyps"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tảo được gì khi sống trong san hô (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“Algae gain ______ from being inside the coral” → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Algae gain ______ from being inside the coral”",
+              "p": "Bài viết tảo “in turn get protection”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "gain ______",
+              "p": "get protection"
+            },
+            {
+              "q": "gain / get",
+              "p": "giữ ý nhận được"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là protection — tảo được polyps bảo vệ khi sống cộng sinh bên trong."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Protection"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "colour",
+      "evidence": {
+        "quoteEn": "Rising ocean temperatures are triggering bleaching events that strip reefs of their colour and eventually kill them"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nước biển ấm hơn có thể lấy đi thứ gì của san hô (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“remove the ______ from coral” → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“remove the ______ from coral”",
+              "p": "Bài viết sự kiện tẩy trắng “strip reefs of their colour”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "remove … from coral",
+              "p": "strip reefs of their colour"
+            },
+            {
+              "q": "remove / strip",
+              "p": "giữ ý lấy đi"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là colour — hiện tượng tẩy trắng lấy đi màu sắc của san hô rồi khiến san hô chết dần."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Colour"
+        }
+      ],
+      "answerAlternatives": [
+        "color",
+        "colour"
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "hat robots remain as no more than “idiot savants” lacking the capacity to outwit us, even"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng vì an toàn, con người cần giới hạn khả năng của robot? Đề viết: “restrict the abilities of robots”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "For our own safety, humans will need to restrict the abilities of robots.",
+              "p": "Rees cho rằng nên giữ robot ở mức “idiot savants”, không để chúng khôn hơn con người — đúng là muốn hạn chế khả năng vì an toàn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "restrict the abilities of robots",
+              "p": "remain as … idiot savants lacking the capacity to outwit us"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ý giữ robot ở mức thấp hơn con người để đảm bảo an toàn là quan điểm của Rees. Đáp án là A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "none have in fact risen up and challenged human supremacy … it seems unlikely that they ever will"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng rủi ro robot gây hại cho con người ít nghiêm trọng hơn người ta vẫn nghĩ? Đề viết: “less serious than humans believe it to be”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "The risk of robots harming us is less serious than humans believe it to be.",
+              "p": "Richardson cho rằng nỗi sợ lớn hơn thực tế nhiều; robot chưa từng nổi dậy và khó có khả năng sẽ như vậy."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "risk … less serious than humans believe",
+              "p": "none have … challenged human supremacy / unlikely that they ever will"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Richardson là người hạ thấp mức độ nguy hiểm mà con người vẫn hay lo sợ. Đáp án là C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Expecting a machine close to the creative intelligence of a human within the next 50 years would be highly ambitious"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng phải mất nhiều thập niên nữa trí tuệ robot mới sáng tạo được như con người? Đề viết: “many decades for robot intelligence to be as imaginative as human intelligence”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "It will take many decades for robot intelligence to be as imaginative as human intelligence.",
+              "p": "Wolpert cho rằng kỳ vọng máy có trí tuệ sáng tạo ngang con người trong 50 năm tới là quá tham vọng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "many decades … as imaginative as human",
+              "p": "creative intelligence … within the next 50 years would be highly ambitious"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Wolpert là người đưa ra mốc thời gian dài (nhiều thập niên) cho trí tuệ sáng tạo của robot. Đáp án là B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Should we feel guilty about exploiting [sophisticated robots]? Should we fret if they are underemployed, frustrated, or bored?"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng con người có thể phải bắt đầu xét lại việc đối xử với robot đã công bằng chưa? Đề viết: “treating robots fairly”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "We may have to start considering whether we are treating robots fairly.",
+              "p": "Rees đặt câu hỏi đạo đức: có nên cảm thấy có lỗi khi khai thác robot, lo chúng thất nghiệp hay chán nản không."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "treating robots fairly",
+              "p": "guilty about exploiting … underemployed, frustrated, or bored"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Câu hỏi đạo đức về việc đối xử công bằng với robot là của Rees. Đáp án là A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Using robots to gather resources nearer to home would seem to be a better use of our robotic tools"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng robot có ích với con người trên Trái Đất hơn là ngoài không gian? Đề viết: “more help to us on Earth than in space”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Robots are probably of more help to us on Earth than in space.",
+              "p": "Wolpert cho rằng dùng robot khai thác tài nguyên gần Trái Đất hợp lý hơn việc thuộc địa hóa các hành tinh khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more help … on Earth than in space",
+              "p": "gather resources nearer to home … better use"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Wolpert nghiêng về việc dùng robot ngay trên Trái Đất thay vì chinh phục vũ trụ. Đáp án là B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "it's better to read first-rate science fiction than second-rate science … perhaps no more likely to be wrong"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng ý tưởng trong khoa học viễn tưởng hạng nhất có thể chẳng kém chính xác so với khoa học hạng hai? Đề viết: “just as accurate as those found in the work of mediocre scientists”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "The ideas in high-quality science fiction may prove to be just as accurate as those found in the work of mediocre scientists.",
+              "p": "Rees khuyên nên đọc sci-fi hạng nhất hơn là khoa học hạng hai, vì ý tưởng trong đó chưa chắc sai hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "high-quality science fiction … as accurate as … mediocre scientists",
+              "p": "first-rate science fiction … second-rate science … no more likely to be wrong"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây là lời khuyên và so sánh của Rees về giá trị của sci-fi hạng nhất. Đáp án là A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Not all fear [robots]; many people welcome machine intelligence"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng có những người mong robot ngày càng thông minh hơn? Đề viết: “look forward to robots developing greater intelligence”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "There are those who look forward to robots developing greater intelligence.",
+              "p": "Richardson nói không phải ai cũng sợ robot; nhiều người còn chào đón trí tuệ máy."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "look forward to … greater intelligence",
+              "p": "welcome machine intelligence"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Richardson là người nhấn mạnh có một bộ phận công chúng hoan nghênh robot thông minh hơn. Đáp án là C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "more realistic and benign than the … \"terraforming\" of planets … preserved with a status that is analogous to Antarctica"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Richardson và Rees cùng có góc nhìn đạo đức giống nhau về điều gì? Chọn ending phù hợp (A–D)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the ethical aspect of ______” + ending C “changes made to other planets for our own benefit”",
+              "p": "Rees cảnh giác terraforming / muốn bảo tồn hành tinh như Antarctica; Richardson cũng nghi ngờ “colonisation” về mặt đạo đức."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "changes … to other planets for our benefit",
+              "p": "terraforming / colonisation (ethical doubts)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả hai đều thận trọng về việc cải tạo/thuộc địa hóa hành tinh vì lợi ích con người — ending C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Robots are still limited … Later this century … may relate … as adeptly as we do. … Machines can already navigate … However, there is no machine that can identify visual objects or speech with the reliability … of humans"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Rees và Wolpert cùng nhận định thế nào về mức độ tiến bộ của robot? Chọn ending phù hợp (A–D)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the extent of ______” + ending B “advances made in machine intelligence so far”",
+              "p": "Cả hai đều nói máy đã giỏi ở một số việc nhưng vẫn hạn chế so với người ở nhiều khía cạnh hiện tại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "advances … so far",
+              "p": "still limited / already … but not yet as reliable as humans"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Họ thống nhất về mức tiến bộ hiện tại của trí tuệ máy — ending B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "we have already seen the damaging effects of artificial intelligence in the form of computer viruses … Richardson … fears of artificial intelligence and robots persist; none have in fact risen up"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Wolpert bất đồng với Richardson về điều gì? Chọn ending phù hợp (A–D)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ending D “the harm already done by artificial intelligence”",
+              "p": "Wolpert thừa nhận thiệt hại đã có (virus máy tính); Richardson nhấn rằng robot chưa từng nổi dậy / nhiều người chào đón AI — góc nhìn khác về mức hại thực tế."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "harm already done by AI",
+              "p": "damaging effects … computer viruses (Wolpert) vs none have risen up (Richardson)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Điểm bất đồng nằm ở mức độ hại AI đã gây ra — ending D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "it stems from humans' tendency to personify inanimate objects; we create machines based on representations of ourselves"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo Richardson, nỗi sợ máy móc của con người bắt nguồn từ đâu?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B — nỗi sợ đến từ xu hướng gán đặc điểm người cho vật vô tri (“personify inanimate objects”)",
+              "p": "Bài viết đúng vậy: tạo máy theo hình ảnh mình rồi tưởng chúng nghĩ như người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "attribute human characteristics to non-human entities",
+              "p": "personify inanimate objects"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ta gán đặc điểm người cho robot rồi tưởng chúng nghĩ như mình — đúng lý giải của Richardson. Đáp án là B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói nỗi sợ tăng cùng robot ngày càng tiên tiến như luận điểm chính."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không quy về hiểu sai cách vật vô tri hoạt động theo nghĩa kỹ thuật."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không lấy đây để chứng minh khác biệt then chốt giữa trí tuệ người và máy."
+            }
+          ]
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "we are increasingly dependent on computer networks, and that these could behave like a single \"brain\" with a mind of its own, and with goals that may be contrary to human welfare"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Rees coi bước tiến nào của AI là đáng lo ngại nhất?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C — AI phát triển tư duy độc lập (“independent thought”)",
+              "p": "Ông lo mạng máy tính hành xử như một “brain” có “mind of its own”, mục tiêu trái lợi ích người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "independent thought",
+              "p": "a mind of its own … goals … contrary to human welfare"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nỗi lo lớn nhất của Rees không phải máy tính giỏi hơn người, mà là khả năng máy tự có tư duy và mục tiêu riêng. Đáp án là C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói robot đông hơn người."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Ông chấp nhận máy tính toán giỏi hơn — lo chính là tư duy/mục tiêu độc lập."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói AI chiếm mọi mặt đời sống."
+            }
+          ]
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Interestingly, almost no science fiction envisages a future without robots"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Wolpert muốn nhấn điều gì khi bàn về vai trò của robot trong sci-fi?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B — robot gắn chặt với thể loại sci-fi (“fundamental … to the science fiction genre”)",
+              "p": "Ông nhận xét hầu như không có sci-fi nào tưởng tượng tương lai không có robot."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fundamental … to the genre",
+              "p": "almost no science fiction envisages a future without robots"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Wolpert nhận thấy hầu như không có sci-fi nào thiếu robot, tức coi robot là yếu tố cốt lõi của thể loại này. Đáp án là B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nhấn sci-fi định hình thái độ của ta với robot."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không bàn hình ảnh robot trong sci-fi đổi theo thời gian."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không bàn phản ứng khác nhau trước cùng một hình ảnh."
+            }
+          ]
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "we need to bring these different understandings together to get a whole perspective. Perhaps then, we won't be so frightened"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi bàn về ranh giới giữa thực tế và tưởng tượng, Richardson đang làm gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C — đề xuất đổi cách nhìn (“recommending a change of approach”)",
+              "p": "Bà khuyên ghép hai cách hiểu lại để có góc nhìn toàn diện, bớt sợ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "change of approach in how people view them",
+              "p": "bring these different understandings together"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Richardson không cảnh báo tránh nhầm lẫn hai thứ, mà khuyên gộp hai cách hiểu lại để bớt sợ hãi — đúng là đổi cách nhìn. Đáp án là C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không cảnh báo đừng nhầm lẫn hai thứ."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không mô tả chi tiết cách cái này tác động cái kia như luận điểm chính."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Có nhắc nhà khoa học tách hai lĩnh vực, nhưng câu hỏi là bà đang làm gì — bà đang khuyên đổi cách nhìn."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

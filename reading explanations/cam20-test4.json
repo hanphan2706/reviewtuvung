@@ -1,0 +1,1718 @@
+{
+  "pilotId": "cam20-test4",
+  "schemaVersion": 4,
+  "note": "Cam 20 R T4 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Georgia O'Keeffe",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Adapting to the effects of climate change",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "A new role for livestock guard dogs",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "teacher",
+      "evidence": {
+        "quoteEn": "After attending university and then training college, she became an art teacher and taught in elementary schools, high schools, and colleges in Virginia, Texas, and South Carolina from 1911 to 1918."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sau khi học nghệ thuật, O'Keeffe đã làm nghề gì ở nhiều nơi khác nhau tại Mỹ (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “worked as a ______” cần một danh từ chỉ nghề nghiệp."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“worked as a ______ in various places in the USA”",
+              "p": "Bài viết bà “became an art teacher and taught in elementary schools, high schools, and colleges” ở nhiều bang khác nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "worked as a ______",
+              "p": "became an art teacher"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nghề được nhắc tới chính là teacher."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Teacher"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "charcoal",
+      "evidence": {
+        "quoteEn": "O'Keeffe began to experiment with creating abstract compositions in charcoal, and produced a series of innovative drawings that led her art in a new direction."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bà dùng vật liệu gì để tạo ra các bức vẽ trừu tượng, sau đó được đưa tới New York City (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “drawings using ______” cần một danh từ chỉ vật liệu."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“created drawings using ______ which were exhibited in New York City”",
+              "p": "Bài viết O'Keeffe “began to experiment with creating abstract compositions in charcoal” — các bức vẽ này sau đó được Stieglitz trưng bày tại phòng tranh của ông."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "drawings using ______",
+              "p": "compositions in charcoal"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vật liệu đó chính là charcoal."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Charcoal"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "skyscrapers",
+      "evidence": {
+        "quoteEn": "By the mid-1920s, O'Keeffe was recognized as one of America's most important and successful artists, widely known for the architectural pictures that dramatically depict the soaring skyscrapers of New York."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bà nổi tiếng với các bức tranh vẽ công trình gì của thành phố New York (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “paintings of the city's ______” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“became famous for her paintings of the city's ______”",
+              "p": "Bài viết bà “widely known for the architectural pictures that dramatically depict the soaring skyscrapers of New York”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "paintings of the city's ______",
+              "p": "pictures that depict the soaring skyscrapers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Công trình đó chính là skyscrapers."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Skyscrapers"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "flowers",
+      "evidence": {
+        "quoteEn": "In her magnified images depicting flowers, begun in 1924, O'Keeffe brings the viewer right into the picture."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bà đã tạo ra một loạt tranh cận cảnh sáng tạo về đối tượng gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “close-up paintings of ______” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a series of innovative close-up paintings of ______”",
+              "p": "Bài viết “her magnified images depicting flowers.. O'Keeffe brings the viewer right into the picture” — phóng to chi tiết những bông hoa."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "close-up paintings of ______",
+              "p": "magnified images depicting flowers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đối tượng đó chính là flowers."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Flowers"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "bones",
+      "evidence": {
+        "quoteEn": "There, O'Keeffe found new inspiration: at first, it was the numerous sun-bleached bones she came across in the state's rugged terrain that sparked her imagination."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ban đầu điều gì tìm thấy ở New Mexico đã khơi nguồn cảm hứng cho bà (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the many ______ that could be found there” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“was initially inspired to paint the many ______ that could be found there”",
+              "p": "Bài viết “it was the numerous sun-bleached bones she came across in the state's rugged terrain that sparked her imagination”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the many ______ that could be found there",
+              "p": "the numerous sun-bleached bones she came across"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thứ khơi gợi cảm hứng ban đầu chính là bones."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Bones"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "landscape",
+      "evidence": {
+        "quoteEn": "it was the region's spectacular landscape, with its unusual geological formations, vivid colours, clarity of light, and exotic vegetation, that held the artist's imagination for more than four decades."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bà tiếp tục vẽ các đặc điểm cùng tạo nên điều gì đầy ấn tượng của New Mexico trong hơn bốn mươi năm (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the dramatic ______ of New Mexico” cần danh từ số ít."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“formed the dramatic ______ of New Mexico for over forty years”",
+              "p": "Bài viết “the region's spectacular landscape.. held the artist's imagination for more than four decades”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the dramatic ______",
+              "p": "the region's spectacular landscape"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Điều cuốn hút bà trong suốt bốn mươi năm chính là landscape."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Landscape"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "rivers",
+      "evidence": {
+        "quoteEn": "Flying in planes inspired her last two major series: aerial views of rivers and expansive paintings of the sky viewed from just above clouds."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài mây, bà còn vẽ tranh về cái gì nhìn từ trên cao (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “clouds and ______ seen from above” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“painted pictures of clouds and ______ seen from above”",
+              "p": "Bài viết “her last two major series: aerial views of rivers and expansive paintings of the sky viewed from just above clouds”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "clouds and ______ seen from above",
+              "p": "aerial views of rivers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đối tượng còn lại được vẽ từ trên cao chính là rivers."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Rivers"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Remarkably, she remained independent from shifting art trends and her work stayed true to her own vision, which was based on finding the essential, abstract forms in nature."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phong cách của O’Keeffe có bị các trào lưu nghệ thuật thay đổi chi phối nhiều suốt sự nghiệp không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói phong cách bà “was greatly influenced by the changing fashions in art”.",
+              "p": "Bài lại khẳng định bà “remained independent from shifting art trends” và luôn “stayed true to her own vision”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "greatly influenced by the changing fashions in art",
+              "p": "remained independent from shifting art trends"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bà đi theo tầm nhìn riêng, không bị trào lưu kéo đi — ngược với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "By the time she graduated from high school in 1905, she had determined to make her way as an artist."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bài có nói tranh hoa cận cảnh của bà từng gây bất ngờ cho người xem không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói người xem “were surprised” bởi tranh hoa phóng to.",
+              "p": "Bài viết cách bà phóng to hoa khiến người xem “see them as they had never been seen before” — đúng kiểu làm mới góc nhìn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "had already made her mind up about the career",
+              "p": "had determined to make her way as an artist"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cách trình bày hoa của bà tạo cảm giác mới lạ cho người xem — khớp ý đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "She sent some of these drawings to a friend in New York, who showed them to art collector and photographer Alfred Stieglitz in January 1916."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "O’Keeffe có chuyển hẳn sang New Mexico ngay sau chuyến thăm đầu tiên không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói bà chuyển đi “immediately after her first visit”.",
+              "p": "Bài kể bà đến New Mexico năm 1929 nhưng mãi sau đó mới ổn định sống ở đó — không phải chuyển ngay."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "sent drawings to his gallery",
+              "p": "sent drawings to a friend, who showed them to Stieglitz"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bà không chuyển đi ngay sau lần đến đầu — ngược với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "The ups and downs of their personal and professional relationship were recorded in Stieglitz's celebrated black-and-white portraits of O'Keeffe, taken over the course of twenty years (1917-37)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhà ở Ghost Ranch và nhà ở Abiquiú có phải đều truyền cảm hứng cho tranh của bà không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói cả hai nơi “provided inspiration” cho tranh.",
+              "p": "Bài viết “both locales provided a wealth of imagery for her paintings”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "for many years",
+              "p": "over the course of twenty years"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả hai nơi đều là nguồn hình ảnh cho tranh — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "the Abiquiú house – the large walled patio with its black door – was particularly inspirational. In more than thirty pictures between 1946 and 1"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Những bức vẽ khoảng sân nhà Abiquiú có được coi là tác phẩm bà yêu thích nhất không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói chúng “were among the artist’s favourite works”.",
+              "p": "Bài chỉ nói khoảng sân “particularly inspirational” và được vẽ nhiều lần — không nói đây là tác phẩm yêu thích nhất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "among the artist's favourite works",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có chỗ nào khẳng định đó là tác phẩm yêu thích — thông tin thiếu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "From the 1950s into the 1970s, O'Keeffe travelled widely, making trips to Asia, the Middle East, and Europe. Flying in planes inspired her last two major series: aerial views of rivers and expansive paintings of the sky viewed from just above clouds."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "O’Keeffe có vẽ nhiều hơn trong những năm 1950 so với các giai đoạn khác không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói bà “produced a greater quantity of work” vào thập niên 1950.",
+              "p": "Bài không so sánh sản lượng tranh giữa các giai đoạn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a greater quantity of work than at any other time",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có dữ liệu so sánh số lượng — thông tin thiếu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "ecosystems of trees and shrubs that help defend coastal areas by trapping sediment in their net-like root systems, elevating the sea bed and dampening the energy of waves and tidal currents."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích một loại thực vật hoạt động như lớp bảo vệ tự nhiên cho bờ biển. Đề viết: “how a type of plant functions as a natural protection for coastlines”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Một loại thực vật hoạt động ra sao để bảo vệ bờ biển",
+              "p": "Đoạn C nói về mangroves (rừng ngập mặn): “ecosystems of trees and shrubs that help defend coastal areas by trapping sediment.. elevating the sea bed and dampening the energy of waves”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a type of plant functions as a natural protection for coastlines",
+              "p": "trees and shrubs that help defend coastal areas"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "with scientists forecasting that global warming would continue for around 40 years."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nào dự đoán về khoảng thời gian có thể mất để không còn nhận thấy tác động của biến đổi khí hậu. Đề viết: “a prediction about how long it could take to stop noticing the effects of climate change”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Dự đoán về thời gian tác động khí hậu còn kéo dài",
+              "p": "Đoạn A: “scientists forecasting that global warming would continue for around 40 years” — dự báo hiện tượng nóng lên toàn cầu còn tiếp diễn khoảng 40 năm nữa"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how long it could take to stop noticing the effects",
+              "p": "global warming would continue for around 40 years"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "It's much cheaper than permanently elevating houses, English explains, about a third of what it would cost to completely replace a building's foundations."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nào nhắc tới việc một giải pháp đặc biệt tiết kiệm chi phí. Đề viết: “a reference to the fact that a solution is particularly cost-effective”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Giải pháp nào được nhắc tới là đặc biệt tiết kiệm chi phí",
+              "p": "Đoạn D: nhà nổi ở Mekong Delta “much cheaper than permanently elevating houses.. about a third of what it would cost to completely replace a building's foundations”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a solution is particularly cost-effective",
+              "p": "much cheaper... about a third of what it would cost"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "Using a Geographic Information System data mapping tool, the programme identified streets with low tree canopy cover in three of the city's neighbourhoods"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nào nhắc tới công nghệ dùng để xác định những khu vực cần can thiệp nhất. Đề viết: “a mention of a technology used to locate areas most in need of intervention”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Công nghệ nào được dùng để xác định khu vực cần can thiệp",
+              "p": "Đoạn F: chương trình ở LA dùng “a Geographic Information System data tool” để xác định các con đường ít cây che phủ"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "technology used to locate areas most in need of intervention",
+              "p": "Geographic Information System data mapping tool... identified streets with low tree canopy cover"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "pumps",
+      "evidence": {
+        "quoteEn": "the city has set up new pumps that can remove up to 75,000 litres of water per minute."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chương trình quản lý nước mưa ở Miami Beach đã lắp đặt thiết bị hiệu quả nào? (một từ)"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “installation of efficient ______” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the installation of efficient ______”",
+              "p": "Bài viết “the city has set up new pumps that can remove up to 75,000 litres of water per minute”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "installation of efficient ______",
+              "p": "set up new pumps"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thiết bị được lắp đặt chính là pumps."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Pumps"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "dams",
+      "evidence": {
+        "quoteEn": "Wetlands International started out with a different approach, building semi-permeable dams, made from bamboo poles and brushwood, to mimic the role of mangrove roots and create favourable conditions for mangroves to grow back naturally."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc xây dựng cái gì là giai đoạn đầu của một dự án nhằm đảm bảo sự thành công của rừng ngập mặn ở Indonesia? (một từ)"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the construction of ______” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the construction of ______ was the first stage”",
+              "p": "Bài viết Wetlands International “started out with a different approach, building semi-permeable dams, made from bamboo poles and brushwood”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the construction of ______",
+              "p": "building semi-permeable dams"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Công trình được xây dựng đầu tiên chính là dams."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Dams"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "float",
+      "evidence": {
+        "quoteEn": "Homes in this part of Vietnam are traditionally built on stilts but these ones had been built to float."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để đối phó với nước lũ dâng cao ở đồng bằng Mekong, một tổ chức phi lợi nhuận đã xây những căn nhà có thể làm gì? (một từ)"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “houses that can ______” cần một động từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“has been building houses that can ______”",
+              "p": "Bài viết nhà truyền thống dựng trên cột nhưng “these ones had been built to float” — được thiết kế lại để nổi lên khi nước dâng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "houses that can ______",
+              "p": "built to float"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khả năng đặc biệt của những căn nhà này chính là float."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Float"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "crops",
+      "evidence": {
+        "quoteEn": "ICCO Cooperation has been working with 10,000 farmers in Bangladesh to start cultivating naturally salt-tolerant crops in the region."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mực nước biển dâng ở Bangladesh khiến việc đưa vào trồng loại gì phù hợp với đất nhiễm mặn trở nên cần thiết? (một từ)"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “introduce various ______ that are suitable for areas of high salt content” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“necessary to introduce various ______ that are suitable for.. high salt content”",
+              "p": "Bài viết nông dân bắt đầu “cultivating naturally salt-tolerant crops in the region” — các loại cà rốt, khoai tây.. phù hợp hơn với đất mặn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "various ______ suitable for areas of high salt content",
+              "p": "naturally salt-tolerant crops"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Loại cây trồng đó chính là crops."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Crops"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "trees",
+      "evidence": {
+        "quoteEn": "the planting of trees and the installation of a 'cool pavement' system, designed to help reach the city's goal of bringing down its average temperature by 1.5 degrees Celsius."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một dự án ở LA đã tăng số lượng gì trên các con đường của thành phố? (một từ)"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “increased the number of ______” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“increased the number of ______ on the city's streets”",
+              "p": "Bài viết chương trình Cool Streets LA gồm “the planting of trees and the installation of a 'cool pavement' system”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "increased the number of ______",
+              "p": "the planting of trees"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thứ được tăng thêm trên các con đường chính là trees."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Trees"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "For long-term success, it's critical that we transition towards multifunctional approaches that embed natural processes and that engage and benefit communities and local decision-makers."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần áp dụng các chiến lược có sự tham gia và mang lại lợi ích cho cư dân trong vùng (“strategies which involve and help residents of the region”). Ai nói điều đó?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Chiến lược phải “involve and help” cư dân địa phương",
+              "p": "Susanna Tol: “it's critical that we transition towards multifunctional approaches that.. engage and benefit communities and local decision-makers”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "strategies which involve and help residents",
+              "p": "approaches that engage and benefit communities and local decision-makers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tol là người nhấn mạnh cách tiếp cận cần thu hút và mang lại lợi ích cho cộng đồng —."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "'Urban cooling is literally a matter of life and death for our future in LA,' says Spotts."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các biện pháp làm giảm nhiệt là vô cùng thiết yếu cho sự sống còn của chúng ta ở nơi này (“Interventions which reduce heat are absolutely vital for our survival in this location”). Ai nói điều đó?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Giảm nhiệt là điều “vital for our survival” ở nơi này",
+              "p": "Greg Spotts: “Urban cooling is literally a matter of life and death for our future in LA”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reduce heat are absolutely vital for our survival",
+              "p": "a matter of life and death for our future"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Spotts là người khẳng định làm mát đô thị là vấn đề sống còn —."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "'We know that in 20, 30, 40 years, we'll need to go back in there and adjust to the changing environment,' she says."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sẽ cần thêm nhiều công việc trong các thập kỷ tới để đối phó với tác động của mực nước dâng (“More work will need to be done in future decades to deal with the impact of rising water levels”). Ai nói điều đó?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Cần thêm việc trong “future decades” để đối phó nước dâng",
+              "p": "Yanira Pineda: “in 20, 30, 40 years, we'll need to go back in there and adjust to the changing environment”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more work needed in future decades",
+              "p": "in 20, 30, 40 years, we'll need to go back in there and adjust"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Pineda là người nói rõ công việc chưa hoàn tất và sẽ cần điều chỉnh thêm trong tương lai —."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "'When I started this,' explains founder Elizabeth English, 'climate change was not on the tip of everybody's tongue, but this technology is becoming necessary in places that didn't previously need it.'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Số lượng địa điểm cần hành động để thích ứng với lũ lụt đã tăng lên trong những năm gần đây (“The number of locations requiring action to adapt to flooding has grown in recent years”). Ai nói điều đó?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Số địa điểm cần hành động chống lũ “has grown”",
+              "p": "Elizabeth English: “this technology is becoming necessary in places that didn't previously need it”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the number of locations requiring action has grown",
+              "p": "becoming necessary in places that didn't previously need it"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "English là người chỉ rõ ngày càng nhiều nơi cần đến công nghệ này —."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "When guard dogs were introduced, more than 90 per cent of farmers reported a dramatic reduction in livestock losses, and said that as a result they were less likely to kill predators."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nào đưa ra ví dụ về việc một loài thú săn mồi đã được bảo vệ nhờ việc đưa chó canh gia súc vào sử dụng. Đề viết: “an example of how one predator has been protected by the introduction of livestock guard dogs”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ví dụ về một predator được bảo vệ nhờ guard dogs",
+              "p": "Đoạn D: ở Namibia, sau khi có chó canh, “more than 90 per cent of farmers.. said that as a result they were less likely to kill predators” — báo săn (cheetah) ít bị giết hơn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "one predator has been protected by the introduction of guard dogs",
+              "p": "farmers... less likely to kill predators"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "So if we can get this right, there may be a bright future for guard dogs in promoting harmonious coexistence between humans and wildlife."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nào đưa ra gợi ý lạc quan về những phát triển tích cực có thể xảy ra trong việc sử dụng chó canh gia súc. Đề viết: “an optimistic suggestion about the possible positive developments in the use of livestock guard dogs”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Gợi ý lạc quan về phát triển tích cực của guard dogs",
+              "p": "Đoạn G: “there may be a bright future for guard dogs in promoting harmonious coexistence between humans and wildlife”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an optimistic suggestion about positive developments",
+              "p": "there may be a bright future for guard dogs"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "The dogs will place themselves between the livestock and any threat, barking loudly. If necessary, they will chase away predators, but often their mere presence is sufficient."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nào mô tả cách các phương pháp của chó canh gia súc giúp đuổi thú săn mồi đi. Đề viết: “a description of how the methods used by livestock guard dogs help to keep predators away”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Phương pháp guard dogs dùng để “keep predators away”",
+              "p": "Đoạn B: chó “place themselves between the livestock and any threat, barking loudly” và “chase away predators” — đứng chắn, sủa to và đuổi đi"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "methods... help to keep predators away",
+              "p": "place themselves between the livestock and any threat... chase away predators"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "in Portugal, biologist Silvia Ribeiro has found that more than 90 per cent of the farmers... rate the performance of the dogs as very good or excellent. In a study carried out in Australia by Linda van Bommel and Chris Johnson at the University of Tasmania, more than 65 per cent of herders reported that predation stopped completely after they got the dogs"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nào nêu tuyên bố từ nhiều nhà nghiên cứu khác nhau rằng chó canh gia súc là cách hiệu quả để bảo vệ đàn gia súc. Đề viết: “claims by different academics that the use of livestock guard dogs is a successful way of protecting farmers' herds”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Tuyên bố của “different academics” về hiệu quả của guard dogs",
+              "p": "Đoạn C: Silvia Ribeiro (Portugal) và Linda van Bommel, Chris Johnson (Úc) đều đưa ra số liệu cho thấy chó canh “rate the performance of the dogs as very good or excellent” và “predation stopped completely”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "claims by different academics that guard dogs are successful",
+              "p": "Ribeiro... rate very good or excellent; van Bommel and Johnson... predation stopped completely"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "These dogs are raised from an early age with the animals they will be watching and eventually these animals become the dog's family."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nào nhắc tới cách chó canh gia súc học được các kỹ năng của mình. Đề viết: “a reference to how livestock guard dogs gain their skills”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Cách guard dogs “gain their skills”",
+              "p": "Đoạn B: chó được “raised from an early age with the animals they will be watching”, và huấn luyện ban đầu để hiểu rằng gia súc sẽ là cuộc đời của chúng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how livestock guard dogs gain their skills",
+              "p": "raised from an early age... initial training"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "common ground from the livestock perspective and from the conservation perspective,’ she says. ‘If ranchers don’t have a dead cow, they will not make a call to"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc dùng chó canh có thể cứu mạng cả gia súc và động vật hoang dã (“The use of guard dogs may save the lives of both livestock and wild animals”). Ai nói điều đó?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Guard dogs có thể cứu cả “livestock and wild animals”",
+              "p": "Julie Young: “There is common ground from the livestock perspective and from the conservation perspective” — nếu nông dân không mất bò, họ sẽ không xin phép giết sói"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "save the lives of both livestock and wild animals",
+              "p": "common ground from the livestock perspective and from the conservation perspective"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Young là người chỉ ra lợi ích chung cho cả gia súc và bảo tồn động vật hoang dã —."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "Bethany Smith at Nottingham Trent University in the UK found that up to 88 per cent of farmers said they no longer killed predators after using dogs, but warned that such self-reported results must be taken with a pinch of salt."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Những tuyên bố về sự thay đổi hành vi từ người dùng chó canh gia súc có thể không hoàn toàn chính xác (“Claims of a change in behaviour... may not be totally accurate”). Ai nói điều đó?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Claims về thay đổi hành vi “may not be totally accurate”",
+              "p": "Bethany Smith cảnh báo “such self-reported results must be taken with a pinch of salt” — dữ liệu tự báo cáo cần được xem xét cẩn trọng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may not be totally accurate",
+              "p": "must be taken with a pinch of salt"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Smith là người cảnh báo về độ chính xác của các số liệu tự báo cáo —."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "'In some regions, we work with almost every farmer, but in others only one or two have dogs,' says Ribeiro. 'If we are not working with everybody, we are transferring the wolf pressure to the neighbour's herd and he can use poison and kill an entire pack of wolves.'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có thể xảy ra kết quả tiêu cực nếu việc dùng chó canh gia súc không đủ rộng rãi (“There may be negative results if the use of livestock guard dogs is not sufficiently widespread”). Ai nói điều đó?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Kết quả tiêu cực nếu guard dogs “not sufficiently widespread”",
+              "p": "Silvia Ribeiro: “If we are not working with everybody, we are transferring the wolf pressure to the neighbour's herd and he can use poison and kill an entire pack of wolves”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "negative results if not sufficiently widespread",
+              "p": "transferring the wolf pressure to the neighbour's herd... kill an entire pack of wolves"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ribeiro là người chỉ ra hậu quả xấu khi chó canh chưa được dùng rộng khắp —."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "'If they are managed and used properly, livestock guard dogs are the most efficient control method that we have in terms of the amount of livestock that they save from predation,' says van Bommel."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chó canh gia súc là cách tốt nhất để bảo vệ vật nuôi, miễn là chúng được quản lý đúng cách (“Livestock guard dogs are the best way of protecting farm animals, as long as the dogs are appropriately handled”). Ai nói điều đó?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Guard dogs là cách tốt nhất, “as long as appropriately handled”",
+              "p": "Linda van Bommel: “If they are managed and used properly, livestock guard dogs are the most efficient control method that we have”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the best way, as long as appropriately handled",
+              "p": "if managed and used properly... the most efficient control method"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Van Bommel là người gắn điều kiện “managed and used properly” với hiệu quả cao nhất —."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "'Their initial training is to make them understand that livestock is going to be their life,' says Dan Macon, a shepherd with three guard dogs. 'A fluffy white puppy is fun to be around, but too much human affection makes it a great dog for guarding the front porch, rather than a great livestock guard dog.'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Huấn luyện chó canh gia súc làm việc cần một trọng tâm khác với huấn luyện chó canh nhà (“Teaching a livestock guard dog how to do its work needs a different focus from teaching a house guard dog”). Ai nói điều đó?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Huấn luyện guard dog cần “different focus” so với chó giữ nhà",
+              "p": "Dan Macon: huấn luyện ban đầu là để chó hiểu “livestock is going to be their life”, còn quá nhiều tình cảm con người chỉ hợp cho “guarding the front porch”, không phải một guard dog thực sự"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "needs a different focus from teaching a house guard dog",
+              "p": "too much human affection makes it a great dog for guarding the front porch, rather than a great livestock guard dog"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Macon là người phân biệt rõ cách huấn luyện chó canh gia súc khác với chó giữ nhà —."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "jackals",
+      "evidence": {
+        "quoteEn": "In 2015, researchers reported that in spite of the impact farmers obtaining guard dogs had on cheetahs, the number of jackals killed by dogs and people actually increased."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điều này đã dẫn tới sự gia tăng số ca tử vong của những loài thú săn mồi khác, đặc biệt là loài nào? (một từ)"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a rise in the deaths of other predators, particularly ______” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a rise in the deaths of other predators, particularly ______”",
+              "p": "Bài viết “the number of jackals killed by dogs and people actually increased”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a rise in the deaths of other predators",
+              "p": "the number of jackals killed... actually increased"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Loài bị giết nhiều hơn chính là jackals."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Jackals"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "diseases",
+      "evidence": {
+        "quoteEn": "They have been found to spread diseases to wild animals, including endangered Ethiopian wolves."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có ý kiến cho rằng những con chó có thể gây ra điều gì có thể ảnh hưởng tới các loài khác? (một từ)"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the dogs could have ______ which may affect other species” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the dogs could have ______ which may affect other species”",
+              "p": "Bài viết chó canh “have been found to spread diseases to wild animals, including endangered Ethiopian wolves”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "could have ______ which may affect other species",
+              "p": "spread diseases to wild animals"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Điều chó có thể gây ra chính là diseases."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Diseases"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "food",
+      "evidence": {
+        "quoteEn": "They may also compete with other carnivores for food."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chó canh có thể làm giảm lượng gì sẵn có cho một số động vật hoang dã? (một từ)"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “reduce the amount of ______ available to certain wild animals” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“reduce the amount of ______ available to certain wild animals”",
+              "p": "Bài viết chó “may also compete with other carnivores for food” — cạnh tranh thức ăn với các loài ăn thịt khác"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reduce the amount of ______ available",
+              "p": "compete with other carnivores for food"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thứ bị giảm sẵn có cho các loài khác chính là food."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Food"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "foxes",
+      "evidence": {
+        "quoteEn": "their presence has been found to protect birds which build their nests on the ground in fields, where foxes would normally raid them."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Những chú chim đó nếu không có chó canh bảo vệ sẽ có thể bị đe dọa bởi loài săn mồi nào? (một từ)"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “threatened by predators such as ______” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“threatened by predators such as ______”",
+              "p": "Bài viết chim làm ổ trên mặt đất “where foxes would normally raid them” — nơi cáo thường đến cướp phá ổ chim"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "threatened by predators such as ______",
+              "p": "where foxes would normally raid them"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Loài săn mồi đe dọa tổ chim trên mặt đất chính là foxes."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Foxes"
+        }
+      ]
+    }
+  }
+}

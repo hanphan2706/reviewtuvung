@@ -1,0 +1,1820 @@
+{
+  "pilotId": "cam20-test2",
+  "schemaVersion": 4,
+  "note": "Cam 20 R T2 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Manatees",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Procrastination",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Invasion of the Robot Umpires",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "tail",
+      "evidence": {
+        "quoteEn": "However, the manatee has a broad, rounded tail, whereas the dugong's is fluked, like that of a whale."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần điền một từ: bộ phận nào có hình dạng khác nhau giữa manatee và dugong?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chỗ trống nằm sau “a differently shaped 1______”, nên cần một danh từ số ít chỉ bộ phận cơ thể."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“look similar to dugongs, but with a differently shaped 1______”",
+              "p": "Bài kể manatee có đuôi “a broad, rounded tail” (bo tròn, bè ra), còn đuôi dugong lại “fluked, like that of a whale” (chia thùy như cá voi) — khác nhau đúng ở cái đuôi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a differently shaped ______",
+              "p": "a broad, rounded tail, whereas the dugong's is fluked"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bộ phận khác hình dạng giữa hai loài chính là cái đuôi, nên điền tail."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Tail"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "flippers",
+      "evidence": {
+        "quoteEn": "To see something on its left or its right, a manatee must turn its entire body, steering with its flippers."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần điền một từ: manatee dùng bộ phận gì để xoay cả thân khi muốn nhìn sang một bên?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “use their 2______” cần một danh từ số nhiều chỉ bộ phận."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“need to use their 2______ to help to turn their bodies around in order to look sideways”",
+              "p": "Bài viết muốn nhìn sang bên, manatee “must turn its entire body, steering with its flippers” — phải xoay cả người, lái bằng vây."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "use their ______ to help turn their bodies around to look sideways",
+              "p": "must turn its entire body, steering with its flippers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bộ phận dùng để lái cả thân mình chính là flippers."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Flippers"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "hair",
+      "evidence": {
+        "quoteEn": "They also have some hairs covering their bodies which help them sense vibrations in the water around them."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần điền một từ: manatee cảm nhận rung động trong nước nhờ thứ gì trên da?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “by means of 3______ on their skin” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“sense vibrations in the water by means of 3______ on their skin”",
+              "p": "Bài nói manatee “have some hairs covering their bodies which help them sense vibrations in the water” — lớp lông trên da giúp chúng cảm nhận rung động."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "sense vibrations in the water by means of ______ on their skin",
+              "p": "hairs covering their bodies which help them sense vibrations"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thứ giúp cảm nhận rung động chính là lớp lông — hair."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Hair"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "seagrasses",
+      "evidence": {
+        "quoteEn": "Seagrasses and other marine plants make up most of a manatee's diet."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần điền một từ, cho một ví dụ cụ thể: manatee chủ yếu ăn loại thực vật thủy sinh nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “such as 4______” cần một danh từ số nhiều chỉ loại thực vật."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“eat mainly aquatic vegetation, such as 4______”",
+              "p": "Bài viết “Seagrasses and other marine plants make up most of a manatee's diet” — cỏ biển và các loại thực vật biển khác chiếm phần lớn thức ăn của chúng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "aquatic vegetation, such as ______",
+              "p": "Seagrasses and other marine plants make up most of ... diet"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ví dụ cụ thể được nêu chính là seagrasses — cỏ biển."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Seagrasses"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "lips",
+      "evidence": {
+        "quoteEn": "Instead of having incisors to grasp their food, manatees have lips which function like a pair of hands to help tear food away from the seafloor."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần điền một từ: manatee dùng bộ phận gì để cầm nắm và giật thực vật lên khỏi đáy biển?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “with their 5______” cần một danh từ số nhiều chỉ bộ phận."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“grasp and pull up plants with their 5______”",
+              "p": "Bài kể manatee “have lips which function like a pair of hands to help tear food away from the seafloor” — đôi môi hoạt động như một cặp tay."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "grasp and pull up plants with their ______",
+              "p": "lips which function like a pair of hands to ... tear food away"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bộ phận đóng vai trò “như một cặp tay” chính là lips."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Lips"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "buoyancy",
+      "evidence": {
+        "quoteEn": "It's thought that manatees use their muscular diaphragm and breathing to adjust their buoyancy. They may use diaphragm contractions to compress and store gas in folds in their large intestine to help them float."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần điền một từ: manatee dùng cơ hoành để điều chỉnh điều gì của cơ thể, nhờ đó trữ được khí bên trong?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “regulate the 6______ of their bodies” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“may regulate the 6______ of their bodies by using muscles of diaphragm to store air internally”",
+              "p": "Bài viết manatee “use their muscular diaphragm and breathing to adjust their buoyancy” — dùng cơ hoành co thắt để trữ khí trong ruột già, nhờ đó nổi lên được."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "regulate the ______ of their bodies",
+              "p": "adjust their buoyancy"
+            },
+            {
+              "q": "using muscles of diaphragm to store air internally",
+              "p": "diaphragm contractions to compress and store gas in folds in their large intestine to help them float"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cái được điều chỉnh ở đây là buoyancy — độ nổi của cơ thể."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Buoyancy"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "It moves between fresh water and salt water, taking advantage of coastal mangroves and coral reefs, rivers, lakes and inland lagoons."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "West Indian manatee có sống được ở nhiều loại môi trường nước khác nhau không, xem bài nói gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói West Indian manatee “can be found in a variety of different aquatic habitats”",
+              "p": "Bài kể loài này di chuyển qua lại giữa nước ngọt và nước mặn, tận dụng cả “coastal mangroves and coral reefs, rivers, lakes and inland lagoons” — đúng là rất nhiều kiểu môi trường."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a variety of different aquatic habitats",
+              "p": "coastal mangroves and coral reefs, rivers, lakes and inland lagoons"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài liệt kê hẳn một loạt môi trường nước khác nhau mà loài này sống được, đúng với ý đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "When the ambient water temperature drops below 20C, it takes refuge in naturally and artificially warmed water, such as at the warm-water outfalls from powerplants."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Florida manatee có sống ở vùng nước ấm hơn Antillean manatee không, xem bài có so sánh không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Florida manatee “lives in warmer waters than the Antillean manatee”",
+              "p": "Bài chỉ nói khi nước lạnh dưới 20°C thì Florida manatee tìm nơi ấm để trú — chứ không hề đem so nhiệt độ nước của nó với Antillean manatee."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lives in warmer waters than the Antillean manatee",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "when the ambient water temperature drops",
+              "p": "takes refuge in naturally and artificially warmed water"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không so sánh nhiệt độ nước giữa hai phân loài, nên không có cơ sở để trả lời."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "The African manatee is also about 3.5 metres long and found in the sea along the west coast of Africa, from Mauritania down to Angola. The species also makes use of rivers, with the mammals seen in landlocked countries such as Mali and Niger."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "African manatee có chỉ sống quanh vùng biển ven bờ giữa Mauritania và Angola không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói phạm vi sống của African manatee “is limited to coastal waters between … Mauritania and Angola”",
+              "p": "Bài lại kể ngoài vùng biển đó, loài này “also makes use of rivers, with the mammals seen in landlocked countries such as Mali and Niger” — chẳng bị giới hạn như đề nói, còn lên tận sông ở cả những nước không giáp biển."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "range is limited to coastal waters",
+              "p": "also makes use of rivers ... in landlocked countries such as Mali and Niger"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Loài này còn sống cả ở sông, kể cả những nước không giáp biển — ngược hẳn với ý “chỉ giới hạn ở ven bờ” trong đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "140,000. Amazonian manatees were killed between 1935 and 1954 for their meat, fat and skin with the latter used to make leather. In more recent years, African"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc Amazonian manatee bị giết hàng loạt giữa thế kỷ 20 có phải mãi nhiều năm sau mới được biết đến không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói điều này “was only revealed many years later”",
+              "p": "Bài chỉ đưa con số “140,000 Amazonian manatees were killed between 1935 and 1954” — không hề nhắc gì tới thời điểm con số này được công bố hay phát hiện."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "was only revealed many years later",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không nói gì về lúc nào con số đó được biết đến, nên không thể khẳng định."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Both are also expected to undergo a decline of 20% over the next 40 years."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Số lượng West Indian manatee có được dự đoán sẽ giảm trong vài chục năm tới không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “populations will fall in the coming decades”",
+              "p": "Bài viết rõ cả hai phân loài “are also expected to undergo a decline of 20% over the next 40 years” — giảm 20% trong 40 năm tới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "populations will fall in the coming decades",
+              "p": "expected to undergo a decline of 20% over the next 40 years"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mức giảm 20% trong 40 năm được nói thẳng trong bài, đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "A review of almost 1,800 cases of entanglement in fishing nets and of plastic consumption among marine mammals in US waters from 2009 to 2020 found that at least 700 cases involved manatees."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nguy cơ manatee vướng lưới cá và ăn nhựa có tăng rõ trong giai đoạn 2009-2020 không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói nguy cơ này “increased significantly in the period 2009-2020”",
+              "p": "Bài chỉ đưa tổng số ca trong cả giai đoạn đó (“at least 700 cases involved manatees”) — không hề so sánh xu hướng tăng hay giảm qua từng năm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "increased significantly in the period 2009-2020",
+              "p": "(only a total count over the period is given, not a trend)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ có tổng số ca, không có so sánh theo thời gian, nên không đủ để nói là “tăng đáng kể”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "However, laws in certain parts of Florida now limit boat speeds during winter, allowing slow-moving manatees more time to respond."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có luật nào ở Florida nhằm giảm khả năng manatee bị tàu đâm phải không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói có “legislation … aims to reduce the likelihood of boat strikes”",
+              "p": "Bài viết “laws in certain parts of Florida now limit boat speeds during winter, allowing slow-moving manatees more time to respond” — luật giới hạn tốc độ tàu vào mùa đông, cho manatee thêm thời gian tránh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "legislation which aims to reduce the likelihood of boat strikes",
+              "p": "laws … limit boat speeds … allowing … manatees more time to respond"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Luật giới hạn tốc độ tàu chính là biện pháp giảm va chạm mà đề hỏi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "Contrary to popular belief, procrastination is not due to laziness or poor time management."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần tìm đoạn nói tới những hiểu lầm về lý do người ta trì hoãn — đề ghi: “mention of false assumptions about why people procrastinate”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về những giả định sai lầm này.",
+              "p": "Đoạn B mở đầu ngay bằng “Contrary to popular belief” — trái với suy nghĩ thông thường, trì hoãn không phải do “laziness or poor time management”. Đó chính là giả định sai bị bài bác bỏ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "false assumptions about why people procrastinate",
+              "p": "Contrary to popular belief, procrastination is not due to laziness or poor time management"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "We should remind ourselves that we're not the first person to procrastinate, nor the last."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần tìm đoạn nhắc tới việc nhận ra người khác cũng hay trì hoãn — đề ghi: “reference to the realisation that others also procrastinate”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về việc nhận ra người khác cũng trì hoãn.",
+              "p": "Đoạn F khuyên tự nhắc mình rằng “we're not the first person to procrastinate, nor the last” — ai cũng từng và vẫn đang trì hoãn, không riêng gì mình."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the realisation that others also procrastinate",
+              "p": "not the first person to procrastinate, nor the last"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "Research involving brain imaging has found that areas of the brain linked to detection of threats and emotion regulation are actually different in people who chronically procrastinate compared to those who don't procrastinate frequently."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần tìm đoạn có bằng chứng khoa học não bộ về liên hệ giữa trì hoãn và cảm xúc — đề ghi: “neurological evidence of a link between procrastination and emotion”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn có bằng chứng thần kinh học kiểu này.",
+              "p": "Đoạn B có nghiên cứu chụp ảnh não (“brain imaging”) cho thấy vùng não liên quan tới “detection of threats and emotion regulation” khác nhau ở người hay trì hoãn kinh niên — đúng là bằng chứng từ khoa học não bộ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "neurological evidence of a link between procrastination and emotion",
+              "p": "Research involving brain imaging … areas of the brain linked to … emotion regulation"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "laziness",
+      "evidence": {
+        "quoteEn": "Contrary to popular belief, procrastination is not due to laziness or poor time management."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần điền một từ: nhiều người nghĩ trì hoãn là do đâu?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the result of 17______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Many people think that procrastination is the result of 17______.”",
+              "p": "Bài viết niềm tin phổ biến (nhưng bị bác bỏ) là do “laziness or poor time management” — lười biếng hoặc quản lý thời gian kém."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the result of ______",
+              "p": "not due to laziness or poor time management"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Điều người ta thường (nhầm) nghĩ là nguyên nhân chính là laziness."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Laziness"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "anxious",
+      "evidence": {
+        "quoteEn": "If just thinking about the task threatens our sense of self-worth or makes us anxious, we will be more likely to put it off."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần điền một từ: chỉ nghĩ tới nhiệm vụ thôi cũng có thể khiến ta cảm thấy thế nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “cause us to feel 18______” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“cause us to feel 18______ when we think about them”",
+              "p": "Bài viết “If just thinking about the task … makes us anxious, we will be more likely to put it off” — chỉ nghĩ tới nó cũng đủ khiến ta lo lắng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cause us to feel ______",
+              "p": "makes us anxious"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cảm giác đó chính là anxious."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Anxious"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "threats",
+      "evidence": {
+        "quoteEn": "Research involving brain imaging has found that areas of the brain linked to detection of threats and emotion regulation are actually different in people who chronically procrastinate."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần điền một từ: vùng não được nhắc tới có liên quan tới việc nhận diện điều gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “identifying 19______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“differences in the brain regions associated with regulating emotions and identifying 19______”",
+              "p": "Bài viết “areas of the brain linked to detection of threats and emotion regulation” — vùng não liên quan tới phát hiện các mối đe dọa."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "identifying ______",
+              "p": "detection of threats"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Điều được nhận diện ở đây chính là threats — các mối đe dọa."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Threats"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "exams",
+      "evidence": {
+        "quoteEn": "Tasks that are emotionally loaded or difficult, such as preparing for exams, are prime candidates for procrastination."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần điền một từ: chuẩn bị làm gì được nêu là ví dụ điển hình khiến người ta hay trì hoãn?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “Getting ready to take 20______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Getting ready to take 20______ might be a typical example of one such task.”",
+              "p": "Bài viết “Tasks that are emotionally loaded or difficult, such as preparing for exams, are prime candidates for procrastination” — chuẩn bị thi cử là ví dụ điển hình."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Getting ready to take ______",
+              "p": "preparing for exams"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ví dụ được nêu ra chính là exams."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Exams"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "perfectionists",
+      "evidence": {
+        "quoteEn": "Another group of people who tend to procrastinate are perfectionists, who worry their work will be judged harshly by others."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần điền một từ: ngoài người tự tin thấp, còn nhóm người nào khác cũng dễ trì hoãn?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “tend to be either 21______” cần một danh từ số nhiều chỉ loại người."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“People who are likely to procrastinate tend to be either 21______ those with low self-esteem.”",
+              "p": "Bài viết “Another group of people who tend to procrastinate are perfectionists, who worry their work will be judged harshly by others” — những người cầu toàn, sợ bị đánh giá khắt khe."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "tend to be either ______",
+              "p": "Another group of people who tend to procrastinate are perfectionists"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhóm người còn lại đó chính là perfectionists."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Perfectionists"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "guilt",
+      "evidence": {
+        "quoteEn": "Afterwards, people tend to be left with a sense of guilt that not only increases their negative mood, but also reinforces their tendency to procrastinate."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần điền một từ: sau khi trì hoãn, người ta thường cảm thấy gì, khiến tâm trạng càng xấu thêm?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “followed by a feeling of 22______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“It's often followed by a feeling of 22______, which worsens our mood and leads to more procrastination.”",
+              "p": "Bài viết “people tend to be left with a sense of guilt that not only increases their negative mood, but also reinforces their tendency to procrastinate” — cảm giác tội lỗi vừa làm tâm trạng tệ hơn, vừa khiến dễ trì hoãn tiếp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a feeling of ______",
+              "p": "a sense of guilt"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cảm giác đó chính là guilt — bản gốc đề cũng ghi rõ đáp án số 22 là guilt."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Guilt"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "In fact, in one US survey of over 22,000 employees, participants who said they regularly procrastinated had less annual income and less employment stability. For every one-point increase on a measure of chronic procrastination, annual income decreased by US$15,000."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hai điểm được bài so sánh giữa nhân viên hay trì hoãn và người không hay trì hoãn. Xét lựa chọn A: “Their salaries are lower.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Lựa chọn A nói lương của họ “are lower”.",
+              "p": "Bài viết trong một khảo sát ở Mỹ, người hay trì hoãn “had less annual income”, và mỗi khi tăng 1 điểm trên thước đo trì hoãn thì “annual income decreased by US$15,000” — thu nhập rõ ràng thấp hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Their salaries are lower",
+              "p": "had less annual income … annual income decreased by US$15,000"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thu nhập thấp hơn được nói thẳng trong khảo sát, nên A đúng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A (cùng với C ở câu 24)"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không so sánh chất lượng công việc (“the quality of their work”) giữa hai nhóm."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không nhắc gì tới mức độ hài lòng với công việc (“don't enjoy their working lives”)."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Bài cũng không đề cập tới quan hệ với đồng nghiệp (“relationships with colleagues”)."
+            }
+          ]
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "participants who said they regularly procrastinated had less annual income and less employment stability"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tiếp câu 23 — điểm so sánh còn lại là gì. Xét lựa chọn C: “They don't keep their jobs for as long.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Lựa chọn C nói họ “don't keep their jobs for as long”.",
+              "p": "Cùng khảo sát đó, bài viết người hay trì hoãn “had less … employment stability” — ổn định việc làm kém hơn, đúng ý C."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "don't keep their jobs for as long",
+              "p": "less employment stability"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ổn định việc làm thấp hơn khớp với C, đi cùng đáp án A ở câu 23."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C (cùng với A ở câu 23)"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Forgiving ourselves and feeling compassion when we procrastinate can help break the procrastination cycle. We should admit that we feel bad, but not be overly critical of ourselves."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hai lời khuyên để thoát khỏi vòng lặp trì hoãn. Xét lựa chọn A: “not judging ourselves harshly.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Lựa chọn A: “not judging ourselves harshly” (không tự phán xét gay gắt).",
+              "p": "Bài khuyên “forgiving ourselves … but not be overly critical of ourselves” — tha thứ cho bản thân, đừng quá khắc nghiệt với mình."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not judging ourselves harshly",
+              "p": "not be overly critical of ourselves"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Lời khuyên “đừng tự phê phán gay gắt” khớp thẳng với A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A (cùng với E ở câu 26)"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không khuyên đặt mục tiêu khả thi (“setting … manageable aims”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nhắc tới việc tự khen thưởng khi xong việc (“rewarding ourselves”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài cũng không khuyên sắp xếp việc theo mức độ quan trọng (“prioritising tasks”)."
+            }
+          ]
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "There are a number of evidence-based strategies that can help us fend off distractions that can occupy our minds when we should be focusing on the thing we should be getting on with."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tiếp câu 25 — lời khuyên còn lại là gì. Xét lựa chọn E: “avoiding things that stop us concentrating on our tasks.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Lựa chọn E: tránh những thứ khiến ta “stop … concentrating on our tasks”.",
+              "p": "Bài khuyên dùng những chiến lược để “fend off distractions that can occupy our minds when we should be focusing” — đẩy lùi những thứ gây phân tâm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "avoiding things that stop us concentrating",
+              "p": "fend off distractions that can occupy our minds"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Lời khuyên tránh phân tâm khớp với E, đi cùng đáp án A ở câu 25."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E (cùng với A ở câu 25)"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Instead of making any judgments himself about a strike, DeJesus had decisions fed to him through an earpiece, connected to a modified missile-tracking system."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Lần đầu dùng ABS, DeJesus có cùng chia sẻ việc ra quyết định với hệ thống không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói ông “shared decision-making about strikes with it”",
+              "p": "Bài viết “Instead of making any judgments himself about a strike, DeJesus had decisions fed to him through an earpiece” — ông chẳng tự phán đoán gì cả, toàn bộ do máy quyết, đâu phải “cùng chia sẻ”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "shared decision-making about strikes with it",
+              "p": "Instead of making any judgments himself … had decisions fed to him"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "DeJesus không tự đưa ra phán đoán nào, ngược hẳn với ý “cùng chia sẻ quyết định” của đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "During the first robo-umpire season, players complained about some strange calls. In response, MLB decided to tweak the dimensions of the zone."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "MLB có thấy cần sửa kích thước vùng strike khi bị cầu thủ phản ứng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói MLB “considered it necessary to amend the size of the strike zone when criticisms were received from players”",
+              "p": "Bài kể cầu thủ “complained about some strange calls. In response, MLB decided to tweak the dimensions of the zone” — đúng là MLB đã chỉnh lại ngay sau khi bị phàn nàn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "amend the size of the strike zone when criticisms were received",
+              "p": "players complained … In response, MLB decided to tweak the dimensions of the zone"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "MLB điều chỉnh kích thước vùng strike ngay sau khi bị chỉ trích, khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "MLB says the device is near-perfect, precise to within fractions of an inch."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "MLB có muốn biện minh cho số tiền đã bỏ ra để cải thiện độ chính xác của ABS không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói MLB “keen to justify the money spent on improving the accuracy”",
+              "p": "Bài chỉ khẳng định thiết bị “near-perfect, precise to within fractions of an inch” — chẳng nhắc gì tới chi phí hay việc biện minh cho khoản chi đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "justify the money spent on improving the accuracy",
+              "p": "(not stated in the passage — only precision itself is mentioned)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không đề cập gì tới chi phí hay chuyện biện minh, nên không có cơ sở để trả lời."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "the hundred-mile-an-hour fastball, which is difficult to hit and control, entered the game. It flattened the game into strikeouts, walks, and home runs - a type of play lacking much action."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bóng nhanh 100 dặm/giờ có làm lối chơi hấp dẫn hơn không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói bóng nhanh “led to a more exciting style of play”",
+              "p": "Bài lại kể ngược lại, nó “flattened the game into strikeouts, walks, and home runs - a type of play lacking much action” — làm lối chơi kém hấp dẫn hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "led to a more exciting style of play",
+              "p": "flattened the game … a type of play lacking much action"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định lối chơi trở nên nhàm hơn, ngược hẳn với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Any rule that existed, they talked about changing - from changing the bats to changing the geometry of the field. But while all of these were ruled out as potential fixes, ABS was seen as a perfect vehicle for change."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các đề xuất đổi gậy bóng chày có gây tranh luận gay gắt trong nhóm của Sword không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói việc này “led to fierce debate on Sword's team”",
+              "p": "Bài chỉ nói nhóm “talked about changing … from changing the bats to changing the geometry of the field” — chỉ nói họ có bàn tới, không hề nói mức độ tranh luận gay gắt tới đâu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "led to fierce debate",
+              "p": "(only states they discussed changing the bats, not the intensity of debate)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không nói gì về mức độ gay gắt của cuộc thảo luận, nên không đủ căn cứ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "once you get the technology right, you can load any strike zone you want into the system. It might be a triangle, or a blob, or something shaped like Texas."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "ABS có làm việc thay đổi hình dạng vùng strike trở nên khả thi không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói ABS “makes changes to the shape of the strike zone feasible”",
+              "p": "Bài viết “you can load any strike zone you want into the system. It might be a triangle, or a blob, or something shaped like Texas” — nạp bất kỳ hình dạng nào vào hệ thống cũng được."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "makes changes to the shape of the strike zone feasible",
+              "p": "you can load any strike zone you want into the system … triangle, or a blob, or … shaped like Texas"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hệ thống cho phép nạp bất kỳ hình dạng vùng strike nào, đúng như đề nói."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "commissioned the system, wanted human umpires to announce the calls, just as they would have done in the past. When the first pitch came in, a recorded voice"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dù ABS đã ra đời, MLB vẫn muốn trọng tài con người hô to quyết định — giống như họ vẫn làm trong 33______ trước đây của mình. Cần điền cụm nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế cần điền: “as they had in their 33______”",
+              "p": "Bài viết MLB muốn trọng tài thông báo quyết định “just as they would have done in the past” — như họ đã từng làm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "as they had in their ______",
+              "p": "just as they would have done in the past"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cụm khớp nhất ở đây là F “former roles” — vai trò trước đây của họ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Previously, calling a strike was a judgment call on the part of the umpire."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trước đây, việc trọng tài quyết định bóng có phải strike hay không luôn cần một 34______. Cần điền cụm nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế cần điền: “required a 34______ about whether a ball was a strike”",
+              "p": "Bài viết trước đây “calling a strike was a judgment call on the part of the umpire” — hoàn toàn dựa vào cảm nhận chủ quan của trọng tài."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "required a ______ about whether a ball was a strike",
+              "p": "calling a strike was a judgment call on the part of the umpire"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Judgment call” ứng với D “subjective assessment” — một đánh giá mang tính chủ quan."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "H",
+      "evidence": {
+        "quoteEn": "strike zone (an imaginary zone about seventeen inches wide, stretching from the batter’s knees to the middle of his chest) is considered a strike. During that"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một quả bóng được coi là strike khi cầu thủ không đánh trúng và nó bay qua một 35______ trải từ đầu gối tới ngực người đánh. Cần điền cụm nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế cần điền: “crosses through a 35______ extending … from the batter's knee to his chest”",
+              "p": "Bài viết bóng đi qua “strike zone (an imaginary zone about seventeen inches wide, stretching from the batter's knees to the middle of his chest)” — một vùng chỉ tồn tại trong hình dung, không có ranh giới vật lý thật."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a ______ extending … from the batter's knee to his chest",
+              "p": "an imaginary zone … stretching from the batter's knees to the middle of his chest"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vùng tưởng tượng đó ứng với H “perceived area” — khu vực chỉ tồn tại trong nhận thức."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "countless arguments between a team's manager and the umpire have taken place over its boundaries and whether a ball had crossed through it."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trước đây, 36______ về các quyết định strike xảy ra thường xuyên. Cần điền cụm nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế cần điền: “36______ over strike calls were not uncommon”",
+              "p": "Bài viết “countless arguments between a team's manager and the umpire have taken place over its boundaries” — vô số lần cãi cọ giữa quản lý đội và trọng tài."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ over strike calls were not uncommon",
+              "p": "countless arguments … have taken place over its boundaries"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Countless arguments” ứng với B “numerous disputes” — nhiều lần tranh cãi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "During that first game, when DeJesus announced calls, there was no heckling and no shouted disagreement. Nobody said a word."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong trận đầu tiên DeJesus dùng ABS, các quyết định strike nhận được 37______. Cần điền cụm nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế cần điền: “strike calls were met with 37______”",
+              "p": "Bài viết “there was no heckling and no shouted disagreement. Nobody said a word” — không một ai la ó hay phản đối, im lặng hoàn toàn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "strike calls were met with ______",
+              "p": "no heckling and no shouted disagreement. Nobody said a word"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Nobody said a word” ứng với G “total silence” — sự im lặng tuyệt đối."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "A human, at least, yells back. ... he said that ABS works as designed, but that it was also unforgiving and pedantic, almost legalistic. ... Throw it where you aimed, and it would be a strike, even if it was an inch or two outside. There was a dialogue between pitcher and umpire."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn nói về Frank Viola, tác giả đang muốn gợi ý điều gì về ABS?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B cho rằng ABS “may reduce some of the appeal of the game” — có thể làm trò chơi bớt hấp dẫn.",
+              "p": "Bài kể ABS “unforgiving and pedantic” (cứng nhắc, máy móc), khác hẳn thời còn “dialogue between pitcher and umpire” — khi trọng tài con người còn biết nới chút ít, biết thưởng cho kỹ năng. Cái “đối thoại” đó với ABS thì không còn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may reduce some of the appeal of the game",
+              "p": "unforgiving and pedantic … There was a dialogue between pitcher and umpire (which ABS lacks)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mất đi sự khoan nhượng và kiểu “đối thoại” giữa pitcher với trọng tài cho thấy trò chơi có thể bớt phần hấp dẫn — khớp với B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đoạn này không nói ABS “chắc chắn” ra quyết định sai (“bound to make key decisions that are wrong”) — ngược lại, ABS được coi là gần như hoàn hảo."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không có ý trọng tài con người sẽ biến mất hoàn toàn (“lead to the disappearance of human umpires”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Chuyện đổi luật chơi bóng chày nằm ở đoạn khác, nói về dự án của Sword, không phải đoạn này."
+            }
+          ]
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "ABS was part of a larger project to make baseball more exciting since executives are terrified of losing younger fans, as has been the case with horse racing and boxing."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Morgan Sword nói việc đưa ABS vào sử dụng thực chất là gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D cho rằng đây là “an attempt to ensure baseball retained a young audience” — một cách để giữ chân khán giả trẻ.",
+              "p": "Bài viết các nhà quản lý “terrified of losing younger fans, as has been the case with horse racing and boxing” — sợ mất khán giả trẻ như đua ngựa hay đấm bốc từng gặp, nên ABS nằm trong dự án làm bóng chày hấp dẫn hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an attempt to ensure baseball retained a young audience",
+              "p": "terrified of losing younger fans, as has been the case with horse racing and boxing"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Động lực Sword nêu ra chính là giữ chân khán giả trẻ . Đáp án là D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Sword không mô tả đây là “một thử nghiệm không chắc kết quả” (“an experiment without a guaranteed outcome”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Việc so với công nghệ ở các môn khác như VAR, Hawk-Eye là ý ở đoạn khác, không phải lời Sword."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Sword cũng không nói đây là phản ứng với sự thay đổi thái độ chung về vai trò của thể thao."
+            }
+          ]
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "This is part of a movement to use algorithms to take the hard choices of living out of life. ... With technology, people just want everything to be perfect. That's not reality. I think perfect would be weird. ... What is there to talk about?"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vì sao tác giả đưa quan điểm của Noe và Russo vào bài?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C cho rằng nhằm chỉ ra “accuracy is not the same thing as enjoyment” — chính xác không có nghĩa là thú vị.",
+              "p": "Noe cho rằng đây là cách “take the hard choices of living out of life”; Russo thì bảo nếu mọi thứ đều “perfect” sẽ “weird”, và tự hỏi “what is there to talk about?” — cả hai đều ngầm nói sự hoàn hảo chẳng làm nên chuyện thú vị."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "accuracy is not the same thing as enjoyment",
+              "p": "people just want everything to be perfect. That's not reality … What is there to talk about?"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả hai quan điểm đều nhấn mạnh hoàn hảo không đồng nghĩa với thú vị . Đáp án là C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Hai người này thực ra nghĩ khá giống nhau (đều không thích mọi thứ quá hoàn hảo) — không cho thấy sự đa dạng trong thái độ với công nghệ."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không có ý khán giả kỳ vọng phi thực tế vào thể thao — ý của họ là về sự hoàn hảo trong cuộc sống nói chung."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không liên quan gì tới việc cần tăng số người hâm mộ bóng chày."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
