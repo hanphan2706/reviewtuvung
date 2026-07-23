@@ -1,0 +1,2012 @@
+{
+  "pilotId": "cam18-test1",
+  "schemaVersion": 4,
+  "note": "Cam 18 R T1 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Urban farming",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Forest management in Pennsylvania, USA",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Conquering Earth's space junk problem",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "sentence-fill",
+      "answer": "lettuces",
+      "evidence": {
+        "quoteEn": "From identical vertical tubes nearby burst row upon row of lettuces; near those are aromatic herbs, such as basil, sage and peppermint."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở trang trại Paris, trong các ống dọc còn trồng thêm loại rau gì ngoài dâu tây và thảo mộc — tìm từ trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Câu liệt kê ba nhóm cây trồng; chỗ trống nằm giữa strawberries và herbs, cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Vertical tubes are used to grow strawberries, … and herbs”",
+              "p": "“From identical vertical tubes nearby burst row upon row of lettuces; near those are aromatic herbs” — ống dọc mọc rau xà lách, bên cạnh là thảo mộc."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "grow strawberries, … and herbs",
+              "p": "burst row upon row of lettuces; near those are aromatic herbs"
+            },
+            {
+              "q": "Vertical tubes",
+              "p": "identical vertical tubes nearby"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài liệt kê rõ ba loại trong ống dọc: dâu tây, rau xà lách (lettuces), thảo mộc."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "lettuces"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "sentence-fill",
+      "answer": "1,000 kg",
+      "evidence": {
+        "quoteEn": "When the remaining two thirds of the vast open area are in production, 20 staff will harvest up to 1,000 kg of perhaps 35 different varieties of fruit and vegetables, every day."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi mở rộng hết diện tích, mỗi ngày thu hoạch được tối đa bao nhiêu kg rau quả — ghi đúng số và đơn vị trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chỗ trống đứng sau “as much as” và trước “in weight”, cần số + đơn vị khối lượng (tối đa hai từ hoặc một số)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a daily harvest of as much as … in weight”",
+              "p": "“harvest up to 1,000 kg of perhaps 35 different varieties of fruit and vegetables, every day” — mỗi ngày thu tới 1.000 kg."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "daily harvest of as much as … in weight",
+              "p": "harvest up to 1,000 kg … every day"
+            },
+            {
+              "q": "fruit and vegetables",
+              "p": "35 different varieties of fruit and vegetables"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nêu con số cụ thể: up to 1,000 kg mỗi ngày."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "1,000 kg"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "sentence-fill",
+      "answer": "consumption",
+      "answerAlternatives": [
+        "food consumption"
+      ],
+      "evidence": {
+        "quoteEn": "But if enough unused space can be developed like this, there's no reason why you shouldn't eventually target maybe between 5% and 10% of consumption."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hardy ước tính sản lượng trang trại đô thị có thể chiếm tới 10% lượng gì của thành phố — tìm danh từ trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “10% of the city's … overall”, cần một danh từ chỉ mức tiêu thụ/tiêu dùng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“account for as much as 10% of the city's … overall”",
+              "p": "“target maybe between 5% and 10% of consumption” — nhắm vào 5–10% mức tiêu thụ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "10% of the city's … overall",
+              "p": "between 5% and 10% of consumption"
+            },
+            {
+              "q": "account for",
+              "p": "target"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ khóa là consumption; một số đáp án cũng chấp nhận food consumption."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "consumption"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "pesticides",
+      "evidence": {
+        "quoteEn": "First, I don't much like the fact that most of the fruit and vegetables we eat have been treated with something like 17 different pesticides"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong nông nghiệp công nghiệp, rau quả thường bị phun nhiều loại gì — điền một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “wide range of 4…………… used”, cần danh từ số nhiều (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“wide range of … used” (nông nghiệp công nghiệp)",
+              "p": "“treated with something like 17 different pesticides” — bị xử lý bằng khoảng 17 loại thuốc trừ sâu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "wide range of … used",
+              "p": "17 different pesticides"
+            },
+            {
+              "q": "used",
+              "p": "treated with"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài liệt kê pesticides là hóa chất được dùng rộng rãi trong intensive farming."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "pesticides"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "journeys",
+      "evidence": {
+        "quoteEn": "the varieties are selected for their capacity to withstand such substantial journeys"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giống cây được chọn vì chịu được quãng vận chuyển dài — từ nào trong bài chỉ chuyến đi đó:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “long 5……………”, cần một danh từ số nhiều (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“varieties … chosen that can survive long …”",
+              "p": "“selected for their capacity to withstand such substantial journeys” — chọn giống chịu được hành trình vận chuyển dài."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "can survive long …",
+              "p": "withstand such substantial journeys"
+            },
+            {
+              "q": "varieties chosen",
+              "p": "varieties are selected"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "journeys paraphrase “substantial journeys” / “2,000 refrigerated kilometres”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "journeys"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "producers",
+      "evidence": {
+        "quoteEn": "80% of the price I pay goes to wholesalers and transport companies, not the producers."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai nhận rất ít phần thu nhập từ giá rau quả trong chuỗi cung ứng truyền thống — điền một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “6…………… receive very little of overall income”, cần danh từ chỉ người/nhóm (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“… receive very little of overall income”",
+              "p": "“80% of the price I pay goes to wholesalers and transport companies, not the producers” — 80% vào tay trung gian, không phải người sản xuất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "receive very little of overall income",
+              "p": "not the producers"
+            },
+            {
+              "q": "overall income",
+              "p": "80% of the price I pay"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "producers là nhóm bị chiếm phần lớn doanh thu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "producers"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "flavour",
+      "answerAlternatives": [
+        "flavor"
+      ],
+      "evidence": {
+        "quoteEn": "You can select crop varieties for their flavour, not their resistance to the transport and storage chain"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trang trại aeroponic chọn giống cây vì đặc điểm nào thay vì khả năng chịu vận chuyển — một từ trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “because of its 7……………”, cần một danh từ trừu tượng (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“produce chosen because of its …” (aeroponic)",
+              "p": "“select crop varieties for their flavour, not their resistance to the transport and storage chain” — chọn vì hương vị, không phải vì chịu vận chuyển."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "chosen because of its …",
+              "p": "select crop varieties for their flavour"
+            },
+            {
+              "q": "not resistance to transport",
+              "p": "not their resistance to the transport and storage chain"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "flavour (hoặc flavor) là tiêu chí chọn giống ở mô hình aeroponic."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "flavour"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Strawberries are being grown in disused shipping containers, mushrooms in underground carparks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nông nghiệp đô thị có thể diễn ra cả trên mặt đất lẫn dưới lòng đất không — bài có nói vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“above or below ground” (trên hoặc dưới mặt đất)",
+              "p": "Dâu trong container (trên mặt đất/thiết bị) và nấm trong bãi đậu xe ngầm (underground carparks) — cả trên lẫn dưới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "above or below ground",
+              "p": "disused shipping containers … underground carparks"
+            },
+            {
+              "q": "Urban farming can take place",
+              "p": "Strawberries are being grown … mushrooms in underground carparks"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài đưa ví dụ cụ thể cho cả hai môi trường — khớp TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "The equipment weighs little, can be installed on almost any flat surface and is cheap to buy: roughly 100 to 150 per square metre."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một số thiết bị aeroponic có thể tự làm bằng tay không — bài có đề cập không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Some of the equipment … can be made by hand” (tự làm tay)",
+              "p": "Bài chỉ nói thiết bị nhẹ, lắp được trên mặt phẳng, rẻ khi mua — không nhắc làm thủ công."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "can be made by hand",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "equipment used in aeroponic farming",
+              "p": "The equipment weighs little, can be installed on almost any flat surface and is cheap to buy"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có thông tin về việc tự chế thiết bị — NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "It is cheap to run, too, consuming a tiny fraction of the electricity used by some techniques."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nông nghiệp đô thị tiêu thụ điện nhiều hơn một số hình thức khác không — so với bài:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“relies more on electricity than some other types” (phụ thuộc điện nhiều hơn)",
+              "p": "“consuming a tiny fraction of the electricity used by some techniques” — chỉ dùng một phần rất nhỏ điện so với kỹ thuật khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "relies more on electricity",
+              "p": "a tiny fraction of the electricity"
+            },
+            {
+              "q": "than some other types of farming",
+              "p": "used by some techniques"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói dùng ít điện hơn, không phải nhiều hơn — FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Produce grown this way typically sells at prices that, while generally higher than those of classic intensive agriculture, are lower than soil-based organic growers."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Rau quả aeroponic có rẻ hơn rau organic truyền thống (trồng đất) không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“cheaper than traditionally grown organic produce”",
+              "p": "“lower than soil-based organic growers” — giá thấp hơn nông trại hữu cơ trồng đất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cheaper than traditionally grown organic produce",
+              "p": "lower than soil-based organic growers"
+            },
+            {
+              "q": "aeroponic urban farm",
+              "p": "Produce grown this way"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài so sánh trực tiếp: cao hơn intensive nhưng thấp hơn organic đất — TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "There are limits to what farmers can grow this way, of course, and much of the produce is suited to the summer months."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hầu hết nông sản có thể trồng quanh năm trên trang trại aeroponic không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Most produce can be grown … at any time of the year” (quanh năm)",
+              "p": "“much of the produce is suited to the summer months” — phần lớn phù hợp mùa hè, không phải cả năm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "at any time of the year",
+              "p": "suited to the summer months"
+            },
+            {
+              "q": "Most produce can be grown",
+              "p": "much of the produce"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài giới hạn theo mùa — mâu thuẫn với “any time of the year” → FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "And beans tend to take up a lot of space for not much return."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đậu mất nhiều thời gian hơn các loại rau khác khi trồng ở trang trại đô thị không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Beans take longer to grow … than other vegetables” (lâu hơn)",
+              "p": "Bài chỉ nói đậu “take up a lot of space for not much return” — chiếm chỗ, năng suất thấp, không so thời gian lớn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "take longer to grow",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "Beans",
+              "p": "take up a lot of space for not much return"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có thông tin về thời gian sinh trưởng — NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "The norm was to remove the stems of highest quality and leave behind poorly formed trees that were not as well suited to the site where they grew. This practice, called 'high-grading', has left a legacy of 'low-use wood' in the forests."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào nói hậu quả xấu khi chỉ quan tâm lợi nhuận tài chính từ rừng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“bad outcomes for a forest when people focus only on its financial reward”",
+              "p": "Đoạn B: chủ rừng chỉ trông giá trị gỗ cao cấp, high-grading để lại low-use wood — hậu quả xấu cho sức khỏe rừng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "bad outcomes for a forest",
+              "p": "left a legacy of 'low-use wood'"
+            },
+            {
+              "q": "focus only on its financial reward",
+              "p": "solely interested in the value of their trees as high-quality timber"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "A tree's 'value' depends on several factors including its species, size, form, condition, quality, function, and accessibility, and depends on the management goals for a given forest."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào liệt kê các yếu tố quyết định giá trị của một cây:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the aspects of any tree that contribute to its worth”",
+              "p": "Đoạn A: value phụ thuộc species, size, form, condition, quality, function, accessibility — liệt kê các khía cạnh tạo nên giá trị."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "aspects of any tree that contribute to its worth",
+              "p": "depends on several factors including its species, size, form, condition, quality, function, and accessibility"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Wood can also be gasified for electrical generation and can even be made into liquid fuels like ethanol and gasoline for lorries and cars."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào nhắc gỗ có thể dùng để vận hành phương tiện:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“potential use of wood to help run vehicles”",
+              "p": "Đoạn C: gỗ chế thành “liquid fuels like ethanol and gasoline for lorries and cars” — nhiên liệu cho xe."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "help run vehicles",
+              "p": "liquid fuels like ethanol and gasoline for lorries and cars"
+            },
+            {
+              "q": "potential use of wood",
+              "p": "Wood can also be gasified … made into liquid fuels"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "With the many pests and pathogens visiting forests including hemlock wooly adelgid, Asian longhomed beetle, emerald ash borer, and gypsy moth, to name just a few"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào đưa ví dụ côn trùng tấn công cây:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“examples of insects that attack trees”",
+              "p": "Đoạn E (Salvage Cut): liệt kê hemlock wooly adelgid, Asian longhomed beetle, emerald ash borer, gypsy moth — sâu bệnh hại rừng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "insects that attack trees",
+              "p": "hemlock wooly adelgid, Asian longhomed beetle, emerald ash borer, and gypsy moth"
+            },
+            {
+              "q": "examples of insects",
+              "p": "pests and pathogens visiting forests"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "Some people even call these 'junk trees', and they are abundant in Pennsylvania."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào cho biết tên gọi khác của cây low-use wood:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“an alternative name for trees that produce low-use wood”",
+              "p": "Đoạn B: “Some people even call these 'junk trees'” — tên thay thế cho low-use wood."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "alternative name",
+              "p": "call these 'junk trees'"
+            },
+            {
+              "q": "trees that produce low-use wood",
+              "p": "legacy of 'low-use wood'"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "These types of cut reduce the number of sick trees and seek to manage the future spread of a pest problem."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Loại đốn nào nhằm loại bỏ cây bị bệnh — ghép A/B/C:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“to remove trees that are diseased” (cây bệnh)",
+              "p": "Salvage Cut (B): “reduce the number of sick trees” và quản lý lan rộng sâu bệnh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "remove trees that are diseased",
+              "p": "reduce the number of sick trees"
+            },
+            {
+              "q": "diseased",
+              "p": "sick trees"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Salvage Cut được mô tả rõ là cắt cây ốm/sick."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "TSI Cut loại cây chất lượng kém và cây xâm lấn để nhường chỗ cho cây giá trị cao — không nhấn mục tiêu cắt cây bệnh."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Shelterwood Cut thu hoạch rừng trưởng thành khi cây con đã mọc — không tập trung vào cây diseased."
+            }
+          ]
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "It can also be used to develop a two-tier forest so that there are two harvests and the money that comes in is spread out over a decade or more."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Loại đốn nào giúp thu nhập trải dài nhiều năm — ghép A/B/C:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“to generate income across a number of years”",
+              "p": "Shelterwood Cut (C): “two harvests and the money that comes in is spread out over a decade or more” — thu nhập trải hơn mười năm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "generate income across a number of years",
+              "p": "money that comes in is spread out over a decade or more"
+            },
+            {
+              "q": "across a number of years",
+              "p": "over a decade or more"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Shelterwood cho phép hai đợt thu hoạch, tiền vào dần nhiều năm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "TSI Cut cải thiện chất lượng rừng lâu dài — không nói thu nhập trải nhiều năm."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Salvage Cut xử lý cây bệnh sau dịch sâu — không nhấn thu nhập kéo dài."
+            }
+          ]
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "It leaves a young forest where all trees are at a similar point in their growth."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Loại đốn nào tạo rừng mà các cây gần như cùng tuổi — ghép A/B/C:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“to create a forest whose trees are close in age”",
+              "p": "Shelterwood Cut (C): “leaves a young forest where all trees are at a similar point in their growth” — cùng giai đoạn phát triển."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "trees are close in age",
+              "p": "all trees are at a similar point in their growth"
+            },
+            {
+              "q": "create a forest",
+              "p": "leaves a young forest"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Shelterwood để lại rừng non đồng đều tuổi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "TSI Cut tỉa cây xấu để cây tốt phát triển — không tạo rừng đồng tuổi."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Salvage Cut giữ cây khỏe sau dịch — không mô tả rừng cùng tuổi."
+            }
+          ]
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "fire",
+      "evidence": {
+        "quoteEn": "Thinnings and dense and dead wood removal for fire prevention also center on the production of low-use wood."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Gỗ chết được dọn bớt để tránh nguy cơ gì — một từ trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “avoid the possibility of …”, cần danh từ (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“removed to avoid the possibility of …”",
+              "p": "“dense and dead wood removal for fire prevention” — dọn gỗ để phòng cháy."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "avoid the possibility of …",
+              "p": "fire prevention"
+            },
+            {
+              "q": "dead wood is removed",
+              "p": "dense and dead wood removal"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "fire prevention → điền fire."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fire"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "nutrients",
+      "evidence": {
+        "quoteEn": "The tops of trees that have been cut down should be left on the site so that their nutrients cycle back into the soil."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phần nào từ ngọn cây bị chặt giúp cải thiện chất đất — điền một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “The … from the tops of cut trees”, cần danh từ số nhiều (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“The … from the tops … can help improve soil quality”",
+              "p": "“their nutrients cycle back into the soil” — chất dinh dưỡng quay lại đất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "from the tops of cut trees",
+              "p": "The tops of trees that have been cut down"
+            },
+            {
+              "q": "improve soil quality",
+              "p": "nutrients cycle back into the soil"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "nutrients là thứ từ ngọn cây trả về đất."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "nutrients"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "cavities",
+      "evidence": {
+        "quoteEn": "In addition, trees with many cavities are extremely important habitats for insect predators like woodpeckers, bats and small mammals."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một số cây hư hại nên giữ lại vì bộ phận nào của chúng làm nơi ở cho sinh vật — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “their … provide habitats”, cần danh từ số nhiều (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“their … provide habitats for a range of creatures”",
+              "p": "“trees with many cavities are extremely important habitats” — hốc cây làm tổ cho chim, dơi, động vật nhỏ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "provide habitats",
+              "p": "extremely important habitats"
+            },
+            {
+              "q": "damaged trees should be left",
+              "p": "trees with many cavities"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "cavities là lỗ/hốc trong thân cây."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "cavities"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "hawthorn",
+      "evidence": {
+        "quoteEn": "For example, many species like hawthorn provide food for wildlife."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cây nhỏ nào được nêu làm nguồn thức ăn cho động vật — ghi đúng tên trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chỗ trống sau “such as …,” — tên loài cây (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Some trees that are small, such as …, are a source of food”",
+              "p": "“many species like hawthorn provide food for wildlife” — hawthorn cho động vật hoang dã ăn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "small trees … source of food",
+              "p": "hawthorn provide food for wildlife"
+            },
+            {
+              "q": "such as",
+              "p": "like hawthorn"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ví dụ cụ thể trong bài là hawthorn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "hawthorn"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "rare",
+      "evidence": {
+        "quoteEn": "Finally, rare species of trees in a forest should also stay behind as they add to its structural diversity."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Loại cây nào nên được giữ lại vì tăng đa dạng loài — một từ tính trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Trước “species … should be left”, cần tính từ (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Any trees that are … should be left to grow”",
+              "p": "“rare species of trees … should also stay behind as they add to its structural diversity” — loài hiếm giữ lại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "should be left to grow",
+              "p": "should also stay behind"
+            },
+            {
+              "q": "add to the variety of species",
+              "p": "add to its structural diversity"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "rare species → điền rare."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "rare"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "That means companies, governments and other players in space are collaborating in new ways to avoid a shared threat."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Section nào nói các bên hợp tác để giảm rủi ro:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“cooperation that takes place to try and minimise risk”",
+              "p": "Section C: “companies, governments and other players in space are collaborating in new ways to avoid a shared threat” — hợp tác tránh mối đe dọa chung."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cooperation … minimise risk",
+              "p": "collaborating in new ways to avoid a shared threat"
+            },
+            {
+              "q": "takes place",
+              "p": "International groups such as the Inter-Agency Space Debris Coordination Committee"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "Jah describes himself as a space environmentalist: 'I want to make space a place that is safe to operate, that is free and useful for generations to come.'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Section nào giải thích mục tiêu cá nhân của một nhân vật:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“an explanation of a person's aims”",
+              "p": "Section F: Jah tự giới thiệu “space environmentalist” và nói muốn không gian “safe … free and useful for generations to come” — nêu mục tiêu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a person's aims",
+              "p": "I want to make space a place that is safe to operate, that is free and useful for generations to come"
+            },
+            {
+              "q": "explanation of",
+              "p": "Jah describes himself as a space environmentalist"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "Ten years ago, a US commercial Iridium satellite smashed into an inactive Russian communications satellite called Cosmos-2251, creating thousands of new pieces of space shrapnel"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Section nào mô tả vụ va chạm lớn trên quỹ đạo:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a description of a major collision that occurred in space”",
+              "p": "Section A: Iridium va Cosmos-2251 “smashed into” nhau, tạo hàng nghìn mảnh vỡ — va chạm lớn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "major collision",
+              "p": "smashed into an inactive Russian communications satellite"
+            },
+            {
+              "q": "occurred in space",
+              "p": "creating thousands of new pieces of space shrapnel that now threaten other satellites in low Earth orbit"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "The field is called space traffic management, because it's similar to managing traffic on the roads or in the air."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Section nào so sánh theo dõi vật thể trong không gian với hệ thống giao thông:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“comparison between tracking objects in space and the efficiency of a transportation system”",
+              "p": "Section E: “space traffic management … similar to managing traffic on the roads or in the air” và ví dụ sân bay — so với điều phối giao thông."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "comparison … transportation system",
+              "p": "similar to managing traffic on the roads or in the air"
+            },
+            {
+              "q": "tracking objects in space",
+              "p": "space traffic management … Air-traffic controllers know the location of the planes"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "Others are developing taxonomies of space – working on measuring properties such as the shape and size of an object"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Section nào nhắc nỗ lực phân loại rác vũ trụ:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“efforts to classify space junk”",
+              "p": "Section B: “developing taxonomies of space” — xây dựng phân loại theo hình dạng, kích thước vật thể."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "classify space junk",
+              "p": "developing taxonomies of space"
+            },
+            {
+              "q": "efforts to classify",
+              "p": "working on measuring properties such as the shape and size of an object"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "sustainability",
+      "evidence": {
+        "quoteEn": "International groups such as the Inter-Agency Space Debris Coordination Committee have developed guidelines on space sustainability."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ủy ban tư vấn làm thế nào để đạt được điều gì của không gian — một từ trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “how the … of space can be achieved”, cần danh từ trừu tượng (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“how the … of space can be achieved”",
+              "p": "“guidelines on space sustainability” — hướng dẫn về tính bền vững của không gian."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "… of space can be achieved",
+              "p": "space sustainability"
+            },
+            {
+              "q": "gives advice on how",
+              "p": "developed guidelines on"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "sustainability khớp “space sustainability”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "sustainability"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "fuel",
+      "evidence": {
+        "quoteEn": "Those include inactivating satellites at the end of their useful life by venting pressurised materials or leftover fuel that might lead to explosions."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi vệ tinh hết hoạt động, cần loại bỏ vật chất gì còn sót — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “any unused … or pressurised material”, cần danh từ (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“any unused … or pressurised material”",
+              "p": "“venting pressurised materials or leftover fuel” — xả nhiên liệu/nhân liệu còn lại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "unused …",
+              "p": "leftover fuel"
+            },
+            {
+              "q": "should be removed",
+              "p": "venting pressurised materials or leftover fuel"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "fuel là từ trong cặp “leftover fuel”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fuel"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "explosions",
+      "evidence": {
+        "quoteEn": "by venting pressurised materials or leftover fuel that might lead to explosions."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vật chất còn sót có thể gây ra hiện tượng gì — một từ trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “could cause …”, cần danh từ số nhiều (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“pressurised material that could cause …”",
+              "p": "“leftover fuel that might lead to explosions” — có thể dẫn tới nổ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "could cause …",
+              "p": "might lead to explosions"
+            },
+            {
+              "q": "pressurised material",
+              "p": "pressurised materials or leftover fuel"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "explosions là hậu quả được nêu trực tiếp."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "explosions"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "bankrupt",
+      "evidence": {
+        "quoteEn": "What happens to those that fail or go bankrupt?"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Krag lo ngại các đơn vị vận hành chùn bước ở trạng thái nào sẽ không thu dọn vệ tinh — một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “operators that become …”, cần tính từ/danh từ (ONE WORD ONLY)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“operators that become … are unlikely to prioritise removing their satellites”",
+              "p": "“What happens to those that fail or go bankrupt?” — phá sản thì không chi tiền thu hồi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "become …",
+              "p": "go bankrupt"
+            },
+            {
+              "q": "unlikely to prioritise removing",
+              "p": "They are probably not going to spend money to remove their satellites from space"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "bankrupt khớp “go bankrupt”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "bankrupt"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "If you knew precisely where everything was, you would almost never have a problem,"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng biết chính xác vị trí rác vũ trụ sẽ giúp tránh nguy hiểm — ghép A/B/C/D:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Knowing the exact location of space junk would help prevent any possible danger”",
+              "p": "Marlon Sorge (C): “If you knew precisely where everything was, you would almost never have a problem” — biết chính xác thì hầu như không gặp rắc rối."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "exact location of space junk",
+              "p": "precisely where everything was"
+            },
+            {
+              "q": "help prevent any possible danger",
+              "p": "you would almost never have a problem"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sorge liên kết trực tiếp vị trí chính xác với an toàn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Frueh cảnh báo điểm không thể quay lại nếu tiếp tục như hiện — không nói biết vị trí sẽ tránh nguy hiểm."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Krag bàn quy định 25 năm và vệ tinh phá sản — không nói vị trí chính xác."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Jah nói dữ liệu quỹ đạo mâu thuẫn và môi trường không gian — không khẳng định biết vị trí sẽ ngăn nguy hiểm."
+            }
+          ]
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "I want to make space a place that is safe to operate, that is free and useful for generations to come."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng không gian nên mở cho mọi người và được bảo tồn cho tương lai — ghép A/B/C/D:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Space should be available to everyone and should be preserved for the future”",
+              "p": "Moriba Jah (D): muốn không gian “free and useful for generations to come” — tự do, hữu ích cho các thế hệ sau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "preserved for the future",
+              "p": "useful for generations to come"
+            },
+            {
+              "q": "available to everyone",
+              "p": "free and useful"
+            },
+            {
+              "q": "Space should be",
+              "p": "make space a place that is safe to operate, that is free and useful"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Jah đặt mục tiêu bảo tồn không gian lâu dài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Frueh cảnh báo điểm không thể quay lại — không nói không gian phải free cho mọi người."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Krag lo tuân thủ quy định và công ty phá sản — không nêu tầm nhìn bảo tồn chung."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Sorge nói biết vị trí chính xác giảm va chạm — không bàn quyền truy cập hay bảo tồn tương lai."
+            }
+          ]
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "But so far, only about half of all missions have abided by this 25-year goal, says Holger Krag"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai nói một khuyến nghị về vệ tinh bị phớt lờ rộng rãi — ghép A/B/C/D:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“A recommendation regarding satellites is widely ignored”",
+              "p": "Holger Krag (B): “only about half of all missions have abided by this 25-year goal” — chỉ một nửa tuân thủ mục tiêu 25 năm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "widely ignored",
+              "p": "only about half of all missions have abided by"
+            },
+            {
+              "q": "recommendation regarding satellites",
+              "p": "lowering satellites deep enough … within 25 years"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Krag chỉ ra tỷ lệ tuân thủ thấp — khuyến nghị bị bỏ qua phần lớn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Frueh nói điểm không thể quay lại — không thống kê tuân thủ quy định."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Sorge nói biết vị trí chính xác — không bàn khuyến nghị 25 năm."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Jah nói dữ liệu quỹ đạo sai lệch — không nói khuyến nghị bị ignore."
+            }
+          ]
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "When Jah enters that number, the database draws two purple lines: the US and Russian sources contain two completely different orbits for the same object"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai chỉ ra thông tin mâu thuẫn về vị trí một số vệ tinh — ghép A/B/C/D:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“There is conflicting information about where some satellites are in space”",
+              "p": "Moriba Jah (D): cùng một object, nguồn Mỹ và Nga “two completely different orbits” — thông tin trái nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "conflicting information",
+              "p": "two completely different orbits for the same object"
+            },
+            {
+              "q": "where some satellites are",
+              "p": "the database draws two purple lines"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Jah minh họa bằng database của chính ông."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Frueh cảnh báo hiệu ứng domino mảnh vỡ — không nói dữ liệu quỹ đạo mâu thuẫn."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Krag nói nửa số nhiệm vụ không tuân 25 năm — không bàn quỹ đạo trái nhau."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Sorge nói nếu biết chính xác thì ít vấn đề — không mô tả xung đột nguồn dữ liệu."
+            }
+          ]
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "If we go on like this, we will reach a point of no return,"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cảnh báo hậu quả vũ trụ có thể không sửa được — ghép A/B/C/D:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“There is a risk we will not be able to undo the damage that occurs in space”",
+              "p": "Carolin Frueh (A): “If we go on like this, we will reach a point of no return” — tới điểm không thể quay lại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not be able to undo the damage",
+              "p": "reach a point of no return"
+            },
+            {
+              "q": "risk",
+              "p": "If we go on like this, we will reach"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“point of no return” = không thể hoàn tác thiệt hại."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Krag lo công ty phá sản không thu vệ tinh — không dùng cụm point of no return."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Sorge lạc quan nếu biết vị trí chính xác — không cảnh báo không sửa được."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Jah nói tragedy of the commons đang xảy ra — nhấn ô nhiễm chung, không nói không thể undo cụ thể như Frueh."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

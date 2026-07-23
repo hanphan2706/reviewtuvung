@@ -1,0 +1,2143 @@
+{
+  "pilotId": "cam18-test3",
+  "schemaVersion": 4,
+  "note": "Cam 18 R T3 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Materials to take us beyond concrete",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "The steam car",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "The case for mixed-ability classes",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "Fly ash, a byproduct of coal-burning power plants, can be incorporated into concrete mixes"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích các quy trình công nghiệp tạo ra nguyên liệu thô tiềm năng cho bê tông."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "industrial processes that create potential raw materials for concrete",
+              "p": "Đoạn G: tro bay từ nhà máy điện đốt than (byproduct of coal-burning power plants) và xỉ quặng sắt từ quá trình luyện quặng (byproduct of the iron-ore smelting process) — đúng kiểu quy trình công nghiệp tạo nguyên liệu thay thế xi măng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "industrial processes",
+              "p": "coal-burning power plants / iron-ore smelting process"
+            },
+            {
+              "q": "potential raw materials for concrete",
+              "p": "fly ash and slag … alternatives to cement"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ đoạn G mô tả rõ hai quy trình công nghiệp (đốt than, luyện quặng) tạo phụ phẩm dùng thay xi măng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "Vancouver, Vienna and Brumunddal in Norway are all home to constructed tall, wooden buildings."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới nhiều địa điểm có nhà gỗ cao tầng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "various locations where high-rise wooden buildings can be found",
+              "p": "Đoạn D liệt kê Vancouver, Vienna và Brumunddal (Na Uy) — đúng kiểu nhiều địa điểm có tòa nhà gỗ cao."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "various locations",
+              "p": "Vancouver, Vienna and Brumunddal in Norway"
+            },
+            {
+              "q": "high-rise wooden buildings",
+              "p": "tall buildings constructed almost entirely from timber"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn D là nơi duy nhất nêu tên nhiều thành phố có nhà gỗ cao tầng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "the ingredients of concrete relatively cheap and found in abundance in most places around the globe"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn cho biết nguyên liệu bê tông có sẵn rộng rãi đến mức nào."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "how widely available the raw materials of concrete are",
+              "p": "Đoạn C: nguyên liệu bê tông “relatively cheap and found in abundance in most places around the globe” — rẻ và có nhiều ở hầu hết nơi trên thế giới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "widely available",
+              "p": "found in abundance in most places around the globe"
+            },
+            {
+              "q": "raw materials of concrete",
+              "p": "the ingredients of concrete"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn C nói thẳng nguyên liệu bê tông rẻ và phổ biến toàn cầu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "only when a wider range of construction projects has been proven in practice will it be possible to see wood as a real alternative to concrete in constructing tall buildings"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói cần thêm nhiều công trình gỗ cao tầng trước khi coi gỗ là lựa chọn khả thi."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "more high-rise wooden buildings are needed before wood can be regarded as a viable construction material",
+              "p": "Đoạn F: chỉ khi nhiều dự án xây dựng đa dạng hơn được chứng minh thực tế thì gỗ mới có thể là “real alternative” cho nhà cao tầng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more high-rise wooden buildings are needed",
+              "p": "a wider range of construction projects has been proven in practice"
+            },
+            {
+              "q": "viable construction material",
+              "p": "real alternative to concrete in constructing tall buildings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn F nhấn gỗ còn hạn chế và cần thêm dự án thực tế trước khi thay thế bê tông."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "architects",
+      "evidence": {
+        "quoteEn": "climate change is driving architects to turn to treated timber as a possible resource"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Lo ngại môi trường đang khuyến khích ai dùng gỗ trong các dự án xây dựng hiện đại?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “encouraging ______ to use wood” cần một danh từ chỉ người/nghề."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "encouraging ______ to use wood in modern construction projects",
+              "p": "Bài viết “driving architects to turn to treated timber” — thúc đẩy kiến trúc sư chuyển sang gỗ xử lý."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "encouraging … to use wood",
+              "p": "driving architects to turn to treated timber"
+            },
+            {
+              "q": "modern construction projects",
+              "p": "tall buildings constructed … from timber"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“architects” khớp trực tiếp với “driving architects to turn to treated timber”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "architects"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "moisture",
+      "evidence": {
+        "quoteEn": "Wood expands as it absorbs moisture from the air"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thứ gì trong không khí thấm vào gỗ khiến gỗ phình to?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “as ______ in the atmosphere enters wood” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "as ______ in the atmosphere enters wood, it increases in size",
+              "p": "Bài viết “Wood expands as it absorbs moisture from the air” — gỗ giãn khi hút ẩm từ không khí."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "in the atmosphere enters wood",
+              "p": "from the air / absorbs moisture"
+            },
+            {
+              "q": "increases in size",
+              "p": "expands"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“moisture” khớp với “absorbs moisture from the air”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "moisture"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "layers",
+      "evidence": {
+        "quoteEn": "An adhesive is used to stick layers of solid-sawn timber together, crosswise, to form building blocks"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong một quy trình, các ______ gỗ rắn được dán lại với nhau thành khối xây dựng."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “In one process, ______ of solid wood are glued together” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "______ of solid wood are glued together to create building blocks",
+              "p": "Bài viết “stick layers of solid-sawn timber together … to form building blocks” — dán các lớp gỗ xẻ thành khối."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "of solid wood are glued together",
+              "p": "layers of solid-sawn timber together"
+            },
+            {
+              "q": "building blocks",
+              "p": "form building blocks"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“layers” khớp trực tiếp với “layers of solid-sawn timber”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "layers"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "speed",
+      "evidence": {
+        "quoteEn": "wooden buildings can be constructed at a greater speed than ones of concrete and steel"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhà gỗ vượt trội bê tông-thép về mặt gì khi xây và về tiếng ồn?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “in terms of the ______ with which they can be constructed” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "in terms of the ______ with which they can be constructed",
+              "p": "Bài viết “constructed at a greater speed than ones of concrete and steel” — xây nhanh hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ with which they can be constructed",
+              "p": "at a greater speed"
+            },
+            {
+              "q": "how much noise is generated",
+              "p": "the process, it seems, is quieter"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“speed” khớp với “at a greater speed”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "speed"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "If they are transported over long distances, using fossil fuels, the use of alternative materials might not make sense from an overall carbon reduction perspective."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng lợi thế môi trường của chất thay xi măng có thể không lớn như ban đầu tưởng?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "The environmental advantage of cement alternatives may not be as great as initially assumed",
+              "p": "Anna Surgenor (C): nếu vật liệu phải vận chuyển xa bằng nhiên liệu hóa thạch thì dùng chất thay thế “might not make sense from an overall carbon reduction perspective” — lợi ích carbon có thể không như kỳ vọng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may not be as great as initially assumed",
+              "p": "might not make sense from an overall carbon reduction perspective"
+            },
+            {
+              "q": "cement alternatives",
+              "p": "waste products … to lower the overall carbon impact"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Surgenor cảnh báo phải tính cả vận chuyển — lợi ích môi trường có thể bị bù trừ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Cheeseman nói về quy mô sản xuất bê tông và khó thay thế, không bàn lợi ích carbon của chất thay xi măng."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Mannstrom nói nhu cầu gỗ tăng do lo ngại khí hậu, không bàn tro bay/xỉ quặng."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Preston và Lehne nói về chi phí và thiếu nguyên liệu của xi măng mới, không bàn vận chuyển phụ phẩm."
+            }
+          ]
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Making anything with similar properties is going to be very difficult."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng khó tạo vật liệu thay bê tông mà vẫn có nhiều ưu điểm tương đương?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "It would be hard to create a construction alternative to concrete that offers so many comparable benefits",
+              "p": "Chris Cheeseman (A): “Concrete is amazing stuff. Making anything with similar properties is going to be very difficult.” — rất khó làm vật liệu có tính chất tương tự."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "hard to create … alternative … comparable benefits",
+              "p": "Making anything with similar properties is going to be very difficult"
+            },
+            {
+              "q": "comparable benefits",
+              "p": "mouldable and pourable … steel can be used to reinforce concrete"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cheeseman liệt kê ưu điểm bê tông rồi kết luận khó thay thế."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Mannstrom nói nhu cầu gỗ tăng, không so sánh ưu điểm với bê tông."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Surgenor bàn tính toán carbon khi dùng phụ phẩm, không nói khó tạo vật liệu tương đương."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Preston và Lehne nói xi măng mới chưa cạnh tranh được về giá, không liệt kê ưu điểm bê tông."
+            }
+          ]
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "the company is seeing increasing demand globally for building in wood, with climate change concerns the key driver"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai nói lo ngại môi trường khiến người ta quan tâm gỗ hơn làm vật liệu xây dựng?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Worries about the environment have led to increased interest in wood as a construction material",
+              "p": "Markus Mannstrom (B): “increasing demand globally for building in wood, with climate change concerns the key driver” — lo biến đổi khí hậu là động lực chính."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Worries about the environment",
+              "p": "climate change concerns the key driver"
+            },
+            {
+              "q": "increased interest in wood",
+              "p": "increasing demand globally for building in wood"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mannstrom nói thẳng lo khí hậu thúc đẩy nhu cầu xây bằng gỗ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Cheeseman phân tích ưu điểm bê tông, không nói nhu cầu gỗ tăng."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Surgenor bàn tro bay và vận chuyển, không nói nhu cầu gỗ."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Preston và Lehne bàn xi măng mới, không nói gỗ."
+            }
+          ]
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "At present, these alternatives are rarely as cost-effective as conventional cement, and they face raw-material shortages and resistance from customers."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai nói chi phí là yếu tố khiến phản ứng tiêu cực với xi măng mới?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Expense has been a factor in the negative response to the development of new cements",
+              "p": "Felix Preston và Johanna Lehne (D): các lựa chọn thay thế “rarely as cost-effective as conventional cement” và gặp “resistance from customers” — chi phí và sự chống đối của khách hàng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Expense has been a factor",
+              "p": "rarely as cost-effective as conventional cement"
+            },
+            {
+              "q": "negative response",
+              "p": "resistance from customers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Preston và Lehne nhấn xi măng mới thường không rẻ bằng xi măng thông thường."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Cheeseman nói quy mô sản xuất bê tông, không bàn chi phí xi măng mới."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Mannstrom nói nhu cầu gỗ tăng, không bàn xi măng mới."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Surgenor bàn carbon khi dùng tro bay, không bàn chi phí xi măng mới."
+            }
+          ]
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "it is the scale on which it is used that makes it high carbon. The sheer scale of manufacture is so huge, that is the issue"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng tác hại môi trường của bê tông do sản xuất với số lượng rất lớn?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "The environmental damage caused by concrete is due to it being produced in large quantities",
+              "p": "Chris Cheeseman (A): “It is the scale on which it is used that makes it high carbon. The sheer scale of manufacture is so huge” — chính quy mô sản xuất khổng lồ gây phát thải cao."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "produced in large quantities",
+              "p": "the scale on which it is used / sheer scale of manufacture is so huge"
+            },
+            {
+              "q": "environmental damage caused by concrete",
+              "p": "makes it high carbon"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cheeseman phân biệt xi măng và bê tông, nhấn quy mô sử dụng mới là vấn đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Mannstrom nói gỗ khóa carbon, không bàn quy mô sản xuất bê tông."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Surgenor bàn tro bay thay xi măng, không giải thích vì sao bê tông phát thải nhiều."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Preston và Lehne bàn xi măng mới chưa cạnh tranh, không nói quy mô bê tông."
+            }
+          ]
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quotesEn": [
+          "Steam had already enjoyed a long and successful career in the railways, so it was only natural that the technology evolved into a miniaturized version",
+          "But these early cars inherited steam's weaknesses along with its strengths",
+          "The boilers had to be lit by hand, and they required about twenty minutes to build up pressure before they could be driven",
+          "Furthermore, their water reservoirs only lasted for about thirty miles before needing replenishment",
+          "these newly designed self-propelled carriages offered quick transportation"
+        ],
+        "quoteEn": "But these early cars inherited steam's weaknesses along with its strengths"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A đang nói về điều gì? Heading cần tìm là kiểu cả ưu và nhược điểm của công nghệ hơi nước được kế thừa sang ô tô."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading: “Good and bad aspects of steam technology are passed on”",
+              "p": "Đoạn A nói xe hơi đầu kế thừa cả điểm mạnh lẫn yếu của hơi nước: nhanh nhưng phải đốt lò, chờ áp suất, nước cạn sớm — đúng kiểu truyền cả mặt tốt và xấu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Good and bad aspects … passed on",
+              "p": "inherited steam's weaknesses along with its strengths"
+            },
+            {
+              "q": "steam technology",
+              "p": "technology evolved into a miniaturized version"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn A mô tả xe hơi hơi nước vừa có lợi thế (nhanh) vừa mang theo hạn chế cũ của hơi nước. Heading phù hợp là iii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Iii"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "viii",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quotesEn": [
+          "But the glory days of steam cars were few",
+          "A new technology called the Internal Combustion Engine soon appeared, which offered the ability to drive down the road just moments after starting up",
+          "in 1912 General Motors introduced the electric starter",
+          "over the following few years steam power was gradually phased out"
+        ],
+        "quoteEn": "A new technology called the Internal Combustion Engine soon appeared, which offered the ability to drive down the road just moments after starting up"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B đang nói về điều gì? Heading cần tìm là kiểu xuất hiện lựa chọn tốt hơn xe hơi nước."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading: “A better option than the steam car arises”",
+              "p": "Đoạn B kể động cơ đốt trong xuất hiện, khởi động điện ra đời, và hơi nước dần bị loại — một công nghệ thay thế vượt trội hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "A better option than the steam car arises",
+              "p": "Internal Combustion Engine soon appeared … steam power was gradually phased out"
+            },
+            {
+              "q": "better option",
+              "p": "drive down the road just moments after starting up"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn B tập trung vào sự trỗi dậy của động cơ xăng và sự suy tàn của xe hơi nước. Heading phù hợp là viii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Viii"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quotesEn": [
+          "the Doble boys' third prototype, nicknamed the Model B, still lacked the convenience of an internal combustion engine, it drew the attention of automobile trade magazines due to its numerous improvements over previous steam cars",
+          "The Model B proved to be superior to gasoline automobiles in many ways",
+          "Its high-pressure steam drove the engine pistons in virtual silence, in contrast to clattering gas engines which emitted the aroma of burned hydrocarbons",
+          "the Model B was amazingly swift. It could accelerate from zero to sixty miles per hour in just fifteen seconds, a feat described as 'remarkable acceleration' by Automobile magazine in 1914"
+        ],
+        "quoteEn": "The Model B proved to be superior to gasoline automobiles in many ways"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C đang nói về điều gì? Heading cần tìm là kiểu cuối cùng cũng được báo chí khen — xe êm, sạch, nhanh."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading: “Positive publicity at last for this quiet, clean, fast vehicle”",
+              "p": "Đoạn C: Model B thu hút tạp chí ô tô, vượt xe xăng về nhiều mặt — chạy gần như im lặng, không mùi khét, tăng tốc 0–60 mph trong 15 giây được gọi là “remarkable acceleration”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Positive publicity at last",
+              "p": "drew the attention of automobile trade magazines"
+            },
+            {
+              "q": "quiet, clean, fast",
+              "p": "virtual silence … negligible emissions … amazingly swift"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn C là lần đầu Model B được báo chí ca ngợi nhờ êm, sạch và nhanh. Heading phù hợp là vi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Vi"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "v",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quotesEn": [
+          "Abner Doble drove the Model B from Massachusetts to Detroit in order to seek investment in his automobile design",
+          "He and his brothers immediately began working on the Model C, which was intended to expand upon the innovations of the Model B",
+          "The brothers added features such as a key-based ignition in the cabin, eliminating the need for the operator to manually ignite the boiler",
+          "the Dobles' new car company promised a steam vehicle which would provide all of the convenience of a gasoline car, but with much greater speed",
+          "the General Engineering Company had received 5,390 deposits for Doble Detroits, which were scheduled for delivery in early 1918"
+        ],
+        "quoteEn": "the General Engineering Company had received 5,390 deposits for Doble Detroits, which were scheduled for delivery in early 1918"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D đang nói về điều gì? Heading cần tìm là kiểu cải tiến thêm dẫn tới đơn hàng thương mại."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading: “Further improvements lead to commercial orders”",
+              "p": "Đoạn D: anh em Doble phát triển Model C với khởi động bằng chìa khóa, huy động vốn, và nhận 5.390 tiền đặt cọc — cải tiến dẫn tới đơn hàng thực tế."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Further improvements",
+              "p": "key-based ignition … expand upon the innovations"
+            },
+            {
+              "q": "commercial orders",
+              "p": "received 5,390 deposits for Doble Detroits"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn D kể cải tiến Model C và số tiền đặt cọc lớn từ khách hàng. Heading phù hợp là v."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "V"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quotesEn": [
+          "Later that year Abner Doble delivered unhappy news to those eagerly awaiting the delivery of their modem new cars",
+          "Those buyers who received the handful of completed cars complained that the vehicles were sluggish and erratic",
+          "sometimes going in reverse when they should go forward",
+          "The new engine design, though innovative, was still plagued with serious glitches"
+        ],
+        "quoteEn": "Those buyers who received the handful of completed cars complained that the vehicles were sluggish and erratic"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E đang nói về điều gì? Heading cần tìm là kiểu kết quả khiến khách hàng thất vọng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading: “A disappointing outcome for customers”",
+              "p": "Đoạn E: người mua nhận xe chậm chạp, chạy không ổn định, đôi khi lùi thay vì tiến — tin xấu cho khách đang chờ xe mới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "disappointing outcome for customers",
+              "p": "delivered unhappy news … buyers … complained"
+            },
+            {
+              "q": "disappointing",
+              "p": "sluggish and erratic … going in reverse when they should go forward"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn E tập trung vào phàn nàn của khách hàng khi nhận xe. Heading phù hợp là vii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Vii"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quotesEn": [
+          "In early 1924, the Doble brothers shipped a Model E to New York City to be road-tested by the Automobile Club of America",
+          "After sitting overnight in freezing temperatures, the car was pushed out into the road and left to sit for over an hour in the frosty morning air",
+          "At the turn of the key, the boiler lit and reached its operating pressure inside of forty seconds",
+          "As they drove the test vehicle further, they found that its evenly distributed weight lent it surprisingly good handling, even though it was so heavy"
+        ],
+        "quoteEn": "After sitting overnight in freezing temperatures, the car was pushed out into the road and left to sit for over an hour in the frosty morning air"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F đang nói về điều gì? Heading cần tìm là kiểu để xe trong điều kiện lạnh trước khi thử nghiệm."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading: “A period in cold conditions before the technology is assessed”",
+              "p": "Đoạn F: Model E để qua đêm trong nhiệt độ đông lạnh, rồi để thêm hơn một giờ ngoài trời buốt sáng trước khi Automobile Club of America thử — đúng kiểu chờ trong lạnh rồi mới đánh giá."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "A period in cold conditions",
+              "p": "sitting overnight in freezing temperatures … over an hour in the frosty morning air"
+            },
+            {
+              "q": "before the technology is assessed",
+              "p": "to be road-tested by the Automobile Club of America"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn F mở đầu bằng bài test trong điều kiện lạnh giá trước khi đánh giá hiệu suất. Heading phù hợp là i."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "I"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "iv",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quotesEn": [
+          "Given the evidence, he may have been right. Many of the Model E Dobles which have survived are still in good working condition",
+          "an unmodified Doble Model E runs clean enough to pass the emissions laws in California today, and they are pretty strict",
+          "you cannot help but wonder how efficient a steam car might be with the benefit of modem materials and computers",
+          "Under the current pressure to improve automotive performance and reduce emissions, it is not unthinkable that the steam car may rise again"
+        ],
+        "quoteEn": "Under the current pressure to improve automotive performance and reduce emissions, it is not unthinkable that the steam car may rise again"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn G đang nói về điều gì? Heading cần tìm là kiểu giải pháp có thể cho các vấn đề hiện nay."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading: “A possible solution to the issues of today”",
+              "p": "Đoạn G: áp lực cải thiện hiệu suất và giảm khí thải khiến ta có thể nghĩ xe hơi nước sẽ trở lại, nhất là với vật liệu và máy tính hiện đại — gợi ý giải pháp cho vấn đề ô tô ngày nay."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "A possible solution to the issues of today",
+              "p": "the steam car may rise again"
+            },
+            {
+              "q": "issues of today",
+              "p": "improve automotive performance and reduce emissions"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn G kết bằng ý xe hơi nước có thể hồi sinh để giải quyết thách thức môi trường hiện tại. Heading phù hợp là iv."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Iv"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "But the glory days of steam cars were few."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả nói gì về xe hơi nước ở đoạn B?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: thành công chỉ ngắn ngủi (“Its success was short-lived”).",
+              "p": "Bài viết “the glory days of steam cars were few” — thời hoàng kim của xe hơi nước rất ít, nhanh chóng bị thay thế."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Its success was short-lived",
+              "p": "the glory days of steam cars were few"
+            },
+            {
+              "q": "short-lived",
+              "p": "steam power was gradually phased out"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn B nhấn thời đại xe hơi nước ngắn trước khi động cơ xăng chiếm ưu thế."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói sản lượng xe hơi nước quá ít (“Not enough cars were made”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nhắc hãng xe khó bán (“Car companies found them hard to sell”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói người ta khó lái (“People found them hard to drive”) — chỉ nói xe xăng phức tạp hơn lúc đầu."
+            }
+          ]
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Though it did not run well, the Doble brothers went on to build a second and third prototype in the following years."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi làm chiếc xe hơi nước đầu tiên, anh em Doble đã làm gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: cần nhiều lần thử mới có mẫu cạnh tranh (“needed several attempts to achieve a competitive model”).",
+              "p": "Bài viết chiếc đầu “did not run well”, rồi họ làm mẫu thứ hai và thứ ba — phải thử nhiều lần."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "needed several attempts",
+              "p": "build a second and third prototype"
+            },
+            {
+              "q": "achieve a competitive model",
+              "p": "Model B proved to be superior to gasoline automobiles in many ways"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chiếc đầu chạy kém, phải làm thêm prototype thứ hai, thứ ba — đúng ý nhiều lần thử."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Họ lấy phụ tùng từ xe cũ, không tự làm hết (“constructed all the parts themselves”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài không nhắc ghi chép từng bước (“made written notes at each stage”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói họ xin lời khuyên chuyên gia (“sought the advice of experienced people”)."
+            }
+          ]
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Abner Doble drove the Model B from Massachusetts to Detroit in order to seek investment in his automobile design"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để sản xuất Model C, anh em Doble đã làm gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: huy động vốn (“raised financial capital”).",
+              "p": "Bài viết Abner lái Model B tới Detroit “to seek investment” rồi mở General Engineering Company — tìm đầu tư / huy động vốn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "raised financial capital",
+              "p": "seek investment in his automobile design"
+            },
+            {
+              "q": "in order to produce the Model C",
+              "p": "began working on the Model C"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Trước khi phát triển Model C, họ đi tìm đầu tư — khớp đáp án B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Họ chuyển tới Detroit để tìm vốn, không phải chuyển dây chuyền sản xuất (“moved production to a different city”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nhắc thuê thêm công nhân (“employed an additional worker”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Model C “intended to expand upon the innovations of the Model B” — không bỏ thiết kế cũ (“abandoned their earlier designs”)."
+            }
+          ]
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "speed",
+      "evidence": {
+        "quoteEn": "its maximum speed was pushed to over a hundred miles per hour"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phiên bản Model E sau này tăng cái gì lên trong khi vẫn giữ khí thải rất thấp?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “raised its ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "raised its ______, while keeping its emissions extremely low",
+              "p": "Bài viết “its maximum speed was pushed to over a hundred miles per hour” — tốc độ tối đa được đẩy lên trên 100 mph."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "raised its ______",
+              "p": "maximum speed was pushed to over a hundred miles per hour"
+            },
+            {
+              "q": "keeping its emissions extremely low",
+              "p": "with negligible emissions"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“speed” khớp với “maximum speed was pushed”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "speed"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "fifty",
+      "answerAlternatives": [
+        "50"
+      ],
+      "evidence": {
+        "quoteEn": "By the time the company folded in 1931, fewer than fifty of the amazing Model E steam cars had been produced."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dưới bao nhiêu chiếc Model E được sản xuất trước khi công ty phá sản?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “Under ______ cars were produced” cần một số."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Under ______ cars were produced before the company went out of business",
+              "p": "Bài viết “fewer than fifty … Model E steam cars had been produced” trước khi công ty đóng cửa năm 1931."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Under ______ cars were produced",
+              "p": "fewer than fifty … had been produced"
+            },
+            {
+              "q": "went out of business",
+              "p": "the company folded in 1931"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“fewer than fifty” → điền fifty (hoặc 50)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fifty"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "strict",
+      "evidence": {
+        "quoteEn": "an unmodified Doble Model E runs clean enough to pass the emissions laws in California today, and they are pretty strict"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Model E vẫn đáp ứng luật khí thải ______ của California."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Trước “emissions laws” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "satisfy California's ______ emissions laws",
+              "p": "Bài viết “pass the emissions laws in California today, and they are pretty strict” — luật khí thải California rất nghiêm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "California's ______ emissions laws",
+              "p": "emissions laws in California … pretty strict"
+            },
+            {
+              "q": "satisfy",
+              "p": "pass"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“strict” khớp với “they are pretty strict”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "strict"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "The teacher can ask the No Fear group to identify the key characters and maybe provide a tentative plot summary."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả mô tả tiết Romeo and Juliet để làm gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: minh họa giáo viên xử lý nhiều nhu cầu học tập khác nhau (“how a teacher handles a range of learning needs”).",
+              "p": "Bài kể giáo viên giao bài khác nhau cho nhóm No Fear, phần lớn lớp, và học sinh vẽ — mỗi nhóm một mức độ khác nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "handles a range of learning needs",
+              "p": "ask the No Fear group … ask most of the class … gives her pens and paper to draw"
+            },
+            {
+              "q": "Romeo and Juliet lesson",
+              "p": "English literature lesson … read an extract from Shakespeare's Romeo and Juliet"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả đoạn mở đầu là ví dụ giáo viên điều chỉnh hoạt động theo từng mức năng lực."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói ít học sinh thích văn học (“how few students are interested in literature”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không kết luận Shakespeare không phù hợp tuổi teen (“how unsuitable Shakespeare is for most teenagers”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Học sinh yếu được cho vẽ, không mô tả làm phiền bạn (“weaker students can disrupt their classmates' learning”)."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "The practice is intuitively appealing to almost every stakeholder."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả nói gì về streaming ở đoạn thứ ba?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: rất được nhiều đối tượng ưa chuộng (“It has a very broad appeal”).",
+              "p": "Bài viết streaming “intuitively appealing to almost every stakeholder” — hầu hết các bên liên quan đều thấy hấp dẫn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "very broad appeal",
+              "p": "appealing to almost every stakeholder"
+            },
+            {
+              "q": "streaming",
+              "p": "separating students into classes depending on their diagnosed levels of attainment"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn 3 nhấn streaming được hầu hết mọi bên ủng hộ về mặt trực giác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Đoạn 3 chưa nói ưu tiên học sinh giỏi — ý này xuất hiện ở đoạn sau về tác động tiêu cực."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nói streaming dễ triển khai (“relatively simple to implement”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không so sánh hiệu quả giữa các trường (“works better in some schools than others”)."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "The brightest ones will never summit Mount Qomolangma, and the stragglers won't enjoy the lovely stroll in the park they are perhaps more suited to."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ẩn dụ Mount Qomolangma gợi ý ý tưởng gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: học sinh không đạt hết tiềm năng (“students not achieving their full potential”).",
+              "p": "Bài viết học sinh giỏi nhất “will never summit Mount Qomolangma” — không bao giờ chinh phục đỉnh cao nhất, tức không phát huy hết khả năng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not achieving their full potential",
+              "p": "will never summit Mount Qomolangma"
+            },
+            {
+              "q": "Mount Qomolangma",
+              "p": "đỉnh cao nhất — biểu tượng tiềm năng tối đa"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Leo Everest = đạt đỉnh cao nhất; không leo được = không phát huy hết tiềm năng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Ẩn dụ nói về tiềm năng chưa đạt, không phải chọn con đường không phù hợp (“following unsuitable paths”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói học sinh thử nhiệm vụ thú vị (“attempting interesting tasks”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói học sinh không nhận ra giới hạn của mình (“not being aware of their limitations”)."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "The purpose of teaching is to provide and then gradually remove this 'scaffolding' until they are autonomous."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Từ “scaffolding” ở đoạn sáu chỉ gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: sự hỗ trợ ban đầu khi học (“the assistance given to a student in their initial stages of learning”).",
+              "p": "Bài giải thích giáo viên, sách, ví dụ mẫu là hỗ trợ trong ZPD, rồi “gradually remove this scaffolding until they are autonomous” — giúp đỡ giai đoạn đầu rồi gỡ dần."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "scaffolding",
+              "p": "provide and then gradually remove … until they are autonomous"
+            },
+            {
+              "q": "assistance … initial stages of learning",
+              "p": "support – teachers, textbooks, worked examples, parents"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Scaffolding là lớp hỗ trợ tạm thời giúp học sinh học rồi được gỡ bỏ dần."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Scaffolding là hỗ trợ, không phải yếu tố cản trở (“factors which prevent a student from learning”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không chỉ môi trường học (“environment where most learning takes place”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không phải việc đặt mục tiêu phù hợp (“setting of appropriate learning targets”)."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "H",
+      "evidence": {
+        "quoteEn": "Professor John Hattie, director of the Melbourne Education Research Institute, notes that ‘tracking has minimal effects on learning outcomes’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hattie nói streaming hầu như không dẫn tới điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "very little indication that streaming leads to ______",
+              "p": "Bài viết “tracking has minimal effects on learning outcomes” — tác động tối thiểu lên kết quả học tập → chọn H (higher achievements)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "very little indication",
+              "p": "minimal effects"
+            },
+            {
+              "q": "higher achievements",
+              "p": "learning outcomes (improved)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“minimal effects on learning outcomes” = gần như không cải thiện thành tích → H."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "streaming appears to significantly – and negatively – affect those students assigned to the lowest sets."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác động lớn nhất của streaming là lên nhóm học sinh nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "the most significant impact is on those students placed in the ______",
+              "p": "Bài viết ảnh hưởng tiêu cực mạnh tới học sinh “assigned to the lowest sets” → D (bottom sets)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "placed in the ______",
+              "p": "assigned to the lowest sets"
+            },
+            {
+              "q": "bottom sets",
+              "p": "lowest sets"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“lowest sets” = bottom sets → D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "These students tend to have much higher representation of low socioeconomic class."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhiều học sinh ở nhóm thấp nhất có đặc điểm xã hội gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "especially where a large proportion of them have ______",
+              "p": "Bài viết nhóm thấp có tỷ lệ cao “low socioeconomic class” → F (disadvantaged backgrounds)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "disadvantaged backgrounds",
+              "p": "low socioeconomic class"
+            },
+            {
+              "q": "a large proportion",
+              "p": "much higher representation"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“low socioeconomic class” ≈ disadvantaged backgrounds → F."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "Less significant is the small benefit for those lucky clever students in the higher sets."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đối với ai thì lợi ích của streaming chỉ ở mức tối thiểu?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "for the ______, there appears to be only minimal advantage",
+              "p": "Bài viết “small benefit for those lucky clever students in the higher sets” → E (brightest pupils)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "brightest pupils",
+              "p": "lucky clever students in the higher sets"
+            },
+            {
+              "q": "only minimal advantage",
+              "p": "Less significant is the small benefit"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Học sinh giỏi ở lớp cao chỉ được lợi nhỏ → E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Streaming students by diagnosed achievement automatically limits what the teacher feels the student is capable of."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giáo viên thường có gì về học sinh trong lớp chia theo trình độ?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "teachers tend to have ______ of students in streamed groups",
+              "p": "Bài viết streaming “limits what the teacher feels the student is capable of” → kỳ vọng thấp hơn → B (lower expectations)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lower expectations",
+              "p": "limits what the teacher feels the student is capable of"
+            },
+            {
+              "q": "in streamed groups",
+              "p": "Streaming students by diagnosed achievement"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chia lớp theo năng lực khiến giáo viên hạn chế đánh giá khả năng học sinh → B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "If we accept this model, it follows that streaming students with similar ZPDs would be an efficient and effective solution. And that forcing everyone on the same hike – regardless of aptitude – would be madness."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mô hình Vygotsky có ủng hộ lớp học mixed-ability không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "The Vygotsky model of education supports the concept of a mixed-ability class.",
+              "p": "Bài viết nếu theo Vygotsky thì streaming theo ZPD tương tự là “efficient and effective”, còn ép mọi người cùng một “hike” là “madness” — mô hình ủng hộ chia lớp, không ủng hộ mixed-ability."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "supports mixed-ability class",
+              "p": "(contradicted — supports streaming)"
+            },
+            {
+              "q": "streaming students with similar ZPDs",
+              "p": "efficient and effective solution"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Theo lập luận tác giả trích Vygotsky, chia lớp theo ZPD mới hợp lý — trái với ý đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "While teachers are traditionally the MKOs in classrooms, the value of knowledgeable student peers must not go unrecognised either."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có giáo viên do dự khi cho học sinh đảm nhận vai MKO không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Some teachers are uncertain about allowing students to take on MKO roles.",
+              "p": "Bài nói bạn học giỏi cũng có thể là MKO và “must not go unrecognised” — không nhắc giáo viên nào do dự hay băn khoăn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "uncertain about allowing students to take on MKO roles",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "MKO roles",
+              "p": "more knowledgeable other … knowledgeable student peers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài ủng hộ vai trò MKO của bạn học, nhưng không nói giáo viên có do dự hay không."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "There is also something exciting about passing on skills and knowledge that you yourself have just mastered – a certain pride and zeal, a certain freshness to the interaction"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dạy kiến thức vừa mới học có thể mang lại cảm giác thỏa mãn không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "It can be rewarding to teach knowledge which you have only recently acquired.",
+              "p": "Bài viết truyền kỹ năng vừa nắm được là “something exciting” với “pride and zeal, … freshness” — tác giả thấy điều đó đáng giá."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "rewarding",
+              "p": "something exciting … pride and zeal"
+            },
+            {
+              "q": "knowledge which you have only recently acquired",
+              "p": "skills and knowledge that you yourself have just mastered"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả mô tả việc dạy điều vừa học là thú vị và đáng tự hào — khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "And today, more than ever, we need the many to flourish – not suffer at the expense of a few bright stars."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ưu tiên hàng đầu có phải là đảm bảo học sinh giỏi nhất đạt mục tiêu không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "The priority should be to ensure that the highest-achieving students attain their goals.",
+              "p": "Bài viết “we need the many to flourish – not suffer at the expense of a few bright stars” — ưu tiên đa số phát triển, không hy sinh vì vài ngôi sao."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "priority … highest-achieving students",
+              "p": "(contradicted — priority is the many)"
+            },
+            {
+              "q": "the many to flourish",
+              "p": "not suffer at the expense of a few bright stars"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả ủng hộ phát triển đa số, không ưu tiên riêng học sinh giỏi nhất."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Once a year, I go on a hike with my class, a mixed bunch of students. It is challenging. … We make it – together."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tham gia hoạt động ngoài trời hợp tác với giáo viên và bạn có cải thiện kết quả học trong lớp không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Taking part in collaborative outdoor activities … can improve student outcomes in the classroom.",
+              "p": "Bài kể chuyến đi bộ hàng năm với lớp mixed-ability là thử thách và gắn kết (“We make it – together”), nhưng không nói hoạt động này cải thiện kết quả học trong lớp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "improve student outcomes in the classroom",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "collaborative outdoor activities",
+              "p": "go on a hike with my class … We make it – together"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả dùng chuyến đi bộ làm ví dụ tinh thần hợp tác, nhưng không khẳng định nó cải thiện thành tích học tập."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    }
+  }
+}

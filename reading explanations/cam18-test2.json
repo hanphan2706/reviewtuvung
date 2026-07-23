@@ -1,0 +1,2133 @@
+{
+  "pilotId": "cam18-test2",
+  "schemaVersion": 4,
+  "note": "Cam 18 R T2 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Stonehenge",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Living with artificial intelligence",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "An ideal city",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "antlers",
+      "answerAlternatives": [
+        "deer antlers"
+      ],
+      "evidence": {
+        "quoteEn": "Neolithic* Britons used primitive tools, which may have been fashioned out of deer antlers, to dig a massive circular ditch and bank, or henge."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giai đoạn 1: người xưa có thể dùng công cụ làm từ vật liệu gì để đào hào và bank — tìm tối đa hai từ trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “tools made from …”, cần danh từ chỉ nguyên liệu (NO MORE THAN TWO WORDS)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“tools made from …” (công cụ làm từ …)",
+              "p": "“tools, which may have been fashioned out of deer antlers” — có thể chế từ gạc hươu"
+            },
+            {
+              "q": "“dug … ditch and henge” (đào hào và bank)",
+              "p": "“to dig a massive circular ditch and bank, or henge”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "tools made from",
+              "p": "fashioned out of deer antlers"
+            },
+            {
+              "q": "ditch and henge were dug",
+              "p": "dig a massive circular ditch and bank"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói công cụ thô có thể làm từ gạc hươu — điền antlers (một số key cũng nhận deer antlers)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "antlers"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "posts",
+      "answerAlternatives": [
+        "timber posts"
+      ],
+      "evidence": {
+        "quoteEn": "Deep pits dating back to that era and located within the circle may have once held a ring of timber posts, according to some scholars."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong vòng tròn, thứ gì có thể được xếp trong các hố sâu — tối đa hai từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chủ ngữ câu là danh từ số nhiều (“… may have been arranged”)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“… may have been arranged in deep pits inside the circle”",
+              "p": "“Deep pits … may have once held a ring of timber posts” — các hố có thể từng giữ vòng cọc gỗ"
+            },
+            {
+              "q": "deep pits inside the circle",
+              "p": "deep pits … located within the circle"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may have been arranged in deep pits",
+              "p": "may have once held a ring of timber posts"
+            },
+            {
+              "q": "arranged",
+              "p": "held a ring of"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Các hố sâu có thể từng giữ vòng cọc gỗ — điền posts (key cũng nhận timber posts)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "posts"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "tree trunks",
+      "evidence": {
+        "quoteEn": "According to one long-standing theory among archaeologists, Stonehenge's builders fashioned sledges and rollers out of tree trunks to lug the bluestones from the Preseli Hills."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo giả thuyết khảo cổ, thợ xây dùng gì để làm xe trượt và con lăn — tối đa hai từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “used … to make sledges and rollers”, cần cụm danh từ chỉ nguyên liệu."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“builders used … to make sledges and rollers”",
+              "p": "“fashioned sledges and rollers out of tree trunks” — chế từ thân cây"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "used … to make sledges and rollers",
+              "p": "fashioned sledges and rollers out of tree trunks"
+            },
+            {
+              "q": "make",
+              "p": "fashioned ... out of"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Xe trượt và con lăn được chế từ thân cây — điền tree trunks."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "tree trunks"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "oxen",
+      "evidence": {
+        "quoteEn": "More recent archaeological hypotheses have them transporting the bluestones with supersized wicker baskets on a combination of ball bearings and long grooved planks, hauled by oxen."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai/cái gì kéo các giỏ khổng lồ chở đá bluestone — tối đa hai từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “… pulled them on giant baskets”, cần danh từ chỉ con vật kéo."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“… pulled them on giant baskets”",
+              "p": "“supersized wicker baskets … hauled by oxen” — giỏ mây khổng lồ do bò kéo"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "pulled them on giant baskets",
+              "p": "hauled by oxen"
+            },
+            {
+              "q": "giant baskets",
+              "p": "supersized wicker baskets"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Giỏ mây được bò kéo — điền oxen."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "oxen"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "glaciers",
+      "evidence": {
+        "quoteEn": "Challenging the classic image of industrious builders pushing, carting, rolling or hauling giant stones from faraway Wales, some scientists have suggested that it was glaciers, not humans, that carried the bluestones to Salisbury Plain."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo giả thuyết địa chất, đá bluestone được mang từ Wales bằng gì — tối đa hai từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “brought from Wales by …”, cần danh từ số nhiều chỉ lực tự nhiên."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“they were brought from Wales by …” (địa chất)",
+              "p": "“it was glaciers, not humans, that carried the bluestones to Salisbury Plain” — sông băng, không phải con người"
+            },
+            {
+              "q": "geological theory",
+              "p": "some scientists have suggested"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "brought from Wales by",
+              "p": "glaciers ... carried the bluestones"
+            },
+            {
+              "q": "brought / carried",
+              "p": "giữ ý vận chuyển"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Giả thuyết địa chất cho rằng sông băng mang đá tới — điền glaciers."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "glaciers"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "druids",
+      "evidence": {
+        "quoteEn": "In the 17th century, archaeologist John Aubrey made the claim that Stonehenge was the work of druids, who had important religious, judicial and political roles in Celtic** society."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thế kỷ 17, một giả thuyết cho rằng người xây Stonehenge là ai trong xã hội Celtic — tối đa hai từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “Celtic …”, cần danh từ chỉ nhóm người."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“its builders were Celtic …”",
+              "p": "“Stonehenge was the work of druids, who had important religious, judicial and political roles in Celtic** society”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "builders were Celtic",
+              "p": "the work of druids ... in Celtic society"
+            },
+            {
+              "q": "a theory arose in the 17th century",
+              "p": "In the 17th century, archaeologist John Aubrey made the claim"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Aubrey cho rằng druid xây Stonehenge — điền druids."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "druids"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "burial",
+      "evidence": {
+        "quoteEn": "While there is consensus among the majority of modern scholars that Stonehenge once served the function of burial ground, they have yet to determine what other purposes it had."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhiều chuyên gia đồng ý Stonehenge từng được dùng làm địa điểm gì — tối đa hai từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “used as a … site”, cần danh từ bổ nghĩa cho site."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“used as a … site”",
+              "p": "“served the function of burial ground” — từng là nghĩa trang"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "used as a ... site",
+              "p": "served the function of burial ground"
+            },
+            {
+              "q": "many experts agree",
+              "p": "consensus among the majority of modern scholars"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đa số học giả đồng ý đây là nghĩa trang — điền burial."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "burial"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "calendar",
+      "evidence": {
+        "quoteEn": "In the 1960s, the astronomer Gerald Hawkins suggested that the cluster of megalithic stones operated as a form of calendar, with different points corresponding to astrological phenomena such as solstices, equinoxes and eclipses occurring at different times of the year."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thập niên 1960, có người cho rằng Stonehenge hoạt động như một loại gì — tối đa hai từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “worked as a kind of …”, cần danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“worked as a kind of …”",
+              "p": "“operated as a form of calendar” — hoạt động như một dạng lịch"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "worked as a kind of",
+              "p": "operated as a form of calendar"
+            },
+            {
+              "q": "in the 1960s",
+              "p": "In the 1960s, the astronomer Gerald Hawkins suggested"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hawkins cho rằng cụm đá hoạt động như lịch — điền calendar."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "calendar"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "At this point, sandstone slabs – known as 'sarsens' – were arranged into an outer crescent or ring; some were assembled into the iconic three-pieced structures called trilithons that stand tall in the centre of Stonehenge."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giai đoạn 3, các tấm sandstone có được đặt cả khu vực ngoài lẫn giữa khu di tích không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“placed in both the outer areas and the middle”",
+              "p": "“arranged into an outer crescent or ring” và “trilithons that stand tall in the centre” — ngoài vòng/crescent và giữa trung tâm"
+            },
+            {
+              "q": "third phase of construction",
+              "p": "The third phase of construction took place around 2000 BCE"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "outer areas",
+              "p": "outer crescent or ring"
+            },
+            {
+              "q": "middle of the Stonehenge site",
+              "p": "centre of Stonehenge"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ sarsen xếp vòng ngoài và trilithon ở trung tâm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Radiocarbon dating has revealed that work continued at Stonehenge until roughly 1600 BCE, with the bluestones in particular being repositioned multiple times."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có bằng chứng khoa học cho rằng bluestone đứng yên cùng chỗ đến khoảng 1600 TCN không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“stood in the same spot until approximately 1600 BCE”",
+              "p": "“the bluestones in particular being repositioned multiple times” — bị di dời nhiều lần, không đứng yên"
+            },
+            {
+              "q": "scientific proof",
+              "p": "Radiocarbon dating has revealed"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "stood in the same spot",
+              "p": "repositioned multiple times"
+            },
+            {
+              "q": "until approximately 1600 BCE",
+              "p": "work continued at Stonehenge until roughly 1600 BCE"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bluestone bị di chuyển nhiều lần — trái với “stood in the same spot”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "However, in the mid-20th century, radiocarbon dating demonstrated that Stonehenge stood more than 1,000 years before the Celts inhabited the region."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phát hiện thế kỷ 20 có ủng hộ luận điểm của John Aubrey về Stonehenge không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Aubrey's claim … was supported by 20th-century findings”",
+              "p": "“radiocarbon dating demonstrated that Stonehenge stood more than 1,000 years before the Celts” — bác bỏ giả thuyết druid/Celtic của Aubrey"
+            },
+            {
+              "q": "John Aubrey's claim",
+              "p": "Stonehenge was the work of druids"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "supported by 20th-century findings",
+              "p": "demonstrated that Stonehenge stood more than 1,000 years before the Celts"
+            },
+            {
+              "q": "20th-century findings",
+              "p": "mid-20th century, radiocarbon dating"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Xét tuổi phóng xạ cho thấy Stonehenge có trước thời Celt — phản bác Aubrey, không phải ủng hộ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Many modern historians and archaeologists now agree that several distinct tribes of people contributed to Stonehenge, each undertaking a different phase of its construction."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hiện vật tại Stonehenge có cho thấy nhiều nhóm người khác nhau tham gia xây dựng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“constructed by a number of different groups of people”",
+              "p": "“several distinct tribes of people contributed to Stonehenge” — nhiều bộ tộc khác nhau"
+            },
+            {
+              "q": "Objects discovered … seem to indicate",
+              "p": "“Bones, tools and other artefacts found on the site seem to support this hypothesis”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a number of different groups",
+              "p": "several distinct tribes of people"
+            },
+            {
+              "q": "Objects discovered at Stonehenge",
+              "p": "Bones, tools and other artefacts found on the site"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hiện vật ủng hộ giả thuyết nhiều bộ tộc xây từng giai đoạn — khớp TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "While his theory has received a considerable amount of attention over the decades, critics maintain that Stonehenge's builders probably lacked the knowledge necessary to predict such events or that England's dense cloud cover would have obscured their view of the skies."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phê phán thuyết Hawkins chủ yếu đến từ các nhà thiên văn khác hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Criticism … has come mainly from other astronomers”",
+              "p": "Bài chỉ nói “critics maintain” — không nêu họ là nhà thiên văn"
+            },
+            {
+              "q": "Gerald Hawkins' theory",
+              "p": "the cluster of megalithic stones operated as a form of calendar"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "mainly from other astronomers",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "Criticism of ... theory",
+              "p": "critics maintain that Stonehenge's builders probably lacked the knowledge"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có phê phán nhưng không nói phê phán đến từ nhà thiên văn — NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "But many experts believe this restriction is very temporary. By mid-century, we may have artificial general intelligence (AGI) – machines that can achieve human-level performance on the full range of tasks that we ourselves can tackle."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn đầu, tác giả muốn nhấn điểm gì về AI:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: tương lai khó có giới hạn lâu dài cho khả năng AI (“The future is unlikely to see limitations on the capabilities of AI”).",
+              "p": "Bài viết hạn chế narrow AI “very temporary”, rồi AGI và “there's little reason to think it will stop there” — AI có thể tiếp tục vượt xa"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "unlikely to see limitations on the capabilities of AI",
+              "p": "this restriction is very temporary"
+            },
+            {
+              "q": "capabilities of AI",
+              "p": "human-level performance on the full range of tasks"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả cho rằng giới hạn hiện tại chỉ tạm thời và AI sẽ tiến xa hơn — khớp C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đoạn không bàn khó dự đoán tốc độ AI tiến bộ."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Cờ vua chỉ là ví dụ thành tựu, không phải điểm chính về học hỏi từ máy chơi cờ."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói chuyên gia bất đồng về tác vụ chuyên biệt nào AI làm được."
+            }
+          ]
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Machines will be free of many of the physical constraints on human intelligence. Our brains run at slow biochemical processing speeds on the power of a light bulb, and their size is restricted by the dimensions of the human birth canal."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn thứ hai, tác giả đang làm gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: giải thích vì sao máy có thể vượt con người (“explaining why machines will be able to outperform humans”).",
+              "p": "Bài so sánh não người (chậm, nhỏ, hạn chế sinh lý) với máy không bị ràng buộc vật lý đó — lý do máy có thể mạnh hơn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "outperform humans",
+              "p": "free of many of the physical constraints on human intelligence"
+            },
+            {
+              "q": "why machines will be able to",
+              "p": "Machines will be free of many of the physical constraints"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả đoạn giải thích hạn chế sinh lý của não người so với máy — khớp A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Đoạn nhấn khác biệt, không mô tả điểm chung giữa người và máy."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không kể lịch sử phát triển trí tuệ máy móc."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không chỉ ra khía cạnh nào của con người tiên tiến nhất."
+            }
+          ]
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Folklore is full of tales of people who ask for the wrong thing, with disastrous consequences- King Midas, for example, might have wished that everything he touched turned to gold, but didn't really intend this to apply to his breakfast."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả nhắc chuyện Vua Midas để làm gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: minh họa mục tiêu định nghĩa kém có thể gây hậu quả tồi (“poorly defined objectives can go wrong”).",
+              "p": "Bài viết “ask for the wrong thing, with disastrous consequences” — Midas ước sai thứ, hậu quả tai hại"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "poorly defined objectives can go wrong",
+              "p": "ask for the wrong thing, with disastrous consequences"
+            },
+            {
+              "q": "King Midas",
+              "p": "might have wished ... but didn't really intend"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Midas là ví dụ điều ước/mục tiêu mal định nghĩa dẫn tới thảm họa — khớp B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không so sánh các tầm nhìn tiến bộ khác nhau."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nhấn nhu cầu hợp tác."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không bàn lợi ích tài chính."
+            }
+          ]
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "If superintendent machines don't do a lot better than us, we'll be in deep trouble. We'll have powerful new intelligence amplifying the dark sides of our own fallible natures."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn thứ tư, tác giả nói đến thách thức gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: đảm bảo AI thân thiện với con người hơn chính ta (“ensuring AI is more human-friendly than we are ourselves”).",
+              "p": "Bài viết “If superintendent machines don't do a lot better than us, we'll be in deep trouble” — máy phải làm tốt hơn con người về đạo đức và nhận thức"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more human-friendly than we are ourselves",
+              "p": "don't do a lot better than us"
+            },
+            {
+              "q": "ensuring AI is more human-friendly",
+              "p": "create powerful AI machines that are 'human-friendly'"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thách thức là tạo AI tốt hơn bản thân con người — khớp D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không kêu gọi con người sống có nguyên tắc hơn — mà kêu gọi máy làm tốt hơn."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không tập trung vào chọn giá trị cụ thể nào cho AI."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không bàn xây thế giới tốt hơn cho mọi sinh vật."
+            }
+          ]
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "For safety's sake, then, we want the machines to be ethically as well as cognitively superhuman. We want them to aim for the moral high ground, not for the troughs in which many of us spend some of our time."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn thứ năm, tác giả gợi ý gì về tương lai AI:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: máy sẽ vượt con người ở một số khía cạnh (“Machines will be superior to humans in certain respects”).",
+              "p": "Bài viết “ethically as well as cognitively superhuman” — vượt trội về đạo đức lẫn nhận thức"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "superior to humans in certain respects",
+              "p": "ethically as well as cognitively superhuman"
+            },
+            {
+              "q": "the future of AI",
+              "p": "For safety's sake, then, we want the machines to be"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả muốn máy siêu việt về đạo đức và nhận thức — khớp C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "An toàn máy được nhắc nhưng không phải điểm chính đoạn này."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói khó biết tác động của máy lên thế giới."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không bàn nhiều người phản đối vai trò rộng hơn của máy."
+            }
+          ]
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "This won't be easy, given that we are tribal creatures and conflicted about the ideals ourselves. We often ignore the suffering of strangers, and even contribute to it, at least indirectly."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phương án nào tóm tắt đúng nhất luận điểm ở đoạn thứ sáu:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: khiếm khuyết của con người khiến việc tạo máy cần thiết khó hơn (“Human shortcomings will make creating the machines we need more difficult”).",
+              "p": "Bài viết “This won't be easy, given that we are tribal creatures and conflicted about the ideals ourselves” — bản thân ta mâu thuẫn, khó chỉ đường cho máy"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Human shortcomings will make creating the machines we need more difficult",
+              "p": "This won't be easy, given that we are tribal creatures and conflicted"
+            },
+            {
+              "q": "getting started problem",
+              "p": "we need to tell the machines what they're looking for with sufficient clarity"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn nói khó khăn vì con người bộ lạc, mâu thuẫn về lý tưởng — khớp D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói máy thông minh hơn sẽ lạm quyền nhiều hơn."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không so sánh machine learning với học của con người."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không bàn số người biết lập trình máy."
+            }
+          ]
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "We might lose our freedom to discriminate in favour of our own communities, for example."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Máy có khả năng ra quyết định đạo đức có thể ngăn ta ưu tiên lợi ích cộng đồng của mình không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“prevent us from promoting the interests of our communities”",
+              "p": "“We might lose our freedom to discriminate in favour of our own communities” — mất tự do ưu tiên cộng đồng mình"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "prevent us from promoting the interests of our communities",
+              "p": "lose our freedom to discriminate in favour of our own communities"
+            },
+            {
+              "q": "moral decisions",
+              "p": "machines who are better than us at sticking to the moral high ground"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả thừa nhận ta có thể mất quyền ưu tiên cộng đồng mình — khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "But are we ready for ethical silicon police limiting our options? They might be so good at doing it that we won't notice them; but few of us are likely to welcome such a future."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "“Cảnh sát silicon” có cần tồn tại số lượng lớn mới hiệu quả không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“would need to exist in large numbers in order to be effective”",
+              "p": "Bài chỉ nói “ethical silicon police limiting our options” — không nhắc số lượng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "exist in large numbers",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "silicon police",
+              "p": "ethical silicon police limiting our options"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có khái niệm cảnh sát silicon nhưng không nói cần số lượng lớn — NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "But are we ready for ethical silicon police limiting our options? They might be so good at doing it that we won't notice them; but few of us are likely to welcome such a future."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhiều người có thoải mái với việc độc lập bị máy hạn chế không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Many people are comfortable with the prospect of their independence being restricted by machines”",
+              "p": "“few of us are likely to welcome such a future” — ít người chào đón tương lai đó"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "comfortable with ... independence being restricted",
+              "p": "few of us are likely to welcome such a future"
+            },
+            {
+              "q": "restricted by machines",
+              "p": "ethical silicon police limiting our options"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả nói ít ai muốn tương lai bị máy giới hạn — trái với “many people are comfortable” → NO."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "It is not yet clear whether this is possible, but if it is, it will require a cooperative spirit, and a willingness to set aside self-interest."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Muốn đảm bảo máy hành động vì lợi ích ta, mọi người có cần cùng hợp tác không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“we all need to work together”",
+              "p": "“it will require a cooperative spirit, and a willingness to set aside self-interest” — cần tinh thần hợp tác, bỏ lợi ích cá nhân"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "we all need to work together",
+              "p": "require a cooperative spirit"
+            },
+            {
+              "q": "act in our best interests",
+              "p": "get them to act well for us"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả nói cần tinh thần hợp tác — khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "AI already has some input into how resources are used in our National Health Service (NHS) here in the UK, for example."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "AI hiện có vai trò hạn chế trong việc phân bổ gì ở hệ thống y tế Anh — chọn A–F:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the way … are allocated in the health service”.",
+              "p": "Bài viết “some input into how resources are used” — ảnh hưởng cách dùng/phân bổ nguồn lực → C (available resources)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "are allocated",
+              "p": "resources are used"
+            },
+            {
+              "q": "available resources",
+              "p": "how resources are used in our National Health Service"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Resources are used/allocated” khớp available resources (C)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Medical practitioners là người, không phải thứ được phân bổ."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Specialised tasks không liên quan phân bổ nguồn lực y tế."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Reduced illness là kết quả, không phải thứ được phân bổ."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Professional authority là quyền hạn, không phải nguồn lực được phân bổ."
+            },
+            {
+              "letter": "F",
+              "whyVi": "Technology experts không khớp ngữ cảnh phân bổ trong NHS."
+            }
+          ]
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "However, we'd be depriving some humans (e.g. senior doctors) of the control they presently enjoy."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nếu AI vai trò lớn hơn, ai sẽ mất mức quyền kiểm soát hiện tại — chọn A–F:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “certain … not having their current level of …”.",
+              "p": "Bài viết “depriving some humans (e.g. senior doctors) of the control” — bác sĩ cao cấp mất quyền kiểm soát → A (medical practitioners)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "certain ... not having their current level of",
+              "p": "depriving some humans (e.g. senior doctors) of the control"
+            },
+            {
+              "q": "medical practitioners",
+              "p": "senior doctors"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Senior doctors thuộc nhóm medical practitioners — chọn A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Specialised tasks không phải nhóm người bị mất quyền kiểm soát."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Available resources là nguồn lực, không phải con người."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Reduced illness không liên quan."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Professional authority là ô 26, không phải nhóm người."
+            },
+            {
+              "letter": "F",
+              "whyVi": "Technology experts không được nhắc trong ví dụ NHS."
+            }
+          ]
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "However, we'd be depriving some humans (e.g. senior doctors) of the control they presently enjoy."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Họ sẽ không còn mức … hiện tại — chọn A–F:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “not having their current level of …”.",
+              "p": "Bài viết “depriving … of the control they presently enjoy” — mất quyền kiểm soát → E (professional authority)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "current level of",
+              "p": "professional authority"
+            },
+            {
+              "q": "professional authority",
+              "p": "the control they presently enjoy"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Control they presently enjoy” tương ứng professional authority — chọn E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Medical practitioners là nhóm người (ô 25), không phải thứ bị mất."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Specialised tasks không khớp “control/authority”."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Available resources không phải quyền hạn chuyên môn."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Reduced illness không liên quan quyền kiểm soát."
+            },
+            {
+              "letter": "F",
+              "whyVi": "Technology experts không khớp ngữ cảnh bác sĩ cao cấp."
+            }
+          ]
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "The word 'genius' is universally associated with the name of Leonardo da Vinci. A true Renaissance man, he embodied scientific spirit, artistic talent and humanist sensibilities. Five hundred years have passed since Leonardo died in his home at Chateau du Clos Luce, outside Tours, France."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người ta lần đầu gọi Leonardo là thiên tài cách đây 500 năm hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“People first referred to Leonardo da Vinci as a genius 500 years ago”",
+              "p": "Bài nói “genius” gắn với tên ông và “500 years have passed since Leonardo died” — không nói 500 năm trước mới bắt đầu gọi là genius"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "first referred to ... as a genius 500 years ago",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "500 years ago",
+              "p": "Five hundred years have passed since Leonardo died"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "500 năm là mốc mất của ông, không phải lần đầu được gọi genius — NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Today, the world is on the cusp of a climate crisis, which is predicted to cause widespread displacement, extinctions and death, if left unaddressed. Then, as now, radical solutions were called for to revolutionise the way people lived and safeguard humanity against catastrophe."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khủng hoảng khí hậu hiện nay có được dự báo gây nhiều chết chóc hơn dịch hạch không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“predicted to cause more deaths than the plague”",
+              "p": "Bài nói khí hậu “cause … death” và dịch hạch “some 200 million deaths” — không so sánh số chết"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more deaths than the plague",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "predicted to cause ... death",
+              "p": "predicted to cause widespread displacement, extinctions and death"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả hai đều gây chết nhưng bài không so sánh mức nào nhiều hơn — NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Then, as now, radical solutions were called for to revolutionise the way people lived and safeguard humanity against catastrophe."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một số thách thức hôm nay có thể so sánh với thách thức thời xưa không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Some of the challenges we face today can be compared to those of earlier times”",
+              "p": "“Then, as now, radical solutions were called for” — thời đó cũng như bây giờ, cần giải pháp căn bản"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "challenges we face today can be compared to those of earlier times",
+              "p": "Then, as now, radical solutions were called for"
+            },
+            {
+              "q": "earlier times",
+              "p": "the spread of the plague in the 14th century"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả đặt khủng hoảng khí hậu song song với khủng hoảng dịch hạch — khớp TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Following a typical Renaissance trend, he began to work on an 'ideal city' project, which – due to its excessive costs – would remain unfulfilled."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "“Ideal city” của Leonardo có được xây dựng ở thế kỷ 15 không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“was constructed in the 15th century”",
+              "p": "“would remain unfulfilled” — không được thực hiện vì chi phí quá cao"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "was constructed",
+              "p": "would remain unfulfilled"
+            },
+            {
+              "q": "ideal city",
+              "p": "an 'ideal city' project"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Dự án không được hoàn thành — trái với “was constructed” → FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Yet given that unsustainable urban models are a key cause of global climate change today, it's only natural to wonder how Leonardo might have changed the shape of modem cities."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Quy hoạch đô thị kém có phải nguyên nhân lớn gây biến đổi khí hậu không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Poor town planning is a major contributor to climate change”",
+              "p": "“unsustainable urban models are a key cause of global climate change today” — mô hình đô thị không bền vững là nguyên nhân chính"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Poor town planning",
+              "p": "unsustainable urban models"
+            },
+            {
+              "q": "major contributor to climate change",
+              "p": "a key cause of global climate change"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ mô hình đô thị không bền vững là nguyên nhân chính — khớp TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "The rigour and method behind the conscious conception of a city had been largely missing in Western thought until the moment when prominent Renaissance men pushed forward large-scale urban projects in Italy, such as the reconfiguration of the town of Pienza and the expansion of the city of Ferrara."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thời Phục hưng, dân địa phương có chống lại thay đổi ở Pienza và Ferrara không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“local people fought against the changes to Pienza and Ferrara”",
+              "p": "Bài chỉ nói các dự án quy hoạch được đẩy mạnh — không nhắc dân địa phương phản đối"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fought against the changes",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "Pienza and Ferrara",
+              "p": "reconfiguration of the town of Pienza and the expansion of the city of Ferrara"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có thông tin về phản ứng của dân địa phương — NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "It is not easy to identify a coordinated vision of Leonardo's ideal city because of his disordered way of working with notes and sketches."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Leonardo có giữ hồ sơ thiết kế gọn gàng, có hệ thống không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“kept a neat, organised record of his designs”",
+              "p": "“his disordered way of working with notes and sketches” — cách làm việc lộn xộn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "neat, organised record",
+              "p": "disordered way of working with notes and sketches"
+            },
+            {
+              "q": "record of his designs",
+              "p": "notes and sketches"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói ghi chép và phác thảo lộn xộn — trái với “neat, organised” → FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "transport",
+      "evidence": {
+        "quoteEn": "He designed the city for the easy transport of goods and clean urban spaces, and he wanted a comfortable and spacious city, with well-ordered streets and architecture."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thành phố mới bên sông Ticino nhằm cải thiện điều gì cho thương mại — ONE WORD ONLY:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “provide better … for trade”, cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“provide better … for trade”",
+              "p": "“designed the city for the easy transport of goods” — vận chuyển hàng hóa dễ dàng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "better ... for trade",
+              "p": "easy transport of goods"
+            },
+            {
+              "q": "for trade",
+              "p": "of goods"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thiết kế ưu tiên vận chuyển hàng — điền transport."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "transport"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "staircases",
+      "evidence": {
+        "quoteEn": "Leonardo wanted the city to be built on several levels, linked with vertical outdoor staircases. This design can be seen in some of today's high-rise buildings but was unconventional at the time."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một số đặc điểm thấy ở cao ốc hôm nay, ví dụ gì ở mặt ngoài tòa nhà — ONE WORD ONLY:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “such as … on the exterior”, cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“such as … on the exterior of a building”",
+              "p": "“linked with vertical outdoor staircases” — thang ngoài trời dọc"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "on the exterior of a building",
+              "p": "vertical outdoor staircases"
+            },
+            {
+              "q": "can be seen in some tower blocks today",
+              "p": "can be seen in some of today's high-rise buildings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thang ngoài trời nối các tầng — điền staircases."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "staircases"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "engineering",
+      "evidence": {
+        "quoteEn": "But the true originality of Leonardo's vision was its fusion of architecture and engineering. Leonardo designed extensive hydraulic plants to create artificial canals throughout the city."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Leonardo không chỉ là kiến trúc sư — chuyên môn gì thể hiện qua kế hoạch kênh nhân tạo — ONE WORD ONLY:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “expertise in …”, cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“His expertise in … was evident in his plans for artificial canals”",
+              "p": "“fusion of architecture and engineering” và “designed extensive hydraulic plants” — kết hợp kiến trúc và kỹ thuật"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "expertise in",
+              "p": "fusion of architecture and engineering"
+            },
+            {
+              "q": "artificial canals",
+              "p": "extensive hydraulic plants to create artificial canals"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Kênh và nhà máy thủy lực thể hiện engineering — điền engineering."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "engineering"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "rule",
+      "evidence": {
+        "quoteEn": "Leonardo also thought that the width of the streets ought to match the average height of the adjacent houses: a rule still followed in many contemporary cities across Italy, to allow access to sun and reduce the risk of damage from earthquakes."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhiều thành phố Ý hôm nay vẫn theo … này — ONE WORD ONLY:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “follows this …”, cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“follows this …” (chiều cao nhà tương ứng chiều rộng phố)",
+              "p": "“a rule still followed in many contemporary cities across Italy” — quy tắc vẫn được tuân theo"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "follows this",
+              "p": "a rule still followed"
+            },
+            {
+              "q": "height of houses should relate to the width of streets",
+              "p": "the width of the streets ought to match the average height of the adjacent houses"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài gọi đó là một rule — điền rule."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "rule"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "Roman",
+      "evidence": {
+        "quoteEn": "Although some of these features existed in Roman cities, before Leonardo's drawings there had never been a multi-level, compact modem city which was thoroughly technically conceived."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một số thành phố thời … có đặc điểm tương tự — ONE WORD ONLY:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “cities from … times”, cần tính từ/danh từ chỉ thời kỳ (một từ)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“some cities from … times have aspects … in Leonardo's designs”",
+              "p": "“some of these features existed in Roman cities” — đã có ở thành phố La Mã"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cities from ... times",
+              "p": "Roman cities"
+            },
+            {
+              "q": "aspects that can also be found in Leonardo's designs",
+              "p": "some of these features existed in Roman cities"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói đặc điểm đã có ở Roman cities — điền Roman."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Roman"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "Paris",
+      "evidence": {
+        "quoteEn": "For example, the subdivision of the city by function- with services and infrastructures located in the lower levels and wide and well-ventilated boulevards and walkways above for residents – is an idea that can be found in Georges-Eugene Haussmann's renovation of Paris under Emperor Napoleon III between 1853 and 1870."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thành phố nào được quy hoạch lại thế kỷ 19 theo cách Leonardo hình dung — ONE WORD ONLY:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chỗ trống là tên riêng thành phố."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“… is one example of a city that was redesigned in the 19th century”",
+              "p": "“Haussmann's renovation of Paris … between 1853 and 1870” — cải tạo Paris thế kỷ 19"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "redesigned in the 19th century in the way that Leonardo had envisaged",
+              "p": "Haussmann's renovation of Paris"
+            },
+            {
+              "q": "one example of a city",
+              "p": "renovation of Paris"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Haussmann cải tạo Paris — điền Paris."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Paris"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "outwards",
+      "evidence": {
+        "quoteEn": "Many scholars think that the compact city, built upwards instead of outwards, integrated with nature (especially water systems), with efficient transport infrastructure, could help modem cities become more efficient and sustainable."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngày nay, xây dựng theo hướng … không còn là cách tốt nhất — ONE WORD ONLY:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “building …”, cần một trạng từ/chỉ hướng (một từ)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“building … no longer seems to be the best approach”",
+              "p": "“built upwards instead of outwards” — xây lên thay vì bung ra ngoài; mô hình cũ là outwards"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "building ... no longer seems to be the best approach",
+              "p": "built upwards instead of outwards"
+            },
+            {
+              "q": "outwards",
+              "p": "instead of outwards"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thành phố compact nên xây lên, không lan ra — điền outwards."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "outwards"
+        }
+      ]
+    }
+  }
+}

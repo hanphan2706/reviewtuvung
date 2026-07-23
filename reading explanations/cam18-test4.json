@@ -1,0 +1,1950 @@
+{
+  "pilotId": "cam18-test4",
+  "schemaVersion": 4,
+  "note": "Cam 18 R T4 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Green roofs",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "The growth mindset",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Alfred Wegener: science, exploration and the theory of continental drift",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "Other considerations include installing drainage paths, meeting health and safety requirements and perhaps allowing access for the public, as well as planning restrictions and disruption from regular activities in and around the buildings during installation."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc nhiều thách thức phải vượt qua trước khi lắp mái xanh. Đề viết: “several challenges to be overcome before a green roof can be installed”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn liệt kê thách thức trước khi lắp mái xanh (“challenges to be overcome before … installed”).",
+              "p": "Đoạn D kể loạt việc phải giải quyết: thoát nước, an toàn lao động, quy hoạch, gián đoạn hoạt động xung quanh khi lắp đặt. “challenges” ≈ “considerations include …”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "several challenges to be overcome before a green roof can be installed",
+              "p": "Other considerations include installing drainage paths, meeting health and safety requirements"
+            },
+            {
+              "q": "before a green roof can be installed",
+              "p": "planning restrictions and disruption ... during installation"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Toronto, Canada, has policies dating from the 1990s, encouraging the development of urban farms on rooftops."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc một thành phố đã quảng bá mái xanh nhiều năm. Đề viết: “a city where green roofs have been promoted for many years”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Thành phố đã khuyến khích mái xanh từ lâu (“promoted for many years”).",
+              "p": "Đoạn C: Toronto có chính sách từ thập niên 1990 khuyến khích nông trại trên mái. “promoted for many years” ≈ “policies dating from the 1990s”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a city where green roofs have been promoted for many years",
+              "p": "Toronto, Canada, has policies dating from the 1990s"
+            },
+            {
+              "q": "promoted for many years",
+              "p": "encouraging the development of urban farms on rooftops"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "The success stories need to be studied and replicated elsewhere, to make green, blue, brown and food-producing roofs the norm in cities around the world."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói mái xanh hiện có nên làm mẫu cho dự án mới. Đề viết: “existing green roofs should be used as a model for new ones”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Mái xanh hiện có nên làm mẫu cho dự án mới (“used as a model for new ones”).",
+              "p": "Đoạn E: các câu chuyện thành công cần “studied and replicated elsewhere” — học rồi nhân rộng. “used as a model” ≈ “studied and replicated”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "existing green roofs should be used as a model for new ones",
+              "p": "The success stories need to be studied and replicated elsewhere"
+            },
+            {
+              "q": "used as a model",
+              "p": "replicated elsewhere, to make ... roofs the norm"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "Research also indicates that green roofs can be integrated with drainage systems on the ground, such as street trees, so that the water is managed better and the built environment is made more sustainable."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn cho ví dụ mái xanh kết hợp với sáng kiến xanh khác trong đô thị. Đề viết: “how green roofs can work in combination with other green urban initiatives”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Mái xanh kết hợp với sáng kiến xanh đô thị khác (“in combination with other green urban initiatives”).",
+              "p": "Đoạn B: mái xanh tích hợp với hệ thống thoát nước mặt đất và cây đường phố (“street trees”). “other green urban initiatives” ≈ “drainage systems on the ground, such as street trees”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "work in combination with other green urban initiatives",
+              "p": "integrated with drainage systems on the ground, such as street trees"
+            },
+            {
+              "q": "other green urban initiatives",
+              "p": "living walls"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "To convince investors and developers that installing green roofs is worthwhile, economic arguments are still the most important."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói cần thuyết phục về lợi ích tài chính của mái xanh. Đề viết: “the need to make a persuasive argument for the financial benefits of green roofs”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Cần lập luận thuyết phục về lợi ích tài chính (“persuasive argument for the financial benefits”).",
+              "p": "Đoạn D: muốn thuyết phục nhà đầu tư thì “economic arguments are still the most important”. “financial benefits” ≈ “economic arguments”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "make a persuasive argument for the financial benefits",
+              "p": "To convince investors and developers ... economic arguments are still the most important"
+            },
+            {
+              "q": "financial benefits",
+              "p": "the economic value of nature; measuring the money saved"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "energy",
+      "evidence": {
+        "quoteEn": "Among the benefits are saving on energy costs"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mái xanh giúp giảm chi tiêu cho thứ gì — tìm một từ trong bài:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chỗ trống cần ONE WORD ONLY — một danh từ trong bài."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“reducing how much money is spent on 6…………….”",
+              "p": "“saving on energy costs” — tiết kiệm chi phí năng lượng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reducing how much money is spent on",
+              "p": "saving on energy costs"
+            },
+            {
+              "q": "money is spent on",
+              "p": "energy costs"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khớp paraphrase trên — điền energy."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "energy"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "food",
+      "evidence": {
+        "quoteEn": "even growing food"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mái xanh còn có thể dùng để sản xuất gì — điền một từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chỗ trống cần ONE WORD ONLY — một danh từ trong bài."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“used for producing 7…………….”",
+              "p": "“even growing food” — thậm chí trồng thực phẩm trên mái"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "used for producing",
+              "p": "growing food"
+            },
+            {
+              "q": "producing",
+              "p": "growing food"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khớp paraphrase trên — điền food."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "food"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "gardening",
+      "evidence": {
+        "quoteEn": "Doctors are increasingly prescribing time spent gardening outdoors for patients dealing with anxiety and depression."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngành y khuyến khích hoạt động gì để hỗ trợ sức khỏe tinh thần:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chỗ trống cần ONE WORD ONLY — một danh từ trong bài."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“recommends 8………………. as an activity to help people cope with mental health issues”",
+              "p": "“prescribing time spent gardening outdoors” — kê đơn thời gian làm vườn ngoài trời"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "recommends ... as an activity",
+              "p": "prescribing time spent gardening outdoors"
+            },
+            {
+              "q": "mental health issues",
+              "p": "anxiety and depression"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khớp paraphrase trên — điền gardening."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "gardening"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "obesity",
+      "evidence": {
+        "quoteEn": "access to even the most basic green spaces can provide a better quality of life for dementia sufferers and help people avoid obesity."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Không gian xanh giúp phòng tránh vấn đề sức khỏe thể chất nào:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chỗ trống cần ONE WORD ONLY — một danh từ trong bài."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“prevent physical problems such as 9…………….”",
+              "p": "“help people avoid obesity” — tránh béo phì"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "prevent physical problems such as",
+              "p": "help people avoid obesity"
+            },
+            {
+              "q": "physical problems",
+              "p": "obesity"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khớp paraphrase trên — điền obesity."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "obesity"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "choose-two",
+      "answer": "C",
+      "answerPair": [
+        10,
+        11
+      ],
+      "correctLetters": [
+        "C",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "Being able to keep enough water at roof height and distribute it right across the rooftop is crucial to maintaining the plants on any green roof – especially on 'edible roofs' where fruit and vegetables are farmed. And it's much easier to do this in newer buildings, which can typically hold greater weight, than to retro-fit old ones. Having a stronger roof also makes it easier to grow a greater variety of plants, since the soil can be deeper."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai lợi thế khi dùng tòa nhà mới hơn cho mái xanh (đoạn C):"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý C: dung tích chứa nước lớn hơn (“greater water-storage capacity”).",
+              "p": "Bài viết tòa nhà mới chịu tải tốt hơn nên dễ “keep enough water at roof height and distribute it right across the rooftop”. “water-storage capacity” ≈ “keep enough water at roof height”."
+            },
+            {
+              "q": "Ý D: trồng được nhiều loại cây hơn (“ability to cultivate more plant types”).",
+              "p": "“Having a stronger roof also makes it easier to grow a greater variety of plants, since the soil can be deeper”. “more plant types” ≈ “greater variety of plants”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "greater water-storage capacity",
+              "p": "keep enough water at roof height and distribute it right across the rooftop"
+            },
+            {
+              "q": "ability to cultivate more plant types",
+              "p": "grow a greater variety of plants"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai ý C và D đều được đoạn C nêu rõ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C và D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nhắc mùa vụ trồng trọt dài hơn (“longer growing season”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài nói giữ và phân phối nước trên mái, không phải tiết kiệm nước hơn (“more economical use of water”)."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Không so sánh diện tích mặt bằng trồng trọt (“large surface area”)."
+            }
+          ]
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "choose-two",
+      "answer": "D",
+      "answerPair": [
+        10,
+        11
+      ],
+      "correctLetters": [
+        "C",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "Having a stronger roof also makes it easier to grow a greater variety of plants, since the soil can be deeper."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 10–11 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý D: trồng được nhiều loại cây hơn (“ability to cultivate more plant types”).",
+              "p": "Mái chịu lực tốt hơn giúp đất sâu hơn và “grow a greater variety of plants”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "ability to cultivate more plant types",
+              "p": "grow a greater variety of plants"
+            },
+            {
+              "q": "newer buildings",
+              "p": "Having a stronger roof ... the soil can be deeper"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý D; đi cùng C trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần “Các lựa chọn còn lại” ở câu 10."
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "choose-two",
+      "answer": "A",
+      "answerPair": [
+        12,
+        13
+      ],
+      "correctLetters": [
+        "A",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "There are also combinations of green roofs with solar panels, and 'brown roofs' which are wilder in nature and maximise biodiversity."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai mục tiêu của các biến thể mái xanh mới (đoạn E):"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý A: tạo môi trường sống cho nhiều loài (“provide habitats for a wide range of species”).",
+              "p": "“brown roofs … maximise biodiversity” — tối đa đa dạng sinh học, tức nhiều loài. “habitats for species” ≈ “maximise biodiversity”."
+            },
+            {
+              "q": "Ý D: phát điện từ nguồn bền vững (“generate power from a sustainable source”).",
+              "p": "“combinations of green roofs with solar panels” — kết hợp mái xanh với pin mặt trời. “sustainable source” ≈ “solar panels”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "provide habitats for a wide range of species",
+              "p": "maximise biodiversity"
+            },
+            {
+              "q": "generate power from a sustainable source",
+              "p": "combinations of green roofs with solar panels"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "A và D đều có bằng chứng rõ trong đoạn E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A và D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "“Blue roofs” giữ nước lâu hơn khi mưa nhiều — không phải trồng cây ở khí hậu ướt nhất (“wettest climates”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nhắc điều hòa nhiệt môi trường xung quanh (“regulate the temperature”)."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Thu nước phục vụ tòa nhà khác không được nêu (“collect water to supply other buildings”)."
+            }
+          ]
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "choose-two",
+      "answer": "D",
+      "answerPair": [
+        12,
+        13
+      ],
+      "correctLetters": [
+        "A",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "There are also combinations of green roofs with solar panels"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 12–13 — ý còn lại:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý D: phát điện từ nguồn bền vững (“generate power from a sustainable source”).",
+              "p": "Mái xanh kết hợp pin mặt trời — nguồn điện tái tạo."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "generate power from a sustainable source",
+              "p": "combinations of green roofs with solar panels"
+            },
+            {
+              "q": "new variations on the concept",
+              "p": "Improvements in the science and technology ... led to new variations"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý D; đi cùng A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần loại đáp án ở câu 12."
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Then, in the early 20th century, progressive thinkers revolted against the notion that inherent ability is destiny. Instead, educators such as John Dewey argued that every child's intelligence could be developed, given the right environment."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn đầu cho biết điều gì về quan niệm trí tuệ?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: khi nào quan niệm về bản chất trí tuệ bắt đầu thay đổi (“when ideas about the nature of intelligence began to shift”).",
+              "p": "Bài viết “in the early 20th century, progressive thinkers revolted against the notion that inherent ability is destiny” — đầu thế kỷ XX tư tưởng tiến bộ phản kháng quan niệm năng lực bẩm sinh là định mệnh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "when ideas about the nature of intelligence began to shift",
+              "p": "in the early 20th century, progressive thinkers revolted against the notion that inherent ability is destiny"
+            },
+            {
+              "q": "began to shift",
+              "p": "every child's intelligence could be developed, given the right environment"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn 1 nhấn mốc đầu thế kỷ XX là lúc quan niệm trí tuệ bắt đầu đổi — khớp B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nêu nơi khởi nguồn quan niệm trí tuệ bẩm sinh (“where the notion ... first began”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không mô tả phản ứng của giới khoa học (“how scientists have responded”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không giải thích lý do bác bỏ quan niệm cố định (“why thinkers turned away”)."
+            }
+          ]
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "A major focus of the growth mindset in schools is coaxing students away from seeing failure as an indication of their ability, and towards seeing it as a chance to improve that ability."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn hai mô tả trường học khuyến khích học sinh thế nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: tự tin vào tiềm năng thành công (“have confidence in their potential to succeed”).",
+              "p": "Trường treo poster động viên, khen tin vào bản thân (“believed their way to the top”) và đẩy học sinh coi thất bại là cơ hội cải thiện — tức tin rằng mình có thể tiến bộ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have confidence in their potential to succeed",
+              "p": "coaxing students ... towards seeing it as a chance to improve that ability"
+            },
+            {
+              "q": "encourage students",
+              "p": "motivational posters and hear speeches on the mindset of great sporting heroes who simply believed their way to the top"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Growth mindset ở trường hướng học sinh tin vào khả năng phát triển — khớp C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không bàn xác định tham vọng cá nhân (“identify their personal ambitions”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nhắc học sinh giúp nhau đạt mục tiêu (“help each other to realise their goals”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không tập trung vào điểm mạnh riêng (“where their particular strengths lie”)."
+            }
+          ]
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Meanwhile, the former took on only those tasks that would not risk their sense of worth. This group had inferred that success or failure is due to innate ability, and this 'fixed mindset' had led them to fear of failure and lack of effort."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Học sinh fixed mindset có xu hướng gì theo đoạn ba?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: sợ vượt quá giới hạn tự nhận thức (“afraid to push themselves beyond what they see as their limitations”).",
+              "p": "Nhóm fixed mindset “took on only those tasks that would not risk their sense of worth” và “fear of failure”. Họ tránh việc khó vì sợ thất bại làm tổn thương giá trị bản thân."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "afraid to push themselves beyond what they see as their limitations",
+              "p": "took on only those tasks that would not risk their sense of worth"
+            },
+            {
+              "q": "fixed mindset",
+              "p": "fear of failure and lack of effort"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Fixed mindset khiến học sinh chỉ chọn việc an toàn, tránh thử thách — khớp D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói họ ít cạnh tranh hơn (“tend to be less competitive”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài nhấn sợ thất bại và tránh rủi ro, không khẳng định tự trọng thấp nói chung (“low sense of self-esteem”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Họ thiếu nỗ lực vì sợ thất bại, không phải chỉ cố gắng khi được khích lệ liên tục (“only work hard if ... constant encouragement”)."
+            }
+          ]
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "their research designs have enough degrees of freedom that they could take their data to support just about any theory at all"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng phương pháp nghiên cứu growth mindset không đủ chặt chẽ. Đề viết: “The methodology ... was not strict enough”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The methodology behind the growth mindset studies was not strict enough.”",
+              "p": "Andrew Gelman: Gelman nói thiết kế nghiên cứu có quá nhiều “degrees of freedom” — tức phương pháp không đủ nghiêm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "methodology ... not strict enough",
+              "p": "research designs have enough degrees of freedom"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Andrew Gelman: Gelman nói thiết kế nghiên cứu có quá nhiều “degrees of freedom” — tức phương pháp không đủ nghiêm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "she argues that her work has been misunderstood and misapplied in a range of ways"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng ý tưởng growth mindset bị hiểu sai. Đề viết: “has been incorrectly interpreted”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The idea of the growth mindset has been incorrectly interpreted.”",
+              "p": "Carol Dweck: Dweck thừa nhận công trình bị “misunderstood and misapplied” — hiểu và áp dụng sai."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "incorrectly interpreted",
+              "p": "misunderstood and misapplied"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Carol Dweck: Dweck thừa nhận công trình bị “misunderstood and misapplied” — hiểu và áp dụng sai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Psychologist Alfred Binet, the developer of the first intelligence tests, was one of many 19th-century scientists who held that earlier view and sought to quantify cognitive ability"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng năng lực trí tuệ là đặc điểm bất biến. Đề viết: “unchangeable feature of each individual”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Intellectual ability is an unchangeable feature of each individual.”",
+              "p": "Alfred Binet: Binet thuộc phe coi trí tuệ bẩm sinh, cố định — “held that earlier view”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "unchangeable feature",
+              "p": "intelligence as something innate"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Alfred Binet: Binet thuộc phe coi trí tuệ bẩm sinh, cố định — “held that earlier view”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "Growth mindset supporters David Yeager and Gregory Walton claim that interventions should be delivered in a subtle way to maximise their effectiveness."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng nên quảng bá growth mindset mà học sinh không nhận ra. Đề viết: “without students being aware of it”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The growth mindset should be promoted without students being aware of it.”",
+              "p": "David Yeager and Gregory Walton: Yeager và Walton nói can thiệp nên “delivered in a subtle way” — tinh tế, không lộ rõ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "without students being aware of it",
+              "p": "delivered in a subtle way"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "David Yeager and Gregory Walton: Yeager và Walton nói can thiệp nên “delivered in a subtle way” — tinh tế, không lộ rõ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "She has also expressed concerns that her theories are being misappropriated in schools by being conflated with the self-esteem movement: 'For me the growth mindset is a tool for learning and improvement. It's not just a vehicle for making children feel good.'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng growth mindset không chỉ để nâng tinh thần học sinh. Đề viết: “not simply about boosting students' morale”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The growth mindset is not simply about boosting students' morale.”",
+              "p": "Carol Dweck: Dweck nhấn đây là công cụ học tập, “not just a vehicle for making children feel good”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not simply about boosting students' morale",
+              "p": "not just a vehicle for making children feel good"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Carol Dweck: Dweck nhấn đây là công cụ học tập, “not just a vehicle for making children feel good”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Professor of Psychology Timothy Bates, who has been trying to replicate Dweck's work, is finding that the results are repeatedly null. He notes that: 'People with a growth mindset don't cope any better with failure … Kids with the growth mindset aren't getting better grades, either before or after our intervention study.'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng nghiên cứu không thấy growth mindset ảnh hưởng thành tích học tập. Đề viết: “has no effect on academic achievement”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Research shows that the growth mindset has no effect on academic achievement.”",
+              "p": "Timothy Bates: Bates báo cáo kết quả “repeatedly null” và học sinh “aren't getting better grades”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "no effect on academic achievement",
+              "p": "results are repeatedly null ... aren't getting better grades"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Timothy Bates: Bates báo cáo kết quả “repeatedly null” và học sinh “aren't getting better grades”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Much of this criticism is not lost on Dweck, and she deserves great credit for responding to it and adapting her work accordingly."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu này có khớp quan điểm tác giả không: “Dweck has handled criticisms of her work in an admirable way.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Dweck has handled criticisms of her work in an admirable way.”",
+              "p": "Dweck xử lý phê bình một cách đáng khen (“deserves great credit for responding to it and adapting her work”)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "deserves great credit for responding to it",
+              "p": "handled criticisms ... in an admirable way"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Dweck xử lý phê bình một cách đáng khen (“deserves great credit for responding to it and adapting her work”)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "there is evidence to suggest that the actual effect of achievement on self-perception is stronger than the other way round"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu này có khớp quan điểm tác giả không: “Students' self-perception is a more effective driver of self-confidence than actual achievement is.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Students' self-perception is a more effective driver of self-confidence than actual achievement is.”",
+              "p": "Bài nói thành tích ảnh hưởng tự nhận thức mạnh hơn chiều ngược lại — trái với đề."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the actual effect of achievement on self-perception is stronger than the other way round",
+              "p": "self-perception is a more effective driver ... than actual achievement"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói thành tích ảnh hưởng tự nhận thức mạnh hơn chiều ngược lại"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Recent evidence would suggest that growth mindset interventions are not the elixir of student learning that its proponents claim it to be."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu này có khớp quan điểm tác giả không: “Recent evidence about growth mindset interventions has attracted unfair coverage in the media.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Recent evidence about growth mindset interventions has attracted unfair coverage in the media.”",
+              "p": "Bài bàn bằng chứng gần đây nhưng không nhắc đưa tin truyền thông hay “unfair coverage”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "attracted unfair coverage in the media",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài bàn bằng chứng gần đây nhưng không nhắc đưa tin truyền thông hay “unfair coverage”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Motivational posters and talks are often a waste of time, and might well give students a deluded notion of what success actually means."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu này có khớp quan điểm tác giả không: “Deliberate attempts to encourage students to strive for high achievement may have a negative effect.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Deliberate attempts to encourage students to strive for high achievement may have a negative effect.”",
+              "p": "Poster và bài nói động viên có thể vô ích hoặc tạo ảo tưởng sai về thành công — tức tác dụng tiêu cực."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "might well give students a deluded notion",
+              "p": "deliberate attempts to encourage students ... may have a negative effect"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Poster và bài nói động viên có thể vô ích hoặc tạo ảo tưởng sai về thành công"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "His book on the subject, The Origin of Continents and Oceans, went through four editions and was the focus of an international controversy in his lifetime and for some years after his death."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu này có khớp quan điểm tác giả không: “Wegener's ideas about continental drift were widely disputed while he was alive.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Wegener's ideas about continental drift were widely disputed while he was alive.”",
+              "p": "Sách của Wegener là “focus of an international controversy in his lifetime” — tranh cãi rộng khi ông còn sống."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "widely disputed while he was alive",
+              "p": "an international controversy in his lifetime"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sách của Wegener là “focus of an international controversy in his lifetime”"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Wegener's basic idea was that many mysteries about the Earth's history could be solved if one supposed that the continents moved laterally, rather than supposing that they remained fixed in place."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu này có khớp quan điểm tác giả không: “The idea that the continents remained fixed in place was defended in a number of respected scientific publications.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The idea that the continents remained fixed in place was defended in a number of respected scientific publications.”",
+              "p": "Bài đối chiếu hai giả thuyết nhưng không nêu các ấn phẩm khoa học bảo vệ quan điểm lục địa cố định."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "defended in a number of respected scientific publications",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài đối chiếu hai giả thuyết nhưng không nêu các ấn phẩm khoa học bảo vệ quan điểm lục địa cố định."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Wegener showed in great detail how such continental movements were plausible and how they worked, using evidence from a large number of sciences including geology, geophysics, paleontology, and climatology."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu này có khớp quan điểm tác giả không: “Wegener relied on a limited range of scientific fields to support his theory of continental drift.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Wegener relied on a limited range of scientific fields to support his theory of continental drift.”",
+              "p": "Bài liệt kê “a large number of sciences” — không hề giới hạn phạm vi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a limited range of scientific fields",
+              "p": "a large number of sciences including geology, geophysics, paleontology, and climatology"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài liệt kê “a large number of sciences”"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Plate tectonics is in many respects quite different from Wegener's proposal, in the same way that modern evolutionary theory is very different from the ideas Charles Darwin proposed in the 1850s about biological evolution."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu này có khớp quan điểm tác giả không: “The similarities between Wegener's theory of continental drift and modern-day plate tectonics are enormous.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The similarities between Wegener's theory of continental drift and modern-day plate tectonics are enormous.”",
+              "p": "Bài nói kiến tạo mảng “quite different from Wegener's proposal” — trái với “similarities … are enormous”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "similarities ... are enormous",
+              "p": "quite different from Wegener's proposal"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói kiến tạo mảng “quite different from Wegener's proposal”"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "I",
+      "evidence": {
+        "quoteEn": "When I started writing about Wegener's life and work, one of the most intriguing things about him for me was that, although he came up with a theory on continental drift, he was not a geologist."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn cụm phù hợp: One of the remarkable things about Wegener from a 31………………… is that although he proposed a theory of continental drift, he was not a geologist."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống cần cụm khớp ngữ cảnh.",
+              "p": "Góc nhìn người viết tiểu sử — “When I started writing about Wegener's life … for me”. → chọn “biographer's perspective” (I)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "from a biographer's perspective",
+              "p": "one of the most intriguing things about him for me"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“biographer's perspective” khớp paraphrase trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "I"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "He trained as an astronomer and pursued a career in atmospheric physics."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn cụm phù hợp: His 32………………… were limited to atmospheric physics."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống cần cụm khớp ngữ cảnh.",
+              "p": "Sự nghiệp / hướng chuyên môn — “trained as an astronomer and pursued a career in atmospheric physics”. → chọn “professional interests” (F)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "professional interests",
+              "p": "pursued a career in atmospheric physics"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“professional interests” khớp paraphrase trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "However, he was not an 'unknown'."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn cụm phù hợp: he was already a person of 33………………… ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống cần cụm khớp ngữ cảnh.",
+              "p": "Không phải vô danh — “not an 'unknown'” tức đã có chút danh tiếng. → chọn “modest fame” (A)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a person of modest fame",
+              "p": "he was not an 'unknown'"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“modest fame” khớp paraphrase trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "In 1906 he had set a world record (with his brother Kurt) for time aloft in a hot-air balloon: 52 hours."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn cụm phù hợp: Six years previously, there had been his 34………………… of 52 hours in a hot-air balloon"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống cần cụm khớp ngữ cảnh.",
+              "p": "Kỷ lục 52 giờ trên khinh khí cầu — “set a world record … 52 hours”. → chọn “record-breaking achievement” (C)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "record-breaking achievement",
+              "p": "set a world record ... for time aloft in a hot-air balloon: 52 hours"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“record-breaking achievement” khớp paraphrase trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "H",
+      "evidence": {
+        "quoteEn": "Between 1906 and 1908 he had taken part in a highly publicized and extremely dangerous expedition to the coast of northeast Greenland."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn cụm phù hợp: followed by his well-publicised but 35………………… of Greenland's coast."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống cần cụm khớp ngữ cảnh.",
+              "p": "Cuộc thám hiểm “extremely dangerous” — nguy hiểm. → chọn “hazardous exploration” (H)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "hazardous exploration",
+              "p": "extremely dangerous expedition to the coast of northeast Greenland"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“hazardous exploration” khớp paraphrase trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "He had also made a name for himself amongst a small circle of meteorologists and atmospheric physicists in Germany"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn cụm phù hợp: he had also come to the attention of a 36………………… of German scientists."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống cần cụm khớp ngữ cảnh.",
+              "p": "“small circle of meteorologists” — một nhóm nhỏ, kín. → chọn “select group” (E)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a select group of German scientists",
+              "p": "amongst a small circle of meteorologists and atmospheric physicists"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“select group” khớp paraphrase trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "My own feeling, however, is that the parts do not make as much sense on their own as do all of his activities taken together. In this respect I urge readers to try to experience Wegener's life as he lived it"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn thứ năm, Greene đang làm gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: explaining why it is desirable to read the whole book.",
+              "p": "Đoạn 5 Greene khuyên đọc cả cuộc đời Wegener vì từng phần riêng lẻ không đủ ý nghĩa — giải thích vì sao nên đọc trọn sách."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "explaining why it is desirable to read the whole book",
+              "p": "My own feeling, however, is that the parts do not make as much sense on their ow..."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn 5 Greene khuyên đọc cả cuộc đời Wegener vì từng phần riêng lẻ không đủ ý nghĩa"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không mô tả động lực viết sách (“what motivated him to write”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không giải thích vì sao Wegener theo nhiều nghề (“why Wegener pursued so many different careers”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không chỉ ra khía cạnh đời tư khiến tác giả hứng thú nhất (“what aspects ... interested him most”)."
+            }
+          ]
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "He was not active (with a few exceptions) in scientific societies, and did not seek to find influence or advance his ideas through professional contacts and politics, spending most of his time at home in his study reading and writing, or in the field collecting observations."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn thứ sáu nói gì về Wegener?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: He was not a particularly ambitious person..",
+              "p": "Wegener không tham gia hội khoa học, không mưu cầu ảnh hưởng — không đặc biệt tham vọng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "He was not a particularly ambitious person.",
+              "p": "He was not active (with a few exceptions) in scientific societies, and did not s..."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Wegener không tham gia hội khoa học, không mưu cầu ảnh hưởng"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Ông không giữ nhật ký hay ghi chép quan sát đầy đủ (“kept a record of all his scientific observations”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nói ông bác bỏ thông lệ khoa học thời đó (“did not adopt many of the scientific practices”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Ông ít giao lưu chuyên môn, không thích bàn phát hiện mới (“enjoyed discussing new discoveries”)."
+            }
+          ]
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Some famous scientists, such as Newton, Darwin, and Einstein, left mountains of written material behind ... The more such material a scientist leaves behind, the better chance a biographer has of forming an accurate picture"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Greene nói gì về một số nhà khoa học nổi tiếng khác?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: They are easier subjects to write about than Wegener..",
+              "p": "Càng nhiều tài liệu để lại thì viết tiểu sử càng dễ — Wegener ít tài liệu hơn các nhà khoa học nổi tiếng khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "They are easier subjects to write about than Wegener.",
+              "p": "Some famous scientists, such as Newton, Darwin, and Einstein, left mountains of ..."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Càng nhiều tài liệu để lại thì viết tiểu sử càng dễ"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không so tác phẩm xuất bản của họ với Wegener (“greater impact than Wegener's”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không bàn mức độ nghi ngờ ý tưởng khoa học (“fewer doubts about their scientific ideas”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không so mức độ gây tranh cãi (“more controversial than Wegener's”)."
+            }
+          ]
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "I am firmly of the opinion that most of us, Wegener included, are not in any real sense the authors of our own lives. We plan, think, and act, often with apparent freedom, but most of the time our lives 'happen to us'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ý chính của Greene ở đoạn cuối là gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: People have little control over many aspects of their lives..",
+              "p": "Greene cho rằng đa số con người, kể cả Wegener, không thực sự làm chủ cuộc đời — cuộc sống “happen to us”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "People have little control over many aspects of their lives.",
+              "p": "I am firmly of the opinion that most of us, Wegener included, are not in any rea..."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Greene cho rằng đa số con người, kể cả Wegener, không thực sự làm chủ cuộc đời"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nhấn ý định tốt là chưa đủ (“not enough ... to have good intentions”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không khuyên lập kế hoạch cẩn thận để thành công (“plan carefully if they want to succeed”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không bàn đảm bảo quyền tự do hành động (“ensure they have the freedom to act”)."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
