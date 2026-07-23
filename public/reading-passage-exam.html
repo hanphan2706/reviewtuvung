@@ -703,12 +703,15 @@ function loadExamContent(){
     return Promise.resolve();
   }
   if(window.__EXAM_BOOT__){
-    if(window.__EXAM_BOOT__.back){
-      try{
-        var u=new URL(location.href);
-        if(!u.searchParams.get('back')){u.searchParams.set('back',window.__EXAM_BOOT__.back);history.replaceState(null,'',u.toString());}
-      }catch(e){}
-    }
+    // Keep back href in boot only — do not mirror it into ?back= (messy encoded URLs).
+    try{
+      var u=new URL(location.href);
+      if(u.searchParams.has('back')){
+        u.searchParams.delete('back');
+        var clean=u.pathname+(u.searchParams.toString()?'?'+u.searchParams.toString():'')+u.hash;
+        history.replaceState(null,'',clean);
+      }
+    }catch(e){}
     applyExamPayload(window.__EXAM_BOOT__);
     return Promise.resolve();
   }
