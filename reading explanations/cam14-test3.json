@@ -1,0 +1,1725 @@
+{
+  "pilotId": "cam14-test3",
+  "schemaVersion": 4,
+  "note": "Cam 14 R T3 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19/15; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The concept of intelligence",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Saving bugs to find new drugs",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "The power of play",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "Job interviewers will make hiring decisions on the basis of their implicit theories of intelligence. People will decide who to be friends with on the basis of such theories."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói giả định của người thường (không phải nhà khoa học) về trí thông minh ảnh hưởng thế nào tới cách họ đối xử với người khác. Đề viết: “how non-scientists' assumptions about intelligence influence their behavior towards others”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói giả định của người thường về trí thông minh chi phối cách họ cư xử với người khác.",
+              "p": "Đoạn B: nhà tuyển dụng (“job interviewers”) quyết định tuyển ai dựa vào implicit theories, người ta cũng chọn bạn (“decide who to be friends with”) theo cách nghĩ ngầm này — đều là ví dụ người thường hành xử theo giả định về trí thông minh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "non-scientists' assumptions about intelligence",
+              "p": "parents' implicit theories, job interviewers' implicit theories"
+            },
+            {
+              "q": "influence their behavior towards others",
+              "p": "will make hiring decisions ... decide who to be friends with"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "no one knows for certain what it actually is"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới việc chưa ai biết rõ ràng trí thông minh thực chất là gì. Đề viết: “a reference to lack of clarity over the definition of intelligence”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về sự thiếu rõ ràng trong định nghĩa trí thông minh.",
+              "p": "Đoạn A: “everyone knows what intelligence is... no one does”, rồi khẳng định “no one knows for certain what it actually is” — không ai biết chắc trí thông minh thực sự là gì."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lack of clarity over the definition of intelligence",
+              "p": "no one knows for certain what it actually is"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "If an investigation of implicit theories reveals little correspondence between the extant implicit and explicit theories, the implicit theories may be wrong."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói lý thuyết ngầm (implicit) và lý thuyết công khai (explicit) của một nhà nghiên cứu có thể rất khác nhau. Đề viết: “the point that a researcher's implicit and explicit theories may be very different”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn cho thấy lý thuyết ngầm và lý thuyết công khai của nhà nghiên cứu có thể khác xa nhau.",
+              "p": "Đoạn D: nếu implicit theories “reveals little correspondence” với explicit theories — tức hai loại lý thuyết có thể chẳng khớp nhau, rất khác biệt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a researcher's implicit and explicit theories may be very different",
+              "p": "little correspondence between the extant implicit and explicit theories"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "parents’ implicit theories of their children’s language development will determine at what ages they will be willing to make various corrections in their children’s speech."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phát triển ngôn ngữ chậm ở trẻ có khiến phụ huynh thất vọng không — bài có nói vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Slow language development in children is likely to prove disappointing to their parents” — phát triển ngôn ngữ chậm dễ khiến phụ huynh thất vọng.",
+              "p": "Bài chỉ nói implicit theories của phụ huynh về phát triển ngôn ngữ quyết định họ sửa lời con ở độ tuổi nào — không nhắc gì tới cảm giác thất vọng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "likely to prove disappointing to their parents",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "parents' expectations about language development",
+              "p": "parents' implicit theories of their children's language development"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ bàn việc implicit theories ảnh hưởng thời điểm sửa lời nói của trẻ, không đề cập cảm xúc thất vọng của phụ huynh."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "expectations for children who participate in Western-style schooling are almost certain to be different from those for children who do not participate in such schooling."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kỳ vọng của mọi người về những gì trẻ cần đạt được từ giáo dục có giống nhau ở khắp nơi không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “People's expectations of what children should gain from education are universal” — kỳ vọng về giáo dục là phổ quát, giống nhau khắp nơi.",
+              "p": "Bài khẳng định ngược lại: kỳ vọng “differ” theo văn hóa, và trẻ học kiểu phương Tây sẽ có kỳ vọng khác trẻ không học kiểu đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "are universal",
+              "p": "differ ... is in part a function of culture"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ kỳ vọng thay đổi theo văn hóa — trái ngược với “universal”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Until scholars are able to discuss their implicit theories and thus their assumptions, they are likely to miss the point of what others are saying when discussing their explicit theories and their data."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các học giả có thể bàn luận lý thuyết mà vẫn chưa thực sự hiểu hết ý nhau không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Scholars may discuss theories without fully understanding each other” — học giả có thể thảo luận lý thuyết mà không hiểu trọn ý nhau.",
+              "p": "Bài viết: nếu chưa bàn tới implicit theories, họ “likely to miss the point of what others are saying” — dễ không nắm được ý người khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "without fully understanding each other",
+              "p": "likely to miss the point of what others are saying"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài xác nhận nguy cơ hiểu sai ý nhau khi thảo luận lý thuyết — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "The Jeffersonian view is that people should have equal opportunities, but they do not necessarily avail themselves equally of these opportunities and are not necessarily equally rewarded for their accomplishments."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 7: “It is desirable for the same possibilities to be open to everyone.” — khớp với thuyết nào trong ba thuyết Hamiltonian / Jeffersonian / Jacksonian?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: mọi người nên có cùng cơ hội như nhau.",
+              "p": "Thuyết Jeffersonian (B): “people should have equal opportunities” — mọi người nên có cơ hội bình đẳng, khớp trực tiếp với đề."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the same possibilities to be open to everyone",
+              "p": "people should have equal opportunities"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“equal opportunities” chính là ý “same possibilities … open to everyone” — thuộc thuyết Jeffersonian."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "In this view, we do not need or want any institutions that might lead to favoring one group over another."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 8: “No section of society should have preferential treatment at the expense of another.” — khớp với thuyết nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: không nhóm nào trong xã hội được ưu ái hơn nhóm khác.",
+              "p": "Thuyết Jacksonian (C): không cần thể chế nào “favoring one group over another” — không thiên vị nhóm này hơn nhóm kia."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "no section of society should have preferential treatment",
+              "p": "we do not need or want any institutions that might lead to favoring one group over another"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ý “không thiên vị nhóm nào” khớp đúng thuyết Jacksonian."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "People are rewarded for what they accomplish, if given equal opportunity. Low achievers are not rewarded to the same extent as high achievers."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 9: “People should only gain benefits on the basis of what they actually achieve.” — khớp với thuyết nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: lợi ích chỉ nên đến từ những gì người ta thực sự đạt được.",
+              "p": "Thuyết Jeffersonian (B): “People are rewarded for what they accomplish” — được thưởng đúng theo thành tựu thực tế, người đạt ít thì thưởng ít hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "only gain benefits on the basis of what they actually achieve",
+              "p": "rewarded for what they accomplish"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phần thưởng gắn chặt với thành tựu thực — đúng ý thuyết Jeffersonian."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "people are born with different levels of intelligence"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 10: “Variation in intelligence begins at birth.” — khớp với thuyết nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: sự khác biệt trí thông minh có từ lúc sinh ra.",
+              "p": "Thuyết Hamiltonian (A): “people are born with different levels of intelligence” — con người sinh ra đã có mức trí thông minh khác nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "variation in intelligence begins at birth",
+              "p": "people are born with different levels of intelligence"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp trực tiếp với câu mở đầu mô tả thuyết Hamiltonian."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "those who are less intelligent need the good offices of the more intelligent to keep them in line"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 11: “The more intelligent people should be in positions of power.” — khớp với thuyết nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: người thông minh hơn nên nắm quyền lực.",
+              "p": "Thuyết Hamiltonian (A): người kém thông minh cần “the good offices of the more intelligent to keep them in line” — cần người thông minh hơn (làm quan chức, philosopher-kings) quản lý, dẫn dắt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "should be in positions of power",
+              "p": "government officials or ... philosopher-kings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Người thông minh hơn được xem là người nên cầm quyền — đúng thuyết Hamiltonian."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "all of which can be learned"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 12: “Everyone can develop the same abilities.” — khớp với thuyết nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: ai cũng có thể phát triển cùng những năng lực như nhau.",
+              "p": "Thuyết Jacksonian (C): con người có thể hoán đổi vị trí cho nhau (“intersubstitutable”), trừ kỹ năng chuyên biệt, mà kỹ năng đó “all of which can be learned” — ai cũng học được."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "everyone can develop the same abilities",
+              "p": "specialized skills, all of which can be learned"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Kỹ năng nào cũng học được — khớp niềm tin bình đẳng năng lực của thuyết Jacksonian."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Left to themselves, the unintelligent would create, as they always have created, a kind of chaos."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 13: “People of low intelligence are likely to lead uncontrolled lives.” — khớp với thuyết nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: người có trí thông minh thấp dễ sống buông thả, mất kiểm soát.",
+              "p": "Thuyết Hamiltonian (A): nếu để tự lo (“left to themselves”), người kém thông minh sẽ tạo ra “a kind of chaos” — một dạng hỗn loạn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lead uncontrolled lives",
+              "p": "left to themselves ... would create ... a kind of chaos"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“chaos” khi không ai quản lý khớp với ý “uncontrolled lives” — thuộc thuyết Hamiltonian."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "This realization, together with several looming health crises, such as antibiotic resistance, has put bioprospecting – the search for useful compounds in nature – firmly back on the map."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới các yếu tố khiến người ta quan tâm trở lại tới hợp chất y học tự nhiên. Đề viết: “mention of factors driving a renewed interest in natural medicinal compounds”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nêu các yếu tố khiến quan tâm trở lại với hợp chất tự nhiên.",
+              "p": "Đoạn C: việc mining genome cộng với khủng hoảng y tế như “antibiotic resistance” đã đưa bioprospecting “firmly back on the map” — quay lại được chú ý."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "factors driving a renewed interest in natural medicinal compounds",
+              "p": "looming health crises, such as antibiotic resistance, has put bioprospecting ... back on the map"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "H",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "it is now possible to snip out the stretches of the insect’s DNA that carry the codes for the interesting compounds and insert them into cell lines that allow larger quantities to be produced."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói công nghệ gần đây đã giúp việc nghiên cứu côn trùng dễ dàng hơn. Đề viết: “how recent technological advances have made insect research easier”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn cho thấy công nghệ mới giúp nghiên cứu côn trùng thuận lợi hơn.",
+              "p": "Đoạn H: nay “it is now possible to snip out” đoạn DNA mang mã hợp chất và “insert them into cell lines” để sản xuất số lượng lớn — công nghệ giải quyết khó khăn về số lượng mẫu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "recent technological advances have made insect research easier",
+              "p": "it is now possible to snip out ... insert them into cell lines that allow larger quantities to be produced"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "such as the capuchin monkeys who rub themselves with toxin-oozing millipedes to deter mosquitoes, or the chimpanzees who use noxious forest plants to rid themselves of intestinal parasites"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu ví dụ động vật dùng dược liệu tự nhiên. Đề viết: “examples of animals which use medicinal substances from nature”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nêu ví dụ động vật tận dụng dược chất tự nhiên.",
+              "p": "Đoạn A: khỉ capuchin bôi độc từ cuốn chiếu để đuổi muỗi, tinh tinh ăn cây rừng có độc để trị giun sán — hai ví dụ cụ thể."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "animals which use medicinal substances from nature",
+              "p": "capuchin monkeys who rub themselves with toxin-oozing millipedes ... chimpanzees who use noxious forest plants"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "Firstly, there are so many insects that, without some manner of targeted approach, investigating this huge variety of species is a daunting task."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu lý do việc dùng côn trùng trong nghiên cứu thuốc gặp khó khăn. Đề viết: “reasons why it is challenging to use insects in drug research”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn liệt kê lý do khiến nghiên cứu thuốc từ côn trùng khó khăn.",
+              "p": "Đoạn F liệt kê ba lý do, mở đầu bằng “there are so many insects that ... investigating this huge variety of species is a daunting task” — quá nhiều loài khiến việc nghiên cứu nặng nề."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reasons why it is challenging to use insects in drug research",
+              "p": "so many insects ... investigating this huge variety of species is a daunting task"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "I",
+      "evidence": {
+        "paragraphLetter": "I",
+        "quoteEn": "With every bit of wilderness that disappears, we deprive ourselves of potential medicines."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói việc nghiên cứu thuốc có thể mang lại lợi ích cho tự nhiên hoang dã. Đề viết: “reference to how interest in drug research may benefit wildlife”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn liên hệ nghiên cứu thuốc với lợi ích cho thiên nhiên hoang dã.",
+              "p": "Đoạn I: tác giả nói mỗi mảng hoang dã mất đi là ta “deprive ourselves of potential medicines” — ngụ ý bảo tồn hoang dã cũng chính là bảo vệ nguồn thuốc tiềm năng, động lực chính của ông là “conservation”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how interest in drug research may benefit wildlife",
+              "p": "my main motivation for looking at insects in this way is conservation"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "I"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "The main cause of this shift is that although there are plenty of promising chemical compounds in nature, finding them is far from easy."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu lý do thuốc từ tự nhiên từng bị lãng quên một thời gian. Đề viết: “a reason why nature-based medicines fell out of favour for a period”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn giải thích vì sao thuốc gốc tự nhiên từng mất vị thế.",
+              "p": "Đoạn B: khoa học dược chuyển hướng sang phòng thí nghiệm vì “finding them is far from easy” — tìm hợp chất tự nhiên quá khó, nên người ta quay sang thiết kế hóa chất trong lab."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "nature-based medicines fell out of favour for a period",
+              "p": "modern pharmaceutical science moved its focus away from nature and into the laboratory"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "For example, alloferon, an antimicrobial compound produced by blow fly larvae, is used as an antiviral and antitumor agent in South Korea and Russia."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu ví dụ một loại thuốc từ côn trùng đang được sử dụng hiện nay. Đề viết: “an example of an insect-derived medicine in use at the moment”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn có ví dụ thuốc từ côn trùng đang thực sự được dùng.",
+              "p": "Đoạn E: alloferon từ ấu trùng ruồi nhặng “is used as an antiviral and antitumor agent in South Korea and Russia” — đang dùng thật tại hai nước."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "in use at the moment",
+              "p": "is used as an antiviral and antitumor agent in South Korea and Russia"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "B",
+      "answerPair": [
+        21,
+        22
+      ],
+      "correctLetters": [
+        "B",
+        "C"
+      ],
+      "evidence": {
+        "quoteEn": "they have a bewildering array of interactions with other organisms, something which has driven the evolution of an enormous range of very interesting compounds for defensive and offensive purposes."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai lý do khiến côn trùng thú vị đối với nghiên cứu thuốc:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý B: côn trùng đã phát triển nhiều loại hợp chất để tự bảo vệ (“the variety of substances insects have developed to protect themselves”).",
+              "p": "Bài viết: quan hệ tương tác đa dạng với sinh vật khác đã “driven the evolution of an enormous range of very interesting compounds for defensive and offensive purposes” — vô số hợp chất phòng vệ/tấn công."
+            },
+            {
+              "q": "Ý C: tiềm năng khai thác mã di truyền của côn trùng (“the potential to extract and make use of insects' genetic codes”).",
+              "p": "Bài viết ở đoạn C: “With the ability to mine genomes for useful compounds, it is now evident that we have barely scratched the surface of nature's molecular diversity” — khả năng khai thác gen mở ra tiềm năng lớn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the variety of substances insects have developed to protect themselves",
+              "p": "an enormous range of very interesting compounds for defensive and offensive purposes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả B và C đều được bài nêu rõ là điểm khiến côn trùng đáng chú ý."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B và C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Số lượng côn trùng khổng lồ được bài mô tả là trở ngại (“a daunting task”) chứ không phải điểm khiến chúng thú vị."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài nhấn mạnh sự đa dạng, khác biệt giữa các loài côn trùng — không nói chúng giống nhau (“similarities between different species”)."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Bài nói ngược lại: côn trùng nhỏ và tuyến tiết còn nhỏ hơn khiến việc lấy mẫu khó khăn — không phải “manageable size”."
+            }
+          ]
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "C",
+      "answerPair": [
+        21,
+        22
+      ],
+      "correctLetters": [
+        "B",
+        "C"
+      ],
+      "evidence": {
+        "quoteEn": "With the ability to mine genomes for useful compounds, it is now evident that we have barely scratched the surface of nature’s molecular diversity."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 21–22 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý C: tiềm năng khai thác mã di truyền của côn trùng.",
+              "p": "Bài viết: “ability to mine genomes for useful compounds” — khả năng khai thác bộ gen để tìm hợp chất hữu ích, cho thấy còn rất nhiều tiềm năng chưa khai phá."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the potential to extract and make use of insects' genetic codes",
+              "p": "the ability to mine genomes for useful compounds"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý C; đi cùng B trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần “Các lựa chọn còn lại” ở câu 21."
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "ecology",
+      "evidence": {
+        "quoteEn": "we use our knowledge of ecology as a guide to target our efforts"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong tóm tắt: Piper và đồng nghiệp dùng kiến thức chuyên môn nào để định hướng nghiên cứu côn trùng?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “using their expertise in ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “using their expertise in ______ when undertaking bioprospecting with insects”.",
+              "p": "Bài viết: “we use our knowledge of ecology as a guide to target our efforts” — dùng kiến thức sinh thái học (ecology) để định hướng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "their expertise in ______",
+              "p": "our knowledge of ecology"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là ecology."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ecology"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "prey",
+      "evidence": {
+        "quoteEn": "The creatures that particularly interest us are the many insects that secrete powerful poison for subduing prey and keeping it fresh for future consumption."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Họ đặc biệt quan tâm tới hợp chất côn trùng dùng để khống chế và giữ tươi cái gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “overpower and preserve their ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the compounds that insects produce to overpower and preserve their ______”.",
+              "p": "Bài viết: côn trùng tiết độc để “subduing prey and keeping it fresh for future consumption” — khống chế con mồi (prey) và giữ nó tươi để dùng sau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "overpower and preserve their ______",
+              "p": "subduing prey and keeping it fresh"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là prey."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "prey"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "habitats",
+      "evidence": {
+        "quoteEn": "There are even more insects that are masters of exploiting filthy habitats, such as faeces and carcasses, where they are regularly challenged by thousands of micro-organisms."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Họ cũng quan tâm tới hợp chất giúp côn trùng chống lại vi khuẩn/nấm gây bệnh tìm thấy ở đâu?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “found in their ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “pathogenic bacteria and fungi found in their ______”.",
+              "p": "Bài viết: côn trùng khai thác “filthy habitats, such as faeces and carcasses” — nơi ở bẩn như phân và xác chết, nơi đầy vi khuẩn/nấm gây bệnh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "found in their ______",
+              "p": "exploiting filthy habitats, such as faeces and carcasses"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là habitats."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "habitats"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "antibiotics",
+      "evidence": {
+        "quoteEn": "suggesting that there is certainly potential to find many compounds that can serve as or inspire new antibiotics."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Piper hy vọng các hợp chất này sẽ hữu ích để phát triển loại thuốc nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “drugs such as ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “useful in the development of drugs such as ______”.",
+              "p": "Bài viết: có tiềm năng tìm ra hợp chất “can serve as or inspire new antibiotics” — dùng làm hoặc gợi ý cho kháng sinh mới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "drugs such as ______",
+              "p": "serve as or inspire new antibiotics"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là antibiotics."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "antibiotics"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Definitions range from discrete descriptions of various types of play such as physical, construction, language, or symbolic play (Miller & Almon 2009)"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 27: “Play can be divided into a number of separate categories.” — nhà nghiên cứu nào nói vậy?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: chơi có thể chia thành nhiều loại riêng biệt.",
+              "p": "Miller & Almon (B) được trích dẫn khi bài liệt kê “various types of play such as physical, construction, language, or symbolic play” — chia chơi thành nhiều loại cụ thể."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "play can be divided into a number of separate categories",
+              "p": "discrete descriptions of various types of play such as physical, construction, language, or symbolic play"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cách phân loại chơi thành nhiều dạng riêng gắn với trích dẫn Miller & Almon."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "The adult’s role in play varies as a function of their educational goals and the child’s developmental level (Hirsch-Pasek et al. 2009)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 28: “Adults' intended goals affect how they play with children.” — nhà nghiên cứu nào nói vậy?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: mục tiêu người lớn đặt ra ảnh hưởng tới cách họ chơi với trẻ.",
+              "p": "Hirsch-Pasek et al. (G): “The adult's role in play varies as a function of their educational goals” — vai trò người lớn thay đổi theo chính mục tiêu giáo dục họ đặt ra."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "adults' intended goals affect how they play with children",
+              "p": "the adult's role in play varies as a function of their educational goals"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp trực tiếp với trích dẫn Hirsch-Pasek et al."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "Researcher Joan Goodman (1994) suggested that hybrid forms of work and play are not a detriment to learning; rather, they can provide optimal contexts for learning."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 29: “Combining work with play may be the best way for children to learn.” — nhà nghiên cứu nào nói vậy?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: kết hợp việc học nghiêm túc (work) với chơi có thể là cách học tốt nhất.",
+              "p": "Joan Goodman (F): dạng lai giữa work và play “can provide optimal contexts for learning” — tạo bối cảnh học tối ưu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the best way for children to learn",
+              "p": "provide optimal contexts for learning"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chính Joan Goodman là người đưa ra nhận định này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "other researchers have suggested that process orientation and a lack of obvious functional purpose may be the most important aspects of play (e.g. Pellegrini 2009)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 30: “Certain elements of play are more significant than others.” — nhà nghiên cứu nào nói vậy?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: một số yếu tố của việc chơi quan trọng hơn các yếu tố khác.",
+              "p": "Pellegrini (E): cho rằng “process orientation and a lack of obvious functional purpose may be the most important aspects of play” — một vài khía cạnh của chơi được xem là quan trọng nhất, hơn các khía cạnh khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "certain elements of play are more significant than others",
+              "p": "may be the most important aspects of play"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Pellegrini là người nhấn mạnh có khía cạnh của chơi quan trọng hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Often, play is defined along a continuum as more or less playful using the following set of behavioral and dispositional criteria (e.g. Rubin et al. 1983)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 31: “Activities can be classified on a scale of playfulness.” — nhà nghiên cứu nào nói vậy?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: hoạt động có thể xếp loại theo mức độ “có tính chơi” trên một thang đo.",
+              "p": "Rubin et al. (C): chơi được định nghĩa “along a continuum as more or less playful” — trên một dải liên tục từ ít đến nhiều tính chơi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "classified on a scale of playfulness",
+              "p": "defined along a continuum as more or less playful"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cách xếp loại theo thang liên tục gắn với Rubin et al."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "The drive to play is so intense that children will do so in any circumstances, for instance when they have no real toys, or when parents do not actively encourage the behavior."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trẻ có cần đồ chơi mới chơi được không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Children need toys in order to play” — trẻ cần có đồ chơi mới chơi được.",
+              "p": "Bài viết: trẻ vẫn chơi “in any circumstances, for instance when they have no real toys” — kể cả khi không có đồ chơi thật."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "children need toys in order to play",
+              "p": "will do so in any circumstances ... when they have no real toys"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định trẻ vẫn chơi dù không có đồ chơi — phản bác đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Our society has created a false dichotomy between play and learning"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Coi chơi và học là hai việc tách biệt có phải là sai lầm không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “It is a mistake to treat play and learning as separate types of activities” — tách chơi và học là sai lầm.",
+              "p": "Bài viết: xã hội đã tạo ra “a false dichotomy between play and learning” — một sự phân đôi sai lầm giữa chơi và học."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a mistake to treat play and learning as separate",
+              "p": "a false dichotomy between play and learning"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“false dichotomy” chính là cách bài gọi việc tách biệt này là sai lầm — khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "these playful activities benefit the development of the whole child across social, cognitive, physical, and emotional domains."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chơi có giúp trẻ phát triển năng khiếu nghệ thuật không — bài có nói vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Play helps children to develop their artistic talents” — chơi giúp trẻ phát triển năng khiếu nghệ thuật.",
+              "p": "Bài chỉ liệt kê lợi ích của chơi ở các mảng “social, cognitive, physical, and emotional domains” — không có mảng “artistic” (nghệ thuật) nào được nhắc tới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "develop their artistic talents",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không đề cập tới năng khiếu nghệ thuật ở bất kỳ đâu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Full consensus on a formal definition of play continues to elude the researchers and theorists who study it."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các nhà nghiên cứu đã thống nhất được một định nghĩa chung về chơi chưa:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Researchers have agreed on a definition of play” — các nhà nghiên cứu đã đồng thuận về định nghĩa chơi.",
+              "p": "Bài viết: sự đồng thuận trọn vẹn (“full consensus”) về định nghĩa chơi “continues to elude” các nhà nghiên cứu — tức vẫn chưa đạt được."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have agreed on a definition of play",
+              "p": "full consensus ... continues to elude the researchers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định chưa có sự đồng thuận — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Unlike play, work is typically not viewed as enjoyable and it is extrinsically motivated (i.e. it is goal oriented)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chơi và làm việc có khác nhau ở việc có mục tiêu (target) hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Work and play differ in terms of whether or not they have a target” — chơi và làm việc khác nhau ở chỗ có mục tiêu hay không.",
+              "p": "Bài viết: work “is extrinsically motivated (i.e. it is goal oriented)” — có mục tiêu bên ngoài rõ ràng; còn play trước đó được định nghĩa là “no extrinsically motivated function or goal” — không có mục tiêu như vậy."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "differ in terms of whether or not they have a target",
+              "p": "extrinsically motivated (i.e. it is goal oriented)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Work có mục tiêu (goal-oriented), play thì không — đúng như đề nêu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "encouraging",
+      "evidence": {
+        "quoteEn": "commenting on children’s discoveries, or encouraging further exploration or new facets to the child’s activity."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người lớn có thể phát triển trò chơi bằng cách nào để trẻ khám phá thêm khía cạnh mới?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “by ______ the child to investigate” cần một động từ dạng V-ing."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “by ______ the child to investigate different aspects of their game”.",
+              "p": "Bài viết: người lớn có thể “commenting on children's discoveries, or encouraging further exploration or new facets to the child's activity” — khuyến khích trẻ khám phá thêm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "by ______ the child to investigate",
+              "p": "encouraging further exploration or new facets"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là encouraging."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "encouraging"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "desire",
+      "evidence": {
+        "quoteEn": "Play should stem from the child’s own desire."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dù hoạt động chơi có phần cấu trúc, nó vẫn phải dựa trên điều gì của trẻ?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the child's ______ to play” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “it should still be based on the child's ______ to play”.",
+              "p": "Bài viết: “Play should stem from the child's own desire” — trò chơi phải bắt nguồn từ chính mong muốn (desire) của trẻ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the child's ______ to play",
+              "p": "stem from the child's own desire"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là desire."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "desire"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "autonomy",
+      "evidence": {
+        "quoteEn": "Intrinsically motivated free play provides the child with true autonomy"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chơi tự do, không có sự can thiệp của người lớn, mang lại điều gì thật sự cho trẻ?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “gives children real ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “play without the intervention of adults gives children real ______”.",
+              "p": "Bài viết: “Intrinsically motivated free play provides the child with true autonomy” — chơi tự do mang lại cho trẻ sự tự chủ thực sự."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "gives children real ______",
+              "p": "provides the child with true autonomy"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là autonomy."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "autonomy"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "targeted",
+      "evidence": {
+        "quoteEn": "guided play is an avenue through which parents and educators can provide more targeted learning experiences."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi có sự tham gia của người lớn, việc chơi có thể được hướng tới các mục tiêu cụ thể như thế nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “play can be ______ at particular goals” cần một tính từ/quá khứ phân từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “with adults, play can be ______ at particular goals”.",
+              "p": "Bài viết: guided play giúp phụ huynh/nhà giáo dục cung cấp “more targeted learning experiences” — trải nghiệm học tập nhắm (targeted) đúng mục tiêu hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "play can be ______ at particular goals",
+              "p": "more targeted learning experiences"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là targeted."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "targeted"
+        }
+      ]
+    }
+  }
+}

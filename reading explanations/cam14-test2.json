@@ -1,0 +1,1738 @@
+{
+  "pilotId": "cam14-test2",
+  "schemaVersion": 4,
+  "note": "Cam 14 R T2 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Alexander Henderson (1831-1913)",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Back to the future of skyscraper design",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Why companies should welcome disorder",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Alexander spent much of his childhood in the area, playing on the beach near Eyemouth or fishing in the streams nearby. … Henderson returned to Press at weekends."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói Henderson “hiếm khi” (rarely) ghé khu Press Estate hồi nhỏ — bài có xác nhận vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo Henderson “rarely visited” (hiếm khi ghé) khu đất Press khi còn nhỏ",
+              "p": "Bài viết “spent much of his childhood in the area” (dành phần lớn tuổi thơ ở đó) và “returned to Press at weekends” (cuối tuần vẫn về Press) — ngược hẳn với “hiếm khi”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "rarely visited the area ... when he was younger",
+              "p": "spent much of his childhood in the area"
+            },
+            {
+              "q": "the area around Press estate",
+              "p": "playing on the beach near Eyemouth or fishing in the streams nearby"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định ông dành nhiều thời gian ở đó và cuối tuần vẫn quay lại — phản bác ý “hiếm khi”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Although he never liked the prospect of a business career, he stayed with it to please his family."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói Henderson theo nghề kinh doanh vì đó là điều gia đình muốn — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo ông theo nghiệp kinh doanh “because it was what his family wanted” (vì gia đình muốn)",
+              "p": "Bài viết “he never liked ... a business career, he stayed with it to please his family” — không thích nhưng vẫn theo để làm gia đình vui lòng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "pursued a business career because it was what his family wanted",
+              "p": "stayed with it to please his family"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ông không thích nhưng vẫn tiếp tục nghề kế toán để chiều lòng gia đình — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "they cooperated on experiments with magnesium flares as a source of artificial light in 1865."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói hai ông bất ngờ (surprised) trước kết quả thử nghiệm năm 1865 — bài có nhắc cảm xúc này không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“were surprised by the results” (bất ngờ vì kết quả)",
+              "p": "Bài chỉ nói họ “cooperated on experiments with magnesium flares” — hợp tác thử nghiệm, không nói kết quả ra sao hay ai bất ngờ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "surprised by the results of their 1865 experiment",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "their 1865 experiment",
+              "p": "experiments with magnesium flares as a source of artificial light in 1865"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ xác nhận có thử nghiệm, không đề cập kết quả hay phản ứng của hai người."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "their styles of photography were quite different. While Notman's landscapes were noted for their bold realism, Henderson for the first 20 years of his career produced romantic images, showing the strong influence of the British landscape tradition."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói phong cảnh thời đầu của Henderson và Notman có nhiều điểm giống nhau — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“many similarities between Henderson's early landscapes and those of Notman”",
+              "p": "Bài khẳng định “their styles of photography were quite different” — phong cách khác hẳn nhau, chứ không giống."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "many similarities",
+              "p": "quite different"
+            },
+            {
+              "q": "Henderson's early landscapes",
+              "p": "for the first 20 years of his career produced romantic images"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ hai người có phong cách khác biệt — trái ngược với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "In 1866, he gave up his business to open a photographic studio, advertising himself as a portrait and landscape photographer."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói studio Henderson mở năm 1866 nằm gần nhà ông — bài có nói vị trí này không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“was close to his home” (gần nhà)",
+              "p": "Bài chỉ nói ông “gave up his business to open a photographic studio” — không đề cập vị trí studio so với nhà."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "was close to his home",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có thông tin nào về khoảng cách giữa studio và nhà riêng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "From about 1870 he dropped portraiture to specialize in landscape photography and other views."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói Henderson bỏ chụp chân dung để tập trung chụp phong cảnh — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“gave up portraiture so that he could focus on ... photographs of scenery”",
+              "p": "Bài viết “dropped portraiture to specialize in landscape photography and other views” — bỏ chân dung để chuyên chụp phong cảnh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "gave up portraiture",
+              "p": "dropped portraiture"
+            },
+            {
+              "q": "focus on taking photographs of scenery",
+              "p": "specialize in landscape photography and other views"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đúng với thông tin bài đưa ra."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "This undertaking led in 1875 to a commission from the railway to record the principal structures along the almost-completed line connecting Montreal to Halifax."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói khi Henderson bắt đầu làm cho Intercolonial Railway, tuyến Montreal–Halifax đã hoàn thành — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the Montreal to Halifax line had been finished” (đã hoàn thành)",
+              "p": "Bài viết gọi đó là “the almost-completed line” — tuyến gần xong, chưa hoàn tất hẳn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "had been finished",
+              "p": "the almost-completed line"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Almost-completed” nghĩa là chưa hoàn tất — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "In 1892 Henderson accepted a full-time position with the CPR as manager of a photographic department ... He continued in this post until 1897, when he retired completely from photography."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói công việc cuối cùng của Henderson trong nghề ảnh là với CPR — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“last work as a photographer was with the Canadian Pacific Railway”",
+              "p": "Bài viết ông nhận việc toàn thời gian với CPR năm 1892 và “continued in this post until 1897, when he retired completely from photography” — nghỉ hẳn nghề ảnh ngay sau khi rời CPR."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "last work as a photographer",
+              "p": "retired completely from photography"
+            },
+            {
+              "q": "with the Canadian Pacific Railway",
+              "p": "accepted a full-time position with the CPR"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ông làm cho CPR đến 1897 rồi nghỉ hẳn nghề ảnh — đúng là công việc cuối cùng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "merchant",
+      "evidence": {
+        "quoteEn": "Alexander Henderson was born in Scotland in 1831 and was the son of a successful merchant."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: cha của Henderson làm nghề gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “father was a ______” cần danh từ chỉ nghề nghiệp."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “father was a ______”.",
+              "p": "Bài viết “was the son of a successful merchant” — con trai của một thương nhân thành đạt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "father was a ______",
+              "p": "the son of a successful merchant"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nghề của cha ông được nêu rõ là merchant."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "merchant"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "equipment",
+      "evidence": {
+        "quoteEn": "There was little competing hobby or amateur photography before the late 1880s because of the time-consuming techniques involved and the weight of equipment."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: thứ gì nặng nề khiến ít người chơi ảnh nghiệp dư (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the ______ was heavy” cần danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the ______ was heavy”.",
+              "p": "Bài viết “the weight of equipment” — trọng lượng của thiết bị (máy móc chụp ảnh)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ was heavy",
+              "p": "the weight of equipment"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thứ nặng nề được nhắc là equipment."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "equipment"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "gifts",
+      "evidence": {
+        "quoteEn": "People wanted to buy photographs as souvenirs of a trip or as gifts"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: ngoài souvenirs, ảnh của Henderson còn được mua để làm gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “were ______ or souvenirs” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the photographs Henderson sold were ______ or souvenirs”.",
+              "p": "Bài viết “wanted to buy photographs as souvenirs of a trip or as gifts” — mua làm quà lưu niệm hoặc quà tặng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ or souvenirs",
+              "p": "souvenirs of a trip or as gifts"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ còn thiếu chính là gifts."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "gifts"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "canoe",
+      "evidence": {
+        "quoteEn": "He was especially fond of the wilderness and often travelled by canoe on the Blanche, du Lièvre, and other noted eastern rivers."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: Henderson đi dọc các con sông miền đông bằng phương tiện gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “in a ______” cần danh từ (một phương tiện di chuyển)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “took many trips along eastern rivers in a ______”.",
+              "p": "Bài viết “often travelled by canoe on the Blanche, du Lièvre, and other noted eastern rivers”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "in a ______",
+              "p": "travelled by canoe"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phương tiện được nhắc là canoe."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "canoe"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "mountains",
+      "evidence": {
+        "quoteEn": "In 1885 he went west along the Canadian Pacific Railway (CPR) as far as Rogers Pass in British Columbia, where he took photographs of the mountains and the progress of construction."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: ngoài công trình đường sắt, ông còn chụp cảnh gì ở Rogers Pass (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “photographed the ______” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “photographed the ______ and the railway at Rogers Pass”.",
+              "p": "Bài viết “took photographs of the mountains and the progress of construction”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "photographed the ______",
+              "p": "photographs of the mountains"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ông chụp cả mountains lẫn tiến độ xây dựng đường sắt."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "mountains"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "Foul air, rather than germs, was believed to be the main driver of ‘hospital fever’, leading to disease and frequent death. The prosperous steered clear of hospitals."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích vì sao một số người tránh xa bệnh viện thế kỷ 19. Đề viết: “why some people avoided hospitals in the 19th century”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói lý do người ta né bệnh viện (“avoided hospitals”).",
+              "p": "Đoạn F: “hospital fever” bị cho là do khí bẩn (không phải vi khuẩn) gây bệnh và tử vong, nên “the prosperous steered clear of hospitals” — người khá giả tránh xa bệnh viện."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "why some people avoided hospitals",
+              "p": "the prosperous steered clear of hospitals"
+            },
+            {
+              "q": "avoided",
+              "p": "steered clear of"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Short regards glass, steel and air-conditioned skyscrapers as symbols of status, rather than practical ways of meeting our requirements."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn gợi ý nhà cao tầng được ưa chuộng vì gắn với đẳng cấp. Đề viết: “the popularity of tall buildings is linked to prestige”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề muốn đoạn nối sự phổ biến của nhà cao tầng với “prestige” (địa vị, đẳng cấp).",
+              "p": "Đoạn C: Short coi các tòa nhà kính – thép – máy lạnh là “symbols of status” (biểu tượng địa vị) hơn là giải pháp thực tế."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "linked to prestige",
+              "p": "symbols of status"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "We discovered that 19th-century hospital wards could generate up to 24 air changes an hour – that's similar to the performance of a modern-day, computer-controlled operating theatre."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn so sánh mức lưu thông khí ở tòa nhà thế kỷ 19 với chuẩn hiện đại. Đề viết: “a comparison between the circulation of air ... and modern standards”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn so sánh sự tuần hoàn khí xưa với tiêu chuẩn hiện đại.",
+              "p": "Đoạn E: khu bệnh viện thế kỷ 19 đạt “up to 24 air changes an hour”, được ví “similar to the performance of a modern-day, computer-controlled operating theatre” — ngang phòng mổ hiện đại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "modern standards",
+              "p": "a modern-day, computer-controlled operating theatre"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "We spent three years digitally modelling Billings’ final designs,’ says Short. ‘We put pathogens in the airstreams, modelled for someone with tuberculosis (TB) coughing in the wards"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn kể Short đã kiểm tra sự lưu thông khí trong tòa nhà thế kỷ 19 bằng cách nào. Đề viết: “how Short tested the circulation of air in a 19th-century building”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn mô tả cách thức kiểm tra (“how ... tested”).",
+              "p": "Đoạn D: nhóm nghiên cứu “spent three years digitally modelling Billings' final designs”, đưa “pathogens in the airstreams” mô phỏng bệnh nhân lao ho trong phòng bệnh để xem hệ thống thông gió có bảo vệ người khác không."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "tested the circulation of air",
+              "p": "spent three years digitally modelling ... put pathogens in the airstreams"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "before the widespread introduction of air conditioning systems, which were ‘relentlessly and aggressively marketed’ by their inventors."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn ngụ ý quảng cáo khiến máy lạnh được dùng tràn lan. Đề viết: “advertising led to the large increase in the use of air conditioning”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn cho thấy quảng cáo là nguyên nhân khiến AC phổ biến.",
+              "p": "Đoạn B: hệ thống điều hòa “relentlessly and aggressively marketed” (được quảng cáo dồn dập, mạnh mẽ) bởi nhà phát minh — ngụ ý quảng cáo thúc đẩy việc dùng rộng rãi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "advertising led to the large increase in the use of air conditioning",
+              "p": "relentlessly and aggressively marketed"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "designs",
+      "answerAlternatives": [
+        "design",
+        "design(s)"
+      ],
+      "evidence": {
+        "quoteEn": "Of particular interest were those built to the designs of John Shaw Billings, including the first Johns Hopkins Hospital in the US city of Baltimore (1873-1889)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Billings ảnh hưởng tới điều gì trong kiến trúc bệnh viện để đảm bảo thông gió tốt (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the architectural ______ of hospitals” cần danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “influenced the architectural ______ of hospitals to ensure they had good ventilation”.",
+              "p": "Bài viết: các công trình “built to the designs of John Shaw Billings” — được xây theo bản thiết kế (designs) của Billings."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "architectural ______",
+              "p": "the designs of John Shaw Billings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Billings ảnh hưởng tới các “designs” (thiết kế) của bệnh viện."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "designs (design)"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "pathogens",
+      "evidence": {
+        "quoteEn": "We put pathogens in the airstreams, modelled for someone with tuberculosis (TB) coughing in the wards"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Short tính toán rằng thứ gì trong không khí đến từ bệnh nhân lao không gây hại người khác (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “calculated that ______ in the air” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “______ in the air coming from patients suffering from 21 ______ would not have harmed other patients”.",
+              "p": "Bài viết “We put pathogens in the airstreams” — đặt mầm bệnh (pathogens) vào luồng khí để mô phỏng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ in the air",
+              "p": "pathogens in the airstreams"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thứ được đưa vào luồng khí mô phỏng là pathogens."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "pathogens"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "tuberculosis",
+      "evidence": {
+        "quoteEn": "modelled for someone with tuberculosis (TB) coughing in the wards"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bệnh nhân được mô phỏng đang mắc bệnh gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “suffering from ______” cần tên một căn bệnh."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “patients suffering from ______”.",
+              "p": "Bài viết “modelled for someone with tuberculosis (TB) coughing in the wards”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "suffering from ______",
+              "p": "someone with tuberculosis (TB)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bệnh được mô phỏng là tuberculosis."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "tuberculosis"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "wards",
+      "evidence": {
+        "quoteEn": "19th-century hospital wards could generate up to 24 air changes an hour"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Không khí ở đâu trong bệnh viện có thể đổi thường xuyên như phòng mổ hiện đại (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the air in ______” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the air in ______ could change as often as in a modern operating theatre”.",
+              "p": "Bài viết “19th-century hospital wards could generate up to 24 air changes an hour”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the air in ______",
+              "p": "hospital wards"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nơi được nhắc là wards."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "wards"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "communal",
+      "evidence": {
+        "quoteEn": "Communal wards appropriate for certain patients – older people with dementia, for example – would work just as well in today's hospitals, at a fraction of the energy cost."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Năng lượng có thể giảm nếu đặt thêm bệnh nhân vào khu vực kiểu gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “more patients in ______ areas” cần tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “locating more patients in ______ areas”.",
+              "p": "Bài viết “Communal wards ... would work just as well ... at a fraction of the energy cost” — phòng chung (communal) tiết kiệm năng lượng hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ areas",
+              "p": "communal wards"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khu vực tiết kiệm năng lượng được nhắc là communal wards."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "communal"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "public",
+      "evidence": {
+        "quoteEn": "Much of the ingenuity present in 19th-century hospital and building design was driven by a panicked public clamouring for buildings that could protect against what was thought to be the lethal threat of miasmas"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai là bên đòi hỏi được bảo vệ khỏi không khí độc hại (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “demand from the ______” cần danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the demand from the ______ for protection against bad air”.",
+              "p": "Bài viết “driven by a panicked public clamouring for buildings that could protect against” — công chúng hoảng loạn đòi được bảo vệ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "demand from the ______",
+              "p": "a panicked public clamouring for buildings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bên đòi hỏi là public."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "public"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "miasmas",
+      "evidence": {
+        "quoteEn": "what was thought to be the lethal threat of miasmas – toxic air that spread disease."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Không khí xấu mà công chúng lo sợ được gọi tên là gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “known as ______” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “protection against bad air, known as ______”.",
+              "p": "Bài viết gọi thẳng là “miasmas – toxic air that spread disease”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "known as ______",
+              "p": "miasmas – toxic air that spread disease"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tên gọi là miasmas."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "miasmas"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "cholera",
+      "evidence": {
+        "quoteEn": "the cholera outbreaks in London and Paris during the 1850s."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Miasmas bị đổ lỗi cho đợt dịch bệnh nào ở London và Paris (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “epidemics of ______” cần tên một căn bệnh."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “epidemics of ______ in London and Paris”.",
+              "p": "Bài viết “the cholera outbreaks in London and Paris during the 1850s”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "epidemics of ______",
+              "p": "the cholera outbreaks"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Dịch bệnh được nhắc là cholera."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "cholera"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quotesEn": [
+          "We are told that we ought to organize our company, our home life, our week, our day",
+          "all as a means to becoming more productive."
+        ],
+        "quoteEn": "all as a means to becoming more productive."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A đang nói về điều gì? Cần tìm heading kiểu: người ta ngày càng được yêu cầu phải làm gì đó."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vi: “What people are increasingly expected to do”",
+              "p": "Đoạn A: “We are told that we ought to organize our company, our home life, our week, our day ... all as a means to becoming more productive” — ngày càng có nhiều lời khuyên rằng ai cũng phải tự sắp xếp, tổ chức mọi mặt cuộc sống."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "what people are increasingly expected to do",
+              "p": "we are told that we ought to organize ... as a means to becoming more productive"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quotesEn": [
+          "Work-related stress has increased.",
+          "A large proportion of workers from all demographics claim to be dissatisfied with the way their work is structured and the way they are managed."
+        ],
+        "quoteEn": "A large proportion of workers from all demographics claim to be dissatisfied with the way their work is structured and the way they are managed."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B đang nói về điều gì? Cần tìm heading kiểu: lời than phiền về hậu quả của một cách làm nào đó."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading i: “Complaints about the impact of a certain approach”",
+              "p": "Đoạn B: “Work-related stress has increased” và “a large proportion of workers ... claim to be dissatisfied with the way their work is structured” — than phiền về hậu quả của cách tổ chức/quản lý công việc."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "complaints about the impact of a certain approach",
+              "p": "claim to be dissatisfied with the way their work is structured"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "i"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Frederick Taylor was one of the forefathers of scientific management. Writing in the first half of the 20th century, he designed a number of principles to improve the efficiency of the work process"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C đang nói về điều gì? Cần tìm heading kiểu: những khuyến nghị ra đời sớm về hoạt động kinh doanh."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iii: “Early recommendations concerning business activities”",
+              "p": "Đoạn C: Frederick Taylor, “one of the forefathers of scientific management”, đầu thế kỷ 20 đã đề ra “a number of principles to improve the efficiency of the work process” — những nguyên tắc ra đời sớm cho hoạt động doanh nghiệp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "early recommendations concerning business activities",
+              "p": "designed a number of principles to improve the efficiency of the work process"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iii"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "ii",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "it's the basic assumptions we hold in approaching how we work. Here it's the assumption that order is a necessary condition for productivity."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D đang nói về điều gì? Cần tìm heading kiểu: niềm tin nền tảng nhưng thực ra sai."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ii: “Fundamental beliefs that are in fact incorrect”",
+              "p": "Đoạn D: “this obsession with efficiency is misguided” do “the basic assumptions we hold”, ví dụ “the assumption that order is a necessary condition for productivity” bị chỉ ra là sai lầm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fundamental beliefs that are in fact incorrect",
+              "p": "this obsession with efficiency is misguided ... the basic assumptions we hold"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ii"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "ix",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "recent studies show that order actually has diminishing returns ... eventually the usefulness of the process of organisation, and the benefit it yields, reduce until the point where any further increase in order reduces productivity."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E đang nói về điều gì? Cần tìm heading kiểu: bằng chứng một cách làm gây hại nhiều hơn lợi."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ix: “Evidence that a certain approach can have more disadvantages than advantages”",
+              "p": "Đoạn E: “order actually has diminishing returns” — trật tự chỉ có ích tới một mức, sau đó “any further increase in order reduces productivity” — gây hại nhiều hơn lợi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more disadvantages than advantages",
+              "p": "any further increase in order reduces productivity"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ix"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "the best approach is to create an environment devoid of structure and hierarchy and enable everyone involved to engage as one organic group. These environments can lead to new solutions that, under conventionally structured environments ... would never be reached."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F đang nói về điều gì? Cần tìm heading kiểu: cách đạt được điều hiện tại chưa thể làm được."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vii: “How to achieve outcomes that are currently impossible”",
+              "p": "Đoạn F: môi trường phi cấu trúc (“devoid of structure and hierarchy”) “can lead to new solutions that ... would never be reached” dưới cách tổ chức thông thường — tức đạt được điều vốn không thể."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "outcomes that are currently impossible",
+              "p": "new solutions that ... would never be reached"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vii"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "iv",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "Oticon, a large Danish manufacturer of hearing aids, used what it called a ‘spaghetti’ structure in order to reduce the organisation's rigid hierarchies."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn G đang nói về điều gì? Cần tìm heading kiểu: các tổ chức thực sự áp dụng cách làm mới."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iv: “Organisations that put a new approach into practice”",
+              "p": "Đoạn G nêu ví dụ cụ thể: Oticon dùng “spaghetti” structure, General Electric theo mô hình “boundaryless”, Google cũng áp dụng cấu trúc linh hoạt — đều là tổ chức thật sự đưa cách làm mới vào thực tế."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "organisations that put a new approach into practice",
+              "p": "Oticon ... used what it called a 'spaghetti' structure"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iv"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "viii",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "disorder, much like order, also seems to have diminishing utility, and can also have detrimental effects on performance if overused. Like order, disorder should be embraced only so far as it is useful."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn H đang nói về điều gì? Cần tìm heading kiểu: không cách nào đảm bảo cải thiện liên tục."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading viii: “Neither approach guarantees continuous improvement”",
+              "p": "Đoạn H: “disorder, much like order, also seems to have diminishing utility” — cả trật tự lẫn hỗn loạn đều có giới hạn, dùng quá đà đều phản tác dụng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "neither approach guarantees continuous improvement",
+              "p": "disorder, much like order, also seems to have diminishing utility"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "viii"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "sentence-fill",
+      "answer": "productive",
+      "evidence": {
+        "quoteEn": "countless seminars and workshops take place around the world to tell a paying public that they ought to structure their lives in order to achieve this ... all as a means to becoming more productive."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các khóa đào tạo nhắm vào người cảm thấy mình chưa đủ điều gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “not ______ enough” cần tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “people who feel they are not ______ enough”.",
+              "p": "Bài viết: vô số hội thảo được tổ chức nhằm giúp công chúng sắp xếp cuộc sống “as a means to becoming more productive” — trở nên năng suất hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not ______ enough",
+              "p": "becoming more productive"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mục tiêu các khóa học là giúp người ta năng suất hơn → productive."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "productive"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "sentence-fill",
+      "answer": "perfectionists",
+      "evidence": {
+        "quoteEn": "This rhetoric has also crept into the thinking of business leaders and entrepreneurs, much to the delight of self-proclaimed perfectionists with the need to get everything right."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc sắp xếp ngăn nắp hấp dẫn những người tự coi mình là gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “regard themselves as ______” cần danh từ số nhiều chỉ loại người."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “people who regard themselves as ______”.",
+              "p": "Bài viết “self-proclaimed perfectionists with the need to get everything right” — những người tự nhận mình cầu toàn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "regard themselves as ______",
+              "p": "self-proclaimed perfectionists"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhóm người được nhắc là perfectionists."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "perfectionists"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "sentence-fill",
+      "answer": "dissatisfied",
+      "evidence": {
+        "quoteEn": "A large proportion of workers from all demographics claim to be dissatisfied with the way their work is structured and the way they are managed."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhiều người cảm thấy thế nào về một số khía cạnh công việc của họ (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “feel ______ with” cần tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “many people feel ______ with aspects of their work”.",
+              "p": "Bài viết “workers ... claim to be dissatisfied with the way their work is structured and ... managed”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "feel ______ with",
+              "p": "claim to be dissatisfied with"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cảm giác được nhắc là dissatisfied."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "dissatisfied"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "The result is that businesses and people spend time and money organising themselves for the sake of organising, rather than actually looking at the end goal and usefulness of such an effort."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói cả doanh nghiệp lẫn cá nhân theo đuổi trật tự mà không thực sự cân nhắc giá trị của nó — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“aim at order without really considering its value”",
+              "p": "Bài viết “businesses and people spend time and money organising themselves for the sake of organising, rather than actually looking at the end goal and usefulness” — tổ chức chỉ vì tổ chức, không xét lợi ích thực sự."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "without really considering its value",
+              "p": "rather than actually looking at the end goal and usefulness of such an effort"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp hoàn toàn với câu trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "the best approach is to create an environment devoid of structure and hierarchy and enable everyone involved to engage as one organic group."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói đổi mới thành công nhất khi mỗi người có vai trò riêng biệt — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the people involved have distinct roles”",
+              "p": "Bài viết ngược lại: môi trường tốt nhất để đổi mới là “devoid of structure and hierarchy” và mọi người “engage as one organic group” — không phân vai riêng biệt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have distinct roles",
+              "p": "devoid of structure and hierarchy ... as one organic group"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài đề cao việc xóa bỏ vai trò/cấu trúc rõ ràng — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "In similar fashion, the former chairman of General Electric embraced disorganisation ... Google and a number of other tech companies have embraced (at least in part) these kinds of flexible structures, facilitated by technology and strong company values which glue people together."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói Google lấy cảm hứng từ thành công của General Electric để áp dụng sự linh hoạt — bài có nói vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Google was inspired ... by the success of General Electric”",
+              "p": "Bài chỉ liệt kê GE và Google như hai ví dụ áp dụng mô hình linh hoạt (“in similar fashion” ... “Google and a number of other tech companies have embraced”) — không nói Google học theo hay chịu ảnh hưởng từ GE."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "was inspired to adopt flexibility by the success of General Electric",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có mối liên hệ nhân quả nào được nêu giữa hai công ty."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    }
+  }
+}

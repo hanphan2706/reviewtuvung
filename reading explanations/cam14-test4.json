@@ -1,0 +1,1809 @@
+{
+  "pilotId": "cam14-test4",
+  "schemaVersion": 4,
+  "note": "Cam 14 R T4 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The secret of staying young",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Why zoos are good",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Marine debris",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "four",
+      "answerAlternatives": ["4"],
+      "evidence": {
+        "quoteEn": "Giraldo focused on ants at four age ranges: 20 to 22 days, 45 to 47 days, 95 to 97 days and 120 to 122 days."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: nghiên cứu của Giraldo tập trung vào tổng cộng bao nhiêu nhóm tuổi khác nhau của kiến:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a total of ______ different age groups” cần một số đếm."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a total of ______ different age groups of ants”.",
+              "p": "Bài viết: “focused on ants at four age ranges: 20 to 22 days, 45 to 47 days, 95 to 97 days and 120 to 122 days” — đúng bốn mốc tuổi được liệt kê."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a total of ______ different age groups",
+              "p": "four age ranges"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài liệt kê đúng bốn mốc tuổi (20-22, 45-47, 95-97, 120-122 ngày) → four."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "four"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "young",
+      "evidence": {
+        "quoteEn": "Giraldo watched how well the ants took care of the young of the colony, recording how often each ant attended to, carried and fed them."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong mục Behaviour: kiến chăm sóc tốt cho đối tượng nào trong tổ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “looked after their ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “how well ants looked after their ______”.",
+              "p": "Bài viết: “watched how well the ants took care of the young of the colony” — kiến chăm sóc cho con non (the young) của tổ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "looked after their ______",
+              "p": "took care of the young of the colony"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đối tượng được chăm sóc là the young → young."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "young"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "food",
+      "evidence": {
+        "quoteEn": "She compared how well 20-day-old and 95-day-old ants followed the telltale scent that the insects usually leave to mark a trail to food."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kiến dùng vệt mùi hương để tìm ra thứ gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “locate ______ using a scent trail” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “their ability to locate ______ using a scent trail”.",
+              "p": "Bài viết: “followed the telltale scent that the insects usually leave to mark a trail to food” — vệt mùi dẫn tới thức ăn (food)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "locate ______",
+              "p": "a trail to food"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vệt mùi dẫn tới food."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "food"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "light",
+      "evidence": {
+        "quoteEn": "She tested how ants responded to light and also measured how active they were by counting how often ants in a small dish walked across a line."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giraldo kiểm tra phản ứng của kiến với tác nhân nào:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the effect that ______ had on them” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the effect that ______ had on them”.",
+              "p": "Bài viết: “tested how ants responded to light” — kiểm tra phản ứng với ánh sáng (light)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the effect that ______ had on them",
+              "p": "responded to light"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác nhân được thử nghiệm là light."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "light"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "aggressively",
+      "evidence": {
+        "quoteEn": "the older ants attacked the poor fruit fly just as aggressively as the young ones did, flaring their mandibles or pulling at the fly’s legs."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kiến già tấn công con mồi (ruồi giấm) với thái độ ra sao so với kiến trẻ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “how ______ they attacked prey” cần một trạng từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “how ______ they attacked prey”.",
+              "p": "Bài viết: “attacked the poor fruit fly just as aggressively as the young ones did” — tấn công hung hăng (aggressively) y như kiến trẻ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how ______ they attacked prey",
+              "p": "just as aggressively as the young ones"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ mô tả cách tấn công là aggressively."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "aggressively"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "location",
+      "evidence": {
+        "quoteEn": "nor was there any difference in the location of the dying cells, showing that age didn’t seem to affect specific brain functions."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "So sánh giữa các độ tuổi, điều gì của các tế bào sắp chết trong não kiến được đem ra đối chiếu:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the ______ of dying cells” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “comparison between age and the ______ of dying cells in the brains of ants”.",
+              "p": "Bài viết: “nor was there any difference in the location of the dying cells” — không có khác biệt về vị trí (location) của các tế bào sắp chết."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ of dying cells",
+              "p": "the location of the dying cells"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Yếu tố so sánh là location."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "location"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "neurons",
+      "evidence": {
+        "quoteEn": "regions where neurons come together"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Synaptic complexes là khu vực nơi loại tế bào nào gặp nhau:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “areas in which ______ meet” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “areas in which ______ meet”.",
+              "p": "Bài viết: “regions where neurons come together” — nơi các neuron (tế bào thần kinh) gặp nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "areas in which ______ meet",
+              "p": "regions where neurons come together"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Loại tế bào đó là neurons."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "neurons"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "chemicals",
+      "evidence": {
+        "quoteEn": "didn’t experience any drop in the levels of either serotonin or dopamine – brain chemicals whose decline often coincides with aging."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Serotonin và dopamine được gọi chung là loại gì trong não, liên quan tới lão hóa:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “level of two ______ in the brain” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “level of two ______ in the brain associated with ageing”.",
+              "p": "Bài viết: “either serotonin or dopamine – brain chemicals whose decline often coincides with aging” — hai chất hóa học (chemicals) trong não."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "two ______ in the brain",
+              "p": "brain chemicals"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Serotonin, dopamine được gọi là brain chemicals → chemicals."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "chemicals"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Naked mole rats can live for almost 30 years and stay fit for nearly their entire lives."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kiến Pheidole dentata có phải loài động vật duy nhất được biết là hoạt động tốt gần suốt đời chúng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the only known animals which remain active for almost their whole lives” — loài duy nhất luôn hoạt động tốt gần suốt đời.",
+              "p": "Bài còn nhắc tới naked mole rat “can live for almost 30 years and stay fit for nearly their entire lives” — một loài khác cũng có đặc điểm tương tự."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the only known animals",
+              "p": "naked mole rats can ... stay fit for nearly their entire lives"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Naked mole rat cũng có đặc điểm này nên P. dentata không phải loài duy nhất."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Unlike all previous studies, which only estimated how old the ants were, her work tracked the ants from the time the pupae became adults, so she knew their exact ages."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giraldo có phải người đầu tiên nghiên cứu kiến Pheidole dentata bằng dữ liệu tuổi chính xác không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the first person to study ... using precise data about the insects' ages”",
+              "p": "“Unlike all previous studies, which only estimated how old the ants were, her work ... so she knew their exact ages” — các nghiên cứu trước chỉ ước tính tuổi, còn Giraldo biết tuổi chính xác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "precise data about the insects' ages",
+              "p": "knew their exact ages"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định các nghiên cứu trước chỉ ước tính, còn Giraldo là người đầu tiên biết tuổi chính xác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Giraldo expected the older ants to perform poorly in all these tasks. But the elderly insects were all good caretakers and trail-followers"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kiến trong thí nghiệm của Giraldo có hành xử đúng như bà dự đoán không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“behaved as she had predicted that they would”",
+              "p": "“Giraldo expected the older ants to perform poorly in all these tasks. But the elderly insects were all good caretakers” — kết quả trái ngược hoàn toàn dự đoán."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "behaved as she had predicted",
+              "p": "expected ... to perform poorly ... But ... were all good"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Kết quả ngược lại hoàn toàn với dự đoán ban đầu của Giraldo."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "the results of recent bee studies were mixed – some studies showed age-related declines, which biologists call senescence, and others didn’t."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các nghiên cứu gần đây về ong có dùng những phương pháp đo lão hóa khác nhau không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“used different methods of measuring age-related decline”",
+              "p": "Bài chỉ nói kết quả “mixed” — một số thấy suy giảm, một số không — không nói gì về phương pháp đo có khác nhau hay không."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "different methods of measuring",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ nêu kết quả trái chiều, không đề cập tới phương pháp nghiên cứu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Out in the wild, the ants probably don’t live for a full 140 days thanks to predators, disease and just being in an environment that’s much harsher than the comforts of the lab."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kiến Pheidole dentata nuôi trong phòng thí nghiệm có xu hướng sống lâu hơn ngoài tự nhiên không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“kept in laboratory conditions tend to live longer lives”",
+              "p": "“Out in the wild, the ants probably don't live for a full 140 days thanks to predators, disease and ... a much harsher” môi trường — ngoài tự nhiên kiến khó sống đủ 140 ngày như trong lab."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "kept in laboratory conditions tend to live longer",
+              "p": "in the wild ... probably don't live for a full 140 days"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ngoài tự nhiên kiến khó sống thọ bằng trong phòng thí nghiệm — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "some of these collapses have been sudden, dramatic and unexpected, or were simply discovered very late in the day."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới việc số lượng loài có thể suy giảm nhanh chóng. Đề viết: “a reference to how quickly animal species can die out”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về tốc độ suy giảm/tuyệt chủng của loài.",
+              "p": "Đoạn B: “some of these collapses have been sudden, dramatic and unexpected” — một số đợt suy giảm số lượng diễn ra đột ngột, kịch tính."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how quickly animal species can die out",
+              "p": "sudden, dramatic and unexpected"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "Being able to undertake research on animals in zoos where there is less risk and fewer variables means real changes can be effected on wild populations."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu lý do nên nghiên cứu động vật trong điều kiện nuôi nhốt thay vì ngoài tự nhiên. Đề viết: “reasons why it is preferable to study animals in captivity rather than in the wild”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn giải thích vì sao nghiên cứu trong zoo tốt hơn ngoài hoang dã.",
+              "p": "Đoạn E: “less risk and fewer variables” khi nghiên cứu trong zoo giúp “real changes can be effected on wild populations” — ít rủi ro, ít biến số hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "preferable to study animals in captivity rather than in the wild",
+              "p": "less risk and fewer variables"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "television documentaries are becoming ever more detailed and impressive, and many natural history specimens are on display in museums"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới hai cách khác (ngoài đến sở thú) để tìm hiểu về động vật. Đề viết: “mention of two ways of learning about animals other than visiting them in zoos”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nêu hai cách học về động vật khác ngoài đi zoo.",
+              "p": "Đoạn C: “television documentaries” và “natural history specimens ... in museums” — phim tài liệu và mẫu vật bảo tàng, hai cách không cần tới zoo."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "two ways of learning about animals other than visiting them in zoos",
+              "p": "television documentaries ... museums"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "Animals in good zoos get a varied and high-quality diet with all the supplements required, and any illnesses they might have will be treated."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích vì sao động vật trong zoo có thể khỏe mạnh hơn ngoài tự nhiên. Đề viết: “reasons why animals in zoos may be healthier than those in the wild”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nêu lý do động vật trong zoo có thể khỏe hơn.",
+              "p": "Đoạn A: chế độ ăn tốt, được chữa bệnh, không bị kẻ săn mồi hay ký sinh trùng đe dọa — hàng loạt lý do khiến chúng khỏe mạnh hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "animals in zoos may be healthier than those in the wild",
+              "p": "varied and high-quality diet ... any illnesses ... will be treated"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "The average captive animal will have a greater life expectancy compared with its wild counterpart"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Động vật nuôi trong zoo có xu hướng sống lâu hơn động vật cùng loài ngoài tự nhiên không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“likely to live longer in a zoo than in the wild”",
+              "p": "“The average captive animal will have a greater life expectancy compared with its wild counterpart” — tuổi thọ trung bình cao hơn hẳn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "likely to live longer",
+              "p": "a greater life expectancy"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định trực tiếp tuổi thọ cao hơn trong điều kiện nuôi nhốt."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "A good number of species only exist in captivity, with many of these living in zoos."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có loài nào hiện chỉ còn tồn tại trong zoo, không còn ngoài tự nhiên không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“some species in zoos which can no longer be found in the wild”",
+              "p": "“A good number of species only exist in captivity, with many of these living in zoos” — một số loài chỉ còn sống trong điều kiện nuôi nhốt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "can no longer be found in the wild",
+              "p": "only exist in captivity"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài xác nhận có những loài chỉ còn tồn tại trong zoo."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "television documentaries are becoming ever more detailed and impressive"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chất lượng phim tài liệu về động vật hoang dã được cải thiện có làm tăng lượng khách tới zoo không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“resulted in increased numbers of zoo visitors”",
+              "p": "Bài chỉ nói phim tài liệu “becoming ever more detailed and impressive”, không hề nhắc tới số lượng khách tới zoo."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "resulted in increased numbers of zoo visitors",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có thông tin liên hệ chất lượng phim tài liệu với lượng khách tới zoo."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "This was an area where zoos used to be lacking, but they are now increasingly sophisticated in their communication and outreach work."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Zoo có phải lúc nào cũng giỏi truyền đạt thông tin cho công chúng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Zoos have always excelled at transmitting information about animals to the public”",
+              "p": "“This was an area where zoos used to be lacking” — trước đây zoo từng yếu ở mảng này, chỉ gần đây mới cải thiện."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have always excelled",
+              "p": "used to be lacking, but ... now increasingly sophisticated"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ trước đây zoo còn yếu ở khoản này, không phải luôn giỏi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Being able to undertake research on animals in zoos where there is less risk and fewer variables means real changes can be effected on wild populations."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nghiên cứu động vật trong zoo có ít gây căng thẳng (stress) cho con vật hơn nghiên cứu ngoài tự nhiên không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“less stressful for the animals than studying them in the wild”",
+              "p": "Bài chỉ nói nghiên cứu trong zoo “less risk and fewer variables” cho việc nghiên cứu, không nói cụ thể về mức độ căng thẳng của con vật."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "less stressful for the animals",
+              "p": "less risk and fewer variables"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“less risk” nói về rủi ro khi nghiên cứu, không phải mức stress của con vật — không đủ căn cứ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "B",
+      "answerPair": [23, 24],
+      "correctLetters": ["B", "D"],
+      "evidence": {
+        "quoteEn": "Many zoos also work directly to educate conservation workers in other countries, or send their animal keepers abroad to contribute their knowledge and skills to those working in zoos and reserves"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai ý đúng về nhân viên zoo được nhắc tới trong bài:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý B: một số nhân viên đi tới zoo ở nước ngoài để làm việc cùng đội ngũ ở đó (“travel to overseas locations to join teams in zoos”).",
+              "p": "Bài viết: zoo “send their animal keepers abroad to contribute their knowledge and skills to those working in zoos and reserves” — cử người chăm sóc thú ra nước ngoài, tới làm cùng đội ở zoo/khu bảo tồn khác."
+            },
+            {
+              "q": "Ý D: một số dạy những người đang làm công tác bảo tồn (“teach people who are involved with conservation projects”).",
+              "p": "Bài viết: zoo “work directly to educate conservation workers in other countries” — trực tiếp đào tạo nhân viên bảo tồn ở nước khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "travel to overseas locations to join teams in zoos",
+              "p": "send their animal keepers abroad ... to those working in zoos and reserves"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả B và D đều được nêu rõ trong cùng một câu ở đoạn D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B và D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nhắc nhân viên zoo xuất hiện trong phim tài liệu truyền hình."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nói nhân viên có kinh nghiệm với loài hoang dã trước khi vào làm ở zoo."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Không nói có nhân viên chuyên trách riêng cho loài đang bị đe dọa."
+            }
+          ]
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "D",
+      "answerPair": [23, 24],
+      "correctLetters": ["B", "D"],
+      "evidence": {
+        "quoteEn": "Many zoos also work directly to educate conservation workers in other countries"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 23–24 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý D: một số nhân viên dạy những người tham gia dự án bảo tồn.",
+              "p": "Bài viết: “work directly to educate conservation workers in other countries” — trực tiếp đào tạo nhân viên bảo tồn ở nước khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "teach people who are involved with conservation projects",
+              "p": "educate conservation workers in other countries"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý D; đi cùng B trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần “Các lựa chọn còn lại” ở câu 23."
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "B",
+      "answerPair": [25, 26],
+      "correctLetters": ["B", "E"],
+      "evidence": {
+        "quoteEn": "as well as educating and informing the general population about these animals and their world so that they can assist or at least accept the need to be more environmentally conscious."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai niềm tin về lợi ích của zoo mà tác giả nhắc tới:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý B: zoo có thể nâng cao nhận thức cộng đồng về môi trường (“increase public awareness of environmental issues”).",
+              "p": "Đoạn F: zoo giúp “educating and informing the general population about these animals and their world so that they can ... be more environmentally conscious” — giáo dục công chúng để có ý thức môi trường hơn."
+            },
+            {
+              "q": "Ý E: zoo có thể nuôi động vật để sau này thả về tự nhiên (“raise animals which can later be released into the wild”).",
+              "p": "Đoạn B: “have wild populations that have been boosted by captive bred animals” — số lượng ngoài tự nhiên được bổ sung nhờ động vật sinh sản trong zoo."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "increase public awareness of environmental issues",
+              "p": "educating and informing the general population ... environmentally conscious"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả B và E đều có bằng chứng rõ trong bài (đoạn F và đoạn B)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B và E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói zoo giúp trẻ em vượt qua nỗi sợ động vật hoang dã."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nhấn mạnh việc zoo tạo việc làm cho nhiều ngành nghề khác nhau."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói zoo tạo ra nguồn thu để tài trợ bảo tồn."
+            }
+          ]
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "E",
+      "answerPair": [25, 26],
+      "correctLetters": ["B", "E"],
+      "evidence": {
+        "quoteEn": "Still more only exist in the wild because they have been reintroduced from zoos, or have wild populations that have been boosted by captive bred animals."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 25–26 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý E: zoo có thể nuôi động vật để thả về tự nhiên sau này.",
+              "p": "Bài viết: loài “only exist in the wild because they have been reintroduced from zoos, or have wild populations that have been boosted by captive bred animals” — được tái thả hoặc bổ sung số lượng nhờ nuôi sinh sản trong zoo."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "raise animals which can later be released into the wild",
+              "p": "reintroduced from zoos ... boosted by captive bred animals"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý E; đi cùng B trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần “Các lựa chọn còn lại” ở câu 25."
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Plenty of studies have sounded alarm bells about the state of marine debris; in a recent paper published in the journal"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Rochman và đồng nghiệp có phải là những người đầu tiên nghiên cứu vấn đề rác thải biển không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the first people to research the problem of marine debris”",
+              "p": "“Plenty of studies have sounded alarm bells about the state of marine debris” đã có từ trước, rồi nhóm Rochman mới “set out to determine how many of those perceived risks are real” — họ đánh giá lại các nghiên cứu đã có, không phải người mở đầu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the first people to research",
+              "p": "plenty of studies have sounded alarm bells ... already"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đã có nhiều nghiên cứu về rác thải biển trước nhóm của Rochman."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "a study could show that certain seabirds eat plastic bags, and go on to warn that whole bird populations are at risk of dying out."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sinh vật bị đe dọa nhiều nhất bởi rác thải biển có phải là một số loài chim biển không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the creatures most in danger from ocean trash are certain seabirds”",
+              "p": "Bài chỉ đưa ví dụ minh họa: “a study could show that certain seabirds eat plastic bags” rồi cảnh báo nguy cơ tuyệt chủng — đây chỉ là ví dụ về cách suy diễn, không phải kết luận loài nào bị đe dọa nhất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "most in danger from ocean trash",
+              "p": "(not stated as such in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây chỉ là ví dụ minh họa cho cách các nghiên cứu suy đoán, không phải khẳng định loài nào bị đe dọa nhiều nhất."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "‘But the truth was that nobody had yet tested those perceived threats,’ Rochman says."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các nghiên cứu Rochman xem xét đã chứng minh được rằng một số loài chim sắp tuyệt chủng chưa:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“have already proved that populations of some birds will soon become extinct”",
+              "p": "“the truth was that nobody had yet tested those perceived threats” — lời cảnh báo tuyệt chủng chỉ là suy đoán, chưa được kiểm chứng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have already proved",
+              "p": "nobody had yet tested those perceived threats"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định rõ mối đe dọa đó chưa hề được kiểm chứng, chứ đừng nói là đã chứng minh."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Rochman and her colleagues examined more than a hundred papers on the impacts of marine debris that were published through 2013. Within each paper, they asked what threats scientists had studied – 366 perceived threats in all"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Rochman có phân tích các nghiên cứu về nhiều loại nguy hại khác nhau do rác thải biển gây ra không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“analysed papers on the different kinds of danger caused by ocean trash”",
+              "p": "“examined more than a hundred papers ... they asked what threats scientists had studied – 366 perceived threats in all” — phân tích hàng trăm bài báo, tổng hợp 366 mối đe dọa khác nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "different kinds of danger caused by ocean trash",
+              "p": "366 perceived threats in all"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài mô tả rõ việc tổng hợp, phân loại hàng trăm mối đe dọa khác nhau — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "In 83 percent of cases, the perceived dangers of ocean trash were proven true."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phần lớn nghiên cứu mà Rochman và đồng nghiệp phân tích có bị thiết kế kém không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“most of the research ... was badly designed”",
+              "p": "“In 83 percent of cases, the perceived dangers of ocean trash were proven true” — phần lớn kết quả được xác nhận đúng, chỉ số ít nghiên cứu có nhược điểm về thiết kế."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "most of the research ... was badly designed",
+              "p": "in 83 percent of cases ... proven true"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đa số nghiên cứu (83%) cho kết quả đúng đắn, chỉ thiểu số có lỗi thiết kế — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Strikingly, Rochman says, only one well-designed study failed to find the effect it was looking for, an investigation of mussels ingesting microscopic bits."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có nghiên cứu nào kỳ vọng sẽ thấy trai biển bị tổn hại vì ăn phải nhựa không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“expecting to find that mussels were harmed by eating plastic”",
+              "p": "“only one well-designed study failed to find the effect it was looking for, an investigation of mussels ingesting microscopic bits” — nghiên cứu này đang tìm một hiệu ứng (tổn hại) nhưng không thấy, nghĩa là ban đầu họ kỳ vọng sẽ thấy tổn hại đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "expecting to find that mussels were harmed",
+              "p": "failed to find the effect it was looking for"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“failed to find the effect it was looking for” cho thấy nghiên cứu đó vốn kỳ vọng tìm ra tác hại."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "The plastic moved from the mussels’ stomachs to their bloodstreams, scientists found, and stayed there for weeks – but didn’t seem to stress out the shellfish."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có loài trai biển nào chọn ăn nhựa thay vì thức ăn tự nhiên của chúng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“choose to eat plastic in preference to their natural diet”",
+              "p": "Bài chỉ nói nhựa “moved from the mussels' stomachs to their bloodstreams ... but didn't seem to stress out the shellfish” — không hề nói trai chủ động chọn ăn nhựa thay đồ ăn tự nhiên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "choose to eat plastic in preference to their natural diet",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ nói ăn nhựa không gây stress, không nói gì về việc chọn nhựa thay vì thức ăn tự nhiên."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "large",
+      "evidence": {
+        "quoteEn": "Most of the dangers also involved large pieces of debris – animals getting entangled in trash, for example, or eating it and severely injuring themselves."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Loại rác nào (theo kích cỡ) được xác định là gây hại nhiều nhất cho động vật:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “bits of debris that were ______” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “bits of debris that were ______ (harmful to animals)”.",
+              "p": "Bài viết: “Most of the dangers also involved large pieces of debris” — phần lớn nguy hại đến từ những mảnh rác lớn (large)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "bits of debris that were ______",
+              "p": "large pieces of debris"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là large."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "large"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "microplastic",
+      "evidence": {
+        "quoteEn": "a lot of ocean debris is ‘microplastic’, or pieces smaller than five millimeters. These may be ingredients used in cosmetics and toiletries, fibers shed by synthetic clothing in the wash"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có ít nghiên cứu về loại rác nào, ví dụ đến từ sợi vải tổng hợp:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “little research into ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “little research into ______ e.g. from synthetic fibres”.",
+              "p": "Bài viết: “a lot of ocean debris is 'microplastic' ... fibers shed by synthetic clothing”, rồi “found little research on the effects of these tiny bits” — rác siêu nhỏ (microplastic) còn ít được nghiên cứu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "little research into ______",
+              "p": "microplastic ... little research on the effects of these tiny bits"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là microplastic."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "microplastic"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "populations",
+      "evidence": {
+        "quoteEn": "Many studies have looked at how plastic affects an individual animal, or that animal’s tissues or cells, rather than whole populations."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phần lớn nghiên cứu tập trung vào từng cá thể, thay vì cái gì ở quy mô lớn hơn:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “not entire ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “most of them focused on individual animals, not entire ______”.",
+              "p": "Bài viết: “looked at how plastic affects an individual animal ... rather than whole populations” — tập trung vào cá thể, chứ không phải toàn bộ quần thể (populations)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not entire ______",
+              "p": "rather than whole populations"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là populations."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "populations"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "concentrations",
+      "evidence": {
+        "quoteEn": "in the lab, scientists often use higher concentrations of plastic than what’s really in the ocean."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong phòng thí nghiệm, các nhà khoa học thường dùng mức độ nhựa như thế nào so với ngoài đại dương thực tế:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the ______ of plastic used in the lab” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the ______ of plastic used in the lab did not always reflect those in the ocean”.",
+              "p": "Bài viết: “scientists often use higher concentrations of plastic than what's really in the ocean” — nồng độ (concentrations) nhựa trong lab thường cao hơn thực tế."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ of plastic used in the lab",
+              "p": "higher concentrations of plastic"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là concentrations."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "concentrations"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "predators",
+      "evidence": {
+        "quoteEn": "how deaths in one species could affect that animal’s predators, or the rest of the ecosystem."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc số lượng một loài giảm có thể ảnh hưởng ra sao tới những loài nào khác:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “impact ... on the ______ of that species” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the impact of a reduction in numbers on the ______ of that species”.",
+              "p": "Bài viết: “how deaths in one species could affect that animal's predators, or the rest of the ecosystem” — ảnh hưởng tới những kẻ săn mồi (predators) của loài đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ of that species",
+              "p": "that animal's predators"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là predators."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "predators"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "disasters",
+      "evidence": {
+        "quoteEn": "Usually, scientists don’t know exactly how disasters such as a tanker accidentally spilling its whole cargo of oil and polluting huge areas of the ocean will affect the environment until after they’ve happened."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Rochman nói cần thêm thông tin về tác động tiềm ẩn của loại sự kiện nào trong tương lai, ví dụ liên quan tới dầu tràn:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “future ______ (e.g. involving oil)” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “more information is needed on the possible impact of future ______”.",
+              "p": "Bài viết: “how disasters such as a tanker accidentally spilling its whole cargo of oil ... will affect the environment” — các thảm họa (disasters) như tràn dầu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "future ______",
+              "p": "disasters such as a tanker ... spilling its whole cargo of oil"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là disasters."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "disasters"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Rochman and her colleagues set out to determine how many of those perceived risks are real."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tựa đề nào phù hợp nhất với toàn bộ bài đọc:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: đánh giá mức độ đe dọa thực sự của rác thải biển (“Assessing the threat of marine debris”).",
+              "p": "Xuyên suốt bài, Rochman và nhóm “set out to determine how many of those perceived risks are real” — mục tiêu chính là đánh giá xem các nguy cơ được cho là do rác thải biển có thật sự nghiêm trọng hay không."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "assessing the threat of marine debris",
+              "p": "determine how many of those perceived risks are real"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Toàn bài xoay quanh việc kiểm chứng, đánh giá lại các mối đe dọa từ rác thải biển — đúng ý đáp án A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không bàn việc quy trách nhiệm cho ai gây ra rác thải biển."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Giải pháp Ocean Cleanup chỉ được nhắc thoáng qua, không phải trọng tâm của bài."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không kêu gọi hành động phối hợp quốc tế cụ thể nào."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

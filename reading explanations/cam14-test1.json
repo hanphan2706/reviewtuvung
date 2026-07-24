@@ -1,0 +1,1833 @@
+{
+  "pilotId": "cam14-test1",
+  "schemaVersion": 4,
+  "note": "Cam 14 R T1 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "THE IMPORTANCE OF CHILDREN’S PLAY",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "The growth of bike-sharing schemes around the world",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Motivational factors and the hospitality industry",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "creativity",
+      "evidence": {
+        "quoteEn": "this fantasy is helping her take her first steps towards her capacity for creativity and so it will have important repercussions in her adult life."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: xây “vương quốc kỳ diệu” bằng gạch nhựa đang giúp Alice phát triển khả năng gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “help develop ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “building a magical kingdom may help develop ______”.",
+              "p": "Bài viết: “this fantasy is helping her take her first steps towards her capacity for creativity” — trò chơi tưởng tượng đang giúp cô bé rèn khả năng sáng tạo."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "help develop ______",
+              "p": "her capacity for creativity"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khả năng đó chính là creativity."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "creativity"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "rules",
+      "evidence": {
+        "quoteEn": "she’s learning about the need to follow rules and take turns with a partner."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: chơi board game giúp trẻ học điều gì, cùng với việc luân phiên lượt chơi (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Trước “and turn-taking” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “board games involve ______ and turn-taking”.",
+              "p": "Bài viết: “she’s learning about the need to follow rules and take turns with a partner” — học cách tuân theo luật lệ và lượt chơi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "involve ______",
+              "p": "the need to follow rules"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là rules."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "rules"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "cities",
+      "evidence": {
+        "quoteEn": "over half the people in the world now live in cities."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: dân số ở đâu đã tăng, khiến trẻ ít có không gian chơi tự do (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “population of ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “population of ______ have grown”.",
+              "p": "Bài viết: “over half the people in the world now live in cities” — hơn nửa dân số thế giới hiện sống ở thành phố."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "population of ______",
+              "p": "over half the people in the world now live in cities"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là cities."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "cities"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "traffic",
+      "evidence": {
+        "quoteEn": "Outdoor play is curtailed by perceptions of risk to do with traffic"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: nỗi lo về điều gì trên đường phố khiến trẻ ít được chơi ngoài trời (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “fear of ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “fear of ______”.",
+              "p": "Bài viết: “Outdoor play is curtailed by perceptions of risk to do with traffic” — lo ngại về nguy cơ liên quan tới xe cộ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fear of ______",
+              "p": "risk to do with traffic"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là traffic."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "traffic"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "crime",
+      "evidence": {
+        "quoteEn": "parents’ increased wish to protect their children from being the victims of crime"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: cha mẹ còn lo con mình trở thành nạn nhân của điều gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “fear of ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “fear of ______”.",
+              "p": "Bài viết: “parents’ increased wish to protect their children from being the victims of crime” — cha mẹ muốn bảo vệ con khỏi trở thành nạn nhân của tội phạm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fear of ______",
+              "p": "being the victims of crime"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là crime."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "crime"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "competition",
+      "evidence": {
+        "quoteEn": "the emphasis on ‘earlier is better’ which is leading to greater competition in academic learning and schools."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: điều gì ở trường học ngày càng gia tăng, cũng góp phần thu hẹp thời gian chơi tự do (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “increased ______ in schools” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “increased ______ in schools”.",
+              "p": "Bài viết: “the emphasis on ‘earlier is better’ which is leading to greater competition in academic learning and schools” — quan niệm học sớm là tốt khiến cạnh tranh học tập tăng lên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "increased ______",
+              "p": "greater competition in academic learning and schools"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là competition."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "competition"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "evidence",
+      "evidence": {
+        "quoteEn": "But what they often lack is the evidence to base policies on."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: các tổ chức quốc tế còn thiếu thứ gì để làm căn cứ xây dựng chính sách mới (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “difficult to find ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “it is difficult to find ______ to support new policies”.",
+              "p": "Bài viết: “what they often lack is the evidence to base policies on” — họ thiếu bằng chứng để làm căn cứ hoạch định chính sách."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "find ______ to support new policies",
+              "p": "the evidence to base policies on"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là evidence."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "evidence"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "life",
+      "evidence": {
+        "quoteEn": "there is very little data on the impact it has on the child’s later life."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: nghiên cứu cần xem xét tác động của việc chơi tới phần nào trong tương lai của trẻ (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the rest of the child’s ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “research needs to study the impact of play on the rest of the child’s ______”.",
+              "p": "Bài viết: “there is very little data on the impact it has on the child’s later life” — rất ít dữ liệu về tác động của việc chơi đến cuộc sống về sau của trẻ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the rest of the child’s ______",
+              "p": "the child’s later life"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là life."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "life"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "the ability to self-regulate has been shown to be a key predictor of academic performance."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trẻ có khả năng tự kiểm soát tốt có được biết là nhiều khả năng học tốt ở trường sau này không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói trẻ tự kiểm soát tốt “are known to be likely to do well at school later on” (nhiều khả năng học tốt về sau).",
+              "p": "Bài viết: “the ability to self-regulate has been shown to be a key predictor of academic performance” — khả năng tự điều chỉnh được chứng minh là yếu tố dự báo quan trọng cho kết quả học tập."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "known to be likely to do well at school later on",
+              "p": "has been shown to be a key predictor of academic performance"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài xác nhận đúng mối liên hệ này giữa self-control và thành tích học tập."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "observing children at play can give us important clues about their well-being and can even be useful in the diagnosis of neurodevelopmental disorders like autism."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cách trẻ chơi có thể cho biết thông tin về những vấn đề y tế có thể xảy ra không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói cách trẻ chơi “may provide information about possible medical problems” (có thể cho biết vấn đề y tế).",
+              "p": "Bài viết: “observing children at play can give us important clues about their well-being and can even be useful in the diagnosis of neurodevelopmental disorders like autism” — quan sát trẻ chơi giúp phát hiện dấu hiệu sức khỏe, kể cả chẩn đoán tự kỷ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "provide information about possible medical problems",
+              "p": "useful in the diagnosis of neurodevelopmental disorders like autism"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đúng như bài mô tả — quan sát chơi giúp phát hiện vấn đề y tế/phát triển."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Children wrote longer and better-structured stories when they first played with dolls representing characters in the story."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chơi với búp bê có được thấy là lợi cho kỹ năng viết của bé gái hơn bé trai không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói chơi búp bê lợi cho viết của bé gái “more than boys’ writing” (hơn bé trai).",
+              "p": "Bài chỉ nói chung: “Children wrote longer and better-structured stories when they first played with dolls” — không phân biệt bé trai hay bé gái được lợi hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "benefit girls’ writing more than boys’ writing",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không so sánh giữa bé trai và bé gái."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Many teachers commented that they had always previously had children saying they didn’t know what to write about. With the Lego building, however, not a single child said this through the whole year of the project."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi lần đầu dựng câu chuyện bằng Lego, trẻ có gặp khó khăn khi nghĩ ý tưởng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói trẻ “had problems thinking up ideas” (gặp khó nghĩ ý tưởng) khi tạo chuyện bằng Lego.",
+              "p": "Bài viết: “not a single child said this through the whole year of the project” — không một trẻ nào trong cả năm nói mình không biết viết gì, khi dùng Lego."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "had problems thinking up ideas",
+              "p": "not a single child said this through the whole year of the project"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định ngược lại — trẻ không gặp khó khăn này khi dùng Lego."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Somehow the importance of play has been lost in recent decades. It’s regarded as something trivial, or even as something negative that contrasts with “work”."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngày nay người ta có xem việc chơi của trẻ là kém quan trọng hơn so với trước đây không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói người nay coi việc chơi “less significant than they did in the past” (kém quan trọng hơn xưa).",
+              "p": "Bài viết: “the importance of play has been lost in recent decades. It’s regarded as something trivial” — tầm quan trọng của việc chơi đã mai một, giờ bị coi là chuyện tầm thường."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "regard ... as less significant than ... in the past",
+              "p": "the importance of play has been lost ... regarded as something trivial"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp với đề — việc chơi hiện bị đánh giá thấp hơn trước."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "The system, however, was prone to vandalism and theft. ‘After every weekend there would always be a couple of bikes missing,’ Molenaar says. ‘I really have no idea what people did with them, because they could instantly be recognised as white bikes.’"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn kể việc xe chung bị người dùng lạm dụng ra sao. Đề viết: “a description of how people misused a bike-sharing scheme”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn tả cách người ta dùng sai mục đích (“misused”) chương trình xe chung.",
+              "p": "Đoạn E: “prone to vandalism and theft” rồi Molenaar kể xe cứ mất sau mỗi cuối tuần mà chẳng rõ ai lấy — đúng kiểu lạm dụng/phá hoại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how people misused a bike-sharing scheme",
+              "p": "prone to vandalism and theft"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Nevertheless, the council unanimously rejected the plan. ‘They said that the bicycle belongs to the past. They saw a glorious future for the car,’ says Schimmelpennink."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích vì sao một đề xuất xe chung bị từ chối. Đề viết: “an explanation of why a proposed bike-sharing scheme was turned down”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần lý do hội đồng bác đề xuất.",
+              "p": "Đoạn C: hội đồng thành phố “unanimously rejected the plan” vì cho rằng “the bicycle belongs to the past” — xe đạp đã lỗi thời, tương lai thuộc về ô tô."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "why a proposed bike-sharing scheme was turned down",
+              "p": "the council unanimously rejected the plan ... the bicycle belongs to the past"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "‘But financially I didn’t really benefit from it, because I never filed for a patent.’"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói một người không thu được lợi tài chính từ công trình của mình. Đề viết: “a reference to a person being unable to profit from their work”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói ai đó không kiếm được tiền từ ý tưởng của mình.",
+              "p": "Đoạn F: Schimmelpennink nói “financially I didn’t really benefit from it, because I never filed for a patent” — không có lợi tài chính vì chưa từng đăng ký bằng sáng chế."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "unable to profit from their work",
+              "p": "financially I didn’t really benefit from it, because I never filed for a patent"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "It turned out that a white bicycle – per person, per kilometer – would cost the municipality only 10% of what it contributed to public transport per person per kilometer."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu khoản tiết kiệm tiềm năng mà một chương trình xe chung mang lại. Đề viết: “an explanation of the potential savings a bike-sharing scheme would bring”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần con số hoặc lý giải cụ thể về khoản tiết kiệm.",
+              "p": "Đoạn C: theo tính toán, xe trắng chỉ tốn “only 10% of what it contributed to public transport per person per kilometer” — chỉ bằng 10% chi phí so với giao thông công cộng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the potential savings a bike-sharing scheme would bring",
+              "p": "cost the municipality only 10% of what it contributed to public transport"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "They believed the scheme, which was known as the Witte Fietsenplan, was an answer to the perceived threats of air pollution and consumerism."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới các vấn đề mà chương trình xe chung nhằm giải quyết. Đề viết: “a reference to the problems a bike-sharing scheme was intended to solve”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nêu vấn đề chương trình muốn xử lý.",
+              "p": "Đoạn A: chương trình được xem là “an answer to the perceived threats of air pollution and consumerism” — lời giải cho ô nhiễm không khí và chủ nghĩa tiêu dùng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the problems a bike-sharing scheme was intended to solve",
+              "p": "an answer to the perceived threats of air pollution and consumerism"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "B",
+      "answerPair": [
+        19,
+        20
+      ],
+      "correctLetters": [
+        "B",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "But the biggest blow came when Postbank decided to abolish the chip card, because it wasn’t profitable. ‘That chip card was pivotal to the system,’ Molenaar says. ‘To continue the project we would have needed to set up another system, but the business partner had lost interest.’"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai ý đúng về chương trình xe chung Witte Fietsenplan năm 1999 tại Amsterdam:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý B: chương trình thất bại khi một bên hợp tác rút lui hỗ trợ (“failed when a partner in the scheme withdrew support”).",
+              "p": "Bài viết: Postbank bỏ thẻ chip vì không sinh lợi, và “the business partner had lost interest” — đối tác kinh doanh mất hứng thú, dự án không thể tiếp tục."
+            },
+            {
+              "q": "Ý D: chương trình khả thi được là nhờ thay đổi trong nhận thức của người dân (“made possible by a change in people’s attitudes”).",
+              "p": "Bài viết: “Times had changed ... People had become more environmentally conscious” — người dân đã có ý thức môi trường hơn trước."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "failed when a partner in the scheme withdrew support",
+              "p": "the business partner had lost interest"
+            },
+            {
+              "q": "made possible by a change in people’s attitudes",
+              "p": "People had become more environmentally conscious"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả B và D đều được bài xác nhận rõ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B và D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không có chi tiết một cơ quan chính phủ ban đầu phản đối kế hoạch 1999 (chỉ có Postbank bỏ thẻ chip về sau)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nói mục tiêu là vượt qua thành công của chương trình Copenhagen."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Không nói chương trình thu hút sự quan tâm của nhiều nhà thiết kế xe khác nhau."
+            }
+          ]
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "D",
+      "answerPair": [
+        19,
+        20
+      ],
+      "correctLetters": [
+        "B",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "‘Times had changed,’ he recalls. ‘People had become more environmentally conscious, and the Danish experiment had proved that bike-sharing was a real possibility.’"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 19–20 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý D: chương trình khả thi nhờ thay đổi trong nhận thức của người dân.",
+              "p": "Bài viết: “Times had changed ... People had become more environmentally conscious, and the Danish experiment had proved that bike-sharing was a real possibility” — thái độ xã hội đã đổi khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a change in people’s attitudes",
+              "p": "People had become more environmentally conscious"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý D; đi cùng B trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần loại đáp án ở câu 19."
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "D",
+      "answerPair": [
+        21,
+        22
+      ],
+      "correctLetters": [
+        "D",
+        "E"
+      ],
+      "evidence": {
+        "quoteEn": "‘People who travel on the underground don’t carry their bikes around. But often they need additional transport to reach their final destination.’"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai ý đúng về Amsterdam ngày nay:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý D: chương trình xe chung sẽ có lợi cho người dùng giao thông công cộng (“would benefit residents who use public transport”).",
+              "p": "Bài viết: Schimmelpennink nói “People who travel on the underground don’t carry their bikes around. But often they need additional transport to reach their final destination” — người đi tàu điện ngầm thường cần thêm phương tiện để tới đích cuối."
+            },
+            {
+              "q": "Ý E: thành phố có danh tiếng là nơi thân thiện với người đi xe đạp (“a reputation as a place that welcomes cyclists”).",
+              "p": "Bài viết: “38% of all trips are made by bike ... regarded as one of the two most cycle-friendly capitals in the world” — được xem là một trong hai thủ đô thân thiện nhất với xe đạp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "would benefit residents who use public transport",
+              "p": "need additional transport to reach their final destination"
+            },
+            {
+              "q": "a reputation as a place that welcomes cyclists",
+              "p": "one of the two most cycle-friendly capitals in the world"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "D và E đều có bằng chứng rõ trong đoạn G."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D và E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói đa số dân muốn chặn hết ô tô vào thành phố."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Schimmelpennink tỏ ra lạc quan về tương lai — không nói khả năng có lại chương trình là thấp."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không so sánh xe đạp với các phương tiện khác về tỷ lệ chuyến đi cao nhất."
+            }
+          ]
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "E",
+      "answerPair": [
+        21,
+        22
+      ],
+      "correctLetters": [
+        "D",
+        "E"
+      ],
+      "evidence": {
+        "quoteEn": "In Amsterdam today, 38% of all trips are made by bike and, along with Copenhagen, it is regarded as one of the two most cycle-friendly capitals in the world"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 21–22 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý E: thành phố có tiếng là nơi thân thiện với xe đạp.",
+              "p": "Bài viết: “along with Copenhagen, it is regarded as one of the two most cycle-friendly capitals in the world” — cùng Copenhagen, được xem là một trong hai thủ đô thân thiện nhất với xe đạp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a reputation as a place that welcomes cyclists",
+              "p": "regarded as one of the two most cycle-friendly capitals in the world"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý E; đi cùng D trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần loại đáp án ở câu 21."
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "activists",
+      "evidence": {
+        "quoteEn": "Provo, the organization that came up with the idea, was a group of Dutch activists who wanted to change society."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong summary: những người thuộc nhóm Provo là ai (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “were ______” cần một danh từ chỉ người/nhóm người."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “The people who belonged to this group were ______”.",
+              "p": "Bài viết: “was a group of Dutch activists who wanted to change society” — một nhóm nhà hoạt động người Hà Lan muốn thay đổi xã hội."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "were ______",
+              "p": "a group of Dutch activists"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là activists."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "activists"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "consumerism",
+      "evidence": {
+        "quoteEn": "was an answer to the perceived threats of air pollution and consumerism."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong summary: ngoài môi trường, nhóm Provo còn lo ngại về điều gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “concerned about damage to the environment and about ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “concerned about damage to the environment and about ______”.",
+              "p": "Bài viết: chương trình là lời đáp cho “the perceived threats of air pollution and consumerism” — ô nhiễm không khí và chủ nghĩa tiêu dùng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "about ______",
+              "p": "consumerism"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là consumerism."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "consumerism"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "leaflets",
+      "evidence": {
+        "quoteEn": "They also distributed leaflets describing the dangers of cars and inviting people to use the white bikes."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong summary: ngoài sơn xe trắng, Provo còn phát thứ gì lên án việc dùng ô tô (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “they handed out ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “they handed out ______ that condemned the use of cars”.",
+              "p": "Bài viết: “They also distributed leaflets describing the dangers of cars” — phát tờ rơi mô tả sự nguy hiểm của ô tô."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "handed out ______",
+              "p": "distributed leaflets describing the dangers of cars"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là leaflets."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "leaflets"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "police",
+      "evidence": {
+        "quoteEn": "The police were opposed to Provo’s initiatives and almost as soon as the white bikes were distributed around the city, they removed them."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong summary: ai đã mang những chiếc xe trắng đi ngay sau khi Provo để chúng khắp thành phố (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the ______ took them away” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “almost as quickly as Provo left the bikes around the city, the ______ took them away”.",
+              "p": "Bài viết: “The police were opposed to Provo’s initiatives and almost as soon as the white bikes were distributed around the city, they removed them” — cảnh sát dọn xe đi gần như ngay lập tức."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ took them away",
+              "p": "the police ... removed them"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là police."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "police"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "This requires an understanding of what motivates employees at different levels of management and different stages of their careers (Enz and Siguaw, 2000)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai chỉ ra rằng các nhà quản lý khách sạn cần biết điều gì khiến nhân viên tốt muốn gắn bó lại:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Hotel managers need to know what would encourage good staff to remain.”",
+              "p": "Bài viết dẫn Enz and Siguaw (2000): quản lý khách sạn cần “an understanding of what motivates employees at different levels of management and different stages of their careers” — hiểu điều gì tạo động lực để nhân viên gắn bó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "what would encourage good staff to remain",
+              "p": "an understanding of what motivates employees"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Trích dẫn này gắn với Enz and Siguaw."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Ng and Sorensen (2008) demonstrated that when managers provide recognition to employees, motivate employees to work together, and remove obstacles preventing effective performance, employees feel more obligated to stay with the company."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng hành động của quản lý có thể khiến nhân viên cảm thấy không nên chuyển sang công ty khác:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The actions of managers may make staff feel they shouldn’t move to a different employer.”",
+              "p": "Bài viết: “Ng and Sorensen (2008) demonstrated that when managers provide recognition ... employees feel more obligated to stay with the company” — nhân viên cảm thấy có nghĩa vụ ở lại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "feel they shouldn’t move to a different employer",
+              "p": "employees feel more obligated to stay with the company"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp với nghiên cứu của Ng and Sorensen."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "the substance of HRM practices does not appear to be designed to foster constructive relations with employees or to represent a managerial approach that enables developing and drawing out the full potential of people"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng ngành khách sạn làm rất ít để giúp nhân viên nâng cao kỹ năng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Little is done in the hospitality industry to help workers improve their skills.”",
+              "p": "Bài viết dẫn Lucas (2002): HRM ngành này “does not appear to be designed to ... represent a managerial approach that enables developing and drawing out the full potential of people” — không giúp phát triển hết năng lực nhân viên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "little is done ... to help workers improve their skills",
+              "p": "does not enable developing and drawing out the full potential of people"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhận định này thuộc về Lucas."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "when managers provide recognition to employees, motivate employees to work together, and remove obstacles preventing effective performance, employees feel more obligated to stay with the company."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng nhân viên ít có khả năng đổi việc hơn nếu được khuyến khích hợp tác:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Staff are less likely to change jobs if cooperation is encouraged.”",
+              "p": "Bài viết: vẫn nghiên cứu của Ng and Sorensen (2008) — quản lý “motivate employees to work together” khiến nhân viên “feel more obligated to stay with the company”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "less likely to change jobs if cooperation is encouraged",
+              "p": "motivate employees to work together ... feel more obligated to stay"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vẫn là nghiên cứu của Ng and Sorensen."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Among the many cited reasons are low compensation, inadequate benefits, poor working conditions and compromised employee morale and attitudes (Maroudas et al., 2008)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng không hài lòng về lương không phải là lý do duy nhất khiến nhân viên ngành khách sạn đổi việc:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Dissatisfaction with pay is not the only reason why hospitality workers change jobs.”",
+              "p": "Bài viết dẫn Maroudas et al. (2008): lý do gồm “low compensation, inadequate benefits, poor working conditions and compromised employee morale and attitudes” — lương chỉ là một trong nhiều lý do."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "dissatisfaction with pay is not the only reason",
+              "p": "low compensation, inadequate benefits, poor working conditions and compromised employee morale"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Danh sách nhiều nguyên nhân này thuộc về Maroudas et al."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Among the many cited reasons are low compensation, inadequate benefits, poor working conditions and compromised employee morale and attitudes (Maroudas et al., 2008)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một trong các lý do khiến nhân viên ngành khách sạn hay đổi việc là tinh thần làm việc kém — bài có đồng ý không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “One reason for high staff turnover in the hospitality industry is poor morale.”",
+              "p": "Bài viết: nguyên nhân turnover cao gồm “compromised employee morale and attitudes” — tinh thần nhân viên sa sút là một lý do được nêu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "poor morale",
+              "p": "compromised employee morale and attitudes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài liệt kê tinh thần kém là một nguyên nhân — khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "While it seems likely that employees’ reactions to their job characteristics could be affected by a predisposition to view their work environment negatively, no evidence exists to support this hypothesis (Spector et al., 2000)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nghiên cứu đã cho thấy nhân viên có xu hướng không thích nơi làm việc của mình — bài có đồng ý không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Research has shown that staff have a tendency to dislike their workplace.”",
+              "p": "Bài viết: “no evidence exists to support this hypothesis” — không có bằng chứng nào chứng minh nhân viên có sẵn thiên hướng nhìn tiêu cực về nơi làm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have a tendency to dislike their workplace",
+              "p": "no evidence exists to support this hypothesis"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài phản bác trực tiếp — chưa có nghiên cứu nào chứng minh điều này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Significantly, though, just fulfilling these needs does not result in satisfaction, but only in the reduction of dissatisfaction (Maroudas et al., 2008)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cải thiện điều kiện làm việc và sự an toàn công việc khiến nhân viên hài lòng với công việc — bài có đồng ý không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “An improvement in working conditions and job security makes staff satisfied with their jobs.”",
+              "p": "Bài viết: “just fulfilling these needs does not result in satisfaction, but only in the reduction of dissatisfaction” — chỉ đáp ứng các yếu tố này giúp giảm bất mãn, không tạo ra sự hài lòng thật sự."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "makes staff satisfied with their jobs",
+              "p": "does not result in satisfaction, but only in the reduction of dissatisfaction"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định ngược lại — chỉ giảm bất mãn, chưa phải tạo ra hài lòng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Those particularly appropriate to the hospitality industry include allowing adequate breaks during the working day, staff functions that involve families, and providing health and well-being opportunities."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhân viên nên được tự chọn thời điểm nghỉ giải lao trong ngày làm việc — bài có nói vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Staff should be allowed to choose when they take breaks during the working day.”",
+              "p": "Bài viết: Deery (2008) chỉ đề xuất “allowing adequate breaks during the working day” — chỉ nói có đủ giờ nghỉ, không nói ai được quyền chọn thời điểm nghỉ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "choose when they take breaks",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ nhắc có breaks, không nói gì về việc tự chọn thời gian nghỉ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "restaurants",
+      "evidence": {
+        "quoteEn": "Tews, Michel and Stafford (2013) conducted a study focusing on staff from a chain of themed restaurants in the United States."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong summary: Tews, Michel và Stafford nghiên cứu nhân viên trong một chuỗi cơ sở kinh doanh loại gì ở Mỹ (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a chain of American ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “staff in an American chain of ______”.",
+              "p": "Bài viết: “staff from a chain of themed restaurants in the United States” — nhân viên từ một chuỗi nhà hàng theo chủ đề."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a chain of ______",
+              "p": "a chain of themed restaurants"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là restaurants."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "restaurants"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "performance",
+      "evidence": {
+        "quoteEn": "It was found that fun activities had a favorable impact on performance and manager support for fun had a favorable impact in reducing turnover."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hoạt động vui vẻ tại nơi làm việc cải thiện điều gì của nhân viên (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “improved their ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “fun activities ... improved their ______”.",
+              "p": "Bài viết: “fun activities had a favorable impact on performance” — hoạt động vui giúp cải thiện hiệu suất làm việc."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "improved their ______",
+              "p": "a favorable impact on performance"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là performance."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "performance"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "turnover",
+      "evidence": {
+        "quoteEn": "manager support for fun had a favorable impact in reducing turnover."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi quản lý ủng hộ các hoạt động vui, điều gì ở nhân viên giảm xuống (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “led to lower staff ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “management involvement led to lower staff ______”.",
+              "p": "Bài viết: “manager support for fun had a favorable impact in reducing turnover” — sự hỗ trợ của quản lý giúp giảm tỷ lệ nghỉ việc."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "led to lower staff ______",
+              "p": "a favorable impact in reducing turnover"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là turnover."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "turnover"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "goals",
+      "evidence": {
+        "quoteEn": "the framing of that fun must be carefully aligned with both organizational goals and employee characteristics."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các hoạt động vui cần phù hợp với điều gì của công ty (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the company’s ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the activities needed to fit with both the company’s ______ and the ______ of the staff”.",
+              "p": "Bài viết: “the framing of that fun must be carefully aligned with both organizational goals and employee characteristics” — phải phù hợp với mục tiêu tổ chức và đặc điểm nhân viên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the company’s ______",
+              "p": "organizational goals"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là goals."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "goals"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "characteristics",
+      "evidence": {
+        "quoteEn": "the framing of that fun must be carefully aligned with both organizational goals and employee characteristics."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài mục tiêu công ty, các hoạt động vui còn cần phù hợp với điều gì của nhân viên (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the ______ of the staff” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “and the ______ of the staff”.",
+              "p": "Bài viết: “aligned with both organizational goals and employee characteristics” — phải phù hợp với đặc điểm của nhân viên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ of the staff",
+              "p": "employee characteristics"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là characteristics."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "characteristics"
+        }
+      ]
+    }
+  }
+}
