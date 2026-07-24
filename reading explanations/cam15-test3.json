@@ -1,0 +1,1803 @@
+{
+  "pilotId": "cam15-test3",
+  "schemaVersion": 4,
+  "note": "Cam 15 R T3 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Henry Moore (1898-1986)",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "The Desolenator: producing clean water",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Why fairy tales are really scary tales",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "After leaving school, Moore hoped to become a sculptor, but instead he complied with his father’s wish that he train as a schoolteacher."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sau khi rời trường, Moore có làm theo đúng ý cha mình không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Moore “did what his father wanted” (làm điều cha mong muốn) sau khi rời trường.",
+              "p": "Bài viết: ông muốn làm nhà điêu khắc nhưng “complied with his father's wish that he train as a schoolteacher” — nghe theo ý cha, đi học làm giáo viên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "did what his father wanted",
+              "p": "complied with his father's wish"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Moore từ bỏ ý định làm điêu khắc để nghe lời cha — đúng như đề nêu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "In his first year, he spent most of his time drawing. Although he wanted to study sculpture, no teacher was appointed until his second year."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Moore có học điêu khắc ngay từ kỳ đầu tại Leeds School of Art không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Moore “began studying sculpture in his first term” (học điêu khắc ngay từ kỳ đầu).",
+              "p": "Bài viết: “In his first year, he spent most of his time drawing … no teacher was appointed until his second year” — năm đầu ông chủ yếu học vẽ vì trường chưa có giáo viên điêu khắc, phải chờ tới năm hai."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "began studying sculpture in his first term",
+              "p": "no teacher was appointed until his second year"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Năm đầu ông học vẽ, chưa được học điêu khắc — ngược với thông tin đề đưa ra."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "In September 1921, he moved to London and began three years of advanced study in sculpture."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi Moore vào Royal College of Art, trường này có tiếng về dạy điêu khắc không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Royal College of Art “had an excellent reputation for teaching sculpture” khi ông theo học.",
+              "p": "Bài chỉ kể ông được học bổng, “moved to London and began three years of advanced study in sculpture” — không nhắc gì tới danh tiếng của trường."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "its reputation for teaching sculpture was excellent",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không hề đề cập đến danh tiếng của Royal College trong việc dạy điêu khắc."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Moore visited many of the London museums, particularly the British Museum, which had a wide-ranging collection of ancient sculpture. During these visits, he discovered the power and beauty of ancient Egyptian and African sculpture."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Moore biết đến điêu khắc cổ đại là nhờ đi thăm các viện bảo tàng ở London phải không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Moore “became aware of ancient sculpture” nhờ “visiting London museums”.",
+              "p": "Bài viết: “Moore visited many of the London museums, particularly the British Museum … During these visits, he discovered the power and beauty of ancient Egyptian and African sculpture” — chính các chuyến thăm bảo tàng giúp ông biết đến điêu khắc cổ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "became aware of ancient sculpture as a result of visiting London museums",
+              "p": "during these visits, he discovered the power and beauty of ancient Egyptian and African sculpture"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nêu rõ nguyên nhân — đến từ các chuyến thăm bảo tàng ở London."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "When he visited the Trocadero Museum in Paris, he was impressed by a cast of a Mayan* sculpture of the rain spirit."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác phẩm điêu khắc Maya ở bảo tàng Trocadero có thu hút nhiều sự quan tâm của công chúng không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói tác phẩm đó “attracted a lot of public interest” (thu hút nhiều sự chú ý của công chúng).",
+              "p": "Bài chỉ kể riêng Moore “was impressed by a cast of a Mayan sculpture of the rain spirit” — không nói gì về phản ứng của công chúng nói chung."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "attracted a lot of public interest",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ nói về cảm nhận riêng của Moore, không có thông tin về mức độ quan tâm của công chúng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Moore became fascinated with this stone sculpture, which he thought had a power and originality that no other stone sculpture possessed."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Moore có cho rằng tác phẩm Maya giống với các tác phẩm điêu khắc đá khác không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Moore thấy tác phẩm đó “similar in certain respects to other stone sculptures” (có nét giống các tác phẩm đá khác).",
+              "p": "Bài viết: ông thấy nó “had a power and originality that no other stone sculpture possessed” — có sức mạnh và sự độc đáo mà không tác phẩm đá nào khác có được, tức là khác biệt chứ không giống."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "similar in certain respects to other stone sculptures",
+              "p": "a power and originality that no other stone sculpture possessed"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định tác phẩm đó độc nhất, không giống các tác phẩm đá khác — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "The aim of the group was to convince the English public of the merits of the emerging international movement in modern art and architecture."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các thành viên của Unit One có muốn phổ biến nghệ thuật và kiến trúc hiện đại hơn không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói nhóm Unit One muốn “make modern art and architecture more popular” (làm nghệ thuật, kiến trúc hiện đại phổ biến hơn).",
+              "p": "Bài viết: “The aim of the group was to convince the English public of the merits of the emerging international movement in modern art and architecture” — mục tiêu là thuyết phục công chúng Anh về giá trị của phong trào này."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "make modern art and architecture more popular",
+              "p": "convince the English public of the merits of the emerging international movement"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thuyết phục công chúng về giá trị của phong trào cũng chính là cách làm nó phổ biến hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "resignation",
+      "evidence": {
+        "quoteEn": "There were calls for his resignation from the Royal College"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sau khi bị báo chí chê, Moore bị thúc ép làm gì để rời khỏi Royal College?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “offer his ______ and leave the Royal College” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Moore is urged to offer his ______ and leave the Royal College”.",
+              "p": "Bài viết: “There were calls for his resignation from the Royal College” — có lời kêu gọi ông từ chức."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "offer his ______",
+              "p": "calls for his resignation"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là resignation."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "resignation"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "materials",
+      "evidence": {
+        "quoteEn": "A shortage of materials forced him to focus on drawing."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vì sao Moore chuyển sang tập trung vẽ tranh trong thập niên 1940?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “______ for sculpting are not readily available” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Moore turns to drawing because ______ for sculpting are not readily available”.",
+              "p": "Bài viết: “A shortage of materials forced him to focus on drawing” — thiếu vật liệu buộc ông chuyển sang vẽ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ for sculpting are not readily available",
+              "p": "a shortage of materials forced him to focus on drawing"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là materials."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "materials"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "miners",
+      "evidence": {
+        "quoteEn": "he returned to Castleford to make a series of sketches of the miners who worked there."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi về lại quê nhà, Moore vẽ những ai?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “does some drawings of ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “While visiting his hometown, Moore does some drawings of ______”.",
+              "p": "Bài viết: “he returned to Castleford to make a series of sketches of the miners who worked there” — ông vẽ những người thợ mỏ ở quê nhà."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "does some drawings of ______",
+              "p": "a series of sketches of the miners"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là miners."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "miners"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "family",
+      "evidence": {
+        "quoteEn": "Harlow, a town near London, offered Moore a commission for a sculpture depicting a family."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Harlow đặt Moore làm tác phẩm điêu khắc về đề tài gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a sculpture of a ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Moore is employed to produce a sculpture of a ______”.",
+              "p": "Bài viết: “offered Moore a commission for a sculpture depicting a family” — đặt hàng tác phẩm về một gia đình."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a sculpture of a ______",
+              "p": "a commission for a sculpture depicting a family"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là family."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "family"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "collectors",
+      "evidence": {
+        "quoteEn": "Moore’s work became available to collectors all over the world."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai bắt đầu mua các tác phẩm của Moore?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “______ start to buy Moore's work” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “______ start to buy Moore's work”.",
+              "p": "Bài viết: “Moore's work became available to collectors all over the world” — các nhà sưu tập trên toàn thế giới có thể mua tác phẩm của ông."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ start to buy Moore's work",
+              "p": "available to collectors all over the world"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là collectors."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "collectors"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "income",
+      "evidence": {
+        "quoteEn": "The boost to his income enabled him to take on ambitious projects"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điều gì ở Moore tăng lên, giúp ông thực hiện các dự án lớn hơn?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “Moore's increased ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Moore's increased ______ makes it possible for him to do more ambitious sculptures”.",
+              "p": "Bài viết: “The boost to his income enabled him to take on ambitious projects” — thu nhập tăng giúp ông theo đuổi những dự án tham vọng hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "increased ______",
+              "p": "the boost to his income"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là income."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "income"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quotesEn": [
+          "Travelling around Thailand in the 1990s, William Janssen was impressed with the basic rooftop solar heating systems that were on many homes",
+          "Two decades later Janssen developed that basic idea he saw in Southeast Asia into a portable device that uses the power from the sun to purify water."
+        ],
+        "quoteEn": "Two decades later Janssen developed that basic idea he saw in Southeast Asia into a portable device that uses the power from the sun to purify water."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A đang kể điều gì? Cần tìm heading kiểu: từ một ý tưởng ban đầu dẫn tới sản phẩm mới."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iii: “From initial inspiration to new product”",
+              "p": "Đoạn A: Janssen được truyền cảm hứng từ hệ thống năng lượng mặt trời trên mái nhà ở Thái Lan (“impressed with the basic rooftop solar heating systems”), rồi hai thập kỷ sau biến ý tưởng đó thành thiết bị lọc nước di động (“developed that basic idea … into a portable device”)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "from initial inspiration to new product",
+              "p": "developed that basic idea he saw in Southeast Asia into a portable device"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iii"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quotesEn": [
+          "The Desolenator operates as a mobile desalination unit that can take water from different places, such as the sea, rivers, boreholes and rain, and purify it for human consumption."
+        ],
+        "quoteEn": "The Desolenator operates as a mobile desalination unit that can take water from different places, such as the sea, rivers, boreholes and rain, and purify it for human consumption."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B đang nói về điều gì? Cần tìm heading kiểu: xử lý nước từ nhiều nguồn khác nhau."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vi: “Cleaning water from a range of sources”",
+              "p": "Đoạn B: thiết bị “can take water from different places, such as the sea, rivers, boreholes and rain, and purify it” — lấy nước từ nhiều nguồn khác nhau rồi làm sạch."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cleaning water from a range of sources",
+              "p": "take water from different places, such as the sea, rivers, boreholes and rain"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "v",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quotesEn": [
+          "Its main selling point is that unlike standard desalination techniques, it doesn’t require a generated power supply: just sunlight."
+        ],
+        "quoteEn": "Its main selling point is that unlike standard desalination techniques, it doesn’t require a generated power supply: just sunlight."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C đang nói về điều gì? Cần tìm heading kiểu: điểm khác biệt của thiết bị so với các giải pháp khác."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading v: “What makes the device different from alternatives”",
+              "p": "Đoạn C: điểm bán hàng chính là “unlike standard desalination techniques, it doesn't require a generated power supply: just sunlight” — khác các kỹ thuật khử muối thông thường, chỉ cần ánh nắng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "what makes the device different from alternatives",
+              "p": "unlike standard desalination techniques, it doesn't require a generated power supply"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "v"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "x",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quotesEn": [
+          "A recent analysis found that at least two-thirds of the world’s population lives with severe water scarcity for at least a month every year.",
+          "Janssen says that by 2030 half of the world’s population will be living with water stress"
+        ],
+        "quoteEn": "A recent analysis found that at least two-thirds of the world’s population lives with severe water scarcity for at least a month every year."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D đang nói về điều gì? Cần tìm heading kiểu: số người bị ảnh hưởng bởi tình trạng thiếu nước."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading x: “The number of people affected by water shortages”",
+              "p": "Đoạn D nêu số liệu: “at least two-thirds of the world's population lives with severe water scarcity”, và dự báo tới năm 2030 “half of the world's population will be living with water stress” — đều là số liệu về lượng người bị ảnh hưởng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the number of people affected by water shortages",
+              "p": "at least two-thirds of the world's population lives with severe water scarcity"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "x"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "iv",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quotesEn": [
+          "The device is aimed at a wide variety of users – from homeowners in the developing world who do not have a constant supply of water to people living off the grid in rural parts of the US."
+        ],
+        "quoteEn": "The device is aimed at a wide variety of users – from homeowners in the developing world who do not have a constant supply of water to people living off the grid in rural parts of the US."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E đang nói về điều gì? Cần tìm heading kiểu: các nhóm khách hàng khác nhau có thể dùng thiết bị."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iv: “The range of potential customers for the device”",
+              "p": "Đoạn E: thiết bị “aimed at a wide variety of users – from homeowners in the developing world … to people living off the grid in rural parts of the US” — nhắm tới nhiều nhóm khách hàng khác nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the range of potential customers for the device",
+              "p": "aimed at a wide variety of users"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iv"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "viii",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quotesEn": [
+          "We are a venture with a social mission.",
+          "We do realise, though, that to be a viable company there is a bottom line to keep in mind"
+        ],
+        "quoteEn": "We do realise, though, that to be a viable company there is a bottom line to keep in mind"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F đang nói về điều gì? Cần tìm heading kiểu: lợi nhuận không phải mục tiêu hàng đầu."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading viii: “Profit not the primary goal”",
+              "p": "Đoạn F: Janssen nói “we are a venture with a social mission”, trọng tâm là ứng dụng ở “developing world and humanitarian sector”, chỉ thêm rằng vẫn “there is a bottom line to keep in mind” để công ty tồn tại — lợi nhuận chỉ là điều cần cân nhắc, không phải mục tiêu chính."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "profit not the primary goal",
+              "p": "a venture with a social mission"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "viii"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quotesEn": [
+          "It has raised £340,000 in funding so far.",
+          "Within two years, he says, the company aims to be selling 1,000 units a month, mainly in the humanitarian field."
+        ],
+        "quoteEn": "It has raised £340,000 in funding so far."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn G đang nói về điều gì? Cần tìm heading kiểu: việc huy động vốn để sản xuất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading i: “Getting the finance for production”",
+              "p": "Đoạn G: công ty “has raised £340,000 in funding so far” và đặt mục tiêu bán “1,000 units a month” trong hai năm — gắn với việc gọi vốn để mở rộng sản xuất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "getting the finance for production",
+              "p": "has raised £340,000 in funding so far"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "i"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "wheels",
+      "evidence": {
+        "quoteEn": "and it’s easy to transport, thanks to its two wheels."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thiết bị dễ mang đi tới nhiều nơi nhờ có gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “as it has ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “The device can be used in different locations, as it has ______”.",
+              "p": "Bài viết: “it’s easy to transport, thanks to its two wheels” — dễ di chuyển nhờ hai bánh xe."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "as it has ______",
+              "p": "thanks to its two wheels"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là wheels."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "wheels"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "film",
+      "evidence": {
+        "quoteEn": "flows as a thin film between a sheet of double glazing and the surface of a solar panel"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nước chảy qua bề mặt tấm pin năng lượng mặt trời dưới dạng gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a ______ of water flows over a solar panel” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a ______ of water flows over a solar panel”.",
+              "p": "Bài viết: nước “flows as a thin film between a sheet of double glazing and the surface of a solar panel” — chảy thành một lớp màng mỏng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a ______ of water",
+              "p": "flows as a thin film"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là film."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "film"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "filter",
+      "evidence": {
+        "quoteEn": "The device has a very simple filter to trap particles"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các hạt bẩn trong nước bị giữ lại nhờ bộ phận nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “Any particles in the water are caught in a ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Any particles in the water are caught in a ______”.",
+              "p": "Bài viết: “The device has a very simple filter to trap particles” — một bộ lọc đơn giản giữ lại các hạt bẩn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "caught in a ______",
+              "p": "a very simple filter to trap particles"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là filter."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "filter"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "waste",
+      "evidence": {
+        "quoteEn": "one for the waste"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài nước tinh khiết, ống còn lại dẫn ra loại gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “all types of ______ come out through another [tube]” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “all types of ______ come out through another”.",
+              "p": "Bài viết: “There are two tubes for liquid coming out: one for the waste … and another for the distilled water” — một ống dẫn chất thải, ống còn lại dẫn nước tinh khiết."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "all types of ______",
+              "p": "one for the waste"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là waste."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "waste"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "performance",
+      "evidence": {
+        "quoteEn": "The performance of the unit is shown on an LCD screen"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Màn hình hiển thị thông tin gì về thiết bị?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “A screen displays the ______ of the device” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “A screen displays the ______ of the device”.",
+              "p": "Bài viết: “The performance of the unit is shown on an LCD screen” — màn hình LCD hiển thị hiệu suất hoạt động."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "displays the ______",
+              "p": "the performance of the unit is shown"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là performance."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "performance"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "servicing",
+      "evidence": {
+        "quoteEn": "transmitted to the company which provides servicing when necessary."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Công ty cần biết khi nào thiết bị cần điều gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “requires ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “so that they know when the Desolenator requires ______”.",
+              "p": "Bài viết: thông tin “transmitted to the company which provides servicing when necessary” — được gửi tới công ty để họ bảo trì khi cần."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "requires ______",
+              "p": "provides servicing when necessary"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là servicing."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "servicing"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "the same story often takes a variety of forms in different parts of the world."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu “In fairy tales, details of the plot …” cần nối với vế kết nào trong A–F?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu nói về chi tiết cốt truyện trong các câu chuyện cổ tích — cần vế kết mô tả đặc điểm đó.",
+              "p": "Bài viết: “the same story often takes a variety of forms in different parts of the world” — cùng một câu chuyện như Little Red Riding Hood có nhiều biến thể khác nhau ở từng vùng: có bản sói ăn bà, có bản sói nhốt bà vào tủ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "show considerable global variation (C)",
+              "p": "the same story often takes a variety of forms in different parts of the world"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chi tiết cốt truyện thay đổi nhiều theo từng vùng, khớp với vế C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Yet in his analysis such elements were just as flexible as seemingly trivial details."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu “Tehrani rejects the idea that the useful lessons for life in fairy tales …” cần nối với vế kết nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu nói Tehrani phản bác quan điểm về vai trò của các bài học sống còn trong truyện cổ tích.",
+              "p": "Bài viết: nhiều người tin truyện tồn tại nhờ chứa các thông tin cảnh báo hữu ích, nhưng khi xem xét chúng, Tehrani thấy “such elements were just as flexible as seemingly trivial details” — các yếu tố đó cũng dễ biến đổi như những chi tiết vụn vặt, nên không thể là lý do khiến truyện tồn tại lâu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "are the reason for their survival (B)",
+              "p": "such elements were just as flexible as seemingly trivial details"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tehrani bác bỏ việc các bài học sống còn giúp truyện tồn tại — khớp với vế B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "That hasn’t stopped anthropologists, folklorists* and other academics devising theories to explain the importance of fairy tales in human society."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu “Various theories about the social significance of fairy tales …” cần nối với vế kết nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu nói về các lý thuyết giải thích ý nghĩa xã hội của truyện cổ tích.",
+              "p": "Bài viết: “We have this huge gap in our knowledge about the history and prehistory of storytelling … That hasn't stopped anthropologists, folklorists and other academics devising theories to explain the importance of fairy tales” — dù thiếu hiểu biết thực tế, người ta vẫn đưa ra nhiều lý thuyết."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have been developed without factual basis (F)",
+              "p": "this huge gap in our knowledge … hasn't stopped … devising theories"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Các lý thuyết được đưa ra dù thiếu cơ sở thực tế vững chắc — khớp với vế F."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "biologists compare the characteristics of living species in a process called ‘phylogenetic analysis’. Tehrani has used the same approach to compare related versions of fairy tales"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu “Insights into the development of fairy tales …” cần nối với vế kết nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu nói về cách tìm hiểu quá trình phát triển của truyện cổ tích.",
+              "p": "Bài viết: “biologists compare the characteristics of living species in a process called 'phylogenetic analysis'. Tehrani has used the same approach” — ông mượn phương pháp của sinh học để nghiên cứu truyện."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may be provided through methods used in biological research (A)",
+              "p": "Tehrani has used the same approach [phylogenetic analysis]"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hiểu biết về sự phát triển của truyện đến từ một phương pháp mượn của sinh học — khớp với vế A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "he ended up with 58 stories recorded from oral traditions."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu “All the fairy tales analysed by Tehrani …” cần nối với vế kết nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu nói về nguồn gốc của toàn bộ truyện mà Tehrani đã phân tích.",
+              "p": "Bài viết: “he ended up with 58 stories recorded from oral traditions” — toàn bộ 58 truyện đều được ghi lại từ truyền miệng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "were originally spoken rather than written (E)",
+              "p": "58 stories recorded from oral traditions"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Toàn bộ truyện đều bắt nguồn từ truyền miệng — khớp với vế E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Once his phylogenetic analysis had established that they were indeed related, he used the same methods to explore how they have developed and altered over time."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tehrani muốn biết liệu điều gì tồn tại giữa 58 câu chuyện khắp thế giới."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “find out if ______ existed among 58 stories from around the world”.",
+              "p": "Bài viết: “his phylogenetic analysis had established that they were indeed related” — phân tích cho thấy các truyện thực sự có liên hệ với nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "if ______ existed",
+              "p": "established that they were indeed related"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ phù hợp là “links” (D): mối liên hệ giữa các truyện."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "First he tested some assumptions about which aspects of the story alter least as it evolves, indicating their importance."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ông muốn biết phần nào của truyện thay đổi ít nhất, vì tin đó là phần quan trọng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “which aspects of the stories had fewest ______, as he believed these aspects would be the most important ones”.",
+              "p": "Bài viết: ông kiểm tra “which aspects of the story alter least as it evolves, indicating their importance” — phần biến đổi ít nhất khi truyện tiến hóa."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fewest ______",
+              "p": "alter least as it evolves"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ phù hợp là “variations” (F): ít biến đổi nhất."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "However, Tehrani found no significant difference in the rate of evolution of incidents compared with that of characters."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trái với niềm tin trước đó, một số thành phần trong truyện lại thay đổi theo thời gian."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “he found that some ______ that were included in a story tended to change over time”.",
+              "p": "Bài viết: giới folklorist tin tình tiết truyện quan trọng và ổn định hơn nhân vật, nhưng “Tehrani found no significant difference in the rate of evolution of incidents compared with that of characters” — các tình tiết (incidents) hóa ra cũng biến đổi tự do, không ổn định như người ta nghĩ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "some ______ … tended to change",
+              "p": "no significant difference in the rate of evolution of incidents"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ phù hợp là “events” (B): các tình tiết trong truyện."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Yet in his analysis such elements were just as flexible as seemingly trivial details."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ông cũng bất ngờ khi thấy những phần dường như mang một dạng cảnh báo lại không quan trọng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “parts of a story which seemed to provide some sort of ______ were unimportant”.",
+              "p": "Bài viết: ông xem xét “the cautionary elements of the story” nhưng thấy “such elements were just as flexible as seemingly trivial details” — các yếu tố cảnh báo hóa ra cũng dễ thay đổi như chi tiết vụn vặt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "some sort of ______",
+              "p": "the cautionary elements of the story"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ phù hợp là “warning” (C): yếu tố cảnh báo."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "blood-thirsty and gruesome aspects of the story, such as the eating of the grandmother by the wolf, turned out to be the best preserved of all."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Yếu tố nào ông thấy quan trọng nhất giúp truyện tồn tại lâu?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “The aspect that he found most important in a story's survival was ______”.",
+              "p": "Bài viết: “blood-thirsty and gruesome aspects of the story … turned out to be the best preserved of all” — chính những chi tiết đáng sợ, rùng rợn được giữ lại tốt nhất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "most important … was ______",
+              "p": "blood-thirsty and gruesome aspects … best preserved of all"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ phù hợp là “horror” (G): yếu tố kinh dị, rùng rợn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Tehrani’s analysis focused on Little Red Riding Hood in its many forms, which include another Western fairy tale known as The Wolf and the Kids. Checking for variants of these two tales and similar stories from Africa, East Asia and other regions, he ended up with 58 stories recorded from oral traditions."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tehrani dùng phương pháp gì để kiểm tra các ý tưởng của mình về truyện cổ tích?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: ông xem xét nhiều biến thể khác nhau của cùng một câu chuyện gốc (“looked at many different forms of the same basic story”).",
+              "p": "Bài viết: “Tehrani's analysis focused on Little Red Riding Hood in its many forms … he ended up with 58 stories recorded from oral traditions” — ông so sánh rất nhiều phiên bản của cùng câu chuyện gốc và các truyện tương tự."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "looked at many different forms of the same basic story",
+              "p": "Little Red Riding Hood in its many forms … he ended up with 58 stories"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phương pháp chính của ông là gom và so sánh nhiều biến thể của cùng câu chuyện."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không so sánh phiên bản truyền miệng với phiên bản viết — tất cả 58 truyện đều là truyện truyền miệng."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Các truyện ông chọn đều là biến thể liên quan tới nhau, không phải các truyện không liên quan từ nhiều nước."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Ông mượn kỹ thuật phân tích của sinh học để áp dụng cho truyện, không phải trực tiếp đối chiếu sự phát triển của truyện với sinh vật sống."
+            }
+          ]
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Even if they’re gruesome, they won’t stick unless they matter"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi bàn về quan điểm của Tehrani, Jack Zipes gợi ý điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: các yếu tố trong truyện chỉ tồn tại lâu nếu chúng có ý nghĩa sâu xa hơn (“only survive if they have a deeper significance”).",
+              "p": "Bài viết: Zipes nói “Even if they're gruesome, they won't stick unless they matter” — dù rùng rợn, chi tiết đó cũng chẳng tồn tại lâu nếu không thực sự có ý nghĩa quan trọng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "features of stories only survive if they have a deeper significance",
+              "p": "they won't stick unless they matter"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Zipes nhấn mạnh: chi tiết phải có ý nghĩa mới tồn tại lâu, không chỉ nhờ ghê rợn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Ý về việc Tehrani bỏ qua thay đổi vai trò của phụ nữ nằm ở câu tiếp theo, không phải nội dung câu này."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Zipes không nói truyện quá kinh dị thì không được xem trọng."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Zipes không trách Tehrani thổi phồng vai trò của yếu tố bạo lực, ông chỉ nói chi tiết ghê rợn thôi là chưa đủ."
+            }
+          ]
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "In Chinese and Japanese versions, often known as The Tiger Grandmother, the villain is a woman, and in both Iran and Nigeria, the victim is a boy."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vì sao Tehrani nhắc tới các phiên bản truyện cổ tích Trung Quốc và Nhật Bản?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: để cho thấy lý thuyết của Jack Zipes không đúng (“to indicate that Jack Zipes' theory is incorrect”).",
+              "p": "Bài viết: Zipes tin mô-típ phụ nữ là nạn nhân giải thích vì sao truyện như Little Red Riding Hood vẫn còn ý nghĩa, nhưng Tehrani chỉ ra rằng “In Chinese and Japanese versions … the villain is a woman, and in both Iran and Nigeria, the victim is a boy” — mô-típ đó không phổ biến toàn cầu như Zipes nghĩ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "to indicate that Jack Zipes' theory is incorrect",
+              "p": "it is not always true elsewhere … the villain is a woman … the victim is a boy"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ví dụ Trung Quốc, Nhật Bản, Iran, Nigeria phản bác đúng luận điểm của Zipes."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói tội phạm là một vấn đề toàn cầu."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Ông không nói mọi truyện cổ tích có ý nghĩa giống nhau — ngược lại, ông chỉ ra sự khác biệt giữa các nền văn hóa."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Ví dụ này dùng để phản bác Zipes, không phải để ủng hộ thêm cho lý thuyết của ông."
+            }
+          ]
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Clasen believes that scary stories teach us what it feels like to be afraid without having to experience real danger, and so build up resistance to negative emotions."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mathias Clasen tin điều gì về truyện cổ tích?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: truyện cổ tích là cách an toàn để học cách đối mặt với sự sợ hãi (“a safe way of learning to deal with fear”).",
+              "p": "Bài viết: “Clasen believes that scary stories teach us what it feels like to be afraid without having to experience real danger, and so build up resistance to negative emotions” — truyện giúp ta trải nghiệm cảm giác sợ mà không gặp nguy hiểm thật, từ đó xây khả năng chống chịu cảm xúc tiêu cực."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a safe way of learning to deal with fear",
+              "p": "teach us what it feels like to be afraid without having to experience real danger"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Truyện cho ta nếm cảm giác sợ một cách an toàn, giúp ta bền vững hơn với sự sợ hãi thật — khớp đáp án A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Không có ý nói một số người né tránh loại truyện này."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Clasen không bàn về việc các giá trị đạo đức trong truyện thay đổi theo xã hội."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Ngược lại, ông cho rằng truyện giúp xây khả năng chống chịu, không làm giảm khả năng đối mặt vấn đề thật."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1949 @@
+{
+  "pilotId": "cam15-test1",
+  "schemaVersion": 4,
+  "note": "Cam 15 R T1 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Nutmeg – a valuable spice",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Driverless cars",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "What is exploration?",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "oval",
+      "evidence": {
+        "quoteEn": "dense foliage of tough, dark green oval leaves"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: lá của cây nhục đậu khấu có hình dạng gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the leaves ... are ______ in shape” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the leaves of the tree are ______ in shape”.",
+              "p": "Bài viết: “dense foliage of tough, dark green oval leaves” — lá cây dày, xanh đậm, có hình oval."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ in shape",
+              "p": "tough, dark green oval leaves"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hình dạng lá được nêu rõ là oval."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "oval"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "husk",
+      "evidence": {
+        "quoteEn": "The fruit is encased in a flesh husk. When the fruit is ripe, this husk splits into two halves along a ridge running the length of the fruit."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bộ phận nào bao bọc quả và tách làm hai khi quả chín?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the ______ surrounds the fruit” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the ______ surrounds the fruit and breaks open when the fruit is ripe”.",
+              "p": "Bài viết: “The fruit is encased in a flesh husk … this husk splits into two halves” — lớp vỏ ngoài bọc quả và nứt ra khi quả chín."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "breaks open when the fruit is ripe",
+              "p": "this husk splits into two halves"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bộ phận đó chính là husk."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "husk"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "seed",
+      "evidence": {
+        "quoteEn": "These are the sources of the two spices nutmeg and mace, the former being produced from the dried seed and the latter from the aril."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bộ phận nào của quả được dùng để làm ra spice nutmeg?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the ______ is used to produce the spice nutmeg” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the ______ is used to produce the spice nutmeg”.",
+              "p": "Bài viết: nutmeg “being produced from the dried seed” — gia vị nutmeg được làm từ hạt phơi khô."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "produce the spice nutmeg",
+              "p": "produced from the dried seed"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bộ phận đó chính là seed."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "seed"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "mace",
+      "evidence": {
+        "quoteEn": "These are the sources of the two spices nutmeg and mace, the former being produced from the dried seed and the latter from the aril."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Lớp vỏ được gọi là aril dùng để sản xuất ra loại gia vị nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “used to produce ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the covering known as the aril is used to produce ______”.",
+              "p": "Bài viết: “the two spices nutmeg and mace … the latter from the aril” — mace (loại thứ hai) được làm từ aril."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "used to produce ______",
+              "p": "the latter from the aril"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Gia vị đó chính là mace."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "mace"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "They sold nutmeg for high prices to merchants based in Venice, but they never revealed the exact location of the source of this extremely valuable commodity."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vào thời Trung Cổ, hầu hết người châu Âu có biết nhục đậu khấu được trồng ở đâu không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “most Europeans knew where nutmeg was grown” (hầu hết người châu Âu biết nơi trồng nhục đậu khấu).",
+              "p": "Bài viết: người Ả Rập bán nhục đậu khấu cho thương nhân Venice nhưng “never revealed the exact location of the source” — không bao giờ hé lộ nguồn gốc thật."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "most Europeans knew where nutmeg was grown",
+              "p": "never revealed the exact location of the source"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định ngược lại: nguồn gốc nhục đậu khấu được giữ kín, không ai biết."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "By 1617, the VOC was the richest commercial operation in the world."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "VOC có phải là công ty thương mại lớn đầu tiên trên thế giới không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói VOC là “the world's first major trading company” (công ty thương mại lớn đầu tiên trên thế giới).",
+              "p": "Bài chỉ nói VOC “was the richest commercial operation in the world” — giàu nhất, không nói gì về việc là công ty đầu tiên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the world's first major trading company",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ đề cập độ giàu có của VOC, không có thông tin về thứ tự ra đời."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Intent on securing their hold over every nutmeg-producing island, the Dutch offered a trade: if the British would give them the island of Run, they would in turn give Britain a distant and much less valuable island in North America."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sau Hiệp ước Breda, người Hà Lan có kiểm soát mọi đảo trồng nhục đậu khấu không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Hà Lan “had control of all the islands where nutmeg grew” sau hiệp ước.",
+              "p": "Bài viết: Hà Lan muốn “securing their hold over every nutmeg-producing island” nên đổi đảo Manhattan để lấy đảo Run — đảo cuối cùng còn lại. Kết quả: “The Dutch now had a monopoly over the nutmeg trade”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "had control of all the islands where nutmeg grew",
+              "p": "securing their hold over every nutmeg-producing island"
+            },
+            {
+              "q": "monopoly",
+              "p": "The Dutch now had a monopoly over the nutmeg trade"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đổi được đảo Run xong, Hà Lan độc quyền toàn bộ các đảo trồng nhục đậu khấu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Arabs",
+      "evidence": {
+        "quoteEn": "Throughout this period, the Arabs were the exclusive importers of the spice to Europe."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai là người mang nhục đậu khấu đến châu Âu thời Trung Cổ?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “brought to Europe by the ______” cần một danh từ chỉ người/nhóm người."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Nutmeg was brought to Europe by the ______”.",
+              "p": "Bài viết: “the Arabs were the exclusive importers of the spice to Europe” — người Ả Rập là bên độc quyền nhập khẩu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "brought to Europe by the ______",
+              "p": "the exclusive importers of the spice to Europe"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhóm người đó là Arabs."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Arabs"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "plague",
+      "evidence": {
+        "quoteEn": "thousands of people across Europe were dying of the plague, a highly contagious and deadly disease"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhu cầu nhục đậu khấu tăng vì người ta tin nó chữa được bệnh gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “effective against the disease known as the ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “believed to be effective against the disease known as the ______”.",
+              "p": "Bài viết: “thousands of people across Europe were dying of the plague … they decided nutmeg held the cure” — người ta tin nhục đậu khấu trị được bệnh dịch hạch."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "effective against the disease known as the ______",
+              "p": "they decided nutmeg held the cure"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bệnh đó là plague."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "plague"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "lime",
+      "evidence": {
+        "quoteEn": "all exported nutmeg was covered with lime to make sure there was no chance a fertile seed which could be grown elsewhere would leave the islands"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người Hà Lan phủ chất gì lên nhục đậu khấu xuất khẩu để tránh bị trồng lại nơi khác?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “put ______ on nutmeg” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “put ______ on nutmeg to avoid it being cultivated outside the islands”.",
+              "p": "Bài viết: “all exported nutmeg was covered with lime” — mọi lô nhục đậu khấu xuất khẩu được phủ vôi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "put ______ on nutmeg",
+              "p": "covered with lime"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chất đó là lime (vôi)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "lime"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Run",
+      "evidence": {
+        "quoteEn": "One of the Banda Islands, a sliver of land called Run, only 3 km long by less than 1 km wide, was under the control of the British."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đảo nào cuối cùng người Hà Lan giành được từ tay người Anh?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “obtained the island of ______” cần một danh từ riêng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “finally obtained the island of ______ from the British”.",
+              "p": "Bài viết: đảo Run — “a sliver of land called Run … was under the control of the British” — rồi Hà Lan đổi đảo Manhattan để lấy đảo này."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "obtained the island of ______",
+              "p": "if the British would give them the island of Run"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đảo đó là Run."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Run"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Mauritius",
+      "evidence": {
+        "quoteEn": "Then, in 1770, a Frenchman named Pierre Poivre successfully smuggled nutmeg plants to safety in Mauritius, an island off the coast of Africa."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Năm 1770, cây nhục đậu khấu được lén mang đến đảo nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “nutmeg plants were secretly taken to ______” cần một danh từ riêng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “1770 – nutmeg plants were secretly taken to ______”.",
+              "p": "Bài viết: Pierre Poivre “smuggled nutmeg plants to safety in Mauritius” — lén đưa cây nhục đậu khấu đến đảo Mauritius."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "secretly taken to ______",
+              "p": "smuggled nutmeg plants to safety in"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đảo đó là Mauritius."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Mauritius"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "tsunami",
+      "evidence": {
+        "quoteEn": "in 1778, a volcanic eruption in the Banda region caused a tsunami that wiped out half the nutmeg groves"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Năm 1778, thảm họa gì đã phá hủy một nửa vườn nhục đậu khấu ở Banda?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “destroyed by a ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “half the Banda Islands' nutmeg plantations were destroyed by a ______”.",
+              "p": "Bài viết: núi lửa phun trào “caused a tsunami that wiped out half the nutmeg groves” — sóng thần cuốn sạch nửa vườn cây."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "destroyed by a ______",
+              "p": "caused a tsunami that wiped out half the nutmeg groves"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thảm họa đó là tsunami."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "tsunami"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "At present, the average car spends more than 90 percent of its life parked."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc đến khoảng thời gian một chiếc xe không được sử dụng. Đề viết: “the amount of time when a car is not in use”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về lượng thời gian xe nằm không (“the amount of time when a car is not in use”).",
+              "p": "Đoạn C: “the average car spends more than 90 percent of its life parked” — xe đậu không dùng tới hơn 90% thời gian tồn tại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the amount of time when a car is not in use",
+              "p": "spends more than 90 percent of its life parked"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "If the vehicle can do some or all of the driving, it may be possible to be productive, to socialise or simply to relax while automation systems have responsibility for safe control of the vehicle."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu nhiều lợi ích của xe tự lái cho từng cá nhân. Đề viết: “several advantages of driverless vehicles for individual road-users”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn liệt kê nhiều lợi ích cho người đi đường (“several advantages … for individual road-users”).",
+              "p": "Đoạn B: an toàn hơn, rồi “possible to be productive, to socialise or simply to relax”, và cả “older or disabled travellers” được tự do di chuyển hơn — một loạt lợi ích cho cá nhân."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "several advantages of driverless vehicles for individual road-users",
+              "p": "possible to be productive, to socialise or simply to relax"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "drivers will have the freedom to select one that best suits their needs for a particular journey, rather than making a compromise across all their requirements."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói về việc chọn xe phù hợp nhất cho từng chuyến đi. Đề viết: “the opportunity of choosing the most appropriate vehicle for each trip”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói cơ hội chọn xe phù hợp nhất cho mỗi chuyến đi (“choosing the most appropriate vehicle for each trip”).",
+              "p": "Đoạn E: “drivers will have the freedom to select one that best suits their needs for a particular journey” — được tự do chọn xe hợp nhất cho từng hành trình."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the opportunity of choosing the most appropriate vehicle for each trip",
+              "p": "the freedom to select one that best suits their needs for a particular journey"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "these can most probably be conquered within the next 10 years."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn ước tính thời gian để giải quyết một số vấn đề. Đề viết: “an estimate of how long it will take to overcome a number of problems”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn đưa ra mốc thời gian để vượt qua các thách thức (“an estimate of how long it will take to overcome a number of problems”).",
+              "p": "Đoạn G: “there are many challenges that need to be addressed but … these can most probably be conquered within the next 10 years” — ước tính khoảng 10 năm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an estimate of how long it will take to overcome a number of problems",
+              "p": "conquered within the next 10 years"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "This faster rate of turnover may mean that vehicle production will not necessarily decrease"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn gợi ý xe tự lái có thể không làm giảm số xe được sản xuất. Đề viết: “the use of driverless cars may have no effect on the number of vehicles manufactured”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn gợi ý xe tự lái có thể không ảnh hưởng tới số lượng xe sản xuất (“may have no effect on the number of vehicles manufactured”).",
+              "p": "Đoạn D: xe bị thay mới nhanh hơn nên “this faster rate of turnover may mean that vehicle production will not necessarily decrease” — sản lượng xe chưa chắc giảm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may have no effect on the number of vehicles manufactured",
+              "p": "vehicle production will not necessarily decrease"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "human error",
+      "evidence": {
+        "quoteEn": "research at the UK’s Transport Research Laboratory has demonstrated that more than 90 percent of road collisions involve human error as a contributory factor"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo số liệu của Transport Research Laboratory, phần lớn tai nạn giao thông có liên quan tới điều gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “partly due to ______” cần một danh từ/cụm danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “most motor accidents are partly due to ______”.",
+              "p": "Bài viết: “more than 90 percent of road collisions involve human error as a contributory factor” — hơn 90% vụ va chạm có liên quan tới lỗi con người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "partly due to ______",
+              "p": "involve human error as a contributory factor"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cụm cần điền là human error."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "human error"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "car-sharing",
+      "answerAlternatives": [
+        "car sharing"
+      ],
+      "evidence": {
+        "quoteEn": "Automation means that initiatives for car-sharing become much more viable, particularly in urban areas with significant travel demand."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Loại hình dịch vụ nào sẽ trở nên khả thi hơn nhờ tự động hóa, đặc biệt ở thành phố?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “schemes for ______” cần một danh từ/cụm danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “schemes for ______ will be more workable”.",
+              "p": "Bài viết: “initiatives for car-sharing become much more viable” — các sáng kiến chia sẻ xe trở nên khả thi hơn nhiều, đặc biệt ở đô thị."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "schemes for ______",
+              "p": "initiatives for car-sharing"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cụm cần điền là car-sharing."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "car-sharing"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "ownership",
+      "evidence": {
+        "quoteEn": "Modelling work by the University of Michigan Transportation Research Institute suggests automated vehicles might reduce vehicle ownership by 43 percent"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo nghiên cứu của University of Michigan, xe tự động có thể làm giảm điều gì tới 43%?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a 43 percent drop in ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a 43 percent drop in ______ of cars”.",
+              "p": "Bài viết: “automated vehicles might reduce vehicle ownership by 43 percent” — giảm tỷ lệ sở hữu xe."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a 43 percent drop in ______",
+              "p": "reduce vehicle ownership by 43 percent"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là ownership."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ownership"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "mileage",
+      "evidence": {
+        "quoteEn": "but that vehicles’ average annual mileage double as a result."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điều gì ở mỗi xe sẽ tăng gấp đôi mỗi năm theo nghiên cứu này?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the yearly ______ of each car” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the yearly ______ of each car would … be twice as high”.",
+              "p": "Bài viết: “vehicles' average annual mileage double as a result” — số km đi được mỗi năm tăng gấp đôi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the yearly ______",
+              "p": "average annual mileage"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là mileage."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "mileage"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "C",
+      "answerPair": [
+        23,
+        24
+      ],
+      "correctLetters": [
+        "C",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "it may be possible to be productive, to socialise or simply to relax while automation systems have responsibility for safe control of the vehicle."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai lợi ích của xe tự động mà tác giả nêu ra:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý C: hành khách có thể làm việc khác thay vì lái xe (“spend journeys doing something other than driving”).",
+              "p": "Bài viết: “it may be possible to be productive, to socialise or simply to relax” trong khi xe tự vận hành — đúng ý làm việc khác ngoài lái xe."
+            },
+            {
+              "q": "Ý D: người khó khăn khi lái xe có thể tự đi lại độc lập (“travel independently”).",
+              "p": "Bài viết: “those who are challenged by existing mobility models – such as older or disabled travellers – may be able to enjoy significantly greater travel autonomy” — người già, người khuyết tật được tự chủ đi lại hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "spend journeys doing something other than driving",
+              "p": "be productive, to socialise or simply to relax"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả hai ý C và D đều được bài nêu rõ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C và D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nhắc tới việc tiết kiệm chi phí đi lại (“considerable cost savings”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không có chi tiết về việc dễ tìm chỗ đậu xe ở đô thị (“easier to find parking spaces”)."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Bài không nói giảm ô nhiễm nhờ giảm số xe (“a reduction in pollution”)."
+            }
+          ]
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "D",
+      "answerPair": [
+        23,
+        24
+      ],
+      "correctLetters": [
+        "C",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "those who are challenged by existing mobility models – such as older or disabled travellers – may be able to enjoy significantly greater travel autonomy."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 23–24 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý D: người gặp khó khăn khi lái xe có thể tự đi lại độc lập.",
+              "p": "Bài viết: “older or disabled travellers … may be able to enjoy significantly greater travel autonomy” — người già, người khuyết tật được tự do đi lại hơn nhiều."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "people who find driving physically difficult could travel independently",
+              "p": "older or disabled travellers … enjoy significantly greater travel autonomy"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý D; đi cùng C trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần loại đáp án ở câu 23."
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "A",
+      "answerPair": [
+        25,
+        26
+      ],
+      "correctLetters": [
+        "A",
+        "E"
+      ],
+      "evidence": {
+        "quoteEn": "the societal changes that may be required for communities to trust and accept automated vehicles as being a valuable part of the mobility landscape."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai thách thức cho việc phát triển xe tự động mà tác giả nêu ra:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý A: cần đảm bảo công chúng tin tưởng xe tự động (“the general public has confidence in automated vehicles”).",
+              "p": "Bài viết: “the societal changes that may be required for communities to trust and accept automated vehicles” — cần thay đổi xã hội để cộng đồng tin tưởng và chấp nhận."
+            },
+            {
+              "q": "Ý E: xe tự động phải thích ứng với nhiều điều kiện lái xe khác nhau (“adapt to various different driving conditions”).",
+              "p": "Bài viết: “the technical difficulties in ensuring that the vehicle works reliably in the infinite range of traffic, weather and road situations it might encounter” — khó khăn kỹ thuật để xe hoạt động ổn trong vô số điều kiện."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "making sure the general public has confidence in automated vehicles",
+              "p": "communities to trust and accept automated vehicles"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "A và E đều có bằng chứng rõ trong đoạn F."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A và E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không bàn tốc độ chuyển đổi từ xe thường sang xe tự động (“managing the pace of transition”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nói cách bồi thường cho lái xe chuyên nghiệp mất việc (“compensate professional drivers”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nhắc việc xây hạ tầng đường sá riêng cho xe tự động (“setting up the infrastructure”)."
+            }
+          ]
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "E",
+      "answerPair": [
+        25,
+        26
+      ],
+      "correctLetters": [
+        "A",
+        "E"
+      ],
+      "evidence": {
+        "quoteEn": "the technical difficulties in ensuring that the vehicle works reliably in the infinite range of traffic, weather and road situations it might encounter"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 25–26 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý E: xe tự động phải thích ứng với nhiều điều kiện lái xe khác nhau.",
+              "p": "Bài viết: khó khăn kỹ thuật để xe “works reliably in the infinite range of traffic, weather and road situations” — hoạt động ổn định trong vô vàn điều kiện giao thông, thời tiết, đường xá khác nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "getting automated vehicles to adapt to various different driving conditions",
+              "p": "the infinite range of traffic, weather and road situations it might encounter"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý E; đi cùng A trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần loại đáp án ở câu 25."
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "just as it nowadays no doubt helps the last nomadic Penan maintain their existence in the depleted forests of Borneo, and a visitor negotiate the subways of New York."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả nhắc tới khách du lịch ở New York nhằm minh họa điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: khám phá là một phần vốn có của con người (“exploration is an intrinsic element of being human”).",
+              "p": "Bài viết: cùng một “questing nature” giúp cả người Penan du mục sống trong rừng Borneo và một du khách xoay xở trong hệ thống subway New York — bản năng tìm hiểu có ở mọi người, mọi nơi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "exploration is an intrinsic element of being human",
+              "p": "this questing nature of ours … helps … a visitor negotiate the subways of New York"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ví dụ về New York cho thấy bản năng khám phá là phổ quát, có ở mọi người."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói hầu hết người ta hào hứng với khám phá (“most people are enthusiastic about exploring”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nói khám phá dẫn tới kết quả bất ngờ (“can lead to surprising results”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói đa số thấy khám phá đáng sợ (“most people find exploration daunting”)."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "That, however, doesn’t take away from the fact that we all have this enquiring instinct, even today"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo đoạn hai, tác giả nhìn nhận thế nào về các nhà thám hiểm?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: họ hành động theo một bản năng mà ai cũng có (“an urge that is common to everyone”).",
+              "p": "Bài viết: dù có kiểu người thiên về mạo hiểm hơn, nhưng “we all have this enquiring instinct, even today” — bản năng tìm hiểu là của chung mọi người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an urge that is common to everyone",
+              "p": "we all have this enquiring instinct, even today"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định bản năng khám phá là của tất cả mọi người, không riêng nhà thám hiểm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không so sánh lợi ích và bất lợi từ khám phá của họ."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói giá trị chính của họ là dạy người khác (“teaching others”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói họ thiên về vài ngành nghề cụ thể hơn ngành khác."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "used the landscape to suggest the desires and fears of his characters. He is delving into matters we all recognise because they are common to humanity."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả nhắc tới cách Hardy miêu tả Egdon Heath để gợi ý điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: mục đích của Hardy là khám phá trạng thái cảm xúc con người (“investigate people's emotional states”).",
+              "p": "Bài viết: Hardy “used the landscape to suggest the desires and fears of his characters” — dùng khung cảnh để gợi lên khát vọng và nỗi sợ của nhân vật, những cảm xúc chung của con người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Hardy's aim was to investigate people's emotional states",
+              "p": "suggest the desires and fears of his characters"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hardy khai thác cảnh vật để nói về cảm xúc con người — khớp đáp án C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Egdon Heath là vùng đất hư cấu, không phải trải nghiệm khám phá thật của Hardy."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói Hardy hiểu sai về bản chất khám phá."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói mục đích của Hardy là ca ngợi sự cô độc (“attraction of isolation”)."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "as if the process of discovery is now on the decline, though the truth is that we have named only one and a half million of this planet’s species, and there may be more than 10 million"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn bốn, tác giả nhắc tới “a golden age” nhằm gợi ý điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: chúng ta sai khi nghĩ khám phá không còn cần thiết (“we are wrong to think that exploration is no longer necessary”).",
+              "p": "Bài viết: người ta tưởng khám phá đã “on the decline” từ sau thế kỷ 19, nhưng thực tế “we have named only one and a half million of this planet's species, and there may be more than 10 million” — còn quá nhiều thứ chưa được khám phá."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "we are wrong to think that exploration is no longer necessary",
+              "p": "the truth is that we have named only one and a half million … there may be more than 10 million"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả dùng số liệu để phản bác quan niệm khám phá đã hết cần thiết."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không so sánh lượng thông tin hữu ích tạo ra qua từng thời kỳ."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói số người quan tâm khám phá giảm so với thế kỷ 19."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nói các phát triển gần đây khiến khám phá kém thú vị hơn."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "tends to reflect the field of endeavour of each pioneer."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn sáu, khi bàn về định nghĩa khám phá, tác giả cho rằng điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: người ta thường gắn khám phá với chính lĩnh vực chuyên môn của mình (“relate exploration to their own professional interests”).",
+              "p": "Bài viết: “Each definition is slightly different – and tends to reflect the field of endeavour of each pioneer” — mỗi định nghĩa phản ánh đúng ngành nghề của người đưa ra nó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "people tend to relate exploration to their own professional interests",
+              "p": "tends to reflect the field of endeavour of each pioneer"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ định nghĩa của mỗi người gắn với lĩnh vực họ theo đuổi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Không nói có người hiểu sai bản chất khám phá."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nói định nghĩa chung đã thay đổi theo thời gian."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không so sánh độ chính xác giữa định nghĩa của học giả và người thường."
+            }
+          ]
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "this is what interests me: how a fresh interpretation, even of a well-travelled route, can give its readers new insights."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn cuối, tác giả giải thích ông quan tâm tới điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: khả năng con người nhìn ra góc nhìn mới ở những nơi đã quen (“cast new light on places that may be familiar”).",
+              "p": "Bài viết: “how a fresh interpretation, even of a well-travelled route, can give its readers new insights” — một cách diễn giải mới, dù về con đường đã quá quen, vẫn có thể mang lại hiểu biết mới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the human ability to cast new light on places that may be familiar",
+              "p": "a fresh interpretation, even of a well-travelled route, can give its readers new insights"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả nói rõ điều khiến ông quan tâm là góc nhìn mới cho nơi đã quen thuộc."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói về việc tính cách phản ánh qua lựa chọn địa điểm."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không bàn cách travel writing đã tiến hóa theo nhu cầu độc giả."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói về cảm xúc nhà văn với nơi họ khám phá."
+            }
+          ]
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "‘If I’d gone across by camel when I could have gone by car, it would have been a stunt.’"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai nhắc tới việc phương tiện di chuyển sử dụng có ý nghĩa quan trọng?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “He referred to the relevance of the form of transport used.”",
+              "p": "Wilfred Thesiger (E): “If I'd gone across by camel when I could have gone by car, it would have been a stunt” — ông cho rằng nếu có xe hơi mà vẫn cưỡi lạc đà thì chỉ là màn trình diễn, cho thấy phương tiện dùng có ý nghĩa với ông."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the relevance of the form of transport used",
+              "p": "gone across by camel when I could have gone by car"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thesiger là người duy nhất bàn về việc chọn phương tiện di chuyển (lạc đà thay vì xe hơi)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "The traveller ‘who has for weeks or months seen himself only as a puny and irrelevant alien crawling laboriously over a country in which he has no roots and no background, suddenly encounters his other self, a relatively solid figure, with a place in the minds of certain people’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai miêu tả cảm giác khi trở về nhà sau một chuyến đi dài?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “He described feelings on coming back home after a long journey.”",
+              "p": "Peter Fleming (A): “talks of the moment when the explorer returns to the existence he has left behind with his loved ones”, rồi trích lời tả cảm giác từ “puny and irrelevant alien” bỗng thành “a relatively solid figure” khi về nhà."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "feelings on coming back home after a long journey",
+              "p": "the moment when the explorer returns to the existence he has left behind with his loved ones"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Fleming là người duy nhất mô tả cảm xúc lúc trở về sau chuyến đi dài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Robin Hanbury-Tenison, a campaigner on behalf of remote so-called ‘tribal’ peoples"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai làm việc vì lợi ích của một nhóm người cụ thể?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “He worked for the benefit of specific groups of people.”",
+              "p": "Robin Hanbury-Tenison (D) được giới thiệu là “a campaigner on behalf of remote so-called 'tribal' peoples” — người vận động vì lợi ích của các tộc người bản địa xa xôi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "worked for the benefit of specific groups of people",
+              "p": "a campaigner on behalf of remote so-called 'tribal' peoples"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ Hanbury-Tenison được mô tả gắn với việc bảo vệ một nhóm người cụ thể."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "To him, exploration meant bringing back information from a remote place regardless of any great self-discovery."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai không coi việc hiểu thêm về bản thân là phần bắt buộc của khám phá?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “He did not consider learning about oneself an essential part of exploration.”",
+              "p": "Wilfred Thesiger (E): với ông, khám phá chỉ là “bringing back information from a remote place regardless of any great self-discovery” — mang thông tin về từ nơi xa, bất kể có tự khám phá bản thân hay không."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "did not consider learning about oneself an essential part of exploration",
+              "p": "regardless of any great self-discovery"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thesiger nói rõ ông không cần tự khám phá bản thân để coi đó là exploration."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "‘An explorer is someone who has done something that no human has done before – and also done something scientifically useful.’"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai định nghĩa khám phá là vừa độc nhất vừa có giá trị với người khác?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “He defined exploration as being both unique and of value to others.”",
+              "p": "Ran Fiennes (B): “someone who has done something that no human has done before” (độc nhất) và “also done something scientifically useful” (có giá trị khoa học, tức có ích cho người khác)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "being both unique and of value to others",
+              "p": "done something that no human has done before … and also … scientifically useful"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Định nghĩa của Fiennes gồm đúng hai yếu tố: chưa ai làm và có ích."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "expeditions",
+      "answerAlternatives": [
+        "unique expeditions"
+      ],
+      "evidence": {
+        "quoteEn": "I’ve done a great many expeditions and each one was unique."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả nói ông đã thực hiện một số lượng lớn thứ gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a large number of ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “experience of a large number of ______”.",
+              "p": "Bài viết: “I've done a great many expeditions and each one was unique” — ông đã thực hiện rất nhiều chuyến thám hiểm, mỗi lần đều độc nhất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a large number of ______",
+              "p": "a great many expeditions"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là expeditions."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "expeditions"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "uncontacted",
+      "answerAlternatives": [
+        "isolated"
+      ],
+      "evidence": {
+        "quoteEn": "I’ve lived for months alone with isolated groups of people all around the world, even two ‘uncontacted tribes’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả là người lạ đầu tiên mà một số nhóm người trước đây thế nào từng gặp?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “certain previously ______ people” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the first stranger that certain previously ______ people had encountered”.",
+              "p": "Bài viết: ông từng sống cùng “isolated groups of people … even two 'uncontacted tribes'” — những bộ lạc trước đó chưa từng tiếp xúc với người ngoài."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "certain previously ______ people",
+              "p": "isolated groups of people … uncontacted tribes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ phù hợp nhất là uncontacted (một số đề chấp nhận cả isolated)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "uncontacted"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "surface",
+      "answerAlternatives": [
+        "land surface"
+      ],
+      "evidence": {
+        "quoteEn": "We know how the land surface of our planet lies; exploration of it is now down to the details – the habits of microbes, say, or the grazing behaviour of buffalo."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả nghĩ không còn cần khám phá thêm phần nào của Trái Đất, trừ vài câu hỏi cụ thể như cách trâu ăn cỏ?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “further exploration of Earth's ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “no need for further exploration of Earth's ______, except to answer specific questions such as how buffalo eat”.",
+              "p": "Bài viết: “We know how the land surface of our planet lies; exploration of it is now down to the details … the grazing behaviour of buffalo” — bề mặt đất đã được biết rõ, giờ chỉ còn các chi tiết nhỏ như thói quen ăn của trâu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "further exploration of Earth's ______",
+              "p": "the land surface of our planet"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là surface."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "surface"
+        }
+      ]
+    }
+  }
+}

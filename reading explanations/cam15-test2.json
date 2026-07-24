@@ -1,0 +1,1790 @@
+{
+  "pilotId": "cam15-test2",
+  "schemaVersion": 4,
+  "note": "Cam 15 R T2 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Could urban engineers learn from dance?",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Should we try to bring extinct species back to life?",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Having a laugh",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "That is not to suggest everyone should dance their way to work, however healthy and happy it might make us, but rather that the techniques used by choreographers to experiment with and design movement in dance could provide engineers with tools to stimulate new ideas in city-making."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới một cách dùng khiêu vũ nghe hấp dẫn nhưng tác giả không hề đề xuất. Đề viết: “reference to an appealing way of using dance that the writer is not proposing”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói tới một cách dùng dance hấp dẫn nhưng không phải điều tác giả đề xuất.",
+              "p": "Đoạn B: “That is not to suggest everyone should dance their way to work” — tác giả nói rõ mình không đề xuất chuyện mọi người khiêu vũ đi làm, dù việc đó “healthy and happy” (hấp dẫn)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an appealing way of using dance that the writer is not proposing",
+              "p": "not to suggest everyone should dance their way to work, however healthy and happy it might make us"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Whereas medieval builders improvised and adapted construction through their intimate knowledge of materials and personal experience of the conditions on a site, building designs are now conceived and stored in media technologies that detach the designer from the physical and social realities they are creating."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn có ví dụ đối lập giữa cách xây dựng ngày xưa và ngày nay. Đề viết: “an example of a contrast between past and present approaches to building”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần sự đối lập giữa cách tiếp cận xây dựng quá khứ và hiện tại.",
+              "p": "Đoạn C mở đầu bằng “Whereas” — thợ xây thời trung cổ dựa vào kinh nghiệm thực tế trên công trường, còn ngày nay thiết kế “are now conceived and stored in media technologies” tách rời thực tế. Đúng kiểu so sánh xưa/nay."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a contrast between past and present approaches to building",
+              "p": "medieval builders improvised ... whereas building designs are now conceived and stored in media technologies"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "Yet it shares with engineering the aim of designing patterns of movement within limitations of space."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới một mục tiêu chung giữa khiêu vũ và kỹ thuật đô thị. Đề viết: “mention of an objective of both dance and engineering”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần một mục tiêu chung của cả dance lẫn engineering.",
+              "p": "Đoạn F: “it shares with engineering the aim of designing patterns of movement within limitations of space” — choreography có chung mục tiêu thiết kế các kiểu chuyển động trong không gian giới hạn với kỹ thuật."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an objective of both dance and engineering",
+              "p": "shares with engineering the aim of designing patterns of movement within limitations of space"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "They failed to take into account that purpose-built street cafés could not operate in the hot sun without the protective awnings common in older buildings, and would need energy-consuming air conditioning instead, or that its giant car park would feel so unwelcoming that it would put people off getting out of their cars."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn có vấn đề bất ngờ nảy sinh vì bỏ qua yếu tố khí hậu. Đề viết: “reference to an unforeseen problem arising from ignoring the climate”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần vấn đề không lường trước được vì bỏ qua khí hậu.",
+              "p": "Đoạn D: các quán cà phê ngoài trời “could not operate in the hot sun without the protective awnings” — không tính tới nắng nóng nên phải dùng thêm điều hòa tốn năng lượng, một hậu quả không lường trước của thiết kế Peachtree."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an unforeseen problem arising from ignoring the climate",
+              "p": "purpose-built street cafés could not operate in the hot sun without the protective awnings"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "These barriers don’t just make it harder to cross the road: they divide communities and decrease opportunities for healthy transport. As a result, many are now being removed, causing disruption, cost, and waste."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích vì sao một số biện pháp vốn để giúp người đi bộ lại đang bị dỡ bỏ. Đề viết: “why some measures intended to help people are being reversed”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần lý do các biện pháp hỗ trợ (guard rails) đang bị đảo ngược/dỡ bỏ.",
+              "p": "Đoạn E: guard rails vốn là “an engineering solution to pedestrian safety”, nhưng vì chúng “divide communities and decrease opportunities for healthy transport” nên “many are now being removed” — bị tháo dỡ vì gây hại nhiều hơn lợi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "why some measures intended to help people are being reversed",
+              "p": "they divide communities ... As a result, many are now being removed"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "The ways we travel affect our physical and mental health, our social lives, our access to work and culture, and the air we breathe."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói giao thông ảnh hưởng tới đời sống con người. Đề viết: “reference to how transport has an impact on human lives”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần chỗ nói cách đi lại tác động tới cuộc sống con người.",
+              "p": "Đoạn A: “The ways we travel affect our physical and mental health, our social lives, our access to work and culture, and the air we breathe” — liệt kê hàng loạt mặt của đời sống bị ảnh hưởng bởi cách đi lại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how transport has an impact on human lives",
+              "p": "affect our physical and mental health, our social lives, our access to work and culture"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "safety",
+      "evidence": {
+        "quoteEn": "were an engineering solution to pedestrian safety based on models that prioritise the smooth flow of traffic."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Guard rails được lắp để cải thiện điều gì cho người đi bộ?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “improve the ______ of pedestrians” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “improve the ______ of pedestrians”.",
+              "p": "Bài viết: guard rails “were an engineering solution to pedestrian safety” — giải pháp kỹ thuật cho an toàn người đi bộ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "improve the ______",
+              "p": "an engineering solution to pedestrian safety"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“pedestrian safety” chính là từ cần điền: safety."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "safety"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "traffic",
+      "evidence": {
+        "quoteEn": "were an engineering solution to pedestrian safety based on models that prioritise the smooth flow of traffic."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Guard rails đảm bảo an toàn nhưng vẫn không cản trở sự di chuyển của cái gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the movement of ______ is not disrupted” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “ensuring that the movement of ______ is not disrupted”.",
+              "p": "Bài viết: mô hình ưu tiên “the smooth flow of traffic” — dòng xe cộ lưu thông trơn tru."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the movement of ______",
+              "p": "the smooth flow of traffic"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Yếu tố được ưu tiên lưu thông là traffic."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "traffic"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "carriageway",
+      "evidence": {
+        "quoteEn": "using staggered access points divide the crossing into two – one for each carriageway."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người đi bộ được dẫn qua đường từng phần, mỗi lần qua một cái gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “one ______ at a time” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “encouraged to cross one ______ at a time”.",
+              "p": "Bài viết: các điểm tiếp cận so le “divide the crossing into two – one for each carriageway” — chia lối qua đường làm hai, mỗi lần một làn đường."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "one ______ at a time",
+              "p": "one for each carriageway"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đơn vị qua đường từng lần là carriageway (làn đường)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "carriageway"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "mobile",
+      "evidence": {
+        "quoteEn": "introducing psychological barriers greatly impacting those that are the least mobile"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khó khăn tâm lý khi qua đường ảnh hưởng nặng nhất tới nhóm người như thế nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “particularly for less ______ people” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “particularly for less ______ people”.",
+              "p": "Bài viết: rào chắn tạo ra khó khăn tâm lý “greatly impacting those that are the least mobile” — ảnh hưởng nặng nhất tới người ít di chuyển được."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "less ______ people",
+              "p": "those that are the least mobile"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhóm bị ảnh hưởng nhiều nhất là người kém mobile."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "mobile"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "dangerous",
+      "evidence": {
+        "quoteEn": "encouraging others to make dangerous crossings to get around the guard rails."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một số người phản ứng bằng cách băng qua đường theo kiểu như thế nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “cross the road in a ______ way” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “some people cross the road in a ______ way”.",
+              "p": "Bài viết: rào chắn “encouraging others to make dangerous crossings to get around the guard rails” — khiến một số người băng qua đường nguy hiểm để tránh rào."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cross the road in a ______ way",
+              "p": "make dangerous crossings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Kiểu băng qua đường đó là dangerous."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "dangerous"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "communities",
+      "evidence": {
+        "quoteEn": "These barriers don’t just make it harder to cross the road: they divide communities and decrease opportunities for healthy transport."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Guard rails còn có tác động gì tới việc phân chia người dân trong khu vực?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “The guard rails separate ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “The guard rails separate ______”.",
+              "p": "Bài viết: “they divide communities and decrease opportunities for healthy transport” — rào chắn chia cắt các cộng đồng dân cư."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "separate ______",
+              "p": "divide communities"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thứ bị chia cắt là communities."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "communities"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "healthy",
+      "evidence": {
+        "quoteEn": "and decrease opportunities for healthy transport."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Guard rails khiến việc phát triển hình thức giao thông như thế nào trở nên khó hơn?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “forms of transport that are ______” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “make it more difficult to introduce forms of transport that are ______”.",
+              "p": "Bài viết: rào chắn “decrease opportunities for healthy transport” — giảm cơ hội cho các hình thức giao thông lành mạnh (đi bộ, xe đạp)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "forms of transport that are ______",
+              "p": "opportunities for healthy transport"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hình thức giao thông đó là healthy."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "healthy"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "how this emerging technology could be used to fully understand why various species went extinct in the first place, and therefore how we could use it to make genetic modifications which could prevent mass extinctions in the future."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói cách tránh việc nhiều loài khác tiếp tục biến mất. Đề viết: “a reference to how further disappearance of multiple species could be avoided”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần cách ngăn nhiều loài tiếp tục tuyệt chủng.",
+              "p": "Đoạn F: Shapiro muốn dùng công nghệ để “make genetic modifications which could prevent mass extinctions in the future” — thay đổi gen để ngăn tuyệt chủng hàng loạt sau này."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how further disappearance of multiple species could be avoided",
+              "p": "make genetic modifications which could prevent mass extinctions in the future"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "The basic premise involves using cloning technology to turn the DNA of extinct animals into a fertilised embryo, which is carried by the nearest relative still in existence – in this case, the abundant band-tailed pigeon – before being born as a living, breathing animal."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích cách tái tạo một loài tuyệt chủng chỉ dùng chính DNA của loài đó. Đề viết: “explanation of a way of reproducing an extinct animal using the DNA of only that species”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần cách tái tạo chỉ dùng DNA của chính loài tuyệt chủng, không lai ghép.",
+              "p": "Đoạn A: “using cloning technology to turn the DNA of extinct animals into a fertilised embryo” — nhân bản trực tiếp từ DNA loài đã mất, chỉ mượn cơ thể loài họ hàng (band-tailed pigeon) để mang thai, không pha trộn DNA."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reproducing an extinct animal using the DNA of only that species",
+              "p": "using cloning technology to turn the DNA of extinct animals into a fertilised embryo"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "ecosystems in the eastern US have suffered, as the lack of disturbance caused by thousands of passenger pigeons wrecking trees and branches means there has been minimal need for regrowth."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói một môi trường sống đã chịu hậu quả sau khi một loài tuyệt chủng. Đề viết: “reference to a habitat which has suffered following the extinction of a species”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần một habitat bị ảnh hưởng xấu sau khi loài đó biến mất.",
+              "p": "Đoạn D: “ecosystems in the eastern US have suffered” vì thiếu tác động phá vỡ tán rừng mà bồ câu viễn khách từng tạo ra — hệ sinh thái rừng miền đông nước Mỹ bị ảnh hưởng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a habitat which has suffered following the extinction of a species",
+              "p": "ecosystems in the eastern US have suffered ... minimal need for regrowth"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "the passenger pigeon’s existence came to an end on 1 September 1914, when the last living specimen died at Cincinnati Zoo."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu chính xác thời điểm một loài bị tuyệt chủng. Đề viết: “mention of the exact point at which a particular species became extinct”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần thời điểm chính xác một loài tuyệt chủng.",
+              "p": "Đoạn A nêu rõ ngày tháng: “came to an end on 1 September 1914, when the last living specimen died at Cincinnati Zoo” — mốc thời gian cụ thể loài bồ câu viễn khách tuyệt chủng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the exact point at which a particular species became extinct",
+              "p": "came to an end on 1 September 1914, when the last living specimen died"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "genetic traits",
+      "evidence": {
+        "quoteEn": "By pinpointing which genetic traits made it possible for mammoths to survive the icy climate of the tundra, the project’s goal is to return mammoths, or a mammoth-like species, to the area."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Church và nhóm đang cố xác định điều gì giúp voi ma mút sống được ở vùng lãnh nguyên?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “trying to identify the ______” cần một cụm danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “trying to identify the ______ which enabled mammoths to live in the tundra”.",
+              "p": "Bài viết: “pinpointing which genetic traits made it possible for mammoths to survive the icy climate of the tundra” — xác định các đặc điểm di truyền giúp voi ma mút sống sót."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "identify the ______",
+              "p": "pinpointing which genetic traits made it possible"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Điều họ cần xác định là genetic traits."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "genetic traits"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "heat loss",
+      "evidence": {
+        "quoteEn": "all for the purpose of reducing heat loss in the tundra"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các thay đổi thể chất khi đưa voi châu Á tới lãnh nguyên nhằm giảm bớt điều gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “to minimise ______” cần một cụm danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “involve certain physical adaptations to minimise ______”.",
+              "p": "Bài viết: các đặc điểm cần có đều “for the purpose of reducing heat loss in the tundra” — nhằm giảm thất thoát nhiệt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "minimise ______",
+              "p": "reducing heat loss in the tundra"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Điều cần giảm thiểu là heat loss."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "heat loss"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "ears",
+      "evidence": {
+        "quoteEn": "Necessary adaptations would include smaller ears, thicker hair, and extra insulating fat, all for the purpose of reducing heat loss in the tundra, and all traits found in the now extinct woolly mammoth."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài lông dày hơn, loài lai voi/ma mút cần có bộ phận nào với kích thước nhỏ hơn?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “______ of a reduced size” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the mammoth-like features of thicker hair, ______ of a reduced size”.",
+              "p": "Bài viết: “Necessary adaptations would include smaller ears, thicker hair, and extra insulating fat” — cần tai nhỏ hơn, lông dày hơn, thêm mỡ cách nhiệt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ of a reduced size",
+              "p": "smaller ears"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bộ phận nhỏ hơn đó là ears."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ears"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "fat",
+      "answerAlternatives": [
+        "insulating fat"
+      ],
+      "evidence": {
+        "quoteEn": "Necessary adaptations would include smaller ears, thicker hair, and extra insulating fat, all for the purpose of reducing heat loss in the tundra, and all traits found in the now extinct woolly mammoth."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài tai nhỏ và lông dày, loài lai cần có thêm nhiều hơn thứ gì để giữ ấm?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “more ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “and more ______”.",
+              "p": "Bài viết: cần thêm “extra insulating fat” — thêm lớp mỡ cách nhiệt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more ______",
+              "p": "extra insulating fat"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cốt lõi cần điền là fat; “insulating fat” cũng được chấp nhận vì trùng nghĩa với bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fat"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "emissions",
+      "answerAlternatives": [
+        "carbon emissions"
+      ],
+      "evidence": {
+        "quoteEn": "This repopulation of the tundra and boreal forests of Eurasia and North America with large mammals could also be a useful factor in reducing carbon emissions"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc đưa voi ma mút/loài lai trở lại lãnh nguyên còn có thể giúp giảm điều gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “decrease ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “could help to reduce temperatures and decrease ______”.",
+              "p": "Bài viết: việc tái lập quần thể động vật lớn “could also be a useful factor in reducing carbon emissions” — giúp giảm phát thải carbon."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "decrease ______",
+              "p": "reducing carbon emissions"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cốt lõi cần điền là emissions; “carbon emissions” cũng được chấp nhận vì trùng nghĩa với bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "emissions"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "The return of thylacines to Tasmania could help to ensure that devils are never again subjected to risks of this kind."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng đưa một loài tuyệt chủng về lại môi trường cũ có thể cải thiện sức khỏe cho một loài khác đang sống ở đó?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Reintroducing an extinct species to its original habitat could improve the health of a particular species living there.”",
+              "p": "Michael Archer (B): thylacine từng săn quỷ Tasmania nên hạn chế được bệnh khối u lây lan; “The return of thylacines to Tasmania could help to ensure that devils are never again subjected to risks of this kind” — đưa thylacine về giúp quỷ Tasmania khỏe mạnh hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "improve the health of a particular species living there",
+              "p": "ensure that devils are never again subjected to risks of this kind"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Archer nói rõ việc phục hồi thylacine giúp bảo vệ sức khỏe quỷ Tasmania."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "She prefers to focus the debate on how this emerging technology could be used to fully understand why various species went extinct in the first place"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng cần tập trung vào nguyên nhân khiến một loài tuyệt chủng?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “It is important to concentrate on the causes of an animal’s extinction.”",
+              "p": "Beth Shapiro (C): bà muốn “focus the debate on how this emerging technology could be used to fully understand why various species went extinct in the first place” — tập trung hiểu rõ nguyên nhân tuyệt chủng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "concentrate on the causes of an animal's extinction",
+              "p": "fully understand why various species went extinct in the first place"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Shapiro nhấn mạnh việc hiểu nguyên nhân tuyệt chủng là ưu tiên."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "a hybridized band-tailed pigeon, with the added nesting habits of a passenger pigeon, could, in theory, re-establish that forest disturbance, thereby creating a habitat necessary for a great many other native species to thrive."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng một loài được phục hồi có thể tác động tốt tới thảm thực vật của môi trường sống?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “A species brought back from extinction could have an important beneficial impact on the vegetation of its habitat.”",
+              "p": "Ben Novak (A): bồ câu lai “could, in theory, re-establish that forest disturbance, thereby creating a habitat necessary for a great many other native species to thrive” — giúp khôi phục chu trình phá vỡ tán rừng cần thiết cho cây cối tái sinh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an important beneficial impact on the vegetation of its habitat",
+              "p": "re-establish that forest disturbance, thereby creating a habitat necessary for ... other native species to thrive"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Novak nói rõ lợi ích cho rừng (thảm thực vật) nếu phục hồi tập tính làm tổ của bồ câu viễn khách."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "We know that what we are doing today is not enough, and we have to be willing to take some calculated and measured risks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng nỗ lực bảo tồn đa dạng sinh học hiện nay là chưa đủ?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Our current efforts at preserving biodiversity are insufficient.”",
+              "p": "Beth Shapiro (C): “We know that what we are doing today is not enough, and we have to be willing to take some calculated and measured risks” — thừa nhận nỗ lực hiện tại chưa đủ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "our current efforts at preserving biodiversity are insufficient",
+              "p": "what we are doing today is not enough"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Shapiro khẳng định trực tiếp là chưa đủ, cần chấp nhận rủi ro có tính toán."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Like other human emotions and expressions, laughter and humour psychological scientists with rich resources for studying human psychology, ranging from the development of language to the neuroscience of social perception."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn đầu, khi nhắc tới tiếng cười, tác giả nhấn mạnh điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: giá trị của tiếng cười đối với nghiên cứu khoa học (“its value to scientific research”).",
+              "p": "Bài viết: tiếng cười và sự hài hước cung cấp cho “psychological scientists ... rich resources for studying human psychology” — nguồn tư liệu quý để nghiên cứu tâm lý con người, từ ngôn ngữ đến khoa học thần kinh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "its value to scientific research",
+              "p": "rich resources for studying human psychology"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Trọng tâm câu cuối đoạn là tiếng cười giúp ích cho nghiên cứu khoa học, không dừng ở một khía cạnh cụ thể nào."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "“Development of language” chỉ là một ví dụ trong dải nguồn lực nghiên cứu, không phải trọng tâm chính."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài nhắc tiếng cười “universal across all human cultures” nhưng đó là chi tiết phụ, không phải điều được nhấn mạnh."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Việc tiếng cười tồn tại ở rats, chimps, bonobos chỉ là dẫn chứng phụ, không phải ý chính của đoạn."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Charley Douglass hated dealing with the unpredictable laughter of live audiences, so started recording his own ‘laugh tracks’. These were intended to help people at home feel like they were in a social situation, such as a crowded theatre."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả ngụ ý gì về Charley Douglass?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: ông hiểu tầm quan trọng của việc thưởng thức hài hước trong một bối cảnh nhóm (“the importance of enjoying humour in a group setting”).",
+              "p": "Bài viết: Douglass ghi âm “laugh tracks” để giúp người xem ở nhà “feel like they were in a social situation, such as a crowded theatre” — cảm giác như đang ở cùng đám đông."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the importance of enjoying humour in a group setting",
+              "p": "feel like they were in a social situation, such as a crowded theatre"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mục đích ghi âm laugh track là tái tạo cảm giác xem cùng đám đông — đúng ý A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Ông không “báo hiệu” lúc nào nên cười, mà tạo cảm giác không khí xã hội — khác với việc chỉ dẫn khán giả."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nói ông muốn chương trình thu hút mọi tầng lớp khán giả."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Ngược lại: ông “hated dealing with ... live audiences” — không thích có khán giả trực tiếp trong phòng thu."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "On average, the results were remarkably consistent: worldwide, people’s guesses were correct approximately 60% of the time."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điều gì khiến nghiên cứu ở Santa Cruz đặc biệt đáng chú ý?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: kết quả tương đồng thu được từ nhiều nền văn hóa khác nhau (“the similar results produced by a wide range of cultures”).",
+              "p": "Bài viết: dù người nghe đến từ 24 xã hội khác nhau (từ bộ lạc New Guinea tới cư dân thành thị Ấn Độ, châu Âu), “the results were remarkably consistent” — độ chính xác đoán đúng ~60% gần như giống nhau ở mọi nơi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the similar results produced by a wide range of cultures",
+              "p": "the results were remarkably consistent: worldwide, people's guesses were correct approximately 60% of the time"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Điểm đáng chú ý nhất là sự nhất quán bất ngờ giữa các nền văn hóa rất khác nhau."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Nghiên cứu Santa Cruz chỉ ghi âm một kiểu tiếng cười (bạn bè/người lạ), không phải “various different types of laughter”."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Số lượng ngành khoa học tham gia (30+ nhà khoa học) là chi tiết đúng nhưng không phải điều bài nhấn là “particularly significant”."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Người được ghi âm tiếng cười chỉ là các cặp sinh viên nói tiếng Anh, sự đa dạng nằm ở người nghe chứ không phải người cười."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "the newcomers produced more dominant laughs when they were in the ‘powerful’ role of teasers."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điều gì đã xảy ra trong nghiên cứu ở San Diego?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: người tham gia đổi vai cho nhau (“Participants exchanged roles”).",
+              "p": "Bài viết: trong thiết kế thí nghiệm, cả thành viên mới lẫn cũ đều lần lượt trải qua vai bị trêu và vai đi trêu; “the newcomers produced more dominant laughs when they were in the ‘powerful’ role of teasers” — người mới gia nhập (thường ở vị thế thấp) cũng có lúc đóng vai người trêu (vai quyền lực)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "participants exchanged roles",
+              "p": "the newcomers produced more dominant laughs when they were in the 'powerful' role of teasers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả nhóm vị thế thấp và cao đều luân phiên đổi vai trêu/bị trêu trong thí nghiệm — khớp đáp án B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói có người tham gia trở nên rất khó chịu, giận dữ."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nói người lạ trở thành bạn bè sau thí nghiệm."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không có ai được mô tả là “không thể cười” trong nghiên cứu."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "high-status individuals were rated as high-status whether they produced their natural dominant laugh or tried to do a submissive one."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn thứ năm, kết quả nghiên cứu San Diego cho thấy điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: người có vị thế cao luôn có thể được nhận diện qua cách cười của họ (“can always be identified by their way of laughing”).",
+              "p": "Bài viết: dù họ cố cười kiểu phục tùng (submissive) hay cười tự nhiên kiểu thống trị (dominant), “high-status individuals were rated as high-status” — người nghe vẫn nhận ra đúng vị thế cao của họ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "can always be identified by their way of laughing",
+              "p": "were rated as high-status whether they produced their natural dominant laugh or tried to do a submissive one"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vị thế cao vẫn được nhận ra dù họ thay đổi kiểu cười — đúng đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Ngược lại: người vị thế thấp cười kiểu thống trị lại bị đánh giá nhầm là vị thế cao — không phải lúc nào cũng rõ ràng."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Thực tế người vị thế thấp lại cười thống trị nhiều hơn khi ở vai quyền lực, không phải luôn cười phục tùng."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không so sánh mức độ giống nhau giữa tiếng cười phục tùng của hai nhóm vị thế."
+            }
+          ]
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "The students then were randomly assigned to watch a video clip eliciting either humour, contentment, or neutral feelings."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mỗi video trong ba video được thiết kế để tạo ra một loại gì khác nhau ở người xem?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “each designed to generate a different kind of ______”.",
+              "p": "Bài viết: video được chọn để tạo ra “either humour, contentment, or neutral feelings” — ba loại cảm xúc khác nhau → chọn F (emotion)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a different kind of ______",
+              "p": "eliciting either humour, contentment, or neutral feelings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Humour/contentment/neutral feelings đều là các loại emotion → F."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "H",
+      "evidence": {
+        "quoteEn": "Students who had watched the\u00a0Mr. Bean\u00a0video ended up spending significantly more time working on the task, making twice as many predictions as the other two groups."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhóm xem video nào kiên trì làm bài tập lâu hơn và cố gắng hơn hai nhóm còn lại?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “those who had watched the ______ video persisted with the task for longer”.",
+              "p": "Bài viết: video Mr. Bean (hài hước) khiến người xem “spending significantly more time working on the task” — video gây cười (amusing) → chọn H."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ video",
+              "p": "a clip of the BBC comedy\u00a0Mr. Bean"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Video Mr. Bean là video hài hước, gây cười → amusing (H)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "during which they had participants complete long multiplication questions by hand. Again, participants who watched the humorous video spent significantly more time working on this tedious task"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nghiên cứu thứ hai yêu cầu người tham gia làm một nhiệm vụ có tính chất như thế nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “asked to perform a particularly ______ task”.",
+              "p": "Bài viết: nhiệm vụ là “complete long multiplication questions by hand”, được gọi là “tedious task” — công việc nhàm chán → chọn C (boring)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a particularly ______ task",
+              "p": "this tedious task"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“tedious” chính là boring (C)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "humour has been found to help relieve stress and facilitate social relationships"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo Cheng và Wang, sự hài hước giúp giảm bớt điều gì và xây dựng kết nối xã hội?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “humour not only reduces ______ and helps build social connections”.",
+              "p": "Bài viết: “humour has been found to help relieve stress and facilitate social relationships” — giảm căng thẳng, gắn với lo âu → chọn D (anxiety)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reduces ______",
+              "p": "help relieve stress"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“relieve stress” gần nghĩa với giảm anxiety (D)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "We suggest that humour is not only enjoyable but more importantly, energising."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài giảm căng thẳng và giúp gắn kết xã hội, sự hài hước còn có tác động gì lên cơ thể và tâm trí?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “it may also have a ______ effect on the body and mind”.",
+              "p": "Bài viết: “humour is not only enjoyable but more importantly, energising” — hài hước tiếp thêm năng lượng → chọn E (stimulating)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a ______ effect",
+              "p": "more importantly, energising"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“energising” chính là stimulating (E)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "On average, the results were remarkably consistent: worldwide, people’s guesses were correct approximately 60% of the time."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người tham gia nghiên cứu Santa Cruz có đoán đúng tiếng cười của bạn bè chính xác hơn tiếng cười của người lạ không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: người tham gia “more accurate at identifying the laughs of friends than those of strangers”.",
+              "p": "Bài chỉ đưa ra một con số chung: “worldwide, people’s guesses were correct approximately 60% of the time” — không tách riêng độ chính xác giữa nhận diện bạn bè và người lạ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more accurate at identifying the laughs of friends than those of strangers",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ nêu tỉ lệ đoán đúng chung, không so sánh độ chính xác giữa hai loại tiếng cười."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Analysis revealed that, as expected, high-status individuals produced more dominant laughs and fewer submissive laughs relative to the low-status individuals."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các nhà nghiên cứu ở San Diego có dự đoán đúng về hành vi của người vị thế cao không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: các nhà nghiên cứu “were correct in their predictions regarding the behaviour of the high-status individuals”.",
+              "p": "Bài viết: “as expected, high-status individuals produced more dominant laughs and fewer submissive laughs” — đúng như dự đoán ban đầu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "were correct in their predictions",
+              "p": "as expected"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cụm “as expected” xác nhận dự đoán của nhóm nghiên cứu về người vị thế cao là đúng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Participants were allowed to quit the task at any point."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người tham gia nghiên cứu ở Đại học Quốc gia Úc có bị giới hạn thời gian cố định để làm bài đánh giá hồ sơ nhân viên không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: người tham gia “were given a fixed amount of time to complete the task”.",
+              "p": "Bài viết: “Participants were allowed to quit the task at any point” — họ có thể dừng bất cứ lúc nào, tức là không bị ràng buộc bởi thời gian cố định."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "given a fixed amount of time to complete the task",
+              "p": "allowed to quit the task at any point"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Việc được dừng tùy ý trái ngược với việc có thời gian cố định — đề bị phản bác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "traditional view of task performance implies that individuals should avoid things such as humour that may distract them from the accomplishment of task goals"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kết luận của Cheng và Wang có đi theo đúng quan điểm truyền thống về hiệu suất làm việc không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: kết luận của họ “were in line with established notions regarding task performance”.",
+              "p": "Bài viết: quan điểm truyền thống cho rằng nên tránh sự hài hước vì gây xao nhãng, nhưng Cheng và Wang lại kết luận “humour is not only enjoyable but more importantly, energising” — trái ngược với quan điểm truyền thống."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "in line with established notions regarding task performance",
+              "p": "traditional view of task performance implies that individuals should avoid ... humour"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Kết luận của họ ngược với quan điểm truyền thống — đề bị phản bác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1834 @@
+{
+  "pilotId": "cam15-test4",
+  "schemaVersion": 4,
+  "note": "Cam 15 R T4 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The return of the huarango",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Silbo Gomero – the whistle ‘language’ of the Canary Islands",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Environmental practices of big businesses",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "water",
+      "evidence": {
+        "quoteEn": "the only year-round source of water is located tens of metres below the surface"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: rễ huarango vươn sâu để tiếp cận thứ gì nằm dưới lòng đất (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “can access ______ deep below the surface” cần một danh từ không đếm được."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “can access ______ deep below the surface”.",
+              "p": "Bài viết: “the only year-round source of water is located tens of metres below the surface” — nguồn nước duy nhất quanh năm nằm sâu dưới mặt đất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "access ______ deep below the surface",
+              "p": "the only year-round source of water is located tens of metres below the surface"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Rễ cây vươn tới nguồn nước sâu dưới đất → water."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "water"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "diet",
+      "evidence": {
+        "quoteEn": "He believes the huarango was key to the ancient people’s diet"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cây huarango từng là phần quan trọng trong thứ gì của người xưa (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “inhabitants’ ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a crucial part of local inhabitants’ ______ a long time ago”.",
+              "p": "Bài viết: “the huarango was key to the ancient people’s diet” — cây huarango là chìa khóa cho chế độ ăn của người xưa."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "local inhabitants' ______",
+              "p": "the ancient people's diet"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền chính là diet."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "diet"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "drought",
+      "evidence": {
+        "quoteEn": "it allowed local people to withstand years of drought when their other crops failed"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Huarango giúp người dân sống sót qua những giai đoạn gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “periods of ______” cần một danh từ không đếm được."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “helped people to survive periods of ______”.",
+              "p": "Bài viết: “it allowed local people to withstand years of drought when their other crops failed” — giúp họ chống chọi những năm hạn hán."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "periods of ______",
+              "p": "years of drought"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Giai đoạn đó chính là drought."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "drought"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "erosion",
+      "evidence": {
+        "quoteEn": "Cutting down native woodland leads to erosion, as there is nothing to keep the soil in place."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cây huarango ngăn hiện tượng gì xảy ra với đất (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “prevents ______ of the soil” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “prevents ______ of the soil”.",
+              "p": "Bài viết: “Cutting down native woodland leads to erosion, as there is nothing to keep the soil in place” — chặt rừng bản địa dẫn tới xói mòn vì không còn gì giữ đất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "prevents ______ of the soil",
+              "p": "cutting down native woodland leads to erosion"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hiện tượng đó là erosion (xói mòn)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "erosion"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "desert",
+      "evidence": {
+        "quoteEn": "So when the huarangos go, the land turns into a desert."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nếu mất huarango, đất sẽ biến thành gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “becoming a ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “prevents land from becoming a ______”.",
+              "p": "Bài viết: “when the huarangos go, the land turns into a desert” — khi huarango biến mất, đất biến thành sa mạc."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "becoming a ______",
+              "p": "the land turns into a desert"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là desert."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "desert"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "branches",
+      "answerAlternatives": [
+        "its branches",
+        "huarango branches",
+        "the branches"
+      ],
+      "evidence": {
+        "quoteEn": "its branches were used for charcoal for cooking and heating"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong bảng: bộ phận nào của cây được dùng làm nhiên liệu (Fuel)?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Cột “Part of tree” cần một danh từ chỉ bộ phận cây."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Dòng bảng: “______ → Fuel”.",
+              "p": "Bài viết: “its branches were used for charcoal for cooking and heating” — cành cây dùng làm than để nấu ăn, sưởi ấm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Fuel",
+              "p": "used for charcoal for cooking and heating"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bộ phận dùng làm nhiên liệu là branches (cành cây)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "branches"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "leaves and bark",
+      "answerAlternatives": [
+        "bark and leaves"
+      ],
+      "evidence": {
+        "quoteEn": "Its leaves and bark were used for herbal remedies"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong bảng: câu 7 có HAI chỗ trống (“7……… and ………”) cùng ứng với dòng “Medicine” — cần điền đủ cả hai bộ phận của cây dùng làm thuốc."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Hai chỗ trống nối bằng “and” đều cần danh từ chỉ bộ phận cây; thứ tự trước/sau không quan trọng, phải có đủ cả hai để được tính điểm."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Dòng bảng: “______ and ______ → Medicine”.",
+              "p": "Bài viết: “Its leaves and bark were used for herbal remedies” — lá và vỏ cây được dùng làm thuốc thảo dược."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Medicine",
+              "p": "used for herbal remedies"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai bộ phận dùng làm thuốc là leaves (lá) và bark (vỏ cây) — viết theo thứ tự nào cũng được, miễn đủ cả hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "leaves and bark"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "trunk",
+      "answerAlternatives": [
+        "its trunk",
+        "huarango trunk",
+        "the trunk"
+      ],
+      "evidence": {
+        "quoteEn": "its trunk was used to build houses"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong bảng: bộ phận nào của cây được dùng để xây dựng (construction)?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Cột “Part of tree” cần một danh từ chỉ bộ phận cây."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Dòng bảng: “______ → construction”.",
+              "p": "Bài viết: “its trunk was used to build houses” — thân cây được dùng để dựng nhà."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "construction",
+              "p": "used to build houses"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bộ phận dùng xây nhà là trunk (thân cây)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "trunk"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "he has been working with local families to attempt to create a sustainable income from the huarangos by turning their products into foodstuffs"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các gia đình địa phương có kể cho Whaley nghe về những cách dùng huarango truyền thống không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “local families have told Whaley about some traditional uses” (gia đình địa phương đã kể cho ông về công dụng truyền thống).",
+              "p": "Bài chỉ nói Whaley “working with local families to ... create a sustainable income ... by turning their products into foodstuffs” — hợp tác để tạo thu nhập mới, không nói họ kể cho ông nghe công dụng truyền thống."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have told Whaley about some traditional uses",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ nói về việc hợp tác tạo sản phẩm mới để bán, không có chi tiết ai kể cho Whaley nghe công dụng cũ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "His farm is relatively small and doesn’t yet provide him with enough to live on, but he hopes this will change."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nông dân Alberto Benevides hiện đã kiếm được lợi nhuận tốt từ trồng huarango chưa?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói ông “is now making a good profit” (đang kiếm lợi nhuận tốt).",
+              "p": "Bài viết: “His farm is relatively small and doesn’t yet provide him with enough to live on” — trang trại còn nhỏ, chưa đủ để ông sống."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "is now making a good profit",
+              "p": "doesn't yet provide him with enough to live on"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói ngược lại: ông chưa đủ sống, chỉ hy vọng tương lai sẽ khá hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "he’s persuading farmers to let him plant forest corridors on their land"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Whaley có cần sự hợp tác của nông dân để giúp bảo tồn động thực vật hoang dã không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Whaley “needs the co-operation of farmers to help preserve the area’s wildlife” (cần nông dân hợp tác để bảo tồn động vật hoang dã).",
+              "p": "Bài viết: các nông trại lớn “break up the corridors that allow the essential movement of mammals, birds and pollen”, nên Whaley “persuading farmers to let him plant forest corridors on their land” — thuyết phục nông dân cho trồng hành lang rừng để cứu các loài."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "needs the co-operation of farmers to help preserve the area's wildlife",
+              "p": "persuading farmers to let him plant forest corridors on their land"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phải nhờ nông dân cho trồng hành lang rừng thì mới cứu được đường di chuyển của động vật, phấn hoa — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "It’s not like a rainforest that needs to have this huge expanse."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dự án của Whaley có cần được mở rộng trên một diện tích rất lớn mới thành công không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói dự án “needs to be extended over a very large area” (cần mở rộng trên diện tích rất lớn).",
+              "p": "Bài viết: “Desert habitats can reduce down to very little ... It’s not like a rainforest that needs to have this huge expanse” — môi trường sa mạc có thể thu nhỏ lại, không cần diện tích khổng lồ như rừng mưa."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "needs to be extended over a very large area",
+              "p": "not like a rainforest that needs to have this huge expanse"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định ngược lại: chỉ cần vài cây/hành lang nhỏ, không cần diện tích lớn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "that’s a real message of hope for lots of places, including Africa, where there is drought and they just can’t afford to wait for rain"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Whaley có kế hoạch đích thân sang châu Phi để lập một dự án tương tự không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Whaley “has plans to go to Africa to set up a similar project” (có kế hoạch sang châu Phi lập dự án tương tự).",
+              "p": "Bài chỉ nói mô hình của ông có thể là “a real message of hope for lots of places, including Africa” — mang tính truyền cảm hứng cho nơi khác, không nói ông có kế hoạch cụ thể sang đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "has plans to go to Africa to set up a similar project",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ có ý “mô hình này có thể áp dụng ở nơi khác”, không có kế hoạch cụ thể của cá nhân Whaley."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "This small volcanic island is mountainous, with steep rocky slopes and deep, wooded ravines, rising to 1,487 metres at its highest peak."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "La Gomera có phải là đảo nhiều núi nhất trong số các đảo Canary không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói La Gomera “is the most mountainous of all the Canary Islands” (nhiều núi nhất trong các đảo Canary).",
+              "p": "Bài chỉ mô tả La Gomera “is mountainous ... rising to 1,487 metres” — không hề so sánh với các đảo Canary khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the most mountainous of all the Canary Islands",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có thông tin so sánh giữa các đảo với nhau."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "In daily life they use whistles to communicate short commands, but any Spanish sentence could be whistled."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Silbo có chỉ phù hợp cho những thông điệp ngắn và đơn giản không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Silbo “is only appropriate for short and simple messages” (chỉ phù hợp thông điệp ngắn, đơn giản).",
+              "p": "Bài viết: dù hằng ngày dùng cho lệnh ngắn, nhưng “any Spanish sentence could be whistled” — bất kỳ câu tiếng Tây Ban Nha nào cũng huýt sáo được."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "is only appropriate for short and simple messages",
+              "p": "any Spanish sentence could be whistled"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ Silbo có thể truyền cả câu phức tạp, không chỉ lệnh ngắn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "When the experiments were repeated with non-whistlers, however, activation was observed in all areas of the brain."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong nghiên cứu hoạt động não bộ, silbadores và người không biết huýt sáo có cho kết quả khác nhau không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói hai nhóm “produced different results” (cho kết quả khác nhau).",
+              "p": "Bài viết: silbadores chỉ kích hoạt vùng ngôn ngữ (thùy thái dương trái), còn với “non-whistlers ... activation was observed in all areas of the brain” — người không biết huýt sáo lại kích hoạt khắp não."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "produced different results",
+              "p": "activation was observed in all areas of the brain"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai nhóm cho kết quả não bộ khác hẳn nhau — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "indigenous Canary Islanders, who were of North African origin, already had a whistled language when Spain conquered the volcanic islands in the 15th century"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người Tây Ban Nha có phải là người mang Silbo tới các đảo vào thế kỷ 15 không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “The Spanish introduced Silbo to the islands” (người Tây Ban Nha du nhập Silbo vào đảo).",
+              "p": "Bài viết: cư dân bản địa gốc Bắc Phi “already had a whistled language when Spain conquered” — đã có ngôn ngữ huýt sáo từ trước khi Tây Ban Nha chinh phục."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the Spanish introduced Silbo to the islands",
+              "p": "already had a whistled language when Spain conquered the volcanic islands"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Silbo có trước khi Tây Ban Nha đến, không phải do người Tây Ban Nha mang tới."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "There are thought to be as many as 70 whistled languages still in use, though only 12 have been described and studied scientifically."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đã có dữ liệu chính xác về tất cả các ngôn ngữ huýt sáo đang tồn tại chưa?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “precise data available regarding all of the whistle languages” (dữ liệu chính xác về tất cả).",
+              "p": "Bài viết: có tới 70 ngôn ngữ huýt sáo nhưng “only 12 have been described and studied scientifically” — chỉ 12 được nghiên cứu khoa học."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "precise data available regarding all of the whistle languages",
+              "p": "only 12 have been described and studied scientifically"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phần lớn (58/70) chưa được nghiên cứu kỹ — không phải “tất cả” đều có dữ liệu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Since 1999, Silbo Gomero has been taught in all of the island’s elementary schools."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trẻ em ở Gomera hiện có học Silbo không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “the children of Gomera now learn Silbo” (trẻ em Gomera hiện học Silbo).",
+              "p": "Bài viết: “Since 1999, Silbo Gomero has been taught in all of the island’s elementary schools” — từ 1999, Silbo được dạy ở mọi trường tiểu học trên đảo."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the children of Gomera now learn Silbo",
+              "p": "taught in all of the island's elementary schools"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Silbo được dạy chính thức trong trường học — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "words",
+      "evidence": {
+        "quoteEn": "Silbo is a substitute for Spanish, with individual words recoded into whistles which have high- and low-frequency tones."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tần số cao/thấp trong tiếng huýt sáo đại diện cho các âm thanh của cái gì trong tiếng Tây Ban Nha (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “Spanish ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “tones represent different sounds in Spanish ______”.",
+              "p": "Bài viết: “individual words recoded into whistles which have high- and low-frequency tones” — từng từ được mã hóa thành các tông cao thấp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Spanish ______",
+              "p": "individual words"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đơn vị được mã hóa là words."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "words"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "finger",
+      "evidence": {
+        "quoteEn": "A whistler – or silbador – puts a finger in his or her mouth to increase the whistle’s pitch"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Silbador dùng bộ phận cơ thể nào để điều khiển cao độ tiếng huýt sáo (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “silbador’s ______” cần một danh từ chỉ bộ phận cơ thể."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “pitch of whistle is controlled using silbador’s ______”.",
+              "p": "Bài viết: “puts a finger in his or her mouth to increase the whistle’s pitch” — đặt ngón tay vào miệng để tăng cao độ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "silbador's ______",
+              "p": "puts a finger in his or her mouth"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bộ phận dùng là finger (ngón tay)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "finger"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "direction",
+      "evidence": {
+        "quoteEn": "the other hand can be cupped to adjust the direction of the sound"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bàn tay khum lại dùng để thay đổi thứ gì của âm thanh (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Đầu câu, ô trống cần một danh từ làm chủ ngữ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “______ is changed with a cupped hand”.",
+              "p": "Bài viết: “the other hand can be cupped to adjust the direction of the sound” — bàn tay khum lại để chỉnh hướng âm thanh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ is changed with a cupped hand",
+              "p": "adjust the direction of the sound"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Yếu tố được điều chỉnh là direction (hướng)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "direction"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "commands",
+      "evidence": {
+        "quoteEn": "In daily life they use whistles to communicate short commands"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong đời sống thường ngày, Silbo dùng để truyền những gì ngắn gọn (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “brief ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “transmission of brief ______”.",
+              "p": "Bài viết: “In daily life they use whistles to communicate short commands” — hằng ngày dùng để truyền các lệnh ngắn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "brief ______",
+              "p": "short commands"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thứ được truyền là commands (lệnh)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "commands"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "fires",
+      "evidence": {
+        "quoteEn": "Silbo has proved particularly useful when fires have occurred on the island and rapid communication across large areas has been vital."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Silbo đặc biệt hữu ích khi cần báo tin nhanh về việc gì xảy ra trên đảo (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “inform people about ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “relay essential information ... to inform people about ______”.",
+              "p": "Bài viết: “Silbo has proved particularly useful when fires have occurred on the island” — hữu ích khi có cháy rừng/cháy trên đảo."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "inform people about ______",
+              "p": "when fires have occurred on the island"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sự việc cần báo tin nhanh là fires (cháy)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fires"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "technology",
+      "evidence": {
+        "quoteEn": "with modern communication technology now widely available, researchers say whistled languages like Silbo are threatened with extinction"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tương lai của Silbo bị đe dọa bởi thứ gì mới xuất hiện (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “new ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “future under threat because of new ______”.",
+              "p": "Bài viết: “with modern communication technology now widely available ... whistled languages like Silbo are threatened with extinction” — công nghệ liên lạc hiện đại phổ biến khiến Silbo có nguy cơ biến mất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "new ______",
+              "p": "modern communication technology now widely available"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mối đe dọa đó là technology (công nghệ)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "technology"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "award",
+      "evidence": {
+        "quoteEn": "The local authorities are trying to get an award from the organisation to declare [Silbo Gomero] as something that should be preserved for humanity"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chính quyền quần đảo Canary hy vọng nhận được thứ gì từ UNESCO (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “UNESCO ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “hoping to receive a UNESCO ______ to help preserve it”.",
+              "p": "Bài viết: “The local authorities are trying to get an award from the organisation to declare [Silbo Gomero] as something that should be preserved for humanity” — chính quyền muốn UNESCO trao một giải thưởng/danh hiệu để công nhận cần bảo tồn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "UNESCO ______",
+              "p": "get an award from the organisation"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thứ họ muốn nhận là award (giải thưởng/danh hiệu)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "award"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "a business may maximize the amount of money it makes, at least in the short term, by damaging the environment and hurting people"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhiều doanh nghiệp lớn sẵn sàng gây hại vì lợi nhuận, cho thấy họ dường như không có ______ gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “appear to have no ______”.",
+              "p": "Bài viết: “a business may maximize the amount of money it makes ... by damaging the environment and hurting people” — sẵn sàng làm hại môi trường/con người để kiếm lời, tức là không bị ràng buộc bởi chuẩn mực đạo đức → chọn D (moral standards)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "appear to have no ______",
+              "p": "may maximize the amount of money it makes ... by damaging the environment and hurting people"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sẵn sàng gây hại vì lợi nhuận cho thấy thiếu “moral standards” (chuẩn mực đạo đức)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "the reverse is likely to be true if government regulation is ineffective"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc chính phủ thiếu ______ có thể dẫn tới vấn đề môi trường?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Lack of ______ by governments”.",
+              "p": "Bài viết: “the reverse is likely to be true if government regulation is ineffective” — nếu quy định của chính phủ không hiệu quả (thiếu kiểm soát) thì doanh nghiệp bẩn sẽ thắng thế → chọn E (control)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lack of ______ by governments",
+              "p": "government regulation is ineffective"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“regulation ineffective” chính là thiếu “control” (kiểm soát)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "if the public doesn’t care"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc công chúng thiếu ______ cũng góp phần gây ra vấn đề môi trường?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “lack of public ______”.",
+              "p": "Bài viết: “if the public doesn’t care” — nếu công chúng không quan tâm/không tham gia lên tiếng → chọn F (involvement)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lack of public ______",
+              "p": "if the public doesn't care"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“the public doesn’t care” chính là thiếu “involvement” (sự tham gia/quan tâm)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "H",
+      "evidence": {
+        "quoteEn": "That is still the case today for fishermen in an unmanaged fishery without quotas, and for international logging companies with short-term leases on tropical rainforest land"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thiếu kiểm soát/tham gia có thể dẫn tới vấn đề môi trường nào, ví dụ liên quan tới ngành đánh bắt?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “environmental problems such as ______”.",
+              "p": "Bài viết ví dụ “fishermen in an unmanaged fishery without quotas” — ngư dân đánh bắt không hạn ngạch, không quản lý → chọn H (overfishing)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "such as ______",
+              "p": "fishermen in an unmanaged fishery without quotas"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đánh bắt không hạn ngạch dẫn tới overfishing (đánh bắt quá mức)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "international logging companies with short-term leases on tropical rainforest land"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ví dụ khác về sự phá hủy môi trường liên quan tới khai thác gỗ rừng nhiệt đới là phá hủy cái gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the destruction of ______”.",
+              "p": "Bài viết: “international logging companies with short-term leases on tropical rainforest land” — công ty khai thác gỗ thuê ngắn hạn đất rừng nhiệt đới → chọn B (trees)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "destruction of ______",
+              "p": "logging companies ... tropical rainforest land"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khai thác gỗ rừng nhiệt đới ngắn hạn phá hủy trees (cây rừng)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "it is the public, either directly or through its politicians, that has the power to make such destructive policies unprofitable and illegal, and to make sustainable environmental policies profitable"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ý chính của đoạn ba (paragraph 3) là gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: thiệt hại môi trường “could be prevented by the action of ordinary people” (có thể được ngăn chặn nhờ hành động của người dân thường).",
+              "p": "Bài viết: “it is the public, either directly or through its politicians, that has the power to make such destructive policies unprofitable and illegal” — chính công chúng (trực tiếp hoặc qua chính trị gia) mới có quyền lực thay đổi tình hình."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "could be prevented by the action of ordinary people",
+              "p": "it is the public ... that has the power to make ... policies unprofitable and illegal"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn 3 nhấn mạnh quyền lực cuối cùng nằm ở công chúng, khớp đáp án C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài nhấn công chúng có thể hành động trực tiếp hoặc qua chính trị gia — không khẳng định “chỉ chính trị mới ngăn được” (“requires political action”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Đoạn này không nói thiệt hại là do công chúng “thiếu hiểu biết” (“ignorance on the part of the public”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói chỉ có cách giáo dục lãnh đạo doanh nghiệp mới ngăn được thiệt hại (“can only be stopped by educating business leaders”)."
+            }
+          ]
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "The public can do that by suing businesses for harming them, as happened after the Exxon Valdez disaster, in which over 40,000m3 of oil were spilled off the coast of Alaska."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn bốn mô tả những cách công chúng có thể làm gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: công chúng có thể “influence the environmental policies of businesses and governments” (tác động chính sách môi trường của doanh nghiệp và chính phủ).",
+              "p": "Bài liệt kê hàng loạt cách: kiện doanh nghiệp (như vụ Exxon Valdez), ưu tiên mua sản phẩm bền vững, gây sức ép để chính phủ ban hành và thực thi luật — tất cả đều là cách tác động chính sách."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "influence the environmental policies of businesses and governments",
+              "p": "suing businesses for harming them ... pressing their governments to pass and enforce laws"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Các cách được liệt kê đều nhằm tác động tới chính sách của doanh nghiệp và chính phủ — khớp đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói về việc mỗi cá nhân giảm tác động môi trường của riêng mình (“reduce their own individual impact”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không phải mục đích tìm hiểu thêm về tác động của doanh nghiệp (“learn more about the impact”), mà là hành động để thay đổi nó."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Vụ Exxon Valdez chỉ là ví dụ minh họa cho việc kiện, không phải trọng tâm là “nâng cao nhận thức về thảm họa” (“raise awareness of ... disasters”)."
+            }
+          ]
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "But for five years the meat packers refused to follow these, claiming that they would be too expensive to obey. However, when a major fast-food company then made the same demands after customer purchases of its hamburgers plummeted, the meat industry complied within weeks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong vụ bệnh BSE, doanh nghiệp lớn đã gây sức ép như thế nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: “a fast-food company forced their meat suppliers to follow the law” (một công ty đồ ăn nhanh buộc nhà cung cấp thịt tuân thủ luật).",
+              "p": "Bài viết: nhà máy đóng gói thịt phớt lờ quy định FDA suốt 5 năm, nhưng khi “a major fast-food company ... made the same demands”, ngành thịt “complied within weeks” — tuân thủ ngay trong vài tuần vì sợ mất khách hàng của chuỗi fast-food."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "forced their meat suppliers to follow the law",
+              "p": "made the same demands ... the meat industry complied within weeks"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chính sức ép từ công ty đồ ăn nhanh (khách hàng lớn) mới khiến nhà cung cấp thịt tuân theo luật — khớp đáp án B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói nhà máy đóng gói thịt ngừng cung cấp hamburger cho chuỗi đồ ăn nhanh — ngược lại, họ chịu áp lực từ chuỗi đó."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không có chuyện nhà máy đóng gói thịt thuyết phục chính phủ giảm chi phí cho họ (“persuaded the government to reduce their expenses”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Luật/quy định đã do FDA ban hành từ trước; công ty đồ ăn nhanh gây sức ép trực tiếp lên nhà cung cấp, không phải “khuyến khích chính phủ ra luật mới”."
+            }
+          ]
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "I also believe that the public must accept the necessity for higher prices for products to cover the added costs, if any, of sound environmental practices."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả có cho rằng công chúng nên sẵn sàng trả tiền để hỗ trợ các thực hành môi trường tốt không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The public should be prepared to fund good environmental practices.”",
+              "p": "Bài viết: “the public must accept the necessity for higher prices for products to cover the added costs ... of sound environmental practices” — công chúng phải chấp nhận giá cao hơn để bù chi phí cho thực hành môi trường tốt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "should be prepared to fund good environmental practices",
+              "p": "must accept the necessity for higher prices ... to cover the added costs"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả trực tiếp nói công chúng cần trả thêm tiền để hỗ trợ môi trường — khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "My views may seem to ignore the belief that businesses should act in accordance with moral principles even if this leads to a reduction in their profits."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả có so sánh nguyên tắc đạo đức khác nhau giữa các doanh nghiệp không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “There is a contrast between the moral principles of different businesses.”",
+              "p": "Bài chỉ bàn chung về việc doanh nghiệp “should act in accordance with moral principles” — không so sánh cụ thể nguyên tắc đạo đức giữa các doanh nghiệp khác nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a contrast between the moral principles of different businesses",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có đoạn nào so sánh nguyên tắc đạo đức giữa các doanh nghiệp riêng lẻ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "My conclusion is not a moralistic one about who is right or wrong, admirable or selfish, a good guy or a bad guy."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả có cho rằng cần phân biệt rạch ròi hành vi chấp nhận được và không chấp nhận được không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “It is important to make a clear distinction between acceptable and unacceptable behaviour.”",
+              "p": "Bài viết: “My conclusion is not a moralistic one about who is right or wrong ... a good guy or a bad guy” — tác giả từ chối cách nhìn phân định đúng/sai, tốt/xấu rạch ròi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "important to make a clear distinction between acceptable and unacceptable behaviour",
+              "p": "not a moralistic one about who is right or wrong"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả nói rõ ông không nhìn nhận vấn đề theo hướng phân định đúng/sai — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "In the past, businesses have changed when the public came to expect and require different behavior, to reward businesses for behavior that the public wanted, and to make things difficult for businesses practicing behaviors that the public didn’t want."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Công chúng có từng thành công trong việc tác động tới doanh nghiệp trong quá khứ không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The public have successfully influenced businesses in the past.”",
+              "p": "Bài viết: “In the past, businesses have changed when the public came to expect and require different behavior” — trong quá khứ, doanh nghiệp đã thay đổi khi công chúng đòi hỏi khác đi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "successfully influenced businesses in the past",
+              "p": "businesses have changed when the public came to expect and require different behavior"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả khẳng định công chúng từng khiến doanh nghiệp thay đổi — khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "I predict that in the future, just as in the past, changes in public attitudes will be essential for changes in businesses’ environmental practices."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong tương lai, doanh nghiệp có chắc chắn sẽ quan tâm nhiều hơn tới môi trường không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “In the future, businesses will show more concern for the environment.”",
+              "p": "Bài viết chỉ nói “changes in public attitudes will be essential for changes in businesses’ environmental practices” — thái độ công chúng thay đổi thì mới có cơ sở để doanh nghiệp thay đổi, không khẳng định chắc chắn doanh nghiệp sẽ quan tâm hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "businesses will show more concern for the environment",
+              "p": "changes in public attitudes will be essential for changes in businesses' environmental practices"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả chỉ nêu điều kiện cần (thái độ công chúng đổi), không dự đoán chắc chắn doanh nghiệp sẽ quan tâm môi trường hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Some readers may be disappointed or outraged that I place the ultimate responsibility for business practices harming the public on the public itself."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tiêu đề phụ nào phù hợp nhất cho toàn bài?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: “Are big businesses to blame for the damage they cause the environment?” (Doanh nghiệp lớn có đáng bị đổ lỗi cho thiệt hại môi trường không?).",
+              "p": "Xuyên suốt bài, tác giả tranh luận về việc đổ lỗi cho doanh nghiệp và cuối cùng đặt trách nhiệm chính lên công chúng — “I place the ultimate responsibility ... on the public itself” — đúng trọng tâm câu hỏi về việc “ai đáng trách”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "are big businesses to blame",
+              "p": "I place the ultimate responsibility for business practices harming the public on the public itself"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả bài xoay quanh câu hỏi doanh nghiệp có đáng bị trách hay không, và ai mới là bên chịu trách nhiệm chính — khớp đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không đặt vấn đề ở mức “thế giới có tồn tại được không” — giọng văn không mang tính báo động cực đoan như vậy."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài không tập trung hiến kế để doanh nghiệp bớt chạy theo lợi nhuận — thậm chí còn bảo vệ việc doanh nghiệp phải tối đa hóa lợi nhuận hợp pháp."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nhấn vào “lòng tham” của doanh nghiệp như nguyên nhân, mà phân tích động cơ lợi nhuận hợp lý và vai trò của công chúng/chính phủ."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
