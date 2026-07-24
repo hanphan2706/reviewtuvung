@@ -1,0 +1,1856 @@
+{
+  "pilotId": "cam16-test4",
+  "schemaVersion": 4,
+  "note": "Cam 16 R T4 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1 / cam16-test1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Roman tunnels",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Changes in reading habits",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Attitudes towards Artificial Intelligence",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "posts",
+      "evidence": {
+        "quoteEn": "placing posts over a hill in a straight line, to ensure that the tunnel kept to its route"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong sơ đồ phương pháp qanat của người Ba Tư, người ta dùng gì để định hướng đường hầm?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “……… to direct the tunnelling” cần một danh từ số nhiều (vật được đặt thành hàng)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Nhãn sơ đồ: “……… to direct the tunnelling”.",
+              "p": "Bài viết: “placing posts over a hill in a straight line, to ensure that the tunnel kept to its route” — cắm các cọc thành đường thẳng để định hướng đường hầm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "to direct the tunnelling",
+              "p": "to ensure that the tunnel kept to its route"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vật dùng để định hướng chính là các posts (cọc)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "posts"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "canal",
+      "evidence": {
+        "quoteEn": "it allowed water to flow from the top of a hillside down towards a canal, which supplied water for human use"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nước từ đường hầm chảy vào đâu để người dân sử dụng?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “water runs into a ……… used by local people” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Nhãn sơ đồ: “water runs into a ……… used by local people”.",
+              "p": "Bài viết: nước chảy “down towards a canal, which supplied water for human use” — chảy vào một con kênh phục vụ con người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "used by local people",
+              "p": "supplied water for human use"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nơi nước chảy vào là canal (kênh)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "canal"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "ventilation",
+      "evidence": {
+        "quoteEn": "The excavated soil was taken up to the surface using the shafts, which also provided ventilation during the work."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài việc lấy đất lên, các trục thẳng đứng còn có công dụng gì khi thi công?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “for ………” cần một danh từ chỉ chức năng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Nhãn sơ đồ: “vertical shafts to remove earth and for ………”.",
+              "p": "Bài viết: các trục “also provided ventilation during the work” — còn giúp thông gió trong lúc đào."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "to remove earth and for ________",
+              "p": "taken up to the surface using the shafts, which also provided ventilation"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Công dụng thứ hai của trục là ventilation (thông gió)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ventilation"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "lid",
+      "evidence": {
+        "quoteEn": "were covered with a wooden or stone lid"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong sơ đồ mặt cắt trục qanat La Mã, miệng trục được đậy bằng gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “……… made of wood or stone” cần một danh từ (vật đậy miệng trục)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Nhãn sơ đồ: “……… made of wood or stone”.",
+              "p": "Bài viết: các trục “were covered with a wooden or stone lid” — được đậy bằng một nắp gỗ hoặc đá."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "________ made of wood or stone",
+              "p": "covered with a wooden or stone lid"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vật đậy miệng trục là lid (nắp)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "lid"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "weight",
+      "evidence": {
+        "quoteEn": "Romans hung a plumb line from a rod placed across the top of each shaft and made sure that the weight at the end of it hung in the center of the shaft"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vật gì được gắn ở đầu dây dọi để kiểm tra độ thẳng đứng của trục?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “……… attached to the plumb line” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Nhãn sơ đồ: “……… attached to the plumb line”.",
+              "p": "Bài viết: người La Mã treo dây dọi và “made sure that the weight at the end of it hung in the center of the shaft” — đảm bảo quả nặng ở đầu dây rơi đúng giữa trục."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "________ attached to the plumb line",
+              "p": "the weight at the end of it hung in the center of the shaft"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vật gắn ở đầu dây dọi là weight (quả nặng)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "weight"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "climbing",
+      "evidence": {
+        "quoteEn": "were equipped with handholds and footholds to help those climbing in and out of them"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tay và chân bám (handholds, footholds) trong trục được dùng để làm gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “used for ………” cần một danh từ/động danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Nhãn sơ đồ: “handholds and footholds used for ………”.",
+              "p": "Bài viết: trục “were equipped with handholds and footholds to help those climbing in and out of them” — có tay/chân bám để giúp người leo lên xuống trục."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "used for ________",
+              "p": "to help those climbing in and out of them"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mục đích của tay/chân bám là climbing (leo trèo)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "climbing"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "It was used to cut through high mountains when the qanat method was not a practical alternative."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phương pháp counter-excavation (đào từ hai đầu) có hoàn toàn thay thế phương pháp qanat từ thế kỷ 6 TCN không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói counter-excavation “completely replaced” (thay thế hoàn toàn) qanat.",
+              "p": "Bài viết: counter-excavation chỉ “was used to cut through high mountains when the qanat method was not a practical alternative” — chỉ được dùng khi qanat không khả thi (núi cao), tức là qanat vẫn tiếp tục được dùng ở nơi khác, không hề bị thay thế hoàn toàn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "completely replaced the qanat method",
+              "p": "was used ... when the qanat method was not a practical alternative"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ nói counter-excavation ra đời như một lựa chọn bổ sung cho trường hợp cụ thể, không phải thay thế hoàn toàn qanat."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "This method required greater planning and advanced knowledge of surveying, mathematics and geometry as both ends of a tunnel had to meet correctly at the center of the mountain."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chỉ có thợ xây dày dạn kinh nghiệm mới được thuê để làm đường hầm bằng phương pháp counter-excavation?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “only experienced builders were employed” (chỉ thợ có kinh nghiệm được thuê).",
+              "p": "Bài viết chỉ nói phương pháp này “required greater planning and advanced knowledge of surveying, mathematics and geometry” — cần lập kế hoạch kỹ và kiến thức đo đạc, toán học, hình học cao hơn, chứ không hề nói ai được thuê để làm việc đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "only experienced builders were employed",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ mô tả yêu cầu kỹ thuật của phương pháp, không có thông tin về việc tuyển thợ có kinh nghiệm hay không."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "An inscription written on the side of a 428-meter tunnel, built by the Romans as part of the Saldae aqueduct system in modern-day Algeria, describes how the two teams of builders missed each other in the mountain and how the later construction of a lateral link between both corridors corrected the initial error."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thông tin về sự cố khi xây hệ thống dẫn nước Saldae được tìm thấy trong một cuốn sách cổ?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói nguồn thông tin là “an ancient book” (một cuốn sách cổ).",
+              "p": "Bài viết: thông tin này đến từ “an inscription written on the side of a 428-meter tunnel” — một dòng chữ khắc trên thành đường hầm, không phải sách."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "found in an ancient book",
+              "p": "an inscription written on the side of a 428-meter tunnel"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nguồn thông tin là bản khắc (inscription) trên đường hầm, không phải sách — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "describes how the two teams of builders missed each other in the mountain and how the later construction of a lateral link between both corridors corrected the initial error."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sai lầm của các thợ xây đường hầm Saldae là hai đoạn hầm đào từ hai phía không gặp được nhau?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói lỗi là “the two parts of the tunnel failed to meet” (hai đoạn hầm không gặp nhau).",
+              "p": "Bài viết: dòng khắc “describes how the two teams of builders missed each other in the mountain” — kể lại việc hai đội thợ đào lệch nhau trong núi, sau đó phải nối thêm một đoạn ngang để sửa lỗi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the two parts of the tunnel failed to meet",
+              "p": "the two teams of builders missed each other in the mountain"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“missed each other in the mountain” đúng là hai đoạn hầm không gặp được nhau như đề mô tả."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "gold",
+      "evidence": {
+        "quoteEn": "Traces of such tunnels used to mine gold can still be found at the Dolaucothi mines in Wales."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mỏ Dolaucothi ở xứ Wales được xây đường hầm để khai thác loại khoáng sản gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “to extract ………?” cần một danh từ chỉ khoáng sản."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Câu hỏi: “What type of mineral were the Dolaucothi mines in Wales built to extract?”",
+              "p": "Bài viết: “Traces of such tunnels used to mine gold can still be found at the Dolaucothi mines in Wales” — dấu vết đường hầm đào vàng vẫn còn ở đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "type of mineral",
+              "p": "tunnels used to mine gold"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khoáng sản được khai thác là gold (vàng)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "gold"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "architect",
+      "answerAlternatives": [
+        "architect's name",
+        "the architect",
+        "architect's",
+        "the architect's name"
+      ],
+      "evidence": {
+        "quoteEn": "Most tunnels had inscriptions showing the names of patrons who ordered construction and sometimes the name of the architect."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài tên người bảo trợ (patron), tên của ai khác có thể được khắc lên đường hầm?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Câu hỏi hỏi về một danh từ chỉ người, đi kèm “In addition to the patron”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Câu hỏi: “In addition to the patron, whose name might be carved onto a tunnel?”",
+              "p": "Bài viết: “Most tunnels had inscriptions showing the names of patrons who ordered construction and sometimes the name of the architect” — đôi khi còn khắc cả tên kiến trúc sư."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "whose name might be carved",
+              "p": "sometimes the name of the architect"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Người còn lại có thể được khắc tên là architect (kiến trúc sư)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "architect"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "harbour",
+      "answerAlternatives": [
+        "harbor",
+        "the harbour",
+        "the harbor"
+      ],
+      "evidence": {
+        "quoteEn": "built to divert the floodwater threatening the harbor of the ancient city of Seleuceia Pieria"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đường hầm Çevlik được xây để bảo vệ bộ phận nào của thành Seleuceia Pieria?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Câu hỏi cần một danh từ chỉ địa điểm ven biển."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Câu hỏi: “What part of Seleuceia Pieria was the Çevlik tunnel built to protect?”",
+              "p": "Bài viết: đường hầm này “built to divert the floodwater threatening the harbor of the ancient city of Seleuceia Pieria” — xây để dẫn nước lũ tránh xa bến cảng của thành phố."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "what part of Seleuceia Pieria",
+              "p": "threatening the harbor of the ancient city"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bộ phận được bảo vệ là harbour/harbor (bến cảng)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "harbour"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Unbeknown to most of us, an invisible, game-changing transformation links everyone in this picture: the neuronal circuit that underlies the brain’s ability to read is subtly, rapidly changing and this has implications for everyone from the pre-reading toddler to the expert adult."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn mở đầu chủ yếu muốn nói điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: việc dùng công nghệ đang gây ra ảnh hưởng âm thầm lên chúng ta (“Our use of technology is having a hidden effect on us”).",
+              "p": "Bài viết: sau khi liệt kê các cảnh dùng thiết bị trên máy bay, tác giả viết “Unbeknown to most of us, an invisible, game-changing transformation links everyone in this picture” — một sự thay đổi vô hình đang âm thầm tác động tới tất cả mọi người mà đa số không hề hay biết."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Our use of technology is having a hidden effect on us",
+              "p": "an invisible, game-changing transformation links everyone in this picture"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Trọng tâm đoạn 1 là sự thay đổi ẩn giấu (invisible) trong não bộ do dùng công nghệ, đúng ý A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không đưa ra lời khuyên là nên dùng công nghệ để giúp trẻ đọc — chỉ mô tả hiện trạng, còn ẩn ý cảnh báo."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không có chuyện khuyến khích hành khách dùng công nghệ trên máy bay."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Chơi game chỉ là một chi tiết trong bức tranh mở đầu, không phải luận điểm chính của đoạn."
+            }
+          ]
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "As MIT scholar Sherry Turkle has written, we do not err as a society when we innovate but when we ignore what we disrupt or diminish while innovating."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sherry Turkle đưa ra quan điểm chính gì về đổi mới (innovation)?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: ta nên chú ý tới những gì có thể mất đi khi đổi mới xảy ra (“We should pay attention to what might be lost when innovation occurs”).",
+              "p": "Bài viết: “we do not err as a society when we innovate but when we ignore what we disrupt or diminish while innovating” — sai lầm không nằm ở việc đổi mới, mà ở việc bỏ qua những gì bị phá vỡ hay suy giảm trong quá trình đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "pay attention to what might be lost when innovation occurs",
+              "p": "we ignore what we disrupt or diminish while innovating"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Turkle nhấn mạnh cần để ý cái bị mất đi/suy giảm khi đổi mới, khớp đúng ý B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Turkle không nói đổi mới công nghệ khiến việc đọc sách in giảm đi."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không có lời kêu gọi khuyến khích thêm người trẻ tham gia đổi mới."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không phân biệt giữa phát triển sản phẩm và phát triển ý tưởng."
+            }
+          ]
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "We know from research that the reading circuit is not given to human beings through a genetic blueprint like vision or language; it needs an environment to develop. Further, it will adapt to that environment’s requirements - from different writing systems to the characteristics of whatever medium is used."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn bốn, tác giả đang nói điều gì về mạch đọc (reading circuit) trong não?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: một số mạch trong não tự điều chỉnh theo bất cứ yêu cầu nào đặt ra cho chúng (“Some brain circuits adjust to whatever is required of them”).",
+              "p": "Bài viết: mạch đọc “is not given to human beings through a genetic blueprint”, mà “will adapt to that environment's requirements ... to the characteristics of whatever medium is used” — nó thích nghi theo môi trường và phương tiện đọc."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "some brain circuits adjust to whatever is required of them",
+              "p": "it will adapt to that environment's requirements ... whatever medium is used"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mạch đọc không có sẵn theo gen mà biến đổi tùy theo yêu cầu môi trường/phương tiện — đúng ý D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Ngược lại, bài nói khả năng đọc-viết không có sẵn theo gen như thị giác hay ngôn ngữ."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Ý “đọc qua nhiều phương tiện khác nhau” chỉ là một chi tiết phụ, không phải luận điểm chính của đoạn."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nói hệ thống chữ viết đặt ra yêu cầu bất ngờ cho não bộ."
+            }
+          ]
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "English literature scholar and teacher Mark Edmundson describes how many college students actively avoid the classic literature of the 19th and 20th centuries in favour of something simpler as they no longer have the patience to read longer, denser, more difficult texts."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo Mark Edmundson, thái độ của sinh viên đại học thể hiện điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: thái độ đó ảnh hưởng tới việc họ chọn đọc gì (“has influenced what they select to read”).",
+              "p": "Bài viết: Edmundson mô tả “many college students actively avoid the classic literature ... in favour of something simpler as they no longer have the patience” — sinh viên né tránh văn học kinh điển, chọn đọc thứ đơn giản hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "has influenced what they select to read",
+              "p": "actively avoid the classic literature ... in favour of something simpler"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thái độ thiếu kiên nhẫn khiến sinh viên chọn đọc tài liệu đơn giản hơn thay vì kinh điển — khớp ý B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói thái độ sinh viên khiến Edmundson đổi cách dạy."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Ngược lại, chính tác giả bài đọc mới là người bớt lo về “cognitive impatience” hơn Edmundson."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không so sánh quan điểm của sinh viên với công chúng nói chung."
+            }
+          ]
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Multiple studies show that digital screen use may be causing a variety of troubling downstream effects on reading comprehension in older high school and college students."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các nghiên cứu về dùng màn hình số cho thấy xu hướng như thế nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “showing some ……… trends”.",
+              "p": "Bài viết: “digital screen use may be causing a variety of troubling downstream effects on reading comprehension” — gây ra nhiều hệ quả đáng lo ngại cho khả năng đọc hiểu → chọn D (worrying)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "……… trends",
+              "p": "a variety of troubling downstream effects"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“troubling” đồng nghĩa với “worrying” (đáng lo ngại) → D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "H",
+      "evidence": {
+        "quoteEn": "Results indicated that students who read on print were superior in their comprehension to screen-reading peers, particularly in their ability to sequence detail and reconstruct the plot in chronological order."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhóm của Mangen dùng câu hỏi để kiểm tra mức độ hiểu truyện của mỗi nhóm như thế nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “to find out how ……… each group's understanding of the plot was”.",
+              "p": "Bài viết: “students who read on print were superior in their comprehension to screen-reading peers, particularly in their ability to sequence detail and reconstruct the plot” — nhóm đọc sách in hiểu sâu/đầy đủ hơn nhóm đọc màn hình → chọn H (thorough)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how ……… ... understanding of the plot was",
+              "p": "superior in their comprehension ... reconstruct the plot"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“superior in their comprehension” ứng với mức độ hiểu “thorough” (thấu đáo, đầy đủ) → H."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "Results indicated that students who read on print were superior in their comprehension to screen-reading peers, particularly in their ability to sequence detail and reconstruct the plot in chronological order."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhóm đọc trên màn hình gặp khó khăn gì khi nhớ lại trình tự thông tin?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “finding the order of information ……… to recall”.",
+              "p": "Bài viết: nhóm đọc màn hình kém hơn “particularly in their ability to sequence detail and reconstruct the plot in chronological order” — khó sắp xếp lại trình tự câu chuyện → chọn F (hard)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the order of information ……… to recall",
+              "p": "particularly in their ability to ... reconstruct the plot in chronological order"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khó sắp xếp lại trình tự nghĩa là thấy việc nhớ trình tự là “hard” (khó) → F."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Many readers now use a pattern when reading in which they sample the first line and then word-spot through the rest of the text."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sinh viên có xu hướng đọc kiểu gì để tiết kiệm thời gian, theo nghiên cứu của Liu?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “tending to read ……… words and phrases in a text”.",
+              "p": "Bài viết: người đọc “sample the first line and then word-spot through the rest of the text” — chỉ đọc câu đầu rồi nhặt từng từ/cụm từ rời rạc trong phần còn lại → chọn B (isolated)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "……… words and phrases",
+              "p": "sample the first line and then word-spot through the rest of the text"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đọc rời rạc từng từ/cụm từ (word-spotting) chính là đọc “isolated” words and phrases → B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "In other words, we don’t have time to grasp complexity, to understand another’s feelings, to perceive beauty, and to create thoughts of the reader’s own."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kiểu đọc lướt khiến người đọc chỉ hiểu bề mặt của loại nội dung nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a superficial understanding of the ……… content of material”.",
+              "p": "Bài viết: khi đọc lướt, “we don't have time ... to understand another's feelings” — không còn thời gian để cảm nhận/thấu hiểu cảm xúc của người khác → chọn C (emotional)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ……… content of material",
+              "p": "to understand another's feelings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“understand another's feelings” chính là nội dung mang tính “emotional” (cảm xúc) → C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "many college students actively avoid the classic literature of the 19th and 20th centuries in favour of something simpler as they no longer have the patience to read longer, denser, more difficult texts."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phương tiện đọc (sách in hay màn hình) có thể ảnh hưởng tới việc ta chọn đọc nội dung gì không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The medium we use to read can affect our choice of reading content.”",
+              "p": "Bài viết: mạch đọc thích nghi theo phương tiện, và hệ quả cụ thể là “many college students actively avoid the classic literature ... in favour of something simpler as they no longer have the patience to read longer, denser, more difficult texts” — thói quen đọc số khiến sinh viên né tránh văn học kinh điển, chọn đọc thứ dễ hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the medium we use to read can affect our choice of reading content",
+              "p": "actively avoid the classic literature ... in favour of something simpler"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Việc quen đọc lướt trên màn hình khiến người đọc chọn tài liệu đơn giản hơn thay vì kinh điển — đúng như đề nói về ảnh hưởng của phương tiện đọc lên lựa chọn nội dung."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Nor is it only about the young. The subtle atrophy of critical analysis and empathy affects us all equally."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có nhóm tuổi nào dễ mất kỹ năng đọc phức tạp hơn nhóm khác không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Some age groups are more likely to lose their complex reading skills than others.”",
+              "p": "Bài viết khẳng định ngược lại: “Nor is it only about the young. The subtle atrophy of critical analysis and empathy affects us all equally” — không chỉ người trẻ, sự suy giảm này ảnh hưởng tới TẤT CẢ mọi người như nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "some age groups are more likely to lose their complex reading skills",
+              "p": "affects us all equally"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả nói rõ ảnh hưởng là như nhau ở mọi lứa tuổi, không có nhóm nào bị ảnh hưởng nhiều hơn — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "leaving us susceptible to false information and irrational ideas."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thông tin sai lệch đã trở nên phổ biến hơn trong thời đại số ngày nay không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “False information has become more widespread in today's digital era.”",
+              "p": "Bài viết chỉ nói việc đọc lướt khiến ta “susceptible to false information and irrational ideas” — dễ bị ảnh hưởng bởi tin sai, chứ không so sánh lượng tin sai hiện nay với trước đây."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "false information has become more widespread",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ nói con người dễ bị tin sai tác động hơn, không hề khẳng định bản thân tin sai đã trở nên phổ biến hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "We possess both the science and the technology to identify and redress the changes in how we read before they become entrenched."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chúng ta còn cơ hội để khắc phục vấn đề mà công nghệ đang gây ra không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “We still have opportunities to rectify the problems that technology is presenting.”",
+              "p": "Bài viết: “We possess both the science and the technology to identify and redress the changes in how we read before they become entrenched” — ta có đủ khoa học và công nghệ để nhận diện và sửa chữa những thay đổi này trước khi chúng trở nên cố định."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "opportunities to rectify the problems",
+              "p": "the science and the technology to identify and redress the changes ... before they become entrenched"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả khẳng định rõ ràng vẫn còn khả năng khắc phục vấn đề — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quotesEn": [
+          "Police forces are using it to map when and where crime is likely to occur. Doctors can use it to predict when a patient is most likely to have a heart attack or stroke.",
+          "Many decisions in our lives require a good forecast, and AI is almost always better at forecasting than we are."
+        ],
+        "quoteEn": "Many decisions in our lives require a good forecast, and AI is almost always better at forecasting than we are."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A đang nói về điều gì? Cần tìm heading kiểu: AI dự đoán giỏi hơn con người."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iii: “The superiority of AI projections over those made by humans”",
+              "p": "Đoạn A: cảnh sát, bác sĩ đều dùng AI để dự đoán (“Police forces are using it to map ... Doctors can use it to predict”), và tác giả khẳng định “AI is almost always better at forecasting than we are” — AI hầu như luôn dự đoán giỏi hơn con người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the superiority of AI projections over those made by humans",
+              "p": "AI is almost always better at forecasting than we are"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iii"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quotesEn": [
+          "Take the case of Watson for Oncology, one of technology giant IBM’s supercomputer programs.",
+          "Their attempt to promote this program to cancer doctors was a PR disaster."
+        ],
+        "quoteEn": "Their attempt to promote this program to cancer doctors was a PR disaster."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B đang nói về điều gì? Cần tìm heading kiểu: một sản phẩm AI bị nhiều người nghi ngờ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vi: “Widespread distrust of an AI innovation”",
+              "p": "Đoạn B kể về “Watson for Oncology, one of technology giant IBM's supercomputer programs” — nhưng “Their attempt to promote this program to cancer doctors was a PR disaster”, các bác sĩ đều nghi ngờ khuyến nghị của nó dù đúng hay sai."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "widespread distrust of an AI innovation",
+              "p": "their attempt to promote this program to cancer doctors was a PR disaster"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "ii",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quotesEn": [
+          "This is just one example of people’s lack of confidence in AI and their reluctance to accept what AI has to offer.",
+          "Trust in other people is often based on our understanding of how others think and having experience of their reliability. This helps create a psychological feeling of safety."
+        ],
+        "quoteEn": "Trust in other people is often based on our understanding of how others think and having experience of their reliability. This helps create a psychological feeling of safety."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C đang nói về điều gì? Cần tìm heading kiểu: lý do ta tin người hơn tin AI."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ii: “Reasons why we have more faith in human judgement than in AI”",
+              "p": "Đoạn C: “This is just one example of people's lack of confidence in AI”, và giải thích “Trust in other people is often based on our understanding of how others think and having experience of their reliability. This helps create a psychological feeling of safety” — còn AI thì xa lạ, khó hiểu, gây bất an."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reasons why we have more faith in human judgement than in AI",
+              "p": "trust in other people is often based on our understanding of how others think"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ii"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quotesEn": [
+          "Feelings about AI run deep. In a recent experiment, people from a range of backgrounds were given various sci-fi films about AI to watch and then asked questions about automation in everyday life.",
+          "Optimists became more extreme in their enthusiasm for AI and sceptics became even more guarded."
+        ],
+        "quoteEn": "Optimists became more extreme in their enthusiasm for AI and sceptics became even more guarded."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D đang nói về điều gì? Cần tìm heading kiểu: thái độ về AI ngày càng phân hóa."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading i: “An increasing divergence of attitudes towards AI”",
+              "p": "Đoạn D: sau khi xem phim khoa học viễn tưởng về AI, “Optimists became more extreme in their enthusiasm for AI and sceptics became even more guarded” — người lạc quan càng lạc quan, người hoài nghi càng hoài nghi hơn, tức là hai thái cực ngày càng xa nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an increasing divergence of attitudes towards AI",
+              "p": "optimists became more extreme ... and sceptics became even more guarded"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "i"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quotesEn": [
+          "Fortunately, we already have some ideas about how to improve trust in AI.",
+          "Another solution may be to reveal more about the algorithms which AI uses and the purposes they serve."
+        ],
+        "quoteEn": "Another solution may be to reveal more about the algorithms which AI uses and the purposes they serve."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E đang nói về điều gì? Cần tìm heading kiểu: khuyến khích minh bạch cách AI vận hành."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vii: “Encouraging openness about how AI functions”",
+              "p": "Đoạn E: “Another solution may be to reveal more about the algorithms which AI uses and the purposes they serve” — công khai thêm về thuật toán và mục đích sử dụng để người dùng hiểu rõ hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "encouraging openness about how AI functions",
+              "p": "reveal more about the algorithms which AI uses and the purposes they serve"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vii"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "v",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quotesEn": [
+          "Research suggests that allowing people some control over AI decision-making could also improve trust and enable AI to learn from human experience.",
+          "For example, one study showed that when people were allowed the freedom to slightly modify an algorithm, they felt more satisfied with its decisions, more likely to believe it was superior and more likely to use it in the future."
+        ],
+        "quoteEn": "Research suggests that allowing people some control over AI decision-making could also improve trust and enable AI to learn from human experience."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F đang nói về điều gì? Cần tìm heading kiểu: lợi ích khi để người dùng tham gia vào quy trình AI."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading v: “The advantages of involving users in AI processes”",
+              "p": "Đoạn F: “allowing people some control over AI decision-making could also improve trust”, và nghiên cứu cho thấy khi được “allowed the freedom to slightly modify an algorithm”, người dùng “felt more satisfied ... more likely to believe it was superior and more likely to use it in the future” — nhiều lợi ích rõ rệt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the advantages of involving users in AI processes",
+              "p": "felt more satisfied ... more likely to believe it was superior"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "v"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Yet for all these technological advances, we still seem to deeply lack confidence in AI predictions."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong đoạn A, tác giả đang làm gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: chỉ ra sự tồn tại của một vấn đề (“highlighting the existence of a problem”).",
+              "p": "Bài viết: dù AI dự đoán giỏi, “we still seem to deeply lack confidence in AI predictions” — tác giả nêu bật nghịch lý/vấn đề là con người vẫn thiếu niềm tin vào AI dù nó vượt trội."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "highlighting the existence of a problem",
+              "p": "we still seem to deeply lack confidence in AI predictions"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn A chỉ nêu vấn đề (thiếu niềm tin vào AI), chưa đưa giải pháp hay giải thích nguyên nhân sâu xa — đúng ý C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đoạn A chưa đưa ra giải pháp nào, chỉ nêu vấn đề; giải pháp xuất hiện ở các đoạn sau."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Tác giả không bảo vệ một quan điểm cá nhân, mà đang trình bày thực trạng khách quan."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Đoạn A chưa giải thích lý do vì sao con người thiếu tin tưởng, phần đó nằm ở đoạn C."
+            }
+          ]
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "And interacting with something we don’t understand can cause anxiety and give us a sense that we’re losing control."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo đoạn C, vì sao một số người ngần ngại chấp nhận AI?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: sự phức tạp của AI khiến họ cảm thấy mình đang ở thế bất lợi (“Its complexity makes them feel that they are at a disadvantage”).",
+              "p": "Bài viết: “AI's decision-making process is usually too difficult for most people to comprehend. And interacting with something we don't understand can cause anxiety and give us a sense that we're losing control” — sự phức tạp khó hiểu khiến người ta thấy bất an, mất quyền kiểm soát, tức là cảm thấy bất lợi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "its complexity makes them feel that they are at a disadvantage",
+              "p": "give us a sense that we're losing control"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chính sự khó hiểu, phức tạp của AI khiến người dùng cảm thấy mất kiểm soát/ở thế yếu — khớp ý B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói người ta sợ AI thay thế công việc con người trong đoạn này."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không có ý chờ công nghệ được kiểm chứng qua thời gian."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Vấn đề là AI thực sự khó hiểu (“too difficult ... to comprehend”), không phải do hiểu lầm khiến nó có vẻ khó hơn thực tế."
+            }
+          ]
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Embarrassing AI failures receive a disproportionate amount of media attention, emphasising the message that we cannot rely on technology."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong đoạn C, tác giả nói gì về truyền thông (media)?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: truyền thông khiến công chúng thêm nghi ngờ AI (“It leads the public to be mistrustful of AI”).",
+              "p": "Bài viết: “Embarrassing AI failures receive a disproportionate amount of media attention, emphasising the message that we cannot rely on technology” — truyền thông tập trung quá mức vào các thất bại của AI, càng khiến người ta tin rằng không thể tin tưởng công nghệ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "it leads the public to be mistrustful of AI",
+              "p": "emphasising the message that we cannot rely on technology"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Việc truyền thông nhấn mạnh thất bại của AI trực tiếp làm tăng sự nghi ngờ của công chúng — đúng ý A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài nói truyền thông chú ý “disproportionate” (không tương xứng) tới thất bại, chứ không nói chung là dành quá nhiều thời lượng cho AI nói chung."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nói các bản tin về sự cố AI là thiếu chính xác."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không kết luận nguyên nhân thất bại AI là do lỗi người thiết kế trong đoạn nói về truyền thông."
+            }
+          ]
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "It was found that, regardless of whether the film they watched depicted AI in a positive or negative light, simply watching a cinematic vision of our technological future polarised the participants’ attitudes. Optimists became more extreme in their enthusiasm for AI and sceptics became even more guarded."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cách phim khoa học viễn tưởng khắc họa AI theo hướng chủ quan có khiến người xem đổi quan điểm về tự động hóa không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Subjective depictions of AI in sci-fi films make people change their opinions about automation.”",
+              "p": "Bài viết: dù phim khắc họa AI tích cực hay tiêu cực, kết quả là nó chỉ “polarised the participants' attitudes. Optimists became more extreme in their enthusiasm for AI and sceptics became even more guarded” — làm CỦNG CỐ thêm quan điểm sẵn có (cực đoan hóa), chứ không khiến người xem thay đổi quan điểm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "make people change their opinions about automation",
+              "p": "polarised the participants' attitudes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phim chỉ khiến thái độ vốn có trở nên cực đoan hơn (dù phim khen hay chê AI), chứ không làm người xem đổi ý — trái với đề nói là “thay đổi quan điểm”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "As AI is represented more and more in media and entertainment, it could lead to a society split between those who benefit from AI and those who reject it."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cách AI được thể hiện trên truyền thông và giải trí có khả năng trở nên tích cực hơn trong tương lai không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Portrayals of AI in media and entertainment are likely to become more positive.”",
+              "p": "Bài viết chỉ nói “As AI is represented more and more in media and entertainment, it could lead to a society split between those who benefit from AI and those who reject it” — cảnh báo về nguy cơ chia rẽ xã hội, không hề đề cập xu hướng các miêu tả này sẽ tích cực hơn hay tiêu cực hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "portrayals of AI ... are likely to become more positive",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ dự đoán hệ quả xã hội (chia rẽ), không có thông tin về việc miêu tả AI trên truyền thông sẽ thay đổi theo hướng tích cực hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "More pertinently, refusing to accept the advantages offered by AI could place a large group of people at a serious disadvantage."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc từ chối các khả năng mà AI mang lại có thể gây ảnh hưởng tiêu cực tới nhiều người không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Rejection of the possibilities of AI may have a negative effect on many people's lives.”",
+              "p": "Bài viết: “refusing to accept the advantages offered by AI could place a large group of people at a serious disadvantage” — từ chối những lợi ích của AI có thể khiến một nhóm lớn người rơi vào bất lợi nghiêm trọng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "rejection of the possibilities of AI may have a negative effect on many people's lives",
+              "p": "refusing to accept the advantages offered by AI could place a large group of people at a serious disadvantage"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Câu này khẳng định trực tiếp hệ quả tiêu cực của việc từ chối AI đối với nhiều người — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Simply having previous experience with AI can significantly improve people’s opinions about the technology, as was found in the study mentioned above. Evidence also suggests the more you use other technologies such as the internet, the more you trust them."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc quen thuộc với AI có tác động rất ít tới thái độ của con người với công nghệ này không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Familiarity with AI has very little impact on people's attitudes to the technology.”",
+              "p": "Bài viết khẳng định ngược lại: “Simply having previous experience with AI can significantly improve people's opinions about the technology” — chỉ cần từng có trải nghiệm với AI cũng đã cải thiện đáng kể quan điểm của người ta về nó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "familiarity with AI has very little impact",
+              "p": "can significantly improve people's opinions about the technology"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ trải nghiệm/sự quen thuộc có tác động đáng kể (“significantly improve”), không phải “rất ít” như đề nêu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "when people were allowed the freedom to slightly modify an algorithm, they felt more satisfied with its decisions, more likely to believe it was superior and more likely to use it in the future."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các ứng dụng AI mà người dùng có thể tự chỉnh sửa có nhiều khả năng được người tiêu dùng chấp nhận hơn không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “AI applications which users are able to modify are more likely to gain consumer approval.”",
+              "p": "Bài viết: nghiên cứu cho thấy “when people were allowed the freedom to slightly modify an algorithm, they felt more satisfied with its decisions, more likely to believe it was superior and more likely to use it in the future” — được chỉnh sửa thuật toán giúp người dùng hài lòng, tin tưởng và muốn dùng tiếp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more likely to gain consumer approval",
+              "p": "felt more satisfied with its decisions, more likely to believe it was superior"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Kết quả nghiên cứu cho thấy khả năng chỉnh sửa làm tăng sự chấp nhận của người dùng — đúng như đề nói."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    }
+  }
+}

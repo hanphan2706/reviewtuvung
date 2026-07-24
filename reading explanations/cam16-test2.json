@@ -1,0 +1,1825 @@
+{
+  "pilotId": "cam16-test2",
+  "schemaVersion": 4,
+  "note": "Cam 16 R T2 — tiếng Việt tự nhiên theo chuẩn pilot (giọng Cam19 T1); paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The White Horse of Uffington",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "I contain multitudes — Wendy Moore reviews Ed Yong’s book about microbes",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "How to make wise decisions",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "with the vast majority on the chalk downlands of the country’s southern counties"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phần lớn geoglyph ở Anh có nằm tập trung ở một khu vực không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Most geoglyphs … are located in a particular area” (đa số geoglyph nằm ở một vùng nhất định)",
+              "p": "Bài: “the vast majority on the chalk downlands of the country’s southern counties” — đa số nằm trên vùng đất phấn (chalk downlands) ở các hạt miền nam."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "located in a particular area of the country",
+              "p": "on the chalk downlands of the country's southern counties"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ đa số hình khắc nằm ở vùng chalk downlands miền nam — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "The figures include giants, horses, crosses and regimental badges."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Geoglyph hình ngựa có nhiều hơn các hình khác không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “more geoglyphs in the shape of a horse than any other creature” (hình ngựa nhiều hơn mọi hình khác)",
+              "p": "Bài chỉ liệt kê các loại hình: “giants, horses, crosses and regimental badges” — không hề so sánh số lượng giữa các loại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more ... than any other creature",
+              "p": "(not compared in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ kể tên các loại geoglyph, không nói loại nào chiếm số lượng nhiều nhất."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "shown to be even older than its previously assigned ancient pre-Roman Iron Age"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc xác định niên đại gần đây có cho thấy trước đây người ta nhầm về tuổi của Bạch Mã Uffington không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “a recent dating … indicates that people were mistaken about its age” (việc định tuổi gần đây cho thấy người ta từng nhầm)",
+              "p": "Bài: “has recently been re-dated and shown to be even older than its previously assigned ... date” — được xác định lại là cổ hơn tuổi từng được gán trước đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "people were mistaken about its age",
+              "p": "shown to be even older than its previously assigned ... date"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Định tuổi mới cho ra kết quả khác (già hơn) so với tuổi từng được coi là đúng — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "While many historians are convinced the figure is prehistoric, others believe that it was the work of an artistic monk from a nearby priory and was created between the 11th and 15th centuries."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các nhà sử học đã thống nhất về nguồn gốc của Long Man of Wilmington chưa?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “historians have come to an agreement” (các nhà sử học đã đồng thuận)",
+              "p": "Bài: “many historians are convinced the figure is prehistoric, others believe … between the 11th and 15th centuries” — vẫn tồn tại hai luồng ý kiến trái ngược nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "come to an agreement",
+              "p": "many ... others believe"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Có hai quan điểm khác nhau về niên đại — chưa hề thống nhất, trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "The method of cutting these huge figures was simply to remove the overlying grass to reveal the gleaming white chalk below."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Geoglyph được tạo ra bằng cách đặt phấn trắng lên đồi — đúng không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “created by people placing white chalk on the hillside” (rải/đặt phấn trắng lên đồi)",
+              "p": "Bài: “simply to remove the overlying grass to reveal the gleaming white chalk below” — chỉ đơn giản bóc lớp cỏ để lộ lớp phấn trắng có sẵn bên dưới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "placing white chalk",
+              "p": "remove the overlying grass to reveal the ... chalk below"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chalk vốn có sẵn dưới đất, người ta chỉ bóc cỏ để lộ ra chứ không “đặt” phấn lên — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "the vast majority of hill figures have disappeared"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhiều geoglyph ở Anh giờ không còn nhìn thấy được nữa — bài có nói vậy không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “many geoglyphs … are no longer visible” (nhiều hình không còn nhìn thấy)",
+              "p": "Bài: “the vast majority of hill figures have disappeared” — phần lớn các hình khắc đã biến mất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "no longer visible",
+              "p": "have disappeared"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“have disappeared” đồng nghĩa với “không còn nhìn thấy” — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "over hundreds of years the outlines would sometimes change due to people not always cutting in exactly the same place, thus creating a different shape to the original geoglyph."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hình dạng một số geoglyph có bị thay đổi theo thời gian không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “the shape of some geoglyphs has been altered over time” (hình dạng bị thay đổi theo thời gian)",
+              "p": "Bài: “over hundreds of years the outlines would sometimes change … thus creating a different shape to the original geoglyph” — đường viền đôi khi đổi khác, tạo ra hình dạng khác so với bản gốc."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "altered over time",
+              "p": "the outlines would sometimes change ... over hundreds of years"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài xác nhận hình dạng đổi khác so với bản gốc qua thời gian — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "The most famous of these figures is perhaps also the most mysterious - the Uffington White Horse in Oxfordshire."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bạch Mã Uffington nổi tiếng chủ yếu vì kích thước của nó — bài có khẳng định không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “the fame … is due to its size” (nổi tiếng vì kích thước)",
+              "p": "Bài chỉ nói: “The most famous of these figures is perhaps also the most mysterious” — chỉ nêu nó nổi tiếng và bí ẩn, không hề nói lý do nổi tiếng nằm ở kích thước."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "famous ... due to its size",
+              "p": "(reason for fame not stated)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không nói rõ lý do nổi tiếng nằm ở kích thước; các chi tiết khác như hình dáng, vị trí, tuổi tác được nhắc tới nhiều hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Ridgeway",
+      "evidence": {
+        "quoteEn": "below the Ridgeway, a long-distance Neolithic"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: con đường cổ gần Bạch Mã Uffington có tên là gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “known as the ______” cần một danh từ riêng (tên con đường)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Notes: “near an ancient road known as the ______”",
+              "p": "Bài: “below the Ridgeway, a long-distance Neolithic track” — nằm bên dưới con đường cổ Ridgeway."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an ancient road known as the ______",
+              "p": "the Ridgeway, a long-distance Neolithic track"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Con đường cổ được nhắc tới chính là Ridgeway — một từ, lấy nguyên từ bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Ridgeway"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "documents",
+      "evidence": {
+        "quoteEn": "is mentioned in documents from the nearby Abbey of Abingdon"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhắc đến White Horse Hill lần đầu xuất hiện ở đâu vào thập niên 1070:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “appears in ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Notes: “first reference … appears in ______ from the 1070s”",
+              "p": "Bài: “White Horse Hill’ is mentioned in documents from the nearby Abbey of Abingdon” — được nhắc đến trong tài liệu (documents) của tu viện Abingdon."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "appears in ______",
+              "p": "is mentioned in documents"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nơi ghi lại đầu tiên chính là documents (văn bản/tài liệu) của tu viện."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "documents"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "soil",
+      "evidence": {
+        "quoteEn": "Optically Stimulated Luminescence (OSL) testing was carried out by the Oxford Archaeological Unit on soil from two of the lower layers of the horse’s body"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kết luận niên đại Bronze/Iron Age dựa trên phân tích thứ gì bao quanh hình vẽ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “analysis of the surrounding ______” cần một danh từ không đếm được."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Notes: “according to analysis of the surrounding ______, the Horse is Late Bronze Age / Early Iron Age”",
+              "p": "Bài: “OSL testing was carried out … on soil from two of the lower layers of the horse’s body” — mẫu xét nghiệm chính là đất (soil) bao quanh hình vẽ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "analysis of the surrounding ______",
+              "p": "testing ... on soil from two of the lower layers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mẫu được lấy để xét nghiệm niên đại chính là soil (đất)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "soil"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "fertility",
+      "evidence": {
+        "quoteEn": "worshipped as a protector of horses, and for her associations with fertility"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nữ thần Epona được cho là bảo vệ ngựa và còn gắn với điều gì nữa:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “protection of horses and ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Notes: “associated with protection of horses and ______”",
+              "p": "Bài: “worshipped as a protector of horses, and for her associations with fertility” — vừa bảo vệ ngựa, vừa gắn với khả năng sinh sản/mùa màng (fertility)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "and ______",
+              "p": "and for her associations with fertility"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ngoài bảo vệ ngựa, Epona còn gắn liền với fertility."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fertility"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Rhiannon",
+      "evidence": {
+        "quoteEn": "such as Rhiannon, described in later Welsh mythology as a beautiful woman dressed in gold and riding a white horse"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hình vẽ cũng có thể là đại diện cho nữ thần xứ Wales tên gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a Welsh goddess called ______” cần một tên riêng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Notes: “was a representation of a Welsh goddess called ______”",
+              "p": "Bài: “such as Rhiannon, described in later Welsh mythology as a beautiful woman dressed in gold and riding a white horse” — tên nữ thần chính là Rhiannon."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a Welsh goddess called ______",
+              "p": "such as Rhiannon"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tên nữ thần được nhắc tới rõ ràng là Rhiannon."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Rhiannon"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Microbes, most of them bacteria, have populated this planet since long before animal life developed and they will outlive us."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn 1, tác giả muốn nhấn điểm gì về vi khuẩn (microbes):"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: chúng sẽ tồn tại lâu hơn loài người (“will continue to exist for longer than the human race”).",
+              "p": "Bài: “have populated this planet since long before animal life developed and they will outlive us” — đã có mặt từ trước cả động vật và sẽ “outlive” (sống lâu hơn) con người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "will continue to exist for longer than the human race",
+              "p": "they will outlive us"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“outlive us” chính là ý “tồn tại lâu hơn loài người” — khớp đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói vi khuẩn thích nghi nhanh với môi trường."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói rủi ro từ vi khuẩn bị thổi phồng quá mức."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài chỉ liệt kê chúng có mặt khắp nơi (đất, rong biển, san hô, chó, người) — không so sánh số lượng ở động vật với thực vật."
+            }
+          ]
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "the number of human cells in the average person is about 30 trillion, the number of microbial ones is higher - about 39 trillion."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn 2, điều gì khiến tác giả thấy ấn tượng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: người bình thường có nhiều tế bào vi khuẩn hơn tế bào người (“more microbial cells than human ones”).",
+              "p": "Bài: “the number of human cells … is about 30 trillion, the number of microbial ones is higher - about 39 trillion” — 39 nghìn tỷ tế bào vi khuẩn nhiều hơn 30 nghìn tỷ tế bào người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more microbial cells than human ones",
+              "p": "the number of microbial ones is higher"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây đúng là chi tiết “What is amazing” mà bài nêu ra — khớp đáp án C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài nói microbes khác nhau giữa các loài, nhưng đó không phải điều được nhấn là “amazing” ở đoạn này."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói một số bộ phận cơ thể có tương đối ít vi khuẩn."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không bàn việc khoa học hiểu hạn chế về hành vi của tế bào vi khuẩn."
+            }
+          ]
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "The first man to see these extraordinarily potent creatures was a Dutch lens-maker called Antony van Leeuwenhoek in the 1670s."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn 5, tác giả đang làm gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: giải thích một khám phá đã diễn ra thế nào (“explaining how a discovery was made”).",
+              "p": "Bài: “The first man to see these extraordinarily potent creatures was a Dutch lens-maker called Antony van Leeuwenhoek in the 1670s” — kể lại việc Leeuwenhoek dùng kính hiển vi tự chế phát hiện ra vi khuẩn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "explaining how a discovery was made",
+              "p": "the first man to see these ... creatures was a Dutch lens-maker ... Antony van Leeuwenhoek"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn này thuật lại quá trình vi khuẩn được phát hiện lần đầu — khớp đáp án A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Không có việc so sánh các thuyết khoa học khác nhau."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không mô tả sự bối rối giữa các nhà khoa học."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Chỉ nhắc ngắn gọn thuyết mầm bệnh của Pasteur, không đi sâu cơ chế gây bệnh."
+            }
+          ]
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "fewer than one hundred species of bacteria bring disease"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền từ: chỉ một số ít vi khuẩn dẫn đến ______."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “only a relatively small number lead to ______”.",
+              "p": "Bài: “fewer than one hundred species of bacteria bring disease” — chưa tới một trăm loài gây bệnh → illness (G)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lead to ______",
+              "p": "bring disease"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“bring disease” ứng với illness (G) trong bảng từ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "we have a symbiotic relationship, that can be mutually beneficial or mutually destructive."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền từ: quan hệ giữa con người và vi khuẩn được xem là dựa trên ______."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “our relationship with microbes is one based on ______”.",
+              "p": "Bài: “we have a symbiotic relationship, that can be mutually beneficial or mutually destructive” — một mối quan hệ cộng sinh, hai bên cùng ảnh hưởng lẫn nhau → partnership (B)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "based on ______",
+              "p": "a symbiotic relationship"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Quan hệ cộng sinh (hai bên cùng tham gia) ứng với partnership (B)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "H",
+      "evidence": {
+        "quoteEn": "our unhealthy, low-fibre diets are disrupting the bacterial balance"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền từ: chế độ ăn kém của chúng ta liên quan tới ______."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Our poor ______”, cùng với việc lạm dụng kháng sinh, làm mất cân bằng vi khuẩn.",
+              "p": "Bài: “our unhealthy, low-fibre diets are disrupting the bacterial balance” — chế độ ăn thiếu chất xơ, không lành mạnh → nutrition (H)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Our poor ______",
+              "p": "our unhealthy, low-fibre diets"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“diets” (chế độ ăn) ứng với nutrition (H)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "Our obsession with hygiene"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền từ: chúng ta quá chú trọng vào ______."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “our excessive focus on ______”.",
+              "p": "Bài: “Our obsession with hygiene” — nỗi ám ảnh với sự sạch sẽ, vệ sinh → cleanliness (E)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "excessive focus on ______",
+              "p": "obsession with hygiene"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“hygiene” ứng với cleanliness (E)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "the excessive use of household detergents and antibacterial products actually destroys the microbes that normally keep the more dangerous germs at bay."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dùng sản phẩm kháng khuẩn trong nhà có thể không đạt hiệu quả mong muốn — đúng không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “using antibacterial products … fails to have the desired effect” (dùng sản phẩm kháng khuẩn có thể không hiệu quả như mong muốn).",
+              "p": "Bài: “the excessive use of household detergents and antibacterial products actually destroys the microbes that normally keep the more dangerous germs at bay” — dùng quá nhiều lại tiêu diệt luôn cả vi khuẩn có lợi vốn giúp chặn mầm bệnh nguy hiểm, tức là phản tác dụng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fails to have the desired effect",
+              "p": "actually destroys the microbes that normally keep the more dangerous germs at bay"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mục đích dùng kháng khuẩn là để bảo vệ, nhưng bài chỉ ra nó có thể phá luôn lớp bảo vệ tự nhiên — đúng ý đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "keeping a dog as a pet gives children early exposure to a diverse range of bacteria, which may help protect them against allergies later."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có nên hạn chế tối đa việc trẻ em tiếp xúc với vi khuẩn không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “ensure that children come into contact with as few bacteria as possible” (cho trẻ tiếp xúc càng ít vi khuẩn càng tốt).",
+              "p": "Bài: “keeping a dog as a pet gives children early exposure to a diverse range of bacteria, which may help protect them against allergies later” — tiếp xúc SỚM với NHIỀU loại vi khuẩn (qua nuôi chó) lại giúp ích, chống dị ứng về sau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "as few bacteria as possible",
+              "p": "early exposure to a diverse range of bacteria ... may help protect"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài cho thấy tiếp xúc nhiều vi khuẩn lại có lợi, ngược hẳn với ý “càng ít càng tốt” trong đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "The readers of Yong’s book must be prepared for a decidedly unglamorous world."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sách của Yong có chứa nhiều case study hơn mức cần thiết không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “more case studies than are necessary” (nhiều case study hơn cần thiết).",
+              "p": "Bài chỉ báo trước: “must be prepared for a decidedly unglamorous world” rồi kể ra một số case study cụ thể — không hề nhận xét về SỐ LƯỢNG có thừa hay không."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more ... than are necessary",
+              "p": "(no comment on quantity in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ mô tả nội dung case study, không đánh giá số lượng nhiều hay ít."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Among the less appealing case studies is one about a fungus that is wiping out entire populations of frogs … Another is about squid that carry luminescent bacteria that protect them against predators."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Case study về vi khuẩn giúp mực tránh bị tấn công có thể kém hấp dẫn với một số người đọc không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “may have limited appeal” (có thể không hấp dẫn lắm).",
+              "p": "Bài: “Among the less appealing case studies is one about a fungus … Another is about squid that carry luminescent bacteria that protect them against predators” — chính bài xếp case study về mực vào nhóm “less appealing” (kém hấp dẫn)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may have limited appeal",
+              "p": "among the less appealing case studies"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài trực tiếp gọi đây là một trong các case study “less appealing” — khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Already, in an attempt to stop mosquitoes spreading dengue fever - a disease that infects 400 million people a year - mosquitoes are being loaded with a bacterium to block the disease."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nỗ lực kiểm soát sốt xuất huyết (dengue) đã thành công đáng ngạc nhiên chưa?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “surprisingly successful” (thành công đáng ngạc nhiên).",
+              "p": "Bài chỉ nói: “in an attempt to stop mosquitoes spreading dengue fever … mosquitoes are being loaded with a bacterium to block the disease” — mới chỉ mô tả nỗ lực đang thực hiện, không hề đánh giá kết quả."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "surprisingly successful",
+              "p": "(no result/evaluation given)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ nói về nỗ lực (“in an attempt to”), chưa có kết quả để đánh giá thành công hay không."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "In the future, our ability to manipulate microbes means we could construct buildings with useful microbes built into their walls to fight off infections."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vi khuẩn giảm nguy cơ nhiễm trùng đã được đưa vào tường một số phòng bệnh viện chưa?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “have already been put inside the walls of some hospital wards” (đã được đưa vào tường một số khoa bệnh viện).",
+              "p": "Bài: “In the future … we could construct buildings … Just imagine a neonatal hospital ward coated in a specially mixed cocktail of microbes” — đây là viễn cảnh tương lai, dùng “could” và “imagine”, chưa hề xảy ra."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have already been put",
+              "p": "in the future ... we could construct ... just imagine"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây là điều tác giả hình dung cho tương lai, chưa phải chuyện đã xảy ra — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "empirical research examining wisdom suggests that it isn’t an exceptional trait possessed by a small handful of bearded philosophers after all"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn 1, tác giả đưa ra điểm gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: một giả định cơ bản về sự thông thái có thể sai (“a basic assumption about wisdom may be wrong”).",
+              "p": "Bài: “empirical research … suggests that it isn’t an exceptional trait possessed by a small handful of bearded philosophers after all … most of us have the ability to make wise decisions” — bác bỏ giả định phổ biến rằng thông thái chỉ dành cho số ít người đặc biệt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a basic assumption about wisdom may be wrong",
+              "p": "it isn't an exceptional trait possessed by a small handful of ... philosophers after all"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài phản bác đúng giả định “chỉ số ít người mới thông thái” — khớp đáp án B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không so sánh con người với loài khác, không nói thông thái là “unique to the human race”."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không bàn khái niệm thông thái thay đổi theo từng xã hội."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Trọng tâm đoạn này là giả định sai, không phải khoảng trống kiến thức chưa khám phá."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "It appears that experiential, situational, and cultural factors are even more powerful in shaping wisdom than previously imagined"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Grossmann gợi ý điều gì về khả năng đưa ra quyết định khôn ngoan:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: tầm quan trọng của một số yếu tố ảnh hưởng đã bị đánh giá thấp trước đây (“the importance of certain influences … was underestimated”).",
+              "p": "Bài (lời Grossmann): “experiential, situational, and cultural factors are even more powerful in shaping wisdom than previously imagined” — các yếu tố này có sức ảnh hưởng lớn hơn NHIỀU so với những gì từng nghĩ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "was underestimated",
+              "p": "even more powerful ... than previously imagined"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“more powerful than previously imagined” chính là ý “bị đánh giá thấp trước đây” — khớp đáp án C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đoạn 3 ngay sau đó nói rõ khác biệt nằm ở hoàn cảnh chứ không phải giữa cá nhân này với cá nhân khác."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói nghiên cứu trước đây dựa trên dữ liệu không đáng tin."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không nói các ngành tâm lý học định nghĩa thông thái khác nhau — chỉ nói nhiều ngành cùng góp phần vào phát hiện chung."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "It seems that it’s not so much that some people simply possess wisdom and others lack it, but that our ability to reason wisely depends on a variety of external factors."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo đoạn 3, Grossmann cho rằng mức độ thông thái của một cá nhân:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: sẽ khác nhau tùy hoàn cảnh (“will be different in different circumstances”).",
+              "p": "Bài: “wisdom is not solely an ‘inner quality’ but rather unfolds as a function of situations people happen to be in. Some situations are more likely to promote wisdom than others” — thông thái phụ thuộc vào tình huống, tình huống khác nhau thì mức độ khác nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "will be different in different circumstances",
+              "p": "unfolds as a function of situations ... some situations are more likely to promote wisdom than others"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn này nhấn mạnh yếu tố tình huống quyết định mức độ thông thái — khớp đáp án B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói người ta thông thái hơn họ tự nghĩ."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Đoạn này phủ nhận ý thông thái là “inner quality” gắn với tính cách cá nhân — trái với C."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không nói thông thái phát triển dần theo kinh nghiệm sống ở đoạn này."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "one of the most reliable ways to support wisdom in our own day-to-day decisions is to look at scenarios from a third-party perspective, as though giving advice to a friend."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn 5 mô tả điều gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: một chiến lược được khuyên dùng để giúp suy luận khôn ngoan hơn (“a recommended strategy”).",
+              "p": "Bài: “one of the most reliable ways to support wisdom … is to look at scenarios from a third-party perspective, as though giving advice to a friend” — gợi ý nhìn nhận vấn đề như người ngoài cuộc để ra quyết định khôn ngoan hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a recommended strategy that can help people to reason wisely",
+              "p": "one of the most reliable ways to support wisdom ... is to look at scenarios from a third-party perspective"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây rõ ràng là một chiến lược cụ thể được đề xuất — khớp đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói đây là khó khăn gặp phải khi cố suy luận khôn ngoan."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài không mô tả kiểu người có xu hướng thông thái."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không có tranh cãi nào về lợi ích của việc suy luận khôn ngoan được nêu ở đây."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "One is intellectual humility or recognition of the limits of our own knowledge"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền từ: cần có một mức độ ______ nhất định về giới hạn kiến thức của mình."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a certain degree of ______ regarding the extent of our knowledge”.",
+              "p": "Bài: “intellectual humility or recognition of the limits of our own knowledge” — sự khiêm tốn trí tuệ, nhận ra giới hạn hiểu biết của bản thân → modesty (D)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a certain degree of ______",
+              "p": "intellectual humility"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“humility” (khiêm tốn) ứng với modesty (D)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "compromise or integration of different attitudes and beliefs"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền từ: cần cân nhắc cả những ______ có thể khác với ý của mình."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “take into account ______ which may not be the same as our own”.",
+              "p": "Bài: “compromise or integration of different attitudes and beliefs” — biết dung hòa các quan điểm, niềm tin khác với mình → opinions (A)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ which may not be the same as our own",
+              "p": "different attitudes and beliefs"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“different attitudes and beliefs” ứng với opinions (A)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "another is appreciation of perspectives wider than the issue at hand"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền từ: cần có một ______ rộng về mọi tình huống."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “take a broad ______ of any situation”.",
+              "p": "Bài: “appreciation of perspectives wider than the issue at hand” — biết nhìn xa hơn phạm vi vấn đề đang xét → view (C)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a broad ______",
+              "p": "perspectives wider than the issue at hand"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“a broad view” khớp với “wider perspectives” — chọn view (C)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "look at scenarios from a third-party perspective, as though giving advice to a friend"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền từ: nên nhìn nhận tình huống với ______."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “regard scenarios with ______”.",
+              "p": "Bài: “look at scenarios from a third-party perspective, as though giving advice to a friend” — nhìn từ góc độ người ngoài cuộc, khách quan → objectivity (F)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "regard scenarios with ______",
+              "p": "a third-party perspective"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Góc nhìn người ngoài cuộc chính là objectivity (F) — sự khách quan."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "we reason more broadly and focus more on interpersonal and moral ideals such as justice and impartiality"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điền từ: tránh góc nhìn ngôi thứ nhất giúp tập trung hơn vào ______."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “we focus more on ______ and on other moral ideals”.",
+              "p": "Bài: “we reason more broadly and focus more on interpersonal and moral ideals such as justice and impartiality” — tập trung vào công lý, sự công bằng → fairness (G)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "focus more on ______",
+              "p": "justice and impartiality"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“justice” (công lý/công bằng) ứng với fairness (G)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "The students were instructed to imagine their career either ‘as if you were a distant observer’ or ‘before your own eyes as if you were right there’. … Participants in the group assigned to the ‘distant observer’ role displayed more wisdom-related reasoning"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sinh viên trong thí nghiệm về triển vọng việc làm có được tự chọn góc nhìn để tưởng tượng không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “could choose one of two perspectives to take” (được tự chọn một trong hai góc nhìn).",
+              "p": "Bài: “The students were instructed to imagine … either … or …” rồi “Participants in the group assigned to the ‘distant observer’ role …” — sinh viên được HƯỚNG DẪN và PHÂN NHÓM (instructed, assigned), không phải tự chọn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "could choose",
+              "p": "were instructed ... assigned to the ... role"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ “instructed” và “assigned” cho thấy góc nhìn được chỉ định sẵn, không phải do sinh viên tự chọn — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Participants then discussed the incident with their partner for 10 minutes, after which they wrote down their thoughts about it."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các cặp đôi trong thí nghiệm có biết mình đang tham gia nghiên cứu về sự thông thái không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “were aware that they were taking part in a study about wise reasoning” (biết đây là nghiên cứu về sự thông thái).",
+              "p": "Bài chỉ nói: “instructed to visualize an unresolved relationship conflict … Participants then discussed the incident with their partner for 10 minutes, after which they wrote down their thoughts about it” — chỉ mô tả họ làm gì, không nói họ có biết mục đích nghiên cứu hay không."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "were aware ... about wise reasoning",
+              "p": "(not mentioned in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không đề cập việc người tham gia có biết chủ đề nghiên cứu hay không."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "couples in long-term romantic relationships were instructed to visualize an unresolved relationship conflict either through the eyes of an outsider or from their own perspective."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Độ dài mối quan hệ của các cặp đôi có ảnh hưởng tới kết quả không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “the length of the couples’ relationships had an impact on the results” (độ dài mối quan hệ ảnh hưởng kết quả).",
+              "p": "Bài chỉ nói: “couples in long-term romantic relationships were instructed to visualize …” — chỉ nêu họ là các cặp có mối quan hệ lâu dài, không hề so sánh kết quả theo độ dài mối quan hệ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the length ... had an impact on the results",
+              "p": "(no comparison by relationship length given)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không so sánh kết quả giữa các cặp có mối quan hệ dài, ngắn khác nhau."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Participants in the group assigned to the ‘distant observer’ role displayed more wisdom-related reasoning … Couples in the ‘other’s eyes’ condition were significantly more likely to rely on wise reasoning"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở cả hai thí nghiệm, người nhìn vấn đề từ góc độ tách biệt hơn có xu hướng ra quyết định khôn ngoan hơn không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “participants who looked at the situation from a more detached viewpoint tended to make wiser decisions” — ở CẢ HAI thí nghiệm.",
+              "p": "Bài: thí nghiệm 1 — “Participants in the group assigned to the ‘distant observer’ role displayed more wisdom-related reasoning”; thí nghiệm 2 — “Couples in the ‘other’s eyes’ condition were significantly more likely to rely on wise reasoning” — cả hai cùng cho kết quả tương tự."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a more detached viewpoint",
+              "p": "distant observer / the 'other's eyes' condition"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả hai thí nghiệm đều xác nhận góc nhìn tách biệt (người ngoài cuộc) giúp suy luận khôn ngoan hơn — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "research shows only a small positive relationship between wise thinking and crystallized intelligence and the personality traits of openness and agreeableness."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Grossmann có cho rằng trí thông minh chỉ quyết định sự thông thái ở mức rất hạn chế không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “determined by their intelligence to only a very limited extent” (trí thông minh chỉ quyết định thông thái ở mức rất hạn chế).",
+              "p": "Bài: “research shows only a small positive relationship between wise thinking and crystallized intelligence …” — nghiên cứu cho thấy mối liên hệ giữa thông thái và trí thông minh chỉ ở mức nhỏ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "to only a very limited extent",
+              "p": "only a small positive relationship"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“a small positive relationship” khớp với ý “ảnh hưởng rất hạn chế” — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    }
+  }
+}

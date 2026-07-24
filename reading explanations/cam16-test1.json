@@ -1,0 +1,1882 @@
+{
+  "pilotId": "cam16-test1",
+  "schemaVersion": 4,
+  "note": "Cam 16 R T1 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Why we need to protect polar bears",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "The Step Pyramid of Djoser",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "The future of work",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Yet the polar bear experiences no such consequences."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Con người bị béo phì, tiểu đường, tim mạch vì mỡ dày dưới da — gấu Bắc Cực có bị vậy không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói gấu Bắc Cực “suffer from various health problems” (gặp nhiều vấn đề sức khỏe) vì lớp mỡ dày.",
+              "p": "Bài viết: con người có lượng mỡ tương tự sẽ béo phì, tiểu đường, tim mạch, nhưng “the polar bear experiences no such consequences” — gấu hoàn toàn không gặp hậu quả đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "suffer from various health problems",
+              "p": "experiences no such consequences"
+            },
+            {
+              "q": "build-up of fat under their skin",
+              "p": "up to 11 centimetres of fat underneath their skin"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định ngược lại: gấu không hề gặp vấn đề sức khỏe dù có lớp mỡ dày."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "They compared the genetic structure of polar bears with that of their closest relatives from a warmer climate, the brown bears."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nghiên cứu của Liu so sánh giữa các nhóm gấu Bắc Cực với nhau, hay so với loài khác?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói nghiên cứu “compared different groups of polar bears” (so sánh các nhóm gấu Bắc Cực khác nhau).",
+              "p": "Bài viết: họ so sánh gấu Bắc Cực với “brown bears” — một loài khác (họ hàng gần sống ở vùng ấm hơn), không phải so giữa các nhóm gấu Bắc Cực."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "compared different groups of polar bears",
+              "p": "compared the genetic structure of polar bears with ... the brown bears"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nghiên cứu so sánh hai loài (gấu Bắc Cực và gấu nâu), không phải các nhóm gấu Bắc Cực khác nhau."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "A 2014 study by Shi Ping Liu and colleagues sheds light on this mystery."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Liu và cộng sự có phải là những người đầu tiên so sánh gen gấu Bắc Cực và gấu nâu không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói Liu và cộng sự là “the first researchers” (những nhà nghiên cứu đầu tiên) làm việc này.",
+              "p": "Bài chỉ giới thiệu nghiên cứu năm 2014 của họ, không hề nói đây là nghiên cứu đầu tiên loại này."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the first researchers to compare",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ mô tả nội dung nghiên cứu, không có thông tin về việc ai là người đầu tiên."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Liu and his colleagues found the polar bears had a gene known as APoB, which reduces levels of low-density lipoproteins (LDLs) - a form of ‘bad’ cholesterol."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Gấu Bắc Cực có kiểm soát được cholesterol xấu nhờ gen di truyền không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói gấu “control their levels of ‘bad’ cholesterol by genetic means” (kiểm soát cholesterol xấu bằng cơ chế gen).",
+              "p": "Bài viết: gấu có gen APoB “reduces levels of low-density lipoproteins (LDLs) - a form of ‘bad’ cholesterol” — chính gen này làm giảm cholesterol xấu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "control their levels of 'bad' cholesterol by genetic means",
+              "p": "had a gene known as APoB, which reduces levels of ... 'bad' cholesterol"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Gen APoB trực tiếp làm giảm cholesterol xấu — đúng là kiểm soát bằng gen."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "This process results in about six months of fasting, where the female bears have to keep themselves and their cubs alive, depleting their own calcium and calorie reserves."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Gấu cái có thể nhịn ăn khoảng sáu tháng mà vẫn sống không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói gấu cái “survive for about six months without food” (sống sót khoảng sáu tháng không ăn).",
+              "p": "Bài viết: quá trình này dẫn tới “about six months of fasting” — sáu tháng nhịn ăn, trong khi vẫn phải nuôi cả bản thân và con."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "survive for about six months without food",
+              "p": "about six months of fasting"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Six months of fasting” khớp trực tiếp với việc sống sót sáu tháng không ăn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "when they finally emerged from the den with their cubs, there was no evidence of significant loss of bone density"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi gấu cái ra khỏi hang vào mùa xuân, xương của chúng có bị yếu đi nhiều không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói xương gấu cái “were very weak” (rất yếu) khi ra khỏi hang.",
+              "p": "Bài viết: khi ra khỏi hang cùng đàn con, “there was no evidence of significant loss of bone density” — không có dấu hiệu mất mật độ xương đáng kể."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "bones ... were very weak when they came out of their dens",
+              "p": "no evidence of significant loss of bone density"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định ngược lại: xương gấu cái vẫn chắc khỏe, không suy yếu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "If the mechanism of bone remodelling in polar bears can be understood, many bedridden humans, and even astronauts, could potentially benefit."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cơ chế tăng mật độ xương của gấu Bắc Cực có thể giúp ích cho con người trong tương lai không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói cơ chế này “could also be used by people one day” (có thể được con người ứng dụng một ngày nào đó).",
+              "p": "Bài viết: nếu hiểu được cơ chế tái tạo xương của gấu, “many bedridden humans, and even astronauts, could potentially benefit” — người nằm liệt giường và phi hành gia có thể hưởng lợi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "could also be used by people one day",
+              "p": "many bedridden humans, and even astronauts, could potentially benefit"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ con người (người bệnh, phi hành gia) có thể hưởng lợi từ cơ chế này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "violent",
+      "evidence": {
+        "quoteEn": "Bears, on the other hand, seem to be perceived as stupid and in many cases violent."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài “ngu ngốc”, người ta còn nghĩ gấu là loài như thế nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “unintelligent and ______” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “People think of bears as unintelligent and ______”.",
+              "p": "Bài viết: “seem to be perceived as stupid and in many cases violent” — bị coi là ngu ngốc và nhiều khi hung dữ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "unintelligent and ______",
+              "p": "stupid and in many cases violent"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tính từ cần điền là violent."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "violent"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "tool",
+      "evidence": {
+        "quoteEn": "A male bear called GoGo in Tennoji Zoo, Osaka, has even been observed making use of a tool to manipulate his environment."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Con gấu GoGo ở vườn thú Tennoji đã dùng cành cây như một thứ gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “using a branch as a ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a bear has been seen using a branch as a ______”.",
+              "p": "Bài viết: GoGo “making use of a tool to manipulate his environment” — dùng cành cây như một công cụ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "using a branch as a ______",
+              "p": "making use of a tool"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cành cây được dùng như một công cụ (tool)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "tool"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "meat",
+      "evidence": {
+        "quoteEn": "The bear used a tree branch on multiple occasions to dislodge a piece of meat hung out of his reach."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "GoGo dùng cành cây để lấy được thứ gì đang treo ngoài tầm với?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “knock down some ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “This allowed him to knock down some ______”.",
+              "p": "Bài viết: cành cây dùng “to dislodge a piece of meat hung out of his reach” — để lấy miếng thịt treo ngoài tầm với."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "knock down some ______",
+              "p": "dislodge a piece of meat"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vật bị hạ xuống chính là meat."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "meat"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "photographer",
+      "evidence": {
+        "quoteEn": "A calculated move by a male bear involved running and jumping onto barrels in an attempt to get to a photographer standing on a platform four metres high."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Con gấu hoang dã nhảy lên các thùng phuy để tiếp cận ai đứng trên bục cao?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “where a ______ was located” cần một danh từ chỉ người."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a platform where a ______ was located”.",
+              "p": "Bài viết: gấu nhảy lên thùng “in an attempt to get to a photographer standing on a platform four metres high” — cố tiếp cận một nhiếp ảnh gia."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "where a ______ was located",
+              "p": "to get to a photographer standing on a platform"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Người đứng trên bục cao là photographer."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "photographer"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "game",
+      "evidence": {
+        "quoteEn": "Ames observed bears putting objects in piles and then knocking them over in what appeared to be a game."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hành vi xếp đồ thành đống rồi làm đổ trông giống hoạt động gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “activity similar to a ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “activity similar to a ______”.",
+              "p": "Bài viết: gấu xếp đồ vật thành đống rồi hất đổ “in what appeared to be a game” — giống như đang chơi một trò chơi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "activity similar to a ______",
+              "p": "in what appeared to be a game"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hoạt động đó được ví như một game."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "game"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "frustration",
+      "evidence": {
+        "quoteEn": "many bears have been seen to hit out at ice and snow - seemingly out of frustration - when they have just missed out on a kill"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi săn hụt, gấu thường có cử chỉ thể hiện cảm xúc gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “suggesting ______ if disappointed” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “movements suggesting ______ if disappointed when hunting”.",
+              "p": "Bài viết: gấu đập vào băng tuyết “seemingly out of frustration” khi vừa săn hụt — biểu hiện của sự bực bội/thất vọng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "suggesting ______ if disappointed",
+              "p": "seemingly out of frustration"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cảm xúc đó chính là frustration."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "frustration"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "iv",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quotesEn": [
+          "The evolution of the pyramid form has been written and argued about for centuries.",
+          "there is no question that, as far as Egypt is concerned, it began with one monument to one king designed by one brilliant architect: the Step Pyramid of Djoser at Saqqara."
+        ],
+        "quoteEn": "there is no question that, as far as Egypt is concerned, it began with one monument to one king designed by one brilliant architect: the Step Pyramid of Djoser at Saqqara."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A đang nói về điều gì? Cần tìm heading kiểu: giữa nhiều tranh cãi, vẫn có một sự thật chắc chắn."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iv: “A single certainty among other less definite facts”",
+              "p": "Đoạn A: nguồn gốc kim tự tháp “has been written and argued about for centuries” (còn nhiều tranh cãi), nhưng “there is no question that” nó bắt đầu từ Kim tự tháp Bậc thang của Djoser — một sự thật chắc chắn giữa những điều chưa rõ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a single certainty among other less definite facts",
+              "p": "there is no question that ... it began with one monument to one king"
+            },
+            {
+              "q": "less definite facts",
+              "p": "has been written and argued about for centuries"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iv"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quotesEn": [
+          "Prior to Djoser’s reign, tombs were rectangular monuments made of dried clay brick, which covered underground passages where the deceased person was buried.",
+          "Djoser’s main official, whose name was Imhotep, conceived of building a taller, more impressive tomb for his king by stacking stone slabs on top of one another, progressively making them smaller, to form the shape now known as the Step Pyramid."
+        ],
+        "quoteEn": "Djoser’s main official, whose name was Imhotep, conceived of building a taller, more impressive tomb for his king by stacking stone slabs on top of one another, progressively making them smaller, to form the shape now known as the Step Pyramid."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B đang nói về điều gì? Cần tìm heading kiểu: một ý tưởng thay đổi cách xây lăng mộ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vii: “An idea for changing the design of burial structures”",
+              "p": "Đoạn B: trước đó lăng mộ chỉ là khối gạch chữ nhật, rồi Imhotep “conceived of building a taller, more impressive tomb ... to form the shape now known as the Step Pyramid” — nảy ra ý tưởng đổi hẳn kiểu dáng lăng mộ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an idea for changing the design of burial structures",
+              "p": "conceived of building a taller, more impressive tomb ... by stacking stone slabs"
+            },
+            {
+              "q": "burial structures",
+              "p": "tombs were rectangular monuments made of dried clay brick"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vii"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "ii",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quotesEn": [
+          "it is now known that the building process went through many different stages.",
+          "The weight of the enormous mass was a challenge for the builders, who placed the stones at an inward incline in order to prevent the monument breaking up."
+        ],
+        "quoteEn": "The weight of the enormous mass was a challenge for the builders, who placed the stones at an inward incline in order to prevent the monument breaking up."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C đang nói về điều gì? Cần tìm heading kiểu: một nhiệm vụ khó khăn cho người thực hiện."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ii: “A difficult task for those involved”",
+              "p": "Đoạn C: quá trình xây dựng trải qua nhiều giai đoạn thử nghiệm, và “the weight of the enormous mass was a challenge for the builders” — trọng lượng khổng lồ là thách thức lớn cho thợ xây."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a difficult task for those involved",
+              "p": "a challenge for the builders"
+            },
+            {
+              "q": "those involved",
+              "p": "the builders, who placed the stones at an inward incline"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ii"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "v",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quotesEn": [
+          "The complex in which it was built was the size of a city in ancient Egypt and included a temple, courtyards, shrines, and living quarters for the priests.",
+          "It covered a region of 16 hectares and was surrounded by a wall 10.5 meters high."
+        ],
+        "quoteEn": "The complex in which it was built was the size of a city in ancient Egypt and included a temple, courtyards, shrines, and living quarters for the priests."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D đang nói về điều gì? Cần tìm heading kiểu: tổng quan các công trình và khu vực bên ngoài kim tự tháp."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading v: “An overview of the external buildings and areas”",
+              "p": "Đoạn D liệt kê hàng loạt công trình xung quanh: “temple, courtyards, shrines, and living quarters for the priests”, tường bao, hào nước — đúng kiểu tổng quan khu vực bên ngoài."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an overview of the external buildings and areas",
+              "p": "included a temple, courtyards, shrines, and living quarters for the priests"
+            },
+            {
+              "q": "external buildings",
+              "p": "surrounded by a wall 10.5 meters high"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "v"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quotesEn": [
+          "The burial chamber of the tomb, where the king’s body was laid to rest, was dug beneath the base of the pyramid, surrounded by a vast maze of long tunnels that had rooms off them to discourage robbers.",
+          "One of the most mysterious discoveries found inside the pyramid was a large number of stone vessels."
+        ],
+        "quoteEn": "One of the most mysterious discoveries found inside the pyramid was a large number of stone vessels."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E đang nói về điều gì? Cần tìm heading kiểu: các khu vực và hiện vật bên trong chính kim tự tháp."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading i: “The areas and artefacts within the pyramid itself”",
+              "p": "Đoạn E mô tả buồng chôn cất bên dưới kim tự tháp và “a large number of stone vessels” tìm thấy bên trong — đúng kiểu khu vực và hiện vật bên trong."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the areas and artefacts within the pyramid itself",
+              "p": "the burial chamber ... was dug beneath the base of the pyramid"
+            },
+            {
+              "q": "artefacts",
+              "p": "a large number of stone vessels"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "i"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "viii",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quotesEn": [
+          "Djoser’s grave goods, and even his body, were stolen at some point in the past and all archaeologists found were a small number of his valuables overlooked by the thieves.",
+          "There was enough left throughout the pyramid and its complex, however, to astonish and amaze the archaeologists who excavated it."
+        ],
+        "quoteEn": "There was enough left throughout the pyramid and its complex, however, to astonish and amaze the archaeologists who excavated it."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F đang nói về điều gì? Cần tìm heading kiểu: vẫn gây kinh ngạc dù chỉ còn lại ít di vật."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading viii: “An incredible experience despite the few remains”",
+              "p": "Đoạn F: của cải và thi hài Djoser bị trộm mất, chỉ còn “a small number of his valuables overlooked by the thieves”, nhưng vẫn “enough left ... to astonish and amaze the archaeologists” — ít ỏi nhưng vẫn khiến nhà khảo cổ kinh ngạc."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an incredible experience despite the few remains",
+              "p": "enough left throughout the pyramid and its complex ... to astonish and amaze the archaeologists"
+            },
+            {
+              "q": "the few remains",
+              "p": "a small number of his valuables overlooked by the thieves"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "viii"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quotesEn": [
+          "The Step Pyramid was a revolutionary advance in architecture and became the archetype which all the other great pyramid builders of Egypt would follow."
+        ],
+        "quoteEn": "The Step Pyramid was a revolutionary advance in architecture and became the archetype which all the other great pyramid builders of Egypt would follow."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn G đang nói về điều gì? Cần tìm heading kiểu: một kiểu thiết kế được các công trình sau sao chép lại."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vi: “A pyramid design that others copied”",
+              "p": "Đoạn G kết luận: Kim tự tháp Bậc thang “became the archetype which all the other great pyramid builders of Egypt would follow” — trở thành khuôn mẫu để các kiến trúc sư sau này noi theo."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a pyramid design that others copied",
+              "p": "became the archetype which all the other great pyramid builders of Egypt would follow"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "city",
+      "evidence": {
+        "quoteEn": "The complex in which it was built was the size of a city in ancient Egypt"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Toàn bộ khu phức hợp quanh kim tự tháp lớn ngang với một cái gì thời Ai Cập cổ?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “as big as an Egyptian ______ of the past” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “considered to be as big as an Egyptian ______ of the past”.",
+              "p": "Bài viết: “The complex in which it was built was the size of a city in ancient Egypt” — cả khu phức hợp to bằng một thành phố."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "as big as an Egyptian ______",
+              "p": "was the size of a city in ancient Egypt"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khu phức hợp to bằng một city."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "city"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "priests",
+      "evidence": {
+        "quoteEn": "included a temple, courtyards, shrines, and living quarters for the priests"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khu vực bên ngoài kim tự tháp có nhà ở dành cho ai?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “accommodation that was occupied by ______” cần một danh từ chỉ người."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “accommodation that was occupied by ______”.",
+              "p": "Bài viết: khu phức hợp “included a temple, courtyards, shrines, and living quarters for the priests” — có cả khu ở cho các tu sĩ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "accommodation that was occupied by ______",
+              "p": "living quarters for the priests"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhà ở đó dành cho priests."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "priests"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "trench",
+      "evidence": {
+        "quoteEn": "the entire wall was then ringed by a trench 750 meters long and 40 meters wide"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài các cửa giả, bức tường còn được bao quanh bởi thứ gì nữa?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a long ______ encircled the wall” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a long ______ encircled the wall”.",
+              "p": "Bài viết: “the entire wall was then ringed by a trench 750 meters long and 40 meters wide” — cả bức tường được bao quanh bởi một cái hào."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a long ______ encircled the wall",
+              "p": "ringed by a trench 750 meters long"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vật bao quanh tường là trench (hào)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "trench"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "location",
+      "evidence": {
+        "quoteEn": "he or she would have needed to know in advance how to find the location of the true opening in the wall"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khách không mời muốn vào phải biết trước điều gì về cửa thật?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “knew the ______ of the real entrance” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “unless they knew the ______ of the real entrance”.",
+              "p": "Bài viết: phải “know in advance how to find the location of the true opening in the wall” — biết trước vị trí của cửa thật."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "knew the ______ of the real entrance",
+              "p": "find the location of the true opening"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Điều cần biết trước là location."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "location"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "B",
+      "answerPair": [
+        25,
+        26
+      ],
+      "correctLetters": [
+        "B",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "Djoser is thought to have reigned for 19 years, but some historians and scholars attribute a much longer time for his rule, owing to the number and size of the monuments he built."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai ý đúng về vua Djoser mà tác giả nêu ra:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý B: có bất đồng về thời gian trị vì của Djoser (“disagreement concerning the length of his reign”).",
+              "p": "Bài viết: “Djoser is thought to have reigned for 19 years, but some historians and scholars attribute a much longer time for his rule” — có ý kiến khác nhau về số năm trị vì."
+            },
+            {
+              "q": "Ý D: vẫn còn sót lại một ít của cải trong lăng mộ khi khảo cổ tìm thấy (“a few of his possessions were still in his tomb”).",
+              "p": "Bài viết: dù bị trộm, “all archaeologists found were a small number of his valuables overlooked by the thieves” — vẫn còn sót vài món đồ quý."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "disagreement concerning the length of his reign",
+              "p": "some historians and scholars attribute a much longer time for his rule"
+            },
+            {
+              "q": "a few of his possessions were still in his tomb",
+              "p": "a small number of his valuables overlooked by the thieves"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nêu rõ cả tranh cãi về số năm trị vì (B) lẫn việc còn sót của cải trong mộ (D)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B và D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói Djoser từng phải được thuyết phục để xây bằng đá thay vì đất sét (“had to be persuaded to build in stone rather than clay”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Ngược lại, Djoser rất trân trọng Imhotep — ông cho khắc cả tên Imhotep lên công trình, không phải “failed to appreciate” vai trò của Imhotep."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Bài không nhắc Djoser chê bai thiết kế các kim tự tháp khác ở Ai Cập (“criticised the design ... of other pyramids”)."
+            }
+          ]
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "D",
+      "answerPair": [
+        25,
+        26
+      ],
+      "correctLetters": [
+        "B",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "all archaeologists found were a small number of his valuables overlooked by the thieves"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 25–26 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý D: vẫn còn sót lại một ít của cải trong lăng mộ khi khảo cổ tìm thấy.",
+              "p": "Bài viết: “all archaeologists found were a small number of his valuables overlooked by the thieves” — dù bị trộm gần hết, vẫn còn vài món đồ quý sót lại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a few of his possessions were still in his tomb",
+              "p": "a small number of his valuables overlooked by the thieves"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý D; đi cùng B trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần loại đáp án ở câu 25."
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "all workers will need to adapt as their occupations evolve alongside increasingly capable machines"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn mở đầu chủ yếu nói về điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: mức độ AI sẽ thay đổi bản chất công việc con người làm (“the extent to which AI will alter the nature of the work that people do”).",
+              "p": "Bài viết: không chỉ nói tỷ lệ người đổi nghề, mà “all workers will need to adapt as their occupations evolve alongside increasingly capable machines” — mọi người lao động đều phải thích nghi khi công việc thay đổi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the extent to which AI will alter the nature of the work",
+              "p": "all workers will need to adapt as their occupations evolve"
+            },
+            {
+              "q": "embodied and disembodied AI",
+              "p": "Automation ... is one aspect ... 'Disembodied AI' ... is another"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn 1 không chỉ nêu con số 3-14%, mà nhấn tất cả người lao động đều bị ảnh hưởng và phải thích nghi — đúng ý B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không chỉ ra cụ thể ngành nghề nào bị ảnh hưởng nhiều nhất (“the kinds of jobs that will be most affected”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Con số 3-14% là tỷ lệ người phải đổi nghề, không phải tỷ lệ người sẽ có việc làm trong ngành AI."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài chỉ nêu tên hai loại AI (embodied/disembodied), chưa đi vào so sánh cách chúng tác động khác nhau."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "some of the most fundamental changes are happening as a result of the ‘algorithmication’ of jobs that are dependent on data rather than on production - the so-called knowledge economy"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo đoạn hai, Stella Pachidi nghĩ gì về “nền kinh tế tri thức”?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: đây là yếu tố then chốt thúc đẩy các thay đổi hiện nay ở nơi làm việc (“a key factor driving current developments in the workplace”).",
+              "p": "Bài viết: “some of the most fundamental changes are happening as a result of” quá trình “algorithmication” của nền kinh tế tri thức — chính nó là động lực chính gây thay đổi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a key factor driving current developments in the workplace",
+              "p": "some of the most fundamental changes are happening as a result of"
+            },
+            {
+              "q": "the 'knowledge economy'",
+              "p": "jobs that are dependent on data rather than on production"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Pachidi coi “algorithmication” của nền kinh tế tri thức là nguyên nhân chính của các thay đổi hiện nay."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đoạn này chưa bàn số lượng việc làm tăng/giảm (“influence on the number of jobs available”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Chưa nói về thay đổi thái độ với nghề nghiệp (“changing people's attitudes towards their occupations”)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nói khu vực sản xuất đang suy giảm (“the production sector is declining”)."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "We are seeing cases where workers feed the algorithm with false data to reach their targets"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Pachidi quan sát được điều gì ở công ty viễn thông?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: nhân viên tìm cách khiến AI cho ra kết quả họ muốn (“staff making sure that AI produces the results that they want”).",
+              "p": "Bài viết: “workers feed the algorithm with false data to reach their targets” — nhân viên đút dữ liệu giả để đạt chỉ tiêu, tức là thao túng để AI ra kết quả có lợi cho họ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "staff making sure that AI produces the results that they want",
+              "p": "feed the algorithm with false data to reach their targets"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhân viên chủ động đưa dữ liệu sai để thuật toán ra kết quả họ mong muốn — đúng ý C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói nhân viên phản đối gợi ý của AI (“disagreeing with the recommendations of AI”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nhắc cảm giác bực bội vì AI can thiệp công việc (“resentful about the intrusion of AI”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Vấn đề là nhân viên lệ thuộc và điều khiển AI, không phải để AI tự làm thay việc của họ."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "But social policies can tackle this through retraining and redeployment."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong nghiên cứu mới công bố, Ewan McGaughey nói gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: minh họa cách thay đổi trong thị trường việc làm có thể được xử lý thành công (“illustrates how changes in the job market can be successfully handled”).",
+              "p": "Bài viết: dù thay đổi có thể gây sa thải, “social policies can tackle this through retraining and redeployment” — chính sách xã hội (đào tạo lại, bố trí việc mới) có thể giải quyết được."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "changes in the job market can be successfully handled",
+              "p": "social policies can tackle this through retraining and redeployment"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "McGaughey chỉ ra hướng xử lý cụ thể (đào tạo lại, bố trí lại việc) cho vấn đề sa thải — khớp đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Ông không nói sa thải là điều tích cực, mà nói có cách để xử lý hậu quả của nó (“challenges the idea that redundancy is a negative thing”)."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài không tập trung mô tả tác động của thất nghiệp hàng loạt lên xã hội."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không so sánh khác biệt giữa sa thải trong quá khứ và tương lai (“differences between past and future job losses”)."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "jobs that are dependent on data rather than on production - the so-called knowledge economy"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Pachidi tập trung vào “algorithmication” của những công việc dựa trên cái gì, thay vì sản xuất?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “jobs which rely not on production but on ______”.",
+              "p": "Bài viết: đó là các việc “dependent on data rather than on production” — dựa trên dữ liệu → chọn G (information)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "rely ... on ______",
+              "p": "dependent on data"
+            },
+            {
+              "q": "information",
+              "p": "data"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“dependent on data” chính là “rely on information” → G."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "become dependent on its instructions"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi làm việc qua “con mắt của thuật toán”, nhân viên dần hình thành điều gì với các gợi ý của AI?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Pachidi observed a growing ______ on the recommendations made by AI”.",
+              "p": "Bài viết: công nhân “learn through the ‘algorithm’s eyes’ and become dependent on its instructions” — ngày càng lệ thuộc vào chỉ dẫn của thuật toán → chọn E (reliance)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a growing ______ on the recommendations",
+              "p": "become dependent on its instructions"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“become dependent on” chính là “reliance” → E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "experimentation and human instinct lead to progress and new ideas"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhân viên bị ngăn cản sử dụng thứ gì của bản thân để đổi mới, sáng tạo?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “deterred from experimenting and using their own ______”.",
+              "p": "Bài viết: “experimentation and human instinct lead to progress and new ideas” bị hạn chế — chính “human instinct” (bản năng con người) → chọn C (intuition)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "using their own ______",
+              "p": "human instinct lead to progress and new ideas"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“human instinct” ≈ intuition → C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "Their objective is to make AI technologies more trustworthy and transparent, so that organisations and individuals understand how AI decisions are made."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các nhà nghiên cứu muốn tăng điều gì của người dùng đối với công nghệ AI?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “to increase users' ______ with regard to the technology”.",
+              "p": "Bài viết: mục tiêu là làm AI “more trustworthy and transparent” để người dùng hiểu và tin tưởng hơn → chọn F (confidence)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "increase users' ______",
+              "p": "make AI technologies more trustworthy and transparent"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“trustworthy” gắn với sự tin tưởng → confidence (F)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "If in 30 years, half of 100 jobs are being carried out by robots, that doesn’t mean we are left with just 50 jobs for humans. The number of jobs will increase: we would expect there to be 150 jobs."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng tự động hóa tăng lên sẽ không khiến số việc làm giảm đi?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Greater levels of automation will not result in lower employment.”",
+              "p": "Hamish Low (B): nếu robot làm một nửa công việc, điều đó không có nghĩa chỉ còn 50 việc cho người — “The number of jobs will increase … 150 jobs” — số việc làm còn tăng lên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "will not result in lower employment",
+              "p": "the number of jobs will increase"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Low phản bác trực tiếp ý kiến tự động hóa làm giảm việc làm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "as well as to reduce costs and enhance productivity"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai chỉ ra rằng có nhiều lý do khiến doanh nghiệp thấy AI hấp dẫn?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “There are several reasons why AI is appealing to businesses.”",
+              "p": "Stella Pachidi (A): tổ chức thích dùng thuật toán vì muốn có “perfect information”, “as well as to reduce costs and enhance productivity” — liệt kê nhiều lý do khác nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "several reasons why AI is appealing to businesses",
+              "p": "to reduce costs and enhance productivity"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Pachidi nêu cùng lúc nhiều lý do (thông tin hoàn hảo, giảm chi phí, tăng năng suất)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Just as the industrial revolution brought people past subsistence agriculture, and the corporate revolution enabled mass production, a third revolution has been pronounced."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai so sánh tiềm năng thay đổi cuộc sống của AI với các cuộc cách mạng lớn trong lịch sử?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “AI's potential to transform people's lives has parallels with major cultural shifts which occurred in previous eras.”",
+              "p": "Ewan McGaughey (C): “Just as the industrial revolution ... and the corporate revolution ... a third revolution has been pronounced” — ví công nghệ AI như cuộc cách mạng thứ ba, tương tự cách mạng công nghiệp và cách mạng doanh nghiệp trước đây."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "parallels with major cultural shifts which occurred in previous eras",
+              "p": "just as the industrial revolution ... a third revolution has been pronounced"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "McGaughey trực tiếp so sánh với các cuộc cách mạng lớn trong quá khứ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "We need to make sure we fully understand the dilemmas that this new world raises regarding expertise, occupational boundaries and control."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai nhấn mạnh cần hiểu rõ những vấn đề mà AI gây ra?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “It is important to be aware of the range of problems that AI causes.”",
+              "p": "Stella Pachidi (A): “We need to make sure we fully understand the dilemmas that this new world raises regarding expertise, occupational boundaries and control” — cần hiểu đầy đủ các vấn đề nan giải mà AI đặt ra."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the range of problems that AI causes",
+              "p": "the dilemmas that this new world raises regarding expertise, occupational boundaries and control"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Pachidi kêu gọi hiểu rõ nhiều vấn đề nan giải do AI gây ra."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "The traditional trajectory of full-time education followed by full-time work followed by a pensioned retirement is a thing of the past"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng con đường sự nghiệp của mọi người sẽ bớt khuôn mẫu hơn trước?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “People are going to follow a less conventional career path than in the past.”",
+              "p": "Hamish Low (B): “The traditional trajectory of full-time education ... followed by a pensioned retirement is a thing of the past” — con đường học rồi làm rồi nghỉ hưu truyền thống không còn nữa, thay bằng “multistage employment life”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a less conventional career path",
+              "p": "one where retraining happens across the life course, and where multiple jobs and no job happen by choice"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Low mô tả rõ sự nghiệp tương lai sẽ đa giai đoạn, không theo lối mòn cũ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "I’d like to see governments seizing the opportunity to improve policy to enforce good job security"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng chính quyền nên hành động để đảm bảo ai cũng có việc làm với thu nhập đủ sống?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Authorities should take measures to ensure that there will be adequately paid work for everyone.”",
+              "p": "Ewan McGaughey (C): “I'd like to see governments seizing the opportunity to improve policy to enforce good job security” — muốn chính phủ cải thiện chính sách để đảm bảo việc làm ổn định, thu nhập công bằng cho mọi người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "ensure ... adequately paid work for everyone",
+              "p": "guarantee full employment, fair incomes and a thriving economic democracy"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "McGaughey kêu gọi trực tiếp chính phủ hành động để đảm bảo việc làm và thu nhập công bằng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1801 @@
+{
+  "pilotId": "cam16-test3",
+  "schemaVersion": 4,
+  "note": "Cam 16 R T3 — tiếng Việt tự nhiên theo chuẩn pilot cam19-test1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Roman shipbuilding and navigation",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Climate change reveals ancient artefacts in Norway's glaciers",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Plant 'thermometer' triggers springtime growth by measuring night-time heat",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "The Romans were not traditionally sailors but mostly land-based people, who learned to build ships from the people that they conquered, namely the Greeks and the Egyptians."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói kỹ thuật đóng tàu của người La Mã được truyền cho Hy Lạp và Ai Cập — ta cần xem chiều truyền đạt bài nói có đúng vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Romans' shipbuilding skills were passed on to” Hy Lạp và Ai Cập (La Mã dạy)",
+              "p": "Bài nói ngược lại: người La Mã “learned to build ships from” (học đóng tàu từ) chính người Hy Lạp và Ai Cập mà họ chinh phục"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "were passed on to the Greeks and the Egyptians",
+              "p": "learned to build ships from the people that they conquered, namely the Greeks and the Egyptians"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chiều học hỏi ngược hẳn với đề: La Mã là người học, không phải người truyền kỹ thuật."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Starting from the 6th century BCE, they were fixed using a method called mortise and tenon, whereby one plank locked into another without the need for stitching."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phương pháp mộng và chốt (mortise and tenon) có cần thợ lành nghề (skilled craftsmen) không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “skilled craftsmen were needed” cho phương pháp này",
+              "p": "Bài chỉ mô tả cách ghép mộng hoạt động (“one plank locked into another without the need for stitching”) — không nhắc ai làm hay cần tay nghề gì"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "skilled craftsmen were needed",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ tả kỹ thuật ghép mộng, hoàn toàn không đề cập yêu cầu tay nghề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Mediterranean shipbuilders shifted to another shipbuilding method, still in use today, which consisted of building the frame first and then proceeding with the hull and the other components of the ship."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phương pháp đóng tàu sau này có làm vỏ tàu (hull) trước khung (frame) không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “involved building the hull before the frame” (làm vỏ trước khung)",
+              "p": "Bài nói ngược lại: “building the frame first and then proceeding with the hull” — làm khung trước rồi mới đến vỏ"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "building the hull before the frame",
+              "p": "building the frame first and then proceeding with the hull"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thứ tự bài nêu ngược hẳn với đề — khung được làm trước, không phải vỏ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Eventually, Rome’s navy became the largest and most powerful in the Mediterranean, and the Romans had control over what they therefore called Mare Nostrum meaning ‘our sea’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tên gọi Mare Nostrum có phải vì La Mã thống trị việc sử dụng vùng biển đó không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: đặt tên đó vì họ “dominated its use” (thống trị việc sử dụng biển)",
+              "p": "Bài viết: hải quân La Mã “largest and most powerful”, và họ “had control over” vùng biển nên mới gọi là “our sea”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "because they dominated its use",
+              "p": "had control over what they therefore called Mare Nostrum"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“had control over” chính là “dominated its use” — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "It is worth noting that contrary to popular perception, rowers were not slaves but mostly Roman citizens enrolled in the military."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đa số người chèo thuyền có phải là người thuộc quân đội La Mã không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “most rowers ... were people from the Roman army”",
+              "p": "Bài viết: “rowers were not slaves but mostly Roman citizens enrolled in the military” — công dân La Mã gia nhập quân đội"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "people from the Roman army",
+              "p": "Roman citizens enrolled in the military"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“enrolled in the military” đúng nghĩa “from the Roman army” — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "lightweight",
+      "evidence": {
+        "quoteEn": "Warships were built to be lightweight and very speedy."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Warships được thiết kế để vừa … vừa di chuyển nhanh — cần một tính từ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“were ______ and moved quickly” → chỗ trống là tính từ song song với “moved quickly”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“designed so that they were ______ and moved quickly”",
+              "p": "“built to be lightweight and very speedy”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "designed",
+              "p": "built"
+            },
+            {
+              "q": "moved quickly",
+              "p": "very speedy"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“lightweight” khớp trực tiếp với chỗ trống, đi cùng “very speedy”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "lightweight"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "bronze",
+      "evidence": {
+        "quoteEn": "They had a bronze battering ram, which was used to pierce the timber hulls or break the oars of enemy vessels."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mũi húc (battering ram) được làm bằng chất liệu gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“A battering ram made of ______” → cần danh từ chỉ vật liệu."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“made of ______ was included ... for attacking and damaging the timber and oars”",
+              "p": "“a bronze battering ram, which was used to pierce the timber hulls or break the oars”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "included in the design for attacking",
+              "p": "used to pierce ... or break"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“bronze battering ram” cho biết mũi húc làm từ đồng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "bronze"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "levels",
+      "evidence": {
+        "quoteEn": "It had rowers in the top, middle and lower levels, and approximately 50 rowers in each bank."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trireme có người chèo trên ba … khác nhau:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“three different ______” → danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“had rowers on three different ______”",
+              "p": "“rowers in the top, middle and lower levels”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "three different ______",
+              "p": "top, middle and lower levels"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ba vị trí trên/giữa/dưới chính là ba “levels”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "levels"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "hull",
+      "evidence": {
+        "quoteEn": "They had a wider hull, double planking and a solid interior for added stability. Unlike warships, their V-shaped hull was deep underwater, meaning that they could not sail too close to the coast."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Merchant ships có một … rộng nằm sâu dưới mặt nước:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“a broad ______ that lay far below the surface” → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“had a broad ______ that lay far below the surface of the sea”",
+              "p": "“a wider hull ... their V-shaped hull was deep underwater”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "broad",
+              "p": "wider"
+            },
+            {
+              "q": "lay far below the surface",
+              "p": "was deep underwater"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chính “hull” (vỏ tàu) được nhắc lại hai lần trong đoạn — khớp chỗ trống."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "hull"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "triangular",
+      "evidence": {
+        "quoteEn": "They had from one to three masts with large square sails and a small triangular sail at the bow."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Merchant ships có buồm hình vuông và buồm hình gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“square and ______ sails” → tính từ song song với “square”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“had both square and ______ sails”",
+              "p": "“large square sails and a small triangular sail”"
+            }
+          ],
+          "paraphrases": []
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai hình dạng buồm được nêu rõ: vuông và tam giác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "triangular"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "music",
+      "evidence": {
+        "quoteEn": "In order to assist them, music would be played on an instrument, and oars would then keep time with this."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thứ gì giúp các mái chèo vào/ra nước cùng lúc:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chỗ trống đứng đầu câu, làm chủ ngữ → danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“______ was used to ensure rowers moved their oars in and out of the water at the same time”",
+              "p": "“music would be played on an instrument, and oars would then keep time with this”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "at the same time",
+              "p": "keep time with this"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Âm nhạc giúp mái chèo giữ đúng nhịp — “music”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "music"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "grain",
+      "evidence": {
+        "quoteEn": "The cargo on merchant ships included raw materials (e.g. iron bars, copper, marble and granite), and agricultural products (e.g. grain from Egypt’s Nile valley)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Merchant ships chở loại nông sản gì đến hai cảng chính của Ý:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“agricultural goods such as ______” → danh từ chỉ loại hàng cụ thể."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Quantities of agricultural goods such as ______”",
+              "p": "“agricultural products (e.g. grain from Egypt's Nile valley)”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "agricultural goods",
+              "p": "agricultural products"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ví dụ nông sản trong bài chính là “grain”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "grain"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "towboats",
+      "evidence": {
+        "quoteEn": "Large merchant ships would approach the destination port and, just like today, be intercepted by a number of towboats that would drag them to the quay."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai/cái gì kéo tàu vào bờ:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“pulled to the shore by ______” → danh từ số nhiều chỉ chủ thể thực hiện."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“The ships were pulled to the shore by ______”",
+              "p": "“intercepted by a number of towboats that would drag them to the quay”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "pulled to the shore",
+              "p": "drag them to the quay"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“towboats” chính là thứ kéo tàu vào bờ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "towboats"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "Hunters would have easily misplaced arrows and they often discarded broken bows rather than take them all the way home."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích vì sao vũ khí bị bỏ lại trên núi. Đề viết: “an explanation for weapons being left behind in the mountains”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần lý do vũ khí bị bỏ lại (“weapons being left behind in the mountains”).",
+              "p": "Đoạn D: thợ săn “misplaced arrows” (làm mất mũi tên) và “discarded broken bows rather than take them all the way home” — bỏ lại cung gãy thay vì mang về nhà."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an explanation for weapons being left behind in the mountains",
+              "p": "discarded broken bows rather than take them all the way home"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Fieldwork is hard work - hiking with all our equipment, often camping on permafrost - but very rewarding."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói khó khăn thể chất khi khảo sát thực địa. Đề viết: “a reference to the physical difficulties involved in an archaeological expedition”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói khó khăn thể chất (“physical difficulties”) của một chuyến khảo sát.",
+              "p": "Đoạn C: lời Barrett “Fieldwork is hard work - hiking with all our equipment, often camping on permafrost” — đi bộ mang thiết bị, cắm trại trên đất đóng băng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the physical difficulties involved in an archaeological expedition",
+              "p": "hiking with all our equipment, often camping on permafrost"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "A colder turn in the Scandinavian climate would likely have meant widespread crop failures, so more people would have depended on hunting to make up for those losses."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích vì sao thức ăn có thể trở nên thiếu hụt. Đề viết: “an explanation of why less food may have been available”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần lý do thức ăn ít hơn (“why less food may have been available”).",
+              "p": "Đoạn F: khí hậu lạnh hơn “would likely have meant widespread crop failures” — mất mùa trên diện rộng nên phải dựa vào săn bắn để bù."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "why less food may have been available",
+              "p": "widespread crop failures"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "H",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "That means archaeologists could be extracting some of those artefacts from retreating ice in years to come."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc khả năng có khám phá khảo cổ trong tương lai. Đề viết: “a reference to the possibility of future archaeological discoveries”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về khả năng phát hiện thêm trong tương lai (“possibility of future ... discoveries”).",
+              "p": "Đoạn H: “archaeologists could be extracting some of those artefacts from retreating ice in years to come” — có thể tìm thêm hiện vật trong những năm tới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the possibility of future archaeological discoveries",
+              "p": "could be extracting some of those artefacts ... in years to come"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "growing Norwegian towns, along with export markets, would have created a booming demand for hides to fight off the cold, as well as antlers to make useful things like combs."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu ví dụ những mặt hàng từng được đem bán/trao đổi. Đề viết: “examples of items that would have been traded”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần ví dụ mặt hàng được buôn bán (“items that would have been traded”).",
+              "p": "Đoạn G: nhu cầu “hides” (da) để chống lạnh và “antlers” (gạc hươu) làm lược — hai ví dụ hàng hoá cụ thể."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "examples of items that would have been traded",
+              "p": "demand for hides ... as well as antlers to make useful things like combs"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "glacial archaeologists need to race the clock to find newly revealed artefacts, preserve them, and study them."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói nhà khảo cổ đang chịu áp lực phải làm việc nhanh. Đề viết: “a reference to the pressure archaeologists are under to work quickly”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói áp lực làm việc nhanh (“pressure ... to work quickly”).",
+              "p": "Đoạn B: “need to race the clock” — phải chạy đua với thời gian để tìm, bảo quản và nghiên cứu hiện vật."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the pressure archaeologists are under to work quickly",
+              "p": "need to race the clock"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "microorganisms",
+      "answerAlternatives": [
+        "micro-organisms"
+      ],
+      "evidence": {
+        "quoteEn": "unless they’re protected from the microorganisms that cause decay"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vật liệu hữu cơ ít được bảo vệ khỏi thứ gì nên phân hủy nhanh:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“little protection against ______” → danh từ chỉ tác nhân gây phân hủy."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“They have little protection against ______, which means that they decay relatively quickly”",
+              "p": "“unless they're protected from the microorganisms that cause decay”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "decay relatively quickly",
+              "p": "the microorganisms that cause decay"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác nhân gây phân hủy chính là “microorganisms” (vi sinh vật)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "microorganisms"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "reindeer",
+      "evidence": {
+        "quoteEn": "Reindeer once congregated on these ice patches in the later summer months to escape biting insects, and from the late Stone Age**, hunters followed."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Con vật gì tập trung ở các núi này vào mùa hè:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“______ gathered there in the summer months” → danh từ chỉ loài vật, làm chủ ngữ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“there were trade routes ... and ______ gathered there in the summer months”",
+              "p": "“Reindeer once congregated on these ice patches in the later summer months”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "gathered there in the summer months",
+              "p": "congregated on these ice patches in the later summer months"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Reindeer” (tuần lộc) là loài tập trung ở đó vào mùa hè."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "reindeer"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "insects",
+      "evidence": {
+        "quoteEn": "Reindeer once congregated on these ice patches in the later summer months to escape biting insects, and from the late Stone Age**, hunters followed."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tuần lộc lên núi để tránh bị con gì tấn công ở vùng đất thấp:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“avoid being attacked by ______ on lower ground” → danh từ số nhiều chỉ loài vật."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“to avoid being attacked by ______ on lower ground”",
+              "p": "“to escape biting insects”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "avoid being attacked by",
+              "p": "escape biting"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chúng lên cao để tránh “biting insects” (côn trùng cắn) — “insects”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "insects"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "B",
+      "answerPair": [
+        23,
+        24
+      ],
+      "correctLetters": [
+        "B",
+        "C"
+      ],
+      "evidence": {
+        "quoteEn": "hunters kept regularly venturing into the mountains even when the climate turned cold"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai ý đúng về khám phá của nhóm Barrett:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý B: thợ săn vẫn lên núi ngay cả khi khí hậu lạnh khắc nghiệt (“went into the mountains even during periods of extreme cold”).",
+              "p": "Bài viết: “hunters kept regularly venturing into the mountains even when the climate turned cold” — thợ săn vẫn thường xuyên lên núi dù trời trở lạnh."
+            },
+            {
+              "q": "Ý C: số hiện vật từ một số giai đoạn khá thấp (“relatively low”).",
+              "p": "Bài viết: “few or no signs of activity during other periods” — một số giai đoạn gần như không có dấu hiệu hoạt động, tức ít hiện vật."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "went into the mountains even during periods of extreme cold",
+              "p": "kept regularly venturing into the mountains even when the climate turned cold"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai ý B và C đều được bài nêu rõ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B và C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài kể nhiều loại hiện vật (mũi tên, cung, dụng cụ, ski, yên cương ngựa...), không chỉ giới hạn ở đồ trượt ski (“limited to skiing equipment”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài chỉ nói họ định tuổi bằng carbon phóng xạ cho 153 hiện vật, không nói kết quả “unreliable”."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Không có so sánh số hiện vật ở Oppland với địa điểm núi khác (“more ... than at any other mountain site”)."
+            }
+          ]
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "C",
+      "answerPair": [
+        23,
+        24
+      ],
+      "correctLetters": [
+        "B",
+        "C"
+      ],
+      "evidence": {
+        "quoteEn": "there were few or no signs of activity during other periods."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 23–24 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý C: số hiện vật từ một số giai đoạn thời gian khá thấp (“the number of artefacts ... was relatively low”).",
+              "p": "Bài viết: “But there were few or no signs of activity during other periods” — một số giai đoạn hầu như không có dấu hiệu hoạt động."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the number of artefacts from certain time periods was relatively low",
+              "p": "few or no signs of activity during other periods"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý C; đi cùng B trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần “Các lựa chọn còn lại” ở câu 23."
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "A",
+      "answerPair": [
+        25,
+        26
+      ],
+      "correctLetters": [
+        "A",
+        "C"
+      ],
+      "evidence": {
+        "quoteEn": "would have created a booming demand for hides to fight off the cold, as well as antlers to make useful things like combs. Business must have been good for hunters."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai ý đúng về thời kỳ Viking:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý A: thợ săn được lợi nhờ nhu cầu hàng hoá tăng (“benefited from an increased demand for goods”).",
+              "p": "Bài viết: nhu cầu “booming” về da và gạc hươu khiến “Business must have been good for hunters” — công việc của thợ săn chắc hẳn thuận lợi."
+            },
+            {
+              "q": "Ý C: người Viking không chỉ dựa vào tàu thuyền để chở hàng (“did not rely on ships alone”).",
+              "p": "Bài viết: “Although we usually think of ships ... these recent discoveries show that plenty of goods travelled on overland routes” — nhiều hàng hoá đi theo đường bộ, không chỉ đường biển."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "benefited from an increased demand for goods",
+              "p": "a booming demand for hides ... as well as antlers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai ý A và C đều có bằng chứng rõ trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A và C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Không có so sánh giai đoạn nào của Viking tạo ra sự giàu có lớn nhất (“the greatest growth in the wealth of Vikings”)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài chỉ nói nhu cầu xuất khẩu (“export markets”) tăng, không nói thị trấn Norway thu hút thương nhân “from around the world”."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Bài nhắc cả châu Âu và Trung Đông, không nói người Viking chỉ quan tâm riêng liên kết với Trung Đông (“primarily interested in ... the Middle East”)."
+            }
+          ]
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "choose-two",
+      "answer": "C",
+      "answerPair": [
+        25,
+        26
+      ],
+      "correctLetters": [
+        "A",
+        "C"
+      ],
+      "evidence": {
+        "quoteEn": "Although we usually think of ships when we think of Scandinavian expansion, these recent discoveries show that plenty of goods travelled on overland routes, like the mountain passes of Oppland."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 25–26 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý C: người Viking không chỉ dựa vào tàu thuyền để vận chuyển hàng hoá.",
+              "p": "Bài viết: “plenty of goods travelled on overland routes, like the mountain passes of Oppland” — nhiều hàng hoá đi theo đường bộ qua các dãy núi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "did not rely on ships alone to transport goods",
+              "p": "plenty of goods travelled on overland routes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý C; đi cùng A trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần “Các lựa chọn còn lại” ở câu 25."
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "An international team of scientists led by the University of Cambridge has discovered that the ‘thermometer’ molecule in plants enables them to develop according to seasonal temperature changes."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khám phá “phân tử nhiệt kế” của nhóm Cambridge có gây bất ngờ cho các nhà khoa học khác không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: khám phá “caused surprise among other scientists” (gây bất ngờ cho các nhà khoa học khác)",
+              "p": "Bài chỉ giới thiệu phát hiện của nhóm Cambridge, không hề nhắc phản ứng của các nhà khoa học khác"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "caused surprise among other scientists",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ mô tả nội dung khám phá, hoàn toàn không nói tới phản ứng bất ngờ của giới khoa học."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "It is estimated that agricultural yields will need to double by 2050, but climate change is a major threat to achieving this."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mục tiêu sản lượng nông nghiệp đến năm 2050 có thể không đạt được không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: mục tiêu “could be missed” (có thể không đạt được)",
+              "p": "Bài viết: sản lượng “will need to double by 2050, but climate change is a major threat to achieving this” — biến đổi khí hậu đe dọa lớn tới việc đạt mục tiêu"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the target ... could be missed",
+              "p": "climate change is a major threat to achieving this"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“a major threat to achieving” đúng nghĩa mục tiêu có thể không đạt được."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Key crops such as wheat and rice are sensitive to high temperatures. Thermal stress reduces crop yields by around 10% for every one degree increase in temperature"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Lúa mì và gạo có bị ảnh hưởng khi nhiệt độ tăng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “wheat and rice suffer from a rise in temperatures”",
+              "p": "Bài viết: “sensitive to high temperatures ... reduces crop yields by around 10% for every one degree increase” — nhạy cảm với nhiệt và giảm năng suất khi nhiệt tăng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "suffer from a rise in temperatures",
+              "p": "sensitive to high temperatures ... reduces crop yields ... for every one degree increase"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ hai loại cây này giảm năng suất khi nhiệt tăng — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Discovering the molecules that allow plants to sense temperature has the potential to accelerate the breeding of crops resilient to thermal stress and climate change."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có thể phát triển giống cây cần ít nước hơn không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “develop crops that require less water” (cần ít nước hơn)",
+              "p": "Bài chỉ nói khám phá này giúp đẩy nhanh việc lai tạo giống “resilient to thermal stress and climate change” — không nói gì về nước"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "crops that require less water",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ bàn về khả năng chịu nhiệt của giống cây, hoàn toàn không đề cập nhu cầu nước."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "During the day, sunlight activates the molecules, slowing down growth. If a plant finds itself in shade, phytochromes are quickly inactivated - enabling it to grow faster to find sunlight again."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cây có phát triển nhanh hơn khi có nắng so với trong bóng râm không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “grow faster in sunlight than in shade” (nhanh hơn khi có nắng)",
+              "p": "Bài nói ngược lại: nắng “slowing down growth”, còn trong bóng râm phytochrome bị bất hoạt nên cây “grow faster to find sunlight again”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "grow faster in sunlight than in shade",
+              "p": "sunlight activates the molecules, slowing down growth ... in shade ... grow faster to find sunlight again"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định cây phát triển nhanh hơn trong bóng râm, không phải khi có nắng — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Light-driven changes to phytochrome activity occur very fast, in less than a second"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phytochrome đổi trạng thái với tốc độ như nhau vào ban ngày và ban đêm không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: đổi trạng thái “at the same speed day and night” (cùng tốc độ ngày và đêm)",
+              "p": "Bài viết: ban ngày thay đổi “very fast, in less than a second”, nhưng ban đêm “the molecules gradually change” — chậm hơn nhiều"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "change their state at the same speed day and night",
+              "p": "occur very fast ... At night, however, it's a different story ... the molecules gradually change"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ban đêm đổi trạng thái chậm dần, khác hẳn tốc độ tức thì ban ngày — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "H",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "Cambridge is uniquely well-positioned to do this kind of research as we have outstanding collaborators nearby who work on more applied aspects of plant biology, and can help us transfer this new knowledge into the field."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc đến các chuyên gia có thể ứng dụng kết quả nghiên cứu. Đề viết: “mention of specialists who can make use of the research findings”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về chuyên gia ứng dụng kết quả (“specialists who can make use of the research findings”).",
+              "p": "Đoạn H: “outstanding collaborators ... who work on more applied aspects of plant biology, and can help us transfer this new knowledge into the field” — các cộng tác viên chuyên sâu có thể đưa kiến thức mới vào thực tế."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "specialists who can make use of the research findings",
+              "p": "outstanding collaborators ... can help us transfer this new knowledge into the field"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "Discovering the molecules that allow plants to sense temperature has the potential to accelerate the breeding of crops resilient to thermal stress and climate change."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói tới lợi ích tiềm năng của kết quả nghiên cứu. Đề viết: “a reference to a potential benefit of the research findings”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần lợi ích tiềm năng (“a potential benefit of the research findings”).",
+              "p": "Đoạn D: khám phá “has the potential to accelerate the breeding of crops resilient to thermal stress” — có khả năng đẩy nhanh lai tạo giống chịu nhiệt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a potential benefit of the research findings",
+              "p": "has the potential to accelerate the breeding of crops resilient to thermal stress and climate change"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "the discovery of the dual role of phytochromes provides the science behind a well-known rhyme long used to predict the coming season: oak before ash we’ll have a plash, ash before oak we’re in for a soak."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn cho thấy khoa học chứng minh cho một câu nói dân gian truyền thống. Đề viết: “scientific support for a traditional saying”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần bằng chứng khoa học cho câu nói truyền thống (“scientific support for a traditional saying”).",
+              "p": "Đoạn G: phát hiện về phytochrome “provides the science behind a well-known rhyme” — vần thơ dân gian dự đoán mùa (“oak before ash ...”)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "scientific support for a traditional saying",
+              "p": "provides the science behind a well-known rhyme long used to predict the coming season"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Farmers and gardeners have known for hundreds of years how responsive plants are to temperature: warm winters cause many trees and flowers to bud early, something humans have long used to predict weather and harvest times for the coming year."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói con người từ xưa đã dựa vào hành vi của cây để lên kế hoạch. Đề viết: “a reference to people traditionally making plans based on plant behaviour”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói việc lên kế hoạch dựa vào hành vi cây cối (“making plans based on plant behaviour”).",
+              "p": "Đoạn C: nông dân và người làm vườn “have long used to predict weather and harvest times for the coming year” dựa vào việc cây ra chồi sớm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "people traditionally making plans based on plant behaviour",
+              "p": "humans have long used to predict weather and harvest times for the coming year"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "The new findings, published in the journal Science, show that phytochromes control genetic switches in response to temperature as well as light to dictate plant development."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói nghiên cứu này được công bố ở đâu. Đề viết: “a reference to where the research has been reported”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần nơi công bố nghiên cứu (“where the research has been reported”).",
+              "p": "Đoạn A: “The new findings, published in the journal Science” — kết quả được đăng trên tạp chí Science."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "where the research has been reported",
+              "p": "published in the journal Science"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "warm",
+      "answerAlternatives": [
+        "warm winter",
+        "warm (winter)"
+      ],
+      "evidence": {
+        "quoteEn": "Other species, such as daffodils, have considerable temperature sensitivity, and can flower months in advance during a warm winter."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hoa daffodil dễ ra hoa sớm khi thời tiết như thế nào:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“in response to ______ weather” → cần tính từ đứng trước “weather”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“are likely to flower early in response to ______ weather”",
+              "p": "“can flower months in advance during a warm winter”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "flower early",
+              "p": "flower months in advance"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thời tiết khiến hoa ra sớm là mùa đông ấm — “warm”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "warm"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "summer",
+      "evidence": {
+        "quoteEn": "A warmer spring, and consequently a higher likeliness of a hot summer, will result in oak leafing before ash. A cold spring will see the opposite. As the British know only too well, a colder summer is likely to be a rain-soaked one."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nếu ash ra lá trước oak, mùa nào trong năm có thể sẽ ẩm ướt:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“the weather in ______ will probably be wet” → danh từ chỉ mùa."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“If ash trees come into leaf before oak trees, the weather in ______ will probably be wet”",
+              "p": "Ngược với “oak leafing before ash” (mùa xuân ấm → hè nóng), ash ra lá trước oak ứng với mùa xuân lạnh → “a colder summer is likely to be a rain-soaked one”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "will probably be wet",
+              "p": "is likely to be a rain-soaked one"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mùa ẩm ướt được bài nhắc tới là mùa hè — “summer”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "summer"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "mustard",
+      "answerAlternatives": [
+        "mustard plant",
+        "mustard plants",
+        "mustard plant(s)"
+      ],
+      "evidence": {
+        "quoteEn": "The work was done in a model system, using a mustard plant called Arabidopsis, but Wigge says the phytochrome genes necessary for temperature sensing are found in crop plants as well."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nghiên cứu được thực hiện trên một loài cây cụ thể nào:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“a particular species of ______” → danh từ chỉ loại cây."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“The research was carried out using a particular species of ______”",
+              "p": "“The work was done in a model system, using a mustard plant called Arabidopsis”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a particular species of ______",
+              "p": "a mustard plant called Arabidopsis"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Loài cây được dùng làm mô hình nghiên cứu là cây mù tạt — “mustard”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "mustard"
+        }
+      ]
+    }
+  }
+}
