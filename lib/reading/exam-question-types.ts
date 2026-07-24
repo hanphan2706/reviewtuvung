@@ -6,6 +6,8 @@ function labelSection(sec: ExamQuestionSection): string {
       return "Matching information";
     case "people-match":
       return "Matching people";
+    case "sentence-ending":
+      return "Matching sentence endings";
     case "summary-fill":
       return "Summary completion";
     case "note-fill":

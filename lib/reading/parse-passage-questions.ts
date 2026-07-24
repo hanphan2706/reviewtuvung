@@ -14,6 +14,7 @@ export type McqOption = {
 export type ExamSectionKind =
   | "paragraph-match"
   | "people-match"
+  | "sentence-ending"
   | "summary-fill"
   | "note-fill"
   | "mcq-single"
@@ -84,6 +85,8 @@ function soloOptionLetter(line: string): string | null {
 function detectSectionKind(chunk: string): ExamSectionKind {
   if (/Choose\s+TWO\s+(letters|correct\s+answers)/i.test(chunk)) return "choose-two";
   if (/Match each statement with the correct (person|expert)/i.test(chunk)) return "people-match";
+  // Matching sentence halves (NOT the gap-fill "Complete the sentences below").
+  if (/Complete each sentence with the correct ending/i.test(chunk)) return "sentence-ending";
   if (/Which (paragraph|section) contains the following information/i.test(chunk)) return "paragraph-match";
   if (/Choose the correct heading/i.test(chunk)) return "paragraph-match";
   if (/Complete the summary below/i.test(chunk)) return "summary-fill";
@@ -112,7 +115,7 @@ function isSkippableLine(line: string): boolean {
 }
 
 function parseOptionLine(line: string): McqOption | null {
-  const m = line.match(/^([A-H])\s+(.+)$/i);
+  const m = line.match(/^([A-J])\s+(.+)$/i);
   if (!m?.[1] || !m[2]) return null;
   return { letter: m[1].toUpperCase(), text: m[2].trim() };
 }
@@ -194,7 +197,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
 
     let phase: "instr" | "body" | "stmt" | "opts" | "skip-tfng" = "instr";
 
-    if (kind === "people-match") {
+    if (kind === "people-match" || kind === "sentence-ending") {
       for (let i = 1; i < lines.length; i++) {
         const line = lines[i] ?? "";
         if (isSkippableLine(line)) continue;
@@ -202,7 +205,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
           instructionLines.push(line);
           continue;
         }
-        if (/^List of (people|experts)/i.test(line)) continue;
+        if (/^List of (people|experts|endings)/i.test(line)) continue;
 
         const opt = parseOptionLine(line);
         if (opt) {
@@ -219,6 +222,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
         if (
           /^Look at the following/i.test(line) ||
           /^Match each statement/i.test(line) ||
+          /^Complete each sentence with the correct ending/i.test(line) ||
           /^Write the correct letter/i.test(line)
         ) {
           instructionLines.push(line);
@@ -228,7 +232,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
 
     for (let i = 1; i < lines.length; i++) {
       const line = lines[i] ?? "";
-      if (kind === "people-match") continue;
+      if (kind === "people-match" || kind === "sentence-ending") continue;
       if (isSkippableLine(line)) continue;
       if (/^NB\b/i.test(line)) {
         instructionLines.push(line);
@@ -405,7 +409,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
 
       if (kind === "note-fill") {
         if (
-          /^Complete the (notes|sentences|table|flow-?chart)|^Label the diagrams?|^Choose\s+(ONE|NO MORE|TWO)|^Answer the questions/i.test(
+          /^Complete the (notes|sentences|table|flow-?chart)|^Complete each sentence|^Label the diagrams?|^Choose\s+(ONE|NO MORE|TWO)|^Answer the questions|^Write the correct letter/i.test(
             line,
           )
         ) {
@@ -494,7 +498,9 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
         ? "paragraph-match"
         : statements.length > 0 && kind === "people-match"
           ? "people-match"
-          : kind;
+          : statements.length > 0 && kind === "sentence-ending"
+            ? "sentence-ending"
+            : kind;
 
     sections.push({
       title,

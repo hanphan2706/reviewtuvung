@@ -248,10 +248,13 @@ function renderParagraphMatch(section: ExamQuestionSection): { html: string; num
 }
 
 function renderPeopleMatch(section: ExamQuestionSection): { html: string; nums: number[] } {
-  const letterOpts = renderLetterSelectOptions(section.options, 5);
-  const listTitle = /list of experts/i.test(section.instructionLines.join(" "))
+  const letterOpts = renderLetterSelectOptions(section.options, Math.max(5, section.options.length));
+  const blob = [...section.instructionLines, section.title].join(" ");
+  const listTitle = /list of experts/i.test(blob)
     ? "List of experts"
-    : "List of people";
+    : section.kind === "sentence-ending" || /correct ending/i.test(blob)
+      ? "Endings"
+      : "List of people";
   const peopleBank =
     section.options.length > 0
       ? `<div class="people-bank"><div class="people-bank-title">${escHtml(listTitle)}</div><ul class="people-bank-list">${section.options
@@ -337,7 +340,9 @@ function renderSummaryFill(section: ExamQuestionSection): { html: string; nums: 
 function renderNoteFill(section: ExamQuestionSection): { html: string; nums: number[] } {
   const allNums: number[] = [];
   const isNoteInstruction = (l: string) =>
-    /^(Complete the (notes|sentences|table|flow-?chart)|Choose\s|Write your|In boxes)/i.test(l);
+    /^(Complete the (notes|sentences|table|flow-?chart)|Complete each sentence|Choose\s|Write your|Write the correct|In boxes)/i.test(
+      l,
+    );
   const instrOnly = section.instructionLines.filter((l) => isNoteInstruction(l));
   const titleFromBody = section.bodyLines.find(
     (l) =>
@@ -463,6 +468,7 @@ function renderQuestionSection(section: ExamQuestionSection): { html: string; nu
     case "paragraph-match":
       return renderParagraphMatch(section);
     case "people-match":
+    case "sentence-ending":
       return renderPeopleMatch(section);
     case "tfng":
       return renderTfng(section);
