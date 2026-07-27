@@ -1,0 +1,1881 @@
+{
+  "pilotId": "cam13-test2",
+  "schemaVersion": 4,
+  "note": "Cam 13 R T2 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Bringing cinnamon to Europe",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Oxytocin",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Making the most of trends",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "oils",
+      "evidence": {
+        "quoteEn": "mixed with oils for anointing people’s bodies"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: thời Kinh Thánh, quế được trộn vào thứ gì để xức lên người (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “added to ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “added to ______”.",
+              "p": "Bài viết “mixed with oils for anointing people’s bodies” — trộn với dầu để xức lên cơ thể người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "added to ______",
+              "p": "mixed with oils"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thứ quế được trộn vào là oils."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "oils"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "friendship",
+      "evidence": {
+        "quoteEn": "a token indicating friendship among lovers and friends"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: quế còn được dùng làm dấu hiệu thể hiện điều gì giữa người với người (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “used to show ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “used to show ______ between people”.",
+              "p": "Bài viết “a token indicating friendship among lovers and friends” — biểu tượng cho tình bạn/tình cảm giữa người thân, bạn bè."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "used to show ______ between people",
+              "p": "a token indicating friendship among lovers and friends"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là friendship."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "friendship"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "funerals",
+      "evidence": {
+        "quoteEn": "mourners attending funerals burnt cinnamon to create a pleasant scent"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: ở La Mã cổ đại, quế được đốt để tạo mùi thơm tại đâu (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “sweet smell at ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “used for its sweet smell at ______”.",
+              "p": "Bài viết “mourners attending funerals burnt cinnamon to create a pleasant scent” — người đưa tang đốt quế tạo mùi thơm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "sweet smell at ______",
+              "p": "mourners attending funerals burnt cinnamon to create a pleasant scent"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nơi diễn ra là funerals (đám tang)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "funerals"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "wealth",
+      "evidence": {
+        "quoteEn": "a sign of the wealth at his or her disposal"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: thời Trung Cổ, việc bày gia vị trên bàn tiệc là dấu hiệu cho điều gì của chủ nhà (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “person’s ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “was an indication of a person’s ______”.",
+              "p": "Bài viết “a plate with various spices piled upon it as a sign of the wealth at his or her disposal” — bày gia vị để chứng tỏ sự giàu có."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "person’s ______",
+              "p": "a sign of the wealth at his or her disposal"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là wealth (sự giàu có)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "wealth"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "indigestion",
+      "evidence": {
+        "quoteEn": "cure various ailments, such as indigestion"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: quế được cho là chữa được bệnh gì, cùng các vấn đề sức khỏe khác (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “treatment for ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “known as a treatment for ______ and other health problems”.",
+              "p": "Bài viết “thought to cure various ailments, such as indigestion” — được cho là chữa được các bệnh, trong đó có chứng khó tiêu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "treatment for ______",
+              "p": "cure various ailments, such as indigestion"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bệnh được nêu tên là indigestion (khó tiêu)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "indigestion"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "India",
+      "evidence": {
+        "quoteEn": "They took it from India, where it was grown"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: quế được trồng ở đâu trước khi thương nhân Ả Rập chở đi (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “grown in ______” cần một danh từ riêng (tên địa danh)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “grown in ______”.",
+              "p": "Bài viết “They took it from India, where it was grown” — họ lấy quế từ Ấn Độ, nơi nó được trồng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "grown in ______",
+              "p": "took it from India, where it was grown"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nơi trồng quế được nêu rõ là India."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "India"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "camels",
+      "evidence": {
+        "quoteEn": "on camels via an overland route to the Mediterranean"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: thương nhân dùng phương tiện gì để chở quế tới Địa Trung Hải (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “merchants used ______” cần một danh từ số nhiều (con vật)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “merchants used ______ to bring it to the Mediterranean”.",
+              "p": "Bài viết “on camels via an overland route to the Mediterranean” — dùng lạc đà đi theo đường bộ tới Địa Trung Hải."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "merchants used ______",
+              "p": "on camels via an overland route"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phương tiện vận chuyển được nhắc là camels (lạc đà)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "camels"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Alexandria",
+      "evidence": {
+        "quoteEn": "Their journey ended when they reached Alexandria"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: hành trình đường bộ của thương nhân kết thúc tại đâu ở Địa Trung Hải (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “arrived in the Mediterranean at ______” cần một danh từ riêng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “arrived in the Mediterranean at ______”.",
+              "p": "Bài viết “Their journey ended when they reached Alexandria” — hành trình kết thúc khi tới Alexandria."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "arrived in the Mediterranean at ______",
+              "p": "their journey ended when they reached Alexandria"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Điểm đến được nêu là Alexandria."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Alexandria"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Venice",
+      "evidence": {
+        "quoteEn": "brought it back to Venice"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: thương nhân châu Âu mang quế từ Alexandria tới đâu rồi mới bán đi khắp châu Âu (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “traders took it to ______” cần một danh từ riêng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “traders took it to ______ and sold it to destinations around Europe”.",
+              "p": "Bài viết “brought it back to Venice. The spice then travelled from that great trading city to markets all around Europe” — mang về Venice rồi mới tỏa đi khắp châu Âu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "traders took it to ______",
+              "p": "brought it back to Venice"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thành phố trung chuyển được nêu là Venice."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Venice"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "In 1518, the Portuguese built a fort on Ceylon, which enabled them to protect the island, so helping them to develop a monopoly in the cinnamon trade and generate very high profits. In the late 16th century, for example, they enjoyed a tenfold profit when shipping cinnamon over a journey of eight days from Ceylon to India."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói người Bồ Đào Nha kiểm soát hoạt động buôn quế ở Ceylon suốt thế kỷ 16 — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo “had control over the cinnamon trade ... throughout the 16th century” (kiểm soát suốt thế kỷ 16).",
+              "p": "Bài viết: họ xây pháo đài năm 1518 để giữ độc quyền, và tới “late 16th century” vẫn “enjoyed a tenfold profit” — độc quyền được duy trì đến cuối thế kỷ 16, đúng như đề nói."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "had control over the cinnamon trade in Ceylon throughout the 16th century",
+              "p": "built a fort ... helping them to develop a monopoly ... in the late 16th century ... enjoyed a tenfold profit"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ 1518 tới cuối thế kỷ 16, người Bồ Đào Nha vẫn giữ độc quyền và thu lợi cao — đúng với đề. Người Hà Lan chỉ phá được thế độc quyền này vào 1649, sang thế kỷ 17."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "the Dutch broke the 150-year Portuguese monopoly"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói người Hà Lan giành được quyền buôn quế từ tay Bồ Đào Nha ngay khi vừa đặt chân tới Ceylon — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo “took over the cinnamon trade ... as soon as they arrived in Ceylon” (ngay khi vừa tới).",
+              "p": "Bài viết: Hà Lan tới đầu thế kỷ 17, nhưng phải tới “By 1649, the Dutch broke the 150-year Portuguese monopoly” — tức mất nhiều thập kỷ mới phá được thế độc quyền, không phải “ngay khi tới”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "took over the cinnamon trade as soon as they arrived",
+              "p": "By 1649, the Dutch broke the 150-year Portuguese monopoly"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phải mất khoảng nửa thế kỷ (từ đầu thế kỷ 17 tới 1649) người Hà Lan mới phá được độc quyền — trái với ý “ngay khi vừa tới”."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "the Dutch began cultivating their own cinnamon trees to supplement the diminishing number of wild trees available for use"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói cây quế do người Hà Lan trồng cho sản lượng nhiều hơn cây mọc tự nhiên — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo “produced larger quantities of cinnamon than the wild trees” (sản lượng nhiều hơn cây tự nhiên).",
+              "p": "Bài chỉ nói họ trồng cây riêng “to supplement the diminishing number of wild trees” — bổ sung cho số cây tự nhiên đang cạn kiệt, không so sánh sản lượng giữa hai loại cây."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "produced larger quantities of cinnamon than the wild trees",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không hề so sánh sản lượng giữa cây trồng và cây hoang dã."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "the spice trade overall was diminishing in economic potential, and was eventually superseded by the rise of trade in coffee, tea, chocolate, and sugar"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói ngành buôn gia vị vẫn giữ được tầm quan trọng kinh tế trong thế kỷ 19 — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo “maintained its economic importance during the 19th century” (vẫn giữ tầm quan trọng kinh tế).",
+              "p": "Bài viết ngược lại: “the spice trade overall was diminishing in economic potential” và bị “superseded by the rise of trade in coffee, tea, chocolate, and sugar” — bị các mặt hàng khác thay thế."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "maintained its economic importance",
+              "p": "was diminishing in economic potential ... superseded"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định ngành gia vị suy giảm và bị thay thế — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "people become more charitable, better at reading emotions on others’ faces and at communicating constructively in arguments"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới nghiên cứu cho thấy oxytocin có tác động tích cực lên con người. Đề viết: “reference to research showing the beneficial effects of oxytocin on people”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nêu lợi ích cụ thể của oxytocin lên con người.",
+              "p": "Đoạn B: các nghiên cứu tiếp nối cho thấy sau khi hít oxytocin, người ta “become more charitable, better at reading emotions ... and at communicating constructively in arguments” — hào phóng hơn, đọc cảm xúc tốt hơn, giao tiếp xây dựng hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the beneficial effects of oxytocin on people",
+              "p": "people become more charitable, better at reading emotions ... and at communicating constructively in arguments"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "The hormone is found in everything from octopuses to sheep, and its evolutionary roots stretch back half a billion years."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn lý giải vì sao tác động của oxytocin lại phức tạp. Đề viết: “reasons why the effects of oxytocin are complex”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn giải thích nguồn gốc của sự phức tạp này.",
+              "p": "Đoạn F: hormone này có ở khắp các loài, “evolutionary roots stretch back half a billion years”, và Carter giải thích “it’s a very simple and ancient molecule that has been co-opted for many different functions” — một phân tử cổ xưa bị “tận dụng” cho nhiều chức năng khác nhau, nên tác động rất đa dạng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reasons why the effects of oxytocin are complex",
+              "p": "a very simple and ancient molecule that has been co-opted for many different functions"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "For eight years, it was quite a lonesome field"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới giai đoạn oxytocin ít được giới khoa học quan tâm. Đề viết: “mention of a period in which oxytocin attracted little scientific attention”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói tới thời kỳ ít người nghiên cứu chủ đề này.",
+              "p": "Đoạn B: Heinrichs kể lại “for eight years, it was quite a lonesome field” — suốt tám năm, đây là lĩnh vực rất vắng vẻ, ít ai chú ý."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a period in which oxytocin attracted little scientific attention",
+              "p": "for eight years, it was quite a lonesome field"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "Where once researchers took no notice of such findings, now a more nuanced understanding of oxytocin’s effects is propelling investigations down new lines."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói các nhà nghiên cứu từng bỏ qua một số khía cạnh trong dữ liệu của họ. Đề viết: “reference to people ignoring certain aspects of their research data”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói việc bỏ qua dữ liệu.",
+              "p": "Đoạn E: “where once researchers took no notice of such findings” — trước đây các nhà nghiên cứu từng không để ý tới những phát hiện kiểu này (rằng oxytocin chỉ tác động ở một số người/trường hợp nhất định)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "people ignoring certain aspects of their research data",
+              "p": "researchers took no notice of such findings"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "the participants who had sniffed oxytocin via a nasal spray beforehand invested more money than those who received a placebo instead"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai phát hiện ra người ta trở nên tin tưởng hơn khi chịu tác động của oxytocin:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “People are more trusting when affected by oxytocin.”",
+              "p": "Bài viết: nhóm của Markus Heinrichs cho người tham gia hít oxytocin trước một trò chơi đầu tư tiền cho người lạ, và “invested more money than those who received a placebo” — tin tưởng và đầu tư nhiều hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more trusting when affected by oxytocin",
+              "p": "invested more money than those who received a placebo"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thí nghiệm về lòng tin này là của Markus Heinrichs (đoạn B)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "those who inhaled the hormone showed more pleasure when they beat other players, and felt more envy when others won"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai phát hiện oxytocin làm tăng cảm giác ghen tị ở con người:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Oxytocin increases people’s feelings of jealousy.”",
+              "p": "Bài viết: Simone Shamay-Tsoory thấy trong trò chơi cạnh tranh, người dùng oxytocin “felt more envy when others won” — ghen tị hơn khi người khác thắng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "increases people’s feelings of jealousy",
+              "p": "felt more envy when others won"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phát hiện này thuộc về Simone Shamay-Tsoory (đoạn C)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "it improves people’s ability to read emotions, but only if they are not very socially adept to begin with"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai phát hiện tác động của oxytocin thay đổi tùy theo từng kiểu người:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The effect of oxytocin varies from one type of person to another.”",
+              "p": "Bài viết: Jennifer Bartz thấy oxytocin “improves people’s ability to read emotions, but only if they are not very socially adept to begin with” — chỉ có tác dụng với người vốn kém khéo léo xã hội."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "varies from one type of person to another",
+              "p": "only if they are not very socially adept to begin with"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phát hiện về sự khác biệt cá nhân này thuộc về Jennifer Bartz (đoạn C)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "animals",
+      "evidence": {
+        "quoteEn": "triggers the motherly behaviour that sheep show towards their newborn lambs"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Những phát hiện đầu tiên về oxytocin và sự gắn kết đến từ nghiên cứu trên đối tượng nào (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “research involving ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “research involving ______”.",
+              "p": "Bài viết: nhà khoa học nhận ra tác động của oxytocin “through various studies focusing on animals” — qua các nghiên cứu về động vật như chuột đồng (voles) và cừu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "research involving ______",
+              "p": "various studies focusing on animals"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là animals (động vật)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "animals"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "childbirth",
+      "evidence": {
+        "quoteEn": "It is also released by women in childbirth, strengthening the attachment between mother and baby."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Con người cũng tiết ra oxytocin trong hoàn cảnh nào (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “produce oxytocin during ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “humans produce oxytocin during ______”.",
+              "p": "Bài viết: hormone này “released by women in childbirth” — được giải phóng khi phụ nữ sinh con."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "produce oxytocin during ______",
+              "p": "released by women in childbirth"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là childbirth (sinh nở)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "childbirth"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "placebo",
+      "evidence": {
+        "quoteEn": "the participants who had sniffed oxytocin via a nasal spray beforehand invested more money than those who received a placebo instead"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong thí nghiệm năm 2005, nhóm đối chứng được nhận thứ gì thay vì oxytocin (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “either oxytocin or a ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “participants were given either oxytocin or a ______”.",
+              "p": "Bài viết: người tham gia “sniffed oxytocin” hoặc “received a placebo instead” — hoặc hít oxytocin, hoặc nhận giả dược."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "either oxytocin or a ______",
+              "p": "received a placebo instead"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là placebo (giả dược)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "placebo"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "game",
+      "evidence": {
+        "quoteEn": "those who inhaled the hormone showed more pleasure when they beat other players, and felt more envy when others won"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người tham gia nghiên cứu tại Đại học Haifa đã làm gì để bộc lộ cảm xúc tiêu cực (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “took part in a ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “participants took part in a ______”.",
+              "p": "Bài viết: Shamay-Tsoory cho “volunteers played a competitive game”, và những người dùng oxytocin “showed more pleasure when they beat other players, and felt more envy when others won”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "took part in a ______",
+              "p": "volunteers played a competitive game"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là game (trò chơi)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "game"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "strangers",
+      "evidence": {
+        "quoteEn": "people who had received a dose of oxytocin actually became less cooperative when dealing with complete strangers"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nghiên cứu tại Đại học Antwerp cho thấy khi dùng oxytocin, người ta kém sẵn lòng giúp đỡ ai (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “lack of willingness to help ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “showed people’s lack of willingness to help ______”.",
+              "p": "Bài viết: Carolyn DeClerck thấy người dùng oxytocin “became less cooperative when dealing with complete strangers” — kém hợp tác hơn với người hoàn toàn xa lạ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lack of willingness to help ______",
+              "p": "became less cooperative when dealing with complete strangers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là strangers (người lạ)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "strangers"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "names",
+      "evidence": {
+        "quoteEn": "Dutch men became quicker to associate positive words with Dutch names than with foreign ones"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nghiên cứu tại Đại học Amsterdam cho thấy người dùng oxytocin có ấn tượng tích cực hơn với điều gì quen thuộc trong nước mình (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “consider ______ that are familiar to them” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “consider ______ that are familiar to them in their own country to have more positive associations”.",
+              "p": "Bài viết: Carsten De Dreu thấy “Dutch men became quicker to associate positive words with Dutch names than with foreign ones” — liên tưởng tích cực hơn với tên gọi trong nước."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "consider ______ that are familiar to them",
+              "p": "associate positive words with Dutch names than with foreign ones"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là names (tên gọi)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "names"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "managers often fail to recognize the less obvious but profound ways these trends are influencing consumers’ aspirations, attitudes, and behaviors"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn đầu, tác giả nhận xét gì về phần lớn các nhà quản lý?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: họ không nhận ra tác động sâu sắc mà các xu hướng gây ra cho đời sống người tiêu dùng (“are unaware of the significant impact that trends have on consumers’ lives”).",
+              "p": "Bài viết: quản lý “fail to recognize the less obvious but profound ways these trends are influencing consumers’ aspirations, attitudes, and behaviors” — không nhận ra những tác động sâu xa, tinh vi của xu hướng lên khát vọng, thái độ, hành vi người tiêu dùng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "are unaware of the significant impact that trends have on consumers’ lives",
+              "p": "fail to recognize the less obvious but profound ways these trends are influencing consumers’ aspirations, attitudes, and behaviors"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ý chính của đoạn 1 là quản lý bỏ sót tác động sâu của xu hướng, khớp đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài nói quản lý vẫn nhận ra được các xu hướng lớn (“can identify the major trends”), chỉ là bỏ sót tác động sâu xa của chúng."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói lỗi của họ là chỉ chăm chăm vào xu hướng chính — ngược lại, vấn đề là bỏ qua xu hướng bị coi là ngoài lề."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Đoạn này chưa bàn tới việc diễn giải sai dữ liệu nghiên cứu thị trường."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quotesEn": [
+          "The Coach brand had been a symbol of opulence and luxury for nearly 70 years",
+          "that would have risked cheapening the brand’s image"
+        ],
+        "quoteEn": "that would have risked cheapening the brand’s image"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo đoạn ba, Coach lo lắng muốn bảo vệ điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: bảo vệ danh tiếng là nhà sản xuất hàng xa xỉ (“safeguard its reputation as a manufacturer of luxury goods”).",
+              "p": "Bài viết: “The Coach brand had been a symbol of opulence and luxury for nearly 70 years”, và giảm giá đồng loạt “would have risked cheapening the brand’s image” — Coach sợ làm rẻ đi hình ảnh xa xỉ đã gây dựng bấy lâu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "safeguard its reputation as a manufacturer of luxury goods",
+              "p": "a symbol of opulence and luxury ... risked cheapening the brand’s image"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Coach tạo dòng Poppy thay vì giảm giá toàn bộ chính vì muốn giữ hình ảnh sang trọng — khớp C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài nói phản ứng phổ biến của nhiều công ty khác là giảm giá, nhưng Coach lại chọn hướng khác — không phải học theo đối thủ."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Coach không giữ nguyên giá toàn bộ dòng sản phẩm — họ tạo dòng Poppy giá thấp hơn, tách biệt với dòng chính."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Coach chỉ thêm dòng phụ Poppy, không thay đổi toàn bộ diện mạo thương hiệu chính."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Tesco has not abandoned its traditional retail offering but augmented its business with these innovations, thereby infusing its value proposition with a green streak."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bài đưa ra điểm gì về chương trình Greener Living của Tesco?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: chương trình không đòi hỏi Tesco phải thay đổi hoạt động kinh doanh cốt lõi (“did not require Tesco to modify its core business activities”).",
+              "p": "Bài viết: “Tesco has not abandoned its traditional retail offering but augmented its business with these innovations” — Tesco chỉ bổ sung thêm chứ không từ bỏ mô hình bán lẻ truyền thống."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "did not require Tesco to modify its core business activities",
+              "p": "has not abandoned its traditional retail offering but augmented its business"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chương trình chỉ là phần bổ sung, không thay thế hoạt động cốt lõi — khớp A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói chương trình đã thu hút thêm được khách hàng có ý thức môi trường."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Mục tiêu chính là để khách tích điểm đổi tiền qua hành động cụ thể, không chỉ để nâng cao nhận thức."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không nói đây có phải sáng kiến lặp lại từ trước hay không."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "At first glance, spending resources to incorporate elements of a seemingly irrelevant trend into one’s core offerings sounds like it’s hardly worthwhile."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả gợi ý điều gì về chiến lược của Nike?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: đây là kiểu chiến lược thoạt nhìn có vẻ chẳng mang lại lợi ích rõ ràng (“might appear to have few obvious benefits”).",
+              "p": "Bài viết: “At first glance, spending resources to incorporate elements of a seemingly irrelevant trend into one’s core offerings sounds like it’s hardly worthwhile” — mới nhìn tưởng chẳng đáng công."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "might appear to have few obvious benefits",
+              "p": "at first glance ... sounds like it’s hardly worthwhile"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả nhấn mạnh cảm giác ban đầu là “hardly worthwhile” trước khi cho thấy Nike+ thực ra rất thành công — khớp D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không mô tả đây là chiến lược cực kỳ rủi ro vào thời điểm đó."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói chỉ công ty lớn mới đủ khả năng làm — trọng tâm là vẻ “không đáng làm” ban đầu."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không so sánh với việc chiến lược này có khả thi trong quá khứ hay không."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "The ME2, introduced in mid-2008, catered to kids’ huge desire to play video games while countering the negatives, such as associations with lack of exercise and obesity."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điểm mới lạ của sản phẩm ME2 là gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: đây là trò chơi cầm tay giải quyết được lo ngại về lối sống thiếu lành mạnh (“addressed people’s concerns about unhealthy lifestyles”).",
+              "p": "Bài viết: ME2 “catered to kids’ huge desire to play video games while countering the negatives, such as associations with lack of exercise and obesity” — vừa đáp ứng nhu cầu chơi game vừa xóa lo ngại về ít vận động, béo phì."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "addressed people’s concerns about unhealthy lifestyles",
+              "p": "countering the negatives, such as associations with lack of exercise and obesity"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Điểm độc đáo chính là vừa là game cầm tay vừa giải tỏa lo ngại sức khỏe — khớp D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bộ đếm bước chân (pedometer) không được nói là công nghệ vốn phát triển cho ngành thể thao."
+            },
+            {
+              "letter": "B",
+              "whyVi": "ME2 nhắm tới trẻ thích chơi game, không phải nhóm trẻ vốn đã muốn tập thể dục nhiều hơn."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Đồ họa 3D màu sắc là tính năng chung của nhiều game cầm tay khác, không phải điểm riêng của ME2."
+            }
+          ]
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "The ME2, introduced in mid-2008, catered to kids’ huge desire to play video games while countering the negatives, such as associations with lack of exercise and obesity."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Công ty nào đã biến chính điều tiếng xấu về sản phẩm của mình thành lợi thế:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “turned the notion that its products could have harmful effects to its own advantage.”",
+              "p": "Bài viết: iToys với ME2 vừa cho trẻ chơi game vừa “countering the negatives, such as associations with lack of exercise and obesity” — biến lo ngại về game (ít vận động, béo phì) thành điểm bán hàng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "turned the notion that its products could have harmful effects to its own advantage",
+              "p": "catered to kids’ huge desire to play video games while countering the negatives"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây chính là chiến lược “counteract and reaffirm” của iToys."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "they teamed up with technology company Apple to launch Nike+"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Công ty nào đã mở rộng sản phẩm của mình bằng cách hợp tác với một nhà sản xuất khác:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “extended its offering by collaborating with another manufacturer.”",
+              "p": "Bài viết: Nike “teamed up with technology company Apple to launch Nike+” — hợp tác với Apple để tạo ra bộ sản phẩm số hóa mới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "extended its offering by collaborating with another manufacturer",
+              "p": "teamed up with technology company Apple to launch Nike+"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sự hợp tác Nike – Apple là ví dụ rõ nhất cho việc mở rộng qua liên kết với hãng khác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "these green points can be redeemed for cash"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Công ty nào áp dụng một chương trình khuyến khích để thể hiện trách nhiệm xã hội:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “implemented an incentive scheme to demonstrate its corporate social responsibility.”",
+              "p": "Bài viết: Tesco cho khách tích điểm khi tái sử dụng túi, tái chế lon, mua vật liệu cách nhiệt, và “these green points can be redeemed for cash” — đổi điểm xanh lấy tiền, thể hiện cam kết bảo vệ môi trường."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an incentive scheme to demonstrate its corporate social responsibility",
+              "p": "green points ... redeemed for cash"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chương trình Greener Living của Tesco chính là ví dụ cho ý này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "customers were eager to lift themselves and the country out of tough times"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Công ty nào phát hiện khách hàng có thái độ tích cực trước hoàn cảnh khó khăn:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “discovered that customers had a positive attitude towards dealing with difficult circumstances.”",
+              "p": "Bài viết: nghiên cứu người tiêu dùng của Coach cho thấy “customers were eager to lift themselves and the country out of tough times” — khách hàng háo hức muốn tự vực dậy và giúp đất nước vượt khó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a positive attitude towards dealing with difficult circumstances",
+              "p": "eager to lift themselves and the country out of tough times"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phát hiện này đến từ nghiên cứu thị trường của Coach, dẫn tới dòng Poppy."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "At first glance, spending resources to incorporate elements of a seemingly irrelevant trend into one’s core offerings sounds like it’s hardly worthwhile."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Công ty nào đã phản ứng trước một xu hướng lối sống đang lên trong một lĩnh vực sản phẩm không liên quan trực tiếp:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “responded to a growing lifestyle trend in an unrelated product sector.”",
+              "p": "Bài viết: Nike (giày thể thao) tích hợp “the digital revolution” — một xu hướng công nghệ tưởng như “irrelevant” với ngành giày — vào sản phẩm cốt lõi qua Nike+."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a growing lifestyle trend in an unrelated product sector",
+              "p": "incorporate elements of a seemingly irrelevant trend into one’s core offerings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nike đưa xu hướng số hóa (vốn không thuộc ngành giày dép thể thao) vào sản phẩm của mình — khớp C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "The Coach brand had been a symbol of opulence and luxury for nearly 70 years, and the most obvious reaction to the downturn would have been to lower prices."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Công ty nào đã tránh được việc phải giảm giá cho các sản phẩm cốt lõi của mình:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “successfully avoided having to charge its customers less for its core products.”",
+              "p": "Bài viết: thay vì hạ giá dòng sản phẩm chính, Coach tạo dòng Poppy giá thấp hơn tách biệt — “Creating the sub-brand allowed Coach to avert an across-the-board price cut” — tránh được việc giảm giá đồng loạt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "avoided having to charge its customers less for its core products",
+              "p": "allowed Coach to avert an across-the-board price cut"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Coach giữ nguyên giá dòng chính nhờ tạo dòng phụ Poppy — khớp A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Once you have gained perspective on how trend-related changes in consumer opinions and behaviors impact on your category, you can determine which of our three innovation strategies to pursue."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 38: “If there are any trend-related changes impacting on your category, you should ___.” Chọn vế kết đúng trong A-D:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: “identify the most appropriate innovation strategy to use” (xác định chiến lược đổi mới phù hợp nhất).",
+              "p": "Bài viết: “Once you have gained perspective on how trend-related changes ... impact on your category, you can determine which of our three innovation strategies to pursue” — sau khi hiểu tác động, hãy chọn ra chiến lược phù hợp trong ba chiến lược."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "identify the most appropriate innovation strategy to use",
+              "p": "determine which of our three innovation strategies to pursue"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây là bước tổng quát đầu tiên khi có thay đổi do xu hướng — chọn chiến lược phù hợp, khớp B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói phải kết hợp nhiều chiến lược cùng lúc — chỉ cần xác định một chiến lược phù hợp."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Đây là vế kết dành riêng cho trường hợp xu hướng bộc lộ mặt tiêu cực của ngành (câu 39), không phải cho mọi thay đổi nói chung."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Đây là vế kết dành cho trường hợp ngành ngày càng lệch khỏi mối quan tâm mới của khách hàng (câu 40)."
+            }
+          ]
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "if aspects of the category clash with undesired outcomes of a trend, such as associations with unhealthy lifestyles, there is an opportunity to counteract those changes by reaffirming the core values of your category."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 39: “If a current trend highlights a negative aspect of your category, you should ___.” Chọn vế kết đúng trong A-D:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: “emphasise your brand’s traditional values with the counteract-and-affirm strategy” (nhấn mạnh giá trị truyền thống bằng chiến lược counteract-and-reaffirm).",
+              "p": "Bài viết: khi ngành hàng bị gắn với mặt xấu của xu hướng (“associations with unhealthy lifestyles”), có thể “counteract those changes by reaffirming the core values of your category” — phản bác bằng cách khẳng định lại giá trị cốt lõi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "emphasise your brand’s traditional values with the counteract-and-affirm strategy",
+              "p": "counteract those changes by reaffirming the core values of your category"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây đúng là trường hợp và cách xử lý của chiến lược counteract-and-reaffirm, khớp C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói cần phối hợp nhiều chiến lược cho trường hợp này."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Đây là vế kết chung, dùng cho câu 38, không riêng cho trường hợp xu hướng mang mặt tiêu cực."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Chiến lược combine-and-transcend dành cho trường hợp ngành ngày càng lệch khỏi mối quan tâm mới (câu 40), không phải khi có mặt tiêu cực."
+            }
+          ]
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "If analysis reveals an increasing disparity between your category and consumers’ new focus, your innovations need to transcend the category to integrate the two worlds."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 40: “If the consumers’ new focus has an increasing lack of connection with your offering you should ___.” Chọn vế kết đúng trong A-D:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: “use the combine-and-transcend strategy to integrate the two worlds” (dùng chiến lược combine-and-transcend để hợp nhất hai thế giới).",
+              "p": "Bài viết: nếu “an increasing disparity between your category and consumers’ new focus” (khoảng cách ngày càng lớn), thì “innovations need to transcend the category to integrate the two worlds” — cần vượt ra khỏi khuôn khổ ngành để kết hợp hai hướng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "use the combine-and-transcend strategy to integrate the two worlds",
+              "p": "innovations need to transcend the category to integrate the two worlds"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ “disparity” và “transcend the category” khớp trực tiếp với chiến lược combine-and-transcend, đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói cần phối hợp nhiều chiến lược cho trường hợp lệch hướng này."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Đây là vế kết chung dùng cho câu 38, không phải giải pháp riêng cho khoảng cách ngày càng lớn."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Chiến lược counteract-and-reaffirm dành cho trường hợp xu hướng mang mặt tiêu cực (câu 39), không phải khi ngành bị lệch khỏi mối quan tâm mới."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1756 @@
+{
+  "pilotId": "cam12-test1",
+  "schemaVersion": 4,
+  "note": "Cam 12 R T1 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Cork",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Collecting as a hobby",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "What’s the purpose of gaining knowledge?",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Its bark grows up to 20 cm in thickness, insulating the tree like a coat wrapped around the trunk and branches"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cây sồi lấy vỏ (cork oak) có phải là loài cây có vỏ dày nhất trong các loài cây còn tồn tại không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói cork oak “has the thickest bark of any living tree” (vỏ dày nhất trong mọi loài cây còn sống).",
+              "p": "Bài chỉ nói vỏ cây dày tới 20cm, không hề so sánh với bất kỳ loài cây nào khác để khẳng định đây là loài dày nhất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói cork oak “has the thickest bark of any living tree” (vỏ dày nhất trong mọi loài cây còn sống).",
+              "p": "Its bark grows up to 20 cm in thickness, insulating the tree like a coat wrapped around the trunk and branches"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không cung cấp thông tin để khẳng định hay phủ nhận điều này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "a particular cellular structure – with about 40 million cells per cubic centimetre – that technology has never succeeded in replicating"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các nhà khoa học đã tạo ra được loại nút bần nhân tạo với cấu trúc tế bào giống hệt nút bần tự nhiên chưa:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói khoa học “have developed a synthetic cork with the same cellular structures” (đã tạo ra được nút bần tổng hợp có cấu trúc tế bào giống hệt).",
+              "p": "Bài viết: cấu trúc tế bào đặc biệt của vỏ cây “technology has never succeeded in replicating” — công nghệ CHƯA BAO GIỜ tái tạo được, chứ không phải đã làm được."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói khoa học “have developed a synthetic cork with the same cellular structures” (đã tạo ra được nút bần tổng hợp có cấu trúc tế bào giống hệt).",
+              "p": "a particular cellular structure – with about 40 million cells per cubic centimetre – that technology has never succeeded in replicating"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nêu thông tin trái ngược với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "From the planting of a cork sapling to the first harvest takes 25 years, and a gap of approximately a decade must separate harvests from an individual tree."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mỗi cây sồi lấy vỏ có phải chờ 25 năm giữa lần thu hoạch đầu tiên và lần thứ hai không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói phải chờ “25 years between the first and second harvest” (25 năm giữa lần thu hoạch đầu và thứ hai).",
+              "p": "Bài viết: 25 năm là khoảng thời gian từ lúc TRỒNG cây tới lần thu hoạch ĐẦU TIÊN; còn khoảng cách giữa các lần thu hoạch tiếp theo chỉ là “approximately a decade” (khoảng một thập kỷ)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói phải chờ “25 years between the first and second harvest” (25 năm giữa lần thu hoạch đầu và thứ hai).",
+              "p": "From the planting of a cork sapling to the first harvest takes 25 years, and a gap of approximately a decade must separate harvests from an individual tree."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nêu thông tin trái ngược với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "If the bark is stripped on a day when it’s too cold – or when the air is damp – the tree will be damaged."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vỏ cây nút chai có nên được bóc trong điều kiện thời tiết khô ráo không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói vỏ cây “should be stripped in dry atmospheric conditions” (nên bóc khi thời tiết khô ráo).",
+              "p": "Bài viết: nếu bóc vỏ vào ngày quá lạnh hoặc khi không khí ẩm (“damp”) thì cây sẽ bị hại — ngụ ý ngược lại là nên bóc vào ngày khô ráo."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói vỏ cây “should be stripped in dry atmospheric conditions” (nên bóc khi thời tiết khô ráo).",
+              "p": "If the bark is stripped on a day when it’s too cold – or when the air is damp – the tree will be damaged."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài xác nhận đúng thông tin này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "No mechanical means of stripping cork bark has been invented, so the job is done by teams of highly skilled workers."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cách duy nhất để bóc vỏ khỏi cây nút chai có phải là làm bằng tay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói đây là “the only way” (cách duy nhất) để bóc vỏ khỏi cây.",
+              "p": "Bài viết: “No mechanical means of stripping cork bark has been invented” — chưa có phương tiện cơ giới nào được phát minh, công việc do đội thợ lành nghề thực hiện thủ công."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói đây là “the only way” (cách duy nhất) để bóc vỏ khỏi cây.",
+              "p": "No mechanical means of stripping cork bark has been invented, so the job is done by teams of highly skilled workers."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài xác nhận đúng thông tin này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "taste",
+      "evidence": {
+        "quoteEn": "The tiniest concentrations – as little as three or four parts to a trillion – can spoil the taste of the product contained in the bottle."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: nắp vặn nhôm không ảnh hưởng tới yếu tố gì của rượu trong chai (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the ______ of the bottle contents” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “do not affect the ______ of the bottle contents”.",
+              "p": "Bài viết: hợp chất TCA trong nút bần có thể “spoil the taste of the product contained in the bottle” — làm hỏng hương vị; nắp vặn nhôm không gặp vấn đề này."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "taste",
+              "p": "The tiniest concentrations – as little as three or four parts to a trillion – can spoil the taste of the product contained in the bottle."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là taste."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "taste"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "cheaper",
+      "evidence": {
+        "quoteEn": "These substitutes are cheaper to manufacture and, in the case of screw caps, more convenient for the user."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: so với nút bần, nắp vặn nhôm có ưu điểm gì về chi phí sản xuất (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “are ______ to produce” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “are ______ to produce”.",
+              "p": "Bài viết: “These substitutes are cheaper to manufacture” — các sản phẩm thay thế rẻ hơn để sản xuất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cheaper",
+              "p": "These substitutes are cheaper to manufacture and, in the case of screw caps, more convenient for the user."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là cheaper."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "cheaper"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "convenient",
+      "evidence": {
+        "quoteEn": "These substitutes are cheaper to manufacture and, in the case of screw caps, more convenient for the user."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: nắp vặn nhôm tiện lợi hơn nút bần ở điểm nào khi sử dụng (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “are ______ to use” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “are ______ to use”.",
+              "p": "Bài viết: “more convenient for the user” — tiện lợi hơn cho người dùng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "convenient",
+              "p": "These substitutes are cheaper to manufacture and, in the case of screw caps, more convenient for the user."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là convenient."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "convenient"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "image",
+      "evidence": {
+        "quoteEn": "its traditional image is more in keeping with that of the type of high quality goods with which it has long been associated"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: nút bần truyền thống phù hợp với điều gì của các sản phẩm cao cấp (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “suit the ______ of quality products” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “suit the ______ of quality products”.",
+              "p": "Bài viết: “its traditional image is more in keeping with that of the type of high quality goods with which it has long been associated” — hình ảnh truyền thống của nút bần phù hợp với hàng cao cấp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "image",
+              "p": "its traditional image is more in keeping with that of the type of high quality goods with which it has long been associated"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là image."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "image"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "sustainable",
+      "evidence": {
+        "quoteEn": "cork is a sustainable product that can be recycled without difficulty"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: nút bần được làm từ loại vật liệu như thế nào (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “made from a ______ material” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “made from a ______ material”.",
+              "p": "Bài viết: “cork is a sustainable product” — nút bần là vật liệu bền vững."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "sustainable",
+              "p": "cork is a sustainable product that can be recycled without difficulty"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là sustainable."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "sustainable"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "recycled",
+      "evidence": {
+        "quoteEn": "cork is a sustainable product that can be recycled without difficulty"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: nút bần có thể được xử lý dễ dàng như thế nào sau khi sử dụng (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “easily ______” cần một động từ ở dạng quá khứ phân từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “easily ______”.",
+              "p": "Bài viết: “that can be recycled without difficulty” — có thể tái chế dễ dàng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "recycled",
+              "p": "cork is a sustainable product that can be recycled without difficulty"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là recycled."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "recycled"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "biodiversity",
+      "evidence": {
+        "quoteEn": "cork forests are a resource which support local biodiversity, and prevent desertification in the regions where they are planted"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: rừng sồi lấy vỏ hỗ trợ điều gì cho khu vực (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “aid ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “cork forests aid ______”.",
+              "p": "Bài viết: “cork forests are a resource which support local biodiversity” — rừng sồi hỗ trợ đa dạng sinh học địa phương."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "biodiversity",
+              "p": "cork forests are a resource which support local biodiversity, and prevent desertification in the regions where they are planted"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là biodiversity."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "biodiversity"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "desertification",
+      "evidence": {
+        "quoteEn": "cork forests are a resource which support local biodiversity, and prevent desertification in the regions where they are planted"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: rừng sồi lấy vỏ ngăn chặn hiện tượng gì xảy ra (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “stop ______ happening” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “cork forests stop ______ happening”.",
+              "p": "Bài viết: “prevent desertification in the regions where they are planted” — ngăn chặn hiện tượng sa mạc hóa."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "desertification",
+              "p": "cork forests are a resource which support local biodiversity, and prevent desertification in the regions where they are planted"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là desertification."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "desertification"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "antiques",
+      "evidence": {
+        "quoteEn": "They’ll look for, say, antiques that they can buy cheaply and expect to be able to sell at a profit."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả nêu ví dụ về việc sưu tầm thứ gì để minh họa cho việc sưu tầm nhằm kiếm tiền (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “collecting ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “The writer mentions collecting ______ as an example of collecting in order to make money”.",
+              "p": "Bài viết: “They’ll look for, say, antiques that they can buy cheaply and expect to be able to sell at a profit” — họ tìm đồ cổ (antiques) để mua rẻ bán đắt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "antiques",
+              "p": "They’ll look for, say, antiques that they can buy cheaply and expect to be able to sell at a profit."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là antiques."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "antiques"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "triumph",
+      "evidence": {
+        "quoteEn": "buying cheap and selling dear can give the collector a sense of triumph"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người sưu tầm có thể có cảm giác gì khi mua đi bán lại đồ vật (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a feeling of ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Collectors may get a feeling of ______ from buying and selling items”.",
+              "p": "Bài viết: “buying cheap and selling dear can give the collector a sense of triumph” — cảm giác chiến thắng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "triumph",
+              "p": "buying cheap and selling dear can give the collector a sense of triumph"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là triumph."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "triumph"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "information",
+      "evidence": {
+        "quoteEn": "Many collectors collect to develop their social life, attending meetings of a group of collectors and exchanging information on items."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu lạc bộ sưu tầm tạo cơ hội để chia sẻ điều gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “share ______” cần một danh từ không đếm được."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Collectors’ clubs provide opportunities to share ______”.",
+              "p": "Bài viết: các thành viên “exchanging information on items” — trao đổi thông tin về các món đồ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "information",
+              "p": "Many collectors collect to develop their social life, attending meetings of a group of collectors and exchanging information on items."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là information."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "information"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "contact/meetings",
+      "evidence": {
+        "quoteEn": "This is a variant on joining a bridge club or a gym, and similarly brings them into contact with like-minded people."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu lạc bộ sưu tầm mang lại điều gì với những người có cùng sở thích (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “offer ______ with people” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Collectors’ clubs offer ______ with people who have similar interests”.",
+              "p": "Bài viết: việc tham gia câu lạc bộ “brings them into contact with like-minded people” — đưa họ tiếp xúc (contact) với người cùng chí hướng; trước đó cũng nhắc tới việc “attending meetings” (tham dự các buổi họp mặt)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "contact/meetings",
+              "p": "This is a variant on joining a bridge club or a gym, and similarly brings them into contact with like-minded people."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là contact hoặc meetings."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "contact/meetings"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "hunt/desire",
+      "evidence": {
+        "quoteEn": "Another motive for collecting is the desire to find something special, or a particular example of the collected item, such as a rare early recording by a particular singer. Some may spend their whole lives in a hunt for this."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc sưu tầm đôi khi là một cuộc theo đuổi kéo dài cả đời để tìm một món đồ đặc biệt (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a life-long ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Collecting sometimes involves a life-long ______ for a special item”.",
+              "p": "Bài viết: “the desire to find something special... Some may spend their whole lives in a hunt for this” — khao khát (desire) tìm kiếm, hay cuộc săn lùng (hunt) kéo dài suốt đời."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "hunt/desire",
+              "p": "Another motive for collecting is the desire to find something special, or a particular example of the collected item, such as a rare early recording by a particular singer. Some may spend their whole lives in a hunt for this."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là hunt hoặc desire."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "hunt/desire"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "aimless/empty",
+      "evidence": {
+        "quotesEn": [
+          "Psychologically, this can give a purpose to a life that otherwise feels aimless.",
+          "rather than celebrating their success, they may feel empty, now that the goal that drove them on has gone"
+        ]
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc tìm kiếm một món đồ đặc biệt có thể giúp người ta không cảm thấy cuộc sống hoàn toàn như thế nào (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “completely ______” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Searching for something particular may prevent people from feeling their life is completely ______”.",
+              "p": "Bài viết: cuộc tìm kiếm “can give a purpose to a life that otherwise feels aimless” — nếu không có nó, cuộc sống sẽ cảm thấy vô định (aimless); còn nếu tìm được rồi lại có thể cảm thấy trống rỗng (empty)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "aimless/empty",
+              "p": "Psychologically, this can give a purpose to a life that otherwise feels aimless. / rather than celebrating their success, they may feel empty, now that the goal that drove them on has gone"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là aimless hoặc empty."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "aimless/empty"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "educational",
+      "evidence": {
+        "quoteEn": "another potential reason for it – or, perhaps, a result of collecting – is its educational value. Stamp collecting opens a window to other countries"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sưu tầm tem có thể mang tính chất gì vì nó cung cấp thông tin về các quốc gia khác nhau (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “may be ______” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Stamp collecting may be ______ because it provides facts about different countries”.",
+              "p": "Bài viết: “another potential reason for it... is its educational value. Stamp collecting opens a window to other countries” — giá trị giáo dục (educational)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "educational",
+              "p": "another potential reason for it – or, perhaps, a result of collecting – is its educational value. Stamp collecting opens a window to other countries"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là educational."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "educational"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "Trainspotting",
+      "evidence": {
+        "quoteEn": "a popular form of collecting, particularly among boys and men, was trainspotting"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thú sưu tầm nào thường được coi là dành cho nam giới (một từ, viết hoa chữ cái đầu):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Đầu câu “______ tends to be mostly a male hobby” cần một danh từ chỉ tên thú sưu tầm."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “______ tends to be mostly a male hobby”.",
+              "p": "Bài viết: “a popular form of collecting, particularly among boys and men, was trainspotting” — trainspotting là thú sưu tầm chủ yếu của nam giới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Trainspotting",
+              "p": "a popular form of collecting, particularly among boys and men, was trainspotting"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là Trainspotting."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Trainspotting"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Similarly, people who collect dolls may go beyond simply enlarging their collection, and develop an interest in the way that dolls are made, or the materials that are used."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Số lượng người mua búp bê có tăng lên qua các thế kỷ không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “the number of people buying dolls has grown” (số người mua búp bê đã tăng lên qua các thế kỷ).",
+              "p": "Bài viết chỉ nói người sưu tầm búp bê có thể quan tâm tới cách búp bê được làm ra hay chất liệu qua các thời kỳ, hoàn toàn không nhắc tới số lượng người mua búp bê."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói “the number of people buying dolls has grown” (số người mua búp bê đã tăng lên qua các thế kỷ).",
+              "p": "Similarly, people who collect dolls may go beyond simply enlarging their collection, and develop an interest in the way that dolls are made, or the materials that are used."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không cung cấp thông tin để khẳng định hay phủ nhận điều này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "These have changed over the centuries from the wood that was standard in 16th century Europe, through the wax and porcelain of later centuries, to the plastics of today’s dolls."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Búp bê châu Âu thế kỷ 16 có thường được làm từ sáp và sứ không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói búp bê thế kỷ 16 “were normally made of wax and porcelain” (thường làm từ sáp và sứ).",
+              "p": "Bài viết: chất liệu búp bê đổi “from the wood that was standard in 16th century Europe, through the wax and porcelain of later centuries” — thế kỷ 16 dùng GỖ là chuẩn; sáp và sứ chỉ xuất hiện ở các thế kỷ SAU đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói búp bê thế kỷ 16 “were normally made of wax and porcelain” (thường làm từ sáp và sứ).",
+              "p": "These have changed over the centuries from the wood that was standard in 16th century Europe, through the wax and porcelain of later centuries, to the plastics of today’s dolls."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nêu thông tin trái ngược với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Stamps collectors, for instance, arrange their stamps in albums, usually very neatly, organising their collection according to certain commonplace principles – perhaps by country in alphabetical order, or grouping stamps by what they depict – people, birds, maps, and so on."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cách sắp xếp bộ sưu tập tem theo kích thước có ít phổ biến hơn các cách khác không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói sắp xếp “by the size of the stamps is less common than other methods” (theo kích thước ít phổ biến hơn cách khác).",
+              "p": "Bài viết chỉ liệt kê các cách sắp xếp phổ biến như theo quốc gia hay theo hình ảnh trên tem (người, chim, bản đồ...), hoàn toàn không nhắc tới việc sắp xếp theo kích thước tem."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói sắp xếp “by the size of the stamps is less common than other methods” (theo kích thước ít phổ biến hơn cách khác).",
+              "p": "Stamps collectors, for instance, arrange their stamps in albums, usually very neatly, organising their collection according to certain commonplace principles – perhaps by country in alphabetical order, or grouping stamps by what they depict – people, birds, maps, and so on."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không cung cấp thông tin để khẳng định hay phủ nhận điều này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "may be conveying their belief that they must be interesting themselves"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người sưu tầm những món đồ khác thường có thể muốn người khác nghĩ rằng bản thân họ cũng khác thường không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói người sưu tầm đồ lạ “may want others to think he or she is also unusual” (muốn người khác nghĩ mình cũng khác thường).",
+              "p": "Bài viết: người sưu tầm cổ áo chó “may be conveying their belief that they must be interesting themselves” — họ muốn thể hiện rằng bản thân họ cũng thú vị/khác thường."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói người sưu tầm đồ lạ “may want others to think he or she is also unusual” (muốn người khác nghĩ mình cũng khác thường).",
+              "p": "may be conveying their belief that they must be interesting themselves"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài xác nhận đúng thông tin này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "More than most other hobbies, collecting can be totally engrossing, and can give a strong sense of personal fulfilment."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc sưu tầm có mang lại cảm giác mà các sở thích khác khó có thể đem lại không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói sưu tầm mang lại “a feeling that other hobbies are unlikely to inspire” (cảm giác mà sở thích khác khó tạo ra).",
+              "p": "Bài viết: “More than most other hobbies, collecting can be totally engrossing, and can give a strong sense of personal fulfilment” — sưu tầm mang lại cảm giác mãn nguyện mạnh mẽ hơn hầu hết sở thích khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói sưu tầm mang lại “a feeling that other hobbies are unlikely to inspire” (cảm giác mà sở thích khác khó tạo ra).",
+              "p": "More than most other hobbies, collecting can be totally engrossing, and can give a strong sense of personal fulfilment."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài xác nhận đúng thông tin này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "But what would the founders of these two institutions have thought of a course called ‘Arson for Profit’? I kid you not: we have it on the books."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A giới thiệu điều gì khiến người đọc bất ngờ về chương trình đào tạo của trường tác giả — khớp heading nào trong 8 tiêu đề (i–viii)?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đoạn A giới thiệu điều gì khiến người đọc bất ngờ về chương trình đào tạo của trường tác giả — khớp heading nào?",
+              "p": "Đoạn A: tác giả kể trường mình có hẳn một môn học tên là ‘Arson for Profit’ (Đốt nhà để trục lợi) — một tên môn học gây bất ngờ — đúng là “A surprising course title” (vi)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "heading vi",
+              "p": "But what would the founders of these two institutions have thought of a course called ‘Arson for Profit’? I kid you not: we have it on the books."
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "viii",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "But wouldn’t this also be the perfect course for prospective arsonists to sign up for?"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B đặt ra câu hỏi gì về đối tượng có thể bị môn học này thu hút — khớp heading nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đoạn B đặt ra câu hỏi gì về đối tượng có thể bị môn học này thu hút — khớp heading nào?",
+              "p": "Đoạn B: dù môn học nhắm tới các nhà điều tra hỏa hoạn tương lai, tác giả tự hỏi liệu đây cũng có thể là môn học hoàn hảo cho những kẻ có ý định đốt nhà — đúng là “The possibility of attracting the wrong kind of student” (viii)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "heading viii",
+              "p": "But wouldn’t this also be the perfect course for prospective arsonists to sign up for?"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "viii"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "ii",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "a subject matter can have principles in the sense of being codified, having rules, as with football or chess, without being principled in the sense of being ethical"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C khai thác điều gì từ tên môn học “Principles of Marketing” — khớp heading nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đoạn C khai thác điều gì từ tên môn học “Principles of Marketing” — khớp heading nào?",
+              "p": "Đoạn C: tác giả chơi chữ với từ “principles” — vừa mang nghĩa “nguyên tắc/quy tắc” như luật chơi cờ, vừa mang nghĩa “có đạo đức” (principled) — một tên môn học mang hai nghĩa — đúng là “A course title with two meanings” (ii)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "heading ii",
+              "p": "a subject matter can have principles in the sense of being codified, having rules, as with football or chess, without being principled in the sense of being ethical"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ii"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "iv",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "My inspiration for this judgement is the philosopher Immanuel Kant, who argued that any body of knowledge consists of an end (or purpose) and a means."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D vận dụng lý thuyết của ai vào một bối cảnh không ngờ tới — khớp heading nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đoạn D vận dụng lý thuyết của ai vào một bối cảnh không ngờ tới — khớp heading nào?",
+              "p": "Đoạn D: tác giả lấy cảm hứng từ triết gia Kant — người cho rằng mọi lĩnh vực tri thức gồm “end” (mục đích) và “means” (phương tiện) — rồi áp dụng lý thuyết triết học này vào ngành marketing, một bối cảnh không ai ngờ tới — đúng là “Applying a theory in an unexpected context” (iv)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "heading iv",
+              "p": "My inspiration for this judgement is the philosopher Immanuel Kant, who argued that any body of knowledge consists of an end (or purpose) and a means."
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iv"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "A field of knowledge or a professional endeavor is defined by both the means and the end; hence both deserve scrutiny."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E nhấn mạnh điều gì về hai yếu tố “means” và “end” — khớp heading nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đoạn E nhấn mạnh điều gì về hai yếu tố “means” và “end” — khớp heading nào?",
+              "p": "Đoạn E: tác giả kết luận cả “means” và “end” đều xác định nên một lĩnh vực tri thức, do đó cả hai đều cần được xem xét kỹ — hai yếu tố quan trọng ngang nhau — đúng là “The equal importance of two key issues” (iii)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "heading iii",
+              "p": "A field of knowledge or a professional endeavor is defined by both the means and the end; hence both deserve scrutiny."
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iii"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quotesEn": [
+          "But we would not call that firefighting. We have a separate word for it: arson.",
+          "We have another term for it: fraud."
+        ]
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F chỉ ra điều gì khi cùng một kiến thức/kỹ năng được dùng cho mục đích khác nhau — khớp heading nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đoạn F chỉ ra điều gì khi cùng một kiến thức/kỹ năng được dùng cho mục đích khác nhau — khớp heading nào?",
+              "p": "Đoạn F: cùng kỹ năng chữa cháy nhưng dùng sai mục đích thì gọi là “arson” chứ không phải “firefighting”; cùng kỹ năng marketing nhưng dùng sai mục đích thì gọi là “fraud” chứ không phải “marketing” — mục đích khác nhau thì có tên gọi khác nhau — đúng là “Different names for different outcomes” (vii)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "heading vii",
+              "p": "But we would not call that firefighting. We have a separate word for it: arson. / We have another term for it: fraud."
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vii"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "fire science",
+      "evidence": {
+        "quoteEn": "Any undergraduates who have met the academic requirements can sign up for the course in our program in ‘fire science’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong summary: sinh viên tham gia môn Arson for Profit đang theo học ngành gì (không quá hai từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “studying ______” cần một cụm danh từ chỉ tên ngành học."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “students who are undergraduates and who are studying ______”.",
+              "p": "Bài viết: “Any undergraduates who have met the academic requirements can sign up for the course in our program in ‘fire science’” — sinh viên theo học ngành “fire science” (khoa học cứu hỏa)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fire science",
+              "p": "Any undergraduates who have met the academic requirements can sign up for the course in our program in ‘fire science’."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cụm từ cần điền là fire science."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fire science"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "investigators",
+      "evidence": {
+        "quoteEn": "Naturally, the course is intended for prospective arson investigators"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong summary: sinh viên được kỳ vọng sẽ trở thành ai, chuyên về điều tra vụ đốt nhà (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “become ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “The expectation is that they will become ______ specialising in arson”.",
+              "p": "Bài viết: “the course is intended for prospective arson investigators” — môn học nhắm tới các nhà điều tra (investigators) vụ đốt nhà tương lai."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "investigators",
+              "p": "Naturally, the course is intended for prospective arson investigators"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là investigators."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "investigators"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "evidence",
+      "evidence": {
+        "quoteEn": "who can learn all the tricks of the trade for detecting whether a fire was deliberately set, discovering who did it, and establishing a chain of evidence for effective prosecution in a court of law."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong summary: môn học giúp sinh viên tìm ra thứ gì thể hiện ý định phạm tội (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “find ______ of criminal intent” cần một danh từ không đếm được."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “The course will help them ... find ______ of criminal intent”.",
+              "p": "Bài viết: “establishing a chain of evidence for effective prosecution in a court of law” — thiết lập chuỗi bằng chứng (evidence)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "evidence",
+              "p": "who can learn all the tricks of the trade for detecting whether a fire was deliberately set, discovering who did it, and establishing a chain of evidence for effective prosecution in a court of law."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là evidence."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "evidence"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "prosecution",
+      "evidence": {
+        "quoteEn": "who can learn all the tricks of the trade for detecting whether a fire was deliberately set, discovering who did it, and establishing a chain of evidence for effective prosecution in a court of law."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong summary: chuỗi bằng chứng dẫn tới điều gì thành công tại tòa án (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “successful ______ in the courts” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “leading to successful ______ in the courts”.",
+              "p": "Bài viết: “establishing a chain of evidence for effective prosecution in a court of law” — dẫn tới việc truy tố (prosecution) thành công."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "prosecution",
+              "p": "who can learn all the tricks of the trade for detecting whether a fire was deliberately set, discovering who did it, and establishing a chain of evidence for effective prosecution in a court of law."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là prosecution."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "prosecution"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "A student can prepare for a career in resort management, engineering, interior design, accounting, music, law enforcement, you name it."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có khó để thu hút sinh viên vào các môn học không tập trung vào một nghề nghiệp cụ thể không, theo tác giả:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “It is difficult to attract students onto courses that do not focus on a career.”",
+              "p": "Bài chỉ liệt kê hàng loạt ngành học đều gắn với một nghề nghiệp cụ thể (quản lý khu nghỉ dưỡng, kỹ thuật, kế toán...), rồi bàn về mối quan hệ means–end trong các môn đã có; hoàn toàn không bàn tới việc thu hút sinh viên vào môn phi hướng nghiệp có khó hay không."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề: “It is difficult to attract students onto courses that do not focus on a career.”",
+              "p": "A student can prepare for a career in resort management, engineering, interior design, accounting, music, law enforcement, you name it."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không đưa ra ý kiến rõ ràng về điều này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "But wouldn’t this also be the perfect course for prospective arsonists to sign up for?"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Môn Arson for Profit có thể hữu ích cho những người có ý định đốt nhà không, theo quan điểm tác giả:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The ‘Arson for Profit’ course would be useful for people intending to set fire to buildings.”",
+              "p": "Bài viết: tác giả đặt câu hỏi tu từ “wouldn’t this also be the perfect course for prospective arsonists to sign up for?” — ngụ ý đồng tình rằng môn học này hoàn toàn phù hợp với những kẻ có ý định đốt nhà."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề: “The ‘Arson for Profit’ course would be useful for people intending to set fire to buildings.”",
+              "p": "But wouldn’t this also be the perfect course for prospective arsonists to sign up for?"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài đồng ý với ý này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "My point is not to criticize academic programs in fire science: they are highly welcome as part of the increasing professionalization of this and many other occupations."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các môn học khoa học cứu hỏa có mang tính hàn lâm quá mức khiến không giúp ích được cho công việc chữa cháy thực tế không, theo tác giả:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Fire science courses are too academic to help people to be good at the job of firefighting.”",
+              "p": "Bài viết: tác giả khẳng định các chương trình học thuật về fire science “are highly welcome as part of the increasing professionalization” — được hoan nghênh vì góp phần chuyên nghiệp hóa ngành, không hề cho rằng chúng quá hàn lâm và vô ích."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề: “Fire science courses are too academic to help people to be good at the job of firefighting.”",
+              "p": "My point is not to criticize academic programs in fire science: they are highly welcome as part of the increasing professionalization of this and many other occupations."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài phản bác ý này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "When I ask fire science students to articulate the end, or purpose, of their field, they eventually generalize to something like, ‘The safety and welfare of society,’ which seems right."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sinh viên ngành khoa học cứu hỏa của tác giả có đưa ra được một định nghĩa chi tiết về mục đích ngành học của họ không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The writer’s fire science students provided a detailed definition of the purpose of their studies.”",
+              "p": "Bài viết: khi được hỏi, sinh viên “eventually generalize to something like, ‘The safety and welfare of society’” — họ chỉ đưa ra một khái quát chung chung, không phải một định nghĩa chi tiết."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề: “The writer’s fire science students provided a detailed definition of the purpose of their studies.”",
+              "p": "When I ask fire science students to articulate the end, or purpose, of their field, they eventually generalize to something like, ‘The safety and welfare of society,’ which seems right."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài phản bác ý này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    }
+  }
+}

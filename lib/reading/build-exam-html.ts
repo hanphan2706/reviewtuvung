@@ -1,4 +1,4 @@
-import { BARE_GAP_RE, FILL_GAP_BLANK, FILL_GAP_RE, hasFillGap } from "@/lib/reading/fill-gap-pattern";
+import { BARE_GAP_RE, FILL_GAP_BLANK, FILL_GAP_RE, consumeTrailingBlankChars, hasFillGap, isBareGapFollowedByUnit } from "@/lib/reading/fill-gap-pattern";
 import {
   boldTfngInstructionSegment,
   formatExamInstructionHtml,
@@ -116,21 +116,33 @@ function replaceGapPattern(
   raw: string,
   pattern: RegExp,
   renderToken: (n: number) => string,
+  options?: { skipBareUnits?: boolean },
 ): { html: string; nums: number[] } | null {
   const nums: number[] = [];
   const parts: string[] = [];
   const re = new RegExp(pattern.source, "g");
   let last = 0;
   let m = re.exec(raw);
+  let any = false;
   while (m !== null) {
     const n = Number.parseInt(m[1] ?? "", 10);
-    if (!Number.isNaN(n)) nums.push(n);
+    const end = (m.index ?? 0) + m[0].length;
+    if (options?.skipBareUnits && isBareGapFollowedByUnit(raw, end)) {
+      m = re.exec(raw);
+      continue;
+    }
+    if (Number.isNaN(n)) {
+      m = re.exec(raw);
+      continue;
+    }
+    any = true;
+    nums.push(n);
     parts.push(escHtml(raw.slice(last, m.index)));
     parts.push(renderToken(n));
-    last = m.index + m[0].length;
+    last = options?.skipBareUnits ? end : consumeTrailingBlankChars(raw, end);
     m = re.exec(raw);
   }
-  if (nums.length === 0) return null;
+  if (!any) return null;
   parts.push(escHtml(raw.slice(last)));
   return { html: parts.join(""), nums };
 }
@@ -139,7 +151,7 @@ function renderGapText(raw: string): { html: string; nums: number[] } {
   const underscored = replaceGapPattern(raw, FILL_GAP_RE, gapFillInputHtml);
   if (underscored) return underscored;
 
-  const bare = replaceGapPattern(raw, BARE_GAP_RE, gapFillInputHtml);
+  const bare = replaceGapPattern(raw, BARE_GAP_RE, gapFillInputHtml, { skipBareUnits: true });
   if (bare) return bare;
 
   const nums: number[] = [];
@@ -152,7 +164,8 @@ function renderGapText(raw: string): { html: string; nums: number[] } {
     if (bm && bm.index !== undefined && !Number.isNaN(n)) {
       nums.push(n);
       const before = escHtml(body.slice(0, bm.index));
-      const after = escHtml(body.slice(bm.index + bm[0].length));
+      const blankEnd = consumeTrailingBlankChars(body, bm.index + bm[0].length);
+      const after = escHtml(body.slice(blankEnd));
       return {
         html: `<span class="sentence-qnum">${n}</span>\u00a0\u00a0${before}${gapFillInputHtml(n)}${after}`,
         nums,
@@ -171,7 +184,7 @@ function renderGapPhraseBank(raw: string, _options: McqOption[]): { html: string
   const underscored = replaceGapPattern(raw, FILL_GAP_RE, gapPhraseDropHtml);
   if (underscored) return underscored;
 
-  const bare = replaceGapPattern(raw, BARE_GAP_RE, gapPhraseDropHtml);
+  const bare = replaceGapPattern(raw, BARE_GAP_RE, gapPhraseDropHtml, { skipBareUnits: true });
   if (bare) return bare;
 
   return { html: escHtml(raw), nums: [] };
@@ -252,9 +265,15 @@ function renderPeopleMatch(section: ExamQuestionSection): { html: string; nums: 
   const blob = [...section.instructionLines, section.title].join(" ");
   const listTitle = /list of experts/i.test(blob)
     ? "List of experts"
-    : section.kind === "sentence-ending" || /correct ending/i.test(blob)
-      ? "Endings"
-      : "List of people";
+    : /list of researchers|correct researcher/i.test(blob)
+      ? "List of researchers"
+      : /list of companies|correct company/i.test(blob)
+        ? "List of companies"
+        : /list of ideas|correct idea/i.test(blob)
+          ? "List of ideas"
+          : section.kind === "sentence-ending" || /correct ending/i.test(blob)
+            ? "Endings"
+            : "List of people";
   const peopleBank =
     section.options.length > 0
       ? `<div class="people-bank"><div class="people-bank-title">${escHtml(listTitle)}</div><ul class="people-bank-list">${section.options
@@ -399,6 +418,137 @@ function renderNoteFill(section: ExamQuestionSection): { html: string; nums: num
   };
 }
 
+/** Pipe rows: `Part | Description | Uses`. Multi-line cells use ` || `. Empty Part → rowspan merge. */
+function splitPipeTableRow(line: string): string[] {
+  // Protect multi-line cell markers (` || `) so they are not treated as column separators.
+  const marker = "\u0001";
+  const protectedLine = line.replace(/\s*\|\|\s*/g, marker);
+  return protectedLine.split("|").map((cell) => cell.trim().replaceAll(marker, " || "));
+}
+
+function looksLikeTableHeaderRow(cells: string[]): boolean {
+  if (cells.some((c) => hasFillGap(c) || /[•●]/.test(c) || /:$/.test(c.trim()))) return false;
+  if (cells.every((c) => !c.trim())) return false;
+  return cells.every((c) => {
+    const t = c.trim();
+    return t.length > 0 && t.length < 28 && !/\d/.test(t);
+  });
+}
+
+function parsePipeTable(bodyLines: string[]): {
+  title: string | null;
+  headers: string[];
+  rows: string[][];
+} | null {
+  const pipeLines = bodyLines.filter((l) => l.includes("|") && !/^url\s*\|/i.test(l));
+  if (pipeLines.length < 2) return null;
+
+  const title =
+    bodyLines.find(
+      (l) =>
+        !l.includes("|") &&
+        !hasFillGap(l) &&
+        l.trim().length > 0 &&
+        l.trim().length < 72 &&
+        !/^(Complete the|Choose\s|Write )/i.test(l),
+    ) ?? null;
+
+  const parsed = pipeLines.map((l) => splitPipeTableRow(l));
+  const colCount = Math.max(...parsed.map((r) => r.length));
+  if (colCount < 2) return null;
+
+  const normalized = parsed.map((r) => {
+    const cells = [...r];
+    while (cells.length < colCount) cells.push("");
+    return cells.slice(0, colCount);
+  });
+
+  const first = normalized[0]!;
+  if (looksLikeTableHeaderRow(first)) {
+    return { title, headers: first, rows: normalized.slice(1) };
+  }
+  return { title, headers: [], rows: normalized };
+}
+
+function renderTableCellHtml(cell: string): { html: string; nums: number[] } {
+  const lines = cell
+    .split(/\s*\|\|\s*/)
+    .map((s) => s.trim())
+    .filter((s) => s.length > 0);
+  if (lines.length === 0) return { html: "&nbsp;", nums: [] };
+  const allNums: number[] = [];
+  const parts = lines.map((line) => {
+    const { html, nums } = renderGapText(line);
+    allNums.push(...nums);
+    return html;
+  });
+  return { html: parts.join("<br>"), nums: allNums };
+}
+
+function renderTableFill(section: ExamQuestionSection): { html: string; nums: number[] } {
+  const table = parsePipeTable(section.bodyLines);
+  if (!table) return renderNoteFill(section);
+
+  const allNums: number[] = [];
+  const isTableInstruction = (l: string) =>
+    /^(Complete the (table|notes)|Choose\s|Write your|Write the correct|In boxes)/i.test(l);
+  const instrOnly = section.instructionLines.filter((l) => isTableInstruction(l));
+  const title =
+    table.title ??
+    section.instructionLines.find((l) => !isTableInstruction(l) && !/^NB\b/i.test(l)) ??
+    null;
+
+  const partRowspans = table.rows.map(() => 1);
+  const skipPart = table.rows.map(() => false);
+  for (let i = 0; i < table.rows.length; i++) {
+    const part = table.rows[i]?.[0]?.trim() ?? "";
+    if (!part || skipPart[i]) continue;
+    let span = 1;
+    for (let j = i + 1; j < table.rows.length; j++) {
+      if ((table.rows[j]?.[0]?.trim() ?? "").length > 0) break;
+      skipPart[j] = true;
+      span += 1;
+    }
+    partRowspans[i] = span;
+  }
+
+  const hasHeaders = table.headers.some((h) => h.trim().length > 0);
+  const headerHtml = hasHeaders
+    ? `<thead><tr>${table.headers
+        .map((h) => `<th class="exam-table-th">${h ? escHtml(h) : "&nbsp;"}</th>`)
+        .join("")}</tr></thead>`
+    : "";
+
+  const bodyHtml = table.rows
+    .map((row, rowIdx) => {
+      const cells: string[] = [];
+      for (let col = 0; col < row.length; col++) {
+        if (col === 0 && skipPart[rowIdx]) continue;
+        const cell = row[col] ?? "";
+        const { html, nums } = renderTableCellHtml(cell);
+        allNums.push(...nums);
+        if (col === 0) {
+          const rs = partRowspans[rowIdx] ?? 1;
+          const rsAttr = rs > 1 ? ` rowspan="${rs}"` : "";
+          cells.push(`<th class="exam-table-part"${rsAttr}>${html}</th>`);
+        } else {
+          cells.push(`<td class="exam-table-td">${html}</td>`);
+        }
+      }
+      return `<tr>${cells.join("")}</tr>`;
+    })
+    .join("");
+
+  const titleBlock = title ? `<p class="notes-title">${escHtml(title)}</p>` : "";
+  const headerSection: ExamQuestionSection = { ...section, instructionLines: instrOnly };
+  const tableClass = hasHeaders ? "exam-grid-table" : "exam-grid-table exam-grid-table--ruled";
+
+  return {
+    html: `${renderSectionHeader(headerSection)}<div class="exam-table-wrap">${titleBlock}<table class="${tableClass}">${headerHtml}<tbody>${bodyHtml}</tbody></table></div>`,
+    nums: allNums.length > 0 ? allNums : section.questionNums,
+  };
+}
+
 function renderChooseTwo(section: ExamQuestionSection): { html: string; nums: number[] } {
   const nums = section.questionNums;
   const optHtml = mcqOptionTags(section.options);
@@ -476,6 +626,8 @@ function renderQuestionSection(section: ExamQuestionSection): { html: string; nu
       return renderSummaryFill(section);
     case "note-fill":
       return renderNoteFill(section);
+    case "table-fill":
+      return renderTableFill(section);
     case "choose-two":
       return renderChooseTwo(section);
     case "mcq-single":
@@ -510,7 +662,11 @@ export function buildReadingExamPayload(
   }
 
   const sectionNums = sections.flatMap((section) => section.questionNums);
-  const questionNums = [...new Set([...allNums, ...sectionNums])].sort((a, b) => a - b);
+  // Prefer section titles/statements/gaps — do not merge bare-gap false positives
+  // (e.g. "up to 30 metres" → Q30) from render into the exam key set.
+  const questionNums = [
+    ...new Set(sectionNums.length > 0 ? sectionNums : allNums),
+  ].sort((a, b) => a - b);
   const minQ = questionNums[0] ?? 1;
   const maxQ = questionNums[questionNums.length - 1] ?? minQ;
 

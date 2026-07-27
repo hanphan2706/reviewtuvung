@@ -17,6 +17,7 @@ export type ExamSectionKind =
   | "sentence-ending"
   | "summary-fill"
   | "note-fill"
+  | "table-fill"
   | "mcq-single"
   | "choose-two"
   | "tfng";
@@ -84,24 +85,36 @@ function soloOptionLetter(line: string): string | null {
 
 function detectSectionKind(chunk: string): ExamSectionKind {
   if (/Choose\s+TWO\s+(letters|correct\s+answers)/i.test(chunk)) return "choose-two";
-  if (/Match each statement with the correct (person|expert)/i.test(chunk)) return "people-match";
+  // Matching people / researchers / companies / ideas (not sentence endings).
+  if (
+    /Match each (statement|person|research finding|idea) with the correct (person|expert|researcher|company|idea)/i.test(
+      chunk,
+    )
+  ) {
+    return "people-match";
+  }
+  if (/Look at the following (ideas|statements|findings)/i.test(chunk) && /list of researchers/i.test(chunk)) {
+    return "people-match";
+  }
   // Matching sentence halves (NOT the gap-fill "Complete the sentences below").
   if (/Complete each sentence with the correct ending/i.test(chunk)) return "sentence-ending";
   if (/Which (paragraph|section) contains the following information/i.test(chunk)) return "paragraph-match";
   if (/Choose the correct heading/i.test(chunk)) return "paragraph-match";
   if (/Complete the summary below/i.test(chunk)) return "summary-fill";
   if (/Complete the summary using/i.test(chunk)) return "summary-fill";
+  if (/Complete the table below/i.test(chunk)) return "table-fill";
   if (/Complete the notes below/i.test(chunk)) return "note-fill";
   if (/Complete the sentences below/i.test(chunk)) return "note-fill";
-  if (/Complete the table below/i.test(chunk)) return "note-fill";
   if (/Complete the flow-?chart below/i.test(chunk)) return "note-fill";
   if (/Label the diagrams?/i.test(chunk)) return "note-fill";
   if (/Answer the questions below/i.test(chunk)) return "note-fill";
   if (/Choose the correct answer/i.test(chunk)) return "mcq-single";
   if (/Choose the correct letter,\s*A,\s*B,\s*C or D/i.test(chunk)) return "mcq-single";
   if (/Choose the correct answer,\s*A,\s*B,\s*C or D/i.test(chunk)) return "mcq-single";
+  // Cambridge OCR sometimes drops "Choose" and only keeps "Write the correct letter..."
+  if (/Write the correct letter,\s*A,\s*B,\s*C or D/i.test(chunk)) return "mcq-single";
   if (
-    /Do the following statements agree/i.test(chunk) &&
+    (/Do the following statements agree/i.test(chunk) || /if the statement agrees/i.test(chunk)) &&
     (/\bTRUE\b/i.test(chunk) || /\bYES\b/i.test(chunk)) &&
     /NOT\s+GIVEN/i.test(chunk)
   ) {
@@ -117,7 +130,25 @@ function isSkippableLine(line: string): boolean {
 function parseOptionLine(line: string): McqOption | null {
   const m = line.match(/^([A-J])\s+(.+)$/i);
   if (!m?.[1] || !m[2]) return null;
+  // Reject run-on OCR lines that still contain another option letter mid-text.
+  if (/\s[A-J]\s{2,}\S/.test(m[2]) || /\s[A-J]\t/.test(m[2])) return null;
   return { letter: m[1].toUpperCase(), text: m[2].trim() };
+}
+
+/** Split Cambridge OCR options jammed on one line via U+2028 / U+2029 / multi-space letter breaks. */
+function expandOptionSourceLines(line: string): string[] {
+  const normalized = line.replace(/\u00a0/g, " ");
+  const bySep = normalized
+    .split(/[\u2028\u2029]+/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+  if (bySep.length > 1) return bySep;
+
+  const multi = parsePhraseBankOptionsFromLine(normalized);
+  if (multi.length > 1) {
+    return multi.map((o) => `${o.letter}  ${o.text}`);
+  }
+  return [normalized.trim()].filter(Boolean);
 }
 
 /**
@@ -177,8 +208,9 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
 
   const normalized = questionsText.replace(/\u00a0/g, " ").replace(/\r\n/g, "\n");
   const chunks = normalized
-    .split(/(?=^Questions?\s+\d+)/im)
-    .filter((c) => /^Questions?\s+\d+/i.test(c.trim()));
+    .split(/(?=^\s*Questions?\s+\d+)/im)
+    .map((c) => c.trim())
+    .filter((c) => /^Questions?\s+\d+/i.test(c));
 
   const sections: ExamQuestionSection[] = [];
 
@@ -205,13 +237,17 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
           instructionLines.push(line);
           continue;
         }
-        if (/^List of (people|experts|endings)/i.test(line)) continue;
+        if (/^List of (people|experts|endings|ideas|companies|researchers)/i.test(line)) continue;
 
-        const opt = parseOptionLine(line);
-        if (opt) {
-          options.push(opt);
-          continue;
+        let gotOpt = false;
+        for (const source of expandOptionSourceLines(line)) {
+          const opt = parseOptionLine(source);
+          if (opt) {
+            options.push(opt);
+            gotOpt = true;
+          }
         }
+        if (gotOpt) continue;
 
         const numbered = parseNumberedStatement(line);
         if (numbered) {
@@ -221,7 +257,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
 
         if (
           /^Look at the following/i.test(line) ||
-          /^Match each statement/i.test(line) ||
+          /^Match each (statement|person|research finding|idea)/i.test(line) ||
           /^Complete each sentence with the correct ending/i.test(line) ||
           /^Write the correct letter/i.test(line)
         ) {
@@ -407,7 +443,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
         continue;
       }
 
-      if (kind === "note-fill") {
+      if (kind === "note-fill" || kind === "table-fill") {
         if (
           /^Complete the (notes|sentences|table|flow-?chart)|^Complete each sentence|^Label the diagrams?|^Choose\s+(ONE|NO MORE|TWO)|^Answer the questions|^Write the correct letter/i.test(
             line,
@@ -425,7 +461,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
           phase = "body";
           continue;
         }
-        if (/^[•●○]|^●|^○/.test(line) || hasFillGap(line)) {
+        if (line.includes("|") || /^[•●○]|^●|^○/.test(line) || hasFillGap(line)) {
           bodyLines.push(line);
           phase = "body";
           continue;

@@ -1,0 +1,88 @@
+import type { PassageVocabItem } from "@/lib/reading/passage-vocabulary";
+
+export const CAMBRIDGE_13_VOCABULARY: Record<string, PassageVocabItem[]> = {
+  "cam13-test1-p1": [
+    { term: "destination", definitionVi: "điểm đến du lịch", level: "B1-B2" },
+    { term: "itinerary", definitionVi: "lịch trình chuyến đi", level: "B1-B2" },
+    { term: "gateway", definitionVi: "cổng vào / điểm truy cập tập trung", level: "B1-B2" },
+    { term: "customised", definitionVi: "được tùy chỉnh theo nhu cầu", level: "B1-B2" },
+    { term: "exhilarating", definitionVi: "kích thích, đầy hứng khởi", level: "C1" },
+  ],
+  "cam13-test1-p2": [
+    { term: "apathy", definitionVi: "thờ ơ, thiếu hứng thú", level: "B1-B2" },
+    { term: "frustration", definitionVi: "sự thất vọng, bực bội", level: "B1-B2" },
+    { term: "arousal", definitionVi: "mức kích thích (cảm xúc/thể chất)", level: "B1-B2" },
+    { term: "proneness", definitionVi: "xu hướng dễ mắc phải", level: "B1-B2" },
+    { term: "fester", definitionVi: "lan rộng và trở nên độc hại (cảm xúc tiêu cực)", level: "C1" },
+  ],
+  "cam13-test1-p3": [
+    { term: "sophisticated", definitionVi: "tinh vi, phức tạp", level: "B1-B2" },
+    { term: "enraptured", definitionVi: "say mê, mê mẩn", level: "B1-B2" },
+    { term: "glitch", definitionVi: "lỗi kỹ thuật nhỏ bất ngờ", level: "B1-B2" },
+    { term: "prejudice", definitionVi: "định kiến", level: "B1-B2" },
+    { term: "computational", definitionVi: "thuộc tính toán / xử lý bằng máy tính", level: "C1" },
+  ],
+  "cam13-test2-p1": [
+    { term: "fragrant", definitionVi: "thơm, có mùi hương", level: "B1-B2" },
+    { term: "condiment", definitionVi: "gia vị", level: "B1-B2" },
+    { term: "monopoly", definitionVi: "sự độc quyền", level: "B1-B2" },
+    { term: "exorbitantly", definitionVi: "quá mức, cực kỳ cao (về giá)", level: "B1-B2" },
+    { term: "pliable", definitionVi: "dẻo, dễ uốn (vỏ cây)", level: "C1" },
+  ],
+  "cam13-test2-p2": [
+    { term: "hormone", definitionVi: "hoóc-môn", level: "B1-B2" },
+    { term: "empathetic", definitionVi: "đồng cảm", level: "B1-B2" },
+    { term: "placebo", definitionVi: "thuốc giả (nhóm đối chứng)", level: "B1-B2" },
+    { term: "favouritism", definitionVi: "sự thiên vị", level: "B1-B2" },
+    { term: "attuned", definitionVi: "nhạy bén / hòa hợp với (môi trường xã hội)", level: "C1" },
+  ],
+  "cam13-test2-p3": [
+    { term: "aspiration", definitionVi: "khát vọng, nguyện vọng", level: "B1-B2" },
+    { term: "recession", definitionVi: "suy thoái kinh tế", level: "B1-B2" },
+    { term: "augment", definitionVi: "bổ sung, tăng cường", level: "B1-B2" },
+    { term: "transcend", definitionVi: "vượt qua, vượt lên trên", level: "B1-B2" },
+    { term: "peripheral", definitionVi: "ngoại vi, không thuộc trọng tâm", level: "C1" },
+  ],
+  "cam13-test3-p1": [
+    { term: "exotic", definitionVi: "kỳ lạ, ngoại lai", level: "B1-B2" },
+    { term: "fibrous", definitionVi: "có sợi xơ", level: "B1-B2" },
+    { term: "germinate", definitionVi: "nảy mầm", level: "B1-B2" },
+    { term: "endosperm", definitionVi: "nhân bắp (phần dinh dưỡng trong hạt)", level: "B1-B2" },
+    { term: "colonizers", definitionVi: "loài phân tán và chiếm vùng mới", level: "C1" },
+  ],
+  "cam13-test3-p2": [
+    { term: "repetitious", definitionVi: "lặp đi lặp lại", level: "B1-B2" },
+    { term: "bilingual", definitionVi: "song ngữ", level: "B1-B2" },
+    { term: "babble", definitionVi: "bập bẹ", level: "B1-B2" },
+    { term: "vocabulary", definitionVi: "vốn từ vựng", level: "B1-B2" },
+    { term: "fundamental frequency", definitionVi: "tần số cơ bản (cao độ giọng nói)", level: "C1" },
+  ],
+  "cam13-test3-p3": [
+    { term: "flourishing", definitionVi: "thịnh vượng, phát triển mạnh", level: "B1-B2" },
+    { term: "abandonment", definitionVi: "sự bỏ hoang, từ bỏ", level: "B1-B2" },
+    { term: "monsoon", definitionVi: "gió mùa", level: "B1-B2" },
+    { term: "sediments", definitionVi: "trầm tích", level: "B1-B2" },
+    { term: "geochemical", definitionVi: "thuộc địa hóa học", level: "C1" },
+  ],
+  "cam13-test4-p1": [
+    { term: "clipper", definitionVi: "tàu buồm chở hàng tốc độ cao", level: "B1-B2" },
+    { term: "maiden voyage", definitionVi: "chuyến đi đầu tiên (của tàu)", level: "B1-B2" },
+    { term: "rudder", definitionVi: "bánh lái", level: "B1-B2" },
+    { term: "prestigious", definitionVi: "danh giá, uy tín", level: "B1-B2" },
+    { term: "figurehead", definitionVi: "tượng đầu tàu (trang trí mũi thuyền)", level: "C1" },
+  ],
+  "cam13-test4-p2": [
+    { term: "degradation", definitionVi: "suy thoái, xấu đi", level: "B1-B2" },
+    { term: "microorganisms", definitionVi: "vi sinh vật", level: "B1-B2" },
+    { term: "fertile", definitionVi: "màu mỡ (đất)", level: "B1-B2" },
+    { term: "indiscriminate", definitionVi: "bừa bãi, không phân biệt", level: "B1-B2" },
+    { term: "humus", definitionVi: "chất hữu cơ mùn trong đất", level: "C1" },
+  ],
+  "cam13-test4-p3": [
+    { term: "self-evident", definitionVi: "hiển nhiên, tự rõ", level: "B1-B2" },
+    { term: "oblivious", definitionVi: "không hay biết, thiếu nhận thức", level: "B1-B2" },
+    { term: "reductive", definitionVi: "mang tính rút gọn, đơn giản hóa quá mức", level: "B1-B2" },
+    { term: "maladies", definitionVi: "bệnh tật, chứng bệnh", level: "B1-B2" },
+    { term: "Panopticon", definitionVi: "nhà tù Panopticon (giám sát toàn diện)", level: "C1" },
+  ],
+};

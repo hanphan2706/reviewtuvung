@@ -12,6 +12,8 @@ function labelSection(sec: ExamQuestionSection): string {
       return "Summary completion";
     case "note-fill":
       return "Completion";
+    case "table-fill":
+      return "Table completion";
     case "choose-two":
       return "Multiple choice (choose two)";
     case "mcq-single":

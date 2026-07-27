@@ -1,0 +1,1669 @@
+{
+  "pilotId": "cam12-test2",
+  "schemaVersion": 4,
+  "note": "Cam 12 R T2 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The risks agriculture faces in developing countries",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "The Lost City",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "The Benefits of Being Bilingual",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "Two things distinguish food production from all other productive activities: first, every single person needs food each day and has a right to it; and second, it is hugely dependent on nature."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới đặc điểm chỉ riêng ngành sản xuất thực phẩm mới có. Đề viết: “a reference to characteristics that only apply to food production”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nêu đặc điểm riêng biệt, chỉ ngành thực phẩm mới có.",
+              "p": "Đoạn A: “Two things distinguish food production from all other productive activities” — hai điều làm sản xuất thực phẩm khác biệt với mọi ngành khác: ai cũng cần thực phẩm mỗi ngày và có quyền được ăn, và nó phụ thuộc rất nhiều vào tự nhiên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "characteristics that only apply to food production",
+              "p": "Two things distinguish food production from all other productive activities"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "smallholder farmers in developing countries must in addition deal with adverse environments, both natural, in terms of soil quality, rainfall, etc., and human, in terms of infrastructure, financial systems, markets, knowledge and technology."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới khó khăn chỉ nông dân ở một số nơi trên thế giới mới gặp. Đề viết: “a reference to challenges faced only by farmers in certain parts of the world”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói tới khó khăn riêng của nông dân một số vùng nhất định, không phải nông dân khắp nơi.",
+              "p": "Đoạn B: mọi nông dân đều gặp rủi ro chung, nhưng “smallholder farmers in developing countries must in addition deal with adverse environments” — nông dân quy mô nhỏ ở các nước đang phát triển còn phải đối mặt thêm với môi trường bất lợi cả tự nhiên lẫn con người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "challenges faced only by farmers in certain parts of the world",
+              "p": "smallholder farmers in developing countries must in addition deal with adverse environments"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "H",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "collective action does not come as a free good. It takes time, effort and money to organise, build trust and to experiment."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới khó khăn khi xây dựng sự hợp tác giữa các nông dân. Đề viết: “a reference to difficulties in bringing about co-operation between farmers”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nêu trở ngại khi tổ chức hợp tác giữa nông dân.",
+              "p": "Đoạn H: Giel Ton cảnh báo “collective action does not come as a free good. It takes time, effort and money to organise, build trust and to experiment” — hành động tập thể không hề miễn phí, cần thời gian, công sức, tiền bạc để tổ chức và xây dựng lòng tin."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "difficulties in bringing about co-operation between farmers",
+              "p": "collective action does not come as a free good. It takes time, effort and money to organise, build trust"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "these ‘have not compensated for the stranglehold exercised by private traders. In fact, studies show that sixty percent of beneficiaries of subsidies are not poor, but rich landowners and non-farmer traders.’"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng trợ cấp của chính phủ không phải lúc nào cũng đến tay những nông dân cần nó nhất:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Financial assistance from the government does not always go to the farmers who most need it.”",
+              "p": "Bài viết: Rokeya Kabir nhận xét trợ cấp “have not compensated for the stranglehold exercised by private traders”, và “sixty percent of beneficiaries of subsidies are not poor, but rich landowners and non-farmer traders” — 60% người hưởng trợ cấp không phải người nghèo mà là địa chủ giàu và thương nhân không làm nông."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "does not always go to the farmers who most need it",
+              "p": "sixty percent of beneficiaries of subsidies are not poor, but rich landowners and non-farmer traders"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhận định này là của Rokeya Kabir (đoạn E)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "collective action offers an important way for farmers to strengthen their political and economic bargaining power, and to reduce their business risks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng nông dân có thể hưởng lợi khi hợp tác thành nhóm:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Farmers can benefit from collaborating as a group.”",
+              "p": "Bài viết: theo Murphy, “collective action offers an important way for farmers to strengthen their political and economic bargaining power, and to reduce their business risks” — hành động tập thể giúp nông dân tăng vị thế đàm phán và giảm rủi ro kinh doanh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "benefit from collaborating as a group",
+              "p": "collective action offers an important way for farmers to strengthen their ... bargaining power, and to reduce their business risks"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ý này thuộc về Sophia Murphy (đoạn H)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "held up social safety nets and public welfare programmes in Ethiopia, Brazil and Mexico as valuable ways to address poverty among farming families and reduce their vulnerability to agriculture shocks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng hỗ trợ tài chính từ chính phủ có thể cải thiện mức sống của nông dân:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Financial assistance from the government can improve the standard of living of farmers.”",
+              "p": "Bài viết: Shenggen Fan xem “social safety nets and public welfare programmes” ở Ethiopia, Brazil, Mexico là cách hữu ích để “address poverty among farming families and reduce their vulnerability” — giảm nghèo và giảm rủi ro cho gia đình nông dân."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "improve the standard of living of farmers",
+              "p": "valuable ways to address poverty among farming families and reduce their vulnerability to agriculture shocks"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây là quan điểm của Shenggen Fan (đoạn E)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "community-supported agriculture, where consumers invest in local farmers by subscription and guarantee producers a fair price, is a risk-sharing model worth more attention."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng nông dân có thể được giúp đỡ nếu chính những người mua hàng của họ cũng góp vốn tài chính:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Farmers may be helped if there is financial input by the same individuals who buy from them.”",
+              "p": "Bài viết: Sonali Bisht nói tới “community-supported agriculture, where consumers invest in local farmers by subscription and guarantee producers a fair price” — người tiêu dùng góp vốn theo hình thức thuê bao và đảm bảo giá công bằng, tức người mua cũng là người đầu tư."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "financial input by the same individuals who buy from them",
+              "p": "consumers invest in local farmers by subscription and guarantee producers a fair price"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mô hình community-supported agriculture này là đề xuất của Sonali Bisht (đoạn I)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "the procurement and holding of stocks by governments can also help mitigate wild swings in food prices by alleviating uncertainties about market supply."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng chính phủ có thể giúp giảm biến động giá cả:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Governments can help to reduce variation in prices.”",
+              "p": "Bài viết: Sophia Murphy cho rằng “the procurement and holding of stocks by governments can also help mitigate wild swings in food prices” — chính phủ thu mua và dự trữ có thể giảm biến động giá mạnh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reduce variation in prices",
+              "p": "help mitigate wild swings in food prices by alleviating uncertainties about market supply"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây là ý của Sophia Murphy (đoạn D)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "governments can significantly reduce risks for farmers by providing basic services like roads to get produce more efficiently to markets, or water and food storage facilities to reduce losses."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng cải thiện cơ sở hạ tầng có thể tác động lớn tới rủi ro của nông dân:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Improvements to infrastructure can have a major impact on risk for farmers.”",
+              "p": "Bài viết: Kanayo F. Nwanze cho rằng chính phủ “can significantly reduce risks for farmers by providing basic services like roads ... or water and food storage facilities” — xây đường sá, kho chứa giúp giảm đáng kể rủi ro."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "improvements to infrastructure can have a major impact on risk",
+              "p": "significantly reduce risks for farmers by providing basic services like roads ... water and food storage facilities"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây là quan điểm của Kanayo F. Nwanze (đoạn D)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "choose-two",
+      "answer": "D",
+      "answerPair": [
+        10,
+        11
+      ],
+      "correctLetters": [
+        "D",
+        "E"
+      ],
+      "evidence": {
+        "quoteEn": "The growing unpredictability of weather patterns increases farmers’ difficulty in managing weather-related risks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai vấn đề được nhắc tới, ảnh hưởng tới nông dân có trang trại nhỏ ở các nước đang phát triển:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý D: hậu quả từ sự thay đổi thất thường của thời tiết (“the effects of changing weather patterns”).",
+              "p": "Đoạn G: biến đổi khí hậu “increases the magnitude and frequency of extreme weather events, which increase smallholder vulnerability”, và “the growing unpredictability of weather patterns increases farmers’ difficulty in managing weather-related risks”."
+            },
+            {
+              "q": "Ý E: phải bán sản phẩm qua thương lái trung gian (“having to sell their goods to intermediary buyers”).",
+              "p": "Đoạn I: “market price volatility is often worsened by the presence of intermediary purchasers who, taking advantage of farmers’ vulnerability, dictate prices” — thương lái trung gian lợi dụng sự yếu thế của nông dân để áp đặt giá."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the effects of changing weather patterns",
+              "p": "the growing unpredictability of weather patterns increases farmers’ difficulty in managing weather-related risks"
+            },
+            {
+              "q": "having to sell their goods to intermediary buyers",
+              "p": "the presence of intermediary purchasers who ... dictate prices"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả D và E đều có bằng chứng rõ trong bài (đoạn G và đoạn I)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D và E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói tới việc thiếu nhu cầu tiêu thụ nông sản nội địa — vấn đề nằm ở nguồn cung và giá cả, không phải nhu cầu."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài chỉ nói chung tới chất lượng đất, lượng mưa (môi trường tự nhiên), không nhắc cụ thể tới việc thiếu chương trình tưới tiêu."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bảo hiểm tư nhân được nêu như một công cụ có thể giúp ích (đoạn F), không phải một vấn đề nông dân đang gặp phải."
+            }
+          ]
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "choose-two",
+      "answer": "E",
+      "answerPair": [
+        10,
+        11
+      ],
+      "correctLetters": [
+        "D",
+        "E"
+      ],
+      "evidence": {
+        "quoteEn": "market price volatility is often worsened by the presence of intermediary purchasers who, taking advantage of farmers’ vulnerability, dictate prices."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 10–11 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý E: phải bán hàng qua thương lái trung gian.",
+              "p": "Đoạn I: “the presence of intermediary purchasers who, taking advantage of farmers’ vulnerability, dictate prices” — thương lái trung gian áp đặt giá, gây bất lợi cho nông dân."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "having to sell their goods to intermediary buyers",
+              "p": "the presence of intermediary purchasers who ... dictate prices"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý E; đi cùng D trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần loại đáp án ở câu 10."
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "choose-two",
+      "answer": "C",
+      "answerPair": [
+        12,
+        13
+      ],
+      "correctLetters": [
+        "C",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "all stakeholders, including business, government, scientists and civil society, must work together, starting at the beginning of the value chain."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn hai hành động được đề xuất để cải thiện điều kiện cho nông dân:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý C: tổ chức sự hợp tác giữa nhiều bên liên quan khác nhau (“organising co-operation between a wide range of interested parties”).",
+              "p": "Đoạn H: Marcel Vernooij và Marcel Beukeboom đề xuất “all stakeholders, including business, government, scientists and civil society, must work together, starting at the beginning of the value chain”."
+            },
+            {
+              "q": "Ý D: khuyến khích người tiêu dùng góp vốn tài chính vào nông nghiệp (“encouraging consumers to take a financial stake in farming”).",
+              "p": "Đoạn I: mô hình community-supported agriculture, nơi “consumers invest in local farmers by subscription and guarantee producers a fair price”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "organising co-operation between a wide range of interested parties",
+              "p": "all stakeholders, including business, government, scientists and civil society, must work together"
+            },
+            {
+              "q": "encouraging consumers to take a financial stake in farming",
+              "p": "consumers invest in local farmers by subscription"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả C và D đều được bài xác nhận rõ (đoạn H và đoạn I)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C và D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài đề xuất chính phủ thu mua và giữ dự trữ (tăng kho), không phải giảm quy mô dự trữ lương thực."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài không đề xuất tìm cách đẩy giá lên vào những thời điểm nhất định — mục tiêu là ổn định giá và minh bạch thị trường."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Bài chỉ nói cần minh bạch hơn về nguồn cung/dự trữ (đoạn F), không nói cụ thể việc giải thích lý do giá thay đổi cho khách hàng."
+            }
+          ]
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "choose-two",
+      "answer": "D",
+      "answerPair": [
+        12,
+        13
+      ],
+      "correctLetters": [
+        "C",
+        "D"
+      ],
+      "evidence": {
+        "quoteEn": "community-supported agriculture, where consumers invest in local farmers by subscription and guarantee producers a fair price, is a risk-sharing model worth more attention."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cùng cụm câu 12–13 — ý còn lại trong hai đáp án đúng:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý D: khuyến khích người tiêu dùng góp vốn tài chính vào nông nghiệp.",
+              "p": "Đoạn I: “consumers invest in local farmers by subscription and guarantee producers a fair price” — mô hình community-supported agriculture giúp chia sẻ rủi ro."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "encouraging consumers to take a financial stake in farming",
+              "p": "consumers invest in local farmers by subscription and guarantee producers a fair price"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp ý D; đi cùng C trong cùng cặp chọn hai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần loại đáp án ở câu 12."
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "iv",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "His goal was to locate the remains of a city called Vitcos, the last capital of the Inca civilisation."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A đang nói về điều gì? Cần tìm heading kiểu: mục đích của chuyến đi."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iv: “The aim of the trip”",
+              "p": "Đoạn A: Bingham chuẩn bị cho “the exploration of the remote hinterland to the west of Cusco”, với mục tiêu rõ ràng là “locate the remains of a city called Vitcos, the last capital of the Inca civilisation” — xác định rõ mục đích chuyến đi ngay từ đầu."
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iv"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "a track had recently been blasted down the valley canyon to enable rubber to be brought up by mules from the jungle."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B đang nói về điều gì? Cần tìm heading kiểu: một tuyến đường mới."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vi: “A new route”",
+              "p": "Đoạn B: nhóm Bingham có lợi thế nhờ “a track had recently been blasted down the valley canyon” — một con đường mới vừa được mở, khác với tuyến mà hầu hết người đi trước từng dùng (rời sông ở Ollantaytambo, băng qua đèo cao)."
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "viii",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "he made the ascent without having the least expectation that he would find anything at the top."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C đang nói về điều gì? Cần tìm heading kiểu: sự thiếu hào hứng của Bingham."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading viii: “Bingham’s lack of enthusiasm”",
+              "p": "Đoạn C: bạn đồng hành “showed no interest” đi xem di tích, còn Bingham “also seems to have been less than keen”, và tự nhận mình leo núi “without having the least expectation that he would find anything at the top” — không hề háo hức hay kỳ vọng gì."
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "viii"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "v",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "‘It seemed like an unbelievable dream … the sight held me spellbound …’ he wrote."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D đang nói về điều gì? Cần tìm heading kiểu: một đoạn miêu tả đầy kịch tính."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading v: “A dramatic description”",
+              "p": "Đoạn D: Bingham “writes about the approach in vivid style”, kể lại cảm giác hồi hộp qua từng bậc thang, ngôi mộ, và thốt lên “It seemed like an unbelievable dream … the sight held me spellbound …” — lối kể đầy kịch tính, cảm xúc."
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "v"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "We should remember, however, that Lost City of the Incas is a work of hindsight, not written until 1948 ... His journal entries of the time reveal a much more gradual appreciation of his achievement."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E đang nói về điều gì? Cần tìm heading kiểu: hai lối kể khác nhau về cùng một chuyến đi."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading i: “Different accounts of the same journey”",
+              "p": "Đoạn E: cuốn sách viết năm 1948 mô tả đầy cảm xúc, nhưng “his journal entries of the time reveal a much more gradual appreciation of his achievement” — nhật ký lúc đó lại kể một câu chuyện khác, chừng mực hơn nhiều."
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "i"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "When he came to write the National Geographic magazine article that broke the story to the world in April 1913, he knew he had to produce a big idea."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F đang nói về điều gì? Cần tìm heading kiểu: Bingham công bố giả thuyết của mình."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vii: “Bingham publishes his theory”",
+              "p": "Đoạn F: trong bài viết trên National Geographic năm 1913, Bingham đưa ra giả thuyết Machu Picchu vừa là nơi sinh của Manco vĩ đại, vừa là “the last city of the Incas” — công bố lý thuyết của mình ra thế giới, dù sau này được chứng minh là sai."
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vii"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "An idea which has gained wide acceptance over the past few years is that Machu Picchu was a moya, a country estate built by an Inca emperor to escape the cold winters of Cusco."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn G đang nói về điều gì? Cần tìm heading kiểu: một niềm tin phổ biến."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iii: “A common belief”",
+              "p": "Đoạn G: “an idea which has gained wide acceptance over the past few years is that Machu Picchu was a moya” — một quan điểm được nhiều người chấp nhận rộng rãi hiện nay."
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iii"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "His goal was to locate the remains of a city called Vitcos, the last capital of the Inca civilisation."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói Bingham tới Nam Mỹ để tìm kiếm một thành phố của người Inca — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo “went to South America in search of an Inca city”.",
+              "p": "Bài viết: mục tiêu của Bingham là “locate the remains of a city called Vitcos, the last capital of the Inca civilisation” — đúng là đi tìm một thành phố Inca."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mục đích chuyến đi khớp hoàn toàn với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Almost all previous travelers had left the river at Ollantaytambo and taken a high pass across the mountains to rejoin the river lower down."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói Bingham chọn tuyến đường xuống thung lũng Urubamba vì đó là tuyến phổ biến nhất — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo “chose ... because it was the most common route used by travellers”.",
+              "p": "Bài viết ngược lại: “almost all previous travelers had left the river at Ollantaytambo and taken a high pass” — hầu hết người đi trước chọn tuyến khác (đường đèo), còn Bingham đi theo con đường mới vừa mở dọc thung lũng, đây là lợi thế riêng chứ không phải tuyến phổ biến."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Con đường Bingham đi là tuyến mới, khác với tuyến quen thuộc mà đa số người trước đó sử dụng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "At this stage, Bingham didn’t realise the extent or the importance of the site, nor did he realise what use he could make of the discovery."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói Bingham hiểu ngay được tầm quan trọng của Machu Picchu ngay khi vừa nhìn thấy — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo “understood the significance ... as soon as he saw it”.",
+              "p": "Bài viết: “at this stage, Bingham didn’t realise the extent or the importance of the site” — lúc đó ông chưa hề nhận ra tầm quan trọng của khám phá này."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định rõ ông chưa hiểu ngay tầm quan trọng — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Bingham made desperate attempts to prove this belief for nearly 40 years."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói Bingham quay lại Machu Picchu để tìm bằng chứng ủng hộ giả thuyết của mình — bài có xác nhận không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề bảo “returned to Machu Picchu in order to find evidence to support his theory”.",
+              "p": "Bài chỉ nói ông “made desperate attempts to prove this belief for nearly 40 years” — cố gắng chứng minh giả thuyết trong gần 40 năm, nhưng không nói rõ ông có quay lại chính Machu Picchu để tìm bằng chứng hay không."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "returned to Machu Picchu in order to find evidence",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không đề cập việc ông có quay lại địa điểm này hay tìm bằng chứng ở đâu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "rubber",
+      "evidence": {
+        "quoteEn": "a track had recently been blasted down the valley canyon to enable rubber to be brought up by mules from the jungle."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Con đường đưa Bingham xuống thung lũng Urubamba được làm ra để vận chuyển thứ gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “created for the transportation of ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “created for the transportation of ______”.",
+              "p": "Bài viết: con đường được mở “to enable rubber to be brought up by mules from the jungle” — để chở cao su từ rừng lên bằng la."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "created for the transportation of ______",
+              "p": "to enable rubber to be brought up by mules from the jungle"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thứ được vận chuyển là rubber (cao su)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "rubber"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "farmer",
+      "evidence": {
+        "quoteEn": "some ruins that a local farmer, Melchor Arteaga, had told them about the night before."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bingham biết tới di tích Machu Picchu qua lời kể của ai ở thung lũng Urubamba (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “found out about the ruins ... from a ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “found out about the ruins of Machu Picchu from a ______”.",
+              "p": "Bài viết: “some ruins that a local farmer, Melchor Arteaga, had told them about the night before” — một nông dân địa phương tên Melchor Arteaga đã kể cho họ nghe tối hôm trước."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "from a ______",
+              "p": "a local farmer, Melchor Arteaga, had told them about"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Người kể là một farmer (nông dân)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "farmer"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "eye movements",
+      "evidence": {
+        "quoteEn": "Some of the most compelling evidence for this phenomenon, called ‘language co-activation’, comes from studying eye movements."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong bảng: quan sát điều gì ở người song ngữ Nga-Anh khi được yêu cầu chọn đồ vật (không quá hai từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “observing the ______ of ...” cần một cụm danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “observing the ______ of Russian-English bilingual people”.",
+              "p": "Bài viết: “some of the most compelling evidence for this phenomenon ... comes from studying eye movements” — bằng chứng thuyết phục nhất đến từ việc quan sát chuyển động mắt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "observing the ______",
+              "p": "studying eye movements"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Điều được quan sát là eye movements (chuyển động mắt)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "eye movements"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "language co-activation",
+      "evidence": {
+        "quoteEn": "Some of the most compelling evidence for this phenomenon, called ‘language co-activation’, comes from studying eye movements."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong bảng: hiện tượng người song ngữ kích hoạt cả hai ngôn ngữ cùng lúc được gọi là gì (không quá hai từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a mechanism known as ______” cần một cụm danh từ/thuật ngữ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a mechanism known as ______”.",
+              "p": "Bài viết: “some of the most compelling evidence for this phenomenon, called ‘language co-activation’” — hiện tượng này được gọi là language co-activation."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a mechanism known as ______",
+              "p": "this phenomenon, called ‘language co-activation’"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tên gọi chính xác là language co-activation."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "language co-activation"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "Stroop Task",
+      "evidence": {
+        "quoteEn": "In the classic Stroop Task, people see a word and are asked to name the colour of the word’s font."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong bảng: bài kiểm tra tập trung vào việc gọi tên màu sắc có tên là gì (không quá hai từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a test called the ______” cần tên riêng của bài kiểm tra."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a test called the ______, focusing on naming colours”.",
+              "p": "Bài viết: “in the classic Stroop Task, people see a word and are asked to name the colour of the word’s font” — bài kiểm tra tên là Stroop Task."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a test called the ______",
+              "p": "the classic Stroop Task"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tên bài kiểm tra là Stroop Task."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Stroop Task"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "conflict management",
+      "evidence": {
+        "quoteEn": "bilingual people often perform better on tasks that require conflict management."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong bảng: người song ngữ xử lý tốt hơn các nhiệm vụ đòi hỏi kỹ năng gì (không quá hai từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “tasks involving a skill called ______” cần một cụm danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “more able to handle tasks involving a skill called ______”.",
+              "p": "Bài viết: “bilingual people often perform better on tasks that require conflict management” — người song ngữ làm tốt hơn ở các nhiệm vụ cần kỹ năng quản lý xung đột."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a skill called ______",
+              "p": "tasks that require conflict management"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Kỹ năng đó là conflict management (quản lý xung đột)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "conflict management"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "cognitive control",
+      "evidence": {
+        "quoteEn": "they do so more quickly than monolingual people, reflecting better cognitive control when having to make rapid changes of strategy."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong bảng: khi đổi chiến lược, người song ngữ có ưu thế gì vượt trội (không quá hai từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “have superior ______” cần một cụm danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “when changing strategies, bilingual people have superior ______”.",
+              "p": "Bài viết: chuyển đổi nhanh hơn, “reflecting better cognitive control when having to make rapid changes of strategy” — thể hiện khả năng kiểm soát nhận thức tốt hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "have superior ______",
+              "p": "reflecting better cognitive control when having to make rapid changes of strategy"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là cognitive control (khả năng kiểm soát nhận thức)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "cognitive control"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "In the past, such children were considered to be at a disadvantage compared with their monolingual peers. Over the past few decades, however, technological advances have allowed researchers to look more deeply at how bilingualism interacts with and changes the cognitive and neurological systems, thereby identifying several clear benefits of being bilingual."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói thái độ đối với việc song ngữ đã thay đổi trong những năm gần đây — bài có đồng ý không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Attitudes towards bilingualism have changed in recent years.”",
+              "p": "Bài viết: “in the past, such children were considered to be at a disadvantage”, nhưng “over the past few decades ... researchers ... identif[ied] several clear benefits of being bilingual” — quan điểm đã chuyển từ coi là bất lợi sang công nhận lợi ích rõ ràng."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài xác nhận rõ sự thay đổi trong nhận thức qua thời gian — khớp YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "When we hear a word, we don’t hear the entire word all at once: the sounds arrive in sequential order. Long before the word is finished, the brain’s language system begins to guess what that word might be."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói người song ngữ đoán đúng từ trước khi nghe hết tốt hơn người đơn ngữ — bài có đồng ý không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Bilingual people are better ... at guessing correctly what words are before they are finished.”",
+              "p": "Bài viết chỉ mô tả cách não bộ nói chung bắt đầu đoán từ trước khi nghe hết, và ở người song ngữ việc kích hoạt lan sang cả hai ngôn ngữ — bài không so sánh xem ai đoán đúng tốt hơn ai."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "better at guessing correctly what words are",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không đưa ra so sánh về độ chính xác khi đoán từ giữa hai nhóm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "knowing more than one language can cause speakers to name pictures more slowly, and can increase ‘tip-of-the-tongue states’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói người song ngữ luôn gọi tên hình ảnh nhanh hơn người đơn ngữ — bài có đồng ý không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Bilingual people consistently name images faster than monolingual people.”",
+              "p": "Bài viết ngược lại: “knowing more than one language can cause speakers to name pictures more slowly” — biết nhiều ngôn ngữ có thể khiến việc gọi tên hình ảnh chậm hơn."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định ngược lại — chậm hơn chứ không nhanh hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "When monolingual and bilingual adolescents listen to simple speech sounds without any intervening background noise, they show highly similar brain stem responses. When researchers play the same sound to both groups in the presence of background noise, however, the bilingual listeners’ neural response is considerably larger."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói não người song ngữ xử lý âm thanh đơn lẻ hiệu quả hơn người đơn ngữ trong mọi tình huống — bài có đồng ý không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “... process single sounds more efficiently ... in all situations.”",
+              "p": "Bài viết: khi không có tiếng ồn nền, hai nhóm “show highly similar brain stem responses” — phản ứng gần như giống nhau; chỉ khi “in the presence of background noise” phản ứng của người song ngữ mới lớn hơn — nghĩa là không phải trong mọi tình huống."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ưu thế chỉ xuất hiện khi có tiếng ồn nền, không phải ở mọi hoàn cảnh — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "bilingual patients reported showing initial symptoms of the disease an average of five years later than monolingual patients ... the bilinguals’ brains had more physical signs of disease than their monolingual counterparts, even though their outward behaviour and abilities were the same."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đề nói ít người song ngữ mắc bệnh não khi về già hơn người đơn ngữ — bài có đồng ý không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Fewer bilingual people ... suffer from brain disease in old age.”",
+              "p": "Bài viết chỉ nói người song ngữ mắc Alzheimer biểu hiện triệu chứng đầu tiên muộn hơn trung bình 5 năm, thậm chí não họ còn có “more physical signs of disease” — bài không so sánh về số lượng/tỷ lệ người mắc bệnh giữa hai nhóm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fewer bilingual people ... suffer from brain disease",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ nói về thời điểm xuất hiện triệu chứng và mức độ tổn thương não, không nói về tỷ lệ mắc bệnh."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "When researchers play the same sound to both groups in the presence of background noise, however, the bilingual listeners’ neural response is considerably larger, reflecting better encoding of the sound’s fundamental frequency."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn có ví dụ cho thấy não người song ngữ và đơn ngữ phản ứng khác nhau trước một dạng âm thanh không lời."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nêu ví dụ cụ thể về phản ứng não khác nhau với âm thanh phi ngôn ngữ.",
+              "p": "Đoạn D: khi nghe âm thanh đơn giản có tiếng ồn nền, “the bilingual listeners’ neural response is considerably larger” — phản ứng thần kinh của người song ngữ rõ rệt hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "brains respond differently to a certain type of non-verbal auditory input",
+              "p": "the bilingual listeners’ neural response is considerably larger"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "researchers taught seven-month-old babies growing up in monolingual or bilingual homes ... only the bilingual babies were able to successfully learn the new rule."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn minh họa lợi ích của việc lớn lên song ngữ ngay cả trước khi biết nói."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về lợi ích ở trẻ sơ sinh, trước tuổi biết nói.",
+              "p": "Đoạn G: thí nghiệm với trẻ 7 tháng tuổi cho thấy “only the bilingual babies were able to successfully learn the new rule” — chỉ trẻ trong môi trường song ngữ mới học được quy tắc mới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "benefits even before we learn to speak",
+              "p": "seven-month-old babies ... only the bilingual babies were able to successfully learn the new rule"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "When we hear a word, we don’t hear the entire word all at once: the sounds arrive in sequential order. Long before the word is finished, the brain’s language system begins to guess what that word might be."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn mô tả quá trình con người nhận diện từ mà họ nghe được."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn mô tả cơ chế nhận diện từ khi nghe.",
+              "p": "Đoạn B: “we don’t hear the entire word all at once ... long before the word is finished, the brain’s language system begins to guess what that word might be” — mô tả chi tiết quá trình não đoán từ ngay khi đang nghe."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the process by which people identify words that they hear",
+              "p": "the sounds arrive in sequential order ... the brain’s language system begins to guess what that word might be"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "knowing more than one language can cause speakers to name pictures more slowly, and can increase ‘tip-of-the-tongue states’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới một số hệ quả tiêu cực của việc song ngữ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nêu bất lợi của song ngữ.",
+              "p": "Đoạn C: “knowing more than one language can cause speakers to name pictures more slowly, and can increase ‘tip-of-the-tongue states’” — song ngữ có thể khiến gọi tên chậm hơn và hay bị “treo đầu lưỡi”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "negative consequences of being bilingual",
+              "p": "can cause speakers to name pictures more slowly, and can increase ‘tip-of-the-tongue states’"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    }
+  }
+}

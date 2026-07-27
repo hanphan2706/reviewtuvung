@@ -1,0 +1,1737 @@
+{
+  "pilotId": "cam13-test3",
+  "schemaVersion": 4,
+  "note": "Cam 13 R T3 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The coconut palm",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "How baby talk gives infant brains a boost",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Whatever happened to the Harappan Civilisation?",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "furniture",
+      "evidence": {
+        "quoteEn": "This is an important source of timber for building houses, and is increasingly being used as a replacement for endangered hardwoods in the furniture construction industry."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong bảng, mục ‘trunk’ (thân cây) nói thân cây dùng làm gỗ xây nhà và làm ra vật gì nữa?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘the making of ______’ cần một danh từ chỉ đồ vật được làm ra."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘timber for houses and the making of ______’",
+              "p": "Bài viết: thân cây ‘is increasingly being used as a replacement for endangered hardwoods in the furniture construction industry’ — ngày càng được dùng thay gỗ quý hiếm trong ngành sản xuất đồ nội thất (furniture)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the making of ______",
+              "p": "the furniture construction industry"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là furniture."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "furniture"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "sugar",
+      "evidence": {
+        "quoteEn": "The flower stems may be tapped for their sap to produce a drink, and the sap can also be reduced by boiling to produce a type of sugar used for cooking."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhựa (sap) từ cuống hoa dùng làm đồ uống hoặc tạo ra nguồn gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘a source of ______’ cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘used as a drink or a source of ______’",
+              "p": "Bài viết: nhựa cây đun sôi tạo ra ‘a type of sugar used for cooking’ — một loại đường (sugar) dùng để nấu ăn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a source of ______",
+              "p": "a type of sugar used for cooking"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là sugar."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "sugar"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "ropes",
+      "evidence": {
+        "quoteEn": "The thick fibrous middle layer produces coconut fibre, ‘coir’, which has numerous uses and is particularly important in manufacturing ropes."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Lớp xơ giữa của quả dừa (coir) đặc biệt quan trọng trong việc sản xuất cái gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘used for ______’ cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘used for ______’",
+              "p": "Bài viết: coir ‘is particularly important in manufacturing ropes’ — quan trọng trong việc sản xuất dây thừng (ropes)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "used for ______",
+              "p": "important in manufacturing ropes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là ropes."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ropes"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "charcoal",
+      "evidence": {
+        "quoteEn": "An important product obtained from the shell is charcoal, which is widely used in various industries as well as in the home as a cooking fuel."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Lớp vỏ trong cùng (shell) là nguồn cung cấp sản phẩm quan trọng nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘a source of ______’ cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘a source of ______’",
+              "p": "Bài viết: ‘An important product obtained from the shell is charcoal’ — sản phẩm quan trọng lấy từ vỏ là than củi (charcoal)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a source of ______",
+              "p": "an important product obtained from the shell"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là charcoal."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "charcoal"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "bowls",
+      "evidence": {
+        "quoteEn": "When broken in half, the shells are also used as bowls in many parts of Asia."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi bổ đôi, vỏ dừa còn được dùng làm vật gì ở nhiều nơi tại châu Á?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘for ______’ cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘(when halved) for ______’",
+              "p": "Bài viết: ‘the shells are also used as bowls in many parts of Asia’ — vỏ được dùng làm bát (bowls)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "for ______",
+              "p": "used as bowls"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là bowls."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "bowls"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "hormones",
+      "evidence": {
+        "quoteEn": "Initially, the endosperm is a sweetish liquid, coconut water, which is enjoyed as a drink, but also provides the hormones which encourage other plants to grow more rapidly and produce higher yields."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nước dừa còn cung cấp chất gì giúp các cây khác phát triển nhanh hơn?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘a source of ______ for other plants’ cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘a source of ______ for other plants’",
+              "p": "Bài viết: nước dừa ‘provides the hormones which encourage other plants to grow more rapidly’ — cung cấp hormone (hormones) kích thích cây khác lớn nhanh hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a source of ______ for other plants",
+              "p": "provides the hormones which encourage other plants to grow"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là hormones."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "hormones"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "cosmetics",
+      "evidence": {
+        "quoteEn": "Dried coconut flesh, ‘copra’, is made into coconut oil and coconut milk, which are widely used in cooking in different parts of the world, as well as in cosmetics."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài nấu ăn, dầu và sữa dừa còn được dùng rộng rãi trong lĩnh vực nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘cooking and ______’ cần một danh từ, song song với ‘cooking’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘oil and milk for cooking and ______’",
+              "p": "Bài viết: dầu/sữa dừa ‘widely used in cooking ... as well as in cosmetics’ — cũng được dùng trong mỹ phẩm (cosmetics)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cooking and ______",
+              "p": "as well as in cosmetics"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là cosmetics."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "cosmetics"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "dynamite",
+      "evidence": {
+        "quoteEn": "A derivative of coconut fat, glycerine, acquired strategic importance in a quite different sphere, as Alfred Nobel introduced the world to his nitroglycerine-based invention: dynamite."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Glycerine chiết từ dừa là thành phần của phát minh nào do Alfred Nobel giới thiệu?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘an ingredient in ______’ cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘glycerine (an ingredient in ______)’",
+              "p": "Bài viết: glycerine gắn liền với phát minh dựa trên nitroglycerine của Nobel — ‘dynamite’ (thuốc nổ)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an ingredient in ______",
+              "p": "his nitroglycerine-based invention: dynamite"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là dynamite."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "dynamite"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Literally cast onto desert island shores, with little more than sand to grow in and exposed to the full glare of the tropical sun, coconut seeds are able to germinate and root."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hạt dừa có cần bóng râm mới nảy mầm được không — bài có xác nhận vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: ‘Coconut seeds need shade in order to germinate’ — hạt dừa cần bóng râm mới nảy mầm được.",
+              "p": "Bài viết: hạt dừa dạt vào bờ đảo hoang, ‘exposed to the full glare of the tropical sun’ (phơi trọn dưới nắng gắt nhiệt đới) mà vẫn ‘able to germinate and root’ — nảy mầm và bén rễ bình thường, không cần bóng râm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "need shade in order to germinate",
+              "p": "exposed to the full glare of the tropical sun ... able to germinate and root"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định hạt dừa nảy mầm ngay dưới nắng gắt — trái ngược hoàn toàn với việc ‘cần bóng râm’."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Arab traders and European sailors are likely to have moved coconuts from South and Southeast Asia to Africa and then across the Atlantic to the east coast of America."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong thế kỷ 16, dừa có khả năng được chuyển từ châu Mỹ sang châu Á không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: dừa được chuyển ‘to Asia from America’ — từ châu Mỹ sang châu Á.",
+              "p": "Bài viết: chiều di chuyển ngược lại hoàn toàn — thương nhân Ả Rập và thủy thủ châu Âu ‘moved coconuts from South and Southeast Asia to Africa and then ... to the east coast of America’ — từ Nam/Đông Nam Á sang châu Phi rồi mới tới châu Mỹ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "transported to Asia from America",
+              "p": "moved coconuts from South and Southeast Asia to Africa and then ... to America"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chiều vận chuyển trong bài đi từ châu Á sang châu Mỹ, ngược hẳn với đề nói từ châu Mỹ sang châu Á."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "the origin of coconuts discovered along the west coast of America by 16th century sailors has been the subject of centuries of discussion."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dừa tìm thấy ở bờ tây châu Mỹ có phải là giống khác với dừa ở bờ đông không — bài có so sánh vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: dừa bờ tây là ‘a different type’ (giống khác) so với dừa bờ đông.",
+              "p": "Bài chỉ bàn về nguồn gốc gây tranh cãi của dừa bờ tây (từ châu Á hay bản địa châu Mỹ), không hề so sánh giống dừa bờ tây với giống dừa bờ đông."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a different type from those found on the east coast",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không đề cập tới việc so sánh giống dừa giữa hai bờ biển."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "In Asia, there is a large degree of coconut diversity and evidence of millennia of human use – but there are no relatives growing in the wild."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tất cả dừa ở châu Á có phải là giống do con người trồng trọt không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: dừa ở châu Á đều là ‘cultivated varieties’ — giống được trồng trọt.",
+              "p": "Bài viết: châu Á có nhiều giống dừa đa dạng cùng dấu vết con người dùng dừa hàng thiên niên kỷ, nhưng ‘no relatives growing in the wild’ — không có họ hàng nào mọc hoang, ngụ ý toàn bộ dừa ở đây đều do con người trồng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "all ... are cultivated varieties",
+              "p": "no relatives growing in the wild"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có giống dừa hoang dã còn sót lại ở châu Á — tức mọi cây dừa ở đó đều là giống trồng trọt."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "These problems have led to the intriguing suggestion that coconuts originated on coral islands in the Pacific and were dispersed from there."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cách trồng dừa ở châu Mỹ và ở Thái Bình Dương có khác nhau không — bài có nói vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: dừa ‘are cultivated in different ways’ (được trồng theo cách khác nhau) ở Mỹ và Thái Bình Dương.",
+              "p": "Bài chỉ bàn về nguồn gốc của dừa (có thể xuất phát từ các đảo san hô Thái Bình Dương), không hề nhắc tới phương pháp canh tác, trồng trọt ở châu Mỹ hay Thái Bình Dương."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cultivated in different ways",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có thông tin nào về cách thức trồng trọt được so sánh giữa hai khu vực."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "‘We also found that it really matters whether you use baby talk in a one-on-one context,’ she adds."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 14: ‘the importance of adults giving babies individual attention when talking to them’ — nhà nghiên cứu nào nhấn mạnh việc người lớn dành sự chú ý riêng cho từng bé khi nói chuyện?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: tầm quan trọng của việc người lớn tập trung nói chuyện riêng với từng trẻ (individual attention).",
+              "p": "Ramirez-Esparza (B, đoạn D): ‘it really matters whether you use baby talk in a one-on-one context’ — nhấn mạnh việc nói chuyện kiểu ‘em bé’ riêng với từng trẻ thực sự quan trọng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "giving babies individual attention when talking to them",
+              "p": "whether you use baby talk in a one-on-one context"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chính Ramirez-Esparza là người nêu rõ ý này trong nghiên cứu của bà."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Finding activation in motor areas of the brain when infants are simply listening is significant, because it means the baby brain is engaged in trying to talk back right from the start, and suggests that seven-month-olds’ brains are already trying to figure out how to make the right movements that will produce words"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 15: ‘the connection between what babies hear and their own efforts to create speech’ — nhà nghiên cứu nào chỉ ra mối liên hệ này?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: mối liên hệ giữa âm thanh trẻ nghe được và nỗ lực tự tạo ra lời nói của chính trẻ.",
+              "p": "Nghiên cứu não bộ ở đoạn F (Patricia Kuhl / C): nghe speech kích hoạt vùng vận động — ‘baby brain is engaged in trying to talk back’ / ‘figure out how to make the right movements that will produce words’."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "their own efforts to create speech",
+              "p": "trying to talk back / make the right movements that will produce words"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Patricia Kuhl (C) giải thích: nghe đã kích hoạt vùng vận động — não trẻ đang ‘cố nói lại’ và luyện chuyển động tạo từ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "The idea is that a kid gets to practice a certain kind of speech with mom and another kind of speech with dad, so the kid then has a wider repertoire of kinds of speech to practice."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 16: ‘the advantage for the baby of having two parents each speaking in a different way’ — nhà nghiên cứu nào nói về lợi ích này?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: lợi ích khi trẻ có bố mẹ nói chuyện theo hai kiểu khác nhau.",
+              "p": "VanDam (A, đoạn C): trẻ ‘gets to practice a certain kind of speech with mom and another kind of speech with dad’, nhờ đó có ‘a wider repertoire of kinds of speech to practice’ — vốn lời nói phong phú hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "two parents each speaking in a different way",
+              "p": "a certain kind of speech with mom and another kind of speech with dad"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây chính là ý tưởng cốt lõi của bridge hypothesis mà VanDam trình bày."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "The study found that the more baby talk parents used, the more their youngsters began to babble."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 17: ‘the connection between the amount of baby talk babies hear and how much vocalising they do themselves’ — nhà nghiên cứu nào chỉ ra mối liên hệ này?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: nghe càng nhiều baby talk thì trẻ càng tự phát âm/bập bẹ nhiều.",
+              "p": "Ramirez-Esparza (B, đoạn D): ‘the more baby talk parents used, the more their youngsters began to babble’ — baby talk càng nhiều, trẻ bập bẹ càng nhiều."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how much vocalising they do themselves",
+              "p": "the more their youngsters began to babble"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp trực tiếp với phát hiện của nghiên cứu do Ramirez-Esparza tham gia."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "recording devices",
+      "evidence": {
+        "quoteEn": "Mark VanDam of Washington State University at Spokane and colleagues equipped parents with recording devices and speech-recognition software to study the way they interacted with their youngsters during a normal day."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhóm nghiên cứu ĐH Washington State đã trang bị cho phụ huynh thiết bị gì, cùng với phần mềm chuyên dụng, để phân tích cách họ tương tác với con?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘used ______, together with specialised computer programs’ cần một cụm danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘used ______, together with specialised computer programs, to analyse how parents interacted with their babies’",
+              "p": "Bài viết: VanDam ‘equipped parents with recording devices and speech-recognition software’ — trang bị thiết bị ghi âm (recording devices) và phần mềm nhận diện giọng nói."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "used ______",
+              "p": "equipped parents with recording devices"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cụm cần điền là recording devices."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "recording devices"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "fathers / dads",
+      "evidence": {
+        "quoteEn": "Dads didn’t raise their pitch or fundamental frequency when they talked to kids."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nghiên cứu cho thấy nhóm đối tượng nào có xu hướng không thay đổi cách nói chuyện thông thường khi nói với con?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Trước ‘tended not to modify’ cần một danh từ chỉ người, số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘the study revealed that ______ tended not to modify their ordinary speech patterns’",
+              "p": "Bài viết: ‘dads aren’t doing the same thing. Dads didn’t raise their pitch or fundamental frequency’ — những ông bố (fathers/dads) không đổi cao độ giọng khi nói với con."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "tended not to modify their ordinary speech patterns",
+              "p": "didn't raise their pitch or fundamental frequency"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là fathers hoặc dads."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fathers / dads"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "bridge hypothesis",
+      "evidence": {
+        "quoteEn": "Their role may be rooted in what is called the bridge hypothesis, which dates back to 1975."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ý tưởng nào giải thích vì sao các ông bố có thể dùng kiểu nói chuyện ‘người lớn’ hơn với con?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘an idea known as the ______’ cần một cụm danh từ riêng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘according to an idea known as the ______’",
+              "p": "Bài viết: ‘their role may be rooted in what is called the bridge hypothesis’ — giả thuyết cây cầu (bridge hypothesis)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an idea known as the ______",
+              "p": "what is called the bridge hypothesis"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cụm cần điền là bridge hypothesis."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "bridge hypothesis"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "repertoire",
+      "evidence": {
+        "quoteEn": "so the kid then has a wider repertoire of kinds of speech to practice."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc nghe hai kiểu nói chuyện từ bố và mẹ giúp mở rộng cái gì của trẻ về các kiểu lời nói mà trẻ có thể luyện tập?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘the baby's ______ of types of speech’ cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘expands the baby’s ______ of types of speech which they can practise’",
+              "p": "Bài viết: trẻ có ‘a wider repertoire of kinds of speech to practice’ — vốn/kho lời nói (repertoire) rộng hơn để luyện tập."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the baby's ______ of types of speech",
+              "p": "a wider repertoire of kinds of speech"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là repertoire."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "repertoire"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "(audio-recording) vests",
+      "evidence": {
+        "quoteEn": "fitting 26 children with audio-recording vests that captured language and sound during a typical eight-hour day."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nghiên cứu của ĐH Washington và ĐH Connecticut đã trang bị cho trẻ vật dụng đặc biệt nào để ghi lại lời nói và âm thanh?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘using special ______ that the babies were equipped with’ cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘recorded speech and sound using special ______ that the babies were equipped with’",
+              "p": "Bài viết: ‘fitting 26 children with audio-recording vests that captured language and sound’ — mặc cho trẻ áo ghi âm (audio-recording vests)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "special ______ that the babies were equipped with",
+              "p": "fitting 26 children with audio-recording vests"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cụm cần điền là (audio-recording) vests."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "(audio-recording) vests"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "vocabulary",
+      "evidence": {
+        "quoteEn": "they found that frequent baby talk had dramatically boosted vocabulary, regardless of socioeconomic status."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi được nghiên cứu lại lúc 2 tuổi, trẻ từng nghe nhiều baby talk có vốn gì lớn hơn hẳn?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘a much larger ______’ cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘had a much larger ______ than those who had not’",
+              "p": "Bài viết: baby talk nhiều ‘had dramatically boosted vocabulary’ — làm tăng đáng kể vốn từ vựng (vocabulary)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a much larger ______",
+              "p": "had dramatically boosted vocabulary"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là vocabulary."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vocabulary"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "while the seven-month-olds responded to all speech sounds regardless of language, the brains of the older infants worked harder at the motor activations of non-native sounds compared to native sounds."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới một thay đổi trong hoạt động não bộ của trẻ xảy ra trước khi trẻ tròn một tuổi. Đề viết: ‘a reference to a change which occurs in babies' brain activity before the end of their first year’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về thay đổi hoạt động não trước khi trẻ 1 tuổi.",
+              "p": "Đoạn F: so sánh trẻ 7 tháng với trẻ 11,5 tháng (đều dưới 1 tuổi) — trẻ lớn hơn ‘worked harder at the motor activations of non-native sounds’ trong khi trẻ nhỏ phản ứng như nhau với mọi âm, cho thấy hoạt động não đã thay đổi theo tuổi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a change which occurs in babies' brain activity before the end of their first year",
+              "p": "the brains of the older infants worked harder at the motor activations of non-native sounds compared to native sounds"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "prompting some hopeful parents to play classical music to their pregnant bellies."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu ví dụ việc một số phụ huynh làm vì lợi ích của con ngay từ trước khi sinh. Đề viết: ‘an example of what some parents do for their baby's benefit before birth’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn có ví dụ phụ huynh làm gì đó cho con trước khi bé chào đời.",
+              "p": "Đoạn A: một số phụ huynh ‘play classical music to their pregnant bellies’ — bật nhạc cổ điển cho bụng bầu nghe, hy vọng tốt cho thai nhi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "what some parents do for their baby's benefit before birth",
+              "p": "hopeful parents to play classical music to their pregnant bellies"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "Researchers from McGill University and Université du Québec à Montréal found that babies seem to like listening to each other rather than to adults."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới việc trẻ sơ sinh thích nghe âm thanh do các bé khác tạo ra hơn. Đề viết: ‘a mention of babies' preference for the sounds that other babies make’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói trẻ thích âm thanh của trẻ khác hơn.",
+              "p": "Đoạn E: ‘babies seem to like listening to each other rather than to adults’, và âm thanh kiểu ‘infant’ giữ được sự chú ý của bé lâu hơn gần 40% so với âm thanh người lớn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "babies' preference for the sounds that other babies make",
+              "p": "babies seem to like listening to each other rather than to adults"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Some have claimed that major glacier-fed rivers changed their course, dramatically affecting the water supply and agriculture; or that the cities could not cope with an increasing population, they exhausted their resource base, the trading economy broke down or they succumbed to invasion and conflict; and yet others that climate change caused an environmental change that affected food and water provision."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn liệt kê các giả thuyết được đề xuất để giải thích sự suy tàn của nền văn minh Harappan. Đề viết: ‘proposed explanations for the decline of the Harappan Civilisation’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nêu ra các giả thuyết về nguyên nhân suy tàn.",
+              "p": "Đoạn C liệt kê hàng loạt giả thuyết: sông băng đổi dòng, dân số tăng vượt tài nguyên, kinh tế thương mại sụp đổ, xâm lược/xung đột, hay biến đổi khí hậu ảnh hưởng lương thực và nước."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "proposed explanations for the decline",
+              "p": "some have claimed that ... or that ... and yet others that climate change caused"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "H",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "By investigating responses to environmental pressures and threats, we can learn from the past to engage with the public, and the relevant governmental and administrative bodies, to be more proactive in issues such as the management and administration of water supply."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói về ứng dụng thực tiễn ngày nay của một số phát hiện khảo cổ học. Đề viết: ‘reference to a present-day application of some archaeological research findings’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn liên hệ nghiên cứu khảo cổ với ứng dụng trong hiện tại.",
+              "p": "Đoạn H: Petrie nói việc tìm hiểu quá khứ giúp ‘engage with ... governmental and administrative bodies, to be more proactive’ trong quản lý nguồn nước, phát triển đô thị-nông thôn, bảo tồn di sản — ứng dụng thực tế ngày nay."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a present-day application of archaeological research findings",
+              "p": "to engage with the public ... to be more proactive in issues such as the management ... of water supply"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "seemed to have left almost no depictions of themselves ... at a time when the Egyptians were carving and painting representations of themselves all over their temples."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu một điểm khác biệt giữa văn minh Harappan và một nền văn hóa khác cùng thời. Đề viết: ‘a difference between the Harappan Civilisation and another culture of the same period’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn so sánh Harappan với một văn hóa khác cùng thời.",
+              "p": "Đoạn A: Harappan gần như không để lại hình ảnh tự họa, trong khi ‘the Egyptians were carving and painting representations of themselves all over their temples’ — người Ai Cập cùng thời lại khắc họa hình ảnh bản thân khắp đền đài."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a difference between the Harappan Civilisation and another culture",
+              "p": "left almost no depictions of themselves ... unlike the Egyptians"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "cities were built that had great baths, craft workshops, palaces and halls laid out in distinct sectors. Houses were arranged in blocks, with wide main streets and narrow alleyways, and many had their own wells and drainage systems."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn mô tả một số đặc điểm trong thiết kế đô thị của người Harappan. Đề viết: ‘a description of some features of Harappan urban design’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn mô tả đặc điểm quy hoạch đô thị Harappan.",
+              "p": "Đoạn B: thành phố có nhà tắm lớn, xưởng thủ công, cung điện, sảnh bố trí theo khu riêng; nhà cửa xếp thành khối với đường chính rộng, hẻm nhỏ, giếng và hệ thống thoát nước riêng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "features of Harappan urban design",
+              "p": "great baths, craft workshops, palaces and halls laid out in distinct sectors"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "they found inaccuracies in the published geographic locations of ancient settlements ranging from several hundred metres to many kilometres."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói về việc phát hiện sai sót do các nhà khảo cổ trước đây gây ra. Đề viết: ‘reference to the discovery of errors made by previous archaeologists’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nhắc tới việc phát hiện sai sót của các nhà khảo cổ trước đó.",
+              "p": "Đoạn D: nhóm Petrie/Singh phát hiện nhiều di chỉ khảo cổ ‘were not where they were supposed to be’, với sai lệch vị trí địa lý đã công bố từ vài trăm mét tới nhiều kilômét."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "errors made by previous archaeologists",
+              "p": "inaccuracies in the published geographic locations of ancient settlements"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "shells",
+      "evidence": {
+        "quoteEn": "The researchers gathered shells of Melanoides tuberculata snails from the sediments of an ancient lake and used geochemical analysis as a means of tracing the climate history of the region."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dixit và Hodell đã thu thập bộ phận nào của ốc để phân tích tìm bằng chứng biến đổi khí hậu?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘collecting the ______ of snails’ cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘by collecting the ______ of snails and analysing them’",
+              "p": "Bài viết: ‘The researchers gathered shells of Melanoides tuberculata snails’ — thu thập vỏ ốc (shells)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "collecting the ______ of snails",
+              "p": "gathered shells of Melanoides tuberculata snails"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là shells."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "shells"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "lake",
+      "evidence": {
+        "quoteEn": "from the sediments of an ancient lake"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sự thay đổi mực nước được phát hiện xảy ra ở loại địa hình nào trong khu vực?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘a change in water levels in a ______’ cần một danh từ số ít."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘a change in water levels in a ______ in the region’",
+              "p": "Bài viết: vỏ ốc được lấy từ ‘the sediments of an ancient lake’ — trầm tích của một hồ (lake) cổ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a ______ in the region",
+              "p": "an ancient lake"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là lake."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "lake"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "rainfall",
+      "evidence": {
+        "quoteEn": "the amount of evaporation from the lake exceeded the rainfall – indicative of a drought."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hạn hán xảy ra khi lượng gì thấp hơn lượng bốc hơi từ hồ?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘there was less ______ than evaporation’ cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘this occurred when there was less ______ than evaporation’",
+              "p": "Bài viết: ‘the amount of evaporation from the lake exceeded the rainfall’ — lượng bốc hơi vượt quá lượng mưa (rainfall), cho thấy có hạn hán."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "less ______ than evaporation",
+              "p": "evaporation ... exceeded the rainfall"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là rainfall."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "rainfall"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "grains",
+      "evidence": {
+        "quoteEn": "They are analysing grains cultivated at the time, and trying to work out whether they were grown under extreme conditions of water stress."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhóm Petrie và Singh đang xem xét thứ gì có niên đại năm nghìn năm trước để tìm hiểu việc thích nghi nông nghiệp?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘look at ______ from five millennia ago’ cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘to look at ______ from five millennia ago’",
+              "p": "Bài viết: nhóm nghiên cứu ‘analysing grains cultivated at the time’ — phân tích các loại ngũ cốc/hạt (grains) được trồng thời đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "look at ______ from five millennia ago",
+              "p": "analysing grains cultivated at the time"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là grains."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "grains"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "pottery",
+      "evidence": {
+        "quoteEn": "They are also looking at whether the types of pottery used, and other aspects of their material culture, were distinctive to specific regions or were more similar across larger areas."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài ngũ cốc, nhóm nghiên cứu còn xem xét loại đồ vật nào để tìm hiểu mối liên kết giữa cư dân các vùng?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘examining objects including ______’ cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘examining objects including ______’",
+              "p": "Bài viết: họ xem xét ‘whether the types of pottery used ... were distinctive to specific regions or ... similar across larger areas’ — các loại đồ gốm (pottery)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "objects including ______",
+              "p": "the types of pottery used"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là pottery."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "pottery"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "it is essential that we obtain more climate data from areas close to the two great cities at Mohenjodaro and Harappa and also from the Indian Punjab."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 37: ‘Finding further information about changes to environmental conditions in the region is vital.’ — nhà nghiên cứu nào nói vậy?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: tìm thêm thông tin về thay đổi điều kiện môi trường trong vùng là rất quan trọng.",
+              "p": "Singh (B): ‘it is essential that we obtain more climate data from areas close to the two great cities ... and also from the Indian Punjab’ — cần thêm dữ liệu khí hậu từ nhiều khu vực khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "finding further information about changes to environmental conditions is vital",
+              "p": "it is essential that we obtain more climate data"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chính Singh là người nhấn mạnh sự cần thiết này ở đoạn F."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "By investigating responses to environmental pressures and threats, we can learn from the past to engage with the public, and the relevant governmental and administrative bodies, to be more proactive."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 38: ‘Examining previous patterns of behaviour may have long-term benefits.’ — nhà nghiên cứu nào nói vậy?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: xem lại các khuôn mẫu hành vi trong quá khứ có thể đem lại lợi ích lâu dài.",
+              "p": "Petrie (A): nghiên cứu phản ứng của người xưa với áp lực môi trường giúp ‘engage ... to be more proactive in issues such as the management ... of water supply ... and the importance of preserving cultural heritage in the future’ — mang lại lợi ích cho tương lai."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "examining previous patterns of behaviour may have long-term benefits",
+              "p": "learn from the past ... to be more proactive ... in the future"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ý tưởng học từ quá khứ để hành động chủ động hơn cho tương lai là của Petrie ở đoạn H."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "We estimate that the weakening of the Indian summer monsoon climate lasted about 200 years before recovering to the previous conditions."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 39: ‘Rough calculations indicate the approximate length of a period of water shortage.’ — nhà nghiên cứu nào nói vậy?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: các tính toán ước lượng cho biết độ dài xấp xỉ của một giai đoạn thiếu nước.",
+              "p": "Hodell (D): ‘We estimate that the weakening of the Indian summer monsoon climate lasted about 200 years’ — ước tính đợt suy yếu gió mùa (gây hạn) kéo dài khoảng 200 năm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "rough calculations indicate the approximate length of a period of water shortage",
+              "p": "we estimate that the weakening ... lasted about 200 years"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Việc ước tính con số 200 năm là phát biểu của Hodell ở đoạn E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "There is plenty of archaeological evidence to tell us about the rise of the Harappan Civilisation, but relatively little about its fall."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu 40: ‘Information about the decline of the Harappan Civilisation has been lacking.’ — nhà nghiên cứu nào nói vậy?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: thông tin về sự suy tàn của văn minh Harappan còn thiếu.",
+              "p": "Petrie (A): ‘plenty of archaeological evidence to tell us about the rise ... but relatively little about its fall’ — nhiều bằng chứng về sự trỗi dậy nhưng ít bằng chứng về sự suy tàn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "information ... has been lacking",
+              "p": "relatively little about its fall"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chính Petrie phát biểu câu này ở đoạn B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    }
+  }
+}

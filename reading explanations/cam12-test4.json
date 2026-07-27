@@ -1,0 +1,1791 @@
+{
+  "pilotId": "cam12-test4",
+  "schemaVersion": 4,
+  "note": "Cam 12 R T4 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The History of Glass",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Bring back the big cats",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "UK companies need more effective boards of directors",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "obsidian",
+      "evidence": {
+        "quoteEn": "Historians have discovered that a type of natural glass – obsidian – formed in places such as the mouth of a volcano as a result of the intense heat of an eruption melting sand – was first used as tips for spears."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: người tiền sử dùng vật liệu tự nhiên nào để làm đầu nhọn cho vũ khí của họ (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a material called ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Early humans used a material called ______ to make the sharp points of their spears”.",
+              "p": "Bài viết: “a type of natural glass – obsidian – ... was first used as tips for spears” — một loại thủy tinh tự nhiên tên obsidian được dùng làm đầu nhọn giáo mác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a material called ______",
+              "p": "a type of natural glass – obsidian"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vật liệu tự nhiên đó chính là obsidian."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "obsidian"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "spears",
+      "evidence": {
+        "quoteEn": "a type of natural glass – obsidian – ... was first used as tips for spears."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: obsidian được dùng làm đầu nhọn cho loại vũ khí nào (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the sharp points of their ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “to make the sharp points of their ______”.",
+              "p": "Bài viết: obsidian “was first used as tips for spears” — dùng làm đầu nhọn cho giáo (spears)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the sharp points of their ______",
+              "p": "was first used as tips for spears"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vũ khí đó là spears."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "spears"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "beads",
+      "evidence": {
+        "quoteEn": "Archaeologists have even found evidence of man-made glass which dates back to 4000 BC; this took the form of glazes used for coating stone beads."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: vào năm 4000 BC, vật gì làm bằng đá được phủ một lớp thủy tinh nhân tạo (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Trước “made of stone were covered in a coating of man-made glass” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “4000 BC: ______ made of stone were covered in a coating of man-made glass”.",
+              "p": "Bài viết: “evidence of man-made glass which dates back to 4000 BC; this took the form of glazes used for coating stone beads” — men thủy tinh dùng để phủ các hạt cườm (beads) bằng đá."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ made of stone",
+              "p": "glazes used for coating stone beads"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vật đó là beads."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "beads"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "impurities",
+      "evidence": {
+        "quoteEn": "The glass made during this time was highly coloured due to the impurities of the raw material."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: vào thế kỷ 1 TCN, thủy tinh có màu vì lý do gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “because of the ______ in the material” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “First century BC: glass was coloured because of the ______ in the material”.",
+              "p": "Bài viết: “The glass made during this time was highly coloured due to the impurities of the raw material” — do tạp chất (impurities) trong nguyên liệu thô."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "because of the ______ in the material",
+              "p": "due to the impurities of the raw material"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nguyên nhân là impurities."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "impurities"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Romans",
+      "evidence": {
+        "quoteEn": "The secret of glass making was taken across Europe by the Romans during this century. However, they guarded the skills and technology required to make glass very closely, and it was not until their empire collapsed in 476 AD that glass-making knowledge became widespread throughout Europe and the Middle East."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: cho tới năm 476 AD, chỉ dân tộc nào biết cách làm thủy tinh (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “Only the ______ knew” cần một danh từ số nhiều chỉ dân tộc."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Until 476 AD: Only the ______ knew how to make glass”.",
+              "p": "Bài viết: “The secret of glass making was taken across Europe by the Romans ... it was not until their empire collapsed in 476 AD that glass-making knowledge became widespread” — người La Mã (Romans) giữ bí quyết cho tới khi đế chế sụp đổ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Only the ______ knew how to make glass",
+              "p": "taken across Europe by the Romans ... guarded the skills and technology ... very closely"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Dân tộc đó là Romans."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Romans"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "lead",
+      "evidence": {
+        "quoteEn": "He attempted to counter the effect of clouding that sometimes occurred in blown glass by introducing lead to the raw materials used in the process."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: George Ravenscroft phát triển quy trình dùng chất gì để tránh hiện tượng mờ đục trong thủy tinh thổi (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “a process using ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “George Ravenscroft developed a process using ______ to avoid the occurrence of clouding in blown glass”.",
+              "p": "Bài viết: “He attempted to counter the effect of clouding ... by introducing lead to the raw materials used in the process” — ông thêm chì (lead) vào nguyên liệu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a process using ______",
+              "p": "introducing lead to the raw materials"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chất đó là lead."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "lead"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "clouding",
+      "evidence": {
+        "quoteEn": "He attempted to counter the effect of clouding that sometimes occurred in blown glass by introducing lead to the raw materials used in the process."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: quy trình dùng chì của Ravenscroft nhằm tránh hiện tượng gì xảy ra trong thủy tinh thổi (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “to avoid the occurrence of ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “...to avoid the occurrence of ______ in blown glass”.",
+              "p": "Bài viết: “He attempted to counter the effect of clouding that sometimes occurred in blown glass” — ông muốn khắc phục hiện tượng mờ đục (clouding)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "to avoid the occurrence of ______",
+              "p": "counter the effect of clouding that sometimes occurred"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hiện tượng đó là clouding."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "clouding"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "taxes",
+      "evidence": {
+        "quoteEn": "In Britain, the modern glass industry only really started to develop after the repeal of the Excise Act in 1845. Before that time, heavy taxes had been placed on the amount of glass melted in a glasshouse, and were levied continuously from 1745 to 1845."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: ngành sản xuất thủy tinh Anh phát triển vào giữa thế kỷ 19 sau khi luật liên quan tới điều gì thay đổi (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “changes to laws concerning ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “British glass production developed after changes to laws concerning ______”.",
+              "p": "Bài viết: “the modern glass industry only really started to develop after the repeal of the Excise Act in 1845. Before that time, heavy taxes had been placed on the amount of glass melted” — sau khi bãi bỏ luật thuế đánh vào thủy tinh (taxes)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "changes to laws concerning ______",
+              "p": "repeal of the Excise Act ... heavy taxes had been placed"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Luật đó liên quan tới taxes."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "taxes"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "From 1887 onwards, glass making developed from traditional mouth-blowing to a semi-automatic process, after factory-owner HM Ashley introduced a machine capable of producing 200 bottles per hour in Castleford, Yorkshire, England – more than three times quicker than any previous production method."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Năm 1887, máy sản xuất chai của HM Ashley có phải là máy nhanh nhất tồn tại vào thời điểm đó không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“In 1887, HM Ashley had the fastest bottle-producing machine that existed at the time” — máy của Ashley nhanh nhất lúc đó.",
+              "p": "Bài viết: máy của Ashley “capable of producing 200 bottles per hour ... more than three times quicker than any previous production method” — nhanh hơn gấp ba lần bất kỳ phương pháp nào trước đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fastest bottle-producing machine that existed at the time",
+              "p": "more than three times quicker than any previous production method"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Máy của Ashley nhanh hơn hẳn mọi phương pháp trước đó — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Then in 1907, the first fully automated machine was developed in the USA by Michael Owens – founder of the Owens Bottle Machine Company (later the major manufacturers Owens-Illinois) – and installed in its factory."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Michael Owens có được một công ty lớn của Mỹ thuê để thiết kế máy sản xuất chai tự động hoàn toàn cho họ không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Michael Owens was hired by a large US company to design a fully-automated bottle manufacturing machine for them” — được công ty lớn thuê thiết kế.",
+              "p": "Bài viết: máy tự động đầu tiên “was developed in the USA by Michael Owens – founder of the Owens Bottle Machine Company (later the major manufacturers Owens-Illinois)” — chính Owens là người sáng lập ra công ty đó, công ty chỉ trở thành lớn về sau, ông không phải người được thuê."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "hired by a large US company",
+              "p": "founder of the Owens Bottle Machine Company (later the major manufacturers Owens-Illinois)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Owens là người sáng lập công ty (khi đó chưa lớn), không phải được một công ty lớn thuê — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Today, glass making is big business. It has become a modern, hi-tech industry operating in a fiercely competitive global market where quality, design and service levels are critical to maintaining market share."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngày nay, phần lớn thủy tinh có được sản xuất bởi các nhà sản xuất quốc tế lớn không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Most glass is produced by large international manufacturers” — phần lớn do các hãng quốc tế lớn sản xuất.",
+              "p": "Bài viết chỉ nói thủy tinh “has become a modern, hi-tech industry operating in a fiercely competitive global market” — không nêu cụ thể tỷ trọng sản xuất thuộc về ai."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "most glass is produced by large international manufacturers",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không nêu cụ thể phần lớn thủy tinh do ai sản xuất."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Glass is an ideal material for recycling, and with growing consumer concern for green issues, glass bottles and jars are becoming ever more popular."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mối quan tâm về môi trường có đang khiến nhu cầu về đồ đựng bằng thủy tinh tăng lên không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Concern for the environment is leading to an increased demand for glass containers” — mối quan tâm môi trường làm tăng nhu cầu.",
+              "p": "Bài viết: “with growing consumer concern for green issues, glass bottles and jars are becoming ever more popular” — người tiêu dùng ngày càng quan tâm vấn đề xanh khiến chai lọ thủy tinh ngày càng phổ biến."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "increased demand for glass containers",
+              "p": "glass bottles and jars are becoming ever more popular"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mối quan tâm môi trường khiến nhu cầu thủy tinh tăng — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "As less energy is needed to melt recycled glass than to melt down raw materials, this also saves fuel and production costs."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sản xuất thủy tinh tái chế có tốn kém hơn sản xuất thủy tinh mới không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“It is more expensive to produce recycled glass than to manufacture new glass” — tái chế tốn kém hơn.",
+              "p": "Bài viết: “As less energy is needed to melt recycled glass than to melt down raw materials, this also saves fuel and production costs” — tái chế cần ít năng lượng hơn nên tiết kiệm chi phí, tức là rẻ hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more expensive to produce recycled glass",
+              "p": "less energy is needed to melt recycled glass ... saves fuel and production costs"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tái chế tiết kiệm chi phí hơn, không tốn kém hơn — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Until this discovery, the lynx – a large spotted cat with tasselled ears – was presumed to have died out in Britain at least 6,000 years ago... But the 2006 find... is compelling evidence that the lynx and the mysterious llewyn were in fact one and the same animal. If this is so, it would bring forward the tassel-eared cat's estimated extinction date by roughly 5,000 years."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phát hiện xương động vật năm 2006 tiết lộ điều gì về loài linh miêu (lynx):"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: “It survived in Britain longer than was previously thought” — nó tồn tại ở Anh lâu hơn người ta từng nghĩ.",
+              "p": "Bài viết: trước đây lynx được cho là tuyệt chủng ở Anh “at least 6,000 years ago”, nhưng xương tìm thấy năm 2006 cho thấy “it would bring forward the tassel-eared cat's estimated extinction date by roughly 5,000 years” — đẩy lùi mốc tuyệt chủng khoảng 5.000 năm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "survived in Britain longer than was previously thought",
+              "p": "bring forward ... estimated extinction date by roughly 5,000 years"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phát hiện cho thấy lynx tồn tại muộn hơn nhiều so với suy đoán trước đây — khớp đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không tập trung mô tả ngoại hình của lynx qua phát hiện xương này."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói phát hiện này liên quan tới việc tuyệt chủng gắn với sự lan rộng của nông nghiệp."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Ngược lại, phát hiện cho thấy lynx biến mất muộn hơn nhiều so với suy đoán trước đây, không phải hàng nghìn năm trước."
+            }
+          ]
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Some of them drive dynamic processes that resonate through the whole food chain, creating niches for hundreds of species that might otherwise struggle to survive. The killers turn out to be bringers of life."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn 3, tác giả nêu điểm gì về các loài động vật ăn thịt lớn:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: “Their presence can increase biodiversity” — sự hiện diện của chúng có thể làm tăng đa dạng sinh học.",
+              "p": "Bài viết: động vật ăn thịt lớn “drive dynamic processes that resonate through the whole food chain, creating niches for hundreds of species that might otherwise struggle to survive” — tạo ổ sinh thái cho hàng trăm loài khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "increase biodiversity",
+              "p": "creating niches for hundreds of species that might otherwise struggle to survive"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Động vật ăn thịt lớn giúp tạo điều kiện cho nhiều loài khác tồn tại — khớp đáp án A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói chúng gây hại cho hệ sinh thái địa phương, ngược lại còn có lợi."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nói hành vi của chúng thay đổi tùy theo môi trường."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Đoạn 3 không đề cập việc chỉ nên tái thả ở nơi chúng từng sinh sống."
+            }
+          ]
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "It has tried to preserve the living world as if it were a jar of pickles, letting nothing in and nothing out, keeping nature in a state of arrested development."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn 4, tác giả gợi ý điều gì về công tác bảo tồn ở Anh:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: “It has taken a misguided approach” — cách tiếp cận của họ sai lầm.",
+              "p": "Bài viết: công tác bảo tồn “has tried to preserve the living world as if it were a jar of pickles, letting nothing in and nothing out, keeping nature in a state of arrested development” — ví bảo tồn kiểu cũ như một lọ dưa muối, cách làm không phù hợp với bản chất sinh động của hệ sinh thái."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a misguided approach",
+              "p": "preserve the living world as if it were a jar of pickles ... arrested development"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả phê phán cách bảo tồn kiểu cũ là sai lầm qua hình ảnh lọ dưa muối — khớp đáp án C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đoạn này không nói bảo tồn đã thất bại trong việc đạt mục tiêu, mà nói cách tiếp cận sai."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Ý bảo tồn bắt đầu đổi hướng xuất hiện muộn hơn, ở đoạn cuối bài, không phải đoạn 4."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không nói bảo tồn tập trung vào loài phổ biến nhất."
+            }
+          ]
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "This policy would also greatly boost catches in the surrounding seas; the fishing industry's insistence on scouring every inch of seabed, leaving no breeding reserves, could not be more damaging to its own interests."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc bảo vệ vùng biển rộng khỏi đánh bắt thương mại sẽ dẫn tới điều gì:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: “practical benefits for the fishing industry” — lợi ích thực tế cho ngành đánh bắt cá.",
+              "p": "Bài viết: “This policy would also greatly boost catches in the surrounding seas” — chính sách này giúp tăng sản lượng đánh bắt xung quanh, có lợi cho chính ngành cá."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "practical benefits for the fishing industry",
+              "p": "greatly boost catches in the surrounding seas"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bảo vệ vùng biển giúp tăng sản lượng đánh bắt xung quanh — lợi ích thực tế cho ngành cá, khớp đáp án A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói có tổn thất ngắn hạn cho ngành cá."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nói ngành cá sẽ phản đối rộng rãi chính sách này."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không nói chính sách này dẫn tới thay đổi kỹ thuật đánh bắt."
+            }
+          ]
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Rewilding is a rare example of an environmental movement in which campaigners articulate what they are for rather than only what they are against. One of the reasons why the enthusiasm for rewilding is spreading so quickly in Britain is that it helps to create a more inspiring vision."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo tác giả, điều gì phân biệt phong trào rewilding với các chiến dịch môi trường khác:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: “Its positive message is more appealing” — thông điệp tích cực của nó hấp dẫn hơn.",
+              "p": "Bài viết: rewilding là phong trào hiếm hoi mà “campaigners articulate what they are for rather than only what they are against”, tạo ra “a more inspiring vision” hơn hẳn thông điệp thường thấy ở phong trào xanh khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "its positive message is more appealing",
+              "p": "articulate what they are for ... a more inspiring vision"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Rewilding nổi bật nhờ thông điệp tích cực, truyền cảm hứng hơn — khớp đáp án C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không so sánh mục tiêu của rewilding có dễ đạt được hơn phong trào khác không."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói người ủng hộ rewilding hùng biện giỏi hơn."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không nói rewilding dựa trên nguyên lý khoa học vững chắc hơn."
+            }
+          ]
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "The lynx presents no threat to human beings: there is no known instance of one preying on people."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ô trống 19: lynx chưa từng đe dọa đối tượng nào:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “there is no evidence that the lynx has ever put 19______ in danger”.",
+              "p": "Bài viết: “The lynx presents no threat to human beings: there is no known instance of one preying on people” — chưa từng có trường hợp lynx săn con người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "19______ in danger",
+              "p": "no threat to human beings ... no known instance of one preying on people"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đối tượng đó là humans (E)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "It is a specialist predator of roe deer, a species that has exploded in Britain in recent decades."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ô trống 20: lynx sẽ giúp giảm số lượng loại nào đã tăng mạnh trong những thập kỷ gần đây:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “it would reduce the numbers of certain 20______ whose populations have increased enormously in recent decades”.",
+              "p": "Bài viết: lynx “is a specialist predator of roe deer, a species that has exploded in Britain in recent decades” và cũng săn sika deer — đây là các loài thú hoang dã (wild animals)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "certain 20______ whose populations have increased enormously",
+              "p": "a specialist predator of roe deer, a species that has exploded in Britain in recent decades"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Loài đó là wild animals (D)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "The lynx requires deep cover, and as such presents little risk to sheep and other livestock, which are supposed, as a condition of farm subsidies, to be kept out of the woods."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ô trống 21: lynx chỉ gây đe dọa tối thiểu cho đối tượng nào, miễn là chúng tránh xa môi trường sống của lynx:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “It would present only a minimal threat to 21______, provided these were kept away from lynx habitats”.",
+              "p": "Bài viết: lynx “presents little risk to sheep and other livestock, which are supposed ... to be kept out of the woods” — ít gây nguy hiểm cho gia súc (farm animals) như cừu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "minimal threat to 21______",
+              "p": "little risk to sheep and other livestock"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đối tượng đó là farm animals (F)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "summary-bank",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "The attempt to reintroduce this predator marries well with the aim of bringing forests back to parts of our bare and barren uplands."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ô trống 22: chương trình tái thả lynx cũng gắn kết với sáng kiến khôi phục loại thực vật bản địa nào:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the reintroduction programme would also link efficiently with initiatives to return native 22______ to certain areas of the country”.",
+              "p": "Bài viết: “The attempt to reintroduce this predator marries well with the aim of bringing forests back to parts of our bare and barren uplands” — gắn với việc khôi phục rừng, tức là cây cối (trees)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "return native 22______",
+              "p": "bringing forests back to parts of our bare and barren uplands"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Loài thực vật đó là trees (A)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "The lynx has now been reintroduced to the Jura Mountains, the Alps, the Vosges in eastern France and the Harz mountains in Germany, and has re-established itself in many more places."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Anh có thể trở thành quốc gia châu Âu đầu tiên tái thả lynx không, theo bài viết:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Britain could become the first European country to reintroduce the lynx” — Anh sẽ là nước đầu tiên.",
+              "p": "Bài viết: lynx “has now been reintroduced to the Jura Mountains, the Alps, the Vosges in eastern France and the Harz mountains in Germany” — nhiều nước châu Âu đã tái thả lynx trước Anh rồi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the first European country to reintroduce the lynx",
+              "p": "has now been reintroduced to the Jura Mountains, the Alps, the Vosges ... and the Harz mountains"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhiều nước châu Âu khác đã tái thả lynx trước, nên Anh không thể là nước đầu tiên — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "The European population has tripled since 1970 to roughly 10,000."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mức tăng lớn của quần thể lynx châu Âu từ 1970 có vượt quá kỳ vọng của các nhà bảo tồn không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“The large growth in the European lynx population since 1970 has exceeded conservationists' expectations” — vượt kỳ vọng.",
+              "p": "Bài viết chỉ nêu số liệu: “The European population has tripled since 1970 to roughly 10,000” — không nhắc gì tới kỳ vọng của các nhà bảo tồn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "exceeded conservationists' expectations",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ đưa số liệu tăng trưởng, không so sánh với kỳ vọng nào."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "As with wolves, bears, beavers, boar, bison, moose and many other species, the lynx has been able to spread as farming has left the hills and people discover that it is more lucrative to protect charismatic wildlife than to hunt it."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Những thay đổi trong thực hành nông nghiệp có mở rộng môi trường sống của lynx ở châu Âu không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Changes in agricultural practices have extended the habitat of the lynx in Europe” — thay đổi nông nghiệp mở rộng môi trường sống.",
+              "p": "Bài viết: “the lynx has been able to spread as farming has left the hills” — lynx lan rộng ra khi nông nghiệp rút khỏi vùng đồi núi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "extended the habitat of the lynx",
+              "p": "has been able to spread as farming has left the hills"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nông nghiệp rút lui khỏi vùng đồi giúp lynx lan rộng môi trường sống — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "people discover that it is more lucrative to protect charismatic wildlife than to hunt it, as tourists will pay for the chance to see it."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có phải người ta đã nhận ra việc tái thả loài mang lại lợi ích thương mại không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“It has become apparent that species reintroduction has commercial advantages” — tái thả loài có lợi thế thương mại.",
+              "p": "Bài viết: “people discover that it is more lucrative to protect charismatic wildlife than to hunt it, as tourists will pay for the chance to see it” — bảo vệ động vật hoang dã sinh lợi hơn săn bắt vì du khách sẵn sàng trả tiền để xem."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "commercial advantages",
+              "p": "more lucrative to protect charismatic wildlife than to hunt it"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định rõ lợi ích kinh tế từ việc bảo vệ và tái thả động vật hoang dã — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "iv",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "Governments, regulators, central banks and auditors have all been in the frame."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A đang nói về điều gì? Cần tìm heading kiểu: nhiều bên bị đổ lỗi cho vấn đề."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iv: “Many external bodies being held responsible for problems”.",
+              "p": "Đoạn A: sau khủng hoảng tài chính 2008, việc tìm nguyên nhân khiến trách nhiệm bị “spread far and wide” — “Governments, regulators, central banks and auditors have all been in the frame” — nhiều cơ quan bên ngoài bị quy trách nhiệm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "many external bodies being held responsible for problems",
+              "p": "blame has been spread far and wide. Governments, regulators, central banks and auditors have all been in the frame"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iv"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "ii",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "The knock-on effect of this scrutiny has been to make the governance of companies in general an issue of intense public debate and has significantly increased the pressures on, and the responsibilities of, directors."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B đang nói về điều gì? Cần tìm heading kiểu: hệ quả của việc bị giám sát chặt chẽ đối với doanh nghiệp."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ii: “The impact on companies of being subjected to close examination”.",
+              "p": "Đoạn B: việc bị soi xét kỹ (scrutiny) đã “significantly increased the pressures on, and the responsibilities of, directors” — làm tăng áp lực và trách nhiệm lên các giám đốc."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the impact ... of being subjected to close examination",
+              "p": "the knock-on effect of this scrutiny ... increased the pressures on ... directors"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ii"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Often, board business is devolved to committees in order to cope with the workload, which may be more efficient but can mean that the board as a whole is less involved in fully addressing some of the most important issues."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C đang nói về điều gì? Cần tìm heading kiểu: rủi ro khi không phải mọi giám đốc đều tham gia giải quyết vấn đề lớn."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vi: “A risk that not all directors take part in solving major problems”.",
+              "p": "Đoạn C: việc giao việc cho các ủy ban “can mean that the board as a whole is less involved in fully addressing some of the most important issues” — cả hội đồng ít tham gia trực tiếp vào vấn đề quan trọng nhất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not all directors take part in solving major problems",
+              "p": "the board as a whole is less involved in fully addressing ... important issues"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "viii",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "A radical solution, which may work for some very large companies whose businesses are extensive and complex, is the professional board, whose members would work up to three or four days a week, supported by their own dedicated staff and advisers."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D đang nói về điều gì? Cần tìm heading kiểu: đề xuất thay đổi cách hội đồng quản trị vận hành."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading viii: “A proposal to change the way the board operates”.",
+              "p": "Đoạn D: đề xuất “the professional board, whose members would work up to three or four days a week, supported by their own dedicated staff and advisers” — mô hình hội đồng chuyên nghiệp làm việc nhiều hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a proposal to change the way the board operates",
+              "p": "a radical solution ... is the professional board, whose members would work up to three or four days a week"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "viii"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "One of the main criticisms of boards and their directors is that they do not focus sufficiently on longer-term matters of strategy, sustainability and governance, but instead concentrate too much on short-term financial metrics."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E đang nói về điều gì? Cần tìm heading kiểu: hội đồng quản trị không nhìn xa đủ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vii: “Boards not looking far enough ahead”.",
+              "p": "Đoạn E: chỉ trích chính là hội đồng “do not focus sufficiently on longer-term matters of strategy, sustainability and governance, but instead concentrate too much on short-term financial metrics” — quá tập trung ngắn hạn, thiếu tầm nhìn dài hạn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not looking far enough ahead",
+              "p": "do not focus sufficiently on longer-term matters ... concentrate too much on short-term financial metrics"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vii"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "Compensation for chief executives has become a combat zone where pitched battles between investors, management and board members are fought, often behind closed doors but increasingly frequently in the full glare of press attention."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F đang nói về điều gì? Cần tìm heading kiểu: tranh cãi về chế độ đãi ngộ tài chính cho lãnh đạo cấp cao."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading i: “Disputes over financial arrangements regarding senior managers”.",
+              "p": "Đoạn F: “Compensation for chief executives has become a combat zone where pitched battles between investors, management and board members are fought” — mức lương thưởng cho CEO trở thành chiến trường tranh cãi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "disputes over financial arrangements regarding senior managers",
+              "p": "compensation for chief executives has become a combat zone where pitched battles ... are fought"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "i"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "Boards of companies in all sectors will need to widen their perspective to encompass these issues and this may involve a realignment of corporate goals."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn G đang nói về điều gì? Cần tìm heading kiểu: có thể cần thay đổi căn bản ở mọi lĩnh vực kinh doanh."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iii: “The possible need for fundamental change in every area of business”.",
+              "p": "Đoạn G: khủng hoảng tài chính khơi mào tranh luận về đạo đức doanh nghiệp; “Boards of companies in all sectors will need to widen their perspective ... and this may involve a realignment of corporate goals” — mọi ngành đều có thể cần thay đổi căn bản."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fundamental change in every area of business",
+              "p": "boards of companies in all sectors will need to widen their perspective ... a realignment of corporate goals"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iii"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "The knock-on effect of this scrutiny has been to make the governance of companies in general an issue of intense public debate and has significantly increased the pressures on, and the responsibilities of, directors."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc giám sát chặt chẽ hành vi của hội đồng quản trị có tăng lên kể từ suy thoái kinh tế không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Close scrutiny of the behaviour of boards has increased since the economic downturn” — giám sát tăng lên sau suy thoái.",
+              "p": "Bài viết: “The knock-on effect of this scrutiny has been to make the governance of companies in general an issue of intense public debate” sau cuộc khủng hoảng 2008 — mức độ giám sát tăng đáng kể."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "close scrutiny ... has increased since the economic downturn",
+              "p": "the knock-on effect of this scrutiny has been to make ... an issue of intense public debate"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài xác nhận việc giám sát doanh nghiệp tăng mạnh sau khủng hoảng — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "More professional and better-informed boards would have been particularly appropriate for banks where the executives had access to information that part-time non-executive directors lacked, leaving the latter unable to comprehend or anticipate the 2008 crash."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các ngân hàng có bị quản lý yếu kém hơn so với các loại hình doanh nghiệp khác không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Banks have been mismanaged to a greater extent than other businesses” — ngân hàng bị quản lý kém hơn doanh nghiệp khác.",
+              "p": "Bài viết chỉ nói riêng về ngân hàng, ví dụ “more professional and better-informed boards would have been particularly appropriate for banks” — không so sánh mức độ quản lý yếu kém giữa ngân hàng và doanh nghiệp khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "mismanaged to a greater extent than other businesses",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không đưa ra so sánh mức độ quản lý yếu kém giữa ngân hàng và các ngành khác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Agendas can become overloaded and this can mean the time for constructive debate must necessarily be restricted in favour of getting through the business."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các cuộc họp hội đồng quản trị có thường kéo dài đủ lâu để bàn bạc mọi vấn đề một cách trọn vẹn không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Board meetings normally continue for as long as necessary to debate matters in full” — họp đủ lâu để bàn hết vấn đề.",
+              "p": "Bài viết: “Agendas can become overloaded and this can mean the time for constructive debate must necessarily be restricted in favour of getting through the business” — chương trình họp quá tải khiến thời gian thảo luận thực chất bị cắt bớt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "continue for as long as necessary to debate matters in full",
+              "p": "the time for constructive debate must necessarily be restricted"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thời gian thảo luận thực tế bị hạn chế do lịch họp quá tải — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Often, board business is devolved to committees in order to cope with the workload, which may be more efficient but can mean that the board as a whole is less involved in fully addressing some of the most important issues."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc dùng cấu trúc ủy ban có đảm bảo các thành viên hội đồng nắm rõ đầy đủ các vấn đề quan trọng không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Using a committee structure would ensure that board members are fully informed about significant issues” — cấu trúc ủy ban đảm bảo nắm rõ vấn đề.",
+              "p": "Bài viết: giao việc cho ủy ban “may be more efficient but can mean that the board as a whole is less involved in fully addressing some of the most important issues” — cả hội đồng lại ít tham gia đầy đủ vào các vấn đề quan trọng nhất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "ensure that board members are fully informed",
+              "p": "can mean that the board as a whole is less involved in fully addressing ... important issues"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cấu trúc ủy ban thực ra có thể khiến hội đồng ít nắm rõ vấn đề quan trọng hơn — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "sentence-fill",
+      "answer": "information",
+      "evidence": {
+        "quoteEn": "More professional and better-informed boards would have been particularly appropriate for banks where the executives had access to information that part-time non-executive directors lacked, leaving the latter unable to comprehend or anticipate the 2008 crash."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trước năm 2008, các giám đốc không điều hành (non-executive) gặp bất lợi vì thiếu điều gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “lack of ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Before 2008, non-executive directors were at a disadvantage because of their lack of ______”.",
+              "p": "Bài viết: hội đồng chuyên nghiệp sẽ đặc biệt phù hợp cho ngân hàng “where the executives had access to information that part-time non-executive directors lacked” — họ thiếu thông tin (information) mà ban điều hành có."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lack of ______",
+              "p": "access to information that part-time non-executive directors lacked"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Điều họ thiếu là information."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "information"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "sentence-fill",
+      "answer": "financial",
+      "evidence": {
+        "quoteEn": "One of the main criticisms of boards and their directors is that they do not focus sufficiently on longer-term matters of strategy, sustainability and governance, but instead concentrate too much on short-term financial metrics."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hội đồng quản trị có xu hướng quá coi trọng những yếu tố nào chỉ có ý nghĩa ngắn hạn (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “too much emphasis on ______ considerations” cần một tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Boards tend to place too much emphasis on ______ considerations that are only of short-term relevance”.",
+              "p": "Bài viết: hội đồng “concentrate too much on short-term financial metrics” — quá tập trung vào các chỉ số tài chính (financial) ngắn hạn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "too much emphasis on ______ considerations",
+              "p": "concentrate too much on short-term financial metrics"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Yếu tố đó là financial."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "financial"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "sentence-fill",
+      "answer": "shareholders/investors",
+      "evidence": {
+        "quoteEn": "Many would argue that this is in the interest of transparency and good governance as shareholders use their muscle in the area of pay to pressure boards to remove underperforming chief executives."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Về một số vấn đề như lương thưởng, hội đồng có thể phải chấp nhận quan điểm của ai (một từ/nhóm từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “accept the views of ______” cần một danh từ chỉ đối tượng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “On certain matters, such as pay, the board may have to accept the views of ______”.",
+              "p": "Bài viết: “shareholders use their muscle in the area of pay to pressure boards to remove underperforming chief executives” — cổ đông (shareholders/investors) dùng quyền lực của mình để gây sức ép về lương thưởng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "accept the views of ______",
+              "p": "shareholders use their muscle in the area of pay to pressure boards"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đối tượng đó là shareholders/investors."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "shareholders/investors"
+        }
+      ]
+    }
+  }
+}

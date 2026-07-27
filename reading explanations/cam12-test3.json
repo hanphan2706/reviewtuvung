@@ -1,0 +1,1802 @@
+{
+  "pilotId": "cam12-test3",
+  "schemaVersion": 4,
+  "note": "Cam 12 R T3 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Flying tortoises",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "The Intersection of Health Sciences and Geography",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Music and the emotions",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "v",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "Some time after the Galápagos’s birth, around five million years ago, the islands were colonised by one or more tortoises from mainland South America. As these ancestral tortoises settled on the individual islands, the different populations adapted to their unique environments, giving rise to at least 14 different subspecies."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A đang nói về điều gì? Cần tìm heading kiểu: rùa xuất hiện và sinh sôi trên các đảo."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading v: ‘Tortoises populate the islands’",
+              "p": "Đoạn A: đảo Galápagos ‘được colonised’ bởi rùa từ Nam Mỹ cách đây khoảng 5 triệu năm, rồi các nhóm rùa ‘adapted to their unique environments, giving rise to at least 14 different subspecies’ — sinh sôi và phân hoá thành nhiều phân loài trên các đảo."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "tortoises populate the islands",
+              "p": "the islands were colonised by ... tortoises ... giving rise to at least 14 different subspecies"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "v"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "This historical exploitation was then exacerbated when settlers came to the islands. They hunted the tortoises and destroyed their habitat to clear land for agriculture."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B đang nói về điều gì? Cần tìm heading kiểu: những sự việc gây bất lợi cho quần thể rùa."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iii: ‘Developments to the disadvantage of tortoise populations’",
+              "p": "Đoạn B: cướp biển, tàu săn cá voi bắt rùa làm thực phẩm, rồi ‘settlers came to the islands. They hunted the tortoises and destroyed their habitat’, còn du nhập loài ngoại lai ăn trứng/rùa non — hàng loạt sự việc bất lợi cho quần thể rùa."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "developments to the disadvantage of tortoise populations",
+              "p": "hunted the tortoises and destroyed their habitat ... prey on the eggs and young tortoises"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iii"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "viii",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "In 1989, work began on a tortoise-breeding centre just outside the town of Puerto Villamil on Isabela, dedicated to protecting the island’s tortoise populations."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C đang nói về điều gì? Cần tìm heading kiểu: khởi đầu của một dự án bảo tồn."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading viii: ‘The start of the conservation project’",
+              "p": "Đoạn C: năm 1989 ‘work began on a tortoise-breeding centre ... dedicated to protecting the island’s tortoise populations’ — trung tâm nhân giống rùa ra đời, đánh dấu khởi đầu dự án bảo tồn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the start of the conservation project",
+              "p": "work began on a tortoise-breeding centre ... dedicated to protecting the island’s tortoise populations"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "viii"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "Captive-bred tortoises can’t be reintroduced into the wild until they’re at least five years old and weigh at least 4.5 kilograms ... But if people wait too long after that point, the tortoises eventually become too large to transport."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D đang nói về điều gì? Cần tìm heading kiểu: sự quan trọng của việc chọn đúng thời điểm."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading i: ‘The importance of getting the timing right’",
+              "p": "Đoạn D: rùa phải đủ 5 tuổi, nặng ít nhất 4,5kg mới đủ an toàn để thả về; nhưng ‘if people wait too long after that point, the tortoises eventually become too large to transport’ — chờ quá lâu cũng hỏng, phải chọn đúng thời điểm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the importance of getting the timing right",
+              "p": "can’t be reintroduced ... until ... But if people wait too long ... too large to transport"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "i"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "iv",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "gathered around a table in a small café in Puerto Ayora on the island of Santa Cruz to work out more ambitious reintroduction. The aim was to use a helicopter to move 300 of the breeding centre’s tortoises to various locations close to Sierra Negra."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E đang nói về điều gì? Cần tìm heading kiểu: lên kế hoạch cho một ý tưởng quy mô lớn hơn."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iv: ‘Planning a bigger idea’",
+              "p": "Đoạn E: nhóm nhà bảo tồn, thuyền trưởng, phi công trực thăng ngồi lại ‘to work out more ambitious reintroduction’, với mục tiêu chuyển 300 con rùa bằng trực thăng — kế hoạch lớn hơn hẳn trước đó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "planning a bigger idea",
+              "p": "to work out more ambitious reintroduction. The aim was to use a helicopter to move 300 ... tortoises"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iv"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "During a period of three days, a group of volunteers from the breeding centre worked around the clock to prepare the young tortoises for transport. Meanwhile, park wardens, dropped off ahead of time in remote locations, cleared landing sites within the thick brush, cacti and lava rocks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F đang nói về điều gì? Cần tìm heading kiểu: thực hiện một chiến dịch đã được chuẩn bị kỹ lưỡng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vi: ‘Carrying out a carefully prepared operation’",
+              "p": "Đoạn F: tình nguyện viên ‘worked around the clock to prepare the young tortoises’, kiểm lâm dọn sẵn bãi đáp, thùng chở rùa được thiết kế riêng — mọi khâu được chuẩn bị kỹ trước khi tiến hành."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "carrying out a carefully prepared operation",
+              "p": "worked around the clock to prepare ... cleared landing sites"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "ii",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "Eventually, one tiny tortoise came across a fully grown giant who had been lumbering around the island for around a hundred years. The two stood side by side, a powerful symbol of the regeneration of an ancient species."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn G đang nói về điều gì? Cần tìm heading kiểu: cuộc gặp giữa cá thể nhỏ tuổi và cá thể già."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ii: ‘Young meets old’",
+              "p": "Đoạn G: ‘one tiny tortoise came across a fully grown giant who had been lumbering around the island for around a hundred years’ — rùa non gặp rùa khổng lồ đã sống cả trăm năm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "young meets old",
+              "p": "one tiny tortoise came across a fully grown giant ... for around a hundred years"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ii"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "pirates",
+      "evidence": {
+        "quoteEn": "From the 17th century onwards, pirates took a few on board for food, but the arrival of whaling ships in the 1790s saw this exploitation grow exponentially."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ghi chú nói từ thế kỷ 17, một số ít rùa bị mang lên tàu của nhóm người nào để làm thực phẩm?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘ships used by ______’ cần một danh từ chỉ người, số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘17th century: small numbers taken onto ships used by ______’",
+              "p": "Bài viết: ‘From the 17th century onwards, pirates took a few on board for food’ — cướp biển (pirates) mang một số rùa lên tàu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "ships used by ______",
+              "p": "pirates took a few on board"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là pirates."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "pirates"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "food",
+      "evidence": {
+        "quoteEn": "Relatively immobile and capable of surviving for months without food or water, the tortoises were taken on board these ships to act as food supplies during long ocean passages."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vào thập niên 1790, rùa bị bắt số lượng lớn lên tàu săn cá voi để làm gì trong các hải trình dài?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘kept for ______’ cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘kept for ______, and also used to produce ______’",
+              "p": "Bài viết: rùa ‘were taken on board these ships to act as food supplies during long ocean passages’ — được giữ làm nguồn thực phẩm (food) cho hải trình dài."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "kept for ______",
+              "p": "to act as food supplies during long ocean passages"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là food."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "food"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "oil",
+      "evidence": {
+        "quoteEn": "Sometimes, their bodies were processed into high-grade oil."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài làm thực phẩm, cơ thể rùa còn được chế biến thành sản phẩm gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘also used to produce ______’ cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘also used to produce ______’",
+              "p": "Bài viết: ‘their bodies were processed into high-grade oil’ — cơ thể rùa được chế biến thành dầu (oil) cao cấp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "used to produce ______",
+              "p": "processed into high-grade oil"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là oil."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "oil"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "settlers",
+      "evidence": {
+        "quoteEn": "This historical exploitation was then exacerbated when settlers came to the islands. They hunted the tortoises and destroyed their habitat to clear land for agriculture."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Rùa còn bị săn bắt trên các đảo bởi nhóm người nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘Hunted by ______ on the islands’ cần một danh từ chỉ người, số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘Hunted by ______ on the islands’",
+              "p": "Bài viết: ‘settlers came to the islands. They hunted the tortoises’ — người định cư (settlers) đã săn bắt rùa."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "hunted by ______",
+              "p": "settlers came to the islands. They hunted the tortoises"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là settlers."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "settlers"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "species",
+      "evidence": {
+        "quoteEn": "They also introduced alien species – ranging from cattle, pigs, goats, rats and dogs to plants and ants – that either prey on the eggs and young tortoises or damage or destroy their habitat."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc phá hủy môi trường sống còn do những sinh vật không phải bản địa nào trên đảo gây ra?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘various ______ not native to the islands’ cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘by various ______ not native to the islands’",
+              "p": "Bài viết: ‘they also introduced alien species ... that either prey on the eggs and young tortoises or damage or destroy their habitat’ — các loài (species) ngoại lai gây hại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "various ______ not native to the islands",
+              "p": "introduced alien species ... that ... damage or destroy their habitat"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là species."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "species"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "eggs",
+      "evidence": {
+        "quoteEn": "that either prey on the eggs and young tortoises or damage or destroy their habitat."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các loài ngoại lai này ăn cả rùa non và bộ phận sinh sản nào của rùa?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘tortoises’ ______’ cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘which also fed on baby tortoises and tortoises’ ______’",
+              "p": "Bài viết: các loài ngoại lai ‘prey on the eggs and young tortoises’ — ăn trứng (eggs) và rùa non."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "tortoises’ ______",
+              "p": "prey on the eggs and young tortoises"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là eggs."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "eggs"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "While people will always be prone to illness, the study of how geography affects our health could lead to the eradication of certain illnesses, and the prevention of others in the future."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn thừa nhận không phải mọi bệnh đều có thể bị loại bỏ hoàn toàn. Đề viết: ‘an acceptance that not all diseases can be totally eliminated’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn thừa nhận có bệnh sẽ không thể loại bỏ hết.",
+              "p": "Đoạn D: ‘While people will always be prone to illness’ — con người sẽ luôn có thể mắc bệnh, dù nghiên cứu địa lý y tế có thể loại bỏ một số bệnh và ngăn ngừa bệnh khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not all diseases can be totally eliminated",
+              "p": "people will always be prone to illness"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "the wind is not strong enough to clear the air of the massive amounts of smog and pollution that cause asthma, lung problems, eyesight issues and more in the people who live there. Part of the problem is, of course, the massive number of cars being driven, in addition to factories that run on coal power."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu ví dụ về các bệnh lý thể chất do hành vi con người gây ra. Đề viết: ‘examples of physical conditions caused by human behaviour’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn có ví dụ bệnh lý do hành vi con người gây ra.",
+              "p": "Đoạn C: khói bụi từ ô tô và nhà máy chạy bằng than gây ra ‘asthma, lung problems, eyesight issues and more’ — các bệnh cụ thể do con người gây ra."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "physical conditions caused by human behaviour",
+              "p": "smog and pollution ... cause asthma, lung problems, eyesight issues"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "work to create a clear way of categorizing illnesses, diseases and epidemics into local and global scales."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nhắc tới việc phân loại bệnh dựa trên mức độ lan rộng về địa lý. Đề viết: ‘a reference to classifying diseases on the basis of how far they extend geographically’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về phân loại bệnh theo phạm vi địa lý.",
+              "p": "Đoạn F: các nhà nghiên cứu ‘work to create a clear way of categorizing illnesses, diseases and epidemics into local and global scales’ — phân loại theo quy mô địa phương và toàn cầu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "classifying diseases on the basis of how far they extend geographically",
+              "p": "categorizing illnesses, diseases and epidemics into local and global scales"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "In both developed and developing nations there is often a very large discrepancy between the options available to people in different social classes, income brackets, and levels of education."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu lý do khiến mức độ tiếp cận y tế có thể khác nhau trong cùng một quốc gia. Đề viết: ‘reasons why the level of access to healthcare can vary within a country’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn giải thích vì sao khả năng tiếp cận y tế khác nhau trong một nước.",
+              "p": "Đoạn G: ‘a very large discrepancy between the options available to people in different social classes, income brackets, and levels of education’ — khác biệt tùy tầng lớp xã hội, thu nhập, học vấn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reasons why the level of access to healthcare can vary within a country",
+              "p": "a very large discrepancy between the options available to people in different social classes, income brackets, and levels of education"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "Health geography is the combination of, on the one hand, knowledge regarding geography and methods used to analyse and interpret geographical information, and on the other, the study of health, diseases and healthcare practices around the world."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn mô tả địa lý y tế là sự pha trộn giữa các lĩnh vực học thuật khác nhau. Đề viết: ‘a description of health geography as a mixture of different academic fields’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn định nghĩa địa lý y tế là sự kết hợp nhiều lĩnh vực.",
+              "p": "Đoạn D: ‘Health geography is the combination of ... knowledge regarding geography ... and ... the study of health, diseases and healthcare practices’ — kết hợp giữa địa lý học và y tế học."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "health geography as a mixture of different academic fields",
+              "p": "the combination of ... geography ... and ... the study of health, diseases and healthcare practices"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "Malaria is much less of a problem in high-altitude deserts, for instance."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn mô tả loại khu vực nơi một bệnh cụ thể hiếm gặp. Đề viết: ‘a description of the type of area where a particular illness is rare’."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về khu vực mà một bệnh cụ thể ít xảy ra.",
+              "p": "Đoạn B: ‘Malaria is much less of a problem in high-altitude deserts’ — sốt rét hiếm gặp ở vùng sa mạc cao nguyên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the type of area where a particular illness is rare",
+              "p": "malaria is much less of a problem in high-altitude deserts"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "vaccinations",
+      "evidence": {
+        "quoteEn": "many diseases that affect humans have been eradicated due to improvements in vaccinations and the availability of healthcare"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một số bệnh đã biến mất nhờ cải thiện về điều gì và về dịch vụ y tế?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘thanks to better ______ and healthcare’ cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘Certain diseases have disappeared, thanks to better ______ and healthcare.’",
+              "p": "Bài viết: ‘many diseases ... have been eradicated due to improvements in vaccinations and the availability of healthcare’ — nhờ cải thiện tiêm chủng (vaccinations)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "thanks to better ______",
+              "p": "improvements in vaccinations"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là vaccinations."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vaccinations"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "antibiotics",
+      "evidence": {
+        "quoteEn": "As a result, super-viruses and other infections resistant to antibiotics are becoming more and more common."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vì con người tiếp xúc với nhau nhiều hơn, loại thuốc nào đang mất dần hiệu quả?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Trước ‘are losing their usefulness’ cần một danh từ số nhiều làm chủ ngữ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘Because there is more contact between people, ______ are losing their usefulness.’",
+              "p": "Bài viết: ‘infections resistant to antibiotics are becoming more and more common’ — vi khuẩn ngày càng kháng thuốc kháng sinh (antibiotics), khiến thuốc mất hiệu quả."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ are losing their usefulness",
+              "p": "infections resistant to antibiotics are becoming more and more common"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là antibiotics."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "antibiotics"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "mosquito(e)s",
+      "evidence": {
+        "quoteEn": "malaria-prone areas, which are usually tropical regions that foster a warm and damp environment in which the mosquitos that can give people this disease can grow."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sinh vật truyền bệnh nào thường sinh sôi ở vùng nóng, ẩm?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘Disease-causing ______’ cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘Disease-causing ______ are most likely to be found in hot, damp regions.’",
+              "p": "Bài viết: vùng nhiệt đới ẩm ướt là nơi ‘the mosquitos that can give people this disease can grow’ — muỗi (mosquitoes) gây bệnh sinh sôi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "disease-causing ______",
+              "p": "the mosquitos that can give people this disease can grow"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là mosquito(e)s."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "mosquito(e)s"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "factories",
+      "evidence": {
+        "quoteEn": "Part of the problem is, of course, the massive number of cars being driven, in addition to factories that run on coal power."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một nguyên nhân gây ô nhiễm là loại cơ sở nào đốt một loại nhiên liệu cụ thể?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘One cause of pollution is ______’ cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘One cause of pollution is ______ that burn a particular fuel.’",
+              "p": "Bài viết: ‘factories that run on coal power’ — nhà máy (factories) chạy bằng than."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ that burn a particular fuel",
+              "p": "factories that run on coal power"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là factories."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "factories"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "forests",
+      "evidence": {
+        "quoteEn": "The rapid industrialisation of some countries in recent years has also led to the cutting down of forests to allow for the expansion of big cities"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sự phát triển của các thành phố thường tác động tới loại địa hình tự nhiên nào gần đó?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘an impact on nearby ______’ cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘The growth of cities often has an impact on nearby ______.’",
+              "p": "Bài viết: đô thị hoá ‘led to the cutting down of forests to allow for the expansion of big cities’ — chặt phá rừng (forests) để mở rộng thành phố."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "an impact on nearby ______",
+              "p": "the cutting down of forests to allow for the expansion of big cities"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là forests."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "forests"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "Polio",
+      "evidence": {
+        "quoteEn": "diseases like polio are re-emerging"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bệnh nào từng bị loại bỏ nhưng nay đang quay trở lại?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chủ ngữ đầu câu cần một danh từ riêng chỉ tên bệnh."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘______ is one disease that is growing after having been eradicated.’",
+              "p": "Bài viết: ‘diseases like polio are re-emerging’ — bệnh bại liệt (polio) đang tái xuất hiện."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ is one disease that is growing after having been eradicated",
+              "p": "diseases like polio are re-emerging"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là Polio."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Polio"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "mountain",
+      "evidence": {
+        "quoteEn": "it may be very difficult for people to get medical attention because there is a mountain between their village and the nearest hospital"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Loại vật cản địa lý nào có thể ngăn người dân tới được bệnh viện?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘a physical barrier such as a ______’ cần một danh từ số ít."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘A physical barrier such as a ______ can prevent people from reaching a hospital.’",
+              "p": "Bài viết: ‘difficult for people to get medical attention because there is a mountain between their village and the nearest hospital’ — một quả núi (mountain) chắn giữa làng và bệnh viện."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a physical barrier such as a ______",
+              "p": "there is a mountain between their village and the nearest hospital"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là mountain."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "mountain"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "dopamine",
+      "evidence": {
+        "quoteEn": "music triggers the production of dopamine – a chemical with a key role in setting people’s moods – by the neurons (nerve cells) in both the dorsal and ventral regions of the brain."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Âm nhạc kích thích các neuron ở hai vùng não sản sinh ra chất gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘a substance called ______’ cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘stimulated the brain’s neurons to release a substance called ______’",
+              "p": "Bài viết: ‘music triggers the production of dopamine ... by the neurons ... in both the dorsal and ventral regions of the brain’ — âm nhạc kích thích tiết ra dopamine."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a substance called ______",
+              "p": "triggers the production of dopamine"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là dopamine."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "dopamine"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "pleasure",
+      "evidence": {
+        "quoteEn": "As these two regions have long been linked with the experience of pleasure, this finding isn’t particularly surprising."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hai vùng não tiết dopamine từ lâu đã được liên kết với cảm giác gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘associated with feeling ______’ cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘in two of the parts of the brain which are associated with feeling ______’",
+              "p": "Bài viết: ‘these two regions have long been linked with the experience of pleasure’ — hai vùng não gắn với cảm giác khoái cảm (pleasure)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "associated with feeling ______",
+              "p": "linked with the experience of pleasure"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là pleasure."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "pleasure"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "caudate",
+      "evidence": {
+        "quoteEn": "the dopamine neurons in the caudate – a region of the brain involved in learning stimulus-response associations, and in anticipating food and other ‘reward’ stimuli – were at their most active around 15 seconds before the participants’ favourite moments in the music."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vùng não nào có neuron hoạt động mạnh nhất ngay trước những đoạn nhạc yêu thích?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘the area of the brain called the ______’ cần một danh từ riêng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘the neurons in the area of the brain called the ______ were particularly active just before the participants’ favourite moments’",
+              "p": "Bài viết: ‘the dopamine neurons in the caudate ... were at their most active around 15 seconds before the participants’ favourite moments in the music’ — vùng caudate."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the area of the brain called the ______",
+              "p": "the dopamine neurons in the caudate"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là caudate."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "caudate"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "anticipatory phase",
+      "evidence": {
+        "quoteEn": "The researchers call this the ‘anticipatory phase’ and argue that the purpose of this activity is to help us predict the arrival of our favourite part."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khoảng thời gian neuron hoạt động mạnh trước đoạn nhạc yêu thích được các nhà nghiên cứu gọi là gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘the period known as the ______’ cần một cụm danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘the period known as the ______’",
+              "p": "Bài viết: ‘The researchers call this the anticipatory phase’ — giai đoạn dự đoán (anticipatory phase)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the period known as the ______",
+              "p": "the researchers call this the ‘anticipatory phase’"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cụm cần điền là anticipatory phase."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "anticipatory phase"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "food",
+      "evidence": {
+        "quoteEn": "a region of the brain involved in learning stimulus-response associations, and in anticipating food and other ‘reward’ stimuli"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hoạt động ở vùng caudate còn liên quan đến việc dự đoán loại kích thích ‘khen thưởng’ nào, ví dụ như gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau ‘such as ______’ cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: ‘the expectation of ‘reward’ stimuli such as ______’",
+              "p": "Bài viết: caudate ‘involved in ... anticipating food and other reward stimuli’ — dự đoán về thức ăn (food) và các kích thích khen thưởng khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "‘reward’ stimuli such as ______",
+              "p": "anticipating food and other ‘reward’ stimuli"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là food."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "food"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "our body betrays all the symptoms of emotional arousal. The pupils in our eyes dilate, our pulse and blood pressure rise, the electrical conductance of our skin is lowered, and the cerebellum, a brain region associated with bodily movement, becomes strangely active. Blood is even re-directed to the muscles in our legs."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn văn đầu tiên, tác giả nhấn mạnh điều gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: phản ứng thể chất của con người với âm nhạc có thể rất mạnh mẽ (‘how intense our physical responses to music can be’).",
+              "p": "Bài liệt kê hàng loạt phản ứng sinh lý mạnh: đồng tử giãn, nhịp tim/huyết áp tăng, độ dẫn điện da giảm, tiểu não hoạt động, máu dồn tới chân — cho thấy cường độ phản ứng thể chất rất lớn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how intense our physical responses to music can be",
+              "p": "our body betrays all the symptoms of emotional arousal ... sound stirs us at our biological roots"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn 1 tập trung mô tả các phản ứng sinh lý mạnh mẽ với âm nhạc → đáp án B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói phản ứng của mỗi người khác nhau nhiều (‘how dramatically our reactions ... vary’)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nói ta biết rất ít về tác động của âm nhạc, ngược lại còn liệt kê chi tiết các biểu hiện."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Đoạn 1 chỉ tập trung vào phản ứng cơ thể, chưa nói âm nhạc tiết lộ gì về cách não hoạt động nói chung."
+            }
+          ]
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Because the scientists were combining methodologies (PET and fMRI), they were able to obtain an impressively exact and detailed portrait of music in the brain."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn 2, tác giả nhận định thế nào về nghiên cứu Montreal?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: nghiên cứu đem lại dữ liệu vô cùng chính xác (‘remarkably precise data’).",
+              "p": "Tác giả viết nhờ kết hợp PET và fMRI, nhóm nghiên cứu ‘obtain an impressively exact and detailed portrait of music in the brain’ — dữ liệu rất chính xác, chi tiết."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "remarkably precise data",
+              "p": "an impressively exact and detailed portrait of music in the brain"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Câu này khẳng định trực tiếp kết quả chính xác, chi tiết → đáp án C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không đánh giá mục tiêu nghiên cứu là ‘innovative’, chỉ nói thí nghiệm ‘rather straightforward’."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Ngược lại, tác giả không cho rằng cách làm quá đơn giản."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Tác giả không nói công nghệ là không cần thiết, chỉ liệt kê công nghệ hiện đại được dùng."
+            }
+          ]
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "the dopamine neurons in the caudate ... were at their most active around 15 seconds before the participants’ favourite moments in the music."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điều gì trong kết quả nghiên cứu Montreal khiến tác giả thấy thú vị?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: thời điểm phản ứng thần kinh của người tham gia xảy ra khi nào (‘the timing of participants’ neural responses’).",
+              "p": "Tác giả nhấn: neuron dopamine hoạt động mạnh nhất ‘around 15 seconds before the participants’ favourite moments’ — chính thời điểm (trước, không phải trong hay sau) khiến tác giả đặt câu hỏi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the timing of participants’ neural responses to the music",
+              "p": "were at their most active around 15 seconds before the participants’ favourite moments"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Toàn đoạn 3 xoáy vào câu hỏi ‘why so active in the period preceding the acoustic climax’ — tức là về thời điểm → đáp án A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không so sánh tác động của nhạc tới trạng thái cảm xúc nói chung ở đoạn này."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Vùng não được kích hoạt (dorsal/ventral, caudate) đã nêu ở đoạn trước, không phải điểm mới khiến tác giả chú ý ở đây."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không đề cập loại nhạc nào tạo hiệu ứng mạnh nhất."
+            }
+          ]
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "To demonstrate this psychological principle, the musicologist Leonard Meyer ... analysed the 5th movement of Beethoven’s String Quartet ... Meyer wanted to show how music is defined by its flirtation with – but not submission to – our expectations of order."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vì sao tác giả đưa nghiên cứu của Meyer vào bài?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: để củng cố cho phát hiện của nghiên cứu Montreal (‘to offer support for the findings of the Montreal study’).",
+              "p": "Tác giả dùng phân tích của Meyer ‘to demonstrate this psychological principle’ — chính nguyên lý về việc trì hoãn khuôn mẫu quen thuộc khiến dopamine hoạt động mạnh, đã được nêu ở nghiên cứu Montreal."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "to offer support for the findings of the Montreal study",
+              "p": "to demonstrate this psychological principle"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Câu mở đầu đoạn 4 nói rõ mục đích là ‘demonstrate’ nguyên lý vừa nêu — tức minh chứng thêm cho kết quả Montreal → đáp án B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Đây là lý thuyết của Meyer, không phải lý thuyết mới do chính tác giả đề xuất."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không đề xuất cần nghiên cứu thêm về chủ đề này."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Nghiên cứu của Meyer không đối lập mà minh chứng thêm cho phát hiện của nhóm Montreal."
+            }
+          ]
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Meyer argued that the emotions we find in music come from the unfolding events of the music itself. This ‘embodied meaning’ arises from the patterns the symphony invokes and then ignores."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo Leonard Meyer, điều gì gây ra phản ứng cảm xúc của người nghe với âm nhạc?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: cấu trúc nội tại của bản nhạc (‘the internal structure of the musical composition’).",
+              "p": "Meyer cho rằng cảm xúc bắt nguồn từ ‘the unfolding events of the music itself’ và ‘the patterns the symphony invokes and then ignores’ — chính diễn biến, cấu trúc bên trong bản nhạc."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the internal structure of the musical composition",
+              "p": "the emotions we find in music come from the unfolding events of the music itself"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Câu văn trực tiếp nói cảm xúc đến từ diễn biến/cấu trúc của chính bản nhạc → đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói tới ký ức cá nhân của người nghe."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Đây gần với ‘connotative meaning’ mà Meyer không nhấn mạnh — ông nói tới ‘embodied meaning’ từ cấu trúc nhạc, không phải sự gắn kết cố định giữa hợp âm và cảm xúc."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không đề cập tới sự đồng cảm của người nghe với ý định của nhà soạn nhạc."
+            }
+          ]
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "the dopamine neurons in the caudate ... were at their most active around 15 seconds before the participants’ favourite moments in the music."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "‘The Montreal researchers discovered that ...’ — vế câu nào tiếp nối đúng ý này?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế câu F: hoạt động neuron tăng lên trước những điểm nhấn quan trọng trong bản nhạc (‘neuron activity increases prior to key points in a musical piece’).",
+              "p": "Nhóm Montreal phát hiện neuron dopamine ở caudate ‘were at their most active around 15 seconds before the participants’ favourite moments in the music’ — hoạt động tăng lên trước các khoảnh khắc yêu thích (điểm nhấn) trong bản nhạc."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "neuron activity increases prior to key points in a musical piece",
+              "p": "were at their most active around 15 seconds before the participants’ favourite moments"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp trực tiếp với phát hiện chính của nghiên cứu Montreal → đáp án F."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Numerous studies, after all, have demonstrated that dopamine neurons quickly adapt to predictable rewards. If we know what’s going to happen next, then we don’t get excited."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "‘Many studies have demonstrated that ...’ — vế câu nào tiếp nối đúng ý này?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế câu B: hoạt động neuron giảm nếu kết quả trở nên dễ đoán (‘neuron activity decreases if outcomes become predictable’).",
+              "p": "Bài viết: ‘dopamine neurons quickly adapt to predictable rewards. If we know what’s going to happen next, then we don’t get excited’ — hoạt động neuron giảm khi kết quả trở nên dễ đoán."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "neuron activity decreases if outcomes become predictable",
+              "p": "dopamine neurons quickly adapt to predictable rewards"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp trực tiếp với câu dẫn chứng → đáp án B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "Beethoven begins with the clear statement of a rhythmic and harmonic pattern and then ... carefully holds off repeating it. What Beethoven does instead is suggest variations of the pattern. He wants to preserve an element of uncertainty in his music, making our brains beg for the one chord he refuses to give us. Beethoven saves that chord for the end."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "‘Meyer’s analysis of Beethoven’s music shows that ...’ — vế câu nào tiếp nối đúng ý này?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế câu E: âm nhạc gợi cảm xúc trì hoãn việc đưa cho người nghe điều họ mong đợi được nghe (‘emotive music delays giving listeners what they expect to hear’).",
+              "p": "Meyer chỉ ra Beethoven nêu mẫu hình rồi ‘carefully holds off repeating it’, giữ lại hợp âm mong đợi đến tận cuối bài — cố ý trì hoãn việc thoả mãn kỳ vọng người nghe."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "emotive music delays giving listeners what they expect to hear",
+              "p": "carefully holds off repeating it ... Beethoven saves that chord for the end"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây chính là kết luận rút ra từ phân tích của Meyer về Beethoven → đáp án E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "earlier theories of music focused on the way a sound can refer to the real world of images and experiences – its ‘connotative’ meaning"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "‘Earlier theories of music suggested that ...’ — vế câu nào tiếp nối đúng ý này?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế câu C: âm nhạc gợi cảm xúc có thể khiến người nghe nhớ tới hình ảnh, sự việc thật (‘emotive music can bring to mind actual pictures and events’).",
+              "p": "Bài viết: các lý thuyết trước đây tập trung vào việc âm thanh ‘refer to the real world of images and experiences’ — gợi liên tưởng tới hình ảnh, sự việc có thực, gọi là ‘connotative’ meaning."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "emotive music can bring to mind actual pictures and events",
+              "p": "a sound can refer to the real world of images and experiences"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp trực tiếp với mô tả lý thuyết cũ trong bài → đáp án C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    }
+  }
+}

@@ -56,6 +56,24 @@ const CAMBRIDGE_IELTS_14_COVER_STYLE = {
   coverImageObjectPosition: "50% 40%",
 } as const;
 
+export const CAMBRIDGE_IELTS_13_COVER_URL = "/cam 13.jpg";
+
+/** Ảnh nguồn 800×800 có viền trắng hai bên (~11%) — scale để full-bleed như Cam 16. */
+const CAMBRIDGE_IELTS_13_COVER_STYLE = {
+  coverImageScale: 1.3,
+  coverImageObjectPosition: "50% 50%",
+  coverImageTransformOrigin: "50% 50%",
+} as const;
+
+export const CAMBRIDGE_IELTS_12_COVER_URL = "/cam 12.jpg";
+
+/** Ảnh nguồn 800×800 có viền trắng hai bên (~11%) — scale để full-bleed. */
+const CAMBRIDGE_IELTS_12_COVER_STYLE = {
+  coverImageScale: 1.3,
+  coverImageObjectPosition: "50% 50%",
+  coverImageTransformOrigin: "50% 50%",
+} as const;
+
 export const CAMBRIDGE_IELTS_21_COVER_URL = "/cam 21.png";
 
 export const READING_IELTS_EXAM_HREF = "/tu-hoc/luyen-doc/luyen-de-ielts";
@@ -204,6 +222,78 @@ export const READING_CAMBRIDGE_TESTS: readonly ReadingIeltsTest[] = [
     coverImageUrl: CAMBRIDGE_IELTS_14_COVER_URL,
     ...CAMBRIDGE_IELTS_14_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(14, 1),
+  },
+  {
+    pilotId: "cam13-test4",
+    label: "Cambridge 13 · Test 4",
+    bookTitle: "Cambridge IELTS 13 Academic",
+    testNumber: 4,
+    coverImageUrl: CAMBRIDGE_IELTS_13_COVER_URL,
+    ...CAMBRIDGE_IELTS_13_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(13, 4),
+  },
+  {
+    pilotId: "cam13-test3",
+    label: "Cambridge 13 · Test 3",
+    bookTitle: "Cambridge IELTS 13 Academic",
+    testNumber: 3,
+    coverImageUrl: CAMBRIDGE_IELTS_13_COVER_URL,
+    ...CAMBRIDGE_IELTS_13_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(13, 3),
+  },
+  {
+    pilotId: "cam13-test2",
+    label: "Cambridge 13 · Test 2",
+    bookTitle: "Cambridge IELTS 13 Academic",
+    testNumber: 2,
+    coverImageUrl: CAMBRIDGE_IELTS_13_COVER_URL,
+    ...CAMBRIDGE_IELTS_13_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(13, 2),
+  },
+  {
+    pilotId: "cam13-test1",
+    label: "Cambridge 13 · Test 1",
+    bookTitle: "Cambridge IELTS 13 Academic",
+    testNumber: 1,
+    coverImageUrl: CAMBRIDGE_IELTS_13_COVER_URL,
+    ...CAMBRIDGE_IELTS_13_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(13, 1),
+  },
+  {
+    pilotId: "cam12-test4",
+    label: "Cambridge 12 · Test 4",
+    bookTitle: "Cambridge IELTS 12 Academic",
+    testNumber: 4,
+    coverImageUrl: CAMBRIDGE_IELTS_12_COVER_URL,
+    ...CAMBRIDGE_IELTS_12_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(12, 4),
+  },
+  {
+    pilotId: "cam12-test3",
+    label: "Cambridge 12 · Test 3",
+    bookTitle: "Cambridge IELTS 12 Academic",
+    testNumber: 3,
+    coverImageUrl: CAMBRIDGE_IELTS_12_COVER_URL,
+    ...CAMBRIDGE_IELTS_12_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(12, 3),
+  },
+  {
+    pilotId: "cam12-test2",
+    label: "Cambridge 12 · Test 2",
+    bookTitle: "Cambridge IELTS 12 Academic",
+    testNumber: 2,
+    coverImageUrl: CAMBRIDGE_IELTS_12_COVER_URL,
+    ...CAMBRIDGE_IELTS_12_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(12, 2),
+  },
+  {
+    pilotId: "cam12-test1",
+    label: "Cambridge 12 · Test 1",
+    bookTitle: "Cambridge IELTS 12 Academic",
+    testNumber: 1,
+    coverImageUrl: CAMBRIDGE_IELTS_12_COVER_URL,
+    ...CAMBRIDGE_IELTS_12_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(12, 1),
   },
   {
     pilotId: "cam17-test4",

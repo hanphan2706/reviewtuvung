@@ -1,3 +1,5 @@
+import { CAMBRIDGE_12_QUIZ } from "@/lib/reading/cambridge-12-quiz";
+import { CAMBRIDGE_13_QUIZ } from "@/lib/reading/cambridge-13-quiz";
 import { CAMBRIDGE_14_15_QUIZ } from "@/lib/reading/cambridge-14-15-quiz";
 import { CAMBRIDGE_16_21_QUIZ } from "@/lib/reading/cambridge-16-21-quiz";
 import { CAMBRIDGE_18_19_QUIZ } from "@/lib/reading/cambridge-18-19-quiz";
@@ -277,6 +279,8 @@ export function getQuickCheckQuiz(
 
   return (
     QUIZ_BY_ARTICLE[articleId] ??
+    CAMBRIDGE_12_QUIZ[articleId] ??
+    CAMBRIDGE_13_QUIZ[articleId] ??
     CAMBRIDGE_14_15_QUIZ[articleId] ??
     CAMBRIDGE_16_21_QUIZ[articleId] ??
     CAMBRIDGE_18_19_QUIZ[articleId] ??

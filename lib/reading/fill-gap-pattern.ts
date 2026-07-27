@@ -1,11 +1,28 @@
-/** Blank token: underscores, ellipsis, or dots (Cambridge .txt variants). */
-export const FILL_GAP_BLANK = "(?:_{2,}|…{2,}|\\.{3,})";
+/** Blank token: underscores / ellipsis (U+2026) / ASCII dots.
+ * OCR often mixes them (e.g. `……….…` + `..`), so match any run of 2+ blank chars.
+ */
+export const FILL_GAP_BLANK = "[_.…]{2,}";
 
 /** Number immediately followed by a blank (note/summary inline gaps). */
 export const FILL_GAP_RE = new RegExp(`(\\d{1,2})\\s*${FILL_GAP_BLANK}`, "g");
 
+/** Extend past a gap match while leftover blank chars remain (defensive). */
+export function consumeTrailingBlankChars(text: string, fromIndex: number): number {
+  let i = fromIndex;
+  while (i < text.length && /[_.…]/.test(text[i] ?? "")) i += 1;
+  return i;
+}
+
 /** Bare gap in vertical Cambridge PDFs: "entirely 1 diet" (not thousands like "3,100" or years like "70 CE"). */
 export const BARE_GAP_RE = /\s([1-9]|[12]\d|3[0-9]|40)(?!\d)(?:,(?!\d)|(?=[\s.…]|$))/g;
+
+/** Units / dimensions after a bare number — not fill-gap question numbers (e.g. "up to 30 metres"). */
+export const BARE_GAP_UNIT_AFTER_RE =
+  /^\s*(?:metres?|meters?|kilometres?|kilometers?|km\b|kg\b|cm\b|mm\b|%|years?|days?|hours?|minutes?|seconds?|tall|long|wide|high)\b/i;
+
+export function isBareGapFollowedByUnit(line: string, matchEndIndex: number): boolean {
+  return BARE_GAP_UNIT_AFTER_RE.test(line.slice(matchEndIndex));
+}
 
 export function textHasBlankChars(text: string): boolean {
   return new RegExp(FILL_GAP_BLANK).test(text);
@@ -28,6 +45,12 @@ export function extractGapNumbersFromLine(line: string): number[] {
   let bm = bare.exec(line);
   while (bm !== null) {
     const n = Number.parseInt(bm[1] ?? "", 10);
+    const afterIdx = (bm.index ?? 0) + bm[0].length;
+    // Skip measurements / dimensions: "up to 30 metres", "6 metres long".
+    if (isBareGapFollowedByUnit(line, afterIdx)) {
+      bm = bare.exec(line);
+      continue;
+    }
     if (!Number.isNaN(n) && n >= 1 && n <= 40) nums.push(n);
     bm = bare.exec(line);
   }

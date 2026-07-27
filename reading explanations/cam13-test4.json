@@ -1,0 +1,1753 @@
+{
+  "pilotId": "cam13-test4",
+  "schemaVersion": 4,
+  "note": "Cam 13 R T4 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Cutty Sark: the fastest sailing ship of all time",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Saving the soil",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "The Happiness Industry (Book Review)",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "The fastest commercial sailing vessels of all time were clippers, three-masted ships built to transport goods around the world, although some also took passengers."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Clippers ban đầu có được đóng ra với mục đích chính là chở khách không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Clippers were originally intended to be used as passenger ships” — mục đích ban đầu là chở khách.",
+              "p": "Bài viết: “three-masted ships built to transport goods around the world, although some also took passengers” — mục đích chính là chở hàng, chở khách chỉ là phụ ở một số tàu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "originally intended to be used as passenger ships",
+              "p": "built to transport goods ... although some also took passengers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mục đích chính của clippers là chở hàng hóa, chở khách chỉ là việc thêm ở một số tàu — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Tam, a farmer, is chased by a witch called Nannie, who is wearing a ‘cutty sark’ – an old Scottish name for a short nightdress."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tên “Cutty Sark” có phải là tên của một nhân vật trong bài thơ không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Cutty Sark was given the name of a character in a poem” — tên tàu lấy theo tên một nhân vật.",
+              "p": "Bài viết: nhân vật phù thủy tên là “Nannie”, còn “cutty sark” chỉ là tên gọi cũ của một chiếc áo ngủ ngắn (short nightdress) mà bà ta mặc — không phải tên người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the name of a character",
+              "p": "an old Scottish name for a short nightdress"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Cutty sark” là tên một loại áo ngủ, còn nhân vật phù thủy tên là Nannie — không khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Willis chose a new shipbuilding firm, Scott & Linton, and ensured that the contract with them put him in a very strong position. In the end, the firm was forced out of business, and the ship was finished by a competitor."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hợp đồng giữa John Willis và Scott & Linton có nghiêng về phía lợi cho Willis không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“The contract ... favoured Willis” — hợp đồng có lợi cho Willis.",
+              "p": "Bài viết: Willis “ensured that the contract with them put him in a very strong position” — ông đảm bảo hợp đồng đặt mình ở vị thế rất mạnh; kết quả Scott & Linton phải phá sản."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "favoured Willis",
+              "p": "put him in a very strong position"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hợp đồng đặt Willis vào vị thế mạnh, còn đối tác thì phá sản — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Willis’s company was active in the tea trade between China and Britain, where speed could bring shipowners both profits and prestige, so Cutty Sark was designed to make the journey more quickly than any other ship."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Willis có muốn Cutty Sark là tàu chở trà nhanh nhất giữa Anh và Trung Quốc không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“wanted Cutty Sark to be the fastest tea clipper travelling between the UK and China”.",
+              "p": "Bài viết: “Cutty Sark was designed to make the journey more quickly than any other ship” trong tuyến buôn trà Anh–Trung Quốc — đúng như đề nêu."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "designed to be the fastest tea clipper",
+              "p": "designed to make the journey more quickly than any other ship"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định trực tiếp mục tiêu thiết kế của Cutty Sark là nhanh nhất trong tuyến trà — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Cutty Sark reached London a week after Thermopylae."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dù bị hư hại do bão, Cutty Sark có về tới London trước Thermopylae không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Cutty Sark beat Thermopylae back to London” — về đích trước Thermopylae.",
+              "p": "Bài viết: “Cutty Sark reached London a week after Thermopylae” — về sau Thermopylae một tuần, không phải về trước."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "beat Thermopylae back to London",
+              "p": "reached London a week after Thermopylae"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cutty Sark về sau Thermopylae một tuần do phải sửa bánh lái giữa biển — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Steam ships reduced the journey time between Britain and China by approximately two months."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Việc kênh Suez mở cửa có khiến tàu hơi nước đi giữa Anh và Trung Quốc nhanh hơn tàu buồm không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the opening of the Suez Canal meant that steam ships could travel ... faster than clippers”.",
+              "p": "Bài viết: tàu hơi nước dùng được tuyến kênh Suez ngắn, trực tiếp, còn tàu buồm phải đi vòng xa hơn vì cần gió mạnh; kết quả “Steam ships reduced the journey time ... by approximately two months” — nhanh hơn khoảng hai tháng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "steam ships could travel faster than clippers",
+              "p": "reduced the journey time ... by approximately two months"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhờ kênh Suez, tàu hơi nước rút ngắn được hành trình so với tàu buồm — đúng với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "While steam ships could make use of the quick, direct route between the Mediterranean and the Red Sea, the canal was of no use to sailing ships, which needed the much stronger winds of the oceans, and so had to sail a far greater distance."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tàu hơi nước có đôi khi đi theo tuyến đường biển (ocean route) giữa London và Trung Quốc không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Steam ships sometimes used the ocean route” — tàu hơi nước đôi khi đi tuyến đại dương.",
+              "p": "Bài viết chỉ nói tàu hơi nước dùng tuyến kênh Suez trực tiếp, còn tàu buồm mới cần đi tuyến đại dương vì cần gió mạnh — không có câu nào nói tàu hơi nước từng dùng tuyến đại dương."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "steam ships sometimes used the ocean route",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ đối chiếu tuyến kênh Suez (tàu hơi nước) với tuyến đại dương (tàu buồm), không nói tàu hơi nước từng đi tuyến đại dương."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Woodget took her further south than any previous captain, bringing her dangerously close to icebergs off the southern tip of South America."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thuyền trưởng Woodget có khiến Cutty Sark gặp nguy cơ va phải băng trôi không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Captain Woodget put Cutty Sark at risk of hitting an iceberg”.",
+              "p": "Bài viết: Woodget “took her further south than any previous captain, bringing her dangerously close to icebergs” — đưa tàu xuống vùng cực nam, tới gần băng trôi một cách nguy hiểm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "at risk of hitting an iceberg",
+              "p": "dangerously close to icebergs"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài xác nhận rõ Woodget đưa tàu tới gần băng trôi một cách nguy hiểm — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "sentence-fill",
+      "answer": "wool",
+      "evidence": {
+        "quoteEn": "This marked a turnaround and the beginning of the most successful period in Cutty Sark’s working life, transporting wool from Australia to Britain."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sau năm 1880, trong thời kỳ thành công nhất, Cutty Sark chủ yếu chở loại hàng gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “carried ______ as its main cargo” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Cutty Sark carried ______ as its main cargo during its most successful time”.",
+              "p": "Bài viết: “the beginning of the most successful period ... transporting wool from Australia to Britain” — chở len (wool) từ Úc về Anh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "carried ______ as its main cargo",
+              "p": "transporting wool from Australia to Britain"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hàng hóa chính trong thời kỳ thành công nhất là wool."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "wool"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "sentence-fill",
+      "answer": "navigator",
+      "evidence": {
+        "quoteEn": "The ship’s next captain, Richard Woodget, was an excellent navigator, who got the best out of both his ship and his crew."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Woodget giỏi ở vai trò thuyền trưởng và vai trò nào khác:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “as a captain and ______” cần một danh từ chỉ nghề/vai trò."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “As a captain and ______, Woodget was very skilled”.",
+              "p": "Bài viết: “was an excellent navigator, who got the best out of both his ship and his crew” — là một người dẫn đường (navigator) xuất sắc."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "as a captain and ______",
+              "p": "an excellent navigator"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vai trò thứ hai được nêu là navigator."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "navigator"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "sentence-fill",
+      "answer": "gale",
+      "evidence": {
+        "quoteEn": "Badly damaged in a gale in 1922, she was put into Falmouth harbor in southwest England, for repairs."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ferreira (tên tàu lúc đó) tới Falmouth để sửa chữa thiệt hại do đâu gây ra:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “damage that a ______ had caused” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Ferreira went to Falmouth to repair damage that a ______ had caused”.",
+              "p": "Bài viết: “Badly damaged in a gale in 1922, she was put into Falmouth harbor ... for repairs” — hư hại do một trận gió bão (gale) năm 1922."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "damage that a ______ had caused",
+              "p": "badly damaged in a gale in 1922"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nguyên nhân hư hại là gale."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "gale"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "sentence-fill",
+      "answer": "training",
+      "evidence": {
+        "quoteEn": "Dowman used Cutty Sark as a training ship, and she continued in this role after his death. When she was no longer required, in 1954, she was transferred to dry dock at Greenwich to go on public display."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Từ 1923 đến 1954, Cutty Sark được dùng để làm gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “used for ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Between 1923 and 1954, Cutty Sark was used for ______”.",
+              "p": "Bài viết: “Dowman used Cutty Sark as a training ship, and she continued in this role after his death” cho tới khi không còn cần nữa vào năm 1954 — dùng làm tàu huấn luyện (training)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "used for ______",
+              "p": "used Cutty Sark as a training ship"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vai trò của tàu trong giai đoạn này là training."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "training"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "sentence-fill",
+      "answer": "fire",
+      "evidence": {
+        "quoteEn": "The ship suffered from fire in 2007, and again, less seriously, in 2014, but now Cutty Sark attracts a quarter of a million visitors a year."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong thế kỷ 21, Cutty Sark hai lần bị hư hại vì nguyên nhân gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “damaged by ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Cutty Sark has twice been damaged by ______ in the 21st century”.",
+              "p": "Bài viết: “The ship suffered from fire in 2007, and again, less seriously, in 2014” — hai lần bị hỏa hoạn (fire)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "damaged by ______",
+              "p": "suffered from fire in 2007 ... and again ... in 2014"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nguyên nhân hư hại hai lần là fire."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "fire"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "minerals",
+      "evidence": {
+        "quoteEn": "A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài vi khuẩn, vi sinh vật khác và xác thực vật, đất khỏe mạnh còn chứa gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “plant remains and ______” cần một danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “as well as plant remains and ______”.",
+              "p": "Bài viết: vi sinh vật “living amid decomposing plants and various minerals” — sống lẫn trong xác thực vật đang phân hủy và các khoáng chất (minerals)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "plant remains and ______",
+              "p": "decomposing plants and various minerals"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là minerals."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "minerals"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "carbon",
+      "evidence": {
+        "quoteEn": "as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đất ảnh hưởng lớn tới khí hậu qua việc lưu trữ chất gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “storing ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “its function in storing ______ has a significant effect on the climate”.",
+              "p": "Bài viết: vi sinh vật “lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere” — đất giữ lượng carbon gấp ba lần khí quyển."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "storing ______",
+              "p": "lock in their carbon content"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là carbon."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "carbon"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "water",
+      "evidence": {
+        "quoteEn": "Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đất giúp ngăn thiệt hại cho công trình và hạ tầng nhờ giữ lại chất gì:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “because it holds ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “it prevents damage ... because it holds ______”.",
+              "p": "Bài viết: “Soils also store water, preventing flood damage” — đất giữ nước (water), nhờ đó ngăn được lũ lụt gây hại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "holds ______",
+              "p": "store water"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là water."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "water"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "agriculture",
+      "evidence": {
+        "quoteEn": "Agriculture is by far the biggest problem."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Yếu tố chính gây suy thoái đất là hoạt động nào của con người:"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the ______ carried out by humans” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “The main factor contributing to soil degradation is the ______ carried out by humans”.",
+              "p": "Bài viết: “Agriculture is by far the biggest problem” — canh tác nông nghiệp (agriculture) là nguyên nhân lớn nhất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ carried out by humans",
+              "p": "agriculture is by far the biggest problem"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là agriculture."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "agriculture"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "sentence-ending",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Humans tend not to return unused parts of harvested crops directly to the soil to enrich it, meaning that the soil gradually becomes less fertile."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu “Nutrients contained in the unused parts of harvested crops …” cần nối với vế kết nào trong A–F?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu nói về các dưỡng chất trong phần cây trồng không dùng tới sau thu hoạch.",
+              "p": "Bài viết: “Humans tend not to return unused parts of harvested crops directly to the soil to enrich it” — con người thường không trả phần cây bỏ đi lại cho đất, khớp với vế C “may not be put back into the soil”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may not be put back into the soil (C)",
+              "p": "tend not to return unused parts of harvested crops directly to the soil"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Dưỡng chất trong phần cây bỏ đi thường không được trả lại cho đất — khớp vế C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "sentence-ending",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "Chemical fertilisers can release polluting nitrous oxide into the atmosphere and excess is often washed away with the rain, releasing nitrogen into rivers... indiscriminate use of fertilisers hurts the soil itself, turning it acidic and salty."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu “Synthetic fertilisers produced with Haber-Bosch process …” cần nối với vế kết nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu nói về phân bón hóa học sản xuất theo phương pháp Haber-Bosch.",
+              "p": "Bài viết: phân bón này “release polluting nitrous oxide into the atmosphere”, làm ô nhiễm sông và “hurts the soil itself, turning it acidic and salty” — gây hại nhiều mặt cho môi trường, khớp vế E “may cause damage to different aspects of the environment”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may cause damage to different aspects of the environment (E)",
+              "p": "release polluting nitrous oxide ... releasing nitrogen into rivers ... hurts the soil itself"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phân bón hóa học gây hại cho không khí, sông và đất — khớp vế E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "sentence-ending",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "When they applied Floris’s mix to the desert-like test plots, a good crop of plants emerged that were not just healthy at the surface, but had roots strong enough to pierce dirt as hard as rock."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu “Addition of a mixture developed by Pius Floris to the soil …” cần nối với vế kết nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu nói về việc bổ sung hỗn hợp của Pius Floris vào đất.",
+              "p": "Bài viết: khi bón hỗn hợp này, “a good crop of plants emerged that were not just healthy ... but had roots strong enough” — cây mọc lên khỏe, rễ chắc — khớp vế A “may improve the number and quality of plants growing there”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may improve the number and quality of plants growing there (A)",
+              "p": "a good crop of plants emerged that were not just healthy ... but had roots strong enough"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hỗn hợp của Floris giúp cây mọc tốt và khỏe hơn — khớp vế A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "sentence-ending",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Like the idea of carbon neutrality, it is an easily understood target that can help shape expectations and encourage action."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Câu “The idea of zero net soil degradation …” cần nối với vế kết nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế đầu nói về ý tưởng “zero net land degradation”.",
+              "p": "Bài viết: mục tiêu dễ hiểu này ra đời vì “Most scientists don't speak language that policy-makers can understand”, và nó “can help shape expectations and encourage action” — giúp chính phủ dễ nắm bắt vấn đề hơn, khớp vế D “may help governments to be more aware of soil-related issues”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may help governments to be more aware of soil-related issues (D)",
+              "p": "an easily understood target that can help shape expectations and encourage action"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mục tiêu này giúp nhà nước và công chúng dễ hiểu và hành động hơn — khớp vế D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "One of the people looking for a solution to his problem is Pius Floris, who started out running a tree-care business in the Netherlands, and now advises some of the world’s top soil scientists. He came to realise that the best way to ensure his trees flourished was to take care of the soil."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nói về động lực khiến một người khởi xướng dự án cải tạo đất. Đề viết: “a reference to one person's motivation for a soil-improvement project”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nêu lý do cá nhân khiến ai đó bắt tay cải tạo đất.",
+              "p": "Đoạn E: Pius Floris “came to realise that the best way to ensure his trees flourished was to take care of the soil” — nhận ra muốn cây khỏe thì phải chăm đất, từ đó phát triển hỗn hợp cải tạo đất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "one person's motivation for a soil-improvement project",
+              "p": "realised that the best way to ensure his trees flourished was to take care of the soil"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "In the wild, when plants grow they remove nutrients from the soil, but then when the plants die and decay these nutrients are returned directly to the soil."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn giải thích cách đất giữ được sự khỏe mạnh trước khi có nông nghiệp. Đề viết: “an explanation of how soil stayed healthy before the development of farming”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nói về cơ chế tự nhiên giữ đất khỏe mạnh trước khi có canh tác.",
+              "p": "Đoạn C: “In the wild, when plants grow they remove nutrients from the soil, but ... these nutrients are returned directly to the soil” — trong tự nhiên, dưỡng chất được hoàn trả lại cho đất theo chu trình khép kín."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how soil stayed healthy before the development of farming",
+              "p": "in the wild ... nutrients are returned directly to the soil"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "a map linked to a database that can be fed measurements from field surveys, drone surveys, satellite imagery, lad analyses and so on to provide real-time data on the state of the soil."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu các ví dụ về những cách khác nhau để thu thập thông tin về suy thoái đất. Đề viết: “examples of different ways of collecting information on soil degradation”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn liệt kê nhiều phương pháp thu thập dữ liệu về đất.",
+              "p": "Đoạn F: dự án Global Soil Map dùng dữ liệu từ “field surveys, drone surveys, satellite imagery, lad analyses and so on” — khảo sát thực địa, drone, ảnh vệ tinh, phân tích trong phòng thí nghiệm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "different ways of collecting information on soil degradation",
+              "p": "field surveys, drone surveys, satellite imagery, lad analyses"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "Several researchers are agitating for the immediate creation of protected zones for endangered soils."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn đưa ra đề xuất bảo vệ một số loại đất trong thời gian sắp tới. Đề viết: “a suggestion for a way of keeping some types of soil safe in the near future”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn nêu biện pháp bảo vệ đất đang gặp nguy hiểm.",
+              "p": "Đoạn G: “Several researchers are agitating for the immediate creation of protected zones for endangered soils” — đề xuất lập ngay các khu bảo vệ cho đất đang bị đe dọa."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "keeping some types of soil safe in the near future",
+              "p": "immediate creation of protected zones for endangered soils"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "To assess our options on a global scale we first need an accurate picture of what types of soil are out there, and the problems they face. That’s not easy. For one thing, there is no agreed international system for classifying soil."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu lý do khó có được cái nhìn tổng quan về suy thoái đất. Đề viết: “a reason why it is difficult to provide an overview of soil degradation”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề cần đoạn giải thích vì sao khó có bức tranh toàn cảnh về suy thoái đất.",
+              "p": "Đoạn F: “That's not easy. For one thing, there is no agreed international system for classifying soil” — không có hệ thống phân loại đất được thống nhất quốc tế, nên khó đánh giá tổng quan."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "difficult to provide an overview of soil degradation",
+              "p": "there is no agreed international system for classifying soil"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Without knowing anything much of him or the school of moral theory he established – since they are by education and intellectual conviction illiterate in the history of ideas – our advocates of positive psychology follow in his tracks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả bài review có thái độ gì với những người ủng hộ positive psychology:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: họ thiếu hiểu biết về những ý tưởng đáng lẽ họ phải xem xét (“They are ignorant about the ideas they should be considering”).",
+              "p": "Bài viết: họ “oblivious to the vast philosophical literature” và “illiterate in the history of ideas” — không biết gì về cả một nền văn học triết học lâu đời về hạnh phúc, kể cả về Bentham mà họ vô tình đi theo."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "ignorant about the ideas they should be considering",
+              "p": "oblivious to the vast philosophical literature ... illiterate in the history of ideas"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả chê trách họ vì không biết tới cả di sản triết học lâu đời về hạnh phúc — đúng ý đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Tác giả không nói họ sai khi bác bỏ ý tưởng của Bentham — thực ra họ vô tình đi theo Bentham mà không biết."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Ngược lại, bài nói họ “without knowing anything much of him” — chưa từng nghiên cứu Bentham, chứ không phải bị ảnh hưởng quá mức."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Tác giả gọi cách nghĩ của họ là “crude and simple-minded”, không phải một cách tiếp cận mới mẻ."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "The Greek philosopher Aristotle may have identified happiness with self-realisation in the 4th century BC, and thinkers throughout the ages may have struggled to reconcile the pursuit of happiness with other human values, but for Bentham all this was mere metaphysics or fiction."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả nhắc tới triết gia Aristotle nhằm gợi ý điều gì về hạnh phúc:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: hạnh phúc có thể không chỉ là niềm vui và sự vắng mặt của đau khổ (“may not be just pleasure and the absence of pain”).",
+              "p": "Bài viết: Aristotle “identified happiness with self-realisation” — gắn hạnh phúc với sự tự hoàn thiện bản thân, khác hẳn quan điểm của Bentham coi hạnh phúc chỉ là “pleasure and the absence of pain”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may not be just pleasure and the absence of pain",
+              "p": "identified happiness with self-realisation"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Aristotle được nêu ra để đối lập với quan điểm hẹp của Bentham, cho thấy hạnh phúc có thể rộng hơn chỉ là khoái lạc."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không dùng Aristotle để nói hạnh phúc không nên là mục tiêu chính của con người."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không nói hạnh phúc không đáng để theo đuổi."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không nhấn mạnh khía cạnh “không chỉ là khái niệm trừu tượng” của hạnh phúc qua Aristotle."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "By associating money so closely to inner experience, Davies writes, Bentham ‘set the stage for the entangling of psychological research and capitalism that would shape the business practices of the twentieth century’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo Davies, việc Bentham gợi ý gắn giá cả hàng hóa với hạnh phúc có ý nghĩa quan trọng vì sao:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: nó tạo ra một mối liên kết giữa công việc/kinh doanh và tâm lý học (“it established a connection between work and psychology”).",
+              "p": "Bài viết: gắn tiền với trải nghiệm nội tâm đã “set the stage for the entangling of psychological research and capitalism that would shape the business practices of the twentieth century” — mở đường cho việc tâm lý học và hoạt động kinh doanh/tư bản quấn chặt vào nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "established a connection between work and psychology",
+              "p": "entangling of psychological research and capitalism ... business practices"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ý nghĩa quan trọng nằm ở việc mở đường cho tâm lý học gắn liền với kinh doanh/tư bản — khớp đáp án B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói đây là cách đo hạnh phúc thành công đầu tiên; Bentham chỉ đề xuất, không phải đã được chứng minh hiệu quả."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không khẳng định đây là ví dụ nghiên cứu tâm lý học thành công đầu tiên."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không nhắc tới quyền lợi của người tiêu dùng trong ý tưởng này."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "In the 1790s, he wrote to the Home Office suggesting that the departments of government be linked together through a set of ‘conversation tubes’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bentham gợi ý loại công nghệ nào để cải thiện điều gì đó giữa các bộ trong chính phủ:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “suggested a type of technology to improve ______ for different Government departments”.",
+              "p": "Bài viết: ông đề xuất nối các bộ với nhau bằng “conversation tubes” — hệ thống ống dẫn giúp trò chuyện, tức là cải thiện việc giao tiếp/liên lạc (communication)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "improve ______",
+              "p": "conversation tubes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ống trò chuyện giúp các bộ liên lạc với nhau → communication (F)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "to the Bank of England with a design for a printing device that could produce unforgeable banknotes."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bentham phát triển cách in tiền mới nhằm tăng điều gì cho tiền giấy:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “developed a new way of printing banknotes to increase ______”.",
+              "p": "Bài viết: thiết bị in này tạo ra “unforgeable banknotes” — tiền giấy không thể làm giả, tức tăng tính an toàn (security)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "increase ______",
+              "p": "unforgeable banknotes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tiền không thể giả mạo → tăng security (B)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "He drew up plans for a ‘frigidarium’ to keep provisions such as meat, fish, fruit and vegetables fresh."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bentham thiết kế phương pháp gì liên quan tới thực phẩm:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “designed a method for the ______ of food”.",
+              "p": "Bài viết: thiết kế “frigidarium” để “keep provisions such as meat, fish, fruit and vegetables fresh” — giữ thực phẩm luôn tươi, tức là bảo quản (preservation)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ of food",
+              "p": "keep provisions ... fresh"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Giữ thực phẩm tươi lâu → preservation (G)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "His celebrated design for a prison to be known as a ‘Panopticon’, in which prisoners would be kept in solitary confinement while being visible at all times to the guards, was very nearly adopted."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thiết kế nhà tù Panopticon của Bentham cho phép điều gì đối với tù nhân, luôn luôn:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “a prison which allowed the ______ of prisoners at all times”.",
+              "p": "Bài viết: tù nhân “being visible at all times to the guards” — luôn bị quan sát (observation) bởi lính canh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ of prisoners",
+              "p": "being visible at all times to the guards"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tù nhân luôn bị nhìn thấy → observation (E)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "If happiness is to be regarded as a science, it has to be measured, and Bentham suggested two ways in which this might be done."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khi nghiên cứu về hạnh phúc, Bentham tìm hiểu khả năng làm gì với hạnh phúc:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “investigated possibilities for its ______, and suggested some methods of doing this”.",
+              "p": "Bài viết: “it has to be measured, and Bentham suggested two ways in which this might be done” — ông tìm cách đo lường (measurement) hạnh phúc, ví dụ qua nhịp mạch hoặc giá tiền."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "possibilities for its ______",
+              "p": "it has to be measured"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ông tìm cách đo hạnh phúc → measurement (A)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "The Happiness Industry describes how the project of a science of happiness has become integral to capitalism. We learn much that is interesting about how economic problems are being redefined and treated as psychological maladies."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một điểm mạnh của cuốn The Happiness Industry có phải là cách nó bàn về quan hệ giữa tâm lý học và kinh tế học không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“its discussion of the relationship between psychology and economics” — bàn về quan hệ tâm lý học – kinh tế học.",
+              "p": "Bài viết: sách “describes how the project of a science of happiness has become integral to capitalism” và “we learn much that is interesting about how economic problems are being redefined and treated as psychological maladies” — tác giả review khen phần này là thú vị, đáng chú ý."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "relationship between psychology and economics",
+              "p": "science of happiness ... integral to capitalism ... economic problems ... treated as psychological maladies"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả review đánh giá tích cực (“much that is interesting”) về phần bàn quan hệ tâm lý học – kinh tế học — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Viewing happiness as a complex of pleasurable sensations, he suggested that it might be quantified by measuring the human pulse rate. Alternatively, money could be used as the standard for quantification."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có phải một số cảm xúc khó đo lường hơn những cảm xúc khác không — bài có nói vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“It is more difficult to measure some emotions than others” — một số cảm xúc khó đo hơn.",
+              "p": "Bài chỉ nêu hai cách Bentham đề xuất để đo hạnh phúc (nhịp mạch, giá tiền) — không so sánh mức độ khó đo giữa các cảm xúc khác nhau."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more difficult to measure some emotions than others",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không đề cập tới việc so sánh độ khó đo lường giữa các loại cảm xúc."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Watson had no factual basis for his view of human action. When he became president of the American Psychological Association in 1915, he ‘had never even studied a single human being’: his research had been confined to experiments on white rats."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các ý tưởng về hành vi học (behaviourism) của Watson có được hậu thuẫn bởi nghiên cứu trên con người mà ông thực hiện trước năm 1915 không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Watson's ideas ... were supported by research on humans he carried out before 1915” — được nghiên cứu trên người ủng hộ.",
+              "p": "Bài viết: “Watson had no factual basis for his view” và tới năm 1915 ông “had never even studied a single human being”, nghiên cứu của ông “confined to experiments on white rats” — chỉ làm trên chuột trắng, không phải con người."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "supported by research on humans",
+              "p": "had never even studied a single human being ... confined to experiments on white rats"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rõ Watson chưa từng nghiên cứu con người trước 1915, chỉ thí nghiệm trên chuột — trái với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Yet Watson’s reductive model is now widely applied, with ‘behaviour change’ becoming the goal of governments: in Britain, a ‘Behaviour Insights Team’ has been established by the government."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ý tưởng của Watson có ảnh hưởng mạnh nhất tới các chính phủ ngoài nước Mỹ không — bài có so sánh vậy không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Watson's ideas have been most influential on governments outside America” — ảnh hưởng nhiều nhất ở các nước ngoài Mỹ.",
+              "p": "Bài chỉ đưa một ví dụ: “in Britain, a 'Behaviour Insights Team' has been established” — không so sánh mức độ ảnh hưởng giữa Mỹ và các nước khác."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "most influential on governments outside America",
+              "p": "(not stated in the passage)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài chỉ nêu một ví dụ ở Anh, không so sánh mức ảnh hưởng của Watson giữa các quốc gia."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Modern industrial societies appear to need the possibility of ever-increasing happiness to motivate them in their labours."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhu cầu về hạnh phúc có gắn liền với công nghiệp hóa không — theo quan điểm tác giả:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“The need for happiness is linked to industrialisation” — nhu cầu hạnh phúc liên hệ với công nghiệp hóa.",
+              "p": "Bài viết: “Modern industrial societies appear to need the possibility of ever-increasing happiness to motivate them in their labours” — các xã hội công nghiệp hiện đại cần ý tưởng hạnh phúc ngày càng tăng để tạo động lực lao động."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "linked to industrialisation",
+              "p": "modern industrial societies ... need ... happiness to motivate them in their labours"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả khẳng định trực tiếp mối liên hệ giữa xã hội công nghiệp và nhu cầu hạnh phúc — khớp với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "But whatever its intellectual pedigree, the idea that governments should be responsible for promoting happiness is always a threat to human freedom."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo tác giả, mục tiêu chính của chính phủ có nên là tăng hạnh phúc cho người dân không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“A main aim of government should be to increase the happiness of the population” — chính phủ nên lấy hạnh phúc làm mục tiêu chính.",
+              "p": "Bài viết: “the idea that governments should be responsible for promoting happiness is always a threat to human freedom” — tác giả cho rằng ý tưởng này luôn đe dọa tự do con người, tức là phản đối."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a main aim of government should be to increase happiness",
+              "p": "governments should be responsible for promoting happiness is always a threat to human freedom"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác giả coi việc chính phủ theo đuổi hạnh phúc dân chúng là một mối đe dọa với tự do — ngược lại với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    }
+  }
+}

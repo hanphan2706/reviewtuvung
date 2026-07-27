@@ -1,0 +1,88 @@
+import type { PassageVocabItem } from "@/lib/reading/passage-vocabulary";
+
+export const CAMBRIDGE_12_VOCABULARY: Record<string, PassageVocabItem[]> = {
+  "cam12-test1-p1": [
+    { term: "buoyant", definitionVi: "nổi, có độ nổi (như bần)", level: "B1-B2" },
+    { term: "sapling", definitionVi: "cây non, cây con", level: "B1-B2" },
+    { term: "insulation", definitionVi: "cách nhiệt, vật liệu cách nhiệt", level: "B1-B2" },
+    { term: "biodiversity", definitionVi: "đa dạng sinh học", level: "B1-B2" },
+    { term: "desertification", definitionVi: "sa mạc hóa", level: "C1" },
+  ],
+  "cam12-test1-p2": [
+    { term: "philatelist", definitionVi: "người sưu tập tem", level: "B1-B2" },
+    { term: "instrumental", definitionVi: "mang tính công cụ / phục vụ mục đích", level: "B1-B2" },
+    { term: "aimless", definitionVi: "vô mục đích, lan man", level: "B1-B2" },
+    { term: "engrossing", definitionVi: "cuốn hút, hấp dẫn sâu sắc", level: "B1-B2" },
+    { term: "deltiologist", definitionVi: "người sưu tập bưu thiếp", level: "C1" },
+  ],
+  "cam12-test1-p3": [
+    { term: "prosecution", definitionVi: "việc truy tố / khởi tố", level: "B1-B2" },
+    { term: "principled", definitionVi: "có nguyên tắc, có đạo đức", level: "B1-B2" },
+    { term: "codified", definitionVi: "được mã hóa, được quy chế hóa", level: "B1-B2" },
+    { term: "professionalization", definitionVi: "sự chuyên nghiệp hóa", level: "B1-B2" },
+    { term: "unprincipled", definitionVi: "vô nguyên tắc, không đạo đức", level: "C1" },
+  ],
+  "cam12-test2-p1": [
+    { term: "smallholder", definitionVi: "nông dân sở hữu mảnh ruộng nhỏ", level: "B1-B2" },
+    { term: "volatility", definitionVi: "sự biến động mạnh (giá cả, thị trường)", level: "B1-B2" },
+    { term: "mitigate", definitionVi: "giảm nhẹ, làm dịu bớt (rủi ro, tác hại)", level: "B1-B2" },
+    { term: "vulnerability", definitionVi: "tính dễ tổn thương, dễ bị tác động", level: "B1-B2" },
+    { term: "counter-intuitively", definitionVi: "trái với trực giác", level: "C1" },
+  ],
+  "cam12-test2-p2": [
+    { term: "hinterland", definitionVi: "vùng nội địa xa trung tâm", level: "B1-B2" },
+    { term: "chroniclers", definitionVi: "người ghi chép lịch sử", level: "B1-B2" },
+    { term: "mausoleum", definitionVi: "lăng mộ, mộ lớn", level: "B1-B2" },
+    { term: "spellbound", definitionVi: "mê mẩn, say sưa đến mức không rời mắt", level: "B1-B2" },
+    { term: "perplexed", definitionVi: "bối rối, khó hiểu", level: "C1" },
+  ],
+  "cam12-test2-p3": [
+    { term: "bilingual", definitionVi: "song ngữ", level: "B1-B2" },
+    { term: "monolingual", definitionVi: "đơn ngữ", level: "B1-B2" },
+    { term: "co-activation", definitionVi: "kích hoạt đồng thời (hai ngôn ngữ)", level: "B1-B2" },
+    { term: "degenerative", definitionVi: "thoái hóa, tiến triển xấu dần (bệnh)", level: "B1-B2" },
+    { term: "fundamental frequency", definitionVi: "tần số cơ bản (cao độ giọng nói)", level: "C1" },
+  ],
+  "cam12-test3-p1": [
+    { term: "reintroduction", definitionVi: "thả lại / tái thả vào tự nhiên", level: "B1-B2" },
+    { term: "inhospitable", definitionVi: "khắc nghiệt, không thuận lợi cho sự sống", level: "B1-B2" },
+    { term: "repatriation", definitionVi: "đưa trở về quê hương / môi trường gốc", level: "B1-B2" },
+    { term: "archipelago", definitionVi: "quần đảo", level: "B1-B2" },
+    { term: "unprecedented", definitionVi: "chưa từng có tiền lệ", level: "C1" },
+  ],
+  "cam12-test3-p2": [
+    { term: "malaria", definitionVi: "bệnh sốt rét", level: "B1-B2" },
+    { term: "epidemiology", definitionVi: "dịch tễ học", level: "B1-B2" },
+    { term: "industrialisation", definitionVi: "công nghiệp hóa", level: "B1-B2" },
+    { term: "globalised", definitionVi: "toàn cầu hóa", level: "B1-B2" },
+    { term: "hybrid", definitionVi: "lai ghép, kết hợp nhiều lĩnh vực", level: "C1" },
+  ],
+  "cam12-test3-p3": [
+    { term: "dopamine", definitionVi: "dopamine (chất dẫn truyền thần kinh)", level: "B1-B2" },
+    { term: "arousal", definitionVi: "sự kích thích (cảm xúc/thể chất)", level: "B1-B2" },
+    { term: "anticipatory", definitionVi: "mang tính dự đoán, chờ đợi", level: "B1-B2" },
+    { term: "connotative", definitionVi: "mang nghĩa liên tưởng, gợi ý ngoài nghĩa đen", level: "B1-B2" },
+    { term: "underpinnings", definitionVi: "nền tảng, cơ sở (lý thuyết/cơ chế)", level: "C1" },
+  ],
+  "cam12-test4-p1": [
+    { term: "obsidian", definitionVi: "đá obsidian (thủy tinh núi lửa tự nhiên)", level: "B1-B2" },
+    { term: "impurities", definitionVi: "tạp chất, chất lẫn", level: "B1-B2" },
+    { term: "refractive", definitionVi: "khúc xạ (ánh sáng)", level: "B1-B2" },
+    { term: "repeal", definitionVi: "bãi bỏ (luật, thuế)", level: "B1-B2" },
+    { term: "semi-automatic", definitionVi: "bán tự động", level: "C1" },
+  ],
+  "cam12-test4-p2": [
+    { term: "rewilding", definitionVi: "phục hồi hoang dã (hệ sinh thái)", level: "B1-B2" },
+    { term: "totemic", definitionVi: "mang tính biểu tượng, tôtem", level: "B1-B2" },
+    { term: "denuded", definitionVi: "bị phá rừng, trụi trơ", level: "B1-B2" },
+    { term: "assemblages", definitionVi: "tập hợp các loài / thành phần", level: "B1-B2" },
+    { term: "charismatic", definitionVi: "cuốn hút, có sức hấp dẫn (động vật hoang dã)", level: "C1" },
+  ],
+  "cam12-test4-p3": [
+    { term: "governance", definitionVi: "quản trị, quản lý (công ty)", level: "B1-B2" },
+    { term: "remuneration", definitionVi: "thù lao, tiền lương/thưởng", level: "B1-B2" },
+    { term: "non-executive", definitionVi: "không điều hành (giám đốc hội đồng)", level: "B1-B2" },
+    { term: "post-mortems", definitionVi: "phân tích sau sự cố, rút kinh nghiệm", level: "B1-B2" },
+    { term: "tyranny", definitionVi: "sự áp đặt, cai trị độc đoán", level: "C1" },
+  ],
+};

@@ -1,0 +1,1807 @@
+{
+  "pilotId": "cam13-test1",
+  "schemaVersion": 4,
+  "note": "Cam 13 R T1 — tiếng Việt tự nhiên theo chuẩn pilot Cam 19 T1; paraphrase ngắn trong cột bài đọc.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Case Study: Tourism New Zealand website",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Why being bored is stimulating – and useful, too",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Artificial artist?",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "update",
+      "evidence": {
+        "quoteEn": "participating businesses were able to update the details they gave on a regular basis"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: các doanh nghiệp du lịch được phép làm gì với thông tin của họ theo định kỳ (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “to ______” cần một động từ nguyên thể."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Trong notes: các doanh nghiệp du lịch được phép làm gì với thông tin của họ theo định kỳ (một từ):",
+              "p": "Bài viết: “participating businesses were able to update the details they gave on a regular basis”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "update",
+              "p": "participating businesses were able to update the details they gave on a regular basis"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là update."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "update"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "environment",
+      "evidence": {
+        "quoteEn": "the effect of each business on the environment was considered"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: đánh giá toàn quốc còn xem xét tác động của doanh nghiệp tới đâu (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “impact on the ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Trong notes: đánh giá toàn quốc còn xem xét tác động của doanh nghiệp tới đâu (một từ):",
+              "p": "Bài viết: “the effect of each business on the environment was considered”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "environment",
+              "p": "the effect of each business on the environment was considered"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là environment."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "environment"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "captain",
+      "evidence": {
+        "quoteEn": "an interview with former New Zealand All Blacks rugby captain Tana Umaga"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: bài phỏng vấn là với một cựu vận động viên từng giữ chức vụ gì trong đội bóng bầu dục (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “sports ______” cần một danh từ chỉ chức danh."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Trong notes: bài phỏng vấn là với một cựu vận động viên từng giữ chức vụ gì trong đội bóng bầu dục (một từ):",
+              "p": "Bài viết: “an interview with former New Zealand All Blacks rugby captain Tana Umaga”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "captain",
+              "p": "an interview with former New Zealand All Blacks rugby captain Tana Umaga"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là captain."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "captain"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "films",
+      "evidence": {
+        "quoteEn": "the locations chosen for blockbuster films which had made use of New Zealand’s stunning scenery"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: tour tương tác đưa người xem tới các địa điểm từng xuất hiện trong loại sản phẩm nào (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “used in ______” cần một danh từ (số nhiều)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Trong notes: tour tương tác đưa người xem tới các địa điểm từng xuất hiện trong loại sản phẩm nào (một từ):",
+              "p": "Bài viết: “the locations chosen for blockbuster films which had made use of New Zealand’s stunning scenery”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "films",
+              "p": "the locations chosen for blockbuster films which had made use of New Zealand’s stunning scenery"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là films."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "films"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "season",
+      "evidence": {
+        "quoteEn": "highlighting different routes according to the season"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: thông tin về các tuyến lái xe thay đổi tùy theo yếu tố gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “depending on the ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Trong notes: thông tin về các tuyến lái xe thay đổi tùy theo yếu tố gì (một từ):",
+              "p": "Bài viết: “highlighting different routes according to the season”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "season",
+              "p": "highlighting different routes according to the season"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là season."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "season"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "accommodation",
+      "evidence": {
+        "quoteEn": "There were also links to accommodation in the area"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: ngoài bản đồ và giao thông công cộng, Travel Planner còn có liên kết tới gì trong khu vực (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “local ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Trong notes: ngoài bản đồ và giao thông công cộng, Travel Planner còn có liên kết tới gì trong khu vực (một từ):",
+              "p": "Bài viết: “There were also links to accommodation in the area”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "accommodation",
+              "p": "There were also links to accommodation in the area"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là accommodation."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "accommodation"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "blog",
+      "evidence": {
+        "quoteEn": "anyone could submit a blog of their New Zealand travels for possible inclusion on the website"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong notes: du khách có thể gửi đường link tới thứ gì họ viết về chuyến đi (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “their ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Trong notes: du khách có thể gửi đường link tới thứ gì họ viết về chuyến đi (một từ):",
+              "p": "Bài viết: “anyone could submit a blog of their New Zealand travels for possible inclusion on the website”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "blog",
+              "p": "anyone could submit a blog of their New Zealand travels for possible inclusion on the website"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là blog."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "blog"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "The website was set up to allow both individuals and travel organisations to create itineraries and travel packages to suit their own needs and interests"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Website www.newzealand.com có được lập ra để cung cấp sẵn hành trình và gói du lịch dựng sẵn cho công ty lữ hành và khách cá nhân không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói website nhằm “provide ready-made itineraries and packages” (cung cấp hành trình/gói làm sẵn) cho công ty và khách cá nhân.",
+              "p": "Bài viết: website được lập ra để mọi người TỰ “create itineraries and travel packages to suit their own needs” — tức là công cụ để khách tự tạo, không phải cung cấp sẵn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói website nhằm “provide ready-made itineraries and packages” (cung cấp hành trình/gói làm sẵn) cho công ty và khách cá nhân.",
+              "p": "The website was set up to allow both individuals and travel organisations to create itineraries and travel packages to suit their own needs and interests"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nêu thông tin trái ngược với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "visitors can search for activities not solely by geographical location, but also by the particular nature of the activity"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phần lớn du khách có bắt đầu tìm kiếm trên website bằng cách tra theo vị trí địa lý không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói “most visitors started searching … by geographical location” (đa số khách bắt đầu tìm theo vị trí).",
+              "p": "Bài viết chỉ nói khách CÓ THỂ tìm theo vị trí địa lý hoặc theo loại hoạt động — không nói cách nào được đa số dùng trước."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói “most visitors started searching … by geographical location” (đa số khách bắt đầu tìm theo vị trí).",
+              "p": "visitors can search for activities not solely by geographical location, but also by the particular nature of the activity"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không cung cấp thông tin để khẳng định hay phủ nhận điều này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "activities are the key driver of visitor satisfaction, contributing 74% to visitor satisfaction, while transport and accommodation account for the remaining 26%"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo nghiên cứu, 26% mức hài lòng của du khách có liên quan tới chỗ ở (accommodation) không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói 26% sự hài lòng liên quan tới “their accommodation” (chỗ ở của khách).",
+              "p": "Bài viết: 26% còn lại là của CẢ “transport and accommodation” (giao thông và chỗ ở) gộp lại, không riêng chỗ ở."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói 26% sự hài lòng liên quan tới “their accommodation” (chỗ ở của khách).",
+              "p": "activities are the key driver of visitor satisfaction, contributing 74% to visitor satisfaction, while transport and accommodation account for the remaining 26%"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nêu thông tin trái ngược với đề."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "visitors enjoy cultural activities most when they are interactive"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Du khách tới New Zealand có thích được tham gia vào văn hóa địa phương không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói du khách “like to become involved in the local culture” (thích hòa mình vào văn hóa địa phương).",
+              "p": "Bài viết: khách thích nhất các hoạt động văn hóa mang tính “interactive” như tới marae học về đời sống Maori — đúng là thích tham gia/hòa mình."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói du khách “like to become involved in the local culture” (thích hòa mình vào văn hóa địa phương).",
+              "p": "visitors enjoy cultural activities most when they are interactive"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài xác nhận đúng thông tin này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "find activities that involve only a few people more special and meaningful"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Du khách có thích ở những khách sạn nhỏ tại New Zealand hơn là khách sạn lớn không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói khách “like staying in small hotels … rather than in larger ones” (thích khách sạn nhỏ hơn khách sạn lớn).",
+              "p": "Bài viết chỉ nói khách thích các HOẠT ĐỘNG có ít người tham gia hơn — không hề nhắc tới việc chọn khách sạn nhỏ hay lớn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói khách “like staying in small hotels … rather than in larger ones” (thích khách sạn nhỏ hơn khách sạn lớn).",
+              "p": "find activities that involve only a few people more special and meaningful"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không cung cấp thông tin để khẳng định hay phủ nhận điều này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "most visitors stay for longer (average 20 days) and want to see as much of the country as possible on what is often seen as a once-in-a-lifetime visit"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhiều du khách có cảm thấy khó có khả năng họ sẽ trở lại New Zealand sau chuyến đi này không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói nhiều khách “feel it is unlikely that they will return” (cảm thấy khó quay lại).",
+              "p": "Bài viết: chuyến đi thường được xem là “once-in-a-lifetime visit” (chỉ một lần trong đời) — ngụ ý khách không nghĩ mình sẽ trở lại."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề nói nhiều khách “feel it is unlikely that they will return” (cảm thấy khó quay lại).",
+              "p": "most visitors stay for longer (average 20 days) and want to see as much of the country as possible on what is often seen as a once-in-a-lifetime visit"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài xác nhận đúng thông tin này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "iv",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quotesEn": [
+          "defining boredom so that it can be studied in the lab has proved difficult",
+          "There isn’t even agreement over whether boredom is always a low-energy, flat kind of emotion or whether feeling agitated and restless counts as boredom, too"
+        ]
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A nói khoa học gặp khó khăn gì khi nghiên cứu cảm giác buồn chán — khớp heading nào trong 8 tiêu đề (i–viii)?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đoạn A nói khoa học gặp khó khăn gì khi nghiên cứu cảm giác buồn chán — khớp heading nào trong 8 tiêu đề (i–viii)?",
+              "p": "Đoạn A: định nghĩa boredom để nghiên cứu trong phòng lab “has proved difficult”, còn tranh cãi cả về việc nó là trạng thái năng lượng thấp hay kích động — đúng là “Problems with a scientific approach to boredom” (iv)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "heading iv",
+              "p": "defining boredom so that it can be studied in the lab has proved difficult / There isn’t even agreement over whether boredom is always a low-energy, flat kind of emotion or whether feeling agitated and restless counts as boredom, too"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iv"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quotesEn": [
+          "identified five distinct types: indifferent, calibrating, searching, reactant and apathetic",
+          "These can be plotted on two axes"
+        ]
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B mô tả việc Goetz làm gì với cảm giác buồn chán — khớp heading nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đoạn B mô tả việc Goetz làm gì với cảm giác buồn chán — khớp heading nào?",
+              "p": "Đoạn B: Goetz xác định 5 loại boredom rồi vẽ trên hai trục — đúng là “Creating a system of classification for feelings of boredom” (vi)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "heading vi",
+              "p": "identified five distinct types: indifferent, calibrating, searching, reactant and apathetic / These can be plotted on two axes"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quotesEn": [
+          "Mann has found that being bored makes us more creative",
+          "came up with more creative ideas about how to use a polystyrene cup than a control group"
+        ]
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C nói về điều gì tích cực mà buồn chán có thể mang lại — khớp heading nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đoạn C nói về điều gì tích cực mà buồn chán có thể mang lại — khớp heading nào?",
+              "p": "Đoạn C: Mann thấy buồn chán khiến người ta sáng tạo hơn (thí nghiệm cốc polystyrene) — đúng là “The productive outcomes that may result from boredom” (i)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "heading i",
+              "p": "Mann has found that being bored makes us more creative / came up with more creative ideas about how to use a polystyrene cup than a control group"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "i"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "v",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quotesEn": [
+          "repeatedly failing to engage attention can lead to state where we don’t know what to do any more, and no longer care"
+        ]
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D cảnh báo điều gì có thể xảy ra nếu cứ liên tục thất bại trong việc chú tâm — khớp heading nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đoạn D cảnh báo điều gì có thể xảy ra nếu cứ liên tục thất bại trong việc chú tâm — khớp heading nào?",
+              "p": "Đoạn D: Eastwood cảnh báo việc liên tục không chú tâm được có thể dẫn tới trạng thái “no longer care” — đúng là “A potential danger arising from boredom” (v)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "heading v",
+              "p": "repeatedly failing to engage attention can lead to state where we don’t know what to do any more, and no longer care"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "v"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "viii",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quotesEn": [
+          "Boredom proneness has been linked with a variety of traits",
+          "People who are motivated by pleasure seem to suffer particularly badly"
+        ]
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E nói nhóm của Eastwood đang tìm hiểu ai dễ bị boredom tác động nhất — khớp heading nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đoạn E nói nhóm của Eastwood đang tìm hiểu ai dễ bị boredom tác động nhất — khớp heading nào?",
+              "p": "Đoạn E: liên hệ boredom proneness với các nét tính cách, chỉ ra người bị động lực bởi pleasure “suffer particularly badly” — đúng là “Identifying those most affected by boredom” (viii)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "heading viii",
+              "p": "Boredom proneness has been linked with a variety of traits / People who are motivated by pleasure seem to suffer particularly badly"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "viii"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quotesEn": [
+          "our over-connected lifestyles might even be a new source of boredom",
+          "perhaps we should leave our phones alone, and use boredom to motivate us to engage with the world in a more meaningful way"
+        ]
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F đưa ra lý giải mới nào và gợi ý cách khắc phục nào cho boredom — khớp heading nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đoạn F đưa ra lý giải mới nào và gợi ý cách khắc phục nào cho boredom — khớp heading nào?",
+              "p": "Đoạn F: Wemelsfelder đề xuất lối sống quá kết nối là nguồn gây boredom mới, rồi gợi ý bỏ điện thoại xuống để boredom thúc đẩy ta gắn kết với thế giới thật hơn — đúng là “A new explanation and a new cure for boredom” (iii)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "heading iii",
+              "p": "our over-connected lifestyles might even be a new source of boredom / perhaps we should leave our phones alone, and use boredom to motivate us to engage with the world in a more meaningful way"
+            }
+          ]
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iii"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "If disgust protects humans from infection, boredom may protect them from “infectious” social situations"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Peter Toohey gắn với ý nào trong danh sách A–E?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý E: boredom có thể khiến ta tránh một trải nghiệm khó chịu (“encourage us to avoid an unpleasant experience”).",
+              "p": "Toohey so sánh boredom với disgust: nếu disgust giúp con người tránh nhiễm bệnh, thì boredom có thể giúp tránh các tình huống xã hội “nhiễm khuẩn” — tức là tránh trải nghiệm không hay."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Ý E: boredom có thể khiến ta tránh một trải nghiệm khó chịu (“encourage us to avoid an unpleasant experience”).",
+              "p": "If disgust protects humans from infection, boredom may protect them from “infectious” social situations"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ý này khớp với phát biểu/nghiên cứu được gán cho người này trong bài, ứng với đáp án E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "the most damaging is ‘reactant’ boredom with its explosive combination of high arousal and negative emotion"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thomas Goetz gắn với ý nào trong danh sách A–E?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý B: một loại boredom tệ hơn hẳn các loại khác (“one sort of boredom is worse than all the others”).",
+              "p": "Goetz chỉ ra rằng trong 5 loại boredom, “reactant” là loại gây hại nhất — đúng nghĩa một loại tệ hơn tất cả."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Ý B: một loại boredom tệ hơn hẳn các loại khác (“one sort of boredom is worse than all the others”).",
+              "p": "the most damaging is ‘reactant’ boredom with its explosive combination of high arousal and negative emotion"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ý này khớp với phát biểu/nghiên cứu được gán cho người này trong bài, ứng với đáp án B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "your efforts to improve the situation can end up making you feel worse"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "John Eastwood gắn với ý nào trong danh sách A–E?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý D: cố gắng đối phó với boredom có thể khiến hậu quả tiêu cực tăng lên (“trying to cope … can increase its negative effects”).",
+              "p": "Eastwood nói việc cố kết nối lại với thế giới khi thất bại chỉ khiến người ta thêm frustration/irritability — nỗ lực đối phó làm mọi thứ tệ hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Ý D: cố gắng đối phó với boredom có thể khiến hậu quả tiêu cực tăng lên (“trying to cope … can increase its negative effects”).",
+              "p": "your efforts to improve the situation can end up making you feel worse"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ý này khớp với phát biểu/nghiên cứu được gán cho người này trong bài, ứng với đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "our over-connected lifestyles might even be a new source of boredom"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Francoise Wemelsfelder gắn với ý nào trong danh sách A–E?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ý A: cách chúng ta sống ngày nay có thể khiến boredom dễ xảy ra hơn (“the way we live today may encourage boredom”).",
+              "p": "Wemelsfelder cho rằng lối sống “over-connected” hiện đại chính là nguồn gây ra boredom mới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Ý A: cách chúng ta sống ngày nay có thể khiến boredom dễ xảy ra hơn (“the way we live today may encourage boredom”).",
+              "p": "our over-connected lifestyles might even be a new source of boredom"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ý này khớp với phát biểu/nghiên cứu được gán cho người này trong bài, ứng với đáp án A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "focus",
+      "evidence": {
+        "quoteEn": "This causes an inability to focus on anything, which makes time seem to go painfully slowly"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong summary: đặc điểm trung tâm của boredom theo Eastwood là người ta không thể làm gì (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “cannot ______” cần một động từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “the central feature of boredom is that people cannot ______”.",
+              "p": "Bài viết: “This causes an inability to focus on anything, which makes time seem to go painfully slowly”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "focus",
+              "p": "This causes an inability to focus on anything, which makes time seem to go painfully slowly"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là focus."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "focus"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "pleasure",
+      "evidence": {
+        "quoteEn": "People who are motivated by pleasure seem to suffer particularly badly"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong summary: những người coi điều gì là mục tiêu quan trọng trong đời sẽ khó đối phó với boredom (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “those for whom ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “those for whom ______ is an important aim in life may have problems in coping with boredom”.",
+              "p": "Bài viết: “People who are motivated by pleasure seem to suffer particularly badly”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "pleasure",
+              "p": "People who are motivated by pleasure seem to suffer particularly badly"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là pleasure."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "pleasure"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "curiosity",
+      "evidence": {
+        "quoteEn": "Other personality traits, such as curiosity, are associated with a high boredom threshold"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong summary: đặc điểm tính cách nào giúp người ta chịu đựng boredom tốt hơn (một từ):"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “the characteristic of ______” cần một danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “those who have the characteristic of ______ can generally cope with it”.",
+              "p": "Bài viết: “Other personality traits, such as curiosity, are associated with a high boredom threshold”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "curiosity",
+              "p": "Other personality traits, such as curiosity, are associated with a high boredom threshold"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ cần điền là curiosity."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "curiosity"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Classical music by an artificial composer has had audiences enraptured, and even tricked them into believing a human was behind the score. Artworks painted by a robot have sold for thousands of dollars and been hung in prestigious galleries."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn đầu, tác giả đang gợi ý điều gì về các sản phẩm do máy tính tạo ra?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: lĩnh vực này đã đạt được nhiều tiến bộ đáng kể (“a great deal of progress has already been attained”).",
+              "p": "Bài kể liên tiếp các thành tựu: nhạc do máy soạn khiến khán giả ngỡ là người thật, tranh do robot vẽ được bán giá cao và treo ở bảo tàng lớn — cho thấy tiến bộ rõ rệt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đáp án B: lĩnh vực này đã đạt được nhiều tiến bộ đáng kể (“a great deal of progress has already been attained”).",
+              "p": "Classical music by an artificial composer has had audiences enraptured, and even tricked them into believing a human was behind the score. Artworks painted by a robot have sold for thousands of dollars and been hung in prestigious galleries."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đáp án đúng là B, khớp trực tiếp với dẫn chứng trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không so sánh mức độ chấp nhận của công chúng giữa các trường hợp khác nhau."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Đoạn này không so sánh mức thành công giữa các loại hình nghệ thuật khác nhau."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Ngược lại, đoạn văn cho thấy các thành tựu là có thật và đáng kể, không nói công chúng đang phóng đại."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "It scares a lot of people. They are worried that it is taking something special away from what it means to be human."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo Geraint Wiggins, vì sao nhiều người lo lắng về nghệ thuật do máy tính tạo ra?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: nó đe dọa một phẩm chất căn bản của con người (“it undermines a fundamental human quality”).",
+              "p": "Wiggins nói máy tính làm nghệ thuật “taking something special away from what it means to be human” — lấy đi điều đặc biệt gắn với bản chất con người, đúng là đe dọa một phẩm chất căn bản."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đáp án C: nó đe dọa một phẩm chất căn bản của con người (“it undermines a fundamental human quality”).",
+              "p": "It scares a lot of people. They are worried that it is taking something special away from what it means to be human."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đáp án đúng là C, khớp trực tiếp với dẫn chứng trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không so sánh giá trị thẩm mỹ giữa nghệ thuật máy tính và con người."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói nghệ thuật máy tính sẽ thay thế hoàn toàn nghệ thuật con người."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không nói khả năng sáng tạo của con người sẽ suy giảm vì máy tính."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "the Painting Fool only needs minimal direction and can come up with its own concepts by going online for material. The software runs its own web searches and trawls through social media sites."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Điểm khác biệt then chốt giữa Aaron và Painting Fool là gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: nguồn lấy chất liệu/đề tài sáng tác (“the source of its subject matter”).",
+              "p": "Aaron chỉ là công cụ thực hiện ý tưởng có sẵn của người lập trình; còn Painting Fool tự tìm chất liệu bằng cách lên mạng tìm kiếm, lướt mạng xã hội — khác biệt nằm ở nguồn đề tài."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đáp án C: nguồn lấy chất liệu/đề tài sáng tác (“the source of its subject matter”).",
+              "p": "the Painting Fool only needs minimal direction and can come up with its own concepts by going online for material. The software runs its own web searches and trawls through social media sites."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đáp án đúng là C, khớp trực tiếp với dẫn chứng trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không so sánh xuất thân/background của hai người lập trình."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói phản ứng của công chúng với hai chương trình khác nhau ra sao."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không so sánh trình độ kỹ thuật đầu ra giữa Aaron và Painting Fool."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Colton argues that such reactions arise from people’s double standards towards software-produced and human-produced art."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Colton đưa ra quan điểm gì ở đoạn thứ tư?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: con người có xu hướng đánh giá nghệ thuật máy tính và nghệ thuật con người theo tiêu chuẩn khác nhau (“judge computer art and human art according to different criteria”).",
+              "p": "Colton cho rằng phản ứng cho tranh của Painting Fool là “mechanical” xuất phát từ “double standards” — tiêu chuẩn kép — giữa nghệ thuật do máy và do người tạo ra."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đáp án D: con người có xu hướng đánh giá nghệ thuật máy tính và nghệ thuật con người theo tiêu chuẩn khác nhau (“judge computer art and human art according to different criteria”).",
+              "p": "Colton argues that such reactions arise from people’s double standards towards software-produced and human-produced art."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đáp án đúng là D, khớp trực tiếp với dẫn chứng trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Colton phản đối việc coi nghệ thuật máy là ngây ngô/đơn giản, không đồng tình với quan điểm đó."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Colton không nói khái niệm sáng tạo cần khác nhau tùy loại hình nghệ thuật."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Colton phản bác ý cho rằng máy không thể sáng tạo như con người, chứ không đồng ý với nó."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Some of the Painting Fool’s paintings of a chair came out in black and white, thanks to a technical glitch. This gives the work an eerie, ghostlike quality."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả nhắc tới các bức tranh vẽ ghế là ví dụ cho loại nghệ thuật máy tính nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: đạt được một hiệu ứng đặc biệt gây ấn tượng (“achieves a particularly striking effect”).",
+              "p": "Do lỗi kỹ thuật, tranh ra đen trắng và có chất “eerie, ghostlike” — một hiệu ứng thị giác ấn tượng, dù là ngoài ý muốn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đáp án A: đạt được một hiệu ứng đặc biệt gây ấn tượng (“achieves a particularly striking effect”).",
+              "p": "Some of the Painting Fool’s paintings of a chair came out in black and white, thanks to a technical glitch. This gives the work an eerie, ghostlike quality."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đáp án đúng là A, khớp trực tiếp với dẫn chứng trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Bài không nói đây là ví dụ về kỹ năng nghệ thuật thực sự của máy."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không có chuyện tranh ghế giống phong cách của một nghệ sĩ nổi tiếng cụ thể (Ellsworth Kelly chỉ được nêu để so sánh việc hạn chế màu sắc)."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Tác giả không dùng ví dụ này để chỉ ra hạn chế kỹ thuật, mà để chỉ ra hiệu ứng thú vị ngoài dự tính."
+            }
+          ]
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Researchers like Colton don’t believe it is right to measure machine creativity directly to that of humans who ‘have had millennia to develop our skills’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "“Simon Colton says it is important to consider the long-term view then …” — vế câu nào tiếp nối đúng ý này?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế câu D: so sánh thành tựu nghệ thuật giữa con người và máy tính (“comparing the artistic achievements of humans and computers”).",
+              "p": "Colton cho rằng cần nhìn dài hạn TRƯỚC KHI so sánh sáng tạo của máy với con người — vì con người đã có hàng ngàn năm để phát triển kỹ năng; nối đúng với vế D."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Vế câu D: so sánh thành tựu nghệ thuật giữa con người và máy tính (“comparing the artistic achievements of humans and computers”).",
+              "p": "Researchers like Colton don’t believe it is right to measure machine creativity directly to that of humans who ‘have had millennia to develop our skills’."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vế câu này khớp trực tiếp với dẫn chứng trong bài, tương ứng đáp án D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "EMI even fooled classical music experts into thinking they were hearing genuine Bach."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "“David Cope’s EMI software surprised people by …” — vế câu nào tiếp nối đúng ý này?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế câu A: tạo ra tác phẩm gần như không phân biệt được với tác phẩm của con người (“generating work that was virtually indistinguishable from that of humans”).",
+              "p": "EMI khiến cả chuyên gia nhạc cổ điển tưởng đang nghe Bach thật — đúng nghĩa tạo ra sản phẩm không phân biệt được với người, nối với vế A."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Vế câu A: tạo ra tác phẩm gần như không phân biệt được với tác phẩm của con người (“generating work that was virtually indistinguishable from that of humans”).",
+              "p": "EMI even fooled classical music experts into thinking they were hearing genuine Bach."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vế câu này khớp trực tiếp với dẫn chứng trong bài, tương ứng đáp án A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "Some, such as Wiggins, have blasted Cope’s work as pseudoscience, and condemned him for his deliberately vague explanation of how the software worked."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "“Geraint Wiggins criticized Cope for not …” — vế câu nào tiếp nối đúng ý này?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế câu E: không tiết lộ chi tiết kỹ thuật của chương trình (“revealing the technical details of his program”).",
+              "p": "Wiggins chê Cope vì giải thích “deliberately vague” (mập mờ có chủ ý) về cách phần mềm hoạt động — tức là không công khai chi tiết kỹ thuật, nối với vế E."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Vế câu E: không tiết lộ chi tiết kỹ thuật của chương trình (“revealing the technical details of his program”).",
+              "p": "Some, such as Wiggins, have blasted Cope’s work as pseudoscience, and condemned him for his deliberately vague explanation of how the software worked."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vế câu này khớp trực tiếp với dẫn chứng trong bài, tương ứng đáp án E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Douglas Hofstadter of Indiana University said EMI created replicas which still rely completely on the original artist’s creative impulses."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "“Douglas Hofstadter claimed that EMI was …” — vế câu nào tiếp nối đúng ý này?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế câu C: tạo ra sản phẩm hoàn toàn phụ thuộc vào sự sáng tạo của người tạo ra nó (“producing work entirely dependent on the imagination of its creator”).",
+              "p": "Hofstadter nói EMI chỉ tạo ra bản sao vẫn “rely completely on the original artist’s creative impulses” — phụ thuộc hoàn toàn vào sáng tạo gốc, nối với vế C."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Vế câu C: tạo ra sản phẩm hoàn toàn phụ thuộc vào sự sáng tạo của người tạo ra nó (“producing work entirely dependent on the imagination of its creator”).",
+              "p": "Douglas Hofstadter of Indiana University said EMI created replicas which still rely completely on the original artist’s creative impulses."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vế câu này khớp trực tiếp với dẫn chứng trong bài, tương ứng đáp án C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "When audiences found out the truth they were often outraged with Cope, and one music lover even tried to punch him."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "“Audiences who had listened to EMI’s music became angry after …” — vế câu nào tiếp nối đúng ý này?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế câu G: phát hiện ra đó là sản phẩm của một chương trình máy tính (“discovering that it was the product of a computer program”).",
+              "p": "Khán giả nổi giận SAU KHI biết sự thật (rằng nhạc là do máy soạn) — đúng là sau khi phát hiện ra nguồn gốc máy tính, nối với vế G."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Vế câu G: phát hiện ra đó là sản phẩm của một chương trình máy tính (“discovering that it was the product of a computer program”).",
+              "p": "When audiences found out the truth they were often outraged with Cope, and one music lover even tried to punch him."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vế câu này khớp trực tiếp với dẫn chứng trong bài, tương ứng đáp án G."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "The participants weren’t told beforehand whether the tunes were composed by humans or computers, but were asked to guess, and then rate how much they liked each one."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "“The participants in David Moffat’s study had to assess music without …” — vế câu nào tiếp nối đúng ý này?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Vế câu B: biết được đó là sản phẩm của con người hay máy tính (“knowing whether it was the work of humans or software”).",
+              "p": "Người tham gia không được cho biết trước ai/gì soạn nhạc, phải tự đoán rồi đánh giá — đúng là đánh giá mà KHÔNG BIẾT nguồn gốc, nối với vế B."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Vế câu B: biết được đó là sản phẩm của con người hay máy tính (“knowing whether it was the work of humans or software”).",
+              "p": "The participants weren’t told beforehand whether the tunes were composed by humans or computers, but were asked to guess, and then rate how much they liked each one."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vế câu này khớp trực tiếp với dẫn chứng trong bài, tương ứng đáp án B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "A study by computer scientist David Moffat of Glasgow Caledonian University provides a clue."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nghiên cứu của Moffat có thể giúp lý giải phản ứng của công chúng với EMI không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Moffat’s research may help explain people’s reactions to EMI.”",
+              "p": "Bài đặt câu hỏi vì sao người ta yêu nhạc EMI nhưng lại phản ứng tiêu cực khi biết sự thật, rồi dẫn ngay nghiên cứu của Moffat “provides a clue” — cung cấp đầu mối lý giải."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề: “Moffat’s research may help explain people’s reactions to EMI.”",
+              "p": "A study by computer scientist David Moffat of Glasgow Caledonian University provides a clue."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài đồng ý với ý này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "People who thought the composer was a computer tended to dislike the piece more than those who believed it was human. This was true even among the experts, who might have been expected to be more objective in their analyses."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Những người không phải chuyên gia trong nghiên cứu của Moffat có phản ứng theo cách hoàn toàn có thể đoán trước hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The non-experts … all responded in a predictable way.”",
+              "p": "Bài chỉ nói xu hướng chung (tin là máy soạn thì thích ít hơn) và nhấn mạnh điều này đúng cả với chuyên gia — không tách riêng và khẳng định TẤT CẢ người không chuyên đều phản ứng theo cách dự đoán được."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề: “The non-experts … all responded in a predictable way.”",
+              "p": "People who thought the composer was a computer tended to dislike the piece more than those who believed it was human. This was true even among the experts, who might have been expected to be more objective in their analyses."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài không đưa ra ý kiến rõ ràng về điều này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "experiments by Justin Kruger of New York University have shown that people’s enjoyment of an artwork increases if they think more time and effort was needed to create it"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phát hiện của Justin Kruger có làm lung lay lý thuyết của Paul Bloom về định kiến của con người với nghệ thuật máy tính không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “Justin Kruger’s findings cast doubt on Paul Bloom’s theory.”",
+              "p": "Bài dùng “Meanwhile” để nối nghiên cứu của Kruger với ý của Bloom theo hướng bổ sung/cùng chiều (thời gian, công sức bỏ ra khiến người xem thích tác phẩm hơn) — không phải để phản bác Bloom."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Đề: “Justin Kruger’s findings cast doubt on Paul Bloom’s theory.”",
+              "p": "experiments by Justin Kruger of New York University have shown that people’s enjoyment of an artwork increases if they think more time and effort was needed to create it"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài phản bác ý này."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    }
+  }
+}

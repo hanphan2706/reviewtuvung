@@ -29,7 +29,7 @@ function readAndSplitPassages(pilotId: string): ReadingPassageBlock[] {
 export async function loadReadingPassages(pilotId: ReadingPilotId): Promise<ReadingPassageBlock[]> {
   return unstable_cache(
     async () => readAndSplitPassages(pilotId),
-    ["reading-passages-v29", pilotId],
+    ["reading-passages-v38", pilotId],
     { revalidate: 300 },
   )();
 }
