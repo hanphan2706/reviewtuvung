@@ -7,6 +7,14 @@
   "preambleSeconds": 74.24,
   "cues": [
     {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "16. Hello and welcome. My name is Heather McCallum and I'm one of the potters who work here",
+      "start": 70.13,
+      "end": 81.22,
+      "preAudio": false
+    },
+    {
       "id": "cue-1",
       "speaker": null,
       "text": "Hello and welcome.",
@@ -23,6 +31,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "at Adelman pottery. Before we go into the workshop, I just want to say a bit about the craft",
+      "start": 81.22,
+      "end": 88.44,
+      "preAudio": false
+    },
+    {
       "id": "cue-3",
       "speaker": null,
       "text": "Before we go into the workshop, I just want to say a bit about the craft of pottery.",
@@ -31,11 +47,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "of pottery. Then we'll have a look at the equipment and you can try making a pot of your own.",
+      "start": 88.44,
+      "end": 95.42,
+      "preAudio": false
+    },
+    {
       "id": "cue-4",
       "speaker": null,
       "text": "Then we’ll have a look at the equipment and you can try making a pot of your own.",
       "start": 89.88,
       "end": 96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "Like many people, I'm sure you know that pottery as an art form is tens of thousands of years old Q11",
+      "start": 95.42,
+      "end": 104.42,
       "preAudio": false
     },
     {
@@ -63,11 +95,43 @@
       "preAudio": false
     },
     {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "survive in the earth in the same way that pots do and even if ancient pots are found in small",
+      "start": 113.1,
+      "end": 120.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "pieces, they still provide a lot of information about the past. There's no doubt that pottery",
+      "start": 120.4,
+      "end": 128.82,
+      "preAudio": false
+    },
+    {
       "id": "cue-8",
       "speaker": null,
-      "text": "There no doubt that pottery has given archaeologists a fascinating insight into how ancient hills lived The shape of an artefact may have been lost but archaeologists can tell whether the pots were for, say, storage or cooking by examining the impressions on the clay, the scratches from tools, and the clay itself can reveal where the pots came from.",
+      "text": "There no doubt that pottery has given archaeologists a fascinating insight into how ancient hills lived The shape of an artefact may have been lost but archaeologists can tell whether the pots were for, say, storage or cooking by examining the impressions on the clay, the scratches from tools, and the clay itself can reveal where the pots came from. Q12",
       "start": 126.22,
       "end": 158.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "artifact may have been lost but archaeologists can tell whether the pots were for, say, storage",
+      "start": 137.0,
+      "end": 144.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "can reveal where the pots came from. When I ask people why they want to take a pottery class with me,",
+      "start": 153.82,
+      "end": 162.96,
       "preAudio": false
     },
     {
@@ -79,11 +143,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "they sometimes talk about these things. Like our ancestors, they hope that something they create will",
+      "start": 163.72,
+      "end": 171.46,
+      "preAudio": false
+    },
+    {
       "id": "cue-10",
       "speaker": null,
-      "text": "Like our ancestors, they hope that something they create will also last longer than they do, that their work, whether it is good or not, might say something about humanity many years after their death.",
+      "text": "Like our ancestors, they hope that something they create will also last longer than they do, that their work, whether it is good or not, might say something about humanity many years after their death. Q13",
       "start": 166.64,
       "end": 184.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "humanity many years after their death. Of course, you will all have your own reasons for coming here",
+      "start": 179.86,
+      "end": 188.74,
       "preAudio": false
     },
     {
@@ -103,9 +183,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "as far as I'm concerned, what I love most is the concentration you need to make a good pot.",
+      "start": 188.74,
+      "end": 196.24,
+      "preAudio": false
+    },
+    {
       "id": "cue-13",
       "speaker": null,
-      "text": "That focus takes you away from the stresses of everyday life.",
+      "text": "That focus takes you away from the stresses of everyday life. Q14",
       "start": 197.2,
       "end": 202.66,
       "preAudio": false
@@ -127,11 +215,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "because it's so messy. Here at Edelman pottery, we show you some of the basic pottery techniques so that",
+      "start": 213.38,
+      "end": 222.14,
+      "preAudio": false
+    },
+    {
       "id": "cue-16",
       "speaker": null,
       "text": "Here at Edelman Pottery, we show you some of the basic pottery techniques so that you can use these to create whatever you wish.",
       "start": 216.14,
       "end": 225.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "you can use these to create whatever you wish, a gift for a friend perhaps. Like nearly everyone",
+      "start": 222.14,
+      "end": 229.62,
       "preAudio": false
     },
     {
@@ -145,9 +249,25 @@
     {
       "id": "cue-18",
       "speaker": null,
-      "text": "Like nearly everyone who comes here, I’m sure this is the first time you will have tried the art so we’ll keep things simple today.",
+      "text": "Like nearly everyone who comes here, I’m sure this is the first time you will have tried the art so we’ll keep things simple today. Q15",
       "start": 228.14,
       "end": 238.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "you come here, I'm sure this is the first time you will have tried the art, so it will keep things",
+      "start": 229.62,
+      "end": 235.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "simple today. Now, before we move on, can I just say a word about what you're wearing? As we said in",
+      "start": 235.66,
+      "end": 251.7,
       "preAudio": false
     },
     {
@@ -164,6 +284,14 @@
       "text": "As we said in our email please remove any watches, necklaces etc and put them somewhere safe.",
       "start": 243.88,
       "end": 253.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "where's safe? If you have long hair, do tie it back now. We'll provide aprons later, but I trust Q16",
+      "start": 251.7,
+      "end": 260.94,
       "preAudio": false
     },
     {
@@ -188,6 +316,14 @@
       "text": "Before you hear the rest of the talk, you have some time to look at questions 17 to 20. Now listen and answer questions 17 to 20.",
       "start": 269.7,
       "end": 304.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "questions 17 to 20. So now we're in the workshop. Have a look around. There's a lot going on.",
+      "start": 298.59,
+      "end": 310.34,
       "preAudio": false
     },
     {
@@ -217,9 +353,17 @@
     {
       "id": "cue-27",
       "speaker": null,
-      "text": "To make pottery that will last, you need a potter’s wheel, a kiln, which is basically a very hot oven where you fire the pottery, and some tools.",
+      "text": "To make pottery that will last, you need a potter’s wheel, a kiln, which is basically a very hot oven where you fire the pottery, and some tools. Q17/18",
       "start": 311.18,
       "end": 324.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "where you fire the pottery and some tools. So first the kiln. If you look over in the far corner,",
+      "start": 318.84,
+      "end": 329.64,
       "preAudio": false
     },
     {
@@ -239,6 +383,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "you'll see one of ours. Since their invention kilns have changed very little, though in the past",
+      "start": 329.64,
+      "end": 337.28,
+      "preAudio": false
+    },
+    {
       "id": "cue-30",
       "speaker": null,
       "text": "Since their invention, kilns have changed very little, though in the past 20 years a lot of progress has been made in temperature control.",
@@ -255,6 +407,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "from clay at temperatures of around a thousand degrees Celsius. This allows anything you've made",
+      "start": 345.62,
+      "end": 353.66,
+      "preAudio": false
+    },
+    {
       "id": "cue-32",
       "speaker": null,
       "text": "This allows anything you’ve made to set permanently in shape.",
@@ -263,11 +423,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "to set permanently in shape. It's a pretty ugly heavy object that's hard to keep in a house or flat",
+      "start": 353.66,
+      "end": 362.88,
+      "preAudio": false
+    },
+    {
       "id": "cue-33",
       "speaker": null,
       "text": "It’s a pretty ugly heavy object that’s hard to keep in a house or flat, so most people don’t have one.",
       "start": 357.44,
       "end": 366.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "so most people don't have one. You may think, can't I use my oven? Well, that's possible,",
+      "start": 362.88,
+      "end": 371.86,
       "preAudio": false
     },
     {
@@ -287,11 +463,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "but domestic ovens don't really get hot enough and eventually the clay will crack and fall apart.",
+      "start": 372.62,
+      "end": 379.42,
+      "preAudio": false
+    },
+    {
       "id": "cue-36",
       "speaker": null,
       "text": "Some people fire pottery in a fire pit outside but bear in mind… that can be dangerous.",
       "start": 380.38,
       "end": 390.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "Some people fire pottery in a fire pit outside, but bear in mind that can be dangerous.",
+      "start": 380.38,
+      "end": 388.96,
       "preAudio": false
     },
     {
@@ -311,11 +503,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "Every potter needs a potter's wheel. This machine is used to shape the clay into an object",
+      "start": 399.12,
+      "end": 407.0,
+      "preAudio": false
+    },
+    {
       "id": "cue-39",
       "speaker": null,
       "text": "This machine is used to shape the clay into an object with circular walls or sides, such as a bowl.",
       "start": 403.04,
       "end": 413,
+      "preAudio": false
+    },
+    {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "with circular walls or sides such as a ball. Its invention revolutionized the pottery industry,",
+      "start": 407.0,
+      "end": 417.32,
       "preAudio": false
     },
     {
@@ -335,6 +543,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "potters use depending on what they want to make. When you start your hands can make all kinds of",
+      "start": 426.12,
+      "end": 433.98,
+      "preAudio": false
+    },
+    {
       "id": "cue-42",
       "speaker": null,
       "text": "When you start, your hands can make all kinds of shapes and curves without relying on a sculpting tool.",
@@ -345,9 +561,17 @@
     {
       "id": "cue-43",
       "speaker": null,
-      "text": "However, there are some basic tools that you will need to handle the clay on the wheel.",
+      "text": "However, there are some basic tools that you will need to handle the clay on the wheel. Q19/20",
       "start": 438.42,
       "end": 445.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "will need to handle the clay on the wheel. Some that look very strange and have even order names",
+      "start": 441.68,
+      "end": 450.0,
       "preAudio": false
     },
     {
@@ -359,11 +583,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "that you may find hard to remember. Rather than go through them all now, I'll just name a few tools",
+      "start": 450.36,
+      "end": 458.18,
+      "preAudio": false
+    },
+    {
       "id": "cue-45",
       "speaker": null,
       "text": "Rather than go through them all now, I’ll just name a few tools as we go along.",
       "start": 453.54,
       "end": 460.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "as we go along. We can provide these and I wouldn't recommend spending money on them yet.",
+      "start": 458.18,
+      "end": 464.9,
       "preAudio": false
     },
     {

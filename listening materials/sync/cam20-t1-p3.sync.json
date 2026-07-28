@@ -15,11 +15,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "Ok, Tamara. It's been a real eye-opener. I had no idea that loneliness has been increasing",
+      "start": 62.29,
+      "end": 70.01,
+      "preAudio": false
+    },
+    {
       "id": "cue-2",
       "speaker": "DEV",
       "text": "OK, Tamara. It’s been a real eye-opener. I had no idea that loneliness has been increasing steadily for the last 20 years.",
       "start": 62.75,
       "end": 72.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "steadily for the last 20 years. I know, and it's the same all over the world, the downside",
+      "start": 70.01,
+      "end": 77.75,
       "preAudio": false
     },
     {
@@ -31,11 +47,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "of a modern lifestyle, I guess. Did you come to any conclusions about what the reasons",
+      "start": 77.75,
+      "end": 83.17,
+      "preAudio": false
+    },
+    {
       "id": "cue-4",
       "speaker": "DEV",
       "text": "Did you come to any conclusions about what the reasons for the increase are?",
       "start": 80.17,
       "end": 85.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "for the increase are? Well, I'd assumed it was mainly an issue for the elderly, but in fact",
+      "start": 83.17,
+      "end": 91.13,
       "preAudio": false
     },
     {
@@ -47,6 +79,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "it's something which affects young people just as much. So nothing really to do with longer",
+      "start": 91.13,
+      "end": 97.61,
+      "preAudio": false
+    },
+    {
       "id": "cue-6",
       "speaker": "DEV",
       "text": "So nothing really to do with longer lifespans. What about social media? In my case, far from",
@@ -55,11 +95,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "life spans. What about social media? In my case, far from making me feel isolated, it actually",
+      "start": 97.61,
+      "end": 106.31,
+      "preAudio": false
+    },
+    {
       "id": "cue-7",
       "speaker": "DEV",
       "text": "making me feel isolated, it actually does the opposite. it?",
       "start": 104.03,
       "end": 107.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "does the opposite. It definitely does more good than harm. I'd say loneliness has a lot to",
+      "start": 106.31,
+      "end": 113.05,
       "preAudio": false
     },
     {
@@ -79,11 +135,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "do with the way cities are designed. People living in high-rise flats with not much opportunity",
+      "start": 113.05,
+      "end": 118.77,
+      "preAudio": false
+    },
+    {
       "id": "cue-10",
       "speaker": "TAMARA",
       "text": "People living in high flats with not much opportunity to speak to their neighbours",
       "start": 116.07,
       "end": 120.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "to speak to their neighbours. I think you're right. Another possible reason is that people",
+      "start": 118.77,
+      "end": 124.81,
       "preAudio": false
     },
     {
@@ -103,6 +175,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "are having fewer children and don't live in large extended family groups. But in this",
+      "start": 124.81,
+      "end": 131.11,
+      "preAudio": false
+    },
+    {
       "id": "cue-13",
       "speaker": "DEV",
       "text": "But in this country anyway, that all changed decades ago. And yet loneliness is a more recent problem.",
@@ -111,9 +191,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "country anyway, that all changed decades ago, and yet loneliness is a more recent problem.",
+      "start": 131.11,
+      "end": 137.83,
+      "preAudio": false
+    },
+    {
       "id": "cue-14",
       "speaker": "TAMARA",
-      "text": "I suppose so. A more plausible explanation is that people are having to move around for work and often end up living miles away from their family and friends.",
+      "text": "I suppose so. A more plausible explanation is that people are having to move around for work and often end up living miles away from their family and friends. Q21/22",
       "start": 138.47,
       "end": 150.09,
       "preAudio": false
@@ -135,6 +223,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "smoking 15 cigarettes a day, or similar to the risks caused by obesity, but I'm not sure there's enough",
+      "start": 158.53,
+      "end": 166.67,
+      "preAudio": false
+    },
+    {
       "id": "cue-17",
       "speaker": "DEV",
       "text": "Or similar to the risks caused by obesity. But I’m not sure there’s enough evidence for some of these claims.",
@@ -143,11 +239,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "evidence for some of these claims. Well, what about that one in Finland, which showed that loneliness",
+      "start": 166.67,
+      "end": 174.15,
+      "preAudio": false
+    },
+    {
       "id": "cue-18",
       "speaker": "TAMARA",
       "text": "Well, what about that one in Finland, which showed that loneliness increased the risk of cancer by about 10%? And those findings have been supported by other studies too.",
       "start": 169.39,
       "end": 182.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "increased the risk of cancer by about ten percent? And those findings have been supported by",
+      "start": 174.15,
+      "end": 181.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "other studies too. You're right about that one. I was actually thinking of the studies on dementia.",
+      "start": 181.23,
+      "end": 187.77,
       "preAudio": false
     },
     {
@@ -167,11 +287,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "Not exactly reliable then. There's been a lot of research on cardiovascular disease,",
+      "start": 195.81,
+      "end": 202.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "and where the loneliness contributes to that. Yes, I read that it was hard to reach judgment",
+      "start": 202.49,
+      "end": 209.31,
+      "preAudio": false
+    },
+    {
       "id": "cue-21",
       "speaker": "DEV",
       "text": "Yes, I read that it was hard to reach a judgment, as the definition of loneliness varied quite a lot, and the responses from participants were too subjective.",
       "start": 205.87,
       "end": 218.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "subjective. But there's no doubt that loneliness contributes to a weakened immune system. Q23/24",
+      "start": 216.79,
+      "end": 223.19,
       "preAudio": false
     },
     {
@@ -191,6 +335,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "Unquestionably, the data on that is sound. What did you think about the evolutionary theory of loneliness?",
+      "start": 223.93,
+      "end": 230.97,
+      "preAudio": false
+    },
+    {
       "id": "cue-24",
       "speaker": "DEV",
       "text": "What did you think about the evolutionary theory of loneliness?",
@@ -207,11 +359,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "Well, I thought the idea that loneliness evolved because it motivated people to be with other people",
+      "start": 231.71,
+      "end": 237.97,
+      "preAudio": false
+    },
+    {
       "id": "cue-26",
       "speaker": "DEV",
       "text": "But I don think there is enough evidence to claim that there must be a group of neurons in our brains which influence social behaviour by making us feel bad when we’re alone.",
       "start": 243.43,
       "end": 255.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "behavior by making us feel bad when we're alone. There are a few studies which support the theory,",
+      "start": 250.83,
+      "end": 258.33,
       "preAudio": false
     },
     {
@@ -231,6 +399,22 @@
       "preAudio": false
     },
     {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "And anyway, this theory is not really useful when it comes to solving the problem of loneliness today. Q25/26",
+      "start": 263.89,
+      "end": 269.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "Before you hear the rest of the discussion, you have some time to look at questions 27-30.",
+      "start": 270.45,
+      "end": 281.71,
+      "preAudio": false
+    },
+    {
       "id": "cue-29",
       "speaker": "DEV",
       "text": "TAMARA True.",
@@ -244,6 +428,14 @@
       "text": "Now listen and answer questions 27 to 30.",
       "start": 312.09,
       "end": 319.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "Now listen and answer questions 27-30.",
+      "start": 312.09,
+      "end": 316.11,
       "preAudio": false
     },
     {
@@ -263,9 +455,25 @@
       "preAudio": false
     },
     {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "Okay, so loneliness and depression are clearly related, and that's been recognised by various",
+      "start": 324.69,
+      "end": 332.15,
+      "preAudio": false
+    },
+    {
       "id": "cue-33",
       "speaker": "DEV",
       "text": "There’s no available diagnosis or effective treatment and that’s not likely to change.",
+      "start": 340.27,
+      "end": 345.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "There's no available diagnosis or effective treatment, and that's not likely to change. Q27",
       "start": 340.27,
       "end": 345.97,
       "preAudio": false
@@ -279,11 +487,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "I don't think so either. I was thinking we should start our presentation with an example",
+      "start": 345.97,
+      "end": 352.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "from our own experience. I'd like to talk about how lonely I was when I started university,",
+      "start": 352.99,
+      "end": 359.91,
+      "preAudio": false
+    },
+    {
       "id": "cue-35",
       "speaker": "DEV",
-      "text": "Good idea. Everyone will be able to relate to that although a lot of students were probably too embarrassed to admit to it.",
+      "text": "Good idea. Everyone will be able to relate to that although a lot of students were probably too embarrassed to admit to it. Q28",
       "start": 363.29,
       "end": 372.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "embarrassed to admit to it. Yeah, we could discuss ways of dealing with loneliness as well,",
+      "start": 370.39,
+      "end": 377.25,
       "preAudio": false
     },
     {
@@ -292,6 +524,14 @@
       "text": "Yeah. We could discuss ways of dealing with loneliness as well, like just talking to strangers.",
       "start": 372.65,
       "end": 380.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "like just talking to strangers. Loads of studies have shown that interactions with shop assistants Q29",
+      "start": 377.83,
+      "end": 384.95,
       "preAudio": false
     },
     {
@@ -327,11 +567,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "Good point. We should say something about solitude and how being alone and being lonely aren't",
+      "start": 403.93,
+      "end": 412.23,
+      "preAudio": false
+    },
+    {
       "id": "cue-41",
       "speaker": "TAMARA",
       "text": "We should say something about solitude and how being alone and being lonely aren’t the same thing.",
       "start": 405.57,
       "end": 413.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "the same thing. It's strange the way some people can't stand being by themselves while others",
+      "start": 412.23,
+      "end": 418.61,
       "preAudio": false
     },
     {
@@ -343,6 +599,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-79",
+      "speaker": null,
+      "text": "love it. Yeah, the research shows a certain amount of solitude is beneficial for well-being,",
+      "start": 418.61,
+      "end": 424.97,
+      "preAudio": false
+    },
+    {
       "id": "cue-43",
       "speaker": "DEV",
       "text": "Yeah, the research shows a certain amount of solitude is beneficial for wellbeing, which I appreciate, but being alone isn’t something I actually like.",
@@ -351,9 +615,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-80",
+      "speaker": null,
+      "text": "which I appreciate, but being alone isn't something I actually like. I'd never choose to go on holiday",
+      "start": 424.97,
+      "end": 433.27,
+      "preAudio": false
+    },
+    {
       "id": "cue-44",
       "speaker": "DEV",
-      "text": "I’d never choose to go on holiday alone, for example.",
+      "text": "I’d never choose to go on holiday alone, for example. Q30",
       "start": 431.53,
       "end": 434.97,
       "preAudio": false
@@ -371,7 +643,7 @@
       "speaker": "DEV",
       "text": "Well, let’s not… you",
       "start": 436.45,
-      "end": 478.98,
+      "end": 478.979773,
       "preAudio": false
     }
   ]

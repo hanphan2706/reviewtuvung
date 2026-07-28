@@ -15,6 +15,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "I'd like to give you some useful information about your visit to the stadium today and",
+      "start": 60.41,
+      "end": 66.69,
+      "preAudio": false
+    },
+    {
       "id": "cue-2",
       "speaker": null,
       "text": "I’d like to give you some useful information about your visit to the stadium today and then we’ll start the tour of the areas of the stadium that are open to visitors.",
@@ -23,11 +31,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "then we'll start the tour of the areas of the stadium that are open to visitors. I can see lots",
+      "start": 66.69,
+      "end": 73.33,
+      "preAudio": false
+    },
+    {
       "id": "cue-3",
       "speaker": null,
-      "text": "I can see lots of children here today, so just to let mums and dads know a few things before we start.",
+      "text": "I can see lots of children here today, so just to let mums and dads know a few things before we start. Q11/12",
       "start": 72.35,
       "end": 80.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "of children here today so just to let mums and dads know a few things before we start.",
+      "start": 73.33,
+      "end": 79.31,
       "preAudio": false
     },
     {
@@ -39,11 +63,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "The stadium has lots of stairs and the players tunnel is very dark. Please don't let your",
+      "start": 80.09,
+      "end": 86.57,
+      "preAudio": false
+    },
+    {
       "id": "cue-5",
       "speaker": null,
       "text": "Please don’t let your children wander off on their own, even for a minute.",
       "start": 85.35,
       "end": 90.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "children wander off on their own. Even for a minute, we don't want any accident or anyone",
+      "start": 86.57,
+      "end": 93.05,
       "preAudio": false
     },
     {
@@ -55,6 +95,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "getting frightened. Cameras are permitted everywhere and you can take pictures of your child",
+      "start": 93.05,
+      "end": 100.23,
+      "preAudio": false
+    },
+    {
       "id": "cue-7",
       "speaker": null,
       "text": "Cameras are permitted everywhere and you can take pictures of your child shooting a penalty.",
@@ -63,11 +111,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "shooting a penalty. Assistance are helping to organise this and hopefully the queue won't",
+      "start": 100.23,
+      "end": 107.51,
+      "preAudio": false
+    },
+    {
       "id": "cue-8",
       "speaker": null,
       "text": "Assistants are helping to organise this and hopefully the queue won’t be too long.",
       "start": 102.55,
       "end": 108.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "be too long. It's very hot and sunny out on the pitch today. You can get food and drink",
+      "start": 107.51,
+      "end": 114.45,
       "preAudio": false
     },
     {
@@ -87,11 +151,43 @@
       "preAudio": false
     },
     {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "children are invited to do a football themed drawing. We'll pick the best one at the end of",
+      "start": 122.55,
+      "end": 130.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "the afternoon so don't forget to put your name and contact details on the back. That way if",
+      "start": 130.47,
+      "end": 138.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "you've left the stadium before then we'll send your prize but sadly we can't return drawings.",
+      "start": 138.39,
+      "end": 145.23,
+      "preAudio": false
+    },
+    {
       "id": "cue-11",
       "speaker": null,
       "text": "I’d like to mention some features of the tour.",
       "start": 146.43,
       "end": 150.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "I'd like to mention some features of the tour. We'll start with the 360 cinema experience which has Q13/14",
+      "start": 146.43,
+      "end": 155.17,
       "preAudio": false
     },
     {
@@ -103,11 +199,43 @@
       "preAudio": false
     },
     {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "been very popular over the years and then I'll take you to the players dressing rooms before going",
+      "start": 155.17,
+      "end": 162.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "outside to the seating area and the pitch. I should say if you'd prefer your visit to be self-guided",
+      "start": 162.61,
+      "end": 171.49,
+      "preAudio": false
+    },
+    {
       "id": "cue-13",
       "speaker": null,
       "text": "I should say, if you’d prefer your visit to be self-guided, please collect headphones from the reception, and then you can listen to the pre-recorded information at your own speed.",
       "start": 167.33,
       "end": 181.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "please collect headphones from the reception and then you can listen to the pre-recorded information",
+      "start": 171.49,
+      "end": 178.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "at your own speed. We've only just introduced this feature and would appreciate your feedback.",
+      "start": 178.63,
+      "end": 186.47,
       "preAudio": false
     },
     {
@@ -127,6 +255,22 @@
       "preAudio": false
     },
     {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "We're thinking of offering tours in other languages in future so if you have any thoughts on that",
+      "start": 187.45,
+      "end": 194.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "we'd welcome those too. If you plan to return another time you might like to book one of our VIP",
+      "start": 194.41,
+      "end": 203.01,
+      "preAudio": false
+    },
+    {
       "id": "cue-16",
       "speaker": null,
       "text": "If you plan to return another time, you might like to book one of our VIP tours.",
@@ -135,11 +279,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "tours. We've only just started offering these and they can be booked online. Before you hear the",
+      "start": 203.01,
+      "end": 214.19,
+      "preAudio": false
+    },
+    {
       "id": "cue-17",
       "speaker": null,
       "text": "We’ve only just started offering these and they can be booked online.",
       "start": 204.35,
-      "end": 254.28,
+      "end": 214.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "rest of the talk you have some time to look at questions 15 to 20. Now listen and answer questions",
+      "start": 214.19,
+      "end": 254.23,
       "preAudio": false
     },
     {
@@ -147,6 +307,14 @@
       "speaker": null,
       "text": "Now listen and answer questions 15 to 20 Now, the stadium you see today was built in 1989 as part of a three-year redevelopment project.",
       "start": 254.28,
+      "end": 269.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "15 to 20. Now the stadium you see today was built in 1989 as part of a three-year redevelopment project",
+      "start": 256.44,
       "end": 269.76,
       "preAudio": false
     },
@@ -159,11 +327,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "while that project was going on the team had to play its matches at the ground of another club.",
+      "start": 269.76,
+      "end": 277.3,
+      "preAudio": false
+    },
+    {
       "id": "cue-20",
       "speaker": null,
       "text": "Apart from that, the club has been here on this site since 1870.",
       "start": 277.88,
       "end": 284.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "Apart from that the club has been here on this site since 1870. As some of you may know that was",
+      "start": 277.88,
+      "end": 286.98,
       "preAudio": false
     },
     {
@@ -177,9 +361,25 @@
     {
       "id": "cue-22",
       "speaker": null,
-      "text": "For example, 1870 was also the year that football teams started to include a player whose role it was to guard the goal.",
+      "text": "For example, 1870 was also the year that football teams started to include a player whose role it was to guard the goal. Q15",
       "start": 293.46,
       "end": 304.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "For example 1870 was also the year that football teams started to include a player whose role it was",
+      "start": 293.46,
+      "end": 302.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "to guard the goal. It's hard to imagine what the game must have been like without someone in that",
+      "start": 302.2,
+      "end": 309.38,
       "preAudio": false
     },
     {
@@ -188,6 +388,14 @@
       "text": "It’s hard to imagine what the game must have been like without someone in that position, isn’t it?",
       "start": 304.38,
       "end": 312.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "position isn't it. In 1872 and 73 many other clubs were established both here and abroad and the",
+      "start": 309.38,
+      "end": 320.84,
       "preAudio": false
     },
     {
@@ -201,9 +409,17 @@
     {
       "id": "cue-25",
       "speaker": null,
-      "text": "And the following year, in 1874, referees were allowed to send players off if they committed certain offences. and also in that year teams started having to swap ends at half-time.",
+      "text": "And the following year, in 1874, referees were allowed to send players off if they committed certain offences. and also in that year teams started having to swap ends at half-time. Q16",
       "start": 319.7,
       "end": 336.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "following year in 1874 referees were allowed to send players off if they committed certain offences",
+      "start": 320.84,
+      "end": 329.22,
       "preAudio": false
     },
     {
@@ -215,9 +431,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "tape. In 1875 that tape was replaced with the solid crossbar that we're familiar with today.",
+      "start": 352.8,
+      "end": 361.14,
+      "preAudio": false
+    },
+    {
       "id": "cue-27",
       "speaker": null,
-      "text": "In 1875, that tape was replaced with the solid crossbar that we’re familiar with today. 1877 saw the founding of further new clubs and the history books tell us that in the same year all the clubs decided to set a limit of 90 minutes for each match Before that it was a more casual arrangement and this sometimes caused huge arguments and sometimes fights during matches when one team called the end of the game and the other team wanted to play on to try and score a winning goal.",
+      "text": "In 1875, that tape was replaced with the solid crossbar that we’re familiar with today. 1877 saw the founding of further new clubs and the history books tell us that in the same year all the clubs decided to set a limit of 90 minutes for each match Before that it was a more casual arrangement and this sometimes caused huge arguments and sometimes fights during matches when one team called the end of the game and the other team wanted to play on to try and score a winning goal. Q17 Q18",
       "start": 353.92,
       "end": 397.32,
       "preAudio": false
@@ -231,9 +455,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "By 1878 the number of teams in the football league increased again. In addition referees started using",
+      "start": 397.32,
+      "end": 406.52,
+      "preAudio": false
+    },
+    {
       "id": "cue-29",
       "speaker": null,
-      "text": "In addition, referees started using whistles and electric lamps were installed on certain pitches.",
+      "text": "In addition, referees started using whistles and electric lamps were installed on certain pitches. Q19",
       "start": 403.9,
       "end": 412.36,
       "preAudio": false
@@ -249,9 +481,17 @@
     {
       "id": "cue-31",
       "speaker": null,
-      "text": "In 1880, clubs began to charge fans for admission to games, even though players were still amateurs and had other proper jobs.",
+      "text": "In 1880, clubs began to charge fans for admission to games, even though players were still amateurs and had other proper jobs. Q20",
       "start": 420.28,
       "end": 432.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "admission to games even though players were still amateurs and had other proper jobs.",
+      "start": 424.94,
+      "end": 431.34,
       "preAudio": false
     },
     {
@@ -259,7 +499,15 @@
       "speaker": null,
       "text": "That’s hard to imagine in the modern professional game. where top players earn significant sums of money from both playing and commercial activities.",
       "start": 432.18,
-      "end": 508.446,
+      "end": 432.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "That's hard to imagine in the modern professional game where top players earned significant sums of money",
+      "start": 432.18,
+      "end": 438.84,
       "preAudio": false
     }
   ]

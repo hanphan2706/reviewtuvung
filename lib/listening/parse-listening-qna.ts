@@ -3,8 +3,10 @@ const BLANK_RE =
 const PART_HEADER_RE = /^PART\s+(\d+)\s*$/i;
 const QUESTIONS_RANGE_RE = /^Questions?\s+(\d+)\s*(?:and|&|–|-)\s*(\d+)\s*$/i;
 const SINGLE_QUESTION_RE = /^Questions?\s+(\d+)\s*$/i;
-const MCQ_OPTION_RE = /^([A-H])\s+(.+)$/;
-const MAP_ITEM_RE = /^(\d+)\s+(.+?)\s*(?:\.{3,}|_{3,}|…{2,})\s*$/;
+const MCQ_OPTION_RE = /^([A-I])\s+(.+)$/;
+const MAP_ITEM_RE = /^(\d+)\s+(.+?)\s*(?:\.{3,}|_{3,}|…{2,})[.\s]*$/;
+/** Matching list items often omit trailing blanks (Cam 20 T2/T3). */
+const MATCHING_ITEM_RE = /^(\d{1,2})\s+(.+)$/;
 const IMAGE_LINE_RE = /^IMAGE\s*\|\s*(.+)\s*$/i;
 const ANSWERS_HEADER_RE = /^Answers?:\s*$|^Answer key:\s*$/im;
 const PAIRED_ANSWER_RE = /^(\d+)\s*&\s*(\d+)\s+(.+)$/i;
@@ -77,6 +79,10 @@ function normalizeLine(line: string): string {
   return line.replace(/\u00a0/g, " ").trim();
 }
 
+function cleanMatchingItemLabel(label: string): string {
+  return label.replace(/\s*(?:\.{3,}|_{3,}|…{2,})[.\s]*$/u, "").trim();
+}
+
 function isQnaNoiseLine(line: string): boolean {
   const t = normalizeLine(line);
   if (!t) return true;
@@ -139,9 +145,13 @@ function splitPartBlocks(text: string): { partNumber: number; body: string }[] {
 }
 
 function extractLetterRange(line: string): string | undefined {
-  const m = line.match(/([A-H])\s*(?:–|-|to)\s*([A-H])/i);
+  // Accept OCR typo "A-l" (lowercase L) as A–I.
+  const m = line.match(/([A-I])\s*(?:–|-|to)\s*([A-Il])/i);
   if (!m) return undefined;
-  return `${m[1]!.toUpperCase()}–${m[2]!.toUpperCase()}`;
+  const start = m[1]!.toUpperCase();
+  const endRaw = m[2]!;
+  const end = endRaw === "l" || endRaw === "L" ? "I" : endRaw.toUpperCase();
+  return `${start}–${end}`;
 }
 
 function partAnswerSlice(
@@ -251,9 +261,13 @@ function parseOptionsItemsMatchingBlock(
       j += 1;
       continue;
     }
-    const itemMatch = row.match(MAP_ITEM_RE);
+    const itemMatch = row.match(MAP_ITEM_RE) || (options.length > 0 ? row.match(MATCHING_ITEM_RE) : null);
     if (itemMatch) {
-      items.push({ number: Number.parseInt(itemMatch[1]!, 10), label: itemMatch[2]!.trim() });
+      const num = Number.parseInt(itemMatch[1]!, 10);
+      // Ignore answer-key style leftovers and keep matching labels in exam range.
+      if (num >= 1 && num <= 40) {
+        items.push({ number: num, label: cleanMatchingItemLabel(itemMatch[2] ?? "") });
+      }
       j += 1;
       continue;
     }
@@ -321,6 +335,7 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
         if (
           /^Choose/i.test(instr) ||
           /^Label the map/i.test(instr) ||
+          /^Drag the correct (letter|answer)/i.test(instr) ||
           /^Write the correct (letter|answer)/i.test(instr) ||
           /^What\s/i.test(instr) ||
           /^What is the students/i.test(instr) ||
@@ -360,9 +375,12 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
             j += 1;
             continue;
           }
-          const mapItem = row.match(MAP_ITEM_RE);
+          const mapItem = row.match(MAP_ITEM_RE) || row.match(MATCHING_ITEM_RE);
           if (mapItem) {
-            items.push({ number: Number.parseInt(mapItem[1]!, 10), label: mapItem[2]!.trim() });
+            const num = Number.parseInt(mapItem[1]!, 10);
+            if (num >= 1 && num <= 40) {
+              items.push({ number: num, label: cleanMatchingItemLabel(mapItem[2] ?? "") });
+            }
             j += 1;
             continue;
           }

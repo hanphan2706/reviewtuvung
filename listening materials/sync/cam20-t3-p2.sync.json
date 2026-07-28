@@ -15,6 +15,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "Hello, I'm Hayden. I'm one of the archaeologists investigating the site here at Bidcaster.",
+      "start": 79.28,
+      "end": 85.16,
+      "preAudio": false
+    },
+    {
       "id": "cue-2",
       "speaker": null,
       "text": "I’m one of the archaeologists investigating the site here at Bidcuster.",
@@ -31,9 +39,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "are volunteers. I'm a full-time archaeologist for the town council, but I was asked to join the project",
+      "start": 91.58,
+      "end": 98.48,
+      "preAudio": false
+    },
+    {
       "id": "cue-4",
       "speaker": null,
-      "text": "I’m a full-time archaeologist for the town council, but I was asked to join the project by NHA, a charity which sets up projects like this up and down the country.",
+      "text": "I’m a full-time archaeologist for the town council, but I was asked to join the project by NHA, a charity which sets up projects like this up and down the country. Q11",
       "start": 93.06,
       "end": 104.84,
       "preAudio": false
@@ -47,11 +63,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "we're next to Bidcaster Castle, which is great because the owners let us use their facilities.",
+      "start": 105.92,
+      "end": 111.68,
+      "preAudio": false
+    },
+    {
       "id": "cue-6",
       "speaker": null,
       "text": "So, how did we get to where we are today?",
       "start": 112.58,
       "end": 116.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "So, how did we get to where we are today? Many archaeology projects happen when an ancient object is",
+      "start": 112.58,
+      "end": 120.9,
       "preAudio": false
     },
     {
@@ -71,11 +103,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "like rabbits have been digging tunnels. Here, a walker found it on the ground after a rainstorm washed Q12",
+      "start": 135.4,
+      "end": 143.5,
+      "preAudio": false
+    },
+    {
       "id": "cue-9",
       "speaker": null,
       "text": "Here, a walker found it on the ground after a rainstorm washed away some of the earth and sand.",
       "start": 139.08,
       "end": 146.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "away some of the earth and sand. When the story of the gold coin hit the news, Peter Swift,",
+      "start": 143.5,
+      "end": 150.76,
       "preAudio": false
     },
     {
@@ -87,11 +135,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "before the castle was built. Just by chance, the team found some old maps and documents in our library,",
+      "start": 158.2,
+      "end": 166.08,
+      "preAudio": false
+    },
+    {
       "id": "cue-11",
       "speaker": null,
-      "text": "Just by chance, the team found some old maps and documents in our library, which showed 500-year-old drawings of ruined buildings on the grassy area between the outer stone walls of the castle and the river.",
+      "text": "Just by chance, the team found some old maps and documents in our library, which showed 500-year-old drawings of ruined buildings on the grassy area between the outer stone walls of the castle and the river. Q13",
       "start": 160.66,
       "end": 176.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "stone walls of the castle and the river. We knew then we were on to something.",
+      "start": 173.5,
+      "end": 179.16,
       "preAudio": false
     },
     {
@@ -111,11 +175,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "and more broken pots than you can count. Normally you'd expect to find broaches and other",
+      "start": 185.82,
+      "end": 193.1,
+      "preAudio": false
+    },
+    {
       "id": "cue-14",
       "speaker": null,
-      "text": "Normally you’d expect to find brooches and other jewellery, but we’re still waiting to uncover any such items.",
+      "text": "Normally you’d expect to find brooches and other jewellery, but we’re still waiting to uncover any such items. Q14",
       "start": 189.92,
       "end": 198.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "jewellery, but we're still waiting to uncover any such items. The people who once lived here were",
+      "start": 193.1,
+      "end": 199.86,
       "preAudio": false
     },
     {
@@ -135,6 +215,22 @@
       "preAudio": false
     },
     {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "Besides the discovery of the village, we've also found evidence of human activity on the other",
+      "start": 206.98,
+      "end": 212.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "side of the river. No other houses or hearts so far, but we can see the borders of an ancient field Q15",
+      "start": 212.94,
+      "end": 220.44,
+      "preAudio": false
+    },
+    {
       "id": "cue-17",
       "speaker": null,
       "text": "No other houses or huts so far, but we can see the borders of an ancient field system.",
@@ -143,11 +239,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "system. At one point we found a long wall and thought it was an ancient palace, but it turned out to",
+      "start": 220.44,
+      "end": 227.38,
+      "preAudio": false
+    },
+    {
       "id": "cue-18",
       "speaker": null,
       "text": "At one point we found a long wall and thought it was an ancient palace, but it turned out to be a modern wall.",
       "start": 221.82,
       "end": 229.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "be a modern wall. This summer's work will end soon, but we'll be back next summer. In the meantime,",
+      "start": 227.38,
+      "end": 235.76,
       "preAudio": false
     },
     {
@@ -161,9 +273,17 @@
     {
       "id": "cue-20",
       "speaker": null,
-      "text": "In the meantime, we’re putting on a series of guided tours for school groups this autumn.",
+      "text": "In the meantime, we’re putting on a series of guided tours for school groups this autumn. Q16",
       "start": 235.04,
       "end": 241.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "we're putting on a series of guided tours for school groups this autumn.",
+      "start": 236.24,
+      "end": 240.8,
       "preAudio": false
     },
     {
@@ -183,11 +303,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "are going to the town's museum, but we don't know that for sure yet. Before you hear the rest of",
+      "start": 248.92,
+      "end": 258.84,
+      "preAudio": false
+    },
+    {
       "id": "cue-23",
       "speaker": null,
       "text": "Before you hear the rest of the talk you have some time to look at questions 17 to 20 Now listen and answer questions 17 to 20.",
       "start": 257.1,
-      "end": 300.86,
+      "end": 258.78999999999996,
+      "preAudio": false
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "talk, you have some time to look at questions 17-20. Now listen and answer questions 17-20.",
+      "start": 258.84,
+      "end": 297.65,
       "preAudio": false
     },
     {
@@ -207,11 +343,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "things, the highlights of the site if you like that I want to mention. Take a look at the map. Our",
+      "start": 308.16,
+      "end": 315.44,
+      "preAudio": false
+    },
+    {
       "id": "cue-26",
       "speaker": null,
       "text": "Take a look at the map.",
       "start": 313.48,
       "end": 315.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "present location is marked at the bottom. This year we've identified the foundations of an",
+      "start": 315.44,
+      "end": 322.88,
       "preAudio": false
     },
     {
@@ -225,9 +377,25 @@
     {
       "id": "cue-28",
       "speaker": null,
-      "text": "This year, we’ve identified the foundations of an ancient bridge, and it’s really exciting today because a team of divers are in the river searching for lost objects.",
+      "text": "This year, we’ve identified the foundations of an ancient bridge, and it’s really exciting today because a team of divers are in the river searching for lost objects. Q17",
       "start": 319.44,
       "end": 332.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "ancient bridge, and it's really exciting today because a team of divers are in the river searching for",
+      "start": 322.88,
+      "end": 330.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "lost objects. To reach the bridge, take the main path ahead of you, go straight on, and keep going",
+      "start": 330.26,
+      "end": 338.78,
       "preAudio": false
     },
     {
@@ -236,6 +404,14 @@
       "text": "To reach the bridge, take the main path ahead of you, go straight on, and keep going till the path bends to the left.",
       "start": 332.08,
       "end": 341.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "till the path bends to the left. You'll see a smaller track leading off to the right. Follow that to",
+      "start": 338.78,
+      "end": 346.82,
       "preAudio": false
     },
     {
@@ -255,6 +431,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "take you to the river, where the divers are. You might be interested to see the rubbish pit. This is Q18",
+      "start": 346.82,
+      "end": 354.4,
+      "preAudio": false
+    },
+    {
       "id": "cue-32",
       "speaker": null,
       "text": "You might be interested to see the rubbish pit.",
@@ -271,11 +455,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "very near the castle walls in the northwest corner of the site. It actually dates to the time of",
+      "start": 354.4,
+      "end": 361.76,
+      "preAudio": false
+    },
+    {
       "id": "cue-34",
       "speaker": null,
       "text": "It actually dates to the time of the castle and not the ancient village.",
       "start": 359.6,
       "end": 364.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "castle and not the ancient village. We found oyster shells and fishbones, and we assumed they",
+      "start": 361.76,
+      "end": 369.42,
       "preAudio": false
     },
     {
@@ -287,11 +487,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "were thrown from the castle kitchen above. One area we excavated in the first summer uncovered the",
+      "start": 369.42,
+      "end": 377.34,
+      "preAudio": false
+    },
+    {
       "id": "cue-36",
       "speaker": null,
       "text": "One area we excavated in the first summer uncovered the site of a meeting hall.",
       "start": 373.04,
       "end": 379.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "site of a meeting hall. We knew it was an important building because it had two rows of post holes, Q19",
+      "start": 377.34,
+      "end": 384.42,
       "preAudio": false
     },
     {
@@ -303,6 +519,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "deep enough to support a large roof. It's the largest structure in the central area of the site,",
+      "start": 384.88,
+      "end": 391.58,
+      "preAudio": false
+    },
+    {
       "id": "cue-38",
       "speaker": null,
       "text": "It is the largest structure in the central area of the site next to the current excavation area.",
@@ -311,11 +535,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "next to the current excavation area. Last year we discovered a fish pond in the ancient Q20",
+      "start": 392.22,
+      "end": 398.5,
+      "preAudio": false
+    },
+    {
       "id": "cue-39",
       "speaker": null,
       "text": "Last year we discovered a fish pond in the ancient village.",
       "start": 395.62,
       "end": 399.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "village. Normally these were beside a river. The pond here is further away, but it's possible the",
+      "start": 398.5,
+      "end": 406.74,
       "preAudio": false
     },
     {
@@ -335,6 +575,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "river has moved slightly. Anyway, to get there, from here, you turn right at the first information board",
+      "start": 406.74,
+      "end": 414.74,
+      "preAudio": false
+    },
+    {
       "id": "cue-42",
       "speaker": null,
       "text": "Anyway, to get there from here, you turn right at the first information board you come to and follow the path into the trees.",
@@ -343,11 +591,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "you come to, and follow the path into the trees. Before you come out of the trees, you'll see it on",
+      "start": 414.74,
+      "end": 422.4,
+      "preAudio": false
+    },
+    {
       "id": "cue-43",
       "speaker": null,
       "text": "Before you come out of the trees, you’ll see it on your right.",
       "start": 419.34,
       "end": 423.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "your right. If you reach the river, you've gone too far. So, does anyone have it? That is the end of",
+      "start": 422.4,
+      "end": 434.75,
       "preAudio": false
     },
     {

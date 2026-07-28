@@ -7,11 +7,27 @@
   "preambleSeconds": 73.39,
   "cues": [
     {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "and answer questions 21 to 26. So Finn, I've done as much as I can for our project on theatre",
+      "start": 66.28,
+      "end": 77.81,
+      "preAudio": false
+    },
+    {
       "id": "cue-1",
       "speaker": "MAYA",
       "text": "So, Finn, I’ve done as much as I can for our project on theatre programmes. How’s your research coming along?",
       "start": 73.39,
       "end": 81.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "programmes. How's your research coming along?",
+      "start": 77.81,
+      "end": 80.65,
       "preAudio": false
     },
     {
@@ -23,11 +39,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "OK, Maya. I didn't know theatre programmes are called Playbills in the USA till I started",
+      "start": 81.11,
+      "end": 87.57,
+      "preAudio": false
+    },
+    {
       "id": "cue-3",
       "speaker": "FINN",
       "text": "I didn’t know theatre programmes are called playbills in the USA till I started looking into the topic.",
       "start": 82.81,
       "end": 89.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "looking into the topic. Even though I struggled to find many useful websites, I'm glad we",
+      "start": 87.57,
+      "end": 93.73,
       "preAudio": false
     },
     {
@@ -39,9 +71,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "picked this subject. No one else on the course is doing the same as us, although it is one",
+      "start": 93.73,
+      "end": 99.53,
+      "preAudio": false
+    },
+    {
       "id": "cue-5",
       "speaker": "FINN",
-      "text": "No one else on the course is doing the same as us, although it is one of the research areas of the module convener.",
+      "text": "No one else on the course is doing the same as us, although it is one of the research areas of the module convener. Q21",
       "start": 95.41,
       "end": 103.57,
       "preAudio": false
@@ -55,11 +95,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "I suppose so. Anyway, I hadn't realised there were actually companies specialising in",
+      "start": 104.17,
+      "end": 110.09,
+      "preAudio": false
+    },
+    {
       "id": "cue-7",
       "speaker": "FINN",
       "text": "I suppose so. Anyway I hadn’t realised there are actually companies specialising in creating theatre programmes",
       "start": 105.95,
       "end": 112.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "creating theatre programmes. Yes, they're quite common nowadays. Contrary to what many people",
+      "start": 110.09,
+      "end": 116.31,
       "preAudio": false
     },
     {
@@ -79,6 +135,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "think, theatres don't hire people to do the programmes. In fact, companies buy the rights Q22",
+      "start": 116.31,
+      "end": 122.31,
+      "preAudio": false
+    },
+    {
       "id": "cue-10",
       "speaker": "MAYA",
       "text": "In fact, companies buy the rights to publish programmes on the theatre’s behalf and then make their money selling advertising space within the programme booklet.",
@@ -87,11 +151,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "to publish programmes on the theatre's behalf and then make their money selling advertising space",
+      "start": 122.31,
+      "end": 128.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "within the programme booklet. It must be easier for theatres to do it that way.",
+      "start": 128.11,
+      "end": 132.41,
+      "preAudio": false
+    },
+    {
       "id": "cue-11",
       "speaker": "FINN",
       "text": "It must be easier for theatres to do it that way.",
       "start": 130.01,
       "end": 133.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "Yes. I remember reading something about programmes in early British theatre. It said that the",
+      "start": 132.41,
+      "end": 139.01,
       "preAudio": false
     },
     {
@@ -111,11 +199,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "cast was always very important. Yeah, audiences were very familiar with leading actors and big",
+      "start": 139.01,
+      "end": 146.11,
+      "preAudio": false
+    },
+    {
       "id": "cue-14",
       "speaker": "MAYA",
       "text": "Yeah, audiences were very familiar with leading actors and big names would draw huge crowds.",
       "start": 141.57,
       "end": 148.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "names would draw huge crowds. But I hadn't realised that if the programme",
+      "start": 146.11,
+      "end": 150.49,
       "preAudio": false
     },
     {
@@ -127,9 +231,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "named a famous actor, that's who the public expected to perform. And if that didn't happen,",
+      "start": 150.49,
+      "end": 156.79,
+      "preAudio": false
+    },
+    {
       "id": "cue-16",
       "speaker": "FINN",
-      "text": "And if that didn’t happen, people accused the theatre of breaking their agreement with the audience.",
+      "text": "And if that didn’t happen, people accused the theatre of breaking their agreement with the audience. Q23",
       "start": 155.37,
       "end": 161.01,
       "preAudio": false
@@ -140,6 +252,14 @@
       "text": "They would demand refunds and if they didn’t get them, there were riots.",
       "start": 161.01,
       "end": 166.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "refunds and if they didn't get them, there were riots. Outrageous! That had never happened now.",
+      "start": 161.95,
+      "end": 168.97,
       "preAudio": false
     },
     {
@@ -159,6 +279,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "No, people are too polite, even when they're disappointed if the star of the show misses a performance.",
+      "start": 169.23,
+      "end": 175.09,
+      "preAudio": false
+    },
+    {
       "id": "cue-20",
       "speaker": "MAYA",
       "text": "We should definitely include that information about early audiences in our project.",
@@ -175,9 +303,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "I also think it's important to mention that lots of ordinary people at that time were illiterate,",
+      "start": 180.59,
+      "end": 186.69,
+      "preAudio": false
+    },
+    {
       "id": "cue-22",
       "speaker": "MAYA",
-      "text": "When a company of actors arrived in a town, they’d parade around the streets in their costumes, beating drums and announcing their upcoming performances.",
+      "text": "When a company of actors arrived in a town, they’d parade around the streets in their costumes, beating drums and announcing their upcoming performances. Q24",
       "start": 191.65,
       "end": 201.05,
       "preAudio": false
@@ -191,6 +327,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "happening now either. There's also an interesting comparison to make between 18th and 19th century",
+      "start": 203.31,
+      "end": 210.85,
+      "preAudio": false
+    },
+    {
       "id": "cue-24",
       "speaker": "MAYA",
       "text": "There’s also an interesting comparison to make between 18th and 19th century programmes.",
@@ -199,11 +343,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "programmes. Wasn't it in the 19th century that theatre programmes started to resemble programmes",
+      "start": 210.85,
+      "end": 216.69,
+      "preAudio": false
+    },
+    {
       "id": "cue-25",
       "speaker": "FINN",
       "text": "Wasn’t it in the 19th century that theatre programmes started to resemble programs today",
       "start": 211.97,
       "end": 217.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "today? Yes, and unlike programmes from the 18th century, they always used colour. And there was",
+      "start": 216.69,
+      "end": 224.61,
       "preAudio": false
     },
     {
@@ -217,9 +377,25 @@
     {
       "id": "cue-27",
       "speaker": "FINN",
-      "text": "And there was a greater variety of designs. But personally I think 18th century programmes were superior because they told the theatregoers so many things, including about the actors.",
+      "text": "And there was a greater variety of designs. But personally I think 18th century programmes were superior because they told the theatregoers so many things, including about the actors. Q25",
       "start": 223.77,
       "end": 237.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "a greater variety of designs. But personally, I think 18th century programmes were superior,",
+      "start": 224.61,
+      "end": 231.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "because they told the theatre go as so many things, including about the actors. And about the writer,",
+      "start": 231.93,
+      "end": 238.81,
       "preAudio": false
     },
     {
@@ -231,6 +407,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "the plot, and sometimes the history of the play. That's right. What should we say about theatre",
+      "start": 238.81,
+      "end": 245.45,
+      "preAudio": false
+    },
+    {
       "id": "cue-29",
       "speaker": "FINN",
       "text": "That’s right. What should we say about theatre programmes in the 20th century?",
@@ -239,11 +423,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "programmes in the 20th century? I reckon the most important thing is the dramatic change they",
+      "start": 245.45,
+      "end": 252.03,
+      "preAudio": false
+    },
+    {
       "id": "cue-30",
       "speaker": "MAYA",
       "text": "I reckon the most important thing is the dramatic change they underwent during World War II.",
       "start": 248.23,
       "end": 254.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "underwent during World War II. When the government imposed restrictions on the use of paper.",
+      "start": 252.03,
+      "end": 257.33,
       "preAudio": false
     },
     {
@@ -263,6 +463,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "continued to be published in the same format. While here in the UK, programmes became merely a",
+      "start": 264.87,
+      "end": 271.63,
+      "preAudio": false
+    },
+    {
       "id": "cue-33",
       "speaker": "FINN",
       "text": "While here in the UK, programmes became merely a single sheet of paper folded to create four pages for text.",
@@ -279,11 +487,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-79",
+      "speaker": null,
+      "text": "after the war, they didn't go back to being more than one sheet, or change in any way for over 25 Q26",
+      "start": 278.77,
+      "end": 285.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-80",
+      "speaker": null,
+      "text": "years. I know there were paper shortages after the war, but only for five or ten years.",
+      "start": 285.57,
+      "end": 291.99,
+      "preAudio": false
+    },
+    {
       "id": "cue-35",
       "speaker": "MAYA",
       "text": "I know there were paper shortages after the war, but only for five or ten years.",
       "start": 286.71,
       "end": 292.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-81",
+      "speaker": null,
+      "text": "Hmm, strange. Before you hear the rest of the discussion,",
+      "start": 291.99,
+      "end": 298.68,
       "preAudio": false
     },
     {
@@ -303,6 +535,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-82",
+      "speaker": null,
+      "text": "you have some time to look at questions 27-30. Now listen, and answer questions 27-30.",
+      "start": 299.24,
+      "end": 326.48,
+      "preAudio": false
+    },
+    {
       "id": "cue-38",
       "speaker": "MAYA",
       "text": "I got some pictures of programmes we could include on the slides for our presentation.",
@@ -311,11 +551,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-83",
+      "speaker": null,
+      "text": "I've got some pictures of programmes we could include on the slides for our presentation.",
+      "start": 329.9,
+      "end": 334.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-84",
+      "speaker": null,
+      "text": "I found a couple to my ear. Let's go through and see what we think.",
+      "start": 334.98,
+      "end": 339.02,
+      "preAudio": false
+    },
+    {
       "id": "cue-39",
       "speaker": "FINN",
       "text": "I found a couple too Maya. Let go through and see what we think",
       "start": 335,
       "end": 339.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-85",
+      "speaker": null,
+      "text": "Um, uh, this is an old one for a play called Really Blass.",
+      "start": 339.02,
+      "end": 344.9,
       "preAudio": false
     },
     {
@@ -335,9 +599,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-86",
+      "speaker": null,
+      "text": "Never heard of that, but the programme looks very decorative.",
+      "start": 345.22,
+      "end": 349.24,
+      "preAudio": false
+    },
+    {
       "id": "cue-42",
       "speaker": "MAYA",
-      "text": "Good enough to put in a frame on the wall. The images are just beautiful. Finn, what did you find?",
+      "text": "Good enough to put in a frame on the wall. The images are just beautiful. Finn, what did you find? Q27",
       "start": 349.88,
       "end": 357.1,
       "preAudio": false
@@ -351,11 +623,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-87",
+      "speaker": null,
+      "text": "I've got some pages from a programme for Man of Lamancha. I thought this was a good programme to show,",
+      "start": 357.1,
+      "end": 363.38,
+      "preAudio": false
+    },
+    {
       "id": "cue-44",
       "speaker": "FINN",
-      "text": "I thought this was a good programme to show, not because of the pictures, but because it contains articles written by members of the theatre company, so we can learn how the production was created and the thoughts and feelings of the cast.",
+      "text": "I thought this was a good programme to show, not because of the pictures, but because it contains articles written by members of the theatre company, so we can learn how the production was created and the thoughts and feelings of the cast. Q28",
       "start": 361.32,
       "end": 376.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-88",
+      "speaker": null,
+      "text": "theatre company. So we can learn how the production was created, and the thoughts and feelings of",
+      "start": 368.78,
+      "end": 375.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-89",
+      "speaker": null,
+      "text": "the cast. Good. I've got a copy of a programme that's now in a museum. It's for the tragedy of Jane",
+      "start": 375.36,
+      "end": 382.92,
       "preAudio": false
     },
     {
@@ -377,9 +673,25 @@
     {
       "id": "cue-47",
       "speaker": "MAYA",
-      "text": "It’s for The Tragedy of Jane Shore and it’s said to be the earliest surviving document to have been printed on Australia’s first printing press",
+      "text": "It’s for The Tragedy of Jane Shore and it’s said to be the earliest surviving document to have been printed on Australia’s first printing press Q29",
       "start": 381.32,
       "end": 390.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-90",
+      "speaker": null,
+      "text": "Shaw, and it's said to be the earliest surviving document to have been printed on Australia's",
+      "start": 382.92,
+      "end": 388.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-91",
+      "speaker": null,
+      "text": "first printing press. Fantastic. Another programme to talk about is for the Sailor's Festival.",
+      "start": 388.96,
+      "end": 396.08,
       "preAudio": false
     },
     {
@@ -401,9 +713,25 @@
     {
       "id": "cue-50",
       "speaker": "MAYA",
-      "text": "It comes from the British Library’s digitised collection of programmes that was started a few years ago.",
+      "text": "It comes from the British Library’s digitised collection of programmes that was started a few years ago. Q30",
       "start": 396.58,
       "end": 402.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-92",
+      "speaker": null,
+      "text": "It comes from the British Library's digitised collection of programmes that was started a few years",
+      "start": 396.58,
+      "end": 402.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-93",
+      "speaker": null,
+      "text": "ago. It already comprises over 200,000 programmes, which is amazing.",
+      "start": 402.06,
+      "end": 408.48,
       "preAudio": false
     },
     {
@@ -419,7 +747,15 @@
       "speaker": "FINN",
       "text": "Huh. Wish I’d known about it while I was doing my research.",
       "start": 408.9,
-      "end": 446.518,
+      "end": 409.29999999999995,
+      "preAudio": false
+    },
+    {
+      "id": "cue-94",
+      "speaker": null,
+      "text": "Wish I'd known about it while I was doing my research.",
+      "start": 408.9,
+      "end": 412.32,
       "preAudio": false
     }
   ]

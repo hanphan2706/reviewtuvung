@@ -7,12 +7,28 @@
   "preambleSeconds": 115.2,
   "cues": [
     {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "Good morning.",
+      "start": 100.38,
+      "end": 101.32,
+      "preAudio": false
+    },
+    {
       "id": "cue-1",
       "speaker": "MAN",
       "text": "Good morning",
       "start": 101.376,
       "end": 102.189,
       "preAudio": true
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "Hi, this is Shelley Meyer.",
+      "start": 102.02,
+      "end": 103.92,
+      "preAudio": false
     },
     {
       "id": "cue-2",
@@ -23,12 +39,44 @@
       "preAudio": true
     },
     {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "I'm renting your house on Archwood Avenue.",
+      "start": 104.6,
+      "end": 106.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "I'm due to move in next week.",
+      "start": 107.32,
+      "end": 108.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "Oh, yes, hello, Ms. Meyer.",
+      "start": 109.6,
+      "end": 111.16,
+      "preAudio": false
+    },
+    {
       "id": "cue-3",
       "speaker": "MAN",
       "text": "Oh, yes. Hello, Ms. Meyer. What can I do for you?",
       "start": 110.728,
       "end": 115.2,
       "preAudio": true
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "When I viewed the house, I told you almost probably need to rent some furniture, at least",
+      "start": 113.26,
+      "end": 118.54,
+      "preAudio": false
     },
     {
       "id": "cue-4",
@@ -39,11 +87,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "Yes, of course, I remember, and I said I could give you some information about furniture",
+      "start": 122.84,
+      "end": 128.88,
+      "preAudio": false
+    },
+    {
       "id": "cue-5",
       "speaker": "MAN",
       "text": "Yes, of course. I remember. And I said I could give you some information about furniture rental companies in the city.",
       "start": 126.08,
       "end": 133.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "That's right.",
+      "start": 130.74,
+      "end": 131.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "Well, the biggest company is called Peac Rettles.",
+      "start": 132.42,
+      "end": 135.4,
       "preAudio": false
     },
     {
@@ -63,6 +135,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "I've recommended them to other people and have always heard positive reports about them.",
+      "start": 135.94,
+      "end": 140.24,
+      "preAudio": false
+    },
+    {
       "id": "cue-8",
       "speaker": "WOMAN",
       "text": "Could you give me an idea of their costs?",
@@ -73,7 +153,7 @@
     {
       "id": "cue-9",
       "speaker": "MAN",
-      "text": "Sure. I actually have one of their brochures here. It says the monthly price per room starts at $105 and goes up to $239. That depends on which rooms you need furniture for, of course.",
+      "text": "Sure. I actually have one of their brochures here. It says the monthly price per room starts at $105 and goes up to $239. That depends on which rooms you need furniture for, of course. Q1",
       "start": 143.96,
       "end": 159.66,
       "preAudio": false
@@ -87,6 +167,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "It's just to get a general idea of how much it's going to cost.",
+      "start": 160.52,
+      "end": 164.02,
+      "preAudio": false
+    },
+    {
       "id": "cue-11",
       "speaker": "MAN",
       "text": "Yes.",
@@ -97,7 +185,7 @@
     {
       "id": "cue-12",
       "speaker": "MAN",
-      "text": "People have mentioned that the furniture from Peak Rentals is more modern than any of the other companies.",
+      "text": "People have mentioned that the furniture from Peak Rentals is more modern than any of the other companies. Q2",
       "start": 170.6,
       "end": 177.1,
       "preAudio": false
@@ -127,9 +215,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "Oh, and the brochure says that there's a special offer at the moment.",
+      "start": 186.32,
+      "end": 190.62,
+      "preAudio": false
+    },
+    {
       "id": "cue-16",
       "speaker": "MAN",
-      "text": "If you rent living room furniture, I believe that’s a set of chairs and a TV table, you’ll also get a lamp at no extra cost.",
+      "text": "If you rent living room furniture, I believe that’s a set of chairs and a TV table, you’ll also get a lamp at no extra cost. Q3",
       "start": 191.16,
       "end": 200.34,
       "preAudio": false
@@ -143,9 +239,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "OK, but you know that price range you gave is more than I was hoping to pay.",
+      "start": 200.34,
+      "end": 206.5,
+      "preAudio": false
+    },
+    {
       "id": "cue-18",
       "speaker": "MAN",
-      "text": "Then you could try Aaron and Oliver.",
+      "text": "Then you could try Aaron and Oliver. Q4",
       "start": 207.12,
       "end": 210.06,
       "preAudio": false
@@ -159,11 +263,43 @@
       "preAudio": false
     },
     {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "Sorry.",
+      "start": 210.06,
+      "end": 210.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "What?",
+      "start": 211.22,
+      "end": 211.6,
+      "preAudio": false
+    },
+    {
       "id": "cue-20",
       "speaker": "MAN",
       "text": "Aaron, double A-R-O-N",
       "start": 213.68,
       "end": 216.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "Aaron.",
+      "start": 213.68,
+      "end": 214.0,
+      "preAudio": false
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "AA-R-O-N.",
+      "start": 214.62,
+      "end": 216.26,
       "preAudio": false
     },
     {
@@ -175,11 +311,51 @@
       "preAudio": false
     },
     {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "OK.",
+      "start": 216.94,
+      "end": 217.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "Are they cheaper?",
+      "start": 218.12,
+      "end": 219.34,
+      "preAudio": false
+    },
+    {
       "id": "cue-22",
       "speaker": "MAN",
-      "text": "I say they are a mid company But if you chose them you need to be aware that they charge an extra 12 every month in case of damage",
+      "text": "I say they are a mid company But if you chose them you need to be aware that they charge an extra 12 every month in case of damage Q5",
       "start": 220,
       "end": 229.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "I'd say they're a mid-price company.",
+      "start": 220.0,
+      "end": 222.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "But if you chose them, you need to be aware that they charge an extra 12% every month in",
+      "start": 222.78,
+      "end": 228.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "case of damage.",
+      "start": 228.44,
+      "end": 229.16,
       "preAudio": false
     },
     {
@@ -188,6 +364,14 @@
       "text": "Oh, I see. I’d have to do the math carefully then.",
       "start": 229.86,
       "end": 234.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "I'd have to do the math carefully then.",
+      "start": 231.76,
+      "end": 234.08,
       "preAudio": false
     },
     {
@@ -219,7 +403,23 @@
       "speaker": "WOMAN",
       "text": "Oh, I see. I probably won’t need that.",
       "start": 242.54,
-      "end": 290.1,
+      "end": 243.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "I probably won't need that.",
+      "start": 243.86,
+      "end": 245.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "Before you hear the rest of the conversation, you have some time to look at questions 6-10.",
+      "start": 248.66,
+      "end": 254.8,
       "preAudio": false
     },
     {
@@ -231,11 +431,43 @@
       "preAudio": false
     },
     {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "Now listen and answer questions 6-10.",
+      "start": 290.1,
+      "end": 293.34,
+      "preAudio": false
+    },
+    {
       "id": "cue-29",
       "speaker": "MAN",
-      "text": "There’s another company called Larch Furniture. It’s quite new, and it has the lowest prices in town. That’s for both furniture and also electronic equipment.",
+      "text": "There’s another company called Larch Furniture. It’s quite new, and it has the lowest prices in town. That’s for both furniture and also electronic equipment. Q6",
       "start": 297.06,
       "end": 308.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "There's another company called Large Furniture.",
+      "start": 297.06,
+      "end": 299.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "It's quite new and it has the lowest prices in town.",
+      "start": 300.32,
+      "end": 303.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "That's for both furniture and also electronic equipment.",
+      "start": 304.56,
+      "end": 308.12,
       "preAudio": false
     },
     {
@@ -247,11 +479,43 @@
       "preAudio": false
     },
     {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "I'm not bringing much with me and I won't have much time to go shopping after I start my",
+      "start": 310.92,
+      "end": 316.58,
+      "preAudio": false
+    },
+    {
       "id": "cue-31",
       "speaker": "MAN",
-      "text": "There are two things you need to know about large furniture. First of all you have to take out insurance on the furniture and you need to organize that yourself",
+      "text": "There are two things you need to know about large furniture. First of all you have to take out insurance on the furniture and you need to organize that yourself Q7",
       "start": 317.76,
       "end": 327.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "First of all, you have to take out insurance on the furniture and you need to organize that",
+      "start": 321.84,
+      "end": 326.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "yourself.",
+      "start": 326.98,
+      "end": 327.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "That wouldn't be too hard.",
+      "start": 327.78,
+      "end": 329.2,
       "preAudio": false
     },
     {
@@ -271,6 +535,22 @@
       "preAudio": false
     },
     {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "Also, you can take out a contract for less than 6 months, but I figure that might not be",
+      "start": 329.98,
+      "end": 336.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "You're renting the house for 12 months after all, aren't you?",
+      "start": 337.76,
+      "end": 340.82,
+      "preAudio": false
+    },
+    {
       "id": "cue-34",
       "speaker": "WOMAN",
       "text": "Yes, okay. Well, I…",
@@ -279,11 +559,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "Well, sorry to interrupt.",
+      "start": 343.7,
+      "end": 344.98,
+      "preAudio": false
+    },
+    {
       "id": "cue-35",
       "speaker": "MAN",
-      "text": "Sorry to interrupt. I just thought of another furniture rental company. It’s called Space Rentals, and it’s located very near to the house.",
+      "text": "Sorry to interrupt. I just thought of another furniture rental company. It’s called Space Rentals, and it’s located very near to the house. Q8",
       "start": 343.96,
       "end": 353.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "It's called Space Rindles and it's located very near to the house.",
+      "start": 348.14,
+      "end": 353.24,
       "preAudio": false
     },
     {
@@ -297,9 +593,17 @@
     {
       "id": "cue-37",
       "speaker": "MAN",
-      "text": "I don’t have any information about their charges, so it’s best to use their app to find out what it would cost you to use them.",
+      "text": "I don’t have any information about their charges, so it’s best to use their app to find out what it would cost you to use them. Q9",
       "start": 354.76,
       "end": 363.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "I don't have any information about their charges, so it's best to use their app to find out",
+      "start": 354.76,
+      "end": 361.42,
       "preAudio": false
     },
     {
@@ -311,11 +615,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-79",
+      "speaker": null,
+      "text": "I'll do that.",
+      "start": 364.74,
+      "end": 365.2,
+      "preAudio": false
+    },
+    {
       "id": "cue-39",
       "speaker": "MAN",
-      "text": "One good thing about that company is that if you don’t like the furniture once it’s delivered, you can request exchanges, as long as you do that within a week of receiving it.",
+      "text": "One good thing about that company is that if you don’t like the furniture once it’s delivered, you can request exchanges, as long as you do that within a week of receiving it. Q10",
       "start": 365.94,
       "end": 377.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-80",
+      "speaker": null,
+      "text": "you can request exchanges as long as you do that within a week of receiving it.",
+      "start": 370.9,
+      "end": 376.04,
       "preAudio": false
     },
     {
@@ -323,7 +643,15 @@
       "speaker": "WOMAN",
       "text": "That sounds really great. Okay, well, thanks very much. That’s so helpful",
       "start": 377.16,
-      "end": 439.645,
+      "end": 382.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-81",
+      "speaker": null,
+      "text": "That's so helpful.",
+      "start": 382.1,
+      "end": 383.22,
       "preAudio": false
     }
   ]

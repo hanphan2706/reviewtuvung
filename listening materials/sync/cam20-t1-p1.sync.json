@@ -7,6 +7,30 @@
   "preambleSeconds": 122.57,
   "cues": [
     {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Now listen carefully and answer questions 1 to 4.",
+      "start": 88.13,
+      "end": 92.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "I've been meaning to ask you for some advice about restaurants.",
+      "start": 95.67,
+      "end": 99.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "I need to book somewhere to celebrate my sister's 30th birthday and I liked the sound of that place you went to for your mum's 50th.",
+      "start": 99.91,
+      "end": 108.19,
+      "preAudio": false
+    },
+    {
       "id": "cue-1",
       "speaker": "WOMAN",
       "text": "I’ve been meaning to ask you for some advice about restaurants.",
@@ -23,12 +47,36 @@
       "preAudio": true
     },
     {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "Yeah, I'd definitely recommend that for a special occasion.",
+      "start": 109.49,
+      "end": 112.55,
+      "preAudio": false
+    },
+    {
       "id": "cue-3",
       "speaker": "MAN",
       "text": "The Junction. Yeah, I’d definitely recommend that for a special occasion. We had a great time there. Everyone really enjoyed it.",
       "start": 115.43,
       "end": 122.57,
       "preAudio": true
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "Where is it again? I can't remember.",
+      "start": 116.85,
+      "end": 118.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "It's on Grayson Street. Only about a two-minute walk from the station.",
+      "start": 119.81,
+      "end": 124.23,
+      "preAudio": false
     },
     {
       "id": "cue-4",
@@ -47,6 +95,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "Oh, that's good. I'd prefer not to have to drive anywhere.",
+      "start": 124.59,
+      "end": 128.17,
+      "preAudio": false
+    },
+    {
       "id": "cue-6",
       "speaker": "WOMAN",
       "text": "Oh that’s good I prefer not to have to drive anywhere but I don’t want to have to walk too far either.",
@@ -55,11 +111,43 @@
       "preAudio": false
     },
     {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "But I don't want to have to walk too far either.",
+      "start": 128.91,
+      "end": 131.31,
+      "preAudio": false
+    },
+    {
       "id": "cue-7",
       "speaker": "MAN",
       "text": "Yes, the location’s perfect, but that’s not necessarily why I’d recommend it.",
       "start": 132.15,
       "end": 152.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "Yes, the location's perfect, but that's not necessarily why I'd recommend it.",
+      "start": 132.15,
+      "end": 137.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "The food's amazing. If you like fish, it's probably the best restaurant in town for that. Q1",
+      "start": 137.45,
+      "end": 145.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "It's always really fresh, and there are lots of interesting dishes to choose from.",
+      "start": 146.01,
+      "end": 150.91,
       "preAudio": false
     },
     {
@@ -79,11 +167,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "It's certainly not cheap, but for a special occasion I think it's fine.",
+      "start": 156.53,
+      "end": 161.39,
+      "preAudio": false
+    },
+    {
       "id": "cue-10",
       "speaker": "MAN",
       "text": "It’s always really fresh and there are lots of interesting dishes to choose from But all the food is good there.",
       "start": 160.21,
       "end": 168.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "It's got a great atmosphere, and before dinner you can go up on the roof and have a drink. Q2",
+      "start": 162.21,
+      "end": 168.51,
       "preAudio": false
     },
     {
@@ -95,11 +199,51 @@
       "preAudio": false
     },
     {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "It's really nice up there, but you need to book.",
+      "start": 169.21,
+      "end": 172.45,
+      "preAudio": false
+    },
+    {
       "id": "cue-12",
       "speaker": "MAN",
       "text": "It’s certainly not cheap, but for a special occasion I think it’s fine It’s got a great atmosphere and before dinner you can go up on the roof and have a drink It’s really nice up there, but you need to book It’s very popular as the views are spectacular.",
       "start": 171.11,
       "end": 193.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "It's very popular as the views are spectacular.",
+      "start": 173.15,
+      "end": 176.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "Sounds good. So that's definitely a possibility then.",
+      "start": 177.03,
+      "end": 180.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "Was that? I haven't heard of it.",
+      "start": 189.63,
+      "end": 192.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "No, it's quite new. It's only been open a few months, but it's got a great reputation already.",
+      "start": 192.49,
+      "end": 198.29,
       "preAudio": false
     },
     {
@@ -119,6 +263,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "It's in a really beautiful old building on Bow Street.",
+      "start": 199.31,
+      "end": 202.85,
+      "preAudio": false
+    },
+    {
       "id": "cue-15",
       "speaker": "WOMAN",
       "text": "Where’s that? I haven’t heard of it.",
@@ -135,11 +287,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "Yes, that's it. I've only been there a couple of times, but I was really impressed.",
+      "start": 208.27,
+      "end": 213.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "The chef used to work at Don Felipe's, apparently. I was really sorry when that closed down.",
+      "start": 214.13,
+      "end": 220.67,
+      "preAudio": false
+    },
+    {
       "id": "cue-17",
       "speaker": "WOMAN",
       "text": "Oh, I think I know where you mean. Right beside the cinema.",
       "start": 221.93,
       "end": 230.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "Yeah, you can get lots of small dishes to share, which always works really well if you're in a group.",
+      "start": 224.31,
+      "end": 230.79,
       "preAudio": false
     },
     {
@@ -151,11 +327,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "We're thinking about.",
+      "start": 231.39,
+      "end": 232.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "Yeah, there's a lively atmosphere, and the waiters are really friendly.",
+      "start": 233.19,
+      "end": 237.71,
+      "preAudio": false
+    },
+    {
       "id": "cue-19",
       "speaker": "WOMAN",
-      "text": "So is all the food they serve Spanish, then?",
+      "text": "So is all the food they serve Spanish, then? Q3",
       "start": 246.77,
       "end": 249.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "I should have a look at the menu to check there's a good choice of vegetarian dishes. Q4",
+      "start": 246.77,
+      "end": 251.21,
       "preAudio": false
     },
     {
@@ -164,6 +364,22 @@
       "text": "Yeah. You can get lots of small dishes to share, which always works really well if you’re in a group.",
       "start": 249.83,
       "end": 256.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "A couple of my friends have stopped eating meat.",
+      "start": 251.97,
+      "end": 254.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "Not sure. I'd say the selection of those would be quite limited.",
+      "start": 255.19,
+      "end": 258.95,
       "preAudio": false
     },
     {
@@ -179,7 +395,15 @@
       "speaker": "MAN",
       "text": "Yeah. There’s a lively atmosphere and the waiters are really friendly. The only thing is that you need to pay a £50 deposit to book a table.",
       "start": 258.23,
-      "end": 300.85,
+      "end": 269.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "Now, listen and answer questions five to ten.",
+      "start": 269.19,
+      "end": 303.33,
       "preAudio": false
     },
     {
@@ -191,11 +415,59 @@
       "preAudio": false
     },
     {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "I've just thought of another idea. Have you been to the orderly?",
+      "start": 306.66,
+      "end": 310.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "No, don't think I've heard of it. How's it spelt?",
+      "start": 311.22,
+      "end": 315.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "A-U-D-L-E-Y. You must have heard of it. There's been a lot about it in the press. Q5",
+      "start": 315.76,
+      "end": 324.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "I don't tend to pay much attention to that kind of thing. So where is it exactly?",
+      "start": 324.62,
+      "end": 330.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "It's in that hotel near Baxter Bridge on the top floor. Q6",
+      "start": 330.16,
+      "end": 335.28,
+      "preAudio": false
+    },
+    {
       "id": "cue-24",
       "speaker": "MAN",
       "text": "Not sure I say the selection of those would be quite limited.",
       "start": 332.28,
       "end": 340.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "Yeah, I'd love to go. I can't think of the chef's name, but she was a judge on that TV cookery show recently.",
+      "start": 339.04,
+      "end": 347.3,
       "preAudio": false
     },
     {
@@ -207,11 +479,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "And she's written a couple of cookery books.",
+      "start": 348.12,
+      "end": 350.24,
+      "preAudio": false
+    },
+    {
       "id": "cue-26",
       "speaker": "MAN",
       "text": "I’ve just thought of another idea. Have you been to the Audley?",
       "start": 349.28,
       "end": 353.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "Oh, Angela Frain.",
+      "start": 350.74,
+      "end": 352.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "That's the one. Anyway, it's had excellent reviews from all the newspapers. Q7",
+      "start": 353.1,
+      "end": 358.44,
       "preAudio": false
     },
     {
@@ -223,11 +519,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "That would be a memorable place for a celebration.",
+      "start": 358.44,
+      "end": 362.34,
+      "preAudio": false
+    },
+    {
       "id": "cue-28",
       "speaker": "MAN",
       "text": "A-U-D-L-E-Y. You must have heard of it. There’s been a lot about it in the press.",
       "start": 360.16,
       "end": 367.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "Definitely. Obviously it's worth going there just for the view, but the food is supposed to be really special.",
+      "start": 362.98,
+      "end": 370.42,
       "preAudio": false
     },
     {
@@ -239,11 +551,51 @@
       "preAudio": false
     },
     {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "She only likes cooking with local products, doesn't she?",
+      "start": 370.9,
+      "end": 374.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "Yes. Everything at the restaurant has to be sourced within a short distance, and absolutely nothing flown in from abroad. Q8",
+      "start": 375.08,
+      "end": 383.74,
+      "preAudio": false
+    },
+    {
       "id": "cue-30",
       "speaker": "MAN",
       "text": "It’s in that hotel near Baxter Bridge, on the top floor.",
       "start": 381.34,
       "end": 395.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "I imagine it's really expensive, though.",
+      "start": 384.14,
+      "end": 386.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "Well, you could go for the set lunch. That's quite reasonable for a top-class restaurant.",
+      "start": 386.56,
+      "end": 393.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "30 pounds ahead. In the evening, I think it would be more like 50 pounds. Q9",
+      "start": 394.0,
+      "end": 399.6,
       "preAudio": false
     },
     {
@@ -255,11 +607,51 @@
       "preAudio": false
     },
     {
+      "id": "cue-79",
+      "speaker": null,
+      "text": "At least that, I should think. But I'm sure everyone would enjoy it.",
+      "start": 400.12,
+      "end": 404.84,
+      "preAudio": false
+    },
+    {
       "id": "cue-32",
       "speaker": "MAN",
       "text": "Yeah, I’d love to go. I can’t think of the chef’s name, but she was a judge on that TV cookery show recently. And she’s written a couple of cookery books.",
       "start": 400.74,
       "end": 418.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-80",
+      "speaker": null,
+      "text": "It's not the kind of place you leave feeling hungry, though, is it? With tiny portions? Q10",
+      "start": 405.58,
+      "end": 410.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-81",
+      "speaker": null,
+      "text": "No, the reviews I've read didn't mention that.",
+      "start": 411.34,
+      "end": 414.0,
+      "preAudio": false
+    },
+    {
+      "id": "cue-82",
+      "speaker": null,
+      "text": "I imagine there'd be average.",
+      "start": 414.0,
+      "end": 416.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-83",
+      "speaker": null,
+      "text": "Well, that's all great.",
+      "start": 417.42,
+      "end": 418.98,
       "preAudio": false
     },
     {
@@ -275,7 +667,7 @@
       "speaker": "MAN",
       "text": "That’s the one. Anyway, it had excellent reviews from all the newspapers.",
       "start": 423.91,
-      "end": 501.271,
+      "end": 501.27093,
       "preAudio": false
     }
   ]

@@ -39,6 +39,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "important than in the past because people hardly ever write by hand these days. Yes, and all the",
+      "start": 66.61,
+      "end": 73.61,
+      "preAudio": false
+    },
+    {
       "id": "cue-5",
       "speaker": "MAN",
       "text": "Yes, and all the evidence suggests children should learn to write by hand before they learn to type, not least because it helps their memory.",
@@ -47,11 +55,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "because it helps their memory. That's right. The physical act of writing helps children to remember",
+      "start": 79.57,
+      "end": 85.77,
+      "preAudio": false
+    },
+    {
       "id": "cue-6",
       "speaker": "WOMAN",
       "text": "That’s right. The physical act of writing helps children to remember letters. That seems pretty obvious when you think about it.",
       "start": 81.19,
       "end": 90.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "their letters. That seems pretty obvious when you think about it. What's less obvious is how it helps",
+      "start": 85.77,
+      "end": 92.77,
       "preAudio": false
     },
     {
@@ -71,11 +95,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "handwriting had never occurred to me before. Same here. I'm not sure I understand how it improves",
+      "start": 99.69,
+      "end": 106.29,
+      "preAudio": false
+    },
+    {
       "id": "cue-9",
       "speaker": "MAN",
       "text": "Same here. I’m not sure I understand how it improves children’s imagination, though.",
       "start": 102.11,
       "end": 108.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "children's imagination though. Well, there was that study which showed that primary age children",
+      "start": 106.29,
+      "end": 112.41,
       "preAudio": false
     },
     {
@@ -87,11 +127,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "that would be the case. Hmm, yeah. I'd never associated spatial awareness with handwriting either.",
+      "start": 118.83,
+      "end": 126.05,
+      "preAudio": false
+    },
+    {
       "id": "cue-11",
       "speaker": "MAN",
-      "text": "Hmm yeah I never associated spatial awareness with handwriting either. I thought spatial awareness was more to do with knowing where you are in relation to objects or other people.",
+      "text": "Hmm yeah I never associated spatial awareness with handwriting either. I thought spatial awareness was more to do with knowing where you are in relation to objects or other people. Q21/22",
       "start": 120.29,
       "end": 133.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "or other people. Hmm, I thought that too. But good spatial awareness is essential for writing because",
+      "start": 131.89,
+      "end": 139.19,
       "preAudio": false
     },
     {
@@ -111,6 +167,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "you have to space words correctly. It's not just fine motor skills that improve through writing as",
+      "start": 139.19,
+      "end": 145.91,
+      "preAudio": false
+    },
+    {
       "id": "cue-14",
       "speaker": "WOMAN",
       "text": "It’s not just fine motor skills that improve through writing, as I’d always assumed.",
@@ -119,11 +183,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "I'd always assumed. Handwriting is so much harder for children with dyspraxia who have problems",
+      "start": 145.91,
+      "end": 152.95,
+      "preAudio": false
+    },
+    {
       "id": "cue-15",
       "speaker": "MAN",
       "text": "Handwriting is so much harder for children with dyspraxia, who have problems coordinating movement.",
       "start": 148.33,
       "end": 154.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "coordinating movement. It's good there are lots of things you can do in the classroom to help them.",
+      "start": 152.95,
+      "end": 158.25,
       "preAudio": false
     },
     {
@@ -151,6 +231,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "distinguish letter shapes. It takes a lot of patience. Yeah, I like the idea of using one of those",
+      "start": 164.17,
+      "end": 171.15,
+      "preAudio": false
+    },
+    {
       "id": "cue-19",
       "speaker": "MAN",
       "text": "It takes a lot of patience.",
@@ -161,7 +249,7 @@
     {
       "id": "cue-20",
       "speaker": "WOMAN",
-      "text": "Yeah, I like the idea of using one of those pens that lights up if you press too hard. That seems like a really simple solution.",
+      "text": "Yeah, I like the idea of using one of those pens that lights up if you press too hard. That seems like a really simple solution. Q23/24",
       "start": 168.53,
       "end": 177.37,
       "preAudio": false
@@ -183,11 +271,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "I'm not sure there's much you can do about children with dyspraxia writing very slowly.",
+      "start": 178.67,
+      "end": 183.69,
+      "preAudio": false
+    },
+    {
       "id": "cue-23",
       "speaker": "MAN",
       "text": "It’s more important to focus on accuracy and as they get more confident, I think they eventually speed up.",
       "start": 184.37,
       "end": 192.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "It's more important to focus on accuracy and as they get more confident, I think they eventually",
+      "start": 184.37,
+      "end": 191.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "speed up. One quite simple thing you can do is to use grid paper so they write each letter in a box",
+      "start": 191.03,
+      "end": 198.85,
       "preAudio": false
     },
     {
@@ -225,9 +337,17 @@
     {
       "id": "cue-28",
       "speaker": "WOMAN",
-      "text": "Yeah, it’s not as frustrating for them if they get things wrong. On a keyboard, they can be more willing to have a go. But I read that developing fluency isn’t any faster.",
+      "text": "Yeah, it’s not as frustrating for them if they get things wrong. On a keyboard, they can be more willing to have a go. But I read that developing fluency isn’t any faster. Q25",
       "start": 288.73,
       "end": 300.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "Yeah, it's not as frustrating for them if they get things wrong. On a keyboard,",
+      "start": 288.73,
+      "end": 294.13,
       "preAudio": false
     },
     {
@@ -236,6 +356,14 @@
       "text": "That’s right. Did you read that article on the benefits of teaching print rather than cursive handwriting, where the letters are joined up?",
       "start": 300.73,
       "end": 309.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "That's right. Did you read that article on the benefits of teaching print rather than",
+      "start": 300.73,
+      "end": 306.99,
       "preAudio": false
     },
     {
@@ -257,9 +385,17 @@
     {
       "id": "cue-32",
       "speaker": "WOMAN",
-      "text": "Teachers’ attitudes have changed because it’s been proved that cursive is more difficult to learn, especially for children with learning difficulties who find joining up letters really challenging.",
+      "text": "Teachers’ attitudes have changed because it’s been proved that cursive is more difficult to learn, especially for children with learning difficulties who find joining up letters really challenging. Q26",
       "start": 319.05,
       "end": 331.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "because it's been proved that cursive is more difficult to learn, especially for children with",
+      "start": 320.87,
+      "end": 326.85,
       "preAudio": false
     },
     {
@@ -287,9 +423,25 @@
       "preAudio": false
     },
     {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "I'm sure a lot of students think it's unfair that they're being judged on their handwriting,",
+      "start": 341.59,
+      "end": 346.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "not just their knowledge. Marx had definitely affected if examiners can't read the script.",
+      "start": 346.75,
+      "end": 352.01,
+      "preAudio": false
+    },
+    {
       "id": "cue-36",
       "speaker": "WOMAN",
-      "text": "Marks are definitely affected if examiners can read the script.",
+      "text": "Marks are definitely affected if examiners can read the script. Q27",
       "start": 348.39,
       "end": 352.57,
       "preAudio": false
@@ -303,11 +455,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "That's why it's always been so important to teach children to write legibly.",
+      "start": 352.57,
+      "end": 356.83,
+      "preAudio": false
+    },
+    {
       "id": "cue-38",
       "speaker": "WOMAN",
       "text": "Do you think the role of handwriting will change in the future",
       "start": 357.67,
       "end": 362.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "Hmm, I can't see that changing much. Touch typing still isn't taught in most schools,",
+      "start": 361.47,
+      "end": 367.57,
       "preAudio": false
     },
     {
@@ -327,11 +495,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "which is a shame. But maybe that won't be necessary in the future, because people will also be",
+      "start": 367.99,
+      "end": 373.93,
+      "preAudio": false
+    },
+    {
       "id": "cue-41",
       "speaker": "MAN",
-      "text": "But maybe that won’t be necessary in the future, because people will also be able to write by hand on digital devices.",
+      "text": "But maybe that won’t be necessary in the future, because people will also be able to write by hand on digital devices. Q28",
       "start": 369.41,
       "end": 377.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "able to write by hand on digital devices. Anyway, teachers understand the value of handwriting.",
+      "start": 373.93,
+      "end": 380.85,
       "preAudio": false
     },
     {
@@ -351,6 +535,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "It's a basic life skill. True. However, the fact is that people are writing by hand less and",
+      "start": 380.85,
+      "end": 388.57,
+      "preAudio": false
+    },
+    {
       "id": "cue-44",
       "speaker": "WOMAN",
       "text": "True. However, the fact is that people are writing by hand less and less and relying on digital devices. That does cause some problems.",
@@ -367,6 +559,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "There are lots of apps for that. And for reading historical documents apparently.",
+      "start": 396.65,
+      "end": 401.61,
+      "preAudio": false
+    },
+    {
       "id": "cue-46",
       "speaker": "WOMAN",
       "text": "And for reading historical documents, apparently.",
@@ -377,7 +577,7 @@
     {
       "id": "cue-47",
       "speaker": "WOMAN",
-      "text": "But my mum is shocked by my awful spelling and the fact that my punctuation is really inconsistent.",
+      "text": "But my mum is shocked by my awful spelling and the fact that my punctuation is really inconsistent. Q29",
       "start": 402.37,
       "end": 409.23,
       "preAudio": false
@@ -393,9 +593,25 @@
     {
       "id": "cue-49",
       "speaker": "MAN",
-      "text": "I expect so. Personally, I miss writing by hand. I hardly ever write anything now. I remember my",
+      "text": "I expect so. Personally, I miss writing by hand. I hardly ever write anything now. I remember my Q30",
       "start": 412.97,
       "end": 420.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-79",
+      "speaker": null,
+      "text": "Personally, I'm misswriting by hand. I hardly ever write anything now.",
+      "start": 414.01,
+      "end": 418.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-80",
+      "speaker": null,
+      "text": "I remember my grandparents had such beautiful handwriting and it was so individual.",
+      "start": 419.47,
+      "end": 424.83,
       "preAudio": false
     },
     {
@@ -404,6 +620,14 @@
       "text": "grandparents had such beautiful handwriting and it was so individual. Nobody I know would",
       "start": 420.43,
       "end": 426.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-81",
+      "speaker": null,
+      "text": "Nobody I know would be able to identify my handwriting now. It's a shame.",
+      "start": 425.55,
+      "end": 430.21,
       "preAudio": false
     },
     {
@@ -420,6 +644,14 @@
       "text": "I know. I feel the same way. I used to write a diary by hand and now I do that digitally. It just",
       "start": 430.67,
       "end": 438.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-82",
+      "speaker": null,
+      "text": "It just seems less effort to do it that way. So it's not just a problem.",
+      "start": 438.49,
+      "end": 444.07,
       "preAudio": false
     },
     {

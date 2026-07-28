@@ -7,6 +7,30 @@
   "preambleSeconds": 90.178,
   "cues": [
     {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "31-40.",
+      "start": 65.71,
+      "end": 67.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "It's only relatively recently that designers have become aware of the need to be inclusive",
+      "start": 70.52,
+      "end": 76.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "when designing products. But what does that mean exactly?",
+      "start": 76.2,
+      "end": 80.44,
+      "preAudio": false
+    },
+    {
       "id": "cue-1",
       "speaker": null,
       "text": "It’s only relatively recently that designers have become aware of the need to be inclusive when designing products.",
@@ -33,9 +57,17 @@
     {
       "id": "cue-4",
       "speaker": null,
-      "text": "It means making sure products are accessible, so that as many different types of people as possible can use them, without any type of adaptation having to be made to the original design.",
+      "text": "It means making sure products are accessible, so that as many different types of people as possible can use them, without any type of adaptation having to be made to the original design. Q31",
       "start": 90.178,
       "end": 102.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "possible can use them without any type of adaptation having to be made to the original design.",
+      "start": 94.66,
+      "end": 101.06,
       "preAudio": false
     },
     {
@@ -49,7 +81,7 @@
     {
       "id": "cue-6",
       "speaker": null,
-      "text": "Universal design aims to make products that work for everyone and that includes considering the needs of people who have cognitive difficulties, which can present quite a challenge.",
+      "text": "Universal design aims to make products that work for everyone and that includes considering the needs of people who have cognitive difficulties, which can present quite a challenge. Q32",
       "start": 109.2,
       "end": 121.76,
       "preAudio": false
@@ -63,11 +95,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "Today, examples of successful inclusive design can be seen all around us.",
+      "start": 121.76,
+      "end": 127.28,
+      "preAudio": false
+    },
+    {
       "id": "cue-8",
       "speaker": null,
-      "text": "In workplaces it is common to see desks which can be adjusted to suit people of different heights or for wheelchair users This still isn’t always the case, however, and is one reason why office workers often suffer from back or neck problems.",
+      "text": "In workplaces it is common to see desks which can be adjusted to suit people of different heights or for wheelchair users This still isn’t always the case, however, and is one reason why office workers often suffer from back or neck problems. Q33",
       "start": 128.02,
       "end": 146.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "In workplaces, it is common to see desks which can be adjusted to suit people of different heights",
+      "start": 128.02,
+      "end": 134.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "or for wheelchair users. This still isn't always the case, however, and is one reason why",
+      "start": 134.72,
+      "end": 142.1,
       "preAudio": false
     },
     {
@@ -81,9 +137,17 @@
     {
       "id": "cue-10",
       "speaker": null,
-      "text": "Taps that you activate by sensor require no pressing or twisting movements.",
+      "text": "Taps that you activate by sensor require no pressing or twisting movements. Q34",
       "start": 154.28,
       "end": 160.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "require no pressing or twisting movements. These are not only more hygienic,",
+      "start": 157.1,
+      "end": 163.12,
       "preAudio": false
     },
     {
@@ -95,11 +159,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "they're also easier for people with dexterity or mobility issues.",
+      "start": 163.12,
+      "end": 168.0,
+      "preAudio": false
+    },
+    {
       "id": "cue-12",
       "speaker": null,
       "text": "The tech industry has been criticised in the past for focusing too much on young consumers, but this is changing.",
       "start": 168.44,
       "end": 178.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "but this is changing. Many products are now designed with the elderly in mind.",
+      "start": 175.46,
+      "end": 181.82,
       "preAudio": false
     },
     {
@@ -113,9 +193,25 @@
     {
       "id": "cue-14",
       "speaker": null,
-      "text": "For example, it’s well known that vision declines with age and that we also become worse at distinguishing between similar colours, in particular shades of blue, which is why software designers rarely create interfaces with this colour.",
+      "text": "For example, it’s well known that vision declines with age and that we also become worse at distinguishing between similar colours, in particular shades of blue, which is why software designers rarely create interfaces with this colour. Q35",
       "start": 182.7,
       "end": 201.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "For example, it's well known that vision declines with age, and that we also become worse at",
+      "start": 182.7,
+      "end": 189.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "distinguishing between similar colours. In particular, shades of blue, which is why software",
+      "start": 189.82,
+      "end": 196.96,
       "preAudio": false
     },
     {
@@ -137,7 +233,7 @@
     {
       "id": "cue-17",
       "speaker": null,
-      "text": "So voice access is now a routine way of making commands.",
+      "text": "So voice access is now a routine way of making commands. Q36",
       "start": 216.92,
       "end": 226.92,
       "preAudio": false
@@ -151,6 +247,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "as it can have a serious impact on people's lives. Access is one obvious example because it has",
+      "start": 235.98,
+      "end": 244.3,
+      "preAudio": false
+    },
+    {
       "id": "cue-19",
       "speaker": null,
       "text": "Access is one obvious example because it has such a huge impact on disabled people’s independence.",
@@ -159,11 +263,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "such a huge impact on disabled people's independence. Not being able to access public transport",
+      "start": 244.3,
+      "end": 252.08,
+      "preAudio": false
+    },
+    {
       "id": "cue-20",
       "speaker": null,
       "text": "Not being able to access public transport because buses or trains are not wheelchair means many disabled people can go out unless someone goes with them.",
       "start": 249.3,
       "end": 262.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "because buses or trains are not wheelchair-friendly means many disabled people can't go out unless",
+      "start": 252.08,
+      "end": 259.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "someone goes with them. Safety is another issue. Inexplicably, most cars are still crash-tested",
+      "start": 259.28,
+      "end": 268.72,
       "preAudio": false
     },
     {
@@ -183,11 +311,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "using a dummy based on an average-sized male. This has safety implications for all women,",
+      "start": 268.72,
+      "end": 275.9,
+      "preAudio": false
+    },
+    {
       "id": "cue-23",
       "speaker": null,
-      "text": "This has safety implications for all women, particularly those who are pregnant, as the seatbelts worn by the dummy are not adapted to accommodate them.",
+      "text": "This has safety implications for all women, particularly those who are pregnant, as the seatbelts worn by the dummy are not adapted to accommodate them. Q37",
       "start": 272.74,
       "end": 284.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "them. Over the past 100 years, workplaces in the UK have, on the whole, become considerably safer.",
+      "start": 283.06,
+      "end": 292.08,
       "preAudio": false
     },
     {
@@ -207,11 +351,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "or PPE, anything from goggles to full-body suits to workers who need it, free of charge.",
+      "start": 299.08,
+      "end": 305.92,
+      "preAudio": false
+    },
+    {
       "id": "cue-26",
       "speaker": null,
       "text": "But most PPE is designed to fit men.",
       "start": 306.74,
       "end": 310.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "But most PPE is designed to fit men. A recent report found that employers often think that when",
+      "start": 306.74,
+      "end": 314.48,
       "preAudio": false
     },
     {
@@ -223,9 +383,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "jackets, for example, designed for a small man. The problem with this is that women can be tall",
+      "start": 320.7,
+      "end": 328.16,
+      "preAudio": false
+    },
+    {
       "id": "cue-28",
       "speaker": null,
-      "text": "The problem with this is that women can be tall and still have much smaller shoulders than the average man.",
+      "text": "The problem with this is that women can be tall and still have much smaller shoulders than the average man. Q38",
       "start": 324.7,
       "end": 333.46,
       "preAudio": false
@@ -239,11 +407,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "vests and body armour can put women at risk. The report found that 95% of women said that their PPE",
+      "start": 337.24,
+      "end": 345.96,
+      "preAudio": false
+    },
+    {
       "id": "cue-30",
       "speaker": null,
-      "text": "The report found that 95% of women said that their PPE often hampered their work and that this problem was worst in the emergency services. particularly the police.",
+      "text": "The report found that 95% of women said that their PPE often hampered their work and that this problem was worst in the emergency services. particularly the police. Q39",
       "start": 341.4,
       "end": 355.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "often hampered their work, and that this problem was worst in the emergency services, particularly",
+      "start": 346.36,
+      "end": 353.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "the police. Another problem is related to comfort at work. A very common scenario in offices in",
+      "start": 353.48,
+      "end": 362.1,
       "preAudio": false
     },
     {
@@ -263,6 +455,22 @@
       "preAudio": false
     },
     {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "summer time is to see women wrapped in blankets or wearing sweaters while the air conditioning is on",
+      "start": 362.1,
+      "end": 369.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "high. Meanwhile, the men are in shorts and t-shirts. This is due to differences in metabolic",
+      "start": 369.1,
+      "end": 376.92,
+      "preAudio": false
+    },
+    {
       "id": "cue-33",
       "speaker": null,
       "text": "Meanwhile, the men are in shorts and T-shirts.",
@@ -279,11 +487,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "rates for men and women. There is a standard setting for air conditioning to be at a temperature Q40",
+      "start": 376.92,
+      "end": 382.86,
+      "preAudio": false
+    },
+    {
       "id": "cue-35",
       "speaker": null,
       "text": "There is a standard setting for air conditioning to be at a temperature of 21 degrees designed to suit men and in most modern offices it is not possible to turn the air conditioning up or down.",
       "start": 379.3,
       "end": 393.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "of 21 degrees, designed to suit men, and in most modern offices, it's not possible to turn the",
+      "start": 382.86,
+      "end": 390.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "air conditioning up or down. This means that many offices which mainly employ women are wasting",
+      "start": 390.94,
+      "end": 398.3,
       "preAudio": false
     },
     {
@@ -299,7 +531,23 @@
       "speaker": null,
       "text": "As you can see from the examples I’ve just mentioned, there are serious consequences for designs which don’t consider the needs of all users.",
       "start": 402.86,
-      "end": 512.951,
+      "end": 484.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "of the listening test. In the IELTS test, you would now have 10 minutes to transfer your answers",
+      "start": 484.22,
+      "end": 491.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "to the listening answer sheet.",
+      "start": 491.82,
+      "end": 493.6,
       "preAudio": false
     }
   ]

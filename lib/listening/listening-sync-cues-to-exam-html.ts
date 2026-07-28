@@ -27,11 +27,17 @@ function formatCueTime(seconds: number): string {
   return `${m}:${s < 10 ? "0" : ""}${s}`;
 }
 
+/** Wrap `Q12` / `Q21/22` so exam review can jump from answer → transcript. */
 function highlightQuestionMarkers(text: string): string {
-  return escapeHtml(text).replace(
-    /Q\d+/g,
-    (m) => `<span class="transcript-q-marker">${m}</span>`,
-  );
+  return escapeHtml(text).replace(/Q(\d+)(?:\/(\d+))?/g, (full, a, b) => {
+    const primary = Number.parseInt(String(a), 10);
+    const secondary = b != null && b !== "" ? Number.parseInt(String(b), 10) : NaN;
+    const also =
+      Number.isFinite(secondary) && secondary !== primary
+        ? ` data-q-also="${secondary}"`
+        : "";
+    return `<span class="transcript-q-marker" data-q="${primary}"${also}>${full}</span>`;
+  });
 }
 
 function listeningPartForQuestion(q: number): number {

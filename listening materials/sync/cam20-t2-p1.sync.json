@@ -7,6 +7,38 @@
   "preambleSeconds": 115,
   "cues": [
     {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "1 to 4. It's really good to see you, Tom. Since I had to give up work, I feel I'm losing",
+      "start": 80.68,
+      "end": 90.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "touch with my friends and colleagues. We really miss you in the office. We were all",
+      "start": 90.26,
+      "end": 95.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "so sorry you had to leave, but you must be relieved to have more time to look after your mother.",
+      "start": 95.26,
+      "end": 100.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "How is she? Well, she's very cheerful, but she needs a lot of help.",
+      "start": 100.84,
+      "end": 105.44,
+      "preAudio": false
+    },
+    {
       "id": "cue-1",
       "speaker": "WOMAN",
       "text": "It’s really good to see you, Tom. Since I had to give up work, I feel I’m losing touch with my friends and colleagues.",
@@ -15,11 +47,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "for, and also that they sometimes need a break. Absolutely. Okay, so tell me more. How do I",
+      "start": 121.22,
+      "end": 130.64,
+      "preAudio": false
+    },
+    {
       "id": "cue-2",
       "speaker": "MAN",
       "text": "We really miss you in the office. We were all so sorry you had to leave. But you must be relieved to have more time to look after your mother. How is she?",
       "start": 123.16,
       "end": 134.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "go about getting this support? Well, you'd have to have an assessment of your mother's needs.",
+      "start": 130.64,
+      "end": 135.44,
       "preAudio": false
     },
     {
@@ -38,11 +86,27 @@
       "end": 141.22
     },
     {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "So, for a start, they'd want to know the amount of time you spend looking after your mother",
+      "start": 140.62,
+      "end": 144.64,
+      "preAudio": false
+    },
+    {
       "id": "cue-5",
       "speaker": "WOMAN",
       "text": "No, I didn’t know I could.",
       "start": 141.22,
       "end": 144.8
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "every day. Okay. Then they'll probably ask you what sorts of tasks you do for your mother",
+      "start": 144.64,
+      "end": 149.86,
+      "preAudio": false
     },
     {
       "id": "cue-6",
@@ -55,9 +119,17 @@
     {
       "id": "cue-7",
       "speaker": "MAN",
-      "text": "They realise that carers sometimes need time for all the other responsibilities they have, apart from the person they’re caring for, and also that they sometimes need a break.",
+      "text": "They realise that carers sometimes need time for all the other responsibilities they have, apart from the person they’re caring for, and also that they sometimes need a break. Q1",
       "start": 147.52,
       "end": 157.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "with that, and also I help her get into the shower in the morning. Yes, that sort of thing.",
+      "start": 156.02,
+      "end": 161.26,
       "preAudio": false
     },
     {
@@ -66,6 +138,14 @@
       "text": "Absolutely. OK, so tell me more. How do I go about getting this support?",
       "start": 157.38,
       "end": 162.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "They'll probably ask you if you do the shopping for her and help her at meal times, and whether",
+      "start": 162.08,
+      "end": 167.28,
       "preAudio": false
     },
     {
@@ -85,11 +165,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "she can cope using money. Yes, that's becoming a bit of a problem. She used to be very good at it,",
+      "start": 167.28,
+      "end": 174.16,
+      "preAudio": false
+    },
+    {
       "id": "cue-11",
       "speaker": "MAN",
-      "text": "So, for a start, they’d want to know the amount of time you spend looking after your mother every day.",
+      "text": "So, for a start, they’d want to know the amount of time you spend looking after your mother every day. Q2",
       "start": 171.66,
       "end": 178.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "but not anymore. Before you hear the rest of the conversation, you have some time to look at",
+      "start": 174.24,
+      "end": 183.72,
       "preAudio": false
     },
     {
@@ -108,9 +204,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "questions 5 to 10. Now listen and answer questions 5 to 10. And be ready to tell them about anything",
+      "start": 183.72,
+      "end": 188.38,
+      "preAudio": false
+    },
+    {
       "id": "cue-14",
       "speaker": "WOMAN",
-      "text": "Right. I help her with that. And also I help her get into the shower in the morning.",
+      "text": "Right. I help her with that. And also I help her get into the shower in the morning. Q3",
       "start": 188.43,
       "end": 194.55,
       "preAudio": false
@@ -126,7 +230,7 @@
     {
       "id": "cue-16",
       "speaker": "WOMAN",
-      "text": "Yes, that’s becoming a bit of a problem. She used to be very good at it, but not anymore.",
+      "text": "Yes, that’s becoming a bit of a problem. She used to be very good at it, but not anymore. Q4",
       "start": 196.25,
       "end": 202.71,
       "preAudio": false
@@ -156,11 +260,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "to have quite bad problems with her memory. If I wasn't there, I think she'd forget to eat, Q5",
+      "start": 231.61,
+      "end": 237.55,
+      "preAudio": false
+    },
+    {
       "id": "cue-20",
       "speaker": "WOMAN",
       "text": "If I wasn’t there, I think she’d forget to eat, for example.",
       "start": 234.71,
       "end": 239.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "for example. And often she doesn't seem quite sure what day it is. Yes, tell them about that.",
+      "start": 237.81,
+      "end": 244.33,
       "preAudio": false
     },
     {
@@ -174,7 +294,7 @@
     {
       "id": "cue-22",
       "speaker": "MAN",
-      "text": "Yes, tell them about that. And are there any physical difficulties you have caring for her? Lifting her, for example?",
+      "text": "Yes, tell them about that. And are there any physical difficulties you have caring for her? Lifting her, for example? Q6",
       "start": 242.99,
       "end": 250.83,
       "preAudio": false
@@ -188,11 +308,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "Yes, she's quite heavy, and I'm afraid of hurting my back. I'd be in real trouble if that happened.",
+      "start": 250.83,
+      "end": 258.27,
+      "preAudio": false
+    },
+    {
       "id": "cue-24",
       "speaker": "MAN",
-      "text": "They can give you advice about that and also about how to avoid the possibility of your mum having a fall.",
+      "text": "They can give you advice about that and also about how to avoid the possibility of your mum having a fall. Q7",
       "start": 258.91,
       "end": 266.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "They can give you advice about that, and also about how to avoid the possibility of your mom having",
+      "start": 258.91,
+      "end": 264.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "a fall. Great. So, once they've done this assessment, if I'm eligible, what happens next?",
+      "start": 264.07,
+      "end": 272.21,
       "preAudio": false
     },
     {
@@ -206,9 +350,17 @@
     {
       "id": "cue-26",
       "speaker": "MAN",
-      "text": "Well, they might support you financially. So they might help you with transport costs, like if you have to get a taxi to take your mother for an appointment, for example.",
+      "text": "Well, they might support you financially. So they might help you with transport costs, like if you have to get a taxi to take your mother for an appointment, for example. Q8",
       "start": 272.91,
       "end": 283.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "Well, they might support you financially, so they might help you with transport costs,",
+      "start": 272.91,
+      "end": 277.85,
       "preAudio": false
     },
     {
@@ -217,6 +369,14 @@
       "text": "I usually drive her myself, actually. So, could I claim the petrol?",
       "start": 283.45,
       "end": 287.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "You could, and you can claim for the insurance, too. Oh, right. And if you need help with the Q9",
+      "start": 287.39,
+      "end": 293.57,
       "preAudio": false
     },
     {
@@ -244,11 +404,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "I hope you don't mind me saying this, but it's important you look after yourself.",
+      "start": 299.57,
+      "end": 303.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "And it seems to me you're under quite a bit of stress. I am, yes.",
+      "start": 303.71,
+      "end": 307.37,
+      "preAudio": false
+    },
+    {
       "id": "cue-31",
       "speaker": "MAN",
-      "text": "look after yourself And it seems to me you under quite a bit of stress",
+      "text": "look after yourself And it seems to me you under quite a bit of stress Q10",
       "start": 304.73,
       "end": 309.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "Well, tell the council, because they may be able to give you some advice on how to minimise it.",
+      "start": 307.81,
+      "end": 312.91,
       "preAudio": false
     },
     {

@@ -23,9 +23,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "Okay, so one aspect is population.",
+      "start": 64.54,
+      "end": 66.92,
+      "preAudio": false
+    },
+    {
       "id": "cue-3",
       "speaker": "ROSIE",
-      "text": "OK. So one aspect is population. That would be all about population density and migration and so on. Lots of facts and statistics. Maybe a bit boring?",
+      "text": "OK. So one aspect is population. That would be all about population density and migration and so on. Lots of facts and statistics. Maybe a bit boring? Q21",
       "start": 65.18,
       "end": 74.64,
       "preAudio": false
@@ -47,6 +55,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "Sposo, how about health? Q22",
+      "start": 78.36,
+      "end": 80.56,
+      "preAudio": false
+    },
+    {
       "id": "cue-6",
       "speaker": "ROSIE",
       "text": "How about health?",
@@ -63,11 +79,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "I'd never thought about the links between that and geography",
+      "start": 81.26,
+      "end": 83.78,
+      "preAudio": false
+    },
+    {
       "id": "cue-8",
       "speaker": "ROSIE",
       "text": "How in the 19th century, a physician used street plans and plans of water supplies to find the source of a cholera epidemic.",
       "start": 87.72,
       "end": 95.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "to find the source of a cholera epidemic?",
+      "start": 91.7,
+      "end": 93.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "Yes, fascinating, wasn't it?",
+      "start": 94.3,
+      "end": 96.18,
       "preAudio": false
     },
     {
@@ -87,6 +127,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "Yeah.",
+      "start": 104.84,
+      "end": 105.1,
+      "preAudio": false
+    },
+    {
       "id": "cue-11",
       "speaker": "COLIN",
       "text": "Yeah",
@@ -97,9 +145,25 @@
     {
       "id": "cue-12",
       "speaker": "ROSIE",
-      "text": "I thought that had been taken off the syllabus for this year",
+      "text": "I thought that had been taken off the syllabus for this year Q23",
       "start": 105.72,
       "end": 109.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "Has it?",
+      "start": 108.24,
+      "end": 108.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "I'm not sure, but it might be best to avoid it.",
+      "start": 109.06,
+      "end": 111.62,
       "preAudio": false
     },
     {
@@ -119,6 +183,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "Okay, maybe we could do something on culture.",
+      "start": 111.62,
+      "end": 115.5,
+      "preAudio": false
+    },
+    {
       "id": "cue-15",
       "speaker": "COLIN",
       "text": "OK. Maybe we could do something on culture. We had that lecture about culture and geography last week.",
@@ -135,11 +207,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "I didn't get much out of that.",
+      "start": 120.02,
+      "end": 121.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "It was also general, and the lecturer didn't give any useful examples. Q24",
+      "start": 121.86,
+      "end": 125.68,
+      "preAudio": false
+    },
+    {
       "id": "cue-17",
       "speaker": "COLIN",
       "text": "Yeah, I hardly took any notes. It didn’t seem worth it.",
       "start": 126.82,
       "end": 130.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "It didn't seem worth it.",
+      "start": 128.4,
+      "end": 129.52,
       "preAudio": false
     },
     {
@@ -159,11 +255,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "That's something that's a global problem.",
+      "start": 132.94,
+      "end": 134.88,
+      "preAudio": false
+    },
+    {
       "id": "cue-20",
       "speaker": "ROSIE",
-      "text": "The trouble is, Dr Lee was saying, that you have to be careful with some of the figures relating to poverty. They’re sometimes deliberately manipulated.",
+      "text": "The trouble is, Dr Lee was saying, that you have to be careful with some of the figures relating to poverty. They’re sometimes deliberately manipulated. Q25",
       "start": 135.16,
       "end": 143.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "There's sometimes deliberately manipulated.",
+      "start": 140.72,
+      "end": 142.56,
       "preAudio": false
     },
     {
@@ -183,6 +295,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "That's sort of thing, yes.",
+      "start": 146.86,
+      "end": 147.98,
+      "preAudio": false
+    },
+    {
       "id": "cue-23",
       "speaker": null,
       "text": "Before you hear the rest of the discussion, you have some time to look at questions 26 to 30. you Now listen and answer questions 26 to 30.",
@@ -196,6 +316,14 @@
       "text": "So what are we going to do our assignment on?",
       "start": 200.4,
       "end": 203.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "I'll tell you what, one of the possibilities we haven't discussed",
+      "start": 203.1,
+      "end": 206.02,
       "preAudio": false
     },
     {
@@ -215,6 +343,30 @@
       "preAudio": false
     },
     {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "is urbanisation.",
+      "start": 206.02,
+      "end": 207.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "And now over half the world's population lives in cities.",
+      "start": 208.3,
+      "end": 210.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "That's really important.",
+      "start": 211.52,
+      "end": 212.38,
+      "preAudio": false
+    },
+    {
       "id": "cue-27",
       "speaker": "ROSIE",
       "text": "That really important",
@@ -231,11 +383,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "Okay, good idea, Rosie. Let's do that.",
+      "start": 213.0,
+      "end": 215.56,
+      "preAudio": false
+    },
+    {
       "id": "cue-29",
       "speaker": "ROSIE",
       "text": "I love living in a big city but of course there are problems",
       "start": 215.96,
       "end": 220.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "I love living in a big city, but of course there are problems.",
+      "start": 215.96,
+      "end": 218.7,
       "preAudio": false
     },
     {
@@ -255,6 +423,30 @@
       "preAudio": false
     },
     {
+      "id": "cue-79",
+      "speaker": null,
+      "text": "that's linked to another more serious issue,",
+      "start": 223.56,
+      "end": 225.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-80",
+      "speaker": null,
+      "text": "which is that a lot of people don't have jobs. Q26",
+      "start": 225.86,
+      "end": 227.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-81",
+      "speaker": null,
+      "text": "That's getting worse and worse.",
+      "start": 228.62,
+      "end": 230.0,
+      "preAudio": false
+    },
+    {
       "id": "cue-32",
       "speaker": "ROSIE",
       "text": "That’s getting worse and worse.",
@@ -271,6 +463,22 @@
       "preAudio": false
     },
     {
+      "id": "cue-82",
+      "speaker": null,
+      "text": "though that's not quite so bad as it was.",
+      "start": 233.76,
+      "end": 235.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-83",
+      "speaker": null,
+      "text": "It'd be nice to talk about some positive developments,",
+      "start": 236.02,
+      "end": 238.7,
+      "preAudio": false
+    },
+    {
       "id": "cue-34",
       "speaker": "COLIN",
       "text": "It would be nice to talk about some positive developments, like some of the new developments on the outskirts of cities.",
@@ -279,11 +487,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-84",
+      "speaker": null,
+      "text": "Yeah, they've opened some massive new shopping centres outside my city.",
+      "start": 243.3,
+      "end": 246.86,
+      "preAudio": false
+    },
+    {
       "id": "cue-35",
       "speaker": "ROSIE",
       "text": "Yeah, they’ve opened some massive new shopping centres outside my city.",
       "start": 245.38,
       "end": 249.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-85",
+      "speaker": null,
+      "text": "but it's meant a lot of the shops in the city centre are closing down.",
+      "start": 248.88,
+      "end": 252.74,
       "preAudio": false
     },
     {
@@ -297,9 +521,17 @@
     {
       "id": "cue-37",
       "speaker": "COLIN",
-      "text": "But the outskirts are ideal for buildings that need a lot of space, like for conferences.",
+      "text": "But the outskirts are ideal for buildings that need a lot of space, like for conferences. Q27",
       "start": 254.04,
       "end": 259.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-86",
+      "speaker": null,
+      "text": "They've opened a couple of big ones.",
+      "start": 259.28,
+      "end": 260.7,
       "preAudio": false
     },
     {
@@ -311,11 +543,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-87",
+      "speaker": null,
+      "text": "Yes, we've got some too.",
+      "start": 260.94,
+      "end": 262.38,
+      "preAudio": false
+    },
+    {
       "id": "cue-39",
       "speaker": "ROSIE",
       "text": "Yes, we’ve got some too. It’d be nicer to have more facilities for things like football too, but that’s not happening where I live.",
       "start": 261.86,
       "end": 269.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-88",
+      "speaker": null,
+      "text": "It'd be nicer to have more facilities for things like football too,",
+      "start": 263.1,
+      "end": 266.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-89",
+      "speaker": null,
+      "text": "but that's not happening where I live.",
+      "start": 267.1,
+      "end": 268.66,
       "preAudio": false
     },
     {
@@ -335,11 +591,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-90",
+      "speaker": null,
+      "text": "It seems like a good idea,",
+      "start": 274.5,
+      "end": 275.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-91",
+      "speaker": null,
+      "text": "because you're not doing any harm to the natural environment.",
+      "start": 276.1,
+      "end": 278.74,
+      "preAudio": false
+    },
+    {
       "id": "cue-42",
       "speaker": "COLIN",
       "text": "Yeah, but aren’t the buildings architecturally significant?",
       "start": 279.1,
       "end": 283.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-92",
+      "speaker": null,
+      "text": "Yeah, but aren't the buildings architecturally significant?",
+      "start": 279.1,
+      "end": 282.72,
       "preAudio": false
     },
     {
@@ -351,6 +631,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-93",
+      "speaker": null,
+      "text": "chemicals and things,",
+      "start": 288.76,
+      "end": 289.62,
+      "preAudio": false
+    },
+    {
       "id": "cue-44",
       "speaker": "ROSIE",
       "text": "and things, which haven’t been properly cleared away, so the whole site has to be made safe.",
@@ -359,11 +647,43 @@
       "preAudio": false
     },
     {
+      "id": "cue-94",
+      "speaker": null,
+      "text": "which haven't been properly cleared away.",
+      "start": 290.0,
+      "end": 291.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-95",
+      "speaker": null,
+      "text": "Hmm, that can't be cheap,",
+      "start": 294.34,
+      "end": 295.8,
+      "preAudio": false
+    },
+    {
       "id": "cue-45",
       "speaker": "COLIN",
-      "text": "Hmm, that can’t be cheap. And I bet it’s often not budgeted for.",
+      "text": "Hmm, that can’t be cheap. And I bet it’s often not budgeted for. Q28",
       "start": 294.74,
       "end": 299.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-96",
+      "speaker": null,
+      "text": "and I bet it's often not budgeted for.",
+      "start": 296.4,
+      "end": 298.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-97",
+      "speaker": null,
+      "text": "You're right.",
+      "start": 298.46,
+      "end": 298.84,
       "preAudio": false
     },
     {
@@ -372,6 +692,14 @@
       "text": "You’re right.",
       "start": 299.16,
       "end": 299.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-98",
+      "speaker": null,
+      "text": "Have you read about Mazda City?",
+      "start": 299.58,
+      "end": 301.28,
       "preAudio": false
     },
     {
@@ -385,9 +713,33 @@
     {
       "id": "cue-48",
       "speaker": "ROSIE",
-      "text": "In Abu Dhabi? Yes. It was designed to be a green city, wasn’t it? That might be a good example of a city which set out to depend entirely on renewable energy.",
+      "text": "In Abu Dhabi? Yes. It was designed to be a green city, wasn’t it? That might be a good example of a city which set out to depend entirely on renewable energy. Q29",
       "start": 301.7,
       "end": 312.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-99",
+      "speaker": null,
+      "text": "An Abu Dhabi.",
+      "start": 301.7,
+      "end": 302.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-100",
+      "speaker": null,
+      "text": "Yes, it was designed to be a green city, wasn't it?",
+      "start": 302.88,
+      "end": 306.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-101",
+      "speaker": null,
+      "text": "Yes, we should say something about that.",
+      "start": 311.86,
+      "end": 314.16,
       "preAudio": false
     },
     {
@@ -395,6 +747,14 @@
       "speaker": "COLIN",
       "text": "Yes we should say something about that It was designed to be totally pedestrianised too wasn’t it with the transport underground",
       "start": 312.58,
+      "end": 320.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-102",
+      "speaker": null,
+      "text": "With the transports underground.",
+      "start": 319.02,
       "end": 320.62,
       "preAudio": false
     },
@@ -407,11 +767,43 @@
       "preAudio": false
     },
     {
+      "id": "cue-103",
+      "speaker": null,
+      "text": "Yes, and they had big plans for recycling to reduce waste to the lowest possible level.",
+      "start": 320.62,
+      "end": 326.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-104",
+      "speaker": null,
+      "text": "But let's stick to talking about power sources.",
+      "start": 326.62,
+      "end": 328.68,
+      "preAudio": false
+    },
+    {
       "id": "cue-51",
       "speaker": "COLIN",
       "text": "Then there’s that ecotown in England, Greenhill Abbotts.",
       "start": 329.38,
       "end": 333.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-105",
+      "speaker": null,
+      "text": "Then there's that eco-town in England,",
+      "start": 329.38,
+      "end": 331.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-106",
+      "speaker": null,
+      "text": "Green Hill Abuts.",
+      "start": 331.96,
+      "end": 333.02,
       "preAudio": false
     },
     {
@@ -447,9 +839,25 @@
       "preAudio": false
     },
     {
+      "id": "cue-107",
+      "speaker": null,
+      "text": "I'm not sure how far they've got with it. Q30",
+      "start": 344.36,
+      "end": 346.94,
+      "preAudio": false
+    },
+    {
       "id": "cue-56",
       "speaker": "COLIN",
       "text": "I’ll check.",
+      "start": 347.44,
+      "end": 348.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-108",
+      "speaker": null,
+      "text": "I'll check.",
       "start": 347.44,
       "end": 348.14,
       "preAudio": false
@@ -459,7 +867,15 @@
       "speaker": "ROSIE",
       "text": "Right. So it looks as if we have a sort of plan.",
       "start": 348.14,
-      "end": 422.393,
+      "end": 348.53999999999996,
+      "preAudio": false
+    },
+    {
+      "id": "cue-109",
+      "speaker": null,
+      "text": "Right, it looks as if we have a sort of plan and we can work on that.",
+      "start": 348.14,
+      "end": 352.44,
       "preAudio": false
     }
   ]

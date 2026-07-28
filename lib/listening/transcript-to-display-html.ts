@@ -12,8 +12,17 @@ function escapeHtml(s: string): string {
 const PART_LINE = /^PART\s+\d+\s*$/i;
 const RULE_LINE = /^[—\-_\s]{4,}$/;
 
+/** Wrap `Q12` / `Q21/22` for exam review jump targets (plain transcript fallback). */
 function qMarkers(htmlEscapedLine: string): string {
-  return htmlEscapedLine.replace(/Q\d+/g, (m) => `<span style="color: #6d28d9; font-weight: 600">${m}</span>`);
+  return htmlEscapedLine.replace(/Q(\d+)(?:\/(\d+))?/g, (full, a, b) => {
+    const primary = Number.parseInt(String(a), 10);
+    const secondary = b != null && b !== "" ? Number.parseInt(String(b), 10) : NaN;
+    const also =
+      Number.isFinite(secondary) && secondary !== primary
+        ? ` data-q-also="${secondary}"`
+        : "";
+    return `<span class="transcript-q-marker" data-q="${primary}"${also} style="color:#6d28d9;font-weight:600">${full}</span>`;
+  });
 }
 
 /**

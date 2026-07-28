@@ -7,6 +7,14 @@
   "preambleSeconds": 90.95,
   "cues": [
     {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "It's quite hard to think of a city that doesn't have a big river running through it. If you",
+      "start": 75.85,
+      "end": 81.03,
+      "preAudio": false
+    },
+    {
       "id": "cue-1",
       "speaker": null,
       "text": "It’s quite hard to think of a city that doesn’t have a big river running through it.",
@@ -23,11 +31,27 @@
       "preAudio": true
     },
     {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "all built on rivers. When these cities were established hundreds or even thousands of years",
+      "start": 86.77,
+      "end": 92.83,
+      "preAudio": false
+    },
+    {
       "id": "cue-3",
       "speaker": null,
       "text": "When these cities were established hundreds or even thousands of years ago, the rivers were a big part of people’s lives.",
       "start": 90.95,
       "end": 98.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "ago, the rivers were a big part of people's lives. In 16th century London, the quickest",
+      "start": 92.83,
+      "end": 99.31,
       "preAudio": false
     },
     {
@@ -47,11 +71,35 @@
       "preAudio": false
     },
     {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "of the city streets. But, as industries developed and populations increased, city rivers suffered.",
+      "start": 115.53,
+      "end": 122.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "into the rivers. Rivers had always been used for this purpose, but when the number of inhabitants",
+      "start": 127.83,
+      "end": 133.67,
+      "preAudio": false
+    },
+    {
       "id": "cue-6",
       "speaker": null,
       "text": "Rivers had always been used for this purpose, but when the number of inhabitants was so small, that wasn’t such a problem.",
       "start": 129.55,
       "end": 137.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "was so small that wasn't such a problem. However, as cities grew to over a million",
+      "start": 133.67,
+      "end": 140.01,
       "preAudio": false
     },
     {
@@ -65,9 +113,17 @@
     {
       "id": "cue-8",
       "speaker": null,
-      "text": "In addition, other types of pollution increased, as factories were built beside the river and discharged their waste materials into the water.",
+      "text": "In addition, other types of pollution increased, as factories were built beside the river and discharged their waste materials into the water. Q31",
       "start": 144.31,
       "end": 154.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "into the water. This got worse over time. As recently as 1957, scientists at London's Natural",
+      "start": 152.27,
+      "end": 160.51,
       "preAudio": false
     },
     {
@@ -81,9 +137,17 @@
     {
       "id": "cue-10",
       "speaker": null,
-      "text": "As recently as 1957, scientists at London’s Natural History Museum declared that the River Thames was dead in biological terms, as the water was too filthy to support any kind of life.",
+      "text": "As recently as 1957, scientists at London’s Natural History Museum declared that the River Thames was dead in biological terms, as the water was too filthy to support any kind of life. Q32",
       "start": 156.19,
       "end": 170.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "was too filthy to support any kind of life. But in recent years, as rivers lost their",
+      "start": 166.81,
+      "end": 173.47,
       "preAudio": false
     },
     {
@@ -92,6 +156,14 @@
       "text": "But in recent years, as rivers lost their industrial function, cities have begun to recognise their true value and to take steps to clean them up.",
       "start": 170.45,
       "end": 180.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "them up. For example, the river Thames is now cleaner than it's been for 150 years. These",
+      "start": 179.33,
+      "end": 186.43,
       "preAudio": false
     },
     {
@@ -105,7 +177,7 @@
     {
       "id": "cue-13",
       "speaker": null,
-      "text": "These days you can see seals swimming in the water, and recently people had to try to rescue a whale, which had got lost and swam up the river from the sea by mistake.",
+      "text": "These days you can see seals swimming in the water, and recently people had to try to rescue a whale, which had got lost and swam up the river from the sea by mistake. Q33",
       "start": 186.07,
       "end": 197.63,
       "preAudio": false
@@ -129,25 +201,57 @@
     {
       "id": "cue-16",
       "speaker": null,
-      "text": "Warehouses that were once used for storing goods are now being converted into expensive restaurants and also into apartments with river views, which are in great demand and sell for astronomical prices.",
+      "text": "Warehouses that were once used for storing goods are now being converted into expensive restaurants and also into apartments with river views, which are in great demand and sell for astronomical prices. Q34",
       "start": 211.29,
       "end": 225.25,
       "preAudio": false
     },
     {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "prices. In Los Angeles, on the west coast of the USA, an architect has plans to revitalise",
+      "start": 223.45,
+      "end": 230.69,
+      "preAudio": false
+    },
+    {
       "id": "cue-17",
       "speaker": null,
-      "text": "In Los Angeles, on the west coast of the USA, an architect has plans to revitalise the banks of the river and to make a park there which can provide facilities for sports as well as a natural environment for relaxing in It also hoped that the riverside can be used for other purposes It’s been proposed that facilities could be provided for displaying projects related to various kinds of art that have been produced by local people, for example.",
+      "text": "In Los Angeles, on the west coast of the USA, an architect has plans to revitalise the banks of the river and to make a park there which can provide facilities for sports as well as a natural environment for relaxing in It also hoped that the riverside can be used for other purposes It’s been proposed that facilities could be provided for displaying projects related to various kinds of art that have been produced by local people, for example. Q35 Q36",
       "start": 225.25,
       "end": 255.59,
       "preAudio": false
     },
     {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "well as a natural environment for relaxing in. It's also hoped that the riverside can be",
+      "start": 236.51,
+      "end": 242.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "used for other purposes. It's been proposed that facilities could be provided for displaying",
+      "start": 242.25,
+      "end": 248.41,
+      "preAudio": false
+    },
+    {
       "id": "cue-18",
       "speaker": null,
-      "text": "In the city of Paris, During the summer months of July and August, all the traffic is banned from the roads by the sides of the river, and the banks are transformed into beaches, where people can relax in deck chairs under potted palm trees, sunbathe or buy a drink or a snack while enjoying the view.",
+      "text": "In the city of Paris, During the summer months of July and August, all the traffic is banned from the roads by the sides of the river, and the banks are transformed into beaches, where people can relax in deck chairs under potted palm trees, sunbathe or buy a drink or a snack while enjoying the view. Q37",
       "start": 255.59,
       "end": 279.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "while enjoying the view. But to make the most of our rivers in our increasingly crowded cities,",
+      "start": 273.25,
+      "end": 283.13,
       "preAudio": false
     },
     {
@@ -159,6 +263,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "reclaiming our streets from cars and lorries. To do this, we'll have to shift more traffic",
+      "start": 289.83,
+      "end": 296.21,
+      "preAudio": false
+    },
+    {
       "id": "cue-20",
       "speaker": null,
       "text": "To do this, we’ll have to shift more traffic back to the river, but this time cleanly and silently, making the most of modern technology.",
@@ -167,9 +279,17 @@
       "preAudio": false
     },
     {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "back to the river, but this time, cleanly and silently, making the most of modern technology.",
+      "start": 296.21,
+      "end": 302.89,
+      "preAudio": false
+    },
+    {
       "id": "cue-21",
       "speaker": null,
-      "text": "Already, more than two billion passengers use the ferry to travel in cities around the world, like Istanbul, San Francisco and New York, and these numbers are set to rise further.",
+      "text": "Already, more than two billion passengers use the ferry to travel in cities around the world, like Istanbul, San Francisco and New York, and these numbers are set to rise further. Q38",
       "start": 303.77,
       "end": 316.55,
       "preAudio": false
@@ -183,11 +303,27 @@
       "preAudio": false
     },
     {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "it's not a fast way of travelling, but neither is a car when it's stuck in traffic. Of course,",
+      "start": 317.25,
+      "end": 323.35,
+      "preAudio": false
+    },
+    {
       "id": "cue-23",
       "speaker": null,
       "text": "Of course, passenger traffic on roads might decrease as more people start working from home, but another recent development, the huge rise in online shopping, has meant that another form of urban traffic just keeps on growing, and that’s deliveries.",
       "start": 322.69,
       "end": 339.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "just keeps on growing, and that deliveries. Trucks and vans in the city pollute and double park",
+      "start": 335.71,
+      "end": 342.89,
       "preAudio": false
     },
     {
@@ -199,6 +335,14 @@
       "preAudio": false
     },
     {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "while dropping off parcels. Imagine using the immense capacity of shipping to take these trucks off",
+      "start": 342.89,
+      "end": 349.87,
+      "preAudio": false
+    },
+    {
       "id": "cue-25",
       "speaker": null,
       "text": "Imagine using the immense capacity of shipping to take these trucks off the road.",
@@ -207,19 +351,59 @@
       "preAudio": false
     },
     {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "the road. One freight barge can replace 44 large trucks, uses far less energy, and causes less pollution.",
+      "start": 349.87,
+      "end": 358.45,
+      "preAudio": false
+    },
+    {
       "id": "cue-26",
       "speaker": null,
-      "text": "One freight barge can replace 44 large trucks, uses far less energy and causes less pollution When the barge docks at the riverside the parcels could be taken the last few kilometres to their final destination on cargo bikes, electric ones of course.",
+      "text": "One freight barge can replace 44 large trucks, uses far less energy and causes less pollution When the barge docks at the riverside the parcels could be taken the last few kilometres to their final destination on cargo bikes, electric ones of course. Q39",
       "start": 351.07,
       "end": 370.09,
       "preAudio": false
     },
     {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "When the barge docks at the riverside, the parcels could be taken the last few kilometers to their",
+      "start": 359.33,
+      "end": 364.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "final destination on cargo bikes, electric ones, of course. This is already happening in the",
+      "start": 364.65,
+      "end": 371.49,
+      "preAudio": false
+    },
+    {
       "id": "cue-27",
       "speaker": null,
-      "text": "This is already happening in the Dutch city of Amsterdam, and in future the final stage could even be carried out by drone, although at present this isn’t allowed.",
+      "text": "This is already happening in the Dutch city of Amsterdam, and in future the final stage could even be carried out by drone, although at present this isn’t allowed. Q40",
       "start": 370.09,
       "end": 380.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "Dutch city of Amsterdam, and in future, the final stage could even be carried out by drone,",
+      "start": 371.49,
+      "end": 377.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "although at present this isn't allowed. Wouldn't it be great to unblock our city centres in this way?",
+      "start": 377.47,
+      "end": 384.11,
       "preAudio": false
     },
     {
@@ -235,7 +419,23 @@
       "speaker": null,
       "text": "Looking further ahead…",
       "start": 385.15,
-      "end": 472.525,
+      "end": 395.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "part four. That is the end of the listening test. In the IELTS test, you would now have ten minutes to",
+      "start": 395.83,
+      "end": 463.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "transfer your answers to the listening answer sheet.",
+      "start": 463.76,
+      "end": 466.86,
       "preAudio": false
     }
   ]

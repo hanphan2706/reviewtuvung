@@ -122,12 +122,14 @@ function letterRangeToLetters(range: string | undefined, fallback = 8): string[]
   if (!range) {
     return Array.from({ length: fallback }, (_, i) => String.fromCharCode(65 + i));
   }
-  const m = range.match(/([A-H])\s*(?:–|-)\s*([A-H])/i);
+  const m = range.match(/([A-I])\s*(?:–|-)\s*([A-Il])/i);
   if (!m) {
     return Array.from({ length: fallback }, (_, i) => String.fromCharCode(65 + i));
   }
   const start = m[1]!.toUpperCase().charCodeAt(0);
-  const end = m[2]!.toUpperCase().charCodeAt(0);
+  const endRaw = m[2]!;
+  const endChar = endRaw === "l" || endRaw === "L" ? "I" : endRaw.toUpperCase();
+  const end = endChar.charCodeAt(0);
   const letters: string[] = [];
   for (let code = start; code <= end; code += 1) {
     letters.push(String.fromCharCode(code));
