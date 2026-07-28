@@ -9,14 +9,28 @@ function wordCount(text: string): number {
   return text.split(/\s+/).filter(Boolean).length;
 }
 
-/** Nhãn đoạn IELTS đứng một dòng: `A` … `G` (không dùng trong exam HTML). */
-const SECTION_LETTER_MARKER = /^[A-G]$/i;
+/** Nhãn đoạn IELTS đứng một dòng: `A` … `J` (không dùng trong exam HTML). */
+const SECTION_LETTER_MARKER = /^[A-J]$/i;
 
 function isSectionLetterMarker(text: string): boolean {
   return SECTION_LETTER_MARKER.test(text.trim());
 }
 
-/** Gộp / bỏ nhãn đoạn Cambridge (`A`–`G`) — chỉ cho article reader, không đổi file gốc / exam. */
+/** Prefix OCR kiểu `A.` / `A)` / `A  ` dính vào đầu đoạn (bài lẻ). */
+function stripLeadingSectionLetterPrefix(text: string): string {
+  const trimmed = text.trim();
+  // Keep real sentences like "A study shows…" — only strip when next char is uppercase
+  // after a period/paren, or when OCR used 2+ spaces after the letter.
+  const m = trimmed.match(/^([A-J])([.)]\s+|\s{2,})([\s\S]+)$/i);
+  if (!m?.[3]) return trimmed;
+  const rest = m[3];
+  const sep = m[2] ?? "";
+  if (/^\s{2,}/.test(sep)) return rest.trim();
+  if (/^[A-ZÀ-Ỵ“"‘']/.test(rest) || /^[“"‘']/.test(rest)) return rest.trim();
+  return trimmed;
+}
+
+/** Gộp / bỏ nhãn đoạn Cambridge (`A`–`I`) — chỉ cho article reader, không đổi file gốc / exam. */
 export function mergeLetteredParagraphMarkers(paragraphs: string[]): string[] {
   const out: string[] = [];
   for (let i = 0; i < paragraphs.length; i += 1) {
@@ -26,13 +40,13 @@ export function mergeLetteredParagraphMarkers(paragraphs: string[]): string[] {
       if (i + 1 < paragraphs.length) {
         const next = paragraphs[i + 1]?.trim() ?? "";
         if (next && !isSectionLetterMarker(next)) {
-          out.push(next);
+          out.push(stripLeadingSectionLetterPrefix(next));
           i += 1;
         }
       }
       continue;
     }
-    out.push(para);
+    out.push(stripLeadingSectionLetterPrefix(para));
   }
   return out.filter((p) => !isSectionLetterMarker(p));
 }
@@ -54,7 +68,7 @@ export function extractLeadDeckFromRawBody(body: string): { deck: string; body: 
 
 /** Tách deck/hook khỏi phần mở đầu bài (Cambridge: dòng trước nhãn `A`). */
 export function extractCambridgeDeckFromRawBody(body: string): { deck: string; body: string } {
-  const match = body.match(/^([\s\S]+?)\n([A-G])\n([\s\S]*)$/);
+  const match = body.match(/^([\s\S]+?)\n([A-J])\n([\s\S]*)$/);
   if (!match?.[1] || !match[3]) return { deck: "", body };
 
   const deck = match[1].replace(/\s*\n\s*/g, " ").trim();

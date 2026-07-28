@@ -3,16 +3,27 @@ export function splitBodyParagraphs(body: string): string[] {
   const normalized = body.replace(/\r\n/g, "\n").replace(/\u00a0/g, " ").trim();
   if (!normalized) return [];
 
+  const byLine = normalized
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+
+  // Cambridge OCR: paragraphs are single newlines; a lone `\n\n` (often before footnotes)
+  // must NOT collapse all earlier lines into one blob.
+  const paragraphLike = byLine.filter(
+    (line) => line.length >= 80 || /^[A-J]$/i.test(line) || /^[A-J][.)]\s+\S/.test(line),
+  ).length;
+  if (byLine.length >= 4 && paragraphLike >= 3) {
+    return byLine;
+  }
+
   const byDouble = normalized
     .split(/\n\s*\n+/)
     .map((p) => p.replace(/\s*\n\s*/g, " ").trim())
     .filter(Boolean);
   if (byDouble.length > 1) return byDouble;
 
-  return normalized
-    .split("\n")
-    .map((line) => line.trim())
-    .filter(Boolean);
+  return byLine;
 }
 
 function splitSentences(paragraph: string): string[] {

@@ -25,7 +25,7 @@ export async function loadReadingPassageTranslation(
 ): Promise<ReadingPassageTranslation | null> {
   return unstable_cache(
     async () => readTranslationFile(articleId),
-    ["reading-translation-v3", articleId],
+    ["reading-translation-v4", articleId],
     { revalidate: 300 },
   )();
 }

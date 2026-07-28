@@ -11,7 +11,9 @@ export function parseReadingPassageTranslation(data: unknown): ReadingPassageTra
   if (!data || typeof data !== "object") return null;
   const paragraphs = (data as { paragraphs?: unknown }).paragraphs;
   if (!Array.isArray(paragraphs)) return null;
-  const cleaned = paragraphs.map((p) => (typeof p === "string" ? p.trim() : "")).filter(Boolean);
+  const cleaned = mergeLetteredParagraphMarkers(
+    paragraphs.map((p) => (typeof p === "string" ? p.trim() : "")).filter(Boolean),
+  );
   if (cleaned.length === 0) return null;
   return { paragraphs: cleaned };
 }
