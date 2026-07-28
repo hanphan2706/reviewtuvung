@@ -3,18 +3,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
+import { GRAMMAR_HUB_HREF } from "@/lib/grammar/grammar-hub-nav";
 
-type LandingReadingLaunchModalProps = {
+type LandingGrammarLaunchModalProps = {
   open: boolean;
   onClose: () => void;
   onExplore: () => void;
 };
 
-export function LandingReadingLaunchModal({
+export function LandingGrammarLaunchModal({
   open,
   onClose,
   onExplore,
-}: LandingReadingLaunchModalProps) {
+}: LandingGrammarLaunchModalProps) {
   useEffect(() => {
     if (!open) return;
 
@@ -39,7 +40,7 @@ export function LandingReadingLaunchModal({
   return (
     <dialog
       open
-      aria-labelledby="listening-launch-modal-title"
+      aria-labelledby="grammar-launch-modal-title"
       className="fixed inset-0 z-70 m-0 flex h-dvh max-h-dvh w-screen max-w-none items-center justify-center border-0 bg-zinc-950/50 px-5 py-6 text-left sm:px-6"
     >
       <button
@@ -51,8 +52,8 @@ export function LandingReadingLaunchModal({
       <div className="relative z-10 w-full max-w-xl rounded-[28px] border border-zinc-200/90 bg-white px-6 pb-5 pt-6 text-left shadow-[0_20px_80px_rgb(15_23_42/0.24)] sm:px-7 sm:pb-6 sm:pt-7 md:max-w-2xl">
         <div className="relative mb-4 h-44 w-full overflow-hidden rounded-3xl bg-zinc-100 sm:h-52">
           <Image
-            src="/luyen%20nghe%201.jpg"
-            alt="Luyện nghe trên anthichtuhoc"
+            src="/ngu%20phap%202.jpg"
+            alt="Ngữ pháp trên anthichtuhoc"
             fill
             className="object-cover object-center"
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 36rem, 42rem"
@@ -65,23 +66,31 @@ export function LandingReadingLaunchModal({
               Tự học
             </p>
             <h2
-              id="listening-launch-modal-title"
+              id="grammar-launch-modal-title"
               className="pr-14 text-[1.75rem] font-semibold leading-tight tracking-[-0.04em] text-ink sm:text-[1.9rem] md:text-[2rem]"
             >
-              Tính năng luyện nghe đã ra mắt!
+              Tính năng ngữ pháp đã ra mắt!
             </h2>
           </div>
 
           <ul className="space-y-2.5 text-sm leading-relaxed text-ink-muted sm:text-[15px]">
-            <li>🎧 Luyện đề IELTS Cambridge với audio native và transcript đồng bộ từng câu.</li>
-            <li>🧭 Quy trình 6 bước: dự đoán → nghe ý chính → nghe kỹ → phản ánh, giống cách luyện thi thật.</li>
-            <li>📚 Thư viện đa dạng: đề IELTS, Tactics for Listening và khám phá giọng Anh/Mỹ/Úc.</li>
-            <li>✅ Làm bài trên web, chấm đáp án và xem lại transcript sau khi nộp bài.</li>
+            <li>
+              📘 Bám English Grammar in Use — lý thuyết ngắn, ví dụ rõ, luyện tập ngay trên web.
+            </li>
+            <li>
+              🧭 Học theo lộ trình Easy → Medium → Hard, hoặc nhảy thẳng vào chủ điểm còn yếu.
+            </li>
+            <li>
+              ✅ Bài tập đa dạng: điền từ, chọn đáp án, viết lại câu — có đáp án và giải thích.
+            </li>
+            <li>
+              📈 Theo dõi tiến độ trên tài khoản đăng nhập, biết mình đang vững ở đâu và còn thiếu gì.
+            </li>
           </ul>
 
           <div className="flex justify-center">
             <Link
-              href="/tu-hoc/luyen-nghe"
+              href={GRAMMAR_HUB_HREF}
               onClick={onExplore}
               className="inline-flex min-h-11 items-center justify-center rounded-full bg-zinc-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-zinc-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
             >

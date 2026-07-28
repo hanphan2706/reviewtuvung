@@ -13,7 +13,7 @@ import {
 } from "@/lib/landing-scroll";
 import { LandingCurtainMenu } from "@/components/landing-curtain-menu";
 import { LandingFooter } from "@/components/landing-footer";
-import { LandingReadingLaunchModal } from "@/components/landing-reading-launch-modal";
+import { LandingGrammarLaunchModal } from "@/components/landing-grammar-launch-modal";
 import { LandingSectionLink } from "@/components/landing-section-link";
 
 /** ~card width + `gap-3` for snap scroll. */
@@ -24,15 +24,15 @@ let landingLaunchModalShownThisDocument = false;
 
 export function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [readingLaunchModalOpen, setReadingLaunchModalOpen] = useState(false);
+  const [grammarLaunchModalOpen, setGrammarLaunchModalOpen] = useState(false);
   const pathname = usePathname();
 
   const closeMenu = () => {
     setMenuOpen(false);
   };
 
-  const dismissReadingLaunchModal = useCallback(() => {
-    setReadingLaunchModalOpen(false);
+  const dismissGrammarLaunchModal = useCallback(() => {
+    setGrammarLaunchModalOpen(false);
   }, []);
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export function LandingPage() {
     if (landingLaunchModalShownThisDocument) return;
     const timeoutId = window.setTimeout(() => {
       landingLaunchModalShownThisDocument = true;
-      setReadingLaunchModalOpen(true);
+      setGrammarLaunchModalOpen(true);
     }, 0);
     return () => window.clearTimeout(timeoutId);
   }, [pathname]);
@@ -151,10 +151,10 @@ export function LandingPage() {
       </header>
 
       <LandingCurtainMenu open={menuOpen} onClose={closeMenu} />
-      <LandingReadingLaunchModal
-        open={readingLaunchModalOpen}
-        onClose={dismissReadingLaunchModal}
-        onExplore={dismissReadingLaunchModal}
+      <LandingGrammarLaunchModal
+        open={grammarLaunchModalOpen}
+        onClose={dismissGrammarLaunchModal}
+        onExplore={dismissGrammarLaunchModal}
       />
 
       <main className="bg-white">
