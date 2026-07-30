@@ -45,6 +45,7 @@ export const READING_RAW_FILES: Record<string, string> = {
   "reading-challenge-1": "reading challenge 1.txt",
   "reading-challenge-2": "reading challenge 2.txt",
   "reading-challenge-3": "reading challenge 3.txt",
+  "de-thi-that-1": "de-thi-that-1.txt",
 };
 
 export function readingRawAllowlist(): Set<string> {

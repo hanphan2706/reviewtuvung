@@ -47,6 +47,21 @@ function detectTfngKind(block: string): "true-false-ng" | "yes-no-ng" {
   return "true-false-ng";
 }
 
+/** Dòng hướng dẫn IELTS (word limit / boxes) — không phải nội dung summary/notes. */
+export function isGapFillInstructionLine(line: string): boolean {
+  return (
+    /^Complete the summary/i.test(line) ||
+    /^Complete the (notes|sentences|table|flow-?chart)/i.test(line) ||
+    /^Complete each sentence/i.test(line) ||
+    /^Label the diagrams?/i.test(line) ||
+    /^Answer the questions/i.test(line) ||
+    /^Write the correct (letter|number)/i.test(line) ||
+    /^Write your answers in boxes/i.test(line) ||
+    /^Write (NO MORE THAN|ONE WORD|TWO WORDS)/i.test(line) ||
+    /^Choose\s+(ONE|NO MORE|TWO)/i.test(line)
+  );
+}
+
 function parseQuestionNumsFromTitle(title: string): number[] {
   const range = title.match(/Questions?\s+(\d{1,2})\s*[–-]\s*(\d{1,2})/i);
   if (range?.[1] && range[2]) {
@@ -432,9 +447,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
       }
 
       if (kind === "summary-fill") {
-        if (
-          /^Complete the summary|^Write the correct letter|^Choose\s+(ONE|NO MORE|TWO)/i.test(line)
-        ) {
+        if (isGapFillInstructionLine(line)) {
           instructionLines.push(line);
           continue;
         }
@@ -444,11 +457,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
       }
 
       if (kind === "note-fill" || kind === "table-fill") {
-        if (
-          /^Complete the (notes|sentences|table|flow-?chart)|^Complete each sentence|^Label the diagrams?|^Choose\s+(ONE|NO MORE|TWO)|^Answer the questions|^Write the correct letter/i.test(
-            line,
-          )
-        ) {
+        if (isGapFillInstructionLine(line)) {
           instructionLines.push(line);
           continue;
         }

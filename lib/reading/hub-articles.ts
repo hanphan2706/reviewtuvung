@@ -93,7 +93,8 @@ export type ReadingPilotId =
   | "cam21-test4"
   | "reading-challenge-1"
   | "reading-challenge-2"
-  | "reading-challenge-3";
+  | "reading-challenge-3"
+  | "de-thi-that-1";
 
 export type ReadingDifficulty = "Dễ" | "Trung bình" | "Trung bình – khó" | "Khó";
 

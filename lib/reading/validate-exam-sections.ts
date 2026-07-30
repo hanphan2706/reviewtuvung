@@ -1,5 +1,8 @@
 import type { ReadingPassageBlock } from "@/lib/reading/split-passages";
-import { parsePassageExamSections } from "@/lib/reading/parse-passage-questions";
+import {
+  isGapFillInstructionLine,
+  parsePassageExamSections,
+} from "@/lib/reading/parse-passage-questions";
 
 export type ExamValidationIssue = {
   passage: number;
@@ -35,6 +38,17 @@ export function validatePassageExamSections(passage: ReadingPassageBlock): ExamV
         section: section.title,
         message: "Note-fill không có dòng đề (bodyLines rỗng)",
       });
+    }
+
+    if (section.kind === "summary-fill" || section.kind === "note-fill" || section.kind === "table-fill") {
+      const leaked = section.bodyLines.find((line) => isGapFillInstructionLine(line));
+      if (leaked) {
+        issues.push({
+          passage: passage.passage,
+          section: section.title,
+          message: `Instruction lẫn vào body: "${leaked.slice(0, 80)}"`,
+        });
+      }
     }
   }
 

@@ -1,0 +1,514 @@
+{
+  "pilotId": "de-thi-that-1",
+  "schemaVersion": 4,
+  "note": "Stub explanations — answer only. Detailed Cam19-style steps/evidence pending.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "STEAM ACROSS THE WATER",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "IQ Scores",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Practical Learning in the Classroom",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "inefficient",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: inefficient. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "endurance",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: endurance. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "technical",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: technical. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "submarine",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: submarine. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Clermont",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: Clermont. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "cargo",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: cargo. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: TRUE. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: FALSE. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: NOT GIVEN. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: NOT GIVEN. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: TRUE. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: NOT GIVEN. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: FALSE. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "matching",
+      "answer": "A",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: A. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "matching",
+      "answer": "D",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: D. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "matching",
+      "answer": "C",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: C. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "matching",
+      "answer": "B",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: B. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "matching",
+      "answer": "B",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: B. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "E",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: E. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: B. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: A. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: F. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "mid-1980s",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: mid-1980s. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "Raven's matrices",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: Raven's matrices. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "verbal",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: verbal. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "countries",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: countries. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq",
+      "answer": "C",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: C. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq",
+      "answer": "B",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: B. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq",
+      "answer": "A",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: A. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq",
+      "answer": "B",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: B. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "mcq",
+      "answer": "D",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: D. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "D",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: D. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "C",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: C. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "F",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: F. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "A",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: A. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "summary-bank",
+      "answer": "G",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: G. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "FALSE",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: FALSE. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: NOT GIVEN. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: TRUE. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "steps": [
+        {
+          "id": "verdict",
+          "titleVi": "Đáp án",
+          "bodyVi": "Đáp án đúng: NOT GIVEN. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+        }
+      ]
+    }
+  }
+}
