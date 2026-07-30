@@ -49,6 +49,7 @@ import {
   CAM15_TEST3,
   CAM15_TEST4,
 } from "@/lib/reading/cambridge-14-15-articles";
+import { REAL_TEST_1_ARTICLES } from "@/lib/reading/real-exam-articles";
 
 export type ReadingPilotId =
   | "cam17-test4"
@@ -347,6 +348,7 @@ export const READING_HUB_ARTICLES: ReadingHubArticle[] = [
   ...COMPASS_PUBLISHING_1,
   ...COMPASS_PUBLISHING_2,
   ...COMPASS_PUBLISHING_3,
+  ...REAL_TEST_1_ARTICLES,
   ...CAM20_TEST4,
   ...CAM20_TEST3,
   ...CAM20_TEST2,

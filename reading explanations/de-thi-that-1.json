@@ -1,7 +1,7 @@
 {
   "pilotId": "de-thi-that-1",
   "schemaVersion": 4,
-  "note": "Stub explanations — answer only. Detailed Cam19-style steps/evidence pending.",
+  "note": "Đề thi thật IELTS 1 — giải thích chi tiết theo chuẩn Cam 19: evidence trích từ bài, các bước ask / bridge / reason / verdict, tiếng Việt tự nhiên.",
   "uiContract": {
     "showOnlyInReview": true,
     "iconNextToAnswer": true,
@@ -34,11 +34,53 @@
       "passage": 1,
       "type": "note-fill",
       "answer": "inefficient",
+      "evidence": {
+        "quoteEn": "it was to be driven by a Newcomen engine, which was heavy and therefore inefficient, and would never be a success"
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong bảng notes, mốc 1730s: động cơ trên tàu của Jonathan Hulls bị sao vì nó nặng (một từ duy nhất)."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “The engine … was ______ due to its weight” cần một tính từ mô tả động cơ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“The engine of Jonathan Hulls’ steamboat was ______ due to its weight.”",
+              "p": "Bài viết động cơ Newcomen “was heavy and therefore inefficient” — nặng nên kém hiệu quả."
+            },
+            {
+              "q": "“due to its weight” (vì trọng lượng của nó)",
+              "p": "“heavy and therefore …” — chính là quan hệ nhân quả nặng → kém hiệu quả"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "due to its weight",
+              "p": "which was heavy and therefore"
+            },
+            {
+              "q": "The engine … was ______",
+              "p": "inefficient"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỗ trống đứng đúng vị trí tính từ mà bài đã dùng ngay sau “therefore”: inefficient."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: inefficient. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "inefficient"
         }
       ]
     },
@@ -46,11 +88,53 @@
       "passage": 1,
       "type": "note-fill",
       "answer": "endurance",
+      "evidence": {
+        "quoteEn": "a steam-powered paddle-wheeler managed to last fifteen minutes against the current on the River Saone in France, but lacked the endurance for longer trips"
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mốc 1780s: tàu bánh guồng của Pháp thiếu cái gì nên không chạy nổi quá 15 phút."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “did not have the ______” cần một danh từ không đếm được."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“did not have the ______ to keep going for more than a quarter of an hour”",
+              "p": "“lacked the endurance for longer trips” — thiếu sức bền cho những chuyến dài hơn"
+            },
+            {
+              "q": "“a quarter of an hour” (15 phút)",
+              "p": "“managed to last fifteen minutes” — chỉ trụ được 15 phút"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "did not have the ______",
+              "p": "lacked the endurance"
+            },
+            {
+              "q": "for more than a quarter of an hour",
+              "p": "last fifteen minutes … for longer trips"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“did not have” và “lacked” cùng nghĩa thiếu; danh từ đi kèm trong bài là endurance."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: endurance. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "endurance"
         }
       ]
     },
@@ -58,11 +142,53 @@
       "passage": 1,
       "type": "note-fill",
       "answer": "technical",
+      "evidence": {
+        "quoteEn": "although he tried a number of designs and solved many technical challenges"
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "John Fitch đã vượt qua một số vấn đề thuộc loại nào trong các thiết kế tàu của mình."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“a number of ______ problems” → cần tính từ bổ nghĩa cho “problems”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“John Fitch overcame a number of ______ problems with his steamboat designs.”",
+              "p": "“solved many technical challenges” — giải quyết nhiều thách thức kỹ thuật"
+            },
+            {
+              "q": "“overcame … problems”",
+              "p": "“solved … challenges”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "overcame a number of",
+              "p": "solved many"
+            },
+            {
+              "q": "______ problems",
+              "p": "technical challenges"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“problems” ứng với “challenges”, nên tính từ cần điền chính là technical."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: technical. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "technical"
         }
       ]
     },
@@ -70,11 +196,53 @@
       "passage": 1,
       "type": "note-fill",
       "answer": "submarine",
+      "evidence": {
+        "quoteEn": "Fulton ran steamboat trials on the River Seine, in an attempt to attract French support for his submarine Nautilus"
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở Pháp, Fulton dùng tàu hơi nước để gây chú ý cho sản phẩm gì của ông."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau mạo từ “a ______” cần một danh từ đếm được số ít."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Fulton used a steamboat to try to raise interest in a ______.”",
+              "p": "“ran steamboat trials … in an attempt to attract French support for his submarine Nautilus”"
+            },
+            {
+              "q": "“to raise interest in” (gây chú ý, kêu gọi quan tâm)",
+              "p": "“to attract French support for” — tìm sự hậu thuẫn của Pháp"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "to raise interest in",
+              "p": "in an attempt to attract French support for"
+            },
+            {
+              "q": "a ______",
+              "p": "his submarine Nautilus"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nautilus là tên riêng, còn danh từ chung mà chỗ trống cần là submarine (tàu ngầm)."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: submarine. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "submarine"
         }
       ]
     },
@@ -82,11 +250,53 @@
       "passage": 1,
       "type": "note-fill",
       "answer": "Clermont",
+      "evidence": {
+        "quoteEn": "In 1807, the Clermont began a scheduled passenger steamboat service between New York and Albany"
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tàu hơi nước nào bắt đầu chở khách đều đặn ở Mỹ."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“a steamboat called the ______” → cần tên riêng của con tàu."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Passengers in the US began to be carried regularly by a steamboat called the ______.”",
+              "p": "“the Clermont began a scheduled passenger steamboat service between New York and Albany”"
+            },
+            {
+              "q": "“carried regularly” (chở đều đặn)",
+              "p": "“a scheduled … service” — dịch vụ có lịch trình cố định"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "began to be carried regularly",
+              "p": "began a scheduled passenger steamboat service"
+            },
+            {
+              "q": "a steamboat called the ______",
+              "p": "the Clermont"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“scheduled service” chính là ý “regularly”; tên tàu đi kèm là Clermont. Charlotte Dundas chỉ kéo sà lan, không chở khách."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: Clermont. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "Clermont"
         }
       ]
     },
@@ -94,11 +304,57 @@
       "passage": 1,
       "type": "note-fill",
       "answer": "cargo",
+      "evidence": {
+        "quoteEn": "dozens of steamboats were to be seen on the rivers, lochs and canals of Scotland, carrying cargo and occasionally passengers"
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Từ 1812 trở đi ở Scotland, tàu hơi nước chở khách một ít, nhưng chủ yếu chở gì."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “but mostly ______” cần một danh từ đối lập với “passengers”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“steamboats transported some passengers, but mostly ______”",
+              "p": "“carrying cargo and occasionally passengers” — chở hàng, thỉnh thoảng mới chở khách"
+            },
+            {
+              "q": "“some passengers … but mostly ______”",
+              "p": "“occasionally passengers” đảo lại thứ tự: hàng hoá là chính, khách là phụ"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "transported",
+              "p": "carrying"
+            },
+            {
+              "q": "some passengers",
+              "p": "occasionally passengers"
+            },
+            {
+              "q": "mostly ______",
+              "p": "cargo"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài đặt cargo trước và “occasionally passengers” sau, đúng tương quan “mostly / some” của đề: cargo."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: cargo. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "cargo"
         }
       ]
     },
@@ -106,11 +362,48 @@
       "passage": 1,
       "type": "tfng",
       "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Travelling under steam power alone would require engines to use less coal so the ship could stay at sea for several weeks."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để vượt Đại Tây Dương, có cần loại động cơ dùng nhiên liệu tiết kiệm hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: cần “engines which used fuel economically” (động cơ dùng nhiên liệu tiết kiệm)",
+              "p": "Bài: “would require engines to use less coal” — cần động cơ đốt ít than hơn"
+            },
+            {
+              "q": "“For steamboats to cross the Atlantic Ocean”",
+              "p": "“Travelling under steam power alone … stay at sea for several weeks” — đúng bối cảnh vượt biển dài ngày"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "used fuel economically",
+              "p": "use less coal"
+            },
+            {
+              "q": "were needed",
+              "p": "would require"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Dùng ít than hơn” chính là “tiết kiệm nhiên liệu”, và bài nói rõ đó là điều kiện bắt buộc — khớp hoàn toàn với đề."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: TRUE. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
         }
       ]
     },
@@ -118,11 +411,48 @@
       "passage": 1,
       "type": "tfng",
       "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "In order to provide a reliable service, it was also necessary to replace paddle wheels as a source of power with something less affected by the rolling of the ship."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bánh guồng có đảm bảo độ tin cậy khi vượt đại dương hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: dùng bánh guồng “guaranteed reliability” (đảm bảo độ tin cậy)",
+              "p": "Bài: muốn “provide a reliable service” thì “necessary to replace paddle wheels” — phải thay bánh guồng đi"
+            },
+            {
+              "q": "Bánh guồng ổn định trên biển",
+              "p": "Cần thứ “less affected by the rolling of the ship” — tức bánh guồng bị ảnh hưởng bởi sóng lắc"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "guaranteed reliability",
+              "p": "in order to provide a reliable service … necessary to replace paddle wheels"
+            },
+            {
+              "q": "using paddle wheels",
+              "p": "something less affected by the rolling of the ship"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói ngược lại: chính vì bánh guồng không đáng tin trên biển động nên phải thay thế. Thông tin trong bài phản bác trực tiếp đề."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: FALSE. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
         }
       ]
     },
@@ -130,11 +460,48 @@
       "passage": 1,
       "type": "tfng",
       "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "crossings under a combination of steam and sail got underway in 1819 with the American ship Savannah"
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Savannah có nhanh hơn nhiều so với tàu bánh guồng thường hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề so sánh tốc độ: “much faster than a regular paddle steamer”",
+              "p": "Bài chỉ nói Savannah mở đầu các chuyến “combination of steam and sail” năm 1819 — không có con số hay so sánh tốc độ nào"
+            },
+            {
+              "q": "“a regular paddle steamer” làm mốc so sánh",
+              "p": "Bài không đặt Savannah cạnh bất kỳ tàu bánh guồng nào để so"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "much faster than a regular paddle steamer",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "The Savannah",
+              "p": "the American ship Savannah"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài có nhắc Savannah nhưng chỉ về hình thức động lực (hơi nước kết hợp buồm), tuyệt nhiên không bàn tới tốc độ hay so sánh với tàu khác."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: NOT GIVEN. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
         }
       ]
     },
@@ -142,11 +509,48 @@
       "passage": 1,
       "type": "tfng",
       "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Brunel, brilliant and daring, had already built the Great Western Railway."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Brunel có thích thiết kế đường sắt hơn thiết kế tàu hơi nước hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề nói về sở thích: “preferred designing railways to steamships”",
+              "p": "Bài chỉ nêu sự thật ông “had already built the Great Western Railway” — đã làm đường sắt trước đó"
+            },
+            {
+              "q": "So sánh mức độ yêu thích giữa hai lĩnh vực",
+              "p": "Bài gọi ông là “versatile” (đa năng) và kể ông làm cả hai — không xếp hạng ưu tiên"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "preferred designing railways to steamships",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "designing railways",
+              "p": "had already built the Great Western Railway"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Làm việc gì trước không đồng nghĩa với thích việc đó hơn. Bài không cho biết thái độ hay lựa chọn ưu tiên của Brunel."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: NOT GIVEN. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
         }
       ]
     },
@@ -154,11 +558,48 @@
       "passage": 1,
       "type": "tfng",
       "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "His 1853 Great Britain, nearly 100 metres long and luxuriously appointed, was the first ocean-going steamship made of iron, and the first to use the underwater screw propeller for powering movement in place of paddle wheels."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tàu Great Britain có nhiều hơn một điểm đột phá hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “more than one innovative feature” (nhiều hơn một đặc điểm mới)",
+              "p": "Bài liệt kê hai cái “first”: tàu viễn dương đầu tiên làm bằng sắt, và tàu đầu tiên dùng chân vịt ngầm thay bánh guồng"
+            },
+            {
+              "q": "“innovative feature” (đặc điểm cách tân)",
+              "p": "“the first … and the first to …” — dấu hiệu điển hình của cái mới, chưa từng có"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more than one innovative feature",
+              "p": "the first ocean-going steamship made of iron, and the first to use the underwater screw propeller"
+            },
+            {
+              "q": "innovative",
+              "p": "the first"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai lần “the first” trong cùng một câu là hai đặc điểm đột phá — thoả điều kiện “nhiều hơn một”."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: TRUE. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
         }
       ]
     },
@@ -166,11 +607,48 @@
       "passage": 1,
       "type": "tfng",
       "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "only in 1838 did a large steamer use one, the riverboat Archimedes built by Francis Pettit Smith"
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thiết kế của tàu Archimedes có được nhiều người khen ngợi hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: thiết kế “was widely admired” (được nhiều người thán phục)",
+              "p": "Bài chỉ ghi nhận một dữ kiện: năm 1838 tàu Archimedes của Francis Pettit Smith dùng chân vịt"
+            },
+            {
+              "q": "Phản ứng, đánh giá của công chúng",
+              "p": "Bài không có bất kỳ nhận xét nào về việc người ta khen hay chê con tàu này"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "was widely admired",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "the riverboat Archimedes",
+              "p": "a large steamer use one, the riverboat Archimedes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Câu sau chỉ nói “Later ships had twin screws for reliability” — nói về xu hướng kỹ thuật, không phải sự tán thưởng dành cho Archimedes."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: NOT GIVEN. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
         }
       ]
     },
@@ -178,71 +656,388 @@
       "passage": 1,
       "type": "tfng",
       "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "In many modern ships, steam turbines have replaced engines with pistons, with fuel oil instead of coal to fire the boilers. Diesel engines keep others moving."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tàu hiện đại vượt Đại Tây Dương có dùng cùng nguồn năng lượng với tàu hơi nước thời đầu hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “use the same energy source as the early steamships”",
+              "p": "Bài: nay dùng “fuel oil instead of coal” và “Diesel engines” — dầu, không còn than như xưa"
+            },
+            {
+              "q": "Nguồn năng lượng của tàu thời đầu",
+              "p": "Phần trên bài nói tàu xưa đốt than (“use less coal”)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the same energy source",
+              "p": "fuel oil instead of coal"
+            },
+            {
+              "q": "modern ships that cross the Atlantic",
+              "p": "In many modern ships … Diesel engines keep others moving"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cụm “instead of coal” nói thẳng là đã đổi nguồn năng lượng — mâu thuẫn với “same energy source” của đề."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: FALSE. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
         }
       ]
     },
     "14": {
       "passage": 2,
-      "type": "matching",
+      "type": "people-match",
       "answer": "A",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Flynn believes that demands of visuo-spatial abilities have grown because of TV, computers and cars"
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng công nghệ hiện đại đã tác động tới một số mặt của trí thông minh (“Modern technology has influenced some aspects of human intelligence”)?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Modern technology” (công nghệ hiện đại)",
+              "p": "Flynn nêu cụ thể “TV, computers and cars” — chính là các sản phẩm công nghệ"
+            },
+            {
+              "q": "“influenced some aspects of human intelligence” (ảnh hưởng một số mặt của trí thông minh)",
+              "p": "“demands of visuo-spatial abilities have grown” — chỉ riêng năng lực thị giác – không gian tăng lên, tức là “some aspects”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "modern technology",
+              "p": "TV, computers and cars"
+            },
+            {
+              "q": "some aspects of human intelligence",
+              "p": "demands of visuo-spatial abilities have grown"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Câu này nằm trong đoạn C và mở đầu bằng “Flynn believes” — người phát biểu là James Flynn."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: A. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "A — James Flynn"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Rust nói về xã hội phức tạp và ảnh hưởng của cá nhân xuất chúng, không quy cho TV / máy tính / xe hơi."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Howard nhấn dinh dưỡng, gia đình nhỏ, tiếp cận giáo dục — yếu tố môi trường sống, không phải công nghệ."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Teasdale chỉ phân tích số liệu điểm thi ở Đan Mạch, không bàn nguyên nhân công nghệ."
+            }
+          ]
         }
       ]
     },
     "15": {
       "passage": 2,
-      "type": "matching",
+      "type": "people-match",
       "answer": "D",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "However, as Teasdale points out, if such a ceiling had been reached, the test results should show scores pushing against it rather than actually falling."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng điểm IQ có thể chưa đạt tới giới hạn tự nhiên của nó (“may not have attained their natural limit”)?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“their natural limit” (giới hạn tự nhiên)",
+              "p": "“some absolute ceiling to people’s abilities” — cái trần tuyệt đối của năng lực; “ceiling” = giới hạn"
+            },
+            {
+              "q": "“may not have attained” (có thể chưa chạm tới)",
+              "p": "Teasdale lập luận nếu đã chạm trần thì điểm phải “pushing against it rather than actually falling” — mà thực tế điểm lại giảm, nên chưa chạm trần"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "their natural limit",
+              "p": "some absolute ceiling to people's abilities"
+            },
+            {
+              "q": "may not have attained",
+              "p": "if such a ceiling had been reached, the test results should show scores pushing against it"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Giả thuyết “có trần” do người khác nêu, còn người phản biện rằng dữ liệu không cho thấy đã chạm trần là Teasdale (“as Teasdale points out”)."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: D. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "D — Thomas Teasdale"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Flynn còn chờ dữ liệu từ nước khác, chưa kết luận gì về giới hạn."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Rust chỉ giải thích vì sao điểm tăng, không nói tới ngưỡng trần."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Howard ngược lại cho rằng mức tăng “might have peaked” — có thể đã đạt đỉnh ở các nước công nghiệp."
+            }
+          ]
         }
       ]
     },
     "16": {
       "passage": 2,
-      "type": "matching",
+      "type": "people-match",
       "answer": "C",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "Others, such as experimental psychologist Robert Howard, argue that overall intelligence really has risen, helped by better nutrition, smaller families, wider access to education and other environmental changes."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng chế độ ăn tốt hơn có tác động tích cực tới trí lực (“Improved diet has a positive effect on mental powers”)?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Improved diet” (chế độ ăn được cải thiện)",
+              "p": "“better nutrition” — dinh dưỡng tốt hơn"
+            },
+            {
+              "q": "“has a positive effect on mental powers” (giúp trí lực tốt lên)",
+              "p": "“overall intelligence really has risen, helped by …” — trí thông minh tổng thể tăng thật, nhờ các yếu tố đó"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "improved diet",
+              "p": "better nutrition"
+            },
+            {
+              "q": "a positive effect on mental powers",
+              "p": "overall intelligence really has risen, helped by"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“better nutrition” là yếu tố đầu tiên trong danh sách mà Robert Howard đưa ra."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: C. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "C — Robert Howard"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Flynn phủ nhận việc con người thông minh hơn thật, chỉ nói kỹ năng giải bài trừu tượng tốt hơn."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Rust bàn xã hội phức tạp và tác động của ý tưởng mới, không nhắc dinh dưỡng."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Teasdale chỉ phân tích xu hướng điểm số, không bàn nguyên nhân sinh học."
+            }
+          ]
         }
       ]
     },
     "17": {
       "passage": 2,
-      "type": "matching",
+      "type": "people-match",
       "answer": "B",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "He also points out that if just one mind grasps a new concept, such as Einstein and the theory of relativity, it may then be easier for society in general to think in a more complex way."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng cá nhân kiệt xuất có thể tác động tới trí tuệ tập thể (“Exceptional individuals can have an impact on collective intelligence”)?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Exceptional individuals” (những cá nhân xuất chúng)",
+              "p": "“just one mind grasps a new concept, such as Einstein” — một trí tuệ đơn lẻ như Einstein"
+            },
+            {
+              "q": "“an impact on collective intelligence” (ảnh hưởng tới trí tuệ chung của cộng đồng)",
+              "p": "“easier for society in general to think in a more complex way” — cả xã hội nhờ đó tư duy phức tạp hơn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "exceptional individuals",
+              "p": "just one mind grasps a new concept, such as Einstein"
+            },
+            {
+              "q": "an impact on collective intelligence",
+              "p": "easier for society in general to think in a more complex way"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chủ ngữ “He” ở câu này quay về John Rust — người vừa được giới thiệu ở đầu đoạn D."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: B. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "B — John Rust"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Flynn nói ngược: “Our grandparents were not retarded and we are not geniuses” — không đề cao vai trò của thiên tài đơn lẻ."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Howard quy cho yếu tố môi trường (dinh dưỡng, giáo dục), không phải cá nhân kiệt xuất."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Teasdale chỉ làm việc với dữ liệu điểm thi ở Đan Mạch."
+            }
+          ]
         }
       ]
     },
     "18": {
       "passage": 2,
-      "type": "matching",
+      "type": "people-match",
       "answer": "B",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "He believes that there are several factors, including the fact that, in more complex societies, people have to think harder to find solutions to problems they face."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng khi xã hội càng phức tạp thì nhu cầu về kỹ năng giải quyết vấn đề càng tăng (“As societies become more sophisticated, the need for problem-solving skills increases”)?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“As societies become more sophisticated” (xã hội ngày càng phức tạp)",
+              "p": "“in more complex societies” — trong các xã hội phức tạp hơn"
+            },
+            {
+              "q": "“the need for problem-solving skills increases”",
+              "p": "“people have to think harder to find solutions to problems they face” — phải suy nghĩ nhiều hơn để tìm giải pháp"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more sophisticated",
+              "p": "more complex"
+            },
+            {
+              "q": "the need for problem-solving skills increases",
+              "p": "people have to think harder to find solutions to problems"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây là một trong “several factors” do John Rust nêu, ngay sau khi ông được nhắc tên ở đầu đoạn D. Lưu ý đề cho phép dùng lại một chữ cái, nên B xuất hiện cả ở câu 17 và 18."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: B. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "B — John Rust"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Flynn nói về việc xã hội coi trọng trí thông minh và tác động của TV / máy tính / xe hơi, không phải độ phức tạp của xã hội tạo nhu cầu giải quyết vấn đề."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Howard nói về dinh dưỡng, quy mô gia đình, giáo dục."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Teasdale không đưa ra cách giải thích nào cho mức tăng điểm."
+            }
+          ]
         }
       ]
     },
@@ -250,11 +1045,49 @@
       "passage": 2,
       "type": "paragraph-match",
       "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "The Danish military still summons virtually all young men before a draft board to identify who is suitable to do military service."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn kể về một quy trình tuyển chọn áp dụng cho một nhóm người cụ thể. Đề viết: “An account of a selection procedure involving a particular group of people.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“a selection procedure” (một quy trình tuyển chọn)",
+              "p": "Đoạn E: hội đồng tuyển quân Đan Mạch triệu tập thanh niên “to identify who is suitable to do military service” — đúng là quy trình sàng lọc"
+            },
+            {
+              "q": "“a particular group of people” (một nhóm người cụ thể)",
+              "p": "“all 17-year-olds” — toàn bộ thanh niên 17 tuổi ở Đan Mạch, một nhóm rất xác định"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a selection procedure",
+              "p": "summons … before a draft board to identify who is suitable"
+            },
+            {
+              "q": "a particular group of people",
+              "p": "all 17-year-olds there have taken exactly the same qualifying IQ tests"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ đoạn E mô tả một thủ tục tuyển chọn thực tế (khám tuyển quân sự) cùng nhóm đối tượng rõ ràng."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: E. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
         }
       ]
     },
@@ -262,11 +1095,49 @@
       "passage": 2,
       "type": "paragraph-match",
       "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "This last test category usually includes 'Raven's matrices' – sequential patterns with one piece missing. The candidate has to choose, from a set of alternatives, which shape to put in the empty space."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn mô tả một thành phần của bài kiểm tra thị giác – không gian. Đề viết: “A description of one component of a visuo-spatial test.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“one component of a visuo-spatial test” (một phần trong bài test thị giác – không gian)",
+              "p": "Đoạn B: “This last test category” chính là visuo-spatial, và trong đó có “Raven’s matrices”"
+            },
+            {
+              "q": "“A description” (một mô tả cụ thể)",
+              "p": "Bài giải thích rõ dạng bài: “sequential patterns with one piece missing”, thí sinh phải chọn hình điền vào ô trống"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "one component of a visuo-spatial test",
+              "p": "This last test category usually includes 'Raven's matrices'"
+            },
+            {
+              "q": "a description",
+              "p": "sequential patterns with one piece missing … choose … which shape to put in the empty space"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Các đoạn khác chỉ nhắc tên “Raven’s matrices” mà không giải thích; riêng đoạn B mô tả cách làm bài."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: B. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
         }
       ]
     },
@@ -274,11 +1145,49 @@
       "passage": 2,
       "type": "paragraph-match",
       "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "However, psychologists disagree about what the upward trend in scores really means. Some researchers argue that people are not getting more intelligent overall, but just getting better at a particular sort of problem solving. Others say they have found echoes of rising IQ scores in 'real world' measures of intelligence."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn nêu tổng quan các cách hiểu khác nhau về xu hướng điểm IQ. Đề viết: “An overview of the different interpretations of IQ score trends.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“different interpretations” (những cách lý giải khác nhau)",
+              "p": "Đoạn A: “psychologists disagree about what the upward trend … really means”, rồi “Some researchers … Others say …”"
+            },
+            {
+              "q": "“An overview” (bức tranh tổng quát, chưa đi sâu)",
+              "p": "Đoạn A điểm nhanh cả ba hướng — không thông minh hơn, có bằng chứng thực tế, và cả khả năng xu hướng sắp dừng (“grind to a halt”)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "different interpretations",
+              "p": "psychologists disagree about what the upward trend in scores really means"
+            },
+            {
+              "q": "an overview",
+              "p": "Some researchers argue … Others say …"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn A là đoạn mở, gói gọn các luồng quan điểm; các đoạn sau mới triển khai từng quan điểm riêng lẻ."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: A. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
         }
       ]
     },
@@ -286,11 +1195,57 @@
       "passage": 2,
       "type": "paragraph-match",
       "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "He points out that in human history, prosperity often led to decadence, and argues that the case of ancient Rome can be viewed as an illustration of this."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm đoạn cho một ví dụ về tác động tiêu cực mà sự giàu có có thể gây ra cho xu hướng IQ. Đề viết: “An example of the negative effect affluence may have on IQ trends.”"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“affluence” (sự giàu có, thịnh vượng)",
+              "p": "“as societies become more prosperous” và “prosperity often led to decadence”"
+            },
+            {
+              "q": "“the negative effect” (ảnh hưởng xấu)",
+              "p": "“the conditions leading to dramatic improvements in mental ability disappear” — điều kiện giúp trí lực tăng mạnh biến mất; “decadence” = suy thoái"
+            },
+            {
+              "q": "“An example” (một ví dụ minh hoạ)",
+              "p": "“the case of ancient Rome can be viewed as an illustration of this” — La Mã cổ đại làm ví dụ"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "affluence",
+              "p": "prosperity … more prosperous"
+            },
+            {
+              "q": "the negative effect",
+              "p": "prosperity often led to decadence"
+            },
+            {
+              "q": "an example",
+              "p": "the case of ancient Rome … an illustration of this"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Từ khoá “illustration” báo hiệu đây là ví dụ, và nội dung đúng là mặt trái của sự thịnh vượng."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: F. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
         }
       ]
     },
@@ -298,11 +1253,54 @@
       "passage": 2,
       "type": "summary-fill",
       "answer": "mid-1980s",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "James Flynn, a professor of political science, first showed that IQ scores were rising in the mid-1980s"
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Flynn công bố nghiên cứu cho thấy điểm IQ đang tăng vào thời gian nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“During the ______, James Flynn conducted research …” → cần một mốc thời gian; đề cho phép tối đa hai từ và/hoặc một con số."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “During the ______, James Flynn conducted research showing that IQ scores were increasing.”",
+              "p": "Bài: ông “first showed that IQ scores were rising in the mid-1980s”"
+            },
+            {
+              "q": "“conducted research showing that IQ scores were increasing”",
+              "p": "“first showed that IQ scores were rising”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "During the ______",
+              "p": "in the mid-1980s"
+            },
+            {
+              "q": "IQ scores were increasing",
+              "p": "IQ scores were rising"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỉ có một mốc thời gian gắn với công bố đầu tiên của Flynn: mid-1980s (giữ nguyên dấu gạch nối, tính là một từ)."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: mid-1980s. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "mid-1980s"
         }
       ]
     },
@@ -310,11 +1308,54 @@
       "passage": 2,
       "type": "summary-fill",
       "answer": "Raven's matrices",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "The strongest gains in almost every case were on Raven's matrices and similar tests, while verbal and arithmetical scores showed more modest rises."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bài kiểm tra nào đo kỹ năng thị giác – không gian và cho mức tăng điểm lớn nhất?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“tests called ______, which measured visuo-spatial skills” → cần tên gọi của loại test (hai từ)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “tests called ______ … accounted for the biggest score increases”",
+              "p": "“The strongest gains in almost every case were on Raven’s matrices and similar tests”"
+            },
+            {
+              "q": "“which measured visuo-spatial skills”",
+              "p": "“This last test category” (visuo-spatial) “usually includes ‘Raven’s matrices’”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "accounted for the biggest score increases",
+              "p": "the strongest gains in almost every case"
+            },
+            {
+              "q": "tests called ______",
+              "p": "Raven's matrices and similar tests"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“strongest gains” chính là “biggest score increases”, và tên test đi kèm là Raven’s matrices — đúng hai từ."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: Raven's matrices. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "Raven's matrices"
         }
       ]
     },
@@ -322,11 +1363,58 @@
       "passage": 2,
       "type": "summary-fill",
       "answer": "verbal",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "while verbal and arithmetical scores showed more modest rises"
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngoài phần số học, thành phần nào nữa chỉ tăng điểm nhẹ?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“numerical and ______ components” → cần tính từ song song với “numerical”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “scores in numerical and ______ components rose less steeply”",
+              "p": "“verbal and arithmetical scores showed more modest rises”"
+            },
+            {
+              "q": "“numerical” (thuộc về số)",
+              "p": "“arithmetical” — cùng nghĩa, nên phần còn lại của cặp phải là verbal"
+            },
+            {
+              "q": "“rose less steeply” (tăng chậm hơn)",
+              "p": "“showed more modest rises” — mức tăng khiêm tốn hơn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "numerical",
+              "p": "arithmetical"
+            },
+            {
+              "q": "rose less steeply",
+              "p": "showed more modest rises"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đề đã lấy “numerical” thay cho “arithmetical”, nên chỗ trống nhận từ còn lại trong cặp: verbal."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: verbal. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "verbal"
         }
       ]
     },
@@ -334,131 +1422,652 @@
       "passage": 2,
       "type": "summary-fill",
       "answer": "countries",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "Since presenting his original paper, Flynn has looked at data from further countries and found the same upward trend, with the same skills responsible for most of the increase."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Gần đây Flynn xem thêm dữ liệu từ đâu, và kết quả vẫn giống trước?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “other ______” cần danh từ số nhiều."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “Results from research in other ______, which Flynn has examined more recently”",
+              "p": "“Flynn has looked at data from further countries”"
+            },
+            {
+              "q": "“are consistent with his earlier findings”",
+              "p": "“found the same upward trend, with the same skills responsible for most of the increase”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "other ______",
+              "p": "further countries"
+            },
+            {
+              "q": "are consistent with his earlier findings",
+              "p": "found the same upward trend"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“other” tương ứng “further”, nên danh từ cần điền là countries (số nhiều như trong bài)."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: countries. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "countries"
         }
       ]
     },
     "27": {
       "passage": 3,
-      "type": "mcq",
+      "type": "mcq-single",
       "answer": "C",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "the American Institute of Architects has fostered the idea that the process of architectural design, not just the appreciation of architecture, is a beneficial aspect of the art curriculum"
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hiện nay Viện Kiến trúc Hoa Kỳ cổ xúy sáng kiến giáo dục nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án C: “the practice of designing architectural structures” (việc thực hành thiết kế công trình)",
+              "p": "Bài: viện này đề cao “the process of architectural design, not just the appreciation of architecture”"
+            },
+            {
+              "q": "“currently promote” (đang thúc đẩy)",
+              "p": "“In recent years, though, … has fostered the idea” — mốc thời gian gần đây, đối lập với “Once …” ở câu trước"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the practice of designing architectural structures",
+              "p": "the process of architectural design"
+            },
+            {
+              "q": "currently promote",
+              "p": "In recent years … has fostered the idea"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cấu trúc “not just the appreciation” cho thấy điểm mới nằm ở chỗ bắt tay vào thiết kế, chứ không chỉ thưởng lãm — đúng ý C."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: C. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "“slide presentations” là cách dạy ngày xưa (“Once …”), không phải sáng kiến hiện nay."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Học “great buildings art-history style” cũng thuộc cách làm cũ mà bài đang muốn vượt qua."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bài không nói tới việc tăng số giờ / số lớp học nghệ thuật trong trường."
+            }
+          ]
         }
       ]
     },
     "28": {
       "passage": 3,
-      "type": "mcq",
+      "type": "mcq-single",
       "answer": "B",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Although the technology and expertise required of modern architecture can prohibit students from actually realizing their designs, traditional architectural materials and methods remain quite accessible to the art classroom."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở đoạn thứ ba (đoạn C), tác giả nêu khó khăn gì khi dạy kiến trúc trong lớp nghệ thuật?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: “Students cannot always construct their designs” (học sinh không luôn dựng được thiết kế của mình)",
+              "p": "Bài: công nghệ và chuyên môn của kiến trúc hiện đại “can prohibit students from actually realizing their designs”"
+            },
+            {
+              "q": "“cannot always” (không phải lúc nào cũng được)",
+              "p": "“can prohibit” — có thể ngăn cản, tức không tuyệt đối"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cannot always construct their designs",
+              "p": "can prohibit students from actually realizing their designs"
+            },
+            {
+              "q": "problem … the writer note",
+              "p": "the technology and expertise required of modern architecture"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“realizing their designs” = biến thiết kế thành công trình thật; rào cản chính là yêu cầu công nghệ và chuyên môn — đúng nội dung B."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: B. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài nói kiến trúc hiện đại đòi hỏi công nghệ, không nói trường thiếu các khoá học dựa trên công nghệ."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Trái ngược: vật liệu truyền thống được xem là giải pháp khả thi, không phải vấn đề."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Cũng ngược: đoạn này khẳng định học sinh “are motivated to invest in the project”."
+            }
+          ]
         }
       ]
     },
     "29": {
       "passage": 3,
-      "type": "mcq",
+      "type": "mcq-single",
       "answer": "A",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "But most significantly, this type of project-based activity motivates students to invest intellectually and emotionally in the outcome."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Theo tác giả, lợi ích LỚN NHẤT của dự án kiến trúc truyền thống với học sinh là gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án A: “personal connection to the end result” (sự gắn bó cá nhân với kết quả cuối cùng)",
+              "p": "Bài: học sinh “invest intellectually and emotionally in the outcome” — dốc cả trí lực và cảm xúc vào thành quả"
+            },
+            {
+              "q": "“the greatest benefit” (lợi ích lớn nhất)",
+              "p": "“But most significantly” — từ khoá đánh dấu điểm quan trọng nhất trong danh sách"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "personal connection to the end result",
+              "p": "invest intellectually and emotionally in the outcome"
+            },
+            {
+              "q": "the greatest benefit",
+              "p": "most significantly"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn E liệt kê nhiều lợi ích rồi dùng “But most significantly” để tách riêng một cái vượt trên tất cả — chính là sự đầu tư tình cảm và trí tuệ vào kết quả."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: A. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "“participating in a cooperative effort” có được nhắc, nhưng nằm trong nhóm lợi ích thường, không phải cái “most significantly”."
+            },
+            {
+              "letter": "C",
+              "whyVi": "“solve problems” chỉ là một mục trong danh sách kỹ năng, không được xếp cao nhất."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Bảo tồn công trình là mục tiêu của dự án, không phải lợi ích dành cho học sinh."
+            }
+          ]
         }
       ]
     },
     "30": {
       "passage": 3,
-      "type": "mcq",
+      "type": "mcq-single",
       "answer": "B",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "The same project may provide an opportunity to focus on the chemistry of soil or the structural dynamics of construction. Design goals might guide students to involve traditional forms, consider formal aspects, or integrate math skills of measuring and estimating."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn thứ tám (đoạn H) được viết ra nhằm mục đích gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án B: “to outline the multiple skills involved in one project” (phác ra nhiều kỹ năng gói trong một dự án)",
+              "p": "Bài: cùng “the same project” mà chạm tới thiết kế, hoá học đất, động lực kết cấu, rồi cả “math skills of measuring and estimating”"
+            },
+            {
+              "q": "“multiple skills” (nhiều kỹ năng khác nhau)",
+              "p": "Chuỗi liệt kê “design … chemistry … structural dynamics … math skills” trải khắp nhiều môn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the multiple skills involved in one project",
+              "p": "The same project may provide an opportunity to focus on …"
+            },
+            {
+              "q": "multiple skills",
+              "p": "chemistry of soil … structural dynamics … math skills of measuring and estimating"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cụm “The same project” lặp lại nhấn mạnh rằng chỉ một dự án nhỏ vẫn mở ra rất nhiều mảng kiến thức — đó là ý chính của đoạn H."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: B. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Có nhắc “small design-and-build projects”, nhưng đoạn không giải thích vì sao dự án PHẢI nhỏ."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Đoạn nêu các mảng nội dung có thể chạm tới, chứ không bàn chiến lược liên kết các môn học với nhau."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Tường, cổng, vòm chỉ là ví dụ minh hoạ; mục đích của đoạn là cho thấy bề rộng kỹ năng, không phải đưa ra danh sách gợi ý dự án."
+            }
+          ]
         }
       ]
     },
     "31": {
       "passage": 3,
-      "type": "mcq",
+      "type": "mcq-single",
       "answer": "D",
+      "evidence": {
+        "paragraphLetter": "I",
+        "quoteEn": "It is the connection to a cultural heritage that interests some; the quality of living within massive, natural walls that attracts others; or for others, the sustainability of the process and the minimal energy spent in construction."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tác giả nói gì về kiến trúc truyền thống trong mắt công chúng nói chung?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đáp án D: “People are attracted to earthen architecture for different reasons.”",
+              "p": "Bài chia ba nhóm lý do: “interests some … attracts others … or for others …”"
+            },
+            {
+              "q": "“the general population” (công chúng nói chung)",
+              "p": "“Many others in the community and around the country share this renewal of interest”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "for different reasons",
+              "p": "interests some … attracts others … or for others"
+            },
+            {
+              "q": "people are attracted to earthen architecture",
+              "p": "Many others in the community and around the country share this renewal of interest"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cấu trúc “some … others … others” là dấu hiệu rõ ràng của nhiều động cơ khác nhau: di sản văn hoá, cảm giác sống trong tường đất dày, và tính bền vững."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: D. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài không nói kiến trúc đất đang trở thành ngành kinh doanh sinh lời."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài chỉ nói ở New Mexico việc tự xây nhà bằng đất vẫn khả thi; không so sánh mức khả thi giữa các vùng."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Khác biệt bài nêu là ở LÝ DO người ta quan tâm, không phải ở VÙNG MIỀN — đây là bẫy đổi tiêu chí so sánh."
+            }
+          ]
         }
       ]
     },
     "32": {
       "passage": 3,
-      "type": "summary-bank",
+      "type": "summary-fill",
       "answer": "D",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "Behind our main high school building there was a one-room adobe structure which was once used for teaching. Now it served as a place where old furniture could be kept."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Toà nhà cũ mà học sinh Zuni chọn cải tạo lúc đó đang được dùng để làm gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “an old building which was being used for ______”",
+              "p": "Bài: “Now it served as a place where old furniture could be kept” — nơi chứa đồ gỗ cũ, tức là kho"
+            },
+            {
+              "q": "“was being used for” (đang được dùng để)",
+              "p": "“Now it served as” — hiện tại nó đóng vai trò gì; “was once used for teaching” là quá khứ, không phải đáp án"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "was being used for ______",
+              "p": "a place where old furniture could be kept"
+            },
+            {
+              "q": "storage",
+              "p": "full of broken desks"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Chỗ để đồ cũ và “full of broken desks” chính là công dụng kho chứa → chọn D (storage). Chú ý bẫy thời gian: “once used for teaching” đã là chuyện xưa."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: D. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "D — storage"
         }
       ]
     },
     "33": {
       "passage": 3,
-      "type": "summary-bank",
+      "type": "summary-fill",
       "answer": "C",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "The building's design kept it relatively warm in the winter, even without heating, due to its broad south face, and it stayed cool in the summer due to its spacious, ventilated attic and massive earthen walls. Because of this, my students agreed it was worth preserving"
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Học sinh thống nhất rằng toà nhà đáng được cải tạo dựa trên yếu tố công năng nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “worthy of rehabilitation based on its functional ______”",
+              "p": "Bài: “The building’s design kept it relatively warm in the winter … and it stayed cool in the summer”"
+            },
+            {
+              "q": "“functional” (mang tính công năng, hữu dụng)",
+              "p": "Ấm mùa đông dù không cần lò sưởi, mát mùa hè — đúng là hiệu quả thực dụng của thiết kế"
+            },
+            {
+              "q": "“came to an agreement … worthy of rehabilitation”",
+              "p": "“Because of this, my students agreed it was worth preserving”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "its functional ______",
+              "p": "The building's design kept it relatively warm … stayed cool"
+            },
+            {
+              "q": "came to an agreement … worthy of rehabilitation",
+              "p": "my students agreed it was worth preserving"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Câu “Because of this” nối trực tiếp lý do (thiết kế điều hoà nhiệt độ tốt) với quyết định bảo tồn → chọn C (design)."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: C. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "C — design"
         }
       ]
     },
     "34": {
       "passage": 3,
-      "type": "summary-bank",
+      "type": "summary-fill",
       "answer": "F",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "She showed us where to find local supplies of sand and clay soil for the plaster mix."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong quá trình làm dự án, học sinh học được cách tìm cái gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “they learned where to locate ______ for the project”",
+              "p": "Bài: “She showed us where to find local supplies of sand and clay soil for the plaster mix.”"
+            },
+            {
+              "q": "“where to locate” (tìm ở đâu)",
+              "p": "“showed us where to find” — chỉ cho chỗ tìm"
+            },
+            {
+              "q": "“______ for the project” (thứ cần cho dự án)",
+              "p": "“local supplies of sand and clay soil” — cát và đất sét, tức nguồn vật liệu"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "where to locate",
+              "p": "where to find"
+            },
+            {
+              "q": "resources",
+              "p": "local supplies of sand and clay soil"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“supplies of sand and clay soil” là nguyên vật liệu, khớp với F (resources). Đừng chọn B (location) — bản thân “where” đã nằm ngoài chỗ trống, chỗ trống cần vật được tìm."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: F. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "F — resources"
         }
       ]
     },
     "35": {
       "passage": 3,
-      "type": "summary-bank",
+      "type": "summary-fill",
       "answer": "A",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "Preservationist Shalie Gasper arrived in the fall to help with an assessment of the building's needs. … To teach the traditional skills, Gasper and other local specialists joined us."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Học sinh làm việc chặt chẽ với nhóm người nào ở từng bước của dự án?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “They also worked closely with a number of ______ on each step”",
+              "p": "Bài: “Gasper and other local specialists joined us” — chuyên gia bảo tồn cùng các chuyên gia địa phương"
+            },
+            {
+              "q": "“a number of ______” (một số người)",
+              "p": "“Preservationist Shalie Gasper” cộng “other local specialists” — nhiều người có chuyên môn"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a number of ______",
+              "p": "Gasper and other local specialists"
+            },
+            {
+              "q": "experts",
+              "p": "Preservationist … local specialists"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“specialists” và “preservationist” đều là người có chuyên môn → chọn A (experts)."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: A. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "A — experts"
         }
       ]
     },
     "36": {
       "passage": 3,
-      "type": "summary-bank",
+      "type": "summary-fill",
       "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "They gave my class three full mornings of intensive workshops on history and preservation as well as mud-plastering technique"
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong dự án, học sinh còn được cung cấp cái gì để hình thành kỹ năng hữu ích?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô trống: “students were also given ______ to build useful skills”",
+              "p": "Bài: “three full mornings of intensive workshops on history and preservation as well as mud-plastering technique”"
+            },
+            {
+              "q": "“to build useful skills” (để rèn kỹ năng)",
+              "p": "“To teach the traditional skills …” — mục đích của các buổi workshop là dạy kỹ năng"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "were given ______",
+              "p": "gave my class … intensive workshops"
+            },
+            {
+              "q": "training",
+              "p": "intensive workshops on … mud-plastering technique"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Các buổi workshop chuyên sâu dạy kỹ thuật chính là hình thức tập huấn → chọn G (training)."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: G. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "G — training"
         }
       ]
     },
@@ -466,11 +2075,49 @@
       "passage": 3,
       "type": "tfng",
       "answer": "FALSE",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Traditional architectural materials, such as earth, clay and straw, are cheap, easy to work with and readily available."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giá vật liệu có phải là một nhược điểm khi dùng kiến trúc truyền thống hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “The price of materials is one drawback” (giá vật liệu là một điểm trừ)",
+              "p": "Bài: vật liệu truyền thống “are cheap, easy to work with and readily available” — rẻ, dễ thao tác, sẵn có"
+            },
+            {
+              "q": "“drawback” (nhược điểm)",
+              "p": "Bài liệt kê giá rẻ như một ƯU điểm; đoạn E còn nhắc “with … little cost”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the price of materials",
+              "p": "are cheap"
+            },
+            {
+              "q": "one drawback",
+              "p": "cheap, easy to work with and readily available"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói rẻ, tức chi phí là điểm mạnh, phản bác trực tiếp ý “nhược điểm” của đề."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: FALSE. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
         }
       ]
     },
@@ -478,11 +2125,49 @@
       "passage": 3,
       "type": "tfng",
       "answer": "NOT GIVEN",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "In New Mexico, examples of hand-built earthen structures still abound. … Traditional building materials and the land that supplies them are so accessible that handcrafting a house still remains feasible."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Có thể dễ dàng xây nhà bằng đất ở MỌI vùng của nước Mỹ hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “in all regions of the U.S.” (ở tất cả các vùng của Mỹ)",
+              "p": "Bài chỉ nói về New Mexico: “In New Mexico, examples … still abound”"
+            },
+            {
+              "q": "“can easily be built” (xây được dễ dàng)",
+              "p": "“handcrafting a house still remains feasible” — nhưng vẫn trong phạm vi vùng New Mexico"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "in all regions of the U.S.",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "can easily be built",
+              "p": "so accessible that handcrafting a house still remains feasible"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài còn nói mỗi vùng xưa có phong cách riêng “unique to each region”, nhưng không hề khẳng định hay phủ nhận việc xây nhà đất khả thi ở mọi vùng. Không đủ dữ kiện để kết luận."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: NOT GIVEN. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
         }
       ]
     },
@@ -490,11 +2175,49 @@
       "passage": 3,
       "type": "tfng",
       "answer": "TRUE",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "During the project, a student will get to know the materials, understand the chemistry, solve problems, work with classmates, and exercise muscles."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Làm việc với công trình đất truyền thống có mang lại lợi ích về thể chất hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “can have physical benefits” (có lợi cho thể chất)",
+              "p": "Bài: học sinh “exercise muscles” — vận động cơ bắp khi làm dự án"
+            },
+            {
+              "q": "“Working with a traditional earthen structure”",
+              "p": "“During the project” — chính là dự án xây / bảo tồn công trình đất ở đoạn E"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "physical benefits",
+              "p": "exercise muscles"
+            },
+            {
+              "q": "working with a traditional earthen structure",
+              "p": "the construction or preservation of a traditional earthen structure"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“exercise muscles” nằm chung danh sách lợi ích, và đó là lợi ích thể chất — khớp với đề."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: TRUE. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
         }
       ]
     },
@@ -502,11 +2225,49 @@
       "passage": 3,
       "type": "tfng",
       "answer": "NOT GIVEN",
+      "evidence": {
+        "paragraphLetter": "I",
+        "quoteEn": "This experiment in adobe conservation with middle school students convinced me that traditional architecture deserves a place in the regular curriculum."
+      },
       "steps": [
         {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chương trình kiến trúc truyền thống có PHÙ HỢP NHẤT với lứa học sinh trung học cơ sở hay không:"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Đề: “is best suited to middle school level students” — so sánh nhất, hàm ý hơn các cấp học khác",
+              "p": "Bài chỉ kết luận kiến trúc truyền thống “deserves a place in the regular curriculum” — xứng đáng có mặt trong chương trình chính khoá"
+            },
+            {
+              "q": "So sánh giữa các cấp học",
+              "p": "Bài chỉ tình cờ làm dự án với học sinh trung học cơ sở, không đối chiếu với tiểu học hay trung học phổ thông"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "is best suited to middle school level students",
+              "p": "(not stated in the passage)"
+            },
+            {
+              "q": "a traditional architecture curriculum",
+              "p": "traditional architecture deserves a place in the regular curriculum"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây là bẫy so sánh nhất kinh điển: bài chứng minh dự án chạy tốt với học sinh trung học cơ sở, nhưng không nói cấp này TỐT NHẤT so với cấp khác."
+        },
+        {
           "id": "verdict",
-          "titleVi": "Đáp án",
-          "bodyVi": "Đáp án đúng: NOT GIVEN. Giải thích chi tiết (evidence + paraphrase) chưa có — sẽ bổ sung theo chuẩn Cam 19."
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
         }
       ]
     }

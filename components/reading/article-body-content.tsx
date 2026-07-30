@@ -84,9 +84,9 @@ export function ArticleBodyContent({
   scrollContainerRef,
   showTranslation: showTranslationProp,
   onToggleTranslation,
-  deckInHeader = false,
+  deckInHeader: _deckInHeader = false,
 }: ArticleBodyContentProps) {
-  const bodyWrapperRef = useRef<HTMLDivElement>(null);
+  void _deckInHeader;  const bodyWrapperRef = useRef<HTMLDivElement>(null);
   const paragraphRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [showAllTranslationsInternal, setShowAllTranslationsInternal] = useState(false);
   const showAllTranslations = showTranslationProp ?? showAllTranslationsInternal;
@@ -116,8 +116,9 @@ export function ArticleBodyContent({
     };
   }, [body, subheadline, deckText, translationParagraphs]);
 
-  const showDeckInBody = Boolean(deck) && !deckInHeader;
-  const slotCount = (showDeckInBody ? 1 : 0) + paragraphs.length;
+  // alignedVi[0] is always the deck when present; body paras start at 1 even if deck is shown under the title.
+  const viSlotOffset = deck ? 1 : 0;
+  const slotCount = paragraphs.length;
 
   const syncReadingAnchor = useCallback(() => {
     const scrollRoot = scrollContainerRef?.current;
@@ -187,15 +188,14 @@ export function ArticleBodyContent({
 
       <div className="select-text touch-callout-none space-y-6 font-serif text-lg leading-[1.8] text-[#000001]">
         {paragraphs.map((para, index) => {
-          const slotIndex = showDeckInBody ? index + 1 : index;
-          const vi = alignedVi[slotIndex];
+          const vi = alignedVi[index + viSlotOffset];
           const showVi = Boolean(vi && showAllTranslations);
 
           return (
             <div
               key={`${index}-${para.slice(0, 32)}`}
               ref={(el) => {
-                paragraphRefs.current[slotIndex] = el;
+                paragraphRefs.current[index] = el;
               }}
             >
               <p>{para}</p>

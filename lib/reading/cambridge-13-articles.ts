@@ -80,7 +80,7 @@ export const CAM13_TEST2: ReadingHubArticle[] = [
   camArticle(
     "cam13-test2",
     3,
-    "Making the most of trends",
+    "Making the Most of Trends",
     "Experts from Harvard Business School give advice to managers on spotting and using trends.",
     "Social",
     "Khó",
@@ -131,7 +131,7 @@ export const CAM13_TEST4: ReadingHubArticle[] = [
   camArticle(
     "cam13-test4",
     2,
-    "Saving the soil",
+    "Saving the Soil",
     "More than a third of the Earth’s top layer is at risk — is there hope for healthier soil?",
     "Environment",
     "Trung bình – khó",

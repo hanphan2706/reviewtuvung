@@ -8,6 +8,7 @@ import { parsePassageAudioUrl } from "@/lib/reading/parse-passage-audio";
 import { parsePassageDeckText } from "@/lib/reading/parse-passage-deck";
 import { parsePassageImageUrl } from "@/lib/reading/parse-passage-image";
 import { parsePassageExamSections } from "@/lib/reading/parse-passage-questions";
+import { normalizeReadingPassageTitle } from "@/lib/reading/normalize-passage-title";
 import { stripReadingWebAdNoise } from "@/lib/reading/strip-reading-web-ad-noise";
 
 function questionNumsForPassage(questionsText: string): number[] {
@@ -67,7 +68,8 @@ export function splitReadingPassages(raw: string): ReadingPassageBlock[] {
       }
       break;
     }
-    const title = (lines[i] ?? "").trim() || `Passage ${passage}`;
+    const title =
+      normalizeReadingPassageTitle((lines[i] ?? "").trim()) || `Passage ${passage}`;
     i += 1;
     const bodyLines: string[] = [];
     const imageLines: string[] = [];

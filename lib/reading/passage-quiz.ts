@@ -227,6 +227,63 @@ const QUIZ_BY_ARTICLE: Record<string, QuickCheckQuiz> = {
     ],
     correctIndex: 1,
   },
+  "de-thi-that-1-p1": {
+    questionEn: "According to the passage, what mainly limited early steamboats before the 19th century?",
+    optionsEn: [
+      "They were banned on European rivers",
+      "They were often too slow or too expensive to run",
+      "They could only travel across the Atlantic",
+      "They used diesel engines instead of steam",
+    ],
+    questionVi: "Theo bài, điều gì chủ yếu hạn chế thuyền hơi nước sớm trước thế kỷ XIX?",
+    optionsVi: [
+      "Bị cấm trên sông châu Âu",
+      "Thường quá chậm hoặc quá đắt để vận hành",
+      "Chỉ đi được xuyên Đại Tây Dương",
+      "Dùng động cơ diesel thay vì hơi nước",
+    ],
+    correctIndex: 1,
+    explanationEn: "The passage states that early steamboats were either too slow or too expensive to run.",
+    explanationVi: "Bài nêu các thuyền hơi nước sớm hoặc quá chậm, hoặc quá đắt để vận hành.",
+  },
+  "de-thi-that-1-p2": {
+    questionEn: "What did James Flynn find about the strongest gains in IQ test scores?",
+    optionsEn: [
+      "They were mainly on verbal tests",
+      "They were mainly on Raven's matrices and similar visuo-spatial tests",
+      "They occurred only in Denmark",
+      "They proved that people had become geniuses",
+    ],
+    questionVi: "James Flynn nhận thấy mức tăng điểm IQ mạnh nhất ở đâu?",
+    optionsVi: [
+      "Chủ yếu ở bài kiểm tra ngôn ngữ",
+      "Chủ yếu ở Raven's matrices và các bài thị giác–không gian tương tự",
+      "Chỉ xảy ra ở Đan Mạch",
+      "Chứng minh mọi người đã trở thành thiên tài",
+    ],
+    correctIndex: 1,
+    explanationEn: "Flynn found the strongest gains on Raven's matrices and similar visuo-spatial tests.",
+    explanationVi: "Flynn thấy mức tăng mạnh nhất ở Raven's matrices và các bài thị giác–không gian tương tự.",
+  },
+  "de-thi-that-1-p3": {
+    questionEn: "What kind of project does the writer describe with middle school students in Zuni?",
+    optionsEn: [
+      "Building a modern steel skyscraper",
+      "Conserving and replastering a traditional adobe structure",
+      "Designing digital architecture software",
+      "Studying architecture only through slide presentations",
+    ],
+    questionVi: "Tác giả mô tả dự án nào với học sinh trung học ở Zuni?",
+    optionsVi: [
+      "Xây nhà chọc trời thép hiện đại",
+      "Bảo tồn và trát lại một công trình adobe truyền thống",
+      "Thiết kế phần mềm kiến trúc số",
+      "Chỉ học kiến trúc qua chiếu slide",
+    ],
+    correctIndex: 1,
+    explanationEn: "Students helped assess and replaster an adobe building with traditional mud plaster.",
+    explanationVi: "Học sinh tham gia đánh giá và trát lại công trình adobe bằng vữa đất truyền thống.",
+  },
 };
 
 /** EN dự phòng khi cache/file còn định dạng QUICK CHECK cũ (chỉ `question |` tiếng Việt). */

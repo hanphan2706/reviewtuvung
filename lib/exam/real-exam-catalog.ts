@@ -10,7 +10,7 @@ export const REAL_EXAM_COVER_IMAGE_URL = "/exam/real-test-cover.jpeg";
 
 export type RealExamListing = {
   slug: RealExamSlug;
-  /** Số thứ tự hiển thị: Đề thi thật 1, 2, … */
+  /** Số thứ tự hiển thị: Đề thi thật IELTS 1, 2, … */
   seriesNumber: number;
   title: string;
   subtitle: string;
@@ -21,7 +21,7 @@ export const READING_REAL_EXAMS: readonly RealExamListing[] = [
   {
     slug: "de-thi-that-1",
     seriesNumber: 1,
-    title: "Đề thi thật 1",
+    title: "Đề thi thật IELTS 1",
     subtitle: "Reading · 60 phút · 3 passages · 40 câu",
     catalogOrder: realIeltsExamCatalogOrder(1),
   },
@@ -31,7 +31,7 @@ export const LISTENING_REAL_EXAMS: readonly RealExamListing[] = [
   {
     slug: "de-thi-that-1",
     seriesNumber: 1,
-    title: "Đề thi thật 1",
+    title: "Đề thi thật IELTS 1",
     subtitle: "Listening · 40 phút · 4 parts · 40 câu",
     catalogOrder: realIeltsExamCatalogOrder(1),
   },

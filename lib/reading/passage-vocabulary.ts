@@ -112,6 +112,27 @@ const VOCAB_BY_ARTICLE: Record<string, PassageVocabItem[]> = {
     { term: "unintended", definitionVi: "không chủ ý", level: "B1-B2" },
     { term: "coexistence", definitionVi: "cùng tồn tại", level: "B1-B2" },
   ],
+  "de-thi-that-1-p1": [
+    { term: "steamboat", definitionVi: "tàu / thuyền hơi nước", level: "B1-B2" },
+    { term: "paddle wheel", definitionVi: "bánh lồng (đẩy tàu)", level: "B1-B2" },
+    { term: "endurance", definitionVi: "sức bền / khả năng duy trì", level: "B1-B2" },
+    { term: "propeller", definitionVi: "chân vịt", level: "B1-B2" },
+    { term: "inefficient", definitionVi: "kém hiệu quả", level: "B1-B2" },
+  ],
+  "de-thi-that-1-p2": [
+    { term: "IQ score", definitionVi: "điểm IQ", level: "B1-B2" },
+    { term: "visuo-spatial", definitionVi: "thuộc thị giác–không gian", level: "C1" },
+    { term: "Flynn effect", definitionVi: "hiệu ứng Flynn (điểm IQ tăng theo thế hệ)", level: "C1" },
+    { term: "abstract", definitionVi: "trừu tượng", level: "B1-B2" },
+    { term: "nutrition", definitionVi: "dinh dưỡng", level: "B1-B2" },
+  ],
+  "de-thi-that-1-p3": [
+    { term: "adobe", definitionVi: "gạch đất / kiến trúc đất nện", level: "B1-B2" },
+    { term: "curriculum", definitionVi: "chương trình giảng dạy", level: "B1-B2" },
+    { term: "preservation", definitionVi: "bảo tồn / tu bổ", level: "B1-B2" },
+    { term: "experiential learning", definitionVi: "học qua trải nghiệm", level: "C1" },
+    { term: "sustainability", definitionVi: "tính bền vững", level: "B1-B2" },
+  ],
 };
 
 /** Bổ sung khi khối IDIOMS chưa đủ 5 từ (ưu tiên từ hay gặp trong bài). */

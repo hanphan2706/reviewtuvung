@@ -32,7 +32,7 @@ export const CAM14_TEST1: ReadingHubArticle[] = [
   camArticle(
     "cam14-test1",
     1,
-    "The importance of children’s play",
+    "The Importance of Children’s Play",
     "Brick by brick, six-year-old Alice builds a magical kingdom — and research shows why imaginative play matters for development.",
     "Education",
     "Trung bình",

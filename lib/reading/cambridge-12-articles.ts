@@ -41,7 +41,7 @@ export const CAM12_TEST1: ReadingHubArticle[] = [
   camArticle(
     "cam12-test1",
     2,
-    "Collecting as a hobby",
+    "Collecting as a Hobby",
     "Why do millions of people spend time, energy and money amassing objects that seem to have little practical use?",
     "Psychology",
     "Trung bình – khó",

@@ -61,6 +61,9 @@ const nextConfig: NextConfig = {
       "./listening materials/transcript/real-test-1.cleaned.txt",
       "./listening materials/sync/real-test-1.sync.json",
       "./reading explanations/de-thi-that-1.json",
+      "./reading translations/de-thi-that-1-p1.vi.json",
+      "./reading translations/de-thi-that-1-p2.vi.json",
+      "./reading translations/de-thi-that-1-p3.vi.json",
     ],
   },
   /**

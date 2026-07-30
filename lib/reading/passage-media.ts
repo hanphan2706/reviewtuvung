@@ -346,6 +346,13 @@ const READING_ARTICLE_IMAGES: Record<string, string> = {
     "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200&q=80&auto=format&fit=crop",
   "cam21-test4-p3":
     "https://images.unsplash.com/photo-1527422265102-22027ee90fcd?w=1200&q=80&auto=format&fit=crop",
+  /** Đề thi thật IELTS 1 — paddle steamer / IQ–STEM / classroom learning */
+  "de-thi-that-1-p1":
+    "https://images.unsplash.com/photo-1749386821663-e3280bf72681?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-1-p2":
+    "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-1-p3":
+    "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&q=80&auto=format&fit=crop",
 };
 
 function assertUniqueArticleImages(map: Record<string, string>): void {
