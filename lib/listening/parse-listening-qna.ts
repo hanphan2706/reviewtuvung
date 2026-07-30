@@ -110,6 +110,10 @@ function parseAnswerKey(lines: readonly string[]): Record<string, string> {
 
 function normalizeAnswerValue(value: string): string {
   return value
+    .replace(/[\u2018\u2019\u201A\u2032\u0060\u00B4]/g, "'")
+    .replace(/[\u201C\u201D\u201E\u2033]/g, '"')
+    .replace(/[\u2010\u2011\u2012\u2013\u2014\u2212]/g, "-")
+    .replace(/\u00A0/g, " ")
     .trim()
     .replace(/\s+/g, " ")
     .replace(/\s*,\s*/g, ", ")

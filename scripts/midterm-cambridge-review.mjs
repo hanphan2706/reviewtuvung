@@ -67,7 +67,12 @@ function stopExamAudio(){
 function clearPhrasePick(){}
 
 function normalizeAns(v){
-  return String(v||'').trim().toLowerCase().replace(/\\s+/g,' ');
+  return String(v||'')
+    .replace(/[\\u2018\\u2019\\u201A\\u2032\\u0060\\u00B4]/g,"'")
+    .replace(/[\\u201C\\u201D\\u201E\\u2033]/g,'"')
+    .replace(/[\\u2010\\u2011\\u2012\\u2013\\u2014\\u2212]/g,'-')
+    .replace(/\\u00A0/g,' ')
+    .trim().toLowerCase().replace(/\\s+/g,' ');
 }
 
 function ieltsAcademicReadingBandFromRaw40(raw){
@@ -155,7 +160,11 @@ function answersMatch(userVal,correctVal){
   var userNorm=normalizeAns(userVal);
   var alts=String(correctVal).split(/\\//).map(function(x){return normalizeAns(x);}).filter(Boolean);
   if(alts.length===0)alts=[normalizeAns(correctVal)];
-  return alts.indexOf(userNorm)>=0;
+  if(alts.indexOf(userNorm)>=0)return true;
+  if(alts.some(function(a){
+    return normalizeAns(userVal.replace(/[^a-z0-9\\s]/gi,''))===a.replace(/[^a-z0-9\\s]/gi,'');
+  }))return true;
+  return false;
 }
 
 /** Choose-TWO: thứ tự không quan trọng — C,B cùng đúng như B,C. */
