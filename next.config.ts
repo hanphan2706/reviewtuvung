@@ -54,10 +54,13 @@ const nextConfig: NextConfig = {
       "./public/midterm-reading-exam.html",
       "./public/midterm-listening-exam.html",
       "./reading raw/real test 1.txt",
+      "./reading raw/de-thi-that-1.txt",
       "./listening materials/real test 1 qna.txt",
+      "./listening materials/real test 1 answers.txt",
       "./listening materials/transcript/real-test-1.txt",
       "./listening materials/transcript/real-test-1.cleaned.txt",
       "./listening materials/sync/real-test-1.sync.json",
+      "./reading explanations/de-thi-that-1.json",
     ],
   },
   /**

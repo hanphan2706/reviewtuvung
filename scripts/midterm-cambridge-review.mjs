@@ -138,6 +138,18 @@ function getCorrectAnswerForQuestion(num){
   return '';
 }
 
+function getChooseTwoPairKey(num){
+  if(!examAnswerKey)return null;
+  var keys=Object.keys(examAnswerKey);
+  for(var i=0;i<keys.length;i++){
+    var k=keys[i];
+    if(k.indexOf('&')<0)continue;
+    var parts=k.split('&').map(function(p){return parseInt(p,10);});
+    if(parts.indexOf(num)>=0)return {key:k,parts:parts,letters:splitAnswerLetters(examAnswerKey[k])};
+  }
+  return null;
+}
+
 function answersMatch(userVal,correctVal){
   if(!userVal||!correctVal)return false;
   var userNorm=normalizeAns(userVal);
@@ -146,7 +158,14 @@ function answersMatch(userVal,correctVal){
   return alts.indexOf(userNorm)>=0;
 }
 
+/** Choose-TWO: thứ tự không quan trọng — C,B cùng đúng như B,C. */
 function isAnswerCorrect(num,userVal){
+  if(!String(userVal||'').trim())return false;
+  var pair=getChooseTwoPairKey(num);
+  if(pair){
+    var expected=pair.letters.map(function(x){return normalizeAns(x);}).filter(Boolean);
+    return expected.indexOf(normalizeAns(userVal))>=0;
+  }
   var direct=getCorrectAnswerForQuestion(num);
   if(direct)return answersMatch(userVal,direct);
   return false;

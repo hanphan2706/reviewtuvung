@@ -238,7 +238,7 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
   #q2-section .mrow-inline .mrow-top .msel{max-width:100%}
 }
 
-/* Drag-and-drop matching (two columns); .dnd-zoom-fix counters #main zoom so drag/drop hit-testing works */
+/* Drag-and-drop matching (two columns). Pointer DnD — scales with #main zoom. */
 .dnd-zoom-fix{position:relative;z-index:1}
 .dnd-careers-wrap{margin-bottom:8px}
 .dnd-hint{font-size:12px;color:var(--exam-chrome-muted);margin-bottom:14px;line-height:1.55}
@@ -269,23 +269,21 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 .dnd-bank{
   display:flex;flex-direction:column;gap:10px;padding:14px;background:#fafafa;border:1px solid #ddd;border-radius:10px;min-height:120px
 }
-/* Row = selectable text + drag handle only (avoids native DnD vs zoom bugs; allows text highlight) */
+/* Row = grab frame; text is inline (chỉ chữ mới select được, vùng trống còn lại = kéo) */
 .dnd-pill-row{
-  display:flex;align-items:stretch;gap:0;width:100%;border:1px solid #ccc;border-radius:8px;background:#fff;box-sizing:border-box;overflow:hidden
+  display:block;width:100%;border:1px solid #ccc;border-radius:8px;background:#fff;box-sizing:border-box;
+  padding:12px 14px;min-height:48px;cursor:grab;user-select:none;-webkit-user-select:none
 }
+.dnd-pill-row:active{cursor:grabbing}
 .dnd-pill-text{
-  flex:1;min-width:0;padding:10px 12px;font-size:12.5px;line-height:1.45;color:var(--exam-chrome-text);cursor:text;user-select:text;-webkit-user-select:text
+  display:inline;margin:0;padding:0;font-size:12.5px;line-height:1.45;color:var(--exam-chrome-text);
+  cursor:text;user-select:text;-webkit-user-select:text
 }
-.dnd-handle{
-  flex-shrink:0;width:34px;min-height:100%;padding:0;border:none;border-left:1px solid #ddd;background:var(--exam-chrome-surface);color:var(--exam-chrome-text);font-size:14px;line-height:1;cursor:grab;user-select:none;-webkit-user-select:none
-}
-.dnd-handle:hover{background:#ddd}
-.dnd-handle:active{cursor:grabbing}
 .dnd-bank .dnd-pill-row.dnd-pill-hidden{display:none}
 .dnd-slot .dnd-pill-row{margin:0;width:100%}
-.dnd-slot-sm .dnd-pill-text{font-size:11px;padding:5px 7px;line-height:1.35}
-.dnd-slot-sm .dnd-handle{width:28px;font-size:12px}
-body.dnd-dragging .dnd-handle{cursor:grabbing}
+.dnd-slot-sm .dnd-pill-row{min-height:32px;padding:6px 8px}
+.dnd-slot-sm .dnd-pill-text{font-size:11px;line-height:1.35}
+body.dnd-dragging,body.dnd-dragging .dnd-pill-row{cursor:grabbing}
 .dnd-pill-row.dnd-drag-source{opacity:.42;transition:opacity .12s ease}
 .dnd-drag-ghost{
   position:fixed;left:0;top:0;z-index:10050;margin:0;padding:0;
@@ -295,7 +293,7 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
   opacity:.96;transform:rotate(-1deg);
   max-width:min(92vw,440px)
 }
-.dnd-drag-ghost .dnd-pill-row{width:100%;margin:0;background:#fff}
+.dnd-drag-ghost .dnd-pill-row{width:100%;margin:0;background:#fff;cursor:grabbing}
 
 /* Audio intro (Cambridge shell) */
 #audio-intro-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,1,.72);align-items:center;justify-content:center;z-index:200;padding:20px}
@@ -456,6 +454,31 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
 .transcript-cue-speaker{font-weight:600;color:#4b2876}
 .transcript-cue.is-active .transcript-cue-speaker{color:#4b2876}
 .transcript-q-marker{font-weight:700;color:#4b2876}
+
+.transcript-cue.is-transcript-evidence{background:#fef3c7;box-shadow:inset 0 0 0 1px #f59e0b}
+.transcript-cue.is-transcript-evidence .transcript-cue-time{color:#92400e}
+.transcript-q-marker.is-jump-target{background:#fef3c7;border-radius:4px;padding:0 2px}
+.ans-correct-wrap{display:inline-flex;align-items:center;gap:2px;flex-wrap:wrap;white-space:normal;max-width:100%}
+.explain-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:20px;height:20px;margin-left:5px;padding:0;vertical-align:middle;
+  border:1px solid #d4d4d8;border-radius:6px;background:#fff;color:#52525b;
+  cursor:pointer;flex-shrink:0;position:relative;pointer-events:auto!important;
+}
+.explain-btn:hover,.explain-btn.is-active{background:#18181b;border-color:#18181b;color:#fff}
+.explain-btn svg{width:11px;height:11px;display:block}
+.explain-btn[data-tip]::after{
+  content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);
+  white-space:nowrap;font-size:10px;font-weight:600;color:#fafafa;background:#18181b;
+  border:none;border-radius:6px;padding:4px 8px;opacity:0;pointer-events:none;z-index:5;
+}
+.explain-btn:hover[data-tip]::after{opacity:1}
+.explain-btn[hidden]{display:none!important}
+.mcq-review-jump{display:inline-flex;align-items:center;margin-left:6px;flex-shrink:0;align-self:center}
+.dnd-review-jump{display:inline-flex;align-items:center;margin-left:6px}
+#exam-screen.exam-review-mode .opt.review-correct{align-items:center}
+#exam-screen.exam-review-mode #questions-panel .explain-btn{pointer-events:auto!important;cursor:pointer}
+
 .transcript-cue-text{flex:1;min-width:0;cursor:text}
 .transcript-cue.is-active{background:#f5f5f7}
 .transcript-cue.is-active .transcript-cue-time{color:#000001;font-weight:700}
@@ -717,7 +740,7 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
           <div class="sec-instr">Choose <b>TWO</b> correct answers. Which TWO things does Arthur say people should focus on when developing their business idea?</div>
         </div>
         <div class="dnd-group dnd-zoom-fix">
-          <p class="dnd-hint">Drag an option into each box. Each option can only be used once.</p>
+          <p class="dnd-hint">Giữ chuột ở vùng trống trong khung để kéo; bôi đen phần chữ để tra từ. Mỗi option chỉ dùng một lần.</p>
           <div class="dnd-match-layout">
             <div class="dnd-col dnd-col-left">
               <div class="dnd-col-title">Your answers</div>
@@ -735,11 +758,11 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
             <div class="dnd-col dnd-col-right">
               <div class="dnd-col-title">Options</div>
               <div class="dnd-bank" id="dnd-bank-q17">
-                <div class="dnd-pill-row" data-letter="A"><span class="dnd-pill-text">making sure the idea is original</span><button type="button" class="dnd-handle" data-letter="A" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
-                <div class="dnd-pill-row" data-letter="B"><span class="dnd-pill-text">offering a better deal than competitors</span><button type="button" class="dnd-handle" data-letter="B" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
-                <div class="dnd-pill-row" data-letter="C"><span class="dnd-pill-text">being committed to it</span><button type="button" class="dnd-handle" data-letter="C" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
-                <div class="dnd-pill-row" data-letter="D"><span class="dnd-pill-text">paying attention to detail</span><button type="button" class="dnd-handle" data-letter="D" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
-                <div class="dnd-pill-row" data-letter="E"><span class="dnd-pill-text">fixing realistic prices</span><button type="button" class="dnd-handle" data-letter="E" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="A" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">making sure the idea is original</span></div>
+                <div class="dnd-pill-row" data-letter="B" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">offering a better deal than competitors</span></div>
+                <div class="dnd-pill-row" data-letter="C" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">being committed to it</span></div>
+                <div class="dnd-pill-row" data-letter="D" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">paying attention to detail</span></div>
+                <div class="dnd-pill-row" data-letter="E" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">fixing realistic prices</span></div>
               </div>
             </div>
           </div>
@@ -752,7 +775,7 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
           <div class="sec-instr">Choose <b>TWO</b> correct answers. Which TWO things does Arthur say helped him get his business started?</div>
         </div>
         <div class="dnd-group dnd-zoom-fix">
-          <p class="dnd-hint">Drag an option into each box. Each option can only be used once.</p>
+          <p class="dnd-hint">Giữ chuột ở vùng trống trong khung để kéo; bôi đen phần chữ để tra từ. Mỗi option chỉ dùng một lần.</p>
           <div class="dnd-match-layout">
             <div class="dnd-col dnd-col-left">
               <div class="dnd-col-title">Your answers</div>
@@ -770,11 +793,11 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
             <div class="dnd-col dnd-col-right">
               <div class="dnd-col-title">Options</div>
               <div class="dnd-bank" id="dnd-bank-q19">
-                <div class="dnd-pill-row" data-letter="A"><span class="dnd-pill-text">family support</span><button type="button" class="dnd-handle" data-letter="A" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
-                <div class="dnd-pill-row" data-letter="B"><span class="dnd-pill-text">getting a loan from a bank</span><button type="button" class="dnd-handle" data-letter="B" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
-                <div class="dnd-pill-row" data-letter="C"><span class="dnd-pill-text">good business advice</span><button type="button" class="dnd-handle" data-letter="C" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
-                <div class="dnd-pill-row" data-letter="D"><span class="dnd-pill-text">a favourable economic climate</span><button type="button" class="dnd-handle" data-letter="D" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
-                <div class="dnd-pill-row" data-letter="E"><span class="dnd-pill-text">an effective approach to business</span><button type="button" class="dnd-handle" data-letter="E" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="A" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">family support</span></div>
+                <div class="dnd-pill-row" data-letter="B" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">getting a loan from a bank</span></div>
+                <div class="dnd-pill-row" data-letter="C" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">good business advice</span></div>
+                <div class="dnd-pill-row" data-letter="D" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">a favourable economic climate</span></div>
+                <div class="dnd-pill-row" data-letter="E" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">an effective approach to business</span></div>
               </div>
             </div>
           </div>
@@ -854,7 +877,7 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
 
         <div class="dnd-group dnd-zoom-fix">
         <div class="dnd-careers-wrap" id="dnd-careers-wrap">
-          <p class="dnd-hint">Drag a comment from the right column into the matching box on the left. Drag a comment back to the bank to remove it, or drop it onto another row to swap.</p>
+          <p class="dnd-hint">Giữ chuột ở vùng trống trong khung để kéo; bôi đen phần chữ để tra từ. Kéo về bank để bỏ, hoặc thả sang hàng khác để đổi chỗ.</p>
           <div class="dnd-match-layout">
             <div class="dnd-col dnd-col-left">
               <div class="dnd-col-title">Types of careers</div>
@@ -880,12 +903,12 @@ body.dnd-dragging .dnd-handle{cursor:grabbing}
             <div class="dnd-col dnd-col-right">
               <div class="dnd-col-title">Comments</div>
               <div class="dnd-bank" id="dnd-bank-careers">
-                <div class="dnd-pill-row" data-letter="A"><span class="dnd-pill-text">The pay can be low.</span><button type="button" class="dnd-handle" data-letter="A" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
-                <div class="dnd-pill-row" data-letter="B"><span class="dnd-pill-text">There is a lot of competition.</span><button type="button" class="dnd-handle" data-letter="B" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
-                <div class="dnd-pill-row" data-letter="C"><span class="dnd-pill-text">An additional qualification is required.</span><button type="button" class="dnd-handle" data-letter="C" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
-                <div class="dnd-pill-row" data-letter="D"><span class="dnd-pill-text">Good communication skills are required.</span><button type="button" class="dnd-handle" data-letter="D" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
-                <div class="dnd-pill-row" data-letter="E"><span class="dnd-pill-text">People with experience feel very positive about it.</span><button type="button" class="dnd-handle" data-letter="E" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
-                <div class="dnd-pill-row" data-letter="F"><span class="dnd-pill-text">It is a relatively unpopular choice.</span><button type="button" class="dnd-handle" data-letter="F" aria-label="Drag to answer" title="Drag">⋮⋮</button></div>
+                <div class="dnd-pill-row" data-letter="A" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">The pay can be low.</span></div>
+                <div class="dnd-pill-row" data-letter="B" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">There is a lot of competition.</span></div>
+                <div class="dnd-pill-row" data-letter="C" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">An additional qualification is required.</span></div>
+                <div class="dnd-pill-row" data-letter="D" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">Good communication skills are required.</span></div>
+                <div class="dnd-pill-row" data-letter="E" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">People with experience feel very positive about it.</span></div>
+                <div class="dnd-pill-row" data-letter="F" title="Giữ vùng trống để kéo"><span class="dnd-pill-text">It is a relatively unpopular choice.</span></div>
               </div>
             </div>
           </div>
@@ -1026,9 +1049,9 @@ function applyExamZoom(){
   var pct=document.getElementById('zoom-pct');
   if(pct)pct.textContent=Math.round(examZoom*100)+'%';
   try{localStorage.setItem('anthicExamZoomListen',String(examZoom));}catch(e){}
-  /* Counteract #main zoom so HTML5 drag/drop hit-testing matches visuals */
+  /* Pointer-based DnD (not HTML5 drag) — no counter-zoom needed; DnD scales with #main */
   document.querySelectorAll('.dnd-zoom-fix').forEach(function(el){
-    try{el.style.zoom=String(1/examZoom);}catch(e2){}
+    try{el.style.zoom='';}catch(e2){}
   });
 }
 function examZoomIn(){
@@ -1116,15 +1139,17 @@ function tick(){
   timeLeft--;
 }
 
-function switchPassage(n){
+function switchPassage(n,opts){
   if(n<1||n>4)return;
   hideHlPopover();
+  var keepScroll=opts&&opts.keepQuestionsScroll;
+  var qp=document.getElementById('questions-panel');
+  var prevScroll=qp&&keepScroll?qp.scrollTop:0;
   document.querySelectorAll('.qsection').forEach(function(e){e.classList.remove('active');});
   document.querySelectorAll('.ptab').forEach(function(e){e.classList.remove('active');});
   document.getElementById('q'+n+'-section').classList.add('active');
   document.querySelectorAll('.ptab')[n-1].classList.add('active');
-  var qp=document.getElementById('questions-panel');
-  if(qp)qp.scrollTop=0;
+  if(qp)qp.scrollTop=keepScroll?prevScroll:0;
   if(examReviewMode)updateTranscriptForPart(n);
 }
 
@@ -1320,9 +1345,10 @@ function dndWireHandleDownOnce(){
   window._dndHandleMousedownWire=true;
   document.addEventListener('mousedown',function(e){
     if(e.button!==0)return;
-    var h=e.target.closest('.dnd-handle');
-    if(!h)return;
-    var row=h.closest('.dnd-pill-row');
+    if(examReviewMode)return;
+    /* Chỉ bỏ qua khi click đúng vào chữ — vùng trống trong khung = kéo. */
+    if(e.target.closest('.dnd-pill-text'))return;
+    var row=e.target.closest('.dnd-pill-row');
     if(!row||row.classList.contains('dnd-pill-hidden'))return;
     var g=row.closest('.dnd-group');
     if(!g)return;
@@ -1331,7 +1357,7 @@ function dndWireHandleDownOnce(){
     var bankId=bankEl.getAttribute('data-dnd-bank-id');
     var grp=DND_GROUPS[bankId];
     if(!grp)return;
-    var letter=row.getAttribute('data-letter')||h.getAttribute('data-letter');
+    var letter=row.getAttribute('data-letter');
     if(!letter)return;
     var inBank=!!row.closest('.dnd-bank');
     var slotEl=row.closest('.dnd-slot');
@@ -1392,18 +1418,11 @@ function initDnDGroup(opts){
       var row=document.createElement('div');
       row.className='dnd-pill-row';
       row.setAttribute('data-letter',letter);
+      row.setAttribute('title','Giữ vùng trống để kéo');
       var text=document.createElement('span');
       text.className='dnd-pill-text';
       text.textContent=textMap[letter]||letter;
-      var btn=document.createElement('button');
-      btn.type='button';
-      btn.className='dnd-handle';
-      btn.setAttribute('data-letter',letter);
-      btn.setAttribute('aria-label','Drag to answer');
-      btn.setAttribute('title','Drag');
-      btn.textContent='⋮⋮';
       row.appendChild(text);
-      row.appendChild(btn);
       slot.appendChild(row);
     }
     syncBankVisibility();
@@ -1563,6 +1582,18 @@ function getCorrectAnswerForQuestion(num){
   return '';
 }
 
+function getChooseTwoPairKey(num){
+  if(!examAnswerKey)return null;
+  var keys=Object.keys(examAnswerKey);
+  for(var i=0;i<keys.length;i++){
+    var k=keys[i];
+    if(k.indexOf('&')<0)continue;
+    var parts=k.split('&').map(function(p){return parseInt(p,10);});
+    if(parts.indexOf(num)>=0)return {key:k,parts:parts,letters:splitAnswerLetters(examAnswerKey[k])};
+  }
+  return null;
+}
+
 function answersMatch(userVal,correctVal){
   if(!userVal||!correctVal)return false;
   var userNorm=normalizeAns(userVal);
@@ -1571,7 +1602,14 @@ function answersMatch(userVal,correctVal){
   return alts.indexOf(userNorm)>=0;
 }
 
+/** Choose-TWO: thứ tự không quan trọng — C,B cùng đúng như B,C. */
 function isAnswerCorrect(num,userVal){
+  if(!String(userVal||'').trim())return false;
+  var pair=getChooseTwoPairKey(num);
+  if(pair){
+    var expected=pair.letters.map(function(x){return normalizeAns(x);}).filter(Boolean);
+    return expected.indexOf(normalizeAns(userVal))>=0;
+  }
   var direct=getCorrectAnswerForQuestion(num);
   if(direct)return answersMatch(userVal,direct);
   return false;
@@ -1835,12 +1873,116 @@ function showReviewAudioPlayer(){
   updateTranscriptCueHighlight();
 }
 
+
+function transcriptJumpIconSvg(){
+  return '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a8 8 0 0 0-8 8c0 2.4 1.1 4.5 2.8 6l.7.7V19a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-2.3l.7-.7A7.96 7.96 0 0 0 20 10a8 8 0 0 0-8-8zm-1 16v-1h2v1h-2zm1.1-3.3-.5-.5A5.95 5.95 0 0 1 6 10a6 6 0 1 1 10.9 3.5l-.5.5-.4.4V15h-4v-.4l-.4-.4-.5-.5z"/></svg>';
+}
+
+function transcriptJumpButtonHtml(num){
+  if(typeof num!=='number'||!Number.isFinite(num))return '';
+  return '<button type="button" class="explain-btn ans-jump-transcript" data-q="'+num+'" data-tip="Xem trong transcript" aria-label="Xem câu '+num+' trong transcript">'+transcriptJumpIconSvg()+'</button>';
+}
+
+function findTranscriptMarker(n,activeOnly){
+  var root=document.getElementById('transcript-scroll');
+  if(!root)return null;
+  var scope=root;
+  if(activeOnly){
+    var body=document.getElementById('transcript-body');
+    if(body&&body.classList.contains('transcript-by-part')){
+      var active=body.querySelector('.transcript-part-panel.active');
+      if(active)scope=active;
+    }
+  }
+  return scope.querySelector('.transcript-q-marker[data-q="'+n+'"], .transcript-q-marker[data-q-also="'+n+'"]');
+}
+
+function clearTranscriptEvidenceHighlights(){
+  document.querySelectorAll('.transcript-cue.is-transcript-evidence').forEach(function(el){
+    el.classList.remove('is-transcript-evidence');
+  });
+  document.querySelectorAll('.transcript-q-marker.is-jump-target').forEach(function(el){
+    el.classList.remove('is-jump-target');
+  });
+  document.querySelectorAll('#questions-panel .explain-btn.ans-jump-transcript.is-active').forEach(function(b){
+    b.classList.remove('is-active');
+  });
+}
+
+function scrollTranscriptToEl(el){
+  var scroll=document.getElementById('transcript-scroll');
+  if(!scroll||!el)return;
+  var sRect=scroll.getBoundingClientRect();
+  var eRect=el.getBoundingClientRect();
+  var delta=(eRect.top+eRect.bottom)/2-(sRect.top+sRect.bottom)/2;
+  scroll.scrollTop+=delta;
+}
+
+function goToTranscriptQuestion(n){
+  if(!examReviewMode)return;
+  var num=Number(n);
+  if(!Number.isFinite(num))return;
+  var targetPart=Math.ceil(num/10);
+  var qp=document.getElementById('questions-panel');
+  var keepScroll=qp?qp.scrollTop:0;
+  if(typeof switchPassage==='function'){
+    try{switchPassage(targetPart,{keepQuestionsScroll:true});}catch(e){}
+  }
+  if(qp)qp.scrollTop=keepScroll;
+  updateTranscriptForPart(targetPart);
+  var marker=findTranscriptMarker(num,true);
+  if(!marker)marker=findTranscriptMarker(num,false);
+  if(!marker)return;
+  clearTranscriptEvidenceHighlights();
+  var cue=marker.closest('.transcript-cue');
+  var target=cue||marker;
+  if(cue)cue.classList.add('is-transcript-evidence');
+  else marker.classList.add('is-jump-target');
+  var btn=document.querySelector('#questions-panel .ans-jump-transcript[data-q="'+num+'"]');
+  if(btn)btn.classList.add('is-active');
+  scrollTranscriptToEl(target);
+}
+
+function syncTranscriptJumpButtons(){
+  document.querySelectorAll('#questions-panel .ans-jump-transcript').forEach(function(btn){
+    var n=parseInt(btn.getAttribute('data-q'),10);
+    var has=Number.isFinite(n)&&!!findTranscriptMarker(n,false);
+    if(has)btn.removeAttribute('hidden');
+    else btn.setAttribute('hidden','');
+  });
+}
+
+function ensureTranscriptJumpButton(anchor,num,extraClass,appendInside){
+  if(!anchor||typeof num!=='number')return;
+  if(document.querySelector('#questions-panel .ans-jump-transcript[data-q="'+num+'"]'))return;
+  if(!findTranscriptMarker(num,false))return;
+  var hold=document.createElement(extraClass?'div':'span');
+  if(extraClass)hold.className=extraClass;
+  hold.innerHTML=transcriptJumpButtonHtml(num);
+  if(!hold.firstElementChild)return;
+  if(appendInside){
+    anchor.appendChild(hold);
+    return;
+  }
+  if(!anchor.parentNode)return;
+  anchor.parentNode.insertBefore(hold,anchor.nextSibling);
+}
+
+function formatCorrectAnswerForDisplay(correctVal){
+  var raw=String(correctVal||'').trim();
+  if(!raw)return '—';
+  if(/^[A-I]([,\s/]*[A-I])*$/i.test(raw.replace(/\s+/g,'')))return raw;
+  var primary=raw.split('/')[0].trim();
+  return primary||raw;
+}
+
 function reviewLineHtml(userVal,correctVal,num){
   var u=pdfEscHtml(userVal||'—');
-  var c=pdfEscHtml(correctVal||'—');
+  var c=pdfEscHtml(formatCorrectAnswerForDisplay(correctVal));
   var match=typeof num==='number'?isAnswerCorrect(num,userVal):answersMatch(userVal,correctVal);
   var cls='ans-review-line'+(match?' is-correct':' is-wrong');
-  return '<div class="'+cls+'"><span class="ans-your">Bạn: '+u+'</span><span class="ans-correct">Đáp án: '+c+'</span></div>';
+  var jump=typeof num==='number'?transcriptJumpButtonHtml(num):'';
+  return '<div class="'+cls+'"><span class="ans-your">Bạn: '+u+'</span><span class="ans-correct-wrap"><span class="ans-correct">Đáp án: '+c+'</span>'+jump+'</span></div>';
 }
 
 function insertReviewLineAfterParagraph(qnum,user,correct){
@@ -1863,14 +2005,19 @@ function highlightMcqReview(qid,userVal,correctVal,num){
   if(!opts)return;
   var userNorm=normalizeAns(userVal);
   var correctNorm=normalizeAns(correctVal);
+  var correctLab=null;
   opts.querySelectorAll('.opt').forEach(function(lab){
     var inp=lab.querySelector('input[type="radio"]');
     if(!inp)return;
     var val=normalizeAns(inp.value);
     lab.classList.remove('review-user','review-correct');
     if(userNorm&&val===userNorm)lab.classList.add('review-user');
-    if(correctNorm&&val===correctNorm)lab.classList.add('review-correct');
+    if(correctNorm&&val===correctNorm){
+      lab.classList.add('review-correct');
+      if(!correctLab)correctLab=lab;
+    }
   });
+  ensureTranscriptJumpButton(correctLab||opts,num,'mcq-review-jump',!!correctLab);
 }
 
 function lockExamInputs(){
@@ -1908,6 +2055,24 @@ function highlightFillReview(inp,userVal,correctVal,num){
   rev.innerHTML=reviewLineHtml(userVal,correctVal,num);
 }
 
+function formatDndAnswerDisplay(letter, scope){
+  var key=String(letter||'').trim().toUpperCase();
+  if(!key)return '—';
+  var root=scope||document;
+  var row=root.querySelector('.dnd-pill-row[data-letter="'+key+'"]')||
+    document.querySelector('.dnd-pill-row[data-letter="'+key+'"]');
+  if(!row)return key;
+  var textEl=row.querySelector('.dnd-pill-text');
+  var text=textEl?textEl.textContent.trim():'';
+  return text?key+' — '+text:key;
+}
+
+function formatChooseTwoCorrectDisplay(num){
+  var pair=getChooseTwoPairKey(num);
+  if(!pair||!pair.letters.length)return formatCorrectAnswerForDisplay(getCorrectAnswerForQuestion(num));
+  return pair.letters.map(function(L){return formatDndAnswerDisplay(L);}).join(' · ');
+}
+
 function highlightDndReview(qid,userVal,correctVal,num){
   var row=document.getElementById('anchor-'+qid);
   if(!row){
@@ -1915,13 +2080,18 @@ function highlightDndReview(qid,userVal,correctVal,num){
     if(slot)row=slot.closest('.dnd-row');
   }
   if(!row)return;
+  var group=row.closest('.dnd-group')||document;
+  var userDisplay=formatDndAnswerDisplay(userVal,group);
+  var correctDisplay=getChooseTwoPairKey(num)
+    ?formatChooseTwoCorrectDisplay(num)
+    :formatDndAnswerDisplay(correctVal,group);
   var rev=row.querySelector('.dnd-review');
   if(!rev){
     rev=document.createElement('div');
     rev.className='dnd-review';
     row.appendChild(rev);
   }
-  rev.innerHTML=reviewLineHtml(userVal,correctVal,num);
+  rev.innerHTML=reviewLineHtml(userDisplay,correctDisplay,num);
 }
 
 function applyReviewAnswers(){
@@ -1947,6 +2117,7 @@ function applyReviewAnswers(){
       highlightMcqReview(qid,user,correct,n);
     }
   }
+  syncTranscriptJumpButtons();
 }
 
 function enterReviewMode(){
@@ -1965,6 +2136,14 @@ function enterReviewMode(){
   sendSubmissionToGoogleSheet();
   if(typeof window.__examDictEnterReviewMode==="function")window.__examDictEnterReviewMode();
 }
+
+document.addEventListener('click',function(e){
+  var btn=e.target&&e.target.closest?e.target.closest('.ans-jump-transcript'):null;
+  if(!btn||btn.hasAttribute('hidden'))return;
+  e.preventDefault();
+  e.stopPropagation();
+  goToTranscriptQuestion(btn.getAttribute('data-q'));
+});
 
 function showSuccess(){enterReviewMode();}
 
@@ -2707,8 +2886,8 @@ function removeHighlightFromRange(range){
 .exam-dict-term-box{background:#fafafa;border:1px solid #E4E4E7;border-radius:8px;padding:10px 12px;margin-bottom:10px}
 .exam-dict-done{text-align:center;padding:16px 8px;font-size:14px;font-weight:600;color:#1a7a30}
 .exam-review-dict-hint{
-  display:inline-block;margin:0 12px 0 8px;padding:10px 8px 10px 0;font-size:13px;font-weight:600;line-height:1.35;
-  font-style:italic;color:#4b2876;flex:0 0 auto;text-align:right;white-space:nowrap
+  display:block;width:100%;margin:6px 12px 8px;padding:0;font-size:13px;font-weight:600;line-height:1.35;
+  font-style:italic;color:#4b2876;flex:1 0 100%;text-align:left;white-space:normal
 }
 .exam-review-tab-group{
   display:flex;align-items:center;flex:1 1 auto;min-width:0;overflow-x:auto;flex-wrap:nowrap;
@@ -2717,7 +2896,7 @@ function removeHighlightFromRange(range){
 #exam-screen.exam-review-mode .ptab-bar,
 #passage-tabs.exam-review-dict-bar,
 #part-tabs.exam-review-dict-bar{
-  display:flex;align-items:center;flex-wrap:nowrap;gap:0;overflow:hidden;padding-right:4px
+  display:flex;align-items:center;flex-wrap:wrap;gap:0;overflow:visible;padding-right:4px
 }
 #exam-screen.exam-review-mode .ptab-bar .ptab,
 #part-tabs.exam-review-dict-bar .ptab,
@@ -2732,6 +2911,8 @@ function removeHighlightFromRange(range){
 .transcript-cue.is-active{background:#f5f5f7}
 .transcript-cue.is-active .transcript-cue-time{color:#000001;font-weight:700}
 .transcript-cue.is-active .transcript-cue-text{font-weight:600;color:#000001}
+.transcript-cue.is-transcript-evidence{background:#fef3c7;box-shadow:inset 0 0 0 1px #f59e0b}
+.transcript-cue.is-transcript-evidence .transcript-cue-time{color:#92400e}
 .transcript-q-marker{font-weight:700;color:#4b2876}
 #exam-screen.exam-review-mode .transcript-scroll,
 #exam-screen.exam-review-mode .transcript-body{cursor:text}

@@ -22,7 +22,7 @@ export const READING_REAL_EXAMS: readonly RealExamListing[] = [
     slug: "de-thi-that-1",
     seriesNumber: 1,
     title: "Đề thi thật 1",
-    subtitle: "Mid-Term Reading · 60 phút · 3 passages · 40 câu",
+    subtitle: "Reading · 60 phút · 3 passages · 40 câu",
     catalogOrder: realIeltsExamCatalogOrder(1),
   },
 ] as const;
@@ -32,7 +32,7 @@ export const LISTENING_REAL_EXAMS: readonly RealExamListing[] = [
     slug: "de-thi-that-1",
     seriesNumber: 1,
     title: "Đề thi thật 1",
-    subtitle: "Mid-Term Listening · 40 phút · 4 parts · 40 câu",
+    subtitle: "Listening · 40 phút · 4 parts · 40 câu",
     catalogOrder: realIeltsExamCatalogOrder(1),
   },
 ] as const;

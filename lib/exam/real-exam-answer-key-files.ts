@@ -14,8 +14,9 @@ type RealExamAnswerKeyPaths = {
 
 const ANSWER_KEY_PATHS: Record<RealExamSlug, RealExamAnswerKeyPaths> = {
   "de-thi-that-1": {
+    /** Answer-only backup cho midterm listening shell / transcript prep. */
     reading: path.join(process.cwd(), "reading raw/real test 1.txt"),
-    listening: path.join(process.cwd(), "listening materials/real test 1 qna.txt"),
+    listening: path.join(process.cwd(), "listening materials/real test 1 answers.txt"),
   },
 };
 

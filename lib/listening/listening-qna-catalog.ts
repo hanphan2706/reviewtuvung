@@ -69,6 +69,11 @@ const CAM18_TEST4_QNA: ListeningQnaFileRef = {
   test: 4,
 };
 
+const REAL_TEST_1_QNA: ListeningQnaFileRef = {
+  fileName: "real test 1 qna.txt",
+  test: 1,
+};
+
 /** Full test — một file QnA cho cả 4 Part. */
 export const LISTENING_TEST_QNA: Record<string, ListeningQnaFileRef> = {
   "cam20-test1": CAM20_TEST1_QNA,
@@ -83,6 +88,7 @@ export const LISTENING_TEST_QNA: Record<string, ListeningQnaFileRef> = {
   "cam18-test2": CAM18_TEST2_QNA,
   "cam18-test3": CAM18_TEST3_QNA,
   "cam18-test4": CAM18_TEST4_QNA,
+  "de-thi-that-1": REAL_TEST_1_QNA,
 };
 
 export function getListeningTestQnaRef(testId: string): ListeningQnaFileRef | null {

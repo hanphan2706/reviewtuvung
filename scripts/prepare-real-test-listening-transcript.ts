@@ -13,7 +13,7 @@ import { whisperLocalTranscribe } from "@/lib/listening/whisper-transcribe-local
 const audioPath = path.join(process.cwd(), "listening materials/Audio real test/real test 1.mp3");
 const rawPath = path.join(process.cwd(), "listening materials/transcript/real-test-1.txt");
 const cleanedPath = path.join(process.cwd(), "listening materials/transcript/real-test-1.cleaned.txt");
-const answerKeyPath = path.join(process.cwd(), "listening materials/real test 1 qna.txt");
+const answerKeyPath = path.join(process.cwd(), "listening materials/real test 1 answers.txt");
 const cachePath = path.join(process.cwd(), "listening materials/sync/real-test-1.whisper-words.json");
 const syncPath = path.join(process.cwd(), LISTENING_SYNC_SUBDIR, "real-test-1.sync.json");
 

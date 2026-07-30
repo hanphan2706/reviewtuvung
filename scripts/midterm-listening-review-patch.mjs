@@ -121,10 +121,33 @@ const LISTENING_REVIEW_CSS = `
 .transcript-cue-speaker{font-weight:600;color:#4b2876}
 .transcript-cue.is-active .transcript-cue-speaker{color:#4b2876}
 .transcript-q-marker{font-weight:700;color:#4b2876}
+.transcript-cue.is-transcript-evidence{background:#fef3c7;box-shadow:inset 0 0 0 1px #f59e0b}
+.transcript-cue.is-transcript-evidence .transcript-cue-time{color:#92400e}
+.transcript-q-marker.is-jump-target{background:#fef3c7;border-radius:4px;padding:0 2px}
 .transcript-cue-text{flex:1;min-width:0;cursor:text}
 .transcript-cue.is-active{background:#f5f5f7}
 .transcript-cue.is-active .transcript-cue-time{color:#000001;font-weight:700}
 .transcript-cue.is-active .transcript-cue-text{font-weight:600;color:#000001}
+.ans-correct-wrap{display:inline-flex;align-items:center;gap:2px;flex-wrap:wrap;white-space:normal;max-width:100%}
+.explain-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:20px;height:20px;margin-left:5px;padding:0;vertical-align:middle;
+  border:1px solid #d4d4d8;border-radius:6px;background:#fff;color:#52525b;
+  cursor:pointer;flex-shrink:0;position:relative;pointer-events:auto!important;
+}
+.explain-btn:hover,.explain-btn.is-active{background:#18181b;border-color:#18181b;color:#fff}
+.explain-btn svg{width:11px;height:11px;display:block}
+.explain-btn[data-tip]::after{
+  content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);
+  white-space:nowrap;font-size:10px;font-weight:600;color:#fafafa;background:#18181b;
+  border:none;border-radius:6px;padding:4px 8px;opacity:0;pointer-events:none;z-index:5;
+}
+.explain-btn:hover[data-tip]::after{opacity:1}
+.explain-btn[hidden]{display:none!important}
+.mcq-review-jump{display:inline-flex;align-items:center;margin-left:6px;flex-shrink:0;align-self:center}
+.dnd-review-jump{display:inline-flex;align-items:center;margin-left:6px}
+#exam-screen.exam-review-mode .opt.review-correct{align-items:center}
+#exam-screen.exam-review-mode #questions-panel .explain-btn{pointer-events:auto!important;cursor:pointer}
 #exam-screen.exam-review-mode .transcript-scroll,
 #exam-screen.exam-review-mode .transcript-body{cursor:text}
 #success-overlay{display:none!important}
@@ -357,12 +380,103 @@ function showReviewAudioPlayer(){
   updateTranscriptCueHighlight();
 }
 
+function transcriptJumpIconSvg(){
+  return '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a8 8 0 0 0-8 8c0 2.4 1.1 4.5 2.8 6l.7.7V19a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-2.3l.7-.7A7.96 7.96 0 0 0 20 10a8 8 0 0 0-8-8zm-1 16v-1h2v1h-2zm1.1-3.3-.5-.5A5.95 5.95 0 0 1 6 10a6 6 0 1 1 10.9 3.5l-.5.5-.4.4V15h-4v-.4l-.4-.4-.5-.5z"/></svg>';
+}
+
+function transcriptJumpButtonHtml(num){
+  if(typeof num!=='number'||!Number.isFinite(num))return '';
+  return '<button type="button" class="explain-btn ans-jump-transcript" data-q="'+num+'" data-tip="Xem trong transcript" aria-label="Xem câu '+num+' trong transcript">'+transcriptJumpIconSvg()+'</button>';
+}
+
+function findTranscriptMarker(n,activeOnly){
+  var root=document.getElementById('transcript-scroll');
+  if(!root)return null;
+  var scope=root;
+  if(activeOnly){
+    var body=document.getElementById('transcript-body');
+    if(body&&body.classList.contains('transcript-by-part')){
+      var active=body.querySelector('.transcript-part-panel.active');
+      if(active)scope=active;
+    }
+  }
+  return scope.querySelector('.transcript-q-marker[data-q="'+n+'"], .transcript-q-marker[data-q-also="'+n+'"]');
+}
+
+function clearTranscriptEvidenceHighlights(){
+  document.querySelectorAll('.transcript-cue.is-transcript-evidence').forEach(function(el){
+    el.classList.remove('is-transcript-evidence');
+  });
+  document.querySelectorAll('.transcript-q-marker.is-jump-target').forEach(function(el){
+    el.classList.remove('is-jump-target');
+  });
+  document.querySelectorAll('#questions-panel .explain-btn.ans-jump-transcript.is-active').forEach(function(b){
+    b.classList.remove('is-active');
+  });
+}
+
+function goToTranscriptQuestion(n){
+  if(!examReviewMode)return;
+  var num=Number(n);
+  if(!Number.isFinite(num))return;
+  var targetPart=Math.ceil(num/10);
+  if(typeof switchPassage==='function'){
+    try{switchPassage(targetPart);}catch(e){}
+  }
+  updateTranscriptForPart(targetPart);
+  var marker=findTranscriptMarker(num,true);
+  if(!marker)marker=findTranscriptMarker(num,false);
+  if(!marker)return;
+  clearTranscriptEvidenceHighlights();
+  var cue=marker.closest('.transcript-cue');
+  var target=cue||marker;
+  if(cue)cue.classList.add('is-transcript-evidence');
+  else marker.classList.add('is-jump-target');
+  var btn=document.querySelector('#questions-panel .ans-jump-transcript[data-q="'+num+'"]');
+  if(btn)btn.classList.add('is-active');
+  target.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+function syncTranscriptJumpButtons(){
+  document.querySelectorAll('#questions-panel .ans-jump-transcript').forEach(function(btn){
+    var n=parseInt(btn.getAttribute('data-q'),10);
+    var has=Number.isFinite(n)&&!!findTranscriptMarker(n,false);
+    if(has)btn.removeAttribute('hidden');
+    else btn.setAttribute('hidden','');
+  });
+}
+
+function ensureTranscriptJumpButton(anchor,num,extraClass,appendInside){
+  if(!anchor||typeof num!=='number')return;
+  if(document.querySelector('#questions-panel .ans-jump-transcript[data-q="'+num+'"]'))return;
+  if(!findTranscriptMarker(num,false))return;
+  var hold=document.createElement(extraClass?'div':'span');
+  if(extraClass)hold.className=extraClass;
+  hold.innerHTML=transcriptJumpButtonHtml(num);
+  if(!hold.firstElementChild)return;
+  if(appendInside){
+    anchor.appendChild(hold);
+    return;
+  }
+  if(!anchor.parentNode)return;
+  anchor.parentNode.insertBefore(hold,anchor.nextSibling);
+}
+
+function formatCorrectAnswerForDisplay(correctVal){
+  var raw=String(correctVal||'').trim();
+  if(!raw)return '—';
+  if(/^[A-I]([,\s/]*[A-I])*$/i.test(raw.replace(/\s+/g,'')))return raw;
+  var primary=raw.split('/')[0].trim();
+  return primary||raw;
+}
+
 function reviewLineHtml(userVal,correctVal,num){
   var u=pdfEscHtml(userVal||'—');
-  var c=pdfEscHtml(correctVal||'—');
+  var c=pdfEscHtml(formatCorrectAnswerForDisplay(correctVal));
   var match=typeof num==='number'?isAnswerCorrect(num,userVal):answersMatch(userVal,correctVal);
   var cls='ans-review-line'+(match?' is-correct':' is-wrong');
-  return '<div class="'+cls+'"><span class="ans-your">Bạn: '+u+'</span><span class="ans-correct">Đáp án: '+c+'</span></div>';
+  var jump=typeof num==='number'?transcriptJumpButtonHtml(num):'';
+  return '<div class="'+cls+'"><span class="ans-your">Bạn: '+u+'</span><span class="ans-correct-wrap"><span class="ans-correct">Đáp án: '+c+'</span>'+jump+'</span></div>';
 }
 
 function insertReviewLineAfterParagraph(qnum,user,correct){
@@ -385,14 +499,19 @@ function highlightMcqReview(qid,userVal,correctVal,num){
   if(!opts)return;
   var userNorm=normalizeAns(userVal);
   var correctNorm=normalizeAns(correctVal);
+  var correctLab=null;
   opts.querySelectorAll('.opt').forEach(function(lab){
     var inp=lab.querySelector('input[type="radio"]');
     if(!inp)return;
     var val=normalizeAns(inp.value);
     lab.classList.remove('review-user','review-correct');
     if(userNorm&&val===userNorm)lab.classList.add('review-user');
-    if(correctNorm&&val===correctNorm)lab.classList.add('review-correct');
+    if(correctNorm&&val===correctNorm){
+      lab.classList.add('review-correct');
+      if(!correctLab)correctLab=lab;
+    }
   });
+  ensureTranscriptJumpButton(correctLab||opts,num,'mcq-review-jump',!!correctLab);
 }
 
 function lockExamInputs(){
@@ -469,6 +588,7 @@ function applyReviewAnswers(){
       highlightMcqReview(qid,user,correct,n);
     }
   }
+  syncTranscriptJumpButtons();
 }
 
 function enterReviewMode(){
@@ -487,6 +607,14 @@ function enterReviewMode(){
   sendSubmissionToGoogleSheet();
   if(typeof window.__examDictEnterReviewMode==="function")window.__examDictEnterReviewMode();
 }
+
+document.addEventListener('click',function(e){
+  var btn=e.target&&e.target.closest?e.target.closest('.ans-jump-transcript'):null;
+  if(!btn||btn.hasAttribute('hidden'))return;
+  e.preventDefault();
+  e.stopPropagation();
+  goToTranscriptQuestion(btn.getAttribute('data-q'));
+});
 `;
 
 export const LISTENING_REVIEW_HELPERS = REVIEW_HELPERS.replace(
