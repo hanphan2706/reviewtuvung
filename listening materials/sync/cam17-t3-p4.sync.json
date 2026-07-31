@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "partId": "cam17-t3-p4",
+  "audioFile": "cam17-test3-part4.mp3",
+  "durationSeconds": 485.70075,
+  "method": "whisper-local",
+  "preambleSeconds": 91.656,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Scientists believe that a majority of the earth’s bird population migrate in some fashion or other.",
+      "start": 78.056,
+      "end": 83.496,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Some travel seasonally for relatively short distances, such as birds that move from their winter habitats in lowlands to mountain tops for the summers.",
+      "start": 83.496,
+      "end": 91.656,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Others, like the Arctic Tern, travel more than 25,000 miles seasonally between the northern and southern poles.",
+      "start": 91.656,
+      "end": 99.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Bird migration has been studied over many centuries through a variety of observations.",
+      "start": 99.52,
+      "end": 104.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "But until relatively recently, where birds went to in the winter was considered something of a mystery.",
+      "start": 104.82,
+      "end": 113.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "The lack of modern science and technology led to many theories that we now recognize as error-filled and even somewhat amusing.",
+      "start": 113.16,
+      "end": 123.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Take hibernation theory for example – two thousand years ago, it was commonly believed that when birds left an area, they went underwater to hibernate in the seas and oceans.",
+      "start": 123.78,
+      "end": 137.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Another theory for the regular appearance and disappearance of birds was that they spend winter hidden in mud (Q31) till the weather changed and food became abundant again.",
+      "start": 137.84,
+      "end": 150.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "The theory that some birds hibernate persisted until experiments were done on caged birds in the 1940s which demonstrated that birds have no hibernation instinct.",
+      "start": 150.28,
+      "end": 163.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "One of the earliest naturalists and philosophers from ancient Greece was Aristotle who was the first writer to discuss the disappearance and reappearance of some bird species at certain times of year.",
+      "start": 163.78,
+      "end": 179.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "He developed the theory of transmutation, the seasonal change of one species into another, by observing redstarts and robins.",
+      "start": 179.48,
+      "end": 189.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "He observed that in the autumn, small birds called ‘redstarts’ began to lose their feathers (Q32), which convinced Aristotle that they changed into robins for the winter, and back into redstarts in the summer.",
+      "start": 189.34,
+      "end": 205.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "These assumptions are understandable given that this pair of species are similar in shape (Q33), but are a classic example of an incorrect interpretation based on correct observations.",
+      "start": 205.34,
+      "end": 219.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "The most bizarre theory was put forward by an English amateur scientist, Charles Morton, in the seventeenth century.",
+      "start": 219.26,
+      "end": 228.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "He wrote a surprisingly well-regarded paper claiming that birds migrate to the moon and back every year (Q34).",
+      "start": 228.36,
+      "end": 236.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "He came to this conclusion as the only logical explanation for the total disappearance of some species.",
+      "start": 236.86,
+      "end": 248.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "One of the key moments in the development of migration theory came in 1822 when a white stork was shot in Germany.",
+      "start": 248.78,
+      "end": 259.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "This particular stork made history because of the long spear in its neck (Q35) which incredibly had not killed it – everyone immediately realised this spear was definitely not European.",
+      "start": 259.34,
+      "end": 274.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "It turned out to be a spear from a tribe in Central Africa.",
+      "start": 274.5,
+      "end": 278.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "This was a truly defining moment in the history of ornithology because it was the first evidence that storks spend their winters in sub-Saharan Africa (Q36).",
+      "start": 278.99,
+      "end": 290.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "You can still see the ‘arrow stork’ in the Zoological Collection of the University of Rostock in Germany.",
+      "start": 290.96,
+      "end": 300.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "People gradually became aware that European birds moved south in autumn and north in summer but didn’t know much about it until the practice of catching birds and putting rings on their legs became established.",
+      "start": 300.84,
+      "end": 315.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Before this, very little information was available about the actual destinations of particular species (Q37) and how they travelled there.",
+      "start": 315.42,
+      "end": 325.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "People speculated that larger birds provided a kind of taxi service for smaller birds by carrying them on their backs.",
+      "start": 325.6,
+      "end": 334.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "This idea came about because it seemed impossible that small birds weighing only a few grams could fly over vast oceans (Q38).",
+      "start": 334.34,
+      "end": 344.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "This idea was supported by observations of bird behaviour such as the harassment of larger birds by smaller birds.",
+      "start": 344.32,
+      "end": 354.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "The development of bird ringing, by a Danish schoolteacher, Hans Christian Cornelius Mortensen, made many discoveries possible.",
+      "start": 354.98,
+      "end": 365.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "This is still common practice today and relies upon what is known as ‘recovery’ (Q39) – this is when ringed birds are found dead in the place they have migrated to, and identified.",
+      "start": 365.02,
+      "end": 378.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Huge amounts of data were gathered in the early part of the twentieth century and for the first time in history people understood where birds actually went to in winter.",
+      "start": 378.46,
+      "end": 390.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "In 1931, an atlas was published showing where the most common species of European birds migrated to (Q40).",
+      "start": 390.3,
+      "end": 399.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "More recent theories about bird migration …",
+      "start": 399.18,
+      "end": 485.701,
+      "preAudio": false
+    }
+  ]
+}

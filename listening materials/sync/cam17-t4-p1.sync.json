@@ -1,0 +1,240 @@
+{
+  "version": 1,
+  "partId": "cam17-t4-p1",
+  "audioFile": "cam17-test4-part1.mp3",
+  "durationSeconds": 382.232625,
+  "method": "whisper-local",
+  "preambleSeconds": 115.41,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "JACINTA",
+      "text": "Hello, Easy Life Cleaning Services, Jacinta speaking.",
+      "start": 101.561,
+      "end": 115.41,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "CLIENT",
+      "text": "Oh hello. I’m looking for a cleaning service for my apartment – do you do domestic cleaning?",
+      "start": 115.41,
+      "end": 121.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "JACINTA",
+      "text": "Sure.",
+      "start": 121.19,
+      "end": 132.39
+    },
+    {
+      "id": "cue-4",
+      "speaker": "CLIENT",
+      "text": "Well, it’s just a one-bedroom flat. Do you have a basic cleaning package?",
+      "start": 132.39,
+      "end": 136.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "JACINTA",
+      "text": "Yes. For a one-bedroom flat we’re probably looking at about two hours for a clean. So we’d do a thorough clean of all surfaces in each room, and polish them where necessary. Does your apartment have carpets?",
+      "start": 136.81,
+      "end": 149.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "CLIENT",
+      "text": "No, I don’t have any, but the floor would need cleaning. (Q1)",
+      "start": 149.39,
+      "end": 153.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "JACINTA",
+      "text": "Of course – we’d do that in every room. And we’d do a thorough clean of the kitchen and bathroom.",
+      "start": 153.47,
+      "end": 160.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "CLIENT",
+      "text": "OK.",
+      "start": 160.27,
+      "end": 160.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "JACINTA",
+      "text": "Then we have some additional services which you can request if you want – so for example, we can clean your oven for you every week.",
+      "start": 160.72,
+      "end": 169.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "CLIENT",
+      "text": "Actually, I hardly ever use that, but can you do the fridge? (Q2)",
+      "start": 169.56,
+      "end": 173.98
+    },
+    {
+      "id": "cue-11",
+      "speaker": "JACINTA",
+      "text": "Sure. Would you like that done every week?",
+      "start": 173.98,
+      "end": 176.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "CLIENT",
+      "text": "Yes, definitely. And would ironing clothes be an additional service you can do?",
+      "start": 176.7,
+      "end": 181.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "JACINTA",
+      "text": "Yes, of course.",
+      "start": 181.12,
+      "end": 182.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "CLIENT",
+      "text": "It wouldn’t be much, just my shirts for work that week. (Q3)",
+      "start": 182.14,
+      "end": 186.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "JACINTA",
+      "text": "That’s fine. And we could also clean your microwave if you want.",
+      "start": 186.22,
+      "end": 190.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "CLIENT",
+      "text": "No, I wipe that out pretty regularly so there’s no need for that.",
+      "start": 190.3,
+      "end": 194.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "JACINTA",
+      "text": "We also offer additional services that you might want a bit less often, say every month. So for example, if the inside of your windows need cleaning (Q4), we could do that.",
+      "start": 194.72,
+      "end": 205.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "CLIENT",
+      "text": "Yes, that’d be good. I’m on the fifteenth floor, so the outside gets done regularly by specialists, but the inside does get a bit grubby.",
+      "start": 205.6,
+      "end": 214.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "JACINTA",
+      "text": "And we could arrange for your curtains to get cleaned if necessary.",
+      "start": 214.1,
+      "end": 218.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "CLIENT",
+      "text": "No, they’re OK. But would you be able to do something about the balcony (Q5)? It’s quite small and I don’t use it much, but it could do with a wash every month or so.",
+      "start": 218.18,
+      "end": 230.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "JACINTA",
+      "text": "Yes, we can get the pressure washer onto that.",
+      "start": 230.08,
+      "end": 235.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "JACINTA",
+      "text": "Now if you’re interested, we do offer some other possibilities to do with general maintenance. For example, if you have a problem with water and you need a plumber in a hurry, we can put you in touch with a reliable one who can come out straightaway. And the same thing if you need an electrician. (Q6)",
+      "start": 235.78,
+      "end": 253.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "CLIENT",
+      "text": "Right. That’s good to know. I’ve only just moved here so I don’t have any of those sorts of contacts.",
+      "start": 253.72,
+      "end": 261.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "JACINTA",
+      "text": "And I don’t know if this is of interest to you, but we also offer a special vacuum cleaning system which can improve the indoor air quality of your home by capturing up to 99% of all the dust in the air. So if you’re troubled by allergies, this can make a big difference. (Q7)",
+      "start": 261.18,
+      "end": 278.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "CLIENT",
+      "text": "Right. In fact, I don’t have that sort of problem, but I’ll bear it in mind. Now can you tell me a bit about your cleaning staff?",
+      "start": 278.28,
+      "end": 287.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "JACINTA",
+      "text": "Of course. So all our cleaners are very carefully selected. When they apply to us, they have to undergo a security check with the police (Q8) to make sure they don’t have any sort of criminal background, and, of course, they have to provide references as well. Then if we think they might be suitable for the job, we give them training for it. That lasts for two weeks (Q9) so it’s very thorough, and at the end of it, they have a test. If they pass that, we take them on, but we monitor them very carefully – we ask all our clients to complete a review of their performance after every visit and to email it to us (Q10). So we can pick up any problems straightaway and deal with them.",
+      "start": 287.46,
+      "end": 327.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "CLIENT",
+      "text": "OK, well that all sounds good. And will I always have the same cleaner?",
+      "start": 327.52,
+      "end": 333.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "JACINTA",
+      "text": "Yes, we do our best to organise it that way, and we usually manage it.",
+      "start": 333.36,
+      "end": 338.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "CLIENT",
+      "text": "Good. That’s fine. Right, so I’d like to go ahead and …",
+      "start": 338.46,
+      "end": 382.233,
+      "preAudio": false
+    }
+  ]
+}

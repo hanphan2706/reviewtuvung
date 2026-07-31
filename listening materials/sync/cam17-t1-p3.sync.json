@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "partId": "cam17-t1-p3",
+  "audioFile": "cam17-test1-part3.mp3",
+  "durationSeconds": 443.244938,
+  "method": "whisper-local",
+  "preambleSeconds": 68.54,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "DIANA",
+      "text": "So, Tim, we have to do a short summary of our work experience on a farm.",
+      "start": 68.54,
+      "end": 73.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "TIM",
+      "text": "Right. My farm was great, but arranging the work experience was hard (Q21). One problem was it was miles away and I don’t drive. And also, I’d really wanted a placement for a month, but I could only get one for two weeks.",
+      "start": 73.98,
+      "end": 90.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "DIANA",
+      "text": "I was lucky, the farmer let me stay on the farm so I didn’t have to travel. But finding the right sort of farm to apply to wasn’t easy.",
+      "start": 90.04,
+      "end": 100.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "TIM",
+      "text": "No, they don’t seem to have websites, do they. I found mine through a friend of my mother’s, but it wasn’t easy.",
+      "start": 100.24,
+      "end": 107.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "DIANA",
+      "text": "No.",
+      "start": 107.72,
+      "end": 108.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "TIM",
+      "text": "My farm was mostly livestock, especially sheep. I really enjoyed helping out with them. I was up most of one night helping a sheep deliver a lamb … (Q22)",
+      "start": 108.96,
+      "end": 119.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "DIANA",
+      "text": "On your own?",
+      "start": 119.04,
+      "end": 120.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "TIM",
+      "text": "No, the farmer was there, and he told me what to do. It wasn’t a straightforward birth, but I managed. It was a great feeling to see the lamb stagger to its feet and start feeding almost straightaway, and to know that it was OK.",
+      "start": 120.06,
+      "end": 135.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "DIANA",
+      "text": "Mm.",
+      "start": 135.38,
+      "end": 136.1
+    },
+    {
+      "id": "cue-10",
+      "speaker": "TIM",
+      "text": "Then another time a lamb had broken its leg, and they got the vet in to set it, and he talked me through what he was doing. That was really useful.",
+      "start": 136.1,
+      "end": 146.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "DIANA",
+      "text": "Yes, my farm had sheep too. The farm was in a valley and they had a lowland breed called Suffolks, although the farmer said they’d had other breeds in the past.",
+      "start": 146.64,
+      "end": 158.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "TIM",
+      "text": "So were they bred for their meat? (Q23)",
+      "start": 158.32,
+      "end": 161.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "DIANA",
+      "text": "Mostly, yes. They’re quite big and solid.",
+      "start": 161.04,
+      "end": 164.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "TIM",
+      "text": "My farm was up in the hills and they had a different breed of sheep, they were Cheviots.",
+      "start": 164.44,
+      "end": 170.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "DIANA",
+      "text": "Oh, I heard their wool’s really sought after.",
+      "start": 170.56,
+      "end": 173.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "TIM",
+      "text": "Yes. It’s very hardwearing and they use it for carpets.",
+      "start": 173.42,
+      "end": 176.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "DIANA",
+      "text": "Right.",
+      "start": 176.82,
+      "end": 177.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "TIM",
+      "text": "I was interested in the amount of supplements they add to animals’ feed nowadays. Like, even the chickens got extra vitamins and electrolytes in their feed.",
+      "start": 177.66,
+      "end": 187.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "DIANA",
+      "text": "Yes, I found that too. And they’re not cheap. But my farmer said some are overpriced for what they are. And he didn’t give them as a matter of routine, just at times when the chickens seemed to particularly require them. (Q24)",
+      "start": 187.22,
+      "end": 202.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "TIM",
+      "text": "Yes, mine said the same. He said certain breeds of chickens might need more supplements than the others, but the cheap and expensive ones are all basically the same.",
+      "start": 202.16,
+      "end": 212.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "DIANA",
+      "text": "Mm.",
+      "start": 212.2,
+      "end": 213.26
+    },
+    {
+      "id": "cue-22",
+      "speaker": "TIM",
+      "text": "So did your farm have any other livestock, Diana?",
+      "start": 213.26,
+      "end": 217.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "DIANA",
+      "text": "Yes, dairy cows. I made a really embarrassing mistake when I was working in the milk shed. Some cows had been treated with antibiotics, so their milk wasn’t suitable for human consumption, and it had to be put in a separate container. But I got mixed up, and I poured some milk from the wrong cow in with the milk for humans, so the whole lot had to be thrown away (Q25). The farmer wasn’t too happy with me.",
+      "start": 217.04,
+      "end": 247.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "TIM",
+      "text": "I asked my farmer how much he depended on the vet to deal with health problems. I’d read reports that the livestock’s health is being affected as farmers are under pressure to increase production. Well, he didn’t agree with that, but he said that actually some of the stuff the vets do, like minor operations, he’d be quite capable of doing himself. (Q26)",
+      "start": 247.58,
+      "end": 270.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "DIANA",
+      "text": "Yeah. My farmer said the same. But he reckons vets’ skills are still needed.",
+      "start": 270.02,
+      "end": 306.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "DIANA",
+      "text": "Now we’ve got to give a bit of feedback about last term’s modules – just short comments, apparently. Shall we do that now?",
+      "start": 306.38,
+      "end": 321.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "TIM",
+      "text": "OK. So medical terminology.",
+      "start": 321.92,
+      "end": 325.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "DIANA",
+      "text": "Well, my heart sank when I saw that, especially right at the beginning of the course. And I did struggle with it.",
+      "start": 325.06,
+      "end": 334.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "TIM",
+      "text": "I’d thought it’d be hard, but actually I found it all quite straightforward (Q27). What did you think about diet and nutrition?",
+      "start": 334.04,
+      "end": 342.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "DIANA",
+      "text": "OK, I suppose.",
+      "start": 342.18,
+      "end": 344,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "TIM",
+      "text": "Do you remember what they told us about pet food and the fact that there’s such limited checking into whether or not it’s contaminated? I mean in comparison with the checks on food for humans – I thought that was terrible. (Q28)",
+      "start": 344,
+      "end": 358,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "DIANA",
+      "text": "Mm. I think the module that really impressed me was the animal disease one, when we looked at domesticated animals in different parts of the world, like camels and water buffalo and alpaca. The economies of so many countries depend on these, but scientists don’t know much about the diseases that affect them. (Q29)",
+      "start": 358,
+      "end": 378.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "TIM",
+      "text": "Yes, I thought they’d know a lot about ways of controlling and eradicating those diseases, but that’s not the case at all.",
+      "start": 378.22,
+      "end": 385.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "TIM",
+      "text": "I loved the wildlife medication unit. Things like helping birds that have been caught in oil spills. That’s something I hadn’t thought about before.",
+      "start": 385.84,
+      "end": 395.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "DIANA",
+      "text": "Yeah, I thought I might write my dissertation on something connected with that. (Q30)",
+      "start": 395.22,
+      "end": 400.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "TIM",
+      "text": "Right. So …",
+      "start": 400.1,
+      "end": 443.245,
+      "preAudio": false
+    }
+  ]
+}

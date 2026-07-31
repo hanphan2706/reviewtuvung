@@ -19,7 +19,7 @@ import { sanitizeListeningTranscript } from "../lib/sanitize-listening-transcrip
 import { splitTranscriptByPart } from "../lib/listening/split-transcript-parts";
 import type { ListeningFlowLessonContent } from "../lib/listening/tactics-basic-flow-types";
 
-type ExamSlug = "cam18" | "cam20" | "cam21";
+type ExamSlug = "cam18" | "cam20" | "cam21" | "cam17";
 
 const WRONG_GIST = [
   {
@@ -48,8 +48,8 @@ function parseArgs(argv: string[]): { exam: ExamSlug; tests: number[] } {
     if (a === "--all-tests") allTests = true;
   }
 
-  if (!["cam18", "cam20", "cam21"].includes(exam)) {
-    throw new Error("--exam must be cam18, cam20 or cam21");
+  if (!["cam18", "cam20", "cam21", "cam17"].includes(exam)) {
+    throw new Error("--exam must be cam18, cam20, cam21 or cam17");
   }
 
   const tests = allTests ? [1, 2, 3, 4] : [test];
@@ -81,6 +81,74 @@ function siblingParts(exam: ExamSlug, test: number, part: number) {
     (p) => p.examSlug === exam && p.test === test && p.part !== part,
   );
 }
+
+/** VI labels for Cam 17 hub titles/summaries (generated flow). */
+const CAM17_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
+  "cam17-t1-p1": {
+    titleVi: "Nhóm bảo tồn Buckworth",
+    summaryVi: "Nhóm bảo tồn giới thiệu công việc bãi biển, khu bảo tồn và các sự kiện sắp tới.",
+  },
+  "cam17-t1-p2": {
+    titleVi: "Tour thuyền quanh Tasmania",
+    summaryVi: "Hướng dẫn viên mô tả tour thuyền Tasmania: sức chứa, hộp cơm, động vật và hang động.",
+  },
+  "cam17-t1-p3": {
+    titleVi: "Thực tập thú y",
+    summaryVi: "Sinh viên so sánh các kỳ thực tập thú y trên trang trại, từ động vật đến thức ăn bổ sung.",
+  },
+  "cam17-t1-p4": {
+    titleVi: "Mê cung labyrinth",
+    summaryVi: "Bài giảng phân biệt labyrinth với maze và khám phá lịch sử, biểu tượng, ứng dụng sức khỏe.",
+  },
+  "cam17-t2-p1": {
+    titleVi: "Tình nguyện làng Southoe",
+    summaryVi: "Cần tình nguyện viên cho thư viện làng, câu lạc bộ ăn trưa, việc vặt và sự kiện xã hội.",
+  },
+  "cam17-t2-p2": {
+    titleVi: "Dinh thự Oniton Hall",
+    summaryVi: "Tour dinh thự lịch sử: chủ nhân cũ, đời sống người hầu và hoạt động nông trại cho khách.",
+  },
+  "cam17-t2-p3": {
+    titleVi: "Đánh giá Romeo and Juliet",
+    summaryVi: "Sinh viên lên kế hoạch review kịch và so sánh ý kiến về sân khấu, diễn viên, lựa chọn sản xuất.",
+  },
+  "cam17-t2-p4": {
+    titleVi: "Tiếng Iceland và công nghệ số",
+    summaryVi: "Bài giảng về ảnh hưởng của truyền thông số và tiếng Anh tới người trẻ nói tiếng Iceland.",
+  },
+  "cam17-t3-p1": {
+    titleVi: "Lời khuyên nghỉ lướt sóng",
+    summaryVi: "Bạn bè gợi ý điểm lướt sóng ở Ireland, thời tiết, chi phí và đồ thuê.",
+  },
+  "cam17-t3-p2": {
+    titleVi: "Giữ trẻ ngoài giờ học",
+    summaryVi: "Quản lý giải thích chăm sóc trước/sau giờ học, học phí, quy tắc ăn và kỳ nghỉ.",
+  },
+  "cam17-t3-p3": {
+    titleVi: "Tutorial thực tập của Holly",
+    summaryVi: "Holly và tutor bàn về thực tập sân vận động: an toàn, khán giả và kỹ năng sự kiện.",
+  },
+  "cam17-t3-p4": {
+    titleVi: "Lý thuyết di cư chim",
+    summaryVi: "Bài giảng về các lý thuyết di cư cũ, bằng chứng đóng vòng và bản đồ di cư sớm.",
+  },
+  "cam17-t4-p1": {
+    titleVi: "Dịch vụ dọn nhà Easy Life",
+    summaryVi: "Công ty dọn nhà xác nhận gói dịch vụ, phụ phí, dị ứng và cách kiểm tra nhân viên.",
+  },
+  "cam17-t4-p2": {
+    titleVi: "Giữ chân nhân viên khách sạn",
+    summaryVi: "Bài nói về lý do nhân viên khách sạn nghỉ việc và cách các khách sạn giảm nghỉ việc.",
+  },
+  "cam17-t4-p3": {
+    titleVi: "Phát triển dụng cụ thể thao",
+    summaryVi: "Sinh viên bàn trải nghiệm thể thao ở Kenya và sự phát triển của dụng cụ thể thao.",
+  },
+  "cam17-t4-p4": {
+    titleVi: "Siro cây phong",
+    summaryVi: "Bài giảng về sản xuất siro phong từ phương pháp sớm đến ngành công nghiệp Canada hiện đại.",
+  },
+};
 
 /** VI labels for Cam 21 hub titles/summaries (generated flow). */
 const CAM21_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
@@ -246,7 +314,8 @@ function buildPartContent(
 
   const transcript = loadTranscriptPart(exam, test, part);
   const siblings = siblingParts(exam, test, part);
-  const vi = exam === "cam21" ? CAM21_FLOW_VI[partId] : undefined;
+  const flowVi = exam === "cam21" ? CAM21_FLOW_VI : exam === "cam17" ? CAM17_FLOW_VI : undefined;
+  const vi = flowVi?.[partId];
 
   const predictionOptions = [
     {
@@ -255,7 +324,7 @@ function buildPartContent(
       labelVi: vi?.titleVi ?? meta.title,
     },
     ...siblings.slice(0, 3).map((s, i) => {
-      const siblingVi = exam === "cam21" ? CAM21_FLOW_VI[s.id] : undefined;
+      const siblingVi = flowVi?.[s.id];
       return {
         key: `pred-${i + 1}`,
         labelEn: s.title,

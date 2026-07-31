@@ -1,6 +1,7 @@
 import { LISTENING_HUB_HREF } from "@/lib/listening/listening-hub-nav";
 import { cambridgeIeltsCatalogOrder } from "@/lib/exam/ielts-catalog-order";
 import {
+  CAMBRIDGE_IELTS_17_COVER_URL,
   CAMBRIDGE_IELTS_18_COVER_URL,
   CAMBRIDGE_IELTS_19_COVER_URL,
   CAMBRIDGE_IELTS_20_COVER_URL,
@@ -23,7 +24,11 @@ export type ListeningIeltsTestId =
   | "cam19-test1"
   | "cam19-test2"
   | "cam19-test3"
-  | "cam19-test4";
+  | "cam19-test4"
+  | "cam17-test1"
+  | "cam17-test2"
+  | "cam17-test3"
+  | "cam17-test4";
 
 export type ListeningIeltsTest = {
   testId: ListeningIeltsTestId;
@@ -169,6 +174,38 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     testNumber: 1,
     coverImageUrl: CAMBRIDGE_IELTS_18_COVER_URL,
     catalogOrder: cambridgeIeltsCatalogOrder(18, 1),
+  },
+  {
+    testId: "cam17-test4",
+    label: "Cambridge 17 · Test 4",
+    bookTitle: "Cambridge IELTS 17 Academic",
+    testNumber: 4,
+    coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
+    catalogOrder: cambridgeIeltsCatalogOrder(17, 4),
+  },
+  {
+    testId: "cam17-test3",
+    label: "Cambridge 17 · Test 3",
+    bookTitle: "Cambridge IELTS 17 Academic",
+    testNumber: 3,
+    coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
+    catalogOrder: cambridgeIeltsCatalogOrder(17, 3),
+  },
+  {
+    testId: "cam17-test2",
+    label: "Cambridge 17 · Test 2",
+    bookTitle: "Cambridge IELTS 17 Academic",
+    testNumber: 2,
+    coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
+    catalogOrder: cambridgeIeltsCatalogOrder(17, 2),
+  },
+  {
+    testId: "cam17-test1",
+    label: "Cambridge 17 · Test 1",
+    bookTitle: "Cambridge IELTS 17 Academic",
+    testNumber: 1,
+    coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
+    catalogOrder: cambridgeIeltsCatalogOrder(17, 1),
   },
 ] as const;
 

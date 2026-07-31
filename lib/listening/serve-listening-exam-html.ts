@@ -26,6 +26,7 @@ const PILOT_LABELS: Record<string, string> = {
   cam20: "Cambridge 20",
   cam19: "Cambridge 19",
   cam18: "Cambridge 18",
+  cam17: "Cambridge 17",
 };
 
 function pilotLabelForMeta(meta: ListeningPartMeta): string {

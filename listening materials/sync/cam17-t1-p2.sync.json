@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "partId": "cam17-t1-p2",
+  "audioFile": "cam17-test1-part2.mp3",
+  "durationSeconds": 412.491188,
+  "method": "whisper-local",
+  "preambleSeconds": 58.57,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "So, hello everyone.",
+      "start": 58.57,
+      "end": 60.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "My name’s Lou Miller and I’m going to be your tour guide today as we take this fantastic boat trip around the Tasmanian coast.",
+      "start": 60.57,
+      "end": 69.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Before we set off, I just want to tell you a few things about our journey.",
+      "start": 69.57,
+      "end": 75.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Our boats aren’t huge as you can see.",
+      "start": 75.01,
+      "end": 77.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "We already have three staff members on board and on top of that, we can transport a further fifteen people – that’s you – around the coastline.",
+      "start": 77.85,
+      "end": 89.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "But please note if there are more than nine people on either side of the boat, we’ll move some of you over (Q11), otherwise all eighteen of us will end up in the sea!",
+      "start": 89.15,
+      "end": 100.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "We’ve recently upgraded all our boats.",
+      "start": 100.71,
+      "end": 103.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "They used to be jet black, but our new ones now have these comfortable dark red seats and a light-green exterior (Q12) in order to stand out from others and help promote our company.",
+      "start": 103.49,
+      "end": 116.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "This gives our boats a rather unique appearance, don’t you think?",
+      "start": 116.37,
+      "end": 121.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "We offer you a free lunchbox during the trip and we have three types.",
+      "start": 121.07,
+      "end": 126.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Lunchbox 1 contains ham and tomato sandwiches.",
+      "start": 126.39,
+      "end": 131.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Lunchbox 2 contains a cheddar cheese roll (Q13) and Lunchbox 3 is salad-based and also contains eggs and tuna.",
+      "start": 131.01,
+      "end": 141.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "All three lunchboxes also have a packet of crisps and chocolate bar inside.",
+      "start": 141.07,
+      "end": 146.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Please let staff know which lunchbox you prefer.",
+      "start": 146.95,
+      "end": 151.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "I’m sure I don’t have to ask you not to throw anything into the sea.",
+      "start": 151.33,
+      "end": 156.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "We don’t have any bins to put litter in, but Jess, myself or Ray, our other guide, will collect it from you (Q14) after lunch and put it all in a large plastic sack.",
+      "start": 156.71,
+      "end": 215.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "The engine on the boat makes quite a lot of noise so before we head off, let me tell you a few things about what you’re going to see.",
+      "start": 215.06,
+      "end": 224.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "This area is famous for its ancient lighthouse, which you’ll see from the boat as we turn past the first little island.",
+      "start": 224.92,
+      "end": 232.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "It was built in 1838 to protect sailors as a number of shipwrecks had led to significant loss of life (Q15/16).",
+      "start": 232.4,
+      "end": 240.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "The construction itself was complicated as some of the original drawings kept by the local council show.",
+      "start": 240.58,
+      "end": 248.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "It sits right on top of the cliffs in a very isolated spot.",
+      "start": 248.8,
+      "end": 254.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "In the nineteenth century there were many jobs there, such as polishing the brass lamps, chopping firewood and cleaning windows, that kept lighthouse keepers busy.",
+      "start": 254.16,
+      "end": 266.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "These workers were mainly prison convicts until the middle of that century when ordinary families willing to live in such circumstances took over.",
+      "start": 266.9,
+      "end": 276.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "(Q15/16)",
+      "start": 276.82,
+      "end": 278.06
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Some of you have asked me what creatures we can expect to see.",
+      "start": 278.06,
+      "end": 282.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "I know everyone loves the penguins, but they’re very shy and, unfortunately, tend to hide from passing boats, but you might see birds in the distance, such as sea eagles, flying around the cliff edges where they nest.",
+      "start": 282.48,
+      "end": 299.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "When we get to the rocky area inhabited by fur seals, we’ll stop and watch them swimming around the coast.",
+      "start": 299.6,
+      "end": 308.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "They’re inquisitive creatures so don’t be surprised if one pops up right in front of you (Q17/18).",
+      "start": 308.06,
+      "end": 314.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Their predators, orca whales, hunt along the coastline too, but spotting one of these is rare.",
+      "start": 314.46,
+      "end": 322.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Dolphins, on the other hand, can sometimes approach on their own or in groups as they ride the waves beside us.",
+      "start": 322.56,
+      "end": 329.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "(Q17/18)",
+      "start": 329.84,
+      "end": 331.38
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Lastly, I want to mention the caves.",
+      "start": 331.38,
+      "end": 334.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Tasmania is famous for its caves and the ones we’ll pass by are so amazing that people are lost for words when they see them.",
+      "start": 334.54,
+      "end": 343.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "They can only be approached by sea (Q19/20), but if you feel that you want to see more than we’re able to show you, then you can take a kayak into the area on another day and one of our staff will give you more information on that.",
+      "start": 343.64,
+      "end": 358.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "What we’ll do is to go through a narrow channel, past some incredible rock formations and from there we’ll be able to see the openings to the caves, and at that point we’ll talk to you about what lies beyond.",
+      "start": 358.82,
+      "end": 382.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "(Q19/20)",
+      "start": 382.53,
+      "end": 412.491,
+      "preAudio": false
+    }
+  ]
+}

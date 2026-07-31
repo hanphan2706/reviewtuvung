@@ -1,0 +1,410 @@
+{
+  "version": 1,
+  "partId": "cam17-t4-p3",
+  "audioFile": "cam17-test4-part3.mp3",
+  "durationSeconds": 410.666813,
+  "method": "whisper-local",
+  "preambleSeconds": 45.54,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "JEANNE",
+      "text": "Hi Thomas, how are you enjoying the course so far?",
+      "start": 40.075,
+      "end": 45.54,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "THOMAS",
+      "text": "Yeah, I think it’s good.",
+      "start": 45.54,
+      "end": 47.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "JEANNE",
+      "text": "Remind me – why did you decide to study sports science? Didn’t you want to be a professional athlete when you were at school?",
+      "start": 47.32,
+      "end": 55.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "THOMAS",
+      "text": "Yeah – that was my goal, and all my classmates assumed I would achieve it; they thought I was brilliant. (Q21/22)",
+      "start": 55.48,
+      "end": 62.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "JEANNE",
+      "text": "That must have been a nice feeling.",
+      "start": 62.62,
+      "end": 65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "THOMAS",
+      "text": "Mm, I thought I could win anything. There was no one who could run faster than me.",
+      "start": 65,
+      "end": 69.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "JEANNE",
+      "text": "Exactly – so what happened? Did your mum and dad want you to be more ‘academic’?",
+      "start": 69.78,
+      "end": 74.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "THOMAS",
+      "text": "Not at all. Perhaps they should have pushed me harder, though. (Q21/22)",
+      "start": 74.1,
+      "end": 78.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "JEANNE",
+      "text": "What do you mean?",
+      "start": 78.26,
+      "end": 79.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "THOMAS",
+      "text": "I think I should have practised more.",
+      "start": 79.62,
+      "end": 82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "JEANNE",
+      "text": "What makes you say that?",
+      "start": 82,
+      "end": 83.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "THOMAS",
+      "text": "Well, I went out to Kenya for a couple of weeks to train …",
+      "start": 83.7,
+      "end": 88.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "JEANNE",
+      "text": "Really! I didn’t know that.",
+      "start": 88.36,
+      "end": 89.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "THOMAS",
+      "text": "I was chosen to go there out of loads of kids and run with some of the top teenage athletes in the world. And … I was so calm about it. I just kept thinking how fortunate I was. What a great chance this was (Q23/24)! Everyone back home was so proud of me. But once we started competing, I very quickly realised I wasn’t good enough.",
+      "start": 89.94,
+      "end": 113.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "JEANNE",
+      "text": "That must have been a huge shock.",
+      "start": 113.18,
+      "end": 115.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "THOMAS",
+      "text": "I thought ‘this can’t be happening’ (Q23/24)! I was used to winning.",
+      "start": 115.66,
+      "end": 119.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "JEANNE",
+      "text": "I’m sorry to hear that.",
+      "start": 119.74,
+      "end": 121.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "THOMAS",
+      "text": "It’s OK. I’m over it now and I think it’s much better to do a university course and this one has such a variety of sports-related areas. It’s going to be good.",
+      "start": 121.44,
+      "end": 132.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "JEANNE",
+      "text": "Oh, I agree – I chose it because of that.",
+      "start": 132.32,
+      "end": 183.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "THOMAS",
+      "text": "So Jeanne – have you thought of any ideas for the discussion session next week on technology and sport?",
+      "start": 183.28,
+      "end": 189.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "JEANNE",
+      "text": "We have to cover more than one sport, don’t we?",
+      "start": 189.74,
+      "end": 193.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "THOMAS",
+      "text": "Yeah.",
+      "start": 193.14,
+      "end": 193.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "JEANNE",
+      "text": "You know – we always think technology is about the future, but we could gather some ideas about past developments in sport.",
+      "start": 193.59,
+      "end": 202.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "THOMAS",
+      "text": "Look at early types of equipment perhaps? Uh, I remember reading something about table tennis bats once – how they ended up being covered with pimpled rubber.",
+      "start": 202.06,
+      "end": 213.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "JEANNE",
+      "text": "Cos they were just wooden at first, I’d imagine.",
+      "start": 213.14,
+      "end": 216.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "THOMAS",
+      "text": "Yeah. In about the 1920s, a factory was making rolls of the rubber in bulk (Q25) for something like horse harnesses.",
+      "start": 216.2,
+      "end": 224.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "JEANNE",
+      "text": "Really!",
+      "start": 224.2,
+      "end": 225.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "THOMAS",
+      "text": "Yeah – and someone realised that it’d make a perfect covering for the wooden bats.",
+      "start": 225.3,
+      "end": 230.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "JEANNE",
+      "text": "So what about cricket – that’s had a few innovative changes. Maybe the pads they were on their legs?",
+      "start": 230.4,
+      "end": 238.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "THOMAS",
+      "text": "I don’t think they’ve changed much but, I’m just looking on the internet … and it says that when the first cricket helmet came in, in 1978, the Australian batsman who first wore it was booed and jeered by people (Q26) watching because it was so ugly!",
+      "start": 238.66,
+      "end": 255.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "JEANNE",
+      "text": "Wow, players have to protect themselves from getting hurt! I mean everyone wears one now.",
+      "start": 255.22,
+      "end": 262.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "THOMAS",
+      "text": "Mm, unlike the cycle helmet.",
+      "start": 262.84,
+      "end": 265.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "JEANNE",
+      "text": "Well, unless you’re a professional, but you’re right, many ordinary bikers don’t wear a helmet.",
+      "start": 265.4,
+      "end": 272.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "THOMAS",
+      "text": "Hey, look at these pictures of original helmet designs. This one looks like an upside-down bowl!",
+      "start": 272.56,
+      "end": 279.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "JEANNE",
+      "text": "Yet, the woman’s laughing – she’s so proud to be wearing it!",
+      "start": 279.42,
+      "end": 284.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "THOMAS",
+      "text": "It says serious cyclists ended up with wet hair (Q27) from all the hard exercise.",
+      "start": 284.9,
+      "end": 290.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "JEANNE",
+      "text": "I guess that’s why they have large air vents in them now so that the skin can breathe more easily.",
+      "start": 290.2,
+      "end": 297,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "THOMAS",
+      "text": "OK, so we’ve done helmets. What about golf balls or better still golf clubs – they’ve changed a lot.",
+      "start": 297,
+      "end": 305.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "JEANNE",
+      "text": "Yeah – I remember my great grandfather telling me that because a club was made entirely of wood, it would easily break and players had to get another. (Q28)",
+      "start": 305.66,
+      "end": 315.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "THOMAS",
+      "text": "There’s no wood at all in them now, is there?",
+      "start": 315.74,
+      "end": 319.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "JEANNE",
+      "text": "No – they’re much more powerful.",
+      "start": 319.14,
+      "end": 321.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "THOMAS",
+      "text": "The same must be true of hockey sticks.",
+      "start": 321.18,
+      "end": 323.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "JEANNE",
+      "text": "I don’t think so because players still use wooden sticks today. What it does say here, though, is that when the game started you had to produce a stick yourself. (Q29)",
+      "start": 323.9,
+      "end": 336.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": "THOMAS",
+      "text": "I guess they just weren’t being manufactured. So, one more perhaps. What about football?",
+      "start": 336.58,
+      "end": 344.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": "JEANNE",
+      "text": "Well, I know the first balls were made of animal skin.",
+      "start": 344.32,
+      "end": 348.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": "THOMAS",
+      "text": "Yeah, they covered them with pieces of leather that were stitched together, but … the balls let in water when it rained.",
+      "start": 348.48,
+      "end": 356.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": "JEANNE",
+      "text": "Oh, that would have made them much heavier.",
+      "start": 356.56,
+      "end": 359.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": "THOMAS",
+      "text": "That’s right. You can imagine the damage to player’s necks when the ball was headed. (Q30)",
+      "start": 359.38,
+      "end": 364.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": "JEANNE",
+      "text": "How painful that must have been!",
+      "start": 364.82,
+      "end": 366.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": "THOMAS",
+      "text": "Yeah, well, I think we can put together some useful ideas …",
+      "start": 366.96,
+      "end": 410.667,
+      "preAudio": false
+    }
+  ]
+}

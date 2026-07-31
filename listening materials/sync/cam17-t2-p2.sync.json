@@ -1,0 +1,242 @@
+{
+  "version": 1,
+  "partId": "cam17-t2-p2",
+  "audioFile": "cam17-test2-part2.mp3",
+  "durationSeconds": 444.078938,
+  "method": "whisper-local",
+  "preambleSeconds": 58.07,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Good morning, and welcome to Oniton Hall, one of the largest estates in the area.",
+      "start": 51.102,
+      "end": 58.07,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "My name’s Nick, and I’m one of the guides.",
+      "start": 58.07,
+      "end": 61.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "I’ll give you a brief introduction to the estate while you’re sitting down, and then we’ll walk round.",
+      "start": 61.25,
+      "end": 68.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "The estate consists of the house, gardens, parkland and farm, and it dates back to the fourteenth century.",
+      "start": 68.87,
+      "end": 78.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "The original house was replaced in the late seventeenth century, and of course it has had a large number of owners.",
+      "start": 78.09,
+      "end": 87.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Almost all of them have left their mark, generally by adding new rooms, like the ballroom and conservatory, or by demolishing others (Q11).",
+      "start": 87.23,
+      "end": 99.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "The farm looks much as it’s always done, although the current owner has done a great deal of work to the flower beds.",
+      "start": 99.65,
+      "end": 109.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "In the seventeenth century, the estate was owned by a very wealthy man called Sir Edward Downes.",
+      "start": 109.01,
+      "end": 117.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "His intention was to escape from the world of politics, after years as an active politician, and to build a new house worthy of his big collection of books, paintings and sculptures.",
+      "start": 117.64,
+      "end": 132.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "He broke off contact with his former political allies, and hosted meeting of creative and literary people, like painters and poets (Q12).",
+      "start": 132.69,
+      "end": 145.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Unusually for his time, he didn’t care whether his guests were rich or poor, as long as they had talent.",
+      "start": 145.67,
+      "end": 155.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Big houses like Oniton had dozens of servants until the 1920s or 30s, and we’ve tried to show what their working lives were like.",
+      "start": 155.71,
+      "end": 168.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Photographs of course don’t give much of an idea, so instead, as you go round the house, you’ll see volunteers dressed up as nineteenth-century servants (Q13), going about their work.",
+      "start": 168.73,
+      "end": 183.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "They’ll explain what they’re doing, and tell you their recipes, or what tools they’re using.",
+      "start": 183.79,
+      "end": 191.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "We’ve just introduced this feature to replace the audio guide we used to have available.",
+      "start": 191.81,
+      "end": 199.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "I see there are a number of children here with you today.",
+      "start": 199.71,
+      "end": 204.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Well, we have several activities specially for children, like dressing up in the sorts of clothes that children wore in the past, and as it’s a fine day, some of you will probably want to play in the adventure playground.",
+      "start": 204.13,
+      "end": 222.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Our latest addition is child-sized tractors (Q14), that you can drive around the grounds.",
+      "start": 222.43,
+      "end": 272.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "We’ll also be going into the farm that’s part of the estate, where there’s plenty to do. Most of the buildings date from the eighteenth century, so you can really step back into an agricultural past.",
+      "start": 272.71,
+      "end": 295.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Until recently, the dairy was where milk from the cows was turned into cheese. It’s now the place to go for lunch, or afternoon tea, or just a cup of coffee and a slice of homemade cake. (Q15)",
+      "start": 295.04,
+      "end": 311.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "The big stone building that dominates the farm is the large barn, and in here is our collection of agricultural tools (Q16).",
+      "start": 311.24,
+      "end": 321.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "These were used in the past to plough the earth, sow seeds, make gates, and much more.",
+      "start": 321.9,
+      "end": 330.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "There’s a small barn, also made of stone, where you can groom the donkeys and horses, to keep their coats clean (Q17). They really seem to enjoy having it done, and children love grooming them.",
+      "start": 330.28,
+      "end": 345.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "The horses no longer live in the stables, which instead is the place to go to buy gifts, books, our own jams and pickles, and clothes and blankets (Q18) made of wool from our sheep.",
+      "start": 345.68,
+      "end": 361.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Outside the shed, which is the only brick building, you can climb into a horse-drawn carriage for a lovely, relaxing tour (Q19) of the park and farm. The carriages are well over a hundred years old.",
+      "start": 361.28,
+      "end": 377.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "And finally, the parkland, which was laid out in the eighteenth century, with a lake and trees that are now well established.",
+      "start": 377.52,
+      "end": 387.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "You’ll see types of cattle and sheep that are hardly ever found on farms these days (Q20).",
+      "start": 387.78,
+      "end": 393.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "We’re helping to preserve them, to stop their numbers falling further.",
+      "start": 393.98,
+      "end": 399.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "OK, well if you’d like to come with me …",
+      "start": 399.6,
+      "end": 444.079,
+      "preAudio": false
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "version": 1,
+  "partId": "cam17-t4-p4",
+  "audioFile": "cam17-test4-part4.mp3",
+  "durationSeconds": 514.708313,
+  "method": "whisper-local",
+  "preambleSeconds": 88.43,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Hello everyone.",
+      "start": 77.818,
+      "end": 78.783,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Today we’re going to look at another natural food product and that’s maple syrup.",
+      "start": 78.783,
+      "end": 86.501,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "What is this exactly?",
+      "start": 86.501,
+      "end": 88.43,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Well, maple syrup looks rather like clear honey, but it’s not made by bees; it’s produced from the plant fluid – or sap – inside the maple tree and that makes maple syrup a very natural product.",
+      "start": 88.43,
+      "end": 101.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Maple syrup is a thick, golden (Q31), sweet-tasting liquid that can be bought in bottles or jars and poured onto food such as waffles and ice cream or used in the baking of cakes and pastries.",
+      "start": 101.01,
+      "end": 114.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "It contains no preservatives or added ingredients, and it provides a healthy alternative to refined sugar.",
+      "start": 114.35,
+      "end": 122.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "(Q32)",
+      "start": 122.29,
+      "end": 123.29
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Let’s just talk a bit about the maple tree itself, which is where maple syrup comes from.",
+      "start": 123.29,
+      "end": 130.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "So, there are many species of maple tree, and they’ll grow without fertilizer in areas where there’s plenty of moisture in the soil.",
+      "start": 130.41,
+      "end": 140.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "However, they’ll only do this if another important criterion is fulfilled, which is that they must have full or partial sun exposure during the day and very cool nights – and I’ll talk more about that in a minute.",
+      "start": 140.83,
+      "end": 157.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "There are only certain parts of the world that provide all these conditions: one is Canada, and by that, I mean all parts of Canada, and the other is the north-eastern states of North America.",
+      "start": 157.49,
+      "end": 172.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "In these areas, the climate suits the trees perfectly (Q33).",
+      "start": 172.87,
+      "end": 178.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "In fact, Canada produces over two-thirds of the world’s maple syrup, which is why the five-pointed maple leaf is a Canadian symbol and has features on the flag since 1964.",
+      "start": 178.23,
+      "end": 192.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "So how did maple syrup production begin?",
+      "start": 192.89,
+      "end": 197.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Well, long before Europeans settled in these parts of the world, the indigenous communities had started producing maple sugar.",
+      "start": 197.03,
+      "end": 206.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "They bored holes in the trunks of maple trees and used containers made of tree bark to collect the liquid sap as it poured out.",
+      "start": 206.47,
+      "end": 216.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "As they were unable to keep the liquid for any length of time – they didn’t have storage facilities in those days – they boiled the liquid by placing pieces of rock that had become scorching hot from the sun into the sap (Q34).",
+      "start": 216.65,
+      "end": 232.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "They did this until it turned into sugar, and they were then able to use this to sweeten their food and drinks.",
+      "start": 232.67,
+      "end": 241.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Since that time, improvements have been made to the process, but it has changed very little overall.",
+      "start": 241.77,
+      "end": 254.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "So let’s look at the production of maple syrup today.",
+      "start": 254.12,
+      "end": 258.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Clearly, the maple forests are a valuable resource in many Canadian and North American communities.",
+      "start": 258.8,
+      "end": 266.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "The trees have to be well looked after and they cannot be used to make syrup until the trunks reach a diameter of around 25 centimetres.",
+      "start": 266.22,
+      "end": 276.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "This can take anything up to 40 years (Q35).",
+      "start": 276.94,
+      "end": 280.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "As I’ve already mentioned, maple trees need the right conditions to grow and also to produce sap.",
+      "start": 280.88,
+      "end": 288.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Why is this?",
+      "start": 288.56,
+      "end": 290.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Well, what happens is that during a cold night, the tree absorbs water from the soil, and that rises through the tree’s vascular system.",
+      "start": 290.46,
+      "end": 301.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "But then in the warmer daytime, the change in temperature causes the water to be pushed back down to the bottom of the tree.",
+      "start": 301.24,
+      "end": 309.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "This continual movement – up and down – leads to the formation of the sap needed for maple syrup production.",
+      "start": 309.9,
+      "end": 319.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "When the tree is ready, it can be tapped and this involves drilling a small hole into the trunk and inserting a tube into it that ends in a bucket (Q36).",
+      "start": 319.72,
+      "end": 331.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "The trees can often take several taps, though the workers take care not to cause any damage to the healthy growth of the tree itself.",
+      "start": 331.86,
+      "end": 342.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "The sap that comes out of the trees consists of 98 percent water and 2 percent sugar and other nutrients.",
+      "start": 342.43,
+      "end": 350.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "It has to be boiled so that much of that water evaporates, and this process has to take place immediately, using what are called evaporators.",
+      "start": 350.9,
+      "end": 362.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "These are basically extremely large pans – the sap is poured into these, a fire is built and the pans are then heated until the sap boils (Q37).",
+      "start": 362.02,
+      "end": 374.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "As it does this, the water evaporates, and the syrup begins to form.",
+      "start": 374.92,
+      "end": 381.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "The evaporation process creates large quantities of steam (Q38), and the sap becomes thicker and denser, and, at just the right moment, when the sap is thick enough to be called maple syrup, the worker removes it from the heat.",
+      "start": 381.12,
+      "end": 397.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "After this process, something called ‘sugar sand’ has to be filtered out as this builds up during the boiling and gives the syrup a cloudy appearance (Q39) and a slightly gritty taste.",
+      "start": 397.62,
+      "end": 410.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Once this has been done, the syrup is ready to be packaged so that it can be used for a whole variety of products.",
+      "start": 410.76,
+      "end": 418.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "It takes 40 litres of sap to produce one litre of maple syrup (Q40) so you can get an idea of how much is needed!",
+      "start": 418.92,
+      "end": 429.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "So that’s the basic process. In places like Quebec where …",
+      "start": 429.66,
+      "end": 514.708,
+      "preAudio": false
+    }
+  ]
+}

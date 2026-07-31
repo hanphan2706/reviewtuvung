@@ -1,0 +1,295 @@
+{
+  "version": 1,
+  "partId": "cam17-t3-p1",
+  "audioFile": "cam17-test3-part1.mp3",
+  "durationSeconds": 414.367688,
+  "method": "whisper-local",
+  "preambleSeconds": 115.17,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "WOMAN",
+      "text": "Jack, I’m thinking of taking the kids to the seaside on a surfing holiday this summer and I wanted to ask your advice – as I know you’re such an expert.",
+      "start": 115.17,
+      "end": 129.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "JACK",
+      "text": "Well, I don’t know about that, but yes, I’ve done a bit of surfing over the years. I’d thoroughly recommend it. I think it’s the kind of holiday all the family can enjoy together (Q1). The thing about surfing is that it’s great for all ages and all abilities. My youngest started when he was only three!",
+      "start": 129.15,
+      "end": 149.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "WOMAN",
+      "text": "Wow! But it’s quite physically demanding, isn’t it? I’ve heard you need to be pretty fit. (Q2)",
+      "start": 149.33,
+      "end": 155.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "JACK",
+      "text": "Yes. You’ll certainly learn more quickly and won’t tire as easily.",
+      "start": 155.11,
+      "end": 159.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "WOMAN",
+      "text": "Well – that should be OK for us. You’ve been surfing a few times in Ireland, haven’t you?",
+      "start": 159.29,
+      "end": 165.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "JACK",
+      "text": "Yes. There’s some great surfing there, which people don’t always realise.",
+      "start": 165.41,
+      "end": 169.15
+    },
+    {
+      "id": "cue-7",
+      "speaker": "WOMAN",
+      "text": "And which locations would you recommend? – there seem to be quite a few.",
+      "start": 169.15,
+      "end": 173.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "JACK",
+      "text": "Yes, there are loads. Last year we went to County Donegal. There are several great places to surf there.",
+      "start": 173.91,
+      "end": 180.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "WOMAN",
+      "text": "What about in County Clare? I read that’s also really good for surfing.",
+      "start": 180.01,
+      "end": 181.71
+    },
+    {
+      "id": "cue-10",
+      "speaker": "JACK",
+      "text": "Yes, it is. I’ve been there a few times. Most people go to Lahinch. My kids love it there. The waves aren’t too challenging and the town is very lively.",
+      "start": 181.71,
+      "end": 189.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "WOMAN",
+      "text": "Are there good hotels there? (Q3)",
+      "start": 189.51,
+      "end": 190.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "JACK",
+      "text": "Yes – some very nice ones and there are also a few basic hostels and campsites. It’s great if you need lessons as the surf schools are excellent.",
+      "start": 190.27,
+      "end": 199.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "WOMAN",
+      "text": "Sounds good.",
+      "start": 199.79,
+      "end": 203.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "JACK",
+      "text": "Yes and there’s lots to see in the area – like those well-known cliffs – … I’ve forgotten the name of them …",
+      "start": 203.91,
+      "end": 211.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "WOMAN",
+      "text": "Oh don’t worry – I can look them up.",
+      "start": 211.73,
+      "end": 214.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "JACK",
+      "text": "I’ve also been surfing in County Mayo, which is less well-known for surfing, but we had a really good time. That was a few years ago when the kids were younger. There’s a good surf school at Carrowniskey beach. (Q4)",
+      "start": 214.79,
+      "end": 223.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "WOMAN",
+      "text": "How do you spell that?",
+      "start": 223.63,
+      "end": 225.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "JACK",
+      "text": "C-A-double R-O-W-N-I-S-K-E-Y",
+      "start": 225.33,
+      "end": 226.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "WOMAN",
+      "text": "OK.",
+      "start": 226.01,
+      "end": 226.46
+    },
+    {
+      "id": "cue-20",
+      "speaker": "JACK",
+      "text": "I put the kids into the surf camp they run during the summer for 10-16 year olds.",
+      "start": 226.46,
+      "end": 231.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "WOMAN",
+      "text": "Oh right. How long was that for?",
+      "start": 231.36,
+      "end": 233.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "JACK",
+      "text": "Three hours every day for a week (Q5). It was perfect – they were so tired out after that.",
+      "start": 233.67,
+      "end": 240.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "WOMAN",
+      "text": "I can imagine.",
+      "start": 240.15,
+      "end": 241.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "JACK",
+      "text": "One thing we did while the kids were surfing was to rent some kayaks to have a look around the bay which is nearby (Q6). It’s really beautiful.",
+      "start": 241.87,
+      "end": 251.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "WOMAN",
+      "text": "Oh, I’d love to do that.",
+      "start": 251.39,
+      "end": 289.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "WOMAN",
+      "text": "Now the only time I went to Ireland it rained practically every day.",
+      "start": 289.14,
+      "end": 294.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "JACK",
+      "text": "Mmm yes – that can be a problem – but you can surf in the rain, you know.",
+      "start": 294.48,
+      "end": 300.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "WOMAN",
+      "text": "It doesn’t have the same appeal, somehow.",
+      "start": 300.6,
+      "end": 302.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "JACK",
+      "text": "Well, the weather’s been fine the last couple of years when I’ve been there, but actually, it tends to rain more in August than in the spring or autumn. September’s my favourite month because the water is warmer then. (Q7)",
+      "start": 302.98,
+      "end": 316.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "WOMAN",
+      "text": "The only problem is that the kids are back to school then.",
+      "start": 316.58,
+      "end": 320.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "JACK",
+      "text": "I know. But one good thing about Irish summers is that it doesn’t get too hot. The average temperature is about 19 degrees (Q8) and it usually doesn’t go above 25 degrees.",
+      "start": 320.44,
+      "end": 333.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "WOMAN",
+      "text": "That sounds alright. Now what about costs?",
+      "start": 333.68,
+      "end": 337.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "JACK",
+      "text": "Surfing is a pretty cheap holiday really – the only cost is the hire of equipment. You can expect to pay a daily rate of about 30 euros for the hire of a wetsuit and board (Q9) – but you can save about 40 euros if you hire by the week.",
+      "start": 337.68,
+      "end": 355.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "WOMAN",
+      "text": "That’s not too bad.",
+      "start": 355.16,
+      "end": 356.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "JACK",
+      "text": "No. It’s important to make sure you get good quality wetsuits – you’ll all get too cold if you don’t. And make sure you also get boots. They keep your feet warm and it’s easier to surf with them on too. (Q10)",
+      "start": 356.52,
+      "end": 371.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "WOMAN",
+      "text": "OK. Well, thanks very much …",
+      "start": 371.56,
+      "end": 414.368,
+      "preAudio": false
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "version": 1,
+  "partId": "cam17-t2-p4",
+  "audioFile": "cam17-test2-part4.mp3",
+  "durationSeconds": 433.393313,
+  "method": "whisper-local",
+  "preambleSeconds": 88.01,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Right, everyone, let’s make a start.",
+      "start": 77.449,
+      "end": 88.01,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Over the past few sessions, we’ve been considering the reasons why some world languages are in decline, and today I’m going to introduce another factor that affects languages, and the speakers of those languages, and that’s technology and, in particular, digital technology.",
+      "start": 88.01,
+      "end": 102.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "In order to illustrate its effect, I’m going to focus on the Icelandic language, which is spoken by around 321,000 people (Q31), most of whom live in Iceland – an island in the North Atlantic Ocean.",
+      "start": 102.01,
+      "end": 114.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "The problem for this language is not the number of speakers – even though this number is small.",
+      "start": 114.25,
+      "end": 120.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Nor is it about losing words to other languages, such as English.",
+      "start": 120.37,
+      "end": 121.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "In fact, the vocabulary of Icelandic is continually increasing (Q32) because when speakers need a new word for something, they tend to create one, rather than borrowing from another language.",
+      "start": 121.59,
+      "end": 133.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "All this makes Icelandic quite a special language – it’s changed very little in the past millennium, yet it can handle twenty-first-century concepts related to the use of computers and digital technology.",
+      "start": 133.93,
+      "end": 147.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Take, for example, the word for web browser … this is vafri in Icelandic, which comes from the verb ‘to wander’.",
+      "start": 147.25,
+      "end": 155.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "I can’t think of a more appropriate term because that’s exactly what you do mentally when you browse the internet.",
+      "start": 155.59,
+      "end": 162.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Then there’s an Icelandic word for podcast – which is too hard to pronounce (Q33)!",
+      "start": 162.39,
+      "end": 167.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "And so on.",
+      "start": 167.49,
+      "end": 169.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Icelandic, then, is alive and growing, but – and it’s a big but – young Icelanders spend a great deal of time in the digital world and this world is predominantly English.",
+      "start": 169.07,
+      "end": 179.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Think about smartphones.",
+      "start": 179.95,
+      "end": 182.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "They didn’t even exist until comparatively recently, but today young people use them all the time (Q34) to read books, watch TV or films, play games, listen to music, and so on.",
+      "start": 182.49,
+      "end": 195.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Obviously, this is a good thing in many respects because it promotes their bilingual skills, but the extent of the influence of English in the virtual world is staggering and it’s all happening really fast.",
+      "start": 195.41,
+      "end": 207.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "(Q35)",
+      "start": 207.49,
+      "end": 208.49
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "For their parents and grandparents, the change is less concerning because they already have their native-speaker skills in Icelandic.",
+      "start": 208.49,
+      "end": 215.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "But for young speakers – well, the outcome is a little troubling.",
+      "start": 215.83,
+      "end": 221.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "For example, teachers have found that playground conversations in Icelandic secondary schools can be conducted entirely in English (Q36), while teachers of much younger children have reported situations where their classes find it easier to say what is in a picture using English, rather than Icelandic (Q37).",
+      "start": 221.07,
+      "end": 239.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "The very real and worrying consequence of all this is that the young generation in Iceland is at risk of losing its mother tongue.",
+      "start": 239.19,
+      "end": 252.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Of course, this is happening to other European languages too, but while internet companies might be willing to offer, say, French options in their systems, it’s much harder for them to justify the expense of doing the same for a language that has a population the size of a French town, such as Nice.",
+      "start": 252.13,
+      "end": 270.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "The other drawback of Icelandic is the grammar, which is significantly more complex than in most languages.",
+      "start": 270.63,
+      "end": 277.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "At the moment, the tech giants are simply not interested in tackling this.",
+      "start": 277.81,
+      "end": 282.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "(Q38)",
+      "start": 282.39,
+      "end": 283.05
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "So, what is the Icelandic government doing about this?",
+      "start": 283.05,
+      "end": 287.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Well, large sums of money are being allocated to a language technology fund that it is hoped will lead to the development of Icelandic sourced apps and other social media and digital systems, but clearly this is going to be an uphill struggle.",
+      "start": 287.71,
+      "end": 302.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "On the positive side, they know that Icelandic is still the official language of education and government.",
+      "start": 302.9,
+      "end": 309.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "It has survived for well over a thousand years and the experts predict that its future in this nation state is sound and will continue to be so.",
+      "start": 309.47,
+      "end": 319.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "However, there’s no doubt that it’s becoming an inevitable second choice in young people’s lives.",
+      "start": 319.71,
+      "end": 326.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "This raises important questions.",
+      "start": 326.01,
+      "end": 329.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "When you consider how much of the past is tied up in a language, will young Icelanders lose their sense of their own identity (Q39)?",
+      "start": 329.19,
+      "end": 337.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Another issue that concerns the government of Iceland is this.",
+      "start": 337.69,
+      "end": 341.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "If children are learning two languages through different routes, neither of which they are fully fluent in, will they be able to express themselves properly?",
+      "start": 341.09,
+      "end": 349.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "(Q40)",
+      "start": 349.89,
+      "end": 433.393
+    }
+  ]
+}

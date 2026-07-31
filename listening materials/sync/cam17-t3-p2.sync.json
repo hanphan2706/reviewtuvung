@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "partId": "cam17-t3-p2",
+  "audioFile": "cam17-test3-part2.mp3",
+  "durationSeconds": 449.343563,
+  "method": "whisper-local",
+  "preambleSeconds": 60.37,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Good afternoon.",
+      "start": 60.37,
+      "end": 61.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "My name’s Mrs Carter and I run the before and after school extended hours childcare service.",
+      "start": 61.89,
+      "end": 68.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "I hope you’ve had a chance to have a good look around the school and talk to staff and pupils.",
+      "start": 68.75,
+      "end": 75.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "I know that many of you are interested in using our childcare service when your child joins the school, and perhaps you already know something about it, but for those that don’t, I’ll go through the main details now.",
+      "start": 75.55,
+      "end": 88.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "We offer childcare for children from the ages of four to eleven both before and after school.",
+      "start": 88.81,
+      "end": 96.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "I know that many parents who work find this service invaluable.",
+      "start": 96.41,
+      "end": 101.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "You can leave your child with us safe in the knowledge that they will be extremely well cared for.",
+      "start": 101.27,
+      "end": 107.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "We are insured to provide care for up to 70 children (Q11/12), although we rarely have this many attending at any one session.",
+      "start": 107.87,
+      "end": 116.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "I think we generally expect around 50-60 children for the afternoon sessions and about half that number for the breakfast sessions (Q11/12).",
+      "start": 116.99,
+      "end": 127.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Although we currently do have 70 children registered with us, not all of these attend every day.",
+      "start": 127.09,
+      "end": 134.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "It’s ten years since we began offering an extended hours service and we’ve come a long way during that time.",
+      "start": 134.77,
+      "end": 142.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "When we first opened, we only had about 20 children attending regularly.",
+      "start": 142.13,
+      "end": 148.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "We try to keep our costs as low as we can and we think we provide very good value for money.",
+      "start": 148.03,
+      "end": 155.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "For the afternoon sessions, which run from 3.30 until 6 p.m., it’s £7.20 (Q13).",
+      "start": 155.17,
+      "end": 161.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "But if you prefer, you can pay for one hour only, which costs £3.50, or two hours which costs £5.70.",
+      "start": 161.19,
+      "end": 171.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "The cost of the childcare includes food and snacks.",
+      "start": 171.69,
+      "end": 176.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "They’ll be given breakfast in the morning and in the afternoon, a healthy snack as soon as they finish school.",
+      "start": 176.01,
+      "end": 183.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "At 5 p.m. children are given something more substantial, such as pasta or a casserole (Q14).",
+      "start": 183.69,
+      "end": 190.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Please inform us of any allergies that your child might have and we’ll make sure they’re offered a suitable alternative.",
+      "start": 190.29,
+      "end": 199.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "As you may know, the childcare service runs through the school holidays from 8 a.m. to 6 p.m.",
+      "start": 199.23,
+      "end": 206.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "We offer a really varied and exciting programme to keep the children entertained – we don’t want them to feel as if they are still at school!",
+      "start": 206.29,
+      "end": 215.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "It will also feel different because they’ll get the chance to make new friends with children from other schools – spaces are available for them (Q15) because a lot of our term-time children don’t always attend during the holiday.",
+      "start": 215.47,
+      "end": 229.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "In the past, parents have asked if children over the age of 11 are allowed to come with their younger brothers and sisters – but I’m afraid we’re unable to do this because of the type of insurance we have.",
+      "start": 229.42,
+      "end": 284.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "So now let me tell you about some of the activities that your child can do during the after-school sessions.",
+      "start": 284.96,
+      "end": 291.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "As well as being able to use the playground equipment, computers and the library, there is usually at least one ‘special’ activity that children can do each day.",
+      "start": 291.76,
+      "end": 302.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "For example, Spanish.",
+      "start": 302.95,
+      "end": 305.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "We have a specialist teacher coming in every Thursday to give a basic introduction to the language through games and songs.",
+      "start": 305.05,
+      "end": 313.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "She does two sessions: one for the over 8s and one for the younger children.",
+      "start": 313.31,
+      "end": 318.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "This is the only activity which we have to make an extra charge for (Q16) – but it’s well worth it.",
+      "start": 318.95,
+      "end": 326.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Once a week the children have the opportunity to do some music.",
+      "start": 326.23,
+      "end": 330.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "We’re very lucky that one of our staff is a member of a folk band.",
+      "start": 330.45,
+      "end": 335.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "On Mondays, she teaches singing and percussion to groups of children.",
+      "start": 335.55,
+      "end": 340.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "We do rely on parental support for this (Q17), so if any of you sing or play an instrument and would be prepared to help out at these sessions, we’d be delighted.",
+      "start": 340.19,
+      "end": 351.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Painting continues to be one of the most popular activities.",
+      "start": 351.67,
+      "end": 355.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "To begin with we weren’t keen on offering this because of the extra mess involved, but children kept asking if they could do some art (Q18) and so we finally gave in.",
+      "start": 355.93,
+      "end": 367.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Art is great for helping the children to relax after working hard at school all day.",
+      "start": 367.43,
+      "end": 373.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Yoga is something that we’ve been meaning to introduce for some time but haven’t been able to find anyone available to teach it – until now that is (Q19).",
+      "start": 373.67,
+      "end": 383.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "So we’ll see how this goes.",
+      "start": 383.53,
+      "end": 385.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "Hopefully, children will benefit in all sorts of ways from this.",
+      "start": 385.57,
+      "end": 390.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "Cooking is another popular activity.",
+      "start": 390.43,
+      "end": 393.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "They make a different sort of cake, or pizza or bread each week.",
+      "start": 393.29,
+      "end": 397.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "Although the younger children love doing it, we found that the mess was just too much, so we’ve decided to restrict this to the over 8s (Q20), as they are better able to clean up after themselves.",
+      "start": 397.99,
+      "end": 449.344,
+      "preAudio": false
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "version": 1,
+  "partId": "cam17-t1-p4",
+  "audioFile": "cam17-test1-part4.mp3",
+  "durationSeconds": 454.660313,
+  "method": "whisper-local",
+  "preambleSeconds": 88.3,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Labyrinths have existed for well over 4,000 years.",
+      "start": 77.704,
+      "end": 81.11,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Labyrinths and labyrinthine symbols have been found in regions as diverse as modern-day Turkey, Ireland, Greece, and India.",
+      "start": 81.11,
+      "end": 88.3,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "There are various designs of labyrinth but what they all have in common is a winding spiral path which leads to a central area.",
+      "start": 88.3,
+      "end": 96.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "There is one starting point at the entrance and the goal is to reach the central area.",
+      "start": 96.46,
+      "end": 102.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Finding your way through a labyrinth involves many twists and turns, but it’s not possible to get lost as there is only one single path.",
+      "start": 102.44,
+      "end": 112.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "In modern times, the word labyrinth has taken on a different meaning and is often used as a synonym for a maze.",
+      "start": 112.8,
+      "end": 121.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "A maze is quite different as it is a kind of puzzle (Q31) with an intricate network of paths.",
+      "start": 121.14,
+      "end": 128.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Mazes became fashionable in the 15th and 16th centuries in Europe, and can still be found in the gardens of great houses and palaces.",
+      "start": 128.5,
+      "end": 137.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "The paths are usually surrounded by thick, high hedges so that it’s not possible to see over them.",
+      "start": 137.98,
+      "end": 144.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Entering a maze usually involves getting lost a few times before using logic to work out the pattern (Q32) and find your way to the centre and then out again.",
+      "start": 144.42,
+      "end": 154.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "There are lots of dead ends and paths which lead you back to where you started.",
+      "start": 154.62,
+      "end": 160.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "The word ‘maze’ is believed to come from a Scandinavian word for a state of confusion (Q33).",
+      "start": 160.06,
+      "end": 166.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "This is where the word ‘amazing’ comes from.",
+      "start": 166.3,
+      "end": 171.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Labyrinths, on the other hand, have a very different function.",
+      "start": 171.08,
+      "end": 175.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Although people now often refer to things they find complicated as labyrinths, this is not how they were seen in the past. the winding spiral of the labyrinth has been used for centuries as a metaphor for life’s journey.",
+      "start": 175.44,
+      "end": 191.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "It served as a spiritual reminder that there is purpose and meaning to our lives and helped to give people a sense of direction.",
+      "start": 191.28,
+      "end": 200.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Labyrinths are thought to encourage a feeling of calm and have been used as a meditation and prayer tool in many cultures over many centuries.",
+      "start": 200.08,
+      "end": 208.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "(Q34)",
+      "start": 208.86,
+      "end": 210.06
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "The earliest examples of the labyrinth spiral pattern have been found carved into stone (Q35), from Sardinia to Scandinavia, from Arizona to India to Africa.",
+      "start": 210.06,
+      "end": 221.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "In Europe, these spiral carvings date from the late Bronze Age.",
+      "start": 221.66,
+      "end": 227.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "The Native American Pima tribe wove baskets with a circular labyrinth design that depicted their own cosmology.",
+      "start": 227.14,
+      "end": 235.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "In Ancient Greece, the labyrinth spiral was used on coins (Q36) around four thousand years ago.",
+      "start": 235.9,
+      "end": 243.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Labyrinths made of mosaics were commonly found in bathhouses, villas and tombs throughout the Roman Empire.",
+      "start": 243.32,
+      "end": 251.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "In Northern Europe, there were actual physical labyrinths designed for walking on.",
+      "start": 251.44,
+      "end": 257.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "These were cut into the turf or grass, usually in a circular pattern.",
+      "start": 257.56,
+      "end": 262.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "The origin of these walking labyrinths remains unclear, but they were probably used for fertility rites which may date back thousands of years.",
+      "start": 262.5,
+      "end": 271.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Eleven examples of turf labyrinths survive today, including the largest one at Saffron Walden, England, which used to have a large tree in the middle of it.",
+      "start": 271.86,
+      "end": 281.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "(Q37)",
+      "start": 281.92,
+      "end": 287.04
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "More recently labyrinths have experienced something of a revival.",
+      "start": 287.04,
+      "end": 291.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Some believe that walking a labyrinth promotes healing and mindfulness, and there are those who believe in its emotional and physical benefits, which include slower breathing (Q38) and a restored sense of balance and perspective.",
+      "start": 291.08,
+      "end": 304.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "This idea has become so popular that labyrinths have been laid into the floors of spas, wellness centres and even prisons in recent years.",
+      "start": 304.54,
+      "end": 316.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "A pamphlet at Colorado Children’s Hospital informs patients that ‘walking a labyrinth can often calm people in the midst of a crisis’.",
+      "start": 316.14,
+      "end": 324.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "And apparently, it’s not only patients who benefit.",
+      "start": 324.46,
+      "end": 329.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Many visitors find walking a labyrinth less stressful than sitting in a corridor or waiting room.",
+      "start": 329.32,
+      "end": 335.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Some doctors even walk the labyrinth during their breaks.",
+      "start": 335.62,
+      "end": 339.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "In some hospitals, patients who can’t walk can have a paper ‘finger labyrinth’ (Q39) brought to their bed.",
+      "start": 339.66,
+      "end": 346.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "The science behind the theory is a little sketchy, but there are dozens of small-scale studies which support claims about the benefits of labyrinths.",
+      "start": 346.64,
+      "end": 355.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "For example, one study found that walking a labyrinth provided ‘short-term calming, relaxation, and relief from anxiety’ for Alzheimer’s patients.",
+      "start": 355.28,
+      "end": 364.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "(Q40)",
+      "start": 364.68,
+      "end": 365.42
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "So, what is it about labyrinths that makes their appeal so universal? Well …",
+      "start": 365.42,
+      "end": 454.66,
+      "preAudio": false
+    }
+  ]
+}

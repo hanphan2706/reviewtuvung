@@ -1,0 +1,361 @@
+{
+  "version": 1,
+  "partId": "cam17-t2-p1",
+  "audioFile": "cam17-test2-part1.mp3",
+  "durationSeconds": 473.477438,
+  "method": "whisper-local",
+  "preambleSeconds": 115.646,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "JANE",
+      "text": "Hello, Jane Fairbanks speaking.",
+      "start": 101.235,
+      "end": 102.595,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "FRANK",
+      "text": "Oh, good morning. My name’s Frank Pritchard. I’ve just retired and moved to Southoe. I’d like to become a volunteer, and I gather you co-ordinate voluntary work in the village.",
+      "start": 102.595,
+      "end": 112.795,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "JANE",
+      "text": "That’s right.",
+      "start": 112.795,
+      "end": 113.475,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": "FRANK",
+      "text": "What sort of thing could I do?",
+      "start": 113.475,
+      "end": 115.646,
+      "preAudio": true
+    },
+    {
+      "id": "cue-5",
+      "speaker": "JANE",
+      "text": "Well, we need help with the village library. We borrow books from the town library, and individuals also donate them. So, one thing you could do is get involved in collecting (Q1) them – if you’ve got a car, that is.",
+      "start": 115.646,
+      "end": 129.347,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "FRANK",
+      "text": "Yes, that’s no problem.",
+      "start": 129.347,
+      "end": 130.707,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "JANE",
+      "text": "The times are pretty flexible so we can arrange it to suit you. Another thing is the records (Q2) that we keep of the books we’re given, and those we borrow and need to return to the town library. It would be very useful to have another person to help keep them up to date.",
+      "start": 130.707,
+      "end": 147.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "FRANK",
+      "text": "Right. I’m used to working on a computer – I presume they’re computerised?",
+      "start": 147.72,
+      "end": 153.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "JANE",
+      "text": "Oh yes.",
+      "start": 153.32,
+      "end": 154.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "FRANK",
+      "text": "Is the library purpose-built? I haven’t noticed it when I’ve walked round the village.",
+      "start": 154.62,
+      "end": 160.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "JANE",
+      "text": "No, we simply have the use of a room in the village hall, the West (Q3) Room. It’s on the left as you go in.",
+      "start": 160.24,
+      "end": 168.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "FRANK",
+      "text": "I must go and have a look inside the hall.",
+      "start": 168.74,
+      "end": 172.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "JANE",
+      "text": "Yes, it’s a nice building.",
+      "start": 172.14,
+      "end": 173.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "FRANK",
+      "text": "Do you run a lunch club in the village for elderly people? I know a lot of places do.",
+      "start": 173.84,
+      "end": 180.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "JANE",
+      "text": "Yes, we have a very successful club.",
+      "start": 180.2,
+      "end": 183.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "FRANK",
+      "text": "I could help with transport (Q4), if that’s of any use.",
+      "start": 183.02,
+      "end": 186.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "JANE",
+      "text": "Ooo definitely. People come to the club from neighbouring villages, and we’re always in need of more drivers.",
+      "start": 186.76,
+      "end": 194.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "FRANK",
+      "text": "And does the club have groups that focus on a particular hobby, too? I could get involved in one or two, particularly if there are any art (Q5) groups.",
+      "start": 194.24,
+      "end": 205.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "JANE",
+      "text": "Excellent. I’ll find out where we need help and get back to you.",
+      "start": 205.4,
+      "end": 210.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "FRANK",
+      "text": "Fine. What about help for individual residents. Do you arrange that at all?",
+      "start": 210.7,
+      "end": 217.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "JANE",
+      "text": "Yes, we do it as a one-off. In fact, there’s Mrs Carroll. She needs a lift to the hospital (Q6) next week, and we’re struggling to find someone.",
+      "start": 217.14,
+      "end": 229.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "FRANK",
+      "text": "When’s her appointment?",
+      "start": 229.04,
+      "end": 230.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "JANE",
+      "text": "On Tuesday. It would take the whole morning.",
+      "start": 230.62,
+      "end": 234.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "FRANK",
+      "text": "I could do that.",
+      "start": 234.46,
+      "end": 235.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "JANE",
+      "text": "Oh, that would be great. Thank you. And also, next week, we’re arranging to have some work done to Mr Selsbury’s house before he moves, as he isn’t healthy enough to do it himself. We’re got some people to decorate his kitchen, but if you could do some weeding in his garden (Q7), that would be wonderful.",
+      "start": 235.82,
+      "end": 257.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "FRANK",
+      "text": "OK. I’d enjoy that. And presumably the day and time are flexible.",
+      "start": 257.2,
+      "end": 263.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "JANE",
+      "text": "Oh yes. Just say when would suit you best, and we’ll let Mr Selsbury know.",
+      "start": 263.3,
+      "end": 268.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "FRANK",
+      "text": "Good.",
+      "start": 268.7,
+      "end": 300.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "JANE",
+      "text": "The volunteers group also organises monthly social events, which is a great way to meet other people, of course.",
+      "start": 300.61,
+      "end": 308.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "FRANK",
+      "text": "Uhuh.",
+      "start": 308.11,
+      "end": 309.05
+    },
+    {
+      "id": "cue-31",
+      "speaker": "JANE",
+      "text": "So next month, on the 19th of October, we’re holding a quiz (Q8) – a couple of residents are great at planning unusual ones, and we always fill the village hall.",
+      "start": 309.05,
+      "end": 322.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "FRANK",
+      "text": "That sounds like fun. Can I do anything to help?",
+      "start": 322.17,
+      "end": 326.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "JANE",
+      "text": "Well, because of the summer of people, we need plenty of refreshments for halfway through. So, if you could provide any, we’d be grateful.",
+      "start": 326.19,
+      "end": 336.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "FRANK",
+      "text": "I’m sure I could. I’ll think about what to make, and let you know.",
+      "start": 336.39,
+      "end": 341.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "JANE",
+      "text": "Thank you. Then on November the 18th, we’re holding a dance, also in the village hall. We’ve booked a band that specialises in music of the 1930s – they’ve been before, and we’ve had a lot of requests to bring them back.",
+      "start": 341.15,
+      "end": 359.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "FRANK",
+      "text": "I’m not really a dancer, but I’d like to do something to help.",
+      "start": 359.55,
+      "end": 364.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "JANE",
+      "text": "Well, we sell tickets (Q9) in advance, and having an extra person to check them at the door, as people arrive, would be good – it can be quite a bottleneck if everyone arrives at once!",
+      "start": 364.27,
+      "end": 376.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "FRANK",
+      "text": "OK, I’m happy with that.",
+      "start": 376.69,
+      "end": 379.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "JANE",
+      "text": "We’re also arranging a New Year’s Eve party. We’re expecting that to be a really big event, so instead of the village hall, it’ll be held in the Mountfort Hotel.",
+      "start": 379.79,
+      "end": 391.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "FRANK",
+      "text": "The …?",
+      "start": 391.91,
+      "end": 392.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "JANE",
+      "text": "Mountfort. M-O-U-N-T-F-O-R-T Hotel. It isn’t in Southoe itself, but it’s only a couple of miles away. The hotel will be providing dinner and we’ve booked a band. The one thing we haven’t got yet is a poster (Q10). That isn’t something you could do, by any chance, is it?",
+      "start": 392.59,
+      "end": 420.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "FRANK",
+      "text": "Well actually, yes. Before I retired I was a graphic designer, so that’s right up my street.",
+      "start": 420.51,
+      "end": 427.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "JANE",
+      "text": "Oh perfect! I’ll give you the details, and then perhaps you could send me a draft …",
+      "start": 427.67,
+      "end": 433.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": "FRANK",
+      "text": "Of course.",
+      "start": 433.83,
+      "end": 473.477,
+      "preAudio": false
+    }
+  ]
+}

@@ -153,6 +153,54 @@ const LISTENING_PART_IMAGES: Record<string, string> = {
   /** Victor Hugo — books / literature */
   "cam18-t4-p4":
     "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=80&auto=format&fit=crop",
+  /** Cam 17 — Buckworth Conservation Group */
+  "cam17-t1-p1":
+    "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=1200&q=80&auto=format&fit=crop",
+  /** Boat Trip Round Tasmania */
+  "cam17-t1-p2":
+    "https://images.unsplash.com/photo-1551244072-5d12893278ab?w=1200&q=80&auto=format&fit=crop",
+  /** Veterinary Work Experience */
+  "cam17-t1-p3":
+    "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=1200&q=80&auto=format&fit=crop",
+  /** Labyrinths */
+  "cam17-t1-p4":
+    "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1200&q=80&auto=format&fit=crop",
+  /** Southoe Village Volunteering */
+  "cam17-t2-p1":
+    "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&q=80&auto=format&fit=crop",
+  /** Oniton Hall */
+  "cam17-t2-p2":
+    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80&auto=format&fit=crop",
+  /** Romeo and Juliet Review */
+  "cam17-t2-p3":
+    "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1200&q=80&auto=format&fit=crop",
+  /** Icelandic Language and Digital Technology */
+  "cam17-t2-p4":
+    "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=1200&q=80&auto=format&fit=crop",
+  /** Surfing Holidays Advice */
+  "cam17-t3-p1":
+    "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=1200&q=80&auto=format&fit=crop",
+  /** School Extended Hours Childcare */
+  "cam17-t3-p2":
+    "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&q=80&auto=format&fit=crop",
+  /** Holly’s Work Placement Tutorial */
+  "cam17-t3-p3":
+    "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80&auto=format&fit=crop",
+  /** Bird Migration Theory */
+  "cam17-t3-p4":
+    "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=1200&q=80&auto=format&fit=crop",
+  /** Easy Life Cleaning Services */
+  "cam17-t4-p1":
+    "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80&auto=format&fit=crop",
+  /** Hotel Staff Retention */
+  "cam17-t4-p2":
+    "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=1200&q=80&auto=format&fit=crop",
+  /** Sporting Equipment Development */
+  "cam17-t4-p3":
+    "https://images.unsplash.com/photo-1459865264687-595d652de67e?w=1200&q=80&auto=format&fit=crop",
+  /** Maple Syrup */
+  "cam17-t4-p4":
+    "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1200&q=80&auto=format&fit=crop",
   /** Cam 21 — Oyster Bay Sailing Club */
   "cam21-t1-p1":
     "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&q=80&auto=format&fit=crop",
