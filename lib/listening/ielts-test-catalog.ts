@@ -4,9 +4,14 @@ import {
   CAMBRIDGE_IELTS_18_COVER_URL,
   CAMBRIDGE_IELTS_19_COVER_URL,
   CAMBRIDGE_IELTS_20_COVER_URL,
+  CAMBRIDGE_IELTS_21_COVER_URL,
 } from "@/lib/reading/ielts-test-catalog";
 
 export type ListeningIeltsTestId =
+  | "cam21-test1"
+  | "cam21-test2"
+  | "cam21-test3"
+  | "cam21-test4"
   | "cam20-test1"
   | "cam20-test2"
   | "cam20-test3"
@@ -37,6 +42,38 @@ export function listeningIeltsTestExamHref(testId: ListeningIeltsTestId): string
 }
 
 export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
+  {
+    testId: "cam21-test4",
+    label: "Cambridge 21 · Test 4",
+    bookTitle: "Cambridge IELTS 21 Academic",
+    testNumber: 4,
+    coverImageUrl: CAMBRIDGE_IELTS_21_COVER_URL,
+    catalogOrder: cambridgeIeltsCatalogOrder(21, 4),
+  },
+  {
+    testId: "cam21-test3",
+    label: "Cambridge 21 · Test 3",
+    bookTitle: "Cambridge IELTS 21 Academic",
+    testNumber: 3,
+    coverImageUrl: CAMBRIDGE_IELTS_21_COVER_URL,
+    catalogOrder: cambridgeIeltsCatalogOrder(21, 3),
+  },
+  {
+    testId: "cam21-test2",
+    label: "Cambridge 21 · Test 2",
+    bookTitle: "Cambridge IELTS 21 Academic",
+    testNumber: 2,
+    coverImageUrl: CAMBRIDGE_IELTS_21_COVER_URL,
+    catalogOrder: cambridgeIeltsCatalogOrder(21, 2),
+  },
+  {
+    testId: "cam21-test1",
+    label: "Cambridge 21 · Test 1",
+    bookTitle: "Cambridge IELTS 21 Academic",
+    testNumber: 1,
+    coverImageUrl: CAMBRIDGE_IELTS_21_COVER_URL,
+    catalogOrder: cambridgeIeltsCatalogOrder(21, 1),
+  },
   {
     testId: "cam20-test4",
     label: "Cambridge 20 · Test 4",

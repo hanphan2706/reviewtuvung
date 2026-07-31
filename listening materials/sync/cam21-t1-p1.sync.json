@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "partId": "cam21-t1-p1",
+  "audioFile": "cam21-test1-part1.mp3",
+  "durationSeconds": 350.955063,
+  "method": "whisper-local",
+  "preambleSeconds": 115.87,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "WOMAN",
+      "text": "Hello, Oyster Bay Sailing Club. How can I help you?",
+      "start": 101.966,
+      "end": 115.87,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "MAN",
+      "text": "Oh hi. I'd like to find out about sailing courses for beginners.",
+      "start": 115.87,
+      "end": 120.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "WOMAN",
+      "text": "No problem. Is it for yourself?",
+      "start": 120.47,
+      "end": 122.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "MAN",
+      "text": "Yes. I had a look online but I'm not sure which course would be best.",
+      "start": 122.51,
+      "end": 127.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "WOMAN",
+      "text": "OK. Well you might be interested in our Taster Days?",
+      "start": 127.61,
+      "end": 133.845
+    },
+    {
+      "id": "cue-6",
+      "speaker": "MAN",
+      "text": "Possibly.",
+      "start": 133.845,
+      "end": 134.55
+    },
+    {
+      "id": "cue-7",
+      "speaker": "WOMAN",
+      "text": "So these are for people who've never sailed before – it's basically an introduction to sailing to find out whether you enjoy it and want to carry on with it.",
+      "start": 134.55,
+      "end": 144.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "MAN",
+      "text": "And how much is that?",
+      "start": 144.75,
+      "end": 146.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "WOMAN",
+      "text": "It's £120 for the day - but it's reduced to £110 each if there are two of you.",
+      "start": 146.45,
+      "end": 152.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "MAN",
+      "text": "No, it would just be me.",
+      "start": 152.57,
+      "end": 154.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "WOMAN",
+      "text": "Oh that's fine. You'd be in a small group, usually about eight people but no more than ten – and everyone's always very friendly. (Q1)",
+      "start": 154.61,
+      "end": 163.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "MAN",
+      "text": "Uh huh. And are there any other suitable courses?",
+      "start": 163.11,
+      "end": 166.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "WOMAN",
+      "text": "The other option is the Level 1 course. These are two-day weekend courses and we run those all year round.",
+      "start": 166.17,
+      "end": 172.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "MAN",
+      "text": "OK. And what do you learn on that course?",
+      "start": 172.97,
+      "end": 176.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "WOMAN",
+      "text": "This is a mix of theory and practical skills. So you learn about things like the weather (Q2), which is obviously really important and also the tides, as well as learning basic sailing skills. You go out into the harbour in special training dinghies for beginners, two people in each dinghy and an instructor. He or she will make sure you understand everything you need to know about safety. (Q3)",
+      "start": 176.03,
+      "end": 190.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "MAN",
+      "text": "It sounds like hard work!",
+      "start": 190.55,
+      "end": 193.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "WOMAN",
+      "text": "Yes, but you'll have a lot of fun too.",
+      "start": 193.45,
+      "end": 196.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "MAN",
+      "text": "And the cost of that one is... ?",
+      "start": 196.65,
+      "end": 199.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "WOMAN",
+      "text": "£200. But it's a bit cheaper if you decide to join the club. There's a discount for members. (Q4)",
+      "start": 199.37,
+      "end": 205.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "MAN",
+      "text": "Well, I'm not sure about that yet.",
+      "start": 205.83,
+      "end": 208.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "WOMAN",
+      "text": "You've got plenty of time to decide.",
+      "start": 208.21,
+      "end": 210.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "MAN",
+      "text": "And does the cost include everything?",
+      "start": 210.59,
+      "end": 212.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "WOMAN",
+      "text": "Yes, everything's included and you also get a really good dictionary explaining all the sailing terminology (Q5). A lot of people struggle with this at first. It's got lots of pictures, so I'm sure you'd find it really helpful. And on completion of the course you get a certificate (Q6). Then you're ready to move on to the Level 2 course.",
+      "start": 212.63,
+      "end": 248.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "MAN",
+      "text": "Sounds good.",
+      "start": 248.22,
+      "end": 252.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "WOMAN",
+      "text": "I think that's all the info you need for now. Just a couple of general things. For example, it's really important that you know how to swim.",
+      "start": 252.27,
+      "end": 263.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "MAN",
+      "text": "Yes, I'm pretty confident in the water.",
+      "start": 263.43,
+      "end": 265.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "WOMAN",
+      "text": "Great. The other thing I should tell you is that we provide wetsuits and life jackets but you need to bring swimming trunks and some old trainers.",
+      "start": 265.97,
+      "end": 276.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "MAN",
+      "text": "And a towel? (Q7)",
+      "start": 276.41,
+      "end": 277.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "WOMAN",
+      "text": "Yes definitely. And you might want to bring your own toiletries, things like shampoo.",
+      "start": 277.77,
+      "end": 283.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "MAN",
+      "text": "OK. What about food and drink? Do I need to bring that or is there a café at the club? (Q8)",
+      "start": 283.13,
+      "end": 290.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "WOMAN",
+      "text": "Yes, you can get sandwiches, cakes and snacks there. The food's pretty reasonable.",
+      "start": 290.61,
+      "end": 296.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "MAN",
+      "text": "OK good. Well I think I'm interested in the Level 1 course. But I know absolutely nothing about sailing so is there anything I can do to prepare myself a bit?",
+      "start": 296.85,
+      "end": 308.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "WOMAN",
+      "text": "I recommend you watch some videos we use for training. They're available online. I can send you the link. They'll give you an idea of what to expect. (Q9)",
+      "start": 308.53,
+      "end": 319.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "MAN",
+      "text": "Perfect, thanks. That would be very helpful. Oh and just one other thing - I'll be cycling to the club and will need somewhere to put valuables. I'm just wondering if there are lockers for people to use? (Q10)",
+      "start": 319.11,
+      "end": 332.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "WOMAN",
+      "text": "Yes, there are plenty in the changing rooms.",
+      "start": 332.37,
+      "end": 335.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "MAN",
+      "text": "Great. OK well could you book me onto...",
+      "start": 335.43,
+      "end": 350.955,
+      "preAudio": false
+    }
+  ]
+}

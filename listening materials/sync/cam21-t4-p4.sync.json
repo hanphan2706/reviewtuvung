@@ -1,0 +1,317 @@
+{
+  "version": 1,
+  "partId": "cam21-t4-p4",
+  "audioFile": "cam21-test4-part4.mp3",
+  "durationSeconds": 433.893875,
+  "method": "whisper-local",
+  "preambleSeconds": 88.95,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Today's lecture is about studies that look at how music therapy can be used to help patients who undergo surgery.",
+      "start": 77.73,
+      "end": 84.53,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Now, most people undergo a surgical procedure at some point in their lives.",
+      "start": 84.53,
+      "end": 88.95,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "And more than fifty-one million operations are performed annually in the USA.",
+      "start": 88.95,
+      "end": 93.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "But there's no escaping the fact that most patients feel uncomfortable following surgery.",
+      "start": 93.57,
+      "end": 99.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "They may have difficulty mobilising, and even sitting up in bed can feel too much.",
+      "start": 99.39,
+      "end": 104.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "They may also be negatively affected by having their routine disturbed, you know, like if they can't do the things they normally do, or have to devote a lot of time to appointments such as physiotherapy, to aid their recovery.",
+      "start": 104.89,
+      "end": 118.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "(Q31)",
+      "start": 118.53,
+      "end": 119.65
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Currently, the main strategy for improving recovery is medication to control pain, and this can be administered to patients in the short, medium or longer term, depending on the extent of their surgery.",
+      "start": 119.65,
+      "end": 132.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "But music is still not an everyday part of the post-surgical phase, despite a wealth of relevant studies supporting its potential in recovery.",
+      "start": 132.85,
+      "end": 142.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Earlier this year, a research team set out to assess all the available evidence so that they could highlight the potential for music in surgical recovery.",
+      "start": 142.69,
+      "end": 152.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "They identified nearly a hundred trials involving a total of seven thousand patients who were played recorded music as part of their post-operative care.",
+      "start": 152.39,
+      "end": 163.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "The researchers then looked at what impact the music had on the patients.",
+      "start": 163.03,
+      "end": 167.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "They discovered that patients who had been played music reported feeling happier and more satisfied in the post-operative phase, and the length of their stay was shorter than for patients who had not listened to any music.",
+      "start": 167.55,
+      "end": 181.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "(Q32)",
+      "start": 181.03,
+      "end": 182.31
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "The researchers also explored the patients’ choice of music, and their findings showed that a wide variety of music styles was evident.",
+      "start": 182.31,
+      "end": 191.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "However, a common factor was that the chosen music had a calming quality (Q33).",
+      "start": 191.59,
+      "end": 197.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Some of the patients listened to music with headphones, but it was quiet enough not to prevent them from being able to communicate with nurses and other staff.",
+      "start": 197.59,
+      "end": 207.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "More often though, the mode of delivery was by what are known as music pillows (Q34).",
+      "start": 207.11,
+      "end": 212.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "These broadcast sound that is only audible to the person lying on them.",
+      "start": 212.93,
+      "end": 218.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "The research involved testing music before, during or after operations or a combination.",
+      "start": 218.49,
+      "end": 225.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Some patients listened to the music just once a day, while others had several episodes a day.",
+      "start": 225.57,
+      "end": 236.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "When asked to report their experience of listening to music, surgical patients said that either they had no feelings of anxiety at any point, or those feelings were only slight (Q35).",
+      "start": 236.28,
+      "end": 248.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Patients who hadn’t listened to music, on the other hand, reported higher levels of dissatisfaction.",
+      "start": 248.18,
+      "end": 254.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "This feedback from all of the patients was then cross-checked against their medical notes.",
+      "start": 254.94,
+      "end": 260.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "And in every case, those who were given music to listen to didn’t need as much medication to ease their pain as those patients who weren’t played music (Q36).",
+      "start": 260.86,
+      "end": 271.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "The type of music, patient choice and timing, before, during or after the surgery didn’t make much difference.",
+      "start": 271.46,
+      "end": 280.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "And it even worked when patients were played music under general anaesthetic, although the positive effects were greater when patients were awake.",
+      "start": 280.02,
+      "end": 287.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "(Q37)",
+      "start": 287.78,
+      "end": 288.72
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "All the evidence suggests that music has a positive effect on post-operative patients, but it’s not entirely clear how or why this is the case.",
+      "start": 288.72,
+      "end": 298.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "A lot of people listen to music in daily life as a way to relax and forget their problems, but the researchers came to the conclusion that it worked on patients by distraction.",
+      "start": 298.78,
+      "end": 310.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "I suppose it was something familiar and gave them something they could control.",
+      "start": 310.1,
+      "end": 314.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "(Q38)",
+      "start": 314.52,
+      "end": 315.28
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "The researchers say there is now sufficient research to demonstrate that music should be available to all patients undergoing operations.",
+      "start": 315.28,
+      "end": 323.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "They say patients should be able to choose what they’d like to listen to, and if they prefer, recordings taken from nature can be just as good as music (Q39).",
+      "start": 323.84,
+      "end": 335.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Surgical teams may prefer patients to listen to music before the procedure or as soon as they arrive back onto the ward.",
+      "start": 335.34,
+      "end": 343.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Clearly, there’s more to learn about this area, and the team now plan to focus their next research on the most appropriate volume to play the music at.",
+      "start": 343.36,
+      "end": 353.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "And I look forward to reading the results of their study.",
+      "start": 353.6,
+      "end": 357.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "(Q40)",
+      "start": 357.34,
+      "end": 357.79
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "It will be interesting to see ...",
+      "start": 357.79,
+      "end": 433.894,
+      "preAudio": false
+    }
+  ]
+}

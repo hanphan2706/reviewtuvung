@@ -1,0 +1,366 @@
+{
+  "version": 1,
+  "partId": "cam21-t3-p4",
+  "audioFile": "cam21-test3-part4.mp3",
+  "durationSeconds": 550.530563,
+  "method": "whisper-local",
+  "preambleSeconds": 88.19,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Today I’m going to talk about invasive species.",
+      "start": 77.607,
+      "end": 81.576,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Let me start by saying what an invasive species is and what it’s not.",
+      "start": 81.576,
+      "end": 88.19,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Invasive species are any animal or plant that is introduced into an environment by humans, and which is then harmful to that environment.",
+      "start": 88.19,
+      "end": 96.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "It’s important to be clear that not all introduced species are invasive.",
+      "start": 96.01,
+      "end": 101.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Many introduced – or non-native – species thrive in new areas without posing any threat.",
+      "start": 101.61,
+      "end": 109.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "In some cases, invasive species have changed the natural world beyond recognition, so let’s look at the different ways they can be problematic.",
+      "start": 109.21,
+      "end": 121.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "First of all, invasive species may eat native species, or sometimes they may bring a disease with them (Q31), which native species have never faced before and therefore have no defences against.",
+      "start": 121.17,
+      "end": 137.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Often the invasive species breed very quickly – which further adds to the problem of native species losing their sources of food.",
+      "start": 137.41,
+      "end": 148.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Species invasions are one of the biggest causes of damage in an ecosystem, actually putting its survival at risk.",
+      "start": 148.25,
+      "end": 156.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "(Q32)",
+      "start": 156.33,
+      "end": 157.73
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "So, how do invasive species spread?",
+      "start": 157.73,
+      "end": 162.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Without a doubt, the biggest cause is human activity.",
+      "start": 162.17,
+      "end": 167.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "This could be intentional, or it could be accidental, such as when people who’ve been on holiday in another country come back with, say, the seeds of plants on their clothes or shoes (Q33).",
+      "start": 167.01,
+      "end": 182.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Plants and animals, especially insects, arrive in or on the cargo of ships, and then escape into their new ‘home’.",
+      "start": 182.17,
+      "end": 192.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "But sometimes humans deliberately move animals and plants around the world, for example to use them to control pests on farms, or to be pets (Q34).",
+      "start": 192.79,
+      "end": 206.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "This can go very wrong if those animals and plants move into wild settings and start breeding or begin growing in ways that weren’t predicted.",
+      "start": 206.21,
+      "end": 218.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Let’s now look at an example of an invasive species here in Australia: Rhinella marina is a species of toad that was deliberately introduced from Hawaii in 1935 as a form of biological control.",
+      "start": 218.55,
+      "end": 236.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "It was hoped that the toads would eat the grey-backed beetles responsible for destroying crops of sugar on many of the plantations (Q35).",
+      "start": 236.43,
+      "end": 247.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "At first, just a handful of toads were released by scientists into Queensland, but this number soon grew as other states followed suit.",
+      "start": 247.2,
+      "end": 258.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Within two years, 62,000 young toads had been released into the wild.",
+      "start": 258.87,
+      "end": 266.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "The toads did nothing to protect the plantations, but they did reproduce rapidly and could soon be found all over the northern half of the country.",
+      "start": 266.49,
+      "end": 277.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "The toads are poisonous at every stage of their life cycle, and anything that eats them will die.",
+      "start": 277.47,
+      "end": 290.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "My second example regarding invasive species is the United Kingdom.",
+      "start": 290.76,
+      "end": 296.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Actually, there are more than three-thousand invasive species there, including some that are extremely common.",
+      "start": 296.6,
+      "end": 305.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Some invasive plants, such as Japanese knotweed, have had a devastating impact on parts of the UK.",
+      "start": 305.68,
+      "end": 315.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Gardeners in the nineteenth century considered it a beautiful ornamental plant – which it is, when it’s kept under control – but it soon spread into the countryside and remains a problem even to this day as it’s so hard to eradicate.",
+      "start": 315.04,
+      "end": 334.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Another invasive plant is rhododendrons, which can be found in UK parks and woodlands.",
+      "start": 334.28,
+      "end": 341.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Their introduction dates back to 1763, but they’re now seen as harmful because they block out so much light that native wild flowers can’t grow beneath them.",
+      "start": 341.98,
+      "end": 354.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "(Q36)",
+      "start": 354.04,
+      "end": 355.28
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "And then there are grey squirrels, which are one invasive species almost everyone in the UK will have come across.",
+      "start": 355.28,
+      "end": 364.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "They were brought to the UK from North America and introduced to private estates around the 1870s but are now found everywhere, from forests to city squares.",
+      "start": 364.2,
+      "end": 378.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Grey squirrels have outcompeted the smaller, native red squirrels.",
+      "start": 378.8,
+      "end": 383.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "They both eat the same food, and the grey squirrels carry a type of virus that is deadly to the red squirrels.",
+      "start": 383.9,
+      "end": 392.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Red squirrel populations have collapsed, and there are only a handful of sites left in the UK where they’re found.",
+      "start": 392.58,
+      "end": 400.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "(Q37)",
+      "start": 400.38,
+      "end": 401.46
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "An important question for ecologists worldwide is, what can we do to tackle the problem of invasive species?",
+      "start": 401.46,
+      "end": 411.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "The first step in controlling invasive species is learning about the behaviour of new species coming into the country (Q38).",
+      "start": 411.08,
+      "end": 420.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "Monitoring is an important part of this, so that we can know if the new species begins to have a negative impact in its new environment.",
+      "start": 420.16,
+      "end": 430.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "One effective way to keep track of invasive species is to create a database for the whole country (Q39).",
+      "start": 430.36,
+      "end": 438.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "That way, all relevant authorities and agencies can share important information and take whatever action’s needed.",
+      "start": 438.04,
+      "end": 447.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "But the public also have a vital role to play in this process.",
+      "start": 447.84,
+      "end": 452.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "They should be encouraged to photograph harmful species – because this helps with identification – and then to report when and where these were observed.",
+      "start": 452.54,
+      "end": 465.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "But it’s important to tell people not to destroy or even touch what they’ve found.",
+      "start": 465.28,
+      "end": 471.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "(Q40)",
+      "start": 471.62,
+      "end": 473.2
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "Now, I’m going to move on to ...",
+      "start": 473.2,
+      "end": 550.531,
+      "preAudio": false
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "version": 1,
+  "partId": "cam21-t1-p2",
+  "audioFile": "cam21-test1-part2.mp3",
+  "durationSeconds": 414.014688,
+  "method": "whisper-local",
+  "preambleSeconds": 77.29,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "MAN",
+      "text": "Hello and welcome to the film making podcast. In this week's episode, Claire Lemarre talks to us about how to become a makeup artist. Claire's been working as a makeup artist in the film industry for over 20 years and has lots of useful advice about how to get started.",
+      "start": 77.29,
+      "end": 96.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "WOMAN",
+      "text": "Thanks Ian. Well, before you can become a makeup artist on films you have to spend about 2 years working as a makeup trainee.",
+      "start": 96.21,
+      "end": 105.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "WOMAN",
+      "text": "A good place to get your first job would be on a low budget short film.",
+      "start": 105.97,
+      "end": 111.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "WOMAN",
+      "text": "Of course, this means that you'll be working for free.",
+      "start": 111.69,
+      "end": 115.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "WOMAN",
+      "text": "But it's often worth it for the experience.",
+      "start": 115.09,
+      "end": 118.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "WOMAN",
+      "text": "Make sure your transport costs are covered – and remember, there's very unlikely to be any catering provided, so bring plenty of food.",
+      "start": 118.07,
+      "end": 127.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "WOMAN",
+      "text": "(Q11)",
+      "start": 127.41,
+      "end": 129.19
+    },
+    {
+      "id": "cue-8",
+      "speaker": "WOMAN",
+      "text": "If you're lucky, you might start out on a big budget film where you'll get the most useful experience.",
+      "start": 129.19,
+      "end": 136.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "WOMAN",
+      "text": "On productions like this, makeup and hair styling are separate departments – so you won't need to bring your curling tongs!",
+      "start": 136.61,
+      "end": 145.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "WOMAN",
+      "text": "But you're likely to get the opportunity to work with a range of age groups, as well as different ethnicities.",
+      "start": 145.29,
+      "end": 153.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "WOMAN",
+      "text": "Doing makeup for special effects is highly specialised, so don't expect to be offered any practical experience in that.",
+      "start": 153.45,
+      "end": 161.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "WOMAN",
+      "text": "(Q12)",
+      "start": 161.33,
+      "end": 162.35
+    },
+    {
+      "id": "cue-13",
+      "speaker": "WOMAN",
+      "text": "One problem with working in the makeup department is that it's a high-pressure environment.",
+      "start": 162.35,
+      "end": 167.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "WOMAN",
+      "text": "There are very few times when you'll be bored or have nothing to do.",
+      "start": 167.81,
+      "end": 173.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "WOMAN",
+      "text": "It can be stressful but you'll see that the top makeup artists are very professional – even when they're having to work with directors who are impatient, or unhappy with the makeup artist's work.",
+      "start": 173.29,
+      "end": 186.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "WOMAN",
+      "text": "Follow your supervisor's lead and try to remain calm at all times.",
+      "start": 186.07,
+      "end": 190.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "WOMAN",
+      "text": "(Q13)",
+      "start": 190.65,
+      "end": 192.03
+    },
+    {
+      "id": "cue-18",
+      "speaker": "WOMAN",
+      "text": "I've worked with many very famous actors over the years.",
+      "start": 192.03,
+      "end": 195.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "WOMAN",
+      "text": "At first, I found it overwhelming and could hardly speak, I was so in awe.",
+      "start": 195.99,
+      "end": 201.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "WOMAN",
+      "text": "That's preferable, by the way, to becoming too excited and asking for selfies.",
+      "start": 201.75,
+      "end": 207.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "WOMAN",
+      "text": "Now meeting the talent is just a normal part of the job and to be honest most actors don't look that special without all the makeup!",
+      "start": 207.63,
+      "end": 216.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "WOMAN",
+      "text": "(Q14)",
+      "start": 216.47,
+      "end": 217.21
+    },
+    {
+      "id": "cue-23",
+      "speaker": "WOMAN",
+      "text": "Every makeup trainee will need a makeup kit, which they'll be expected to have with them at all times.",
+      "start": 217.21,
+      "end": 224.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "WOMAN",
+      "text": "Just the essentials will do for the kinds of tasks you'll be given – it won't be anything complicated.",
+      "start": 224.55,
+      "end": 231.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "WOMAN",
+      "text": "It's worth looking at what the other makeup artists have in their kits – but whatever you do, don't borrow anything without asking first.",
+      "start": 231.01,
+      "end": 239.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "WOMAN",
+      "text": "(Q15)",
+      "start": 239.17,
+      "end": 240.53
+    },
+    {
+      "id": "cue-27",
+      "speaker": "WOMAN",
+      "text": "It's very important to build your portfolio.",
+      "start": 240.53,
+      "end": 244.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "WOMAN",
+      "text": "You should take photos of all the work you do and ideally show the different stages of makeup application if you can.",
+      "start": 244.45,
+      "end": 252.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "WOMAN",
+      "text": "But remember you'll need to get approval from the makeup designer in charge of the department.",
+      "start": 252.05,
+      "end": 257.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "WOMAN",
+      "text": "As you'll be sending your portfolio digitally, you won't need to get photos printed.",
+      "start": 257.85,
+      "end": 262.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "WOMAN",
+      "text": "(Q16)",
+      "start": 262.79,
+      "end": 309.55
+    },
+    {
+      "id": "cue-32",
+      "speaker": "WOMAN",
+      "text": "So what does a makeup trainee actually do? You need to think about whether you're the right kind of person to do the job and whether you'd enjoy it. So, to give you some idea, here are some of the things you might be required to do.",
+      "start": 309.55,
+      "end": 325.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "WOMAN",
+      "text": "You may be asked to help prep an actor ready for makeup.",
+      "start": 325.23,
+      "end": 329.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "WOMAN",
+      "text": "Some actors will arrive having already cleansed and moisturized their skin.",
+      "start": 329.31,
+      "end": 334.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "WOMAN",
+      "text": "But sometimes you'll need to step in and get this done without wasting any time, otherwise the makeup artist will get behind schedule.",
+      "start": 334.97,
+      "end": 343.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "WOMAN",
+      "text": "(Q17)",
+      "start": 343.89,
+      "end": 345.93
+    },
+    {
+      "id": "cue-37",
+      "speaker": "WOMAN",
+      "text": "Trainees play a useful role in continuity.",
+      "start": 345.93,
+      "end": 349.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "WOMAN",
+      "text": "It will be your responsibility to take photos, log them digitally and print out a hard copy to put in each actor's file.",
+      "start": 349.21,
+      "end": 357.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "WOMAN",
+      "text": "This information needs to be kept in good order as a reshoot can mean replicating makeup months later.",
+      "start": 357.85,
+      "end": 365.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "WOMAN",
+      "text": "(Q18)",
+      "start": 365.33,
+      "end": 366.87
+    },
+    {
+      "id": "cue-41",
+      "speaker": "WOMAN",
+      "text": "General duties mean doing anything from getting the teas and coffees to putting on a wash.",
+      "start": 366.87,
+      "end": 373.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "WOMAN",
+      "text": "Having a positive attitude and being willing to do whatever is asked of you will help you get your next film job.",
+      "start": 373.35,
+      "end": 380.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "WOMAN",
+      "text": "(Q19)",
+      "start": 380.83,
+      "end": 381.28
+    },
+    {
+      "id": "cue-44",
+      "speaker": "WOMAN",
+      "text": "You won't be asked to apply makeup to any of the principal cast, only the extras.",
+      "start": 381.28,
+      "end": 386.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": "WOMAN",
+      "text": "If there are dozens of extras involved you'll need to keep up a swift pace and not spend too long on each person.",
+      "start": 386.97,
+      "end": 394.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": "WOMAN",
+      "text": "It takes quite a lot of confidence to be able to do this well.",
+      "start": 394.79,
+      "end": 399.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": "WOMAN",
+      "text": "(Q20)",
+      "start": 399.55,
+      "end": 400
+    },
+    {
+      "id": "cue-48",
+      "speaker": "WOMAN",
+      "text": "OK now about terms and conditions....",
+      "start": 400,
+      "end": 414.015,
+      "preAudio": false
+    }
+  ]
+}

@@ -33,6 +33,10 @@ export const BANNED_PASSAGE_IMAGE_BASE_URLS: ReadonlySet<string> = new Set([
   "https://images.unsplash.com/photo-1609137144813-7d9921338f24",
   // Former Cutty Sark — beer bottles, not a sailing ship
   "https://images.unsplash.com/photo-1436076863939-06870fe779c2",
+  // Cam 21 heroes — Unsplash 404 (removed upstream)
+  "https://images.unsplash.com/photo-1500534314209-a25ddb2bd734",
+  "https://images.unsplash.com/photo-1551632811-561732d1e5ec",
+  "https://images.unsplash.com/photo-1542744173-8e2bd1a5d0c8",
 ]);
 
 export function unsplashImageBaseUrl(url: string): string {

@@ -1,0 +1,305 @@
+{
+  "version": 1,
+  "partId": "cam21-t4-p1",
+  "audioFile": "cam21-test4-part1.mp3",
+  "durationSeconds": 323.709375,
+  "method": "whisper-local",
+  "preambleSeconds": 115.61,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "WOMAN",
+      "text": "Good morning. I'm doing a survey of shoppers in Broadbeach. Would you have a few minutes to spare to answer some questions?",
+      "start": 115.61,
+      "end": 123.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "MAN",
+      "text": "Oh...erm...yes, I guess that would be ok.",
+      "start": 123.09,
+      "end": 125.47
+    },
+    {
+      "id": "cue-3",
+      "speaker": "WOMAN",
+      "text": "Thank you very much. Everybody seems so busy today.",
+      "start": 125.47,
+      "end": 128.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "MAN",
+      "text": "Well actually I don't have loads of time, so...",
+      "start": 128.53,
+      "end": 131.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "WOMAN",
+      "text": "Oh yes, of course. It really won't take long. Could I start by taking your name please?",
+      "start": 131.59,
+      "end": 135.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "MAN",
+      "text": "Martyn Leigh. Martyn's with a Y. (Q1)",
+      "start": 135.69,
+      "end": 135.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "WOMAN",
+      "text": "And is your family name spelt L-double-E?",
+      "start": 135.81,
+      "end": 136.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "MAN",
+      "text": "It's L-E-I-G-H.",
+      "start": 136.49,
+      "end": 137.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "WOMAN",
+      "text": "Thank you. We don't actually publish your name or details. It just makes it easier for me to identify people when I look at all the results at the end.",
+      "start": 137.17,
+      "end": 146.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "MAN",
+      "text": "I see.",
+      "start": 146.35,
+      "end": 147.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "WOMAN",
+      "text": "And can I ask, how did you get into town today?",
+      "start": 147.03,
+      "end": 148.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "MAN",
+      "text": "Well, normally I catch the bus, but I'm on my motorbike today because I'm going to work later. (Q2)",
+      "start": 148.44,
+      "end": 153.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "WOMAN",
+      "text": "And could you tell me what you're doing this morning, I mean, the reason for your trip into town?",
+      "start": 153.35,
+      "end": 159.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "MAN",
+      "text": "I've just been to the hairdresser. You see, I have a job interview at the council in a few days. (Q3)",
+      "start": 159.18,
+      "end": 162.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "WOMAN",
+      "text": "Oh really! Well, good luck with that.",
+      "start": 162.63,
+      "end": 162.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "MAN",
+      "text": "Thanks a lot. And now I'm on my way to buy a suit that I can wear to the interview. I don't actually own one at the moment! (Q4)",
+      "start": 162.81,
+      "end": 172.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "WOMAN",
+      "text": "OK. Is that everything you're planning to do in town?",
+      "start": 172.67,
+      "end": 173.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "MAN",
+      "text": "Yeah. Well, I've got to go and pick up my laptop. It broke a couple of days ago so I took it to the shop to get it fixed. They had to order a spare part, but apparently it's ready for collection now. I can't wait to get it back. (Q5)",
+      "start": 173.09,
+      "end": 187.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "WOMAN",
+      "text": "I'm sure. I hate it when my technology breaks down. ...One more thing, it's Saturday today – is that when you like to do your shopping?",
+      "start": 187.09,
+      "end": 191.986,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "MAN",
+      "text": "Well it's more a question of when I'm free. If I'm free on a Monday, that's when I choose to come into town. The shops are less busy then, which I always prefer. (Q6)",
+      "start": 191.986,
+      "end": 220.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "WOMAN",
+      "text": "So, I'd like to ask you a few more questions to get your views about shopping in Broadbeach, if that's ok.",
+      "start": 220.96,
+      "end": 228.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "MAN",
+      "text": "Sure. What would you like to know specifically?",
+      "start": 228.1,
+      "end": 230.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "WOMAN",
+      "text": "What would you say you like best about the shops here?",
+      "start": 230.82,
+      "end": 234.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "MAN",
+      "text": "I'd probably say it's the service you get wherever you go.",
+      "start": 234.58,
+      "end": 239.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "WOMAN",
+      "text": "OK. And what do you think about the range of shops in Broadbeach?",
+      "start": 239.2,
+      "end": 243.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "MAN",
+      "text": "Oh you can get almost anything you want here.",
+      "start": 243.62,
+      "end": 246.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "WOMAN",
+      "text": "And what about recent changes? What do you like and dislike about them? For example, there are a lot of new coffee shops now, are you enjoying them? (Q7)",
+      "start": 246.68,
+      "end": 257.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "MAN",
+      "text": "No, there are too many of them. It's a shame as those places could be occupied by other kinds of shops.",
+      "start": 257.36,
+      "end": 264.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "WOMAN",
+      "text": "What would you like to see instead?",
+      "start": 264.5,
+      "end": 266.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "MAN",
+      "text": "Well, I think we have enough clothing shops. But there's only one place that sells books at the moment. It'd be nice to have a choice, you know. (Q8)",
+      "start": 266.88,
+      "end": 276.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "WOMAN",
+      "text": "Right. And have you been to the new shopping centre outside Broadbeach yet, Martyn?",
+      "start": 276.74,
+      "end": 281.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "MAN",
+      "text": "Yes, once or twice. It's not that far from where I live.",
+      "start": 281.5,
+      "end": 285.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "WOMAN",
+      "text": "It's a very modern-looking building, isn't it?",
+      "start": 285.06,
+      "end": 287.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "MAN",
+      "text": "Yes, and it's lovely. The glass roof is certainly impressive. But my favourite thing is the plants they've put around the building. They're amazing, and so big already. (Q9)",
+      "start": 287.44,
+      "end": 297.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "WOMAN",
+      "text": "And what about the entertainment facilities? Have you used any of them yet? Like the new cinema? (Q10)",
+      "start": 297.64,
+      "end": 304.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "MAN",
+      "text": "Nah, not yet. I can't see any advantage in having it there because the one in town is actually bigger.",
+      "start": 304.4,
+      "end": 311.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "WOMAN",
+      "text": "OK, well thank you so much for...",
+      "start": 311.2,
+      "end": 323.709,
+      "preAudio": false
+    }
+  ]
+}

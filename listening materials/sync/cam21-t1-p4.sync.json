@@ -1,0 +1,388 @@
+{
+  "version": 1,
+  "partId": "cam21-t1-p4",
+  "audioFile": "cam21-test1-part4.mp3",
+  "durationSeconds": 533.968938,
+  "method": "whisper-local",
+  "preambleSeconds": 88.3,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Much of the world now lives in an industrial civilisation.",
+      "start": 77.704,
+      "end": 82.311,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "But this has only become possible because we have the necessary natural resources.",
+      "start": 82.311,
+      "end": 88.3,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "There are three types of natural resource without which industry could not exist.",
+      "start": 88.3,
+      "end": 92.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "One of these is metal – without that we'd have no machines and no transportation.",
+      "start": 92.72,
+      "end": 98.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Another is fossil fuels, which we need to power those machines.",
+      "start": 98.34,
+      "end": 103.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "But there's a third resource that's essential to connect the different parts of a machine together with belts and pipes and shock absorbers, and that is rubber.",
+      "start": 103.78,
+      "end": 116.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "It's now used in over 40,000 products, from waterproof footwear to surgical gloves.",
+      "start": 116.64,
+      "end": 123.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "(Q31)",
+      "start": 123.88,
+      "end": 124.88
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "At present, we have two types of rubber in common use.",
+      "start": 124.88,
+      "end": 130.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "One is natural rubber, which nearly all comes from the Pará rubber tree.",
+      "start": 130.24,
+      "end": 136.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "This was originally native to Brazil, but is now cultivated on plantations in South-East Asia.",
+      "start": 136.7,
+      "end": 145.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Recently, however, concern's been growing that supplies may soon be insufficient for the world's needs.",
+      "start": 145.48,
+      "end": 153.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "So what exactly is limiting the supply of natural rubber?",
+      "start": 153.7,
+      "end": 159.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Well, for one thing, rubber trees don't just spring up overnight.",
+      "start": 159.26,
+      "end": 165.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "It can take eight to ten years for a tree to start producing rubber, so cultivating them's a slow process (Q32).",
+      "start": 165.18,
+      "end": 174.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "And this leads to another problem.",
+      "start": 174.72,
+      "end": 177.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "With most crops, farmers don't have to think very far ahead, so they can easily change what crop they produce, or how much of a crop they produce, if they find the demand for that crop is rising or falling (Q33).",
+      "start": 177.44,
+      "end": 193.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "But if you have to plant eight or ten years ahead, that's much harder.",
+      "start": 193.42,
+      "end": 200.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "And also the rubber tree's very choosy about where it grows.",
+      "start": 200.34,
+      "end": 205.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "It needs the right temperature, the right amount of rainfall, and the right altitude – not too high and not too low.",
+      "start": 205.76,
+      "end": 214.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "The result is that it can't be grown in the northern or southern parts of the globe, only around the equator (Q34).",
+      "start": 214.82,
+      "end": 224.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Another problem is that the rubber is basically extracted in the same way as it's been done for hundreds of years, and that's by hand, by making small cuts in the trunk of the tree, and putting a little cup there to catch the latex, as the rubber is called.",
+      "start": 224.38,
+      "end": 244.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "It's very labour-intensive.",
+      "start": 244.72,
+      "end": 247.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "And it's not just the initial production that's limiting supplies.",
+      "start": 247.36,
+      "end": 252.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "With other resources such as water and glass, when we've finished using them we can recycle them, but although this is also possible with rubber, it's very difficult, so that also reduces the amount we have available.",
+      "start": 252.54,
+      "end": 269.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "(Q35)",
+      "start": 269.68,
+      "end": 270.86
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "And in the last few years, there have been new threats to the supply of natural rubber.",
+      "start": 270.86,
+      "end": 277.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "One problem is linked to the fact that nearly all the rubber trees in South-East Asia are descended from just a small number of seeds brought from Brazil in the nineteenth century.",
+      "start": 277.82,
+      "end": 291.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "This means that there's very little genetic diversity among the trees, which in turn makes them very vulnerable to disease.",
+      "start": 291.42,
+      "end": 302.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "The most dangerous threat is a fungus (Q36), which destroyed large numbers of rubber trees in Brazil, and which could cause devastation to plantations worldwide.",
+      "start": 302.6,
+      "end": 315.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Another problem is that farmers in South-East Asia are increasingly turning to the cultivation of palm oil, which is easier and more profitable for them.",
+      "start": 315.94,
+      "end": 328.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "And finally, in recent years South-East Asia, like other parts of the world, has been repeatedly hit by extreme types of weather, and this looks likely to continue in the future.",
+      "start": 328.44,
+      "end": 342.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "(Q37)",
+      "start": 342.34,
+      "end": 342.79
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "However, as well as using natural rubber, it’s also possible to make rubber synthetically.",
+      "start": 342.79,
+      "end": 355.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "This works very well for some purposes, for example, making engine parts, or silicone pots and pans used for cooking.",
+      "start": 355.3,
+      "end": 365.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "But compared with natural rubber, it’s not anything like as strong, and this means it can’t replace natural rubber in other products.",
+      "start": 365.5,
+      "end": 375.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "For example, while a mixture of natural rubber and synthetic rubber works well in car tyres, only natural rubber can stand up to the extreme speeds of aircraft tyres during take-off and landing.",
+      "start": 375.96,
+      "end": 393.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "(Q38)",
+      "start": 393.22,
+      "end": 394.18
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "So for some time, scientists have been looking for alternative sources of natural rubber.",
+      "start": 394.18,
+      "end": 401.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "One that’s been known about for some time seems initially to be a rather unlikely source.",
+      "start": 401.92,
+      "end": 409.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "It’s a wild plant with yellow flowers that we normally regard as a weed when we see it in our gardens.",
+      "start": 409.16,
+      "end": 417.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "But when it’s pulled up and its roots cut open, they’re found to contain rubber.",
+      "start": 417.36,
+      "end": 423.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "(Q39)",
+      "start": 423.82,
+      "end": 424.7
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "Now, compared to the rubber tree, dandelions produce relatively small amounts of rubber, but unlike rubber trees, they're very adaptable.",
+      "start": 424.7,
+      "end": 436.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "They'll grow in all sorts of places, and they don't need rich soil.",
+      "start": 436.6,
+      "end": 442.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "So at present there are several projects underway investigating the possibility of using dandelions as a source of rubber.",
+      "start": 442.7,
+      "end": 451.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "(Q40)",
+      "start": 451.9,
+      "end": 452.86
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "Another possibility is a desert shrub grown in Mexico and Texas ...",
+      "start": 452.86,
+      "end": 533.969,
+      "preAudio": false
+    }
+  ]
+}

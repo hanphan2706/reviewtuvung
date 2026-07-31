@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "partId": "cam21-t3-p1",
+  "audioFile": "cam21-test3-part1.mp3",
+  "durationSeconds": 330.448938,
+  "method": "whisper-local",
+  "preambleSeconds": 121.113,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "TAMMY",
+      "text": "You know when you went to the Shetland Islands last year, Paul? Did you go by ferry or did you fly?",
+      "start": 102.291,
+      "end": 109.431,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "PAUL",
+      "text": "We went by ferry, Tammy. I prefer driving to flying – the journey feels like part of the holiday.",
+      "start": 109.431,
+      "end": 115.891,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "TAMMY",
+      "text": "Mmm. Which ferry company did you use?",
+      "start": 115.891,
+      "end": 118.271,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": "PAUL",
+      "text": "There's only one – it's called Northern Ferries. The ferries all leave from Aberdeen. (Q1)",
+      "start": 118.271,
+      "end": 123.371,
+      "preAudio": true
+    },
+    {
+      "id": "cue-5",
+      "speaker": "TAMMY",
+      "text": "How frequent are they?",
+      "start": 123.371,
+      "end": 129.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "PAUL",
+      "text": "The service is pretty limited – there's only one ferry leaving every evening in summer anyway, seven days a week – I'm not sure about the winter months. They may only run on four or five days then. (Q2)",
+      "start": 129.8,
+      "end": 143.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "TAMMY",
+      "text": "OK. So it's an overnight trip. I quite like that idea. Leaving at night and waking up as you arrive on the island. Can you remember how much you paid for your tickets?",
+      "start": 143.06,
+      "end": 154.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "PAUL",
+      "text": "They were really cheap and four people and a car worked out at just under £250. (Q3)",
+      "start": 154.28,
+      "end": 158.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "TAMMY",
+      "text": "Really? I was expecting it to be more like £400 during the peak season.",
+      "start": 158.02,
+      "end": 162.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "PAUL",
+      "text": "So was I. It's great value. It's a good idea to book in advance because I think they get booked up quite quickly – especially during the school holidays.",
+      "start": 162.78,
+      "end": 172.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "TAMMY",
+      "text": "Yes, I suppose so. I'm just not 100% sure of our plans yet. What if I had to cancel?",
+      "start": 172.64,
+      "end": 179.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "PAUL",
+      "text": "That could be a problem. I don't think it's their policy to give refunds – just a voucher – which you can use at a later date. But you have to cancel a month in advance to get that. (Q4)",
+      "start": 179.1,
+      "end": 210.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "TAMMY",
+      "text": "Right. Well we need to make up our minds quickly then.",
+      "start": 210.18,
+      "end": 214.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "PAUL",
+      "text": "You'd want to book a cabin too. We booked too late to get a cabin with a window. They're more expensive but much nicer than the inner cabins. You don't have to book a cabin at all but I think it's worth paying for. They also have luxury cabins, which are only for two people and have a TV – but I wouldn't bother with those. (Q5)",
+      "start": 214.38,
+      "end": 228.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "TAMMY",
+      "text": "No, I agree.",
+      "start": 228.42,
+      "end": 229.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "PAUL",
+      "text": "The only other thing I can think of is to make sure you bring snacks for the kids. The selection on board is quite limited and not that healthy either.",
+      "start": 229.44,
+      "end": 239.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "TAMMY",
+      "text": "Mmm. What about wifi on board? Is that any good?",
+      "start": 239.64,
+      "end": 243.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "PAUL",
+      "text": "Not really. So it's best to bring some books for them. (Q6)",
+      "start": 243.04,
+      "end": 247.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "TAMMY",
+      "text": "OK. We may need to bring the dog if I can't get anyone to look after him.",
+      "start": 247.12,
+      "end": 252.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "PAUL",
+      "text": "We brought ours and it was fine. The kennels on board are OK – they're quite big – you just need to provide a blanket. (Q7)",
+      "start": 252.42,
+      "end": 261,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "TAMMY",
+      "text": "Uhuh. Sounds good.",
+      "start": 261,
+      "end": 274.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "PAUL",
+      "text": "It was all very easy really – and it was quite an adventure for the kids. They loved being on the sea at night and in the morning keeping a lookout for dolphins – we saw loads. (Q8)",
+      "start": 274.26,
+      "end": 287.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "TAMMY",
+      "text": "Oh, the kids would love that!",
+      "start": 287.18,
+      "end": 289.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "PAUL",
+      "text": "One other thing. We arrived in Aberdeen hours before the ferry was due to leave so we decided to go somewhere else rather than hang around at the port for so long.",
+      "start": 289.22,
+      "end": 300.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "TAMMY",
+      "text": "Where did you go?",
+      "start": 300.1,
+      "end": 301.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "PAUL",
+      "text": "Drum Castle. (Q9)",
+      "start": 301.46,
+      "end": 302.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "TAMMY",
+      "text": "I've never heard of it. Is that spelt like the instrument?",
+      "start": 302.48,
+      "end": 306.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "PAUL",
+      "text": "Yeah. It's really worth visiting. It's got an impressive tower and beautiful gardens and ancient woodland.",
+      "start": 306.22,
+      "end": 311.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "TAMMY",
+      "text": "Sounds lovely. Does it have a restaurant?",
+      "start": 311.66,
+      "end": 314.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "PAUL",
+      "text": "It's only got a coffee shop – no restaurant. We looked up restaurants in the area and found an Italian one in a village nearby. I can check the name of it for you if you're interested. (Q10)",
+      "start": 314.04,
+      "end": 326.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "TAMMY",
+      "text": "Oh thanks Paul that would be ....",
+      "start": 326.96,
+      "end": 330.449,
+      "preAudio": false
+    }
+  ]
+}

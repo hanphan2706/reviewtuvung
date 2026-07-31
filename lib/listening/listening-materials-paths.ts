@@ -38,6 +38,7 @@ const TACTICS_BASIC_AUDIO_FILE = /^Unit\d{2}-Listening\d{2}\.mp3$/;
 const CAM_AUDIO_FILE = /^Test[1-4] Part[1-4]\.mp3$/;
 const CAM18_AUDIO_FILE = /^Cam18 Test[1-4] Part[1-4]\.mp3$/i;
 const CAM20_AUDIO_FILE = /^Cam20 Test[1-4] Part[1-4]\.mp3$/i;
+const CAM21_AUDIO_FILE = /^cam21-test[1-4]-part[1-4]\.mp3$/i;
 const REAL_TEST_AUDIO_FILE = /^real test \d+\.mp3$/i;
 
 function listeningAudioSubdirsForFile(fileName: string): string[] {
@@ -52,6 +53,9 @@ function listeningAudioSubdirsForFile(fileName: string): string[] {
   }
   if (CAM20_AUDIO_FILE.test(fileName)) {
     return [LISTENING_AUDIO_CAM20_SUBDIR, LISTENING_AUDIO_CAM_SUBDIR];
+  }
+  if (CAM21_AUDIO_FILE.test(fileName)) {
+    return [LISTENING_AUDIO_CAM_SUBDIR];
   }
   if (CAM_AUDIO_FILE.test(fileName)) {
     return [LISTENING_AUDIO_CAM_SUBDIR, LISTENING_AUDIO_TACTICS_BASIC_SUBDIR];

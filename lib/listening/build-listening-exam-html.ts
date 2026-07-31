@@ -176,6 +176,11 @@ function stripNoteBulletPrefix(line: string): { level: number | null; text: stri
   return { level: null, text: trimmed };
 }
 
+/** Soft indent from QnA (spaces / NBSP), e.g. Cam 21 survey sub-bullets under a label. */
+function hasLeadingSoftIndent(line: string): boolean {
+  return /^[\t \u00a0]{2,}\S/.test(line);
+}
+
 /** Dòng tiêu đề section: không bullet, không blank, không câu mô tả. */
 function isNoteSectionTitleLine(line: string): boolean {
   const { level, text } = stripNoteBulletPrefix(line);
@@ -220,6 +225,7 @@ function renderNoteBodyLine(line: string, options?: { docTitle?: boolean }): str
 
   if (level === 0) return `<p class="note-line note-bullet-0"><span class="note-bullet-mark">•</span> ${html}</p>`;
   if (level === 1) return `<p class="note-line note-bullet-1"><span class="note-bullet-mark">–</span> ${html}</p>`;
+  if (hasLeadingSoftIndent(line)) return `<p class="note-line note-indent">${html}</p>`;
   return `<p class="note-line">${html}</p>`;
 }
 

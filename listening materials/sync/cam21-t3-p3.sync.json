@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "partId": "cam21-t3-p3",
+  "audioFile": "cam21-test3-part3.mp3",
+  "durationSeconds": 360.96,
+  "method": "whisper-local",
+  "preambleSeconds": 46.14,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "MADDY",
+      "text": "Shall we go through our research for our sustainable fashion project?",
+      "start": 46.14,
+      "end": 49.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "RYAN",
+      "text": "Good idea. I think I've done enough reading now.",
+      "start": 49.96,
+      "end": 53.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "MADDY",
+      "text": "Me too. I've learnt such a lot about what sustainability actually means.",
+      "start": 53.64,
+      "end": 58.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "RYAN",
+      "text": "Mmm, same for me with ethical fashion. I didn't really appreciate the difference between that and sustainable fashion before doing this research.",
+      "start": 58.74,
+      "end": 67.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "MADDY",
+      "text": "I know – most people use these terms interchangeably – but in fact the difference is quite distinct when you think about it. Sustainable relates to the environment and ethical relates more to the way workers or animals are treated. (Q21/22)",
+      "start": 67.62,
+      "end": 82.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "RYAN",
+      "text": "I totally understand why people get confused, though. There are so many other terms used – like 'eco-friendly', which is actually quite meaningless.",
+      "start": 82.56,
+      "end": 92.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "MADDY",
+      "text": "And the way companies use these terms when describing their products doesn't help. They're often deliberately vague, I think, and don't provide enough information about how their products are made. (Q21/22)",
+      "start": 92.66,
+      "end": 103.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "RYAN",
+      "text": "Yes.",
+      "start": 103.7,
+      "end": 104.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "MADDY",
+      "text": "It was interesting to read about the debates surrounding wool production and how ethical and sustainable that is. It's generally considered to be sustainable because it's a natural product.",
+      "start": 104.64,
+      "end": 115.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "RYAN",
+      "text": "And it also lasts a long time and can be recycled. All very positive. But I wasn't convinced by the argument that wool production is sustainable because it doesn't use many chemicals – what about all the fungicides and insecticides used in sheep farming? (Q23/24)",
+      "start": 115.92,
+      "end": 132.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "MADDY",
+      "text": "Good point. And I couldn't find any evidence for the claim about sheep farming being better for the environment than cattle farming. (Q23/24)",
+      "start": 132.94,
+      "end": 141.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "RYAN",
+      "text": "No – they're both really bad. I read different reports about how unethical it is to even shear sheep. Some people say it's cruel but as long as the sheep are kept in good condition I can't see anything wrong with it.",
+      "start": 141.78,
+      "end": 156.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "MADDY",
+      "text": "Me neither.",
+      "start": 156.98,
+      "end": 203.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "RYAN",
+      "text": "Shall we talk about some of the semi-synthetic new fabrics now?",
+      "start": 203.99,
+      "end": 208.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "MADDY",
+      "text": "OK, let's do that.",
+      "start": 208.05,
+      "end": 209.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "RYAN",
+      "text": "Let's start with Lyocell, I've been reading about that.",
+      "start": 209.99,
+      "end": 214.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "MADDY",
+      "text": "Yeah, that's the one produced from the pulp of eucalyptus trees, isn't it?",
+      "start": 214.15,
+      "end": 218.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "RYAN",
+      "text": "Yes, and what happens with that is really impressive. Over 99% of dissolving agents used in the manufacturing process are used again. (Q25)",
+      "start": 218.57,
+      "end": 228.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "MADDY",
+      "text": "Yeah. Now, there are a few semi-synthetic fabrics that I'd never heard of. Like Cupro, for example.",
+      "start": 228.95,
+      "end": 237.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "RYAN",
+      "text": "Made from byproducts of the cotton industry to create a kind of vegan silk. But I'm not sure how sustainable this really is as there are so many reports of pollution caused by the manufacturing process.",
+      "start": 237.61,
+      "end": 250.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "MADDY",
+      "text": "Mmm. It doesn't compare favourably with all the other sustainable fabrics we've looked at, no. (Q26)",
+      "start": 250.93,
+      "end": 256.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "RYAN",
+      "text": "Bamboo is one fabric we're all familiar with. But I didn't know that it was only organic bamboo that's truly sustainable.",
+      "start": 256.89,
+      "end": 264.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "MADDY",
+      "text": "Me neither. Apparently, the manufacturing process for a significant proportion of bamboo is chemically quite intensive – which obviously can be quite damaging. (Q27)",
+      "start": 264.87,
+      "end": 276.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "RYAN",
+      "text": "EcoVero is an example of a semi-synthetic fabric which is becoming really popular.",
+      "start": 276.97,
+      "end": 282.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "MADDY",
+      "text": "Probably because manufacturing causes 50 percent fewer emissions and takes up half as much energy as conventional fabrics. That saves production costs as well as being better for the environment. (Q28)",
+      "start": 282.21,
+      "end": 294.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "RYAN",
+      "text": "That's true. I think demand for cork will continue to grow. It works really well in vegan shoes and bags.",
+      "start": 294.95,
+      "end": 302.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "MADDY",
+      "text": "Mmm and it's the only fabric that's fundamentally sustainable – the cork trees it comes from are renewable and the product itself is both recyclable and biodegradable – which is unique. (Q29)",
+      "start": 302.93,
+      "end": 315.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "RYAN",
+      "text": "And the harvesting process is actually good for the trees. There are no downsides to using this source at all.",
+      "start": 315.79,
+      "end": 323.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "MADDY",
+      "text": "Hemp is another really good sustainable fabric from a natural source.",
+      "start": 323.99,
+      "end": 328.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "RYAN",
+      "text": "Yes. Did you know that clothes made from hemp protect the wearer from the sun and it's also antibacterial? (Q30)",
+      "start": 328.19,
+      "end": 336.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "MADDY",
+      "text": "No, I didn't. But I did read that it's quite hard to grow, so perhaps that's why it's not as common as you'd think.",
+      "start": 336.17,
+      "end": 344.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "RYAN",
+      "text": "I'm sure that'll change.",
+      "start": 344.33,
+      "end": 360.96,
+      "preAudio": false
+    }
+  ]
+}

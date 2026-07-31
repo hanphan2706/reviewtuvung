@@ -19,7 +19,7 @@ import { sanitizeListeningTranscript } from "../lib/sanitize-listening-transcrip
 import { splitTranscriptByPart } from "../lib/listening/split-transcript-parts";
 import type { ListeningFlowLessonContent } from "../lib/listening/tactics-basic-flow-types";
 
-type ExamSlug = "cam18" | "cam20";
+type ExamSlug = "cam18" | "cam20" | "cam21";
 
 const WRONG_GIST = [
   {
@@ -48,8 +48,8 @@ function parseArgs(argv: string[]): { exam: ExamSlug; tests: number[] } {
     if (a === "--all-tests") allTests = true;
   }
 
-  if (!["cam18", "cam20"].includes(exam)) {
-    throw new Error("--exam must be cam18 or cam20");
+  if (!["cam18", "cam20", "cam21"].includes(exam)) {
+    throw new Error("--exam must be cam18, cam20 or cam21");
   }
 
   const tests = allTests ? [1, 2, 3, 4] : [test];
@@ -81,6 +81,74 @@ function siblingParts(exam: ExamSlug, test: number, part: number) {
     (p) => p.examSlug === exam && p.test === test && p.part !== part,
   );
 }
+
+/** VI labels for Cam 21 hub titles/summaries (generated flow). */
+const CAM21_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
+  "cam21-t1-p1": {
+    titleVi: "Câu lạc bộ thuyền buồm Oyster Bay",
+    summaryVi: "CLB thuyền buồm giới thiệu các khóa học, học phí và yêu cầu thực tế cho người mới.",
+  },
+  "cam21-t1-p2": {
+    titleVi: "Làm thực tập sinh trang điểm",
+    summaryVi: "Nghệ sĩ trang điểm nói về công việc thực tập trên phim trường, lương và thử thách nghề nghiệp.",
+  },
+  "cam21-t1-p3": {
+    titleVi: "Bài giảng đa dạng sinh học đại dương",
+    summaryVi: "Sinh viên thảo luận bài giảng về đa dạng sinh học biển và nối nhận xét với chủ đề nghiên cứu.",
+  },
+  "cam21-t1-p4": {
+    titleVi: "Nguồn gốc cao su",
+    summaryVi: "Bài giảng về nguồn cao su tự nhiên, nhu cầu, tái chế và phản ứng của thực vật với stress.",
+  },
+  "cam21-t2-p1": {
+    titleVi: "Lớp học tại Steynford College",
+    summaryVi: "Các khóa học một ngày về làm bánh, lịch học, học phí và những gì cần mang theo.",
+  },
+  "cam21-t2-p2": {
+    titleVi: "Đi bộ ven biển Marsden",
+    summaryVi: "Lời khuyên cho chuyến đi bộ ven biển kèm bài gắn nhãn bản đồ các điểm trên đường.",
+  },
+  "cam21-t2-p3": {
+    titleVi: "Dự án khóa an toàn thực phẩm",
+    summaryVi: "Sinh viên ôn các buổi an toàn thực phẩm và lập sơ đồ các bước phát triển sản phẩm mới.",
+  },
+  "cam21-t2-p4": {
+    titleVi: "Thách thức ngành du thuyền",
+    summaryVi: "Bài giảng về quá tải du lịch, nhận thức công chúng và áp lực bền vững với tàu du lịch.",
+  },
+  "cam21-t3-p1": {
+    titleVi: "Phà tới quần đảo Shetland",
+    summaryVi: "Chi tiết đặt phà tới Shetland, gồm tiện nghi và giá vé.",
+  },
+  "cam21-t3-p2": {
+    titleVi: "Sự phổ biến của ẩm thực đường phố",
+    summaryVi: "Bài nói về lý do street food phổ biến và cách người bán quản lý địa điểm, vệ sinh.",
+  },
+  "cam21-t3-p3": {
+    titleVi: "Thời trang đạo đức và bền vững",
+    summaryVi: "Sinh viên bàn về thuật ngữ thời trang đạo đức và nối quan điểm với các khía cạnh ngành may.",
+  },
+  "cam21-t3-p4": {
+    titleVi: "Loài xâm lấn",
+    summaryVi: "Bài giảng về động/thực vật xâm lấn, hại sinh thái và chiến lược kiểm soát.",
+  },
+  "cam21-t4-p1": {
+    titleVi: "Khảo sát mua sắm Broadbeach",
+    summaryVi: "Biểu mẫu khảo sát người mua về đi lại, thói quen mua sắm và cửa hàng địa phương.",
+  },
+  "cam21-t4-p2": {
+    titleVi: "Quảng bá tại triển lãm doanh nghiệp",
+    summaryVi: "Diễn giả mô tả quảng bá công ty tại triển lãm và nối vai trò nhân viên.",
+  },
+  "cam21-t4-p3": {
+    titleVi: "Nhà ở của tương lai",
+    summaryVi: "Sinh viên lên kế hoạch thuyết trình về nhà ở tương lai và đánh giá các đề xuất đô thị.",
+  },
+  "cam21-t4-p4": {
+    titleVi: "Liệu pháp âm nhạc cho bệnh nhân phẫu thuật",
+    summaryVi: "Bài giảng về dùng liệu pháp âm nhạc để giảm lo âu và hỗ trợ hồi phục sau phẫu thuật.",
+  },
+};
 
 function extractMarkedDetails(transcript: string, max = 6): {
   key: string;
@@ -178,18 +246,22 @@ function buildPartContent(
 
   const transcript = loadTranscriptPart(exam, test, part);
   const siblings = siblingParts(exam, test, part);
+  const vi = exam === "cam21" ? CAM21_FLOW_VI[partId] : undefined;
 
   const predictionOptions = [
     {
       key: "pred-main",
       labelEn: meta.title,
-      labelVi: meta.title,
+      labelVi: vi?.titleVi ?? meta.title,
     },
-    ...siblings.slice(0, 3).map((s, i) => ({
-      key: `pred-${i + 1}`,
-      labelEn: s.title,
-      labelVi: s.title,
-    })),
+    ...siblings.slice(0, 3).map((s, i) => {
+      const siblingVi = exam === "cam21" ? CAM21_FLOW_VI[s.id] : undefined;
+      return {
+        key: `pred-${i + 1}`,
+        labelEn: s.title,
+        labelVi: siblingVi?.titleVi ?? s.title,
+      };
+    }),
   ].slice(0, 4);
 
   while (predictionOptions.length < 4) {
@@ -204,7 +276,7 @@ function buildPartContent(
     {
       key: "gist-correct",
       labelEn: meta.summary,
-      labelVi: meta.summary,
+      labelVi: vi?.summaryVi ?? meta.summary,
       correct: true as const,
     },
     ...WRONG_GIST.slice(0, 3).map((g, i) => ({

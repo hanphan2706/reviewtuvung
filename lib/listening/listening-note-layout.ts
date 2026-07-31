@@ -87,6 +87,18 @@ function isHeaderCellLine(line: string): boolean {
   return text.length <= 48;
 }
 
+function isFormContinuationLine(raw: string, stripped: string): boolean {
+  if (/^\s{2,}/.test(raw)) return true;
+  if (/^[a-z]/.test(stripped)) return true;
+  return false;
+}
+
+/**
+ * IELTS form rows:
+ * - Classic: `Label:` on its own line, then value line(s)
+ * - Inline: `Label: value with blank` on one line (Cam 18 / Cam 21 survey)
+ * Label-only rows only absorb indented / lowercase continuations — do not swallow the rest of the form.
+ */
 function parseFormRows(bodyLines: readonly string[]): NoteFormRow[] {
   const rows: NoteFormRow[] = [];
   let pendingLabel: string | null = null;
@@ -101,14 +113,35 @@ function parseFormRows(bodyLines: readonly string[]): NoteFormRow[] {
 
   for (const raw of bodyLines) {
     const stripped = stripBulletPrefix(raw);
-    if (isNoteFieldLabelLine(stripped)) {
-      flush();
-      pendingLabel = stripped;
+    if (!stripped.trim()) {
+      if (pendingLabel && valueLines.length > 0) flush();
       continue;
     }
-    if (pendingLabel) {
-      valueLines.push(raw);
+
+    const colonMatch = stripped.match(/^([^:]{1,100}):\s*(.*)$/);
+    if (colonMatch) {
+      const label = `${colonMatch[1]!.trim()}:`;
+      const valuePart = (colonMatch[2] ?? "").trim();
+      if (valuePart.length > 0) {
+        flush();
+        rows.push({ label, valueLines: [valuePart] });
+        continue;
+      }
+      flush();
+      pendingLabel = label;
       continue;
+    }
+
+    if (pendingLabel) {
+      if (isDocTitleLine(stripped) && !lineHasBlank(stripped)) {
+        flush();
+        continue;
+      }
+      if (isFormContinuationLine(raw, stripped) || lineHasBlank(stripped)) {
+        valueLines.push(raw);
+        continue;
+      }
+      flush();
     }
   }
   flush();
@@ -232,12 +265,26 @@ export function inferNoteBodyLayout(
   if (/complete the form below/i.test(instructionText)) {
     const formRows = parseFormRows(bodyLines);
     if (formRows.length > 0) {
-      const firstLine = bodyLines.find((line) => line.trim()) ?? "";
-      const title =
-        firstLine.trim() && isDocTitleLine(firstLine) && !isNoteFieldLabelLine(stripBulletPrefix(firstLine))
-          ? stripBulletPrefix(firstLine)
-          : undefined;
-      return { kind: "form", title, rows: formRows };
+      const blanksInBody = collectBlankNumbersFromLines(bodyLines);
+      const blanksInForm = collectBlankNumbersFromLines(
+        formRows.flatMap((row) => [row.label, ...row.valueLines]),
+      );
+      const coversMostBlanks =
+        blanksInBody.length === 0 ||
+        blanksInForm.length >= Math.ceil(blanksInBody.length * 0.8);
+
+      // Hybrid survey forms (section headings + prose lines) render better as freeform.
+      if (coversMostBlanks) {
+        const firstLine = bodyLines.find((line) => line.trim()) ?? "";
+        const title =
+          firstLine.trim() &&
+          isDocTitleLine(firstLine) &&
+          !isNoteFieldLabelLine(stripBulletPrefix(firstLine)) &&
+          !/^[^:]+:\s+\S/.test(stripBulletPrefix(firstLine))
+            ? stripBulletPrefix(firstLine)
+            : undefined;
+        return { kind: "form", title, rows: formRows };
+      }
     }
   }
 

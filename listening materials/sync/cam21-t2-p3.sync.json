@@ -1,0 +1,322 @@
+{
+  "version": 1,
+  "partId": "cam21-t2-p3",
+  "audioFile": "cam21-test2-part3.mp3",
+  "durationSeconds": 416.104438,
+  "method": "whisper-local",
+  "preambleSeconds": 56.21,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "TUTOR",
+      "text": "Thanks for coming along, Nadia and Fergus. So this is a chance for you to give us some feedback about different aspects of your course. What would you like to begin with?",
+      "start": 56.21,
+      "end": 67.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "NADIA",
+      "text": "I've enjoyed the sessions on food safety. There was some information there that I found really surprising, although some was stuff I knew already, like the rise in rates of obesity.",
+      "start": 67.89,
+      "end": 79.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "FERGUS",
+      "text": "Yeah, that's been in the news a lot. But I hadn't realised that unsafe food causes more than 200 different diseases. (Q21/22)",
+      "start": 79.07,
+      "end": 87.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "NADIA",
+      "text": "No, I'd no idea it was that many. And speaking of diseases, I knew resistance to antibiotics is on the increase, but I didn't know why...",
+      "start": 87.03,
+      "end": 98.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "FERGUS",
+      "text": "...that it's partly because when animals are treated with antibiotics then consumed by humans, the antibiotics get into the food chain. I had no idea about that either. (Q21/22)",
+      "start": 98.23,
+      "end": 109.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "NADIA",
+      "text": "Then the sessions provided a lot of information about plastic pollution from food packaging in the ocean, but I think that most of us were already aware of that.",
+      "start": 109.47,
+      "end": 119.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "FERGUS",
+      "text": "Yeah. But I thought we could have done more on how much food is thrown away unnecessarily through fear of it being out of date, that was only mentioned in passing.",
+      "start": 119.85,
+      "end": 130.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "TUTOR",
+      "text": "OK, I'll bear that in mind. What did you think about the sessions from visiting lecturers, Fergus?",
+      "start": 130.39,
+      "end": 137.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "FERGUS",
+      "text": "For me the most interesting one was about that project to prevent companies giving incorrect information to consumers about food.",
+      "start": 137.39,
+      "end": 144.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "TUTOR",
+      "text": "Ah, food fraud, yes.",
+      "start": 144.77,
+      "end": 148.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "FERGUS",
+      "text": "I thought it was really good to address a problem that's faced by so many different groups – people with special religious rules, as well as vegetarians and vegans. (Q23/24)",
+      "start": 148.13,
+      "end": 158.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "NADIA",
+      "text": "And those with allergies.",
+      "start": 158.33,
+      "end": 159.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "FERGUS",
+      "text": "Yeah. And another thing, we've had effective ways of analysing DNA for some time now and these can easily be applied to analysing food. But what the researchers succeeded in doing was to ensure that these tests were carried out at different stages in the food's journey from the producer to the consumer. (Q23/24)",
+      "start": 159.69,
+      "end": 178.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "NADIA",
+      "text": "So they knew that the food actually came from the place it was supposed to, and had the ingredients it was meant to.",
+      "start": 178.59,
+      "end": 186.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "FERGUS",
+      "text": "Exactly. So customers can be confident about what they buy.",
+      "start": 186.41,
+      "end": 189.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "NADIA",
+      "text": "And the researchers had a good system for publicising their findings too.",
+      "start": 189.81,
+      "end": 193.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "FERGUS",
+      "text": "Well, I thought there were some problems with that, actually.",
+      "start": 193.91,
+      "end": 198.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "TUTOR",
+      "text": "OK. And do you have any recommendations for new topics that we could include in the course?",
+      "start": 198.31,
+      "end": 204.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "NADIA",
+      "text": "Well, I'm interested in how crop yields can be increased without damaging the environment.",
+      "start": 204.63,
+      "end": 210.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "FERGUS",
+      "text": "But we've already done quite a bit on that – but not so much on the seafood industry, where stocks are in danger of being overexploited as a food source unless we can find ways of keeping stocks up. (Q25/26)",
+      "start": 210.37,
+      "end": 223.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "NADIA",
+      "text": "Yes, that'd be a good topic. And I'm interested in the idea of a personalised approach to diet, now we have the technology to analyse exactly what individuals need.",
+      "start": 223.97,
+      "end": 234.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "FERGUS",
+      "text": "That sounds more like a medical topic than food science.",
+      "start": 234.23,
+      "end": 238.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "NADIA",
+      "text": "OK. What about sessions on the variety of food and eating habits around the world? That's very relevant nowadays. (Q25/26)",
+      "start": 238.37,
+      "end": 246.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "FERGUS",
+      "text": "Yes, I think the whole class would be interested in that.",
+      "start": 246.91,
+      "end": 250.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "NADIA",
+      "text": "Then there's technological stuff, things like 3D printing of food and smart packaging.",
+      "start": 250.65,
+      "end": 255.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "FERGUS",
+      "text": "Mmm – maybe too specialist.",
+      "start": 255.73,
+      "end": 294.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "TUTOR",
+      "text": "Now, I'm particularly interested in your project – the one where you developed a new food product. So talk me through the stages... first you had to decide on your initial aim.",
+      "start": 294.61,
+      "end": 307.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "FERGUS",
+      "text": "We decided we wanted to create something people could eat on the go rather than in a restaurant.",
+      "start": 307.31,
+      "end": 313.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "NADIA",
+      "text": "Yeah so we chose falafel, which was originally a Middle Eastern snack.",
+      "start": 313.69,
+      "end": 319.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "FERGUS",
+      "text": "We made up our minds about that pretty quickly. I know some students found it a lot harder to choose, and wasted a lot of time. (Q27)",
+      "start": 319.19,
+      "end": 328.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "NADIA",
+      "text": "Then we had to do the literature review. We hadn't done one of these before so the handout with advice for the project was very useful here. (Q28)",
+      "start": 328.37,
+      "end": 337.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "FERGUS",
+      "text": "Yes, especially the advice on how to present the information. Then product development, actually deciding what we'd use to make the falafel, and for me the interesting thing about that was that we wanted it to be something a bit different from an ordinary falafel. (Q29)",
+      "start": 337.89,
+      "end": 355.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "NADIA",
+      "text": "We really made the right choice when we finally decided to use jackfruit, even though it wasn't something that either of us had ever tasted before.",
+      "start": 355.07,
+      "end": 363.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "FERGUS",
+      "text": "Yeah, like the name tells you, it's a fruit but actually it's really good in savoury dishes. The product production, working out how to make the falafel, was harder than I expected because I'd never made them before.",
+      "start": 363.99,
+      "end": 379.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "NADIA",
+      "text": "It was mostly trial and error. We started off with the basic recipe and then experimented and when it went wrong...",
+      "start": 379.65,
+      "end": 388.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "FERGUS",
+      "text": "...which it did a lot of the time...",
+      "start": 388.21,
+      "end": 390.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "NADIA",
+      "text": "...we just moved on and kept adapting it and in the end it turned out fine and we had a lot of fun. (Q30)",
+      "start": 390.93,
+      "end": 399.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "FERGUS",
+      "text": "We did!",
+      "start": 399.09,
+      "end": 399.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "TUTOR",
+      "text": "Thank you. Well, your project was a very good ....",
+      "start": 399.77,
+      "end": 416.104,
+      "preAudio": false
+    }
+  ]
+}

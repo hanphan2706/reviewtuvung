@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "partId": "cam21-t1-p3",
+  "audioFile": "cam21-test1-part3.mp3",
+  "durationSeconds": 384.235063,
+  "method": "whisper-local",
+  "preambleSeconds": 58.13,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "PHIL",
+      "text": "That lecture from the visiting speaker yesterday was good, wasn't it?",
+      "start": 58.13,
+      "end": 62.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "LUCY",
+      "text": "Yeah. I learned a lot from her about ocean biodiversity. I've already done some reading on it, and I did an assignment on some of the problems associated with it last year, but I especially liked the way her lecture focused on more long-term issues. (Q21/Q22)",
+      "start": 62.42,
+      "end": 79.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "PHIL",
+      "text": "Yes, things that aren't currently receiving widespread attention but are likely to be important in the future. That impressed me too. It wasn't exactly a feel-good conclusion because it's hard to see any real solution for a lot of the problems.",
+      "start": 79.92,
+      "end": 96.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "LUCY",
+      "text": "No, though she did point to where policy changes could be made to protect our marine and coastal environments.",
+      "start": 96.28,
+      "end": 103.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "PHIL",
+      "text": "Mm. But that's just at a national level. The examples she gave were at a more global level, and they really made it clear to me just how wide-ranging the threats to ocean biodiversity are. (Q21/Q22)",
+      "start": 103.86,
+      "end": 116.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "LUCY",
+      "text": "Yes, me too.",
+      "start": 116.58,
+      "end": 118.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "PHIL",
+      "text": "The research project she described was impressive, wasn't it? I'd have thought it was quite unusual to have so many experts working together. (Q23/Q24)",
+      "start": 118.3,
+      "end": 127.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "LUCY",
+      "text": "Yeah, and from such different backgrounds. Must have been a really exciting team to work with. I'd heard of a couple of them before – they were involved in research way back in 2009 warning about the dangers of ocean pollution. (Q23/Q24)",
+      "start": 127.06,
+      "end": 142,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "PHIL",
+      "text": "But now people are much more aware of that, aren't they?",
+      "start": 142,
+      "end": 145.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "LUCY",
+      "text": "I suppose so.",
+      "start": 145.74,
+      "end": 146.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "PHIL",
+      "text": "Another thing about the research is that the team members came from all round the world. Though I suppose that's not unusual nowadays, now everyone can work remotely.",
+      "start": 146.94,
+      "end": 157.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "LUCY",
+      "text": "Right. I liked the way she didn't bombard us with figures – I mean, they were available, but she focused more on the general points they indicated.",
+      "start": 157.84,
+      "end": 168.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "PHIL",
+      "text": "Mm. And the description of improvements in systems used for tracking marine animals and things like robots were really interesting. (Q23/Q24)",
+      "start": 168.74,
+      "end": 177.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "LUCY",
+      "text": "Yes, and her description of how robotics can be used to investigate threats to biodiversity.",
+      "start": 177.76,
+      "end": 184.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "PHIL",
+      "text": "Absolutely.",
+      "start": 184.66,
+      "end": 236.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "PHIL",
+      "text": "While you're here, can we talk about the list of resources we have to evaluate for the seminar tomorrow. I've had a look at them all, but it's been a bit of a rush.",
+      "start": 236.67,
+      "end": 248.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "LUCY",
+      "text": "Yeah. What did you think of that article on invasive lionfish? The one claiming they were expanding their habitat throughout the Mediterranean Sea.",
+      "start": 248.23,
+      "end": 256.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "PHIL",
+      "text": "Well, the writer went on about how dangerous they were in environmental terms, which is probably true, but he didn't really provide much information to explain why. (Q25)",
+      "start": 256.73,
+      "end": 269.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "LUCY",
+      "text": "I know what you mean.",
+      "start": 269.09,
+      "end": 270.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "PHIL",
+      "text": "I watched the documentary on microplastics, at least I started to, but then I found it was made ten years ago so I gave up.",
+      "start": 270.79,
+      "end": 279.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "LUCY",
+      "text": "I watched to the end but you're right, it was showing its age. People had hardly heard of microplastics then, whereas now everyone knows about them and how dangerous they are. (Q26)",
+      "start": 279.87,
+      "end": 291.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "PHIL",
+      "text": "Yeah. Did you listen to the podcast on ocean pollution?",
+      "start": 291.19,
+      "end": 295.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "LUCY",
+      "text": "Mm. I didn't get anything out of it though. Most of it was stating the obvious.",
+      "start": 295.57,
+      "end": 301.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "PHIL",
+      "text": "Yes, it mentioned pesticides and plastic and things, and it clearly made the point that they were a bad thing, but everybody knows that anyway. Did you read that book on coastal ecosystems? (Q27)",
+      "start": 301.01,
+      "end": 314.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "LUCY",
+      "text": "The one by John Harper? Yes, I found it hard going at first, it went into a lot of detail about things like the effects of offshore windfarms and fish farms, but actually I ended up with a much better understanding of the issues.",
+      "start": 314.71,
+      "end": 330.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "PHIL",
+      "text": "Yes, I agree and I thought it was a well-written summary of those. And the diagrams helped a lot too. (Q28)",
+      "start": 330.63,
+      "end": 338.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "LUCY",
+      "text": "The article on metal toxicity was way above my head, I didn't know anything about how metals from industrial emissions react in the ocean... and I still don't understand it. (Q29)",
+      "start": 338.09,
+      "end": 350.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "PHIL",
+      "text": "I gave up reading after the first chapter – I just couldn't follow it.",
+      "start": 350.33,
+      "end": 355.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "LUCY",
+      "text": "That podcast on floating marine cities was interesting, though it presented a rather one-sided picture, I thought. (Q30)",
+      "start": 355.55,
+      "end": 363.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "PHIL",
+      "text": "Yes, it focused on how this would benefit people and ignored the effects on the environment.",
+      "start": 363.59,
+      "end": 369.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "LUCY",
+      "text": "But anyway, shall we ...",
+      "start": 369.99,
+      "end": 384.235,
+      "preAudio": false
+    }
+  ]
+}

@@ -1,0 +1,451 @@
+{
+  "version": 1,
+  "partId": "cam21-t3-p2",
+  "audioFile": "cam21-test3-part2.mp3",
+  "durationSeconds": 379.79425,
+  "method": "whisper-local",
+  "preambleSeconds": 58.48,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Good evening everyone.",
+      "start": 51.462,
+      "end": 52.632,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "My name's Jon and I run Veg Out, a street food business selling vegan food.",
+      "start": 52.632,
+      "end": 58.48,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Since 2012 I've been travelling all around the country cooking vegan food in my converted van and selling it at all kinds of outdoor events.",
+      "start": 58.48,
+      "end": 66.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "I'm here to give you some advice based on my experience.",
+      "start": 66.98,
+      "end": 70.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "The good news is that there's never been a better time to start your own street food business.",
+      "start": 70.72,
+      "end": 76.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Street food continues to grow in popularity.",
+      "start": 76.84,
+      "end": 79.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "I think there are a couple of reasons for this.",
+      "start": 79.22,
+      "end": 80.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "The first is that street food is a reaction against fast food.",
+      "start": 80.58,
+      "end": 85.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Street food ranges from high quality burgers to vegan curries and everything in between.",
+      "start": 85.88,
+      "end": 92.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "But while fast food is cheap and easy to find, it's not particularly good for you.",
+      "start": 92.36,
+      "end": 98.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "It's also the same everywhere.",
+      "start": 98.18,
+      "end": 101.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "What you get with street food on the other hand is something different.",
+      "start": 101.1,
+      "end": 105.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "People like the idea of trying something they can't get anywhere else.",
+      "start": 105.52,
+      "end": 110,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "They also like seeing food prepared in front of them and which hasn't come straight out of a freezer.",
+      "start": 110,
+      "end": 116.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "(Q11/12)",
+      "start": 116.46,
+      "end": 116.91
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "You need to think about the best place to sell your street food.",
+      "start": 116.91,
+      "end": 121.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "People always think music festivals are an obvious place to start but the cost of renting a space can be huge.",
+      "start": 121.33,
+      "end": 128.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "And there's always a lot of competition.",
+      "start": 128.47,
+      "end": 130.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Food markets, on the other hand, are great because customers are always really interested in food and give great feedback.",
+      "start": 130.92,
+      "end": 139.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "And if you can get a spot in your local park – fantastic.",
+      "start": 139.3,
+      "end": 144.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Usually very relaxed but with lots of customers passing by.",
+      "start": 144.68,
+      "end": 149.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Once you get established you'll start getting asked to do parties – which can be really challenging but lots of fun.",
+      "start": 149.24,
+      "end": 156.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Having street food at weddings has become quite fashionable too – but you need to really know what you're doing as everything needs to be perfect.",
+      "start": 156.7,
+      "end": 206.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "(Q13/14)",
+      "start": 206.25,
+      "end": 210.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Setting up a street food business costs a lot less than opening a restaurant or café but you'll have to buy some basic equipment.",
+      "start": 210.27,
+      "end": 218.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "I'd try to get things like hobs and fridges second hand if you can.",
+      "start": 218.63,
+      "end": 223.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "You can replace them with better quality stuff if your business takes off.",
+      "start": 223.51,
+      "end": 228.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Renting is another option but you'll end up spending more money rather than saving it.",
+      "start": 228.03,
+      "end": 233.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "(Q15)",
+      "start": 233.13,
+      "end": 233.89
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "You've probably got a good idea about the food you're planning to sell.",
+      "start": 233.89,
+      "end": 238.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "I expect you've done some research to find out if anyone else is selling a similar product.",
+      "start": 238.31,
+      "end": 244.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "And you'll have thought about any possible allergies to nuts or eggs etc.",
+      "start": 244.09,
+      "end": 248.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "But there's one thing people don't always think about and that's how you're going to serve it.",
+      "start": 248.51,
+      "end": 254.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "On a plate?",
+      "start": 254.29,
+      "end": 255.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "In a bag?",
+      "start": 255.35,
+      "end": 256.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Will you provide a fork?",
+      "start": 256.49,
+      "end": 258.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Will it all be easily recyclable or reusable?",
+      "start": 258.23,
+      "end": 262.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "It's got to be easy to eat and look attractive or customers won't come back.",
+      "start": 262.13,
+      "end": 267.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "(Q16)",
+      "start": 267.23,
+      "end": 268.13
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "Once you get started, you should be prepared for things to go wrong. Every business faces problems and here are a few examples from street food businesses that I know.",
+      "start": 268.13,
+      "end": 280.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "My friends who run Thai Basil started by juggling their street food business with their day jobs in a restaurant.",
+      "start": 280.79,
+      "end": 288.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "Their work-life balance was non-existent as they were working til midnight in the restaurant all week and then took their food truck to markets on their days off.",
+      "start": 288.93,
+      "end": 298.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "(Q17)",
+      "start": 298.45,
+      "end": 299.59
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "The owners of Basque found it was hard to make a profit because the price of fish – essential for some of their dishes – was so high.",
+      "start": 299.59,
+      "end": 309.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "And it was hard to charge customers a lot more for those dishes.",
+      "start": 309.11,
+      "end": 313.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "So they had to stop focussing on fish dishes and include more vegetarian food.",
+      "start": 313.53,
+      "end": 318.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "(Q18)",
+      "start": 318.29,
+      "end": 318.74
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "The owners of Lou's kitchen were making salads to order from their van and some of their dishes were quite complicated.",
+      "start": 318.74,
+      "end": 325.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "At one of their first events they ended up with people standing in a long queue for more than 15 minutes – and many of them lost patience.",
+      "start": 325.88,
+      "end": 334.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "So make sure whatever you offer can be served quickly and efficiently.",
+      "start": 334.63,
+      "end": 338.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "(Q19)",
+      "start": 338.71,
+      "end": 339.95
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "The owners of Chip Chop had found a perfect venue near a beach where there weren't any other street food trucks.",
+      "start": 339.95,
+      "end": 347.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "But what they hadn't realised was that they'd need a special licence – which individual businesses don't need at markets or festivals.",
+      "start": 347.09,
+      "end": 357.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "It was a complicated process and in the end they gave up.",
+      "start": 357.29,
+      "end": 361.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "(Q20)",
+      "start": 361.37,
+      "end": 362.61
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "So I hope that's given you a flavour of ....",
+      "start": 362.61,
+      "end": 379.794,
+      "preAudio": false
+    }
+  ]
+}

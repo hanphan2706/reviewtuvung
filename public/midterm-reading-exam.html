@@ -195,10 +195,11 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 }
 
 /* MCQ */
-.opts{display:flex;flex-direction:column;gap:7px}
-.opt{display:flex;align-items:flex-start;gap:10px;cursor:pointer;padding:8px 12px;border-radius:7px;border:1.5px solid var(--exam-chrome-border);background:#fff;font-size:13px;line-height:1.55;transition:all .15s}
+.opts{display:flex;flex-direction:column;gap:7px;width:100%;max-width:min(720px,100%);align-items:stretch}
+.opt{display:flex;align-items:flex-start;gap:10px;cursor:pointer;padding:8px 12px;border-radius:7px;border:1.5px solid var(--exam-chrome-border);background:#fff;font-size:13px;line-height:1.55;transition:all .15s;width:100%;max-width:100%;box-sizing:border-box}
 .opt:hover{border-color:var(--exam-chrome-text);background:var(--exam-chrome-surface)}
 .opt input{margin-top:2px;flex-shrink:0;accent-color:var(--exam-chrome-text);width:14px;height:14px}
+.opt>span{flex:1 1 auto;min-width:0;white-space:normal}
 .opt.sel{border-color:var(--exam-chrome-text);background:var(--exam-chrome-surface);font-weight:500}
 
 /* Matching selects */
@@ -206,9 +207,30 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 .mrow-top{display:flex;align-items:flex-start;gap:10px}
 .mqnum{background:var(--exam-chrome-text);color:#fff;border-radius:5px;padding:3px 9px;font-size:12px;font-weight:700;flex-shrink:0;margin-top:2px}
 .mtext{font-size:13px;line-height:1.6;color:var(--exam-chrome-text)}
-.msel{width:100%;border:1.5px solid var(--exam-chrome-border);border-radius:7px;padding:7px 10px;font-size:13px;outline:none;background:#fff;color:var(--exam-chrome-text);margin-top:7px;cursor:pointer;font-family:'Segoe UI',Arial,sans-serif}
+.msel{
+  width:100%;
+  border:1.5px solid var(--exam-chrome-border);
+  border-radius:7px;
+  padding:7px 28px 7px 10px;
+  font-size:13px;
+  outline:none;
+  background-color:#fff;
+  color:var(--exam-chrome-text);
+  margin-top:7px;
+  cursor:pointer;
+  font-family:'Segoe UI',Arial,sans-serif;
+  appearance:none;-webkit-appearance:none;-moz-appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%234b2876' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 12px center;
+  background-size:11px;
+}
 .msel:focus{border-color:var(--exam-chrome-text)}
-.msel.done{border-color:#34a853;background:#f4fbf5}
+.msel.done{
+  border-color:#34a853;
+  background-color:#f4fbf5;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%234b2876' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+}
 #q2-section .mrow{display:flex;flex-direction:row;flex-wrap:wrap;align-items:flex-start;gap:8px 12px;margin-bottom:14px}
 #q2-section .mrow .mrow-top{flex:1 1 0;min-width:0}
 #q2-section .mrow .msel{width:auto;min-width:88px;max-width:138px;padding:4px 6px;font-size:12px;border-radius:6px;margin-top:0;align-self:flex-start}

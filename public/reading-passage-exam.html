@@ -248,7 +248,7 @@ mark.evidence-hl{background:#fde68a;padding:0 1px;border-radius:2px;color:inheri
   appearance:none;-webkit-appearance:none;-moz-appearance:none;
   background-color:#FAFAFA;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%234b2876' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:right 11px center;background-size:11px}
+  background-repeat:no-repeat;background-position:right 12px center;background-size:11px}
 .tfngsel:focus{border-color:var(--exam-purple)}
 .tfngsel.done{border-color:var(--exam-purple);background:#ebe6f4;font-weight:500}
 @media (max-width:540px){
@@ -259,10 +259,11 @@ mark.evidence-hl{background:#fde68a;padding:0 1px;border-radius:2px;color:inheri
 }
 
 /* MCQ */
-.opts{display:flex;flex-direction:column;gap:7px}
-.opt{display:flex;align-items:flex-start;gap:10px;cursor:pointer;padding:8px 12px;border-radius:7px;border:1.5px solid #d4c8e4;background:#FAFAFA;font-size:13px;line-height:1.55;transition:all .15s}
+.opts{display:flex;flex-direction:column;gap:7px;width:100%;max-width:min(720px,100%);align-items:stretch}
+.opt{display:flex;align-items:flex-start;gap:10px;cursor:pointer;padding:8px 12px;border-radius:7px;border:1.5px solid #d4c8e4;background:#FAFAFA;font-size:13px;line-height:1.55;transition:all .15s;width:100%;max-width:100%;box-sizing:border-box}
 .opt:hover{border-color:var(--exam-purple);background:var(--exam-purple-soft)}
 .opt input{margin-top:2px;flex-shrink:0;accent-color:var(--exam-purple);width:14px;height:14px}
+.opt>span{flex:1 1 auto;min-width:0;white-space:normal}
 .opt.sel{border-color:var(--exam-purple);background:#e2daf0;font-weight:500}
 #exam-screen.exam-review-mode .opt.review-user{border-color:var(--exam-purple);background:#ebe6f4;font-weight:500}
 #exam-screen.exam-review-mode .opt.review-correct{border-color:#34a853;background:#f4fbf5;font-weight:500}
@@ -289,7 +290,7 @@ mark.evidence-hl{background:#fde68a;padding:0 1px;border-radius:2px;color:inheri
   appearance:none;-webkit-appearance:none;-moz-appearance:none;
   background-color:#FAFAFA;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%234b2876' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat:no-repeat;background-position:right 11px center;background-size:11px}
+  background-repeat:no-repeat;background-position:right 12px center;background-size:11px}
 .mrow{margin-bottom:14px}
 .mrow-top{display:flex;align-items:center;gap:10px;width:100%}
 .mqnum{background:#000001;color:#f5f5f5;border-radius:5px;padding:3px 9px;font-size:12px;font-weight:700;flex-shrink:0;align-self:center}

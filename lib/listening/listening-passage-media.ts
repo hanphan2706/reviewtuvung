@@ -153,6 +153,41 @@ const LISTENING_PART_IMAGES: Record<string, string> = {
   /** Victor Hugo — books / literature */
   "cam18-t4-p4":
     "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=80&auto=format&fit=crop",
+  /** Cam 21 — Oyster Bay Sailing Club */
+  "cam21-t1-p1":
+    "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&q=80&auto=format&fit=crop",
+  "cam21-t1-p2":
+    "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1200&q=80&auto=format&fit=crop",
+  "cam21-t1-p3":
+    "https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1200&q=80&auto=format&fit=crop",
+  "cam21-t1-p4":
+    "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=1200&q=80&auto=format&fit=crop",
+  "cam21-t2-p1":
+    "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&q=80&auto=format&fit=crop",
+  /** Marsden Coastal Walk */
+  "cam21-t2-p2":
+    "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=1200&q=80&auto=format&fit=crop",
+  "cam21-t2-p3":
+    "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=1200&q=80&auto=format&fit=crop",
+  "cam21-t2-p4":
+    "https://images.unsplash.com/photo-1468581264429-2548ef9eb732?w=1200&q=80&auto=format&fit=crop",
+  "cam21-t3-p1":
+    "https://images.unsplash.com/photo-1526779259212-939e64788e3c?w=1200&q=80&auto=format&fit=crop",
+  "cam21-t3-p2":
+    "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&q=80&auto=format&fit=crop",
+  "cam21-t3-p3":
+    "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80&auto=format&fit=crop",
+  "cam21-t3-p4":
+    "https://images.unsplash.com/photo-1516685018646-549198525c1b?w=1200&q=80&auto=format&fit=crop",
+  "cam21-t4-p1":
+    "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200&q=80&auto=format&fit=crop",
+  /** Business Exhibition Promotion */
+  "cam21-t4-p2":
+    "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&q=80&auto=format&fit=crop",
+  "cam21-t4-p3":
+    "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200&q=80&auto=format&fit=crop",
+  "cam21-t4-p4":
+    "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=1200&q=80&auto=format&fit=crop",
   /** Tactics Basic Unit 1 — classroom listening */
   "tactics-basic-u01-l01":
     "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1200&q=80&auto=format&fit=crop",

@@ -1,0 +1,308 @@
+{
+  "version": 1,
+  "partId": "cam21-t4-p2",
+  "audioFile": "cam21-test4-part2.mp3",
+  "durationSeconds": 401.76325,
+  "method": "whisper-local",
+  "preambleSeconds": 61.111,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Hello and welcome to this podcast telling you about our annual business exhibition. This year, as always, it will be full of the very best speakers, features and innovations.",
+      "start": 51.251,
+      "end": 61.111,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Let me start by reading some feedback from James Craig, who's exhibited with us for the past two years.",
+      "start": 61.111,
+      "end": 67.571,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "James says, 'I'm director of a company called TalkCon, which is an office phone system.",
+      "start": 67.571,
+      "end": 72.671,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "The first year we exhibited, we had a stand in the Business Village, where we made a lot of useful contacts.",
+      "start": 72.671,
+      "end": 79.811,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "We also used the Breakout area where people could sit down and relax, and try out our products, and due to popular request we used that again last year.",
+      "start": 79.811,
+      "end": 91.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Last year we also sponsored the innovative Business Connections Zone where people could leave their contact details on a board to contact other companies, and that also effectively raised our corporate profile.",
+      "start": 91.24,
+      "end": 105.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "We're hoping that in the coming exhibition we'll also have a presence in the Digital Marketing centre, which is clearly a key area for our company.",
+      "start": 105.52,
+      "end": 114.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "And also maybe have our own Talkcon Zone, at some stage.' (Q11/12)",
+      "start": 114.38,
+      "end": 120.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "The exhibition's open from 8am to 11pm and there's a range of special events for you to enjoy in the evening.",
+      "start": 120.86,
+      "end": 129.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "As well as a unique chance to publicise your company, businesses who exhibit with us can claim discounts on a number of popular brands, including major high street fashion and jewellery outlets, as well as grocery chains.",
+      "start": 129.34,
+      "end": 146.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Discounts available range from 3.5% up to an amazing 15%, so you can save a lot of money.",
+      "start": 146.06,
+      "end": 156.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "In fact, the average saving made by each exhibitor came to over £400!",
+      "start": 156.26,
+      "end": 163.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "The scheme is available to every member of your organisation so this is a benefit that really does have something for you all.",
+      "start": 163.04,
+      "end": 212.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "(Q13/14)",
+      "start": 212.58,
+      "end": 216.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Now let me tell you about some of our keynote speakers for this year's exhibition.",
+      "start": 216.46,
+      "end": 222.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Jim Clowrie started off selling vegetables from a small plot, then opened a small café.",
+      "start": 222.1,
+      "end": 229.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Rather to his surprise this became a bit of a sensation, and in a remarkably short time he had opened an amazing 76 restaurants worldwide.",
+      "start": 229.5,
+      "end": 241,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "He'll be telling you how it all happened, and how it changed his life.",
+      "start": 241,
+      "end": 245.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "(Q15)",
+      "start": 245.76,
+      "end": 246.64
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "David France will be giving an inspirational talk about how as a business-minded teenager he managed to set up his own company, and even to be the first person under 18 to get a business bank account.",
+      "start": 246.64,
+      "end": 261.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "David's company has gone from strength to strength but he isn't just interested in making money – he also makes regular donations to organisations helping those in need both in the UK and elsewhere in the world.",
+      "start": 261.46,
+      "end": 275.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "(Q16)",
+      "start": 275.66,
+      "end": 276.96
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Oliver Stanton was born and educated in the UK, and then went to Malaysia where he set up a rubber-wood furniture business.",
+      "start": 276.96,
+      "end": 285.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "He then built log houses in the mountains in Japan before moving to Hong Kong to set up a digital marketing business.",
+      "start": 285.88,
+      "end": 294.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "After that he moved back to the UK with his wife Saiphin, and together they opened a Thai café.",
+      "start": 294.8,
+      "end": 301.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "He’ll be telling you about what he discovered during his travels around the world about business practices in different cultures.",
+      "start": 301.5,
+      "end": 310.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "(Q17)",
+      "start": 310.02,
+      "end": 311.2
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Francesca Heptonstall is a broadcaster and businesswoman who’s known for her down-to-earth attitude.",
+      "start": 311.2,
+      "end": 318.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "After winning a top job in a TV contest, she launched a number of online deal sites.",
+      "start": 318.44,
+      "end": 325.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Her main business interest is in technology, but she’s also passionate about helping people gain employment and organises an annual jobs fair, so she’ll be concentrating on this in her talk.",
+      "start": 325.04,
+      "end": 337.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "(Q18)",
+      "start": 337.94,
+      "end": 338.94
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Salman Khan is the Chief Executive of QBF Enterprises, and has turned around this business from a major publishing business to one of the UK’s largest digital marketing service providers.",
+      "start": 338.94,
+      "end": 352.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "He’ll be talking about the need for flexibility to cope with new directions in today’s business world.",
+      "start": 352.4,
+      "end": 358.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "(Q19)",
+      "start": 358.62,
+      "end": 360.97
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Finally, Annie Craven is a consultant and coach who works with people to create lasting changes in their business and life.",
+      "start": 360.97,
+      "end": 370.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Her session will offer an interactive look at different obstacles in people’s own lives, not just in business.",
+      "start": 370.89,
+      "end": 378.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "She also looks at how you can overcome them, whether you’re starting out in business or at the top of your game.",
+      "start": 378.81,
+      "end": 386.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "(Q20)",
+      "start": 386.29,
+      "end": 401.763
+    }
+  ]
+}

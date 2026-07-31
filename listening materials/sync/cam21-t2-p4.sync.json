@@ -1,0 +1,385 @@
+{
+  "version": 1,
+  "partId": "cam21-t2-p4",
+  "audioFile": "cam21-test2-part4.mp3",
+  "durationSeconds": 448.313438,
+  "method": "whisper-local",
+  "preambleSeconds": 88.28,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "For my presentation today I'm going to talk about some of the issues facing the cruise ship industry and then some ways these can be addressed.",
+      "start": 77.686,
+      "end": 88.28,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "The cruise ship industry has partly been responsible for the effects of overtourism in recent decades.",
+      "start": 88.28,
+      "end": 93.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Overtourism occurs in places where excessive numbers of tourists cause significant problems.",
+      "start": 93.72,
+      "end": 99.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Pollution, for example, is among the greatest threats to many popular tourist destinations.",
+      "start": 99.36,
+      "end": 104.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "(Q31)",
+      "start": 104.3,
+      "end": 105.24
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Of course, for many places it's a difficult balance to achieve.",
+      "start": 105.24,
+      "end": 110.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "They want to promote their city or island as a desirable tourist destination, but at the same time, are unable to cope with thousands of cruise ship passengers on a daily basis.",
+      "start": 110.06,
+      "end": 122.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "The trouble is, excessive tourism is destroying the beauty spots and places of interest that people come to visit.",
+      "start": 122.4,
+      "end": 130.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Several cities, such as Barcelona, have responded by imposing a tax which all visitors to the city from cruise ships have to pay.",
+      "start": 130.42,
+      "end": 140.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "But as it's only a couple of euros, many green campaigners think it won't deter enough people to make any difference.",
+      "start": 140.12,
+      "end": 147.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "(Q32)",
+      "start": 147.26,
+      "end": 148.44
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Bruges is another city which became impossible to navigate at times because of the huge numbers of cruise passengers arriving on day trips from the port of Zeebrugge.",
+      "start": 148.44,
+      "end": 159.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "The city was becoming like a 'theme park', with shops only catering for tourists, selling chocolate, which Belgium is famous for, and other souvenirs.",
+      "start": 159.96,
+      "end": 170.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "The local council took action to limit cruise passengers to a more manageable level.",
+      "start": 170.62,
+      "end": 175.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "(Q33)",
+      "start": 175.88,
+      "end": 177.28
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Dubrovnik had to limit the numbers of cruise ships after it became extremely popular as a cruise ship destination when it featured in a hugely successful TV series.",
+      "start": 177.28,
+      "end": 188.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "What it does now is control the timing of all cruise ship entries to the city's port.",
+      "start": 188.16,
+      "end": 194.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "However, many people feel this measure does not go far enough.",
+      "start": 194.36,
+      "end": 198.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "(Q34)",
+      "start": 198.16,
+      "end": 203.38
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Cruise ships may be unpopular in some of their destinations but they also have an image problem.",
+      "start": 203.38,
+      "end": 209.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "They've always been perceived as a safe holiday for the elderly, with not much on offer for families or young couples.",
+      "start": 209.58,
+      "end": 217.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "A recent survey showed that cost is also a major factor in putting younger groups off going on a cruise (Q35).",
+      "start": 217.36,
+      "end": 224.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "But what they don't realise is that compared to other types of package holidays, cruises can actually be good value, as all activities and drinks are often included.",
+      "start": 224.96,
+      "end": 237.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "And another perception is that cruises have lots of rules about what to wear and how to behave.",
+      "start": 237.3,
+      "end": 243.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "But these days, most cruises are no longer very formal and behind the times.",
+      "start": 243.88,
+      "end": 249.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "(Q36)",
+      "start": 249.14,
+      "end": 249.88
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "So what solutions are there for cruise lines to overcome some of these problems?",
+      "start": 249.88,
+      "end": 255.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "How can they appeal to younger customers?",
+      "start": 255.28,
+      "end": 258.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Well one selling point is that cruise ships are becoming more sustainable.",
+      "start": 258.18,
+      "end": 264.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "New ships are built with hybrid engines with large batteries which means ships do not have to keep their engines running while docked.",
+      "start": 264.1,
+      "end": 273.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Cruise lines are also designing ships specially for those in the age range of 21 to 45.",
+      "start": 273.12,
+      "end": 280.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "The décor in these feels contemporary and there are a range of activities on board that you wouldn't find on a more traditional cruise.",
+      "start": 280.82,
+      "end": 289.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "There's even a boxing ring on one ship, and most offer diving expeditions.",
+      "start": 289.74,
+      "end": 294.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "But there's also a huge focus on well-being with a variety of sessions of different kinds.",
+      "start": 294.72,
+      "end": 300.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "(Q37)",
+      "start": 300.68,
+      "end": 302.26
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Food is always a very important part of any cruise and cruise ships have had to radically update their menus to suit the tastes of their younger customers.",
+      "start": 302.26,
+      "end": 312.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Vegan dishes are standard, for example.",
+      "start": 312.5,
+      "end": 315.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "The restaurants on board have also gone paperless with menus available on screen.",
+      "start": 315.52,
+      "end": 321.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "(Q38)",
+      "start": 321.02,
+      "end": 322.74
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "Unlike older generations who went on cruises largely to get away from everything, younger people expect to be able to keep in touch with friends and family.",
+      "start": 322.74,
+      "end": 332.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "Many people going on longer cruises also spend time working, so companies have to guarantee wifi that can be relied upon at all times.",
+      "start": 332.98,
+      "end": 341.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "(Q39)",
+      "start": 341.96,
+      "end": 343.22
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "My grandparents used to love looking through cruise brochures, even when they weren't planning on going on a cruise.",
+      "start": 343.22,
+      "end": 350.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "Until very recently TV ads for cruises always felt dated and aimed at retirees.",
+      "start": 350.06,
+      "end": 356.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "Cruise lines have been slow to adopt the power of social media but that's all changing.",
+      "start": 356.78,
+      "end": 363.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "Leading cruise lines now employ top agencies to produce first rate videos for social media channels.",
+      "start": 363.34,
+      "end": 369.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "(Q40)",
+      "start": 369.98,
+      "end": 370.78
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "It will be interesting to see whether ...",
+      "start": 370.78,
+      "end": 448.313,
+      "preAudio": false
+    }
+  ]
+}

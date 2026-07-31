@@ -6,6 +6,7 @@ import {
   TACTICS_BASIC_LESSONS,
   type TacticsBasicLessonCatalog,
 } from "@/lib/listening/tactics-basic-catalog";
+import { CAM21_LISTENING_PARTS } from "@/lib/listening/cam21-listening-parts";
 
 const TACTICS_BASIC_META_PILL = "Tactics for Listening Basic";
 
@@ -70,6 +71,26 @@ export type ListeningTestContext = {
 };
 
 export const LISTENING_TEST_CONTEXTS: Record<string, ListeningTestContext> = {
+  "cam21-t1": {
+    predictTitle: "Cam 21 — Test 1",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là khóa học thuyền buồm, makeup trên phim, đa dạng sinh học biển hoặc nguồn cao su — không cần đoán đúng chi tiết.",
+  },
+  "cam21-t2": {
+    predictTitle: "Cam 21 — Test 2",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là lớp học một ngày, đi bộ ven biển, khóa an toàn thực phẩm hoặc ngành du thuyền — không cần đoán đúng chi tiết.",
+  },
+  "cam21-t3": {
+    predictTitle: "Cam 21 — Test 3",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là phà tới Shetland, street food, thời trang bền vững hoặc loài xâm lấn — không cần đoán đúng chi tiết.",
+  },
+  "cam21-t4": {
+    predictTitle: "Cam 21 — Test 4",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là khảo sát mua sắm, triển lãm doanh nghiệp, nhà ở tương lai hoặc liệu pháp âm nhạc — không cần đoán đúng chi tiết.",
+  },
   "cam20-t1": {
     predictTitle: "Cam 20 — Test 1",
     predictBlurb:
@@ -208,6 +229,7 @@ export function listeningTestTotalMinutes(parts: readonly ListeningPartMeta[]): 
 }
 
 export const LISTENING_PARTS_PILOT: readonly ListeningPartMeta[] = [
+  ...CAM21_LISTENING_PARTS,
   {
     id: "cam20-t1-p1",
     slug: "restaurant-recommendations",

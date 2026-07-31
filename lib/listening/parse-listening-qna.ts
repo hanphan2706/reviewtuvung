@@ -7,6 +7,8 @@ const MCQ_OPTION_RE = /^([A-I])\s+(.+)$/;
 const MAP_ITEM_RE = /^(\d+)\s+(.+?)\s*(?:\.{3,}|_{3,}|…{2,})[.\s]*$/;
 /** Matching list items often omit trailing blanks (Cam 20 T2/T3). */
 const MATCHING_ITEM_RE = /^(\d{1,2})\s+(.+)$/;
+/** Flow-chart blanks: `27...............` (label is usually the previous line). */
+const BLANK_ONLY_ITEM_RE = /^(\d{1,2})\s*(?:\.{3,}|_{3,}|…{2,})[.\s]*$/;
 const IMAGE_LINE_RE = /^IMAGE\s*\|\s*(.+)\s*$/i;
 const ANSWERS_HEADER_RE = /^Answers?:\s*$|^Answer key:\s*$/im;
 const PAIRED_ANSWER_RE = /^(\d+)\s*&\s*(\d+)\s+(.+)$/i;
@@ -251,6 +253,7 @@ function parseOptionsItemsMatchingBlock(
   const options: { letter: string; text: string }[] = [];
   let itemsTitle = "";
   const items: { number: number; label: string }[] = [];
+  let pendingItemLabel = "";
   let j = startIndex;
 
   while (j < rawLines.length) {
@@ -265,12 +268,23 @@ function parseOptionsItemsMatchingBlock(
       j += 1;
       continue;
     }
+    const blankOnly = options.length > 0 ? row.match(BLANK_ONLY_ITEM_RE) : null;
+    if (blankOnly) {
+      const num = Number.parseInt(blankOnly[1]!, 10);
+      if (num >= 1 && num <= 40) {
+        items.push({ number: num, label: pendingItemLabel });
+        pendingItemLabel = "";
+      }
+      j += 1;
+      continue;
+    }
     const itemMatch = row.match(MAP_ITEM_RE) || (options.length > 0 ? row.match(MATCHING_ITEM_RE) : null);
     if (itemMatch) {
       const num = Number.parseInt(itemMatch[1]!, 10);
       // Ignore answer-key style leftovers and keep matching labels in exam range.
       if (num >= 1 && num <= 40) {
         items.push({ number: num, label: cleanMatchingItemLabel(itemMatch[2] ?? "") });
+        pendingItemLabel = "";
       }
       j += 1;
       continue;
@@ -286,10 +300,14 @@ function parseOptionsItemsMatchingBlock(
       j += 1;
       continue;
     }
-    if (options.length > 0 && items.length === 0) {
+    if (options.length > 0 && items.length === 0 && !itemsTitle) {
       itemsTitle = row;
       j += 1;
       continue;
+    }
+    // Flow-chart stage labels sit on the line above `27...............`.
+    if (options.length > 0 && !/^[↓↑→←⟷]+$/u.test(row) && !/^Choose\s/i.test(row)) {
+      pendingItemLabel = row;
     }
     j += 1;
   }
