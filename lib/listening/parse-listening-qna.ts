@@ -28,6 +28,8 @@ export type ListeningQnaMapSection = {
   imageUrl?: string;
   letterRange?: string;
   items: { number: number; label: string }[];
+  /** Option bank (`A Armchair`, …) when the map/plan lists answers to choose from. */
+  options?: { letter: string; text: string }[];
 };
 
 export type ListeningQnaChooseTwoSection = {
@@ -356,7 +358,7 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
         if (MCQ_OPTION_RE.test(instr) || MAP_ITEM_RE.test(instr) || /^Opinions\s*$/i.test(instr)) break;
         if (
           /^Choose/i.test(instr) ||
-          /^Label the map/i.test(instr) ||
+          /^Label the (?:map|plan)/i.test(instr) ||
           /^Drag the correct (letter|answer)/i.test(instr) ||
           /^Write the correct (letter|answer)/i.test(instr) ||
           /^What\s/i.test(instr) ||
@@ -377,8 +379,9 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
         break;
       }
 
-      if (/Label the map below/i.test(instructionLines.join(" "))) {
+      if (/Label the (?:map|plan) below/i.test(instructionLines.join(" "))) {
         const items: { number: number; label: string }[] = [];
+        const options: { letter: string; text: string }[] = [];
         let imageUrl: string | undefined;
         let letterRange: string | undefined;
         for (const instr of instructionLines) {
@@ -406,11 +409,24 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
             j += 1;
             continue;
           }
+          /** Option bank lines (`A Armchair`) may follow the numbered map items. */
+          const opt = row.match(MCQ_OPTION_RE);
+          if (opt) {
+            options.push({ letter: opt[1]!.toUpperCase(), text: opt[2]!.trim() });
+            j += 1;
+            continue;
+          }
           if (QUESTIONS_RANGE_RE.test(row) || SINGLE_QUESTION_RE.test(row) || PART_HEADER_RE.test(row)) break;
-          if (MCQ_OPTION_RE.test(row)) break;
           j += 1;
         }
-        sections.push({ kind: "map", instructionLines, imageUrl, letterRange, items });
+        sections.push({
+          kind: "map",
+          instructionLines,
+          imageUrl,
+          letterRange,
+          items,
+          options: options.length > 0 ? options : undefined,
+        });
         i = j;
         continue;
       }
@@ -455,7 +471,7 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
       }
 
       const instrText = instructionLines.join(" ");
-      if (/Write the correct (letter|answer)/i.test(instrText) && !/Label the map below/i.test(instrText)) {
+      if (/Write the correct (letter|answer)/i.test(instrText) && !/Label the (?:map|plan) below/i.test(instrText)) {
         const { optionsTitle, options, itemsTitle, items, nextIndex } = parseOptionsItemsMatchingBlock(rawLines, j);
         if (items.length > 0) {
           sections.push({ kind: "matching", instructionLines, optionsTitle, options, itemsTitle, items });

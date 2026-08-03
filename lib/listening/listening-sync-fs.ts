@@ -5,6 +5,7 @@ import path from "node:path";
 import { LISTENING_PARTS_PILOT } from "@/lib/listening/content-manifest";
 import { LISTENING_SYNC_SUBDIR } from "@/lib/listening/listening-materials-paths";
 import type { ListeningTranscriptSyncFile } from "@/lib/listening/listening-transcript-sync-types";
+import { PINBALL_ENTRY_LISTENING_PARTS } from "@/lib/listening/pinball-entry-listening";
 import {
   filterTacticsTranscriptSync,
   isTacticsListeningPartId,
@@ -12,7 +13,10 @@ import {
 
 export { LISTENING_SYNC_SUBDIR };
 
-const ALLOWED_PART_IDS = new Set(LISTENING_PARTS_PILOT.map((p) => p.id));
+const ALLOWED_PART_IDS = new Set([
+  ...LISTENING_PARTS_PILOT.map((p) => p.id),
+  ...PINBALL_ENTRY_LISTENING_PARTS.map((p) => p.id),
+]);
 
 export function isAllowedListeningSyncPartId(partId: string): boolean {
   return ALLOWED_PART_IDS.has(partId);

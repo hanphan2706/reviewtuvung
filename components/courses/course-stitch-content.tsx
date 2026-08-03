@@ -4,6 +4,7 @@ import { CourseStitchHeroBanner } from "@/components/courses/course-stitch-hero-
 import { CourseStitchIcon } from "@/components/courses/course-stitch-icon";
 import { CourseTuitionAccordion } from "@/components/courses/course-tuition-accordion";
 import { LANDING } from "@/lib/landing-content";
+import { withExternalLinkTargets } from "@/lib/external-link-html";
 import type { CourseStitchConfig } from "@/lib/course-stitch-types";
 
 export function CourseStitchContent({ config }: { config: CourseStitchConfig }) {
@@ -17,6 +18,23 @@ export function CourseStitchContent({ config }: { config: CourseStitchConfig }) 
         title={config.hero.title}
         subtitle={config.hero.subtitle}
       />
+
+      {config.whatsNew ? (
+        <section className="pinball-stitch-section" id="whats-new">
+          <h2 className="pinball-stitch-section-title">
+            {config.whatsNew.title}
+          </h2>
+          <div className="pinball-stitch-whats-new">
+            {config.whatsNew.items.map((item) => (
+              <article key={item.title} className="pinball-stitch-whats-new-card">
+                <CourseStitchIcon name={item.icon} className="pinball-stitch-whats-new-card__icon" />
+                <h3 className="pinball-stitch-whats-new-card__title">{item.title}</h3>
+                <p className="pinball-stitch-whats-new-card__body">{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section className="pinball-stitch-section" id="overview">
         <h2 className="pinball-stitch-section-title">Tổng quan khoá học</h2>
@@ -152,7 +170,7 @@ export function CourseStitchContent({ config }: { config: CourseStitchConfig }) 
             <p
               className="pinball-stitch-notes-intro"
               // biome-ignore lint/security/noDangerouslySetInnerHtml: HTML từ Notion gốc
-              dangerouslySetInnerHTML={{ __html: config.notes.introHtml }}
+              dangerouslySetInnerHTML={{ __html: withExternalLinkTargets(config.notes.introHtml) }}
             />
             <div className="pinball-stitch-notes-grid">
               {config.notes.sections.map((section) => (
@@ -161,7 +179,9 @@ export function CourseStitchContent({ config }: { config: CourseStitchConfig }) 
                   <div
                     className="pinball-stitch-notes-section-body"
                     // biome-ignore lint/security/noDangerouslySetInnerHtml: HTML từ Notion gốc
-                    dangerouslySetInnerHTML={{ __html: section.bodyHtml }}
+                    dangerouslySetInnerHTML={{
+                      __html: withExternalLinkTargets(section.bodyHtml),
+                    }}
                   />
                 </div>
               ))}

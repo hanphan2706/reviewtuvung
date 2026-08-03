@@ -11,12 +11,8 @@ export const PINBALL_TEACHER_SCORES = [
 export const PINBALL_TEACHER_IMAGE = "/IMG_4688.JPG";
 
 export const PINBALL_LINKS = {
-  entranceReading:
-    "https://drive.google.com/file/d/1mNCCWngbI87WE5Z8RvOE2nQ5wqT15VDz/view?usp=sharing",
-  entranceListening:
-    "https://drive.google.com/drive/folders/1hFZfsix6o0jp9ajO5ARpQmlc3OqnqSha?usp=sharing",
-  entranceAnswers:
-    "https://drive.google.com/file/d/1x2CoaBL1evX2oKL6ARJ-IbEjcLPIGif7/view?usp=sharing",
+  entranceReading: "/tu-hoc/luyen-doc/luyen-de-ielts/pinball-entry/lam-bai",
+  entranceListening: "/tu-hoc/luyen-nghe/luyen-de-ielts/pinball-entry/lam-bai",
   certificates:
     "https://www.notion.so/angia/Th-ng-tin-v-ch-ng-ch-c-a-m-nh-2d8f8af06218810ab297d1d5d1343098?source=copy_link",
   feedback:
@@ -24,18 +20,40 @@ export const PINBALL_LINKS = {
 } as const;
 
 export const PINBALL_ENTRANCE_OPTIONS = [
-  { icon: "menu_book", label: "Đọc", href: PINBALL_LINKS.entranceReading },
   { icon: "headphones", label: "Nghe", href: PINBALL_LINKS.entranceListening },
-  { icon: "fact_check", label: "Đáp án", href: PINBALL_LINKS.entranceAnswers },
+  { icon: "menu_book", label: "Đọc", href: PINBALL_LINKS.entranceReading },
 ] as const;
 
 export const PINBALL_OVERVIEW = [
   { icon: "flag", label: "Đầu vào & Đầu ra", value: "4.5+ → 6.0+" },
   { icon: "videocam", label: "Hình thức học", value: "Online qua Google Meet" },
-  { icon: "groups", label: "Sĩ số lớp", value: "Tối đa 6 học viên" },
+  { icon: "groups", label: "Sĩ số lớp", value: "Tối đa 4 học viên" },
   { icon: "schedule", label: "Thời lượng", value: "32 buổi (~64 giờ)" },
   { icon: "assignment", label: "Đánh giá", value: "Mid-term & Final Test" },
-  { icon: "cloud_done", label: "Nộp bài tập", value: "Classroom & Drive" },
+  { icon: "cloud_done", label: "Nộp bài tập", value: "Classroom & anthichtuhoc" },
+] as const;
+
+export const PINBALL_WHATS_NEW = [
+  {
+    icon: "menu_book",
+    title: "Học liệu được nâng cấp",
+    body: "Rất nhiều mảng kiến thức được tinh gọn và/hoặc được nâng cấp dựa trên góc nhìn thực tế của học viên.",
+  },
+  {
+    icon: "construction",
+    title: "Công cụ ôn luyện",
+    body: "Được sử dụng miễn phí và nhanh nhất toàn bộ các tính năng trong mục Tự học trên webapp này.",
+  },
+  {
+    icon: "database",
+    title: "Ngân hàng đề",
+    body: "Cập nhật xu hướng các đề thi mới nhất với giải thích chi tiết.",
+  },
+  {
+    icon: "library_books",
+    title: "Thư viện bài mẫu",
+    body: "Kho bài nói và viết band 7+ uy tín, chất lượng từ mình cũng như các cựu giám khảo.",
+  },
 ] as const;
 
 /** Khớp nội dung Notion gốc (pinball-ielts.html) — đủ bullet từng kỹ năng */
@@ -76,20 +94,6 @@ export const PINBALL_CURRICULUM = [
     ],
   },
   {
-    id: "acc-pronunciation",
-    title: "Pronunciation",
-    icon: "record_voice_over",
-    bullets: [
-      { text: "Phát âm đúng các âm trong tiếng Anh" },
-      { text: "Nhấn đúng trọng âm từ, câu và nói có nhịp điệu" },
-      { strong: "Dùng phát âm để bổ trợ cho các kỹ năng còn lại" },
-      {
-        strong:
-          'Giải quyết vấn đề muôn thuở "tại sao mình cũng nói tiếng Anh, nhưng tiếng Anh của mình \'không hay\' hoặc \'khó hiểu\'?"',
-      },
-    ],
-  },
-  {
     id: "acc-lr",
     title: "Listening & Reading",
     icon: "menu_book",
@@ -100,6 +104,20 @@ export const PINBALL_CURRICULUM = [
       {
         strong:
           "Không học tách rời, mà hiểu và tận dụng được bản chất các kỹ năng liên quan để đọc và nghe tốt hơn",
+      },
+    ],
+  },
+  {
+    id: "acc-pronunciation",
+    title: "Pronunciation",
+    icon: "record_voice_over",
+    bullets: [
+      { text: "Phát âm đúng các âm trong tiếng Anh" },
+      { text: "Nhấn đúng trọng âm từ, câu và nói có nhịp điệu" },
+      { strong: "Dùng phát âm để bổ trợ cho các kỹ năng còn lại" },
+      {
+        strong:
+          'Giải quyết vấn đề muôn thuở "tại sao mình cũng nói tiếng Anh, nhưng tiếng Anh của mình \'không hay\' hoặc \'khó hiểu\'?"',
       },
     ],
   },
@@ -116,6 +134,35 @@ export const PINBALL_CURRICULUM = [
           "Sự đa dạng và phong cách ngôn ngữ (thường là cái ngăn học viên bứt lên 7+)",
       },
       { text: "Tài liệu bổ trợ cho việc tự học" },
+    ],
+  },
+  {
+    id: "acc-grammar",
+    title: "Grammar",
+    icon: "spellcheck",
+    bullets: [
+      {
+        strong:
+          'Ngữ pháp của mình không bắt đầu bằng công thức, mà bắt đầu bằng câu hỏi: "Người bản ngữ đang nghĩ gì khi họ nói câu này?"',
+      },
+      {
+        segments: [
+          { text: "Thay vì học S + V + O, học viên sẽ hiểu " },
+          { strong: "vì sao" },
+          { text: " lại dùng thì đó, " },
+          { strong: "vì sao" },
+          { text: " lại đặt tính từ ở vị trí đó, " },
+          { strong: "vì sao" },
+          { text: " lại chọn the thay vì a, hay " },
+          { strong: "vì sao" },
+          {
+            text: ' một câu nghe "đúng ngữ pháp" nhưng vẫn không tự nhiên',
+          },
+        ],
+      },
+      {
+        text: "Mỗi chủ điểm đều được giải thích bằng một logic thống nhất, giúp học viên nhìn thấy ngữ pháp như một hệ thống thay vì hàng trăm quy tắc rời rạc cần ghi nhớ",
+      },
     ],
   },
 ] as const;

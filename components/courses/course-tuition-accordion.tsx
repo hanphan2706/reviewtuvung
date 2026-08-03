@@ -4,6 +4,7 @@ import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { resolveTuitionDefaultOpenId } from "@/lib/course-stitch-accordion";
 import type { CourseTuitionPanel } from "@/lib/course-stitch-types";
+import { withExternalLinkTargets } from "@/lib/external-link-html";
 
 export function CourseTuitionAccordion({
   panels,
@@ -49,7 +50,7 @@ export function CourseTuitionAccordion({
                   <div
                     className="pinball-stitch-tuition-accordion__body course-page"
                     // biome-ignore lint/security/noDangerouslySetInnerHtml: HTML con từ Notion gốc
-                    dangerouslySetInnerHTML={{ __html: panel.bodyHtml }}
+                    dangerouslySetInnerHTML={{ __html: withExternalLinkTargets(panel.bodyHtml) }}
                   />
                 </div>
               </div>

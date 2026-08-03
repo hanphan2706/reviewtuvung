@@ -70,6 +70,10 @@ const nextConfig: NextConfig = {
       "./reading translations/de-thi-that-1-p1.vi.json",
       "./reading translations/de-thi-that-1-p2.vi.json",
       "./reading translations/de-thi-that-1-p3.vi.json",
+      "./listening materials/pinball entry test qna.txt",
+      "./listening materials/transcript/pinball-entry-part*.txt",
+      "./listening materials/sync/pinball-entry-p*.sync.json",
+      "./reading raw/pinball-entry.txt",
     ],
   },
   /**

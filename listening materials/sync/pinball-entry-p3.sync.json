@@ -1,0 +1,863 @@
+{
+  "version": 1,
+  "partId": "pinball-entry-p3",
+  "audioFile": "pinball-entry-part3.mp3",
+  "durationSeconds": 456.258125,
+  "method": "whisper-local",
+  "preambleSeconds": 115.71,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Section 3.",
+      "start": 115.71,
+      "end": 116.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "You will hear a student and a teacher talking about a dissertation.",
+      "start": 116.39,
+      "end": 120.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "First, you have some time to look at questions 21 to 25.",
+      "start": 120.47,
+      "end": 124.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Now listen and answer questions 21 to 25.",
+      "start": 124.55,
+      "end": 126.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Hello, Professor Jaworski.",
+      "start": 126.93,
+      "end": 126.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Hi, Dora.",
+      "start": 126.97,
+      "end": 127.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "You wanted to talk about your dissertation?",
+      "start": 127.69,
+      "end": 130.07
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "That's right.",
+      "start": 130.07,
+      "end": 134.63
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "The deadline for submitting my idea is coming up soon, and I'm not really sure what I should",
+      "start": 134.63,
+      "end": 140.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "focus on.",
+      "start": 140.75,
+      "end": 141.43
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Hmm.",
+      "start": 141.43,
+      "end": 141.88
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Yes, you haven't got long left.",
+      "start": 141.88,
+      "end": 143.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "You brought up something in a lecture recently.",
+      "start": 143.92,
+      "end": 146.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "The linguistic landscape.",
+      "start": 146.64,
+      "end": 147.66
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "It sounded interesting.",
+      "start": 147.66,
+      "end": 148.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Ah, yes.",
+      "start": 148.68,
+      "end": 149.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "It's a relatively new area of research.",
+      "start": 149.36,
+      "end": 151.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Basically, it's how a particular language or group of languages is visible in a particular",
+      "start": 151.74,
+      "end": 153.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "space.",
+      "start": 153.33,
+      "end": 153.78
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "There's been a lot written about it if you want to read up on it.",
+      "start": 153.78,
+      "end": 158.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Yes.",
+      "start": 158.88,
+      "end": 159.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Thanks.",
+      "start": 159.33,
+      "end": 159.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Knowing some of the people who've contributed the main ideas would be useful.",
+      "start": 159.78,
+      "end": 164.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Well, Landry and Borhis would be a good place to start.",
+      "start": 164.2,
+      "end": 167.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "They were the first to come up with a clear idea of what the linguistic landscape was",
+      "start": 167.94,
+      "end": 173.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "back in 1997, focused especially on road signs, street names, adverts, shop signs.",
+      "start": 173.72,
+      "end": 178.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "They did research in Canada, which of course has a bilingual cultural background.",
+      "start": 178.91,
+      "end": 183.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "It's a place where two languages are spoken.",
+      "start": 183.33,
+      "end": 186.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "There you can see French and English all around you, because Canada is, historically, where",
+      "start": 186.05,
+      "end": 191.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "both French and English speakers have lived together.",
+      "start": 191.15,
+      "end": 193.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "So in Canada, you can tell that it's both a French and English area and culturally diverse",
+      "start": 193.87,
+      "end": 199.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "because of what you can see around you in the public space.",
+      "start": 199.65,
+      "end": 203.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Sure.",
+      "start": 203.73,
+      "end": 204.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "And many researchers have built upon this.",
+      "start": 204.18,
+      "end": 206.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Spolsky and Cooper, for example, made it clear that the linguistic landscape is something",
+      "start": 206.56,
+      "end": 211.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "that changes over time, depending on who moves in and out of an area.",
+      "start": 211.69,
+      "end": 216.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Or how important people feel a certain language to be.",
+      "start": 216.45,
+      "end": 219.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "Okay.",
+      "start": 219.85,
+      "end": 220.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "Thanks.",
+      "start": 220.3,
+      "end": 220.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "Any other researchers I could look into?",
+      "start": 220.75,
+      "end": 223.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "There's Peter Backhouse.",
+      "start": 223.13,
+      "end": 224.15
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "He's done some interesting work in Tokyo, where he noticed not just Japanese signs everywhere,",
+      "start": 224.15,
+      "end": 229.25
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "but a lot of English signs too.",
+      "start": 229.25,
+      "end": 231.63
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "Now what does that tell you?",
+      "start": 231.63,
+      "end": 233.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "That Tokyo is a place where lots of Japanese and English-speaking people live.",
+      "start": 233.67,
+      "end": 238.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "Or that people they're just like English?",
+      "start": 238.09,
+      "end": 240.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "Exactly.",
+      "start": 240.47,
+      "end": 240.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "Fewer than 30% of Japanese people speak any English, but nevertheless, it has prestige there.",
+      "start": 240.92,
+      "end": 246.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "You mean like a special value?",
+      "start": 246.02,
+      "end": 248.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "That's right.",
+      "start": 248.06,
+      "end": 248.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "Other researchers have looked extremely carefully at multilingual signs.",
+      "start": 248.74,
+      "end": 251.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "For example, Skolan and Skolan came up with a theory of geosemiotics, which is to say,",
+      "start": 251.8,
+      "end": 257.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "they analyzed how language appears when it's put into a public space.",
+      "start": 257.24,
+      "end": 261.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "If you've got a sign with two languages on it, which comes first?",
+      "start": 261.32,
+      "end": 265.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "Are both languages written in text the same size?",
+      "start": 265.74,
+      "end": 268.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "Are the fonts different?",
+      "start": 268.8,
+      "end": 270.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "So everything can give you clues as to which language is more important to the people who put",
+      "start": 270.16,
+      "end": 276.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "the signs up.",
+      "start": 276.28,
+      "end": 277.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "Yes.",
+      "start": 277.3,
+      "end": 277.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "And it's not only about signs, essentially language is being displayed around us all the time.",
+      "start": 277.75,
+      "end": 283.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "Whether we notice it or not, researchers like Copeland have even studied the languages that",
+      "start": 283.19,
+      "end": 288.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "people wear on t-shirts.",
+      "start": 288.29,
+      "end": 289.65
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "And is that important?",
+      "start": 289.65,
+      "end": 291.01
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "Yes.",
+      "start": 291.01,
+      "end": 291.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "The languages we choose to wear, and therefore to display, can give us lots of information",
+      "start": 291.46,
+      "end": 296.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "about our feelings towards them.",
+      "start": 296.9,
+      "end": 298.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "Before you listen to the rest of the talk, you have some time to look at questions 26-30.",
+      "start": 298.6,
+      "end": 304.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "Now listen and answer questions 26-30.",
+      "start": 304.72,
+      "end": 306.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "I think this is something I'd really like to do some kind of research into.",
+      "start": 306.76,
+      "end": 308.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "I guess the first thing I need to do is to start thinking about all the languages I can",
+      "start": 308.74,
+      "end": 315.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "see around me here.",
+      "start": 315.2,
+      "end": 316.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "If I were you, I'd select a location first.",
+      "start": 316.56,
+      "end": 319.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "As you're not doing a huge piece of research, you could choose somewhere relatively small,",
+      "start": 319.62,
+      "end": 326.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "like the main shopping street here in the city, or somewhere that tends to have a higher number",
+      "start": 326.68,
+      "end": 332.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "of international visitors, like the airport.",
+      "start": 332.8,
+      "end": 334.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "OK, maybe the airport would be a good idea.",
+      "start": 334.84,
+      "end": 337.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "The next step would be to focus on what type of data you want to collect.",
+      "start": 337.9,
+      "end": 344.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "You could go for a quantitative approach in which you select all the signs in a particular",
+      "start": 344.26,
+      "end": 350.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-79",
+      "speaker": null,
+      "text": "area, and then count the number of languages you find, then your research could simply indicate",
+      "start": 350.04,
+      "end": 355.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-80",
+      "speaker": null,
+      "text": "which languages are most common.",
+      "start": 355.48,
+      "end": 357.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-81",
+      "speaker": null,
+      "text": "You could support the data you collect with maps and photos.",
+      "start": 357.18,
+      "end": 359.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-82",
+      "speaker": null,
+      "text": "To be honest, most studies into the linguistic landscape are like this because it's the",
+      "start": 359.12,
+      "end": 363.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-83",
+      "speaker": null,
+      "text": "easiest type of data to collect, and the research can be very objective.",
+      "start": 363.56,
+      "end": 368.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-84",
+      "speaker": null,
+      "text": "What about a qualitative approach?",
+      "start": 368.72,
+      "end": 371.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-85",
+      "speaker": null,
+      "text": "Well, there are two different things you could do here.",
+      "start": 371.46,
+      "end": 375.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-86",
+      "speaker": null,
+      "text": "One is to look carefully at signs, especially signs in more than one language, and ask",
+      "start": 375.02,
+      "end": 381.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-87",
+      "speaker": null,
+      "text": "questions about the designs you can see.",
+      "start": 381.4,
+      "end": 384.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-88",
+      "speaker": null,
+      "text": "Which language looks more official or more permanent?",
+      "start": 384.88,
+      "end": 389.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-89",
+      "speaker": null,
+      "text": "Where are the different languages displayed?",
+      "start": 389.28,
+      "end": 391.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-90",
+      "speaker": null,
+      "text": "If there are two languages on a sign, are they both exact translations?",
+      "start": 391.64,
+      "end": 398.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-91",
+      "speaker": null,
+      "text": "What's the other thing I could do?",
+      "start": 398.72,
+      "end": 401.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-92",
+      "speaker": null,
+      "text": "Probably most difficult of all, but worth trying.",
+      "start": 401.1,
+      "end": 404.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-93",
+      "speaker": null,
+      "text": "You could interview people and ask if they have positive attitudes about the signs around",
+      "start": 404.78,
+      "end": 410.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-94",
+      "speaker": null,
+      "text": "them.",
+      "start": 410.66,
+      "end": 411.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-95",
+      "speaker": null,
+      "text": "Do they identify with them?",
+      "start": 411.64,
+      "end": 414.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-96",
+      "speaker": null,
+      "text": "Are they happy about the number of languages on display?",
+      "start": 414.14,
+      "end": 418.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-97",
+      "speaker": null,
+      "text": "Would they like more?",
+      "start": 418.12,
+      "end": 419.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-98",
+      "speaker": null,
+      "text": "Have they even noticed what languages are on the signs?",
+      "start": 419.48,
+      "end": 424.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-99",
+      "speaker": null,
+      "text": "One interesting thing would be to find out whether or not people feel like outsiders because",
+      "start": 424.14,
+      "end": 430.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-100",
+      "speaker": null,
+      "text": "of the languages that are on display.",
+      "start": 430.36,
+      "end": 433.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-101",
+      "speaker": null,
+      "text": "Hmm.",
+      "start": 433.06,
+      "end": 434.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-102",
+      "speaker": null,
+      "text": "Okay.",
+      "start": 434.26,
+      "end": 435.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-103",
+      "speaker": null,
+      "text": "Thank you.",
+      "start": 435.56,
+      "end": 436.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-104",
+      "speaker": null,
+      "text": "I've got a lot to think about now.",
+      "start": 436.86,
+      "end": 439.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-105",
+      "speaker": null,
+      "text": "I think the first thing to do would be to start studying the subject in detail.",
+      "start": 439.78,
+      "end": 445.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-106",
+      "speaker": null,
+      "text": "Great.",
+      "start": 445.22,
+      "end": 445.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-107",
+      "speaker": null,
+      "text": "I should be able to email you an initial reading list sometime later today.",
+      "start": 445.67,
+      "end": 452.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-108",
+      "speaker": null,
+      "text": "That is the end of section 3.",
+      "start": 452.68,
+      "end": 456.258,
+      "preAudio": false
+    }
+  ]
+}

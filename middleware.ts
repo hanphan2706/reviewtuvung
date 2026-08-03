@@ -4,6 +4,7 @@ import {
   AUTH_ENTRY_PATH,
   isProtectedApiPath,
   isProtectedAppPath,
+  isPublicListeningAudioApi,
   isPublicReadingExamApi,
   isPublicReadingExamBootApi,
   isPublicMarketingPath,
@@ -83,8 +84,9 @@ export async function middleware(request: NextRequest) {
   const publicReadingApi =
     isPublicReadingExamApi(pathname, url.searchParams) ||
     isPublicReadingExamBootApi(pathname, url.searchParams);
+  const publicListeningApi = isPublicListeningAudioApi(pathname, url.searchParams);
 
-  if (!allowAccess && isProtectedApiPath(pathname) && !publicReadingApi) {
+  if (!allowAccess && isProtectedApiPath(pathname) && !publicReadingApi && !publicListeningApi) {
     return NextResponse.json({ error: "Đăng nhập để tiếp tục." }, { status: 401 });
   }
 

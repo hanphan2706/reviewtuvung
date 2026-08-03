@@ -5,19 +5,23 @@ import {
   ClipboardCheck,
   ClipboardList,
   CloudCheck,
+  Database,
   Flag,
   GraduationCap,
   Headphones,
   Languages,
+  Library,
   ListChecks,
   Mic,
   Mic2,
   Newspaper,
   PenLine,
   ShieldCheck,
+  SpellCheck2,
   User,
   Users,
   Video,
+  Wrench,
   type LucideIcon,
 } from "lucide-react";
 
@@ -27,6 +31,7 @@ const STITCH_ICON_MAP: Record<string, LucideIcon> = {
   record_voice_over: Mic2,
   menu_book: BookOpen,
   translate: Languages,
+  spellcheck: SpellCheck2,
   school: GraduationCap,
   flag: Flag,
   videocam: Video,
@@ -43,6 +48,9 @@ const STITCH_ICON_MAP: Record<string, LucideIcon> = {
   edit_note: PenLine,
   fact_check: ListChecks,
   newspaper: Newspaper,
+  construction: Wrench,
+  database: Database,
+  library_books: Library,
 };
 
 type CourseStitchIconProps = {

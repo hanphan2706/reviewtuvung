@@ -257,6 +257,53 @@ export async function buildExamRunnerHtml(article: ReadingHubArticle): Promise<s
   );
 }
 
+export const PINBALL_ENTRY_READING_PILOT_ID = "pinball-entry";
+
+/** Public, no-login entrance test — reuses the Cambridge full-test builder but skips the strict ReadingPilotId catalog. */
+export async function buildPinballEntryReadingExamRunnerHtml(): Promise<string> {
+  const pilotId = PINBALL_ENTRY_READING_PILOT_ID as ReadingPilotId;
+  const passages = await loadReadingPassages(pilotId);
+  const payload = buildReadingFullTestExamPayload(
+    pilotId,
+    passages,
+    "Pinball IELTS — Bài kiểm tra đầu vào",
+  );
+  if (!payload) {
+    throw new Error("no exam questions");
+  }
+
+  const boot = {
+    ...payload,
+    back: "/di-hoc/pinball-ielts",
+    skipLogin: true as const,
+    explanations: null,
+  };
+
+  const templatePath = path.join(process.cwd(), "public/reading-passage-exam.html");
+  const template = fs.readFileSync(templatePath, "utf8");
+  const withContent = injectFullTestServerRenderedExam(template, boot);
+
+  const slimBoot = {
+    questionNums: boot.questionNums,
+    timeMinutes: boot.timeMinutes,
+    back: boot.back,
+    title: boot.title,
+    pilotLabel: boot.pilotLabel,
+    skipLogin: true,
+    ssr: true,
+    isFullTest: true,
+    passageQuestionRanges: boot.passageQuestionRanges,
+    answerKey: boot.answerKey,
+    hasAnswerKey: boot.hasAnswerKey,
+    explanations: null,
+    disableDeck: true,
+  };
+
+  return injectExamDictionaryPopover(
+    injectExamCopyFriction(injectExamBootScript(withContent, slimBoot), "reading"),
+  );
+}
+
 /** HTML làm bài full test (3 passage) — render sẵn trên server. */
 export async function buildFullTestExamRunnerHtml(pilotId: ReadingPilotId): Promise<string> {
   const boot = await buildFullTestExamBootPayload(pilotId);

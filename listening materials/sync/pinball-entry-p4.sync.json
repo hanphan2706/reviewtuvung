@@ -1,0 +1,676 @@
+{
+  "version": 1,
+  "partId": "pinball-entry-p4",
+  "audioFile": "pinball-entry-part4.mp3",
+  "durationSeconds": 322.114438,
+  "method": "whisper-local",
+  "preambleSeconds": 115.88,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Section 4.",
+      "start": 101.974,
+      "end": 103.828,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "You will hear part of a lecture about the science behind getting annoyed.",
+      "start": 103.828,
+      "end": 115.88,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "First, you have some time to look at questions 31 to 40.",
+      "start": 115.88,
+      "end": 119.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Now listen and answer questions 31 to 40.",
+      "start": 119.96,
+      "end": 123.78
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Hello everyone and thanks for coming.",
+      "start": 123.78,
+      "end": 125.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Now, some of you might not think that you're impatient people.",
+      "start": 125.82,
+      "end": 129.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "You rarely, if ever, get furious or upset about things.",
+      "start": 129.56,
+      "end": 132.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "But I can guarantee that for every single one of us,",
+      "start": 132.96,
+      "end": 136.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "there are things which annoy you regularly.",
+      "start": 136.7,
+      "end": 139.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Getting annoyed is part of human nature.",
+      "start": 139.08,
+      "end": 141.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "But what kind of things make us annoyed",
+      "start": 141.46,
+      "end": 144.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "and what's the scientific explanation for it?",
+      "start": 144.18,
+      "end": 146.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "First of all, there are plenty of things in modern life",
+      "start": 146.56,
+      "end": 150.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "that are incredibly annoying.",
+      "start": 150.3,
+      "end": 150.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "From pop-up ads to being asked to make it through a test",
+      "start": 150.48,
+      "end": 154.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "to prove you're not a robot when you try to get onto a web page.",
+      "start": 154.56,
+      "end": 158.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "But there are plenty of old-fashioned things too.",
+      "start": 158.3,
+      "end": 161.02
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "People blocking an escalator at the exact point",
+      "start": 161.02,
+      "end": 163.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "when you have just one minute left to catch your train.",
+      "start": 163.74,
+      "end": 167.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Or people who open their mouths while chewing their food",
+      "start": 167.48,
+      "end": 170.88
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "are just two out of thousands of things",
+      "start": 170.88,
+      "end": 173.6
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "that we might find irritating.",
+      "start": 173.6,
+      "end": 175.3
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "In short, there seem to be an endless number of things",
+      "start": 175.3,
+      "end": 179.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "to get annoyed about.",
+      "start": 179.04,
+      "end": 180.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "I would probably go as far as to say",
+      "start": 180.4,
+      "end": 183.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "that getting annoyed is the most common emotion of all.",
+      "start": 183.46,
+      "end": 186.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "So let's look at this emotion a little more scientifically.",
+      "start": 186.86,
+      "end": 190.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "We cannot say that we are all annoyed by exactly the same things.",
+      "start": 190.26,
+      "end": 194.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "For example, for one person, a selfie stick",
+      "start": 194.68,
+      "end": 197.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "might be a perfectly handy device,",
+      "start": 197.4,
+      "end": 199.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "well worth taking with you on holiday.",
+      "start": 199.44,
+      "end": 201.82
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "For someone else, seeing someone with this gadget",
+      "start": 201.82,
+      "end": 204.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "might drive them crazy.",
+      "start": 204.54,
+      "end": 205.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "In addition, there are almost certainly cultural differences",
+      "start": 205.9,
+      "end": 208.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "when it comes to what is annoying.",
+      "start": 208.62,
+      "end": 211,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Someone raised in Britain, for example,",
+      "start": 211,
+      "end": 213.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "is unlikely to greet an assistant or owner when entering a shop.",
+      "start": 213.04,
+      "end": 217.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "In other countries, it would be quite rude not to.",
+      "start": 217.12,
+      "end": 220.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "There may also be medical reasons.",
+      "start": 220.52,
+      "end": 222.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "For people with a condition known as misophonia,",
+      "start": 222.56,
+      "end": 225.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "certain noises like fingers tapping on a keyboard",
+      "start": 225.28,
+      "end": 228,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "or someone eating crisps can trigger very strong reactions.",
+      "start": 228,
+      "end": 231.06
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "But perhaps we can say that there are some general rules",
+      "start": 231.06,
+      "end": 234.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "as to what makes us annoyed.",
+      "start": 234.8,
+      "end": 236.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "Scientists Joe Palka and journalist Flora Lixman",
+      "start": 236.84,
+      "end": 239.22
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "have written a book about this subject",
+      "start": 239.22,
+      "end": 241.6
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "which sets out three of those rules.",
+      "start": 241.6,
+      "end": 243.98
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "The first is that the annoying thing, whatever it is,",
+      "start": 243.98,
+      "end": 247.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "must be unpleasant without actually being physically harmful.",
+      "start": 247.38,
+      "end": 250.1
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "For example, an angry wasp flying around your room",
+      "start": 250.1,
+      "end": 253.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "wouldn't actually be annoying.",
+      "start": 253.16,
+      "end": 254.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "You know that you're somewhat at risk from a wasp.",
+      "start": 254.52,
+      "end": 257.92
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "Not so a fly would seem endlessly attracted",
+      "start": 257.92,
+      "end": 260.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "to circling around the middle of your room,",
+      "start": 260.64,
+      "end": 263.36
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "completely ignoring the window you kindly left open for it.",
+      "start": 263.36,
+      "end": 266.76
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "Secondly, to be annoying,",
+      "start": 266.76,
+      "end": 268.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "something needs to be as unpredictable as possible,",
+      "start": 268.12,
+      "end": 270.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "and it must also be intermittent,",
+      "start": 270.84,
+      "end": 272.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "which means that it continually stops and starts again.",
+      "start": 272.88,
+      "end": 275.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "Permanently slow wi-fi is something you can probably get used to.",
+      "start": 275.94,
+      "end": 279.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "If you know you have slow wi-fi,",
+      "start": 279.68,
+      "end": 282.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "you'll learn not to depend on it.",
+      "start": 282.06,
+      "end": 284.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "But normally good wi-fi that suddenly stops",
+      "start": 284.44,
+      "end": 286.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "when you're in the middle of something",
+      "start": 286.82,
+      "end": 289.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "and keeps on stopping at surprising moments",
+      "start": 289.2,
+      "end": 291.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "can really get on our nerves.",
+      "start": 291.58,
+      "end": 293.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "And here is a final rule.",
+      "start": 293.62,
+      "end": 295.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "Imagine that you order something online.",
+      "start": 295.66,
+      "end": 297.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "You get an email saying that it will arrive on Saturday",
+      "start": 297.7,
+      "end": 301.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "after 9am.",
+      "start": 301.44,
+      "end": 302.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "Excitedly, you wake up on Saturday morning",
+      "start": 302.12,
+      "end": 304.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "looking forward to your delivery.",
+      "start": 304.5,
+      "end": 306.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "Time passes and keeps on passing.",
+      "start": 306.2,
+      "end": 308.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "Before you know it, it's 1pm",
+      "start": 308.24,
+      "end": 310.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "and you have absolutely no idea how much longer you have to wait.",
+      "start": 310.28,
+      "end": 314.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "It could be five minutes or five more hours.",
+      "start": 314.7,
+      "end": 317.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "After 9am begins to seem like it could mean anything.",
+      "start": 317.76,
+      "end": 321.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "Basically, for something to be truly annoying,",
+      "start": 321.16,
+      "end": 323.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-79",
+      "speaker": null,
+      "text": "it has to keep going for an unknown length of time.",
+      "start": 323.54,
+      "end": 327.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-80",
+      "speaker": null,
+      "text": "So getting annoyed is extremely common.",
+      "start": 327.28,
+      "end": 329.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-81",
+      "speaker": null,
+      "text": "But is there a way to get over it",
+      "start": 329.32,
+      "end": 332.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-82",
+      "speaker": null,
+      "text": "and live a life free of always continually getting",
+      "start": 332.38,
+      "end": 335.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-83",
+      "speaker": null,
+      "text": "slightly angry about things?",
+      "start": 335.44,
+      "end": 336.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-84",
+      "speaker": null,
+      "text": "Annoyingly, the answer seems to be no.",
+      "start": 336.8,
+      "end": 339.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-85",
+      "speaker": null,
+      "text": "That is the end of the test.",
+      "start": 339.18,
+      "end": 322.114,
+      "preAudio": false
+    }
+  ]
+}

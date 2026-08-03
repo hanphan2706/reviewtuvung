@@ -44,7 +44,7 @@ export const LANDING = {
     },
     {
       id: "ielts",
-      label: "Pinball IELTS 2.0",
+      label: "Pinball 3.0",
       hint: "4.5 → 6.0+",
     },
     {
@@ -82,9 +82,9 @@ export const LANDING = {
     },
     {
       slug: "pinball-ielts",
-      title: "Pinball IELTS 2.0 (4.5+ - 6.0+)",
+      title: "Pinball 3.0 (4.5+ - 6.0+)",
       ratingLabel: "4.9/5",
-      priceHint: "Pinball IELTS 2.0",
+      priceHint: "Pinball 3.0",
       image: "/course%202.jpg",
       summary:
         "Mình cần thi IELTS, và mình cần một nơi học thật sự hiệu quả. Mình không muốn phải thử hay thay đổi chỗ học mãi.",

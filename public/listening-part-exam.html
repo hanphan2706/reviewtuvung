@@ -187,6 +187,14 @@ html.exam-skip-login #student-badge{display:none!important}
 .note-grid-table thead th.note-grid-th{font-weight:700;background:rgba(75,40,118,.06)}
 .note-grid-table tbody td.note-grid-td{line-height:1.7}
 .note-form-table .fi,.note-grid-table .fi{width:100px;min-width:64px;max-width:160px}
+.flow-chart{display:flex;flex-direction:column;align-items:stretch;gap:0;margin:6px 0 10px;max-width:720px}
+.flow-title{text-align:center;letter-spacing:.02em}
+.flow-box{border:1.5px solid var(--exam-chrome-border);border-radius:8px;padding:12px 14px;background:var(--exam-chrome-bg);font-size:13.5px;line-height:1.65;color:var(--exam-chrome-text)}
+.flow-arrow{display:flex;justify-content:center;align-items:center;padding:6px 0;color:var(--exam-chrome-text);font-size:16px;line-height:1;opacity:.75}
+.flow-split{display:flex;justify-content:space-around;gap:12px;padding:6px 0}
+.flow-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.flow-col{display:flex;flex-direction:column;gap:0;min-width:0}
+@media(max-width:640px){.flow-row{grid-template-columns:1fr}}
 .note-form-table .fi-stack,.note-grid-table .fi-stack{
   display:inline-flex;flex-direction:column;align-items:flex-start;gap:2px;vertical-align:top;max-width:100%;
 }
@@ -240,46 +248,76 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 .msel.done{border-color:#34a853;background-color:#f4fbf5;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%234b2876' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E")}
 .map-layout{
   display:grid;
-  grid-template-columns:minmax(240px,420px) minmax(220px,1fr);
-  gap:16px 32px;
-  align-items:center;
+  grid-template-columns:minmax(240px,1.2fr) minmax(220px,0.9fr);
+  gap:16px 24px;
+  align-items:start;
   margin-top:6px;
+  max-width:100%;
 }
 .map-layout-map{
-  position:sticky;
-  top:10px;
-  z-index:1;
-  align-self:start;
+  position:static;
   min-width:0;
+  align-self:start;
+}
+.map-layout-side{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  min-width:0;
+  align-self:start;
 }
 .map-layout-questions{
   display:flex;
   flex-direction:column;
   gap:10px;
-  justify-content:center;
   min-width:0;
-  min-height:min(calc(100dvh - 260px),380px);
-  padding:12px 0 8px;
+  padding:0;
   box-sizing:border-box;
 }
 .map-layout-questions .mrow-top{max-width:none}
+.map-layout-questions .mrow-top-blank{
+  grid-template-columns:auto minmax(0,1fr) minmax(96px,140px);
+}
+.map-layout-questions .mtext-blank{
+  color:var(--exam-chrome-border);
+  letter-spacing:.08em;
+  user-select:none;
+}
 .map-img-wrap{margin:0;display:flex;justify-content:center;align-items:flex-start}
 .map-img{
   display:block;
   width:auto;
   max-width:100%;
-  max-height:min(calc(100dvh - 260px),380px);
+  /* Fit trong vùng làm bài — thấy hết plan mặc định, không phải cuộn mới tới options. */
+  max-height:min(calc(100dvh - 260px),560px);
   height:auto;
   object-fit:contain;
   border:1px solid var(--exam-chrome-border);
   border-radius:8px;
   background:var(--exam-chrome-bg);
 }
+.map-option-bank{
+  margin:0;
+  max-width:100%;
+}
+.map-option-bank .people-bank-list{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  column-gap:16px;
+  row-gap:6px;
+}
 @media (max-width:768px){
-  .map-layout{grid-template-columns:1fr;align-items:start}
-  .map-layout-map{position:static}
-  .map-layout-questions{min-height:0;padding:8px 0 0}
-  .map-img{max-height:min(52vh,320px);margin:0 auto}
+  .map-layout{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+  .map-img{
+    max-height:min(52vh,360px);
+    margin:0 auto;
+  }
+  .map-option-bank .people-bank-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:520px){
+  .map-option-bank .people-bank-list{grid-template-columns:1fr}
 }
 .people-bank{margin-bottom:16px;padding:14px 16px;background:var(--exam-chrome-bg);border:1.5px solid var(--exam-chrome-border);border-radius:9px}
 .people-bank-title{font-size:13px;font-weight:800;margin-bottom:10px;color:var(--exam-chrome-text)}

@@ -4,10 +4,15 @@ export type CourseOverviewItem = {
   value: string;
 };
 
+export type CourseCurriculumBulletSegment =
+  | { text: string; strong?: undefined }
+  | { strong: string; text?: undefined };
+
 export type CourseCurriculumBullet = {
   text?: string;
   strong?: string;
   suffix?: string;
+  segments?: readonly CourseCurriculumBulletSegment[];
 };
 
 export type CourseCurriculumItem = {
@@ -46,6 +51,12 @@ export type CoursePricingLine = {
   suffix: string;
 };
 
+export type CourseWhatsNewItem = {
+  icon: string;
+  title: string;
+  body: string;
+};
+
 export type CourseStitchConfig = {
   slug: string;
   hero: {
@@ -54,6 +65,11 @@ export type CourseStitchConfig = {
     bannerImage: string;
     /** Khớp object-position trên carousel landing (vd. `50% 36%`). */
     bannerObjectPosition?: string;
+  };
+  /** Tuỳ chọn — khối “có gì mới” ngay trên Tổng quan (Pinball 3.0). */
+  whatsNew?: {
+    title: string;
+    items: readonly CourseWhatsNewItem[];
   };
   overview: readonly CourseOverviewItem[];
   schedulePill: string;

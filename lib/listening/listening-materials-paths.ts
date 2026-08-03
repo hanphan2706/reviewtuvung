@@ -41,8 +41,12 @@ const CAM20_AUDIO_FILE = /^Cam20 Test[1-4] Part[1-4]\.mp3$/i;
 const CAM21_AUDIO_FILE = /^cam21-test[1-4]-part[1-4]\.mp3$/i;
 const CAM17_AUDIO_FILE = /^cam17-test[1-4]-part[1-4]\.mp3$/i;
 const REAL_TEST_AUDIO_FILE = /^real test \d+\.mp3$/i;
+const PINBALL_ENTRY_AUDIO_FILE = /^pinball-entry-part[1-4]\.mp3$/i;
 
 function listeningAudioSubdirsForFile(fileName: string): string[] {
+  if (PINBALL_ENTRY_AUDIO_FILE.test(fileName)) {
+    return [LISTENING_AUDIO_CAM_SUBDIR];
+  }
   if (TACTICS_BASIC_AUDIO_FILE.test(fileName)) {
     return [LISTENING_AUDIO_TACTICS_BASIC_SUBDIR, LISTENING_AUDIO_CAM_SUBDIR];
   }

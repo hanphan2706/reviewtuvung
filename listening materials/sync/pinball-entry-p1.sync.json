@@ -1,0 +1,738 @@
+{
+  "version": 1,
+  "partId": "pinball-entry-p1",
+  "audioFile": "pinball-entry-part1.mp3",
+  "durationSeconds": 413.828375,
+  "method": "whisper-local",
+  "preambleSeconds": 115.91,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "In this test, you'll hear a number of different recordings and you'll have to answer questions on what you hear.",
+      "start": 115.91,
+      "end": 122.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "There will be time for you to read the instructions and questions and you will have a chance to check your work.",
+      "start": 122.71,
+      "end": 130.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "All the recordings will be played once only.",
+      "start": 130.19,
+      "end": 132.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "The test is in four sections. Section one.",
+      "start": 132.91,
+      "end": 135.63
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "You will hear a man and a woman talking about travelling to an airport.",
+      "start": 135.63,
+      "end": 140.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "First, you have some time to look at questions one to five.",
+      "start": 140.39,
+      "end": 140.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "You will see that there is also an example which has been done for you.",
+      "start": 140.93,
+      "end": 146.03
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Now, we shall begin.",
+      "start": 146.03,
+      "end": 147.39
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "You should answer the questions as you listen because you will not hear the recording a second time.",
+      "start": 147.39,
+      "end": 153.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Listen carefully and answer questions one to five.",
+      "start": 153.51,
+      "end": 156.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Good afternoon. Travel info. How can I help?",
+      "start": 156.23,
+      "end": 158.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Oh, hi. I hope you can help me. I'm here in Chepstow at the moment and I need to get to Bristol Airport the day after tomorrow.",
+      "start": 158.95,
+      "end": 168.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "I was looking online at connections and I couldn't find too much useful information.",
+      "start": 168.13,
+      "end": 172.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "I mean, I'm actually very near the airport, no more than 40 kilometres, but public transport seems a bit limited.",
+      "start": 172.89,
+      "end": 179.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Bristol Airport, okay? I'll see what I can come up with for you.",
+      "start": 179.69,
+      "end": 184.11
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Sorry, where did you say you were?",
+      "start": 184.11,
+      "end": 186.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Chepstow, that's C-H-E-P-S-T-O-W.",
+      "start": 186.49,
+      "end": 187.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "There's a train station here and I've been looking at the train times, but I've been struggling to understand them.",
+      "start": 187.51,
+      "end": 194.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Taxi would probably be the fastest and easiest way.",
+      "start": 194.31,
+      "end": 197.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "It should take no more than 30 minutes or so from where you are right now.",
+      "start": 197.37,
+      "end": 202.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Yes, but I was quoted between 55 and 70 pounds.",
+      "start": 202.81,
+      "end": 206.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "It's not the cheapest way, that's for sure. Let me see what other options there are.",
+      "start": 206.21,
+      "end": 211.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Can I ask the time of your flight?",
+      "start": 211.65,
+      "end": 214.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "I want to make sure I get there at about 130 at the latest in the afternoon, that is.",
+      "start": 214.37,
+      "end": 220.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "My flight is actually at 325, although I should really be at the airport two hours earlier.",
+      "start": 220.83,
+      "end": 226.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "You've got a couple of other options then.",
+      "start": 226.61,
+      "end": 229.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "There isn't a boat is there.",
+      "start": 229.33,
+      "end": 231.37
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "I mean, there's a big river between here and Bristol.",
+      "start": 231.37,
+      "end": 234.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "It would be good if there was.",
+      "start": 234.77,
+      "end": 237.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "You can certainly get around Bristol City by boat, but getting to the airport is another matter.",
+      "start": 237.15,
+      "end": 242.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "The train is an option, but I wouldn't really recommend it.",
+      "start": 242.93,
+      "end": 246.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Why not?",
+      "start": 246.67,
+      "end": 247.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Well, it would involve catching one that leaves it at 11.29.",
+      "start": 247.35,
+      "end": 251.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Goes to another town in the opposite direction where you need to wait for 50 minutes.",
+      "start": 251.09,
+      "end": 256.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "And then wait for a connection to head back towards Bristol.",
+      "start": 256.53,
+      "end": 260.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "It would end up taking nearly three hours in total, which I'm not sure is the most sensible choice.",
+      "start": 260.27,
+      "end": 266.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "And you'd still have to use a bus for the last part of your journey.",
+      "start": 266.73,
+      "end": 271.83
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "You'd get to the airport by 1340.",
+      "start": 271.83,
+      "end": 274.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "It would be a lot cheaper than the taxi though.",
+      "start": 274.21,
+      "end": 277.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "It's 17 pounds 10 for a single.",
+      "start": 277.61,
+      "end": 279.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "Otherwise, there's a bus service setting off at 11.05.",
+      "start": 279.99,
+      "end": 283.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "And you'd reach the airport at 12.44.",
+      "start": 283.05,
+      "end": 285.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "Okay, that's more than two hours before my flight leaves.",
+      "start": 285.43,
+      "end": 288.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "Well, there's another at 12.02, which also arrives about two hours later.",
+      "start": 288.83,
+      "end": 292.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "And that would be 16.40.",
+      "start": 292.91,
+      "end": 294.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "The time of arrival?",
+      "start": 294.61,
+      "end": 295.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "No, no, the price of the ticket.",
+      "start": 295.97,
+      "end": 298.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "Oh, I see.",
+      "start": 298.35,
+      "end": 299.37
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "Well, I think I'll take the earlier one just to be on the safe side.",
+      "start": 299.37,
+      "end": 304.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "Otherwise, I'd be petrified of missing my flight.",
+      "start": 304.47,
+      "end": 307.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "Before you listen to the rest of the conversation, you have some time to look at questions six to ten.",
+      "start": 307.19,
+      "end": 313.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "Now listen and answer questions six to ten.",
+      "start": 313.99,
+      "end": 316.71
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "Where does the bus leave from exactly?",
+      "start": 316.71,
+      "end": 319.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "The train station, I guess.",
+      "start": 319.09,
+      "end": 320.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "Actually, you can't catch the bus from there.",
+      "start": 320.79,
+      "end": 323.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "And Chepstone doesn't have a bus station as such.",
+      "start": 323.51,
+      "end": 326.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "You'll need to find the police station, which is just a few minutes walk up the hill from the town centre.",
+      "start": 326.57,
+      "end": 333.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "The buses arrive and leave from the same street.",
+      "start": 333.71,
+      "end": 336.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "Ask someone if you can't find it.",
+      "start": 336.77,
+      "end": 339.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "Or just ask where the buses leave from.",
+      "start": 339.15,
+      "end": 341.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "Right.",
+      "start": 341.87,
+      "end": 342.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "Okay.",
+      "start": 342.32,
+      "end": 342.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "Your bus service is T7.",
+      "start": 342.77,
+      "end": 344.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "Be careful about bus S7,",
+      "start": 344.47,
+      "end": 346.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "which goes in a completely different direction.",
+      "start": 346.17,
+      "end": 348.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "Both leave from stand one.",
+      "start": 348.55,
+      "end": 350.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "And don't worry, there are only about three or four stands, so you can't miss it.",
+      "start": 350.25,
+      "end": 355.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "Great.",
+      "start": 355.69,
+      "end": 356.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "So this will take me all the way to the airport?",
+      "start": 356.14,
+      "end": 359.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "Actually no.",
+      "start": 359.88,
+      "end": 360.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "You'll need to go all the way to the end stop, which is Marbra Street in Bristol.",
+      "start": 360.56,
+      "end": 366.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "Marbra?",
+      "start": 366.34,
+      "end": 366.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "That's N-A-R-L-B-U-R-G-H?",
+      "start": 366.79,
+      "end": 367.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "Not quite.",
+      "start": 367.47,
+      "end": 368.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "M-A-R-L-B-O-R-O-U-G-H.",
+      "start": 368.15,
+      "end": 368.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "Oh, I see.",
+      "start": 368.6,
+      "end": 369.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "Well, I was nearly right.",
+      "start": 369.62,
+      "end": 371.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "You'll need to change buses there.",
+      "start": 371.32,
+      "end": 373.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-79",
+      "speaker": null,
+      "text": "Airport buses leave every ten minutes.",
+      "start": 373.36,
+      "end": 375.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-80",
+      "speaker": null,
+      "text": "You can't miss them.",
+      "start": 375.4,
+      "end": 376.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-81",
+      "speaker": null,
+      "text": "They'll have the name written on the side.",
+      "start": 376.76,
+      "end": 379.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-82",
+      "speaker": null,
+      "text": "So something like the Bristol Airport Express?",
+      "start": 379.48,
+      "end": 381.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-83",
+      "speaker": null,
+      "text": "Flyer, actually.",
+      "start": 381.86,
+      "end": 382.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-84",
+      "speaker": null,
+      "text": "Which is funny, because buses don't fly.",
+      "start": 382.54,
+      "end": 384.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-85",
+      "speaker": null,
+      "text": "And I won't have any problem taking all my things on board.",
+      "start": 384.92,
+      "end": 388.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-86",
+      "speaker": null,
+      "text": "Well, you shouldn't have difficulty finding luggage space.",
+      "start": 388.22,
+      "end": 391.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-87",
+      "speaker": null,
+      "text": "Because the buses leave so regularly, there are not going to be too many people on board.",
+      "start": 391.72,
+      "end": 397.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-88",
+      "speaker": null,
+      "text": "Well, it sounds complicated, but at least it's cheaper than taking a taxi.",
+      "start": 397.5,
+      "end": 404.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-89",
+      "speaker": null,
+      "text": "Thanks very much.",
+      "start": 404.4,
+      "end": 405.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-90",
+      "speaker": null,
+      "text": "You're welcome.",
+      "start": 405.42,
+      "end": 407,
+      "preAudio": false
+    },
+    {
+      "id": "cue-91",
+      "speaker": null,
+      "text": "Have a good trip.",
+      "start": 407,
+      "end": 410.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-92",
+      "speaker": null,
+      "text": "That is the end of section one.",
+      "start": 410.3,
+      "end": 413.828,
+      "preAudio": false
+    }
+  ]
+}

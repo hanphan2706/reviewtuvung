@@ -6,9 +6,11 @@ import {
   buildListeningExamTrackHtml,
   buildListeningFullTestExamPayload,
   buildListeningFullTestTrackHtml,
+  buildPinballEntryListeningExamPayload,
   type ListeningExamPayload,
   type ListeningFullTestExamPayload,
   type ListeningPartQuestionRange,
+  type PinballEntryListeningExamPayload,
 } from "@/lib/listening/build-listening-exam-html";
 import {
   getListeningIeltsTest,
@@ -119,7 +121,10 @@ function injectServerRenderedExam(template: string, boot: ListeningExamPayload):
   return html;
 }
 
-function injectFullTestServerRenderedExam(template: string, boot: ListeningFullTestExamPayload): string {
+function injectFullTestServerRenderedExam(
+  template: string,
+  boot: ListeningFullTestExamPayload | PinballEntryListeningExamPayload,
+): string {
   const minQ = boot.questionNums[0] ?? 1;
   const maxQ = boot.questionNums[boot.questionNums.length - 1] ?? minQ;
 
@@ -206,6 +211,42 @@ export async function buildListeningPartExamHtml(slug: string): Promise<string> 
     ssr: true,
     answerKey: payload.answerKey,
     hasAnswerKey: payload.hasAnswerKey,
+  };
+
+  return injectExamDictionaryPopover(
+    injectExamCopyFriction(injectExamBootScript(withContent, slimBoot), "listening"),
+    "listening",
+  );
+}
+
+/** Public, no-login entrance test — 4 parts, no Cambridge catalog lookup, no "add to deck". */
+export async function buildPinballEntryListeningExamHtml(): Promise<string> {
+  const payload = buildPinballEntryListeningExamPayload({
+    back: "/di-hoc/pinball-ielts",
+    pilotLabel: "Pinball IELTS — Bài kiểm tra đầu vào",
+  });
+  if (!payload) {
+    throw new Error("no exam questions");
+  }
+
+  const templatePath = path.join(process.cwd(), "public/listening-part-exam.html");
+  const template = fs.readFileSync(templatePath, "utf8");
+  const withContent = injectFullTestServerRenderedExam(template, payload);
+
+  const slimBoot = {
+    questionNums: payload.questionNums,
+    back: payload.back,
+    title: payload.title,
+    pilotLabel: payload.pilotLabel,
+    audioUrls: payload.audioUrls,
+    hasTranscript: payload.hasTranscript,
+    skipLogin: true,
+    ssr: true,
+    isFullTest: true,
+    partQuestionRanges: payload.partQuestionRanges,
+    answerKey: payload.answerKey,
+    hasAnswerKey: payload.hasAnswerKey,
+    disableDeck: true,
   };
 
   return injectExamDictionaryPopover(

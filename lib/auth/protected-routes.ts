@@ -91,6 +91,17 @@ export function isPublicReadingExamBootApi(pathname: string, searchParams: URLSe
   return isPublicCambridgeReadingPilot(article.pilotId);
 }
 
+const PUBLIC_PINBALL_ENTRY_AUDIO_FILES = new Set(
+  [1, 2, 3, 4].map((part) => `pinball-entry-part${part}.mp3`),
+);
+
+/** Audio cho bài test đầu vào Pinball IELTS — public, không cần đăng nhập. */
+export function isPublicListeningAudioApi(pathname: string, searchParams: URLSearchParams): boolean {
+  if (pathname !== "/api/listening/audio") return false;
+  const file = searchParams.get("file") ?? "";
+  return PUBLIC_PINBALL_ENTRY_AUDIO_FILES.has(file);
+}
+
 /** API chỉ dùng khi đã đăng nhập (middleware trả 401). */
 export function isProtectedApiPath(pathname: string): boolean {
   if (pathname.startsWith("/api/reading/")) return true;

@@ -10,6 +10,7 @@ import {
   PINBALL_OVERVIEW,
   PINBALL_TEACHER_IMAGE,
   PINBALL_TEACHER_SCORES,
+  PINBALL_WHATS_NEW,
 } from "@/lib/pinball-ielts-stitch-data";
 import {
   PINBALL_NOTES_INTRO_HTML,
@@ -20,20 +21,25 @@ import { PINBALL_TUITION_PANELS } from "@/lib/pinball-tuition-panels";
 export const PINBALL_IELTS_STITCH_CONFIG: CourseStitchConfig = {
   slug: "pinball-ielts",
   hero: {
-    title: "Pinball IELTS 2.0 (4.5+ - 6.0+)",
+    title: "Pinball 3.0 (4.5+ - 6.0+)",
     subtitle: "A scholarly journey designed for academic discipline and linguistic mastery",
     bannerImage: courseHeroBannerFromLanding("pinball-ielts").bannerImage,
   },
+  whatsNew: {
+    title: "Pinball 3.0 có gì mới?",
+    items: PINBALL_WHATS_NEW,
+  },
   overview: PINBALL_OVERVIEW,
-  schedulePill: "Ngày và giờ học dự kiến: Lớp tháng 4/2026 đã khai giảng",
+  schedulePill:
+    "Ngày và giờ học dự kiến: Tối Thứ 2 & Thứ 6 (19:00 - 21:00). Khai giảng tháng 9/2026.",
   curriculum: {
     items: PINBALL_CURRICULUM,
-    defaultOpenId: "acc-speaking",
+    defaultOpenId: "acc-grammar",
   },
   entrance: {
     paragraphs: [
       "Nếu bạn đã từng thi IELTS thì chỉ cần gửi điểm gần nhất (trong vòng 1 năm).",
-      "Nếu chưa, bạn vui lòng làm bài test bên dưới và dò đáp án. Yêu cầu đầu vào sẽ cần >= 20 câu đúng.",
+      "Nếu chưa, làm bài Listening và Reading bên dưới (không cần đăng nhập). Sau khi nộp bài sẽ thấy điểm và đáp án — chụp màn hình kết quả gửi mình là được.",
     ],
     options: PINBALL_ENTRANCE_OPTIONS,
   },
@@ -42,7 +48,7 @@ export const PINBALL_IELTS_STITCH_CONFIG: CourseStitchConfig = {
   pricing: {
     amount: "8.400.000đ",
     amountSuffix: "/ khoá",
-    note: "Bạn có thể thanh toán học phí trước 50%\u00A0hoặc\u00A0100%.",
+    note: "Bạn có thể thanh toán học phí trước từng tháng hoặc cả khoá.",
   },
   notes: {
     introHtml: PINBALL_NOTES_INTRO_HTML,

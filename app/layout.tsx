@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Noto_Serif } from "next/font/google";
+import { ExternalLinkNewTab } from "@/components/external-link-new-tab";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import "./globals.css";
 import "./(marketing)/di-hoc/course-content.css";
@@ -36,6 +37,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-dvh flex-col bg-[#f5f5f7] font-sans">
         {children}
+        <ExternalLinkNewTab />
         <GoogleAnalytics />
       </body>
     </html>

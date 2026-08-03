@@ -7,6 +7,7 @@ const CAM21_AUDIO_FILE = /^cam21-test[1-4]-part[1-4]\.mp3$/i;
 const CAM17_AUDIO_FILE = /^cam17-test[1-4]-part[1-4]\.mp3$/i;
 const TACTICS_BASIC_AUDIO_FILE = /^Unit\d{2}-Listening\d{2}\.mp3$/;
 const REAL_TEST_AUDIO_FILE = /^real test \d+\.mp3$/i;
+const PINBALL_ENTRY_AUDIO_FILE = /^pinball-entry-part[1-4]\.mp3$/i;
 
 export function listeningPartAudioFileName(examSlug: string, test: number, part: number): string {
   if (examSlug === "cam18") {
@@ -47,6 +48,15 @@ export function realTestListeningAudioApiPath(seriesNumber: number): string {
   return `/api/listening/audio?file=${encodeURIComponent(file)}`;
 }
 
+export function pinballEntryListeningAudioFileName(part: number): string {
+  return `pinball-entry-part${part}.mp3`;
+}
+
+export function pinballEntryListeningAudioApiPath(part: number): string {
+  const file = pinballEntryListeningAudioFileName(part);
+  return `/api/listening/audio?file=${encodeURIComponent(file)}`;
+}
+
 export function isAllowedListeningAudioFile(fileName: string): boolean {
   return (
     CAM_AUDIO_FILE.test(fileName) ||
@@ -55,7 +65,8 @@ export function isAllowedListeningAudioFile(fileName: string): boolean {
     CAM21_AUDIO_FILE.test(fileName) ||
     CAM17_AUDIO_FILE.test(fileName) ||
     TACTICS_BASIC_AUDIO_FILE.test(fileName) ||
-    REAL_TEST_AUDIO_FILE.test(fileName)
+    REAL_TEST_AUDIO_FILE.test(fileName) ||
+    PINBALL_ENTRY_AUDIO_FILE.test(fileName)
   );
 }
 

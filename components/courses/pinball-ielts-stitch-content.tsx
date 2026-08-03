@@ -26,7 +26,7 @@ export function PinballIeltsStitchContent() {
       <CourseStitchHeroBanner
         bannerImage={heroBanner.bannerImage}
         bannerObjectPosition={heroBanner.bannerObjectPosition}
-        title="Pinball IELTS 2.0 (4.5+ - 6.0+)"
+        title="Pinball 3.0 (4.5+ - 6.0+)"
         subtitle="A scholarly journey designed for academic discipline and linguistic mastery"
       />
 
@@ -46,7 +46,9 @@ export function PinballIeltsStitchContent() {
           </div>
           <div className="pinball-stitch-pill pinball-stitch-schedule">
             <CourseStitchIcon name="calendar_month" />
-            <span>Ngày và giờ học dự kiến: Lớp tháng 4/2026 đã khai giảng</span>
+            <span>
+              Ngày và giờ học dự kiến: Tối Thứ 2 & Thứ 6 (19:00 - 21:00). Khai giảng tháng 9/2026.
+            </span>
           </div>
         </div>
       </section>
@@ -66,19 +68,13 @@ export function PinballIeltsStitchContent() {
         <div className="pinball-stitch-entrance__text">
           <p>Nếu bạn đã từng thi IELTS thì chỉ cần gửi điểm gần nhất (trong vòng 1 năm).</p>
           <p>
-            Nếu chưa, bạn vui lòng làm bài test bên dưới và dò đáp án. Yêu cầu đầu vào sẽ cần &gt;= 20
-            câu đúng.
+            Nếu chưa, làm bài Listening và Reading bên dưới (không cần đăng nhập). Sau khi nộp bài sẽ
+            thấy điểm và đáp án — chụp màn hình kết quả gửi mình là được.
           </p>
         </div>
         <div className="pinball-stitch-entrance__options">
           {PINBALL_ENTRANCE_OPTIONS.map((option) => (
-            <a
-              key={option.label}
-              className="pinball-stitch-entrance-option"
-              href={option.href}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a key={option.label} className="pinball-stitch-entrance-option" href={option.href}>
               <CourseStitchIcon name={option.icon} className="pinball-stitch-entrance-option__icon" />
               <span className="pinball-stitch-entrance-option__label">{option.label}</span>
               <ArrowRight className="pinball-stitch-entrance-option__arrow" strokeWidth={1.75} aria-hidden />
@@ -99,7 +95,7 @@ export function PinballIeltsStitchContent() {
                 8.400.000đ <span>/ khoá</span>
               </p>
               <p className="pinball-stitch-pricing-note">
-                Bạn có thể thanh toán học phí theo từng tháng (2.100.000đ/tháng) hoặc từng khoá.
+                Bạn có thể thanh toán học phí trước từng tháng hoặc cả khoá.
               </p>
               <a
                 className="pinball-stitch-pricing-cta"

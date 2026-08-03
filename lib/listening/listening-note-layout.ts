@@ -77,14 +77,22 @@ function splitNonEmptyGroups(bodyLines: readonly string[]): string[][] {
   return groups;
 }
 
-function isHeaderCellLine(line: string): boolean {
+function isHeaderCellLine(line: string, options?: { allowBlank?: boolean }): boolean {
   const text = stripBulletPrefix(line);
-  if (!text || lineHasBlank(text)) return false;
+  if (!text) return false;
+  if (!options?.allowBlank && lineHasBlank(text)) return false;
   if (isNoteFieldLabelLine(text)) return false;
   if (/^\d+\s*(minutes?|hours?|mins?)\b/i.test(text)) return false;
   if (/^[a-z]/.test(text)) return false;
-  if (/\b(minutes?|market|section|counter|shop|street|floor|room|prawns|loaf|guitars?|songs?)\b/i.test(text)) return false;
-  return text.length <= 48;
+  if (
+    !lineHasBlank(text) &&
+    /\b(minutes?|market|section|counter|shop|street|floor|room|prawns|loaf|guitars?|songs?)\b/i.test(text)
+  ) {
+    return false;
+  }
+  /** Headers may include a blank (e.g. "Journey time from 1……"); ignore dots for length. */
+  const lengthForLimit = text.replace(/(?:\.{3,}|_{3,}|…{2,})/g, "").trim().length;
+  return lengthForLimit <= 48;
 }
 
 function isFormContinuationLine(raw: string, stripped: string): boolean {
@@ -181,11 +189,12 @@ function inferGridTableFromLines(lines: readonly string[]): NoteGridTableLayout 
     start = 1;
   }
 
+  const headerOpts = { allowBlank: true } as const;
   const candidates: NoteGridTableLayout[] = [];
   for (let headerCount = 4; headerCount >= 2; headerCount -= 1) {
     if (lines.length < start + headerCount + headerCount) continue;
     const headerCandidates = lines.slice(start, start + headerCount);
-    if (!headerCandidates.every((line) => isHeaderCellLine(line))) continue;
+    if (!headerCandidates.every((line) => isHeaderCellLine(line, headerOpts))) continue;
     const headers = headerCandidates.map((line) => stripBulletPrefix(line));
     const dataLines = lines.slice(start + headerCount);
 
@@ -222,7 +231,7 @@ function inferGridTableFromSectionedGroups(bodyLines: readonly string[]): NoteGr
 
   const headerCount = headerGroup.length;
   if (headerCount < 2 || headerCount > 4) return null;
-  if (!headerGroup.every((line) => isHeaderCellLine(line))) return null;
+  if (!headerGroup.every((line) => isHeaderCellLine(line, { allowBlank: true }))) return null;
 
   const headers = headerGroup.map((line) => stripBulletPrefix(line));
   const dataSizes = dataGroups.map((g) => g.length);

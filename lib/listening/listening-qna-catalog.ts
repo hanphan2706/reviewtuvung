@@ -114,6 +114,11 @@ const REAL_TEST_1_QNA: ListeningQnaFileRef = {
   test: 1,
 };
 
+const PINBALL_ENTRY_QNA: ListeningQnaFileRef = {
+  fileName: "pinball entry test qna.txt",
+  test: 1,
+};
+
 /** Full test — một file QnA cho cả 4 Part. */
 export const LISTENING_TEST_QNA: Record<string, ListeningQnaFileRef> = {
   "cam21-test1": CAM21_TEST1_QNA,
@@ -137,6 +142,7 @@ export const LISTENING_TEST_QNA: Record<string, ListeningQnaFileRef> = {
   "cam18-test3": CAM18_TEST3_QNA,
   "cam18-test4": CAM18_TEST4_QNA,
   "de-thi-that-1": REAL_TEST_1_QNA,
+  "pinball-entry": PINBALL_ENTRY_QNA,
 };
 
 export function getListeningTestQnaRef(testId: string): ListeningQnaFileRef | null {
@@ -225,6 +231,10 @@ export const LISTENING_PART_QNA: Record<string, ListeningPartQnaRef> = {
   "cam18-t4-p2": { ...CAM18_TEST4_QNA, part: 2 },
   "cam18-t4-p3": { ...CAM18_TEST4_QNA, part: 3 },
   "cam18-t4-p4": { ...CAM18_TEST4_QNA, part: 4 },
+  "pinball-entry-p1": { ...PINBALL_ENTRY_QNA, part: 1 },
+  "pinball-entry-p2": { ...PINBALL_ENTRY_QNA, part: 2 },
+  "pinball-entry-p3": { ...PINBALL_ENTRY_QNA, part: 3 },
+  "pinball-entry-p4": { ...PINBALL_ENTRY_QNA, part: 4 },
 };
 
 export function getListeningPartQnaRef(partId: string): ListeningPartQnaRef | null {

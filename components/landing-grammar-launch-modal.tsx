@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
-import { GRAMMAR_HUB_HREF } from "@/lib/grammar/grammar-hub-nav";
+
+const PINBALL_COURSE_HREF = "/di-hoc/pinball-ielts";
 
 type LandingGrammarLaunchModalProps = {
   open: boolean;
@@ -40,7 +41,7 @@ export function LandingGrammarLaunchModal({
   return (
     <dialog
       open
-      aria-labelledby="grammar-launch-modal-title"
+      aria-labelledby="pinball-launch-modal-title"
       className="fixed inset-0 z-70 m-0 flex h-dvh max-h-dvh w-screen max-w-none items-center justify-center border-0 bg-zinc-950/50 px-5 py-6 text-left sm:px-6"
     >
       <button
@@ -52,8 +53,8 @@ export function LandingGrammarLaunchModal({
       <div className="relative z-10 w-full max-w-xl rounded-[28px] border border-zinc-200/90 bg-white px-6 pb-5 pt-6 text-left shadow-[0_20px_80px_rgb(15_23_42/0.24)] sm:px-7 sm:pb-6 sm:pt-7 md:max-w-2xl">
         <div className="relative mb-4 h-44 w-full overflow-hidden rounded-3xl bg-zinc-100 sm:h-52">
           <Image
-            src="/ngu%20phap%202.jpg"
-            alt="Ngữ pháp trên anthichtuhoc"
+            src="/course%202.jpg"
+            alt="Pinball 3.0"
             fill
             className="object-cover object-center"
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 36rem, 42rem"
@@ -63,38 +64,38 @@ export function LandingGrammarLaunchModal({
         <div className="space-y-4">
           <div className="space-y-2">
             <p className="text-sm font-semibold tracking-[-0.01em] text-[#4b2876]">
-              Tự học
+              Đi học
             </p>
             <h2
-              id="grammar-launch-modal-title"
+              id="pinball-launch-modal-title"
               className="pr-14 text-[1.75rem] font-semibold leading-tight tracking-[-0.04em] text-ink sm:text-[1.9rem] md:text-[2rem]"
             >
-              Tính năng ngữ pháp đã ra mắt!
+              Pinball 3.0 đang tuyển sinh!
             </h2>
           </div>
 
           <ul className="space-y-2.5 text-sm leading-relaxed text-ink-muted sm:text-[15px]">
             <li>
-              📘 Bám English Grammar in Use — lý thuyết ngắn, ví dụ rõ, luyện tập ngay trên web.
+              📘 Học liệu được nâng cấp — tinh gọn và/hoặc nâng cấp dựa trên góc nhìn thực tế của học viên.
             </li>
             <li>
-              🧭 Học theo lộ trình Easy → Medium → Hard, hoặc nhảy thẳng vào chủ điểm còn yếu.
+              🧰 Công cụ ôn luyện miễn phí, dùng nhanh nhất toàn bộ tính năng trong mục Tự học trên webapp.
             </li>
             <li>
-              ✅ Bài tập đa dạng: điền từ, chọn đáp án, viết lại câu — có đáp án và giải thích.
+              📝 Ngân hàng đề cập nhật xu hướng mới nhất kèm giải thích chi tiết.
             </li>
             <li>
-              📈 Theo dõi tiến độ trên tài khoản đăng nhập, biết mình đang vững ở đâu và còn thiếu gì.
+              🗂 Thư viện bài mẫu nói & viết band 7+ từ mình và các cựu giám khảo.
             </li>
           </ul>
 
           <div className="flex justify-center">
             <Link
-              href={GRAMMAR_HUB_HREF}
+              href={PINBALL_COURSE_HREF}
               onClick={onExplore}
               className="inline-flex min-h-11 items-center justify-center rounded-full bg-zinc-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-zinc-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
             >
-              Khám phá ngay
+              Xem Pinball 3.0
             </Link>
           </div>
         </div>

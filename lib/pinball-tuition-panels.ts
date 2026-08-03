@@ -27,12 +27,12 @@ export const PINBALL_TUITION_PANELS = [
   },
   {
     id: "tuition-5",
-    title: "Sĩ số nhỏ (tối đa 6 học viên)",
-    bodyHtml: "Lớp học <mark class=\"highlight-teal\"><strong>sỉ số nhỏ</strong></mark>, không đại trà, tối đa 6 học viên, giúp mình <mark class=\"highlight-teal\"><strong>đảm bảo chất lượng khoá học</strong></mark> và kiểm soát năng lực của lớp.",
+    title: "Sĩ số nhỏ (tối đa 4 học viên)",
+    bodyHtml: "Lớp học <mark class=\"highlight-teal\"><strong>sỉ số nhỏ</strong></mark>, không đại trà, tối đa 4 học viên, giúp mình <mark class=\"highlight-teal\"><strong>đảm bảo chất lượng khoá học</strong></mark> và kiểm soát năng lực của lớp.",
   },
   {
     id: "tuition-6",
     title: "Recording & thanh toán học phí",
-    bodyHtml: "Bạn có thể xem <mark class=\"highlight-blue\"><a href=\"https://drive.google.com/drive/folders/1enCHAbbWypl1Yp31vMQEMmK937drTQxa?usp=sharing\">recording</a></mark> một buổi học của mình, sau đó nếu cảm thấy hài lòng bạn có thể hoàn thành học phí trước <mark class=\"highlight-blue\"><strong>từng tháng</strong></mark> (trước ngày 10 hằng tháng) hoặc <mark class=\"highlight-blue\"><strong>từng khoá</strong></mark>.",
+    bodyHtml: "Bạn có thể xem <mark class=\"highlight-blue\"><a href=\"https://drive.google.com/drive/folders/1enCHAbbWypl1Yp31vMQEMmK937drTQxa?usp=sharing\">recording</a></mark> một buổi học của mình, sau đó nếu cảm thấy hài lòng bạn có thể hoàn thành học phí trước <mark class=\"highlight-blue\"><strong>từng tháng</strong></mark> (trước ngày 15 hằng tháng) hoặc <mark class=\"highlight-blue\"><strong>từng khoá</strong></mark>.",
   },
 ] as const;

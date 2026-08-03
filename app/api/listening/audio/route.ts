@@ -9,6 +9,9 @@ import { resolveListeningAudioPath } from "@/lib/listening/listening-materials-f
 import { isAllowedListeningAudioFile } from "@/lib/listening/listening-materials-urls";
 import { createServiceRoleSupabaseClient } from "@/lib/supabase/service-role";
 
+/** Public entrance test — audio must be reachable without login (matches `pinball-entry-part{1-4}.mp3`). */
+const PUBLIC_PINBALL_ENTRY_AUDIO_FILE = /^pinball-entry-part[1-4]\.mp3$/i;
+
 async function streamSupabaseMp3(objectKey: string, request: Request): Promise<NextResponse | null> {
   const supabase = createServiceRoleSupabaseClient();
   if (!supabase) return null;
@@ -25,12 +28,14 @@ function streamLocalFile(filePath: string, request: Request): NextResponse {
 }
 
 export async function GET(request: Request) {
-  const auth = await requireApiUser();
-  if (auth.response) return auth.response;
-
   const file = new URL(request.url).searchParams.get("file");
   if (!file || !isAllowedListeningAudioFile(file)) {
     return NextResponse.json({ error: "invalid or disallowed file" }, { status: 400 });
+  }
+
+  if (!PUBLIC_PINBALL_ENTRY_AUDIO_FILE.test(file)) {
+    const auth = await requireApiUser();
+    if (auth.response) return auth.response;
   }
 
   const objectKey = listeningAudioObjectKey(file);

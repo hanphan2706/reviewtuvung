@@ -9,7 +9,9 @@ import {
   listeningPartIdForTest,
   type ListeningIeltsTestId,
 } from "@/lib/listening/ielts-test-catalog";
-import { loadListeningQnaTest } from "@/lib/listening/generate-ielts-listening-flow-content";
+import { loadListeningQnaFile, loadListeningQnaTest } from "@/lib/listening/generate-ielts-listening-flow-content";
+import { getListeningTestQnaRef } from "@/lib/listening/listening-qna-catalog";
+import { getPinballEntryListeningPart, PINBALL_ENTRY_TEST_ID } from "@/lib/listening/pinball-entry-listening";
 import { enrichListeningQnaPartMapImages } from "@/lib/listening/listening-map-image";
 import { BLANK_RE, getListeningQnaPart } from "@/lib/listening/parse-listening-qna";
 import {
@@ -246,17 +248,124 @@ function renderNoteFormTable(layout: NoteFormLayout): string {
 function renderNoteGridTable(layout: NoteGridTableLayout): string {
   const title = layout.title ? `<p class="note-doc-title">${escHtml(layout.title)}</p>` : "";
   const headerCells = layout.headers
-    .map((header) => `<th class="note-grid-th">${header ? escHtml(header) : "&nbsp;"}</th>`)
+    .map((header) => {
+      if (!header) return `<th class="note-grid-th">&nbsp;</th>`;
+      const withBlanks = renderNoteLineWithBlanks(header);
+      return `<th class="note-grid-th">${withBlanks || "&nbsp;"}</th>`;
+    })
     .join("");
   const bodyRows = layout.rows
     .map((row) => {
       const cells = row
-        .map((cell) => `<td class="note-grid-td">${renderNoteLineWithBlanks(cell)}</td>`)
+        .map((cell) => {
+          const trimmed = cell.trim();
+          if (trimmed === "—" || trimmed === "-" || trimmed === "–") {
+            return `<td class="note-grid-td">&nbsp;</td>`;
+          }
+          return `<td class="note-grid-td">${renderNoteLineWithBlanks(cell)}</td>`;
+        })
         .join("");
       return `<tr>${cells}</tr>`;
     })
     .join("");
   return `${title}<table class="note-grid-table"><thead><tr>${headerCells}</tr></thead><tbody>${bodyRows}</tbody></table>`;
+}
+
+const FLOW_ARROW_RE = /^[↓↑→←⟷▾▴]+$/u;
+const FLOW_SPLIT_RE = /^FLOW\s+SPLIT$/i;
+
+function renderFlowchartBox(line: string): string {
+  return `<div class="flow-box">${renderNoteLineWithBlanks(line)}</div>`;
+}
+
+/** Branching flowchart (Pinball entry Q26–30 style) using `FLOW SPLIT` markers in QnA. */
+function renderFlowchartBody(bodyLines: readonly string[]): string {
+  const lines = bodyLines.map((line) => line.trim()).filter((line) => line.length > 0);
+  if (lines.length === 0) return "";
+
+  let titleHtml = "";
+  let start = 0;
+  if (lines[0] && !lineHasBlank(lines[0]) && !FLOW_SPLIT_RE.test(lines[0]) && !FLOW_ARROW_RE.test(lines[0])) {
+    const maybeTitle = lines[0]!;
+    if (/^[A-Z]/.test(maybeTitle) && maybeTitle === maybeTitle.toUpperCase()) {
+      titleHtml = `<p class="note-doc-title flow-title">${escHtml(maybeTitle)}</p>`;
+      start = 1;
+    }
+  }
+
+  const rest = lines.slice(start);
+  const splitIndexes = rest
+    .map((line, index) => (FLOW_SPLIT_RE.test(line) ? index : -1))
+    .filter((index) => index >= 0);
+
+  if (splitIndexes.length >= 1) {
+    const rootLines = rest.slice(0, splitIndexes[0]).filter((line) => !FLOW_ARROW_RE.test(line));
+    const afterFirst = rest.slice(splitIndexes[0]! + 1);
+    const secondSplitRel = afterFirst.findIndex((line) => FLOW_SPLIT_RE.test(line));
+
+    let leftCol: string[] = [];
+    let rightCol: string[] = [];
+    let afterSecond: string[] = [];
+
+    if (secondSplitRel >= 0) {
+      const mid = afterFirst.slice(0, secondSplitRel).filter((line) => !FLOW_ARROW_RE.test(line));
+      leftCol = mid.slice(0, 1);
+      rightCol = mid.slice(1);
+      afterSecond = afterFirst.slice(secondSplitRel + 1).filter((line) => !FLOW_ARROW_RE.test(line));
+    } else {
+      const mid = afterFirst.filter((line) => !FLOW_ARROW_RE.test(line));
+      leftCol = mid.slice(0, Math.ceil(mid.length / 2));
+      rightCol = mid.slice(Math.ceil(mid.length / 2));
+    }
+
+    /** After second split: left leaf + right branch (may include a final ↓ child under the right leaf). */
+    let leftLeaf = afterSecond[0] ? [afterSecond[0]] : [];
+    let rightBranch = afterSecond.slice(1);
+
+    const rootHtml = rootLines.map(renderFlowchartBox).join("");
+    const leftMidHtml = leftCol.map(renderFlowchartBox).join('<div class="flow-arrow" aria-hidden="true">↓</div>');
+    const rightMidHtml = rightCol.map(renderFlowchartBox).join('<div class="flow-arrow" aria-hidden="true">↓</div>');
+
+    let rightLower = "";
+    if (rightBranch.length > 0) {
+      const rightLeaf = rightBranch[0]!;
+      const underRight = rightBranch.slice(1);
+      rightLower = `${renderFlowchartBox(rightLeaf)}${
+        underRight.length
+          ? `<div class="flow-arrow" aria-hidden="true">↓</div>${underRight.map(renderFlowchartBox).join('<div class="flow-arrow" aria-hidden="true">↓</div>')}`
+          : ""
+      }`;
+    }
+
+    const leftLower = leftLeaf.map(renderFlowchartBox).join('<div class="flow-arrow" aria-hidden="true">↓</div>');
+
+    return `${titleHtml}
+<div class="flow-chart">
+  ${rootHtml}
+  <div class="flow-split" aria-hidden="true"><span class="flow-arrow">↓</span><span class="flow-arrow">↓</span></div>
+  <div class="flow-row">
+    <div class="flow-col">${leftMidHtml}</div>
+    <div class="flow-col">
+      ${rightMidHtml}
+      ${
+        leftLower || rightLower
+          ? `<div class="flow-split" aria-hidden="true"><span class="flow-arrow">↓</span><span class="flow-arrow">↓</span></div>
+      <div class="flow-row">
+        <div class="flow-col">${leftLower}</div>
+        <div class="flow-col">${rightLower}</div>
+      </div>`
+          : ""
+      }
+    </div>
+  </div>
+</div>`;
+  }
+
+  const boxes = rest
+    .filter((line) => !FLOW_ARROW_RE.test(line) && !FLOW_SPLIT_RE.test(line))
+    .map(renderFlowchartBox)
+    .join('<div class="flow-arrow" aria-hidden="true">↓</div>');
+  return `${titleHtml}<div class="flow-chart">${boxes}</div>`;
 }
 
 function renderNoteFreeformBody(bodyLines: readonly string[]): string {
@@ -274,13 +383,16 @@ function renderNoteFreeformBody(bodyLines: readonly string[]): string {
 }
 
 function renderNoteSection(section: ListeningQnaNoteSection, partNumber: number): { html: string; nums: number[] } {
+  const instructionText = section.instructionLines.join(" ");
   const layout = inferNoteBodyLayout(section.instructionLines, section.bodyLines);
   const nums = collectBlankNumbersFromLines(section.bodyLines);
   const minQ = nums[0] ?? (partNumber - 1) * 10 + 1;
   const maxQ = nums[nums.length - 1] ?? partNumber * 10;
 
   let body = "";
-  if (layout.kind === "form") {
+  if (/complete the flowchart below/i.test(instructionText)) {
+    body = renderFlowchartBody(section.bodyLines);
+  } else if (layout.kind === "form") {
     body = renderNoteFormTable(layout);
   } else if (layout.kind === "grid-table") {
     body = renderNoteGridTable(layout);
@@ -322,21 +434,39 @@ function renderMapSection(section: ListeningQnaMapSection, partNumber: number): 
   const nums = section.items.map((i) => i.number);
   const minQ = nums[0] ?? (partNumber - 1) * 10 + 1;
   const maxQ = nums[nums.length - 1] ?? partNumber * 10;
-  const letters = letterRangeToLetters(section.letterRange);
-  const letterOpts = renderLetterSelectOptions(letters);
+  const hasOptionBank = (section.options?.length ?? 0) > 0;
+  const letterOpts = hasOptionBank
+    ? section.options!
+        .map((o) => `<option value="${escHtml(o.letter)}">${escHtml(o.letter)} — ${escHtml(o.text)}</option>`)
+        .join("")
+    : renderLetterSelectOptions(letterRangeToLetters(section.letterRange));
+  const bank = hasOptionBank
+    ? `<div class="people-bank map-option-bank"><ul class="people-bank-list">${section
+        .options!.map(
+          (o) =>
+            `<li><span class="people-bank-letter">${escHtml(o.letter)}</span><span class="people-bank-name">${escHtml(o.text)}</span></li>`,
+        )
+        .join("")}</ul></div>`
+    : "";
   const rows = section.items
     .map((item) => {
       const qid = `q${item.number}`;
-      return `<div class="mrow mrow-inline"><div class="mrow-top"><div class="mqnum">${item.number}</div><div class="mtext">${escHtml(item.label)}</div><select class="msel" id="sel-${qid}" onchange="selMatch('${qid}',this)"><option value="">—</option>${letterOpts}</select></div></div>`;
+      const label = item.label.replace(/^[.\s…_]+$/u, "").trim();
+      /** Plan/map blanks with numbers on the image: keep row as number + select only. */
+      const labelHtml = label
+        ? `<div class="mtext">${escHtml(label)}</div>`
+        : `<div class="mtext mtext-blank" aria-hidden="true">…………</div>`;
+      return `<div class="mrow mrow-inline"><div class="mrow-top${label ? "" : " mrow-top-blank"}"><div class="mqnum">${item.number}</div>${labelHtml}<select class="msel" id="sel-${qid}" onchange="selMatch('${qid}',this)"><option value="">—</option>${letterOpts}</select></div></div>`;
     })
     .join("");
   const questionsBlock = `<div class="map-layout-questions">${rows}</div>`;
   const mapBlock = section.imageUrl
     ? `<div class="map-layout-map"><div class="map-img-wrap"><img src="${escHtml(section.imageUrl)}" alt="Map for questions ${minQ}–${maxQ}" class="map-img"></div></div>`
     : "";
+  /** Desktop: map trái (fit viewport) + options/câu hỏi phải — khỏi kéo lên xuống giữa hình và đáp án. */
   const layout = section.imageUrl
-    ? `<div class="map-layout">${mapBlock}${questionsBlock}</div>`
-    : questionsBlock;
+    ? `<div class="map-layout">${mapBlock}<div class="map-layout-side">${bank}${questionsBlock}</div></div>`
+    : `${bank}${questionsBlock}`;
   return {
     html: `${renderSectionHeader(partNumber, minQ, maxQ, section.instructionLines)}${layout}`,
     nums,
@@ -495,7 +625,7 @@ export function buildListeningFullTestTrackHtml(ranges: readonly ListeningPartQu
     .join("");
 }
 
-function buildListeningPartQuestionsChunk(
+export function buildListeningPartQuestionsChunk(
   meta: ListeningPartMeta,
   qnaPart: ListeningQnaPart,
 ): { html: string; nums: number[] } | null {
@@ -574,6 +704,89 @@ export function buildListeningFullTestExamPayload(
 
   return {
     testId,
+    title: options.pilotLabel,
+    pilotLabel: options.pilotLabel,
+    questionsHtml: questionHtmlParts.join("\n"),
+    questionNums,
+    audioUrls,
+    transcriptHtml,
+    transcriptHtmlByPart,
+    hasTranscript: Object.keys(transcriptHtmlByPart).length > 0,
+    answerKey,
+    hasAnswerKey,
+    back: options.back,
+    skipLogin: true,
+    isFullTest: true,
+    partQuestionRanges,
+  };
+}
+
+/** Public no-login payload for `pinball-entry` — mirrors `ListeningFullTestExamPayload` shape. */
+export type PinballEntryListeningExamPayload = {
+  title: string;
+  pilotLabel: string;
+  questionsHtml: string;
+  questionNums: number[];
+  audioUrls: string[];
+  transcriptHtml: string;
+  transcriptHtmlByPart: Partial<Record<number, string>>;
+  hasTranscript: boolean;
+  answerKey: Record<string, string>;
+  hasAnswerKey: boolean;
+  back: string;
+  skipLogin: true;
+  isFullTest: true;
+  partQuestionRanges: ListeningPartQuestionRange[];
+};
+
+export function buildPinballEntryListeningExamPayload(options: {
+  back: string;
+  pilotLabel: string;
+}): PinballEntryListeningExamPayload | null {
+  const ref = getListeningTestQnaRef(PINBALL_ENTRY_TEST_ID);
+  if (!ref) return null;
+  const parsed = loadListeningQnaFile(ref);
+  if (!parsed) return null;
+
+  const questionHtmlParts: string[] = [];
+  const allNums: number[] = [];
+  const answerKey: Record<string, string> = {};
+  const partQuestionRanges: ListeningPartQuestionRange[] = [];
+  const audioUrls: string[] = [];
+  const transcriptHtmlByPart: Partial<Record<number, string>> = {};
+
+  for (let part = 1; part <= 4; part += 1) {
+    const qnaPart = getListeningQnaPart(parsed, part);
+    const meta = getPinballEntryListeningPart(part);
+    if (!qnaPart || !meta) return null;
+
+    const chunk = buildListeningPartQuestionsChunk(meta, qnaPart);
+    if (!chunk) return null;
+
+    questionHtmlParts.push(
+      `<div class="qsection${part === 1 ? " active" : ""}" id="q${part}-section">${chunk.html}</div>`,
+    );
+    allNums.push(...chunk.nums);
+    Object.assign(answerKey, qnaPart.answers);
+    audioUrls.push(meta.audioPublicPath);
+    partQuestionRanges.push({ part, min: (part - 1) * 10 + 1, max: part * 10 });
+
+    const syncedHtml = buildSyncedTranscriptHtmlForPart(meta.id);
+    if (syncedHtml) {
+      transcriptHtmlByPart[part] = syncedHtml;
+    } else {
+      const transcriptText = loadListeningTranscriptText(meta);
+      if (transcriptText) transcriptHtmlByPart[part] = listeningTranscriptPlainToSafeHtml(transcriptText);
+    }
+  }
+
+  const questionNums = [...new Set(allNums)].sort((a, b) => a - b);
+  if (questionNums.length === 0) return null;
+
+  const transcriptHtml = buildListeningFullTestTranscriptBodyHtml(transcriptHtmlByPart);
+  const hasAnswerKey = questionNums.some((n) => answerKey[String(n)] != null && answerKey[String(n)] !== "");
+
+  return {
     title: options.pilotLabel,
     pilotLabel: options.pilotLabel,
     questionsHtml: questionHtmlParts.join("\n"),

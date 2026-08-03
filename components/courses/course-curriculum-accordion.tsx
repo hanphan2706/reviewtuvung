@@ -6,6 +6,23 @@ import { useState } from "react";
 import type { CourseCurriculumBullet, CourseCurriculumItem } from "@/lib/course-stitch-types";
 
 function CurriculumBulletContent({ bullet }: { bullet: CourseCurriculumBullet }) {
+  if (bullet.segments?.length) {
+    return (
+      <>
+        {bullet.segments.map((part, partIndex) => {
+          const key = part.strong
+            ? `strong:${partIndex}:${part.strong}`
+            : `text:${partIndex}:${part.text ?? ""}`;
+          return part.strong ? (
+            <strong key={key}>{part.strong}</strong>
+          ) : (
+            <span key={key}>{part.text}</span>
+          );
+        })}
+      </>
+    );
+  }
+
   const prefix = bullet.text ?? "";
   const strong = bullet.strong ?? "";
   const suffix = bullet.suffix ?? "";
@@ -79,8 +96,10 @@ export function CourseCurriculumAccordion({
             <div className={`pinball-stitch-accordion__panel${isOpen ? " is-open" : ""}`}>
               <div className="pinball-stitch-accordion__panel-inner">
                 <ul className="pinball-stitch-accordion__list">
-                  {item.bullets.map((bullet) => {
-                    const key = `${bullet.text ?? ""}|${bullet.strong ?? ""}|${bullet.suffix ?? ""}`;
+                  {item.bullets.map((bullet, bulletIndex) => {
+                    const key = bullet.segments?.length
+                      ? `${item.id}-seg-${bulletIndex}`
+                      : `${bullet.text ?? ""}|${bullet.strong ?? ""}|${bullet.suffix ?? ""}`;
                     return (
                       <li key={key}>
                         <CurriculumBulletContent bullet={bullet} />

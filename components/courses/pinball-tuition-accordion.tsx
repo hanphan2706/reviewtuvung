@@ -2,6 +2,7 @@
 
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { withExternalLinkTargets } from "@/lib/external-link-html";
 import { PINBALL_TUITION_PANELS } from "@/lib/pinball-tuition-panels";
 
 export function PinballTuitionAccordion() {
@@ -40,7 +41,7 @@ export function PinballTuitionAccordion() {
                   <div
                     className="pinball-stitch-tuition-accordion__body course-page"
                     // biome-ignore lint/security/noDangerouslySetInnerHtml: HTML con từ Notion gốc
-                    dangerouslySetInnerHTML={{ __html: panel.bodyHtml }}
+                    dangerouslySetInnerHTML={{ __html: withExternalLinkTargets(panel.bodyHtml) }}
                   />
                 </div>
               </div>
