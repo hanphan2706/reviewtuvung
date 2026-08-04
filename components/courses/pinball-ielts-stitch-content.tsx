@@ -92,10 +92,10 @@ export function PinballIeltsStitchContent() {
           <div className="pinball-stitch-pricing-col md:col-span-5">
             <div className="pinball-stitch-pricing-card">
               <p className="pinball-stitch-pricing-amount">
-                8.400.000đ <span>/ khoá</span>
+                2.100.000đ <span>/ tháng</span>
               </p>
               <p className="pinball-stitch-pricing-note">
-                Bạn có thể thanh toán học phí trước từng tháng hoặc cả khoá.
+                Bạn có thể thanh toán trước từng tháng hoặc theo cả khoá (4 tháng).
               </p>
               <a
                 className="pinball-stitch-pricing-cta"

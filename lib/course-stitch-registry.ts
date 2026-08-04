@@ -46,9 +46,9 @@ export const PINBALL_IELTS_STITCH_CONFIG: CourseStitchConfig = {
   tuitionPanels: PINBALL_TUITION_PANELS,
   tuitionDefaultOpenId: "tuition-6",
   pricing: {
-    amount: "8.400.000đ",
-    amountSuffix: "/ khoá",
-    note: "Bạn có thể thanh toán học phí trước từng tháng hoặc cả khoá.",
+    amount: "2.100.000đ",
+    amountSuffix: "/ tháng",
+    note: "Bạn có thể thanh toán trước từng tháng hoặc theo cả khoá (4 tháng).",
   },
   notes: {
     introHtml: PINBALL_NOTES_INTRO_HTML,
