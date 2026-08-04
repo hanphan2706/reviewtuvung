@@ -10,6 +10,7 @@ import { resolveFlowExerciseContent, resolveFlowExerciseFromLesson } from "@/lib
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
 import { LISTENING_SEVEN_STEPS, type ListeningSevenStepId } from "@/lib/listening/listening-seven-steps";
 import { useListeningFlowDictionary } from "@/hooks/use-listening-flow-dictionary";
+import { isBasicIeltsListeningExamSlug } from "@/lib/listening/basic-ielts-listening-catalog";
 
 type ListeningSevenStepFlowProps = {
   meta: ListeningPartMeta;
@@ -23,6 +24,14 @@ type ListeningSevenStepFlowProps = {
 };
 
 const DICT_ENABLED_STEPS = new Set<ListeningSevenStepId>([1, 2, 4, 5]);
+
+/** Basic IELTS: bỏ dự đoán / ý chính / ghi nhớ — bắt đầu từ câu hỏi sách. */
+const BASIC_IELTS_FLOW_STEPS: readonly ListeningSevenStepId[] = [4, 5, 6];
+
+const BASIC_IELTS_STEP_SHORT_LABELS = {
+  vi: ["CÂU HỎI", "SHADOWING", "PHẢN ÁNH"],
+  en: ["QUESTIONS", "SHADOWING", "REFLECT"],
+} as const;
 
 const fieldClass =
   "mt-2 w-full rounded-xl border border-[#E4E4E7] bg-white px-3 py-2.5 text-sm text-[#000001] outline-none placeholder:text-[#616365] focus:border-[#4B2876] focus:ring-1 focus:ring-[#4B2876]/20 sm:px-4 sm:py-3 sm:text-[15px]";
@@ -97,32 +106,35 @@ function StepIntro({ title, description }: { title: string; description: string 
 
 function Stepper({
   currentStep,
+  steps,
   shortLabels,
   onSelect,
 }: {
   currentStep: ListeningSevenStepId;
+  steps: readonly ListeningSevenStepId[];
   shortLabels: readonly string[];
   onSelect: (step: ListeningSevenStepId) => void;
 }) {
   return (
     <div className="min-w-0 flex-1">
       <div className="flex w-full min-w-0 items-center">
-        {LISTENING_SEVEN_STEPS.map((step, index) => {
-          const isActive = step.id === currentStep;
-          const isComplete = step.id < currentStep;
-          const isLast = index === LISTENING_SEVEN_STEPS.length - 1;
+        {steps.map((stepId, index) => {
+          const isActive = stepId === currentStep;
+          const isComplete = currentStep > stepId;
+          const isLast = index === steps.length - 1;
           const shortLabel = shortLabels[index] ?? "";
+          const displayNumber = index + 1;
 
           return (
-            <div key={step.id} className={`flex min-w-0 items-center ${isLast ? "shrink-0" : "min-w-0 flex-1"}`}>
+            <div key={stepId} className={`flex min-w-0 items-center ${isLast ? "shrink-0" : "min-w-0 flex-1"}`}>
               <button
                 type="button"
-                onClick={() => onSelect(step.id)}
+                onClick={() => onSelect(stepId)}
                 className="group flex shrink-0 items-center gap-1.5"
                 aria-current={isActive ? "step" : undefined}
-                aria-label={`${step.id}. ${shortLabel}`}
+                aria-label={`${displayNumber}. ${shortLabel}`}
               >
-                <StepCircle stepId={step.id} isActive={isActive} isComplete={isComplete} />
+                <StepCircle stepId={displayNumber} isActive={isActive} isComplete={isComplete} />
                 {isActive ? (
                   <span className="hidden shrink-0 whitespace-nowrap text-[9px] font-bold uppercase tracking-[0.12em] text-[#000001] sm:inline">
                     {shortLabel}
@@ -133,7 +145,7 @@ function Stepper({
               {!isLast ? (
                 <div
                   className={`mx-1 h-px min-w-[4px] flex-1 sm:mx-2 ${
-                    step.id < currentStep ? "bg-[#000001]" : "bg-[#E4E4E7]"
+                    stepId < currentStep ? "bg-[#000001]" : "bg-[#E4E4E7]"
                   }`}
                   aria-hidden
                 />
@@ -338,8 +350,13 @@ export function ListeningSevenStepFlow({
   flowLessonContent = null,
 }: ListeningSevenStepFlowProps) {
   const flowContentRef = useRef<HTMLDivElement>(null);
+  const skipWarmup = isBasicIeltsListeningExamSlug(meta.examSlug);
+  const flowSteps = skipWarmup
+    ? BASIC_IELTS_FLOW_STEPS
+    : LISTENING_SEVEN_STEPS.map((step) => step.id);
+  const firstStep = flowSteps[0] ?? 1;
   const [locale, setLocale] = useState<ListeningFlowLocale>("en");
-  const [currentStep, setCurrentStep] = useState<ListeningSevenStepId>(1);
+  const [currentStep, setCurrentStep] = useState<ListeningSevenStepId>(firstStep);
   const [predictionChoices, setPredictionChoices] = useState<Set<string>>(new Set());
   const [gistChoices, setGistChoices] = useState<Set<string>>(new Set());
   const [memoryText, setMemoryText] = useState("");
@@ -357,10 +374,18 @@ export function ListeningSevenStepFlow({
         : resolveFlowExerciseContent(lessonId, locale),
     [flowLessonContent, lessonId, locale],
   );
-  const stepTitle = copy.stepTitles[currentStep - 1] ?? "";
+  const stepShortLabels = skipWarmup
+    ? BASIC_IELTS_STEP_SHORT_LABELS[locale]
+    : copy.stepShortLabels;
+  const stepTitle = skipWarmup
+    ? (locale === "vi"
+        ? (["Câu hỏi", "Shadowing", "Phản ánh"][flowSteps.indexOf(currentStep)] ?? "")
+        : (["Questions", "Shadowing", "Reflection"][flowSteps.indexOf(currentStep)] ?? ""))
+    : (copy.stepTitles[currentStep - 1] ?? "");
+  const detailPrompt = exercise.detailPrompt ?? copy.step4Prompt;
 
   useEffect(() => {
-    setCurrentStep(1);
+    setCurrentStep(firstStep);
     setPredictionChoices(new Set());
     setGistChoices(new Set());
     setMemoryText("");
@@ -368,10 +393,10 @@ export function ListeningSevenStepFlow({
     setGistChecked(false);
     setDetailChecked(false);
     setReflection({});
-  }, [lessonId]);
+  }, [lessonId, firstStep]);
 
   const restartLesson = () => {
-    setCurrentStep(1);
+    setCurrentStep(firstStep);
     setPredictionChoices(new Set());
     setGistChoices(new Set());
     setMemoryText("");
@@ -385,7 +410,10 @@ export function ListeningSevenStepFlow({
     onStepChange?.(currentStep);
   }, [currentStep, onStepChange]);
 
-  const goToStep = (step: ListeningSevenStepId) => setCurrentStep(step);
+  const goToStep = (step: ListeningSevenStepId) => {
+    if (!flowSteps.includes(step)) return;
+    setCurrentStep(step);
+  };
   const toggleLocale = () => setLocale((prev) => (prev === "vi" ? "en" : "vi"));
 
   const togglePrediction = (key: string) => {
@@ -424,12 +452,17 @@ export function ListeningSevenStepFlow({
   return (
     <section className="overflow-hidden rounded-xl border border-[#E4E4E7] bg-white shadow-sm">
       <div className="flex items-center gap-2 border-b border-[#E4E4E7] px-4 py-3.5 md:gap-3 md:px-8 md:py-5">
-        <Stepper currentStep={currentStep} shortLabels={copy.stepShortLabels} onSelect={goToStep} />
+        <Stepper
+          currentStep={currentStep}
+          steps={flowSteps}
+          shortLabels={stepShortLabels}
+          onSelect={goToStep}
+        />
         <FlowLocaleToggle locale={locale} onToggle={toggleLocale} />
       </div>
 
       <div ref={flowContentRef} className="px-5 py-6 md:px-8 md:py-10">
-        {currentStep === 1 ? (
+        {!skipWarmup && currentStep === 1 ? (
           <div className="mx-auto flex max-w-2xl flex-col items-center gap-6 text-center md:gap-8">
             <StepIntro title={stepTitle} description={copy.step1Prompt} />
             <div className="w-full text-left">
@@ -442,7 +475,7 @@ export function ListeningSevenStepFlow({
           </div>
         ) : null}
 
-        {currentStep === 2 ? (
+        {!skipWarmup && currentStep === 2 ? (
           <div className="mx-auto flex max-w-2xl flex-col gap-4 md:gap-6">
             <StepIntro title={stepTitle} description={copy.step2Prompt} />
             <OptionGrid
@@ -476,7 +509,7 @@ export function ListeningSevenStepFlow({
           </div>
         ) : null}
 
-        {currentStep === 3 ? (
+        {!skipWarmup && currentStep === 3 ? (
           <div className="mx-auto flex max-w-2xl flex-col gap-4 md:gap-6">
             <StepIntro title={stepTitle} description={copy.step3Prompt} />
             <textarea
@@ -495,16 +528,27 @@ export function ListeningSevenStepFlow({
 
         {currentStep === 4 ? (
           <div className="mx-auto flex max-w-2xl flex-col gap-4 md:gap-6">
-            <StepIntro title={stepTitle} description={copy.step4Prompt} />
+            <StepIntro title={stepTitle} description={detailPrompt} />
             {exercise.detailQuestions.map((question) => (
               <div key={question.key}>
                 <p className="cursor-text select-text text-[10px] font-bold uppercase tracking-[0.14em] text-[#616365]">
                   {question.conversation}
                 </p>
-                <div className="mt-1.5">
-                  <p className="cursor-text select-text text-sm font-medium text-[#000001]">
-                    {question.question}
-                  </p>
+                {question.question ? (
+                  <div className="mt-1.5">
+                    <p className="cursor-text select-text text-sm font-medium text-[#000001]">
+                      {question.question}
+                    </p>
+                    <input
+                      className={fieldClass}
+                      value={detailAnswers[question.key] ?? ""}
+                      onChange={(e) => {
+                        setDetailAnswers((prev) => ({ ...prev, [question.key]: e.target.value }));
+                        setDetailChecked(false);
+                      }}
+                    />
+                  </div>
+                ) : (
                   <input
                     className={fieldClass}
                     value={detailAnswers[question.key] ?? ""}
@@ -513,7 +557,7 @@ export function ListeningSevenStepFlow({
                       setDetailChecked(false);
                     }}
                   />
-                </div>
+                )}
                 {detailChecked ? (
                   <div className="mt-2 rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2.5 text-sm text-emerald-900">
                     <p className="leading-relaxed">
@@ -533,7 +577,9 @@ export function ListeningSevenStepFlow({
               </div>
             ))}
             <StepActions>
-              <SecondaryButton onClick={() => goToStep(3)}>{copy.back}</SecondaryButton>
+              {skipWarmup ? null : (
+                <SecondaryButton onClick={() => goToStep(3)}>{copy.back}</SecondaryButton>
+              )}
               {detailChecked ? (
                 <PrimaryButton onClick={() => goToStep(5)}>{copy.step4ListenAgain}</PrimaryButton>
               ) : (

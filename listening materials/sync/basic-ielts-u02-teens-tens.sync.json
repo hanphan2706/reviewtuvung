@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "partId": "basic-ielts-u02-teens-tens",
+  "audioFile": "bil-18.mp3",
+  "durationSeconds": 125.549833,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "exercise 6, discriminating between teens and tens.",
+      "start": 0.21,
+      "end": 6.63
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "The teen numbers, those between 13 and 19, are often confused with the multiples of",
+      "start": 6.63,
+      "end": 14.07
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "10, 30, 40, 50, 60, 70, 80 and 90.",
+      "start": 14.07,
+      "end": 20.75
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "This lesson is for practice in hearing the differences in the following pairs of numbers.",
+      "start": 20.75,
+      "end": 25.85
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "13, 30, 14, 40, 15, 50, 16, 60, 17, 70, 18, 80, 19, 90.",
+      "start": 25.85,
+      "end": 43.95
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "It is important to listen to the last part of each word.",
+      "start": 43.95,
+      "end": 49.93
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Listen carefully, be ready to write.",
+      "start": 49.93,
+      "end": 52.89
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Draw a circle around the correct number.",
+      "start": 52.89,
+      "end": 56.35
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Number 1, the student from New York bought 15 new books last week.",
+      "start": 56.35,
+      "end": 64.2
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Number 2, my uncle George lives at 30 Kings Road.",
+      "start": 64.2,
+      "end": 70.65
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Number 3, Mr. Johnson was 14 minutes late for his lecture.",
+      "start": 70.65,
+      "end": 77.36
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Number 4, it took 16 hours to finish his work.",
+      "start": 77.36,
+      "end": 83.94
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Number 5, Mary finished the test in 70 minutes.",
+      "start": 83.94,
+      "end": 89.94
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Number 6, my friend Allen lost 19 pounds the first day of class.",
+      "start": 89.94,
+      "end": 97.66
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Number 7, I paid 80 pounds for that coat.",
+      "start": 97.66,
+      "end": 103.58
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Number 8, he lives at 5062 Green Street, York.",
+      "start": 103.58,
+      "end": 110.86
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Number 9, her address is 1340 Farm Street, Brighton.",
+      "start": 110.86,
+      "end": 119.12
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Number 10, we bought 40 CDs last month.",
+      "start": 119.12,
+      "end": 125.55
+    }
+  ]
+}

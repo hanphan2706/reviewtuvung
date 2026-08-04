@@ -1,0 +1,429 @@
+{
+  "version": 1,
+  "partId": "basic-ielts-u01-places",
+  "audioFile": "bil-03.mp3",
+  "durationSeconds": 199.162875,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Exercise 3. Names of places",
+      "start": 0.24,
+      "end": 4.24
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Listen to the following places and write them down.",
+      "start": 4.24,
+      "end": 8.52
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Do you know where these places are in Britain?",
+      "start": 8.52,
+      "end": 12.2
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "1. Edinburgh",
+      "start": 12.2,
+      "end": 13.88
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "E-D-I-N-B-U-R-G-H",
+      "start": 13.88,
+      "end": 20.14
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Edinburgh",
+      "start": 20.14,
+      "end": 22.24
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "2. Glasgow",
+      "start": 22.24,
+      "end": 24.72
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "G-L-A-S-G-O-W",
+      "start": 24.72,
+      "end": 30.34
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Glasgow",
+      "start": 30.34,
+      "end": 32.4
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "3. Aberdeen",
+      "start": 32.4,
+      "end": 34.62
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "A-B-E-R-D-E-E-N",
+      "start": 34.62,
+      "end": 40.72
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Aberdeen",
+      "start": 40.72,
+      "end": 42.64
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "4. Dundee",
+      "start": 42.64,
+      "end": 45.48
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "D-U-N-D-E-E",
+      "start": 45.48,
+      "end": 49.42
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Dundee",
+      "start": 49.42,
+      "end": 50.48
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "5. Cardiff",
+      "start": 50.48,
+      "end": 52.76
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "C-A-R-D-I-F-F",
+      "start": 52.76,
+      "end": 57.6
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Cardiff",
+      "start": 57.6,
+      "end": 58.56
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "6. Swansea",
+      "start": 58.56,
+      "end": 62.48
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "S-W-A-N-S-E-A",
+      "start": 62.48,
+      "end": 67.16
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Swansea",
+      "start": 67.16,
+      "end": 69.48
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "7. Newport",
+      "start": 69.48,
+      "end": 72.2
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "N-E-W-P-O-R-T",
+      "start": 72.2,
+      "end": 76.34
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Newport",
+      "start": 76.34,
+      "end": 77.68
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "8. Belfast",
+      "start": 77.68,
+      "end": 81.42
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "B-E-L-F-A-S-T",
+      "start": 81.42,
+      "end": 85.68
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Belfast",
+      "start": 85.68,
+      "end": 87.14
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "9. Manchester",
+      "start": 87.14,
+      "end": 89.26
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "M-A-N-C-H-E-S-T-E-R",
+      "start": 89.26,
+      "end": 94.22
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Manchester",
+      "start": 94.22,
+      "end": 96.68
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "10. Leeds",
+      "start": 96.68,
+      "end": 98.5
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "L-E-E-D-S",
+      "start": 98.5,
+      "end": 101.76
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Leeds",
+      "start": 101.76,
+      "end": 103.68
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "11. Sheffield",
+      "start": 103.68,
+      "end": 105.56
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "S-H-E-F-F-I-E-L-D",
+      "start": 105.56,
+      "end": 110.42
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Sheffield",
+      "start": 110.42,
+      "end": 112.56
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "12. Leicester",
+      "start": 112.56,
+      "end": 115.34
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "L-E-I-C-E-S-T-E-R",
+      "start": 115.34,
+      "end": 121.14
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "Leicester",
+      "start": 121.14,
+      "end": 123.56
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "13. Liverpool",
+      "start": 123.56,
+      "end": 126.42
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "L-I-V-E-R-P-O-O-L",
+      "start": 126.42,
+      "end": 131.22
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "Liverpool",
+      "start": 131.22,
+      "end": 132.22
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "Liverpool",
+      "start": 132.22,
+      "end": 133.84
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "14. Birmingham",
+      "start": 133.84,
+      "end": 137.15
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "B-I-R-M-I-N-G-H-A-M",
+      "start": 137.15,
+      "end": 143.22
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "Birmingham",
+      "start": 143.22,
+      "end": 145.22
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "15. Nottingham",
+      "start": 145.22,
+      "end": 148.16
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "N-O-T-T-I-N-G-H-A-M",
+      "start": 148.16,
+      "end": 152.92
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "Nottingham",
+      "start": 152.92,
+      "end": 155.44
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "16. Coventry",
+      "start": 155.44,
+      "end": 164.56
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "17. Bristol",
+      "start": 164.56,
+      "end": 166.84
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "B-R-I-S-T-O-L",
+      "start": 166.84,
+      "end": 170.9
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "Bristol",
+      "start": 170.9,
+      "end": 173.1
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "18. Bradford",
+      "start": 173.1,
+      "end": 176.03
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "B-R-A-D-F-O-R-D",
+      "start": 176.03,
+      "end": 180.99
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "Bradford",
+      "start": 180.99,
+      "end": 181.56
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "19. London",
+      "start": 181.56,
+      "end": 189.28
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "20. Brighton",
+      "start": 189.28,
+      "end": 191.96
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "B-R-I-G-H-T-O-N",
+      "start": 191.96,
+      "end": 196.64
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "Brighton",
+      "start": 196.64,
+      "end": 199.163
+    }
+  ]
+}

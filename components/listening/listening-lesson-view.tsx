@@ -61,7 +61,7 @@ export function ListeningLessonView({
   const audioRef = useRef<ArticlePassageAudioPlayerHandle>(null);
   const audioDurationRef = useRef(0);
   const [audioCurrentTime, setAudioCurrentTime] = useState(0);
-  const usesSevenStepFlow = meta.examSlug === "tactics-basic";
+  const usesSevenStepFlow = meta.examSlug === "tactics-basic" || meta.examSlug === "basic-ielts-listening";
   const hasIeltsDualMode = hasListeningPartExam(meta.id);
   const [ieltsMode, setIeltsMode] = useState<"exam" | "comprehension" | null>(null);
   const { openExamHref, loginPrompt, closeLoginPrompt } = useStudyExamNav(isLoggedIn);

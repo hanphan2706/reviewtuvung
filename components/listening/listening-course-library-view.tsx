@@ -21,6 +21,7 @@ type ListeningCourseLibraryViewProps = {
   pageTitle: string;
   pageDescription: string;
   pageDescriptionExtra?: string;
+  courseSourceLabel?: string;
   lessons: readonly ListeningPartMeta[];
   isLoggedIn: boolean;
   userProfile?: StudyHubUserProfile | null;
@@ -31,6 +32,7 @@ function ListeningCourseLibraryViewInner({
   pageTitle,
   pageDescription,
   pageDescriptionExtra,
+  courseSourceLabel,
   lessons,
   isLoggedIn,
   userProfile = null,
@@ -67,7 +69,11 @@ function ListeningCourseLibraryViewInner({
           </header>
 
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_min(100%,20rem)] lg:items-start xl:grid-cols-[minmax(0,1fr)_22rem]">
-            <ListeningCourseLessonList lessons={sortedLessons} onOpenLesson={openLesson} />
+            <ListeningCourseLessonList
+              lessons={sortedLessons}
+              onOpenLesson={openLesson}
+              sourceLabel={courseSourceLabel}
+            />
             <ListeningCourseLibrarySidebar lessons={sortedLessons} isLoggedIn={loggedIn} />
           </div>
         </div>

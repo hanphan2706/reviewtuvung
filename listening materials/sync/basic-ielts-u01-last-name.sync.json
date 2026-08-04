@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "partId": "basic-ielts-u01-last-name",
+  "audioFile": "bil-09.mp3",
+  "durationSeconds": 94.516333,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Exercise 6. What's your last name?",
+      "start": 0.4,
+      "end": 5.7
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Listen to the conversations and complete the information about each person.",
+      "start": 5.7,
+      "end": 12.7
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "One. Linda. This is Marty. He is from Canada.",
+      "start": 12.7,
+      "end": 18.06
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Nice to meet you. I'm Linda Mandel. I come from Brazil.",
+      "start": 18.06,
+      "end": 23.42
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Oh, hello. And what's your last name again?",
+      "start": 23.42,
+      "end": 26.92
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Mandel. M-A-N-D-E-L. What do you study here, Linda?",
+      "start": 26.92,
+      "end": 33.66
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "I study business.",
+      "start": 33.66,
+      "end": 37.38
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Two. Hi. I'm Joseph Block from Finland. Please call me Joe.",
+      "start": 37.38,
+      "end": 43.36
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Hello, Joe. What's your last name again?",
+      "start": 43.36,
+      "end": 46.56
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "It's Block. B-L-O-C-K.",
+      "start": 46.56,
+      "end": 50.32
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "What are you studying now? Engineering.",
+      "start": 50.32,
+      "end": 53.42
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Oh, engineering. That sounds interesting.",
+      "start": 53.42,
+      "end": 57.9
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Three. Okay, Ms. McLean. Let me just check this information.",
+      "start": 57.9,
+      "end": 64.76
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Is your first name spelled E-L-L-E-N?",
+      "start": 64.76,
+      "end": 69.94
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "No. My first name is Eleanor. It's spelled E-L-E-N-A.",
+      "start": 69.94,
+      "end": 75.82
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Okay, thanks. And you are from Brazil, correct?",
+      "start": 75.82,
+      "end": 80.38
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "No, I'm not from Brazil. I'm from Mexico.",
+      "start": 80.38,
+      "end": 84.28
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Oh, sorry. Mexico. But you are studying English, right?",
+      "start": 84.28,
+      "end": 90.94
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Yes, that's right.",
+      "start": 90.94,
+      "end": 94.516
+    }
+  ]
+}

@@ -43,7 +43,7 @@ export function useListeningFlowAudio(audioRef: RefObject<ArticlePassageAudioPla
         return;
       }
 
-      if (step === 4 && prev < 4) {
+      if (step === 4 && prev !== 4) {
         player.resetAndPlay();
         audioEndedRef.current = false;
         return;

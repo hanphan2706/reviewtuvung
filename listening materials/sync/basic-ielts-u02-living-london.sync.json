@@ -1,0 +1,310 @@
+{
+  "version": 1,
+  "partId": "basic-ielts-u02-living-london",
+  "audioFile": "bil-36.mp3",
+  "durationSeconds": 202.318367,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Exercise 3. Living in London.",
+      "start": 0.72,
+      "end": 4.3
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Listen to the talk and write down the prices in the boxes provided.",
+      "start": 4.3,
+      "end": 9.8
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "London has been called the most expensive city in the world.",
+      "start": 9.8,
+      "end": 14.22
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Though like all other cities, if you know your way around, you can always find lower prices that people normally pay.",
+      "start": 14.22,
+      "end": 21.88
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Transport is expensive compared with other places.",
+      "start": 21.88,
+      "end": 25.92
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "The minimum bus fare is 40 pence.",
+      "start": 25.92,
+      "end": 28.46
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "This is only for about a kilometer's ride.",
+      "start": 28.46,
+      "end": 32.64
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "If you want to go further, you have to pay more.",
+      "start": 32.64,
+      "end": 36.38
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "The fares on the underground are the same.",
+      "start": 36.38,
+      "end": 38.86
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "The minimum fare is 50 pence.",
+      "start": 38.86,
+      "end": 41.46
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "And if you want to go more than 2 or 3 stations, it costs more.",
+      "start": 41.46,
+      "end": 46.56
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "The minimum taxi fare is 2 pounds.",
+      "start": 46.56,
+      "end": 49.16
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "If you want to go out of London, you can take a coach.",
+      "start": 49.16,
+      "end": 53.58
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "It is the easiest and most economical way to travel around London by coach.",
+      "start": 53.58,
+      "end": 57.48
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "A coach fare is about 1 pound 20.",
+      "start": 57.48,
+      "end": 63.86
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Exercise 4. Living in London.",
+      "start": 63.86,
+      "end": 67.26
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Listen to the second part of the talk and write down the prices in the boxes provided.",
+      "start": 67.26,
+      "end": 73.96
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "In London, accommodation is another very expensive thing.",
+      "start": 73.96,
+      "end": 78.6
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "You would pay about 40 pounds a week for one room.",
+      "start": 78.6,
+      "end": 82.7
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "If you want to rent a one bedroom flat, it will cost more.",
+      "start": 82.7,
+      "end": 87.24
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "You would generally pay about 200 pounds per week for it.",
+      "start": 87.24,
+      "end": 93.22
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "A telephone call to another London number costs 50 pence",
+      "start": 93.22,
+      "end": 97.66
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "and posting a letter costs 40 pence.",
+      "start": 97.66,
+      "end": 101.12
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "A loaf of bread is 40 pence.",
+      "start": 101.12,
+      "end": 103.78
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "A bottle of beer is 1 pound 50.",
+      "start": 103.78,
+      "end": 107.26
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Very few international students will have their own washing machines",
+      "start": 107.26,
+      "end": 111.28
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "so it is likely that you will have to do your washing at a laundered",
+      "start": 111.28,
+      "end": 116.38
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "flat, which is a place where washing machines are provided for the general public.",
+      "start": 116.38,
+      "end": 120.64
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Here are some prices for the use of a washing machine.",
+      "start": 120.64,
+      "end": 124.54
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "It is 2 pound 50 for using a large washing machine",
+      "start": 124.54,
+      "end": 128.28
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "and 1 pound 80 for using a small one.",
+      "start": 128.28,
+      "end": 131.84
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "You have to pay 1 pound 50 for using a tumble dryer.",
+      "start": 131.84,
+      "end": 135.92
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "About 2 pound 40 for a medium sized packet of washing powder.",
+      "start": 135.92,
+      "end": 142.47
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Exercise 5. Living in London.",
+      "start": 142.47,
+      "end": 145.65
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Listen to the last part of the talk and write down the prices in the boxes provided.",
+      "start": 145.65,
+      "end": 153.18
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Now let's turn to clothes.",
+      "start": 153.18,
+      "end": 155.58
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "It's difficult to find an average price for clothes because there is a big difference in the price range,",
+      "start": 155.58,
+      "end": 162.04
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "depending on the kind of shop you buy your clothes in and what quality you buy.",
+      "start": 162.04,
+      "end": 167.46
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "I've just walked around some local shops however and these are the prices I saw.",
+      "start": 167.46,
+      "end": 172.56
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "A shirt 12 pounds. A jacket 45 pounds. A pair of jeans cost 25 pounds.",
+      "start": 172.56,
+      "end": 181.04
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "A pair of running shoes cost 35 pounds and a warm coat 50 pounds.",
+      "start": 181.04,
+      "end": 187.14
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "A light raincoat is 39 pounds. A skirt is 23 pounds and a day dress is 49 pounds.",
+      "start": 187.14,
+      "end": 195.3
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "What do you think? Is London cheaper or more expensive than your city?",
+      "start": 195.3,
+      "end": 202.318
+    }
+  ]
+}

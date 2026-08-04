@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "partId": "basic-ielts-u02-appointment",
+  "audioFile": "bil-44.mp3",
+  "durationSeconds": 125.445333,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Exercise 2. Making an appointment.",
+      "start": 0.53,
+      "end": 4.89
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "You will hear a dialogue on the telephone between a secretary and a person who is making an appointment to see someone.",
+      "start": 4.89,
+      "end": 13.91
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "As you listen, make notes below. Please write the name of the person, the day, the time, and the telephone number.",
+      "start": 13.91,
+      "end": 25.1
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Dialogue 1.",
+      "start": 25.1,
+      "end": 26.78
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Hello, Mr. Watson's secretary. Can I help you?",
+      "start": 26.78,
+      "end": 30.54
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Good afternoon. I'd like to make an appointment to see Mr. Watson next Monday, please.",
+      "start": 30.54,
+      "end": 35.9
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Who's speaking, please? Richard Priest.",
+      "start": 35.9,
+      "end": 38.42
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Yes, Mr. Priest. Monday is all right. Would 1015 be convenient?",
+      "start": 38.42,
+      "end": 43.22
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Thank you. That'll be fine.",
+      "start": 43.22,
+      "end": 44.92
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Oh, would you leave your telephone number, please, just in case we need it.",
+      "start": 44.92,
+      "end": 49.68
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "My telephone number is 421-7896.",
+      "start": 49.68,
+      "end": 57.12
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "421-7896. Thank you, Mr. Priest. Dialogue 2.",
+      "start": 57.12,
+      "end": 64.02
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Good morning, Dr. Jenkins in secretary. Can I help you?",
+      "start": 64.02,
+      "end": 68.14
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Good morning. I'd like to make an appointment to see the doctor on Friday, please.",
+      "start": 68.14,
+      "end": 73.28
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Who is speaking, please? Rita Harper.",
+      "start": 73.28,
+      "end": 76.14
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Thank you. Is 240 any good?",
+      "start": 76.14,
+      "end": 79.12
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "That's fine. Thank you very much. Mrs. Harper, could you leave your telephone number, please?",
+      "start": 79.12,
+      "end": 84.32
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Yes, of course. My telephone number is 563-2860.",
+      "start": 84.32,
+      "end": 92.04
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "563-2860. Thank you, Mrs. Harper.",
+      "start": 92.04,
+      "end": 97.2
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Dialogue 3. Hello, can I help you?",
+      "start": 97.2,
+      "end": 100.68
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Yes, I'd like to see Professor Hanson on Tuesday, please.",
+      "start": 100.68,
+      "end": 105
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Who is speaking? David Bell.",
+      "start": 105,
+      "end": 107.92
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Yes, would 330 be convenient?",
+      "start": 107.92,
+      "end": 110.6
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "That would be fine. Many thanks.",
+      "start": 110.6,
+      "end": 113.66
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Mr. Bell, would you leave your telephone number, please?",
+      "start": 113.66,
+      "end": 116.72
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Yes, my number is 859-7783.",
+      "start": 116.72,
+      "end": 122.58
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "859-7783. Thank you.",
+      "start": 122.58,
+      "end": 125.445
+    }
+  ]
+}

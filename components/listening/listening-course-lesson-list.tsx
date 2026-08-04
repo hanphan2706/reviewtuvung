@@ -15,6 +15,7 @@ import {
   TACTICS_BASIC_SOURCE_LABEL_VI,
   tacticsBasicLessonDisplayVi,
 } from "@/lib/listening/tactics-basic-catalog";
+import { basicIeltsListeningLessonDisplayVi } from "@/lib/listening/basic-ielts-listening-catalog";
 import { parseLibraryPage } from "@/lib/study-hub/library-grid";
 
 type ListeningCourseLessonListProps = {
@@ -30,7 +31,8 @@ function lessonCopy(
   useVietnameseCopy: boolean,
 ): { title: string; summary: string } {
   if (useVietnameseCopy) {
-    const vi = tacticsBasicLessonDisplayVi(lesson.id);
+    const vi =
+      tacticsBasicLessonDisplayVi(lesson.id) ?? basicIeltsListeningLessonDisplayVi(lesson.id);
     if (vi) return vi;
   }
   return { title: lesson.title, summary: lesson.summary };

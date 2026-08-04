@@ -19,6 +19,9 @@ export type ListeningFlowLessonContent = {
   gistOptions: readonly (ListeningFlowLocalizedOption & { correct?: boolean })[];
   detailQuestions: readonly ListeningFlowDetailQuestion[];
   memoryPlaceholder?: string;
+  /** Override prompt bước câu hỏi (vd. hướng dẫn trong sách Basic IELTS). */
+  detailPromptEn?: string;
+  detailPromptVi?: string;
 };
 
 export type ResolvedFlowExerciseContent = {
@@ -33,4 +36,5 @@ export type ResolvedFlowExerciseContent = {
     answer: string;
   }[];
   memoryPlaceholder: string;
+  detailPrompt: string | null;
 };

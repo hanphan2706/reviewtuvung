@@ -294,6 +294,29 @@ const LISTENING_PART_IMAGES: Record<string, string> = {
     "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1200&q=80&auto=format&fit=crop",
   "tactics-basic-u08-l03":
     "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=1200&q=80&auto=format&fit=crop",
+  /** Basic IELTS Listening pilot */
+  "basic-ielts-u01-places":
+    "https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?w=1200&q=80&auto=format&fit=crop",
+  "basic-ielts-u01-his-name":
+    "https://images.unsplash.com/photo-1587027066597-e9b5fea8c17b?w=1200&q=80&auto=format&fit=crop",
+  "basic-ielts-u01-last-name":
+    "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=1200&q=80&auto=format&fit=crop",
+  "basic-ielts-u02-teens-tens":
+    "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=1200&q=80&auto=format&fit=crop",
+  "basic-ielts-u02-airports":
+    "https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=1200&q=80&auto=format&fit=crop",
+  "basic-ielts-u02-living-london":
+    "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80&auto=format&fit=crop",
+  "basic-ielts-u02-train-time":
+    "https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=1200&q=80&auto=format&fit=crop",
+  "basic-ielts-u02-appointment":
+    "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&q=80&auto=format&fit=crop",
+  "basic-ielts-u02-accommodation":
+    "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1200&q=80&auto=format&fit=crop",
+  "basic-ielts-u03-hotel-reception":
+    "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?w=1200&q=80&auto=format&fit=crop",
+  "basic-ielts-u03-stonehenge":
+    "https://images.unsplash.com/photo-1599833975787-5c773f8b8c1a?w=1200&q=80&auto=format&fit=crop",
 };
 
 const LISTENING_PART_IMAGE_FALLBACK =

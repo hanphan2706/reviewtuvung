@@ -1,0 +1,149 @@
+{
+  "version": 1,
+  "partId": "basic-ielts-u03-stonehenge",
+  "audioFile": "bil-58.mp3",
+  "durationSeconds": 98.591458,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Exercise 6.",
+      "start": 0.4,
+      "end": 2.66
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Trip to Stonehenge.",
+      "start": 2.66,
+      "end": 4.46
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Listen to the conversation and fill in the missing information in the notes below.",
+      "start": 4.46,
+      "end": 11.8
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Hi, Sue. How was your weekend?",
+      "start": 11.8,
+      "end": 14.26
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Oh, really good. I went to Stonehenge with my host family.",
+      "start": 14.26,
+      "end": 19.32
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Stonehenge?",
+      "start": 19.32,
+      "end": 20.16
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Yes, that's right. Have you ever been there?",
+      "start": 20.16,
+      "end": 23.88
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Yes, I went there last month. I really enjoyed it.",
+      "start": 23.88,
+      "end": 27.58
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Me too. Stonehenge is the best known and probably the most remarkable of prehistoric remains in the UK.",
+      "start": 27.58,
+      "end": 36.88
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Yes, it has stood on Salisbury plain for about 4,000 years.",
+      "start": 36.88,
+      "end": 42.98
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "You know there have been many different theories about its original use.",
+      "start": 42.98,
+      "end": 47.14
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Yes, I know. My host father told me that one of the theories is that it was a place from where stars and planets could be observed.",
+      "start": 47.14,
+      "end": 57.38
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Yes, but no one is really certain why it was built.",
+      "start": 57.38,
+      "end": 61.96
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "One of the things people have discovered is the positions of some of the stones relate to the movements of the sun and moon,",
+      "start": 61.96,
+      "end": 70.34
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "so that the stones could be used as a calendar.",
+      "start": 70.34,
+      "end": 74.06
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "That's interesting.",
+      "start": 74.06,
+      "end": 76.68
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Did you go to Oxford too? It's not far from Stonehenge.",
+      "start": 76.68,
+      "end": 80.52
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "No, we didn't because of the time. My host family had to be back before 3 in the afternoon.",
+      "start": 80.52,
+      "end": 89.4
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Oh, what a pity. You should go sometime. It's very interesting too.",
+      "start": 89.4,
+      "end": 93.92
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Yes, I hope I can sometime.",
+      "start": 93.92,
+      "end": 98.591
+    }
+  ]
+}

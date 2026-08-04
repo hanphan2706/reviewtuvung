@@ -15,7 +15,7 @@ function longWordRatio(words: string[]): number {
 
 /** IELTS part 3–4 thường khó hơn — dùng khi chưa có transcript. */
 export function listeningDifficultyFromPart(part: number, examSlug?: string): ReadingDifficulty {
-  if (examSlug === "tactics-basic") return "Dễ";
+  if (examSlug === "tactics-basic" || examSlug === "basic-ielts-listening") return "Dễ";
   if (part <= 1) return "Dễ";
   if (part === 2) return "Trung bình";
   if (part === 3) return "Trung bình – khó";
@@ -37,7 +37,7 @@ export function estimateListeningDifficultyFromTranscript(
   part: number,
   examSlug?: string,
 ): ReadingDifficulty {
-  if (examSlug === "tactics-basic") return "Dễ";
+  if (examSlug === "tactics-basic" || examSlug === "basic-ielts-listening") return "Dễ";
 
   const trimmed = plain.trim();
   if (!trimmed) return listeningDifficultyFromPart(part, examSlug);

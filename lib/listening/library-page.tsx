@@ -9,11 +9,7 @@ import { createServerSupabaseClient } from "@/lib/supabase/server";
 export async function renderListeningLibraryPage(config: ListeningLibraryPageConfig) {
   const supabase = await createServerSupabaseClient();
   const { user, loggedIn, devBypass } = await getServerAuthState();
-  const sharedProps = {
-    pageTitle: config.title,
-    pageDescription: config.description,
-    pageDescriptionExtra: config.descriptionExtra,
-    lessons: config.lessons,
+  const authProps = {
     isLoggedIn: loggedIn,
     userProfile: devBypass ? null : studyHubUserProfileFromAuthUser(user),
     supabaseConfigured: Boolean(supabase),
@@ -21,9 +17,21 @@ export async function renderListeningLibraryPage(config: ListeningLibraryPageCon
 
   const view =
     config.layout === "course-list" ? (
-      <ListeningCourseLibraryView {...sharedProps} />
+      <ListeningCourseLibraryView
+        pageTitle={config.title}
+        pageDescription={config.description}
+        pageDescriptionExtra={config.descriptionExtra}
+        courseSourceLabel={config.courseSourceLabel}
+        lessons={config.lessons}
+        {...authProps}
+      />
     ) : (
-      <ListeningLibraryView {...sharedProps} />
+      <ListeningLibraryView
+        pageTitle={config.title}
+        pageDescription={config.description}
+        lessons={config.lessons}
+        {...authProps}
+      />
     );
 
   if (user && !devBypass) {

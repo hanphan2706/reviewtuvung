@@ -3,10 +3,19 @@ import { LISTENING_PARTS_PILOT } from "@/lib/listening/content-manifest";
 import { LISTENING_CAMBRIDGE_TESTS, LISTENING_IELTS_EXAM_HREF } from "@/lib/listening/ielts-test-catalog";
 import { ACCENT_COMPARISON_SET_COUNT } from "@/lib/listening/speech-accent-catalog";
 import { LISTENING_HUB_HREF } from "@/lib/listening/listening-hub-nav";
+import {
+  BASIC_IELTS_LISTENING_CARD,
+  BASIC_IELTS_LISTENING_META_PILL,
+} from "@/lib/listening/basic-ielts-listening-catalog";
 
 export type ListeningSourceDifficulty = "Beginner" | "Intermediate" | "Advanced";
 
-export type ListeningSourceCategoryId = "accents" | "beginner" | "ielts" | "ielts-exam";
+export type ListeningSourceCategoryId =
+  | "accents"
+  | "beginner"
+  | "basic-ielts"
+  | "ielts"
+  | "ielts-exam";
 
 export type ListeningSourceCategory = {
   id: ListeningSourceCategoryId;
@@ -55,6 +64,18 @@ export const LISTENING_SOURCE_CATEGORIES: readonly ListeningSourceCategory[] = [
     catalogOrder: 2,
   },
   {
+    id: "basic-ielts",
+    title: BASIC_IELTS_LISTENING_CARD.title,
+    description: BASIC_IELTS_LISTENING_CARD.description,
+    href: `${LISTENING_HUB_HREF}/nguon/basic-ielts-listening`,
+    lessonCount: LISTENING_PARTS_PILOT.filter(
+      (lesson) => lesson.metaPill === BASIC_IELTS_LISTENING_META_PILL,
+    ).length,
+    difficulty: BASIC_IELTS_LISTENING_CARD.difficulty,
+    flagEmoji: "📝",
+    catalogOrder: BASIC_IELTS_LISTENING_CARD.catalogOrder,
+  },
+  {
     id: "ielts",
     title: LISTENING_IELTS_EXAM_CARD_TITLE,
     description:
@@ -64,7 +85,7 @@ export const LISTENING_SOURCE_CATEGORIES: readonly ListeningSourceCategory[] = [
       .length,
     difficulty: "Advanced",
     flagEmoji: "📝",
-    catalogOrder: 3,
+    catalogOrder: 4,
   },
   {
     id: "ielts-exam",
@@ -75,7 +96,7 @@ export const LISTENING_SOURCE_CATEGORIES: readonly ListeningSourceCategory[] = [
     lessonCount: LISTENING_CAMBRIDGE_TESTS.length,
     difficulty: "Advanced",
     flagEmoji: "📋",
-    catalogOrder: 4,
+    catalogOrder: 5,
   },
 ] as const;
 
@@ -100,8 +121,4 @@ export function listeningSourceDifficultyLabelVi(
     case "Advanced":
       return "Nâng cao";
   }
-}
-
-export function formatListeningSourceLessonCount(count: number): string {
-  return `${count} bài học`;
 }

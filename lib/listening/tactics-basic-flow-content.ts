@@ -12,6 +12,7 @@ import {
   DEFAULT_GIST_CORRECT_KEYS,
   TACTICS_GIST_CORRECT_KEYS,
 } from "@/lib/listening/tactics-gist-correct-config";
+import { BASIC_IELTS_FLOW_CONTENT } from "@/lib/listening/basic-ielts-flow-content";
 import type {
   ListeningFlowDetailQuestion,
   ListeningFlowLessonContent,
@@ -532,7 +533,7 @@ function applyGistCorrectKeys(
 }
 
 export function getListeningFlowLessonContent(partId: string): ListeningFlowLessonContent | undefined {
-  const lesson = TACTICS_BASIC_FLOW_CONTENT[partId];
+  const lesson = TACTICS_BASIC_FLOW_CONTENT[partId] ?? BASIC_IELTS_FLOW_CONTENT[partId];
   if (!lesson) return undefined;
   const correctKeys = TACTICS_GIST_CORRECT_KEYS[partId];
   if (!correctKeys?.length) return lesson;
@@ -593,6 +594,10 @@ export function resolveFlowExerciseFromLesson(
       answer: locale === "vi" ? question.answerVi : question.answerEn,
     })),
     memoryPlaceholder: lesson.memoryPlaceholder ?? copy.step3Placeholder,
+    detailPrompt:
+      locale === "vi"
+        ? (lesson.detailPromptVi ?? null)
+        : (lesson.detailPromptEn ?? null),
   };
 }
 

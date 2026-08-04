@@ -13,6 +13,11 @@ import {
 import { LISTENING_ACCENT_HUB_HREF } from "@/lib/listening/accent-nav";
 import { LISTENING_HUB_HREF } from "@/lib/listening/listening-hub-nav";
 import { getListeningSourceCategory, LISTENING_IELTS_EXAM_CARD_TITLE } from "@/lib/listening/listening-source-catalog";
+import {
+  BASIC_IELTS_LISTENING_EXAM_SLUG,
+  BASIC_IELTS_LISTENING_META_PILL,
+  BASIC_IELTS_LISTENING_SOURCE_LABEL_VI,
+} from "@/lib/listening/basic-ielts-listening-catalog";
 
 export type ListeningLibraryNavItem = {
   label: string;
@@ -35,9 +40,13 @@ export const LISTENING_IELTS_SOURCE = "IELTS Cambridge";
 
 export const LISTENING_TACTICS_SOURCE = "Tactics for Listening Basic";
 
+export const LISTENING_BASIC_IELTS_SOURCE = BASIC_IELTS_LISTENING_META_PILL;
+
 export const LISTENING_IELTS_LIBRARY_HREF = `${LISTENING_HUB_HREF}/nguon/ielts-cambridge`;
 
 export const LISTENING_TACTICS_LIBRARY_HREF = `${LISTENING_HUB_HREF}/nguon/tactics-for-listening-basic`;
+
+export const LISTENING_BASIC_IELTS_LIBRARY_HREF = `${LISTENING_HUB_HREF}/nguon/basic-ielts-listening`;
 
 /** Bài Tactics — luyện nghe cho người mới bắt đầu (A1–A2). */
 export const LISTENING_BEGINNER_LIBRARY_HREF = LISTENING_TACTICS_LIBRARY_HREF;
@@ -58,8 +67,9 @@ function sourceSlug(source: string): string {
     .replace(/^-|-$/g, "");
 }
 
+/** Tactics + Basic IELTS — seven-step / course-list (không phải giao diện đề). */
 export function isListeningBeginnerLesson(lesson: ListeningPartMeta): boolean {
-  return lesson.examSlug === "tactics-basic";
+  return lesson.examSlug === "tactics-basic" || lesson.examSlug === BASIC_IELTS_LISTENING_EXAM_SLUG;
 }
 
 export function listeningLessonsBySource(source: string): ListeningPartMeta[] {
@@ -69,6 +79,10 @@ export function listeningLessonsBySource(source: string): ListeningPartMeta[] {
 export const LISTENING_IELTS_LESSON_COUNT = listeningLessonsBySource(LISTENING_IELTS_SOURCE).length;
 
 export const LISTENING_TACTICS_LESSON_COUNT = listeningLessonsBySource(LISTENING_TACTICS_SOURCE).length;
+
+export const LISTENING_BASIC_IELTS_LESSON_COUNT = listeningLessonsBySource(
+  BASIC_IELTS_LISTENING_META_PILL,
+).length;
 
 export const LISTENING_SOURCE_NAV: ListeningLibraryNavItem[] = [
   { label: LISTENING_IELTS_SOURCE, href: LISTENING_IELTS_LIBRARY_HREF },
@@ -133,8 +147,10 @@ export type ListeningLibraryLayout = "grid" | "course-list";
 export type ListeningLibraryPageConfig = {
   title: string;
   description: string;
-  /** Dòng phụ đề bổ sung — chỉ hiển thị trên trang khóa học (Tactics Basic). */
+  /** Dòng phụ đề bổ sung — chỉ hiển thị trên trang khóa học (Tactics / Basic IELTS). */
   descriptionExtra?: string;
+  /** Nhãn nguồn trên danh sách bài (course-list). */
+  courseSourceLabel?: string;
   lessons: readonly ListeningPartMeta[];
   layout?: ListeningLibraryLayout;
 };
@@ -145,7 +161,11 @@ const IELTS_LISTENING_DESCRIPTION =
 const TACTICS_BEGINNER_ACTIVE_LISTENING_NOTE =
   "Bạn sẽ đi qua đủ các bước của active listening như dự đoán, nghe ý chính, nghe chi tiết và cuối cùng là shadowing. Đừng lo lắng nếu như bị miss một hai từ hoặc một hai thông tin khi nghe nhé! Dần dà bạn sẽ thấy rõ sự tiến bộ thôi!";
 
-const LISTENING_SOURCES = [LISTENING_IELTS_SOURCE, LISTENING_TACTICS_SOURCE] as const;
+const LISTENING_SOURCES = [
+  LISTENING_IELTS_SOURCE,
+  LISTENING_TACTICS_SOURCE,
+  BASIC_IELTS_LISTENING_META_PILL,
+] as const;
 
 export function listeningLibraryAllPage(): ListeningLibraryPageConfig {
   return {
@@ -159,23 +179,29 @@ export function listeningLibraryBySource(slug: string): ListeningLibraryPageConf
   const source = LISTENING_SOURCES.find((item) => sourceSlug(item) === slug);
   if (!source) return null;
   const lessons = listeningLessonsBySource(source);
+  if (source === LISTENING_IELTS_SOURCE) {
+    return {
+      title: LISTENING_IELTS_EXAM_CARD_TITLE,
+      description: IELTS_LISTENING_DESCRIPTION,
+      lessons: sortListeningLessons(lessons),
+      layout: "grid",
+    };
+  }
+  if (source === LISTENING_TACTICS_SOURCE) {
+    return {
+      title: "Luyện nghe cho người mới bắt đầu",
+      description: getListeningSourceCategory("beginner").description,
+      descriptionExtra: TACTICS_BEGINNER_ACTIVE_LISTENING_NOTE,
+      lessons: sortListeningLessons(lessons),
+      layout: "course-list",
+    };
+  }
   return {
-    title:
-      source === LISTENING_IELTS_SOURCE
-        ? LISTENING_IELTS_EXAM_CARD_TITLE
-        : source === LISTENING_TACTICS_SOURCE
-          ? "Luyện nghe cho người mới bắt đầu"
-          : `Nguồn: ${source}`,
-    description:
-      source === LISTENING_IELTS_SOURCE
-        ? IELTS_LISTENING_DESCRIPTION
-        : source === LISTENING_TACTICS_SOURCE
-          ? getListeningSourceCategory("beginner").description
-          : `${lessons.length} bài nghe từ ${source}.`,
-    descriptionExtra:
-      source === LISTENING_TACTICS_SOURCE ? TACTICS_BEGINNER_ACTIVE_LISTENING_NOTE : undefined,
+    title: getListeningSourceCategory("basic-ielts").title,
+    description: getListeningSourceCategory("basic-ielts").description,
+    courseSourceLabel: BASIC_IELTS_LISTENING_SOURCE_LABEL_VI,
     lessons: sortListeningLessons(lessons),
-    layout: source === LISTENING_TACTICS_SOURCE ? "course-list" : "grid",
+    layout: "course-list",
   };
 }
 

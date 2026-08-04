@@ -1,0 +1,268 @@
+{
+  "version": 1,
+  "partId": "basic-ielts-u01-his-name",
+  "audioFile": "bil-04.mp3",
+  "durationSeconds": 138.532667,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Part 2. Getting to know each other.",
+      "start": 0.37,
+      "end": 4.15
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Exercise 1. What is his name?",
+      "start": 4.15,
+      "end": 7.81
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Listen to the conversations and answer the questions.",
+      "start": 7.81,
+      "end": 12.82
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "1. High Linda. I'm Joseph Miller.",
+      "start": 12.82,
+      "end": 16.8
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Everyone calls me Joe.",
+      "start": 16.8,
+      "end": 18.46
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Nice to meet you, Joe. And what's your last name again?",
+      "start": 18.46,
+      "end": 22.2
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "It's Miller. It is spelled M-I-L-L-E-R.",
+      "start": 22.2,
+      "end": 27.52
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Thanks.",
+      "start": 27.52,
+      "end": 29.36
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "2. Hello. My name is Maria Tanaka. And I'm from the United States.",
+      "start": 29.36,
+      "end": 36.68
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Sorry. What's your name again?",
+      "start": 36.68,
+      "end": 38.86
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Okay. My first name is Maria. It's spelled M-A-R-I-A.",
+      "start": 38.86,
+      "end": 45.62
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "And my last name is spelled T-A-N-A-K-A.",
+      "start": 45.62,
+      "end": 51.14
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Thank you, Maria.",
+      "start": 51.14,
+      "end": 53.96
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "3. Joe. This is my friend Sarah Green from France.",
+      "start": 53.96,
+      "end": 58.4
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Excuse me? What is her name?",
+      "start": 58.4,
+      "end": 61.58
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Sarah. S-A-R-A-H. And her last name is spelled G-R-E-E-N. Green.",
+      "start": 61.58,
+      "end": 70.1
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Thank you. And Sarah, you are welcome to the class.",
+      "start": 70.1,
+      "end": 75.78
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "4. Okay, Miss Smith. Let me just check this information.",
+      "start": 75.78,
+      "end": 81.42
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Is your first name spelled E-L-L-E-N?",
+      "start": 81.42,
+      "end": 85.98
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "No, it's not. My first name is Eleanor.",
+      "start": 85.98,
+      "end": 90.16
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Could you spell your first name for me?",
+      "start": 90.16,
+      "end": 93
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "It's spelled E-L-E-N-A.",
+      "start": 93,
+      "end": 97.3
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Okay. Thank you, Eleanor.",
+      "start": 97.3,
+      "end": 100.82
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "5. Hi, Steve. How's everything?",
+      "start": 100.82,
+      "end": 104.58
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Not bad. How about you?",
+      "start": 104.58,
+      "end": 106.86
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Pretty good, thanks. What's that in your hand?",
+      "start": 106.86,
+      "end": 109.76
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "A picture from my computer.",
+      "start": 109.76,
+      "end": 111.84
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Can I have a look?",
+      "start": 111.84,
+      "end": 113.54
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Sure. Here you are.",
+      "start": 113.54,
+      "end": 115.02
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Who is the man in the middle?",
+      "start": 115.02,
+      "end": 117.48
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "He is my friend, Paulo.",
+      "start": 117.48,
+      "end": 119.86
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Is he from Mexico?",
+      "start": 119.86,
+      "end": 121.9
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "No, he's from Brazil.",
+      "start": 121.9,
+      "end": 124.5
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Sorry, where is he from?",
+      "start": 124.5,
+      "end": 126.7
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "He comes from Brazil, B-R-A-Z-I-L, Brazil.",
+      "start": 126.7,
+      "end": 132.18
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "I see, so he is Brazilian.",
+      "start": 132.18,
+      "end": 134.84
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "He looks Mexican.",
+      "start": 134.84,
+      "end": 138.533
+    }
+  ]
+}

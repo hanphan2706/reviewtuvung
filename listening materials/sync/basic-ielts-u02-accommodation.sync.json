@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "partId": "basic-ielts-u02-accommodation",
+  "audioFile": "bil-49.mp3",
+  "durationSeconds": 55.437167,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Exercise 2. Accommodation",
+      "start": 0.53,
+      "end": 3.23
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Listen to some conversations and fill in the missing information in the form.",
+      "start": 3.23,
+      "end": 9.55
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Conversation 1. Have you got a single room for two nights, please?",
+      "start": 9.55,
+      "end": 14.35
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Yes, room 309 on the third floor.",
+      "start": 14.35,
+      "end": 17.45
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "How much is it?",
+      "start": 17.45,
+      "end": 18.81
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "14 pounds 50, including breakfast.",
+      "start": 18.81,
+      "end": 23.91
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Conversation 2.",
+      "start": 23.91,
+      "end": 25.97
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Can I book a double room for the weekend, please?",
+      "start": 25.97,
+      "end": 29.37
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Yes, we have a room vacant on the first floor.",
+      "start": 29.37,
+      "end": 33.15
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Number 135.",
+      "start": 33.15,
+      "end": 34.85
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "How much does it cost?",
+      "start": 34.85,
+      "end": 36.55
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "25 pounds, including English breakfast.",
+      "start": 36.55,
+      "end": 42.15
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Conversation 3. Have you got a triple room for one week, please?",
+      "start": 42.15,
+      "end": 47.33
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Yes, room 205. It's on the second floor.",
+      "start": 47.33,
+      "end": 50.61
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "How much is it?",
+      "start": 50.61,
+      "end": 51.97
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "30 pounds a night, including a private bath.",
+      "start": 51.97,
+      "end": 55.437
+    }
+  ]
+}

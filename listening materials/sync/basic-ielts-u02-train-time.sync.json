@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "partId": "basic-ielts-u02-train-time",
+  "audioFile": "bil-40.mp3",
+  "durationSeconds": 46.215958,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Exercise 2. What time does the next train arrive?",
+      "start": 0.43,
+      "end": 5.39
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Look at the boxes below.",
+      "start": 5.39,
+      "end": 7.49
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Take the appropriate time as you listen to the tape.",
+      "start": 7.49,
+      "end": 11.15
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "1. Excuse me, please. What time does the next train arrive?",
+      "start": 11.15,
+      "end": 17.19
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "14. 40.",
+      "start": 17.19,
+      "end": 20.6
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "2. What's the next train to Edinburgh?",
+      "start": 20.6,
+      "end": 23.9
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "12. 15. 3. When does the Paris flight leave?",
+      "start": 23.9,
+      "end": 29.1
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "16. 13. 4. When does the next flight to Mexico arrive?",
+      "start": 29.1,
+      "end": 36.58
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "22. 30. 5. When does the next flight to Athens leave?",
+      "start": 36.58,
+      "end": 42.98
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "18. 40.",
+      "start": 42.98,
+      "end": 46.216
+    }
+  ]
+}

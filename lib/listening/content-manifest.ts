@@ -6,8 +6,15 @@ import {
   TACTICS_BASIC_LESSONS,
   type TacticsBasicLessonCatalog,
 } from "@/lib/listening/tactics-basic-catalog";
+import {
+  BASIC_IELTS_LISTENING_EXAM_SLUG,
+  BASIC_IELTS_LISTENING_LESSONS,
+  BASIC_IELTS_LISTENING_META_PILL,
+  type BasicIeltsListeningLessonCatalog,
+} from "@/lib/listening/basic-ielts-listening-catalog";
 import { CAM17_LISTENING_PARTS } from "@/lib/listening/cam17-listening-parts";
 import { CAM21_LISTENING_PARTS } from "@/lib/listening/cam21-listening-parts";
+import { basicIeltsListeningAudioApiPath } from "@/lib/listening/listening-materials-urls";
 
 const TACTICS_BASIC_META_PILL = "Tactics for Listening Basic";
 
@@ -26,6 +33,25 @@ function tacticsBasicPartMeta(lesson: TacticsBasicLessonCatalog): ListeningPartM
     summary: lesson.summary,
     durationMinutes: lesson.durationMinutes,
     audioPublicPath: tacticsBasicListeningAudioApiPath(lesson.unit, lesson.listening),
+    transcriptTryFiles: [lesson.transcriptFile],
+  };
+}
+
+function basicIeltsListeningPartMeta(lesson: BasicIeltsListeningLessonCatalog): ListeningPartMeta {
+  return {
+    id: lesson.partId,
+    slug: lesson.slug,
+    title: lesson.title,
+    heroImage: listeningPartHeroImage(lesson.partId),
+    metaPill: BASIC_IELTS_LISTENING_META_PILL,
+    topics: lesson.topics,
+    contextKey: lesson.contextKey,
+    examSlug: BASIC_IELTS_LISTENING_EXAM_SLUG,
+    test: 200 + lesson.unit,
+    part: lesson.lesson,
+    summary: lesson.summary,
+    durationMinutes: lesson.durationMinutes,
+    audioPublicPath: basicIeltsListeningAudioApiPath(lesson.audioFile),
     transcriptTryFiles: [lesson.transcriptFile],
   };
 }
@@ -212,6 +238,21 @@ export const LISTENING_TEST_CONTEXTS: Record<string, ListeningTestContext> = {
     predictTitle: "Tactics Basic — Unit 8",
     predictBlurb:
       "Trước khi nghe: đoán **thể thao** và tập luyện. Nghe môn chơi, đội bóng và thói quen vận động.",
+  },
+  "basic-ielts-u01": {
+    predictTitle: "IELTS Listening cơ bản — Unit 1",
+    predictBlurb:
+      "Trước khi nghe: đoán **tên / địa danh**. Chú ý spelling và form thông tin cá nhân — đây là kỹ năng nền trước khi làm đề IELTS.",
+  },
+  "basic-ielts-u02": {
+    predictTitle: "IELTS Listening cơ bản — Unit 2",
+    predictBlurb:
+      "Trước khi nghe: đoán **số liệu** (teens/tens, tiền, giờ, điện thoại, ngày). Tập trung bắt đúng con số trên form.",
+  },
+  "basic-ielts-u03": {
+    predictTitle: "IELTS Listening cơ bản — Unit 3",
+    predictBlurb:
+      "Trước khi nghe: đoán **tình huống giao tiếp** (khách sạn, chủ nhà, chuyến đi ngắn). Nghe để điền note / form.",
   },
 };
 
@@ -1069,6 +1110,7 @@ export const LISTENING_PARTS_PILOT: readonly ListeningPartMeta[] = [
     transcriptTryFiles: ["cam18-test4.cleaned.txt", "cam18-test 4.txt"],
   },
   ...TACTICS_BASIC_LESSONS.map(tacticsBasicPartMeta),
+  ...BASIC_IELTS_LISTENING_LESSONS.map(basicIeltsListeningPartMeta),
 ] as const;
 
 export function getListeningPartOrDefault(part: number): ListeningPartMeta {
