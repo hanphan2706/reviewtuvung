@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useLayoutEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { LISTENING_SOURCE_ICONS } from "@/components/listening/listening-source-icons";
 import {
@@ -10,6 +10,11 @@ import {
   LISTENING_SOURCES_EXPLORE_SUBTITLE,
   type ListeningSourceCategory,
 } from "@/lib/listening/listening-source-catalog";
+
+/** Khoảng cách giữa các lần tự lướt sang trái. */
+const AUTO_SCROLL_MS = 4000;
+/** Sau khi user bấm mũi tên, chờ rồi mới auto lại. */
+const AUTO_SCROLL_RESUME_AFTER_MANUAL_MS = 8000;
 
 type ListeningSourceExploreCarouselProps = {
   onOpenSource: (href: string) => void;
@@ -51,10 +56,20 @@ function ListeningSourceHubCard({
   );
 }
 
+function getCarouselStep(el: HTMLElement): number {
+  const firstCard = el.querySelector<HTMLElement>("[data-carousel-item]");
+  const gap = parseFloat(getComputedStyle(el).columnGap || getComputedStyle(el).gap || "24") || 24;
+  return firstCard ? firstCard.offsetWidth + gap : el.clientWidth;
+}
+
 /** Carousel nguồn nghe trên hub — 2 thẻ/lượt (tablet), 3 thẻ trên desktop rộng. */
 export function ListeningSourceExploreCarousel({ onOpenSource }: ListeningSourceExploreCarouselProps) {
   const carouselRef = useRef<HTMLDivElement>(null);
   const [carouselHasOverflow, setCarouselHasOverflow] = useState(false);
+  const [hoverPaused, setHoverPaused] = useState(false);
+  const [manualPaused, setManualPaused] = useState(false);
+  const resumeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const autoPaused = hoverPaused || manualPaused;
 
   const updateCarouselOverflow = useCallback(() => {
     const el = carouselRef.current;
@@ -77,17 +92,70 @@ export function ListeningSourceExploreCarousel({ onOpenSource }: ListeningSource
     };
   }, [updateCarouselOverflow]);
 
-  const scrollCarousel = (dir: "prev" | "next") => {
+  const scrollCarousel = useCallback((dir: "prev" | "next", options?: { loop?: boolean }) => {
     const el = carouselRef.current;
     if (!el) return;
-    const firstCard = el.querySelector<HTMLElement>("[data-carousel-item]");
-    const gap = parseFloat(getComputedStyle(el).columnGap || getComputedStyle(el).gap || "24") || 24;
-    const step = firstCard ? firstCard.offsetWidth + gap : el.clientWidth;
-    el.scrollBy({ left: dir === "next" ? step : -step, behavior: "smooth" });
-  };
+    const step = getCarouselStep(el);
+    const maxScroll = el.scrollWidth - el.clientWidth;
+    if (maxScroll <= 2) return;
+
+    if (dir === "next") {
+      const nearEnd = el.scrollLeft >= maxScroll - 4;
+      if (nearEnd && options?.loop !== false) {
+        el.scrollTo({ left: 0, behavior: "smooth" });
+        return;
+      }
+      el.scrollBy({ left: step, behavior: "smooth" });
+      return;
+    }
+
+    const nearStart = el.scrollLeft <= 4;
+    if (nearStart && options?.loop !== false) {
+      el.scrollTo({ left: maxScroll, behavior: "smooth" });
+      return;
+    }
+    el.scrollBy({ left: -step, behavior: "smooth" });
+  }, []);
+
+  const pauseAutoAfterManual = useCallback(() => {
+    setManualPaused(true);
+    if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current);
+    resumeTimerRef.current = setTimeout(() => {
+      setManualPaused(false);
+      resumeTimerRef.current = null;
+    }, AUTO_SCROLL_RESUME_AFTER_MANUAL_MS);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (resumeTimerRef.current) clearTimeout(resumeTimerRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!carouselHasOverflow || autoPaused) return;
+    if (typeof window === "undefined") return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const id = window.setInterval(() => {
+      scrollCarousel("next", { loop: true });
+    }, AUTO_SCROLL_MS);
+
+    return () => window.clearInterval(id);
+  }, [carouselHasOverflow, autoPaused, scrollCarousel]);
 
   return (
-    <section className="mb-14">
+    <section
+      className="mb-14"
+      onMouseEnter={() => setHoverPaused(true)}
+      onMouseLeave={() => setHoverPaused(false)}
+      onFocusCapture={() => setHoverPaused(true)}
+      onBlurCapture={(event) => {
+        const next = event.relatedTarget;
+        if (next instanceof Node && event.currentTarget.contains(next)) return;
+        setHoverPaused(false);
+      }}
+    >
       <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div className="min-w-0 flex-1">
           <h2 className="font-serif text-2xl font-semibold text-[#000001]">
@@ -108,7 +176,10 @@ export function ListeningSourceExploreCarousel({ onOpenSource }: ListeningSource
           <div className="flex shrink-0 gap-2.5 self-start md:self-auto">
             <button
               type="button"
-              onClick={() => scrollCarousel("prev")}
+              onClick={() => {
+                pauseAutoAfterManual();
+                scrollCarousel("prev", { loop: true });
+              }}
               className="flex h-9 w-9 items-center justify-center rounded-sm border border-[#000001]/10 bg-[#000001]/10 text-[#616365] transition hover:bg-[#000001]/15 md:h-10 md:w-10"
               aria-label="Nguồn nghe trước"
             >
@@ -116,7 +187,10 @@ export function ListeningSourceExploreCarousel({ onOpenSource }: ListeningSource
             </button>
             <button
               type="button"
-              onClick={() => scrollCarousel("next")}
+              onClick={() => {
+                pauseAutoAfterManual();
+                scrollCarousel("next", { loop: true });
+              }}
               className="flex h-9 w-9 items-center justify-center rounded-sm border border-[#000001] bg-[#000001] text-white transition hover:bg-[#000001]/90 md:h-10 md:w-10"
               aria-label="Nguồn nghe tiếp"
             >
@@ -129,6 +203,7 @@ export function ListeningSourceExploreCarousel({ onOpenSource }: ListeningSource
       <div
         ref={carouselRef}
         className="grid auto-cols-[100%] grid-flow-col items-stretch gap-6 overflow-x-auto scroll-smooth pb-1 snap-x snap-mandatory [-ms-overflow-style:none] [scrollbar-width:none] md:auto-cols-[calc((100%-1.5rem)/2)] xl:auto-cols-[calc((100%-3rem)/3)] [&::-webkit-scrollbar]:hidden [&>*]:snap-start"
+        onPointerDown={pauseAutoAfterManual}
       >
         {LISTENING_SOURCE_CATEGORIES.map((card) => (
           <ListeningSourceHubCard key={card.id} card={card} onOpen={onOpenSource} />

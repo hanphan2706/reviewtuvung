@@ -37,6 +37,8 @@ export const BANNED_PASSAGE_IMAGE_BASE_URLS: ReadonlySet<string> = new Set([
   "https://images.unsplash.com/photo-1500534314209-a25ddb2bd734",
   "https://images.unsplash.com/photo-1551632811-561732d1e5ec",
   "https://images.unsplash.com/photo-1542744173-8e2bd1a5d0c8",
+  // Oyster Bay Sailing Club — intermittent/broken in hub cards; use local Cam 21 cover
+  "https://images.unsplash.com/photo-1519046904884-53103b34b206",
 ]);
 
 export function unsplashImageBaseUrl(url: string): string {

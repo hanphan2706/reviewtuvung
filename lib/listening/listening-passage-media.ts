@@ -5,7 +5,7 @@ import {
 import { readingUnsplashBaseUrls } from "@/lib/reading/passage-media";
 
 /**
- * Ảnh minh hoạ bài nghe — URL cố định theo part id (Unsplash hoặc nguồn chủ đề).
+ * Ảnh minh hoạ bài nghe — URL cố định theo part id (Unsplash, Cam cover, hoặc nguồn chủ đề).
  * Không dùng lại ảnh luyện đọc; chủ đề khớp nội dung Cam 19 Test 1.
  */
 const LISTENING_PART_IMAGES: Record<string, string> = {
@@ -66,9 +66,9 @@ const LISTENING_PART_IMAGES: Record<string, string> = {
   /** Student food projects — Colin & Marie conversation */
   "cam19-t1-p3":
     "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=1200&q=80&auto=format&fit=crop",
-  /** Céide Fields — Neolithic archaeological site (thumbnail nhỏ — loại khỏi hero hub). */
+  /** Céide Fields — green coastal hills (not book cover; old gstatic thumb was too small). */
   "cam19-t1-p4":
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz7_k_3h-M32S8P8EmwRj0OvYOW_c_Sz6DVg&s",
+    "https://images.unsplash.com/photo-1506260408121-e353d10b87c7?w=1200&q=80&auto=format&fit=crop",
   /** Guitar group classes */
   "cam19-t2-p1":
     "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1200&q=80&auto=format&fit=crop",
@@ -201,9 +201,12 @@ const LISTENING_PART_IMAGES: Record<string, string> = {
   /** Maple Syrup */
   "cam17-t4-p4":
     "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1200&q=80&auto=format&fit=crop",
-  /** Cam 21 — Oyster Bay Sailing Club */
+  /**
+   * Cam 21 — Oyster Bay Sailing Club.
+   * Former beach Unsplash was reported broken in hub cards → yacht photo (verified).
+   */
   "cam21-t1-p1":
-    "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&q=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=1200&q=80&auto=format&fit=crop",
   "cam21-t1-p2":
     "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1200&q=80&auto=format&fit=crop",
   "cam21-t1-p3":
@@ -330,9 +333,7 @@ function assertListeningPartImages(map: Record<string, string>): void {
 assertListeningPartImages(LISTENING_PART_IMAGES);
 
 /** Bài không xoay lên hero hub — ảnh nguồn quá nhỏ / mờ khi phóng to full-width. */
-export const LISTENING_HUB_HERO_EXCLUDED_PART_IDS = new Set<string>([
-  "cam19-t1-p4",
-]);
+export const LISTENING_HUB_HERO_EXCLUDED_PART_IDS = new Set<string>([]);
 
 export function listeningPartHeroImage(partId: string): string {
   return LISTENING_PART_IMAGES[partId] ?? LISTENING_PART_IMAGE_FALLBACK;
