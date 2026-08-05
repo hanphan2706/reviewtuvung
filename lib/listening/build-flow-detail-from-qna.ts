@@ -1,4 +1,5 @@
 import type { ListeningFlowDetailQuestion } from "@/lib/listening/tactics-basic-flow-types";
+import { collectBlankNumbersFromLines } from "@/lib/listening/listening-note-layout";
 import type {
   ListeningQnaPart,
   ListeningQnaSection,
@@ -43,22 +44,50 @@ function answerForQuestion(
   return "See transcript";
 }
 
+const BLANK_LINE_RE = (questionNumber: number): RegExp =>
+  new RegExp(
+    `\\b${questionNumber}\\s*(?:£\\s*)?(?:['\u2018\u2019"]?(?:\\.{3,}|_{3,}|…{2,})|\\.\\.\\.|_{3,}|…)`,
+  );
+
+function isWeakNoteLabel(line: string): boolean {
+  if (/^(course|date|cost|notes|name|address|telephone|email)$/i.test(line)) return true;
+  if (/^£?\s*\d/.test(line) && line.length < 24) return true;
+  if (/^\d{1,2}\s+[A-Za-z]/.test(line) && line.length < 28) return true;
+  return false;
+}
+
 function blankContextLine(bodyLines: string[], questionNumber: number): string | null {
-  for (const raw of bodyLines) {
-    const line = raw.replace(/\u00a0/g, " ").trim();
-    if (!line) continue;
-    if (new RegExp(`\\b${questionNumber}\\s*(?:£\\s*)?(?:['\u2018\u2019"]?(?:\\.{3,}|_{3,}|…{2,})|\\.\\.\\.|_{3,}|…)`).test(line)) {
-      return line
-        .replace(
-          new RegExp(
-            `${questionNumber}\\s*(?:£\\s*)?(?:['\u2018\u2019"]?(?:\\.{3,}|_{3,}|…{2,})(?:\\.?['\u2018\u2019"]?)?|\\.\\.\\.|_{3,}|…{2,})`,
-            "g",
-          ),
-          "___",
-        )
-        .replace(/\s+/g, " ")
-        .trim();
+  const blankRe = BLANK_LINE_RE(questionNumber);
+  for (let index = 0; index < bodyLines.length; index += 1) {
+    const line = (bodyLines[index] ?? "").replace(/\u00a0/g, " ").trim();
+    if (!line || !blankRe.test(line)) continue;
+
+    const cleaned = line
+      .replace(
+        new RegExp(
+          `${questionNumber}\\s*(?:£\\s*)?(?:['\u2018\u2019"]?(?:\\.{3,}|_{3,}|…{2,})(?:\\.?['\u2018\u2019"]?)?|\\.\\.\\.|_{3,}|…{2,})`,
+          "g",
+        ),
+        "___",
+      )
+      .replace(/^[●•]\s*/u, "")
+      .replace(/^[-–—]\s*/, "")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    const standalone = cleaned.replace(/[£_\s.]/g, "") === "";
+    if (!standalone && cleaned.replace(/___/g, "").trim().length >= 8) return cleaned;
+
+    for (let prev = index - 1; prev >= 0; prev -= 1) {
+      const label = (bodyLines[prev] ?? "").replace(/\u00a0/g, " ").trim();
+      if (!label) continue;
+      if (/\d+\s*(?:£\s*)?(?:['\u2018\u2019"]?(?:\.{3,}|_{3,}|…{2,})|\.{3,}|_{3,}|…)/.test(label)) continue;
+      if (isWeakNoteLabel(label)) continue;
+      const tidyLabel = label.replace(/^[●•]\s*/u, "").replace(/^[-–—]\s*/, "").replace(/:\s*$/, "");
+      return `${tidyLabel}: ${cleaned || "___"}`;
     }
+
+    return cleaned || null;
   }
   return null;
 }
@@ -79,6 +108,55 @@ function sectionOptions(section: ListeningQnaSection): Option[] {
     return options;
   }
   return [];
+}
+
+function capitalizeQuestion(text: string): string {
+  const trimmed = text.replace(/\s+/g, " ").trim();
+  if (!trimmed) return trimmed;
+  return trimmed.charAt(0).toUpperCase() + trimmed.slice(1);
+}
+
+function noteContextToComprehensionQuestion(
+  context: string,
+  questionNumber: number,
+): { en: string; vi: string } {
+  const text = context.replace(/\s+/g, " ").trim().replace(/[.\s]+$/u, "");
+
+  const labeled = text.match(/^(.{2,70}?):\s*(?:£\s*)?___$/);
+  if (labeled) {
+    const label = labeled[1]!.trim();
+    return {
+      en: `What detail is given for ${label}?`,
+      vi: `Bài nghe nêu chi tiết gì về ${label}?`,
+    };
+  }
+
+  if (text.includes("___")) {
+    let question = text
+      .replace(/\ban?\s+___/gi, " what")
+      .replace(/\bthe\s+___/gi, " what")
+      .replace(/___/g, "what")
+      .replace(/\s+/g, " ")
+      .trim();
+
+    if (/^Make what\b/i.test(question)) {
+      question = question.replace(/^Make what\b/i, "What do they make that is");
+    } else if (/^Create a short what\b/i.test(question)) {
+      question = question.replace(/^Create a short what\b/i, "What short thing do they create");
+    }
+
+    question = capitalizeQuestion(question);
+    if (!question.endsWith("?")) question += "?";
+    return {
+      en: question,
+      vi: `Theo bài nghe, ${question.charAt(0).toLowerCase()}${question.slice(1)}`,
+    };
+  }
+
+  return {
+    en: `What key detail is given for question ${questionNumber}?`,
+    vi: `Chi tiết chính trong câu ${questionNumber} là gì?`,
+  };
 }
 
 function pushUnique(
@@ -172,25 +250,28 @@ export function buildFlowDetailQuestionsFromQnaPart(
     }
 
     if (section.kind === "note-completion") {
-      const numbers = Object.keys(part.answers)
-        .filter((key) => /^\d+$/.test(key))
-        .map(Number)
-        .sort((x, y) => x - y);
+      const numbers = collectBlankNumbersFromLines(section.bodyLines);
 
       for (const num of numbers) {
         if (out.length >= limit) break;
         const context = blankContextLine(section.bodyLines, num);
-        const questionEn = context ?? `Complete blank ${num}`;
+        const question = context
+          ? noteContextToComprehensionQuestion(context, num)
+          : {
+              en: `What key detail is given for question ${num}?`,
+              vi: `Chi tiết chính trong câu ${num} là gì?`,
+            };
+        const answer = part.answers[String(num)] ?? "See transcript";
         pushUnique(
           out,
           {
             key: `exam-${num}`,
-            conversationEn: `Note — Q${num}`,
-            conversationVi: `Ghi chú — câu ${num}`,
-            questionEn,
-            questionVi: questionEn,
-            answerEn: part.answers[String(num)] ?? "See transcript",
-            answerVi: part.answers[String(num)] ?? "Xem transcript",
+            conversationEn: `Detail ${num}`,
+            conversationVi: `Chi tiết ${num}`,
+            questionEn: question.en,
+            questionVi: question.vi,
+            answerEn: answer,
+            answerVi: answer,
           },
           seen,
         );

@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "partId": "cam16-t1-p3",
+  "audioFile": "cam16-test1-part3.mp3",
+  "durationSeconds": 401.400156,
+  "method": "whisper-local",
+  "preambleSeconds": 45.12,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "JESS",
+      "text": "How are you getting on with your art project, Tom?",
+      "start": 39.706,
+      "end": 45.12,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "TOM",
+      "text": "OK. Like, they gave us the theme of birds to base our project on, and I’m not really all that interested in wildlife. But I’m starting to get into it. I’ve pretty well finished the introductory stage.",
+      "start": 45.12,
+      "end": 57.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "JESS",
+      "text": "So have I. When they gave us all those handouts with details of books and websites to look at (Q21/Q22), I was really put off, but the more I read, the more interested I got.",
+      "start": 57.7,
+      "end": 69.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "TOM",
+      "text": "Me too. I found I could research so many different aspects of birds in art – colour, movement, texture. So I was looking forward to the Bird Park visit.",
+      "start": 69.6,
+      "end": 79.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "JESS",
+      "text": "What a letdown! It poured with rain and we hardly saw a single bird. Much less use than the trip to the Natural History Museum (Q21/Q22).",
+      "start": 79.68,
+      "end": 89.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "TOM",
+      "text": "Yeah, I liked all the stuff about evolution there. The workshop sessions with Dr Fletcher were good too, especially the brainstorming sessions.",
+      "start": 89.3,
+      "end": 99.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "JESS",
+      "text": "I missed those because I was ill. I wish we could’ve seen the projects last year’s students did.",
+      "start": 99.2,
+      "end": 105.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "TOM",
+      "text": "Mm. I suppose they want us to do our own thing, not copy.",
+      "start": 105.44,
+      "end": 109.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "JESS",
+      "text": "Have you drafted your proposal yet?",
+      "start": 109.9,
+      "end": 112.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "TOM",
+      "text": "Yes, but I haven’t handed it in. I need to amend some parts. I’ve realised the notes from my research are almost all just descriptions, I haven’t actually evaluated anything. So I’ll have to fix that (Q23/Q24).",
+      "start": 112.16,
+      "end": 126.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "JESS",
+      "text": "Oh, I didn’t know we had to do that. I’ll have to look at that too. Did you do a timeline for the project?",
+      "start": 126.66,
+      "end": 134.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "TOM",
+      "text": "Yes, and a mind map.",
+      "start": 134.82,
+      "end": 136.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "JESS",
+      "text": "Yeah, so did I. I quite enjoyed that. But it was hard having to explain the basis for my decisions in my action plan.",
+      "start": 136.52,
+      "end": 144.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "TOM",
+      "text": "What?",
+      "start": 144.98,
+      "end": 145.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "JESS",
+      "text": "You know, give a rationale.",
+      "start": 145.64,
+      "end": 147.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "TOM",
+      "text": "I didn’t realise we had to do that. OK, I can add it now. And I’ve done the video diary presentation, and worked out what I want my outcome to be in the project.",
+      "start": 147.7,
+      "end": 160.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "JESS",
+      "text": "Someone told me it’s best not to be too precise about your actual outcome (Q23/Q24) at this stage, so you have more scope to explore your ideas later on. So I’m going to go back to my proposal to make it a bit more vague.",
+      "start": 160.4,
+      "end": 174.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "TOM",
+      "text": "Really? OK, I’ll change that too then.",
+      "start": 174.4,
+      "end": 223.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "TOM",
+      "text": "One part of the project I’m unsure about is where we choose some paintings of birds and say what they mean to us. Like, I chose a painting of a falcon by Landseer. I like it because the bird’s standing there with his head turned to one side, but he seems to be staring straight at you. But I can’t just say it’s a bit scary, can I?",
+      "start": 223.63,
+      "end": 247.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "JESS",
+      "text": "You could talk about the possible danger suggested by the bird’s look (Q25).",
+      "start": 247.03,
+      "end": 252.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "TOM",
+      "text": "Oh, OK.",
+      "start": 252.43,
+      "end": 254.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "JESS",
+      "text": "There’s a picture of a fish hawk by Audubon I like. It’s swooping over the water with a fish in its talons, and with great black wings which take up most of the picture.",
+      "start": 254.23,
+      "end": 266.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "TOM",
+      "text": "So you could discuss it in relation to predators and food chains?",
+      "start": 266.39,
+      "end": 271.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "JESS",
+      "text": "Well actually I think I’ll concentrate on the impression of rapid motion it gives. (Q26)",
+      "start": 271.45,
+      "end": 276.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "TOM",
+      "text": "Right.",
+      "start": 276.61,
+      "end": 277.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "JESS",
+      "text": "Do you know that picture of a kingfisher by van Gogh – it’s perching on a reed growing near a stream.",
+      "start": 277.99,
+      "end": 285.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "TOM",
+      "text": "Yes, it’s got these beautiful blue and red and black shades.",
+      "start": 285.13,
+      "end": 289.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "JESS",
+      "text": "Mm hm. I’ve actually chosen it because I saw a real kingfisher once when I was little, I was out walking with my grandfather (Q27), and I’ve never forgotten it.",
+      "start": 289.23,
+      "end": 299.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "TOM",
+      "text": "So we can use a personal link?",
+      "start": 299.77,
+      "end": 302.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "JESS",
+      "text": "Sure.",
+      "start": 302.17,
+      "end": 302.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "TOM",
+      "text": "OK. There’s a portrait called William Wells. I can’t remember the artist but it’s a middle-aged man who’s just shot a bird. And his expression, and the way he’s holding the bird in his hand suggests he’s not sure about what he’s done. To me it’s about how ambiguous people are in the way they exploit the natural world. (Q28)",
+      "start": 302.85,
+      "end": 326.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "JESS",
+      "text": "Interesting. There’s Gauguin’s picture Vairumati. He did it in Tahiti. It’s a woman with a white bird behind her that is eating a lizard, and what I’m interested in is what idea this bird refers to. Apparently, it’s a reference to the never-ending cycle of existence. (Q29)",
+      "start": 326.35,
+      "end": 346.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "TOM",
+      "text": "Wow. I chose a portrait of a little boy, Giovanni de Medici. He’s holding a tiny bird in one fist (Q30). I like the way he’s holding it carefully so he doesn’t hurt it.",
+      "start": 346.65,
+      "end": 360.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "JESS",
+      "text": "Ah right.",
+      "start": 360.19,
+      "end": 401.4,
+      "preAudio": false
+    }
+  ]
+}

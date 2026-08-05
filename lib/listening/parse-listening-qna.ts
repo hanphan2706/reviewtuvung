@@ -13,7 +13,7 @@ const IMAGE_LINE_RE = /^IMAGE\s*\|\s*(.+)\s*$/i;
 const ANSWERS_HEADER_RE = /^Answers?:\s*$|^Answer key:\s*$/im;
 const PAIRED_ANSWER_RE = /^(\d+)\s*&\s*(\d+)\s+(.+)$/i;
 /** Form / table / flowchart completion blocks (not only "notes"). */
-const COMPLETE_BELOW_RE = /Complete the (?:notes|form|table|flowchart) below/i;
+const COMPLETE_BELOW_RE = /Complete the (?:notes|form|table|flow[\s-]?chart) below/i;
 const CHOOSE_FROM_BOX_RE = /Choose\s+(?:TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|\d+)\s+answers from the box/i;
 
 export type ListeningQnaMcqQuestion = {
@@ -361,6 +361,9 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
           /^Label the (?:map|plan)/i.test(instr) ||
           /^Drag the correct (letter|answer)/i.test(instr) ||
           /^Write the correct (letter|answer)/i.test(instr) ||
+          /^Which\b/i.test(instr) ||
+          /^In which\b/i.test(instr) ||
+          /^According to\b/i.test(instr) ||
           /^What\s/i.test(instr) ||
           /^What is the students/i.test(instr) ||
           /^Where\s/i.test(instr) ||
@@ -450,12 +453,14 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
             j += 1;
             continue;
           }
-          if (/^Which TWO/i.test(row)) {
-            prompt = row;
+          if (QUESTIONS_RANGE_RE.test(row) || SINGLE_QUESTION_RE.test(row) || PART_HEADER_RE.test(row)) break;
+          if (/^Choose\s+TWO\s+letters/i.test(row) || /^Write\s/i.test(row)) {
             j += 1;
             continue;
           }
-          if (QUESTIONS_RANGE_RE.test(row) || SINGLE_QUESTION_RE.test(row) || PART_HEADER_RE.test(row)) break;
+          if (!prompt) {
+            prompt = row;
+          }
           j += 1;
         }
         sections.push({ kind: "choose-two", questionNumbers: qNums, instructionLines, prompt, options });

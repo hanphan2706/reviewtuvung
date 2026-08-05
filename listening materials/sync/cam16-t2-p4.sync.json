@@ -1,0 +1,312 @@
+{
+  "version": 1,
+  "partId": "cam16-t2-p4",
+  "audioFile": "cam16-test2-part4.mp3",
+  "durationSeconds": 525.710781,
+  "method": "whisper-local",
+  "preambleSeconds": 95.43,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Dancing is something that humans do when they want to have a good time.",
+      "start": 79.79,
+      "end": 84.55,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "It’s a universal response to music, found in all cultures.",
+      "start": 84.55,
+      "end": 87.95,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "But what’s only been discovered recently is that dancing not only makes us feel good, it’s also extremely good for our health.",
+      "start": 87.95,
+      "end": 95.43,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Dancing, like other forms of exercise, releases hormones, such as dopamine, which make us feel relaxed and happy. And it also reduces feelings of stress or anxiety.",
+      "start": 95.43,
+      "end": 105.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Dancing is also a sociable activity, which is another reason it makes us feel good.",
+      "start": 105.77,
+      "end": 112.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "One study compared people’s enjoyment of dancing at home in front of a video with dancing in a group in a studio.",
+      "start": 112.75,
+      "end": 121.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "The people dancing in a group reported feeling happier, whereas those dancing alone did not.",
+      "start": 121.89,
+      "end": 130.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "In another experiment, university researchers at York and Sheffield took a group of students and sent each of them into a lab where music was played for five minutes.",
+      "start": 130.17,
+      "end": 143.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Each had to choose from three options: to sit and listen quietly to the music, to cycle on an exercise bike while they listened, or to get up and dance.",
+      "start": 143.03,
+      "end": 156.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "All were given cognitive tasks to perform before and after.",
+      "start": 156.53,
+      "end": 162.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "The result showed that those who chose to dance showed much more creativity (Q31) when doing problem-solving tasks.",
+      "start": 162.85,
+      "end": 172.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Doctor Lovatt at the University of Hertfordshire believes dance could be a very useful way to help people suffering from mental health problems.",
+      "start": 172.99,
+      "end": 183.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "He thinks dance should be prescribed ad therapy (Q32) to help people overcome issues such as depression.",
+      "start": 183.91,
+      "end": 196.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "It’s well established that dance is a good way of encouraging adolescent girls to take exercise but what about older people?",
+      "start": 196.09,
+      "end": 206.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Studies have shown that there are enormous benefits for people in their sixties and beyond.",
+      "start": 206.11,
+      "end": 212.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "One of the great things about dance is that there are no barriers to participation.",
+      "start": 212.29,
+      "end": 218.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Anyone can have a go, even those whose standard of fitness is quite low.",
+      "start": 218.57,
+      "end": 224.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "(Q33)",
+      "start": 224.19,
+      "end": 225.71
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Dance can be especially beneficial for older adults who can’t run or do more intense workouts, or for those who don’t want to.",
+      "start": 225.71,
+      "end": 236.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "One 2015 study found that even a gently dance workout helps to promote a healthy heart.",
+      "start": 236.22,
+      "end": 245.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "And there’s plenty of evidence which suggests that dancing lowers the risk of falls, which could result in a broken hip, for example, by helping people to improve their balance.",
+      "start": 245.37,
+      "end": 258.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "(Q34)",
+      "start": 258.09,
+      "end": 259.45
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "There are some less obvious benefits of dance for older people too.",
+      "start": 259.45,
+      "end": 265.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "One thing I hadn’t realised before researching this topic was that dance isn’t just a physical challenge.",
+      "start": 265.09,
+      "end": 273.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "It also requires a lot of concentration because you need to remember different steps and routines.",
+      "start": 273.61,
+      "end": 281.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "For older people, this kind of activity is especially important because it forces their brain to process things more quickly (Q35) and to retain more information.",
+      "start": 281.27,
+      "end": 294.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Current research also shows that dance promotes a general sense of well-being in older participants, which can last up to a week after a class.",
+      "start": 294.53,
+      "end": 306.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Participants report feeling less tired and having greater motivation to be more active (Q36) and do daily activities such as gardening or walking to the shops or a park.",
+      "start": 306.53,
+      "end": 320.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Ballroom or country dancing, both popular with older people, have to be done in groups.",
+      "start": 320.83,
+      "end": 328.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "They require collaboration and often involve touching a dance partner, all of which encourages interaction on the dance floor.",
+      "start": 328.09,
+      "end": 337.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "This helps to develop new relationships and can reduce older people’s sense of isolation (Q37), which is a huge problem in many countries.",
+      "start": 337.91,
+      "end": 349.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "I also looked at the benefits of Zumba.",
+      "start": 349.43,
+      "end": 352.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Fifteen million people in 180 countries now regularly take a Zumba class, an aerobic workout based on Latin American dance moves.",
+      "start": 352.83,
+      "end": 367.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "John Porcari, a professor of exercise and sport science at the University of Wisconsin, analysed a group of women who were Zumba regulars and found that a class lasting 40 minutes burns about 370 clories.",
+      "start": 367.13,
+      "end": 384.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "This is similar to moderately intense exercises (Q38) like step aerobics or kickboxing.",
+      "start": 384.23,
+      "end": 391.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "A study in the American Journal of Health Behavior showed that when women with obesity (Q39) did Zumba three times a week for 16 weeks, they lost an average of 1.2 kilos and lowered their percentage of body fat by 1%.",
+      "start": 391.77,
+      "end": 410.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "More importantly, the women enjoyed the class so much that they made it a habit (Q40) and continued to attend classes at least once a week - very unusual for an aerobic exercise programme.",
+      "start": 410.33,
+      "end": 427.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "Dance is never going to compete with high-intensity workouts when it comes to physical fitness gains, but its popularity is likely to keep on rising because it’s such a fun way to keep fit.",
+      "start": 427.53,
+      "end": 525.711,
+      "preAudio": false
+    }
+  ]
+}

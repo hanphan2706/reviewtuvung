@@ -1,0 +1,314 @@
+{
+  "version": 1,
+  "partId": "cam16-t2-p2",
+  "audioFile": "cam16-test2-part2.mp3",
+  "durationSeconds": 463.685938,
+  "method": "whisper-local",
+  "preambleSeconds": 58.3,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Good morning and thank you for coming here today. I’d like to bring you up to date with changes in the school that will affect your children.",
+      "start": 58.3,
+      "end": 67.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "As you know, the school buildings date from various times: some from the 1970s, some from the last five years, and of course Dartfield House is over a century old.",
+      "start": 67.48,
+      "end": 77.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "It was commissioned by a businessman.",
+      "start": 77.98,
+      "end": 80.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Neville Richards, and intended as his family home, but he died before it was completed.",
+      "start": 80.44,
+      "end": 87.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "His heir chose to sell it to the local council, who turned it into offices (Q11).",
+      "start": 87.53,
+      "end": 93.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "A later plan to convert it into a tourist information centre didn’t come about, through lack of money, and instead it formed the nucleus of this school when it opened 40 years ago.",
+      "start": 93.24,
+      "end": 107.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "The school has grown as the local population has increased, and I can now give you some news about the lower school site, which is separated from the main site by a road.",
+      "start": 107.56,
+      "end": 120.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Planning permission has been granted for development of both sites.",
+      "start": 120.46,
+      "end": 125.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "The lower school will move to new buildings that will be constructed on the main site.",
+      "start": 125.34,
+      "end": 131.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Developers will construct houses on the existing lower school site (Q12).",
+      "start": 131.78,
+      "end": 137.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Work on the new school buildings should start within the next few months.",
+      "start": 137.02,
+      "end": 142.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "A more imminent change concerns the catering facilities and the canteen.",
+      "start": 142.98,
+      "end": 149.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "The canteen is always very busy throughout the lunch period - in fact it’s often full to capacity, because a lot of our pupils like the food that’s on offer there.",
+      "start": 149.04,
+      "end": 161.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "But there’s only one serving point, so most pupils have to wait a considerable time to be served (Q13).",
+      "start": 161.22,
+      "end": 169.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "This is obviously unsatisfactory, as they may have hardly finished their lunch before afternoon lessons start.",
+      "start": 169.12,
+      "end": 177.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "So we’ve had a new Food Hall built, and this will come into use next week.",
+      "start": 177.1,
+      "end": 184.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "It’ll have several serving areas, and I’ll give you more details about those in a minute, but one thing we ask you to do, to help in the smooth running of the Food Hall, is to discuss with your children each morning which type of food they want to eat that day (Q14), so they can go straight to the relevant serving point.",
+      "start": 184.38,
+      "end": 205.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "There won’t be any junk food - everything on offer will be healthy - and there’s no change to the current system of paying for lunches by topping up your child’s electronic payment card online.",
+      "start": 205.7,
+      "end": 219.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "You may be wondering what will happen to the old canteen.",
+      "start": 219.82,
+      "end": 223.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "We’ll still have tables and chairs in there, and pupils can eat food from the Food Hall or lunch they’ve brought from home (Q15).",
+      "start": 223.88,
+      "end": 232.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Eventually we may use part of the canteen for storage, but first we’ll see how many pupils go in there at lunchtime.",
+      "start": 232.42,
+      "end": 282.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "OK, back to the serving points in the Food Hall, which will all have side dishes, desserts and drinks on sale, as well as main courses.",
+      "start": 282.3,
+      "end": 294.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "One serving point we call World Adventures (Q16).",
+      "start": 294.1,
+      "end": 298.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "This will serve a different country’s cuisine each day, maybe Chinese one day and Lebanese the next.",
+      "start": 298.02,
+      "end": 305.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "The menus will be planned for a week at a time, so pupils will know what’s going to be available the whole of the week.",
+      "start": 305.92,
+      "end": 316.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Street Life is also international, with food from three particular cultures.",
+      "start": 316.26,
+      "end": 322.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "We’ll ask pupils to make suggestions (Q17), so perhaps sometimes there’ll be food from Thailand, Ethiopia and Mexico, and then one of them will be replaced by Jamaican food for a week or two.",
+      "start": 322.88,
+      "end": 338.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "The Speedy Italian serving point will cater particularly for the many pupils who don’t eat meat or fish (Q18): they can be sure that all the food served there is suitable for them.",
+      "start": 338.93,
+      "end": 352.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "There’ll be plenty of variety, so they shouldn’t get bored with the food.",
+      "start": 352.61,
+      "end": 358.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "OK, that’s all on the new Food Hall.",
+      "start": 358.31,
+      "end": 361.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Now after-school lessons.",
+      "start": 361.35,
+      "end": 364.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "There are very popular with pupils, particularly swimming - in fact there’s a waiting list for lessons.",
+      "start": 364.75,
+      "end": 373.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Cycling is another favourite, and I’m delighted that dozens of pupils make use of the chance to learn to ride in off-road conditions.",
+      "start": 373.17,
+      "end": 382.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "It means that more and more cycle to and from school every day.",
+      "start": 382.35,
+      "end": 386.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "As you know, we have a well-equipped performance centre, and we’re going to start drama classes (Q19/Q20) in there, too.",
+      "start": 386.77,
+      "end": 395.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Pupils will be able to join in just for fun or work up to taking part in a play - we hope to put on at least one a year.",
+      "start": 395.23,
+      "end": 405.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "We already teach a number of pupils to use the sound and lighting systems in the centre.",
+      "start": 405.43,
+      "end": 411.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "And a former pupil has given a magnificent grand piano to the school, so a few pupils will be able to learn at the school instead of going to the local college, as many of them do at the moment.",
+      "start": 411.21,
+      "end": 463.686,
+      "preAudio": false
+    }
+  ]
+}

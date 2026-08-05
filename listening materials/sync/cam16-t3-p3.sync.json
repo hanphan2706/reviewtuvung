@@ -1,0 +1,242 @@
+{
+  "version": 1,
+  "partId": "cam16-t3-p3",
+  "audioFile": "cam16-test3-part3.mp3",
+  "durationSeconds": 410.924375,
+  "method": "whisper-local",
+  "preambleSeconds": 45.06,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "ADAM",
+      "text": "OK Rosie, shall we try to get some ideas together for our presentation on diet and obesity?",
+      "start": 45.06,
+      "end": 50.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "ROSIE",
+      "text": "Sure.",
+      "start": 50.84,
+      "end": 51.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "ADAM",
+      "text": "I can talk about the experiment I did to see if people can tell the difference between real sugar and artificial sweeteners.",
+      "start": 51.29,
+      "end": 58.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "ROSIE",
+      "text": "Where you have people drinks with either sugar or artificial sweeteners and they had to say which they thought it was?",
+      "start": 58.77,
+      "end": 65.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "ADAM",
+      "text": "Yeah. It took me ages to decide exactly how I’d organise it, especially how I could make sure that people didn’t know which drink I was giving them (Q21/Q22). It was hard to keep track of it all, especially as I had so many people doing it (Q21/Q22) - I had to make sure I kept a proper record of what each person had had.",
+      "start": 65.72,
+      "end": 84.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "ROSIE",
+      "text": "So could most people tell the difference?",
+      "start": 84.6,
+      "end": 87.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "ADAM",
+      "text": "Yeah - I hadn’t thought they would be able to, but most people could.",
+      "start": 87.48,
+      "end": 92.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "ROSIE",
+      "text": "Then there’s that experiment I did measuring the fat content of nuts, to see if the nutritional information given on the packet was accurate.",
+      "start": 92.36,
+      "end": 102.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "ADAM",
+      "text": "The one where you ground up the nuts and mixed them with a chemical to absorb the fat?",
+      "start": 102.22,
+      "end": 108.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "ROSIE",
+      "text": "Yes. My results were a bit problematic - the fat content for that type of nut seemed much lower than it said on the package. But I reckon the package information was right. I think I should probably have ground up the nuts more than I did. It’s possible that the scales for weighing the fat weren’t accurate enough (Q23/Q24), too. I’d really like to try the experiment again some time.",
+      "start": 108.34,
+      "end": 193.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "ADAM",
+      "text": "So what can we say about helping people to lose weight? There’s a lot we could say about what restaurants could do to reduce obesity. I read that the items at the start of a menu and the items at the end of a menu are much more likely to be chosen than the items in the middle. So, if you put the low-calorie items at the beginning and end of the menu, people will probably go for the food with fewer calories (Q25), without even realising what they’re doing.",
+      "start": 193.65,
+      "end": 222.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "ROSIE",
+      "text": "I think food manufacturers could do more to encourage healthy eating.",
+      "start": 222.83,
+      "end": 227.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "ADAM",
+      "text": "How?",
+      "start": 227.67,
+      "end": 228.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "ROSIE",
+      "text": "Well, when manufacturers put calorie counts of a food on the label, they’re sometimes really confusing and I suspect they do it on purpose (Q26). Because food that’s high in calories tastes better, and so they’ll sell more.",
+      "start": 228.41,
+      "end": 243.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "ADAM",
+      "text": "Yeah, so if you look at the amount of calories in a pizza, they’ll give you the calories per quarter pizza and you think, oh that’s not too bad. But who’s going to eat a quarter pizza?",
+      "start": 243.01,
+      "end": 255.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "ROSIE",
+      "text": "Exactly.",
+      "start": 255.59,
+      "end": 256.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "ADAM",
+      "text": "I suppose another approach to this problem is to get people to exercise more.",
+      "start": 256.73,
+      "end": 261.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "ROSIE",
+      "text": "Right. In England, the current guidelines are for at least 30 minutes of brisk walking, five days a week. Now when you ask them, about 40% of men and 30% of women say they do this, but when you objectively measure the amount of walking they do with motion sensors, you find that only 6% of men and 4% of women do the recommended amount of exercise. (Q27)",
+      "start": 261.71,
+      "end": 289.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "ADAM",
+      "text": "Mm, so you can see why obesity is growing.",
+      "start": 289.37,
+      "end": 292.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "ROSIE",
+      "text": "So how can people be encouraged to take more exercise?",
+      "start": 292.77,
+      "end": 297.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "ADAM",
+      "text": "Well, for example, think of the location of stairs station. if people reach the stairs before they reach the escalator when they’re leaving the station, they’re more likely to take the stairs. And if you increase the width of the stairs, you’ll get more people using them at the same time (Q28). It’s an unconscious process and influenced by minor modifications in their environment.",
+      "start": 297.43,
+      "end": 323.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "ROSIE",
+      "text": "Right. And it might not be a big change, but if it happens every day, it all adds up.",
+      "start": 323.55,
+      "end": 330.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "ADAM",
+      "text": "Yes. But actually, I’m not sure if we should be talking about exercise in our presentation. (Q29)",
+      "start": 330.03,
+      "end": 335.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "ROSIE",
+      "text": "Well, we’ve done quite a bit of reading about it.",
+      "start": 335.81,
+      "end": 339.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "ADAM",
+      "text": "I know, but it’s going to mean we have a very wide focus, and our tutor did say that we need to focus on causes and solutions in terms of nutrition.",
+      "start": 339.21,
+      "end": 349.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "ROSIE",
+      "text": "I suppose so. And we’ve got plenty of information about that. OK, well that will be simpler.",
+      "start": 349.75,
+      "end": 357.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "ADAM",
+      "text": "So what shall we do now? We’ve still got half an hour before our next lecture.",
+      "start": 357.61,
+      "end": 363.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "ROSIE",
+      "text": "Let’s think about what we’re going to include and what will go where (Q30). Then we can decide what slides we need.",
+      "start": 363.05,
+      "end": 370.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "ADAM",
+      "text": "OK, fine.",
+      "start": 370.53,
+      "end": 410.924,
+      "preAudio": false
+    }
+  ]
+}

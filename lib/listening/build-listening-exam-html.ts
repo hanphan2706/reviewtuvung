@@ -273,21 +273,76 @@ function renderNoteGridTable(layout: NoteGridTableLayout): string {
 
 const FLOW_ARROW_RE = /^[↓↑→←⟷▾▴]+$/u;
 const FLOW_SPLIT_RE = /^FLOW\s+SPLIT$/i;
+const FLOW_OPTION_LINE_RE = /^([A-H])\s+(.+)$/;
+const FLOW_CHOOSE_BOX_RE = /choose\s+.+\s+from the box/i;
+
+function peelFlowchartOptionBank(lines: readonly string[]): { bankHtml: string; lines: string[] } {
+  const start = lines.findIndex((line) => FLOW_CHOOSE_BOX_RE.test(line) || FLOW_OPTION_LINE_RE.test(line));
+  if (start < 0 || start > 2) return { bankHtml: "", lines: [...lines] };
+
+  let index = start;
+  let title = "";
+  if (FLOW_CHOOSE_BOX_RE.test(lines[index] ?? "")) {
+    title = lines[index] ?? "";
+    index += 1;
+  }
+
+  const options: { letter: string; text: string }[] = [];
+  while (index < lines.length) {
+    const match = (lines[index] ?? "").match(FLOW_OPTION_LINE_RE);
+    if (!match) break;
+    options.push({ letter: match[1]!, text: match[2]!.trim() });
+    index += 1;
+  }
+  if (options.length < 2) return { bankHtml: "", lines: [...lines] };
+
+  const titleHtml = title ? `<div class="people-bank-title">${escHtml(title)}</div>` : "";
+  const bankHtml = `<div class="people-bank flow-option-bank">${titleHtml}<ul class="people-bank-list">${options
+    .map(
+      (option) =>
+        `<li><span class="people-bank-letter">${escHtml(option.letter)}</span><span class="people-bank-name">${escHtml(option.text)}</span></li>`,
+    )
+    .join("")}</ul></div>`;
+  return { bankHtml, lines: [...lines.slice(0, start), ...lines.slice(index)] };
+}
 
 function renderFlowchartBox(line: string): string {
-  return `<div class="flow-box">${renderNoteLineWithBlanks(line)}</div>`;
+  return renderFlowchartBoxLines([line]);
+}
+
+function renderFlowchartBoxLines(lines: readonly string[]): string {
+  const parts = lines
+    .map((line) => line.trim())
+    .filter((line) => line.length > 0)
+    .map((line, index, all) => {
+      const html = renderNoteLineWithBlanks(line);
+      const isHeading = index === 0 && all.length > 1 && (!lineHasBlank(line) || /:\s*$/.test(line));
+      return `<div class="${isHeading ? "flow-box-heading" : "flow-box-line"}">${html}</div>`;
+    });
+  if (parts.length === 0) return "";
+  return `<div class="flow-box">${parts.join("")}</div>`;
 }
 
 /** Branching flowchart (Pinball entry Q26–30 style) using `FLOW SPLIT` markers in QnA. */
 function renderFlowchartBody(bodyLines: readonly string[]): string {
-  const lines = bodyLines.map((line) => line.trim()).filter((line) => line.length > 0);
-  if (lines.length === 0) return "";
+  const peeled = peelFlowchartOptionBank(bodyLines.map((line) => line.trim()).filter((line) => line.length > 0));
+  const lines = peeled.lines;
+  if (lines.length === 0) return peeled.bankHtml;
 
   let titleHtml = "";
   let start = 0;
   if (lines[0] && !lineHasBlank(lines[0]) && !FLOW_SPLIT_RE.test(lines[0]) && !FLOW_ARROW_RE.test(lines[0])) {
     const maybeTitle = lines[0]!;
-    if (/^[A-Z]/.test(maybeTitle) && maybeTitle === maybeTitle.toUpperCase()) {
+    const next = lines[1] ?? "";
+    const afterNext = lines[2] ?? "";
+    const allCapsTitle = /^[A-Z]/.test(maybeTitle) && maybeTitle === maybeTitle.toUpperCase();
+    const nextIsStepStart =
+      !FLOW_SPLIT_RE.test(next) &&
+      (/:\s*$/.test(next) ||
+        FLOW_ARROW_RE.test(next) ||
+        (!lineHasBlank(next) && (FLOW_ARROW_RE.test(afterNext) || lineHasBlank(afterNext))));
+    const plainChartTitle = !/:\s*$/.test(maybeTitle) && nextIsStepStart;
+    if (allCapsTitle || plainChartTitle) {
       titleHtml = `<p class="note-doc-title flow-title">${escHtml(maybeTitle)}</p>`;
       start = 1;
     }
@@ -339,8 +394,8 @@ function renderFlowchartBody(bodyLines: readonly string[]): string {
 
     const leftLower = leftLeaf.map(renderFlowchartBox).join('<div class="flow-arrow" aria-hidden="true">↓</div>');
 
-    return `${titleHtml}
-<div class="flow-chart">
+    return `${peeled.bankHtml}
+<div class="flow-chart">${titleHtml}
   ${rootHtml}
   <div class="flow-split" aria-hidden="true"><span class="flow-arrow">↓</span><span class="flow-arrow">↓</span></div>
   <div class="flow-row">
@@ -361,11 +416,24 @@ function renderFlowchartBody(bodyLines: readonly string[]): string {
 </div>`;
   }
 
-  const boxes = rest
-    .filter((line) => !FLOW_ARROW_RE.test(line) && !FLOW_SPLIT_RE.test(line))
-    .map(renderFlowchartBox)
+  const groups: string[][] = [];
+  let current: string[] = [];
+  for (const line of rest) {
+    if (FLOW_SPLIT_RE.test(line)) continue;
+    if (FLOW_ARROW_RE.test(line)) {
+      if (current.length > 0) groups.push(current);
+      current = [];
+      continue;
+    }
+    current.push(line);
+  }
+  if (current.length > 0) groups.push(current);
+
+  const boxes = groups
+    .map((group) => renderFlowchartBoxLines(group))
+    .filter(Boolean)
     .join('<div class="flow-arrow" aria-hidden="true">↓</div>');
-  return `${titleHtml}<div class="flow-chart">${boxes}</div>`;
+  return `${peeled.bankHtml}<div class="flow-chart">${titleHtml}${boxes}</div>`;
 }
 
 function renderNoteFreeformBody(bodyLines: readonly string[]): string {
@@ -390,7 +458,7 @@ function renderNoteSection(section: ListeningQnaNoteSection, partNumber: number)
   const maxQ = nums[nums.length - 1] ?? partNumber * 10;
 
   let body = "";
-  if (/complete the flowchart below/i.test(instructionText)) {
+  if (/complete the flow[\s-]?chart below/i.test(instructionText)) {
     body = renderFlowchartBody(section.bodyLines);
   } else if (layout.kind === "form") {
     body = renderNoteFormTable(layout);

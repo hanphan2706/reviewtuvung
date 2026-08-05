@@ -1,0 +1,271 @@
+{
+  "version": 1,
+  "partId": "cam16-t4-p2",
+  "audioFile": "cam16-test4-part2.mp3",
+  "durationSeconds": 384.674063,
+  "method": "whisper-local",
+  "preambleSeconds": 58.27,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "CHAIRPERSON",
+      "text": "",
+      "start": 51.278,
+      "end": 51.728,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "CHAIRPERSON",
+      "text": "Right. Next on the agenda we have traffic and highways. Councillor Thornton.",
+      "start": 51.728,
+      "end": 56.959,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "",
+      "start": 56.959,
+      "end": 57.409,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "Thank you.",
+      "start": 57.409,
+      "end": 58.27,
+      "preAudio": true
+    },
+    {
+      "id": "cue-5",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "Well, we now have the results of the survey carried out last month about traffic and road transport in the town.",
+      "start": 58.27,
+      "end": 65.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "People were generally satisfied with the state of the roads.",
+      "start": 65.41,
+      "end": 68.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "There were one or two complaints about potholes which will be addressed, but a significant number of people complained about the increasing number of heavy vehicles (Q11) using our local roads to avoid traffic elsewhere.",
+      "start": 68.81,
+      "end": 81.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "We’d expected more complaints by commuters about the reduction in the train service, but it doesn’t seem to have affected people too much.",
+      "start": 81.61,
+      "end": 90.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "The cycle path that runs alongside the river is very well used by both cyclists and pedestrians since the surface was improved last year, but overtaking can be a problem so we’re going to add a bit on the side to make it wider (Q12).",
+      "start": 90.69,
+      "end": 106.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "At some stage, we’d like to extend the path so that it goes all the way through the town, but that won’t be happening in the immediate future.",
+      "start": 106.67,
+      "end": 116.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "The plans to have a pedestrian crossing next to the Post Office have unfortunately had to be put on hold for the time being.",
+      "start": 116.61,
+      "end": 124.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "We’d budgeted for this to be done this financial year, but then there were rumours that the Post Office was going to move, which would have meant there wasn’t really a need for a crossing.",
+      "start": 124.77,
+      "end": 136.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "Now they’ve confirmed that they’re staying where they are, but the Highways Department have told us that it would be dangerous to have a pedestrian crossing where we’d originally planned it as there’s a bend in the road there (Q13).",
+      "start": 136.67,
+      "end": 150.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "So that’ll need some more thought.",
+      "start": 150.27,
+      "end": 152.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "On Station Road near the station and level crossing, drivers can face quite long waits if the level crossing’s closed, and we’ve now got signs up requesting them not to leave their engines running at that time (Q14).",
+      "start": 152.15,
+      "end": 163.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "This means pedestrians waiting on the pavement to cross the railway line don’t have to breathe in car fumes.",
+      "start": 163.63,
+      "end": 170.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "We’ve had some problems with cyclists leaving their bikes chained to the railings outside the ticket office, but the station has agreed to provide bike racks there.",
+      "start": 170.31,
+      "end": 179.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "CHAIRPERSON",
+      "text": "",
+      "start": 179.49,
+      "end": 226.29
+    },
+    {
+      "id": "cue-19",
+      "speaker": "CHAIRPERSON",
+      "text": "So next on the agenda is ‘Proposals for improvements to the recreation ground’. Councillor Thornton again.",
+      "start": 226.29,
+      "end": 233.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "",
+      "start": 233.55,
+      "end": 234.63
+    },
+    {
+      "id": "cue-21",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "Well, since we managed to extend the recreation ground, we’ve spent some time talking to local people about how it could be made a more attractive and useful space.",
+      "start": 234.63,
+      "end": 244.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "If you have a look at the map up on the screen, you can see the river up in the north, and the Community Hall near the entrance from the road.",
+      "start": 244.77,
+      "end": 255.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "At present, cars can park between the Community Hall and that line of trees to the east, but this is quite dangerous for pedestrians so we’re suggesting a new car park on the opposite side of the Community Hall, right next to it (Q15).",
+      "start": 255.31,
+      "end": 269.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "We also have a new location for the cricket pitch.",
+      "start": 269.31,
+      "end": 272.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "As we’ve now purchased additional space to the east of the recreation ground, beyond the trees (Q16), we plan to move it away from its current location, which is rather near the road, into this new area beyond the line of trees.",
+      "start": 272.71,
+      "end": 287.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "This means there’s less danger of stray balls hitting cars or pedestrians.",
+      "start": 287.03,
+      "end": 292.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "We’ve got plans for a children’s playground which will be accessible by a footpath from the Community Hall and will be alongside the river (Q17).",
+      "start": 292.29,
+      "end": 300.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "We’d originally thought of having it close to the road, but we think this will be a more attractive location.",
+      "start": 300.79,
+      "end": 307.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "The skateboard ramp is very popular with both younger and older children - we had considered moving this up towards the river, but in the end we decided to have it in the southeast corner near the road (Q18).",
+      "start": 307.59,
+      "end": 320.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "The pavilion is very well used at present by both football players and cricketers.",
+      "start": 320.85,
+      "end": 326.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "It will stay where it is now - to the left of the line of trees and near to the river (Q19) - handy for both the football and cricket pitches.",
+      "start": 326.33,
+      "end": 336.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "And finally, we’ll be getting a new notice board for local information, and that will be directly on people’s right as they go from the road into the recreation ground.",
+      "start": 336.87,
+      "end": 347.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "COUNCILLOR THORNTON",
+      "text": "(Q20)",
+      "start": 347.07,
+      "end": 384.674
+    }
+  ]
+}

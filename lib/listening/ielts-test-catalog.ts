@@ -1,6 +1,7 @@
 import { LISTENING_HUB_HREF } from "@/lib/listening/listening-hub-nav";
 import { cambridgeIeltsCatalogOrder } from "@/lib/exam/ielts-catalog-order";
 import {
+  CAMBRIDGE_IELTS_16_COVER_URL,
   CAMBRIDGE_IELTS_17_COVER_URL,
   CAMBRIDGE_IELTS_18_COVER_URL,
   CAMBRIDGE_IELTS_19_COVER_URL,
@@ -28,7 +29,11 @@ export type ListeningIeltsTestId =
   | "cam17-test1"
   | "cam17-test2"
   | "cam17-test3"
-  | "cam17-test4";
+  | "cam17-test4"
+  | "cam16-test1"
+  | "cam16-test2"
+  | "cam16-test3"
+  | "cam16-test4";
 
 export type ListeningIeltsTest = {
   testId: ListeningIeltsTestId;
@@ -37,8 +42,12 @@ export type ListeningIeltsTest = {
   bookTitle: string;
   testNumber: number;
   coverImageUrl: string;
+  coverImageObjectPosition?: string;
   catalogOrder: number;
 };
+
+/** Tiny top-ward crop so “IELTS” sits just off the card edge. */
+const LISTENING_CAM17_COVER_POSITION = "50% 44%";
 
 export const LISTENING_IELTS_EXAM_HREF = `${LISTENING_HUB_HREF}/luyen-de-ielts`;
 
@@ -181,6 +190,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 17 Academic",
     testNumber: 4,
     coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
+    coverImageObjectPosition: LISTENING_CAM17_COVER_POSITION,
     catalogOrder: cambridgeIeltsCatalogOrder(17, 4),
   },
   {
@@ -189,6 +199,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 17 Academic",
     testNumber: 3,
     coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
+    coverImageObjectPosition: LISTENING_CAM17_COVER_POSITION,
     catalogOrder: cambridgeIeltsCatalogOrder(17, 3),
   },
   {
@@ -197,6 +208,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 17 Academic",
     testNumber: 2,
     coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
+    coverImageObjectPosition: LISTENING_CAM17_COVER_POSITION,
     catalogOrder: cambridgeIeltsCatalogOrder(17, 2),
   },
   {
@@ -205,7 +217,40 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 17 Academic",
     testNumber: 1,
     coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
+    coverImageObjectPosition: LISTENING_CAM17_COVER_POSITION,
     catalogOrder: cambridgeIeltsCatalogOrder(17, 1),
+  },
+  {
+    testId: "cam16-test4",
+    label: "Cambridge 16 · Test 4",
+    bookTitle: "Cambridge IELTS 16 Academic",
+    testNumber: 4,
+    coverImageUrl: CAMBRIDGE_IELTS_16_COVER_URL,
+    catalogOrder: cambridgeIeltsCatalogOrder(16, 4),
+  },
+  {
+    testId: "cam16-test3",
+    label: "Cambridge 16 · Test 3",
+    bookTitle: "Cambridge IELTS 16 Academic",
+    testNumber: 3,
+    coverImageUrl: CAMBRIDGE_IELTS_16_COVER_URL,
+    catalogOrder: cambridgeIeltsCatalogOrder(16, 3),
+  },
+  {
+    testId: "cam16-test2",
+    label: "Cambridge 16 · Test 2",
+    bookTitle: "Cambridge IELTS 16 Academic",
+    testNumber: 2,
+    coverImageUrl: CAMBRIDGE_IELTS_16_COVER_URL,
+    catalogOrder: cambridgeIeltsCatalogOrder(16, 2),
+  },
+  {
+    testId: "cam16-test1",
+    label: "Cambridge 16 · Test 1",
+    bookTitle: "Cambridge IELTS 16 Academic",
+    testNumber: 1,
+    coverImageUrl: CAMBRIDGE_IELTS_16_COVER_URL,
+    catalogOrder: cambridgeIeltsCatalogOrder(16, 1),
   },
 ] as const;
 

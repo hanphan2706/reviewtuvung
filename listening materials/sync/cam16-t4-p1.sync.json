@@ -1,0 +1,322 @@
+{
+  "version": 1,
+  "partId": "cam16-t4-p1",
+  "audioFile": "cam16-test4-part1.mp3",
+  "durationSeconds": 425.823906,
+  "method": "whisper-local",
+  "preambleSeconds": 124.68,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "SHIRLEY",
+      "text": "Hello?",
+      "start": 101.913,
+      "end": 102.363,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "TOM",
+      "text": "Oh hello. I was hoping to speak to Jack Fitzgerald about renting a cottage.",
+      "start": 102.363,
+      "end": 107.123,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "SHIRLEY",
+      "text": "I’m his wife, Shirley, and we own the cottages together, so I’m sure I can help you.",
+      "start": 107.123,
+      "end": 112.903,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": "TOM",
+      "text": "Great. My name’s Tom. Some friends of ours rented Granary Cottage from you last year, and they thought it was great. So my wife and I are hoping to come in May for a week.",
+      "start": 112.903,
+      "end": 124.533,
+      "preAudio": true
+    },
+    {
+      "id": "cue-5",
+      "speaker": "SHIRLEY",
+      "text": "What date did you have in mind?",
+      "start": 124.533,
+      "end": 124.68,
+      "preAudio": true
+    },
+    {
+      "id": "cue-6",
+      "speaker": "TOM",
+      "text": "The week beginning the 14th, if possible.",
+      "start": 124.68,
+      "end": 127.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "SHIRLEY",
+      "text": "I’ll just check … I’m sorry, Tom, it’s already booked that week. It’s free the week beginning the 28th (Q1), though, for seven nights. In fact, that’s the only time you could have it in May.",
+      "start": 127.06,
+      "end": 139.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "TOM",
+      "text": "Oh. Well, we could manage that, I think. We’d just need to change a couple of things. How much would it cost?",
+      "start": 139.3,
+      "end": 142.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "SHIRLEY",
+      "text": "That’s the beginning of high season, so it’d be £550 for the week. (Q2)",
+      "start": 142.85,
+      "end": 149.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "TOM",
+      "text": "Ah. That’s a bit more than we wanted to pay, I’m afraid. We’ve budgeted up to £500 for accommodation.",
+      "start": 149.85,
+      "end": 159.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "SHIRLEY",
+      "text": "Well, we’ve just finished converting another building into a cottage, which we’re calling Chervil Cottage. (Q3)",
+      "start": 159.01,
+      "end": 166.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "TOM",
+      "text": "Sorry? What was that again?",
+      "start": 166.61,
+      "end": 168.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "SHIRLEY",
+      "text": "Chervil. C-H-E-R-V for Victor I-L.",
+      "start": 168.95,
+      "end": 177.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "TOM",
+      "text": "Oh, that’s a herb, isn’t it?",
+      "start": 177.35,
+      "end": 179.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "SHIRLEY",
+      "text": "That’s right. It grows fairly wild around here. You could have that for the week you want for £480.",
+      "start": 179.47,
+      "end": 188.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "TOM",
+      "text": "OK. So could you tell me something about it, please?",
+      "start": 188.15,
+      "end": 192.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "SHIRLEY",
+      "text": "Of course. The building was built as a garage (Q4). It’s a little smaller than Granary Cottage.",
+      "start": 192.13,
+      "end": 199.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "TOM",
+      "text": "So that must sleep two people, as well?",
+      "start": 199.79,
+      "end": 202.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "SHIRLEY",
+      "text": "That’s right. There’s a double bedroom.",
+      "start": 202.53,
+      "end": 205.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "TOM",
+      "text": "Does it have a garden? (Q5)",
+      "start": 205.25,
+      "end": 207.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "SHIRLEY",
+      "text": "Yes, you get to it from the living room through French doors, and we provide two deckchairs. We hope to build a patio in the near future, but I wouldn’t like to guarantee it’ll be finished by May.",
+      "start": 207.29,
+      "end": 220.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "TOM",
+      "text": "OK.",
+      "start": 220.29,
+      "end": 221.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "SHIRLEY",
+      "text": "The front door opens onto the old farmyard, and parking isn’t a problem - there’s plenty of room at the front for that (Q6). There are some trees and potted plants there.",
+      "start": 221.61,
+      "end": 268.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "TOM",
+      "text": "What about facilities in the cottage? It has standard things like a cooker and fridge, I presume.",
+      "start": 268.98,
+      "end": 276.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "SHIRLEY",
+      "text": "In the kitchen area there’s a fridge-freezer and we’ve just put in an electric cooker.",
+      "start": 276.68,
+      "end": 283.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "TOM",
+      "text": "Is there a washing machine?",
+      "start": 283.36,
+      "end": 285.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "SHIRLEY",
+      "text": "Yes. There’s also a TV in the living room, which plays DVDs too. The bathroom is too small for a bath, so there’s a shower instead. I think a lot of people prefer that nowadays, anyway.",
+      "start": 285.28,
+      "end": 299.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "TOM",
+      "text": "It’s more environmentally friendly, isn’t it? Unless you spend half the day in it!",
+      "start": 299.68,
+      "end": 305,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "SHIRLEY",
+      "text": "Exactly.",
+      "start": 305,
+      "end": 306.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "TOM",
+      "text": "What about heating? It sometimes gets quite cool at that time of year.",
+      "start": 306.38,
+      "end": 311.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "SHIRLEY",
+      "text": "There’s central heating, and if you want to light a fire, there’s a stove. We can provide all the wood you need for it (Q7). It smells so much nicer than coal, and it makes the room very cosy - we’ve got one in our own house.",
+      "start": 311.28,
+      "end": 326.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "TOM",
+      "text": "That sounds very pleasant. Perhaps we should come in the winter, to make the most of it!",
+      "start": 326.18,
+      "end": 331.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "SHIRLEY",
+      "text": "Yes, we find we don’t want to go out when we’ve got the fire burning. There are some attractive views from the cottage, which I haven’t mentioned. There’s a famous stone bridge - it’s one of the oldest (Q8) in the region, and you can see it from the living room. It isn’t far away. The bedroom window looks in the opposite direction, and has a lovely view of the hills and the monument at the top. (Q9)",
+      "start": 331.96,
+      "end": 358.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "TOM",
+      "text": "Well, that all sounds perfect. I’d like to book it, please. Would you want a deposit?",
+      "start": 358.6,
+      "end": 364.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "SHIRLEY",
+      "text": "Yes, we ask for thirty percent to secure your booking, so that’ll be, um, £144.",
+      "start": 364.72,
+      "end": 373.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "TOM",
+      "text": "And when would you like the rest of the money?",
+      "start": 373.79,
+      "end": 377.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "SHIRLEY",
+      "text": "You’re coming in May, so the last day of March, please. (Q10)",
+      "start": 377.19,
+      "end": 381.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "TOM",
+      "text": "Fine.",
+      "start": 381.3,
+      "end": 382.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "SHIRLEY",
+      "text": "Excellent. Could I just take your details …",
+      "start": 382.3,
+      "end": 425.824,
+      "preAudio": false
+    }
+  ]
+}

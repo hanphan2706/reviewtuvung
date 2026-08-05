@@ -1,0 +1,306 @@
+{
+  "version": 1,
+  "partId": "cam16-t2-p1",
+  "audioFile": "cam16-test2-part1.mp3",
+  "durationSeconds": 397.538281,
+  "method": "whisper-local",
+  "preambleSeconds": 115.7,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "EMPLOYEE",
+      "text": "Hello, Picturerep. Can I help you?",
+      "start": 115.7,
+      "end": 117.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "WOMAN",
+      "text": "Oh, hi. I saw your advertisement about copying pictures to disk and I’d like a bit more information about what you do.",
+      "start": 117.74,
+      "end": 125.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "EMPLOYEE",
+      "text": "Sure. What would you like to know?",
+      "start": 125.22,
+      "end": 127.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "WOMAN",
+      "text": "Well, I’ve got a box full of old family photos that’s been up in the attic for years, some of them must be 50 or 60 years old, and I’d like to get them converted to digital format.",
+      "start": 127.6,
+      "end": 140,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "EMPLOYEE",
+      "text": "Sure, we can do that for you.",
+      "start": 140,
+      "end": 142.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "WOMAN",
+      "text": "Right. And what about size? The photos are all sorts of sizes - are there any restrictions?",
+      "start": 142.38,
+      "end": 152.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "EMPLOYEE",
+      "text": "Well the maximum size of photo we can do with our normal services is 30 centimetres. And each picture must be a least 4 centimetres, that’s the minimum we can cope with.",
+      "start": 152.36,
+      "end": 163.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "WOMAN",
+      "text": "That should be fine. And some of them are in a frame (Q1) - should I take them out before I send them?",
+      "start": 163.24,
+      "end": 171.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "EMPLOYEE",
+      "text": "Yes please, we can’t copy them otherwise. And also the photos must all be separate, they mustn’t be stuck into an album.",
+      "start": 171.06,
+      "end": 178.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "WOMAN",
+      "text": "OK, that’s not a problem. So can you give me an idea of how much this will cost? I’ve got about 360 photos I think.",
+      "start": 178.54,
+      "end": 187.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "EMPLOYEE",
+      "text": "We charge £195 for 300 to 400 photos (Q2) for the basic service.",
+      "start": 187.04,
+      "end": 191.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "WOMAN",
+      "text": "OK. And does that include the disk?",
+      "start": 191.46,
+      "end": 193.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "EMPLOYEE",
+      "text": "Yes, one disk - but you can get extra ones for £5 each.",
+      "start": 193.84,
+      "end": 198.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "WOMAN",
+      "text": "That’s good. So do I need to pay when I send you the photos?",
+      "start": 198.26,
+      "end": 203.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "EMPLOYEE",
+      "text": "No, we won’t need anything until we’ve actually copied the pictures. Then we’ll let you know how much it is, and once we’ve received the payment (Q3), we’ll send the parcel off to you.",
+      "start": 203.02,
+      "end": 228.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "WOMAN",
+      "text": "Right.",
+      "start": 228.36,
+      "end": 232.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "EMPLOYEE",
+      "text": "Is there anything else you’d like to ask about our services?",
+      "start": 232.29,
+      "end": 236.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "WOMAN",
+      "text": "Yes. I’ve roughly sorted out the photos into groups, according to what they’re about - so can you keep them in those groups when you copy them?",
+      "start": 236.03,
+      "end": 246.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "EMPLOYEE",
+      "text": "Sure. We’ll save each group in a different folder on the disk and if you like, you can suggest a name for each folder.",
+      "start": 246.79,
+      "end": 254.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "WOMAN",
+      "text": "So I could have one called ‘Grandparents’ (Q4) for instance?",
+      "start": 254.95,
+      "end": 259.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "EMPLOYEE",
+      "text": "Exactly.",
+      "start": 259.01,
+      "end": 260.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "WOMAN",
+      "text": "And do you do anything besides scan the photos? Like, can you make any improvements?",
+      "start": 260.43,
+      "end": 267.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "EMPLOYEE",
+      "text": "Yes, in the standard service each photo is checked, and we can sometimes touch up the colour a bit (Q5), or improve the contrast - that can make a big difference.",
+      "start": 267.67,
+      "end": 279.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "WOMAN",
+      "text": "OK. And some of the photos are actually quite fragile - they won’t get damaged in the process, will they?",
+      "start": 279.03,
+      "end": 286.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "EMPLOYEE",
+      "text": "No, if any look particularly fragile, we’d do them by hand (Q6). We do realise how precious these old photos can be.",
+      "start": 286.87,
+      "end": 294.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "WOMAN",
+      "text": "Sure.",
+      "start": 294.61,
+      "end": 295.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "EMPLOYEE",
+      "text": "And another thing is we can make changes to a photo if you want - so if you want to remove an object from a photo, or maybe alter the background (Q7), we can do that.",
+      "start": 295.73,
+      "end": 307.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "WOMAN",
+      "text": "Really? I might be interested in that. I’ll have a look through the photos and see. Oh, and talking of fixing photos - I’ve got a few that aren’t properly in focus (Q8). Can you do anything to make that better?",
+      "start": 307.97,
+      "end": 323.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "EMPLOYEE",
+      "text": "No, I’m afraid that’s one thing we can’t do.",
+      "start": 323.53,
+      "end": 326.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "WOMAN",
+      "text": "OK.",
+      "start": 326.89,
+      "end": 327.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "EMPLOYEE",
+      "text": "Any other information I can give you?",
+      "start": 327.89,
+      "end": 330.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "WOMAN",
+      "text": "Er … oh, how long will it all take?",
+      "start": 330.27,
+      "end": 334.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "EMPLOYEE",
+      "text": "We aim to get the copying done in ten days. (Q9)",
+      "start": 334.67,
+      "end": 338.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "WOMAN",
+      "text": "Fine. Right, well I’ll get the photos packed up in a box and post them off to you.",
+      "start": 338.41,
+      "end": 344.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "EMPLOYEE",
+      "text": "Right. If you’ve got a strong cardboard box, that’s best. We’ve found that plastic ones sometimes break in the post. (Q10)",
+      "start": 344.53,
+      "end": 352.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "WOMAN",
+      "text": "OK. Right, thanks for your help. Bye.",
+      "start": 352.49,
+      "end": 357.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "EMPLOYEE",
+      "text": "Bye.",
+      "start": 357.43,
+      "end": 397.538,
+      "preAudio": false
+    }
+  ]
+}

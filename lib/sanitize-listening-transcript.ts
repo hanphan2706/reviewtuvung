@@ -47,5 +47,6 @@ export function sanitizeListeningTranscript(raw: string): string {
   }
   let out = kept.join("\n");
   out = out.replace(/\n{3,}/g, "\n\n");
+  out = out.replace(/^(PART\s+(\d+))(?:\n+PART\s+\2)+/gim, "$1");
   return out.trim();
 }

@@ -1,0 +1,298 @@
+{
+  "version": 1,
+  "partId": "cam16-t1-p2",
+  "audioFile": "cam16-test1-part2.mp3",
+  "durationSeconds": 416.899844,
+  "method": "whisper-local",
+  "preambleSeconds": 58.46,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Good morning, everyone, and welcome to Stevenson’s, one of the country’s major manufacturers of metal goods.",
+      "start": 51.445,
+      "end": 58.46,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Thank you for choosing us for your two weeks of work experience.",
+      "start": 58.46,
+      "end": 62.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "My name is Julia Simmons, and since the beginning of this year I’ve been the managing director.",
+      "start": 62.56,
+      "end": 70.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Stevenson’s is quite an old company.",
+      "start": 70.55,
+      "end": 72.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Like me, the founder, Ronald Stevenson, went into the steel industry when he left school - that was in 1923.",
+      "start": 72.59,
+      "end": 81.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "He set up this company when he finished his apprenticeship, in 1926 (Q11), although he actually started making plans two years earlier, in 1924.",
+      "start": 81.55,
+      "end": 92.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "He was a very determined young man!",
+      "start": 92.93,
+      "end": 96.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Stevenson’s long-term plan was to manufacture components for the machine tools industry - although in fact that never came about - and for the automotive industry, that is, cars and lorries.",
+      "start": 96.77,
+      "end": 109.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "However, there was a delay of five years before that happened, because shortly before the company went into production, Stevenson was given the opportunity to make goods for hospitals and other players in the healthcare industry, so that’s what we did for the first five years (Q12).",
+      "start": 109.67,
+      "end": 129.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Over the years, we’ve expanded the premises considerably - we were lucky that the site is big enough, so moving to a new location has never been necessary (Q13).",
+      "start": 129.25,
+      "end": 141.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "However, the layout is far from ideal for modern machinery and production methods, so we intend to carry out major refurbishment of this site (Q13) over the next five years.",
+      "start": 141.03,
+      "end": 153.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "I’d better give you some idea of what you’ll be doing during your two weeks with us, so you know what to expect.",
+      "start": 153.73,
+      "end": 161.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Most mornings you’ll have a presentation from one of the managers (Q14), to learn about their department, starting this morning with research and development.",
+      "start": 161.83,
+      "end": 172.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "And you’ll all spend some time in each department, observing what’s going on and talking to people - as long as you don’t stop them from doing their work altogether!",
+      "start": 172.51,
+      "end": 183.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "In the past, a teacher from your school has come in at the end of each week to find out how the group were getting on, but your school isn’t able to arrange that this year.",
+      "start": 183.55,
+      "end": 241.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "OK, now I’ll briefly help you to orientate yourselves around the site.",
+      "start": 241.47,
+      "end": 247.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "As you can see, we’re in the reception area, which we try to make attractive and welcoming to visitors.",
+      "start": 247.35,
+      "end": 254.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "There’s a corridor running left from here, and if you go along that, the door facing you at the end is the entrance to the coffee room.",
+      "start": 254.77,
+      "end": 264.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "This looks out onto the main road on one side, and some trees on the other (Q15), and that’ll be where you meet each morning.",
+      "start": 264.11,
+      "end": 272.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "The factory is the very big room on the far side of the site.",
+      "start": 272.95,
+      "end": 278.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Next to it is the warehouse, which can be accessed by lorries going up the road to the turning area at the end.",
+      "start": 278.37,
+      "end": 286.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "You can get to the warehouse by crossing to the far side of the courtyard, and then the door is on your right (Q16).",
+      "start": 286.21,
+      "end": 294.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Somewhere you’ll be keen to find is the staff canteen.",
+      "start": 294.37,
+      "end": 297.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "This is right next to reception (Q17).",
+      "start": 297.91,
+      "end": 300.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "I can confidently say that the food’s very good, but the view isn’t.",
+      "start": 300.53,
+      "end": 305.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "The windows on one side look onto a corridor and courtyard, which aren’t very attractive at all, and on the other onto the access road, which isn’t much better.",
+      "start": 305.69,
+      "end": 317.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "You’ll be using the meeting room quite often, and you’ll find it by walking along the corridor to the left of the courtyard, and continuing along it to the end.",
+      "start": 317.65,
+      "end": 330.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "The meeting room is the last one on the right (Q18), and I’m afraid there’s no natural daylight in the room.",
+      "start": 330.13,
+      "end": 338.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Then you’ll need to know where some of the offices are.",
+      "start": 338.33,
+      "end": 342.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "The human resources department is all the front of this building, so you head to the left along the corridor from reception, and it’s the second room you come to.",
+      "start": 342.11,
+      "end": 353.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "It looks out onto the main road (Q19).",
+      "start": 353.11,
+      "end": 355.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "And finally, the boardroom (Q20), where you’ll be meeting sometimes.",
+      "start": 355.83,
+      "end": 360.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "That has quite a pleasant view, as it looks out on to the trees.",
+      "start": 360.47,
+      "end": 365.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Go along the corridor past the courtyard, right to the end.",
+      "start": 365.23,
+      "end": 369.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "The boardroom is on the left, next to the factory.",
+      "start": 369.47,
+      "end": 373.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "OK, now are there any questions before we …",
+      "start": 373.53,
+      "end": 416.9,
+      "preAudio": false
+    }
+  ]
+}

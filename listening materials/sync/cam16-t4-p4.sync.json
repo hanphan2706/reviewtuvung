@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "partId": "cam16-t4-p4",
+  "audioFile": "cam16-test4-part4.mp3",
+  "durationSeconds": 553.344063,
+  "method": "whisper-local",
+  "preambleSeconds": 90.753,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "One of the most famous cases of extinction is that of a bird known as the dodo.",
+      "start": 77.493,
+      "end": 83.273,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "In fact there’s even a saying in English, ‘as dead as the dodo’, used to refer to something which no longer exists.",
+      "start": 83.273,
+      "end": 90.753,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "But for many centuries the dodo was alive and well, although it could only be found in one place, the island of Mauritius in the Indian Ocean.",
+      "start": 90.753,
+      "end": 99.933,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "It was a very large bird, about one metre tall, and over the centuries it had lost the ability to fly, but it survived happily under the trees that covered the island.",
+      "start": 99.933,
+      "end": 111.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Then in the year 1507 the first Portuguese ships stopped at the island.",
+      "start": 111.58,
+      "end": 119.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "The sailors were carrying spices (Q31) back to Europe, and found the island a convenient stopping place where they could stock up with food and water for the rest of the voyage, but they didn’t settle on Mauritius.",
+      "start": 119.58,
+      "end": 135.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "However, in 1683 the Dutch arrived and set up a colony (Q32) there.",
+      "start": 135.92,
+      "end": 144.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "These first human inhabitants of the island found the dodo birds a convenient source of meat, although not everyone liked the taste.",
+      "start": 144.48,
+      "end": 155.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "It’s hard to get an accurate description of what the dodo actually looked like.",
+      "start": 155.82,
+      "end": 162.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "We do have some written records from sailors, and a few pictures, but we don’t know how reliable these are.",
+      "start": 162.02,
+      "end": 171.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "The best-known picture is a Dutch painting in which the bird appears to be extremely fat (Q33), but this may not be accurate - an Indian painting done at the same time shows a much thinner bird.",
+      "start": 171.48,
+      "end": 187.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Although attempts were made to preserve the bodies of some of the birds, no complete specimen survives.",
+      "start": 187.24,
+      "end": 195.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "In the early 17th century four dried parts of a bird were known to exist - of these, three have disappeared, so only one example of soft tissue from the dodo survives, a dodo head (Q34).",
+      "start": 195.98,
+      "end": 214.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Bones have also found, but there’s only one complete skeleton in existence.",
+      "start": 214.32,
+      "end": 222.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "This single dodo skeleton has recently been the subject of scientific research which suggests that many of the earlier beliefs about dodos may have been incorrect.",
+      "start": 222.83,
+      "end": 237.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "For example, early accounts of the birds mention how slow and clumsy it was, but scientists now believe the bird’s strong knee joints would have made it capable of movement (Q35) which was not slow, but actually quite fast.",
+      "start": 237.57,
+      "end": 257.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "In fact, one 17th century sailor wrote that he found the birds hard to catch.",
+      "start": 257.51,
+      "end": 268.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "It’s true that the dodo’s small wings wouldn’t have allowed it to leave the ground, but the scientists suggest that these were probably employed for balance (Q36) while going over uneven ground.",
+      "start": 268.81,
+      "end": 282.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Another group of scientists carried out analysis of the dodo’s skull.",
+      "start": 282.23,
+      "end": 288.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "They found that the reports of the lack of intelligence of the dodo were not borne out by their research, which suggested the bird’s brain (Q37) was not small, but average in size.",
+      "start": 288.49,
+      "end": 304.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "In fact, in relation to its body size, it was similar to that of the pigeon, which is known to be a highly intelligent bird.",
+      "start": 304.11,
+      "end": 314.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "The researchers also found that the structure of the bird’s skull suggested that one sense which was particularly well-developed was that of smell (Q38).",
+      "start": 314.59,
+      "end": 326.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "So the dodo may also have been particularly good at locating ripe fruit and other food in the island’s thick vegetation.",
+      "start": 326.23,
+      "end": 340.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "So it looks as if the dodo was better able to survive and defend itself than was originally believed.",
+      "start": 340.98,
+      "end": 348.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Yet less than 200 years after Europeans first arrived on the island, they had become extinct.",
+      "start": 348.5,
+      "end": 358.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "So what was the reason for this?",
+      "start": 358.36,
+      "end": 361.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "For a long time, it was believed that the dodos were hunted to extinction, but scientists now believe the situation was more complicated than this.",
+      "start": 361.68,
+      "end": 373.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Another factor may have been the new species brought to the island by the sailors.",
+      "start": 373.4,
+      "end": 380.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "These included dogs, which would have been a threat to the dodos, and also monkeys, which ate the fruit that was the main part of the dodos’ diet.",
+      "start": 380.02,
+      "end": 392.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "These were brought to the island deliberately, but the ships also brought another type of creature - rats (Q39), which came to land from the ships and rapidly overran the island.",
+      "start": 392.04,
+      "end": 406.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "These upset the ecology of the island, not just the dodos but other species too.",
+      "start": 406.8,
+      "end": 415.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "However, they were a particular danger to the dodos because they consumed their eggs, and since each dodo only laid one at a time, this probably had a devastating effect on populations.",
+      "start": 415.2,
+      "end": 432.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "However, we now think that probably the main cause of the birds’ extinction was not the introduction of non-native species, but the introduction of agriculture.",
+      "start": 432.72,
+      "end": 446.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "This meant that the forest (Q40) that has once covered all the island, and that had provided a perfect home for the dodo, was cut down so that crops such as sugar could be grown.",
+      "start": 446.78,
+      "end": 461.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "So although the dodo had survived for thousands of years, suddenly it was gone.",
+      "start": 461.82,
+      "end": 553.344,
+      "preAudio": false
+    }
+  ]
+}

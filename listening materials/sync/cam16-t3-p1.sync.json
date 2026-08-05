@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "partId": "cam16-t3-p1",
+  "audioFile": "cam16-test3-part1.mp3",
+  "durationSeconds": 493.015313,
+  "method": "whisper-local",
+  "preambleSeconds": 124.03,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "JAKE",
+      "text": "Hello, Junior Cycle camp, Jake speaking.",
+      "start": 104.65,
+      "end": 106.69,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "WOMAN",
+      "text": "Hi. I’m calling for some information about the cycle camp - I’m thinking of sending my son.",
+      "start": 106.69,
+      "end": 112.47,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "JAKE",
+      "text": "Great. Well, it’s held every weekday morning over the summer vacation and we focus on basic cycling skills and safety. We have eight levels for children from three years upwards. How old’s your son?",
+      "start": 112.47,
+      "end": 124.03,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": "WOMAN",
+      "text": "Charlie? He’s seven. He can ride a bike, but he needs a little more training before he’s safe to go on the road.",
+      "start": 124.03,
+      "end": 131.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "JAKE",
+      "text": "He’d probably be best in Level 5. They start off practising on the site here, and we aim to get them riding on the road, but first they’re taken to ride in the park (Q1), away from the traffic.",
+      "start": 131.21,
+      "end": 145.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "WOMAN",
+      "text": "Right. And can you tell me a bit about the instructors?",
+      "start": 145.75,
+      "end": 151.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "JAKE",
+      "text": "Well, all our staff wear different coloured shirts. So, we have three supervisors, and they have red shirts. They support the instructors, and they also stand in for me if I’m not around. Then the instructors themselves are in blue shirts (Q2), and one of these is responsible for each class.",
+      "start": 151.83,
+      "end": 179.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "WOMAN",
+      "text": "OK.",
+      "start": 179.26,
+      "end": 180.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "JAKE",
+      "text": "In order to be accepted, all our instructors have to submit a reference (Q3) from someone who’s seen them work with children - like if they’ve worked as a babysitter, for example. Then they have to complete our training course, including how to do lesson plans, and generally care for the well-being of the kids in their class. They do a great job, I have to say.",
+      "start": 180.6,
+      "end": 213.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "WOMAN",
+      "text": "Right. And tell me a bit about the classes. What size will Charlie’s class be?",
+      "start": 213.12,
+      "end": 221.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "JAKE",
+      "text": "We have a limit of eight children in each class, so their instructor really gets to know them well. They’re out riding most of the time but they have quiet times too, where their instructor might tell them a story (Q4) that’s got something to do with cycling, or get them to play a game together. It’s a lot of fun.",
+      "start": 221.7,
+      "end": 248.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "WOMAN",
+      "text": "It must be. Now, what happens if there’s rain? Do the classes still run? (Q5)",
+      "start": 248.98,
+      "end": 257.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "JAKE",
+      "text": "Oh yes. We don’t let that put us off - we just put on our waterproofs and keep cycling.",
+      "start": 257.84,
+      "end": 300.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "WOMAN",
+      "text": "And is there anything special Charlie should bring along with him?",
+      "start": 300.9,
+      "end": 312.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "JAKE",
+      "text": "Well, maybe some spare clothes, especially if the weather’s not so good. And a snack (Q6) for break time.",
+      "start": 312.49,
+      "end": 323.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "WOMAN",
+      "text": "How about a drink?",
+      "start": 323.27,
+      "end": 325.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "JAKE",
+      "text": "No, we’ll provide that. And make sure he has shoes, not sandals.",
+      "start": 325.13,
+      "end": 332.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "WOMAN",
+      "text": "Sure. And just at present Charlie has to take medication every few hours, so I’ll make sure he has that. (Q7)",
+      "start": 332.01,
+      "end": 343.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "JAKE",
+      "text": "Absolutely. Just give us details of when he has to take it and we’ll make sure he does.",
+      "start": 343.49,
+      "end": 351.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "WOMAN",
+      "text": "Thanks.",
+      "start": 351.37,
+      "end": 352.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "JAKE",
+      "text": "Now, there are a few things you should know about Day 1 of the camp. The classes normally start at 9.30 every morning, but on Day 1 you should aim to get Charlie here by 9.20. The finishing time will be 12.30 as usual. We need the additional time because there are a few extra things to do. The most important is that we have a very careful check to make sure that every child’s helmet fits properly (Q8). If it doesn’t fit, we’ll try to adjust it, or we’ll find him another one - but he must wear it all the time he’s on the bike.",
+      "start": 352.65,
+      "end": 403.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "WOMAN",
+      "text": "Of course.",
+      "start": 403.83,
+      "end": 405.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "JAKE",
+      "text": "Then after that, all the instructors will be waiting to meet their classes, and they’ll meet up in the tent (Q9) - you can’t miss it. And each instructor will take their class away and get started.",
+      "start": 405.39,
+      "end": 422.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "WOMAN",
+      "text": "OK. Well that all sounds good. Now can you tell me how much the camp costs a week?",
+      "start": 422.13,
+      "end": 433.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "JAKE",
+      "text": "One hundred ninety-nine dollars (Q10). We’ve managed to keep the price more or less the same as last year - it was one hundred ninety then. But the places are filling up quite quickly.",
+      "start": 433.47,
+      "end": 448.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "WOMAN",
+      "text": "Right. OK, well I’d like to book for …",
+      "start": 448.95,
+      "end": 493.015,
+      "preAudio": false
+    }
+  ]
+}

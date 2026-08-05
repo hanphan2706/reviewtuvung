@@ -35,13 +35,11 @@ export const CAMBRIDGE_IELTS_18_COVER_URL =
 export const CAMBRIDGE_IELTS_20_COVER_URL =
   "https://cdn1.fahasa.com/media/catalog/product/b/i/bia_1_ielts_20_aca.jpg";
 
-export const CAMBRIDGE_IELTS_16_COVER_URL = "/cambridge-ielts-16-academic.jpg";
+export const CAMBRIDGE_IELTS_16_COVER_URL = "/cam 16.jpg";
 
-/** Ảnh nguồn 600×600 có viền trắng hai bên (~13%) — scale để full-bleed; crop giữ lề trên như Cam 17. */
+/** Bìa portrait local — cùng crop full-bleed như Cam 17. */
 const CAMBRIDGE_IELTS_16_COVER_STYLE = {
-  coverImageScale: 1.38,
   coverImageObjectPosition: "40% 39.5%",
-  coverImageTransformOrigin: "40% 52%",
 } as const;
 
 export const CAMBRIDGE_IELTS_15_COVER_URL = "/cam 15.jpg";

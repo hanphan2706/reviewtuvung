@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "partId": "cam16-t1-p4",
+  "audioFile": "cam16-test1-part4.mp3",
+  "durationSeconds": 505.044531,
+  "method": "whisper-local",
+  "preambleSeconds": 91.66,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Ancient philosophy is not just about talking or lecturing, or even reading long, dense books.",
+      "start": 79.42,
+      "end": 84.52,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "In fact, it is something people have used throughout history – to solve their problems and to achieve their greatest triumphs.",
+      "start": 84.52,
+      "end": 91.66,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Specifically, I am referring to Stoicism, which, in my opinion, is the most practical of all philosophies (Q31) and therefore the most appealing.",
+      "start": 91.66,
+      "end": 101.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Stoicism was founded in Ancient Greece by Zeno of Citium in the early 3rd century BC, but was practised by the likes of Epictetus, Cato, Seneca and Marcus Aurelius.",
+      "start": 101.85,
+      "end": 116.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Amazingly, we still have access to these ideas, despite the fact that the most famous Stoics never wrote anything down for publication (Q32).",
+      "start": 116.31,
+      "end": 125.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Cato definitely didn’t.",
+      "start": 125.85,
+      "end": 127.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Marcus Aurelius never intended his Meditations to be anything but personal.",
+      "start": 127.99,
+      "end": 133.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Seneca’s letters were, well, letters and Epictetus’ thoughts come to us by way of a note-taking student.",
+      "start": 133.83,
+      "end": 143.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Stoic principles were based on the idea that its followers could have an unshakable happiness in this life and the key to achieving this was virtue.",
+      "start": 143.65,
+      "end": 155.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "The road to virtue, in turn, lay in understanding that destructive emotions, like anger and jealousy, are under our conscious control – they don’t have to control us, because we can learn to control them.",
+      "start": 155.41,
+      "end": 172.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "In the words of Epictetus: “external events I cannot control, but the choices I make with regard to them, I do control”.",
+      "start": 172.77,
+      "end": 182.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "(Q33)",
+      "start": 182.13,
+      "end": 183.63
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "The modern day philosopher and writer Nassim Nicholas Taleb defines a Stoic as someone who has a different perspective on experience which most of us would see as wholly negative (Q34); a Stoic “transforms fear into caution, pain into transformation, mistakes into initiation and desire into undertaking”.",
+      "start": 183.63,
+      "end": 211.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Using this definition as a model, we can see that throughout the centuries Stoicism has been practised in more recent history by kings, presidents, artists, writers and entrepreneurs.",
+      "start": 211.85,
+      "end": 231.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "The founding fathers of the United States were inspired by the philosophy.",
+      "start": 231.68,
+      "end": 236.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "George Washington was introduced to Stoicism by his neighbours at age seventeen, and later, put on a play based on the life of Cato to inspire his men (Q35).",
+      "start": 236.56,
+      "end": 248.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Thomas Jefferson kept a copy of Seneca beside his bed.",
+      "start": 248.24,
+      "end": 253.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Writers and artists have also been inspired by the stoics.",
+      "start": 253.12,
+      "end": 258.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Eugène Delacroix, the renowned French Romantic artist (known best for his painting Liberty Leading the People) was an ardent Stoic, referring to it as his “consoling religion”.",
+      "start": 258.52,
+      "end": 272.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "The economist Adam Smith’s theories on capitalism were significantly influenced by the Stoicism (Q36) that he studied as a schoolboy, under a teacher who had translated Marcus Aurelius’ works.",
+      "start": 272.54,
+      "end": 287.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Today’s political leaders are no different, with many finding their inspiration from the ancient texts.",
+      "start": 287.14,
+      "end": 294,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Former US president Bill Clinton rereads Marcus Aurelius every single year, and many have compared former President Obama’s calm leadership style to that of Cato.",
+      "start": 294,
+      "end": 308.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Wen Jiabao, the former prime minister of China, claims that Meditations is one of two books he travels with and that he has read it more than one hundred times over the course of his life.",
+      "start": 308.74,
+      "end": 322.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Stoicism had a profound influence on Albert Ellis, who invented Cognitive Behaviour Therapy (Q37), which is used to help people manage their problems by changing the way that they think and behave.",
+      "start": 322.24,
+      "end": 335.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "It’s most commonly used to treat depression.",
+      "start": 335.48,
+      "end": 339.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "The idea is that we can take control of our lives by challenging the irrational beliefs that create our faulty thinking, symptoms and behaviours by using logic instead.",
+      "start": 339.45,
+      "end": 351.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "(Q38)",
+      "start": 351.34,
+      "end": 352.36
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Stoicism has also become popular in the world of business.",
+      "start": 352.36,
+      "end": 357.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Stoic principles can build the resilience and state of mind required to overcome setbacks because Stoics teach turning obstacles into opportunity (Q39).",
+      "start": 357.16,
+      "end": 367.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "A lesson every business entrepreneur needs to learn.",
+      "start": 367.28,
+      "end": 372.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "I would argue that studying Stoicism is as relevant today as it was 2,000 years ago, thanks to its brilliant insights into how to lead a good life (Q40).",
+      "start": 372.36,
+      "end": 385.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "At the very root of the thinking, there is a very simple way of living – control what you can and accept what you can’t.",
+      "start": 385.22,
+      "end": 394.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "This is not as easy as it sounds and will require considerable practice – it can take a lifetime to master.",
+      "start": 394.66,
+      "end": 404.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "The Stoics also believed the most important foundation for a good and happy life is not money, fame, power or pleasure, but having a disciplined and principled character – something which seems to resonate with many people today.",
+      "start": 404.34,
+      "end": 505.045,
+      "preAudio": false
+    }
+  ]
+}

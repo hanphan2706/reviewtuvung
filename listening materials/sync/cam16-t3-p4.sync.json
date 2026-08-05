@@ -1,0 +1,249 @@
+{
+  "version": 1,
+  "partId": "cam16-t3-p4",
+  "audioFile": "cam16-test3-part4.mp3",
+  "durationSeconds": 514.516563,
+  "method": "whisper-local",
+  "preambleSeconds": 88.64,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Good morning everyone.",
+      "start": 78.003,
+      "end": 79.599,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "So today we’re going to look at an important creative activity and that’s hand knitting.",
+      "start": 79.599,
+      "end": 88.64,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Ancient knitted garments have been found in many different countries, showing that knitting is a global activity with a long history.",
+      "start": 88.64,
+      "end": 95.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "When someone says the word ‘knitting’ we might well picture an elderly person - a grandmother perhaps - sitting by the fire knitting (Q31) garments for themselves or other members of the family.",
+      "start": 95.78,
+      "end": 109.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "It’s a homely image, but one that may lead you to feel that knitting is an activity of the past - and, indeed, during the previous decade, it was one of the skills that was predicted to vanish (Q32) from everyday life.",
+      "start": 109.86,
+      "end": 127.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "For although humans have sewn and knitted their own clothing for a very long time, many of these craft-based skills went into decline when industrial machines took over - mainly because they were no longer passed down from one generation to another.",
+      "start": 127.34,
+      "end": 148.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "However, that’s all changing and interest in knitting classes in many countries is actually rising, as more and more people are seeking formal instruction in the skill.",
+      "start": 148.5,
+      "end": 164.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "With that trend, we’re also seeing an increase in the sales figures for knitting equipment.",
+      "start": 164.34,
+      "end": 171.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "(Q34)",
+      "start": 171.46,
+      "end": 172.4
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "So why do people want to be taught to knit at a time when a machine can readily do the job for them?",
+      "start": 172.4,
+      "end": 181.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "The answer is that knitting, as a handicraft, has numerous benefits for those doing it.",
+      "start": 181.94,
+      "end": 189.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Let’s consider what some of these might be.",
+      "start": 189.56,
+      "end": 193.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "While many people knitted garments in the past because they couldn’t afford to buy clothes, it’s still true today that knitting can be helpful if you’re experiencing economic hardship (Q34).",
+      "start": 193.86,
+      "end": 207.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "If you have several children who all need warm winter clothes, knitting may save you a lot of money.",
+      "start": 207.88,
+      "end": 218.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "And the results of knitting your own clothes can be very rewarding, even though the skills you need to get going are really quite basic (Q35) and the financial outlay is minimal.",
+      "start": 218.12,
+      "end": 233.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "But the more significant benefits in today’s world are to do with well-being.",
+      "start": 233.7,
+      "end": 240.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "In a world where it’s estimated that we spend up to nine hours a day online, doing something with our hands that is craft-based makes us feel good.",
+      "start": 240.14,
+      "end": 253.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "It releases us from the stress of a technological, fast-paced life.",
+      "start": 253.06,
+      "end": 264.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Now, let’s look back a bit to early knitting activities. In fact, no one really knows when knitting first began, but archaeological remains have disclosed plenty of information for us to think about.",
+      "start": 264.05,
+      "end": 282.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "One of the interesting things about knitting is that the earliest pieces of clothing that have been found suggest that most of the items produced were round (Q36) rather than flat.",
+      "start": 282.57,
+      "end": 297.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Discoveries from the 3rd and 4th centuries in Egypt show that things like socks and gloves, that were needed to keep hands and feet warm, were knitted in one piece using four or five needles.",
+      "start": 297.75,
+      "end": 314.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "That’s very different from most knitting patterns today, which only require two.",
+      "start": 314.97,
+      "end": 322.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "What’s more, the very first needles people used were hand carved out of wood and other natural materials, like bone (Q37), whereas today’s needles are largely made of steel or plastic and make that characteristic clicking sound when someone’s using them.",
+      "start": 322.31,
+      "end": 344.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Ancient people knitted using yarns made from linen, hemp, cotton and wool, and these were often very rough on the skin (Q38).",
+      "start": 344.19,
+      "end": 356.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "The spinning wheel, which allowed people to make finer yarns and produce much greater quantities of them, led to the dominance of wool in the knitting industry - often favoured for its warmth.",
+      "start": 356.41,
+      "end": 371.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Another interesting fact about knitting is that because it was practised in so many parts of the world for so many purposes, regional differences in style developed (Q39).",
+      "start": 371.45,
+      "end": 386.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "This visual identity has allowed researchers to match bits of knitted clothing that have been unearthed over time to the region from which the wearer came or the job that he or she did.",
+      "start": 386.13,
+      "end": 402.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "As I’ve mentioned, knitting offered people from poor communities a way of making extra money while doing other tasks.",
+      "start": 402.51,
+      "end": 412.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "For many centuries, it seems, men, women and children took every opportunity to knit, for example, while watching over sheep (Q40), walking to market or riding in boats.",
+      "start": 412.21,
+      "end": 427.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "So, let’s move on to take a …",
+      "start": 427.91,
+      "end": 514.517,
+      "preAudio": false
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "version": 1,
+  "partId": "cam16-t4-p3",
+  "audioFile": "cam16-test4-part3.mp3",
+  "durationSeconds": 407.8975,
+  "method": "whisper-local",
+  "preambleSeconds": 45.8,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "JAKE",
+      "text": "Now that we’ve done all the research into bike-sharing schemes in cities around the world, we need to think about how we’re going to organise our report.",
+      "start": 45.8,
+      "end": 54.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "AMY",
+      "text": "Right. I think we should start by talking about the benefits. I mean it’s great that so many cities have introduced these schemes where anyone can pick up a bike from dozens of different locations and hire it for a few hours. It makes riding a bike very convenient for people.",
+      "start": 54.98,
+      "end": 68.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "JAKE",
+      "text": "Yes, but the costs can add up and that puts people on low incomes off in some places.",
+      "start": 68.98,
+      "end": 75.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "AMY",
+      "text": "I suppose so, but if it means more people in general are cycling rather than driving, then because they’re increasing the amount of physical activity they do, it’s good for their health",
+      "start": 75.1,
+      "end": 85.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "JAKE",
+      "text": "OK. But isn’t that of less importance? I mean, doesn’t the impact of reduced emissions on air pollution have a more significant effect on people’s health? (Q21/Q22)",
+      "start": 85.64,
+      "end": 96.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "AMY",
+      "text": "Certainly, in some cities bike-sharing had made a big contribution to that. And also helped to cut the number of cars on the road significantly. (Q21/Q22)",
+      "start": 96.54,
+      "end": 105.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "JAKE",
+      "text": "Which is the main point.",
+      "start": 105.78,
+      "end": 107.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "AMY",
+      "text": "Exactly. But I’d say it’s had less of an impact on noise pollution because there are still loads of buses and lorries around.",
+      "start": 107.48,
+      "end": 115.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "JAKE",
+      "text": "Right.",
+      "start": 115.56,
+      "end": 116.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "AMY",
+      "text": "Shall we quickly discuss the recommendations we’re going to make?",
+      "start": 116.76,
+      "end": 120.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "JAKE",
+      "text": "In order to ensure bike-sharing schemes are successful?",
+      "start": 120.32,
+      "end": 123.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "AMY",
+      "text": "Yes.",
+      "start": 123.18,
+      "end": 123.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "JAKE",
+      "text": "OK. Well, while I think it’s nice to have really state-of-the art bikes with things like GPS, I wouldn’t say they’re absolutely necessary.",
+      "start": 123.86,
+      "end": 133.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "AMY",
+      "text": "But some technical things are really important - like a fully functional app - so people can make payments and book bikes easily (Q23/Q24). Places which haven’t invested in that have really struggled.",
+      "start": 133.66,
+      "end": 146.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "JAKE",
+      "text": "Good point … Some people say there shouldn’t be competing companies offering separate bike-sharing schemes, but in some really big cities, competition’s beneficial and anyway one company might not be able to manage the whole thing.",
+      "start": 146.66,
+      "end": 160.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "AMY",
+      "text": "Right. Deciding how much to invest is a big question. Cities which have opened loads of new bike lanes at the same time as introducing bike-sharing schemes have generally been more successful - but there are examples of successful schemes where this hasn’t happened … What does matter though - is having a big publicity campaign. (Q23/Q24)",
+      "start": 160.54,
+      "end": 182.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "JAKE",
+      "text": "Definitely. If people don’t know how to use the scheme or don’t understand its benefits, they won’t use it. People need a lot of persuasion to stop using their cars.",
+      "start": 182.68,
+      "end": 239.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "AMY",
+      "text": "Shall we look at some examples now? And say what we think is good or bad about them.",
+      "start": 239.74,
+      "end": 245.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "JAKE",
+      "text": "I suppose we should start with Amsterdam as this was one of the first cities to have a bike-sharing scheme.",
+      "start": 245.86,
+      "end": 252.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "AMY",
+      "text": "Yes. There was already a strong culture of cycling here. In a way it’s strange that there was such a demand for bike-sharing because you’d have thought most people would have used their own bikes. (Q25)",
+      "start": 252.66,
+      "end": 264.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "JAKE",
+      "text": "And yet it’s one of the best-used schemes … Dublin’s an interesting example of a success story.",
+      "start": 264.9,
+      "end": 270.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "AMY",
+      "text": "It must be because the public transport system’s quite limited. (Q26)",
+      "start": 270.36,
+      "end": 273.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "JAKE",
+      "text": "Not really - there’s no underground, but there are trams and a good bus network. I’d say price has a lot to do with it. It’s one of the cheapest schemes in Europe to join.",
+      "start": 273.1,
+      "end": 285,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "AMY",
+      "text": "But the buses are really slow - anyway the weather certainly can’t be a factor!",
+      "start": 285,
+      "end": 290.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "JAKE",
+      "text": "No - definitely not. The London scheme’s been quite successful",
+      "start": 290.1,
+      "end": 294.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "AMY",
+      "text": "Yes - it’s been a really good thing for the city. The bikes are popular and the whole system is well maintained but it isn’t expanding quickly enough.",
+      "start": 294.14,
+      "end": 303.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "JAKE",
+      "text": "Basically, not enough’s been spent on increasing the number of cycle lanes (Q27). Hopefully that’ll change.",
+      "start": 303.76,
+      "end": 309.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "AMY",
+      "text": "Yes. Now what about outside Europe?",
+      "start": 309.38,
+      "end": 313.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "JAKE",
+      "text": "Well bike-sharing schemes have taken off in places like Buenos Aires.",
+      "start": 313.9,
+      "end": 317.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "AMY",
+      "text": "Mmm. They built a huge network of cycle lanes to support the introduction of the scheme there, didn’t they? It attracted huge numbers of cyclists where previously there were hardly any.",
+      "start": 317.64,
+      "end": 328.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "JAKE",
+      "text": "An example of good planning. (Q28)",
+      "start": 328.66,
+      "end": 330.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "AMY",
+      "text": "Absolutely. New York is a good example of how not to introduce a scheme. When they launched it, it was more than ten times the price of most other schemes.",
+      "start": 330.7,
+      "end": 341.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "JAKE",
+      "text": "More than it costs to take a taxi, Crazy (Q29). I think the organisers lacked vision and ambition there.",
+      "start": 341.24,
+      "end": 348.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "AMY",
+      "text": "I think so too. Sydney would be a good example to use. I would have expected it to have grown pretty quickly here. (Q30)",
+      "start": 348.22,
+      "end": 356.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "JAKE",
+      "text": "Yes. I can’t quite work out why it hasn’t been an instant success like some of the others. It’s a shame really.",
+      "start": 356.38,
+      "end": 363.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "AMY",
+      "text": "I know. OK so now we’ve thought about …",
+      "start": 363.86,
+      "end": 407.898,
+      "preAudio": false
+    }
+  ]
+}

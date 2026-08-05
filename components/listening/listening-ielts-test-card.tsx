@@ -26,7 +26,12 @@ export function ListeningIeltsTestCard({
           src={test.coverImageUrl}
           alt=""
           fill
-          className="object-cover object-center"
+          className="object-cover"
+          style={
+            test.coverImageObjectPosition
+              ? { objectPosition: test.coverImageObjectPosition }
+              : { objectPosition: "center" }
+          }
           sizes="(max-width:768px) 100vw, 33vw"
         />
       </div>

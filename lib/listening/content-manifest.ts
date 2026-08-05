@@ -12,6 +12,7 @@ import {
   BASIC_IELTS_LISTENING_META_PILL,
   type BasicIeltsListeningLessonCatalog,
 } from "@/lib/listening/basic-ielts-listening-catalog";
+import { CAM16_LISTENING_PARTS } from "@/lib/listening/cam16-listening-parts";
 import { CAM17_LISTENING_PARTS } from "@/lib/listening/cam17-listening-parts";
 import { CAM21_LISTENING_PARTS } from "@/lib/listening/cam21-listening-parts";
 import { basicIeltsListeningAudioApiPath } from "@/lib/listening/listening-materials-urls";
@@ -98,6 +99,26 @@ export type ListeningTestContext = {
 };
 
 export const LISTENING_TEST_CONTEXTS: Record<string, ListeningTestContext> = {
+  "cam16-t1": {
+    predictTitle: "Cam 16 — Test 1",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là workshop kỹ thuật cho trẻ, công ty Stevenson’s, dự án nghệ thuật hoặc chủ nghĩa Khắc kỷ — không cần đoán đúng chi tiết.",
+  },
+  "cam16-t2": {
+    predictTitle: "Cam 16 — Test 2",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là số hoá ảnh, trường Dartfield House, bài tập về giấc ngủ hoặc lợi ích của khiêu vũ — không cần đoán đúng chi tiết.",
+  },
+  "cam16-t3": {
+    predictTitle: "Cam 16 — Test 3",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là trại đạp xe thiếu nhi, nghề nông/làm vườn, thuyết trình béo phì hoặc đan len thủ công — không cần đoán đúng chi tiết.",
+  },
+  "cam16-t4": {
+    predictTitle: "Cam 16 — Test 4",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là thuê nhà nghỉ, báo cáo giao thông, chia sẻ xe đạp đô thị hoặc chim dodo tuyệt chủng — không cần đoán đúng chi tiết.",
+  },
   "cam17-t1": {
     predictTitle: "Cam 17 — Test 1",
     predictBlurb:
@@ -293,6 +314,7 @@ export function listeningTestTotalMinutes(parts: readonly ListeningPartMeta[]): 
 export const LISTENING_PARTS_PILOT: readonly ListeningPartMeta[] = [
   ...CAM21_LISTENING_PARTS,
   ...CAM17_LISTENING_PARTS,
+  ...CAM16_LISTENING_PARTS,
   {
     id: "cam20-t1-p1",
     slug: "restaurant-recommendations",

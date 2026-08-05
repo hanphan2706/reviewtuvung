@@ -154,6 +154,54 @@ const LISTENING_PART_IMAGES: Record<string, string> = {
   "cam18-t4-p4":
     "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=80&auto=format&fit=crop",
   /** Cam 17 — Buckworth Conservation Group */
+  /** Cam 16 — Children’s Engineering Workshops */
+  "cam16-t1-p1":
+    "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80&auto=format&fit=crop",
+  /** Stevenson’s work-experience site */
+  "cam16-t1-p2":
+    "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1200&q=80&auto=format&fit=crop",
+  /** Jess and Tom art projects */
+  "cam16-t1-p3":
+    "https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=1200&q=80&auto=format&fit=crop",
+  /** Stoicism */
+  "cam16-t1-p4":
+    "https://images.unsplash.com/photo-1554907984-15263bfd63bd?w=1200&q=80&auto=format&fit=crop",
+  /** Copying photos to digital format */
+  "cam16-t2-p1":
+    "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1200&q=80&auto=format&fit=crop",
+  /** Dartfield House school / Food Hall */
+  "cam16-t2-p2":
+    "https://images.unsplash.com/photo-1544148103-0773bf10d330?w=1200&q=80&auto=format&fit=crop",
+  /** Sleep and dreams assignment */
+  "cam16-t2-p3":
+    "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?w=1200&q=80&auto=format&fit=crop",
+  /** Health benefits of dance */
+  "cam16-t2-p4":
+    "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=1200&q=80&auto=format&fit=crop",
+  /** Junior Cycle Camp */
+  "cam16-t3-p1":
+    "https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=1200&q=80&auto=format&fit=crop",
+  /** Agriculture and horticulture careers */
+  "cam16-t3-p2":
+    "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=1200&q=80&auto=format&fit=crop",
+  /** Food and obesity presentation */
+  "cam16-t3-p3":
+    "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1200&q=80&auto=format&fit=crop",
+  /** Hand knitting */
+  "cam16-t3-p4":
+    "https://images.unsplash.com/photo-1584992236310-6edddc08acff?w=1200&q=80&auto=format&fit=crop",
+  /** Holiday rental cottages */
+  "cam16-t4-p1":
+    "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=1200&q=80&auto=format&fit=crop",
+  /** Traffic / recreation ground */
+  "cam16-t4-p2":
+    "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200&q=80&auto=format&fit=crop",
+  /** City bike-sharing schemes */
+  "cam16-t4-p3":
+    "https://images.unsplash.com/photo-1571068316344-75bc76f77890?w=1200&q=80&auto=format&fit=crop",
+  /** Extinction of the dodo */
+  "cam16-t4-p4":
+    "https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=1200&q=80&auto=format&fit=crop",
   "cam17-t1-p1":
     "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=1200&q=80&auto=format&fit=crop",
   /** Boat Trip Round Tasmania */

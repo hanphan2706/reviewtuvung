@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "partId": "cam16-t2-p3",
+  "audioFile": "cam16-test2-part3.mp3",
+  "durationSeconds": 416.221406,
+  "method": "whisper-local",
+  "preambleSeconds": 52.93,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "SUSIE",
+      "text": "So Luke, for our next psychology assignment we have to do something on sleep and dreams.",
+      "start": 52.93,
+      "end": 59.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "LUKE",
+      "text": "Right. I’ve just read an article suggesting why we tend to forget most of our dreams soon after we wake up. I mean, most of my dreams aren’t that interesting anyway, but what it said was that if we remembered everything, we might get mixed up about what actually happened and what we dreamed (Q21). So it’s a sort of protection. I hadn’t heard that idea before. I’d always assumed that it was just that we didn’t have room in our memories for all that stuff.",
+      "start": 59.61,
+      "end": 90.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "SUSIE",
+      "text": "Me too. What do you think about the idea that our dreams may predict the future?",
+      "start": 90.09,
+      "end": 96.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "LUKE",
+      "text": "It’s a belief that you get all over the world.",
+      "start": 96.35,
+      "end": 99.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "SUSIE",
+      "text": "Yeah, lots of people have a story of it happening to them, but the explanation I’ve read is that for each dream that comes true, we have thousands that don’t (Q22), but we don’t notice those, we don’t even remember them. We just remember the ones where something in the real world, like a view or an action, happens to trigger a dream memory.",
+      "start": 99.75,
+      "end": 122.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "LUKE",
+      "text": "Right. So it’s just a coincidence really. Something else I read about is what they call segmented sleeping. That’s a theory that hundreds of years ago, people used to get up in the middle of the night and have a chat or something to eat, then go back to bed. So I tried it myself.",
+      "start": 122.53,
+      "end": 142.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "SUSIE",
+      "text": "Why?",
+      "start": 142.75,
+      "end": 143.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "LUKE",
+      "text": "Well it’s meant to make you more creative. I don’t know why. But I gave it up after a week. It just didn’t fit in with my lifestyle.",
+      "start": 143.97,
+      "end": 153.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "SUSIE",
+      "text": "But most pre-school children have a short sleep in the day don’t they? There was an experiment some students did here last term to see at what age kids should stop having naps. But they didn’t really find an answer (Q23). They spent a lot of time working out the most appropriate methodology, but the results didn’t seem to show any obvious patterns.",
+      "start": 153.49,
+      "end": 175.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "LUKE",
+      "text": "Right. Anyway, let’s think about our assignment. Last time I had problems with the final stage, where we had to describe and justify how successful we thought we’d been (Q24). I struggled a bit with the action plan too.",
+      "start": 175.63,
+      "end": 190.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "SUSIE",
+      "text": "I was OK with the planning, but I got marked down for the self-assessment as well. And I had big problems with the statistical stuff, that’s where I really lost marks.",
+      "start": 190.75,
+      "end": 202.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "LUKE",
+      "text": "Right.",
+      "start": 202.83,
+      "end": 250.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "SUSIE",
+      "text": "So shall we plan what we have to do for this assignment?",
+      "start": 250.66,
+      "end": 254.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "LUKE",
+      "text": "OK.",
+      "start": 254.74,
+      "end": 255.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "SUSIE",
+      "text": "First, we have to decide on our research question. So how about ‘Is there a relationship between hours of sleep and number of dreams?’",
+      "start": 255.54,
+      "end": 267.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "LUKE",
+      "text": "OK. Then we need to think about who we’ll do they study on. About 12 people?",
+      "start": 267.64,
+      "end": 274.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "SUSIE",
+      "text": "Right. And shall we use other psychology students?",
+      "start": 274.72,
+      "end": 279.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "LUKE",
+      "text": "Let’s use people from a different department. What about history? (Q25)",
+      "start": 279.28,
+      "end": 284.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "SUSIE",
+      "text": "Yes, they might have interesting dreams! Or literature students?",
+      "start": 284.58,
+      "end": 290.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "LUKE",
+      "text": "I don’t really know any.",
+      "start": 290.12,
+      "end": 291.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "SUSIE",
+      "text": "OK, forget that idea. Then we have to think about our methodology. So we could use observation, but that doesn’t seem appropriate.",
+      "start": 291.82,
+      "end": 302.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "LUKE",
+      "text": "No. it needs to be self-reporting I think. And we could ask them to answer questions online.",
+      "start": 302.34,
+      "end": 310.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "SUSIE",
+      "text": "But in this case, paper might be better (Q26) as they’ll be doing it straight after they wake up … in fact while they’re still half-asleep.",
+      "start": 310.06,
+      "end": 320.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "LUKE",
+      "text": "Right. And we’ll have to check the ethical guidelines (Q27) for this sort of research.",
+      "start": 320.08,
+      "end": 326.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "SUSIE",
+      "text": "Mm, because our experiment involves humans, so there are special regulations.",
+      "start": 326.3,
+      "end": 331.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "LUKE",
+      "text": "Yes, I had a look at those for another assignment I did. There’s a whole section on risk assessment, and another section on making sure they aren’t put under any unnecessary stress. (Q28)",
+      "start": 331.4,
+      "end": 345,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "SUSIE",
+      "text": "Let’s hope they don’t have any bad dreams!",
+      "start": 345,
+      "end": 348.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "LUKE",
+      "text": "Yeah.",
+      "start": 348.34,
+      "end": 349.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "SUSIE",
+      "text": "Then when we’ve collected all our data we have to analyse it and calculate the correlation between our two variables, that’s time sleeping and number of dreams and then present our results visually in a graph. (Q29)",
+      "start": 349.58,
+      "end": 366.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "LUKE",
+      "text": "Right. And the final thing is to think about our research and evaluate it (Q30). So that seems quite straightforward.",
+      "start": 366.18,
+      "end": 373.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "SUSIE",
+      "text": "Yeah. So now let’s …",
+      "start": 373.9,
+      "end": 416.221,
+      "preAudio": false
+    }
+  ]
+}

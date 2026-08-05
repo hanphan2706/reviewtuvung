@@ -1,0 +1,314 @@
+{
+  "version": 1,
+  "partId": "cam16-t1-p1",
+  "audioFile": "cam16-test1-part1.mp3",
+  "durationSeconds": 422.040313,
+  "method": "whisper-local",
+  "preambleSeconds": 119.079,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "SARAH",
+      "text": "Hello. Children’s Engineering Workshops.",
+      "start": 101.508,
+      "end": 102.868,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "FATHER",
+      "text": "Oh hello. I wanted some information about the workshops in the school holidays.",
+      "start": 102.868,
+      "end": 107.288,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "SARAH",
+      "text": "Sure.",
+      "start": 107.288,
+      "end": 107.738,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": "FATHER",
+      "text": "I have two daughters who are interested. The younger one’s Lydia, she’s four - do you take children as young as that?",
+      "start": 107.738,
+      "end": 114.893,
+      "preAudio": true
+    },
+    {
+      "id": "cue-5",
+      "speaker": "SARAH",
+      "text": "Yes, our Tiny Engineers workshop is for four to five-year-olds.",
+      "start": 114.893,
+      "end": 116.923,
+      "preAudio": true
+    },
+    {
+      "id": "cue-6",
+      "speaker": "FATHER",
+      "text": "What sorts of activities do they do?",
+      "start": 116.923,
+      "end": 119.079,
+      "preAudio": true
+    },
+    {
+      "id": "cue-7",
+      "speaker": "SARAH",
+      "text": "All sorts. For example, they work together to design a special cover that goes round an egg (Q1), so that when it’s inside they can drop it from a height and it doesn’t break. Well, sometimes it does break but that’s part of the fun!",
+      "start": 119.079,
+      "end": 130.819,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "FATHER",
+      "text": "Right. And Lydia loves building things. Is there any opportunity for her to do that?",
+      "start": 130.819,
+      "end": 136.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "SARAH",
+      "text": "Well, they have a competition to see who can make the highest tower (Q2). You’d be amazed how high they can go.",
+      "start": 136.75,
+      "end": 144.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "FATHER",
+      "text": "Right.",
+      "start": 144.47,
+      "end": 145.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "SARAH",
+      "text": "But they’re learning all the time as well as having fun. For example, one thing they do is to design and build a car (Q3) that’s attached to a balloon, and the force of the air in that actually powers the car and makes it move along. They go really fast too.",
+      "start": 145.41,
+      "end": 163.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "FATHER",
+      "text": "OK, well, all this sounds perfect.",
+      "start": 163.79,
+      "end": 207.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "FATHER",
+      "text": "Now Carly, that’s my older daughter, has just had her seventh birthday, so presumably she’d be in a different group?",
+      "start": 207.68,
+      "end": 223.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "SARAH",
+      "text": "Yes, she’d be in the Junior Engineers. That’s for children from six to eight.",
+      "start": 223.26,
+      "end": 229.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "FATHER",
+      "text": "And do they do the same sorts of activities?",
+      "start": 229.98,
+      "end": 233.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "SARAH",
+      "text": "Some are the same, but a bit more advanced. So they work out how to build model vehicles, things like cars and trucks, but also how to construct animals (Q4) using the same sorts of material and technique, and then they learn how they can program them and make them move.",
+      "start": 233.04,
+      "end": 253.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "FATHER",
+      "text": "So they learn a bit of coding?",
+      "start": 253.3,
+      "end": 255.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "SARAH",
+      "text": "They do. They pick it up really quickly. We’re there to help if they need it, but they learn from one another too.",
+      "start": 255.68,
+      "end": 263.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "FATHER",
+      "text": "Right. And do they have competition too?",
+      "start": 263.5,
+      "end": 267.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "SARAH",
+      "text": "Yes, with the Junior Engineers, it’s to use recycled materials like card and wood to build a bridge (Q5), and the longest one gets a prize.",
+      "start": 267.38,
+      "end": 278.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "FATHER",
+      "text": "That sounds fun. I wouldn’t mind doing that myself!",
+      "start": 278.34,
+      "end": 281.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "SARAH",
+      "text": "Then they have something a bit different, which is to think up an idea for a five-minute movie (Q6) and then film it, using special animation software. You’d be amazed what they come up with.",
+      "start": 281.9,
+      "end": 295.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "FATHER",
+      "text": "And of course, that’s something they can put on their phone and take home to show all their friends.",
+      "start": 295.52,
+      "end": 301.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "SARAH",
+      "text": "Exactly. And then they also build a robot in the shape of a human, and they decorate (Q7) it and program it so that it can move its arms and legs.",
+      "start": 301.98,
+      "end": 312.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "FATHER",
+      "text": "Perfect. So, is it the same price as the Tiny Engineers?",
+      "start": 312.52,
+      "end": 316.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "SARAH",
+      "text": "It’s just a bit more: £50 for the five weeks.",
+      "start": 316.9,
+      "end": 320.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "FATHER",
+      "text": "And are the classes on a Monday, too?",
+      "start": 320.98,
+      "end": 323.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "SARAH",
+      "text": "They used to be, but we found it didn’t give our staff enough time to clear up after the first workshop, so we moved them to Wednesdays (Q8). The classes are held in the morning from ten to eleven.",
+      "start": 323.7,
+      "end": 337.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "FATHER",
+      "text": "OK. That’s better for me actually. And what about the location? Where exactly are the workshops held?",
+      "start": 337.2,
+      "end": 345.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "SARAH",
+      "text": "They’re in building 10A - there’s a big sign on the door, you can’t miss it, and that’s in Fradstone (Q9) Industrial Estate.",
+      "start": 345.06,
+      "end": 353.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "FATHER",
+      "text": "Sorry?",
+      "start": 353.38,
+      "end": 355.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "SARAH",
+      "text": "Fradstone - that’s F-R-A-D-S-T-O-N-E.",
+      "start": 355.68,
+      "end": 365.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "FATHER",
+      "text": "And that’s in Grasford, isn’t it?",
+      "start": 365.04,
+      "end": 367.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "SARAH",
+      "text": "Yes, up past the station.",
+      "start": 367.78,
+      "end": 370.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "FATHER",
+      "text": "And will I have any parking (Q10) problems there?",
+      "start": 370.1,
+      "end": 373.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "SARAH",
+      "text": "No, there’s always plenty available. So would you like to enrol Lydia and Carly now?",
+      "start": 373.16,
+      "end": 379.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "FATHER",
+      "text": "OK.",
+      "start": 379.1,
+      "end": 379.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "SARAH",
+      "text": "So can I have your full name …",
+      "start": 379.96,
+      "end": 422.04,
+      "preAudio": false
+    }
+  ]
+}

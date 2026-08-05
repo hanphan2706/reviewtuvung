@@ -11,15 +11,17 @@ import { listeningPartIdForTest, type ListeningIeltsTestId } from "../lib/listen
 
 import { getListeningPartQnaRef } from "../lib/listening/listening-qna-catalog";
 import { LISTENING_MATERIALS_ROOT } from "../lib/listening/listening-materials-paths";
+import { buildFlowDetailQuestionsFromQnaPart } from "../lib/listening/build-flow-detail-from-qna";
 import {
   getListeningQnaPart,
   parseListeningQnaText,
+  type ListeningQnaPart,
 } from "../lib/listening/parse-listening-qna";
 import { sanitizeListeningTranscript } from "../lib/sanitize-listening-transcript";
 import { splitTranscriptByPart } from "../lib/listening/split-transcript-parts";
 import type { ListeningFlowLessonContent } from "../lib/listening/tactics-basic-flow-types";
 
-type ExamSlug = "cam18" | "cam20" | "cam21" | "cam17";
+type ExamSlug = "cam18" | "cam20" | "cam21" | "cam17" | "cam16";
 
 const WRONG_GIST = [
   {
@@ -48,8 +50,8 @@ function parseArgs(argv: string[]): { exam: ExamSlug; tests: number[] } {
     if (a === "--all-tests") allTests = true;
   }
 
-  if (!["cam18", "cam20", "cam21", "cam17"].includes(exam)) {
-    throw new Error("--exam must be cam18, cam20, cam21 or cam17");
+  if (!["cam18", "cam20", "cam21", "cam17", "cam16"].includes(exam)) {
+    throw new Error("--exam must be cam18, cam20, cam21, cam17 or cam16");
   }
 
   const tests = allTests ? [1, 2, 3, 4] : [test];
@@ -150,6 +152,73 @@ const CAM17_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
   },
 };
 
+const CAM16_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
+  "cam16-t1-p1": {
+    titleVi: "Workshop kỹ thuật cho trẻ",
+    summaryVi: "Trung tâm mô tả lớp Tiny/Junior Engineers, học phí, lịch học và địa điểm.",
+  },
+  "cam16-t1-p2": {
+    titleVi: "Thực tập tại Stevenson’s",
+    summaryVi: "Bài nói về lịch sử công ty Stevenson’s và sơ đồ khuôn viên cho nhóm thực tập.",
+  },
+  "cam16-t1-p3": {
+    titleVi: "Dự án nghệ thuật của Jess và Tom",
+    summaryVi: "Sinh viên ôn giai đoạn mở đầu dự án nghệ thuật và gán ý nghĩa cá nhân cho các bức tranh.",
+  },
+  "cam16-t1-p4": {
+    titleVi: "Chủ nghĩa Khắc kỷ",
+    summaryVi: "Bài giảng về nguyên tắc Stoic và ảnh hưởng tới lãnh đạo, CBT và đời sống hiện đại.",
+  },
+  "cam16-t2-p1": {
+    titleVi: "Số hoá ảnh sang định dạng số",
+    summaryVi: "Picturerep giải thích giới hạn kích thước ảnh, giá, dịch vụ phục hồi và cách gửi đơn.",
+  },
+  "cam16-t2-p2": {
+    titleVi: "Trường Dartfield House",
+    summaryVi: "Cập nhật nhà trường về mặt bằng, điểm phục vụ Food Hall và lớp ngoại khoá.",
+  },
+  "cam16-t2-p3": {
+    titleVi: "Bài tập về ngủ và mơ",
+    summaryVi: "Luke và Susie lập kế hoạch nghiên cứu giấc ngủ, từ mẫu sinh viên đến phân tích kết quả.",
+  },
+  "cam16-t2-p4": {
+    titleVi: "Lợi ích sức khoẻ của khiêu vũ",
+    summaryVi: "Bài giảng về khiêu vũ hỗ trợ tâm trạng, người lớn tuổi và nghiên cứu Zumba.",
+  },
+  "cam16-t3-p1": {
+    titleVi: "Trại đạp xe thiếu nhi",
+    summaryVi: "Phụ huynh đặt trại kỹ năng và an toàn xe đạp: giảng viên, đồ mang theo và ngày đầu.",
+  },
+  "cam16-t3-p2": {
+    titleVi: "Nghề nông nghiệp và làm vườn",
+    summaryVi: "Megan nêu ưu nhược điểm làm việc ngoài trời và nối các tin tuyển dụng.",
+  },
+  "cam16-t3-p3": {
+    titleVi: "Thuyết trình thực phẩm và béo phì",
+    summaryVi: "Adam và Rosie so sánh thí nghiệm thực phẩm và sắp xếp bài thuyết trình về béo phì.",
+  },
+  "cam16-t3-p4": {
+    titleVi: "Đan len thủ công",
+    summaryVi: "Bài giảng về sự trở lại của đan len, lợi ích và dụng cụ, sợi, kiểu dáng thời kỳ đầu.",
+  },
+  "cam16-t4-p1": {
+    titleVi: "Thuê nhà nghỉ dưỡng",
+    summaryVi: "Cuộc gọi hỏi Granary và Chervil Cottage: ngày, giá, tiện nghi và hạn thanh toán.",
+  },
+  "cam16-t4-p2": {
+    titleVi: "Báo cáo giao thông và đường sá",
+    summaryVi: "Báo cáo hội đồng về lo ngại giao thông, đường xe đạp và sơ đồ khu vui chơi.",
+  },
+  "cam16-t4-p3": {
+    titleVi: "Chia sẻ xe đạp đô thị",
+    summaryVi: "Sinh viên cân nhắc lợi ích bike-share và so sánh các thành phố từ Amsterdam đến Sydney.",
+  },
+  "cam16-t4-p4": {
+    titleVi: "Sự tuyệt chủng của chim dodo",
+    summaryVi: "Bài giảng về lịch sử dodo ở Mauritius, đặc điểm cơ thể và nguyên nhân tuyệt chủng.",
+  },
+};
+
 /** VI labels for Cam 21 hub titles/summaries (generated flow). */
 const CAM21_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
   "cam21-t1-p1": {
@@ -218,7 +287,21 @@ const CAM21_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
   },
 };
 
-function extractMarkedDetails(transcript: string, max = 6): {
+function cleanTranscriptAnswer(text: string): string {
+  return text
+    .replace(/\(\s*Q\s*\d+\s*\)/gi, "")
+    .replace(/\bQ\s*\d+\b/gi, "")
+    .replace(/\(\s*$/g, "")
+    .replace(/[–—-]\s*$/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function extractMarkedDetails(
+  transcript: string,
+  max = 6,
+  qnaPart: ListeningQnaPart | null = null,
+): {
   key: string;
   conversationEn: string;
   conversationVi: string;
@@ -236,29 +319,39 @@ function extractMarkedDetails(transcript: string, max = 6): {
     const text = speakerMatch?.[2] ?? line;
     const speaker = speakerMatch?.[1] ?? "NARRATOR";
 
-    if (text.includes("?") && !/\bQ\d+/i.test(text)) {
-      pendingQuestion = text.replace(/\s*Q\d+.*$/i, "").trim();
+    if (text.includes("?") && !/\bQ\s*\d+/i.test(text)) {
+      pendingQuestion = text.replace(/\s*Q\s*\d+.*$/i, "").trim();
     }
 
     const marks = [...text.matchAll(/\bQ\s*(\d+)/gi)];
     if (marks.length === 0) continue;
 
-    for (const m of marks) {
-      const qNum = m[1]!;
-      const before = text.slice(0, m.index).replace(/^[^:]+:\s*/, "").trim();
-      const answer = before
-        .replace(/[–—-]\s*$/, "")
-        .replace(/\s+/g, " ")
-        .trim();
+    for (const match of marks) {
+      const qNum = match[1];
+      if (!qNum) continue;
+      const qnaAnswer = qnaPart?.answers[qNum];
+      const before = text.slice(0, match.index ?? 0).replace(/^[^:]+:\s*/, "").trim();
+      const wordBefore = cleanTranscriptAnswer(before).split(/\s+/).filter(Boolean).at(-1) ?? "";
+      const answer = (qnaAnswer ?? wordBefore).trim();
       if (!answer || answer.length < 2) continue;
 
-      const question = pendingQuestion || `What is the answer to question ${qNum}?`;
+      let question = pendingQuestion;
+      pendingQuestion = "";
+      if (!question) {
+        const cloze = text
+          .replace(/\(\s*Q\s*\d+\s*\)/gi, "___")
+          .replace(/\bQ\s*\d+\b/gi, "___")
+          .replace(/\s+/g, " ")
+          .trim();
+        question = cloze.includes("___") ? `Complete: ${cloze}` : `What is the answer to question ${qNum}?`;
+      }
+
       out.push({
         key: `p-q${qNum}`,
         conversationEn: `${speaker} — Q${qNum}`,
         conversationVi: `${speaker} — câu ${qNum}`,
-        questionEn: question.endsWith("?") ? question : `${question}?`,
-        questionVi: question.endsWith("?") ? question : `${question}?`,
+        questionEn: question.endsWith("?") || question.startsWith("Complete:") ? question : `${question}?`,
+        questionVi: question.endsWith("?") || question.startsWith("Complete:") ? question : `${question}?`,
         answerEn: answer,
         answerVi: answer,
       });
@@ -278,28 +371,24 @@ function loadQnaPart(testId: ListeningIeltsTestId, part: number) {
   return getListeningQnaPart(parsed, part);
 }
 
-function detailFromQnaAnswers(
-  testId: ListeningIeltsTestId,
-  part: number,
-  need: number,
+function mergeDetailQuestions(
+  fromQna: ReturnType<typeof extractMarkedDetails>,
+  fromTranscript: ReturnType<typeof extractMarkedDetails>,
 ): ReturnType<typeof extractMarkedDetails> {
-  const qnaPart = loadQnaPart(testId, part);
-  if (!qnaPart) return [];
+  const out = [...fromQna];
+  const seenQuestions = new Set(out.map((item) => item.questionEn.trim().toLowerCase()));
+  const seenKeys = new Set(out.map((item) => item.key));
 
-  const entries = Object.entries(qnaPart.answers)
-    .filter(([k]) => /^\d+$/.test(k))
-    .sort(([a], [b]) => Number(a) - Number(b))
-    .slice(0, need);
+  for (const item of fromTranscript) {
+    if (out.length >= 6) break;
+    const questionKey = item.questionEn.trim().toLowerCase();
+    if (seenKeys.has(item.key) || seenQuestions.has(questionKey)) continue;
+    seenKeys.add(item.key);
+    seenQuestions.add(questionKey);
+    out.push(item);
+  }
 
-  return entries.map(([num, ans]) => ({
-    key: `exam-${num}`,
-    conversationEn: `Exam question ${num}`,
-    conversationVi: `Câu hỏi đề ${num}`,
-    questionEn: `What is the correct answer for question ${num} in this part?`,
-    questionVi: `Đáp án đúng cho câu ${num} trong part này là gì?`,
-    answerEn: ans,
-    answerVi: ans,
-  }));
+  return out;
 }
 
 function buildPartContent(
@@ -314,7 +403,14 @@ function buildPartContent(
 
   const transcript = loadTranscriptPart(exam, test, part);
   const siblings = siblingParts(exam, test, part);
-  const flowVi = exam === "cam21" ? CAM21_FLOW_VI : exam === "cam17" ? CAM17_FLOW_VI : undefined;
+  const flowVi =
+    exam === "cam21"
+      ? CAM21_FLOW_VI
+      : exam === "cam17"
+        ? CAM17_FLOW_VI
+        : exam === "cam16"
+          ? CAM16_FLOW_VI
+          : undefined;
   const vi = flowVi?.[partId];
 
   const predictionOptions = [
@@ -355,11 +451,10 @@ function buildPartContent(
     })),
   ];
 
-  const fromTranscript = extractMarkedDetails(transcript, 6);
-  const fromQna = detailFromQnaAnswers(testId, part, 6);
-  const detailQuestions = [...fromTranscript, ...fromQna]
-    .filter((item, index, arr) => arr.findIndex((x) => x.key === item.key) === index)
-    .slice(0, 6);
+  const qnaPart = loadQnaPart(testId, part);
+  const fromQna = qnaPart ? buildFlowDetailQuestionsFromQnaPart(qnaPart, 6) : [];
+  const fromTranscript = fromQna.length >= 4 ? [] : extractMarkedDetails(transcript, 6, qnaPart);
+  const detailQuestions = mergeDetailQuestions(fromQna, fromTranscript);
 
   while (detailQuestions.length < 4) {
     detailQuestions.push({

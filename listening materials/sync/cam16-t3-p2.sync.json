@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "partId": "cam16-t3-p2",
+  "audioFile": "cam16-test3-part2.mp3",
+  "durationSeconds": 408.001875,
+  "method": "whisper-local",
+  "preambleSeconds": 58.03,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Hello everyone. My name’s Megan Baker and I’m a recruitment consultant at AVT Recruitment specialists.",
+      "start": 51.066,
+      "end": 58.03,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Now, our company specialises in positions that involve working in the agriculture and horticulture sectors, so that’s fresh food production, garden and park maintenance and so on.",
+      "start": 58.03,
+      "end": 67.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "And these sectors do provide some very special career opportunities.",
+      "start": 67.21,
+      "end": 71.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "For a start, they often offer opportunities for those who don’t want to be stuck with a 40-hour week, but need to juggle work with other responsibilities (Q11/Q12) such as child care - and this is very important for many of our recruits.",
+      "start": 71.55,
+      "end": 87.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Some people like working in a rural setting, surrounded by plants and trees instead of buildings, although we can’t guarantee that.",
+      "start": 87.73,
+      "end": 97.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "But there are certainly health benefits, especially in jobs where you’re not sitting all day looking at a screen (Q11/Q12) - a big plus for many people.",
+      "start": 97.37,
+      "end": 107.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Salaries can sometimes be good too, although there’s a lot of variety here.",
+      "start": 107.13,
+      "end": 112.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "And you may have the opportunity in some types of jobs for travel overseas, although that obviously depends on the job, and not everyone is keen to do it.",
+      "start": 112.99,
+      "end": 124.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Of course, working outdoors does have its challenges.",
+      "start": 124.19,
+      "end": 128.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "It’s fine in summer, but can be extremely unpleasant when it’s cold and windy (Q13/Q14).",
+      "start": 128.59,
+      "end": 134.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "You may need to be pretty fit for some jobs, though with modern technology that’s not as important as it once was.",
+      "start": 134.69,
+      "end": 142.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "And standards of health and safety are much higher now than they used to be, so there are fewer work-related accidents.",
+      "start": 142.93,
+      "end": 150.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "But if you like a lively city environment surrounded by lots of people, these jobs are probably not for you - they’re often in pretty remote areas (Q13/Q14).",
+      "start": 150.93,
+      "end": 162.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "And some people worry about finding a suitable place to live, but in our experience, this usually turns out fine.",
+      "start": 162.29,
+      "end": 216.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Now let me tell you about some of the exciting jobs that we have on our books right now.",
+      "start": 216.93,
+      "end": 223.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "One is for a fresh food commercial manager.",
+      "start": 223.73,
+      "end": 227.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Our client here is a very large fresh food producer supplying a range of top supermarkets.",
+      "start": 227.29,
+      "end": 234.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "They operate in a very fast-paced environment (Q15) with low profit margins - the staff there work hard, but they play hard as well, so if you’ve a sociable personality this may be for you.",
+      "start": 234.65,
+      "end": 247.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "We have an exciting post as an agronomist advising farmers on issues such as crop nutrition, protection against pests, and the latest legislation on farming and agricultural practices.",
+      "start": 247.41,
+      "end": 262.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "There are good opportunities for the right person to quickly make their way up the career ladder (Q16), but a deep knowledge of the agricultural sector is expected of applicants.",
+      "start": 262.13,
+      "end": 274.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "A leading supermarket is looking for a fresh produce buyer who is available for a 12-month maternity cover (Q17) contract.",
+      "start": 274.61,
+      "end": 283.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "You need to have experience in administration, planning and buying in the fresh produce industry, and in return will receive a very competitive salary.",
+      "start": 283.55,
+      "end": 296.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "We have also received a request for a sales manager for a chain of garden centres.",
+      "start": 296.13,
+      "end": 301.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "You will be visiting centres in the region (Q18) to ensure their high levels of customer service are maintained.",
+      "start": 301.91,
+      "end": 309.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "This post is only suitable for someone who is prepared to live in the region.",
+      "start": 309.11,
+      "end": 315.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "There is also a vacancy for a tree technician to carry out tree cutting, forestry and conservation work.",
+      "start": 315.01,
+      "end": 323.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Candidates must have a clean driving licence and have training in safety procedures.",
+      "start": 323.69,
+      "end": 330.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "A year’s experience would be preferred but the company might be prepared to consider someone who has just completed an appropriate training course.",
+      "start": 330.23,
+      "end": 339.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "(Q19)",
+      "start": 339.13,
+      "end": 340.25
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Finally, we have a position for a farm worker.",
+      "start": 340.25,
+      "end": 344.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "This will involve a wide range of farm duties including crop sowing and harvesting, machine maintenance and animal care.",
+      "start": 344.33,
+      "end": 354.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Perks of the job include the possibility of renting a small cottage on the estate (Q20), and the chance to earn a competitive salary.",
+      "start": 354.39,
+      "end": 363.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "A driving licence and tractor driving experience are essential.",
+      "start": 363.31,
+      "end": 408.002,
+      "preAudio": false
+    }
+  ]
+}

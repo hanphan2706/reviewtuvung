@@ -75,10 +75,15 @@ data/dictionary/en-vi-stardict.json
 /listening materials/**/*.mp3
 /listening materials/**/*.pdf
 /listening materials/**/*.zip
+/listening materials/**/*.rar
 /listening materials/**/*.jpg
 /listening materials/*.jpg
+!/listening materials/cam * test * part * map.jpg
+!/listening materials/cam * test * part * map.jpeg
+/listening materials/_work/
 /listening materials/sync/*.whisper-words.json
 .venv-listening/
+/scripts/.cache/
 
 # Audio nghe — deploy qua Supabase / API, không commit file gốc
 /public/listening-assets/**/*.mp3
