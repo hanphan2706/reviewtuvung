@@ -1,0 +1,786 @@
+{
+  "version": 1,
+  "partId": "cam15-t4-p1",
+  "audioFile": "cam15-test4-part1.mp3",
+  "durationSeconds": 474.666667,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Test 4",
+      "start": 0,
+      "end": 2.12
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "This is the IELTS Listening Test.",
+      "start": 2.12,
+      "end": 6
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "You will hear a number of different recordings",
+      "start": 6,
+      "end": 8.72
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "and you will have to answer questions on what you hear.",
+      "start": 8.72,
+      "end": 13.74
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "There will be time for you to read the instructions and questions",
+      "start": 13.74,
+      "end": 18
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "and you will have a chance to check your work.",
+      "start": 18,
+      "end": 22.14
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "All the recordings will be played once only.",
+      "start": 22.14,
+      "end": 26.44
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "The test is in four parts.",
+      "start": 26.44,
+      "end": 30.16
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "At the end of the test, you will be given 10 minutes",
+      "start": 30.16,
+      "end": 34.24
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "to transfer your answers to the answer sheet.",
+      "start": 34.24,
+      "end": 38.5
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Now turn to Part 1.",
+      "start": 38.5,
+      "end": 47.29
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "You will hear a representative from a train company",
+      "start": 47.29,
+      "end": 50.55
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "talking to a woman about her train journey.",
+      "start": 50.55,
+      "end": 54.73
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "First you have some time to look at questions 1 to 6.",
+      "start": 54.73,
+      "end": 58.81
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Now listen carefully and answer questions 1 to 6.",
+      "start": 58.81,
+      "end": 96.62
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Hello, do you mind if I ask you some questions about your journey today?",
+      "start": 96.62,
+      "end": 101.38
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "We're doing a customer satisfaction survey.",
+      "start": 101.38,
+      "end": 103.74
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Yes, okay, I've got about 10 minutes before my train home leaves.",
+      "start": 103.74,
+      "end": 108.14
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "I'm on a day trip.",
+      "start": 108.14,
+      "end": 109.84
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Great, thank you.",
+      "start": 109.84,
+      "end": 111.22
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "So, first of all, could you tell me your name?",
+      "start": 111.22,
+      "end": 114.62
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "It's Sophie Bird.",
+      "start": 114.62,
+      "end": 115.94
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Thank you.",
+      "start": 115.94,
+      "end": 117.22
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "And would you mind telling me what you do?",
+      "start": 117.22,
+      "end": 120.28
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "I'm a journalist.",
+      "start": 120.28,
+      "end": 121.04
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Really? That must be interesting.",
+      "start": 121.04,
+      "end": 123.42
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Yes, it is.",
+      "start": 123.42,
+      "end": 124.94
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "So, was the reason for your visit here to do work?",
+      "start": 124.94,
+      "end": 128.68
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Actually, it's my day off.",
+      "start": 128.68,
+      "end": 130.8
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "I came here to do some shopping.",
+      "start": 130.8,
+      "end": 133.18
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Oh, right.",
+      "start": 133.18,
+      "end": 133.5
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "But I do sometimes come here for work.",
+      "start": 133.5,
+      "end": 136.42
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Okay.",
+      "start": 136.42,
+      "end": 137.34
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Now, I'd like to ask some questions about your journey today if that's okay.",
+      "start": 137.34,
+      "end": 142.1
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Yes, no problem.",
+      "start": 142.1,
+      "end": 142.74
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Right.",
+      "start": 142.74,
+      "end": 143.56
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "So, can you tell me which station you're travelling back to?",
+      "start": 143.56,
+      "end": 147.36
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "Stormforth, where I live.",
+      "start": 147.36,
+      "end": 149.8
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "Can I just check the spelling?",
+      "start": 149.8,
+      "end": 152.32
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "S-T-A-U-N-F-I-R-T-H.",
+      "start": 152.32,
+      "end": 159.22
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "That's right.",
+      "start": 159.22,
+      "end": 160.7
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "And you travelled from there this morning?",
+      "start": 160.7,
+      "end": 163.68
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "Yes.",
+      "start": 163.68,
+      "end": 164.46
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "Okay, good.",
+      "start": 164.46,
+      "end": 166.24
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "Next, can I ask what kind of ticket you bought?",
+      "start": 166.24,
+      "end": 169.64
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "I assume it wasn't a season ticket as you don't travel every day.",
+      "start": 169.64,
+      "end": 173.78
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "That's right. No, I just got a normal return ticket.",
+      "start": 173.78,
+      "end": 177.56
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "I don't have a rail card, so I didn't get any discount.",
+      "start": 177.56,
+      "end": 181.64
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "I keep meaning to get one because it's a lot cheaper.",
+      "start": 181.64,
+      "end": 185.1
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "Yes, you'd have saved 20% on your ticket today.",
+      "start": 185.1,
+      "end": 187.96
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "So, you paid the full price for your ticket?",
+      "start": 187.96,
+      "end": 191.02
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "I paid £23.70.",
+      "start": 191.02,
+      "end": 193.4
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "Okay. Do you think that's good value for money?",
+      "start": 193.4,
+      "end": 196.46
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "Not really. I think it's too much for a journey that only takes 45 minutes.",
+      "start": 196.46,
+      "end": 201.42
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "Yes, that's one of the main complaints we get.",
+      "start": 201.42,
+      "end": 204.06
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "So, you didn't buy your ticket in advance?",
+      "start": 204.06,
+      "end": 206.78
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "No. I know it's cheaper if you buy a week in advance,",
+      "start": 206.78,
+      "end": 210.68
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "but I didn't know I was coming then.",
+      "start": 210.68,
+      "end": 212.74
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "I know. You can't always plan ahead.",
+      "start": 212.74,
+      "end": 214.92
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "So, did you buy it this morning?",
+      "start": 214.92,
+      "end": 217.66
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "No, it was yesterday.",
+      "start": 217.66,
+      "end": 219.76
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "Right. And do you usually buy your tickets at the station?",
+      "start": 219.76,
+      "end": 223.9
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "Well, I do usually, but the ticket office closes early",
+      "start": 223.9,
+      "end": 227.44
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "and I hate using ticket machines.",
+      "start": 227.44,
+      "end": 229.82
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "I think ticket offices should be open for longer hours.",
+      "start": 229.82,
+      "end": 233.28
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "There's always a queue for the machines and they're often out of order.",
+      "start": 233.28,
+      "end": 237.7
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "A lot of customers are seeing the same thing.",
+      "start": 237.7,
+      "end": 239.78
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "So, to answer your question, I got an e-ticket online.",
+      "start": 239.78,
+      "end": 247.29
+    },
+    {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "Before you hear the rest of the conversation,",
+      "start": 247.29,
+      "end": 250.23
+    },
+    {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "you have some time to look at questions 7 to 10.",
+      "start": 250.23,
+      "end": 273.86
+    },
+    {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "Now listen and answer questions 7 to 10.",
+      "start": 273.86,
+      "end": 281.05
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "Okay. Thank you.",
+      "start": 281.05,
+      "end": 282.95
+    },
+    {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "Now, I'd like to ask you about your satisfaction with your journey.",
+      "start": 282.95,
+      "end": 287.23
+    },
+    {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "So, what would you say you were most satisfied with today?",
+      "start": 287.23,
+      "end": 290.97
+    },
+    {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "Well, I like the Wi-Fi on the train.",
+      "start": 290.97,
+      "end": 294.33
+    },
+    {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "It's improved a lot.",
+      "start": 294.33,
+      "end": 295.95
+    },
+    {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "It makes it easier for me to work if I want to.",
+      "start": 295.95,
+      "end": 300.03
+    },
+    {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "That's the first time today anyone's mentioned that.",
+      "start": 300.03,
+      "end": 301.71
+    },
+    {
+      "id": "cue-79",
+      "speaker": null,
+      "text": "It's good to get some positive feedback on that.",
+      "start": 301.71,
+      "end": 305.07
+    },
+    {
+      "id": "cue-80",
+      "speaker": null,
+      "text": "And is there anything you weren't satisfied with?",
+      "start": 305.07,
+      "end": 309
+    },
+    {
+      "id": "cue-81",
+      "speaker": null,
+      "text": "Well, normally the trains run on time and pretty reliable,",
+      "start": 309,
+      "end": 313.53
+    },
+    {
+      "id": "cue-82",
+      "speaker": null,
+      "text": "but today there was a delay.",
+      "start": 313.53,
+      "end": 316.03
+    },
+    {
+      "id": "cue-83",
+      "speaker": null,
+      "text": "The train was about 15 minutes behind schedule.",
+      "start": 316.03,
+      "end": 319.63
+    },
+    {
+      "id": "cue-84",
+      "speaker": null,
+      "text": "Okay, I'll put that down.",
+      "start": 319.63,
+      "end": 322.13
+    },
+    {
+      "id": "cue-85",
+      "speaker": null,
+      "text": "Now, I'd also like to ask about the facilities at this station.",
+      "start": 322.13,
+      "end": 326.55
+    },
+    {
+      "id": "cue-86",
+      "speaker": null,
+      "text": "You've probably noticed that the whole station's been upgraded.",
+      "start": 326.55,
+      "end": 330.29
+    },
+    {
+      "id": "cue-87",
+      "speaker": null,
+      "text": "What are you most satisfied with?",
+      "start": 330.29,
+      "end": 333.25
+    },
+    {
+      "id": "cue-88",
+      "speaker": null,
+      "text": "I think the best thing is that they've improved the amount of information about train times, etc.",
+      "start": 333.25,
+      "end": 339.91
+    },
+    {
+      "id": "cue-89",
+      "speaker": null,
+      "text": "that's given to passengers.",
+      "start": 339.91,
+      "end": 341.45
+    },
+    {
+      "id": "cue-90",
+      "speaker": null,
+      "text": "It's much clearer before there was only one board",
+      "start": 341.45,
+      "end": 344.95
+    },
+    {
+      "id": "cue-91",
+      "speaker": null,
+      "text": "and I couldn't always see it properly, which was frustrating.",
+      "start": 344.95,
+      "end": 348.85
+    },
+    {
+      "id": "cue-92",
+      "speaker": null,
+      "text": "That's good.",
+      "start": 348.85,
+      "end": 349.91
+    },
+    {
+      "id": "cue-93",
+      "speaker": null,
+      "text": "And is there anything you're not satisfied with?",
+      "start": 349.91,
+      "end": 352.93
+    },
+    {
+      "id": "cue-94",
+      "speaker": null,
+      "text": "Let's see.",
+      "start": 352.93,
+      "end": 354.67
+    },
+    {
+      "id": "cue-95",
+      "speaker": null,
+      "text": "I think things have generally improved a lot.",
+      "start": 354.67,
+      "end": 357.39
+    },
+    {
+      "id": "cue-96",
+      "speaker": null,
+      "text": "The trains are much more modern and I like the new cafe.",
+      "start": 357.39,
+      "end": 362.63
+    },
+    {
+      "id": "cue-97",
+      "speaker": null,
+      "text": "But one thing is that there aren't enough places to sit down, especially on the platforms.",
+      "start": 362.63,
+      "end": 368.09
+    },
+    {
+      "id": "cue-98",
+      "speaker": null,
+      "text": "Okay.",
+      "start": 368.09,
+      "end": 369.19
+    },
+    {
+      "id": "cue-99",
+      "speaker": null,
+      "text": "So I'll put seating down, shall I, as the thing you're least satisfied with?",
+      "start": 369.19,
+      "end": 373.95
+    },
+    {
+      "id": "cue-100",
+      "speaker": null,
+      "text": "Yes.",
+      "start": 373.95,
+      "end": 374.37
+    },
+    {
+      "id": "cue-101",
+      "speaker": null,
+      "text": "Okay.",
+      "start": 374.37,
+      "end": 375.49
+    },
+    {
+      "id": "cue-102",
+      "speaker": null,
+      "text": "Can I ask your opinion about some of the other facilities?",
+      "start": 375.49,
+      "end": 379.23
+    },
+    {
+      "id": "cue-103",
+      "speaker": null,
+      "text": "We'd like feedback on whether people are satisfied, dissatisfied, or neither satisfied, nor dissatisfied.",
+      "start": 379.23,
+      "end": 386.17
+    },
+    {
+      "id": "cue-104",
+      "speaker": null,
+      "text": "Okay.",
+      "start": 386.17,
+      "end": 388.01
+    },
+    {
+      "id": "cue-105",
+      "speaker": null,
+      "text": "What about the parking at the station?",
+      "start": 388.01,
+      "end": 391.33
+    },
+    {
+      "id": "cue-106",
+      "speaker": null,
+      "text": "Well, to be honest, I don't really have an opinion as I never use it.",
+      "start": 391.33,
+      "end": 396.43
+    },
+    {
+      "id": "cue-107",
+      "speaker": null,
+      "text": "So neither satisfied nor dissatisfied for that then?",
+      "start": 396.43,
+      "end": 399.37
+    },
+    {
+      "id": "cue-108",
+      "speaker": null,
+      "text": "Yes, I suppose so.",
+      "start": 399.37,
+      "end": 401.63
+    },
+    {
+      "id": "cue-109",
+      "speaker": null,
+      "text": "Okay.",
+      "start": 401.63,
+      "end": 406.64
+    },
+    {
+      "id": "cue-110",
+      "speaker": null,
+      "text": "That is the end of part one.",
+      "start": 406.64,
+      "end": 410
+    },
+    {
+      "id": "cue-111",
+      "speaker": null,
+      "text": "You now have one minute to check your answers to part one.",
+      "start": 410,
+      "end": 474.667
+    }
+  ]
+}

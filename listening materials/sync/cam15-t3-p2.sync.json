@@ -1,0 +1,541 @@
+{
+  "version": 1,
+  "partId": "cam15-t3-p2",
+  "audioFile": "cam15-test3-part2.mp3",
+  "durationSeconds": 424.533333,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Part 2.",
+      "start": 0,
+      "end": 2.44
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "You will hear a woman called Alice Riches talking on the radio about a scheme which involves",
+      "start": 2.44,
+      "end": 8.54
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "closing streets to traffic to allow children to play.",
+      "start": 8.54,
+      "end": 13.42
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "First, you have some time to look at questions 11 to 16.",
+      "start": 13.42,
+      "end": 63.67
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Now listen carefully and answer questions 11 to 16.",
+      "start": 63.67,
+      "end": 71.27
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "My guest on the show today is Alice Riches who started the street play scheme where she",
+      "start": 71.27,
+      "end": 77.23
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "lives in Beechwood Road.",
+      "start": 77.23,
+      "end": 79.27
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "For those of you that don't already know, street play involves local residents closing",
+      "start": 79.27,
+      "end": 84.41
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "off their street for a few hours so that children have a chance to play in the streets safely.",
+      "start": 84.41,
+      "end": 90.87
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "She started it in her own street, Beechwood Road and the idea caught on.",
+      "start": 90.87,
+      "end": 95.73
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "And there are now street play schemes all over the city.",
+      "start": 95.73,
+      "end": 99.47
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "So when did you actually start the scheme Alice?",
+      "start": 99.47,
+      "end": 102.19
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Well, I first had the idea when my oldest child was still a toddler.",
+      "start": 102.19,
+      "end": 107.27
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "So that's about oh, six years ago now, but it took at least two years of campaigning",
+      "start": 107.27,
+      "end": 113.05
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "before we were actually able to make it happen.",
+      "start": 113.05,
+      "end": 115.21
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "So the scheme's been up and running for three years now.",
+      "start": 115.21,
+      "end": 118.65
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "We'd love to be able to close our road for longer for the whole weekend from Saturday",
+      "start": 118.65,
+      "end": 123.99
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "morning until Sunday evening, for example.",
+      "start": 123.99,
+      "end": 125.43
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "At the moment it's just once a week, but when we started it was only once a month, but",
+      "start": 125.43,
+      "end": 131.89
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "we're working on it.",
+      "start": 131.89,
+      "end": 132.75
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "So what actually happens when Beechwood Road is closed?",
+      "start": 132.75,
+      "end": 136.25
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "We have volunteer wardens, mostly parents, but some elderly residents too, who block off",
+      "start": 136.25,
+      "end": 142.79
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "our road at either end.",
+      "start": 142.79,
+      "end": 144.95
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "The council have provided special signs, but there's always a volunteer there to explain",
+      "start": 144.95,
+      "end": 150.43
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "what's happening to any motorists.",
+      "start": 150.43,
+      "end": 153.31
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Generally, they're fine about it.",
+      "start": 153.31,
+      "end": 155.65
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "We've only had to get the police involved once or twice.",
+      "start": 155.65,
+      "end": 159.63
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Now, I should explain that the road isn't completely closed to cars, but only",
+      "start": 159.63,
+      "end": 165.19
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "residents' cars are allowed.",
+      "start": 165.19,
+      "end": 167.63
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "If people really need to get in or out of Beechwood Road, it's not a problem as long",
+      "start": 167.63,
+      "end": 173.75
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "as they drive at under 20 kilometres per hour.",
+      "start": 173.75,
+      "end": 177.55
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "But most people just decide not to use their cars during this time, all they park in",
+      "start": 177.55,
+      "end": 183.33
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "another street.",
+      "start": 183.33,
+      "end": 184.09
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "The wardens are only there to stop through traffic.",
+      "start": 184.09,
+      "end": 187.79
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "So can anyone apply to get involved in street play?",
+      "start": 187.79,
+      "end": 191.53
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Absolutely.",
+      "start": 191.53,
+      "end": 192.91
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "We want to include all kids in the city, especially those who live on busy roads.",
+      "start": 192.91,
+      "end": 199.13
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "It's here that demand is greatest.",
+      "start": 199.13,
+      "end": 202.55
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "Obviously, there isn't such demand in wealthier areas where the children have access to parks",
+      "start": 202.55,
+      "end": 208.05
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "or large gardens, or in the suburbs where there are usually more places for children to play",
+      "start": 208.05,
+      "end": 213.85
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "outside.",
+      "start": 213.85,
+      "end": 215.63
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "I'd recommend that anyone listening who likes the idea should just give it a go.",
+      "start": 215.63,
+      "end": 221.33
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "We've been surprised by the positive reaction of residents all over the city, and that's",
+      "start": 221.33,
+      "end": 226.45
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "not just parents.",
+      "start": 226.45,
+      "end": 228.23
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "There are always a few who complain, but they're a tiny minority.",
+      "start": 228.23,
+      "end": 233.47
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "On the whole, everyone is very supportive and say they're very happy to see children out",
+      "start": 233.47,
+      "end": 238.91
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "on the street, even if it does get quite noisy.",
+      "start": 238.91,
+      "end": 245.27
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "Before you hear the rest of the conversation, you have some time to look at questions 17 to",
+      "start": 245.27,
+      "end": 251.39
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "20.",
+      "start": 251.39,
+      "end": 272.16
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "Now listen and answer questions 17 to 20.",
+      "start": 272.16,
+      "end": 278.99
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "There have been so many benefits of street play for the kids.",
+      "start": 278.99,
+      "end": 283.07
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "Parents really like the fact that the kids are getting fresh air instead of sitting staring",
+      "start": 283.07,
+      "end": 288.47
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "at a computer screen, even if they're not doing anything particularly energetic.",
+      "start": 288.47,
+      "end": 293.37
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "And of course, it's great that kids can play with their friends outside without being supervised",
+      "start": 293.37,
+      "end": 298.81
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "by their parents.",
+      "start": 298.81,
+      "end": 300.21
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "But for me, the biggest advantage is that kids develop confidence in themselves to be outside",
+      "start": 300.21,
+      "end": 306.53
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "without their parents.",
+      "start": 306.53,
+      "end": 308.45
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "The other really fantastic thing is that children get to know the adults in the street.",
+      "start": 308.45,
+      "end": 314.09
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "It's like having a big extended family.",
+      "start": 314.09,
+      "end": 317.21
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "It certainly does have a lot of benefits.",
+      "start": 317.21,
+      "end": 319.93
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "I want to move on now and ask you about a related project in King Street.",
+      "start": 319.93,
+      "end": 324.81
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "Right.",
+      "start": 324.81,
+      "end": 325.61
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "Well, this was an experiment I was involved in, where local residents decided to try and reduce",
+      "start": 325.61,
+      "end": 331.53
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "the traffic along King Street, which is the busiest main road in our area by persuading people not",
+      "start": 331.53,
+      "end": 338.05
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "to use their cars for one day.",
+      "start": 338.05,
+      "end": 340.97
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "We thought about making people pay more for parking, but we decided that would be really unpopular.",
+      "start": 340.97,
+      "end": 347.23
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "So instead, we just stopped people from parking on King Street, but left the other car parks open.",
+      "start": 347.23,
+      "end": 354.31
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "It was surprising how much of a difference all this made.",
+      "start": 354.31,
+      "end": 358.51
+    },
+    {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "As we predicted, air quality was significantly better.",
+      "start": 358.51,
+      "end": 362.85
+    },
+    {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "But what I hadn't expected was how much quieter it would be, even with the buses still running.",
+      "start": 362.85,
+      "end": 369.29
+    },
+    {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "Of course, everyone said they felt safer, but we were actually amazed that sales in the shops",
+      "start": 369.29,
+      "end": 375.07
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "went up considerably that day.",
+      "start": 375.07,
+      "end": 377.11
+    },
+    {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "We thought there'd be fewer people out shopping, not more.",
+      "start": 377.11,
+      "end": 380.61
+    },
+    {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "That's really interesting, so the fact that the street was...",
+      "start": 380.61,
+      "end": 386.66
+    },
+    {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "That is the end of part two.",
+      "start": 386.66,
+      "end": 390
+    },
+    {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "You now have 30 seconds to check your answers to part two.",
+      "start": 390,
+      "end": 424.533
+    }
+  ]
+}

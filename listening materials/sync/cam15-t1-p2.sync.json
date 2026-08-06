@@ -1,0 +1,331 @@
+{
+  "version": 1,
+  "partId": "cam15-t1-p2",
+  "audioFile": "cam15-test1-part2.mp3",
+  "durationSeconds": 418.474667,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Part 2",
+      "start": 0,
+      "end": 2
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "You will hear a woman giving a presentation about a holiday on an island in Britain that her company organizes.",
+      "start": 2,
+      "end": 10.6
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "First, you have some time to look at questions 11-14.",
+      "start": 10.6,
+      "end": 45.66
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Now listen carefully and answer questions 11-14.",
+      "start": 45.66,
+      "end": 53.08
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Good morning. My name's Erika Matthews",
+      "start": 53.08,
+      "end": 56.8
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "and I'm the owner of Matthews Island Holidays. A company set up by my parents.",
+      "start": 56.8,
+      "end": 63.66
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Thank you for coming to this presentation in which I hope to interest you in what we have to offer.",
+      "start": 63.66,
+      "end": 70.46
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "We're a small family-run company and we believe in the importance of the personal touch",
+      "start": 70.46,
+      "end": 76.64
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "so we don't aim to compete with other companies on the number of customers.",
+      "start": 76.64,
+      "end": 81.4
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "What we do is build on our many years experience, more than almost any other rail holiday company",
+      "start": 81.4,
+      "end": 89.16
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "to ensure we provide perfect holidays in a small number of destinations which we've got to know extremely well.",
+      "start": 89.16,
+      "end": 98.6
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "I'll start with our six-day Isle of Man holiday. This is a fascinating island in the Irish Sea",
+      "start": 98.6,
+      "end": 105.38
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "with whales to the south, England to the east, Scotland to the north, and Northern Ireland to the west.",
+      "start": 105.38,
+      "end": 112.96
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Our holiday starts in Hisham, where your tour manager will meet you, then you'll travel by ferry to the Isle of Man.",
+      "start": 112.96,
+      "end": 121.7
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Some people prefer to fly from Luton instead and another popular option is to go by train to Liverpool and take a ferry from there.",
+      "start": 121.7,
+      "end": 130.65
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "You have five nights in the hotel and the price covers five breakfasts and dinners and lunch on the three days when there are organized trips.",
+      "start": 130.65,
+      "end": 141.16
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Day four is free and most people have lunch in a cafe or restaurant in Douglas.",
+      "start": 141.16,
+      "end": 147.1
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "The price of a holiday includes the ferry to the Isle of Man, all travel on the island, the hotel and the meals I've mentioned.",
+      "start": 147.1,
+      "end": 156.56
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Incidentally, we try to make booking our holidays as simple and fair as possible.",
+      "start": 156.56,
+      "end": 162.04
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "So unlike with many companies, the price is the same whether you book six months in advance or the last minute.",
+      "start": 162.04,
+      "end": 170.2
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "And there's no supplement for single rooms in hotels.",
+      "start": 170.2,
+      "end": 173.86
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "If you make a booking then need to change the start date, for example because of illness, you're welcome to change to an alternative date or a different tour for a small administrative fee.",
+      "start": 173.86,
+      "end": 188.4
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Before you hear the rest of the talk, you have some time to look at questions 15 to 20.",
+      "start": 188.4,
+      "end": 224.62
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Now listen and answer questions 15 to 20.",
+      "start": 224.62,
+      "end": 232.29
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Okay, so what does the holiday consist of?",
+      "start": 232.29,
+      "end": 236.21
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Well, on day one you'll arrive in time for a short introduction by your tour manager, followed by dinner in the hotel.",
+      "start": 236.21,
+      "end": 243.87
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "The dining room looks out at the river close to where it flows into the harbor and there's usually plenty of activity going on.",
+      "start": 243.87,
+      "end": 252.89
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "On day two you'll take the coach to the small town of Peel on the way calling in at the Tin World Exhibition.",
+      "start": 252.89,
+      "end": 261.85
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "The Isle of Man isn't part of the United Kingdom and it has its own parliament called Tin World.",
+      "start": 261.85,
+      "end": 269.07
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "It's claimed that this is the world's oldest parliament that's still functioning and that it dates back to 979.",
+      "start": 269.07,
+      "end": 277.83
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "However, the earliest surviving reference to it is from 1422 so perhaps it isn't quite as old as it claims.",
+      "start": 277.83,
+      "end": 288.13
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Day three we have a trip to the mountain Snavel.",
+      "start": 288.13,
+      "end": 292.59
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "This begins with a leisurely ride along the promenade in Douglas in a horse drawn tram.",
+      "start": 292.59,
+      "end": 299.07
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Then you board an electric train which takes you to the fishing village of Laxie.",
+      "start": 299.07,
+      "end": 305.41
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "From there it's an eight kilometre ride in the Snavel mountain railway to the top.",
+      "start": 305.41,
+      "end": 311.99
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Lunch will be in the cafe giving you spectacular views of the island.",
+      "start": 311.99,
+      "end": 318.21
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Day four is free for you to explore using the pass which will give you.",
+      "start": 318.21,
+      "end": 323.69
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "So you won't have to pay for travel on local transport or for entrance to the island's heritage sites.",
+      "start": 323.69,
+      "end": 330.47
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "Or you might just want to take it easy and Douglas and perhaps do a little light shopping.",
+      "start": 330.47,
+      "end": 336.59
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "The last full day day five is for some people the highlight of the holiday with a ride on the steam railway from Douglas to Port Aaron.",
+      "start": 336.59,
+      "end": 348.51
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "After some time to explore a coach will take you to the headland that overlooks the calf of man, a small island just off the coast.",
+      "start": 348.51,
+      "end": 357.35
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "From there you continue to Castle Town which used to be the capital of the Isle of Man and its medieval castle.",
+      "start": 357.35,
+      "end": 366.19
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "And on day six it's back to the ferry or the airport if you flew to the island and time to go home.",
+      "start": 366.19,
+      "end": 375.41
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "Now I'd like to tell you a bit more.",
+      "start": 375.41,
+      "end": 380.86
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "That is the end of part two.",
+      "start": 380.86,
+      "end": 383.6
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "You now have 30 seconds to check your answers to part two.",
+      "start": 383.6,
+      "end": 418.475
+    }
+  ]
+}

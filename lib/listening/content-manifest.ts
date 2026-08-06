@@ -12,6 +12,7 @@ import {
   BASIC_IELTS_LISTENING_META_PILL,
   type BasicIeltsListeningLessonCatalog,
 } from "@/lib/listening/basic-ielts-listening-catalog";
+import { CAM15_LISTENING_PARTS } from "@/lib/listening/cam15-listening-parts";
 import { CAM16_LISTENING_PARTS } from "@/lib/listening/cam16-listening-parts";
 import { CAM17_LISTENING_PARTS } from "@/lib/listening/cam17-listening-parts";
 import { CAM21_LISTENING_PARTS } from "@/lib/listening/cam21-listening-parts";
@@ -99,6 +100,26 @@ export type ListeningTestContext = {
 };
 
 export const LISTENING_TEST_CONTEXTS: Record<string, ListeningTestContext> = {
+  "cam15-t1": {
+    predictTitle: "Cam 15 — Test 1",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là agency tuyển dụng, kỳ nghỉ đảo Man, thứ tự sinh trong gia đình hoặc cây bạch đàn Úc — không cần đoán đúng chi tiết.",
+  },
+  "cam15-t2": {
+    predictTitle: "Cam 15 — Test 2",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là lễ hội, công viên Minster, trưng bày Dickens hoặc chương trình nông nghiệp Mozambique — không cần đoán đúng chi tiết.",
+  },
+  "cam15-t3": {
+    predictTitle: "Cam 15 — Test 3",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là việc làm qua agency, Street Play, phân tích báo của Hazel hoặc lịch sử giữ vệ sinh — không cần đoán đúng chi tiết.",
+  },
+  "cam15-t4": {
+    predictTitle: "Cam 15 — Test 4",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là khảo sát khách hàng, công viên Croft Valley, thuyết trình tủ lạnh hoặc Cách mạng Công nghiệp — không cần đoán đúng chi tiết.",
+  },
   "cam16-t1": {
     predictTitle: "Cam 16 — Test 1",
     predictBlurb:
@@ -315,6 +336,7 @@ export const LISTENING_PARTS_PILOT: readonly ListeningPartMeta[] = [
   ...CAM21_LISTENING_PARTS,
   ...CAM17_LISTENING_PARTS,
   ...CAM16_LISTENING_PARTS,
+  ...CAM15_LISTENING_PARTS,
   {
     id: "cam20-t1-p1",
     slug: "restaurant-recommendations",

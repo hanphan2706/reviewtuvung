@@ -1,0 +1,240 @@
+{
+  "version": 1,
+  "partId": "cam15-t4-p2",
+  "audioFile": "cam15-test4-part2.mp3",
+  "durationSeconds": 381.184,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "You will hear the chair of a committee on park facilities, addressing her local town council about changes that have been made to the park.",
+      "start": 2.06,
+      "end": 12.7
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "First, you have some time to look at questions 11 to 16.",
+      "start": 12.7,
+      "end": 47.9
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Now listen carefully and answer questions 11 to 16.",
+      "start": 47.9,
+      "end": 52.12
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "As chair of the town council subcommittee on park facilities, I'd like to bring you up to date on some of the changes that have been made recently to the Croft Valley Park.",
+      "start": 52.12,
+      "end": 67.76
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "So if you could just take a look at the map I handed out, let's begin with a general overview.",
+      "start": 67.76,
+      "end": 75.28
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "So the basic arrangement of the park hasn't changed. It still has two gates north and south and a lake in the middle.",
+      "start": 75.28,
+      "end": 86.34
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "The cafe continues to serve an assortment of drinks and snacks and is still in the same place looking out over the lake and next to the old museum.",
+      "start": 86.34,
+      "end": 98.28
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "We're hoping to change the location of the toilets and bring them nearer to the centre of the park as they're a bit out of the way it present near the adventure playground in the corner of your map.",
+      "start": 98.28,
+      "end": 112.38
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "The formal gardens have been replanted and should be at their best in a month or two.",
+      "start": 112.38,
+      "end": 119.35
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "They used to be behind the old museum but we've now used the space near the south gate between the park boundary and the path that goes past the lake towards the old museum.",
+      "start": 119.35,
+      "end": 134.34
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "We have a new outdoor gym for adults and children which is already proving very popular.",
+      "start": 134.34,
+      "end": 143.22
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "It's by the glass houses just to the right of the path from the south gate. You have to look for it as it's a bit hidden in the trees.",
+      "start": 143.22,
+      "end": 155.92
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "One very successful introduction has been our skateboard ramp. It's in constant use during the evenings and holidays.",
+      "start": 155.92,
+      "end": 166.48
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "It's near the old museum at the end of a little path that leads off from the main path between the lake and the museum.",
+      "start": 166.48,
+      "end": 177.92
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "We've also introduced a new area for wild flowers to attract bees and butterflies.",
+      "start": 177.92,
+      "end": 185.88
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "It's on a bend in the path that goes around the east side of the lake just south of the adventure playground.",
+      "start": 185.88,
+      "end": 194.28
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Before you hear the rest of the presentation you have some time to look at questions 17 to 20.",
+      "start": 194.28,
+      "end": 224.56
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Now listen and answer questions 17 to 20.",
+      "start": 224.56,
+      "end": 231.9
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Let me tell you a bit more about some of the changes to Croft Valley Park.",
+      "start": 231.9,
+      "end": 237.34
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "One of our most exciting developments has been the adventure playground.",
+      "start": 237.34,
+      "end": 242.86
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "We were aware that we had nowhere for children to let off steam and decided to use our available funds to set up a completely new facility in a large space to the north of the park.",
+      "start": 242.86,
+      "end": 258.48
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "It's open year round though it closes early in the winter months and entrance is completely free.",
+      "start": 258.48,
+      "end": 267.56
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Children can choose whatever activities they want to do irrespective of their age.",
+      "start": 267.56,
+      "end": 273.66
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "But we do ask adults not to leave them on their own there.",
+      "start": 273.66,
+      "end": 278.74
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "There are plenty of seats where parents can relax and keep an eye on their children at the same time.",
+      "start": 278.74,
+      "end": 286.48
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Lastly the glass houses.",
+      "start": 286.48,
+      "end": 289.16
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "A huge amount of work has been done on them to repair the damage following the disastrous fire that recently destroyed their western side.",
+      "start": 289.16,
+      "end": 300.22
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Over 80,000 pounds was spent on replacing the glass walls and the metal supports as well as the plants that had been destroyed.",
+      "start": 300.22,
+      "end": 309.74
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Although unfortunately the collection of tropical palm trees has proved too expensive to replace up to now.",
+      "start": 309.74,
+      "end": 318.62
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "At present the glass houses are open from 10 a.m. to 3 p.m. Monday to Thursdays and it's hoped to extend this to the weekend soon.",
+      "start": 318.62,
+      "end": 330.86
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "We're grateful to all those who helped us by contributing their time and money to this achievement.",
+      "start": 330.86,
+      "end": 340.38
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "That is the end of part 2.",
+      "start": 340.38,
+      "end": 346.44
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "You now have 30 seconds to check your answers to part 2.",
+      "start": 346.44,
+      "end": 381.184
+    }
+  ]
+}

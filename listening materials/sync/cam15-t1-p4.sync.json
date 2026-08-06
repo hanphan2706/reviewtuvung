@@ -1,0 +1,443 @@
+{
+  "version": 1,
+  "partId": "cam15-t1-p4",
+  "audioFile": "cam15-test1-part4.mp3",
+  "durationSeconds": 546.645333,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Part four.",
+      "start": 0.02,
+      "end": 2.28
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "You will hear a student giving a presentation about a type of tree known as the Eucalyptus,",
+      "start": 2.28,
+      "end": 8.9
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "which is common in Australia.",
+      "start": 8.9,
+      "end": 12.2
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "First, you have some time to look at questions 31 to 40.",
+      "start": 12.2,
+      "end": 82.52
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Now listen carefully and answer questions 31 to 40.",
+      "start": 82.52,
+      "end": 90.01
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Today I'm going to talk about the Eucalyptus tree.",
+      "start": 90.01,
+      "end": 93.91
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "This is a very common tree here in Australia, where it's also sometimes called the gum tree.",
+      "start": 93.91,
+      "end": 101.53
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "First, I'm going to talk about why it's important, then I'm going to describe some problems",
+      "start": 101.53,
+      "end": 107.97
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "it faces at present. Right, well the Eucalyptus tree is an important tree for lots of reasons.",
+      "start": 107.97,
+      "end": 116.57
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "For example, it gives shelter to creatures like birds and bats, and these and other species",
+      "start": 116.57,
+      "end": 123.73
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "also depend on it for food, particularly the nectar from its flowers.",
+      "start": 123.73,
+      "end": 130.41
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "So it supports biodiversity.",
+      "start": 130.41,
+      "end": 134.13
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "It's useful to us humans too, because we can kill germs with a disinfectant made from oil",
+      "start": 134.13,
+      "end": 141.77
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "extracted from Eucalyptus leaves.",
+      "start": 141.77,
+      "end": 146.03
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "The Eucalyptus grows all over Australia, and the trees can live for up to 400 years.",
+      "start": 146.03,
+      "end": 153.37
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "So it's alarming that all across the country, numbers of Eucalyptus are falling because the trees",
+      "start": 153.37,
+      "end": 160.77
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "are dying off prematurely. So what are the reasons for this?",
+      "start": 160.77,
+      "end": 167.41
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "One possible reason is disease. As far back as the 1970s,",
+      "start": 167.41,
+      "end": 173.27
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "the trees started getting a disease called mandula yellows.",
+      "start": 173.27,
+      "end": 178.47
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "The trees' leaves would gradually turn yellow, then the tree would die.",
+      "start": 178.47,
+      "end": 184.11
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "It wasn't until 2004 that they found the cause of the problem was lime, or calcium hydroxide,",
+      "start": 184.11,
+      "end": 192.37
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "to give it its proper chemical name, which was being used in the construction of roads.",
+      "start": 192.37,
+      "end": 198.63
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "The lime was being washed away into the ground, and affecting the roots of the Eucalyptus trees nearby.",
+      "start": 198.63,
+      "end": 206.53
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "What it was doing was preventing the trees from sucking up the iron they needed for healthy growth.",
+      "start": 206.53,
+      "end": 214.79
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "When this was injected back into the affected trees, they immediately recovered.",
+      "start": 214.79,
+      "end": 221.13
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "But this problem only affected a relatively small number of trees.",
+      "start": 221.13,
+      "end": 226.85
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "By 2000, huge numbers of Eucalyptus were dying along Australia's east coast,",
+      "start": 226.85,
+      "end": 233.83
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "of a disease known as Belminer associated dieback.",
+      "start": 233.83,
+      "end": 238.77
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "The Belminer is a bird, and the disease seems to be common where there are high populations of",
+      "start": 238.77,
+      "end": 245.43
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Belminer's. Again, it's the leaves of the trees that are affected.",
+      "start": 245.43,
+      "end": 251.17
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "What happens is that insects settle on the leaves and eat their way around them,",
+      "start": 251.17,
+      "end": 257.93
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "destroying them as they go, and at the same time they secrete a solution which has sugar in it.",
+      "start": 257.93,
+      "end": 266.31
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "The Belminer birds really like this solution, and in order to get as much as possible,",
+      "start": 266.31,
+      "end": 272.87
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "they keep away other creatures that might try to get it.",
+      "start": 272.87,
+      "end": 276.85
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "So these birds and insects flourish at the expense of other species,",
+      "start": 276.85,
+      "end": 282.33
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "and eventually so much damage is done to the leaves that the tree dies.",
+      "start": 282.33,
+      "end": 292.77
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "But experts say that trees can start looking sick before any sign of Belminer associated dieback.",
+      "start": 292.77,
+      "end": 301.09
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "So it looks as if the problem might have another explanation.",
+      "start": 301.09,
+      "end": 305.31
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "One possibility is that it's to do with the huge bushfires that we have in Australia.",
+      "start": 305.31,
+      "end": 312.83
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "A theory proposed over 40 years ago by Ecologist William Jackson is that the frequency of bushfires",
+      "start": 312.83,
+      "end": 321.35
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "in a particular region affects the type of vegetation that grows there.",
+      "start": 321.35,
+      "end": 327.29
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "If there are very frequent bushfires in a region, this encourages grass to grow afterwards",
+      "start": 327.29,
+      "end": 334.93
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "while if the bushfires are rather less frequent, this results in the growth of eucalyptus forests.",
+      "start": 334.93,
+      "end": 342.95
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "So why is this? Why do fairly frequent bushfires actually support the growth of eucalyptus?",
+      "start": 342.95,
+      "end": 352.39
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "Well, one reason is that the fire stops the growth of other species which would consume water",
+      "start": 352.39,
+      "end": 359.95
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "needed by eucalyptus trees. And there's another reason.",
+      "start": 359.95,
+      "end": 366.25
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "If these other quick-growing species of bushes and plants are allowed to proliferate,",
+      "start": 366.25,
+      "end": 372.51
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "they harm the eucalyptus in another way by affecting the composition of the soil",
+      "start": 372.51,
+      "end": 378.15
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "and removing nutrients from it. So some bushfires are actually essential for the eucalyptus to",
+      "start": 378.15,
+      "end": 386.25
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "survive as long as they are not too frequent. In fact, there's evidence that Australia's",
+      "start": 386.25,
+      "end": 393.35
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "indigenous people practiced regular burning of bushland for thousands of years before the arrival",
+      "start": 393.35,
+      "end": 399.93
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "of the Europeans. But since Europeans arrived on the continent, the number of bushfires has been",
+      "start": 399.93,
+      "end": 407.41
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "strictly controlled. Now scientists believe that this reduced frequency of bushfires to low levels",
+      "start": 407.41,
+      "end": 415.61
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "has led to what's known as dry rainforest, which seems an odd name as usually we associate tropical",
+      "start": 415.61,
+      "end": 423.81
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "rainforests with wet conditions. And what's special about this type of rainforest? Well,",
+      "start": 423.81,
+      "end": 432.13
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "unlike tropical rainforest, which is a rich ecosystem, this type of ecosystem is usually a simple one.",
+      "start": 432.13,
+      "end": 440.85
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "It has very thick dense vegetation, but not much variety of species.",
+      "start": 440.85,
+      "end": 447.13
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "The vegetation provides lots of shade, so one species that does find it ideal is the Bell Minerbird,",
+      "start": 447.13,
+      "end": 455.97
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "which builds its nests in the undergrowth there. But again, that's not helpful for the eucalyptus tree.",
+      "start": 455.97,
+      "end": 466.36
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "That is the end of part four. You now have one minute to check your answers to part four.",
+      "start": 466.36,
+      "end": 533.59
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "That is the end of the listening test. In the IELTS test, you would now have 10 minutes to transfer",
+      "start": 533.59,
+      "end": 542.01
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "your answers to the answer sheet.",
+      "start": 542.01,
+      "end": 546.645
+    }
+  ]
+}

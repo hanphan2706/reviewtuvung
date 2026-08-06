@@ -73,6 +73,7 @@ data/dictionary/en-vi-stardict.json
 
 # Listening — binary / bản quyền (giữ .txt, .json sync trong repo cho pipeline)
 /listening materials/**/*.mp3
+/listening materials/**/*.m4a
 /listening materials/**/*.pdf
 /listening materials/**/*.zip
 /listening materials/**/*.rar

@@ -1,0 +1,485 @@
+{
+  "version": 1,
+  "partId": "cam15-t3-p1",
+  "audioFile": "cam15-test3-part1.mp3",
+  "durationSeconds": 470.613333,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "test 3. This is the IELTS listening test.",
+      "start": 0.02,
+      "end": 6.66
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "You will hear a number of different recordings and you will have to answer questions on what",
+      "start": 6.66,
+      "end": 12.44
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "you hear. There will be time for you to read the instructions and questions and you will",
+      "start": 12.44,
+      "end": 19.02
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "have a chance to check your work. All the recordings will be played once only.",
+      "start": 19.02,
+      "end": 26.82
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "The test is in four parts. At the end of the test, you will be given ten minutes to transfer your answers to the answer sheet.",
+      "start": 26.82,
+      "end": 38.76
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Now turn to part one. Part one.",
+      "start": 38.76,
+      "end": 47.67
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "You will hear a woman who works at an employment agency talking to a man about jobs he could apply for.",
+      "start": 47.67,
+      "end": 56.01
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "First, you have some time to look at questions one to five. Now listen carefully and answer questions one to five.",
+      "start": 56.01,
+      "end": 92.66
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Good morning. Thanks for coming in to see us here at the agency Jew. I'm one of the agency representatives and my name's Sally Baker.",
+      "start": 92.66,
+      "end": 101.64
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Hi, Sally. I think we spoke on the phone, didn't we?",
+      "start": 101.64,
+      "end": 105.38
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "That's right. We did. So, thank you for sending in your CV. We've had quite a careful look at it.",
+      "start": 105.38,
+      "end": 111.3
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "And I think we have two jobs that might be suitable for you.",
+      "start": 111.3,
+      "end": 115.36
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Okay. The first one is in a company based in North London. They're looking for an administrative assistant.",
+      "start": 115.36,
+      "end": 122.22
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Okay. What sort of company is it?",
+      "start": 122.22,
+      "end": 125.32
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "They're called home solutions and they design and make furniture.",
+      "start": 125.32,
+      "end": 130.36
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Oh, I don't know much about that, but it sounds interesting.",
+      "start": 130.36,
+      "end": 134.28
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Yes, well, as I said, they want someone in their office and looking at your past experience.",
+      "start": 134.28,
+      "end": 140.4
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "It does look as if you fit quite a few of the requirements. So, on your CV, it appears you've done some data entry.",
+      "start": 140.4,
+      "end": 148.56
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Yes.",
+      "start": 148.56,
+      "end": 149.16
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "So, that's one skill they want. Then they expect the person they appoint to attend meetings and take notes there.",
+      "start": 149.16,
+      "end": 156.46
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Okay. I've done that before, yes.",
+      "start": 156.46,
+      "end": 159.34
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "And you need to be able to cope with general admin.",
+      "start": 159.34,
+      "end": 163.08
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Filing and keeping records and so on. That should be okay. And in my last job, I also had to manage the diary.",
+      "start": 163.08,
+      "end": 170.4
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Excellent. That's something they want here, too. I'd suggest you add it to your CV. I don't think you mentioned that, did you?",
+      "start": 170.4,
+      "end": 178.36
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "No.",
+      "start": 178.36,
+      "end": 179.38
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "So, as far as the requirements go, they want good computer skills, of course. And they particularly mention spread sheets.",
+      "start": 179.38,
+      "end": 187.6
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "That should be fine.",
+      "start": 187.6,
+      "end": 188.96
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "And interpersonal skills, which would be something they'd check with your references.",
+      "start": 188.96,
+      "end": 194.04
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "I think that should be okay, yes.",
+      "start": 194.04,
+      "end": 196.66
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "And then they mention that they want someone who is careful and takes care with details. Just looking at your CV, I'd say you're probably all right there.",
+      "start": 196.66,
+      "end": 206.56
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "I think so, yes. Do they want any special experience?",
+      "start": 206.56,
+      "end": 211.04
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "I think they wanted some experience of teleconferencing.",
+      "start": 211.04,
+      "end": 214.72
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Oh, I've got three years experience of that.",
+      "start": 214.72,
+      "end": 218.04
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Let's see. Yes. Good. In fact, they're only asking for at least one year. So that's great.",
+      "start": 218.04,
+      "end": 225.14
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "So is that something that might interest you?",
+      "start": 225.14,
+      "end": 227.86
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "It is. Yes. The only thing is you said they were in North London, so it would be quite a long commute for me.",
+      "start": 227.86,
+      "end": 235.98
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Okay.",
+      "start": 235.98,
+      "end": 239.76
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "Before you hear the rest of the conversation, you have some time to look at questions six to ten.",
+      "start": 239.76,
+      "end": 246.22
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "Now listen and answer questions six to ten.",
+      "start": 246.22,
+      "end": 278.28
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "So the second position might suit you better as far as the location goes. That's for a warehouse assistant and that's in South London.",
+      "start": 278.28,
+      "end": 286.44
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "Yes, that would be a lot closer.",
+      "start": 286.44,
+      "end": 288.76
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "And you've worked in a warehouse before, haven't you?",
+      "start": 288.76,
+      "end": 291.7
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "Yes.",
+      "start": 291.7,
+      "end": 292.04
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "So as far as the responsibilities for this position go, they want someone who could manage the stock, obviously, and also deliveries.",
+      "start": 292.04,
+      "end": 300.48
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "That should be okay. You've got to keep track of stuff. But I've always been quite good with numbers.",
+      "start": 300.48,
+      "end": 308.3
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "Good. That's their first requirement. And they want someone who's computer literate, which we know you are.",
+      "start": 308.3,
+      "end": 315.02
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "Sure.",
+      "start": 315.02,
+      "end": 316.24
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "Then they mention organizational skills. They want someone who's well-organised.",
+      "start": 316.24,
+      "end": 321.56
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "Yes. I think I am.",
+      "start": 321.56,
+      "end": 324.16
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "And tidy?",
+      "start": 324.16,
+      "end": 325.86
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "Yes. They go together really, don't they?",
+      "start": 325.86,
+      "end": 328.68
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "Sure. Then the usual stuff. They want someone who can communicate well, both orally and in writing.",
+      "start": 328.68,
+      "end": 335.78
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "Okay. And for the last warehouse job I had, one of the things I enjoyed most was being part of a team.",
+      "start": 335.78,
+      "end": 343.56
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "I found that was really essential for the job.",
+      "start": 343.56,
+      "end": 346.62
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "Excellent. Yes, they do mention that they want someone who's used to that, yes.",
+      "start": 346.62,
+      "end": 351.98
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "Now, when you were working in a warehouse last time, what sorts of items were you dealing with?",
+      "start": 351.98,
+      "end": 358.1
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "It was mostly bathroom and kitchen equipment, sinks and stoves and fridges.",
+      "start": 358.1,
+      "end": 364.76
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "So you're okay moving heavy things.",
+      "start": 364.76,
+      "end": 367.92
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "Sure. I'm quite strong. And I've had the training.",
+      "start": 367.92,
+      "end": 371.54
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "Good. Now, as far as experience goes, they mention they want someone with a licence and that you have experience of driving in London.",
+      "start": 371.54,
+      "end": 381.38
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "So you can cope with the traffic and so on.",
+      "start": 381.38,
+      "end": 384.78
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "Yes. No problem.",
+      "start": 384.78,
+      "end": 385.1
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "And you've got experience of warehouse work.",
+      "start": 385.1,
+      "end": 388.46
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "And the final thing they mention is customer service.",
+      "start": 388.46,
+      "end": 391.7
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "I think looking at your CV, you're okay there.",
+      "start": 391.7,
+      "end": 395.24
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "Right. So what about pay? Can you tell me a bit more about that please?",
+      "start": 395.24,
+      "end": 402.95
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "That is the end of part one.",
+      "start": 402.95,
+      "end": 405.93
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "You now have one minute to check your answers to part one.",
+      "start": 405.93,
+      "end": 470.613
+    }
+  ]
+}

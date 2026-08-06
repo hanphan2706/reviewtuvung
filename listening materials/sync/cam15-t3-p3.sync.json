@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "partId": "cam15-t3-p3",
+  "audioFile": "cam15-test3-part3.mp3",
+  "durationSeconds": 410.069333,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "3. You will hear two students, called Hazel and Tom, talking about Hazel's media studies",
+      "start": 0,
+      "end": 8.78
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "assignment. First, you have some time to look at questions",
+      "start": 8.78,
+      "end": 13.36
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "21 to 26. Now listen carefully and answer questions 21 to 26. Tom, could I ask you for",
+      "start": 13.36,
+      "end": 55.5
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "some advice please? Yes, of course. If you think I can help, what's",
+      "start": 55.5,
+      "end": 60.97
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "it about? It's my first media studies assignment and I'm not sure how to go about it. You must have",
+      "start": 60.97,
+      "end": 68.53
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "done it last year. Is that the one comparing the coverage of a particular story in a range",
+      "start": 68.53,
+      "end": 74.65
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "of newspapers? That's right. Oh yes, I really enjoyed writing it. So what sort of things",
+      "start": 74.65,
+      "end": 81.17
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "do I need to compare? Well, there are several things. For example, there's the question",
+      "start": 81.17,
+      "end": 87.49
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "of which page of the newspaper the item appears on. You mean, because there's a big difference",
+      "start": 87.49,
+      "end": 93.27
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "between having it on the front page and the bottom of page 10, for instance. Exactly. And",
+      "start": 93.27,
+      "end": 100.27
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "that shows how important the editor thinks the story is. Then there's the size, how many",
+      "start": 100.27,
+      "end": 107.95
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "column inches the story is given, how many columns it spreads over. And I suppose that",
+      "start": 107.95,
+      "end": 114.69
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "includes the headline. It certainly does. It's all part of attracting the reader's attention.",
+      "start": 114.69,
+      "end": 120.83
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "What about graphics? Whether there's anything visual in addition to the text. Yes, you need",
+      "start": 120.83,
+      "end": 127.17
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "to consider those two because they can have a big effect on the reader's understanding of",
+      "start": 127.17,
+      "end": 132.61
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "the story. Sometimes a bigger effect than the text itself. Then you'll need to look at how",
+      "start": 132.61,
+      "end": 138.89
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "the item is put together. What structure is it given? Bear in mind that not many people",
+      "start": 138.89,
+      "end": 146.27
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "read beyond the first paragraph. So what has the journalist put at the beginning? And if",
+      "start": 146.27,
+      "end": 153.31
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "say there are conflicting opinions about something, does one appear near the end where people",
+      "start": 153.31,
+      "end": 159.35
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "probably won't read it? And newspapers sometimes give wrong or misleading",
+      "start": 159.35,
+      "end": 164.63
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "information, don't they? Either deliberately or by accident. Should I be looking at that?",
+      "start": 164.63,
+      "end": 171.73
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Yes, if you can. Compare what's in different versions. And as far as possible, try and",
+      "start": 171.73,
+      "end": 178.81
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "work out what's true and what isn't. And that relates to a very important point. What's",
+      "start": 178.81,
+      "end": 185.87
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "the writer's purpose? Or at least the most important one. If they have several, it may seem",
+      "start": 185.87,
+      "end": 193.47
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "to be to inform the public, but often it's that they want to create fear or controversy,",
+      "start": 193.47,
+      "end": 200.89
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "or to make somebody look ridiculous. Gosh, I see what you mean. And I suppose the writer",
+      "start": 200.89,
+      "end": 207.31
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "may make assumptions about the reader. That's right. About their knowledge of the subject,",
+      "start": 207.31,
+      "end": 213.67
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "their attitudes, and a level of education, which means writing so that the readers understand",
+      "start": 213.67,
+      "end": 219.65
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "without feeling patronised. All of that will make a difference to how the story is presented.",
+      "start": 219.65,
+      "end": 229.02
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30.",
+      "start": 229.02,
+      "end": 255.98
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Now listen and answer questions 27 to 30.",
+      "start": 255.98,
+      "end": 263.87
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "No matter what type of story I write about. No. National or international politics, the arts,",
+      "start": 263.87,
+      "end": 272.19
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "anything, as long as it's covered in two or three newspapers. Though of course, it'll",
+      "start": 272.19,
+      "end": 277.57
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "be easier and more fun if it's something you're interested in and know something about.",
+      "start": 277.57,
+      "end": 283.01
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "And on that basis, a national news item would be worth analysing. I'm quite keen on politics,",
+      "start": 283.01,
+      "end": 289.93
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "so I'll try and find a suitable topic. What did you choose for your analysis, Tom?",
+      "start": 289.93,
+      "end": 295.77
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "I was interested in how newspapers expressed their opinions explicitly. So I wanted to compare",
+      "start": 295.77,
+      "end": 304.03
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "editorials in different papers, but when I started looking, I couldn't find two on the same topic",
+      "start": 304.03,
+      "end": 311.01
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "that I felt like analysing. In that case, I wasn't even bothered to look. So in the end, I chose a",
+      "start": 311.01,
+      "end": 318.15
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "human interest story, a terribly emotional story about a young girl who was very ill and lots of other",
+      "start": 318.15,
+      "end": 324.29
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "people, mostly strangers, raised money so she could go abroad for treatment. Actually, I was",
+      "start": 324.29,
+      "end": 331.79
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "surprised. Some papers just wrote about how wonderful everyone was, but others considered the broader",
+      "start": 331.79,
+      "end": 338.83
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "picture like why treatment wasn't available here. I usually find stories like that raise quite",
+      "start": 338.83,
+      "end": 346.81
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "strong feelings in me. I'll avoid that. Perhaps I'll choose an art topic like different reviews of a film",
+      "start": 346.81,
+      "end": 355.29
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "or something about funding for the arts. I'll think about that. Yes, that might be interesting.",
+      "start": 355.29,
+      "end": 362.03
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "Okay, well, thanks a lot for your help, Tom. It's been really useful. You're welcome. Good luck",
+      "start": 362.03,
+      "end": 367.81
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "with the assignment, Hazel. That is the end of part three. You now have 30 seconds to check your",
+      "start": 367.81,
+      "end": 377.97
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "answers to part three.",
+      "start": 377.97,
+      "end": 410.069
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import { LISTENING_HUB_HREF } from "@/lib/listening/listening-hub-nav";
 import { cambridgeIeltsCatalogOrder } from "@/lib/exam/ielts-catalog-order";
 import {
+  CAMBRIDGE_IELTS_15_COVER_URL,
   CAMBRIDGE_IELTS_16_COVER_URL,
   CAMBRIDGE_IELTS_17_COVER_URL,
   CAMBRIDGE_IELTS_18_COVER_URL,
@@ -33,7 +34,11 @@ export type ListeningIeltsTestId =
   | "cam16-test1"
   | "cam16-test2"
   | "cam16-test3"
-  | "cam16-test4";
+  | "cam16-test4"
+  | "cam15-test1"
+  | "cam15-test2"
+  | "cam15-test3"
+  | "cam15-test4";
 
 export type ListeningIeltsTest = {
   testId: ListeningIeltsTestId;
@@ -251,6 +256,42 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     testNumber: 1,
     coverImageUrl: CAMBRIDGE_IELTS_16_COVER_URL,
     catalogOrder: cambridgeIeltsCatalogOrder(16, 1),
+  },
+  {
+    testId: "cam15-test4",
+    label: "Cambridge 15 · Test 4",
+    bookTitle: "Cambridge IELTS 15 Academic",
+    testNumber: 4,
+    coverImageUrl: CAMBRIDGE_IELTS_15_COVER_URL,
+    coverImageObjectPosition: "50% 40%",
+    catalogOrder: cambridgeIeltsCatalogOrder(15, 4),
+  },
+  {
+    testId: "cam15-test3",
+    label: "Cambridge 15 · Test 3",
+    bookTitle: "Cambridge IELTS 15 Academic",
+    testNumber: 3,
+    coverImageUrl: CAMBRIDGE_IELTS_15_COVER_URL,
+    coverImageObjectPosition: "50% 40%",
+    catalogOrder: cambridgeIeltsCatalogOrder(15, 3),
+  },
+  {
+    testId: "cam15-test2",
+    label: "Cambridge 15 · Test 2",
+    bookTitle: "Cambridge IELTS 15 Academic",
+    testNumber: 2,
+    coverImageUrl: CAMBRIDGE_IELTS_15_COVER_URL,
+    coverImageObjectPosition: "50% 40%",
+    catalogOrder: cambridgeIeltsCatalogOrder(15, 2),
+  },
+  {
+    testId: "cam15-test1",
+    label: "Cambridge 15 · Test 1",
+    bookTitle: "Cambridge IELTS 15 Academic",
+    testNumber: 1,
+    coverImageUrl: CAMBRIDGE_IELTS_15_COVER_URL,
+    coverImageObjectPosition: "50% 40%",
+    catalogOrder: cambridgeIeltsCatalogOrder(15, 1),
   },
 ] as const;
 

@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "partId": "cam15-t2-p4",
+  "audioFile": "cam15-test2-part4.mp3",
+  "durationSeconds": 524.842667,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Part four. You will hear part of a presentation about an agricultural programme in the country",
+      "start": 0.02,
+      "end": 7.5
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "of Mozambique. First, you have some time to look at questions 31-40. Now listen carefully",
+      "start": 7.5,
+      "end": 66.38
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "and answer questions 31-40. I'm going to report on a case study of a programme which has",
+      "start": 66.38,
+      "end": 77.12
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "been set up to help rural populations in Mozambique, a largely agricultural country in South East Africa.",
+      "start": 77.12,
+      "end": 86.5
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "The programme worked with three communities in Chikwala-Quala District near the Limpopo River.",
+      "start": 86.5,
+      "end": 95.46
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "This is a dry and arid region with unpredictable rainfall. Because of this, people in the area",
+      "start": 95.46,
+      "end": 104.86
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "were unable to support themselves through agriculture, and instead, they used the forest as a means of",
+      "start": 104.86,
+      "end": 113.42
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "providing themselves with an income, mainly by selling charcoal. However, this was not a sustainable",
+      "start": 113.42,
+      "end": 123.4
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "way of living in the long term, as they were rapidly using up this resource. To support agriculture",
+      "start": 123.4,
+      "end": 133.44
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "in this dry region, the programme focused primarily on making use of existing water resources",
+      "start": 133.44,
+      "end": 141.3
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "from the Limpopo River by setting up systems of irrigation, which would provide a dependable water supply",
+      "start": 141.3,
+      "end": 150.64
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "for crops and animals. The programme worked closely with the District Government in order to find the",
+      "start": 150.64,
+      "end": 160.16
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "best way of implementing this. The region already had one farmer's association, and it was decided",
+      "start": 160.16,
+      "end": 169.92
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "to set up two more of these. These associations planned and carried out activities including water",
+      "start": 169.92,
+      "end": 179.82
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "management, livestock breeding, and agriculture, and it was notable that in general women formed the",
+      "start": 179.82,
+      "end": 189.38
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "majority of the workforce. It was decided that in order to keep the crops safe from animals, both wild and domestic,",
+      "start": 189.38,
+      "end": 201.61
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "special areas should be fenced off where the crops could be grown. The community was responsible for creating these",
+      "start": 201.61,
+      "end": 211.45
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "fences, but the programme provided the necessary wire for making them. Once the area had been fenced off,",
+      "start": 211.45,
+      "end": 222.37
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "it could be cultivated. The land was dug so that vegetables and cereals appropriate to the climate could be",
+      "start": 222.37,
+      "end": 231.87
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "grown, and the programme provided the necessary seeds for this. The programme also provided pumps,",
+      "start": 231.87,
+      "end": 242.53
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "so that water could be brought from the river in pipes to the fields. However, the labour was all provided by local people,",
+      "start": 242.53,
+      "end": 253.21
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "and they also provided and put up the posts that supported the fences around the fields. Once the programme had been set up,",
+      "start": 253.21,
+      "end": 269.97
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "its development was monitored carefully. The farmers were able to grow enough produce, not just for their own needs, but also to sell.",
+      "start": 269.97,
+      "end": 282.57
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "However, getting the produce to places where it could be marketed was sometimes a problem, as the farmers did not have access to transport,",
+      "start": 282.57,
+      "end": 295.33
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "and this resulted in large amounts of produce, especially vegetables being spoiled.",
+      "start": 295.33,
+      "end": 304.09
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "This problem was discussed with the farmers associations, and it was decided that in order to prevent food from being spoiled,",
+      "start": 304.09,
+      "end": 315.43
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "the farmers needed to learn techniques for its preservation. There was also an additional initiative that had not been originally planned,",
+      "start": 315.43,
+      "end": 327.43
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "but which became a central feature of the programme. This was when farmers started to dig holes for tanks in the fenced-off areas,",
+      "start": 327.43,
+      "end": 340.09
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "and to fill these with water and use them for breeding fish, an important source of protein.",
+      "start": 340.09,
+      "end": 349.41
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "After a time, another suggestion was made by local people, which hadn't been part of the programme's original proposal, but which was also adopted later on.",
+      "start": 349.41,
+      "end": 363.65
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "They decided to try setting up colonies of bees, which would provide honey, both for their own consumption and to sell.",
+      "start": 363.65,
+      "end": 376.99
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "So, what lessons can be learned from this programme?",
+      "start": 376.99,
+      "end": 382.57
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "First of all, it tells us that in dry, arid regions, if there is access to a reliable source of water, there is great potential for the development of agriculture.",
+      "start": 382.57,
+      "end": 397.65
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "In Chiquala-Quala, there was a marked improvement in agricultural production, which improved food security, and benefited local people by providing them with both food and income.",
+      "start": 397.65,
+      "end": 414.85
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "However, it's important to set realistic timelines for each phase of the programme, especially for its design.",
+      "start": 414.85,
+      "end": 425.73
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "As mistakes made at this stage may be hard to correct later on.",
+      "start": 425.73,
+      "end": 433.35
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "The programme demonstrates that sustainable development is possible in areas where there is...",
+      "start": 433.35,
+      "end": 444.46
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "That is the end of part 4. You now have one minute to check your answers to part 4, that is the end of the listening test.",
+      "start": 444.46,
+      "end": 515.66
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "In the IELTS test, you would now have 10 minutes to transfer your answers to the answer sheet.",
+      "start": 515.66,
+      "end": 524.843
+    }
+  ]
+}

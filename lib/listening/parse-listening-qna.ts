@@ -91,6 +91,9 @@ function isQnaNoiseLine(line: string): boolean {
   const t = normalizeLine(line);
   if (!t) return true;
   if (/^advertisements?$/i.test(t)) return true;
+  if (/^audio player$/i.test(t)) return true;
+  if (/^use up\/down arrow keys to increase or decrease volume\.?$/i.test(t)) return true;
+  if (/^\d{1,2}:\d{2}(?::\d{2})?$/.test(t)) return true;
   return false;
 }
 

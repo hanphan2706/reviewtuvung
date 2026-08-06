@@ -1,0 +1,513 @@
+{
+  "version": 1,
+  "partId": "cam15-t2-p2",
+  "audioFile": "cam15-test2-part2.mp3",
+  "durationSeconds": 423.68,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Part 2",
+      "start": 0,
+      "end": 2
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "You will hear part of a talk to a gardening club about a local park.",
+      "start": 2,
+      "end": 8.54
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "First, you have some time to look at questions 11-14.",
+      "start": 8.54,
+      "end": 43.5
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Now listen carefully and answer questions 11-14.",
+      "start": 43.5,
+      "end": 50.95
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "I'm very pleased to welcome this evening's guest speaker, Mark Logan,",
+      "start": 50.95,
+      "end": 56.19
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "who's going to tell us about the recent transformation of Minster Park.",
+      "start": 56.19,
+      "end": 60.27
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Over to you, Mark.",
+      "start": 60.27,
+      "end": 62.39
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Thank you. I'm sure you're all familiar with Minster Park.",
+      "start": 62.39,
+      "end": 67.79
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "It's been a feature of the city for well over a century",
+      "start": 67.79,
+      "end": 71.87
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "and has been the responsibility of the city council for most of that time.",
+      "start": 71.87,
+      "end": 76.71
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "What perhaps isn't so well known is the origin of the park.",
+      "start": 76.71,
+      "end": 82.41
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Unlike many public parks that started in private ownership",
+      "start": 82.41,
+      "end": 86.11
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "as the garden of a large house, for instance,",
+      "start": 86.11,
+      "end": 90.37
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Minster was some wasteland,",
+      "start": 90.37,
+      "end": 93.55
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "which people living nearby started planting with flowers in 1892.",
+      "start": 93.55,
+      "end": 100.35
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "It was unclear who actually owned the land,",
+      "start": 100.35,
+      "end": 103.85
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "and this wasn't settled until 20 years later",
+      "start": 103.85,
+      "end": 107.11
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "when the council took possession of it.",
+      "start": 107.11,
+      "end": 110.75
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "You may have noticed the statue near one of the entrances.",
+      "start": 110.75,
+      "end": 115.07
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "It's of Diane Gosforth who played a key role in the history of the park.",
+      "start": 115.07,
+      "end": 121.33
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Once the council had become the legal owner,",
+      "start": 121.33,
+      "end": 124.71
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "it planned to sell the land for housing.",
+      "start": 124.71,
+      "end": 128.07
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Many local people wanted it to remain a place that everyone could go to",
+      "start": 128.07,
+      "end": 132.83
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "to enjoy the fresh air and natural environment.",
+      "start": 132.83,
+      "end": 136.67
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Remember, the park is in a densely populated residential area.",
+      "start": 136.67,
+      "end": 142.09
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Diane Gosforth was one of those people,",
+      "start": 142.09,
+      "end": 146.21
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "and she organised petitions and demonstrations,",
+      "start": 146.21,
+      "end": 150.07
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "which eventually made the council change its mind about the future of the land.",
+      "start": 150.07,
+      "end": 156.19
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Soon after this, the First World War broke out in 1914,",
+      "start": 156.19,
+      "end": 162.49
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "and most of the park was dug up and planted with vegetables,",
+      "start": 162.49,
+      "end": 166.71
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "which were sold locally.",
+      "start": 166.71,
+      "end": 169.05
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "At one stage, the army considered taking it over for true exercises,",
+      "start": 169.05,
+      "end": 174.49
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "and got as far as contacting the city council,",
+      "start": 174.49,
+      "end": 178.03
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "then decided the park was too small to be of use.",
+      "start": 178.03,
+      "end": 183.25
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "There were occasional public meetings during the war,",
+      "start": 183.25,
+      "end": 186.97
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "in an area that had been retained as grass.",
+      "start": 186.97,
+      "end": 190.79
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "After the war, the park was turned back more or less to how it had been",
+      "start": 190.79,
+      "end": 196.23
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "before 1914, and continued almost unchanged until recently.",
+      "start": 196.23,
+      "end": 203.29
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "Plans for transforming it were drawn up at various times,",
+      "start": 203.29,
+      "end": 207.67
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "most recently in 2013, though they were revised in 2015 before any work had started.",
+      "start": 207.67,
+      "end": 216.55
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "The changes finally got going in 2016, and were finished on schedule last year.",
+      "start": 216.55,
+      "end": 226.29
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "Before you hear the rest of the talk, you have some time to look at questions 15 to 20.",
+      "start": 226.29,
+      "end": 263.26
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "Now listen and answer questions 15 to 20.",
+      "start": 263.26,
+      "end": 270.52
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "Okay, let me tell you about some of the changes that have been made,",
+      "start": 270.52,
+      "end": 275.88
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "and some things that have been retained.",
+      "start": 275.88,
+      "end": 278.66
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "If you look at this map, you'll see the familiar outline of the park,",
+      "start": 278.66,
+      "end": 283.6
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "with the river forming the northern boundary,",
+      "start": 283.6,
+      "end": 286.4
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "and a gate in each of the other three walls.",
+      "start": 286.4,
+      "end": 291.26
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "The statue of Diane Gosforth has been moved.",
+      "start": 291.26,
+      "end": 295.6
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "It used to be close to the south gate,",
+      "start": 295.6,
+      "end": 298.66
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "but it's now immediately to the north of the Lilypond,",
+      "start": 298.66,
+      "end": 302.76
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "almost in the centre of the park, which makes it much more visible.",
+      "start": 302.76,
+      "end": 308.44
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "There's a new area of wooden sculptures,",
+      "start": 308.44,
+      "end": 311.78
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "which are on the riverbank, where the path from the east gate",
+      "start": 311.78,
+      "end": 315.86
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "makes a sharp bend.",
+      "start": 315.86,
+      "end": 318.28
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "There are two areas that are particularly intended for children.",
+      "start": 318.28,
+      "end": 322.88
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "The playground has been enlarged and improved,",
+      "start": 322.88,
+      "end": 326.06
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "and that's between the river and the path that leads from the pond to the river.",
+      "start": 326.06,
+      "end": 333.32
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "Then there's a new maze, a circular series of paths separated by low hedges.",
+      "start": 333.32,
+      "end": 340.16
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "That's near the Westgate.",
+      "start": 340.16,
+      "end": 342.97
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "You go north from there towards the river,",
+      "start": 342.97,
+      "end": 346.08
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "and then turn left to reach it.",
+      "start": 346.08,
+      "end": 349.5
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "There have been tennis courts in the park for many years,",
+      "start": 349.5,
+      "end": 353.38
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "and they've been doubled from four to eight.",
+      "start": 353.38,
+      "end": 357.92
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "They're still in the southwest corner of the park,",
+      "start": 357.92,
+      "end": 361
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "where there's a right-angle bend in the path.",
+      "start": 361,
+      "end": 364.72
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "Something else I'd like to mention is the new fitness area.",
+      "start": 364.72,
+      "end": 368.6
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "This is right next to the Lilypond, on the same side as the Westgate.",
+      "start": 368.6,
+      "end": 375
+    },
+    {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "Now, as you're all gardeners,",
+      "start": 375,
+      "end": 378.56
+    },
+    {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "I'm sure you'll like to hear about the plants that have been chosen for the park.",
+      "start": 378.56,
+      "end": 386.08
+    },
+    {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "That is the end of part two.",
+      "start": 386.08,
+      "end": 389
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "You now have 30 seconds to check your answers to part two.",
+      "start": 389,
+      "end": 423.68
+    }
+  ]
+}

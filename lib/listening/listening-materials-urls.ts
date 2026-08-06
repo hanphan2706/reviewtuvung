@@ -6,6 +6,7 @@ const CAM20_AUDIO_FILE = /^Cam20 Test[1-4] Part[1-4]\.mp3$/i;
 const CAM21_AUDIO_FILE = /^cam21-test[1-4]-part[1-4]\.mp3$/i;
 const CAM17_AUDIO_FILE = /^cam17-test[1-4]-part[1-4]\.mp3$/i;
 const CAM16_AUDIO_FILE = /^cam16-test[1-4]-part[1-4]\.mp3$/i;
+const CAM15_AUDIO_FILE = /^cam15-test[1-4]-part[1-4]\.mp3$/i;
 const TACTICS_BASIC_AUDIO_FILE = /^Unit\d{2}-Listening\d{2}\.mp3$/;
 const BASIC_IELTS_AUDIO_FILE = /^bil-\d{2}\.mp3$/i;
 const REAL_TEST_AUDIO_FILE = /^real test \d+\.mp3$/i;
@@ -26,6 +27,9 @@ export function listeningPartAudioFileName(examSlug: string, test: number, part:
   }
   if (examSlug === "cam16") {
     return `cam16-test${test}-part${part}.mp3`;
+  }
+  if (examSlug === "cam15") {
+    return `cam15-test${test}-part${part}.mp3`;
   }
   return `Test${test} Part${part}.mp3`;
 }
@@ -74,6 +78,7 @@ export function isAllowedListeningAudioFile(fileName: string): boolean {
     CAM21_AUDIO_FILE.test(fileName) ||
     CAM17_AUDIO_FILE.test(fileName) ||
     CAM16_AUDIO_FILE.test(fileName) ||
+    CAM15_AUDIO_FILE.test(fileName) ||
     TACTICS_BASIC_AUDIO_FILE.test(fileName) ||
     BASIC_IELTS_AUDIO_FILE.test(fileName) ||
     REAL_TEST_AUDIO_FILE.test(fileName) ||

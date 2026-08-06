@@ -154,6 +154,54 @@ const LISTENING_PART_IMAGES: Record<string, string> = {
   "cam18-t4-p4":
     "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=80&auto=format&fit=crop",
   /** Cam 17 — Buckworth Conservation Group */
+  /** Cam 15 — Bankside Recruitment Agency */
+  "cam15-t1-p1":
+    "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80&auto=format&fit=crop",
+  /** Matthews Island Holidays */
+  "cam15-t1-p2":
+    "https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=1200&q=80&auto=format&fit=crop",
+  /** Birth order and personality */
+  "cam15-t1-p3":
+    "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1200&q=80&auto=format&fit=crop",
+  /** Eucalyptus tree in Australia */
+  "cam15-t1-p4":
+    "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=80&auto=format&fit=crop",
+  /** Festival information */
+  "cam15-t2-p1":
+    "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&q=80&auto=format&fit=crop",
+  /** Minster Park */
+  "cam15-t2-p2":
+    "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=1200&q=80&auto=format&fit=crop",
+  /** Charles Dickens display */
+  "cam15-t2-p3":
+    "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=1200&q=80&auto=format&fit=crop",
+  /** Agricultural programme Mozambique */
+  "cam15-t2-p4":
+    "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1200&q=80&auto=format&fit=crop",
+  /** Employment agency jobs */
+  "cam15-t3-p1":
+    "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80&auto=format&fit=crop",
+  /** Street Play Scheme */
+  "cam15-t3-p2":
+    "https://images.unsplash.com/photo-1472162072942-cd5147eb3902?w=1200&q=80&auto=format&fit=crop",
+  /** Hazel newspaper analysis */
+  "cam15-t3-p3":
+    "https://images.unsplash.com/photo-1495020689067-958852a7765e?w=1200&q=80&auto=format&fit=crop",
+  /** Early history of keeping clean */
+  "cam15-t3-p4":
+    "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&q=80&auto=format&fit=crop",
+  /** Customer satisfaction survey */
+  "cam15-t4-p1":
+    "https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=1200&q=80&auto=format&fit=crop",
+  /** Croft Valley Park */
+  "cam15-t4-p2":
+    "https://images.unsplash.com/photo-1465146633011-14f8e0781093?w=1200&q=80&auto=format&fit=crop",
+  /** Presentation about refrigeration */
+  "cam15-t4-p3":
+    "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=1200&q=80&auto=format&fit=crop",
+  /** Industrial Revolution Britain */
+  "cam15-t4-p4":
+    "https://images.unsplash.com/photo-1513828583688-c52646db42da?w=1200&q=80&auto=format&fit=crop",
   /** Cam 16 — Children’s Engineering Workshops */
   "cam16-t1-p1":
     "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80&auto=format&fit=crop",

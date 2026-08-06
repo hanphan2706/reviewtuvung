@@ -1,0 +1,485 @@
+{
+  "version": 1,
+  "partId": "cam15-t4-p3",
+  "audioFile": "cam15-test4-part3.mp3",
+  "durationSeconds": 418.858667,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "You will hear two students of social history called Annie and Jack discussing their presentation about refrigeration.",
+      "start": 2.12,
+      "end": 11.4
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "First, you have some time to look at questions 21 to 24.",
+      "start": 11.4,
+      "end": 46.71
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Now listen carefully and answer questions 21 to 24.",
+      "start": 46.71,
+      "end": 54.36
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Okay Jack, before we plan our presentation about refrigeration, let's discuss what we've discovered so far.",
+      "start": 54.36,
+      "end": 61.68
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Finally though I have to admit I haven't done much research yet.",
+      "start": 61.68,
+      "end": 65.76
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Normie, but I found an interesting article about ice houses.",
+      "start": 65.76,
+      "end": 70.28
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "I'd seen some 18th and 19th century ones here in the UK so I knew they were often built in a shady area or underground,",
+      "start": 70.28,
+      "end": 79.6
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "close to lakes that might freeze in the winter.",
+      "start": 79.6,
+      "end": 82.66
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Then blocks of ice could be cut and stored in the ice house.",
+      "start": 82.66,
+      "end": 87
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "But I didn't realise that insulating the blocks with straw or sawdust meant they didn't melt for months.",
+      "start": 87,
+      "end": 94.42
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "The ancient Romans had refrigeration too.",
+      "start": 94.42,
+      "end": 97.06
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Why didn't know that?",
+      "start": 97.06,
+      "end": 98.42
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Yes, pits were dug in the ground and snow was imported from the mountains, even though they were at quite a distance.",
+      "start": 98.42,
+      "end": 106.6
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "The snow was stored in the pits.",
+      "start": 106.6,
+      "end": 109.22
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Ice formed at the bottom of it, both the ice and the snow were then sold.",
+      "start": 109.22,
+      "end": 114.66
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "The ice cost more than the snow, and my guess is that only the wealthy members of society could afford it.",
+      "start": 114.66,
+      "end": 121.22
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "I wouldn't be surprised.",
+      "start": 121.22,
+      "end": 123
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "I also came across an article about modern domestic fridges.",
+      "start": 123,
+      "end": 127.2
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Several different technologies are used, but they were too complex for me to understand.",
+      "start": 127.2,
+      "end": 131.96
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "You have to wonder what happens when people get rid of old ones.",
+      "start": 131.96,
+      "end": 136.28
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "You mean because the gas is in them are harmful for the environment?",
+      "start": 136.28,
+      "end": 139.9
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Exactly. At least there are now plenty of organisations that will recycle most of the components safely,",
+      "start": 139.9,
+      "end": 145.24
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "but of course, some people just dump old fridges in the countryside.",
+      "start": 145.24,
+      "end": 149.52
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "It's hard to see how they can be stopped, unfortunately.",
+      "start": 149.52,
+      "end": 152.98
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "In the UK, we get rid of three million a year altogether.",
+      "start": 152.98,
+      "end": 157.06
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "That sounds a lot, especially because fridges hardly ever break down.",
+      "start": 157.06,
+      "end": 161.16
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "That's right. In this country, we keep domestic fridges for 11 years on average, and a lot lasts for 20 or more.",
+      "start": 161.16,
+      "end": 168.64
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "So if you divide the cost by the number of years you can use a fridge, they're not expensive, compared with some household appliances.",
+      "start": 168.64,
+      "end": 175.94
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "True. I suppose manufacture is encourage people to spend more by making them different colours and designs.",
+      "start": 175.94,
+      "end": 182.64
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "I'm sure when my parents bought their first fridge, they had hardly any choice.",
+      "start": 182.64,
+      "end": 187.4
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Yes, there's been quite a change.",
+      "start": 187.4,
+      "end": 191.93
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Before you hear the rest of the discussion, you have some time to look at questions 25 to 30.",
+      "start": 191.93,
+      "end": 198.39
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Now listen and answer questions 25 to 30.",
+      "start": 198.39,
+      "end": 236.36
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Right, let's make a list of topics to cover in our presentation and decide who's going to do more research on them.",
+      "start": 236.36,
+      "end": 243.84
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Then later we can get together and plan the next step.",
+      "start": 243.84,
+      "end": 245.98
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Okay. How about starting with how useful refrigeration is and the range of goods that are refrigerated nowadays?",
+      "start": 245.98,
+      "end": 253.68
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Because of course, it's not just food and drinks.",
+      "start": 253.68,
+      "end": 256.74
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "No, I suppose flowers and medicines are refrigerated too.",
+      "start": 256.74,
+      "end": 260.78
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "And computers, I could do that unless you particularly want to.",
+      "start": 260.78,
+      "end": 265.68
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "Nope, that's fine by me.",
+      "start": 265.68,
+      "end": 267.74
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "What about the effects of refrigeration on people's health?",
+      "start": 267.74,
+      "end": 271
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "After all, some of the chemicals used in the 19th century were pretty harmful, but they have been lots of benefits too.",
+      "start": 271,
+      "end": 278.48
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "Like always having access to fresh food. Do you fancy dealing with that?",
+      "start": 278.48,
+      "end": 281.92
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "I'm not terribly keen to be honest.",
+      "start": 281.92,
+      "end": 284.2
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "No, me. My mind just goes blank when I read anything about chemicals.",
+      "start": 284.2,
+      "end": 289.28
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "Oh, ball right then. I'll do you a favour. But you owe me Jack.",
+      "start": 289.28,
+      "end": 294.34
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "Okay. What about the effects on food producers?",
+      "start": 294.34,
+      "end": 298.78
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "Like farmers in poorer countries being able to export their produce to developed countries?",
+      "start": 298.78,
+      "end": 304.56
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "Something for you maybe?",
+      "start": 304.56,
+      "end": 306.52
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "I don't mind. You should be quite interested.",
+      "start": 306.52,
+      "end": 309.24
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "I think we should also look at how refrigeration has helped whole cities.",
+      "start": 309.24,
+      "end": 313.52
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "Like Las Vegas, which couldn't exist without refrigeration because it's in the middle of a desert.",
+      "start": 313.52,
+      "end": 319.64
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "Right. I had a quick look at an economics book in the library that's got a chapter about this sort of thing.",
+      "start": 319.64,
+      "end": 327.12
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "I could give you the title if you want to do this section.",
+      "start": 327.12,
+      "end": 330.04
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "Not particularly to be honest. I find economics books pretty heavy going as a rule.",
+      "start": 330.04,
+      "end": 333.82
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "Okay, leave it to me then.",
+      "start": 333.82,
+      "end": 335.86
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "Thanks. Then there's transport and the difference that refrigerated trucks have made.",
+      "start": 335.86,
+      "end": 342.54
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "I wouldn't mind having a go at that.",
+      "start": 342.54,
+      "end": 345.26
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "Don't forget trains too.",
+      "start": 345.26,
+      "end": 346.62
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "I read something about milk and butter being transported in refrigerated railroad cars in the USA right back in the 1840s.",
+      "start": 346.62,
+      "end": 354.02
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "I hadn't thought of trains. Thanks.",
+      "start": 354.02,
+      "end": 356.84
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "Shall we have a separate section on domestic fridges? After all, there's something everyone's familiar with.",
+      "start": 356.84,
+      "end": 362.28
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "What about splitting it into two?",
+      "start": 362.28,
+      "end": 363.7
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "You could investigate 19th and 20th century fridges and I'll concentrate on what's available these days",
+      "start": 363.7,
+      "end": 371.22
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "and how manufacturers differentiate their products from those of their competitors.",
+      "start": 371.22,
+      "end": 376.3
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "Okay, that's it me.",
+      "start": 376.3,
+      "end": 380.93
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "That is the end of part three.",
+      "start": 380.93,
+      "end": 383.79
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "You now have 30 seconds to check your answers to part three.",
+      "start": 383.79,
+      "end": 418.859
+    }
+  ]
+}

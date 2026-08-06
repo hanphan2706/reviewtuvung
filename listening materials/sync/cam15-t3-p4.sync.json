@@ -1,0 +1,457 @@
+{
+  "version": 1,
+  "partId": "cam15-t3-p4",
+  "audioFile": "cam15-test3-part4.mp3",
+  "durationSeconds": 467.072,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Part 4.",
+      "start": 0.02,
+      "end": 2.18
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "You will hear part of a lecture on the early history of keeping clean.",
+      "start": 2.18,
+      "end": 7.76
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "First, you have some time to look at questions 31 to 40.",
+      "start": 7.76,
+      "end": 63.44
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Now listen carefully and answer questions 31 to 40.",
+      "start": 63.44,
+      "end": 70.72
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Nowadays we use different products for personal cleanliness, laundry, dish washing and household",
+      "start": 70.72,
+      "end": 78.1
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "cleaning.",
+      "start": 78.1,
+      "end": 78.8
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "But this is very much a 20th century development.",
+      "start": 78.8,
+      "end": 83.3
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "The origins of cleanliness date back to prehistoric times.",
+      "start": 83.3,
+      "end": 88.42
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Since water is essential for life, the earliest people lived near water and knew something",
+      "start": 88.42,
+      "end": 95.06
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "about its cleansing properties, at least that it rinsed mud off their hands.",
+      "start": 95.06,
+      "end": 100.34
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "During the excavation of ancient Babylon, evidence was found that soap making was known as",
+      "start": 100.34,
+      "end": 108.74
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "earliest 2,800 BC.",
+      "start": 108.74,
+      "end": 112.4
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Archaeologists discovered cylinders made of clay, with inscriptions on them saying that",
+      "start": 112.4,
+      "end": 118.38
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "fats were boiled with ashes.",
+      "start": 118.38,
+      "end": 121.22
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "This is a method of making soap, though there's no reference to the purpose of this material.",
+      "start": 121.22,
+      "end": 127.16
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "The early Greeks bathed for aesthetic reasons and apparently didn't use soap.",
+      "start": 127.16,
+      "end": 133.56
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Instead, they cleaned their bodies with blocks of sand, pumice and ashes, then anointed themselves",
+      "start": 133.56,
+      "end": 141.14
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "with oil and scraped off the oil and dirt with a metal instrument known as a strigil.",
+      "start": 141.14,
+      "end": 148.72
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "They also used oil mixed with ashes.",
+      "start": 148.72,
+      "end": 151.14
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Clothes were washed without soap in streams.",
+      "start": 151.14,
+      "end": 156.92
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "The ancient Germans and Gauls are also credited with discovering how to make a substance called",
+      "start": 156.92,
+      "end": 163.24
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "soap, made of melted animal fat and ashes.",
+      "start": 163.24,
+      "end": 168.1
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "They used this mixture to tint their hair red.",
+      "start": 168.1,
+      "end": 172.86
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Soap got its name, according to an ancient Roman legend, from Mount Sappho, where animals",
+      "start": 172.86,
+      "end": 179.82
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "were sacrificed, leaving deposits of animal fat.",
+      "start": 179.82,
+      "end": 183.92
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Rain washed these deposits, along with wood ashes, down into the clay soil along the river",
+      "start": 183.92,
+      "end": 190.32
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "tibre.",
+      "start": 190.32,
+      "end": 191.52
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Women found that this mixture greatly reduced the effort required to wash their clothes.",
+      "start": 191.52,
+      "end": 198.38
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "As Roman civilization advanced, so did bathing.",
+      "start": 198.38,
+      "end": 203.2
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "The first of the famous Roman baths, supplied with water from their aqueducts, was built",
+      "start": 203.2,
+      "end": 208.86
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "around 312 BC.",
+      "start": 208.86,
+      "end": 212.52
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "The baths were luxurious, and bathing became very popular.",
+      "start": 212.52,
+      "end": 217.54
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "And by the second century AD, the Greek physician Galen recommended soap for both medicinal and",
+      "start": 217.54,
+      "end": 225.8
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "cleansing purposes.",
+      "start": 225.8,
+      "end": 232.26
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "After the fall of Rome in 467 AD and the resulting decline in bathing habits, much of Europe felt",
+      "start": 232.26,
+      "end": 241.02
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "the impact of filth on public health.",
+      "start": 241.02,
+      "end": 244.48
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "This lack of personal cleanliness and related unsanitary living conditions were major factors",
+      "start": 244.48,
+      "end": 250.92
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "in the outbreaks of disease in the Middle Ages, and especially the black death of the 14th",
+      "start": 250.92,
+      "end": 257.36
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "century.",
+      "start": 257.36,
+      "end": 258.82
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "Nevertheless, soap making became an established craft in Europe, and associations of soap makers",
+      "start": 258.82,
+      "end": 265.44
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "guarded their trade secrets closely.",
+      "start": 265.44,
+      "end": 268.82
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "Vegetable and animal oils were used with ashes of plants, along with perfume, apparently",
+      "start": 268.82,
+      "end": 275.16
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "for the first time.",
+      "start": 275.16,
+      "end": 277.18
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "Gradually more varieties of soap became available for shaving and shampooing, as well as bathing",
+      "start": 277.18,
+      "end": 283.72
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "and laundering.",
+      "start": 283.72,
+      "end": 285.88
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "A major step toward large-scale commercial soap making occurred in 1791 when a French chemist",
+      "start": 285.88,
+      "end": 293.58
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "Nicholas Leblanc patented a process for turning salt into soda ash or sodium carbonate.",
+      "start": 293.58,
+      "end": 301.98
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "Soda ash is the alkali obtained from ashes that combines with fat to form soap.",
+      "start": 301.98,
+      "end": 309.44
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "The Leblanc process yielded quantities of good quality, inexpensive soda ash.",
+      "start": 309.44,
+      "end": 316.12
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "Modern soap making was born some 20 years later, in the early 19th century, with the discovery",
+      "start": 316.12,
+      "end": 322.54
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "by Michel Eugene Chèvreul, another French chemist, of the chemical nature and relationship",
+      "start": 322.54,
+      "end": 328.86
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "of fats, glycerine, and fatty acids.",
+      "start": 328.86,
+      "end": 333.16
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "His studies established the basis for both fat and soap chemistry, and soap making became",
+      "start": 333.16,
+      "end": 339.4
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "a science.",
+      "start": 339.4,
+      "end": 341.06
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "Further developments during the 19th century made it easier and cheaper to manufacture soap.",
+      "start": 341.06,
+      "end": 347.8
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "Until the 19th century soap was regarded as a luxury item, and was heavily taxed in several",
+      "start": 347.8,
+      "end": 354.66
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "countries, as it became more readily available it became an everyday necessity, a development",
+      "start": 354.66,
+      "end": 361.36
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "that was reinforced when the high tax was removed.",
+      "start": 361.36,
+      "end": 366.16
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "Soap was then something ordinary people could afford, and cleanliness standards improved.",
+      "start": 366.16,
+      "end": 372.18
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "With this widespread use came the development of milder soaps for bathing, and soaps for use",
+      "start": 372.18,
+      "end": 378.28
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "in the washing machines that were available to consumers by the turn of the 20th century.",
+      "start": 378.28,
+      "end": 386.67
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "That is the end of part 4.",
+      "start": 386.67,
+      "end": 389.91
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "You now have one minute to check your answers to part 4, that is the end of the listening test.",
+      "start": 389.91,
+      "end": 457.86
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "In the IELTS test, you would now have 10 minutes to transfer your answers to the answer sheet.",
+      "start": 457.86,
+      "end": 467.072
+    }
+  ]
+}

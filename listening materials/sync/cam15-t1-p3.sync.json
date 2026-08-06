@@ -1,0 +1,387 @@
+{
+  "version": 1,
+  "partId": "cam15-t1-p3",
+  "audioFile": "cam15-test1-part3.mp3",
+  "durationSeconds": 432.853333,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "You will hear two psychology students discussing the effects of the order in which the children in a family are born.",
+      "start": 0,
+      "end": 11.48
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "First, you have some time to look at questions 21 to 26.",
+      "start": 11.48,
+      "end": 46.22
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Now listen carefully and answer questions 21 to 26.",
+      "start": 46.22,
+      "end": 54.06
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Ed, how are you getting on with the reading for our presentation next week?",
+      "start": 54.06,
+      "end": 58.82
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Well, okay, Ruth, but there's so much of it.",
+      "start": 58.82,
+      "end": 62.28
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "I know. I hadn't realised birth order was such a popular area of research.",
+      "start": 62.28,
+      "end": 67.78
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "But the stuff on birth order and personality is mostly unreliable?",
+      "start": 67.78,
+      "end": 72.02
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "From what I've been reading, a lot of the claims about how your position in the family determines certain personality traits are just stereotypes with no robust evidence to support them.",
+      "start": 72.02,
+      "end": 83.06
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Okay, but that's an interesting point.",
+      "start": 83.06,
+      "end": 86.64
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "We could start by outlining what previous researchers shown.",
+      "start": 86.64,
+      "end": 90.72
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "There are studies going back over a hundred years.",
+      "start": 90.72,
+      "end": 93.78
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Yeah, so we could just run through some of the typical traits.",
+      "start": 93.78,
+      "end": 97.86
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Like the consensus seems to be that oldest children are generally less well adjusted because they never get over the arrival of a younger sibling.",
+      "start": 97.86,
+      "end": 106.36
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Right, but on a positive note, some studies claim that they were thought to be good at nurturing.",
+      "start": 106.36,
+      "end": 112.46
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Certainly in the past when people had large families, they would have been expected to look after the younger ones.",
+      "start": 112.46,
+      "end": 118.66
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "There isn't such a clear picture for middle children.",
+      "start": 118.66,
+      "end": 121.72
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "But one trait that a lot of the studies mention is that they are easier to get on with than older or younger siblings.",
+      "start": 121.72,
+      "end": 129.82
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Hmm, generally eager to please and helpful, although that's certainly not accurate as far as my family goes.",
+      "start": 129.82,
+      "end": 134.82
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "My middle brother was a nightmare, always causing fights and envious of whatever I had.",
+      "start": 134.82,
+      "end": 141.56
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "As I said, none of this seemed to relate to my own experience.",
+      "start": 141.56,
+      "end": 145.98
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "I'm the youngest in my family and I don't recognize myself in any of the studies I've read about.",
+      "start": 145.98,
+      "end": 151.96
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "I'm supposed to have been a sociable and confident child who made friends easily.",
+      "start": 151.96,
+      "end": 156.76
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "But I was actually terribly shy.",
+      "start": 156.76,
+      "end": 158.8
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Really, that's funny. There have been hundreds of studies on twins but mostly about nurture versus nature.",
+      "start": 158.8,
+      "end": 166.92
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "There was one on personality which said that a twin is likely to be quite shy in social situations because they always have their twin around to depend on for support.",
+      "start": 166.92,
+      "end": 177.76
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "My cousins were like that when they were small. They were only interested in each other and found it hard to engage with other kids. They're fine now though.",
+      "start": 177.76,
+      "end": 187.62
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Only children have had a really bad press. A lot of studies have branded them as loners who think the world revolves around them because they've never had to fight for their parents' attention.",
+      "start": 187.62,
+      "end": 198.6
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "That does seem a bit harsh. One category I hadn't considered before was children with much older siblings.",
+      "start": 198.6,
+      "end": 205.62
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "A couple of studies mentioned that these children grew up more quickly and are expected to do basic things for themselves, like getting dressed.",
+      "start": 205.62,
+      "end": 213.78
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "I can see how that might be true. Although I expect there's sometimes the exact opposite, playing the baby role and clamoring for special treatment.",
+      "start": 213.78,
+      "end": 226.21
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Before you hear the rest of the discussion, you have some time to look at questions 27 to 30.",
+      "start": 226.21,
+      "end": 258.31
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Now listen and answer questions 27 to 30.",
+      "start": 258.31,
+      "end": 265.86
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "What was the problem with most of these studies? Do you think?",
+      "start": 265.86,
+      "end": 269.94
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "I think it was because in a lot of cases data was collected from only one sibling per family who rated him or herself and his or her siblings at the same time.",
+      "start": 269.94,
+      "end": 282.28
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Some of the old research into the relationship between birth order and academic achievement has been proved to be accurate though.",
+      "start": 282.28,
+      "end": 290.12
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Performances in intelligence tests declined slightly from the eldest child to his or her younger siblings. This has been proved in lots of recent studies.",
+      "start": 290.12,
+      "end": 300.78
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Yes, although what many of them didn't take into consideration was family size. The more siblings that are the likely are the family is to have a low socioeconomic status,",
+      "start": 300.78,
+      "end": 311.48
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "which can also account for differences between siblings in academic performance.",
+      "start": 311.48,
+      "end": 316.3
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "The oldest boy might be given more opportunities than his younger sisters, for example.",
+      "start": 316.3,
+      "end": 321.38
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "Exactly.",
+      "start": 321.38,
+      "end": 322.54
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "But the main reason for the marginally higher academic performance of oldest children is quite surprising, I think.",
+      "start": 322.54,
+      "end": 330.04
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "It's not only that they benefit intellectually from extra attention at a young age, which is what I would have expected.",
+      "start": 330.04,
+      "end": 337.3
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "It's that they benefit from being teachers for their younger siblings by verbalising processes.",
+      "start": 337.3,
+      "end": 342.52
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "Right, and this gives them status and confidence, which again contributes in a small way to better performance.",
+      "start": 342.52,
+      "end": 351.38
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "So would you say sibling rivalry has been a useful thing for you?",
+      "start": 351.38,
+      "end": 356
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "I think so. My younger brother was incredibly annoying and we fought a lot, but I think this has made me a stronger person.",
+      "start": 356,
+      "end": 364.36
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "I know how to defend myself.",
+      "start": 364.36,
+      "end": 366.4
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "We had some terrible arguments, and I would have died rather than apologise to him.",
+      "start": 366.4,
+      "end": 372.02
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "But we had to put up with each other, and most of the time we coexisted amicably enough.",
+      "start": 372.02,
+      "end": 378.14
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "Yes, my situation was pretty similar, but I don't think having two older brothers made me any less selfish.",
+      "start": 378.14,
+      "end": 385.78
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "I was never prepared to let my brothers use any of my stuff.",
+      "start": 385.78,
+      "end": 390.2
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "That's perfectly normal.",
+      "start": 390.2,
+      "end": 394.43
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "That is the end of part three.",
+      "start": 394.43,
+      "end": 397.79
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "You now have 30 seconds to check your answers to part three.",
+      "start": 397.79,
+      "end": 432.853
+    }
+  ]
+}

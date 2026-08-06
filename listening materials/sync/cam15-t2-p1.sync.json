@@ -1,0 +1,674 @@
+{
+  "version": 1,
+  "partId": "cam15-t2-p1",
+  "audioFile": "cam15-test2-part1.mp3",
+  "durationSeconds": 486.997333,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Test 2",
+      "start": 0.05,
+      "end": 2.29
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "This is the IELTS listening test.",
+      "start": 2.29,
+      "end": 6.17
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "You will hear a number of different recordings,",
+      "start": 6.17,
+      "end": 9.57
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "and you will have to answer questions on what you hear.",
+      "start": 9.57,
+      "end": 14.09
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "There will be time for you to read the instructions and questions,",
+      "start": 14.09,
+      "end": 18.17
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "and you will have a chance to check your work.",
+      "start": 18.17,
+      "end": 22.29
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "All the recordings will be played once only.",
+      "start": 22.29,
+      "end": 26.51
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "The test is in four parts.",
+      "start": 26.51,
+      "end": 30.23
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "At the end of the test, you will be given ten minutes to transfer your answers to the answer sheet.",
+      "start": 30.23,
+      "end": 38.59
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Now turn to part one.",
+      "start": 38.59,
+      "end": 45.51
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Part one.",
+      "start": 45.51,
+      "end": 47.33
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "You will hear a woman calling a tourist information office to ask about a festival.",
+      "start": 47.33,
+      "end": 54.41
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "First, you have some time to look at questions one to four.",
+      "start": 54.41,
+      "end": 58.53
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Now listen carefully and answer questions one to four.",
+      "start": 58.53,
+      "end": 86.26
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Good morning, you're through to the tourist information office.",
+      "start": 86.26,
+      "end": 90
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Tim speaking, how can I help you?",
+      "start": 90,
+      "end": 92.38
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Oh, hello. Could you give me some information about next month's festival please?",
+      "start": 92.38,
+      "end": 97.82
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "My family and I will be staying in the town that week.",
+      "start": 97.82,
+      "end": 101.9
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Of course.",
+      "start": 101.9,
+      "end": 102.08
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Well, it starts with a concert on the afternoon of the 17th.",
+      "start": 102.08,
+      "end": 106.84
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Oh, I heard about that.",
+      "start": 106.84,
+      "end": 108.54
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "The orchestra and singers come from the USA, don't they?",
+      "start": 108.54,
+      "end": 112.26
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "They're from Canada.",
+      "start": 112.26,
+      "end": 114.08
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "They're very popular over there.",
+      "start": 114.08,
+      "end": 116.78
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "They're going to perform a number of well-known pieces that will appeal to children as well as adults.",
+      "start": 116.78,
+      "end": 122.9
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "That sounds good.",
+      "start": 122.9,
+      "end": 124.2
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "My whole family are interested in music.",
+      "start": 124.2,
+      "end": 126.92
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "The next day, the 18th, there's a performance by a ballet company called Ustartis.",
+      "start": 126.92,
+      "end": 133.8
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Sorry.",
+      "start": 133.8,
+      "end": 134.4
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "The name is spelled EU-S-T-A-T-I-S.",
+      "start": 134.4,
+      "end": 142.62
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "They appeared in last year's festival and went down very well.",
+      "start": 142.62,
+      "end": 146.56
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Again, their programme is designed for all ages.",
+      "start": 146.56,
+      "end": 150.12
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Good. I expect we'll go to that.",
+      "start": 150.12,
+      "end": 153.18
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "I hope there's going to be a play during the festival.",
+      "start": 153.18,
+      "end": 156.94
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "A comedy, ideally.",
+      "start": 156.94,
+      "end": 158.36
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "You're in luck.",
+      "start": 158.36,
+      "end": 159.38
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "On the 19th and 20th, a local amateur group are performing one written by a member of the group.",
+      "start": 159.38,
+      "end": 166.68
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "It's called Jumima.",
+      "start": 166.68,
+      "end": 169.06
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "That'll be on in the town hall.",
+      "start": 169.06,
+      "end": 171.66
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "They've already performed it two or three times.",
+      "start": 171.66,
+      "end": 174.38
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "I haven't seen it myself, but the review in the local paper was very good.",
+      "start": 174.38,
+      "end": 179.46
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "And is it suitable for children?",
+      "start": 179.46,
+      "end": 182.16
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "Yes. In fact, it's aimed more at children than adults.",
+      "start": 182.16,
+      "end": 186.26
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "So both performances are in the afternoon.",
+      "start": 186.26,
+      "end": 190.02
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "And what about dance?",
+      "start": 190.02,
+      "end": 192.48
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "Will there be any performances?",
+      "start": 192.48,
+      "end": 194.52
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "Yes, also on the 20th, but in the evening.",
+      "start": 194.52,
+      "end": 198.18
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "A professional company is putting on a show of modern pieces with electronic music by young composers.",
+      "start": 198.18,
+      "end": 205.4
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "Uh-huh.",
+      "start": 205.4,
+      "end": 206.18
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "The show is about how people communicate or fail to communicate with each other.",
+      "start": 206.18,
+      "end": 211.64
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "So it's got the rather strange name, chat.",
+      "start": 211.64,
+      "end": 214.76
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "I suppose that's because that's something we do both face-to-face and online.",
+      "start": 214.76,
+      "end": 221.24
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "That's right.",
+      "start": 221.24,
+      "end": 225.46
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "Before you hear the rest of the conversation, you have some time to look at questions five to ten.",
+      "start": 225.46,
+      "end": 261.87
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "Now listen and answer questions five to ten.",
+      "start": 261.87,
+      "end": 268.65
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "Now there are also some workshops and other activities.",
+      "start": 268.65,
+      "end": 272.23
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "They'll all take place at least once every day.",
+      "start": 272.23,
+      "end": 275.71
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "So everyone who wants to take part will have a chance.",
+      "start": 275.71,
+      "end": 279.45
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "Good. We're particularly interested in cookery.",
+      "start": 279.45,
+      "end": 282.85
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "You don't happen to have a cookery workshop, do you?",
+      "start": 282.85,
+      "end": 286.25
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "We certainly do.",
+      "start": 286.25,
+      "end": 287.63
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "It's going to focus on how to make food part of a healthy lifestyle.",
+      "start": 287.63,
+      "end": 292.57
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "And it'll show that even sweet things like cakes can contain much less sugar than they usually do.",
+      "start": 292.57,
+      "end": 300.27
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "That might be worth going to.",
+      "start": 300.27,
+      "end": 302.53
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "We're trying to encourage our children to cook.",
+      "start": 302.53,
+      "end": 305.25
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "Another workshop is just for children and that's on creating posters to reflect the history of the town.",
+      "start": 305.25,
+      "end": 313.69
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "The aim is to make children aware of how both the town and people's lives have changed over the centuries.",
+      "start": 313.69,
+      "end": 322.21
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "The results will be exhibited in the community centre.",
+      "start": 322.21,
+      "end": 325.77
+    },
+    {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "Then the other workshop is in toy making and that's for adults only.",
+      "start": 325.77,
+      "end": 331.35
+    },
+    {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "Oh, why is that?",
+      "start": 331.35,
+      "end": 333.83
+    },
+    {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "Because it involves carpentry.",
+      "start": 333.83,
+      "end": 336.05
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "Participants will be making toys out of wood.",
+      "start": 336.05,
+      "end": 339.65
+    },
+    {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "So there'll be a lot of sharp chisels and other tools around.",
+      "start": 339.65,
+      "end": 344.25
+    },
+    {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "It makes sense to keep children away from it.",
+      "start": 344.25,
+      "end": 347.31
+    },
+    {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "Exactly.",
+      "start": 347.31,
+      "end": 348.29
+    },
+    {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "Now let me tell you about some of the outdoor activities.",
+      "start": 348.29,
+      "end": 352.83
+    },
+    {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "They'll be supervised while swimming.",
+      "start": 352.83,
+      "end": 355.49
+    },
+    {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "Wild swimming? What's that?",
+      "start": 355.49,
+      "end": 357.91
+    },
+    {
+      "id": "cue-79",
+      "speaker": null,
+      "text": "It just means swimming in natural waters rather than a swimming pool.",
+      "start": 357.91,
+      "end": 363.49
+    },
+    {
+      "id": "cue-80",
+      "speaker": null,
+      "text": "Oh, okay. In a lake, for instance.",
+      "start": 363.49,
+      "end": 366.47
+    },
+    {
+      "id": "cue-81",
+      "speaker": null,
+      "text": "Yes, there's a beautiful one just outside the town and that'll be the venue for the swimming.",
+      "start": 366.47,
+      "end": 372.79
+    },
+    {
+      "id": "cue-82",
+      "speaker": null,
+      "text": "There'll be lifeguards on duty, so it's suitable for all ages.",
+      "start": 372.79,
+      "end": 377.65
+    },
+    {
+      "id": "cue-83",
+      "speaker": null,
+      "text": "And finally, there'll be a walk in some nearby woods every day.",
+      "start": 377.65,
+      "end": 383.15
+    },
+    {
+      "id": "cue-84",
+      "speaker": null,
+      "text": "The leader is an expert on insects.",
+      "start": 383.15,
+      "end": 386.57
+    },
+    {
+      "id": "cue-85",
+      "speaker": null,
+      "text": "He'll show some that live in the woods and how important they are for the environment.",
+      "start": 386.57,
+      "end": 392.01
+    },
+    {
+      "id": "cue-86",
+      "speaker": null,
+      "text": "So there are going to be all sorts of different things to do during the festival.",
+      "start": 392.01,
+      "end": 397.13
+    },
+    {
+      "id": "cue-87",
+      "speaker": null,
+      "text": "There certainly are.",
+      "start": 397.13,
+      "end": 398.67
+    },
+    {
+      "id": "cue-88",
+      "speaker": null,
+      "text": "If you'd like to read about how the preparations for the festival are going,",
+      "start": 398.67,
+      "end": 403.43
+    },
+    {
+      "id": "cue-89",
+      "speaker": null,
+      "text": "the festival organiser is keeping a blog.",
+      "start": 403.43,
+      "end": 405.75
+    },
+    {
+      "id": "cue-90",
+      "speaker": null,
+      "text": "Just search online for the festival website and you'll find it.",
+      "start": 405.75,
+      "end": 410.67
+    },
+    {
+      "id": "cue-91",
+      "speaker": null,
+      "text": "Well, thank you very much for all the information.",
+      "start": 410.67,
+      "end": 413.81
+    },
+    {
+      "id": "cue-92",
+      "speaker": null,
+      "text": "You're welcome. Goodbye.",
+      "start": 413.81,
+      "end": 415.83
+    },
+    {
+      "id": "cue-93",
+      "speaker": null,
+      "text": "Goodbye.",
+      "start": 415.83,
+      "end": 419.12
+    },
+    {
+      "id": "cue-94",
+      "speaker": null,
+      "text": "That is the end of part one.",
+      "start": 419.12,
+      "end": 422.54
+    },
+    {
+      "id": "cue-95",
+      "speaker": null,
+      "text": "You now have one minute to check your answers to part one.",
+      "start": 422.54,
+      "end": 486.997
+    }
+  ]
+}

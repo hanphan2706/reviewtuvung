@@ -21,7 +21,7 @@ import { sanitizeListeningTranscript } from "../lib/sanitize-listening-transcrip
 import { splitTranscriptByPart } from "../lib/listening/split-transcript-parts";
 import type { ListeningFlowLessonContent } from "../lib/listening/tactics-basic-flow-types";
 
-type ExamSlug = "cam18" | "cam20" | "cam21" | "cam17" | "cam16";
+type ExamSlug = "cam18" | "cam20" | "cam21" | "cam17" | "cam16" | "cam15";
 
 const WRONG_GIST = [
   {
@@ -50,8 +50,8 @@ function parseArgs(argv: string[]): { exam: ExamSlug; tests: number[] } {
     if (a === "--all-tests") allTests = true;
   }
 
-  if (!["cam18", "cam20", "cam21", "cam17", "cam16"].includes(exam)) {
-    throw new Error("--exam must be cam18, cam20, cam21, cam17 or cam16");
+  if (!["cam18", "cam20", "cam21", "cam17", "cam16", "cam15"].includes(exam)) {
+    throw new Error("--exam must be cam18, cam20, cam21, cam17, cam16 or cam15");
   }
 
   const tests = allTests ? [1, 2, 3, 4] : [test];
@@ -216,6 +216,73 @@ const CAM16_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
   "cam16-t4-p4": {
     titleVi: "Sự tuyệt chủng của chim dodo",
     summaryVi: "Bài giảng về lịch sử dodo ở Mauritius, đặc điểm cơ thể và nguyên nhân tuyệt chủng.",
+  },
+};
+
+const CAM15_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
+  "cam15-t1-p1": {
+    titleVi: "Agency tuyển dụng Bankside",
+    summaryVi: "Amber hỏi việc tạm thời: liên hệ, phỏng vấn và lợi ích khi dùng agency.",
+  },
+  "cam15-t1-p2": {
+    titleVi: "Kỳ nghỉ đảo Matthews",
+    summaryVi: "Công ty mô tả tour Isle of Man: điểm gặp, bữa ăn và lịch trình sáu ngày.",
+  },
+  "cam15-t1-p3": {
+    titleVi: "Thứ tự sinh và tính cách",
+    summaryVi: "Sinh viên ôn nghiên cứu về vị trí trong gia đình, tính cách và thành tích học tập.",
+  },
+  "cam15-t1-p4": {
+    titleVi: "Cây bạch đàn ở Úc",
+    summaryVi: "Bài giảng về tầm quan trọng của eucalyptus, suy giảm số lượng và giả thuyết của Jackson.",
+  },
+  "cam15-t2-p1": {
+    titleVi: "Thông tin lễ hội",
+    summaryVi: "Cuộc gọi hỏi ngày diễn, workshop và hoạt động ngoài trời trước khi đặt chỗ.",
+  },
+  "cam15-t2-p2": {
+    titleVi: "Công viên Minster",
+    summaryVi: "Bài nói về lịch sử công viên và sơ đồ tượng, sân chơi, mê cung và khu thể thao.",
+  },
+  "cam15-t2-p3": {
+    titleVi: "Trưng bày Charles Dickens",
+    summaryVi: "Cathy và Graham lên kế hoạch trưng bày Dickens: đối tượng, lý do chọn và chủ đề tiểu thuyết.",
+  },
+  "cam15-t2-p4": {
+    titleVi: "Chương trình nông nghiệp Mozambique",
+    summaryVi: "Bài giảng về dự án vùng khô: nước, hàng rào, tiếp thị và bài học đánh giá.",
+  },
+  "cam15-t3-p1": {
+    titleVi: "Việc làm qua agency",
+    summaryVi: "Ứng viên nghe về việc admin ở Bắc London và kho hàng ở Nam London.",
+  },
+  "cam15-t3-p2": {
+    titleVi: "Street Play Scheme",
+    summaryVi: "Alice giải thích đóng đường cho trẻ chơi, quy tắc cư dân và kết quả King Street.",
+  },
+  "cam15-t3-p3": {
+    titleVi: "Hazel phân tích báo",
+    summaryVi: "Tutor hướng dẫn Hazel phân tích tin báo và chọn loại bài viết nào.",
+  },
+  "cam15-t3-p4": {
+    titleVi: "Lịch sử giữ vệ sinh",
+    summaryVi: "Bài giảng về rửa ráy và xà phòng từ thời tiền sử đến thói quen tắm châu Âu.",
+  },
+  "cam15-t4-p1": {
+    titleVi: "Khảo sát hài lòng khách hàng",
+    summaryVi: "Sophie trả lời khảo sát ga tàu về vé, hành trình và điều thích/không thích.",
+  },
+  "cam15-t4-p2": {
+    titleVi: "Công viên Croft Valley",
+    summaryVi: "Cập nhật hội đồng về sơ đồ quán cà phê, toilet, vườn và nhà kính.",
+  },
+  "cam15-t4-p3": {
+    titleVi: "Thuyết trình về làm lạnh",
+    summaryVi: "Annie và Jack chia chủ đề nghiên cứu icehouse, Rome cổ và tủ lạnh hiện đại.",
+  },
+  "cam15-t4-p4": {
+    titleVi: "Cách mạng Công nghiệp ở Anh",
+    summaryVi: "Bài giảng về sản xuất, giao thông, bán lẻ thế kỷ 19 và đời sống mua sắm.",
   },
 };
 
@@ -410,7 +477,9 @@ function buildPartContent(
         ? CAM17_FLOW_VI
         : exam === "cam16"
           ? CAM16_FLOW_VI
-          : undefined;
+          : exam === "cam15"
+            ? CAM15_FLOW_VI
+            : undefined;
   const vi = flowVi?.[partId];
 
   const predictionOptions = [

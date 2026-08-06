@@ -1,0 +1,751 @@
+{
+  "version": 1,
+  "partId": "cam15-t1-p1",
+  "audioFile": "cam15-test1-part1.mp3",
+  "durationSeconds": 460.245333,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "IELTS 15.",
+      "start": 0.37,
+      "end": 3.31
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Published by Cambridge University Press and Cambridge Assessment English 2020.",
+      "start": 3.31,
+      "end": 10.27
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "This recording is copyright.",
+      "start": 10.27,
+      "end": 13.47
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Test 1.",
+      "start": 13.47,
+      "end": 16.21
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "This is the IELTS listening test.",
+      "start": 16.21,
+      "end": 20.05
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "You will hear a number of different recordings",
+      "start": 20.05,
+      "end": 23.03
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "and you will have to answer questions on what you hear.",
+      "start": 23.03,
+      "end": 27.47
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "There will be time for you to read the instructions and questions",
+      "start": 27.47,
+      "end": 31.55
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "and you will have a chance to check your work.",
+      "start": 31.55,
+      "end": 35.95
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "All the recordings will be played once only.",
+      "start": 35.95,
+      "end": 40.79
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "The test is in four parts.",
+      "start": 40.79,
+      "end": 44.05
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "At the end of the test, you will be given ten minutes",
+      "start": 44.05,
+      "end": 48.13
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "to transfer your answers to the answer sheet.",
+      "start": 48.13,
+      "end": 51.87
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Now turn to part 1.",
+      "start": 51.87,
+      "end": 59.25
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Part 1.",
+      "start": 59.25,
+      "end": 61.11
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "You will hear a woman phoning a friend to get information about a job agency.",
+      "start": 61.11,
+      "end": 68.37
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "First, you have some time to look at questions 1 to 5.",
+      "start": 68.37,
+      "end": 97.55
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Now listen carefully and answer questions 1 to 5.",
+      "start": 97.55,
+      "end": 106.38
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "This is Amber.",
+      "start": 106.38,
+      "end": 108.12
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "You said to phone if I wanted to get more information",
+      "start": 108.12,
+      "end": 111.86
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "about the job agency you mentioned.",
+      "start": 111.86,
+      "end": 114.6
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Is now a good time.",
+      "start": 114.6,
+      "end": 116.36
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Hi Amber. Yes, fine.",
+      "start": 116.36,
+      "end": 119.76
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "So the agency I was talking about is called Bankside.",
+      "start": 119.76,
+      "end": 123.16
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "They're based in Docklands.",
+      "start": 123.16,
+      "end": 124.68
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "I can tell you the address now.",
+      "start": 124.68,
+      "end": 127.06
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "497 Eastside.",
+      "start": 127.06,
+      "end": 128.68
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Okay, thanks.",
+      "start": 128.68,
+      "end": 130.6
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "So is there anyone in particular I should speak to you there?",
+      "start": 130.6,
+      "end": 134.72
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "The agent I always deal with is called Becky Jamison.",
+      "start": 134.72,
+      "end": 138.5
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Let me write that down.",
+      "start": 138.5,
+      "end": 140.76
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Becky Jamison.",
+      "start": 140.76,
+      "end": 142.72
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "J-A-M-I-E-S-O-N.",
+      "start": 142.72,
+      "end": 149.9
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Do you have her direct line?",
+      "start": 149.9,
+      "end": 152.72
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Yes, it's in my contact somewhere.",
+      "start": 152.72,
+      "end": 155.82
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Right, here we are.",
+      "start": 155.82,
+      "end": 157.64
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "078-26-510-3.",
+      "start": 157.64,
+      "end": 162.68
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "I wouldn't call her until the afternoon if I were you.",
+      "start": 162.68,
+      "end": 166.42
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "She's always really busy in the morning trying to fill last minute vacancies.",
+      "start": 166.42,
+      "end": 170.32
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "She's really helpful and friendly so I'm sure it would be worth getting in touch with her for an informal chat.",
+      "start": 170.32,
+      "end": 177.36
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "It's mainly clerical and admin jobs they deal with, isn't it?",
+      "start": 177.36,
+      "end": 181.02
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "That's right.",
+      "start": 181.02,
+      "end": 182.36
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "I know you're hoping to find a full-time job in the media eventually",
+      "start": 182.36,
+      "end": 186.78
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "but Becky mostly recruits temporary staff for the finance sector",
+      "start": 186.78,
+      "end": 189.38
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "which will look good on your CV and generally pays better too.",
+      "start": 189.38,
+      "end": 193.94
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "Yeah, I'm just a bit worried because I don't have much office experience.",
+      "start": 193.94,
+      "end": 198.78
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "I wouldn't worry.",
+      "start": 198.78,
+      "end": 200.66
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "They'll probably start you as a receptionist or something like that.",
+      "start": 200.66,
+      "end": 204.4
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "So what's important for that kind of job isn't so much having business skills",
+      "start": 204.4,
+      "end": 208.94
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "or knowing lots of different computer systems.",
+      "start": 208.94,
+      "end": 211.56
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "It's communication that really matters so you'd be fine there.",
+      "start": 211.56,
+      "end": 215.46
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "And you'll pick up office skills really quickly on the job.",
+      "start": 215.46,
+      "end": 219.2
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "It's not that complicated.",
+      "start": 219.2,
+      "end": 220.1
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "Okay, good.",
+      "start": 220.1,
+      "end": 221.92
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "So how long do people generally need temporary staff for?",
+      "start": 221.92,
+      "end": 225.72
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "It would be great if I could get something lasting at least a month.",
+      "start": 225.72,
+      "end": 230.56
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "That shouldn't be too difficult.",
+      "start": 230.56,
+      "end": 232.34
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "But you're more likely to be offered something for a week at first",
+      "start": 232.34,
+      "end": 236.76
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "which might get extended.",
+      "start": 236.76,
+      "end": 237.16
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "It's unusual to be sent somewhere for just a day or two.",
+      "start": 237.16,
+      "end": 241.24
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "Right.",
+      "start": 241.24,
+      "end": 241.69
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "I've heard the pay isn't too bad.",
+      "start": 241.69,
+      "end": 243.88
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "Better than working in a shop or a restaurant.",
+      "start": 243.88,
+      "end": 246.94
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "Oh yes, definitely.",
+      "start": 246.94,
+      "end": 248.38
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "The hourly rate is about £10.11 if you're lucky.",
+      "start": 248.38,
+      "end": 251.98
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "That's pretty good.",
+      "start": 251.98,
+      "end": 253.08
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "I was only expecting to get eight or nine pounds an hour.",
+      "start": 253.08,
+      "end": 260.83
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "Before you hear the rest of the conversation,",
+      "start": 260.83,
+      "end": 263.77
+    },
+    {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "you have some time to look at questions six to ten.",
+      "start": 263.77,
+      "end": 292.5
+    },
+    {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "Now listen and answer questions six to ten.",
+      "start": 292.5,
+      "end": 299.22
+    },
+    {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "Do you want me to tell you anything about the registration process?",
+      "start": 299.22,
+      "end": 303.3
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "Yes, please.",
+      "start": 303.3,
+      "end": 304.14
+    },
+    {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "I know you have to have an interview.",
+      "start": 304.14,
+      "end": 306.86
+    },
+    {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "The interview usually takes about an hour",
+      "start": 306.86,
+      "end": 308.88
+    },
+    {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "and you should arrange that about a week in advance.",
+      "start": 308.88,
+      "end": 311.78
+    },
+    {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "I suppose I should dress smartly if it's for office work.",
+      "start": 311.78,
+      "end": 315.34
+    },
+    {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "I can probably borrow a suit from Mum.",
+      "start": 315.34,
+      "end": 318.8
+    },
+    {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "Good idea.",
+      "start": 318.8,
+      "end": 319.86
+    },
+    {
+      "id": "cue-79",
+      "speaker": null,
+      "text": "It's better to look too smart than too casual.",
+      "start": 319.86,
+      "end": 323.32
+    },
+    {
+      "id": "cue-80",
+      "speaker": null,
+      "text": "Will I need to bring copies of my exam certificates or anything like that?",
+      "start": 323.32,
+      "end": 328.12
+    },
+    {
+      "id": "cue-81",
+      "speaker": null,
+      "text": "No, they don't need to see those, I don't think.",
+      "start": 328.12,
+      "end": 331.52
+    },
+    {
+      "id": "cue-82",
+      "speaker": null,
+      "text": "What about my passport?",
+      "start": 331.52,
+      "end": 332.86
+    },
+    {
+      "id": "cue-83",
+      "speaker": null,
+      "text": "Oh yes, they will ask to see that.",
+      "start": 332.86,
+      "end": 335.58
+    },
+    {
+      "id": "cue-84",
+      "speaker": null,
+      "text": "Okay.",
+      "start": 335.58,
+      "end": 336.3
+    },
+    {
+      "id": "cue-85",
+      "speaker": null,
+      "text": "I wouldn't get stressed about the interview there.",
+      "start": 336.3,
+      "end": 339.02
+    },
+    {
+      "id": "cue-86",
+      "speaker": null,
+      "text": "It's just a chance for them to build a relationship with you",
+      "start": 339.02,
+      "end": 342.44
+    },
+    {
+      "id": "cue-87",
+      "speaker": null,
+      "text": "so they can try and match you to a job which you'll like.",
+      "start": 342.44,
+      "end": 345.68
+    },
+    {
+      "id": "cue-88",
+      "speaker": null,
+      "text": "So there are questions about personality",
+      "start": 345.68,
+      "end": 346.72
+    },
+    {
+      "id": "cue-89",
+      "speaker": null,
+      "text": "that they always ask candidates, fairly basic ones.",
+      "start": 346.72,
+      "end": 350.6
+    },
+    {
+      "id": "cue-90",
+      "speaker": null,
+      "text": "And they probably won't ask anything too difficult",
+      "start": 350.6,
+      "end": 353.32
+    },
+    {
+      "id": "cue-91",
+      "speaker": null,
+      "text": "like what your plans are for the future.",
+      "start": 353.32,
+      "end": 356.38
+    },
+    {
+      "id": "cue-92",
+      "speaker": null,
+      "text": "Hope not.",
+      "start": 356.38,
+      "end": 358.04
+    },
+    {
+      "id": "cue-93",
+      "speaker": null,
+      "text": "Anyway, there are lots of benefits to using an agency.",
+      "start": 358.04,
+      "end": 362.1
+    },
+    {
+      "id": "cue-94",
+      "speaker": null,
+      "text": "For example, the interview will be useful",
+      "start": 362.1,
+      "end": 364.48
+    },
+    {
+      "id": "cue-95",
+      "speaker": null,
+      "text": "because they'll give you feedback on your performance",
+      "start": 364.48,
+      "end": 366.8
+    },
+    {
+      "id": "cue-96",
+      "speaker": null,
+      "text": "so you can improve next time.",
+      "start": 366.8,
+      "end": 368.82
+    },
+    {
+      "id": "cue-97",
+      "speaker": null,
+      "text": "And they'll have access to jobs which aren't advertised.",
+      "start": 368.82,
+      "end": 372.74
+    },
+    {
+      "id": "cue-98",
+      "speaker": null,
+      "text": "Exactly.",
+      "start": 372.74,
+      "end": 373.92
+    },
+    {
+      "id": "cue-99",
+      "speaker": null,
+      "text": "Most temporary jobs aren't advertised.",
+      "start": 373.92,
+      "end": 376.64
+    },
+    {
+      "id": "cue-100",
+      "speaker": null,
+      "text": "And I expect finding a temporary job this way",
+      "start": 376.64,
+      "end": 379.7
+    },
+    {
+      "id": "cue-101",
+      "speaker": null,
+      "text": "takes a lot less time.",
+      "start": 379.7,
+      "end": 382.12
+    },
+    {
+      "id": "cue-102",
+      "speaker": null,
+      "text": "It's much easier than ringing up individual companies.",
+      "start": 382.12,
+      "end": 385.92
+    },
+    {
+      "id": "cue-103",
+      "speaker": null,
+      "text": "Yes, indeed.",
+      "start": 385.92,
+      "end": 387.12
+    },
+    {
+      "id": "cue-104",
+      "speaker": null,
+      "text": "Well, I think I've covered it.",
+      "start": 387.12,
+      "end": 392.36
+    },
+    {
+      "id": "cue-105",
+      "speaker": null,
+      "text": "That is the end of part one.",
+      "start": 392.36,
+      "end": 395.44
+    },
+    {
+      "id": "cue-106",
+      "speaker": null,
+      "text": "You now have one minute to check your answers to part one.",
+      "start": 395.44,
+      "end": 460.245
+    }
+  ]
+}

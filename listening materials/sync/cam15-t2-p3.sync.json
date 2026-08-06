@@ -1,0 +1,688 @@
+{
+  "version": 1,
+  "partId": "cam15-t2-p3",
+  "audioFile": "cam15-test2-part3.mp3",
+  "durationSeconds": 427.690667,
+  "method": "whisper-local",
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "You will hear two students of English called Kathy and Graham planning a display on 19th",
+      "start": 2.08,
+      "end": 9.06
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "century British life and literature for a university event.",
+      "start": 9.06,
+      "end": 13.86
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "First, you have some time to look at questions 21 to 24.",
+      "start": 13.86,
+      "end": 39.24
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Now listen carefully and answer questions 21 to 24.",
+      "start": 39.24,
+      "end": 46.66
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Okay, Graham, so let's check we both know what we're supposed to be doing.",
+      "start": 46.66,
+      "end": 51.42
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Okay.",
+      "start": 51.42,
+      "end": 52.48
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "So, for the university's open day we have to plan a display on British life and literature in the mid 19th century.",
+      "start": 52.48,
+      "end": 60.24
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "That's right, but we'll have some people to help us find the materials and set it up remember.",
+      "start": 60.24,
+      "end": 66.36
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "For the moment we just need to plan it.",
+      "start": 66.36,
+      "end": 68.96
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Good.",
+      "start": 68.96,
+      "end": 69.2
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "So, have you gathered who's expected to come and see the display?",
+      "start": 69.2,
+      "end": 73.36
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Is it for the people studying English or students from other departments?",
+      "start": 73.36,
+      "end": 77.88
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "I'm not clear about it.",
+      "start": 77.88,
+      "end": 79.58
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "No, me.",
+      "start": 79.58,
+      "end": 80.22
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "That was how it used to be, but it didn't attract many people.",
+      "start": 80.22,
+      "end": 84.64
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "So, this year it's going to be part of an open day to raise the university's profile.",
+      "start": 84.64,
+      "end": 90.32
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "It'll be publicised in the city to encourage people to come and find out something of what goes on here.",
+      "start": 90.32,
+      "end": 97.26
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "And it's included in the information that's sent to people who are considering applying to study here next year.",
+      "start": 97.26,
+      "end": 103.86
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Presumably, some current students and lecturers will come.",
+      "start": 103.86,
+      "end": 107.04
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "I would imagine so, but we've been told to concentrate on the other categories of people.",
+      "start": 107.04,
+      "end": 112.64
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Right.",
+      "start": 112.64,
+      "end": 113.78
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "We don't have to cover the whole range of 19th century literature, do we?",
+      "start": 113.78,
+      "end": 118.54
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "No, it's entirely up to us.",
+      "start": 118.54,
+      "end": 120.62
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "I suggest just using Charles Dickens.",
+      "start": 120.62,
+      "end": 123.7
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "That's a good idea.",
+      "start": 123.7,
+      "end": 125.5
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Most people have heard of him and have probably read some of his novels or seen films based on them.",
+      "start": 125.5,
+      "end": 132.3
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "So, that's a good lead-in to life in his time.",
+      "start": 132.3,
+      "end": 134.92
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Exactly, and his novels show the awful conditions that most people had to live in, don't they?",
+      "start": 134.92,
+      "end": 141.02
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "He wanted to shock people into doing something about it.",
+      "start": 141.02,
+      "end": 144.42
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Did he do any campaigning, other than writing?",
+      "start": 144.42,
+      "end": 147.4
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Yes, he campaigned for education and other social reforms and gave talks.",
+      "start": 147.4,
+      "end": 153.68
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "But I'm inclined to ignore that and focus on the novels.",
+      "start": 153.68,
+      "end": 157.42
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Yes, I agree.",
+      "start": 157.42,
+      "end": 161.7
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Before you hear the rest of the discussion,",
+      "start": 161.7,
+      "end": 164.42
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "you have some time to look at questions 25 to 30.",
+      "start": 164.42,
+      "end": 198.11
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Now, listen and answer questions 25 to 30.",
+      "start": 198.11,
+      "end": 205.89
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Okay, so now should we think about a topic linked to each novel?",
+      "start": 205.89,
+      "end": 210.85
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "Yes, I've printed out a list of Dickens' novels in the order they were published in the hope you'd agree to focus on him.",
+      "start": 210.85,
+      "end": 219.11
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "You're lucky I did agree.",
+      "start": 219.11,
+      "end": 221.39
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "Let's have a look.",
+      "start": 221.39,
+      "end": 223.59
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "Okay, the first was the Pickwick papers published in 1836.",
+      "start": 223.59,
+      "end": 230.25
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "It was very successful when it came out, wasn't it?",
+      "start": 230.25,
+      "end": 233.65
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "And was adapted for the theatre straight away.",
+      "start": 233.65,
+      "end": 236.23
+    },
+    {
+      "id": "cue-44",
+      "speaker": null,
+      "text": "There's an interesting point though, that there's a character who keeps falling asleep",
+      "start": 236.23,
+      "end": 241.05
+    },
+    {
+      "id": "cue-45",
+      "speaker": null,
+      "text": "and that medical condition was named after the book, Pickwickian Syndrome.",
+      "start": 241.05,
+      "end": 246.27
+    },
+    {
+      "id": "cue-46",
+      "speaker": null,
+      "text": "Oh, so why don't we use that as the topic",
+      "start": 246.27,
+      "end": 249.67
+    },
+    {
+      "id": "cue-47",
+      "speaker": null,
+      "text": "and include some quotations from the novel?",
+      "start": 249.67,
+      "end": 252.35
+    },
+    {
+      "id": "cue-48",
+      "speaker": null,
+      "text": "Right.",
+      "start": 252.35,
+      "end": 253.33
+    },
+    {
+      "id": "cue-49",
+      "speaker": null,
+      "text": "Next is Oliver Twist.",
+      "start": 253.33,
+      "end": 256.17
+    },
+    {
+      "id": "cue-50",
+      "speaker": null,
+      "text": "There's a lot in the novel about poverty, but maybe something less obvious.",
+      "start": 256.17,
+      "end": 261.19
+    },
+    {
+      "id": "cue-51",
+      "speaker": null,
+      "text": "Well, Oliver is taught how to steal, isn't he?",
+      "start": 261.19,
+      "end": 265.77
+    },
+    {
+      "id": "cue-52",
+      "speaker": null,
+      "text": "We could use that to illustrate the fact that very few children went to school,",
+      "start": 265.77,
+      "end": 270.87
+    },
+    {
+      "id": "cue-53",
+      "speaker": null,
+      "text": "particularly not poor children, so they learnt in other ways.",
+      "start": 270.87,
+      "end": 274.11
+    },
+    {
+      "id": "cue-54",
+      "speaker": null,
+      "text": "Good idea.",
+      "start": 274.11,
+      "end": 276.29
+    },
+    {
+      "id": "cue-55",
+      "speaker": null,
+      "text": "What's next?",
+      "start": 276.29,
+      "end": 277.87
+    },
+    {
+      "id": "cue-56",
+      "speaker": null,
+      "text": "Maybe Nicholas Nickelbee.",
+      "start": 277.87,
+      "end": 280.43
+    },
+    {
+      "id": "cue-57",
+      "speaker": null,
+      "text": "Actually, he taught in a really cruel school, didn't he?",
+      "start": 280.43,
+      "end": 284.09
+    },
+    {
+      "id": "cue-58",
+      "speaker": null,
+      "text": "That's right.",
+      "start": 284.09,
+      "end": 285.59
+    },
+    {
+      "id": "cue-59",
+      "speaker": null,
+      "text": "But there's also the company of touring actors that Nicholas joins.",
+      "start": 285.59,
+      "end": 290.39
+    },
+    {
+      "id": "cue-60",
+      "speaker": null,
+      "text": "We could do something on theatres and other amusements of the time.",
+      "start": 290.39,
+      "end": 295.77
+    },
+    {
+      "id": "cue-61",
+      "speaker": null,
+      "text": "We don't want only the bad things, do we?",
+      "start": 295.77,
+      "end": 298.83
+    },
+    {
+      "id": "cue-62",
+      "speaker": null,
+      "text": "Okay.",
+      "start": 298.83,
+      "end": 299.93
+    },
+    {
+      "id": "cue-63",
+      "speaker": null,
+      "text": "What about Martin Chuzzlewitt?",
+      "start": 299.93,
+      "end": 302.13
+    },
+    {
+      "id": "cue-64",
+      "speaker": null,
+      "text": "He goes to the USA, doesn't he?",
+      "start": 302.13,
+      "end": 304.51
+    },
+    {
+      "id": "cue-65",
+      "speaker": null,
+      "text": "Yes, and Dickens himself had been there a year before",
+      "start": 304.51,
+      "end": 308.07
+    },
+    {
+      "id": "cue-66",
+      "speaker": null,
+      "text": "and drew on his experience there in the novel.",
+      "start": 308.07,
+      "end": 311.85
+    },
+    {
+      "id": "cue-67",
+      "speaker": null,
+      "text": "I wonder though, the main theme is selfishness.",
+      "start": 311.85,
+      "end": 316.61
+    },
+    {
+      "id": "cue-68",
+      "speaker": null,
+      "text": "So we could do something on social justice?",
+      "start": 316.61,
+      "end": 320.35
+    },
+    {
+      "id": "cue-69",
+      "speaker": null,
+      "text": "No, too general.",
+      "start": 320.35,
+      "end": 322.23
+    },
+    {
+      "id": "cue-70",
+      "speaker": null,
+      "text": "Let's keep to your idea.",
+      "start": 322.23,
+      "end": 324.01
+    },
+    {
+      "id": "cue-71",
+      "speaker": null,
+      "text": "I think it would work well.",
+      "start": 324.01,
+      "end": 326.05
+    },
+    {
+      "id": "cue-72",
+      "speaker": null,
+      "text": "He wrote Bleak House next.",
+      "start": 326.05,
+      "end": 328.27
+    },
+    {
+      "id": "cue-73",
+      "speaker": null,
+      "text": "That's my favourite of his novels.",
+      "start": 328.27,
+      "end": 330.31
+    },
+    {
+      "id": "cue-74",
+      "speaker": null,
+      "text": "Yes, mine too.",
+      "start": 330.31,
+      "end": 330.99
+    },
+    {
+      "id": "cue-75",
+      "speaker": null,
+      "text": "His satire of the legal system is pretty powerful.",
+      "start": 330.99,
+      "end": 334.81
+    },
+    {
+      "id": "cue-76",
+      "speaker": null,
+      "text": "That's true.",
+      "start": 334.81,
+      "end": 335.89
+    },
+    {
+      "id": "cue-77",
+      "speaker": null,
+      "text": "But think about Esther, the heroine.",
+      "start": 335.89,
+      "end": 337.93
+    },
+    {
+      "id": "cue-78",
+      "speaker": null,
+      "text": "As a child, she lives with someone she doesn't know is her aunt,",
+      "start": 337.93,
+      "end": 342.35
+    },
+    {
+      "id": "cue-79",
+      "speaker": null,
+      "text": "who treats her very badly.",
+      "start": 342.35,
+      "end": 343.65
+    },
+    {
+      "id": "cue-80",
+      "speaker": null,
+      "text": "Then she's very happy living with her guardian,",
+      "start": 343.65,
+      "end": 346.81
+    },
+    {
+      "id": "cue-81",
+      "speaker": null,
+      "text": "and he puts her in charge of the household.",
+      "start": 346.81,
+      "end": 349.87
+    },
+    {
+      "id": "cue-82",
+      "speaker": null,
+      "text": "And at the end, she gets married, and her guardian gives her",
+      "start": 349.87,
+      "end": 353.31
+    },
+    {
+      "id": "cue-83",
+      "speaker": null,
+      "text": "and her husband a house, where, of course, they're very happy.",
+      "start": 353.31,
+      "end": 356.45
+    },
+    {
+      "id": "cue-84",
+      "speaker": null,
+      "text": "Yes, I like that.",
+      "start": 356.45,
+      "end": 357.97
+    },
+    {
+      "id": "cue-85",
+      "speaker": null,
+      "text": "What should we take next?",
+      "start": 357.97,
+      "end": 359.67
+    },
+    {
+      "id": "cue-86",
+      "speaker": null,
+      "text": "A little Dorit.",
+      "start": 359.67,
+      "end": 362.01
+    },
+    {
+      "id": "cue-87",
+      "speaker": null,
+      "text": "Old Mr. Dorit has been in a debtor's prison for years.",
+      "start": 362.01,
+      "end": 365.77
+    },
+    {
+      "id": "cue-88",
+      "speaker": null,
+      "text": "So was Dickens' father, wasn't he?",
+      "start": 365.77,
+      "end": 368.35
+    },
+    {
+      "id": "cue-89",
+      "speaker": null,
+      "text": "That's right.",
+      "start": 368.35,
+      "end": 369.87
+    },
+    {
+      "id": "cue-90",
+      "speaker": null,
+      "text": "What about focusing on the part when Mr. Dorit inherits a fortune",
+      "start": 369.87,
+      "end": 373.95
+    },
+    {
+      "id": "cue-91",
+      "speaker": null,
+      "text": "and he starts pretending he's always been rich?",
+      "start": 373.95,
+      "end": 376.91
+    },
+    {
+      "id": "cue-92",
+      "speaker": null,
+      "text": "Good idea.",
+      "start": 376.91,
+      "end": 379.63
+    },
+    {
+      "id": "cue-93",
+      "speaker": null,
+      "text": "So next, we need to think about what materials we want",
+      "start": 379.63,
+      "end": 383.37
+    },
+    {
+      "id": "cue-94",
+      "speaker": null,
+      "text": "to illustrate each issue.",
+      "start": 383.37,
+      "end": 384.99
+    },
+    {
+      "id": "cue-95",
+      "speaker": null,
+      "text": "That's going to be quite hard.",
+      "start": 384.99,
+      "end": 389.02
+    },
+    {
+      "id": "cue-96",
+      "speaker": null,
+      "text": "That is the end of part three.",
+      "start": 389.02,
+      "end": 392.56
+    },
+    {
+      "id": "cue-97",
+      "speaker": null,
+      "text": "You now have 30 seconds to check your answers to part three.",
+      "start": 392.56,
+      "end": 427.691
+    }
+  ]
+}
