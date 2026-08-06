@@ -178,6 +178,25 @@ function stripNoteBulletPrefix(line: string): { level: number | null; text: stri
   return { level: null, text: trimmed };
 }
 
+/**
+ * Pinball / OCR notes often dump `6 The clerk … 6…………` — leading number duplicates the blank.
+ * Strip that prefix so the line can render as a bullet instead of `6 … (6)`.
+ */
+function stripRedundantLeadingBlankNumber(line: string): string | null {
+  const trimmed = line.trim();
+  const m = trimmed.match(/^(\d{1,2})\s+(.+)$/);
+  if (!m) return null;
+  const num = m[1]!;
+  const rest = m[2]!;
+  BLANK_RE.lastIndex = 0;
+  let match: RegExpExecArray | null = BLANK_RE.exec(rest);
+  while (match) {
+    if (match[1] === num) return rest;
+    match = BLANK_RE.exec(rest);
+  }
+  return null;
+}
+
 /** Soft indent from QnA (spaces / NBSP), e.g. Cam 21 survey sub-bullets under a label. */
 function hasLeadingSoftIndent(line: string): boolean {
   return /^[\t \u00a0]{2,}\S/.test(line);
@@ -194,7 +213,7 @@ function isNoteSectionTitleLine(line: string): boolean {
   return true;
 }
 
-function renderNoteLineWithBlanks(line: string): string {
+function renderNoteLineWithBlanks(line: string, options?: { multiline?: boolean }): string {
   const content = line.trim();
   if (!content) return "";
 
@@ -205,7 +224,10 @@ function renderNoteLineWithBlanks(line: string): string {
   while (match) {
     const num = match[1]!;
     html += escHtml(content.slice(lastIndex, match.index));
-    html += `<span class="fi-stack"><span class="fi-num">(${num})</span><input class="fi" id="q${num}" autocomplete="off" oninput="markFill('q${num}',this.value)"></span>`;
+    const control = options?.multiline
+      ? `<textarea class="fi fi-multiline" id="q${num}" rows="1" autocomplete="off" onkeydown="if(event.key==='Enter'){event.preventDefault();}" oninput="markFill('q${num}',this.value);autoSizeFi(this)"></textarea>`
+      : `<input class="fi" id="q${num}" autocomplete="off" oninput="markFill('q${num}',this.value)">`;
+    html += `<span class="fi-stack"><span class="fi-num">(${num})</span>${control}</span>`;
     lastIndex = match.index + match[0].length;
     match = BLANK_RE.exec(content);
   }
@@ -215,18 +237,32 @@ function renderNoteLineWithBlanks(line: string): string {
 
 function renderNoteBodyLine(line: string, options?: { docTitle?: boolean }): string {
   const { level, text } = stripNoteBulletPrefix(line);
-  const content = level !== null ? text : line.trim();
+  let effectiveLevel = level;
+  let content = level !== null ? text : line.trim();
+
+  if (effectiveLevel === null) {
+    const withoutLeadingNum = stripRedundantLeadingBlankNumber(content);
+    if (withoutLeadingNum) {
+      effectiveLevel = 0;
+      content = withoutLeadingNum;
+    }
+  }
+
   if (!content) return `<p class="note-line note-gap">&nbsp;</p>`;
 
-  if (level === null && isNoteSectionTitleLine(line)) {
+  if (effectiveLevel === null && isNoteSectionTitleLine(line)) {
     const cls = options?.docTitle ? "note-doc-title" : "note-section-title";
     return `<p class="${cls}">${escHtml(content)}</p>`;
   }
 
   const html = renderNoteLineWithBlanks(content);
 
-  if (level === 0) return `<p class="note-line note-bullet-0"><span class="note-bullet-mark">•</span> ${html}</p>`;
-  if (level === 1) return `<p class="note-line note-bullet-1"><span class="note-bullet-mark">–</span> ${html}</p>`;
+  if (effectiveLevel === 0) {
+    return `<p class="note-line note-bullet-0"><span class="note-bullet-mark">•</span> ${html}</p>`;
+  }
+  if (effectiveLevel === 1) {
+    return `<p class="note-line note-bullet-1"><span class="note-bullet-mark">–</span> ${html}</p>`;
+  }
   if (hasLeadingSoftIndent(line)) return `<p class="note-line note-indent">${html}</p>`;
   return `<p class="note-line">${html}</p>`;
 }
@@ -315,7 +351,7 @@ function renderFlowchartBoxLines(lines: readonly string[]): string {
     .map((line) => line.trim())
     .filter((line) => line.length > 0)
     .map((line, index, all) => {
-      const html = renderNoteLineWithBlanks(line);
+      const html = renderNoteLineWithBlanks(line, { multiline: true });
       const isHeading = index === 0 && all.length > 1 && (!lineHasBlank(line) || /:\s*$/.test(line));
       return `<div class="${isHeading ? "flow-box-heading" : "flow-box-line"}">${html}</div>`;
     });

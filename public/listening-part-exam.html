@@ -189,9 +189,16 @@ html.exam-skip-login #student-badge{display:none!important}
 .note-form-table .fi,.note-grid-table .fi{width:100px;min-width:64px;max-width:160px}
 .flow-chart{display:flex;flex-direction:column;align-items:center;gap:0;margin:6px auto 10px;max-width:560px}
 .flow-title{text-align:center;letter-spacing:.02em;margin-bottom:12px;width:100%}
-.flow-box{border:1.5px solid var(--exam-chrome-border);border-radius:8px;padding:14px 18px;background:var(--exam-chrome-bg);font-size:13.5px;line-height:1.65;color:var(--exam-chrome-text);width:100%;text-align:center;box-sizing:border-box}
+.flow-box{border:1.5px solid var(--exam-chrome-border);border-radius:8px;padding:14px 18px;background:var(--exam-chrome-bg);font-size:13.5px;line-height:1.65;color:var(--exam-chrome-text);width:100%;min-width:0;text-align:center;box-sizing:border-box;overflow-wrap:anywhere;word-break:break-word}
 .flow-box-heading{font-weight:700;margin-bottom:4px}
 .flow-box-line{font-weight:400}
+/* Narrow split columns: allow long answers to wrap onto new lines inside the box */
+.flow-box .fi-stack{display:inline-flex;flex-direction:column;align-items:center;gap:1px;vertical-align:middle;max-width:100%;width:min(100%,220px);margin:0 2px}
+.flow-box .fi,.flow-box textarea.fi{
+  width:100%;min-width:0;max-width:100%;box-sizing:border-box;resize:none;overflow:hidden;
+  white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word;line-height:1.35;
+  min-height:1.35em;height:auto;text-align:center;font-family:inherit;field-sizing:content;
+}
 .flow-arrow{display:flex;justify-content:center;align-items:center;padding:6px 0;color:var(--exam-chrome-text);font-size:16px;line-height:1;opacity:.75}
 .flow-split{display:flex;justify-content:space-around;gap:12px;padding:6px 0;width:100%;align-self:stretch;box-sizing:border-box}
 .flow-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start;width:100%;align-self:stretch;box-sizing:border-box}
@@ -216,6 +223,7 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 .fi-stack{display:inline-flex;align-items:baseline;gap:3px;margin:0 2px}
 .fi-stack .fi-num{font-size:13px;font-weight:700;color:var(--exam-purple)}
 .fi{border:none;border-bottom:1px solid var(--exam-chrome-border);background:transparent;outline:none;font-size:13px;padding:1px 4px;color:var(--exam-purple);font-weight:500;width:118px;min-width:72px}
+textarea.fi{display:block;vertical-align:baseline}
 .fi.done,.msel.done{border-bottom-color:#5cb572}
 .qb{margin-bottom:20px}
 .qnum{font-size:14px;font-weight:700;color:var(--exam-purple);margin-bottom:5px}
@@ -382,9 +390,11 @@ mark.user-hl{background:#fff59d;padding:0 1px;border-radius:2px;color:inherit}
 .mrow .review-correct-pill{width:100%;margin-top:2px;text-align:right}
 #exam-screen.exam-review-mode #questions-panel input,
 #exam-screen.exam-review-mode #questions-panel select,
+#exam-screen.exam-review-mode #questions-panel textarea,
 #exam-screen.exam-review-mode #questions-panel label.opt{pointer-events:none!important}
 #exam-screen.exam-review-mode #questions-panel input,
-#exam-screen.exam-review-mode #questions-panel select{opacity:.92}
+#exam-screen.exam-review-mode #questions-panel select,
+#exam-screen.exam-review-mode #questions-panel textarea{opacity:.92}
 #exam-screen.exam-review-mode #sub-btn{cursor:default;pointer-events:none}
 #exam-screen.exam-review-mode #sub-btn:hover{opacity:1}
 #exam-screen.exam-review-mode .track-hint{color:var(--exam-chrome-muted)}
@@ -625,6 +635,7 @@ function applyExamPayload(data){
     }
   }
   updateTimerDisplay();
+  autoSizeAllFi();
 }
 
 function updateTimerDisplay(){
@@ -778,6 +789,16 @@ function markFill(qid,val){
   updateProg();
 }
 
+function autoSizeFi(el){
+  if(!el||el.tagName!=='TEXTAREA')return;
+  el.style.height='auto';
+  el.style.height=Math.max(22,el.scrollHeight)+'px';
+}
+
+function autoSizeAllFi(){
+  document.querySelectorAll('#questions-panel textarea.fi').forEach(autoSizeFi);
+}
+
 function selMCQ(qid,inp){
   var c=document.getElementById(qid+'-opts');
   if(c)c.querySelectorAll('.opt').forEach(function(l){l.classList.remove('sel');});
@@ -803,7 +824,7 @@ function normAns(v){
 function collectAnswer(qnum){
   var qid='q'+qnum;
   var inp=document.getElementById(qid);
-  if(inp&&inp.tagName==='INPUT')return inp.value;
+  if(inp&&(inp.tagName==='INPUT'||inp.tagName==='TEXTAREA'))return inp.value;
   var sel=document.getElementById('sel-'+qid);
   if(sel&&sel.tagName==='SELECT')return sel.value;
   var radio=document.querySelector('input[name="'+qid+'"]:checked');
@@ -1397,7 +1418,7 @@ function applyReviewAnswers(){
     if(!String(correct).trim())return;
     var user=userAnswersSnapshot[qid]||'';
     var inp=document.getElementById(qid);
-    if(inp&&inp.tagName==='INPUT'&&inp.type!=='radio'){
+    if(inp&&((inp.tagName==='INPUT'&&inp.type!=='radio')||inp.tagName==='TEXTAREA')){
       highlightFillReview(inp,user,correct,n);
       insertReviewLineAfterFill(n,user,correct);
       return;
@@ -1416,7 +1437,7 @@ function applyReviewAnswers(){
 }
 
 function lockExamInputs(){
-  document.querySelectorAll('#questions-panel input, #questions-panel select').forEach(function(el){
+  document.querySelectorAll('#questions-panel input, #questions-panel select, #questions-panel textarea').forEach(function(el){
     el.disabled=true;
   });
 }
@@ -1455,6 +1476,7 @@ function enterReviewMode(){
   lockExamInputs();
   if(examAnswerKey)applyReviewAnswers();
   else syncTranscriptJumpButtons();
+  autoSizeAllFi();
   renderReviewScore();
   recordIeltsPracticeAttempt();
   if(typeof window.__examDictEnterReviewMode==="function")window.__examDictEnterReviewMode();
@@ -1474,6 +1496,7 @@ function submitExam(){
     applyExamPayload(window.__EXAM_BOOT__);
     startExam();
   }
+  window.addEventListener('resize',function(){autoSizeAllFi();});
   document.addEventListener('click',function(e){
     var btn=e.target&&e.target.closest?e.target.closest('.ans-jump-transcript'):null;
     if(!btn||btn.hasAttribute('hidden'))return;
