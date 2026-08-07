@@ -1,6 +1,7 @@
 const BLANK_RE =
-  /(\d+)\s*(?:£\s*)?(?:['\u2018\u2019"]?(?:\.{3,}|_{3,}|…{2,})(?:\.?['\u2018\u2019"]?)?|\.{3,}|_{3,}|…{2,})/g;
-const PART_HEADER_RE = /^PART\s+(\d+)\s*$/i;
+  /(\d+)\s*(?:[£$]\s*)?(?:['\u2018\u2019"]?(?:\.{3,}|_{3,}|…{2,})(?:\.?['\u2018\u2019"]?)?|\.{3,}|_{3,}|…{2,})/g;
+/** Cam 14 scrapes still use SECTION; treat as PART. */
+const PART_HEADER_RE = /^(?:PART|SECTION)\s+(\d+)\s*$/i;
 const QUESTIONS_RANGE_RE = /^Questions?\s+(\d+)\s*(?:and|&|–|-)\s*(\d+)\s*$/i;
 const SINGLE_QUESTION_RE = /^Questions?\s+(\d+)\s*$/i;
 const MCQ_OPTION_RE = /^([A-I])\s+(.+)$/;
@@ -11,7 +12,8 @@ const MATCHING_ITEM_RE = /^(\d{1,2})\s+(.+)$/;
 const BLANK_ONLY_ITEM_RE = /^(\d{1,2})\s*(?:\.{3,}|_{3,}|…{2,})[.\s]*$/;
 const IMAGE_LINE_RE = /^IMAGE\s*\|\s*(.+)\s*$/i;
 const ANSWERS_HEADER_RE = /^Answers?:\s*$|^Answer key:\s*$/im;
-const PAIRED_ANSWER_RE = /^(\d+)\s*&\s*(\d+)\s+(.+)$/i;
+/** Allow `11&12. A, C` (period after pair) as well as spaced Cam 15 keys. */
+const PAIRED_ANSWER_RE = /^(\d+)\s*&\s*(\d+)\.?\s+(.+)$/i;
 /** Form / table / flowchart completion blocks (not only "notes"). */
 const COMPLETE_BELOW_RE = /Complete the (?:notes|form|table|flow[\s-]?chart) below/i;
 const CHOOSE_FROM_BOX_RE = /Choose\s+(?:TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|\d+)\s+answers from the box/i;
@@ -108,7 +110,7 @@ function parseAnswerKey(lines: readonly string[]): Record<string, string> {
       answers[`${a}&${b}`] = normalizeAnswerValue(value ?? "");
       continue;
     }
-    const m = line.match(/^(\d+)\s+(.+)$/);
+    const m = line.match(/^(\d+)\.?\s+(.+)$/);
     if (!m) continue;
     answers[m[1]!] = normalizeAnswerValue(m[2] ?? "");
   }

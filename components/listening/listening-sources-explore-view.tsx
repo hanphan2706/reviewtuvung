@@ -2,13 +2,11 @@
 
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { ListeningLibrarySortSelect } from "@/components/listening/listening-library-sort";
 import { ListeningSourceCategoryCard } from "@/components/listening/listening-source-category-card";
 import { StudyHubHeader } from "@/components/study-module/study-hub-header";
 import { StudyLoginPrompt } from "@/components/study-module/study-login-prompt";
 import { StudyHubLibraryPagination } from "@/components/study-module/study-hub-library-pagination";
-import { StudyHubLibrarySearchInput } from "@/components/study-module/study-hub-library-search-input";
-import { StudyHubLibraryToolbar } from "@/components/study-module/study-hub-library-toolbar";
+import { StudyHubLibraryIconToolbar } from "@/components/study-module/study-hub-library-icon-toolbar";
 import {
   studyHubPageBgClass,
   studyHubSubpageContentClass,
@@ -21,7 +19,12 @@ import {
   LISTENING_ACCENT_LOGIN_TITLE,
 } from "@/lib/auth/study-exam-auth-shared";
 import { useStudyHubLoggedIn } from "@/hooks/use-study-hub-logged-in";
-import { parseListeningLibrarySort } from "@/lib/listening/library-sort";
+import {
+  LISTENING_LIBRARY_SORT_DEFAULT,
+  LISTENING_LIBRARY_SORT_OPTIONS,
+  parseListeningLibrarySort,
+  type ListeningLibrarySort,
+} from "@/lib/listening/library-sort";
 import {
   LISTENING_SOURCE_CATEGORIES,
   LISTENING_SOURCES_EXPLORE_SUBTITLE,
@@ -109,16 +112,16 @@ function ListeningSourcesExploreViewInner({
         </header>
 
         <div className="mb-6">
-          <StudyHubLibraryToolbar
-            search={
-              <StudyHubLibrarySearchInput
-                value={query}
-                onChange={handleSearchChange}
-                placeholder="Tìm kiếm nguồn nghe..."
-                aria-label="Tìm kiếm nguồn nghe"
-              />
-            }
-            sort={<ListeningLibrarySortSelect value={sort} onChange={setSort} />}
+          <StudyHubLibraryIconToolbar
+            searchValue={query}
+            onSearchChange={handleSearchChange}
+            searchPlaceholder="Tìm kiếm nguồn nghe..."
+            searchAriaLabel="Tìm kiếm nguồn nghe"
+            filterOptions={LISTENING_LIBRARY_SORT_OPTIONS}
+            filterValue={sort}
+            onFilterChange={(value) => setSort(value as ListeningLibrarySort)}
+            filterAriaLabel="Sắp xếp nguồn nghe"
+            filterDefaultValue={LISTENING_LIBRARY_SORT_DEFAULT}
           />
         </div>
 

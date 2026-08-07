@@ -21,7 +21,7 @@ import { sanitizeListeningTranscript } from "../lib/sanitize-listening-transcrip
 import { splitTranscriptByPart } from "../lib/listening/split-transcript-parts";
 import type { ListeningFlowLessonContent } from "../lib/listening/tactics-basic-flow-types";
 
-type ExamSlug = "cam18" | "cam20" | "cam21" | "cam17" | "cam16" | "cam15";
+type ExamSlug = "cam18" | "cam20" | "cam21" | "cam17" | "cam16" | "cam15" | "cam14";
 
 const WRONG_GIST = [
   {
@@ -50,8 +50,8 @@ function parseArgs(argv: string[]): { exam: ExamSlug; tests: number[] } {
     if (a === "--all-tests") allTests = true;
   }
 
-  if (!["cam18", "cam20", "cam21", "cam17", "cam16", "cam15"].includes(exam)) {
-    throw new Error("--exam must be cam18, cam20, cam21, cam17, cam16 or cam15");
+  if (!["cam18", "cam20", "cam21", "cam17", "cam16", "cam15", "cam14"].includes(exam)) {
+    throw new Error("--exam must be cam18, cam20, cam21, cam17, cam16, cam15 or cam14");
   }
 
   const tests = allTests ? [1, 2, 3, 4] : [test];
@@ -216,6 +216,73 @@ const CAM16_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
   "cam16-t4-p4": {
     titleVi: "Sự tuyệt chủng của chim dodo",
     summaryVi: "Bài giảng về lịch sử dodo ở Mauritius, đặc điểm cơ thể và nguyên nhân tuyệt chủng.",
+  },
+};
+
+const CAM14_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
+  "cam14-t1-p1": {
+    titleVi: "Mẫu báo cáo tội phạm",
+    summaryVi: "Louise báo mất ví: quốc tịch, địa chỉ, đồ trong ví và mô tả các cậu bé liên quan.",
+  },
+  "cam14-t1-p2": {
+    titleVi: "Buổi induction cho thực tập sinh",
+    summaryVi: "Công ty giới thiệu chính sách, quy tắc đào tạo và kỳ vọng với người mới.",
+  },
+  "cam14-t1-p3": {
+    titleVi: "Thành phố xây ven biển",
+    summaryVi: "Sinh viên thảo luận nghiên cứu thành phố ven biển, quyết định phát triển và rủi ro từ biển.",
+  },
+  "cam14-t1-p4": {
+    titleVi: "Năng lượng tái tạo từ biển",
+    summaryVi: "Bài giảng về năng lượng đại dương: nhu cầu tăng, hệ thống sóng và lo ngại môi trường.",
+  },
+  "cam14-t2-p1": {
+    titleVi: "Phòng khám Total Health",
+    summaryVi: "Julie đặt lịch: liên hệ, tiền sử chấn thương, thể thao và vitamin được khuyên.",
+  },
+  "cam14-t2-p2": {
+    titleVi: "Tham quan lâu đài Branley",
+    summaryVi: "Hướng dẫn viên mô tả chuyến thăm và gắn nhãn sơ đồ tường, trưng bày và cửa hàng.",
+  },
+  "cam14-t2-p3": {
+    titleVi: "Voi ma mút trên đảo St Paul",
+    summaryVi: "Sinh viên lên kế hoạch nghiên cứu voi ma mút đảo: bằng chứng, ý nghĩa và bước tiếp.",
+  },
+  "cam14-t2-p4": {
+    titleVi: "Lịch sử dự báo thời tiết",
+    summaryVi: "Bài giảng từ tín ngưỡng bầu trời cổ đại và Babylon đến phương pháp khoa học sau này.",
+  },
+  "cam14-t3-p1": {
+    titleVi: "Khách sạn hội nghị Flanders",
+    summaryVi: "Cuộc gọi đặt phòng hội nghị, tiệc buffet, wifi, spa và xe đưa đón sân bay.",
+  },
+  "cam14-t3-p2": {
+    titleVi: "Hoạt động và lợi ích tình nguyện",
+    summaryVi: "Bài nói về việc tình nguyện viên làm, lợi ích cá nhân và cách họ giúp người khác.",
+  },
+  "cam14-t3-p3": {
+    titleVi: "Ban nhạc diễu hành nhà trường",
+    summaryVi: "Joe và Lizzie bàn hậu cần ban nhạc: cuộc thi, sự kiện thị trấn và vấn đề thực tế.",
+  },
+  "cam14-t3-p4": {
+    titleVi: "Hòa nhạc festival nghệ thuật đại học",
+    summaryVi: "Bài giảng giới thiệu các buổi hòa nhạc festival và điểm độc đáo của từng chương trình.",
+  },
+  "cam14-t4-p1": {
+    titleVi: "Đặt phòng khách sạn cho sự kiện",
+    summaryVi: "Andrew kiểm tra phòng: sức chứa, hướng nhìn, lối ra ngoài và dịch vụ ăn uống.",
+  },
+  "cam14-t4-p2": {
+    titleVi: "Thông tin chuyến tham quan nghỉ dưỡng",
+    summaryVi: "Người nói đánh giá các excursion từ xem cá heo đến cưỡi ngựa và trả lời FAQ.",
+  },
+  "cam14-t4-p3": {
+    titleVi: "Học phần văn học thiếu nhi",
+    summaryVi: "Trevor và Stephanie ôn mục đích, tranh minh họa, truyện tranh và sách theo giới.",
+  },
+  "cam14-t4-p4": {
+    titleVi: "Khu định cư chìm và xác tàu cổ",
+    summaryVi: "Bài giảng về Atlit-Yam, AUV và nghiên cứu xác tàu La Mã ở Gulf of Baratti.",
   },
 };
 
@@ -479,7 +546,9 @@ function buildPartContent(
           ? CAM16_FLOW_VI
           : exam === "cam15"
             ? CAM15_FLOW_VI
-            : undefined;
+            : exam === "cam14"
+              ? CAM14_FLOW_VI
+              : undefined;
   const vi = flowVi?.[partId];
 
   const predictionOptions = [

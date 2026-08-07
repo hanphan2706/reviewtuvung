@@ -202,14 +202,19 @@ function hasLeadingSoftIndent(line: string): boolean {
   return /^[\t \u00a0]{2,}\S/.test(line);
 }
 
-/** Dòng tiêu đề section: không bullet, không blank, không câu mô tả. */
+/** Dòng tiêu đề section: không bullet, không blank, không câu mô tả dài. */
 function isNoteSectionTitleLine(line: string): boolean {
   const { level, text } = stripNoteBulletPrefix(line);
   if (level !== null || !text) return false;
   if (lineHasBlank(line)) return false;
   if (/:/.test(text)) return false;
   if (/^[a-z]/.test(text)) return false;
-  if (/\b(includes?|contain|were|are|was|is|have|has)\b/i.test(text) && text.length > 24) return false;
+  // Câu mô tả dài (Cam 14 T1: "Uses a difference in temperature…") không phải tiêu đề.
+  const wordCount = text.split(/\s+/).filter(Boolean).length;
+  if (wordCount >= 6) return false;
+  if (/\b(includes?|contain|were|are|was|is|have|has|uses?|brought|made|built)\b/i.test(text) && text.length > 24) {
+    return false;
+  }
   return true;
 }
 
@@ -522,7 +527,7 @@ function renderMcqSection(section: ListeningQnaMcqSection, partNumber: number): 
       const opts = q.options
         .map(
           (o) =>
-            `<label class="opt"><input type="radio" name="${qid}" value="${escHtml(o.letter)}" onchange="selMCQ('${qid}',this)"> <span><b>${escHtml(o.letter)}.</b> ${escHtml(o.text)}</span></label>`,
+            `<label class="opt"><input type="radio" name="${qid}" value="${escHtml(o.letter)}" onchange="selMCQ('${qid}',this)"><span class="opt-letter">${escHtml(o.letter)}</span><span class="opt-text">${escHtml(o.text)}</span></label>`,
         )
         .join("");
       return `<div class="qb"><div class="qnum">Question ${q.number}</div><div class="qtext">${escHtml(q.prompt)}</div><div class="opts" id="${qid}-opts">${opts}</div></div>`;

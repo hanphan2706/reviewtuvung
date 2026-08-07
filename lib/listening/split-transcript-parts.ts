@@ -1,4 +1,4 @@
-const PART_HEADER = /^PART\s+(\d+)\s*$/i;
+const PART_HEADER = /^(?:PART|SECTION)\s+(\d+)\s*$/i;
 
 /** Tách transcript full-test thành map part → nội dung (bỏ dòng tiêu đề PART n). */
 export function splitTranscriptByPart(full: string): Record<number, string> {

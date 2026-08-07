@@ -29,6 +29,26 @@ const CAM19_TEST4_QNA: ListeningQnaFileRef = {
   test: 4,
 };
 
+const CAM14_TEST1_QNA: ListeningQnaFileRef = {
+  fileName: "cam 14 test 1 qna.txt",
+  test: 1,
+};
+
+const CAM14_TEST2_QNA: ListeningQnaFileRef = {
+  fileName: "cam 14 test 2 qna.txt",
+  test: 2,
+};
+
+const CAM14_TEST3_QNA: ListeningQnaFileRef = {
+  fileName: "cam 14 test 3 qna.txt",
+  test: 3,
+};
+
+const CAM14_TEST4_QNA: ListeningQnaFileRef = {
+  fileName: "cam 14 test 4 qna.txt",
+  test: 4,
+};
+
 const CAM15_TEST1_QNA: ListeningQnaFileRef = {
   fileName: "cam 15 test 1 qna.txt",
   test: 1,
@@ -177,6 +197,10 @@ export const LISTENING_TEST_QNA: Record<string, ListeningQnaFileRef> = {
   "cam15-test2": CAM15_TEST2_QNA,
   "cam15-test3": CAM15_TEST3_QNA,
   "cam15-test4": CAM15_TEST4_QNA,
+  "cam14-test1": CAM14_TEST1_QNA,
+  "cam14-test2": CAM14_TEST2_QNA,
+  "cam14-test3": CAM14_TEST3_QNA,
+  "cam14-test4": CAM14_TEST4_QNA,
   "cam20-test1": CAM20_TEST1_QNA,
   "cam20-test2": CAM20_TEST2_QNA,
   "cam20-test3": CAM20_TEST3_QNA,
@@ -231,6 +255,22 @@ export const LISTENING_PART_QNA: Record<string, ListeningPartQnaRef> = {
   "cam15-t4-p2": { ...CAM15_TEST4_QNA, part: 2 },
   "cam15-t4-p3": { ...CAM15_TEST4_QNA, part: 3 },
   "cam15-t4-p4": { ...CAM15_TEST4_QNA, part: 4 },
+  "cam14-t1-p1": { ...CAM14_TEST1_QNA, part: 1 },
+  "cam14-t1-p2": { ...CAM14_TEST1_QNA, part: 2 },
+  "cam14-t1-p3": { ...CAM14_TEST1_QNA, part: 3 },
+  "cam14-t1-p4": { ...CAM14_TEST1_QNA, part: 4 },
+  "cam14-t2-p1": { ...CAM14_TEST2_QNA, part: 1 },
+  "cam14-t2-p2": { ...CAM14_TEST2_QNA, part: 2 },
+  "cam14-t2-p3": { ...CAM14_TEST2_QNA, part: 3 },
+  "cam14-t2-p4": { ...CAM14_TEST2_QNA, part: 4 },
+  "cam14-t3-p1": { ...CAM14_TEST3_QNA, part: 1 },
+  "cam14-t3-p2": { ...CAM14_TEST3_QNA, part: 2 },
+  "cam14-t3-p3": { ...CAM14_TEST3_QNA, part: 3 },
+  "cam14-t3-p4": { ...CAM14_TEST3_QNA, part: 4 },
+  "cam14-t4-p1": { ...CAM14_TEST4_QNA, part: 1 },
+  "cam14-t4-p2": { ...CAM14_TEST4_QNA, part: 2 },
+  "cam14-t4-p3": { ...CAM14_TEST4_QNA, part: 3 },
+  "cam14-t4-p4": { ...CAM14_TEST4_QNA, part: 4 },
   "cam16-t1-p1": { ...CAM16_TEST1_QNA, part: 1 },
   "cam16-t1-p2": { ...CAM16_TEST1_QNA, part: 2 },
   "cam16-t1-p3": { ...CAM16_TEST1_QNA, part: 3 },

@@ -3,12 +3,10 @@
 import { Suspense, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ReadingArticleGrid } from "@/components/reading/reading-article-grid";
-import { ReadingLibrarySortSelect } from "@/components/reading/reading-library-sort";
 import { StudyHubHeader } from "@/components/study-module/study-hub-header";
+import { StudyHubLibraryIconToolbar } from "@/components/study-module/study-hub-library-icon-toolbar";
 import { StudyHubLibraryPageHeader } from "@/components/study-module/study-hub-library-page-header";
 import { StudyHubLibraryPagination } from "@/components/study-module/study-hub-library-pagination";
-import { StudyHubLibrarySearchInput } from "@/components/study-module/study-hub-library-search-input";
-import { StudyHubLibraryToolbar } from "@/components/study-module/study-hub-library-toolbar";
 import {
   studyHubPageBgClass,
   studyHubSubpageContentClass,
@@ -20,6 +18,8 @@ import { useStudyHubLibraryGrid } from "@/hooks/use-study-hub-library-grid";
 import type { ReadingHubArticle } from "@/lib/reading/hub-articles";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 import {
+  READING_LIBRARY_SORT_DEFAULT,
+  READING_LIBRARY_SORT_OPTIONS,
   parseReadingLibrarySort,
   sortReadingLibraryArticles,
   type ReadingLibrarySort,
@@ -103,18 +103,16 @@ function ReadingLibraryViewInner({
             title={pageTitle}
             description={pageDescription || undefined}
             toolbar={
-              <StudyHubLibraryToolbar
-                search={
-                  <StudyHubLibrarySearchInput
-                    value={query}
-                    onChange={handleSearchChange}
-                    placeholder="Tìm kiếm bài đọc..."
-                    aria-label="Tìm kiếm bài đọc"
-                  />
-                }
-                sort={
-                  <ReadingLibrarySortSelect scope="articles" value={sort} onChange={setSort} />
-                }
+              <StudyHubLibraryIconToolbar
+                searchValue={query}
+                onSearchChange={handleSearchChange}
+                searchPlaceholder="Tìm kiếm bài đọc..."
+                searchAriaLabel="Tìm kiếm bài đọc"
+                filterOptions={READING_LIBRARY_SORT_OPTIONS}
+                filterValue={sort}
+                onFilterChange={(value) => setSort(value as ReadingLibrarySort)}
+                filterAriaLabel="Sắp xếp bài đọc"
+                filterDefaultValue={READING_LIBRARY_SORT_DEFAULT}
               />
             }
           />

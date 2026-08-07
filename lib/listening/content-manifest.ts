@@ -12,6 +12,7 @@ import {
   BASIC_IELTS_LISTENING_META_PILL,
   type BasicIeltsListeningLessonCatalog,
 } from "@/lib/listening/basic-ielts-listening-catalog";
+import { CAM14_LISTENING_PARTS } from "@/lib/listening/cam14-listening-parts";
 import { CAM15_LISTENING_PARTS } from "@/lib/listening/cam15-listening-parts";
 import { CAM16_LISTENING_PARTS } from "@/lib/listening/cam16-listening-parts";
 import { CAM17_LISTENING_PARTS } from "@/lib/listening/cam17-listening-parts";
@@ -100,6 +101,26 @@ export type ListeningTestContext = {
 };
 
 export const LISTENING_TEST_CONTEXTS: Record<string, ListeningTestContext> = {
+  "cam14-t1": {
+    predictTitle: "Cam 14 — Test 1",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là báo cáo trộm cắp, induction cho thực tập sinh, thành phố ven biển hoặc năng lượng biển — không cần đoán đúng chi tiết.",
+  },
+  "cam14-t2": {
+    predictTitle: "Cam 14 — Test 2",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là phòng khám, lâu đài Branley, voi ma mút hoặc lịch sử dự báo thời tiết — không cần đoán đúng chi tiết.",
+  },
+  "cam14-t3": {
+    predictTitle: "Cam 14 — Test 3",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là khách sạn hội nghị, tình nguyện, ban nhạc nhà trường hoặc buổi hòa nhạc festival — không cần đoán đúng chi tiết.",
+  },
+  "cam14-t4": {
+    predictTitle: "Cam 14 — Test 4",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là đặt phòng sự kiện, chuyến tham quan nghỉ dưỡng, văn học thiếu nhi hoặc khảo cổ dưới nước — không cần đoán đúng chi tiết.",
+  },
   "cam15-t1": {
     predictTitle: "Cam 15 — Test 1",
     predictBlurb:
@@ -337,6 +358,7 @@ export const LISTENING_PARTS_PILOT: readonly ListeningPartMeta[] = [
   ...CAM17_LISTENING_PARTS,
   ...CAM16_LISTENING_PARTS,
   ...CAM15_LISTENING_PARTS,
+  ...CAM14_LISTENING_PARTS,
   {
     id: "cam20-t1-p1",
     slug: "restaurant-recommendations",

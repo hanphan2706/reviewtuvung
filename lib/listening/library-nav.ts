@@ -14,6 +14,7 @@ import { LISTENING_ACCENT_HUB_HREF } from "@/lib/listening/accent-nav";
 import { LISTENING_HUB_HREF } from "@/lib/listening/listening-hub-nav";
 import { getListeningSourceCategory, LISTENING_IELTS_EXAM_CARD_TITLE } from "@/lib/listening/listening-source-catalog";
 import {
+  BASIC_IELTS_LISTENING_CARD,
   BASIC_IELTS_LISTENING_EXAM_SLUG,
   BASIC_IELTS_LISTENING_META_PILL,
   BASIC_IELTS_LISTENING_SOURCE_LABEL_VI,
@@ -87,6 +88,7 @@ export const LISTENING_BASIC_IELTS_LESSON_COUNT = listeningLessonsBySource(
 export const LISTENING_SOURCE_NAV: ListeningLibraryNavItem[] = [
   { label: LISTENING_IELTS_SOURCE, href: LISTENING_IELTS_LIBRARY_HREF },
   { label: LISTENING_BEGINNER_SOURCE_LABEL, href: LISTENING_TACTICS_LIBRARY_HREF },
+  { label: BASIC_IELTS_LISTENING_CARD.title, href: LISTENING_BASIC_IELTS_LIBRARY_HREF },
   { label: LISTENING_ACCENT_SOURCE_LABEL, href: LISTENING_ACCENT_HUB_HREF },
 ];
 

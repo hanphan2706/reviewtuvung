@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "partId": "cam14-t1-p4",
+  "audioFile": "cam14-test1-part4.mp3",
+  "durationSeconds": 487.85,
+  "method": "whisper-local",
+  "preambleSeconds": 89.49,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Producing enough energy to meet our needs has become a serious problem.",
+      "start": 78.751,
+      "end": 83.524,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Demand is rising rapidly, because of the world’s increasing population and expanding (Q31) industry.",
+      "start": 83.524,
+      "end": 89.49,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Burning fossil fuels, like gas, coal and oil, seriously damages the environment and they’ll eventually run out.",
+      "start": 89.49,
+      "end": 98.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "For a number of years now, scientists have been working out how we can derive energy from renewable sources, such as the sun and wind, without causing pollution.",
+      "start": 98.79,
+      "end": 110.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Today I’ll outline marine renewable energy – also called ocean energy – which harnesses the movement of the oceans.",
+      "start": 110.63,
+      "end": 121.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Marine renewable energy can be divided into three main categories: wave energy, tidal energy and ocean thermal energy conversion, and I’ll say a few words about each one.",
+      "start": 121.87,
+      "end": 138.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "First, wave energy.",
+      "start": 138.59,
+      "end": 142.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Numerous devices have been invented to harvest wave energy, with names such as Wave Dragon, the Penguin and Mighty Whale, and research is going on to try and come up with a really efficient method.",
+      "start": 142.29,
+      "end": 157.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "This form of energy has plenty of potential, as the source is (Q32) constant, and there’s no danger of waves coming to s standstill.",
+      "start": 157.97,
+      "end": 168.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Electricity can be generated using onshore systems, using a reservoir, or offshore systems.",
+      "start": 168.39,
+      "end": 177.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "But the problem with ocean waves is that they’re erratic, with the wind making them travel in every (Q33) direction.",
+      "start": 177.27,
+      "end": 186.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "This adds to the difficulty of creating efficient technology: ideally all the waves would travel smoothly and regularly along the same straight line.",
+      "start": 186.81,
+      "end": 199.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Another drawback is that sand and other sediment on the ocean (Q34) floor might be stopped from flowing normally, which can lead to environmental problems.",
+      "start": 199.87,
+      "end": 216.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "The second category of marine energy that I’ll mention is tidal energy.",
+      "start": 216.02,
+      "end": 221.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "One major advantage of using the tide, rather than waves, as a source of energy is that it’s (Q35) predictable: we know the exact time of high and low tides for years to come.",
+      "start": 221.7,
+      "end": 236.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "For tidal energy to be effective, the difference between high and low tides needs to be at least five metres, and this occurs naturally in only about forty places on Earth.",
+      "start": 236.98,
+      "end": 252.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "But the right conditions can be created by constructing a tidal lagoon, an area of sea water separated from the sea.",
+      "start": 252.34,
+      "end": 263.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "One current plan is to create a tidal lagoon on the coast of Wales.",
+      "start": 263.32,
+      "end": 269.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "This will be an area of water within a (Q36) bay at Swansea, sheltered by a U-shaped breakwater, or dam, built out from the coast.",
+      "start": 269.36,
+      "end": 280.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "The breakwater will contain sixteen hydro turbines, and as the tide rises, water rushes through the breakwater, activating the turbines, which turn a generator to produce electricity.",
+      "start": 280.1,
+      "end": 296.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Then, for three hours as the tide goes out, the water is held back within the breakwater, increasing the difference in water level, until it’s several metres higher within the lagoon than in the open sea.",
+      "start": 296.22,
+      "end": 311.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Then, in order to release the stored water, (Q37) gates in the breakwater are opened.",
+      "start": 311.44,
+      "end": 318.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "It pours powerfully out of the lagoon, driving the turbines in the breakwater in the opposite direction and again generating thousands of megawatts of electricity.",
+      "start": 318.64,
+      "end": 330.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "As there are two high tides a day, this lagoon scheme would generate electricity four times a day, every day, for a total of around 14 hours in every 24 – and enough electricity for over 150,000 homes.",
+      "start": 330.84,
+      "end": 351.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "This system has quite a lot in its favour: unlike solar and wind energy it doesn’t depend on the weather; the turbines are operated without the need for (Q38) fuel, so it doesn’t create any greenhouse gas emissions; and very little maintenance is needed.",
+      "start": 351.18,
+      "end": 368.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "It’s estimated that electricity generated in this way will be relatively cheap, and that manufacturing the components would create than 2,000 (Q39) jobs, a big boost to the local economy.",
+      "start": 368.82,
+      "end": 381.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "On the other hand, there are fears that lagoons might harm both fish and birds, for example by disturbing (Q40) migration patterns, and causing a build-up of silt, affecting local ecosystems.",
+      "start": 381.76,
+      "end": 398.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "There are other forms of tidal energy, but I’ll go on to the third category of marine energy: ocean thermal energy conversion.",
+      "start": 398.08,
+      "end": 408.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "This depends on there being a big difference in temperature between surface water and the water a couple of kilometres below the surface, and this occurs in tropical coastal areas.",
+      "start": 408.64,
+      "end": 422.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "The idea is to bring cold water up to the surface using a submerged pipe.",
+      "start": 422.84,
+      "end": 429.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "The concept dates back to 1881, when …",
+      "start": 429.64,
+      "end": 487.85,
+      "preAudio": false
+    }
+  ]
+}

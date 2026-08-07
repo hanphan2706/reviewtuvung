@@ -154,6 +154,54 @@ const LISTENING_PART_IMAGES: Record<string, string> = {
   "cam18-t4-p4":
     "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1200&q=80&auto=format&fit=crop",
   /** Cam 17 — Buckworth Conservation Group */
+  /** Cam 14 — Crime report form */
+  "cam14-t1-p1":
+    "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1200&q=80&auto=format&fit=crop",
+  /** Induction talk for new apprentices */
+  "cam14-t1-p2":
+    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80&auto=format&fit=crop",
+  /** Cities built by the sea */
+  "cam14-t1-p3":
+    "https://images.unsplash.com/photo-1493558103817-58b2924bce98?w=1200&q=80&auto=format&fit=crop",
+  /** Marine renewable energy */
+  "cam14-t1-p4":
+    "https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1200&q=80&auto=format&fit=crop",
+  /** Total Health Clinic */
+  "cam14-t2-p1":
+    "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=1200&q=80&auto=format&fit=crop",
+  /** Visit to Branley Castle */
+  "cam14-t2-p2":
+    "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=1200&q=80&auto=format&fit=crop",
+  /** Woolly mammoths on St Paul’s Island */
+  "cam14-t2-p3":
+    "https://images.unsplash.com/photo-1534088568595-a066f410bcda?w=1200&q=80&auto=format&fit=crop",
+  /** History of weather forecasting */
+  "cam14-t2-p4":
+    "https://images.unsplash.com/photo-1499346030926-9a72daac6c63?w=1200&q=80&auto=format&fit=crop",
+  /** Flanders Conference Hotel */
+  "cam14-t3-p1":
+    "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1200&q=80&auto=format&fit=crop",
+  /** Volunteering activities and benefits */
+  "cam14-t3-p2":
+    "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1200&q=80&auto=format&fit=crop",
+  /** School marching band */
+  "cam14-t3-p3":
+    "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=1200&q=80&auto=format&fit=crop",
+  /** Concerts in university arts festival */
+  "cam14-t3-p4":
+    "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1200&q=80&auto=format&fit=crop",
+  /** Hotel room booking for an event */
+  "cam14-t4-p1":
+    "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1200&q=80&auto=format&fit=crop",
+  /** Holiday excursions information */
+  "cam14-t4-p2":
+    "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1200&q=80&auto=format&fit=crop",
+  /** Children’s literature module */
+  "cam14-t4-p3":
+    "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=1200&q=80&auto=format&fit=crop",
+  /** Sunken settlements and ancient shipwrecks */
+  "cam14-t4-p4":
+    "https://images.unsplash.com/photo-1682687220063-4742bd7fd538?w=1200&q=80&auto=format&fit=crop",
   /** Cam 15 — Bankside Recruitment Agency */
   "cam15-t1-p1":
     "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&q=80&auto=format&fit=crop",

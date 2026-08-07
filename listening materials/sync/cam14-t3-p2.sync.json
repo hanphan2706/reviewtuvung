@@ -1,0 +1,306 @@
+{
+  "version": 1,
+  "partId": "cam14-t3-p2",
+  "audioFile": "cam14-test3-part2.mp3",
+  "durationSeconds": 397.61,
+  "method": "whisper-local",
+  "preambleSeconds": 59.288,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Good morning.",
+      "start": 51.128,
+      "end": 51.808,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "My name’s Lucy Crittenden, and I’m the Director of Operations for an organisation that arranges volunteering in this part of the country.",
+      "start": 51.808,
+      "end": 59.288,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "I’m hoping I can persuade one or two of you to become volunteers yourselves.",
+      "start": 59.288,
+      "end": 64.048,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Let me start by briefly explaining what we mean by volunteering.",
+      "start": 64.048,
+      "end": 68.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Volunteers are teenagers and adults who choose to spend some time, unpaid, helping other people in some way.",
+      "start": 68.04,
+      "end": 75.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Most volunteers devote two or three hours to this every week, while a few do much more.",
+      "start": 75.78,
+      "end": 81.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "The people they help may have physical or behavioural difficulties, for example.",
+      "start": 81.88,
+      "end": 87.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Volunteers can do all sorts of things, depending on their own abilities and interests.",
+      "start": 87.74,
+      "end": 94.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "If they’re supporting a family that’s struggling, for example, they may be able to give them tips on cooking, or recommend how to plan their budget or how to shop sensibly on their income.",
+      "start": 94.24,
+      "end": 106.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "They might even do (Q11) some painting or wallpapering, perhaps alongside any members of the family who are able to do it.",
+      "start": 106.74,
+      "end": 114.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Or even do (Q12) some babysitting so that parents can go out for a while.",
+      "start": 114.86,
+      "end": 120.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "The benefit from volunteering isn’t only for the people being helped.",
+      "start": 120.14,
+      "end": 125.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Volunteers also gain from it: they’re using their skills to cope with somebody’s mental or physical ill health, and (Q13) volunteering may be a valuable element of their CV when they’re applying for jobs: employers usually look favourably on someone who’s given up time to help others.",
+      "start": 125.5,
+      "end": 145.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Significantly, most volunteers (Q14) feel that what they’re doing gives them a purpose in their lives.",
+      "start": 145.16,
+      "end": 151.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "And in my opinion, they’re lucky in that respect, as many people don’t have that feeling.",
+      "start": 151.12,
+      "end": 197.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Now I’d like to tell you what some of our volunteers have said about what they do, to give you an idea of the range of ways in which they can help people.",
+      "start": 197.15,
+      "end": 214.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Habib supports an elderly lady who’s beginning to show signs of dementia.",
+      "start": 214.35,
+      "end": 219.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Once a week they, along with other elderly people, go to the local community centre, where a group of people come in and sing.",
+      "start": 219.39,
+      "end": 228.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "The songs (Q15) take the listeners back to their youth, and for a little while they can forget the difficulties that they face now.",
+      "start": 228.19,
+      "end": 236.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Our volunteer Consuela is an amazing woman.",
+      "start": 236.43,
+      "end": 239.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "(Q16) She has difficulty walking herself, but she doesn’t let that stop her.",
+      "start": 239.85,
+      "end": 244.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "She helps a couple of people with similar difficulties, who had almost stopped walking altogether.",
+      "start": 244.99,
+      "end": 251.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "By using herself as an example, Consuela encourages them to walk more and more.",
+      "start": 251.49,
+      "end": 258.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Minh visits a young man who lives alone and can’t leave his home on his own, so he hardly ever saw anyone.",
+      "start": 258.73,
+      "end": 266.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "But together (Q17) they go out to the cinema, or to see friends the young man hadn’t been able to visit for a long time.",
+      "start": 266.89,
+      "end": 275.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Tanya visits an elderly woman once a week.",
+      "start": 275.39,
+      "end": 278.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "When the woman found out that Tanya is a professional dressmaker, she got interested.",
+      "start": 278.11,
+      "end": 283.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Tanya showed her some soft toys she’d made, and (Q18) the woman decided to try it herself.",
+      "start": 283.81,
+      "end": 289.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "And now she really enjoys it, and spends hours making toys.",
+      "start": 289.75,
+      "end": 294.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "They’re not perhaps up to Tanya’s standard yet, but she gains a lot of pleasure from doing it.",
+      "start": 294.93,
+      "end": 301.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Alexei is a volunteer with a family that faces a number of difficulties.",
+      "start": 301.59,
+      "end": 306.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "By calmly talking over possible solutions with family members, he’s helping them to realise that they aren’t helpless, and that (Q19) they can do something themselves to improve their situation.",
+      "start": 306.61,
+      "end": 318.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "This has been great for their self-esteem.",
+      "start": 318.89,
+      "end": 322.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "And the last volunteer I’ll mention, though there are plenty more, is Juba.",
+      "start": 322.33,
+      "end": 327.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "She volunteers with a teenage girl with learning difficulties, who wasn’t very good at talking to other people.",
+      "start": 327.83,
+      "end": 335.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Juba’s worked very patiently with her, (Q20) and now the girl is far better at expressing herself, and at understanding other people.",
+      "start": 335.23,
+      "end": 344.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "OK, I hope that’s given you an idea of what volunteering is all about. Now I’d like …",
+      "start": 344.47,
+      "end": 397.61,
+      "preAudio": false
+    }
+  ]
+}

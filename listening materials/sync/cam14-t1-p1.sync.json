@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "partId": "cam14-t1-p1",
+  "audioFile": "cam14-test1-part1.mp3",
+  "durationSeconds": 523.199002,
+  "method": "whisper-local",
+  "preambleSeconds": 153.58,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "OFFICER",
+      "text": "Good morning. What can I do for you?",
+      "start": 153.58,
+      "end": 156.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "LOUISE",
+      "text": "I want to report a theft. I had some things stolen out of my bag yesterday.",
+      "start": 156.3,
+      "end": 161.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "OFFICER",
+      "text": "I’m sorry to hear that. Right, so I’ll need to take a few details. Can I start with your name?",
+      "start": 161.74,
+      "end": 168.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "LOUISE",
+      "text": "Louise Taylor. (Example)",
+      "start": 168.68,
+      "end": 169.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "OFFICER",
+      "text": "OK, thank you. And are you resident in the UK?",
+      "start": 169.7,
+      "end": 173.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "LOUISE",
+      "text": "No, I’m actually Canadian (Q1). Though my mother was British.",
+      "start": 173.98,
+      "end": 178.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "OFFICER",
+      "text": "And your date of birth?",
+      "start": 178.36,
+      "end": 180.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "LOUISE",
+      "text": "December 14th, 1977.",
+      "start": 180.06,
+      "end": 183.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "OFFICER",
+      "text": "So you’re just visiting this country?",
+      "start": 183.36,
+      "end": 185.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "LOUISE",
+      "text": "That’s right. I come over most summers on business. I’m an interior designer and I come over to buy old furniture (Q2), antiques you know. There are some really lovely things around here, but you need to get out to the small towns. I’ve had a really good trip this year, until this happened.",
+      "start": 185.84,
+      "end": 204.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "OFFICER",
+      "text": "OK. So you’ve been here quite a while?",
+      "start": 204.66,
+      "end": 207.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "LOUISE",
+      "text": "Yes, I’m here for two months. I go back next week.",
+      "start": 207.7,
+      "end": 212.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "OFFICER",
+      "text": "So may I ask where you’re staying now?",
+      "start": 212.16,
+      "end": 215.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "LOUISE",
+      "text": "Well at present I’ve got a place at Park (Q3) Apartments, that’s on King Street. I was staying at the Riverside Apartments on the same street, but the apartment there was only available for six weeks so I had to find another one.",
+      "start": 215.14,
+      "end": 230.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "OFFICER",
+      "text": "OK. And the apartment number?",
+      "start": 230.62,
+      "end": 233.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "LOUISE",
+      "text": "Fifteen.",
+      "start": 233.16,
+      "end": 234.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "LOUISE",
+      "text": "Right.",
+      "start": 234.16,
+      "end": 234.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "LOUISE",
+      "text": "…………………………………………..",
+      "start": 234.61,
+      "end": 287.32
+    },
+    {
+      "id": "cue-19",
+      "speaker": "OFFICER",
+      "text": "Now, I need to take some details of the theft. So you said you had some things stolen out of your bag?",
+      "start": 287.32,
+      "end": 295.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "LOUISE",
+      "text": "That’s right.",
+      "start": 295.04,
+      "end": 296.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "OFFICER",
+      "text": "And were you actually carrying the bag when the theft took place?",
+      "start": 296.24,
+      "end": 300.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "LOUISE",
+      "text": "Yes, I really can’t understand it. I had my backpack on. And I went into a supermarket to buy a few things and when I opened it up my wallet wasn’t there.",
+      "start": 300.56,
+      "end": 313.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "OFFICER",
+      "text": "And what did your wallet have in it?",
+      "start": 313.06,
+      "end": 315.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "LOUISE",
+      "text": "Well, fortunately I don’t keep my credit cards in that wallet – I keep them with my passport in an inside compartment in my backpack. But there was quite a bit of cash there … about £250 (Q4) sterling, I should think. I withdrew £300 from my account yesterday, but I did a bit of shopping, so I must have already spent about £50 of that.",
+      "start": 315.78,
+      "end": 342.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "OFFICER",
+      "text": "OK.",
+      "start": 342.38,
+      "end": 342.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "LOUISE",
+      "text": "At first I thought, oh I must have left the wallet back in the apartment, but then I realised my phone (Q5) had gone as well. It was only a week old, and that’s when I realised I’d been robbed. Anyway at least they didn’t take the keys to my rental car.",
+      "start": 342.83,
+      "end": 360.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "OFFICER",
+      "text": "Yes. So you say the theft occurred yesterday?",
+      "start": 360.96,
+      "end": 365.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "LOUISE",
+      "text": "Yes.",
+      "start": 365.22,
+      "end": 365.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "OFFICER",
+      "text": "So that was September the tenth (Q6). And do you have any idea at all of where or when the things might possibly have been stolen?",
+      "start": 365.9,
+      "end": 376.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "LOUISE",
+      "text": "Well at first I couldn’t believe it because the bag had been on my back ever since I left the apartment after lunch. It’s just a small backpack, but I generally use it when I’m travelling because it seems safer than a handbag. Anyway, I met up with a friend, and we spent a couple of hours in the museum (Q7). But I do remember that as we were leaving there, at about 4 o’clock, a group of young boys ran up to us, and they were really crowding round us, and they were asking us that time (Q8) it was, then all of a sudden they ran off.",
+      "start": 376.3,
+      "end": 415.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "OFFICER",
+      "text": "Can you remember anything about them?",
+      "start": 415.28,
+      "end": 418.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "LOUISE",
+      "text": "The one who did most of the talking was wearing a T-shirt with a picture of something … let’s see … a tiger.",
+      "start": 418.3,
+      "end": 428.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "OFFICER",
+      "text": "Right. Any idea of how old he might have been?",
+      "start": 428.82,
+      "end": 432.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "LOUISE",
+      "text": "Around twelve years old?",
+      "start": 432.56,
+      "end": 435.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "OFFICER",
+      "text": "And can you remember anything else about his appearance?",
+      "start": 435.3,
+      "end": 439.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "LOUISE",
+      "text": "Not much. He was quite thin …",
+      "start": 439.34,
+      "end": 443.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "OFFICER",
+      "text": "Colour of hair?",
+      "start": 443.04,
+      "end": 444.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "LOUISE",
+      "text": "I do remember that – he was blond (Q9). All the others were dark-haired.",
+      "start": 444.28,
+      "end": 449.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "OFFICER",
+      "text": "And any details of the others?",
+      "start": 449.3,
+      "end": 452.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "LOUISE",
+      "text": "Not really. They came and went so quickly.",
+      "start": 452.68,
+      "end": 456.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "OFFICER",
+      "text": "Right. So what I’m going to do now is give you a crime reference number so you can contact your insurance company. So this is ten digits: 87954 82361 (Q10).",
+      "start": 456.92,
+      "end": 474.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "LOUISE",
+      "text": "Thank you. So should I …",
+      "start": 474.66,
+      "end": 523.199,
+      "preAudio": false
+    }
+  ]
+}

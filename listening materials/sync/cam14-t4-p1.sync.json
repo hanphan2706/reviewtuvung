@@ -1,0 +1,274 @@
+{
+  "version": 1,
+  "partId": "cam14-t4-p1",
+  "audioFile": "cam14-test4-part1.mp3",
+  "durationSeconds": 491.710998,
+  "method": "whisper-local",
+  "preambleSeconds": 146.8,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "ANDREW",
+      "text": "Good morning, Clare House Hotel. Andrew speaking. I’m the (Example) Events Manager.",
+      "start": 146.8,
+      "end": 152.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "SAM",
+      "text": "Good morning, Andrew. My name’s Samantha. I’m arranging a party for my parents’ fiftieth wedding anniversary, and I’m ringing to ask about hiring a room some time next September. Also my parents and several of the guests will need accommodation.",
+      "start": 152.42,
+      "end": 171.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "ANDREW",
+      "text": "OK, I’m sure we can help you with that. Will you be having a sit-down meal or a buffet?",
+      "start": 171.4,
+      "end": 178.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "SAM",
+      "text": "Probably a sit-down.",
+      "start": 178.5,
+      "end": 180.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "ANDREW",
+      "text": "And do you know how many people there’ll be?",
+      "start": 180.78,
+      "end": 183.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "SAM",
+      "text": "Around eighty, I think.",
+      "start": 183.84,
+      "end": 186.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "ANDREW",
+      "text": "Well we have two rooms that can hold that number. One is the Adelphi Room. That can seat (Q1) eighty-five, or hold over a hundred if people are standing for a buffet.",
+      "start": 186.12,
+      "end": 199.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "SAM",
+      "text": "Right.",
+      "start": 199.1,
+      "end": 200.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "ANDREW",
+      "text": "If you have live music, there’s room for four or five musicians in the gallery overlooking the room. Our guests usually appreciate the fact that the music can be loud enough for dancing, but not too loud for conversation.",
+      "start": 200.42,
+      "end": 215.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "SAM",
+      "text": "Yes, I really don’t like it when you can’t talk.",
+      "start": 215.9,
+      "end": 220.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "ANDREW",
+      "text": "Exactly. Now the Adelphi Room is at the back of the hotel, and there are French windows leading out onto the terrace. This has a beautiful display of pots of (Q2) roses at that time of the year.",
+      "start": 220.24,
+      "end": 236.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "SAM",
+      "text": "Which direction does it face?",
+      "start": 236.44,
+      "end": 238.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "ANDREW",
+      "text": "Southwest, so that side of the hotel gets the sun in the afternoon and early evening.",
+      "start": 238.84,
+      "end": 245.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "SAM",
+      "text": "Very nice.",
+      "start": 245.34,
+      "end": 247.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "ANDREW",
+      "text": "From the terrace you can see the area of (Q3) trees within the grounds of the hotel, or you can stroll through there to the river – that’s on the far side, so it isn’t visible from the hotel.",
+      "start": 247.34,
+      "end": 260.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "SAM",
+      "text": "OK.",
+      "start": 260.7,
+      "end": 261.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "ANDREW",
+      "text": "Then another option is the Carlton Room. This is a bit bigger – it can hold up to a hundred and ten people – and it has the advantage of a (Q4) stage, which is useful if you have any entertainment, or indeed a small band can fit onto it.",
+      "start": 261.84,
+      "end": 280.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "SAM",
+      "text": "And can you go outside from the room?",
+      "start": 280.18,
+      "end": 283.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "ANDREW",
+      "text": "No, the Carlton Room is on the first floor, but on one side the windows look out onto the lake.",
+      "start": 283.46,
+      "end": 291.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "SAM",
+      "text": "Lovely. I think either of those rooms would be suitable.",
+      "start": 291.6,
+      "end": 295.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "ANDREW",
+      "text": "Can I tell you about some of the options we offer in addition?",
+      "start": 295.44,
+      "end": 299.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "SAM",
+      "text": "Please do.",
+      "start": 299.86,
+      "end": 301,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "ANDREW",
+      "text": "As well as a meal, you can have an MC, a Master of Ceremonies, who’ll be with you throughout the party.",
+      "start": 301,
+      "end": 308.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "SAM",
+      "text": "What exactly is the MC’s function? I suppose they make a (Q5) speech during the meal if we need one, do they?",
+      "start": 308.54,
+      "end": 316.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "ANDREW",
+      "text": "That’s right. All our MCs are trained as public speakers, so they can easily get people’s attention – many guests are glad to have someone who can make themselves heard above the chatter! And they’re also your (Q6) support – if anything goes wrong, the MC will deal with it, so you can relax.",
+      "start": 316.88,
+      "end": 337.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "SAM",
+      "text": "Great! I’ll need to ask you about food, but something else that’s important is accommodation. You obviously have rooms in the hotel, but do you also have any other accommodation, like (Q7) cabins, for example?",
+      "start": 337.98,
+      "end": 354.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "ANDREW",
+      "text": "Yes, there are five in the grounds, all self-contained. They each sleep two to four people and have their own living room, bathroom and small kitchen.",
+      "start": 354.28,
+      "end": 365.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "SAM",
+      "text": "That sounds perfect for what we’ll need.",
+      "start": 365.98,
+      "end": 397.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "SAM",
+      "text": "Now you have various facilities, don’t you? Are they all included in the price of hiring the room? The pool, for instance.",
+      "start": 397.13,
+      "end": 409.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "ANDREW",
+      "text": "Normally you’d be able to use it, but (Q8) it’ll be closed throughout September for refurbishment, I’m afraid. (Q9) The gym will be available, though, at no extra charge. That’s open all day, from six in the morning until midnight.",
+      "start": 409.14,
+      "end": 424.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "SAM",
+      "text": "Right.",
+      "start": 424.32,
+      "end": 424.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "ANDREW",
+      "text": "And the tennis courts, but (Q10) there is a small additional payment for those. We have four courts, and it’s worth booking in advance if you possibly can, as there can be quite a long waiting list for them!",
+      "start": 424.77,
+      "end": 438.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "SAM",
+      "text": "Right. Now could we discuss the food? This would be dinner, around seven o’clock …",
+      "start": 438.6,
+      "end": 491.711,
+      "preAudio": false
+    }
+  ]
+}

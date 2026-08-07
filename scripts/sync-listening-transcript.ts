@@ -45,7 +45,7 @@ import {
   whisperLocalTranscribe,
 } from "../lib/listening/whisper-transcribe-local";
 
-type ExamSlug = "cam19" | "cam18" | "cam20" | "cam21" | "cam17" | "cam16" | "cam15";
+type ExamSlug = "cam19" | "cam18" | "cam20" | "cam21" | "cam17" | "cam16" | "cam15" | "cam14";
 type SyncMode = "local" | "api" | "proportional";
 
 function deriveAnchorTextFromPlain(plain: string): string | undefined {
@@ -125,8 +125,8 @@ function parseArgs(argv: string[]): {
     }
   }
 
-  if (!["cam19", "cam18", "cam20", "cam21", "cam17", "cam16", "cam15"].includes(exam)) {
-    throw new Error("--exam must be cam19, cam18, cam20, cam21, cam17, cam16 or cam15");
+  if (!["cam19", "cam18", "cam20", "cam21", "cam17", "cam16", "cam15", "cam14"].includes(exam)) {
+    throw new Error("--exam must be cam19, cam18, cam20, cam21, cam17, cam16, cam15 or cam14");
   }
 
   return { parts, tests, mode, exam, anchorText, anchorAt, speechStart, useCache };

@@ -1,0 +1,362 @@
+{
+  "version": 1,
+  "partId": "cam14-t2-p1",
+  "audioFile": "cam14-test2-part1.mp3",
+  "durationSeconds": 462.037007,
+  "method": "whisper-local",
+  "preambleSeconds": 156.5,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "CARL",
+      "text": "Hi, come and take a seat.",
+      "start": 156.5,
+      "end": 158.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "JULIE",
+      "text": "Thank you.",
+      "start": 158.54,
+      "end": 159.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "CARL",
+      "text": "My name’s Carl Rogers and I’m one of the doctors here at the Total Health Clinic. So I understand this is your first visit to the clinic?",
+      "start": 159.22,
+      "end": 168.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "JULIE",
+      "text": "Yes, it is.",
+      "start": 168.4,
+      "end": 169.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "CARL",
+      "text": "OK, well I hope you’ll be very happy with the service you receive here. So if it’s alright with you I’ll take a few details to help me give you the best possible service.",
+      "start": 169.2,
+      "end": 180.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "JULIE",
+      "text": "Sure.",
+      "start": 180.76,
+      "end": 181.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "CARL",
+      "text": "So can I check first of all that we have the correct personal details for you? So your full name is Julie Anne (Example) Garcia?",
+      "start": 181.21,
+      "end": 188.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "JULIE",
+      "text": "That’s correct.",
+      "start": 188.74,
+      "end": 189.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "CARL",
+      "text": "Perfect. And can I have a contact phone number?",
+      "start": 189.42,
+      "end": 190.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "JULIE",
+      "text": "It’s (Q1) 219 442 9785.",
+      "start": 190.53,
+      "end": 194.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "CARL",
+      "text": "OK, and then can I just check that we have the correct date of birth?",
+      "start": 194.12,
+      "end": 199.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "JULIE",
+      "text": "(Q2) October tenth, 1992.",
+      "start": 199.22,
+      "end": 200.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "CARL",
+      "text": "Oh, I actually have 1991, I’ll just correct that now. Right, so that’s all good. Now I just need just a few more personal details … do you have an occupation, either full-time or part-time?",
+      "start": 200.58,
+      "end": 213.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "JULIE",
+      "text": "Yes, I work full-time in Esterhazy’s – you know, the restaurant chain. I started off as a waitress there a few years ago and I’m a (Q3) manager now.",
+      "start": 213.72,
+      "end": 223.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "CARL",
+      "text": "Oh I know them, yeah, they’re down on 114th Street, aren’t they?",
+      "start": 223.58,
+      "end": 227.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "JULIE",
+      "text": "That’s right.",
+      "start": 227.66,
+      "end": 228.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "CARL",
+      "text": "Yeah, I’ve been there a few times. I just love their salads.",
+      "start": 228.68,
+      "end": 232.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "JULIE",
+      "text": "That’s good to hear.",
+      "start": 232.76,
+      "end": 234.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "CARL",
+      "text": "Right, so one more thing I need to know before we talk about why you’re here, Julie, and that’s the name of your insurance company.",
+      "start": 234.12,
+      "end": 242.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "JULIE",
+      "text": "It’s (Q4) Cawley Life Insurance, that’s C-A-W-L-E-Y.",
+      "start": 242.62,
+      "end": 246.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "CARL",
+      "text": "Excellent, thank you so much.",
+      "start": 246.06,
+      "end": 295.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "JULIE",
+      "text": "Now Julie, let’s look at how we can help you. So tell me a little about what brought you here today.",
+      "start": 295.16,
+      "end": 302.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "CARL",
+      "text": "Well, I’ve been getting a pain in my (Q5) knee, the left one. Not very serious at first, but it’s gotten worse, so I thought I ought to see someone about it.",
+      "start": 302.3,
+      "end": 313.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "JULIE",
+      "text": "That’s certainly the right decision. So how long have you been aware of this pain? Is it just a few days, or is it longer than that?",
+      "start": 313.18,
+      "end": 322.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "CARL",
+      "text": "Longer. It’s been worse for the last couple of days, but it’s (Q6) three weeks since I first noticed it. It came on quite gradually though, so I kind of ignored it at first.",
+      "start": 322.36,
+      "end": 332.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "JULIE",
+      "text": "And have you taken any medication yourself, or treated it in anyway?",
+      "start": 332.3,
+      "end": 335.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "CARL",
+      "text": "Yeah, I’ve been taking medication to deal with the pain. Tylenol, and that works OK for a few hours. But I don’t like to keep taking it.",
+      "start": 335.6,
+      "end": 342.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "JULIE",
+      "text": "OK. And what about heat treatment? Have you tried applying heat at all?",
+      "start": 342.6,
+      "end": 347.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "CARL",
+      "text": "No, but I have been using ice on it for the last few days.",
+      "start": 347.02,
+      "end": 351.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "JULIE",
+      "text": "And does that seem to help the pain at all?",
+      "start": 351.78,
+      "end": 355.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "CARL",
+      "text": "A little, yes.",
+      "start": 355.18,
+      "end": 355.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "JULIE",
+      "text": "Good. Now you look as if you’re quite fit normally?",
+      "start": 355.66,
+      "end": 358.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "CARL",
+      "text": "I am, yes.",
+      "start": 358.82,
+      "end": 359,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "JULIE",
+      "text": "So do you do any sport on a regular basis?",
+      "start": 359,
+      "end": 362.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "CARL",
+      "text": "Yes, I play a lot of (Q7) tennis. I belong to a club so I go there a lot. I’m quite competitive so I enjoy that side of it as well as the exercise. But I haven’t gone since this started.",
+      "start": 362.4,
+      "end": 375.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "JULIE",
+      "text": "Sure. And do you do any other types of exercise?",
+      "start": 375.96,
+      "end": 379.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "CARL",
+      "text": "Yeah, I sometimes do a little swimming, but usually just when I’m on vacation. But normally I go (Q8) running a few times a week, maybe three or four times.",
+      "start": 379.36,
+      "end": 388.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "JULIE",
+      "text": "Hmm. So your legs are getting quite a pounding. But you haven’t had any problems up to now?",
+      "start": 388.64,
+      "end": 392.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "CARL",
+      "text": "No, not with my legs. I did have an accident last year when I slipped and hurt my (Q9) shoulder, but that’s better now.",
+      "start": 392.54,
+      "end": 399.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "JULIE",
+      "text": "Excellent. And do you have any allergies?",
+      "start": 399.94,
+      "end": 401.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "CARL",
+      "text": "No, none that I’m aware of.",
+      "start": 401.96,
+      "end": 403.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "JULIE",
+      "text": "And do you take any medication on a regular basis?",
+      "start": 403.12,
+      "end": 405.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "CARL",
+      "text": "Well, I take (Q10) vitamins but that’s all. I’m generally very healthy.",
+      "start": 405.64,
+      "end": 409.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": "JULIE",
+      "text": "OK, well let’s have a closer look and see what might be causing this problem. If you can just get up …",
+      "start": 409.72,
+      "end": 462.037,
+      "preAudio": false
+    }
+  ]
+}

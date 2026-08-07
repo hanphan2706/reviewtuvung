@@ -3,12 +3,10 @@
 import { Suspense, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ListeningLessonGrid } from "@/components/listening/listening-lesson-grid";
-import { ListeningLibrarySortSelect } from "@/components/listening/listening-library-sort";
 import { StudyHubHeader } from "@/components/study-module/study-hub-header";
+import { StudyHubLibraryIconToolbar } from "@/components/study-module/study-hub-library-icon-toolbar";
 import { StudyHubLibraryPageHeader } from "@/components/study-module/study-hub-library-page-header";
 import { StudyHubLibraryPagination } from "@/components/study-module/study-hub-library-pagination";
-import { StudyHubLibrarySearchInput } from "@/components/study-module/study-hub-library-search-input";
-import { StudyHubLibraryToolbar } from "@/components/study-module/study-hub-library-toolbar";
 import {
   studyHubPageBgClass,
   studyHubSubpageContentClass,
@@ -21,6 +19,8 @@ import { useStudyHubLibraryGrid } from "@/hooks/use-study-hub-library-grid";
 import type { ListeningPartMeta } from "@/lib/listening/content-manifest";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 import {
+  LISTENING_LIBRARY_SORT_DEFAULT,
+  LISTENING_LIBRARY_SORT_OPTIONS,
   parseListeningLibrarySort,
   sortListeningLibraryLessons,
   type ListeningLibrarySort,
@@ -103,22 +103,17 @@ function ListeningLibraryViewInner({
             title={pageTitle}
             description={pageDescription || undefined}
             toolbar={
-              <StudyHubLibraryToolbar
-                search={
-                  <StudyHubLibrarySearchInput
-                    value={query}
-                    onChange={handleSearchChange}
-                    placeholder="Tìm kiếm bài nghe..."
-                    aria-label="Tìm kiếm bài nghe"
-                  />
-                }
-                sort={
-                  <ListeningLibrarySortSelect
-                    value={sort}
-                    onChange={setSort}
-                    disabled={sort === "listens-desc" && listenCountsLoading}
-                  />
-                }
+              <StudyHubLibraryIconToolbar
+                searchValue={query}
+                onSearchChange={handleSearchChange}
+                searchPlaceholder="Tìm kiếm bài nghe..."
+                searchAriaLabel="Tìm kiếm bài nghe"
+                filterOptions={LISTENING_LIBRARY_SORT_OPTIONS}
+                filterValue={sort}
+                onFilterChange={(value) => setSort(value as ListeningLibrarySort)}
+                filterAriaLabel="Sắp xếp bài nghe"
+                filterDisabled={sort === "listens-desc" && listenCountsLoading}
+                filterDefaultValue={LISTENING_LIBRARY_SORT_DEFAULT}
               />
             }
           />

@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "partId": "cam14-t3-p3",
+  "audioFile": "cam14-test3-part3.mp3",
+  "durationSeconds": 381.44,
+  "method": "whisper-local",
+  "preambleSeconds": 61.3,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "LIZZIE",
+      "text": "So how are you getting on with your teaching practice at the High School, Joe?",
+      "start": 61.3,
+      "end": 66.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "JOE",
+      "text": "Well I’ve been put in charge of the school marching band, and it’s quite a responsibility. I’d like to talk it over with you.",
+      "start": 66.4,
+      "end": 74.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "LIZZIE",
+      "text": "Go ahead. You’d better start by giving me a bit of background.",
+      "start": 74.56,
+      "end": 78.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "JOE",
+      "text": "OK. Well the band has students in it from all years, so they’re aged 11 to 18, and there are about (Q21) 50 of them altogether. It’s quite a popular activity within the school. I’ve never worked with a band of more than 20 before, and this is very different.",
+      "start": 78.64,
+      "end": 97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "LIZZIE",
+      "text": "I can imagine.",
+      "start": 97,
+      "end": 98.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "JOE",
+      "text": "They aren’t really good enough to enter national band competitions, but they’re in a (Q22) regional one later in the term. Even if they don’t win, and I don’t expect them to, hopefully it’ll be an incentive for them to try and improve.",
+      "start": 98.42,
+      "end": 113.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "LIZZIE",
+      "text": "Yes, hopefully.",
+      "start": 113.3,
+      "end": 115,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "JOE",
+      "text": "Well, now the town council’s organising a (Q23) carnival in the summer, and the band has been asked to perform. If you ask me, they aren’t really up to it yet, and I need to get them functioning better as a band, and in a very short time.",
+      "start": 115,
+      "end": 131.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "LIZZIE",
+      "text": "Have you been doing anything with them? Apart from practising the music, I mean.",
+      "start": 131.1,
+      "end": 136.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "JOE",
+      "text": "I played a recording I came across, of a (Q24) drummer talking about how playing in a band had changed his life. I think it was an after-dinner speech. I thought it was pretty inspiring, because being in the band had stopped him from getting involved in crime. The students seemed to find it interesting, too.",
+      "start": 136.02,
+      "end": 154.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "LIZZIE",
+      "text": "That’s good.",
+      "start": 154.64,
+      "end": 155.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "JOE",
+      "text": "I’m planning to show them that old (Q25) film from the 1940s ‘Strike Up the Band’, and talk about it with the students. What do you think?",
+      "start": 155.92,
+      "end": 165.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "LIZZIE",
+      "text": "Good idea. As it’s about a school band, it might make the students realise how much they can achieve if they work together.",
+      "start": 165.1,
+      "end": 172.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "JOE",
+      "text": "That’s what I’ve got in mind. I’m hoping I can take some of the band to a (Q26) parade that’s going to take place next month. A couple of marching bands will be performing, and the atmosphere should be quite exciting. It depends on whether I can persuade the school to hire a coach or two to take us there.",
+      "start": 172.92,
+      "end": 191.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "LIZZIE",
+      "text": "Mmm. They sound like good ideas to me.",
+      "start": 191.08,
+      "end": 193.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "JOE",
+      "text": "Thanks.",
+      "start": 193.8,
+      "end": 232.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "JOE",
+      "text": "Can I tell you about a few people in the band who I’m finding it quite difficult to cope with? I’m sure you’ll have some ideas about what I can do.",
+      "start": 232.06,
+      "end": 242.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "LIZZIE",
+      "text": "Go ahead.",
+      "start": 242.6,
+      "end": 243.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "JOE",
+      "text": "There’s a flautist who says she loves playing in the band. We rehearse twice a week after school, but (Q27) she’s hardly ever there. Then she looks for me the next day and gives me a very plausible reason – she says she had to help her mother, or she’s been ill, but to be honest, I don’t believe her.",
+      "start": 243.28,
+      "end": 262.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "LIZZIE",
+      "text": "Oh dear! Any more students with difficulties?",
+      "start": 262.28,
+      "end": 266.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "JOE",
+      "text": "Plenty! There’s a trumpeter who thinks she’s the best musician in the band, though she certainly isn’t. (Q28) She’s always saying what she thinks other people should do, which makes my job pretty difficult.",
+      "start": 266.64,
+      "end": 279.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "LIZZIE",
+      "text": "She sounds a bit of a nightmare!",
+      "start": 279.56,
+      "end": 281.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "JOE",
+      "text": "You can say that again. One of the trombonists has got an impressive sense of rhythm, and could be an excellent musician – except that (Q29) he has breathing difficulties, and he doesn’t really have enough breath for the trombone. He’d be much better of playing percussion, for instance, but he refuses to give up. So he ends up only playing half the notes.",
+      "start": 281.94,
+      "end": 303.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "LIZZIE",
+      "text": "I suppose you have to admire his determination.",
+      "start": 303.3,
+      "end": 307.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "JOE",
+      "text": "Maybe. One of the percussionists isn’t too bad, but (Q30) he never seems to interact with other people, and he always rushes off as soon as the rehearsal ends. I don’t know if there are family reasons, or what. But it isn’t good in a band, where people really need to feel they’re part of a group.",
+      "start": 307.22,
+      "end": 325.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "LIZZIE",
+      "text": "Hmm.",
+      "start": 325.24,
+      "end": 326.58
+    },
+    {
+      "id": "cue-27",
+      "speaker": "JOE",
+      "text": "There are others too, but at least that gives you an idea of what I’m up against. Do you have any thoughts about what I can do, Lizzie?",
+      "start": 326.58,
+      "end": 381.44,
+      "preAudio": false
+    }
+  ]
+}

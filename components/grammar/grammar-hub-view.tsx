@@ -489,12 +489,12 @@ export function GrammarHubView() {
             </div>
 
             <div
-              className={`flex h-10 min-w-0 flex-row-reverse items-center overflow-hidden rounded-lg border bg-white transition-[width,border-color] duration-300 ease-out ${
+              className={`flex h-9 min-w-0 flex-row-reverse items-center overflow-hidden rounded-lg border bg-white transition-[width,border-color] duration-300 ease-out ${
                 searchOpen || query.trim() ? "border-[#000001]/35" : "border-[#E4E4E7]"
               } ${
                 searchOpen
                   ? "w-full max-w-none flex-1 sm:w-[min(100%,18rem)] sm:flex-none"
-                  : "w-10 shrink-0"
+                  : "w-9 shrink-0"
               }`}
             >
               <button
@@ -510,7 +510,7 @@ export function GrammarHubView() {
                   setSearchOpen(true);
                   setFilterOpen(false);
                 }}
-                className="inline-flex size-10 shrink-0 items-center justify-center text-[#000001] transition hover:bg-[#fafafa]"
+                className="inline-flex size-9 shrink-0 items-center justify-center text-[#000001] transition hover:bg-[#fafafa]"
               >
                 <Search className="size-4" strokeWidth={2} aria-hidden />
               </button>

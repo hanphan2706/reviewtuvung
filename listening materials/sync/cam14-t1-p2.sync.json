@@ -1,0 +1,274 @@
+{
+  "version": 1,
+  "partId": "cam14-t1-p2",
+  "audioFile": "cam14-test1-part2.mp3",
+  "durationSeconds": 404.65,
+  "method": "whisper-local",
+  "preambleSeconds": 58.05,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Good morning everyone.",
+      "start": 51.084,
+      "end": 52.477,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "My name’s Janet Parker and I’m the human resources manager.",
+      "start": 52.477,
+      "end": 58.05,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "We’re very happy to welcome you to your new apprenticeship.",
+      "start": 58.05,
+      "end": 61.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "I hope that the next six months will be a positive and enjoyable experience for you.",
+      "start": 61.45,
+      "end": 66.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "I’d like to start with some general advice about being an apprentice.",
+      "start": 66.89,
+      "end": 72.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Most of you have very little or no experience of working for a big organisation and the first week or so may be quite challenging.",
+      "start": 72.29,
+      "end": 82.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "There will be a lot of new information to take in but don’t worry too much about trying to remember everything.",
+      "start": 82.63,
+      "end": 90.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "The important thing is to (Q11) check with someone if you’re not sure what to do – you’ll find your supervisor is very approachable and won’t mind explaining things or helping you out.",
+      "start": 90.73,
+      "end": 104.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "You’re here to learn so make the most of that opportunity.",
+      "start": 104.43,
+      "end": 108.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "You’ll be spending time in different departments during your first week so make an effort to (Q12) talk to as many people as possible about their work – you’ll make some new friends and find out lots of useful information.",
+      "start": 108.77,
+      "end": 124.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "As well as having a supervisor, you’ll each be assigned a mentor.",
+      "start": 124.99,
+      "end": 130.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "This person will be someone who’s recently completed an apprenticeship and you’ll meet with them on a weekly basis.",
+      "start": 130.56,
+      "end": 139.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Their role is to provide help and support throughout your apprenticeship.",
+      "start": 139.07,
+      "end": 144.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Of course, this doesn’t mean they’ll actually do any of your work for you – instead they’ll be asking you about (Q13) what goals you’ve achieved so far, as well as helping you to identify any areas for improvement.",
+      "start": 144.43,
+      "end": 158.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "You can also (Q14) discuss your more long-term ambitions with them as well.",
+      "start": 158.69,
+      "end": 210.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Now I just want to run through a few company policies for our apprenticeship scheme with you… Most importantly, the internet.",
+      "start": 210.66,
+      "end": 220.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "As part of your job you’ll be doing some research online so obviously you’ll have unlimited access for that but please (Q15) don’t use it for personal use – you’ll have your own phones for that.",
+      "start": 220.14,
+      "end": 235.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Some of you have already asked me about flexible working.",
+      "start": 235.76,
+      "end": 240.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "After your probationary three-month period – some of you will be eligible for this – but (Q16) it will depend on which department you’re in and what your personal circumstances are.",
+      "start": 240.14,
+      "end": 252.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "So please don’t assume you’ll automatically be permitted to do this.",
+      "start": 252.38,
+      "end": 257.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "I want to make sure there’s no confusion about our holiday policy.",
+      "start": 257.9,
+      "end": 262.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Apart from any statutory public holidays (Q17) we ask that you don’t book any holidays until after your six-month apprenticeship has finished.",
+      "start": 262.88,
+      "end": 273.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Time off should only be taken if you are unwell.",
+      "start": 273.26,
+      "end": 276.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Please speak to your supervisor if this is going to be a problem.",
+      "start": 276.98,
+      "end": 282.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "You’ll be expected to work a 40-hour week but there may be opportunities to do overtime during busy periods.",
+      "start": 282.34,
+      "end": 291.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Although you’re not required to do this, (Q18) it can be a valuable experience – so we advise you to take it up if possible.",
+      "start": 291.28,
+      "end": 300.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Obviously, we understand that people do have commitments outside work, so don’t worry if there are times when you are unavailable.",
+      "start": 300.48,
+      "end": 310.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "As you know, we don’t have a formal dress code here – you may wear casual clothes as long as they’re practical – and the only restriction for shoes we have is on high heels for health and safety reasons.",
+      "start": 310.1,
+      "end": 325.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "(Q19) Comfortable shoes like trainers are preferable.",
+      "start": 325.62,
+      "end": 329.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "There’s a heavily subsidised canteen on site where you can get hot meals or salads cheaply.",
+      "start": 329.36,
+      "end": 337.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Snacks and drinks are also provided – so (Q20) we’ve decided to introduce a no packed lunch policy.",
+      "start": 337.3,
+      "end": 344.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "This is partly to encourage healthy eating at work and partly to stop people from eating at their workstation, which is unhygienic.",
+      "start": 344.9,
+      "end": 366.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "OK moving on to …",
+      "start": 366.96,
+      "end": 404.65,
+      "preAudio": false
+    }
+  ]
+}

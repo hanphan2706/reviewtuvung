@@ -1,6 +1,6 @@
 "use client";
 
-import { BadgeCheck, Mic } from "lucide-react";
+import { BadgeCheck } from "lucide-react";
 import { useMemo } from "react";
 import { studyHubCourseSectionStackClass } from "@/components/study-module/study-hub-shell";
 import type { ListeningPartMeta } from "@/lib/listening/content-manifest";
@@ -10,30 +10,6 @@ type ListeningCourseLibrarySidebarProps = {
   lessons: readonly ListeningPartMeta[];
   isLoggedIn: boolean;
 };
-
-function ListeningWeeklyChallengeCard() {
-  return (
-    <section className="rounded-xl bg-[#000001] p-6 text-white shadow-sm">
-      <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-white/65">Thử thách mỗi tuần</p>
-      <h2 className="mt-3 font-serif text-xl font-semibold leading-snug md:text-[1.35rem]">Ghi âm đối thoại</h2>
-      <p className="mt-2 text-sm leading-relaxed text-white/80">
-        Ghi âm lại 1 đoạn hội thoại ngắn và nhận phản hồi trực tiếp từ giáo viên IELTS 8.0.
-      </p>
-      <div className="mt-5 flex justify-center">
-        <button
-          type="button"
-          disabled
-          aria-disabled="true"
-          title="Sắp có"
-          className="inline-flex cursor-not-allowed items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#000001] opacity-90"
-        >
-          <Mic className="size-4 shrink-0" aria-hidden />
-          Tham gia ngay
-        </button>
-      </div>
-    </section>
-  );
-}
 
 function ListeningCertificateCard({
   totalLessons,
@@ -75,7 +51,6 @@ export function ListeningCourseLibrarySidebar({ lessons, isLoggedIn }: Listening
     <aside
       className={`grid grid-cols-1 gap-6 sm:grid-cols-2 lg:flex lg:flex-col ${studyHubCourseSectionStackClass}`}
     >
-      <ListeningWeeklyChallengeCard />
       <ListeningCertificateCard
         totalLessons={lessons.length}
         completed={stats.completed}

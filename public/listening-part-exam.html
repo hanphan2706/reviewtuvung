@@ -232,7 +232,10 @@ textarea.fi{display:block;vertical-align:baseline}
 .opt{display:flex;align-items:flex-start;gap:10px;cursor:pointer;padding:8px 12px;border-radius:7px;border:1.5px solid var(--exam-chrome-border);background:var(--exam-chrome-bg);font-size:13px;line-height:1.55;width:100%;max-width:100%;box-sizing:border-box}
 .opt:hover{border-color:var(--exam-chrome-text);background:var(--exam-chrome-surface)}
 .opt input{margin-top:2px;accent-color:var(--exam-purple);flex-shrink:0}
-.opt>span{flex:1 1 auto;min-width:0;white-space:normal}
+.opt>span{min-width:0;white-space:normal;text-align:left}
+.opt-letter{font-weight:800;color:var(--exam-purple);flex:0 0 auto;min-width:1.25em}
+.opt-text{flex:1 1 auto;min-width:0;color:var(--exam-chrome-text);text-align:left}
+.opt>span:not(.opt-letter):not(.opt-text){flex:1 1 auto}
 .opt.sel{border-color:var(--exam-purple);background:var(--exam-purple-soft);font-weight:500}
 .mrow{margin-bottom:14px}
 .mrow-top{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(96px,120px);gap:10px;align-items:center;width:100%;max-width:min(720px,100%)}

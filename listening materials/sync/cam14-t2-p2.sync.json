@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "partId": "cam14-t2-p2",
+  "audioFile": "cam14-test2-part2.mp3",
+  "durationSeconds": 443.113991,
+  "method": "whisper-local",
+  "preambleSeconds": 58,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "We’ll be arriving at Branley Castle in about five minutes, but before we get there I’ll give you a little information about the castle and what our visit will include.",
+      "start": 58,
+      "end": 73.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "So in fact there’s been a castle on this site for over eleven hundred years.",
+      "start": 73.34,
+      "end": 79.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "The first building was a fort constructed in 914 AD for defence against Danish invaders by King Alfred the Great’s daughter, who ruled England at the time.",
+      "start": 79.28,
+      "end": 91.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "In the following century, after the Normans conquered England, the land was given to a nobleman called Richard de Vere, and he built a castle there that stayed in the de Vere family for over four hundred years.",
+      "start": 91.28,
+      "end": 105.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "However, when Queen Elizabeth I announced that she was going to visit the castle in 1576 it was beginning to look a bit run down, and it was decided that rather than repair the guest rooms, (Q11) they’d make a new house for her out of wood next to the main hall.",
+      "start": 105.24,
+      "end": 121.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "She stayed there for four nights and apparently it was very luxurious, but unfortunately it was destroyed a few years later by fire.",
+      "start": 121.96,
+      "end": 131.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "In the seventeenth century the castle belonged to the wealthy Fenys family, who enlarged it and made it more comfortable.",
+      "start": 131.7,
+      "end": 140.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "However, by 1982 the Fenys family could no longer afford to maintain the castle, even though they received government support, and they put it on the market.",
+      "start": 140.86,
+      "end": 150.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "It was eventually taken over by (Q12) a company who owned a number of amusement parks, but when we get there I think you’ll see that they’ve managed to retain the original atmosphere of the castle.",
+      "start": 150.04,
+      "end": 162.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "When you go inside, you’ll find that in the state rooms (Q13) there are life-like moving wax models dressed in costumes of different periods in the past, which even carry on conversations together.",
+      "start": 162.28,
+      "end": 173.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "As well as that, in every room there are booklets giving information about what the room was used for and the history of the objects and furniture it contains.",
+      "start": 173.94,
+      "end": 185.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "The castle park’s quite extensive.",
+      "start": 185.9,
+      "end": 189.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "At one time sheep were kept there, and in the nineteenth century the owners had a little zoo with animals like rabbits and even a baby elephant.",
+      "start": 189.14,
+      "end": 198.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Nowadays the old zoo buildings are used for (Q14) public displays of painting and sculpture.",
+      "start": 198.82,
+      "end": 204.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "The park also has some beautiful trees, though the oldest of all, which dated back 800 years, was sadly blown down in 1987.",
+      "start": 204.84,
+      "end": 216.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Now, you’re free to wander around on your own until 4.30, but then at the end of our visit we’ll all meet together at the bottom of the Great Staircase.",
+      "start": 216.72,
+      "end": 226.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "We’ll then go on to the long gallery, where there’s a wonderful collection of photographs showing the family who owned the castle a hundred years ago having tea and cakes in the conservatory – and we’ll then take you to (Q15) the same place, where afternoon tea will be served to you.",
+      "start": 226.92,
+      "end": 284.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Now if you can take a look at your plans you’ll see Branley Castle has four towers, joined together by a high wall, with the river on two sides.",
+      "start": 284.45,
+      "end": 296.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Don’t miss seeing the Great Hall. That’s near the river in the main tower, the biggest one, which was extended and redesigned in the eighteenth century.",
+      "start": 296.07,
+      "end": 305.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "If you want to get a good view of the whole castle, you can walk around the walls.",
+      "start": 305.37,
+      "end": 311.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "(Q16) The starting point’s quite near the main entrance – walk straight down the path until you get to the south gate, and it’s just there.",
+      "start": 311.49,
+      "end": 320.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Don’t go on to the north gate – there’s no way up from there.",
+      "start": 320.33,
+      "end": 325.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "There’ll shortly be a show in which you can see archers displaying their skill with a bow and arrow.",
+      "start": 325.09,
+      "end": 331.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "The quickest way to get there is to (Q17) take the first left after the main entrance and follow the path past the bridge, then you’ll see it in front of you at the end.",
+      "start": 331.37,
+      "end": 342.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "If you like animals there’s also a display of hunting birds – falcons and eagles and so on.",
+      "start": 342.71,
+      "end": 350.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "If you (Q18) go from the main entrance in the direction of the south gate, but turn right before you get there instead of going through it, you’ll see it on your right past the first tower.",
+      "start": 350.23,
+      "end": 362.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "At 3 pm there’s a short performance of traditional dancing on the (Q19) outdoor stage.",
+      "start": 362.81,
+      "end": 368.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "That’s right at the other side of the castle from the entrance, and over the bridge.",
+      "start": 368.65,
+      "end": 374.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "It’s about ten minutes’ walk or so.",
+      "start": 374.09,
+      "end": 376.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "And finally the shop.",
+      "start": 376.47,
+      "end": 378.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "It’s actually (Q20) inside one of the towers, but the way in is from the outside.",
+      "start": 378.99,
+      "end": 384.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Just take the first left after the main entrance, go down the path and take the first right.",
+      "start": 384.61,
+      "end": 390.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "It’s got some lovely gifts and souvenirs.",
+      "start": 390.73,
+      "end": 393.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Right, so we’re just arriving …",
+      "start": 393.45,
+      "end": 443.114,
+      "preAudio": false
+    }
+  ]
+}

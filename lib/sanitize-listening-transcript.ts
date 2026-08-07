@@ -27,7 +27,7 @@ export function isListeningTranscriptNoiseLine(line: string): boolean {
 function splitLongMonologueLine(line: string): string[] {
   const t = line.replace(/\u00a0/g, " ").trim();
   if (t.length < 200) return [line];
-  if (/^PART\s+\d/i.test(t)) return [line];
+  if (/^(?:PART|SECTION)\s+\d/i.test(t)) return [line];
   if (/^(MAN|WOMAN|LECTURER)\s+/i.test(t)) return [line];
   if (/^[A-Z][A-Z\s']+:\s/.test(t)) return [line];
   if (/^Before you hear/i.test(t)) return [line];
@@ -47,6 +47,7 @@ export function sanitizeListeningTranscript(raw: string): string {
   }
   let out = kept.join("\n");
   out = out.replace(/\n{3,}/g, "\n\n");
+  out = out.replace(/^(?:SECTION)\s+(\d+)\s*$/gim, "PART $1");
   out = out.replace(/^(PART\s+(\d+))(?:\n+PART\s+\2)+/gim, "$1");
   return out.trim();
 }

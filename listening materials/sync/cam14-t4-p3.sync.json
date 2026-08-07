@@ -1,0 +1,298 @@
+{
+  "version": 1,
+  "partId": "cam14-t4-p3",
+  "audioFile": "cam14-test4-part3.mp3",
+  "durationSeconds": 463.189002,
+  "method": "whisper-local",
+  "preambleSeconds": 66.26,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "STEPHANIE",
+      "text": "Hello, Trevor.",
+      "start": 66.26,
+      "end": 67.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "TREVOR",
+      "text": "Hello, Stephanie. You said you wanted to talk about the course I’m taking on literature for children.",
+      "start": 67.52,
+      "end": 73.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "STEPHANIE",
+      "text": "That’s right. I’m thinking of doing it next year, but I’d like to find out more about it first.",
+      "start": 73.3,
+      "end": 79.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "TREVOR",
+      "text": "OK, well, as you probably know, it’s a one-year course. It’s divided into six modules, and you have to take all of them. One of the most interesting ones, for me, at least, was about the purpose of children’s literature.",
+      "start": 79.76,
+      "end": 93.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "STEPHANIE",
+      "text": "You mean, whether it should just entertain children or should be educational, as well.",
+      "start": 93.36,
+      "end": 98.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "TREVOR",
+      "text": "Right, and whether the teaching should be factual – giving them information about the world – or ethical, teaching them values. What’s fascinating is that (Q21) the writer isn’t necessarily conscious of the message they’re conveying. For instance, a story might show a child who has a problem as a result of not doing what an adult has told them to do, implying that children should always obey adults.",
+      "start": 98.96,
+      "end": 124.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "STEPHANIE",
+      "text": "I see what you mean.",
+      "start": 124.18,
+      "end": 125.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "TREVOR",
+      "text": "That module made me realise how important stories are – they can have a significant effect on children as they grow up. Actually, (Q22) it inspired me to have a go at it myself, just for my own interest. I know can’t compete with the really popular stories, like the Harry Potter books – they’re very good, and even young kids like my seven-year-old niece love reading them.",
+      "start": 125.88,
+      "end": 149.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "STEPHANIE",
+      "text": "Mm. I’m very interested in illustrations in stories. Is that covered in the course?",
+      "start": 149.88,
+      "end": 156.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "TREVOR",
+      "text": "Yes, there’s a module on pictures, and how they’re sometimes central to the story.",
+      "start": 156.1,
+      "end": 161.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "STEPHANIE",
+      "text": "That’s good. I remember some frightening ones I saw as a child and I can still see them vividly in my mind, years later! Pictures can be so powerful, just as powerful as words. I’ve always enjoyed drawing, so (Q23) that’s the field I want to go into when I finish the course. I bet that module will be really helpful.",
+      "start": 161.96,
+      "end": 185.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "TREVOR",
+      "text": "I’m sure it will. We also studied comics in that module, but I’m not convinced of their value, not compared with books. One of the great things about words is that you use your imagination, but with a comic you don’t have to.",
+      "start": 185.08,
+      "end": 200.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "STEPHANIE",
+      "text": "But children are so used to visual input – on TV, video games, and so on. There are plenty of kids who wouldn’t even try to read a book, so I think (Q24) comics can serve a really useful purpose.",
+      "start": 200.18,
+      "end": 215.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "TREVOR",
+      "text": "You mean, it’s better to read a comic than not to read at all? Yes, I suppose you’re right. I just think its sad when children don’t read books.",
+      "start": 215.3,
+      "end": 225.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "STEPHANIE",
+      "text": "What about books for girls and books for boys? Does the course go into that?",
+      "start": 225.16,
+      "end": 231.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "TREVOR",
+      "text": "Yes, there’s a module on it. For years, lots of stories, in English, at least, assumed that boys went out and did adventurous things and girls stayed at home and played with dolls. I was amazed (Q25) how many books were targeted at just one sex or the other. Of course this reflects society as it is when the books are written.",
+      "start": 231.32,
+      "end": 253.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "STEPHANIE",
+      "text": "That’s true. So it sounds as though you think it’s a good course.",
+      "start": 253.2,
+      "end": 258.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "TREVOR",
+      "text": "Definitely.",
+      "start": 258.14,
+      "end": 301.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "TREVOR",
+      "text": "Have you been reading lots of children’s stories, to help you decide whether to take the course?",
+      "start": 301.63,
+      "end": 307.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "STEPHANIE",
+      "text": "Yeah. I’ve gone as far back as the late seventeenth century, though I know there were earlier children’s stories.",
+      "start": 307.41,
+      "end": 314.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "TREVOR",
+      "text": "So does that mean you’ve read Perrault’s fairy tales? Cinderella, The Sleeping Beauty, and so on.",
+      "start": 314.37,
+      "end": 319.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "STEPHANIE",
+      "text": "Yes. They must be important, (Q26) because no stories of that type had been written before, there were the first. Then there’s The Swiss Family Robinson.",
+      "start": 319.81,
+      "end": 330.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "TREVOR",
+      "text": "I haven’t read that.",
+      "start": 330.09,
+      "end": 331.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "STEPHANIE",
+      "text": "The English name makes it sound as though Robinson is the family’s surname, but a more accurate translation would be The Swiss Robinsons, because it’s about (Q27) a Swiss family who are shipwrecked, like Robinson Crusoe in the novel of a century earlier.",
+      "start": 331.45,
+      "end": 348.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "TREVOR",
+      "text": "Well I never knew that!",
+      "start": 348.67,
+      "end": 350.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "STEPHANIE",
+      "text": "Have you read Hoffmann’s The Nutcracker and the Mouse King?",
+      "start": 350.37,
+      "end": 353.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "TREVOR",
+      "text": "Wasn’t that (Q28) the basis for Tchaikovsky’s ballet The Nutcracker?",
+      "start": 353.79,
+      "end": 357.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "STEPHANIE",
+      "text": "That’s right. It has some quite bizarre elements.",
+      "start": 357.35,
+      "end": 362.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "TREVOR",
+      "text": "I hope you’ve read Oscar Wilde’s The Happy Prince. It’s probably my favourite children’s story of all time.",
+      "start": 362.19,
+      "end": 369.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "STEPHANIE",
+      "text": "Mine too! And it’s so surprising, because Wilde is best known for his plays, and most of them are very witty, but The Happy Prince is really moving. (Q29) I struggled with Tolkien’s The Lord of the Rings – there long books, and I gave up after one.",
+      "start": 369.33,
+      "end": 388.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "TREVOR",
+      "text": "It’s extremely popular, though.",
+      "start": 388.97,
+      "end": 391.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "STEPHANIE",
+      "text": "Yeah, but whereas something like The Happy Prince just carried me along with it, The Lord of the Rings took more effort than I was prepared to give it.",
+      "start": 391.35,
+      "end": 401.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "TREVOR",
+      "text": "I didn’t find that – I love it.",
+      "start": 401.21,
+      "end": 403.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "STEPHANIE",
+      "text": "Another one I’ve read is War Horse.",
+      "start": 403.93,
+      "end": 406.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "TREVOR",
+      "text": "Oh yes. It’s about the First Word War, isn’t it? (Q30) Hardly what you’d expect for a children’s story.",
+      "start": 406.31,
+      "end": 412.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "STEPHANIE",
+      "text": "Exactly, but it’s been very successful. Have you read any …",
+      "start": 412.77,
+      "end": 463.189,
+      "preAudio": false
+    }
+  ]
+}

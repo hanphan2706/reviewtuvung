@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "partId": "cam14-t1-p3",
+  "audioFile": "cam14-test1-part3.mp3",
+  "durationSeconds": 431.189002,
+  "method": "whisper-local",
+  "preambleSeconds": 68.25,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "TUTOR",
+      "text": "OK, so what I’d like you to do now is to talk to your partner about your presentations on urban planning. You should have done most of the reading now, so I’d like you to share your ideas, and talk about the structure of your presentation and what you need to do next.",
+      "start": 68.25,
+      "end": 86.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "CARLA",
+      "text": "OK Rob. I’m glad we chose quite a specific topic – cities built next to the sea. It made it much easier to find relevant information.",
+      "start": 86.55,
+      "end": 95.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "ROB",
+      "text": "Yeah. And cities are growing so quickly – I mean, we know that more than half the world’s population lives in cities now.",
+      "start": 95.75,
+      "end": 103.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "CARLA",
+      "text": "Yeah, though that’s all cities, not just ones on the coast. But (Q21) most of the biggest cities are actually built by the sea. I’d not realised that before.",
+      "start": 103.87,
+      "end": 114.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "ROB",
+      "text": "Nor me. And what’s more, a lot of them are built at places where rivers come out into the sea. But apparently this can be a problem.",
+      "start": 114.09,
+      "end": 123.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "CARLA",
+      "text": "Why?",
+      "start": 123.27,
+      "end": 140.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "ROB",
+      "text": "Well, as the city expands, agriculture and industry tend to spread further inland along the rivers, and so agriculture moves even further inland up the river. That’s not necessarily a problem, except (Q22) it means more and more pollutants are discharged into the rivers.",
+      "start": 140.25,
+      "end": 154.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "CARLA",
+      "text": "So these are brought downstream to the cities?",
+      "start": 154.25,
+      "end": 156.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "ROB",
+      "text": "Right. Hmm. Did you read that article about Miami, on the east coast of the USA?",
+      "start": 156.97,
+      "end": 162.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "CARLA",
+      "text": "No.",
+      "start": 162.41,
+      "end": 162.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "ROB",
+      "text": "Well, apparently back in the 1950s they build channels to drain away the water in case of flooding.",
+      "start": 162.86,
+      "end": 168.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "CARLA",
+      "text": "Sounds sensible.",
+      "start": 168.98,
+      "end": 169.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "ROB",
+      "text": "Yeah, they spent quite a lot of money on them. (Q23) But what they didn’t take into account was global warming. So they built the drainage channels too close to sea level, and now sea levels are rising, they’re more or less useless. If there’s a lot of rain, the water can’t run away, there’s nowhere for it to go. The whole design was faulty.",
+      "start": 169.66,
+      "end": 183.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "CARLA",
+      "text": "So what are the authorities doing about it now?",
+      "start": 183.66,
+      "end": 186.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "ROB",
+      "text": "I don’t know. I did read that they’re aiming to stop disposing of waste into the ocean over the next ten years.",
+      "start": 186.72,
+      "end": 188.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "CARLA",
+      "text": "But that won’t help with flood prevention now, will it?",
+      "start": 188.21,
+      "end": 191.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "ROB",
+      "text": "No. Really (Q24) they just need to find the money for something to replace the drainage channels, in order to protect against flooding now. But in the long term they need to consider the whole ecosystem.",
+      "start": 191.61,
+      "end": 203.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "CARLA",
+      "text": "Right. Really, though, coastal cities can’t deal with their problems on their own, can they? I mean, they’ve got to start acting together at an international level instead of just doing their own thing.",
+      "start": 203.85,
+      "end": 215.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "ROB",
+      "text": "Absolutely. The thing is, everyone knows what the problems are and environmentalists have a pretty good idea of what we should be doing about them, so (Q25) they should be able to work together to some extent. But it’s going to be a long time before countries come to a decision on what principles they’re prepared to abide by.",
+      "start": 215.53,
+      "end": 233.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "CARLA",
+      "text": "Yes, if they ever do.",
+      "start": 233.83,
+      "end": 278.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "CARLA",
+      "text": "So I think we’ve probably got enough for our presentation. It’s only fifteen minutes.",
+      "start": 278.41,
+      "end": 283.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "ROB",
+      "text": "OK. So I suppose we’ll begin with some general historical background about why coastal cities were established. But (Q26) we don’t want to spend too long on that, the other students will already know a bit about it. It’s all to do with communications and so on.",
+      "start": 283.85,
+      "end": 299.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "CARLA",
+      "text": "Yes. We should mention some geographical factors, things like wetlands and river estuaries and coastal erosion and so on. We could have some maps of different cities with these features marked.",
+      "start": 299.47,
+      "end": 313.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "ROB",
+      "text": "On a handout you mean? Or (Q27) some slides everyone can see?",
+      "start": 313.41,
+      "end": 317.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "CARLA",
+      "text": "Yeah, that’d be better.",
+      "start": 317.49,
+      "end": 319.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "ROB",
+      "text": "It’d be good to go into past mistakes in a bit more detail. Did you read that case study of the problems there were in New Orleans with flooding a few years ago?",
+      "start": 319.51,
+      "end": 330.73,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "CARLA",
+      "text": "Yes, (Q28) We could use that as the basis for that part of the talk. I don’t think the other students will have read it, but they’ll remember hearing about the flooding at the time.",
+      "start": 330.73,
+      "end": 342.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "ROB",
+      "text": "OK. So that’s probably enough background.",
+      "start": 342.63,
+      "end": 350.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "CARLA",
+      "text": "So then we’ll go on to talk about what action’s being taken to deal with the problems of coastal cities.",
+      "start": 350.29,
+      "end": 357.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "ROB",
+      "text": "OK. What else do we need to talk about? Maybe something on future risks, looking more at the long term, if populations continue to grow.",
+      "start": 357.09,
+      "end": 365.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "CARLA",
+      "text": "Yeah. We’ll need to do a bit of work there, I haven’t got much information, have you?",
+      "start": 365.59,
+      "end": 365.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "ROB",
+      "text": "No. (Q29) We’ll need to look at some websites. Shouldn’t take too long.",
+      "start": 365.65,
+      "end": 370.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "CARLA",
+      "text": "OK. And I think we should end by talking about international implications. Maybe (Q30) we could ask people in the audience. We’ve got people from quite a lot of different places.",
+      "start": 370.07,
+      "end": 381.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "ROB",
+      "text": "That’d be interesting, if we have time, yes. So now shall we …",
+      "start": 381.13,
+      "end": 431.189,
+      "preAudio": false
+    }
+  ]
+}

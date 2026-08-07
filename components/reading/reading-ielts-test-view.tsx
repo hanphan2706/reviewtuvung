@@ -3,12 +3,10 @@
 import { Suspense, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ReadingIeltsTestGrid } from "@/components/reading/reading-ielts-test-grid";
-import { ReadingLibrarySortSelect } from "@/components/reading/reading-library-sort";
 import { StudyHubHeader } from "@/components/study-module/study-hub-header";
+import { StudyHubLibraryIconToolbar } from "@/components/study-module/study-hub-library-icon-toolbar";
 import { StudyHubLibraryPageHeader } from "@/components/study-module/study-hub-library-page-header";
 import { StudyHubLibraryPagination } from "@/components/study-module/study-hub-library-pagination";
-import { StudyHubLibrarySearchInput } from "@/components/study-module/study-hub-library-search-input";
-import { StudyHubLibraryToolbar } from "@/components/study-module/study-hub-library-toolbar";
 import {
   studyHubPageBgClass,
   studyHubSubpageContentClass,
@@ -28,6 +26,8 @@ import {
   type ReadingIeltsTest,
 } from "@/lib/reading/ielts-test-catalog";
 import {
+  READING_IELTS_LIBRARY_SORT_OPTIONS,
+  READING_LIBRARY_SORT_DEFAULT,
   parseReadingIeltsLibrarySort,
   type ReadingIeltsLibrarySort,
 } from "@/lib/reading/library-sort";
@@ -114,18 +114,16 @@ function ReadingIeltsTestViewInner({
           title={pageTitle}
           description={pageDescription || undefined}
           toolbar={
-            <StudyHubLibraryToolbar
-              search={
-                <StudyHubLibrarySearchInput
-                  value={query}
-                  onChange={handleSearchChange}
-                  placeholder="Tìm kiếm đề IELTS..."
-                  aria-label="Tìm kiếm đề IELTS"
-                />
-              }
-              sort={
-                <ReadingLibrarySortSelect scope="ielts" value={sort} onChange={setSort} />
-              }
+            <StudyHubLibraryIconToolbar
+              searchValue={query}
+              onSearchChange={handleSearchChange}
+              searchPlaceholder="Tìm kiếm đề IELTS..."
+              searchAriaLabel="Tìm kiếm đề IELTS"
+              filterOptions={READING_IELTS_LIBRARY_SORT_OPTIONS}
+              filterValue={sort}
+              onFilterChange={(value) => setSort(value as ReadingIeltsLibrarySort)}
+              filterAriaLabel="Sắp xếp đề IELTS"
+              filterDefaultValue={READING_LIBRARY_SORT_DEFAULT}
             />
           }
         />

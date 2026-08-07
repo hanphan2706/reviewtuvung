@@ -1,0 +1,306 @@
+{
+  "version": 1,
+  "partId": "cam14-t3-p1",
+  "audioFile": "cam14-test3-part1.mp3",
+  "durationSeconds": 525.42,
+  "method": "whisper-local",
+  "preambleSeconds": 119.19,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "ANGELA",
+      "text": "Hello, Flanders conference hotel.",
+      "start": 119.19,
+      "end": 121.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "MAN",
+      "text": "Oh, hi. I wanted to ask about conference facilities at the hotel. Have I come through to the right person?",
+      "start": 121.91,
+      "end": 128.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "ANGELA",
+      "text": "You have. I’m the customer services manager. My name’s (Example) Angela. So how can I help you?",
+      "start": 128.79,
+      "end": 181.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "MAN",
+      "text": "Well, I’m calling from Barrett and Stansons, we’re a medical company based in Perth.",
+      "start": 181.91,
+      "end": 187.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "ANGELA",
+      "text": "Oh yes.",
+      "start": 187.07,
+      "end": 188.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "MAN",
+      "text": "And we’re organising a conference for our clients to be held in Sydney. It’ll be held over two days and we’re expecting about fifty or sixty people.",
+      "start": 188.01,
+      "end": 197.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "ANGELA",
+      "text": "When were you thinking of having it?",
+      "start": 197.75,
+      "end": 200.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "MAN",
+      "text": "Some time early next year, like the end of January? It’d have to be a weekend.",
+      "start": 200.13,
+      "end": 206.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "ANGELA",
+      "text": "Let me see … our conference facilities are already booked for the weekend beginning January 28th. We could do the first weekend in February?",
+      "start": 206.13,
+      "end": 218.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "MAN",
+      "text": "How about January 21st?",
+      "start": 218.63,
+      "end": 221.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "ANGELA",
+      "text": "I’m afraid that’s booked too.",
+      "start": 221.21,
+      "end": 225.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "MAN",
+      "text": "Well, let’s go for the February date then.",
+      "start": 225.77,
+      "end": 228.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "ANGELA",
+      "text": "So that’s the weekend beginning the 4th.",
+      "start": 228.69,
+      "end": 232.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "MAN",
+      "text": "OK. Now can you tell me a bit about what conference facilities you have?",
+      "start": 232.39,
+      "end": 238.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "ANGELA",
+      "text": "Sure. So for talks and presentations we have the Tesla room.",
+      "start": 238.35,
+      "end": 244.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "MAN",
+      "text": "Sorry?",
+      "start": 244.53,
+      "end": 245.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "ANGELA",
+      "text": "(Q1) Tesla – that’s spelled T-E-S-L-A. it holds up to a hundred people, and it’s fully equipped with a projector and so on.",
+      "start": 245.65,
+      "end": 258.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "MAN",
+      "text": "How about a (Q2) microphone?",
+      "start": 258.33,
+      "end": 260.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "ANGELA",
+      "text": "Yes, that’ll be all set up ready for you, and there’ll be one that members of the audience can use too, for questions, if necessary.",
+      "start": 260.07,
+      "end": 268.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "MAN",
+      "text": "Fine. And we’ll also need some sort of open area where people can sit and have a cup of coffee, and we’d like to have an (Q3) exhibition of our products and services there as well, so that’ll need to be quite a big space.",
+      "start": 268.91,
+      "end": 284.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "ANGELA",
+      "text": "That’s fine, there’s a central atrium with all those facilities, and you can come before the conference starts if you want to set everything up.",
+      "start": 284.65,
+      "end": 294.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "MAN",
+      "text": "Great. And I presume there’s (Q4) wifi?",
+      "start": 294.79,
+      "end": 297.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "ANGELA",
+      "text": "Oh yes, that’s free and available throughout the hotel.",
+      "start": 297.69,
+      "end": 303.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "MAN",
+      "text": "OK.",
+      "start": 303.23,
+      "end": 304.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "ANGELA",
+      "text": "Would you also like us to provide a buffet lunch? We can do a two-course meal with a number of different options.",
+      "start": 304.53,
+      "end": 312.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "MAN",
+      "text": "What sort of price are we looking at for that?",
+      "start": 312.01,
+      "end": 315.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "ANGELA",
+      "text": "Well, I can send you a copy of the standard menu. That’s (Q5) $45 per person. Or you can have the special for $25 more.",
+      "start": 315.41,
+      "end": 326.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "MAN",
+      "text": "I think the standard should be OK, but yes, send me the menu.",
+      "start": 326.05,
+      "end": 366.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "MAN",
+      "text": "Now we’re also going to need accommodation on the Saturday night for some of the participants … I’m not sure how many, but probably about 25. So what do you change for a room?",
+      "start": 366.36,
+      "end": 385.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "ANGELA",
+      "text": "Well, for conference attendees we have a 25% reduction, so we can offer you rooms at (Q6) $135. Normally a standard room’s $180.",
+      "start": 385.92,
+      "end": 399.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "MAN",
+      "text": "And does that include breakfast?",
+      "start": 399.92,
+      "end": 401.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "ANGELA",
+      "text": "Sure. And of course, guests can also make use of all the other facilities at the hotel. So we’ve got a spa where you can get massages and facials and so on, and there’s a (Q7) pool up on the roof for the use of guests.",
+      "start": 401.96,
+      "end": 418.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "MAN",
+      "text": "Great. Now what about transport links? The hotel’s downtown, isn’t it?",
+      "start": 418.66,
+      "end": 425.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "ANGELA",
+      "text": "Yes, it’s about 12 kilometres from the (Q8) airport, but there’s a complimentary shuttle bus for guests. And it’s only about ten minutes’ walk from the central railway station.",
+      "start": 425.2,
+      "end": 437.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "MAN",
+      "text": "OK. Now, I don’t know Sydney very well, can you just give me an idea of the location of the hotel?",
+      "start": 437.32,
+      "end": 444.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "ANGELA",
+      "text": "Well, it’s downtown on Wilby Street, that’s quite a small street, and it’s not very far from the (Q9) sea. And of course if the conference attendees want to go out on the Saturday evening there’s a huge choice of places to eat. Then if they want to make a night of it, they can go on to one of the (Q10) clubs in the area – there are a great many to choose from.",
+      "start": 444.46,
+      "end": 471.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "MAN",
+      "text": "OK. So if we go ahead with this, can you give me some information about how much …",
+      "start": 471.24,
+      "end": 525.42,
+      "preAudio": false
+    }
+  ]
+}
