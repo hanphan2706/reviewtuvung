@@ -88,6 +88,7 @@ const CONTENT_ONLY_LABELS = new Set([
   "Điền từ vào chỗ trống",
   "Hoàn thành câu",
   "Chọn từ thích hợp",
+  "Chọn từ theo nghĩa",
   "Chọn câu đúng",
 ]);
 
@@ -126,6 +127,8 @@ type VocabularyUnitExerciseQuizProps = {
   exercises: readonly VocabularyExercise[];
   completed: Record<string, boolean>;
   onComplete: (exerciseId: string) => void;
+  /** Clear progress and restart from question 1. */
+  onReset?: () => void;
   /** When true, wait for "Câu tiếp theo" instead of auto-advancing after check. */
   manualAdvance?: boolean;
 };
@@ -134,6 +137,7 @@ export function VocabularyUnitExerciseQuiz({
   exercises,
   completed,
   onComplete,
+  onReset,
   manualAdvance = false,
 }: VocabularyUnitExerciseQuizProps) {
   const quizRef = useRef<HTMLDivElement>(null);
@@ -160,6 +164,7 @@ export function VocabularyUnitExerciseQuiz({
     [quizItems, completed],
   );
   const progressPct = total > 0 ? Math.round((completedCount / total) * 100) : 0;
+  const allDone = total > 0 && completedCount >= total;
 
   const isTyped = current?.type === "fill-blank" && isTypedFillBlank(current);
   const isMatch = current?.type === "match";
@@ -428,11 +433,26 @@ export function VocabularyUnitExerciseQuiz({
         <p className="mt-4 text-sm text-red-600">{current.explanation}</p>
       ) : null}
 
+      {allDone && onReset ? (
+        <div className="mt-8 rounded-xl border border-[#E4E4E7] bg-[#fafafa] px-5 py-5">
+          <p className="text-sm font-semibold text-[#000001]">Bạn đã hoàn thành {total}/{total} câu.</p>
+          <p className="mt-1 text-sm text-[#47464b]">Muốn luyện lại từ đầu? Tiến độ bài tập sẽ được đặt lại.</p>
+          <button
+            type="button"
+            onClick={onReset}
+            className="mt-4 inline-flex h-11 items-center justify-center rounded-xl bg-[#0a0a0a] px-6 text-[11px] font-bold uppercase tracking-wide text-white hover:bg-[#1a1a1a]"
+          >
+            Làm lại từ đầu
+          </button>
+        </div>
+      ) : null}
+
       <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <button
           type="button"
           onClick={handleSkip}
-          className="inline-flex h-11 items-center justify-center rounded-xl border border-[#E4E4E7] bg-white px-5 text-[11px] font-bold uppercase tracking-wide text-[#47464b] hover:border-[#0a0a0a]/15"
+          disabled={allDone}
+          className="inline-flex h-11 items-center justify-center rounded-xl border border-[#E4E4E7] bg-white px-5 text-[11px] font-bold uppercase tracking-wide text-[#47464b] hover:border-[#0a0a0a]/15 disabled:opacity-40"
         >
           Bỏ qua câu này
         </button>
@@ -448,7 +468,7 @@ export function VocabularyUnitExerciseQuiz({
           <button
             type="button"
             onClick={handleCheck}
-            disabled={!canCheck || checked}
+            disabled={!canCheck || checked || allDone}
             className="inline-flex h-11 items-center justify-center rounded-xl bg-[#0a0a0a] px-6 text-[11px] font-bold uppercase tracking-wide text-white hover:bg-[#1a1a1a] disabled:opacity-40"
           >
             Kiểm tra đáp án

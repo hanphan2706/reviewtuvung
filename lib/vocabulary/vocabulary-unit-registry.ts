@@ -11,6 +11,11 @@ import {
   listEVIUPreIntermediateCatalog,
 } from "@/lib/vocabulary/eviu-pre-intermediate-catalog";
 import {
+  EVIU_UPPER_INTERMEDIATE_CATALOG,
+  getEVIUUpperIntermediateCatalogEntry,
+  listEVIUUpperIntermediateCatalog,
+} from "@/lib/vocabulary/eviu-upper-intermediate-catalog";
+import {
   getEviuElementaryUnit,
   listEviuElementaryUnits,
 } from "@/lib/vocabulary/units/eviu-elementary-all-units";
@@ -18,6 +23,10 @@ import {
   getEviuPreIntermediateUnit,
   listEviuPreIntermediateUnits,
 } from "@/lib/vocabulary/units/eviu-pre-intermediate-all-units";
+import {
+  getEviuUpperIntermediateUnit,
+  listEviuUpperIntermediateUnits,
+} from "@/lib/vocabulary/units/eviu-upper-intermediate-all-units";
 
 export type CuratedVocabularySeries = {
   id: string;
@@ -61,17 +70,34 @@ export const CURATED_VOCABULARY_SERIES: readonly CuratedVocabularySeries[] = [
     id: "eviu-pre-intermediate",
     title: "English Vocabulary in Use · Pre-Intermediate",
     description:
-      "100 unit trình độ A2 — lý thuyết, bài tập và thẻ SRS theo EVIU Pre-Intermediate (4th ed.), bổ sung sau Elementary.",
-    unitIds: EVIU_PRE_INTERMEDIATE_CATALOG.map((entry) => entry.id),
+      "Unit chủ đề trình độ A2 — lý thuyết, bài tập và thẻ SRS theo EVIU Pre-Intermediate (4th ed.), bổ sung sau Elementary.",
+    unitIds: EVIU_PRE_INTERMEDIATE_CATALOG.filter((entry) => entry.section !== "learning").map(
+      (entry) => entry.id,
+    ),
+  },
+  {
+    id: "eviu-upper-intermediate",
+    title: "English Vocabulary in Use · Upper-Intermediate",
+    description:
+      "101 unit trình độ B2 — lý thuyết, bài tập và thẻ SRS theo EVIU Upper-Intermediate (4th ed.); đang mở dần theo chủ đề.",
+    unitIds: EVIU_UPPER_INTERMEDIATE_CATALOG.map((entry) => entry.id),
   },
 ];
 
 export function getVocabularyUnit(unitId: string): VocabularyUnit | null {
-  return getEviuElementaryUnit(unitId) ?? getEviuPreIntermediateUnit(unitId);
+  return (
+    getEviuElementaryUnit(unitId) ??
+    getEviuPreIntermediateUnit(unitId) ??
+    getEviuUpperIntermediateUnit(unitId)
+  );
 }
 
 export function listCuratedVocabularyUnits(): VocabularyUnit[] {
-  return [...listEviuElementaryUnits(), ...listEviuPreIntermediateUnits()];
+  return [
+    ...listEviuElementaryUnits(),
+    ...listEviuPreIntermediateUnits(),
+    ...listEviuUpperIntermediateUnits(),
+  ];
 }
 
 export function buildUnitDeckName(unit: VocabularyUnit): string {
@@ -90,7 +116,11 @@ function withPublishedStatus(
 }
 
 export function getVocabularyCatalogEntry(unitId: string): VocabularyUnitCatalogEntry | null {
-  return getElementaryCatalogEntry(unitId) ?? getEVIUPreIntermediateCatalogEntry(unitId);
+  return (
+    getElementaryCatalogEntry(unitId) ??
+    getEVIUPreIntermediateCatalogEntry(unitId) ??
+    getEVIUUpperIntermediateCatalogEntry(unitId)
+  );
 }
 
 export function getPublishedCatalogEntry(unitId: string): VocabularyUnitCatalogEntry | null {
@@ -106,7 +136,14 @@ export function listPublishedCatalog(): readonly VocabularyUnitCatalogEntry[] {
   const preIntermediate = listEVIUPreIntermediateCatalog()
     .map((entry) => withPublishedStatus(entry, Boolean(getEviuPreIntermediateUnit(entry.id))))
     .filter((entry) => entry.status === "published");
-  return [...elementary, ...preIntermediate];
+  const upperIntermediate = listEVIUUpperIntermediateCatalog()
+    .map((entry) => withPublishedStatus(entry, Boolean(getEviuUpperIntermediateUnit(entry.id))))
+    .filter((entry) => entry.status === "published");
+  return [...elementary, ...preIntermediate, ...upperIntermediate];
 }
 
-export { listEVIUElementaryCatalog, listEVIUPreIntermediateCatalog };
+export {
+  listEVIUElementaryCatalog,
+  listEVIUPreIntermediateCatalog,
+  listEVIUUpperIntermediateCatalog,
+};

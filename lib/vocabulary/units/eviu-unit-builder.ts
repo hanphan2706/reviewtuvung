@@ -110,7 +110,7 @@ function buildTheory(collocationHtml: string, mistakeHtml: string, principles: P
 export function buildEviuUnit(
   catalog: VocabularyUnitCatalogEntry,
   content: UnitContentInput,
-  options?: { series?: "elementary" | "pre-intermediate" },
+  options?: { series?: "elementary" | "pre-intermediate" | "upper-intermediate" },
 ): VocabularyUnit {
   if (content.exercises.length > MAX_VOCABULARY_UNIT_EXERCISES) {
     throw new Error(
@@ -120,9 +120,11 @@ export function buildEviuUnit(
 
   const series = options?.series ?? "elementary";
   const seriesLabel =
-    series === "pre-intermediate"
-      ? "English Vocabulary in Use · Pre-Intermediate (4th ed.)"
-      : "English Vocabulary in Use · Elementary (3rd ed.)";
+    series === "upper-intermediate"
+      ? "English Vocabulary in Use · Upper-Intermediate (4th ed.)"
+      : series === "pre-intermediate"
+        ? "English Vocabulary in Use · Pre-Intermediate (4th ed.)"
+        : "English Vocabulary in Use · Elementary (3rd ed.)";
 
   return {
     id: catalog.id,
@@ -223,21 +225,21 @@ function buildTermOptions(correct: string, distractors: readonly string[], seed:
   return { options, correctKey };
 }
 
-function buildSentenceOptions(correct: string, distractors: readonly string[], seed: number) {
-  const labels = shuffleWithSeed([correct, ...distractors], seed);
-  const options = labels.map((label, index) => ({ key: String.fromCharCode(97 + index), label }));
-  const correctKey = options.find((option) => option.label === correct)?.key ?? "a";
-  return { options, correctKey };
-}
-
 function wordIndexOf(words: readonly WordInput[], target: WordInput): number {
   const index = words.findIndex((word) => word.term === target.term);
   return index >= 0 ? index : 0;
 }
 
+function plainDefinition(definition: string): string {
+  return definition
+    .replace(/<[^>]+>/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 /**
- * Tạo bài tập đa dạng từ ví dụ ngữ cảnh — tránh dạng máy móc "The word for … is ___".
- * Mỗi từ chỉ xuất hiện một lần; luân phiên điền chỗ trống, chọn câu đúng, chọn từ lạ và hoàn thành ý.
+ * Tạo bài tập đa dạng từ ví dụ / nghĩa — tránh dạng máy móc hoặc "tìm câu có chuỗi chữ".
+ * Mỗi từ chỉ xuất hiện một lần; luân phiên cloze, chọn từ theo nghĩa VI, chọn từ điền chỗ trống.
  */
 export function buildVariedWordExercises(
   unitNumber: number,
@@ -278,23 +280,21 @@ export function buildVariedWordExercises(
           "Điền từ vào chỗ trống",
         );
       }
-    } else if (variant === 1 && target.example) {
-      const wrongSentences = distractorTerms
-        .map((term) => words.find((word) => word.term === term)?.example)
-        .filter((sentence): sentence is string => Boolean(sentence));
-      if (wrongSentences.length >= 3) {
-        const { options, correctKey } = buildSentenceOptions(
-          target.example,
-          wrongSentences.slice(0, 3),
+    } else if (variant === 1) {
+      const meaning = plainDefinition(target.definition);
+      if (meaning) {
+        const { options, correctKey } = buildTermOptions(
+          target.term,
+          distractorTerms,
           unitNumber * 100 + i + 17,
         );
         created = mcq(
           unitNumber,
           exerciseIndex,
-          `"${target.term}"`,
+          `Từ nào mang nghĩa: “${meaning}”?`,
           options,
           correctKey,
-          "Chọn câu đúng",
+          "Chọn từ theo nghĩa",
         );
       }
     } else if (target.example) {

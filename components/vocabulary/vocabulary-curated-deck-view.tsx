@@ -21,7 +21,8 @@ import { useSrsStore } from "@/store/srs-store";
 
 type DeckTab = "theory" | "words" | "exercises";
 
-const exerciseProgressKey = (unitId: string) => `vocab-unit-exercise-progress-${unitId}`;
+/** Legacy key — progress no longer persists across unit visits. */
+const legacyExerciseProgressKey = (unitId: string) => `vocab-unit-exercise-progress-${unitId}`;
 
 function FeatureIcon({ icon }: { icon: "link" | "lightbulb" | "book" }) {
   const className = "size-5 text-[#47464b]";
@@ -209,6 +210,7 @@ export function VocabularyCuratedDeckView({ unit }: { unit: VocabularyUnit }) {
 
   const [tab, setTab] = useState<DeckTab>("theory");
   const [checkedExercises, setCheckedExercises] = useState<Record<string, boolean>>({});
+  const [exerciseQuizKey, setExerciseQuizKey] = useState(0);
   const [importMessage, setImportMessage] = useState<string | null>(null);
 
   const theoryBlocks = unit.theory;
@@ -217,22 +219,16 @@ export function VocabularyCuratedDeckView({ unit }: { unit: VocabularyUnit }) {
     [theoryBlocks],
   );
 
+  // Drop legacy persisted progress so leaving/re-entering a unit always starts fresh.
   useEffect(() => {
+    setCheckedExercises({});
+    setExerciseQuizKey(0);
     try {
-      const raw = localStorage.getItem(exerciseProgressKey(unit.id));
-      if (raw) setCheckedExercises(JSON.parse(raw) as Record<string, boolean>);
+      localStorage.removeItem(legacyExerciseProgressKey(unit.id));
     } catch {
       /* ignore */
     }
   }, [unit.id]);
-
-  useEffect(() => {
-    try {
-      localStorage.setItem(exerciseProgressKey(unit.id), JSON.stringify(checkedExercises));
-    } catch {
-      /* ignore */
-    }
-  }, [checkedExercises, unit.id]);
 
   const deckName = buildUnitDeckName(unit);
   const userDeck = useMemo(() => decks.find((d) => d.name === deckName) ?? null, [decks, deckName]);
@@ -371,9 +367,14 @@ export function VocabularyCuratedDeckView({ unit }: { unit: VocabularyUnit }) {
               <VocabularyUnitWordList words={unit.words} onAddWord={handleAddWord} addedLemmaSet={deckLemmaSet} />
             ) : (
               <VocabularyUnitExerciseQuiz
+                key={exerciseQuizKey}
                 exercises={unit.exercises}
                 completed={checkedExercises}
                 onComplete={(id) => setCheckedExercises((prev) => ({ ...prev, [id]: true }))}
+                onReset={() => {
+                  setCheckedExercises({});
+                  setExerciseQuizKey((key) => key + 1);
+                }}
               />
             )}
           </div>

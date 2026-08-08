@@ -13,6 +13,12 @@ function unitNumberFromId(id: string): number {
   return match ? Number(match[1]) : 0;
 }
 
+/** Units 1–4: study-skills / meta-vocabulary — not topic vocabulary for the A2 hub. */
+function isArchivedLearningUnit(unit: VocabularyUnit): boolean {
+  const unitNumber = unitNumberFromId(unit.id);
+  return unitNumber >= 1 && unitNumber <= 4;
+}
+
 /** Override auto-generated exercises with curated ones where available. */
 function withCuratedExercises(units: readonly VocabularyUnit[]): VocabularyUnit[] {
   return units.map((unit) => {
@@ -21,8 +27,7 @@ function withCuratedExercises(units: readonly VocabularyUnit[]): VocabularyUnit[
   });
 }
 
-/** Pre-Intermediate units with full lesson content (units 1–100). */
-export const EVIU_PRE_INTERMEDIATE_UNITS: readonly VocabularyUnit[] = withCuratedExercises([
+const ALL_PRE_INTERMEDIATE_UNITS: readonly VocabularyUnit[] = withCuratedExercises([
   ...EVIU_PRE_UNITS_01_15,
   ...EVIU_PRE_UNITS_16_30,
   ...EVIU_PRE_UNITS_31_45,
@@ -32,12 +37,36 @@ export const EVIU_PRE_INTERMEDIATE_UNITS: readonly VocabularyUnit[] = withCurate
   ...EVIU_PRE_UNITS_91_100,
 ]);
 
+/**
+ * Study-skills units (Pre-Int 1–4) kept for a future feature.
+ * Not listed in the A2 hub / published catalog.
+ */
+export const EVIU_PRE_INTERMEDIATE_LEARNING_UNITS_ARCHIVED: readonly VocabularyUnit[] =
+  ALL_PRE_INTERMEDIATE_UNITS.filter(isArchivedLearningUnit);
+
+/** Pre-Intermediate topic units shown in the app (excludes archived learning units 1–4). */
+export const EVIU_PRE_INTERMEDIATE_UNITS: readonly VocabularyUnit[] =
+  ALL_PRE_INTERMEDIATE_UNITS.filter((unit) => !isArchivedLearningUnit(unit));
+
 const UNITS_BY_ID = new Map(EVIU_PRE_INTERMEDIATE_UNITS.map((unit) => [unit.id, unit]));
+const ARCHIVED_BY_ID = new Map(
+  EVIU_PRE_INTERMEDIATE_LEARNING_UNITS_ARCHIVED.map((unit) => [unit.id, unit]),
+);
 
 export function getEviuPreIntermediateUnit(unitId: string): VocabularyUnit | null {
   return UNITS_BY_ID.get(unitId) ?? null;
 }
 
+/** Includes archived learning units — for future reuse / internal tooling. */
+export function getEviuPreIntermediateUnitIncludingArchived(unitId: string): VocabularyUnit | null {
+  return UNITS_BY_ID.get(unitId) ?? ARCHIVED_BY_ID.get(unitId) ?? null;
+}
+
 export function listEviuPreIntermediateUnits(): readonly VocabularyUnit[] {
   return EVIU_PRE_INTERMEDIATE_UNITS;
+}
+
+/** Published + archived learning units (dedupe / internal). */
+export function listEviuPreIntermediateUnitsIncludingArchived(): readonly VocabularyUnit[] {
+  return ALL_PRE_INTERMEDIATE_UNITS;
 }

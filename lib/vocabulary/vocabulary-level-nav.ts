@@ -11,6 +11,7 @@ export const VOCABULARY_GOI_Y_HREF = "/tu-hoc/tu-vung/goi-y" as const;
 const LEVEL_SLUG: Record<VocabularyUnitLevel, string> = {
   A1: "a1",
   A2: "a2",
+  B2: "b2",
 };
 
 const LEVEL_BY_SLUG = Object.fromEntries(
@@ -20,10 +21,11 @@ const LEVEL_BY_SLUG = Object.fromEntries(
 const LEVEL_LABEL: Record<VocabularyUnitLevel, string> = {
   A1: "A1 · Elementary",
   A2: "A2 · Pre-Intermediate",
+  B2: "B2 · Upper-Intermediate",
 };
 
 function usedLevels(): VocabularyUnitLevel[] {
-  const order: VocabularyUnitLevel[] = ["A1", "A2"];
+  const order: VocabularyUnitLevel[] = ["A1", "A2", "B2"];
   const set = new Set(listPublishedCatalog().map((entry) => entry.level));
   return order.filter((level) => set.has(level));
 }
