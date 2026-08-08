@@ -276,7 +276,7 @@ export function GrammarTopicDetailView({
           {topic.examples.map((example) => (
             <div
               key={example.english}
-              className="border-l-[3px] border-[#1e293b] bg-[#f7f5f5] px-5 py-4 md:px-6"
+              className="border-l-[3px] border-[#1e293b] bg-[#fafafa] px-5 py-4 md:px-6"
             >
               <p className="text-[14px] italic leading-relaxed text-[#000001]">
                 {quotedEnglish(example.english)}
