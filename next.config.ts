@@ -16,6 +16,7 @@ const nextConfig: NextConfig = {
   outputFileTracingExcludes: {
     "/*": [
       "./listening materials/Audio cam/**",
+      "./listening materials/Audio cam 12/**",
       "./listening materials/Audio cam 13/**",
       "./listening materials/Audio cam 14/**",
       "./listening materials/Audio cam 15/**",
@@ -50,6 +51,7 @@ const nextConfig: NextConfig = {
       "./listening materials/cam 15 test * qna.txt",
       "./listening materials/cam 14 test * qna.txt",
       "./listening materials/cam 13 test * qna.txt",
+      "./listening materials/cam 12 test * qna.txt",
       "./listening materials/cam * test * part * map.jpg",
       "./listening materials/cam * test * part * map.jpeg",
       "./listening materials/cam * test * part * map.png",
@@ -63,6 +65,7 @@ const nextConfig: NextConfig = {
       "./listening materials/transcript/cam15-test*.txt",
       "./listening materials/transcript/cam14-test*.txt",
       "./listening materials/transcript/cam13-test*.txt",
+      "./listening materials/transcript/cam12-test*.txt",
       "./listening materials/transcript/tactics-basic-*.txt",
       "./listening materials/transcript/basic-ielts-*.txt",
       "./listening materials/sync/cam21-*.sync.json",
@@ -74,6 +77,7 @@ const nextConfig: NextConfig = {
       "./listening materials/sync/cam15-*.sync.json",
       "./listening materials/sync/cam14-*.sync.json",
       "./listening materials/sync/cam13-*.sync.json",
+      "./listening materials/sync/cam12-*.sync.json",
       "./listening materials/sync/tactics-basic-*.sync.json",
       "./listening materials/sync/basic-ielts-*.sync.json",
       "./public/midterm-reading-exam.html",

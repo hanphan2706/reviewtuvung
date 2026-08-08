@@ -27,6 +27,10 @@ import { IELTS_CAM13_T1_FLOW_CONTENT } from "@/lib/listening/ielts-cam13-t1-flow
 import { IELTS_CAM13_T2_FLOW_CONTENT } from "@/lib/listening/ielts-cam13-t2-flow-content";
 import { IELTS_CAM13_T3_FLOW_CONTENT } from "@/lib/listening/ielts-cam13-t3-flow-content";
 import { IELTS_CAM13_T4_FLOW_CONTENT } from "@/lib/listening/ielts-cam13-t4-flow-content";
+import { IELTS_CAM12_T1_FLOW_CONTENT } from "@/lib/listening/ielts-cam12-t1-flow-content";
+import { IELTS_CAM12_T2_FLOW_CONTENT } from "@/lib/listening/ielts-cam12-t2-flow-content";
+import { IELTS_CAM12_T3_FLOW_CONTENT } from "@/lib/listening/ielts-cam12-t3-flow-content";
+import { IELTS_CAM12_T4_FLOW_CONTENT } from "@/lib/listening/ielts-cam12-t4-flow-content";
 import { IELTS_CAM17_T1_FLOW_CONTENT } from "@/lib/listening/ielts-cam17-t1-flow-content";
 import { IELTS_CAM17_T2_FLOW_CONTENT } from "@/lib/listening/ielts-cam17-t2-flow-content";
 import { IELTS_CAM17_T3_FLOW_CONTENT } from "@/lib/listening/ielts-cam17-t3-flow-content";
@@ -73,6 +77,10 @@ const FLOW_BY_PART_ID: Record<string, ListeningFlowLessonContent> = {
   ...IELTS_CAM13_T2_FLOW_CONTENT,
   ...IELTS_CAM13_T3_FLOW_CONTENT,
   ...IELTS_CAM13_T4_FLOW_CONTENT,
+  ...IELTS_CAM12_T1_FLOW_CONTENT,
+  ...IELTS_CAM12_T2_FLOW_CONTENT,
+  ...IELTS_CAM12_T3_FLOW_CONTENT,
+  ...IELTS_CAM12_T4_FLOW_CONTENT,
 };
 
 export function getIeltsFlowLessonContent(partId: string): ListeningFlowLessonContent | undefined {

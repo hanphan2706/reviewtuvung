@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "partId": "cam12-t1-p2",
+  "audioFile": "cam12-test1-part2.mp3",
+  "durationSeconds": 408.202449,
+  "method": "whisper-local",
+  "preambleSeconds": 64.66,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Good morning everyone.",
+      "start": 64.66,
+      "end": 70.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "My name’s Joy Parkins and I’m the restaurant manager.",
+      "start": 70.34,
+      "end": 73.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "And I understand that none of you’ve had any previous experience as kitchen assistants?",
+      "start": 73.86,
+      "end": 80.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Well, you might be feeling a bit nervous now, but most of our kitchen assistants say they enjoy the work.",
+      "start": 80.5,
+      "end": 87.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "OK, they might get shouted at sometimes, but it’s nothing personal, and they’re pleased that they have so many different things to do, which means they never get bored (Q11).",
+      "start": 87.58,
+      "end": 97.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "And I’ll tell you straightaway that if you do well, we might think about moving you up and giving you some more responsibility.",
+      "start": 97.78,
+      "end": 107.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Right, well, you’ve all shown up on time, which is an excellent start.",
+      "start": 107.2,
+      "end": 112.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Now I’m glad to see none of you have unsuitable footwear, so that’s good - you need to be careful as the floors can get very wet and slippery.",
+      "start": 112.22,
+      "end": 123.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Those of you with long hair have got it well out of the way, but some of you’ll need to remove your rings and bracelets - just put them somewhere safe for today, and remember to leave them at home tomorrow, as they can be a safety hazard.",
+      "start": 123.3,
+      "end": 138.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "(Q12)",
+      "start": 138.14,
+      "end": 139.02
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Now it’s going to be a busy day for you all today - we don’t have any tables free for this evening, and only a few for lunch (Q13).",
+      "start": 139.02,
+      "end": 149.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Fortunately we’ve got our Head Chef back - he was away on holiday all last week which meant the other chefs had extra work.",
+      "start": 149.34,
+      "end": 157.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Now, I’ll tell you a bit more about the job in a minute but first, some general regulations.",
+      "start": 157.58,
+      "end": 164.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "For all of you, whatever your age, there’s some equipment you mustn’t use until you’ve been properly trained, like the waste disposal system for example, for health and safety reasons.",
+      "start": 164.5,
+      "end": 178.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Then I think there are two of you here who are under 18 - that’s Emma and Jake, isn’t it?",
+      "start": 178.36,
+      "end": 186.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Right, so for you two, the meat slicer is out of bounds (Q14).",
+      "start": 186.56,
+      "end": 191.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "And of course none of you are allowed to use the electric mixer until you’ve been shown how it works.",
+      "start": 191.04,
+      "end": 199,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Now you may have heard that this can be a stressful job, and I have to say that can be true.",
+      "start": 199,
+      "end": 207.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "You’ll be working an eight-hour day for the first week, though you’ll have the chance to do overtime after that as well if you want to.",
+      "start": 207.08,
+      "end": 215.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "But however long the hours are, you’ll get a break in the middle.",
+      "start": 215.92,
+      "end": 220.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "What you will find is that you’re on your feet all day long, lifting and carrying, so if you’re not fit now you soon will be!",
+      "start": 220.8,
+      "end": 230.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "You’ll find you don’t have much chance to take it easy - when someone tells you to do something you need to do it straightaway (Q15) (Q16) - but at least we do have a very efficient air conditioning system compared with some kitchens.",
+      "start": 230.04,
+      "end": 280.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Now let me tell you about some of the people you need to know.",
+      "start": 280.99,
+      "end": 285.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "So as I said, I’m Joy Parkins and I decide who does what during the day and how long they work for (Q17).",
+      "start": 285.75,
+      "end": 293.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "I’ll be trying to get you to work with as many different people in the kitchen as possible, so that you learn while you’re on the job.",
+      "start": 293.57,
+      "end": 302.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "One person whose name you must remember is David Field.",
+      "start": 302.75,
+      "end": 306.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "If you injure yourself at all, even if it’s really minor, you must report to him and he’ll make sure the incident is recorded and you get the appropriate treatment (Q18).",
+      "start": 306.47,
+      "end": 317.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "He’s trained to give basic treatment to staff himself, or he’ll send you off somewhere else if necessary.",
+      "start": 317.03,
+      "end": 323.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Then there’s Dexter Wills - he’s the person you need to see if you smash a plate or something like that (Q19).",
+      "start": 323.81,
+      "end": 331.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Don’t just leave it and hope no one will notice - it’s really important to get things noted and replaced or there could be problems later.",
+      "start": 331.57,
+      "end": 340.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "And finally, there’s Mike Smith.",
+      "start": 340.41,
+      "end": 343.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "He’s the member of staff who takes care of all the stores of perishables, so if you notice we’re getting low in flour or sugar or something, make sure you let him know so he can put in an order.",
+      "start": 343.45,
+      "end": 357.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "(Q20)",
+      "start": 357.05,
+      "end": 357.81
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "OK, now the next thing …",
+      "start": 357.81,
+      "end": 408.202,
+      "preAudio": false
+    }
+  ]
+}

@@ -16,6 +16,8 @@ export const LISTENING_AUDIO_CAM14_SUBDIR = path.join(LISTENING_MATERIALS_ROOT, 
 
 export const LISTENING_AUDIO_CAM13_SUBDIR = path.join(LISTENING_MATERIALS_ROOT, "Audio cam 13");
 
+export const LISTENING_AUDIO_CAM12_SUBDIR = path.join(LISTENING_MATERIALS_ROOT, "Audio cam 12");
+
 /** @deprecated Use `LISTENING_AUDIO_CAM_SUBDIR`. */
 export const LISTENING_AUDIO_CAM19_SUBDIR = LISTENING_AUDIO_CAM_SUBDIR;
 
@@ -42,6 +44,7 @@ export const LISTENING_AUDIO_UPLOAD_SOURCE_SUBDIRS = [
   LISTENING_AUDIO_CAM15_SUBDIR,
   LISTENING_AUDIO_CAM14_SUBDIR,
   LISTENING_AUDIO_CAM13_SUBDIR,
+  LISTENING_AUDIO_CAM12_SUBDIR,
   LISTENING_AUDIO_CAM_SUBDIR,
   LISTENING_AUDIO_REAL_TEST_SUBDIR,
   LISTENING_AUDIO_TACTICS_BASIC_SUBDIR,
@@ -63,6 +66,7 @@ const CAM16_AUDIO_FILE = /^cam16-test[1-4]-part[1-4]\.mp3$/i;
 const CAM15_AUDIO_FILE = /^cam15-test[1-4]-part[1-4]\.mp3$/i;
 const CAM14_AUDIO_FILE = /^cam14-test[1-4]-part[1-4]\.mp3$/i;
 const CAM13_AUDIO_FILE = /^cam13-test[1-4]-part[1-4]\.mp3$/i;
+const CAM12_AUDIO_FILE = /^cam12-test[1-4]-part[1-4]\.mp3$/i;
 const REAL_TEST_AUDIO_FILE = /^real test \d+\.mp3$/i;
 const PINBALL_ENTRY_AUDIO_FILE = /^pinball-entry-part[1-4]\.mp3$/i;
 
@@ -96,6 +100,9 @@ function listeningAudioSubdirsForFile(fileName: string): string[] {
   }
   if (CAM13_AUDIO_FILE.test(fileName)) {
     return [LISTENING_AUDIO_CAM13_SUBDIR, LISTENING_AUDIO_CAM_SUBDIR];
+  }
+  if (CAM12_AUDIO_FILE.test(fileName)) {
+    return [LISTENING_AUDIO_CAM12_SUBDIR, LISTENING_AUDIO_CAM_SUBDIR];
   }
   if (CAM21_AUDIO_FILE.test(fileName) || CAM17_AUDIO_FILE.test(fileName)) {
     return [LISTENING_AUDIO_CAM_SUBDIR];

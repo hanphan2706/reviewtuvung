@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "partId": "cam12-t3-p4",
+  "audioFile": "cam12-test3-part4.mp3",
+  "durationSeconds": 490.88,
+  "method": "whisper-local",
+  "preambleSeconds": 89.43,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "OK, so we’ve been looking at how man-made changes in our environment can affect wildlife.",
+      "start": 78.698,
+      "end": 86.3,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Now I’ll discuss a particular example.",
+      "start": 86.3,
+      "end": 89.43,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Let’s take a look at mercury.",
+      "start": 89.43,
+      "end": 92.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Mercury’s one of the 120 or so elements that make up all matter, and it has the symbol Hg.",
+      "start": 92.29,
+      "end": 102.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "It’s a shiny, silvery substance.",
+      "start": 102.63,
+      "end": 105.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "You may have seen it in old-fashioned thermometers, but it’s not used much for domestic purposes now because it’s highly toxic.",
+      "start": 105.85,
+      "end": 116.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "But the problem is that the amount of mercury in the environment’s increasing.",
+      "start": 116.69,
+      "end": 122.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "The main reason for this is the power plants used to produce electricity.",
+      "start": 122.81,
+      "end": 128.63,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "The main source of energy that most of them use is still coal, and when it’s burned it releases mercury into the atmosphere.",
+      "start": 128.63,
+      "end": 138.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Some of this gets deposited into lakes and rivers, and if it’s ingested by a fish it’s not excreted, it stays in the fish’s body and it enters the food chain.",
+      "start": 138.95,
+      "end": 152.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "So it’s been known for some time that birds which eat fish may be affected, but what wasn’t known until quite recently is that those that eat insects can also be affected.",
+      "start": 152.75,
+      "end": 169.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "(Q31)",
+      "start": 169.11,
+      "end": 170.27
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "So a woman called Claire Varian-Ramos is doing some research on how this is affecting birds.",
+      "start": 170.27,
+      "end": 179.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "And rather than looking at how many birds are actually killed by mercury poisoning, she’s looking for more subtle sub-effects.",
+      "start": 179.75,
+      "end": 190.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "And these may be to do with the behaviour of the birds, or with the effect of mercury on the way their brain works, so whether it leads to problems with memory, for example (Q32).",
+      "start": 190.61,
+      "end": 203.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "And she’s particularly focusing on the effects of mercury on bird song.",
+      "start": 203.91,
+      "end": 210.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Now, the process of song learning happens at a particular stage in the birds’ development, and what you may not know is that a young bird seems to acquire this skill by listening to the songs produced by its father (Q33), rather than by any other bird.",
+      "start": 210.57,
+      "end": 230.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "And Varian-Ramos has already found in her research that if young male birds are exposed to mercury, if they eat food contaminated with mercury, then the songs they produce aren’t as complex as those produced by other birds (Q34).",
+      "start": 230.39,
+      "end": 248.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "So quite low-level exposure to mercury is likely to have an impact on male birds in a natural situation, because it can mean that they’re less attractive to female birds, and so it can affect their chances of reproduction.",
+      "start": 248.97,
+      "end": 266.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "(Q35)",
+      "start": 266.85,
+      "end": 272.16
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "Now the way she’s carrying out this research is worth thinking about.",
+      "start": 272.16,
+      "end": 278.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "She’s using a mixture of studies using birds kept in laboratories, and studies carried out outdoors in the wild.",
+      "start": 278.34,
+      "end": 288.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "The lab-based studies have the advantage that you don’t get all the variables you would in a natural setting, so the experimenter has a much higher level of control (Q36), and that means they can be more confident about their results in some ways.",
+      "start": 288.24,
+      "end": 306.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "And of course they don’t have to worry about going out and finding the birds in order to observe them.",
+      "start": 306.74,
+      "end": 314.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "So what are the implications here for humans?",
+      "start": 314.36,
+      "end": 319.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Well, because many birds are migratory, they may be transporting mercury far from contaminated sites.",
+      "start": 319.16,
+      "end": 328.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "For example, it’s been found that ducks who’d been feeding at a contaminated site were later shot by hunters over a thousand kilometres away, and presumably eaten (Q37).",
+      "start": 328.08,
+      "end": 342.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "But these birds likely had mercury levels high enough to warrant concern for human consumption.",
+      "start": 342.24,
+      "end": 350.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "In addition, going back to song learning by birds, we saw that this may be affected by mercury contamination.",
+      "start": 350.08,
+      "end": 358.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Well, we also know that in humans, mercury causes developmental delays in the acquisition of language (Q38), and in fact this process is very similar in the brain regions it involves and even the genes that are involved.",
+      "start": 358.82,
+      "end": 377.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "But mercury contamination has other important implication for humans as well.",
+      "start": 377.6,
+      "end": 384.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "It’s now known that an unborn child can be affected if the food eaten by its mother contains high levels of mercury (Q39), and these effects can be quite substantial.",
+      "start": 384.14,
+      "end": 397.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "In the end, it comes down to whether more value is placed on human economic wellbeing or environmental wellbeing.",
+      "start": 397.58,
+      "end": 406.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "It’s true there are new regulations for mercury emissions from power plants, but these will need billions of dollars to implement, and increase costs for everyone (Q40).",
+      "start": 406.02,
+      "end": 418.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Some argue that’s too much to pay to protect wildlife.",
+      "start": 418.94,
+      "end": 424.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "But as we’ve seen, the issues go beyond that, and I think it’s an issue we need to consider very carefully.",
+      "start": 424.6,
+      "end": 490.88,
+      "preAudio": false
+    }
+  ]
+}

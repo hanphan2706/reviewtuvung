@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "partId": "cam12-t3-p2",
+  "audioFile": "cam12-test3-part2.mp3",
+  "durationSeconds": 435.186939,
+  "method": "whisper-local",
+  "preambleSeconds": 59.1,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "In this session in your training day we’re going to look at home of the more specialised holidays we offer at BC Travel.",
+      "start": 59.1,
+      "end": 67.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Now, the travel business is very competitive and it’s important to be aware of how the market’s changing and developing.",
+      "start": 67.18,
+      "end": 75.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "In terms of age groups, the over-65s are an important market, and one that’s increasing steadily year on year (Q11) (Q12).",
+      "start": 75.06,
+      "end": 84.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "The fewest holidays are taken by the 31 to 42-year-olds, and that figure shows no sign of rising.",
+      "start": 84.74,
+      "end": 92.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "The biggest market at present is still the youngest group, the 16 to 30s, but this group’s also seen the biggest drop over the last few years, whereas there’s a noticeable growth in the number of holidays taken by the 55 to 64-year-olds (Q11&12).",
+      "start": 92.5,
+      "end": 110.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "As far as the 43 to 54-year-olds are concerned, bookings there are steady, but I have to say we haven’t seen the increase we expected.",
+      "start": 110.92,
+      "end": 122.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "One trend we’re noticing with nearly all age groups is the growing popularity of holidays in which clients do some kind of specialised activity.",
+      "start": 122.86,
+      "end": 131.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "I’m not talking here about adventure holidays, where clients take part in high-risk activities like white water rafting just for the thrill of it.",
+      "start": 131.92,
+      "end": 142.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "Activity holidays usually involve rather less high-risk sports, or things like art and music.",
+      "start": 142.4,
+      "end": 150.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "They’re not necessarily cheaper than ordinary holidays, often the opposite, in fact.",
+      "start": 150.52,
+      "end": 156.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "But they do often take place outside the main tourist centres, which gives an opportunity for clients to find out more about the local people and customs (Q13) (Q14), and many say this is one of the most positive features of these holidays.",
+      "start": 156.42,
+      "end": 171.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Of course, they offer the chance to develop a new skill or talent, but clients often say that more than this, it’s the chance to create lasting relationships with other like-minded people that’s the main draw.",
+      "start": 171.46,
+      "end": 185.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "(Q13) (Q14)",
+      "start": 185.22,
+      "end": 186.68
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Let me give you some examples of BC Travel activity holidays.",
+      "start": 186.68,
+      "end": 191.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Our painting holidays take place in four different centres in France and Italy and they’re very popular with clients of all abilities from beginners onwards.",
+      "start": 191.42,
+      "end": 202.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "We’ve got an excellent team of artists to lead the classes - some of them have been with us from the start, and five additional ones will be joining us this year (Q15) so that we can offer a greater number of classes in each centre.",
+      "start": 202.72,
+      "end": 218.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "As far as cooking holidays are concerned, I know a lot of agents offer holidays where clients cook recipes related to one particular country, usually the one they’re staying in, but we focus on dishes from a great many different ones (Q16).",
+      "start": 218.78,
+      "end": 235.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Apart from that you’ll find the usual emphasis on good quality, organic ingredients - that’s more or less a given nowadays - and there are generally some meat-free recipes included.",
+      "start": 235.46,
+      "end": 248.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Our photography holidays take place in a wide range of countries from Iceland to Vietnam, and clients have the opportunity to see some stunning scenery.",
+      "start": 248.26,
+      "end": 259.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "Groups are small, no more than eight, so clients can have one-on-one tuition during the holiday (Q17), and excursions are arranged with fully-trained guides.",
+      "start": 259.06,
+      "end": 270.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "At the end of each holiday an exhibition is held of the photographs taken so that clients can see one another’s work and receive valuable feedback from the tutor.",
+      "start": 270.36,
+      "end": 313.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Finally, let me tell you about our fitness holidays.",
+      "start": 313.97,
+      "end": 317.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "In Ireland and Italy we run one-week general fitness classes for all ages and levels of fitness.",
+      "start": 317.83,
+      "end": 325.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Clients start the course with a consultation with a trainer, and together they draw up an individual programme.",
+      "start": 325.83,
+      "end": 333.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "As well as improving general fitness, clients find that they end up losing much of the stress they’ve built up in their daily lives.",
+      "start": 333.41,
+      "end": 341.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "(Q18)",
+      "start": 341.57,
+      "end": 342.19
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "In Greece, we have a two-week holiday for clients who want to do something about their weight (Q19).",
+      "start": 342.19,
+      "end": 348.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "This has all the features you’d expect, like a personalised diet programme, but one of its most popular features is that the exercise classes are all held on the beach.",
+      "start": 348.31,
+      "end": 359.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "People say it’s far preferable to being in a gym.",
+      "start": 359.99,
+      "end": 364.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Finally, we offer several holidays in Morocco.",
+      "start": 364.41,
+      "end": 368.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "One very popular one is the mountain biking holiday.",
+      "start": 368.21,
+      "end": 371.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "Bikes are provided and there are different routes according to people’s ability.",
+      "start": 371.75,
+      "end": 376.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "We offer one which is tailored to the needs of families (Q20), which is particularly popular.",
+      "start": 376.25,
+      "end": 382.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "OK, so that’s about all the time I have today, so thank you very much …",
+      "start": 382.41,
+      "end": 435.187,
+      "preAudio": false
+    }
+  ]
+}

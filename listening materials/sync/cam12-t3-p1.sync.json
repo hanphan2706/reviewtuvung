@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "partId": "cam12-t3-p1",
+  "audioFile": "cam12-test3-part1.mp3",
+  "durationSeconds": 475.95102,
+  "method": "whisper-local",
+  "preambleSeconds": 115.28,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "SUSIE",
+      "text": "Hello?",
+      "start": 101.446,
+      "end": 101.896,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "PAUL",
+      "text": "Hi, Susie, it’s Paul here. How are you? Enjoying your new job? You’re working at the library, aren’t you?",
+      "start": 101.896,
+      "end": 109.819,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "SUSIE",
+      "text": "Yes. I started when the library re-opened a month ago (Example). It’s great.",
+      "start": 109.819,
+      "end": 115.28,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": "PAUL",
+      "text": "Actually Carol and I have been meaning to join for a while.",
+      "start": 115.28,
+      "end": 119.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "SUSIE",
+      "text": "Oh, you should. It doesn’t cost anything, and the new library has all sorts of facilities. It’s not just a place where you borrow books. For instance, there’s an area with comfortable seats where you can sit and read the magazines they have there. Some people spend the whole morning there.",
+      "start": 119.36,
+      "end": 135.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "PAUL",
+      "text": "Mmm. Wish I had that amount of time to spend!",
+      "start": 135.72,
+      "end": 139.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "SUSIE",
+      "text": "Yes, you must be pretty busy at present, with the children and everything?",
+      "start": 139.54,
+      "end": 144.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "PAUL",
+      "text": "We are, yes. But we’re hoping to get away this summer. We’re thinking of going to Greece.",
+      "start": 144.28,
+      "end": 150.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "SUSIE",
+      "text": "Well, we’ve got a much larger section of the library devoted to travel books now (Q1), so you should come and have a look. I can’t remember if there’s anything specifically on Greece, but I should think so.",
+      "start": 150.8,
+      "end": 164.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "PAUL",
+      "text": "OK. Now Carol’s organising a project for the history class she teaches at school - it’s about life in the town a hundred years ago. Do you have anything that might be useful?",
+      "start": 164.16,
+      "end": 177.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "SUSIE",
+      "text": "Yes, actually we’ve now got a new section with materials on the history of the town and surrounding region. (Q2)",
+      "start": 177.12,
+      "end": 185.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "PAUL",
+      "text": "Right. I’ll tell her. You can’t always find that sort of thing on the internet. Now in the old library there used to be a separate room with reference books. It was a really nice quiet room.",
+      "start": 185.7,
+      "end": 199.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "SUSIE",
+      "text": "Yes. We’ve put those books in the main part of the library now, but we do have a room called the community room. It can be hired out for meetings, but at other times people can use it to study. (Q3)",
+      "start": 199.34,
+      "end": 213.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "PAUL",
+      "text": "I might use that. It’s hard to find anywhere quiet at home sometimes.",
+      "start": 213.66,
+      "end": 218.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "SUSIE",
+      "text": "I can’t remember how old your son and daughter are … we’ve introduced a special section of fiction written specially for teenagers (Q4), but they might be a bit young for that?",
+      "start": 218.08,
+      "end": 229.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "PAUL",
+      "text": "Yes, they would be.",
+      "start": 229.84,
+      "end": 278.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "SUSIE",
+      "text": "Well, we do have lots of activities for younger children.",
+      "start": 278.5,
+      "end": 283.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "PAUL",
+      "text": "Yes?",
+      "start": 283.14,
+      "end": 284.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "SUSIE",
+      "text": "For example we have a Science Club. At the next meeting, they’re going to be doing experiments with stuff that everyone has in the kitchen (Q5) - sugar and flour and so on.",
+      "start": 284.16,
+      "end": 296.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "PAUL",
+      "text": "They might be interested, yes.",
+      "start": 296.44,
+      "end": 298.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "SUSIE",
+      "text": "And we have a competition for children called Reading Challenge. That doesn’t begin until after the end of term. They have to read six books, and they get a certificate if they manage it.",
+      "start": 298.76,
+      "end": 312.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "PAUL",
+      "text": "So that gives them something to do while they’re on holiday, instead of getting bored.",
+      "start": 312.7,
+      "end": 317.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "SUSIE",
+      "text": "That’s the idea. And there’s special activities for adults too. On Friday we have a local author called Tanya Streep who’s going to be talking about her new novel. It’s called ‘Catch the Mouse’ and she based the story on a crime that actually took place here years ago. (Q6)",
+      "start": 317.8,
+      "end": 338.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "PAUL",
+      "text": "Right. We’re not free on Friday, but I’ll took out for the book.",
+      "start": 338.48,
+      "end": 343.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "SUSIE",
+      "text": "Now this probably isn’t for you, but we do have IT support available for members. We get quite a few older people coming along who are wanting to get up to speed with computer technology. It’s on Tuesday mornings - they don’t need to make an appointment or anything, they just turn up. (Q7)",
+      "start": 343.46,
+      "end": 364.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "PAUL",
+      "text": "Well, my mother might be interested, I’ll let her know.",
+      "start": 364.02,
+      "end": 367.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "SUSIE",
+      "text": "OK. And there’s another service which you wouldn’t expect from a library, which is a free medical check-up. The hospital arranges for someone to come along and measure the level of sugar in your blood, and they check cholesterol levels at the same time. (Q8)",
+      "start": 367.88,
+      "end": 385.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "PAUL",
+      "text": "Really?",
+      "start": 385.24,
+      "end": 386.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "SUSIE",
+      "text": "Yes, but that’s only for the over-60s, so you wouldn’t qualify.",
+      "start": 386.48,
+      "end": 391.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "PAUL",
+      "text": "OK. Well, I’ll tell my mother, she might be interested.",
+      "start": 391.86,
+      "end": 396.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "SUSIE",
+      "text": "What other information … well, we do have a little shop with things like wallcharts and greetings cards, and also stamps (Q9) so you can post the cards straightaway, which is really useful.",
+      "start": 396.4,
+      "end": 410.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "PAUL",
+      "text": "Yeah. Well, I’ll bring the children round at the weekend and we’ll join. Oh, one more thing - I’ll be bringing the car, is there parking available? (Q10)",
+      "start": 410.54,
+      "end": 420.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "SUSIE",
+      "text": "Yes, and it’s free in the evening and at weekends.",
+      "start": 420.48,
+      "end": 424.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "PAUL",
+      "text": "Perfect. Well, thanks, Susie see you …",
+      "start": 424.42,
+      "end": 475.951,
+      "preAudio": false
+    }
+  ]
+}

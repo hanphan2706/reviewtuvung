@@ -157,6 +157,54 @@ const LISTENING_PART_IMAGES: Record<string, string> = {
   /** Cam 14 — Crime report form */
   "cam14-t1-p1":
     "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1200&q=80&auto=format&fit=crop",
+  /** Cam 12 — Family excursions */
+  "cam12-t1-p1":
+    "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=1200&q=80&auto=format&fit=crop",
+  /** Kitchen assistants */
+  "cam12-t1-p2":
+    "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=1200&q=80&auto=format&fit=crop",
+  /** Public libraries research */
+  "cam12-t1-p3":
+    "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&q=80&auto=format&fit=crop",
+  /** Business values */
+  "cam12-t1-p4":
+    "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=1200&q=80&auto=format&fit=crop",
+  /** Kenton Festival */
+  "cam12-t2-p1":
+    "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1200&q=80&auto=format&fit=crop",
+  /** European tour plans */
+  "cam12-t2-p2":
+    "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=1200&q=80&auto=format&fit=crop",
+  /** Research project placement */
+  "cam12-t2-p3":
+    "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=1200&q=80&auto=format&fit=crop",
+  /** Changing attitudes to workers */
+  "cam12-t2-p4":
+    "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&q=80&auto=format&fit=crop",
+  /** Joining the library */
+  "cam12-t3-p1":
+    "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&q=80&auto=format&fit=crop",
+  /** Specialised holidays */
+  "cam12-t3-p2":
+    "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=1200&q=80&auto=format&fit=crop",
+  /** Writing a case study */
+  "cam12-t3-p3":
+    "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80&auto=format&fit=crop",
+  /** Mercury and wildlife */
+  "cam12-t3-p4":
+    "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200&q=80&auto=format&fit=crop",
+  /** Cycle tour leader enquiry */
+  "cam12-t4-p1":
+    "https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=1200&q=80&auto=format&fit=crop",
+  /** The Sheepmarket */
+  "cam12-t4-p2":
+    "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1200&q=80&auto=format&fit=crop",
+  /** Film studies presentation */
+  "cam12-t4-p3":
+    "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1200&q=80&auto=format&fit=crop",
+  /** Urban acoustics */
+  "cam12-t4-p4":
+    "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1200&q=80&auto=format&fit=crop",
   /** Cam 13 — Cookery classes */
   "cam13-t1-p1":
     "https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=1200&q=80&auto=format&fit=crop",

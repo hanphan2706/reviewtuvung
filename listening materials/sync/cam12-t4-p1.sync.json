@@ -1,0 +1,306 @@
+{
+  "version": 1,
+  "partId": "cam12-t4-p1",
+  "audioFile": "cam12-test4-part1.mp3",
+  "durationSeconds": 431.490612,
+  "method": "whisper-local",
+  "preambleSeconds": 116.98,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "BOB",
+      "text": "Hello, Pembroke Cycling Holidays, Bob speaking.",
+      "start": 102.98,
+      "end": 116.98,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "MARGARET",
+      "text": "Oh hello. I’ve seen your advert for people to lead cycle trips. Are you the right person to speak to?",
+      "start": 116.98,
+      "end": 125.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "BOB",
+      "text": "Yes, I am. Could I have your name, please?",
+      "start": 125.08,
+      "end": 128.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "MARGARET",
+      "text": "It’s Margaret Smith. (Example)",
+      "start": 128.14,
+      "end": 129.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "BOB",
+      "text": "Are you looking for a permanent job, Margaret? (Q1)",
+      "start": 129.5,
+      "end": 132.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "MARGARET",
+      "text": "No, temporary. I’ve got a permanent job starting in a few months’ time, and I want to do something else until then.",
+      "start": 132.56,
+      "end": 140.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "BOB",
+      "text": "What work do you do?",
+      "start": 140.04,
+      "end": 141.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "MARGARET",
+      "text": "This will probably sound crazy - I used to be a lawyer, and then I made a complete career change and I’m going to be a doctor (Q2). I’ve just finished my training.",
+      "start": 141.74,
+      "end": 152.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "BOB",
+      "text": "Right. And have you had any experience of leading cycle trips?",
+      "start": 152.82,
+      "end": 156.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "MARGARET",
+      "text": "Yes, I’ve led several bike tours in Africa (Q3). The trip to India that I had arranged to lead next month has now been cancelled, so when I saw you were advertising for tour leaders, I decided to apply.",
+      "start": 156.54,
+      "end": 170.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "BOB",
+      "text": "OK. Now we normally have two or three leaders on a trip, depending on the size of the group. Some tours are for very experienced cyclists, but we’ve got a tour coming up soon in Spain, which is proving so popular we need an additional leader. It’s a cycling holiday for families. Would that suit you?",
+      "start": 170.4,
+      "end": 189.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "MARGARET",
+      "text": "It certainly would. I enjoy working with children, and I probable need some more experience before I go on a really challenging trip.",
+      "start": 189.68,
+      "end": 199,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "BOB",
+      "text": "That tour includes several teenagers: have you worked with that age group before?",
+      "start": 199,
+      "end": 203.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "MARGARET",
+      "text": "Yes, I’m a volunteer worker in a youth club (Q4), where I help people to improve their cycling skills. Before that I helped out in a cycling club where I taught beginners.",
+      "start": 203.88,
+      "end": 214.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "BOB",
+      "text": "Well that’s great. Now the trip I mentioned is just for a fortnight, but there might be the possibility of leading other tours after that. Would that fit in with your plans?",
+      "start": 214.76,
+      "end": 225.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "MARGARET",
+      "text": "That’s be fine. I’ll be free for five months. My job is due to start on October the 2nd, and I’m available from May the 1st until late September. (Q5)",
+      "start": 225.86,
+      "end": 237.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "BOB",
+      "text": "Good. Now is there anything I need to know about the food you eat? We usually have one or two people in the group who don’t eat meat, or have some sort of food allergy, so we’re always very careful about that.",
+      "start": 237.08,
+      "end": 251.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "MARGARET",
+      "text": "Yes, I’m allergic to cheese (Q6). Would that be a problem?",
+      "start": 251.08,
+      "end": 254.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "BOB",
+      "text": "No, as long as we have enough notice, we can deal with that.",
+      "start": 254.82,
+      "end": 259.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "MARGARET",
+      "text": "That’s great.",
+      "start": 259.24,
+      "end": 295.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "MARGARET",
+      "text": "It sounds really interesting - would you like me to fill in an application form?",
+      "start": 295.2,
+      "end": 300.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "BOB",
+      "text": "Yes, please. Where should I post it to?",
+      "start": 300.3,
+      "end": 303.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "MARGARET",
+      "text": "Could you send it to 27 Arbuthnot Place - A-R-B-U-T-H-N-O-T - Place, Dumfries. (Q7)",
+      "start": 303.58,
+      "end": 315.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "BOB",
+      "text": "And what’s the postcode, please? (Q8)",
+      "start": 315.62,
+      "end": 320.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "MARGARET",
+      "text": "DG7 4PH.",
+      "start": 320.58,
+      "end": 322.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "BOB",
+      "text": "Was that P Papa or B Bravo?",
+      "start": 322.04,
+      "end": 325.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "MARGARET",
+      "text": "P Papa.",
+      "start": 325.16,
+      "end": 326.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "BOB",
+      "text": "Got that. If you could return the application form by Friday this week, we can interview you on Tuesday next week (Q9). Say half past two. Would that be possible for you?",
+      "start": 326.1,
+      "end": 338,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "MARGARET",
+      "text": "Yes, it’s fine. You’re quite a long way from where I live, so I’ll drive over on Monday. Should I bring anything to the interview?",
+      "start": 338,
+      "end": 346.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "BOB",
+      "text": "We’ll have your application form, of course, but we’ll need to see any certificates you’ve got that are relevant, in cycling, first aid, or whatever.",
+      "start": 346.5,
+      "end": 355,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "MARGARET",
+      "text": "OK.",
+      "start": 355,
+      "end": 355.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "BOB",
+      "text": "And at the interview we’d like to find out about your experience of being a tour guide, so could you prepare a ten-minute talk about that, please? (Q10) You don’t need slides or any complicated equipment - just some notes.",
+      "start": 355.45,
+      "end": 370.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "MARGARET",
+      "text": "Right. I’ll start thinking about that straightaway!",
+      "start": 370.02,
+      "end": 373.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "BOB",
+      "text": "Good. Well, we’ll look forward to receiving your application form, and we’ll contact you to confirm the interview.",
+      "start": 373.22,
+      "end": 379.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "MARGARET",
+      "text": "Thanks very much.",
+      "start": 379.72,
+      "end": 380.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "BOB",
+      "text": "Thank you, Margaret. Goodbye.",
+      "start": 380.98,
+      "end": 382.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "MARGARET",
+      "text": "Bye.",
+      "start": 382.74,
+      "end": 431.491,
+      "preAudio": false
+    }
+  ]
+}

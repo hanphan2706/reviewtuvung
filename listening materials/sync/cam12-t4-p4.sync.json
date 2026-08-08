@@ -1,0 +1,334 @@
+{
+  "version": 1,
+  "partId": "cam12-t4-p4",
+  "audioFile": "cam12-test4-part4.mp3",
+  "durationSeconds": 474.213878,
+  "method": "whisper-local",
+  "preambleSeconds": 91.668,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "This lecture will be about the science of acoustics, the study of sound, in relation to urban environments such as cities.",
+      "start": 78.408,
+      "end": 85.548,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "As an acoustic engineer myself, I think this is an area where we’re likely to see great changes.",
+      "start": 85.548,
+      "end": 91.668,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "In the past, researching urban soundscapes was simple.",
+      "start": 91.668,
+      "end": 94.388,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "We measured levels of sound in decibels, so I used to take my sound meter and I measured the noise somewhere, and then I might ask a sample of people to say at what level the sound became annoying.",
+      "start": 94.388,
+      "end": 108.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "With data like this, acoustic engineers have been able to build up what we call noise maps, maps of the sound environment.",
+      "start": 108.92,
+      "end": 118.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "But actually these aren’t a lot of use.",
+      "start": 118.64,
+      "end": 122.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "What they do show is that the highest noise levels are generally on roads - well, that’s not really very surprising.",
+      "start": 122.18,
+      "end": 131.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "But there’s quite a lot going on that these maps don’t show, because they can’t capture the complex way that sound varies over time.",
+      "start": 131.36,
+      "end": 140.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "So they ignore important issues such as the noise someone might hear from the open windows or gardens of their neighbours (Q31), and this sort of noise can be quite significant in summer.",
+      "start": 140.9,
+      "end": 153.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "We don’t have any databases on this sort of information.",
+      "start": 153.78,
+      "end": 158.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "As well as that, these records of sound levels take no account of the fact that people vary in their perceptions of noise - so someone like me with years of working in acoustics might be very different from you in that regard.",
+      "start": 158.02,
+      "end": 174.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "But anyway, even though these noise maps are fairly crude, they’ve been useful in providing information and raising awareness that noise matters, we need to deal with it and so it’s a political matter (Q32).",
+      "start": 174.3,
+      "end": 188.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "And that’s important - we need rules and regulation because noise can cause all sorts of problems.",
+      "start": 188.84,
+      "end": 197.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Those of you who are city-dwellers know that things go on 24 hours a day, so city-dwellers often suffer from interrupted sleep.",
+      "start": 197.56,
+      "end": 206.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "It’s also known that noise can lead to a rise in levels of stress, due to physical changes in the body affecting the composition of the blood.",
+      "start": 206.86,
+      "end": 216.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "And there are other problems as well, for instance if schoolchildren don’t have a quiet place to study, their work will suffer.",
+      "start": 216.2,
+      "end": 224.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "(Q33)",
+      "start": 224.02,
+      "end": 225.82
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Now, one problem with decibel measurement is that it doesn’t differentiate between different types of noise.",
+      "start": 225.82,
+      "end": 232.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Some types of sounds that most people would probably think of as nice and relaxing might well score quite highly in decibel levels - think of the sound made by a fountain in a town square, for example (Q34).",
+      "start": 232.88,
+      "end": 246.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "That’s not necessarily something that we’d want to control or reduce.",
+      "start": 246.48,
+      "end": 251.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "So maybe researchers should consider these sorts of sounds in urban design.",
+      "start": 251.32,
+      "end": 256.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "This is going to be tricky because just measuring decibel levels isn’t going to help us here.",
+      "start": 256.52,
+      "end": 263.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Instead, many researchers are using social science techniques, studying people’s emotional response to sound by using questionnaires and so on.",
+      "start": 263.2,
+      "end": 272.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "(Q35)",
+      "start": 272.7,
+      "end": 277.95
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "So what exactly do people want to hear in an urban environment?",
+      "start": 277.95,
+      "end": 282.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Some recent interdisciplinary research has come out with results that at first sight seem contradictory - a city needs to have a sense of activity, so it needs to be lively, with sounds like the clack of high heels on a pavement or the hiss of a coffee machine, but these mustn’t be too intrusive, because at the same time we need to be able to relax.",
+      "start": 282.59,
+      "end": 306.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "(Q36)",
+      "start": 306.01,
+      "end": 307.55
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "One of the major problems in achieving this will be getting architects and town planners to use the research.",
+      "start": 307.55,
+      "end": 314.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Apart from studying the basics of acoustics, these people receive very little training in this area (Q37).",
+      "start": 314.85,
+      "end": 321.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "But in fact they should be regarding sound as an opportunity to add to the experience of urban living, whereas at present they tend to see it as something to be avoided or reduced as far as possible, or something that’s just a job for engineers like the street drainage system.",
+      "start": 321.29,
+      "end": 339.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "What’s needed is for noise in cities to be regarded as an aesthetic quality, as something that has the qualities of an art form.",
+      "start": 339.57,
+      "end": 348.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "If we acknowledge this, then we urgently need to know what governs it and how designers can work with it.",
+      "start": 348.19,
+      "end": 355.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "We need to develop a complex understanding of many factors.",
+      "start": 355.33,
+      "end": 360.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "What is the relationship between sound and culture?",
+      "start": 360.49,
+      "end": 364.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "(Q38) What can we learn from disciplines such as psychology about the way that sound interacts with human development and social relationships, and the way that sound affects our thought and feelings?",
+      "start": 364.75,
+      "end": 377.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Can we learn anything from physics about the nature of sound itself?",
+      "start": 377.35,
+      "end": 381.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "(Q39)",
+      "start": 381.51,
+      "end": 382.73
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "Today’s powerful technologies can also help us.",
+      "start": 382.73,
+      "end": 386.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "To show us their ideas and help us to imagine the effect their buildings will have, architects and town planners already use virtual reality - but these programs are silent (Q40).",
+      "start": 386.49,
+      "end": 398.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "In the future such programs could use realistic sounds, meaning that soundscapes could be explored before being built.",
+      "start": 398.67,
+      "end": 407,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "So hopefully, using the best technology we can lay our hands on, the city of the future will be a pleasure to the ears as well as the eyes.",
+      "start": 407,
+      "end": 474.214,
+      "preAudio": false
+    }
+  ]
+}

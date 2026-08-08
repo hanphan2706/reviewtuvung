@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "partId": "cam12-t2-p4",
+  "audioFile": "cam12-test2-part4.mp3",
+  "durationSeconds": 517.002449,
+  "method": "whisper-local",
+  "preambleSeconds": 89.32,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Over the years, attitudes towards workers have changed considerably.",
+      "start": 78.602,
+      "end": 82.174,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "After all, there was a time when workers had no rights at all, and laboured in appalling conditions.",
+      "start": 82.174,
+      "end": 89.32,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Conditions have improved a lot, but conflict in the workplace is still common.",
+      "start": 89.32,
+      "end": 96.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "And human resources managers nowadays need to be able to deal with it when necessary.",
+      "start": 96.88,
+      "end": 104.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "What is conflict in the workplace?",
+      "start": 104.28,
+      "end": 108.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Definitions vary, but I’m taking it to refer to a whole range of behaviours that the victim finds unacceptable, from minor, harmless arguments to - at the opposite extreme - physical violence.",
+      "start": 108.3,
+      "end": 126.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Much of this is covered by the term bullying (Q31), by which I mean one or more people behaving abusively or aggressively against another who is in a weaker position.",
+      "start": 126.44,
+      "end": 142.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "Although all behaviour like this is a form of conflict, not all conflict can be described in these terms.",
+      "start": 142.18,
+      "end": 151.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "As with all human behaviour, there are numerous reasons for it.",
+      "start": 151.72,
+      "end": 157.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "But often it’s caused by someone who feels the need to show their superiority over someone else (Q32), in order to feel that they aren’t at the lowest level in a hierarchy or a group of people.",
+      "start": 157.88,
+      "end": 174.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "In some cases one person simply dislikes the other, on the basis that the personality of one is in some way incompatible with that of the other person (Q33).",
+      "start": 174.26,
+      "end": 188.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "A general habit of optimism in one person could make them intolerant of a colleague who’s constantly pessimistic - not that that justifies treating them badly, of course.",
+      "start": 188.62,
+      "end": 203.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "Some conflicts arise when people are more interested in promoting themselves and their team than in the company as a whole.",
+      "start": 203.96,
+      "end": 215.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "These conflicts are called ‘structural’ (Q34), and could come about, for example, when a sales team believe they are the only people in the business who do any useful work, and look down on behind-the-scenes administrators.",
+      "start": 215.34,
+      "end": 234.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Conflict obviously affects the individuals concerned - the situation is likely to be very stressful for victims, resulting in their absence from work, possibly for months (Q35).",
+      "start": 234.84,
+      "end": 250.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "For the company, if no effort is made to deal with conflict, it can spiral out of control, and even lead to the breakdown of the business.",
+      "start": 250.7,
+      "end": 267.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Some interesting work with chief executives - CEOs - has uncovered some of the reasons why they may treat colleagues badly.",
+      "start": 267.44,
+      "end": 279.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Many CEOs combine two opposing characteristics: confidence - that is, the belief that they’re capable of great achievements - with a high level of anxiety (Q36), a fear of missing targets, whether set by themselves or by the directors of the company.",
+      "start": 279.36,
+      "end": 303.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "This combination can make them respond badly to anyone who questions their decisions.",
+      "start": 303.22,
+      "end": 311.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "In a high pressure work environment, such characteristics become problematic.",
+      "start": 311.46,
+      "end": 318.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "And it’s particularly difficult to tackle the situation where colleagues, managers and board members are all trying to achieve their own visions.",
+      "start": 318.3,
+      "end": 331.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "When they can’t agree on strategic issues and on where they see the business going, there are real problems.",
+      "start": 331.9,
+      "end": 340.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "(Q37)",
+      "start": 340.06,
+      "end": 341.36
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "For managers at lower levels within the organisation, it might seem that an autocratic form of management - where the chief executive gives orders and everyone else has to obey - would see more conflict than others.",
+      "start": 341.36,
+      "end": 359.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "Interestingly, though, a company with a more democratic business model, can suffer more, when uncertainly about who to report to leads to conflicting demands.",
+      "start": 359.82,
+      "end": 375.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "(Q38)",
+      "start": 375.1,
+      "end": 376.62
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Now I’ll say a little about dealing with the type of conflict that has harmful effects.",
+      "start": 376.62,
+      "end": 384.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Of course the ideal is to prevent it arising in the first place.",
+      "start": 384.82,
+      "end": 390.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "A good manager, at any level, will make efforts to earn the respect of the people they work with (Q39), particularly those who report to them.",
+      "start": 390.76,
+      "end": 403.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "That will involve politeness in all communications, and treating them as equals who happen to have a different role within the organisation.",
+      "start": 403.1,
+      "end": 414.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Sometimes, of course, conflict does occur, and can get out of hand.",
+      "start": 414.8,
+      "end": 421.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "In such cases the human resources department often gets involved.",
+      "start": 421.64,
+      "end": 427.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "However, if one of the parties in a conflict sees human resources as simply a mouthpiece for the chief executive, then an external mediator might be able to help (Q40).",
+      "start": 427.64,
+      "end": 442.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "By talking to both sides, and trying to find the truth of what’s been happening, they can build a clear picture of the situation, and give feedback that both sides will accept, precisely because they’re independent.",
+      "start": 442.64,
+      "end": 517.002,
+      "preAudio": false
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 import { LISTENING_HUB_HREF } from "@/lib/listening/listening-hub-nav";
 import { cambridgeIeltsCatalogOrder } from "@/lib/exam/ielts-catalog-order";
 import {
+  CAMBRIDGE_IELTS_12_COVER_STYLE,
+  CAMBRIDGE_IELTS_12_COVER_URL,
   CAMBRIDGE_IELTS_13_COVER_STYLE,
   CAMBRIDGE_IELTS_13_COVER_URL,
   CAMBRIDGE_IELTS_14_COVER_STYLE,
@@ -53,7 +55,11 @@ export type ListeningIeltsTestId =
   | "cam13-test1"
   | "cam13-test2"
   | "cam13-test3"
-  | "cam13-test4";
+  | "cam13-test4"
+  | "cam12-test1"
+  | "cam12-test2"
+  | "cam12-test3"
+  | "cam12-test4";
 
 export type ListeningIeltsTest = {
   testId: ListeningIeltsTestId;
@@ -384,6 +390,42 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     coverImageUrl: CAMBRIDGE_IELTS_13_COVER_URL,
     ...CAMBRIDGE_IELTS_13_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(13, 1),
+  },
+  {
+    testId: "cam12-test4",
+    label: "Cambridge 12 · Test 4",
+    bookTitle: "Cambridge IELTS 12 Academic",
+    testNumber: 4,
+    coverImageUrl: CAMBRIDGE_IELTS_12_COVER_URL,
+    ...CAMBRIDGE_IELTS_12_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(12, 4),
+  },
+  {
+    testId: "cam12-test3",
+    label: "Cambridge 12 · Test 3",
+    bookTitle: "Cambridge IELTS 12 Academic",
+    testNumber: 3,
+    coverImageUrl: CAMBRIDGE_IELTS_12_COVER_URL,
+    ...CAMBRIDGE_IELTS_12_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(12, 3),
+  },
+  {
+    testId: "cam12-test2",
+    label: "Cambridge 12 · Test 2",
+    bookTitle: "Cambridge IELTS 12 Academic",
+    testNumber: 2,
+    coverImageUrl: CAMBRIDGE_IELTS_12_COVER_URL,
+    ...CAMBRIDGE_IELTS_12_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(12, 2),
+  },
+  {
+    testId: "cam12-test1",
+    label: "Cambridge 12 · Test 1",
+    bookTitle: "Cambridge IELTS 12 Academic",
+    testNumber: 1,
+    coverImageUrl: CAMBRIDGE_IELTS_12_COVER_URL,
+    ...CAMBRIDGE_IELTS_12_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(12, 1),
   },
 ] as const;
 

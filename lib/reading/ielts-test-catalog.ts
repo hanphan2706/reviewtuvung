@@ -66,7 +66,7 @@ export const CAMBRIDGE_IELTS_13_COVER_STYLE = {
 export const CAMBRIDGE_IELTS_12_COVER_URL = "/cam 12.jpg";
 
 /** Ảnh nguồn 800×800 có viền trắng hai bên (~11%) — scale để full-bleed. */
-const CAMBRIDGE_IELTS_12_COVER_STYLE = {
+export const CAMBRIDGE_IELTS_12_COVER_STYLE = {
   coverImageScale: 1.3,
   coverImageObjectPosition: "50% 50%",
   coverImageTransformOrigin: "50% 50%",

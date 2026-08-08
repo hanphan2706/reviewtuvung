@@ -1,0 +1,218 @@
+{
+  "version": 1,
+  "partId": "cam12-t1-p3",
+  "audioFile": "cam12-test1-part3.mp3",
+  "durationSeconds": 398.040816,
+  "method": "whisper-local",
+  "preambleSeconds": 50.32,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "TRUDIE",
+      "text": "OK, Stewart. We need to start planning our paper on public libraries. Have you thought of an angle yet?",
+      "start": 50.32,
+      "end": 60.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "STEWART",
+      "text": "Well, there’s so much we could look into. How libraries have changed over the centuries, for instance, or how different countries organise them. What do you think, Trudie?",
+      "start": 60.02,
+      "end": 70.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "TRUDIE",
+      "text": "Maybe we should concentrate on this country, and try relate the changes in libraries to external developments, like the fact that far more people can read than a century ago, and that the local population may speak lots of different languages. (Q21)",
+      "start": 70.54,
+      "end": 84.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "STEWART",
+      "text": "We could include something about changes in the source of funding, too.",
+      "start": 84.54,
+      "end": 88.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "TRUDIE",
+      "text": "Yes, but remember we’re only supposed to write a short paper, so it’s probably best if we don’t go into funding in any detail.",
+      "start": 88.68,
+      "end": 96.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "STEWART",
+      "text": "Right. Well, shall we just brainstorm a few ideas, to get started?",
+      "start": 96.84,
+      "end": 100.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "TRUDIE",
+      "text": "OK. We obviously need to look at the impact of new technology, particularly the internet. Now that lots of books have been digitalised, people can access them from their own computers at home.",
+      "start": 100.98,
+      "end": 112.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "STEWART",
+      "text": "And if everyone did that, libraries would be obsolete.",
+      "start": 112.2,
+      "end": 115.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "TRUDIE",
+      "text": "Yes.",
+      "start": 115.26,
+      "end": 115.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "STEWART",
+      "text": "But the digitalised books that are available online for free are mostly out of copyright, aren’t they? And copyright in this country lasts for 70 years after the author dies. So you won’t find the latest best-seller or up-to-date information. (Q22)",
+      "start": 115.71,
+      "end": 131.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "TRUDIE",
+      "text": "That’s an important point. Anyway, I find it hard to concentrate when I’m reading a long text on a screen. I’d much rather read a physical book. And it takes longer to read on a screen.",
+      "start": 131.38,
+      "end": 143.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "STEWART",
+      "text": "Oh, I prefer it. I suppose it’s just a personal preference.",
+      "start": 143.62,
+      "end": 147.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "TRUDIE",
+      "text": "Mm. I expect that libraries will go on evolving in the next few years. Some have already become centres where community activities take place, like local clubs meeting there. I think that’ll become even more common.",
+      "start": 147.42,
+      "end": 159.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "STEWART",
+      "text": "I’d like to think so, and that they’ll still be serving their traditional function, but I’m not so sure. There are financial implications, after all. What I’m afraid will happen is that books and magazines will all disappear, and there’ll just be rows and rows of computers (Q23). They won’t look anything like the libraries we’re used to.",
+      "start": 159.66,
+      "end": 177.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "TRUDIE",
+      "text": "Well, we’ll see.",
+      "start": 177.84,
+      "end": 227.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "TRUDIE",
+      "text": "I’ve just had an idea. Why don’t we make an in-depth study of our local public library as background to our paper?",
+      "start": 227.66,
+      "end": 238.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "STEWART",
+      "text": "Yes, that’d be interesting, and raise all sorts of issues. Let’s make a list of possible things we could ask about, then work out some sort of structure. For instance, um, we could interview some of the staff, and find out whether the library has its own budget, or if that’s controlled by the local council. (Q24)",
+      "start": 238.56,
+      "end": 256.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "TRUDIE",
+      "text": "And what their policies are. I know they don’t allow food, but I’d love to find out what types of noise they ban - there always seems to be a lot of talking, but never music. I don’t know if that’s a policy or it just happens.",
+      "start": 256.74,
+      "end": 270.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "STEWART",
+      "text": "Ah, I’ve often wondered. Then there are things like how the library is affected by employment laws. I suppose there are rules about working hours, facilities for staff, and so on. (Q25)",
+      "start": 270.74,
+      "end": 281.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "TRUDIE",
+      "text": "Right. Then there are other issues relating to the design of the building and how customers use it. Like what measures does the library take to ensure their safety? (Q26) They’d need floor coverings that aren’t slippery, and emergency exits, for instance. Oh, and another thing - there’s the question of the kind of insurance the library needs to have, in case anyone gets injured. (Q27)",
+      "start": 281.62,
+      "end": 301.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "STEWART",
+      "text": "Yes, that’s something else to find out. You know something I’ve often wondered?",
+      "start": 301.78,
+      "end": 306.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "TRUDIE",
+      "text": "What’s that?",
+      "start": 306.2,
+      "end": 306.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "STEWART",
+      "text": "Well, you know they’ve got an archive of local newspapers going back years? Well, next to it they’ve got the diary of a well-known politician from the late 19th century (Q28). I wonder why it’s there. Do you know what his connection was with this area?",
+      "start": 306.88,
+      "end": 321.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "TRUDIE",
+      "text": "No idea. Let’s add it to our list of things to find out. Oh, I’ve just thought - you know people might ask in the library about local organisations, like sports clubs? Well, I wonder if they keep a database, or whether they just look online. (Q29)",
+      "start": 321.82,
+      "end": 337.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "STEWART",
+      "text": "Right. I quite fancy finding out what the differences are between a library that’s open to the public and one that’s part of a museum, for example (Q30) - they must be very different.",
+      "start": 337.24,
+      "end": 348.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "TRUDIE",
+      "text": "Mmm. Then something else I’d like to know is …",
+      "start": 348.8,
+      "end": 398.041,
+      "preAudio": false
+    }
+  ]
+}

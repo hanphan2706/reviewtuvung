@@ -1,0 +1,242 @@
+{
+  "version": 1,
+  "partId": "cam12-t2-p2",
+  "audioFile": "cam12-test2-part2.mp3",
+  "durationSeconds": 469.302857,
+  "method": "whisper-local",
+  "preambleSeconds": 60.26,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Right. I’ve now almost succeeded in finalising plans for our tour, so I’ll bring you up to date with what I know.",
+      "start": 60.26,
+      "end": 73.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "As you know, we’re flying first to Munich, on Monday the 4th.",
+      "start": 73.45,
+      "end": 80.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "The flight is at 11.30, so it’s too early to have lunch at the airport. I suggest we meet there for coffee at 10 (Q11), which should give us plenty of time for breakfast before we leave home.",
+      "start": 80.09,
+      "end": 97.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "When we arrive in Munich, we’ll be met at the airport by Claus Bauer.",
+      "start": 97.41,
+      "end": 103.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Claus works for a tour operator (Q12), and he’ll look after us for the time we’ll be in Germany.",
+      "start": 103.91,
+      "end": 111.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "He’s already liaised with the managers of the theatres we’re going to visit, and he’s also arranged for an officer of the National Theatre in Munich to show us round the theatre one afternoon during our stay.",
+      "start": 111.43,
+      "end": 127.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "Now last time we discussed this trip, I didn’t have the precise cost for hotel rooms, but now I have.",
+      "start": 127.35,
+      "end": 136.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "The normal rate at the hotel where we’re staying is 150 euros a night for a double room.",
+      "start": 136.69,
+      "end": 144.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "I’d hoped to get that down to 120 euros, but in fact I’ve been able to negotiate a rate of 110 (Q13).",
+      "start": 144.87,
+      "end": 155.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "That’ll be reflected in the final payment which you’ll need to make by the end of this week.",
+      "start": 155.01,
+      "end": 161.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "On Tuesday, the day after our arrival, I had hoped we could sit in on a rehearsal at one of the theatres, but unfortunately that’s proved very difficult to arrange, so instead we’ll have a coach trip to one of the amazing castles in the mountains south of Munich.",
+      "start": 161.53,
+      "end": 184.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "On Tuesday evening, we’ll all have dinner together in a restaurant near our hotel.",
+      "start": 184.67,
+      "end": 191.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "From talking to you all about your preferences, it was clear that a typical local restaurant would be too meat-oriented for some of you.",
+      "start": 191.25,
+      "end": 202.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Some of you suggested an Italian restaurant, but I must confess that I decided to book a Lebanese one (Q14), as we have plenty of opportunities to go to an Italian restaurant at home.",
+      "start": 202.91,
+      "end": 217.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "On Wednesday afternoon, the director of the play we’re going to see that evening will talk to us at the theatre (Q15).",
+      "start": 217.03,
+      "end": 225.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "She’ll describe the whole process of producing a play, including how she chose the actors, and, as the play we’re going to see is a modern one, how she worked with the playwright.",
+      "start": 225.25,
+      "end": 280.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Right. Now I’d just like to make a few points about the plays we’re going to see, partly because it might influence your choice of clothes to take with you!",
+      "start": 280.72,
+      "end": 293.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "The play we’re seeing on Wednesday evening is a modern one, and we’re going to the premiere (Q16), so it’ll be quite a dressy occasion, though of course you don’t have to dress formally.",
+      "start": 293.3,
+      "end": 307.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "I gather it’s rather a multimedia production, with amazing lighting effects and a soundtrack of electronic music, though unfortunately the playwright is ill and is unlikely to be able to attend.",
+      "start": 307.04,
+      "end": 323.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "On Thursday we’re seeing a play that was first performed last year, when it was commissioned to mark a hundred years since the birth in the town of a well-known scientist (Q17).",
+      "start": 323.2,
+      "end": 335.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "We’re going to see a revival of that production, which aroused a lot of interest.",
+      "start": 335.18,
+      "end": 342.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "Friday’s play will really make you think hard about what clothes to pack, as it’ll be in the garden of a palace (Q18).",
+      "start": 342.14,
+      "end": 350.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "It’s a beautiful setting, but I’d better warn you, there won’t be much protection from the wind.",
+      "start": 350.48,
+      "end": 357.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "On Saturday, we’re going by coach to a theatre in another town, not far from Munich.",
+      "start": 357.92,
+      "end": 365.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "This will be the opening of a drama festival, and the mayor and all the other dignitaries of the town will be attending (Q19).",
+      "start": 365.36,
+      "end": 374.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "After the performance, the mayor is hosting a reception for all the audience, and there’ll be a band playing traditional music of the region.",
+      "start": 374.5,
+      "end": 384.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "And after having a day off on Sunday, our final play is on Monday, and it’s in the stunning setting of the old Town Hall, which dates back to the 14th century (Q20).",
+      "start": 384.54,
+      "end": 397.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "The performance marks the fifty years that the lead actor has been on stage, and the play is the one where he made his first professional appearance, all those years ago.",
+      "start": 397.98,
+      "end": 411.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "And the day after that, we’ll be flying back home. Now have you got any questions before I …",
+      "start": 411.12,
+      "end": 469.303,
+      "preAudio": false
+    }
+  ]
+}

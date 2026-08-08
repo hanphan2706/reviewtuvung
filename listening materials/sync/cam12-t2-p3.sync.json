@@ -1,0 +1,298 @@
+{
+  "version": 1,
+  "partId": "cam12-t2-p3",
+  "audioFile": "cam12-test2-part3.mp3",
+  "durationSeconds": 430.641633,
+  "method": "whisper-local",
+  "preambleSeconds": 62.22,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "BETH",
+      "text": "Oh good morning. You must be James. I’m Beth Cartwright - please call be Beth.",
+      "start": 62.22,
+      "end": 67.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "JAMES",
+      "text": "Thank you.",
+      "start": 67.62,
+      "end": 69.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "BETH",
+      "text": "Now as this is your first tutorial since you started on the Scandinavian Studies course, I’d like to find out something about you. Why did you decide to take this course?",
+      "start": 69.06,
+      "end": 80.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "JAMES",
+      "text": "Well, my mother is Danish, and although we always lived in England, she used to talk about her home a lot, and that made me want to visit Denmark. We hardly ever did, though - my mother usually went on her own. But whenever her relations or friends were in England they always came to see us. (Q21)",
+      "start": 80.4,
+      "end": 100.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "BETH",
+      "text": "I see. So I assume you already speak Danish, one of the languages you’ll be studying.",
+      "start": 100.7,
+      "end": 106.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "JAMES",
+      "text": "I can get by when I talk to people, though I’m not terribly accurate.",
+      "start": 106.92,
+      "end": 112.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "BETH",
+      "text": "Now you probably know that you’ll spend the third year of the course abroad. Have you had any thoughts about that?",
+      "start": 112.56,
+      "end": 119.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "JAMES",
+      "text": "I’m really looking forward to it. And although Denmark seems the obvious place to go, because of my family connections, I’d love to spend the time in Iceland.",
+      "start": 119.7,
+      "end": 129.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "BETH",
+      "text": "Oh, I’m sure it can be arranged. Do you have any plans for when you graduate? A lot of students go on to take a master’s degree.",
+      "start": 129.62,
+      "end": 138.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "JAMES",
+      "text": "I think the four years of the undergraduate course will be enough for me. I’m interested in journalism, and I quite like the idea of moving to Scandinavia and writing for magazines (Q22). I’d find that more creative than translating, which I suppose most graduates do.",
+      "start": 138.8,
+      "end": 156.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "BETH",
+      "text": "OK. Now how are you finding the courses you’re taking this term, James?",
+      "start": 156.14,
+      "end": 161.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "JAMES",
+      "text": "Well, I’m really enjoying the one on Swedish cinema.",
+      "start": 161.34,
+      "end": 164.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "BETH",
+      "text": "That’ll continue next term, but the one on Scandinavian literature that’s running at the moment will be replaced by more specialised courses (Q23). Oh, and by the way, if you’re interested in watching Danish television programmes - there’s going to be a course on that the term after next.",
+      "start": 164.78,
+      "end": 181.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "JAMES",
+      "text": "That sounds good.",
+      "start": 181.78,
+      "end": 183.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "BETH",
+      "text": "Have you started thinking about the literature paper that you have to write in the next few weeks?",
+      "start": 183.4,
+      "end": 189.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "JAMES",
+      "text": "Yes, my first choice would be to do something on the Icelandic sagas.",
+      "start": 189.52,
+      "end": 193.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "BETH",
+      "text": "Hmm. The trouble with that is that a lot of people choose that topic, and it can be difficult to get hold of the books you’ll need. Why not leave that for another time?",
+      "start": 193.94,
+      "end": 205.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "JAMES",
+      "text": "Right.",
+      "start": 205.5,
+      "end": 205.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "BETH",
+      "text": "You might find modern novels or 19th century playwrights interesting. (Q24)",
+      "start": 205.95,
+      "end": 209.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "JAMES",
+      "text": "I’ve read or seen several plays in translation, so that would be a good idea.",
+      "start": 209.48,
+      "end": 215.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "BETH",
+      "text": "Fine. I’ll put you down for that topic.",
+      "start": 215.46,
+      "end": 218.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "JAMES",
+      "text": "Right. So what would you advise me to aim at in the paper?",
+      "start": 218.18,
+      "end": 222.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "BETH",
+      "text": "First I suggest you avoid taking one writer and going into a great deal of detail. That approach certainly has its place, but I think you first need to get an understanding of the literature in the context of the society in which it was produced - who it was written for, how it was published, and so on (Q25). I also think that’s more fruitful than placing it within the history of the genre.",
+      "start": 222.6,
+      "end": 244.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "JAMES",
+      "text": "OK, that sounds reasonable.",
+      "start": 244.9,
+      "end": 289.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "JAMES",
+      "text": "Could I ask for some advice about writing the paper I’m working on about the Vikings? I have to do that this week, and I’m a bit stuck.",
+      "start": 289.59,
+      "end": 299.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "BETH",
+      "text": "Of course. Have you decided yet what to write about?",
+      "start": 299.11,
+      "end": 302.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "JAMES",
+      "text": "No, I haven’t. There’s so much that seems interesting - Viking settlement in other countries, trade, mythology …",
+      "start": 302.51,
+      "end": 309.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "BETH",
+      "text": "Well, what I suggest is that you read an assignment a student wrote last year (Q26), which is kept in the library. It’s short and well focused, and I’m sure you’ll find it helpful. I’ll give you the details in a moment. Textbooks usually cover so many topics, it can be very difficult to choose just one.",
+      "start": 309.67,
+      "end": 328.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "JAMES",
+      "text": "OK. I’ve got a DVD of the film about the Vikings that came out earlier this year. Should I watch that again?",
+      "start": 328.19,
+      "end": 336.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "BETH",
+      "text": "If it’s the one I am thinking of, hmm, I’d ignore it - it’s more fantasy than reality. But I’ve got a recording of a documentary that you should watch (Q27). It makes some interesting and provocative points, which I think will help you to focus your topic.",
+      "start": 336.15,
+      "end": 352.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "JAMES",
+      "text": "Right.",
+      "start": 352.21,
+      "end": 353.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "BETH",
+      "text": "So then should I work out an outline? (Q28)",
+      "start": 353.47,
+      "end": 356.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "JAMES",
+      "text": "Yes. Just headings for different sections, at this stage. And then you should start looking for suitable articles and books to draw on, and take notes (Q29) which you organise according to those headings.",
+      "start": 356.53,
+      "end": 368.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "BETH",
+      "text": "I see.",
+      "start": 368.09,
+      "end": 369.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "JAMES",
+      "text": "Then put short phrases and sentences as bullet points under each heading (Q30). Make sure that this skeleton makes sense and flows properly, before writing up the paper in full.",
+      "start": 369.01,
+      "end": 379.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "BETH",
+      "text": "OK. Thanks, that’s very helpful.",
+      "start": 379.69,
+      "end": 430.642,
+      "preAudio": false
+    }
+  ]
+}

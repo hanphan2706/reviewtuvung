@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "partId": "cam12-t1-p1",
+  "audioFile": "cam12-test1-part1.mp3",
+  "durationSeconds": 430.471837,
+  "method": "whisper-local",
+  "preambleSeconds": 116.998,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "TC EMPLOYEE",
+      "text": "Hi. Can I help you?",
+      "start": 101.358,
+      "end": 103.058,
+      "preAudio": true
+    },
+    {
+      "id": "cue-2",
+      "speaker": "VISITOR",
+      "text": "I’d like to find out if you have any excursions suitable for families.",
+      "start": 103.058,
+      "end": 107.478,
+      "preAudio": true
+    },
+    {
+      "id": "cue-3",
+      "speaker": "TC EMPLOYEE",
+      "text": "Sure. How about taking your family for a cruise? We have a steamship that takes passengers out several times a day (Example) - it’s over 100 years old.",
+      "start": 107.478,
+      "end": 116.998,
+      "preAudio": true
+    },
+    {
+      "id": "cue-4",
+      "speaker": "VISITOR",
+      "text": "That sounds interesting. How long is the trip?",
+      "start": 116.998,
+      "end": 119.489,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "TC EMPLOYEE",
+      "text": "About an hour and a half. And don’t forget to take pictures of the mountains (Q1). They’re all around you when you’re on the boat and they look fantastic.",
+      "start": 119.489,
+      "end": 129.046,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "VISITOR",
+      "text": "OK. And I assume there’s a café or something on board?",
+      "start": 129.046,
+      "end": 131.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "TC EMPLOYEE",
+      "text": "Sure. How old are your children?",
+      "start": 131.84,
+      "end": 133.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "VISITOR",
+      "text": "Er, my daughter’s fifteen and my son’s seven.",
+      "start": 133.88,
+      "end": 135.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "TC EMPLOYEE",
+      "text": "Right. Well there are various things you can do once you’ve crossed the lake, to make a day of it. One thing that’s very popular is a visit to the Country Farm. You’re met off the boat by the farmer and he’ll take you to the holding pens, where the sheep are kept. Children love feeling them!",
+      "start": 135.9,
+      "end": 152.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "VISITOR",
+      "text": "My son would love that. He really likes animals.",
+      "start": 152.22,
+      "end": 155.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "TC EMPLOYEE",
+      "text": "Well, there’s also a 40-minute trek round the farm on a horse (Q2), if he wants.",
+      "start": 155.88,
+      "end": 161.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "VISITOR",
+      "text": "Do you think he’d manage it? He hasn’t done that before.",
+      "start": 161.32,
+      "end": 165.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "TC EMPLOYEE",
+      "text": "Sure. It’s suitable for complete beginners.",
+      "start": 165.06,
+      "end": 167.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "VISITOR",
+      "text": "Ah, good.",
+      "start": 167.12,
+      "end": 168.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "TC EMPLOYEE",
+      "text": "And again, visitors are welcome to explore the farm on their own, as long as they take care to close gates and so on. There are some very beautiful gardens along the side of the lake which also belong to the farm (Q3) - they’ll be just at their best now. You could easily spend an hour or two there.",
+      "start": 168.1,
+      "end": 184.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "VISITOR",
+      "text": "OK. Well that all sounds good. And can we get lunch there? (Q4)",
+      "start": 184.94,
+      "end": 190.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "TC EMPLOYEE",
+      "text": "You can, and it’s very good, though it’s not included in the basic cost. You pay when you get there.",
+      "start": 190.1,
+      "end": 196.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "VISITOR",
+      "text": "Right.",
+      "start": 196.9,
+      "end": 243.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "VISITOR",
+      "text": "So is there anything else to do over on that side of the lake?",
+      "start": 243.78,
+      "end": 248.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "TC EMPLOYEE",
+      "text": "Well, what you can do is take a bike over on the ship and then go on a cycling trip. There’s a trail there called the Back Road - you could easily spend three or four hours exploring it, and the scenery’s wonderful. They’ll give you a map when you get your ticket for the cruise - there’s no extra charge. (Q5)",
+      "start": 248.54,
+      "end": 266,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "VISITOR",
+      "text": "What’s the trail like in terms of difficulty?",
+      "start": 266,
+      "end": 269.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "TC EMPLOYEE",
+      "text": "Quite challenging in places. It wouldn’t be suitable for your seven-year-old. It needs someone who’s got a bit more experience. (Q6)",
+      "start": 269.4,
+      "end": 276.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "VISITOR",
+      "text": "Hmm. Well, my daughter loves cycling and so do I, so maybe the two of us could go, and my wife and son could stay on the farm. That might work out quite well. But we don’t have bikes here… is there somewhere we could rent them?",
+      "start": 276.94,
+      "end": 295.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "TC EMPLOYEE",
+      "text": "Yes, there’s a place here in the city. It’s called Ratchesons. (Q7)",
+      "start": 295.78,
+      "end": 300.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "VISITOR",
+      "text": "I’ll just make a note of that - er, how do you spell it?",
+      "start": 300.6,
+      "end": 305.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "TC EMPLOYEE",
+      "text": "R-A-T-C-H-E-S-O-N-S. It’s just be the cruise ship terminal.",
+      "start": 305.36,
+      "end": 313.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "VISITOR",
+      "text": "OK.",
+      "start": 313.66,
+      "end": 315,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "TC EMPLOYEE",
+      "text": "You’d also need to pick up a repair kit for the bike from there to take along with you, and you’d need to take along a snack and some water - it’d be best to get those in the city.",
+      "start": 315,
+      "end": 328.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "VISITOR",
+      "text": "Fine. That shouldn’t be a problem. And I assume I can rent a helmet from the bike place? (Q8)",
+      "start": 328.6,
+      "end": 335.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "TC EMPLOYEE",
+      "text": "Sure, you should definitely get that. It’s a great ride, but you want to be well prepared because it’s very remote - you won’t see any shops round there, or anywhere to stay (Q9), so you need to get back in time for the last boat.",
+      "start": 335.06,
+      "end": 349.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "VISITOR",
+      "text": "Yeah. So what sort of prices are we looking at here?",
+      "start": 349.06,
+      "end": 349.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "TC EMPLOYEE",
+      "text": "Let’s see, that’d be one adult and one child for the cruise with farm tour, that’s $117, and an adult and a child for the cruise only so that’s $214 dollars altogether. Oh, wait a minute, how old did you say your daughter was?",
+      "start": 349.5,
+      "end": 367.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "VISITOR",
+      "text": "Fifteen.",
+      "start": 367.06,
+      "end": 368.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "TC EMPLOYEE",
+      "text": "Then I’m afraid it’s $267 (Q10) because she has to pay the adult fare, which is $75 instead of the child fare which is $22 - sorry about that.",
+      "start": 368.3,
+      "end": 379.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "VISITOR",
+      "text": "That’s OK. Er, so how do …",
+      "start": 379.34,
+      "end": 430.472,
+      "preAudio": false
+    }
+  ]
+}

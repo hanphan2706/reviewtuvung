@@ -15,7 +15,8 @@ const ANSWERS_HEADER_RE = /^Answers?:\s*$|^Answer key:\s*$/im;
 /** Allow `11&12. A, C` (period after pair) as well as spaced Cam 15 keys. */
 const PAIRED_ANSWER_RE = /^(\d+)\s*&\s*(\d+)\.?\s+(.+)$/i;
 /** Form / table / flowchart completion blocks (not only "notes"). */
-const COMPLETE_BELOW_RE = /Complete the (?:notes|form|table|flow[\s-]?chart) below/i;
+/** Singular `note` appears in older scrapes (Cam 12 Test 4). */
+const COMPLETE_BELOW_RE = /Complete the (?:notes?|form|table|flow[\s-]?chart) below/i;
 const CHOOSE_FROM_BOX_RE = /Choose\s+(?:TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|\d+)\s+answers from the box/i;
 
 export type ListeningQnaMcqQuestion = {

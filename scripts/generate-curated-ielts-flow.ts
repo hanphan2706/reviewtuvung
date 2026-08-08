@@ -21,7 +21,16 @@ import { sanitizeListeningTranscript } from "../lib/sanitize-listening-transcrip
 import { splitTranscriptByPart } from "../lib/listening/split-transcript-parts";
 import type { ListeningFlowLessonContent } from "../lib/listening/tactics-basic-flow-types";
 
-type ExamSlug = "cam18" | "cam20" | "cam21" | "cam17" | "cam16" | "cam15" | "cam14" | "cam13";
+type ExamSlug =
+  | "cam18"
+  | "cam20"
+  | "cam21"
+  | "cam17"
+  | "cam16"
+  | "cam15"
+  | "cam14"
+  | "cam13"
+  | "cam12";
 
 const WRONG_GIST = [
   {
@@ -50,8 +59,10 @@ function parseArgs(argv: string[]): { exam: ExamSlug; tests: number[] } {
     if (a === "--all-tests") allTests = true;
   }
 
-  if (!["cam18", "cam20", "cam21", "cam17", "cam16", "cam15", "cam14", "cam13"].includes(exam)) {
-    throw new Error("--exam must be cam18, cam20, cam21, cam17, cam16, cam15, cam14 or cam13");
+  if (
+    !["cam18", "cam20", "cam21", "cam17", "cam16", "cam15", "cam14", "cam13", "cam12"].includes(exam)
+  ) {
+    throw new Error("--exam must be cam18, cam20, cam21, cam17, cam16, cam15, cam14, cam13 or cam12");
   }
 
   const tests = allTests ? [1, 2, 3, 4] : [test];
@@ -216,6 +227,73 @@ const CAM16_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
   "cam16-t4-p4": {
     titleVi: "Sự tuyệt chủng của chim dodo",
     summaryVi: "Bài giảng về lịch sử dodo ở Mauritius, đặc điểm cơ thể và nguyên nhân tuyệt chủng.",
+  },
+};
+
+const CAM12_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
+  "cam12-t1-p1": {
+    titleVi: "Chuyến tham quan gia đình",
+    summaryVi: "Khách hỏi cruise hồ và thăm nông trại phù hợp trẻ em, xe đạp, bản đồ và giá vé.",
+  },
+  "cam12-t1-p2": {
+    titleVi: "Phụ bếp nhà hàng",
+    summaryVi: "Quản lý nhà hàng hướng dẫn phụ bếp mới về an toàn, ca bận, nghỉ giữa giờ và người cần báo cáo.",
+  },
+  "cam12-t1-p3": {
+    titleVi: "Nghiên cứu thư viện công cộng",
+    summaryVi: "Trudie và Stewart lên kế hoạch bài về thư viện đổi mới: số hóa, nhân viên và thiết kế tòa nhà.",
+  },
+  "cam12-t1-p4": {
+    titleVi: "Giá trị trong kinh doanh",
+    summaryVi: "Bài giảng về hợp tác, chăm chỉ, sáng tạo và xuất sắc — và khi nào mỗi giá trị gây phản tác dụng.",
+  },
+  "cam12-t2-p1": {
+    titleVi: "Lễ hội Kenton",
+    summaryVi: "Gọi quầy vé về lịch lễ hội, biểu diễn, workshop và chi tiết đặt chỗ.",
+  },
+  "cam12-t2-p2": {
+    titleVi: "Kế hoạch chuyến lưu diễn châu Âu",
+    summaryVi: "Tổ chức viên cập nhật chuyến bay Munich, khách sạn, buổi hòa nhạc và thay đổi lịch.",
+  },
+  "cam12-t2-p3": {
+    titleVi: "Thực tập dự án nghiên cứu",
+    summaryVi: "Beth hướng dẫn James về thực tập: nhiệm vụ, đầu mối, đào tạo và việc cần chuẩn bị.",
+  },
+  "cam12-t2-p4": {
+    titleVi: "Thái độ với người lao động",
+    summaryVi: "Bài giảng về quyền lao động, tư tưởng quản lý và điều kiện làm việc thay đổi theo thời gian.",
+  },
+  "cam12-t3-p1": {
+    titleVi: "Đăng ký thư viện",
+    summaryVi: "Susie kể Paul về thư viện mở lại: hội viên, tiện ích, lớp học và mẹo đặt chỗ.",
+  },
+  "cam12-t3-p2": {
+    titleVi: "Kỳ nghỉ chuyên biệt",
+    summaryVi: "Huấn luyện viên BC Travel nêu các loại kỳ nghỉ niche và cách khớp khách với chuyến đi.",
+  },
+  "cam12-t3-p3": {
+    titleVi: "Viết case study",
+    summaryVi: "Natalie và Dave bàn cấu trúc case study, bằng chứng, phỏng vấn và lỗi thường gặp.",
+  },
+  "cam12-t3-p4": {
+    titleVi: "Thủy ngân và động vật hoang dã",
+    summaryVi: "Bài giảng về ô nhiễm thủy ngân lan trong hệ sinh thái và hại động vật cùng sức khỏe người.",
+  },
+  "cam12-t4-p1": {
+    titleVi: "Ứng tuyển dẫn đoàn xe đạp",
+    summaryVi: "Margaret hỏi về dẫn chuyến đạp: thời gian rảnh, kinh nghiệm, kiêng ăn và lịch phỏng vấn.",
+  },
+  "cam12-t4-p2": {
+    titleVi: "The Sheepmarket",
+    summaryVi: "Podcast đi quanh Sheepmarket: gallery, điểm nhấn và vị trí trên bản đồ thành phố.",
+  },
+  "cam12-t4-p3": {
+    titleVi: "Thuyết trình film studies",
+    summaryVi: "Katie và Joe lên kế hoạch bài nói phim: clip, cấu trúc, ví dụ và cách giữ lớp chú ý.",
+  },
+  "cam12-t4-p4": {
+    titleVi: "Âm học đô thị",
+    summaryVi: "Kỹ sư âm học giảng về cảnh quan âm thanh thành phố, tiếng ồn và thiết kế cải thiện đời sống.",
   },
 };
 
@@ -617,7 +695,9 @@ function buildPartContent(
               ? CAM14_FLOW_VI
               : exam === "cam13"
                 ? CAM13_FLOW_VI
-                : undefined;
+                : exam === "cam12"
+                  ? CAM12_FLOW_VI
+                  : undefined;
   const vi = flowVi?.[partId];
 
   const predictionOptions = [
