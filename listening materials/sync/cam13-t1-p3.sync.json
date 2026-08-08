@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "partId": "cam13-t1-p3",
+  "audioFile": "cam13-test1-part3.mp3",
+  "durationSeconds": 427.375011,
+  "method": "whisper-local",
+  "preambleSeconds": 93.51,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "EMMA",
+      "text": "We’ve got to choose a topic for our experiment, haven’t we, Jack? Were you thinking of something to do with seeds?",
+      "start": 93.51,
+      "end": 104.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "JACK",
+      "text": "That’s right. I thought we could look at seed germination - how a seed begins to grow.",
+      "start": 104.97,
+      "end": 111.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "EMMA",
+      "text": "OK. Any particular reason? I know you’re hoping to work in plant science eventually …",
+      "start": 111.91,
+      "end": 118.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "JACK",
+      "text": "Yeah, but practically everything we do is going to feed into that. No, there’s an optional module on seed structure and function in the third year that I might do, so I thought it might be useful for that (Q21). If I choose that option, I don’t have to do a dissertation module.",
+      "start": 118.37,
+      "end": 138.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "EMMA",
+      "text": "Good idea.",
+      "start": 138.55,
+      "end": 139.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "JACK",
+      "text": "Well, I thought for this experiment we could look at the relationship between seed size and the way the seeds are planted. So, we could plant different sized seeds in different ways, and see which grow best.",
+      "start": 139.77,
+      "end": 155.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "EMMA",
+      "text": "OK. We’d need to allow time for the seeds to come up (Q22).",
+      "start": 155.67,
+      "end": 160.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "JACK",
+      "text": "That should be fine if we start now. A lot of the other possible experiments need quite a bit longer.",
+      "start": 160.13,
+      "end": 167.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "EMMA",
+      "text": "So that’d make it a good one to choose. And I don’t suppose it’d need much equipment; we’re not doing chemical analysis or anything. Though that’s not really an issue, we’ve got plenty of equipment in the laboratory.",
+      "start": 167.67,
+      "end": 183.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "JACK",
+      "text": "Yeah. We need to have a word with the tutor if we’re going to go ahead with it though. I’m sure our aim’s OK. It’s not very ambitious but the assignment’s only ten percent of our final mark, isn’t it? But we need to be sure we’re the only ones doing it (Q23).",
+      "start": 183.01,
+      "end": 202.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "EMMA",
+      "text": "Yeah, it’s only five percent actually, but it’d be a bit boring if everyone was doing it.",
+      "start": 202.13,
+      "end": 209.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "JACK",
+      "text": "Did you read that book on seed germination on our reading list?",
+      "start": 209.93,
+      "end": 214.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "EMMA",
+      "text": "The one by Graves? I looked through it for my last experiment, though it wasn’t all that relevant there. It would be for this experiment, though. I found it quite hard to follow - lots about the theory, which I hadn’t expected (Q24)",
+      "start": 214.51,
+      "end": 230.13,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "JACK",
+      "text": "Yes, I’d been hoping for something more practical. It does include references to the recent findings on genetically-modified seeds, though.",
+      "start": 230.13,
+      "end": 240.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "EMMA",
+      "text": "Yes, that was interesting.",
+      "start": 240.81,
+      "end": 242.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "JACK",
+      "text": "I read an article about seed germination by Lee Hall.",
+      "start": 242.93,
+      "end": 246.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "EMMA",
+      "text": "About seeds that lie in the ground for ages and only germinate after a fire?",
+      "start": 246.95,
+      "end": 252.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "JACK",
+      "text": "That’s the one. I knew a bit about it already, but not about this research. His analysis of figures comparing the times of the fires and the proportion of seeds that germinated was done in a lot of detail - very impressive (Q25).",
+      "start": 252.71,
+      "end": 270.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "EMMA",
+      "text": "Was that the article with the illustrations of early stages of plant development? They were very clear.",
+      "start": 270.53,
+      "end": 278.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "JACK",
+      "text": "I think those diagrams were in another article.",
+      "start": 278.07,
+      "end": 323.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "EMMA",
+      "text": "Anyway, shall we have a look at the procedure for our experiment? We’ll need to get going with it quite soon.",
+      "start": 323.53,
+      "end": 330.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "JACK",
+      "text": "Right. So the first thing we have to do is find our seeds. I think vegetable seeds would be best. And obviously they mustn’t all be the same size. So, how many sorts do we need? About four different ones? (Q26)",
+      "start": 330.67,
+      "end": 348.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "EMMA",
+      "text": "I think that would be enough. There’ll be quite a large number of seeds for each one.",
+      "start": 348.45,
+      "end": 354.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "JACK",
+      "text": "Then, for each seed we need to find out how much it weighs (Q27), and also measure its dimensions, and we need to keep a careful record of all that.",
+      "start": 354.23,
+      "end": 364.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "EMMA",
+      "text": "That’ll be quite time-consuming. And we also need to decide how deep we’re going to plant the seeds (Q28) - right on the surface, a few millimetres down, or several centimetres.",
+      "start": 364.43,
+      "end": 376.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "JACK",
+      "text": "OK. So then we get planting. Do you think we can plant several seeds together in the same plant pot? (Q29)",
+      "start": 376.99,
+      "end": 385.47,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "EMMA",
+      "text": "No, I think we need a different one for each seed.",
+      "start": 385.47,
+      "end": 389.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "JACK",
+      "text": "Right. And we’ll need to label them - we can use different coloured labels. Then we wait for the seeds to germinate - I reckon that’ll be about three weeks, depending on what the weather’s like. Then we see if our plants have come up, and write down how tall they’ve grown. (Q30)",
+      "start": 389.61,
+      "end": 410.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "EMMA",
+      "text": "Then all we have to do is look at our numbers, and see if there’s any relation between them.",
+      "start": 410.07,
+      "end": 420.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "JACK",
+      "text": "That’s right. So …",
+      "start": 420.36,
+      "end": 427.375,
+      "preAudio": false
+    }
+  ]
+}

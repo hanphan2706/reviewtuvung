@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "partId": "cam13-t4-p1",
+  "audioFile": "cam13-test4-part1.mp3",
+  "durationSeconds": 429.211995,
+  "method": "whisper-local",
+  "preambleSeconds": 115.28,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "MARTHA",
+      "text": "Hi Alex. It’s Martha Clines here. James White gave me your number. I hope you don’t mind me calling you.",
+      "start": 115.28,
+      "end": 122.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "ALEX",
+      "text": "Of course not. How are you, Martha?",
+      "start": 122.08,
+      "end": 126.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "MARTHA",
+      "text": "Good thanks. I’m ringing because I need a bit of advice.",
+      "start": 126.56,
+      "end": 130.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "ALEX",
+      "text": "Oh yeah. What about?",
+      "start": 130.3,
+      "end": 131.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "MARTHA",
+      "text": "The training you did at JPNW a few years ago. I’m applying for the same thing.",
+      "start": 131.66,
+      "end": 137.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "ALEX",
+      "text": "Oh right. Yes, I did mine in 2014 (Example). Best thing I ever did. I’m still working there.",
+      "start": 137.1,
+      "end": 143.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "MARTHA",
+      "text": "Really? What are you doing?",
+      "start": 143.88,
+      "end": 147.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "ALEX",
+      "text": "Well, now I work in the customer services department but I did my initial training in Finance (Q1). I stayed there for the first two years and then moved to where I am now.",
+      "start": 147.18,
+      "end": 191.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "MARTHA",
+      "text": "That’s the same department I’m applying for. Did you enjoy it?",
+      "start": 191.58,
+      "end": 202.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "ALEX",
+      "text": "I was pretty nervous to begin with. I didn’t do well in my exams at school and I was really worried because I failed Maths (Q2). But it didn’t actually matter because I did lots of courses on the job.",
+      "start": 202.34,
+      "end": 227.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "MARTHA",
+      "text": "Did you get a diploma at the end of your trainee period? I’m hoping to do the one in business skills.",
+      "start": 227.38,
+      "end": 234.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "ALEX",
+      "text": "Yes. That sounds good. I took the one on IT skills but I wish I’d done that one instead. (Q3)",
+      "start": 234.52,
+      "end": 241.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "MARTHA",
+      "text": "OK, that’s good to know. What about the other trainees? How did you get on with them?",
+      "start": 241.32,
+      "end": 247.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "ALEX",
+      "text": "There were about 20 of us who started at the same time and we were all around the same age - I was 18 and there was only one person younger than me, how was 17 (Q4). The rest were between 18 and 20. I made some good friends.",
+      "start": 247.1,
+      "end": 262.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "MARTHA",
+      "text": "I’ve heard lots of good things about the training at JPNW. It seems like there are a lot of opportunities there.",
+      "start": 262.3,
+      "end": 269.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "ALEX",
+      "text": "Yeah, definitely. Because of its size you can work in loads of different areas within the organisation.",
+      "start": 269.44,
+      "end": 275.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "MARTHA",
+      "text": "What about pay? I know you get a lower minimum wage than regular employees.",
+      "start": 275.9,
+      "end": 281.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "ALEX",
+      "text": "That’s right - which isn’t great. Buy you get the same number of days’ holiday as everyone else (Q5). And the pay goes up massively if they offer you a job at the end of the training period.",
+      "start": 281.6,
+      "end": 294.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "MARTHA",
+      "text": "Yeah, but I’m not doing it for the money - it’s the experience I think will be really useful. Everyone says by the end of the year you gain so much confidence.",
+      "start": 294.52,
+      "end": 305.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "ALEX",
+      "text": "You’re right. That’s the most useful part about it. There’s a lot of variety too. You’re given lots of different things to do. I enjoyed it all - I didn’t even mind the studying.",
+      "start": 305.4,
+      "end": 316.96,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "MARTHA",
+      "text": "Do you have to spend any time in college?",
+      "start": 316.96,
+      "end": 317.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "ALEX",
+      "text": "Yes, one day each month (Q6). So you get lots of support from both your tutor and your manager.",
+      "start": 317.06,
+      "end": 323.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "MARTHA",
+      "text": "That’s good. And the company is easy to get to, isn’t it?",
+      "start": 323.18,
+      "end": 326.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "ALEX",
+      "text": "Yes, it’s very close to the train station so the location’s a real advantage. (Q7)",
+      "start": 326.52,
+      "end": 362.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "ALEX",
+      "text": "Have you got a date for your interview yet?",
+      "start": 362.84,
+      "end": 365.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "MARTHA",
+      "text": "Yes, it’s on the 23rd of this month.",
+      "start": 365.9,
+      "end": 368.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "ALEX",
+      "text": "So long as you’re well prepared there’s nothing to worry about. Everyone’s very friendly.",
+      "start": 368.62,
+      "end": 373.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "MARTHA",
+      "text": "I am not sure what I should wear. What do you think?",
+      "start": 373.38,
+      "end": 378.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "ALEX",
+      "text": "Nothing too casual - like jeans (Q8), for example. If you’ve got a nice jacket, wear that with a skirt or trousers.",
+      "start": 378.04,
+      "end": 385.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "MARTHA",
+      "text": "OK. Thanks. Any other tips?",
+      "start": 385.66,
+      "end": 389.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "ALEX",
+      "text": "Erm, well I know it’s really obvious but arrive in plenty of time (Q9). They hate people who are late. So make sure you know exactly where you have to get to. And one other useful piece of advice my manager told me before I had the interview for this job - is to smile (Q10). Even if you feel terrified. It makes people respond better to you.",
+      "start": 389.46,
+      "end": 410.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "MARTHA",
+      "text": "I’ll have to practise doing that in the mirror!",
+      "start": 410.54,
+      "end": 413.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "ALEX",
+      "text": "Yeah - well, good luck. Let me know if you need any more information.",
+      "start": 413.7,
+      "end": 418.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "MARTHA",
+      "text": "Thanks very much.",
+      "start": 418.46,
+      "end": 429.212,
+      "preAudio": false
+    }
+  ]
+}

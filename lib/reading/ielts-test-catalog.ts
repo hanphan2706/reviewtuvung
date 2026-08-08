@@ -21,7 +21,7 @@ export type ReadingIeltsTest = {
 export const CAMBRIDGE_IELTS_17_COVER_URL = "/cambridge-ielts-17-academic.jpg";
 
 /** Bìa local portrait 915px — cùng kiểu full-bleed như Fahasa Cam 18–20. */
-const CAMBRIDGE_IELTS_17_COVER_STYLE = {
+export const CAMBRIDGE_IELTS_17_COVER_STYLE = {
   coverImageObjectPosition: "40% 39.5%",
 } as const;
 
@@ -38,26 +38,26 @@ export const CAMBRIDGE_IELTS_20_COVER_URL =
 export const CAMBRIDGE_IELTS_16_COVER_URL = "/cam 16.jpg";
 
 /** Bìa portrait local — cùng crop full-bleed như Cam 17. */
-const CAMBRIDGE_IELTS_16_COVER_STYLE = {
+export const CAMBRIDGE_IELTS_16_COVER_STYLE = {
   coverImageObjectPosition: "40% 39.5%",
 } as const;
 
 export const CAMBRIDGE_IELTS_15_COVER_URL = "/cam 15.jpg";
 
-const CAMBRIDGE_IELTS_15_COVER_STYLE = {
+export const CAMBRIDGE_IELTS_15_COVER_STYLE = {
   coverImageObjectPosition: "50% 40%",
 } as const;
 
 export const CAMBRIDGE_IELTS_14_COVER_URL = "/cam 14.webp";
 
-const CAMBRIDGE_IELTS_14_COVER_STYLE = {
+export const CAMBRIDGE_IELTS_14_COVER_STYLE = {
   coverImageObjectPosition: "50% 40%",
 } as const;
 
 export const CAMBRIDGE_IELTS_13_COVER_URL = "/cam 13.jpg";
 
 /** Ảnh nguồn 800×800 có viền trắng hai bên (~11%) — scale để full-bleed như Cam 16. */
-const CAMBRIDGE_IELTS_13_COVER_STYLE = {
+export const CAMBRIDGE_IELTS_13_COVER_STYLE = {
   coverImageScale: 1.3,
   coverImageObjectPosition: "50% 50%",
   coverImageTransformOrigin: "50% 50%",

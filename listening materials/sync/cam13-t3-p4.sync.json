@@ -1,0 +1,287 @@
+{
+  "version": 1,
+  "partId": "cam13-t3-p4",
+  "audioFile": "cam13-test3-part4.mp3",
+  "durationSeconds": 390.91,
+  "method": "whisper-local",
+  "preambleSeconds": 112.63,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Last week, we started looking at reptiles, including crocodiles and snakes.",
+      "start": 112.63,
+      "end": 118.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "Today, I’d like us to have a look at another reptile - the lizard - and in particular, at some studies that have been done on a particular type of lizard whose Latin name is tiliqua rugosa.",
+      "start": 118.11,
+      "end": 131.15,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "This is commonly known as the sleepy lizard, because it’s quite slow in its movements and spends quite a lot of its time dozing under rocks or lying in the sun.",
+      "start": 131.15,
+      "end": 142.39,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "I’ll start with a general description.",
+      "start": 142.39,
+      "end": 145.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Sleepy lizards live in Western and South Australia, where they’re quite common.",
+      "start": 145.85,
+      "end": 150.93,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Unlike European lizards, which are mostly small, green and fast-moving, sleepy lizards are brown, but what’s particularly distinctive about them is the colour of their tongue, which is dark blue (Q31), in contrast with the lining of their mouth which is bright pink.",
+      "start": 150.93,
+      "end": 168.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "And they’re much bigger than most European lizards.",
+      "start": 168.43,
+      "end": 172.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "They have quite a varied diet, including insects and even small animals, but they mostly eat plants of varying kinds.",
+      "start": 172.11,
+      "end": 181.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "(Q32)",
+      "start": 181.03,
+      "end": 182.61
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Even though they’re quite large and powerful, with strong jaws that can crush beetles and snail shells, they still have quite a few predators.",
+      "start": 182.61,
+      "end": 192.09,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Large birds like cassowaries were one of the main ones in the past, but nowadays they’re more likely to be caught and killed by snakes (Q33).",
+      "start": 192.09,
+      "end": 202.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Actually, another threat to their survival isn’t a predator at all, but is man-made - quite a large number of sleepy lizards are killed by cars when they’re trying to cross highways.",
+      "start": 202.59,
+      "end": 215.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "One study carried out by Michael Freake at Flinders University investigated the methods of navigation of these lizards.",
+      "start": 215.43,
+      "end": 223.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Though they move slowly, they can travel quite long distances.",
+      "start": 223.37,
+      "end": 228.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "And he found that even if they were taken some distance away from their home territory, they could usually find their way back home as long as they could see the sky - they didn’t need any other landmarks on the ground.",
+      "start": 228.45,
+      "end": 242.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "(Q34)",
+      "start": 242.45,
+      "end": 246.67
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "Observations of these lizards in the wild have also revealed that their mating habits are quite unusual.",
+      "start": 246.67,
+      "end": 252.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Unlike most animals, it seems that they’re relatively monogamous, returning to the same partner year after year (Q35).",
+      "start": 252.95,
+      "end": 261.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "And the male and female also stay together for a long time, both before and after the birth of their young.",
+      "start": 261.01,
+      "end": 269.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "It’s quite interesting to think about the possible reasons for this.",
+      "start": 269.81,
+      "end": 273.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "It could be that it’s to do with protecting their young - you’d expect them to have a much better chance of survival if they have both parents around.",
+      "start": 273.89,
+      "end": 283.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "But in fact observers have noted that once the babies have hatched out of their eggs, they have hardly any contact with their parents (Q36).",
+      "start": 283.75,
+      "end": 292.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "So, there’s not really any evidence to support that idea.",
+      "start": 292.25,
+      "end": 295.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Another suggestion’s based on the observation that male lizards in monogamous relationships tend to be bigger and stronger than other males.",
+      "start": 295.85,
+      "end": 304.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "So maybe the male lizards stay around so they can give the female lizards protection from other males (Q37).",
+      "start": 304.65,
+      "end": 311.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "But again, we’re not really sure.",
+      "start": 311.41,
+      "end": 315.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Finally, I’d like to mention another study that involved collecting data by tracking the lizards.",
+      "start": 315.84,
+      "end": 321.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "I was actually involved in this myself.",
+      "start": 321.66,
+      "end": 324.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "So we caught some lizards in the wild and we developed a tiny GPS system that would allow us to track them, and we fixed this onto their tails (Q38).",
+      "start": 324.74,
+      "end": 334.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Then we set the lizards free again, and we were able to track them for twelve days and gather data, not just about their location, but even about how many steps they took during this period.",
+      "start": 334.94,
+      "end": 347.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "(Q39)",
+      "start": 347.18,
+      "end": 347.63
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "One surprising thing we discovered from this is that there were far fewer meetings between lizards than we expected - it seems that they were actually trying to avoid one another.",
+      "start": 347.63,
+      "end": 359.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "So why would that be?",
+      "start": 359.22,
+      "end": 361.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "Well, again we have no clear evidence, but one hypothesis is that male lizards can cause quite serious injuries to one another, so maybe this avoidance is a way of preventing this (Q40) - of self-preservation, if you like.",
+      "start": 361.2,
+      "end": 376.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "But we need to collect a lot more data before we can be sure of any of this.",
+      "start": 376.76,
+      "end": 390.91,
+      "preAudio": false
+    }
+  ]
+}

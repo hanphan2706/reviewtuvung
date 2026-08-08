@@ -1,9 +1,15 @@
 import { LISTENING_HUB_HREF } from "@/lib/listening/listening-hub-nav";
 import { cambridgeIeltsCatalogOrder } from "@/lib/exam/ielts-catalog-order";
 import {
+  CAMBRIDGE_IELTS_13_COVER_STYLE,
+  CAMBRIDGE_IELTS_13_COVER_URL,
+  CAMBRIDGE_IELTS_14_COVER_STYLE,
   CAMBRIDGE_IELTS_14_COVER_URL,
+  CAMBRIDGE_IELTS_15_COVER_STYLE,
   CAMBRIDGE_IELTS_15_COVER_URL,
+  CAMBRIDGE_IELTS_16_COVER_STYLE,
   CAMBRIDGE_IELTS_16_COVER_URL,
+  CAMBRIDGE_IELTS_17_COVER_STYLE,
   CAMBRIDGE_IELTS_17_COVER_URL,
   CAMBRIDGE_IELTS_18_COVER_URL,
   CAMBRIDGE_IELTS_19_COVER_URL,
@@ -43,7 +49,11 @@ export type ListeningIeltsTestId =
   | "cam14-test1"
   | "cam14-test2"
   | "cam14-test3"
-  | "cam14-test4";
+  | "cam14-test4"
+  | "cam13-test1"
+  | "cam13-test2"
+  | "cam13-test3"
+  | "cam13-test4";
 
 export type ListeningIeltsTest = {
   testId: ListeningIeltsTestId;
@@ -52,12 +62,13 @@ export type ListeningIeltsTest = {
   bookTitle: string;
   testNumber: number;
   coverImageUrl: string;
+  /** Đồng bộ crop với thẻ luyện đọc (vd. `40% 39.5%`). */
   coverImageObjectPosition?: string;
+  /** Phóng to ảnh nguồn có viền trắng (Cam 13). */
+  coverImageScale?: number;
+  coverImageTransformOrigin?: string;
   catalogOrder: number;
 };
-
-/** Tiny top-ward crop so “IELTS” sits just off the card edge. */
-const LISTENING_CAM17_COVER_POSITION = "50% 44%";
 
 export const LISTENING_IELTS_EXAM_HREF = `${LISTENING_HUB_HREF}/luyen-de-ielts`;
 
@@ -200,7 +211,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 17 Academic",
     testNumber: 4,
     coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
-    coverImageObjectPosition: LISTENING_CAM17_COVER_POSITION,
+    ...CAMBRIDGE_IELTS_17_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(17, 4),
   },
   {
@@ -209,7 +220,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 17 Academic",
     testNumber: 3,
     coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
-    coverImageObjectPosition: LISTENING_CAM17_COVER_POSITION,
+    ...CAMBRIDGE_IELTS_17_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(17, 3),
   },
   {
@@ -218,7 +229,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 17 Academic",
     testNumber: 2,
     coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
-    coverImageObjectPosition: LISTENING_CAM17_COVER_POSITION,
+    ...CAMBRIDGE_IELTS_17_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(17, 2),
   },
   {
@@ -227,7 +238,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 17 Academic",
     testNumber: 1,
     coverImageUrl: CAMBRIDGE_IELTS_17_COVER_URL,
-    coverImageObjectPosition: LISTENING_CAM17_COVER_POSITION,
+    ...CAMBRIDGE_IELTS_17_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(17, 1),
   },
   {
@@ -236,6 +247,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 16 Academic",
     testNumber: 4,
     coverImageUrl: CAMBRIDGE_IELTS_16_COVER_URL,
+    ...CAMBRIDGE_IELTS_16_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(16, 4),
   },
   {
@@ -244,6 +256,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 16 Academic",
     testNumber: 3,
     coverImageUrl: CAMBRIDGE_IELTS_16_COVER_URL,
+    ...CAMBRIDGE_IELTS_16_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(16, 3),
   },
   {
@@ -252,6 +265,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 16 Academic",
     testNumber: 2,
     coverImageUrl: CAMBRIDGE_IELTS_16_COVER_URL,
+    ...CAMBRIDGE_IELTS_16_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(16, 2),
   },
   {
@@ -260,6 +274,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 16 Academic",
     testNumber: 1,
     coverImageUrl: CAMBRIDGE_IELTS_16_COVER_URL,
+    ...CAMBRIDGE_IELTS_16_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(16, 1),
   },
   {
@@ -268,7 +283,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 15 Academic",
     testNumber: 4,
     coverImageUrl: CAMBRIDGE_IELTS_15_COVER_URL,
-    coverImageObjectPosition: "50% 40%",
+    ...CAMBRIDGE_IELTS_15_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(15, 4),
   },
   {
@@ -277,7 +292,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 15 Academic",
     testNumber: 3,
     coverImageUrl: CAMBRIDGE_IELTS_15_COVER_URL,
-    coverImageObjectPosition: "50% 40%",
+    ...CAMBRIDGE_IELTS_15_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(15, 3),
   },
   {
@@ -286,7 +301,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 15 Academic",
     testNumber: 2,
     coverImageUrl: CAMBRIDGE_IELTS_15_COVER_URL,
-    coverImageObjectPosition: "50% 40%",
+    ...CAMBRIDGE_IELTS_15_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(15, 2),
   },
   {
@@ -295,7 +310,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 15 Academic",
     testNumber: 1,
     coverImageUrl: CAMBRIDGE_IELTS_15_COVER_URL,
-    coverImageObjectPosition: "50% 40%",
+    ...CAMBRIDGE_IELTS_15_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(15, 1),
   },
   {
@@ -304,7 +319,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 14 Academic",
     testNumber: 4,
     coverImageUrl: CAMBRIDGE_IELTS_14_COVER_URL,
-    coverImageObjectPosition: "50% 40%",
+    ...CAMBRIDGE_IELTS_14_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(14, 4),
   },
   {
@@ -313,7 +328,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 14 Academic",
     testNumber: 3,
     coverImageUrl: CAMBRIDGE_IELTS_14_COVER_URL,
-    coverImageObjectPosition: "50% 40%",
+    ...CAMBRIDGE_IELTS_14_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(14, 3),
   },
   {
@@ -322,7 +337,7 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 14 Academic",
     testNumber: 2,
     coverImageUrl: CAMBRIDGE_IELTS_14_COVER_URL,
-    coverImageObjectPosition: "50% 40%",
+    ...CAMBRIDGE_IELTS_14_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(14, 2),
   },
   {
@@ -331,8 +346,44 @@ export const LISTENING_CAMBRIDGE_TESTS: readonly ListeningIeltsTest[] = [
     bookTitle: "Cambridge IELTS 14 Academic",
     testNumber: 1,
     coverImageUrl: CAMBRIDGE_IELTS_14_COVER_URL,
-    coverImageObjectPosition: "50% 40%",
+    ...CAMBRIDGE_IELTS_14_COVER_STYLE,
     catalogOrder: cambridgeIeltsCatalogOrder(14, 1),
+  },
+  {
+    testId: "cam13-test4",
+    label: "Cambridge 13 · Test 4",
+    bookTitle: "Cambridge IELTS 13 Academic",
+    testNumber: 4,
+    coverImageUrl: CAMBRIDGE_IELTS_13_COVER_URL,
+    ...CAMBRIDGE_IELTS_13_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(13, 4),
+  },
+  {
+    testId: "cam13-test3",
+    label: "Cambridge 13 · Test 3",
+    bookTitle: "Cambridge IELTS 13 Academic",
+    testNumber: 3,
+    coverImageUrl: CAMBRIDGE_IELTS_13_COVER_URL,
+    ...CAMBRIDGE_IELTS_13_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(13, 3),
+  },
+  {
+    testId: "cam13-test2",
+    label: "Cambridge 13 · Test 2",
+    bookTitle: "Cambridge IELTS 13 Academic",
+    testNumber: 2,
+    coverImageUrl: CAMBRIDGE_IELTS_13_COVER_URL,
+    ...CAMBRIDGE_IELTS_13_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(13, 2),
+  },
+  {
+    testId: "cam13-test1",
+    label: "Cambridge 13 · Test 1",
+    bookTitle: "Cambridge IELTS 13 Academic",
+    testNumber: 1,
+    coverImageUrl: CAMBRIDGE_IELTS_13_COVER_URL,
+    ...CAMBRIDGE_IELTS_13_COVER_STYLE,
+    catalogOrder: cambridgeIeltsCatalogOrder(13, 1),
   },
 ] as const;
 

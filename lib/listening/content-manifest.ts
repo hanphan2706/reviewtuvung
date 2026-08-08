@@ -12,6 +12,7 @@ import {
   BASIC_IELTS_LISTENING_META_PILL,
   type BasicIeltsListeningLessonCatalog,
 } from "@/lib/listening/basic-ielts-listening-catalog";
+import { CAM13_LISTENING_PARTS } from "@/lib/listening/cam13-listening-parts";
 import { CAM14_LISTENING_PARTS } from "@/lib/listening/cam14-listening-parts";
 import { CAM15_LISTENING_PARTS } from "@/lib/listening/cam15-listening-parts";
 import { CAM16_LISTENING_PARTS } from "@/lib/listening/cam16-listening-parts";
@@ -101,6 +102,26 @@ export type ListeningTestContext = {
 };
 
 export const LISTENING_TEST_CONTEXTS: Record<string, ListeningTestContext> = {
+  "cam13-t1": {
+    predictTitle: "Cam 13 — Test 1",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là lớp nấu ăn, giao thông Granford, thí nghiệm hạt giống hoặc động vật đô thị — không cần đoán đúng chi tiết.",
+  },
+  "cam13-t2": {
+    predictTitle: "Cam 13 — Test 2",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là câu lạc bộ xe đạp, tình nguyện công ty, thuyết trình nano hoặc trí nhớ episodic — không cần đoán đúng chi tiết.",
+  },
+  "cam13-t3": {
+    predictTitle: "Cam 13 — Test 3",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là chuyển đến Banford, giữ dáng, nhuộm vải tự nhiên hoặc thằn lằn sleepy lizard — không cần đoán đúng chi tiết.",
+  },
+  "cam13-t4": {
+    predictTitle: "Cam 13 — Test 4",
+    predictBlurb:
+      "Trước khi nghe bản đầy đủ của Part này: đoán **tình huống chung** (ai với ai, đang làm gì). Gợi ý rất nhẹ: có thể là đào tạo Alex, Snow Centre, nhãn dinh dưỡng hoặc lịch sử cà phê — không cần đoán đúng chi tiết.",
+  },
   "cam14-t1": {
     predictTitle: "Cam 14 — Test 1",
     predictBlurb:
@@ -359,6 +380,7 @@ export const LISTENING_PARTS_PILOT: readonly ListeningPartMeta[] = [
   ...CAM16_LISTENING_PARTS,
   ...CAM15_LISTENING_PARTS,
   ...CAM14_LISTENING_PARTS,
+  ...CAM13_LISTENING_PARTS,
   {
     id: "cam20-t1-p1",
     slug: "restaurant-recommendations",

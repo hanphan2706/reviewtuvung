@@ -157,6 +157,54 @@ const LISTENING_PART_IMAGES: Record<string, string> = {
   /** Cam 14 — Crime report form */
   "cam14-t1-p1":
     "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=1200&q=80&auto=format&fit=crop",
+  /** Cam 13 — Cookery classes */
+  "cam13-t1-p1":
+    "https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?w=1200&q=80&auto=format&fit=crop",
+  /** Traffic changes in Granford */
+  "cam13-t1-p2":
+    "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1200&q=80&auto=format&fit=crop",
+  /** Seed germination experiment */
+  "cam13-t1-p3":
+    "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=1200&q=80&auto=format&fit=crop",
+  /** Effects of urban environments on animals */
+  "cam13-t1-p4":
+    "https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=1200&q=80&auto=format&fit=crop",
+  /** South City Cycling Club */
+  "cam13-t2-p1":
+    "https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=1200&q=80&auto=format&fit=crop",
+  /** Company volunteering projects */
+  "cam13-t2-p2":
+    "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1200&q=80&auto=format&fit=crop",
+  /** Planning a presentation on nanotechnology */
+  "cam13-t2-p3":
+    "https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1200&q=80&auto=format&fit=crop",
+  /** Episodic memory */
+  "cam13-t2-p4":
+    "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=1200&q=80&auto=format&fit=crop",
+  /** Moving to Banford City */
+  "cam13-t3-p1":
+    "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&q=80&auto=format&fit=crop",
+  /** Keeping fit — physical activities */
+  "cam13-t3-p2":
+    "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=80&auto=format&fit=crop",
+  /** Natural dyes for colouring fabrics */
+  "cam13-t3-p3":
+    "https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=1200&q=80&auto=format&fit=crop",
+  /** The sleepy lizard */
+  "cam13-t3-p4":
+    "https://images.unsplash.com/photo-1504450874802-0ba2bcd9b5ae?w=1200&q=80&auto=format&fit=crop",
+  /** Alex’s training */
+  "cam13-t4-p1":
+    "https://images.unsplash.com/photo-1501183638710-841dd1904471?w=1200&q=80&auto=format&fit=crop",
+  /** The Snow Centre */
+  "cam13-t4-p2":
+    "https://images.unsplash.com/photo-1605540436563-5bca919ae766?w=1200&q=80&auto=format&fit=crop",
+  /** Nutritional food labels */
+  "cam13-t4-p3":
+    "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=1200&q=80&auto=format&fit=crop",
+  /** The history of coffee */
+  "cam13-t4-p4":
+    "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=1200&q=80&auto=format&fit=crop",
   /** Induction talk for new apprentices */
   "cam14-t1-p2":
     "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=80&auto=format&fit=crop",

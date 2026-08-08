@@ -1,0 +1,352 @@
+{
+  "version": 1,
+  "partId": "cam13-t4-p2",
+  "audioFile": "cam13-test4-part2.mp3",
+  "durationSeconds": 412.539002,
+  "method": "whisper-local",
+  "preambleSeconds": 112.28,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Hi everyone, welcome to the Snow Centre.",
+      "start": 112.28,
+      "end": 115.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "My name’s Annie.",
+      "start": 115.88,
+      "end": 117.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "I hope you enjoyed the bus trip from the airport - we’ve certainly got plenty of snow today!",
+      "start": 117.42,
+      "end": 123.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "Well, you’ve come to New Zealand’s premier snow and ski centre, and we’ve a whole load of activities for you during your week here.",
+      "start": 123.86,
+      "end": 132.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "Most visitors come here for the cross-country skiing, where you’re on fairly flat ground for most of the time, rather than going down steep mountainsides.",
+      "start": 132.14,
+      "end": 141.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "There are marked trails, but you can also leave these and go off on your own and that’s an experience not to be missed (Q11).",
+      "start": 141.42,
+      "end": 149.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "You can go at your own speed - it’s great aerobic exercise if you really push yourself, or if you prefer you can just glide gently along and enjoy the beautiful scenery.",
+      "start": 149.92,
+      "end": 162.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "This afternoon, you’ll be going on a dog-sled trip.",
+      "start": 162.44,
+      "end": 166.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "You may have seen our dogs on TV recently racing in the winter sled festival.",
+      "start": 166.1,
+      "end": 171.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "If you want, you can have your own team for the afternoon and learn how to drive them (Q12), following behind our leader on the trail.",
+      "start": 171.34,
+      "end": 180.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "Or if you’d prefer, you can just sit back in the sled and enjoy the ride as a passenger.",
+      "start": 180.18,
+      "end": 186.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "At the weekend, we have the team relay event, and you’re all welcome to join in.",
+      "start": 186.64,
+      "end": 192.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "We have a local school coming along, and a lot of the teachers are taking part too.",
+      "start": 192.08,
+      "end": 197.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "Participation rather than winning is the main focus, and there’s a medal for everyone who takes part (Q13).",
+      "start": 197.1,
+      "end": 203.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "Participants are in teams of two to four, and each team must complete four laps of the course.",
+      "start": 203.5,
+      "end": 210.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "For your final expedition, you’ll head off to Mount Frenner wearing a pair of special snow shoes which allow you to walk on top of the snow.",
+      "start": 210.06,
+      "end": 219.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "This is an area where miners once searched for gold, though there are very few traces of their work left now.",
+      "start": 219.24,
+      "end": 226.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "When the snow melts in summer, the mountain slopes are carpeted in flowers and plants.",
+      "start": 226.38,
+      "end": 231.48,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "It’s a long ascent, though not too steep, and walkers generally take a couple of days to get to the summit (Q14) and return.",
+      "start": 231.48,
+      "end": 239.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "You’ll spend the night in our hut half-way up the mountain.",
+      "start": 239.28,
+      "end": 243.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "That’s included in your package for the stay.",
+      "start": 243.02,
+      "end": 245.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "It’s got cooking facilities, firewood and water for drinking (Q15).",
+      "start": 245.74,
+      "end": 249.5,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "For washing, we recommend you use melted snow, though, to conserve supplies.",
+      "start": 249.5,
+      "end": 255.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "We can take your luggage up on our snowmobile for you for just ten dollars a person.",
+      "start": 255.34,
+      "end": 261.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "The hut has cooking facilities so you can make a hot meal in the evening and morning, but you need to take your own food.",
+      "start": 261.12,
+      "end": 269.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "The weather on Mount Frenner can be very stormy.",
+      "start": 269.62,
+      "end": 272.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "In that case, stay in the hut - generally the storms don’t last long (Q16).",
+      "start": 272.68,
+      "end": 277.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "Don’t stress about getting back here to the centre in time to catch the airport bus - they’ll probably not be running anyway.",
+      "start": 277.52,
+      "end": 284.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "We do have an emergency locator beacon in the hut but only use that if it’s real emergency, like if someone’s ill or injured.",
+      "start": 284.38,
+      "end": 327.41,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "Now, let me tell you something about the different ski trails you can follow during your stay here.",
+      "start": 327.41,
+      "end": 334.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "Highland Trail’s directly accessible from where we are now.",
+      "start": 334.35,
+      "end": 338.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "This trail’s been designed to give first-timers an experience they’ll enjoy regardless of their age or skill, but it’s also ideal for experts to practise their technique (Q17).",
+      "start": 338.53,
+      "end": 349.67,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "Then there’s Pine Trail … if you’re nervous about skiing, leave this one to the experts!",
+      "start": 349.67,
+      "end": 355.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "You follow a steep valley looking right down on the river below - scary!",
+      "start": 355.75,
+      "end": 360.51,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "But if you’ve fully mastered the techniques needed for hills, it’s great fun (Q18).",
+      "start": 360.51,
+      "end": 365.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "Stony Trail’s a good choice once you’ve got a general idea of the basics.",
+      "start": 365.83,
+      "end": 370.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "There are one or two tricky sections, but nothing too challenging.",
+      "start": 370.59,
+      "end": 374.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "There’s a shelter half-way where you can sit and take a break and enjoy the afternoon sunshine.",
+      "start": 374.65,
+      "end": 380.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "(Q19)",
+      "start": 380.43,
+      "end": 381.01
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "And finally, Loser’s Trail.",
+      "start": 381.01,
+      "end": 384.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": null,
+      "text": "This starts off following a gentle river valley but the last part is quite exposed so the snow conditions can be challenging - if it’s snowing or windy, check with us before you set out to make sure the trail’s open that day.",
+      "start": 384.11,
+      "end": 398.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": null,
+      "text": "(Q20)",
+      "start": 398.11,
+      "end": 399.45
+    },
+    {
+      "id": "cue-43",
+      "speaker": null,
+      "text": "Right, so now if you’d like to follow me, we’ll get started …",
+      "start": 399.45,
+      "end": 412.539,
+      "preAudio": false
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "version": 1,
+  "partId": "cam13-t2-p1",
+  "audioFile": "cam13-test2-part1.mp3",
+  "durationSeconds": 484.069002,
+  "method": "whisper-local",
+  "preambleSeconds": 146.11,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "JIM",
+      "text": "Hello, South City Cycling Club.",
+      "start": 146.11,
+      "end": 148.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "WOMAN",
+      "text": "Oh, hi. Er … I want to find out about joining the club.",
+      "start": 148.45,
+      "end": 154.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "JIM",
+      "text": "Right. I can help you there. I’m the club secretary and my name’s Jim Hunter (Example).",
+      "start": 154.31,
+      "end": 160.31,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "WOMAN",
+      "text": "Oh, hi Jim.",
+      "start": 160.31,
+      "end": 161.79,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "JIM",
+      "text": "So, are you interested in membership for yourself?",
+      "start": 161.79,
+      "end": 165.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "WOMAN",
+      "text": "That’s right.",
+      "start": 165.25,
+      "end": 166.57,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "JIM",
+      "text": "OK. Well there are basically two types of adult membership. If you’re pretty serious about cycling, there’s the Full membership. That costs 260 dollars and that covers you not just for ordinary cycling but also for races both here in the city and also in other parts of Australia. (Q1)",
+      "start": 166.57,
+      "end": 190.05,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "WOMAN",
+      "text": "Right. Well, I’m not really up to that standard. I was more interested in just joining a group to do some cycling in my free time.",
+      "start": 190.05,
+      "end": 198.89,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "JIM",
+      "text": "Sure. That’s why most people join. So, in that case you’d be better with the Recreational membership. That’s 108 dollars if you’re over 19, and 95 dollars if you’re under.",
+      "start": 198.89,
+      "end": 213.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "WOMAN",
+      "text": "I’m 25.",
+      "start": 213.97,
+      "end": 215.71,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "JIM",
+      "text": "OK. It’s paid quarterly, and you can upgrade it later to the Full membership if you want to, of course. Now both types of membership include the club fee of 20 dollars. They also provide insurance in case you have an accident (Q2), though we hope you won’t need that, of course.",
+      "start": 215.71,
+      "end": 236.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "WOMAN",
+      "text": "No. OK, well, I’ll go with the Recreational membership, I think. And that allows me to join in the club activities, and so on?",
+      "start": 236.43,
+      "end": 245.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "JIM",
+      "text": "That’s right. And once you’re a member of the club, you’re also permitted to wear our kit when you’re out cycling. It’s green and white.",
+      "start": 245.53,
+      "end": 254.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "WOMAN",
+      "text": "Yes, I’ve seen cyclists wearing it. So, can I buy that at the club?",
+      "start": 254.35,
+      "end": 260.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "JIM",
+      "text": "No, it’s made to order by a company in Brisbane. You can find them online: they’re called Jerriz (Q3). That’s J-E-R-R-I-Z. You can use your membership number to put in an order on their website.",
+      "start": 260.07,
+      "end": 278.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "WOMAN",
+      "text": "OK. Now, can you tell me a bit about the rides I can do?",
+      "start": 278.25,
+      "end": 283.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "JIM",
+      "text": "Sure. So we have training rides pretty well every morning, and they’re a really good way of improving your cycling skills as well as your general level of fitness, but they’re different levels. Level A is pretty fast - you’re looking at about 30 or 35 kilometres an hour. If you can do about 25 kilometres an hour, you’d probably be level B (Q4), and then level C are the novices, who stay at about 15 kilometres per hour.",
+      "start": 283.01,
+      "end": 316.69,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "WOMAN",
+      "text": "Right. Well I reckon I’d be level B. So, when are the sessions for that level?",
+      "start": 316.69,
+      "end": 323.17,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "JIM",
+      "text": "There are a couple each week. They’re both early morning sessions. There’s one on Tuesdays, and for that one you meet at 5.30 am, and the meeting point’s the stadium (Q5) - do you know where that is?",
+      "start": 323.17,
+      "end": 338.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "WOMAN",
+      "text": "Yes, it’s quite near my home, in fact. OK, and how about the other one?",
+      "start": 338.01,
+      "end": 343.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "JIM",
+      "text": "That’s on Thursdays. It starts at the same time, but they meet at the main gate to the park. (Q6)",
+      "start": 343.97,
+      "end": 350.77,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "WOMAN",
+      "text": "Is that the one just past the shopping mall?",
+      "start": 350.77,
+      "end": 353.95,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "JIM",
+      "text": "That’s it.",
+      "start": 353.95,
+      "end": 387.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "WOMAN",
+      "text": "So how long are the rides?",
+      "start": 387.99,
+      "end": 394.07,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "JIM",
+      "text": "They’re about an hour and a half. So, if you have a job it’s easy to fit in before you go to work. And the members often go somewhere for coffee afterwards (Q7), so it’s quite a social event.",
+      "start": 394.07,
+      "end": 408.35,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "WOMAN",
+      "text": "OK. That sounds good. I’ve only just moved to the city so I don’t actually know many people yet.",
+      "start": 408.35,
+      "end": 414.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "JIM",
+      "text": "Well, it’s a great way to meet people.",
+      "start": 414.81,
+      "end": 417.55,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "WOMAN",
+      "text": "And does each ride have a leader? (Q8)",
+      "start": 417.55,
+      "end": 420.29,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "JIM",
+      "text": "Sometimes, but not always. But you don’t really need one; the group members on the ride support one another, anyway.",
+      "start": 420.29,
+      "end": 428.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "WOMAN",
+      "text": "How would we know where to go?",
+      "start": 428.65,
+      "end": 431.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "JIM",
+      "text": "If you check the club website, you’ll see that the route for each ride is clearly marked. So you can just print that out (Q9) and take it along with you. It’s similar from one week to another, but it’s not always exactly the same.",
+      "start": 431.23,
+      "end": 447.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "WOMAN",
+      "text": "And what do I need to bring?",
+      "start": 447.11,
+      "end": 449.49,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "JIM",
+      "text": "Well, bring a bottle of water, and your phone. You shouldn’t use if while you’re cycling, buy have it with you.",
+      "start": 449.49,
+      "end": 457.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "WOMAN",
+      "text": "Right.",
+      "start": 457.01,
+      "end": 457.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "JIM",
+      "text": "And in winter, it’s well before sunrise when we set out, so you need to make sure your bike’s got lights. (Q10)",
+      "start": 457.97,
+      "end": 465.45,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "WOMAN",
+      "text": "That’s OK. Well, thanks Jim. I’d definitely like to join. So what’s the best way of going about it?",
+      "start": 465.45,
+      "end": 480.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "JIM",
+      "text": "You can …",
+      "start": 480.44,
+      "end": 484.069,
+      "preAudio": false
+    }
+  ]
+}

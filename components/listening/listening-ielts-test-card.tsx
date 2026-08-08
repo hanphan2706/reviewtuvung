@@ -26,12 +26,23 @@ export function ListeningIeltsTestCard({
           src={test.coverImageUrl}
           alt=""
           fill
-          className="object-cover"
-          style={
-            test.coverImageObjectPosition
+          quality={90}
+          className="object-cover object-center"
+          style={{
+            objectFit: "cover",
+            ...(test.coverImageObjectPosition
               ? { objectPosition: test.coverImageObjectPosition }
-              : { objectPosition: "center" }
-          }
+              : {}),
+            ...(test.coverImageScale
+              ? {
+                  transform: `scale(${test.coverImageScale})`,
+                  transformOrigin:
+                    test.coverImageTransformOrigin ??
+                    test.coverImageObjectPosition ??
+                    "center center",
+                }
+              : {}),
+          }}
           sizes="(max-width:768px) 100vw, 33vw"
         />
       </div>

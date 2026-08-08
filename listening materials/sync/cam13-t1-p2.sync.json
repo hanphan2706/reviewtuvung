@@ -1,0 +1,258 @@
+{
+  "version": 1,
+  "partId": "cam13-t1-p2",
+  "audioFile": "cam13-test1-part2.mp3",
+  "durationSeconds": 406.038005,
+  "method": "whisper-local",
+  "preambleSeconds": 88.84,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "Good evening everyone.",
+      "start": 88.84,
+      "end": 90.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "My name’s Phil Sutton, and I’m chairman of the Highways Committee.",
+      "start": 90.78,
+      "end": 95.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "We’ve called this meeting to inform members of the public about the new regulations for traffic and parking we’re proposing for Granford.",
+      "start": 95.84,
+      "end": 105.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "I’ll start by summarising these changes before we open the meeting to questions.",
+      "start": 105.06,
+      "end": 111.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "So, why do we need to make these changes to traffic systems in Granford?",
+      "start": 111.9,
+      "end": 117.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Well, we’re very aware that traffic is becoming an increasing problem.",
+      "start": 117.34,
+      "end": 123.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "It’s been especially noticeable with the increase in heavy traffic while they’ve been building the new hospital.",
+      "start": 123.02,
+      "end": 129.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "But it’s the overall rise in the volume of traffic of all kinds that’s concerning us (Q11).",
+      "start": 129.88,
+      "end": 136.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "To date there’s not been any increase in traffic accidents, but that’s not something we want to see happen, obviously.",
+      "start": 136.32,
+      "end": 144.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "We recently carried out a survey of local residents, and their responses were interesting.",
+      "start": 144.12,
+      "end": 151.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "People were very concerned about the lack of visibility on some roads due to cars parked along the sides of the roads (Q12).",
+      "start": 151.28,
+      "end": 159.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "We’d expected complaints about the congestion near the school when parents are dropping off their children or picking them up, but this wasn’t top of the list, and nor were noise and fumes from trucks and lorries, though they were mentioned by some people.",
+      "start": 159.46,
+      "end": 176.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "We think these new traffic regulations would make a lot of difference.",
+      "start": 176.34,
+      "end": 181.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "But we still have a long way to go.",
+      "start": 181.64,
+      "end": 184.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "We’ve managed to keep our proposals within budget, just, so they can be covered by the Council.",
+      "start": 184.72,
+      "end": 190.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "But, of course, it’s no good introducing new regulations if we don’t have a way of making sure that everyone obeys them (Q13), and that’s an area we’re still working on with the help of representatives from the police force.",
+      "start": 190.7,
+      "end": 252.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "OK, so this slide shows a map of the central area of Granford, with the High Street in the middle and School Road on the right.",
+      "start": 252.46,
+      "end": 266.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Now, we already have a set of traffic lights in the High Street at the junction with Station Road, but we’re planning to have another set at the other end, at the School Road junction (Q14), to regulate the flow or traffic along the High Street.",
+      "start": 266.28,
+      "end": 281.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "We’re decided we definitely need a pedestrian crossing.",
+      "start": 281.92,
+      "end": 286.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "We considered putting this on School Road, just outside the school, but in the end we decided that could lead to a lot of traffic congestion so we decided to locate it on the High Street, crossing the road in front of the supermarket (Q15).",
+      "start": 286.74,
+      "end": 302.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "That’s a very busy area, so it should help things there.",
+      "start": 302.16,
+      "end": 305.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "We’re proposing some changes to parking.",
+      "start": 305.9,
+      "end": 310.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "At present, parking isn’t allowed on the High Street outside the library, but we’re going to change that, and allow parking there (Q16), but not at the other end of the High Street near School Road.",
+      "start": 310.02,
+      "end": 323.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "There’ll be a new ‘No Parking’ sign on School Road, just by the entrance to the school (Q17), forbidding parking for 25 metres.",
+      "start": 323.1,
+      "end": 332.23,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "This should improve visibility for drivers and pedestrians, especially on the bend just to the north of the school.",
+      "start": 332.23,
+      "end": 340.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "As far as disabled drivers are concerned, at present they have parking outside the supermarket, but lorries also use those spaces, so we’ve got two new disabled parking spaces on the side road up towards the bank (Q18).",
+      "start": 340.62,
+      "end": 356.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "It’s not ideal, but probably better than the present arrangement.",
+      "start": 356.3,
+      "end": 361.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "We also plan to widen the pavement on School Road. We think we can manage to get an extra half-metre on the bend just before you get to the school, on the same side of the road (Q19).",
+      "start": 361.66,
+      "end": 374.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Finally, we’ve introduced new restrictions on loading and unloading for the supermarket, so lorries will only be allowed to stop there before 8 am.",
+      "start": 374.58,
+      "end": 382.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "That’s the supermarket on School Road (Q20) - we kept to the existing arrangements with the High Street supermarket.",
+      "start": 382.9,
+      "end": 392.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "OK. So that’s about it. Now, would anyone …",
+      "start": 392.68,
+      "end": 406.038,
+      "preAudio": false
+    }
+  ]
+}

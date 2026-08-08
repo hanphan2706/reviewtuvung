@@ -21,7 +21,7 @@ import { sanitizeListeningTranscript } from "../lib/sanitize-listening-transcrip
 import { splitTranscriptByPart } from "../lib/listening/split-transcript-parts";
 import type { ListeningFlowLessonContent } from "../lib/listening/tactics-basic-flow-types";
 
-type ExamSlug = "cam18" | "cam20" | "cam21" | "cam17" | "cam16" | "cam15" | "cam14";
+type ExamSlug = "cam18" | "cam20" | "cam21" | "cam17" | "cam16" | "cam15" | "cam14" | "cam13";
 
 const WRONG_GIST = [
   {
@@ -50,8 +50,8 @@ function parseArgs(argv: string[]): { exam: ExamSlug; tests: number[] } {
     if (a === "--all-tests") allTests = true;
   }
 
-  if (!["cam18", "cam20", "cam21", "cam17", "cam16", "cam15", "cam14"].includes(exam)) {
-    throw new Error("--exam must be cam18, cam20, cam21, cam17, cam16, cam15 or cam14");
+  if (!["cam18", "cam20", "cam21", "cam17", "cam16", "cam15", "cam14", "cam13"].includes(exam)) {
+    throw new Error("--exam must be cam18, cam20, cam21, cam17, cam16, cam15, cam14 or cam13");
   }
 
   const tests = allTests ? [1, 2, 3, 4] : [test];
@@ -216,6 +216,73 @@ const CAM16_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
   "cam16-t4-p4": {
     titleVi: "Sự tuyệt chủng của chim dodo",
     summaryVi: "Bài giảng về lịch sử dodo ở Mauritius, đặc điểm cơ thể và nguyên nhân tuyệt chủng.",
+  },
+};
+
+const CAM13_FLOW_VI: Record<string, { titleVi: string; summaryVi: string }> = {
+  "cam13-t1-p1": {
+    titleVi: "Lớp nấu ăn",
+    summaryVi: "Khách hỏi lớp nấu một ngày: nguyên liệu theo mùa, công thức lành mạnh và trung tâm chay gần chợ.",
+  },
+  "cam13-t1-p2": {
+    titleVi: "Thay đổi giao thông ở Granford",
+    summaryVi: "Chủ tịch giao thông giải thích quy tắc mới, phản ánh cư dân và thay đổi trên bản đồ.",
+  },
+  "cam13-t1-p3": {
+    titleVi: "Thí nghiệm nảy mầm hạt",
+    summaryVi: "Jack và Emma lên kế hoạch thí nghiệm: mục tiêu, nguồn tài liệu và quy trình đo đạc.",
+  },
+  "cam13-t1-p4": {
+    titleVi: "Ảnh hưởng môi trường đô thị lên động vật",
+    summaryVi: "Bài giảng về cách thành phố làm đổi não, hành vi, stress và giao tiếp của động vật.",
+  },
+  "cam13-t2-p1": {
+    titleVi: "Câu lạc bộ xe đạp South City",
+    summaryVi: "Jim giải thích hội viên, buổi tập, đồ kit và mẹo cho người đạp giải trí.",
+  },
+  "cam13-t2-p2": {
+    titleVi: "Dự án tình nguyện công ty",
+    summaryVi: "Quản lý nêu lựa chọn tình nguyện, thời gian được phép và lợi ích cộng đồng.",
+  },
+  "cam13-t2-p3": {
+    titleVi: "Lên kế hoạch thuyết trình nanotechnology",
+    summaryVi: "Sinh viên bàn cấu trúc bài nói, hình ảnh, đối tượng và nội dung khó.",
+  },
+  "cam13-t2-p4": {
+    titleVi: "Trí nhớ episodic",
+    summaryVi: "Bài giảng về cách lưu sự kiện cá nhân, gợi nhớ và liên hệ với chú ý cùng não bộ.",
+  },
+  "cam13-t3-p1": {
+    titleVi: "Chuyển đến Banford City",
+    summaryVi: "Linda tư vấn ngoại ô, tiền thuê, giao thông, tiện ích và giờ gặp gần ga.",
+  },
+  "cam13-t3-p2": {
+    titleVi: "Giữ dáng — hoạt động thể chất",
+    summaryVi: "HLV so sánh gym, chạy, bơi và lý do bỏ cuộc cùng cách giữ động lực.",
+  },
+  "cam13-t3-p3": {
+    titleVi: "Nhuộm vải bằng thuốc nhuộm tự nhiên",
+    summaryVi: "Jim bàn dự án dệt: cảm hứng, phương pháp, màu sắc và khó khăn thực tế.",
+  },
+  "cam13-t3-p4": {
+    titleVi: "Thằn lằn sleepy lizard",
+    summaryVi: "Bài giảng sinh học về Tiliqua rugosa: giác quan, cặp đôi, bảo vệ và chấn thương.",
+  },
+  "cam13-t4-p1": {
+    titleVi: "Đào tạo của Alex",
+    summaryVi: "Alex khuyên Martha về đời thực tập JPNW: phòng ban, lương, ngày học và phỏng vấn.",
+  },
+  "cam13-t4-p2": {
+    titleVi: "The Snow Centre",
+    summaryVi: "Annie chào đón khách: lời khuyên trượt tuyết, tiện nghi và đường phù hợp từng nhóm.",
+  },
+  "cam13-t4-p3": {
+    titleVi: "Nhãn dinh dưỡng thực phẩm",
+    summaryVi: "Jack và Alice xem nhãn bao bì, hệ thống đèn giao thông và nghiên cứu hành vi mua sắm.",
+  },
+  "cam13-t4-p4": {
+    titleVi: "Lịch sử cà phê",
+    summaryVi: "Thuyết trình từ Ethiopia và quán cà phê Ottoman đến đồn điền thuộc địa và thương mại.",
   },
 };
 
@@ -548,7 +615,9 @@ function buildPartContent(
             ? CAM15_FLOW_VI
             : exam === "cam14"
               ? CAM14_FLOW_VI
-              : undefined;
+              : exam === "cam13"
+                ? CAM13_FLOW_VI
+                : undefined;
   const vi = flowVi?.[partId];
 
   const predictionOptions = [

@@ -37,6 +37,7 @@
     "listening:sync-cam16": "npx tsx scripts/sync-cam16-listening.ts",
     "listening:sync-cam15": "npx tsx scripts/sync-cam15-listening.ts",
     "listening:sync-cam14": "npx tsx scripts/sync-cam14-listening.ts",
+    "listening:sync-cam13": "npx tsx scripts/sync-cam13-listening.ts",
     "listening:sync-transcript": "npx tsx scripts/sync-listening-transcript.ts",
     "exam:build-midterm": "node scripts/build-midterm-exam-html.mjs"
   },

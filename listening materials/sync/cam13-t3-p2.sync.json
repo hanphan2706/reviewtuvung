@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "partId": "cam13-t3-p2",
+  "audioFile": "cam13-test3-part2.mp3",
+  "durationSeconds": 381.44,
+  "method": "whisper-local",
+  "preambleSeconds": 58,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": null,
+      "text": "So if you are one of those people who hasn’t found the perfect physical activity yet, here are some things to think about which might help you make the right decision for you.",
+      "start": 58,
+      "end": 69.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": null,
+      "text": "The first question to ask yourself is whether you would enjoy training in a gym.",
+      "start": 69.22,
+      "end": 74.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": null,
+      "text": "Many people are put off by the idea of having to fit a visit to the gym into their busy day.",
+      "start": 74.32,
+      "end": 81.46,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": null,
+      "text": "You often have to go very early or late as some gyms can get very crowded but with regular training you’ll see a big difference in a relatively short space of time.",
+      "start": 81.46,
+      "end": 89.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": null,
+      "text": "(Q11)",
+      "start": 89.2,
+      "end": 90.36
+    },
+    {
+      "id": "cue-6",
+      "speaker": null,
+      "text": "Running has become incredibly popular in recent years.",
+      "start": 90.36,
+      "end": 94.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": null,
+      "text": "That’s probably got a lot to do with the fact that it’s a very accessible form of exercise that anyone can run even if you could only run a few meters to begin with (Q12).",
+      "start": 94.54,
+      "end": 106.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": null,
+      "text": "But make sure you get the right shoes.",
+      "start": 106.44,
+      "end": 109.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": null,
+      "text": "It’s worth investing in a high quality pair and they don’t come cheap.",
+      "start": 109.16,
+      "end": 114.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": null,
+      "text": "Another great thing about running is that you can do it at any time of day or night.",
+      "start": 114.1,
+      "end": 120.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": null,
+      "text": "The only thing that may stop you is snow and ice.",
+      "start": 120.22,
+      "end": 124.68,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": null,
+      "text": "Swimming is another really good way to build fitness.",
+      "start": 124.68,
+      "end": 128.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": null,
+      "text": "What attracts many people is that you can swim in an indoor pool at any time of year (Q13).",
+      "start": 128.52,
+      "end": 135.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": null,
+      "text": "On the other hand, it can be quite boring or solitary.",
+      "start": 135.06,
+      "end": 139.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": null,
+      "text": "It’s hard to chat to people while you’re swimming lengths.",
+      "start": 139.42,
+      "end": 143.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": null,
+      "text": "Cycling has become almost as popular as running in recent years.",
+      "start": 143.84,
+      "end": 148.06,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": null,
+      "text": "That’s probably because as well as improving their fitness many people say being out in the fresh air in a park or in the countryside can be fun (Q14), provided the conditions are right of course.",
+      "start": 148.06,
+      "end": 160.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": null,
+      "text": "Only fanatics go out in the wind and rain.",
+      "start": 160.44,
+      "end": 164.54,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": null,
+      "text": "Yoga is a good choice for those of you looking for exercise, which focuses on developing both a healthy mind and body.",
+      "start": 164.54,
+      "end": 173.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": null,
+      "text": "It’s a good way of building strength and with the right instructor there’s less chance of hurting yourself than with other more active sports.",
+      "start": 173.36,
+      "end": 182.9,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": null,
+      "text": "But don’t expect to find it easy.",
+      "start": 182.9,
+      "end": 185.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": null,
+      "text": "It can be surprisingly challenging, especially for people who aren’t very flexible.",
+      "start": 185.64,
+      "end": 191.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": null,
+      "text": "Getting a personal trainer is a good way to start your fitness program.",
+      "start": 191.82,
+      "end": 196.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": null,
+      "text": "Obviously there can be significant costs involved.",
+      "start": 196.98,
+      "end": 200.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": null,
+      "text": "But if you’ve got someone there to encourage you and help you achieve your goals, you’re less likely to give up.",
+      "start": 200.52,
+      "end": 208.28,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": null,
+      "text": "Make sure you get someone with a recognised qualification though.",
+      "start": 208.28,
+      "end": 212.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": null,
+      "text": "Or you could do yourself permanent damage.",
+      "start": 212.26,
+      "end": 214.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": null,
+      "text": "(Q15) (Q16)",
+      "start": 214.72,
+      "end": 251.38
+    },
+    {
+      "id": "cue-29",
+      "speaker": null,
+      "text": "Whatever you do, don’t join a gym and you’re sure you’ll make good use of it.",
+      "start": 251.38,
+      "end": 257.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": null,
+      "text": "So many people waste lots of money by signing up for membership and then hardly ever go.",
+      "start": 257.66,
+      "end": 264.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": null,
+      "text": "What happens to their good intentions?",
+      "start": 264.36,
+      "end": 267.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": null,
+      "text": "I don’t think people suddenly stop caring about improving their fitness or decide they have more important things to do.",
+      "start": 267.3,
+      "end": 275.52,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": null,
+      "text": "I think people lose interest when they don’t think they’re making enough progress.",
+      "start": 275.52,
+      "end": 281.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": null,
+      "text": "That’s when they give up hope and stop believing they’ll ever achieve their goals.",
+      "start": 281.62,
+      "end": 287.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": null,
+      "text": "Also, what people sometimes don’t realize when they start is that it takes a lot of determination and hard work to keep training week after week, and lots of people don’t have that kind of commitment (Q17) (Q18).",
+      "start": 287.86,
+      "end": 303.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": null,
+      "text": "One thing you can do to help yourself is to set manageable goals (Q19), be realistic and don’t push yourself too far.",
+      "start": 303.8,
+      "end": 313.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": null,
+      "text": "Some people advise writing goals down but I think it’s better to have a flexible approach.",
+      "start": 313.62,
+      "end": 320.3,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": null,
+      "text": "Give yourself a really nice treat every time you reach one of your goals (Q20) and don’t get too upset if you experience setbacks.",
+      "start": 320.3,
+      "end": 329.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": null,
+      "text": "It’s a journey.",
+      "start": 329.7,
+      "end": 331.38,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": null,
+      "text": "There are bound to be difficulties along the way.",
+      "start": 331.38,
+      "end": 381.44,
+      "preAudio": false
+    }
+  ]
+}
