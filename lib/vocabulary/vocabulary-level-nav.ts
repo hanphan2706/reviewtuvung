@@ -20,11 +20,15 @@ const LEVEL_BY_SLUG = Object.fromEntries(
 ) as Record<string, VocabularyUnitLevel>;
 
 const LEVEL_LABEL: Record<VocabularyUnitLevel, string> = {
-  A1: "A1 · Elementary",
-  A2: "A2 · Pre-Intermediate",
-  B2: "B2 · Upper-Intermediate",
-  C1: "C1 · Advanced",
+  A1: "A1 (Elementary)",
+  A2: "A2 (Pre-Intermediate)",
+  B2: "B2 (Upper-Intermediate)",
+  C1: "C1 (Advanced)",
 };
+
+export function vocabularyLevelLabel(level: VocabularyUnitLevel): string {
+  return LEVEL_LABEL[level];
+}
 
 function usedLevels(): VocabularyUnitLevel[] {
   const order: VocabularyUnitLevel[] = ["A1", "A2", "B2", "C1"];

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Noto_Serif } from "next/font/google";
+import { Geist_Mono, Noto_Sans, Noto_Serif } from "next/font/google";
 import { ExternalLinkNewTab } from "@/components/external-link-new-tab";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import "./globals.css";
@@ -19,6 +19,14 @@ const notoSerif = Noto_Serif({
   weight: ["400", "500", "600"],
 });
 
+/** Noto Sans covers IPA glyphs consistently (Geist Mono falls back unevenly). */
+const notoSans = Noto_Sans({
+  variable: "--font-noto-sans",
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
+  weight: ["400", "500"],
+});
+
 export const metadata: Metadata = {
   title: "Ân thích tự học | Tiếng Anh & IELTS",
   description:
@@ -33,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       lang="vi"
-      className={`${geistMono.variable} ${notoSerif.variable} h-full antialiased`}
+      className={`${geistMono.variable} ${notoSerif.variable} ${notoSans.variable} h-full antialiased`}
     >
       <body className="flex min-h-dvh flex-col bg-[#f5f5f7] font-sans">
         {children}

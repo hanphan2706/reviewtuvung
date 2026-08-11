@@ -9,6 +9,7 @@ import { SignedInTopBar } from "@/components/signed-in-top-bar";
 import { WordRichDisplay } from "@/components/word-rich-display";
 import { htmlToPlainTrim } from "@/lib/sanitize-word-html";
 import type { Rating, Word } from "@/lib/types";
+import { resolveWordIpa } from "@/lib/vocabulary/ipa/vocabulary-ipa-lookup";
 import { useSrsStore } from "@/store/srs-store";
 import { pickRandomPhraseEmoji } from "@/lib/phrase-emojis";
 
@@ -448,6 +449,8 @@ function ActiveLearningFlow({ queueIds, words, isTtTablet, allDecks, onFinish }:
     setAlSecondTry(true);
   };
 
+  const ipa = resolveWordIpa(htmlToPlainTrim(word.term) || word.term, word.ipa);
+
   /** Giống ChatGPT (light): chỉ khoảng trống + bo góc, không kẻ ngăn giữa các khối. */
   const chatSurface = "bg-[#f5f5f7]";
 
@@ -478,6 +481,9 @@ function ActiveLearningFlow({ queueIds, words, isTtTablet, allDecks, onFinish }:
             >
               <WordRichDisplay html={word.term} className="inline-block max-w-full" />
             </div>
+            {ipa ? (
+              <p className="mt-1 font-ipa text-sm leading-none text-ink-muted">{ipa}</p>
+            ) : null}
             <div className="mt-3 text-[15px] leading-relaxed text-[#142238]">
               <p className="font-medium text-ink">
                 <span className="select-none" aria-hidden>
@@ -564,6 +570,7 @@ function FlipCard({
 }) {
   const [flipped, setFlipped] = useState(false);
   const defText = htmlToPlainTrim(word.definition);
+  const ipa = resolveWordIpa(htmlToPlainTrim(word.term) || word.term, word.ipa);
 
   return (
     <div
@@ -583,12 +590,17 @@ function FlipCard({
           style={{ transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)" }}
         >
           <div
-            className={`absolute inset-0 flex items-center justify-center overflow-hidden border-zinc-200 bg-white [backface-visibility:hidden] ${tabletLayout ? "rounded-3xl border-[3px] p-8 shadow-lg" : "rounded-xl border-2 p-4 shadow-sm sm:p-5"}`}
+            className={`absolute inset-0 flex flex-col items-center justify-center gap-2 overflow-hidden border-zinc-200 bg-white [backface-visibility:hidden] ${tabletLayout ? "rounded-3xl border-[3px] p-8 shadow-lg" : "rounded-xl border-2 p-4 shadow-sm sm:p-5"}`}
           >
             <WordRichDisplay
               html={word.term}
               className={`inline-block max-w-full text-center leading-snug tracking-tight text-ink [&_b]:font-bold [&_strong]:font-bold ${tabletLayout ? "text-[2rem] sm:text-4xl" : "text-xl sm:text-2xl"}`}
             />
+            {ipa ? (
+              <span className="font-ipa text-center text-sm leading-none text-ink-muted sm:text-base">
+                {ipa}
+              </span>
+            ) : null}
           </div>
           <div
             className={`absolute inset-0 flex items-center justify-center overflow-hidden border-zinc-200 bg-zinc-50 [backface-visibility:hidden] ${tabletLayout ? "rounded-3xl border-[3px] p-8 shadow-lg" : "rounded-xl border-2 p-4 shadow-sm sm:p-5"}`}

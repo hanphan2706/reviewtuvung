@@ -1,4 +1,5 @@
 import type { VocabularyUnitCatalogEntry } from "@/lib/vocabulary/vocabulary-catalog-types";
+import { lookupVocabularyIpa } from "@/lib/vocabulary/ipa/vocabulary-ipa-lookup";
 import type {
   VocabularyExercise,
   VocabularyTheoryBlock,
@@ -37,6 +38,8 @@ export type WordInput = {
   definition: string;
   partOfSpeech?: string;
   example?: string;
+  /** Phiên âm IPA — nếu bỏ trống sẽ thử lookup tập trung. */
+  ipa?: string;
 };
 
 export function ex(en: string, vi: string): string {
@@ -77,13 +80,17 @@ function wordId(unitNumber: number, term: string): string {
 }
 
 function mapWords(unitNumber: number, words: WordInput[]): VocabularyWordPreset[] {
-  return words.map((w) => ({
-    id: wordId(unitNumber, w.term),
-    term: w.term,
-    definition: w.definition,
-    partOfSpeech: w.partOfSpeech ?? "NOUN",
-    example: w.example,
-  }));
+  return words.map((w) => {
+    const ipa = w.ipa?.trim() || lookupVocabularyIpa(w.term);
+    return {
+      id: wordId(unitNumber, w.term),
+      term: w.term,
+      definition: w.definition,
+      partOfSpeech: w.partOfSpeech ?? "NOUN",
+      example: w.example,
+      ...(ipa ? { ipa } : {}),
+    };
+  });
 }
 
 function buildTheory(collocationHtml: string, mistakeHtml: string, principles: PrincipleInput[]): VocabularyTheoryBlock[] {

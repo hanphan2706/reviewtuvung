@@ -17,6 +17,7 @@ type WordRow = {
   term: string;
   definition: string | null;
   accent_color?: string | null;
+  ipa?: string | null;
   created_at: string;
   next_review_at: string;
   last_reviewed_at: string | null;
@@ -34,6 +35,19 @@ const toIso = (ms: number) => new Date(ms).toISOString();
 const toMs = (iso: string) => new Date(iso).getTime();
 const defaultDailyReviewLimit = 15;
 
+const WORD_SELECT_WITH_IPA =
+  "id,user_id,deck_id,term,definition,accent_color,ipa,created_at,next_review_at,last_reviewed_at,last_rating,hard_priority";
+const WORD_SELECT_WITHOUT_IPA =
+  "id,user_id,deck_id,term,definition,accent_color,created_at,next_review_at,last_reviewed_at,last_rating,hard_priority";
+
+function isMissingIpaColumnError(error: unknown): boolean {
+  if (!error || typeof error !== "object") return false;
+  const message = [ (error as { message?: unknown }).message, (error as { details?: unknown }).details, (error as { hint?: unknown }).hint ]
+    .filter((part) => typeof part === "string")
+    .join(" ");
+  return /ipa/i.test(message) && /(column|schema|does not exist)/i.test(message);
+}
+
 function mapDeck(row: DeckRow): Deck {
   return {
     id: row.id,
@@ -44,12 +58,14 @@ function mapDeck(row: DeckRow): Deck {
 }
 
 function mapWord(row: WordRow): Word {
+  const ipa = row.ipa?.trim();
   return {
     id: row.id,
     userId: row.user_id,
     deckId: row.deck_id,
     term: row.term,
     definition: row.definition ?? "",
+    ...(ipa ? { ipa } : {}),
     createdAt: toMs(row.created_at),
     nextReviewAt: toMs(row.next_review_at),
     lastReviewedAt: row.last_reviewed_at ? toMs(row.last_reviewed_at) : null,
@@ -67,28 +83,48 @@ function mapSettings(row: SettingsRow | null): UserSettings {
 export function createSupabaseSrsRepository(supabase: SupabaseClient): SrsRepository {
   return {
     async fetchUserPayload(userId: UserId) {
-      const [decksResult, wordsResult, settingsResult] = await Promise.all([
-        supabase.from("srs_decks").select("id,user_id,name,created_at").eq("user_id", userId).order("created_at"),
-        supabase
+      const decksPromise = supabase
+        .from("srs_decks")
+        .select("id,user_id,name,created_at")
+        .eq("user_id", userId)
+        .order("created_at");
+      const settingsPromise = supabase
+        .from("srs_settings")
+        .select("user_id,daily_review_limit,review_day_tallies")
+        .eq("user_id", userId)
+        .maybeSingle();
+
+      let wordsData: WordRow[] | null = null;
+      let wordsError: { message?: string; details?: string; hint?: string } | null = null;
+
+      {
+        const withIpa = await supabase
           .from("srs_words")
-          .select(
-            "id,user_id,deck_id,term,definition,accent_color,created_at,next_review_at,last_reviewed_at,last_rating,hard_priority",
-          )
+          .select(WORD_SELECT_WITH_IPA)
           .eq("user_id", userId)
-          .order("created_at"),
-        supabase
-          .from("srs_settings")
-          .select("user_id,daily_review_limit,review_day_tallies")
-          .eq("user_id", userId)
-          .maybeSingle(),
-      ]);
+          .order("created_at");
+        if (withIpa.error && isMissingIpaColumnError(withIpa.error)) {
+          const withoutIpa = await supabase
+            .from("srs_words")
+            .select(WORD_SELECT_WITHOUT_IPA)
+            .eq("user_id", userId)
+            .order("created_at");
+          wordsData = (withoutIpa.data as WordRow[] | null) ?? null;
+          wordsError = withoutIpa.error;
+        } else {
+          wordsData = (withIpa.data as WordRow[] | null) ?? null;
+          wordsError = withIpa.error;
+        }
+      }
+
+      const [decksResult, settingsResult] = await Promise.all([decksPromise, settingsPromise]);
 
       if (decksResult.error) throw decksResult.error;
-      if (wordsResult.error) throw wordsResult.error;
+      if (wordsError) throw wordsError;
       if (settingsResult.error) throw settingsResult.error;
 
       const decks = (decksResult.data as DeckRow[] | null)?.map(mapDeck) ?? [];
-      const words = (wordsResult.data as WordRow[] | null)?.map(mapWord) ?? [];
+      const words = (wordsData ?? []).map(mapWord);
 
       if (decks.length === 0 && words.length === 0 && !settingsResult.data) {
         return null;
@@ -114,13 +150,14 @@ export function createSupabaseSrsRepository(supabase: SupabaseClient): SrsReposi
         created_at: toIso(deck.createdAt),
         updated_at: now,
       }));
-      const wordRows = payload.words.map((word) => ({
+      const wordRowsWithIpa = payload.words.map((word) => ({
         id: word.id,
         user_id: payload.userId,
         deck_id: word.deckId,
         term: word.term,
         definition: word.definition,
-        accent_color: null,
+        accent_color: null as string | null,
+        ipa: word.ipa?.trim() || null,
         created_at: toIso(word.createdAt),
         next_review_at: toIso(word.nextReviewAt),
         last_reviewed_at: word.lastReviewedAt ? toIso(word.lastReviewedAt) : null,
@@ -142,8 +179,12 @@ export function createSupabaseSrsRepository(supabase: SupabaseClient): SrsReposi
         if (result.error) throw result.error;
       }
 
-      if (wordRows.length > 0) {
-        const result = await supabase.from("srs_words").upsert(wordRows);
+      if (wordRowsWithIpa.length > 0) {
+        let result = await supabase.from("srs_words").upsert(wordRowsWithIpa);
+        if (result.error && isMissingIpaColumnError(result.error)) {
+          const wordRowsWithoutIpa = wordRowsWithIpa.map(({ ipa: _ipa, ...row }) => row);
+          result = await supabase.from("srs_words").upsert(wordRowsWithoutIpa);
+        }
         if (result.error) throw result.error;
       }
 

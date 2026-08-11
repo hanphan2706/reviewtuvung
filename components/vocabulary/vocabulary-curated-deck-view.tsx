@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { BookOpen, FolderPlus, Lightbulb, Link2, Play } from "lucide-react";
 import { studyHubSubpageContentClass } from "@/components/study-module/study-hub-shell";
@@ -14,7 +14,7 @@ import {
   importVocabularyUnit,
   normalizeVocabularyLemma,
 } from "@/lib/vocabulary/import-vocabulary-unit";
-import { buildUnitDeckName } from "@/lib/vocabulary/vocabulary-unit-registry";
+import { buildUnitDeckName, curatedUnitPracticeHref } from "@/lib/vocabulary/vocabulary-unit-registry";
 import type { VocabularyTheoryBlock, VocabularyUnit, VocabularyWordPreset } from "@/lib/vocabulary/vocabulary-unit-types";
 import { computeDeckLearnedPercent } from "@/lib/vocabulary/vocabulary-library-stats";
 import { useSrsStore } from "@/store/srs-store";
@@ -200,9 +200,8 @@ function UnitProgressCard({
 }
 
 export function VocabularyCuratedDeckView({ unit }: { unit: VocabularyUnit }) {
-  const router = useRouter();
   const pathname = usePathname();
-  const { runWithAuth } = useVocabularyAuth();
+  const { runWithAuth, navigateWithAuth } = useVocabularyAuth();
   const decks = useSrsStore((s) => s.decks);
   const words = useSrsStore((s) => s.words);
   const createDeck = useSrsStore((s) => s.createDeck);
@@ -266,11 +265,9 @@ export function VocabularyCuratedDeckView({ unit }: { unit: VocabularyUnit }) {
   }, [unit, decks, words, createDeck, addWordToDeck, pathname, runWithAuth]);
 
   const handleStartReview = useCallback(() => {
-    runWithAuth(pathname, () => {
-      const { deckId } = ensureUnitDeck(unit, { decks, createDeck });
-      router.push(`/deck/${deckId}/review?mode=flashcard`);
-    });
-  }, [unit, decks, createDeck, router, pathname, runWithAuth]);
+    // Ôn flashcard theo unit — không tạo deck / không ghi SRS.
+    navigateWithAuth(curatedUnitPracticeHref(unit.id));
+  }, [unit.id, navigateWithAuth]);
 
   const handleAddWord = useCallback(
     (preset: VocabularyWordPreset) => {
@@ -284,7 +281,7 @@ export function VocabularyCuratedDeckView({ unit }: { unit: VocabularyUnit }) {
         const definition = preset.example
           ? `${preset.definition}<br><b>${preset.example}</b>`
           : preset.definition;
-        addWordToDeck(deckId, preset.term, definition);
+        addWordToDeck(deckId, preset.term, definition, preset.ipa);
         setImportMessage(`Đã thêm «${preset.term}» vào deck.`);
       });
     },
@@ -300,8 +297,7 @@ export function VocabularyCuratedDeckView({ unit }: { unit: VocabularyUnit }) {
   return (
     <div className={studyHubSubpageContentClass}>
       <div className="max-w-3xl">
-        <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#47464b]">{unit.sourceBook}</p>
-        <h1 className="mt-2 font-serif text-3xl font-bold tracking-tight text-[#000001] md:text-4xl">{unit.title}</h1>
+        <h1 className="font-serif text-3xl font-bold tracking-tight text-[#000001] md:text-4xl">{unit.title}</h1>
       </div>
 
       <div className="mt-10 flex gap-6 border-b border-[#E4E4E7]">

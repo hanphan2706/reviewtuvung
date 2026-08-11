@@ -33,6 +33,8 @@ export interface Word {
   /** Rich text (HTML được phép: b, strong, span color, br). */
   term: string;
   definition: string;
+  /** Phiên âm IPA (tuỳ chọn), ví dụ `/ˈmʌðə/`. */
+  ipa?: string;
   createdAt: number;
   /** When the word should appear in the review queue (ms epoch). */
   nextReviewAt: number;

@@ -9,6 +9,7 @@ import { SignedInTopBar } from "@/components/signed-in-top-bar";
 import { WordRichDisplay } from "@/components/word-rich-display";
 import { htmlToPlainTrim } from "@/lib/sanitize-word-html";
 import { countDue } from "@/lib/srs";
+import { resolveWordIpa } from "@/lib/vocabulary/ipa/vocabulary-ipa-lookup";
 import { useSrsStore } from "@/store/srs-store";
 import { useNowTick } from "@/hooks/use-now-tick";
 import type { Word } from "@/lib/types";
@@ -153,6 +154,12 @@ export function DeckView({ deckId }: { deckId: string }) {
                         <div className="text-sm font-semibold leading-snug text-ink [&_span]:leading-snug">
                           <WordRichDisplay html={w.term} className="" as="div" />
                         </div>
+                        {(() => {
+                          const shownIpa = resolveWordIpa(htmlToPlainTrim(w.term) || w.term, w.ipa);
+                          return shownIpa ? (
+                            <p className="mt-0.5 font-ipa text-xs leading-none text-ink-muted">{shownIpa}</p>
+                          ) : null;
+                        })()}
                         {htmlToPlainTrim(w.definition) ? (
                           <div className="mt-1 text-xs leading-relaxed text-ink-muted [&_span]:leading-relaxed">
                             <WordRichDisplay html={w.definition} className="" as="div" />

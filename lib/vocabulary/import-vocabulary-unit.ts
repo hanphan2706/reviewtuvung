@@ -35,7 +35,7 @@ type ImportDeps = {
   decks: readonly { id: string; name: string }[];
   words: readonly Word[];
   createDeck: (name: string) => string;
-  addWordToDeck: (deckId: string, term: string, definition: string) => void;
+  addWordToDeck: (deckId: string, term: string, definition: string, ipa?: string) => void;
 };
 
 export function ensureUnitDeck(
@@ -89,7 +89,7 @@ export function importVocabularyUnit(
     const definition = preset.example
       ? `${preset.definition}<br><b>${preset.example}</b>`
       : preset.definition;
-    deps.addWordToDeck(deckId, preset.term, definition);
+    deps.addWordToDeck(deckId, preset.term, definition, preset.ipa);
     deckLemmaSet.add(lemma);
     added += 1;
   }

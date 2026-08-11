@@ -2,9 +2,19 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { createBrowserSupabaseClient } from "@/lib/supabase/client";
+import { htmlToPlainTrim } from "@/lib/sanitize-word-html";
 import { createSupabaseSrsRepository } from "@/lib/srs-supabase-repository";
 import { createStarterUserPayload } from "@/lib/srs-starter-payload";
+import { resolveWordIpa } from "@/lib/vocabulary/ipa/vocabulary-ipa-lookup";
 import { useSrsStore } from "@/store/srs-store";
+import type { Word } from "@/lib/types";
+
+function withResolvedIpa(word: Word, preferredIpa?: string): Word {
+  const ipa = resolveWordIpa(htmlToPlainTrim(word.term) || word.term, preferredIpa ?? word.ipa);
+  if (!ipa) return word;
+  if (word.ipa?.trim() === ipa) return word;
+  return { ...word, ipa };
+}
 
 function formatSupabaseLikeError(error: unknown): string {
   if (error && typeof error === "object") {
@@ -46,7 +56,29 @@ export function SrsSyncProvider({ userId, children }: { userId: string; children
         const remotePayload = await repository.fetchUserPayload(userId);
         if (cancelled) return;
 
-        useSrsStore.getState().replacePayload(remotePayload ?? createStarterUserPayload(userId));
+        const local = useSrsStore.getState();
+        const remote = remotePayload ?? createStarterUserPayload(userId);
+
+        // Giữ thẻ vừa thêm local trong lúc fetch remote (tránh mất IPA / mất từ mới).
+        const remoteWordIds = new Set(remote.words.map((word) => word.id));
+        const remoteDeckIds = new Set(remote.decks.map((deck) => deck.id));
+        const localOnlyWords = local.words.filter((word) => !remoteWordIds.has(word.id));
+        const localOnlyDecks = local.decks.filter((deck) => !remoteDeckIds.has(deck.id));
+        const localIpaById = new Map(
+          local.words.filter((word) => word.ipa?.trim()).map((word) => [word.id, word.ipa!.trim()]),
+        );
+
+        // Remote thường thiếu `ipa` (cột chưa migrate / upsert cũ) — giữ IPA local + backfill lookup.
+        const mergedWords = [
+          ...remote.words.map((word) => withResolvedIpa(word, localIpaById.get(word.id))),
+          ...localOnlyWords.map((word) => withResolvedIpa(word)),
+        ];
+
+        useSrsStore.getState().replacePayload({
+          ...remote,
+          decks: [...remote.decks, ...localOnlyDecks],
+          words: mergedWords,
+        });
 
         unsubscribe = useSrsStore.subscribe((state) => {
           clearSaveTimer();

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { ChevronDown, Plus, Search, Volume2 } from "lucide-react";
+import { speakEnglish } from "@/lib/reading/speak-english";
 import { htmlToPlainTrim } from "@/lib/sanitize-word-html";
 import type { VocabularyWordPreset } from "@/lib/vocabulary/vocabulary-unit-types";
 
@@ -47,25 +48,30 @@ export function VocabularyUnitWordList({ words, onAddWord, addedLemmaSet }: Voca
 
       <ul className="divide-y divide-[#E4E4E7] border-y border-[#E4E4E7]">
         {visible.map((word) => {
-          const lemma = htmlToPlainTrim(word.term).toLowerCase();
+          const term = htmlToPlainTrim(word.term);
+          const lemma = term.toLowerCase();
           const added = addedLemmaSet.has(lemma);
 
           return (
             <li key={word.id} className="grid grid-cols-[minmax(0,1.2fr)_auto_minmax(0,1fr)_auto] items-center gap-3 py-4 sm:gap-5">
               <div className="min-w-0">
-                <p className="font-serif text-lg font-bold text-[#000001] sm:text-xl">{htmlToPlainTrim(word.term)}</p>
-                {word.ipa ? (
-                  <p className="mt-0.5 flex items-center gap-1.5 text-[#47464b]/70">
-                    <span className="font-mono text-xs">{word.ipa}</span>
-                    <button
-                      type="button"
-                      className="inline-flex rounded p-0.5 text-[#47464b]/50 hover:text-[#4b2876]"
-                      aria-label={`Phát âm ${word.term}`}
-                    >
-                      <Volume2 className="size-3.5" strokeWidth={1.75} />
-                    </button>
-                  </p>
-                ) : null}
+                <p className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                  <span className="font-serif text-lg font-bold text-[#000001] sm:text-xl">{term}</span>
+                  {word.ipa ? (
+                    <span className="inline-flex items-center gap-1 font-ipa text-[13px] leading-none tracking-normal text-[#47464b]/70 sm:text-sm">
+                      {word.ipa}
+                      <button
+                        type="button"
+                        onClick={() => speakEnglish(term)}
+                        className="inline-flex rounded p-0.5 text-[#47464b]/50 transition hover:bg-[#f3f0f8] hover:text-[#4b2876]"
+                        title="Nghe phát âm"
+                        aria-label={`Nghe phát âm ${term}`}
+                      >
+                        <Volume2 className="size-3.5" strokeWidth={1.75} />
+                      </button>
+                    </span>
+                  ) : null}
+                </p>
               </div>
 
               {word.partOfSpeech ? (
@@ -85,7 +91,7 @@ export function VocabularyUnitWordList({ words, onAddWord, addedLemmaSet }: Voca
                 disabled={added}
                 onClick={() => onAddWord(word)}
                 className="inline-flex size-8 shrink-0 items-center justify-center rounded-full border border-[#E4E4E7] bg-white text-[#47464b] transition hover:border-[#4b2876]/30 hover:text-[#4b2876] disabled:cursor-default disabled:opacity-35"
-                aria-label={added ? "Đã có trong deck" : `Thêm ${word.term}`}
+                aria-label={added ? "Đã có trong deck" : `Thêm ${term}`}
               >
                 <Plus className="size-3.5" strokeWidth={1.75} />
               </button>

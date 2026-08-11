@@ -9,11 +9,13 @@ export const STUDY_FLASHCARD_SHELL_EDGE_Y =
 
 type StudyFlipCardProps = {
   front: string;
+  /** Phiên âm IPA (tuỳ chọn), hiện dưới mặt trước. */
+  frontSub?: string;
   back: string;
   disabled?: boolean;
 };
 
-export function StudyFlipCard({ front, back, disabled = false }: StudyFlipCardProps) {
+export function StudyFlipCard({ front, frontSub, back, disabled = false }: StudyFlipCardProps) {
   const [flipped, setFlipped] = useState(false);
 
   return (
@@ -33,16 +35,21 @@ export function StudyFlipCard({ front, back, disabled = false }: StudyFlipCardPr
           className="relative h-full w-full transition-transform duration-500 [transform-style:preserve-3d]"
           style={{ transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)" }}
         >
-          <div className="absolute inset-0 flex items-center justify-center overflow-hidden rounded-xl border-2 border-zinc-200 bg-white p-4 shadow-sm [backface-visibility:hidden] sm:p-5">
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 overflow-hidden rounded-xl border-2 border-zinc-200 bg-white p-4 shadow-sm [backface-visibility:hidden] sm:p-5">
             <span className="inline-block max-w-full text-center text-xl font-semibold leading-snug tracking-tight text-ink sm:text-2xl">
               {front}
             </span>
+            {frontSub ? (
+              <span className="font-ipa text-center text-sm leading-none text-ink-muted sm:text-base">
+                {frontSub}
+              </span>
+            ) : null}
           </div>
           <div
             className="absolute inset-0 flex items-center justify-center overflow-hidden rounded-xl border-2 border-zinc-200 bg-zinc-50 p-4 shadow-sm [backface-visibility:hidden] sm:p-5"
             style={{ transform: "rotateY(180deg)" }}
           >
-            <span className="inline-block max-w-full text-center text-base font-medium leading-snug text-ink/90 sm:text-lg">
+            <span className="inline-block max-w-full whitespace-pre-line text-center text-base font-medium leading-snug text-ink/90 sm:text-lg">
               {back}
             </span>
           </div>

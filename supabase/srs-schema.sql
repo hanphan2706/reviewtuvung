@@ -41,6 +41,10 @@ alter table public.srs_words
     or accent_color in ('gray', 'brown', 'orange', 'yellow', 'blue')
   );
 
+-- Phiên âm IPA (tuỳ chọn) — đồng bộ với `add-ipa-column.sql`.
+alter table public.srs_words
+  add column if not exists ipa text;
+
 alter table public.srs_decks enable row level security;
 alter table public.srs_words enable row level security;
 alter table public.srs_settings enable row level security;

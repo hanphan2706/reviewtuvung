@@ -22,6 +22,7 @@ import {
   curatedUnitHref,
   listPublishedCatalog,
 } from "@/lib/vocabulary/vocabulary-unit-registry";
+import { vocabularyLevelLabel } from "@/lib/vocabulary/vocabulary-level-nav";
 import { useVocabularyAuth } from "@/components/vocabulary/vocabulary-auth-context";
 import { useMemo } from "react";
 
@@ -36,7 +37,7 @@ function CatalogUnitCard({ entry }: { entry: VocabularyUnitCatalogEntry }) {
       className="flex min-h-[148px] flex-col rounded-2xl border border-[#E4E4E7] bg-white p-5 text-left shadow-sm transition hover:border-[#4b2876]/25 hover:shadow-md"
     >
       <span className="text-[10px] font-bold uppercase tracking-[0.12em] text-[#47464b]/60">
-        {entry.level}
+        {vocabularyLevelLabel(entry.level)}
       </span>
       <h3 className="mt-2 font-serif text-lg font-bold text-[#000001]">{entry.title}</h3>
       <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-[#47464b]">{entry.description}</p>

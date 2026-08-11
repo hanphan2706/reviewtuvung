@@ -47,7 +47,7 @@ function IpaSpeakerButton({
       >
         <Volume2 className="size-3.5" aria-hidden />
       </button>
-      <span className="min-w-0 whitespace-nowrap font-serif text-xs leading-tight text-[#47464b]">
+      <span className="min-w-0 whitespace-nowrap font-ipa text-xs leading-none text-[#47464b]">
         {ipa}
       </span>
     </div>

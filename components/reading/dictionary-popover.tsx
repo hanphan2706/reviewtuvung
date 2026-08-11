@@ -57,7 +57,7 @@ function PronunciationButton({ label, data }: { label: string; data: LookupPronu
           <Volume2 className="size-4" aria-hidden />
         </button>
       ) : null}
-      {data.ipa ? <span className="font-mono text-xs text-[#47464b]">{data.ipa}</span> : null}
+      {data.ipa ? <span className="font-ipa text-xs leading-none text-[#47464b]">{data.ipa}</span> : null}
     </Root>
   );
 }

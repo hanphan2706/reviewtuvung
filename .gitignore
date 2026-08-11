@@ -85,6 +85,7 @@ data/dictionary/en-vi-stardict.json
 /listening materials/sync/*.whisper-words.json
 .venv-listening/
 /scripts/.cache/
+/lib/vocabulary/ipa/.ipa-fetch-cache.json
 
 # Audio nghe — deploy qua Supabase / API, không commit file gốc
 /public/listening-assets/**/*.mp3

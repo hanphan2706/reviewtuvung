@@ -5,6 +5,7 @@ import { persist, createJSONStorage } from "zustand/middleware";
 import { bumpReviewDayTally, pruneReviewDayTallies } from "@/lib/review-day-stats";
 import { scheduleAfterRating, sortDueForSession, takeSessionQueue } from "@/lib/srs";
 import { htmlToPlainTrim } from "@/lib/sanitize-word-html";
+import { resolveWordIpa } from "@/lib/vocabulary/ipa/vocabulary-ipa-lookup";
 import type { Deck, Rating, ReviewDayTalliesMap, UserId, UserSettings, UserSrsPayload, Word } from "@/lib/types";
 
 const DEFAULT_USER_ID = "local-user";
@@ -13,13 +14,22 @@ const defaultSettings: UserSettings = {
   dailyReviewLimit: 15,
 };
 
-function newWord(userId: UserId, deckId: string, term: string, definition: string, now: number): Word {
+function newWord(
+  userId: UserId,
+  deckId: string,
+  term: string,
+  definition: string,
+  now: number,
+  ipa?: string,
+): Word {
+  const trimmedIpa = ipa?.trim();
   return {
     id: crypto.randomUUID(),
     userId,
     deckId,
     term: term.trim(),
     definition: definition.trim(),
+    ...(trimmedIpa ? { ipa: trimmedIpa } : {}),
     createdAt: now,
     nextReviewAt: now,
     lastReviewedAt: null,
@@ -63,9 +73,9 @@ interface SrsState {
   openDeck: (deckId: string) => void;
   closeDeck: () => void;
   deleteDeck: (deckId: string) => void;
-  addWord: (term: string, definition: string) => void;
+  addWord: (term: string, definition: string, ipa?: string) => void;
   /** Thêm từ vào deck cụ thể (không cần `openDeck`). */
-  addWordToDeck: (deckId: string, term: string, definition: string) => void;
+  addWordToDeck: (deckId: string, term: string, definition: string, ipa?: string) => void;
   updateWord: (id: string, term: string, definition: string) => void;
   removeWord: (id: string) => void;
   startOrRefreshSession: (opts?: { allDecks?: boolean }) => void;
@@ -166,21 +176,22 @@ export const useSrsStore = create<SrsState>()(
         });
       },
 
-      addWord: (term, definition) => {
+      addWord: (term, definition, ipa) => {
         const { viewingDeckId } = get();
         if (!viewingDeckId) return;
-        get().addWordToDeck(viewingDeckId, term, definition);
+        get().addWordToDeck(viewingDeckId, term, definition, ipa);
       },
 
-      addWordToDeck: (deckId, term, definition) => {
+      addWordToDeck: (deckId, term, definition, ipa) => {
         if (!htmlToPlainTrim(term)) return;
         const { userId, decks } = get();
         if (!decks.some((d) => d.id === deckId)) return;
         const now = Date.now();
         const t = term.trim();
         const def = definition.trim();
+        const resolvedIpa = resolveWordIpa(htmlToPlainTrim(t) || t, ipa);
         set((s) => ({
-          words: [...s.words, newWord(userId, deckId, t, def, now)],
+          words: [...s.words, newWord(userId, deckId, t, def, now, resolvedIpa)],
         }));
       },
 

@@ -24,19 +24,23 @@ export function VocabularyHubShell({
 }: VocabularyHubShellProps) {
   const loggedIn = useStudyHubLoggedIn(isLoggedIn);
   const pathname = usePathname();
+  /** Phiên flashcard unit — fullscreen, không thanh hub (tránh double header / layout vỡ). */
+  const practiceSession = pathname.includes("/on-tap");
 
   return (
-    <div className={studyHubPageBgClass}>
+    <div className={practiceSession ? "h-dvh overflow-hidden bg-[#f5f5f7]" : studyHubPageBgClass}>
       <Suspense fallback={<div className="min-h-dvh" />}>
         <VocabularyAuthProvider isLoggedIn={isLoggedIn} supabaseConfigured={supabaseConfigured}>
-          <StudyHubHeader
-            title="Từ vựng"
-            showVocabularyNav
-            isLoggedIn={loggedIn}
-            userProfile={userProfile}
-            supabaseConfigured={supabaseConfigured}
-            signInNext={pathname}
-          />
+          {practiceSession ? null : (
+            <StudyHubHeader
+              title="Từ vựng"
+              showVocabularyNav
+              isLoggedIn={loggedIn}
+              userProfile={userProfile}
+              supabaseConfigured={supabaseConfigured}
+              signInNext={pathname}
+            />
+          )}
           {children}
         </VocabularyAuthProvider>
       </Suspense>

@@ -36,6 +36,7 @@ import {
   getEviuAdvancedUnit,
   listEviuAdvancedUnits,
 } from "@/lib/vocabulary/units/eviu-advanced-all-units";
+import { enrichVocabularyUnitIpa } from "@/lib/vocabulary/ipa/enrich-vocabulary-unit-ipa";
 
 export type CuratedVocabularySeries = {
   id: string;
@@ -101,12 +102,12 @@ export const CURATED_VOCABULARY_SERIES: readonly CuratedVocabularySeries[] = [
 ];
 
 export function getVocabularyUnit(unitId: string): VocabularyUnit | null {
-  return (
+  const unit =
     getEviuElementaryUnit(unitId) ??
     getEviuPreIntermediateUnit(unitId) ??
     getEviuUpperIntermediateUnit(unitId) ??
-    getEviuAdvancedUnit(unitId)
-  );
+    getEviuAdvancedUnit(unitId);
+  return unit ? enrichVocabularyUnitIpa(unit) : null;
 }
 
 export function listCuratedVocabularyUnits(): VocabularyUnit[] {
@@ -115,7 +116,7 @@ export function listCuratedVocabularyUnits(): VocabularyUnit[] {
     ...listEviuPreIntermediateUnits(),
     ...listEviuUpperIntermediateUnits(),
     ...listEviuAdvancedUnits(),
-  ];
+  ].map(enrichVocabularyUnitIpa);
 }
 
 export function buildUnitDeckName(unit: VocabularyUnit): string {
@@ -124,6 +125,11 @@ export function buildUnitDeckName(unit: VocabularyUnit): string {
 
 export function curatedUnitHref(unitId: string): string {
   return `/tu-hoc/tu-vung/goi-y/${unitId}`;
+}
+
+/** Ôn flashcard theo unit — không tạo / ghi SRS deck. */
+export function curatedUnitPracticeHref(unitId: string): string {
+  return `${curatedUnitHref(unitId)}/on-tap`;
 }
 
 function withPublishedStatus(

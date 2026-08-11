@@ -29,6 +29,8 @@
   --font-sans: var(--font-sans-stack);
   --font-serif: var(--font-noto-serif), Georgia, serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  /** IPA / phonetic — Noto Sans has matching metrics for ɛ θ ɪ ə ʌ (mono does not). */
+  --font-ipa: var(--font-noto-sans), "Noto Sans", "Segoe UI", system-ui, sans-serif;
 }
 
 /* Helvetica system stack; mặc định `body` dùng `ink` pha sáng (foreground). */
