@@ -110,7 +110,7 @@ function buildTheory(collocationHtml: string, mistakeHtml: string, principles: P
 export function buildEviuUnit(
   catalog: VocabularyUnitCatalogEntry,
   content: UnitContentInput,
-  options?: { series?: "elementary" | "pre-intermediate" | "upper-intermediate" },
+  options?: { series?: "elementary" | "pre-intermediate" | "upper-intermediate" | "advanced" },
 ): VocabularyUnit {
   if (content.exercises.length > MAX_VOCABULARY_UNIT_EXERCISES) {
     throw new Error(
@@ -120,11 +120,13 @@ export function buildEviuUnit(
 
   const series = options?.series ?? "elementary";
   const seriesLabel =
-    series === "upper-intermediate"
-      ? "English Vocabulary in Use · Upper-Intermediate (4th ed.)"
-      : series === "pre-intermediate"
-        ? "English Vocabulary in Use · Pre-Intermediate (4th ed.)"
-        : "English Vocabulary in Use · Elementary (3rd ed.)";
+    series === "advanced"
+      ? "English Vocabulary in Use · Advanced (3rd ed.)"
+      : series === "upper-intermediate"
+        ? "English Vocabulary in Use · Upper-Intermediate (4th ed.)"
+        : series === "pre-intermediate"
+          ? "English Vocabulary in Use · Pre-Intermediate (4th ed.)"
+          : "English Vocabulary in Use · Elementary (3rd ed.)";
 
   return {
     id: catalog.id,

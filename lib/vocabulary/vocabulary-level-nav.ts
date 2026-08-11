@@ -12,6 +12,7 @@ const LEVEL_SLUG: Record<VocabularyUnitLevel, string> = {
   A1: "a1",
   A2: "a2",
   B2: "b2",
+  C1: "c1",
 };
 
 const LEVEL_BY_SLUG = Object.fromEntries(
@@ -22,10 +23,11 @@ const LEVEL_LABEL: Record<VocabularyUnitLevel, string> = {
   A1: "A1 · Elementary",
   A2: "A2 · Pre-Intermediate",
   B2: "B2 · Upper-Intermediate",
+  C1: "C1 · Advanced",
 };
 
 function usedLevels(): VocabularyUnitLevel[] {
-  const order: VocabularyUnitLevel[] = ["A1", "A2", "B2"];
+  const order: VocabularyUnitLevel[] = ["A1", "A2", "B2", "C1"];
   const set = new Set(listPublishedCatalog().map((entry) => entry.level));
   return order.filter((level) => set.has(level));
 }

@@ -1,4 +1,4 @@
-export type VocabularyUnitLevel = "A1" | "A2" | "B2";
+export type VocabularyUnitLevel = "A1" | "A2" | "B2" | "C1";
 
 export type VocabularyUnitCatalogEntry = {
   id: string;

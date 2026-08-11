@@ -12,6 +12,10 @@ import {
   EVIU_UPPER_INTERMEDIATE_SECTION_LABELS,
   type EVIUUpperIntermediateSection,
 } from "@/lib/vocabulary/eviu-upper-intermediate-catalog";
+import {
+  EVIU_ADVANCED_SECTION_LABELS,
+  type EVIUAdvancedSection,
+} from "@/lib/vocabulary/eviu-advanced-catalog";
 import type { VocabularyUnitCatalogEntry, VocabularyUnitLevel } from "@/lib/vocabulary/vocabulary-catalog-types";
 import {
   CURATED_VOCABULARY_SERIES,
@@ -85,6 +89,23 @@ const UPPER_INTERMEDIATE_SECTION_ORDER: EVIUUpperIntermediateSection[] = [
   "style",
 ];
 
+const ADVANCED_SECTION_ORDER: EVIUAdvancedSection[] = [
+  "work-study",
+  "people",
+  "leisure",
+  "travel",
+  "environment",
+  "society",
+  "media",
+  "health",
+  "technology",
+  "concepts",
+  "functional",
+  "words-meanings",
+  "fixed",
+  "variation",
+];
+
 type SeriesGridConfig = {
   seriesId: string;
   level: VocabularyUnitLevel;
@@ -110,6 +131,12 @@ const SERIES_GRID_CONFIG: Record<string, SeriesGridConfig> = {
     level: "B2",
     sectionOrder: UPPER_INTERMEDIATE_SECTION_ORDER,
     sectionLabels: EVIU_UPPER_INTERMEDIATE_SECTION_LABELS,
+  },
+  "eviu-advanced": {
+    seriesId: "eviu-advanced",
+    level: "C1",
+    sectionOrder: ADVANCED_SECTION_ORDER,
+    sectionLabels: EVIU_ADVANCED_SECTION_LABELS,
   },
 };
 
@@ -166,7 +193,7 @@ export function VocabularyCuratedCatalogGrid({ level }: { level?: VocabularyUnit
       ? Object.values(SERIES_GRID_CONFIG)
           .filter((config) => config.level === level)
           .map((config) => config.seriesId)
-      : ["eviu-elementary", "eviu-pre-intermediate", "eviu-upper-intermediate"];
+      : ["eviu-elementary", "eviu-pre-intermediate", "eviu-upper-intermediate", "eviu-advanced"];
 
     return seriesIds.flatMap((seriesId) => {
       const config = SERIES_GRID_CONFIG[seriesId];

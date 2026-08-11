@@ -16,6 +16,11 @@ import {
   listEVIUUpperIntermediateCatalog,
 } from "@/lib/vocabulary/eviu-upper-intermediate-catalog";
 import {
+  EVIU_ADVANCED_CATALOG,
+  getEVIUAdvancedCatalogEntry,
+  listEVIUAdvancedCatalog,
+} from "@/lib/vocabulary/eviu-advanced-catalog";
+import {
   getEviuElementaryUnit,
   listEviuElementaryUnits,
 } from "@/lib/vocabulary/units/eviu-elementary-all-units";
@@ -27,6 +32,10 @@ import {
   getEviuUpperIntermediateUnit,
   listEviuUpperIntermediateUnits,
 } from "@/lib/vocabulary/units/eviu-upper-intermediate-all-units";
+import {
+  getEviuAdvancedUnit,
+  listEviuAdvancedUnits,
+} from "@/lib/vocabulary/units/eviu-advanced-all-units";
 
 export type CuratedVocabularySeries = {
   id: string;
@@ -82,13 +91,21 @@ export const CURATED_VOCABULARY_SERIES: readonly CuratedVocabularySeries[] = [
       "101 unit trình độ B2 — lý thuyết, bài tập và thẻ SRS theo EVIU Upper-Intermediate (4th ed.); đang mở dần theo chủ đề.",
     unitIds: EVIU_UPPER_INTERMEDIATE_CATALOG.map((entry) => entry.id),
   },
+  {
+    id: "eviu-advanced",
+    title: "English Vocabulary in Use · Advanced",
+    description:
+      "101 unit trình độ C1–C2 — lý thuyết, bài tập và thẻ SRS theo EVIU Advanced (3rd ed.); đang mở dần theo chủ đề.",
+    unitIds: EVIU_ADVANCED_CATALOG.map((entry) => entry.id),
+  },
 ];
 
 export function getVocabularyUnit(unitId: string): VocabularyUnit | null {
   return (
     getEviuElementaryUnit(unitId) ??
     getEviuPreIntermediateUnit(unitId) ??
-    getEviuUpperIntermediateUnit(unitId)
+    getEviuUpperIntermediateUnit(unitId) ??
+    getEviuAdvancedUnit(unitId)
   );
 }
 
@@ -97,6 +114,7 @@ export function listCuratedVocabularyUnits(): VocabularyUnit[] {
     ...listEviuElementaryUnits(),
     ...listEviuPreIntermediateUnits(),
     ...listEviuUpperIntermediateUnits(),
+    ...listEviuAdvancedUnits(),
   ];
 }
 
@@ -119,7 +137,8 @@ export function getVocabularyCatalogEntry(unitId: string): VocabularyUnitCatalog
   return (
     getElementaryCatalogEntry(unitId) ??
     getEVIUPreIntermediateCatalogEntry(unitId) ??
-    getEVIUUpperIntermediateCatalogEntry(unitId)
+    getEVIUUpperIntermediateCatalogEntry(unitId) ??
+    getEVIUAdvancedCatalogEntry(unitId)
   );
 }
 
@@ -139,11 +158,15 @@ export function listPublishedCatalog(): readonly VocabularyUnitCatalogEntry[] {
   const upperIntermediate = listEVIUUpperIntermediateCatalog()
     .map((entry) => withPublishedStatus(entry, Boolean(getEviuUpperIntermediateUnit(entry.id))))
     .filter((entry) => entry.status === "published");
-  return [...elementary, ...preIntermediate, ...upperIntermediate];
+  const advanced = listEVIUAdvancedCatalog()
+    .map((entry) => withPublishedStatus(entry, Boolean(getEviuAdvancedUnit(entry.id))))
+    .filter((entry) => entry.status === "published");
+  return [...elementary, ...preIntermediate, ...upperIntermediate, ...advanced];
 }
 
 export {
   listEVIUElementaryCatalog,
   listEVIUPreIntermediateCatalog,
   listEVIUUpperIntermediateCatalog,
+  listEVIUAdvancedCatalog,
 };
