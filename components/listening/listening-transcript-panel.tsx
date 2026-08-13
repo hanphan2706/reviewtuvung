@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
-import { WordRichDisplay } from "@/components/word-rich-display";
+import { useEffect, useRef, useState } from "react";
+import { ListeningPlainTranscriptBody } from "@/components/listening/listening-plain-transcript-body";
 import { ListeningSyncedTranscriptBody } from "@/components/listening/listening-synced-transcript-body";
 import { useListeningCopyFriction } from "@/hooks/use-listening-copy-friction";
 import type { ListeningPartMeta } from "@/lib/listening/content-manifest";
@@ -10,7 +10,6 @@ import {
   fetchListeningTranscriptText,
   listeningTranscriptUsesPartSplit,
 } from "@/lib/listening/listening-transcript-client";
-import { listeningTranscriptPlainToSafeHtml } from "@/lib/listening/transcript-to-display-html";
 
 async function fetchTranscriptPart(
   tryFiles: readonly string[],
@@ -104,7 +103,6 @@ export function ListeningTranscriptPanel({
     };
   }, [part, partId, transcriptTryFiles, usesPartSplit, onSyncStatusChange]);
 
-  const html = useMemo(() => (text ? listeningTranscriptPlainToSafeHtml(text) : ""), [text]);
   const hasSync = sync !== null && sync.cues.length > 0;
   const scrollMaxClass =
     variant === "flow"
@@ -146,13 +144,7 @@ export function ListeningTranscriptPanel({
             onCueSeek={onCueSeek}
           />
         ) : null}
-        {!loading && !hasSync && html ? (
-          <WordRichDisplay
-            html={html}
-            as="div"
-            className="word-rich-html text-sm leading-relaxed text-[#47464b] **:text-inherit [&_b]:font-bold [&_strong]:font-bold [&_span]:text-inherit"
-          />
-        ) : null}
+        {!loading && !hasSync && text ? <ListeningPlainTranscriptBody text={text} /> : null}
       </div>
       {hasSync ? (
         <>

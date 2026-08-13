@@ -1,4 +1,3 @@
-import { sanitizeWordHtml } from "@/lib/sanitize-word-html";
 import { splitTranscriptSpeakerLine } from "@/lib/listening/parse-transcript-speaker";
 
 function escapeHtml(s: string): string {
@@ -11,6 +10,13 @@ function escapeHtml(s: string): string {
 
 const PART_LINE = /^PART\s+\d+\s*$/i;
 const RULE_LINE = /^[—\-_\s]{4,}$/;
+const P_STYLE = "margin:0 0 0.45em";
+
+export type ListeningTranscriptDisplayBlock =
+  | { type: "part"; text: string }
+  | { type: "rule" }
+  | { type: "speaker"; speaker: string; body: string }
+  | { type: "line"; text: string };
 
 /** Wrap `Q12` / `Q21/22` for exam review jump targets (plain transcript fallback). */
 function qMarkers(htmlEscapedLine: string): string {
@@ -25,36 +31,49 @@ function qMarkers(htmlEscapedLine: string): string {
   });
 }
 
-/**
- * Plaintext transcript (đã sanitize) → HTML an toàn: PART tiêu đề, tên người nói màu tím, Qn nổi bật.
- */
-export function listeningTranscriptPlainToSafeHtml(plain: string): string {
-  const lines = plain.split(/\r?\n/);
-  const chunks: string[] = [];
+/** Tách transcript thành dòng/lượt nói — mỗi block render một `<p>` (F12 không còn 1 cục). */
+export function parseListeningTranscriptDisplayBlocks(plain: string): ListeningTranscriptDisplayBlock[] {
+  const blocks: ListeningTranscriptDisplayBlock[] = [];
 
-  for (const raw of lines) {
+  for (const raw of plain.split(/\r?\n/)) {
     const t = raw.trim();
-    if (t.length === 0) {
-      chunks.push("<br>");
-      continue;
-    }
+    if (t.length === 0) continue;
     if (PART_LINE.test(t)) {
-      chunks.push(`<br><br><span style="font-weight:700;color:rgb(75,40,118)">${escapeHtml(t)}</span>`);
+      blocks.push({ type: "part", text: t });
       continue;
     }
     if (RULE_LINE.test(t)) {
-      chunks.push('<br><span style="color: #a1a1aa">——————————————</span><br>');
+      blocks.push({ type: "rule" });
       continue;
     }
     const split = splitTranscriptSpeakerLine(raw.trimEnd());
     if (split.speaker) {
-      chunks.push(
-        `<br><span style="color:rgb(75,40,118);font-weight:600">${escapeHtml(split.speaker)}:</span> ${qMarkers(escapeHtml(split.body))}<br>`,
-      );
+      blocks.push({ type: "speaker", speaker: split.speaker, body: split.body });
       continue;
     }
-    chunks.push(`<br>${qMarkers(escapeHtml(raw.trimEnd()))}<br>`);
+    blocks.push({ type: "line", text: raw.trimEnd() });
   }
 
-  return sanitizeWordHtml(chunks.join(""));
+  return blocks;
+}
+
+function blockToSafeHtml(block: ListeningTranscriptDisplayBlock): string {
+  if (block.type === "part") {
+    return `<p style="${P_STYLE};font-weight:700;color:rgb(75,40,118)">${escapeHtml(block.text)}</p>`;
+  }
+  if (block.type === "rule") {
+    return `<p style="${P_STYLE};color:#a1a1aa">——————————————</p>`;
+  }
+  if (block.type === "speaker") {
+    return `<p style="${P_STYLE}"><span style="color:rgb(75,40,118);font-weight:600">${escapeHtml(block.speaker)}:</span> ${qMarkers(escapeHtml(block.body))}</p>`;
+  }
+  return `<p style="${P_STYLE}">${qMarkers(escapeHtml(block.text))}</p>`;
+}
+
+/**
+ * Plaintext transcript → HTML an toàn: mỗi lượt nói / dòng là một `<p>`.
+ * Không chạy sanitizeWordHtml (allowlist bỏ `<p>` / `data-q`).
+ */
+export function listeningTranscriptPlainToSafeHtml(plain: string): string {
+  return parseListeningTranscriptDisplayBlocks(plain).map(blockToSafeHtml).join("");
 }

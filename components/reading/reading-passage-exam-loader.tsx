@@ -25,12 +25,15 @@ export function ReadingPassageExamLoader({
 
   useEffect(() => {
     let cancelled = false;
-    void fetch(`/api/reading/raw?id=${encodeURIComponent(pilotId)}`, { credentials: "include" })
+    void fetch(
+      `/api/reading/raw?id=${encodeURIComponent(pilotId)}&passage=${passageNumber}`,
+      { credentials: "include" },
+    )
       .then((r) => r.json())
       .then((data: { passages?: ReadingPassageBlock[]; missing?: boolean }) => {
         if (cancelled) return;
         setLoading(false);
-        const hit = data.passages?.find((p) => p.passage === passageNumber);
+        const hit = data.passages?.find((p) => p.passage === passageNumber) ?? data.passages?.[0] ?? null;
         setPassage(hit ?? null);
       })
       .catch(() => {

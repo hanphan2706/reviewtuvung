@@ -2,10 +2,10 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ProtectedAudio } from "@/components/media/protected-audio";
+import { ListeningPlainTranscriptBody } from "@/components/listening/listening-plain-transcript-body";
 import { WordRichDisplay } from "@/components/word-rich-display";
 import { useListeningCopyFriction } from "@/hooks/use-listening-copy-friction";
 import { LISTENING_PARTS_PILOT, getListeningPartOrDefault, getListeningTestContext } from "@/lib/listening/content-manifest";
-import { listeningTranscriptPlainToSafeHtml } from "@/lib/listening/transcript-to-display-html";
 
 type Step = "predict" | "listen" | "afterListen" | "reflection" | "transcript" | "selfAssess";
 
@@ -90,12 +90,7 @@ export function ListeningPilotSession() {
   const [selfChoice, setSelfChoice] = useState<string | null>(null);
   const transcriptRef = useRef<HTMLDivElement>(null);
 
-  const transcriptHtml = useMemo(
-    () => (transcriptText ? listeningTranscriptPlainToSafeHtml(transcriptText) : ""),
-    [transcriptText],
-  );
-
-  useListeningCopyFriction(transcriptRef, step === "transcript" && Boolean(transcriptHtml));
+  useListeningCopyFriction(transcriptRef, step === "transcript" && Boolean(transcriptText));
 
   const audioSrc = meta.audioPublicPath;
 
@@ -299,16 +294,12 @@ export function ListeningPilotSession() {
               <code className="font-mono text-xs">cam19-test1.cleaned.txt</code>) rồi tải lại trang.
             </p>
           )}
-          {!transcriptLoading && transcriptHtml ? (
+          {!transcriptLoading && transcriptText ? (
             <div
               ref={transcriptRef}
               className="max-h-[min(70vh,28rem)] overflow-auto rounded-xl border border-zinc-200 bg-white p-4 text-sm leading-relaxed text-ink select-text"
             >
-              <WordRichDisplay
-                html={transcriptHtml}
-                as="div"
-                className="word-rich-html [&_*]:text-inherit [&_b]:font-bold [&_strong]:font-bold [&_span]:text-inherit"
-              />
+              <ListeningPlainTranscriptBody text={transcriptText} className="space-y-2 text-sm leading-relaxed text-ink" />
             </div>
           ) : null}
           <button

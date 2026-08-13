@@ -2741,8 +2741,7 @@ function removeHighlightFromRange(range){
 <script id="exam-copy-friction-script">
 (function(){
   var KIND="listening";
-  var MIN_CHARS=140;
-  var LONG_SINGLE=280;
+  var MIN_CHARS=80;
   var FOOTER="\n\nfrom anthichtuhoc\n";
   var ALPHABET="bcdfghjklmnpqrstvwxyz23456789";
 
@@ -2778,11 +2777,7 @@ function removeHighlightFromRange(range){
 
   function shouldApplyCopyFriction(text){
     var trimmed=text.replace(/\r\n/g,"\n").trim();
-    if(!trimmed)return false;
-    if(trimmed.length<MIN_CHARS)return false;
-    var paragraphs=splitCopyParagraphs(trimmed);
-    if(paragraphs.length>=2)return true;
-    return trimmed.length>=LONG_SINGLE;
+    return trimmed.length>=MIN_CHARS;
   }
 
   function insertMidParagraphNoise(text,paragraphIndex){

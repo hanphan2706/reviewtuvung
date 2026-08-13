@@ -76,7 +76,9 @@ export function isPublicReadingExamApi(pathname: string, searchParams: URLSearch
   }
   if (pathname === "/api/reading/raw" && searchParams.get("public") === "1") {
     const id = searchParams.get("id") ?? "";
-    return PUBLIC_READING_PILOTS.has(id as ReadingPilotId);
+    const passage = Number.parseInt(searchParams.get("passage") ?? "", 10);
+    if (!PUBLIC_READING_PILOTS.has(id as ReadingPilotId)) return false;
+    return Number.isFinite(passage) && passage >= 1;
   }
   return false;
 }
