@@ -28,6 +28,8 @@ type DictionaryPopoverProps = {
   canAddWord: boolean;
   decks: Deck[];
   onClose: () => void;
+  /** Cho phép thêm cụm dài / khi chưa có bản dịch. */
+  allowAddAnySelection?: boolean;
 };
 
 function PronunciationButton({ label, data }: { label: string; data: LookupPronunciation }) {
@@ -242,6 +244,7 @@ export function DictionaryPopover({
   canAddWord,
   decks,
   onClose,
+  allowAddAnySelection = true,
 }: DictionaryPopoverProps) {
   const createDeck = useSrsStore((s) => s.createDeck);
   const addWordToDeck = useSrsStore((s) => s.addWordToDeck);
@@ -276,8 +279,12 @@ export function DictionaryPopover({
   useEffect(() => {
     if (!lookup || phase === "lookup" || phase === "pick-deck") return;
     setTerm(lookup.query);
-    setDefinition(formatLookupForDeck(lookup));
-  }, [lookup, phase]);
+    const formatted = formatLookupForDeck(lookup);
+    const fromError = Boolean(lookup.error && formatted === lookup.error);
+    setDefinition(
+      allowAddAnySelection && fromError ? (lookup.phraseGlossVi ?? "") : formatted,
+    );
+  }, [lookup, phase, allowAddAnySelection]);
 
   useEffect(() => {
     if (creatingDeck) newDeckInputRef.current?.focus();
@@ -307,11 +314,12 @@ export function DictionaryPopover({
   const layout = popoverLayout(anchor, isCoarsePointer);
   const isSheet = layout.mode === "sheet";
   const isTranslateOnly = Boolean(lookup.phraseGlossVi && lookup.senses.length === 0 && !lookup.error);
-  const showAddButton =
-    canAddWord &&
-    !lookup.error &&
-    !isTranslateOnly &&
-    (lookup.kind === "word" || (lookup.kind === "phrase" && Boolean(lookup.phraseGlossVi)));
+  const showAddButton = allowAddAnySelection
+    ? canAddWord && Boolean(lookup.query.trim())
+    : canAddWord &&
+      !lookup.error &&
+      !isTranslateOnly &&
+      (lookup.kind === "word" || (lookup.kind === "phrase" && Boolean(lookup.phraseGlossVi)));
   const selectedDeck = decks.find((d) => d.id === selectedDeckId) ?? null;
 
   const submitNewDeck = useCallback(() => {
@@ -562,7 +570,7 @@ export function DictionaryPopover({
         ) : null}
       </Root>
 
-      {phase === "lookup" && showAddButton && !loading ? (
+      {phase === "lookup" && showAddButton && (allowAddAnySelection || !loading) ? (
         <Root className="shrink-0 border-t border-[#ebe6f4] px-4 py-3">
           <button
             type="button"
