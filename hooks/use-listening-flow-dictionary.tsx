@@ -14,11 +14,13 @@ import { useSrsStore } from "@/store/srs-store";
 type UseListeningFlowDictionaryOptions = {
   enabled: boolean;
   isLoggedIn: boolean;
+  /** Cụm dài vẫn thêm được vào deck, dù chỉ có bản dịch hoặc chưa có nghĩa. */
+  allowAddAnySelection?: boolean;
 };
 
 export function useListeningFlowDictionary(
   containerRef: RefObject<HTMLElement | null>,
-  { enabled, isLoggedIn }: UseListeningFlowDictionaryOptions,
+  { enabled, isLoggedIn, allowAddAnySelection = true }: UseListeningFlowDictionaryOptions,
 ) {
   const decks = useSrsStore((s) => s.decks);
   const { selection, clearSelection } = useFlowTextSelection(containerRef, enabled);
@@ -28,10 +30,14 @@ export function useListeningFlowDictionary(
   const pickedRef = useRef<ReturnType<typeof parseReadingSelection>>(null);
 
   const selectionText = selection?.text ?? null;
-  const picked = useMemo(
-    () => (selectionText ? parseReadingSelection(selectionText) : null),
-    [selectionText],
-  );
+  const picked = useMemo(() => {
+    if (!selectionText) return null;
+    const parsed = parseReadingSelection(selectionText);
+    if (parsed) return parsed;
+    if (!allowAddAnySelection) return null;
+    const query = selectionText.trim().replace(/\s+/g, " ").slice(0, 320);
+    return query.length >= 2 ? { query, mode: "translate-only" as const } : null;
+  }, [selectionText, allowAddAnySelection]);
   if (picked) pickedRef.current = picked;
 
   const popoverAnchor = selection ?? popoverAnchorRef.current;
@@ -44,7 +50,9 @@ export function useListeningFlowDictionary(
     : null;
 
   const canAddWord = Boolean(
-    isLoggedIn && pickedForLookup && pickedForLookup.mode !== "translate-only",
+    isLoggedIn &&
+      pickedForLookup &&
+      (allowAddAnySelection || pickedForLookup.mode !== "translate-only"),
   );
 
   useEffect(() => {
@@ -116,6 +124,7 @@ export function useListeningFlowDictionary(
         lookup={dictLookup}
         loading={dictLoading}
         canAddWord={canAddWord}
+        allowAddAnySelection={allowAddAnySelection}
         decks={decks}
         onClose={closePopover}
       />

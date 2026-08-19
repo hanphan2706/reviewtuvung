@@ -590,34 +590,42 @@ function FlipCard({
           style={{ transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)" }}
         >
           <div
-            className={`absolute inset-0 flex flex-col items-center justify-center gap-2 overflow-hidden border-zinc-200 bg-white [backface-visibility:hidden] ${tabletLayout ? "rounded-3xl border-[3px] p-8 shadow-lg" : "rounded-xl border-2 p-4 shadow-sm sm:p-5"}`}
+            className={`absolute inset-0 overflow-hidden border-zinc-200 bg-white [backface-visibility:hidden] ${tabletLayout ? "rounded-3xl border-[3px] shadow-lg" : "rounded-xl border-2 shadow-sm"}`}
           >
-            <WordRichDisplay
-              html={word.term}
-              className={`inline-block max-w-full text-center leading-snug tracking-tight text-ink [&_b]:font-bold [&_strong]:font-bold ${tabletLayout ? "text-[2rem] sm:text-4xl" : "text-xl sm:text-2xl"}`}
-            />
-            {ipa ? (
-              <span className="font-ipa text-center text-sm leading-none text-ink-muted sm:text-base">
-                {ipa}
-              </span>
-            ) : null}
+            <div className={`flex h-full flex-col overflow-y-auto overscroll-contain touch-pan-y ${tabletLayout ? "p-8" : "p-4 sm:p-5"}`}>
+              <div className="my-auto flex w-full flex-col items-center gap-2">
+                <WordRichDisplay
+                  html={word.term}
+                  className={`inline-block max-w-full text-center leading-snug tracking-tight text-ink [&_b]:font-bold [&_strong]:font-bold ${tabletLayout ? "text-[2rem] sm:text-4xl" : "text-xl sm:text-2xl"}`}
+                />
+                {ipa ? (
+                  <span className="font-ipa text-center text-sm leading-none text-ink-muted sm:text-base">
+                    {ipa}
+                  </span>
+                ) : null}
+              </div>
+            </div>
           </div>
           <div
-            className={`absolute inset-0 flex items-center justify-center overflow-hidden border-zinc-200 bg-zinc-50 [backface-visibility:hidden] ${tabletLayout ? "rounded-3xl border-[3px] p-8 shadow-lg" : "rounded-xl border-2 p-4 shadow-sm sm:p-5"}`}
+            className={`absolute inset-0 overflow-hidden border-zinc-200 bg-zinc-50 [backface-visibility:hidden] ${tabletLayout ? "rounded-3xl border-[3px] shadow-lg" : "rounded-xl border-2 shadow-sm"}`}
             style={{ transform: "rotateY(180deg)" }}
           >
-            {defText ? (
-              <WordRichDisplay
-                html={word.definition}
-                className={`inline-block max-w-full text-center font-medium leading-snug text-ink/90 ${tabletLayout ? "text-2xl sm:text-3xl" : "text-base sm:text-lg"}`}
-              />
-            ) : (
-              <span
-                className={`text-center font-medium leading-snug text-ink-muted ${tabletLayout ? "text-2xl sm:text-3xl" : "text-base sm:text-lg"}`}
-              >
-                —
-              </span>
-            )}
+            <div className={`flex h-full flex-col overflow-y-auto overscroll-contain touch-pan-y ${tabletLayout ? "p-8" : "p-4 sm:p-5"}`}>
+              <div className="my-auto w-full">
+                {defText ? (
+                  <WordRichDisplay
+                    html={word.definition}
+                    className={`inline-block max-w-full text-center font-medium leading-snug text-ink/90 ${tabletLayout ? "text-2xl sm:text-3xl" : "text-base sm:text-lg"}`}
+                  />
+                ) : (
+                  <span
+                    className={`text-center font-medium leading-snug text-ink-muted ${tabletLayout ? "text-2xl sm:text-3xl" : "text-base sm:text-lg"}`}
+                  >
+                    —
+                  </span>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </button>

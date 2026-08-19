@@ -29,6 +29,7 @@ export function VocabularyLibraryView() {
   const words = useSrsStore((s) => s.words);
   const reviewDayTallies = useSrsStore((s) => s.reviewDayTallies);
   const closeDeck = useSrsStore((s) => s.closeDeck);
+  const setDailyReviewLimit = useSrsStore((s) => s.setDailyReviewLimit);
 
   const [showAllDecks, setShowAllDecks] = useState(false);
   const [deckCreateOpen, setDeckCreateOpen] = useState(false);
@@ -138,6 +139,7 @@ export function VocabularyLibraryView() {
           reviewedToday={reviewedToday}
           dailyGoal={settings.dailyReviewLimit}
           streakDays={streakDays}
+          onDailyGoalChange={setDailyReviewLimit}
         />
         <VocabularyReviewCta onStartReview={startReview} onCreateDeck={openCreateDeck} />
       </div>

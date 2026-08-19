@@ -16,6 +16,11 @@ export type ListeningFlowCopy = {
   step4Q1: string;
   step4Q2: string;
   step4ListenAgain: string;
+  stepClozePrompt: string;
+  stepKeywordPrompt: string;
+  stepKeywordQuestionCol: string;
+  stepKeywordParaphraseCol: string;
+  stepKeywordNearMatch: string;
   step5Prompt: string;
   step5SyncedLabel: string;
   step5NotSyncedLabel: string;
@@ -51,8 +56,26 @@ export const LISTENING_FLOW_COPY: Record<ListeningFlowLocale, ListeningFlowCopy>
   vi: {
     localeToggleShowEn: "English",
     localeToggleShowVi: "Tiếng Việt",
-    stepShortLabels: ["DỰ ĐOÁN", "Ý CHÍNH", "GHI NHỚ", "NGHE LẠI", "SHADOWING", "PHẢN ÁNH"],
-    stepTitles: ["Dự đoán", "Nghe ý chính", "Ghi nhớ từ", "Nghe lần 2", "Shadowing", "Phản ánh"],
+    stepShortLabels: [
+      "DỰ ĐOÁN",
+      "Ý CHÍNH",
+      "GHI NHỚ",
+      "NGHE LẠI",
+      "ĐỤC LỖ",
+      "KEYWORD",
+      "SHADOWING",
+      "PHẢN ÁNH",
+    ],
+    stepTitles: [
+      "Dự đoán",
+      "Nghe ý chính",
+      "Ghi nhớ từ",
+      "Nghe lần 2",
+      "Đục lỗ transcript",
+      "Keyword và paraphrase",
+      "Shadowing",
+      "Phản ánh",
+    ],
     step1Prompt: "Dựa vào tiêu đề và phần giới thiệu, bạn đoán mình sẽ nghe những nội dung nào?",
     step1Start: "Bắt đầu nghe",
     step1Options: STEP1_OPTIONS_VI,
@@ -65,6 +88,13 @@ export const LISTENING_FLOW_COPY: Record<ListeningFlowLocale, ListeningFlowCopy>
     step4Q1: "Ai đang nói / tên người chính là gì?",
     step4Q2: "Chi tiết nào bạn nhớ rõ nhất?",
     step4ListenAgain: "Nghe lại & tiếp",
+    stepClozePrompt:
+      "Nghe lại và điền chỗ trống — những chỗ dễ miss: nối âm, nuốt âm, collocation, signpost, weak form.",
+    stepKeywordPrompt:
+      "Điền cách audio paraphrase keyword trong câu hỏi. Kiểm tra để xem đáp án mẫu và giải thích.",
+    stepKeywordQuestionCol: "Câu hỏi",
+    stepKeywordParaphraseCol: "Paraphrase trên audio",
+    stepKeywordNearMatch: "Gần đúng — đối chiếu đáp án mẫu bên dưới.",
     step5Prompt:
       "Đọc theo audio và shadowing từng dòng. Chạm vào câu để nhảy tới đoạn đó. Bôi đen text để tra từ.",
     step5SyncedLabel: "Đồng bộ",
@@ -91,8 +121,26 @@ export const LISTENING_FLOW_COPY: Record<ListeningFlowLocale, ListeningFlowCopy>
   en: {
     localeToggleShowEn: "English",
     localeToggleShowVi: "Tiếng Việt",
-    stepShortLabels: ["PREDICT", "GIST", "RECALL", "LISTEN", "SHADOWING", "REFLECT"],
-    stepTitles: ["Prediction", "Main idea", "Word recall", "Listen again", "Shadowing", "Reflection"],
+    stepShortLabels: [
+      "PREDICT",
+      "GIST",
+      "RECALL",
+      "LISTEN",
+      "CLOZE",
+      "KEYWORD",
+      "SHADOWING",
+      "REFLECT",
+    ],
+    stepTitles: [
+      "Prediction",
+      "Main idea",
+      "Word recall",
+      "Listen again",
+      "Transcript gap-fill",
+      "Keywords & paraphrases",
+      "Shadowing",
+      "Reflection",
+    ],
     step1Prompt: "Based on the title and introduction, what content do you think you'll hear?",
     step1Start: "Start listening",
     step1Options: STEP1_OPTIONS_EN,
@@ -105,6 +153,13 @@ export const LISTENING_FLOW_COPY: Record<ListeningFlowLocale, ListeningFlowCopy>
     step4Q1: "Who is speaking / what is the main person's name?",
     step4Q2: "What detail do you remember clearly?",
     step4ListenAgain: "Listen again & continue",
+    stepClozePrompt:
+      "Listen again and fill the gaps — typical misses: linking, weak forms, collocations, and signposts.",
+    stepKeywordPrompt:
+      "Write how the audio paraphrases each question keyword. Check to see the model answer and explanation.",
+    stepKeywordQuestionCol: "Question",
+    stepKeywordParaphraseCol: "Paraphrase in the audio",
+    stepKeywordNearMatch: "Close — compare with the model answer below.",
     step5Prompt:
       "Read along with the audio and shadow each line. Tap a sentence to jump to that moment. Highlight text to look up words.",
     step5SyncedLabel: "Synced",

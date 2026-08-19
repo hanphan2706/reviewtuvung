@@ -598,6 +598,20 @@ export function resolveFlowExerciseFromLesson(
       locale === "vi"
         ? (lesson.detailPromptVi ?? null)
         : (lesson.detailPromptEn ?? null),
+    transcriptCloze: lesson.transcriptCloze ?? null,
+    keywordParaphrases: (lesson.keywordParaphrases ?? []).map((row) => ({
+      key: row.key,
+      questionNumber: row.questionNumber,
+      question: locale === "vi" ? row.questionVi : row.questionEn,
+      modelParaphrase: locale === "vi" ? row.modelParaphraseVi : row.modelParaphraseEn,
+      acceptedAnswers: [
+        row.modelParaphraseEn,
+        row.modelParaphraseVi,
+        ...(row.acceptedAnswers ?? []),
+      ],
+      explanation:
+        locale === "vi" ? (row.explanationVi ?? null) : (row.explanationEn ?? null),
+    })),
   };
 }
 

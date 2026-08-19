@@ -2,6 +2,8 @@ import { useCallback, useRef, type RefObject } from "react";
 import type { ArticlePassageAudioPlayerHandle } from "@/components/reading/article-passage-audio-player";
 import type { ListeningSevenStepId } from "@/lib/listening/listening-seven-steps";
 
+const REPLAY_STEPS = new Set<ListeningSevenStepId>([4, 5, 6, 7]);
+
 export function useListeningFlowAudio(audioRef: RefObject<ArticlePassageAudioPlayerHandle | null>) {
   const audioEndedRef = useRef(false);
   const prevStepRef = useRef<ListeningSevenStepId>(1);
@@ -43,13 +45,7 @@ export function useListeningFlowAudio(audioRef: RefObject<ArticlePassageAudioPla
         return;
       }
 
-      if (step === 4 && prev !== 4) {
-        player.resetAndPlay();
-        audioEndedRef.current = false;
-        return;
-      }
-
-      if (step === 5 && prev < 5) {
+      if (REPLAY_STEPS.has(step)) {
         player.resetAndPlay();
         audioEndedRef.current = false;
       }

@@ -1,6 +1,6 @@
 "use client";
 
-import { CircleHelp, LogOut, Sparkles, User } from "lucide-react";
+import { LogOut, Sparkles, User } from "lucide-react";
 import { AuthButton } from "@/components/auth-button";
 import { ProfilePageLink } from "@/components/profile/profile-page-link";
 import { StudyHubUserAvatar } from "@/components/study-module/study-hub-user-avatar";
@@ -47,15 +47,7 @@ export function StudyHubAccountMenuSections({
         </button>
       </section>
 
-      <nav className={`${compact ? "mt-4" : "mt-6"} space-y-1`} aria-label="Tài khoản và hỗ trợ">
-        <button
-          type="button"
-          className="flex w-full cursor-pointer items-center gap-3 px-2 py-2.5 text-left text-sm font-medium text-ink"
-        >
-          <CircleHelp className="size-5 shrink-0 text-[#47464b]" aria-hidden />
-          Trợ giúp
-        </button>
-
+      <nav className={`${compact ? "mt-4" : "mt-6"} space-y-1`} aria-label="Tài khoản">
         {isLoggedIn ? (
           <>
             <ProfilePageLink

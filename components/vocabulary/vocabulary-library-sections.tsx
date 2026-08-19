@@ -1,12 +1,24 @@
 "use client";
 
+import { Pencil } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import type { VocabularyWeekBar } from "@/lib/vocabulary/vocabulary-library-stats";
+
+const DAILY_GOAL_MIN = 1;
+const DAILY_GOAL_MAX = 500;
+
+function clampDailyGoal(raw: string, fallback: number): number {
+  const n = Number.parseInt(raw.trim(), 10);
+  if (!Number.isFinite(n) || n < DAILY_GOAL_MIN) return fallback;
+  return Math.min(DAILY_GOAL_MAX, Math.floor(n));
+}
 
 type VocabularyWeeklyChartProps = {
   bars: VocabularyWeekBar[];
   reviewedToday: number;
   dailyGoal: number;
   streakDays: number;
+  onDailyGoalChange?: (next: number) => void;
 };
 
 export function VocabularyWeeklyChart({
@@ -14,7 +26,30 @@ export function VocabularyWeeklyChart({
   reviewedToday,
   dailyGoal,
   streakDays,
+  onDailyGoalChange,
 }: VocabularyWeeklyChartProps) {
+  const [editingGoal, setEditingGoal] = useState(false);
+  const [goalDraft, setGoalDraft] = useState(String(dailyGoal));
+  const goalInputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (!editingGoal) setGoalDraft(String(dailyGoal));
+  }, [dailyGoal, editingGoal]);
+
+  useEffect(() => {
+    if (!editingGoal) return;
+    const el = goalInputRef.current;
+    if (!el) return;
+    el.focus();
+    el.select();
+  }, [editingGoal]);
+
+  function commitGoal() {
+    const next = clampDailyGoal(goalDraft, dailyGoal);
+    onDailyGoalChange?.(next);
+    setGoalDraft(String(next));
+    setEditingGoal(false);
+  }
   const maxCount = Math.max(1, ...bars.map((b) => b.count));
 
   return (
@@ -63,9 +98,55 @@ export function VocabularyWeeklyChart({
       <div className="mt-5 border-t border-[#E4E4E7] pt-4">
         <div className="flex items-center justify-between gap-3 text-sm">
           <span className="font-medium text-[#47464b]">Hôm nay</span>
-          <span className="font-semibold tabular-nums text-[#000001]">
-            {reviewedToday}/{dailyGoal} từ
-          </span>
+          <div className="flex items-center gap-1.5">
+            {editingGoal && onDailyGoalChange ? (
+              <form
+                className="flex items-center gap-1"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  commitGoal();
+                }}
+              >
+                <span className="font-semibold tabular-nums text-[#000001]">{reviewedToday}/</span>
+                <input
+                  ref={goalInputRef}
+                  type="number"
+                  min={DAILY_GOAL_MIN}
+                  max={DAILY_GOAL_MAX}
+                  inputMode="numeric"
+                  aria-label="Số từ muốn ôn trong ngày"
+                  value={goalDraft}
+                  onChange={(e) => setGoalDraft(e.target.value)}
+                  onBlur={commitGoal}
+                  onKeyDown={(e) => {
+                    if (e.key === "Escape") {
+                      e.preventDefault();
+                      setGoalDraft(String(dailyGoal));
+                      setEditingGoal(false);
+                    }
+                  }}
+                  className="h-7 w-12 rounded-md border border-[#4b2876]/35 bg-white px-1.5 text-center text-sm font-semibold tabular-nums text-[#000001] outline-none ring-[#4b2876]/20 focus:ring-2"
+                />
+                <span className="font-semibold text-[#000001]">từ</span>
+              </form>
+            ) : (
+              <>
+                <span className="font-semibold tabular-nums text-[#000001]">
+                  {reviewedToday}/{dailyGoal} từ
+                </span>
+                {onDailyGoalChange ? (
+                  <button
+                    type="button"
+                    onClick={() => setEditingGoal(true)}
+                    className="rounded-md p-1 text-[#4b2876] transition hover:bg-[#fbf8fd]"
+                    aria-label="Sửa số từ muốn ôn trong ngày"
+                  >
+                    <Pencil className="size-3.5" strokeWidth={2.25} aria-hidden />
+                  </button>
+                ) : null}
+              </>
+            )}
+          </div>
         </div>
         <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-[#ece7f2]">
           <div

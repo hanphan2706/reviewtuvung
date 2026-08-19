@@ -106,6 +106,7 @@ export function VocabularyProgressView() {
   const settings = useSrsStore((s) => s.settings);
   const reviewDayTallies = useSrsStore((s) => s.reviewDayTallies);
   const closeDeck = useSrsStore((s) => s.closeDeck);
+  const setDailyReviewLimit = useSrsStore((s) => s.setDailyReviewLimit);
 
   useEffect(() => {
     closeDeck();
@@ -143,6 +144,7 @@ export function VocabularyProgressView() {
           reviewedToday={reviewedToday}
           dailyGoal={settings.dailyReviewLimit}
           streakDays={streakDays}
+          onDailyGoalChange={setDailyReviewLimit}
         />
 
         <section className="flex flex-col">
