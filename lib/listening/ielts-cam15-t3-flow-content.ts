@@ -1,4 +1,21 @@
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
+import {
+  CAM15_T3_P1_KEYWORD_PARAPHRASES,
+  CAM15_T3_P1_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam15-t3-p1-intensive";
+import {
+  CAM15_T3_P2_KEYWORD_PARAPHRASES,
+  CAM15_T3_P2_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam15-t3-p2-intensive";
+import {
+  CAM15_T3_P3_KEYWORD_PARAPHRASES,
+  CAM15_T3_P3_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam15-t3-p3-intensive";
+import {
+  CAM15_T3_P4_KEYWORD_PARAPHRASES,
+  CAM15_T3_P4_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam15-t3-p4-intensive";
+
 
 /** Flow nghe hiểu — CAM15 Test 3 (generated from transcript + QnA). */
 const CAM15_T3_P1: ListeningFlowLessonContent = {
@@ -104,6 +121,8 @@ const CAM15_T3_P1: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Employment Agency: Possible Jobs sau lần nghe đầu…",
+  transcriptCloze: CAM15_T3_P1_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM15_T3_P1_KEYWORD_PARAPHRASES,
 };
 
 const CAM15_T3_P2: ListeningFlowLessonContent = {
@@ -209,6 +228,8 @@ const CAM15_T3_P2: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Street Play Scheme sau lần nghe đầu…",
+  transcriptCloze: CAM15_T3_P2_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM15_T3_P2_KEYWORD_PARAPHRASES,
 };
 
 const CAM15_T3_P3: ListeningFlowLessonContent = {
@@ -314,6 +335,8 @@ const CAM15_T3_P3: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Hazel Newspaper Analysis sau lần nghe đầu…",
+  transcriptCloze: CAM15_T3_P3_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM15_T3_P3_KEYWORD_PARAPHRASES,
 };
 
 const CAM15_T3_P4: ListeningFlowLessonContent = {
@@ -419,6 +442,8 @@ const CAM15_T3_P4: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Early History of Keeping Clean sau lần nghe đầu…",
+  transcriptCloze: CAM15_T3_P4_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM15_T3_P4_KEYWORD_PARAPHRASES,
 };
 
 export const IELTS_CAM15_T3_FLOW_CONTENT: Record<string, ListeningFlowLessonContent> = {

@@ -1,4 +1,20 @@
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
+import {
+  CAM19_T3_P1_KEYWORD_PARAPHRASES,
+  CAM19_T3_P1_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t3-p1-intensive";
+import {
+  CAM19_T3_P2_KEYWORD_PARAPHRASES,
+  CAM19_T3_P2_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t3-p2-intensive";
+import {
+  CAM19_T3_P3_KEYWORD_PARAPHRASES,
+  CAM19_T3_P3_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t3-p3-intensive";
+import {
+  CAM19_T3_P4_KEYWORD_PARAPHRASES,
+  CAM19_T3_P4_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t3-p4-intensive";
 
 /** Nội dung flow nghe hiểu IELTS — Cam 19 Test 3 (viết tay theo transcript + QnA). */
 const CAM19_T3_P1: ListeningFlowLessonContent = {
@@ -109,6 +125,8 @@ const CAM19_T3_P1: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về harbour, chợ cá, cửa hàng Rose, minibus tím và các món mua…",
+  transcriptCloze: CAM19_T3_P1_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T3_P1_KEYWORD_PARAPHRASES,
 };
 
 const CAM19_T3_P2: ListeningFlowLessonContent = {
@@ -219,6 +237,8 @@ const CAM19_T3_P2: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về từng workshop, Alive and Kicking và lời khuyên cho phụ huynh…",
+  transcriptCloze: CAM19_T3_P2_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T3_P2_KEYWORD_PARAPHRASES,
 };
 
 const CAM19_T3_P3: ListeningFlowLessonContent = {
@@ -329,6 +349,8 @@ const CAM19_T3_P3: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về học sinh thiếu hứng thú, nhóm chuột, đường trong ngũ cốc và cách cân…",
+  transcriptCloze: CAM19_T3_P3_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T3_P3_KEYWORD_PARAPHRASES,
 };
 
 const CAM19_T3_P4: ListeningFlowLessonContent = {
@@ -439,6 +461,8 @@ const CAM19_T3_P4: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về nguồn vi nhựa, giun đất, giảm nảy mầm và axit trong đất…",
+  transcriptCloze: CAM19_T3_P4_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T3_P4_KEYWORD_PARAPHRASES,
 };
 
 export const IELTS_CAM19_T3_FLOW_CONTENT: Record<string, ListeningFlowLessonContent> = {

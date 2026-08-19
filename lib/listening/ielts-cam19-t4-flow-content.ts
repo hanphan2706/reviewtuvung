@@ -1,4 +1,20 @@
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
+import {
+  CAM19_T4_P1_KEYWORD_PARAPHRASES,
+  CAM19_T4_P1_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t4-p1-intensive";
+import {
+  CAM19_T4_P2_KEYWORD_PARAPHRASES,
+  CAM19_T4_P2_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t4-p2-intensive";
+import {
+  CAM19_T4_P3_KEYWORD_PARAPHRASES,
+  CAM19_T4_P3_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t4-p3-intensive";
+import {
+  CAM19_T4_P4_KEYWORD_PARAPHRASES,
+  CAM19_T4_P4_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t4-p4-intensive";
 
 /** Nội dung flow nghe hiểu IELTS — Cam 19 Test 4 (viết tay theo transcript + QnA). */
 const CAM19_T4_P1: ListeningFlowLessonContent = {
@@ -109,6 +125,8 @@ const CAM19_T4_P1: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về Kaeden, HR tầng 3, nhãn vàng, hộp nhựa sushi và găng tay phòng lạnh…",
+  transcriptCloze: CAM19_T4_P1_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T4_P1_KEYWORD_PARAPHRASES,
 };
 
 const CAM19_T4_P2: ListeningFlowLessonContent = {
@@ -222,6 +240,8 @@ const CAM19_T4_P2: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về chương trình online, nhạc khi chạy, câu chuyện hội viên và mốc 5K…",
+  transcriptCloze: CAM19_T4_P2_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T4_P2_KEYWORD_PARAPHRASES,
 };
 
 const CAM19_T4_P3: ListeningFlowLessonContent = {
@@ -332,6 +352,8 @@ const CAM19_T4_P3: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về cách đóng gói sách, kệ cao, khu trẻ em và sách giáo trình trong café…",
+  transcriptCloze: CAM19_T4_P3_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T4_P3_KEYWORD_PARAPHRASES,
 };
 
 const CAM19_T4_P4: ListeningFlowLessonContent = {
@@ -442,6 +464,8 @@ const CAM19_T4_P4: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về loài xâm lấn, drone Amazon, cây sung, khỉ và rừng ngập mặn Madagascar…",
+  transcriptCloze: CAM19_T4_P4_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T4_P4_KEYWORD_PARAPHRASES,
 };
 
 export const IELTS_CAM19_T4_FLOW_CONTENT: Record<string, ListeningFlowLessonContent> = {

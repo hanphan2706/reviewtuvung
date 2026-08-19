@@ -1,4 +1,20 @@
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
+import {
+  CAM14_T2_P1_KEYWORD_PARAPHRASES,
+  CAM14_T2_P1_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam14-t2-p1-intensive";
+import {
+  CAM14_T2_P2_KEYWORD_PARAPHRASES,
+  CAM14_T2_P2_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam14-t2-p2-intensive";
+import {
+  CAM14_T2_P3_KEYWORD_PARAPHRASES,
+  CAM14_T2_P3_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam14-t2-p3-intensive";
+import {
+  CAM14_T2_P4_KEYWORD_PARAPHRASES,
+  CAM14_T2_P4_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam14-t2-p4-intensive";
 
 /** Flow nghe hiểu — CAM14 Test 2 (generated from transcript + QnA). */
 const CAM14_T2_P1: ListeningFlowLessonContent = {
@@ -104,6 +120,8 @@ const CAM14_T2_P1: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Total Health Clinic sau lần nghe đầu…",
+  transcriptCloze: CAM14_T2_P1_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM14_T2_P1_KEYWORD_PARAPHRASES,
 };
 
 const CAM14_T2_P2: ListeningFlowLessonContent = {
@@ -209,6 +227,8 @@ const CAM14_T2_P2: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Visit to Branley Castle sau lần nghe đầu…",
+  transcriptCloze: CAM14_T2_P2_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM14_T2_P2_KEYWORD_PARAPHRASES,
 };
 
 const CAM14_T2_P3: ListeningFlowLessonContent = {
@@ -314,6 +334,8 @@ const CAM14_T2_P3: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Woolly Mammoths on St Paul’s Island sau lần nghe đầu…",
+  transcriptCloze: CAM14_T2_P3_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM14_T2_P3_KEYWORD_PARAPHRASES,
 };
 
 const CAM14_T2_P4: ListeningFlowLessonContent = {
@@ -419,6 +441,8 @@ const CAM14_T2_P4: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về The History of Weather Forecasting sau lần nghe đầu…",
+  transcriptCloze: CAM14_T2_P4_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM14_T2_P4_KEYWORD_PARAPHRASES,
 };
 
 export const IELTS_CAM14_T2_FLOW_CONTENT: Record<string, ListeningFlowLessonContent> = {

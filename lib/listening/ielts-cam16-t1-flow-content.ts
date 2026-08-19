@@ -1,4 +1,20 @@
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
+import {
+  CAM16_T1_P1_KEYWORD_PARAPHRASES,
+  CAM16_T1_P1_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam16-t1-p1-intensive";
+import {
+  CAM16_T1_P2_KEYWORD_PARAPHRASES,
+  CAM16_T1_P2_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam16-t1-p2-intensive";
+import {
+  CAM16_T1_P3_KEYWORD_PARAPHRASES,
+  CAM16_T1_P3_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam16-t1-p3-intensive";
+import {
+  CAM16_T1_P4_KEYWORD_PARAPHRASES,
+  CAM16_T1_P4_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam16-t1-p4-intensive";
 
 /** Flow nghe hiểu — CAM16 Test 1 (generated from transcript + QnA). */
 const CAM16_T1_P1: ListeningFlowLessonContent = {
@@ -104,6 +120,8 @@ const CAM16_T1_P1: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Children’s Engineering Workshops sau lần nghe đầu…",
+  transcriptCloze: CAM16_T1_P1_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM16_T1_P1_KEYWORD_PARAPHRASES,
 };
 
 const CAM16_T1_P2: ListeningFlowLessonContent = {
@@ -209,6 +227,8 @@ const CAM16_T1_P2: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Stevenson’s Work Experience sau lần nghe đầu…",
+  transcriptCloze: CAM16_T1_P2_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM16_T1_P2_KEYWORD_PARAPHRASES,
 };
 
 const CAM16_T1_P3: ListeningFlowLessonContent = {
@@ -314,6 +334,8 @@ const CAM16_T1_P3: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Jess and Tom Art Projects sau lần nghe đầu…",
+  transcriptCloze: CAM16_T1_P3_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM16_T1_P3_KEYWORD_PARAPHRASES,
 };
 
 const CAM16_T1_P4: ListeningFlowLessonContent = {
@@ -419,6 +441,8 @@ const CAM16_T1_P4: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Stoicism sau lần nghe đầu…",
+  transcriptCloze: CAM16_T1_P4_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM16_T1_P4_KEYWORD_PARAPHRASES,
 };
 
 export const IELTS_CAM16_T1_FLOW_CONTENT: Record<string, ListeningFlowLessonContent> = {

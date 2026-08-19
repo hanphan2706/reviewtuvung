@@ -1,4 +1,20 @@
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
+import {
+  CAM17_T2_P1_KEYWORD_PARAPHRASES,
+  CAM17_T2_P1_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam17-t2-p1-intensive";
+import {
+  CAM17_T2_P2_KEYWORD_PARAPHRASES,
+  CAM17_T2_P2_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam17-t2-p2-intensive";
+import {
+  CAM17_T2_P3_KEYWORD_PARAPHRASES,
+  CAM17_T2_P3_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam17-t2-p3-intensive";
+import {
+  CAM17_T2_P4_KEYWORD_PARAPHRASES,
+  CAM17_T2_P4_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam17-t2-p4-intensive";
 
 /** Flow nghe hiểu — CAM17 Test 2 (generated from transcript + QnA). */
 const CAM17_T2_P1: ListeningFlowLessonContent = {
@@ -104,6 +120,8 @@ const CAM17_T2_P1: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Southoe Village Volunteering sau lần nghe đầu…",
+  transcriptCloze: CAM17_T2_P1_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM17_T2_P1_KEYWORD_PARAPHRASES,
 };
 
 const CAM17_T2_P2: ListeningFlowLessonContent = {
@@ -209,6 +227,8 @@ const CAM17_T2_P2: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Oniton Hall sau lần nghe đầu…",
+  transcriptCloze: CAM17_T2_P2_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM17_T2_P2_KEYWORD_PARAPHRASES,
 };
 
 const CAM17_T2_P3: ListeningFlowLessonContent = {
@@ -314,6 +334,8 @@ const CAM17_T2_P3: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Romeo and Juliet Review sau lần nghe đầu…",
+  transcriptCloze: CAM17_T2_P3_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM17_T2_P3_KEYWORD_PARAPHRASES,
 };
 
 const CAM17_T2_P4: ListeningFlowLessonContent = {
@@ -419,6 +441,8 @@ const CAM17_T2_P4: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Icelandic Language and Digital Technology sau lần nghe đầu…",
+  transcriptCloze: CAM17_T2_P4_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM17_T2_P4_KEYWORD_PARAPHRASES,
 };
 
 export const IELTS_CAM17_T2_FLOW_CONTENT: Record<string, ListeningFlowLessonContent> = {

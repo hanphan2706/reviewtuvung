@@ -1,0 +1,336 @@
+import type {
+  ListeningKeywordParaphraseRow,
+  ListeningTranscriptClozeExercise,
+} from "@/lib/listening/tactics-basic-flow-types";
+
+export const CAM18_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
+  gaps: [
+    { id: "g1", answers: ["Would you mind if", "would you mind if"] },
+    { id: "g2", answers: ["a survey on", "survey on"] },
+    { id: "g3", answers: ["First of all", "first of all"] },
+    { id: "g4", answers: ["will do"] },
+    { id: "g5", answers: ["Is that all right", "is that all right", "Is that alright", "is that alright"] },
+    { id: "g6", answers: ["isn't far from there", "is not far from there"] },
+    { id: "g7", answers: ["public transport"] },
+    { id: "g8", answers: ["the main reason", "main reason"] },
+    { id: "g9", answers: ["That's not much fun", "that's not much fun"] },
+    { id: "g10", answers: ["just a check-up", "just a checkup", "a check-up"] },
+    { id: "g11", answers: ["in ages ago", "ages ago"] },
+    { id: "g12", answers: ["it costs so much", "costs so much"] },
+    { id: "g13", answers: ["how satisfied with", "How satisfied with"] },
+    { id: "g14", answers: ["when it's on time", "when it is on time", "on time"] },
+    { id: "g15", answers: ["I suppose", "i suppose"] },
+    { id: "g16", answers: ["I don't use it that often", "I do not use it that often", "don't use it that often"] },
+    { id: "g17", answers: ["that's about it really", "That's about it really"] },
+    { id: "g18", answers: ["I'm not keen on", "I am not keen on", "not keen on"] },
+  ],
+  lines: [
+    {
+      speaker: "MAN",
+      segments: [
+        { type: "text", text: "Excuse me. " },
+        { type: "gap", gapId: "g1" },
+        { type: "text", text: " I asked you some questions? We're doing " },
+        { type: "gap", gapId: "g2" },
+        { type: "text", text: " transport." },
+      ],
+    },
+    { speaker: "SADIE", segments: [{ type: "text", text: "Yes, that's OK." }] },
+    {
+      speaker: "MAN",
+      segments: [
+        { type: "gap", gapId: "g3" },
+        { type: "text", text: ", can I take your name?" },
+      ],
+    },
+    { speaker: "SADIE", segments: [{ type: "text", text: "Yes. It's Sadie Jones." }] },
+    {
+      speaker: "MAN",
+      segments: [
+        { type: "text", text: "Thanks very much. And could I have your date of birth – just the year " },
+        { type: "gap", gapId: "g4" },
+        { type: "text", text: ", actually. " },
+        { type: "gap", gapId: "g5" },
+        { type: "text", text: "?" },
+      ],
+    },
+    { speaker: "SADIE", segments: [{ type: "text", text: "Yes, that's fine. It's 1991." }] },
+    { speaker: "MAN", segments: [{ type: "text", text: "So next your postcode, please." }] },
+    { speaker: "SADIE", segments: [{ type: "text", text: "It's DW30 7YZ." }] },
+    { speaker: "MAN", segments: [{ type: "text", text: "Great. Thanks. Is that in Wells?" }] },
+    {
+      speaker: "SADIE",
+      segments: [{ type: "text", text: "No it's actually in Harborne – Wells " }, { type: "gap", gapId: "g6" }, { type: "text", text: ", though." }],
+    },
+    {
+      speaker: "MAN",
+      segments: [{ type: "text", text: "I really like that area. My grandmother lived there when I was a kid." }],
+    },
+    { speaker: "SADIE", segments: [{ type: "text", text: "Yes, it is nice." }] },
+    {
+      speaker: "MAN",
+      segments: [
+        {
+          type: "text",
+          text: "Right, so now I want to ask you some questions about how you travelled here today. Did you use ",
+        },
+        { type: "gap", gapId: "g7" },
+        { type: "text", text: "?" },
+      ],
+    },
+    { speaker: "SADIE", segments: [{ type: "text", text: "Yes. I came by bus." }] },
+    {
+      speaker: "MAN",
+      segments: [{ type: "text", text: "OK. And that was today. It's the 24th of April, isn't it?" }],
+    },
+    {
+      speaker: "SADIE",
+      segments: [{ type: "text", text: "Isn't it the 25th? No, actually, you're right." }],
+    },
+    {
+      speaker: "MAN",
+      segments: [
+        {
+          type: "text",
+          text: "Ha ha. And what was the reason for your trip today? I can see you've got some shopping with you.",
+        },
+      ],
+    },
+    {
+      speaker: "SADIE",
+      segments: [
+        { type: "text", text: "Yes. I did some shopping but " },
+        { type: "gap", gapId: "g8" },
+        { type: "text", text: " I came here was to go to the dentist." },
+      ],
+    },
+    {
+      speaker: "MAN",
+      segments: [
+        { type: "gap", gapId: "g9" },
+        { type: "text", text: ". Hope it was nothing serious." },
+      ],
+    },
+    {
+      speaker: "SADIE",
+      segments: [
+        { type: "text", text: "No, it was " },
+        { type: "gap", gapId: "g10" },
+        { type: "text", text: ". It's fine." },
+      ],
+    },
+    {
+      speaker: "MAN",
+      segments: [{ type: "text", text: "Good. Do you normally travel by bus into the city centre?" }],
+    },
+    {
+      speaker: "SADIE",
+      segments: [
+        { type: "text", text: "Yes. I stopped driving " },
+        { type: "gap", gapId: "g11" },
+        { type: "text", text: " because parking was so difficult to find and " },
+        { type: "gap", gapId: "g12" },
+        { type: "text", text: "." },
+      ],
+    },
+    { speaker: "MAN", segments: [{ type: "text", text: "I see." }] },
+    {
+      speaker: "SADIE",
+      segments: [{ type: "text", text: "The bus is much more convenient too. It only takes about 30 minutes." }],
+    },
+    { speaker: "MAN", segments: [{ type: "text", text: "That's good. So where did you start your journey?" }] },
+    { speaker: "SADIE", segments: [{ type: "text", text: "At the bus stop on Claxby Street." }] },
+    { speaker: "MAN", segments: [{ type: "text", text: "Is that C-L-A-X-B-Y?" }] },
+    { speaker: "SADIE", segments: [{ type: "text", text: "That's right." }] },
+    {
+      speaker: "MAN",
+      segments: [
+        { type: "text", text: "And " },
+        { type: "gap", gapId: "g13" },
+        { type: "text", text: " the service are you? Do you have any complaints?" },
+      ],
+    },
+    {
+      speaker: "SADIE",
+      segments: [
+        {
+          type: "text",
+          text: "Well, as I said, it's very convenient and quick ",
+        },
+        { type: "gap", gapId: "g14" },
+        { type: "text", text: ", but this morning it was late. Only about 10 minutes, but still." },
+      ],
+    },
+    {
+      speaker: "MAN",
+      segments: [
+        {
+          type: "text",
+          text: "Yes, I understand that's annoying. And what about the timetable? Do you have any comments about that?",
+        },
+      ],
+    },
+    {
+      speaker: "SADIE",
+      segments: [
+        { type: "gap", gapId: "g15" },
+        {
+          type: "text",
+          text: " I mainly use the bus during the day, but any time I've been in town in the evening – for dinner or at the cinema – I've noticed you have to wait a long time for a bus – there aren't that many.",
+        },
+      ],
+    },
+    {
+      speaker: "MAN",
+      segments: [{ type: "text", text: "OK, thanks. So now I'd like to ask you about your car use." }],
+    },
+    {
+      speaker: "SADIE",
+      segments: [
+        { type: "text", text: "Well, I have got a car but " },
+        { type: "gap", gapId: "g16" },
+        { type: "text", text: ". Mainly just to go to the supermarket. But " },
+        { type: "gap", gapId: "g17" },
+        { type: "text", text: ". My husband uses it at the weekends to go to the golf club." },
+      ],
+    },
+    { speaker: "MAN", segments: [{ type: "text", text: "And what about a bicycle?" }] },
+    { speaker: "SADIE", segments: [{ type: "text", text: "I don't actually have one at the moment." }] },
+    {
+      speaker: "MAN",
+      segments: [{ type: "text", text: "What about the city bikes you can rent? Do you ever use those?" }],
+    },
+    {
+      speaker: "SADIE",
+      segments: [
+        { type: "text", text: "No – " },
+        { type: "gap", gapId: "g18" },
+        { type: "text", text: " cycling there because of all the pollution. But I would like to get a bike – it would be good to use it to get to work." },
+      ],
+    },
+    { speaker: "MAN", segments: [{ type: "text", text: "So why haven't you got one now?" }] },
+    {
+      speaker: "SADIE",
+      segments: [
+        {
+          type: "text",
+          text: "Well, I live in a flat – on the second floor and it doesn't have any storage – so we'd have to leave it in the hall outside the flat.",
+        },
+      ],
+    },
+    { speaker: "MAN", segments: [{ type: "text", text: "I see. OK. Well, I think that's all…" }] },
+  ],
+};
+
+export const CAM18_T1_P1_KEYWORD_PARAPHRASES: readonly ListeningKeywordParaphraseRow[] = [
+  {
+    key: "kw-q1",
+    questionNumber: 1,
+    questionEn: "Postcode: ______",
+    questionVi: "Postcode: ______",
+    modelParaphraseEn: "It's DW30 7YZ.",
+    modelParaphraseVi: "It's DW30 7YZ.",
+    acceptedAnswers: ["DW30 7YZ", "DW3Q 7YZ", "postcode"],
+    explanationEn: "The form asks for a postcode; she simply reads it out.",
+    explanationVi: "Đề hỏi postcode; audio nói thẳng “It's DW30 7YZ”.",
+  },
+  {
+    key: "kw-q2",
+    questionNumber: 2,
+    questionEn: "Date of bus journey: ______",
+    questionVi: "Date of bus journey: ______",
+    modelParaphraseEn: "It's the 24th of April, isn't it?",
+    modelParaphraseVi: "It's the 24th of April, isn't it?",
+    acceptedAnswers: ["24th of April", "24 April", "today"],
+    explanationEn: "“Date of bus journey” is confirmed as “that was today… the 24th of April”.",
+    explanationVi: "“Date of bus journey” = “that was today… the 24th of April”.",
+  },
+  {
+    key: "kw-q3",
+    questionNumber: 3,
+    questionEn: "Reason for trip: shopping and visit to the ______",
+    questionVi: "Reason for trip: shopping and visit to the ______",
+    modelParaphraseEn: "the main reason I came here was to go to the dentist",
+    modelParaphraseVi: "the main reason I came here was to go to the dentist",
+    acceptedAnswers: ["dentist", "go to the dentist", "visit the dentist"],
+    explanationEn: "“Visit to the ___” paraphrases “go to the dentist”; shopping is already given.",
+    explanationVi: "“Visit to the ___” = “go to the dentist”; shopping đã có sẵn trên đề.",
+  },
+  {
+    key: "kw-q4",
+    questionNumber: 4,
+    questionEn: "Travelled by bus because cost of ______ too high",
+    questionVi: "Travelled by bus because cost of ______ too high",
+    modelParaphraseEn: "parking was so difficult to find and it costs so much",
+    modelParaphraseVi: "parking was so difficult to find and it costs so much",
+    acceptedAnswers: ["parking", "costs so much", "too expensive"],
+    explanationEn: "“Cost of parking too high” = “parking… it costs so much”.",
+    explanationVi: "“Cost of parking too high” = “parking… it costs so much”.",
+  },
+  {
+    key: "kw-q5",
+    questionNumber: 5,
+    questionEn: "Got on bus at ______ Street",
+    questionVi: "Got on bus at ______ Street",
+    modelParaphraseEn: "At the bus stop on Claxby Street",
+    modelParaphraseVi: "At the bus stop on Claxby Street",
+    acceptedAnswers: ["Claxby", "bus stop on Claxby"],
+    explanationEn: "“Got on bus at” = “where did you start your journey? At the bus stop on…”.",
+    explanationVi: "“Got on bus at” = “where did you start your journey? At the bus stop on…”.",
+  },
+  {
+    key: "kw-q6",
+    questionNumber: 6,
+    questionEn: "Complaints: bus today was ______",
+    questionVi: "Complaints: bus today was ______",
+    modelParaphraseEn: "this morning it was late",
+    modelParaphraseVi: "this morning it was late",
+    acceptedAnswers: ["late", "this morning", "10 minutes"],
+    explanationEn: "“Bus today” = “this morning”; the complaint is that it was late.",
+    explanationVi: "“Bus today” = “this morning”; phàn nàn là xe late.",
+  },
+  {
+    key: "kw-q7",
+    questionNumber: 7,
+    questionEn: "Complaints: frequency of buses in the ______",
+    questionVi: "Complaints: frequency of buses in the ______",
+    modelParaphraseEn: "in the evening… wait a long time… there aren't that many",
+    modelParaphraseVi: "in the evening… wait a long time… there aren't that many",
+    acceptedAnswers: ["evening", "wait a long time", "aren't that many", "not many"],
+    explanationEn: "“Frequency” is paraphrased as a long wait / not many buses in the evening.",
+    explanationVi: "“Frequency” được nói thành chờ lâu / không có nhiều xe buổi evening.",
+  },
+  {
+    key: "kw-q8",
+    questionNumber: 8,
+    questionEn: "Goes to the ______ by car",
+    questionVi: "Goes to the ______ by car",
+    modelParaphraseEn: "Mainly just to go to the supermarket",
+    modelParaphraseVi: "Mainly just to go to the supermarket",
+    acceptedAnswers: ["supermarket"],
+    explanationEn: "She rarely uses the car — mainly to go to the supermarket.",
+    explanationVi: "Ít dùng ô tô — chủ yếu để đi supermarket.",
+  },
+  {
+    key: "kw-q9",
+    questionNumber: 9,
+    questionEn: "Dislikes travelling by bike in the city centre because of the ______",
+    questionVi: "Dislikes travelling by bike in the city centre because of the ______",
+    modelParaphraseEn: "I'm not keen on cycling there because of all the pollution",
+    modelParaphraseVi: "I'm not keen on cycling there because of all the pollution",
+    acceptedAnswers: ["pollution", "not keen on cycling"],
+    explanationEn: "“Dislikes travelling by bike” = “I'm not keen on cycling”.",
+    explanationVi: "“Dislikes travelling by bike” = “I'm not keen on cycling”.",
+  },
+  {
+    key: "kw-q10",
+    questionNumber: 10,
+    questionEn: "Doesn't own a bike because of a lack of ______",
+    questionVi: "Doesn't own a bike because of a lack of ______",
+    modelParaphraseEn: "it doesn't have any storage",
+    modelParaphraseVi: "it doesn't have any storage",
+    acceptedAnswers: ["storage", "no storage", "lack of storage"],
+    explanationEn: "“Lack of storage” = the flat “doesn't have any storage”.",
+    explanationVi: "“Lack of storage” = căn hộ “doesn't have any storage”.",
+  },
+];

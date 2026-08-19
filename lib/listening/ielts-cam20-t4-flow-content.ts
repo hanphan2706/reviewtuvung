@@ -1,4 +1,20 @@
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
+import {
+  CAM20_T4_P1_KEYWORD_PARAPHRASES,
+  CAM20_T4_P1_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam20-t4-p1-intensive";
+import {
+  CAM20_T4_P2_KEYWORD_PARAPHRASES,
+  CAM20_T4_P2_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam20-t4-p2-intensive";
+import {
+  CAM20_T4_P3_KEYWORD_PARAPHRASES,
+  CAM20_T4_P3_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam20-t4-p3-intensive";
+import {
+  CAM20_T4_P4_KEYWORD_PARAPHRASES,
+  CAM20_T4_P4_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam20-t4-p4-intensive";
 
 /** Nội dung flow nghe hiểu IELTS — Cam 20 Test 4 (viết tay theo transcript + QnA). */
 const CAM20_T4_P1: ListeningFlowLessonContent = {
@@ -106,6 +122,8 @@ const CAM20_T4_P1: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về khách sạn King's, tour đi bộ, thuyền, bảo tàng, chợ Clacton và vé rẻ…",
+  transcriptCloze: CAM20_T4_P1_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM20_T4_P1_KEYWORD_PARAPHRASES,
 };
 
 const CAM20_T4_P2: ListeningFlowLessonContent = {
@@ -218,6 +236,8 @@ const CAM20_T4_P2: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về giám sát trẻ, tour VIP/audio guide và các mốc luật bóng đá 1870–1880…",
+  transcriptCloze: CAM20_T4_P2_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM20_T4_P2_KEYWORD_PARAPHRASES,
 };
 
 const CAM20_T4_P3: ListeningFlowLessonContent = {
@@ -331,6 +351,8 @@ const CAM20_T4_P3: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về lợi ích bất ngờ, dyspraxia, laptop, chữ liền nét và ảnh hưởng thi cử…",
+  transcriptCloze: CAM20_T4_P3_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM20_T4_P3_KEYWORD_PARAPHRASES,
 };
 
 const CAM20_T4_P4: ListeningFlowLessonContent = {
@@ -438,6 +460,8 @@ const CAM20_T4_P4: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về chuột/rắn, du lịch, tai nạn giao thông, mưa, độc và cách xua chim săn mồi…",
+  transcriptCloze: CAM20_T4_P4_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM20_T4_P4_KEYWORD_PARAPHRASES,
 };
 
 export const IELTS_CAM20_T4_FLOW_CONTENT: Record<string, ListeningFlowLessonContent> = {

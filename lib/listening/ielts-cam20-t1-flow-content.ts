@@ -1,4 +1,20 @@
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
+import {
+  CAM20_T1_P1_KEYWORD_PARAPHRASES,
+  CAM20_T1_P1_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam20-t1-p1-intensive";
+import {
+  CAM20_T1_P2_KEYWORD_PARAPHRASES,
+  CAM20_T1_P2_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam20-t1-p2-intensive";
+import {
+  CAM20_T1_P3_KEYWORD_PARAPHRASES,
+  CAM20_T1_P3_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam20-t1-p3-intensive";
+import {
+  CAM20_T1_P4_KEYWORD_PARAPHRASES,
+  CAM20_T1_P4_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam20-t1-p4-intensive";
 
 /** Nội dung flow nghe hiểu IELTS — Cam 20 Test 1 (viết tay theo transcript + QnA). */
 const CAM20_T1_P1: ListeningFlowLessonContent = {
@@ -106,6 +122,8 @@ const CAM20_T1_P1: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về ba nhà hàng: vị trí, món nổi bật, giá và điểm đặc biệt…",
+  transcriptCloze: CAM20_T1_P1_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM20_T1_P1_KEYWORD_PARAPHRASES,
 };
 
 const CAM20_T1_P2: ListeningFlowLessonContent = {
@@ -213,6 +231,8 @@ const CAM20_T1_P2: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về lịch sử gốm, quy tắc an toàn, lò nung và dụng cụ cơ bản…",
+  transcriptCloze: CAM20_T1_P2_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM20_T1_P2_KEYWORD_PARAPHRASES,
 };
 
 const CAM20_T1_P3: ListeningFlowLessonContent = {
@@ -320,6 +340,8 @@ const CAM20_T1_P3: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về nguyên nhân cô đơn, rủi ro sức khỏe và ý tưởng mở đầu thuyết trình…",
+  transcriptCloze: CAM20_T1_P3_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM20_T1_P3_KEYWORD_PARAPHRASES,
 };
 
 const CAM20_T1_P4: ListeningFlowLessonContent = {
@@ -427,6 +449,8 @@ const CAM20_T1_P4: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về lịch sử ô nhiễm, phục hồi sông, dự án ven sông và vận tải sông…",
+  transcriptCloze: CAM20_T1_P4_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM20_T1_P4_KEYWORD_PARAPHRASES,
 };
 
 export const IELTS_CAM20_T1_FLOW_CONTENT: Record<string, ListeningFlowLessonContent> = {

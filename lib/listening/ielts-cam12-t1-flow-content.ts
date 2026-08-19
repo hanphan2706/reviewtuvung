@@ -1,4 +1,20 @@
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
+import {
+  CAM12_T1_P1_KEYWORD_PARAPHRASES,
+  CAM12_T1_P1_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam12-t1-p1-intensive";
+import {
+  CAM12_T1_P2_KEYWORD_PARAPHRASES,
+  CAM12_T1_P2_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam12-t1-p2-intensive";
+import {
+  CAM12_T1_P3_KEYWORD_PARAPHRASES,
+  CAM12_T1_P3_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam12-t1-p3-intensive";
+import {
+  CAM12_T1_P4_KEYWORD_PARAPHRASES,
+  CAM12_T1_P4_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam12-t1-p4-intensive";
 
 /** Flow nghe hiểu — CAM12 Test 1 (generated from transcript + QnA). */
 const CAM12_T1_P1: ListeningFlowLessonContent = {
@@ -103,7 +119,9 @@ const CAM12_T1_P1: ListeningFlowLessonContent = {
       answerVi: "experience",
     },
   ],
-  memoryPlaceholder: "Ghi vài ý về Family Excursions sau lần nghe đầu…",
+  memoryPlaceholder: "Ghi vài ý về Family Outings sau lần nghe đầu…",
+  transcriptCloze: CAM12_T1_P1_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM12_T1_P1_KEYWORD_PARAPHRASES,
 };
 
 const CAM12_T1_P2: ListeningFlowLessonContent = {
@@ -209,6 +227,8 @@ const CAM12_T1_P2: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Kitchen Assistants sau lần nghe đầu…",
+  transcriptCloze: CAM12_T1_P2_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM12_T1_P2_KEYWORD_PARAPHRASES,
 };
 
 const CAM12_T1_P3: ListeningFlowLessonContent = {
@@ -314,6 +334,8 @@ const CAM12_T1_P3: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Public Libraries Research sau lần nghe đầu…",
+  transcriptCloze: CAM12_T1_P3_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM12_T1_P3_KEYWORD_PARAPHRASES,
 };
 
 const CAM12_T1_P4: ListeningFlowLessonContent = {
@@ -419,6 +441,8 @@ const CAM12_T1_P4: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Business Values sau lần nghe đầu…",
+  transcriptCloze: CAM12_T1_P4_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM12_T1_P4_KEYWORD_PARAPHRASES,
 };
 
 export const IELTS_CAM12_T1_FLOW_CONTENT: Record<string, ListeningFlowLessonContent> = {

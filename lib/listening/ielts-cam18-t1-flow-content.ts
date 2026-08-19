@@ -1,4 +1,20 @@
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
+import {
+  CAM18_T1_P1_KEYWORD_PARAPHRASES,
+  CAM18_T1_P1_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam18-t1-p1-intensive";
+import {
+  CAM18_T1_P2_KEYWORD_PARAPHRASES,
+  CAM18_T1_P2_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam18-t1-p2-intensive";
+import {
+  CAM18_T1_P3_KEYWORD_PARAPHRASES,
+  CAM18_T1_P3_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam18-t1-p3-intensive";
+import {
+  CAM18_T1_P4_KEYWORD_PARAPHRASES,
+  CAM18_T1_P4_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam18-t1-p4-intensive";
 
 /** Nội dung flow nghe hiểu IELTS — Cam 18 Test 1 (viết tay theo transcript + QnA). */
 const CAM18_T1_P1: ListeningFlowLessonContent = {
@@ -106,6 +122,8 @@ const CAM18_T1_P1: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về mã bưu điện, lý do đi xe buýt, phàn nàn dịch vụ và vì sao chưa có xe đạp…",
+  transcriptCloze: CAM18_T1_P1_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM18_T1_P1_KEYWORD_PARAPHRASES,
 };
 
 const CAM18_T1_P2: ListeningFlowLessonContent = {
@@ -215,6 +233,8 @@ const CAM18_T1_P2: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về tuổi, huấn luyện, cam kết thời gian và kỹ năng cho từng vai tình nguyện…",
+  transcriptCloze: CAM18_T1_P2_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM18_T1_P2_KEYWORD_PARAPHRASES,
 };
 
 const CAM18_T1_P3: ListeningFlowLessonContent = {
@@ -324,6 +344,8 @@ const CAM18_T1_P3: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về thị trường việc làm, tư vấn nghề ở trường và kinh nghiệm bán lẻ hữu ích…",
+  transcriptCloze: CAM18_T1_P3_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM18_T1_P3_KEYWORD_PARAPHRASES,
 };
 
 const CAM18_T1_P4: ListeningFlowLessonContent = {
@@ -431,6 +453,8 @@ const CAM18_T1_P4: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về quá tải ở Majete, các bước gây mê–vận chuyển và lợi ích kinh tế tại Nkhotakota…",
+  transcriptCloze: CAM18_T1_P4_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM18_T1_P4_KEYWORD_PARAPHRASES,
 };
 
 export const IELTS_CAM18_T1_FLOW_CONTENT: Record<string, ListeningFlowLessonContent> = {

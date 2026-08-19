@@ -1,4 +1,20 @@
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
+import {
+  CAM19_T2_P1_KEYWORD_PARAPHRASES,
+  CAM19_T2_P1_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t2-p1-intensive";
+import {
+  CAM19_T2_P2_KEYWORD_PARAPHRASES,
+  CAM19_T2_P2_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t2-p2-intensive";
+import {
+  CAM19_T2_P3_KEYWORD_PARAPHRASES,
+  CAM19_T2_P3_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t2-p3-intensive";
+import {
+  CAM19_T2_P4_KEYWORD_PARAPHRASES,
+  CAM19_T2_P4_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t2-p4-intensive";
 
 /** Nội dung flow nghe hiểu IELTS — Cam 19 Test 2 (viết tay theo transcript + QnA). */
 const CAM19_T2_P1: ListeningFlowLessonContent = {
@@ -106,6 +122,8 @@ const CAM19_T2_P1: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về Gary, địa điểm college, giờ học và các hoạt động trong buổi guitar…",
+  transcriptCloze: CAM19_T2_P1_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T2_P1_KEYWORD_PARAPHRASES,
 };
 
 const CAM19_T2_P2: ListeningFlowLessonContent = {
@@ -169,8 +187,8 @@ const CAM19_T2_P2: ListeningFlowLessonContent = {
       conversationVi: "Bài nói — chuyển tới Northsea",
       questionEn: "What made David leave London and move to Northsea?",
       questionVi: "Vì sao David rời London và chuyển tới Northsea?",
-      answerEn: "He didn't like city life (website design job was unsatisfying in that sense) (C).",
-      answerVi: "Anh ấy không thích sống ở thành phố (công việc thiết kế web không thỏa mãn) (C).",
+      answerEn: "He was eager to develop a hobby (keen on boats) (A).",
+      answerVi: "Anh ấy muốn phát triển sở thích (thích thuyền) (A).",
     },
     {
       key: "p2-q12",
@@ -219,6 +237,8 @@ const CAM19_T2_P2: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về lý do gia nhập, huấn luyện, trách nhiệm helmsman và động lực mùa đông…",
+  transcriptCloze: CAM19_T2_P2_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T2_P2_KEYWORD_PARAPHRASES,
 };
 
 const CAM19_T2_P3: ListeningFlowLessonContent = {
@@ -329,6 +349,8 @@ const CAM19_T2_P3: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về thống kê tái chế, giày bị từ chối và dự án ghép giày thất bại…",
+  transcriptCloze: CAM19_T2_P3_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T2_P3_KEYWORD_PARAPHRASES,
 };
 
 const CAM19_T2_P4: ListeningFlowLessonContent = {
@@ -436,6 +458,8 @@ const CAM19_T2_P4: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về hình thái tardigrade, cryptobiosis, protein bảo vệ DNA và thí nghiệm không gian…",
+  transcriptCloze: CAM19_T2_P4_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T2_P4_KEYWORD_PARAPHRASES,
 };
 
 export const IELTS_CAM19_T2_FLOW_CONTENT: Record<string, ListeningFlowLessonContent> = {

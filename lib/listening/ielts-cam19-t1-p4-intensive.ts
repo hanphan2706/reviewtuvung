@@ -1,0 +1,276 @@
+import type {
+  ListeningKeywordParaphraseRow,
+  ListeningTranscriptClozeExercise,
+} from "@/lib/listening/tactics-basic-flow-types";
+
+export const CAM19_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
+  gaps: [
+    { id: "g1", answers: ["I'm going to talk about", "I am going to talk about"] },
+    { id: "g2", answers: ["I recently visited this site"] },
+    { id: "g3", answers: ["The site was first discovered"] },
+    { id: "g4", answers: ["they were constantly hitting against"] },
+    { id: "g5", answers: ["no one took him seriously"] },
+    { id: "g6", answers: ["It wasn't until 40 years later", "It was not until 40 years later"] },
+    { id: "g7", answers: ["began to explore further"] },
+    { id: "g8", answers: ["Carbon dating later proved"] },
+    { id: "g9", answers: ["Thanks to the bog which covers the area"] },
+    { id: "g10", answers: ["are extremely well-preserved", "are extremely well preserved"] },
+    { id: "g11", answers: ["several centuries of relative peace and stability"] },
+    { id: "g12", answers: ["This is one of many innovations"] },
+    { id: "g13", answers: ["Another new technology that Neolithic settlers brought"] },
+    { id: "g14", answers: ["It's thought that", "It is thought that"] },
+    { id: "g15", answers: ["in order to prevent over-grazing", "in order to prevent overgrazing"] },
+    { id: "g16", answers: ["this way of life at Céide ceased abruptly"] },
+    { id: "g17", answers: ["several factors may have contributed"] },
+    { id: "g18", answers: ["So now I'd like to show you some", "So now I would like to show you some"] },
+  ],
+  lines: [
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "For my presentation today, " },
+        { type: "gap", gapId: "g1" },
+        {
+          type: "text",
+          text: " the Céide Fields in the northwest of Ireland, one of the largest Neolithic sites in the world. ",
+        },
+        { type: "gap", gapId: "g2" },
+        {
+          type: "text",
+          text: " and observed the work that is currently being done by a team of archaeologists there.",
+        },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "gap", gapId: "g3" },
+        {
+          type: "text",
+          text: " in the 1930s by a local teacher, Patrick Caulfield. He noticed that when local people were digging in the bog, ",
+        },
+        { type: "gap", gapId: "g4" },
+        {
+          type: "text",
+          text: " what seemed to be rows of stones. He realised that these must be walls and that they must be thousands of years old for them to predate the bog which subsequently grew over them.",
+        },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        {
+          type: "text",
+          text: "He wrote to the National Museum in Dublin to ask them to investigate, but ",
+        },
+        { type: "gap", gapId: "g5" },
+        { type: "text", text: ". " },
+        { type: "gap", gapId: "g6" },
+        {
+          type: "text",
+          text: ", when Patrick Caulfield's son Seamus, who had become an archaeologist by then, ",
+        },
+        { type: "gap", gapId: "g7" },
+        {
+          type: "text",
+          text: ". He inserted iron probes into the bog to map the formation of the stones, a traditional method which local people had always used for finding fuel buried in the bog for thousands of years. ",
+        },
+        { type: "gap", gapId: "g8" },
+        {
+          type: "text",
+          text: " that the site was over 5,000 years old and was the largest Neolithic site in Ireland.",
+        },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "gap", gapId: "g9" },
+        {
+          type: "text",
+          text: ", the remains of the settlement at Céide Fields, which is over 5,000 years old, ",
+        },
+        { type: "gap", gapId: "g10" },
+        {
+          type: "text",
+          text: ". A bog is 90 percent water; its soil is so saturated that when the grasses and heathers that grow on its surface die, they don't fully decay but accumulate in layers. Objects remain so well preserved in these conditions because of the acidity of the peat and the deficiency of oxygen. At least 175 days of rain a year are required for this to happen; this part of Ireland gets an average of 225 days.",
+        },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        {
+          type: "text",
+          text: "The Neolithic farmers at Céide would have enjoyed ",
+        },
+        { type: "gap", gapId: "g11" },
+        {
+          type: "text",
+          text: ". Neolithic farmers generally lived in larger communities than their predecessors, with a number of houses built around a community building. As they lived in permanent settlements, Neolithic farmers were able to build bigger houses. These weren't round as people often assume, but rectangular with a small hole in the roof that allowed smoke to escape. ",
+        },
+        { type: "gap", gapId: "g12" },
+        {
+          type: "text",
+          text: " and indicates that the Neolithic farmers were the first people to cook indoors. ",
+        },
+        { type: "gap", gapId: "g13" },
+        {
+          type: "text",
+          text: " to Ireland was pottery. Fragments of Neolithic pots have been found in Céide and elsewhere in Ireland. The pots were used for many things; as well as for storing food, pots were filled with a small amount of fat and when this was set alight, they served as lamps.",
+        },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "gap", gapId: "g14" },
+        {
+          type: "text",
+          text: " the Céide Fields were mainly used as paddocks for animals to graze in. Evidence from the Céide Fields suggests that each plot of land was of a suitable size to sustain an extended family. They may have used a system of rotational grazing ",
+        },
+        { type: "gap", gapId: "g15" },
+        {
+          type: "text",
+          text: " and to allow for plant recovery and regrowth. This must have been a year-round activity as no structures have been found which would have been used to shelter animals in the winter.",
+        },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        {
+          type: "text",
+          text: "However, archaeologists believe that ",
+        },
+        { type: "gap", gapId: "g16" },
+        { type: "text", text: ". Why was this? Well, " },
+        { type: "gap", gapId: "g17" },
+        {
+          type: "text",
+          text: " to the changing circumstances. The soil would have become less productive and led to the abandonment of farming. The crop rotation system was partly responsible for this as it would have been very intensive and was not sustainable. But there were also climatic pressures too. The farmers at Céide would have enjoyed a relatively dry period, but this began to change and the conditions became wetter as there was a lot more rain. It was these conditions that encouraged the bog to form over the area which survives today.",
+        },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "gap", gapId: "g18" },
+        { type: "text", text: "…" },
+      ],
+    },
+  ],
+};
+
+export const CAM19_T1_P4_KEYWORD_PARAPHRASES: readonly ListeningKeywordParaphraseRow[] = [
+  {
+    key: "kw-q31",
+    questionNumber: 31,
+    questionEn: "stones beneath the bog surface were once ______",
+    questionVi: "stones beneath the bog surface were once ______",
+    modelParaphraseEn: "rows of stones. He realised that these must be walls",
+    modelParaphraseVi: "rows of stones. He realised that these must be walls",
+    acceptedAnswers: ["walls"],
+    explanationEn: "The local teacher realised the rows of stones were walls, older than the bog above them.",
+    explanationVi: "Giáo viên địa phương nhận ra hàng đá là walls, cổ hơn đầm lầy phủ bên trên.",
+  },
+  {
+    key: "kw-q32",
+    questionNumber: 32,
+    questionEn: "His ______ became an archaeologist and undertook an investigation",
+    questionVi: "His ______ became an archaeologist and undertook an investigation",
+    modelParaphraseEn: "Patrick Caulfield's son Seamus, who had become an archaeologist",
+    modelParaphraseVi: "Patrick Caulfield's son Seamus, who had become an archaeologist",
+    acceptedAnswers: ["son"],
+    explanationEn: "About 40 years later his son Seamus, by then an archaeologist, explored further.",
+    explanationVi: "Khoảng 40 năm sau, son Seamus – lúc đó đã là nhà khảo cổ – tiếp tục khảo sát.",
+  },
+  {
+    key: "kw-q33",
+    questionNumber: 33,
+    questionEn: "a traditional method used by local people to dig for ______",
+    questionVi: "a traditional method used by local people to dig for ______",
+    modelParaphraseEn: "a traditional method which local people had always used for finding fuel buried in the bog",
+    modelParaphraseVi: "a traditional method which local people had always used for finding fuel buried in the bog",
+    acceptedAnswers: ["fuel"],
+    explanationEn: "Iron probes were a traditional way to find fuel in the bog; Seamus used them to map the stones.",
+    explanationVi: "Que sắt là cách truyền thống để tìm fuel trong đầm; Seamus dùng để vẽ vị trí đá.",
+  },
+  {
+    key: "kw-q34",
+    questionNumber: 34,
+    questionEn: "Items are well preserved because of a lack of ______",
+    questionVi: "Items are well preserved because of a lack of ______",
+    modelParaphraseEn: "because of the acidity of the peat and the deficiency of oxygen",
+    modelParaphraseVi: "because of the acidity of the peat and the deficiency of oxygen",
+    acceptedAnswers: ["oxygen"],
+    explanationEn: "Bog preservation: acidity of peat plus a deficiency / lack of oxygen.",
+    explanationVi: "Đầm lầy bảo quản tốt vì peat chứa axit và thiếu oxygen.",
+  },
+  {
+    key: "kw-q35",
+    questionNumber: 35,
+    questionEn: "Houses were ______ in shape and had a hole in the roof",
+    questionVi: "Houses were ______ in shape and had a hole in the roof",
+    modelParaphraseEn: "These weren't round as people often assume, but rectangular with a small hole in the roof",
+    modelParaphraseVi: "These weren't round as people often assume, but rectangular with a small hole in the roof",
+    acceptedAnswers: ["rectangular"],
+    explanationEn: "Houses were rectangular, not round, with a smoke hole in the roof.",
+    explanationVi: "Nhà hình rectangular, không tròn, có lỗ thoát khói trên mái.",
+  },
+  {
+    key: "kw-q36",
+    questionNumber: 36,
+    questionEn: "pots used for storage and to make ______",
+    questionVi: "pots used for storage and to make ______",
+    modelParaphraseEn: "pots were filled with a small amount of fat and when this was set alight, they served as lamps",
+    modelParaphraseVi: "pots were filled with a small amount of fat and when this was set alight, they served as lamps",
+    acceptedAnswers: ["lamps"],
+    explanationEn: "Pots stored food and, with fat set alight, served as lamps.",
+    explanationVi: "Bình đựng thực phẩm và, khi đốt mỡ, dùng làm lamps.",
+  },
+  {
+    key: "kw-q37",
+    questionNumber: 37,
+    questionEn: "Each field was large enough to support a big ______",
+    questionVi: "Each field was large enough to support a big ______",
+    modelParaphraseEn: "each plot of land was of a suitable size to sustain an extended family",
+    modelParaphraseVi: "each plot of land was of a suitable size to sustain an extended family",
+    acceptedAnswers: ["family"],
+    explanationEn: "Each plot could sustain an extended family.",
+    explanationVi: "Mỗi lô đất đủ lớn để nuôi một extended family.",
+  },
+  {
+    key: "kw-q38",
+    questionNumber: 38,
+    questionEn: "no evidence of structures to house animals during ______",
+    questionVi: "no evidence of structures to house animals during ______",
+    modelParaphraseEn: "no structures have been found which would have been used to shelter animals in the winter",
+    modelParaphraseVi: "no structures have been found which would have been used to shelter animals in the winter",
+    acceptedAnswers: ["winter"],
+    explanationEn: "Grazing was year-round – no winter shelters for animals have been found.",
+    explanationVi: "Chăn thả quanh năm – không tìm thấy chuồng nhà cho động vật vào winter.",
+  },
+  {
+    key: "kw-q39",
+    questionNumber: 39,
+    questionEn: "a decline in ______ quality",
+    questionVi: "a decline in ______ quality",
+    modelParaphraseEn: "The soil would have become less productive and led to the abandonment of farming",
+    modelParaphraseVi: "The soil would have become less productive and led to the abandonment of farming",
+    acceptedAnswers: ["soil"],
+    explanationEn: "Intensive crop rotation made the soil less productive, so farming was abandoned.",
+    explanationVi: "Luân canh quá mức làm soil kém màu mỡ, dẫn đến bỏ canh tác.",
+  },
+  {
+    key: "kw-q40",
+    questionNumber: 40,
+    questionEn: "an increase in ______",
+    questionVi: "an increase in ______",
+    modelParaphraseEn: "the conditions became wetter as there was a lot more rain",
+    modelParaphraseVi: "the conditions became wetter as there was a lot more rain",
+    acceptedAnswers: ["rain"],
+    explanationEn: "Climate also changed: much more rain, which helped the bog form.",
+    explanationVi: "Khí hậu cũng đổi: nhiều rain hơn, thuận lợi cho đầm lầy hình thành.",
+  },
+];

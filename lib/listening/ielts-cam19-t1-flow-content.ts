@@ -1,4 +1,20 @@
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
+import {
+  CAM19_T1_P1_KEYWORD_PARAPHRASES,
+  CAM19_T1_P1_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t1-p1-intensive";
+import {
+  CAM19_T1_P2_KEYWORD_PARAPHRASES,
+  CAM19_T1_P2_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t1-p2-intensive";
+import {
+  CAM19_T1_P3_KEYWORD_PARAPHRASES,
+  CAM19_T1_P3_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t1-p3-intensive";
+import {
+  CAM19_T1_P4_KEYWORD_PARAPHRASES,
+  CAM19_T1_P4_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam19-t1-p4-intensive";
 
 export { getIeltsFlowLessonContent } from "@/lib/listening/ielts-flow-content-registry";
 
@@ -108,6 +124,8 @@ const CAM19_T1_P1: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về công viên, hoạt động học sinh và giá vé…",
+  transcriptCloze: CAM19_T1_P1_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T1_P1_KEYWORD_PARAPHRASES,
 };
 
 const CAM19_T1_P2: ListeningFlowLessonContent = {
@@ -217,6 +235,8 @@ const CAM19_T1_P2: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về chuyến Malatte, sự kiện gây quỹ và điểm trên bản đồ…",
+  transcriptCloze: CAM19_T1_P2_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T1_P2_KEYWORD_PARAPHRASES,
 };
 
 const CAM19_T1_P3: ListeningFlowLessonContent = {
@@ -325,6 +345,8 @@ const CAM19_T1_P3: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về dự án bánh mì, nhãn thực phẩm và xu hướng Colin–Marie bàn…",
+  transcriptCloze: CAM19_T1_P3_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T1_P3_KEYWORD_PARAPHRASES,
 };
 
 const CAM19_T1_P4: ListeningFlowLessonContent = {
@@ -432,6 +454,8 @@ const CAM19_T1_P4: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi ý về phát hiện Céide Fields, đời sống Neolithic và lý do bỏ canh tác…",
+  transcriptCloze: CAM19_T1_P4_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM19_T1_P4_KEYWORD_PARAPHRASES,
 };
 
 export const IELTS_CAM19_T1_FLOW_CONTENT: Record<string, ListeningFlowLessonContent> = {

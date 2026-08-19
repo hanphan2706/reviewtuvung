@@ -1,4 +1,20 @@
 import type { ListeningFlowLessonContent } from "@/lib/listening/tactics-basic-flow-types";
+import {
+  CAM12_T4_P1_KEYWORD_PARAPHRASES,
+  CAM12_T4_P1_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam12-t4-p1-intensive";
+import {
+  CAM12_T4_P2_KEYWORD_PARAPHRASES,
+  CAM12_T4_P2_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam12-t4-p2-intensive";
+import {
+  CAM12_T4_P3_KEYWORD_PARAPHRASES,
+  CAM12_T4_P3_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam12-t4-p3-intensive";
+import {
+  CAM12_T4_P4_KEYWORD_PARAPHRASES,
+  CAM12_T4_P4_TRANSCRIPT_CLOZE,
+} from "@/lib/listening/ielts-cam12-t4-p4-intensive";
 
 /** Flow nghe hiểu — CAM12 Test 4 (generated from transcript + QnA). */
 const CAM12_T4_P1: ListeningFlowLessonContent = {
@@ -104,6 +120,8 @@ const CAM12_T4_P1: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Cycle Tour Leader Enquiry sau lần nghe đầu…",
+  transcriptCloze: CAM12_T4_P1_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM12_T4_P1_KEYWORD_PARAPHRASES,
 };
 
 const CAM12_T4_P2: ListeningFlowLessonContent = {
@@ -209,6 +227,8 @@ const CAM12_T4_P2: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về The Sheepmarket sau lần nghe đầu…",
+  transcriptCloze: CAM12_T4_P2_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM12_T4_P2_KEYWORD_PARAPHRASES,
 };
 
 const CAM12_T4_P3: ListeningFlowLessonContent = {
@@ -314,6 +334,8 @@ const CAM12_T4_P3: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Film Studies Presentation sau lần nghe đầu…",
+  transcriptCloze: CAM12_T4_P3_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM12_T4_P3_KEYWORD_PARAPHRASES,
 };
 
 const CAM12_T4_P4: ListeningFlowLessonContent = {
@@ -419,6 +441,8 @@ const CAM12_T4_P4: ListeningFlowLessonContent = {
     },
   ],
   memoryPlaceholder: "Ghi vài ý về Urban Acoustics sau lần nghe đầu…",
+  transcriptCloze: CAM12_T4_P4_TRANSCRIPT_CLOZE,
+  keywordParaphrases: CAM12_T4_P4_KEYWORD_PARAPHRASES,
 };
 
 export const IELTS_CAM12_T4_FLOW_CONTENT: Record<string, ListeningFlowLessonContent> = {
