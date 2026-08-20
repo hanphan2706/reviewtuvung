@@ -5,30 +5,30 @@ import type {
 
 export const CAM16_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["shall we try to get some ideas together"] },
-    { id: "g2", answers: ["I can talk about the experiment I did"] },
-    { id: "g3", answers: ["if people can tell the difference between"] },
-    { id: "g4", answers: ["It took me ages to decide exactly how I'd organise it", "It took me ages to decide exactly how I would organise it", "It took me ages to decide exactly how I'd organize it"] },
-    { id: "g5", answers: ["So could most people tell the difference"] },
-    { id: "g6", answers: ["I hadn't thought they would be able to", "I had not thought they would be able to"] },
-    { id: "g7", answers: ["to see if the nutritional information given on the packet was accurate"] },
-    { id: "g8", answers: ["mixed them with a chemical to absorb the fat"] },
+    { id: "g1", answers: ["get some ideas together"] },
+    { id: "g2", answers: ["the experiment I did"] },
+    { id: "g3", answers: ["tell the difference between"] },
+    { id: "g4", answers: ["how I'd organise it", "how I would organise it", "how I'd organize it", "how I would organize it"] },
+    { id: "g5", answers: ["tell the difference"] },
+    { id: "g6", answers: ["they would be able to"] },
+    { id: "g7", answers: ["on the packet was accurate"] },
+    { id: "g8", answers: ["to absorb the fat"] },
     { id: "g9", answers: ["My results were a bit problematic"] },
-    { id: "g10", answers: ["I'd really like to try the experiment again some time", "I would really like to try the experiment again some time"] },
-    { id: "g11", answers: ["So what can we say about helping people to lose weight"] },
-    { id: "g12", answers: ["I think food manufacturers could do more to encourage healthy eating"] },
-    { id: "g13", answers: ["But who's going to eat a quarter pizza", "But who is going to eat a quarter pizza"] },
-    { id: "g14", answers: ["I suppose another approach to this problem is"] },
-    { id: "g15", answers: ["So how can people be encouraged to take more exercise"] },
-    { id: "g16", answers: ["it might not be a big change, but if it happens every day, it all adds up"] },
-    { id: "g17", answers: ["we've done quite a bit of reading about it", "we have done quite a bit of reading about it"] },
-    { id: "g18", answers: ["We've still got half an hour before our next lecture", "We have still got half an hour before our next lecture"] },
+    { id: "g10", answers: ["try the experiment again"] },
+    { id: "g11", answers: ["helping people to lose weight"] },
+    { id: "g12", answers: ["encourage healthy eating"] },
+    { id: "g13", answers: ["eat a quarter pizza"] },
+    { id: "g14", answers: ["another approach to this problem"] },
+    { id: "g15", answers: ["take more exercise"] },
+    { id: "g16", answers: ["it all adds up"] },
+    { id: "g17", answers: ["quite a bit of reading"] },
+    { id: "g18", answers: ["before our next lecture"] },
   ],
   lines: [
     {
       speaker: "ADAM",
       segments: [
-        { type: "text", text: "OK Rosie, " },
+        { type: "text", text: "OK Rosie, shall we try to " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " for our presentation on diet and obesity?" },
       ],
@@ -37,8 +37,9 @@ export const CAM16_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ADAM",
       segments: [
+        { type: "text", text: "I can talk about " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: " to see " },
+        { type: "text", text: " to see if people can " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: " real sugar and artificial sweeteners." },
       ],
@@ -55,7 +56,7 @@ export const CAM16_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ADAM",
       segments: [
-        { type: "text", text: "Yeah. " },
+        { type: "text", text: "Yeah. It took me ages to decide exactly " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
@@ -65,12 +66,16 @@ export const CAM16_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "ROSIE",
-      segments: [{ type: "gap", gapId: "g5" }, { type: "text", text: "?" }],
+      segments: [
+        { type: "text", text: "So could most people " },
+        { type: "gap", gapId: "g5" },
+        { type: "text", text: "?" },
+      ],
     },
     {
       speaker: "ADAM",
       segments: [
-        { type: "text", text: "Yeah - " },
+        { type: "text", text: "Yeah - I hadn't thought " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: ", but most people could." },
       ],
@@ -78,7 +83,7 @@ export const CAM16_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROSIE",
       segments: [
-        { type: "text", text: "Then there's that experiment I did measuring the fat content of nuts, " },
+        { type: "text", text: "Then there's that experiment I did measuring the fat content of nuts, to see if the nutritional information given " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -86,7 +91,7 @@ export const CAM16_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ADAM",
       segments: [
-        { type: "text", text: "The one where you ground up the nuts and " },
+        { type: "text", text: "The one where you ground up the nuts and mixed them with a chemical " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "?" },
       ],
@@ -98,15 +103,16 @@ export const CAM16_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: " - the fat content for that type of nut seemed much lower than it said on the package. But I reckon the package information was right. I think I should probably have ground up the nuts more than I did. It's possible that the scales for weighing the fat weren't accurate enough, too. ",
+          text: " - the fat content for that type of nut seemed much lower than it said on the package. But I reckon the package information was right. I think I should probably have ground up the nuts more than I did. It's possible that the scales for weighing the fat weren't accurate enough, too. I'd really like to ",
         },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " some time." },
       ],
     },
     {
       speaker: "ADAM",
       segments: [
+        { type: "text", text: "So what can we say about " },
         { type: "gap", gapId: "g11" },
         {
           type: "text",
@@ -116,7 +122,11 @@ export const CAM16_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "ROSIE",
-      segments: [{ type: "gap", gapId: "g12" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "I think food manufacturers could do more to " },
+        { type: "gap", gapId: "g12" },
+        { type: "text", text: "." },
+      ],
     },
     { speaker: "ADAM", segments: [{ type: "text", text: "How?" }] },
     {
@@ -133,7 +143,7 @@ export const CAM16_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yeah, so if you look at the amount of calories in a pizza, they'll give you the calories per quarter pizza and you think, oh that's not too bad. ",
+          text: "Yeah, so if you look at the amount of calories in a pizza, they'll give you the calories per quarter pizza and you think, oh that's not too bad. But who's going to ",
         },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "?" },
@@ -143,8 +153,9 @@ export const CAM16_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ADAM",
       segments: [
+        { type: "text", text: "I suppose " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: " to get people to exercise more." },
+        { type: "text", text: " is to get people to exercise more." },
       ],
     },
     {
@@ -159,7 +170,11 @@ export const CAM16_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { speaker: "ADAM", segments: [{ type: "text", text: "Mm, so you can see why obesity is growing." }] },
     {
       speaker: "ROSIE",
-      segments: [{ type: "gap", gapId: "g15" }, { type: "text", text: "?" }],
+      segments: [
+        { type: "text", text: "So how can people be encouraged to " },
+        { type: "gap", gapId: "g15" },
+        { type: "text", text: "?" },
+      ],
     },
     {
       speaker: "ADAM",
@@ -173,7 +188,10 @@ export const CAM16_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROSIE",
       segments: [
-        { type: "text", text: "Right. And " },
+        {
+          type: "text",
+          text: "Right. And it might not be a big change, but if it happens every day, ",
+        },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "." },
       ],
@@ -187,9 +205,9 @@ export const CAM16_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROSIE",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, we've done " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " about it." },
       ],
     },
     {
@@ -213,7 +231,7 @@ export const CAM16_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ADAM",
       segments: [
-        { type: "text", text: "So what shall we do now? " },
+        { type: "text", text: "So what shall we do now? We've still got half an hour " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

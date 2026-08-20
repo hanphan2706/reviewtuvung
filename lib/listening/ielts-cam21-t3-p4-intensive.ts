@@ -17,12 +17,12 @@ export const CAM21_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g10", answers: ["as a form of biological control"] },
     { id: "g11", answers: ["this number soon grew"] },
     { id: "g12", answers: ["they did reproduce rapidly"] },
-    { id: "g13", answers: ["poisonous at every stage of their life cycle"] },
+    { id: "g13", answers: ["every stage of their life cycle"] },
     { id: "g14", answers: ["have had a devastating impact"] },
     { id: "g15", answers: ["it's so hard to eradicate", "it is so hard to eradicate"] },
-    { id: "g16", answers: ["have outcompeted the smaller, native red squirrels"] },
+    { id: "g16", answers: ["have outcompeted"] },
     { id: "g17", answers: ["An important question for ecologists worldwide"] },
-    { id: "g18", answers: ["the public also have a vital role to play"] },
+    { id: "g18", answers: ["a vital role to play"] },
   ],
   lines: [
     {
@@ -93,7 +93,7 @@ export const CAM21_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g12" },
         {
           type: "text",
-          text: " and could soon be found all over the northern half of the country. The toads are ",
+          text: " and could soon be found all over the northern half of the country. The toads are poisonous at ",
         },
         { type: "gap", gapId: "g13" },
         { type: "text", text: ", and anything that eats them will die." },
@@ -133,7 +133,7 @@ export const CAM21_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g16" },
         {
           type: "text",
-          text: ". They both eat the same food, and the grey squirrels carry a type of virus that is deadly to the red squirrels. Red squirrel populations have collapsed, and there are only a handful of sites left in the UK where they're found.",
+          text: " the smaller, native red squirrels. They both eat the same food, and the grey squirrels carry a type of virus that is deadly to the red squirrels. Red squirrel populations have collapsed, and there are only a handful of sites left in the UK where they're found.",
         },
       ],
     },
@@ -143,7 +143,7 @@ export const CAM21_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g17" },
         {
           type: "text",
-          text: " is, what can we do to tackle the problem of invasive species? The first step in controlling invasive species is learning about the behaviour of new species coming into the country. Monitoring is an important part of this, so that we can know if the new species begins to have a negative impact in its new environment. One effective way to keep track of invasive species is to create a database for the whole country. That way, all relevant authorities and agencies can share important information and take whatever action's needed. But " },
+          text: " is, what can we do to tackle the problem of invasive species? The first step in controlling invasive species is learning about the behaviour of new species coming into the country. Monitoring is an important part of this, so that we can know if the new species begins to have a negative impact in its new environment. One effective way to keep track of invasive species is to create a database for the whole country. That way, all relevant authorities and agencies can share important information and take whatever action's needed. But the public also have " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",

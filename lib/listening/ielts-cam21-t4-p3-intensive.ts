@@ -5,29 +5,30 @@ import type {
 
 export const CAM21_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["You know that joint presentation we've got to do", "You know that joint presentation we have got to do"] },
+    { id: "g1", answers: ["we've got to do", "we have got to do"] },
     { id: "g2", answers: ["I'm a bit concerned", "I am a bit concerned"] },
-    { id: "g3", answers: ["It's more a matter of reporting and evaluating possible developments", "It is more a matter of reporting and evaluating possible developments"] },
+    { id: "g3", answers: ["more a matter of"] },
     { id: "g4", answers: ["we mustn't be too general", "we must not be too general"] },
-    { id: "g5", answers: ["that's not too much of a rush", "that is not too much of a rush"] },
+    { id: "g5", answers: ["too much of a rush"] },
     { id: "g6", answers: ["We'd better decide now", "We had better decide now"] },
     { id: "g7", answers: ["That's likely to become more important", "That is likely to become more important"] },
     { id: "g8", answers: ["let's go with that", "let us go with that"] },
     { id: "g9", answers: ["one way of meeting that demand"] },
-    { id: "g10", answers: ["Let's think of some specific developments for houses of the future", "Let us think of some specific developments for houses of the future"] },
-    { id: "g11", answers: ["it would greatly improve how you feel"] },
-    { id: "g12", answers: ["instead of just having a laptop on the kitchen table"] },
-    { id: "g13", answers: ["so they aren't having to travel to an office", "so they are not having to travel to an office"] },
-    { id: "g14", answers: ["so the space can be adapted over time"] },
-    { id: "g15", answers: ["not so sure they're a good idea", "not so sure they are a good idea"] },
-    { id: "g16", answers: ["store their electric bikes securely and charge them up at the same time"] },
-    { id: "g17", answers: ["the centre was all a pedestrianised area", "the centre was all a pedestrianized area"] },
+    { id: "g10", answers: ["Let's think of", "Let us think of"] },
+    { id: "g11", answers: ["greatly improve how you feel"] },
+    { id: "g12", answers: ["instead of just having"] },
+    { id: "g13", answers: ["travel to an office"] },
+    { id: "g14", answers: ["adapted over time"] },
+    { id: "g15", answers: ["not so sure"] },
+    { id: "g16", answers: ["charge them up"] },
+    { id: "g17", answers: ["a pedestrianised area", "a pedestrianized area"] },
     { id: "g18", answers: ["doing something together's always more enjoyable", "doing something together is always more enjoyable"] },
   ],
   lines: [
     {
       speaker: "MIA",
       segments: [
+        { type: "text", text: "You know that joint presentation " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " this semester, Leo?" },
       ],
@@ -44,9 +45,9 @@ export const CAM21_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LEO",
       segments: [
-        { type: "text", text: "I don't think so. " },
+        { type: "text", text: "I don't think so. It's " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: ". But " },
+        { type: "text", text: " reporting and evaluating possible developments. But " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
@@ -61,7 +62,7 @@ export const CAM21_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LEO",
       segments: [
-        { type: "text", text: "In about 6 weeks, so " },
+        { type: "text", text: "In about 6 weeks, so that's not " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: "." },
       ],
@@ -125,7 +126,7 @@ export const CAM21_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "MIA",
-      segments: [{ type: "gap", gapId: "g10" }, { type: "text", text: "." }],
+      segments: [{ type: "gap", gapId: "g10" }, { type: "text", text: " some specific developments for houses of the future." }],
     },
     {
       speaker: "LEO",
@@ -136,7 +137,7 @@ export const CAM21_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes. In fact it doesn't have to be high-rise, you can do it on a one-storey building in a suburb, but " },
+          text: "Yes. In fact it doesn't have to be high-rise, you can do it on a one-storey building in a suburb, but it would " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: " if you live in an urban high-rise." },
       ],
@@ -152,13 +153,13 @@ export const CAM21_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "Yes. I think homes of the future will all need access to a shared working space, somewhere in the same building or group of houses, where people can go and work " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: "." },
+        { type: "text", text: " a laptop on the kitchen table." },
       ],
     },
     {
       speaker: "LEO",
       segments: [
-        { type: "text", text: "Yes, " },
+        { type: "text", text: "Yes, so they aren't having to " },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
@@ -171,7 +172,7 @@ export const CAM21_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yeah. I read about a type of design where the internal walls of an apartment are moveable, " },
+          text: "Yeah. I read about a type of design where the internal walls of an apartment are moveable, so the space can be " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " as people's needs change." },
       ],
@@ -199,7 +200,7 @@ export const CAM21_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Hmm, " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: "." },
+        { type: "text", text: " they're a good idea." },
       ],
     },
     {
@@ -213,9 +214,9 @@ export const CAM21_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "What about transport? Wouldn't it be good if there were bike sheds with charging points, so people could " },
+          text: "What about transport? Wouldn't it be good if there were bike sheds with charging points, so people could store their electric bikes securely and " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " at the same time." },
       ],
     },
     {
@@ -232,7 +233,7 @@ export const CAM21_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I read about one housing development where cars had to be left just outside it, so " },
+          text: "I read about one housing development where cars had to be left just outside it, so the centre was all " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: ". Great for families with children." },
       ],

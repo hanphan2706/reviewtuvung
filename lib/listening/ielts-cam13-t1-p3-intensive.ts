@@ -5,82 +5,60 @@ import type {
 
 export const CAM13_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    {
-      id: "g1",
-      answers: [
-        "We've got to choose a topic for our experiment, haven't we, Jack",
-        "We have got to choose a topic for our experiment, haven't we, Jack",
-      ],
-    },
-    { id: "g2", answers: ["Were you thinking of something to do with seeds"] },
-    { id: "g3", answers: ["I thought we could look at seed germination"] },
-    { id: "g4", answers: ["how a seed begins to grow"] },
+    { id: "g1", answers: ["choose a topic"] },
+    { id: "g2", answers: ["something to do with seeds"] },
+    { id: "g3", answers: ["look at seed germination"] },
+    { id: "g4", answers: ["begins to grow"] },
     {
       id: "g5",
-      answers: [
-        "I know you're hoping to work in plant science eventually",
-        "I know you are hoping to work in plant science eventually",
-      ],
+      answers: ["work in plant science"],
     },
-    { id: "g6", answers: ["practically everything we do is going to feed into that"] },
+    { id: "g6", answers: ["feed into that"] },
     {
       id: "g7",
       answers: [
-        "If I choose that option, I don't have to do a dissertation module",
-        "If I choose that option, I do not have to do a dissertation module",
+        "don't have to do a dissertation",
+        "do not have to do a dissertation",
       ],
     },
-    { id: "g8", answers: ["That should be fine if we start now"] },
-    { id: "g9", answers: ["A lot of the other possible experiments need quite a bit longer"] },
+    { id: "g8", answers: ["if we start now"] },
+    { id: "g9", answers: ["need quite a bit longer"] },
     {
       id: "g10",
       answers: [
-        "we're not doing chemical analysis or anything",
-        "we are not doing chemical analysis or anything",
+        "chemical analysis or anything",
       ],
     },
     {
       id: "g11",
-      answers: [
-        "we've got plenty of equipment in the laboratory",
-        "we have got plenty of equipment in the laboratory",
-      ],
+      answers: ["plenty of equipment"],
     },
-    {
-      id: "g12",
-      answers: [
-        "We need to have a word with the tutor if we're going to go ahead with it",
-        "We need to have a word with the tutor if we are going to go ahead with it",
-      ],
-    },
+    { id: "g12", answers: ["have a word with the tutor"] },
     {
       id: "g13",
       answers: ["It's not very ambitious", "It is not very ambitious"],
     },
-    { id: "g14", answers: ["Did you read that book on seed germination on our reading list"] },
+    { id: "g14", answers: ["on our reading list"] },
     {
       id: "g15",
       answers: [
-        "I'd been hoping for something more practical",
-        "I had been hoping for something more practical",
+        "hoping for something more practical",
       ],
     },
     { id: "g16", answers: ["Yes, that was interesting"] },
-    { id: "g17", answers: ["I think those diagrams were in another article"] },
+    { id: "g17", answers: ["in another article"] },
     {
       id: "g18",
-      answers: [
-        "We'll need to get going with it quite soon",
-        "We will need to get going with it quite soon",
-      ],
+      answers: ["get going with it"],
     },
   ],
   lines: [
     {
       speaker: "EMMA",
       segments: [
+        { type: "text", text: "We've got to " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "? " },
+        { type: "text", text: " for our experiment, haven't we, Jack? Were you thinking of " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "?" },
       ],
@@ -88,9 +66,9 @@ export const CAM13_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JACK",
       segments: [
-        { type: "text", text: "That's right. " },
+        { type: "text", text: "That's right. I thought we could " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: " - " },
+        { type: "text", text: " - how a seed " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -98,22 +76,22 @@ export const CAM13_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "EMMA",
       segments: [
-        { type: "text", text: "OK. Any particular reason? " },
+        { type: "text", text: "OK. Any particular reason? I know you're hoping to " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: " …" },
+        { type: "text", text: " eventually …" },
       ],
     },
     {
       speaker: "JACK",
       segments: [
-        { type: "text", text: "Yeah, but " },
+        { type: "text", text: "Yeah, but practically everything we do is going to " },
         { type: "gap", gapId: "g6" },
         {
           type: "text",
-          text: ". No, there's an optional module on seed structure and function in the third year that I might do, so I thought it might be useful for that. ",
+          text: ". No, there's an optional module on seed structure and function in the third year that I might do, so I thought it might be useful for that. If I choose that option, I ",
         },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: " module." },
       ],
     },
     { speaker: "EMMA", segments: [{ type: "text", text: "Good idea." }] },
@@ -133,8 +111,9 @@ export const CAM13_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JACK",
       segments: [
+        { type: "text", text: "That should be fine " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: ". " },
+        { type: "text", text: ". A lot of the other possible experiments " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -142,19 +121,22 @@ export const CAM13_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "EMMA",
       segments: [
-        { type: "text", text: "So that'd make it a good one to choose. And I don't suppose it'd need much equipment; " },
+        {
+          type: "text",
+          text: "So that'd make it a good one to choose. And I don't suppose it'd need much equipment; we're not doing ",
+        },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: ". Though that's not really an issue, " },
+        { type: "text", text: ". Though that's not really an issue, we've got " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: "." },
+        { type: "text", text: " in the laboratory." },
       ],
     },
     {
       speaker: "JACK",
       segments: [
-        { type: "text", text: "Yeah. " },
+        { type: "text", text: "Yeah. We need to " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: " though. I'm sure our aim's OK. " },
+        { type: "text", text: " if we're going to go ahead with it though. I'm sure our aim's OK. " },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
@@ -173,7 +155,11 @@ export const CAM13_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "JACK",
-      segments: [{ type: "gap", gapId: "g14" }, { type: "text", text: "?" }],
+      segments: [
+        { type: "text", text: "Did you read that book on seed germination " },
+        { type: "gap", gapId: "g14" },
+        { type: "text", text: "?" },
+      ],
     },
     {
       speaker: "EMMA",
@@ -187,7 +173,7 @@ export const CAM13_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JACK",
       segments: [
-        { type: "text", text: "Yes, " },
+        { type: "text", text: "Yes, I'd been " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
@@ -226,14 +212,18 @@ export const CAM13_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "JACK",
-      segments: [{ type: "gap", gapId: "g17" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "I think those diagrams were " },
+        { type: "gap", gapId: "g17" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: "EMMA",
       segments: [
-        { type: "text", text: "Anyway, shall we have a look at the procedure for our experiment? " },
+        { type: "text", text: "Anyway, shall we have a look at the procedure for our experiment? We'll need to " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: "." },
+        { type: "text", text: " quite soon." },
       ],
     },
     {

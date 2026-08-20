@@ -7,39 +7,33 @@ export const CAM14_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "I'll start by examining its early history",
-        "I will start by examining its early history",
-      ],
+      answers: ["its early history"],
     },
-    { id: "g2", answers: ["played an important role in many creation myths"] },
-    { id: "g3", answers: ["weather was attributed to the whims of the gods"] },
+    { id: "g2", answers: ["many creation myths"] },
+    { id: "g3", answers: ["whims of the gods"] },
     { id: "g4", answers: ["drawing the correct conclusions"] },
     { id: "g5", answers: ["the first short-range weather forecasts"] },
     {
       id: "g6",
-      answers: ["The ancient Greeks were the first to develop a more scientific approach"],
+      answers: ["a more scientific approach"],
     },
-    { id: "g7", answers: ["his ideas held sway for nearly 2,000 years"] },
+    { id: "g7", answers: ["nearly 2,000 years"] },
     {
       id: "g8",
-      answers: ["bright circles of light around the sun, the moon and bright stars"],
+      answers: ["bright circles of light"],
     },
-    { id: "g9", answers: ["Many of his observations were surprisingly accurate"] },
-    { id: "g10", answers: ["he also jumped to quite a few wrong conclusions"] },
-    { id: "g11", answers: ["Errors like this were rectified from the Renaissance onwards"] },
-    { id: "g12", answers: ["accepted as the chief authority on weather theory"] },
-    { id: "g13", answers: ["based on very good observations and are accurate"] },
-    { id: "g14", answers: ["could only be based on personal observation"] },
+    { id: "g9", answers: ["surprisingly accurate"] },
+    { id: "g10", answers: ["wrong conclusions"] },
+    { id: "g11", answers: ["from the Renaissance onwards"] },
+    { id: "g12", answers: ["chief authority on weather theory"] },
+    { id: "g13", answers: ["very good observations"] },
+    { id: "g14", answers: ["personal observation"] },
     { id: "g15", answers: ["which measured humidity"] },
     { id: "g16", answers: ["pressure decreases with altitude"] },
-    { id: "g17", answers: ["they started collecting weather observation data systematically"] },
+    { id: "g17", answers: ["data systematically"] },
     {
       id: "g18",
-      answers: [
-        "we'll continue from that point next week",
-        "we will continue from that point next week",
-      ],
+      answers: ["from that point next week"],
     },
   ],
   lines: [
@@ -48,7 +42,7 @@ export const CAM14_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "In this series of lectures about the history of weather forecasting, ",
+          text: "In this series of lectures about the history of weather forecasting, I'll start by examining ",
         },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " – that'll be the subject of today's talk." },
@@ -59,7 +53,7 @@ export const CAM14_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "OK, so we'll start by going back thousands of years. Most ancient cultures had weather gods, and weather catastrophes, such as floods, ",
+          text: "OK, so we'll start by going back thousands of years. Most ancient cultures had weather gods, and weather catastrophes, such as floods, played an important role in ",
         },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
@@ -68,7 +62,7 @@ export const CAM14_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Generally, " },
+        { type: "text", text: "Generally, weather was attributed to the " },
         { type: "gap", gapId: "g3" },
         {
           type: "text",
@@ -125,6 +119,10 @@ export const CAM14_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        {
+          type: "text",
+          text: "The ancient Greeks were the first to develop ",
+        },
         { type: "gap", gapId: "g6" },
         { type: "text", text: " to explaining the weather." },
       ],
@@ -134,7 +132,7 @@ export const CAM14_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The work of the philosopher and scientist Aristotle, in the fourth century BC, is especially noteworthy, as ",
+          text: "The work of the philosopher and scientist Aristotle, in the fourth century BC, is especially noteworthy, as his ideas held sway for ",
         },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
@@ -148,12 +146,16 @@ export const CAM14_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "In 340 BC, he wrote a book in which he attempted to account for the formation of rain, clouds, wind and storms. He also described celestial phenomena such as haloes – that is, ",
         },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: " – and comets." },
+        {
+          type: "text",
+          text: " around the sun, the moon and bright stars – and comets.",
+        },
       ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Many of his observations were " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -163,7 +165,7 @@ export const CAM14_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "For example, he believed that heat could cause water to evaporate. But ",
+          text: "For example, he believed that heat could cause water to evaporate. But he also jumped to quite a few ",
         },
         { type: "gap", gapId: "g10" },
         { type: "text", text: ", such as that winds are breathed out by the Earth." },
@@ -172,6 +174,7 @@ export const CAM14_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Errors like this were rectified " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -179,7 +182,7 @@ export const CAM14_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "For nearly 2,000 years, Aristotle's work was " },
+        { type: "text", text: "For nearly 2,000 years, Aristotle's work was accepted as the " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -189,16 +192,16 @@ export const CAM14_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Alongside this, though, in the Middle Ages weather observations were passed on in the form of proverbs, such as 'Red sky at night, shepherd's delight; red sky in the morning, shepherd's warning'. Many of these are ",
+          text: "Alongside this, though, in the Middle Ages weather observations were passed on in the form of proverbs, such as 'Red sky at night, shepherd's delight; red sky in the morning, shepherd's warning'. Many of these are based on ",
         },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: ", as contemporary meteorologists have discovered." },
+        { type: "text", text: " and are accurate, as contemporary meteorologists have discovered." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "For centuries, any attempt to forecast the weather " },
+        { type: "text", text: "For centuries, any attempt to forecast the weather could only be based on " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
@@ -239,7 +242,7 @@ export const CAM14_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "This increasing ability to measure factors related to weather helped scientists to understand the atmosphere and its processes better, and ",
+          text: "This increasing ability to measure factors related to weather helped scientists to understand the atmosphere and its processes better, and they started collecting weather observation ",
         },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
@@ -268,7 +271,7 @@ export const CAM14_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "It was not until the early twentieth century that mathematics and physics became part of meteorology, and ",
+          text: "It was not until the early twentieth century that mathematics and physics became part of meteorology, and we'll continue ",
         },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },

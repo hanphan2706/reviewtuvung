@@ -13,7 +13,7 @@ export const CAM18_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g6", answers: ["So how did you hear about"] },
     { id: "g7", answers: ["I usually do that"] },
     { id: "g8", answers: ["he'd heard good things", "he had heard good things"] },
-    { id: "g9", answers: ["what do you hope to get from"] },
+    { id: "g9", answers: ["what do you hope to get"] },
     { id: "g10", answers: ["That's a good idea", "That is a good idea"] },
     { id: "g11", answers: ["If I could just find out"] },
     { id: "g12", answers: ["Not yet"] },
@@ -111,7 +111,7 @@ export const CAM18_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "OK. So " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: " joining?" },
+        { type: "text", text: " from joining?" },
       ],
     },
     {

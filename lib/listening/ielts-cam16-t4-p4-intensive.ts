@@ -5,41 +5,39 @@ import type {
 
 export const CAM16_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["One of the most famous cases of extinction"] },
-    { id: "g2", answers: ["used to refer to something which no longer exists"] },
-    { id: "g3", answers: ["although it could only be found in one place"] },
-    { id: "g4", answers: ["it had lost the ability to fly"] },
+    { id: "g1", answers: ["famous cases of extinction"] },
+    { id: "g2", answers: ["no longer exists"] },
+    { id: "g3", answers: ["found in one place"] },
+    { id: "g4", answers: ["the ability to fly"] },
     { id: "g5", answers: ["they didn't settle on Mauritius", "they did not settle on Mauritius"] },
     { id: "g6", answers: ["although not everyone liked the taste"] },
     {
       id: "g7",
-      answers: ["It's hard to get an accurate description", "It is hard to get an accurate description"],
+      answers: ["an accurate description"],
     },
     {
       id: "g8",
-      answers: ["we don't know how reliable these are", "we do not know how reliable these are"],
+      answers: ["how reliable these are"],
     },
     { id: "g9", answers: ["but this may not be accurate"] },
     { id: "g10", answers: ["no complete specimen survives"] },
-    { id: "g11", answers: ["many of the earlier beliefs about dodos may have been incorrect"] },
-    { id: "g12", answers: ["he found the birds hard to catch"] },
+    { id: "g11", answers: ["may have been incorrect"] },
+    { id: "g12", answers: ["hard to catch"] },
     {
       id: "g13",
-      answers: [
-        "wouldn't have allowed it to leave the ground",
-        "would not have allowed it to leave the ground",
-      ],
+      answers: ["leave the ground"],
     },
-    { id: "g14", answers: ["were not borne out by their research"] },
-    { id: "g15", answers: ["which is known to be a highly intelligent bird"] },
-    { id: "g16", answers: ["So what was the reason for this"] },
-    { id: "g17", answers: ["the situation was more complicated than this"] },
-    { id: "g18", answers: ["this probably had a devastating effect on populations"] },
+    { id: "g14", answers: ["borne out by their research"] },
+    { id: "g15", answers: ["a highly intelligent bird"] },
+    { id: "g16", answers: ["the reason for this"] },
+    { id: "g17", answers: ["more complicated than this"] },
+    { id: "g18", answers: ["a devastating effect on populations"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
+        { type: "text", text: "One of the most " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " is that of a bird known as the dodo." },
       ],
@@ -47,7 +45,7 @@ export const CAM16_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "In fact there's even a saying in English, 'as dead as the dodo', " },
+        { type: "text", text: "In fact there's even a saying in English, 'as dead as the dodo', used to refer to something which " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
       ],
@@ -55,7 +53,7 @@ export const CAM16_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "But for many centuries the dodo was alive and well, " },
+        { type: "text", text: "But for many centuries the dodo was alive and well, although it could only be " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: ", the island of Mauritius in the Indian Ocean." },
       ],
@@ -63,7 +61,7 @@ export const CAM16_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "It was a very large bird, about one metre tall, and over the centuries " },
+        { type: "text", text: "It was a very large bird, about one metre tall, and over the centuries it had lost " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: ", but it survived happily under the trees that covered the island." },
       ],
@@ -102,6 +100,7 @@ export const CAM16_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "It's hard to get " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: " of what the dodo actually looked like." },
       ],
@@ -109,7 +108,7 @@ export const CAM16_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "We do have some written records from sailors, and a few pictures, but " },
+        { type: "text", text: "We do have some written records from sailors, and a few pictures, but we don't know " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -148,7 +147,10 @@ export const CAM16_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "This single dodo skeleton has recently been the subject of scientific research which suggests that " },
+        {
+          type: "text",
+          text: "This single dodo skeleton has recently been the subject of scientific research which suggests that many of the earlier beliefs about dodos ",
+        },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -165,7 +167,7 @@ export const CAM16_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "In fact, one 17th century sailor wrote that " },
+        { type: "text", text: "In fact, one 17th century sailor wrote that he found the birds " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -173,7 +175,7 @@ export const CAM16_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "It's true that the dodo's small wings " },
+        { type: "text", text: "It's true that the dodo's small wings wouldn't have allowed it to " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: ", but the scientists suggest that these were probably employed for balance while going over uneven ground." },
       ],
@@ -187,7 +189,7 @@ export const CAM16_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "They found that the reports of the lack of intelligence of the dodo " },
+        { type: "text", text: "They found that the reports of the lack of intelligence of the dodo were not " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: ", which suggested the bird's brain was not small, but average in size." },
       ],
@@ -195,7 +197,7 @@ export const CAM16_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "In fact, in relation to its body size, it was similar to that of the pigeon, " },
+        { type: "text", text: "In fact, in relation to its body size, it was similar to that of the pigeon, which is known to be " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
       ],
@@ -233,13 +235,20 @@ export const CAM16_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "text", text: "Yet less than 200 years after Europeans first arrived on the island, they had become extinct." },
       ],
     },
-    { speaker: null, segments: [{ type: "gap", gapId: "g16" }, { type: "text", text: "?" }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "So what was " },
+        { type: "gap", gapId: "g16" },
+        { type: "text", text: "?" },
+      ],
+    },
     {
       speaker: null,
       segments: [
         {
           type: "text",
-          text: "For a long time, it was believed that the dodos were hunted to extinction, but scientists now believe ",
+          text: "For a long time, it was believed that the dodos were hunted to extinction, but scientists now believe the situation was ",
         },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
@@ -278,7 +287,10 @@ export const CAM16_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "However, they were a particular danger to the dodos because they consumed their eggs, and since each dodo only laid one at a time, " },
+        {
+          type: "text",
+          text: "However, they were a particular danger to the dodos because they consumed their eggs, and since each dodo only laid one at a time, this probably had ",
+        },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

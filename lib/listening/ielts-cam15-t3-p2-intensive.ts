@@ -5,60 +5,47 @@ import type {
 
 export const CAM15_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["started the Street Play Scheme where she lives"] },
-    { id: "g2", answers: ["closing off their street for a few hours"] },
+    { id: "g1", answers: ["where she lives"] },
+    { id: "g2", answers: ["for a few hours"] },
     { id: "g3", answers: ["the idea caught on"] },
-    { id: "g4", answers: ["when my oldest child was still a toddler"] },
-    { id: "g5", answers: ["it took at least two years of campaigning"] },
+    { id: "g4", answers: ["still a toddler"] },
+    { id: "g5", answers: ["two years of campaigning"] },
     {
       id: "g6",
-      answers: [
-        "We'd love to be able to close our road for longer",
-        "We would love to be able to close our road for longer",
-      ],
+      answers: ["close our road for longer"],
     },
     { id: "g7", answers: ["The council have provided special signs"] },
     {
       id: "g8",
-      answers: [
-        "we've only had to get the police involved once or twice",
-        "we have only had to get the police involved once or twice",
-      ],
+      answers: ["get the police involved"],
     },
     {
       id: "g9",
       answers: [
-        "the road isn't completely closed to cars",
-        "the road is not completely closed to cars",
+        "completely closed to cars",
       ],
     },
     { id: "g10", answers: ["only residents' cars are allowed", "only residents cars are allowed"] },
     {
       id: "g11",
-      answers: [
-        "I'd recommend that anyone listening who likes the idea should just give it a go",
-        "I would recommend that anyone listening who likes the idea should just give it a go",
-      ],
+      answers: ["just give it a go"],
     },
     {
       id: "g12",
-      answers: [
-        "We've been surprised by the positive reaction of residents",
-        "We have been surprised by the positive reaction of residents",
-      ],
+      answers: ["positive reaction of residents"],
     },
     { id: "g13", answers: ["they're a tiny minority", "they are a tiny minority"] },
-    { id: "g14", answers: ["getting fresh air instead of sitting staring at a computer screen"] },
+    { id: "g14", answers: ["getting fresh air"] },
     { id: "g15", answers: ["without being supervised by their parents"] },
-    { id: "g16", answers: ["I want to move on now and ask you about a related project"] },
-    { id: "g17", answers: ["by persuading people not to use their cars for one day"] },
-    { id: "g18", answers: ["we decided that would be really unpopular"] },
+    { id: "g16", answers: ["a related project"] },
+    { id: "g17", answers: ["not to use their cars"] },
+    { id: "g18", answers: ["really unpopular"] },
   ],
   lines: [
     {
       speaker: "PRESENTER",
       segments: [
-        { type: "text", text: "My guest on the show today is Alice Riches who " },
+        { type: "text", text: "My guest on the show today is Alice Riches who started the Street Play Scheme " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " in Beechwood Road." },
       ],
@@ -66,7 +53,10 @@ export const CAM15_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "PRESENTER",
       segments: [
-        { type: "text", text: "For those of you that don't already know – Street Play involves local residents " },
+        {
+          type: "text",
+          text: "For those of you that don't already know – Street Play involves local residents closing off their street ",
+        },
         { type: "gap", gapId: "g2" },
         { type: "text", text: " so that children have a chance to play in the street safely." },
       ],
@@ -83,9 +73,9 @@ export const CAM15_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ALICE",
       segments: [
-        { type: "text", text: "Well, I first had the idea " },
+        { type: "text", text: "Well, I first had the idea when my oldest child was " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: ", so that's about six years ago now – but " },
+        { type: "text", text: ", so that's about six years ago now – but it took at least " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: " before we were actually able to make it happen." },
       ],
@@ -93,7 +83,7 @@ export const CAM15_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ALICE",
       segments: [
-        { type: "text", text: "So the scheme's been up and running for three years now. " },
+        { type: "text", text: "So the scheme's been up and running for three years now. We'd love to be able to " },
         { type: "gap", gapId: "g6" },
         {
           type: "text",
@@ -119,7 +109,8 @@ export const CAM15_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "We have volunteer wardens, mostly parents but some elderly residents too, who block off our road at either end. " },
+          text: "We have volunteer wardens, mostly parents but some elderly residents too, who block off our road at either end. ",
+        },
         { type: "gap", gapId: "g7" },
         { type: "text", text: " but there's always a volunteer there to explain what's happening to any motorists." },
       ],
@@ -127,15 +118,15 @@ export const CAM15_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ALICE",
       segments: [
-        { type: "text", text: "Generally, they're fine about it – " },
+        { type: "text", text: "Generally, they're fine about it – we've only had to " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: "." },
+        { type: "text", text: " once or twice." },
       ],
     },
     {
       speaker: "ALICE",
       segments: [
-        { type: "text", text: "Now I should explain that " },
+        { type: "text", text: "Now I should explain that the road isn't " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: ". But " },
         { type: "gap", gapId: "g10" },
@@ -169,7 +160,8 @@ export const CAM15_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Obviously, there isn't such demand in wealthier areas where the children have access to parks or large gardens – or in the suburbs where there are usually more places for children to play outside. " },
+          text: "Obviously, there isn't such demand in wealthier areas where the children have access to parks or large gardens – or in the suburbs where there are usually more places for children to play outside. I'd recommend that anyone listening who likes the idea should ",
+        },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -177,6 +169,7 @@ export const CAM15_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ALICE",
       segments: [
+        { type: "text", text: "We've been surprised by the " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: " all over the city. And that's not just parents." },
       ],
@@ -197,9 +190,13 @@ export const CAM15_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "There have been so many benefits of Street Play for the kids. Parents really like the fact that the kids are " },
+          text: "There have been so many benefits of Street Play for the kids. Parents really like the fact that the kids are ",
+        },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: ", even if they're not doing anything particularly energetic." },
+        {
+          type: "text",
+          text: " instead of sitting staring at a computer screen, even if they're not doing anything particularly energetic.",
+        },
       ],
     },
     {
@@ -225,7 +222,7 @@ export const CAM15_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "PRESENTER",
       segments: [
-        { type: "text", text: "It certainly does have a lot of benefits. " },
+        { type: "text", text: "It certainly does have a lot of benefits. I want to move on now and ask you about " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: " in King Street." },
       ],
@@ -236,15 +233,16 @@ export const CAM15_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well this was an experiment I was involved in where local residents decided to try and reduce the traffic along King Street, which is the busiest main road in our area, " },
+          text: "Well this was an experiment I was involved in where local residents decided to try and reduce the traffic along King Street, which is the busiest main road in our area, by persuading people ",
+        },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " for one day." },
       ],
     },
     {
       speaker: "ALICE",
       segments: [
-        { type: "text", text: "We thought about making people pay more for parking – but " },
+        { type: "text", text: "We thought about making people pay more for parking – but we decided that would be " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",

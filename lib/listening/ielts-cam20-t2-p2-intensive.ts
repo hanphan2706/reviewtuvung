@@ -5,24 +5,24 @@ import type {
 
 export const CAM20_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I'm delighted you're all interested", "I am delighted you are all interested"] },
-    { id: "g2", answers: ["help to create a sense of community"] },
+    { id: "g1", answers: ["I'm delighted you're all interested", "I am delighted you are all interested", "I'm delighted you are all interested", "I am delighted you're all interested"] },
+    { id: "g2", answers: ["a sense of community"] },
     { id: "g3", answers: ["I'll mention just a few of", "I will mention just a few of"] },
     { id: "g4", answers: ["wearing our volunteer T-shirt"] },
     { id: "g5", answers: ["You'd be surprised how many people", "You would be surprised how many people"] },
-    { id: "g6", answers: ["such as sports clubs or gardeners' associations"] },
-    { id: "g7", answers: ["anyone who lives in the town can send in articles"] },
+    { id: "g6", answers: ["sports clubs or gardeners' associations"] },
+    { id: "g7", answers: ["send in articles"] },
     { id: "g8", answers: ["It's free to residents", "It is free to residents"] },
     { id: "g9", answers: ["That's the responsibility of", "That is the responsibility of"] },
-    { id: "g10", answers: ["the club members really welcome the chance"] },
-    { id: "g11", answers: ["we want as many people as possible to use it"] },
-    { id: "g12", answers: ["I'll go on to some practical matters", "I will go on to some practical matters"] },
-    { id: "g13", answers: ["they all depend on a large number of volunteers"] },
-    { id: "g14", answers: ["It's a good idea to help at", "It is a good idea to help at"] },
-    { id: "g15", answers: ["there can be changes at short notice"] },
-    { id: "g16", answers: ["after a week's training starting on the 2nd"] },
+    { id: "g10", answers: ["welcome the chance"] },
+    { id: "g11", answers: ["as many people as possible"] },
+    { id: "g12", answers: ["some practical matters"] },
+    { id: "g13", answers: ["a large number of volunteers"] },
+    { id: "g14", answers: ["a good idea"] },
+    { id: "g15", answers: ["at short notice"] },
+    { id: "g16", answers: ["a week's training"] },
     { id: "g17", answers: ["what extra support you need"] },
-    { id: "g18", answers: ["you can sign up once you start work"] },
+    { id: "g18", answers: ["sign up"] },
   ],
   lines: [
     {
@@ -39,7 +39,7 @@ export const CAM20_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Our volunteers " },
+        { type: "text", text: "Our volunteers help to create " },
         { type: "gap", gapId: "g2" },
         {
           type: "text",
@@ -83,7 +83,7 @@ export const CAM20_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Volunteers may get involved with community groups, " },
+        { type: "text", text: "Volunteers may get involved with community groups, such as " },
         { type: "gap", gapId: "g6" },
         {
           type: "text",
@@ -94,7 +94,7 @@ export const CAM20_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The town produces a monthly magazine, and " },
+        { type: "text", text: "The town produces a monthly magazine, and anyone who lives in the town can " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: ". " },
         { type: "gap", gapId: "g8" },
@@ -111,7 +111,7 @@ export const CAM20_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "There are a number of clubs for retired people and every year the council arranges lunch for all the members. The volunteers welcome the guests and when everyone's sitting down and relaxing after the meal, some volunteers put on a show. Usually around half an hour of songs and short plays, ",
+          text: "There are a number of clubs for retired people and every year the council arranges lunch for all the members. The volunteers welcome the guests and when everyone's sitting down and relaxing after the meal, some volunteers put on a show. Usually around half an hour of songs and short plays, the club members really ",
         },
         { type: "gap", gapId: "g10" },
         { type: "text", text: " to chat to the volunteers at these events." },
@@ -122,16 +122,16 @@ export const CAM20_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The town council has a website, of course, and volunteers are asked to help by making sure residents know about it. It's updated every day with information about future activities and ",
+          text: "The town council has a website, of course, and volunteers are asked to help by making sure residents know about it. It's updated every day with information about future activities and we want ",
         },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: "." },
+        { type: "text", text: " to use it." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "OK, now you know some of the things our volunteers do, " },
+        { type: "text", text: "OK, now you know some of the things our volunteers do, I'll go on to " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -139,7 +139,7 @@ export const CAM20_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "As you probably know, the town arranges three major festivals every year, and " },
+        { type: "text", text: "As you probably know, the town arranges three major festivals every year, and they all depend on " },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
@@ -150,10 +150,11 @@ export const CAM20_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "It's " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
-          text: " the festival you're most interested in, because you can attend most of the events for free. We try to use volunteers who are flexible, though, because some festival events are held outdoors and the weather may affect the size of the audience and even whether the event can take place so ",
+          text: " to help at the festival you're most interested in, because you can attend most of the events for free. We try to use volunteers who are flexible, though, because some festival events are held outdoors and the weather may affect the size of the audience and even whether the event can take place so there can be changes ",
         },
         { type: "gap", gapId: "g15" },
         {
@@ -165,11 +166,11 @@ export const CAM20_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Our plan is to get you all working in September, " },
+        { type: "text", text: "Our plan is to get you all working in September, after " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
-          text: ", so we'll be timetabling you for duties the following week from the 9th onward. Later in the week beginning September 23rd we have a chat with each of you to find out how you feel about being a volunteer and ",
+          text: " starting on the 2nd, so we'll be timetabling you for duties the following week from the 9th onward. Later in the week beginning September 23rd we have a chat with each of you to find out how you feel about being a volunteer and ",
         },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
@@ -180,10 +181,10 @@ export const CAM20_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "As a thank you to the volunteers we arrange an annual event. In recent years we've had a party in the Town Hall and last year a barbecue in Chamber Park. Our forthcoming event is a trip along the canal from here to Dewhurst and back. It's on Saturday, September the 28th. And if you'd like to attend, ",
+          text: "As a thank you to the volunteers we arrange an annual event. In recent years we've had a party in the Town Hall and last year a barbecue in Chamber Park. Our forthcoming event is a trip along the canal from here to Dewhurst and back. It's on Saturday, September the 28th. And if you'd like to attend, you can ",
         },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: ". Now, this is the Volunteer's T-shirt." },
+        { type: "text", text: " once you start work. Now, this is the Volunteer's T-shirt." },
       ],
     },
   ],

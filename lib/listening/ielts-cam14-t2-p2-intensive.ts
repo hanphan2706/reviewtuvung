@@ -7,35 +7,26 @@ export const CAM14_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "I'll give you a little information about the castle",
-        "I will give you a little information about the castle",
-      ],
+      answers: ["a little information"],
     },
     {
       id: "g2",
-      answers: [
-        "there's been a castle on this site for over eleven hundred years",
-        "there has been a castle on this site for over eleven hundred years",
-      ],
+      answers: ["over eleven hundred years"],
     },
     { id: "g3", answers: ["for defence against Danish invaders"] },
-    { id: "g4", answers: ["it was beginning to look a bit run down"] },
+    { id: "g4", answers: ["a bit run down"] },
     { id: "g5", answers: ["rather than repair the guest rooms"] },
     {
       id: "g6",
-      answers: ["unfortunately it was destroyed a few years later by fire"],
+      answers: ["destroyed a few years later"],
     },
-    { id: "g7", answers: ["who enlarged it and made it more comfortable"] },
+    { id: "g7", answers: ["made it more comfortable"] },
     { id: "g8", answers: ["they put it on the market"] },
     {
       id: "g9",
-      answers: [
-        "they've managed to retain the original atmosphere of the castle",
-        "they have managed to retain the original atmosphere of the castle",
-      ],
+      answers: ["retain the original atmosphere"],
     },
-    { id: "g10", answers: ["in every room there are booklets giving information"] },
+    { id: "g10", answers: ["booklets giving information"] },
     {
       id: "g11",
       answers: ["The castle park's quite extensive", "The castle park is quite extensive"],
@@ -44,29 +35,22 @@ export const CAM14_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       id: "g13",
       answers: [
-        "you're free to wander around on your own until 4.30",
-        "you are free to wander around on your own until 4.30",
+        "wander around on your own",
       ],
     },
     { id: "g14", answers: ["Don't miss seeing the Great Hall"] },
-    { id: "g15", answers: ["If you want to get a good view of the whole castle"] },
+    { id: "g15", answers: ["a good view"] },
     {
       id: "g16",
       answers: ["there's no way up from there", "there is no way up from there"],
     },
     {
       id: "g17",
-      answers: [
-        "It's about ten minutes' walk or so",
-        "It is about ten minutes' walk or so",
-      ],
+      answers: ["ten minutes' walk or so"],
     },
     {
       id: "g18",
-      answers: [
-        "It's got some lovely gifts and souvenirs",
-        "It has got some lovely gifts and souvenirs",
-      ],
+      answers: ["lovely gifts and souvenirs"],
     },
   ],
   lines: [
@@ -75,16 +59,16 @@ export const CAM14_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "We'll be arriving at Branley Castle in about five minutes, but before we get there ",
+          text: "We'll be arriving at Branley Castle in about five minutes, but before we get there I'll give you ",
         },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " and what our visit will include." },
+        { type: "text", text: " about the castle and what our visit will include." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So in fact " },
+        { type: "text", text: "So in fact there's been a castle on this site for " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
       ],
@@ -117,7 +101,7 @@ export const CAM14_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "However, when Queen Elizabeth I announced that she was going to visit the castle in 1576 ",
+          text: "However, when Queen Elizabeth I announced that she was going to visit the castle in 1576 it was beginning to look ",
         },
         { type: "gap", gapId: "g4" },
         { type: "text", text: ", and it was decided that " },
@@ -133,10 +117,10 @@ export const CAM14_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "She stayed there for four nights and apparently it was very luxurious, but ",
+          text: "She stayed there for four nights and apparently it was very luxurious, but unfortunately it was ",
         },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " by fire." },
       ],
     },
     {
@@ -144,7 +128,7 @@ export const CAM14_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "In the seventeenth century the castle belonged to the wealthy Fenys family, ",
+          text: "In the seventeenth century the castle belonged to the wealthy Fenys family, who enlarged it and ",
         },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
@@ -166,10 +150,10 @@ export const CAM14_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "It was eventually taken over by a company who owned a number of amusement parks, but when we get there I think you'll see that ",
+          text: "It was eventually taken over by a company who owned a number of amusement parks, but when we get there I think you'll see that they've managed to ",
         },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: "." },
+        { type: "text", text: " of the castle." },
       ],
     },
     {
@@ -184,7 +168,7 @@ export const CAM14_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "As well as that, " },
+        { type: "text", text: "As well as that, in every room there are " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
@@ -228,11 +212,11 @@ export const CAM14_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Now, " },
+        { type: "text", text: "Now, you're free to " },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
-          text: ", but then at the end of our visit we'll all meet together at the bottom of the Great Staircase.",
+          text: " until 4.30, but then at the end of our visit we'll all meet together at the bottom of the Great Staircase.",
         },
       ],
     },
@@ -267,8 +251,9 @@ export const CAM14_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "If you want to get " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: ", you can walk around the walls." },
+        { type: "text", text: " of the whole castle, you can walk around the walls." },
       ],
     },
     {
@@ -305,7 +290,7 @@ export const CAM14_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "At 3 pm there's a short performance of traditional dancing on the outdoor stage. That's right at the other side of the castle from the entrance, and over the bridge. ",
+          text: "At 3 pm there's a short performance of traditional dancing on the outdoor stage. That's right at the other side of the castle from the entrance, and over the bridge. It's about ",
         },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
@@ -316,7 +301,7 @@ export const CAM14_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "And finally the shop. It's actually inside one of the towers, but the way in is from the outside. Just take the first left after the main entrance, go down the path and take the first right. ",
+          text: "And finally the shop. It's actually inside one of the towers, but the way in is from the outside. Just take the first left after the main entrance, go down the path and take the first right. It's got some ",
         },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },

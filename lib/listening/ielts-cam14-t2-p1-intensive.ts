@@ -8,21 +8,15 @@ export const CAM14_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g1", answers: ["come and take a seat"] },
     {
       id: "g2",
-      answers: [
-        "I hope you'll be very happy with the service you receive here",
-        "I hope you will be very happy with the service you receive here",
-      ],
+      answers: ["very happy with the service"],
     },
     {
       id: "g3",
-      answers: [
-        "I'll take a few details to help me give you the best possible service",
-        "I will take a few details to help me give you the best possible service",
-      ],
+      answers: ["take a few details"],
     },
     {
       id: "g4",
-      answers: ["can I check first of all that we have the correct personal details for you"],
+      answers: ["correct personal details"],
     },
     {
       id: "g5",
@@ -30,16 +24,16 @@ export const CAM14_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       id: "g6",
-      answers: ["do you have an occupation, either full-time or part-time"],
+      answers: ["either full-time or part-time"],
     },
-    { id: "g7", answers: ["I started off as a waitress there a few years ago"] },
+    { id: "g7", answers: ["started off as a waitress"] },
     { id: "g8", answers: ["I just love their salads"] },
     { id: "g9", answers: ["That's good to hear", "That is good to hear"] },
     {
       id: "g10",
       answers: [
-        "before we talk about why you're here",
-        "before we talk about why you are here",
+        "why you're here",
+        "why you are here",
       ],
     },
     {
@@ -52,27 +46,21 @@ export const CAM14_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g12", answers: ["It came on quite gradually though"] },
     {
       id: "g13",
-      answers: ["I don't like to keep taking it", "I do not like to keep taking it"],
+      answers: ["keep taking it"],
     },
-    { id: "g14", answers: ["Have you tried applying heat at all"] },
+    { id: "g14", answers: ["applying heat at all"] },
     {
       id: "g15",
-      answers: [
-        "I'm quite competitive so I enjoy that side of it as well as the exercise",
-        "I am quite competitive so I enjoy that side of it as well as the exercise",
-      ],
+      answers: ["quite competitive"],
     },
-    { id: "g16", answers: ["So your legs are getting quite a pounding"] },
+    { id: "g16", answers: ["quite a pounding"] },
     {
       id: "g17",
       answers: ["none that I'm aware of", "none that I am aware of"],
     },
     {
       id: "g18",
-      answers: [
-        "let's have a closer look and see what might be causing this problem",
-        "let us have a closer look and see what might be causing this problem",
-      ],
+      answers: ["have a closer look"],
     },
   ],
   lines: [
@@ -98,20 +86,20 @@ export const CAM14_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "CARL",
       segments: [
-        { type: "text", text: "OK, well " },
+        { type: "text", text: "OK, well I hope you'll be " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ". So if it's alright with you " },
+        { type: "text", text: " you receive here. So if it's alright with you I'll " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "." },
+        { type: "text", text: " to help me give you the best possible service." },
       ],
     },
     { speaker: "JULIE", segments: [{ type: "text", text: "Sure." }] },
     {
       speaker: "CARL",
       segments: [
-        { type: "text", text: "So " },
+        { type: "text", text: "So can I check first of all that we have the " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "? So your full name is Julie Anne Garcia?" },
+        { type: "text", text: " for you? So your full name is Julie Anne Garcia?" },
       ],
     },
     { speaker: "JULIE", segments: [{ type: "text", text: "That's correct." }] },
@@ -137,7 +125,7 @@ export const CAM14_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ". Right, so that's all good. Now I just need just a few more personal details … ",
+          text: ". Right, so that's all good. Now I just need just a few more personal details … do you have an occupation, ",
         },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "?" },
@@ -148,10 +136,10 @@ export const CAM14_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes, I work full-time in Esterhazy's – you know, the restaurant chain. ",
+          text: "Yes, I work full-time in Esterhazy's – you know, the restaurant chain. I ",
         },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: " and I'm a manager now." },
+        { type: "text", text: " there a few years ago and I'm a manager now." },
       ],
     },
     {
@@ -179,7 +167,7 @@ export const CAM14_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "CARL",
       segments: [
-        { type: "text", text: "Right, so one more thing I need to know " },
+        { type: "text", text: "Right, so one more thing I need to know before we talk about " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
@@ -250,7 +238,7 @@ export const CAM14_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yeah, I've been taking medication to deal with the pain. Tylenol, and that works OK for a few hours. But ",
+          text: "Yeah, I've been taking medication to deal with the pain. Tylenol, and that works OK for a few hours. But I don't like to ",
         },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
@@ -259,7 +247,7 @@ export const CAM14_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "CARL",
       segments: [
-        { type: "text", text: "OK. And what about heat treatment? " },
+        { type: "text", text: "OK. And what about heat treatment? Have you tried " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "?" },
       ],
@@ -292,10 +280,13 @@ export const CAM14_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes, I play a lot of tennis. I belong to a club so I go there a lot. ",
+          text: "Yes, I play a lot of tennis. I belong to a club so I go there a lot. I'm ",
         },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: ". But I haven't gone since this started." },
+        {
+          type: "text",
+          text: " so I enjoy that side of it as well as the exercise. But I haven't gone since this started.",
+        },
       ],
     },
     {
@@ -314,7 +305,7 @@ export const CAM14_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "CARL",
       segments: [
-        { type: "text", text: "Hmm. " },
+        { type: "text", text: "Hmm. So your legs are getting " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: ". But you haven't had any problems up to now?" },
       ],
@@ -353,9 +344,12 @@ export const CAM14_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "CARL",
       segments: [
-        { type: "text", text: "OK, well " },
+        { type: "text", text: "OK, well let's " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: ". If you can just get up …" },
+        {
+          type: "text",
+          text: " and see what might be causing this problem. If you can just get up …",
+        },
       ],
     },
   ],

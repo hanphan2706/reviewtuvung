@@ -5,51 +5,47 @@ import type {
 
 export const CAM15_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["how are you getting on with the reading"] },
+    { id: "g1", answers: ["getting on with the reading"] },
     {
       id: "g2",
       answers: ["there's so much of it", "there is so much of it"],
     },
     {
       id: "g3",
-      answers: [
-        "I hadn't realised birth order was such a popular area of research",
-        "I had not realised birth order was such a popular area of research",
-      ],
+      answers: ["popular area of research"],
     },
-    { id: "g4", answers: ["with no robust evidence to support them"] },
-    { id: "g5", answers: ["we could start by outlining what previous research has shown"] },
-    { id: "g6", answers: ["There are studies going back over a hundred years"] },
-    { id: "g7", answers: ["we could just run through some of the typical traits"] },
+    { id: "g4", answers: ["no robust evidence"] },
+    { id: "g5", answers: ["what previous research has shown"] },
+    { id: "g6", answers: ["over a hundred years"] },
+    { id: "g7", answers: ["some of the typical traits"] },
     {
       id: "g8",
       answers: [
-        "that's certainly not accurate as far as my family goes",
-        "that is certainly not accurate as far as my family goes",
+        "as far as my family goes",
       ],
     },
     {
       id: "g9",
-      answers: ["none of this seems to relate to my own experience"],
+      answers: ["relate to my own experience"],
     },
-    { id: "g10", answers: ["There have been hundreds of studies on twins but mostly about nurture versus nature"] },
-    { id: "g11", answers: ["That does seem a bit harsh"] },
-    { id: "g12", answers: ["I can see how that might be true"] },
-    { id: "g13", answers: ["playing the baby role and clamouring for special treatment"] },
-    { id: "g14", answers: ["What was the problem with most of these studies, do you think"] },
-    { id: "g15", answers: ["data was collected from only one sibling per family"] },
-    { id: "g16", answers: ["has been proved to be accurate though"] },
+    { id: "g10", answers: ["nurture versus nature"] },
+    { id: "g11", answers: ["That does seem a bit harsh", "that does seem a bit harsh"] },
+    { id: "g12", answers: ["how that might be true"] },
+    { id: "g13", answers: ["clamouring for special treatment"] },
+    { id: "g14", answers: ["most of these studies"] },
+    { id: "g15", answers: ["only one sibling per family"] },
+    { id: "g16", answers: ["proved to be accurate"] },
     {
       id: "g17",
-      answers: ["The oldest boy might be given more opportunities than his younger sisters, for example"],
+      answers: ["more opportunities than his younger sisters"],
     },
-    { id: "g18", answers: ["this has made me a stronger person"] },
+    { id: "g18", answers: ["a stronger person"] },
   ],
   lines: [
     {
       speaker: "RUTH",
       segments: [
-        { type: "text", text: "Ed, " },
+        { type: "text", text: "Ed, how are you " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " for our presentation next week?" },
       ],
@@ -65,7 +61,7 @@ export const CAM15_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "RUTH",
       segments: [
-        { type: "text", text: "I know, " },
+        { type: "text", text: "I know, I hadn't realised birth order was such a " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -75,18 +71,18 @@ export const CAM15_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "But the stuff on birth order and personality is mostly unreliable. From what I've been reading a lot of claims about how your position in the family determines certain personality traits are just stereotypes, ",
+          text: "But the stuff on birth order and personality is mostly unreliable. From what I've been reading a lot of claims about how your position in the family determines certain personality traits are just stereotypes, with ",
         },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "." },
+        { type: "text", text: " to support them." },
       ],
     },
     {
       speaker: "RUTH",
       segments: [
-        { type: "text", text: "OK, but that's an interesting point – " },
+        { type: "text", text: "OK, but that's an interesting point – we could start by outlining " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: ". " },
+        { type: "text", text: ". There are studies going back " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
       ],
@@ -94,7 +90,7 @@ export const CAM15_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ED",
       segments: [
-        { type: "text", text: "Yeah – so " },
+        { type: "text", text: "Yeah – so we could just run through " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -123,7 +119,7 @@ export const CAM15_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "RUTH",
       segments: [
-        { type: "text", text: "Generally eager to please and helpful – although " },
+        { type: "text", text: "Generally eager to please and helpful – although that's certainly not accurate " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
@@ -134,7 +130,7 @@ export const CAM15_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ED",
       segments: [
-        { type: "text", text: "As I said – " },
+        { type: "text", text: "As I said – none of this seems to " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -145,7 +141,7 @@ export const CAM15_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "RUTH",
       segments: [
-        { type: "text", text: "Really? That's funny. " },
+        { type: "text", text: "Really? That's funny. There have been hundreds of studies on twins but mostly about " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "…" },
       ],
@@ -190,20 +186,25 @@ export const CAM15_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ED",
       segments: [
+        { type: "text", text: "I can see " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: " – although I expect they're sometimes the exact opposite – " },
+        { type: "text", text: " – although I expect they're sometimes the exact opposite – playing the baby role and " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
       ],
     },
     {
       speaker: "RUTH",
-      segments: [{ type: "gap", gapId: "g14" }, { type: "text", text: "?" }],
+      segments: [
+        { type: "text", text: "What was the problem with " },
+        { type: "gap", gapId: "g14" },
+        { type: "text", text: ", do you think?" },
+      ],
     },
     {
       speaker: "ED",
       segments: [
-        { type: "text", text: "I think it was because in a lot of cases " },
+        { type: "text", text: "I think it was because in a lot of cases data was collected from " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: ", who rated him or herself and his or her siblings at the same time." },
       ],
@@ -211,11 +212,11 @@ export const CAM15_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "RUTH",
       segments: [
-        { type: "text", text: "Mmm. Some of the old research into the relationship between birth order and academic achievement " },
+        { type: "text", text: "Mmm. Some of the old research into the relationship between birth order and academic achievement has been " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
-          text: ". Performances in intelligence tests decline slightly from the eldest child to his or her younger siblings. This has been proved in lots of recent studies.",
+          text: " though. Performances in intelligence tests decline slightly from the eldest child to his or her younger siblings. This has been proved in lots of recent studies.",
         },
       ],
     },
@@ -230,7 +231,11 @@ export const CAM15_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "RUTH",
-      segments: [{ type: "gap", gapId: "g17" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "The oldest boy might be given " },
+        { type: "gap", gapId: "g17" },
+        { type: "text", text: ", for example." },
+      ],
     },
     { speaker: "ED", segments: [{ type: "text", text: "Exactly." }] },
     {
@@ -256,7 +261,7 @@ export const CAM15_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I think so – my younger brother was incredibly annoying and we fought a lot but I think ",
+          text: "I think so – my younger brother was incredibly annoying and we fought a lot but I think this has made me ",
         },
         { type: "gap", gapId: "g18" },
         {

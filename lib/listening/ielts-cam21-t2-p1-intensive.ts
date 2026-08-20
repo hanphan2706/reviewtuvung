@@ -6,23 +6,23 @@ import type {
 export const CAM21_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I'm ringing to find out about", "I am ringing to find out about"] },
-    { id: "g2", answers: ["some of the classes are filling up fast"] },
-    { id: "g3", answers: ["Can you remember which one you were considering"] },
-    { id: "g4", answers: ["I can put you on the waiting list if you want"] },
+    { id: "g2", answers: ["filling up fast"] },
+    { id: "g3", answers: ["which one you were considering"] },
+    { id: "g4", answers: ["put you on the waiting list"] },
     { id: "g5", answers: ["I'm quite interested in", "I am quite interested in"] },
-    { id: "g6", answers: ["Would you like to register for that"] },
+    { id: "g6", answers: ["register for that"] },
     { id: "g7", answers: ["How much is it"] },
-    { id: "g8", answers: ["that seems to be very fashionable at present"] },
+    { id: "g8", answers: ["very fashionable at present"] },
     { id: "g9", answers: ["I'd definitely be interested in that", "I would definitely be interested in that"] },
-    { id: "g10", answers: ["I'd love to learn how to do that", "I would love to learn how to do that"] },
+    { id: "g10", answers: ["learn how to do that"] },
     { id: "g11", answers: ["The teacher's great", "The teacher is great"] },
-    { id: "g12", answers: ["so you can see what you're doing", "so you can see what you are doing"] },
+    { id: "g12", answers: ["see what you're doing", "see what you are doing"] },
     { id: "g13", answers: ["Let me check"] },
     { id: "g14", answers: ["It's filling up fast", "It is filling up fast"] },
-    { id: "g15", answers: ["She said the candles make really good presents"] },
-    { id: "g16", answers: ["have you heard about the class on silk painting"] },
-    { id: "g17", answers: ["which is really good value I think"] },
-    { id: "g18", answers: ["I'd like to learn how to do household repairs", "I would like to learn how to do household repairs"] },
+    { id: "g15", answers: ["really good presents"] },
+    { id: "g16", answers: ["have you heard about"] },
+    { id: "g17", answers: ["really good value"] },
+    { id: "g18", answers: ["household repairs"] },
   ],
   lines: [
     {
@@ -36,7 +36,7 @@ export const CAM21_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g1" },
         {
           type: "text",
-          text: " one-day classes next year. I got a leaflet about them in the post but I lost it, and I understand ",
+          text: " one-day classes next year. I got a leaflet about them in the post but I lost it, and I understand some of the classes are ",
         },
         { type: "gap", gapId: "g2" },
         { type: "text", text: ", so I might need to book quite soon if I want to go ahead." },
@@ -45,7 +45,7 @@ export const CAM21_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Sure. " },
+        { type: "text", text: "Sure. Can you remember " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "?" },
       ],
@@ -64,10 +64,10 @@ export const CAM21_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes, you're right about the date, but it's 59 pounds actually. It's a very popular class, and among other things the teacher explains how Vietnamese food includes lots of different herbs. I'm afraid that all the places are taken at present, but ",
+          text: "Yes, you're right about the date, but it's 59 pounds actually. It's a very popular class, and among other things the teacher explains how Vietnamese food includes lots of different herbs. I'm afraid that all the places are taken at present, but I can ",
         },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "?" },
+        { type: "text", text: " if you want?" },
       ],
     },
     {
@@ -81,7 +81,7 @@ export const CAM21_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Yeah, the 20th of March. " },
+        { type: "text", text: "Yeah, the 20th of March. Would you like to " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "?" },
       ],
@@ -112,7 +112,7 @@ export const CAM21_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Oh, various types of bread; I think they make white bread and then they make sourdough, ",
+          text: "Oh, various types of bread; I think they make white bread and then they make sourdough, that seems to be ",
         },
         { type: "gap", gapId: "g8" },
         { type: "text", text: ", and they learn how to make pizza, which is apparently really good." },
@@ -127,6 +127,7 @@ export const CAM21_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: ", but there were also a few other classes that sounded interesting. I think there was one on face massage? ",
         },
+        { type: "text", text: "I'd love to " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
       ],
@@ -138,7 +139,7 @@ export const CAM21_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g11" },
         {
           type: "text",
-          text: ", the type of massage done is a traditional technique used in India and she actually did her training there. The massage is meant to relax you and get rid of lines and wrinkles. You practise it on yourself so you have to take a mirror to the class, ",
+          text: ", the type of massage done is a traditional technique used in India and she actually did her training there. The massage is meant to relax you and get rid of lines and wrinkles. You practise it on yourself so you have to take a mirror to the class, so you can ",
         },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
@@ -165,7 +166,7 @@ export const CAM21_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Yes one of my friends did that class. " },
+        { type: "text", text: "Yes one of my friends did that class. She said the candles make " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: ". In fact she gave me one." },
       ],
@@ -177,10 +178,10 @@ export const CAM21_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g16" },
         {
           type: "text",
-          text: "? That's being held on the 18th of May. You learn how to create designs on silk fabric and colour them using special dyes. Apparently people can produce beautiful artworks that way, either to put on the wall as a picture or to use for something like a scarf. It's £67.50, ",
+          text: " the class on silk painting? That's being held on the 18th of May. You learn how to create designs on silk fabric and colour them using special dyes. Apparently people can produce beautiful artworks that way, either to put on the wall as a picture or to use for something like a scarf. It's £67.50, which is ",
         },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: " – there's a similar class I've seen that was £110." },
+        { type: "text", text: " I think – there's a similar class I've seen that was £110." },
       ],
     },
     {
@@ -201,7 +202,7 @@ export const CAM21_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Right. Then the last class I was considering was a bit different, that was on DIY for beginners. ",
+          text: "Right. Then the last class I was considering was a bit different, that was on DIY for beginners. I'd like to learn how to do ",
         },
         { type: "gap", gapId: "g18" },
         { type: "text", text: ". Are there any places left on that?" },

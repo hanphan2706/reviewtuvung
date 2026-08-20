@@ -5,21 +5,21 @@ import type {
 
 export const CAM21_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["They can be completed in less than a day"] },
-    { id: "g2", answers: ["a former coal mine now open to the public"] },
+    { id: "g1", answers: ["in less than a day"] },
+    { id: "g2", answers: ["open to the public"] },
     { id: "g3", answers: ["is suitable for all the family"] },
     { id: "g4", answers: ["as there are no strenuous climbs"] },
     { id: "g5", answers: ["a great place for fishing"] },
-    { id: "g6", answers: ["The walk covers part of the coastal path trail"] },
-    { id: "g7", answers: ["At one point, the route goes inland slightly"] },
-    { id: "g8", answers: ["it's a great place to take photos", "it is a great place to take photos"] },
-    { id: "g9", answers: ["fascinating information boards show what it once looked like"] },
+    { id: "g6", answers: ["the coastal path trail"] },
+    { id: "g7", answers: ["goes inland slightly"] },
+    { id: "g8", answers: ["a great place to take photos"] },
+    { id: "g9", answers: ["what it once looked like"] },
     { id: "g10", answers: ["If you set off early"] },
     { id: "g11", answers: ["especially of the night sky"] },
-    { id: "g12", answers: ["people come here from far and wide"] },
-    { id: "g13", answers: ["In the daytime, it's completely different", "In the daytime, it is completely different"] },
-    { id: "g14", answers: ["the only things you'll hear are the sound of your own footsteps", "the only things you will hear are the sound of your own footsteps"] },
-    { id: "g15", answers: ["has won awards for its visitor experience"] },
+    { id: "g12", answers: ["from far and wide"] },
+    { id: "g13", answers: ["completely different"] },
+    { id: "g14", answers: ["the sound of your own footsteps"] },
+    { id: "g15", answers: ["has won awards"] },
     { id: "g16", answers: ["have been converted into display areas"] },
     { id: "g17", answers: ["It's incredible to think", "It is incredible to think"] },
     { id: "g18", answers: ["The other building to mention is"] },
@@ -28,9 +28,9 @@ export const CAM21_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Here is some information about history and nature walks in the region. " },
+        { type: "text", text: "Here is some information about history and nature walks in the region. They can be completed " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " and also be combined with a visit to Melby, " },
+        { type: "text", text: " and also be combined with a visit to Melby, a former coal mine now " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
       ],
@@ -58,7 +58,11 @@ export const CAM21_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g6" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "The walk covers part of " },
+        { type: "gap", gapId: "g6" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -72,6 +76,7 @@ export const CAM21_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "At one point, the route " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -82,9 +87,9 @@ export const CAM21_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The castle's now just a pile of stones but " },
+        { type: "text", text: "The castle's now just a pile of stones but it's " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: ", and " },
+        { type: "text", text: ", and fascinating information boards show " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -107,7 +112,7 @@ export const CAM21_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "At certain times of the year, " },
+        { type: "text", text: "At certain times of the year, people come here " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -120,12 +125,16 @@ export const CAM21_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g13" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "In the daytime, it's " },
+        { type: "gap", gapId: "g13" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "As you hike through the dense woods in the valley bottom, " },
+        { type: "text", text: "As you hike through the dense woods in the valley bottom, the only things you'll hear are " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
       ],
@@ -153,7 +162,7 @@ export const CAM21_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Melby Coal Mine has been open to the public for twenty years and " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: "." },
+        { type: "text", text: " for its visitor experience." },
       ],
     },
     {

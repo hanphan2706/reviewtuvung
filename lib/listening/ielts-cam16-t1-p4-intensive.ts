@@ -5,30 +5,30 @@ import type {
 
 export const CAM16_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["is not just about talking or lecturing"] },
-    { id: "g2", answers: ["to solve their problems and to achieve their greatest triumphs"] },
+    { id: "g1", answers: ["talking or lecturing"] },
+    { id: "g2", answers: ["their greatest triumphs"] },
     { id: "g3", answers: ["therefore the most appealing"] },
-    { id: "g4", answers: ["Amazingly, we still have access to these ideas"] },
+    { id: "g4", answers: ["still have access to"] },
     { id: "g5", answers: ["Cato definitely didn't", "Cato definitely did not"] },
-    { id: "g6", answers: ["never intended his Meditations to be anything but personal"] },
-    { id: "g7", answers: ["come to us by way of a note-taking student"] },
-    { id: "g8", answers: ["the key to achieving this was virtue"] },
-    { id: "g9", answers: ["they don't have to control us, because we can learn to control them", "they do not have to control us, because we can learn to control them"] },
+    { id: "g6", answers: ["anything but personal"] },
+    { id: "g7", answers: ["a note-taking student"] },
+    { id: "g8", answers: ["the key to achieving this"] },
+    { id: "g9", answers: ["learn to control them"] },
     { id: "g10", answers: ["Using this definition as a model"] },
     { id: "g11", answers: ["were inspired by the philosophy"] },
-    { id: "g12", answers: ["Thomas Jefferson kept a copy of Seneca beside his bed"] },
-    { id: "g13", answers: ["referring to it as his \"consoling religion\""] },
+    { id: "g12", answers: ["beside his bed"] },
+    { id: "g13", answers: ["his \"consoling religion\""] },
     { id: "g14", answers: ["Today's political leaders are no different"] },
-    { id: "g15", answers: ["claims that Meditations is one of two books he travels with"] },
+    { id: "g15", answers: ["he travels with"] },
     { id: "g16", answers: ["It's most commonly used to treat", "It is most commonly used to treat"] },
-    { id: "g17", answers: ["A lesson every business entrepreneur needs to learn"] },
-    { id: "g18", answers: ["This is not as easy as it sounds"] },
+    { id: "g17", answers: ["needs to learn"] },
+    { id: "g18", answers: ["as easy as it sounds"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Ancient philosophy " },
+        { type: "text", text: "Ancient philosophy is not just about " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: ", or even reading long, dense books." },
       ],
@@ -36,7 +36,7 @@ export const CAM16_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "In fact, it is something people have used throughout history – " },
+        { type: "text", text: "In fact, it is something people have used throughout history – to solve their problems and to achieve " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
       ],
@@ -64,10 +64,11 @@ export const CAM16_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Amazingly, we " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
-          text: ", despite the fact that the most famous Stoics never wrote anything down for publication.",
+          text: " these ideas, despite the fact that the most famous Stoics never wrote anything down for publication.",
         },
       ],
     },
@@ -78,7 +79,7 @@ export const CAM16_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Marcus Aurelius " },
+        { type: "text", text: "Marcus Aurelius never intended his Meditations to be " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
       ],
@@ -86,7 +87,7 @@ export const CAM16_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Seneca's letters were, well, letters and Epictetus' thoughts " },
+        { type: "text", text: "Seneca's letters were, well, letters and Epictetus' thoughts come to us by way of " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -99,7 +100,7 @@ export const CAM16_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "Stoic principles were based on the idea that its followers could have an unshakable happiness in this life and ",
         },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: "." },
+        { type: "text", text: " was virtue." },
       ],
     },
     {
@@ -107,7 +108,7 @@ export const CAM16_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The road to virtue, in turn, lay in understanding that destructive emotions, like anger and jealousy, are under our conscious control – ",
+          text: "The road to virtue, in turn, lay in understanding that destructive emotions, like anger and jealousy, are under our conscious control – they don't have to control us, because we can ",
         },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
@@ -160,7 +161,11 @@ export const CAM16_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g12" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "Thomas Jefferson kept a copy of Seneca " },
+        { type: "gap", gapId: "g12" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -171,7 +176,7 @@ export const CAM16_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Eugène Delacroix, the renowned French Romantic artist (known best for his painting Liberty Leading the People) was an ardent Stoic, ",
+          text: "Eugène Delacroix, the renowned French Romantic artist (known best for his painting Liberty Leading the People) was an ardent Stoic, referring to it as ",
         },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
@@ -196,7 +201,7 @@ export const CAM16_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Wen Jiabao, the former prime minister of China, " },
+        { type: "text", text: "Wen Jiabao, the former prime minister of China, claims that Meditations is one of two books " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: " and that he has read it more than one hundred times over the course of his life." },
       ],
@@ -241,7 +246,11 @@ export const CAM16_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g17" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "A lesson every business entrepreneur " },
+        { type: "gap", gapId: "g17" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -264,6 +273,7 @@ export const CAM16_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "This is not " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",

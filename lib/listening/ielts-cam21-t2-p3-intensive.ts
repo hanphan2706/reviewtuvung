@@ -5,32 +5,32 @@ import type {
 
 export const CAM21_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["this is a chance for you to give us some feedback"] },
-    { id: "g2", answers: ["What would you like to begin with"] },
+    { id: "g1", answers: ["give us some feedback"] },
+    { id: "g2", answers: ["like to begin with"] },
     { id: "g3", answers: ["I found really surprising"] },
-    { id: "g4", answers: ["that's been in the news a lot", "that has been in the news a lot"] },
-    { id: "g5", answers: ["I'd no idea it was that many", "I had no idea it was that many"] },
-    { id: "g6", answers: ["most of us were already aware of that"] },
+    { id: "g4", answers: ["in the news a lot"] },
+    { id: "g5", answers: ["I'd no idea", "I had no idea"] },
+    { id: "g6", answers: ["already aware of that"] },
     { id: "g7", answers: ["that was only mentioned in passing"] },
     { id: "g8", answers: ["I'll bear that in mind", "I will bear that in mind"] },
-    { id: "g9", answers: ["For me the most interesting one was"] },
-    { id: "g10", answers: ["So customers can be confident about what they buy"] },
-    { id: "g11", answers: ["I thought there were some problems with that, actually"] },
-    { id: "g12", answers: ["do you have any recommendations for new topics"] },
-    { id: "g13", answers: ["That sounds more like a medical topic than food science"] },
-    { id: "g14", answers: ["Yes, I think the whole class would be interested in that"] },
+    { id: "g9", answers: ["the most interesting one"] },
+    { id: "g10", answers: ["confident about what they buy"] },
+    { id: "g11", answers: ["some problems with that"] },
+    { id: "g12", answers: ["any recommendations"] },
+    { id: "g13", answers: ["more like a medical topic"] },
+    { id: "g14", answers: ["the whole class would be interested"] },
     { id: "g15", answers: ["maybe too specialist"] },
     { id: "g16", answers: ["talk me through the stages"] },
-    { id: "g17", answers: ["We hadn't done one of these before", "We had not done one of these before"] },
-    { id: "g18", answers: ["it's a fruit but actually it's really good in savoury dishes", "it is a fruit but actually it is really good in savoury dishes"] },
+    { id: "g17", answers: ["hadn't done one of these", "had not done one of these"] },
+    { id: "g18", answers: ["really good in savoury dishes"] },
   ],
   lines: [
     {
       speaker: "TUTOR",
       segments: [
-        { type: "text", text: "Thanks for coming along, Nadia and Fergus. So " },
+        { type: "text", text: "Thanks for coming along, Nadia and Fergus. So this is a chance for you to " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " about different aspects of your course. " },
+        { type: "text", text: " about different aspects of your course. What would you " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "?" },
       ],
@@ -49,7 +49,7 @@ export const CAM21_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "FERGUS",
       segments: [
-        { type: "text", text: "Yeah, " },
+        { type: "text", text: "Yeah, that's been " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: ". But I hadn't realised that unsafe food causes more than 200 different diseases." },
       ],
@@ -61,7 +61,7 @@ export const CAM21_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ". And speaking of diseases, I knew resistance to antibiotics is on the increase, but I didn't know why...",
+          text: " it was that many. And speaking of diseases, I knew resistance to antibiotics is on the increase, but I didn't know why...",
         },
       ],
     },
@@ -79,7 +79,7 @@ export const CAM21_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Then the sessions provided a lot of information about plastic pollution from food packaging in the ocean, but I think that ",
+          text: "Then the sessions provided a lot of information about plastic pollution from food packaging in the ocean, but I think that most of us were ",
         },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
@@ -107,10 +107,11 @@ export const CAM21_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "FERGUS",
       segments: [
+        { type: "text", text: "For me " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: " about that project to prevent companies giving incorrect information to consumers about food.",
+          text: " was about that project to prevent companies giving incorrect information to consumers about food.",
         },
       ],
     },
@@ -146,7 +147,7 @@ export const CAM21_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "FERGUS",
       segments: [
-        { type: "text", text: "Exactly. " },
+        { type: "text", text: "Exactly. So customers can be " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
       ],
@@ -160,17 +161,17 @@ export const CAM21_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "FERGUS",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, I thought there were " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: "." },
+        { type: "text", text: ", actually." },
       ],
     },
     {
       speaker: "TUTOR",
       segments: [
-        { type: "text", text: "OK. And " },
+        { type: "text", text: "OK. And do you have " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: " that we could include in the course?" },
+        { type: "text", text: " for new topics that we could include in the course?" },
       ],
     },
     {
@@ -194,12 +195,20 @@ export const CAM21_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { speaker: "NADIA", segments: [{ type: "text", text: "Yes, that'd be a good topic. And I'm interested in the idea of a personalised approach to diet, now we have the technology to analyse exactly what individuals need." }] },
     {
       speaker: "FERGUS",
-      segments: [{ type: "gap", gapId: "g13" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "That sounds " },
+        { type: "gap", gapId: "g13" },
+        { type: "text", text: " than food science." },
+      ],
     },
     { speaker: "NADIA", segments: [{ type: "text", text: "OK. What about sessions on the variety of food and eating habits around the world? That's very relevant nowadays." }] },
     {
       speaker: "FERGUS",
-      segments: [{ type: "gap", gapId: "g14" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "Yes, I think " },
+        { type: "gap", gapId: "g14" },
+        { type: "text", text: " in that." },
+      ],
     },
     {
       speaker: "NADIA",
@@ -246,9 +255,9 @@ export const CAM21_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "NADIA",
       segments: [
-        { type: "text", text: "Then we had to do the literature review. " },
+        { type: "text", text: "Then we had to do the literature review. We " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: " so the handout with advice for the project was very useful here." },
+        { type: "text", text: " before so the handout with advice for the project was very useful here." },
       ],
     },
     {
@@ -272,7 +281,7 @@ export const CAM21_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "FERGUS",
       segments: [
-        { type: "text", text: "Yeah, like the name tells you, " },
+        { type: "text", text: "Yeah, like the name tells you, it's a fruit but actually it's " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",

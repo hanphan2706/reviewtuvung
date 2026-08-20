@@ -7,22 +7,22 @@ export const CAM17_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I'm looking for a cleaning service", "I am looking for a cleaning service"] },
     { id: "g2", answers: ["do you do domestic cleaning"] },
-    { id: "g3", answers: ["we're probably looking at about two hours", "we are probably looking at about two hours"] },
+    { id: "g3", answers: ["looking at about two hours"] },
     { id: "g4", answers: ["a thorough clean of all surfaces"] },
     { id: "g5", answers: ["Does your apartment have carpets"] },
     { id: "g6", answers: ["we have some additional services"] },
     { id: "g7", answers: ["I hardly ever use that"] },
-    { id: "g8", answers: ["Would you like that done every week"] },
+    { id: "g8", answers: ["like that done every week"] },
     { id: "g9", answers: ["there's no need for that", "there is no need for that"] },
     { id: "g10", answers: ["a bit less often"] },
-    { id: "g11", answers: ["the inside does get a bit grubby"] },
+    { id: "g11", answers: ["get a bit grubby"] },
     { id: "g12", answers: ["we could arrange for your curtains"] },
     { id: "g13", answers: ["it could do with a wash"] },
     { id: "g14", answers: ["get the pressure washer onto that"] },
-    { id: "g15", answers: ["put you in touch with a reliable one"] },
+    { id: "g15", answers: ["in touch with a reliable one"] },
     { id: "g16", answers: ["I'll bear it in mind", "I will bear it in mind"] },
     { id: "g17", answers: ["very carefully selected"] },
-    { id: "g18", answers: ["we do our best to organise it that way", "we do our best to organize it that way"] },
+    { id: "g18", answers: ["organise it that way", "organize it that way"] },
   ],
   lines: [
     {
@@ -52,7 +52,7 @@ export const CAM17_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JACINTA",
       segments: [
-        { type: "text", text: "Yes. For a one-bedroom flat " },
+        { type: "text", text: "Yes. For a one-bedroom flat we're probably " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: " for a clean. So we'd do " },
         { type: "gap", gapId: "g4" },
@@ -97,7 +97,7 @@ export const CAM17_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JACINTA",
       segments: [
-        { type: "text", text: "Sure. " },
+        { type: "text", text: "Sure. Would you " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "?" },
       ],
@@ -144,7 +144,7 @@ export const CAM17_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes, that'd be good. I'm on the fifteenth floor, so the outside gets done regularly by specialists, but " },
+          text: "Yes, that'd be good. I'm on the fifteenth floor, so the outside gets done regularly by specialists, but the inside does " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -180,7 +180,7 @@ export const CAM17_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Now if you're interested, we do offer some other possibilities to do with general maintenance. For example, if you have a problem with water and you need a plumber in a hurry, we can " },
+          text: "Now if you're interested, we do offer some other possibilities to do with general maintenance. For example, if you have a problem with water and you need a plumber in a hurry, we can put you " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
@@ -234,7 +234,7 @@ export const CAM17_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JACINTA",
       segments: [
-        { type: "text", text: "Yes, " },
+        { type: "text", text: "Yes, we do our best to " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: ", and we usually manage it." },
       ],

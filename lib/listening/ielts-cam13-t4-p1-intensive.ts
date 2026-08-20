@@ -7,73 +7,55 @@ export const CAM13_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "I hope you don't mind me calling you",
-        "I hope you do not mind me calling you",
-      ],
+      answers: ["don't mind me calling you", "do not mind me calling you"],
     },
     {
       id: "g2",
-      answers: [
-        "I'm ringing because I need a bit of advice",
-        "I am ringing because I need a bit of advice",
-      ],
+      answers: ["need a bit of advice"],
     },
     { id: "g3", answers: ["Best thing I ever did"] },
-    { id: "g4", answers: ["now I work in the customer services department"] },
-    { id: "g5", answers: ["I was pretty nervous to begin with"] },
+    { id: "g4", answers: ["customer services department"] },
+    { id: "g5", answers: ["pretty nervous to begin with"] },
     {
       id: "g6",
       answers: ["But it didn't actually matter", "But it did not actually matter"],
     },
     {
       id: "g7",
-      answers: ["I wish I'd done that one instead", "I wish I had done that one instead"],
+      answers: ["wish I'd done that one", "wish I had done that one"],
     },
-    { id: "g8", answers: ["How did you get on with them"] },
-    { id: "g9", answers: ["Because of its size you can work in loads of different areas"] },
+    { id: "g8", answers: ["get on with them"] },
+    { id: "g9", answers: ["loads of different areas"] },
     { id: "g10", answers: ["which isn't great", "which is not great"] },
     { id: "g11", answers: ["And the pay goes up massively"] },
     {
       id: "g12",
-      answers: [
-        "it's the experience I think will be really useful",
-        "it is the experience I think will be really useful",
-      ],
+      answers: ["will be really useful"],
     },
     {
       id: "g13",
-      answers: [
-        "That's the most useful part about it",
-        "That is the most useful part about it",
-      ],
+      answers: ["most useful part about it"],
     },
     {
       id: "g14",
       answers: ["I didn't even mind the studying", "I did not even mind the studying"],
     },
-    { id: "g15", answers: ["So you get lots of support from both your tutor and your manager"] },
+    { id: "g15", answers: ["lots of support"] },
     {
       id: "g16",
-      answers: [
-        "So long as you're well prepared there's nothing to worry about",
-        "So long as you are well prepared there is nothing to worry about",
-      ],
+      answers: ["nothing to worry about"],
     },
     {
       id: "g17",
-      answers: [
-        "If you've got a nice jacket, wear that with a skirt or trousers",
-        "If you have got a nice jacket, wear that with a skirt or trousers",
-      ],
+      answers: ["skirt or trousers"],
     },
-    { id: "g18", answers: ["It makes people respond better to you"] },
+    { id: "g18", answers: ["respond better to you"] },
   ],
   lines: [
     {
       speaker: "MARTHA",
       segments: [
-        { type: "text", text: "Hi Alex. It's Martha Clines here. James White gave me your number. " },
+        { type: "text", text: "Hi Alex. It's Martha Clines here. James White gave me your number. I hope you " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
@@ -82,7 +64,7 @@ export const CAM13_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MARTHA",
       segments: [
-        { type: "text", text: "Good thanks. " },
+        { type: "text", text: "Good thanks. I'm ringing because I " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
       ],
@@ -109,7 +91,7 @@ export const CAM13_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ALEX",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, now I work in the " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
@@ -124,6 +106,7 @@ export const CAM13_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ALEX",
       segments: [
+        { type: "text", text: "I was " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
@@ -145,15 +128,15 @@ export const CAM13_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ALEX",
       segments: [
-        { type: "text", text: "Yes. That sounds good. I took the one on IT skills but " },
+        { type: "text", text: "Yes. That sounds good. I took the one on IT skills but I " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: " instead." },
       ],
     },
     {
       speaker: "MARTHA",
       segments: [
-        { type: "text", text: "OK, that's good to know. What about the other trainees? " },
+        { type: "text", text: "OK, that's good to know. What about the other trainees? How did you " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "?" },
       ],
@@ -179,7 +162,7 @@ export const CAM13_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ALEX",
       segments: [
-        { type: "text", text: "Yeah, definitely. " },
+        { type: "text", text: "Yeah, definitely. Because of its size you can work in " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: " within the organisation." },
       ],
@@ -209,7 +192,7 @@ export const CAM13_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MARTHA",
       segments: [
-        { type: "text", text: "Yeah, but I'm not doing it for the money - " },
+        { type: "text", text: "Yeah, but I'm not doing it for the money - it's the experience I think " },
         { type: "gap", gapId: "g12" },
         {
           type: "text",
@@ -220,7 +203,7 @@ export const CAM13_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ALEX",
       segments: [
-        { type: "text", text: "You're right. " },
+        { type: "text", text: "You're right. That's the " },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
@@ -234,9 +217,9 @@ export const CAM13_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ALEX",
       segments: [
-        { type: "text", text: "Yes, one day each month. " },
+        { type: "text", text: "Yes, one day each month. So you get " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: "." },
+        { type: "text", text: " from both your tutor and your manager." },
       ],
     },
     {
@@ -257,6 +240,10 @@ export const CAM13_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ALEX",
       segments: [
+        {
+          type: "text",
+          text: "So long as you're well prepared there's ",
+        },
         { type: "gap", gapId: "g16" },
         { type: "text", text: ". Everyone's very friendly." },
       ],
@@ -268,7 +255,10 @@ export const CAM13_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ALEX",
       segments: [
-        { type: "text", text: "Nothing too casual - like jeans, for example. " },
+        {
+          type: "text",
+          text: "Nothing too casual - like jeans, for example. If you've got a nice jacket, wear that with a ",
+        },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
       ],
@@ -279,7 +269,7 @@ export const CAM13_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Erm, well I know it's really obvious but arrive in plenty of time. They hate people who are late. So make sure you know exactly where you have to get to. And one other useful piece of advice my manager told me before I had the interview for this job - is to smile. Even if you feel terrified. ",
+          text: "Erm, well I know it's really obvious but arrive in plenty of time. They hate people who are late. So make sure you know exactly where you have to get to. And one other useful piece of advice my manager told me before I had the interview for this job - is to smile. Even if you feel terrified. It makes people ",
         },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },

@@ -17,7 +17,7 @@ export const CAM18_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g10", answers: ["get on with"] },
     { id: "g11", answers: ["I would ask you to consider", "I'd ask you to consider"] },
     { id: "g12", answers: ["range from"] },
-    { id: "g13", answers: ["it's best not to do it at all", "it is best not to do it at all"] },
+    { id: "g13", answers: ["best not to do it"] },
     { id: "g14", answers: ["It's up to you", "It is up to you"] },
     { id: "g15", answers: ["let's take a look at", "let us take a look at"] },
     { id: "g16", answers: ["If that doesn't appeal to you", "If that does not appeal to you"] },
@@ -124,10 +124,10 @@ export const CAM18_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "But it is critical that you have enough hours in the day for whatever role we agree is suitable for you – if being a volunteer becomes stressful then ",
+          text: "But it is critical that you have enough hours in the day for whatever role we agree is suitable for you – if being a volunteer becomes stressful then it's ",
         },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " at all." },
       ],
     },
     {

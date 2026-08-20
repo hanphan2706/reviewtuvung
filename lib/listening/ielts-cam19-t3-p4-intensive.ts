@@ -13,13 +13,13 @@ export const CAM19_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g6", answers: ["find their way into"] },
     { id: "g7", answers: ["over a period of time"] },
     { id: "g8", answers: ["On a larger scale"] },
-    { id: "g9", answers: ["We already understand some of the impacts"] },
+    { id: "g9", answers: ["some of the impacts"] },
     { id: "g10", answers: ["in a variety of ways"] },
     { id: "g11", answers: ["Surprisingly perhaps"] },
     { id: "g12", answers: ["What's more", "What is more"] },
     { id: "g13", answers: ["it's important to underline that", "it is important to underline that"] },
     { id: "g14", answers: ["there is not yet conclusive proof"] },
-    { id: "g15", answers: ["It is very difficult to accurately estimate"] },
+    { id: "g15", answers: ["very difficult to accurately estimate"] },
     { id: "g16", answers: ["an essential component of"] },
     { id: "g17", answers: ["The short answer was"] },
     { id: "g18", answers: ["To summarise", "To summarize"] },
@@ -73,6 +73,7 @@ export const CAM19_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "We already understand " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -111,6 +112,7 @@ export const CAM19_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "It is " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",

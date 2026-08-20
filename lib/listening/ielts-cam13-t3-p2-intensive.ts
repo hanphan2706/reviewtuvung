@@ -7,67 +7,61 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "who hasn't found the perfect physical activity yet",
-        "who has not found the perfect physical activity yet",
-      ],
+      answers: ["perfect physical activity"],
     },
-    { id: "g2", answers: ["whether you would enjoy training in a gym"] },
-    { id: "g3", answers: ["Many people are put off by the idea"] },
-    { id: "g4", answers: ["some gyms can get very crowded"] },
-    { id: "g5", answers: ["Running has become incredibly popular in recent years"] },
+    { id: "g2", answers: ["training in a gym"] },
+    { id: "g3", answers: ["put off by the idea"] },
+    { id: "g4", answers: ["get very crowded"] },
+    { id: "g5", answers: ["incredibly popular"] },
     {
       id: "g6",
       answers: [
-        "It's worth investing in a high-quality pair",
-        "It is worth investing in a high-quality pair",
+        "worth investing in",
       ],
     },
     {
       id: "g7",
-      answers: ["they don't come cheap", "they do not come cheap"],
+      answers: ["don't come cheap", "do not come cheap"],
     },
-    { id: "g8", answers: ["The only thing that may stop you is snow and ice"] },
-    { id: "g9", answers: ["it can be quite boring or solitary"] },
+    { id: "g8", answers: ["snow and ice"] },
+    { id: "g9", answers: ["boring or solitary"] },
     {
       id: "g10",
       answers: [
-        "It's hard to chat to people while you're swimming lengths",
-        "It is hard to chat to people while you are swimming lengths",
-        "It's hard to chat to people while you are swimming lengths",
+        "hard to chat",
       ],
     },
-    { id: "g11", answers: ["Cycling has become almost as popular as running"] },
-    { id: "g12", answers: ["Only fanatics go out in the wind and rain"] },
-    { id: "g13", answers: ["which focuses on developing both a healthy mind and body"] },
-    { id: "g14", answers: ["It can be surprisingly challenging"] },
-    { id: "g15", answers: ["Obviously there can be significant costs involved"] },
+    { id: "g11", answers: ["almost as popular"] },
+    { id: "g12", answers: ["wind and rain"] },
+    { id: "g13", answers: ["healthy mind and body"] },
+    { id: "g14", answers: ["surprisingly challenging"] },
+    { id: "g15", answers: ["significant costs involved"] },
     {
       id: "g16",
       answers: [
-        "Make sure you get someone with a recognised qualification though",
-        "Make sure you get someone with a recognized qualification though",
+        "recognised qualification",
+        "recognized qualification",
       ],
     },
-    { id: "g17", answers: ["So many people waste lots of money by signing up for membership"] },
-    { id: "g18", answers: ["Some people advise writing goals down"] },
+    { id: "g17", answers: ["signing up for membership"] },
+    { id: "g18", answers: ["writing goals down"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So if you are one of those people " },
+        { type: "text", text: "So if you are one of those people who hasn't found the " },
         { type: "gap", gapId: "g1" },
         {
           type: "text",
-          text: ", here are some things to think about which might help you make the right decision for you.",
+          text: " yet, here are some things to think about which might help you make the right decision for you.",
         },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The first question to ask yourself is " },
+        { type: "text", text: "The first question to ask yourself is whether you would enjoy " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
       ],
@@ -75,6 +69,7 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Many people are " },
         { type: "gap", gapId: "g3" },
         {
           type: "text",
@@ -85,7 +80,7 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "You often have to go very early or late as " },
+        { type: "text", text: "You often have to go very early or late as some gyms can " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
@@ -96,8 +91,9 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Running has become " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "." },
+        { type: "text", text: " in recent years." },
       ],
     },
     {
@@ -116,8 +112,9 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "It's " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: " and " },
+        { type: "text", text: " a high-quality pair and they " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -127,7 +124,7 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Another great thing about running is that you can do it at any time of day or night. ",
+          text: "Another great thing about running is that you can do it at any time of day or night. The only thing that may stop you is ",
         },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
@@ -154,7 +151,7 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "On the other hand, " },
+        { type: "text", text: "On the other hand, it can be quite " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -162,15 +159,17 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "It's " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " to people while you're swimming lengths." },
       ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Cycling has become " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: " in recent years." },
+        { type: "text", text: " as running in recent years." },
       ],
     },
     {
@@ -185,6 +184,7 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Only fanatics go out in the " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -194,7 +194,7 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yoga is a good choice for those of you looking for exercise ",
+          text: "Yoga is a good choice for those of you looking for exercise which focuses on developing both a ",
         },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
@@ -216,6 +216,7 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "It can be " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: ", especially for people who aren't very flexible." },
       ],
@@ -232,6 +233,7 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Obviously there can be " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
       ],
@@ -248,8 +250,9 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Make sure you get someone with a " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " though." },
       ],
     },
     {
@@ -270,6 +273,7 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "So many people waste lots of money by " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: " and then hardly ever go." },
       ],
@@ -332,6 +336,7 @@ export const CAM13_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Some people advise " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: " but I think it's better to have a flexible approach." },
       ],

@@ -7,22 +7,22 @@ export const CAM16_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I'm calling for some information about", "I am calling for some information about"] },
     { id: "g2", answers: ["I'm thinking of sending my son", "I am thinking of sending my son"] },
-    { id: "g3", answers: ["we focus on basic cycling skills and safety"] },
+    { id: "g3", answers: ["basic cycling skills and safety"] },
     { id: "g4", answers: ["He can ride a bike"] },
-    { id: "g5", answers: ["He'd probably be best in Level 5", "He would probably be best in Level 5"] },
-    { id: "g6", answers: ["They start off practising on the site here"] },
-    { id: "g7", answers: ["we aim to get them riding on the road"] },
-    { id: "g8", answers: ["they also stand in for me if I'm not around", "they also stand in for me if I am not around"] },
-    { id: "g9", answers: ["one of these is responsible for each class"] },
-    { id: "g10", answers: ["They do a great job, I have to say"] },
+    { id: "g5", answers: ["best in Level 5"] },
+    { id: "g6", answers: ["practising on the site here", "practicing on the site here"] },
+    { id: "g7", answers: ["riding on the road"] },
+    { id: "g8", answers: ["stand in for me"] },
+    { id: "g9", answers: ["responsible for each class"] },
+    { id: "g10", answers: ["They do a great job"] },
     { id: "g11", answers: ["What size will Charlie's class be"] },
-    { id: "g12", answers: ["so their instructor really gets to know them well"] },
-    { id: "g13", answers: ["We don't let that put us off", "We do not let that put us off"] },
+    { id: "g12", answers: ["gets to know them well"] },
+    { id: "g13", answers: ["put us off"] },
     { id: "g14", answers: ["How about a drink"] },
-    { id: "g15", answers: ["And make sure he has shoes, not sandals"] },
-    { id: "g16", answers: ["The finishing time will be 12.30 as usual"] },
+    { id: "g15", answers: ["shoes, not sandals"] },
+    { id: "g16", answers: ["12.30 as usual", "12:30 as usual"] },
     { id: "g17", answers: ["you can't miss it", "you cannot miss it"] },
-    { id: "g18", answers: ["But the places are filling up quite quickly"] },
+    { id: "g18", answers: ["filling up quite quickly"] },
   ],
   lines: [
     { speaker: "JAKE", segments: [{ type: "text", text: "Hello, Junior Cycle camp, Jake speaking." }] },
@@ -39,7 +39,7 @@ export const CAM16_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JAKE",
       segments: [
-        { type: "text", text: "Great. Well, it's held every weekday morning over the summer vacation and " },
+        { type: "text", text: "Great. Well, it's held every weekday morning over the summer vacation and we focus on " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: ". We have eight levels for children from three years upwards. How old's your son?" },
       ],
@@ -55,10 +55,11 @@ export const CAM16_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JAKE",
       segments: [
+        { type: "text", text: "He'd probably be " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: ". " },
+        { type: "text", text: ". They start off " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ", and " },
+        { type: "text", text: ", and we aim to get them " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: ", but first they're taken to ride in the park, away from the traffic." },
       ],
@@ -72,10 +73,10 @@ export const CAM16_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well, all our staff wear different coloured shirts. So, we have three supervisors, and they have red shirts. They support the instructors, and ",
+          text: "Well, all our staff wear different coloured shirts. So, we have three supervisors, and they have red shirts. They support the instructors, and they also ",
         },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: ". Then the instructors themselves are in blue shirts, and " },
+        { type: "text", text: " if I'm not around. Then the instructors themselves are in blue shirts, and one of these is " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -89,7 +90,7 @@ export const CAM16_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "In order to be accepted, all our instructors have to submit a reference from someone who's seen them work with children - like if they've worked as a babysitter, for example. Then they have to complete our training course, including how to do lesson plans, and generally care for the well-being of the kids in their class. ",
         },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: ", I have to say." },
       ],
     },
     {
@@ -103,7 +104,7 @@ export const CAM16_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JAKE",
       segments: [
-        { type: "text", text: "We have a limit of eight children in each class, " },
+        { type: "text", text: "We have a limit of eight children in each class, so their instructor really " },
         { type: "gap", gapId: "g12" },
         {
           type: "text",
@@ -118,7 +119,7 @@ export const CAM16_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JAKE",
       segments: [
-        { type: "text", text: "Oh yes. " },
+        { type: "text", text: "Oh yes. We don't let that " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: " - we just put on our waterproofs and keep cycling." },
       ],
@@ -143,7 +144,7 @@ export const CAM16_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JAKE",
       segments: [
-        { type: "text", text: "No, we'll provide that. " },
+        { type: "text", text: "No, we'll provide that. And make sure he has " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
       ],
@@ -172,7 +173,7 @@ export const CAM16_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Now, there are a few things you should know about Day 1 of the camp. The classes normally start at 9.30 every morning, but on Day 1 you should aim to get Charlie here by 9.20. ",
+          text: "Now, there are a few things you should know about Day 1 of the camp. The classes normally start at 9.30 every morning, but on Day 1 you should aim to get Charlie here by 9.20. The finishing time will be ",
         },
         { type: "gap", gapId: "g16" },
         {
@@ -207,7 +208,7 @@ export const CAM16_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "One hundred ninety-nine dollars. We've managed to keep the price more or less the same as last year - it was one hundred ninety then. ",
+          text: "One hundred ninety-nine dollars. We've managed to keep the price more or less the same as last year - it was one hundred ninety then. But the places are ",
         },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },

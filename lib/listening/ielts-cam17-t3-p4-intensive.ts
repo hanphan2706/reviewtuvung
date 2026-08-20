@@ -6,22 +6,22 @@ import type {
 export const CAM17_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["in some fashion or other"] },
-    { id: "g2", answers: ["where birds went to in the winter"] },
+    { id: "g2", answers: ["where birds went to"] },
     {
       id: "g3",
       answers: ["we now recognize as error-filled", "we now recognise as error-filled"],
     },
     { id: "g4", answers: ["Take hibernation theory for example"] },
-    { id: "g5", answers: ["until experiments were done on caged birds"] },
+    { id: "g5", answers: ["on caged birds"] },
     { id: "g6", answers: ["birds have no hibernation instinct"] },
-    { id: "g7", answers: ["the seasonal change of one species into another"] },
+    { id: "g7", answers: ["one species into another"] },
     { id: "g8", answers: ["These assumptions are understandable"] },
-    { id: "g9", answers: ["an incorrect interpretation based on correct observations"] },
+    { id: "g9", answers: ["based on correct observations"] },
     { id: "g10", answers: ["The most bizarre theory"] },
     { id: "g11", answers: ["a surprisingly well-regarded paper"] },
     { id: "g12", answers: ["This particular stork made history"] },
     { id: "g13", answers: ["this spear was definitely not European"] },
-    { id: "g14", answers: ["You can still see the 'arrow stork'", "You can still see the arrow stork"] },
+    { id: "g14", answers: ["the 'arrow stork'", "the arrow stork"] },
     { id: "g15", answers: ["People gradually became aware"] },
     { id: "g16", answers: ["This is still common practice today"] },
     { id: "g17", answers: ["Huge amounts of data were gathered"] },
@@ -53,7 +53,7 @@ export const CAM17_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "Bird migration has been studied over many centuries through a variety of observations. But until relatively recently, ",
         },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: " was considered something of a mystery." },
+        { type: "text", text: " in the winter was considered something of a mystery." },
       ],
     },
     {
@@ -86,7 +86,7 @@ export const CAM17_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The theory that some birds hibernate persisted " },
+        { type: "text", text: "The theory that some birds hibernate persisted until experiments were done " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: " in the 1940s which demonstrated that " },
         { type: "gap", gapId: "g6" },
@@ -98,7 +98,7 @@ export const CAM17_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "One of the earliest naturalists and philosophers from ancient Greece was Aristotle who was the first writer to discuss the disappearance and reappearance of some bird species at certain times of year. He developed the theory of transmutation, ",
+          text: "One of the earliest naturalists and philosophers from ancient Greece was Aristotle who was the first writer to discuss the disappearance and reappearance of some bird species at certain times of year. He developed the theory of transmutation, the seasonal change of ",
         },
         { type: "gap", gapId: "g7" },
         { type: "text", text: ", by observing redstarts and robins." },
@@ -119,7 +119,7 @@ export const CAM17_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g8" },
         {
           type: "text",
-          text: " given that this pair of species are similar in shape, but are a classic example of ",
+          text: " given that this pair of species are similar in shape, but are a classic example of an incorrect interpretation ",
         },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
@@ -167,7 +167,7 @@ export const CAM17_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "It turned out to be a spear from a tribe in Central Africa. This was a truly defining moment in the history of ornithology because it was the first evidence that storks spend their winters in sub-Saharan Africa. ",
+          text: "It turned out to be a spear from a tribe in Central Africa. This was a truly defining moment in the history of ornithology because it was the first evidence that storks spend their winters in sub-Saharan Africa. You can still see ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " in the Zoological Collection of the University of Rostock in Germany." },

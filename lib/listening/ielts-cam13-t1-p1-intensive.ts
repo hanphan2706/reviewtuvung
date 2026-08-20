@@ -6,75 +6,37 @@ import type {
 export const CAM13_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["how can I help you"] },
-    { id: "g2", answers: ["I wanted to find out about cookery classes"] },
-    { id: "g3", answers: ["I believe there are some one-day classes for tourists"] },
-    {
-      id: "g4",
-      answers: [
-        "they're open to everyone, but tourists are always welcome",
-        "they are open to everyone, but tourists are always welcome",
-      ],
-    },
-    {
-      id: "g5",
-      answers: [
-        "let me give you some details of what's available",
-        "let me give you some details of what is available",
-      ],
-    },
+    { id: "g2", answers: ["I wanted to find out"] },
+    { id: "g3", answers: ["one-day classes for tourists"] },
+    { id: "g4", answers: ["open to everyone"] },
+    { id: "g5", answers: ["let me give you"] },
     { id: "g6", answers: ["There are several classes"] },
     { id: "g7", answers: ["that sounds good"] },
     { id: "g8", answers: ["How big are the classes"] },
     {
       id: "g9",
-      answers: [
-        "I'm not sure exactly, but they'll be quite small",
-        "I am not sure exactly, but they will be quite small",
-        "I'm not sure exactly, but they will be quite small",
-      ],
+      answers: ["I'm not sure exactly", "I am not sure exactly"],
     },
-    {
-      id: "g10",
-      answers: [
-        "most of the people who attend the classes find it's a nice way of getting to know one another",
-        "most of the people who attend the classes find it is a nice way of getting to know one another",
-      ],
-    },
-    { id: "g11", answers: ["I suppose it must be, yes"] },
-    { id: "g12", answers: ["But you said there were several classes"] },
-    {
-      id: "g13",
-      answers: [
-        "They're quite new, they just opened six months ago",
-        "They are quite new, they just opened six months ago",
-      ],
-    },
+    { id: "g10", answers: ["getting to know one another"] },
+    { id: "g11", answers: ["I suppose it must be"] },
+    { id: "g12", answers: ["there were several classes"] },
+    { id: "g13", answers: ["just opened six months ago"] },
     {
       id: "g14",
-      answers: ["I've heard good things about them", "I have heard good things about them"],
+      answers: ["I've heard good things", "I have heard good things"],
     },
     {
       id: "g15",
       answers: [
-        "I don't know if I'd be interested in that",
-        "I do not know if I would be interested in that",
-        "I don't know if I would be interested in that",
+        "I'd be interested in that",
+        "I would be interested in that",
       ],
     },
-    {
-      id: "g16",
-      answers: [
-        "I don't think they particularly focus on low calorie diets or weight loss",
-        "I do not think they particularly focus on low calorie diets or weight loss",
-      ],
-    },
-    { id: "g17", answers: ["Do they have a website I could check"] },
+    { id: "g16", answers: ["particularly focus on"] },
+    { id: "g17", answers: ["a website I could check"] },
     {
       id: "g18",
-      answers: [
-        "just key in the name of the school - it'll come up",
-        "just key in the name of the school - it will come up",
-      ],
+      answers: ["it'll come up", "it will come up"],
     },
   ],
   lines: [
@@ -91,7 +53,7 @@ export const CAM13_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Oh, hi. " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ". " },
+        { type: "text", text: " about cookery classes. I believe there are some " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "?" },
       ],
@@ -99,11 +61,11 @@ export const CAM13_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "OFFICIAL",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, they're " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: ". OK, " },
+        { type: "text", text: ", but tourists are always welcome. OK, " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: ". " },
+        { type: "text", text: " some details of what's available. " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: ". One very popular one is at the Food Studio." },
       ],
@@ -130,7 +92,10 @@ export const CAM13_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "OFFICIAL",
-      segments: [{ type: "gap", gapId: "g9" }, { type: "text", text: "." }],
+      segments: [
+        { type: "gap", gapId: "g9" },
+        { type: "text", text: ", but they'll be quite small." },
+      ],
     },
     {
       speaker: "WOMAN",
@@ -139,14 +104,20 @@ export const CAM13_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "OFFICIAL",
       segments: [
-        { type: "text", text: "I think so … let me check, yes, they do offer those. Though in fact " },
+        {
+          type: "text",
+          text: "I think so … let me check, yes, they do offer those. Though in fact most of the people who attend the classes find it's a nice way of ",
+        },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
       ],
     },
     {
       speaker: "WOMAN",
-      segments: [{ type: "gap", gapId: "g11" }, { type: "text", text: "." }],
+      segments: [
+        { type: "gap", gapId: "g11" },
+        { type: "text", text: ", yes." },
+      ],
     },
     {
       speaker: "OFFICIAL",
@@ -160,7 +131,7 @@ export const CAM13_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "OK. " },
+        { type: "text", text: "OK. But you said " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "?" },
       ],
@@ -168,20 +139,23 @@ export const CAM13_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "OFFICIAL",
       segments: [
-        { type: "text", text: "That's right. Another one you might be interested in is Bond's Cookery School. " },
+        {
+          type: "text",
+          text: "That's right. Another one you might be interested in is Bond's Cookery School. They're quite new, they ",
+        },
         { type: "gap", gapId: "g13" },
         { type: "text", text: ", but " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
-          text: ". They concentrate on teaching you to prepare healthy food, and they have quite a lot of specialist staff.",
+          text: " about them. They concentrate on teaching you to prepare healthy food, and they have quite a lot of specialist staff.",
         },
       ],
     },
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "So is that food for people on a diet and things like that? " },
+        { type: "text", text: "So is that food for people on a diet and things like that? I don't know if " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
       ],
@@ -189,18 +163,18 @@ export const CAM13_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "OFFICIAL",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, I don't think they " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
-          text: ". It's more to do with recipes that look at specific needs, like including ingredients that will help build up your bones and make them stronger, that sort of thing.",
+          text: " low calorie diets or weight loss. It's more to do with recipes that look at specific needs, like including ingredients that will help build up your bones and make them stronger, that sort of thing.",
         },
       ],
     },
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "I see. Well, I might be interested, I'm not sure. " },
+        { type: "text", text: "I see. Well, I might be interested, I'm not sure. Do they have " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "?" },
       ],
@@ -208,7 +182,7 @@ export const CAM13_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "OFFICIAL",
       segments: [
-        { type: "text", text: "Yes, " },
+        { type: "text", text: "Yes, just key in the name of the school - " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",

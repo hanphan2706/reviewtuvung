@@ -5,31 +5,32 @@ import type {
 
 export const CAM19_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I haven't seen you for a bit", "I have not seen you for a bit"] },
+    { id: "g1", answers: ["haven't seen you", "have not seen you"] },
     { id: "g2", answers: ["I've been busy with my project", "I have been busy with my project"] },
     { id: "g3", answers: ["I had two main aims"] },
     { id: "g4", answers: ["The basic process was quite straightforward"] },
-    { id: "g5", answers: ["I had time to play around with"] },
+    { id: "g5", answers: ["play around with"] },
     { id: "g6", answers: ["I was really pleased with"] },
     { id: "g7", answers: ["It must've been a great feeling", "It must have been a great feeling"] },
-    { id: "g8", answers: ["I'm going to send them some samples", "I am going to send them some samples"] },
-    { id: "g9", answers: ["I came across something on the internet"] },
+    { id: "g8", answers: ["send them some samples"] },
+    { id: "g9", answers: ["came across something"] },
     { id: "g10", answers: ["It started off as a project"] },
     { id: "g11", answers: ["there's all sorts of possibilities", "there is all sorts of possibilities", "there are all sorts of possibilities"] },
     { id: "g12", answers: ["I was reading an article about"] },
     { id: "g13", answers: ["they need to be more proactive"] },
-    { id: "g14", answers: ["The government needs to do something about it"] },
+    { id: "g14", answers: ["do something about it"] },
     { id: "g15", answers: ["It's got to change", "It has got to change"] },
     { id: "g16", answers: ["didn't actually taste of anything", "did not actually taste of anything"] },
     { id: "g17", answers: ["it's all kept very quiet", "it is all kept very quiet"] },
-    { id: "g18", answers: ["it's hard to know which varieties are safe to eat", "it is hard to know which varieties are safe to eat"] },
+    { id: "g18", answers: ["it's hard to know", "it is hard to know"] },
   ],
   lines: [
     {
       speaker: "COLIN",
       segments: [
+        { type: "text", text: "I " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: ", Marie." },
+        { type: "text", text: " for a bit, Marie." },
       ],
     },
     {
@@ -90,7 +91,7 @@ export const CAM19_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "COLIN",
       segments: [
-        { type: "text", text: "Yeah, I'd used that before, but in this project, " },
+        { type: "text", text: "Yeah, I'd used that before, but in this project, I had time to " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
@@ -115,7 +116,7 @@ export const CAM19_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "It was. And I'm hoping that some of the restaurants in town will be interested in the biscuits. ",
+          text: "It was. And I'm hoping that some of the restaurants in town will be interested in the biscuits. I'm going to ",
         },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
@@ -124,10 +125,11 @@ export const CAM19_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MARIE",
       segments: [
+        { type: "text", text: "I " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: " yesterday that might interest you. It was a company that's developed touch-sensitive sensors for food labels.",
+          text: " on the internet yesterday that might interest you. It was a company that's developed touch-sensitive sensors for food labels.",
         },
       ],
     },
@@ -209,7 +211,7 @@ export const CAM19_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "One thing everyone's aware of is the need for a reduction in unnecessary packaging – but just about everything you buy in supermarkets is still covered in plastic. ",
+          text: "One thing everyone's aware of is the need for a reduction in unnecessary packaging – but just about everything you buy in supermarkets is still covered in plastic. The government needs to ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
@@ -299,7 +301,7 @@ export const CAM19_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Yes, " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: ". Anyway maybe now…" },
+        { type: "text", text: " which varieties are safe to eat. Anyway maybe now…" },
       ],
     },
   ],

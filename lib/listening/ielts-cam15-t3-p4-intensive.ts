@@ -5,36 +5,27 @@ import type {
 
 export const CAM15_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["this is very much a 20th-century development"] },
-    { id: "g2", answers: ["The origins of cleanliness date back to prehistoric times"] },
-    { id: "g3", answers: ["the earliest people lived near water and knew something about its cleansing properties"] },
-    { id: "g4", answers: ["soapmaking was known as early as 2800 BC"] },
-    {
-      id: "g5",
-      answers: [
-        "though there's no reference to the purpose of this material",
-        "though there is no reference to the purpose of this material",
-      ],
-    },
+    { id: "g1", answers: ["a 20th-century development"] },
+    { id: "g2", answers: ["date back to prehistoric times"] },
+    { id: "g3", answers: ["its cleansing properties"] },
+    { id: "g4", answers: ["as early as 2800 BC"] },
+    { id: "g5", answers: ["no reference to the purpose"] },
     {
       id: "g6",
-      answers: [
-        "The early Greeks bathed for aesthetic reasons and apparently didn't use soap",
-        "The early Greeks bathed for aesthetic reasons and apparently did not use soap",
-      ],
+      answers: ["for aesthetic reasons"],
     },
-    { id: "g7", answers: ["Clothes were washed without soap in streams"] },
+    { id: "g7", answers: ["without soap in streams"] },
     { id: "g8", answers: ["according to an ancient Roman legend"] },
-    { id: "g9", answers: ["greatly reduced the effort required to wash their clothes"] },
-    { id: "g10", answers: ["As Roman civilisation advanced, so did bathing", "As Roman civilization advanced, so did bathing"] },
-    { id: "g11", answers: ["The baths were luxurious, and bathing became very popular"] },
-    { id: "g12", answers: ["recommended soap for both medicinal and cleaning purposes"] },
-    { id: "g13", answers: ["much of Europe felt the impact of filth on public health"] },
-    { id: "g14", answers: ["associations of soapmakers guarded their trade secrets closely"] },
-    { id: "g15", answers: ["Gradually more varieties of soap became available for shaving and shampooing"] },
-    { id: "g16", answers: ["A major step toward large-scale commercial soapmaking"] },
-    { id: "g17", answers: ["Modern soapmaking was born some 20 years later"] },
-    { id: "g18", answers: ["soap was regarded as a luxury item"] },
+    { id: "g9", answers: ["the effort required"] },
+    { id: "g10", answers: ["so did bathing"] },
+    { id: "g11", answers: ["became very popular"] },
+    { id: "g12", answers: ["medicinal and cleaning purposes"] },
+    { id: "g13", answers: ["impact of filth"] },
+    { id: "g14", answers: ["guarded their trade secrets"] },
+    { id: "g15", answers: ["for shaving and shampooing"] },
+    { id: "g16", answers: ["large-scale commercial soapmaking"] },
+    { id: "g17", answers: ["some 20 years later"] },
+    { id: "g18", answers: ["a luxury item"] },
   ],
   lines: [
     {
@@ -42,19 +33,27 @@ export const CAM15_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Nowadays, we use different products for personal cleanliness, laundry, dishwashing and household cleaning, but " },
+          text: "Nowadays, we use different products for personal cleanliness, laundry, dishwashing and household cleaning, but this is very much ",
+        },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g2" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "The origins of cleanliness " },
+        { type: "gap", gapId: "g2" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Since water is essential for life, " },
+        {
+          type: "text",
+          text: "Since water is essential for life, the earliest people lived near water and knew something about ",
+        },
         { type: "gap", gapId: "g3" },
         { type: "text", text: " – at least that it rinsed mud off their hands." },
       ],
@@ -62,7 +61,7 @@ export const CAM15_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "During the excavation of ancient Babylon, evidence was found that " },
+        { type: "text", text: "During the excavation of ancient Babylon, evidence was found that soapmaking was known " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -72,21 +71,30 @@ export const CAM15_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Archaeologists discovered cylinders made of clay, with inscriptions on them saying that fats were boiled with ashes. This is a method of making soap, " },
+          text: "Archaeologists discovered cylinders made of clay, with inscriptions on them saying that fats were boiled with ashes. This is a method of making soap, though there's ",
+        },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "." },
+        { type: "text", text: " of this material." },
       ],
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g6" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "The early Greeks bathed " },
+        { type: "gap", gapId: "g6" },
+        {
+          type: "text",
+          text: " and apparently didn't use soap.",
+        },
+      ],
     },
     {
       speaker: null,
       segments: [
         {
           type: "text",
-          text: "Instead, they cleaned their bodies with blocks of sand, pumice and ashes, then anointed themselves with oil, and scraped off the oil and dirt with a metal instrument known as a strigil. They also used oil mixed with ashes. " },
+          text: "Instead, they cleaned their bodies with blocks of sand, pumice and ashes, then anointed themselves with oil, and scraped off the oil and dirt with a metal instrument known as a strigil. They also used oil mixed with ashes. Clothes were washed ",
+        },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -107,21 +115,27 @@ export const CAM15_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g8" },
         {
           type: "text",
-          text: ", from Mount Sapo, where animals were sacrificed, leaving deposits of animal fat. Rain washed these deposits, along with wood ashes, down into the clay soil along the River Tiber. Women found that this mixture " },
+          text: ", from Mount Sapo, where animals were sacrificed, leaving deposits of animal fat. Rain washed these deposits, along with wood ashes, down into the clay soil along the River Tiber. Women found that this mixture greatly reduced ",
+        },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: "." },
+        { type: "text", text: " to wash their clothes." },
       ],
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g10" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "As Roman civilisation advanced, " },
+        { type: "gap", gapId: "g10" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
       segments: [
         {
           type: "text",
-          text: "The first of the famous Roman baths, supplied with water from their aqueducts, was built around 312 BC. " },
+          text: "The first of the famous Roman baths, supplied with water from their aqueducts, was built around 312 BC. The baths were luxurious, and bathing ",
+        },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -131,7 +145,8 @@ export const CAM15_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "And by the second century AD, the Greek physician Galen " },
+          text: "And by the second century AD, the Greek physician Galen recommended soap for both ",
+        },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -139,9 +154,12 @@ export const CAM15_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "After the fall of Rome in 467 AD and the resulting decline in bathing habits, " },
+        {
+          type: "text",
+          text: "After the fall of Rome in 467 AD and the resulting decline in bathing habits, much of Europe felt the ",
+        },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " on public health." },
       ],
     },
     {
@@ -158,17 +176,22 @@ export const CAM15_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Nevertheless, soapmaking became an established craft in Europe, and " },
+          text: "Nevertheless, soapmaking became an established craft in Europe, and associations of soapmakers ",
+        },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
-          text: ". Vegetable and animal oils were used with ashes of plants, along with perfume, apparently for the first time.",
+          text: " closely. Vegetable and animal oils were used with ashes of plants, along with perfume, apparently for the first time.",
         },
       ],
     },
     {
       speaker: null,
       segments: [
+        {
+          type: "text",
+          text: "Gradually more varieties of soap became available ",
+        },
         { type: "gap", gapId: "g15" },
         { type: "text", text: ", as well as bathing and laundering." },
       ],
@@ -176,6 +199,7 @@ export const CAM15_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "A major step toward " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
@@ -195,6 +219,7 @@ export const CAM15_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Modern soapmaking was born " },
         { type: "gap", gapId: "g17" },
         {
           type: "text",
@@ -214,7 +239,7 @@ export const CAM15_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Until the 19th century, " },
+        { type: "text", text: "Until the 19th century, soap was regarded as " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: ", and was heavily taxed in several countries." },
       ],

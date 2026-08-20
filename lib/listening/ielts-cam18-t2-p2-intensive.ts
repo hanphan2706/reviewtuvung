@@ -7,14 +7,14 @@ export const CAM18_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["It's good to see that", "It is good to see that"] },
     { id: "g2", answers: ["I'll start by giving you", "I will start by giving you"] },
-    { id: "g3", answers: ["one thing I'm sure you'll want to know", "one thing I am sure you will want to know"] },
+    { id: "g3", answers: ["you'll want to know", "you will want to know"] },
     { id: "g4", answers: ["At present", "at present"] },
     { id: "g5", answers: ["Of course", "of course"] },
-    { id: "g6", answers: ["it wasn't one of our major criteria", "it was not one of our major criteria"] },
-    { id: "g7", answers: ["We were more interested in the fact that", "we were more interested in the fact that"] },
+    { id: "g6", answers: ["one of our major criteria"] },
+    { id: "g7", answers: ["interested in the fact that"] },
     { id: "g8", answers: ["One drawback to the site", "one drawback to the site"] },
     { id: "g9", answers: ["we've taken account of", "we have taken account of"] },
-    { id: "g10", answers: ["We've had a lot of positive feedback", "We have had a lot of positive feedback"] },
+    { id: "g10", answers: ["a lot of positive feedback"] },
     { id: "g11", answers: ["We were particularly pleased"] },
     { id: "g12", answers: ["and we'll look at that", "and we will look at that"] },
     { id: "g13", answers: ["So I'll put a map", "So I will put a map"] },
@@ -40,7 +40,7 @@ export const CAM18_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: null,
       segments: [
         { type: "gap", gapId: "g2" },
-        { type: "text", text: " a brief overview of our plans for the development. So " },
+        { type: "text", text: " a brief overview of our plans for the development. So one thing I'm sure " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: " is why we've selected this particular site for a housing development." },
       ],
@@ -61,7 +61,7 @@ export const CAM18_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ", there's also the fact that we have an international airport just 20 minutes' drive away, but although that's certainly convenient, " },
+          text: ", there's also the fact that we have an international airport just 20 minutes' drive away, but although that's certainly convenient, it wasn't " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: " for choosing the site." },
       ],
@@ -69,6 +69,7 @@ export const CAM18_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "We were more " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -88,6 +89,7 @@ export const CAM18_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "We've had " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",

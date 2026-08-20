@@ -5,27 +5,21 @@ import type {
 
 export const CAM17_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I'm here to talk to you about", "I am here to talk to you about"] },
-    { id: "g2", answers: ["even though it can be tougher than you think"] },
+    { id: "g1", answers: ["talk to you about"] },
+    { id: "g2", answers: ["tougher than you think"] },
     { id: "g3", answers: ["doesn't have the same appeal", "does not have the same appeal"] },
     { id: "g4", answers: ["I've already thought about that", "I have already thought about that"] },
     { id: "g5", answers: ["you'll be working with schools", "you will be working with schools"] },
     { id: "g6", answers: ["I wouldn't rely on that", "I would not rely on that"] },
     { id: "g7", answers: ["that's not always easy", "that is not always easy"] },
     { id: "g8", answers: ["we've always been lucky with that", "we have always been lucky with that"] },
-    { id: "g9", answers: ["You have to be prepared for such things"] },
+    { id: "g9", answers: ["prepared for such things"] },
     { id: "g10", answers: ["That'll be up to you", "That will be up to you"] },
     { id: "g11", answers: ["let's talk about those a bit", "let us talk about those a bit"] },
-    { id: "g12", answers: ["I think my communication skills are pretty good"] },
-    {
-      id: "g13",
-      answers: ["You're working in a very people-based industry", "You are working in a very people-based industry"],
-    },
+    { id: "g12", answers: ["communication skills are pretty good"] },
+    { id: "g13", answers: ["a very people-based industry"] },
     { id: "g14", answers: ["I'm working on it", "I am working on it"] },
-    {
-      id: "g15",
-      answers: ["I'm certainly better when I have a deadline", "I am certainly better when I have a deadline"],
-    },
+    { id: "g15", answers: ["when I have a deadline"] },
     {
       id: "g16",
       answers: ["even though I'm multi-tasking like crazy", "even though I am multi-tasking like crazy"],
@@ -37,7 +31,7 @@ export const CAM17_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "HOLLY",
       segments: [
-        { type: "text", text: "Hello Dr Green – " },
+        { type: "text", text: "Hello Dr Green – I'm here to " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " my work placement." },
       ],
@@ -57,7 +51,7 @@ export const CAM17_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
-        { type: "text", text: "Yup. That's always a popular placement – " },
+        { type: "text", text: "Yup. That's always a popular placement – even though it can be " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: " working with children." },
       ],
@@ -181,6 +175,7 @@ export const CAM17_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
+        { type: "text", text: "You have to be " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -216,7 +211,7 @@ export const CAM17_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "HOLLY",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, I think my " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: ". I can talk on the phone to people and book venues and that kind of thing." },
       ],
@@ -234,7 +229,7 @@ export const CAM17_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
-        { type: "text", text: "Good. Let's go on to think about your organisational skills. " },
+        { type: "text", text: "Good. Let's go on to think about your organisational skills. You're working in " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: " and that means things won't always go to plan." },
       ],
@@ -260,7 +255,7 @@ export const CAM17_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: "HOLLY",
       segments: [
         { type: "gap", gapId: "g14" },
-        { type: "text", text: " – " },
+        { type: "text", text: " – I'm certainly better " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: ", which is why this work suits me." },
       ],

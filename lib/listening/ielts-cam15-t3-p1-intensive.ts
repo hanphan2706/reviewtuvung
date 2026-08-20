@@ -5,12 +5,12 @@ import type {
 
 export const CAM15_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["Thanks for coming in to see us here at the agency"] },
+    { id: "g1", answers: ["Thanks for coming in"] },
     {
       id: "g2",
-      answers: ["I think we spoke on the phone, didn't we", "I think we spoke on the phone, did not we"],
+      answers: ["spoke on the phone"],
     },
-    { id: "g3", answers: ["we have two jobs that might be suitable for you"] },
+    { id: "g3", answers: ["suitable for you"] },
     {
       id: "g4",
       answers: [
@@ -18,24 +18,23 @@ export const CAM15_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         "They are looking for an administrative assistant",
       ],
     },
-    { id: "g5", answers: ["it does look as if you fit quite a few of the requirements"] },
+    { id: "g5", answers: ["fit quite a few"] },
     {
       id: "g6",
-      answers: ["I'd suggest you add it to your CV", "I would suggest you add it to your CV"],
+      answers: ["add it to your CV"],
     },
     { id: "g7", answers: ["they particularly mention spreadsheets"] },
     {
       id: "g8",
       answers: [
-        "which would be something they'd check with your references",
-        "which would be something they would check with your references",
+        "check with your references",
       ],
     },
-    { id: "g9", answers: ["it would be quite a long commute for me"] },
-    { id: "g10", answers: ["the second position might suit you better as far as the location goes"] },
+    { id: "g9", answers: ["quite a long commute"] },
+    { id: "g10", answers: ["suit you better"] },
     {
       id: "g11",
-      answers: ["You've got to keep track of stuff", "You have got to keep track of stuff"],
+      answers: ["keep track of stuff"],
     },
     {
       id: "g12",
@@ -44,12 +43,12 @@ export const CAM15_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         "they want someone who is computer literate",
       ],
     },
-    { id: "g13", answers: ["they want someone who can communicate well both orally and in writing"] },
-    { id: "g14", answers: ["one of the things I enjoyed most"] },
-    { id: "g15", answers: ["I found that was really essential for the job"] },
-    { id: "g16", answers: ["what sorts of items were you dealing with"] },
-    { id: "g17", answers: ["so you can cope with the traffic and so on"] },
-    { id: "g18", answers: ["Can you tell me a bit more about that, please"] },
+    { id: "g13", answers: ["both orally and in writing"] },
+    { id: "g14", answers: ["I enjoyed most"] },
+    { id: "g15", answers: ["really essential for the job"] },
+    { id: "g16", answers: ["what sorts of items"] },
+    { id: "g17", answers: ["cope with the traffic"] },
+    { id: "g18", answers: ["a bit more about that"] },
   ],
   lines: [
     {
@@ -59,20 +58,25 @@ export const CAM15_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g1" },
         {
           type: "text",
-          text: ", Joe. I'm one of the agency representatives, and my name's Sally Baker.",
+          text: " to see us here at the agency, Joe. I'm one of the agency representatives, and my name's Sally Baker.",
         },
       ],
     },
     {
       speaker: "JOE",
-      segments: [{ type: "text", text: "Hi Sally. " }, { type: "gap", gapId: "g2" }, { type: "text", text: "?" }],
+      segments: [
+        { type: "text", text: "Hi Sally. I think we " },
+        { type: "gap", gapId: "g2" },
+        { type: "text", text: ", didn't we?" },
+      ],
     },
     {
       speaker: "SALLY",
       segments: [
         {
           type: "text",
-          text: "That's right, we did. So thank you for sending in your CV. We've had quite a careful look at it and I think " },
+          text: "That's right, we did. So thank you for sending in your CV. We've had quite a careful look at it and I think we have two jobs that might be ",
+        },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -105,9 +109,10 @@ export const CAM15_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes, well as I said, they want someone in their office, and looking at your past experience " },
+          text: "Yes, well as I said, they want someone in their office, and looking at your past experience it does look as if you ",
+        },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: ". So on your CV it appears you've done some data entry?" },
+        { type: "text", text: " of the requirements. So on your CV it appears you've done some data entry?" },
       ],
     },
     { speaker: "JOE", segments: [{ type: "text", text: "Yes." }] },
@@ -137,7 +142,7 @@ export const CAM15_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SALLY",
       segments: [
-        { type: "text", text: "Excellent. That's something they want here too. " },
+        { type: "text", text: "Excellent. That's something they want here too. I'd suggest you " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: " – I don't think you mentioned that, did you?" },
       ],
@@ -155,7 +160,7 @@ export const CAM15_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SALLY",
       segments: [
-        { type: "text", text: "And interpersonal skills – " },
+        { type: "text", text: "And interpersonal skills – which would be something they'd " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -191,18 +196,21 @@ export const CAM15_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JOE",
       segments: [
-        { type: "text", text: "It is, yes. The only thing is, you said they were in North London so " },
+        { type: "text", text: "It is, yes. The only thing is, you said they were in North London so it would be " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: "." },
+        { type: "text", text: " for me." },
       ],
     },
     { speaker: "SALLY", segments: [{ type: "text", text: "OK." }] },
     {
       speaker: "SALLY",
       segments: [
-        { type: "text", text: "So " },
+        { type: "text", text: "So the second position might " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "; that's for a warehouse assistant and that's in South London." },
+        {
+          type: "text",
+          text: " as far as the location goes; that's for a warehouse assistant and that's in South London.",
+        },
       ],
     },
     { speaker: "JOE", segments: [{ type: "text", text: "Yes, that would be a lot closer." }] },
@@ -223,7 +231,7 @@ export const CAM15_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JOE",
       segments: [
-        { type: "text", text: "That should be OK. " },
+        { type: "text", text: "That should be OK. You've got to " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: ", but I've always been quite good with numbers." },
       ],
@@ -252,7 +260,7 @@ export const CAM15_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SALLY",
       segments: [
-        { type: "text", text: "Sure. Then the usual stuff; " },
+        { type: "text", text: "Sure. Then the usual stuff; they want someone who can communicate well " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
       ],
@@ -260,9 +268,9 @@ export const CAM15_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JOE",
       segments: [
-        { type: "text", text: "OK. And for the last warehouse job I had, " },
+        { type: "text", text: "OK. And for the last warehouse job I had, one of the things " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: " was being part of a team. " },
+        { type: "text", text: " was being part of a team. I found that was " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
       ],
@@ -272,9 +280,10 @@ export const CAM15_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Excellent. Yes, they do mention that they want someone who's used to that, yes. Now when you were working in a warehouse last time, " },
+          text: "Excellent. Yes, they do mention that they want someone who's used to that, yes. Now when you were working in a warehouse last time, ",
+        },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "?" },
+        { type: "text", text: " were you dealing with?" },
       ],
     },
     {
@@ -293,9 +302,10 @@ export const CAM15_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Good. Now as far as experience goes, they mention they want someone with a licence, and that you have experience of driving in London – " },
+          text: "Good. Now as far as experience goes, they mention they want someone with a licence, and that you have experience of driving in London – so you can ",
+        },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " and so on." },
       ],
     },
     { speaker: "JOE", segments: [{ type: "text", text: "Yes, no problem." }] },
@@ -311,9 +321,9 @@ export const CAM15_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JOE",
       segments: [
-        { type: "text", text: "Right. So what about pay? " },
+        { type: "text", text: "Right. So what about pay? Can you tell me " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: " …" },
+        { type: "text", text: ", please …" },
       ],
     },
   ],

@@ -11,7 +11,7 @@ export const CAM17_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g4", answers: ["quite physically demanding"] },
     { id: "g5", answers: ["You'll certainly learn more quickly", "You will certainly learn more quickly"] },
     { id: "g6", answers: ["which people don't always realise", "which people do not always realise"] },
-    { id: "g7", answers: ["there seem to be quite a few"] },
+    { id: "g7", answers: ["quite a few"] },
     { id: "g8", answers: ["The waves aren't too challenging", "The waves are not too challenging"] },
     { id: "g9", answers: ["I've forgotten the name of them", "I have forgotten the name of them"] },
     { id: "g10", answers: ["I can look them up"] },
@@ -19,10 +19,10 @@ export const CAM17_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g12", answers: ["we had a really good time"] },
     { id: "g13", answers: ["it rained practically every day"] },
     { id: "g14", answers: ["It doesn't have the same appeal", "It does not have the same appeal"] },
-    { id: "g15", answers: ["it tends to rain more in August"] },
+    { id: "g15", answers: ["it tends to rain more"] },
     { id: "g16", answers: ["it doesn't get too hot", "it does not get too hot"] },
     { id: "g17", answers: ["That's not too bad", "That is not too bad"] },
-    { id: "g18", answers: ["you'll all get too cold if you don't", "you will all get too cold if you do not"] },
+    { id: "g18", answers: ["get too cold"] },
   ],
   lines: [
     {
@@ -88,7 +88,7 @@ export const CAM17_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "And which locations would you recommend? – " },
+        { type: "text", text: "And which locations would you recommend? – there seem to be " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -238,7 +238,7 @@ export const CAM17_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g15" },
         {
           type: "text",
-          text: " than in the spring or autumn. September's my favourite month because the water is warmer then.",
+          text: " in August than in the spring or autumn. September's my favourite month because the water is warmer then.",
         },
       ],
     },
@@ -282,11 +282,11 @@ export const CAM17_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JACK",
       segments: [
-        { type: "text", text: "No. It's important to make sure you get good quality wetsuits – " },
+        { type: "text", text: "No. It's important to make sure you get good quality wetsuits – you'll all " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",
-          text: ". And make sure you also get boots. They keep your feet warm and it's easier to surf with them on too.",
+          text: " if you don't. And make sure you also get boots. They keep your feet warm and it's easier to surf with them on too.",
         },
       ],
     },

@@ -6,23 +6,23 @@ import type {
 export const CAM16_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I'm a recruitment consultant at", "I am a recruitment consultant at"] },
-    { id: "g2", answers: ["our company specialises in positions that involve", "our company specializes in positions that involve"] },
-    { id: "g3", answers: ["these sectors do provide some very special career opportunities"] },
+    { id: "g2", answers: ["positions that involve"] },
+    { id: "g3", answers: ["very special career opportunities"] },
     { id: "g4", answers: ["although we can't guarantee that", "although we cannot guarantee that"] },
-    { id: "g5", answers: ["although there's a lot of variety here", "although there is a lot of variety here"] },
-    { id: "g6", answers: ["not everyone is keen to do it"] },
+    { id: "g5", answers: ["a lot of variety here"] },
+    { id: "g6", answers: ["keen to do it"] },
     { id: "g7", answers: ["working outdoors does have its challenges"] },
-    { id: "g8", answers: ["that's not as important as it once was", "that is not as important as it once was"] },
+    { id: "g8", answers: ["as important as it once was"] },
     { id: "g9", answers: ["so there are fewer work-related accidents"] },
     { id: "g10", answers: ["this usually turns out fine"] },
-    { id: "g11", answers: ["some of the exciting jobs that we have on our books right now"] },
+    { id: "g11", answers: ["on our books right now"] },
     { id: "g12", answers: ["supplying a range of top supermarkets"] },
     { id: "g13", answers: ["advising farmers on issues such as"] },
-    { id: "g14", answers: ["a deep knowledge of the agricultural sector is expected of applicants"] },
-    { id: "g15", answers: ["and in return will receive a very competitive salary"] },
-    { id: "g16", answers: ["This post is only suitable for someone who is prepared to live in the region"] },
-    { id: "g17", answers: ["Candidates must have a clean driving licence", "Candidates must have a clean driving license"] },
-    { id: "g18", answers: ["A driving licence and tractor driving experience are essential", "A driving license and tractor driving experience are essential"] },
+    { id: "g14", answers: ["expected of applicants"] },
+    { id: "g15", answers: ["a very competitive salary"] },
+    { id: "g16", answers: ["prepared to live in the region"] },
+    { id: "g17", answers: ["a clean driving licence", "a clean driving license"] },
+    { id: "g18", answers: ["tractor driving experience are essential"] },
   ],
   lines: [
     {
@@ -36,7 +36,7 @@ export const CAM16_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Now, " },
+        { type: "text", text: "Now, our company specialises in " },
         { type: "gap", gapId: "g2" },
         {
           type: "text",
@@ -47,7 +47,7 @@ export const CAM16_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "And " },
+        { type: "text", text: "And these sectors do provide some " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -84,7 +84,7 @@ export const CAM16_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Salaries can sometimes be good too, " },
+        { type: "text", text: "Salaries can sometimes be good too, although there's " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: "." },
       ],
@@ -94,7 +94,7 @@ export const CAM16_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "And you may have the opportunity in some types of jobs for travel overseas, although that obviously depends on the job, and ",
+          text: "And you may have the opportunity in some types of jobs for travel overseas, although that obviously depends on the job, and not everyone is ",
         },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
@@ -120,7 +120,7 @@ export const CAM16_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "You may need to be pretty fit for some jobs, though with modern technology " },
+        { type: "text", text: "You may need to be pretty fit for some jobs, though with modern technology that's not " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -156,7 +156,7 @@ export const CAM16_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Now let me tell you about " },
+        { type: "text", text: "Now let me tell you about some of the exciting jobs that we have " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -200,7 +200,7 @@ export const CAM16_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "There are good opportunities for the right person to quickly make their way up the career ladder, but ",
+          text: "There are good opportunities for the right person to quickly make their way up the career ladder, but a deep knowledge of the agricultural sector is ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
@@ -220,7 +220,7 @@ export const CAM16_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "You need to have experience in administration, planning and buying in the fresh produce industry, ",
+          text: "You need to have experience in administration, planning and buying in the fresh produce industry, and in return will receive ",
         },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
@@ -243,7 +243,11 @@ export const CAM16_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g16" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "This post is only suitable for someone who is " },
+        { type: "gap", gapId: "g16" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -257,6 +261,7 @@ export const CAM16_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Candidates must have " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: " and have training in safety procedures." },
       ],
@@ -294,7 +299,11 @@ export const CAM16_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g18" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "A driving licence and " },
+        { type: "gap", gapId: "g18" },
+        { type: "text", text: "." },
+      ],
     },
   ],
 };

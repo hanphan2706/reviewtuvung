@@ -9,20 +9,20 @@ export const CAM20_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g2", answers: ["Before we go into the workshop"] },
     { id: "g3", answers: ["I'm sure you know that", "I am sure you know that"] },
     { id: "g4", answers: ["And we know this because"] },
-    { id: "g5", answers: ["in the same way that pots do"] },
+    { id: "g5", answers: ["in the same way"] },
     { id: "g6", answers: ["There's no doubt that", "There is no doubt that"] },
     { id: "g7", answers: ["a fascinating insight into"] },
     { id: "g8", answers: ["Of course, you will all have"] },
     { id: "g9", answers: ["As far as I'm concerned", "As far as I am concerned"] },
     { id: "g10", answers: ["takes you away from"] },
-    { id: "g11", answers: ["And of course, it's a fun activity", "And of course, it is a fun activity"] },
+    { id: "g11", answers: ["it's a fun activity", "it is a fun activity"] },
     { id: "g12", answers: ["so we'll keep things simple today", "so we will keep things simple today"] },
-    { id: "g13", answers: ["can I just say a word about"] },
+    { id: "g13", answers: ["say a word about"] },
     { id: "g14", answers: ["Have a look around"] },
     { id: "g15", answers: ["Since their invention"] },
     { id: "g16", answers: ["You may think"] },
     { id: "g17", answers: ["but bear in mind"] },
-    { id: "g18", answers: ["I wouldn't recommend spending money on them yet", "I would not recommend spending money on them yet"] },
+    { id: "g18", answers: ["I wouldn't recommend", "I would not recommend"] },
   ],
   lines: [
     {
@@ -52,7 +52,7 @@ export const CAM20_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ". And even if ancient pots are found in small pieces they still provide a lot of information about the past.",
+          text: " that pots do. And even if ancient pots are found in small pieces they still provide a lot of information about the past.",
         },
       ],
     },
@@ -92,6 +92,7 @@ export const CAM20_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: " the stresses of everyday life. If you're elderly, it's also good exercise for hands and wrists and helps with arthritis. ",
         },
+        { type: "text", text: "And of course, " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: " for children because it's so messy." },
       ],
@@ -110,7 +111,7 @@ export const CAM20_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Now, before we move on, " },
+        { type: "text", text: "Now, before we move on, can I just " },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
@@ -175,7 +176,7 @@ export const CAM20_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "Lastly, there are a number of different tools that potters use, depending on what they want to make. When you start, your hands can make all kinds of shapes and curves without relying on a sculpting tool. However, there are some basic tools that you will need to handle the clay on the wheel. Some look very strange and have even odder names that you may find hard to remember. Rather than go through them all now, I'll just name a few tools as we go along. We can provide these and ",
         },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: "." },
+        { type: "text", text: " spending money on them yet." },
       ],
     },
     {

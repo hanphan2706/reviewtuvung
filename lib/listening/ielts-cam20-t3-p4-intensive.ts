@@ -5,36 +5,37 @@ import type {
 
 export const CAM20_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["It's only relatively recently that", "It is only relatively recently that"] },
-    { id: "g2", answers: ["But what does that mean exactly"] },
-    { id: "g3", answers: ["they are not quite the same thing"] },
-    { id: "g4", answers: ["which can present quite a challenge"] },
-    { id: "g5", answers: ["can be seen all around us"] },
-    { id: "g6", answers: ["This still isn't always the case", "This still is not always the case"] },
+    { id: "g1", answers: ["relatively recently"] },
+    { id: "g2", answers: ["what does that mean"] },
+    { id: "g3", answers: ["not quite the same thing"] },
+    { id: "g4", answers: ["quite a challenge"] },
+    { id: "g5", answers: ["all around us"] },
+    { id: "g6", answers: ["isn't always the case", "is not always the case"] },
     { id: "g7", answers: ["You'll find another example", "You will find another example"] },
-    { id: "g8", answers: ["require no pressing or twisting movements"] },
+    { id: "g8", answers: ["pressing or twisting"] },
     { id: "g9", answers: ["they're also easier for people", "they are also easier for people"] },
-    { id: "g10", answers: ["has been criticised in the past", "has been criticized in the past"] },
+    { id: "g10", answers: ["has been criticised", "has been criticized"] },
     { id: "g11", answers: ["this is changing"] },
-    { id: "g12", answers: ["Motor skills also decline with age"] },
-    { id: "g13", answers: ["It's worth looking at the problems", "It is worth looking at the problems"] },
-    { id: "g14", answers: ["it can have a serious impact on people's lives"] },
+    { id: "g12", answers: ["decline with age"] },
+    { id: "g13", answers: ["worth looking at"] },
+    { id: "g14", answers: ["a serious impact"] },
     { id: "g15", answers: ["Safety is another issue"] },
     { id: "g16", answers: ["become considerably safer"] },
-    { id: "g17", answers: ["A very common scenario in offices"] },
-    { id: "g18", answers: ["there are serious consequences for designs"] },
+    { id: "g17", answers: ["A very common scenario"] },
+    { id: "g18", answers: ["serious consequences"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
+        { type: "text", text: "It's only " },
         { type: "gap", gapId: "g1" },
         {
           type: "text",
-          text: " designers have become aware of the need to be inclusive when designing products. ",
+          text: " that designers have become aware of the need to be inclusive when designing products. But ",
         },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "?" },
+        { type: "text", text: " exactly?" },
       ],
     },
     {
@@ -42,7 +43,7 @@ export const CAM20_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well, it simply means designing products that span economic, social and cultural barriers. It means making sure products are accessible, so that as many different types of people as possible can use them, without any type of adaptation having to be made to the original design. Inclusive design is often linked with universal design, although ",
+          text: "Well, it simply means designing products that span economic, social and cultural barriers. It means making sure products are accessible, so that as many different types of people as possible can use them, without any type of adaptation having to be made to the original design. Inclusive design is often linked with universal design, although they are ",
         },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
@@ -53,7 +54,7 @@ export const CAM20_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Universal design aims to make products that work for everyone and that includes considering the needs of people who have cognitive difficulties, ",
+          text: "Universal design aims to make products that work for everyone and that includes considering the needs of people who have cognitive difficulties, which can present ",
         },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
@@ -62,12 +63,13 @@ export const CAM20_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Today examples of successful inclusive design " },
+        { type: "text", text: "Today examples of successful inclusive design can be seen " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
           text: ". In workplaces it is common to see desks which can be adjusted to suit people of different heights or for wheelchair users. ",
         },
+        { type: "text", text: "This still " },
         { type: "gap", gapId: "g6" },
         {
           type: "text",
@@ -81,10 +83,10 @@ export const CAM20_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g7" },
         {
           type: "text",
-          text: " in the public toilets of countless hotels, airports and offices. Taps that you activate by sensor ",
+          text: " in the public toilets of countless hotels, airports and offices. Taps that you activate by sensor require no ",
         },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: ". These are not only more hygienic, " },
+        { type: "text", text: " movements. These are not only more hygienic, " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: " with dexterity or mobility issues." },
       ],
@@ -94,7 +96,7 @@ export const CAM20_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "The tech industry " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: " for focusing too much on young consumers, but " },
+        { type: "text", text: " in the past for focusing too much on young consumers, but " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -104,7 +106,7 @@ export const CAM20_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Many products are now designed with the elderly in mind. For example, it's well known that vision declines with age and that we also become worse at distinguishing between similar colours, in particular shades of blue, which is why software designers rarely create interfaces with this colour. ",
+          text: "Many products are now designed with the elderly in mind. For example, it's well known that vision declines with age and that we also become worse at distinguishing between similar colours, in particular shades of blue, which is why software designers rarely create interfaces with this colour. Motor skills also ",
         },
         { type: "gap", gapId: "g12" },
         {
@@ -116,13 +118,14 @@ export const CAM20_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "It's " },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
-          text: " non-inclusive designs cause when not enough consideration is given to a range of users, as ",
+          text: " the problems non-inclusive designs cause when not enough consideration is given to a range of users, as it can have ",
         },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: "." },
+        { type: "text", text: " on people's lives." },
       ],
     },
     {
@@ -175,16 +178,16 @@ export const CAM20_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g17" },
         {
           type: "text",
-          text: " in summertime is to see women wrapped in blankets or wearing sweaters while the air conditioning is on high. Meanwhile, the men are in shorts and T-shirts. This is due to differences in metabolic rates for men and women. There is a standard setting for air conditioning to be at a temperature of 21 degrees designed to suit men and in most modern offices it is not possible to turn the air conditioning up or down. This means that many offices which mainly employ women are wasting energy by having the air conditioning set too high.",
+          text: " in offices in summertime is to see women wrapped in blankets or wearing sweaters while the air conditioning is on high. Meanwhile, the men are in shorts and T-shirts. This is due to differences in metabolic rates for men and women. There is a standard setting for air conditioning to be at a temperature of 21 degrees designed to suit men and in most modern offices it is not possible to turn the air conditioning up or down. This means that many offices which mainly employ women are wasting energy by having the air conditioning set too high.",
         },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "As you can see from the examples I've just mentioned, " },
+        { type: "text", text: "As you can see from the examples I've just mentioned, there are " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: " which don't consider the needs of all users." },
+        { type: "text", text: " for designs which don't consider the needs of all users." },
       ],
     },
   ],

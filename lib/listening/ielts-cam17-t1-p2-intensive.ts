@@ -5,31 +5,31 @@ import type {
 
 export const CAM17_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I'm going to be your tour guide today", "I am going to be your tour guide today"] },
+    { id: "g1", answers: ["your tour guide today"] },
     { id: "g2", answers: ["Before we set off"] },
-    { id: "g3", answers: ["I just want to tell you a few things about our journey"] },
-    { id: "g4", answers: ["Our boats aren't huge as you can see", "Our boats are not huge as you can see"] },
+    { id: "g3", answers: ["a few things about our journey"] },
+    { id: "g4", answers: ["Our boats aren't huge", "Our boats are not huge"] },
     { id: "g5", answers: ["on top of that"] },
-    { id: "g6", answers: ["This gives our boats a rather unique appearance"] },
+    { id: "g6", answers: ["a rather unique appearance"] },
     { id: "g7", answers: ["don't you think", "do you not think"] },
-    { id: "g8", answers: ["I'm sure I don't have to ask you", "I am sure I do not have to ask you"] },
-    { id: "g9", answers: ["The engine on the boat makes quite a lot of noise"] },
+    { id: "g8", answers: ["I don't have to ask you", "I do not have to ask you"] },
+    { id: "g9", answers: ["makes quite a lot of noise"] },
     { id: "g10", answers: ["before we head off"] },
-    { id: "g11", answers: ["This area is famous for its ancient lighthouse"] },
-    { id: "g12", answers: ["It sits right on top of the cliffs"] },
+    { id: "g11", answers: ["famous for its ancient lighthouse"] },
+    { id: "g12", answers: ["right on top of the cliffs"] },
     { id: "g13", answers: ["in a very isolated spot"] },
-    { id: "g14", answers: ["Some of you have asked me what creatures we can expect to see"] },
-    { id: "g15", answers: ["they're very shy and, unfortunately, tend to hide", "they are very shy and, unfortunately, tend to hide"] },
+    { id: "g14", answers: ["what creatures we can expect"] },
+    { id: "g15", answers: ["they're very shy and", "they are very shy and"] },
     { id: "g16", answers: ["spotting one of these is rare"] },
-    { id: "g17", answers: ["people are lost for words when they see them"] },
-    { id: "g18", answers: ["if you feel that you want to see more than we're able to show you", "if you feel that you want to see more than we are able to show you"] },
+    { id: "g17", answers: ["lost for words when they see"] },
+    { id: "g18", answers: ["see more than we're able", "see more than we are able"] },
   ],
   lines: [
     { speaker: null, segments: [{ type: "text", text: "So, hello everyone." }] },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "My name's Lou Miller and " },
+        { type: "text", text: "My name's Lou Miller and I'm going to be " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " as we take this fantastic boat trip around the Tasmanian coast." },
       ],
@@ -38,14 +38,14 @@ export const CAM17_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: null,
       segments: [
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ", " },
+        { type: "text", text: ", I just want to tell you " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g4" }, { type: "text", text: "." }],
+      segments: [{ type: "gap", gapId: "g4" }, { type: "text", text: " as you can see." }],
     },
     {
       speaker: null,
@@ -72,7 +72,7 @@ export const CAM17_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "We've recently upgraded all our boats. They used to be jet black, but our new ones now have these comfortable dark red seats and a light-green exterior in order to stand out from others and help promote our company. ",
+          text: "We've recently upgraded all our boats. They used to be jet black, but our new ones now have these comfortable dark red seats and a light-green exterior in order to stand out from others and help promote our company. This gives our boats ",
         },
         { type: "gap", gapId: "g6" },
         { type: "text", text: ", " },
@@ -92,6 +92,7 @@ export const CAM17_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "I'm sure " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: " not to throw anything into the sea." },
       ],
@@ -108,6 +109,7 @@ export const CAM17_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "The engine on the boat " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: " so " },
         { type: "gap", gapId: "g10" },
@@ -117,6 +119,7 @@ export const CAM17_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "This area is " },
         { type: "gap", gapId: "g11" },
         {
           type: "text",
@@ -129,7 +132,7 @@ export const CAM17_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "It was built in 1838 to protect sailors as a number of shipwrecks had led to significant loss of life. The construction itself was complicated as some of the original drawings kept by the local council show. ",
+          text: "It was built in 1838 to protect sailors as a number of shipwrecks had led to significant loss of life. The construction itself was complicated as some of the original drawings kept by the local council show. It sits ",
         },
         { type: "gap", gapId: "g12" },
         { type: "text", text: " " },
@@ -148,7 +151,11 @@ export const CAM17_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g14" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "Some of you have asked me " },
+        { type: "gap", gapId: "g14" },
+        { type: "text", text: " to see." },
+      ],
     },
     {
       speaker: null,
@@ -157,7 +164,7 @@ export const CAM17_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g15" },
         {
           type: "text",
-          text: " from passing boats, but you might see birds in the distance, such as sea eagles, flying around the cliff edges where they nest.",
+          text: ", unfortunately, tend to hide from passing boats, but you might see birds in the distance, such as sea eagles, flying around the cliff edges where they nest.",
         },
       ],
     },
@@ -180,20 +187,23 @@ export const CAM17_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Lastly, I want to mention the caves. Tasmania is famous for its caves and the ones we'll pass by are so amazing that ",
+          text: "Lastly, I want to mention the caves. Tasmania is famous for its caves and the ones we'll pass by are so amazing that people are ",
         },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " them." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "They can only be approached by sea, but " },
+        {
+          type: "text",
+          text: "They can only be approached by sea, but if you feel that you want to ",
+        },
         { type: "gap", gapId: "g18" },
         {
           type: "text",
-          text: ", then you can take a kayak into the area on another day and one of our staff will give you more information on that.",
+          text: " to show you, then you can take a kayak into the area on another day and one of our staff will give you more information on that.",
         },
       ],
     },

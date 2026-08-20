@@ -5,45 +5,42 @@ import type {
 
 export const CAM15_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["We're doing a customer satisfaction survey", "We are doing a customer satisfaction survey"] },
+    { id: "g1", answers: ["a customer satisfaction survey", "customer satisfaction survey"] },
     {
       id: "g2",
-      answers: [
-        "I've got about ten minutes before my train home leaves",
-        "I have got about ten minutes before my train home leaves",
-      ],
+      answers: ["I've got about ten minutes", "I have got about ten minutes", "I've got about 10 minutes", "I have got about 10 minutes"],
     },
-    { id: "g3", answers: ["I'm on a day trip", "I am on a day trip"] },
-    { id: "g4", answers: ["That must be interesting"] },
-    { id: "g5", answers: ["it's my day off", "it is my day off"] },
-    { id: "g6", answers: ["I do sometimes come here for work"] },
-    { id: "g7", answers: ["I didn't get any discount", "I did not get any discount"] },
+    { id: "g3", answers: ["I'm on a day trip", "I am on a day trip", "on a day trip"] },
+    { id: "g4", answers: ["That must be interesting", "that must be interesting"] },
+    { id: "g5", answers: ["it's my day off", "it is my day off", "my day off"] },
+    { id: "g6", answers: ["come here for work"] },
+    { id: "g7", answers: ["I didn't get any discount", "I did not get any discount", "didn't get any discount", "did not get any discount"] },
     {
       id: "g8",
-      answers: ["you'd have saved 20% on your ticket today", "you would have saved 20% on your ticket today"],
+      answers: ["you'd have saved 20%", "you would have saved 20%", "you'd have saved 20 per cent", "you would have saved 20 per cent"],
     },
-    { id: "g9", answers: ["that's one of the main complaints we get", "that is one of the main complaints we get"] },
-    { id: "g10", answers: ["You can't always plan ahead", "You cannot always plan ahead"] },
-    { id: "g11", answers: ["I hate using ticket machines"] },
-    { id: "g12", answers: ["they're often out of order", "they are often out of order"] },
+    { id: "g9", answers: ["one of the main complaints"] },
+    { id: "g10", answers: ["You can't always plan ahead", "You cannot always plan ahead", "can't always plan ahead", "cannot always plan ahead"] },
+    { id: "g11", answers: ["I hate using ticket machines", "hate using ticket machines"] },
+    { id: "g12", answers: ["they're often out of order", "they are often out of order", "often out of order"] },
     {
       id: "g13",
-      answers: ["It's good to get some positive feedback on that", "It is good to get some positive feedback on that"],
+      answers: ["some positive feedback", "positive feedback"],
     },
-    { id: "g14", answers: ["the trains run on time and are pretty reliable"] },
-    { id: "g15", answers: ["the whole station's been upgraded", "the whole station has been upgraded"] },
-    { id: "g16", answers: ["I couldn't always see it properly", "I could not always see it properly"] },
-    { id: "g17", answers: ["which was frustrating"] },
+    { id: "g14", answers: ["run on time"] },
+    { id: "g15", answers: ["the whole station's been upgraded", "the whole station has been upgraded", "whole station's been upgraded"] },
+    { id: "g16", answers: ["I couldn't always see it properly", "I could not always see it properly", "couldn't always see it properly"] },
+    { id: "g17", answers: ["which was frustrating", "was frustrating"] },
     {
       id: "g18",
-      answers: ["I don't really have an opinion as I never use it", "I do not really have an opinion as I never use it"],
+      answers: ["don't really have an opinion", "do not really have an opinion"],
     },
   ],
   lines: [
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Hello. Do you mind if I ask you some questions about your journey today? " },
+        { type: "text", text: "Hello. Do you mind if I ask you some questions about your journey today? We're doing " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
@@ -53,7 +50,7 @@ export const CAM15_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Yes. OK. " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ". " },
+        { type: "text", text: " before my train home leaves. " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -93,7 +90,7 @@ export const CAM15_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SOPHIE",
       segments: [
-        { type: "text", text: "But " },
+        { type: "text", text: "But I do sometimes " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
       ],
@@ -140,7 +137,7 @@ export const CAM15_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Yes – " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: ". So you paid the full price for your ticket?" },
+        { type: "text", text: " on your ticket today. So you paid the full price for your ticket?" },
       ],
     },
     { speaker: "SOPHIE", segments: [{ type: "text", text: "I paid £23.70." }] },
@@ -152,9 +149,9 @@ export const CAM15_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Yes, " },
+        { type: "text", text: "Yes, that's " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: ". So, you didn't buy your ticket in advance?" },
+        { type: "text", text: " we get. So, you didn't buy your ticket in advance?" },
       ],
     },
     {
@@ -218,9 +215,9 @@ export const CAM15_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "That's the first time today anyone's mentioned that. " },
+        { type: "text", text: "That's the first time today anyone's mentioned that. It's good to get " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " on that." },
       ],
     },
     { speaker: "SOPHIE", segments: [{ type: "text", text: "Mmm." }] },
@@ -228,9 +225,9 @@ export const CAM15_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SOPHIE",
       segments: [
-        { type: "text", text: "Well, normally, " },
+        { type: "text", text: "Well, normally, the trains " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: " but today there was a delay; the train was about 15 minutes behind schedule." },
+        { type: "text", text: " and are pretty reliable but today there was a delay; the train was about 15 minutes behind schedule." },
       ],
     },
     {
@@ -291,9 +288,9 @@ export const CAM15_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SOPHIE",
       segments: [
-        { type: "text", text: "Well to be honest, " },
+        { type: "text", text: "Well to be honest, I " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: "." },
+        { type: "text", text: " as I never use it." },
       ],
     },
     { speaker: "MAN", segments: [{ type: "text", text: "So, neither satisfied nor dissatisfied for that then." }] },

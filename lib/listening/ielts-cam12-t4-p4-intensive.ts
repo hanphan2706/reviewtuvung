@@ -5,64 +5,24 @@ import type {
 
 export const CAM12_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["in relation to urban environments such as cities"] },
-    {
-      id: "g2",
-      answers: [
-        "I think this is an area where we're likely to see great changes",
-        "I think this is an area where we are likely to see great changes",
-      ],
-    },
-    { id: "g3", answers: ["In the past, researching urban soundscapes was simple"] },
-    {
-      id: "g4",
-      answers: [
-        "I used to take my sound meter and I measured the noise somewhere",
-      ],
-    },
+    { id: "g1", answers: ["in relation to"] },
+    { id: "g2", answers: ["we're likely to see", "we are likely to see"] },
+    { id: "g3", answers: ["urban soundscapes"] },
+    { id: "g4", answers: ["sound meter"] },
     { id: "g5", answers: ["maps of the sound environment"] },
-    { id: "g6", answers: ["the highest noise levels are generally on roads"] },
-    {
-      id: "g7",
-      answers: [
-        "they can't capture the complex way that sound varies over time",
-        "they cannot capture the complex way that sound varies over time",
-      ],
-    },
-    { id: "g8", answers: ["this sort of noise can be quite significant in summer"] },
-    { id: "g9", answers: ["people vary in their perceptions of noise"] },
-    { id: "g10", answers: ["noise can cause all sorts of problems"] },
-    { id: "g11", answers: ["city-dwellers often suffer from interrupted sleep"] },
-    {
-      id: "g12",
-      answers: ["physical changes in the body affecting the composition of the blood"],
-    },
-    {
-      id: "g13",
-      answers: [
-        "it doesn't differentiate between different types of noise",
-        "it does not differentiate between different types of noise",
-      ],
-    },
-    {
-      id: "g14",
-      answers: [
-        "just measuring decibel levels isn't going to help us here",
-        "just measuring decibel levels is not going to help us here",
-      ],
-    },
-    { id: "g15", answers: ["results that at first sight seem contradictory"] },
-    {
-      id: "g16",
-      answers: ["they tend to see it as something to be avoided or reduced as far as possible"],
-    },
-    {
-      id: "g17",
-      answers: [
-        "regarded as an aesthetic quality, as something that has the qualities of an art form",
-      ],
-    },
-    { id: "g18", answers: ["In the future such programs could use realistic sounds"] },
+    { id: "g6", answers: ["highest noise levels"] },
+    { id: "g7", answers: ["can't capture", "cannot capture"] },
+    { id: "g8", answers: ["quite significant"] },
+    { id: "g9", answers: ["perceptions of noise"] },
+    { id: "g10", answers: ["all sorts of problems"] },
+    { id: "g11", answers: ["interrupted sleep"] },
+    { id: "g12", answers: ["the composition of the blood"] },
+    { id: "g13", answers: ["doesn't differentiate between", "does not differentiate between"] },
+    { id: "g14", answers: ["isn't going to help", "is not going to help"] },
+    { id: "g15", answers: ["at first sight"] },
+    { id: "g16", answers: ["as far as possible"] },
+    { id: "g17", answers: ["an aesthetic quality"] },
+    { id: "g18", answers: ["realistic sounds"] },
   ],
   lines: [
     {
@@ -70,29 +30,33 @@ export const CAM12_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "This lecture will be about the science of acoustics, the study of sound, " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "." },
+        { type: "text", text: " urban environments such as cities." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "As an acoustic engineer myself, " },
+        { type: "text", text: "As an acoustic engineer myself, I think this is an area where " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "." },
+        { type: "text", text: " great changes." },
       ],
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g3" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "In the past, researching " },
+        { type: "gap", gapId: "g3" },
+        { type: "text", text: " was simple." },
+      ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "We measured levels of sound in decibels, so " },
+        { type: "text", text: "We measured levels of sound in decibels, so I used to take my " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
-          text: ", and then I might ask a sample of people to say at what level the sound became annoying.",
+          text: " and I measured the noise somewhere, and then I might ask a sample of people to say at what level the sound became annoying.",
         },
       ],
     },
@@ -111,17 +75,17 @@ export const CAM12_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "What they do show is that " },
+        { type: "text", text: "What they do show is that the " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: " - well, that's not really very surprising." },
+        { type: "text", text: " are generally on roads - well, that's not really very surprising." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "But there's quite a lot going on that these maps don't show, because " },
+        { type: "text", text: "But there's quite a lot going on that these maps don't show, because they " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: " the complex way that sound varies over time." },
       ],
     },
     {
@@ -129,10 +93,10 @@ export const CAM12_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "So they ignore important issues such as the noise someone might hear from the open windows or gardens of their neighbours, and ",
+          text: "So they ignore important issues such as the noise someone might hear from the open windows or gardens of their neighbours, and this sort of noise can be ",
         },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: "." },
+        { type: "text", text: " in summer." },
       ],
     },
     {
@@ -142,7 +106,7 @@ export const CAM12_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "As well as that, these records of sound levels take no account of the fact that " },
+        { type: "text", text: "As well as that, these records of sound levels take no account of the fact that people vary in their " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -162,7 +126,7 @@ export const CAM12_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "And that's important - we need rules and regulation because " },
+        { type: "text", text: "And that's important - we need rules and regulation because noise can cause " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
       ],
@@ -170,7 +134,7 @@ export const CAM12_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Those of you who are city-dwellers know that things go on 24 hours a day, so " },
+        { type: "text", text: "Those of you who are city-dwellers know that things go on 24 hours a day, so city-dwellers often suffer from " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -178,7 +142,7 @@ export const CAM12_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "It's also known that noise can lead to a rise in levels of stress, due to " },
+        { type: "text", text: "It's also known that noise can lead to a rise in levels of stress, due to physical changes in the body affecting " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -195,9 +159,9 @@ export const CAM12_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Now, one problem with decibel measurement is that " },
+        { type: "text", text: "Now, one problem with decibel measurement is that it " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " different types of noise." },
       ],
     },
     {
@@ -220,9 +184,9 @@ export const CAM12_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "This is going to be tricky because " },
+        { type: "text", text: "This is going to be tricky because just measuring decibel levels " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: "." },
+        { type: "text", text: " us here." },
       ],
     },
     {
@@ -243,12 +207,12 @@ export const CAM12_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Some recent interdisciplinary research has come out with ",
+          text: "Some recent interdisciplinary research has come out with results that ",
         },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
-          text: " - a city needs to have a sense of activity, so it needs to be lively, with sounds like the clack of high heels on a pavement or the hiss of a coffee machine, but these mustn't be too intrusive, because at the same time we need to be able to relax.",
+          text: " seem contradictory - a city needs to have a sense of activity, so it needs to be lively, with sounds like the clack of high heels on a pavement or the hiss of a coffee machine, but these mustn't be too intrusive, because at the same time we need to be able to relax.",
         },
       ],
     },
@@ -273,7 +237,7 @@ export const CAM12_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "But in fact they should be regarding sound as an opportunity to add to the experience of urban living, whereas at present " },
+        { type: "text", text: "But in fact they should be regarding sound as an opportunity to add to the experience of urban living, whereas at present they tend to see it as something to be avoided or reduced " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
@@ -284,9 +248,9 @@ export const CAM12_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "What's needed is for noise in cities to be " },
+        { type: "text", text: "What's needed is for noise in cities to be regarded as " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: ", as something that has the qualities of an art form." },
       ],
     },
     {
@@ -335,6 +299,7 @@ export const CAM12_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "In the future such programs could use " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: ", meaning that soundscapes could be explored before being built." },
       ],

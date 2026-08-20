@@ -5,30 +5,30 @@ import type {
 
 export const CAM20_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I've done as much as I can", "I have done as much as I can"] },
+    { id: "g1", answers: ["as much as I can"] },
     { id: "g2", answers: ["How's your research coming along", "How is your research coming along"] },
-    { id: "g3", answers: ["I'm glad we picked this subject", "I am glad we picked this subject"] },
-    { id: "g4", answers: ["That might actually put some people off"] },
-    { id: "g5", answers: ["I hadn't realised there are actually companies", "I had not realised there are actually companies", "I hadn't realized there are actually companies", "I had not realized there are actually companies"] },
+    { id: "g3", answers: ["picked this subject"] },
+    { id: "g4", answers: ["put some people off"] },
+    { id: "g5", answers: ["there are actually companies"] },
     { id: "g6", answers: ["Contrary to what many people think"] },
-    { id: "g7", answers: ["It must be easier for theatres"] },
+    { id: "g7", answers: ["easier for theatres"] },
     { id: "g8", answers: ["I hadn't realised that", "I had not realised that", "I hadn't realized that", "I had not realized that"] },
-    { id: "g9", answers: ["We should definitely include that information"] },
-    { id: "g10", answers: ["I couldn't imagine that happening now either", "I could not imagine that happening now either"] },
-    { id: "g11", answers: ["There's also an interesting comparison to make", "There is also an interesting comparison to make"] },
-    { id: "g12", answers: ["personally I think 18th century programmes were superior"] },
+    { id: "g9", answers: ["include that information"] },
+    { id: "g10", answers: ["couldn't imagine that happening", "could not imagine that happening"] },
+    { id: "g11", answers: ["an interesting comparison"] },
+    { id: "g12", answers: ["personally I think"] },
     { id: "g13", answers: ["the dramatic change they underwent"] },
-    { id: "g14", answers: ["What I don't really get is that", "What I do not really get is that"] },
-    { id: "g15", answers: ["I got some pictures of programmes we could include"] },
-    { id: "g16", answers: ["Let's go through and see what we think", "Let us go through and see what we think"] },
-    { id: "g17", answers: ["I thought this was a good programme to show"] },
-    { id: "g18", answers: ["Wish I'd known about it while I was doing my research", "Wish I had known about it while I was doing my research"] },
+    { id: "g14", answers: ["don't really get", "do not really get"] },
+    { id: "g15", answers: ["we could include"] },
+    { id: "g16", answers: ["Let's go through", "Let us go through"] },
+    { id: "g17", answers: ["a good programme to show"] },
+    { id: "g18", answers: ["Wish I'd known", "Wish I had known"] },
   ],
   lines: [
     {
       speaker: "MAYA",
       segments: [
-        { type: "text", text: "So, Finn, " },
+        { type: "text", text: "So, Finn, I've done " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " for our project on theatre programmes. " },
         { type: "gap", gapId: "g2" },
@@ -40,7 +40,7 @@ export const CAM20_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "OK, Maya. I didn't know theatre programmes are called playbills in the USA till I started looking into the topic. Even though I struggled to find many useful websites, ",
+          text: "OK, Maya. I didn't know theatre programmes are called playbills in the USA till I started looking into the topic. Even though I struggled to find many useful websites, I'm glad we ",
         },
         { type: "gap", gapId: "g3" },
         {
@@ -52,6 +52,7 @@ export const CAM20_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAYA",
       segments: [
+        { type: "text", text: "That might actually " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -59,7 +60,7 @@ export const CAM20_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "FINN",
       segments: [
-        { type: "text", text: "I suppose so. Anyway " },
+        { type: "text", text: "I suppose so. Anyway I hadn't realised " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: " specialising in creating theatre programmes." },
       ],
@@ -78,6 +79,7 @@ export const CAM20_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "FINN",
       segments: [
+        { type: "text", text: "It must be " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: " to do it that way." },
       ],
@@ -125,6 +127,7 @@ export const CAM20_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAYA",
       segments: [
+        { type: "text", text: "We should definitely " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -135,16 +138,17 @@ export const CAM20_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "FINN",
       segments: [
-        { type: "text", text: "Interesting. " },
+        { type: "text", text: "Interesting. I " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " now either." },
       ],
     },
     {
       speaker: "MAYA",
       segments: [
+        { type: "text", text: "There's also " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: " between 18th and 19th century programmes." },
+        { type: "text", text: " to make between 18th and 19th century programmes." },
       ],
     },
     {
@@ -170,7 +174,7 @@ export const CAM20_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "And there was a greater variety of designs. But " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: " because they told the theatregoers so many things, including about the actors." },
+        { type: "text", text: " 18th century programmes were superior because they told the theatregoers so many things, including about the actors." },
       ],
     },
     {
@@ -218,10 +222,11 @@ export const CAM20_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAYA",
       segments: [
+        { type: "text", text: "What I " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
-          text: " after the war they didn't go back to being more than one sheet or change in any way for over 25 years. I know there were paper shortages after the war, but only for five or ten years.",
+          text: " is that after the war they didn't go back to being more than one sheet or change in any way for over 25 years. I know there were paper shortages after the war, but only for five or ten years.",
         },
       ],
     },
@@ -229,6 +234,7 @@ export const CAM20_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAYA",
       segments: [
+        { type: "text", text: "I got some pictures of programmes " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: " on the slides for our presentation." },
       ],
@@ -238,7 +244,7 @@ export const CAM20_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "I found a couple too, Maya. " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " and see what we think." },
       ],
     },
     {
@@ -261,7 +267,7 @@ export const CAM20_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "FINN",
       segments: [
-        { type: "text", text: "I've got some pages from a programme for Man of La Mancha. " },
+        { type: "text", text: "I've got some pages from a programme for Man of La Mancha. I thought this was " },
         { type: "gap", gapId: "g17" },
         {
           type: "text",
@@ -293,7 +299,7 @@ export const CAM20_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Huh. " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: "." },
+        { type: "text", text: " about it while I was doing my research." },
       ],
     },
   ],

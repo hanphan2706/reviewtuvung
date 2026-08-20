@@ -5,66 +5,61 @@ import type {
 
 export const CAM13_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["you wanted to consult me about your class presentation"] },
+    { id: "g1", answers: ["your class presentation"] },
     {
       id: "g2",
       answers: [
-        "you're due to give it in next week",
-        "you are due to give it in next week",
+        "give it in next week",
       ],
     },
     { id: "g3", answers: ["And I'm really struggling", "And I am really struggling"] },
     {
       id: "g4",
       answers: [
-        "I chose the topic because I didn't know much about it",
-        "I chose the topic because I did not know much about it",
+        "didn't know much about it",
+        "did not know much about it",
       ],
     },
     {
       id: "g5",
       answers: [
-        "I could talk for much longer than the twenty minutes I've been allocated",
-        "I could talk for much longer than the twenty minutes I have been allocated",
+        "twenty minutes I've been allocated",
+        "twenty minutes I have been allocated",
       ],
     },
     {
       id: "g6",
       answers: [
-        "you'll need to have it clear in your own mind",
-        "you will need to have it clear in your own mind",
+        "clear in your own mind",
       ],
     },
     { id: "g7", answers: ["work through developments in chronological order"] },
-    { id: "g8", answers: ["thin films on camera displays to make them water-repellent"] },
-    { id: "g9", answers: ["additives to make motorcycle helmets stronger and lighter"] },
+    { id: "g8", answers: ["make them water-repellent"] },
+    { id: "g9", answers: ["stronger and lighter"] },
     {
       id: "g10",
       answers: [
-        "There's a danger of tailoring what you say",
-        "There is a danger of tailoring what you say",
+        "tailoring what you say",
       ],
     },
     {
       id: "g11",
       answers: [
-        "it simply eats into the short time that's available",
-        "it simply eats into the short time that is available",
+        "eats into the short time",
       ],
     },
-    { id: "g12", answers: ["You can always modify that sentence later"] },
+    { id: "g12", answers: ["modify that sentence later"] },
     { id: "g13", answers: ["It was pretty rubbish"] },
-    { id: "g14", answers: ["Be careful not to do that in next week's presentation"] },
+    { id: "g14", answers: ["in next week's presentation"] },
     { id: "g15", answers: ["only occasionally glancing at your notes"] },
-    { id: "g16", answers: ["you should have been looking at your laptop"] },
+    { id: "g16", answers: ["looking at your laptop"] },
     {
       id: "g17",
       answers: [
-        "I'll look forward to seeing a big improvement",
-        "I will look forward to seeing a big improvement",
+        "seeing a big improvement",
       ],
     },
-    { id: "g18", answers: ["I hope that helps you with next week's presentation"] },
+    { id: "g18", answers: ["next week's presentation"] },
   ],
   lines: [
     { speaker: "TUTOR", segments: [{ type: "text", text: "Ah … come in, Russ." }] },
@@ -72,9 +67,9 @@ export const CAM13_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
-        { type: "text", text: "Now " },
+        { type: "text", text: "Now you wanted to consult me about " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " on nanotechnology - " },
+        { type: "text", text: " on nanotechnology - you're due to " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: ", aren't you?" },
       ],
@@ -84,11 +79,11 @@ export const CAM13_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "That's right. " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: ". " },
+        { type: "text", text: ". I chose the topic because I " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
-          text: " and wanted to learn more, but now I've read so much about it, in a way there's too much to say - ",
+          text: " and wanted to learn more, but now I've read so much about it, in a way there's too much to say - I could talk for much longer than the ",
         },
         { type: "gap", gapId: "g5" },
         {
@@ -100,7 +95,7 @@ export const CAM13_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
-        { type: "text", text: "You could do either, but " },
+        { type: "text", text: "You could do either, but you'll need to have it " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
       ],
@@ -127,9 +122,9 @@ export const CAM13_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "RUSS",
       segments: [
-        { type: "text", text: "You mean things like " },
+        { type: "text", text: "You mean things like thin films on camera displays to " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: ", and " },
+        { type: "text", text: ", and additives to make motorcycle helmets " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -157,7 +152,7 @@ export const CAM13_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
-        { type: "text", text: "They aren't essential, by any means. And " },
+        { type: "text", text: "They aren't essential, by any means. And there's a danger of " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
@@ -179,10 +174,10 @@ export const CAM13_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "That would be fine if you had an hour or two for the presentation, but you might find that you can't do anything with the answers you get, and ",
+          text: "That would be fine if you had an hour or two for the presentation, but you might find that you can't do anything with the answers you get, and it simply ",
         },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: "." },
+        { type: "text", text: " that's available." },
       ],
     },
     {
@@ -209,7 +204,7 @@ export const CAM13_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well, initially I think you should ignore all the notes you've made, take a small piece of paper, and write a single short sentence that ties together the whole presentation: it can be something as simple as 'Nanotechnology is already improving our lives'. Then start planning the content around that. ",
+          text: "Well, initially I think you should ignore all the notes you've made, take a small piece of paper, and write a single short sentence that ties together the whole presentation: it can be something as simple as 'Nanotechnology is already improving our lives'. Then start planning the content around that. You can always ",
         },
         { type: "gap", gapId: "g12" },
         { type: "text", text: ", if you need to." },
@@ -238,7 +233,7 @@ export const CAM13_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Let's say it was better in some respects than in others. With regard to the structure. I felt that you ended rather abruptly, without rounding it off. ",
+          text: "Let's say it was better in some respects than in others. With regard to the structure. I felt that you ended rather abruptly, without rounding it off. Be careful not to do that ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
@@ -262,7 +257,7 @@ export const CAM13_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Your body language was a little odd. Every time you showed a slide, you turned your back on the audience so you could look at it - ",
+          text: "Your body language was a little odd. Every time you showed a slide, you turned your back on the audience so you could look at it - you should have been ",
         },
         { type: "gap", gapId: "g16" },
         {
@@ -303,6 +298,7 @@ export const CAM13_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
+        { type: "text", text: "I hope that helps you with " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],
@@ -311,6 +307,7 @@ export const CAM13_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
+        { type: "text", text: "I'll look forward to " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: ", then." },
       ],

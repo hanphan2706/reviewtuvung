@@ -7,21 +7,21 @@ export const CAM21_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["was good, wasn't it", "was good, was it not"] },
     { id: "g2", answers: ["I learned a lot from her"] },
-    { id: "g3", answers: ["I've already done some reading on it", "I have already done some reading on it"] },
+    { id: "g3", answers: ["done some reading on it"] },
     { id: "g4", answers: ["That impressed me too"] },
-    { id: "g5", answers: ["it's hard to see any real solution", "it is hard to see any real solution"] },
-    { id: "g6", answers: ["she did point to where policy changes could be made"] },
+    { id: "g5", answers: ["hard to see"] },
+    { id: "g6", answers: ["she did point to"] },
     { id: "g7", answers: ["Yes, me too"] },
-    { id: "g8", answers: ["I'd have thought it was quite unusual", "I would have thought it was quite unusual"] },
+    { id: "g8", answers: ["I'd have thought", "I would have thought"] },
     { id: "g9", answers: ["from such different backgrounds"] },
-    { id: "g10", answers: ["people are much more aware of that, aren't they", "people are much more aware of that, are they not"] },
+    { id: "g10", answers: ["much more aware of that"] },
     { id: "g11", answers: ["she didn't bombard us with figures", "she did not bombard us with figures"] },
-    { id: "g12", answers: ["she focused more on the general points they indicated"] },
-    { id: "g13", answers: ["it's been a bit of a rush", "it has been a bit of a rush"] },
+    { id: "g12", answers: ["focused more on"] },
+    { id: "g13", answers: ["a bit of a rush"] },
     { id: "g14", answers: ["I know what you mean"] },
-    { id: "g15", answers: ["I didn't get anything out of it though", "I did not get anything out of it though"] },
-    { id: "g16", answers: ["I found it hard going at first"] },
-    { id: "g17", answers: ["I gave up reading after the first chapter"] },
+    { id: "g15", answers: ["get anything out of it"] },
+    { id: "g16", answers: ["hard going at first"] },
+    { id: "g17", answers: ["gave up reading"] },
     { id: "g18", answers: ["I just couldn't follow it", "I just could not follow it"] },
   ],
   lines: [
@@ -38,7 +38,7 @@ export const CAM21_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Yeah. " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: " about ocean biodiversity. " },
+        { type: "text", text: " about ocean biodiversity. I've already " },
         { type: "gap", gapId: "g3" },
         {
           type: "text",
@@ -54,9 +54,9 @@ export const CAM21_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "Yes, things that aren't currently receiving widespread attention but are likely to be important in the future. ",
         },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: ". It wasn't exactly a feel-good conclusion because " },
+        { type: "text", text: ". It wasn't exactly a feel-good conclusion because it's " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: " for a lot of the problems." },
+        { type: "text", text: " any real solution for a lot of the problems." },
       ],
     },
     {
@@ -64,7 +64,7 @@ export const CAM21_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "No, though " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: " to protect our marine and coastal environments." },
+        { type: "text", text: " where policy changes could be made to protect our marine and coastal environments." },
       ],
     },
     {
@@ -82,7 +82,7 @@ export const CAM21_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "The research project she described was impressive, wasn't it? " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: " to have so many experts working together." },
+        { type: "text", text: " it was quite unusual to have so many experts working together." },
       ],
     },
     {
@@ -99,9 +99,9 @@ export const CAM21_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "PHIL",
       segments: [
-        { type: "text", text: "But now " },
+        { type: "text", text: "But now people are " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "?" },
+        { type: "text", text: ", aren't they?" },
       ],
     },
     { speaker: "LUCY", segments: [{ type: "text", text: "I suppose so." }] },
@@ -119,9 +119,9 @@ export const CAM21_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Right. I liked the way " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: " – I mean, they were available, but " },
+        { type: "text", text: " – I mean, they were available, but she " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: "." },
+        { type: "text", text: " the general points they indicated." },
       ],
     },
     {
@@ -148,7 +148,7 @@ export const CAM21_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "While you're here, can we talk about the list of resources we have to evaluate for the seminar tomorrow. I've had a look at them all, but ",
+          text: "While you're here, can we talk about the list of resources we have to evaluate for the seminar tomorrow. I've had a look at them all, but it's been ",
         },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
@@ -195,9 +195,9 @@ export const CAM21_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LUCY",
       segments: [
-        { type: "text", text: "Mm. " },
+        { type: "text", text: "Mm. I didn't " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: ". Most of it was stating the obvious." },
+        { type: "text", text: " though. Most of it was stating the obvious." },
       ],
     },
     {
@@ -212,7 +212,7 @@ export const CAM21_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LUCY",
       segments: [
-        { type: "text", text: "The one by John Harper? Yes, " },
+        { type: "text", text: "The one by John Harper? Yes, I found it " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
@@ -241,8 +241,9 @@ export const CAM21_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "PHIL",
       segments: [
+        { type: "text", text: "I " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: " – " },
+        { type: "text", text: " after the first chapter – " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

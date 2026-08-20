@@ -7,50 +7,32 @@ export const CAM12_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "I've seen your advert for people to lead cycle trips",
-        "I have seen your advert for people to lead cycle trips",
-      ],
+      answers: ["I've seen your advert", "I have seen your advert"],
     },
-    { id: "g2", answers: ["Are you the right person to speak to"] },
-    { id: "g3", answers: ["Could I have your name, please"] },
-    { id: "g4", answers: ["This will probably sound crazy"] },
-    { id: "g5", answers: ["I made a complete career change"] },
+    { id: "g2", answers: ["the right person to speak to"] },
+    { id: "g3", answers: ["Could I have your name", "could I have your name"] },
+    {
+      id: "g4",
+      answers: ["This will probably sound crazy", "this will probably sound crazy"],
+    },
+    { id: "g5", answers: ["a complete career change"] },
     {
       id: "g6",
       answers: ["I've just finished my training", "I have just finished my training"],
     },
-    {
-      id: "g7",
-      answers: ["The trip to India that I had arranged to lead next month has now been cancelled"],
-    },
-    { id: "g8", answers: ["depending on the size of the group"] },
-    { id: "g9", answers: ["which is proving so popular we need an additional leader"] },
-    { id: "g10", answers: ["I enjoy working with children"] },
-    {
-      id: "g11",
-      answers: ["I probably need some more experience before I go on a really challenging trip"],
-    },
-    { id: "g12", answers: ["Would that fit in with your plans"] },
-    {
-      id: "g13",
-      answers: ["as long as we have enough notice, we can deal with that"],
-    },
-    { id: "g14", answers: ["would you like me to fill in an application form"] },
-    { id: "g15", answers: ["Was that P Papa or B Bravo"] },
-    {
-      id: "g16",
-      answers: [
-        "You're quite a long way from where I live",
-        "You are quite a long way from where I live",
-      ],
-    },
+    { id: "g7", answers: ["has now been cancelled"] },
+    { id: "g8", answers: ["depending on the size"] },
+    { id: "g9", answers: ["proving so popular"] },
+    { id: "g10", answers: ["working with children"] },
+    { id: "g11", answers: ["some more experience"] },
+    { id: "g12", answers: ["fit in with your plans"] },
+    { id: "g13", answers: ["as long as", "As long as"] },
+    { id: "g14", answers: ["fill in an application form"] },
+    { id: "g15", answers: ["P Papa or B Bravo"] },
+    { id: "g16", answers: ["a long way from"] },
     {
       id: "g17",
-      answers: [
-        "we'll need to see any certificates you've got that are relevant",
-        "we will need to see any certificates you have got that are relevant",
-      ],
+      answers: ["any certificates you've got", "any certificates you have got"],
     },
     {
       id: "g18",
@@ -70,7 +52,7 @@ export const CAM12_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Oh hello. " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: ". " },
+        { type: "text", text: " for people to lead cycle trips. Are you " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "?" },
       ],
@@ -80,7 +62,7 @@ export const CAM12_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Yes, I am. " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "?" },
+        { type: "text", text: ", please?" },
       ],
     },
     { speaker: "MARGARET", segments: [{ type: "text", text: "It's Margaret Smith." }] },
@@ -102,7 +84,7 @@ export const CAM12_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: "MARGARET",
       segments: [
         { type: "gap", gapId: "g4" },
-        { type: "text", text: " - I used to be a lawyer, and then " },
+        { type: "text", text: " - I used to be a lawyer, and then I made " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: " and I'm going to be a doctor. " },
         { type: "gap", gapId: "g6" },
@@ -116,7 +98,7 @@ export const CAM12_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MARGARET",
       segments: [
-        { type: "text", text: "Yes, I've led several bike tours in Africa. " },
+        { type: "text", text: "Yes, I've led several bike tours in Africa. The trip to India that I had arranged to lead next month " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -131,19 +113,19 @@ export const CAM12_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g8" },
         {
           type: "text",
-          text: ". Some tours are for very experienced cyclists, but we've got a tour coming up soon in Spain, " },
+          text: " of the group. Some tours are for very experienced cyclists, but we've got a tour coming up soon in Spain, which is " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: ". It's a cycling holiday for families. Would that suit you?" },
+        { type: "text", text: " we need an additional leader. It's a cycling holiday for families. Would that suit you?" },
       ],
     },
     {
       speaker: "MARGARET",
       segments: [
-        { type: "text", text: "It certainly would. " },
+        { type: "text", text: "It certainly would. I enjoy " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: ", and " },
+        { type: "text", text: ", and I probably need " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: "." },
+        { type: "text", text: " before I go on a really challenging trip." },
       ],
     },
     {
@@ -171,6 +153,7 @@ export const CAM12_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "Well that's great. Now the trip I mentioned is just for a fortnight, but there might be the possibility of leading other tours after that. ",
         },
+        { type: "text", text: "Would that " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "?" },
       ],
@@ -202,14 +185,14 @@ export const CAM12_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "No, " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " we have enough notice, we can deal with that." },
       ],
     },
     { speaker: "MARGARET", segments: [{ type: "text", text: "That's great." }] },
     {
       speaker: "MARGARET",
       segments: [
-        { type: "text", text: "It sounds really interesting - " },
+        { type: "text", text: "It sounds really interesting - would you like me to " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "?" },
       ],
@@ -228,7 +211,11 @@ export const CAM12_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { speaker: "MARGARET", segments: [{ type: "text", text: "DG7 4PH." }] },
     {
       speaker: "BOB",
-      segments: [{ type: "gap", gapId: "g15" }, { type: "text", text: "?" }],
+      segments: [
+        { type: "text", text: "Was that " },
+        { type: "gap", gapId: "g15" },
+        { type: "text", text: "?" },
+      ],
     },
     { speaker: "MARGARET", segments: [{ type: "text", text: "P Papa." }] },
     {
@@ -243,17 +230,17 @@ export const CAM12_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MARGARET",
       segments: [
-        { type: "text", text: "Yes, it's fine. " },
+        { type: "text", text: "Yes, it's fine. You're quite " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: ", so I'll drive over on Monday. Should I bring anything to the interview?" },
+        { type: "text", text: " where I live, so I'll drive over on Monday. Should I bring anything to the interview?" },
       ],
     },
     {
       speaker: "BOB",
       segments: [
-        { type: "text", text: "We'll have your application form, of course, but " },
+        { type: "text", text: "We'll have your application form, of course, but we'll need to see " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: ", in cycling, first aid, or whatever." },
+        { type: "text", text: " that are relevant, in cycling, first aid, or whatever." },
       ],
     },
     { speaker: "MARGARET", segments: [{ type: "text", text: "OK." }] },

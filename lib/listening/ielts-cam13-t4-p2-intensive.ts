@@ -5,59 +5,43 @@ import type {
 
 export const CAM13_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I hope you enjoyed the bus trip from the airport"] },
+    { id: "g1", answers: ["enjoyed the bus trip"] },
     {
       id: "g2",
-      answers: [
-        "you've come to New Zealand's premier snow and ski centre",
-        "you have come to New Zealand's premier snow and ski centre",
-      ],
+      answers: ["premier snow and ski centre"],
     },
     {
       id: "g3",
-      answers: [
-        "where you're on fairly flat ground for most of the time",
-        "where you are on fairly flat ground for most of the time",
-      ],
+      answers: ["fairly flat ground"],
     },
     { id: "g4", answers: ["rather than going down steep mountainsides"] },
     {
       id: "g5",
-      answers: [
-        "it's great aerobic exercise if you really push yourself",
-        "it is great aerobic exercise if you really push yourself",
-      ],
+      answers: ["great aerobic exercise"],
     },
-    { id: "g6", answers: ["you can just sit back in the sled and enjoy the ride as a passenger"] },
+    { id: "g6", answers: ["sit back in the sled"] },
     {
       id: "g7",
       answers: ["you're all welcome to join in", "you are all welcome to join in"],
     },
-    { id: "g8", answers: ["Participation rather than winning is the main focus"] },
-    { id: "g9", answers: ["each team must complete four laps of the course"] },
+    { id: "g8", answers: ["rather than winning"] },
+    { id: "g9", answers: ["four laps of the course"] },
     {
       id: "g10",
-      answers: ["wearing a pair of special snow shoes which allow you to walk on top of the snow"],
+      answers: ["special snow shoes"],
     },
-    { id: "g11", answers: ["This is an area where miners once searched for gold"] },
+    { id: "g11", answers: ["searched for gold"] },
     {
       id: "g12",
-      answers: [
-        "When the snow melts in summer, the mountain slopes are carpeted in flowers and plants",
-      ],
+      answers: ["carpeted in flowers and plants"],
     },
     {
       id: "g13",
-      answers: [
-        "That's included in your package for the stay",
-        "That is included in your package for the stay",
-      ],
+      answers: ["package for the stay"],
     },
     {
       id: "g14",
-      answers: [
-        "We can take your luggage up on our snowmobile for you for just ten dollars a person",
-      ],
+      answers: ["ten dollars a person"],
     },
     {
       id: "g15",
@@ -68,17 +52,14 @@ export const CAM13_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       id: "g16",
-      answers: [
-        "only use that if it's a real emergency",
-        "only use that if it is a real emergency",
-      ],
+      answers: ["a real emergency"],
     },
-    { id: "g17", answers: ["You follow a steep valley looking right down on the river below"] },
+    { id: "g17", answers: ["looking right down"] },
     {
       id: "g18",
       answers: [
-        "if you'd like to follow me, we'll get started",
-        "if you would like to follow me, we will get started",
+        "we'll get started",
+        "we will get started",
       ],
     },
   ],
@@ -88,14 +69,15 @@ export const CAM13_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "I hope you " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " - we've certainly got plenty of snow today!" },
+        { type: "text", text: " from the airport - we've certainly got plenty of snow today!" },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, you've come to New Zealand's " },
         { type: "gap", gapId: "g2" },
         {
           type: "text",
@@ -106,9 +88,9 @@ export const CAM13_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Most visitors come here for the cross-country skiing, " },
+        { type: "text", text: "Most visitors come here for the cross-country skiing, where you're on " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: ", " },
+        { type: "text", text: " for most of the time, " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -125,11 +107,11 @@ export const CAM13_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "You can go at your own speed - " },
+        { type: "text", text: "You can go at your own speed - it's " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ", or if you prefer you can just glide gently along and enjoy the beautiful scenery.",
+          text: " if you really push yourself, or if you prefer you can just glide gently along and enjoy the beautiful scenery.",
         },
       ],
     },
@@ -158,9 +140,9 @@ export const CAM13_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Or if you'd prefer, " },
+        { type: "text", text: "Or if you'd prefer, you can just " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " and enjoy the ride as a passenger." },
       ],
     },
     {
@@ -183,14 +165,15 @@ export const CAM13_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Participation " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: ", and there's a medal for everyone who takes part." },
+        { type: "text", text: " is the main focus, and there's a medal for everyone who takes part." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Participants are in teams of two to four, and " },
+        { type: "text", text: "Participants are in teams of two to four, and each team must complete " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -198,21 +181,29 @@ export const CAM13_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "For your final expedition, you'll head off to Mount Frenner " },
+        { type: "text", text: "For your final expedition, you'll head off to Mount Frenner wearing a pair of " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " which allow you to walk on top of the snow." },
       ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "This is an area where miners once " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: ", though there are very few traces of their work left now." },
       ],
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g12" }, { type: "text", text: "." }],
+      segments: [
+        {
+          type: "text",
+          text: "When the snow melts in summer, the mountain slopes are ",
+        },
+        { type: "gap", gapId: "g12" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -226,7 +217,7 @@ export const CAM13_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "You'll spend the night in our hut half-way up the mountain. " },
+        { type: "text", text: "You'll spend the night in our hut half-way up the mountain. That's included in your " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
       ],
@@ -251,7 +242,14 @@ export const CAM13_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g14" }, { type: "text", text: "." }],
+      segments: [
+        {
+          type: "text",
+          text: "We can take your luggage up on our snowmobile for you for just ",
+        },
+        { type: "gap", gapId: "g14" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -289,7 +287,7 @@ export const CAM13_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "We do have an emergency locator beacon in the hut but " },
+        { type: "text", text: "We do have an emergency locator beacon in the hut but only use that if it's " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: ", like if someone's ill or injured." },
       ],
@@ -329,7 +327,11 @@ export const CAM13_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g17" }, { type: "text", text: " - scary!" }],
+      segments: [
+        { type: "text", text: "You follow a steep valley " },
+        { type: "gap", gapId: "g17" },
+        { type: "text", text: " on the river below - scary!" },
+      ],
     },
     {
       speaker: null,
@@ -380,7 +382,7 @@ export const CAM13_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Right, so now " },
+        { type: "text", text: "Right, so now if you'd like to follow me, " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: " …" },
       ],

@@ -6,40 +6,40 @@ import type {
 export const CAM13_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["This is Matt Brooks"] },
-    { id: "g2", answers: ["Alex White gave me your number"] },
+    { id: "g2", answers: ["gave me your number"] },
     { id: "g3", answers: ["How can I help"] },
     { id: "g4", answers: ["which area to live in"] },
-    { id: "g5", answers: ["which is a really nice suburb"] },
+    { id: "g5", answers: ["a really nice suburb"] },
     {
       id: "g6",
       answers: ["That's what people typically pay", "That is what people typically pay"],
     },
     {
       id: "g7",
-      answers: ["That doesn't include bills or anything", "That does not include bills or anything"],
+      answers: ["doesn't include bills", "does not include bills"],
     },
-    { id: "g8", answers: ["Are the transport links easy from where you live"] },
+    { id: "g8", answers: ["transport links easy"] },
     {
       id: "g9",
-      answers: ["I don't have to use public transport", "I do not have to use public transport"],
+      answers: ["don't have to use", "do not have to use"],
     },
-    { id: "g10", answers: ["Is it safe to cycle around the city"] },
-    { id: "g11", answers: ["And it keeps me fit"] },
-    { id: "g12", answers: ["driving to work in the city centre would be a nightmare"] },
+    { id: "g10", answers: ["safe to cycle"] },
+    { id: "g11", answers: ["keeps me fit"] },
+    { id: "g12", answers: ["would be a nightmare"] },
     {
       id: "g13",
-      answers: ["I'd be working from home", "I would be working from home"],
+      answers: ["working from home"],
     },
-    { id: "g14", answers: ["Getting to London is no problem"] },
-    { id: "g15", answers: ["they run quite late at night"] },
+    { id: "g14", answers: ["is no problem"] },
+    { id: "g15", answers: ["quite late at night"] },
     {
       id: "g16",
-      answers: ["They're always doing engineering work", "They are always doing engineering work"],
+      answers: ["doing engineering work"],
     },
-    { id: "g17", answers: ["We want to make some appointments with estate agents"] },
+    { id: "g17", answers: ["make some appointments"] },
     {
       id: "g18",
-      answers: ["Let me know which train you're catching", "Let me know which train you are catching"],
+      answers: ["which train you're catching", "which train you are catching"],
     },
   ],
   lines: [
@@ -49,7 +49,7 @@ export const CAM13_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Oh hi, Linda. " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: ". " },
+        { type: "text", text: ". Alex White " },
         { type: "gap", gapId: "g2" },
         {
           type: "text",
@@ -76,7 +76,7 @@ export const CAM13_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LINDA",
       segments: [
-        { type: "text", text: "Well, I live in Dalton, " },
+        { type: "text", text: "Well, I live in Dalton, which is " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: " - not too expensive, and there's a nice park." },
       ],
@@ -100,42 +100,42 @@ export const CAM13_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g6" },
         {
           type: "text",
-          text: ". You certainly wouldn't want to pay more than 900 pounds. ",
+          text: ". You certainly wouldn't want to pay more than 900 pounds. That ",
         },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: " or anything." },
       ],
     },
     {
       speaker: "MATT",
       segments: [
-        { type: "text", text: "No. That sounds alright. I'll definitely have a look there. " },
+        { type: "text", text: "No. That sounds alright. I'll definitely have a look there. Are the " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: "?" },
+        { type: "text", text: " from where you live?" },
       ],
     },
     {
       speaker: "LINDA",
       segments: [
-        { type: "text", text: "Well, I'm very lucky. I work in the city centre so " },
+        { type: "text", text: "Well, I'm very lucky. I work in the city centre so I " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: ". I go by bike." },
+        { type: "text", text: " public transport. I go by bike." },
       ],
     },
     {
       speaker: "MATT",
       segments: [
-        { type: "text", text: "Oh, I wish I could do that. " },
+        { type: "text", text: "Oh, I wish I could do that. Is it " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "?" },
+        { type: "text", text: " around the city?" },
       ],
     },
     {
       speaker: "LINDA",
       segments: [
-        { type: "text", text: "Yes, it's fine. " },
+        { type: "text", text: "Yes, it's fine. And it " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: ". Anyway, " },
+        { type: "text", text: ". Anyway, driving to work in the city centre " },
         { type: "gap", gapId: "g12" },
         {
           type: "text",
@@ -146,6 +146,7 @@ export const CAM13_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MATT",
       segments: [
+        { type: "text", text: "I'd be " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: " but I'd have to go to London one or two days a week." },
       ],
@@ -153,7 +154,7 @@ export const CAM13_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LINDA",
       segments: [
-        { type: "text", text: "Oh, that's perfect. " },
+        { type: "text", text: "Oh, that's perfect. Getting to London " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: ". There's a fast train every 30 minutes which only takes 45 minutes." },
       ],
@@ -162,11 +163,11 @@ export const CAM13_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LINDA",
       segments: [
-        { type: "text", text: "Yeah, the train service isn't bad during the week. And " },
+        { type: "text", text: "Yeah, the train service isn't bad during the week. And they run " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
-          text: ". It's weekends that are a problem. ",
+          text: ". It's weekends that are a problem. They're always ",
         },
         { type: "gap", gapId: "g16" },
         {
@@ -213,9 +214,9 @@ export const CAM13_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MATT",
       segments: [
-        { type: "text", text: "Yes. My wife and I are both coming next week. " },
+        { type: "text", text: "Yes. My wife and I are both coming next week. We want to " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " with estate agents." },
       ],
     },
     {
@@ -244,7 +245,7 @@ export const CAM13_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LINDA",
       segments: [
-        { type: "text", text: "Okay great. " },
+        { type: "text", text: "Okay great. Let me know " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",

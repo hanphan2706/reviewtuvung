@@ -5,24 +5,24 @@ import type {
 
 export const CAM20_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I'd like to illustrate this by telling you about", "I would like to illustrate this by telling you about"] },
+    { id: "g1", answers: ["I'd like to illustrate", "I would like to illustrate"] },
     { id: "g2", answers: ["that I've been involved in recently", "that I have been involved in recently"] },
-    { id: "g3", answers: ["these birds of prey provide important social and ecological benefits to them"] },
-    { id: "g4", answers: ["And the predatory habits of these birds also protect farmers in other ways"] },
-    { id: "g5", answers: ["whose bite may be dangerous or even fatal"] },
+    { id: "g3", answers: ["social and ecological benefits"] },
+    { id: "g4", answers: ["predatory habits"] },
+    { id: "g5", answers: ["dangerous or even fatal"] },
     { id: "g6", answers: ["keeping their populations under control"] },
-    { id: "g7", answers: ["the birds played a key role in the culture of the region"] },
+    { id: "g7", answers: ["played a key role"] },
     { id: "g8", answers: ["after a relatively slow start"] },
-    { id: "g9", answers: ["although these birds of prey are protected by the government"] },
-    { id: "g10", answers: ["Some of these deaths are accidental"] },
-    { id: "g11", answers: ["Drivers in Zambia have to take special care at night"] },
-    { id: "g12", answers: ["And local farmers also pose a threat to these birds"] },
+    { id: "g9", answers: ["protected by the government"] },
+    { id: "g10", answers: ["are accidental"] },
+    { id: "g11", answers: ["take special care"] },
+    { id: "g12", answers: ["pose a threat"] },
     { id: "g13", answers: ["which is illegal but understandable"] },
-    { id: "g14", answers: ["which again is illegal and can have negative effects on the ecosystem"] },
+    { id: "g14", answers: ["negative effects"] },
     { id: "g15", answers: ["this is counterproductive"] },
-    { id: "g16", answers: ["but this would cost far too much to be a practical solution"] },
+    { id: "g16", answers: ["cost far too much"] },
     { id: "g17", answers: ["without actually harming them"] },
-    { id: "g18", answers: ["these birds of prey remain a major threat to the chickens' survival"] },
+    { id: "g18", answers: ["a major threat"] },
   ],
   lines: [
     {
@@ -32,13 +32,13 @@ export const CAM20_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "We've been looking at different types of conflicts that may arise between wildlife and humans at the boundaries of protected areas, such as national parks and animal sanctuaries. " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " some research " },
+        { type: "text", text: " this by telling you about some research " },
         { type: "gap", gapId: "g2" },
         {
           type: "text",
-          text: " in the Central African country of Zambia in the area around the Chembe Bird Sanctuary, which contains over 300 of the listed birds of Zambia. These include a number of birds of prey such as eagles, hawks and owls that live by hunting and killing other birds and animals. Now most of the people living in the local communities near to the bird sanctuary are small-scale farmers and " },
+          text: " in the Central African country of Zambia in the area around the Chembe Bird Sanctuary, which contains over 300 of the listed birds of Zambia. These include a number of birds of prey such as eagles, hawks and owls that live by hunting and killing other birds and animals. Now most of the people living in the local communities near to the bird sanctuary are small-scale farmers and these birds of prey provide important " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "." },
+        { type: "text", text: " to them." },
       ],
     },
     {
@@ -53,8 +53,9 @@ export const CAM20_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "And the " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: ". For example, a major danger to rural workers is snakes, " },
+        { type: "text", text: " of these birds also protect farmers in other ways. For example, a major danger to rural workers is snakes, whose bite may be " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: ", and birds of prey have a major role in " },
         { type: "gap", gapId: "g6" },
@@ -66,9 +67,9 @@ export const CAM20_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Local people have always been aware of these benefits and for years, even before the sanctuary was opened in 1973, " },
+          text: "Local people have always been aware of these benefits and for years, even before the sanctuary was opened in 1973, the birds " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: " in the culture of the region." },
       ],
     },
     {
@@ -84,9 +85,9 @@ export const CAM20_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "However, " },
+        { type: "text", text: "However, although these birds of prey are " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: ", their numbers are falling. " },
+        { type: "text", text: ", their numbers are falling. Some of these deaths " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
       ],
@@ -96,9 +97,9 @@ export const CAM20_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Fatalities occur when birds alight on roads to catch and eat their prey, and are hit by fast-moving traffic. " },
+          text: "Fatalities occur when birds alight on roads to catch and eat their prey, and are hit by fast-moving traffic. Drivers in Zambia have to " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: ", as birds may regard the quieter roads as safe places to sleep." },
+        { type: "text", text: " at night, as birds may regard the quieter roads as safe places to sleep." },
       ],
     },
     {
@@ -106,9 +107,9 @@ export const CAM20_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Accidental deaths may also occur if these birds fly close to high power lines as they may be electrocuted. This is a particular danger in the heavy rain which can occur in the region in the months from December to April. " },
+          text: "Accidental deaths may also occur if these birds fly close to high power lines as they may be electrocuted. This is a particular danger in the heavy rain which can occur in the region in the months from December to April. And local farmers also " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: "." },
+        { type: "text", text: " to these birds." },
       ],
     },
     {
@@ -118,9 +119,9 @@ export const CAM20_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "As well as growing crops, small-scale farmers in the area also rear chickens. These provide food for the farmers' families, as well as being an important source of income. But they're also an easy target for birds of prey, and so farmers may shoot these birds, " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: ", or they may poison the birds, " },
+        { type: "text", text: ", or they may poison the birds, which again is illegal and can have " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: "." },
+        { type: "text", text: " on the ecosystem." },
       ],
     },
     {
@@ -141,9 +142,9 @@ export const CAM20_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Another possibility would be to prevent the chickens from going outside at all and to keep them safe from predators inside a building, " },
+          text: "Another possibility would be to prevent the chickens from going outside at all and to keep them safe from predators inside a building, but this would " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " to be a practical solution." },
       ],
     },
     {
@@ -171,11 +172,11 @@ export const CAM20_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "And even so, " },
+        { type: "text", text: "And even so, these birds of prey remain " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",
-          text: " and cause considerable economic loss to farmers. So we looked at the possibility of a longer-term solution to…",
+          text: " to the chickens' survival and cause considerable economic loss to farmers. So we looked at the possibility of a longer-term solution to…",
         },
       ],
     },

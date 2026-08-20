@@ -5,24 +5,24 @@ import type {
 
 export const CAM17_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["Are you the right person to talk to about"] },
+    { id: "g1", answers: ["Are you the right person"] },
     { id: "g2", answers: ["I'm interested in getting involved", "I am interested in getting involved"] },
     { id: "g3", answers: ["Could you tell me something about"] },
-    { id: "g4", answers: ["we have a mixture of regular activities and special events"] },
-    { id: "g5", answers: ["it's awful how much there is to clear", "it is awful how much there is to clear"] },
-    { id: "g6", answers: ["I'd be happy to help with that", "I would be happy to help with that"] },
+    { id: "g4", answers: ["regular activities and special events"] },
+    { id: "g5", answers: ["it's awful how much", "it is awful how much"] },
+    { id: "g6", answers: ["I'd be happy to help", "I would be happy to help"] },
     { id: "g7", answers: ["they're banned from the beach itself", "they are banned from the beach itself"] },
-    { id: "g8", answers: ["there's a lot to do there all year round", "there is a lot to do there all year round"] },
-    { id: "g9", answers: ["making sure they're in good condition for walking", "making sure they are in good condition for walking"] },
+    { id: "g8", answers: ["there's a lot to do", "there is a lot to do"] },
+    { id: "g9", answers: ["in good condition for walking"] },
     { id: "g10", answers: ["I could certainly help with that"] },
-    { id: "g11", answers: ["You might be interested in taking part in that"] },
+    { id: "g11", answers: ["interested in taking part"] },
     { id: "g12", answers: ["I was involved in something similar"] },
-    { id: "g13", answers: ["I'd like to get to know the local countryside", "I would like to get to know the local countryside"] },
-    { id: "g14", answers: ["that's when the sands are dry enough", "that is when the sands are dry enough"] },
-    { id: "g15", answers: ["It's also an ideal location for seeing seals", "It is also an ideal location for seeing seals"] },
+    { id: "g13", answers: ["I'd like to get to know", "I would like to get to know"] },
+    { id: "g14", answers: ["the sands are dry enough"] },
+    { id: "g15", answers: ["It's also an ideal location", "It is also an ideal location"] },
     { id: "g16", answers: ["is there anything we should bring"] },
-    { id: "g17", answers: ["you'll get as much help as you need", "you will get as much help as you need"] },
-    { id: "g18", answers: ["That's probably too ambitious for one day", "That is probably too ambitious for one day"] },
+    { id: "g17", answers: ["you'll get as much help", "you will get as much help"] },
+    { id: "g18", answers: ["too ambitious for one day"] },
   ],
   lines: [
     { speaker: "PETER", segments: [{ type: "text", text: "Hello?" }] },
@@ -31,7 +31,7 @@ export const CAM17_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Oh hello. My name's Jan. " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " the Buckworth Conservation Group?" },
+        { type: "text", text: " to talk to about the Buckworth Conservation Group?" },
       ],
     },
     { speaker: "PETER", segments: [{ type: "text", text: "Yes, I'm Peter. I'm the secretary." }] },
@@ -48,14 +48,14 @@ export const CAM17_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "PETER",
       segments: [
-        { type: "text", text: "Of course. Well, " },
+        { type: "text", text: "Of course. Well, we have a mixture of " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
           text: ". One of the regular ones is trying to keep the beach free of litter. A few of us spend a couple of hours a month on it, and ",
         },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: ". I wish people would be more responsible and take it home with them." },
+        { type: "text", text: " there is to clear. I wish people would be more responsible and take it home with them." },
       ],
     },
     {
@@ -63,7 +63,7 @@ export const CAM17_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "I totally agree. " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ". Is it OK to take dogs?" },
+        { type: "text", text: " with that. Is it OK to take dogs?" },
       ],
     },
     {
@@ -82,7 +82,7 @@ export const CAM17_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g8" },
         {
           type: "text",
-          text: ". For example, because it's a popular place to visit, we spend a lot of time looking after the paths and ",
+          text: " there all year round. For example, because it's a popular place to visit, we spend a lot of time looking after the paths and making sure they're ",
         },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
@@ -107,10 +107,10 @@ export const CAM17_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Oh, and we're also running a project to identify the different species of butterflies that visit the reserve. ",
+          text: "Oh, and we're also running a project to identify the different species of butterflies that visit the reserve. You might be ",
         },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: "." },
+        { type: "text", text: " in that." },
       ],
     },
     {
@@ -145,7 +145,7 @@ export const CAM17_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Right. I presume you have guided walks? " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: ", as I'm new to the area." },
+        { type: "text", text: " the local countryside, as I'm new to the area." },
       ],
     },
     {
@@ -153,7 +153,7 @@ export const CAM17_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes, we do. The next walk is to Ruston Island, a week on Saturday. We'll be meeting in the car park at Dunsmore Beach at low tide – ",
+          text: "Yes, we do. The next walk is to Ruston Island, a week on Saturday. We'll be meeting in the car park at Dunsmore Beach at low tide – that's when ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " for us to walk to the island without getting wet." },
@@ -165,7 +165,7 @@ export const CAM17_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "The island's a great place to explore. It's quite small, and it's got a range of habitats. " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: " just off the coast, or even on the beach." },
+        { type: "text", text: " for seeing seals just off the coast, or even on the beach." },
       ],
     },
     {
@@ -209,13 +209,14 @@ export const CAM17_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Definitely. There'll be a couple of experts leading the session, and we keep the number of participants down, so " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " as you need." },
       ],
     },
     { speaker: "JAN", segments: [{ type: "text", text: "Excellent! I'd love to be able to make chairs." }] },
     {
       speaker: "PETER",
       segments: [
+        { type: "text", text: "That's probably " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",

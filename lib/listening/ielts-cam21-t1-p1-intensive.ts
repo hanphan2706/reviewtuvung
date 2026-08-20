@@ -10,18 +10,18 @@ export const CAM21_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g3", answers: ["who've never sailed before", "who have never sailed before"] },
     { id: "g4", answers: ["whether you enjoy it"] },
     { id: "g5", answers: ["if there are two of you"] },
-    { id: "g6", answers: ["And are there any other suitable courses"] },
+    { id: "g6", answers: ["any other suitable courses"] },
     { id: "g7", answers: ["These are two-day weekend courses"] },
-    { id: "g8", answers: ["a mix of theory and practical skills"] },
+    { id: "g8", answers: ["a mix of theory"] },
     { id: "g9", answers: ["which is obviously really important"] },
     { id: "g10", answers: ["It sounds like hard work"] },
-    { id: "g11", answers: ["You've got plenty of time to decide", "You have got plenty of time to decide"] },
+    { id: "g11", answers: ["plenty of time"] },
     { id: "g12", answers: ["everything's included", "everything is included"] },
     { id: "g13", answers: ["I'm pretty confident in the water", "I am pretty confident in the water"] },
-    { id: "g14", answers: ["The other thing I should tell you"] },
+    { id: "g14", answers: ["I should tell you"] },
     { id: "g15", answers: ["you might want to bring"] },
     { id: "g16", answers: ["I know absolutely nothing about"] },
-    { id: "g17", answers: ["They'll give you an idea of what to expect", "They will give you an idea of what to expect"] },
+    { id: "g17", answers: ["give you an idea"] },
     { id: "g18", answers: ["I'll be cycling to the club", "I will be cycling to the club"] },
   ],
   lines: [
@@ -88,7 +88,7 @@ export const CAM21_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Uh huh. " },
+        { type: "text", text: "Uh huh. And are there " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "?" },
       ],
@@ -107,7 +107,7 @@ export const CAM21_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "This is " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: ". So you learn about things like the weather, " },
+        { type: "text", text: " and practical skills. So you learn about things like the weather, " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -130,7 +130,11 @@ export const CAM21_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { speaker: "MAN", segments: [{ type: "text", text: "Well, I'm not sure about that yet." }] },
     {
       speaker: "WOMAN",
-      segments: [{ type: "gap", gapId: "g11" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "You've got " },
+        { type: "gap", gapId: "g11" },
+        { type: "text", text: " to decide." },
+      ],
     },
     { speaker: "MAN", segments: [{ type: "text", text: "And does the cost include everything?" }] },
     {
@@ -165,7 +169,7 @@ export const CAM21_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Great. " },
+        { type: "text", text: "Great. The other thing " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
@@ -215,8 +219,9 @@ export const CAM21_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "I recommend you watch some videos we use for training. They're available online. I can send you the link. ",
         },
+        { type: "text", text: "They'll " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " of what to expect." },
       ],
     },
     {

@@ -5,30 +5,30 @@ import type {
 
 export const CAM21_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["Would you have a few minutes to spare"] },
-    { id: "g2", answers: ["I guess that would be ok", "I guess that would be OK", "I guess that would be okay"] },
+    { id: "g1", answers: ["a few minutes to spare"] },
+    { id: "g2", answers: ["I guess that would be OK", "I guess that would be okay", "I guess that would be ok"] },
     { id: "g3", answers: ["Everybody seems so busy today"] },
     { id: "g4", answers: ["I don't have loads of time", "I do not have loads of time"] },
     { id: "g5", answers: ["It really won't take long", "It really will not take long"] },
-    { id: "g6", answers: ["Could I start by taking your name please"] },
-    { id: "g7", answers: ["We don't actually publish your name or details", "We do not actually publish your name or details"] },
-    { id: "g8", answers: ["how did you get into town today"] },
+    { id: "g6", answers: ["Could I start by"] },
+    { id: "g7", answers: ["don't actually publish", "do not actually publish"] },
+    { id: "g8", answers: ["get into town today"] },
     { id: "g9", answers: ["good luck with that"] },
-    { id: "g10", answers: ["I don't actually own one at the moment", "I do not actually own one at the moment"] },
-    { id: "g11", answers: ["I can't wait to get it back", "I cannot wait to get it back"] },
-    { id: "g12", answers: ["I hate it when my technology breaks down"] },
+    { id: "g10", answers: ["don't actually own one", "do not actually own one"] },
+    { id: "g11", answers: ["can't wait to get it back", "cannot wait to get it back"] },
+    { id: "g12", answers: ["I hate it when"] },
     { id: "g13", answers: ["The shops are less busy then"] },
-    { id: "g14", answers: ["I'd probably say it's the service you get wherever you go", "I would probably say it's the service you get wherever you go", "I'd probably say it is the service you get wherever you go", "I would probably say it is the service you get wherever you go"] },
-    { id: "g15", answers: ["you can get almost anything you want here"] },
+    { id: "g14", answers: ["I'd probably say", "I would probably say"] },
+    { id: "g15", answers: ["almost anything you want"] },
     { id: "g16", answers: ["It's a shame", "It is a shame"] },
-    { id: "g17", answers: ["It'd be nice to have a choice", "It would be nice to have a choice"] },
-    { id: "g18", answers: ["I can't see any advantage in having it there", "I cannot see any advantage in having it there"] },
+    { id: "g17", answers: ["have a choice"] },
+    { id: "g18", answers: ["can't see any advantage", "cannot see any advantage"] },
   ],
   lines: [
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Good morning. I'm doing a survey of shoppers in Broadbeach. " },
+        { type: "text", text: "Good morning. I'm doing a survey of shoppers in Broadbeach. Would you have " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " to answer some questions?" },
       ],
@@ -64,7 +64,7 @@ export const CAM21_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g5" },
         { type: "text", text: ". " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "?" },
+        { type: "text", text: " taking your name please?" },
       ],
     },
     {
@@ -82,11 +82,11 @@ export const CAM21_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Thank you. " },
+        { type: "text", text: "Thank you. We " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
-          text: ". It just makes it easier for me to identify people when I look at all the results at the end.",
+          text: " your name or details. It just makes it easier for me to identify people when I look at all the results at the end.",
         },
       ],
     },
@@ -94,7 +94,7 @@ export const CAM21_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "And can I ask, " },
+        { type: "text", text: "And can I ask, how did you " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "?" },
       ],
@@ -139,9 +139,9 @@ export const CAM21_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Thanks a lot. And now I'm on my way to buy a suit that I can wear to the interview. " },
+          text: "Thanks a lot. And now I'm on my way to buy a suit that I can wear to the interview. I " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "!" },
+        { type: "text", text: " at the moment!" },
       ],
     },
     {
@@ -153,7 +153,7 @@ export const CAM21_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yeah. Well, I've got to go and pick up my laptop. It broke a couple of days ago so I took it to the shop to get it fixed. They had to order a spare part, but apparently it's ready for collection now. " },
+          text: "Yeah. Well, I've got to go and pick up my laptop. It broke a couple of days ago so I took it to the shop to get it fixed. They had to order a spare part, but apparently it's ready for collection now. I " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -165,7 +165,7 @@ export const CAM21_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g12" },
         {
           type: "text",
-          text: ". ...One more thing, it's Saturday today – is that when you like to do your shopping?",
+          text: " my technology breaks down. ...One more thing, it's Saturday today – is that when you like to do your shopping?",
         },
       ],
     },
@@ -198,7 +198,7 @@ export const CAM21_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "MAN",
-      segments: [{ type: "gap", gapId: "g14" }, { type: "text", text: "." }],
+      segments: [{ type: "gap", gapId: "g14" }, { type: "text", text: " it's the service you get wherever you go." }],
     },
     {
       speaker: "WOMAN",
@@ -207,9 +207,9 @@ export const CAM21_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Oh " },
+        { type: "text", text: "Oh you can get " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: "." },
+        { type: "text", text: " here." },
       ],
     },
     {
@@ -238,7 +238,7 @@ export const CAM21_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well, I think we have enough clothing shops. But there's only one place that sells books at the moment. " },
+          text: "Well, I think we have enough clothing shops. But there's only one place that sells books at the moment. It'd be nice to " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: ", you know." },
       ],
@@ -278,9 +278,9 @@ export const CAM21_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Nah, not yet. " },
+        { type: "text", text: "Nah, not yet. I " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: " because the one in town is actually bigger." },
+        { type: "text", text: " in having it there because the one in town is actually bigger." },
       ],
     },
     {

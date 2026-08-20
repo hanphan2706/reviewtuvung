@@ -7,16 +7,13 @@ export const CAM17_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "Today we're going to look at another natural food product",
-        "Today we are going to look at another natural food product",
-      ],
+      answers: ["another natural food product"],
     },
     { id: "g2", answers: ["looks rather like clear honey"] },
-    { id: "g3", answers: ["that makes maple syrup a very natural product"] },
+    { id: "g3", answers: ["a very natural product"] },
     {
       id: "g4",
-      answers: ["Let's just talk a bit about the maple tree itself", "Let us just talk a bit about the maple tree itself"],
+      answers: ["the maple tree itself"],
     },
     {
       id: "g5",
@@ -27,31 +24,29 @@ export const CAM17_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         "they will grow without fertiliser",
       ],
     },
-    { id: "g6", answers: ["I'll talk more about that in a minute", "I will talk more about that in a minute"] },
-    { id: "g7", answers: ["There are only certain parts of the world that provide all these conditions"] },
-    { id: "g8", answers: ["has featured on the flag since 1964"] },
-    { id: "g9", answers: ["So how did maple syrup production begin"] },
+    { id: "g6", answers: ["in a minute"] },
+    { id: "g7", answers: ["all these conditions"] },
+    { id: "g8", answers: ["on the flag since 1964"] },
+    { id: "g9", answers: ["maple syrup production begin"] },
     {
       id: "g10",
-      answers: [
-        "they didn't have storage facilities in those days",
-        "they did not have storage facilities in those days",
-      ],
+      answers: ["storage facilities"],
     },
     { id: "g11", answers: ["it has changed very little overall"] },
-    { id: "g12", answers: ["The trees have to be well looked after"] },
-    { id: "g13", answers: ["This continual movement – up and down"] },
-    { id: "g14", answers: ["the workers take care not to cause any damage"] },
-    { id: "g15", answers: ["this process has to take place immediately"] },
+    { id: "g12", answers: ["well looked after"] },
+    { id: "g13", answers: ["This continual movement"] },
+    { id: "g14", answers: ["not to cause any damage"] },
+    { id: "g15", answers: ["take place immediately"] },
     { id: "g16", answers: ["the sap becomes thicker and denser"] },
     { id: "g17", answers: ["at just the right moment"] },
-    { id: "g18", answers: ["so you can get an idea of how much is needed"] },
+    { id: "g18", answers: ["how much is needed"] },
   ],
   lines: [
     { speaker: null, segments: [{ type: "text", text: "Hello everyone." }] },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Today we're going to look at " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " and that's maple syrup." },
       ],
@@ -64,7 +59,7 @@ export const CAM17_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g2" },
         {
           type: "text",
-          text: ", but it's not made by bees; it's produced from the plant fluid – or sap – inside the maple tree and " },
+          text: ", but it's not made by bees; it's produced from the plant fluid – or sap – inside the maple tree and that makes maple syrup " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -90,6 +85,7 @@ export const CAM17_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Let's just talk a bit about " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: ", which is where maple syrup comes from." },
       ],
@@ -107,7 +103,7 @@ export const CAM17_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "However, they'll only do this if another important criterion is fulfilled, which is that they must have full or partial sun exposure during the day and very cool nights – and " },
+          text: "However, they'll only do this if another important criterion is fulfilled, which is that they must have full or partial sun exposure during the day and very cool nights – and I'll talk more about that " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
       ],
@@ -115,6 +111,7 @@ export const CAM17_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "There are only certain parts of the world that provide " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -131,7 +128,7 @@ export const CAM17_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "In fact, Canada produces over two-thirds of the world's maple syrup, which is why the five-pointed maple leaf is a Canadian symbol and " },
+          text: "In fact, Canada produces over two-thirds of the world's maple syrup, which is why the five-pointed maple leaf is a Canadian symbol and has featured " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -139,6 +136,7 @@ export const CAM17_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "So how did " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "?" },
       ],
@@ -164,11 +162,11 @@ export const CAM17_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "As they were unable to keep the liquid for any length of time – " },
+        { type: "text", text: "As they were unable to keep the liquid for any length of time – they didn't have " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
-          text: " – they boiled the liquid by placing pieces of rock that had become scorching hot from the sun into the sap.",
+          text: " in those days – they boiled the liquid by placing pieces of rock that had become scorching hot from the sun into the sap.",
         },
       ],
     },
@@ -205,6 +203,7 @@ export const CAM17_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "The trees have to be " },
         { type: "gap", gapId: "g12" },
         {
           type: "text",
@@ -248,7 +247,7 @@ export const CAM17_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: null,
       segments: [
         { type: "gap", gapId: "g13" },
-        { type: "text", text: " – leads to the formation of the sap needed for maple syrup production." },
+        { type: "text", text: " – up and down – leads to the formation of the sap needed for maple syrup production." },
       ],
     },
     {
@@ -263,7 +262,7 @@ export const CAM17_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The trees can often take several taps, though " },
+        { type: "text", text: "The trees can often take several taps, though the workers take care " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " to the healthy growth of the tree itself." },
       ],
@@ -280,7 +279,7 @@ export const CAM17_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "It has to be boiled so that much of that water evaporates, and " },
+        { type: "text", text: "It has to be boiled so that much of that water evaporates, and this process has to " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: ", using what are called evaporators." },
       ],
@@ -332,7 +331,7 @@ export const CAM17_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "It takes 40 litres of sap to produce one litre of maple syrup " },
+        { type: "text", text: "It takes 40 litres of sap to produce one litre of maple syrup so you can get an idea of " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "!" },
       ],

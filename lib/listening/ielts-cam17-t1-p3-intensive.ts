@@ -5,38 +5,38 @@ import type {
 
 export const CAM17_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["we have to do a short summary of our work experience"] },
-    { id: "g2", answers: ["One problem was it was miles away and I don't drive", "One problem was it was miles away and I do not drive"] },
-    { id: "g3", answers: ["the farmer let me stay on the farm so I didn't have to travel", "the farmer let me stay on the farm so I did not have to travel"] },
-    { id: "g4", answers: ["I found mine through a friend of my mother's"] },
-    { id: "g5", answers: ["I really enjoyed helping out with them"] },
-    { id: "g6", answers: ["It was a great feeling to see the lamb stagger to its feet"] },
-    { id: "g7", answers: ["he talked me through what he was doing"] },
-    { id: "g8", answers: ["Oh, I heard their wool's really sought after", "Oh, I heard their wool is really sought after"] },
-    { id: "g9", answers: ["It's very hardwearing and they use it for carpets", "It is very hardwearing and they use it for carpets"] },
-    { id: "g10", answers: ["I was interested in the amount of supplements they add"] },
+    { id: "g1", answers: ["a short summary of our work"] },
+    { id: "g2", answers: ["miles away and I don't drive", "miles away and I do not drive"] },
+    { id: "g3", answers: ["let me stay on the farm"] },
+    { id: "g4", answers: ["through a friend of my mother's"] },
+    { id: "g5", answers: ["helping out with them"] },
+    { id: "g6", answers: ["stagger to its feet"] },
+    { id: "g7", answers: ["talked me through"] },
+    { id: "g8", answers: ["their wool's really sought after", "their wool is really sought after"] },
+    { id: "g9", answers: ["they use it for carpets"] },
+    { id: "g10", answers: ["the amount of supplements they add"] },
     { id: "g11", answers: ["And they're not cheap", "And they are not cheap"] },
-    { id: "g12", answers: ["the cheap and expensive ones are all basically the same"] },
+    { id: "g12", answers: ["are all basically the same"] },
     { id: "g13", answers: ["I made a really embarrassing mistake"] },
-    { id: "g14", answers: ["The farmer wasn't too happy with me", "The farmer was not too happy with me"] },
-    { id: "g15", answers: ["I'd read reports that the livestock's health is being affected", "I had read reports that the livestock's health is being affected"] },
-    { id: "g16", answers: ["Well, my heart sank when I saw that"] },
-    { id: "g17", answers: ["I think the module that really impressed me"] },
-    { id: "g18", answers: ["That's something I hadn't thought about before", "That is something I had not thought about before"] },
+    { id: "g14", answers: ["wasn't too happy with me", "was not too happy with me"] },
+    { id: "g15", answers: ["the livestock's health is being affected"] },
+    { id: "g16", answers: ["my heart sank when I saw"] },
+    { id: "g17", answers: ["the module that really impressed me"] },
+    { id: "g18", answers: ["I hadn't thought about before", "I had not thought about before"] },
   ],
   lines: [
     {
       speaker: "DIANA",
       segments: [
-        { type: "text", text: "So, Tim, " },
+        { type: "text", text: "So, Tim, we have to do " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " on a farm." },
+        { type: "text", text: " experience on a farm." },
       ],
     },
     {
       speaker: "TIM",
       segments: [
-        { type: "text", text: "Right. My farm was great, but arranging the work experience was hard. " },
+        { type: "text", text: "Right. My farm was great, but arranging the work experience was hard. One problem was it was " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: ". And also, I'd really wanted a placement for a month, but I could only get one for two weeks." },
       ],
@@ -44,15 +44,15 @@ export const CAM17_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "DIANA",
       segments: [
-        { type: "text", text: "I was lucky, " },
+        { type: "text", text: "I was lucky, the farmer " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: ". But finding the right sort of farm to apply to wasn't easy." },
+        { type: "text", text: " so I didn't have to travel. But finding the right sort of farm to apply to wasn't easy." },
       ],
     },
     {
       speaker: "TIM",
       segments: [
-        { type: "text", text: "No, they don't seem to have websites, do they. " },
+        { type: "text", text: "No, they don't seem to have websites, do they. I found mine " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: ", but it wasn't easy." },
       ],
@@ -61,7 +61,7 @@ export const CAM17_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TIM",
       segments: [
-        { type: "text", text: "My farm was mostly livestock, especially sheep. " },
+        { type: "text", text: "My farm was mostly livestock, especially sheep. I really enjoyed " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: ". I was up most of one night helping a sheep deliver a lamb …" },
       ],
@@ -72,7 +72,7 @@ export const CAM17_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "No, the farmer was there, and he told me what to do. It wasn't a straightforward birth, but I managed. ",
+          text: "No, the farmer was there, and he told me what to do. It wasn't a straightforward birth, but I managed. It was a great feeling to see the lamb ",
         },
         { type: "gap", gapId: "g6" },
         { type: "text", text: " and start feeding almost straightaway, and to know that it was OK." },
@@ -82,9 +82,9 @@ export const CAM17_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TIM",
       segments: [
-        { type: "text", text: "Then another time a lamb had broken its leg, and they got the vet in to set it, and " },
+        { type: "text", text: "Then another time a lamb had broken its leg, and they got the vet in to set it, and he " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: ". That was really useful." },
+        { type: "text", text: " what he was doing. That was really useful." },
       ],
     },
     {
@@ -104,12 +104,16 @@ export const CAM17_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "DIANA",
-      segments: [{ type: "gap", gapId: "g8" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "Oh, I heard " },
+        { type: "gap", gapId: "g8" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: "TIM",
       segments: [
-        { type: "text", text: "Yes. " },
+        { type: "text", text: "Yes. It's very hardwearing and " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -118,6 +122,7 @@ export const CAM17_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TIM",
       segments: [
+        { type: "text", text: "I was interested in " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: " to animals' feed nowadays. Like, even the chickens got extra vitamins and electrolytes in their feed." },
       ],
@@ -138,7 +143,7 @@ export const CAM17_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes, mine said the same. He said certain breeds of chickens might need more supplements than the others, but ",
+          text: "Yes, mine said the same. He said certain breeds of chickens might need more supplements than the others, but the cheap and expensive ones ",
         },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
@@ -153,7 +158,7 @@ export const CAM17_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g13" },
         {
           type: "text",
-          text: " when I was working in the milk shed. Some cows had been treated with antibiotics, so their milk wasn't suitable for human consumption, and it had to be put in a separate container. But I got mixed up, and I poured some milk from the wrong cow in with the milk for humans, so the whole lot had to be thrown away. ",
+          text: " when I was working in the milk shed. Some cows had been treated with antibiotics, so their milk wasn't suitable for human consumption, and it had to be put in a separate container. But I got mixed up, and I poured some milk from the wrong cow in with the milk for humans, so the whole lot had to be thrown away. The farmer ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
@@ -162,7 +167,7 @@ export const CAM17_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TIM",
       segments: [
-        { type: "text", text: "I asked my farmer how much he depended on the vet to deal with health problems. " },
+        { type: "text", text: "I asked my farmer how much he depended on the vet to deal with health problems. I'd read reports that " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
@@ -187,8 +192,9 @@ export const CAM17_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "DIANA",
       segments: [
+        { type: "text", text: "Well, " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: ", especially right at the beginning of the course. And I did struggle with it." },
+        { type: "text", text: " that, especially right at the beginning of the course. And I did struggle with it." },
       ],
     },
     {
@@ -213,7 +219,7 @@ export const CAM17_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "DIANA",
       segments: [
-        { type: "text", text: "Mm. " },
+        { type: "text", text: "Mm. I think " },
         { type: "gap", gapId: "g17" },
         {
           type: "text",
@@ -226,7 +232,7 @@ export const CAM17_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes, I thought they'd know a lot about ways of controlling and eradicating those diseases, but that's not the case at all. I loved the wildlife medication unit. Things like helping birds that have been caught in oil spills. ",
+          text: "Yes, I thought they'd know a lot about ways of controlling and eradicating those diseases, but that's not the case at all. I loved the wildlife medication unit. Things like helping birds that have been caught in oil spills. That's something ",
         },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },

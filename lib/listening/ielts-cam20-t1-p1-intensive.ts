@@ -7,18 +7,18 @@ export const CAM20_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I've been meaning to ask you", "I have been meaning to ask you"] },
     { id: "g2", answers: ["I'd definitely recommend that", "I would definitely recommend that"] },
-    { id: "g3", answers: ["that's not necessarily why I'd recommend it", "that is not necessarily why I'd recommend it", "that's not necessarily why I would recommend it"] },
+    { id: "g3", answers: ["that's not necessarily", "that is not necessarily"] },
     { id: "g4", answers: ["Is it really expensive"] },
-    { id: "g5", answers: ["for a special occasion I think it's fine", "for a special occasion I think it is fine"] },
+    { id: "g5", answers: ["for a special occasion"] },
     { id: "g6", answers: ["So that's definitely a possibility then", "So that is definitely a possibility then"] },
-    { id: "g7", answers: ["If you want somewhere a bit less formal"] },
+    { id: "g7", answers: ["a bit less formal"] },
     { id: "g8", answers: ["it's got a great reputation already", "it has got a great reputation already"] },
     { id: "g9", answers: ["I was really impressed"] },
     { id: "g10", answers: ["which always works really well"] },
     { id: "g11", answers: ["Worth thinking about"] },
     { id: "g12", answers: ["The only thing is that"] },
     { id: "g13", answers: ["I've just thought of another idea", "I have just thought of another idea"] },
-    { id: "g14", answers: ["I don't tend to pay much attention", "I do not tend to pay much attention"] },
+    { id: "g14", answers: ["pay much attention"] },
     { id: "g15", answers: ["That would be a memorable place"] },
     { id: "g16", answers: ["Obviously it's worth going there", "Obviously it is worth going there"] },
     { id: "g17", answers: ["That's quite reasonable", "That is quite reasonable"] },
@@ -69,7 +69,7 @@ export const CAM20_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g3" },
         {
           type: "text",
-          text: ". The food's amazing. If you like fish, it's probably the best restaurant in town for that. It's always really fresh and there are lots of interesting dishes to choose from. But all the food is good there.",
+          text: " why I'd recommend it. The food's amazing. If you like fish, it's probably the best restaurant in town for that. It's always really fresh and there are lots of interesting dishes to choose from. But all the food is good there.",
         },
       ],
     },
@@ -81,7 +81,7 @@ export const CAM20_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ". It's got a great atmosphere and before dinner you can go up on the roof and have a drink. It's really nice up there, but you need to book. It's very popular as the views are spectacular.",
+          text: " I think it's fine. It's got a great atmosphere and before dinner you can go up on the roof and have a drink. It's really nice up there, but you need to book. It's very popular as the views are spectacular.",
         },
       ],
     },
@@ -96,6 +96,7 @@ export const CAM20_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
+        { type: "text", text: "If you want somewhere " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: ", then you could try Paloma." },
       ],
@@ -181,6 +182,7 @@ export const CAM20_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
+        { type: "text", text: "I don't tend to " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " to that kind of thing. So where is it exactly?" },
       ],

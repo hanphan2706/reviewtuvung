@@ -5,24 +5,24 @@ import type {
 
 export const CAM21_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["full of the very best speakers, features and innovations"] },
-    { id: "g2", answers: ["Let me start by reading some feedback"] },
-    { id: "g3", answers: ["who's exhibited with us for the past two years", "who has exhibited with us for the past two years"] },
-    { id: "g4", answers: ["we made a lot of useful contacts"] },
-    { id: "g5", answers: ["due to popular request we used that again last year"] },
-    { id: "g6", answers: ["that also effectively raised our corporate profile"] },
-    { id: "g7", answers: ["which is clearly a key area for our company"] },
-    { id: "g8", answers: ["there's a range of special events for you to enjoy in the evening", "there is a range of special events for you to enjoy in the evening"] },
-    { id: "g9", answers: ["a unique chance to publicise your company", "a unique chance to publicize your company"] },
-    { id: "g10", answers: ["you can save a lot of money"] },
-    { id: "g11", answers: ["this is a benefit that really does have something for you all"] },
-    { id: "g12", answers: ["Rather to his surprise this became a bit of a sensation"] },
-    { id: "g13", answers: ["He'll be telling you how it all happened", "He will be telling you how it all happened"] },
-    { id: "g14", answers: ["even to be the first person under 18 to get a business bank account"] },
+    { id: "g1", answers: ["full of the very best"] },
+    { id: "g2", answers: ["Let me begin by"] },
+    { id: "g3", answers: ["for the last two years"] },
+    { id: "g4", answers: ["made a lot of useful contacts"] },
+    { id: "g5", answers: ["due to popular request"] },
+    { id: "g6", answers: ["raised our corporate profile"] },
+    { id: "g7", answers: ["a key area"] },
+    { id: "g8", answers: ["a range of special events"] },
+    { id: "g9", answers: ["a unique chance"] },
+    { id: "g10", answers: ["save a lot of money"] },
+    { id: "g11", answers: ["something for you all"] },
+    { id: "g12", answers: ["Rather to his surprise"] },
+    { id: "g13", answers: ["how it all happened"] },
+    { id: "g14", answers: ["the first person under 18"] },
     { id: "g15", answers: ["has gone from strength to strength"] },
     { id: "g16", answers: ["who's known for her down-to-earth attitude", "who is known for her down-to-earth attitude"] },
     { id: "g17", answers: ["has turned around this business"] },
-    { id: "g18", answers: ["whether you're starting out in business or at the top of your game", "whether you are starting out in business or at the top of your game"] },
+    { id: "g18", answers: ["at the top of your game"] },
   ],
   lines: [
     {
@@ -30,16 +30,16 @@ export const CAM21_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Hello and welcome to this podcast telling you about our annual business exhibition. This year, as always, it will be " },
+          text: "Hello and welcome to this podcast about our yearly business exhibition. This year, as always, it will be " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "." },
+        { type: "text", text: " speakers, features and innovations." },
       ],
     },
     {
       speaker: null,
       segments: [
         { type: "gap", gapId: "g2" },
-        { type: "text", text: " from James Craig, " },
+        { type: "text", text: " reading some comments from James Craig, who's exhibited with us " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -56,7 +56,7 @@ export const CAM21_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The first year we exhibited, we had a stand in the Business Village, where " },
+        { type: "text", text: "The first year we exhibited, we had a stand in the Business Village, where we " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -68,7 +68,7 @@ export const CAM21_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "We also used the Breakout area where people could sit down and relax, and try out our products, and " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "." },
+        { type: "text", text: " we used that again last year." },
       ],
     },
     {
@@ -76,7 +76,7 @@ export const CAM21_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Last year we also sponsored the innovative Business Connections Zone where people could leave their contact details on a board to contact other companies, and " },
+          text: "Last year we also sponsored the innovative Business Connections Zone where people could leave their contact details on a board to contact other companies, and that also effectively " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
       ],
@@ -86,9 +86,9 @@ export const CAM21_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "We're hoping that in the coming exhibition we'll also have a presence in the Digital Marketing centre, " },
+          text: "We're hoping that in the coming exhibition we'll also have a presence in the Digital Marketing centre, which is clearly " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: " for our company." },
       ],
     },
     {
@@ -98,9 +98,9 @@ export const CAM21_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The exhibition's open from 8am to 11pm and " },
+        { type: "text", text: "The exhibition's open from 8am to 11pm and there's " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: "." },
+        { type: "text", text: " for you to enjoy in the evening." },
       ],
     },
     {
@@ -110,14 +110,14 @@ export const CAM21_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: ", businesses who exhibit with us can claim discounts on a number of popular brands, including major high street fashion and jewellery outlets, as well as grocery chains.",
+          text: " to publicise your company, businesses who exhibit with us can claim discounts on a number of popular brands, including major high street fashion and jewellery outlets, as well as grocery chains.",
         },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Discounts available range from 3.5% up to an amazing 15%, so " },
+        { type: "text", text: "Discounts available range from 3.5% up to an amazing 15%, so you can " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
       ],
@@ -131,7 +131,7 @@ export const CAM21_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The scheme is available to every member of your organisation so " },
+        { type: "text", text: "The scheme is available to every member of your organisation so this is a benefit that really does have " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -152,7 +152,7 @@ export const CAM21_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "Jim Clowrie started off selling vegetables from a small plot, then opened a small café. " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: ", and in a remarkably short time he had opened an amazing 76 restaurants worldwide. " },
+        { type: "text", text: " this became a bit of a sensation, and in a remarkably short time he had opened an amazing 76 restaurants worldwide. He'll be telling you " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: ", and how it changed his life." },
       ],
@@ -162,9 +162,9 @@ export const CAM21_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "David France will be giving an inspirational talk about how as a business-minded teenager he managed to set up his own company, and " },
+          text: "David France will be giving an inspirational talk about how as a business-minded teenager he managed to set up his own company, and even to be " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: "." },
+        { type: "text", text: " to get a business bank account." },
       ],
     },
     {
@@ -220,7 +220,7 @@ export const CAM21_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Finally, Annie Craven is a consultant and coach who works with people to create lasting changes in their business and life. Her session will offer an interactive look at different obstacles in people's own lives, not just in business. She also looks at how you can overcome them, " },
+          text: "Finally, Annie Craven is a consultant and coach who works with people to create lasting changes in their business and life. Her session will offer an interactive look at different obstacles in people's own lives, not just in business. She also looks at how you can overcome them, whether you're starting out in business or " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

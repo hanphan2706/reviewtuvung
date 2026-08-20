@@ -8,89 +8,79 @@ export const CAM13_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       id: "g1",
       answers: [
-        "Today we're going to be looking at animals in urban environments",
-        "Today we are going to be looking at animals in urban environments",
+        "looking at animals",
       ],
     },
     {
       id: "g2",
       answers: [
-        "how they're affected by these environments",
-        "how they are affected by these environments",
+        "affected by these environments",
       ],
     },
-    { id: "g3", answers: ["urban environments represent huge upheavals"] },
-    { id: "g4", answers: ["the sorts of massive changes that usually happen over millions of years"] },
-    { id: "g5", answers: ["only a few species could adapt to this"] },
+    { id: "g3", answers: ["represent huge upheavals"] },
+    { id: "g4", answers: ["over millions of years"] },
+    { id: "g5", answers: ["only a few species could"] },
     {
       id: "g6",
       answers: [
-        "there've been various studies about how they manage to learn",
-        "there have been various studies about how they manage to learn",
+        "manage to learn",
       ],
     },
     {
       id: "g7",
       answers: [
-        "they're able to perch on ledges on the walls of city buildings",
-        "they are able to perch on ledges on the walls of city buildings",
+        "perch on ledges",
       ],
     },
-    { id: "g8", answers: ["these early immigrants were just the start of a more general movement of animals into cities"] },
+    { id: "g8", answers: ["more general movement"] },
     {
       id: "g9",
       answers: [
-        "we're not talking about gradual evolution here",
-        "we are not talking about gradual evolution here",
+        "gradual evolution here",
       ],
     },
-    { id: "g10", answers: ["Let me tell you about some of the studies that have been carried out in this area"] },
-    { id: "g11", answers: ["which is a very short time in evolutionary terms"] },
+    { id: "g10", answers: ["carried out in this area"] },
+    { id: "g11", answers: ["in evolutionary terms"] },
     {
       id: "g12",
       answers: [
-        "we can't be sure this means they're more intelligent",
-        "we cannot be sure this means they are more intelligent",
-        "we can't be sure this means they are more intelligent",
+        "more intelligent",
       ],
     },
     {
       id: "g13",
       answers: [
-        "the sizes of other parts of the body didn't change",
-        "the sizes of other parts of the body did not change",
+        "didn't change",
+        "did not change",
       ],
     },
     {
       id: "g14",
       answers: [
-        "she's been looking not at their anatomy",
-        "she has been looking not at their anatomy",
+        "not at their anatomy",
       ],
     },
     {
       id: "g15",
       answers: [
-        "they're prepared to face up to a lot of threats",
-        "they are prepared to face up to a lot of threats",
+        "face up to",
       ],
     },
     {
       id: "g16",
       answers: [
-        "that's quite sensible for a bird living in the city",
-        "that is quite sensible for a bird living in the city",
+        "quite sensible",
       ],
     },
     {
       id: "g17",
-      answers: ["It's a sensible-seeming adaptation", "It is a sensible-seeming adaptation"],
+      answers: ["sensible-seeming adaptation"],
     },
     {
       id: "g18",
       answers: [
-        "A rat that gets scared every time a subway train rolls past won't be very successful",
-        "A rat that gets scared every time a subway train rolls past will not be very successful",
+        "won't be very successful",
+        "will not be very successful",
       ],
     },
   ],
@@ -98,9 +88,9 @@ export const CAM13_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Hi. " },
+        { type: "text", text: "Hi. Today we're going to be " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " and I'm going to be telling you about some research on " },
+        { type: "text", text: " in urban environments and I'm going to be telling you about some research on how they're " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
       ],
@@ -108,9 +98,9 @@ export const CAM13_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Now, in evolutionary terms, " },
+        { type: "text", text: "Now, in evolutionary terms, urban environments " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: ", " },
+        { type: "text", text: ", the sorts of massive changes that usually happen " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -120,31 +110,7 @@ export const CAM13_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "And we used to think that " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: " new environment." },
-      ],
-    },
-    {
-      speaker: null,
-      segments: [
-        { type: "text", text: "One species which is well known as being highly adaptable is the crow, and " },
-        { type: "gap", gapId: "g6" },
-        { type: "text", text: " new skills." },
-      ],
-    },
-    {
-      speaker: null,
-      segments: [
-        { type: "text", text: "Another successful species is the pigeon, because " },
-        { type: "gap", gapId: "g7" },
-        { type: "text", text: ", just like they once perched on cliffs by the sea." },
-      ],
-    },
-    {
-      speaker: null,
-      segments: [
-        { type: "text", text: "But in fact, we're now finding that " },
-        { type: "gap", gapId: "g8" },
-        { type: "text", text: ", and of adaptation by these animals to city life." },
+        { type: "text", text: " adapt to this new environment." },
       ],
     },
     {
@@ -152,13 +118,47 @@ export const CAM13_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "And one thing that researchers are finding especially interesting is the speed with which they're doing this - ",
+          text: "One species which is well known as being highly adaptable is the crow, and there've been various studies about how they ",
+        },
+        { type: "gap", gapId: "g6" },
+        { type: "text", text: " new skills." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "Another successful species is the pigeon, because they're able to " },
+        { type: "gap", gapId: "g7" },
+        { type: "text", text: " on the walls of city buildings, just like they once perched on cliffs by the sea." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "But in fact, we're now finding that these early immigrants were just the start of a " },
+        { type: "gap", gapId: "g8" },
+        { type: "text", text: " of animals into cities, and of adaptation by these animals to city life." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        {
+          type: "text",
+          text: "And one thing that researchers are finding especially interesting is the speed with which they're doing this - we're not talking about ",
         },
         { type: "gap", gapId: "g9" },
         { type: "text", text: " - these animals are changing fast." },
       ],
     },
-    { speaker: null, segments: [{ type: "gap", gapId: "g10" }, { type: "text", text: "." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "Let me tell you about some of the studies that have been " },
+        { type: "gap", gapId: "g10" },
+        { type: "text", text: "." },
+      ],
+    },
     {
       speaker: null,
       segments: [
@@ -171,7 +171,7 @@ export const CAM13_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "And she looked at specimens that had been collected over the last hundred years, " },
+        { type: "text", text: "And she looked at specimens that had been collected over the last hundred years, which is a very short time " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -188,9 +188,9 @@ export const CAM13_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Now, " },
+        { type: "text", text: "Now, we can't be sure this means they're " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: ", but since " },
+        { type: "text", text: ", but since the sizes of other parts of the body " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: ", it does suggest that something cognitive was going on." },
       ],
@@ -216,7 +216,7 @@ export const CAM13_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "And " },
+        { type: "text", text: "And she's been looking " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " but at their behaviour." },
       ],
@@ -224,9 +224,9 @@ export const CAM13_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So as you might expect, she's found that the urban blackbirds tend to be quite bold - " },
+        { type: "text", text: "So as you might expect, she's found that the urban blackbirds tend to be quite bold - they're prepared to " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: " that would frighten away their country counterparts." },
+        { type: "text", text: " a lot of threats that would frighten away their country counterparts." },
       ],
     },
     {
@@ -241,9 +241,9 @@ export const CAM13_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "And if you think about it, " },
+        { type: "text", text: "And if you think about it, that's " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " for a bird living in the city." },
       ],
     },
     {
@@ -264,8 +264,22 @@ export const CAM13_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         },
       ],
     },
-    { speaker: null, segments: [{ type: "gap", gapId: "g17" }, { type: "text", text: "." }] },
-    { speaker: null, segments: [{ type: "gap", gapId: "g18" }, { type: "text", text: "." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "It's a " },
+        { type: "gap", gapId: "g17" },
+        { type: "text", text: "." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "A rat that gets scared every time a subway train rolls past " },
+        { type: "gap", gapId: "g18" },
+        { type: "text", text: "." },
+      ],
+    },
     {
       speaker: null,
       segments: [

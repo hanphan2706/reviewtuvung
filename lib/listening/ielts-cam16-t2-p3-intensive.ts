@@ -5,30 +5,30 @@ import type {
 
 export const CAM16_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["we have to do something on sleep and dreams"] },
-    { id: "g2", answers: ["why we tend to forget most of our dreams soon after we wake up"] },
+    { id: "g1", answers: ["something on sleep and dreams"] },
+    { id: "g2", answers: ["forget most of our dreams"] },
     { id: "g3", answers: ["I hadn't heard that idea before", "I had not heard that idea before"] },
-    { id: "g4", answers: ["What do you think about the idea"] },
-    { id: "g5", answers: ["It's a belief that you get all over the world", "It is a belief that you get all over the world"] },
+    { id: "g4", answers: ["What do you think"] },
+    { id: "g5", answers: ["all over the world"] },
     { id: "g6", answers: ["Something else I read about"] },
-    { id: "g7", answers: ["It just didn't fit in with my lifestyle", "It just did not fit in with my lifestyle"] },
-    { id: "g8", answers: ["I struggled a bit with the action plan too"] },
+    { id: "g7", answers: ["fit in with my lifestyle"] },
+    { id: "g8", answers: ["with the action plan too"] },
     { id: "g9", answers: ["that's where I really lost marks", "that is where I really lost marks"] },
-    { id: "g10", answers: ["So shall we plan what we have to do"] },
-    { id: "g11", answers: ["First, we have to decide on our research question"] },
-    { id: "g12", answers: ["Let's use people from a different department", "Let us use people from a different department"] },
+    { id: "g10", answers: ["what we have to do"] },
+    { id: "g11", answers: ["decide on our research question"] },
+    { id: "g12", answers: ["from a different department"] },
     { id: "g13", answers: ["they might have interesting dreams"] },
     { id: "g14", answers: ["that doesn't seem appropriate", "that does not seem appropriate"] },
-    { id: "g15", answers: ["it needs to be self-reporting I think"] },
+    { id: "g15", answers: ["self-reporting I think"] },
     { id: "g16", answers: ["while they're still half-asleep", "while they are still half-asleep"] },
-    { id: "g17", answers: ["Let's hope they don't have any bad dreams", "Let us hope they do not have any bad dreams"] },
+    { id: "g17", answers: ["don't have any bad dreams", "do not have any bad dreams"] },
     { id: "g18", answers: ["So that seems quite straightforward"] },
   ],
   lines: [
     {
       speaker: "SUSIE",
       segments: [
-        { type: "text", text: "So Luke, for our next psychology assignment " },
+        { type: "text", text: "So Luke, for our next psychology assignment we have to do " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
@@ -36,11 +36,11 @@ export const CAM16_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LUKE",
       segments: [
-        { type: "text", text: "Right. I've just read an article suggesting " },
+        { type: "text", text: "Right. I've just read an article suggesting why we tend to " },
         { type: "gap", gapId: "g2" },
         {
           type: "text",
-          text: ". I mean, most of my dreams aren't that interesting anyway, but what it said was that if we remembered everything, we might get mixed up about what actually happened and what we dreamed. So it's a sort of protection. ",
+          text: " soon after we wake up. I mean, most of my dreams aren't that interesting anyway, but what it said was that if we remembered everything, we might get mixed up about what actually happened and what we dreamed. So it's a sort of protection. ",
         },
         { type: "gap", gapId: "g3" },
         {
@@ -54,12 +54,16 @@ export const CAM16_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Me too. " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: " that our dreams may predict the future?" },
+        { type: "text", text: " about the idea that our dreams may predict the future?" },
       ],
     },
     {
       speaker: "LUKE",
-      segments: [{ type: "gap", gapId: "g5" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "It's a belief that you get " },
+        { type: "gap", gapId: "g5" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: "SUSIE",
@@ -85,7 +89,7 @@ export const CAM16_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LUKE",
       segments: [
-        { type: "text", text: "Well it's meant to make you more creative. I don't know why. But I gave it up after a week. " },
+        { type: "text", text: "Well it's meant to make you more creative. I don't know why. But I gave it up after a week. It just didn't " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -104,7 +108,7 @@ export const CAM16_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Right. Anyway, let's think about our assignment. Last time I had problems with the final stage, where we had to describe and justify how successful we thought we'd been. ",
+          text: "Right. Anyway, let's think about our assignment. Last time I had problems with the final stage, where we had to describe and justify how successful we thought we'd been. I struggled a bit ",
         },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
@@ -125,6 +129,7 @@ export const CAM16_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SUSIE",
       segments: [
+        { type: "text", text: "So shall we plan " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: " for this assignment?" },
       ],
@@ -133,6 +138,7 @@ export const CAM16_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SUSIE",
       segments: [
+        { type: "text", text: "First, we have to " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: ". So how about 'Is there a relationship between hours of sleep and number of dreams?'" },
       ],
@@ -145,6 +151,7 @@ export const CAM16_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LUKE",
       segments: [
+        { type: "text", text: "Let's use people " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: ". What about history?" },
       ],
@@ -169,7 +176,7 @@ export const CAM16_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LUKE",
       segments: [
-        { type: "text", text: "No, " },
+        { type: "text", text: "No, it needs to be " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: ". And we could ask them to answer questions online." },
       ],
@@ -205,7 +212,11 @@ export const CAM16_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "SUSIE",
-      segments: [{ type: "gap", gapId: "g17" }, { type: "text", text: "!" }],
+      segments: [
+        { type: "text", text: "Let's hope they " },
+        { type: "gap", gapId: "g17" },
+        { type: "text", text: "!" },
+      ],
     },
     { speaker: "LUKE", segments: [{ type: "text", text: "Yeah." }] },
     {

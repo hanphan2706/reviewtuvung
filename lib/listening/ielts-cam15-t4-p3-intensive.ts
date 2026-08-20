@@ -5,43 +5,39 @@ import type {
 
 export const CAM15_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["let's discuss what we've discovered so far", "let us discuss what we have discovered so far"] },
-    { id: "g2", answers: ["I haven't done much research yet", "I have not done much research yet"] },
-    { id: "g3", answers: ["I found an interesting article about icehouses"] },
-    { id: "g4", answers: ["built in a shady area or underground"] },
-    { id: "g5", answers: ["even though they were at quite a distance"] },
-    { id: "g6", answers: ["only the wealthy members of society could afford it"] },
-    { id: "g7", answers: ["I wouldn't be surprised", "I would not be surprised"] },
-    { id: "g8", answers: ["they were too complex for me to understand"] },
-    { id: "g9", answers: ["the gases in them are harmful for the environment"] },
-    { id: "g10", answers: ["fridges hardly ever break down"] },
-    { id: "g11", answers: ["we keep domestic fridges for 11 years on average"] },
-    { id: "g12", answers: ["manufacturers encourage people to spend more"] },
+    {
+      id: "g1",
+      answers: ["what we've discovered so far", "what we have discovered so far"],
+    },
+    { id: "g2", answers: ["I haven't done much research yet", "I have not done much research yet", "haven't done much research yet"] },
+    { id: "g3", answers: ["an interesting article about icehouses", "interesting article about icehouses"] },
+    { id: "g4", answers: ["in a shady area or underground", "shady area or underground"] },
+    { id: "g5", answers: ["at quite a distance", "quite a distance"] },
+    { id: "g6", answers: ["wealthy members of society"] },
+    { id: "g7", answers: ["I wouldn't be surprised", "I would not be surprised", "wouldn't be surprised"] },
+    { id: "g8", answers: ["too complex for me"] },
+    { id: "g9", answers: ["harmful for the environment"] },
+    { id: "g10", answers: ["hardly ever break down"] },
+    { id: "g11", answers: ["for 11 years on average", "11 years on average"] },
+    { id: "g12", answers: ["encourage people to spend more"] },
     {
       id: "g13",
-      answers: [
-        "decide who's going to do more research on them",
-        "decide who is going to do more research on them",
-      ],
+      answers: ["who's going to do more research", "who is going to do more research"],
     },
-    { id: "g14", answers: ["My mind just goes blank when I read anything about chemicals"] },
-    { id: "g15", answers: ["I find economics books pretty heavy going"] },
-    { id: "g16", answers: ["Don't forget trains, too", "Do not forget trains, too"] },
-    { id: "g17", answers: ["I hadn't thought of trains", "I had not thought of trains"] },
+    { id: "g14", answers: ["My mind just goes blank", "my mind just goes blank", "mind just goes blank"] },
+    { id: "g15", answers: ["pretty heavy going"] },
+    { id: "g16", answers: ["Don't forget trains, too", "Do not forget trains, too", "Don't forget trains too", "Do not forget trains too"] },
+    { id: "g17", answers: ["I hadn't thought of trains", "I had not thought of trains", "hadn't thought of trains"] },
     {
       id: "g18",
-      answers: [
-        "they're something everyone's familiar with",
-        "they are something everyone is familiar with",
-        "they're something everyone is familiar with",
-      ],
+      answers: ["everyone's familiar with", "everyone is familiar with"],
     },
   ],
   lines: [
     {
       speaker: "ANNIE",
       segments: [
-        { type: "text", text: "OK, Jack. Before we plan our presentation about refrigeration, " },
+        { type: "text", text: "OK, Jack. Before we plan our presentation about refrigeration, let's discuss " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
@@ -57,9 +53,9 @@ export const CAM15_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ANNIE",
       segments: [
-        { type: "text", text: "Nor me. But " },
+        { type: "text", text: "Nor me. But I found " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: ". I'd seen some 18th- and 19th-century ones here in the UK, so I knew they were often " },
+        { type: "text", text: ". I'd seen some 18th- and 19th-century ones here in the UK, so I knew they were often built " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
@@ -73,15 +69,15 @@ export const CAM15_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes, pits were dug in the ground, and snow was imported from the mountains – ",
+          text: "Yes, pits were dug in the ground, and snow was imported from the mountains – even though they were ",
         },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ". The snow was stored in the pits. Ice formed at the bottom of it. Both the ice and the snow were then sold. The ice cost more than the snow and my guess is that ",
+          text: ". The snow was stored in the pits. Ice formed at the bottom of it. Both the ice and the snow were then sold. The ice cost more than the snow and my guess is that only the ",
         },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " could afford it." },
       ],
     },
     {
@@ -90,10 +86,10 @@ export const CAM15_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g7" },
         {
           type: "text",
-          text: ". I also came across an article about modern domestic fridges. Several different technologies are used, but ",
+          text: ". I also came across an article about modern domestic fridges. Several different technologies are used, but they were ",
         },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: "." },
+        { type: "text", text: " to understand." },
       ],
     },
     {
@@ -103,7 +99,7 @@ export const CAM15_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JACK",
       segments: [
-        { type: "text", text: "You mean because " },
+        { type: "text", text: "You mean because the gases in them are " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "?" },
       ],
@@ -129,7 +125,7 @@ export const CAM15_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ANNIE",
       segments: [
-        { type: "text", text: "That sounds a lot, especially because " },
+        { type: "text", text: "That sounds a lot, especially because fridges " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
       ],
@@ -137,7 +133,7 @@ export const CAM15_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JACK",
       segments: [
-        { type: "text", text: "That's right. In this country " },
+        { type: "text", text: "That's right. In this country we keep domestic fridges " },
         { type: "gap", gapId: "g11" },
         {
           type: "text",
@@ -148,7 +144,7 @@ export const CAM15_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ANNIE",
       segments: [
-        { type: "text", text: "True. I suppose " },
+        { type: "text", text: "True. I suppose manufacturers " },
         { type: "gap", gapId: "g12" },
         {
           type: "text",
@@ -160,9 +156,9 @@ export const CAM15_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JACK",
       segments: [
-        { type: "text", text: "Right, let's make a list of topics to cover in our presentation, and " },
+        { type: "text", text: "Right, let's make a list of topics to cover in our presentation, and decide " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: ". Then later, we can get together and plan the next step." },
+        { type: "text", text: " on them. Then later, we can get together and plan the next step." },
       ],
     },
     {
@@ -200,7 +196,7 @@ export const CAM15_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Nor me. " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: "." },
+        { type: "text", text: " when I read anything about chemicals." },
       ],
     },
     {
@@ -234,7 +230,7 @@ export const CAM15_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ANNIE",
       segments: [
-        { type: "text", text: "Not particularly, to be honest. " },
+        { type: "text", text: "Not particularly, to be honest. I find economics books " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: ", as a rule." },
       ],
@@ -269,7 +265,7 @@ export const CAM15_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JACK",
       segments: [
-        { type: "text", text: "Shall we have a separate section on domestic fridges? After all, " },
+        { type: "text", text: "Shall we have a separate section on domestic fridges? After all, they're something " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

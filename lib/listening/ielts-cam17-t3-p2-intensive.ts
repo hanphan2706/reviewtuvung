@@ -6,38 +6,23 @@ import type {
 export const CAM17_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I hope you've had a chance", "I hope you have had a chance"] },
-    { id: "g2", answers: ["I'll go through the main details now", "I will go through the main details now"] },
+    { id: "g2", answers: ["the main details"] },
     { id: "g3", answers: ["find this service invaluable"] },
     { id: "g4", answers: ["safe in the knowledge that"] },
     { id: "g5", answers: ["we've come a long way", "we have come a long way"] },
-    { id: "g6", answers: ["We try to keep our costs as low as we can"] },
+    { id: "g6", answers: ["as low as we can"] },
     { id: "g7", answers: ["very good value for money"] },
     { id: "g8", answers: ["Please inform us of any allergies"] },
-    {
-      id: "g9",
-      answers: [
-        "we'll make sure they're offered a suitable alternative",
-        "we will make sure they are offered a suitable alternative",
-      ],
-    },
-    {
-      id: "g10",
-      answers: [
-        "we don't want them to feel as if they are still at school",
-        "we do not want them to feel as if they are still at school",
-      ],
-    },
-    {
-      id: "g11",
-      answers: ["I'm afraid we're unable to do this", "I am afraid we are unable to do this"],
-    },
-    { id: "g12", answers: ["So now let me tell you about"] },
+    { id: "g9", answers: ["a suitable alternative"] },
+    { id: "g10", answers: ["still at school"] },
+    { id: "g11", answers: ["unable to do this"] },
+    { id: "g12", answers: ["let me tell you about"] },
     { id: "g13", answers: ["We're very lucky that", "We are very lucky that"] },
     { id: "g14", answers: ["we'd be delighted", "we would be delighted"] },
     { id: "g15", answers: ["one of the most popular activities"] },
     { id: "g16", answers: ["we finally gave in"] },
     { id: "g17", answers: ["we'll see how this goes", "we will see how this goes"] },
-    { id: "g18", answers: ["they are better able to clean up after themselves"] },
+    { id: "g18", answers: ["clean up after themselves"] },
   ],
   lines: [
     { speaker: null, segments: [{ type: "text", text: "Good afternoon." }] },
@@ -65,10 +50,10 @@ export const CAM17_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I know that many of you are interested in using our childcare service when your child joins the school, and perhaps you already know something about it, but for those that don't, ",
+          text: "I know that many of you are interested in using our childcare service when your child joins the school, and perhaps you already know something about it, but for those that don't, I'll go through ",
         },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "." },
+        { type: "text", text: " now." },
       ],
     },
     {
@@ -113,6 +98,7 @@ export const CAM17_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "We try to keep our costs " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: " and we think we provide " },
         { type: "gap", gapId: "g7" },
@@ -141,7 +127,7 @@ export const CAM17_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: null,
       segments: [
         { type: "gap", gapId: "g8" },
-        { type: "text", text: " that your child might have and " },
+        { type: "text", text: " that your child might have and we'll make sure they're offered " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -151,7 +137,7 @@ export const CAM17_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "As you may know, the childcare service runs through the school holidays from 8 a.m. to 6 p.m. We offer a really varied and exciting programme to keep the children entertained – ",
+          text: "As you may know, the childcare service runs through the school holidays from 8 a.m. to 6 p.m. We offer a really varied and exciting programme to keep the children entertained – we don't want them to feel as if they are ",
         },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "!" },
@@ -171,7 +157,7 @@ export const CAM17_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "In the past, parents have asked if children over the age of 11 are allowed to come with their younger brothers and sisters – but ",
+          text: "In the past, parents have asked if children over the age of 11 are allowed to come with their younger brothers and sisters – but I'm afraid we're ",
         },
         { type: "gap", gapId: "g11" },
         { type: "text", text: " because of the type of insurance we have." },
@@ -180,6 +166,7 @@ export const CAM17_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "So now " },
         { type: "gap", gapId: "g12" },
         {
           type: "text",
@@ -244,7 +231,7 @@ export const CAM17_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Cooking is another popular activity. They make a different sort of cake, or pizza or bread each week. Although the younger children love doing it, we found that the mess was just too much, so we've decided to restrict this to the over 8s, as ",
+          text: "Cooking is another popular activity. They make a different sort of cake, or pizza or bread each week. Although the younger children love doing it, we found that the mess was just too much, so we've decided to restrict this to the over 8s, as they are better able to ",
         },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },

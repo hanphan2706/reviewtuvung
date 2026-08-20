@@ -6,23 +6,23 @@ import type {
 export const CAM21_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["there's no escaping the fact that", "there is no escaping the fact that"] },
-    { id: "g2", answers: ["even sitting up in bed can feel too much"] },
+    { id: "g2", answers: ["sitting up in bed"] },
     { id: "g3", answers: ["to aid their recovery"] },
-    { id: "g4", answers: ["despite a wealth of relevant studies supporting its potential in recovery"] },
-    { id: "g5", answers: ["so that they could highlight the potential for music in surgical recovery"] },
+    { id: "g4", answers: ["despite a wealth of"] },
+    { id: "g5", answers: ["highlight the potential"] },
     { id: "g6", answers: ["reported feeling happier and more satisfied"] },
-    { id: "g7", answers: ["the length of their stay was shorter"] },
-    { id: "g8", answers: ["a wide variety of music styles was evident"] },
-    { id: "g9", answers: ["it was quiet enough not to prevent them from being able to communicate"] },
-    { id: "g10", answers: ["These broadcast sound that is only audible to the person lying on them"] },
-    { id: "g11", answers: ["while others had several episodes a day"] },
+    { id: "g7", answers: ["the length of their stay"] },
+    { id: "g8", answers: ["a wide variety of"] },
+    { id: "g9", answers: ["being able to communicate"] },
+    { id: "g10", answers: ["only audible to"] },
+    { id: "g11", answers: ["several episodes a day"] },
     { id: "g12", answers: ["reported higher levels of dissatisfaction"] },
-    { id: "g13", answers: ["This feedback from all of the patients was then cross-checked against their medical notes"] },
+    { id: "g13", answers: ["cross-checked against"] },
     { id: "g14", answers: ["didn't make much difference", "did not make much difference"] },
-    { id: "g15", answers: ["it's not entirely clear how or why this is the case", "it is not entirely clear how or why this is the case"] },
-    { id: "g16", answers: ["something familiar and gave them something they could control"] },
-    { id: "g17", answers: ["there is now sufficient research to demonstrate"] },
-    { id: "g18", answers: ["I look forward to reading the results of their study"] },
+    { id: "g15", answers: ["not entirely clear"] },
+    { id: "g16", answers: ["something they could control"] },
+    { id: "g17", answers: ["sufficient research to demonstrate"] },
+    { id: "g18", answers: ["I look forward to"] },
   ],
   lines: [
     {
@@ -38,9 +38,9 @@ export const CAM21_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "They may have difficulty mobilising, and " },
+        { type: "text", text: "They may have difficulty mobilising, and even " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "." },
+        { type: "text", text: " can feel too much." },
       ],
     },
     {
@@ -60,15 +60,15 @@ export const CAM21_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "Currently, the main strategy for improving recovery is medication to control pain, and this can be administered to patients in the short, medium or longer term, depending on the extent of their surgery. But music is still not an everyday part of the post-surgical phase, " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "." },
+        { type: "text", text: " relevant studies supporting its potential in recovery." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Earlier this year, a research team set out to assess all the available evidence " },
+        { type: "text", text: "Earlier this year, a research team set out to assess all the available evidence so that they could " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "." },
+        { type: "text", text: " for music in surgical recovery." },
       ],
     },
     {
@@ -87,7 +87,7 @@ export const CAM21_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g6" },
         { type: "text", text: " in the post-operative phase, and " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: " than for patients who had not listened to any music." },
+        { type: "text", text: " was shorter than for patients who had not listened to any music." },
       ],
     },
     {
@@ -97,13 +97,13 @@ export const CAM21_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "The researchers also explored the patients' choice of music, and their findings showed that " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: ". However, a common factor was that the chosen music had a calming quality." },
+        { type: "text", text: " music styles was evident. However, a common factor was that the chosen music had a calming quality." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Some of the patients listened to music with headphones, but " },
+        { type: "text", text: "Some of the patients listened to music with headphones, but it was quiet enough not to prevent them from " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: " with nurses and other staff." },
       ],
@@ -113,9 +113,9 @@ export const CAM21_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "More often though, the mode of delivery was by what are known as music pillows. " },
+          text: "More often though, the mode of delivery was by what are known as music pillows. These broadcast sound that is " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " the person lying on them." },
       ],
     },
     {
@@ -123,7 +123,7 @@ export const CAM21_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The research involved testing music before, during or after operations or a combination. Some patients listened to the music just once a day, " },
+          text: "The research involved testing music before, during or after operations or a combination. Some patients listened to the music just once a day, while others had " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -141,8 +141,9 @@ export const CAM21_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "This feedback from all of the patients was then " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " their medical notes." },
       ],
     },
     {
@@ -169,9 +170,9 @@ export const CAM21_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "All the evidence suggests that music has a positive effect on post-operative patients, but " },
+          text: "All the evidence suggests that music has a positive effect on post-operative patients, but it's " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: "." },
+        { type: "text", text: " how or why this is the case." },
       ],
     },
     {
@@ -179,7 +180,7 @@ export const CAM21_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "A lot of people listen to music in daily life as a way to relax and forget their problems, but the researchers came to the conclusion that it worked on patients by distraction. I suppose it was " },
+          text: "A lot of people listen to music in daily life as a way to relax and forget their problems, but the researchers came to the conclusion that it worked on patients by distraction. I suppose it was something familiar and gave them " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "." },
       ],
@@ -187,7 +188,7 @@ export const CAM21_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The researchers say " },
+        { type: "text", text: "The researchers say there is now " },
         { type: "gap", gapId: "g17" },
         {
           type: "text",
@@ -202,7 +203,7 @@ export const CAM21_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "Surgical teams may prefer patients to listen to music before the procedure or as soon as they arrive back onto the ward. Clearly, there's more to learn about this area, and the team now plan to focus their next research on the most appropriate volume to play the music at. And " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: ". It will be interesting to see ...",
+        { type: "text", text: " reading the results of their study. It will be interesting to see ...",
         },
       ],
     },

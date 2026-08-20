@@ -5,24 +5,24 @@ import type {
 
 export const CAM20_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I seem to remember you had"] },
-    { id: "g2", answers: ["I've no idea where to take them", "I have no idea where to take them"] },
+    { id: "g1", answers: ["I seem to remember"] },
+    { id: "g2", answers: ["I've no idea", "I have no idea"] },
     { id: "g3", answers: ["There wouldn't be room", "There would not be room"] },
     { id: "g4", answers: ["so nice and central"] },
     { id: "g5", answers: ["Oh, that's not too bad", "Oh, that is not too bad"] },
-    { id: "g6", answers: ["Those bus tours are quite expensive"] },
-    { id: "g7", answers: ["It gives you a much better feel for the city"] },
-    { id: "g8", answers: ["The whole trip takes half a day"] },
+    { id: "g6", answers: ["quite expensive"] },
+    { id: "g7", answers: ["a much better feel"] },
+    { id: "g8", answers: ["takes half a day"] },
     { id: "g9", answers: ["That's a really good idea", "That is a really good idea"] },
-    { id: "g10", answers: ["And it won't be so crowded then", "And it will not be so crowded then"] },
+    { id: "g10", answers: ["won't be so crowded", "will not be so crowded"] },
     { id: "g11", answers: ["That's a shame", "That is a shame"] },
-    { id: "g12", answers: ["I'll mention that to my cousin", "I will mention that to my cousin"] },
-    { id: "g13", answers: ["there'll be loads of choices for the kids too", "there will be loads of choices for the kids too"] },
-    { id: "g14", answers: ["It's all going to need careful planning", "It is all going to need careful planning"] },
-    { id: "g15", answers: ["No need to spend a fortune"] },
+    { id: "g12", answers: ["I'll mention that", "I will mention that"] },
+    { id: "g13", answers: ["loads of choices"] },
+    { id: "g14", answers: ["need careful planning"] },
+    { id: "g15", answers: ["spend a fortune"] },
     { id: "g16", answers: ["It's always a family-friendly event", "It is always a family-friendly event"] },
-    { id: "g17", answers: ["I've been meaning to do that for ages", "I have been meaning to do that for ages"] },
-    { id: "g18", answers: ["it's really worth the effort", "it is really worth the effort"] },
+    { id: "g17", answers: ["I've been meaning to", "I have been meaning to"] },
+    { id: "g18", answers: ["worth the effort"] },
   ],
   lines: [
     {
@@ -30,7 +30,7 @@ export const CAM20_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Sandra, " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " some family visitors staying with you recently." },
+        { type: "text", text: " you had some family visitors staying with you recently." },
       ],
     },
     {
@@ -49,7 +49,7 @@ export const CAM20_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "OK, good. Well, I wanted to ask for your advice. I got my cousin and her family visiting next month and as I don't have kids, " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "." },
+        { type: "text", text: " where to take them." },
       ],
     },
     {
@@ -114,12 +114,13 @@ export const CAM20_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
+        { type: "text", text: "Those bus tours are " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ". I think it's better to do a walking tour. " },
+        { type: "text", text: ". I think it's better to do a walking tour. It gives you " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
-          text: ". There's one that starts from Colton Square. It takes a couple of hours and doesn't cost that much.",
+          text: " for the city. There's one that starts from Colton Square. It takes a couple of hours and doesn't cost that much.",
         },
       ],
     },
@@ -129,7 +130,7 @@ export const CAM20_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "If the weather's nice, one thing you could do is visit the old fort. You could get there by boat. " },
+          text: "If the weather's nice, one thing you could do is visit the old fort. You could get there by boat. The whole trip " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -160,10 +161,11 @@ export const CAM20_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
+        { type: "text", text: "And it " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
-          text: ". Saturdays are terrible. I took my kids to the exhibition on old computers there and it was far too crowded. I wanted to go back but it's finished now.",
+          text: " then. Saturdays are terrible. I took my kids to the exhibition on old computers there and it was far too crowded. I wanted to go back but it's finished now.",
         },
       ],
     },
@@ -188,7 +190,7 @@ export const CAM20_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "OK, well, " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: "." },
+        { type: "text", text: " to my cousin." },
       ],
     },
     {
@@ -207,18 +209,18 @@ export const CAM20_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Definitely, and " },
+        { type: "text", text: "Definitely, and there'll be " },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
-          text: ". You need to get there quite early, though. At the weekend, most of the stores stop serving lunch at 2.30.",
+          text: " for the kids too. You need to get there quite early, though. At the weekend, most of the stores stop serving lunch at 2.30.",
         },
       ],
     },
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Good point. " },
+        { type: "text", text: "Good point. It's all going to " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
@@ -239,7 +241,7 @@ export const CAM20_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Yeah. There are lots of things you can do for free as well. " },
+        { type: "text", text: "Yeah. There are lots of things you can do for free as well. No need to " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
       ],
@@ -278,13 +280,13 @@ export const CAM20_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Oh yeah, " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: ". I've heard the view's amazing." },
+        { type: "text", text: " do that for ages. I've heard the view's amazing." },
       ],
     },
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Yeah, " },
+        { type: "text", text: "Yeah, it's really " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

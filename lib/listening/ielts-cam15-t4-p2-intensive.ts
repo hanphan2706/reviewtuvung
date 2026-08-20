@@ -7,39 +7,33 @@ export const CAM15_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "I'd like to bring you up to date on some of the changes",
-        "I would like to bring you up to date on some of the changes",
-      ],
+      answers: ["bring you up to date", "bring you up-to-date"],
     },
-    { id: "g2", answers: ["let's begin with a general overview", "let us begin with a general overview"] },
-    { id: "g3", answers: ["it still has two gates, north and south, and a lake in the middle"] },
-    { id: "g4", answers: ["The café continues to serve an assortment of drinks and snacks"] },
+    { id: "g2", answers: ["a general overview", "general overview"] },
+    { id: "g3", answers: ["two gates, north and south"] },
+    { id: "g4", answers: ["an assortment of drinks and snacks", "assortment of drinks and snacks"] },
     {
       id: "g5",
-      answers: ["We're hoping to change the location of the toilets", "We are hoping to change the location of the toilets"],
+      answers: ["change the location of the toilets"],
     },
-    { id: "g6", answers: ["they're a bit out of the way at present", "they are a bit out of the way at present"] },
-    { id: "g7", answers: ["The formal gardens have been replanted"] },
-    { id: "g8", answers: ["which is already proving very popular"] },
+    { id: "g6", answers: ["a bit out of the way", "out of the way"] },
+    { id: "g7", answers: ["have been replanted", "been replanted"] },
+    { id: "g8", answers: ["already proving very popular", "proving very popular"] },
     {
       id: "g9",
-      answers: [
-        "You have to look for it as it's a bit hidden in the trees",
-        "You have to look for it as it is a bit hidden in the trees",
-      ],
+      answers: ["a bit hidden in the trees", "hidden in the trees"],
     },
-    { id: "g10", answers: ["It's in constant use during the evenings and holidays", "It is in constant use during the evenings and holidays"] },
-    { id: "g11", answers: ["to attract bees and butterflies"] },
-    { id: "g12", answers: ["we had nowhere for children to let off steam"] },
-    { id: "g13", answers: ["It's open year-round", "It is open year-round"] },
+    { id: "g10", answers: ["in constant use", "constant use"] },
+    { id: "g11", answers: ["to attract bees and butterflies", "attract bees and butterflies"] },
+    { id: "g12", answers: ["let off steam"] },
+    { id: "g13", answers: ["It's open year-round", "It is open year-round", "open year-round", "open year round"] },
     { id: "g14", answers: ["irrespective of their age"] },
-    { id: "g15", answers: ["There are plenty of seats where parents can relax"] },
-    { id: "g16", answers: ["Over £80,000 was spent on replacing the glass walls"] },
-    { id: "g17", answers: ["too expensive to replace up to now"] },
+    { id: "g15", answers: ["plenty of seats"] },
+    { id: "g16", answers: ["replacing the glass walls"] },
+    { id: "g17", answers: ["too expensive to replace"] },
     {
       id: "g18",
-      answers: ["We're grateful to all those who helped us", "We are grateful to all those who helped us"],
+      answers: ["grateful to all those"],
     },
   ],
   lines: [
@@ -48,16 +42,16 @@ export const CAM15_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "As chair of the town council subcommittee on park facilities, ",
+          text: "As chair of the town council subcommittee on park facilities, I'd like to ",
         },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " that have been made recently to Croft Valley Park." },
+        { type: "text", text: " on some of the changes that have been made recently to Croft Valley Park." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So if you could just take a look at the map I handed out, " },
+        { type: "text", text: "So if you could just take a look at the map I handed out, let's begin with " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
       ],
@@ -65,14 +59,15 @@ export const CAM15_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So the basic arrangement of the park hasn't changed – " },
+        { type: "text", text: "So the basic arrangement of the park hasn't changed – it still has " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "." },
+        { type: "text", text: ", and a lake in the middle." },
       ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "The café continues to serve " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
@@ -83,15 +78,17 @@ export const CAM15_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "We're hoping to " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: ", and bring them nearer to the centre of the park as " },
+        { type: "text", text: ", and bring them nearer to the centre of the park as they're " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ", near the adventure playground, in the corner of your map." },
+        { type: "text", text: " at present, near the adventure playground, in the corner of your map." },
       ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "The formal gardens " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: " and should be at their best in a month or two." },
       ],
@@ -108,7 +105,7 @@ export const CAM15_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "We have a new outdoor gym for adults and children, " },
+        { type: "text", text: "We have a new outdoor gym for adults and children, which is " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -118,7 +115,7 @@ export const CAM15_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "It's by the glass houses, just to the right of the path from the south gate. ",
+          text: "It's by the glass houses, just to the right of the path from the south gate. You have to look for it as it's ",
         },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
@@ -127,9 +124,9 @@ export const CAM15_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "One very successful introduction has been our skateboard ramp. " },
+        { type: "text", text: "One very successful introduction has been our skateboard ramp. It's " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " during the evenings and holidays." },
       ],
     },
     {
@@ -170,7 +167,7 @@ export const CAM15_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "One of our most exciting developments has been the adventure playground. We were aware that " },
+        { type: "text", text: "One of our most exciting developments has been the adventure playground. We were aware that we had nowhere for children to " },
         { type: "gap", gapId: "g12" },
         {
           type: "text",
@@ -199,8 +196,9 @@ export const CAM15_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "There are " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: " and keep an eye on their children at the same time." },
+        { type: "text", text: " where parents can relax and keep an eye on their children at the same time." },
       ],
     },
     {
@@ -215,13 +213,14 @@ export const CAM15_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Over £80,000 was spent on " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
           text: " and the metal supports, as well as the plants that had been destroyed, although unfortunately the collection of tropical palm trees has proved ",
         },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " up to now." },
       ],
     },
     {
@@ -236,8 +235,9 @@ export const CAM15_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "We're " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: " by contributing their time and money to this achievement." },
+        { type: "text", text: " who helped us by contributing their time and money to this achievement." },
       ],
     },
   ],

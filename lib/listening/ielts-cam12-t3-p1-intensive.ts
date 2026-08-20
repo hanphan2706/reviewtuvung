@@ -5,76 +5,42 @@ import type {
 
 export const CAM12_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["have been meaning to join for a while"] },
+    { id: "g1", answers: ["have been meaning to"] },
     {
       id: "g2",
       answers: ["It doesn't cost anything", "It does not cost anything"],
     },
     {
       id: "g3",
-      answers: [
-        "It's not just a place where you borrow books",
-        "It is not just a place where you borrow books",
-      ],
+      answers: ["It's not just a place", "It is not just a place"],
     },
-    { id: "g4", answers: ["Wish I had that amount of time to spend"] },
-    { id: "g5", answers: ["you must be pretty busy at present"] },
-    {
-      id: "g6",
-      answers: [
-        "we're hoping to get away this summer",
-        "we are hoping to get away this summer",
-      ],
-    },
-    {
-      id: "g7",
-      answers: [
-        "You can't always find that sort of thing on the internet",
-        "You cannot always find that sort of thing on the internet",
-      ],
-    },
-    { id: "g8", answers: ["It was a really nice quiet room"] },
+    { id: "g4", answers: ["Wish I had"] },
+    { id: "g5", answers: ["pretty busy at present"] },
+    { id: "g6", answers: ["hoping to get away"] },
+    { id: "g7", answers: ["that sort of thing"] },
+    { id: "g8", answers: ["a really nice quiet room"] },
     {
       id: "g9",
-      answers: [
-        "It's hard to find anywhere quiet at home sometimes",
-        "It is hard to find anywhere quiet at home sometimes",
-      ],
+      answers: ["It's hard to find", "It is hard to find"],
     },
-    { id: "g10", answers: ["they might be a bit young for that"] },
-    {
-      id: "g11",
-      answers: [
-        "That doesn't begin until after the end of term",
-        "That does not begin until after the end of term",
-      ],
-    },
+    { id: "g10", answers: ["a bit young for that"] },
+    { id: "g11", answers: ["after the end of term"] },
     { id: "g12", answers: ["instead of getting bored"] },
     {
       id: "g13",
       answers: ["We're not free on Friday", "We are not free on Friday"],
     },
-    { id: "g14", answers: ["who are wanting to get up to speed with computer technology"] },
+    { id: "g14", answers: ["get up to speed"] },
     {
       id: "g15",
-      answers: [
-        "which you wouldn't expect from a library",
-        "which you would not expect from a library",
-      ],
+      answers: ["you wouldn't expect", "you would not expect"],
     },
     {
       id: "g16",
       answers: ["so you wouldn't qualify", "so you would not qualify"],
     },
     { id: "g17", answers: ["which is really useful"] },
-    {
-      id: "g18",
-      answers: [
-        "I'll bring the children round at the weekend and we'll join",
-        "I will bring the children round at the weekend and we will join",
-        "I'll bring the children round at the weekend and we will join",
-      ],
-    },
+    { id: "g18", answers: ["bring the children round"] },
   ],
   lines: [
     { speaker: "SUSIE", segments: [{ type: "text", text: "Hello?" }] },
@@ -101,7 +67,7 @@ export const CAM12_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Actually Carol and I " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "." },
+        { type: "text", text: " join for a while." },
       ],
     },
     {
@@ -113,7 +79,7 @@ export const CAM12_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g3" },
         {
           type: "text",
-          text: ". For instance, there's an area with comfortable seats where you can sit and read the magazines they have there. Some people spend the whole morning there.",
+          text: " where you borrow books. For instance, there's an area with comfortable seats where you can sit and read the magazines they have there. Some people spend the whole morning there.",
         },
       ],
     },
@@ -122,13 +88,13 @@ export const CAM12_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Mmm. " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "!" },
+        { type: "text", text: " that amount of time to spend!" },
       ],
     },
     {
       speaker: "SUSIE",
       segments: [
-        { type: "text", text: "Yes, " },
+        { type: "text", text: "Yes, you must be " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: ", with the children and everything?" },
       ],
@@ -136,9 +102,9 @@ export const CAM12_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "PAUL",
       segments: [
-        { type: "text", text: "We are, yes. But " },
+        { type: "text", text: "We are, yes. But we're " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ". We're thinking of going to Greece." },
+        { type: "text", text: " this summer. We're thinking of going to Greece." },
       ],
     },
     {
@@ -171,11 +137,11 @@ export const CAM12_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "PAUL",
       segments: [
-        { type: "text", text: "Right. I'll tell her. " },
+        { type: "text", text: "Right. I'll tell her. You can't always find " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
-          text: ". Now in the old library there used to be a separate room with reference books. ",
+          text: " on the internet. Now in the old library there used to be a separate room with reference books. It was ",
         },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
@@ -195,7 +161,7 @@ export const CAM12_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "I might use that. " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: "." },
+        { type: "text", text: " anywhere quiet at home sometimes." },
       ],
     },
     {
@@ -203,7 +169,7 @@ export const CAM12_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I can't remember how old your son and daughter are … we've introduced a special section of fiction written specially for teenagers, but ",
+          text: "I can't remember how old your son and daughter are … we've introduced a special section of fiction written specially for teenagers, but they might be ",
         },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "?" },
@@ -228,7 +194,7 @@ export const CAM12_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SUSIE",
       segments: [
-        { type: "text", text: "And we have a competition for children called Reading Challenge. " },
+        { type: "text", text: "And we have a competition for children called Reading Challenge. That doesn't begin until " },
         { type: "gap", gapId: "g11" },
         {
           type: "text",
@@ -266,12 +232,12 @@ export const CAM12_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Now this probably isn't for you, but we do have IT support available for members. We get quite a few older people coming along ",
+          text: "Now this probably isn't for you, but we do have IT support available for members. We get quite a few older people coming along who are wanting to ",
         },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
-          text: ". It's on Tuesday mornings - they don't need to make an appointment or anything, they just turn up.",
+          text: " with computer technology. It's on Tuesday mornings - they don't need to make an appointment or anything, they just turn up.",
         },
       ],
     },
@@ -282,11 +248,11 @@ export const CAM12_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SUSIE",
       segments: [
-        { type: "text", text: "OK. And there's another service " },
+        { type: "text", text: "OK. And there's another service which " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
-          text: ", which is a free medical check-up. The hospital arranges for someone to come along and measure the level of sugar in your blood, and they check cholesterol levels at the same time.",
+          text: " from a library, which is a free medical check-up. The hospital arranges for someone to come along and measure the level of sugar in your blood, and they check cholesterol levels at the same time.",
         },
       ],
     },
@@ -317,9 +283,9 @@ export const CAM12_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "PAUL",
       segments: [
-        { type: "text", text: "Yeah. Well, " },
+        { type: "text", text: "Yeah. Well, I'll " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: ". Oh, one more thing - I'll be bringing the car, is there parking available?" },
+        { type: "text", text: " at the weekend and we'll join. Oh, one more thing - I'll be bringing the car, is there parking available?" },
       ],
     },
     {

@@ -5,29 +5,33 @@ import type {
 
 export const CAM17_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["Labyrinths have existed for well over 4,000 years"] },
-    { id: "g2", answers: ["what they all have in common is a winding spiral path"] },
-    { id: "g3", answers: ["it's not possible to get lost as there is only one single path", "it is not possible to get lost as there is only one single path"] },
-    { id: "g4", answers: ["is often used as a synonym for a maze"] },
+    { id: "g1", answers: ["for well over 4,000 years"] },
+    { id: "g2", answers: ["a winding spiral path"] },
+    { id: "g3", answers: ["only one single path"] },
+    { id: "g4", answers: ["as a synonym for a maze"] },
     { id: "g5", answers: ["with an intricate network of paths"] },
-    { id: "g6", answers: ["it's not possible to see over them", "it is not possible to see over them"] },
-    { id: "g7", answers: ["This is where the word 'amazing' comes from", "This is where the word amazing comes from"] },
+    { id: "g6", answers: ["not possible to see over them"] },
+    { id: "g7", answers: ["where the word 'amazing' comes from", "where the word amazing comes from"] },
     { id: "g8", answers: ["have a very different function"] },
-    { id: "g9", answers: ["this is not how they were seen in the past"] },
+    { id: "g9", answers: ["seen in the past"] },
     { id: "g10", answers: ["as a metaphor for life's journey", "as a metaphor for life’s journey"] },
-    { id: "g11", answers: ["helped to give people a sense of direction"] },
+    { id: "g11", answers: ["a sense of direction"] },
     { id: "g12", answers: ["date from the late Bronze Age"] },
     { id: "g13", answers: ["that depicted their own cosmology"] },
     { id: "g14", answers: ["throughout the Roman Empire"] },
-    { id: "g15", answers: ["The origin of these walking labyrinths remains unclear"] },
+    { id: "g15", answers: ["walking labyrinths remains unclear"] },
     { id: "g16", answers: ["have experienced something of a revival"] },
     { id: "g17", answers: ["promotes healing and mindfulness"] },
-    { id: "g18", answers: ["The science behind the theory is a little sketchy"] },
+    { id: "g18", answers: ["a little sketchy"] },
   ],
   lines: [
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g1" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "Labyrinths have existed " },
+        { type: "gap", gapId: "g1" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -41,7 +45,7 @@ export const CAM17_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "There are various designs of labyrinth but " },
+        { type: "text", text: "There are various designs of labyrinth but what they all have in common is " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: " which leads to a central area." },
       ],
@@ -51,7 +55,7 @@ export const CAM17_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "There is one starting point at the entrance and the goal is to reach the central area. Finding your way through a labyrinth involves many twists and turns, but ",
+          text: "There is one starting point at the entrance and the goal is to reach the central area. Finding your way through a labyrinth involves many twists and turns, but it's not possible to get lost as there is ",
         },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
@@ -60,7 +64,7 @@ export const CAM17_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "In modern times, the word labyrinth has taken on a different meaning and " },
+        { type: "text", text: "In modern times, the word labyrinth has taken on a different meaning and is often used " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -78,7 +82,7 @@ export const CAM17_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Mazes became fashionable in the 15th and 16th centuries in Europe, and can still be found in the gardens of great houses and palaces. The paths are usually surrounded by thick, high hedges so that ",
+          text: "Mazes became fashionable in the 15th and 16th centuries in Europe, and can still be found in the gardens of great houses and palaces. The paths are usually surrounded by thick, high hedges so that it's ",
         },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
@@ -98,7 +102,7 @@ export const CAM17_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The word 'maze' is believed to come from a Scandinavian word for a state of confusion. ",
+          text: "The word 'maze' is believed to come from a Scandinavian word for a state of confusion. This is ",
         },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
@@ -115,7 +119,7 @@ export const CAM17_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Although people now often refer to things they find complicated as labyrinths, " },
+        { type: "text", text: "Although people now often refer to things they find complicated as labyrinths, this is not how they were " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: ". The winding spiral of the labyrinth has been used for centuries " },
         { type: "gap", gapId: "g10" },
@@ -125,7 +129,7 @@ export const CAM17_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "It served as a spiritual reminder that there is purpose and meaning to our lives and " },
+        { type: "text", text: "It served as a spiritual reminder that there is purpose and meaning to our lives and helped to give people " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -174,7 +178,7 @@ export const CAM17_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "In Northern Europe, there were actual physical labyrinths designed for walking on. These were cut into the turf or grass, usually in a circular pattern. ",
+          text: "In Northern Europe, there were actual physical labyrinths designed for walking on. These were cut into the turf or grass, usually in a circular pattern. The origin of these ",
         },
         { type: "gap", gapId: "g15" },
         {
@@ -234,7 +238,7 @@ export const CAM17_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "In some hospitals, patients who can't walk can have a paper 'finger labyrinth' brought to their bed. ",
+          text: "In some hospitals, patients who can't walk can have a paper 'finger labyrinth' brought to their bed. The science behind the theory is ",
         },
         { type: "gap", gapId: "g18" },
         {

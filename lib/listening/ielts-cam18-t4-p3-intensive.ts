@@ -18,8 +18,8 @@ export const CAM18_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g11", answers: ["What did you make of"] },
     { id: "g12", answers: ["She didn't seem satisfied"] },
     { id: "g13", answers: ["Anya was such a star"] },
-    { id: "g14", answers: ["I'm sure it was a positive learning experience"] },
-    { id: "g15", answers: ["I think it would have taken me ages"] },
+    { id: "g14", answers: ["it was a positive learning experience"] },
+    { id: "g15", answers: ["it would have taken me ages"] },
     { id: "g16", answers: ["It's strange that", "It is strange that"] },
     { id: "g17", answers: ["That's true", "That is true"] },
     { id: "g18", answers: ["I can see using origami is"] },
@@ -195,7 +195,7 @@ export const CAM18_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SEB",
       segments: [
-        { type: "text", text: "Yeah. " },
+        { type: "text", text: "Yeah. I'm sure " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " for her." },
       ],
@@ -213,7 +213,7 @@ export const CAM18_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SEB",
       segments: [
-        { type: "text", text: "Right. " },
+        { type: "text", text: "Right. I think " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",

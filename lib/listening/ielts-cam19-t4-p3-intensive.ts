@@ -6,23 +6,23 @@ import type {
 export const CAM19_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["you'll be off to Denmark soon", "you will be off to Denmark soon"] },
-    { id: "g2", answers: ["I've just started packing up all my books", "I have just started packing up all my books"] },
+    { id: "g2", answers: ["packing up all my books"] },
     { id: "g3", answers: ["I hope they don't get spoilt", "I hope they do not get spoilt"] },
-    { id: "g4", answers: ["he told me how to pack them"] },
+    { id: "g4", answers: ["how to pack them"] },
     { id: "g5", answers: ["Oh, that's helpful", "Oh, that is helpful"] },
-    { id: "g6", answers: ["a lot of people just can't be bothered", "a lot of people just cannot be bothered"] },
-    { id: "g7", answers: ["it's such a shame that publishers don't use better-quality paper", "it is such a shame that publishers do not use better-quality paper"] },
+    { id: "g6", answers: ["can't be bothered", "cannot be bothered"] },
+    { id: "g7", answers: ["such a shame"] },
     { id: "g8", answers: ["I'd regret just throwing them away", "I would regret just throwing them away"] },
-    { id: "g9", answers: ["I hate seeing students force open the pages"] },
-    { id: "g10", answers: ["I still don't think people value hardbacks like they used to", "I still do not think people value hardbacks like they used to"] },
-    { id: "g11", answers: ["book covers can be a work of art in themselves"] },
-    { id: "g12", answers: ["I've always been taught to handle books carefully", "I have always been taught to handle books carefully"] },
+    { id: "g9", answers: ["force open the pages"] },
+    { id: "g10", answers: ["like they used to"] },
+    { id: "g11", answers: ["a work of art"] },
+    { id: "g12", answers: ["handle books carefully"] },
     { id: "g13", answers: ["The smell of new books"] },
-    { id: "g14", answers: ["I'd love to have a bookshop like your grandfather", "I would love to have a bookshop like your grandfather"] },
+    { id: "g14", answers: ["I'd love to have", "I would love to have"] },
     { id: "g15", answers: ["That would prevent any thefts"] },
-    { id: "g16", answers: ["He particularly likes to encourage kids to read"] },
+    { id: "g16", answers: ["encourage kids to read"] },
     { id: "g17", answers: ["He hardly ever throws anything away"] },
-    { id: "g18", answers: ["You'll have to take me there some time", "You will have to take me there some time"] },
+    { id: "g18", answers: ["take me there some time"] },
   ],
   lines: [
     {
@@ -36,7 +36,7 @@ export const CAM19_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JANE",
       segments: [
-        { type: "text", text: "Yes, I'm really looking forward to it and " },
+        { type: "text", text: "Yes, I'm really looking forward to it and I've just started " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: " to put in storage." },
       ],
@@ -48,7 +48,7 @@ export const CAM19_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JANE",
       segments: [
-        { type: "text", text: "It's OK – my grandfather works in a bookshop and " },
+        { type: "text", text: "It's OK – my grandfather works in a bookshop and he told me " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -79,7 +79,7 @@ export const CAM19_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "KIERAN",
       segments: [
-        { type: "text", text: "Well, it's pretty clear that ruins them, but " },
+        { type: "text", text: "Well, it's pretty clear that ruins them, but a lot of people just " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: " to protect their books." },
       ],
@@ -87,9 +87,9 @@ export const CAM19_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JANE",
       segments: [
-        { type: "text", text: "He always says " },
+        { type: "text", text: "He always says it's " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: " that publishers don't use better-quality paper." },
       ],
     },
     {
@@ -127,7 +127,7 @@ export const CAM19_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "KIERAN",
       segments: [
-        { type: "text", text: "You know, maybe it's because I was taught to treasure books . . . but " },
+        { type: "text", text: "You know, maybe it's because I was taught to treasure books . . . but I hate seeing students " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: " – of paperbacks. They press so hard they end up breaking the spine." },
       ],
@@ -144,7 +144,7 @@ export const CAM19_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "KIERAN",
       segments: [
-        { type: "text", text: "Yeah, they're different, I suppose. But " },
+        { type: "text", text: "Yeah, they're different, I suppose. But I still don't think people value hardbacks " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
       ],
@@ -170,14 +170,15 @@ export const CAM19_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JANE",
       segments: [
-        { type: "text", text: "I agree – and " },
+        { type: "text", text: "I agree – and book covers can be " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: ". Some are really eye-catching." },
+        { type: "text", text: " in themselves. Some are really eye-catching." },
       ],
     },
     {
       speaker: "KIERAN",
       segments: [
+        { type: "text", text: "I've always been taught to " },
         { type: "gap", gapId: "g12" },
         {
           type: "text",
@@ -237,7 +238,7 @@ export const CAM19_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: "KIERAN",
       segments: [
         { type: "gap", gapId: "g14" },
-        { type: "text", text: ". What's it like?" },
+        { type: "text", text: " a bookshop like your grandfather. What's it like?" },
       ],
     },
     {
@@ -276,7 +277,7 @@ export const CAM19_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JANE",
       segments: [
-        { type: "text", text: "He does. " },
+        { type: "text", text: "He does. He particularly likes to " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
@@ -353,7 +354,7 @@ export const CAM19_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "KIERAN",
       segments: [
-        { type: "text", text: "Pretty central then. " },
+        { type: "text", text: "Pretty central then. You'll have to " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "!" },
       ],

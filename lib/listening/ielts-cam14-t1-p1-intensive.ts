@@ -12,15 +12,15 @@ export const CAM14_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       id: "g3",
-      answers: ["I'll need to take a few details", "I will need to take a few details"],
+      answers: ["take a few details"],
     },
     { id: "g4", answers: ["are you resident in the UK"] },
-    { id: "g5", answers: ["I come over most summers on business"] },
+    { id: "g5", answers: ["most summers on business"] },
     {
       id: "g6",
-      answers: ["I've had a really good trip this year", "I have had a really good trip this year"],
+      answers: ["a really good trip"],
     },
-    { id: "g7", answers: ["so I had to find another one"] },
+    { id: "g7", answers: ["find another one"] },
     {
       id: "g8",
       answers: ["I really can't understand it", "I really cannot understand it"],
@@ -28,42 +28,34 @@ export const CAM14_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       id: "g9",
       answers: [
-        "fortunately I don't keep my credit cards in that wallet",
-        "fortunately I do not keep my credit cards in that wallet",
+        "don't keep my credit cards",
+        "do not keep my credit cards",
       ],
     },
-    { id: "g10", answers: ["I must have already spent about £50 of that", "I must have already spent about 50 pounds of that"] },
+    { id: "g10", answers: ["must have already spent"] },
     {
       id: "g11",
       answers: [
-        "that's when I realised I'd been robbed",
-        "that is when I realised I had been robbed",
-        "that's when I realized I'd been robbed",
+        "I'd been robbed",
+        "I had been robbed",
       ],
     },
     {
       id: "g12",
       answers: [
-        "at least they didn't take the keys to my rental car",
-        "at least they did not take the keys to my rental car",
+        "didn't take the keys",
+        "did not take the keys",
       ],
     },
     {
       id: "g13",
-      answers: ["do you have any idea at all of where or when the things might possibly have been stolen"],
+      answers: ["have any idea at all"],
     },
-    {
-      id: "g14",
-      answers: [
-        "I generally use it when I'm travelling because it seems safer than a handbag",
-        "I generally use it when I am travelling because it seems safer than a handbag",
-        "I generally use it when I'm traveling because it seems safer than a handbag",
-      ],
-    },
-    { id: "g15", answers: ["a group of young boys ran up to us"] },
-    { id: "g16", answers: ["The one who did most of the talking"] },
-    { id: "g17", answers: ["They came and went so quickly"] },
-    { id: "g18", answers: ["so you can contact your insurance company"] },
+    { id: "g14", answers: ["safer than a handbag"] },
+    { id: "g15", answers: ["ran up to us"] },
+    { id: "g16", answers: ["most of the talking"] },
+    { id: "g17", answers: ["came and went so quickly"] },
+    { id: "g18", answers: ["contact your insurance company"] },
   ],
   lines: [
     { speaker: "OFFICER", segments: [{ type: "text", text: "Good morning. What can I do for you?" }] },
@@ -78,7 +70,7 @@ export const CAM14_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: "OFFICER",
       segments: [
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ". Right, so " },
+        { type: "text", text: ". Right, so I'll need to " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: ". Can I start with your name?" },
       ],
@@ -102,14 +94,14 @@ export const CAM14_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LOUISE",
       segments: [
-        { type: "text", text: "That's right. " },
+        { type: "text", text: "That's right. I come over " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ". I'm an interior designer and I come over to buy old furniture, antiques you know. There are some really lovely things around here, but you need to get out to the small towns. ",
+          text: ". I'm an interior designer and I come over to buy old furniture, antiques you know. There are some really lovely things around here, but you need to get out to the small towns. I've had ",
         },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ", until this happened." },
+        { type: "text", text: " this year, until this happened." },
       ],
     },
     { speaker: "OFFICER", segments: [{ type: "text", text: "OK. So you've been here quite a while?" }] },
@@ -123,7 +115,7 @@ export const CAM14_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well at present I've got a place at Park Apartments, that's on King Street. I was staying at the Riverside Apartments on the same street, but the apartment there was only available for six weeks ",
+          text: "Well at present I've got a place at Park Apartments, that's on King Street. I was staying at the Riverside Apartments on the same street, but the apartment there was only available for six weeks so I had to ",
         },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
@@ -161,14 +153,14 @@ export const CAM14_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LOUISE",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, fortunately I " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: " – I keep them with my passport in an inside compartment in my backpack. But there was quite a bit of cash there … about £250 sterling, I should think. I withdrew £300 from my account yesterday, but I did a bit of shopping, so ",
+          text: " in that wallet – I keep them with my passport in an inside compartment in my backpack. But there was quite a bit of cash there … about £250 sterling, I should think. I withdrew £300 from my account yesterday, but I did a bit of shopping, so I ",
         },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " about £50 of that." },
       ],
     },
     { speaker: "OFFICER", segments: [{ type: "text", text: "OK." }] },
@@ -177,12 +169,12 @@ export const CAM14_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "At first I thought, oh I must have left the wallet back in the apartment, but then I realised my phone had gone as well. It was only a week old, and ",
+          text: "At first I thought, oh I must have left the wallet back in the apartment, but then I realised my phone had gone as well. It was only a week old, and that's when I realised ",
         },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: ". Anyway ", },
+        { type: "text", text: ". Anyway at least they " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: "." },
+        { type: "text", text: " to my rental car." },
       ],
     },
     { speaker: "OFFICER", segments: [{ type: "text", text: "Yes. So you say the theft occurred yesterday?" }] },
@@ -190,9 +182,9 @@ export const CAM14_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "OFFICER",
       segments: [
-        { type: "text", text: "So that was September the tenth. And " },
+        { type: "text", text: "So that was September the tenth. And do you " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "?" },
+        { type: "text", text: " of where or when the things might possibly have been stolen?" },
       ],
     },
     {
@@ -200,12 +192,12 @@ export const CAM14_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well at first I couldn't believe it because the bag had been on my back ever since I left the apartment after lunch. It's just a small backpack, but ",
+          text: "Well at first I couldn't believe it because the bag had been on my back ever since I left the apartment after lunch. It's just a small backpack, but I generally use it when I'm travelling because it seems ",
         },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
-          text: ". Anyway, I met up with a friend, and we spent a couple of hours in the museum. But I do remember that as we were leaving there, at about 4 o'clock, ",
+          text: ". Anyway, I met up with a friend, and we spent a couple of hours in the museum. But I do remember that as we were leaving there, at about 4 o'clock, a group of young boys ",
         },
         { type: "gap", gapId: "g15" },
         {
@@ -218,6 +210,7 @@ export const CAM14_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LOUISE",
       segments: [
+        { type: "text", text: "The one who did " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: " was wearing a T-shirt with a picture of something … let's see … a tiger." },
       ],
@@ -238,7 +231,7 @@ export const CAM14_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LOUISE",
       segments: [
-        { type: "text", text: "Not really. " },
+        { type: "text", text: "Not really. They " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
       ],
@@ -248,7 +241,7 @@ export const CAM14_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Right. So what I'm going to do now is give you a crime reference number ",
+          text: "Right. So what I'm going to do now is give you a crime reference number so you can ",
         },
         { type: "gap", gapId: "g18" },
         { type: "text", text: ". So this is ten digits: 87954 82361." },

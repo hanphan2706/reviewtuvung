@@ -5,54 +5,32 @@ import type {
 
 export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    {
-      id: "g1",
-      answers: [
-        "I'm sure you'll all have a great time here",
-        "I am sure you will all have a great time here",
-        "I'm sure you will all have a great time here",
-      ],
-    },
-    {
-      id: "g2",
-      answers: [
-        "I'll start by telling you about some of the excursions",
-        "I will start by telling you about some of the excursions",
-      ],
-    },
+    { id: "g1", answers: ["a great time here"] },
+    { id: "g2", answers: ["some of the excursions"] },
     {
       id: "g3",
       answers: [
-        "One thing you have to do while you're here",
-        "One thing you have to do while you are here",
+        "while you're here",
+        "while you are here",
       ],
     },
     {
       id: "g4",
       answers: [
-        "if you don't you can repeat the trip free of charge",
-        "if you do not you can repeat the trip free of charge",
+        "free of charge",
       ],
     },
-    { id: "g5", answers: ["We organise daily trips for just 35 euros"] },
+    { id: "g5", answers: ["for just 35 euros"] },
     {
       id: "g6",
       answers: [
-        "If you're energetic, I'd recommend our forest walk",
-        "If you are energetic, I would recommend our forest walk",
-        "If you're energetic, I would recommend our forest walk",
+        "I'd recommend our forest walk",
+        "I would recommend our forest walk",
       ],
     },
-    {
-      id: "g7",
-      answers: [
-        "There's some fairly steep climbs up the hills",
-        "There are some fairly steep climbs up the hills",
-        "There is some fairly steep climbs up the hills",
-      ],
-    },
-    { id: "g8", answers: ["you need to be reasonably fit for this one"] },
-    { id: "g9", answers: ["which will give you all the fun of biking without the effort"] },
+    { id: "g7", answers: ["fairly steep climbs"] },
+    { id: "g8", answers: ["reasonably fit"] },
+    { id: "g9", answers: ["fun of biking without the effort"] },
     {
       id: "g10",
       answers: [
@@ -64,30 +42,23 @@ export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       id: "g11",
       answers: ["you'll have fantastic views", "you will have fantastic views"],
     },
-    { id: "g12", answers: ["you can find out about the traditional activities in the island"] },
+    { id: "g12", answers: ["traditional activities in the island"] },
     {
       id: "g13",
       answers: [
-        "If you want, you can buy some of the products but that's entirely up to you",
-        "If you want, you can buy some of the products but that is entirely up to you",
+        "entirely up to you",
       ],
     },
     {
       id: "g14",
-      answers: [
-        "the island's one of the best places in the world to observe the night sky",
-        "the island is one of the best places in the world to observe the night sky",
-      ],
+      answers: ["observe the night sky"],
     },
     {
       id: "g15",
-      answers: [
-        "you'll be shown the huge telescopes and have a talk from an expert",
-        "you will be shown the huge telescopes and have a talk from an expert",
-      ],
+      answers: ["shown the huge telescopes"],
     },
-    { id: "g16", answers: ["This is organised by the Equestrian Centre"] },
-    { id: "g17", answers: ["Guests enjoy a three-course meal and unlimited free drinks"] },
+    { id: "g16", answers: ["Equestrian Centre"] },
+    { id: "g17", answers: ["unlimited free drinks"] },
     {
       id: "g18",
       answers: [
@@ -104,7 +75,11 @@ export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g1" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "I'm sure you'll all have " },
+        { type: "gap", gapId: "g1" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -112,11 +87,16 @@ export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g2" }, { type: "text", text: " that are available for guests." }],
+      segments: [
+        { type: "text", text: "I'll start by telling you about " },
+        { type: "gap", gapId: "g2" },
+        { type: "text", text: " that are available for guests." },
+      ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "One thing you have to do " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: " is go dolphin watching." },
       ],
@@ -126,7 +106,7 @@ export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "On our boat trips, we pretty well guarantee you'll see dolphins – ",
+          text: "On our boat trips, we pretty well guarantee you'll see dolphins – if you don't you can repeat the trip ",
         },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
@@ -134,7 +114,11 @@ export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g5" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "We organise daily trips " },
+        { type: "gap", gapId: "g5" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -147,7 +131,11 @@ export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g6" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "If you're energetic, " },
+        { type: "gap", gapId: "g6" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -165,12 +153,13 @@ export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "There's some " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: ", so " },
+        { type: "text", text: " up the hills, so you need to be " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
-          text: ", with good shoes, and bring a waterproof in case it rains.",
+          text: " for this one, with good shoes, and bring a waterproof in case it rains.",
         },
       ],
     },
@@ -188,7 +177,7 @@ export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Then on Thursdays we organise a cycle trip, ",
+          text: "Then on Thursdays we organise a cycle trip, which will give you all the ",
         },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
@@ -216,7 +205,7 @@ export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "On our local craft tour " },
+        { type: "text", text: "On our local craft tour you can find out about the " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -241,7 +230,14 @@ export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g13" }, { type: "text", text: "." }],
+      segments: [
+        {
+          type: "text",
+          text: "If you want, you can buy some of the products but that's ",
+        },
+        { type: "gap", gapId: "g13" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -257,7 +253,7 @@ export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "If you're interested in astronomy you may already know that ",
+          text: "If you're interested in astronomy you may already know that the island's one of the best places in the world to ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
@@ -275,9 +271,9 @@ export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "They cost 90 euros per person and " },
+        { type: "text", text: "They cost 90 euros per person and you'll be " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: ", who'll explain all about how they work." },
+        { type: "text", text: " and have a talk from an expert, who'll explain all about how they work." },
       ],
     },
     {
@@ -292,7 +288,14 @@ export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { speaker: null, segments: [{ type: "text", text: "Finally, there's horse riding." }] },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g16" }, { type: "text", text: " over near Playa Cortino and it's a great experience if you're a keen horseback rider, or even if you've never been on a horse before." }],
+      segments: [
+        { type: "text", text: "This is organised by the " },
+        { type: "gap", gapId: "g16" },
+        {
+          type: "text",
+          text: " over near Playa Cortino and it's a great experience if you're a keen horseback rider, or even if you've never been on a horse before.",
+        },
+      ],
     },
     {
       speaker: null,
@@ -327,7 +330,14 @@ export const CAM14_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g17" }, { type: "text", text: ", and watch a fantastic show, starting with musicals set in Paris and then crossing the Atlantic to Las Vegas and finally Copacabana." }],
+      segments: [
+        { type: "text", text: "Guests enjoy a three-course meal and " },
+        { type: "gap", gapId: "g17" },
+        {
+          type: "text",
+          text: ", and watch a fantastic show, starting with musicals set in Paris and then crossing the Atlantic to Las Vegas and finally Copacabana.",
+        },
+      ],
     },
     {
       speaker: null,

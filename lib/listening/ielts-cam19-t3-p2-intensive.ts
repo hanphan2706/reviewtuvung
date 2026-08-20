@@ -6,22 +6,22 @@ import type {
 export const CAM19_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["is coming up again soon"] },
-    { id: "g2", answers: ["here to tell us all about it"] },
+    { id: "g2", answers: ["tell us all about it"] },
     { id: "g3", answers: ["what we can expect this year"] },
     { id: "g4", answers: ["as usual we've got", "as usual we have got"] },
-    { id: "g5", answers: ["Just to give you an idea of"] },
+    { id: "g5", answers: ["give you an idea of"] },
     { id: "g6", answers: ["first of all"] },
     { id: "g7", answers: ["This is a chance for"] },
     { id: "g8", answers: ["led by the well-known illustrator"] },
     { id: "g9", answers: ["as many of you will know"] },
-    { id: "g10", answers: ["This is bound to be very popular"] },
+    { id: "g10", answers: ["bound to be very popular"] },
     { id: "g11", answers: ["please book as soon as possible"] },
     { id: "g12", answers: ["That all sounds really interesting"] },
     { id: "g13", answers: ["I'm just wondering if", "I am just wondering if"] },
     { id: "g14", answers: ["It's hard to choose", "It is hard to choose"] },
     { id: "g15", answers: ["is definitely worth mentioning"] },
     { id: "g16", answers: ["which is really impressive"] },
-    { id: "g17", answers: ["this is something I get asked about a lot"] },
+    { id: "g17", answers: ["get asked about a lot"] },
     { id: "g18", answers: ["I think that's really useful", "I think that is really useful"] },
   ],
   lines: [
@@ -30,7 +30,7 @@ export const CAM19_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "The children's book festival " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " and " },
+        { type: "text", text: " and here to " },
         { type: "gap", gapId: "g2" },
         {
           type: "text",
@@ -53,6 +53,7 @@ export const CAM19_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JENNY",
       segments: [
+        { type: "text", text: "Just to " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: " what's on offer in the workshops, " },
         { type: "gap", gapId: "g6" },
@@ -110,6 +111,7 @@ export const CAM19_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         {
           type: "text",
           text: "'Sticks and stones' is the beautifully illustrated picture book for young readers about a community who organise an African-Caribbean festival to help local children learn about their Jamaican roots. This will be a musical event where children will have the chance to play steel drums. " },
+        { type: "text", text: "This is " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: ", so " },
         { type: "gap", gapId: "g11" },
@@ -154,7 +156,7 @@ export const CAM19_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JENNY",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, this is something I " },
         { type: "gap", gapId: "g17" },
         {
           type: "text",

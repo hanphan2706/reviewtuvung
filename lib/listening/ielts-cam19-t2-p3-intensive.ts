@@ -5,24 +5,24 @@ import type {
 
 export const CAM19_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["did you get the copy of the article"] },
-    { id: "g2", answers: ["I've had a look at it", "I have had a look at it"] },
-    { id: "g3", answers: ["So do you think it's a good topic", "So do you think it is a good topic"] },
+    { id: "g1", answers: ["did you get"] },
+    { id: "g2", answers: ["had a look at"] },
+    { id: "g3", answers: ["a good topic"] },
     { id: "g4", answers: ["although it's quite interesting", "although it is quite interesting"] },
-    { id: "g5", answers: ["but there's much more to it than that", "but there is much more to it than that"] },
-    { id: "g6", answers: ["I'm keen to research the topic more", "I am keen to research the topic more"] },
-    { id: "g7", answers: ["just how many pairs of trainers get recycled"] },
-    { id: "g8", answers: ["They've become more popular than ordinary shoes", "They have become more popular than ordinary shoes"] },
-    { id: "g9", answers: ["I guess they are very hard-wearing"] },
-    { id: "g10", answers: ["better than a scruffy old pair of shoes"] },
-    { id: "g11", answers: ["So do you keep shoes a long time"] },
+    { id: "g5", answers: ["much more to it"] },
+    { id: "g6", answers: ["keen to research"] },
+    { id: "g7", answers: ["pairs of trainers"] },
+    { id: "g8", answers: ["ordinary shoes"] },
+    { id: "g9", answers: ["very hard-wearing", "very hard wearing"] },
+    { id: "g10", answers: ["scruffy old pair"] },
+    { id: "g11", answers: ["a long time"] },
     { id: "g12", answers: ["That didn't surprise me", "That did not surprise me"] },
     { id: "g13", answers: ["That doesn't seem to make sense", "That does not seem to make sense"] },
-    { id: "g14", answers: ["So let's find some examples in the article", "So let us find some examples in the article"] },
-    { id: "g15", answers: ["Let's start with the ladies' high-heeled shoes", "Let us start with the ladies' high-heeled shoes"] },
-    { id: "g16", answers: ["I suppose even second-hand shoes should look the same"] },
-    { id: "g17", answers: ["He said they looked like they'd been worn by a marathon runner", "He said they looked like they had been worn by a marathon runner"] },
-    { id: "g18", answers: ["That's another area we need to discuss", "That is another area we need to discuss"] },
+    { id: "g14", answers: ["find some examples"] },
+    { id: "g15", answers: ["Let's start with", "Let us start with"] },
+    { id: "g16", answers: ["look the same"] },
+    { id: "g17", answers: ["a marathon runner"] },
+    { id: "g18", answers: ["we need to discuss"] },
   ],
   lines: [
     {
@@ -30,20 +30,21 @@ export const CAM19_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Hi Don – " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " on recycling footwear that I emailed you?" },
+        { type: "text", text: " the copy of the article on recycling footwear that I emailed you?" },
       ],
     },
     {
       speaker: "DON",
       segments: [
-        { type: "text", text: "Yeah – it's here … " },
+        { type: "text", text: "Yeah – it's here … I've " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "." },
+        { type: "text", text: " it." },
       ],
     },
     {
       speaker: "BELLA",
       segments: [
+        { type: "text", text: "So do you think it's " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: " for our presentation?" },
       ],
@@ -62,32 +63,32 @@ export const CAM19_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "BELLA",
       segments: [
-        { type: "text", text: "… " },
+        { type: "text", text: "… but there's " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "." },
+        { type: "text", text: " than that." },
       ],
     },
     {
       speaker: "DON",
       segments: [
-        { type: "text", text: "I realise that now and " },
+        { type: "text", text: "I realise that now and I'm " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " the topic more." },
       ],
     },
     { speaker: "BELLA", segments: [{ type: "text", text: "That's great." }] },
     {
       speaker: "DON",
       segments: [
-        { type: "text", text: "One of the things I didn't realise until I read the article was " },
+        { type: "text", text: "One of the things I didn't realise until I read the article was just how many " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "!" },
+        { type: "text", text: " get recycled!" },
       ],
     },
     {
       speaker: "BELLA",
       segments: [
-        { type: "text", text: "Well, a lot of young people wear them all the time now. " },
+        { type: "text", text: "Well, a lot of young people wear them all the time now. They've become more popular than " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -95,7 +96,7 @@ export const CAM19_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "DON",
       segments: [
-        { type: "text", text: "I know. " },
+        { type: "text", text: "I know. I guess they are " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -106,14 +107,15 @@ export const CAM19_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "BELLA",
       segments: [
-        { type: "text", text: "Actually, I think some of them look quite smart on pupils … " },
+        { type: "text", text: "Actually, I think some of them look quite smart on pupils … better than a " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " of shoes." },
       ],
     },
     {
       speaker: "DON",
       segments: [
+        { type: "text", text: "So do you keep shoes " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "?" },
       ],
@@ -175,8 +177,9 @@ export const CAM19_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "BELLA",
       segments: [
+        { type: "text", text: "So let's " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: " of footwear that was rejected for recycling." },
+        { type: "text", text: " in the article of footwear that was rejected for recycling." },
       ],
     },
     {
@@ -193,7 +196,7 @@ export const CAM19_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Mmm. " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: ". What did he say about those?" },
+        { type: "text", text: " the ladies' high-heeled shoes. What did he say about those?" },
       ],
     },
     {
@@ -214,7 +217,7 @@ export const CAM19_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Apparently, the heels were worn – but that wasn't the problem. One of the shoes was a much lighter shade than the other one – it had obviously been left in the sun. ",
+          text: "Apparently, the heels were worn – but that wasn't the problem. One of the shoes was a much lighter shade than the other one – it had obviously been left in the sun. I suppose even second-hand shoes should ",
         },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "!" },
@@ -242,7 +245,7 @@ export const CAM19_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "DON",
       segments: [
-        { type: "text", text: "The trainers were interesting. " },
+        { type: "text", text: "The trainers were interesting. He said they looked like they'd been worn by " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
       ],
@@ -297,6 +300,7 @@ export const CAM19_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "DON",
       segments: [
+        { type: "text", text: "That's another area " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

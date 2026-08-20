@@ -20,7 +20,7 @@ export const CAM18_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g13", answers: ["after all"] },
     { id: "g14", answers: ["we'll just have to differ", "we will just have to differ"] },
     { id: "g15", answers: ["One thing's for certain", "One thing is for certain"] },
-    { id: "g16", answers: ["I'm not going to accept that view", "I am not going to accept that view"] },
+    { id: "g16", answers: ["not going to accept"] },
     { id: "g17", answers: ["That doesn't mean", "That does not mean"] },
     { id: "g18", answers: ["picked herself up"] },
   ],
@@ -200,9 +200,9 @@ export const CAM18_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "CHANTAL",
       segments: [
-        { type: "text", text: "Actually, " },
+        { type: "text", text: "Actually, I'm " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " that view." },
       ],
     },
     {

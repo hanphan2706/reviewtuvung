@@ -6,23 +6,23 @@ import type {
 export const CAM20_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["How are you getting on with"] },
-    { id: "g2", answers: ["I hadn't realised that children benefit in so many ways", "I had not realised that children benefit in so many ways"] },
-    { id: "g3", answers: ["That seems pretty obvious when you think about it"] },
-    { id: "g4", answers: ["What's less obvious is how it helps", "What is less obvious is how it helps"] },
-    { id: "g5", answers: ["that aspect of handwriting had never occurred to me before"] },
-    { id: "g6", answers: ["I'm not sure I understand how it improves", "I am not sure I understand how it improves"] },
+    { id: "g2", answers: ["I hadn't realised", "I had not realised"] },
+    { id: "g3", answers: ["when you think about it"] },
+    { id: "g4", answers: ["What's less obvious", "What is less obvious"] },
+    { id: "g5", answers: ["never occurred to me"] },
+    { id: "g6", answers: ["I'm not sure", "I am not sure"] },
     { id: "g7", answers: ["as I'd always assumed", "as I had always assumed"] },
-    { id: "g8", answers: ["It's good there are lots of things you can do in the classroom", "It is good there are lots of things you can do in the classroom"] },
-    { id: "g9", answers: ["It takes a lot of patience"] },
-    { id: "g10", answers: ["That seems like a really simple solution"] },
-    { id: "g11", answers: ["I'm not sure there's much you can do about", "I am not sure there is much you can do about", "I'm not sure there is much you can do about"] },
+    { id: "g8", answers: ["in the classroom"] },
+    { id: "g9", answers: ["a lot of patience"] },
+    { id: "g10", answers: ["a really simple solution"] },
+    { id: "g11", answers: ["there's much you can do", "there is much you can do"] },
     { id: "g12", answers: ["that's more important for legibility than", "that is more important for legibility than"] },
-    { id: "g13", answers: ["They often really struggle with handwriting"] },
-    { id: "g14", answers: ["But I read that developing fluency isn't any faster", "But I read that developing fluency is not any faster"] },
+    { id: "g13", answers: ["really struggle with"] },
+    { id: "g14", answers: ["isn't any faster", "is not any faster"] },
     { id: "g15", answers: ["Teachers' attitudes have changed"] },
     { id: "g16", answers: ["I was right to worry"] },
     { id: "g17", answers: ["It's a basic life skill", "It is a basic life skill"] },
-    { id: "g18", answers: ["I think you can put that down to lack of practice"] },
+    { id: "g18", answers: ["put that down to"] },
   ],
   lines: [
     {
@@ -39,7 +39,7 @@ export const CAM20_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g2" },
         {
           type: "text",
-          text: " from learning to write. It's such an important skill, and yet most people think handwriting is less important than in the past, because people hardly ever write by hand these days.",
+          text: " that children benefit in so many ways from learning to write. It's such an important skill, and yet most people think handwriting is less important than in the past, because people hardly ever write by hand these days.",
         },
       ],
     },
@@ -55,7 +55,7 @@ export const CAM20_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "That's right. The physical act of writing helps children to remember letters. " },
+        { type: "text", text: "That's right. The physical act of writing helps children to remember letters. That seems pretty obvious " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -64,15 +64,15 @@ export const CAM20_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: "MAN",
       segments: [
         { type: "gap", gapId: "g4" },
-        { type: "text", text: " develop their concentration. They have to sit still and focus on one thing." },
+        { type: "text", text: " is how it helps develop their concentration. They have to sit still and focus on one thing." },
       ],
     },
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Yeah, " },
+        { type: "text", text: "Yeah, that aspect of handwriting had " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "." },
+        { type: "text", text: " before." },
       ],
     },
     {
@@ -80,7 +80,7 @@ export const CAM20_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Same here. " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: " children's imagination, though." },
+        { type: "text", text: " I understand how it improves children's imagination, though." },
       ],
     },
     {
@@ -116,11 +116,11 @@ export const CAM20_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Handwriting is so much harder for children with dyspraxia, who have problems coordinating movement. " },
+          text: "Handwriting is so much harder for children with dyspraxia, who have problems coordinating movement. It's good there are lots of things you can do " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
-          text: " to help them. They need so much more support with letter formation. You need to play lots of games to help them distinguish letter shapes. " },
+          text: " to help them. They need so much more support with letter formation. You need to play lots of games to help them distinguish letter shapes. It takes " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -130,7 +130,7 @@ export const CAM20_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yeah, I like the idea of using one of those pens that lights up if you press too hard. " },
+          text: "Yeah, I like the idea of using one of those pens that lights up if you press too hard. That seems like " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
       ],
@@ -138,11 +138,11 @@ export const CAM20_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Yes, absolutely. " },
+        { type: "text", text: "Yes, absolutely. I'm not sure " },
         { type: "gap", gapId: "g11" },
         {
           type: "text",
-          text: " children with dyspraxia writing very slowly. It's more important to focus on accuracy and as they get more confident, I think they eventually speed up.",
+          text: " about children with dyspraxia writing very slowly. It's more important to focus on accuracy and as they get more confident, I think they eventually speed up.",
         },
       ],
     },
@@ -168,9 +168,9 @@ export const CAM20_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "For some children, it might be better to teach them to write on a laptop rather than by hand, like children with dyslexia. " },
+          text: "For some children, it might be better to teach them to write on a laptop rather than by hand, like children with dyslexia. They often " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: " and some just give up." },
+        { type: "text", text: " handwriting and some just give up." },
       ],
     },
     {
@@ -178,7 +178,7 @@ export const CAM20_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yeah, it's not as frustrating for them if they get things wrong. On a keyboard, they can be more willing to have a go. " },
+          text: "Yeah, it's not as frustrating for them if they get things wrong. On a keyboard, they can be more willing to have a go. But I read that developing fluency " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
       ],
@@ -252,9 +252,9 @@ export const CAM20_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "And for reading historical documents, apparently. But my mum is shocked by my awful spelling and the fact that my punctuation is really inconsistent. " },
+          text: "And for reading historical documents, apparently. But my mum is shocked by my awful spelling and the fact that my punctuation is really inconsistent. I think you can " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: "." },
+        { type: "text", text: " lack of practice." },
       ],
     },
     {

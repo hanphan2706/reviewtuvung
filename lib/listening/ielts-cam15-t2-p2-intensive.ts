@@ -8,48 +8,39 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       id: "g1",
       answers: [
-        "I'm very pleased to welcome this evening's guest speaker",
-        "I am very pleased to welcome this evening's guest speaker",
+        "I'm very pleased to welcome",
+        "I am very pleased to welcome",
       ],
     },
     {
       id: "g2",
-      answers: [
-        "It's been a feature of the city for well over a century",
-        "It has been a feature of the city for well over a century",
-      ],
+      answers: ["well over a century"],
     },
-    { id: "g3", answers: ["unlike many public parks that started in private ownership"] },
-    { id: "g4", answers: ["It was unclear who actually owned the land"] },
-    { id: "g5", answers: ["You may have noticed the statue near one of the entrances"] },
-    { id: "g6", answers: ["Once the council had become the legal owner"] },
-    { id: "g7", answers: ["remember the park is in a densely populated residential area"] },
-    { id: "g8", answers: ["which eventually made the council change its mind about the future of the land"] },
-    { id: "g9", answers: ["At one stage the army considered taking it over"] },
+    { id: "g3", answers: ["unlike many public parks"] },
+    { id: "g4", answers: ["who actually owned the land"] },
+    { id: "g5", answers: ["You may have noticed"] },
+    { id: "g6", answers: ["Once the council had become"] },
+    { id: "g7", answers: ["densely populated residential area"] },
+    { id: "g8", answers: ["change its mind"] },
+    { id: "g9", answers: ["considered taking it over"] },
     {
       id: "g10",
-      answers: ["After the war, the park was turned back more or less to how it had been before 1914"],
+      answers: ["turned back more or less"],
     },
-    { id: "g11", answers: ["Plans for transforming it were drawn up at various times"] },
-    { id: "g12", answers: ["and were finished on schedule last year"] },
-    {
-      id: "g13",
-      answers: [
-        "If you look at this map, you'll see the familiar outline of the park",
-        "If you look at this map, you will see the familiar outline of the park",
-      ],
-    },
+    { id: "g11", answers: ["were drawn up"] },
+    { id: "g12", answers: ["finished on schedule"] },
+    { id: "g13", answers: ["If you look at this map"] },
     { id: "g14", answers: ["which makes it much more visible"] },
-    { id: "g15", answers: ["There are two areas that are particularly intended for children"] },
+    { id: "g15", answers: ["particularly intended for children"] },
     {
       id: "g16",
-      answers: ["They've been doubled, from four to eight", "They have been doubled, from four to eight"],
+      answers: ["They've been doubled", "They have been doubled"],
     },
     {
       id: "g17",
       answers: [
-        "Something else I'd like to mention is the new fitness area",
-        "Something else I would like to mention is the new fitness area",
+        "I'd like to mention",
+        "I would like to mention",
       ],
     },
     {
@@ -64,7 +55,7 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g1" },
         {
           type: "text",
-          text: ", Mark Logan, who's going to tell us about the recent transformation of Minster Park. Over to you, Mark.",
+          text: " this evening's guest speaker, Mark Logan, who's going to tell us about the recent transformation of Minster Park. Over to you, Mark.",
         },
       ],
     },
@@ -76,6 +67,7 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MARK",
       segments: [
+        { type: "text", text: "It's been a feature of the city for " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: ", and has been the responsibility of the city council for most of that time." },
       ],
@@ -87,13 +79,14 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g3" },
         {
           type: "text",
-          text: ", as the garden of a large house, for instance, Minster was some waste land, which people living nearby started planting with flowers in 1892.",
+          text: " that started in private ownership, as the garden of a large house, for instance, Minster was some waste land, which people living nearby started planting with flowers in 1892.",
         },
       ],
     },
     {
       speaker: "MARK",
       segments: [
+        { type: "text", text: "It was unclear " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
@@ -103,7 +96,10 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "MARK",
-      segments: [{ type: "gap", gapId: "g5" }, { type: "text", text: "." }],
+      segments: [
+        { type: "gap", gapId: "g5" },
+        { type: "text", text: " the statue near one of the entrances." },
+      ],
     },
     {
       speaker: "MARK",
@@ -118,7 +114,7 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: "MARK",
       segments: [
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ", it planned to sell the land for housing." },
+        { type: "text", text: " the legal owner, it planned to sell the land for housing." },
       ],
     },
     {
@@ -126,7 +122,8 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Many local people wanted it to remain a place that everyone could go to, to enjoy the fresh air and natural environment – " },
+          text: "Many local people wanted it to remain a place that everyone could go to, to enjoy the fresh air and natural environment – remember the park is in a ",
+        },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -134,9 +131,12 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MARK",
       segments: [
-        { type: "text", text: "Diane Gosforth was one of those people, and she organised petitions and demonstrations, " },
+        {
+          type: "text",
+          text: "Diane Gosforth was one of those people, and she organised petitions and demonstrations, which eventually made the council ",
+        },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: "." },
+        { type: "text", text: " about the future of the land." },
       ],
     },
     {
@@ -151,6 +151,7 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MARK",
       segments: [
+        { type: "text", text: "At one stage the army " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -170,26 +171,31 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MARK",
       segments: [
+        { type: "text", text: "After the war, the park was " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: ", and continued almost unchanged until recently." },
-      ],
-    },
-    {
-      speaker: "MARK",
-      segments: [
-        { type: "gap", gapId: "g11" },
         {
           type: "text",
-          text: ", most recently in 2013, though they were revised in 2015, before any work had started.",
+          text: " to how it had been before 1914, and continued almost unchanged until recently.",
         },
       ],
     },
     {
       speaker: "MARK",
       segments: [
-        { type: "text", text: "The changes finally got going in 2016, " },
+        { type: "text", text: "Plans for transforming it " },
+        { type: "gap", gapId: "g11" },
+        {
+          type: "text",
+          text: " at various times, most recently in 2013, though they were revised in 2015, before any work had started.",
+        },
+      ],
+    },
+    {
+      speaker: "MARK",
+      segments: [
+        { type: "text", text: "The changes finally got going in 2016, and were " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: "." },
+        { type: "text", text: " last year." },
       ],
     },
     {
@@ -207,7 +213,7 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g13" },
         {
           type: "text",
-          text: ", with the river forming the northern boundary, and a gate in each of the other three walls.",
+          text: ", you'll see the familiar outline of the park, with the river forming the northern boundary, and a gate in each of the other three walls.",
         },
       ],
     },
@@ -216,7 +222,8 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The statue of Diane Gosforth has been moved: it used to be close to the south gate, but it's now immediately to the north of the lily pond, almost in the centre of the park, " },
+          text: "The statue of Diane Gosforth has been moved: it used to be close to the south gate, but it's now immediately to the north of the lily pond, almost in the centre of the park, ",
+        },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
       ],
@@ -233,6 +240,7 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MARK",
       segments: [
+        { type: "text", text: "There are two areas that are " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
@@ -254,7 +262,7 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "There have been tennis courts in the park for many years, and " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: ", from four to eight." },
       ],
     },
     {
@@ -269,8 +277,9 @@ export const CAM15_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MARK",
       segments: [
+        { type: "text", text: "Something else " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: ". This is right next to the lily pond on the same side as the west gate." },
+        { type: "text", text: " is the new fitness area. This is right next to the lily pond on the same side as the west gate." },
       ],
     },
     {

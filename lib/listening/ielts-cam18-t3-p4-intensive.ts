@@ -13,14 +13,14 @@ export const CAM18_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g6", answers: ["But unfortunately"] },
     { id: "g7", answers: ["for one thing"] },
     { id: "g8", answers: ["compared with how they were"] },
-    { id: "g9", answers: ["So there's a lot more of them", "So there is a lot more of them"] },
+    { id: "g9", answers: ["there's a lot more of them", "there is a lot more of them"] },
     { id: "g10", answers: ["But in spite of this"] },
-    { id: "g11", answers: ["one thing you may be surprised to learn"] },
+    { id: "g11", answers: ["you may be surprised to learn"] },
     { id: "g12", answers: ["And it isn't just", "And it is not just"] },
     { id: "g13", answers: ["A greater threat is"] },
     { id: "g14", answers: ["In addition", "in addition"] },
     { id: "g15", answers: ["And even if"] },
-    { id: "g16", answers: ["So those are some of the problems"] },
+    { id: "g16", answers: ["those are some of the problems"] },
     { id: "g17", answers: ["Let's consider now", "Let us consider now"] },
     { id: "g18", answers: ["As we continue to push forward"] },
   ],
@@ -87,6 +87,7 @@ export const CAM18_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "So " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -98,7 +99,7 @@ export const CAM18_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: null,
       segments: [
         { type: "gap", gapId: "g10" },
-        { type: "text", text: ", " },
+        { type: "text", text: ", one thing " },
         { type: "gap", gapId: "g11" },
         {
           type: "text",
@@ -159,6 +160,7 @@ export const CAM18_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "So " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: " that we're facing. " },
         { type: "gap", gapId: "g17" },

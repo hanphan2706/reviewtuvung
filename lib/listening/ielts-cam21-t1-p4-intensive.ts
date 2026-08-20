@@ -7,20 +7,20 @@ export const CAM21_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["this has only become possible"] },
     { id: "g2", answers: ["without which industry could not exist"] },
-    { id: "g3", answers: ["we'd have no machines and no transportation", "we would have no machines and no transportation"] },
+    { id: "g3", answers: ["no machines and no transportation"] },
     { id: "g4", answers: ["there's a third resource that's essential", "there is a third resource that is essential"] },
     { id: "g5", answers: ["concern's been growing", "concern has been growing"] },
     { id: "g6", answers: ["don't just spring up overnight", "do not just spring up overnight"] },
-    { id: "g7", answers: ["they can easily change what crop they produce"] },
+    { id: "g7", answers: ["easily change"] },
     { id: "g8", answers: ["that's much harder", "that is much harder"] },
-    { id: "g9", answers: ["the rubber tree's very choosy about where it grows", "the rubber tree is very choosy about where it grows"] },
+    { id: "g9", answers: ["very choosy about"] },
     { id: "g10", answers: ["It's very labour-intensive", "It is very labour-intensive"] },
     { id: "g11", answers: ["this is also possible with rubber"] },
-    { id: "g12", answers: ["very little genetic diversity among the trees"] },
-    { id: "g13", answers: ["which in turn makes them very vulnerable to disease"] },
+    { id: "g12", answers: ["very little genetic diversity"] },
+    { id: "g13", answers: ["very vulnerable to disease"] },
     { id: "g14", answers: ["easier and more profitable for them"] },
-    { id: "g15", answers: ["this looks likely to continue in the future"] },
-    { id: "g16", answers: ["it's also possible to make rubber synthetically", "it is also possible to make rubber synthetically"] },
+    { id: "g15", answers: ["looks likely to continue"] },
+    { id: "g16", answers: ["make rubber synthetically"] },
     { id: "g17", answers: ["it can't replace natural rubber", "it cannot replace natural rubber"] },
     { id: "g18", answers: ["they're very adaptable", "they are very adaptable"] },
   ],
@@ -38,7 +38,7 @@ export const CAM21_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "One of these is metal – without that " },
+        { type: "text", text: "One of these is metal – without that we'd have " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: ". Another is fossil fuels, which we need to power those machines. But " },
         { type: "gap", gapId: "g4" },
@@ -78,12 +78,12 @@ export const CAM21_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "And this leads to another problem. With most crops, farmers don't have to think very far ahead, so ",
+          text: "And this leads to another problem. With most crops, farmers don't have to think very far ahead, so they can ",
         },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
-          text: ", or how much of a crop they produce, if they find the demand for that crop is rising or falling. But if you have to plant eight or ten years ahead, ",
+          text: " what crop they produce, or how much of a crop they produce, if they find the demand for that crop is rising or falling. But if you have to plant eight or ten years ahead, ",
         },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
@@ -92,11 +92,11 @@ export const CAM21_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "And also " },
+        { type: "text", text: "And also the rubber tree's " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: ". It needs the right temperature, the right amount of rainfall, and the right altitude – not too high and not too low. The result is that it can't be grown in the northern or southern parts of the globe, only around the equator.",
+          text: " where it grows. It needs the right temperature, the right amount of rainfall, and the right altitude – not too high and not too low. The result is that it can't be grown in the northern or southern parts of the globe, only around the equator.",
         },
       ],
     },
@@ -130,7 +130,7 @@ export const CAM21_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "And in the last few years, there have been new threats to the supply of natural rubber. One problem is linked to the fact that nearly all the rubber trees in South-East Asia are descended from just a small number of seeds brought from Brazil in the nineteenth century. This means that there's ",
         },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: ", " },
+        { type: "text", text: " among the trees, which in turn makes them " },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
@@ -148,16 +148,16 @@ export const CAM21_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g14" },
         {
           type: "text",
-          text: ". And finally, in recent years South-East Asia, like other parts of the world, has been repeatedly hit by extreme types of weather, and ",
+          text: ". And finally, in recent years South-East Asia, like other parts of the world, has been repeatedly hit by extreme types of weather, and this ",
         },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: "." },
+        { type: "text", text: " in the future." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "However, as well as using natural rubber, " },
+        { type: "text", text: "However, as well as using natural rubber, it's also possible to " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",

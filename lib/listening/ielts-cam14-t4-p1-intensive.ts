@@ -5,74 +5,42 @@ import type {
 
 export const CAM14_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    {
-      id: "g1",
-      answers: [
-        "I'm arranging a party for my parents' fiftieth wedding anniversary",
-        "I am arranging a party for my parents' fiftieth wedding anniversary",
-      ],
-    },
-    {
-      id: "g2",
-      answers: [
-        "I'm ringing to ask about hiring a room",
-        "I am ringing to ask about hiring a room",
-      ],
-    },
-    { id: "g3", answers: ["I'm sure we can help you with that", "I am sure we can help you with that"] },
-    { id: "g4", answers: ["Will you be having a sit-down meal or a buffet"] },
+    { id: "g1", answers: ["arranging a party"] },
+    { id: "g2", answers: ["hiring a room"] },
+    { id: "g3", answers: ["help you with that"] },
+    { id: "g4", answers: ["sit-down meal or a buffet"] },
     {
       id: "g5",
       answers: [
-        "And do you know how many people there'll be",
-        "And do you know how many people there will be",
+        "how many people there'll be",
+        "how many people there will be",
       ],
     },
-    {
-      id: "g6",
-      answers: [
-        "there's room for four or five musicians in the gallery overlooking the room",
-        "there is room for four or five musicians in the gallery overlooking the room",
-      ],
-    },
-    {
-      id: "g7",
-      answers: ["the music can be loud enough for dancing, but not too loud for conversation"],
-    },
+    { id: "g6", answers: ["gallery overlooking the room"] },
+    { id: "g7", answers: ["loud enough for dancing"] },
     {
       id: "g8",
       answers: [
-        "I really don't like it when you can't talk",
-        "I really do not like it when you cannot talk",
-        "I really don't like it when you cannot talk",
+        "when you can't talk",
+        "when you cannot talk",
       ],
     },
-    { id: "g9", answers: ["there are French windows leading out onto the terrace"] },
-    {
-      id: "g10",
-      answers: ["that side of the hotel gets the sun in the afternoon and early evening"],
-    },
-    { id: "g11", answers: ["you can stroll through there to the river"] },
+    { id: "g9", answers: ["leading out onto the terrace"] },
+    { id: "g10", answers: ["gets the sun"] },
+    { id: "g11", answers: ["stroll through there"] },
     {
       id: "g12",
       answers: ["it isn't visible from the hotel", "it is not visible from the hotel"],
     },
-    { id: "g13", answers: ["And can you go outside from the room"] },
-    { id: "g14", answers: ["the windows look out onto the lake"] },
-    {
-      id: "g15",
-      answers: [
-        "who'll be with you throughout the party",
-        "who will be with you throughout the party",
-      ],
-    },
+    { id: "g13", answers: ["go outside from the room"] },
+    { id: "g14", answers: ["look out onto the lake"] },
+    { id: "g15", answers: ["throughout the party"] },
     { id: "g16", answers: ["they can easily get people's attention", "they can easily get peoples' attention"] },
-    { id: "g17", answers: ["They each sleep two to four people"] },
+    { id: "g17", answers: ["two to four people"] },
     {
       id: "g18",
       answers: [
-        "it's worth booking in advance if you possibly can",
-        "it is worth booking in advance if you possibly can",
+        "booking in advance",
       ],
     },
   ],
@@ -89,9 +57,9 @@ export const CAM14_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SAM",
       segments: [
-        { type: "text", text: "Good morning, Andrew. My name's Samantha. " },
+        { type: "text", text: "Good morning, Andrew. My name's Samantha. I'm " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: ", and " },
+        { type: "text", text: " for my parents' fiftieth wedding anniversary, and I'm ringing to ask about " },
         { type: "gap", gapId: "g2" },
         {
           type: "text",
@@ -102,9 +70,9 @@ export const CAM14_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ANDREW",
       segments: [
-        { type: "text", text: "OK, " },
+        { type: "text", text: "OK, I'm sure we can " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: ". " },
+        { type: "text", text: ". Will you be having a " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "?" },
       ],
@@ -112,7 +80,11 @@ export const CAM14_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { speaker: "SAM", segments: [{ type: "text", text: "Probably a sit-down." }] },
     {
       speaker: "ANDREW",
-      segments: [{ type: "gap", gapId: "g5" }, { type: "text", text: "?" }],
+      segments: [
+        { type: "text", text: "And do you know " },
+        { type: "gap", gapId: "g5" },
+        { type: "text", text: "?" },
+      ],
     },
     { speaker: "SAM", segments: [{ type: "text", text: "Around eighty, I think." }] },
     {
@@ -128,21 +100,25 @@ export const CAM14_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ANDREW",
       segments: [
-        { type: "text", text: "If you have live music, " },
+        { type: "text", text: "If you have live music, there's room for four or five musicians in the " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ". Our guests usually appreciate the fact that " },
+        { type: "text", text: ". Our guests usually appreciate the fact that the music can be " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: ", but not too loud for conversation." },
       ],
     },
     {
       speaker: "SAM",
-      segments: [{ type: "gap", gapId: "g8" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "I really don't like it " },
+        { type: "gap", gapId: "g8" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: "ANDREW",
       segments: [
-        { type: "text", text: "Exactly. Now the Adelphi Room is at the back of the hotel, and " },
+        { type: "text", text: "Exactly. Now the Adelphi Room is at the back of the hotel, and there are French windows " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -154,9 +130,9 @@ export const CAM14_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ANDREW",
       segments: [
-        { type: "text", text: "Southwest, so " },
+        { type: "text", text: "Southwest, so that side of the hotel " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " in the afternoon and early evening." },
       ],
     },
     { speaker: "SAM", segments: [{ type: "text", text: "Very nice." }] },
@@ -165,9 +141,10 @@ export const CAM14_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "From the terrace you can see the area of trees within the grounds of the hotel, or " },
+          text: "From the terrace you can see the area of trees within the grounds of the hotel, or you can ",
+        },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: " – that's on the far side, so " },
+        { type: "text", text: " to the river – that's on the far side, so " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -184,12 +161,16 @@ export const CAM14_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "SAM",
-      segments: [{ type: "gap", gapId: "g13" }, { type: "text", text: "?" }],
+      segments: [
+        { type: "text", text: "And can you " },
+        { type: "gap", gapId: "g13" },
+        { type: "text", text: "?" },
+      ],
     },
     {
       speaker: "ANDREW",
       segments: [
-        { type: "text", text: "No, the Carlton Room is on the first floor, but on one side " },
+        { type: "text", text: "No, the Carlton Room is on the first floor, but on one side the windows " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
       ],
@@ -206,7 +187,7 @@ export const CAM14_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ANDREW",
       segments: [
-        { type: "text", text: "As well as a meal, you can have an MC, a Master of Ceremonies, " },
+        { type: "text", text: "As well as a meal, you can have an MC, a Master of Ceremonies, who'll be with you " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
       ],
@@ -245,7 +226,8 @@ export const CAM14_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes, there are five in the grounds, all self-contained. " },
+          text: "Yes, there are five in the grounds, all self-contained. They each sleep ",
+        },
         { type: "gap", gapId: "g17" },
         { type: "text", text: " and have their own living room, bathroom and small kitchen." },
       ],
@@ -278,9 +260,10 @@ export const CAM14_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "And the tennis courts, but there is a small additional payment for those. We have four courts, and " },
+          text: "And the tennis courts, but there is a small additional payment for those. We have four courts, and it's worth ",
+        },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: ", as there can be quite a long waiting list for them!" },
+        { type: "text", text: " if you possibly can, as there can be quite a long waiting list for them!" },
       ],
     },
     {

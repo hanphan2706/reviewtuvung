@@ -5,65 +5,57 @@ import type {
 
 export const CAM15_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["could I ask you for some advice, please"] },
+    { id: "g1", answers: ["for some advice"] },
     {
       id: "g2",
-      answers: ["I'm not sure how to go about it", "I am not sure how to go about it"],
+      answers: ["how to go about it"],
     },
-    { id: "g3", answers: ["comparing the coverage of a particular story"] },
+    { id: "g3", answers: ["a particular story"] },
     { id: "g4", answers: ["I really enjoyed writing it"] },
-    { id: "g5", answers: ["You must have done it last year"] },
-    { id: "g6", answers: ["that shows how important the editor thinks the story is"] },
+    { id: "g5", answers: ["done it last year"] },
+    { id: "g6", answers: ["how important the editor thinks"] },
     {
       id: "g7",
-      answers: [
-        "It's all part of attracting the reader's attention",
-        "It is all part of attracting the reader's attention",
-      ],
+      answers: ["attracting the reader's attention"],
     },
-    { id: "g8", answers: ["they can have a big effect on the reader's understanding of the story"] },
-    { id: "g9", answers: ["not many people read beyond the first paragraph"] },
-    { id: "g10", answers: ["newspapers sometimes give wrong or misleading information"] },
+    { id: "g8", answers: ["a big effect on"] },
+    { id: "g9", answers: ["beyond the first paragraph"] },
+    { id: "g10", answers: ["wrong or misleading information"] },
     {
       id: "g11",
       answers: [
-        "try and work out what's true and what isn't",
-        "try and work out what is true and what is not",
-        "try and work out what's true and what is not",
+        "what's true and what isn't",
+        "what is true and what is not",
+        "what's true and what is not",
       ],
     },
-    { id: "g12", answers: ["it may seem to be to inform the public"] },
+    { id: "g12", answers: ["to inform the public"] },
     { id: "g13", answers: ["without feeling patronised", "without feeling patronized"] },
     {
       id: "g14",
       answers: [
-        "it'll be easier and more fun if it's something you're interested in",
-        "it will be easier and more fun if it is something you are interested in",
-        "it'll be easier and more fun if it is something you're interested in",
+        "something you're interested in",
+        "something you are interested in",
       ],
     },
     { id: "g15", answers: ["I'm quite keen on politics", "I am quite keen on politics"] },
     {
       id: "g16",
-      answers: [
-        "I couldn't find two on the same topic that I felt like analysing",
-        "I could not find two on the same topic that I felt like analysing",
-        "I couldn't find two on the same topic that I felt like analyzing",
-      ],
+      answers: ["on the same topic"],
     },
     {
       id: "g17",
       answers: ["I won't even bother to look", "I will not even bother to look"],
     },
-    { id: "g18", answers: ["I usually find stories like that raise quite strong feelings in me"] },
+    { id: "g18", answers: ["raise quite strong feelings"] },
   ],
   lines: [
     {
       speaker: "HAZEL",
       segments: [
-        { type: "text", text: "Tom, " },
+        { type: "text", text: "Tom, could I ask you " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "?" },
+        { type: "text", text: ", please?" },
       ],
     },
     {
@@ -73,9 +65,9 @@ export const CAM15_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "HAZEL",
       segments: [
-        { type: "text", text: "It's my first media studies assignment, and " },
+        { type: "text", text: "It's my first media studies assignment, and I'm not sure " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ". " },
+        { type: "text", text: ". You must have " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: "." },
       ],
@@ -83,7 +75,7 @@ export const CAM15_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TOM",
       segments: [
-        { type: "text", text: "Is that the one " },
+        { type: "text", text: "Is that the one comparing the coverage of " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: " in a range of newspapers?" },
       ],
@@ -115,11 +107,11 @@ export const CAM15_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TOM",
       segments: [
-        { type: "text", text: "Exactly. And " },
+        { type: "text", text: "Exactly. And that shows " },
         { type: "gap", gapId: "g6" },
         {
           type: "text",
-          text: ". Then there's the size – how many column inches the story is given, how many columns it spreads over.",
+          text: " the story is. Then there's the size – how many column inches the story is given, how many columns it spreads over.",
         },
       ],
     },
@@ -127,7 +119,7 @@ export const CAM15_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TOM",
       segments: [
-        { type: "text", text: "It certainly does. " },
+        { type: "text", text: "It certainly does. It's all part of " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -144,11 +136,12 @@ export const CAM15_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TOM",
       segments: [
-        { type: "text", text: "Yes, you need to consider those, too, because " },
+        { type: "text", text: "Yes, you need to consider those, too, because they can have " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
-          text: " – sometimes a bigger effect than the text itself. Then you'll need to look at how the item is put together: what structure is it given? Bear in mind that " },
+          text: " the reader's understanding of the story – sometimes a bigger effect than the text itself. Then you'll need to look at how the item is put together: what structure is it given? Bear in mind that not many people read ",
+        },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -159,7 +152,7 @@ export const CAM15_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "HAZEL",
       segments: [
-        { type: "text", text: "And " },
+        { type: "text", text: "And newspapers sometimes give " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: ", don't they? Either deliberately or by accident. Should I be looking at that, too?" },
       ],
@@ -167,11 +160,12 @@ export const CAM15_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TOM",
       segments: [
-        { type: "text", text: "Yes, if you can. Compare what's in different versions, and as far as possible, " },
+        { type: "text", text: "Yes, if you can. Compare what's in different versions, and as far as possible, try and work out " },
         { type: "gap", gapId: "g11" },
         {
           type: "text",
-          text: ". And that relates to a very important point: what's the writer's purpose, or at least the most important one, if they have several. " },
+          text: ". And that relates to a very important point: what's the writer's purpose, or at least the most important one, if they have several. It may seem to be ",
+        },
         { type: "gap", gapId: "g12" },
         {
           type: "text",
@@ -193,7 +187,8 @@ export const CAM15_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "That's right – about their knowledge of the subject, their attitudes, and their level of education, which means writing so that the readers understand " },
+          text: "That's right – about their knowledge of the subject, their attitudes, and their level of education, which means writing so that the readers understand ",
+        },
         { type: "gap", gapId: "g13" },
         { type: "text", text: ". All of that will make a difference to how the story is presented." },
       ],
@@ -204,7 +199,8 @@ export const CAM15_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "No – national or international politics, the arts … Anything, as long as it's covered in two or three newspapers. Though of course " },
+          text: "No – national or international politics, the arts … Anything, as long as it's covered in two or three newspapers. Though of course it'll be easier and more fun if it's ",
+        },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " and know something about." },
       ],
@@ -222,9 +218,10 @@ export const CAM15_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I was interested in how newspapers express their opinions explicitly, so I wanted to compare editorials in different papers, but when I started looking " },
+          text: "I was interested in how newspapers express their opinions explicitly, so I wanted to compare editorials in different papers, but when I started looking I couldn't find two ",
+        },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " that I felt like analysing." },
       ],
     },
     {
@@ -247,10 +244,11 @@ export const CAM15_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "HAZEL",
       segments: [
+        { type: "text", text: "I usually find stories like that " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",
-          text: "! I'll avoid that. Perhaps I'll choose an arts topic, like different reviews of a film, or something about funding for the arts – I'll think about that.",
+          text: " in me! I'll avoid that. Perhaps I'll choose an arts topic, like different reviews of a film, or something about funding for the arts – I'll think about that.",
         },
       ],
     },

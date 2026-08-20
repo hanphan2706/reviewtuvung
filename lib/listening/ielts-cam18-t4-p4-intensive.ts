@@ -14,12 +14,12 @@ export const CAM18_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g7", answers: ["He produced a lot"] },
     { id: "g8", answers: ["It was the only property"] },
     { id: "g9", answers: ["many people consider"] },
-    { id: "g10", answers: ["that he felt were important to him"] },
+    { id: "g10", answers: ["he felt were important to him"] },
     { id: "g11", answers: ["created himself"] },
     { id: "g12", answers: ["There's a strong Chinese influence", "There is a strong Chinese influence"] },
     { id: "g13", answers: ["forms the hallway to"] },
     { id: "g14", answers: ["In contrast to"] },
-    { id: "g15", answers: ["he was also true to his values"] },
+    { id: "g15", answers: ["true to his values"] },
     { id: "g16", answers: ["What's more", "What is more"] },
     { id: "g17", answers: ["they decided to donate it"] },
     { id: "g18", answers: ["as I mentioned earlier"] },
@@ -116,7 +116,7 @@ export const CAM18_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "He lived in the house with his family … and portraits of its members still hang in rooms on the ground floor, along with drawings " },
+          text: "He lived in the house with his family … and portraits of its members still hang in rooms on the ground floor, along with drawings that " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
@@ -180,7 +180,7 @@ export const CAM18_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So, Victor Hugo was a man of many talents, but " },
+        { type: "text", text: "So, Victor Hugo was a man of many talents, but he was also " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",

@@ -9,126 +9,96 @@ export const CAM12_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       id: "g2",
       answers: [
-        "My name's Joy Parkins and I'm the restaurant manager",
-        "My name is Joy Parkins and I am the restaurant manager",
-        "My name's Joy Parkins and I am the restaurant manager",
+        "I'm the restaurant manager",
+        "I am the restaurant manager",
       ],
     },
-    {
-      id: "g3",
-      answers: [
-        "none of you've had any previous experience as kitchen assistants",
-        "none of you have had any previous experience as kitchen assistants",
-      ],
-    },
-    { id: "g4", answers: ["you might be feeling a bit nervous now"] },
-    {
-      id: "g5",
-      answers: [
-        "they might get shouted at sometimes, but it's nothing personal",
-        "they might get shouted at sometimes, but it is nothing personal",
-      ],
-    },
-    {
-      id: "g6",
-      answers: ["we might think about moving you up and giving you some more responsibility"],
-    },
-    {
-      id: "g7",
-      answers: [
-        "you've all shown up on time, which is an excellent start",
-        "you have all shown up on time, which is an excellent start",
-      ],
-    },
-    { id: "g8", answers: ["the floors can get very wet and slippery"] },
-    {
-      id: "g9",
-      answers: ["Those of you with long hair have got it well out of the way"],
-    },
+    { id: "g3", answers: ["any previous experience"] },
+    { id: "g4", answers: ["feeling a bit nervous"] },
+    { id: "g5", answers: ["get shouted at"] },
+    { id: "g6", answers: ["moving you up"] },
+    { id: "g7", answers: ["shown up on time"] },
+    { id: "g8", answers: ["can get very"] },
+    { id: "g9", answers: ["out of the way"] },
     {
       id: "g10",
       answers: [
-        "Fortunately we've got our Head Chef back",
-        "Fortunately we have got our Head Chef back",
+        "Fortunately we've got",
+        "Fortunately we have got",
       ],
     },
-    {
-      id: "g11",
-      answers: [
-        "I'll tell you a bit more about the job in a minute but first, some general regulations",
-        "I will tell you a bit more about the job in a minute but first, some general regulations",
-      ],
-    },
+    { id: "g11", answers: ["in a minute"] },
     {
       id: "g12",
-      answers: ["until you've been properly trained", "until you have been properly trained"],
+      answers: [
+        "until you've been properly trained",
+        "until you have been properly trained",
+      ],
     },
     { id: "g13", answers: ["that's Emma and Jake, isn't it"] },
-    {
-      id: "g14",
-      answers: ["until you've been shown how it works", "until you have been shown how it works"],
-    },
-    {
-      id: "g15",
-      answers: ["you'll get a break in the middle", "you will get a break in the middle"],
-    },
-    {
-      id: "g16",
-      answers: ["we do have a very efficient air conditioning system compared with some kitchens"],
-    },
-    {
-      id: "g17",
-      answers: [
-        "so that you learn while you're on the job",
-        "so that you learn while you are on the job",
-      ],
-    },
-    { id: "g18", answers: ["One person whose name you must remember is David Field"] },
+    { id: "g14", answers: ["how it works"] },
+    { id: "g15", answers: ["a break in the middle"] },
+    { id: "g16", answers: ["air conditioning system"] },
+    { id: "g17", answers: ["on the job"] },
+    { id: "g18", answers: ["you must remember"] },
   ],
   lines: [
-    { speaker: null, segments: [{ type: "gap", gapId: "g1" }, { type: "text", text: "." }] },
-    { speaker: null, segments: [{ type: "gap", gapId: "g2" }, { type: "text", text: "." }] },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "And I understand that " },
+        { type: "gap", gapId: "g1" },
+        { type: "text", text: "." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "My name's Joy Parkins and " },
+        { type: "gap", gapId: "g2" },
+        { type: "text", text: "." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "And I understand that none of you've had " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "?" },
+        { type: "text", text: " as kitchen assistants?" },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, you might be " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: ", but most of our kitchen assistants say they enjoy the work." },
+        { type: "text", text: " now, but most of our kitchen assistants say they enjoy the work." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "OK, " },
+        { type: "text", text: "OK, they might " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ", and they're pleased that they have so many different things to do, which means they never get bored.",
+          text: " sometimes, but it's nothing personal, and they're pleased that they have so many different things to do, which means they never get bored.",
         },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "And I'll tell you straightaway that if you do well, " },
+        { type: "text", text: "And I'll tell you straightaway that if you do well, we might think about " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " and giving you some more responsibility." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Right, well, " },
+        { type: "text", text: "Right, well, you've all " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: ", which is an excellent start." },
       ],
     },
     {
@@ -136,15 +106,16 @@ export const CAM12_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Now I'm glad to see none of you have unsuitable footwear, so that's good - you need to be careful as ",
+          text: "Now I'm glad to see none of you have unsuitable footwear, so that's good - you need to be careful as the floors ",
         },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: "." },
+        { type: "text", text: " wet and slippery." },
       ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Those of you with long hair have got it well " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -167,26 +138,24 @@ export const CAM12_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g10" },
         {
           type: "text",
-          text: " - he was away on holiday all last week which meant the other chefs had extra work.",
+          text: " our Head Chef back - he was away on holiday all last week which meant the other chefs had extra work.",
         },
       ],
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g11" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "I'll tell you a bit more about the job " },
+        { type: "gap", gapId: "g11" },
+        { type: "text", text: " but first, some general regulations." },
+      ],
     },
     {
       speaker: null,
       segments: [
-        {
-          type: "text",
-          text: "For all of you, whatever your age, there's some equipment you mustn't use ",
-        },
+        { type: "text", text: "For all of you, whatever your age, there's some equipment you mustn't use " },
         { type: "gap", gapId: "g12" },
-        {
-          type: "text",
-          text: ", like the waste disposal system for example, for health and safety reasons.",
-        },
+        { type: "text", text: ", like the waste disposal system for example, for health and safety reasons." },
       ],
     },
     {
@@ -206,10 +175,7 @@ export const CAM12_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        {
-          type: "text",
-          text: "And of course none of you are allowed to use the electric mixer ",
-        },
+        { type: "text", text: "And of course none of you are allowed to use the electric mixer until you've been shown " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
       ],
@@ -235,7 +201,7 @@ export const CAM12_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "But however long the hours are, " },
+        { type: "text", text: "But however long the hours are, you'll get " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
       ],
@@ -254,15 +220,17 @@ export const CAM12_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "You'll find you don't have much chance to take it easy - when someone tells you to do something you need to do it straightaway - but at least ",
+          text: "You'll find you don't have much chance to take it easy - when someone tells you to do something you need to do it straightaway - but at least we do have a very efficient ",
         },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " compared with some kitchens." },
       ],
     },
     {
       speaker: null,
-      segments: [{ type: "text", text: "Now let me tell you about some of the people you need to know." }],
+      segments: [
+        { type: "text", text: "Now let me tell you about some of the people you need to know." },
+      ],
     },
     {
       speaker: null,
@@ -278,7 +246,7 @@ export const CAM12_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I'll be trying to get you to work with as many different people in the kitchen as possible, ",
+          text: "I'll be trying to get you to work with as many different people in the kitchen as possible, so that you learn while you're ",
         },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
@@ -286,7 +254,11 @@ export const CAM12_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g18" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "One person whose name " },
+        { type: "gap", gapId: "g18" },
+        { type: "text", text: " is David Field." },
+      ],
     },
     {
       speaker: null,
@@ -326,7 +298,9 @@ export const CAM12_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "text", text: "And finally, there's Mike Smith." }],
+      segments: [
+        { type: "text", text: "And finally, there's Mike Smith." },
+      ],
     },
     {
       speaker: null,
@@ -337,7 +311,12 @@ export const CAM12_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         },
       ],
     },
-    { speaker: null, segments: [{ type: "text", text: "OK, now the next thing …" }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "OK, now the next thing …" },
+      ],
+    },
   ],
 };
 

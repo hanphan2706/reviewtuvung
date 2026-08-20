@@ -7,108 +7,34 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "we've been looking at how man-made changes in our environment can affect wildlife",
-        "we have been looking at how man-made changes in our environment can affect wildlife",
-      ],
+      answers: ["we've been looking at", "we have been looking at"],
     },
-    {
-      id: "g2",
-      answers: [
-        "Mercury's one of the 120 or so elements that make up all matter",
-        "Mercury is one of the 120 or so elements that make up all matter",
-      ],
-    },
+    { id: "g2", answers: ["make up all matter"] },
     {
       id: "g3",
       answers: ["It's a shiny, silvery substance", "It is a shiny, silvery substance"],
     },
-    {
-      id: "g4",
-      answers: [
-        "it's not used much for domestic purposes now because it's highly toxic",
-        "it is not used much for domestic purposes now because it is highly toxic",
-      ],
-    },
-    {
-      id: "g5",
-      answers: [
-        "the amount of mercury in the environment's increasing",
-        "the amount of mercury in the environment is increasing",
-      ],
-    },
-    { id: "g6", answers: ["The main source of energy that most of them use is still coal"] },
-    {
-      id: "g7",
-      answers: [
-        "when it's burned it releases mercury into the atmosphere",
-        "when it is burned it releases mercury into the atmosphere",
-      ],
-    },
-    {
-      id: "g8",
-      answers: [
-        "she's looking for more subtle sub-effects",
-        "she is looking for more subtle sub-effects",
-      ],
-    },
-    {
-      id: "g9",
-      answers: [
-        "And she's particularly focusing on the effects of mercury on bird song",
-        "And she is particularly focusing on the effects of mercury on bird song",
-      ],
-    },
-    {
-      id: "g10",
-      answers: ["the process of song learning happens at a particular stage in the birds' development"],
-    },
+    { id: "g4", answers: ["for domestic purposes"] },
+    { id: "g5", answers: ["the amount of mercury"] },
+    { id: "g6", answers: ["The main source of energy"] },
+    { id: "g7", answers: ["into the atmosphere"] },
+    { id: "g8", answers: ["more subtle sub-effects"] },
+    { id: "g9", answers: ["particularly focusing on"] },
+    { id: "g10", answers: ["at a particular stage"] },
     {
       id: "g11",
-      answers: [
-        "they're less attractive to female birds",
-        "they are less attractive to female birds",
-      ],
+      answers: ["they're less attractive to female birds", "they are less attractive to female birds"],
     },
-    {
-      id: "g12",
-      answers: [
-        "Now the way she's carrying out this research is worth thinking about",
-        "Now the way she is carrying out this research is worth thinking about",
-      ],
-    },
-    {
-      id: "g13",
-      answers: [
-        "She's using a mixture of studies using birds kept in laboratories, and studies carried out outdoors in the wild",
-        "She is using a mixture of studies using birds kept in laboratories, and studies carried out outdoors in the wild",
-      ],
-    },
+    { id: "g12", answers: ["worth thinking about"] },
+    { id: "g13", answers: ["a mixture of studies"] },
     {
       id: "g14",
-      answers: [
-        "they don't have to worry about going out and finding the birds in order to observe them",
-        "they do not have to worry about going out and finding the birds in order to observe them",
-      ],
+      answers: ["don't have to worry", "do not have to worry"],
     },
-    { id: "g15", answers: ["they may be transporting mercury far from contaminated sites"] },
-    {
-      id: "g16",
-      answers: ["these birds likely had mercury levels high enough to warrant concern for human consumption"],
-    },
-    {
-      id: "g17",
-      answers: [
-        "this process is very similar in the brain regions it involves and even the genes that are involved",
-      ],
-    },
-    {
-      id: "g18",
-      answers: [
-        "whether more value is placed on human economic wellbeing or environmental wellbeing",
-        "whether more value is placed on human economic well-being or environmental well-being",
-      ],
-    },
+    { id: "g15", answers: ["far from contaminated sites"] },
+    { id: "g16", answers: ["warrant concern for"] },
+    { id: "g17", answers: ["even the genes that are involved"] },
+    { id: "g18", answers: ["more value is placed on"] },
   ],
   lines: [
     {
@@ -116,7 +42,7 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "OK, so " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "." },
+        { type: "text", text: " how man-made changes in our environment can affect wildlife." },
       ],
     },
     {
@@ -130,6 +56,7 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Mercury's one of the 120 or so elements that " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: ", and it has the symbol Hg." },
       ],
@@ -144,9 +71,9 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "You may have seen it in old-fashioned thermometers, but " },
+        { type: "text", text: "You may have seen it in old-fashioned thermometers, but it's not used much " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "." },
+        { type: "text", text: " now because it's highly toxic." },
       ],
     },
     {
@@ -154,7 +81,7 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "But the problem is that " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "." },
+        { type: "text", text: " in the environment's increasing." },
       ],
     },
     {
@@ -170,7 +97,7 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: null,
       segments: [
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ", and " },
+        { type: "text", text: " that most of them use is still coal, and when it's burned it releases mercury " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -207,7 +134,7 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "And rather than looking at how many birds are actually killed by mercury poisoning, ",
+          text: "And rather than looking at how many birds are actually killed by mercury poisoning, she's looking for ",
         },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
@@ -225,18 +152,19 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "And she's " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: "." },
+        { type: "text", text: " the effects of mercury on bird song." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Now, " },
+        { type: "text", text: "Now, the process of song learning happens " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
-          text: ", and what you may not know is that a young bird seems to acquire this skill by listening to the songs produced by its father, rather than by any other bird.",
+          text: " in the birds' development, and what you may not know is that a young bird seems to acquire this skill by listening to the songs produced by its father, rather than by any other bird.",
         },
       ],
     },
@@ -263,6 +191,7 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Now the way she's carrying out this research is " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -270,8 +199,9 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "She's using " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " using birds kept in laboratories, and studies carried out outdoors in the wild." },
       ],
     },
     {
@@ -286,9 +216,9 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "And of course " },
+        { type: "text", text: "And of course they " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: "." },
+        { type: "text", text: " about going out and finding the birds in order to observe them." },
       ],
     },
     {
@@ -298,7 +228,7 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Well, because many birds are migratory, " },
+        { type: "text", text: "Well, because many birds are migratory, they may be transporting mercury " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
       ],
@@ -315,9 +245,9 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "But " },
+        { type: "text", text: "But these birds likely had mercury levels high enough to " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " human consumption." },
       ],
     },
     {
@@ -334,7 +264,7 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well, we also know that in humans, mercury causes developmental delays in the acquisition of language, and in fact ",
+          text: "Well, we also know that in humans, mercury causes developmental delays in the acquisition of language, and in fact this process is very similar in the brain regions it involves and ",
         },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
@@ -361,9 +291,9 @@ export const CAM12_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "In the end, it comes down to " },
+        { type: "text", text: "In the end, it comes down to whether " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: "." },
+        { type: "text", text: " human economic wellbeing or environmental wellbeing." },
       ],
     },
     {

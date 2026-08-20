@@ -7,22 +7,22 @@ export const CAM16_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["Thank you for choosing us"] },
     { id: "g2", answers: ["I've been the managing director", "I have been the managing director"] },
-    { id: "g3", answers: ["Stevenson's is quite an old company"] },
-    { id: "g4", answers: ["He was a very determined young man"] },
-    { id: "g5", answers: ["although in fact that never came about"] },
-    { id: "g6", answers: ["there was a delay of five years before that happened"] },
+    { id: "g3", answers: ["quite an old company"] },
+    { id: "g4", answers: ["a very determined young man"] },
+    { id: "g5", answers: ["never came about"] },
+    { id: "g6", answers: ["a delay of five years"] },
     { id: "g7", answers: ["we've expanded the premises considerably", "we have expanded the premises considerably"] },
-    { id: "g8", answers: ["the layout is far from ideal"] },
-    { id: "g9", answers: ["I'd better give you some idea of", "I had better give you some idea of"] },
+    { id: "g8", answers: ["far from ideal"] },
+    { id: "g9", answers: ["give you some idea of"] },
     { id: "g10", answers: ["so you know what to expect"] },
-    { id: "g11", answers: ["your school isn't able to arrange that this year", "your school is not able to arrange that this year"] },
-    { id: "g12", answers: ["I'll briefly help you to orientate yourselves around the site", "I will briefly help you to orientate yourselves around the site"] },
-    { id: "g13", answers: ["which we try to make attractive and welcoming to visitors"] },
-    { id: "g14", answers: ["that'll be where you meet each morning", "that will be where you meet each morning"] },
+    { id: "g11", answers: ["isn't able to arrange", "is not able to arrange"] },
+    { id: "g12", answers: ["orientate yourselves around the site"] },
+    { id: "g13", answers: ["attractive and welcoming"] },
+    { id: "g14", answers: ["meet each morning"] },
     { id: "g15", answers: ["I can confidently say that"] },
-    { id: "g16", answers: ["I'm afraid there's no natural daylight in the room", "I am afraid there is no natural daylight in the room"] },
-    { id: "g17", answers: ["Then you'll need to know where some of the offices are", "Then you will need to know where some of the offices are"] },
-    { id: "g18", answers: ["OK, now are there any questions before we"] },
+    { id: "g16", answers: ["no natural daylight"] },
+    { id: "g17", answers: ["some of the offices"] },
+    { id: "g18", answers: ["are there any questions"] },
   ],
   lines: [
     {
@@ -51,7 +51,11 @@ export const CAM16_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g3" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "Stevenson's is " },
+        { type: "gap", gapId: "g3" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -73,14 +77,18 @@ export const CAM16_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g4" }, { type: "text", text: "!" }],
+      segments: [
+        { type: "text", text: "He was " },
+        { type: "gap", gapId: "g4" },
+        { type: "text", text: "!" },
+      ],
     },
     {
       speaker: null,
       segments: [
         {
           type: "text",
-          text: "Stevenson's long-term plan was to manufacture components for the machine tools industry - ",
+          text: "Stevenson's long-term plan was to manufacture components for the machine tools industry - although in fact that ",
         },
         { type: "gap", gapId: "g5" },
         { type: "text", text: " - and for the automotive industry, that is, cars and lorries." },
@@ -89,11 +97,11 @@ export const CAM16_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "However, " },
+        { type: "text", text: "However, there was " },
         { type: "gap", gapId: "g6" },
         {
           type: "text",
-          text: ", because shortly before the company went into production, Stevenson was given the opportunity to make goods for hospitals and other players in the healthcare industry, so that's what we did for the first five years.",
+          text: " before that happened, because shortly before the company went into production, Stevenson was given the opportunity to make goods for hospitals and other players in the healthcare industry, so that's what we did for the first five years.",
         },
       ],
     },
@@ -111,7 +119,7 @@ export const CAM16_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "However, " },
+        { type: "text", text: "However, the layout is " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
@@ -122,6 +130,7 @@ export const CAM16_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "I'd better " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: " what you'll be doing during your two weeks with us, " },
         { type: "gap", gapId: "g10" },
@@ -151,16 +160,16 @@ export const CAM16_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "In the past, a teacher from your school has come in at the end of each week to find out how the group were getting on, but ",
+          text: "In the past, a teacher from your school has come in at the end of each week to find out how the group were getting on, but your school ",
         },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: "." },
+        { type: "text", text: " that this year." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "OK, now " },
+        { type: "text", text: "OK, now I'll briefly help you to " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -168,9 +177,9 @@ export const CAM16_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "As you can see, we're in the reception area, " },
+        { type: "text", text: "As you can see, we're in the reception area, which we try to make " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " to visitors." },
       ],
     },
     {
@@ -185,7 +194,7 @@ export const CAM16_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "This looks out onto the main road on one side, and some trees on the other, and " },
+        { type: "text", text: "This looks out onto the main road on one side, and some trees on the other, and that'll be where you " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
       ],
@@ -248,14 +257,18 @@ export const CAM16_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The meeting room is the last one on the right, and " },
+        { type: "text", text: "The meeting room is the last one on the right, and I'm afraid there's " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " in the room." },
       ],
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g17" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "Then you'll need to know where " },
+        { type: "gap", gapId: "g17" },
+        { type: "text", text: " are." },
+      ],
     },
     {
       speaker: null,
@@ -303,7 +316,11 @@ export const CAM16_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g18" }, { type: "text", text: " …" }],
+      segments: [
+        { type: "text", text: "OK, now " },
+        { type: "gap", gapId: "g18" },
+        { type: "text", text: " before we …" },
+      ],
     },
   ],
 };

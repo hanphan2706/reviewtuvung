@@ -9,14 +9,14 @@ export const CAM19_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g2", answers: ["It's harder than I expected", "It is harder than I expected"] },
     { id: "g3", answers: ["I'm really struggling with", "I am really struggling with"] },
     { id: "g4", answers: ["Are they hard to control"] },
-    { id: "g5", answers: ["I don't have discipline problems as such", "I do not have discipline problems as such"] },
+    { id: "g5", answers: ["discipline problems as such"] },
     { id: "g6", answers: ["I was wondering about"] },
     { id: "g7", answers: ["Have you thought about"] },
-    { id: "g8", answers: ["Wouldn't that be upsetting for the children", "Would not that be upsetting for the children"] },
+    { id: "g8", answers: ["upsetting for the children"] },
     { id: "g9", answers: ["it's quite straightforward", "it is quite straightforward"] },
     { id: "g10", answers: ["I suppose so"] },
     { id: "g11", answers: ["That might be rather broad"] },
-    { id: "g12", answers: ["I might think about that some more"] },
+    { id: "g12", answers: ["think about that some more"] },
     { id: "g13", answers: ["So can I talk through"] },
     { id: "g14", answers: ["I did a similar experiment"] },
     { id: "g15", answers: ["that wouldn't hurt them", "that would not hurt them"] },
@@ -52,7 +52,7 @@ export const CAM19_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "CLARE",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, I don't have " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
@@ -91,7 +91,7 @@ export const CAM19_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "text", text: " doing an experiment using animals?" },
       ],
     },
-    { speaker: "CLARE", segments: [{ type: "gap", gapId: "g8" }, { type: "text", text: "?" }] },
+    { speaker: "CLARE", segments: [{ type: "text", text: "Wouldn't that be " }, { type: "gap", gapId: "g8" }, { type: "text", text: "?" }] },
     {
       speaker: "JAKE",
       segments: [
@@ -200,7 +200,7 @@ export const CAM19_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Or I could repeat the experiment but change the type of food I provided … or use mice with a different genetic structure. But I think your idea would be more interesting, " },
+          text: "Or I could repeat the experiment but change the type of food I provided … or use mice with a different genetic structure. But I think your idea would be more interesting, I might " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],

@@ -9,46 +9,27 @@ export const CAM12_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       id: "g1",
       answers: ["I'm worried about our case study", "I am worried about our case study"],
     },
-    { id: "g2", answers: ["I missed the lecture where Dr Baker talked us through it"] },
+    { id: "g2", answers: ["talked us through it"] },
     {
       id: "g3",
-      answers: [
-        "OK, well it's quite straightforward",
-        "OK, well it is quite straightforward",
-      ],
+      answers: ["OK, well it's quite straightforward", "OK, well it is quite straightforward"],
     },
     {
       id: "g4",
-      answers: [
-        "We've got our focus - that's tourism at the Horton Castle site",
-        "We have got our focus - that is tourism at the Horton Castle site",
-        "We've got our focus - that is tourism at the Horton Castle site",
-      ],
+      answers: ["We've got our focus", "We have got our focus"],
     },
-    { id: "g5", answers: ["I found some articles and made notes of the main points"] },
-    { id: "g6", answers: ["I know what a pain it is when you forget that"] },
-    {
-      id: "g7",
-      answers: [
-        "It's all going to take a lot of time",
-        "It is all going to take a lot of time",
-      ],
-    },
-    {
-      id: "g8",
-      answers: ["bring along some numerical data that we can add to support our findings"],
-    },
-    { id: "g9", answers: ["I think we have plenty of those already"] },
+    { id: "g5", answers: ["made notes of"] },
+    { id: "g6", answers: ["what a pain it is"] },
+    { id: "g7", answers: ["take a lot of time"] },
+    { id: "g8", answers: ["bring along some numerical data"] },
+    { id: "g9", answers: ["plenty of those already"] },
     {
       id: "g10",
-      answers: [
-        "Oh, I wouldn't have thought of that",
-        "Oh, I would not have thought of that",
-      ],
+      answers: ["I wouldn't have thought", "I would not have thought"],
     },
-    { id: "g11", answers: ["rather than concentrating on details or lots of facts"] },
-    { id: "g12", answers: ["to make it as clear as possible to our readers"] },
-    { id: "g13", answers: ["Things like graphs, or tables, or charts"] },
+    { id: "g11", answers: ["rather than concentrating on"] },
+    { id: "g12", answers: ["as clear as possible"] },
+    { id: "g13", answers: ["graphs, or tables, or charts"] },
     {
       id: "g14",
       answers: [
@@ -58,22 +39,16 @@ export const CAM12_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         "Oh, I had not realized that",
       ],
     },
-    { id: "g15", answers: ["why so few tourists are visiting it"] },
+    { id: "g15", answers: ["so few tourists"] },
     {
       id: "g16",
       answers: ["that's been improved now", "that has been improved now"],
     },
     {
       id: "g17",
-      answers: ["Yes, it's really dry and boring", "Yes, it is really dry and boring"],
+      answers: ["Yes, it's really", "Yes, it is really"],
     },
-    {
-      id: "g18",
-      answers: [
-        "At present it's a bit of a ghost town",
-        "At present it is a bit of a ghost town",
-      ],
-    },
+    { id: "g18", answers: ["a bit of a"] },
   ],
   lines: [
     {
@@ -83,7 +58,7 @@ export const CAM12_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g1" },
         {
           type: "text",
-          text: ". I've done a bit of reading, but I'm not sure what's involved in actually writing a case study - ",
+          text: ". I've done a bit of reading, but I'm not sure what's involved in actually writing a case study - I missed the lecture where Dr Baker ",
         },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
@@ -95,15 +70,15 @@ export const CAM12_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g3" },
         { type: "text", text: ". " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: ". And you said you'd done some reading about it." },
+        { type: "text", text: " - that's tourism at the Horton Castle site. And you said you'd done some reading about it." },
       ],
     },
     {
       speaker: "NATALIE",
       segments: [
-        { type: "text", text: "Yes, " },
+        { type: "text", text: "Yes, I found some articles and " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "." },
+        { type: "text", text: " the main points." },
       ],
     },
     {
@@ -118,9 +93,9 @@ export const CAM12_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "NATALIE",
       segments: [
-        { type: "text", text: "Sure. " },
+        { type: "text", text: "Sure. I know " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " when you forget that." },
       ],
     },
     {
@@ -155,7 +130,7 @@ export const CAM12_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "OK. So we'll need to think about our interview questions and fix times and places for the meetings. ",
+          text: "OK. So we'll need to think about our interview questions and fix times and places for the meetings. It's all going to ",
         },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
@@ -166,13 +141,14 @@ export const CAM12_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Mmm. And if we can, we should ask our interviewees if they can " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: "." },
+        { type: "text", text: " that we can add to support our findings." },
       ],
     },
     { speaker: "NATALIE", segments: [{ type: "text", text: "And photographs?" }] },
     {
       speaker: "DAVE",
       segments: [
+        { type: "text", text: "I think we have " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -183,10 +159,11 @@ export const CAM12_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "NATALIE",
       segments: [
+        { type: "text", text: "Oh, " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
-          text: ". OK, once we've got all this information, I suppose we have to analyse it.",
+          text: " of that. OK, once we've got all this information, I suppose we have to analyse it.",
         },
       ],
     },
@@ -198,7 +175,7 @@ export const CAM12_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "Yes, put it all together and choose what's relevant to the problem we're focusing on, and analyse that carefully to find out if we can identify any trends or regularities there. That's the main thing at this stage, ",
         },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: "." },
+        { type: "text", text: " details or lots of facts." },
       ],
     },
     {
@@ -210,10 +187,10 @@ export const CAM12_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well, then we need to think about what we do with the data we've selected ",
+          text: "Well, then we need to think about what we do with the data we've selected to make it ",
         },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: ". " },
+        { type: "text", text: " to our readers. Things like " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
       ],
@@ -240,12 +217,12 @@ export const CAM12_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "So basically, the problem we're addressing in our case study of the Horton Castle site is ",
+          text: "So basically, the problem we're addressing in our case study of the Horton Castle site is why ",
         },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
-          text: ". And we'll find out more from our interviews, but I did find one report on the internet that suggested that one reason might be because as far as transport goes, access is difficult.",
+          text: " are visiting it. And we'll find out more from our interviews, but I did find one report on the internet that suggested that one reason might be because as far as transport goes, access is difficult.",
         },
       ],
     },
@@ -267,7 +244,7 @@ export const CAM12_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: "NATALIE",
       segments: [
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " dry and boring." },
       ],
     },
     {
@@ -319,11 +296,11 @@ export const CAM12_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "DAVE",
       segments: [
-        { type: "text", text: "But it could be a good thing for the town of Horton. " },
+        { type: "text", text: "But it could be a good thing for the town of Horton. At present it's " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",
-          text: ". Once they've left school and got any skills or qualifications, the young people all get out as fast as they can to get jobs in the city, and the only people left are children and those who've retired.",
+          text: " ghost town. Once they've left school and got any skills or qualifications, the young people all get out as fast as they can to get jobs in the city, and the only people left are children and those who've retired.",
         },
       ],
     },

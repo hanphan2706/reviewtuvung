@@ -5,46 +5,44 @@ import type {
 
 export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["Producing enough energy to meet our needs has become a serious problem"] },
-    { id: "g2", answers: ["Burning fossil fuels, like gas, coal and oil, seriously damages the environment"] },
-    { id: "g3", answers: ["they'll eventually run out", "they will eventually run out"] },
-    { id: "g4", answers: ["without causing pollution"] },
-    { id: "g5", answers: ["which harnesses the movement of the oceans"] },
+    { id: "g1", answers: ["meet our needs"] },
+    { id: "g2", answers: ["seriously damages the environment"] },
     {
-      id: "g6",
-      answers: ["and I'll say a few words about each one", "and I will say a few words about each one"],
+      id: "g3",
+      answers: ["they'll eventually run out", "they will eventually run out"],
     },
-    { id: "g7", answers: ["research is going on to try and come up with a really efficient method"] },
-    { id: "g8", answers: ["This form of energy has plenty of potential"] },
+    { id: "g4", answers: ["without causing pollution"] },
+    { id: "g5", answers: ["movement of the oceans"] },
+    { id: "g6", answers: ["a few words about"] },
+    { id: "g7", answers: ["a really efficient method"] },
+    { id: "g8", answers: ["plenty of potential"] },
     {
       id: "g9",
-      answers: ["Electricity can be generated using onshore systems, using a reservoir, or offshore systems"],
+      answers: ["using a reservoir"],
     },
-    { id: "g10", answers: ["This adds to the difficulty of creating efficient technology"] },
-    { id: "g11", answers: ["which can lead to environmental problems"] },
-    { id: "g12", answers: ["we know the exact time of high and low tides for years to come"] },
-    { id: "g13", answers: ["this occurs naturally in only about forty places on Earth"] },
-    { id: "g14", answers: ["an area of sea water separated from the sea"] },
+    { id: "g10", answers: ["creating efficient technology"] },
+    { id: "g11", answers: ["lead to environmental problems"] },
+    { id: "g12", answers: ["for years to come"] },
+    { id: "g13", answers: ["about forty places"] },
+    { id: "g14", answers: ["separated from the sea"] },
     {
       id: "g15",
-      answers: ["sheltered by a U-shaped breakwater, or dam, built out from the coast"],
+      answers: ["U-shaped breakwater"],
     },
     {
       id: "g16",
-      answers: ["activating the turbines, which turn a generator to produce electricity"],
+      answers: ["turn a generator"],
     },
-    { id: "g17", answers: ["enough electricity for over 150,000 homes"] },
-    {
-      id: "g18",
-      answers: ["it doesn't depend on the weather", "it does not depend on the weather"],
-    },
+    { id: "g17", answers: ["over 150,000 homes"] },
+    { id: "g18", answers: ["depend on the weather"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Producing enough energy to " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "." },
+        { type: "text", text: " has become a serious problem." },
       ],
     },
     {
@@ -59,6 +57,7 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Burning fossil fuels, like gas, coal and oil, " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: " and " },
         { type: "gap", gapId: "g3" },
@@ -81,7 +80,7 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Today I'll outline marine renewable energy – also called ocean energy – ",
+          text: "Today I'll outline marine renewable energy – also called ocean energy – which harnesses the ",
         },
         { type: "gap", gapId: "g5" },
         { type: "text", text: "." },
@@ -92,10 +91,10 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Marine renewable energy can be divided into three main categories: wave energy, tidal energy and ocean thermal energy conversion, ",
+          text: "Marine renewable energy can be divided into three main categories: wave energy, tidal energy and ocean thermal energy conversion, and I'll say ",
         },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " each one." },
       ],
     },
     { speaker: null, segments: [{ type: "text", text: "First, wave energy." }] },
@@ -104,7 +103,7 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Numerous devices have been invented to harvest wave energy, with names such as Wave Dragon, the Penguin and Mighty Whale, and ",
+          text: "Numerous devices have been invented to harvest wave energy, with names such as Wave Dragon, the Penguin and Mighty Whale, and research is going on to try and come up with ",
         },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
@@ -113,6 +112,7 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "This form of energy has " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
@@ -123,8 +123,9 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Electricity can be generated using onshore systems, " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: "." },
+        { type: "text", text: ", or offshore systems." },
       ],
     },
     {
@@ -139,6 +140,7 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "This adds to the difficulty of " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
@@ -151,7 +153,7 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Another drawback is that sand and other sediment on the ocean floor might be stopped from flowing normally, ",
+          text: "Another drawback is that sand and other sediment on the ocean floor might be stopped from flowing normally, which can ",
         },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
@@ -168,7 +170,7 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "One major advantage of using the tide, rather than waves, as a source of energy is that it's predictable: ",
+          text: "One major advantage of using the tide, rather than waves, as a source of energy is that it's predictable: we know the exact time of high and low tides ",
         },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
@@ -179,10 +181,10 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "For tidal energy to be effective, the difference between high and low tides needs to be at least five metres, and ",
+          text: "For tidal energy to be effective, the difference between high and low tides needs to be at least five metres, and this occurs naturally in only ",
         },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " on Earth." },
       ],
     },
     {
@@ -190,7 +192,7 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "But the right conditions can be created by constructing a tidal lagoon, ",
+          text: "But the right conditions can be created by constructing a tidal lagoon, an area of sea water ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
@@ -207,10 +209,10 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "This will be an area of water within a bay at Swansea, ",
+          text: "This will be an area of water within a bay at Swansea, sheltered by a ",
         },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: "." },
+        { type: "text", text: ", or dam, built out from the coast." },
       ],
     },
     {
@@ -218,10 +220,10 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The breakwater will contain sixteen hydro turbines, and as the tide rises, water rushes through the breakwater, ",
+          text: "The breakwater will contain sixteen hydro turbines, and as the tide rises, water rushes through the breakwater, activating the turbines, which ",
         },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " to produce electricity." },
       ],
     },
     {
@@ -256,7 +258,7 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "As there are two high tides a day, this lagoon scheme would generate electricity four times a day, every day, for a total of around 14 hours in every 24 – and ",
+          text: "As there are two high tides a day, this lagoon scheme would generate electricity four times a day, every day, for a total of around 14 hours in every 24 – and enough electricity for ",
         },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
@@ -265,7 +267,7 @@ export const CAM14_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "This system has quite a lot in its favour: unlike solar and wind energy " },
+        { type: "text", text: "This system has quite a lot in its favour: unlike solar and wind energy it doesn't " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",

@@ -5,66 +5,62 @@ import type {
 
 export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["You wanted to see me about your textile design project"] },
-    { id: "g2", answers: ["Why did you choose that topic"] },
-    { id: "g3", answers: ["I got a lot of useful ideas from the museum"] },
+    { id: "g1", answers: ["textile design project"] },
+    { id: "g2", answers: ["choose that topic"] },
+    { id: "g3", answers: ["useful ideas"] },
     {
       id: "g4",
       answers: [
-        "I've always been interested in anything to do with colour",
-        "I have always been interested in anything to do with colour",
-        "I've always been interested in anything to do with color",
+        "to do with colour",
+        "to do with color",
       ],
     },
-    { id: "g5", answers: ["They might not all have been natural dyes"] },
+    { id: "g5", answers: ["natural dyes"] },
     {
       id: "g6",
       answers: [
-        "a botanic garden in California that specialises in plants used for dyes",
-        "a botanic garden in California that specializes in plants used for dyes",
+        "plants used for dyes",
       ],
     },
-    { id: "g7", answers: ["you had to include a practical investigation"] },
+    { id: "g7", answers: ["practical investigation"] },
     {
       id: "g8",
       answers: [
-        "At first I couldn't decide on my variables",
-        "At first I could not decide on my variables",
+        "decide on my variables",
       ],
     },
     {
       id: "g9",
       answers: [
-        "including some that weren't natural, for comparison",
-        "including some that were not natural, for comparison",
+        "weren't natural",
+        "were not natural",
       ],
     },
-    { id: "g10", answers: ["I used some ready-made natural dyes"] },
-    { id: "g11", answers: ["That must have taken quite a bit of time"] },
-    { id: "g12", answers: ["One possibility is to use food colourings", "One possibility is to use food colorings"] },
-    { id: "g13", answers: ["That was a yellow dye, an artificial one"] },
+    { id: "g10", answers: ["ready-made natural dyes"] },
+    { id: "g11", answers: ["quite a bit of time"] },
+    { id: "g12", answers: ["food colourings", "food colorings"] },
+    { id: "g13", answers: ["an artificial one"] },
     {
       id: "g14",
       answers: [
-        "I'd been going to try it out on nylon, but I abandoned that idea",
-        "I had been going to try it out on nylon, but I abandoned that idea",
+        "abandoned that idea",
       ],
     },
-    { id: "g15", answers: ["Were you worried about health issues"] },
-    { id: "g16", answers: ["it can occasionally cause allergic reactions"] },
+    { id: "g15", answers: ["health issues"] },
+    { id: "g16", answers: ["allergic reactions"] },
     {
       id: "g17",
       answers: [
-        "It's generally used in dishes like curry",
-        "It is generally used in dishes like curry",
+        "dishes like curry",
       ],
     },
-    { id: "g18", answers: ["I had to prepare the fabric so the dye would take"] },
+    { id: "g18", answers: ["so the dye would take"] },
   ],
   lines: [
     {
       speaker: "TUTOR",
       segments: [
+        { type: "text", text: "You wanted to see me about your " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
@@ -81,6 +77,7 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
+        { type: "text", text: "Why did you " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "?" },
       ],
@@ -88,9 +85,9 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JIM",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, I got a lot of " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: ", you know, at that exhibition of textiles. But " },
+        { type: "text", text: " from the museum, you know, at that exhibition of textiles. But I've always been interested in anything " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
@@ -101,6 +98,7 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
+        { type: "text", text: "They might not all have been " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: "." },
       ],
@@ -110,7 +108,7 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Maybe not, but for the project I decided to follow it up. And I found a great book about ",
+          text: "Maybe not, but for the project I decided to follow it up. And I found a great book about a botanic garden in California that specialises in ",
         },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
@@ -119,7 +117,7 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
-        { type: "text", text: "OK. So, in your project, " },
+        { type: "text", text: "OK. So, in your project, you had to include a " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -127,7 +125,7 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JIM",
       segments: [
-        { type: "text", text: "Yeah. " },
+        { type: "text", text: "Yeah. At first I couldn't " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
@@ -157,16 +155,16 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JIM",
       segments: [
-        { type: "text", text: "Various types, " },
+        { type: "text", text: "Various types, including some that " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: "." },
+        { type: "text", text: ", for comparison." },
       ],
     },
     { speaker: "TUTOR", segments: [{ type: "text", text: "OK." }] },
     {
       speaker: "JIM",
       segments: [
-        { type: "text", text: "So, I did the experiments last week. " },
+        { type: "text", text: "So, I did the experiments last week. I used some " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
@@ -177,6 +175,7 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
+        { type: "text", text: "That must have taken " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -193,6 +192,7 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
+        { type: "text", text: "One possibility is to use " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -200,7 +200,7 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JIM",
       segments: [
-        { type: "text", text: "I did use one. " },
+        { type: "text", text: "I did use one. That was a yellow dye, " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
       ],
@@ -211,7 +211,7 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yeah. I used it on cotton first. It came out a great colour, but when I rinsed the material, the colour just washed away. ",
+          text: "Yeah. I used it on cotton first. It came out a great colour, but when I rinsed the material, the colour just washed away. I'd been going to try it out on nylon, but I ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
@@ -220,6 +220,7 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
+        { type: "text", text: "Were you worried about " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "?" },
       ],
@@ -233,7 +234,7 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, it can occasionally cause " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: ", I believe." },
       ],
@@ -247,7 +248,7 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well, one was turmeric. The colour's great, it's a really strong yellow. ",
+          text: "Well, one was turmeric. The colour's great, it's a really strong yellow. It's generally used in ",
         },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
@@ -301,7 +302,7 @@ export const CAM13_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JIM",
       segments: [
-        { type: "text", text: "Logwood. That was quite complicated. " },
+        { type: "text", text: "Logwood. That was quite complicated. I had to prepare the fabric " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

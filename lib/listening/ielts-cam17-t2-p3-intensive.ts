@@ -5,24 +5,24 @@ import type {
 
 export const CAM17_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I kept getting too involved in the play"] },
+    { id: "g1", answers: ["too involved in the play"] },
     { id: "g2", answers: ["I ended up not taking notes"] },
-    { id: "g3", answers: ["Do you mind if I check a few things with you"] },
+    { id: "g3", answers: ["Do you mind if I check"] },
     { id: "g4", answers: ["it's good to talk things through", "it is good to talk things through"] },
-    { id: "g5", answers: ["I don't think we need to describe what happens", "I do not think we need to describe what happens"] },
-    { id: "g6", answers: ["that isn't really relevant in a review", "that is not really relevant in a review"] },
+    { id: "g5", answers: ["need to describe what happens"] },
+    { id: "g6", answers: ["isn't really relevant", "is not really relevant"] },
     { id: "g7", answers: ["We're supposed to focus on", "We are supposed to focus on"] },
-    { id: "g8", answers: ["We should say what made it a success or a failure"] },
+    { id: "g8", answers: ["a success or a failure"] },
     { id: "g9", answers: ["I think that's important", "I think that is important"] },
     { id: "g10", answers: ["That all sounds quite straightforward"] },
-    { id: "g11", answers: ["I thought some things worked really well"] },
-    { id: "g12", answers: ["I'd say that was probably the most memorable thing", "I would say that was probably the most memorable thing"] },
+    { id: "g11", answers: ["some things worked really well"] },
+    { id: "g12", answers: ["the most memorable thing"] },
     { id: "g13", answers: ["I didn't dislike it", "I did not dislike it"] },
     { id: "g14", answers: ["That's a good point", "That is a good point"] },
     { id: "g15", answers: ["I think it worked well"] },
     { id: "g16", answers: ["that was a shame"] },
-    { id: "g17", answers: ["It's made me realise how relevant the play still is", "It has made me realise how relevant the play still is", "It's made me realize how relevant the play still is"] },
-    { id: "g18", answers: ["I expected to find it more challenging"] },
+    { id: "g17", answers: ["how relevant the play still is"] },
+    { id: "g18", answers: ["find it more challenging"] },
   ],
   lines: [
     {
@@ -32,7 +32,7 @@ export const CAM17_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "GEMMA",
       segments: [
-        { type: "text", text: "Yes, I did. I found it quite hard though. " },
+        { type: "text", text: "Yes, I did. I found it quite hard though. I kept getting " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
@@ -44,7 +44,7 @@ export const CAM17_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g2" },
         { type: "text", text: ". I wrote down my impressions when I got home. " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "? In case I've missed anything. And I've also got some questions about our assignment." },
+        { type: "text", text: " a few things with you? In case I've missed anything. And I've also got some questions about our assignment." },
       ],
     },
     {
@@ -62,7 +62,7 @@ export const CAM17_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "GEMMA",
       segments: [
-        { type: "text", text: "Right. Well, " },
+        { type: "text", text: "Right. Well, I don't think we " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: ". Especially as Romeo and Juliet is one of Shakespeare's most well-known plays." },
       ],
@@ -70,9 +70,9 @@ export const CAM17_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ED",
       segments: [
-        { type: "text", text: "Yeah, everyone knows the story. In an essay we'd focus on the poetry and Shakespeare's use of imagery etc., but " },
+        { type: "text", text: "Yeah, everyone knows the story. In an essay we'd focus on the poetry and Shakespeare's use of imagery etc., but that " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ". " },
+        { type: "text", text: " in a review. " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: " how effective this particular production is." },
       ],
@@ -80,7 +80,7 @@ export const CAM17_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "GEMMA",
       segments: [
-        { type: "text", text: "Mmm. " },
+        { type: "text", text: "Mmm. We should say what made it " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -129,6 +129,7 @@ export const CAM17_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "GEMMA",
       segments: [
+        { type: "text", text: "I thought " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: " but there were some problems too." },
       ],
@@ -137,7 +138,7 @@ export const CAM17_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "GEMMA",
       segments: [
-        { type: "text", text: "I think it was visually really stunning. " },
+        { type: "text", text: "I think it was visually really stunning. I'd say that was probably " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: " about this production." },
       ],
@@ -223,7 +224,7 @@ export const CAM17_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "GEMMA",
       segments: [
-        { type: "text", text: "Definitely. " },
+        { type: "text", text: "Definitely. It's made me realise " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
       ],
@@ -250,7 +251,7 @@ export const CAM17_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "GEMMA",
       segments: [
-        { type: "text", text: "Really interesting. " },
+        { type: "text", text: "Really interesting. I expected to " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: ", but I could follow the story pretty well." },
       ],

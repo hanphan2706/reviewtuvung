@@ -5,30 +5,30 @@ import type {
 
 export const CAM20_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I'd like to give you some useful information", "I would like to give you some useful information"] },
+    { id: "g1", answers: ["some useful information"] },
     { id: "g2", answers: ["that are open to visitors"] },
-    { id: "g3", answers: ["just to let mums and dads know a few things before we start"] },
-    { id: "g4", answers: ["We don't want any accidents or anyone getting frightened", "We do not want any accidents or anyone getting frightened"] },
+    { id: "g3", answers: ["mums and dads"] },
+    { id: "g4", answers: ["don't want any accidents", "do not want any accidents"] },
     { id: "g5", answers: ["Cameras are permitted everywhere"] },
-    { id: "g6", answers: ["hopefully the queue won't be too long", "hopefully the queue will not be too long"] },
-    { id: "g7", answers: ["I'd like to mention some features of the tour", "I would like to mention some features of the tour"] },
-    { id: "g8", answers: ["which has been very popular over the years"] },
+    { id: "g6", answers: ["won't be too long", "will not be too long"] },
+    { id: "g7", answers: ["some features of the tour"] },
+    { id: "g8", answers: ["over the years"] },
     { id: "g9", answers: ["we'd welcome those too", "we would welcome those too"] },
     { id: "g10", answers: ["they can be booked online"] },
-    { id: "g11", answers: ["as part of a three-year redevelopment project"] },
-    { id: "g12", answers: ["the team had to play its matches at the ground of another club"] },
-    { id: "g13", answers: ["the start of a really important decade"] },
-    { id: "g14", answers: ["It's hard to imagine what the game must have been like", "It is hard to imagine what the game must have been like"] },
-    { id: "g15", answers: ["many other clubs were established, both here and abroad"] },
-    { id: "g16", answers: ["One fact I was interested to discover"] },
+    { id: "g11", answers: ["as part of"] },
+    { id: "g12", answers: ["at the ground of"] },
+    { id: "g13", answers: ["the start of"] },
+    { id: "g14", answers: ["hard to imagine"] },
+    { id: "g15", answers: ["here and abroad"] },
+    { id: "g16", answers: ["interested to discover"] },
     { id: "g17", answers: ["this sometimes caused huge arguments"] },
-    { id: "g18", answers: ["That's hard to imagine in the modern professional game", "That is hard to imagine in the modern professional game"] },
+    { id: "g18", answers: ["the modern professional game"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Good morning and welcome to City Football Club. " },
+        { type: "text", text: "Good morning and welcome to City Football Club. I'd like to give you " },
         { type: "gap", gapId: "g1" },
         {
           type: "text",
@@ -40,13 +40,13 @@ export const CAM20_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "I can see lots of children here today, so " },
+        { type: "text", text: "I can see lots of children here today, so just to let " },
         { type: "gap", gapId: "g3" },
         {
           type: "text",
-          text: ". The stadium has lots of stairs and the players' tunnel is very dark. Please don't let your children wander off on their own, even for a minute. " },
+          text: " know a few things before we start. The stadium has lots of stairs and the players' tunnel is very dark. Please don't let your children wander off on their own, even for a minute. We " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "." },
+        { type: "text", text: " or anyone getting frightened." },
       ],
     },
     {
@@ -55,7 +55,7 @@ export const CAM20_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: " and you can take pictures of your child shooting a penalty. Assistants are helping to organise this and " },
+          text: " and you can take pictures of your child shooting a penalty. Assistants are helping to organise this and hopefully the queue " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
       ],
@@ -72,8 +72,9 @@ export const CAM20_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "I'd like to mention " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: ". We'll start with the 360 cinema experience, " },
+        { type: "text", text: ". We'll start with the 360 cinema experience, which has been very popular " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
@@ -106,9 +107,9 @@ export const CAM20_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Now, the stadium you see today was built in 1989 " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: ". While that project was going on, " },
+        { type: "text", text: " a three-year redevelopment project. While that project was going on, the team had to play its matches " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: ". Apart from that, the club has been here on this site since 1870." },
+        { type: "text", text: " another club. Apart from that, the club has been here on this site since 1870." },
       ],
     },
     {
@@ -118,15 +119,15 @@ export const CAM20_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g13" },
         {
           type: "text",
-          text: " in the history of football in this country. For example, 1870 was also the year that football teams started to include a player whose role it was to guard the goal. " },
+          text: " a really important decade in the history of football in this country. For example, 1870 was also the year that football teams started to include a player whose role it was to guard the goal. It's " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: " without someone in that position, isn't it?" },
+        { type: "text", text: " what the game must have been like without someone in that position, isn't it?" },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "In 1872 and 73, " },
+        { type: "text", text: "In 1872 and 73, many other clubs were established, both " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
@@ -137,6 +138,7 @@ export const CAM20_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "One fact I was " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
@@ -171,7 +173,7 @@ export const CAM20_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "In 1880, clubs began to charge fans for admission to games, even though players were still amateurs and had other proper jobs. " },
+          text: "In 1880, clubs began to charge fans for admission to games, even though players were still amateurs and had other proper jobs. That's hard to imagine in " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",

@@ -5,32 +5,32 @@ import type {
 
 export const CAM19_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I chose to study tardigrades"] },
+    { id: "g1", answers: ["chose to study"] },
     { id: "g2", answers: ["or to be more precise"] },
-    { id: "g3", answers: ["There are well over a thousand known species"] },
+    { id: "g3", answers: ["well over a thousand"] },
     { id: "g4", answers: ["which belong to the phylum Tardigrada"] },
     { id: "g5", answers: ["'Moss piglet' is another name", "Moss piglet is another name"] },
     { id: "g6", answers: ["who coined the name Tardigrada"] },
     { id: "g7", answers: ["too many to describe here"] },
-    { id: "g8", answers: ["the different species share similar physical traits"] },
+    { id: "g8", answers: ["similar physical traits"] },
     { id: "g9", answers: ["a bit like a barrel"] },
     { id: "g10", answers: ["which isn't exactly very scientific", "which is not exactly very scientific"] },
-    { id: "g11", answers: ["They live in every part of the world"] },
+    { id: "g11", answers: ["every part of the world"] },
     { id: "g12", answers: ["which is incredibly hot"] },
-    { id: "g13", answers: ["even in the event of an asteroid hitting the earth"] },
+    { id: "g13", answers: ["in the event of"] },
     { id: "g14", answers: ["If conditions become too extreme"] },
     { id: "g15", answers: ["by retracting their head and legs"] },
-    { id: "g16", answers: ["in a matter of a few hours"] },
-    { id: "g17", answers: ["this experiment has never been repeated"] },
-    { id: "g18", answers: ["it will probably come as no surprise to you"] },
+    { id: "g16", answers: ["in a matter of"] },
+    { id: "g17", answers: ["never been repeated"] },
+    { id: "g18", answers: ["come as no surprise"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
-        { type: "text", text: "For my project on invertebrates, " },
+        { type: "text", text: "For my project on invertebrates, I " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "." },
+        { type: "text", text: " tardigrades." },
       ],
     },
     {
@@ -44,8 +44,9 @@ export const CAM19_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "There are " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: " of these tiny animals, " },
+        { type: "text", text: " known species of these tiny animals, " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -71,7 +72,7 @@ export const CAM19_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "As I say, there are many different species of tardigrade — " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: " — but, generally speaking, " },
+        { type: "text", text: " — but, generally speaking, the different species share " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -122,7 +123,7 @@ export const CAM19_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So, where are tardigrades found? Well, " },
+        { type: "text", text: "So, where are tardigrades found? Well, they live in " },
         { type: "gap", gapId: "g11" },
         {
           type: "text",
@@ -146,10 +147,10 @@ export const CAM19_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "It has been said that tardigrades could survive long after human beings have been wiped out, ",
+          text: "It has been said that tardigrades could survive long after human beings have been wiped out, even ",
         },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " an asteroid hitting the earth." },
       ],
     },
     {
@@ -184,7 +185,7 @@ export const CAM19_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "They can stay in this state for decades, and if re-introduced to water, when they will come back to life ",
         },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " a few hours." },
       ],
     },
     {
@@ -192,7 +193,7 @@ export const CAM19_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "While in this state of cryptobiosis, tardigrades produce a protein that protects their DNA. In 2016, scientists revived two tardigrades that had been tuns for more than 30 years. There was a report that, in 1948, a 120-year-old tun was revived, but ",
+          text: "While in this state of cryptobiosis, tardigrades produce a protein that protects their DNA. In 2016, scientists revived two tardigrades that had been tuns for more than 30 years. There was a report that, in 1948, a 120-year-old tun was revived, but this experiment has ",
         },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
@@ -221,12 +222,12 @@ export const CAM19_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Finally, I'd like to mention the conservation status of tardigrades. It is estimated that they have been in existence for approximately half a billion years and, in that time, they have survived five mass extinctions. So, ",
+          text: "Finally, I'd like to mention the conservation status of tardigrades. It is estimated that they have been in existence for approximately half a billion years and, in that time, they have survived five mass extinctions. So, it will probably ",
         },
         { type: "gap", gapId: "g18" },
         {
           type: "text",
-          text: ", that tardigrades have not been evaluated by the International Union for Conservation of Nature and are not on any endangered list. Some researchers have described them as thriving.",
+          text: " to you, that tardigrades have not been evaluated by the International Union for Conservation of Nature and are not on any endangered list. Some researchers have described them as thriving.",
         },
       ],
     },

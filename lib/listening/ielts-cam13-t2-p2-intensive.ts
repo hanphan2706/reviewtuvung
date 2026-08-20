@@ -6,42 +6,38 @@ import type {
 export const CAM13_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["this meeting is for new staff"] },
-    { id: "g2", answers: ["we allow staff to give up some of their work time"] },
+    { id: "g2", answers: ["some of their work time"] },
     { id: "g3", answers: ["to help on various charity projects"] },
     {
       id: "g4",
       answers: [
-        "We've been doing this for the last five years",
-        "We have been doing this for the last five years",
+        "for the last five years",
       ],
     },
     {
       id: "g5",
       answers: [
-        "Participating doesn't necessarily involve a huge time commitment",
-        "Participating does not necessarily involve a huge time commitment",
+        "a huge time commitment",
       ],
     },
     { id: "g6", answers: ["It's completely up to you", "It is completely up to you"] },
-    { id: "g7", answers: ["Feedback from staff has been overwhelmingly positive"] },
+    { id: "g7", answers: ["overwhelmingly positive"] },
     { id: "g8", answers: ["they also liked building relationships"] },
-    { id: "g9", answers: ["helping unemployed people in the area get back to work"] },
-    { id: "g10", answers: ["something many employers look for in job applicants"] },
+    { id: "g9", answers: ["get back to work"] },
+    { id: "g10", answers: ["look for in job applicants"] },
     {
       id: "g11",
       answers: [
-        "We've got an exciting new project starting this year",
-        "We have got an exciting new project starting this year",
+        "exciting new project",
       ],
     },
-    { id: "g12", answers: ["if any of you fancy being outside and getting your hands dirty"] },
-    { id: "g13", answers: ["help older people keep up with technology"] },
-    { id: "g14", answers: ["as it can hold far more people"] },
+    { id: "g12", answers: ["getting your hands dirty"] },
+    { id: "g13", answers: ["keep up with technology"] },
+    { id: "g14", answers: ["hold far more people"] },
     {
       id: "g15",
       answers: [
-        "you'll be paired with an experienced volunteer",
-        "you will be paired with an experienced volunteer",
+        "paired with an experienced volunteer",
       ],
     },
     {
@@ -52,7 +48,7 @@ export const CAM13_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       ],
     },
     { id: "g17", answers: ["The majority were in their seventies"] },
-    { id: "g18", answers: ["they liked going out to the shops"] },
+    { id: "g18", answers: ["going out to the shops"] },
   ],
   lines: [
     { speaker: null, segments: [{ type: "text", text: "Thanks for coming everyone." }] },
@@ -70,11 +66,11 @@ export const CAM13_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So basically, the idea is that " },
+        { type: "text", text: "So basically, the idea is that we allow staff to give up " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: " " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: " to benefit the local community. " },
+        { type: "text", text: " to benefit the local community. We've been doing this " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: " and it's been very successful." },
       ],
@@ -82,6 +78,7 @@ export const CAM13_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Participating doesn't necessarily involve " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
@@ -97,6 +94,7 @@ export const CAM13_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Feedback from staff has been " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -114,12 +112,12 @@ export const CAM13_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "One particularly successful project last year was the Get Working Project. This was aimed at ",
+          text: "One particularly successful project last year was the Get Working Project. This was aimed at helping unemployed people in the area ",
         },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: ". Our staff were able to help them improve their telephone skills, such as writing down messages and speaking with confidence to potential customers, which they had found quite difficult. This is ",
+          text: ". Our staff were able to help them improve their telephone skills, such as writing down messages and speaking with confidence to potential customers, which they had found quite difficult. This is something many employers ",
         },
         { type: "gap", gapId: "g10" },
         {
@@ -131,10 +129,11 @@ export const CAM13_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "We've got an " },
         { type: "gap", gapId: "g11" },
         {
           type: "text",
-          text: ". Up until now, we've mainly focused on projects to do with education and training. And we'll continue with our reading project in schools and our work with local charities. But we've also agreed to help out on a conservation project in Redfern Park. So ",
+          text: " starting this year. Up until now, we've mainly focused on projects to do with education and training. And we'll continue with our reading project in schools and our work with local charities. But we've also agreed to help out on a conservation project in Redfern Park. So if any of you fancy being outside and ",
         },
         { type: "gap", gapId: "g12" },
         { type: "text", text: ", this is the project for you." },
@@ -145,12 +144,12 @@ export const CAM13_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I also want to mention the annual Digital Inclusion Day, which is coming up next month. The aim of this is to ",
+          text: "I also want to mention the annual Digital Inclusion Day, which is coming up next month. The aim of this is to help older people ",
         },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
-          text: ". And this year, instead of hosting the event in our own training facility, we're using the ICT suite at Hill College, ",
+          text: ". And this year, instead of hosting the event in our own training facility, we're using the ICT suite at Hill College, as it can ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
@@ -170,7 +169,7 @@ export const CAM13_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "If you're interested in taking part, please go to the volunteering section of our website and complete the relevant form. We won't be providing any training for this but ",
+          text: "If you're interested in taking part, please go to the volunteering section of our website and complete the relevant form. We won't be providing any training for this but you'll be ",
         },
         { type: "gap", gapId: "g15" },
         {
@@ -200,7 +199,7 @@ export const CAM13_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The feedback was very positive. The really encouraging thing was that participants all said they felt much more confident about using social media to keep in touch with their grandchildren, who prefer this form of communication to phoning or sending emails. A lot of them also said playing online games would help them make new friends and keep their brains active. They weren't that impressed with being able to order their groceries online, as ",
+          text: "The feedback was very positive. The really encouraging thing was that participants all said they felt much more confident about using social media to keep in touch with their grandchildren, who prefer this form of communication to phoning or sending emails. A lot of them also said playing online games would help them make new friends and keep their brains active. They weren't that impressed with being able to order their groceries online, as they liked ",
         },
         { type: "gap", gapId: "g18" },
         {

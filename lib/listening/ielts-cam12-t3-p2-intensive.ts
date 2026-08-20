@@ -5,78 +5,35 @@ import type {
 
 export const CAM12_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    {
-      id: "g1",
-      answers: [
-        "it's important to be aware of how the market's changing and developing",
-        "it is important to be aware of how the market is changing and developing",
-        "it's important to be aware of how the market is changing and developing",
-      ],
-    },
-    { id: "g2", answers: ["The fewest holidays are taken by the 31 to 42-year-olds"] },
-    { id: "g3", answers: ["that figure shows no sign of rising"] },
+    { id: "g1", answers: ["be aware of"] },
+    { id: "g2", answers: ["The fewest holidays"] },
+    { id: "g3", answers: ["no sign of rising"] },
     {
       id: "g4",
-      answers: [
-        "we haven't seen the increase we expected",
-        "we have not seen the increase we expected",
-      ],
+      answers: ["haven't seen the increase", "have not seen the increase"],
     },
     {
       id: "g5",
-      answers: [
-        "I'm not talking here about adventure holidays",
-        "I am not talking here about adventure holidays",
-      ],
+      answers: ["I'm not talking here", "I am not talking here"],
     },
     { id: "g6", answers: ["just for the thrill of it"] },
-    {
-      id: "g7",
-      answers: [
-        "They're not necessarily cheaper than ordinary holidays, often the opposite, in fact",
-        "They are not necessarily cheaper than ordinary holidays, often the opposite, in fact",
-      ],
-    },
-    { id: "g8", answers: ["the chance to develop a new skill or talent"] },
-    {
-      id: "g9",
-      answers: [
-        "they're very popular with clients of all abilities from beginners onwards",
-        "they are very popular with clients of all abilities from beginners onwards",
-      ],
-    },
-    {
-      id: "g10",
-      answers: [
-        "We've got an excellent team of artists to lead the classes",
-        "We have got an excellent team of artists to lead the classes",
-      ],
-    },
-    {
-      id: "g11",
-      answers: [
-        "that's more or less a given nowadays",
-        "that is more or less a given nowadays",
-      ],
-    },
-    { id: "g12", answers: ["there are generally some meat-free recipes included"] },
-    { id: "g13", answers: ["clients have the opportunity to see some stunning scenery"] },
-    { id: "g14", answers: ["Groups are small, no more than eight"] },
+    { id: "g7", answers: ["not necessarily cheaper"] },
+    { id: "g8", answers: ["a new skill or talent"] },
+    { id: "g9", answers: ["from beginners onwards"] },
+    { id: "g10", answers: ["an excellent team of"] },
+    { id: "g11", answers: ["more or less a given"] },
+    { id: "g12", answers: ["meat-free recipes included"] },
+    { id: "g13", answers: ["have the opportunity to"] },
+    { id: "g14", answers: ["no more than eight"] },
     { id: "g15", answers: ["receive valuable feedback from the tutor"] },
-    { id: "g16", answers: ["together they draw up an individual programme"] },
     {
-      id: "g17",
-      answers: [
-        "People say it's far preferable to being in a gym",
-        "People say it is far preferable to being in a gym",
-      ],
+      id: "g16",
+      answers: ["draw up an individual programme", "draw up an individual program"],
     },
+    { id: "g17", answers: ["far preferable to"] },
     {
       id: "g18",
-      answers: [
-        "Bikes are provided and there are different routes according to people's ability",
-        "Bikes are provided and there are different routes according to peoples ability",
-      ],
+      answers: ["according to people's ability", "according to peoples ability"],
     },
   ],
   lines: [
@@ -92,9 +49,9 @@ export const CAM12_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Now, the travel business is very competitive and " },
+        { type: "text", text: "Now, the travel business is very competitive and it's important to " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "." },
+        { type: "text", text: " how the market's changing and developing." },
       ],
     },
     {
@@ -110,7 +67,7 @@ export const CAM12_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: null,
       segments: [
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ", and " },
+        { type: "text", text: " are taken by the 31 to 42-year-olds, and that figure shows " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -129,10 +86,10 @@ export const CAM12_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "As far as the 43 to 54-year-olds are concerned, bookings there are steady, but I have to say ",
+          text: "As far as the 43 to 54-year-olds are concerned, bookings there are steady, but I have to say we ",
         },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "." },
+        { type: "text", text: " we expected." },
       ],
     },
     {
@@ -150,7 +107,7 @@ export const CAM12_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ", where clients take part in high-risk activities like white water rafting ",
+          text: " about adventure holidays, where clients take part in high-risk activities like white water rafting ",
         },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
@@ -168,8 +125,9 @@ export const CAM12_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "They're " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: " than ordinary holidays, often the opposite, in fact." },
       ],
     },
     {
@@ -184,7 +142,7 @@ export const CAM12_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Of course, they offer " },
+        { type: "text", text: "Of course, they offer the chance to develop " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
@@ -203,7 +161,7 @@ export const CAM12_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Our painting holidays take place in four different centres in France and Italy and ",
+          text: "Our painting holidays take place in four different centres in France and Italy and they're very popular with clients of all abilities ",
         },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
@@ -212,10 +170,11 @@ export const CAM12_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "We've got " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
-          text: " - some of them have been with us from the start, and five additional ones will be joining us this year so that we can offer a greater number of classes in each centre.",
+          text: " artists to lead the classes - some of them have been with us from the start, and five additional ones will be joining us this year so that we can offer a greater number of classes in each centre.",
         },
       ],
     },
@@ -231,9 +190,9 @@ export const CAM12_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Apart from that you'll find the usual emphasis on good quality, organic ingredients - " },
+        { type: "text", text: "Apart from that you'll find the usual emphasis on good quality, organic ingredients - that's " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: " - and " },
+        { type: "text", text: " nowadays - and there are generally some " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -241,14 +200,15 @@ export const CAM12_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Our photography holidays take place in a wide range of countries from Iceland to Vietnam, and " },
+        { type: "text", text: "Our photography holidays take place in a wide range of countries from Iceland to Vietnam, and clients " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " see some stunning scenery." },
       ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Groups are small, " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
@@ -285,7 +245,7 @@ export const CAM12_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Clients start the course with a consultation with a trainer, and ",
+          text: "Clients start the course with a consultation with a trainer, and together they ",
         },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "." },
@@ -321,8 +281,9 @@ export const CAM12_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "People say it's " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " being in a gym." },
       ],
     },
     {
@@ -336,6 +297,7 @@ export const CAM12_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Bikes are provided and there are different routes " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

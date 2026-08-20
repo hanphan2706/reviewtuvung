@@ -5,24 +5,24 @@ import type {
 
 export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I'm going to talk about some of the issues facing the cruise ship industry", "I am going to talk about some of the issues facing the cruise ship industry"] },
+    { id: "g1", answers: ["I'm going to talk about", "I am going to talk about"] },
     { id: "g2", answers: ["some ways these can be addressed"] },
-    { id: "g3", answers: ["has partly been responsible for the effects of overtourism"] },
-    { id: "g4", answers: ["it's a difficult balance to achieve", "it is a difficult balance to achieve"] },
-    { id: "g5", answers: ["are unable to cope with thousands of cruise ship passengers on a daily basis"] },
-    { id: "g6", answers: ["excessive tourism is destroying the beauty spots"] },
-    { id: "g7", answers: ["many green campaigners think it won't deter enough people to make any difference", "many green campaigners think it will not deter enough people to make any difference"] },
+    { id: "g3", answers: ["the effects of overtourism"] },
+    { id: "g4", answers: ["a difficult balance to achieve"] },
+    { id: "g5", answers: ["unable to cope with"] },
+    { id: "g6", answers: ["destroying the beauty spots"] },
+    { id: "g7", answers: ["won't deter enough people", "will not deter enough people"] },
     { id: "g8", answers: ["became impossible to navigate at times"] },
-    { id: "g9", answers: ["The local council took action to limit cruise passengers to a more manageable level"] },
-    { id: "g10", answers: ["after it became extremely popular as a cruise ship destination"] },
-    { id: "g11", answers: ["many people feel this measure does not go far enough"] },
+    { id: "g9", answers: ["a more manageable level"] },
+    { id: "g10", answers: ["extremely popular"] },
+    { id: "g11", answers: ["does not go far enough", "doesn't go far enough"] },
     { id: "g12", answers: ["they also have an image problem"] },
-    { id: "g13", answers: ["with not much on offer for families or young couples"] },
-    { id: "g14", answers: ["compared to other types of package holidays, cruises can actually be good value"] },
-    { id: "g15", answers: ["most cruises are no longer very formal and behind the times"] },
-    { id: "g16", answers: ["How can they appeal to younger customers"] },
-    { id: "g17", answers: ["The décor in these feels contemporary", "The decor in these feels contemporary"] },
-    { id: "g18", answers: ["Until very recently TV ads for cruises always felt dated and aimed at retirees"] },
+    { id: "g13", answers: ["not much on offer"] },
+    { id: "g14", answers: ["good value"] },
+    { id: "g15", answers: ["behind the times"] },
+    { id: "g16", answers: ["appeal to younger customers"] },
+    { id: "g17", answers: ["feels contemporary"] },
+    { id: "g18", answers: ["aimed at retirees"] },
   ],
   lines: [
     {
@@ -30,7 +30,7 @@ export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "For my presentation today " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " and then " },
+        { type: "text", text: " some of the issues facing the cruise ship industry and then " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
       ],
@@ -38,7 +38,7 @@ export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The cruise ship industry " },
+        { type: "text", text: "The cruise ship industry has partly been responsible for " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: " in recent decades." },
       ],
@@ -55,7 +55,7 @@ export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Of course, for many places " },
+        { type: "text", text: "Of course, for many places it's " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -65,16 +65,16 @@ export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "They want to promote their city or island as a desirable tourist destination, but at the same time, ",
+          text: "They want to promote their city or island as a desirable tourist destination, but at the same time, are ",
         },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "." },
+        { type: "text", text: " thousands of cruise ship passengers on a daily basis." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The trouble is, " },
+        { type: "text", text: "The trouble is, excessive tourism is " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: " and places of interest that people come to visit." },
       ],
@@ -84,10 +84,10 @@ export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Several cities, such as Barcelona, have responded by imposing a tax which all visitors to the city from cruise ships have to pay. But as it's only a couple of euros, ",
+          text: "Several cities, such as Barcelona, have responded by imposing a tax which all visitors to the city from cruise ships have to pay. But as it's only a couple of euros, many green campaigners think it ",
         },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: " to make any difference." },
       ],
     },
     {
@@ -106,7 +106,7 @@ export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The city was becoming like a 'theme park', with shops only catering for tourists, selling chocolate, which Belgium is famous for, and other souvenirs. ",
+          text: "The city was becoming like a 'theme park', with shops only catering for tourists, selling chocolate, which Belgium is famous for, and other souvenirs. The local council took action to limit cruise passengers to ",
         },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
@@ -117,10 +117,10 @@ export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Dubrovnik had to limit the numbers of cruise ships ",
+          text: "Dubrovnik had to limit the numbers of cruise ships after it became ",
         },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: " when it featured in a hugely successful TV series." },
+        { type: "text", text: " as a cruise ship destination when it featured in a hugely successful TV series." },
       ],
     },
     {
@@ -128,7 +128,7 @@ export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "What it does now is control the timing of all cruise ship entries to the city's port. However, ",
+          text: "What it does now is control the timing of all cruise ship entries to the city's port. However, many people feel this measure ",
         },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
@@ -150,10 +150,10 @@ export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "They've always been perceived as a safe holiday for the elderly, ",
+          text: "They've always been perceived as a safe holiday for the elderly, with ",
         },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " for families or young couples." },
       ],
     },
     {
@@ -161,7 +161,7 @@ export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "A recent survey showed that cost is also a major factor in putting younger groups off going on a cruise. But what they don't realise is that ",
+          text: "A recent survey showed that cost is also a major factor in putting younger groups off going on a cruise. But what they don't realise is that compared to other types of package holidays, cruises can actually be ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: ", as all activities and drinks are often included." },
@@ -172,7 +172,7 @@ export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "And another perception is that cruises have lots of rules about what to wear and how to behave. But these days, ",
+          text: "And another perception is that cruises have lots of rules about what to wear and how to behave. But these days, most cruises are no longer very formal and ",
         },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
@@ -183,7 +183,7 @@ export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "So what solutions are there for cruise lines to overcome some of these problems? ",
+          text: "So what solutions are there for cruise lines to overcome some of these problems? How can they ",
         },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "?" },
@@ -203,7 +203,7 @@ export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Cruise lines are also designing ships specially for those in the age range of 21 to 45. ",
+          text: "Cruise lines are also designing ships specially for those in the age range of 21 to 45. The décor in these ",
         },
         { type: "gap", gapId: "g17" },
         {
@@ -235,7 +235,7 @@ export const CAM21_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "My grandparents used to love looking through cruise brochures, even when they weren't planning on going on a cruise. ",
+          text: "My grandparents used to love looking through cruise brochures, even when they weren't planning on going on a cruise. Until very recently TV ads for cruises always felt dated and ",
         },
         { type: "gap", gapId: "g18" },
         {

@@ -12,17 +12,17 @@ export const CAM17_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g5", answers: ["even though this number is small"] },
     { id: "g6", answers: ["they tend to create one"] },
     { id: "g7", answers: ["rather than borrowing from another language"] },
-    { id: "g8", answers: ["it's changed very little in the past millennium", "it has changed very little in the past millennium"] },
-    { id: "g9", answers: ["I can't think of a more appropriate term", "I cannot think of a more appropriate term"] },
+    { id: "g8", answers: ["changed very little"] },
+    { id: "g9", answers: ["a more appropriate term"] },
     { id: "g10", answers: ["that's exactly what you do mentally", "that is exactly what you do mentally"] },
-    { id: "g11", answers: ["young Icelanders spend a great deal of time"] },
+    { id: "g11", answers: ["a great deal of time"] },
     { id: "g12", answers: ["this world is predominantly English"] },
-    { id: "g13", answers: ["They didn't even exist until comparatively recently", "They did not even exist until comparatively recently"] },
-    { id: "g14", answers: ["the extent of the influence of English"] },
+    { id: "g13", answers: ["didn't even exist", "did not even exist"] },
+    { id: "g14", answers: ["the influence of English"] },
     { id: "g15", answers: ["it's all happening really fast", "it is all happening really fast"] },
     { id: "g16", answers: ["the outcome is a little troubling"] },
-    { id: "g17", answers: ["at risk of losing its mother tongue"] },
-    { id: "g18", answers: ["this is going to be an uphill struggle"] },
+    { id: "g17", answers: ["losing its mother tongue"] },
+    { id: "g18", answers: ["an uphill struggle"] },
   ],
   lines: [
     {
@@ -84,11 +84,11 @@ export const CAM17_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "All this makes Icelandic quite a special language – " },
+        { type: "text", text: "All this makes Icelandic quite a special language – it's " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
-          text: ", yet it can handle twenty-first-century concepts related to the use of computers and digital technology.",
+          text: " in the past millennium, yet it can handle twenty-first-century concepts related to the use of computers and digital technology.",
         },
       ],
     },
@@ -97,7 +97,7 @@ export const CAM17_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Take, for example, the word for web browser … this is vafri in Icelandic, which comes from the verb 'to wander'. " },
+          text: "Take, for example, the word for web browser … this is vafri in Icelandic, which comes from the verb 'to wander'. I can't think of " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: " because " },
         { type: "gap", gapId: "g10" },
@@ -116,7 +116,7 @@ export const CAM17_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Icelandic, then, is alive and growing, but – and it's a big but – " },
+        { type: "text", text: "Icelandic, then, is alive and growing, but – and it's a big but – young Icelanders spend " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: " in the digital world and " },
         { type: "gap", gapId: "g12" },
@@ -130,10 +130,11 @@ export const CAM17_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "They " },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
-          text: ", but today young people use them all the time to read books, watch TV or films, play games, listen to music, and so on.",
+          text: " until comparatively recently, but today young people use them all the time to read books, watch TV or films, play games, listen to music, and so on.",
         },
       ],
     },
@@ -142,7 +143,7 @@ export const CAM17_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Obviously, this is a good thing in many respects because it promotes their bilingual skills, but " },
+          text: "Obviously, this is a good thing in many respects because it promotes their bilingual skills, but the extent of " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " in the virtual world is staggering and " },
         { type: "gap", gapId: "g15" },
@@ -178,7 +179,7 @@ export const CAM17_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The very real and worrying consequence of all this is that the young generation in Iceland is " },
+        { type: "text", text: "The very real and worrying consequence of all this is that the young generation in Iceland is at risk of " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
       ],
@@ -216,7 +217,7 @@ export const CAM17_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well, large sums of money are being allocated to a language technology fund that it is hoped will lead to the development of Icelandic sourced apps and other social media and digital systems, but clearly " },
+          text: "Well, large sums of money are being allocated to a language technology fund that it is hoped will lead to the development of Icelandic sourced apps and other social media and digital systems, but clearly this is going to be " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

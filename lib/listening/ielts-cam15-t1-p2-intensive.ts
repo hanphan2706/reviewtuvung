@@ -5,50 +5,43 @@ import type {
 
 export const CAM15_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I hope to interest you in what we have to offer"] },
-    { id: "g2", answers: ["we believe in the importance of the personal touch"] },
+    { id: "g1", answers: ["what we have to offer"] },
+    { id: "g2", answers: ["the personal touch"] },
     {
       id: "g3",
       answers: [
-        "we don't aim to compete with other companies on the number of customers",
-        "we do not aim to compete with other companies on the number of customers",
+        "on the number of customers",
       ],
     },
     {
       id: "g4",
-      answers: ["which we've got to know extremely well", "which we have got to know extremely well"],
+      answers: ["got to know extremely well"],
     },
-    { id: "g5", answers: ["This is a fascinating island in the Irish Sea"] },
-    { id: "g6", answers: ["Some people prefer to fly from Luton instead"] },
-    { id: "g7", answers: ["another popular option is to go by train to Liverpool and take a ferry from there"] },
-    { id: "g8", answers: ["we try to make booking our holidays as simple and fair as possible"] },
+    { id: "g5", answers: ["in the Irish Sea"] },
+    { id: "g6", answers: ["fly from Luton instead"] },
+    { id: "g7", answers: ["take a ferry from there"] },
+    { id: "g8", answers: ["simple and fair as possible"] },
     {
       id: "g9",
-      answers: ["the price is the same whether you book six months in advance or at the last minute"],
+      answers: ["at the last minute"],
     },
     {
       id: "g10",
-      answers: [
-        "there's no supplement for single rooms in hotels",
-        "there is no supplement for single rooms in hotels",
-      ],
+      answers: ["no supplement for single rooms"],
     },
     { id: "g11", answers: ["for a small administrative fee"] },
     { id: "g12", answers: ["followed by dinner in the hotel"] },
     {
       id: "g13",
-      answers: ["there's usually plenty of activity going on", "there is usually plenty of activity going on"],
+      answers: ["plenty of activity going on"],
     },
     {
       id: "g14",
-      answers: [
-        "It's claimed that this is the world's oldest parliament that's still functioning",
-        "It is claimed that this is the world's oldest parliament that is still functioning",
-      ],
+      answers: ["still functioning"],
     },
-    { id: "g15", answers: ["This begins with a leisurely ride along the promenade"] },
-    { id: "g16", answers: ["Then you board an electric train"] },
-    { id: "g17", answers: ["or you might just want to take it easy in Douglas"] },
+    { id: "g15", answers: ["leisurely ride along the promenade"] },
+    { id: "g16", answers: ["Then you board an electric train", "then you board an electric train"] },
+    { id: "g17", answers: ["take it easy in Douglas"] },
     {
       id: "g18",
       answers: ["Now I'd like to tell you", "Now I would like to tell you"],
@@ -68,7 +61,7 @@ export const CAM15_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Thank you for coming to this presentation, in which " },
+        { type: "text", text: "Thank you for coming to this presentation, in which I hope to interest you in " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
@@ -76,9 +69,9 @@ export const CAM15_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "We're a small, family-run company, and " },
+        { type: "text", text: "We're a small, family-run company, and we believe in the importance of " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ", so " },
+        { type: "text", text: ", so we don't aim to compete with other companies " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -88,7 +81,7 @@ export const CAM15_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "What we do is build on our many years' experience – more than almost any other rail holiday company – to ensure we provide perfect holidays in a small number of destinations, ",
+          text: "What we do is build on our many years' experience – more than almost any other rail holiday company – to ensure we provide perfect holidays in a small number of destinations, which we've ",
         },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
@@ -101,6 +94,7 @@ export const CAM15_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "This is a fascinating island " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
@@ -120,8 +114,9 @@ export const CAM15_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Some people prefer to " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ", and " },
+        { type: "text", text: ", and another popular option is to go by train to Liverpool and " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -147,13 +142,13 @@ export const CAM15_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Incidentally, " },
+        { type: "text", text: "Incidentally, we try to make booking our holidays as " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: ", so unlike with many companies, " },
+        { type: "text", text: ", so unlike with many companies, the price is the same whether you book six months in advance or " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: ", and " },
+        { type: "text", text: ", and there's " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " in hotels." },
       ],
     },
     {
@@ -182,7 +177,7 @@ export const CAM15_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The dining room looks out at the river, close to where it flows into the harbour, and " },
+        { type: "text", text: "The dining room looks out at the river, close to where it flows into the harbour, and there's usually " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
       ],
@@ -208,6 +203,7 @@ export const CAM15_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "It's claimed that this is the world's oldest parliament that's " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: ", and that it dates back to 979." },
       ],
@@ -228,6 +224,7 @@ export const CAM15_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "This begins with a " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: " in Douglas in a horse-drawn tram." },
       ],
@@ -278,6 +275,7 @@ export const CAM15_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "or you might just want to " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: " and perhaps do a little light shopping." },
       ],

@@ -7,7 +7,7 @@ export const CAM17_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I'm sure you have experienced", "I am sure you have experienced"] },
     { id: "g2", answers: ["everything runs smoothly"] },
-    { id: "g3", answers: ["it can make life difficult for everyone"] },
+    { id: "g3", answers: ["make life difficult for everyone"] },
     {
       id: "g4",
       answers: [
@@ -19,27 +19,24 @@ export const CAM17_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     { id: "g5", answers: ["can be very time-consuming"] },
     { id: "g6", answers: ["less immediate problems"] },
-    { id: "g7", answers: ["severely affect the colleagues they leave behind"] },
-    { id: "g8", answers: ["leave their staff feeling upset and resentful"] },
+    { id: "g7", answers: ["the colleagues they leave behind"] },
+    { id: "g8", answers: ["feeling upset and resentful"] },
     {
       id: "g9",
-      answers: ["they'll be more likely to step in and help", "they will be more likely to step in and help"],
+      answers: ["step in and help"],
     },
     { id: "g10", answers: ["other tangible benefits for the business"] },
     { id: "g11", answers: ["which is going really well"] },
-    { id: "g12", answers: ["I'd like to look at some ways", "I would like to look at some ways"] },
+    { id: "g12", answers: ["look at some ways"] },
     { id: "g13", answers: ["This situation has changed"] },
-    { id: "g14", answers: ["Fun is an important element in the trips"] },
+    { id: "g14", answers: ["an important element"] },
     {
       id: "g15",
-      answers: [
-        "there's also the opportunity to learn something useful",
-        "there is also the opportunity to learn something useful",
-      ],
+      answers: ["learn something useful"],
     },
     { id: "g16", answers: ["To make life easier for staff"] },
-    { id: "g17", answers: ["one of the best staff retention rates in the business"] },
-    { id: "g18", answers: ["For her, the staff are part of a large family"] },
+    { id: "g17", answers: ["staff retention rates"] },
+    { id: "g18", answers: ["part of a large family"] },
   ],
   lines: [
     {
@@ -61,7 +58,7 @@ export const CAM17_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "If staff are constantly changing, " },
+        { type: "text", text: "If staff are constantly changing, it can " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -115,7 +112,7 @@ export const CAM17_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "When staff leave, it can also " },
+        { type: "text", text: "When staff leave, it can also severely affect " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -136,7 +133,7 @@ export const CAM17_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Firstly, managers should stop making basic errors which " },
+        { type: "text", text: "Firstly, managers should stop making basic errors which leave their staff " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -162,7 +159,7 @@ export const CAM17_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "If you treat staff fairly, " },
+        { type: "text", text: "If you treat staff fairly, they'll be more likely to " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: " when extra staff are needed." },
       ],
@@ -208,7 +205,7 @@ export const CAM17_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Now " },
+        { type: "text", text: "Now I'd like to " },
         { type: "gap", gapId: "g12" },
         {
           type: "text",
@@ -298,8 +295,9 @@ export const CAM17_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Fun is " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: ", but " },
+        { type: "text", text: " in the trips, but there's also the opportunity to " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
       ],
@@ -357,9 +355,9 @@ export const CAM17_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Louise Marsh at The Amesbury has " },
+        { type: "text", text: "Louise Marsh at The Amesbury has one of the best " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " in the business." },
       ],
     },
     {
@@ -374,6 +372,7 @@ export const CAM17_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "For her, the staff are " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: " where everyone is valued." },
       ],

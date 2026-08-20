@@ -5,21 +5,21 @@ import type {
 
 export const CAM19_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["It's great to see so many members", "It is great to see so many members"] },
+    { id: "g1", answers: ["It's great to see", "It is great to see"] },
     { id: "g2", answers: ["has gone from strength to strength"] },
-    { id: "g3", answers: ["Our hosts had arranged a great programme", "Our hosts had arranged a great program"] },
-    { id: "g4", answers: ["The theme park trip had to be cancelled", "The theme park trip had to be canceled"] },
+    { id: "g3", answers: ["arranged a great programme", "arranged a great program"] },
+    { id: "g4", answers: ["The theme park trip was cancelled", "The theme park trip was canceled"] },
     { id: "g5", answers: ["that was the real highlight"] },
     { id: "g6", answers: ["This is a special year for"] },
     { id: "g7", answers: ["they're planning to mark this", "they are planning to mark this"] },
-    { id: "g8", answers: ["the authorities weren't happy with that idea", "the authorities were not happy with that idea"] },
+    { id: "g8", answers: ["weren't happy with that idea", "were not happy with that idea"] },
     { id: "g9", answers: ["In terms of fundraising"] },
     { id: "g10", answers: ["which was nearly as successful"] },
     { id: "g11", answers: ["We're looking forward to welcoming", "We are looking forward to welcoming"] },
     { id: "g12", answers: ["Don't try to do too much", "Do not try to do too much"] },
-    { id: "g13", answers: ["that's always a good place to stroll round", "that is always a good place to stroll round"] },
-    { id: "g14", answers: ["You may not all be familiar with it"] },
-    { id: "g15", answers: ["You can see the car park at the bottom of the map"] },
+    { id: "g13", answers: ["a good place to stroll round"] },
+    { id: "g14", answers: ["be familiar with it"] },
+    { id: "g15", answers: ["at the bottom of the map"] },
     { id: "g16", answers: ["may not be all that mobile"] },
     { id: "g17", answers: ["you might want to use"] },
     { id: "g18", answers: ["but it's worth it", "but it is worth it"] },
@@ -31,7 +31,7 @@ export const CAM19_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g1" },
         {
           type: "text",
-          text: " of the Twinning Association here tonight. Since the twinning link between our two towns, Stanthorpe here in England and Malatte in France, was established, the relationship between the towns ",
+          text: " so many members of the Twinning Association here tonight. Since the twinning link between our two towns, Stanthorpe here in England and Malatte in France, was established, the relationship between the towns ",
         },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
@@ -42,7 +42,7 @@ export const CAM19_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Last month, 25 members of the association from Stanthorpe spent a weekend in Malatte. ",
+          text: "Last month, 25 members of the association from Stanthorpe spent a weekend in Malatte. Our hosts had ",
         },
         { type: "gap", gapId: "g3" },
         {
@@ -69,7 +69,7 @@ export const CAM19_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g7" },
         {
           type: "text",
-          text: " by building a footbridge in the municipal park. We've been discussing what to do here and we've decided to plant a poplar tree in the museum gardens. We considered buying a garden seat to put there, but ",
+          text: " by building a footbridge in the municipal park. We've been discussing what to do here and we've decided to plant a poplar tree in the museum gardens. We considered buying a garden seat to put there, but the authorities ",
         },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
@@ -101,7 +101,7 @@ export const CAM19_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g12" },
         {
           type: "text",
-          text: " that first evening as they'll be tired, so have dinner in the house or garden rather than eating out. The weather looks as if it'll be OK so you might like to plan a barbecue. Then the next morning's market day in town, and ",
+          text: " that first evening as they'll be tired, so have dinner in the house or garden rather than eating out. The weather looks as if it'll be OK so you might like to plan a barbecue. Then the next morning's market day in town, and that's always ",
         },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
@@ -121,10 +121,10 @@ export const CAM19_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Now on Sunday, we'll be taking our visitors to Farley House. ",
+          text: "Now on Sunday, we'll be taking our visitors to Farley House. You may not all ",
         },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: ", so here's a map to help you. " },
+        { type: "text", text: ", so here's a map to help you. You can see the car park " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",

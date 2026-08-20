@@ -5,30 +5,31 @@ import type {
 
 export const CAM16_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["So today we're going to look at an important creative activity", "So today we are going to look at an important creative activity"] },
-    { id: "g2", answers: ["knitting is a global activity with a long history"] },
+    { id: "g1", answers: ["an important creative activity"] },
+    { id: "g2", answers: ["with a long history"] },
     { id: "g3", answers: ["It's a homely image", "It is a homely image"] },
-    { id: "g4", answers: ["they were no longer passed down from one generation to another"] },
-    { id: "g5", answers: ["interest in knitting classes in many countries is actually rising"] },
-    { id: "g6", answers: ["as more and more people are seeking formal instruction in the skill"] },
-    { id: "g7", answers: ["a machine can readily do the job for them"] },
-    { id: "g8", answers: ["knitting, as a handicraft, has numerous benefits"] },
-    { id: "g9", answers: ["Let's consider what some of these might be", "Let us consider what some of these might be"] },
-    { id: "g10", answers: ["knitting may save you a lot of money"] },
+    { id: "g4", answers: ["from one generation to another"] },
+    { id: "g5", answers: ["is actually rising"] },
+    { id: "g6", answers: ["formal instruction in the skill"] },
+    { id: "g7", answers: ["readily do the job for them"] },
+    { id: "g8", answers: ["has numerous benefits"] },
+    { id: "g9", answers: ["what some of these might be"] },
+    { id: "g10", answers: ["save you a lot of money"] },
     { id: "g11", answers: ["the financial outlay is minimal"] },
-    { id: "g12", answers: ["doing something with our hands that is craft-based makes us feel good"] },
-    { id: "g13", answers: ["It releases us from the stress of a technological, fast-paced life"] },
-    { id: "g14", answers: ["no one really knows when knitting first began"] },
-    { id: "g15", answers: ["archaeological remains have disclosed plenty of information for us to think about"] },
-    { id: "g16", answers: ["That's very different from most knitting patterns today", "That is very different from most knitting patterns today"] },
-    { id: "g17", answers: ["led to the dominance of wool in the knitting industry"] },
-    { id: "g18", answers: ["a way of making extra money while doing other tasks"] },
+    { id: "g12", answers: ["makes us feel good"] },
+    { id: "g13", answers: ["a technological, fast-paced life"] },
+    { id: "g14", answers: ["when knitting first began"] },
+    { id: "g15", answers: ["for us to think about"] },
+    { id: "g16", answers: ["most knitting patterns today"] },
+    { id: "g17", answers: ["the dominance of wool"] },
+    { id: "g18", answers: ["while doing other tasks"] },
   ],
   lines: [
     { speaker: null, segments: [{ type: "text", text: "Good morning everyone." }] },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "So today we're going to look at " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " and that's hand knitting." },
       ],
@@ -38,7 +39,7 @@ export const CAM16_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Ancient knitted garments have been found in many different countries, showing that ",
+          text: "Ancient knitted garments have been found in many different countries, showing that knitting is a global activity ",
         },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
@@ -68,7 +69,7 @@ export const CAM16_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "For although humans have sewn and knitted their own clothing for a very long time, many of these craft-based skills went into decline when industrial machines took over - mainly because ",
+          text: "For although humans have sewn and knitted their own clothing for a very long time, many of these craft-based skills went into decline when industrial machines took over - mainly because they were no longer passed down ",
         },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
@@ -77,9 +78,9 @@ export const CAM16_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "However, that's all changing and " },
+        { type: "text", text: "However, that's all changing and interest in knitting classes in many countries " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: ", " },
+        { type: "text", text: ", as more and more people are seeking " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
       ],
@@ -96,7 +97,7 @@ export const CAM16_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So why do people want to be taught to knit at a time when " },
+        { type: "text", text: "So why do people want to be taught to knit at a time when a machine can " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "?" },
       ],
@@ -104,14 +105,18 @@ export const CAM16_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The answer is that " },
+        { type: "text", text: "The answer is that knitting, as a handicraft, " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: " for those doing it." },
       ],
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g9" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "Let's consider " },
+        { type: "gap", gapId: "g9" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -125,7 +130,7 @@ export const CAM16_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "If you have several children who all need warm winter clothes, " },
+        { type: "text", text: "If you have several children who all need warm winter clothes, knitting may " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
       ],
@@ -153,21 +158,28 @@ export const CAM16_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "In a world where it's estimated that we spend up to nine hours a day online, " },
+        {
+          type: "text",
+          text: "In a world where it's estimated that we spend up to nine hours a day online, doing something with our hands that is craft-based ",
+        },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g13" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "It releases us from the stress of " },
+        { type: "gap", gapId: "g13" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Now, let's look back a bit to early knitting activities. In fact, " },
+        { type: "text", text: "Now, let's look back a bit to early knitting activities. In fact, no one really knows " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: ", but " },
+        { type: "text", text: ", but archaeological remains have disclosed plenty of information " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
       ],
@@ -193,6 +205,7 @@ export const CAM16_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "That's very different from " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: ", which only require two." },
       ],
@@ -220,10 +233,10 @@ export const CAM16_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The spinning wheel, which allowed people to make finer yarns and produce much greater quantities of them, ",
+          text: "The spinning wheel, which allowed people to make finer yarns and produce much greater quantities of them, led to ",
         },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: " - often favoured for its warmth." },
+        { type: "text", text: " in the knitting industry - often favoured for its warmth." },
       ],
     },
     {
@@ -247,7 +260,7 @@ export const CAM16_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "As I've mentioned, knitting offered people from poor communities " },
+        { type: "text", text: "As I've mentioned, knitting offered people from poor communities a way of making extra money " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

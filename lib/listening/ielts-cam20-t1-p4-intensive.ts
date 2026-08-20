@@ -7,21 +7,21 @@ export const CAM20_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["It's quite hard to think of", "It is quite hard to think of"] },
     { id: "g2", answers: ["they're nearly all built on rivers", "they are nearly all built on rivers"] },
-    { id: "g3", answers: ["were a big part of people's lives"] },
+    { id: "g3", answers: ["a big part of"] },
     { id: "g4", answers: ["as a relaxing escape from"] },
     { id: "g5", answers: ["But as industries developed"] },
     { id: "g6", answers: ["that wasn't such a problem", "that was not such a problem"] },
     { id: "g7", answers: ["This got worse over time"] },
-    { id: "g8", answers: ["cities have begun to recognise their true value", "cities have begun to recognize their true value"] },
-    { id: "g9", answers: ["to take steps to clean them up"] },
+    { id: "g8", answers: ["recognise their true value", "recognize their true value"] },
+    { id: "g9", answers: ["take steps to"] },
     { id: "g10", answers: ["Unfortunately, they didn't succeed", "Unfortunately, they did not succeed"] },
     { id: "g11", answers: ["are now seen as prime sites"] },
     { id: "g12", answers: ["which are in great demand"] },
     { id: "g13", answers: ["sell for astronomical prices"] },
     { id: "g14", answers: ["as well as a natural environment"] },
-    { id: "g15", answers: ["we need to allow them to regain"] },
+    { id: "g15", answers: ["allow them to regain"] },
     { id: "g16", answers: ["making the most of modern technology"] },
-    { id: "g17", answers: ["these numbers are set to rise further"] },
+    { id: "g17", answers: ["are set to rise"] },
     { id: "g18", answers: ["Wouldn't it be great to unblock", "Would it not be great to unblock"] },
   ],
   lines: [
@@ -42,12 +42,12 @@ export const CAM20_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "When these cities were established hundreds or even thousands of years ago, the rivers ",
+          text: "When these cities were established hundreds or even thousands of years ago, the rivers were ",
         },
         { type: "gap", gapId: "g3" },
         {
           type: "text",
-          text: ". In 16th century London, the quickest way to get from one part of the city to another was by river. But people also used the river for fishing, as the water then was relatively clean, and they would also go on boat trips up and down the river just for pleasure, ",
+          text: " people's lives. In 16th century London, the quickest way to get from one part of the city to another was by river. But people also used the river for fishing, as the water then was relatively clean, and they would also go on boat trips up and down the river just for pleasure, ",
         },
         { type: "gap", gapId: "g4" },
         { type: "text", text: " the noise and bustle of the city streets." },
@@ -85,13 +85,13 @@ export const CAM20_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "But in recent years, as rivers lost their industrial function, " },
+        { type: "text", text: "But in recent years, as rivers lost their industrial function, cities have begun to " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: " and " },
+        { type: "text", text: " and to " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: ". For example, the River Thames is now cleaner than it's been for 150 years.",
+          text: " clean them up. For example, the River Thames is now cleaner than it's been for 150 years.",
         },
       ],
     },
@@ -147,7 +147,7 @@ export const CAM20_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "But to make the most of our rivers in our increasingly crowded cities, " },
+        { type: "text", text: "But to make the most of our rivers in our increasingly crowded cities, we need to " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
@@ -162,12 +162,12 @@ export const CAM20_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Already, more than two billion passengers use the ferry to travel in cities around the world, like Istanbul, San Francisco and New York, and ",
+          text: "Already, more than two billion passengers use the ferry to travel in cities around the world, like Istanbul, San Francisco and New York, and these numbers ",
         },
         { type: "gap", gapId: "g17" },
         {
           type: "text",
-          text: ". Admittedly, it's not a fast way of travelling, but neither is a car when it's stuck in traffic.",
+          text: " further. Admittedly, it's not a fast way of travelling, but neither is a car when it's stuck in traffic.",
         },
       ],
     },

@@ -5,31 +5,32 @@ import type {
 
 export const CAM20_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["It's really good to see you", "It is really good to see you"] },
-    { id: "g2", answers: ["I feel I'm losing touch with", "I feel I am losing touch with"] },
-    { id: "g3", answers: ["We really miss you in the office"] },
-    { id: "g4", answers: ["you must be relieved to have"] },
-    { id: "g5", answers: ["Have you tried to get any support"] },
+    { id: "g1", answers: ["really good to see you"] },
+    { id: "g2", answers: ["losing touch with"] },
+    { id: "g3", answers: ["really miss you"] },
+    { id: "g4", answers: ["must be relieved"] },
+    { id: "g5", answers: ["get any support"] },
     { id: "g6", answers: ["I didn't know I could", "I did not know I could"] },
-    { id: "g7", answers: ["How do I go about getting this support"] },
-    { id: "g8", answers: ["you'd have to have an assessment", "you would have to have an assessment"] },
-    { id: "g9", answers: ["That means someone would come round"] },
-    { id: "g10", answers: ["that's becoming a bit of a problem", "that is becoming a bit of a problem"] },
-    { id: "g11", answers: ["be ready to tell them about"] },
-    { id: "g12", answers: ["I'd be in real trouble if that happened", "I would be in real trouble if that happened"] },
-    { id: "g13", answers: ["if I'm eligible, what happens next", "if I am eligible, what happens next"] },
-    { id: "g14", answers: ["they might support you financially"] },
-    { id: "g15", answers: ["I usually drive her myself, actually"] },
-    { id: "g16", answers: ["I hope you don't mind me saying this", "I hope you do not mind me saying this"] },
-    { id: "g17", answers: ["I feel so much better having talked to you"] },
-    { id: "g18", answers: ["I'll get in touch with the council straight away", "I will get in touch with the council straight away"] },
+    { id: "g7", answers: ["How do I go about"] },
+    { id: "g8", answers: ["have an assessment"] },
+    { id: "g9", answers: ["come round"] },
+    { id: "g10", answers: ["a bit of a problem"] },
+    { id: "g11", answers: ["be ready to"] },
+    { id: "g12", answers: ["in real trouble"] },
+    { id: "g13", answers: ["what happens next"] },
+    { id: "g14", answers: ["support you financially"] },
+    { id: "g15", answers: ["drive her myself"] },
+    { id: "g16", answers: ["don't mind me saying", "do not mind me saying"] },
+    { id: "g17", answers: ["feel so much better"] },
+    { id: "g18", answers: ["get in touch"] },
   ],
   lines: [
     {
       speaker: "WOMAN",
       segments: [
+        { type: "text", text: "It's " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: ", Tom. Since I had to give up work, " },
+        { type: "text", text: ", Tom. Since I had to give up work, I feel I'm " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: " my friends and colleagues." },
       ],
@@ -37,13 +38,14 @@ export const CAM20_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
+        { type: "text", text: "We " },
         { type: "gap", gapId: "g3" },
         {
           type: "text",
-          text: ". We were all so sorry you had to leave. But ",
+          text: " in the office. We were all so sorry you had to leave. But you ",
         },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: " more time to look after your mother. How is she?" },
+        { type: "text", text: " to have more time to look after your mother. How is she?" },
       ],
     },
     {
@@ -52,7 +54,7 @@ export const CAM20_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "MAN",
-      segments: [{ type: "gap", gapId: "g5" }, { type: "text", text: " from the local council?" }],
+      segments: [{ type: "text", text: "Have you tried to " }, { type: "gap", gapId: "g5" }, { type: "text", text: " from the local council?" }],
     },
     {
       speaker: "WOMAN",
@@ -76,15 +78,15 @@ export const CAM20_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Absolutely. OK, so tell me more. " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "?" },
+        { type: "text", text: " getting this support?" },
       ],
     },
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, you'd have to " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: " of your mother's needs. " },
+        { type: "text", text: " of your mother's needs. That means someone would " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -123,7 +125,7 @@ export const CAM20_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Yes, " },
+        { type: "text", text: "Yes, that's becoming " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: ". She used to be very good at it, but not anymore." },
       ],
@@ -133,7 +135,7 @@ export const CAM20_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "And " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: " anything you find particularly difficult about caring for your mother." },
+        { type: "text", text: " tell them about anything you find particularly difficult about caring for your mother." },
       ],
     },
     {
@@ -157,9 +159,9 @@ export const CAM20_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Yes, she's quite heavy and I'm afraid of hurting my back. " },
+        { type: "text", text: "Yes, she's quite heavy and I'm afraid of hurting my back. I'd be " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: "." },
+        { type: "text", text: " if that happened." },
       ],
     },
     {
@@ -174,7 +176,7 @@ export const CAM20_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Great. So once they've done this assessment, " },
+        { type: "text", text: "Great. So once they've done this assessment, if I'm eligible, " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "?" },
       ],
@@ -182,7 +184,7 @@ export const CAM20_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, they might " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
@@ -193,8 +195,9 @@ export const CAM20_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
+        { type: "text", text: "I usually " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: ". So, could I claim the petrol?" },
+        { type: "text", text: ", actually. So, could I claim the petrol?" },
       ],
     },
     {
@@ -207,12 +210,12 @@ export const CAM20_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "And if you need help with the housework, they can arrange for someone to come along once or twice a week. And one other thing. ",
+          text: "And if you need help with the housework, they can arrange for someone to come along once or twice a week. And one other thing. I hope you ",
         },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
-          text: ", but it's important you look after yourself. And it seems to me you're under quite a bit of stress.",
+          text: " this, but it's important you look after yourself. And it seems to me you're under quite a bit of stress.",
         },
       ],
     },
@@ -229,11 +232,11 @@ export const CAM20_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Really? Though, actually, " },
+        { type: "text", text: "Really? Though, actually, I " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: ". " },
+        { type: "text", text: " having talked to you. I'll " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: ". Now, shall we go for coffee or something?" },
+        { type: "text", text: " with the council straight away. Now, shall we go for coffee or something?" },
       ],
     },
   ],

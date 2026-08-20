@@ -7,10 +7,7 @@ export const CAM14_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "I'm going to talk about marine archaeology",
-        "I am going to talk about marine archaeology",
-      ],
+      answers: ["marine archaeology"],
     },
     {
       id: "g2",
@@ -19,48 +16,42 @@ export const CAM14_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         "I will give you an example",
       ],
     },
-    { id: "g3", answers: ["which seems to have been thriving until around 7,000 BC"] },
-    { id: "g4", answers: ["The residents kept cattle, caught fish and stored grain"] },
-    { id: "g5", answers: ["that might have been used for ceremonial purposes"] },
-    { id: "g6", answers: ["it now lies ten metres below the surface of the Mediterranean"] },
+    { id: "g3", answers: ["thriving until around 7,000 BC"] },
+    { id: "g4", answers: ["caught fish and stored grain"] },
+    { id: "g5", answers: ["ceremonial purposes"] },
+    { id: "g6", answers: ["ten metres below the surface"] },
     {
       id: "g7",
-      answers: [
-        "It's been described as the largest and best preserved prehistoric settlement",
-        "It has been described as the largest and best preserved prehistoric settlement",
-      ],
+      answers: ["best preserved prehistoric settlement"],
     },
-    { id: "g8", answers: ["For a fuller picture, researchers need more sunken settlements"] },
+    { id: "g8", answers: ["sunken settlements"] },
     {
       id: "g9",
-      answers: ["Underwater research used to require divers to find shipwrecks or artefacts"],
+      answers: ["find shipwrecks or artefacts"],
     },
     {
       id: "g10",
       answers: [
-        "which means they don't need to be operated by a person",
-        "which means they do not need to be operated by a person",
+        "operated by a person",
       ],
     },
-    { id: "g11", answers: ["To navigate they use sensors, such as compasses and sonar"] },
-    { id: "g12", answers: ["they can be launched from the shore or a small ship"] },
+    { id: "g11", answers: ["compasses and sonar"] },
+    { id: "g12", answers: ["launched from the shore"] },
     { id: "g13", answers: ["can communicate with each other"] },
-    { id: "g14", answers: ["work out the most efficient way to survey a site"] },
-    { id: "g15", answers: ["Creating an internet in the sea for AUVs to communicate is no easy matter"] },
-    { id: "g16", answers: ["Wifi networks on land use electromagnetic waves"] },
+    { id: "g14", answers: ["most efficient way"] },
+    { id: "g15", answers: ["internet in the sea"] },
+    { id: "g16", answers: ["electromagnetic waves"] },
     {
       id: "g17",
-      answers: [
-        "There's also a system that enables AUVs to share information from seabed scans",
-        "There is also a system that enables AUVs to share information from seabed scans",
-      ],
+      answers: ["share information from seabed scans"],
     },
-    { id: "g18", answers: ["Marine archaeologists are excited about the huge potential of these AUVs"] },
+    { id: "g18", answers: ["huge potential"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
+        { type: "text", text: "I'm going to talk about " },
         { type: "gap", gapId: "g1" },
         {
           type: "text",
@@ -92,7 +83,7 @@ export const CAM14_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Atlit-Yam was a village on the coast of the eastern Mediterranean, ",
+          text: "Atlit-Yam was a village on the coast of the eastern Mediterranean, which seems to have been ",
         },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
@@ -100,7 +91,11 @@ export const CAM14_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g4" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "The residents kept cattle, " },
+        { type: "gap", gapId: "g4" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -116,7 +111,7 @@ export const CAM14_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The village contained an impressive monument: seven half-tonne stones standing in a semicircle around a spring, ",
+          text: "The village contained an impressive monument: seven half-tonne stones standing in a semicircle around a spring, that might have been used for ",
         },
         { type: "gap", gapId: "g5" },
         { type: "text", text: "." },
@@ -134,14 +129,15 @@ export const CAM14_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Whatever the cause, " },
+        { type: "text", text: "Whatever the cause, it now lies " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ", buried under sand at the bottom of the sea." },
+        { type: "text", text: " of the Mediterranean, buried under sand at the bottom of the sea." },
       ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "It's been described as the largest and " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: " ever found on the seabed." },
       ],
@@ -171,6 +167,7 @@ export const CAM14_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "For a fuller picture, researchers need more " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: ", but the hard part is finding them." },
       ],
@@ -178,10 +175,11 @@ export const CAM14_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Underwater research used to require divers to " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: ", but in the second half of the twentieth century, various types of underwater vehicles were developed, some controlled from a ship on the surface, and some of them autonomous, ",
+          text: ", but in the second half of the twentieth century, various types of underwater vehicles were developed, some controlled from a ship on the surface, and some of them autonomous, which means they don't need to be ",
         },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
@@ -198,7 +196,11 @@ export const CAM14_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g11" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "To navigate they use sensors, such as " },
+        { type: "gap", gapId: "g11" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -214,10 +216,10 @@ export const CAM14_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "But the latest AUVs are much easier to manoeuvre – ",
+          text: "But the latest AUVs are much easier to manoeuvre – they can be ",
         },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: "." },
+        { type: "text", text: " or a small ship." },
       ],
     },
     {
@@ -238,9 +240,9 @@ export const CAM14_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "They " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: " and, for example, " },
+        { type: "text", text: " and, for example, work out the " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: ", or to find particular objects on the seabed." },
+        { type: "text", text: " to survey a site, or to find particular objects on the seabed." },
       ],
     },
     { speaker: null, segments: [{ type: "text", text: "Field tests show the approach can work." }] },
@@ -273,11 +275,16 @@ export const CAM14_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g15" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "Creating an " },
+        { type: "gap", gapId: "g15" },
+        { type: "text", text: " for AUVs to communicate is no easy matter." },
+      ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Wifi networks on land use " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: ", but in water these will only travel a few centimetres." },
       ],
@@ -311,7 +318,11 @@ export const CAM14_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g17" }, { type: "text", text: ", and other data." }],
+      segments: [
+        { type: "text", text: "There's also a system that enables AUVs to " },
+        { type: "gap", gapId: "g17" },
+        { type: "text", text: ", and other data." },
+      ],
     },
     {
       speaker: null,
@@ -324,7 +335,11 @@ export const CAM14_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g18" }, { type: "text", text: " for their discipline." }],
+      segments: [
+        { type: "text", text: "Marine archaeologists are excited about the " },
+        { type: "gap", gapId: "g18" },
+        { type: "text", text: " of these AUVs for their discipline." },
+      ],
     },
     {
       speaker: null,

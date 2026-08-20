@@ -5,24 +5,24 @@ import type {
 
 export const CAM21_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["the journey feels like part of the holiday"] },
+    { id: "g1", answers: ["part of the holiday"] },
     { id: "g2", answers: ["How frequent are they"] },
     { id: "g3", answers: ["The service is pretty limited"] },
     { id: "g4", answers: ["I quite like that idea"] },
-    { id: "g5", answers: ["It's a good idea to book in advance", "It is a good idea to book in advance"] },
+    { id: "g5", answers: ["book in advance"] },
     { id: "g6", answers: ["they get booked up quite quickly"] },
-    { id: "g7", answers: ["I'm just not 100% sure of our plans yet", "I am just not 100% sure of our plans yet"] },
-    { id: "g8", answers: ["we need to make up our minds quickly"] },
-    { id: "g9", answers: ["You'd want to book a cabin too", "You would want to book a cabin too"] },
+    { id: "g7", answers: ["not 100% sure"] },
+    { id: "g8", answers: ["make up our minds"] },
+    { id: "g9", answers: ["book a cabin too"] },
     { id: "g10", answers: ["I think it's worth paying for", "I think it is worth paying for"] },
-    { id: "g11", answers: ["The selection on board is quite limited"] },
+    { id: "g11", answers: ["quite limited"] },
     { id: "g12", answers: ["Is that any good"] },
-    { id: "g13", answers: ["it was quite an adventure for the kids"] },
+    { id: "g13", answers: ["quite an adventure"] },
     { id: "g14", answers: ["keeping a lookout for"] },
-    { id: "g15", answers: ["rather than hang around at the port"] },
+    { id: "g15", answers: ["hang around at the port"] },
     { id: "g16", answers: ["I've never heard of it", "I have never heard of it"] },
     { id: "g17", answers: ["It's really worth visiting", "It is really worth visiting"] },
-    { id: "g18", answers: ["I can check the name of it for you"] },
+    { id: "g18", answers: ["check the name of it"] },
   ],
   lines: [
     {
@@ -37,7 +37,7 @@ export const CAM21_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "PAUL",
       segments: [
-        { type: "text", text: "We went by ferry, Tammy. I prefer driving to flying – " },
+        { type: "text", text: "We went by ferry, Tammy. I prefer driving to flying – the journey feels like " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
@@ -95,7 +95,7 @@ export const CAM21_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "PAUL",
       segments: [
-        { type: "text", text: "So was I. It's great value. " },
+        { type: "text", text: "So was I. It's great value. It's a good idea to " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: " because I think " },
         { type: "gap", gapId: "g6" },
@@ -105,9 +105,9 @@ export const CAM21_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TAMMY",
       segments: [
-        { type: "text", text: "Yes, I suppose so. " },
+        { type: "text", text: "Yes, I suppose so. I'm just " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: ". What if I had to cancel?" },
+        { type: "text", text: " of our plans yet. What if I had to cancel?" },
       ],
     },
     {
@@ -122,14 +122,15 @@ export const CAM21_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TAMMY",
       segments: [
-        { type: "text", text: "Right. Well " },
+        { type: "text", text: "Right. Well we need to " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: " then." },
+        { type: "text", text: " quickly then." },
       ],
     },
     {
       speaker: "PAUL",
       segments: [
+        { type: "text", text: "You'd want to " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -145,7 +146,7 @@ export const CAM21_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "PAUL",
       segments: [
-        { type: "text", text: "The only other thing I can think of is to make sure you bring snacks for the kids. " },
+        { type: "text", text: "The only other thing I can think of is to make sure you bring snacks for the kids. The selection on board is " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: " and not that healthy either." },
       ],
@@ -184,9 +185,9 @@ export const CAM21_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "PAUL",
       segments: [
-        { type: "text", text: "It was all very easy really – and " },
+        { type: "text", text: "It was all very easy really – and it was " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: ". They loved being on the sea at night and in the morning " },
+        { type: "text", text: " for the kids. They loved being on the sea at night and in the morning " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " dolphins – we saw loads." },
       ],
@@ -197,7 +198,7 @@ export const CAM21_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "One other thing. We arrived in Aberdeen hours before the ferry was due to leave so we decided to go somewhere else " },
+          text: "One other thing. We arrived in Aberdeen hours before the ferry was due to leave so we decided to go somewhere else rather than " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: " for so long." },
       ],
@@ -225,9 +226,9 @@ export const CAM21_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "It's only got a coffee shop – no restaurant. We looked up restaurants in the area and found an Italian one in a village nearby. " },
+          text: "It's only got a coffee shop – no restaurant. We looked up restaurants in the area and found an Italian one in a village nearby. I can " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: " if you're interested." },
+        { type: "text", text: " for you if you're interested." },
       ],
     },
     { speaker: "TAMMY", segments: [{ type: "text", text: "Oh thanks Paul that would be ...." }] },

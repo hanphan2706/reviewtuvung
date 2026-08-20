@@ -5,20 +5,14 @@ import type {
 
 export const CAM14_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["You said you wanted to talk about the course"] },
+    { id: "g1", answers: ["talk about the course"] },
     {
       id: "g2",
-      answers: [
-        "I'm thinking of doing it next year",
-        "I am thinking of doing it next year",
-      ],
+      answers: ["doing it next year"],
     },
     {
       id: "g3",
-      answers: [
-        "I'd like to find out more about it first",
-        "I would like to find out more about it first",
-      ],
+      answers: ["find out more"],
     },
     {
       id: "g4",
@@ -27,10 +21,10 @@ export const CAM14_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         "It is divided into six modules",
       ],
     },
-    { id: "g5", answers: ["you have to take all of them"] },
+    { id: "g5", answers: ["take all of them"] },
     {
       id: "g6",
-      answers: ["whether it should just entertain children or should be educational"],
+      answers: ["just entertain children"],
     },
     {
       id: "g7",
@@ -40,16 +34,13 @@ export const CAM14_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       ],
     },
     { id: "g8", answers: ["I see what you mean"] },
-    { id: "g9", answers: ["they can have a significant effect on children as they grow up"] },
+    { id: "g9", answers: ["significant effect on children"] },
     { id: "g10", answers: ["Is that covered in the course"] },
     {
       id: "g11",
-      answers: [
-        "how they're sometimes central to the story",
-        "how they are sometimes central to the story",
-      ],
+      answers: ["central to the story"],
     },
-    { id: "g12", answers: ["I can still see them vividly in my mind"] },
+    { id: "g12", answers: ["vividly in my mind"] },
     {
       id: "g13",
       answers: [
@@ -59,22 +50,18 @@ export const CAM14_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       id: "g14",
-      answers: ["One of the great things about words is that you use your imagination"],
+      answers: ["use your imagination"],
     },
-    { id: "g15", answers: ["Have you been reading lots of children's stories"] },
+    { id: "g15", answers: ["children's stories"] },
     {
       id: "g16",
-      answers: [
-        "I've gone as far back as the late seventeenth century",
-        "I have gone as far back as the late seventeenth century",
-      ],
+      answers: ["late seventeenth century"],
     },
     {
       id: "g17",
       answers: [
-        "It's probably my favourite children's story of all time",
-        "It is probably my favourite children's story of all time",
-        "It's probably my favorite children's story of all time",
+        "favourite children's story",
+        "favorite children's story",
       ],
     },
     {
@@ -83,15 +70,22 @@ export const CAM14_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
   ],
   lines: [
-    { speaker: "TREVOR", segments: [{ type: "gap", gapId: "g1" }, { type: "text", text: " I'm taking." }] },
+    {
+      speaker: "TREVOR",
+      segments: [
+        { type: "text", text: "You said you wanted to " },
+        { type: "gap", gapId: "g1" },
+        { type: "text", text: " I'm taking." },
+      ],
+    },
     {
       speaker: "STEPHANIE",
       segments: [
-        { type: "text", text: "That's right. " },
+        { type: "text", text: "That's right. I'm thinking of " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ", but " },
+        { type: "text", text: ", but I'd like to " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "." },
+        { type: "text", text: " about it first." },
       ],
     },
     {
@@ -99,7 +93,7 @@ export const CAM14_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "OK. Well, " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: ", and " },
+        { type: "text", text: ", and you have to " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: "." },
       ],
@@ -116,9 +110,9 @@ export const CAM14_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "STEPHANIE",
       segments: [
-        { type: "text", text: "You mean, " },
+        { type: "text", text: "You mean, whether it should " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " or should be educational." },
       ],
     },
     {
@@ -149,10 +143,10 @@ export const CAM14_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "That module made me realise how important stories are – ",
+          text: "That module made me realise how important stories are – they can have a ",
         },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: "." },
+        { type: "text", text: " as they grow up." },
       ],
     },
     {
@@ -175,7 +169,7 @@ export const CAM14_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TREVOR",
       segments: [
-        { type: "text", text: "Yes, there's a module on pictures, and " },
+        { type: "text", text: "Yes, there's a module on pictures, and how they're sometimes " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -185,7 +179,7 @@ export const CAM14_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "That's good. I remember some frightening ones I saw as a child and ",
+          text: "That's good. I remember some frightening ones I saw as a child and I can still see them ",
         },
         { type: "gap", gapId: "g12" },
         {
@@ -199,7 +193,7 @@ export const CAM14_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "I'm sure it will. We also studied comics in that module, but " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: ", not compared with books. " },
+        { type: "text", text: ", not compared with books. One of the great things about words is that you " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: ", but with a comic you don't have to." },
       ],
@@ -248,6 +242,7 @@ export const CAM14_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TREVOR",
       segments: [
+        { type: "text", text: "Have you been reading lots of " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: ", to help you decide whether to take the course?" },
       ],
@@ -255,7 +250,7 @@ export const CAM14_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "STEPHANIE",
       segments: [
-        { type: "text", text: "Yeah. " },
+        { type: "text", text: "Yeah. I've gone as far back as the " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: ", though I know there were earlier children's stories." },
       ],
@@ -311,10 +306,10 @@ export const CAM14_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I hope you've read Oscar Wilde's The Happy Prince. ",
+          text: "I hope you've read Oscar Wilde's The Happy Prince. It's probably my ",
         },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " of all time." },
       ],
     },
     {

@@ -9,13 +9,13 @@ export const CAM20_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g2", answers: ["It's been a real eye-opener", "It has been a real eye-opener"] },
     { id: "g3", answers: ["The downside of a modern lifestyle"] },
     { id: "g4", answers: ["Did you come to any conclusions"] },
-    { id: "g5", answers: ["I'd assumed it was mainly an issue", "I had assumed it was mainly an issue"] },
+    { id: "g5", answers: ["I'd assumed it was", "I had assumed it was"] },
     { id: "g6", answers: ["far from making me feel isolated"] },
-    { id: "g7", answers: ["It definitely does more good than harm"] },
+    { id: "g7", answers: ["more good than harm"] },
     { id: "g8", answers: ["A more plausible explanation is that"] },
     { id: "g9", answers: ["I'm not sure there's enough evidence", "I am not sure there is enough evidence"] },
     { id: "g10", answers: ["Not exactly reliable, then"] },
-    { id: "g11", answers: ["it was hard to reach a judgment"] },
+    { id: "g11", answers: ["reach a judgment"] },
     { id: "g12", answers: ["Unquestionably"] },
     { id: "g13", answers: ["quite convincing"] },
     { id: "g14", answers: ["Survival often depended on"] },
@@ -60,7 +60,7 @@ export const CAM20_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Well, " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: " for the elderly, but in fact it's something which affects young people just as much." },
+        { type: "text", text: " mainly an issue for the elderly, but in fact it's something which affects young people just as much." },
       ],
     },
     {
@@ -74,6 +74,7 @@ export const CAM20_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TAMARA",
       segments: [
+        { type: "text", text: "It definitely does " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -160,7 +161,7 @@ export const CAM20_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "DEV",
       segments: [
-        { type: "text", text: "Yes, I read that " },
+        { type: "text", text: "Yes, I read that it was hard to " },
         { type: "gap", gapId: "g11" },
         {
           type: "text",

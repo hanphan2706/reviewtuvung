@@ -5,30 +5,30 @@ import type {
 
 export const CAM20_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["much as there are trends in clothing"] },
-    { id: "g2", answers: ["is obsessed with finding and exploiting"] },
-    { id: "g3", answers: ["which was previously unknown or not needed"] },
-    { id: "g4", answers: ["One of the most effective ways of promoting"] },
+    { id: "g1", answers: ["trends in clothing"] },
+    { id: "g2", answers: ["obsessed with"] },
+    { id: "g3", answers: ["previously unknown"] },
+    { id: "g4", answers: ["the most effective ways"] },
     { id: "g5", answers: ["In return for free samples"] },
-    { id: "g6", answers: ["who can command large fees for their services"] },
-    { id: "g7", answers: ["it has to be readily available"] },
-    { id: "g8", answers: ["I'd like to look at a few examples", "I would like to look at a few examples"] },
-    { id: "g9", answers: ["was hired to raise its profile and stimulate demand"] },
-    { id: "g10", answers: ["which at this time was certainly not the daily staple"] },
-    { id: "g11", answers: ["making it one of the most successful fresh produce campaigns"] },
-    { id: "g12", answers: ["which used provocation as a way of getting their message across"] },
+    { id: "g6", answers: ["command large fees"] },
+    { id: "g7", answers: ["readily available"] },
+    { id: "g8", answers: ["a few examples"] },
+    { id: "g9", answers: ["raise its profile"] },
+    { id: "g10", answers: ["the daily staple"] },
+    { id: "g11", answers: ["fresh produce campaigns"] },
+    { id: "g12", answers: ["getting their message across"] },
     { id: "g13", answers: ["was seen as a plus"] },
-    { id: "g14", answers: ["This proved far more effective than"] },
-    { id: "g15", answers: ["It requires significantly less water to produce"] },
+    { id: "g14", answers: ["far more effective than"] },
+    { id: "g15", answers: ["significantly less water"] },
     { id: "g16", answers: ["otherwise known as Arctic cod"] },
-    { id: "g17", answers: ["The public can also be encouraged to buy things"] },
-    { id: "g18", answers: ["which could potentially lead to desertification"] },
+    { id: "g17", answers: ["encouraged to buy"] },
+    { id: "g18", answers: ["lead to desertification"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
-        { type: "text", text: "There are trends in food " },
+        { type: "text", text: "There are trends in food much as there are " },
         { type: "gap", gapId: "g1" },
         {
           type: "text",
@@ -39,40 +39,41 @@ export const CAM20_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The food industry in the UK in particular " },
+        { type: "text", text: "The food industry in the UK in particular is " },
         { type: "gap", gapId: "g2" },
         {
           type: "text",
-          text: " the next big food trend. Marketeers aim to create a huge demand for a food item ",
+          text: " finding and exploiting the next big food trend. Marketeers aim to create a huge demand for a food item which was ",
         },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "." },
+        { type: "text", text: " or not needed." },
       ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "One of " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
-          text: " a new food product is by using social media influencers as brand ambassadors. ",
+          text: " of promoting a new food product is by using social media influencers as brand ambassadors. ",
         },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: " many influencers will post content about a product, although there are influencers with hundreds of thousands of followers ",
+          text: " many influencers will post content about a product, although there are influencers with hundreds of thousands of followers who can ",
         },
         { type: "gap", gapId: "g6" },
         {
           type: "text",
-          text: ". Companies which sell vegan produce were pioneers in being able to increase sales really quickly in this way.",
+          text: " for their services. Companies which sell vegan produce were pioneers in being able to increase sales really quickly in this way.",
         },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "For a food item to become really popular, " },
+        { type: "text", text: "For a food item to become really popular, it has to be " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -83,13 +84,14 @@ export const CAM20_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "I'd like to look at " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
-          text: " of marketing campaigns which were really successful in launching a new fashion trend. Starting in the 1990s with the avocado. A British PR company ",
+          text: " of marketing campaigns which were really successful in launching a new fashion trend. Starting in the 1990s with the avocado. A British PR company was hired to ",
         },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: "." },
+        { type: "text", text: " and stimulate demand." },
       ],
     },
     {
@@ -97,7 +99,7 @@ export const CAM20_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "They paid for a group of journalists to travel out to South Africa to meet avocado farmers. Articles written following this visit helped to educate the British public about the avocado, ",
+          text: "They paid for a group of journalists to travel out to South Africa to meet avocado farmers. Articles written following this visit helped to educate the British public about the avocado, which at this time was certainly not ",
         },
         { type: "gap", gapId: "g10" },
         { type: "text", text: " it's since become." },
@@ -108,7 +110,7 @@ export const CAM20_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Advertisements were designed to promote the avocado as a superfood, rich in nutrients and therefore beneficial for health. Avocados became hugely fashionable, and within a few years UK avocado sales had grown from £13 million annually to around £150 million, ",
+          text: "Advertisements were designed to promote the avocado as a superfood, rich in nutrients and therefore beneficial for health. Avocados became hugely fashionable, and within a few years UK avocado sales had grown from £13 million annually to around £150 million, making it one of the most successful ",
         },
         { type: "gap", gapId: "g11" },
         { type: "text", text: " in UK history." },
@@ -119,7 +121,7 @@ export const CAM20_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Oat milk is a recent example of a new product which became fashionable very quickly. Now there are many brands available but one company which had early success was the Swedish brand Oatly. They attracted a lot of attention with a media campaign ",
+          text: "Oat milk is a recent example of a new product which became fashionable very quickly. Now there are many brands available but one company which had early success was the Swedish brand Oatly. They attracted a lot of attention with a media campaign which used provocation as a way of ",
         },
         { type: "gap", gapId: "g12" },
         { type: "text", text: " effectively." },
@@ -141,7 +143,7 @@ export const CAM20_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "In the USA, the brand decided against a big retail launch in favour of getting the product into coffee chains, which removed the need for a big advertising budget. ",
+          text: "In the USA, the brand decided against a big retail launch in favour of getting the product into coffee chains, which removed the need for a big advertising budget. This proved ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " offering samples in supermarkets." },
@@ -152,12 +154,12 @@ export const CAM20_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Oat milk had an advantage over other alternative milk products, such as almond milk. Many consumers prefer it because it has less of an impact on the environment. ",
+          text: "Oat milk had an advantage over other alternative milk products, such as almond milk. Many consumers prefer it because it has less of an impact on the environment. It requires ",
         },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
-          text: " than other alternative milk products and it also has a relatively low carbon footprint.",
+          text: " to produce than other alternative milk products and it also has a relatively low carbon footprint.",
         },
       ],
     },
@@ -177,12 +179,12 @@ export const CAM20_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Food trends can be considered a good thing in some ways, as they can benefit farmers and food producers enormously. ",
+          text: "Food trends can be considered a good thing in some ways, as they can benefit farmers and food producers enormously. The public can also be ",
         },
         { type: "gap", gapId: "g17" },
         {
           type: "text",
-          text: " which are more sustainably produced. But ethical concerns have been raised about the effects a surge in demand can cause.",
+          text: " things which are more sustainably produced. But ethical concerns have been raised about the effects a surge in demand can cause.",
         },
       ],
     },
@@ -191,7 +193,7 @@ export const CAM20_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Quinoa is a classic example. This plant is native to Peru and when demand peaked some years ago the price soared making it unaffordable for local people. While the popularity of quinoa has benefited farmers financially there have been other negative consequences. As demand grew, farmers began working the land all year round in order to produce more quinoa. One issue has been that the fertility of the soil decreased dramatically, ",
+          text: "Quinoa is a classic example. This plant is native to Peru and when demand peaked some years ago the price soared making it unaffordable for local people. While the popularity of quinoa has benefited farmers financially there have been other negative consequences. As demand grew, farmers began working the land all year round in order to produce more quinoa. One issue has been that the fertility of the soil decreased dramatically, which could potentially ",
         },
         { type: "gap", gapId: "g18" },
         { type: "text", text: " in some areas. Another example would be the case of…" },

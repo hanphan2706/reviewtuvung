@@ -8,49 +8,48 @@ export const CAM13_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       id: "g1",
       answers: [
-        "we'll be continuing the series of lectures on memory",
-        "we will be continuing the series of lectures on memory",
+        "series of lectures on memory",
       ],
     },
-    { id: "g2", answers: ["what can happen if this is not working properly"] },
-    { id: "g3", answers: ["allow us to mentally travel back in time"] },
-    { id: "g4", answers: ["try to remember the last time you ate dinner at a restaurant"] },
-    { id: "g5", answers: ["This is the type of factual memory that we have in common with everyone else"] },
-    { id: "g6", answers: ["remembering where you parked your car is an example of episodic memory"] },
-    { id: "g7", answers: ["can be thought of as a process with several different steps"] },
-    { id: "g8", answers: ["the process of receiving and registering information"] },
-    { id: "g9", answers: ["Being distracted can make effective encoding very difficult"] },
-    { id: "g10", answers: ["Encoding of episodic memories is also influenced by how you process the event"] },
+    { id: "g2", answers: ["not working properly"] },
+    { id: "g3", answers: ["mentally travel back in time"] },
+    { id: "g4", answers: ["ate dinner at a restaurant"] },
+    { id: "g5", answers: ["in common with everyone else"] },
+    { id: "g6", answers: ["an example of episodic memory"] },
+    { id: "g7", answers: ["several different steps"] },
+    { id: "g8", answers: ["receiving and registering information"] },
+    { id: "g9", answers: ["effective encoding very difficult"] },
+    { id: "g10", answers: ["how you process the event"] },
     {
       id: "g11",
       answers: [
-        "memories of encoded information are strengthened, stabilised and stored",
-        "memories of encoded information are strengthened, stabilized and stored",
+        "strengthened, stabilised and stored",
+        "strengthened, stabilized and stored",
       ],
     },
     { id: "g12", answers: ["to facilitate later retrieval"] },
     {
       id: "g13",
       answers: [
-        "Memories can fade or become harder to retrieve if they aren't used very often",
-        "Memories can fade or become harder to retrieve if they are not used very often",
+        "aren't used very often",
+        "are not used very often",
       ],
     },
     { id: "g14", answers: ["the conscious recollection of encoded information"] },
-    { id: "g15", answers: ["These help episodic memory retrieval by acting as a prompt"] },
-    { id: "g16", answers: ["You actually have to mentally travel back to the moment you parked"] },
-    { id: "g17", answers: ["can have a profound effect on individuals' lives"] },
-    { id: "g18", answers: ["they are often unable to return to university or work"] },
+    { id: "g15", answers: ["acting as a prompt"] },
+    { id: "g16", answers: ["mentally travel back"] },
+    { id: "g17", answers: ["a profound effect"] },
+    { id: "g18", answers: ["return to university or work"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Today, " },
+        { type: "text", text: "Today, we'll be continuing the " },
         { type: "gap", gapId: "g1" },
         {
           type: "text",
-          text: " by focusing on what is called episodic memory and ",
+          text: " by focusing on what is called episodic memory and what can happen if this is ",
         },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
@@ -61,12 +60,12 @@ export const CAM13_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Episodic memory refers to the memory of an event or 'episode'. Episodic memories ",
+          text: "Episodic memory refers to the memory of an event or 'episode'. Episodic memories allow us to ",
         },
         { type: "gap", gapId: "g3" },
         {
           type: "text",
-          text: " to an event from the past. Episodic memories include various details about these events, for example, when an event happened and other information such as the location. To help understand this concept, ",
+          text: " to an event from the past. Episodic memories include various details about these events, for example, when an event happened and other information such as the location. To help understand this concept, try to remember the last time you ",
         },
         { type: "gap", gapId: "g4" },
         {
@@ -80,12 +79,12 @@ export const CAM13_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Episodic memory is distinct from another type of memory called semantic memory. ",
+          text: "Episodic memory is distinct from another type of memory called semantic memory. This is the type of factual memory that we have ",
         },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: " - that is your general knowledge of the world. To build upon a previous example, ",
+          text: " - that is your general knowledge of the world. To build upon a previous example, remembering where you parked your car is ",
         },
         { type: "gap", gapId: "g6" },
         {
@@ -97,7 +96,7 @@ export const CAM13_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Episodic memory " },
+        { type: "text", text: "Episodic memory can be thought of as a process with " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: " of memory processing: encoding, consolidation and retrieval." },
       ],
@@ -107,15 +106,15 @@ export const CAM13_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The initial step is called encoding. This involves ",
+          text: "The initial step is called encoding. This involves the process of ",
         },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
-          text: ", which is necessary for creating memories of information or events that you experience. The degree to which you can successfully encode information depends on the level of attention you give to an event while it's actually happening. ",
+          text: ", which is necessary for creating memories of information or events that you experience. The degree to which you can successfully encode information depends on the level of attention you give to an event while it's actually happening. Being distracted can make ",
         },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: ". " },
+        { type: "text", text: ". Encoding of episodic memories is also influenced by " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
@@ -128,14 +127,14 @@ export const CAM13_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Memory consolidation, the next step in forming an episodic memory, is the process by which ",
+          text: "Memory consolidation, the next step in forming an episodic memory, is the process by which memories of encoded information are ",
         },
         { type: "gap", gapId: "g11" },
         { type: "text", text: " " },
         { type: "gap", gapId: "g12" },
         {
           type: "text",
-          text: ". Consolidation is most effective when the information being stored can be linked to an existing network of information. Consolidation makes it possible for you to store memories for later retrieval indefinitely. Forming strong memories depends on the frequency with which you try to retrieve them. ",
+          text: ". Consolidation is most effective when the information being stored can be linked to an existing network of information. Consolidation makes it possible for you to store memories for later retrieval indefinitely. Forming strong memories depends on the frequency with which you try to retrieve them. Memories can fade or become harder to retrieve if they ",
         },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
@@ -151,15 +150,15 @@ export const CAM13_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g14" },
         {
           type: "text",
-          text: ". Retrieving information from episodic memory depends upon semantic, olfactory, auditory and visual factors. ",
+          text: ". Retrieving information from episodic memory depends upon semantic, olfactory, auditory and visual factors. These help episodic memory retrieval by ",
         },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
-          text: ". For example, when recalling where you parked your car you may use the colour of a sign close to where you parked. ",
+          text: ". For example, when recalling where you parked your car you may use the colour of a sign close to where you parked. You actually have to ",
         },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " to the moment you parked." },
       ],
     },
     {
@@ -167,12 +166,12 @@ export const CAM13_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "There are a wide range of neurological diseases and conditions that can affect episodic memory. These range from Alzheimer's to schizophrenia to autism. An impairment of episodic memory ",
+          text: "There are a wide range of neurological diseases and conditions that can affect episodic memory. These range from Alzheimer's to schizophrenia to autism. An impairment of episodic memory can have ",
         },
         { type: "gap", gapId: "g17" },
         {
           type: "text",
-          text: ". For example, the symptoms of schizophrenia can be reasonably well controlled by medication; however, patients' episodic memory may still be impaired and so ",
+          text: " on individuals' lives. For example, the symptoms of schizophrenia can be reasonably well controlled by medication; however, patients' episodic memory may still be impaired and so they are often unable to ",
         },
         { type: "gap", gapId: "g18" },
         {

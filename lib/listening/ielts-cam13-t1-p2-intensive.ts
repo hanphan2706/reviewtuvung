@@ -8,68 +8,50 @@ export const CAM13_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g1", answers: ["Good evening everyone"] },
     {
       id: "g2",
-      answers: ["I'm chairman of the Highways Committee", "I am chairman of the Highways Committee"],
+      answers: ["I'm chairman of", "I am chairman of"],
     },
     {
       id: "g3",
       answers: [
-        "We've called this meeting to inform members of the public",
-        "We have called this meeting to inform members of the public",
+        "We've called this meeting",
+        "We have called this meeting",
       ],
     },
     {
       id: "g4",
-      answers: [
-        "I'll start by summarising these changes before we open the meeting to questions",
-        "I will start by summarising these changes before we open the meeting to questions",
-      ],
+      answers: ["I'll start by summarising", "I will start by summarising"],
     },
-    { id: "g5", answers: ["why do we need to make these changes to traffic systems in Granford"] },
-    { id: "g6", answers: ["traffic is becoming an increasing problem"] },
+    { id: "g5", answers: ["why do we need"] },
+    { id: "g6", answers: ["an increasing problem"] },
     {
       id: "g7",
-      answers: [
-        "while they've been building the new hospital",
-        "while they have been building the new hospital",
-      ],
+      answers: ["building the new hospital"],
     },
     {
       id: "g8",
       answers: [
-        "that's not something we want to see happen, obviously",
-        "that is not something we want to see happen, obviously",
+        "that's not something we want",
+        "that is not something we want",
       ],
     },
-    { id: "g9", answers: ["We recently carried out a survey of local residents"] },
+    { id: "g9", answers: ["carried out a survey"] },
     { id: "g10", answers: ["their responses were interesting"] },
     {
       id: "g11",
-      answers: ["this wasn't top of the list", "this was not top of the list"],
+      answers: ["wasn't top of the list", "was not top of the list"],
     },
-    { id: "g12", answers: ["We think these new traffic regulations would make a lot of difference"] },
-    {
-      id: "g13",
-      answers: [
-        "We've managed to keep our proposals within budget, just",
-        "We have managed to keep our proposals within budget, just",
-      ],
-    },
-    { id: "g14", answers: ["so they can be covered by the Council"] },
-    { id: "g15", answers: ["this slide shows a map of the central area of Granford"] },
-    { id: "g16", answers: ["with the High Street in the middle and School Road on the right"] },
+    { id: "g12", answers: ["make a lot of difference"] },
+    { id: "g13", answers: ["keep our proposals within budget"] },
+    { id: "g14", answers: ["covered by the Council"] },
+    { id: "g15", answers: ["a map of the central area"] },
+    { id: "g16", answers: ["High Street in the middle"] },
     {
       id: "g17",
-      answers: [
-        "That's a very busy area, so it should help things there",
-        "That is a very busy area, so it should help things there",
-      ],
+      answers: ["help things there"],
     },
     {
       id: "g18",
-      answers: [
-        "It's not ideal, but probably better than the present arrangement",
-        "It is not ideal, but probably better than the present arrangement",
-      ],
+      answers: ["better than the present arrangement"],
     },
   ],
   lines: [
@@ -79,7 +61,7 @@ export const CAM13_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "My name's Phil Sutton, and " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "." },
+        { type: "text", text: " the Highways Committee." },
       ],
     },
     {
@@ -88,23 +70,29 @@ export const CAM13_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g3" },
         {
           type: "text",
-          text: " about the new regulations for traffic and parking we're proposing for Granford.",
+          text: " to inform members of the public about the new regulations for traffic and parking we're proposing for Granford.",
         },
       ],
     },
-    { speaker: null, segments: [{ type: "gap", gapId: "g4" }, { type: "text", text: "." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "gap", gapId: "g4" },
+        { type: "text", text: " these changes before we open the meeting to questions." },
+      ],
+    },
     {
       speaker: null,
       segments: [
         { type: "text", text: "So, " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "?" },
+        { type: "text", text: " to make these changes to traffic systems in Granford?" },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Well, we're very aware that " },
+        { type: "text", text: "Well, we're very aware that traffic is becoming " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
       ],
@@ -112,7 +100,7 @@ export const CAM13_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "It's been especially noticeable with the increase in heavy traffic " },
+        { type: "text", text: "It's been especially noticeable with the increase in heavy traffic while they've been " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -131,14 +119,15 @@ export const CAM13_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "To date there's not been any increase in traffic accidents, but " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: "." },
+        { type: "text", text: " to see happen, obviously." },
       ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "We recently " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: ", and " },
+        { type: "text", text: " of local residents, and " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
       ],
@@ -157,7 +146,7 @@ export const CAM13_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "We'd expected complaints about the congestion near the school when parents are dropping off their children or picking them up, but ",
+          text: "We'd expected complaints about the congestion near the school when parents are dropping off their children or picking them up, but this ",
         },
         { type: "gap", gapId: "g11" },
         {
@@ -168,14 +157,19 @@ export const CAM13_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g12" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "We think these new traffic regulations would " },
+        { type: "gap", gapId: "g12" },
+        { type: "text", text: "." },
+      ],
     },
     { speaker: null, segments: [{ type: "text", text: "But we still have a long way to go." }] },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "We've managed to " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: ", " },
+        { type: "text", text: ", just, so they can be " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
       ],
@@ -192,11 +186,11 @@ export const CAM13_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "OK, so " },
+        { type: "text", text: "OK, so this slide shows " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: ", " },
+        { type: "text", text: " of Granford, with the " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " and School Road on the right." },
       ],
     },
     {
@@ -221,7 +215,14 @@ export const CAM13_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         },
       ],
     },
-    { speaker: null, segments: [{ type: "gap", gapId: "g17" }, { type: "text", text: "." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "That's a very busy area, so it should " },
+        { type: "gap", gapId: "g17" },
+        { type: "text", text: "." },
+      ],
+    },
     { speaker: null, segments: [{ type: "text", text: "We're proposing some changes to parking." }] },
     {
       speaker: null,
@@ -259,7 +260,14 @@ export const CAM13_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         },
       ],
     },
-    { speaker: null, segments: [{ type: "gap", gapId: "g18" }, { type: "text", text: "." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "It's not ideal, but probably " },
+        { type: "gap", gapId: "g18" },
+        { type: "text", text: "." },
+      ],
+    },
     {
       speaker: null,
       segments: [

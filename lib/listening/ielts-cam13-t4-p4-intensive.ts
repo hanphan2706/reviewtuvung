@@ -7,53 +7,43 @@ export const CAM13_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "I'm going to talk about coffee, and its importance both in economic and social terms",
-        "I am going to talk about coffee, and its importance both in economic and social terms",
-      ],
+      answers: ["economic and social terms"],
     },
     {
       id: "g2",
-      answers: [
-        "there's hardly any documentary evidence of it before the 1500s",
-        "there is hardly any documentary evidence of it before the 1500s",
-      ],
+      answers: ["documentary evidence"],
     },
-    { id: "g3", answers: ["coffee was originally gathered from bushes growing wild in Ethiopia"] },
-    { id: "g4", answers: ["gradually its use as a drink spread throughout the Middle East"] },
-    { id: "g5", answers: ["the court physician approved its use as a medicine"] },
-    { id: "g6", answers: ["coffee bushes were being cultivated in the Yemen"] },
+    { id: "g3", answers: ["growing wild in Ethiopia"] },
+    { id: "g4", answers: ["throughout the Middle East"] },
+    { id: "g5", answers: ["use as a medicine"] },
+    { id: "g6", answers: ["cultivated in the Yemen"] },
     {
       id: "g7",
-      answers: ["It was rarely drunk at home, but instead people went to coffee houses to drink it"],
+      answers: ["rarely drunk at home"],
     },
     {
       id: "g8",
-      answers: [
-        "this chance to share ideas and opinions was seen as something that was potentially dangerous",
-      ],
+      answers: ["potentially dangerous"],
     },
     { id: "g9", answers: ["coffee drinking spread to Europe"] },
     {
       id: "g10",
-      answers: [
-        "The opportunity they provided for people to meet together outside their own homes",
-      ],
+      answers: ["outside their own homes"],
     },
-    { id: "g11", answers: ["the Yemeni monopoly on coffee production broke down"] },
+    { id: "g11", answers: ["monopoly on coffee production"] },
     { id: "g12", answers: ["helped by European colonization"] },
-    { id: "g13", answers: ["production of coffee in the colonies skyrocketed"] },
+    { id: "g13", answers: ["in the colonies skyrocketed"] },
     { id: "g14", answers: ["there were some significant differences"] },
-    { id: "g15", answers: ["coffee production was very closely linked to colonisation"] },
-    { id: "g16", answers: ["it still remained something of a luxury item"] },
-    { id: "g17", answers: ["working people could afford to buy coffee"] },
-    { id: "g18", answers: ["the use of coffee as a stimulant became important"] },
+    { id: "g15", answers: ["closely linked to colonisation"] },
+    { id: "g16", answers: ["a luxury item"] },
+    { id: "g17", answers: ["afford to buy coffee"] },
+    { id: "g18", answers: ["as a stimulant"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
-        { type: "text", text: "In my presentation, " },
+        { type: "text", text: "In my presentation, I'm going to talk about coffee, and its importance both in " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
@@ -61,18 +51,18 @@ export const CAM13_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "We think it was first drunk in the Arab world, but " },
+        { type: "text", text: "We think it was first drunk in the Arab world, but there's hardly any " },
         { type: "gap", gapId: "g2" },
         {
           type: "text",
-          text: ", although of course that doesn't mean that people didn't know about it before then.",
+          text: " of it before the 1500s, although of course that doesn't mean that people didn't know about it before then.",
         },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "However, there is evidence that " },
+        { type: "text", text: "However, there is evidence that coffee was originally gathered from bushes " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: ", in the northeast of Africa." },
       ],
@@ -80,7 +70,7 @@ export const CAM13_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "In the early sixteenth century, it was being bought by traders, and " },
+        { type: "text", text: "In the early sixteenth century, it was being bought by traders, and gradually its use as a drink spread " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -90,7 +80,7 @@ export const CAM13_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "It's also known that in 1522, in the Turkish city of Constantinople, which was the centre of the Ottoman Empire, ",
+          text: "It's also known that in 1522, in the Turkish city of Constantinople, which was the centre of the Ottoman Empire, the court physician approved its ",
         },
         { type: "gap", gapId: "g5" },
         { type: "text", text: "." },
@@ -99,7 +89,7 @@ export const CAM13_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "By the mid-1500s, " },
+        { type: "text", text: "By the mid-1500s, coffee bushes were being " },
         { type: "gap", gapId: "g6" },
         {
           type: "text",
@@ -112,10 +102,10 @@ export const CAM13_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "What's particularly interesting about coffee is its effect on social life. ",
+          text: "What's particularly interesting about coffee is its effect on social life. It was ",
         },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: ", but instead people went to coffee houses to drink it." },
       ],
     },
     {
@@ -130,7 +120,7 @@ export const CAM13_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "But at the time, " },
+        { type: "text", text: "But at the time, this chance to share ideas and opinions was seen as something that was " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
@@ -161,6 +151,10 @@ export const CAM13_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        {
+          type: "text",
+          text: "The opportunity they provided for people to meet together ",
+        },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
@@ -171,9 +165,9 @@ export const CAM13_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "In the late 1600s, " },
+        { type: "text", text: "In the late 1600s, the Yemeni " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: " and coffee production started to spread around the world, " },
+        { type: "text", text: " broke down and coffee production started to spread around the world, " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -183,7 +177,7 @@ export const CAM13_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Europeans set up coffee plantations in Indonesia and the Caribbean and ",
+          text: "Europeans set up coffee plantations in Indonesia and the Caribbean and production of coffee ",
         },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
@@ -227,7 +221,7 @@ export const CAM13_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "But whatever system was used, under the European powers of the eighteenth century, " },
+        { type: "text", text: "But whatever system was used, under the European powers of the eighteenth century, coffee production was very " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
       ],
@@ -246,7 +240,7 @@ export const CAM13_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "However, coffee prices were not yet low enough for people to drink it regularly at home, so most coffee consumption still took place in public coffee houses and ",
+          text: "However, coffee prices were not yet low enough for people to drink it regularly at home, so most coffee consumption still took place in public coffee houses and it still remained something of ",
         },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "." },
@@ -309,7 +303,7 @@ export const CAM13_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So now, " },
+        { type: "text", text: "So now, working people could " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: " - it wasn't just a drink for the middle classes." },
       ],
@@ -335,11 +329,11 @@ export const CAM13_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So, " },
+        { type: "text", text: "So, the use of coffee " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",
-          text: " - it wasn't just a drink people drank in the morning, for breakfast.",
+          text: " became important - it wasn't just a drink people drank in the morning, for breakfast.",
         },
       ],
     },

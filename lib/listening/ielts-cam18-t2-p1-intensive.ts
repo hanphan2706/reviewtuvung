@@ -21,7 +21,7 @@ export const CAM18_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g14", answers: ["an eye for detail"] },
     { id: "g15", answers: ["I'm very used to", "I am very used to"] },
     { id: "g16", answers: ["Let's have a look at", "Let us have a look at"] },
-    { id: "g17", answers: ["once you get the hang of it"] },
+    { id: "g17", answers: ["get the hang of it"] },
     { id: "g18", answers: ["that's worth thinking about", "that is worth thinking about"] },
   ],
   lines: [
@@ -257,7 +257,7 @@ export const CAM18_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "I've never done that before, but I imagine it's fairly straightforward, " },
+        { type: "text", text: "I've never done that before, but I imagine it's fairly straightforward, once you " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
       ],

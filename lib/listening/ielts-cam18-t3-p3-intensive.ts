@@ -9,7 +9,7 @@ export const CAM18_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g2", answers: ["a real eye-opener"] },
     { id: "g3", answers: ["I didn't know that", "I did not know that"] },
     { id: "g4", answers: ["that's true", "that is true"] },
-    { id: "g5", answers: ["it probably didn't seem a positive thing at the time", "it probably did not seem a positive thing at the time"] },
+    { id: "g5", answers: ["didn't seem a positive thing", "did not seem a positive thing"] },
     { id: "g6", answers: ["for a change"] },
     { id: "g7", answers: ["Normally, you only hear"] },
     { id: "g8", answers: ["Bit too optimistic, don't you think", "Bit too optimistic don't you think"] },
@@ -69,9 +69,9 @@ export const CAM18_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Yes, " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: " – but " },
+        { type: "text", text: " – but it probably " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: ". I can see why the Luddites felt so threatened." },
+        { type: "text", text: " at the time. I can see why the Luddites felt so threatened." },
       ],
     },
     {

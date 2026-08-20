@@ -7,45 +7,37 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "it's also sometimes called the gum tree",
-        "it is also sometimes called the gum tree",
-      ],
+      answers: ["called the gum tree"],
     },
     {
       id: "g2",
-      answers: [
-        "I'm going to describe some problems it faces at present",
-        "I am going to describe some problems it faces at present",
-      ],
+      answers: ["problems it faces at present"],
     },
-    { id: "g3", answers: ["these and other species also depend on it for food"] },
-    { id: "g4", answers: ["So it supports biodiversity"] },
-    { id: "g5", answers: ["The eucalyptus grows all over Australia"] },
-    { id: "g6", answers: ["the trees can live for up to four hundred years"] },
-    { id: "g7", answers: ["numbers of eucalyptus are falling because the trees are dying off prematurely"] },
+    { id: "g3", answers: ["depend on it for food"] },
+    { id: "g4", answers: ["So it supports biodiversity", "so it supports biodiversity"] },
+    { id: "g5", answers: ["The eucalyptus grows all over Australia", "the eucalyptus grows all over Australia"] },
+    { id: "g6", answers: ["up to four hundred years"] },
+    { id: "g7", answers: ["dying off prematurely"] },
     {
       id: "g8",
-      answers: ["The trees' leaves would gradually turn yellow, then the tree would die"],
+      answers: ["gradually turn yellow"],
     },
-    { id: "g9", answers: ["calcium hydroxide to give it its proper chemical name"] },
-    { id: "g10", answers: ["preventing the trees from sucking up the iron they needed for healthy growth"] },
+    { id: "g9", answers: ["proper chemical name"] },
+    { id: "g10", answers: ["sucking up the iron"] },
     { id: "g11", answers: ["they immediately recovered"] },
-    { id: "g12", answers: ["this problem only affected a relatively small number of trees"] },
-    { id: "g13", answers: ["the disease seems to be common where there are high populations of bell-miners"] },
-    { id: "g14", answers: ["they keep away other creatures that might try to get it"] },
-    { id: "g15", answers: ["trees can start looking sick before any sign of Bell-miner Associated Die-back"] },
+    { id: "g12", answers: ["a relatively small number"] },
+    { id: "g13", answers: ["high populations of bell-miners"] },
+    { id: "g14", answers: ["keep away other creatures"] },
+    { id: "g15", answers: ["start looking sick"] },
     {
       id: "g16",
-      answers: ["the frequency of bushfires in a particular region affects the type of vegetation that grows there"],
+      answers: ["type of vegetation"],
     },
     {
       id: "g17",
-      answers: [
-        "some bushfires are actually essential for the eucalyptus to survive as long as they are not too frequent",
-      ],
+      answers: ["not too frequent"],
     },
-    { id: "g18", answers: ["this reduced frequency of bushfires to low levels"] },
+    { id: "g18", answers: ["to low levels"] },
   ],
   lines: [
     {
@@ -55,7 +47,7 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "This is a very common tree here in Australia, where " },
+        { type: "text", text: "This is a very common tree here in Australia, where it's also sometimes " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
@@ -63,7 +55,7 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "First I'm going to talk about why it's important, then " },
+        { type: "text", text: "First I'm going to talk about why it's important, then I'm going to describe some " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
       ],
@@ -75,7 +67,7 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "For example, it gives shelter to creatures like birds and bats, and " },
+        { type: "text", text: "For example, it gives shelter to creatures like birds and bats, and these and other species also " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: ", particularly the nectar from its flowers." },
       ],
@@ -97,7 +89,7 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: null,
       segments: [
         { type: "gap", gapId: "g5" },
-        { type: "text", text: " and " },
+        { type: "text", text: " and the trees can live for " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
       ],
@@ -105,7 +97,7 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So it's alarming that all across the country, " },
+        { type: "text", text: "So it's alarming that all across the country, numbers of eucalyptus are falling because the trees are " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -129,14 +121,18 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g8" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "The trees' leaves would " },
+        { type: "gap", gapId: "g8" },
+        { type: "text", text: ", then the tree would die." },
+      ],
     },
     {
       speaker: null,
       segments: [
         {
           type: "text",
-          text: "It wasn't until 2004 that they found the cause of the problem was lime, or ",
+          text: "It wasn't until 2004 that they found the cause of the problem was lime, or calcium hydroxide to give it its ",
         },
         { type: "gap", gapId: "g9" },
         { type: "text", text: ", which was being used in the construction of roads." },
@@ -154,9 +150,9 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "What it was doing was " },
+        { type: "text", text: "What it was doing was preventing the trees from " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " they needed for healthy growth." },
       ],
     },
     {
@@ -170,9 +166,9 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "But " },
+        { type: "text", text: "But this problem only affected " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: "." },
+        { type: "text", text: " of trees." },
       ],
     },
     {
@@ -187,7 +183,7 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The bell-miner is a bird, and " },
+        { type: "text", text: "The bell-miner is a bird, and the disease seems to be common where there are " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
       ],
@@ -208,9 +204,9 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The bell-miner birds really like this solution, and in order to get as much as possible, " },
+        { type: "text", text: "The bell-miner birds really like this solution, and in order to get as much as possible, they " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: "." },
+        { type: "text", text: " that might try to get it." },
       ],
     },
     {
@@ -225,9 +221,9 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "But experts say that " },
+        { type: "text", text: "But experts say that trees can " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: "." },
+        { type: "text", text: " before any sign of Bell-miner Associated Die-back." },
       ],
     },
     {
@@ -246,9 +242,9 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "A theory proposed over 40 years ago by ecologist William Jackson is that " },
+        { type: "text", text: "A theory proposed over 40 years ago by ecologist William Jackson is that the frequency of bushfires in a particular region affects the " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " that grows there." },
       ],
     },
     {
@@ -293,6 +289,7 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Some bushfires are actually essential for the eucalyptus to survive as long as they are " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
       ],
@@ -318,7 +315,7 @@ export const CAM15_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Now scientists believe that " },
+        { type: "text", text: "Now scientists believe that this reduced frequency of bushfires " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",

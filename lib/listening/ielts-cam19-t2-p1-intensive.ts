@@ -5,23 +5,23 @@ import type {
 
 export const CAM19_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I'd really like to learn myself", "I would really like to learn myself"] },
+    { id: "g1", answers: ["I'd really like to", "I would really like to"] },
     { id: "g2", answers: ["Why don't you come along", "Why do you not come along"] },
-    { id: "g3", answers: ["I'm sure there's room for another person", "I am sure there is room for another person"] },
+    { id: "g3", answers: ["I'm sure there's room", "I am sure there is room", "I'm sure there is room", "I am sure there's room"] },
     { id: "g4", answers: ["He's called a 'coordinator'", "He is called a 'coordinator'", "He's called a coordinator", "He is called a coordinator"] },
     { id: "g5", answers: ["How do you spell his surname"] },
-    { id: "g6", answers: ["he used to play in a lot of bands"] },
+    { id: "g6", answers: ["used to play"] },
     { id: "g7", answers: ["I knew a few chords"] },
     { id: "g8", answers: ["we were all equally hopeless"] },
     { id: "g9", answers: ["Oh, that's reassuring", "Oh, that is reassuring"] },
     { id: "g10", answers: ["as the group got bigger"] },
     { id: "g11", answers: ["I prefer going there"] },
-    { id: "g12", answers: ["I used to go to tap dancing classes"] },
+    { id: "g12", answers: ["tap dancing classes"] },
     { id: "g13", answers: ["that suited me well"] },
-    { id: "g14", answers: ["you can always buy a second-hand one"] },
-    { id: "g15", answers: ["Gary goes round and helps them"] },
+    { id: "g14", answers: ["a second-hand one", "a second hand one", "a secondhand one"] },
+    { id: "g15", answers: ["Gary goes round and helps them", "Gary goes around and helps them"] },
     { id: "g16", answers: ["that's harder than you think", "that is harder than you think"] },
-    { id: "g17", answers: ["people like it because they can really concentrate"] },
+    { id: "g17", answers: ["can really concentrate"] },
     { id: "g18", answers: ["I've got used to it now", "I have got used to it now"] },
   ],
   lines: [
@@ -35,7 +35,7 @@ export const CAM19_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "I wanted to have a chat with you because our friend Josh told me that you've joined a guitar group and it sounds interesting. ",
         },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "." },
+        { type: "text", text: " learn myself." },
       ],
     },
     {
@@ -44,7 +44,7 @@ export const CAM19_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g2" },
         { type: "text", text: "? " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "." },
+        { type: "text", text: " for another person." },
       ],
     },
     { speaker: "WOMAN", segments: [{ type: "text", text: "Really? So – who runs the classes?" }] },
@@ -68,9 +68,9 @@ export const CAM19_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "COLEMAN",
       segments: [
-        { type: "text", text: "He's retired, actually, but he's a really nice guy and " },
+        { type: "text", text: "He's retired, actually, but he's a really nice guy and he " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " in a lot of bands." },
       ],
     },
     { speaker: "WOMAN", segments: [{ type: "text", text: "Thanks. So how long have you been going?" }] },
@@ -115,7 +115,7 @@ export const CAM19_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "I know that place. " },
+        { type: "text", text: "I know that place. I used to go to " },
         { type: "gap", gapId: "g12" },
         {
           type: "text",
@@ -159,7 +159,7 @@ export const CAM19_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "COLEMAN",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, you can always buy " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
@@ -245,7 +245,7 @@ export const CAM19_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "COLEMAN",
       segments: [
-        { type: "text", text: "It is, but " },
+        { type: "text", text: "It is, but people like it because they " },
         { type: "gap", gapId: "g17" },
         {
           type: "text",

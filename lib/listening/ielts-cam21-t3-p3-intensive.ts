@@ -6,22 +6,22 @@ import type {
 export const CAM21_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["Shall we go through our research"] },
-    { id: "g2", answers: ["I think I've done enough reading now", "I think I have done enough reading now"] },
+    { id: "g2", answers: ["done enough reading"] },
     { id: "g3", answers: ["I didn't really appreciate the difference", "I did not really appreciate the difference"] },
     { id: "g4", answers: ["the difference is quite distinct"] },
-    { id: "g5", answers: ["I totally understand why people get confused"] },
+    { id: "g5", answers: ["why people get confused"] },
     { id: "g6", answers: ["It was interesting to read about"] },
     { id: "g7", answers: ["It's generally considered to be sustainable", "It is generally considered to be sustainable"] },
     { id: "g8", answers: ["All very positive"] },
     { id: "g9", answers: ["I wasn't convinced by the argument", "I was not convinced by the argument"] },
     { id: "g10", answers: ["I couldn't find any evidence for", "I could not find any evidence for"] },
-    { id: "g11", answers: ["I can't see anything wrong with it", "I cannot see anything wrong with it"] },
+    { id: "g11", answers: ["anything wrong with it"] },
     { id: "g12", answers: ["Shall we talk about some of"] },
     { id: "g13", answers: ["Let's start with", "Let us start with"] },
-    { id: "g14", answers: ["what happens with that is really impressive"] },
+    { id: "g14", answers: ["really impressive"] },
     { id: "g15", answers: ["we're all familiar with", "we are all familiar with"] },
     { id: "g16", answers: ["which is becoming really popular"] },
-    { id: "g17", answers: ["There are no downsides to using this source at all"] },
+    { id: "g17", answers: ["no downsides to"] },
     { id: "g18", answers: ["I'm sure that'll change", "I am sure that will change", "I'm sure that will change"] },
   ],
   lines: [
@@ -35,9 +35,9 @@ export const CAM21_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "RYAN",
       segments: [
-        { type: "text", text: "Good idea. " },
+        { type: "text", text: "Good idea. I think I've " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "." },
+        { type: "text", text: " now." },
       ],
     },
     {
@@ -68,6 +68,7 @@ export const CAM21_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "RYAN",
       segments: [
+        { type: "text", text: "I totally understand " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
@@ -120,7 +121,7 @@ export const CAM21_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "No – they're both really bad. I read different reports about how unethical it is to even shear sheep. Some people say it's cruel but as long as the sheep are kept in good condition " },
+          text: "No – they're both really bad. I read different reports about how unethical it is to even shear sheep. Some people say it's cruel but as long as the sheep are kept in good condition I can't see " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -150,7 +151,7 @@ export const CAM21_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "RYAN",
       segments: [
-        { type: "text", text: "Yes, and " },
+        { type: "text", text: "Yes, and what happens with that is " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
@@ -240,9 +241,9 @@ export const CAM21_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "RYAN",
       segments: [
-        { type: "text", text: "And the harvesting process is actually good for the trees. " },
+        { type: "text", text: "And the harvesting process is actually good for the trees. There are " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " using this source at all." },
       ],
     },
     {

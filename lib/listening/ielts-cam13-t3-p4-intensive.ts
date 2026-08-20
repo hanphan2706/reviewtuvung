@@ -5,53 +5,50 @@ import type {
 
 export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["we started looking at reptiles, including crocodiles and snakes"] },
-    { id: "g2", answers: ["This is commonly known as the sleepy lizard"] },
-    { id: "g3", answers: ["spends quite a lot of its time dozing under rocks or lying in the sun"] },
-    { id: "g4", answers: ["Sleepy lizards live in Western and South Australia"] },
-    { id: "g5", answers: ["Unlike European lizards, which are mostly small, green and fast-moving"] },
-    { id: "g6", answers: ["in contrast with the lining of their mouth which is bright pink"] },
+    { id: "g1", answers: ["looking at reptiles"] },
+    { id: "g2", answers: ["commonly known as"] },
+    { id: "g3", answers: ["dozing under rocks"] },
+    { id: "g4", answers: ["Western and South Australia"] },
+    { id: "g5", answers: ["small, green and fast-moving"] },
+    { id: "g6", answers: ["lining of their mouth"] },
     {
       id: "g7",
       answers: [
-        "they're much bigger than most European lizards",
-        "they are much bigger than most European lizards",
+        "much bigger",
       ],
     },
-    { id: "g8", answers: ["including insects and even small animals"] },
-    { id: "g9", answers: ["with strong jaws that can crush beetles and snail shells"] },
-    { id: "g10", answers: ["Large birds like cassowaries were one of the main ones in the past"] },
-    { id: "g11", answers: ["quite a large number of sleepy lizards are killed by cars"] },
-    { id: "g12", answers: ["Though they move slowly, they can travel quite long distances"] },
+    { id: "g8", answers: ["insects and even small animals"] },
+    { id: "g9", answers: ["crush beetles and snail shells"] },
+    { id: "g10", answers: ["one of the main ones"] },
+    { id: "g11", answers: ["killed by cars"] },
+    { id: "g12", answers: ["quite long distances"] },
     {
       id: "g13",
       answers: [
-        "they didn't need any other landmarks on the ground",
-        "they did not need any other landmarks on the ground",
+        "landmarks on the ground",
       ],
     },
-    { id: "g14", answers: ["their mating habits are quite unusual"] },
+    { id: "g14", answers: ["quite unusual"] },
     {
       id: "g15",
-      answers: ["they're relatively monogamous", "they are relatively monogamous"],
+      answers: ["relatively monogamous"],
     },
-    { id: "g16", answers: ["both before and after the birth of their young"] },
+    { id: "g16", answers: ["birth of their young"] },
     {
       id: "g17",
       answers: [
-        "you'd expect them to have a much better chance of survival",
-        "you would expect them to have a much better chance of survival",
+        "better chance of survival",
       ],
     },
-    { id: "g18", answers: ["male lizards in monogamous relationships tend to be bigger and stronger than other males"] },
+    { id: "g18", answers: ["bigger and stronger"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Last week, " },
+        { type: "text", text: "Last week, we started " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "." },
+        { type: "text", text: ", including crocodiles and snakes." },
       ],
     },
     {
@@ -66,13 +63,14 @@ export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "This is " },
         { type: "gap", gapId: "g2" },
         {
           type: "text",
-          text: ", because it's quite slow in its movements and ",
+          text: " the sleepy lizard, because it's quite slow in its movements and spends quite a lot of its time ",
         },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "." },
+        { type: "text", text: " or lying in the sun." },
       ],
     },
     {
@@ -82,6 +80,7 @@ export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Sleepy lizards live in " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: ", where they're quite common." },
       ],
@@ -89,21 +88,22 @@ export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Unlike European lizards, which are mostly " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ", sleepy lizards are brown, but what's particularly distinctive about them is the colour of their tongue, which is dark blue, ",
+          text: ", sleepy lizards are brown, but what's particularly distinctive about them is the colour of their tongue, which is dark blue, in contrast with the ",
         },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " which is bright pink." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "And " },
+        { type: "text", text: "And they're " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: " than most European lizards." },
       ],
     },
     {
@@ -111,7 +111,7 @@ export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "They have quite a varied diet, ",
+          text: "They have quite a varied diet, including ",
         },
         { type: "gap", gapId: "g8" },
         { type: "text", text: ", but they mostly eat plants of varying kinds." },
@@ -122,7 +122,7 @@ export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Even though they're quite large and powerful, ",
+          text: "Even though they're quite large and powerful, with strong jaws that can ",
         },
         { type: "gap", gapId: "g9" },
         { type: "text", text: ", they still have quite a few predators." },
@@ -131,10 +131,11 @@ export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Large birds like cassowaries were " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
-          text: ", but nowadays they're more likely to be caught and killed by snakes.",
+          text: " in the past, but nowadays they're more likely to be caught and killed by snakes.",
         },
       ],
     },
@@ -143,7 +144,7 @@ export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Actually, another threat to their survival isn't a predator at all, but is man-made - ",
+          text: "Actually, another threat to their survival isn't a predator at all, but is man-made - quite a large number of sleepy lizards are ",
         },
         { type: "gap", gapId: "g11" },
         { type: "text", text: " when they're trying to cross highways." },
@@ -161,6 +162,7 @@ export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Though they move slowly, they can travel " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -170,7 +172,7 @@ export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "And he found that even if they were taken some distance away from their home territory, they could usually find their way back home as long as they could see the sky - ",
+          text: "And he found that even if they were taken some distance away from their home territory, they could usually find their way back home as long as they could see the sky - they didn't need any other ",
         },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
@@ -179,7 +181,7 @@ export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Observations of these lizards in the wild have also revealed that " },
+        { type: "text", text: "Observations of these lizards in the wild have also revealed that their mating habits are " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
       ],
@@ -187,7 +189,7 @@ export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Unlike most animals, it seems that " },
+        { type: "text", text: "Unlike most animals, it seems that they're " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: ", returning to the same partner year after year." },
       ],
@@ -197,7 +199,7 @@ export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "And the male and female also stay together for a long time, ",
+          text: "And the male and female also stay together for a long time, both before and after the ",
         },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "." },
@@ -217,7 +219,7 @@ export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "It could be that it's to do with protecting their young - ",
+          text: "It could be that it's to do with protecting their young - you'd expect them to have a much ",
         },
         { type: "gap", gapId: "g17" },
         { type: "text", text: " if they have both parents around." },
@@ -244,9 +246,9 @@ export const CAM13_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Another suggestion's based on the observation that " },
+        { type: "text", text: "Another suggestion's based on the observation that male lizards in monogamous relationships tend to be " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: "." },
+        { type: "text", text: " than other males." },
       ],
     },
     {

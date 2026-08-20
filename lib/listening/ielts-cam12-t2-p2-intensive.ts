@@ -8,141 +8,55 @@ export const CAM12_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       id: "g1",
       answers: [
-        "I've now almost succeeded in finalising plans for our tour",
-        "I have now almost succeeded in finalising plans for our tour",
-        "I've now almost succeeded in finalizing plans for our tour",
+        "finalising plans",
+        "finalizing plans",
       ],
     },
-    {
-      id: "g2",
-      answers: [
-        "so I'll bring you up to date with what I know",
-        "so I will bring you up to date with what I know",
-      ],
-    },
-    {
-      id: "g3",
-      answers: [
-        "we're flying first to Munich, on Monday the 4th",
-        "we are flying first to Munich, on Monday the 4th",
-      ],
-    },
-    {
-      id: "g4",
-      answers: [
-        "so it's too early to have lunch at the airport",
-        "so it is too early to have lunch at the airport",
-      ],
-    },
-    {
-      id: "g5",
-      answers: [
-        "which should give us plenty of time for breakfast before we leave home",
-      ],
-    },
-    {
-      id: "g6",
-      answers: [
-        "he'll look after us for the time we'll be in Germany",
-        "he will look after us for the time we will be in Germany",
-        "he'll look after us for the time we will be in Germany",
-      ],
-    },
-    { id: "g7", answers: ["He's already liaised with the managers of the theatres we're going to visit", "He has already liaised with the managers of the theatres we are going to visit"] },
-    {
-      id: "g8",
-      answers: [
-        "I didn't have the precise cost for hotel rooms, but now I have",
-        "I did not have the precise cost for hotel rooms, but now I have",
-      ],
-    },
-    { id: "g9", answers: ["The normal rate at the hotel where we're staying is 150 euros a night for a double room", "The normal rate at the hotel where we are staying is 150 euros a night for a double room"] },
-    {
-      id: "g10",
-      answers: [
-        "That'll be reflected in the final payment which you'll need to make by the end of this week",
-        "That will be reflected in the final payment which you will need to make by the end of this week",
-      ],
-    },
-    {
-      id: "g11",
-      answers: [
-        "I had hoped we could sit in on a rehearsal at one of the theatres",
-      ],
-    },
-    {
-      id: "g12",
-      answers: [
-        "so instead we'll have a coach trip to one of the amazing castles in the mountains south of Munich",
-        "so instead we will have a coach trip to one of the amazing castles in the mountains south of Munich",
-      ],
-    },
-    {
-      id: "g13",
-      answers: [
-        "it was clear that a typical local restaurant would be too meat-oriented for some of you",
-      ],
-    },
-    {
-      id: "g14",
-      answers: [
-        "as we have plenty of opportunities to go to an Italian restaurant at home",
-      ],
-    },
-    {
-      id: "g15",
-      answers: [
-        "She'll describe the whole process of producing a play",
-        "She will describe the whole process of producing a play",
-      ],
-    },
-    {
-      id: "g16",
-      answers: [
-        "partly because it might influence your choice of clothes to take with you",
-      ],
-    },
-    {
-      id: "g17",
-      answers: [
-        "so it'll be quite a dressy occasion, though of course you don't have to dress formally",
-        "so it will be quite a dressy occasion, though of course you do not have to dress formally",
-      ],
-    },
-    {
-      id: "g18",
-      answers: [
-        "though unfortunately the playwright is ill and is unlikely to be able to attend",
-      ],
-    },
+    { id: "g2", answers: ["bring you up to date"] },
+    { id: "g3", answers: ["flying first to Munich"] },
+    { id: "g4", answers: ["too early to have"] },
+    { id: "g5", answers: ["plenty of time"] },
+    { id: "g6", answers: ["look after us"] },
+    { id: "g7", answers: ["liaised with"] },
+    { id: "g8", answers: ["the precise cost"] },
+    { id: "g9", answers: ["The normal rate"] },
+    { id: "g10", answers: ["be reflected in"] },
+    { id: "g11", answers: ["sit in on"] },
+    { id: "g12", answers: ["a coach trip"] },
+    { id: "g13", answers: ["it was clear that"] },
+    { id: "g14", answers: ["plenty of opportunities"] },
+    { id: "g15", answers: ["the whole process"] },
+    { id: "g16", answers: ["your choice of clothes"] },
+    { id: "g17", answers: ["a dressy occasion"] },
+    { id: "g18", answers: ["unlikely to be able to attend"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Right. " },
+        { type: "text", text: "Right. I've now almost succeeded in " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: ", " },
+        { type: "text", text: " for our tour, so I'll " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "." },
+        { type: "text", text: " with what I know." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "As you know, " },
+        { type: "text", text: "As you know, we're " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "." },
+        { type: "text", text: ", on Monday the 4th." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The flight is at 11.30, " },
+        { type: "text", text: "The flight is at 11.30, so it's " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: ". I suggest we meet there for coffee at 10, " },
+        { type: "text", text: " lunch at the airport. I suggest we meet there for coffee at 10, which should give us " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "." },
+        { type: "text", text: " for breakfast before we leave home." },
       ],
     },
     {
@@ -154,32 +68,33 @@ export const CAM12_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Claus works for a tour operator, and " },
+        { type: "text", text: "Claus works for a tour operator, and he'll " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " for the time we'll be in Germany." },
       ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "He's already " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
-          text: ", and he's also arranged for an officer of the National Theatre in Munich to show us round the theatre one afternoon during our stay.",
+          text: " the managers of the theatres we're going to visit, and he's also arranged for an officer of the National Theatre in Munich to show us round the theatre one afternoon during our stay.",
         },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Now last time we discussed this trip, " },
+        { type: "text", text: "Now last time we discussed this trip, I didn't have " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: "." },
+        { type: "text", text: " for hotel rooms, but now I have." },
       ],
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g9" }, { type: "text", text: "." }],
+      segments: [{ type: "gap", gapId: "g9" }, { type: "text", text: " at the hotel where we're staying is 150 euros a night for a double room." }],
     },
     {
       speaker: null,
@@ -192,16 +107,17 @@ export const CAM12_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g10" }, { type: "text", text: "." }],
+      segments: [{ type: "text", text: "That'll " },
+        { type: "gap", gapId: "g10" }, { type: "text", text: " the final payment which you'll need to make by the end of this week." }],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "On Tuesday, the day after our arrival, " },
+        { type: "text", text: "On Tuesday, the day after our arrival, I had hoped we could " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: ", but unfortunately that's proved very difficult to arrange, " },
+        { type: "text", text: " a rehearsal at one of the theatres, but unfortunately that's proved very difficult to arrange, so instead we'll have " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: "." },
+        { type: "text", text: " to one of the amazing castles in the mountains south of Munich." },
       ],
     },
     {
@@ -215,15 +131,15 @@ export const CAM12_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "From talking to you all about your preferences, " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " a typical local restaurant would be too meat-oriented for some of you." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Some of you suggested an Italian restaurant, but I must confess that I decided to book a Lebanese one, " },
+        { type: "text", text: "Some of you suggested an Italian restaurant, but I must confess that I decided to book a Lebanese one, as we have " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: "." },
+        { type: "text", text: " to go to an Italian restaurant at home." },
       ],
     },
     {
@@ -238,33 +154,34 @@ export const CAM12_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "She'll describe " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
-          text: ", including how she chose the actors, and, as the play we're going to see is a modern one, how she worked with the playwright.",
+          text: " of producing a play, including how she chose the actors, and, as the play we're going to see is a modern one, how she worked with the playwright.",
         },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Right. Now I'd just like to make a few points about the plays we're going to see, " },
+        { type: "text", text: "Right. Now I'd just like to make a few points about the plays we're going to see, partly because it might influence " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "!" },
+        { type: "text", text: " to take with you!" },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The play we're seeing on Wednesday evening is a modern one, and we're going to the premiere, " },
+        { type: "text", text: "The play we're seeing on Wednesday evening is a modern one, and we're going to the premiere, so it'll be quite " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: ", though of course you don't have to dress formally." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "I gather it's rather a multimedia production, with amazing lighting effects and a soundtrack of electronic music, " },
+        { type: "text", text: "I gather it's rather a multimedia production, with amazing lighting effects and a soundtrack of electronic music, though unfortunately the playwright is ill and is " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

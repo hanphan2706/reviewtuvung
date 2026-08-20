@@ -5,125 +5,112 @@ import type {
 
 export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    {
-      id: "g1",
-      answers: ["In public discussion of business, we take certain values for granted"],
-    },
+    { id: "g1", answers: ["for granted"] },
     {
       id: "g2",
       answers: [
-        "Today I'm going to talk about four of them",
-        "Today I am going to talk about four of them",
+        "I'm going to talk about",
+        "I am going to talk about",
       ],
     },
     {
       id: "g3",
       answers: [
-        "Most people would say they're all 'good things'",
-        "Most people would say they are all 'good things'",
-        "Most people would say they're all good things",
+        "'good things'",
+        "good things",
       ],
     },
-    {
-      id: "g4",
-      answers: [
-        "I'm going to suggest that's an over-simple view",
-        "I am going to suggest that is an over-simple view",
-        "I'm going to suggest that is an over-simple view",
-      ],
-    },
-    {
-      id: "g5",
-      answers: [
-        "they're theoretical concepts, removed from the reality of day-to-day business",
-        "they are theoretical concepts, removed from the reality of day-to-day business",
-      ],
-    },
-    {
-      id: "g6",
-      answers: ["Pursue values by all means, but be prepared for what may happen as a result"],
-    },
-    { id: "g7", answers: ["Business leaders generally try to do the right thing"] },
-    {
-      id: "g8",
-      answers: [
-        "The values can easily get in the way of what's actually intended",
-        "The values can easily get in the way of what is actually intended",
-      ],
-    },
+    { id: "g4", answers: ["an over-simple view"] },
+    { id: "g5", answers: ["theoretical concepts"] },
+    { id: "g6", answers: ["by all means"] },
+    { id: "g7", answers: ["do the right thing"] },
+    { id: "g8", answers: ["get in the way of"] },
     {
       id: "g9",
       answers: [
-        "So the first value I'm going to discuss is collaboration",
-        "So the first value I am going to discuss is collaboration",
+        "I'm going to discuss",
+        "I am going to discuss",
       ],
     },
     { id: "g10", answers: ["This was intended to encourage teamwork"] },
-    { id: "g11", answers: ["But it was really a job best done by one person"] },
-    { id: "g12", answers: ["Our team leader solved the challenge brilliantly"] },
+    { id: "g11", answers: ["best done by"] },
+    { id: "g12", answers: ["solved the challenge"] },
     { id: "g13", answers: ["We finished before any other team"] },
-    {
-      id: "g14",
-      answers: ["Teamwork can also lead to inconsistency - a common cause of poor sales"],
-    },
+    { id: "g14", answers: ["lead to inconsistency"] },
     {
       id: "g15",
       answers: [
-        "It's easy to mock people who say they work hard",
-        "It is easy to mock people who say they work hard",
+        "It's easy to mock",
+        "It is easy to mock",
       ],
     },
-    {
-      id: "g16",
-      answers: [
-        "after all, a hamster running around in a wheel is working hard - and getting nowhere",
-      ],
-    },
-    {
-      id: "g17",
-      answers: [
-        "they possess intellectual clarity, and they don't rush into making decisions",
-        "they possess intellectual clarity, and they do not rush into making decisions",
-      ],
-    },
-    {
-      id: "g18",
-      answers: [
-        "the 'just-get-started' approach is likely to be more successful",
-        "the just-get-started approach is likely to be more successful",
-      ],
-    },
+    { id: "g16", answers: ["getting nowhere"] },
+    { id: "g17", answers: ["rush into making decisions"] },
+    { id: "g18", answers: ["is likely to be"] },
   ],
   lines: [
-    { speaker: null, segments: [{ type: "gap", gapId: "g1" }, { type: "text", text: "." }] },
     {
       speaker: null,
       segments: [
-        { type: "gap", gapId: "g2" },
-        { type: "text", text: ": collaboration, hard work, creativity and excellence." },
-      ],
-    },
-    { speaker: null, segments: [{ type: "gap", gapId: "g3" }, { type: "text", text: "." }] },
-    { speaker: null, segments: [{ type: "gap", gapId: "g4" }, { type: "text", text: "." }] },
-    {
-      speaker: null,
-      segments: [
-        { type: "text", text: "The trouble with these values is that " },
-        { type: "gap", gapId: "g5" },
+        { type: "text", text: "In public discussion of business, we take certain values " },
+        { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
     },
-    { speaker: null, segments: [{ type: "gap", gapId: "g6" }, { type: "text", text: "." }] },
     {
       speaker: null,
       segments: [
-        {
-          type: "text",
-          text: "They can actually cause damage, which is not at all the intention.",
-        },
+        { type: "text", text: "Today " },
+        { type: "gap", gapId: "g2" },
+        { type: "text", text: " four of them: collaboration, hard work, creativity and excellence." },
       ],
     },
-    { speaker: null, segments: [{ type: "gap", gapId: "g7" }, { type: "text", text: "." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "Most people would say they're all " },
+        { type: "gap", gapId: "g3" },
+        { type: "text", text: "." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "I'm going to suggest that's " },
+        { type: "gap", gapId: "g4" },
+        { type: "text", text: "." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "The trouble with these values is that they're " },
+        { type: "gap", gapId: "g5" },
+        { type: "text", text: ", removed from the reality of day-to-day business." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "Pursue values " },
+        { type: "gap", gapId: "g6" },
+        { type: "text", text: ", but be prepared for what may happen as a result." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "They can actually cause damage, which is not at all the intention." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "Business leaders generally try to " },
+        { type: "gap", gapId: "g7" },
+        { type: "text", text: "." },
+      ],
+    },
     {
       speaker: null,
       segments: [
@@ -133,10 +120,34 @@ export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         },
       ],
     },
-    { speaker: null, segments: [{ type: "gap", gapId: "g8" }, { type: "text", text: "." }] },
-    { speaker: null, segments: [{ type: "text", text: "OK." }] },
-    { speaker: null, segments: [{ type: "gap", gapId: "g9" }, { type: "text", text: "." }] },
-    { speaker: null, segments: [{ type: "text", text: "Er, let me give you an example." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "The values can easily " },
+        { type: "gap", gapId: "g8" },
+        { type: "text", text: " what's actually intended." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "OK." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "So the first value " },
+        { type: "gap", gapId: "g9" },
+        { type: "text", text: " is collaboration." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "Er, let me give you an example." },
+      ],
+    },
     {
       speaker: null,
       segments: [
@@ -155,8 +166,21 @@ export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         },
       ],
     },
-    { speaker: null, segments: [{ type: "gap", gapId: "g10" }, { type: "text", text: "." }] },
-    { speaker: null, segments: [{ type: "gap", gapId: "g11" }, { type: "text", text: "." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "gap", gapId: "g10" },
+        { type: "text", text: "." },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "But it was really a job " },
+        { type: "gap", gapId: "g11" },
+        { type: "text", text: " one person." },
+      ],
+    },
     {
       speaker: null,
       segments: [
@@ -166,7 +190,14 @@ export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         },
       ],
     },
-    { speaker: null, segments: [{ type: "gap", gapId: "g12" }, { type: "text", text: "." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "Our team leader " },
+        { type: "gap", gapId: "g12" },
+        { type: "text", text: " brilliantly." },
+      ],
+    },
     {
       speaker: null,
       segments: [
@@ -176,17 +207,27 @@ export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         },
       ],
     },
-    { speaker: null, segments: [{ type: "gap", gapId: "g13" }, { type: "text", text: "." }] },
     {
       speaker: null,
       segments: [
-        {
-          type: "text",
-          text: "My point is that the task wasn't really suited to teamworking, so why make it one?",
-        },
+        { type: "gap", gapId: "g13" },
+        { type: "text", text: "." },
       ],
     },
-    { speaker: null, segments: [{ type: "gap", gapId: "g14" }, { type: "text", text: "." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "My point is that the task wasn't really suited to teamworking, so why make it one?" },
+      ],
+    },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "Teamwork can also " },
+        { type: "gap", gapId: "g14" },
+        { type: "text", text: " - a common cause of poor sales." },
+      ],
+    },
     {
       speaker: null,
       segments: [
@@ -214,18 +255,23 @@ export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        {
-          type: "text",
-          text: "It would have been better to let one director or the other have his way, not both.",
-        },
+        { type: "text", text: "It would have been better to let one director or the other have his way, not both." },
       ],
     },
-    { speaker: null, segments: [{ type: "text", text: "Now industriousness, or hard work." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "Now industriousness, or hard work." },
+      ],
+    },
     {
       speaker: null,
       segments: [
         { type: "gap", gapId: "g15" },
-        { type: "text", text: ": " },
+        {
+          type: "text",
+          text: " people who say they work hard: after all, a hamster running around in a wheel is working hard - and ",
+        },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "." },
       ],
@@ -239,13 +285,15 @@ export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        {
-          type: "text",
-          text: "Otherwise it wastes the resources that companies value most - time and energy.",
-        },
+        { type: "text", text: "Otherwise it wastes the resources that companies value most - time and energy." },
       ],
     },
-    { speaker: null, segments: [{ type: "text", text: "And that's bad for the organisation." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "And that's bad for the organisation." },
+      ],
+    },
     {
       speaker: null,
       segments: [
@@ -258,10 +306,7 @@ export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        {
-          type: "text",
-          text: "Here 'lazy' means having a rational determination not to carry out unnecessary tasks.",
-        },
+        { type: "text", text: "Here 'lazy' means having a rational determination not to carry out unnecessary tasks." },
       ],
     },
     {
@@ -275,7 +320,7 @@ export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Most people display two of these characteristics, and the most valuable people are those who are both clever and lazy: ",
+          text: "Most people display two of these characteristics, and the most valuable people are those who are both clever and lazy: they possess intellectual clarity, and they don't ",
         },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
@@ -299,7 +344,12 @@ export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         },
       ],
     },
-    { speaker: null, segments: [{ type: "text", text: "Next we come to creativity." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "Next we come to creativity." },
+      ],
+    },
     {
       speaker: null,
       segments: [
@@ -309,7 +359,12 @@ export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         },
       ],
     },
-    { speaker: null, segments: [{ type: "text", text: "But it isn't always a good thing." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "But it isn't always a good thing." },
+      ],
+    },
     {
       speaker: null,
       segments: [
@@ -349,22 +404,21 @@ export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        {
-          type: "text",
-          text: "Creativity needs to be targeted, to solve a problem that the company has identified.",
-        },
+        { type: "text", text: "Creativity needs to be targeted, to solve a problem that the company has identified." },
       ],
     },
     {
       speaker: null,
       segments: [
-        {
-          type: "text",
-          text: "Just coming up with more and more novel products isn't necessarily a good thing.",
-        },
+        { type: "text", text: "Just coming up with more and more novel products isn't necessarily a good thing." },
       ],
     },
-    { speaker: null, segments: [{ type: "text", text: "And finally, excellence." }] },
+    {
+      speaker: null,
+      segments: [
+        { type: "text", text: "And finally, excellence." },
+      ],
+    },
     {
       speaker: null,
       segments: [
@@ -377,10 +431,7 @@ export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        {
-          type: "text",
-          text: "In business, being first with a product is more profitable than having the best product.",
-        },
+        { type: "text", text: "In business, being first with a product is more profitable than having the best product." },
       ],
     },
     {
@@ -413,10 +464,7 @@ export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        {
-          type: "text",
-          text: "Sometimes, second-rate work is more worthwhile than excellence.",
-        },
+        { type: "text", text: "Sometimes, second-rate work is more worthwhile than excellence." },
       ],
     },
     {
@@ -424,10 +472,10 @@ export const CAM12_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "'Make sure it's excellent' sounds like a good approach to business, but ",
+          text: "'Make sure it's excellent' sounds like a good approach to business, but the 'just-get-started' approach ",
         },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: "." },
+        { type: "text", text: " more successful." },
       ],
     },
   ],

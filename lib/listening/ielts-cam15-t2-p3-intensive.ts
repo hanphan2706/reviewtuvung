@@ -5,48 +5,51 @@ import type {
 
 export const CAM15_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["let's check we both know what we're supposed to be doing", "let us check we both know what we are supposed to be doing"] },
-    { id: "g2", answers: ["we have to plan a display on British life and literature"] },
+    {
+      id: "g1",
+      answers: [
+        "what we're supposed to be doing",
+        "what we are supposed to be doing",
+      ],
+    },
+    { id: "g2", answers: ["British life and literature"] },
     { id: "g3", answers: ["we just need to plan it"] },
-    { id: "g4", answers: ["have you gathered who's expected to come and see the display", "have you gathered who is expected to come and see the display"] },
+    {
+      id: "g4",
+      answers: [
+        "have you gathered",
+        "Have you gathered",
+      ],
+    },
     { id: "g5", answers: ["I'm not clear about it", "I am not clear about it"] },
     { id: "g6", answers: ["but it didn't attract many people", "but it did not attract many people"] },
     { id: "g7", answers: ["to raise the university's profile"] },
     {
       id: "g8",
       answers: [
-        "we don't have to cover the whole range of 19th-century literature",
-        "we do not have to cover the whole range of 19th-century literature",
+        "we don't have to cover",
+        "we do not have to cover",
       ],
     },
     { id: "g9", answers: ["I suggest just using Charles Dickens"] },
-    { id: "g10", answers: ["Did he do any campaigning, other than writing"] },
-    {
-      id: "g11",
-      answers: [
-        "I'm inclined to ignore that and focus on the novels",
-        "I am inclined to ignore that and focus on the novels",
-      ],
-    },
+    { id: "g10", answers: ["other than writing"] },
+    { id: "g11", answers: ["focus on the novels"] },
     {
       id: "g12",
       answers: [
-        "I've printed out a list of Dickens's novels in the order they were published",
-        "I have printed out a list of Dickens's novels in the order they were published",
+        "I've printed out a list",
+        "I have printed out a list",
       ],
     },
-    { id: "g13", answers: ["It was very successful when it came out"] },
-    { id: "g14", answers: ["and include some quotations from the novel"] },
+    { id: "g13", answers: ["when it came out"] },
+    { id: "g14", answers: ["quotations from the novel"] },
     {
       id: "g15",
-      answers: [
-        "There's a lot in the novel about poverty. But maybe something less obvious",
-        "There is a lot in the novel about poverty. But maybe something less obvious",
-      ],
+      answers: ["something less obvious"],
     },
     {
       id: "g16",
-      answers: ["We don't want only the bad things, do we", "We do not want only the bad things, do we"],
+      answers: ["only the bad things"],
     },
     { id: "g17", answers: ["The main theme is selfishness"] },
     { id: "g18", answers: ["That's going to be quite hard", "That is going to be quite hard"] },
@@ -55,7 +58,7 @@ export const CAM15_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "CATHY",
       segments: [
-        { type: "text", text: "OK, Graham, so " },
+        { type: "text", text: "OK, Graham, so let's check we both know " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
@@ -64,7 +67,7 @@ export const CAM15_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "CATHY",
       segments: [
-        { type: "text", text: "So, for the university's open day, " },
+        { type: "text", text: "So, for the university's open day, we have to plan a display on " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: " in the mid-19th century." },
       ],
@@ -74,7 +77,8 @@ export const CAM15_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "That's right. But we'll have some people to help us find the materials and set it up, remember – for the moment, " },
+          text: "That's right. But we'll have some people to help us find the materials and set it up, remember – for the moment, ",
+        },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -84,7 +88,10 @@ export const CAM15_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Good. So " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "? Is it for the people studying English, or students from other departments? " },
+        {
+          type: "text",
+          text: " who's expected to come and see the display? Is it for the people studying English, or students from other departments? ",
+        },
         { type: "gap", gapId: "g5" },
         { type: "text", text: "." },
       ],
@@ -120,7 +127,7 @@ export const CAM15_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Right. " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: ", do we?" },
+        { type: "text", text: " the whole range of 19th-century literature, do we?" },
       ],
     },
     {
@@ -151,12 +158,19 @@ export const CAM15_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "CATHY",
-      segments: [{ type: "gap", gapId: "g10" }, { type: "text", text: "?" }],
+      segments: [
+        { type: "text", text: "Did he do any campaigning, " },
+        { type: "gap", gapId: "g10" },
+        { type: "text", text: "?" },
+      ],
     },
     {
       speaker: "GRAHAM",
       segments: [
-        { type: "text", text: "Yes, he campaigned for education and other social reforms, and gave talks, but " },
+        {
+          type: "text",
+          text: "Yes, he campaigned for education and other social reforms, and gave talks, but I'm inclined to ignore that and ",
+        },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -171,7 +185,10 @@ export const CAM15_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Yes. " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: ", in the hope you'd agree to focus on him!" },
+        {
+          type: "text",
+          text: " of Dickens's novels in the order they were published, in the hope you'd agree to focus on him!",
+        },
       ],
     },
     {
@@ -179,7 +196,8 @@ export const CAM15_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "You're lucky I did agree! Let's have a look. OK, the first was The Pickwick Papers, published in 1836. " },
+          text: "You're lucky I did agree! Let's have a look. OK, the first was The Pickwick Papers, published in 1836. It was very successful ",
+        },
         { type: "gap", gapId: "g13" },
         { type: "text", text: ", wasn't it, and was adapted for the theatre straight away." },
       ],
@@ -196,7 +214,7 @@ export const CAM15_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "CATHY",
       segments: [
-        { type: "text", text: "Oh, so why don't we use that as the topic, " },
+        { type: "text", text: "Oh, so why don't we use that as the topic, and include some " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "?" },
       ],
@@ -204,7 +222,10 @@ export const CAM15_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "GRAHAM",
       segments: [
-        { type: "text", text: "Right. Next is Oliver Twist. " },
+        {
+          type: "text",
+          text: "Right. Next is Oliver Twist. There's a lot in the novel about poverty. But maybe ",
+        },
         { type: "gap", gapId: "g15" },
         { type: "text", text: " …" },
       ],
@@ -228,9 +249,10 @@ export const CAM15_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "That's right. But there's also the company of touring actors that Nicholas joins. We could do something on theatres and other amusements of the time. " },
+          text: "That's right. But there's also the company of touring actors that Nicholas joins. We could do something on theatres and other amusements of the time. We don't want ",
+        },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "?" },
+        { type: "text", text: ", do we?" },
       ],
     },
     { speaker: "CATHY", segments: [{ type: "text", text: "OK." }] },

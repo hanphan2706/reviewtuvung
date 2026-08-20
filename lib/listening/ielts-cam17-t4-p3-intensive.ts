@@ -5,39 +5,39 @@ import type {
 
 export const CAM17_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["how are you enjoying the course so far"] },
-    { id: "g2", answers: ["why did you decide to study sports science"] },
+    { id: "g1", answers: ["enjoying the course so far"] },
+    { id: "g2", answers: ["study sports science"] },
     {
       id: "g3",
-      answers: ["Didn't you want to be a professional athlete", "Did you not want to be a professional athlete"],
+      answers: ["a professional athlete"],
     },
-    { id: "g4", answers: ["That must have been a nice feeling"] },
-    { id: "g5", answers: ["There was no one who could run faster than me"] },
+    { id: "g4", answers: ["a nice feeling"] },
+    { id: "g5", answers: ["run faster than me"] },
     { id: "g6", answers: ["What makes you say that"] },
-    { id: "g7", answers: ["I was chosen to go there out of loads of kids"] },
+    { id: "g7", answers: ["out of loads of kids"] },
     { id: "g8", answers: ["I'm over it now", "I am over it now"] },
-    { id: "g9", answers: ["this one has such a variety of sports-related areas"] },
-    { id: "g10", answers: ["have you thought of any ideas for the discussion session"] },
+    { id: "g9", answers: ["a variety of sports-related areas"] },
+    { id: "g10", answers: ["the discussion session"] },
     {
       id: "g11",
-      answers: ["We have to cover more than one sport, don't we", "We have to cover more than one sport, do we not"],
+      answers: ["more than one sport"],
     },
-    { id: "g12", answers: ["we could gather some ideas about past developments"] },
-    { id: "g13", answers: ["Look at early types of equipment perhaps"] },
-    { id: "g14", answers: ["players have to protect themselves from getting hurt"] },
-    { id: "g15", answers: ["look at these pictures of original helmet designs"] },
-    { id: "g16", answers: ["This one looks like an upside-down bowl"] },
+    { id: "g12", answers: ["past developments"] },
+    { id: "g13", answers: ["early types of equipment"] },
+    { id: "g14", answers: ["protect themselves from getting hurt"] },
+    { id: "g15", answers: ["original helmet designs"] },
+    { id: "g16", answers: ["an upside-down bowl"] },
     {
       id: "g17",
-      answers: ["There's no wood at all in them now, is there", "There is no wood at all in them now, is there"],
+      answers: ["no wood at all"],
     },
-    { id: "g18", answers: ["I think we can put together some useful ideas"] },
+    { id: "g18", answers: ["put together some useful ideas"] },
   ],
   lines: [
     {
       speaker: "JEANNE",
       segments: [
-        { type: "text", text: "Hi Thomas, " },
+        { type: "text", text: "Hi Thomas, how are you " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "?" },
       ],
@@ -46,9 +46,9 @@ export const CAM17_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JEANNE",
       segments: [
-        { type: "text", text: "Remind me – " },
+        { type: "text", text: "Remind me – why did you decide to " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "? " },
+        { type: "text", text: "? Didn't you want to be " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: " when you were at school?" },
       ],
@@ -65,6 +65,7 @@ export const CAM17_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JEANNE",
       segments: [
+        { type: "text", text: "That must have been " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -72,7 +73,7 @@ export const CAM17_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "THOMAS",
       segments: [
-        { type: "text", text: "Mm, I thought I could win anything. " },
+        { type: "text", text: "Mm, I thought I could win anything. There was no one who could " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: "." },
       ],
@@ -104,6 +105,7 @@ export const CAM17_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "THOMAS",
       segments: [
+        { type: "text", text: "I was chosen to go there " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -122,7 +124,7 @@ export const CAM17_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "It's OK. " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: " and I think it's much better to do a university course and " },
+        { type: "text", text: " and I think it's much better to do a university course and this one has such " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: ". It's going to be good." },
       ],
@@ -131,7 +133,7 @@ export const CAM17_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "THOMAS",
       segments: [
-        { type: "text", text: "So Jeanne – " },
+        { type: "text", text: "So Jeanne – have you thought of any ideas for " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: " next week on technology and sport?" },
       ],
@@ -139,8 +141,9 @@ export const CAM17_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JEANNE",
       segments: [
+        { type: "text", text: "We have to cover " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: "?" },
+        { type: "text", text: ", don't we?" },
       ],
     },
     { speaker: "THOMAS", segments: [{ type: "text", text: "Yeah." }] },
@@ -149,7 +152,7 @@ export const CAM17_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "You know – we always think technology is about the future, but " },
+          text: "You know – we always think technology is about the future, but we could gather some ideas about " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: " in sport." },
       ],
@@ -157,10 +160,11 @@ export const CAM17_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "THOMAS",
       segments: [
+        { type: "text", text: "Look at " },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
-          text: "? Uh, I remember reading something about table tennis bats once – how they ended up being covered with pimpled rubber.",
+          text: " perhaps? Uh, I remember reading something about table tennis bats once – how they ended up being covered with pimpled rubber.",
         },
       ],
     },
@@ -202,7 +206,7 @@ export const CAM17_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JEANNE",
       segments: [
-        { type: "text", text: "Wow, " },
+        { type: "text", text: "Wow, players have to " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "! I mean everyone wears one now." },
       ],
@@ -220,9 +224,9 @@ export const CAM17_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "THOMAS",
       segments: [
-        { type: "text", text: "Hey, " },
+        { type: "text", text: "Hey, look at these pictures of " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: ". " },
+        { type: "text", text: ". This one looks like " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "!" },
       ],
@@ -265,8 +269,9 @@ export const CAM17_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "THOMAS",
       segments: [
+        { type: "text", text: "There's " },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "?" },
+        { type: "text", text: " in them now, is there?" },
       ],
     },
     { speaker: "JEANNE", segments: [{ type: "text", text: "No – they're much more powerful." }] },
@@ -302,7 +307,7 @@ export const CAM17_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "THOMAS",
       segments: [
-        { type: "text", text: "Yeah, well, " },
+        { type: "text", text: "Yeah, well, I think we can " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: " …" },
       ],

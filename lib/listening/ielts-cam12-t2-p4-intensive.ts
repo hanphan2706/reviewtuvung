@@ -6,36 +6,14 @@ import type {
 export const CAM12_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["attitudes towards workers have changed considerably"] },
-    {
-      id: "g2",
-      answers: [
-        "there was a time when workers had no rights at all, and laboured in appalling conditions",
-        "there was a time when workers had no rights at all, and labored in appalling conditions",
-      ],
-    },
-    { id: "g3", answers: ["conflict in the workplace is still common"] },
-    {
-      id: "g4",
-      answers: [
-        "human resources managers nowadays need to be able to deal with it when necessary",
-      ],
-    },
+    { id: "g2", answers: ["no rights at all"] },
+    { id: "g3", answers: ["in the workplace"] },
+    { id: "g4", answers: ["deal with it"] },
     { id: "g5", answers: ["Definitions vary"] },
-    {
-      id: "g6",
-      answers: [
-        "from minor, harmless arguments to - at the opposite extreme - physical violence",
-        "from minor, harmless arguments to, at the opposite extreme, physical violence",
-      ],
-    },
-    { id: "g7", answers: ["not all conflict can be described in these terms"] },
+    { id: "g6", answers: ["at the opposite extreme"] },
+    { id: "g7", answers: ["in these terms"] },
     { id: "g8", answers: ["there are numerous reasons for it"] },
-    {
-      id: "g9",
-      answers: [
-        "not that that justifies treating them badly, of course",
-      ],
-    },
+    { id: "g9", answers: ["treating them badly"] },
     {
       id: "g10",
       answers: [
@@ -43,45 +21,20 @@ export const CAM12_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         "look down on behind the scenes administrators",
       ],
     },
-    {
-      id: "g11",
-      answers: [
-        "it can spiral out of control, and even lead to the breakdown of the business",
-      ],
-    },
+    { id: "g11", answers: ["spiral out of control"] },
     { id: "g12", answers: ["they may treat colleagues badly"] },
-    {
-      id: "g13",
-      answers: [
-        "a fear of missing targets, whether set by themselves or by the directors of the company",
-      ],
-    },
-    {
-      id: "g14",
-      answers: [
-        "This combination can make them respond badly to anyone who questions their decisions",
-      ],
-    },
+    { id: "g13", answers: ["a fear of"] },
+    { id: "g14", answers: ["respond badly to"] },
     { id: "g15", answers: ["such characteristics become problematic"] },
     {
       id: "g16",
       answers: [
-        "When they can't agree on strategic issues and on where they see the business going, there are real problems",
-        "When they cannot agree on strategic issues and on where they see the business going, there are real problems",
+        "can't agree on",
+        "cannot agree on",
       ],
     },
-    {
-      id: "g17",
-      answers: [
-        "where the chief executive gives orders and everyone else has to obey",
-      ],
-    },
-    {
-      id: "g18",
-      answers: [
-        "Of course the ideal is to prevent it arising in the first place",
-      ],
-    },
+    { id: "g17", answers: ["has to obey"] },
+    { id: "g18", answers: ["in the first place"] },
   ],
   lines: [
     {
@@ -89,13 +42,13 @@ export const CAM12_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Over the years, " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: ". After all, " },
+        { type: "text", text: ". After all, there was a time when workers had " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ". Conditions have improved a lot, but " },
+        { type: "text", text: ", and laboured in appalling conditions. Conditions have improved a lot, but conflict " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: ". And " },
+        { type: "text", text: " is still common. And human resources managers nowadays need to be able to " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "." },
+        { type: "text", text: " when necessary." },
       ],
     },
     {
@@ -105,10 +58,10 @@ export const CAM12_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ", but I'm taking it to refer to a whole range of behaviours that the victim finds unacceptable, ",
+          text: ", but I'm taking it to refer to a whole range of behaviours that the victim finds unacceptable, from minor, harmless arguments to - ",
         },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " - physical violence." },
       ],
     },
     {
@@ -116,7 +69,7 @@ export const CAM12_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Much of this is covered by the term bullying, by which I mean one or more people behaving abusively or aggressively against another who is in a weaker position. Although all behaviour like this is a form of conflict, ",
+          text: "Much of this is covered by the term bullying, by which I mean one or more people behaving abusively or aggressively against another who is in a weaker position. Although all behaviour like this is a form of conflict, not all conflict can be described ",
         },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
@@ -138,10 +91,10 @@ export const CAM12_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "In some cases one person simply dislikes the other, on the basis that the personality of one is in some way incompatible with that of the other person. A general habit of optimism in one person could make them intolerant of a colleague who's constantly pessimistic - ",
+          text: "In some cases one person simply dislikes the other, on the basis that the personality of one is in some way incompatible with that of the other person. A general habit of optimism in one person could make them intolerant of a colleague who's constantly pessimistic - not that that justifies ",
         },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: "." },
+        { type: "text", text: ", of course." },
       ],
     },
     {
@@ -160,10 +113,10 @@ export const CAM12_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Conflict obviously affects the individuals concerned - the situation is likely to be very stressful for victims, resulting in their absence from work, possibly for months. For the company, if no effort is made to deal with conflict, ",
+          text: "Conflict obviously affects the individuals concerned - the situation is likely to be very stressful for victims, resulting in their absence from work, possibly for months. For the company, if no effort is made to deal with conflict, it can ",
         },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: "." },
+        { type: "text", text: ", and even lead to the breakdown of the business." },
       ],
     },
     {
@@ -182,9 +135,9 @@ export const CAM12_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "Many CEOs combine two opposing characteristics: confidence - that is, the belief that they're capable of great achievements - with a high level of anxiety, ",
         },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: ". " },
+        { type: "text", text: " missing targets, whether set by themselves or by the directors of the company. This combination can make them " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: "." },
+        { type: "text", text: " anyone who questions their decisions." },
       ],
     },
     {
@@ -194,16 +147,16 @@ export const CAM12_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g15" },
         {
           type: "text",
-          text: ". And it's particularly difficult to tackle the situation where colleagues, managers and board members are all trying to achieve their own visions. ",
+          text: ". And it's particularly difficult to tackle the situation where colleagues, managers and board members are all trying to achieve their own visions. When they ",
         },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " strategic issues and on where they see the business going, there are real problems." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "For managers at lower levels within the organisation, it might seem that an autocratic form of management - " },
+        { type: "text", text: "For managers at lower levels within the organisation, it might seem that an autocratic form of management - where the chief executive gives orders and everyone else " },
         { type: "gap", gapId: "g17" },
         {
           type: "text",
@@ -214,7 +167,7 @@ export const CAM12_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Now I'll say a little about dealing with the type of conflict that has harmful effects. " },
+        { type: "text", text: "Now I'll say a little about dealing with the type of conflict that has harmful effects. Of course the ideal is to prevent it arising " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",

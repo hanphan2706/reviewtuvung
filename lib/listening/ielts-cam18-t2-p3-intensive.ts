@@ -6,7 +6,7 @@ import type {
 export const CAM18_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["shall we make a start"] },
-    { id: "g2", answers: ["We haven't got that much time left", "We have not got that much time left"] },
+    { id: "g2", answers: ["haven't got that much time", "have not got that much time"] },
     { id: "g3", answers: ["I'd never even heard of", "I had never even heard of"] },
     { id: "g4", answers: ["a long time ago"] },
     { id: "g5", answers: ["such devastating consequences"] },
@@ -19,7 +19,7 @@ export const CAM18_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g12", answers: ["Must have been very weird"] },
     { id: "g13", answers: ["Oh right"] },
     { id: "g14", answers: ["You'd expect that", "You would expect that"] },
-    { id: "g15", answers: ["I found all that hard to believe too"] },
+    { id: "g15", answers: ["hard to believe too"] },
     { id: "g16", answers: ["We should run through"] },
     { id: "g17", answers: ["That was horrible"] },
     { id: "g18", answers: ["Astonishing, really", "Astonishing really"] },
@@ -30,9 +30,9 @@ export const CAM18_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "So, Michelle, " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " on our presentation? " },
+        { type: "text", text: " on our presentation? We " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "." },
+        { type: "text", text: " left." },
       ],
     },
     {
@@ -198,7 +198,7 @@ export const CAM18_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MICHELLE",
       segments: [
-        { type: "text", text: "No. " },
+        { type: "text", text: "No. I found all that " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",

@@ -5,90 +5,51 @@ import type {
 
 export const CAM12_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["which is one of the oldest parts of the city"] },
-    {
-      id: "g2",
-      answers: ["there was originally a market here where farmers brought their sheep"],
-    },
-    { id: "g3", answers: ["a buzzing, vibrant area of the city"] },
-    { id: "g4", answers: ["who come in to enjoy the lively nightlife"] },
-    {
-      id: "g5",
-      answers: [
-        "There's also lots of pavement cafes where you can have a coffee",
-        "There is also lots of pavement cafes where you can have a coffee",
-      ],
-    },
-    {
-      id: "g6",
-      answers: ["including the city's first department store"],
-    },
-    {
-      id: "g7",
-      answers: [
-        "there's a policy of encouraging new young designers",
-        "there is a policy of encouraging new young designers",
-      ],
-    },
-    { id: "g8", answers: ["who are passionate about fashion"] },
-    {
-      id: "g9",
-      answers: ["The garments will be judged by a panel of experts and fashion designers"],
-    },
-    { id: "g10", answers: ["Parking at the Sheepmarket is easy"] },
-    { id: "g11", answers: ["plenty of pay and display car parking spaces on the roadsides"] },
-    {
-      id: "g12",
-      answers: [
-        "it's better to park in one of the four underground car parks",
-        "it is better to park in one of the four underground car parks",
-      ],
-    },
-    { id: "g13", answers: ["After six pm many of the car parks have a flat rate"] },
-    {
-      id: "g14",
-      answers: ["one of the main centres for art and history in the whole of the country"],
-    },
-    { id: "g15", answers: ["Most visitors start from Crawley Road, at the bottom of the map"] },
-    { id: "g16", answers: ["particularly interesting for its unusual sculptures"] },
-    {
-      id: "g17",
-      answers: ["That's open every day except Mondays", "That is open every day except Mondays"],
-    },
-    {
-      id: "g18",
-      answers: [
-        "if you're interested in purchasing high quality artwork",
-        "if you are interested in purchasing high quality artwork",
-      ],
-    },
+    { id: "g1", answers: ["one of the oldest parts"] },
+    { id: "g2", answers: ["originally a market here"] },
+    { id: "g3", answers: ["a buzzing, vibrant area"] },
+    { id: "g4", answers: ["the lively nightlife"] },
+    { id: "g5", answers: ["lots of pavement cafes", "lots of pavement cafés"] },
+    { id: "g6", answers: ["first department store"] },
+    { id: "g7", answers: ["encouraging new young designers"] },
+    { id: "g8", answers: ["passionate about fashion"] },
+    { id: "g9", answers: ["a panel of experts"] },
+    { id: "g10", answers: ["is easy"] },
+    { id: "g11", answers: ["pay and display"] },
+    { id: "g12", answers: ["underground car parks"] },
+    { id: "g13", answers: ["a flat rate"] },
+    { id: "g14", answers: ["one of the main centres", "one of the main centers"] },
+    { id: "g15", answers: ["at the bottom of the map"] },
+    { id: "g16", answers: ["unusual sculptures"] },
+    { id: "g17", answers: ["every day except Mondays"] },
+    { id: "g18", answers: ["high quality artwork"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Welcome to this podcast about the Sheepmarket, " },
+        { type: "text", text: "Welcome to this podcast about the Sheepmarket, which is " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "." },
+        { type: "text", text: " of the city." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "As its name suggests, " },
+        { type: "text", text: "As its name suggests, there was " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ", but now it's been redeveloped into " },
+        { type: "text", text: " where farmers brought their sheep, but now it's been redeveloped into " },
         { type: "gap", gapId: "g3" },
         {
           type: "text",
-          text: ", which is also home to one of the city's fastest-growing communities.",
+          text: " of the city, which is also home to one of the city's fastest-growing communities.",
         },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The nearby university has always meant the area's popular with students, " },
+        { type: "text", text: "The nearby university has always meant the area's popular with students, who come in to enjoy " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
@@ -108,14 +69,15 @@ export const CAM12_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "There's also " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: " and watch tourists from all over the world go by." },
+        { type: "text", text: " where you can have a coffee and watch tourists from all over the world go by." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The oldest buildings in the area are on the main streets, " },
+        { type: "text", text: "The oldest buildings in the area are on the main streets, including the city's " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: ", built in the 1880s, which is still open today." },
       ],
@@ -123,7 +85,7 @@ export const CAM12_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The Sheepmarket is a centre for fashion, and " },
+        { type: "text", text: "The Sheepmarket is a centre for fashion, and there's a policy of " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -131,7 +93,7 @@ export const CAM12_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The Young Fashion competition is open to local young people " },
+        { type: "text", text: "The Young Fashion competition is open to local young people who are " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -148,22 +110,27 @@ export const CAM12_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "The garments will be judged by " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: ", and the winning entries will be modelled at a special gala evening." },
+        { type: "text", text: " and fashion designers, and the winning entries will be modelled at a special gala evening." },
       ],
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g10" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "Parking at the Sheepmarket " },
+        { type: "gap", gapId: "g10" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "There are " },
+        { type: "text", text: "There are plenty of " },
         { type: "gap", gapId: "g11" },
         {
           type: "text",
-          text: " which are fine if you just want to stay for an hour or two, but if you want to spend the day there ",
+          text: " car parking spaces on the roadsides which are fine if you just want to stay for an hour or two, but if you want to spend the day there it's better to park in one of the four ",
         },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
@@ -181,6 +148,7 @@ export const CAM12_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "After six pm many of the car parks have " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: " which varies but it is usually very reasonable." },
       ],
@@ -190,7 +158,7 @@ export const CAM12_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "The Sheepmarket is " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: "." },
+        { type: "text", text: " for art and history in the whole of the country." },
       ],
     },
     {
@@ -199,7 +167,11 @@ export const CAM12_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g15" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "Most visitors start from Crawley Road, " },
+        { type: "gap", gapId: "g15" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -222,7 +194,7 @@ export const CAM12_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The area's " },
+        { type: "text", text: "The area's particularly interesting for its " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "." },
       ],
@@ -271,7 +243,7 @@ export const CAM12_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The road ends at the gallery - it doesn't go anywhere else. " },
+        { type: "text", text: "The road ends at the gallery - it doesn't go anywhere else. That's open " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
       ],
@@ -296,7 +268,7 @@ export const CAM12_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Finally, " },
+        { type: "text", text: "Finally, if you're interested in purchasing " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: ", the place to go is Nucleus." },
       ],

@@ -7,41 +7,38 @@ export const CAM15_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "I'll be presenting my research about the social history of Britain",
-        "I will be presenting my research about the social history of Britain",
-      ],
+      answers: ["the social history of Britain", "social history of Britain"],
     },
-    { id: "g2", answers: ["how ordinary lives were affected by changes"] },
-    { id: "g3", answers: ["buying and selling goods became a major part of ordinary people's lives"] },
-    { id: "g4", answers: ["the vast majority of people had very few possessions"] },
+    { id: "g2", answers: ["ordinary lives were affected"] },
+    { id: "g3", answers: ["buying and selling goods"] },
+    { id: "g4", answers: ["very few possessions"] },
     { id: "g5", answers: ["triggered massive social changes"] },
-    { id: "g6", answers: ["we tend to think of the Industrial Revolution in images of steam engines and coal"] },
-    { id: "g7", answers: ["They marked an important shift away from the traditional watermills and windmills"] },
-    { id: "g8", answers: ["fashionable fabrics, and lace and ribbons were made available to everyone"] },
-    { id: "g9", answers: ["made goods to sell in small workshops"] },
-    { id: "g10", answers: ["could produce the goods faster and on a larger scale"] },
-    { id: "g11", answers: ["large numbers of people migrated from villages into towns"] },
-    { id: "g12", answers: ["contributing to the growth of consumerism"] },
-    { id: "g13", answers: ["were gradually replaced by the numerous canals"] },
+    { id: "g6", answers: ["steam engines and coal"] },
+    { id: "g7", answers: ["an important shift away", "important shift away"] },
+    { id: "g8", answers: ["made available to everyone", "available to everyone"] },
+    { id: "g9", answers: ["in small workshops"] },
+    { id: "g10", answers: ["on a larger scale"] },
+    { id: "g11", answers: ["from villages into towns"] },
+    { id: "g12", answers: ["the growth of consumerism", "growth of consumerism"] },
+    { id: "g13", answers: ["the numerous canals", "numerous canals"] },
     {
       id: "g14",
-      answers: ["becoming the main way of moving goods and people from one end of the country to the other"],
+      answers: ["from one end of the country"],
     },
-    { id: "g15", answers: ["distribution becoming far more efficient"] },
-    { id: "g16", answers: ["small shops suffered as customers flocked to"] },
-    { id: "g17", answers: ["a form of retailing that was new in the 19th century"] },
-    { id: "g18", answers: ["it created choice"] },
+    { id: "g15", answers: ["far more efficient"] },
+    { id: "g16", answers: ["customers flocked to"] },
+    { id: "g17", answers: ["new in the 19th century"] },
+    { id: "g18", answers: ["it created choice", "created choice"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Hi everyone. In this session " },
+        { type: "text", text: "Hi everyone. In this session I'll be presenting my research about " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " during the Industrial Revolution. I particularly looked at " },
+        { type: "text", text: " during the Industrial Revolution. I particularly looked at how " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: " that happened at that time." },
+        { type: "text", text: " by changes that happened at that time." },
       ],
     },
     {
@@ -52,7 +49,7 @@ export const CAM15_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "This was a time that saw the beginning of a new phenomenon: consumerism – where ",
         },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "." },
+        { type: "text", text: " became a major part of ordinary people's lives." },
       ],
     },
     {
@@ -60,7 +57,7 @@ export const CAM15_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "In fact, it was in the 19th century that the quantity and quality of people's possessions was used as an indication of the wealth of the country. Before this, ",
+          text: "In fact, it was in the 19th century that the quantity and quality of people's possessions was used as an indication of the wealth of the country. Before this, the vast majority of people had ",
         },
         { type: "gap", gapId: "g4" },
         { type: "text", text: ", but all that was changed by the Industrial Revolution." },
@@ -80,7 +77,7 @@ export const CAM15_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "First let's look at manufacturing. When it comes to manufacturing, " },
+        { type: "text", text: "First let's look at manufacturing. When it comes to manufacturing, we tend to think of the Industrial Revolution in images of " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
       ],
@@ -90,10 +87,10 @@ export const CAM15_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "And it's true that the Industrial Revolution couldn't have taken place at all if it weren't for these new sources of power. ",
+          text: "And it's true that the Industrial Revolution couldn't have taken place at all if it weren't for these new sources of power. They marked ",
         },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: " that had dominated before this." },
+        { type: "text", text: " from the traditional watermills and windmills that had dominated before this." },
       ],
     },
     {
@@ -101,7 +98,7 @@ export const CAM15_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The most advanced industry for much of the 19th century was textiles. This meant that ",
+          text: "The most advanced industry for much of the 19th century was textiles. This meant that fashionable fabrics, and lace and ribbons were ",
         },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
@@ -110,7 +107,7 @@ export const CAM15_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Before the Industrial Revolution, most people " },
+        { type: "text", text: "Before the Industrial Revolution, most people made goods to sell " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: ", often in their own homes." },
       ],
@@ -118,7 +115,7 @@ export const CAM15_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "But enormous new machines were now being created that " },
+        { type: "text", text: "But enormous new machines were now being created that could produce the goods faster and " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: ", and these required a lot more space." },
       ],
@@ -128,7 +125,7 @@ export const CAM15_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "So large factories were built, replacing the workshops, and forcing workers to travel to work. In fact, ",
+          text: "So large factories were built, replacing the workshops, and forcing workers to travel to work. In fact, large numbers of people migrated ",
         },
         { type: "gap", gapId: "g11" },
         { type: "text", text: " as a result." },
@@ -139,7 +136,7 @@ export const CAM15_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "As well as manufacturing, there were new technologies in transport, ",
+          text: "As well as manufacturing, there were new technologies in transport, contributing to ",
         },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
@@ -150,7 +147,7 @@ export const CAM15_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The horse-drawn stagecoaches and carts of the 18th century, which carried very few people and goods, and travelled slowly along poorly surfaced roads, ",
+          text: "The horse-drawn stagecoaches and carts of the 18th century, which carried very few people and goods, and travelled slowly along poorly surfaced roads, were gradually replaced by ",
         },
         { type: "gap", gapId: "g13" },
         { type: "text", text: " that were constructed. These were particularly important for the transportation of goods." },
@@ -161,10 +158,10 @@ export const CAM15_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The canals gradually fell out of use, though, as railways were developed, ",
+          text: "The canals gradually fell out of use, though, as railways were developed, becoming the main way of moving goods and people ",
         },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: "." },
+        { type: "text", text: " to the other." },
       ],
     },
     {
@@ -179,7 +176,7 @@ export const CAM15_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So faster forms of transport resulted in " },
+        { type: "text", text: "So faster forms of transport resulted in distribution becoming " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
@@ -192,10 +189,10 @@ export const CAM15_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The third main area that saw changes that contributed to consumerism was retailing. The number and quality of shops grew rapidly, and in particular, ",
+          text: "The third main area that saw changes that contributed to consumerism was retailing. The number and quality of shops grew rapidly, and in particular, small shops suffered as ",
         },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: " the growing number of department stores – " },
+        { type: "text", text: " the growing number of department stores – a form of retailing that was " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
       ],

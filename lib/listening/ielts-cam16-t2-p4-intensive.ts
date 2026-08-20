@@ -5,30 +5,30 @@ import type {
 
 export const CAM16_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["when they want to have a good time"] },
+    { id: "g1", answers: ["have a good time"] },
     { id: "g2", answers: ["It's a universal response to music", "It is a universal response to music"] },
-    { id: "g3", answers: ["it's also extremely good for our health", "it is also extremely good for our health"] },
+    { id: "g3", answers: ["extremely good for our health"] },
     { id: "g4", answers: ["make us feel relaxed and happy"] },
     { id: "g5", answers: ["Dancing is also a sociable activity"] },
     { id: "g6", answers: ["whereas those dancing alone did not"] },
-    { id: "g7", answers: ["All were given cognitive tasks to perform before and after"] },
-    { id: "g8", answers: ["a very useful way to help people suffering from mental health problems"] },
+    { id: "g7", answers: ["cognitive tasks to perform"] },
+    { id: "g8", answers: ["suffering from mental health problems"] },
     { id: "g9", answers: ["It's well established that", "It is well established that"] },
-    { id: "g10", answers: ["there are enormous benefits for people in their sixties and beyond"] },
+    { id: "g10", answers: ["in their sixties and beyond"] },
     { id: "g11", answers: ["there are no barriers to participation"] },
     { id: "g12", answers: ["Anyone can have a go"] },
     { id: "g13", answers: ["helps to promote a healthy heart"] },
     { id: "g14", answers: ["There are some less obvious benefits"] },
-    { id: "g15", answers: ["It also requires a lot of concentration"] },
-    { id: "g16", answers: ["which can last up to a week after a class"] },
-    { id: "g17", answers: ["an aerobic workout based on Latin American dance moves"] },
-    { id: "g18", answers: ["it's such a fun way to keep fit", "it is such a fun way to keep fit"] },
+    { id: "g15", answers: ["a lot of concentration"] },
+    { id: "g16", answers: ["up to a week"] },
+    { id: "g17", answers: ["Latin American dance moves"] },
+    { id: "g18", answers: ["a fun way to keep fit"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Dancing is something that humans do " },
+        { type: "text", text: "Dancing is something that humans do when they want to " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
@@ -43,7 +43,7 @@ export const CAM16_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "But what's only been discovered recently is that dancing not only makes us feel good, " },
+        { type: "text", text: "But what's only been discovered recently is that dancing not only makes us feel good, it's also " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -100,7 +100,11 @@ export const CAM16_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g7" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "All were given " },
+        { type: "gap", gapId: "g7" },
+        { type: "text", text: " before and after." },
+      ],
     },
     {
       speaker: null,
@@ -114,7 +118,7 @@ export const CAM16_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Doctor Lovatt at the University of Hertfordshire believes dance could be " },
+        { type: "text", text: "Doctor Lovatt at the University of Hertfordshire believes dance could be a very useful way to help people " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -141,7 +145,7 @@ export const CAM16_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Studies have shown that " },
+        { type: "text", text: "Studies have shown that there are enormous benefits for people " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
       ],
@@ -206,6 +210,7 @@ export const CAM16_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "It also requires " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: " because you need to remember different steps and routines." },
       ],
@@ -222,9 +227,9 @@ export const CAM16_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Current research also shows that dance promotes a general sense of well-being in older participants, " },
+        { type: "text", text: "Current research also shows that dance promotes a general sense of well-being in older participants, which can last " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " after a class." },
       ],
     },
     {
@@ -267,7 +272,7 @@ export const CAM16_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Fifteen million people in 180 countries now regularly take a Zumba class, " },
+        { type: "text", text: "Fifteen million people in 180 countries now regularly take a Zumba class, an aerobic workout based on " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
       ],
@@ -308,7 +313,7 @@ export const CAM16_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Dance is never going to compete with high-intensity workouts when it comes to physical fitness gains, but its popularity is likely to keep on rising because " },
+        { type: "text", text: "Dance is never going to compete with high-intensity workouts when it comes to physical fitness gains, but its popularity is likely to keep on rising because it's such " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

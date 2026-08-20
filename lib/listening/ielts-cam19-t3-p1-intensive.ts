@@ -7,22 +7,22 @@ export const CAM19_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["how are you settling into"] },
     { id: "g2", answers: ["You look like you're going shopping", "You look like you are going shopping"] },
-    { id: "g3", answers: ["coming to stay for a couple of days"] },
-    { id: "g4", answers: ["there are plenty of places to buy food"] },
+    { id: "g3", answers: ["coming to stay"] },
+    { id: "g4", answers: ["plenty of places"] },
     { id: "g5", answers: ["neither of them eats meat"] },
     { id: "g6", answers: ["where is it exactly"] },
-    { id: "g7", answers: ["I'd recommend going earlier than that", "I would recommend going earlier than that"] },
-    { id: "g8", answers: ["it does run out of some things"] },
+    { id: "g7", answers: ["going earlier than that"] },
+    { id: "g8", answers: ["run out of some things"] },
     { id: "g9", answers: ["I don't want that to happen", "I do not want that to happen"] },
     { id: "g10", answers: ["you should be fine"] },
-    { id: "g11", answers: ["I want to avoid all the plastic packaging"] },
+    { id: "g11", answers: ["avoid all the plastic packaging"] },
     { id: "g12", answers: ["it's the name of a flower", "it is the name of a flower"] },
     { id: "g13", answers: ["That's easy enough", "That is easy enough"] },
     { id: "g14", answers: ["You can't miss it", "You cannot miss it"] },
-    { id: "g15", answers: ["you should be able to get everything you need"] },
-    { id: "g16", answers: ["it's always good to try something different", "it is always good to try something different"] },
+    { id: "g15", answers: ["get everything you need"] },
+    { id: "g16", answers: ["try something different"] },
     { id: "g17", answers: ["they're not always ripe", "they are not always ripe"] },
-    { id: "g18", answers: ["hopefully I won't even have to go", "hopefully I will not even have to go"] },
+    { id: "g18", answers: ["won't even have to go", "will not even have to go"] },
   ],
   lines: [
     {
@@ -40,15 +40,15 @@ export const CAM19_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Yes, I am. My cousins are " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: ", and I have to cook for them." },
+        { type: "text", text: " for a couple of days, and I have to cook for them." },
       ],
     },
     {
       speaker: "LEON",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, there are " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: " in Kite Place – it's the area by the harbour." },
+        { type: "text", text: " to buy food in Kite Place – it's the area by the harbour." },
       ],
     },
     { speaker: "SHANNON", segments: [{ type: "text", text: "Oh. OK, I'll find that on the map. Thanks." }] },
@@ -83,9 +83,9 @@ export const CAM19_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LEON",
       segments: [
-        { type: "text", text: "It doesn't close until four, but " },
+        { type: "text", text: "It doesn't close until four, but I'd recommend " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: " – " },
+        { type: "text", text: " – it does " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -111,7 +111,7 @@ export const CAM19_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SHANNON",
       segments: [
-        { type: "text", text: "I do, and " },
+        { type: "text", text: "I do, and I want to " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: " in the supermarket!" },
       ],
@@ -154,7 +154,7 @@ export const CAM19_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LEON",
       segments: [
-        { type: "text", text: "Yeah – " },
+        { type: "text", text: "Yeah – you should be able to " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
@@ -199,7 +199,7 @@ export const CAM19_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SHANNON",
       segments: [
-        { type: "text", text: "Great – " },
+        { type: "text", text: "Great – it's always good to " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "." },
       ],
@@ -267,7 +267,7 @@ export const CAM19_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SHANNON",
       segments: [
-        { type: "text", text: "Perfect – " },
+        { type: "text", text: "Perfect – hopefully I " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: " to the supermarket!" },
       ],

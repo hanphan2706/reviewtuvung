@@ -7,22 +7,22 @@ export const CAM19_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I never really planned to be"] },
     { id: "g2", answers: ["although that was interesting"] },
-    { id: "g3", answers: ["Then I found that the Lifeboat Institution was looking for volunteers"] },
+    { id: "g3", answers: ["looking for volunteers"] },
     { id: "g4", answers: ["hard to miss"] },
-    { id: "g5", answers: ["it's one of the largest in the country", "it is one of the largest in the country"] },
-    { id: "g6", answers: ["rather than funding provided by the government"] },
-    { id: "g7", answers: ["that kind of help is much needed"] },
-    { id: "g8", answers: ["The doctors were particularly interested in my vision"] },
-    { id: "g9", answers: ["I'd had laser eye surgery two years earlier", "I had had laser eye surgery two years earlier"] },
-    { id: "g10", answers: ["it turned out I was OK", "it turned out I was okay"] },
-    { id: "g11", answers: ["all the volunteers are contacted and rush to"] },
-    { id: "g12", answers: ["Our team's proud that we usually achieve that", "Our team is proud that we usually achieve that"] },
-    { id: "g13", answers: ["I have the ultimate responsibility for the lifeboat"] },
-    { id: "g14", answers: ["it's very rare not to launch", "it is very rare not to launch"] },
+    { id: "g5", answers: ["one of the largest"] },
+    { id: "g6", answers: ["rather than funding"] },
+    { id: "g7", answers: ["much needed"] },
+    { id: "g8", answers: ["particularly interested in"] },
+    { id: "g9", answers: ["two years earlier"] },
+    { id: "g10", answers: ["it turned out"] },
+    { id: "g11", answers: ["rush to"] },
+    { id: "g12", answers: ["usually achieve that"] },
+    { id: "g13", answers: ["ultimate responsibility"] },
+    { id: "g14", answers: ["it's very rare", "it is very rare"] },
     { id: "g15", answers: ["A lot of people underestimate"] },
     { id: "g16", answers: ["we couldn't manage without them", "we could not manage without them"] },
     { id: "g17", answers: ["that's an essential skill", "that is an essential skill"] },
-    { id: "g18", answers: ["I've had to deal with a range of emergency situations", "I have had to deal with a range of emergency situations"] },
+    { id: "g18", answers: ["a range of"] },
   ],
   lines: [
     {
@@ -47,6 +47,7 @@ export const CAM19_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "I'd been really keen on boats as a teenager, and I thought if I went to live by the sea, I might be able to pursue that interest a bit more in my free time. ",
         },
+        { type: "text", text: "Then I found that the Lifeboat Institution was " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: ", so I decided to apply." },
       ],
@@ -56,9 +57,9 @@ export const CAM19_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "The Lifeboat Institution building here in Northsea's " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "; " },
+        { type: "text", text: "; it's " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "." },
+        { type: "text", text: " in the country." },
       ],
     },
     {
@@ -69,7 +70,7 @@ export const CAM19_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "It was built 15 years ago with funds provided by a generous member of the public, who'd lived here all her life. As the Lifeboat Institution is a charity that relies on that kind of donation, ",
         },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ", " },
+        { type: "text", text: " provided by the government, that kind of help is " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -77,9 +78,9 @@ export const CAM19_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "When I applied, I had to have a health assessment. " },
+        { type: "text", text: "When I applied, I had to have a health assessment. The doctors were " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: "." },
+        { type: "text", text: " my vision." },
       ],
     },
     {
@@ -87,7 +88,7 @@ export const CAM19_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I used to be short-sighted, so I'd had to wear glasses, but ",
+          text: "I used to be short-sighted, so I'd had to wear glasses, but I'd had laser eye surgery ",
         },
         { type: "gap", gapId: "g9" },
         { type: "text", text: " so that was OK." },
@@ -101,13 +102,13 @@ export const CAM19_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "They gave me tests for colour blindness and they thought I might have a problem there, but ",
         },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " I was OK." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "When the coastguard gets an alert, " },
+        { type: "text", text: "When the coastguard gets an alert, all the volunteers are contacted and " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: " the lifeboat station." },
       ],
@@ -119,6 +120,7 @@ export const CAM19_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "Our target's to get there in five minutes, then we try to get the boat off the dock and out to sea in another six to eight minutes. ",
         },
+        { type: "text", text: "Our team's proud that we " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: " – the average time across the country's eight and a half minutes." },
       ],
@@ -126,9 +128,9 @@ export const CAM19_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "As well as steering the lifeboat, as a 'helmsman', " },
+        { type: "text", text: "As well as steering the lifeboat, as a 'helmsman', I have the " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " for the lifeboat." },
       ],
     },
     {
@@ -139,7 +141,7 @@ export const CAM19_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "I have to check that the equipment we use is in working order – we have special life jackets that can support up to four people in the water. And it's ultimately my decision whether it's safe to launch the boat. But ",
         },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: ", even in the worst weather." },
+        { type: "text", text: " not to launch, even in the worst weather." },
       ],
     },
     {
@@ -190,9 +192,9 @@ export const CAM19_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Since I started, " },
+        { type: "text", text: "Since I started, I've had to deal with " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: "." },
+        { type: "text", text: " emergency situations." },
       ],
     },
     {

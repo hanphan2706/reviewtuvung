@@ -6,22 +6,22 @@ import type {
 export const CAM20_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I'm one of the archaeologists", "I am one of the archaeologists"] },
-    { id: "g2", answers: ["most of the people digging here are volunteers"] },
-    { id: "g3", answers: ["how did we get to where we are today"] },
+    { id: "g2", answers: ["most of the people"] },
+    { id: "g3", answers: ["where we are today"] },
     { id: "g4", answers: ["Many archaeology projects happen"] },
-    { id: "g5", answers: ["When the story of the gold coin hit the news"] },
-    { id: "g6", answers: ["he believed there had been a village"] },
-    { id: "g7", answers: ["We knew then we were onto something"] },
-    { id: "g8", answers: ["more broken pots than you can count"] },
-    { id: "g9", answers: ["as you'll see when you visit the exhibition", "as you will see when you visit the exhibition"] },
-    { id: "g10", answers: ["we've also found evidence of human activity", "we have also found evidence of human activity"] },
-    { id: "g11", answers: ["it turned out to be a modern wall"] },
-    { id: "g12", answers: ["we don't know that for sure yet", "we do not know that for sure yet"] },
-    { id: "g13", answers: ["please make sure you keep to the paths"] },
-    { id: "g14", answers: ["the highlights of the site if you like"] },
+    { id: "g5", answers: ["hit the news"] },
+    { id: "g6", answers: ["there had been a village"] },
+    { id: "g7", answers: ["onto something"] },
+    { id: "g8", answers: ["than you can count"] },
+    { id: "g9", answers: ["as you'll see", "as you will see"] },
+    { id: "g10", answers: ["evidence of human activity"] },
+    { id: "g11", answers: ["turned out to be"] },
+    { id: "g12", answers: ["for sure yet"] },
+    { id: "g13", answers: ["keep to the paths"] },
+    { id: "g14", answers: ["if you like"] },
     { id: "g15", answers: ["it's really exciting today", "it is really exciting today"] },
     { id: "g16", answers: ["we assumed they were thrown"] },
-    { id: "g17", answers: ["We knew it was an important building"] },
+    { id: "g17", answers: ["an important building"] },
     { id: "g18", answers: ["you've gone too far", "you have gone too far"] },
   ],
   lines: [
@@ -35,7 +35,7 @@ export const CAM20_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: " investigating the site here at Bidcaster. This is the third summer for this community project, and ",
         },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "." },
+        { type: "text", text: " digging here are volunteers." },
       ],
     },
     {
@@ -43,7 +43,7 @@ export const CAM20_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I'm a full-time archaeologist for the town council, but I was asked to join the project by NHA, a charity which sets up projects like this up and down the country. As you can see, we're next to Bidcaster Castle, which is great because the owners let us use their facilities. So, ",
+          text: "I'm a full-time archaeologist for the town council, but I was asked to join the project by NHA, a charity which sets up projects like this up and down the country. As you can see, we're next to Bidcaster Castle, which is great because the owners let us use their facilities. So, how did we get to ",
         },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "?" },
@@ -62,13 +62,15 @@ export const CAM20_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "When the story of the gold coin " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: ", Peter Swift, an amateur historian, contacted me to say " },
+        { type: "text", text: ", Peter Swift, an amateur historian, contacted me to say he believed " },
         { type: "gap", gapId: "g6" },
         {
           type: "text",
           text: " on this site, centuries before the castle was built. Just by chance, the team found some old maps and documents in our library, which showed 500-year-old drawings of ruined buildings on the grassy area between the outer stone walls of the castle and the river. ",
         },
+        { type: "text", text: "We knew then we were " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -78,7 +80,7 @@ export const CAM20_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Over the three summers the team has been here, we've found the remains of several buildings, and ",
+          text: "Over the three summers the team has been here, we've found the remains of several buildings, and more broken pots ",
         },
         { type: "gap", gapId: "g8" },
         {
@@ -86,20 +88,21 @@ export const CAM20_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: ". Normally you'd expect to find brooches and other jewellery, but we're still waiting to uncover any such items. The people who once lived here were skilled at making tools from animal bones, ",
         },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: "." },
+        { type: "text", text: " when you visit the exhibition." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Besides the discovery of the village, " },
+        { type: "text", text: "Besides the discovery of the village, we've also found " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
           text: " on the other side of the river. No other houses or huts so far, but we can see the borders of an ancient field system. At one point we found a long wall and thought it was an ancient palace, but ",
         },
+        { type: "text", text: "it " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: "." },
+        { type: "text", text: " a modern wall." },
       ],
     },
     {
@@ -109,6 +112,7 @@ export const CAM20_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "This summer's work will end soon, but we'll be back next summer. In the meantime, we're putting on a series of guided tours for school groups this autumn. Oh, and maybe you saw the TV documentary about our project. That suggests the objects we've found are going to the town's museum, but ",
         },
+        { type: "text", text: "we don't know that " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -116,9 +120,9 @@ export const CAM20_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "When you enter the site, " },
+        { type: "text", text: "When you enter the site, please make sure you " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: " at all times. There are a few other things, " },
+        { type: "text", text: " at all times. There are a few other things, the highlights of the site " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
@@ -156,7 +160,7 @@ export const CAM20_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "One area we excavated in the first summer uncovered the site of a meeting hall. ",
+          text: "One area we excavated in the first summer uncovered the site of a meeting hall. We knew it was ",
         },
         { type: "gap", gapId: "g17" },
         {

@@ -8,15 +8,15 @@ export const CAM14_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       id: "g1",
       answers: [
-        "let's look at what you've got for your presentation",
-        "let us look at what you have got for your presentation",
+        "what you've got for your presentation",
+        "what you have got for your presentation",
       ],
     },
     {
       id: "g2",
       answers: ["we've got a short outline here", "we have got a short outline here"],
     },
-    { id: "g3", answers: ["they were related to our modern elephant"] },
+    { id: "g3", answers: ["our modern elephant"] },
     {
       id: "g4",
       answers: ["that'd be a bit childish", "that would be a bit childish"],
@@ -27,21 +27,18 @@ export const CAM14_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       id: "g6",
-      answers: ["as if it had just been extracted from the animal's jawbone"],
+      answers: ["from the animal's jawbone"],
     },
     { id: "g7", answers: ["this was really amazing"] },
     { id: "g8", answers: ["it was connected to the mainland"] },
     {
       id: "g9",
-      answers: ["mammoths and other animals like bears were able to roam around the whole area"],
+      answers: ["roam around the whole area"],
     },
     { id: "g10", answers: ["No one's sure", "No one is sure"] },
     {
       id: "g11",
-      answers: [
-        "It's standard procedure, but it took nearly two years to do",
-        "It is standard procedure, but it took nearly two years to do",
-      ],
+      answers: ["nearly two years to do"],
     },
     {
       id: "g12",
@@ -50,7 +47,7 @@ export const CAM14_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         "once we have prepared that we are done",
       ],
     },
-    { id: "g13", answers: ["How we begin the presentation is so important"] },
+    { id: "g13", answers: ["begin the presentation"] },
     {
       id: "g14",
       answers: [
@@ -60,18 +57,12 @@ export const CAM14_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       id: "g15",
-      answers: [
-        "We've got a lot on that but we need to make it interesting",
-        "We have got a lot on that but we need to make it interesting",
-      ],
+      answers: ["make it interesting"],
     },
-    { id: "g16", answers: ["that would add a bit of variety"] },
+    { id: "g16", answers: ["a bit of variety"] },
     {
       id: "g17",
-      answers: [
-        "it's all a bit muddled at present",
-        "it is all a bit muddled at present",
-      ],
+      answers: ["a bit muddled at present"],
     },
     {
       id: "g18",
@@ -82,7 +73,7 @@ export const CAM14_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
-        { type: "text", text: "So, Rosie and Martin, " },
+        { type: "text", text: "So, Rosie and Martin, let's look at " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " on woolly mammoths." },
       ],
@@ -100,7 +91,7 @@ export const CAM14_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes. But we thought we needed something general about woolly mammoths in our introduction, to establish that ",
+          text: "Yes. But we thought we needed something general about woolly mammoths in our introduction, to establish that they were related to ",
         },
         { type: "gap", gapId: "g3" },
         {
@@ -146,7 +137,7 @@ export const CAM14_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes. The tooth was found by a man called Russell Graham. He picked it up from under a rock in a cave. He knew it was special – for a start it was in really good condition, ",
+          text: "Yes. The tooth was found by a man called Russell Graham. He picked it up from under a rock in a cave. He knew it was special – for a start it was in really good condition, as if it had just been extracted ",
         },
         { type: "gap", gapId: "g6" },
         { type: "text", text: ". Anyway, they found it was 6,500 years old." },
@@ -172,7 +163,10 @@ export const CAM14_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "Then we're making an animated diagram to show the geography of the area in prehistoric times. So originally, St Paul's Island wasn't an island, ",
         },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: ", and " },
+        {
+          type: "text",
+          text: ", and mammoths and other animals like bears were able to ",
+        },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -205,7 +199,7 @@ export const CAM14_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Anyway, next we'll explain how Graham and his team identified the date when the mammoths became extinct on the island. They concluded that the extinction happened 5,600 years ago, which is a very precise time for a prehistoric extinction. It's based on samples they took from mud at the bottom of a lake on the island. They analysed it to find out what had fallen in over time – bits of plants, volcanic ash and even DNA from the mammoths themselves. ",
+          text: "Anyway, next we'll explain how Graham and his team identified the date when the mammoths became extinct on the island. They concluded that the extinction happened 5,600 years ago, which is a very precise time for a prehistoric extinction. It's based on samples they took from mud at the bottom of a lake on the island. They analysed it to find out what had fallen in over time – bits of plants, volcanic ash and even DNA from the mammoths themselves. It's standard procedure, but it took ",
         },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
@@ -233,10 +227,10 @@ export const CAM14_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I'm not sure. I think we need to write down all the ideas we want to include here, not just rely on memory. ",
+          text: "I'm not sure. I think we need to write down all the ideas we want to include here, not just rely on memory. How we ",
         },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: " …" },
+        { type: "text", text: " is so important …" },
       ],
     },
     { speaker: "MARTIN", segments: [{ type: "text", text: "You're right." }] },
@@ -258,7 +252,10 @@ export const CAM14_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MARTIN",
       segments: [
-        { type: "text", text: "What about the section with the initial questions asked by the researchers? " },
+        {
+          type: "text",
+          text: "What about the section with the initial questions asked by the researchers? We've got a lot on that but we need to ",
+        },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
       ],
@@ -275,7 +272,7 @@ export const CAM14_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TUTOR",
       segments: [
-        { type: "text", text: "Yes " },
+        { type: "text", text: "Yes that would add " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "." },
       ],
@@ -292,7 +289,7 @@ export const CAM14_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROSIE",
       segments: [
-        { type: "text", text: "I don't think so, but " },
+        { type: "text", text: "I don't think so, but it's all " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
       ],

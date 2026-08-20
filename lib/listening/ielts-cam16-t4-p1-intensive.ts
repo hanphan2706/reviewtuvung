@@ -8,20 +8,20 @@ export const CAM16_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g1", answers: ["I was hoping to speak to"] },
     { id: "g2", answers: ["we own the cottages together"] },
     { id: "g3", answers: ["they thought it was great"] },
-    { id: "g4", answers: ["What date did you have in mind"] },
+    { id: "g4", answers: ["have in mind"] },
     { id: "g5", answers: ["we could manage that"] },
     {
       id: "g6",
-      answers: ["That's a bit more than we wanted to pay", "That is a bit more than we wanted to pay"],
+      answers: ["more than we wanted to pay"],
     },
     { id: "g7", answers: ["We've budgeted up to", "We have budgeted up to"] },
     { id: "g8", answers: ["What was that again"] },
     { id: "g9", answers: ["It grows fairly wild around here"] },
-    { id: "g10", answers: ["So could you tell me something about it"] },
-    { id: "g11", answers: ["So that must sleep two people, as well"] },
+    { id: "g10", answers: ["tell me something about it"] },
+    { id: "g11", answers: ["must sleep two people"] },
     { id: "g12", answers: ["I wouldn't like to guarantee", "I would not like to guarantee"] },
     { id: "g13", answers: ["It has standard things like"] },
-    { id: "g14", answers: ["I think a lot of people prefer that nowadays"] },
+    { id: "g14", answers: ["prefer that nowadays"] },
     {
       id: "g15",
       answers: ["It's more environmentally friendly, isn't it", "It is more environmentally friendly, isn't it"],
@@ -59,7 +59,14 @@ export const CAM16_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "text", text: ". So my wife and I are hoping to come in May for a week." },
       ],
     },
-    { speaker: "SHIRLEY", segments: [{ type: "gap", gapId: "g4" }, { type: "text", text: "?" }] },
+    {
+      speaker: "SHIRLEY",
+      segments: [
+        { type: "text", text: "What date did you " },
+        { type: "gap", gapId: "g4" },
+        { type: "text", text: "?" },
+      ],
+    },
     { speaker: "TOM", segments: [{ type: "text", text: "The week beginning the 14th, if possible." }] },
     {
       speaker: "SHIRLEY",
@@ -87,7 +94,7 @@ export const CAM16_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TOM",
       segments: [
-        { type: "text", text: "Ah. " },
+        { type: "text", text: "Ah. That's a bit " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: ", I'm afraid. " },
         { type: "gap", gapId: "g7" },
@@ -124,7 +131,7 @@ export const CAM16_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TOM",
       segments: [
-        { type: "text", text: "OK. " },
+        { type: "text", text: "OK. So could you " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: ", please?" },
       ],
@@ -138,7 +145,14 @@ export const CAM16_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         },
       ],
     },
-    { speaker: "TOM", segments: [{ type: "gap", gapId: "g11" }, { type: "text", text: "?" }] },
+    {
+      speaker: "TOM",
+      segments: [
+        { type: "text", text: "So that " },
+        { type: "gap", gapId: "g11" },
+        { type: "text", text: ", as well?" },
+      ],
+    },
     { speaker: "SHIRLEY", segments: [{ type: "text", text: "That's right. There's a double bedroom." }] },
     { speaker: "TOM", segments: [{ type: "text", text: "Does it have a garden?" }] },
     {
@@ -185,7 +199,7 @@ export const CAM16_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes. There's also a TV in the living room, which plays DVDs too. The bathroom is too small for a bath, so there's a shower instead. ",
+          text: "Yes. There's also a TV in the living room, which plays DVDs too. The bathroom is too small for a bath, so there's a shower instead. I think a lot of people ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: ", anyway." },

@@ -7,19 +7,19 @@ export const CAM17_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I'd like to become a volunteer", "I would like to become a volunteer"] },
     { id: "g2", answers: ["I gather you co-ordinate", "I gather you coordinate"] },
-    { id: "g3", answers: ["What sort of thing could I do"] },
+    { id: "g3", answers: ["What sort of thing"] },
     { id: "g4", answers: ["The times are pretty flexible"] },
-    { id: "g5", answers: ["I'm used to working on a computer", "I am used to working on a computer"] },
+    { id: "g5", answers: ["I'm used to working", "I am used to working"] },
     { id: "g6", answers: ["I presume they're computerised", "I presume they are computerised", "I presume they're computerized"] },
     { id: "g7", answers: ["Is the library purpose-built", "Is the library purpose built"] },
-    { id: "g8", answers: ["I know a lot of places do"] },
-    { id: "g9", answers: ["we're always in need of more drivers", "we are always in need of more drivers"] },
-    { id: "g10", answers: ["I'll find out where we need help", "I will find out where we need help"] },
+    { id: "g8", answers: ["a lot of places do"] },
+    { id: "g9", answers: ["in need of more drivers"] },
+    { id: "g10", answers: ["I'll find out", "I will find out"] },
     { id: "g11", answers: ["we do it as a one-off", "we do it as a one off"] },
     { id: "g12", answers: ["we're struggling to find someone", "we are struggling to find someone"] },
     { id: "g13", answers: ["It would take the whole morning"] },
-    { id: "g14", answers: ["as he isn't healthy enough to do it himself", "as he is not healthy enough to do it himself"] },
-    { id: "g15", answers: ["which is a great way to meet other people"] },
+    { id: "g14", answers: ["isn't healthy enough", "is not healthy enough"] },
+    { id: "g15", answers: ["a great way to meet"] },
     { id: "g16", answers: ["because of the number of people"] },
     { id: "g17", answers: ["it can be quite a bottleneck"] },
     { id: "g18", answers: ["that's right up my street", "that is right up my street"] },
@@ -39,7 +39,7 @@ export const CAM17_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { speaker: "JANE", segments: [{ type: "text", text: "That's right." }] },
     {
       speaker: "FRANK",
-      segments: [{ type: "gap", gapId: "g3" }, { type: "text", text: "?" }],
+      segments: [{ type: "gap", gapId: "g3" }, { type: "text", text: " could I do?" }],
     },
     {
       speaker: "JANE",
@@ -66,7 +66,7 @@ export const CAM17_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Right. " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: " – " },
+        { type: "text", text: " on a computer – " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "?" },
       ],
@@ -93,7 +93,7 @@ export const CAM17_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "FRANK",
       segments: [
-        { type: "text", text: "Do you run a lunch club in the village for elderly people? " },
+        { type: "text", text: "Do you run a lunch club in the village for elderly people? I know " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -106,7 +106,7 @@ export const CAM17_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JANE",
       segments: [
-        { type: "text", text: "Ooo definitely. People come to the club from neighbouring villages, and " },
+        { type: "text", text: "Ooo definitely. People come to the club from neighbouring villages, and we're always " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -125,7 +125,7 @@ export const CAM17_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Excellent. " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: " and get back to you." },
+        { type: "text", text: " where we need help and get back to you." },
       ],
     },
     {
@@ -159,11 +159,11 @@ export const CAM17_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Oh, that would be great. Thank you. And also, next week, we're arranging to have some work done to Mr Selsbury's house before he moves, " },
+          text: "Oh, that would be great. Thank you. And also, next week, we're arranging to have some work done to Mr Selsbury's house before he moves, as he " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
-          text: ". We've got some people to decorate his kitchen, but if you could do some weeding in his garden, that would be wonderful.",
+          text: " to do it himself. We've got some people to decorate his kitchen, but if you could do some weeding in his garden, that would be wonderful.",
         },
       ],
     },
@@ -179,9 +179,9 @@ export const CAM17_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JANE",
       segments: [
-        { type: "text", text: "The volunteers group also organises monthly social events, " },
+        { type: "text", text: "The volunteers group also organises monthly social events, which is " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: ", of course." },
+        { type: "text", text: " other people, of course." },
       ],
     },
     { speaker: "FRANK", segments: [{ type: "text", text: "Uhuh." }] },

@@ -5,73 +5,44 @@ import type {
 
 export const CAM12_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    {
-      id: "g1",
-      answers: [
-        "in our film studies class next week",
-      ],
-    },
-    {
-      id: "g2",
-      answers: [
-        "I could do with getting someone else's opinion",
-        "I could do with getting the opinion of someone else",
-      ],
-    },
-    { id: "g3", answers: ["What are you going to talk about"] },
-    {
-      id: "g4",
-      answers: [
-        "I've got very interested in all the different approaches that film directors take",
-        "I have got very interested in all the different approaches that film directors take",
-      ],
-    },
+    { id: "g1", answers: ["film studies class"] },
+    { id: "g2", answers: ["I could do with"] },
+    { id: "g3", answers: ["going to talk about"] },
+    { id: "g4", answers: ["different approaches"] },
     {
       id: "g5",
-      answers: ["who's professor of film and literature", "who is professor of film and literature"],
+      answers: [
+        "who's professor of film and literature",
+        "who is professor of film and literature",
+      ],
     },
-    { id: "g6", answers: ["based on how faithful they are to the original plays and novels"] },
-    { id: "g7", answers: ["I just need to sort those out"] },
-    { id: "g8", answers: ["That should be more fun than having their favourite versions"] },
-    { id: "g9", answers: ["I came across something on the internet about her work on film adaptations"] },
-    { id: "g10", answers: ["I was thinking of showing some film clips to illustrate her ideas"] },
-    { id: "g11", answers: ["Will you have enough time, though"] },
+    { id: "g6", answers: ["how faithful they are"] },
+    { id: "g7", answers: ["sort those out"] },
+    { id: "g8", answers: ["more fun than"] },
+    { id: "g9", answers: ["came across something"] },
+    { id: "g10", answers: ["showing some film clips"] },
+    { id: "g11", answers: ["enough time, though"] },
     {
       id: "g12",
-      answers: [
-        "I doubt if you'll be able to find all the clips you want",
-        "I doubt if you will be able to find all the clips you want",
-      ],
+      answers: ["I doubt if you'll", "I doubt if you will"],
     },
     { id: "g13", answers: ["That should encourage discussion"] },
-    { id: "g14", answers: ["You mean things like patriotism, or the role of governments"] },
-    {
-      id: "g15",
-      answers: [
-        "I've got a few ideas I'd like to discuss",
-        "I have got a few ideas I would like to discuss",
-      ],
-    },
-    {
-      id: "g16",
-      answers: [
-        "You'd expect it would sound really bizarre, but I found I soon got used to it",
-        "You would expect it would sound really bizarre, but I found I soon got used to it",
-      ],
-    },
+    { id: "g14", answers: ["the role of governments"] },
+    { id: "g15", answers: ["a few ideas"] },
+    { id: "g16", answers: ["got used to it"] },
     { id: "g17", answers: ["All show and no substance"] },
     {
       id: "g18",
-      answers: ["And that'll be where I finish", "And that will be where I finish"],
+      answers: ["that'll be where I finish", "that will be where I finish"],
     },
   ],
   lines: [
     {
       speaker: "KATIE",
       segments: [
-        { type: "text", text: "Joe, you know I'm giving a presentation " },
+        { type: "text", text: "Joe, you know I'm giving a presentation in our " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "?" },
+        { type: "text", text: " next week?" },
       ],
     },
     { speaker: "JOE", segments: [{ type: "text", text: "Yes." }] },
@@ -80,13 +51,13 @@ export const CAM12_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Well, could we discuss it? " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "." },
+        { type: "text", text: " getting someone else's opinion." },
       ],
     },
     {
       speaker: "JOE",
       segments: [
-        { type: "text", text: "Of course, Katie. " },
+        { type: "text", text: "Of course, Katie. What are you " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "?" },
       ],
@@ -94,9 +65,9 @@ export const CAM12_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "KATIE",
       segments: [
-        { type: "text", text: "It's about film adaptations of Shakespeare's plays. " },
+        { type: "text", text: "It's about film adaptations of Shakespeare's plays. I've got very interested in all the " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "." },
+        { type: "text", text: " that film directors take." },
       ],
     },
     { speaker: "JOE", segments: [{ type: "text", text: "Uhuh." }] },
@@ -107,17 +78,17 @@ export const CAM12_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ", and in one of his books he came up with a straightforward classification of film adaptations ",
+          text: ", and in one of his books he came up with a straightforward classification of film adaptations based on ",
         },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " to the original plays and novels." },
       ],
     },
     { speaker: "JOE", segments: [{ type: "text", text: "Right." }] },
     {
       speaker: "KATIE",
       segments: [
-        { type: "text", text: "I've already made some notes on that, so " },
+        { type: "text", text: "I've already made some notes on that, so I just need to " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: " before the presentation." },
       ],
@@ -127,32 +98,37 @@ export const CAM12_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I thought that next I'd ask the class to come up with the worst examples of Shakespeare adaptations that they've seen, and to say why. ",
+          text: "I thought that next I'd ask the class to come up with the worst examples of Shakespeare adaptations that they've seen, and to say why. That should be ",
         },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: "." },
+        { type: "text", text: " having their favourite versions." },
       ],
     },
     { speaker: "JOE", segments: [{ type: "text", text: "Yes, I can certainly think of a couple!" }] },
     {
       speaker: "KATIE",
       segments: [
-        { type: "text", text: "Right. Next I want to talk about Rachel Malchow. " },
+        { type: "text", text: "Right. Next I want to talk about Rachel Malchow. I " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: "." },
+        { type: "text", text: " on the internet about her work on film adaptations." },
       ],
     },
     {
       speaker: "KATIE",
-      segments: [{ type: "gap", gapId: "g10" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "I was thinking of " },
+        { type: "gap", gapId: "g10" },
+        { type: "text", text: " to illustrate her ideas." },
+      ],
     },
     {
       speaker: "JOE",
       segments: [
+        { type: "text", text: "Will you have " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "? Both to prepare and during the presentation? After all, " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: "." },
+        { type: "text", text: " be able to find all the clips you want." },
       ],
     },
     {
@@ -175,14 +151,18 @@ export const CAM12_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "JOE",
-      segments: [{ type: "gap", gapId: "g14" }, { type: "text", text: "?" }],
+      segments: [
+        { type: "text", text: "You mean things like patriotism, or " },
+        { type: "gap", gapId: "g14" },
+        { type: "text", text: "?" },
+      ],
     },
     {
       speaker: "KATIE",
       segments: [
-        { type: "text", text: "Exactly. It's quite tricky, but " },
+        { type: "text", text: "Exactly. It's quite tricky, but I've got " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: "." },
+        { type: "text", text: " I'd like to discuss." },
       ],
     },
     {
@@ -238,7 +218,11 @@ export const CAM12_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "KATIE",
-      segments: [{ type: "gap", gapId: "g16" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "You'd expect it would sound really bizarre, but I found I soon " },
+        { type: "gap", gapId: "g16" },
+        { type: "text", text: "." },
+      ],
     },
     { speaker: "JOE", segments: [{ type: "text", text: "Me too." }] },
     {
@@ -286,7 +270,7 @@ export const CAM12_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "That's right. It's more a way of looking into how people nowadays connect with the playwright - the play is really just the starting point. ",
+          text: "That's right. It's more a way of looking into how people nowadays connect with the playwright - the play is really just the starting point. And ",
         },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },

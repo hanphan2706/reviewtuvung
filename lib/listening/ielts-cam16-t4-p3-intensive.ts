@@ -7,27 +7,17 @@ export const CAM16_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "we need to think about how we're going to organise our report",
-        "we need to think about how we are going to organise our report",
-        "we need to think about how we're going to organize our report",
-        "we need to think about how we are going to organize our report",
-      ],
+      answers: ["organise our report", "organize our report"],
     },
-    { id: "g2", answers: ["I think we should start by talking about the benefits"] },
-    { id: "g3", answers: ["It makes riding a bike very convenient for people"] },
-    { id: "g4", answers: ["that puts people on low incomes off"] },
+    { id: "g2", answers: ["talking about the benefits"] },
+    { id: "g3", answers: ["very convenient for people"] },
+    { id: "g4", answers: ["people on low incomes off"] },
     { id: "g5", answers: ["it's good for their health", "it is good for their health"] },
     { id: "g6", answers: ["But isn't that of less importance", "But is that not of less importance"] },
     { id: "g7", answers: ["Which is the main point"] },
     {
       id: "g8",
-      answers: [
-        "I'd say it's had less of an impact on noise pollution",
-        "I would say it's had less of an impact on noise pollution",
-        "I'd say it has had less of an impact on noise pollution",
-        "I would say it has had less of an impact on noise pollution",
-      ],
+      answers: ["impact on noise pollution"],
     },
     { id: "g9", answers: ["Shall we quickly discuss the recommendations"] },
     {
@@ -36,39 +26,33 @@ export const CAM16_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       id: "g11",
-      answers: [
-        "Places which haven't invested in that have really struggled",
-        "Places which have not invested in that have really struggled",
-      ],
+      answers: ["have really struggled"],
     },
     {
       id: "g12",
-      answers: [
-        "but in some really big cities, competition's beneficial",
-        "but in some really big cities, competition is beneficial",
-      ],
+      answers: ["competition's beneficial", "competition is beneficial"],
     },
-    { id: "g13", answers: ["Deciding how much to invest is a big question"] },
-    { id: "g14", answers: ["People need a lot of persuasion to stop using their cars"] },
-    { id: "g15", answers: ["Shall we look at some examples now"] },
-    { id: "g16", answers: ["There was already a strong culture of cycling here"] },
+    { id: "g13", answers: ["is a big question"] },
+    { id: "g14", answers: ["a lot of persuasion"] },
+    { id: "g15", answers: ["look at some examples"] },
+    { id: "g16", answers: ["strong culture of cycling"] },
     {
       id: "g17",
-      answers: ["And yet it's one of the best-used schemes", "And yet it is one of the best-used schemes"],
+      answers: ["one of the best-used schemes", "one of the best used schemes"],
     },
     {
       id: "g18",
-      answers: [
-        "I think the organisers lacked vision and ambition there",
-        "I think the organizers lacked vision and ambition there",
-      ],
+      answers: ["vision and ambition"],
     },
   ],
   lines: [
     {
       speaker: "JAKE",
       segments: [
-        { type: "text", text: "Now that we've done all the research into bike-sharing schemes in cities around the world, " },
+        {
+          type: "text",
+          text: "Now that we've done all the research into bike-sharing schemes in cities around the world, we need to think about how we're going to ",
+        },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
@@ -76,11 +60,11 @@ export const CAM16_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "AMY",
       segments: [
-        { type: "text", text: "Right. " },
+        { type: "text", text: "Right. I think we should start by " },
         { type: "gap", gapId: "g2" },
         {
           type: "text",
-          text: ". I mean it's great that so many cities have introduced these schemes where anyone can pick up a bike from dozens of different locations and hire it for a few hours. ",
+          text: ". I mean it's great that so many cities have introduced these schemes where anyone can pick up a bike from dozens of different locations and hire it for a few hours. It makes riding a bike ",
         },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
@@ -89,7 +73,7 @@ export const CAM16_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JAKE",
       segments: [
-        { type: "text", text: "Yes, but the costs can add up and " },
+        { type: "text", text: "Yes, but the costs can add up and that puts " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: " in some places." },
       ],
@@ -129,7 +113,7 @@ export const CAM16_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "AMY",
       segments: [
-        { type: "text", text: "Exactly. " },
+        { type: "text", text: "Exactly. I'd say it's had less of an " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: " because there are still loads of buses and lorries around." },
       ],
@@ -157,7 +141,7 @@ export const CAM16_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "But some technical things are really important – like a fully functional app – so people can make payments and book bikes easily. ",
+          text: "But some technical things are really important – like a fully functional app – so people can make payments and book bikes easily. Places which haven't invested in that ",
         },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
@@ -168,7 +152,7 @@ export const CAM16_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Good point ... Some people say there shouldn't be competing companies offering separate bike-sharing schemes, ",
+          text: "Good point ... Some people say there shouldn't be competing companies offering separate bike-sharing schemes, but in some really big cities, ",
         },
         { type: "gap", gapId: "g12" },
         { type: "text", text: " and anyway one company might not be able to manage the whole thing." },
@@ -177,7 +161,7 @@ export const CAM16_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "AMY",
       segments: [
-        { type: "text", text: "Right. " },
+        { type: "text", text: "Right. Deciding how much to invest " },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
@@ -190,17 +174,18 @@ export const CAM16_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Definitely. If people don't know how to use the scheme or don't understand its benefits, they won't use it. ",
+          text: "Definitely. If people don't know how to use the scheme or don't understand its benefits, they won't use it. People need ",
         },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: "." },
+        { type: "text", text: " to stop using their cars." },
       ],
     },
     {
       speaker: "AMY",
       segments: [
+        { type: "text", text: "Shall we " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: "? And say what we think is good or bad about them." },
+        { type: "text", text: " now? And say what we think is good or bad about them." },
       ],
     },
     {
@@ -212,17 +197,21 @@ export const CAM16_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "AMY",
       segments: [
-        { type: "text", text: "Yes. " },
+        { type: "text", text: "Yes. There was already a " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
-          text: ". In a way it's strange that there was such a demand for bike-sharing because you'd have thought most people would have used their own bikes.",
+          text: " here. In a way it's strange that there was such a demand for bike-sharing because you'd have thought most people would have used their own bikes.",
         },
       ],
     },
     {
       speaker: "JAKE",
-      segments: [{ type: "gap", gapId: "g17" }, { type: "text", text: " ... Dublin's an interesting example of a success story." }],
+      segments: [
+        { type: "text", text: "And yet it's " },
+        { type: "gap", gapId: "g17" },
+        { type: "text", text: " ... Dublin's an interesting example of a success story." },
+      ],
     },
     {
       speaker: "AMY",
@@ -279,9 +268,9 @@ export const CAM16_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JAKE",
       segments: [
-        { type: "text", text: "More than it costs to take a taxi, Crazy. " },
+        { type: "text", text: "More than it costs to take a taxi, Crazy. I think the organisers lacked " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: "." },
+        { type: "text", text: " there." },
       ],
     },
     {

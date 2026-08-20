@@ -5,35 +5,26 @@ import type {
 
 export const CAM15_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["Is now a good time"] },
-    { id: "g2", answers: ["I can tell you the address now"] },
-    { id: "g3", answers: ["is there anyone in particular I should speak to there"] },
-    { id: "g4", answers: ["The agent I always deal with"] },
+    { id: "g1", answers: ["Is now a good", "is now a good"] },
+    { id: "g2", answers: ["tell you the address"] },
+    { id: "g3", answers: ["anyone in particular"] },
+    { id: "g4", answers: ["The agent I always deal with", "the agent I always deal with"] },
     {
       id: "g5",
-      answers: [
-        "she's always really busy in the morning trying to fill last-minute vacancies",
-        "she is always really busy in the morning trying to fill last-minute vacancies",
-      ],
+      answers: ["fill last-minute vacancies"],
     },
     {
       id: "g6",
-      answers: [
-        "I'm sure it would be worth getting in touch with her for an informal chat",
-        "I am sure it would be worth getting in touch with her for an informal chat",
-      ],
+      answers: ["an informal chat"],
     },
-    { id: "g7", answers: ["which will look good on your CV"] },
+    { id: "g7", answers: ["look good on your CV"] },
     {
       id: "g8",
       answers: ["I don't have much office experience", "I do not have much office experience"],
     },
     {
       id: "g9",
-      answers: [
-        "you'll pick up office skills really quickly on the job",
-        "you will pick up office skills really quickly on the job",
-      ],
+      answers: ["pick up office skills"],
     },
     {
       id: "g10",
@@ -41,41 +32,35 @@ export const CAM15_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       id: "g11",
-      answers: [
-        "It's unusual to be sent somewhere for just a day or two",
-        "It is unusual to be sent somewhere for just a day or two",
-      ],
+      answers: ["just a day or two"],
     },
-    { id: "g12", answers: ["I was only expecting to get eight or nine pounds an hour"] },
-    { id: "g13", answers: ["The interview usually takes about an hour"] },
+    { id: "g12", answers: ["eight or nine pounds"] },
+    { id: "g13", answers: ["takes about an hour"] },
     {
       id: "g14",
-      answers: ["It's better to look too smart than too casual", "It is better to look too smart than too casual"],
+      answers: ["too smart than too casual"],
     },
     {
       id: "g15",
       answers: [
-        "they don't need to see those, I don't think",
-        "they do not need to see those, I do not think",
+        "don't need to see those",
+        "do not need to see those",
       ],
     },
     {
       id: "g16",
       answers: [
-        "I wouldn't get stressed about the interview though",
-        "I would not get stressed about the interview though",
+        "wouldn't get stressed",
+        "would not get stressed",
       ],
     },
     {
       id: "g17",
-      answers: [
-        "they can try and match you to a job which you'll like",
-        "they can try and match you to a job which you will like",
-      ],
+      answers: ["match you to a job"],
     },
     {
       id: "g18",
-      answers: ["it's much easier than ringing up individual companies", "it is much easier than ringing up individual companies"],
+      answers: ["ringing up individual companies"],
     },
   ],
   lines: [
@@ -87,23 +72,23 @@ export const CAM15_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "Hello William. This is Amber – you said to phone if I wanted to get more information about the job agency you mentioned. ",
         },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "?" },
+        { type: "text", text: " time?" },
       ],
     },
     {
       speaker: "WILLIAM",
       segments: [
-        { type: "text", text: "Oh, hi Amber. Yes. Fine. So the agency I was talking about is called Bankside – they're based in Docklands – " },
+        { type: "text", text: "Oh, hi Amber. Yes. Fine. So the agency I was talking about is called Bankside – they're based in Docklands – I can " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: " – 497 Eastside." },
+        { type: "text", text: " now – 497 Eastside." },
       ],
     },
     {
       speaker: "AMBER",
       segments: [
-        { type: "text", text: "OK, thanks. So " },
+        { type: "text", text: "OK, thanks. So is there " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "?" },
+        { type: "text", text: " I should speak to there?" },
       ],
     },
     {
@@ -121,10 +106,10 @@ export const CAM15_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes, it's in my contacts somewhere – right, here we are: 078 double 6, 510 triple 3. I wouldn't call her until the afternoon if I were you – ",
+          text: "Yes, it's in my contacts somewhere – right, here we are: 078 double 6, 510 triple 3. I wouldn't call her until the afternoon if I were you – she's always really busy in the morning trying to ",
         },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: ". She's really helpful and friendly so " },
+        { type: "text", text: ". She's really helpful and friendly so I'm sure it would be worth getting in touch with her for " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
       ],
@@ -138,7 +123,7 @@ export const CAM15_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "That's right. I know you're hoping to find a full-time job in the media eventually – but Becky mostly recruits temporary staff for the finance sector – ",
+          text: "That's right. I know you're hoping to find a full-time job in the media eventually – but Becky mostly recruits temporary staff for the finance sector – which will ",
         },
         { type: "gap", gapId: "g7" },
         { type: "text", text: " – and generally pays better too." },
@@ -157,10 +142,10 @@ export const CAM15_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I wouldn't worry. They'll probably start you as a receptionist, or something like that. So what's important for that kind of job isn't so much having business skills or knowing lots of different computer systems – it's communication that really matters – so you'd be fine there. And ",
+          text: "I wouldn't worry. They'll probably start you as a receptionist, or something like that. So what's important for that kind of job isn't so much having business skills or knowing lots of different computer systems – it's communication that really matters – so you'd be fine there. And you'll ",
         },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: ". It's not that complicated." },
+        { type: "text", text: " really quickly on the job. It's not that complicated." },
       ],
     },
     {
@@ -178,7 +163,7 @@ export const CAM15_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g10" },
         {
           type: "text",
-          text: ". But you're more likely to be offered something for a week at first, which might get extended. ",
+          text: ". But you're more likely to be offered something for a week at first, which might get extended. It's unusual to be sent somewhere for ",
         },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
@@ -195,9 +180,9 @@ export const CAM15_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "AMBER",
       segments: [
-        { type: "text", text: "That's pretty good. " },
+        { type: "text", text: "That's pretty good. I was only expecting to get " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: "." },
+        { type: "text", text: " an hour." },
       ],
     },
     {
@@ -208,6 +193,7 @@ export const CAM15_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WILLIAM",
       segments: [
+        { type: "text", text: "The interview usually " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: " and you should arrange that about a week in advance." },
       ],
@@ -224,7 +210,7 @@ export const CAM15_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WILLIAM",
       segments: [
-        { type: "text", text: "Good idea. " },
+        { type: "text", text: "Good idea. It's better to look " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
       ],
@@ -236,9 +222,9 @@ export const CAM15_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WILLIAM",
       segments: [
-        { type: "text", text: "No – " },
+        { type: "text", text: "No – they " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: "." },
+        { type: "text", text: ", I don't think." },
       ],
     },
     { speaker: "AMBER", segments: [{ type: "text", text: "What about my passport?" }] },
@@ -247,15 +233,16 @@ export const CAM15_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WILLIAM",
       segments: [
+        { type: "text", text: "I " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
-          text: ". It's just a chance for them to build a relationship with you – so ",
+          text: " about the interview though. It's just a chance for them to build a relationship with you – so they can try and ",
         },
         { type: "gap", gapId: "g17" },
         {
           type: "text",
-          text: ". So there are questions about personality that they always ask candidates – fairly basic ones. And they probably won't ask anything too difficult like what your plans are for the future.",
+          text: " which you'll like. So there are questions about personality that they always ask candidates – fairly basic ones. And they probably won't ask anything too difficult like what your plans are for the future.",
         },
       ],
     },
@@ -274,7 +261,7 @@ export const CAM15_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "AMBER",
       segments: [
-        { type: "text", text: "And I expect finding a temporary job this way takes a lot less time – " },
+        { type: "text", text: "And I expect finding a temporary job this way takes a lot less time – it's much easier than " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

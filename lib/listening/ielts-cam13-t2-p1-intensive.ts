@@ -5,9 +5,9 @@ import type {
 
 export const CAM13_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I want to find out about joining the club"] },
+    { id: "g1", answers: ["find out about joining"] },
     { id: "g2", answers: ["I can help you there"] },
-    { id: "g3", answers: ["are you interested in membership for yourself"] },
+    { id: "g3", answers: ["interested in membership"] },
     {
       id: "g4",
       answers: [
@@ -18,37 +18,32 @@ export const CAM13_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       id: "g5",
       answers: [
-        "I'm not really up to that standard",
-        "I am not really up to that standard",
+        "not really up to that standard",
       ],
     },
     {
       id: "g6",
       answers: [
-        "you'd be better with the Recreational membership",
-        "you would be better with the Recreational membership",
+        "better with the Recreational membership",
       ],
     },
     { id: "g7", answers: ["It's paid quarterly", "It is paid quarterly"] },
     {
       id: "g8",
       answers: [
-        "you're also permitted to wear our kit",
-        "you are also permitted to wear our kit",
+        "permitted to wear our kit",
       ],
     },
     {
       id: "g9",
       answers: [
-        "it's made to order by a company in Brisbane",
-        "it is made to order by a company in Brisbane",
+        "made to order",
       ],
     },
     {
       id: "g10",
       answers: [
-        "they're a really good way of improving your cycling skills",
-        "they are a really good way of improving your cycling skills",
+        "improving your cycling skills",
       ],
     },
     { id: "g11", answers: ["Level A is pretty fast"] },
@@ -63,24 +58,22 @@ export const CAM13_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       id: "g14",
       answers: [
-        "it's easy to fit in before you go to work",
-        "it is easy to fit in before you go to work",
+        "easy to fit in",
       ],
     },
     { id: "g15", answers: ["it's quite a social event", "it is quite a social event"] },
     {
       id: "g16",
       answers: [
-        "I've only just moved to the city",
-        "I have only just moved to the city",
+        "only just moved to the city",
       ],
     },
-    { id: "g17", answers: ["the group members on the ride support one another"] },
+    { id: "g17", answers: ["support one another"] },
     {
       id: "g18",
       answers: [
-        "You shouldn't use it while you're cycling",
-        "You should not use it while you are cycling",
+        "while you're cycling",
+        "while you are cycling",
       ],
     },
   ],
@@ -89,9 +82,9 @@ export const CAM13_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Oh, hi. Er … " },
+        { type: "text", text: "Oh, hi. Er … I want to " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "." },
+        { type: "text", text: " the club." },
       ],
     },
     {
@@ -109,9 +102,9 @@ export const CAM13_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JIM",
       segments: [
-        { type: "text", text: "So, " },
+        { type: "text", text: "So, are you " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "?" },
+        { type: "text", text: " for yourself?" },
       ],
     },
     { speaker: "WOMAN", segments: [{ type: "text", text: "That's right." }] },
@@ -129,7 +122,7 @@ export const CAM13_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Right. Well, " },
+        { type: "text", text: "Right. Well, I'm " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
@@ -140,7 +133,7 @@ export const CAM13_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JIM",
       segments: [
-        { type: "text", text: "Sure. That's why most people join. So, in that case " },
+        { type: "text", text: "Sure. That's why most people join. So, in that case you'd be " },
         { type: "gap", gapId: "g6" },
         {
           type: "text",
@@ -172,7 +165,7 @@ export const CAM13_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JIM",
       segments: [
-        { type: "text", text: "That's right. And once you're a member of the club, " },
+        { type: "text", text: "That's right. And once you're a member of the club, you're also " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: " when you're out cycling. It's green and white." },
       ],
@@ -189,11 +182,11 @@ export const CAM13_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JIM",
       segments: [
-        { type: "text", text: "No, " },
+        { type: "text", text: "No, it's " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: ". You can find them online: they're called Jerriz. That's J-E-R-R-I-Z. You can use your membership number to put in an order on their website.",
+          text: " by a company in Brisbane. You can find them online: they're called Jerriz. That's J-E-R-R-I-Z. You can use your membership number to put in an order on their website.",
         },
       ],
     },
@@ -204,7 +197,7 @@ export const CAM13_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JIM",
       segments: [
-        { type: "text", text: "Sure. So we have training rides pretty well every morning, and " },
+        { type: "text", text: "Sure. So we have training rides pretty well every morning, and they're a really good way of " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
@@ -260,11 +253,11 @@ export const CAM13_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JIM",
       segments: [
-        { type: "text", text: "They're about an hour and a half. So, if you have a job " },
+        { type: "text", text: "They're about an hour and a half. So, if you have a job it's " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
-          text: ". And the members often go somewhere for coffee afterwards, so ",
+          text: " before you go to work. And the members often go somewhere for coffee afterwards, so ",
         },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
@@ -273,7 +266,7 @@ export const CAM13_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "OK. That sounds good. " },
+        { type: "text", text: "OK. That sounds good. I've " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: " so I don't actually know many people yet." },
       ],
@@ -285,7 +278,7 @@ export const CAM13_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Sometimes, but not always. But you don't really need one; ",
+          text: "Sometimes, but not always. But you don't really need one; the group members on the ride ",
         },
         { type: "gap", gapId: "g17" },
         { type: "text", text: ", anyway." },
@@ -305,7 +298,7 @@ export const CAM13_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JIM",
       segments: [
-        { type: "text", text: "Well, bring a bottle of water, and your phone. " },
+        { type: "text", text: "Well, bring a bottle of water, and your phone. You shouldn't use it " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: ", but have it with you." },
       ],

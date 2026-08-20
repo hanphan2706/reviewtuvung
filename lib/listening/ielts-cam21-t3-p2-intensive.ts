@@ -6,22 +6,22 @@ import type {
 export const CAM21_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["there's never been a better time", "there has never been a better time"] },
-    { id: "g2", answers: ["Street food continues to grow in popularity"] },
+    { id: "g2", answers: ["grow in popularity"] },
     { id: "g3", answers: ["a reaction against fast food"] },
     { id: "g4", answers: ["it's not particularly good for you", "it is not particularly good for you"] },
     { id: "g5", answers: ["People always think"] },
-    { id: "g6", answers: ["the cost of renting a space can be huge"] },
-    { id: "g7", answers: ["customers are always really interested in food"] },
+    { id: "g6", answers: ["the cost of renting a space"] },
+    { id: "g7", answers: ["really interested in food"] },
     { id: "g8", answers: ["Once you get established"] },
     { id: "g9", answers: ["has become quite fashionable too"] },
-    { id: "g10", answers: ["costs a lot less than opening a restaurant"] },
+    { id: "g10", answers: ["costs a lot less"] },
     { id: "g11", answers: ["if your business takes off"] },
     { id: "g12", answers: ["you'll end up spending more money", "you will end up spending more money"] },
     { id: "g13", answers: ["I expect you've done some research", "I expect you have done some research"] },
-    { id: "g14", answers: ["It's got to be easy to eat", "It has got to be easy to eat"] },
-    { id: "g15", answers: ["you should be prepared for things to go wrong"] },
+    { id: "g14", answers: ["easy to eat"] },
+    { id: "g15", answers: ["be prepared for"] },
     { id: "g16", answers: ["Their work-life balance was non-existent"] },
-    { id: "g17", answers: ["it was hard to make a profit"] },
+    { id: "g17", answers: ["make a profit"] },
     { id: "g18", answers: ["It was a complicated process"] },
   ],
   lines: [
@@ -39,7 +39,7 @@ export const CAM21_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "The good news is that " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " to start your own street food business. " },
+        { type: "text", text: " to start your own street food business. Street food continues to " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: ". I think there are a couple of reasons for this. The first is that street food is " },
         { type: "gap", gapId: "g3" },
@@ -62,7 +62,7 @@ export const CAM21_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g6" },
         {
           type: "text",
-          text: ". And there's always a lot of competition. Food markets, on the other hand, are great because " },
+          text: " can be huge. And there's always a lot of competition. Food markets, on the other hand, are great because customers are always " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -82,7 +82,7 @@ export const CAM21_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g10" },
         {
           type: "text",
-          text: " or café but you'll have to buy some basic equipment. I'd try to get things like hobs and fridges second hand if you can. You can replace them with better quality stuff " },
+          text: " than opening a restaurant or café but you'll have to buy some basic equipment. I'd try to get things like hobs and fridges second hand if you can. You can replace them with better quality stuff " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: ". Renting is another option but " },
         { type: "gap", gapId: "g12" },
@@ -98,7 +98,7 @@ export const CAM21_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g13" },
         {
           type: "text",
-          text: " to find out if anyone else is selling a similar product. And you'll have thought about any possible allergies to nuts or eggs etc. But there's one thing people don't always think about and that's how you're going to serve it. On a plate? In a bag? Will you provide a fork? Will it all be easily recyclable or reusable? " },
+          text: " to find out if anyone else is selling a similar product. And you'll have thought about any possible allergies to nuts or eggs etc. But there's one thing people don't always think about and that's how you're going to serve it. On a plate? In a bag? Will you provide a fork? Will it all be easily recyclable or reusable? It's got to be " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " and look attractive or customers won't come back." },
       ],
@@ -106,11 +106,11 @@ export const CAM21_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Once you get started, " },
+        { type: "text", text: "Once you get started, you should " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
-          text: ". Every business faces problems and here are a few examples from street food businesses that I know. My friends who run Thai Basil started by juggling their street food business with their day jobs in a restaurant. " },
+          text: " things to go wrong. Every business faces problems and here are a few examples from street food businesses that I know. My friends who run Thai Basil started by juggling their street food business with their day jobs in a restaurant. " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
@@ -121,7 +121,7 @@ export const CAM21_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The owners of Basque found " },
+        { type: "text", text: "The owners of Basque found it was hard to " },
         { type: "gap", gapId: "g17" },
         {
           type: "text",

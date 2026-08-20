@@ -6,85 +6,56 @@ import type {
 export const CAM12_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["How can I help you"] },
+    { id: "g2", answers: ["a few days' holiday"] },
+    { id: "g3", answers: ["find out about it"] },
     {
-      id: "g2",
+      id: "g4",
       answers: [
-        "I'm coming to Kenton for a few days' holiday next month",
-        "I am coming to Kenton for a few days' holiday next month",
+        "Oh, that's great",
+        "Oh, that is great",
       ],
     },
-    { id: "g3", answers: ["She gave me this number to find out about it"] },
-    { id: "g4", answers: ["Oh, that's great", "Oh, that is great"] },
-    { id: "g5", answers: ["So could you tell me the programme, please", "So could you tell me the program, please"] },
-    {
-      id: "g6",
-      answers: [
-        "People start gathering around 2 o'clock, to get a good place to see from",
-        "People start gathering around 2 o'clock to get a good place to see from",
-      ],
-    },
+    { id: "g5", answers: ["could you tell me"] },
+    { id: "g6", answers: ["start gathering"] },
     {
       id: "g7",
       answers: [
-        "I'll make sure I get there early to get a good spot",
-        "I will make sure I get there early to get a good spot",
+        "I'll make sure",
+        "I will make sure",
       ],
     },
-    { id: "g8", answers: ["The festival will be officially opened by the mayor"] },
-    {
-      id: "g9",
-      answers: [
-        "He'll just speak for a few minutes, welcoming everyone to the festival",
-        "He will just speak for a few minutes, welcoming everyone to the festival",
-      ],
-    },
+    { id: "g8", answers: ["officially opened"] },
+    { id: "g9", answers: ["for a few minutes"] },
     {
       id: "g10",
       answers: [
-        "I don't know if you've heard of her",
-        "I do not know if you have heard of her",
-        "I don't know if you have heard of her",
+        "you've heard of her",
+        "you have heard of her",
       ],
     },
     {
       id: "g11",
-      answers: ["so we're celebrating her centenary", "so we are celebrating her centenary"],
+      answers: [
+        "so we're celebrating her centenary",
+        "so we are celebrating her centenary",
+      ],
     },
     {
       id: "g12",
       answers: [
-        "I'm a biologist, so I've always been interested in her",
-        "I am a biologist, so I have always been interested in her",
-        "I'm a biologist, so I have always been interested in her",
+        "I've always been interested",
+        "I have always been interested",
       ],
     },
-    {
-      id: "g13",
-      answers: [
-        "You should go to the park to watch, as you'll get the best view from there",
-        "You should go to the park to watch, as you will get the best view from there",
-      ],
-    },
-    {
-      id: "g14",
-      answers: [
-        "It makes a change from children and parents, doesn't it",
-        "It makes a change from children and parents, does not it",
-      ],
-    },
+    { id: "g13", answers: ["the best view"] },
+    { id: "g14", answers: ["It makes a change"] },
     { id: "g15", answers: ["How do you spell the name"] },
-    {
-      id: "g16",
-      answers: [
-        "I'm particularly interested in that as I do it as a hobby",
-        "I am particularly interested in that as I do it as a hobby",
-      ],
-    },
+    { id: "g16", answers: ["particularly interested"] },
     {
       id: "g17",
       answers: [
-        "I presume I'll need tickets for that",
-        "I presume I will need tickets for that",
+        "I presume I'll need",
+        "I presume I will need",
       ],
     },
     { id: "g18", answers: ["I hope you enjoy your stay"] },
@@ -101,9 +72,9 @@ export const CAM12_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Oh, good morning. " },
+        { type: "text", text: "Oh, good morning. I'm coming to Kenton for " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ", and a friend told me there's a festival. " },
+        { type: "text", text: " next month, and a friend told me there's a festival. She gave me this number to " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -121,17 +92,17 @@ export const CAM12_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: "WOMAN",
       segments: [
         { type: "gap", gapId: "g4" },
-        { type: "text", text: ". I'll be there from the 15th till the 19th. " },
+        { type: "text", text: ". I'll be there from the 15th till the 19th. So " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "?" },
+        { type: "text", text: " the programme, please?" },
       ],
     },
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Well, on the first day, there's the opening ceremony, in the town centre. " },
+        { type: "text", text: "Well, on the first day, there's the opening ceremony, in the town centre. People " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ", and the events will start at 2.45, and finish about 5.30." },
+        { type: "text", text: " around 2 o'clock, to get a good place to see from, and the events will start at 2.45, and finish about 5.30." },
       ],
     },
     {
@@ -139,16 +110,17 @@ export const CAM12_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "OK, thanks. " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: " I get there early to get a good spot." },
       ],
     },
     {
       speaker: "MAN",
       segments: [
+        { type: "text", text: "The festival will be " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: ". " },
+        { type: "text", text: " by the mayor. He'll just speak " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: ". All the town councillors will be there, and of course lots of other people." },
+        { type: "text", text: ", welcoming everyone to the festival. All the town councillors will be there, and of course lots of other people." },
       ],
     },
     { speaker: "WOMAN", segments: [{ type: "text", text: "Right." }] },
@@ -167,7 +139,7 @@ export const CAM12_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "After that, a community group from the town will perform a play they've written themselves, just a short one. It's about Helen Tungate. ",
+          text: "After that, a community group from the town will perform a play they've written themselves, just a short one. It's about Helen Tungate. I don't know if ",
         },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "?" },
@@ -188,8 +160,9 @@ export const CAM12_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
+        { type: "text", text: "I'm a biologist, so " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: ", I didn't realise she came from Kenton." },
+        { type: "text", text: " in her, I didn't realise she came from Kenton." },
       ],
     },
     {
@@ -197,12 +170,12 @@ export const CAM12_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes. Well, all that will take place in the afternoon, and later, as the sun sets, there'll be a firework display. ",
+          text: "Yes. Well, all that will take place in the afternoon, and later, as the sun sets, there'll be a firework display. You should go to the park to watch, as you'll get ",
         },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
-          text: ", and the display takes place on the opposite side of the river. It's always one of the most popular events in the festival.",
+          text: " from there, and the display takes place on the opposite side of the river. It's always one of the most popular events in the festival.",
         },
       ],
     },
@@ -222,7 +195,7 @@ export const CAM12_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "That sounds interesting. " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: "!" },
+        { type: "text", text: " from children and parents, doesn't it!" },
       ],
     },
     {
@@ -247,9 +220,9 @@ export const CAM12_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Are there any displays of ballet dancing? " },
+        { type: "text", text: "Are there any displays of ballet dancing? I'm " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " in that as I do it as a hobby." },
       ],
     },
     {
@@ -297,7 +270,7 @@ export const CAM12_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: "WOMAN",
       segments: [
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " tickets for that." },
       ],
     },
     {

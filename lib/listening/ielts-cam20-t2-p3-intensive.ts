@@ -6,23 +6,23 @@ import type {
 export const CAM20_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I'm really struggling to think of", "I am really struggling to think of"] },
-    { id: "g2", answers: ["see if we can narrow the topic down a bit"] },
+    { id: "g2", answers: ["narrow the topic down"] },
     { id: "g3", answers: ["Lots of facts and statistics"] },
     { id: "g4", answers: ["I'd never thought about the links", "I had never thought about the links"] },
     { id: "g5", answers: ["a physician used street plans"] },
-    { id: "g6", answers: ["Or we could do something more general"] },
-    { id: "g7", answers: ["it might be best to avoid it"] },
+    { id: "g6", answers: ["something more general"] },
+    { id: "g7", answers: ["best to avoid it"] },
     { id: "g8", answers: ["I hardly took any notes"] },
     { id: "g9", answers: ["It didn't seem worth it", "It did not seem worth it"] },
-    { id: "g10", answers: ["That's something that's a global problem", "That is something that is a global problem"] },
-    { id: "g11", answers: ["the information gets changed for political reasons"] },
+    { id: "g10", answers: ["a global problem"] },
+    { id: "g11", answers: ["for political reasons"] },
     { id: "g12", answers: ["That's really important", "That is really important"] },
-    { id: "g13", answers: ["I love living in a big city"] },
-    { id: "g14", answers: ["It would be nice to talk about some positive developments"] },
-    { id: "g15", answers: ["a lot of the shops in the city centre are closing down"] },
-    { id: "g16", answers: ["you're not doing any harm to the natural environment", "you are not doing any harm to the natural environment"] },
-    { id: "g17", answers: ["aren't the buildings architecturally significant"] },
-    { id: "g18", answers: ["it looks as if we have a sort of plan"] },
+    { id: "g13", answers: ["living in a big city"] },
+    { id: "g14", answers: ["some positive developments"] },
+    { id: "g15", answers: ["are closing down"] },
+    { id: "g16", answers: ["doing any harm"] },
+    { id: "g17", answers: ["aren't the buildings architecturally significant", "are not the buildings architecturally significant"] },
+    { id: "g18", answers: ["a sort of plan"] },
   ],
   lines: [
     {
@@ -38,10 +38,10 @@ export const CAM20_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Me too, Rosie. I'll tell you what, let's think about the different aspects of human geography and ",
+          text: "Me too, Rosie. I'll tell you what, let's think about the different aspects of human geography and see if we can ",
         },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: " to help us decide." },
+        { type: "text", text: " a bit to help us decide." },
       ],
     },
     {
@@ -76,7 +76,7 @@ export const CAM20_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "COLIN",
       segments: [
-        { type: "text", text: "Yes, fascinating, wasn't it? " },
+        { type: "text", text: "Yes, fascinating, wasn't it? Or we could do " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: " like economies." },
       ],
@@ -96,7 +96,7 @@ export const CAM20_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROSIE",
       segments: [
-        { type: "text", text: "I'm not sure but " },
+        { type: "text", text: "I'm not sure but it might be " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -133,7 +133,7 @@ export const CAM20_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "COLIN",
       segments: [
-        { type: "text", text: "We could focus on poverty. " },
+        { type: "text", text: "We could focus on poverty. That's something that's " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
       ],
@@ -150,7 +150,7 @@ export const CAM20_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "COLIN",
       segments: [
-        { type: "text", text: "You mean " },
+        { type: "text", text: "You mean the information gets changed " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "?" },
       ],
@@ -171,6 +171,7 @@ export const CAM20_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROSIE",
       segments: [
+        { type: "text", text: "I love " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: " but of course there are problems." },
       ],
@@ -188,6 +189,7 @@ export const CAM20_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "COLIN",
       segments: [
+        { type: "text", text: "It would be nice to talk about " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: ", like some of the new developments on the outskirts of cities." },
       ],
@@ -199,7 +201,7 @@ export const CAM20_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "COLIN",
       segments: [
-        { type: "text", text: "Yeah, the same with mine, but it means " },
+        { type: "text", text: "Yeah, the same with mine, but it means a lot of the shops in the city centre " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
@@ -220,9 +222,9 @@ export const CAM20_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROSIE",
       segments: [
-        { type: "text", text: "We could include something about developing disused industrial sites. It seems like a good idea because " },
+        { type: "text", text: "We could include something about developing disused industrial sites. It seems like a good idea because you're not " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " to the natural environment." },
       ],
     },
     {
@@ -287,7 +289,7 @@ export const CAM20_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROSIE",
       segments: [
-        { type: "text", text: "Right. So " },
+        { type: "text", text: "Right. So it looks as if we have " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "." },
       ],

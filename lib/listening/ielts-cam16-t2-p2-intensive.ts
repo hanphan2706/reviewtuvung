@@ -5,30 +5,30 @@ import type {
 
 export const CAM16_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I'd like to bring you up to date", "I would like to bring you up to date"] },
+    { id: "g1", answers: ["bring you up to date"] },
     { id: "g2", answers: ["date from various times"] },
     { id: "g3", answers: ["over a century old"] },
     { id: "g4", answers: ["he died before it was completed"] },
     { id: "g5", answers: ["through lack of money"] },
-    { id: "g6", answers: ["which is separated from the main site by a road"] },
+    { id: "g6", answers: ["separated from the main site"] },
     { id: "g7", answers: ["Planning permission has been granted"] },
-    { id: "g8", answers: ["should start within the next few months"] },
+    { id: "g8", answers: ["within the next few months"] },
     { id: "g9", answers: ["A more imminent change concerns"] },
     { id: "g10", answers: ["it's often full to capacity", "it is often full to capacity"] },
     { id: "g11", answers: ["This is obviously unsatisfactory"] },
-    { id: "g12", answers: ["this will come into use next week"] },
+    { id: "g12", answers: ["come into use next week"] },
     { id: "g13", answers: ["There won't be any junk food", "There will not be any junk food"] },
-    { id: "g14", answers: ["You may be wondering what will happen"] },
-    { id: "g15", answers: ["Eventually we may use part of the canteen for storage"] },
-    { id: "g16", answers: ["which will all have side dishes, desserts and drinks on sale"] },
+    { id: "g14", answers: ["wondering what will happen"] },
+    { id: "g15", answers: ["part of the canteen for storage"] },
+    { id: "g16", answers: ["side dishes, desserts and drinks"] },
     { id: "g17", answers: ["There'll be plenty of variety", "There will be plenty of variety"] },
-    { id: "g18", answers: ["I'm delighted that dozens of pupils make use of the chance", "I am delighted that dozens of pupils make use of the chance"] },
+    { id: "g18", answers: ["make use of the chance"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Good morning and thank you for coming here today. " },
+        { type: "text", text: "Good morning and thank you for coming here today. I'd like to " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " with changes in the school that will affect your children." },
       ],
@@ -79,10 +79,10 @@ export const CAM16_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The school has grown as the local population has increased, and I can now give you some news about the lower school site, ",
+          text: "The school has grown as the local population has increased, and I can now give you some news about the lower school site, which is ",
         },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " by a road." },
       ],
     },
     {
@@ -110,7 +110,7 @@ export const CAM16_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Work on the new school buildings " },
+        { type: "text", text: "Work on the new school buildings should start " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -155,7 +155,7 @@ export const CAM16_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So we've had a new Food Hall built, and " },
+        { type: "text", text: "So we've had a new Food Hall built, and this will " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -182,6 +182,7 @@ export const CAM16_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "You may be " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " to the old canteen." },
       ],
@@ -198,6 +199,7 @@ export const CAM16_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Eventually we may use " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: ", but first we'll see how many pupils go in there at lunchtime." },
       ],
@@ -205,9 +207,9 @@ export const CAM16_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "OK, back to the serving points in the Food Hall, " },
+        { type: "text", text: "OK, back to the serving points in the Food Hall, which will all have " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: ", as well as main courses." },
+        { type: "text", text: " on sale, as well as main courses." },
       ],
     },
     {
@@ -277,7 +279,7 @@ export const CAM16_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Cycling is another favourite, and " },
+        { type: "text", text: "Cycling is another favourite, and I'm delighted that dozens of pupils " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: " to learn to ride in off-road conditions." },
       ],

@@ -6,23 +6,23 @@ import type {
 export const CAM16_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["How are you getting on with"] },
-    { id: "g2", answers: ["I'm not really all that interested in wildlife", "I am not really all that interested in wildlife"] },
+    { id: "g2", answers: ["all that interested in"] },
     { id: "g3", answers: ["I'm starting to get into it", "I am starting to get into it"] },
-    { id: "g4", answers: ["I've pretty well finished the introductory stage", "I have pretty well finished the introductory stage"] },
+    { id: "g4", answers: ["pretty well finished"] },
     { id: "g5", answers: ["I was really put off"] },
-    { id: "g6", answers: ["the more I read, the more interested I got"] },
+    { id: "g6", answers: ["the more interested I got"] },
     { id: "g7", answers: ["What a letdown"] },
     { id: "g8", answers: ["I wish we could've seen", "I wish we could have seen"] },
-    { id: "g9", answers: ["they want us to do our own thing, not copy"] },
+    { id: "g9", answers: ["do our own thing"] },
     { id: "g10", answers: ["I need to amend some parts"] },
-    { id: "g11", answers: ["I'll have to look at that too", "I will have to look at that too"] },
+    { id: "g11", answers: ["look at that too"] },
     { id: "g12", answers: ["I quite enjoyed that"] },
-    { id: "g13", answers: ["I didn't realise we had to do that", "I did not realise we had to do that"] },
-    { id: "g14", answers: ["I'm going to go back to my proposal", "I am going to go back to my proposal"] },
+    { id: "g13", answers: ["I didn't realise", "I did not realise"] },
+    { id: "g14", answers: ["go back to my proposal"] },
     { id: "g15", answers: ["I'll change that too then", "I will change that too then"] },
-    { id: "g16", answers: ["One part of the project I'm unsure about", "One part of the project I am unsure about"] },
-    { id: "g17", answers: ["But I can't just say it's a bit scary, can I", "But I cannot just say it is a bit scary, can I"] },
-    { id: "g18", answers: ["So we can use a personal link"] },
+    { id: "g16", answers: ["I'm unsure about", "I am unsure about"] },
+    { id: "g17", answers: ["a bit scary"] },
+    { id: "g18", answers: ["a personal link"] },
   ],
   lines: [
     {
@@ -35,13 +35,13 @@ export const CAM16_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TOM",
       segments: [
-        { type: "text", text: "OK. Like, they gave us the theme of birds to base our project on, and " },
+        { type: "text", text: "OK. Like, they gave us the theme of birds to base our project on, and I'm not really " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ". But " },
+        { type: "text", text: " wildlife. But " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: ". " },
+        { type: "text", text: ". I've " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "." },
+        { type: "text", text: " the introductory stage." },
       ],
     },
     {
@@ -52,7 +52,7 @@ export const CAM16_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "So have I. When they gave us all those handouts with details of books and websites to look at, ",
         },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: ", but " },
+        { type: "text", text: ", but the more I read, " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: "." },
       ],
@@ -96,9 +96,9 @@ export const CAM16_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TOM",
       segments: [
-        { type: "text", text: "Mm. I suppose " },
+        { type: "text", text: "Mm. I suppose they want us to " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: "." },
+        { type: "text", text: ", not copy." },
       ],
     },
     { speaker: "JESS", segments: [{ type: "text", text: "Have you drafted your proposal yet?" }] },
@@ -116,7 +116,7 @@ export const CAM16_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JESS",
       segments: [
-        { type: "text", text: "Oh, I didn't know we had to do that. " },
+        { type: "text", text: "Oh, I didn't know we had to do that. I'll have to " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: ". Did you do a timeline for the project?" },
       ],
@@ -138,7 +138,7 @@ export const CAM16_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g13" },
         {
           type: "text",
-          text: ". OK, I can add it now. And I've done the video diary presentation, and worked out what I want my outcome to be in the project.",
+          text: " we had to do that. OK, I can add it now. And I've done the video diary presentation, and worked out what I want my outcome to be in the project.",
         },
       ],
     },
@@ -147,7 +147,7 @@ export const CAM16_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Someone told me it's best not to be too precise about your actual outcome at this stage, so you have more scope to explore your ideas later on. So ",
+          text: "Someone told me it's best not to be too precise about your actual outcome at this stage, so you have more scope to explore your ideas later on. So I'm going to ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " to make it a bit more vague." },
@@ -164,13 +164,14 @@ export const CAM16_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TOM",
       segments: [
+        { type: "text", text: "One part of the project " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
-          text: " is where we choose some paintings of birds and say what they mean to us. Like, I chose a painting of a falcon by Landseer. I like it because the bird's standing there with his head turned to one side, but he seems to be staring straight at you. ",
+          text: " is where we choose some paintings of birds and say what they mean to us. Like, I chose a painting of a falcon by Landseer. I like it because the bird's standing there with his head turned to one side, but he seems to be staring straight at you. But I can't just say it's ",
         },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "?" },
+        { type: "text", text: ", can I?" },
       ],
     },
     {
@@ -218,7 +219,11 @@ export const CAM16_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "TOM",
-      segments: [{ type: "gap", gapId: "g18" }, { type: "text", text: "?" }],
+      segments: [
+        { type: "text", text: "So we can use " },
+        { type: "gap", gapId: "g18" },
+        { type: "text", text: "?" },
+      ],
     },
     { speaker: "JESS", segments: [{ type: "text", text: "Sure." }] },
     {

@@ -5,36 +5,36 @@ import type {
 
 export const CAM19_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["as an easy answer to the climate crisis"] },
+    { id: "g1", answers: ["an easy answer"] },
     { id: "g2", answers: ["tree planting isn't as straightforward", "tree planting is not as straightforward"] },
-    { id: "g3", answers: ["it can do considerably more damage than good"] },
-    { id: "g4", answers: ["it's crucial that the right trees are selected", "it is crucial that the right trees are selected"] },
-    { id: "g5", answers: ["A mix of species should always be planted"] },
+    { id: "g3", answers: ["more damage than good"] },
+    { id: "g4", answers: ["the right trees"] },
+    { id: "g5", answers: ["A mix of species"] },
     { id: "g6", answers: ["It's important to avoid non-native species", "It is important to avoid non-native species"] },
-    { id: "g7", answers: ["Restoring biodiversity that will maximise carbon capture", "Restoring biodiversity that will maximize carbon capture"] },
-    { id: "g8", answers: ["the sign of a highly successful tree-planting scheme"] },
-    { id: "g9", answers: ["Choosing the right location for reforestation projects"] },
+    { id: "g7", answers: ["Restoring biodiversity"] },
+    { id: "g8", answers: ["tree-planting scheme"] },
+    { id: "g9", answers: ["the right location"] },
     { id: "g10", answers: ["It's better to avoid non-forested landscapes", "It is better to avoid non-forested landscapes"] },
-    { id: "g11", answers: ["Large-scale reforestation projects require careful planning"] },
+    { id: "g11", answers: ["careful planning"] },
     { id: "g12", answers: ["Drone technology is a useful tool"] },
-    { id: "g13", answers: ["A good example of where the right trees were picked"] },
+    { id: "g13", answers: ["A good example"] },
     { id: "g14", answers: ["Figs are a keystone species"] },
     { id: "g15", answers: ["Unlike the majority of fruit trees"] },
     { id: "g16", answers: ["local communities are consulted and involved"] },
-    { id: "g17", answers: ["an example of a project which has succeeded"] },
+    { id: "g17", answers: ["which has succeeded"] },
     { id: "g18", answers: ["the local economy is more stable"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Tree planting now dominates political and popular agendas and is often presented " },
+        { type: "text", text: "Tree planting now dominates political and popular agendas and is often presented as " },
         { type: "gap", gapId: "g1" },
         {
           type: "text",
-          text: ", as well as a way for business corporations to offset their carbon emissions. But unfortunately, " },
+          text: " to the climate crisis, as well as a way for business corporations to offset their carbon emissions. But unfortunately, " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: " as some people think. When the wrong trees are planted in the wrong place, " },
+        { type: "text", text: " as some people think. When the wrong trees are planted in the wrong place, it can do considerably " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: ", failing to help either people or the environment." },
       ],
@@ -44,13 +44,13 @@ export const CAM19_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Reforestation projects are currently being undertaken on a huge scale in many countries and " },
+          text: "Reforestation projects are currently being undertaken on a huge scale in many countries and it's crucial that " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: ". " },
+        { type: "text", text: " are selected. " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ", typical of the local natural forest ecosystem and including rare and endangered species in order to create a rich ecosystem. " },
+          text: " should always be planted, typical of the local natural forest ecosystem and including rare and endangered species in order to create a rich ecosystem. " },
         { type: "gap", gapId: "g6" },
         {
           type: "text",
@@ -64,7 +64,7 @@ export const CAM19_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g7" },
         {
           type: "text",
-          text: " is key when reforesting an area, but ideally any reforestation project should have several goals. These could include selecting trees that can contribute to wildlife conservation, improve the availability of food for the local community and maintain the stability of soil systems. Meeting as many of these goals as possible, whilst doing no harm to local communities, native ecosystems and vulnerable species, is " },
+          text: " that will maximise carbon capture is key when reforesting an area, but ideally any reforestation project should have several goals. These could include selecting trees that can contribute to wildlife conservation, improve the availability of food for the local community and maintain the stability of soil systems. Meeting as many of these goals as possible, whilst doing no harm to local communities, native ecosystems and vulnerable species, is the sign of a highly successful " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
@@ -75,10 +75,11 @@ export const CAM19_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Choosing " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: " is as important as choosing the right trees. Ultimately, the best area for planting trees would be in formerly forested areas that are in poor condition. " },
+          text: " for reforestation projects is as important as choosing the right trees. Ultimately, the best area for planting trees would be in formerly forested areas that are in poor condition. " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
@@ -89,6 +90,7 @@ export const CAM19_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Large-scale reforestation projects require " },
         { type: "gap", gapId: "g11" },
         {
           type: "text",
@@ -106,7 +108,7 @@ export const CAM19_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g13" },
         {
           type: "text",
-          text: " is in Lampang Province in Northern Thailand. A previously forested site which had been degraded through mining was reforested by a cement company together with Chiang Mai University. After spreading 60 cm of topsoil, they planted 14 different native tree species which included several species of fig. " },
+          text: " of where the right trees were picked is in Lampang Province in Northern Thailand. A previously forested site which had been degraded through mining was reforested by a cement company together with Chiang Mai University. After spreading 60 cm of topsoil, they planted 14 different native tree species which included several species of fig. " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
@@ -129,7 +131,7 @@ export const CAM19_T4_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The restoration of mangrove forests in Madagascar is " },
+        { type: "text", text: "The restoration of mangrove forests in Madagascar is an example of a project " },
         { type: "gap", gapId: "g17" },
         {
           type: "text",

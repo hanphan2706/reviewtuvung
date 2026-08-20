@@ -7,21 +7,21 @@ export const CAM17_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I'll give you a brief introduction", "I will give you a brief introduction"] },
     { id: "g2", answers: ["while you're sitting down", "while you are sitting down"] },
-    { id: "g3", answers: ["it dates back to the fourteenth century"] },
-    { id: "g4", answers: ["it has had a large number of owners"] },
-    { id: "g5", answers: ["Almost all of them have left their mark"] },
-    { id: "g6", answers: ["The farm looks much as it's always done", "The farm looks much as it has always done"] },
-    { id: "g7", answers: ["His intention was to escape from the world of politics"] },
-    { id: "g8", answers: ["He broke off contact with his former political allies"] },
+    { id: "g3", answers: ["dates back to"] },
+    { id: "g4", answers: ["a large number of owners"] },
+    { id: "g5", answers: ["have left their mark"] },
+    { id: "g6", answers: ["much as it's always done", "much as it has always done"] },
+    { id: "g7", answers: ["escape from the world of politics"] },
+    { id: "g8", answers: ["broke off contact"] },
     { id: "g9", answers: ["as long as they had talent"] },
-    { id: "g10", answers: ["we've tried to show what their working lives were like", "we have tried to show what their working lives were like"] },
-    { id: "g11", answers: ["Photographs of course don't give much of an idea", "Photographs of course do not give much of an idea"] },
+    { id: "g10", answers: ["what their working lives were like"] },
+    { id: "g11", answers: ["don't give much of an idea", "do not give much of an idea"] },
     { id: "g12", answers: ["We've just introduced this feature", "We have just introduced this feature"] },
-    { id: "g13", answers: ["some of you will probably want to play"] },
-    { id: "g14", answers: ["you can really step back into an agricultural past"] },
+    { id: "g13", answers: ["will probably want to play"] },
+    { id: "g14", answers: ["step back into"] },
     { id: "g15", answers: ["Until recently"] },
-    { id: "g16", answers: ["The big stone building that dominates the farm"] },
-    { id: "g17", answers: ["They really seem to enjoy having it done"] },
+    { id: "g16", answers: ["The big stone building"] },
+    { id: "g17", answers: ["enjoy having it done"] },
     { id: "g18", answers: ["We're helping to preserve them", "We are helping to preserve them"] },
   ],
   lines: [
@@ -40,15 +40,15 @@ export const CAM17_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The estate consists of the house, gardens, parkland and farm, and " },
+        { type: "text", text: "The estate consists of the house, gardens, parkland and farm, and it " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "." },
+        { type: "text", text: " the fourteenth century." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The original house was replaced in the late seventeenth century, and of course " },
+        { type: "text", text: "The original house was replaced in the late seventeenth century, and of course it has had " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -56,6 +56,7 @@ export const CAM17_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Almost all of them " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
@@ -66,6 +67,7 @@ export const CAM17_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "The farm looks " },
         { type: "gap", gapId: "g6" },
         {
           type: "text",
@@ -78,7 +80,7 @@ export const CAM17_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "In the seventeenth century, the estate was owned by a very wealthy man called Sir Edward Downes. " },
+          text: "In the seventeenth century, the estate was owned by a very wealthy man called Sir Edward Downes. His intention was to " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -89,10 +91,11 @@ export const CAM17_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "He " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
-          text: ", and hosted meetings of creative and literary people, like painters and poets.",
+          text: " with his former political allies, and hosted meetings of creative and literary people, like painters and poets.",
         },
       ],
     },
@@ -111,7 +114,7 @@ export const CAM17_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Big houses like Oniton had dozens of servants until the 1920s or 30s, and " },
+          text: "Big houses like Oniton had dozens of servants until the 1920s or 30s, and we've tried to show " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
       ],
@@ -119,6 +122,7 @@ export const CAM17_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Photographs of course " },
         { type: "gap", gapId: "g11" },
         {
           type: "text",
@@ -145,7 +149,7 @@ export const CAM17_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well, we have several activities specially for children, like dressing up in the sorts of clothes that children wore in the past, and as it's a fine day, " },
+          text: "Well, we have several activities specially for children, like dressing up in the sorts of clothes that children wore in the past, and as it's a fine day, some of you " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: " in the adventure playground." },
       ],
@@ -164,9 +168,9 @@ export const CAM17_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "We'll also be going into the farm that's part of the estate, where there's plenty to do. Most of the buildings date from the eighteenth century, so " },
+          text: "We'll also be going into the farm that's part of the estate, where there's plenty to do. Most of the buildings date from the eighteenth century, so you can really " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: "." },
+        { type: "text", text: " an agricultural past." },
       ],
     },
     {
@@ -183,7 +187,7 @@ export const CAM17_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: null,
       segments: [
         { type: "gap", gapId: "g16" },
-        { type: "text", text: " is the large barn, and in here is our collection of agricultural tools." },
+        { type: "text", text: " that dominates the farm is the large barn, and in here is our collection of agricultural tools." },
       ],
     },
     {
@@ -200,7 +204,7 @@ export const CAM17_T2_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "There's a small barn, also made of stone, where you can groom the donkeys and horses, to keep their coats clean. " },
+          text: "There's a small barn, also made of stone, where you can groom the donkeys and horses, to keep their coats clean. They really seem to " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: ", and children love grooming them." },
       ],

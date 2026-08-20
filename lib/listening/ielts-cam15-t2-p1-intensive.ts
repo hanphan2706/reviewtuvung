@@ -7,57 +7,39 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "You're through to the tourist information office",
-        "You are through to the tourist information office",
-      ],
+      answers: ["You're through to", "You are through to"],
     },
-    { id: "g2", answers: ["Could you give me some information about next month's festival"] },
+    { id: "g2", answers: ["Could you give me some information"] },
     { id: "g3", answers: ["They're from Canada", "They are from Canada"] },
-    { id: "g4", answers: ["that will appeal to children as well as adults"] },
+    { id: "g4", answers: ["that will appeal to children"] },
     {
       id: "g5",
-      answers: [
-        "I hope there's going to be a play during the festival",
-        "I hope there is going to be a play during the festival",
-      ],
+      answers: ["I hope there's going to be", "I hope there is going to be"],
     },
     { id: "g6", answers: ["You're in luck", "You are in luck"] },
-    { id: "g7", answers: ["a local amateur group are performing one"] },
-    {
-      id: "g8",
-      answers: [
-        "it's aimed more at children than at adults",
-        "it is aimed more at children than at adults",
-      ],
-    },
+    { id: "g7", answers: ["a local amateur group"] },
+    { id: "g8", answers: ["aimed more at children"] },
     { id: "g9", answers: ["with electronic music by young composers"] },
-    { id: "g10", answers: ["how people communicate, or fail to communicate"] },
+    { id: "g10", answers: ["how people communicate"] },
     {
       id: "g11",
-      answers: [
-        "They'll all take place at least once every day",
-        "They will all take place at least once every day",
-      ],
+      answers: ["at least once every day"],
     },
     {
       id: "g12",
       answers: [
-        "you don't happen to have a cookery workshop",
-        "you do not happen to have a cookery workshop",
+        "you don't happen to have",
+        "you do not happen to have",
       ],
     },
-    { id: "g13", answers: ["even sweet things like cakes can contain much less sugar"] },
+    { id: "g13", answers: ["even sweet things like cakes"] },
     {
       id: "g14",
-      answers: [
-        "We're trying to encourage our children to cook",
-        "We are trying to encourage our children to cook",
-      ],
+      answers: ["encourage our children to cook"],
     },
-    { id: "g15", answers: ["to reflect the history of the town"] },
-    { id: "g16", answers: ["The results will be exhibited in the community centre"] },
-    { id: "g17", answers: ["It just means swimming in natural waters"] },
+    { id: "g15", answers: ["to reflect the history"] },
+    { id: "g16", answers: ["will be exhibited"] },
+    { id: "g17", answers: ["swimming in natural waters"] },
     {
       id: "g18",
       answers: ["There'll be lifeguards on duty", "There will be lifeguards on duty"],
@@ -69,7 +51,7 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Good morning. " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: ", Tim speaking. How can I help you?" },
+        { type: "text", text: " the tourist information office, Tim speaking. How can I help you?" },
       ],
     },
     {
@@ -77,7 +59,10 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Oh hello. " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ", please? My family and I will be staying in the town that week." },
+        {
+          type: "text",
+          text: " about next month's festival, please? My family and I will be staying in the town that week.",
+        },
       ],
     },
     {
@@ -104,9 +89,10 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g3" },
         {
           type: "text",
-          text: ". They're very popular over there. They're going to perform a number of well-known pieces " },
+          text: ". They're very popular over there. They're going to perform a number of well-known pieces ",
+        },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "." },
+        { type: "text", text: " as well as adults." },
       ],
     },
     {
@@ -137,7 +123,7 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Good. I expect we'll go to that. " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: ", a comedy, ideally." },
+        { type: "text", text: " a play during the festival, a comedy, ideally." },
       ],
     },
     {
@@ -148,7 +134,7 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g7" },
         {
           type: "text",
-          text: " written by a member of the group. It's called Jemima. That'll be on in the town hall. They've already performed it two or three times. I haven't seen it myself, but the review in the local paper was very good.",
+          text: " are performing one written by a member of the group. It's called Jemima. That'll be on in the town hall. They've already performed it two or three times. I haven't seen it myself, but the review in the local paper was very good.",
         },
       ],
     },
@@ -156,9 +142,9 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TIM",
       segments: [
-        { type: "text", text: "Yes, in fact " },
+        { type: "text", text: "Yes, in fact it's " },
         { type: "gap", gapId: "g8" },
-        { type: "text", text: ", so both performances are in the afternoon." },
+        { type: "text", text: " than at adults, so both performances are in the afternoon." },
       ],
     },
     {
@@ -170,7 +156,8 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes, also on the 20th, but in the evening. A professional company is putting on a show of modern pieces, " },
+          text: "Yes, also on the 20th, but in the evening. A professional company is putting on a show of modern pieces, ",
+        },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -181,7 +168,10 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "The show is about " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: ", with each other, so it's got the rather strange name, Chat." },
+        {
+          type: "text",
+          text: ", or fail to communicate, with each other, so it's got the rather strange name, Chat.",
+        },
       ],
     },
     {
@@ -197,7 +187,10 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TIM",
       segments: [
-        { type: "text", text: "Now there are also some workshops and other activities. " },
+        {
+          type: "text",
+          text: "Now there are also some workshops and other activities. They'll all take place ",
+        },
         { type: "gap", gapId: "g11" },
         { type: "text", text: ", so everyone who wants to take part will have a chance." },
       ],
@@ -207,7 +200,7 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Good. We're particularly interested in cookery – " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: ", do you?" },
+        { type: "text", text: " a cookery workshop, do you?" },
       ],
     },
     {
@@ -215,15 +208,16 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "We certainly do. It's going to focus on how to make food part of a healthy lifestyle, and it'll show that " },
+          text: "We certainly do. It's going to focus on how to make food part of a healthy lifestyle, and it'll show that ",
+        },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: " than they usually do." },
+        { type: "text", text: " can contain much less sugar than they usually do." },
       ],
     },
     {
       speaker: "JEAN",
       segments: [
-        { type: "text", text: "That might be worth going to. " },
+        { type: "text", text: "That might be worth going to. We're trying to " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
       ],
@@ -235,9 +229,13 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g15" },
         {
           type: "text",
-          text: ". The aim is to make children aware of how both the town and people's lives have changed over the centuries. " },
+          text: " of the town. The aim is to make children aware of how both the town and people's lives have changed over the centuries. The results ",
+        },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: ". Then the other workshop is in toy-making, and that's for adults only." },
+        {
+          type: "text",
+          text: " in the community centre. Then the other workshop is in toy-making, and that's for adults only.",
+        },
       ],
     },
     { speaker: "JEAN", segments: [{ type: "text", text: "Oh, why's that?" }] },
@@ -264,6 +262,7 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TIM",
       segments: [
+        { type: "text", text: "It just means " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: ", rather than a swimming pool." },
       ],
@@ -274,7 +273,8 @@ export const CAM15_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes, there's a beautiful one just outside the town, and that'll be the venue for the swimming. " },
+          text: "Yes, there's a beautiful one just outside the town, and that'll be the venue for the swimming. ",
+        },
         { type: "gap", gapId: "g18" },
         {
           type: "text",

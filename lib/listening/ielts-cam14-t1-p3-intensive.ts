@@ -5,44 +5,35 @@ import type {
 
 export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I'd like you to share your ideas", "I would like you to share your ideas"] },
-    { id: "g2", answers: ["I'm glad we chose quite a specific topic", "I am glad we chose quite a specific topic"] },
-    { id: "g3", answers: ["It made it much easier to find relevant information"] },
-    { id: "g4", answers: ["more than half the world's population lives in cities now"] },
-    { id: "g5", answers: ["I'd not realised that before", "I had not realised that before", "I'd not realized that before"] },
-    { id: "g6", answers: ["a lot of them are built at places where rivers come out into the sea"] },
-    { id: "g7", answers: ["as the city expands, agriculture and industry tend to spread further inland"] },
-    { id: "g8", answers: ["Did you read that article about Miami"] },
-    { id: "g9", answers: ["they spent quite a lot of money on them"] },
+    { id: "g1", answers: ["share your ideas"] },
+    {
+      id: "g2",
+      answers: ["quite a specific topic"],
+    },
+    { id: "g3", answers: ["find relevant information"] },
+    { id: "g4", answers: ["lives in cities now"] },
+    {
+      id: "g5",
+      answers: ["I'd not realised that before", "I had not realised that before", "I'd not realized that before"],
+    },
+    { id: "g6", answers: ["come out into the sea"] },
+    { id: "g7", answers: ["spread further inland"] },
+    { id: "g8", answers: ["that article about Miami"] },
+    { id: "g9", answers: ["quite a lot of money"] },
     { id: "g10", answers: ["The whole design was faulty"] },
-    {
-      id: "g11",
-      answers: [
-        "they're aiming to stop disposing of waste into the ocean over the next ten years",
-        "they are aiming to stop disposing of waste into the ocean over the next ten years",
-      ],
-    },
-    { id: "g12", answers: ["in the long term they need to consider the whole ecosystem"] },
-    {
-      id: "g13",
-      answers: [
-        "coastal cities can't deal with their problems on their own",
-        "coastal cities cannot deal with their problems on their own",
-      ],
-    },
+    { id: "g11", answers: ["disposing of waste"] },
+    { id: "g12", answers: ["the whole ecosystem"] },
+    { id: "g13", answers: ["on their own"] },
     {
       id: "g14",
-      answers: [
-        "it's going to be a long time before countries come to a decision",
-        "it is going to be a long time before countries come to a decision",
-      ],
+      answers: ["come to a decision"],
     },
     { id: "g15", answers: ["It's only fifteen minutes", "It is only fifteen minutes"] },
-    { id: "g16", answers: ["the other students will already know a bit about it"] },
-    { id: "g17", answers: ["We could have some maps of different cities"] },
+    { id: "g16", answers: ["already know a bit"] },
+    { id: "g17", answers: ["maps of different cities"] },
     {
       id: "g18",
-      answers: ["That'd be interesting, if we have time", "That would be interesting, if we have time"],
+      answers: ["if we have time"],
     },
   ],
   lines: [
@@ -51,7 +42,7 @@ export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "OK, so what I'd like you to do now is to talk to your partner about your presentations on urban planning. You should have done most of the reading now, so ",
+          text: "OK, so what I'd like you to do now is to talk to your partner about your presentations on urban planning. You should have done most of the reading now, so I'd like you to ",
         },
         { type: "gap", gapId: "g1" },
         {
@@ -63,9 +54,9 @@ export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "CARLA",
       segments: [
-        { type: "text", text: "OK Rob. " },
+        { type: "text", text: "OK Rob. I'm glad we chose " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: " – cities built next to the sea. " },
+        { type: "text", text: " – cities built next to the sea. It made it much easier to " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -73,7 +64,7 @@ export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROB",
       segments: [
-        { type: "text", text: "Yeah. And cities are growing so quickly – I mean, we know that " },
+        { type: "text", text: "Yeah. And cities are growing so quickly – I mean, we know that more than half the world's population " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -92,7 +83,7 @@ export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROB",
       segments: [
-        { type: "text", text: "Nor me. And what's more, " },
+        { type: "text", text: "Nor me. And what's more, a lot of them are built at places where rivers " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: ". But apparently this can be a problem." },
       ],
@@ -101,7 +92,7 @@ export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROB",
       segments: [
-        { type: "text", text: "Well, " },
+        { type: "text", text: "Well, as the city expands, agriculture and industry tend to " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -113,7 +104,7 @@ export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROB",
       segments: [
-        { type: "text", text: "Right. Hmm. " },
+        { type: "text", text: "Right. Hmm. Did you read " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: ", on the east coast of the USA?" },
       ],
@@ -132,11 +123,11 @@ export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROB",
       segments: [
-        { type: "text", text: "Yeah, " },
+        { type: "text", text: "Yeah, they spent " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: ". But what they didn't take into account was global warming. So they built the drainage channels too close to sea level, and now sea levels are rising, they're more or less useless. If there's a lot of rain, the water can't run away, there's nowhere for it to go. ",
+          text: " on them. But what they didn't take into account was global warming. So they built the drainage channels too close to sea level, and now sea levels are rising, they're more or less useless. If there's a lot of rain, the water can't run away, there's nowhere for it to go. ",
         },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "." },
@@ -146,9 +137,9 @@ export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROB",
       segments: [
-        { type: "text", text: "I don't know. I did read that " },
+        { type: "text", text: "I don't know. I did read that they're aiming to stop " },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: "." },
+        { type: "text", text: " into the ocean over the next ten years." },
       ],
     },
     {
@@ -160,7 +151,7 @@ export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "No. Really they just need to find the money for something to replace the drainage channels, in order to protect against flooding now. But ",
+          text: "No. Really they just need to find the money for something to replace the drainage channels, in order to protect against flooding now. But in the long term they need to consider ",
         },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
@@ -169,7 +160,7 @@ export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "CARLA",
       segments: [
-        { type: "text", text: "Right. Really, though, " },
+        { type: "text", text: "Right. Really, though, coastal cities can't deal with their problems " },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
@@ -182,7 +173,7 @@ export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Absolutely. The thing is, everyone knows what the problems are and environmentalists have a pretty good idea of what we should be doing about them, so they should be able to work together to some extent. But ",
+          text: "Absolutely. The thing is, everyone knows what the problems are and environmentalists have a pretty good idea of what we should be doing about them, so they should be able to work together to some extent. But it's going to be a long time before countries ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: " on what principles they're prepared to abide by." },
@@ -202,10 +193,10 @@ export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "OK. So I suppose we'll begin with some general historical background about why coastal cities were established. But we don't want to spend too long on that, ",
+          text: "OK. So I suppose we'll begin with some general historical background about why coastal cities were established. But we don't want to spend too long on that, the other students will ",
         },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: ". It's all to do with communications and so on." },
+        { type: "text", text: " about it. It's all to do with communications and so on." },
       ],
     },
     {
@@ -213,7 +204,7 @@ export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Yes. We should mention some geographical factors, things like wetlands and river estuaries and coastal erosion and so on. ",
+          text: "Yes. We should mention some geographical factors, things like wetlands and river estuaries and coastal erosion and so on. We could have some ",
         },
         { type: "gap", gapId: "g17" },
         { type: "text", text: " with these features marked." },
@@ -283,6 +274,7 @@ export const CAM14_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ROB",
       segments: [
+        { type: "text", text: "That'd be interesting, " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: ". So now shall we …" },
       ],

@@ -6,23 +6,23 @@ import type {
 export const CAM19_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I'm here to help", "I am here to help"] },
-    { id: "g2", answers: ["which aim to help people build up to"] },
+    { id: "g2", answers: ["build up to"] },
     { id: "g3", answers: ["they're easy to follow", "they are easy to follow"] },
     { id: "g4", answers: ["they don't work for everyone", "they do not work for everyone"] },
-    { id: "g5", answers: ["I have a couple of simple tips"] },
+    { id: "g5", answers: ["a couple of simple tips"] },
     { id: "g6", answers: ["that can prevent progress"] },
-    { id: "g7", answers: ["time yourself and try to run a bit faster"] },
+    { id: "g7", answers: ["run a bit faster"] },
     { id: "g8", answers: ["it takes your mind off things"] },
-    { id: "g9", answers: ["I don't think the time of day is especially important", "I do not think the time of day is especially important"] },
+    { id: "g9", answers: ["the time of day"] },
     { id: "g10", answers: ["you need to be consistent"] },
     { id: "g11", answers: ["New members often say to me"] },
-    { id: "g12", answers: ["she was made to feel so welcome"] },
+    { id: "g12", answers: ["made to feel so welcome"] },
     { id: "g13", answers: ["he hasn't looked back", "he has not looked back"] },
     { id: "g14", answers: ["He never misses a training session"] },
-    { id: "g15", answers: ["Now he says he feels much more relaxed"] },
-    { id: "g16", answers: ["He's never considered himself to be a sporty person", "He has never considered himself to be a sporty person"] },
-    { id: "g17", answers: ["I never dreamed I'd be doing one with him", "I never dreamed I would be doing one with him"] },
-    { id: "g18", answers: ["it's good to have something to work towards", "it is good to have something to work towards"] },
+    { id: "g15", answers: ["feels much more relaxed"] },
+    { id: "g16", answers: ["a sporty person"] },
+    { id: "g17", answers: ["I never dreamed"] },
+    { id: "g18", answers: ["something to work towards"] },
   ],
   lines: [
     {
@@ -38,7 +38,7 @@ export const CAM19_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "There are many training programmes available online " },
+        { type: "text", text: "There are many training programmes available online which aim to help people " },
         { type: "gap", gapId: "g2" },
         {
           type: "text",
@@ -55,6 +55,7 @@ export const CAM19_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "I have " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
@@ -62,7 +63,7 @@ export const CAM19_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g6" },
         {
           type: "text",
-          text: ". You should run at a speed that feels comfortable, but " },
+          text: ". You should run at a speed that feels comfortable, but time yourself and try to " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -70,11 +71,11 @@ export const CAM19_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g8" },
         {
           type: "text",
-          text: " and helps your body get into a rhythm. I'd say that is better than running with a friend – especially as most people are competitive and that's not what you want when you're just starting. " },
+          text: " and helps your body get into a rhythm. I'd say that is better than running with a friend – especially as most people are competitive and that's not what you want when you're just starting. I don't think " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: " – some people are better in the evening, while others are morning people – but " },
+          text: " is especially important – some people are better in the evening, while others are morning people – but " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: ", so aim to train regularly – twice a week is enough to begin with." },
       ],
@@ -85,7 +86,7 @@ export const CAM19_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g11" },
         {
           type: "text",
-          text: " that they've been put off running either because they lack confidence, or they don't have time, or they think they dislike running. Ceri, for example, joined the club two years ago at the age of 40. She'd always enjoyed running at school but wasn't sure if she'd be able to do it. She was worried about being left behind and being the slowest runner. But she says " },
+          text: " that they've been put off running either because they lack confidence, or they don't have time, or they think they dislike running. Ceri, for example, joined the club two years ago at the age of 40. She'd always enjoyed running at school but wasn't sure if she'd be able to do it. She was worried about being left behind and being the slowest runner. But she says she was " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: " she soon forgot all about that." },
       ],
@@ -107,7 +108,7 @@ export const CAM19_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Leo was worried about having to commit himself to training sessions every week and wasn't sure he'd be able to fit training into his busy schedule. But after experiencing a lot of stress at work he came along to us and gave it a go. " },
+          text: "Leo was worried about having to commit himself to training sessions every week and wasn't sure he'd be able to fit training into his busy schedule. But after experiencing a lot of stress at work he came along to us and gave it a go. Now he says he " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: " and he looks forward to his weekly run." },
       ],
@@ -115,7 +116,7 @@ export const CAM19_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Mark is quite typical of our new members. " },
+        { type: "text", text: "Mark is quite typical of our new members. He's never considered himself to be " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
@@ -132,7 +133,7 @@ export const CAM19_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g17" },
         {
           type: "text",
-          text: ". I managed to complete it in four hours, but I felt like giving up halfway through – it was only the support of the spectators that kept me going.",
+          text: " I'd be doing one with him. I managed to complete it in four hours, but I felt like giving up halfway through – it was only the support of the spectators that kept me going.",
         },
       ],
     },
@@ -141,7 +142,7 @@ export const CAM19_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I do think signing up for a race of whatever length is motivating – whether it's 5K or 25K – because " },
+          text: "I do think signing up for a race of whatever length is motivating – whether it's 5K or 25K – because it's good to have " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",

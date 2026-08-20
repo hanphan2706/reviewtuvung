@@ -7,21 +7,21 @@ export const CAM19_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["Welcome to the team"] },
     { id: "g2", answers: ["People often get my name wrong"] },
-    { id: "g3", answers: ["in case you ever need to write it"] },
-    { id: "g4", answers: ["a few practical things you need to sort out"] },
+    { id: "g3", answers: ["in case you ever need"] },
+    { id: "g4", answers: ["need to sort out"] },
     { id: "g5", answers: ["where shoppers aren't allowed", "where shoppers are not allowed"] },
     { id: "g6", answers: ["Take whichever one is free"] },
     { id: "g7", answers: ["Try not to lose it"] },
     { id: "g8", answers: ["She's really helpful", "She is really helpful"] },
-    { id: "g9", answers: ["I've got to go and sort something else out", "I have got to go and sort something else out"] },
+    { id: "g9", answers: ["I've got to go", "I have got to go"] },
     { id: "g10", answers: ["I'm looking forward to getting started", "I am looking forward to getting started"] },
     { id: "g11", answers: ["in case you can't find me", "in case you cannot find me"] },
     { id: "g12", answers: ["that shouldn't happen", "that should not happen"] },
-    { id: "g13", answers: ["For today, you'll just be helping the staff", "For today, you will just be helping the staff"] },
-    { id: "g14", answers: ["we run out of those really quickly"] },
+    { id: "g13", answers: ["you'll just be helping", "you will just be helping"] },
+    { id: "g14", answers: ["run out of those"] },
     { id: "g15", answers: ["That's important, isn't it", "That is important, isn't it"] },
-    { id: "g16", answers: ["before you're allowed to touch sharp objects", "before you are allowed to touch sharp objects"] },
-    { id: "g17", answers: ["I don't want to get anything wrong", "I do not want to get anything wrong"] },
+    { id: "g16", answers: ["before you're allowed to", "before you are allowed to"] },
+    { id: "g17", answers: ["get anything wrong"] },
     { id: "g18", answers: ["You won't be serving customers directly", "You will not be serving customers directly"] },
   ],
   lines: [
@@ -43,14 +43,14 @@ export const CAM19_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g2" },
         { type: "text", text: "; they never know how to spell it. It's K-A-E-D-E-N, " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "." },
+        { type: "text", text: " to write it." },
       ],
     },
     { speaker: "CHARLOTTE", segments: [{ type: "text", text: "I'll try and remember." }] },
     {
       speaker: "KAEDEN",
       segments: [
-        { type: "text", text: "So, there are " },
+        { type: "text", text: "So, there are a few practical things you " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: " this morning. Then I'll show you what you're going to do today." },
       ],
@@ -112,7 +112,7 @@ export const CAM19_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           type: "text",
           text: "OK. Tiffany will give you a uniform. They have lots in different sizes, so you just tell her what you need. I won't come with you to HR – " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: ". Problem with a bread slicer." },
+        { type: "text", text: " and sort something else out. Problem with a bread slicer." },
       ],
     },
     { speaker: "CHARLOTTE", segments: [{ type: "text", text: "Is the HR office near the staffroom?" }] },
@@ -185,7 +185,11 @@ export const CAM19_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { speaker: "CHARLOTTE", segments: [{ type: "text", text: "Will I be preparing boxes of food?" }] },
     {
       speaker: "KAEDEN",
-      segments: [{ type: "gap", gapId: "g13" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "For today, " },
+        { type: "gap", gapId: "g13" },
+        { type: "text", text: " the staff." },
+      ],
     },
     { speaker: "CHARLOTTE", segments: [{ type: "text", text: "Yes, of course." }] },
     {
@@ -193,9 +197,9 @@ export const CAM19_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "You'll see lots of flat cardboard boxes at one end of the counter. Beneath those is where we keep the plastic boxes – " },
+          text: "You'll see lots of flat cardboard boxes at one end of the counter. Beneath those is where we keep the plastic boxes – we " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: ", so you should bring more from the storeroom." },
+        { type: "text", text: " really quickly, so you should bring more from the storeroom." },
       ],
     },
     { speaker: "CHARLOTTE", segments: [{ type: "text", text: "Is that my only task on the sushi counter?" }] },
@@ -217,7 +221,7 @@ export const CAM19_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Absolutely. But you mustn't wash up knives. You have to do some training " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " touch sharp objects." },
       ],
     },
     { speaker: "CHARLOTTE", segments: [{ type: "text", text: "What should I do if there are any?" }] },
@@ -228,7 +232,7 @@ export const CAM19_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "CHARLOTTE",
       segments: [
-        { type: "text", text: "OK, thanks. " },
+        { type: "text", text: "OK, thanks. I don't want to " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
       ],

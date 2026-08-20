@@ -9,106 +9,56 @@ export const CAM12_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       id: "g2",
       answers: [
-        "I'd like to find out something about you",
-        "I would like to find out something about you",
+        "I'd like to find out",
+        "I would like to find out",
       ],
     },
-    { id: "g3", answers: ["Why did you decide to take this course"] },
-    {
-      id: "g4",
-      answers: [
-        "she used to talk about her home a lot, and that made me want to visit Denmark",
-      ],
-    },
-    {
-      id: "g5",
-      answers: [
-        "I can get by when I talk to people, though I'm not terribly accurate",
-        "I can get by when I talk to people, though I am not terribly accurate",
-      ],
-    },
+    { id: "g3", answers: ["decide to take"] },
+    { id: "g4", answers: ["used to talk about"] },
+    { id: "g5", answers: ["I can get by"] },
     {
       id: "g6",
       answers: [
-        "I'd love to spend the time in Iceland",
-        "I would love to spend the time in Iceland",
+        "I'd love to",
+        "I would love to",
       ],
     },
-    { id: "g7", answers: ["A lot of students go on to take a master's degree"] },
-    {
-      id: "g8",
-      answers: [
-        "I think the four years of the undergraduate course will be enough for me",
-      ],
-    },
+    { id: "g7", answers: ["go on to take"] },
+    { id: "g8", answers: ["will be enough for me"] },
     {
       id: "g9",
       answers: [
-        "I'd find that more creative than translating, which I suppose most graduates do",
-        "I would find that more creative than translating, which I suppose most graduates do",
+        "I suppose",
+        "i suppose",
       ],
     },
     {
       id: "g10",
       answers: [
-        "I'm really enjoying the one on Swedish cinema",
-        "I am really enjoying the one on Swedish cinema",
+        "I'm really enjoying",
+        "I am really enjoying",
       ],
     },
     {
       id: "g11",
       answers: [
-        "if you're interested in watching Danish television programmes",
-        "if you are interested in watching Danish television programmes",
-        "if you're interested in watching Danish television programs",
+        "if you're interested in",
+        "if you are interested in",
       ],
     },
-    {
-      id: "g12",
-      answers: [
-        "it can be difficult to get hold of the books you'll need",
-        "it can be difficult to get hold of the books you will need",
-      ],
-    },
-    {
-      id: "g13",
-      answers: [
-        "I've read or seen several plays in translation, so that would be a good idea",
-        "I have read or seen several plays in translation, so that would be a good idea",
-      ],
-    },
-    {
-      id: "g14",
-      answers: ["So what would you advise me to aim at in the paper"],
-    },
-    {
-      id: "g15",
-      answers: [
-        "First I suggest you avoid taking one writer and going into a great deal of detail",
-      ],
-    },
-    {
-      id: "g16",
-      answers: [
-        "I also think that's more fruitful than placing it within the history of the genre",
-        "I also think that is more fruitful than placing it within the history of the genre",
-      ],
-    },
+    { id: "g12", answers: ["get hold of"] },
+    { id: "g13", answers: ["that would be a good idea"] },
+    { id: "g14", answers: ["advise me to"] },
+    { id: "g15", answers: ["I suggest you avoid"] },
+    { id: "g16", answers: ["more fruitful than"] },
     {
       id: "g17",
       answers: [
-        "I have to do that this week, and I'm a bit stuck",
-        "I have to do that this week, and I am a bit stuck",
+        "I'm a bit stuck",
+        "I am a bit stuck",
       ],
     },
-    {
-      id: "g18",
-      answers: [
-        "I'd ignore it - it's more fantasy than reality",
-        "I would ignore it - it is more fantasy than reality",
-        "I'd ignore it - it is more fantasy than reality",
-      ],
-    },
+    { id: "g18", answers: ["more fantasy than reality"] },
   ],
   lines: [
     {
@@ -125,19 +75,19 @@ export const CAM12_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Now as this is your first tutorial since you started on the Scandinavian Studies course, " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: ". " },
+        { type: "text", text: " something about you. Why did you " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "?" },
+        { type: "text", text: " this course?" },
       ],
     },
     {
       speaker: "JAMES",
       segments: [
-        { type: "text", text: "Well, my mother is Danish, and although we always lived in England, " },
+        { type: "text", text: "Well, my mother is Danish, and although we always lived in England, she " },
         { type: "gap", gapId: "g4" },
         {
           type: "text",
-          text: ". We hardly ever did, though - my mother usually went on her own. But whenever her relations or friends were in England they always came to see us.",
+          text: " her home a lot, and that made me want to visit Denmark. We hardly ever did, though - my mother usually went on her own. But whenever her relations or friends were in England they always came to see us.",
         },
       ],
     },
@@ -152,7 +102,7 @@ export const CAM12_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "JAMES",
-      segments: [{ type: "gap", gapId: "g5" }, { type: "text", text: "." }],
+      segments: [{ type: "gap", gapId: "g5" }, { type: "text", text: " when I talk to people, though I'm not terribly accurate." }],
     },
     {
       speaker: "BETH",
@@ -168,27 +118,28 @@ export const CAM12_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "I'm really looking forward to it. And although Denmark seems the obvious place to go, because of my family connections, " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " spend the time in Iceland." },
       ],
     },
     {
       speaker: "BETH",
       segments: [
-        { type: "text", text: "Oh, I'm sure it can be arranged. Do you have any plans for when you graduate? " },
+        { type: "text", text: "Oh, I'm sure it can be arranged. Do you have any plans for when you graduate? A lot of students " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: " a master's degree." },
       ],
     },
     {
       speaker: "JAMES",
       segments: [
+        { type: "text", text: "I think the four years of the undergraduate course " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
-          text: ". I'm interested in journalism, and I quite like the idea of moving to Scandinavia and writing for magazines. ",
+          text: ". I'm interested in journalism, and I quite like the idea of moving to Scandinavia and writing for magazines. I'd find that more creative than translating, which ",
         },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: "." },
+        { type: "text", text: " most graduates do." },
       ],
     },
     {
@@ -200,7 +151,7 @@ export const CAM12_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Well, " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " the one on Swedish cinema." },
       ],
     },
     {
@@ -211,7 +162,7 @@ export const CAM12_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "That'll continue next term, but the one on Scandinavian literature that's running at the moment will be replaced by more specialised courses. Oh, and by the way, ",
         },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: " - there's going to be a course on that the term after next." },
+        { type: "text", text: " watching Danish television programmes - there's going to be a course on that the term after next." },
       ],
     },
     { speaker: "JAMES", segments: [{ type: "text", text: "That sounds good." }] },
@@ -231,9 +182,9 @@ export const CAM12_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "BETH",
       segments: [
-        { type: "text", text: "Hmm. The trouble with that is that a lot of people choose that topic, and " },
+        { type: "text", text: "Hmm. The trouble with that is that a lot of people choose that topic, and it can be difficult to " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: ". Why not leave that for another time?" },
+        { type: "text", text: " the books you'll need. Why not leave that for another time?" },
       ],
     },
     { speaker: "JAMES", segments: [{ type: "text", text: "Right." }] },
@@ -243,30 +194,32 @@ export const CAM12_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "JAMES",
-      segments: [{ type: "gap", gapId: "g13" }, { type: "text", text: "." }],
+      segments: [{ type: "text", text: "I've read or seen several plays in translation, so " },
+        { type: "gap", gapId: "g13" }, { type: "text", text: "." }],
     },
     { speaker: "BETH", segments: [{ type: "text", text: "Fine. I'll put you down for that topic." }] },
     {
       speaker: "JAMES",
-      segments: [{ type: "text", text: "Right. " }, { type: "gap", gapId: "g14" }, { type: "text", text: "?" }],
+      segments: [{ type: "text", text: "Right. So what would you " }, { type: "gap", gapId: "g14" }, { type: "text", text: " aim at in the paper?" }],
     },
     {
       speaker: "BETH",
       segments: [
+        { type: "text", text: "First " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
-          text: ". That approach certainly has its place, but I think you first need to get an understanding of the literature in the context of the society in which it was produced - who it was written for, how it was published, and so on. ",
+          text: " taking one writer and going into a great deal of detail. That approach certainly has its place, but I think you first need to get an understanding of the literature in the context of the society in which it was produced - who it was written for, how it was published, and so on. I also think that's ",
         },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " placing it within the history of the genre." },
       ],
     },
     { speaker: "JAMES", segments: [{ type: "text", text: "OK, that sounds reasonable." }] },
     {
       speaker: "JAMES",
       segments: [
-        { type: "text", text: "Could I ask for some advice about writing the paper I'm working on about the Vikings? " },
+        { type: "text", text: "Could I ask for some advice about writing the paper I'm working on about the Vikings? I have to do that this week, and " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
       ],
@@ -302,7 +255,7 @@ export const CAM12_T2_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "BETH",
       segments: [
-        { type: "text", text: "If it's the one I am thinking of, hmm, " },
+        { type: "text", text: "If it's the one I am thinking of, hmm, I'd ignore it - it's " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",

@@ -8,36 +8,39 @@ export const CAM15_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       id: "g1",
       answers: [
-        "I'm going to report on a case study of a programme",
-        "I am going to report on a case study of a programme",
+        "I'm going to report on",
+        "I am going to report on",
       ],
     },
-    { id: "g2", answers: ["a largely agricultural country in South-East Africa"] },
-    { id: "g3", answers: ["This is a dry and arid region, with unpredictable rainfall"] },
+    { id: "g2", answers: ["largely agricultural country"] },
+    { id: "g3", answers: ["with unpredictable rainfall"] },
     { id: "g4", answers: ["mainly by selling charcoal"] },
-    { id: "g5", answers: ["as they were rapidly using up this resource"] },
-    { id: "g6", answers: ["The programme worked closely with the district government"] },
-    { id: "g7", answers: ["it was decided to set up two more of these"] },
-    { id: "g8", answers: ["These associations planned and carried out activities"] },
-    { id: "g9", answers: ["in order to keep the crops safe from animals, both wild and domestic"] },
-    { id: "g10", answers: ["The community was responsible for creating these fences"] },
-    { id: "g11", answers: ["Once the area had been fenced off, it could be cultivated"] },
+    { id: "g5", answers: ["rapidly using up"] },
+    { id: "g6", answers: ["worked closely with"] },
+    { id: "g7", answers: ["set up two more"] },
+    { id: "g8", answers: ["planned and carried out"] },
+    { id: "g9", answers: ["keep the crops safe"] },
+    { id: "g10", answers: ["creating these fences"] },
+    { id: "g11", answers: ["it could be cultivated"] },
     { id: "g12", answers: ["The programme also provided pumps"] },
-    { id: "g13", answers: ["Once the programme had been set up, its development was monitored carefully"] },
-    { id: "g14", answers: ["not just for their own needs, but also to sell"] },
-    { id: "g15", answers: ["this resulted in large amounts of produce, especially vegetables, being spoiled"] },
-    { id: "g16", answers: ["There was also an additional initiative that had not been originally planned"] },
-    { id: "g17", answers: ["First of all, it tells us that in dry, arid regions"] },
-    { id: "g18", answers: ["there was a marked improvement in agricultural production"] },
+    { id: "g13", answers: ["monitored carefully"] },
+    { id: "g14", answers: ["but also to sell"] },
+    { id: "g15", answers: ["being spoiled"] },
+    { id: "g16", answers: ["had not been originally planned"] },
+    { id: "g17", answers: ["in dry, arid regions"] },
+    { id: "g18", answers: ["a marked improvement"] },
   ],
   lines: [
     {
       speaker: null,
       segments: [
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " which has been set up to help rural populations in Mozambique, " },
+        {
+          type: "text",
+          text: " a case study of a programme which has been set up to help rural populations in Mozambique, a ",
+        },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "." },
+        { type: "text", text: " in South-East Africa." },
       ],
     },
     {
@@ -51,14 +54,19 @@ export const CAM15_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g3" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "This is a dry and arid region, " },
+        { type: "gap", gapId: "g3" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
       segments: [
         {
           type: "text",
-          text: "Because of this, people in the area were unable to support themselves through agriculture and instead they used the forest as a means of providing themselves with an income, " },
+          text: "Because of this, people in the area were unable to support themselves through agriculture and instead they used the forest as a means of providing themselves with an income, ",
+        },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -66,9 +74,12 @@ export const CAM15_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "However, this was not a sustainable way of living in the long term, " },
+        {
+          type: "text",
+          text: "However, this was not a sustainable way of living in the long term, as they were ",
+        },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "." },
+        { type: "text", text: " this resource." },
       ],
     },
     {
@@ -83,46 +94,56 @@ export const CAM15_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "The programme " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: " in order to find the best way of implementing this." },
+        { type: "text", text: " the district government in order to find the best way of implementing this." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The region already had one farmers' association, and " },
+        { type: "text", text: "The region already had one farmers' association, and it was decided to " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: " of these." },
       ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "These associations " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
-          text: " including water management, livestock breeding and agriculture, and it was notable that in general, women formed the majority of the workforce.",
+          text: " activities including water management, livestock breeding and agriculture, and it was notable that in general, women formed the majority of the workforce.",
         },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "It was decided that " },
+        { type: "text", text: "It was decided that in order to " },
         { type: "gap", gapId: "g9" },
-        { type: "text", text: ", special areas should be fenced off where the crops could be grown." },
+        {
+          type: "text",
+          text: " from animals, both wild and domestic, special areas should be fenced off where the crops could be grown.",
+        },
       ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "The community was responsible for " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: ", but the programme provided the necessary wire for making them." },
       ],
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g11" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "Once the area had been fenced off, " },
+        { type: "gap", gapId: "g11" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -151,12 +172,19 @@ export const CAM15_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g13" }, { type: "text", text: "." }],
+      segments: [
+        {
+          type: "text",
+          text: "Once the programme had been set up, its development was ",
+        },
+        { type: "gap", gapId: "g13" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The farmers were able to grow enough produce " },
+        { type: "text", text: "The farmers were able to grow enough produce not just for their own needs, " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
       ],
@@ -166,7 +194,8 @@ export const CAM15_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "However, getting the produce to places where it could be marketed was sometimes a problem, as the farmers did not have access to transport, and " },
+          text: "However, getting the produce to places where it could be marketed was sometimes a problem, as the farmers did not have access to transport, and this resulted in large amounts of produce, especially vegetables, ",
+        },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
       ],
@@ -182,7 +211,14 @@ export const CAM15_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g16" }, { type: "text", text: "." }],
+      segments: [
+        {
+          type: "text",
+          text: "There was also an additional initiative that ",
+        },
+        { type: "gap", gapId: "g16" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -218,6 +254,7 @@ export const CAM15_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "First of all, it tells us that " },
         { type: "gap", gapId: "g17" },
         {
           type: "text",
@@ -228,11 +265,11 @@ export const CAM15_T2_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "In Chicualacuala, " },
+        { type: "text", text: "In Chicualacuala, there was " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",
-          text: ", which improved food security and benefited local people by providing them with both food and income.",
+          text: " in agricultural production, which improved food security and benefited local people by providing them with both food and income.",
         },
       ],
     },

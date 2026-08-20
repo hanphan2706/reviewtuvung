@@ -5,54 +5,45 @@ import type {
 
 export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["We're very happy to welcome you to your new apprenticeship", "We are very happy to welcome you to your new apprenticeship"] },
-    { id: "g2", answers: ["I hope that the next six months will be a positive and enjoyable experience for you"] },
-    { id: "g3", answers: ["I'd like to start with some general advice", "I would like to start with some general advice"] },
-    { id: "g4", answers: ["the first week or so may be quite challenging"] },
+    {
+      id: "g1",
+      answers: ["your new apprenticeship"],
+    },
+    { id: "g2", answers: ["a positive and enjoyable experience"] },
+    {
+      id: "g3",
+      answers: ["some general advice"],
+    },
+    { id: "g4", answers: ["may be quite challenging"] },
     {
       id: "g5",
       answers: [
-        "don't worry too much about trying to remember everything",
-        "do not worry too much about trying to remember everything",
+        "don't worry too much",
+        "do not worry too much",
       ],
     },
     {
       id: "g6",
-      answers: [
-        "you'll find your supervisor is very approachable",
-        "you will find your supervisor is very approachable",
-      ],
+      answers: ["very approachable"],
     },
     {
       id: "g7",
-      answers: [
-        "You're here to learn so make the most of that opportunity",
-        "You are here to learn so make the most of that opportunity",
-      ],
+      answers: ["make the most of"],
     },
-    { id: "g8", answers: ["you'll each be assigned a mentor", "you will each be assigned a mentor"] },
-    { id: "g9", answers: ["you'll meet with them on a weekly basis", "you will meet with them on a weekly basis"] },
-    { id: "g10", answers: ["Their role is to provide help and support throughout your apprenticeship"] },
+    { id: "g8", answers: ["assigned a mentor"] },
+    { id: "g9", answers: ["on a weekly basis"] },
+    { id: "g10", answers: ["provide help and support"] },
+    { id: "g11", answers: ["do any of your work"] },
+    { id: "g12", answers: ["a few company policies"] },
     {
-      id: "g11",
-      answers: [
-        "this doesn't mean they'll actually do any of your work for you",
-        "this does not mean they will actually do any of your work for you",
-      ],
+      id: "g13",
+      answers: ["unlimited access for that"],
     },
-    { id: "g12", answers: ["Now I just want to run through a few company policies"] },
-    { id: "g13", answers: ["you'll have unlimited access for that", "you will have unlimited access for that"] },
-    { id: "g14", answers: ["some of you will be eligible for this"] },
-    {
-      id: "g15",
-      answers: [
-        "please don't assume you'll automatically be permitted to do this",
-        "please do not assume you will automatically be permitted to do this",
-      ],
-    },
-    { id: "g16", answers: ["Time off should only be taken if you are unwell"] },
-    { id: "g17", answers: ["we understand that people do have commitments outside work"] },
-    { id: "g18", answers: ["This is partly to encourage healthy eating at work"] },
+    { id: "g14", answers: ["eligible for this"] },
+    { id: "g15", answers: ["automatically be permitted"] },
+    { id: "g16", answers: ["if you are unwell"] },
+    { id: "g17", answers: ["commitments outside work"] },
+    { id: "g18", answers: ["encourage healthy eating"] },
   ],
   lines: [
     { speaker: null, segments: [{ type: "text", text: "Good morning everyone." }] },
@@ -68,6 +59,7 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "We're very happy to welcome you to " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
       ],
@@ -75,13 +67,15 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "I hope that the next six months will be " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "." },
+        { type: "text", text: " for you." },
       ],
     },
     {
       speaker: null,
       segments: [
+        { type: "text", text: "I'd like to start with " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: " about being an apprentice." },
       ],
@@ -91,7 +85,7 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Most of you have very little or no experience of working for a big organisation and ",
+          text: "Most of you have very little or no experience of working for a big organisation and the first week or so ",
         },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
@@ -102,7 +96,7 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "There will be a lot of new information to take in but " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "." },
+        { type: "text", text: " about trying to remember everything." },
       ],
     },
     {
@@ -110,7 +104,7 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The important thing is to check with someone if you're not sure what to do – ",
+          text: "The important thing is to check with someone if you're not sure what to do – you'll find your supervisor is ",
         },
         { type: "gap", gapId: "g6" },
         { type: "text", text: " and won't mind explaining things or helping you out." },
@@ -119,8 +113,9 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "You're here to learn so " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: "." },
+        { type: "text", text: " that opportunity." },
       ],
     },
     {
@@ -135,7 +130,7 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "As well as having a supervisor, " },
+        { type: "text", text: "As well as having a supervisor, you'll each be " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -145,7 +140,7 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "This person will be someone who's recently completed an apprenticeship and ",
+          text: "This person will be someone who's recently completed an apprenticeship and you'll meet with them ",
         },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
@@ -154,18 +149,19 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Their role is to " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " throughout your apprenticeship." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Of course, " },
+        { type: "text", text: "Of course, this doesn't mean they'll actually " },
         { type: "gap", gapId: "g11" },
         {
           type: "text",
-          text: " – instead they'll be asking you about what goals you've achieved so far, as well as helping you to identify any areas for improvement.",
+          text: " for you – instead they'll be asking you about what goals you've achieved so far, as well as helping you to identify any areas for improvement.",
         },
       ],
     },
@@ -181,6 +177,7 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Now I just want to run through " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: " for our apprenticeship scheme with you." },
       ],
@@ -194,7 +191,7 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "As part of your job you'll be doing some research online so obviously ",
+          text: "As part of your job you'll be doing some research online so obviously you'll have ",
         },
         { type: "gap", gapId: "g13" },
         {
@@ -210,7 +207,7 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "After your probationary three-month period – " },
+        { type: "text", text: "After your probationary three-month period – some of you will be " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
@@ -221,9 +218,9 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "So " },
+        { type: "text", text: "So please don't assume you'll " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: "." },
+        { type: "text", text: " to do this." },
       ],
     },
     {
@@ -247,6 +244,7 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Time off should only be taken " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "." },
       ],
@@ -278,7 +276,7 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Obviously, " },
+        { type: "text", text: "Obviously, we understand that people do have " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: ", so don't worry if there are times when you are unavailable." },
       ],
@@ -317,10 +315,11 @@ export const CAM14_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "This is partly to " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",
-          text: " and partly to stop people from eating at their workstation, which is unhygienic.",
+          text: " at work and partly to stop people from eating at their workstation, which is unhygienic.",
         },
       ],
     },

@@ -7,22 +7,22 @@ export const CAM19_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I'm one of the rangers", "I am one of the rangers"] },
     { id: "g2", answers: ["I've been asked to arrange", "I have been asked to arrange"] },
-    { id: "g3", answers: ["perhaps you could tell me something about"] },
+    { id: "g3", answers: ["tell me something about"] },
     { id: "g4", answers: ["Altogether the park covers"] },
-    { id: "g5", answers: ["There are three main types of habitat"] },
-    { id: "g6", answers: ["The woods are well established and varied"] },
+    { id: "g5", answers: ["three main types of habitat"] },
+    { id: "g6", answers: ["well established and varied"] },
     { id: "g7", answers: ["Once this work was completed"] },
     { id: "g8", answers: ["I suppose with these different habitats"] },
     { id: "g9", answers: ["There certainly is"] },
-    { id: "g10", answers: ["We can organise a wide range of activities", "We can organize a wide range of activities"] },
+    { id: "g10", answers: ["a wide range of activities"] },
     { id: "g11", answers: ["adapt them to suit all ages"] },
     { id: "g12", answers: ["Can you give me some examples"] },
     { id: "g13", answers: ["Do you do anything connected with"] },
-    { id: "g14", answers: ["how the use of the land has changed over time"] },
+    { id: "g14", answers: ["has changed over time"] },
     { id: "g15", answers: ["Learning outside the classroom"] },
     { id: "g16", answers: ["We invoice you afterwards"] },
-    { id: "g17", answers: ["I'll need to discuss it with my colleagues", "I will need to discuss it with my colleagues"] },
-    { id: "g18", answers: ["We'll look forward to hearing from you", "We will look forward to hearing from you"] },
+    { id: "g17", answers: ["discuss it with my colleagues"] },
+    { id: "g18", answers: ["look forward to hearing from you"] },
   ],
   lines: [
     {
@@ -48,7 +48,7 @@ export const CAM19_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JOHN",
       segments: [
-        { type: "text", text: "Well, I'm new to this area, so " },
+        { type: "text", text: "Well, I'm new to this area, so perhaps you could " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: " the park first, please." },
       ],
@@ -58,11 +58,11 @@ export const CAM19_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Of course. " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: " 170 acres, that's 69 hectares. " },
+        { type: "text", text: " 170 acres, that's 69 hectares. There are " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ": wetland, grassland and woodland. ",
+          text: ": wetland, grassland and woodland. The woods are ",
         },
         { type: "gap", gapId: "g6" },
         { type: "text", text: ", with an oak plantation, and other areas of mixed species." },
@@ -108,7 +108,7 @@ export const CAM19_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SALLY",
       segments: [
-        { type: "text", text: "That's right. " },
+        { type: "text", text: "That's right. We can organise " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: " and " },
         { type: "gap", gapId: "g11" },
@@ -151,7 +151,7 @@ export const CAM19_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SALLY",
       segments: [
-        { type: "text", text: "Yes, we do. For instance, the children can explore " },
+        { type: "text", text: "Yes, we do. For instance, the children can explore how the use of the land " },
         { type: "gap", gapId: "g14" },
         { type: "text", text: ". Then there's leisure and tourism." },
       ],
@@ -226,7 +226,7 @@ export const CAM19_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JOHN",
       segments: [
-        { type: "text", text: "That sounds very fair. Well, thanks for all the information. " },
+        { type: "text", text: "That sounds very fair. Well, thanks for all the information. I'll need to " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: ", and I hope to get back to you soon to make a booking." },
       ],
@@ -234,6 +234,7 @@ export const CAM19_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SALLY",
       segments: [
+        { type: "text", text: "We'll " },
         { type: "gap", gapId: "g18" },
         { type: "text", text: ". Goodbye." },
       ],

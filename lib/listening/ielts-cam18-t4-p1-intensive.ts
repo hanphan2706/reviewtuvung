@@ -7,17 +7,17 @@ export const CAM18_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["This is Greg Preston"] },
     { id: "g2", answers: ["which might interest you"] },
-    { id: "g3", answers: ["I believe you've done that sort of work before", "I believe you have done that sort of work before"] },
-    { id: "g4", answers: ["so not too far away for you"] },
+    { id: "g3", answers: ["you've done that sort of work", "you have done that sort of work"] },
+    { id: "g4", answers: ["not too far away for you"] },
     { id: "g5", answers: ["So where exactly is that"] },
     { id: "g6", answers: ["It's quite near the station"] },
     { id: "g7", answers: ["So what would the work involve"] },
     { id: "g8", answers: ["that shouldn't be a problem", "that should not be a problem"] },
     { id: "g9", answers: ["I immediately thought of you"] },
-    { id: "g10", answers: ["Is there anything else they're looking for", "Is there anything else they are looking for"] },
+    { id: "g10", answers: ["anything else they're looking for", "anything else they are looking for"] },
     { id: "g11", answers: ["they're always very busy", "they are always very busy"] },
-    { id: "g12", answers: ["I reckon I can cope with that"] },
-    { id: "g13", answers: ["So you'd be interested in following this up", "So you would be interested in following this up"] },
+    { id: "g12", answers: ["I can cope with that"] },
+    { id: "g13", answers: ["interested in following this up"] },
     { id: "g14", answers: ["I should tell you that"] },
     { id: "g15", answers: ["could you manage that"] },
     { id: "g16", answers: ["That should work out all right"] },
@@ -54,9 +54,9 @@ export const CAM18_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "GREG",
       segments: [
-        { type: "text", text: "So this is a position for a receptionist – " },
+        { type: "text", text: "So this is a position for a receptionist – I believe " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: "?" },
+        { type: "text", text: " before?" },
       ],
     },
     {
@@ -71,7 +71,7 @@ export const CAM18_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "GREG",
       segments: [
-        { type: "text", text: "Right. Well, this job's in Fordham, " },
+        { type: "text", text: "Right. Well, this job's in Fordham, so " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: ", and it's at the medical centre there." },
       ],
@@ -141,7 +141,7 @@ export const CAM18_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JULIE",
       segments: [
-        { type: "text", text: "Yes, in fact I enjoyed that job. " },
+        { type: "text", text: "Yes, in fact I enjoyed that job. Is there " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "?" },
       ],
@@ -160,7 +160,7 @@ export const CAM18_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JULIE",
       segments: [
-        { type: "text", text: "Well, after dealing with three children all under five, " },
+        { type: "text", text: "Well, after dealing with three children all under five, I reckon " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -178,7 +178,11 @@ export const CAM18_T4_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { speaker: "JULIE", segments: [{ type: "text", text: "Not a problem." }] },
     {
       speaker: "GREG",
-      segments: [{ type: "gap", gapId: "g13" }, { type: "text", text: "?" }],
+      segments: [
+        { type: "text", text: "So you'd be " },
+        { type: "gap", gapId: "g13" },
+        { type: "text", text: "?" },
+      ],
     },
     { speaker: "JULIE", segments: [{ type: "text", text: "Sure. When would it start?" }] },
     {

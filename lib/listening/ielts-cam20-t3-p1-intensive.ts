@@ -6,17 +6,17 @@ import type {
 export const CAM20_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["I'm due to move in", "I am due to move in"] },
-    { id: "g2", answers: ["I'll most probably need to rent", "I will most probably need to rent"] },
-    { id: "g3", answers: ["I could give you some information"] },
-    { id: "g4", answers: ["I've recommended them to other people", "I have recommended them to other people"] },
+    { id: "g2", answers: ["most probably need to rent"] },
+    { id: "g3", answers: ["give you some information"] },
+    { id: "g4", answers: ["recommended them to other people"] },
     { id: "g5", answers: ["have always heard positive reports"] },
-    { id: "g6", answers: ["Could you give me an idea"] },
-    { id: "g7", answers: ["It's just to get a general idea", "It is just to get a general idea"] },
+    { id: "g6", answers: ["give me an idea"] },
+    { id: "g7", answers: ["a general idea"] },
     { id: "g8", answers: ["once you place an order"] },
     { id: "g9", answers: ["That would be really helpful"] },
-    { id: "g10", answers: ["there's a special offer at the moment", "there is a special offer at the moment"] },
-    { id: "g11", answers: ["more than I was hoping to pay"] },
-    { id: "g12", answers: ["I'd have to do the math carefully", "I would have to do the math carefully"] },
+    { id: "g10", answers: ["a special offer"] },
+    { id: "g11", answers: ["hoping to pay"] },
+    { id: "g12", answers: ["do the math"] },
     { id: "g13", answers: ["I probably won't need that", "I probably will not need that"] },
     { id: "g14", answers: ["I'm not bringing much with me", "I am not bringing much with me"] },
     { id: "g15", answers: ["That wouldn't be too hard", "That would not be too hard"] },
@@ -44,7 +44,7 @@ export const CAM20_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "When I viewed the house, I told you " },
+        { type: "text", text: "When I viewed the house, I told you I'll " },
         { type: "gap", gapId: "g2" },
         {
           type: "text",
@@ -55,7 +55,7 @@ export const CAM20_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Yes, of course. I remember. And I said " },
+        { type: "text", text: "Yes, of course. I remember. And I said I could " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: " about furniture rental companies in the city." },
       ],
@@ -64,7 +64,7 @@ export const CAM20_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Well, the biggest company is called Peak Rentals. " },
+        { type: "text", text: "Well, the biggest company is called Peak Rentals. I've " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: " and " },
         { type: "gap", gapId: "g5" },
@@ -74,6 +74,7 @@ export const CAM20_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
+        { type: "text", text: "Could you " },
         { type: "gap", gapId: "g6" },
         { type: "text", text: " of their costs?" },
       ],
@@ -90,7 +91,7 @@ export const CAM20_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Sure. " },
+        { type: "text", text: "Sure. It's just to get " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -119,18 +120,18 @@ export const CAM20_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "MAN",
       segments: [
-        { type: "text", text: "Oh, and the brochure says that " },
+        { type: "text", text: "Oh, and the brochure says that there's " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
-          text: ". If you rent living room furniture, I believe that's a set of chairs and a TV table, you'll also get a lamp at no extra cost.",
+          text: " at the moment. If you rent living room furniture, I believe that's a set of chairs and a TV table, you'll also get a lamp at no extra cost.",
         },
       ],
     },
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Okay, but you know, that price range you gave is " },
+        { type: "text", text: "Okay, but you know, that price range you gave is more than I was " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -154,9 +155,9 @@ export const CAM20_T3_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "Oh, I see. " },
+        { type: "text", text: "Oh, I see. I'd have to " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: " then." },
+        { type: "text", text: " carefully then." },
       ],
     },
     {

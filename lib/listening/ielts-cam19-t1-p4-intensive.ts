@@ -13,16 +13,16 @@ export const CAM19_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g6", answers: ["It wasn't until 40 years later", "It was not until 40 years later"] },
     { id: "g7", answers: ["began to explore further"] },
     { id: "g8", answers: ["Carbon dating later proved"] },
-    { id: "g9", answers: ["Thanks to the bog which covers the area"] },
+    { id: "g9", answers: ["Thanks to the bog"] },
     { id: "g10", answers: ["are extremely well-preserved", "are extremely well preserved"] },
-    { id: "g11", answers: ["several centuries of relative peace and stability"] },
+    { id: "g11", answers: ["relative peace and stability"] },
     { id: "g12", answers: ["This is one of many innovations"] },
-    { id: "g13", answers: ["Another new technology that Neolithic settlers brought"] },
+    { id: "g13", answers: ["Another new technology"] },
     { id: "g14", answers: ["It's thought that", "It is thought that"] },
     { id: "g15", answers: ["in order to prevent over-grazing", "in order to prevent overgrazing"] },
-    { id: "g16", answers: ["this way of life at Céide ceased abruptly"] },
+    { id: "g16", answers: ["ceased abruptly"] },
     { id: "g17", answers: ["several factors may have contributed"] },
-    { id: "g18", answers: ["So now I'd like to show you some", "So now I would like to show you some"] },
+    { id: "g18", answers: ["I'd like to show you", "I would like to show you"] },
   ],
   lines: [
     {
@@ -88,7 +88,7 @@ export const CAM19_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: ", the remains of the settlement at Céide Fields, which is over 5,000 years old, ",
+          text: " which covers the area, the remains of the settlement at Céide Fields, which is over 5,000 years old, ",
         },
         { type: "gap", gapId: "g10" },
         {
@@ -102,7 +102,7 @@ export const CAM19_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "The Neolithic farmers at Céide would have enjoyed ",
+          text: "The Neolithic farmers at Céide would have enjoyed several centuries of ",
         },
         { type: "gap", gapId: "g11" },
         {
@@ -117,7 +117,7 @@ export const CAM19_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g13" },
         {
           type: "text",
-          text: " to Ireland was pottery. Fragments of Neolithic pots have been found in Céide and elsewhere in Ireland. The pots were used for many things; as well as for storing food, pots were filled with a small amount of fat and when this was set alight, they served as lamps.",
+          text: " that Neolithic settlers brought to Ireland was pottery. Fragments of Neolithic pots have been found in Céide and elsewhere in Ireland. The pots were used for many things; as well as for storing food, pots were filled with a small amount of fat and when this was set alight, they served as lamps.",
         },
       ],
     },
@@ -141,7 +141,7 @@ export const CAM19_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "However, archaeologists believe that ",
+          text: "However, archaeologists believe that this way of life at Céide ",
         },
         { type: "gap", gapId: "g16" },
         { type: "text", text: ". Why was this? Well, " },
@@ -155,8 +155,9 @@ export const CAM19_T1_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "So now " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: "…" },
+        { type: "text", text: " some…" },
       ],
     },
   ],

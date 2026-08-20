@@ -7,47 +7,42 @@ export const CAM13_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     {
       id: "g1",
-      answers: [
-        "I've still got loads to do for our report",
-        "I have still got loads to do for our report",
-      ],
+      answers: ["loads to do"],
     },
-    { id: "g2", answers: ["What did you learn from doing the project about your own shopping habits"] },
+    { id: "g2", answers: ["your own shopping habits"] },
     { id: "g3", answers: ["because of my allergy"] },
-    { id: "g4", answers: ["This project has actually taught me to read the labels much more carefully"] },
-    { id: "g5", answers: ["I tended to believe claims on packaging like 'low in fat'"] },
+    { id: "g4", answers: ["much more carefully"] },
+    { id: "g5", answers: ["claims on packaging"] },
     { id: "g6", answers: ["Ready meals are the worst"] },
-    { id: "g7", answers: ["comparing the labels on supermarket pizzas was a real eye-opener"] },
+    { id: "g7", answers: ["a real eye-opener"] },
     { id: "g8", answers: ["Not exactly transparent is it"] },
-    { id: "g9", answers: ["I think the kind of labelling system used makes a big difference"] },
+    { id: "g9", answers: ["makes a big difference"] },
     { id: "g10", answers: ["Which one did you prefer"] },
     {
       id: "g11",
-      answers: [
-        "I'm not sure it's the easiest for people to use",
-        "I am not sure it is the easiest for people to use",
-      ],
+      answers: ["easiest for people to use"],
     },
-    { id: "g12", answers: ["There just needs to be more consistency between labelling systems"] },
-    { id: "g13", answers: ["I think it will change people's behaviour"] },
-    { id: "g14", answers: ["I think more research has to be done"] },
+    { id: "g12", answers: ["more consistency"] },
+    { id: "g13", answers: ["change people's behaviour"] },
+    { id: "g14", answers: ["more research has to be done"] },
     { id: "g15", answers: ["Why do you suppose that is"] },
     { id: "g16", answers: ["Pressure from the food manufacturers"] },
-    { id: "g17", answers: ["They should have focused on people with low literacy levels"] },
-    { id: "g18", answers: ["I wonder why they chose that method"] },
+    { id: "g17", answers: ["low literacy levels"] },
+    { id: "g18", answers: ["chose that method"] },
   ],
   lines: [
     {
       speaker: "JACK",
       segments: [
+        { type: "text", text: "I've still got " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " on nutritional food labels." },
+        { type: "text", text: " for our report on nutritional food labels." },
       ],
     },
     {
       speaker: "ALICE",
       segments: [
-        { type: "text", text: "Me too. " },
+        { type: "text", text: "Me too. What did you learn from doing the project about " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "?" },
       ],
@@ -66,12 +61,13 @@ export const CAM13_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ALICE",
       segments: [
+        { type: "text", text: "This project has actually taught me to read the labels " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: ". " },
+        { type: "text", text: ". I tended to believe " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ". But I now realise that the 'healthy' yoghurt I've bought for years is full of sugar and that it's actually quite high in calories.",
+          text: " like 'low in fat'. But I now realise that the 'healthy' yoghurt I've bought for years is full of sugar and that it's actually quite high in calories.",
         },
       ],
     },
@@ -79,7 +75,7 @@ export const CAM13_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       speaker: "JACK",
       segments: [
         { type: "gap", gapId: "g6" },
-        { type: "text", text: " … " },
+        { type: "text", text: " … comparing the labels on supermarket pizzas was " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: ". Did you have any idea how many calories they contain? I was amazed." },
       ],
@@ -108,7 +104,10 @@ export const CAM13_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JACK",
       segments: [
-        { type: "text", text: "Probably not, no! I thought comparing the different labelling systems used by food manufacturers was interesting. " },
+        {
+          type: "text",
+          text: "Probably not, no! I thought comparing the different labelling systems used by food manufacturers was interesting. I think the kind of labelling system used ",
+        },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "." },
       ],
@@ -122,7 +121,7 @@ export const CAM13_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I liked the traditional daily value system best - the one which tells you what proportion of your required daily intake of each ingredient the product contains. ",
+          text: "I liked the traditional daily value system best - the one which tells you what proportion of your required daily intake of each ingredient the product contains. I'm not sure it's the ",
         },
         { type: "gap", gapId: "g11" },
         {
@@ -143,8 +142,9 @@ export const CAM13_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JACK",
       segments: [
+        { type: "text", text: "There just needs to be " },
         { type: "gap", gapId: "g12" },
-        { type: "text", text: " used by different supermarkets, in terms of portion sizes, etc." },
+        { type: "text", text: " between labelling systems used by different supermarkets, in terms of portion sizes, etc." },
       ],
     },
     {
@@ -180,7 +180,7 @@ export const CAM13_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "I think having nutritional food labeling has been a good idea, don't you? ",
+          text: "I think having nutritional food labeling has been a good idea, don't you? I think it will ",
         },
         { type: "gap", gapId: "g13" },
         { type: "text", text: " and stop mothers, in particular, buying the wrong things." },
@@ -200,7 +200,7 @@ export const CAM13_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "They only said that might be the case. Those findings weren't that conclusive and it was quite a small-scale study. ",
+          text: "They only said that might be the case. Those findings weren't that conclusive and it was quite a small-scale study. I think ",
         },
         { type: "gap", gapId: "g14" },
         { type: "text", text: "." },
@@ -275,7 +275,7 @@ export const CAM13_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "ALICE",
       segments: [
-        { type: "text", text: "Mmm. But I don't think they targeted the right people. " },
+        { type: "text", text: "Mmm. But I don't think they targeted the right people. They should have focused on people with " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: " because these labels are designed to be accessible to them." },
       ],
@@ -294,7 +294,7 @@ export const CAM13_T4_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "No. But if they hadn't interviewed participants face-to-face, they could have used a much bigger sample size. ",
+          text: "No. But if they hadn't interviewed participants face-to-face, they could have used a much bigger sample size. I wonder why they ",
         },
         { type: "gap", gapId: "g18" },
         { type: "text", text: "?" },

@@ -8,14 +8,17 @@ export const CAM12_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       id: "g1",
       answers: [
-        "I'd like to find out if you have any excursions suitable for families",
-        "I would like to find out if you have any excursions suitable for families",
+        "I'd like to find out",
+        "I would like to find out",
       ],
     },
-    { id: "g2", answers: ["How about taking your family for a cruise"] },
+    { id: "g2", answers: ["How about taking"] },
     {
       id: "g3",
-      answers: ["it's over 100 years old", "it is over 100 years old"],
+      answers: [
+        "it's over 100 years old",
+        "it is over 100 years old",
+      ],
     },
     { id: "g4", answers: ["How long is the trip"] },
     { id: "g5", answers: ["About an hour and a half"] },
@@ -23,48 +26,59 @@ export const CAM12_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       id: "g7",
       answers: [
-        "You're met off the boat by the farmer",
-        "You are met off the boat by the farmer",
+        "You're met off the boat",
+        "You are met off the boat",
       ],
     },
     {
       id: "g8",
-      answers: ["It's suitable for complete beginners", "It is suitable for complete beginners"],
+      answers: [
+        "It's suitable for complete beginners",
+        "It is suitable for complete beginners",
+      ],
     },
-    { id: "g9", answers: ["as long as they take care to close gates and so on"] },
-    { id: "g10", answers: ["You could easily spend an hour or two there"] },
+    { id: "g9", answers: ["as long as"] },
+    { id: "g10", answers: ["You could easily spend"] },
     { id: "g11", answers: ["You pay when you get there"] },
-    {
-      id: "g12",
-      answers: ["take a bike over on the ship and then go on a cycling trip"],
-    },
+    { id: "g12", answers: ["take a bike over"] },
     { id: "g13", answers: ["Quite challenging in places"] },
     { id: "g14", answers: ["That might work out quite well"] },
     {
       id: "g15",
       answers: [
-        "It's just by the cruise ship terminal",
-        "It is just by the cruise ship terminal",
+        "It's just by the",
+        "It is just by the",
       ],
     },
     {
       id: "g16",
-      answers: ["That shouldn't be a problem", "That should not be a problem"],
+      answers: [
+        "That shouldn't be a problem",
+        "That should not be a problem",
+      ],
     },
-    { id: "g17", answers: ["you need to get back in time for the last boat"] },
+    { id: "g17", answers: ["get back in time"] },
     {
       id: "g18",
       answers: [
-        "how old did you say your daughter was",
-        "How old did you say your daughter was",
+        "how old did you say",
+        "How old did you say",
       ],
     },
   ],
   lines: [
-    { speaker: "TC EMPLOYEE", segments: [{ type: "text", text: "Hi. Can I help you?" }] },
+    {
+      speaker: "TC EMPLOYEE",
+      segments: [
+        { type: "text", text: "Hi. Can I help you?" },
+      ],
+    },
     {
       speaker: "VISITOR",
-      segments: [{ type: "gap", gapId: "g1" }, { type: "text", text: "." }],
+      segments: [
+        { type: "gap", gapId: "g1" },
+        { type: "text", text: " if you have any excursions suitable for families." },
+      ],
     },
     {
       speaker: "TC EMPLOYEE",
@@ -73,7 +87,7 @@ export const CAM12_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g2" },
         {
           type: "text",
-          text: "? We have a steamship that takes passengers out several times a day - ",
+          text: " your family for a cruise? We have a steamship that takes passengers out several times a day - ",
         },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
@@ -99,43 +113,45 @@ export const CAM12_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "VISITOR",
-      segments: [{ type: "text", text: "OK. And I assume there's a café or something on board?" }],
-    },
-    { speaker: "TC EMPLOYEE", segments: [{ type: "text", text: "Sure. How old are your children?" }] },
-    {
-      speaker: "VISITOR",
-      segments: [{ type: "text", text: "Er, my daughter's fifteen and my son's seven." }],
+      segments: [
+        { type: "text", text: "OK. And I assume there's a café or something on board?" },
+      ],
     },
     {
       speaker: "TC EMPLOYEE",
       segments: [
-        {
-          type: "text",
-          text: "Right. Well there are various things you can do once you've crossed the lake, ",
-        },
+        { type: "text", text: "Sure. How old are your children?" },
+      ],
+    },
+    {
+      speaker: "VISITOR",
+      segments: [
+        { type: "text", text: "Er, my daughter's fifteen and my son's seven." },
+      ],
+    },
+    {
+      speaker: "TC EMPLOYEE",
+      segments: [
+        { type: "text", text: "Right. Well there are various things you can do once you've crossed the lake, " },
         { type: "gap", gapId: "g6" },
-        {
-          type: "text",
-          text: ". One thing that's very popular is a visit to the Country Farm. ",
-        },
+        { type: "text", text: ". One thing that's very popular is a visit to the Country Farm. " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
-          text: " and he'll take you to the holding pens, where the sheep are kept. Children love feeding them!",
+          text: " by the farmer and he'll take you to the holding pens, where the sheep are kept. Children love feeding them!",
         },
       ],
     },
     {
       speaker: "VISITOR",
-      segments: [{ type: "text", text: "My son would love that. He really likes animals." }],
+      segments: [
+        { type: "text", text: "My son would love that. He really likes animals." },
+      ],
     },
     {
       speaker: "TC EMPLOYEE",
       segments: [
-        {
-          type: "text",
-          text: "Well, there's also a 40-minute trek round the farm on a horse, if he wants.",
-        },
+        { type: "text", text: "Well, there's also a 40-minute trek round the farm on a horse, if he wants." },
       ],
     },
     {
@@ -152,21 +168,23 @@ export const CAM12_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "text", text: "." },
       ],
     },
-    { speaker: "VISITOR", segments: [{ type: "text", text: "Ah, good." }] },
+    {
+      speaker: "VISITOR",
+      segments: [
+        { type: "text", text: "Ah, good." },
+      ],
+    },
     {
       speaker: "TC EMPLOYEE",
       segments: [
-        {
-          type: "text",
-          text: "And again, visitors are welcome to explore the farm on their own, ",
-        },
+        { type: "text", text: "And again, visitors are welcome to explore the farm on their own, " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: ". There are some very beautiful gardens along the side of the lake which also belong to the farm - they'll be just at their best now. ",
+          text: " they take care to close gates and so on. There are some very beautiful gardens along the side of the lake which also belong to the farm - they'll be just at their best now. ",
         },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: "." },
+        { type: "text", text: " an hour or two there." },
       ],
     },
     {
@@ -178,15 +196,17 @@ export const CAM12_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TC EMPLOYEE",
       segments: [
-        {
-          type: "text",
-          text: "You can, and it's very good, though it's not included in the basic cost. ",
-        },
+        { type: "text", text: "You can, and it's very good, though it's not included in the basic cost. " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
     },
-    { speaker: "VISITOR", segments: [{ type: "text", text: "Right." }] },
+    {
+      speaker: "VISITOR",
+      segments: [
+        { type: "text", text: "Right." },
+      ],
+    },
     {
       speaker: "VISITOR",
       segments: [
@@ -200,13 +220,15 @@ export const CAM12_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g12" },
         {
           type: "text",
-          text: ". There's a trail there called the Back Road - you could easily spend three or four hours exploring it, and the scenery's wonderful. They'll give you a map when you get your ticket for the cruise - there's no extra charge.",
+          text: " on the ship and then go on a cycling trip. There's a trail there called the Back Road - you could easily spend three or four hours exploring it, and the scenery's wonderful. They'll give you a map when you get your ticket for the cruise - there's no extra charge.",
         },
       ],
     },
     {
       speaker: "VISITOR",
-      segments: [{ type: "text", text: "What's the trail like in terms of difficulty?" }],
+      segments: [
+        { type: "text", text: "What's the trail like in terms of difficulty?" },
+      ],
     },
     {
       speaker: "TC EMPLOYEE",
@@ -226,10 +248,7 @@ export const CAM12_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "Hmm. Well, my daughter loves cycling and so do I, so maybe the two of us could go, and my wife and son could stay on the farm. ",
         },
         { type: "gap", gapId: "g14" },
-        {
-          type: "text",
-          text: ". But we don't have bikes here… is there somewhere we could rent them?",
-        },
+        { type: "text", text: ". But we don't have bikes here… is there somewhere we could rent them?" },
       ],
     },
     {
@@ -240,17 +259,24 @@ export const CAM12_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "VISITOR",
-      segments: [{ type: "text", text: "I'll just make a note of that - er, how do you spell it?" }],
+      segments: [
+        { type: "text", text: "I'll just make a note of that - er, how do you spell it?" },
+      ],
     },
     {
       speaker: "TC EMPLOYEE",
       segments: [
         { type: "text", text: "R-A-T-C-H-E-S-O-N-S. " },
         { type: "gap", gapId: "g15" },
-        { type: "text", text: "." },
+        { type: "text", text: " cruise ship terminal." },
       ],
     },
-    { speaker: "VISITOR", segments: [{ type: "text", text: "OK." }] },
+    {
+      speaker: "VISITOR",
+      segments: [
+        { type: "text", text: "OK." },
+      ],
+    },
     {
       speaker: "TC EMPLOYEE",
       segments: [
@@ -273,15 +299,17 @@ export const CAM12_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Sure, you should definitely get that. It's a great ride, but you want to be well prepared because it's very remote - you won't see any shops round there, or anywhere to stay, so ",
+          text: "Sure, you should definitely get that. It's a great ride, but you want to be well prepared because it's very remote - you won't see any shops round there, or anywhere to stay, so you need to ",
         },
         { type: "gap", gapId: "g17" },
-        { type: "text", text: "." },
+        { type: "text", text: " for the last boat." },
       ],
     },
     {
       speaker: "VISITOR",
-      segments: [{ type: "text", text: "Yeah. So what sort of prices are we looking at here?" }],
+      segments: [
+        { type: "text", text: "Yeah. So what sort of prices are we looking at here?" },
+      ],
     },
     {
       speaker: "TC EMPLOYEE",
@@ -291,10 +319,15 @@ export const CAM12_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
           text: "Let's see, that'd be one adult and one child for the cruise with farm tour, that's $117, and an adult and a child for the cruise only so that's $214 dollars altogether. Oh, wait a minute, ",
         },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: "?" },
+        { type: "text", text: " your daughter was?" },
       ],
     },
-    { speaker: "VISITOR", segments: [{ type: "text", text: "Fifteen." }] },
+    {
+      speaker: "VISITOR",
+      segments: [
+        { type: "text", text: "Fifteen." },
+      ],
+    },
     {
       speaker: "TC EMPLOYEE",
       segments: [
@@ -306,7 +339,9 @@ export const CAM12_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "VISITOR",
-      segments: [{ type: "text", text: "That's OK. Er, so how do we find that?" }],
+      segments: [
+        { type: "text", text: "That's OK. Er, so how do we find that?" },
+      ],
     },
   ],
 };

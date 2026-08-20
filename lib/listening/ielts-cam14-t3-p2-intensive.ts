@@ -5,53 +5,35 @@ import type {
 
 export const CAM14_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    {
-      id: "g1",
-      answers: [
-        "I'm hoping I can persuade one or two of you",
-        "I am hoping I can persuade one or two of you",
-      ],
-    },
+    { id: "g1", answers: ["persuade one or two of you"] },
     { id: "g2", answers: ["Let me start by briefly explaining"] },
-    { id: "g3", answers: ["who choose to spend some time, unpaid"] },
-    { id: "g4", answers: ["Most volunteers devote two or three hours"] },
-    { id: "g5", answers: ["depending on their own abilities and interests"] },
+    { id: "g3", answers: ["spend some time, unpaid"] },
+    { id: "g4", answers: ["two or three hours"] },
+    { id: "g5", answers: ["their own abilities and interests"] },
     {
       id: "g6",
       answers: [
-        "If they're supporting a family that's struggling",
-        "If they are supporting a family that is struggling",
+        "a family that's struggling",
+        "a family that is struggling",
       ],
     },
-    { id: "g7", answers: ["they may be able to give them tips on cooking"] },
-    {
-      id: "g8",
-      answers: [
-        "The benefit from volunteering isn't only for the people being helped",
-        "The benefit from volunteering is not only for the people being helped",
-      ],
-    },
+    { id: "g7", answers: ["tips on cooking"] },
+    { id: "g8", answers: ["the people being helped"] },
     { id: "g9", answers: ["employers usually look favourably on someone"] },
     {
       id: "g10",
       answers: ["they're lucky in that respect", "they are lucky in that respect"],
     },
-    { id: "g11", answers: ["to give you an idea of the range of ways"] },
-    {
-      id: "g12",
-      answers: [
-        "who's beginning to show signs of dementia",
-        "who is beginning to show signs of dementia",
-      ],
-    },
+    { id: "g11", answers: ["the range of ways"] },
+    { id: "g12", answers: ["signs of dementia"] },
     {
       id: "g13",
       answers: ["she doesn't let that stop her", "she does not let that stop her"],
     },
     { id: "g14", answers: ["By using herself as an example"] },
-    { id: "g15", answers: ["When the woman found out that Tanya is a professional dressmaker"] },
-    { id: "g16", answers: ["but she gains a lot of pleasure from doing it"] },
-    { id: "g17", answers: ["This has been great for their self-esteem"] },
+    { id: "g15", answers: ["a professional dressmaker"] },
+    { id: "g16", answers: ["a lot of pleasure"] },
+    { id: "g17", answers: ["great for their self-esteem"] },
     { id: "g18", answers: ["though there are plenty more"] },
   ],
   lines: [
@@ -68,6 +50,7 @@ export const CAM14_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "I'm hoping I can " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " to become volunteers yourselves." },
       ],
@@ -82,7 +65,7 @@ export const CAM14_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Volunteers are teenagers and adults " },
+        { type: "text", text: "Volunteers are teenagers and adults who choose to " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: ", helping other people in some way." },
       ],
@@ -90,6 +73,7 @@ export const CAM14_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "Most volunteers devote " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: " to this every week, while a few do much more." },
       ],
@@ -106,7 +90,7 @@ export const CAM14_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Volunteers can do all sorts of things, " },
+        { type: "text", text: "Volunteers can do all sorts of things, depending on " },
         { type: "gap", gapId: "g5" },
         { type: "text", text: "." },
       ],
@@ -114,8 +98,9 @@ export const CAM14_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "If they're supporting " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ", for example, " },
+        { type: "text", text: ", for example, they may be able to give them " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
@@ -143,7 +128,14 @@ export const CAM14_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g8" }, { type: "text", text: "." }],
+      segments: [
+        {
+          type: "text",
+          text: "The benefit from volunteering isn't only for ",
+        },
+        { type: "gap", gapId: "g8" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,
@@ -178,7 +170,7 @@ export const CAM14_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Now I'd like to tell you what some of our volunteers have said about what they do, ",
+          text: "Now I'd like to tell you what some of our volunteers have said about what they do, to give you an idea of ",
         },
         { type: "gap", gapId: "g11" },
         { type: "text", text: " in which they can help people." },
@@ -187,7 +179,7 @@ export const CAM14_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Habib supports an elderly lady " },
+        { type: "text", text: "Habib supports an elderly lady who's beginning to show " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -263,6 +255,7 @@ export const CAM14_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "When the woman found out that Tanya is " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: ", she got interested." },
       ],
@@ -285,9 +278,9 @@ export const CAM14_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "They're not perhaps up to Tanya's standard yet, " },
+        { type: "text", text: "They're not perhaps up to Tanya's standard yet, but she gains " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " from doing it." },
       ],
     },
     {
@@ -310,7 +303,11 @@ export const CAM14_T3_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: null,
-      segments: [{ type: "gap", gapId: "g17" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "This has been " },
+        { type: "gap", gapId: "g17" },
+        { type: "text", text: "." },
+      ],
     },
     {
       speaker: null,

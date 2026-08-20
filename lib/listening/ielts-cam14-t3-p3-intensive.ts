@@ -5,73 +5,31 @@ import type {
 
 export const CAM14_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["So how are you getting on with your teaching practice"] },
+    { id: "g1", answers: ["getting on with"] },
     {
       id: "g2",
       answers: ["I've been put in charge of", "I have been put in charge of"],
     },
-    {
-      id: "g3",
-      answers: ["I'd like to talk it over with you", "I would like to talk it over with you"],
-    },
-    {
-      id: "g4",
-      answers: [
-        "You'd better start by giving me a bit of background",
-        "You had better start by giving me a bit of background",
-      ],
-    },
-    {
-      id: "g5",
-      answers: [
-        "It's quite a popular activity within the school",
-        "It is quite a popular activity within the school",
-      ],
-    },
-    {
-      id: "g6",
-      answers: [
-        "I've never worked with a band of more than 20 before",
-        "I have never worked with a band of more than 20 before",
-      ],
-    },
-    {
-      id: "g7",
-      answers: [
-        "They aren't really good enough to enter national band competitions",
-        "They are not really good enough to enter national band competitions",
-      ],
-    },
+    { id: "g3", answers: ["talk it over with you"] },
+    { id: "g4", answers: ["a bit of background"] },
+    { id: "g5", answers: ["quite a popular activity"] },
+    { id: "g6", answers: ["a band of more than 20"] },
+    { id: "g7", answers: ["aren't really good enough", "are not really good enough"] },
     {
       id: "g8",
-      answers: [
-        "hopefully it'll be an incentive for them",
-        "hopefully it will be an incentive for them",
-      ],
+      answers: ["an incentive for them"],
     },
-    {
-      id: "g9",
-      answers: [
-        "If you ask me, they aren't really up to it yet",
-        "If you ask me, they are not really up to it yet",
-      ],
-    },
-    { id: "g10", answers: ["Have you been doing anything with them"] },
+    { id: "g9", answers: ["aren't really up to it", "are not really up to it"] },
+    { id: "g10", answers: ["doing anything with them"] },
     { id: "g11", answers: ["I thought it was pretty inspiring"] },
-    { id: "g12", answers: ["The students seemed to find it interesting, too"] },
-    { id: "g13", answers: ["it might make the students realise how much they can achieve"] },
+    { id: "g12", answers: ["find it interesting, too"] },
+    { id: "g13", answers: ["how much they can achieve"] },
     {
       id: "g14",
       answers: ["That's what I've got in mind", "That is what I have got in mind"],
     },
-    { id: "g15", answers: ["It depends on whether I can persuade the school"] },
-    {
-      id: "g16",
-      answers: [
-        "I'm finding it quite difficult to cope with",
-        "I am finding it quite difficult to cope with",
-      ],
-    },
+    { id: "g15", answers: ["persuade the school"] },
+    { id: "g16", answers: ["difficult to cope with"] },
     { id: "g17", answers: ["gives me a very plausible reason"] },
     {
       id: "g18",
@@ -82,8 +40,9 @@ export const CAM14_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LIZZIE",
       segments: [
+        { type: "text", text: "So how are you " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: " at the High School, Joe?" },
+        { type: "text", text: " your teaching practice at the High School, Joe?" },
       ],
     },
     {
@@ -91,7 +50,7 @@ export const CAM14_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Well " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: " the school marching band, and it's quite a responsibility. " },
+        { type: "text", text: " the school marching band, and it's quite a responsibility. I'd like to " },
         { type: "gap", gapId: "g3" },
         { type: "text", text: "." },
       ],
@@ -99,7 +58,7 @@ export const CAM14_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LIZZIE",
       segments: [
-        { type: "text", text: "Go ahead. " },
+        { type: "text", text: "Go ahead. You'd better start by giving me " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
       ],
@@ -109,22 +68,23 @@ export const CAM14_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "OK. Well the band has students in it from all years, so they're aged 11 to 18, and there are about 50 of them altogether. ",
+          text: "OK. Well the band has students in it from all years, so they're aged 11 to 18, and there are about 50 of them altogether. It's ",
         },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: ". " },
+        { type: "text", text: " within the school. I've never worked with " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ", and this is very different." },
+        { type: "text", text: " before, and this is very different." },
       ],
     },
     { speaker: "LIZZIE", segments: [{ type: "text", text: "I can imagine." }] },
     {
       speaker: "JOE",
       segments: [
+        { type: "text", text: "They " },
         { type: "gap", gapId: "g7" },
         {
           type: "text",
-          text: ", but they're in a regional one later in the term. Even if they don't win, and I don't expect them to, ",
+          text: " to enter national band competitions, but they're in a regional one later in the term. Even if they don't win, and I don't expect them to, hopefully it'll be ",
         },
         { type: "gap", gapId: "g8" },
         { type: "text", text: " to try and improve." },
@@ -136,18 +96,19 @@ export const CAM14_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well, now the town council's organising a carnival in the summer, and the band has been asked to perform. ",
+          text: "Well, now the town council's organising a carnival in the summer, and the band has been asked to perform. If you ask me, they ",
         },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
-          text: ", and I need to get them functioning better as a band, and in a very short time.",
+          text: " yet, and I need to get them functioning better as a band, and in a very short time.",
         },
       ],
     },
     {
       speaker: "LIZZIE",
       segments: [
+        { type: "text", text: "Have you been " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: "? Apart from practising the music, I mean." },
       ],
@@ -162,7 +123,7 @@ export const CAM14_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g11" },
         {
           type: "text",
-          text: ", because being in the band had stopped him from getting involved in crime. ",
+          text: ", because being in the band had stopped him from getting involved in crime. The students seemed to ",
         },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
@@ -181,7 +142,7 @@ export const CAM14_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "LIZZIE",
       segments: [
-        { type: "text", text: "Good idea. As it's about a school band, " },
+        { type: "text", text: "Good idea. As it's about a school band, it might make the students realise " },
         { type: "gap", gapId: "g13" },
         { type: "text", text: " if they work together." },
       ],
@@ -192,7 +153,7 @@ export const CAM14_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g14" },
         {
           type: "text",
-          text: ". I'm hoping I can take some of the band to a parade that's going to take place next month. A couple of marching bands will be performing, and the atmosphere should be quite exciting. ",
+          text: ". I'm hoping I can take some of the band to a parade that's going to take place next month. A couple of marching bands will be performing, and the atmosphere should be quite exciting. It depends on whether I can ",
         },
         { type: "gap", gapId: "g15" },
         { type: "text", text: " to hire a coach or two to take us there." },
@@ -203,7 +164,7 @@ export const CAM14_T3_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "JOE",
       segments: [
-        { type: "text", text: "Can I tell you about a few people in the band who " },
+        { type: "text", text: "Can I tell you about a few people in the band who I'm finding it quite " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "? I'm sure you'll have some ideas about what I can do." },
       ],

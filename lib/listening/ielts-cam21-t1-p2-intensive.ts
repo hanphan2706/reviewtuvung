@@ -6,23 +6,23 @@ import type {
 export const CAM21_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
     { id: "g1", answers: ["how to become a makeup artist"] },
-    { id: "g2", answers: ["has lots of useful advice about how to get started"] },
+    { id: "g2", answers: ["lots of useful advice"] },
     { id: "g3", answers: ["working as a makeup trainee"] },
-    { id: "g4", answers: ["it's often worth it for the experience", "it is often worth it for the experience"] },
+    { id: "g4", answers: ["worth it for the experience"] },
     { id: "g5", answers: ["you'll get the most useful experience", "you will get the most useful experience"] },
-    { id: "g6", answers: ["you won't need to bring your curling tongs", "you will not need to bring your curling tongs"] },
-    { id: "g7", answers: ["don't expect to be offered any practical experience", "do not expect to be offered any practical experience"] },
+    { id: "g6", answers: ["won't need to bring", "will not need to bring"] },
+    { id: "g7", answers: ["don't expect to be offered", "do not expect to be offered"] },
     { id: "g8", answers: ["it's a high-pressure environment", "it is a high-pressure environment"] },
     { id: "g9", answers: ["Follow your supervisor's lead"] },
     { id: "g10", answers: ["I found it overwhelming"] },
     { id: "g11", answers: ["That's preferable, by the way", "That is preferable, by the way"] },
     { id: "g12", answers: ["don't borrow anything without asking first", "do not borrow anything without asking first"] },
-    { id: "g13", answers: ["It's very important to build your portfolio", "It is very important to build your portfolio"] },
-    { id: "g14", answers: ["whether you're the right kind of person", "whether you are the right kind of person"] },
-    { id: "g15", answers: ["otherwise the makeup artist will get behind schedule"] },
-    { id: "g16", answers: ["Trainees play a useful role in continuity"] },
-    { id: "g17", answers: ["from getting the teas and coffees to putting on a wash"] },
-    { id: "g18", answers: ["It takes quite a lot of confidence"] },
+    { id: "g13", answers: ["build your portfolio"] },
+    { id: "g14", answers: ["the right kind of person"] },
+    { id: "g15", answers: ["get behind schedule"] },
+    { id: "g16", answers: ["play a useful role"] },
+    { id: "g17", answers: ["getting the teas and coffees"] },
+    { id: "g18", answers: ["quite a lot of confidence"] },
   ],
   lines: [
     {
@@ -35,10 +35,10 @@ export const CAM21_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g1" },
         {
           type: "text",
-          text: ". Claire's been working as a makeup artist in the film industry for over 20 years and ",
+          text: ". Claire's been working as a makeup artist in the film industry for over 20 years and has ",
         },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "." },
+        { type: "text", text: " about how to get started." },
       ],
     },
     {
@@ -57,7 +57,7 @@ export const CAM21_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "A good place to get your first job would be on a low budget short film. Of course, this means that you'll be working for free. But ",
+          text: "A good place to get your first job would be on a low budget short film. Of course, this means that you'll be working for free. But it's often ",
         },
         { type: "gap", gapId: "g4" },
         {
@@ -71,14 +71,14 @@ export const CAM21_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "If you're lucky, you might start out on a big budget film where " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: ". On productions like this, makeup and hair styling are separate departments – so " },
+        { type: "text", text: ". On productions like this, makeup and hair styling are separate departments – so you " },
         { type: "gap", gapId: "g6" },
         {
           type: "text",
-          text: "! But you're likely to get the opportunity to work with a range of age groups, as well as different ethnicities. Doing makeup for special effects is highly specialised, so ",
+          text: " your curling tongs! But you're likely to get the opportunity to work with a range of age groups, as well as different ethnicities. Doing makeup for special effects is highly specialised, so ",
         },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: " in that." },
+        { type: "text", text: " any practical experience in that." },
       ],
     },
     {
@@ -121,6 +121,7 @@ export const CAM21_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
+        { type: "text", text: "It's very important to " },
         { type: "gap", gapId: "g13" },
         {
           type: "text",
@@ -131,7 +132,7 @@ export const CAM21_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "So what does a makeup trainee actually do? You need to think about " },
+        { type: "text", text: "So what does a makeup trainee actually do? You need to think about whether you're " },
         { type: "gap", gapId: "g14" },
         {
           type: "text",
@@ -144,7 +145,7 @@ export const CAM21_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "You may be asked to help prep an actor ready for makeup. Some actors will arrive having already cleansed and moisturized their skin. But sometimes you'll need to step in and get this done without wasting any time, ",
+          text: "You may be asked to help prep an actor ready for makeup. Some actors will arrive having already cleansed and moisturized their skin. But sometimes you'll need to step in and get this done without wasting any time, otherwise the makeup artist will ",
         },
         { type: "gap", gapId: "g15" },
         { type: "text", text: "." },
@@ -153,21 +154,22 @@ export const CAM21_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
+        { type: "text", text: "Trainees " },
         { type: "gap", gapId: "g16" },
         {
           type: "text",
-          text: ". It will be your responsibility to take photos, log them digitally and print out a hard copy to put in each actor's file. This information needs to be kept in good order as a reshoot can mean replicating makeup months later.",
+          text: " in continuity. It will be your responsibility to take photos, log them digitally and print out a hard copy to put in each actor's file. This information needs to be kept in good order as a reshoot can mean replicating makeup months later.",
         },
       ],
     },
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "General duties mean doing anything " },
+        { type: "text", text: "General duties mean doing anything from " },
         { type: "gap", gapId: "g17" },
         {
           type: "text",
-          text: ". Having a positive attitude and being willing to do whatever is asked of you will help you get your next film job.",
+          text: " to putting on a wash. Having a positive attitude and being willing to do whatever is asked of you will help you get your next film job.",
         },
       ],
     },
@@ -176,7 +178,7 @@ export const CAM21_T1_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "You won't be asked to apply makeup to any of the principal cast, only the extras. If there are dozens of extras involved you'll need to keep up a swift pace and not spend too long on each person. ",
+          text: "You won't be asked to apply makeup to any of the principal cast, only the extras. If there are dozens of extras involved you'll need to keep up a swift pace and not spend too long on each person. It takes ",
         },
         { type: "gap", gapId: "g18" },
         { type: "text", text: " to be able to do this well." },

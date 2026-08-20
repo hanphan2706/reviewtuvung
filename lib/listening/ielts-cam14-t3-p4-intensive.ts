@@ -5,50 +5,42 @@ import type {
 
 export const CAM14_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    {
-      id: "g1",
-      answers: [
-        "here in the music department we've planned three concerts",
-        "here in the music department we have planned three concerts",
-      ],
-    },
+    { id: "g1", answers: ["we've planned three concerts", "we have planned three concerts"] },
     { id: "g2", answers: ["the programme has just been finalised"] },
     { id: "g3", answers: ["this is reflected in the music"] },
     {
       id: "g4",
       answers: [
-        "as you probably won't be familiar with that",
-        "as you probably will not be familiar with that",
+        "won't be familiar with",
+        "will not be familiar with",
       ],
     },
-    { id: "g5", answers: ["who was born in Perth, Western Australia, in 1966"] },
+    { id: "g5", answers: ["born in Perth"] },
     { id: "g6", answers: ["like so many children"] },
-    { id: "g7", answers: ["her teachers encouraged her to start composing"] },
-    { id: "g8", answers: ["She found this was her real strength"] },
-    { id: "g9", answers: ["she has received commissions from numerous orchestras"] },
-    { id: "g10", answers: ["she often explores Asian and Australian Aboriginal cultural sources"] },
-    { id: "g11", answers: ["it has the power of connecting with audiences and performers alike"] },
+    { id: "g7", answers: ["encouraged her to start composing"] },
+    { id: "g8", answers: ["her real strength"] },
+    { id: "g9", answers: ["commissions from numerous orchestras"] },
+    { id: "g10", answers: ["cultural sources"] },
+    { id: "g11", answers: ["audiences and performers alike"] },
     {
       id: "g12",
       answers: [
-        "we're going to give a semi-staged performance",
-        "we are going to give a semi-staged performance",
+        "a semi-staged performance",
       ],
     },
-    { id: "g13", answers: ["based on the trilogy of ancient Greek tragedies by Aeschylus"] },
+    { id: "g13", answers: ["ancient Greek tragedies"] },
     { id: "g14", answers: ["The work lasts around 75 minutes"] },
-    { id: "g15", answers: ["the inspiration for this piece came from nature"] },
-    { id: "g16", answers: ["he had subconsciously modelled its opening phrase on a bird call"] },
+    { id: "g15", answers: ["came from nature"] },
+    { id: "g16", answers: ["on a bird call"] },
     {
       id: "g17",
       answers: [
-        "he's one of the country's most performed composers",
-        "he is one of the country's most performed composers",
+        "most performed composers",
       ],
     },
     {
       id: "g18",
-      answers: ["This seven-minute orchestral piece was of course heard by millions of people worldwide"],
+      answers: ["heard by millions"],
     },
   ],
   lines: [
@@ -57,7 +49,7 @@ export const CAM14_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "As you all know, the university is planning an arts festival for later this year, and ",
+          text: "As you all know, the university is planning an arts festival for later this year, and here in the music department ",
         },
         { type: "gap", gapId: "g1" },
         { type: "text", text: "." },
@@ -85,17 +77,17 @@ export const CAM14_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "I'll tell you briefly about the Australian music, " },
+        { type: "text", text: "I'll tell you briefly about the Australian music, as you probably " },
         { type: "gap", gapId: "g4" },
-        { type: "text", text: "." },
+        { type: "text", text: " that." },
       ],
     },
     {
       speaker: null,
       segments: [
-        { type: "text", text: "The first concert will include music by Liza Lim, " },
+        { type: "text", text: "The first concert will include music by Liza Lim, who was " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "." },
+        { type: "text", text: ", Western Australia, in 1966." },
       ],
     },
     {
@@ -109,7 +101,7 @@ export const CAM14_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "But when she was 11 " },
+        { type: "text", text: "But when she was 11 her teachers " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: "." },
       ],
@@ -117,6 +109,7 @@ export const CAM14_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "She found this was " },
         { type: "gap", gapId: "g8" },
         {
           type: "text",
@@ -127,7 +120,7 @@ export const CAM14_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "As a composer, " },
+        { type: "text", text: "As a composer, she has received " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: ", other performers and festivals in several countries." },
       ],
@@ -135,7 +128,7 @@ export const CAM14_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Liza Lim's compositions are vibrant and full of energy, and " },
+        { type: "text", text: "Liza Lim's compositions are vibrant and full of energy, and she often explores Asian and Australian Aboriginal " },
         { type: "gap", gapId: "g10" },
         {
           type: "text",
@@ -146,7 +139,7 @@ export const CAM14_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Her music is very expressive, so although it is complex, " },
+        { type: "text", text: "Her music is very expressive, so although it is complex, it has the power of connecting with " },
         { type: "gap", gapId: "g11" },
         { type: "text", text: "." },
       ],
@@ -154,7 +147,7 @@ export const CAM14_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "In the festival " },
+        { type: "text", text: "In the festival we're going to give " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: " of The Oresteia." },
       ],
@@ -162,9 +155,9 @@ export const CAM14_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "This is an opera in seven parts, " },
+        { type: "text", text: "This is an opera in seven parts, based on the trilogy of " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: "." },
+        { type: "text", text: " by Aeschylus." },
       ],
     },
     {
@@ -225,7 +218,7 @@ export const CAM14_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "According to Edwards, " },
+        { type: "text", text: "According to Edwards, the inspiration for this piece " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
@@ -245,7 +238,7 @@ export const CAM14_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "Edwards says he realised years after writing the piece that " },
+        { type: "text", text: "Edwards says he realised years after writing the piece that he had subconsciously modelled its opening phrase " },
         { type: "gap", gapId: "g16" },
         { type: "text", text: "." },
       ],
@@ -262,7 +255,7 @@ export const CAM14_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
-        { type: "text", text: "He's well known in Australia, and in fact " },
+        { type: "text", text: "He's well known in Australia, and in fact he's one of the country's " },
         { type: "gap", gapId: "g17" },
         { type: "text", text: "." },
       ],
@@ -351,10 +344,11 @@ export const CAM14_T3_P4_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: null,
       segments: [
+        { type: "text", text: "This seven-minute orchestral piece was of course " },
         { type: "gap", gapId: "g18" },
         {
           type: "text",
-          text: ", and we'll hear it alongside works written by British composers Edward Elgar and, more recently, Thomas Ades.",
+          text: " of people worldwide, and we'll hear it alongside works written by British composers Edward Elgar and, more recently, Thomas Ades.",
         },
       ],
     },

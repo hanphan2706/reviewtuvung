@@ -5,22 +5,22 @@ import type {
 
 export const CAM16_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I'd like a bit more information about what you do", "I would like a bit more information about what you do"] },
-    { id: "g2", answers: ["I'd like to get them converted to digital format", "I would like to get them converted to digital format"] },
+    { id: "g1", answers: ["I'd like a bit more information", "I would like a bit more information"] },
+    { id: "g2", answers: ["converted to digital format"] },
     { id: "g3", answers: ["are there any restrictions"] },
-    { id: "g4", answers: ["that's the minimum we can cope with", "that is the minimum we can cope with"] },
+    { id: "g4", answers: ["the minimum we can cope with"] },
     { id: "g5", answers: ["we can't copy them otherwise", "we cannot copy them otherwise"] },
     { id: "g6", answers: ["that's not a problem", "that is not a problem"] },
-    { id: "g7", answers: ["can you give me an idea of"] },
+    { id: "g7", answers: ["give me an idea of"] },
     { id: "g8", answers: ["And does that include the disk"] },
-    { id: "g9", answers: ["we won't need anything until we've actually copied the pictures", "we will not need anything until we have actually copied the pictures"] },
-    { id: "g10", answers: ["Is there anything else you'd like to ask", "Is there anything else you would like to ask"] },
+    { id: "g9", answers: ["we've actually copied the pictures", "we have actually copied the pictures"] },
+    { id: "g10", answers: ["anything else you'd like to ask", "anything else you would like to ask"] },
     { id: "g11", answers: ["according to what they're about", "according to what they are about"] },
-    { id: "g12", answers: ["you can suggest a name for each folder"] },
+    { id: "g12", answers: ["a name for each folder"] },
     { id: "g13", answers: ["can you make any improvements"] },
     { id: "g14", answers: ["that can make a big difference"] },
-    { id: "g15", answers: ["they won't get damaged in the process", "they will not get damaged in the process"] },
-    { id: "g16", answers: ["We do realise how precious these old photos can be", "We do realize how precious these old photos can be"] },
+    { id: "g15", answers: ["get damaged in the process"] },
+    { id: "g16", answers: ["how precious these old photos"] },
     { id: "g17", answers: ["I might be interested in that"] },
     { id: "g18", answers: ["that's one thing we can't do", "that is one thing we cannot do"] },
   ],
@@ -31,7 +31,7 @@ export const CAM16_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Oh, hi. I saw your advertisement about copying pictures to disk and " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: "." },
+        { type: "text", text: " about what you do." },
       ],
     },
     { speaker: "EMPLOYEE", segments: [{ type: "text", text: "Sure. What would you like to know?" }] },
@@ -40,7 +40,7 @@ export const CAM16_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well, I've got a box full of old family photos that's been up in the attic for years, some of them must be 50 or 60 years old, and ",
+          text: "Well, I've got a box full of old family photos that's been up in the attic for years, some of them must be 50 or 60 years old, and I'd like to get them ",
         },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "." },
@@ -60,7 +60,7 @@ export const CAM16_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Well the maximum size of photo we can do with our normal services is 30 centimetres. And each picture must be at least 4 centimetres, ",
+          text: "Well the maximum size of photo we can do with our normal services is 30 centimetres. And each picture must be at least 4 centimetres, that's ",
         },
         { type: "gap", gapId: "g4" },
         { type: "text", text: "." },
@@ -91,7 +91,7 @@ export const CAM16_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "OK, " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: ". So " },
+        { type: "text", text: ". So can you " },
         { type: "gap", gapId: "g7" },
         { type: "text", text: " how much this will cost? I've got about 360 photos I think." },
       ],
@@ -121,7 +121,7 @@ export const CAM16_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "EMPLOYEE",
       segments: [
-        { type: "text", text: "No, " },
+        { type: "text", text: "No, we won't need anything until " },
         { type: "gap", gapId: "g9" },
         {
           type: "text",
@@ -133,6 +133,7 @@ export const CAM16_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "EMPLOYEE",
       segments: [
+        { type: "text", text: "Is there " },
         { type: "gap", gapId: "g10" },
         { type: "text", text: " about our services?" },
       ],
@@ -148,7 +149,7 @@ export const CAM16_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "EMPLOYEE",
       segments: [
-        { type: "text", text: "Sure. We'll save each group in a different folder on the disk and if you like, " },
+        { type: "text", text: "Sure. We'll save each group in a different folder on the disk and if you like, you can suggest " },
         { type: "gap", gapId: "g12" },
         { type: "text", text: "." },
       ],
@@ -180,7 +181,7 @@ export const CAM16_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "WOMAN",
       segments: [
-        { type: "text", text: "OK. And some of the photos are actually quite fragile - " },
+        { type: "text", text: "OK. And some of the photos are actually quite fragile - they won't " },
         { type: "gap", gapId: "g15" },
         { type: "text", text: ", will they?" },
       ],
@@ -188,9 +189,9 @@ export const CAM16_T2_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "EMPLOYEE",
       segments: [
-        { type: "text", text: "No, if any look particularly fragile, we'd do them by hand. " },
+        { type: "text", text: "No, if any look particularly fragile, we'd do them by hand. We do realise " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "." },
+        { type: "text", text: " can be." },
       ],
     },
     { speaker: "WOMAN", segments: [{ type: "text", text: "Sure." }] },

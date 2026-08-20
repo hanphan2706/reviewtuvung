@@ -5,12 +5,9 @@ import type {
 
 export const CAM12_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["We need to start planning our paper on public libraries"] },
-    { id: "g2", answers: ["Have you thought of an angle yet"] },
-    {
-      id: "g3",
-      answers: ["How libraries have changed over the centuries, for instance"],
-    },
+    { id: "g1", answers: ["start planning"] },
+    { id: "g2", answers: ["thought of an angle"] },
+    { id: "g3", answers: ["over the centuries"] },
     {
       id: "g4",
       answers: [
@@ -18,81 +15,44 @@ export const CAM12_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         "or how different countries organize them",
       ],
     },
-    { id: "g5", answers: ["Maybe we should concentrate on this country"] },
-    {
-      id: "g6",
-      answers: ["We could include something about changes in the source of funding, too"],
-    },
-    {
-      id: "g7",
-      answers: [
-        "we're only supposed to write a short paper",
-        "we are only supposed to write a short paper",
-      ],
-    },
-    {
-      id: "g8",
-      answers: [
-        "it's probably best if we don't go into funding in any detail",
-        "it is probably best if we do not go into funding in any detail",
-        "it's probably best if we do not go into funding in any detail",
-      ],
-    },
-    { id: "g9", answers: ["shall we just brainstorm a few ideas, to get started"] },
-    {
-      id: "g10",
-      answers: [
-        "We obviously need to look at the impact of new technology, particularly the internet",
-      ],
-    },
-    { id: "g11", answers: ["people can access them from their own computers at home"] },
-    { id: "g12", answers: ["And if everyone did that, libraries would be obsolete"] },
-    {
-      id: "g13",
-      answers: [
-        "I find it hard to concentrate when I'm reading a long text on a screen",
-        "I find it hard to concentrate when I am reading a long text on a screen",
-      ],
-    },
+    { id: "g5", answers: ["concentrate on"] },
+    { id: "g6", answers: ["We could include"] },
+    { id: "g7", answers: ["a short paper"] },
+    { id: "g8", answers: ["in any detail"] },
+    { id: "g9", answers: ["to get started"] },
+    { id: "g10", answers: ["look at the impact"] },
+    { id: "g11", answers: ["from their own computers"] },
+    { id: "g12", answers: ["would be obsolete"] },
+    { id: "g13", answers: ["hard to concentrate"] },
     {
       id: "g14",
       answers: [
-        "I'd much rather read a physical book",
-        "I would much rather read a physical book",
+        "I'd much rather",
+        "I would much rather",
       ],
     },
-    {
-      id: "g15",
-      answers: ["I expect that libraries will go on evolving in the next few years"],
-    },
-    {
-      id: "g16",
-      answers: [
-        "Why don't we make an in-depth study of our local public library as background to our paper",
-        "Why do not we make an in-depth study of our local public library as background to our paper",
-        "Why don't we make an in-depth study of our local public library as background to our paper",
-      ],
-    },
-    { id: "g17", answers: ["Let's make a list of possible things we could ask about"] },
-    { id: "g18", answers: ["I quite fancy finding out what the differences are"] },
+    { id: "g15", answers: ["go on evolving"] },
+    { id: "g16", answers: ["an in-depth study"] },
+    { id: "g17", answers: ["Let's make a list"] },
+    { id: "g18", answers: ["I quite fancy"] },
   ],
   lines: [
     {
       speaker: "TRUDIE",
       segments: [
-        { type: "text", text: "OK, Stewart. " },
+        { type: "text", text: "OK, Stewart. We need to " },
         { type: "gap", gapId: "g1" },
-        { type: "text", text: ". " },
+        { type: "text", text: " our paper on public libraries. Have you " },
         { type: "gap", gapId: "g2" },
-        { type: "text", text: "?" },
+        { type: "text", text: " yet?" },
       ],
     },
     {
       speaker: "STEWART",
       segments: [
-        { type: "text", text: "Well, there's so much we could look into. " },
+        { type: "text", text: "Well, there's so much we could look into. How libraries have changed " },
         { type: "gap", gapId: "g3" },
-        { type: "text", text: ", " },
+        { type: "text", text: ", for instance, " },
         { type: "gap", gapId: "g4" },
         { type: "text", text: ". What do you think, Trudie?" },
       ],
@@ -100,23 +60,27 @@ export const CAM12_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TRUDIE",
       segments: [
+        { type: "text", text: "Maybe we should " },
         { type: "gap", gapId: "g5" },
         {
           type: "text",
-          text: ", and try and relate the changes in libraries to external developments, like the fact that far more people can read than a century ago, and that the local population may speak lots of different languages.",
+          text: " this country, and try and relate the changes in libraries to external developments, like the fact that far more people can read than a century ago, and that the local population may speak lots of different languages.",
         },
       ],
     },
     {
       speaker: "STEWART",
-      segments: [{ type: "gap", gapId: "g6" }, { type: "text", text: "." }],
+      segments: [
+        { type: "gap", gapId: "g6" },
+        { type: "text", text: " something about changes in the source of funding, too." },
+      ],
     },
     {
       speaker: "TRUDIE",
       segments: [
-        { type: "text", text: "Yes, but remember " },
+        { type: "text", text: "Yes, but remember we're only supposed to write " },
         { type: "gap", gapId: "g7" },
-        { type: "text", text: ", so " },
+        { type: "text", text: ", so it's probably best if we don't go into funding " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "." },
       ],
@@ -124,7 +88,7 @@ export const CAM12_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "STEWART",
       segments: [
-        { type: "text", text: "Right. Well, " },
+        { type: "text", text: "Right. Well, shall we just brainstorm a few ideas, " },
         { type: "gap", gapId: "g9" },
         { type: "text", text: "?" },
       ],
@@ -132,18 +96,30 @@ export const CAM12_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TRUDIE",
       segments: [
-        { type: "text", text: "OK. " },
+        { type: "text", text: "OK. We obviously need to " },
         { type: "gap", gapId: "g10" },
-        { type: "text", text: ". Now that lots of books have been digitalised, " },
+        {
+          type: "text",
+          text: " of new technology, particularly the internet. Now that lots of books have been digitalised, people can access them ",
+        },
         { type: "gap", gapId: "g11" },
-        { type: "text", text: "." },
+        { type: "text", text: " at home." },
       ],
     },
     {
       speaker: "STEWART",
-      segments: [{ type: "gap", gapId: "g12" }, { type: "text", text: "." }],
+      segments: [
+        { type: "text", text: "And if everyone did that, libraries " },
+        { type: "gap", gapId: "g12" },
+        { type: "text", text: "." },
+      ],
     },
-    { speaker: "TRUDIE", segments: [{ type: "text", text: "Yes." }] },
+    {
+      speaker: "TRUDIE",
+      segments: [
+        { type: "text", text: "Yes." },
+      ],
+    },
     {
       speaker: "STEWART",
       segments: [
@@ -156,11 +132,11 @@ export const CAM12_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TRUDIE",
       segments: [
-        { type: "text", text: "That's an important point. Anyway, " },
+        { type: "text", text: "That's an important point. Anyway, I find it " },
         { type: "gap", gapId: "g13" },
-        { type: "text", text: ". " },
+        { type: "text", text: " when I'm reading a long text on a screen. " },
         { type: "gap", gapId: "g14" },
-        { type: "text", text: ". And it takes longer to read on a screen." },
+        { type: "text", text: " read a physical book. And it takes longer to read on a screen." },
       ],
     },
     {
@@ -172,11 +148,11 @@ export const CAM12_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "TRUDIE",
       segments: [
-        { type: "text", text: "Mm. " },
+        { type: "text", text: "Mm. I expect that libraries will " },
         { type: "gap", gapId: "g15" },
         {
           type: "text",
-          text: ". Some have already become centres where community activities take place, like local clubs meeting there. I think that'll become even more common.",
+          text: " in the next few years. Some have already become centres where community activities take place, like local clubs meeting there. I think that'll become even more common.",
         },
       ],
     },
@@ -189,13 +165,18 @@ export const CAM12_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         },
       ],
     },
-    { speaker: "TRUDIE", segments: [{ type: "text", text: "Well, we'll see." }] },
     {
       speaker: "TRUDIE",
       segments: [
-        { type: "text", text: "I've just had an idea. " },
+        { type: "text", text: "Well, we'll see." },
+      ],
+    },
+    {
+      speaker: "TRUDIE",
+      segments: [
+        { type: "text", text: "I've just had an idea. Why don't we make " },
         { type: "gap", gapId: "g16" },
-        { type: "text", text: "?" },
+        { type: "text", text: " of our local public library as background to our paper?" },
       ],
     },
     {
@@ -205,7 +186,7 @@ export const CAM12_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g17" },
         {
           type: "text",
-          text: ", then work out some sort of structure. For instance, um, we could interview some of the staff, and find out whether the library has its own budget, or if that's controlled by the local council.",
+          text: " of possible things we could ask about, then work out some sort of structure. For instance, um, we could interview some of the staff, and find out whether the library has its own budget, or if that's controlled by the local council.",
         },
       ],
     },
@@ -242,7 +223,12 @@ export const CAM12_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "text", text: "Yes, that's something else to find out. You know something I've often wondered?" },
       ],
     },
-    { speaker: "TRUDIE", segments: [{ type: "text", text: "What's that?" }] },
+    {
+      speaker: "TRUDIE",
+      segments: [
+        { type: "text", text: "What's that?" },
+      ],
+    },
     {
       speaker: "STEWART",
       segments: [
@@ -268,13 +254,15 @@ export const CAM12_T1_P3_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g18" },
         {
           type: "text",
-          text: " between a library that's open to the public and one that's part of a museum, for example - they must be very different.",
+          text: " finding out what the differences are between a library that's open to the public and one that's part of a museum, for example - they must be very different.",
         },
       ],
     },
     {
       speaker: "TRUDIE",
-      segments: [{ type: "text", text: "Mmm. Then something else I'd like to know is …" }],
+      segments: [
+        { type: "text", text: "Mmm. Then something else I'd like to know is …" },
+      ],
     },
   ],
 };

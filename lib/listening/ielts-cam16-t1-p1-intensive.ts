@@ -5,31 +5,31 @@ import type {
 
 export const CAM16_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
   gaps: [
-    { id: "g1", answers: ["I wanted some information about"] },
-    { id: "g2", answers: ["do you take children as young as that"] },
-    { id: "g3", answers: ["What sorts of activities do they do"] },
+    { id: "g1", answers: ["some information about"] },
+    { id: "g2", answers: ["as young as that"] },
+    { id: "g3", answers: ["What sorts of activities"] },
     { id: "g4", answers: ["that's part of the fun", "that is part of the fun"] },
-    { id: "g5", answers: ["Is there any opportunity for her to do that"] },
-    { id: "g6", answers: ["You'd be amazed how high they can go", "You would be amazed how high they can go"] },
+    { id: "g5", answers: ["any opportunity for her"] },
+    { id: "g6", answers: ["You'd be amazed", "You would be amazed"] },
     { id: "g7", answers: ["all this sounds perfect"] },
-    { id: "g8", answers: ["so presumably she'd be in a different group", "so presumably she would be in a different group"] },
+    { id: "g8", answers: ["a different group"] },
     { id: "g9", answers: ["a bit more advanced"] },
     { id: "g10", answers: ["They pick it up really quickly"] },
     { id: "g11", answers: ["they learn from one another too"] },
     { id: "g12", answers: ["I wouldn't mind doing that myself", "I would not mind doing that myself"] },
-    { id: "g13", answers: ["You'd be amazed what they come up with", "You would be amazed what they come up with"] },
+    { id: "g13", answers: ["come up with"] },
     { id: "g14", answers: ["It's just a bit more", "It is just a bit more"] },
     { id: "g15", answers: ["That's better for me actually", "That is better for me actually"] },
     { id: "g16", answers: ["Where exactly are the workshops held"] },
     { id: "g17", answers: ["you can't miss it", "you cannot miss it"] },
-    { id: "g18", answers: ["So would you like to enrol Lydia and Carly now"] },
+    { id: "g18", answers: ["would you like to enrol"] },
   ],
   lines: [
     { speaker: "SARAH", segments: [{ type: "text", text: "Hello. Children's Engineering Workshops." }] },
     {
       speaker: "FATHER",
       segments: [
-        { type: "text", text: "Oh hello. " },
+        { type: "text", text: "Oh hello. I wanted " },
         { type: "gap", gapId: "g1" },
         { type: "text", text: " the workshops in the school holidays." },
       ],
@@ -38,7 +38,7 @@ export const CAM16_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "FATHER",
       segments: [
-        { type: "text", text: "I have two daughters who are interested. The younger one's Lydia, she's four - " },
+        { type: "text", text: "I have two daughters who are interested. The younger one's Lydia, she's four - do you take children " },
         { type: "gap", gapId: "g2" },
         { type: "text", text: "?" },
       ],
@@ -49,7 +49,7 @@ export const CAM16_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     },
     {
       speaker: "FATHER",
-      segments: [{ type: "gap", gapId: "g3" }, { type: "text", text: "?" }],
+      segments: [{ type: "gap", gapId: "g3" }, { type: "text", text: " do they do?" }],
     },
     {
       speaker: "SARAH",
@@ -65,9 +65,9 @@ export const CAM16_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "FATHER",
       segments: [
-        { type: "text", text: "Right. And Lydia loves building things. " },
+        { type: "text", text: "Right. And Lydia loves building things. Is there " },
         { type: "gap", gapId: "g5" },
-        { type: "text", text: "?" },
+        { type: "text", text: " to do that?" },
       ],
     },
     {
@@ -75,7 +75,7 @@ export const CAM16_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         { type: "text", text: "Well, they have a competition to see who can make the highest tower. " },
         { type: "gap", gapId: "g6" },
-        { type: "text", text: "." },
+        { type: "text", text: " how high they can go." },
       ],
     },
     { speaker: "FATHER", segments: [{ type: "text", text: "Right." }] },
@@ -99,7 +99,7 @@ export const CAM16_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "FATHER",
       segments: [
-        { type: "text", text: "Now Carly, that's my older daughter, has just had her seventh birthday, " },
+        { type: "text", text: "Now Carly, that's my older daughter, has just had her seventh birthday, so presumably she'd be in " },
         { type: "gap", gapId: "g8" },
         { type: "text", text: "?" },
       ],
@@ -159,7 +159,7 @@ export const CAM16_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
       segments: [
         {
           type: "text",
-          text: "Then they have something a bit different, which is to think up an idea for a five-minute movie and then film it, using special animation software. ",
+          text: "Then they have something a bit different, which is to think up an idea for a five-minute movie and then film it, using special animation software. You'd be amazed what they ",
         },
         { type: "gap", gapId: "g13" },
         { type: "text", text: "." },
@@ -227,9 +227,9 @@ export const CAM16_T1_P1_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     {
       speaker: "SARAH",
       segments: [
-        { type: "text", text: "No, there's always plenty available. " },
+        { type: "text", text: "No, there's always plenty available. So " },
         { type: "gap", gapId: "g18" },
-        { type: "text", text: "?" },
+        { type: "text", text: " Lydia and Carly now?" },
       ],
     },
     { speaker: "FATHER", segments: [{ type: "text", text: "OK." }] },

@@ -16,7 +16,7 @@ export const CAM18_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
     { id: "g9", answers: ["It was designed especially for"] },
     { id: "g10", answers: ["well, self-explanatory"] },
     { id: "g11", answers: ["you can go in two directions"] },
-    { id: "g12", answers: ["it's a good place to stop for a rest", "it is a good place to stop for a rest"] },
+    { id: "g12", answers: ["a good place to stop"] },
     { id: "g13", answers: ["It's surprising how much", "It is surprising how much"] },
     { id: "g14", answers: ["make your way back to"] },
     { id: "g15", answers: ["You can still buy"] },
@@ -137,11 +137,11 @@ export const CAM18_T4_P2_TRANSCRIPT_CLOZE: ListeningTranscriptClozeExercise = {
         { type: "gap", gapId: "g11" },
         {
           type: "text",
-          text: ". To the right is a staircase that takes you up to a landing from where you can look down on the galleries. To the left is a room called A Year on the Farm. There's lots of seating here as sometimes we use the room for school visits, so " },
+          text: ". To the right is a staircase that takes you up to a landing from where you can look down on the galleries. To the left is a room called A Year on the Farm. There's lots of seating here as sometimes we use the room for school visits, so it's " },
         { type: "gap", gapId: "g12" },
         {
           type: "text",
-          text: ". If you're feeling competitive, you can take our memory test in which you answer questions about things you've seen in the museum.",
+          text: " for a rest. If you're feeling competitive, you can take our memory test in which you answer questions about things you've seen in the museum.",
         },
       ],
     },
