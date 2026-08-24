@@ -169,9 +169,7 @@ export function ArticleReader({
     });
   }, [vocabularyItemsProp, articleId, pilotId, passage.idiomsText]);
 
-  const canAddWord = Boolean(
-    isLoggedIn && pickedForLookup && pickedForLookup.mode !== "translate-only",
-  );
+  const canAddWord = Boolean(isLoggedIn && pickedForLookup);
 
   useEffect(() => {
     if (selection) popoverAnchorRef.current = selection;
@@ -385,6 +383,7 @@ export function ArticleReader({
           lookup={dictLookup}
           loading={dictLoading}
           canAddWord={canAddWord}
+          allowAddAnySelection
           decks={decks}
           onClose={closePopover}
         />

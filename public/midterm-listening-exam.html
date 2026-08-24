@@ -3054,14 +3054,13 @@ function removeHighlightFromRange(range){
 
   function parseReadingSelection(text){
     var t=text.trim().replace(/\s+/g," ");
-    if(t.length<2||t.length>MAX_CHARS)return null;
-    if(/\n/.test(t))return null;
+    if(t.length<2)return null;
+    if(t.length>MAX_CHARS)t=t.slice(0,MAX_CHARS);
     var words=t.split(" ").filter(Boolean);
     if(!words.length)return null;
     if(words.length===1)return{query:t,mode:"word"};
     if(words.length<=MAX_WORDS_DICT)return{query:t,mode:"phrase"};
-    if(words.length<=MAX_WORDS_TRANSLATE)return{query:t,mode:"translate-only"};
-    return null;
+    return{query:t,mode:"translate-only"};
   }
 
   function htmlToPlainTrim(s){
@@ -3411,10 +3410,8 @@ function removeHighlightFromRange(range){
   }
 
   function canShowAdd(){
-    if(!lookup||lookup.error)return false;
-    var isTranslateOnly=lookup.phraseGlossVi&&(!lookup.senses||!lookup.senses.length);
-    if(isTranslateOnly)return false;
-    return lookup.kind==="word"||(lookup.kind==="phrase"&&lookup.phraseGlossVi);
+    if(!lookup)return false;
+    return Boolean(String(lookup.query||"").trim());
   }
 
   function renderFooter(){
@@ -3449,7 +3446,8 @@ function removeHighlightFromRange(range){
       next.addEventListener("click",function(){
         if(!selectedDeckId)return;
         term=lookup.query;
-        definition=formatLookupForDeck(lookup);
+        var formatted=formatLookupForDeck(lookup);
+        definition=(lookup.error&&formatted===lookup.error)?(lookup.phraseGlossVi||""):formatted;
         phase="add";
         renderAddForm();
       });

@@ -496,7 +496,7 @@ async function lookupPhrase(query: string, preferGoogle = false): Promise<Readin
   return result;
 }
 
-/** Cụm dài (5–24 từ): chỉ dịch (MyMemory trước; Google nếu có key). */
+/** Cụm dài (5 từ trở lên): chỉ dịch (MyMemory trước; Google nếu có key). */
 async function lookupTranslateOnly(query: string): Promise<ReadingLookupResult> {
   return lookupPhrase(query, false);
 }
@@ -508,7 +508,7 @@ export async function lookupReadingTerm(query: string): Promise<ReadingLookupRes
     return {
       query: text.slice(0, 80),
       kind: "phrase",
-      error: "Chọn 1–4 từ để tra từ điển, hoặc tối đa 24 từ để dịch.",
+      error: "Chọn từ hoặc cụm để tra.",
       senses: [],
       paraphrases: [],
       source: "",

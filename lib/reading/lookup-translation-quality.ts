@@ -71,7 +71,7 @@ function repeatedPhraseVi(vi: string): boolean {
   return Boolean(m);
 }
 
-/** Cụm/câu dịch nhanh (5–24 từ) — không áp quy tắc gloss từ điển. */
+/** Cụm/câu dịch nhanh (5 từ trở lên) — không áp quy tắc gloss từ điển. */
 export function isSuspiciousPhraseTranslation(english: string, vietnamese: string): boolean {
   const en = english.trim();
   const vi = vietnamese.trim();

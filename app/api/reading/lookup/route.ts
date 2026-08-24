@@ -20,7 +20,7 @@ export async function POST(req: Request) {
     return NextResponse.json({
       query: raw.slice(0, 80),
       kind: "phrase",
-      error: "Chọn 1–4 từ để tra từ điển, hoặc tối đa 24 từ để dịch.",
+      error: "Chọn từ hoặc cụm để tra.",
       senses: [],
       paraphrases: [],
       source: "",
