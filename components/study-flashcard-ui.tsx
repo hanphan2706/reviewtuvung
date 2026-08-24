@@ -38,7 +38,7 @@ export function StudyFlipCard({ front, frontSub, back, disabled = false }: Study
           <div className="absolute inset-0 overflow-hidden rounded-xl border-2 border-zinc-200 bg-white shadow-sm [backface-visibility:hidden]">
             <div className="flex h-full flex-col overflow-y-auto overscroll-contain touch-pan-y p-4 sm:p-5">
               <div className="my-auto flex w-full flex-col items-center gap-2">
-                <span className="inline-block max-w-full text-center text-xl font-semibold leading-snug tracking-tight text-ink sm:text-2xl">
+                <span className="block w-full max-w-full text-center text-xl font-semibold leading-snug tracking-tight text-ink sm:text-2xl">
                   {front}
                 </span>
                 {frontSub ? (
@@ -54,8 +54,8 @@ export function StudyFlipCard({ front, frontSub, back, disabled = false }: Study
             style={{ transform: "rotateY(180deg)" }}
           >
             <div className="flex h-full flex-col overflow-y-auto overscroll-contain touch-pan-y p-4 sm:p-5">
-              <div className="my-auto w-full">
-                <span className="inline-block max-w-full whitespace-pre-line text-center text-base font-medium leading-snug text-ink/90 sm:text-lg">
+              <div className="my-auto flex w-full flex-col items-center justify-center">
+                <span className="block w-full max-w-full whitespace-pre-line text-center text-base font-medium leading-snug text-ink/90 sm:text-lg">
                   {back}
                 </span>
               </div>

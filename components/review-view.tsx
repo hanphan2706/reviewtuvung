@@ -596,7 +596,7 @@ function FlipCard({
               <div className="my-auto flex w-full flex-col items-center gap-2">
                 <WordRichDisplay
                   html={word.term}
-                  className={`inline-block max-w-full text-center leading-snug tracking-tight text-ink [&_b]:font-bold [&_strong]:font-bold ${tabletLayout ? "text-[2rem] sm:text-4xl" : "text-xl sm:text-2xl"}`}
+                  className={`block w-full max-w-full text-center leading-snug tracking-tight text-ink [&_b]:font-bold [&_strong]:font-bold ${tabletLayout ? "text-[2rem] sm:text-4xl" : "text-xl sm:text-2xl"}`}
                 />
                 {ipa ? (
                   <span className="font-ipa text-center text-sm leading-none text-ink-muted sm:text-base">
@@ -611,11 +611,11 @@ function FlipCard({
             style={{ transform: "rotateY(180deg)" }}
           >
             <div className={`flex h-full flex-col overflow-y-auto overscroll-contain touch-pan-y ${tabletLayout ? "p-8" : "p-4 sm:p-5"}`}>
-              <div className="my-auto w-full">
+              <div className="my-auto flex w-full flex-col items-center justify-center">
                 {defText ? (
                   <WordRichDisplay
                     html={word.definition}
-                    className={`inline-block max-w-full text-center font-medium leading-snug text-ink/90 ${tabletLayout ? "text-2xl sm:text-3xl" : "text-base sm:text-lg"}`}
+                    className={`block w-full max-w-full text-center font-medium leading-snug text-ink/90 ${tabletLayout ? "text-2xl sm:text-3xl" : "text-base sm:text-lg"}`}
                   />
                 ) : (
                   <span
