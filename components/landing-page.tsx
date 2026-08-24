@@ -414,6 +414,14 @@ function SelfStudySection() {
       summary: "Bạn có biết nghe cũng phải đúng kỹ thuật và có mục đích thì mới tiến bộ không?",
     },
     {
+      slug: "writing" as const,
+      href: "/tu-hoc/luyen-viet",
+      priceHint: "Luyện viết",
+      image: "/luyen%20viet%201.jpg",
+      summary:
+        'Từ dịch câu, chọn đúng từ vựng và diễn đạt, cho đến viết một bài học thuật bài bản, tất cả để giúp bạn thấy kỹ năng viết IELTS thật ra "cũng không quá khó"',
+    },
+    {
       slug: "grammar" as const,
       href: "/tu-hoc/ngu-phap",
       priceHint: "Ngữ pháp",

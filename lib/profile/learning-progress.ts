@@ -18,6 +18,11 @@ export type ProfileLearningProgress = {
   readingArticlesTotal: number;
   listeningLessonsCompleted: number;
   listeningLessonsTotal: number;
+  writingStreak: number;
+  writingEssaysCompleted: number;
+  writingEssaysTotal: number;
+  writingLanguageAccuracyPercent: number;
+  writingSavedCount: number;
   ieltsReadingBandAverage: number | null;
   ieltsListeningBandAverage: number | null;
 };

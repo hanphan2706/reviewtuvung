@@ -19,6 +19,7 @@ export function isPublicStudyHubPath(pathname: string): boolean {
     return false;
   }
   if (pathname === "/tu-hoc/luyen-nghe" || pathname.startsWith("/tu-hoc/luyen-nghe/")) return true;
+  if (pathname === "/tu-hoc/luyen-viet" || pathname.startsWith("/tu-hoc/luyen-viet/")) return true;
   if (pathname === "/tu-hoc/luyen-doc" || pathname.startsWith("/tu-hoc/luyen-doc/thu-vien")) return true;
   if (pathname === "/tu-hoc/luyen-doc/chu-de") return true;
   if (pathname.startsWith("/tu-hoc/luyen-doc/chu-de/")) return true;
@@ -108,6 +109,7 @@ export function isPublicListeningAudioApi(pathname: string, searchParams: URLSea
 export function isProtectedApiPath(pathname: string): boolean {
   if (pathname.startsWith("/api/reading/")) return true;
   if (pathname.startsWith("/api/listening/")) return true;
+  if (pathname.startsWith("/api/writing/")) return true;
   if (pathname.startsWith("/api/media/audio")) return true;
   if (pathname === "/api/transcribe") return true;
   return false;

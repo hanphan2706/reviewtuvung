@@ -4,6 +4,7 @@ const ALLOWED_RETURN_PREFIXES = [
   "/tu-hoc/luyen-doc",
   "/tu-hoc/tu-vung",
   "/tu-hoc/luyen-nghe",
+  "/tu-hoc/luyen-viet",
   "/review",
   "/deck",
 ] as const;

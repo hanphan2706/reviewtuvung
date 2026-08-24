@@ -37,6 +37,11 @@ const EMPTY_SUMMARY: ProfileLearningProgress = {
   readingArticlesTotal: READING_ARTICLES_TOTAL,
   listeningLessonsCompleted: 0,
   listeningLessonsTotal: LISTENING_LESSONS_TOTAL,
+  writingStreak: 0,
+  writingEssaysCompleted: 0,
+  writingEssaysTotal: 0,
+  writingLanguageAccuracyPercent: 0,
+  writingSavedCount: 0,
   ieltsReadingBandAverage: null,
   ieltsListeningBandAverage: null,
 };
@@ -122,6 +127,11 @@ export function ProfileProgressView({
           readingArticlesTotal: data.readingArticlesTotal ?? READING_ARTICLES_TOTAL,
           listeningLessonsCompleted: data.listeningLessonsCompleted ?? 0,
           listeningLessonsTotal: data.listeningLessonsTotal ?? LISTENING_LESSONS_TOTAL,
+          writingStreak: data.writingStreak ?? 0,
+          writingEssaysCompleted: data.writingEssaysCompleted ?? 0,
+          writingEssaysTotal: data.writingEssaysTotal ?? 0,
+          writingLanguageAccuracyPercent: data.writingLanguageAccuracyPercent ?? 0,
+          writingSavedCount: data.writingSavedCount ?? 0,
           ieltsReadingBandAverage: data.ieltsReadingBandAverage ?? null,
           ieltsListeningBandAverage: data.ieltsListeningBandAverage ?? null,
         });
@@ -177,6 +187,11 @@ export function ProfileProgressView({
       readingArticlesTotal: base.readingArticlesTotal || READING_ARTICLES_TOTAL,
       listeningLessonsCompleted: base.listeningLessonsCompleted,
       listeningLessonsTotal: base.listeningLessonsTotal || LISTENING_LESSONS_TOTAL,
+      writingStreak: isLoggedIn ? base.writingStreak : 0,
+      writingEssaysCompleted: isLoggedIn ? base.writingEssaysCompleted : 0,
+      writingEssaysTotal: base.writingEssaysTotal,
+      writingLanguageAccuracyPercent: isLoggedIn ? base.writingLanguageAccuracyPercent : 0,
+      writingSavedCount: isLoggedIn ? base.writingSavedCount : 0,
       ieltsReadingBandAverage: isLoggedIn
         ? (base.ieltsReadingBandAverage ?? localIeltsBandsSnapshot.reading)
         : localIeltsBandsSnapshot.reading,
@@ -194,6 +209,11 @@ export function ProfileProgressView({
   const listeningPct =
     stats.listeningLessonsTotal > 0
       ? Math.round((stats.listeningLessonsCompleted / stats.listeningLessonsTotal) * 100)
+      : 0;
+
+  const writingPct =
+    stats.writingEssaysTotal > 0
+      ? Math.round((stats.writingEssaysCompleted / stats.writingEssaysTotal) * 100)
       : 0;
 
   const signInNext = profilePageHref();
@@ -311,6 +331,76 @@ export function ProfileProgressView({
                   </div>
                 }
               />
+
+              <ProgressRow
+                label="Chuỗi viết hiện tại"
+                metric={
+                  <p className={metricValueClass}>
+                    {formatCount(stats.writingStreak)}{" "}
+                    <span className={metricSuffixClass}>ngày</span>
+                  </p>
+                }
+                trailing={<Flame className="size-6 text-[#4b2876]" aria-hidden />}
+              />
+
+              <ProgressRow
+                label="Bài viết đã hoàn thành"
+                metric={
+                  <p className={metricValueClass}>
+                    {formatCount(stats.writingEssaysCompleted)}
+                    <span className={metricSuffixClass}>
+                      {" "}
+                      / {formatCount(stats.writingEssaysTotal)}
+                    </span>
+                  </p>
+                }
+                trailing={
+                  <Link href="/tu-hoc/luyen-viet" className={rowLinkClass}>
+                    Mở luyện viết →
+                  </Link>
+                }
+                footnote={
+                  <div className="h-2 overflow-hidden rounded-full bg-zinc-100">
+                    <div
+                      className="h-full rounded-full transition-[width] duration-300"
+                      style={{ width: `${writingPct}%`, backgroundColor: studyTokens.accent }}
+                    />
+                  </div>
+                }
+              />
+
+              <ProgressRow
+                label="Các bài đã viết / đã lưu"
+                metric={
+                  <p className="text-sm font-medium leading-snug text-ink">
+                    <span className={metricValueClass}>{formatCount(stats.writingEssaysCompleted)}</span>
+                    <span className={metricSuffixClass}> đã viết</span>
+                    <span className="mx-2 text-ink-muted">·</span>
+                    <span className={metricValueClass}>{formatCount(stats.writingSavedCount)}</span>
+                    <span className={metricSuffixClass}> đã lưu</span>
+                  </p>
+                }
+                trailing={
+                  <Link href="/tu-hoc/luyen-viet/lich-su" className={rowLinkClass}>
+                    Xem lịch sử viết →
+                  </Link>
+                }
+              />
+
+              <ProgressRow
+                label="Language Accuracy"
+                metric={
+                  <p className={metricValueClass}>
+                    {formatCount(stats.writingLanguageAccuracyPercent)}
+                    <span className={metricSuffixClass}>%</span>
+                  </p>
+                }
+                trailing={
+                  <Link href="/tu-hoc/luyen-viet" className={rowLinkClass}>
+                    Luyện kỹ năng viết →
+                  </Link>
+                }
+              />
             </>
           )}
 
@@ -363,7 +453,7 @@ export function ProfileProgressView({
         {!isLoggedIn ? (
           <div className="mt-4 flex flex-col items-center gap-3">
             <p className="text-center text-xs text-ink-muted">
-              Đăng nhập để đồng bộ tiến độ đọc, nghe và từ vựng trên mọi thiết bị.
+              Đăng nhập để đồng bộ tiến độ đọc, nghe, viết và từ vựng trên mọi thiết bị.
             </p>
             <AuthButton mode="sign-in" next={signInNext} signInLabel="Đăng nhập" />
           </div>

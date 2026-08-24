@@ -8,6 +8,7 @@ import { StudyHubListeningMenuNav } from "@/components/study-module/study-hub-li
 import { StudyHubReadingMenuNav } from "@/components/study-module/study-hub-reading-menu-nav";
 import { StudyHubVocabularyMenuNav } from "@/components/study-module/study-hub-vocabulary-menu-nav";
 import { GrammarHubMenuNav } from "@/components/grammar/grammar-hub-menu-nav";
+import { WritingHubMenuNav } from "@/components/writing/writing-hub-menu-nav";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 
 export function StudyHubCurtainMenu({
@@ -18,6 +19,7 @@ export function StudyHubCurtainMenu({
   showListeningNav = false,
   showVocabularyNav = false,
   showGrammarNav = false,
+  showWritingNav = false,
   isLoggedIn,
   userProfile,
   supabaseConfigured,
@@ -30,6 +32,7 @@ export function StudyHubCurtainMenu({
   showListeningNav?: boolean;
   showVocabularyNav?: boolean;
   showGrammarNav?: boolean;
+  showWritingNav?: boolean;
   isLoggedIn: boolean;
   userProfile?: StudyHubUserProfile | null;
   supabaseConfigured: boolean;
@@ -117,6 +120,10 @@ export function StudyHubCurtainMenu({
           ) : showGrammarNav ? (
             <div className="mb-5">
               <GrammarHubMenuNav onNavigate={onClose} />
+            </div>
+          ) : showWritingNav ? (
+            <div className="mb-5">
+              <WritingHubMenuNav onNavigate={onClose} />
             </div>
           ) : null}
 

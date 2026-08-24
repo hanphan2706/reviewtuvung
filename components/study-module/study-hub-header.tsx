@@ -9,6 +9,7 @@ import { StudyHubCurtainMenu } from "@/components/study-module/study-hub-curtain
 import { StudyHubHamburgerButton } from "@/components/study-module/study-hub-hamburger-button";
 import { VocabularyHeaderNav } from "@/components/vocabulary/vocabulary-header-nav";
 import { GrammarHeaderNav, GrammarHubTitleLink } from "@/components/grammar/grammar-header-nav";
+import { WritingHeaderNav, WritingHubTitleLink } from "@/components/writing/writing-header-nav";
 import { useStudyHubDesktopNav } from "@/hooks/use-study-hub-desktop-nav";
 import type { StudyHubUserProfile } from "@/lib/auth/user-profile";
 import { LISTENING_HUB_HREF } from "@/lib/listening/listening-hub-nav";
@@ -104,6 +105,7 @@ export function StudyHubHeader({
   showReadingFilters = false,
   showVocabularyNav = false,
   showGrammarNav = false,
+  showWritingNav = false,
   onTitleClick,
   isLoggedIn,
   userProfile = null,
@@ -118,6 +120,7 @@ export function StudyHubHeader({
   showReadingFilters?: boolean;
   showVocabularyNav?: boolean;
   showGrammarNav?: boolean;
+  showWritingNav?: boolean;
   /** Khi đang session trên cùng URL hub — reset về trang chủ (Luyện đọc / Luyện nghe). */
   onTitleClick?: () => void;
   isLoggedIn: boolean;
@@ -132,6 +135,7 @@ export function StudyHubHeader({
   const listeningNavInMenu = (showListeningFilters || listeningHubTitleLink) && !desktopNav;
   const vocabularyNavInMenu = showVocabularyNav && !desktopNav;
   const grammarNavInMenu = showGrammarNav && !desktopNav;
+  const writingNavInMenu = showWritingNav && !desktopNav;
   const listeningTitleLink = showListeningFilters || listeningHubTitleLink;
 
   return (
@@ -221,6 +225,13 @@ export function StudyHubHeader({
                   </h1>
                   <GrammarHeaderNav />
                 </>
+              ) : showWritingNav ? (
+                <>
+                  <h1 className="m-0 flex min-w-0 shrink-0 items-center leading-none">
+                    <WritingHubTitleLink title={title} />
+                  </h1>
+                  <WritingHeaderNav />
+                </>
               ) : (
                 <h1
                   className={`m-0 flex min-w-0 shrink-0 items-center truncate uppercase tracking-[-0.02em] leading-none ${studyHubHeaderTextClass}`}
@@ -229,7 +240,12 @@ export function StudyHubHeader({
                 </h1>
               )}
 
-              {!listeningTitleLink && !showReadingFilters && !showVocabularyNav && !showGrammarNav && center ? (
+              {!listeningTitleLink &&
+              !showReadingFilters &&
+              !showVocabularyNav &&
+              !showGrammarNav &&
+              !showWritingNav &&
+              center ? (
                 <nav className={`${desktopNavClass}`} aria-label="Điều hướng luyện đọc">
                   {center}
                 </nav>
@@ -251,6 +267,7 @@ export function StudyHubHeader({
         showListeningNav={listeningNavInMenu}
         showVocabularyNav={vocabularyNavInMenu}
         showGrammarNav={grammarNavInMenu}
+        showWritingNav={writingNavInMenu}
         isLoggedIn={isLoggedIn}
         userProfile={userProfile}
         supabaseConfigured={supabaseConfigured}

@@ -10,6 +10,7 @@ import {
 import { parseReviewDayTallies } from "@/lib/review-day-stats";
 import { countDue } from "@/lib/srs";
 import { averageBandsFromAttempts } from "@/lib/ielts/ielts-practice-attempts";
+import { listWritingSamples } from "@/lib/ielts-samples/writing-sample-registry";
 import { mapServerStreak } from "@/lib/reading/reading-progress";
 import { createServerSupabaseClient } from "@/lib/supabase/server";
 
@@ -47,7 +48,15 @@ export async function GET() {
   const userId = auth.user.id;
   const now = Date.now();
 
-  const [progressResult, logResult, listeningLogResult, wordsResult, settingsResult] = await Promise.all([
+  const [
+    progressResult,
+    logResult,
+    listeningLogResult,
+    writingProgressResult,
+    writingSavedResult,
+    wordsResult,
+    settingsResult,
+  ] = await Promise.all([
     supabase
       .from("reading_progress")
       .select("current_streak,longest_streak,last_read_date,articles_opened")
@@ -55,6 +64,14 @@ export async function GET() {
       .maybeSingle(),
     supabase.from("reading_article_log").select("article_key,progress").eq("user_id", userId),
     supabase.from("listening_lesson_log").select("lesson_id,progress").eq("user_id", userId),
+    supabase
+      .from("writing_progress")
+      .select(
+        "essays_completed,skill_checks_total,skill_checks_correct,current_streak,longest_streak,last_activity_date",
+      )
+      .eq("user_id", userId)
+      .maybeSingle(),
+    supabase.from("writing_saved_samples").select("sample_id").eq("user_id", userId),
     supabase.from("srs_words").select("id,next_review_at").eq("user_id", userId),
     supabase
       .from("srs_settings")
@@ -76,6 +93,29 @@ export async function GET() {
       "Lỗi tải dữ liệu";
     return NextResponse.json({ configured: true, error: message }, { status: 500 });
   }
+
+  // writing_progress may be missing until schema is applied — treat as empty, don't fail profile.
+  const writingRow =
+    writingProgressResult.error || !writingProgressResult.data
+      ? null
+      : (writingProgressResult.data as {
+          essays_completed?: number;
+          skill_checks_total?: number;
+          skill_checks_correct?: number;
+          current_streak?: number;
+        });
+
+  const skillTotal = Number(writingRow?.skill_checks_total ?? 0);
+  const skillCorrect = Number(writingRow?.skill_checks_correct ?? 0);
+  const writingLanguageAccuracyPercent =
+    skillTotal > 0 ? Math.round((100 * skillCorrect) / skillTotal) : 0;
+  const writingEssaysCompleted = Math.max(0, Number(writingRow?.essays_completed ?? 0));
+  const writingStreak = Math.max(0, Number(writingRow?.current_streak ?? 0));
+  const writingSavedCount = writingSavedResult.error
+    ? 0
+    : ((writingSavedResult.data as { sample_id?: string }[] | null) ?? []).filter(
+        (row) => typeof row.sample_id === "string",
+      ).length;
 
   const streakRow = progressResult.data ?? {
     current_streak: 0,
@@ -130,6 +170,11 @@ export async function GET() {
     readingArticlesTotal: READING_ARTICLES_TOTAL,
     listeningLessonsCompleted: countCompletedListeningLessons(listeningLogRows),
     listeningLessonsTotal: LISTENING_LESSONS_TOTAL,
+    writingStreak,
+    writingEssaysCompleted,
+    writingEssaysTotal: listWritingSamples().length,
+    writingLanguageAccuracyPercent,
+    writingSavedCount,
     vocabularyTotal: wordRows.length,
     vocabularyReviewedToday: vocabularyReviewedToday(tallies, now),
     vocabularyDueToday: countDue(wordsForDue, now),

@@ -40,7 +40,11 @@
     "listening:sync-cam13": "npx tsx scripts/sync-cam13-listening.ts",
     "listening:sync-cam12": "npx tsx scripts/sync-cam12-listening.ts",
     "listening:sync-transcript": "npx tsx scripts/sync-listening-transcript.ts",
-    "exam:build-midterm": "node scripts/build-midterm-exam-html.mjs"
+    "exam:build-midterm": "node scripts/build-midterm-exam-html.mjs",
+    "samples:sync": "npx tsx scripts/sync-ielts-sample-libraries.mts",
+    "samples:sync:writing": "npx tsx scripts/sync-ielts-sample-libraries.mts --writing-only",
+    "samples:sync:speaking": "npx tsx scripts/sync-ielts-sample-libraries.mts --speaking-only",
+    "samples:sync:dry": "npx tsx scripts/sync-ielts-sample-libraries.mts --dry-run"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.2",
