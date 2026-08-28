@@ -20,8 +20,17 @@ export const BARE_GAP_RE = /\s([1-9]|[12]\d|3[0-9]|40)(?!\d)(?:,(?!\d)|(?=[\s.â€
 export const BARE_GAP_UNIT_AFTER_RE =
   /^\s*(?:metres?|meters?|kilometres?|kilometers?|km\b|kg\b|cm\b|mm\b|%|years?|days?|hours?|minutes?|seconds?|tall|long|wide|high)\b/i;
 
+/** "passage 3", "questions 14", "boxes 9" â€” passage/box refs, not gap numbers. */
+export const BARE_GAP_CONTEXT_BEFORE_RE =
+  /(?:passages?|questions?|boxes?|sections?|parts?|paragraphs?|numbers?|items?)\s*$/i;
+
 export function isBareGapFollowedByUnit(line: string, matchEndIndex: number): boolean {
   return BARE_GAP_UNIT_AFTER_RE.test(line.slice(matchEndIndex));
+}
+
+/** `BARE_GAP_RE` match index points at the whitespace before the digits. */
+export function isBareGapContextFalsePositive(line: string, matchIndex: number): boolean {
+  return BARE_GAP_CONTEXT_BEFORE_RE.test(line.slice(0, matchIndex));
 }
 
 export function textHasBlankChars(text: string): boolean {
@@ -45,9 +54,10 @@ export function extractGapNumbersFromLine(line: string): number[] {
   let bm = bare.exec(line);
   while (bm !== null) {
     const n = Number.parseInt(bm[1] ?? "", 10);
-    const afterIdx = (bm.index ?? 0) + bm[0].length;
+    const matchIndex = bm.index ?? 0;
+    const afterIdx = matchIndex + bm[0].length;
     // Skip measurements / dimensions: "up to 30 metres", "6 metres long".
-    if (isBareGapFollowedByUnit(line, afterIdx)) {
+    if (isBareGapFollowedByUnit(line, afterIdx) || isBareGapContextFalsePositive(line, matchIndex)) {
       bm = bare.exec(line);
       continue;
     }

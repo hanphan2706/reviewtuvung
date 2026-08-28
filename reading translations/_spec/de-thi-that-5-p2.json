@@ -1,0 +1,37 @@
+{
+  "articleId": "de-thi-that-5-p2",
+  "title": "Angelo Mosso’s Pioneering Work in the Study of Human Physiology",
+  "slotCount": 6,
+  "slots": [
+    {
+      "kind": "body",
+      "index": 1,
+      "en": "Scientists in the late nineteenth century were beginning to investigate the functions of blood circulation, trying to tease out the reasons for variations in pulse and pressure and to understand the delivery of energy to the functioning parts of our bodies. Angelo Mosso (1846–1910) was one such pioneer, an Italian physiologist who progressed to become a professor of both pharmacology and physiology at the University of Turin. As was true of many of his enlightened, well-educated contemporaries, Mosso was concerned about the effect of the industrial revolution on the poorer working classes. Hard physical labour and an excessively long working day shortened lives, created conditions conducive to accidents, and crippled the children who were forced into such work at a very early age. One of his most influential contributions to society came from his work and writings on fatigue."
+    },
+    {
+      "kind": "body",
+      "index": 2,
+      "en": "Early experimenters in any field find themselves having to construct previously unknown equipment to investigate fields of study as yet unexplored. Mosso had reviewed the work of fellow scientists who had worked on isolated muscles, such as those extracted from frogs, and who had observed movement and fatigue when these were stimulated electrically. He found two major issues with their methodolgy: there was a lack of evidence both that the findings would be relevant to the human body, and that the dynamometers used to measure the strength of movement could give accurate results. He therefore became determined to construct an instrument to measure human muscular effort and record the effects of fatigue with greater precision."
+    },
+    {
+      "kind": "body",
+      "index": 3,
+      "en": "His device was named an ergograph, meaning “work recorder”. To modern eyes it seems remarkably simple, but such is true of many inventions when viewed with hindsight. It allowed the measurement of the work done by a finger as it was repetitively curled up and straightened. There were basically two parts. One held the hand in position, palm up, by strapping down the arm to a wooden base; this was important to prevent any unintentional movement of the hand while the experiment was taking place. The other part was a recording device that drew the movements of the finger vertically on a paper cylinder which revolved by tiny increments as the experiment proceeded. The index and ring fingers of the hand were each inserted into a brass tube to hold them still. The middle finger was encircled with a leather ring tied to a wire which was connected to a weight after passing through a pulley. The finger had to raise and lower the weight, with the length and speed of these flexions recorded on the paper by a stylus. In this way, he not only learned the fatigue profiles of his subjects but could observe a relationship between performance, tiredness and the emotional state of his subjects."
+    },
+    {
+      "kind": "body",
+      "index": 4,
+      "en": "Mosso’s interest in the interaction between psychology and physiology led to another machine and further groundbreaking research. He was intrigued to observe the pulsing of circulating blood in patients who had suffered traumatic damage to the skull, or cranium. In these patients, a lack of bone covering the brain allowed the strength of the heart’s pumping to be seen beneath the skin. He carried out experiments to see whether certain intellectual activities, such as reading or solving a problem, or emotional responses, such as to a sudden noise, would affect the supply of blood to the brain. He detected some changes in blood supply, and then wanted to find out if the same would be true of individuals with no cranial damage."
+    },
+    {
+      "kind": "body",
+      "index": 5,
+      "en": "His solution was to design another instrument to measure brain activity in uninjured subjects. He designed a wooden table-top for the human subject to lie on, which was placed over another table, balanced on a fulcrum (rather like a seesaw) that would allow the subject to tilt, with head a little higher than feet, or vice versa. Heavy weights beneath the table maintained the stability of the whole unit as the intention was to measure very tiny variations in the balance of the person. Once the upper table was adjusted to be perfectly horizontal, only the breathing created a slight regular oscillation. This breathing and pulses measured in the hands and feet were also recorded."
+    },
+    {
+      "kind": "body",
+      "index": 6,
+      "en": "Once all was in equilibrium, Mosso would ring a bell, while out of sight of the subject. His hypothesis was that this aural stimulus would have to be interpreted by the brain, and that an increased blood flow would result in a slight head-down tilt of the table. Mosso followed the bell-ringing with a wide range of intellectual stimuli, such as reading from a newspaper, a novel, or a university text. He was no doubt well satisfied to observe that the tilting of the table increased proportionately to the difficulty of the subject matter and the intellectual requirements of the task. Mosso’s experiments indicated a direct link between mental effort and an increased volume of blood in the brain. This research was one of the first attempts to ‘image’ the brain, which is now performed by technology such as MRI (magnetic resonance imaging), commonly used in making medical diagnoses today."
+    }
+  ]
+}

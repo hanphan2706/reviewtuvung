@@ -195,6 +195,7 @@
       "type": "ynng",
       "answer": "NO",
       "evidence": {
+        "paragraphLetter": "E",
         "quoteEn": "expectations for children who participate in Western-style schooling are almost certain to be different from those for children who do not participate in such schooling."
       },
       "steps": [
@@ -209,7 +210,7 @@
           "pairs": [
             {
               "q": "Đề: “People's expectations of what children should gain from education are universal” — kỳ vọng về giáo dục là phổ quát, giống nhau khắp nơi.",
-              "p": "Bài khẳng định ngược lại: kỳ vọng “differ” theo văn hóa, và trẻ học kiểu phương Tây sẽ có kỳ vọng khác trẻ không học kiểu đó."
+              "p": "Đoạn E: kỳ vọng “differ” theo văn hóa — “expectations for children who participate in Western-style schooling are almost certain to be different from those for children who do not participate in such schooling”."
             }
           ],
           "paraphrases": [

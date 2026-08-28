@@ -12,11 +12,47 @@ type RealExamAnswerKeyPaths = {
   listening: string;
 };
 
-const ANSWER_KEY_PATHS: Record<RealExamSlug, RealExamAnswerKeyPaths> = {
+const ANSWER_KEY_PATHS: Partial<Record<RealExamSlug, RealExamAnswerKeyPaths>> = {
   "de-thi-that-1": {
     /** Answer-only backup cho midterm listening shell / transcript prep. */
     reading: path.join(process.cwd(), "reading raw/real test 1.txt"),
     listening: path.join(process.cwd(), "listening materials/real test 1 answers.txt"),
+  },
+  "de-thi-that-2": {
+    reading: path.join(process.cwd(), "reading raw/de-thi-that-2.txt"),
+    listening: path.join(process.cwd(), "listening materials/real test 2 answers.txt"),
+  },
+  "de-thi-that-3": {
+    reading: path.join(process.cwd(), "reading raw/de-thi-that-3.txt"),
+    listening: path.join(process.cwd(), "listening materials/real test 3 answers.txt"),
+  },
+  "de-thi-that-4": {
+    reading: path.join(process.cwd(), "reading raw/de-thi-that-4.txt"),
+    listening: path.join(process.cwd(), "listening materials/real test 4 answers.txt"),
+  },
+  "de-thi-that-5": {
+    reading: path.join(process.cwd(), "reading raw/de-thi-that-5.txt"),
+    listening: path.join(process.cwd(), "listening materials/real test 5 answers.txt"),
+  },
+  "de-thi-that-6": {
+    reading: path.join(process.cwd(), "reading raw/de-thi-that-6.txt"),
+    listening: path.join(process.cwd(), "listening materials/real test 6 answers.txt"),
+  },
+  "de-thi-that-7": {
+    reading: path.join(process.cwd(), "reading raw/de-thi-that-7.txt"),
+    listening: path.join(process.cwd(), "listening materials/real test 7 answers.txt"),
+  },
+  "de-thi-that-8": {
+    reading: path.join(process.cwd(), "reading raw/de-thi-that-8.txt"),
+    listening: path.join(process.cwd(), "listening materials/real test 8 answers.txt"),
+  },
+  "de-thi-that-9": {
+    reading: path.join(process.cwd(), "reading raw/de-thi-that-9.txt"),
+    listening: path.join(process.cwd(), "listening materials/real test 9 answers.txt"),
+  },
+  "de-thi-that-10": {
+    reading: path.join(process.cwd(), "reading raw/de-thi-that-10.txt"),
+    listening: path.join(process.cwd(), "listening materials/real test 10 answers.txt"),
   },
 };
 

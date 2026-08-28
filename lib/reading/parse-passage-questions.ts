@@ -55,9 +55,12 @@ export function isGapFillInstructionLine(line: string): boolean {
     /^Complete each sentence/i.test(line) ||
     /^Label the diagrams?/i.test(line) ||
     /^Answer the questions/i.test(line) ||
+    /^Look at the following statements/i.test(line) ||
+    /^Read passage\s+\d+/i.test(line) ||
+    /^Write the answers for questions/i.test(line) ||
     /^Write the correct (letter|number)/i.test(line) ||
     /^Write your answers in boxes/i.test(line) ||
-    /^Write (NO MORE THAN|ONE WORD|TWO WORDS)/i.test(line) ||
+    /^Write (NO MORE THAN|ONE WORD|ONE OR TWO WORDS|TWO WORDS)/i.test(line) ||
     /^Choose\s+(ONE|NO MORE|TWO)/i.test(line)
   );
 }
@@ -100,15 +103,26 @@ function soloOptionLetter(line: string): string | null {
 
 function detectSectionKind(chunk: string): ExamSectionKind {
   if (/Choose\s+TWO\s+(letters|correct\s+answers)/i.test(chunk)) return "choose-two";
+  if (/Choose\s+THREE\s+letters/i.test(chunk)) return "choose-two";
+  if (/Which\s+THREE\s+of the following/i.test(chunk)) return "choose-two";
   // Matching people / researchers / companies / ideas (not sentence endings).
+  if (/Classify the following(?: statements)? as (?:referring to|typical of)/i.test(chunk)) {
+    return "people-match";
+  }
   if (
-    /Match each (statement|person|research finding|idea) with the correct (person|expert|researcher|company|idea)/i.test(
+    /Match each (statement|person|research finding|idea) with the correct (person|expert|researcher|company|idea|term|theory|theories)/i.test(
       chunk,
     )
   ) {
     return "people-match";
   }
-  if (/Look at the following (ideas|statements|findings)/i.test(chunk) && /list of researchers/i.test(chunk)) {
+  if (/Which company does each of the following statements refer to/i.test(chunk)) {
+    return "people-match";
+  }
+  if (/Match letters\s+[A-C]/i.test(chunk) && /company/i.test(chunk)) {
+    return "people-match";
+  }
+  if (/Look at the following (ideas|statements|findings)/i.test(chunk) && /list of (researchers|people)/i.test(chunk)) {
     return "people-match";
   }
   // Matching sentence halves (NOT the gap-fill "Complete the sentences below").
@@ -126,6 +140,8 @@ function detectSectionKind(chunk: string): ExamSectionKind {
   if (/Choose the correct answer/i.test(chunk)) return "mcq-single";
   if (/Choose the correct letter,\s*A,\s*B,\s*C or D/i.test(chunk)) return "mcq-single";
   if (/Choose the correct answer,\s*A,\s*B,\s*C or D/i.test(chunk)) return "mcq-single";
+  if (/choose the best match/i.test(chunk)) return "mcq-single";
+  if (/from the three options,\s*A[\s,–-]*C/i.test(chunk)) return "mcq-single";
   // Cambridge OCR sometimes drops "Choose" and only keeps "Write the correct letter..."
   if (/Write the correct letter,\s*A,\s*B,\s*C or D/i.test(chunk)) return "mcq-single";
   if (
@@ -138,8 +154,20 @@ function detectSectionKind(chunk: string): ExamSectionKind {
   return "note-fill";
 }
 
-function isSkippableLine(line: string): boolean {
+/**
+ * Boilerplate answer-sheet lines that some matching layouts omit from the body.
+ * Do NOT skip for gap-fill / MCQ — those lines are part of the printed instruction block.
+ */
+function isSkippableLine(line: string, kind: ExamSectionKind): boolean {
+  if (kind === "note-fill" || kind === "table-fill" || kind === "summary-fill" || kind === "mcq-single") {
+    return false;
+  }
   return /^Write your answers/i.test(line) || /^In boxes/i.test(line);
+}
+
+/** Cambridge heading Example answer looks like `iii Paragraph A` — not a List of Headings item. */
+function isHeadingExampleAnswer(opt: McqOption): boolean {
+  return /^Paragraph\s+[A-Z]\.?$/i.test(opt.text.trim());
 }
 
 function parseOptionLine(line: string): McqOption | null {
@@ -197,7 +225,9 @@ function parsePhraseBankOption(line: string): McqOption | null {
 function parseRomanHeadingOption(line: string): McqOption | null {
   const m = line.match(/^([ivxlc]{1,4})\s+(.+)$/i);
   if (!m?.[1] || !m[2]) return null;
-  return { letter: m[1].toLowerCase(), text: m[2].trim() };
+  const opt = { letter: m[1].toLowerCase(), text: m[2].trim() };
+  if (isHeadingExampleAnswer(opt)) return null;
+  return opt;
 }
 
 function parseNumberedStatement(line: string): { num: number; text: string } | null {
@@ -247,12 +277,12 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
     if (kind === "people-match" || kind === "sentence-ending") {
       for (let i = 1; i < lines.length; i++) {
         const line = lines[i] ?? "";
-        if (isSkippableLine(line)) continue;
+        if (isSkippableLine(line, kind)) continue;
         if (/^NB\b/i.test(line)) {
           instructionLines.push(line);
           continue;
         }
-        if (/^List of (people|experts|endings|ideas|companies|researchers)/i.test(line)) continue;
+        if (/^List of (people|experts|endings|ideas|companies|researchers|styles|love styles)/i.test(line)) continue;
 
         let gotOpt = false;
         for (const source of expandOptionSourceLines(line)) {
@@ -272,7 +302,10 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
 
         if (
           /^Look at the following/i.test(line) ||
+          /^Classify the following/i.test(line) ||
           /^Match each (statement|person|research finding|idea)/i.test(line) ||
+          /^Match letters\s+[A-C]/i.test(line) ||
+          /^Which company does each of the following/i.test(line) ||
           /^Complete each sentence with the correct ending/i.test(line) ||
           /^Write the correct letter/i.test(line)
         ) {
@@ -284,7 +317,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
     for (let i = 1; i < lines.length; i++) {
       const line = lines[i] ?? "";
       if (kind === "people-match" || kind === "sentence-ending") continue;
-      if (isSkippableLine(line)) continue;
+      if (isSkippableLine(line, kind)) continue;
       if (/^NB\b/i.test(line)) {
         instructionLines.push(line);
         continue;
@@ -413,14 +446,14 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
       if (phase === "stmt") continue;
 
       if (kind === "choose-two") {
-        if (/^Which TWO/i.test(line)) {
-          if (!bodyLines.some((l) => /^Which TWO/i.test(l))) {
+        if (/^Which (TWO|THREE)/i.test(line)) {
+          if (!bodyLines.some((l) => /^Which (TWO|THREE)/i.test(l))) {
             bodyLines.push(line);
           }
           phase = "body";
           continue;
         }
-        if (/^Choose\s+TWO/i.test(line)) {
+        if (/^Choose\s+(TWO|THREE)/i.test(line)) {
           if (phase === "instr") instructionLines.push(line);
           continue;
         }
@@ -434,7 +467,7 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
           phase = "opts";
           continue;
         }
-        if ((phase === "body" || phase === "opts") && line.length >= 12 && !isSkippableLine(line)) {
+        if ((phase === "body" || phase === "opts") && line.length >= 12 && !isSkippableLine(line, kind)) {
           const letter = String.fromCharCode(65 + options.length);
           if (options.length < 8) {
             options.push({ letter, text: line });
@@ -491,15 +524,47 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
       }
 
       if (kind === "mcq-single") {
-        if (/^Choose the correct (letter|answer)/i.test(line)) {
+        if (
+          /^Choose the correct (letter|answer)/i.test(line) ||
+          /^Write the correct letter/i.test(line) ||
+          /^Read the text and choose/i.test(line) ||
+          /choose the best match/i.test(line) ||
+          isGapFillInstructionLine(line)
+        ) {
           instructionLines.push(line);
           continue;
+        }
+        // Singular "Question N" often has stem + A–D without a numbered stem line.
+        if (!currentMcq && titleNums.length === 1) {
+          currentMcq = { num: titleNums[0]!, text: "", options: [] };
+        }
+        if (currentMcq) {
+          const sameLineOpt = parseOptionLine(line) ?? parsePhraseBankOption(line);
+          if (sameLineOpt) {
+            currentMcq.options.push(sameLineOpt);
+            continue;
+          }
+          if (!currentMcq.text) {
+            currentMcq.text = line;
+            continue;
+          }
+          if (currentMcq.options.length === 0) {
+            currentMcq.text = `${currentMcq.text} ${line}`.trim();
+            continue;
+          }
         }
         continue;
       }
 
       if (kind === "paragraph-match") {
-        if (/^List of Headings/i.test(line)) continue;
+        if (/^List of Headings/i.test(line) || /^Paragraph Headings/i.test(line)) continue;
+        // Skip Example row: "Answer … Example" / "Example" / "e.g Paragraph…" / "Example: Section A … viii".
+        if (/^Answer\b/i.test(line) && /Example/i.test(line)) continue;
+        if (/^Example\b/i.test(line)) continue;
+        if (/^e\.?g\.?\b/i.test(line)) continue;
+        if (/^Section\s+[A-Z]\b/i.test(line) && /\b[ivxlc]+\b/i.test(line) && !/^\d/.test(line)) {
+          continue;
+        }
         const romanOpt = parseRomanHeadingOption(line);
         if (romanOpt) {
           options.push(romanOpt);
@@ -508,7 +573,8 @@ export function parsePassageExamSections(questionsText: string): ExamQuestionSec
         if (
           /^Reading Passage/i.test(line) ||
           /^Choose the correct heading/i.test(line) ||
-          /^Write the correct number/i.test(line)
+          /^Write the correct number/i.test(line) ||
+          isGapFillInstructionLine(line)
         ) {
           instructionLines.push(line);
           continue;

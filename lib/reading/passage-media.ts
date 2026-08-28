@@ -353,6 +353,69 @@ const READING_ARTICLE_IMAGES: Record<string, string> = {
     "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=1200&q=80&auto=format&fit=crop",
   "de-thi-that-1-p3":
     "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1200&q=80&auto=format&fit=crop",
+  /** Đề thi thật IELTS 2 — Newton / Antarctica / Thinking Fast and Slow */
+  "de-thi-that-2-p1":
+    "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-2-p2":
+    "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-2-p3":
+    "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=1200&q=80&auto=format&fit=crop",
+  /** Đề thi thật IELTS 3 — land / ocean liners / tourism */
+  "de-thi-that-3-p1":
+    "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-3-p2":
+    "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-3-p3":
+    "https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?w=1200&q=80&auto=format&fit=crop",
+  /** Đề thi thật IELTS 4 — Cathy Freeman / plastic bottles / African wild dogs */
+  "de-thi-that-4-p1":
+    "https://images.unsplash.com/photo-1776705865335-4e0f85bc6956?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-4-p2":
+    "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-4-p3":
+    "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&q=80&auto=format&fit=crop",
+  /** Đề thi thật IELTS 5 — remittances / Mosso physiology / Shakespeare authorship */
+  "de-thi-that-5-p1":
+    "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-5-p2":
+    "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-5-p3":
+    "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1200&q=80&auto=format&fit=crop",
+  /** Đề thi thật IELTS 6 — penicillin / DST / willpower */
+  "de-thi-that-6-p1":
+    "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-6-p2":
+    "https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-6-p3":
+    "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=1200&q=80&auto=format&fit=crop",
+  /** Đề thi thật IELTS 7 — wolf packs / environmental medicine / TV & sport */
+  "de-thi-that-7-p1":
+    "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-7-p2":
+    "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-7-p3":
+    "https://images.unsplash.com/photo-1762010297288-ca543e4f0909?w=1200&q=80&auto=format&fit=crop",
+  /** Đề thi thật IELTS 8 — electroreception / Olympics / time travel */
+  "de-thi-that-8-p1":
+    "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-8-p2":
+    "https://images.unsplash.com/photo-1769708046880-0d17b7a849b3?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-8-p3":
+    "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1200&q=80&auto=format&fit=crop",
+  /** Đề thi thật IELTS 9 — kefir / entomophagy / love stories */
+  "de-thi-that-9-p1":
+    "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-9-p2":
+    "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-9-p3":
+    "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?w=1200&q=80&auto=format&fit=crop",
+  /** Đề thi thật IELTS 10 — chronobiology / triune brain / helium */
+  "de-thi-that-10-p1":
+    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-10-p2":
+    "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=1200&q=80&auto=format&fit=crop",
+  "de-thi-that-10-p3":
+    "https://images.unsplash.com/photo-1667351391926-51a9460aeec9?w=1200&q=80&auto=format&fit=crop",
 };
 
 function assertUniqueArticleImages(map: Record<string, string>): void {

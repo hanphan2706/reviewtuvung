@@ -49,7 +49,18 @@ import {
   CAM15_TEST3,
   CAM15_TEST4,
 } from "@/lib/reading/cambridge-14-15-articles";
-import { REAL_TEST_1_ARTICLES } from "@/lib/reading/real-exam-articles";
+import {
+  REAL_TEST_1_ARTICLES,
+  REAL_TEST_2_ARTICLES,
+  REAL_TEST_3_ARTICLES,
+  REAL_TEST_4_ARTICLES,
+  REAL_TEST_5_ARTICLES,
+  REAL_TEST_6_ARTICLES,
+  REAL_TEST_7_ARTICLES,
+  REAL_TEST_8_ARTICLES,
+  REAL_TEST_9_ARTICLES,
+  REAL_TEST_10_ARTICLES,
+} from "@/lib/reading/real-exam-articles";
 
 export type ReadingPilotId =
   | "cam17-test4"
@@ -95,7 +106,16 @@ export type ReadingPilotId =
   | "reading-challenge-1"
   | "reading-challenge-2"
   | "reading-challenge-3"
-  | "de-thi-that-1";
+  | "de-thi-that-1"
+  | "de-thi-that-2"
+  | "de-thi-that-3"
+  | "de-thi-that-4"
+  | "de-thi-that-5"
+  | "de-thi-that-6"
+  | "de-thi-that-7"
+  | "de-thi-that-8"
+  | "de-thi-that-9"
+  | "de-thi-that-10";
 
 export type ReadingDifficulty = "Dễ" | "Trung bình" | "Trung bình – khó" | "Khó";
 
@@ -349,6 +369,15 @@ export const READING_HUB_ARTICLES: ReadingHubArticle[] = [
   ...COMPASS_PUBLISHING_2,
   ...COMPASS_PUBLISHING_3,
   ...REAL_TEST_1_ARTICLES,
+  ...REAL_TEST_2_ARTICLES,
+  ...REAL_TEST_3_ARTICLES,
+  ...REAL_TEST_4_ARTICLES,
+  ...REAL_TEST_5_ARTICLES,
+  ...REAL_TEST_6_ARTICLES,
+  ...REAL_TEST_7_ARTICLES,
+  ...REAL_TEST_8_ARTICLES,
+  ...REAL_TEST_9_ARTICLES,
+  ...REAL_TEST_10_ARTICLES,
   ...CAM20_TEST4,
   ...CAM20_TEST3,
   ...CAM20_TEST2,

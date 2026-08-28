@@ -1347,7 +1347,8 @@
       "type": "tfng",
       "answer": "NOT GIVEN",
       "evidence": {
-        "quoteEn": "Discovering the molecules that allow plants to sense temperature has the potential to accelerate the breeding of crops resilient to thermal stress and climate change."
+        "quoteEn": "Discovering the molecules that allow plants to sense temperature has the potential to accelerate the breeding of crops resilient to thermal stress and climate change.",
+        "paragraphLetter": "D"
       },
       "steps": [
         {

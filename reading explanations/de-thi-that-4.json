@@ -1,0 +1,1954 @@
+{
+  "pilotId": "de-thi-that-4",
+  "schemaVersion": 4,
+  "note": "Đề thi thật IELTS 4 — giải thích chi tiết: Cathy Freeman / Plastic crisis / African wild dogs.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Cathy Freeman – Australian's track queen",
+      "questions": "1-14"
+    },
+    "2": {
+      "title": "The world's desire for plastic is dangerous",
+      "questions": "15-26"
+    },
+    "3": {
+      "title": "On the trail of Africa's wild dogs",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "xi",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "Freeman's grandmother was part of the \"stolen generation\" of Aboriginal people in Australia—from the early 20th century until the 1970s; many Aboriginal children were taken from their parents to be raised in state-run institutions."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading xi: A difficult childhood",
+              "p": "Freeman's grandmother was part of the \"stolen generation\" of Aboriginal people in Australia—from the early 20th century until the 1970s; many Aboriginal children were taken from their parents to be raised in state-run institutions."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading xi: A difficult childhood",
+              "p": "Freeman's grandmother was part of the \"stolen generation\" of Aboriginal people in Australia—from the early 20th century until the 1970s; many Aboriginal children were taken from their parents to be raised in state-run institutions."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn B kể về thế hệ bị cướp, tuổi thơ khó khăn, mất cha và em gái — xi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "xi"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "v",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Her mother, Cecilia, encouraged her to pursue her interest in athletics, and when she was ten, her stepfather told her she could win a gold medal at the Olympics if she trained properly."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading v: Family support for running",
+              "p": "Her mother, Cecilia, encouraged her to pursue her interest in athletics, and when she was ten, her stepfather told her she could win a gold medal at the Olympics if she trained properly."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading v: Family support for running",
+              "p": "Her mother, Cecilia, encouraged her to pursue her interest in athletics, and when she was ten, her stepfather told her she could win a gold medal at the Olympics if she trained properly."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mẹ và cha dượng khuyến khích chạy — v."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "v"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "At the age of 15, she competed at the National School Championships, and did well enough to be encouraged to try out for the 1990 Commonwealth Games team."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iii: Early competition",
+              "p": "At the age of 15, she competed at the National School Championships, and did well enough to be encouraged to try out for the 1990 Commonwealth Games team."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading iii: Early competition",
+              "p": "At the age of 15, she competed at the National School Championships, and did well enough to be encouraged to try out for the 1990 Commonwealth Games team."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Các giải đấu sớm: Commonwealth Games 1990, World Junior — iii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iii"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "In 1992, she competed in the 400-meter relay at the Barcelona Olympics, making it to the second qualifying round."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vi: Her first Olympics",
+              "p": "In 1992, she competed in the 400-meter relay at the Barcelona Olympics, making it to the second qualifying round."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading vi: Her first Olympics",
+              "p": "In 1992, she competed in the 400-meter relay at the Barcelona Olympics, making it to the second qualifying round."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Barcelona 1992 — Olympics đầu tiên — vi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "viii",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "After winning the 400 meters, Freeman ran her victory lap, carrying not the Australian national flag, but the red, black, and yellow Aboriginal flag."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading viii: Aboriginal identity on the track",
+              "p": "After winning the 400 meters, Freeman ran her victory lap, carrying not the Australian national flag, but the red, black, and yellow Aboriginal flag."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading viii: Aboriginal identity on the track",
+              "p": "After winning the 400 meters, Freeman ran her victory lap, carrying not the Australian national flag, but the red, black, and yellow Aboriginal flag."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mang cờ Aboriginal sau chiến thắng — viii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "viii"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "x",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "At the 1996 Olympic games in Atlanta, Freeman won a silver medal in the 400 meters."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn G cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading x: Second on the big stage",
+              "p": "At the 1996 Olympic games in Atlanta, Freeman won a silver medal in the 400 meters."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading x: Second on the big stage",
+              "p": "At the 1996 Olympic games in Atlanta, Freeman won a silver medal in the 400 meters."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Huy chương bạc Atlanta 1996 — x."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "x"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "ii",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "In 1999, Freeman met Alexander Bodecker, an American executive for the Nike shoe company, and the two fell in love."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn H cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ii: A new love",
+              "p": "In 1999, Freeman met Alexander Bodecker, an American executive for the Nike shoe company, and the two fell in love."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading ii: A new love",
+              "p": "In 1999, Freeman met Alexander Bodecker, an American executive for the Nike shoe company, and the two fell in love."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Gặp và yêu Bodecker, chia tay Bideau — ii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ii"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "ix",
+      "evidence": {
+        "paragraphLetter": "I",
+        "quoteEn": "When she won, with a time of 49.11 seconds, she was so relieved that she dropped to her knees on the track after completing the race."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn I cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ix: Winning the top medal at home",
+              "p": "When she won, with a time of 49.11 seconds, she was so relieved that she dropped to her knees on the track after completing the race."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading ix: Winning the top medal at home",
+              "p": "When she won, with a time of 49.11 seconds, she was so relieved that she dropped to her knees on the track after completing the race."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vàng 400m Sydney 2000 — ix."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ix"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "J",
+        "quoteEn": "This time, instead of being criticised for carrying the Aboriginal flag around the track; she was widely celebrated by the Australian media and public."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn J cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vii: Adored by her nation",
+              "p": "This time, instead of being criticised for carrying the Aboriginal flag around the track; she was widely celebrated by the Australian media and public."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading vii: Adored by her nation",
+              "p": "This time, instead of being criticised for carrying the Aboriginal flag around the track; she was widely celebrated by the Australian media and public."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Lần này được cả nước ca ngợi — vii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vii"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "stepfather",
+      "evidence": {
+        "quoteEn": "when she was ten, her stepfather told her she could win a gold medal at the Olympics if she trained properly."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai ngoài mẹ ủng hộ Cathy chạy bộ?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "support from her mother and ______",
+              "p": "her stepfather told her she could win a gold medal"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "support from her mother and ______",
+              "p": "her stepfather told her she could win a gold medal"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "stepfather"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "stepfather"
+        }
+      ],
+      "answerAlternatives": [
+        "Stepfather"
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "scholarship",
+      "evidence": {
+        "quoteEn": "Freeman was one of only a few Aborigines who won a scholarship to a boarding school where she could learn and train."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cathy nhận gì để học và tập ở trường nội trú?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "won a ______ at a young age",
+              "p": "won a scholarship to a boarding school"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "won a ______ at a young age",
+              "p": "won a scholarship to a boarding school"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "scholarship"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "scholarship"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Commonwealth games",
+      "evidence": {
+        "quoteEn": "She made the team as a sprinter, and was a member of the 4 X 100-meter relay team, which won gold at the Commonwealth Games."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thành công quốc tế đầu tiên năm 1990 ở đâu?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "1990 at the ______",
+              "p": "won gold at the Commonwealth Games"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "1990 at the ______",
+              "p": "won gold at the Commonwealth Games"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Commonwealth games"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Commonwealth games"
+        }
+      ],
+      "answerAlternatives": [
+        "Commonwealth Games"
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "400 meters",
+      "evidence": {
+        "quoteEn": "At the 1996 Olympic games in Atlanta, Freeman won a silver medal in the 400 meters."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Huy chương bạc Olympics 1996 ở nội dung nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "second in the ______",
+              "p": "won a silver medal in the 400 meters"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "second in the ______",
+              "p": "won a silver medal in the 400 meters"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "400 meters"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "400 meters"
+        }
+      ],
+      "answerAlternatives": [
+        "400 metres",
+        "400 m"
+      ]
+    },
+    "14": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "gold medal",
+      "evidence": {
+        "quoteEn": "Freeman was, of course, Australia's favourite to win a gold medal in the 400 meters at the 2000 Olympics, held in Sydney."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Năm 2000 Cathy đoạt gì ở Sydney?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "finally won a ______",
+              "p": "Australia's favourite to win a gold medal in the 400 meters at the 2000 Olympics, held in Sydney"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "finally won a ______",
+              "p": "Australia's favourite to win a gold medal in the 400 meters at the 2000 Olympics, held in Sydney"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "gold medal"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "gold medal"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "creating an environmental crisis some campaigners predict will be as serious as climate change"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chuyên gia nói rác nhựa tệ hơn biến đổi khí hậu?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "plastic waste is worse than global warming",
+              "p": "Bài chỉ nói một số nhà vận động dự đoán khủng hoảng nhựa \"as serious as climate change\" — ngang mức, không nói tệ hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "plastic waste is worse than global warming",
+              "p": "Bài chỉ nói một số nhà vận động dự đoán khủng hoảng nhựa \"as serious as climate change\" — ngang mức, không nói tệ hơn."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mâu thuẫn \"worse than\" → FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Most plastic bottles, which are used for soft drinks and water, are made from Pet plastic, which is highly recyclable"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hầu hết chai uống làm từ nhựa dễ tái chế?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "easily recycled",
+              "p": "Pet plastic \"highly recyclable\" — khớp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "easily recycled",
+              "p": "Pet plastic \"highly recyclable\" — khớp."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp trực tiếp → TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "In the UK 38.5 million plastic bottles are used every day – only just over half make it to recycling"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở Anh chỉ 20% chai được tái chế?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "only 20% are recycled",
+              "p": "Bài nói \"just over half\" (hơn một nửa) được tái chế, không phải 20%."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "only 20% are recycled",
+              "p": "Bài nói \"just over half\" (hơn một nửa) được tái chế, không phải 20%."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "20% mâu thuẫn \"over half\" → FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "China is responsible for most of the increase in demand"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đến 2020 Trung Quốc dùng nhiều chai hơn cả thế giới còn lại?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "By 2020, China's use ... greater than the rest of the world",
+              "p": "Bài nói TQ chiếm phần lớn tăng trưởng và gần một phần tư nhu cầu toàn cầu, nhưng không dự báo đến 2020 sẽ vượt phần còn lại của thế giới."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "By 2020, China's use ... greater than the rest of the world",
+              "p": "Bài nói TQ chiếm phần lớn tăng trưởng và gần một phần tư nhu cầu toàn cầu, nhưng không dự báo đến 2020 sẽ vượt phần còn lại của thế giới."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có so sánh đó → NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "The top six drinks companies in the world use a combined average of just 6.6% of recycled Pet in their products"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Các hãng đồ uống lớn chỉ dùng một phần nhỏ nhựa tái chế?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "only use a small percentage of recycled plastic",
+              "p": "Chỉ 6.6% RPet — rất ít."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "only use a small percentage of recycled plastic",
+              "p": "Chỉ 6.6% RPet — rất ít."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp → TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "It's clear that the soft drinks industry needs to reduce its plastic waste"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Greenpeace nói đại dương sẽ đầy nhựa nếu doanh nghiệp không hành động?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "oceans will be filled with plastic if big business doesn't act",
+              "p": "Greenpeace nói ngành nước ngọt cần giảm rác nhựa và tìm thấy chai ở bờ Scotland; không nói đại dương sẽ \"filled with plastic\"."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "oceans will be filled with plastic if big business doesn't act",
+              "p": "Greenpeace nói ngành nước ngọt cần giảm rác nhựa và tìm thấy chai ở bờ Scotland; không nói đại dương sẽ \"filled with plastic\"."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có dự đoán đó → NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "equivalent to about 20,000 bottles being bought every second"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mỗi giây có khoảng bao nhiêu chai nhựa được mua?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: twenty thousand",
+              "p": "about 20,000 bottles being bought every second"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "B: twenty thousand",
+              "p": "about 20,000 bottles being bought every second"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "20.000 chai/giây khớp B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "12.000 không xuất hiện; bài nêu 20.000."
+            },
+            {
+              "letter": "C",
+              "whyVi": "15 triệu/giây quá lớn so với 20.000."
+            },
+            {
+              "letter": "D",
+              "whyVi": "38,5 triệu là số chai/ngày ở Anh, không phải toàn cầu mỗi giây."
+            }
+          ]
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "most plastic bottles produced end up in rubbish dumps or in the ocean"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chai không tái chế thường bị…?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: put into garbage tips",
+              "p": "end up in rubbish dumps or in the ocean"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "C: put into garbage tips",
+              "p": "end up in rubbish dumps or in the ocean"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "rubbish dumps = bãi rác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài nói đốt một phần ở Anh nhưng phần lớn là bãi rác/đại dương, không phải đa số \"set fire to\"."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói đưa lên thuyền."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không gửi về công ty."
+            }
+          ]
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "The majority of plastic bottles used across the globe are for drinking water"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đa số chai nhựa dùng cho…?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: drinking water",
+              "p": "majority ... are for drinking water"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "B: drinking water",
+              "p": "majority ... are for drinking water"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Trực tiếp nêu drinking water."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "storage không được nhắc."
+            },
+            {
+              "letter": "C",
+              "whyVi": "recycling là quy trình, không phải mục đích sử dụng chính."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Coca-Cola là một hãng, không phải mục đích đa số chai."
+            }
+          ]
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "A third have no targets to increase their use of recycled plastic"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bao nhiêu phần trăm hãng không có kế hoạch tăng nhựa tái chế?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: 33%",
+              "p": "A third have no targets"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "C: 33%",
+              "p": "A third have no targets"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "A third ≈ 33%."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "6,6% là mức RPet trung bình các hãng dùng, không phải tỷ lệ không có kế hoạch."
+            },
+            {
+              "letter": "B",
+              "whyVi": "30% không khớp \"a third\"."
+            },
+            {
+              "letter": "D",
+              "whyVi": "100% sai; chỉ một phần ba."
+            }
+          ]
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Plastic drinking bottles could be made out of 100% recycled plastic, known as RPet"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "RPet là gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "D: bottles made out of 100% recycled plastic",
+              "p": "100% recycled plastic, known as RPet"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "D: bottles made out of 100% recycled plastic",
+              "p": "100% recycled plastic, known as RPet"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Định nghĩa trực tiếp trong bài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "RPet không phải tên hãng."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Rosemary Downey là chuyên gia bao bì, không phải RPet."
+            },
+            {
+              "letter": "C",
+              "whyVi": "RPet là nhựa đã tái chế 100%, không chỉ \"highly recyclable material\"."
+            }
+          ]
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "campaigners are pressing big drinks companies to radically increase the amount of recycled plastic in their bottles"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Greenpeace muốn giảm rác nhựa bằng cách…?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "D: use more recycled material",
+              "p": "increase the amount of recycled plastic in their bottles"
+            },
+            {
+              "q": "Greenpeace wants more recycled content",
+              "p": "the big six drinks companies had to do more to increase the recycled content of their plastic bottles"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "D: use more recycled material",
+              "p": "increase the amount of recycled plastic in their bottles"
+            },
+            {
+              "q": "Greenpeace wants more recycled content",
+              "p": "the big six drinks companies had to do more to increase the recycled content of their plastic bottles"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tăng hàm lượng nhựa tái chế."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Ngành công nghiệp chống thuế/phí; Greenpeace không được trích là ủng hộ thuế sản xuất."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Tìm thấy rác ở bờ Scotland nhưng giải pháp chính là giảm rác từ nguồn, không \"clean the oceans\"."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không kêu gọi ngừng uống nước đóng chai."
+            }
+          ]
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "also called the painted wolf or the Cape hunting dog"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chó hoang thường được gọi là \"hunting wolf\"?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "referred to as the hunting wolf",
+              "p": "Bài gọi \"painted wolf\" hoặc \"Cape hunting dog\", không phải \"hunting wolf\"."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "referred to as the hunting wolf",
+              "p": "Bài gọi \"painted wolf\" hoặc \"Cape hunting dog\", không phải \"hunting wolf\"."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tên không khớp → NO."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Lycaon pictus once roamed most of sub-Saharan Africa. Now only about 5,000 dogs can be found in isolated pockets of the continent"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở Sub-Saharan còn nhiều chó hoang hơn ở Nam Phi?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "more ... in Sub-Saharan African than in South Africa",
+              "p": "Bài nói từng phủ khắp Sub-Saharan và còn ~5.000 con rải rác; không so sánh số lượng Sub-Saharan vs Nam Phi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more ... in Sub-Saharan African than in South Africa",
+              "p": "Bài nói từng phủ khắp Sub-Saharan và còn ~5.000 con rải rác; không so sánh số lượng Sub-Saharan vs Nam Phi."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không so sánh → NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "wildlife managers reintroduced several packs of wild dogs from elsewhere in South Africa to this park in the hope of rebuilding the species"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhà khoa học cứu loài bằng cách thả vào công viên quốc gia mới?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "putting them in new national parks in South Africa",
+              "p": "Tái thả nhiều bầy vào công viên để tái thiết loài — khớp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "putting them in new national parks in South Africa",
+              "p": "Tái thả nhiều bầy vào công viên để tái thiết loài — khớp."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp → YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "They travel up to 30 kilometres daily, with vast home ranges, 600 to 800 square kilometres on average"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chó hoang đi rất xa và phạm vi lớn?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "roam large areas and often travel extreme distances",
+              "p": "30 km/ngày, home range 600–800 km² — khớp."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "roam large areas and often travel extreme distances",
+              "p": "30 km/ngày, home range 600–800 km² — khớp."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp → YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "As a discipline, the science of reintroduction has been poorly studied"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thả lại vào vùng mới khá dễ và đã có nhiều nghiên cứu?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "quite easy and there has been a lot of research",
+              "p": "Monfort: \"Reintroduction is not easy\" và \"poorly studied\" — mâu thuẫn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "quite easy and there has been a lot of research",
+              "p": "Monfort: \"Reintroduction is not easy\" và \"poorly studied\" — mâu thuẫn."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mâu thuẫn → NO."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Monfort has proposed the development of a satellite-tagging system so that Szykman and Monfort can track the animals year-round"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Radio transmitter giúp theo dõi linh cẩu và sư tử?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Radio transmitters help scientist track the movements of hyenas and lions",
+              "p": "Radio collar cho chó hoang; vệ tinh đề xuất cho hyena/sư tử — không phải radio transmitter cho hyena/sư tử."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Radio transmitters help scientist track the movements of hyenas and lions",
+              "p": "Radio collar cho chó hoang; vệ tinh đề xuất cho hyena/sư tử — không phải radio transmitter cho hyena/sư tử."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sai loại thiết bị/ loài → NO."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "choose-two",
+      "answer": "B",
+      "answerPair": [
+        33,
+        34,
+        35
+      ],
+      "correctLetters": [
+        "B",
+        "D",
+        "G"
+      ],
+      "evidence": {
+        "quoteEn": "If you fence in a reserve or surround a wild area with human settlement then you need to adjust the species levels to maintain healthy populations of dogs, hyenas, and lions"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn BA lý do khiến chó hoang châu Phi đang bị đe dọa — ý B: mất môi trường sống."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: The loss of habitat for the dogs",
+              "p": "surround a wild area with human settlement — mất/ thu hẹp vùng hoang dã"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "loss of habitat",
+              "p": "human settlement encroaching on wild areas"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khu hoang dã bị bao vây bởi định cư con người → mất habitat."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B (cùng D, G)"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Nghiên cứu khoa học (Szykman theo dõi) không phải nguyên nhân loài bị đe dọa."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Hàng rào được nhắc trong bối cảnh quản lý khu bảo tồn, không phải \"building fences to capture them\"."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Vận chuyển chó để tái thả là biện pháp bảo tồn, không phải lý do nguy cấp."
+            },
+            {
+              "letter": "F",
+              "whyVi": "Bài không nói thiếu thức ăn."
+            }
+          ]
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "choose-two",
+      "answer": "D",
+      "answerPair": [
+        33,
+        34,
+        35
+      ],
+      "correctLetters": [
+        "B",
+        "D",
+        "G"
+      ],
+      "evidence": {
+        "quoteEn": "These two species also play a role in reducing African wild dog numbers"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ý D: linh cẩu và sư tử cạnh tranh với chó hoang."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "D: Hyenas and lions competing with them",
+              "p": "hyenas and lions ... play a role in reducing African wild dog numbers"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai loài này làm giảm số chó hoang."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần loại trừ ở câu 33."
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "choose-two",
+      "answer": "G",
+      "answerPair": [
+        33,
+        34,
+        35
+      ],
+      "correctLetters": [
+        "B",
+        "D",
+        "G"
+      ],
+      "evidence": {
+        "quoteEn": "The African wild dog, officially named Lycaon pictus, and also called the painted wolf or the Cape hunting dog is the victim mainly of human hunting"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ý G: con người giết chó hoang."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "G: Humans killing wild dogs",
+              "p": "victim mainly of human hunting; farmers often just shot the dogs on sight"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Săn bắt và bắn hạ bởi nông dân — nguyên nhân chính."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "bodyVi": "Xem phần loại trừ ở câu 33."
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Szykman, a researcher at the Smithsonian National Animal Park in Washington, D.C., is tracking the dogs for a park project"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai theo dõi chuyển động và hành vi chó hoang?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "monitoring movement and behaviour",
+              "p": "is tracking the dogs for a park project"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "monitoring movement and behaviour",
+              "p": "is tracking the dogs for a park project"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Szykman dùng radio transmitter theo dõi chó."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A — Micaela Szykman"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Monfort đề xuất hệ thống vệ tinh, không trực tiếp theo dõi hàng ngày."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Creel bình luận chính sách tái thả, không mô tả theo dõi trực tiếp."
+            }
+          ]
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "This is one of the most intensely social animals out there,\" said Szykman, a behavioural scientist. \"The entire pack, sometimes up to 20 dogs, always hunts, plays, walks, and feeds together."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai nói chó hoang rất gắn kết gia đình?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "family orientated species",
+              "p": "intensely social ... entire pack ... always hunts, plays, walks, and feeds together"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "family orientated species",
+              "p": "intensely social ... entire pack ... always hunts, plays, walks, and feeds together"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Szykman mô tả tính xã hội cao."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A — Micaela Szykman"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Monfort nói về tái thả, không mô tả hành vi gia đình."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Creel nói về quy mô khu bảo tồn."
+            }
+          ]
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "The dogs' radio collars provide only limited contact. Monfort has proposed the development of a satellite-tagging system"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai cho rằng hệ thống theo dõi hiện tại chưa đủ?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "current systems of tracking ... is not sufficient",
+              "p": "radio collars provide only limited contact; proposed satellite-tagging"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "current systems of tracking ... is not sufficient",
+              "p": "radio collars provide only limited contact; proposed satellite-tagging"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Monfort: radio collar hạn chế."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B — Steven Monfort"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Szykman đang dùng radio nhưng không nói hệ thống không đủ."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Creel không bàn thiết bị theo dõi."
+            }
+          ]
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "To Scott Creel, a behavioural scientist at Montana State University in Bozeman, reintroduction is the right approach for South Africa"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai tin tái thả là giải pháp tốt nhất hiện tại?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "repopulating areas ... best solution",
+              "p": "reintroduction is the right approach for South Africa"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "repopulating areas ... best solution",
+              "p": "reintroduction is the right approach for South Africa"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Creel ủng hộ reintroduction."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C — Scott Creel"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Szykman nghiên cứu theo dõi, không kết luận \"best solution\"."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Monfort thận trọng về tái thả, không gọi là giải pháp tốt nhất."
+            }
+          ]
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "In the past, farmers often just shot the dogs on sight. Now when somebody sees the dogs outside the reserve, Szykman gets a call about their location"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai thấy thái độ địa phương đang tích cực hơn?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "local attitude ... changing in a positive way",
+              "p": "Now ... Szykman gets a call about their location (thay vì bắn ngay)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "local attitude ... changing in a positive way",
+              "p": "Now ... Szykman gets a call about their location (thay vì bắn ngay)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nông dân báo vị trí thay vì bắn — thái độ tích cực; Szykman nhận cuộc gọi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A — Micaela Szykman"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Monfort không nói về thái độ nông dân."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Creel nói lịch sử săn bắt nhưng không mô tả thay đổi thái độ gần đây."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

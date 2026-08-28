@@ -1,0 +1,1858 @@
+{
+  "pilotId": "de-thi-that-7",
+  "schemaVersion": 4,
+  "note": "Đề thi thật IELTS 7 — giải thích chi tiết: Wolf Packs / Environmental medicine / Television and Sport.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Wolf Packs",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Environmental medicine",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Television and Sport",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "That is the responsibility of the beta wolf, who assumes second place in the hierarchy of the pack."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mô tả này thuộc vai trò nào trong bầy sói: ở vanguard khi săn/kết liệu?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "ở vanguard khi săn/kết liệu",
+              "p": "That is the responsibility of the beta wolf, who assumes second place in the hierarchy of the pack."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "ở vanguard khi săn/kết liệu",
+              "p": "That is the responsibility of the beta wolf, who assumes second place in the hierarchy of the pack."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Alpha không dẫn đàn săn — beta chịu trách nhiệm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B — beta wolf"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "alpha wolf — không khớp mô tả."
+            },
+            {
+              "letter": "C",
+              "whyVi": "tester wolf — không khớp mô tả."
+            },
+            {
+              "letter": "D",
+              "whyVi": "omega wolf — không khớp mô tả."
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "the omega is more likely to resolve it by intervening in an intra-pack squabble and defusing the situation by clowning around"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mô tả này thuộc vai trò nào trong bầy sói: xoa dịu tranh cãi?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "xoa dịu tranh cãi",
+              "p": "the omega is more likely to resolve it by intervening in an intra-pack squabble and defusing the situation by clowning around"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "xoa dịu tranh cãi",
+              "p": "the omega is more likely to resolve it by intervening in an intra-pack squabble and defusing the situation by clowning around"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Omega = peacemaker."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D — omega wolf"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "alpha wolf — không khớp mô tả."
+            },
+            {
+              "letter": "B",
+              "whyVi": "beta wolf — không khớp mô tả."
+            },
+            {
+              "letter": "C",
+              "whyVi": "tester wolf — không khớp mô tả."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "The supreme leader is a very experienced wolf – the alpha – who has dominance over the whole pack."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mô tả này thuộc vai trò nào trong bầy sói: đầu đàn, kiểm soát bầy?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đầu đàn, kiểm soát bầy",
+              "p": "The supreme leader is a very experienced wolf – the alpha – who has dominance over the whole pack."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "đầu đàn, kiểm soát bầy",
+              "p": "The supreme leader is a very experienced wolf – the alpha – who has dominance over the whole pack."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Alpha supreme leader."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A — alpha wolf"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "beta wolf — không khớp mô tả."
+            },
+            {
+              "letter": "C",
+              "whyVi": "tester wolf — không khớp mô tả."
+            },
+            {
+              "letter": "D",
+              "whyVi": "omega wolf — không khớp mô tả."
+            }
+          ]
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "The tester, a watchful and distrustful character, will alert the alpha if it encounters anything suspicious"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mô tả này thuộc vai trò nào trong bầy sói: cảnh báo leader nguy hiểm?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "cảnh báo leader nguy hiểm",
+              "p": "The tester, a watchful and distrustful character, will alert the alpha if it encounters anything suspicious"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cảnh báo leader nguy hiểm",
+              "p": "The tester, a watchful and distrustful character, will alert the alpha if it encounters anything suspicious"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tester alert alpha."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C — tester wolf"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "alpha wolf — không khớp mô tả."
+            },
+            {
+              "letter": "B",
+              "whyVi": "beta wolf — không khớp mô tả."
+            },
+            {
+              "letter": "D",
+              "whyVi": "omega wolf — không khớp mô tả."
+            }
+          ]
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "It is both the disciplinarian of the pack and the alpha's bodyguard."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mô tả này thuộc vai trò nào trong bầy sói: bảo vệ leader?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "bảo vệ leader",
+              "p": "It is both the disciplinarian of the pack and the alpha's bodyguard."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "bảo vệ leader",
+              "p": "It is both the disciplinarian of the pack and the alpha's bodyguard."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Beta = bodyguard."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B — beta wolf"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "alpha wolf — không khớp mô tả."
+            },
+            {
+              "letter": "C",
+              "whyVi": "tester wolf — không khớp mô tả."
+            },
+            {
+              "letter": "D",
+              "whyVi": "omega wolf — không khớp mô tả."
+            }
+          ]
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "It does this by creating a situation that tests their bravery and courage, by starting a fight, for instance."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mô tả này thuộc vai trò nào trong bầy sói: thi thử xem sói có xứng đáng vị trí?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "thi thử xem sói có xứng đáng vị trí",
+              "p": "It does this by creating a situation that tests their bravery and courage, by starting a fight, for instance."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "thi thử xem sói có xứng đáng vị trí",
+              "p": "It does this by creating a situation that tests their bravery and courage, by starting a fight, for instance."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tester quality controller — thử lòng dũng cảm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C — tester wolf"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "alpha wolf — không khớp mô tả."
+            },
+            {
+              "letter": "B",
+              "whyVi": "beta wolf — không khớp mô tả."
+            },
+            {
+              "letter": "D",
+              "whyVi": "omega wolf — không khớp mô tả."
+            }
+          ]
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "wolves only kill to eat, never kill more than they need, and rarely attack humans unless their safety is threatened in some way"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sói luôn nguy hiểm với người?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "constant danger to humans",
+              "p": "rarely attack humans unless safety threatened"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "constant danger to humans",
+              "p": "rarely attack humans unless safety threatened"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "FALSE — hiếm khi tấn công."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "It has been suggested that hybrid wolf-dogs or wolves suffering from rabies are actually responsible for many of the historical offences as well as more recent incidents."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Lai bệnh/sói lai gây tấn công?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Crossbred wolves or sick wolves … blame",
+              "p": "hybrid wolf-dogs or wolves suffering from rabies"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Crossbred wolves or sick wolves … blame",
+              "p": "hybrid wolf-dogs or wolves suffering from rabies"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Some wolves in western Canada are known to fish for salmon."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sói Canada thích cá hơn?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Canadian wolves prefer to eat fish",
+              "p": "Some wolves … fish for salmon — không nói prefer"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Canadian wolves prefer to eat fish",
+              "p": "Some wolves … fish for salmon — không nói prefer"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "The alpha wolf picks out a specific animal in a large herd by the scent it leaves behind."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Leader chọn mục tiêu bằng mùi?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "identifies … by its smell",
+              "p": "picks out … by the scent it leaves behind"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "identifies … by its smell",
+              "p": "picks out … by the scent it leaves behind"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "The prey is often a very young, old or injured animal in poor condition."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Săn con khỏe nhất?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "go after the healthiest animal",
+              "p": "young, old or injured … poor condition"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "go after the healthiest animal",
+              "p": "young, old or injured … poor condition"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "FALSE — chọn con yếu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Every member of the family has a designated spot at the carcass and the alpha directs them to their places"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phần thịt phụ thuộc địa vị?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "what a wolf may eat depends on its status",
+              "p": "designated spot at the carcass … alpha directs"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "what a wolf may eat depends on its status",
+              "p": "designated spot at the carcass … alpha directs"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "When a higher-ranking wolf approaches, a lesser-ranking wolf must slow down, lower itself, and pass to the side with head averted to show deference"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thấp hơn phải đ submit hoặc bị tấn công?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "dominant wolf will attack it",
+              "p": "must show deference — không nói alpha sẽ tấn công nếu không"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "dominant wolf will attack it",
+              "p": "must show deference — không nói alpha sẽ tấn công nếu không"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "Suburban sprawl is seen as more than a socioeconomic problem for it brings an immediate imbalance to the rural ecosystem, increasing population density so people come into closer contact with disease-carrying rodents or other animals."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa: dân số tăng → tiếp xúc bệnh?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "dân số tăng → tiếp xúc bệnh",
+              "p": "Suburban sprawl is seen as more than a socioeconomic problem for it brings an immediate imbalance to the rural ecosystem, increasing population density so people come into closer contact with disease-carrying rodents or other animals."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "dân số tăng → tiếp xúc bệnh",
+              "p": "Suburban sprawl is seen as more than a socioeconomic problem for it brings an immediate imbalance to the rural ecosystem, increasing population density so people come into closer contact with disease-carrying rodents or other animals."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn F — suburban sprawl, population density."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "Individuals may be susceptible to any number of excitants but those exposed to the same risk factors do not necessarily develop the same disease"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa: mỗi người phản ứng khác nhau?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "mỗi người phản ứng khác nhau",
+              "p": "Individuals may be susceptible to any number of excitants but those exposed to the same risk factors do not necessarily develop the same disease"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "mỗi người phản ứng khác nhau",
+              "p": "Individuals may be susceptible to any number of excitants but those exposed to the same risk factors do not necessarily develop the same disease"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Individual susceptibility — đoạn D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "Different types of pathogens, including bacteria, viruses, fungi and parasites, cause zoonoses."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa: tác nhân bệnh xuyên loài?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "tác nhân bệnh xuyên loài",
+              "p": "Different types of pathogens, including bacteria, viruses, fungi and parasites, cause zoonoses."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "tác nhân bệnh xuyên loài",
+              "p": "Different types of pathogens, including bacteria, viruses, fungi and parasites, cause zoonoses."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Zoonoses pathogens — đoạn G."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "Practitioners of environmental medicine work in teams involving many other specialists. As well as doctors, clinicians and medical researchers, there may be marine and climate biologists, toxicologists, veterinarians"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa: ví dụ chuyên gia?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "ví dụ chuyên gia",
+              "p": "Practitioners of environmental medicine work in teams involving many other specialists. As well as doctors, clinicians and medical researchers, there may be marine and climate biologists, toxicologists, veterinarians"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "ví dụ chuyên gia",
+              "p": "Practitioners of environmental medicine work in teams involving many other specialists. As well as doctors, clinicians and medical researchers, there may be marine and climate biologists, toxicologists, veterinarians"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn B — liệt kê specialists."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "In simple terms, environmental medicine deals with the interaction between human and animal health and the environment."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa: định nghĩa environmental medicine?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "định nghĩa environmental medicine",
+              "p": "In simple terms, environmental medicine deals with the interaction between human and animal health and the environment."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "định nghĩa environmental medicine",
+              "p": "In simple terms, environmental medicine deals with the interaction between human and animal health and the environment."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn A mở đầu định nghĩa."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Central to environmental medicine is the total load theory developed by the clinical ecologist Theron Randolph, who postulated that illness occurs when the body's ability to detoxify environmental excitants has reached its capacity."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa: tích lũy stressor → bệnh?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "tích lũy stressor → bệnh",
+              "p": "Central to environmental medicine is the total load theory developed by the clinical ecologist Theron Randolph, who postulated that illness occurs when the body's ability to detoxify environmental excitants has reached its capacity."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "tích lũy stressor → bệnh",
+              "p": "Central to environmental medicine is the total load theory developed by the clinical ecologist Theron Randolph, who postulated that illness occurs when the body's ability to detoxify environmental excitants has reached its capacity."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Total load theory — đoạn C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "maladaptation",
+      "evidence": {
+        "quoteEn": "many people suffer diseases from maladaptation, or an inability to deal with some of the new substances that are now part of our environment"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Randolph: bệnh vì không thích nghi?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "failure to adjust to the modern environment",
+              "p": "maladaptation, or an inability to deal with some of the new substances"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "failure to adjust to the modern environment",
+              "p": "maladaptation, or an inability to deal with some of the new substances"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "maladaptation"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "maladaptation"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "environment and health",
+      "evidence": {
+        "quoteEn": "Looking at the environment and health together is a way of making distant and nebulous notions, such as global warming, more immediate and important"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "global warming trở nên cấp bách khi?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "studied together",
+              "p": "Looking at the environment and health together"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "studied together",
+              "p": "Looking at the environment and health together"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "environment and health"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "environment and health"
+        }
+      ],
+      "answerAlternatives": [
+        "health and environment"
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "expand their range",
+      "evidence": {
+        "quoteEn": "Mosquitoes can expand their range and feed on different migratory birds than usual"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Côn trùng làm gì khi nóng lên?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "more widespread distribution … insects are able to",
+              "p": "Mosquitoes can expand their range"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more widespread distribution … insects are able to",
+              "p": "Mosquitoes can expand their range"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "expand their range"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "expand their range"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "domesticated animals",
+      "evidence": {
+        "quoteEn": "Deforestation also displaces feral animals that may then infect domesticated animals, which enter the food chain"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phá rừng → tiếp xúc với?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "brings them into contact with",
+              "p": "infect domesticated animals"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "brings them into contact with",
+              "p": "infect domesticated animals"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "domesticated animals"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "domesticated animals"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "outbreaks",
+      "evidence": {
+        "quoteEn": "Viral zoonoses like avian influenza (bird flu), swine flu (H1N1 virus) and Ebola are on the increase with more frequent, often uncontainable, outbreaks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bùng phát virus zoonotic?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Uncontrollable ______ of zoonotic viruses",
+              "p": "more frequent, often uncontainable, outbreaks"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Uncontrollable ______ of zoonotic viruses",
+              "p": "more frequent, often uncontainable, outbreaks"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "outbreaks"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "outbreaks"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "climate change",
+      "evidence": {
+        "quoteEn": "inter-professional cooperation is crucial to meet the challenges of dealing with the effects of climate change, emergent cross-species pathogens, rising toxicity in air, water and soil, and uncontrolled development and urbanisation"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Pollution, … và pathogen mới?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "urban development, pollution, ______ and new pathogens",
+              "p": "effects of climate change … rising toxicity … urbanisation"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "urban development, pollution, ______ and new pathogens",
+              "p": "effects of climate change … rising toxicity … urbanisation"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "climate change"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "climate change"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "government funds",
+      "evidence": {
+        "quoteEn": "This can only happen if additional government funds are channelled into the study and practice of environmental medicine."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần thêm gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "receive more ______",
+              "p": "additional government funds are channelled"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "receive more ______",
+              "p": "additional government funds are channelled"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "government funds"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "government funds"
+        }
+      ],
+      "answerAlternatives": [
+        "(government) funds",
+        "funds"
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "ix",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "This shift in viewing patterns vacuumed out the support base of local clubs, many of which ultimately folded."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B cần heading phù hợp."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ix: Lower-level teams lose out",
+              "p": "This shift in viewing patterns vacuumed out the support base of local clubs, many of which ultimately folded."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading ix: Lower-level teams lose out",
+              "p": "This shift in viewing patterns vacuumed out the support base of local clubs, many of which ultimately folded."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TV kéo khán giả khỏi CLB hạng thấp."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ix"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "ii",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "top-level sports men and women have signed lucrative endorsement deals and sponsorship contracts, turning many into multi-millionaires"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C cần heading phù hợp."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ii: More money-making opportunities",
+              "p": "top-level sports men and women have signed lucrative endorsement deals and sponsorship contracts, turning many into multi-millionaires"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading ii: More money-making opportunities",
+              "p": "top-level sports men and women have signed lucrative endorsement deals and sponsorship contracts, turning many into multi-millionaires"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tiền từ sponsor, go pro."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ii"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "viii",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "The effects of television extend further, however, and in many instances have led to changes in sporting codes themselves."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D cần heading phù hợp."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading viii: Rules changed to please viewers",
+              "p": "The effects of television extend further, however, and in many instances have led to changes in sporting codes themselves."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading viii: Rules changed to please viewers",
+              "p": "The effects of television extend further, however, and in many instances have led to changes in sporting codes themselves."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đổi luật vì TV — figure skating, back-pass."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "viii"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "xi",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "television also tends to favour some individual sports over others. Some events, such as the Tour de France, appear to benefit"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E cần heading phù hợp."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading xi: TV appeal influences sports' success",
+              "p": "television also tends to favour some individual sports over others. Some events, such as the Tour de France, appear to benefit"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading xi: TV appeal influences sports' success",
+              "p": "television also tends to favour some individual sports over others. Some events, such as the Tour de France, appear to benefit"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tour de France vs wrestling — TV appeal."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "xi"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "the framing of sports not merely in terms of the level of skill … but as personal narratives of triumph, shame and redemption"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F cần heading phù hợp."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vi: Personal stories become the focus",
+              "p": "the framing of sports not merely in terms of the level of skill … but as personal narratives of triumph, shame and redemption"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading vi: Personal stories become the focus",
+              "p": "the framing of sports not merely in terms of the level of skill … but as personal narratives of triumph, shame and redemption"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Human interest, close-ups."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "female athletes participating in the same sports have typically attracted far less interest … beach volleyball … oriented specifically toward a male demographic"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn G cần heading phù hợp."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading i: Gender bias in televised sport",
+              "p": "female athletes participating in the same sports have typically attracted far less interest … beach volleyball … oriented specifically toward a male demographic"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading i: Gender bias in televised sport",
+              "p": "female athletes participating in the same sports have typically attracted far less interest … beach volleyball … oriented specifically toward a male demographic"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thiên vị giới — beach volleyball."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "i"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "For all those who have lost out … there are numerous others who have benefitted enormously from the partnership between television and sports"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn H cần heading phù hợp."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iii: Mixed views on TV's role in sports",
+              "p": "For all those who have lost out … there are numerous others who have benefitted enormously from the partnership between television and sports"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading iii: Mixed views on TV's role in sports",
+              "p": "For all those who have lost out … there are numerous others who have benefitted enormously from the partnership between television and sports"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ai thua ai thắng — mixed views."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iii"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Major television stations immediately seized the revenue-generating prospects of televising sports"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mạng truyền hình chậm nhận ra cơ hội?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "slow to recognise opportunities",
+              "p": "immediately seized the revenue-generating prospects"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "slow to recognise opportunities",
+              "p": "immediately seized the revenue-generating prospects"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NO — ngay lập tức nắm bắt."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "For the majority of fans, who were unable to afford tickets to the top-flight matches, or to travel the long distances required to see them, the only option was to attend a local game instead"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Fan trung bình đi xa xem đấu?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "average sports fan travelled a long way",
+              "p": "majority … unable to afford tickets … or travel the long distances"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "average sports fan travelled a long way",
+              "p": "majority … unable to afford tickets … or travel the long distances"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NO — đa số không đi được xa."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Television assisted in derailing long-held concerns in many sports about whether athletes should remain amateurs or 'go pro'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "TV giảm vai trò amateur?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "reduced the significance of an athlete's amateur status",
+              "p": "derailing … concerns about whether athletes should remain amateurs"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "reduced the significance of an athlete's amateur status",
+              "p": "derailing … concerns about whether athletes should remain amateurs"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "allowing them to focus full-time on what really drives them"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vì tiền hơn thành tích?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "more interested in financial success rather than sporting achievement",
+              "p": "focus on what drives them — không so sánh tiền vs thành tích"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more interested in financial success rather than sporting achievement",
+              "p": "focus on what drives them — không so sánh tiền vs thành tích"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "short programme",
+      "evidence": {
+        "quoteEn": "Ultimately, figures were scrapped in favour of a short programme featuring more telegenic twists and jumps."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thay figures bằng gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "replaced with a ______",
+              "p": "scrapped in favour of a short programme"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "replaced with a ______",
+              "p": "scrapped in favour of a short programme"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "short programme"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "short programme"
+        }
+      ],
+      "answerAlternatives": [
+        "program"
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "image problem",
+      "evidence": {
+        "quoteEn": "Wrestling, perhaps due to an image problem that repelled younger (and highly prized) television viewers, was scheduled for removal from the 2020 Olympic Games"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Wrestling bị loại vì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "dropped … due to ______",
+              "p": "due to an image problem"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "dropped … due to ______",
+              "p": "due to an image problem"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "image problem"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "image problem"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "male demographic",
+      "evidence": {
+        "quoteEn": "female participants are encouraged to dress and behave in ways oriented specifically toward a male demographic."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Beach volleyball hướng tới?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "aimed at ______",
+              "p": "oriented specifically toward a male demographic"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "aimed at ______",
+              "p": "oriented specifically toward a male demographic"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "male demographic"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "male demographic"
+        }
+      ],
+      "answerAlternatives": [
+        "men"
+      ]
+    }
+  }
+}

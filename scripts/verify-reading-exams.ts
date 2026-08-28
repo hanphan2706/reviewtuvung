@@ -51,6 +51,15 @@ const PILOT_LABELS: Record<ReadingPilotId, string> = {
   "reading-challenge-2": "Compass Publishing · RC2",
   "reading-challenge-3": "Compass Publishing · RC3",
   "de-thi-that-1": "Đề thi thật IELTS 1",
+  "de-thi-that-2": "Đề thi thật IELTS 2",
+  "de-thi-that-3": "Đề thi thật IELTS 3",
+  "de-thi-that-4": "Đề thi thật IELTS 4",
+  "de-thi-that-5": "Đề thi thật IELTS 5",
+  "de-thi-that-6": "Đề thi thật IELTS 6",
+  "de-thi-that-7": "Đề thi thật IELTS 7",
+  "de-thi-that-8": "Đề thi thật IELTS 8",
+  "de-thi-that-9": "Đề thi thật IELTS 9",
+  "de-thi-that-10": "Đề thi thật IELTS 10",
 };
 
 let failed = 0;

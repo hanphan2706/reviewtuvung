@@ -1,0 +1,1918 @@
+{
+  "pilotId": "de-thi-that-6",
+  "schemaVersion": 4,
+  "note": "Đề thi thật IELTS 6 — giải thích chi tiết: Penicillin / Daylight Saving Time / Willpower.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The Discovery of Penicillin",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Daylight Saving Time",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "WILLPOWER",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "They experimented on mice infected with streptococcus. Those untreated died, while those injected with penicillin survived."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa thông tin: kết quả thí nghiệm trên động vật?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "kết quả thí nghiệm trên động vật",
+              "p": "They experimented on mice infected with streptococcus. Those untreated died, while those injected with penicillin survived."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "kết quả thí nghiệm trên động vật",
+              "p": "They experimented on mice infected with streptococcus. Those untreated died, while those injected with penicillin survived."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thí nghiệm chuột streptococcus — đoạn D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "G",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "Fleming and Florey received knighthoods in 1944 and they, together with Chain, were awarded the Nobel Prize in Physiology or Medicine in 1945."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa thông tin: công nhận công trình các nhà khoa học?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "công nhận công trình các nhà khoa học",
+              "p": "Fleming and Florey received knighthoods in 1944 and they, together with Chain, were awarded the Nobel Prize in Physiology or Medicine in 1945."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "công nhận công trình các nhà khoa học",
+              "p": "Fleming and Florey received knighthoods in 1944 and they, together with Chain, were awarded the Nobel Prize in Physiology or Medicine in 1945."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nobel + knighthoods — đoạn G."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "Manufacture could begin in earnest."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa thông tin: bắt đầu sản xuất hàng loạt?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "bắt đầu sản xuất hàng loạt",
+              "p": "Manufacture could begin in earnest."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "bắt đầu sản xuất hàng loạt",
+              "p": "Manufacture could begin in earnest."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Penicillium chrysogeum → manufacture in earnest — đoạn E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "H",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "Fleming was mindful of the dangers of resistance to penicillin early on and he expressly warned on many occasions against overuse of the drug"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa thông tin: lời khuyên cảnh báo của Fleming?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "lời khuyên cảnh báo của Fleming",
+              "p": "Fleming was mindful of the dangers of resistance to penicillin early on and he expressly warned on many occasions against overuse of the drug"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lời khuyên cảnh báo của Fleming",
+              "p": "Fleming was mindful of the dangers of resistance to penicillin early on and he expressly warned on many occasions against overuse of the drug"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cảnh báo overuse/resistance — đoạn H."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "H"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "F",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "It has since proved its worth in the treatment of many life-threatening infections such as tuberculosis, meningitis, diphtheria and several sexually-transmitted diseases."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa thông tin: ví dụ công dụng penicillin?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "ví dụ công dụng penicillin",
+              "p": "It has since proved its worth in the treatment of many life-threatening infections such as tuberculosis, meningitis, diphtheria and several sexually-transmitted diseases."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "ví dụ công dụng penicillin",
+              "p": "It has since proved its worth in the treatment of many life-threatening infections such as tuberculosis, meningitis, diphtheria and several sexually-transmitted diseases."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TB, meningitis, diphtheria — đoạn F."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "In his search for effective antimicrobial agents, Fleming was cultivating staphylococcus bacteria in Petri dishes containing agar"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa thông tin: điểm khởi đầu nghiên cứu ban đầu của Fleming?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "điểm khởi đầu nghiên cứu ban đầu của Fleming",
+              "p": "In his search for effective antimicrobial agents, Fleming was cultivating staphylococcus bacteria in Petri dishes containing agar"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "điểm khởi đầu nghiên cứu ban đầu của Fleming",
+              "p": "In his search for effective antimicrobial agents, Fleming was cultivating staphylococcus bacteria in Petri dishes containing agar"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tìm chất kháng khuẩn → nuôi cấy staphylococcus — bước khởi đầu dẫn tới phát hiện — đoạn B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "holiday",
+      "evidence": {
+        "quoteEn": "Before going on holiday in the summer of 1928"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Fleming đi đâu trước khi phát hiện?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "return from ______",
+              "p": "Before going on holiday in the summer of 1928"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "return from ______",
+              "p": "Before going on holiday in the summer of 1928"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "holiday"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "holiday"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "mycologist",
+      "evidence": {
+        "quoteEn": "Fleming consulted a mycologist called C J La Touche"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai giúp nhận dạng nấm?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "A ______ helped him identify",
+              "p": "consulted a mycologist called C J La Touche"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "A ______ helped him identify",
+              "p": "consulted a mycologist called C J La Touche"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "mycologist"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "mycologist"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "pathogenic bacteria",
+      "evidence": {
+        "quoteEn": "Fleming continued to experiment with the mould on other pathogenic bacteria"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Loại gì bị diệt?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "active against several different ______",
+              "p": "experiment with the mould on other pathogenic bacteria"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "active against several different ______",
+              "p": "experiment with the mould on other pathogenic bacteria"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "pathogenic bacteria"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "pathogenic bacteria"
+        }
+      ],
+      "answerAlternatives": [
+        "bacteria"
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "non-toxic",
+      "evidence": {
+        "quoteEn": "Importantly, it was also non-toxic, so here was a bacteria-destroying agent that could be used as an antiseptic in wounds without damaging the human body."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "An toàn cho người vì sao?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "because it was ______",
+              "p": "it was also non-toxic"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "because it was ______",
+              "p": "it was also non-toxic"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "non-toxic"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "non-toxic"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "died",
+      "evidence": {
+        "quoteEn": "when the supply of penicillin ran out, he eventually died"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bệnh nhân đầu tiên kết cục thế nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "first human subject ______",
+              "p": "when the supply of penicillin ran out, he eventually died"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "first human subject ______",
+              "p": "when the supply of penicillin ran out, he eventually died"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "died"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "died"
+        }
+      ],
+      "answerAlternatives": [
+        "eventually died"
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "American scientists",
+      "evidence": {
+        "quoteEn": "Florey and biochemist Dr Norman Heatley went to the United States to team up with American scientists"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "1941 hợp tác với ai?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Collaboration with ______",
+              "p": "team up with American scientists"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Collaboration with ______",
+              "p": "team up with American scientists"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "American scientists"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "American scientists"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "Nobel Prize",
+      "evidence": {
+        "quoteEn": "they, together with Chain, were awarded the Nobel Prize in Physiology or Medicine in 1945"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ba người chia sẻ gì 1945?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "share a ______",
+              "p": "awarded the Nobel Prize in Physiology or Medicine in 1945"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "share a ______",
+              "p": "awarded the Nobel Prize in Physiology or Medicine in 1945"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nobel Prize"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "Nobel Prize"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "This practice fell out of favour, however, and the concept was renewed only when, in 1784"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "DST dùng liên tục từ cổ đại?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "continual use since ancient times",
+              "p": "fell out of favour … renewed only when, in 1784"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "continual use since ancient times",
+              "p": "fell out of favour … renewed only when, in 1784"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không liên tục — từng bị bỏ rồi hồi sinh."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "George Vernon Hudson proposed a biannual two-hour shift closely resembling current forms of DST"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "DST giống đề xuất Hudson?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "very similar to how George Vernon Hudson suggested",
+              "p": "biannual two-hour shift closely resembling current forms of DST"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "very similar to how George Vernon Hudson suggested",
+              "p": "biannual two-hour shift closely resembling current forms of DST"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp — two-hour shift giống DST hiện nay."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Countries such as the UK and USA adopted DST in World Wars I and II, but reverted to standard time after the wars ended."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "DST không thành công trong hai cuộc chiến?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "not considered successful during World Wars",
+              "p": "adopted DST … but reverted after wars — không nói thành công hay thất bại"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "not considered successful during World Wars",
+              "p": "adopted DST … but reverted after wars — không nói thành công hay thất bại"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Congress implemented the Uniform Time Act in 1966"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "USA chốt DST 1966?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "finalised its DST policy in 1966",
+              "p": "1966 Uniform Time Act nhưng điều chỉnh gần nhất là Energy Policy Act 2005"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "finalised its DST policy in 1966",
+              "p": "1966 Uniform Time Act nhưng điều chỉnh gần nhất là Energy Policy Act 2005"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "1966 không phải lần chốt cuối."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "There is still no uniform standard, however."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thế giới đồng thuận DST?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "general agreement on how DST should be used",
+              "p": "still no uniform standard"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "general agreement on how DST should be used",
+              "p": "still no uniform standard"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có chuẩn thống nhất."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Countries such as Egypt and Russia have adjusted their policies on multiple occasions in recent years, in some instances leading to considerable turmoil."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đổi DST liên tục gây rắc rối?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Frequent changes … caused problems",
+              "p": "Egypt/Russia … leading to considerable turmoil"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Frequent changes … caused problems",
+              "p": "Egypt/Russia … leading to considerable turmoil"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "outdoor recreational activities",
+      "evidence": {
+        "quoteEn": "office workers coming off a 9 to 5 shift can often take part in outdoor recreational activities for an hour or two"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Lợi thế: cơ hội gì sau giờ làm?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "More opportunities for ______ after work",
+              "p": "take part in outdoor recreational activities"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "More opportunities for ______ after work",
+              "p": "take part in outdoor recreational activities"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "outdoor recreational activities"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "outdoor recreational activities"
+        }
+      ],
+      "answerAlternatives": [
+        "recreational activities"
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "peak hours",
+      "evidence": {
+        "quoteEn": "DST ensures that streets are well lit at peak hours"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ít tai nạn vì đường sáng lúc nào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Better lighting during ______",
+              "p": "streets are well lit at peak hours"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Better lighting during ______",
+              "p": "streets are well lit at peak hours"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "peak hours"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "peak hours"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "tourism and hospitality",
+      "evidence": {
+        "quoteEn": "tourism and hospitality are two sectors that stand to gain a lot from more daylight"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngành kiếm thêm tiền?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "industries, such as ______",
+              "p": "tourism and hospitality are two sectors"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "industries, such as ______",
+              "p": "tourism and hospitality are two sectors"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "tourism and hospitality"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "tourism and hospitality"
+        }
+      ],
+      "answerAlternatives": [
+        "hospitality and tourism",
+        "hospitality",
+        "tourism"
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "milking schedules",
+      "evidence": {
+        "quoteEn": "complaints from dairy farmers over disruption to milking schedules"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bất lợi cho nông dân sữa?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "upsets their ______",
+              "p": "disruption to milking schedules"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "upsets their ______",
+              "p": "disruption to milking schedules"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "milking schedules"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "milking schedules"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "pedestrians",
+      "evidence": {
+        "quoteEn": "for pedestrians the risk of being hit by a car in the evening increases by as much as 186 per cent"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nguy hiểm hơn cho ai?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "More dangerous for ______",
+              "p": "risk to pedestrians … increases"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "More dangerous for ______",
+              "p": "risk to pedestrians … increases"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "pedestrians"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "pedestrians"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "mood swings",
+      "evidence": {
+        "quoteEn": "resulting in tiredness and all its well-documented effects, such as mood swings, reduced productivity and problems with overall physical well-being"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mất ngủ dẫn tới?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Loss of sleep can lead to ______",
+              "p": "effects, such as mood swings"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Loss of sleep can lead to ______",
+              "p": "effects, such as mood swings"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "mood swings"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "mood swings"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "street crime",
+      "evidence": {
+        "quoteEn": "a suspected relationship between DST and higher incidences of street crime"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sáng tối hơn → nhiều hơn?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Darker mornings may lead to more ______",
+              "p": "higher incidences of street crime"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Darker mornings may lead to more ______",
+              "p": "higher incidences of street crime"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "street crime"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "street crime"
+        }
+      ],
+      "answerAlternatives": [
+        "incidents of crime",
+        "crime"
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "It almost single-handedly determines life outcomes."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Willpower là yếu tố quan trọng nhất?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "most significant factor in determining success",
+              "p": "almost single-handedly determines life outcomes"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "most significant factor in determining success",
+              "p": "almost single-handedly determines life outcomes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TRUE — gần như quyết định kết quả đời."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "There is a widespread misperception, for example, that increased leisure time would lead to subsequent increases in willpower."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhiều thời gian rảnh → willpower tốt hơn?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "more free time typically have better willpower",
+              "p": "misperception that increased leisure time would lead to … increases in willpower"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "more free time typically have better willpower",
+              "p": "misperception that increased leisure time would lead to … increases in willpower"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "FALSE — đó là hiểu lầm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "It refers in fact to a variety of behaviours and situations."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Willpower chủ yếu về ăn uống/tập?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "mostly applies to matters of diet and exercise",
+              "p": "variety of behaviours … overriding negative thought processes, biting your tongue"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "mostly applies to matters of diet and exercise",
+              "p": "variety of behaviours … overriding negative thought processes, biting your tongue"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "FALSE — nhiều tình huống hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "At the heart of any exercise of willpower, however, is the notion of 'delayed gratification'"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chỉ số mạnh nhất = chọn phần thưởng dài hạn?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "strongest indicator … long-term rather than short-term rewards",
+              "p": "delayed gratification … resisting immediate satisfaction"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "strongest indicator … long-term rather than short-term rewards",
+              "p": "delayed gratification … resisting immediate satisfaction"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "the genetic or environmental origins of this ability remain a mystery for now"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đã nghiên cứu cơ sở gen?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Researchers have studied the genetic basis",
+              "p": "origins remain a mystery — chưa rõ gen/môi trường"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Researchers have studied the genetic basis",
+              "p": "origins remain a mystery — chưa rõ gen/môi trường"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NOT GIVEN — chưa nghiên cứu rõ gen."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "levels of willpower typically remain consistent over time"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Willpower ổn định suốt đời?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Levels … usually stay the same throughout our lives",
+              "p": "remain consistent over time … from early childhood to adult years"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Levels … usually stay the same throughout our lives",
+              "p": "remain consistent over time … from early childhood to adult years"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "willpower operates more or less like a 'muscle', and, like a muscle, requires fuel for optimum functioning"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tập thể dục cải thiện willpower?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Regular physical exercise improves willpower",
+              "p": "muscle metaphor + glucose — không nói exercise cải thiện"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Regular physical exercise improves willpower",
+              "p": "muscle metaphor + glucose — không nói exercise cải thiện"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "A critical precursor, he suggests, is motivation – if we are only mildly invested in the change we are trying to make, our efforts are bound to fall short."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "yếu tố then chốt để willpower hoạt động"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "motivation … critical precursor",
+              "p": "A critical precursor, he suggests, is motivation – if we are only mildly investe"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "motivation … critical precursor",
+              "p": "A critical precursor, he suggests, is motivation – if we are only mildly investe"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Baumeister: motivation cần thiết trước willpower."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E — Roy Baumeister"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Matthew Gailliot không nói motivation là precursor."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Gregory M. Walton không nói motivation là precursor."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Mark Muraven không nói motivation là precursor."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Veronika Job không nói motivation là precursor."
+            }
+          ]
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Her research indicates that those who think that willpower is a finite resource exhaust their supplies of this commodity long before those who do not hold this opinion."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "willpower bị ảnh hưởng bởi niềm tin"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "affected by our beliefs",
+              "p": "Her research indicates that those who think that willpower is a finite resource "
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "affected by our beliefs",
+              "p": "Her research indicates that those who think that willpower is a finite resource "
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Job: tin willpower hữu hạn → cạn sớm hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D — Veronika Job"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Matthew Gailliot không nói beliefs về willpower."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Gregory M. Walton không nói beliefs về willpower."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Mark Muraven không nói beliefs về willpower."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Roy Baumeister không nói beliefs về willpower."
+            }
+          ]
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "willpower, even in the absence of physical activity, both requires and drains blood glucose levels"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "cơ thể phản ứng thế nào khi dùng willpower"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "how our body responds",
+              "p": "willpower, even in the absence of physical activity, both requires and drains bl"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how our body responds",
+              "p": "willpower, even in the absence of physical activity, both requires and drains bl"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Gailliot: glucose như nhiên liệu muscle."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A — Matthew Gailliot"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Gregory M. Walton không đo glucose/body response."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Mark Muraven không đo glucose/body response."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Veronika Job không đo glucose/body response."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Roy Baumeister không đo glucose/body response."
+            }
+          ]
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Muraven emphasises the value of monitoring progress towards a desired result, such as by using a fitness journal"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "tầm quan trọng của mục tiêu và theo dõi"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "make and track goals",
+              "p": "Muraven emphasises the value of monitoring progress towards a desired result, su"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "make and track goals",
+              "p": "Muraven emphasises the value of monitoring progress towards a desired result, su"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Muraven: fitness journal, monitor progress."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C — Mark Muraven"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Gailliot: glucose, không tracking goals."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Walton: verbal cue energise."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Job: beliefs finite resource."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Baumeister: motivation, không nhấn tracking."
+            }
+          ]
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "those who felt compelled by an external authority to exert self-control experienced far greater rates of willpower depletion than those who identified their own reasons"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "làm vui lòng người khác giảm willpower"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "actions to please others decreases willpower",
+              "p": "those who felt compelled by an external authority to exert self-control experien"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "actions to please others decreases willpower",
+              "p": "those who felt compelled by an external authority to exert self-control experien"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Muraven: external authority vs own reasons."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C — Mark Muraven"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Matthew Gailliot không so sánh external vs internal motivation."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Gregory M. Walton không so sánh external vs internal motivation."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Veronika Job không so sánh external vs internal motivation."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Roy Baumeister không so sánh external vs internal motivation."
+            }
+          ]
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "a single verbal cue – telling research participants how strenuous mental tasks could 'energise' them for further challenging activities – made a profound difference"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "willpower tăng qua suy nghĩ tích cực đơn giản"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "willpower can increase through simple positive thoughts",
+              "p": "a single verbal cue – telling research participants how strenuous mental tasks c"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "willpower can increase through simple positive thoughts",
+              "p": "a single verbal cue – telling research participants how strenuous mental tasks c"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Walton: cue 'energise' tăng willpower."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B — Gregory M. Walton"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Matthew Gailliot không dùng verbal cue energise."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Mark Muraven không dùng verbal cue energise."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Veronika Job không dùng verbal cue energise."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Roy Baumeister không dùng verbal cue energise."
+            }
+          ]
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "willpower operates more or less like a 'muscle', and, like a muscle, requires fuel for optimum functioning"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Yếu tố nào KHÔNG được nhắc ảnh hưởng willpower?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: the levels of certain chemicals in our brains",
+              "p": "Bài nói glucose, fatigue, diet, stress, cues — không nói hóa chất não cụ thể."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "C: the levels of certain chemicals in our brains",
+              "p": "Bài nói glucose, fatigue, diet, stress, cues — không nói hóa chất não cụ thể."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "C — brain chemicals không được đề cập."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Fatigue, diet, stress — physical factors được nhắc."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Delayed gratification là cốt lõi willpower."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Candy on desk — environmental cues/triggers."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

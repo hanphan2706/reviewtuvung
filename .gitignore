@@ -69,7 +69,7 @@ data/dictionary/en-vi-stardict.json
 # Bài đọc raw (Cambridge, Compass…) — chỉ local; ngoại lệ file dev nhỏ
 /reading raw/*
 !/reading raw/real test 1.txt
-!/reading raw/de-thi-that-1.txt
+!/reading raw/de-thi-that-*.txt
 
 # Listening — binary / bản quyền (giữ .txt, .json sync trong repo cho pipeline)
 /listening materials/**/*.mp3

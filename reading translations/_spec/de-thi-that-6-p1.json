@@ -1,0 +1,57 @@
+{
+  "articleId": "de-thi-that-6-p1",
+  "title": "The Discovery of Penicillin",
+  "slotCount": 10,
+  "slots": [
+    {
+      "kind": "body",
+      "index": 1,
+      "en": "The Scottish bacteriologist Dr Alexander Fleming (1881-1955) is credited with the discovery of penicillin in London in 1928. He had been working at St Mary’s Hospital on the bacteriology of septic wounds. As a medic during World War I, he had witnessed the deaths of many wounded soldiers from infection and he had observed that the use of harsh antiseptics, rather than healing the body, actually harmed the blood corpuscles that destroy bacteria."
+    },
+    {
+      "kind": "body",
+      "index": 2,
+      "en": "In his search for effective antimicrobial agents, Fleming was cultivating staphylococcus bacteria in Petri dishes containing agar1. Before going on holiday in the summer of 1928, he piled up the agar plates to make room for someone else to use his workbench in his absence and left the windows open. When he returned to work two weeks later, Fleming noticed mould growing on those culture plates that had not been fully immersed in sterilising agent. This was not an unusual phenomenon, except in this case the particular mould seemed to have killed the staphylococcus aureus immediately surrounding it. He realised that this mould had potential."
+    },
+    {
+      "kind": "body",
+      "index": 3,
+      "en": "Fleming consulted a mycologist called C J La Touche, who occupied a laboratory downstairs containing many mould specimens (possibly the source of the original contamination), and they concluded it was the Penicillium genus of ascomycetous fungi. Fleming continued to experiment with the mould on other pathogenic bacteria, finding that it successfully killed a large number of them. Importantly, it was also non-toxic, so here was a bacteria-destroying agent that could be used as an antiseptic in wounds without damaging the human body. However, he was unsuccessful in his attempts to isolate the active antibacterial element, which he called penicillin. In 1929, he wrote a paper on his findings, published in the British Journal of Experimental Pathology, but it failed to kindle any interest at the time."
+    },
+    {
+      "kind": "body",
+      "index": 4,
+      "en": "In 1938, Dr Howard Florey, a professor of pathology at Oxford University, came across Fleming’s paper. In collaboration with his colleague Dr Ernst Chain, and other skilled chemists, he worked on producing a usable drug. They experimented on mice infected with streptococcus. Those untreated died, while those injected with penicillin survived. It was time to test the drug on humans but they could not produce enough – it took 2,000 litres of mould culture fluid to acquire enough penicillin to treat a single patient. Their first case in 1940, an Oxford police officer who was near death as a result of infection by both staphylococci and streptococci, rallied after five days of treatment but, when the supply of penicillin ran out, he eventually died."
+    },
+    {
+      "kind": "body",
+      "index": 5,
+      "en": "In 1941, Florey and biochemist Dr Norman Heatley went to the United States to team up with American scientists with a view to finding a way of making large quantities of the drug. It became obvious that Penicillium notatum would never generate enough penicillin for effective treatments so they began to look for a more productive species. One day a laboratory assistant turned up with a melon covered in mould. This fungus was Penicillium chrysogeum, which produced 200 times more penicillin than Fleming’s original species but, with further enhancement and filtration, it was induced to yield 1,000 times as much as Penicillium notatum. Manufacture could begin in earnest."
+    },
+    {
+      "kind": "body",
+      "index": 6,
+      "en": "The standardisation and large-scale production of the penicillin drug during World War II and its availability for treating wounded soldiers undoubtedly saved many lives. Penicillin proved to be very effective in the treatment of pneumococcal pneumonia – the death rate in WWII was 1% compared to 18% in WWI. It has since proved its worth in the treatment of many life-threatening infections such as tuberculosis, meningitis, diphtheria and several sexually-transmitted diseases."
+    },
+    {
+      "kind": "body",
+      "index": 7,
+      "en": "Fleming has always been acknowledged as the discoverer of penicillin. However, the development of a commercial penicillin drug was due to the skill of chemical scientists Florey, Chain and others who overcame the difficulties of converting it into a usable form. Fleming and Florey received knighthoods in 1944 and they, together with Chain, were awarded the Nobel Prize in Physiology or Medicine in 1945. Heatley’s contribution seems to have been overlooked until, in 1990, he was awarded an honorary doctorate of medicine by Oxford University – the first in its 800-year history."
+    },
+    {
+      "kind": "body",
+      "index": 8,
+      "en": "Fleming was mindful of the dangers of resistance to penicillin early on and he expressly warned on many occasions against overuse of the drug, because this would lead to bacterial resistance. Ironically, the occurrence of resistance is pushing the drive today to find new, more powerful antibiotics."
+    },
+    {
+      "kind": "body",
+      "index": 9,
+      "en": "-----------------"
+    },
+    {
+      "kind": "body",
+      "index": 10,
+      "en": "1agar is a culture medium based on a seaweed extract – used for growing microorganisms in laboratories"
+    }
+  ]
+}

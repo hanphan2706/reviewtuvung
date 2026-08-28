@@ -50,9 +50,9 @@ function boldInstructionPhrases(html: string): string {
 }
 
 function boldChooseTwo(html: string): string {
-  return html.replace(/\bTWO\b/g, (match, offset, source) => {
+  return html.replace(/\b(TWO|THREE)\b/gi, (match, _word: string, offset: number, source: string) => {
     const before = source.slice(Math.max(0, offset - 12), offset);
-    return /Choose\s+$/i.test(before) ? "<b>TWO</b>" : match;
+    return /Choose\s+$/i.test(before) ? `<b>${match.toUpperCase()}</b>` : match;
   });
 }
 
@@ -66,7 +66,7 @@ function boldTfngAnswerWords(html: string): string {
 }
 
 function boldLetterRanges(html: string): string {
-  return html.replace(/([A-H])(–|-|to)([A-H])/gi, "<b>$1$2$3</b>");
+  return html.replace(/([A-H])\s*(–|-|to)\s*([A-H])/gi, "<b>$1$2$3</b>");
 }
 
 export type FormatExamInstructionOptions = {

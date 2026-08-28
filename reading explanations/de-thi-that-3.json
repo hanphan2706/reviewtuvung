@@ -1,0 +1,1942 @@
+{
+  "pilotId": "de-thi-that-3",
+  "schemaVersion": 4,
+  "note": "Đề thi thật IELTS 3 — giải thích chi tiết: How we manage the land / Monster ships / Innovative Tourism.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "How we manage the land on Earth",
+      "questions": "1-12"
+    },
+    "2": {
+      "title": "The monster ships that changed how we travel",
+      "questions": "13-27"
+    },
+    "3": {
+      "title": "Innovative Tourism",
+      "questions": "28-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "In the early 1990s the tallest buildings in the city were only two storeys high, whereas now the average height is eight storeys and some are as high as 25 storeys high."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chiều cao trung bình của hầu hết tòa nhà trong thành phố hiện nay là bao nhiêu tầng?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: 8-storeys (8 tầng)",
+              "p": "Bài nói rõ “the average height is eight storeys” — mức trung bình chung, không phải cao nhất hay thấp nhất."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "C: 8-storeys (8 tầng)",
+              "p": "Bài nói rõ “the average height is eight storeys” — mức trung bình chung, không phải cao nhất hay thấp nhất."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "25 tầng chỉ là một số tòa nhà; 2 tầng là mức thập niên 1990; 8 tầng mới là trung bình hiện tại."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "25 tầng là mức cao nhất của một số tòa nhà (“some are as high as 25 storeys”), không phải chiều cao trung bình."
+            },
+            {
+              "letter": "B",
+              "whyVi": "2 tầng là chiều cao tòa nhà cao nhất thời đầu 1990s, không phải hiện nay."
+            },
+            {
+              "letter": "D",
+              "whyVi": "40 liên quan đến số người chen chúc trong một căn hộ nhỏ, không phải số tầng."
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "a reserve of 1.7 million sq miles thought to be suitable for growing crops left in the world"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Diện tích đất dự trữ còn lại được coi là phù hợp cho nông nghiệp (trồng rau) là bao nhiêu?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: 1.7m sq miles",
+              "p": "Bài nêu “a reserve of 1.7 million sq miles thought to be suitable for growing crops”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "B: 1.7m sq miles",
+              "p": "Bài nêu “a reserve of 1.7 million sq miles thought to be suitable for growing crops”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây là lượng đất dự trữ còn có thể trồng trọt, khác với tổng đất không băng hay diện tích cần thêm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "51.7 triệu dặm vuông là tổng diện tích đất không băng trên Trái Đất, không phải đất dự trữ nông nghiệp."
+            },
+            {
+              "letter": "C",
+              "whyVi": "10.400–18.900 dặm vuông là diện tích đất bổ sung cần thêm để nuôi dân, không phải lượng dự trữ còn lại."
+            },
+            {
+              "letter": "D",
+              "whyVi": "18.900 là giới hạn trên của ước tính đất cần thêm, không phải dự trữ hiện có."
+            }
+          ]
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "The UN's latest estimates state that there are 7.6 billion people jostling for space on Earth at present"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dân số hiện tại của Trái Đất theo ước tính Liên Hợp Quốc là bao nhiêu?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: 7.6 billion",
+              "p": "“at present” (hiện tại) tương ứng 7.6 tỷ người; 9.8 tỷ là dự báo 2050, 11.2 tỷ là cuối thế kỷ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "C: 7.6 billion",
+              "p": "“at present” (hiện tại) tương ứng 7.6 tỷ người; 9.8 tỷ là dự báo 2050, 11.2 tỷ là cuối thế kỷ."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Câu hỏi hỏi con số hiện tại (“current population figure … at present”), không phải dự báo tương lai."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "11.2 tỷ là dự báo cuối thế kỷ, không phải hiện tại."
+            },
+            {
+              "letter": "B",
+              "whyVi": "11 tỷ không xuất hiện trong bài; bài nêu 11.2 tỷ ở cuối thế kỷ."
+            },
+            {
+              "letter": "D",
+              "whyVi": "9.8 tỷ là dự báo năm 2050."
+            }
+          ]
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "About 40% of the food grown in the world is also never eaten by anybody - it is thrown away."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khoảng bao nhiêu phần trăm lương thực con người trồng bị vứt bỏ?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "D: 40%",
+              "p": "Bài viết rõ “About 40% of the food grown in the world … is thrown away”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "D: 40%",
+              "p": "Bài viết rõ “About 40% of the food grown in the world … is thrown away”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây là tỷ lệ thực phẩm bị lãng phí, không nhầm với đất dùng cho chăn nuôi hay tỷ lệ đô thị hóa."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "75% là tỷ lệ đất nông nghiệp dùng nuôi thú ăn thịt, không phải thực phẩm bị vứt."
+            },
+            {
+              "letter": "B",
+              "whyVi": "3% là diện tích đô thị so với tổng đất liền, không liên quan thực phẩm thừa."
+            },
+            {
+              "letter": "C",
+              "whyVi": "52% là tốc độ tăng dân số Malé từ 2006, không phải tỷ lệ thực phẩm."
+            }
+          ]
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "the city's population has soared by nearly 52% since 2006"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Từ 2006, tốc độ tăng dân cư thủ đô Maldives chỉ dưới 50% — đúng hay sai?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“just under 50%” (chỉ dưới 50%)",
+              "p": "Bài nói “soared by nearly 52%” — gần 52%, tức trên 50%, mâu thuẫn với “just under 50%”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“just under 50%” (chỉ dưới 50%)",
+              "p": "Bài nói “soared by nearly 52%” — gần 52%, tức trên 50%, mâu thuẫn với “just under 50%”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "52% > 50% nên câu phát biểu sai (FALSE)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "forcing pedestrians to walk in single file"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đi một hàng trên vỉa hè do quá đông là chuyện thường — bài có nói không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Walking single file is common on the pavement due to the crowding.”",
+              "p": "“pavements are often less than one metre wide, forcing pedestrians to walk in single file” — buộc đi một hàng vì chật."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Walking single file is common on the pavement due to the crowding.”",
+              "p": "“pavements are often less than one metre wide, forcing pedestrians to walk in single file” — buộc đi một hàng vì chật."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thông tin khớp trực tiếp → TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "the city frequently runs out of water"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thiếu nước gần như xảy ra mỗi ngày ở thành phố này — bài có nói không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Water shortages are an almost every day occurrence.”",
+              "p": "Bài chỉ nói “the city frequently runs out of water” (thường xuyên hết nước) — không nêu mức độ “almost every day”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Water shortages are an almost every day occurrence.”",
+              "p": "Bài chỉ nói “the city frequently runs out of water” (thường xuyên hết nước) — không nêu mức độ “almost every day”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "“Frequently” không đồng nghĩa “almost every day” → không đủ thông tin → NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "large tracts of land remain virtually uninhabitable due to their climate or their remote location"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phần lớn đất trên Trái Đất hoàn toàn không phù hợp cho con người sinh sống — đúng không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Large portions of the land … completely unsuited for human occupation.”",
+              "p": "“large tracts of land remain virtually uninhabitable” — vùng rộng lớn gần như không thể ở được."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Large portions of the land … completely unsuited for human occupation.”",
+              "p": "“large tracts of land remain virtually uninhabitable” — vùng rộng lớn gần như không thể ở được."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Paraphrase khớp → TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "sentence-fill",
+      "answer": "ice-free",
+      "evidence": {
+        "quoteEn": "there are around 51.7 million sq miles of ice-free land on the planet"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khoảng 51.7 triệu dặm vuông đất có thể chứa hơn 11 tỷ dân dự kiến — loại đất này được phân loại là gì (một–hai từ)?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chỗ trống là tính từ/danh từ ghép mô tả loại đất (ONE OR TWO WORDS)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“classified as being ______” (được phân loại là)",
+              "p": "“around 51.7 million sq miles of ice-free land” — đất không phủ băng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“classified as being ______” (được phân loại là)",
+              "p": "“ice-free land” — đất không băng."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "ice-free"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ice-free"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "sentence-fill",
+      "answer": "agriculture",
+      "evidence": {
+        "quoteEn": "between 35% and 40% is used for agriculture"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thành phố chiếm dưới 3% diện tích đất, còn hơn một phần ba dùng cho ______."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “used for” cần danh từ chỉ mục đích sử dụng đất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“cities account for less than 3% … just over a third … used for ______”",
+              "p": "“The cities and towns we live in account for less than 3% of the Earth’s total land area, but between 35% and 40% is used for agriculture”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“just over a third … used for ______”",
+              "p": "“between 35% and 40% is used for agriculture”."
+            },
+            {
+              "q": "“less than 3% of land usage”",
+              "p": "“account for less than 3% of the Earth’s total land area”"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "agriculture"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "agriculture"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "sentence-fill",
+      "answer": "greenhouse gases",
+      "evidence": {
+        "quoteEn": "trees that act as natural sinks for greenhouse gases"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Rừng mất đi không còn hấp thụ ______."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “absorb” cần danh từ (có thể hai từ)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“act naturally to absorb ______”",
+              "p": "“natural sinks for greenhouse gases” — bể hấp thụ khí nhà kính."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“act naturally to absorb ______”",
+              "p": "“natural sinks for greenhouse gases” — bể hấp thụ khí nhà kính."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "greenhouse gases"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "greenhouse gases"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "sentence-fill",
+      "answer": "garbage",
+      "evidence": {
+        "quoteEn": "An entirely new island has risen next door out of the sea itself simply from the city's garbage."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đảo nhân tạo mới được tạo từ ______ của thành phố."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chỗ trống là danh từ không đếm được (ONE OR TWO WORDS)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“made solely by using unwanted ______”",
+              "p": "“simply from the city's garbage” — rác thải."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“made solely by using unwanted ______”",
+              "p": "“simply from the city's garbage” — rác thải."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "garbage"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "garbage"
+        }
+      ]
+    },
+    "13": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Not unlike today's rivalries between, say, aircraft manufacturers like Airbus and Boeing"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cạnh tranh giữa hãng hàng không ngày nay giống thời đóng tàu đầu thế kỷ XX — đúng không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“competition between modern day airline manufacturers is very much like the early days of ship construction.”",
+              "p": "Tác giả so sánh trực tiếp với Airbus/Boeing — tức cạnh tranh hàng không hiện đại tương tự cạnh tranh tàu biển xưa."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“competition between modern day airline manufacturers is very much like the early days of ship construction.”",
+              "p": "Tác giả so sánh trực tiếp với Airbus/Boeing — tức cạnh tranh hàng không hiện đại tương tự cạnh tranh tàu biển xưa."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "So sánh được nêu rõ → TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Inman established itself as a company unafraid to try new technology for faster crossings."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Inman e ngại dùng vật liệu và phương pháp mới — đúng không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Inman was fearful of using the latest available materials …”",
+              "p": "Bài nói Inman “unafraid to try new technology” — không hề e ngại, mâu thuẫn câu đề."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Inman was fearful of using the latest available materials …”",
+              "p": "Bài nói Inman “unafraid to try new technology” — không hề e ngại, mâu thuẫn câu đề."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "First-class passengers could even book European hotels by wireless before reaching port."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Sau khi có radio, hành khách hạng hai có thể đặt phòng khách sạn từ trên tàu — bài có nói không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“second class guests could reserve rooms … from the ship”",
+              "p": "Bài chỉ nêu “First-class passengers” đặt khách sạn qua wireless; không nhắc hạng hai."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“second class guests could reserve rooms … from the ship”",
+              "p": "Bài chỉ nêu “First-class passengers” đặt khách sạn qua wireless; không nhắc hạng hai."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "With the help of a £2.6 million government loan (equivalent to more than £261 million today), Britain's Cunard line launched the massive twins RMS Lusitania and RMS Mauretania. Both had the first steam turbine engines of any superliner."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cunard vay tiền lớn để chế tạo hai tàu giống hệt nhau với động cơ turbine hơi đầu tiên — đúng không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“borrowed substantial money … couple of huge identical ships … very first steam engine propulsion.”",
+              "p": "Cunard vay £2.6 triệu, ra mắt cặp tàu song sinh Lusitania/Mauretania với động cơ turbine hơi đầu tiên."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“borrowed substantial money … couple of huge identical ships … very first steam engine propulsion.”",
+              "p": "Cunard vay £2.6 triệu, ra mắt cặp tàu song sinh Lusitania/Mauretania với động cơ turbine hơi đầu tiên."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khớp → TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "only Cunard's RMS Queen Mary 2 makes regular transatlantic crossings now"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hiện chỉ còn một tàu du lịch vượt Đại Tây Dương theo lịch cố định — đúng không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Crossing the Atlantic is done by the one remaining cruise ship … on a scheduled timetable.”",
+              "p": "“only … Queen Mary 2 makes regular transatlantic crossings now” — một tàu duy nhất còn chạy định kỳ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Crossing the Atlantic is done by the one remaining cruise ship … on a scheduled timetable.”",
+              "p": "“only … Queen Mary 2 makes regular transatlantic crossings now” — một tàu duy nhất còn chạy định kỳ."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "It allowed guests to order meals at their leisure and dine with their friends rather than attend rigidly scheduled seatings"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hãng Đức áp dụng giờ ăn cố định, kiểm soát chặt — đúng không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“fixed and tightly controlled set-seating meal times”",
+              "p": "Ritz-Carlton trên tàu Đức cho khách tự order, ăn cùng bạn bè thay vì giờ ăn cứng nhắc — ngược câu đề."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“fixed and tightly controlled set-seating meal times”",
+              "p": "Ritz-Carlton trên tàu Đức cho khách tự order, ăn cùng bạn bè thay vì giờ ăn cứng nhắc — ngược câu đề."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "In 1901, White Star became his biggest acquisition. Suddenly, the battles weren't only in the boardrooms: building the world's top ocean liners was now a point of national pride."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hãng nào bị một nhà tài chính mua lại, khiến niềm tự hào quốc gia bị đe dọa?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“acquired by a high-powered financier” (bị nhà tài chính quyền lực mua lại)",
+              "p": "JP Morgan mua White Star năm 1901 — “became his biggest acquisition”"
+            },
+            {
+              "q": "“proud thoughts of a nation were at stake” (niềm tự hào quốc gia bị đe dọa)",
+              "p": "“building the world's top ocean liners was now a point of national pride” — tranh đấu mang tính quốc gia"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“acquired by a high-powered financier” (bị nhà tài chính quyền lực mua lại)",
+              "p": "JP Morgan mua White Star năm 1901 — “became his biggest acquisition”"
+            },
+            {
+              "q": "“proud thoughts of a nation were at stake” (niềm tự hào quốc gia bị đe dọa)",
+              "p": "“building the world's top ocean liners was now a point of national pride” — tranh đấu mang tính quốc gia"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "JP Morgan mua White Star; cuộc chiến không còn chỉ trong phòng họp mà còn là vấn đề tự hào quốc gia."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C — White Star"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Cunard nhận khoản vay chính phủ Anh, không bị Morgan mua."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Inman không được nhắc đến việc bị tài phiệt Mỹ thâu tóm."
+            }
+          ]
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Cunard said flying was just a fad, and that it was not a genuine concern."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hãng nào cho rằng đi máy bay chỉ là mốt nhất thời, không đáng lo?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“air travel was a short-term temporary fashionable form of travel”",
+              "p": "“flying was just a fad” — chỉ là cơn sốt nhất thời"
+            },
+            {
+              "q": "“not to be overly worried about”",
+              "p": "“not a genuine concern” — không phải mối đe dọa thật"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“air travel was a short-term temporary fashionable form of travel”",
+              "p": "“flying was just a fad” — chỉ là cơn sốt nhất thời"
+            },
+            {
+              "q": "“not to be overly worried about”",
+              "p": "“not a genuine concern” — không phải mối đe dọa thật"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Câu này gắn trực tiếp với Cunard khi máy bay cạnh tranh với tàu biển."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A — Cunard"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Inman không được nhắc quan điểm về máy bay."
+            },
+            {
+              "letter": "C",
+              "whyVi": "White Star không có phát biểu tương tự trong bài."
+            }
+          ]
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "In 1888, Inman introduced ships which no longer required auxiliary sails, giving ocean liners a similar look to the one they have today."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hãng nào loại bỏ buồm phụ, tàu trông giống tàu biển hiện đại?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“alternate newer technologies rendered older wind powered systems obsolete”",
+              "p": "“no longer required auxiliary sails” — không cần buồm phụ"
+            },
+            {
+              "q": "“giving them the modern-day look”",
+              "p": "“giving ocean liners a similar look to the one they have today”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“alternate newer technologies rendered older wind powered systems obsolete”",
+              "p": "“no longer required auxiliary sails” — không cần buồm phụ"
+            },
+            {
+              "q": "“giving them the modern-day look”",
+              "p": "“giving ocean liners a similar look to the one they have today”"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Inman 1888 cho ra tàu không cần buồm phụ — ngoại hình gần tàu biển ngày nay."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B — Inman"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Cunard thận trọng chờ đối thủ thử công nghệ mới, không phải hãng bỏ buồm phụ."
+            },
+            {
+              "letter": "C",
+              "whyVi": "White Star nổi tiếng “floating hotels”, không phải bỏ buồm phụ."
+            }
+          ]
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "The Cunard way was to let competitors introduce new-fangled technology and let them deal with the setbacks, once that technology had proved itself, only then would Cunard consider using it."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hãng nào chờ đối thủ chứng minh công nghệ mới rồi mới áp dụng?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Patiently waiting for their rivals to prove that new technologies … worked”",
+              "p": "“let competitors introduce … let them deal with the setbacks”"
+            },
+            {
+              "q": "“before implementing them themselves”",
+              "p": "“once that technology had proved itself, only then would Cunard consider using it”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Patiently waiting for their rivals to prove that new technologies … worked”",
+              "p": "“let competitors introduce … let them deal with the setbacks”"
+            },
+            {
+              "q": "“before implementing them themselves”",
+              "p": "“once that technology had proved itself, only then would Cunard consider using it”"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đây là chiến lược đặc trưng “The Cunard way” — an toàn, chờ đối thủ thử trước."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A — Cunard"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Inman ngược lại — sẵn sàng thử công nghệ mới sớm (ốc vít, thân sắt)."
+            },
+            {
+              "letter": "C",
+              "whyVi": "White Star tập trung sang trọng, kích thước, không mô tả chiến lược chờ đợi này."
+            }
+          ]
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "the White Star line's splashy debut included five huge ocean liners, dubbed floating hotels."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hãng nào sản xuất tàu khổng lồ được gọi là ‘khách sạn nổi’?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“massive ocean going vessels”",
+              "p": "“five huge ocean liners”"
+            },
+            {
+              "q": "“nickname ‘hotels that float’”",
+              "p": "“dubbed floating hotels”"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“massive ocean going vessels”",
+              "p": "“five huge ocean liners”"
+            },
+            {
+              "q": "“nickname ‘hotels that float’”",
+              "p": "“dubbed floating hotels”"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "White Star ra mắt năm 1870 với năm tàu lớn, được mệnh danh floating hotels."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C — White Star"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Cunard nhấn an toàn, không được gọi floating hotels."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Inman nổi tiếng công nghệ ốc vít, không phải biệt danh khách sạn nổi."
+            }
+          ]
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "speed record",
+      "evidence": {
+        "quoteEn": "it would go on to break the speed record for the fastest ocean crossing not once, but twice."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tàu mới nhất thời đầu 1900s hai lần phá ______."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — danh từ ghép."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“broke the ______” (phá vỡ …)",
+              "p": "“break the speed record for the fastest ocean crossing … twice”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“broke the ______” (phá vỡ …)",
+              "p": "“break the speed record for the fastest ocean crossing … twice”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "speed record"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "speed record"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "add amenities",
+      "evidence": {
+        "quoteEn": "Pressure from other European lines forced the British companies to add amenities like swimming pools and restaurants."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hãng Anh buộc phải ______ như hồ bơi và nhà hàng."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Động từ + danh từ (tối đa 3 từ)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“forced … to ______”",
+              "p": "“forced the British companies to add amenities like swimming pools and restaurants”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“forced … to ______”",
+              "p": "“forced the British companies to add amenities like swimming pools and restaurants”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "add amenities"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "add amenities"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "still in place",
+      "evidence": {
+        "quoteEn": "safety regulations were updated to require lifeboat berths for every passenger and 24-hour radio surveillance (rules which are still in place)."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Quy định an toàn sau thảm họa mà ta vẫn thấy hôm nay là ______."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Cụm tối đa 3 từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“we can see today are ______”",
+              "p": "“(rules which are still in place)” — vẫn còn hiệu lực."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“we can see today are ______”",
+              "p": "“(rules which are still in place)” — vẫn còn hiệu lực."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "still in place"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "still in place"
+        }
+      ]
+    },
+    "27": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "bread and butter",
+      "evidence": {
+        "quoteEn": "US anti-immigration laws reduced the number of transatlantic emigrants - the liners' bread and butter - in the 1920s."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Gia đình di cư từ châu Âu sang Mỹ được ngành gọi là ______ của họ."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Thành ngữ tối đa 3 từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“known to the industry as their ______”",
+              "p": "“the liners' bread and butter” — nguồn thu chính, khách hàng cốt lõi."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“known to the industry as their ______”",
+              "p": "“the liners' bread and butter” — nguồn thu chính, khách hàng cốt lõi."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "bread and butter"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "bread and butter"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "ii",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "In this, food and beverages are the main factors that motivate a person to travel to a particular destination."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Section B nói về loại hình du lịch nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ii: Cuisine Tourism (du lịch ẩm thực)",
+              "p": "Đoạn B: thức ăn, đồ uống là yếu tố chính thúc đẩy du lịch; trải nghiệm ẩm thực địa phương."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading ii: Cuisine Tourism (du lịch ẩm thực)",
+              "p": "Đoạn B: thức ăn, đồ uống là yếu tố chính thúc đẩy du lịch; trải nghiệm ẩm thực địa phương."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nội dung trọng tâm là food & beverages → ii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ii"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Rather, they let their whims be their guides! Destinations are chosen not on their standard touristic merit but on the basis of an idea or concept often involving elements of humor, serendipity, and chance."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Section C mô tả du lịch theo ý thích ngẫu nhiên, Monopoly-travel, Counter-travel — heading nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading i: Experimental Tourism (du lịch thử nghiệm)",
+              "p": "Đoạn C: chọn điểm đến theo ý tưởng, xúc xắc, may rủi — Monopoly-travel, Erotravel."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading i: Experimental Tourism (du lịch thử nghiệm)",
+              "p": "Đoạn C: chọn điểm đến theo ý tưởng, xúc xắc, may rủi — Monopoly-travel, Erotravel."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Du lịch phi truyền thống, thử nghiệm → i."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "i"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "This involves any crop-based or animal based operation or activity that brings visitors to a farm or ranch."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Section D về hoạt động nông trại, thu hoạch, cưỡi ngựa — heading nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vii: Agritourism.",
+              "p": "Đoạn D: trang trại, hái quả, cưỡi ngựa, rượu/pho mát — agritourism đã trở nên widespread ở Mỹ."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading vii: Agritourism.",
+              "p": "Đoạn D: trang trại, hái quả, cưỡi ngựa, rượu/pho mát — agritourism đã trở nên widespread ở Mỹ."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "vii — Agritourism."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vii"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "heading-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "This is the trend of traveling to destinations that are first seen in movies"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Section E về du lịch theo phim — heading nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vi: Set-jetting.",
+              "p": "Đoạn E: đi nơi từng xuất hiện trong phim (James Bond, Jane Austen, Indiana Jones); thuật ngữ do báo Mỹ đặt."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading vi: Set-jetting.",
+              "p": "Đoạn E: đi nơi từng xuất hiện trong phim (James Bond, Jane Austen, Indiana Jones); thuật ngữ do báo Mỹ đặt."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "vi — Set-jetting."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "sentence-fill",
+      "answer": "authentic",
+      "evidence": {
+        "quoteEn": "this type of travel provides for an authentic experience, the food and restaurants reflecting the local and unique flavors of a particular region or country.",
+        "paragraphLetter": "B"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thưởng thức ẩm thực giúp chuyến đi ______ hơn (một từ)."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Chỗ trống là tính từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“ensures the trip is more ______”",
+              "p": "“provides for an authentic experience” — trải nghiệm chân thực."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“ensures the trip is more ______”",
+              "p": "“provides for an authentic experience” — trải nghiệm chân thực."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "authentic"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "authentic"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "sentence-fill",
+      "answer": "elegant",
+      "evidence": {
+        "quoteEn": "shuttling between elegant shopping areas and the local water plant",
+        "paragraphLetter": "C"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Di chuyển giữa nhà máy nước và trung tâm mua sắm ______ (một từ)."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Tính từ bổ nghĩa cho shopping areas/malls."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“malls that are more ______”",
+              "p": "“elegant shopping areas” — khu mua sắm sang trọng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“malls that are more ______”",
+              "p": "“elegant shopping areas” — khu mua sắm sang trọng."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "elegant"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "elegant"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "sentence-fill",
+      "answer": "honeymoon",
+      "evidence": {
+        "quoteEn": "If a traveler has seen a site in a major motion picture, its media exposure makes it a compelling choice for a family vacation or honeymoon.",
+        "paragraphLetter": "E"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bối cảnh phim blockbusters thu hút các cặp đi ______ (một từ)."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Danh từ một từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“attracting couples to go there for their ______”",
+              "p": "“a compelling choice for a family vacation or honeymoon”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“attracting couples to go there for their ______”",
+              "p": "“a compelling choice for a family vacation or honeymoon”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "honeymoon"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "honeymoon"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "sentence-fill",
+      "answer": "widespread",
+      "evidence": {
+        "quoteEn": "It has recently become widespread in America",
+        "paragraphLetter": "D"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đi thăm trang trại hái dâu, học làm rượu ngày càng ______ ở Mỹ (một từ)."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Tính từ sau “becoming increasingly”."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“is becoming increasingly ______”",
+              "p": "“has recently become widespread in America”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“is becoming increasingly ______”",
+              "p": "“has recently become widespread in America”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "widespread"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "widespread"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Studies conducted into this travel phenomenon have shown that food plays, consciously or unconsciously, an important part in the vacations of a good number of travelers."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thưởng thức đồ ăn ngon là phần quan trọng nhất của kỳ nghỉ đối với đa số du khách — đúng không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“most critical part … for the majority of travellers”",
+              "p": "Bài nói food plays “an important part” cho “a good number of travelers” — không nói “most critical” hay “majority”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“most critical part … for the majority of travellers”",
+              "p": "Bài nói food plays “an important part” cho “a good number of travelers” — không nói “most critical” hay “majority”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Counter-travel, which requires you to take snapshots with your back turned to landmarks like the Eiffel Tower or Big Ben."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Counter-travel bắt chụp ảnh quay lưng lại địa danh — đúng không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Taking photos facing directly opposite from and facing away from a popular tourist site”",
+              "p": "“take snapshots with your back turned to landmarks” — quay lưng vào điểm tham quan."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Taking photos facing directly opposite from and facing away from a popular tourist site”",
+              "p": "“take snapshots with your back turned to landmarks” — quay lưng vào điểm tham quan."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "related projects reinforce the need to support local growers and allow visitors to experience the relationship between food and our natural environment."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người ta ngày càng trân trọng việc ủng hộ nông dân trồng rau địa phương — đúng không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“gaining appreciation for the need to back those producing local grown vegetables”",
+              "p": "“reinforce the need to support local growers” — nhấn mạnh ủng hộ nông dân địa phương."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“gaining appreciation for the need to back those producing local grown vegetables”",
+              "p": "“reinforce the need to support local growers” — nhấn mạnh ủng hộ nông dân địa phương."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "The term was first coined in the US press in the New York Post by journalist Gretchen Kelly"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thuật ngữ du lịch phim được dùng lần đầu trên báo Anh — đúng không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“first used in the British media”",
+              "p": "Thuật ngữ được đặt ở “US press … New York Post”, không phải báo Anh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“first used in the British media”",
+              "p": "Thuật ngữ được đặt ở “US press … New York Post”, không phải báo Anh."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "FALSE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "then think outside the box"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "“Think outside the box” nghĩa là suy nghĩ theo cách nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: creative (sáng tạo)",
+              "p": "“think outside the box” — thoát khỏi khuôn mẫu, nghĩ theo hướng mới/một cách sáng tạo."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "C: creative (sáng tạo)",
+              "p": "“think outside the box” — thoát khỏi khuôn mẫu, nghĩ theo hướng mới/một cách sáng tạo."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Trong ngữ cảnh du lịch phi truyền thống, “outside the box” = creative, không chỉ “new” hay “unique” một cách hẹp."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Unique (độc đáo) gần nghĩa nhưng đề hỏi cách suy nghĩ — creative khớp thành ngữ hơn."
+            },
+            {
+              "letter": "B",
+              "whyVi": "New (mới) quá chung chung; “outside the box” nhấn tư duy sáng tạo, phá khuôn."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

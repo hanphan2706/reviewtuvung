@@ -1,0 +1,1958 @@
+{
+  "pilotId": "de-thi-that-10",
+  "schemaVersion": 4,
+  "note": "Đề thi thật IELTS 10 — giải thích chi tiết: Making Time for Science / The Triune Brain / Helium's Future Up in the Air.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "MAKING TIME FOR SCIENCE",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "The Triune Brain",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "HELIUM'S FUTURE UP IN THE AIR",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "Chronobiology might sound a little futuristic … short-term rhythms of time and their effect on flora and fauna"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chronobiology = tiến hóa theo thời gian?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "how living things have evolved over time",
+              "p": "short-term rhythms of time … effect on flora and fauna"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how living things have evolved over time",
+              "p": "short-term rhythms of time … effect on flora and fauna"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "FALSE — nhịp ngắn hạn, không phải tiến hóa."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "Marine life, for example, is influenced by tidal patterns."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thủy triều ảnh hưởng sinh vật biển?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "rise and fall of sea levels affect … sea creatures",
+              "p": "Marine life … influenced by tidal patterns"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "rise and fall of sea levels affect … sea creatures",
+              "p": "Marine life … influenced by tidal patterns"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Numerous creatures, humans included, are largely diurnal"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hầu hết động vật hoạt động ban ngày?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Most animals are active during the daytime",
+              "p": "Numerous … diurnal; cũng có nocturnal, crepuscular — không nói most"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Most animals are active during the daytime",
+              "p": "Numerous … diurnal; cũng có nocturnal, crepuscular — không nói most"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "This is the complete cycle our bodies are naturally geared to undergo within the passage of a twenty-four-hour day."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Circadian = khác nhau theo ngày?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "how we do different things on different days",
+              "p": "within … a twenty-four-hour day"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "how we do different things on different days",
+              "p": "within … a twenty-four-hour day"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "FALSE — trong một ngày 24 giờ, không theo từng ngày khác."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "This is a benign variation within circadian rhythms known as a chronotype."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Night person vẫn có nhịp khỏe?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "A 'night person' can still have a healthy circadian rhythm",
+              "p": "benign variation within circadian rhythms"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "A 'night person' can still have a healthy circadian rhythm",
+              "p": "benign variation within circadian rhythms"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TRUE — chronotype lành tính."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "our bodies can tell the difference and health suffers when we breach these natural rhythms for extended periods of time"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Liệu pháp mới đổi vĩnh viễn không hại?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "permanently change … without causing harm",
+              "p": "health suffers when we breach these natural rhythms"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "permanently change … without causing harm",
+              "p": "health suffers when we breach these natural rhythms"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "FALSE — sức khỏe bị ảnh hưởng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "vegetables grown in season and ripened on the tree are far higher in essential nutrients than those grown in greenhouses and ripened by laser"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Rau tự nhiên bổ dưỡng hơn?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Naturally-produced vegetables have more nutritional value",
+              "p": "grown in season … far higher in essential nutrients"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Naturally-produced vegetables have more nutritional value",
+              "p": "grown in season … far higher in essential nutrients"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "TRUE."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "The optimum moment has been whittled down to 7.22 a.m."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giờ thức dậy lý tưởng?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: 7.22",
+              "p": "optimum moment … 7.22 a.m."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "C: 7.22",
+              "p": "optimum moment … 7.22 a.m."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "6.04 là giờ trung bình đô thị — quá sớm."
+            },
+            {
+              "letter": "B",
+              "whyVi": "7.00 vẫn có hại trừ khi tập 30 phút."
+            },
+            {
+              "letter": "D",
+              "whyVi": "7.30 không được nêu."
+            }
+          ]
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "The recommended course of action is to follow an intense workout with a carbohydrate-rich breakfast"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Để giảm cân nên?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: exercise before breakfast",
+              "p": "workout rồi mới ăn sáng carbohydrate"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "C: exercise before breakfast",
+              "p": "workout rồi mới ăn sáng carbohydrate"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tập trước bữa sáng — C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Never skip breakfast — ngược lại."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Cần carbohydrate-rich breakfast."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Ngược thứ tự: tập rồi ăn, không ăn rồi tập."
+            }
+          ]
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Supplement absorption by the body is not temporal-dependent, but naturopath Pam Stone notes that the extra boost at breakfast helps us get energised"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cách nào KHÔNG được nêu để tăng hấp thụ?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: taking supplements at breakfast",
+              "p": "Breakfast giúp energised, nhưng absorption không temporal-dependent — không phải cách cải thiện absorption"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "B: taking supplements at breakfast",
+              "p": "Breakfast giúp energised, nhưng absorption không temporal-dependent — không phải cách cải thiện absorption"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "B không phải cách cải thiện hấp thụ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Steering clear of caffeinated beverages — có nêu."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Pairing with food in which they are soluble — có nêu."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Warmth and humidity deplete potency — cất nơi mát khô — có nêu."
+            }
+          ]
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "we are better off putting the brakes on caffeine consumption as early as 3 p.m."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Dừng cà phê lúc nào tốt nhất?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "A: mid-afternoon",
+              "p": "as early as 3 p.m."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "A: mid-afternoon",
+              "p": "as early as 3 p.m."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "A — giữa chiều."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "10 p.m. là lúc còn caffeine trong hệ thần kinh, không phải lúc dừng."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không liên quan lo âu."
+            },
+            {
+              "letter": "D",
+              "whyVi": "After-dinner espresso bị khuyến cáo tránh."
+            }
+          ]
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "Consuming a modest snack should be entirely sufficient."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Buổi tối nên?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "D: eat a light meal",
+              "p": "modest snack … sufficient"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "D: eat a light meal",
+              "p": "modest snack … sufficient"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "D — ăn nhẹ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Carbohydrate-fast sau 5h là myth."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không nói dừng tập."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Overloading gut → indigestion — không nên ăn quá nhiều."
+            }
+          ]
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Knowledge of chronobiological patterns can have many pragmatic implications for our day-to-day lives."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mục đích chính của bài?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: introduce chronobiology and describe some practical applications",
+              "p": "Giới thiệu chronobiology + ứng dụng thực tế (ngủ, ăn, caffeine…)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "C: introduce chronobiology and describe some practical applications",
+              "p": "Giới thiệu chronobiology + ứng dụng thực tế (ngủ, ăn, caffeine…)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Có gợi ý thói quen nhưng không phải chỉ về ăn/ngủ/tập."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Bài nói giữ nhịp vẫn quan trọng, không nói chronobiology hết liên quan."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Không lập lịch để thay đổi nhịp tự nhiên."
+            }
+          ]
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "The ability to sacrifice our drive for immediate satisfaction in order to benefit later is a product of the neocortex."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đặc điểm nào thuộc não nào: hy sinh hạnh phúc ngắn hạn vì lợi ích sau?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "hy sinh hạnh phúc ngắn hạn vì lợi ích sau",
+              "p": "The ability to sacrifice our drive for immediate satisfaction in order to benefit later is a product of the neocortex."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "hy sinh hạnh phúc ngắn hạn vì lợi ích sau",
+              "p": "The ability to sacrifice our drive for immediate satisfaction in order to benefit later is a product of the neocortex."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Neocortex — delayed gratification."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C — neocortex"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "reptilian cortex — không khớp."
+            },
+            {
+              "letter": "B",
+              "whyVi": "limbic cortex — không khớp."
+            }
+          ]
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "This brain sustains the elementary activities of animal survival such as respiration, adequate rest and a beating heart."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đặc điểm nào thuộc não nào: duy trì chức năng sống cơ bản?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "duy trì chức năng sống cơ bản",
+              "p": "This brain sustains the elementary activities of animal survival such as respiration, adequate rest and a beating heart."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "duy trì chức năng sống cơ bản",
+              "p": "This brain sustains the elementary activities of animal survival such as respiration, adequate rest and a beating heart."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Reptilian — survival functions."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A — reptilian cortex"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "limbic cortex — không khớp."
+            },
+            {
+              "letter": "C",
+              "whyVi": "neocortex — không khớp."
+            }
+          ]
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Listen to the anguished squeal of a dolphin separated from its pod or witness the sight of elephants mourning their dead"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đặc điểm nào thuộc não nào: đau khi mất đi kẻ khác?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "đau khi mất đi kẻ khác",
+              "p": "Listen to the anguished squeal of a dolphin separated from its pod or witness the sight of elephants mourning their dead"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "đau khi mất đi kẻ khác",
+              "p": "Listen to the anguished squeal of a dolphin separated from its pod or witness the sight of elephants mourning their dead"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Limbic — mourning, attachment."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B — limbic cortex"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "reptilian cortex — không khớp."
+            },
+            {
+              "letter": "C",
+              "whyVi": "neocortex — không khớp."
+            }
+          ]
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "These same sensations also cause mammals to develop various types of social relations and kinship networks."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đặc điểm nào thuộc não nào: tạo cộng đồng / nhóm xã hội?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "tạo cộng đồng / nhóm xã hội",
+              "p": "These same sensations also cause mammals to develop various types of social relations and kinship networks."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "tạo cộng đồng / nhóm xã hội",
+              "p": "These same sensations also cause mammals to develop various types of social relations and kinship networks."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Limbic — social relations."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B — limbic cortex"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "reptilian cortex — không khớp."
+            },
+            {
+              "letter": "C",
+              "whyVi": "neocortex — không khớp."
+            }
+          ]
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "The neocortex is also responsible for the process by which we decide on and commit to particular courses of action."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đặc điểm nào thuộc não nào: quyết định và thực hiện?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "quyết định và thực hiện",
+              "p": "The neocortex is also responsible for the process by which we decide on and commit to particular courses of action."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "quyết định và thực hiện",
+              "p": "The neocortex is also responsible for the process by which we decide on and commit to particular courses of action."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Neocortex — decide and commit."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C — neocortex"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "reptilian cortex — không khớp."
+            },
+            {
+              "letter": "B",
+              "whyVi": "limbic cortex — không khớp."
+            }
+          ]
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "aggression, mating, and territorial defence"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đặc điểm nào thuộc não nào: bảo vệ lãnh thổ?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "bảo vệ lãnh thổ",
+              "p": "aggression, mating, and territorial defence"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "bảo vệ lãnh thổ",
+              "p": "aggression, mating, and territorial defence"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Reptilian — territorial defence."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A — reptilian cortex"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "limbic cortex — không khớp."
+            },
+            {
+              "letter": "C",
+              "whyVi": "neocortex — không khớp."
+            }
+          ]
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "develop complex theories of physical or social phenomena"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đặc điểm nào thuộc não nào: xây dựng giải thích / lý thuyết?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "xây dựng giải thích / lý thuyết",
+              "p": "develop complex theories of physical or social phenomena"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "xây dựng giải thích / lý thuyết",
+              "p": "develop complex theories of physical or social phenomena"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Neocortex — theories, reason."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C — neocortex"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "reptilian cortex — không khớp."
+            },
+            {
+              "letter": "B",
+              "whyVi": "limbic cortex — không khớp."
+            }
+          ]
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "the limbic cortex impels creatures to nurture their offspring"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đặc điểm nào thuộc não nào: chăm con?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "chăm con",
+              "p": "the limbic cortex impels creatures to nurture their offspring"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "chăm con",
+              "p": "the limbic cortex impels creatures to nurture their offspring"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Limbic — nurture offspring."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B — limbic cortex"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "reptilian cortex — không khớp."
+            },
+            {
+              "letter": "C",
+              "whyVi": "neocortex — không khớp."
+            }
+          ]
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "the \"startle centre\", a mechanism that facilitates swift reactions to unexpected occurrences"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đặc điểm nào thuộc não nào: phản ứng nhanh với tiếng động bất ngờ?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "phản ứng nhanh với tiếng động bất ngờ",
+              "p": "the \"startle centre\", a mechanism that facilitates swift reactions to unexpected occurrences"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "phản ứng nhanh với tiếng động bất ngờ",
+              "p": "the \"startle centre\", a mechanism that facilitates swift reactions to unexpected occurrences"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Reptilian — startle centre."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A — reptilian cortex"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "limbic cortex — không khớp."
+            },
+            {
+              "letter": "C",
+              "whyVi": "neocortex — không khớp."
+            }
+          ]
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "brain dead",
+      "evidence": {
+        "quoteEn": "The most devastating form of brain damage, for example, is a condition in which someone is understood to be brain dead."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chỉ còn reptilian hoạt động gọi là?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "known as ______",
+              "p": "understood to be brain dead"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "known as ______",
+              "p": "understood to be brain dead"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "brain dead"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "brain dead"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "sociopathic behaviour",
+      "evidence": {
+        "quoteEn": "In our own species, limbic damage is closely related to sociopathic behaviour."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Liên quan tổn thương limbic?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "______ … associated with limbic disruption",
+              "p": "limbic damage is closely related to sociopathic behaviour"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ … associated with limbic disruption",
+              "p": "limbic damage is closely related to sociopathic behaviour"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "sociopathic behaviour"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "sociopathic behaviour"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "neocortex",
+      "evidence": {
+        "quoteEn": "a metal rod skewered his skull, taking a considerable amount of his neocortex with it"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Gage mất một phần?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "lose part of his ______",
+              "p": "taking … his neocortex"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lose part of his ______",
+              "p": "taking … his neocortex"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "neocortex"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "neocortex"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "animal propensities",
+      "evidence": {
+        "quoteEn": "Gage's animal propensities were now sharply pronounced while his intellectual abilities suffered"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mất cân bằng giữa gì và tư duy cao?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "imbalance between Gage's ______ and higher-order thinking",
+              "p": "animal propensities … intellectual abilities suffered"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "imbalance between Gage's ______ and higher-order thinking",
+              "p": "animal propensities … intellectual abilities suffered"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "animal propensities"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "animal propensities"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "C",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "helium is also instrumental in deep-sea diving, where it is blended with nitrogen to mitigate the dangers of inhaling ordinary air under high pressure"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa: dùng helium làm hoạt động an toàn hơn?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "dùng helium làm hoạt động an toàn hơn",
+              "p": "helium is also instrumental in deep-sea diving, where it is blended with nitrogen to mitigate the dangers of inhaling ordinary air under high pressure"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "dùng helium làm hoạt động an toàn hơn",
+              "p": "helium is also instrumental in deep-sea diving, where it is blended with nitrogen to mitigate the dangers of inhaling ordinary air under high pressure"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Deep-sea diving safer — đoạn C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "D",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "certainly, no biosynthetic ersatz product is close to approaching the point of feasibility for helium"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa: khả năng tạo thay thế helium?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "khả năng tạo thay thế helium",
+              "p": "certainly, no biosynthetic ersatz product is close to approaching the point of feasibility for helium"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "khả năng tạo thay thế helium",
+              "p": "certainly, no biosynthetic ersatz product is close to approaching the point of feasibility for helium"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Alternative chưa khả thi — đoạn D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "B",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "commercially extracted through a method known as fractional distillation"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa: tên quy trình lấy helium từ đất?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "tên quy trình lấy helium từ đất",
+              "p": "commercially extracted through a method known as fractional distillation"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "tên quy trình lấy helium từ đất",
+              "p": "commercially extracted through a method known as fractional distillation"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Fractional distillation — đoạn B."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "E",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "global helium prices are so artificially deflated that few can be bothered recycling the substance or using it judiciously"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa: lý do người dùng không tiết kiệm?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "lý do người dùng không tiết kiệm",
+              "p": "global helium prices are so artificially deflated that few can be bothered recycling the substance or using it judiciously"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "lý do người dùng không tiết kiệm",
+              "p": "global helium prices are so artificially deflated that few can be bothered recycling the substance or using it judiciously"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Giá quá thấp → không recycle — đoạn E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "paragraph-match",
+      "answer": "A",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "Helium – an inert, odourless, monatomic element known to lay people as the substance that makes balloons float and voices squeak when inhaled"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn nào chứa: tương phản tính chất hóa học vs nhận thức phổ thông?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "tương phản tính chất hóa học vs nhận thức phổ thông",
+              "p": "Helium – an inert, odourless, monatomic element known to lay people as the substance that makes balloons float and voices squeak when inhaled"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "tương phản tính chất hóa học vs nhận thức phổ thông",
+              "p": "Helium – an inert, odourless, monatomic element known to lay people as the substance that makes balloons float and voices squeak when inhaled"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Lay people = bóng bay; thực tế quan trọng — đoạn A."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "Helium is even cheerfully derided as a \"loner\" element since it does not adhere to other molecules like its cousin, hydrogen."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Helium chọn ở một mình?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Helium chooses to be on its own",
+              "p": "\"loner\" element … does not adhere to other molecules"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Helium chooses to be on its own",
+              "p": "\"loner\" element … does not adhere to other molecules"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "YES — loner / không kết hợp."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Another important attribute is helium's unique boiling point, which is lower than that for any other element."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Helium là chất rất lạnh?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Helium is a very cold substance",
+              "p": "boiling point thấp — không nói helium is a cold substance"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Helium is a very cold substance",
+              "p": "boiling point thấp — không nói helium is a cold substance"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "There is an enormous supply and demand imbalance partly brought about by the expansion of high-tech manufacturing in Asia."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Công nghiệp Á Châu dùng nhiều hơn lab nơi khác?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Asia use more helium than laboratories … elsewhere",
+              "p": "imbalance từ expansion Asia — không so sánh lượng dùng vs nơi khác"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Asia use more helium than laboratories … elsewhere",
+              "p": "imbalance từ expansion Asia — không so sánh lượng dùng vs nơi khác"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Although intended to settle the original cost of the reserve by a U.S. Congress ignorant of its ramifications"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Congress hiểu hậu quả HPA?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "US Congress understood the possible consequences",
+              "p": "Congress ignorant of its ramifications"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "US Congress understood the possible consequences",
+              "p": "Congress ignorant of its ramifications"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NO — không hiểu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "prudent practice",
+      "evidence": {
+        "quoteEn": "present market forces are not sufficient to compel prudent practice"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mua bán thôi không khuyến khích gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "______ will not be encouraged through buying and selling alone",
+              "p": "market forces are not sufficient to compel prudent practice"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "______ will not be encouraged through buying and selling alone",
+              "p": "market forces are not sufficient to compel prudent practice"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "prudent practice"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "prudent practice"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "privatisation policy",
+      "evidence": {
+        "quoteEn": "the U.S. government must be prevailed upon to repeal its privatisation policy"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần rút lại gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "the ______ needs to be withdrawn",
+              "p": "repeal its privatisation policy"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "the ______ needs to be withdrawn",
+              "p": "repeal its privatisation policy"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "privatisation policy"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "privatisation policy"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "incentives",
+      "evidence": {
+        "quoteEn": "a twenty- to fifty-fold increase in prices would provide incentives to recycle"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giá cao → mọi người có gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "people have ______ to use the resource many times over",
+              "p": "provide incentives to recycle"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "people have ______ to use the resource many times over",
+              "p": "provide incentives to recycle"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "incentives"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "incentives"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "permit",
+      "evidence": {
+        "quoteEn": "all existing supplies of helium ought to be conserved and released only by permit"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Cần gì để lấy helium?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "need a ______ to access helium",
+              "p": "released only by permit"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "need a ______ to access helium",
+              "p": "released only by permit"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "permit"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "permit"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "summary-fill",
+      "answer": "regulatory agency",
+      "evidence": {
+        "quoteEn": "conservation should be obligatory and enforced by a regulatory agency"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai đảm bảo dùng cẩn thận?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "a ______ should ensure",
+              "p": "enforced by a regulatory agency"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "a ______ should ensure",
+              "p": "enforced by a regulatory agency"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "regulatory agency"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "regulatory agency"
+        }
+      ]
+    }
+  }
+}

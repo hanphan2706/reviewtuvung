@@ -1,0 +1,1862 @@
+{
+  "pilotId": "de-thi-that-2",
+  "schemaVersion": 4,
+  "note": "Đề thi thật IELTS 2 — giải thích chi tiết: Newton / Antarctica / Thinking Fast and Slow.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The Life of Sir Isaac Newton",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "The Geography of Antarctica",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Thinking, Fast and Slow",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quotesEn": [
+          "His methods were heavily criticized by established Society member Robert Hooke",
+          "Newton engaged in heated correspondence with Hooke before suffering a nervous breakdown"
+        ],
+        "quoteEn": "His methods were heavily criticized by established Society member Robert Hooke, who was also unwilling to compromise again with Newton's follow-up paper in 1675."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B kể về giai đoạn Newton nghiên cứu ánh sáng và phản ứng của giới học thuật — cần heading về tranh luận học thuật gay gắt."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vi: “Heated academic disputes” (tranh luận học thuật gay gắt)",
+              "p": "Đoạn B: Hooke chỉ trích nặng phương pháp của Newton; hai người tranh luận qua thư “heated correspondence” trước khi Newton bị “nervous breakdown”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading vi: “Heated academic disputes” (tranh luận học thuật gay gắt)",
+              "p": "Đoạn B: Hooke chỉ trích nặng phương pháp của Newton; hai người tranh luận qua thư “heated correspondence” trước khi Newton bị “nervous breakdown”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nội dung trọng tâm là xung đột với Hooke về quang học, không phải thành tựu hay đời thường."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "viii",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "The result was the 1687 publication of “Philosophiae Naturalis Principia Mathematica” … which established the three laws of motion and the law of universal gravity."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C nói về việc Halley thúc Newton xuất bản Principia — thành tựu đỉnh cao trong sự nghiệp."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading viii: “His crowning achievement” (thành tựu đỉnh cao)",
+              "p": "Bài: kết quả là Principia (1687) thiết lập ba định luật chuyển động và định luật hấp dẫn vạn vật — biến Newton thành ngôi sao trong giới khoa học."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading viii: “His crowning achievement” (thành tựu đỉnh cao)",
+              "p": "Bài: kết quả là Principia (1687) thiết lập ba định luật chuyển động và định luật hấp dẫn vạn vật — biến Newton thành ngôi sao trong giới khoa học."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn C tập trung vào Principia, tác phẩm lớn nhất của Newton."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "viii"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "He moved to London permanently after being named warden of the Royal Mint in 1696, earning a promotion to master of the Mint three years later."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D: Newton tham chính, rồi chuyển sang vai trò mới ở Royal Mint — heading về một hướng đi mới."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vii: “A new venture” (một hướng đi / sự nghiệp mới)",
+              "p": "Sau khi nổi tiếng, Newton vào Quốc hội, rồi sang London làm warden và master of the Mint — bước ngoặt sang quản lý tiền tệ, khác hẳn nghiên cứu thuần túy."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading vii: “A new venture” (một hướng đi / sự nghiệp mới)",
+              "p": "Sau khi nổi tiếng, Newton vào Quốc hội, rồi sang London làm warden và master of the Mint — bước ngoặt sang quản lý tiền tệ, khác hẳn nghiên cứu thuần túy."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn mô tả Newton bước sang công việc công quyền và hệ thống tiền tệ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vii"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "The death of Hooke in 1703 allowed Newton to take over as president of the Royal Society, and the following year he published his second major work, “Opticks.”"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E: Newton làm chủ tịch Royal Society, xuất bản Opticks, được phong tước — tiếp tục đột phá nghiên cứu."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading i: “Continued breakthroughs in research” (tiếp tục đột phá nghiên cứu)",
+              "p": "Newton lên chủ tịch Hội Hoàng gia, xuất bản Opticks (sách lớn thứ hai), được phong tước năm 1705 — vẫn tiếp tục đóng góp khoa học."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading i: “Continued breakthroughs in research” (tiếp tục đột phá nghiên cứu)",
+              "p": "Newton lên chủ tịch Hội Hoàng gia, xuất bản Opticks (sách lớn thứ hai), được phong tước năm 1705 — vẫn tiếp tục đóng góp khoa học."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sau Principia, Newton vẫn có Opticks và vai trò lãnh đạo khoa học."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "i"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "ii",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "Around this time, the debate over Newton's claims to originating the field of calculus … exploded into a nasty dispute."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F: tranh cãi Newton–Leibniz về ai là người sáng tạo ra calculus."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ii: “Competing claims of originality” (các tuyên bố tranh chấp về bản quyền ý tưởng)",
+              "p": "Cuộc tranh cãi về ai là người đặt nền móng cho calculus: Newton (fluxions) và Leibniz; Hội Hoàng gia điều tra ủng hộ Newton nhưng tranh luận kéo dài."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading ii: “Competing claims of originality” (các tuyên bố tranh chấp về bản quyền ý tưởng)",
+              "p": "Cuộc tranh cãi về ai là người đặt nền móng cho calculus: Newton (fluxions) và Leibniz; Hội Hoàng gia điều tra ủng hộ Newton nhưng tranh luận kéo dài."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cả đoạn xoay quanh tranh chấp tính toán vi phân."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ii"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "iv",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quotesEn": [
+          "Newton is remembered as an extraordinary scholar, inventor and writer",
+          "his precise methodology helped to give birth to what is known as the scientific method"
+        ],
+        "quoteEn": "Newton is remembered as an extraordinary scholar, inventor and writer. His theories about the movement of bodies in the solar system transformed our understanding of the universe"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn G: di sản Newton — tang lễ, ảnh hưởng lâu dài, phương pháp khoa học."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iv: “The legacy of an exceptional mind” (di sản của một bộ óc phi thường)",
+              "p": "Newton được nhớ tới như học giả, nhà phát minh, nhà văn xuất sắc; phương pháp chính xác góp phần hình thành scientific method; mai táng tại Westminster Abbey."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading iv: “The legacy of an exceptional mind” (di sản của một bộ óc phi thường)",
+              "p": "Newton được nhớ tới như học giả, nhà phát minh, nhà văn xuất sắc; phương pháp chính xác góp phần hình thành scientific method; mai táng tại Westminster Abbey."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn G tổng kết di sản, không kể chi tiết tranh luận hay sự kiện mới."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iv"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "sentence-fill",
+      "answer": "royal society",
+      "evidence": {
+        "quoteEn": "In 1671 he was asked to give a demonstration of his telescope to the Royal Society of London in 1671, the same year he was elected to the prestigious Society."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Newton gắn bó phần lớn sự nghiệp với tổ chức nào (tối đa hai từ)?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Cần danh từ chỉ tổ chức; đề cho phép tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Newton was associated for much of his career with the ______.”",
+              "p": "1671: trình diễn kính viễn vọng cho Royal Society of London và được bầu vào Hội uy tín này; sau làm chủ tịch (1703)."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Newton was associated for much of his career with the ______.”",
+              "p": "1671: trình diễn kính viễn vọng cho Royal Society of London và được bầu vào Hội uy tín này; sau làm chủ tịch (1703)."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Royal Society là tổ chức khoa học mà Newton gắn bó suốt sự nghiệp."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "royal society"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "sentence-fill",
+      "answer": "niece",
+      "evidence": {
+        "quoteEn": "Having never married, Newton spent his later years living with his niece at Cranbury Park, near Winchester, England."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Về sau Newton sống cùng ai (tối đa hai từ)?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "Sau “lived with his ______” cần danh từ chỉ người thân."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“In later years, Newton lived with his ______.”",
+              "p": "“spent his later years living with his niece at Cranbury Park” — sống với cháu gái."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“In later years, Newton lived with his ______.”",
+              "p": "“spent his later years living with his niece at Cranbury Park” — sống với cháu gái."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đáp án: niece (hoặc his niece)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "niece"
+        }
+      ],
+      "answerAlternatives": [
+        "his niece"
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "telescope",
+      "evidence": {
+        "quoteEn": "He constructed the first reflecting telescope in 1668"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Newton chế tạo loại kính viễn vọng phản xạ đầu tiên — điền một từ."
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "“first reflecting ______” cần danh từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Created first reflecting ______”",
+              "p": "“constructed the first reflecting telescope in 1668”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Created first reflecting ______”",
+              "p": "“constructed the first reflecting telescope in 1668”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "telescope"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "telescope"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "optics",
+      "evidence": {
+        "quoteEn": "the following year, fascinated with the study of light, he published his notes on optics for his peers"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thí nghiệm về học gì (ánh sáng) — một từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“experiments in ______, the study of light”",
+              "p": "“published his notes on optics” — quang học."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“experiments in ______, the study of light”",
+              "p": "“published his notes on optics” — quang học."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "optics"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "optics"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "particles",
+      "evidence": {
+        "quoteEn": "he asserted that light was composed of particles instead of waves"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ánh sáng do gì cấu tạo (một từ), không phải sóng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“it is ______, not waves, that constitute light”",
+              "p": "“light was composed of particles instead of waves”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“it is ______, not waves, that constitute light”",
+              "p": "“light was composed of particles instead of waves”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "particles"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "particles"
+        }
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "motion",
+      "evidence": {
+        "quoteEn": "which established the three laws of motion and the law of universal gravity"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Principia có định luật về chuyển động và trọng lực — một từ cho laws of ______."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“laws of gravity and ______”",
+              "p": "“three laws of motion and the law of universal gravity”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“laws of gravity and ______”",
+              "p": "“three laws of motion and the law of universal gravity”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "motion"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "motion"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "calculus",
+      "evidence": {
+        "quoteEn": "the debate over Newton's claims to originating the field of calculus, the mathematical study of change"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Newton và Leibniz cùng được coi là người đặt nền móng cho nhánh toán học mới — một từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Joint founder (with Leibniz) of ______”",
+              "p": "“originating the field of calculus”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Joint founder (with Leibniz) of ______”",
+              "p": "“originating the field of calculus”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "calculus"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "calculus"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "remote",
+      "evidence": {
+        "quoteEn": "The Antarctic is a cold, remote area in the Southern Hemisphere"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nam Cực ở xa các lục địa khác nên rất ______ (một–hai từ)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Antarctica's location far from other continents means that it is very ______.”",
+              "p": "“The Antarctic is a cold, remote area” — xa xôi, hẻo lánh."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Antarctica's location far from other continents means that it is very ______.”",
+              "p": "“The Antarctic is a cold, remote area” — xa xôi, hẻo lánh."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "remote"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "remote"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "native population",
+      "evidence": {
+        "quoteEn": "It is unique in that it does not have a native population"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nam Cực là châu lục duy nhất không có gì (một–hai từ)?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Antarctica is alone among the continents in having no ______.”",
+              "p": "“does not have a native population” — không có dân cư bản địa."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Antarctica is alone among the continents in having no ______.”",
+              "p": "“does not have a native population” — không có dân cư bản địa."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "native population"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "native population"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "single",
+      "evidence": {
+        "quoteEn": "It is the single piece of ice on Earth covering the greatest area"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tảng băng Nam Cực là mảnh băng ______ lớn nhất (một từ)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“the largest ______ ice sheet on Earth”",
+              "p": "“the single piece of ice on Earth covering the greatest area”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“the largest ______ ice sheet on Earth”",
+              "p": "“the single piece of ice on Earth covering the greatest area”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "single"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "single"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "sentence-fill",
+      "answer": "ice shelves",
+      "evidence": {
+        "quoteEn": "Ice shelves are floating sheets of ice that are connected to the continent"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Khối băng nổi gắn với tảng băng châu lục gọi là ______ (một–hai từ)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“______ are blocks of ice connected to the Antarctic ice sheet.”",
+              "p": "“Ice shelves are floating sheets of ice that are connected to the continent”."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“______ are blocks of ice connected to the Antarctic ice sheet.”",
+              "p": "“Ice shelves are floating sheets of ice that are connected to the continent”."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "ice shelves"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ice shelves"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Antarctica has numerous mountain summits, including the Transantarctic Mountains"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một số núi ở Nam Cực được dân leo núi yêu thích — bài có nói không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Some of Antarctica's mountains are popular with climbers.”",
+              "p": "Bài chỉ liệt kê núi và độ cao; không nhắc leo núi hay độ phổ biến với climbers."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Some of Antarctica's mountains are popular with climbers.”",
+              "p": "Bài chỉ liệt kê núi và độ cao; không nhắc leo núi hay độ phổ biến với climbers."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Không có thông tin về leo núi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "During the summer, coastal areas hover around 0°C (32°F) but can reach temperatures as high as 9°C (48°F)"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nhiệt độ Nam Cực không bao giờ trên 0°C?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“The temperature in Antarctica never rises above 0°C.”",
+              "p": "Mùa hè ven biển có thể lên 9°C — tức là có lúc trên 0°C."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“The temperature in Antarctica never rises above 0°C.”",
+              "p": "Mùa hè ven biển có thể lên 9°C — tức là có lúc trên 0°C."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nêu rõ nhiệt độ mùa hè có thể đạt 9°C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "TRUE",
+      "evidence": {
+        "quoteEn": "The whole Antarctic region covers approximately 20 percent of the Southern Hemisphere"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nam Cực chiếm khoảng một phần năm nửa phía nam Trái Đất?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“around one-fifth of the southern half of the world”",
+              "p": "“covers approximately 20 percent of the Southern Hemisphere” — một phần năm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“around one-fifth of the southern half of the world”",
+              "p": "“covers approximately 20 percent of the Southern Hemisphere” — một phần năm."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "20% = one-fifth."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "TRUE"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "tfng",
+      "answer": "FALSE",
+      "evidence": {
+        "quoteEn": "It always falls as snow"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ở Nam Cực mưa hiếm nhưng thỉnh thoảng có?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Rain in Antarctica is rare but falls occasionally.”",
+              "p": "“It always falls as snow” — lượng mưa luôn là tuyết, không phải mưa."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Rain in Antarctica is rare but falls occasionally.”",
+              "p": "“It always falls as snow” — lượng mưa luôn là tuyết, không phải mưa."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài khẳng định luôn rơi dưới dạng tuyết."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "FALSE"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "It is an integral part of the Earth's heat balance. This balance, also called the energy balance, is the relationship between the amount of solar heat absorbed by Earth's atmosphere and the amount deflected back into space."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nam Cực điều hòa khí hậu qua quá trình gì (chọn A–G)?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Ô 22: quá trình điều hòa khí hậu",
+              "p": "“integral part of the Earth's heat balance” / “energy balance” — cân bằng nhiệt."
+            },
+            {
+              "q": "Lựa chọn E: heat balance",
+              "p": "Khớp trực tiếp heat balance / energy balance."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Ô 22: quá trình điều hòa khí hậu",
+              "p": "“integral part of the Earth's heat balance” / “energy balance” — cân bằng nhiệt."
+            },
+            {
+              "q": "Lựa chọn E: heat balance",
+              "p": "Khớp trực tiếp heat balance / energy balance."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "E"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "the massive Antarctic Ice Sheet reflects a large amount of solar radiation away from Earth's surface"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ô 23: thứ gì bị tảng băng khổng lồ hướng ra khỏi Trái Đất?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“______ is diverted away from the Earth by the huge Antarctic ice sheet.”",
+              "p": "Tảng băng “reflects a large amount of solar radiation away from Earth's surface”."
+            },
+            {
+              "q": "C: solar radiation",
+              "p": "solar radiation reflected away."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“______ is diverted away from the Earth by the huge Antarctic ice sheet.”",
+              "p": "Tảng băng “reflects a large amount of solar radiation away from Earth's surface”."
+            },
+            {
+              "q": "C: solar radiation",
+              "p": "solar radiation reflected away."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "C"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "As global ice cover decreases, the reflectivity of Earth's surface also diminishes"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ô 24: khi kích thước và ______ của tảng băng giảm…"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“As the size and ______ of the ice sheet have decreased”",
+              "p": "Băng giảm → “reflectivity of Earth's surface also diminishes” — độ phản xạ giảm theo."
+            },
+            {
+              "q": "A: reflectivity",
+              "p": "reflectivity diminishes khi băng tan."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“As the size and ______ of the ice sheet have decreased”",
+              "p": "Băng giảm → “reflectivity of Earth's surface also diminishes” — độ phản xạ giảm theo."
+            },
+            {
+              "q": "A: reflectivity",
+              "p": "reflectivity diminishes khi băng tan."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "A"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "causing an unequal heat balance linked to global warming, the current period of climate change"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ô 25: ______ gây tan băng ở một số vùng."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“______ has caused melting in some parts of the continent.”",
+              "p": "“unequal heat balance linked to global warming” — biến đổi khí hậu / nóng lên toàn cầu."
+            },
+            {
+              "q": "G: global warming",
+              "p": "global warming / climate change."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“______ has caused melting in some parts of the continent.”",
+              "p": "“unequal heat balance linked to global warming” — biến đổi khí hậu / nóng lên toàn cầu."
+            },
+            {
+              "q": "G: global warming",
+              "p": "global warming / climate change."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "G"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "summary-fill",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "this change, which in turn create a strong wind pattern called the ‘polar vortex.’ These kinds of polar winds lower temperatures in the Antarctic"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ô 26: một số vùng lạnh hơn vì ______ và kiểu khí hậu mới."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“due to ______, climate patterns leading to reduced temperatures”",
+              "p": "“strong wind pattern called the ‘polar vortex’” / “polar winds lower temperatures”."
+            },
+            {
+              "q": "D: polar vortex winds",
+              "p": "polar vortex / polar winds."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“due to ______, climate patterns leading to reduced temperatures”",
+              "p": "“strong wind pattern called the ‘polar vortex’” / “polar winds lower temperatures”."
+            },
+            {
+              "q": "D: polar vortex winds",
+              "p": "polar vortex / polar winds."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "D"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "We now know that we apprehend the world in two radically opposed ways, employing two fundamentally different modes of thought: ‘System 1’ and ‘System 2’."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mô hình dual-process của não là gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "D: “The natural tendency to make sense of the world in two different ways.”",
+              "p": "Chúng ta hiểu thế giới bằng hai chế độ tư duy căn bản khác nhau: System 1 và System 2."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "D: “The natural tendency to make sense of the world in two different ways.”",
+              "p": "Chúng ta hiểu thế giới bằng hai chế độ tư duy căn bản khác nhau: System 1 và System 2."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hai hệ thống tư duy song song — khớp D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không phải “nghĩ hai việc cùng lúc” mà là hai chế độ xử lý khác nhau."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không mô tả xung đột nỗ lực/nghỉ ngơi của não."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không nói thích/ghét đồng thời một thứ."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "System 2 takes over, rather unwillingly, when things get tricky."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "System 2 đảm nhiệm quyết định khi nào?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: “When more mental effort is required.”",
+              "p": "System 2 “takes over … when things get tricky” — khi việc phức tạp, cần suy nghĩ có chủ ý."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "B: “When more mental effort is required.”",
+              "p": "System 2 “takes over … when things get tricky” — khi việc phức tạp, cần suy nghĩ có chủ ý."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "B"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "System 2 mệt nhanh nhưng không “đảm nhiệm khi não cần nghỉ”."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Tự tin thái quá không phải điều kiện kích hoạt System 2."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Nguy hiểm có thể kích hoạt System 1 (nhanh), không phải điều kiện chính của System 2."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "it's subject to a fantastic range of irrational cognitive biases and interference effects, such as confirmation bias and hindsight bias"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Confirmation bias là ví dụ của gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "A: “System 1 rushing to judgment.”",
+              "p": "Các bias như confirmation bias nằm trong nhóm System 1 vội vàng, đơn giản hóa, ít thống kê."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "A: “System 1 rushing to judgment.”",
+              "p": "Các bias như confirmation bias nằm trong nhóm System 1 vội vàng, đơn giản hóa, ít thống kê."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bias là lỗi của System 1 phán xét nhanh."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "System 1 không phán xét cẩn thận."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không liên quan “dũng cảm”."
+            },
+            {
+              "letter": "D",
+              "whyVi": "System 1 dựa trên heuristic, không phải facts đầy đủ."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "If there was no dime in the phone booth, only 4% of the exiting callers helped to pick up the papers. If there was a dime, no fewer than 88% helped."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kết luận chính của thí nghiệm phone booth?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: “People are more responsive to their environment than they realize.”",
+              "p": "Một đồng dime (yếu tố môi trường nhỏ) làm tỷ lệ giúp đỡ tăng từ 4% lên 88% — ta không nhận ra mình bị ảnh hưởng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "B: “People are more responsive to their environment than they realize.”",
+              "p": "Một đồng dime (yếu tố môi trường nhỏ) làm tỷ lệ giúp đỡ tăng từ 4% lên 88% — ta không nhận ra mình bị ảnh hưởng."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "B"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói hấp dẫn về người khác."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không phải kỳ vọng phần thưởng có chủ ý."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Kết quả cho thấy sẵn sàng giúp khi có dime — không phải luôn vị kỷ."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "highly experienced judges were given a description of a shoplifting offence. They were then ‘anchored’ to different numbers by being asked to roll a pair of dice"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Anchoring effect là gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: “A subconscious factor may strongly influence our decision-making.”",
+              "p": "Số trên xúc xắc (yếu tố vô thức) neo mức án: nhóm ra 9 đề xuất 8 tháng, nhóm ra 3 chỉ 5 tháng — judges không biết mình bị ảnh hưởng."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "B: “A subconscious factor may strongly influence our decision-making.”",
+              "p": "Số trên xúc xắc (yếu tố vô thức) neo mức án: nhóm ra 9 đề xuất 8 tháng, nhóm ra 3 chỉ 5 tháng — judges không biết mình bị ảnh hưởng."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "B"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không phải hệ thống số học chính thức."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Xúc xắc chỉ là công cụ thí nghiệm, không phải định nghĩa anchoring."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Anchoring là yếu tố ngầm, không phải “nhấn mạnh quá một yếu tố” có chủ ý."
+            }
+          ]
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "We don't know who we are or what we're like, we don't know what we're really doing"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Nói chung con người kém hợp lý hơn trong 100 năm qua — tác giả có nói không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“In general, humans have become less rational over the last 100 years.”",
+              "p": "Bài bàn về dual-process và tự hiểu sai bản thân; không so sánh mức hợp lý qua 100 năm."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“In general, humans have become less rational over the last 100 years.”",
+              "p": "Bài bàn về dual-process và tự hiểu sai bản thân; không so sánh mức hợp lý qua 100 năm."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NOT GIVEN"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "We don't know who we are or what we're like, we don't know what we're really doing and we don't know why we're doing it."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đa số người thiếu hiểu biết rõ về bản ngã cá nhân?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“Most people lack a clear sense of their own personal identity.”",
+              "p": "“We don't know who we are or what we're like” — không biết mình là ai, mình thế nào."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“Most people lack a clear sense of their own personal identity.”",
+              "p": "“We don't know who we are or what we're like” — không biết mình là ai, mình thế nào."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "YES"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "System 1 is fast; it's intuitive, associative and automatic and it can't be switched off.",
+        "quotesEn": [
+          "System 2 is slothful, and tires easily (a process called 'ego depletion') – so it usually accepts what System 1 tells it.",
+          "System 2 takes over, rather unwillingly, when things get tricky."
+        ]
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người ta có thể tự rèn để dùng System 2 hầu hết thời gian không?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“A person can train themselves to use System 2 most of the time.” — có thể rèn để System 2 chiếm ưu thế phần lớn thời gian.",
+              "p": "Bài mô tả ngược lại: System 1 “can't be switched off” — không tắt được; System 2 “usually accepts what System 1 tells it” và chỉ “takes over, rather unwillingly, when things get tricky” — thường nghe System 1, chỉ nhận quyền khi việc khó."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "use System 2 most of the time",
+              "p": "System 1 can't be switched off; System 2 usually accepts what System 1 tells it"
+            },
+            {
+              "q": "train themselves",
+              "p": "(passage describes default operation, not training — but default contradicts “most of the time”)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đề nói có thể dùng System 2 phần lớn thời gian, nhưng bài khẳng định System 1 luôn bật và System 2 thường phụ thuộc System 1 — trái với đề → NO (không phải NOT GIVEN: bài đủ căn cứ để phủ định)."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "We're wrong. (Kahneman admits his own inability to counter some of these effects.)"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Người ra quyết định quan trọng nên được cho biết mô hình dual-process?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“People who make important decisions should be made aware of the dual-process model.”",
+              "p": "Tác giả review sách Kahneman, không đề xuất chính sách đào tạo cho decision-makers."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“People who make important decisions should be made aware of the dual-process model.”",
+              "p": "Tác giả review sách Kahneman, không đề xuất chính sách đào tạo cho decision-makers."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NOT GIVEN"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "We think we're smart; we're confident we won't be unconsciously swayed by the high list price of a house. We're wrong."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong đa số tình huống hàng ngày, người ta quyết định bình tĩnh và hợp lý?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "“In most everyday situations, people are capable of making calm and rational decisions.”",
+              "p": "Bài liên tục cho thấy ta bị ảnh hưởng vô thức (môi trường, anchoring, blood sugar) — “We're wrong” khi tự tin mình hợp lý."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "“In most everyday situations, people are capable of making calm and rational decisions.”",
+              "p": "Bài liên tục cho thấy ta bị ảnh hưởng vô thức (môi trường, anchoring, blood sugar) — “We're wrong” khi tự tin mình hợp lý."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NO"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "It's highly sensitive to subtle environmental cues, signs of danger, and so on."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "System 1 phục vụ loài người tốt vì… (nối A–E)."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "D: “being sensitive to ones' surroundings is a useful survival skill.”",
+              "p": "System 1 “highly sensitive to subtle environmental cues, signs of danger” — nhạy với môi trường giúp sinh tồn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "D: “being sensitive to ones' surroundings is a useful survival skill.”",
+              "p": "System 1 “highly sensitive to subtle environmental cues, signs of danger” — nhạy với môi trường giúp sinh tồn."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "D"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "it is their blood-sugar levels really sitting in judgment. If you hold a pencil between your teeth…"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đường huyết thấp hoặc mệt ảnh hưởng quyết định vì…"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: “having less energy means we are more likely to succumb to an irrational bias.”",
+              "p": "Blood-sugar levels ảnh hưởng phán quyết của judges; ego depletion — ít năng lượng → dễ bias."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "C: “having less energy means we are more likely to succumb to an irrational bias.”",
+              "p": "Blood-sugar levels ảnh hưởng phán quyết của judges; ego depletion — ít năng lượng → dễ bias."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "C"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Looking back on our experience of pain, we prefer a larger, longer amount to a shorter, smaller amount, just so long as the closing stages of the greater pain were easier to bear than the closing stages of the lesser one."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Peak-end rule cho thấy…"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "A: “feeling a certain way at the conclusion of an experience decides how we remember it.”",
+              "p": "Ta nhớ trải nghiệm theo đoạn cuối (closing stages) dễ chịu hay khó chịu — kết thúc quyết định ký ức."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "A: “feeling a certain way at the conclusion of an experience decides how we remember it.”",
+              "p": "Ta nhớ trải nghiệm theo đoạn cuối (closing stages) dễ chịu hay khó chịu — kết thúc quyết định ký ức."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "A"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "it's the hero of Daniel Kahneman's alarming, intellectually stimulating book Thinking, Fast and Slow."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mục đích chính của bài viết?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: “to summarize and review a recently published book”",
+              "p": "Bài review sách Thinking, Fast and Slow của Kahneman — giới thiệu và bình luận nội dung sách."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "B: “to summarize and review a recently published book”",
+              "p": "Bài review sách Thinking, Fast and Slow của Kahneman — giới thiệu và bình luận nội dung sách."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "B"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Tác giả review sách Kahneman, không giới thiệu nghiên cứu riêng của mình."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài trình bày mô hình dual-process ủng hộ, không phản bác."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Mục tiêu là tóm tắt/review sách, không chỉ khuyên reader tự vấn."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

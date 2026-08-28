@@ -20,6 +20,13 @@ export function foldExamAnswerTypography(value: string): string {
 export function normalizeExamAnswerValue(ans: string): string {
   const trimmed = foldExamAnswerTypography(ans).trim().replace(/\s+/g, " ");
   const upper = trimmed.toUpperCase();
+  /**
+   * Heading answers use lowercase roman (`i`–`x`). Keep them before the Latin A–J rule,
+   * otherwise bare `i` becomes `I` and fails heading selects.
+   */
+  if (/^[ivxlc]+$/i.test(trimmed) && trimmed === trimmed.toLowerCase()) {
+    return trimmed.toLowerCase();
+  }
   /** Section / MCQ letter (Cam 17 tab keys: `14. F`) — must not become FALSE. */
   if (trimmed.length === 1 && /^[A-J]$/i.test(trimmed)) {
     return upper;

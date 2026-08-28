@@ -1,0 +1,52 @@
+{
+  "articleId": "de-thi-that-6-p2",
+  "title": "Daylight Saving Time",
+  "slotCount": 9,
+  "slots": [
+    {
+      "kind": "body",
+      "index": 1,
+      "en": "Each year in many countries around the world, clocks are set forward in spring and then back again in autumn in an effort to ‘save’ daylight hours. Like many modern practices, Daylight Savings Time (DST) dates back to ancient civilisations. The Romans would adjust their routines to the sun’s schedule by using different scales in their water clocks for different months of the year."
+    },
+    {
+      "kind": "body",
+      "index": 2,
+      "en": "This practice fell out of favour, however, and the concept was renewed only when, in 1784, the American inventor Benjamin Franklin wrote a jocular article for The Journal of Paris exhorting the city’s residents to make more use of daylight hours in order to reduce candle use. In 1895, in a more serious effort, New Zealand entomologist George Vernon Hudson proposed a biannual two-hour shift closely resembling current forms of DST. His cause was not taken up, however, until Germany first pushed their clocks forward in April 1916 as part of a drive to save fuel in World War I."
+    },
+    {
+      "kind": "body",
+      "index": 3,
+      "en": "Over the next several decades, global use of DST was sporadic and inconsistent. Countries such as the UK and USA adopted DST in World Wars I and II, but reverted to standard time after the wars ended. In the USA, the decision to use DST was determined by states and municipalities between 1945 and 1966, causing widespread confusion for transport and broadcasting schedules until Congress implemented the Uniform Time Act in 1966."
+    },
+    {
+      "kind": "body",
+      "index": 4,
+      "en": "Today, DST is used in some form by over 70 countries worldwide, affecting around one sixth of the world’s population. There is still no uniform standard, however. Countries such as Egypt and Russia have adjusted their policies on multiple occasions in recent years, in some instances leading to considerable turmoil. Muslim countries often suspend DST for the month of Ramadan. The European Union finally standardised DST in 2000, while the USA’s most recent adjustments were introduced with the Energy Policy Act of 2005."
+    },
+    {
+      "kind": "body",
+      "index": 5,
+      "en": "In general, the benefits of DST are considerable and well documented. Perhaps the most significant factor in terms of popular support is the chance to make better use of daylight in the evening. With extended daylight hours, office workers coming off a 9 to 5 shift can often take part in outdoor recreational activities for an hour or two. This has other positive effects, such as reducing domestic electricity consumption as more opportunities become available to use sunlight instead of artificial lighting. A further benefit is a reduction in the overall rate of automobile accidents, as DST ensures that streets are well lit at peak hours."
+    },
+    {
+      "kind": "body",
+      "index": 6,
+      "en": "Many industries are supportive of DST due to the opportunities it provides for increased revenue. Extended daylight hours mean people are more likely to stay out later in the evening and spend more money in bars and restaurants, for example, so tourism and hospitality are two sectors that stand to gain a lot from more daylight. In Queensland, Australia, which elected not to implement DST due to complaints from dairy farmers over disruption to milking schedules, the annual drain on the state’s economy is estimated to be as high as $4 billion."
+    },
+    {
+      "kind": "body",
+      "index": 7,
+      "en": "Some research casts doubt on the advantages of DST, however. Although the overall incidence of traffic accidents is lower, for pedestrians the risk of being hit by a car in the evening increases by as much as 186 per cent in the weeks after clocks are set back in autumn, possibly because drivers have not yet adjusted to earlier sunsets. Although this shift does in turn make streets safer in early mornings, the risk to pedestrians is not offset simply because fewer pedestrians use the streets at that time."
+    },
+    {
+      "kind": "body",
+      "index": 8,
+      "en": "A further health concern involves the disruption of our body clock. Setting clocks one hour forward at night can cause many people to lose sleep, resulting in tiredness and all its well-documented effects, such as mood swings, reduced productivity and problems with overall physical well-being. In 2008, a Swedish study found that heart attack rates spike in the few days following the switch to DST for summer. Tiredness may also be a factor behind the increase in road accidents in the week after DST begins."
+    },
+    {
+      "kind": "body",
+      "index": 9,
+      "en": "Finally, safety issues have arisen in parts of Latin America relating to a suspected relationship between DST and higher incidences of street crime. In 2008, Guatemala chose not to use DST because it forced office workers to leave their homes while it was still dark outside in the morning. This natural cover for criminals was thought to increase incidents of crime at this hour."
+    }
+  ]
+}

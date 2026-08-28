@@ -1,0 +1,1953 @@
+{
+  "pilotId": "de-thi-that-9",
+  "schemaVersion": 4,
+  "note": "Đề thi thật IELTS 9 — giải thích chi tiết: The Magic of Kefir / Food for Thought / Love stories.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "The MAGIC of KEFIR",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "FOOD FOR THOUGHT",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Love stories",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "viii",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "A fermentation process would sometimes inadvertently occur en route"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading viii: A fortunate accident",
+              "p": "A fermentation process would sometimes inadvertently occur en route"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading viii: A fortunate accident",
+              "p": "A fermentation process would sometimes inadvertently occur en route"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phát hiện tình cờ khi vận chuyển sữa — viii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "viii"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "they actually expand and propagate with use"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iii: The gift that keeps on giving",
+              "p": "they actually expand and propagate with use"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading iii: The gift that keeps on giving",
+              "p": "they actually expand and propagate with use"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Hạt kefir tự nhân lên khi dùng — iii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iii"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "Grains can be simply thrown in with a batch of milk for ripening to begin."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vii: Making kefir",
+              "p": "Grains can be simply thrown in with a batch of milk for ripening to begin."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading vii: Making kefir",
+              "p": "Grains can be simply thrown in with a batch of milk for ripening to begin."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cách làm kefir — vii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vii"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "Nothing compares to a person's first encounter with kefir."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading i: A unique sensory experience",
+              "p": "Nothing compares to a person's first encounter with kefir."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading i: A unique sensory experience",
+              "p": "Nothing compares to a person's first encounter with kefir."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Trải nghiệm vị giác đặc biệt — i."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "i"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "over the years kefir has acquired a number of other uses"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vi: Culinary applications",
+              "p": "over the years kefir has acquired a number of other uses"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading vi: Culinary applications",
+              "p": "over the years kefir has acquired a number of other uses"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ứng dụng nấu ăn — vi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "ix",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "the unassuming beverage has become a minor celebrity of the nascent health food movement"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ix: Kefir gets an image makeover",
+              "p": "the unassuming beverage has become a minor celebrity of the nascent health food movement"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading ix: Kefir gets an image makeover",
+              "p": "the unassuming beverage has become a minor celebrity of the nascent health food movement"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đổi hình ảnh ở phương Tây — ix."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ix"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "ii",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "A return to the unadulterated kefir-making of old is in everyone's interest."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn G cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ii: Getting back to basics",
+              "p": "A return to the unadulterated kefir-making of old is in everyone's interest."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading ii: Getting back to basics",
+              "p": "A return to the unadulterated kefir-making of old is in everyone's interest."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Quay về cách làm cơ bản — ii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ii"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "cauliflower rosettes",
+      "evidence": {
+        "quoteEn": "bear a slight resemblance to cauliflower rosettes"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Hạt kefir trông như gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "look like?",
+              "p": "resemblance to cauliflower rosettes"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "look like?",
+              "p": "resemblance to cauliflower rosettes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "cauliflower rosettes"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "cauliflower rosettes"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "periodic unsettling",
+      "evidence": {
+        "quoteEn": "with periodic unsettling to prevent clumping"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trong lúc chín cần làm gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "needs to happen while ripening",
+              "p": "periodic unsettling to prevent clumping"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "needs to happen while ripening",
+              "p": "periodic unsettling to prevent clumping"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "periodic unsettling"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "periodic unsettling"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "milk sugars",
+      "evidence": {
+        "quoteEn": "the yeast cultures in the grains have multiplied and devoured most of the milk sugars"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Men đã tiêu thụ gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "yeast cultures have consumed",
+              "p": "devoured most of the milk sugars"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "yeast cultures have consumed",
+              "p": "devoured most of the milk sugars"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "milk sugars"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "milk sugars"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "note-fill",
+      "answer": "liquefied yogurt",
+      "evidence": {
+        "quoteEn": "rolls over the tongue in a manner akin to liquefied yogurt"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Kết cấu miệng giống gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "texture … similar to",
+              "p": "akin to liquefied yogurt"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "texture … similar to",
+              "p": "akin to liquefied yogurt"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "liquefied yogurt"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "liquefied yogurt"
+        }
+      ],
+      "answerAlternatives": [
+        "liquefied yoghurt"
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "choose-two",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Kefir also accompanies sour cream as one of the main ingredients in cold beetroot soup"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn HAI sản phẩm kefir KHÔNG thay thế — ý C: Sour cream."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Sour cream",
+              "p": "Kefir also accompanies sour cream as one of the main ingredients in cold beetroot soup"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sour cream đi kèm (accompanies), không phải thứ kefir thay thế — C."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C (cùng C, E)"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Bài nói dùng kefir thay cow's milk trên granola — ĐÃ được nhắc là thứ thay thế."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Kefir = buttermilk substitute — ĐÃ được nhắc."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Thay starter yeast trong sourdough — ĐÃ được nhắc."
+            }
+          ]
+        }
+      ],
+      "answerPair": [
+        12,
+        13
+      ],
+      "correctLetters": [
+        "C",
+        "E"
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "choose-two",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "athletes sometimes combine kefir with yoghurt in protein shakes"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn HAI sản phẩm kefir KHÔNG thay thế — ý E: Yoghurt."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Yoghurt",
+              "p": "athletes sometimes combine kefir with yoghurt in protein shakes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Kefir kết hợp với yoghurt, không thay thế yoghurt — E."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "—",
+              "whyVi": "Xem phần loại trừ ở câu 12."
+            }
+          ]
+        }
+      ],
+      "answerPair": [
+        12,
+        13
+      ],
+      "correctLetters": [
+        "C",
+        "E"
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "Why not eat insects? So asked British entomologist Vincent M. Holt"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vi: A cultural pioneer",
+              "p": "Why not eat insects? So asked British entomologist Vincent M. Holt"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading vi: A cultural pioneer",
+              "p": "Why not eat insects? So asked British entomologist Vincent M. Holt"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Holt tiên phong văn hóa — vi."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "ix",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "an eclectic Western-driven movement has finally mounted around the entomophagic cause"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ix: Growing popularity",
+              "p": "an eclectic Western-driven movement has finally mounted around the entomophagic cause"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading ix: Growing popularity",
+              "p": "an eclectic Western-driven movement has finally mounted around the entomophagic cause"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ngày càng phổ biến ở phương Tây — ix."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ix"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "v",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "with the specialist knowledge that Western companies … produced on a scale large enough"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading v: Tradition meets technology",
+              "p": "with the specialist knowledge that Western companies … produced on a scale large enough"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading v: Tradition meets technology",
+              "p": "with the specialist knowledge that Western companies … produced on a scale large enough"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Truyền thống + công nghệ — v."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "v"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "iv",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "breeding insects results in far fewer noxious by-products"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iv: Environmentally friendly production",
+              "p": "breeding insects results in far fewer noxious by-products"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading iv: Environmentally friendly production",
+              "p": "breeding insects results in far fewer noxious by-products"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ít khí thải độc hại — iv."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iv"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "x",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "they are a reliable option in light of recent global epidemics"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading x: A healthy choice",
+              "p": "they are a reliable option in light of recent global epidemics"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading x: A healthy choice",
+              "p": "they are a reliable option in light of recent global epidemics"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "An toàn sức khỏe / ít bệnh xuyên loài — x."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "x"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "ii",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "This could provide a crucial step into the global economic arena for those primarily rural, impoverished populations"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ii: The poor may benefit",
+              "p": "This could provide a crucial step into the global economic arena for those primarily rural, impoverished populations"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading ii: The poor may benefit",
+              "p": "This could provide a crucial step into the global economic arena for those primarily rural, impoverished populations"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Người nghèo nông thôn hưởng lợi — ii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ii"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "G",
+        "quoteEn": "damage … by Western organisations prepared to kill off grasshoppers … pesticide use"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn G cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vii: Western practices harm locals",
+              "p": "damage … by Western organisations prepared to kill off grasshoppers … pesticide use"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading vii: Western practices harm locals",
+              "p": "damage … by Western organisations prepared to kill off grasshoppers … pesticide use"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thực hành phương Tây hại người địa phương — vii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vii"
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "The problem is the ick factor … camouflaging … Insect flour … changing the language"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn H cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iii: Presentation is key to changing attitudes",
+              "p": "The problem is the ick factor … camouflaging … Insect flour … changing the language"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading iii: Presentation is key to changing attitudes",
+              "p": "The problem is the ick factor … camouflaging … Insect flour … changing the language"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cách trình bày/ngôn ngữ then chốt — iii."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iii"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "energy",
+      "evidence": {
+        "quoteEn": "insects – being cold-blooded creatures – can convert food to protein at a rate far superior to that of cows, since the latter exhaust much of their energy just keeping themselves warm"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Côn trùng lãng phí ít gì hơn bò?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "waste less ______",
+              "p": "cows … exhaust much of their energy"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "waste less ______",
+              "p": "cows … exhaust much of their energy"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "energy"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "energy"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "subsistence needs",
+      "evidence": {
+        "quoteEn": "they have only used this knowledge to meet their own subsistence needs"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Thay vì chỉ đáp ứng?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "instead of just covering ______",
+              "p": "meet their own subsistence needs"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "instead of just covering ______",
+              "p": "meet their own subsistence needs"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "subsistence needs"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "subsistence needs"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "rural, impoverished",
+      "evidence": {
+        "quoteEn": "a crucial step into the global economic arena for those primarily rural, impoverished populations"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Giúp ai tiếp cận thị trường?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "help ______ people",
+              "p": "rural, impoverished populations"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "help ______ people",
+              "p": "rural, impoverished populations"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "rural, impoverished"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "rural, impoverished"
+        }
+      ],
+      "answerAlternatives": [
+        "rural",
+        "impoverished"
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "pesticide use",
+      "evidence": {
+        "quoteEn": "these had become unsafe to eat after pesticide use in the area increased"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Do tăng gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Due to increased ______",
+              "p": "after pesticide use in the area increased"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Due to increased ______",
+              "p": "after pesticide use in the area increased"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "pesticide use"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "pesticide use"
+        }
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "kwashiorkor",
+      "evidence": {
+        "quoteEn": "a protein deficiency syndrome called kwashiorkor was increasing in incidence"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trẻ Mali mắc gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN THREE WORDS — tối đa ba từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "suffering from ______",
+              "p": "protein deficiency syndrome called kwashiorkor"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "suffering from ______",
+              "p": "protein deficiency syndrome called kwashiorkor"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "kwashiorkor"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "kwashiorkor"
+        }
+      ],
+      "answerAlternatives": [
+        "protein deficiency",
+        "protein deficiency syndrome"
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "In an agape relationship one partner becomes a \"caretaker\", exalting the welfare of the other above his or her own needs."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "quan tâm hạnh phúc partner nhất"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "quan tâm hạnh phúc partner nhất",
+              "p": "In an agape relationship one partner becomes a \"caretaker\", exalting the welfare of the other above "
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "quan tâm hạnh phúc partner nhất",
+              "p": "In an agape relationship one partner becomes a \"caretaker\", exalting the welfare of the other above "
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Agape — hy sinh vì người kia."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D — Agape"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Eros — không khớp mô tả."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Mania — không khớp mô tả."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Storge — không khớp mô tả."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Ludus — không khớp mô tả."
+            }
+          ]
+        }
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "The ludus style envisions relationships primarily as a game in which it is best to \"play the field\" or experience a diverse set of partners over time."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "thích nhiều bạn tình"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "thích nhiều bạn tình",
+              "p": "The ludus style envisions relationships primarily as a game in which it is best to \"play the field\" "
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "thích nhiều bạn tình",
+              "p": "The ludus style envisions relationships primarily as a game in which it is best to \"play the field\" "
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ludus — play the field."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E — Ludus"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Eros — không khớp mô tả."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Mania — không khớp mô tả."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Storge — không khớp mô tả."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Agape — không khớp mô tả."
+            }
+          ]
+        }
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "a sense of inevitability about the relationship"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "cảm giác định mệnh sẽ ở bên nhau"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "cảm giác định mệnh sẽ ở bên nhau",
+              "p": "a sense of inevitability about the relationship"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cảm giác định mệnh sẽ ở bên nhau",
+              "p": "a sense of inevitability about the relationship"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Eros — inevitability."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A — Eros"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Mania — không khớp mô tả."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Storge — không khớp mô tả."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Agape — không khớp mô tả."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Ludus — không khớp mô tả."
+            }
+          ]
+        }
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "Relationships built on a foundation of platonic affection and caring are archetypal of storge."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "bạn trước, tình sau"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "bạn trước, tình sau",
+              "p": "Relationships built on a foundation of platonic affection and caring are archetypal of storge."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "bạn trước, tình sau",
+              "p": "Relationships built on a foundation of platonic affection and caring are archetypal of storge."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Storge — companionate, evolution."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C — Storge"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Eros — không khớp mô tả."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Mania — không khớp mô tả."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Agape — không khớp mô tả."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Ludus — không khớp mô tả."
+            }
+          ]
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "Vast swings in mood from ecstasy to agony – dependent on the level of attention"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "cực kỳ vui hoặc cực kỳ khổ"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "cực kỳ vui hoặc cực kỳ khổ",
+              "p": "Vast swings in mood from ecstasy to agony – dependent on the level of attention"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "cực kỳ vui hoặc cực kỳ khổ",
+              "p": "Vast swings in mood from ecstasy to agony – dependent on the level of attention"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mania — mood swings."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B — Mania"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Eros — không khớp mô tả."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Storge — không khớp mô tả."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Agape — không khớp mô tả."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Ludus — không khớp mô tả."
+            }
+          ]
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "E",
+      "evidence": {
+        "quoteEn": "deception of a partner and lack of disclosure about one's activities are also typical"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "giữ kín nhiều khía cạnh tình yêu"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "giữ kín nhiều khía cạnh tình yêu",
+              "p": "deception of a partner and lack of disclosure about one's activities are also typical"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "giữ kín nhiều khía cạnh tình yêu",
+              "p": "deception of a partner and lack of disclosure about one's activities are also typical"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ludus — lack of disclosure."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "E — Ludus"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Eros — không khớp mô tả."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Mania — không khớp mô tả."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Storge — không khớp mô tả."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Agape — không khớp mô tả."
+            }
+          ]
+        }
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "an obsessive, compulsive attitude toward one's partner"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "yêu thì chỉ nghĩ về điều đó"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "yêu thì chỉ nghĩ về điều đó",
+              "p": "an obsessive, compulsive attitude toward one's partner"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "yêu thì chỉ nghĩ về điều đó",
+              "p": "an obsessive, compulsive attitude toward one's partner"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mania — obsessive."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B — Mania"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Eros — không khớp mô tả."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Storge — không khớp mô tả."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Agape — không khớp mô tả."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Ludus — không khớp mô tả."
+            }
+          ]
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "people-match",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "anyone who seeks an ideal partner with a shopping list of necessary attributes (high salary, same religion, etc.) fits the classification"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "biết trước phẩm chất cần ở partner"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "biết trước phẩm chất cần ở partner",
+              "p": "anyone who seeks an ideal partner with a shopping list of necessary attributes (high salary, same re"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "biết trước phẩm chất cần ở partner",
+              "p": "anyone who seeks an ideal partner with a shopping list of necessary attributes (high salary, same re"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Pragma — shopping list."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F — Pragma"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Eros — không khớp mô tả."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Mania — không khớp mô tả."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Storge — không khớp mô tả."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Agape — không khớp mô tả."
+            }
+          ]
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "the interaction of our personal attributes with the environment – which we in part create – leads to the development of stories about love that we then seek to fulfil"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Quan niệm về tình yêu ảnh hưởng quan hệ, không ngược lại?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "notions of love affect their relationships, rather than vice versa",
+              "p": "stories about love that we then seek to fulfil"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "notions of love affect their relationships, rather than vice versa",
+              "p": "stories about love that we then seek to fulfil"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "YES — stories định hình quan hệ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "we may have predilections toward multiple love stories, each represented in a mental hierarchy and varying in weight in terms of their personal significance"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Một số love story quan trọng hơn?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Some of our love stories are more important",
+              "p": "varying in weight … personal significance"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Some of our love stories are more important",
+              "p": "varying in weight … personal significance"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "YES",
+      "evidence": {
+        "quoteEn": "stories have varying abilities to adapt to a given cultural milieu and its respective demands"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Love stories thích nghi môi trường xã hội?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "can change to meet the needs of particular social environments",
+              "p": "adapt to a given cultural milieu"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "can change to meet the needs of particular social environments",
+              "p": "adapt to a given cultural milieu"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "YES."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "YES"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "we look for partners with love stories that complement and are compatible with our own narratives. But they do not have to be an identical match."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tìm partner có love story giống hệt mình?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "just like our own",
+              "p": "complement … not … identical match"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "just like our own",
+              "p": "complement … not … identical match"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NO — complementary, không identical."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NOT GIVEN",
+      "evidence": {
+        "quoteEn": "Certainly, it is clear that we look for partners with love stories that complement and are compatible with our own narratives."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Partner thành công nhất có story khớp?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "most successful partners have matching love stories",
+              "p": "bài nói complementary, không khẳng định matching = most successful"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "most successful partners have matching love stories",
+              "p": "bài nói complementary, không khẳng định matching = most successful"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NOT GIVEN."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NOT GIVEN"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "ynng",
+      "answer": "NO",
+      "evidence": {
+        "quoteEn": "Not all love stories, however, are equally well predisposed to relationship longevity"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Không story nào phù hợp quan hệ dài hơn?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "No love story is more suited to a long relationship than any other",
+              "p": "Not all … equally well predisposed to longevity"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "No love story is more suited to a long relationship than any other",
+              "p": "Not all … equally well predisposed to longevity"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "NO — một số kém bền hơn."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "NO"
+        }
+      ]
+    }
+  }
+}

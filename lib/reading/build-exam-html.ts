@@ -1,4 +1,4 @@
-import { BARE_GAP_RE, FILL_GAP_BLANK, FILL_GAP_RE, consumeTrailingBlankChars, hasFillGap, isBareGapFollowedByUnit } from "@/lib/reading/fill-gap-pattern";
+import { BARE_GAP_RE, FILL_GAP_BLANK, FILL_GAP_RE, consumeTrailingBlankChars, hasFillGap, isBareGapContextFalsePositive, isBareGapFollowedByUnit } from "@/lib/reading/fill-gap-pattern";
 import {
   boldTfngInstructionSegment,
   formatExamInstructionHtml,
@@ -127,7 +127,10 @@ function replaceGapPattern(
   while (m !== null) {
     const n = Number.parseInt(m[1] ?? "", 10);
     const end = (m.index ?? 0) + m[0].length;
-    if (options?.skipBareUnits && isBareGapFollowedByUnit(raw, end)) {
+    if (
+      options?.skipBareUnits &&
+      (isBareGapFollowedByUnit(raw, end) || isBareGapContextFalsePositive(raw, m.index ?? 0))
+    ) {
       m = re.exec(raw);
       continue;
     }
@@ -267,13 +270,17 @@ function renderPeopleMatch(section: ExamQuestionSection): { html: string; nums: 
     ? "List of experts"
     : /list of researchers|correct researcher/i.test(blob)
       ? "List of researchers"
-      : /list of companies|correct company/i.test(blob)
+      : /list of companies|correct company|Which company/i.test(blob)
         ? "List of companies"
         : /list of ideas|correct idea/i.test(blob)
           ? "List of ideas"
-          : section.kind === "sentence-ending" || /correct ending/i.test(blob)
-            ? "Endings"
-            : "List of people";
+          : /list of love styles|list of styles/i.test(blob)
+            ? "List of Love Styles"
+            : /Classify the following|referring to|typical of/i.test(blob)
+            ? "List of options"
+            : section.kind === "sentence-ending" || /correct ending/i.test(blob)
+              ? "Endings"
+              : "List of people";
   const peopleBank =
     section.options.length > 0
       ? `<div class="people-bank"><div class="people-bank-title">${escHtml(listTitle)}</div><ul class="people-bank-list">${section.options
@@ -359,7 +366,7 @@ function renderSummaryFill(section: ExamQuestionSection): { html: string; nums: 
 function renderNoteFill(section: ExamQuestionSection): { html: string; nums: number[] } {
   const allNums: number[] = [];
   const isNoteInstruction = (l: string) =>
-    /^(Complete the (notes|sentences|table|flow-?chart)|Complete each sentence|Choose\s|Write your|Write the correct|In boxes)/i.test(
+    /^(Answer the questions|Look at the following|Read passage\s+\d+|Write the answers for questions|Label the diagrams?|Complete the (notes|sentences|table|flow-?chart|summary)|Complete each sentence|Choose\s|Write your|Write the correct|Write (NO MORE THAN|ONE WORD|ONE OR TWO WORDS|TWO WORDS)|In boxes)/i.test(
       l,
     );
   const instrOnly = section.instructionLines.filter((l) => isNoteInstruction(l));
@@ -551,30 +558,39 @@ function renderTableFill(section: ExamQuestionSection): { html: string; nums: nu
 
 function renderChooseTwo(section: ExamQuestionSection): { html: string; nums: number[] } {
   const nums = section.questionNums;
-  const optHtml = mcqOptionTags(section.options);
-  const questionText = section.bodyLines.find((l) => /^Which TWO/i.test(l)) ?? section.bodyLines[0] ?? "";
-  const bank =
+  const maxPick = Math.max(2, nums.length);
+  const groupId = `ctg-${nums[0] ?? 0}-${nums[nums.length - 1] ?? 0}`;
+  const numsAttr = nums.join(",");
+  const questionText =
+    section.bodyLines.find((l) => /^Which (TWO|THREE)/i.test(l)) ?? section.bodyLines[0] ?? "";
+
+  /** Interactive checkboxes (Cambridge CD style) — avoid static bank + tiny letter dropdowns. */
+  const opts =
     section.options.length > 0
-      ? `<div class="choose-two-bank people-bank"><ul class="choose-two-options people-bank-list">${section.options
+      ? `<div class="opts choose-two-opts" id="${groupId}-opts">${section.options
           .map(
             (o) =>
-              `<li data-letter="${escHtml(o.letter)}"><span class="people-bank-letter">${escHtml(o.letter)}</span><span class="people-bank-name">${escHtml(o.text)}</span></li>`,
+              `<label class="opt choose-two-opt"><input type="checkbox" data-choose-group="${groupId}" value="${escHtml(o.letter)}" onchange="selChooseMulti('${groupId}',this)"><span class="opt-letter">${escHtml(o.letter)}</span><span class="opt-text">${escHtml(o.text)}</span></label>`,
           )
-          .join("")}</ul></div>`
+          .join("")}</div>`
       : "";
 
-  const selects = nums
+  /** Hidden selects keep collectAnswers / tracker / review wired to qN. */
+  const letterOpts = section.options
+    .map((o) => `<option value="${escHtml(o.letter)}">${escHtml(o.letter)}</option>`)
+    .join("");
+  const hiddenSelects = nums
     .map(
       (n) =>
-        `<div class="choose-two-pick"><span class="choose-two-label">${n}</span><select class="msel sel-compact choose-two-sel" id="sel-q${n}" onchange="selMatch('q${n}',this)"><option value="">—</option>${optHtml}</select></div>`,
+        `<select class="msel choose-two-sel" id="sel-q${n}" data-choose-group="${groupId}" hidden aria-hidden="true" tabindex="-1" onchange="selMatch('q${n}',this)"><option value="">—</option>${letterOpts}</select>`,
     )
     .join("");
 
   return {
-    html: `${renderSectionHeader(section)}<div class="choose-two-block">
+    html: `${renderSectionHeader(section)}<div class="choose-two-block" data-choose-group="${groupId}" data-choose-nums="${escHtml(numsAttr)}" data-choose-max="${maxPick}">
       <p class="choose-two-qtext">${escHtml(questionText)}</p>
-      ${bank}
-      <div class="choose-two-picks">${selects}</div>
+      ${opts}
+      <div class="choose-two-picks choose-two-picks--sync">${hiddenSelects}</div>
     </div>`,
     nums,
   };
@@ -590,6 +606,14 @@ function renderMcqSingle(section: ExamQuestionSection): { html: string; nums: nu
           options: section.options,
         }));
 
+  const soloTitle = section.title.match(/^Questions?\s+(\d+)\s*$/i);
+  const soloNum = soloTitle?.[1] ? Number.parseInt(soloTitle[1], 10) : null;
+  const hideInnerQnum =
+    soloNum !== null &&
+    !Number.isNaN(soloNum) &&
+    questions.length === 1 &&
+    questions[0]?.num === soloNum;
+
   const blocks = questions
     .map((q) => {
       const qid = `q${q.num}`;
@@ -599,9 +623,9 @@ function renderMcqSingle(section: ExamQuestionSection): { html: string; nums: nu
             `<label class="opt"><input type="radio" name="${qid}" value="${escHtml(o.letter)}" onchange="selMCQ('${qid}',this)"><span class="opt-letter">${escHtml(o.letter)}</span><span class="opt-text">${escHtml(o.text)}</span></label>`,
         )
         .join("");
+      const qnum = hideInnerQnum ? "" : `<div class="qnum">Question ${q.num}</div>`;
       return `<div class="qb qb-mcq">
-          <div class="qnum">Question ${q.num}</div>
-          <div class="qtext">${escHtml(q.text)}</div>
+          ${qnum}<div class="qtext">${escHtml(q.text)}</div>
           <div class="opts" id="${qid}-opts">${opts}</div>
         </div>`;
     })

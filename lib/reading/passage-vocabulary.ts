@@ -3,6 +3,9 @@ import { CAMBRIDGE_13_VOCABULARY } from "@/lib/reading/cambridge-13-vocabulary";
 import { CAMBRIDGE_14_15_VOCABULARY } from "@/lib/reading/cambridge-14-15-vocabulary";
 import { CAMBRIDGE_16_21_VOCABULARY } from "@/lib/reading/cambridge-16-21-vocabulary";
 import { CAMBRIDGE_18_19_VOCABULARY } from "@/lib/reading/cambridge-18-19-vocabulary";
+import { DE_THI_THAT_VOCAB_2_4 } from "@/lib/reading/de-thi-that-vocab-2-4";
+import { DE_THI_THAT_VOCAB_5_7 } from "@/lib/reading/de-thi-that-vocab-5-7";
+import { DE_THI_THAT_VOCAB_8_10 } from "@/lib/reading/de-thi-that-vocab-8-10";
 import { buildCompassPassageVocabulary } from "@/lib/reading/compass-idioms";
 import { READING_CHALLENGE_1_VOCABULARY } from "@/lib/reading/reading-challenge-1-vocabulary";
 import { READING_CHALLENGE_2_VOCABULARY } from "@/lib/reading/reading-challenge-2-vocabulary";
@@ -157,6 +160,9 @@ function collectAllCuratedItems(): PassageVocabItem[] {
   };
 
   push(Object.values(VOCAB_BY_ARTICLE).flat());
+  push(Object.values(DE_THI_THAT_VOCAB_2_4).flat());
+  push(Object.values(DE_THI_THAT_VOCAB_5_7).flat());
+  push(Object.values(DE_THI_THAT_VOCAB_8_10).flat());
   push(Object.values(COMPASS_VOCAB_EXTRA_BY_ARTICLE).flat());
   push(Object.values(READING_CHALLENGE_1_VOCABULARY).flat());
   push(Object.values(READING_CHALLENGE_2_VOCABULARY).flat());
@@ -212,6 +218,9 @@ export function getPassageVocabulary(
 
   return (
     VOCAB_BY_ARTICLE[articleId] ??
+    DE_THI_THAT_VOCAB_2_4[articleId] ??
+    DE_THI_THAT_VOCAB_5_7[articleId] ??
+    DE_THI_THAT_VOCAB_8_10[articleId] ??
     CAMBRIDGE_12_VOCABULARY[articleId] ??
     CAMBRIDGE_13_VOCABULARY[articleId] ??
     CAMBRIDGE_14_15_VOCABULARY[articleId] ??

@@ -839,6 +839,7 @@
       "type": "tfng",
       "answer": "NOT GIVEN",
       "evidence": {
+        "paragraphLetter": "C",
         "quoteEn": "television documentaries are becoming ever more detailed and impressive"
       },
       "steps": [
@@ -921,6 +922,7 @@
       "type": "tfng",
       "answer": "NOT GIVEN",
       "evidence": {
+        "paragraphLetter": "E",
         "quoteEn": "Being able to undertake research on animals in zoos where there is less risk and fewer variables means real changes can be effected on wild populations."
       },
       "steps": [
@@ -935,13 +937,13 @@
           "pairs": [
             {
               "q": "“less stressful for the animals than studying them in the wild”",
-              "p": "Bài chỉ nói nghiên cứu trong zoo “less risk and fewer variables” cho việc nghiên cứu, không nói cụ thể về mức độ căng thẳng của con vật."
+              "p": "Đoạn E chỉ nói nghiên cứu trong zoo có “less risk and fewer variables” — bài không so sánh mức căng thẳng (stress) của con vật khi bị nghiên cứu trong zoo vs ngoài tự nhiên."
             }
           ],
           "paraphrases": [
             {
-              "q": "less stressful for the animals",
-              "p": "less risk and fewer variables"
+              "q": "less stressful for the animals than studying them in the wild",
+              "p": "(not stated in the passage)"
             }
           ]
         },

@@ -46,6 +46,15 @@ export const READING_RAW_FILES: Record<string, string> = {
   "reading-challenge-2": "reading challenge 2.txt",
   "reading-challenge-3": "reading challenge 3.txt",
   "de-thi-that-1": "de-thi-that-1.txt",
+  "de-thi-that-2": "de-thi-that-2.txt",
+  "de-thi-that-3": "de-thi-that-3.txt",
+  "de-thi-that-4": "de-thi-that-4.txt",
+  "de-thi-that-5": "de-thi-that-5.txt",
+  "de-thi-that-6": "de-thi-that-6.txt",
+  "de-thi-that-7": "de-thi-that-7.txt",
+  "de-thi-that-8": "de-thi-that-8.txt",
+  "de-thi-that-9": "de-thi-that-9.txt",
+  "de-thi-that-10": "de-thi-that-10.txt",
   "pinball-entry": "pinball-entry.txt",
 };
 

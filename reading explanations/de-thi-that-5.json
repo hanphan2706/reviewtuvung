@@ -1,0 +1,1895 @@
+{
+  "pilotId": "de-thi-that-5",
+  "schemaVersion": 4,
+  "note": "Đề thi thật IELTS 5 — giải thích chi tiết: Migrant remittances / Angelo Mosso / Who Wrote Shakespeare.",
+  "uiContract": {
+    "showOnlyInReview": true,
+    "iconNextToAnswer": true,
+    "panelTitleTemplateVi": "Phân tích chi tiết",
+    "stepIds": {
+      "ask": "Đề đang hỏi gì?",
+      "grammar": "Dấu hiệu ngữ pháp",
+      "bridge": "Cách bài diễn đạt",
+      "reason": "Vì sao chọn vậy?",
+      "verdict": "Kết luận",
+      "reject": "Các lựa chọn còn lại"
+    }
+  },
+  "passages": {
+    "1": {
+      "title": "Sending money home: the economics of migrant remittances",
+      "questions": "1-13"
+    },
+    "2": {
+      "title": "Angelo Mosso's Pioneering Work in the Study of Human Physiology",
+      "questions": "14-26"
+    },
+    "3": {
+      "title": "Who Wrote Shakespeare?",
+      "questions": "27-40"
+    }
+  },
+  "questions": {
+    "1": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "x",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "Every year millions of migrants travel vast distances using borrowed money for their airfares and taking little or no cash with them."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading x: Frequency and size of remittances",
+              "p": "Every year millions of migrants travel vast distances using borrowed money for their airfares and taking little or no cash with them."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading x: Frequency and size of remittances",
+              "p": "Every year millions of migrants travel vast distances using borrowed money for their airfares and taking little or no cash with them."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nhắc số tiền gửi về ($400 tỷ/năm, ~$200/tháng/người) — tần suất và quy mô."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "x"
+        }
+      ]
+    },
+    "2": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "vi",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "The decision to send money home is often inspired by altruism – an unselfish desire to help others."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vi: Motivations behind remittances",
+              "p": "The decision to send money home is often inspired by altruism – an unselfish desire to help others."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading vi: Motivations behind remittances",
+              "p": "The decision to send money home is often inspired by altruism – an unselfish desire to help others."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Altruism, trả ơn, đầu tư, hoàn nợ — các động cơ gửi tiền."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vi"
+        }
+      ]
+    },
+    "3": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "At the first sign of trouble, political or financial upheaval, these personal sources of support do not suddenly dry up like official investment monies."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading i: Stability of remittances in difficult times",
+              "p": "At the first sign of trouble, political or financial upheaval, these personal sources of support do not suddenly dry up like official investment monies."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading i: Stability of remittances in difficult times",
+              "p": "At the first sign of trouble, political or financial upheaval, these personal sources of support do not suddenly dry up like official investment monies."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Khủng hoảng thì remittance tăng, không cạn như viện trợ — vai trò ổn định/bảo hiểm."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "i"
+        }
+      ]
+    },
+    "4": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "ix",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "This flow of migrant money has a huge economic and social impact on the receiving countries. It provides cash for food, housing and necessities."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ix: How recipients utilise remittances",
+              "p": "This flow of migrant money has a huge economic and social impact on the receiving countries. It provides cash for food, housing and necessities."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading ix: How recipients utilise remittances",
+              "p": "This flow of migrant money has a huge economic and social impact on the receiving countries. It provides cash for food, housing and necessities."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tiền dùng cho ăn ở, giáo dục, y tế, sự kiện, khởi nghiệp — cách người nhận sử dụng."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ix"
+        }
+      ]
+    },
+    "5": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "Unfortunately, recipients hardly ever receive the full value of the money sent back home because of exorbitant transfer fees."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vii: Losses incurred during transmission",
+              "p": "Unfortunately, recipients hardly ever receive the full value of the money sent back home because of exorbitant transfer fees."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading vii: Losses incurred during transmission",
+              "p": "Unfortunately, recipients hardly ever receive the full value of the money sent back home because of exorbitant transfer fees."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Phí chuyển tiền cao — mất mát khi chuyển."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vii"
+        }
+      ]
+    },
+    "6": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "v",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "If the transfer cost could be reduced to no more than one per cent, that would release another $30 billion dollars annually"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading v: How to lower transmission fees",
+              "p": "If the transfer cost could be reduced to no more than one per cent, that would release another $30 billion dollars annually"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading v: How to lower transmission fees",
+              "p": "If the transfer cost could be reduced to no more than one per cent, that would release another $30 billion dollars annually"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Giảm phí, nới quy định, cạnh tranh, nền tảng phi lợi nhuận — cách hạ phí."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "v"
+        }
+      ]
+    },
+    "7": {
+      "passage": 1,
+      "type": "heading-match",
+      "answer": "iii",
+      "evidence": {
+        "paragraphLetter": "H",
+        "quoteEn": "If a developing country or a large charitable society could sell bonds with a guaranteed return of three or four per cent on the premise that the invested money would be used to build infrastructure in that country"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn H cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iii: Targeted investments and contributions",
+              "p": "If a developing country or a large charitable society could sell bonds with a guaranteed return of three or four per cent on the premise that the invested money would be used to build infrastructure in that country"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading iii: Targeted investments and contributions",
+              "p": "If a developing country or a large charitable society could sell bonds with a guaranteed return of three or four per cent on the premise that the invested money would be used to build infrastructure in that country"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Trái phiếu cho hạ tầng, quyên góp qua kênh remittance — đầu tư/contribution có mục tiêu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iii"
+        }
+      ]
+    },
+    "8": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "money laundering",
+      "evidence": {
+        "quoteEn": "widespread concern over money laundering"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vì sao các nước không giảm phí giao dịch?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "worried about ______",
+              "p": "widespread concern over money laundering"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "worried about ______",
+              "p": "widespread concern over money laundering"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bài nói lo ngại money laundering khiến phí quốc tế cao."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "money laundering"
+        }
+      ]
+    },
+    "9": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "ease regulations",
+      "evidence": {
+        "quoteEn": "governments could at least acknowledge that small remittances do not come from organised crime networks, and ease regulations accordingly"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chính phủ nên làm gì với remittance nhỏ?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Governments should ______ on small amounts",
+              "p": "ease regulations accordingly (nới quy định cho khoản nhỏ)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Governments should ______ on small amounts",
+              "p": "ease regulations accordingly (nới quy định cho khoản nhỏ)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Đoạn F: nới quy định cho remittance nhỏ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ease regulations"
+        }
+      ]
+    },
+    "10": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "red tape",
+      "evidence": {
+        "quoteEn": "a non-government humanitarian organisation, which would have the expertise to navigate the elaborate red tape"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tổ chức phi lợi nhuận cần xử lý gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "handling complicated ______",
+              "p": "navigate the elaborate red tape"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "handling complicated ______",
+              "p": "navigate the elaborate red tape"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "red tape = thủ tục rườm rà."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "red tape"
+        }
+      ]
+    },
+    "11": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "bank deposits",
+      "evidence": {
+        "quoteEn": "that money is in the form of bank deposits earning a tiny percentage of interest, none at all or even a negative rate of interest"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Tiền tiết kiệm của migrant nhận lãi từ đâu?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "little or no interest from ______",
+              "p": "in the form of bank deposits earning a tiny percentage of interest"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "little or no interest from ______",
+              "p": "in the form of bank deposits earning a tiny percentage of interest"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "bank deposits"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "bank deposits"
+        }
+      ],
+      "answerAlternatives": [
+        "the bank",
+        "a bank"
+      ]
+    },
+    "12": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "infrastructure",
+      "evidence": {
+        "quoteEn": "the invested money would be used to build infrastructure in that country"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trái phiếu góp phần xây dựng gì ở quê hương?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "fund the development of homeland ______",
+              "p": "used to build infrastructure in that country"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "fund the development of homeland ______",
+              "p": "used to build infrastructure in that country"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "infrastructure"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "infrastructure"
+        }
+      ]
+    },
+    "13": {
+      "passage": 1,
+      "type": "summary-fill",
+      "answer": "affluent migrants",
+      "evidence": {
+        "quoteEn": "why not make this transmission hub the conduit for affluent migrants to donate to worthy causes"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai có thể quyên góp tại trung tâm remittance?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "donations from ______",
+              "p": "affluent migrants to donate to worthy causes"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "donations from ______",
+              "p": "affluent migrants to donate to worthy causes"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "affluent migrants"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "affluent migrants"
+        }
+      ]
+    },
+    "14": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "vii",
+      "evidence": {
+        "paragraphLetter": "A",
+        "quoteEn": "Scientists in the late nineteenth century were beginning to investigate the functions of blood circulation"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn A cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading vii: Reasons behind early physiological research",
+              "p": "Scientists in the late nineteenth century were beginning to investigate the functions of blood circulation"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading vii: Reasons behind early physiological research",
+              "p": "Scientists in the late nineteenth century were beginning to investigate the functions of blood circulation"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bối cảnh nghiên cứu sinh lý cuối thế kỷ 19."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "vii"
+        }
+      ]
+    },
+    "15": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "v",
+      "evidence": {
+        "paragraphLetter": "B",
+        "quoteEn": "He found two major issues with their methodolgy: there was a lack of evidence both that the findings would be relevant to the human body, and that the dynamometers used to measure the strength of movement could give accurate results."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn B cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading v: Reasons for the development of the ergograph",
+              "p": "He found two major issues with their methodolgy: there was a lack of evidence both that the findings would be relevant to the human body, and that the dynamometers used to measure the strength of movement could give accurate results."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading v: Reasons for the development of the ergograph",
+              "p": "He found two major issues with their methodolgy: there was a lack of evidence both that the findings would be relevant to the human body, and that the dynamometers used to measure the strength of movement could give accurate results."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Thiếu bằng chứng + máy đo không chính xác → cần ergograph."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "v"
+        }
+      ]
+    },
+    "16": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "iv",
+      "evidence": {
+        "paragraphLetter": "C",
+        "quoteEn": "His device was named an ergograph, meaning \"work recorder\"."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn C cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading iv: Measuring fatigue through finger movements",
+              "p": "His device was named an ergograph, meaning \"work recorder\"."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading iv: Measuring fatigue through finger movements",
+              "p": "His device was named an ergograph, meaning \"work recorder\"."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ergograph đo công việc ngón tay, ghi fatigue."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "iv"
+        }
+      ]
+    },
+    "17": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "ii",
+      "evidence": {
+        "paragraphLetter": "D",
+        "quoteEn": "He was intrigued to observe the pulsing of circulating blood in patients who had suffered traumatic damage to the skull, or cranium."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn D cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ii: Head injuries are a window into the brain",
+              "p": "He was intrigued to observe the pulsing of circulating blood in patients who had suffered traumatic damage to the skull, or cranium."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading ii: Head injuries are a window into the brain",
+              "p": "He was intrigued to observe the pulsing of circulating blood in patients who had suffered traumatic damage to the skull, or cranium."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Vết thương sọ → quan sát mạch máu não."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ii"
+        }
+      ]
+    },
+    "18": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "i",
+      "evidence": {
+        "paragraphLetter": "E",
+        "quoteEn": "He designed a wooden table-top for the human subject to lie on, which was placed over another table, balanced on a fulcrum (rather like a seesaw)"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn E cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading i: A finely balanced measuring machine",
+              "p": "He designed a wooden table-top for the human subject to lie on, which was placed over another table, balanced on a fulcrum (rather like a seesaw)"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading i: A finely balanced measuring machine",
+              "p": "He designed a wooden table-top for the human subject to lie on, which was placed over another table, balanced on a fulcrum (rather like a seesaw)"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Bàn cân fulcrum đo biến đổi cực nhỏ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "i"
+        }
+      ]
+    },
+    "19": {
+      "passage": 2,
+      "type": "heading-match",
+      "answer": "ix",
+      "evidence": {
+        "paragraphLetter": "F",
+        "quoteEn": "Mosso's experiments indicated a direct link between mental effort and an increased volume of blood in the brain."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Đoạn F cần heading phù hợp nhất."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Heading ix: Mosso's theory supported by experimental results",
+              "p": "Mosso's experiments indicated a direct link between mental effort and an increased volume of blood in the brain."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "Heading ix: Mosso's theory supported by experimental results",
+              "p": "Mosso's experiments indicated a direct link between mental effort and an increased volume of blood in the brain."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Kết quả thí nghiệm ủng hộ giả thuyết tăng máu não khi nghĩ."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ix"
+        }
+      ]
+    },
+    "20": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "He therefore became determined to construct an instrument to measure human muscular effort and record the effects of fatigue with greater precision."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mosso bắt đầu nghiên cứu ban đầu vì muốn gì?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "B: make a more accurate measuring device",
+              "p": "Thiếu bằng chứng + dynamometer không chính xác → xây dụng cụ đo chính xác hơn."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "B: make a more accurate measuring device",
+              "p": "Thiếu bằng chứng + dynamometer không chính xác → xây dụng cụ đo chính xác hơn."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mosso muốn thiết bị đo chính xác hơn cho cơ người."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Ông phản biện nghiên cứu cũ, không ủng hộ kết quả trước."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Không rebuild máy có sẵn — tự thiết kế ergograph mới."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Ếch chỉ là nghiên cứu cũ ông review, không phải mục tiêu."
+            }
+          ]
+        }
+      ]
+    },
+    "21": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "wooden base",
+      "evidence": {
+        "quoteEn": "by strapping down the arm to a wooden base"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Phần giữ tay cố định?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "21 ………",
+              "p": "strapping down the arm to a wooden base"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "21 ………",
+              "p": "strapping down the arm to a wooden base"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "wooden base"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "wooden base"
+        }
+      ]
+    },
+    "22": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "paper cylinder",
+      "evidence": {
+        "quoteEn": "a recording device that drew the movements of the finger vertically on a paper cylinder"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Trục ghi hình?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "22 ………",
+              "p": "movements of the finger vertically on a paper cylinder"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "22 ………",
+              "p": "movements of the finger vertically on a paper cylinder"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "paper cylinder"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "paper cylinder"
+        }
+      ]
+    },
+    "23": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "brass tube",
+      "evidence": {
+        "quoteEn": "The index and ring fingers of the hand were each inserted into a brass tube"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngón tay xỏ vào?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "23 ………",
+              "p": "inserted into a brass tube"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "23 ………",
+              "p": "inserted into a brass tube"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "brass tube"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "brass tube"
+        }
+      ]
+    },
+    "24": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "weight",
+      "evidence": {
+        "quoteEn": "connected to a weight after passing through a pulley"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ngón giữa kéo gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "24 ………",
+              "p": "connected to a weight after passing through a pulley"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "24 ………",
+              "p": "connected to a weight after passing through a pulley"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "weight"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "weight"
+        }
+      ],
+      "answerAlternatives": [
+        "a weight",
+        "the weight"
+      ]
+    },
+    "25": {
+      "passage": 2,
+      "type": "note-fill",
+      "answer": "stylus",
+      "evidence": {
+        "quoteEn": "with the length and speed of these flexions recorded on the paper by a stylus"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Bút ghi?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "25 ………",
+              "p": "recorded on the paper by a stylus"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "25 ………",
+              "p": "recorded on the paper by a stylus"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "stylus"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "stylus"
+        }
+      ],
+      "answerAlternatives": [
+        "a stylus",
+        "the stylus"
+      ]
+    },
+    "26": {
+      "passage": 2,
+      "type": "mcq-single",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "Angelo Mosso (1846–1910) was one such pioneer, an Italian physiologist who progressed to become a professor of both pharmacology and physiology at the University of Turin."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Mục đích tổng thể của bài?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "A: describe Mosso's early research into human physiology",
+              "p": "Bài kể ergograph, máy đo não, fatigue — nghiên cứu sinh lý sớm của Mosso."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "A: describe Mosso's early research into human physiology",
+              "p": "Bài kể ergograph, máy đo não, fatigue — nghiên cứu sinh lý sớm của Mosso."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Mô tả nghiên cứu sinh lý ban đầu của Mosso."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "B",
+              "whyVi": "Không tranh luận ai là designer gốc nhất."
+            },
+            {
+              "letter": "C",
+              "whyVi": "So sánh Mosso vs người khác chỉ ở đoạn B, không phải mục đích toàn bài."
+            },
+            {
+              "letter": "D",
+              "whyVi": "MRI chỉ nhắc cuối đoạn F như bối cảnh, không phải mục đích chính."
+            }
+          ]
+        }
+      ]
+    },
+    "27": {
+      "passage": 3,
+      "type": "choose-two",
+      "answer": "B",
+      "evidence": {
+        "quoteEn": "few remaining scraps of evidence about the life of \"Shakspere\""
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn BA lý do cho rằng người khác viết Shakespeare — ý B: We have little information about Shakespeare's life."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "We have little information about Shakespeare's life",
+              "p": "few remaining scraps of evidence about the life of \"Shakspere\""
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Ít bằng chứng về đời Shakespeare → nghi người khác viết."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "B (cùng B, F, G)"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Shakespeare gắn Stratford — không phải lý do phản đối."
+            },
+            {
+              "letter": "C",
+              "whyVi": "Bài không khẳng định biết chắc ông không ra nước ngoài."
+            },
+            {
+              "letter": "D",
+              "whyVi": "Chỉ minor legal action, không nói tù vì nợ."
+            },
+            {
+              "letter": "E",
+              "whyVi": "Không nêu chỉ nói tiếng Anh là lý do tranh luận."
+            }
+          ]
+        }
+      ],
+      "answerPair": [
+        27,
+        28,
+        29
+      ],
+      "correctLetters": [
+        "B",
+        "F",
+        "G"
+      ]
+    },
+    "28": {
+      "passage": 3,
+      "type": "choose-two",
+      "answer": "F",
+      "evidence": {
+        "quoteEn": "son of a Stratford glove-maker, whose only definite recorded dealings concerned buying property, some minor legal action over a debt, tax records"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn BA lý do cho rằng người khác viết Shakespeare — ý F: Shakespeare's life appears to have been limited."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "Shakespeare's life appears to have been limited",
+              "p": "son of a Stratford glove-maker, whose only definite recorded dealings concerned buying property, some minor legal action over a debt, tax records"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cuộc đời hẹp (găng tay, thuế, mua nhà) không khớp thiên tài."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "F"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "—",
+              "whyVi": "Xem phần loại trừ ở câu 27."
+            }
+          ]
+        }
+      ],
+      "answerPair": [
+        27,
+        28,
+        29
+      ],
+      "correctLetters": [
+        "B",
+        "F",
+        "G"
+      ]
+    },
+    "29": {
+      "passage": 3,
+      "type": "choose-two",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "knowledgeable about the lifestyle of those who lived in royal courts, and he appeared to have travelled in Europe"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Chọn BA lý do cho rằng người khác viết Shakespeare — ý G: The plays suggest the writer was familiar with a high-class lifestyle."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "The plays suggest the writer was familiar with a high-class lifestyle",
+              "p": "knowledgeable about the lifestyle of those who lived in royal courts, and he appeared to have travelled in Europe"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Tác phẩm gợi người viết quen giới quý tộc, từng đi châu Âu."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "—",
+              "whyVi": "Xem phần loại trừ ở câu 27."
+            }
+          ]
+        }
+      ],
+      "answerPair": [
+        27,
+        28,
+        29
+      ],
+      "correctLetters": [
+        "B",
+        "F",
+        "G"
+      ]
+    },
+    "30": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "exclusive rights",
+      "evidence": {
+        "quoteEn": "he enjoyed exclusive rights to the publication and performance of the dramatic works"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Shakespeare có quyền gì với việc in và biểu diễn?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "30 ______ for printing",
+              "p": "exclusive rights to the publication and performance"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "30 ______ for printing",
+              "p": "exclusive rights to the publication and performance"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "exclusive rights"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "exclusive rights"
+        }
+      ]
+    },
+    "31": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "government officials",
+      "evidence": {
+        "quoteEn": "Publication and even production of plays had to be approved by government officials, who are recorded as having met with Shakespeare"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Ai hội đàm với Shakespeare trước khi duyệt?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "31 ______ consulted Shakespeare",
+              "p": "approved by government officials, who are recorded as having met with Shakespeare"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "31 ______ consulted Shakespeare",
+              "p": "approved by government officials, who are recorded as having met with Shakespeare"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "government officials"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "government officials"
+        }
+      ]
+    },
+    "32": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "atheist",
+      "evidence": {
+        "quoteEn": "he was accused of being an atheist: denying the existence of God would have been punishable by the death penalty"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Marlowe bị buộc tội gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "said he was an ______",
+              "p": "accused of being an atheist"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "said he was an ______",
+              "p": "accused of being an atheist"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "atheist"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "atheist"
+        }
+      ],
+      "answerAlternatives": [
+        "an atheist"
+      ]
+    },
+    "33": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "street fight",
+      "evidence": {
+        "quoteEn": "He is recorded as having 'died' in a street fight before Shakespeare's greatest works were written"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Marlowe có thể giả chết ở đâu?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "death in a ______",
+              "p": "having 'died' in a street fight"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "death in a ______",
+              "p": "having 'died' in a street fight"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "street fight"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "street fight"
+        }
+      ]
+    },
+    "34": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "playwright",
+      "evidence": {
+        "quoteEn": "He is also recorded as being a playwright, although no works bearing his name still exist"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "De Vere được ghi nhận là gì?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "may have been a ______",
+              "p": "recorded as being a playwright"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "may have been a ______",
+              "p": "recorded as being a playwright"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "playwright"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "playwright"
+        }
+      ]
+    },
+    "35": {
+      "passage": 3,
+      "type": "note-fill",
+      "answer": "ordinary people",
+      "evidence": {
+        "quoteEn": "it was not acceptable for an aristocrat to publish verse for ordinary people"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Quý tộc không được viết cho ai?"
+        },
+        {
+          "id": "grammar",
+          "titleVi": "Dấu hiệu ngữ pháp",
+          "bodyVi": "NO MORE THAN TWO WORDS — tối đa hai từ."
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "could not write for ______",
+              "p": "publish verse for ordinary people"
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "could not write for ______",
+              "p": "publish verse for ordinary people"
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "ordinary people"
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "ordinary people"
+        }
+      ]
+    },
+    "36": {
+      "passage": 3,
+      "type": "mcq-single",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "These individual poems of sixteen lines are sincerely felt reactions to emotionally charged situations such as love and death, a goldmine for the biographically inclined researcher."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "Vì sao sonnets hữu ích cho nghiên cứu?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: more personal than the plays",
+              "p": "Sonnets là phản ứng cảm xúc cá nhân (love, death) — cá nhân hơn kịch."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "C: more personal than the plays",
+              "p": "Sonnets là phản ứng cảm xúc cá nhân (love, death) — cá nhân hơn kịch."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Sonnets cá nhân, cảm xúc — hơn plays."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        },
+        {
+          "id": "reject",
+          "titleVi": "Các lựa chọn còn lại",
+          "distractors": [
+            {
+              "letter": "A",
+              "whyVi": "Không nói ngắn/dễ hơn là lý do chính."
+            },
+            {
+              "letter": "B",
+              "whyVi": "Không phải tất cả viết cho một người."
+            },
+            {
+              "letter": "D",
+              "whyVi": "W.H. là nobleman, không lower-class."
+            }
+          ]
+        }
+      ]
+    },
+    "37": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "C",
+      "evidence": {
+        "quoteEn": "they are written to a \"Mr W.H.\" This person is clearly a nobleman, yet he is sometimes given forthright advice by the poet, suggesting that the writing comes from a mature father figure."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "W.H. có thể là người trẻ vì…?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "C: the content of the poems strongly suggests this",
+              "p": "Thơ vừa thể hiện tình cảm vừa cho lời khuyên thẳng — gợi quan hệ figure trưởng thành."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "C: the content of the poems strongly suggests this",
+              "p": "Thơ vừa thể hiện tình cảm vừa cho lời khuyên thẳng — gợi quan hệ figure trưởng thành."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Nội dung thơ gợi W.H. trẻ được khuyên như con."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "C"
+        }
+      ]
+    },
+    "38": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "D",
+      "evidence": {
+        "quoteEn": "The possible recipient of these sonnets is Will Hatfield, a minor noble who was wealthy and could afford to contribute to the arts"
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "W.H. có thể là bạn Marlowe vì…?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "D: W.H. was able to provide financial support",
+              "p": "Hatfield giàu, có thể patron nghệ thuật."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "D: W.H. was able to provide financial support",
+              "p": "Hatfield giàu, có thể patron nghệ thuật."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "Cần patron giàu — D."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "D"
+        }
+      ]
+    },
+    "39": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "G",
+      "evidence": {
+        "quoteEn": "The object of De Vere's sonnets, it is suggested, is Henry Wriothesley, Earl of Southampton, whose name only fits the situation if one accepts that it is not uncommon to reverse the first and surnames on formal occasions."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "W.H. có thể là Henry Wriothesley vì…?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "G: the poet may have changed the order of his initials",
+              "p": "Đảo họ/tên → W.H. khớp Henry Wriothesley."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "G: the poet may have changed the order of his initials",
+              "p": "Đảo họ/tên → W.H. khớp Henry Wriothesley."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "G — đảo thứ tự initials."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "G"
+        }
+      ]
+    },
+    "40": {
+      "passage": 3,
+      "type": "sentence-ending",
+      "answer": "A",
+      "evidence": {
+        "quoteEn": "He needed, not an artistic patron, but someone like Henry to put in a good word for him in the complex world of the royal court."
+      },
+      "steps": [
+        {
+          "id": "ask",
+          "titleVi": "Đề đang hỏi gì?",
+          "bodyVi": "W.H. có thể là bạn De Vere vì…?"
+        },
+        {
+          "id": "bridge",
+          "titleVi": "Cách bài diễn đạt",
+          "pairs": [
+            {
+              "q": "A: W.H. had some influence with important people",
+              "p": "Henry có thể nói đẹp cho De Vere ở cung."
+            }
+          ],
+          "paraphrases": [
+            {
+              "q": "A: W.H. had some influence with important people",
+              "p": "Henry có thể nói đẹp cho De Vere ở cung."
+            }
+          ]
+        },
+        {
+          "id": "reason",
+          "titleVi": "Vì sao chọn vậy?",
+          "bodyVi": "A — ảnh hưởng với người quyền lực."
+        },
+        {
+          "id": "verdict",
+          "titleVi": "Kết luận",
+          "bodyVi": "A"
+        }
+      ]
+    }
+  }
+}

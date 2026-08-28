@@ -379,13 +379,14 @@ mark.evidence-hl{background:#fde68a;padding:0 1px;border-radius:2px;color:inheri
 .notes-list .sentence-qnum{font-weight:700;color:var(--exam-question-ink)}
 .notes-list .diagram-img{margin:12px 0 14px}
 .notes-list .diagram-img img{display:block;width:100%;max-width:520px;height:auto;border:1px solid var(--exam-border, #e4e4e7);border-radius:8px;background:#fff}
-.exam-table-wrap{padding:4px 0 12px}
-.exam-grid-table{width:100%;border-collapse:collapse;margin:4px 0 8px;font-size:13px;line-height:1.65;color:var(--exam-content-text)}
-.exam-grid-table th,.exam-grid-table td{border:1px solid var(--exam-border, #e4e4e7);padding:10px 12px;vertical-align:top;text-align:left}
+.exam-table-wrap{padding:4px 0 12px;max-width:100%;overflow-x:auto}
+.exam-grid-table{width:100%;max-width:100%;table-layout:fixed;border-collapse:collapse;margin:4px 0 8px;font-size:13px;line-height:1.65;color:var(--exam-content-text)}
+.exam-grid-table th,.exam-grid-table td{border:1px solid var(--exam-border, #e4e4e7);padding:10px 12px;vertical-align:top;text-align:left;min-width:0;overflow-wrap:anywhere;word-break:break-word;white-space:normal}
 .exam-grid-table thead th.exam-table-th{font-weight:800;background:rgba(75,40,118,.06);color:var(--exam-question-ink)}
-.exam-grid-table th.exam-table-part{font-weight:700;background:rgba(75,40,118,.03);width:18%;white-space:nowrap}
+.exam-grid-table th.exam-table-part{font-weight:700;background:rgba(75,40,118,.03);width:42%}
 .exam-grid-table td.exam-table-td{line-height:1.85}
-.exam-grid-table .fi{width:100px;min-width:64px;max-width:150px}
+.exam-grid-table .fi{width:100px;min-width:56px;max-width:100%}
+.exam-grid-table .fi-stack{max-width:100%;flex-wrap:wrap}
 .exam-table-wrap .notes-title{font-size:15px;font-weight:800;color:var(--exam-content-text);margin:0 0 12px;text-align:center}
 .exam-grid-table--ruled th,.exam-grid-table--ruled td{border-left:none;border-right:none;border-top:none;border-bottom:1px solid var(--exam-border, #d4d4d8);background:transparent}
 .exam-grid-table--ruled th.exam-table-part{font-weight:800;width:26%;max-width:160px;white-space:normal;background:transparent;padding-right:16px}
@@ -423,10 +424,17 @@ mark.evidence-hl{background:#fde68a;padding:0 1px;border-radius:2px;color:inheri
 .choose-two-bank{margin-bottom:14px}
 .choose-two-options .people-bank-name,.choose-two-options .people-bank-letter{user-select:text;-webkit-user-select:text}
 .choose-two-qtext{font-size:13px;line-height:1.6;color:var(--exam-content-text);margin-bottom:12px}
+.choose-two-opts{margin-top:4px}
+.choose-two-opt input[type="checkbox"]{accent-color:var(--exam-purple)}
 .choose-two-picks{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.choose-two-picks--sync{display:none!important}
 .choose-two-pick{display:flex;align-items:center;justify-content:flex-end;gap:10px;width:100%}
 .choose-two-label{font-size:13px;font-weight:800;color:#FAFAFA;background:var(--exam-purple);border-radius:5px;min-width:28px;padding:3px 8px;text-align:center;flex-shrink:0}
 .choose-two-sel{flex-shrink:0}
+#exam-screen.exam-review-mode .choose-two-opt{pointer-events:none}
+#exam-screen.exam-review-mode .choose-two-opt.review-user{border-color:var(--exam-purple);background:#ebe6f4}
+#exam-screen.exam-review-mode .choose-two-opt.review-correct{border-color:#34a853;background:#f4fbf5}
+#exam-screen.exam-review-mode .choose-two-opt.review-user.review-correct{border-color:#34a853;background:#e8f5e9;box-shadow:inset 0 0 0 2px var(--exam-purple)}
 </style>
 </head>
 <body>
@@ -1014,7 +1022,10 @@ function goToQuestion(n){
   if(!el)el=document.getElementById('sel-q'+n);
   if(!el)el=document.querySelector('input[name="q'+n+'"]');
   if(!el)el=document.querySelector('[onchange*="\'q'+n+'\'"]');
-  if(el)el.scrollIntoView({behavior:'smooth',block:'center'});
+  if(el){
+    var target=el.closest('.choose-two-block')||el;
+    target.scrollIntoView({behavior:'smooth',block:'center'});
+  }
 }
 
 function updateProg(){
@@ -1248,6 +1259,56 @@ function selMatch(qid,sel){
   updateProg();
 }
 
+/** Choose TWO/THREE checkbox group → sync sorted letters into hidden sel-qN. */
+function chooseMultiBlock(groupId){
+  return document.querySelector('#questions-panel .choose-two-block[data-choose-group="'+groupId+'"]');
+}
+
+function chooseMultiNums(block){
+  if(!block)return [];
+  return String(block.getAttribute('data-choose-nums')||'')
+    .split(',')
+    .map(function(x){return parseInt(x,10);})
+    .filter(function(n){return !isNaN(n);});
+}
+
+function syncChooseMultiGroup(groupId){
+  var block=chooseMultiBlock(groupId);
+  if(!block)return;
+  var nums=chooseMultiNums(block);
+  var boxes=block.querySelectorAll('input[type="checkbox"][data-choose-group="'+groupId+'"]');
+  var selected=[];
+  boxes.forEach(function(box){
+    if(box.checked)selected.push(box.value);
+    if(box.closest('.opt'))box.closest('.opt').classList.toggle('sel',!!box.checked);
+  });
+  selected.sort();
+  for(var i=0;i<nums.length;i++){
+    var n=nums[i];
+    var sel=document.getElementById('sel-q'+n);
+    var letter=selected[i]||'';
+    if(sel){
+      sel.value=letter;
+      if(letter){answered['q'+n]=true;sel.classList.add('done');}
+      else{delete answered['q'+n];sel.classList.remove('done');}
+    }
+  }
+  updateProg();
+}
+
+function selChooseMulti(groupId,inp){
+  if(examReviewMode)return;
+  var block=chooseMultiBlock(groupId);
+  if(!block)return;
+  var maxPick=parseInt(block.getAttribute('data-choose-max')||'2',10)||2;
+  var checked=block.querySelectorAll('input[type="checkbox"][data-choose-group="'+groupId+'"]:checked');
+  if(inp.checked&&checked.length>maxPick){
+    inp.checked=false;
+    return;
+  }
+  syncChooseMultiGroup(groupId);
+}
+
 function collectAnswers(){
   var r={};
   document.querySelectorAll('#questions-panel .fi,#questions-panel .si').forEach(function(el){
@@ -1311,7 +1372,137 @@ function normalizeAns(v){
     .replace(/[\u201C\u201D\u201E\u2033]/g,'"')
     .replace(/[\u2010\u2011\u2012\u2013\u2014\u2212]/g,'-')
     .replace(/\u00A0/g,' ')
-    .trim().toLowerCase().replace(/\s+/g,' ');
+    .trim().toLowerCase().replace(/\s+/g,' ')
+    .replace(/-/g,' ')
+    .replace(/\s+/g,' ');
+}
+
+/** Slash alternates + Cambridge `(optional)` words — see lib/exam/answers-match.ts. */
+function splitTopLevelSlash(raw){
+  var parts=[],buf='',depth=0,s=String(raw||'');
+  for(var i=0;i<s.length;i++){
+    var ch=s.charAt(i);
+    if(ch==='(')depth++;
+    else if(ch===')')depth=Math.max(0,depth-1);
+    if(ch==='/'&&depth===0){
+      var t=buf.trim();
+      if(t)parts.push(t);
+      buf='';
+      continue;
+    }
+    buf+=ch;
+  }
+  var tail=buf.trim();
+  if(tail)parts.push(tail);
+  return parts.length?parts:[String(raw||'').trim()].filter(Boolean);
+}
+function expandParenOptions(raw){
+  var s=String(raw||'');
+  var m=s.match(/^(.*?)\(([^)]*)\)(.*)$/);
+  if(!m){
+    var plain=s.replace(/\s+/g,' ').trim();
+    return plain?[plain]:[];
+  }
+  var before=m[1]||'',inside=m[2]||'',after=m[3]||'';
+  var inner=splitTopLevelSlash(inside).map(function(x){return x.trim();}).filter(Boolean);
+  if(!inner.length)inner=[''];
+  var out=[],seen={};
+  function pushAll(list){
+    for(var i=0;i<list.length;i++){
+      var x=list[i];
+      if(!x||seen[x])continue;
+      seen[x]=1;
+      out.push(x);
+    }
+  }
+  for(var i=0;i<inner.length;i++){
+    pushAll(expandParenOptions((before+inner[i]+after).replace(/\s+/g,' ').trim()));
+  }
+  pushAll(expandParenOptions((before+after).replace(/\s+/g,' ').trim()));
+  return out;
+}
+function expandAnswerKeyVariants(correctVal){
+  var tops=splitTopLevelSlash(correctVal),out=[],seen={};
+  for(var i=0;i<tops.length;i++){
+    var variants=expandParenOptions(tops[i]);
+    for(var j=0;j<variants.length;j++){
+      var norm=normalizeAns(variants[j]);
+      if(!norm||seen[norm])continue;
+      seen[norm]=1;
+      out.push(norm);
+    }
+  }
+  return out;
+}
+function answersMatch(userVal,correctVal){
+  if(!userVal||!correctVal)return false;
+  var userNorm=normalizeAns(userVal);
+  if(!userNorm)return false;
+  var variants=expandAnswerKeyVariants(correctVal);
+  if(variants.indexOf(userNorm)>=0)return true;
+  var strippedUser=normalizeAns(String(userVal).replace(/[^a-z0-9\s]/gi,''));
+  return variants.some(function(v){
+    return v.replace(/[^a-z0-9\s]/gi,'')===strippedUser;
+  });
+}
+
+/**
+ * Choose TWO/THREE any-order groups: consecutive questions sharing the same
+ * letter-slash key (`B/F/G`) — each correct letter once, order free.
+ */
+function findChooseLetterGroup(num){
+  if(!examAnswerKey||!QUESTION_NUMS.length)return null;
+  var key=examAnswerKey['q'+num]||examAnswerKey[String(num)]||'';
+  if(!/^[A-J](\/[A-J])+$/i.test(String(key).trim()))return null;
+  var idx=QUESTION_NUMS.indexOf(num);
+  if(idx<0)return null;
+  var nums=[num];
+  for(var i=idx-1;i>=0;i--){
+    var n=QUESTION_NUMS[i];
+    var k=examAnswerKey['q'+n]||examAnswerKey[String(n)]||'';
+    if(String(k)!==String(key))break;
+    nums.unshift(n);
+  }
+  for(var j=idx+1;j<QUESTION_NUMS.length;j++){
+    var n2=QUESTION_NUMS[j];
+    var k2=examAnswerKey['q'+n2]||examAnswerKey[String(n2)]||'';
+    if(String(k2)!==String(key))break;
+    nums.push(n2);
+  }
+  if(nums.length<2)return null;
+  return {
+    nums:nums,
+    letters:String(key).split('/').map(function(x){return normalizeAns(x);}).filter(Boolean)
+  };
+}
+
+/** Per-question correctness inside an any-order letter group (no double-counting). */
+function chooseLetterGroupResults(group,snapshot){
+  var remaining=group.letters.slice();
+  var out={};
+  for(var i=0;i<group.nums.length;i++){
+    var n=group.nums[i];
+    var u=normalizeAns((snapshot||userAnswersSnapshot)['q'+n]||'');
+    var at=remaining.indexOf(u);
+    if(u&&at>=0){
+      remaining.splice(at,1);
+      out[n]=true;
+    }else{
+      out[n]=false;
+    }
+  }
+  return out;
+}
+
+function isAnswerCorrect(num,userVal){
+  if(!String(userVal||'').trim())return false;
+  var group=findChooseLetterGroup(num);
+  if(group){
+    var results=chooseLetterGroupResults(group,userAnswersSnapshot);
+    return !!results[num];
+  }
+  var key=examAnswerKey['q'+num]||examAnswerKey[String(num)]||'';
+  return answersMatch(userVal,key);
 }
 
 function ieltsAcademicReadingBandFromRaw40(raw){
@@ -1345,12 +1536,11 @@ function computeExamScore(){
   var correct=0;
   for(var i=0;i<QUESTION_NUMS.length;i++){
     var n=QUESTION_NUMS[i];
-    var qid='q'+n;
-    var key=examAnswerKey[qid]||examAnswerKey[String(n)]||'';
+    var key=examAnswerKey['q'+n]||examAnswerKey[String(n)]||'';
     if(!String(key).trim())continue;
     gradable++;
-    var user=userAnswersSnapshot[qid]||'';
-    if(user&&normalizeAns(user)===normalizeAns(key))correct++;
+    var user=userAnswersSnapshot['q'+n]||'';
+    if(user&&isAnswerCorrect(n,user))correct++;
   }
   if(!gradable)return null;
   var rawForBand=gradable===40?correct:Math.round((correct/gradable)*40);
@@ -1382,7 +1572,9 @@ function renderReviewScore(){
 function reviewLineHtml(userVal,correctVal,qNum){
   var u=pdfEscHtml(userVal||'—');
   var c=pdfEscHtml(correctVal||'—');
-  var match=userVal&&correctVal&&normalizeAns(userVal)===normalizeAns(correctVal);
+  var match=typeof qNum==='number'
+    ?isAnswerCorrect(qNum,userVal)
+    :(userVal&&correctVal&&answersMatch(userVal,correctVal));
   var cls='ans-review-line'+(match?' is-correct':' is-wrong');
   var btn=explainBtnHtml(qNum);
   return '<div class="'+cls+'"><span class="ans-your">Bạn: '+u+'</span>'+
@@ -1443,7 +1635,7 @@ function insertReviewLineAfter(el,html){
   if(el.parentNode)el.parentNode.insertBefore(line,el.nextSibling);
 }
 
-function highlightSelectReview(sel,userVal,correctVal){
+function highlightSelectReview(sel,userVal,correctVal,qNum){
   if(!sel)return;
   var pillKey=sel.id;
   if(!pillKey){
@@ -1454,15 +1646,16 @@ function highlightSelectReview(sel,userVal,correctVal){
   var pillId=pillKey?'review-pill-'+pillKey:null;
   sel.classList.remove('review-user','review-correct');
   var userNorm=normalizeAns(userVal);
-  var correctNorm=normalizeAns(correctVal);
-  var match=userNorm&&correctNorm&&userNorm===correctNorm;
+  var match=typeof qNum==='number'
+    ?isAnswerCorrect(qNum,userVal)
+    :(userNorm&&correctVal&&answersMatch(userVal,correctVal));
   if(userNorm)sel.classList.add('review-user');
   if(match)sel.classList.add('review-correct');
   if(pillId){
     var existing=document.getElementById(pillId);
     if(existing)existing.remove();
   }
-  if(!match&&correctNorm){
+  if(!match&&correctVal){
     var pill=document.createElement('span');
     if(pillId)pill.id=pillId;
     pill.className='review-correct-pill';
@@ -1494,8 +1687,53 @@ function highlightMcqReview(qid,userVal,correctVal){
   });
 }
 
+function hydrateChooseMultiFromSelects(){
+  document.querySelectorAll('#questions-panel .choose-two-block').forEach(function(block){
+    var groupId=block.getAttribute('data-choose-group')||'';
+    var nums=chooseMultiNums(block);
+    var selected={};
+    for(var i=0;i<nums.length;i++){
+      var sel=document.getElementById('sel-q'+nums[i]);
+      if(sel&&sel.value)selected[sel.value]=true;
+    }
+    block.querySelectorAll('input[type="checkbox"][data-choose-group="'+groupId+'"]').forEach(function(box){
+      box.checked=!!selected[box.value];
+      if(box.closest('.opt'))box.closest('.opt').classList.toggle('sel',box.checked);
+    });
+  });
+}
+
+function highlightChooseMultiReview(block,nums){
+  if(!block)return;
+  var group=findChooseLetterGroup(nums[0]);
+  var correctSet={};
+  if(group){
+    group.letters.forEach(function(l){correctSet[l]=true;});
+  }else{
+    for(var i=0;i<nums.length;i++){
+      var c=normalizeAns(examAnswerKey['q'+nums[i]]||examAnswerKey[String(nums[i])]||'');
+      if(c)correctSet[c]=true;
+    }
+  }
+  var userSet={};
+  for(var j=0;j<nums.length;j++){
+    var u=normalizeAns(userAnswersSnapshot['q'+nums[j]]||'');
+    if(u)userSet[u]=true;
+  }
+  block.querySelectorAll('.choose-two-opt').forEach(function(lab){
+    var inp=lab.querySelector('input[type="checkbox"]');
+    if(!inp)return;
+    var val=normalizeAns(inp.value);
+    lab.classList.remove('review-user','review-correct');
+    if(userSet[val])lab.classList.add('review-user');
+    if(correctSet[val])lab.classList.add('review-correct');
+  });
+}
+
 function applyReviewAnswers(){
   if(!examAnswerKey||!TOTAL_Q)return;
+  hydrateChooseMultiFromSelects();
+  var chooseGroupsDone={};
   for(var i=0;i<QUESTION_NUMS.length;i++){
     var n=QUESTION_NUMS[i];
     var qid='q'+n;
@@ -1512,9 +1750,37 @@ function applyReviewAnswers(){
       }
       continue;
     }
+    var chooseSel=document.getElementById('sel-'+qid);
+    if(chooseSel&&chooseSel.classList.contains('choose-two-sel')){
+      var block=chooseSel.closest('.choose-two-block');
+      var nums=chooseMultiNums(block);
+      var gkey=block?block.getAttribute('data-choose-group'):'';
+      if(gkey&&!chooseGroupsDone[gkey]){
+        chooseGroupsDone[gkey]=true;
+        highlightChooseMultiReview(block,nums);
+        var optsEl=block.querySelector('.choose-two-opts');
+        if(optsEl&&optsEl.parentNode){
+          var anchor=optsEl;
+          for(var ci=0;ci<nums.length;ci++){
+            var cn=nums[ci];
+            var cu=userAnswersSnapshot['q'+cn]||'';
+            var cc=examAnswerKey['q'+cn]||examAnswerKey[String(cn)]||'';
+            var d=document.createElement('div');
+            d.innerHTML=reviewLineHtml(cu,cc,cn);
+            var line=d.firstElementChild;
+            if(line){
+              optsEl.parentNode.insertBefore(line,anchor.nextSibling);
+              anchor=line;
+            }
+            appendExplainBtnNear(optsEl,cn);
+          }
+        }
+      }
+      continue;
+    }
     var sel=document.getElementById('sel-'+qid);
     if(sel){
-      highlightSelectReview(sel,user,correct);
+      highlightSelectReview(sel,user,correct,n);
       appendExplainBtnNear(sel.closest('.tfng')||sel.closest('.mrow')||sel,n);
       continue;
     }
@@ -1526,7 +1792,7 @@ function applyReviewAnswers(){
     }
     var msel=document.querySelector('#questions-panel [onchange*="'+qid+'"]');
     if(msel&&msel.tagName==='SELECT'){
-      highlightSelectReview(msel,user,correct);
+      highlightSelectReview(msel,user,correct,n);
       appendExplainBtnNear(msel.closest('.mrow')||msel,n);
     }
   }

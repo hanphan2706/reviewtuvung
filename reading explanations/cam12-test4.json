@@ -1490,7 +1490,8 @@
       "type": "ynng",
       "answer": "YES",
       "evidence": {
-        "quoteEn": "The knock-on effect of this scrutiny has been to make the governance of companies in general an issue of intense public debate and has significantly increased the pressures on, and the responsibilities of, directors."
+        "paragraphLetter": "A",
+        "quoteEn": "Following the 2008 financial meltdown, which resulted in a deeper and more prolonged period of economic downturn than anyone expected, the search for explanations in the many post-mortems of the crisis has meant blame has been spread far and wide. The role of bank directors and management and their widely publicised failures have been extensively picked over and examined in reports, inquiries and commentaries."
       },
       "steps": [
         {
@@ -1504,20 +1505,24 @@
           "pairs": [
             {
               "q": "“Close scrutiny of the behaviour of boards has increased since the economic downturn” — giám sát tăng lên sau suy thoái.",
-              "p": "Bài viết: “The knock-on effect of this scrutiny has been to make the governance of companies in general an issue of intense public debate” sau cuộc khủng hoảng 2008 — mức độ giám sát tăng đáng kể."
+              "p": "Đoạn A: sau “2008 financial meltdown” và giai đoạn suy thoái kéo dài, “the search for explanations in the many post-mortems of the crisis” khiến mọi bên bị đem ra xét xử; “The role of bank directors and management and their widely publicised failures have been extensively picked over and examined in reports, inquiries and commentaries” — hành vi ban lãnh đạo bị mổ xẻ rất kỹ sau khủng hoảng."
             }
           ],
           "paraphrases": [
             {
-              "q": "close scrutiny ... has increased since the economic downturn",
-              "p": "the knock-on effect of this scrutiny has been to make ... an issue of intense public debate"
+              "q": "since the economic downturn",
+              "p": "Following the 2008 financial meltdown ... economic downturn"
+            },
+            {
+              "q": "close scrutiny of the behaviour of boards has increased",
+              "p": "extensively picked over and examined in reports, inquiries and commentaries"
             }
           ]
         },
         {
           "id": "reason",
           "titleVi": "Vì sao chọn vậy?",
-          "bodyVi": "Bài xác nhận việc giám sát doanh nghiệp tăng mạnh sau khủng hoảng — khớp với đề."
+          "bodyVi": "Đoạn A xác nhận sau khủng hoảng 2008, vai trò bank directors và management bị giám sát, điều tra và bàn luận rất nhiều — khớp YES."
         },
         {
           "id": "verdict",
@@ -1531,7 +1536,8 @@
       "type": "ynng",
       "answer": "NOT GIVEN",
       "evidence": {
-        "quoteEn": "More professional and better-informed boards would have been particularly appropriate for banks where the executives had access to information that part-time non-executive directors lacked, leaving the latter unable to comprehend or anticipate the 2008 crash."
+        "paragraphLetter": "A",
+        "quoteEn": "The role of bank directors and management and their widely publicised failures have been extensively picked over and examined in reports, inquiries and commentaries."
       },
       "steps": [
         {
@@ -1545,20 +1551,24 @@
           "pairs": [
             {
               "q": "“Banks have been mismanaged to a greater extent than other businesses” — ngân hàng bị quản lý kém hơn doanh nghiệp khác.",
-              "p": "Bài viết chỉ nói riêng về ngân hàng, ví dụ “more professional and better-informed boards would have been particularly appropriate for banks” — không so sánh mức độ quản lý yếu kém giữa ngân hàng và doanh nghiệp khác."
+              "p": "Đoạn A chỉ nói bank directors và management cùng các lỗi lầm của họ “have been extensively picked over and examined” — bài bàn tới thất bại của ngân hàng, nhưng không so sánh mức độ quản lý yếu kém giữa ngân hàng và các loại hình doanh nghiệp khác."
             }
           ],
           "paraphrases": [
             {
               "q": "mismanaged to a greater extent than other businesses",
               "p": "(not stated in the passage)"
+            },
+            {
+              "q": "bank directors and management ... failures",
+              "p": "The role of bank directors and management and their widely publicised failures"
             }
           ]
         },
         {
           "id": "reason",
           "titleVi": "Vì sao chọn vậy?",
-          "bodyVi": "Bài không đưa ra so sánh mức độ quản lý yếu kém giữa ngân hàng và các ngành khác."
+          "bodyVi": "Bài có nhắc lỗi lầm của bank directors/management (đoạn A) nhưng không đưa ra phép so sánh “ngân hàng quản lý kém hơn doanh nghiệp khác” — NOT GIVEN."
         },
         {
           "id": "verdict",
@@ -1572,6 +1582,7 @@
       "type": "ynng",
       "answer": "NO",
       "evidence": {
+        "paragraphLetter": "B",
         "quoteEn": "Agendas can become overloaded and this can mean the time for constructive debate must necessarily be restricted in favour of getting through the business."
       },
       "steps": [

@@ -1734,7 +1734,8 @@
       "type": "ynng",
       "answer": "YES",
       "evidence": {
-        "quoteEn": "More pertinently, refusing to accept the advantages offered by AI could place a large group of people at a serious disadvantage."
+        "quoteEn": "More pertinently, refusing to accept the advantages offered by AI could place a large group of people at a serious disadvantage.",
+        "paragraphLetter": "D"
       },
       "steps": [
         {
@@ -1775,7 +1776,8 @@
       "type": "ynng",
       "answer": "NO",
       "evidence": {
-        "quoteEn": "Simply having previous experience with AI can significantly improve people’s opinions about the technology, as was found in the study mentioned above. Evidence also suggests the more you use other technologies such as the internet, the more you trust them."
+        "quoteEn": "Simply having previous experience with AI can significantly improve people’s opinions about the technology, as was found in the study mentioned above. Evidence also suggests the more you use other technologies such as the internet, the more you trust them.",
+        "paragraphLetter": "E"
       },
       "steps": [
         {

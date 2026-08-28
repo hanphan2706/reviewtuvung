@@ -1106,7 +1106,9 @@ function normalizeAns(v){
     .replace(/[\u201C\u201D\u201E\u2033]/g,'"')
     .replace(/[\u2010\u2011\u2012\u2013\u2014\u2212]/g,'-')
     .replace(/\u00A0/g,' ')
-    .trim().toLowerCase().replace(/\s+/g,' ');
+    .trim().toLowerCase().replace(/\s+/g,' ')
+    .replace(/-/g,' ')
+    .replace(/\s+/g,' ');
 }
 
 function ieltsAcademicReadingBandFromRaw40(raw){
@@ -1180,9 +1182,65 @@ function getCorrectAnswerForQuestion(num){
 function answersMatch(userVal,correctVal){
   if(!userVal||!correctVal)return false;
   var userNorm=normalizeAns(userVal);
-  var alts=String(correctVal).split(/\//).map(function(x){return normalizeAns(x);}).filter(Boolean);
-  if(alts.length===0)alts=[normalizeAns(correctVal)];
-  return alts.indexOf(userNorm)>=0;
+  if(!userNorm)return false;
+  function splitTopLevelSlash(raw){
+    var parts=[],buf='',depth=0,s=String(raw||'');
+    for(var i=0;i<s.length;i++){
+      var ch=s.charAt(i);
+      if(ch==='(')depth++;
+      else if(ch===')')depth=Math.max(0,depth-1);
+      if(ch==='/'&&depth===0){
+        var t=buf.trim();
+        if(t)parts.push(t);
+        buf='';
+        continue;
+      }
+      buf+=ch;
+    }
+    var tail=buf.trim();
+    if(tail)parts.push(tail);
+    return parts.length?parts:[String(raw||'').trim()].filter(Boolean);
+  }
+  function expandParenOptions(raw){
+    var s=String(raw||'');
+    var m=s.match(/^(.*?)\(([^)]*)\)(.*)$/);
+    if(!m){
+      var plain=s.replace(/\s+/g,' ').trim();
+      return plain?[plain]:[];
+    }
+    var before=m[1]||'',inside=m[2]||'',after=m[3]||'';
+    var inner=splitTopLevelSlash(inside).map(function(x){return x.trim();}).filter(Boolean);
+    if(!inner.length)inner=[''];
+    var out=[],seen={};
+    function pushAll(list){
+      for(var i=0;i<list.length;i++){
+        var x=list[i];
+        if(!x||seen[x])continue;
+        seen[x]=1;
+        out.push(x);
+      }
+    }
+    for(var i=0;i<inner.length;i++){
+      pushAll(expandParenOptions((before+inner[i]+after).replace(/\s+/g,' ').trim()));
+    }
+    pushAll(expandParenOptions((before+after).replace(/\s+/g,' ').trim()));
+    return out;
+  }
+  var tops=splitTopLevelSlash(correctVal),variants=[],seen={};
+  for(var ti=0;ti<tops.length;ti++){
+    var expanded=expandParenOptions(tops[ti]);
+    for(var j=0;j<expanded.length;j++){
+      var norm=normalizeAns(expanded[j]);
+      if(!norm||seen[norm])continue;
+      seen[norm]=1;
+      variants.push(norm);
+    }
+  }
+  if(variants.indexOf(userNorm)>=0)return true;
+  var strippedUser=normalizeAns(String(userVal).replace(/[^a-z0-9\s]/gi,''));
+  return variants.some(function(v){
+    return v.replace(/[^a-z0-9\s]/gi,'')===strippedUser;
+  });
 }
 
 function isAnswerCorrect(num,userVal){

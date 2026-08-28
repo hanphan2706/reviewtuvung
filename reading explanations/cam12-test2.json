@@ -937,7 +937,8 @@
       "type": "tfng",
       "answer": "FALSE",
       "evidence": {
-        "quoteEn": "At this stage, Bingham didn’t realise the extent or the importance of the site, nor did he realise what use he could make of the discovery."
+        "quoteEn": "At this stage, Bingham didn’t realise the extent or the importance of the site, nor did he realise what use he could make of the discovery.",
+        "paragraphLetter": "E"
       },
       "steps": [
         {
@@ -951,7 +952,7 @@
           "pairs": [
             {
               "q": "Đề bảo “understood the significance ... as soon as he saw it”.",
-              "p": "Bài viết: “at this stage, Bingham didn’t realise the extent or the importance of the site” — lúc đó ông chưa hề nhận ra tầm quan trọng của khám phá này."
+              "p": "Đoạn E: “at this stage, Bingham didn't realise the extent or the importance of the site” — lúc đó ông chưa hề nhận ra tầm quan trọng của khám phá này."
             }
           ]
         },
@@ -972,6 +973,7 @@
       "type": "tfng",
       "answer": "NOT GIVEN",
       "evidence": {
+        "paragraphLetter": "F",
         "quoteEn": "Bingham made desperate attempts to prove this belief for nearly 40 years."
       },
       "steps": [
@@ -986,7 +988,7 @@
           "pairs": [
             {
               "q": "Đề bảo “returned to Machu Picchu in order to find evidence to support his theory”.",
-              "p": "Bài chỉ nói ông “made desperate attempts to prove this belief for nearly 40 years” — cố gắng chứng minh giả thuyết trong gần 40 năm, nhưng không nói rõ ông có quay lại chính Machu Picchu để tìm bằng chứng hay không."
+              "p": "Đoạn F: ông “made desperate attempts to prove this belief for nearly 40 years” — cố gắng chứng minh giả thuyết trong gần 40 năm, nhưng không nói rõ ông có quay lại chính Machu Picchu để tìm bằng chứng hay không."
             }
           ],
           "paraphrases": [
@@ -1335,6 +1337,7 @@
       "type": "ynng",
       "answer": "YES",
       "evidence": {
+        "paragraphLetter": "A",
         "quoteEn": "In the past, such children were considered to be at a disadvantage compared with their monolingual peers. Over the past few decades, however, technological advances have allowed researchers to look more deeply at how bilingualism interacts with and changes the cognitive and neurological systems, thereby identifying several clear benefits of being bilingual."
       },
       "steps": [
@@ -1349,7 +1352,7 @@
           "pairs": [
             {
               "q": "Đề: “Attitudes towards bilingualism have changed in recent years.”",
-              "p": "Bài viết: “in the past, such children were considered to be at a disadvantage”, nhưng “over the past few decades ... researchers ... identif[ied] several clear benefits of being bilingual” — quan điểm đã chuyển từ coi là bất lợi sang công nhận lợi ích rõ ràng."
+              "p": "Đoạn A: “in the past, such children were considered to be at a disadvantage”, nhưng “over the past few decades ... researchers ... identif[ied] several clear benefits of being bilingual” — quan điểm đã chuyển từ coi là bất lợi sang công nhận lợi ích rõ ràng."
             }
           ]
         },
@@ -1446,7 +1449,8 @@
       "type": "ynng",
       "answer": "NO",
       "evidence": {
-        "quoteEn": "When monolingual and bilingual adolescents listen to simple speech sounds without any intervening background noise, they show highly similar brain stem responses. When researchers play the same sound to both groups in the presence of background noise, however, the bilingual listeners’ neural response is considerably larger."
+        "quoteEn": "When monolingual and bilingual adolescents listen to simple speech sounds without any intervening background noise, they show highly similar brain stem responses. When researchers play the same sound to both groups in the presence of background noise, however, the bilingual listeners’ neural response is considerably larger.",
+        "paragraphLetter": "D"
       },
       "steps": [
         {
@@ -1460,7 +1464,7 @@
           "pairs": [
             {
               "q": "Đề: “... process single sounds more efficiently ... in all situations.”",
-              "p": "Bài viết: khi không có tiếng ồn nền, hai nhóm “show highly similar brain stem responses” — phản ứng gần như giống nhau; chỉ khi “in the presence of background noise” phản ứng của người song ngữ mới lớn hơn — nghĩa là không phải trong mọi tình huống."
+              "p": "Đoạn D: khi không có tiếng ồn nền, hai nhóm “show highly similar brain stem responses” — phản ứng gần như giống nhau; chỉ khi “in the presence of background noise” phản ứng của người song ngữ mới lớn hơn — nghĩa là không phải trong mọi tình huống."
             }
           ]
         },
