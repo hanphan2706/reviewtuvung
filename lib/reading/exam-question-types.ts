@@ -15,7 +15,7 @@ function labelSection(sec: ExamQuestionSection): string {
     case "table-fill":
       return "Table completion";
     case "choose-two":
-      return section.questionNums.length >= 3
+      return sec.questionNums.length >= 3
         ? "Multiple choice (choose three)"
         : "Multiple choice (choose two)";
     case "mcq-single":

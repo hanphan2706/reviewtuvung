@@ -18,6 +18,8 @@ export type ReadingExplanationQuestion = {
   passage: number;
   type: string;
   answer: string;
+  /** Choose-two cluster: paired question numbers sharing one answer set. */
+  answerPair?: [number, number];
   answerAlternatives?: string[];
   evidence?: {
     /** Single contiguous span (still supported). */

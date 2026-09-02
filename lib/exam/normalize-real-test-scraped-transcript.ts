@@ -79,7 +79,7 @@ export function normalizeRealTestScrapedTranscript(raw: string): string {
 
     const body = normalizeQuestionMarkers(line);
     if (!body) continue;
-    const speaker = lastSpeaker ?? defaultSpeakerForPart(part);
+    const speaker: string = lastSpeaker ?? defaultSpeakerForPart(part);
     lastSpeaker = speaker;
     out.push(`${speaker}: ${body}`);
   }

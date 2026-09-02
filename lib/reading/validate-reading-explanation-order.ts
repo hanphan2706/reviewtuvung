@@ -24,7 +24,6 @@ const SEQUENTIAL_KINDS = new Set<ExamSectionKind>([
   "table-fill",
   "tfng",
   "mcq-single",
-  "sentence-fill",
   "sentence-ending",
 ]);
 
