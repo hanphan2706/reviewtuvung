@@ -8,6 +8,8 @@ import {
   mediaAudioContentType,
 } from "@/lib/media/media-audio-storage";
 import { createServiceRoleSupabaseClient } from "@/lib/supabase/service-role";
+import { r2MediaKey } from "@/lib/r2/config";
+import { streamR2ObjectResponse } from "@/lib/r2/stream-object";
 
 async function streamSupabaseAudio(
   objectKey: string,
@@ -37,6 +39,9 @@ export async function GET(request: Request) {
     return audioFileNextResponse(localPath, mediaAudioContentType(key), request);
   }
 
+  const r2 = await streamR2ObjectResponse(r2MediaKey(key), mediaAudioContentType(key), request);
+  if (r2) return r2;
+
   const remote = await streamSupabaseAudio(key, request);
   if (remote) return remote;
 
@@ -44,7 +49,7 @@ export async function GET(request: Request) {
     {
       error: "audio file not found",
       missing: true,
-      hint: "Admin: chạy SQL supabase/media-audio-storage.sql rồi npm run media:upload-audio.",
+      hint: "Admin: npm run audio:upload-r2 hoặc npm run media:upload-audio.",
     },
     { status: 404 },
   );

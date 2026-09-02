@@ -1,8 +1,15 @@
 import { formatExamInstructionHtml } from "@/lib/exam/format-exam-instruction-html";
+import { getListeningRealExam, type RealExamSlug } from "@/lib/exam/real-exam-catalog";
+import { loadRealExamTranscriptSync } from "@/lib/exam/real-exam-sync-files";
+import { loadRealExamTranscriptText } from "@/lib/exam/real-exam-transcript-files";
+import { realExamListeningPartMeta } from "@/lib/exam/real-exam-listening-parts";
 import { getListeningPartById, type ListeningPartMeta } from "@/lib/listening/content-manifest";
 import { loadListeningFullTestTranscriptByPart } from "@/lib/listening/load-listening-full-test-transcript";
 import { loadListeningTranscriptText } from "@/lib/listening/load-listening-transcript-text";
-import { listeningSyncCuesToExamHtml } from "@/lib/listening/listening-sync-cues-to-exam-html";
+import {
+  listeningSyncCuesToExamHtml,
+  listeningSyncCuesToExamHtmlByPart,
+} from "@/lib/listening/listening-sync-cues-to-exam-html";
 import { readListeningSyncFile } from "@/lib/listening/listening-sync-fs";
 import {
   getListeningIeltsTest,
@@ -13,6 +20,7 @@ import { loadListeningQnaFile, loadListeningQnaTest } from "@/lib/listening/gene
 import { getListeningTestQnaRef } from "@/lib/listening/listening-qna-catalog";
 import { getPinballEntryListeningPart, PINBALL_ENTRY_TEST_ID } from "@/lib/listening/pinball-entry-listening";
 import { enrichListeningQnaPartMapImages } from "@/lib/listening/listening-map-image";
+import { realTestListeningAudioApiPath } from "@/lib/listening/listening-materials-urls";
 import { BLANK_RE, getListeningQnaPart } from "@/lib/listening/parse-listening-qna";
 import {
   collectBlankNumbersFromLines,
@@ -583,8 +591,9 @@ function renderMapSection(section: ListeningQnaMapSection, partNumber: number): 
 }
 
 function renderChooseTwoSection(section: ListeningQnaChooseTwoSection, partNumber: number): { html: string; nums: number[] } {
-  const [a, b] = section.questionNumbers;
-  const nums = [a, b];
+  const nums = section.questionNumbers;
+  const minQ = nums[0] ?? (partNumber - 1) * 10 + 1;
+  const maxQ = nums[nums.length - 1] ?? minQ;
   const letterOpts = section.options
     .map((o) => `<option value="${escHtml(o.letter)}">${escHtml(o.letter)} — ${escHtml(o.text)}</option>`)
     .join("");
@@ -597,14 +606,14 @@ function renderChooseTwoSection(section: ListeningQnaChooseTwoSection, partNumbe
           )
           .join("")}</ul></div>`
       : "";
-  const rows = [a, b]
+  const rows = nums
     .map(
       (n) =>
         `<div class="choose-two-row" data-q="${n}"><span class="choose-two-label">Question ${n}</span><select class="msel choose-two-sel" id="sel-q${n}" onchange="selMatch('q${n}',this)"><option value="">—</option>${letterOpts}</select></div>`,
     )
     .join("");
   return {
-    html: `${renderSectionHeader(partNumber, a, b, section.instructionLines)}
+    html: `${renderSectionHeader(partNumber, minQ, maxQ, section.instructionLines)}
 <p class="qtext choose-two-prompt">${escHtml(section.prompt)}</p>
 <div class="choose-two-block">${bank}<div class="choose-two-answers">${rows}</div></div>`,
     nums,
@@ -847,6 +856,98 @@ export type PinballEntryListeningExamPayload = {
   isFullTest: true;
   partQuestionRanges: ListeningPartQuestionRange[];
 };
+
+export function buildRealExamListeningExamPayload(
+  slug: RealExamSlug,
+  options: { back: string; pilotLabel: string },
+): PinballEntryListeningExamPayload | null {
+  const exam = getListeningRealExam(slug);
+  if (!exam) return null;
+
+  const parsed = loadListeningQnaTest(slug);
+  if (!parsed) return null;
+
+  const questionHtmlParts: string[] = [];
+  const allNums: number[] = [];
+  const answerKey: Record<string, string> = {};
+  const partQuestionRanges: ListeningPartQuestionRange[] = [];
+  const audioUrl = realTestListeningAudioApiPath(exam.seriesNumber);
+
+  for (let part = 1; part <= 4; part += 1) {
+    const qnaPart = getListeningQnaPart(parsed, part);
+    const meta = realExamListeningPartMeta(slug, exam.seriesNumber, part);
+    if (!qnaPart) return null;
+
+    const chunk = buildListeningPartQuestionsChunk(meta, qnaPart);
+    if (!chunk) return null;
+
+    questionHtmlParts.push(
+      `<div class="qsection${part === 1 ? " active" : ""}" id="q${part}-section">${chunk.html}</div>`,
+    );
+    allNums.push(...chunk.nums);
+    Object.assign(answerKey, qnaPart.answers);
+    partQuestionRanges.push({ part, min: (part - 1) * 10 + 1, max: part * 10 });
+  }
+
+  const questionNums = [...new Set(allNums)].sort((a, b) => a - b);
+  if (questionNums.length === 0) return null;
+
+  const sync = loadRealExamTranscriptSync(slug);
+  let transcriptHtmlByPart: Partial<Record<number, string>> = {};
+  let transcriptHtml = "";
+
+  if (sync) {
+    transcriptHtml = listeningSyncCuesToExamHtmlByPart(sync);
+    transcriptHtmlByPart = { 1: "synced", 2: "synced", 3: "synced", 4: "synced" };
+  } else {
+    const plain = loadRealExamTranscriptText(slug);
+    if (plain) {
+      transcriptHtmlByPart = splitPlainTranscriptHtmlByPart(plain);
+      transcriptHtml = buildListeningFullTestTranscriptBodyHtml(transcriptHtmlByPart);
+    }
+  }
+
+  const hasAnswerKey = questionNums.some((n) => answerKey[String(n)] != null && answerKey[String(n)] !== "");
+
+  return {
+    title: options.pilotLabel,
+    pilotLabel: options.pilotLabel,
+    questionsHtml: questionHtmlParts.join("\n"),
+    questionNums,
+    /** One continuous real-test MP3 — full-test player plays index 0 once. */
+    audioUrls: [audioUrl],
+    transcriptHtml,
+    transcriptHtmlByPart,
+    hasTranscript: Boolean(transcriptHtml.trim()),
+    answerKey,
+    hasAnswerKey,
+    back: options.back,
+    skipLogin: true,
+    isFullTest: true,
+    partQuestionRanges,
+  };
+}
+
+function splitPlainTranscriptHtmlByPart(plain: string): Partial<Record<number, string>> {
+  const buckets: Record<number, string[]> = { 1: [], 2: [], 3: [], 4: [] };
+  let current = 0;
+  for (const raw of plain.split(/\r?\n/)) {
+    const partMatch = raw.trim().match(/^PART\s+(\d+)\s*$/i);
+    if (partMatch) {
+      current = Number.parseInt(partMatch[1] ?? "0", 10);
+      continue;
+    }
+    if (current >= 1 && current <= 4) {
+      buckets[current]!.push(raw);
+    }
+  }
+  const out: Partial<Record<number, string>> = {};
+  for (const part of [1, 2, 3, 4] as const) {
+    const text = buckets[part]!.join("\n").trim();
+    if (text) out[part] = listeningTranscriptPlainToSafeHtml(text);
+  }
+  return out;
+}
 
 export function buildPinballEntryListeningExamPayload(options: {
   back: string;

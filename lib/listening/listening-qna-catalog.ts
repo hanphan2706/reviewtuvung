@@ -214,6 +214,21 @@ const REAL_TEST_1_QNA: ListeningQnaFileRef = {
   test: 1,
 };
 
+const REAL_TEST_2_QNA: ListeningQnaFileRef = {
+  fileName: "real test 2 qna.txt",
+  test: 2,
+};
+
+const REAL_TEST_3_QNA: ListeningQnaFileRef = {
+  fileName: "real test 3 qna.txt",
+  test: 3,
+};
+
+const REAL_TEST_4_QNA: ListeningQnaFileRef = {
+  fileName: "real test 4 qna.txt",
+  test: 4,
+};
+
 const PINBALL_ENTRY_QNA: ListeningQnaFileRef = {
   fileName: "pinball entry test qna.txt",
   test: 1,
@@ -262,6 +277,9 @@ export const LISTENING_TEST_QNA: Record<string, ListeningQnaFileRef> = {
   "cam18-test3": CAM18_TEST3_QNA,
   "cam18-test4": CAM18_TEST4_QNA,
   "de-thi-that-1": REAL_TEST_1_QNA,
+  "de-thi-that-2": REAL_TEST_2_QNA,
+  "de-thi-that-3": REAL_TEST_3_QNA,
+  "de-thi-that-4": REAL_TEST_4_QNA,
   "pinball-entry": PINBALL_ENTRY_QNA,
 };
 

@@ -108,6 +108,27 @@ export const LISTENING_REAL_EXAMS: readonly RealExamListing[] = [
     subtitle: "Listening · 40 phút · 4 parts · 40 câu",
     catalogOrder: realIeltsExamCatalogOrder(1),
   },
+  {
+    slug: "de-thi-that-2",
+    seriesNumber: 2,
+    title: "Đề thi thật IELTS 2",
+    subtitle: "Listening · 40 phút · 4 parts · 40 câu",
+    catalogOrder: realIeltsExamCatalogOrder(2),
+  },
+  {
+    slug: "de-thi-that-3",
+    seriesNumber: 3,
+    title: "Đề thi thật IELTS 3",
+    subtitle: "Listening · 40 phút · 4 parts · 40 câu",
+    catalogOrder: realIeltsExamCatalogOrder(3),
+  },
+  {
+    slug: "de-thi-that-4",
+    seriesNumber: 4,
+    title: "Đề thi thật IELTS 4",
+    subtitle: "Listening · 40 phút · 4 parts · 40 câu",
+    catalogOrder: realIeltsExamCatalogOrder(4),
+  },
 ] as const;
 
 const READING_BY_SLUG = new Map(READING_REAL_EXAMS.map((exam) => [exam.slug, exam]));

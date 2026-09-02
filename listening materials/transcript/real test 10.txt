@@ -1,0 +1,109 @@
+SECTION 1
+
+
+Agent:                  Good morning. May I help you?
+Student:              Oh, good morning. Is this the Student Job Centre?
+Agent:                  Oh, yes.
+Student:              Urn… I was wondering if perhaps you could tell me a bit about the job, you know, the Hotel Recruitment Program that offers a range of work at the hotels in the area.
+Agent:                  Of course, take a seat, please. I’ll take you through some of what we have on offer.
+Student:              Thank you so much. Oh, wait a second and I’ll get my pen.
+Agent:                  OK. The first job is Reception Assistant (Q1) at the Parkview Hotel. The Parkview Hotel has quite an international flavour, so you’ll need to speak at least two foreign languages.
+Student:              Sure, I can speak fluent French and Spanish, so that’s no problem.
+Agent:                  Good. And many guests, of course, travel by car, and you may have to take their vehicles around to the car park, so you will need to have a valid driving license (Q2), and you will not be allowed to do the job if you haven’t.
+Student:              OK, I got that.
+Agent:                  Right. And they also say that basic computer skills such as word processing would be an advantage, although this isn’t a requirement.
+Student:              Well, I just got my Computer Skills certificate, so I have no worries about that.
+Agent:                  This is quite a varied job, and in fact I should point out that at certain times of the day it would involve heavy lifting (Q3) when guests’ luggage arrives or perhaps deliveries come in. Is that OK for you?
+Student:              Well, it’s hard to say at this moment. But I’ll bear that in mind when deciding whether to apply for this post.
+Agent:                  Sure. Another job is general assistant at the Lakeside Hotel. To be honest, the pay is rather low, but there are compensatory factors, for example, the hotel will provide you with all your meals (Q4) while you’re working, and they will also train you in all the aspects of the job and then issue you with a certificate (Q5), which, of course, could be very valuable to you in the future.
+Student:              Oh, that sounds great.
+Agent:                  Now… the third job on offer is Catering Assistant at Hotel 98 smart new premises . As you know, this hotel is popular with exclusive travelers and so you’ll need to wear the distinctive staff uniform (Q6) – which you’re provided with. Don’t consider this job unless you’re fairly flexible about when you work, as the hotel will require you to work nights for this job, and you will need to travel to and from the hotel, as it’s situated just outside the city.
+Student:              Well. I’m afraid I can’t manage that because of the lectures.
+Agent:                  OK, I get the picture. So, which one will you prefer, Reception Assistant at the Parkview Hotel or General Assistant at the Lakeside Hotel?
+Student:              Well, I guess I still couldnt make up my mind right now. Can I have a few days to think about and go back to you later?
+Agent:                  That’s no problem. And there are a few things I need to clarify with you. If you would like to apply for one of these jobs, you will need to follow the recruitment process.
+Student:              Mum…
+Agent:                  So the first thing you’ll need to do is to fill in one of these – a personal information form (Q7). It’s pretty straightforward and should only take you a few minutes. Once you’ve done that and handed it in, we’ll give you a questionnaire (Q8) about your skills. We then look through the information about you, and pass on our recommendations to the relevant hotel.
+Student:              Yes, sure.
+Agent:                  You will then proceed to the next step of the process and attend a general course of training. This is designed to be helpful and realistic, so an important part of the course is role-play activities. (Q9)
+Student:              That sounds interesting.
+Agent:                  Yes, indeed. And after that, the final step is that you will be contacted by the hotel you’re going to work for, and they’ll post you a video (Q10) about themselves and the work involved. Watching this will constitute further and specific training for your job.
+Student:              Oh, yes. I think I’m very clear now. Thank you for helping me.
+Agent:                  It’s a pleasure. Bye.
+Student:              Bye.
+SECTION 2
+Audio Player
+
+
+
+
+
+
+00:00
+
+Use Up/Down Arrow keys to increase or decrease volume.
+
+
+SECTION 2
+
+
+Good morning, everyone. I’m John Smith, the General practitioner of London Fields Medical Centre, and I’m very glad to give you a brief introduction about our practice and some suggestions about how to see a doctor here.
+Our receptionists are usually the first point of contact and are here to help you. They have a lot of information to hand and in most cases will be able to help you with your inquiry, ensuring you see the most appropriate clinician.
+OK, right, well the first thing to do is to register. We can only accept new patients who live in our practice catchment area. To register with us you will need 2 proofs of address such as bank statements or tenancy agreements plus 1 form of ID such as passport or drivers’ license.
+If you are foreign nationals, then you’ll have to register as a temporary visitor (Q11). Then, fill in this form. It’s a medical history form. You have to give details of any illnesses you have had. Then you also need to write down if you’ve got any allergies (Q12), OK? This as well as that, we need to know if you’ve had any operations … and last of all, you have to give full details of current medication (Q13) you may be on. This as well as that, you need to fill in this registration card (Q14) – this is for your personal details, thats your full name, address and telephone numbers. Okay? And we also need to make an appointment for you to see the doctor for a new patient health check. It’ll just take about 15 minutes, thats all. It’s just a basic checkup really.
+OK, then, let me tell you something about the health centre. We have 5 GPs here – general practitioners. We also have a practice nurse who looks after minor injuries (Q15). She can also administer some treatments . We also have a chiro product. That’s a foot specialist. She’s private which means you have to pay for the service, unless you’re over 65. (Q16)
+If you want to see a doctor, you have to make an appointment first. Please call our main switchboard number on 0207 9 23 8 100 to book an appointment at either our main practice or one of our branch surgeries. You can also email for an appointment on London Fields medical@NHS.net. Urgent cases are seen on the day. If your condition is non-urgent, you can expect to see a GP within two working days, though you may have to wait longer if you want to see a particular GP.
+If it’s an emergency, you’d better come straight here to the Centre, one of the doctors can usually see you, or you can go to the emergency department at the hospital in town. If you are very sick, you can ask for a home visit as well (Q17). On Friday afternoons we have an open surgery which means you can come along and just wait to see a doctor, but you may have to wait for several hours, so it’s much better to make an appointment and come at the specified time. (Q18)
+Usually when you see a doctor you’ll be given a prescription for medicine which you need to take. Or you can choose to go to a pharmacist in a chemist’s shop. If the doctor decides that you will need the medication for a long time, you will be given a repeat prescription form (Q19). This allows you to get a further supply without seeing the doctor again. You simply leave the repeat form here a few days before you need it. Then you pick up the medication at the chemists.
+Oh, you may wonder how much this all costs? Well, there is no charge for seeing a doctor – you can make an appointment anytime to see one of our doctors and it will not cost you anything for the consultation. However, you need to pay for the prescription and the cost varies with the medicine, but its usually just a few pounds. Nevertheless, in some situations, such as pregnancy, the prescription is then free. (Q20)
+All right, do you have any other questions?
+
+SECTION 3
+Audio Player
+
+
+
+
+
+
+00:00
+
+Use Up/Down Arrow keys to increase or decrease volume.
+
+
+SECTION 3
+
+
+Professor: Until recently, we knew almost nothing about how important bees are in maintaining natural diversity. Now we know more about them. We know, for example, that bees fall into two categories: wild bees and domesticated honeybees. A main reason for the domestication of bees has always been the production of honey and beeswax (Q21). We also know that honeybees are the dominant pollinators. In addition to bees, wasps, moths, butterflies, flies and beetles, as many as 1,500 species of birds and mammals serve as pollinators. Many crops of commercial importance such as almond, cherry, avocado pear (Q22), watermelon, cucumber, rely on pollination by insects, and of these insects, bees are by far the most important. Animals and insects provide pollination services for over three-quarters of the staple crop plants and for 80% of all flowering plants in the world. The economic value of animal pollination to world agriculture has been estimated to be 200 billion (Q23) US dollars per year. Pollination is one of nature’s services to farmers. So think about this: if you eliminated the pollinators, it would take the food right out of our mouths. We biologists never imagined we’d see the day when wild plants or crops suffered from pollinator scarcity. But, unfortunately, that day has come. In fact, farmers in Mexico and the U.S. are suffering the worst pollinator crisis in history. So… what happened? Any ideas? Alicia?
+Alicia: Is it…um… because of natural enemies? I read something about a kind of parasite that’s killed lots of bees.
+Professor: It’s true. An outbreak of parasitic mites has caused a steep decline in North American populations of honeybees. But parasites (Q24) aren’t the only factor.
+Alicia: What about the pesticides used on farms? All those chemicals must have an effect.
+Professor: Most definitely, yes. Pesticides are a major factor. Both wild and domesticated bees are in serious trouble because of pesticides. In California, farm chemicals (Q25) are killing around 10% of all the honeybee colonies. Agriculture in general is part of the problem. Another example is the monarch butterfly. Millions of monarchs from all over the U.S. and southern Canada fly south every year in late summer. The monarch is the only butterfly that returns to a specific site year after year (Q26). Unfortunately, the herbicides used in their milkweed in the Great Plains are taking a toll on monarchs, and fewer of them are reaching their winter grounds in Mexico. In a recent field study at Cornell University in the U.S., it was found that monarch butterfly caterpillars eating com toxic pollen blown on to milkweed plants near com fields had suffered significant adverse effects leading to death of nearly 20% of the caterpillars.
+Alicia: Wow, 20%, thats so tragic!
+Professor: And it’s more than that. There are over 1,500 species of butterflies in the Indian subcontinent, but their population is dwindling because of environmental changes. Many manmade environmental changes like deforestation, extension of farming and unrestricted urbanization are threatening some species of butterflies to extinction by destruction or disturbance of their larval as well as adult food plants, feeding grounds and shelters (Q27). Many of the most spectacular and endangered species have various levels of protection under local legislation. However, there is a major trade in the spectacular tropical species for incorporation in ornaments and souvenirs (Q28). The international demand for insects is greater than most people realize.
+Alicia: Yes, indeed. I once read an article about another important pollinator – the long-nosed bat. These amazing animals feed on cactus flowers. But they are having a tough time, too (Q29). Some desert ranchers mistake them for vampire bats, and they’ve tried to poison them, or dynamite the caves where they roost.
+Professor: Yes, we must recognize that pollination is not a free service, and that investment and stewardship are required to protect and sustain it, so what can be done about this situation?
+Alicia: Well, wildlife farming, you know, based on sustainable exploiting wild creatures, can help to save endangered species like butterflies and their habitats. Besides, gardeners, orchard growers, farmers and urban dwellers can switch to more pollinator-friendly organic methods of cultivation to reduce wildlife exposures to insecticides, herbicides and fungicides.  (Q30)
+Professor: That’s right! Actually, the focus of beekeeping needs to change from conventional honey production to crop pollination.
+SECTION 4
+Audio Player
+
+
+
+
+
+
+00:00
+
+Use Up/Down Arrow keys to increase or decrease volume.
+
+
+SECTION 4
+
+
+The London Eye
+Today I want to focus on some of the major sights that attract tourists to cities, and I am going to begin with the London Eye. The London Eye is London’s newest major tourist attraction. It is a huge wheel designed to celebrate the Millennium year 2000, so it’s also known as the Millennium (Q31) Wheel. It stands at Millennium Pier, on the South Bank of the River Thames (Q32), close to the south end of Westminster Bridge, and within an easy walk of the Houses of Parliament and Big Ben. Though it looks like a huge Ferris wheel, the London Eye is no fairground thrill- ride, but a slow and stately way to experience London in a unique way. The London Eye is the UK’s most popular paid for visitor attraction, visited by over 3.5 million (Q33) people a year.
+The Eye was built between 1998 and 2000. It seems remarkable that a site that has so quickly become a symbol of modem London has been around for such a short time! It took fully seven years from start of the design process to create the Eye. It was intended to stand for only a few years, but it proved to be such a popular attraction that the decision was made to make the wheel a permanent feature of the London landscape. The Eye was referred by British Airways (Q34), and for several years after opening it was referred to as the British Airways Millennium Wheel. Today the London Eye is under the ownership of the London Eye Company, a subsidiary of Merlin Entertainments Group Company.
+Constructing The Merlin Entertainments London Eye was a massive challenge. It’s the tallest cantilevered observation wheel in the world, rising high above the London skyline at 135 metres (Q35). It was a piece of daring innovation and revolutionary design which combined the best of British design, architecture and engineering with an exceptional team of experts.
+So, how is that great wheel held up? How did it get there? The starting point was, of course, the ground, and while parts of the wheel itself were still being constructed in various countries, tension piles (Q36) were being driven into the ground beside the River Thames. This was the first step, and once these were securely in place, a base cap was installed over them as a kind of lock, with two giant blimps pointing up, onto which a frame was attached, like a giant letter. The wheel was supported on huge A-frame (Q37) legs, made up of 2,200 tonnes of concrete on 44 concrete piles set 33 meters deep in the earth. All this took many months and incredible effort, but meant that the spindle could be installed, around which the great wheel would turn. The spindle itself was too large to cast as a single piece so instead was produced in eight smaller sections. Now the project really was in business, and the vast rim (Q38) with spokes like an outsized bicycle wheel could be brought in. 64 spoke cables, which are similar to bicycle spokes, hold the rim tight to the central spindle.
+And the view was enhanced by the capsule design; unlike traditional ferris wheel designs that you might see at a local fairground, the passenger capsules (Q39) were not suspended under the wheel, they were set within a circular mounting ring attached to the outside surface of the wheel. What this means in practice is that travelers within the capsule have a full 360 degree panoramic view, unhindered by spokes of wheel struts. And the last thing to be built is the first thing the visitor encounters, the boarding platform (Q40) laid down underneath. The wheel does not usually stop to take on passengers; the rotation rate is slow enough to allow passengers to walk on and off the moving capsules at ground level. It is, however, stopped to allow disabled or elderly passengers time to embark and disembark safely.

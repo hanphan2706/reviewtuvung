@@ -140,7 +140,7 @@ const LISTENING_PART_IMAGES: Record<string, string> = {
     "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&q=80&auto=format&fit=crop",
   /** Space traffic management */
   "cam18-t3-p4":
-    "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1200&q=80&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1614728894007-8c428408e536?w=1200&q=80&auto=format&fit=crop",
   /** Fordham job agency */
   "cam18-t4-p1":
     "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80&auto=format&fit=crop",

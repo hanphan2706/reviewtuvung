@@ -93,9 +93,11 @@ function ProgressRow({
 export function ProfileProgressView({
   userProfile,
   isLoggedIn,
+  classroomEnrolled = false,
 }: {
   userProfile: StudyHubUserProfile | null;
   isLoggedIn: boolean;
+  classroomEnrolled?: boolean;
 }) {
   const returnTo = useProfileReturnPath();
   const now = useNowTick();
@@ -239,6 +241,19 @@ export function ProfileProgressView({
           <h2 className="border-b border-zinc-200/90 px-5 py-3 text-center font-serif text-lg font-bold text-ink">
             Tiến độ học tập
           </h2>
+
+          {classroomEnrolled ? (
+            <ProgressRow
+              label="Bài tập lớp học"
+              metric={<p className="text-sm font-medium text-ink">Homework từ giáo viên</p>}
+              trailing={
+                <Link href="/tu-hoc/ho-so/bai-tap" className={rowLinkClass}>
+                  Xem bài tập →
+                </Link>
+              }
+              className="bg-[#faf8fd]"
+            />
+          ) : null}
 
           {loading ? (
             <p className="px-5 py-8 text-center text-sm text-ink-muted">Đang tải tiến độ…</p>

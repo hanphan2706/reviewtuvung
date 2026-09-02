@@ -8,6 +8,8 @@ import {
 import { resolveListeningAudioPath } from "@/lib/listening/listening-materials-fs";
 import { isAllowedListeningAudioFile } from "@/lib/listening/listening-materials-urls";
 import { createServiceRoleSupabaseClient } from "@/lib/supabase/service-role";
+import { r2ListeningKey } from "@/lib/r2/config";
+import { streamR2ObjectResponse } from "@/lib/r2/stream-object";
 
 /** Public entrance test — audio must be reachable without login (matches `pinball-entry-part{1-4}.mp3`). */
 const PUBLIC_PINBALL_ENTRY_AUDIO_FILE = /^pinball-entry-part[1-4]\.mp3$/i;
@@ -45,6 +47,9 @@ export async function GET(request: Request) {
   }
 
   if (objectKey) {
+    const r2 = await streamR2ObjectResponse(r2ListeningKey(objectKey), "audio/mpeg", request);
+    if (r2) return r2;
+
     const remote = await streamSupabaseMp3(objectKey, request);
     if (remote) return remote;
   }
@@ -53,7 +58,7 @@ export async function GET(request: Request) {
       {
         error: "audio file not found",
         missing: true,
-        hint: "Admin: chạy SQL supabase/listening-audio-storage.sql rồi npm run listening:upload-audio.",
+        hint: "Admin: upload audio lên R2 (npm run audio:upload-r2) hoặc Supabase (npm run listening:upload-audio).",
       },
       { status: 404 },
     );

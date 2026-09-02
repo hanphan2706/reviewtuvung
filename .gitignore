@@ -81,6 +81,10 @@ data/dictionary/en-vi-stardict.json
 /listening materials/*.jpg
 !/listening materials/cam * test * part * map.jpg
 !/listening materials/cam * test * part * map.jpeg
+!/listening materials/cam * test * part * map.png
+!/listening materials/real test * part * map.jpg
+!/listening materials/real test * part * map.jpeg
+!/listening materials/real test * part * map.png
 /listening materials/_work/
 /listening materials/sync/*.whisper-words.json
 .venv-listening/

@@ -6,22 +6,42 @@ import type { ListeningQnaPart, ListeningQnaSection } from "@/lib/listening/pars
 
 const MAP_IMAGE_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp"] as const;
 
-/** `cam 19 test 1 part 2 map.jpg` — khớp file bạn đặt trong `listening materials/`. */
+/** Cam: `cam 19 test 1 part 2 map.jpg` · Real test: `real test 2 part 3 map.jpg`. */
 export const LISTENING_MAP_IMAGE_FILE_RE =
-  /^cam \d+ test \d+ part \d+ map\.(jpe?g|png|webp)$/i;
+  /^(?:cam \d+ test \d+|real test \d+) part \d+ map\.(jpe?g|png|webp)$/i;
 
 export function isAllowedListeningMapImageFile(fileName: string): boolean {
   return LISTENING_MAP_IMAGE_FILE_RE.test(fileName.trim());
 }
 
+/** Candidate base names (no extension) — try in order until a file exists. */
+export function conventionalListeningMapImageBaseNames(
+  examSlug: string,
+  test: number,
+  part: number,
+): string[] {
+  const bases: string[] = [];
+  const book = examSlug.match(/^cam(\d+)$/i);
+  if (book) {
+    bases.push(`cam ${book[1]} test ${test} part ${part} map`);
+  }
+  const real = examSlug.match(/^de-thi-that-(\d+)$/i);
+  if (real) {
+    bases.push(`real test ${real[1]} part ${part} map`);
+  }
+  // Fallback for older call sites / odd slugs.
+  bases.push(`${examSlug.replace(/-/g, " ")} test ${test} part ${part} map`);
+  return [...new Set(bases)];
+}
+
+/** @deprecated Prefer `conventionalListeningMapImageBaseNames`. */
 export function conventionalListeningMapImageBaseName(
   examSlug: string,
   test: number,
   part: number,
 ): string {
-  const book = examSlug.match(/^cam(\d+)$/i);
-  const prefix = book ? `cam ${book[1]}` : examSlug.replace(/-/g, " ");
-  return `${prefix} test ${test} part ${part} map`;
+  const [first] = conventionalListeningMapImageBaseNames(examSlug, test, part);
+  return first ?? `real test ${test} part ${part} map`;
 }
 
 export function findListeningMapImageFileName(
@@ -29,11 +49,12 @@ export function findListeningMapImageFileName(
   test: number,
   part: number,
 ): string | null {
-  const base = conventionalListeningMapImageBaseName(examSlug, test, part);
-  for (const ext of MAP_IMAGE_EXTENSIONS) {
-    const fileName = `${base}${ext}`;
-    const fullPath = path.join(process.cwd(), LISTENING_MATERIALS_ROOT, fileName);
-    if (fs.existsSync(fullPath)) return fileName;
+  for (const base of conventionalListeningMapImageBaseNames(examSlug, test, part)) {
+    for (const ext of MAP_IMAGE_EXTENSIONS) {
+      const fileName = `${base}${ext}`;
+      const fullPath = path.join(process.cwd(), LISTENING_MATERIALS_ROOT, fileName);
+      if (fs.existsSync(fullPath)) return fileName;
+    }
   }
   return null;
 }

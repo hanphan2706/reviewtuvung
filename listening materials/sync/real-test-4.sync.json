@@ -1,0 +1,866 @@
+{
+  "version": 1,
+  "partId": "real-test-4",
+  "audioFile": "real test 4.mp3",
+  "durationSeconds": 1687.337875,
+  "method": "whisper-local",
+  "preambleSeconds": 63.7,
+  "cues": [
+    {
+      "id": "cue-1",
+      "speaker": "WOMAN",
+      "text": "Hello, how may I help you?",
+      "start": 63.7,
+      "end": 78.25,
+      "preAudio": false
+    },
+    {
+      "id": "cue-2",
+      "speaker": "MAN",
+      "text": "Well, I’ve been seeing these yellow boxes in front of a lot of houses in my neighbourhood. I just wondered what they were for. I noticed your phone number on all of them, so I called. Could you tell me about your business?",
+      "start": 78.25,
+      "end": 92.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-3",
+      "speaker": "WOMAN",
+      "text": "We do do recycling , but we’re not a business. Gaea’s Guard ians is a non-profit group. We encourage recycling as a way of protecting the environment.",
+      "start": 92.53,
+      "end": 102.87,
+      "preAudio": false
+    },
+    {
+      "id": "cue-4",
+      "speaker": "MAN",
+      "text": "I don’t know. I mean it is a good idea. But I really don’t read the newspaper every day or anything.",
+      "start": 102.87,
+      "end": 110.01,
+      "preAudio": false
+    },
+    {
+      "id": "cue-5",
+      "speaker": "WOMAN",
+      "text": "And we don’t come collect newspaper every day! In fact, we only do pickups every other week. Q1",
+      "start": 110.01,
+      "end": 116.19,
+      "preAudio": false
+    },
+    {
+      "id": "cue-6",
+      "speaker": "MAN",
+      "text": "Oh, well then maybe I could help. I mean in my neighbour hood, there’s too much rubbish lying around everywhere. I’d like to help out, I guess.",
+      "start": 116.19,
+      "end": 125.37,
+      "preAudio": false
+    },
+    {
+      "id": "cue-7",
+      "speaker": "WOMAN",
+      "text": "That’s great, sir. You’re doing the right thing. OK, I need to get your contact information. What is your name, please?",
+      "start": 125.37,
+      "end": 133.21,
+      "preAudio": false
+    },
+    {
+      "id": "cue-8",
+      "speaker": "MAN",
+      "text": "Peter Wisrough ... Q2",
+      "start": 133.21,
+      "end": 134.75,
+      "preAudio": false
+    },
+    {
+      "id": "cue-9",
+      "speaker": "WOMAN",
+      "text": "Peter... how do you spell your last name? W-I-S-R-O-W?",
+      "start": 134.75,
+      "end": 140.85,
+      "preAudio": false
+    },
+    {
+      "id": "cue-10",
+      "speaker": "MAN",
+      "text": "No, actually it’s W-I-S-R-O-U-G-H.",
+      "start": 140.85,
+      "end": 146.65,
+      "preAudio": false
+    },
+    {
+      "id": "cue-11",
+      "speaker": "WOMAN",
+      "text": "Oh, I’m sorry. I’m a terrible speller.",
+      "start": 146.65,
+      "end": 149.03,
+      "preAudio": false
+    },
+    {
+      "id": "cue-12",
+      "speaker": "MAN",
+      "text": "You’re a good speller. It’s just that my family are terrible pronouncers!",
+      "start": 149.03,
+      "end": 153.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-13",
+      "speaker": "WOMAN",
+      "text": "You’re quite a card, Peter! OK, now what’s your address?",
+      "start": 153.99,
+      "end": 158.27,
+      "preAudio": false
+    },
+    {
+      "id": "cue-14",
+      "speaker": "MAN",
+      "text": "No. 168 Bridge Road Q3. That’s here in London. How about if I have any questions?",
+      "start": 158.27,
+      "end": 165.11,
+      "preAudio": false
+    },
+    {
+      "id": "cue-15",
+      "speaker": "WOMAN",
+      "text": "I'm sending you a copy of our booklet, too. The booklet has our phone number and our e-mail address, helpline@blackcat.com Q4, that’s H-EL-P-L-I-N-E at B-L-A-C-K-C-A-T dot com.",
+      "start": 165.11,
+      "end": 184.81,
+      "preAudio": false
+    },
+    {
+      "id": "cue-16",
+      "speaker": "WOMAN",
+      "text": "But I nearly forgot to ask, what’s your postcode?",
+      "start": 184.81,
+      "end": 188.91,
+      "preAudio": false
+    },
+    {
+      "id": "cue-17",
+      "speaker": "WOMAN",
+      "text": "BS97PU: Q5",
+      "start": 188.91,
+      "end": 189.59,
+      "preAudio": false
+    },
+    {
+      "id": "cue-18",
+      "speaker": "WOMAN",
+      "text": "BS97PU: PS97BU?",
+      "start": 189.59,
+      "end": 190.33,
+      "preAudio": false
+    },
+    {
+      "id": "cue-19",
+      "speaker": "WOMAN",
+      "text": "BS97PU: No. That’s B as in “boy\"-S-9-7-P as in “Peter”-U.",
+      "start": 190.33,
+      "end": 236.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-20",
+      "speaker": "WOMAN",
+      "text": "BS97PU: So, I’m guessing those yellow Q6 boxes I saw are for recycled newspapers?",
+      "start": 236.6,
+      "end": 244.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-21",
+      "speaker": "WOMAN",
+      "text": "BS97PU: Yes, that is correct, and it’s free of charge.",
+      "start": 244.86,
+      "end": 248.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-22",
+      "speaker": "WOMAN",
+      "text": "BS97PU: Wow, that’s good news! Do you recycle anything besides newspaper?",
+      "start": 248.26,
+      "end": 253.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-23",
+      "speaker": "WOMAN",
+      "text": "BS97PU: Oh yes, we recycle most everything. Glass, plastic, paper...",
+      "start": 253.7,
+      "end": 258.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-24",
+      "speaker": "WOMAN",
+      "text": "BS97PU: Oh, so I can put like glass and plastic bottles in the box?",
+      "start": 258.66,
+      "end": 263.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-25",
+      "speaker": "WOMAN",
+      "text": "BS97PU: Sorry again. Things like that you have to bring to our collec tion centre.",
+      "start": 263.74,
+      "end": 269.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-26",
+      "speaker": "WOMAN",
+      "text": "BS97PU: And where is that?",
+      "start": 269.2,
+      "end": 271.08,
+      "preAudio": false
+    },
+    {
+      "id": "cue-27",
+      "speaker": "WOMAN",
+      "text": "BS97PU: Our main centre isn’t that far from you. It’s actually right on the East Side of Central Park. Q7",
+      "start": 271.08,
+      "end": 277.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-28",
+      "speaker": "WOMAN",
+      "text": "BS97PU: That new blue building?",
+      "start": 277.88,
+      "end": 279.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-29",
+      "speaker": "WOMAN",
+      "text": "BS97PU: That’s the one!",
+      "start": 279.58,
+      "end": 280.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-30",
+      "speaker": "WOMAN",
+      "text": "BS97PU: Cool. Hey, what’s with all those different coloured boxes outside that place?",
+      "start": 280.94,
+      "end": 285.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-31",
+      "speaker": "WOMAN",
+      "text": "BS97PU: Oh, that’s for the different materials we recycle. The blue is for metal Q8, the green is for glass and plastics, and the yellow of course is for paper.",
+      "start": 285.4,
+      "end": 296.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-32",
+      "speaker": "WOMAN",
+      "text": "BS97PU: Hm, okay. I’ll try and manage to keep all that straight.",
+      "start": 296.18,
+      "end": 300.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-33",
+      "speaker": "WOMAN",
+      "text": "BS97PU: Oh, no need, they’re each labelled.",
+      "start": 300.76,
+      "end": 303.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-34",
+      "speaker": "WOMAN",
+      "text": "BS97PU: Great. So which one would I put magazines in?",
+      "start": 303.14,
+      "end": 307.32,
+      "preAudio": false
+    },
+    {
+      "id": "cue-35",
+      "speaker": "MAN",
+      "text": "Actually, they don’t go in any of the bins. Unfortunately, magazines Q9 can’t be recycled because of the material they’re made of. It’s such a waste. So would you be interested in volunteering?",
+      "start": 307.32,
+      "end": 321.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-36",
+      "speaker": "MAN",
+      "text": "Um, I’ll think about it. Could you send me some more info?",
+      "start": 321.16,
+      "end": 326.12,
+      "preAudio": false
+    },
+    {
+      "id": "cue-37",
+      "speaker": "MAN",
+      "text": "Absolutely. Along with the newspaper box, I’ll be sending you our booklet, “Savvy\" Q10, that is S-A-double V-Y. It tells you about what you can do to protect the environment in your daily life. Plus it lists things you can do as a volunteer with our group.",
+      "start": 326.12,
+      "end": 345,
+      "preAudio": false
+    },
+    {
+      "id": "cue-38",
+      "speaker": "MAN",
+      "text": "Hey, that’s cool, thanks!",
+      "start": 345,
+      "end": 347.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-39",
+      "speaker": "MAN",
+      "text": "My pleasure. Do you have any other questions or concerns?",
+      "start": 347.82,
+      "end": 351.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-40",
+      "speaker": "MAN",
+      "text": "Nope, that’s it!",
+      "start": 351.88,
+      "end": 440.16,
+      "preAudio": false
+    },
+    {
+      "id": "cue-41",
+      "speaker": "GUIDE",
+      "text": "Welcome everyone to today’s seminar on “CV and Interview Skills”.",
+      "start": 440.16,
+      "end": 445.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-42",
+      "speaker": "GUIDE",
+      "text": "Remember, your CV is probably the most important document you will ever write. It opens the door to your career! And that job inter view is probably the most important meeting you will ever attend. It's like stepping through that open door. So let’s roll up our sleeves and get down to work, shall we?",
+      "start": 445.98,
+      "end": 466.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-43",
+      "speaker": "GUIDE",
+      "text": "First of all, I cannot possibly tell you everything you need to know about writing a resume in the time we have. But let me tell you that there are dozens of great websites on the Internet Q11. These will give you all the suggestions you need. If you look at the paper I gave you, you will see a list of the dozen most popular sites.",
+      "start": 466.4,
+      "end": 487.02,
+      "preAudio": false
+    },
+    {
+      "id": "cue-44",
+      "speaker": "GUIDE",
+      "text": "I can mention a couple of important points, however. One is that your CV or resume should not be too long Q12. A page is about right. Why?",
+      "start": 487.02,
+      "end": 497.2,
+      "preAudio": false
+    },
+    {
+      "id": "cue-45",
+      "speaker": "GUIDE",
+      "text": "HR departments do not have time to read long documents. Too many people are sending too many CVs! After all, the economic crisis of 2008 is still very much alive. Everyone needs a job now.",
+      "start": 497.2,
+      "end": 512.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-46",
+      "speaker": "GUIDE",
+      "text": "No matter how short you make that resume, though, you do not want to forget to tell HR how to contact your references. References are people who will give you a recommendation for a job. That’s usually an ex-boss or a professor who knows you well. Do not use relatives! I don’t care how much your mum loves you.",
+      "start": 512.76,
+      "end": 534,
+      "preAudio": false
+    },
+    {
+      "id": "cue-47",
+      "speaker": "GUIDE",
+      "text": "Also, when you send that CV, be sure to include a typed Q13 cover letter.",
+      "start": 534,
+      "end": 539.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-48",
+      "speaker": "GUIDE",
+      "text": "A cover letter is a letter where you, basically, are asking for a job. It's like introducing yourself. Make it brief. The real information about you is on that CV of yours. And, please make sure the letter is typed!",
+      "start": 539.1,
+      "end": 552.7,
+      "preAudio": false
+    },
+    {
+      "id": "cue-49",
+      "speaker": "GUIDE",
+      "text": "It doesn’t matter if your handwriting is beautiful or not. Companies only read typed letters.",
+      "start": 552.7,
+      "end": 558.1,
+      "preAudio": false
+    },
+    {
+      "id": "cue-50",
+      "speaker": "GUIDE",
+      "text": "Another point about CVs is you should try to have an attractive layout Q14. Maybe use different typefonts or colours to highlight informa tion. Some people include a photo. You can find dozens of examples on the Internet. Whatever layout you decide to use, however, avoid all spelling and grammar errors Q15. I used to be an HR manager. If I saw a mistake, that CV went into the garbage.",
+      "start": 558.1,
+      "end": 584.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-51",
+      "speaker": "GUIDE",
+      "text": "Something you write in a CV is a description of your skills and experiences Q16 in an interesting way. Mention training, too. I mean these are what get you hired! Do not just say, “I have lots of experience.” or “I have many skills.” Tell that boss what you did, for what company, and when. Better, tell him how well you did it! Don’t just say, “I sold houses.” Say, “I sold two million pounds worth of houses in my first year.” That is, say something to make the person reading excited and curious.",
+      "start": 584.22,
+      "end": 622.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-52",
+      "speaker": "GUIDE",
+      "text": "Finally, speaking of CVs, it’s sad. But some people actually forget to provide a contact number Q17. That’s pretty silly. You wrote a great CV, you have HR dying to meet you... and they don’t know how. You for got your phone number! Oh sure, if you apply online, they have your e-mail address. But you just showed them you’re forgetful. Why are they going to want to talk to you after that?",
+      "start": 622.74,
+      "end": 682.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-53",
+      "speaker": "GUIDE",
+      "text": "Alright, moving on to the actual interview, I’ll go over what you need to know by the end of it, and what you can discuss and negotiate on later once it looks like you’ll be offered the job. First, there’s working hours. It’s not that necessary to hammer out the hours off the bat, especially since it’s easy to come off as lazy when the first thing you bring up is how much you’re going to have to work. You can also find out more about possible promotions later on. It is important,",
+      "start": 682.94,
+      "end": 713.4,
+      "preAudio": false
+    },
+    {
+      "id": "cue-54",
+      "speaker": "GUIDE",
+      "text": "however, to get a feel for how much you’ll be paid. You should make sure the salary range is commensurate with what you’re worth, and if you’re not, you can move on to better opportunities Q18. Being sure you’re going to make what you want to live on is much more important than issues like your pension - you’re all so young that your pension is not going to matter for quite a long time.",
+      "start": 713.4,
+      "end": 734.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-55",
+      "speaker": "GUIDE",
+      "text": "You should find out about what skills you must know for the job and what they’ll teach you. In addition, if the company will provide training, you should find out how long the training period is and whether it is paid Q19. Beware of any jobs that want you to train for a long time without appropriate compensation. Speaking of compensation, find out about holidays as well Q20. Do you get paid vacation time? Are you allowed to take personal days? Do you have to work on national holidays?",
+      "start": 734.76,
+      "end": 763.72,
+      "preAudio": false
+    },
+    {
+      "id": "cue-56",
+      "speaker": "GUIDE",
+      "text": "Once you work out these main issues, you can move on later to details like the location and expected attire and whatnot.",
+      "start": 763.72,
+      "end": 771.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-57",
+      "speaker": "GUIDE",
+      "text": "Wow, that’s a lot of information! Let’s take a break so you can think everything over and ask any questions you may have. Don’t hesitate to come and see me if you need any clarification on all this stuff!",
+      "start": 771.62,
+      "end": 785.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-58",
+      "speaker": "FRANK",
+      "text": "Hello, are you Dr Lindsey? The Returning Students Advisor?",
+      "start": 785.86,
+      "end": 788.92,
+      "preAudio": false
+    },
+    {
+      "id": "cue-59",
+      "speaker": "DR LINDSEY",
+      "text": "Yes, that’s right. Are you Frank? Your appointment wasn’t till 2:00, but that's OK. Please come in and have a seat.",
+      "start": 788.92,
+      "end": 835.83,
+      "preAudio": false
+    },
+    {
+      "id": "cue-60",
+      "speaker": "FRANK",
+      "text": "Thanks, I like to arrive early whenever I have anything to do.",
+      "start": 835.83,
+      "end": 840.61,
+      "preAudio": false
+    },
+    {
+      "id": "cue-61",
+      "speaker": "DR LINDSEY",
+      "text": "That’s certainly a praiseworthy habit. Let me see, it looks like you’ve taken a long break from school, and I understand you wanted to have a chat about what you should study if and when you return for further classes. Q21",
+      "start": 840.61,
+      "end": 895.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-62",
+      "speaker": "FRANK",
+      "text": "It’s such a big challenge. I don’t know if I’m crazy for doing this or not!",
+      "start": 895.94,
+      "end": 902.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-63",
+      "speaker": "FRANK",
+      "text": "DR LINDSEY Believe it or not, I know exactly what you mean. Before I began working here at the university, I taught primary school for nearly ten years. It takes a lot of courage to go back to school!",
+      "start": 902.94,
+      "end": 916.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-64",
+      "speaker": "FRANK",
+      "text": "I feel more shy and scared than the primary students I teach! In the schools I taught, I found today’s young sters are very sure of themselves Q22. In terms of intelli gence, I have a lot to teach them. And the maturity level of much of my class leaves something to be desired. But in terms of confidence, wow! A lot more confident than I am now, that’s for sure!",
+      "start": 916.66,
+      "end": 941.86,
+      "preAudio": false
+    },
+    {
+      "id": "cue-65",
+      "speaker": "DR LINDSEY",
+      "text": "Stop fretting. “A brave man is a coward who refuses to run.” Let’s talk about your strong points. You seem an intelligent man. What is it you would like to study?",
+      "start": 941.86,
+      "end": 957.24,
+      "preAudio": false
+    },
+    {
+      "id": "cue-66",
+      "speaker": "DR LINDSEY",
+      "text": "FRANK You see, I’ve been teaching children for a few years, but I think I’d be happier teaching adults. Q23",
+      "start": 957.24,
+      "end": 964.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-67",
+      "speaker": "DR LINDSEY",
+      "text": "I think teaching students in middle school is much more satisfying because they end up being much more grateful for your work. If I may ask, what got you inter ested in teaching adults?",
+      "start": 964.04,
+      "end": 975.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-68",
+      "speaker": "DR LINDSEY",
+      "text": "A lot of things, I guess. I met my future wife back in my first year of college. She always complains that I was more interesting then. She says that now I talk like I’m seven years old! That’s probably from being with chil dren all day.",
+      "start": 975.6,
+      "end": 989.6,
+      "preAudio": false
+    },
+    {
+      "id": "cue-69",
+      "speaker": "DR LINDSEY",
+      "text": "Ha ha ha! Again I know just what you mean. My husband used to say the same thing about me when I taught kindergarten. Anything else?",
+      "start": 989.6,
+      "end": 996.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-70",
+      "speaker": "DR LINDSEY",
+      "text": "Well, yes. Fairly often now I run into former students and we talk Q24. Some of them are getting close to being grown up. I guess I think more and more about how people develop over time. So, I'm interested in the re sults of education, you know, the final stages.",
+      "start": 996.94,
+      "end": 1011.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-71",
+      "speaker": "DR LINDSEY",
+      "text": "I see. Well, coming back to the university can be both difficult and very rewarding. There are some problems unique to returning students, you know, older stu dents like yourself. What do you think is your greatest weakness?",
+      "start": 1011.94,
+      "end": 1026.56,
+      "preAudio": false
+    },
+    {
+      "id": "cue-72",
+      "speaker": "DR LINDSEY",
+      "text": "Well, I actually think my confidence is getting better.",
+      "start": 1026.56,
+      "end": 1029.94,
+      "preAudio": false
+    },
+    {
+      "id": "cue-73",
+      "speaker": "DR LINDSEY",
+      "text": "I’m definitely overcoming my introversion and starting to be much more comfortable in front of a class. To tell the truth, I’m afraid I’m rather behind the times about many things Q25. It’s more difficult for me to chase after the popular things youngsters are fond of - such as Iphone, Twitter, if you name it!",
+      "start": 1029.94,
+      "end": 1047.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-74",
+      "speaker": "DR LINDSEY",
+      "text": "I think I understand.",
+      "start": 1047.88,
+      "end": 1097.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-75",
+      "speaker": "DR LINDSEY",
+      "text": "How old are you, 35? People at your age still go back to school for further education. I was a bit the same way. Q26",
+      "start": 1097.84,
+      "end": 1106.34,
+      "preAudio": false
+    },
+    {
+      "id": "cue-76",
+      "speaker": "DR LINDSEY",
+      "text": "I mean I didn’t study at the university till after I had a family: a husband and one child. My point of view was a lot different from your average eighteen-year-old girl’s, I can tell you!",
+      "start": 1106.34,
+      "end": 1118.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-77",
+      "speaker": "DR LINDSEY",
+      "text": "Gee, that sounds pretty rough. A family and college?",
+      "start": 1118.58,
+      "end": 1121.64,
+      "preAudio": false
+    },
+    {
+      "id": "cue-78",
+      "speaker": "DR LINDSEY",
+      "text": "Clearly you weren’t unsuccessful though!",
+      "start": 1121.64,
+      "end": 1123.26,
+      "preAudio": false
+    },
+    {
+      "id": "cue-79",
+      "speaker": "DR LINDSEY",
+      "text": "It was, Frank. It truly was. My first term at school was extremely stressful Q27. But excuse me! You’re not here to listen to my life story. We’re talking about your plans.",
+      "start": 1123.26,
+      "end": 1133.78,
+      "preAudio": false
+    },
+    {
+      "id": "cue-80",
+      "speaker": "DR LINDSEY",
+      "text": "Is there anything unique I should know about you or your past experience or plans?",
+      "start": 1133.78,
+      "end": 1138.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-81",
+      "speaker": "DR LINDSEY",
+      "text": "I’m afraid not. There is nothing interesting about my career or plans. It’s really not too impressive. Q28",
+      "start": 1138.88,
+      "end": 1145,
+      "preAudio": false
+    },
+    {
+      "id": "cue-82",
+      "speaker": "DR LINDSEY",
+      "text": "Now, I forbid you to talk like that. This is your one life, and if you’re not interested, why bother living it? Don’t be so humble, Frank.",
+      "start": 1145,
+      "end": 1154.18,
+      "preAudio": false
+    },
+    {
+      "id": "cue-83",
+      "speaker": "DR LINDSEY",
+      "text": "OK, OK. My wife says I’m a wimp.",
+      "start": 1154.18,
+      "end": 1156.62,
+      "preAudio": false
+    },
+    {
+      "id": "cue-84",
+      "speaker": "DR LINDSEY",
+      "text": "Let's talk about your dreams a bit. You want to teach adults, you said. What would you like to teach them?",
+      "start": 1156.62,
+      "end": 1163.76,
+      "preAudio": false
+    },
+    {
+      "id": "cue-85",
+      "speaker": "DR LINDSEY",
+      "text": "Well, when I first came to college, I really liked Lan guages and Literature. A lot of people have told me that for practical reasons, it would be more rewarding to choose Business Management as my major, but I made up my mind to study Liberal Arts once I got the idea of going back to school. Q29",
+      "start": 1163.76,
+      "end": 1178.14,
+      "preAudio": false
+    },
+    {
+      "id": "cue-86",
+      "speaker": "DR LINDSEY",
+      "text": "I must say it’s refreshing to meet someone who knows there’s more to an education than computers and finance. Let’s have a look at the university course catalogue...",
+      "start": 1178.14,
+      "end": 1187.66,
+      "preAudio": false
+    },
+    {
+      "id": "cue-87",
+      "speaker": "DR LINDSEY",
+      "text": "Excuse me, Dr Lindsey. Before we do that, could I maybe ask you some questions about changes in uni versity life? I think I need to discuss that so I know what to expect.",
+      "start": 1187.66,
+      "end": 1199.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-88",
+      "speaker": "DR LINDSEY",
+      "text": "Of course. I’m here to help you. The biggest thing to get used to is the change in technology. Professors pres ent things on huge screens, many of which are inter active computerised whiteboards. You can write on them still and use them like a touch screen. They’re really handy! No more sloppy scribbled notes on the projector. Let's see, I doubt you’ll be living in student housing, so I won’t go into all the improvements there. Q30",
+      "start": 1199.22,
+      "end": 1224.74,
+      "preAudio": false
+    },
+    {
+      "id": "cue-89",
+      "speaker": "DR LINDSEY",
+      "text": "Another major change that you’ll enjoy is the plethora of resources available for students. As a student, you have 24-hour access to the gym, and library privileges that include the use of school computers to scan, copy, and print, and of course the Media Library, which con tains movies from all genres and most of the movies listed on AFI’s Top 100 Movies of All Time. The dining facilities are also not what they used to be.",
+      "start": 1224.74,
+      "end": 1252.04,
+      "preAudio": false
+    },
+    {
+      "id": "cue-90",
+      "speaker": "DR LINDSEY",
+      "text": "They offer choices for all diets, and you can expect a hot meal any time of day.",
+      "start": 1252.04,
+      "end": 1257.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-91",
+      "speaker": "FRANK",
+      "text": "Wow, things really have changed! I’ll be sure to utilise all those great facilities in my time here. Thanks for all your help, Dr Lindsey. I think that’s all the questions I have for now.",
+      "start": 1257.82,
+      "end": 1311.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-92",
+      "speaker": "LECTURER",
+      "text": "OK and welcome back. During the short break we just took, several of you approached me with questions. So, before going on with the orientation talk, I’d like to address those queries. As I’ve found, if one person asks a question, probably a dozen others are wondering about the same thing!",
+      "start": 1311.44,
+      "end": 1365.53,
+      "preAudio": false
+    },
+    {
+      "id": "cue-93",
+      "speaker": "LECTURER",
+      "text": "The first question is whether Wassamatta U. employs modules technology Q31 as an instruction method. The answer is yes, we do. At least that’s what the university catalogue says. If some of you don’t under stand what “modules technology” is, don’t worry. I googled the word but couldn’t find it. Apparently, though, it’s a method of broadband, wireless access. At least that’s what an American company’s website told me. But again, don’t worry. If you need to know something more, your professor can tell you.",
+      "start": 1365.53,
+      "end": 1401.43,
+      "preAudio": false
+    },
+    {
+      "id": "cue-94",
+      "speaker": "LECTURER",
+      "text": "Another question someone asked me was what tomorrow’s work shop on “Research Methods and Skills” was about. Well, research skills include any method you can imagine for finding and presenting any information you need. That’s not just schoolwork, either. Writing English - the native language for most of you - and finding a job Q32 are also research skills. And, yes, those will be addressed in tomorrow’s workshop.",
+      "start": 1401.43,
+      "end": 1427.99,
+      "preAudio": false
+    },
+    {
+      "id": "cue-95",
+      "speaker": "LECTURER",
+      "text": "As you know, Wassamatta U. is one of this country's premier uni versities for the study of “the dismal science\", economics. Some of you, it seems, want to get a jump on their classmates. During the break, half a dozen of you came up and asked me where to find eco nomics tomes. I know it’s odd, but this school’s library holdings are divided up between two libraries. Economics books are in the old library Q33. If you look out of the window behind me, you can see it. It’s the red brick building.",
+      "start": 1427.99,
+      "end": 1459.97,
+      "preAudio": false
+    },
+    {
+      "id": "cue-96",
+      "speaker": "LECTURER",
+      "text": "Oh, before I forget, you economics types also need a lot of maths, am I right? Well, those Maths books are neither in the old library nor in the new one. They can be found in the Maths Department Q34 Building. Why am I telling you this? Doesn’t “the Invisible Hand” guide econo mists? Maybe it’s good you asked: in 2008, that Hand shoved most of the world economy off a cliff, didn’t it?",
+      "start": 1459.97,
+      "end": 1488.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-97",
+      "speaker": "LECTURER",
+      "text": "Now I realise that most of you couldn’t bring a computer printer or a photocopier from home. So I’m sure you’re already wondering where you can copy things like term papers, Internet articles, and things like that. I have some good news and some bad news. The good news is that there are a number of places you can make copies. These include both libraries and the Student Union Building.",
+      "start": 1488.8,
+      "end": 1511.8,
+      "preAudio": false
+    },
+    {
+      "id": "cue-98",
+      "speaker": "LECTURER",
+      "text": "Now the bad news. I am sorry to say, most classroom buildings and academic departments do not have copiers students can use. So most of the large buildings you see around campus do not have copiers for students Q35. The copiers there are reserved for professors and office staff. Oh, yes! I nearly forget to tell you. If you need to have printing done, all the copiers available to students are laser printers Q36. Plus, for your convenience, you can pay using prepaid cards. You can get those in the Student Union Building.",
+      "start": 1511.8,
+      "end": 1544.84,
+      "preAudio": false
+    },
+    {
+      "id": "cue-99",
+      "speaker": "LECTURER",
+      "text": "That just covers the questions put to me. If you have more, please see me during the next break at 2:15. Right now, though, I’d like to start to give you a rundown on the various facilities here on campus. That way, you won’t get lost so easily in the weeks to come.",
+      "start": 1544.84,
+      "end": 1560.98,
+      "preAudio": false
+    },
+    {
+      "id": "cue-100",
+      "speaker": "LECTURER",
+      "text": "I have been told that this year’s incoming class features a large num ber of married students and parents. So, you must be wondering where to put the baby while you’re in class. OK, right now, we are in the Student Union Building, right? Remember the big doors in front where you all came in? If you go out of the building, you can see the Nursery is just on the other side of this building Q37. It’s only about twenty metres away! Convenient, eh?",
+      "start": 1560.98,
+      "end": 1585.88,
+      "preAudio": false
+    },
+    {
+      "id": "cue-101",
+      "speaker": "LECTURER",
+      "text": "Next, we’re all from different places around the country. Some of you are from other countries. That means we’re pretty likely to get sick during the first months of school as we expose each other to many new viruses. So, where’s the doctor? Of course, you need to find the Medical Services Centre which is on the right as you leave the build ing Q38. Remember, that’s the second building on the right.",
+      "start": 1585.88,
+      "end": 1609.22,
+      "preAudio": false
+    },
+    {
+      "id": "cue-102",
+      "speaker": "LECTURER",
+      "text": "And if you look out of that window, you can see a lot of antennae and satellite dishes on the roof. So that's what we call the Media Centre. Q39",
+      "start": 1609.22,
+      "end": 1619.42,
+      "preAudio": false
+    },
+    {
+      "id": "cue-103",
+      "speaker": "LECTURER",
+      "text": "Yeah, I know, I think it’s confusing, too. The Media Centre is next to the Medical Centre. The chairwoman of the Journalism School on the first floor doesn’t like it when people who wander in there mistake her for a nurse!",
+      "start": 1619.42,
+      "end": 1633.36,
+      "preAudio": false
+    },
+    {
+      "id": "cue-104",
+      "speaker": "LECTURER",
+      "text": "Chances are you’ll have at least one Maths class while you’re here.",
+      "start": 1633.36,
+      "end": 1637.44,
+      "preAudio": false
+    },
+    {
+      "id": "cue-105",
+      "speaker": "LECTURER",
+      "text": "That red building there just outside to the left is the Maths Depart ment Building. I know, it looks about as old as the subject as Maths, but I assure you that the inside is equipped with state-of-the-art classroom equipment including interactive chalkboards and surround sound in every room.",
+      "start": 1637.44,
+      "end": 1650.82,
+      "preAudio": false
+    },
+    {
+      "id": "cue-106",
+      "speaker": "LECTURER",
+      "text": "Oh, can you see the back building there? Yes, behind the Media Centre. Quite new, isn't it? That’s the new library, just decorated. Q40",
+      "start": 1650.82,
+      "end": 1659.58,
+      "preAudio": false
+    },
+    {
+      "id": "cue-107",
+      "speaker": "LECTURER",
+      "text": "They’re back-to-back, you might say. If you look just to the left of it at the lower, older-looking building, you’ll find the old library. It’s nice and quiet - perfect for those marathon study sessions during exam week. Since the weather is so nice, why don't we stop looking at our maps but go for a walk around the campus?",
+      "start": 1659.58,
+      "end": 1687.338,
+      "preAudio": false
+    }
+  ]
+}

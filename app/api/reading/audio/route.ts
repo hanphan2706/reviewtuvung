@@ -8,6 +8,8 @@ import {
   readingAudioObjectKey,
 } from "@/lib/reading/reading-audio-storage";
 import { createServiceRoleSupabaseClient } from "@/lib/supabase/service-role";
+import { r2ReadingKey } from "@/lib/r2/config";
+import { streamR2ObjectResponse } from "@/lib/r2/stream-object";
 
 async function streamLocalDevMp3(objectKey: string): Promise<NextResponse | null> {
   if (process.env.NODE_ENV === "production") return null;
@@ -41,6 +43,9 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: "unknown article" }, { status: 400 });
   }
 
+  const remoteR2 = await streamR2ObjectResponse(r2ReadingKey(objectKey), "audio/mpeg", request);
+  if (remoteR2) return remoteR2;
+
   const remote = await streamSupabaseMp3(objectKey);
   if (remote) return remote;
 
@@ -50,7 +55,7 @@ export async function GET(request: Request) {
   return NextResponse.json(
     {
       error:
-        "Chưa có audio trên máy chủ. Admin: chạy SQL supabase/reading-audio-storage.sql rồi npm run reading:upload-audio.",
+        "Chưa có audio trên máy chủ. Admin: npm run audio:upload-r2 hoặc npm run reading:upload-audio.",
     },
     { status: 503 },
   );

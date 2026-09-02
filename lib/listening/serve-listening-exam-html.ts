@@ -7,6 +7,7 @@ import {
   buildListeningFullTestExamPayload,
   buildListeningFullTestTrackHtml,
   buildPinballEntryListeningExamPayload,
+  buildRealExamListeningExamPayload,
   type ListeningExamPayload,
   type ListeningFullTestExamPayload,
   type ListeningPartQuestionRange,
@@ -17,6 +18,7 @@ import {
   LISTENING_IELTS_EXAM_HREF,
   type ListeningIeltsTestId,
 } from "@/lib/listening/ielts-test-catalog";
+import { getListeningRealExam, isListeningRealExamSlug, type RealExamSlug } from "@/lib/exam/real-exam-catalog";
 import { loadListeningQnaPart } from "@/lib/listening/generate-ielts-listening-flow-content";
 import { getListeningPartQnaRef } from "@/lib/listening/listening-qna-catalog";
 import { listeningLessonHrefBySlug } from "@/lib/listening/listening-hub-nav";
@@ -252,6 +254,47 @@ export async function buildPinballEntryListeningExamHtml(): Promise<string> {
     answerKey: payload.answerKey,
     hasAnswerKey: payload.hasAnswerKey,
     disableDeck: true,
+  };
+
+  return injectExamDictionaryPopover(
+    injectExamCopyFriction(injectExamBootScript(withContent, slimBoot), "listening"),
+    "listening",
+  );
+}
+
+/** Đề thi thật IELTS 2+ — generate từ QnA + 1 file audio full test. */
+export async function buildRealExamListeningExamHtml(slug: RealExamSlug): Promise<string> {
+  if (!isListeningRealExamSlug(slug)) {
+    throw new Error("not a listening real exam");
+  }
+  const exam = getListeningRealExam(slug);
+  if (!exam) throw new Error("exam not found");
+
+  const payload = buildRealExamListeningExamPayload(slug, {
+    back: LISTENING_IELTS_EXAM_HREF,
+    pilotLabel: exam.title,
+  });
+  if (!payload) {
+    throw new Error("no exam questions");
+  }
+
+  const templatePath = path.join(process.cwd(), "public/listening-part-exam.html");
+  const template = fs.readFileSync(templatePath, "utf8");
+  const withContent = injectFullTestServerRenderedExam(template, payload);
+
+  const slimBoot = {
+    questionNums: payload.questionNums,
+    back: payload.back,
+    title: payload.title,
+    pilotLabel: payload.pilotLabel,
+    audioUrls: payload.audioUrls,
+    hasTranscript: payload.hasTranscript,
+    skipLogin: true,
+    ssr: true,
+    isFullTest: true,
+    partQuestionRanges: payload.partQuestionRanges,
+    answerKey: payload.answerKey,
+    hasAnswerKey: payload.hasAnswerKey,
   };
 
   return injectExamDictionaryPopover(

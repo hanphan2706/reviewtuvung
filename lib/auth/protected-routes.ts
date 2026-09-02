@@ -46,8 +46,20 @@ export function isProtectedReadingContentPath(pathname: string): boolean {
   return true;
 }
 
+/** Admin LMS — chỉ truy cập trực tiếp bằng URL, cần đăng nhập. */
+export function isAdminAppPath(pathname: string): boolean {
+  return pathname === "/admin" || pathname.startsWith("/admin/");
+}
+
+/** Bài tập lớp học — học viên đã duyệt, cần đăng nhập. */
+export function isClassroomHomeworkPath(pathname: string): boolean {
+  return pathname === "/tu-hoc/ho-so/bai-tap" || pathname.startsWith("/tu-hoc/ho-so/bai-tap/");
+}
+
 /** Route học tập — cần đăng nhập (middleware redirect). */
 export function isProtectedAppPath(pathname: string): boolean {
+  if (isAdminAppPath(pathname)) return true;
+  if (isClassroomHomeworkPath(pathname)) return true;
   if (pathname.startsWith("/deck/")) return true;
   if (pathname === "/review") return true;
   if (pathname.startsWith("/tu-hoc/tu-vung")) return true;
@@ -107,6 +119,8 @@ export function isPublicListeningAudioApi(pathname: string, searchParams: URLSea
 
 /** API chỉ dùng khi đã đăng nhập (middleware trả 401). */
 export function isProtectedApiPath(pathname: string): boolean {
+  if (pathname.startsWith("/api/admin/")) return true;
+  if (pathname.startsWith("/api/classroom/")) return true;
   if (pathname.startsWith("/api/reading/")) return true;
   if (pathname.startsWith("/api/listening/")) return true;
   if (pathname.startsWith("/api/writing/")) return true;

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { LogOut, Sparkles, User } from "lucide-react";
 import { AuthButton } from "@/components/auth-button";
 import { ProfilePageLink } from "@/components/profile/profile-page-link";
@@ -39,12 +40,13 @@ export function StudyHubAccountMenuSections({
         <p className="mt-3 text-sm leading-relaxed text-[#47464b]">
           Mở khóa thư viện đầy đủ và luyện tập cá nhân hoá khi sẵn sàng.
         </p>
-        <button
-          type="button"
-          className="mt-4 w-full rounded-lg bg-[#000001] px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition hover:bg-black/90"
+        <Link
+          href="/nang-cap"
+          onClick={onNavigate}
+          className="mt-4 flex w-full items-center justify-center rounded-lg bg-[#000001] px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition hover:bg-black/90"
         >
           Nâng cấp ngay
-        </button>
+        </Link>
       </section>
 
       <nav className={`${compact ? "mt-4" : "mt-6"} space-y-1`} aria-label="Tài khoản">

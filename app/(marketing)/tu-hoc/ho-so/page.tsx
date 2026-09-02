@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { ProfileProgressView } from "@/components/profile/profile-progress-view";
 import { SrsSyncProvider } from "@/components/srs-sync-provider";
 import { LANDING } from "@/lib/landing-content";
+import { isClassroomMember } from "@/lib/classroom/repository";
 import { studyHubUserProfileFromAuthUser } from "@/lib/auth/user-profile";
-import { createServerSupabaseClient, getCurrentUser } from "@/lib/supabase/server";
+import { getCurrentUser } from "@/lib/supabase/server";
 
 export const dynamic = "force-dynamic";
 
@@ -13,11 +14,16 @@ export const metadata: Metadata = {
 };
 
 export default async function HoSoPage() {
-  const supabase = await createServerSupabaseClient();
   const user = await getCurrentUser();
   const profile = studyHubUserProfileFromAuthUser(user);
+  const classroomEnrolled =
+    user?.email ? await isClassroomMember(user.email, user.id).catch(() => false) : false;
   const view = (
-    <ProfileProgressView userProfile={profile} isLoggedIn={Boolean(user)} />
+    <ProfileProgressView
+      userProfile={profile}
+      isLoggedIn={Boolean(user)}
+      classroomEnrolled={classroomEnrolled}
+    />
   );
 
   if (user) {

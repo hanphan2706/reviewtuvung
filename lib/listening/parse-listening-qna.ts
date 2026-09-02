@@ -14,9 +14,23 @@ const IMAGE_LINE_RE = /^IMAGE\s*\|\s*(.+)\s*$/i;
 const ANSWERS_HEADER_RE = /^Answers?:\s*$|^Answer key:\s*$/im;
 /** Allow `11&12. A, C` (period after pair) as well as spaced Cam 15 keys. */
 const PAIRED_ANSWER_RE = /^(\d+)\s*&\s*(\d+)\.?\s+(.+)$/i;
-/** Form / table / flowchart completion blocks (not only "notes"). */
-/** Singular `note` appears in older scrapes (Cam 12 Test 4). */
-const COMPLETE_BELOW_RE = /Complete the (?:notes?|form|table|flow[\s-]?chart) below/i;
+/** Real-test scrape: `18-20 C, E, F` (choose THREE any order). */
+const RANGE_ANSWER_RE = /^(\d+)\s*[-–]\s*(\d+)\.?\s+(.+)$/;
+/**
+ * Gap-fill blocks: form / notes / table / flowchart / sentences / summary.
+ * Real-test scrapes often use "Complete the sentences below".
+ * Singular `note` appears in older scrapes (Cam 12 Test 4).
+ */
+const COMPLETE_BELOW_RE =
+  /Complete the (?:notes?|form|table|sentences?|summar(?:y|ies)|flow[\s-]?chart) below/i;
+/** Short-answer list: `7 When must…` with no inline blank marker. */
+const ANSWER_QUESTIONS_BELOW_RE = /Answer the questions below/i;
+/** Gap-fill without "Complete the … below" — common in dirty scrapes (Q37–40 style). */
+const WRITE_WORD_LIMIT_RE = /^Write\s+(?:ONE WORD|NO MORE THAN)\b/i;
+const LABEL_MAP_PLAN_RE = /Label the (?:map|plan|diagram) below/i;
+const MATCH_ON_MAP_RE =
+  /(?:match the places|label the (?:map|plan|diagram)|listen to the directions and match)/i;
+const CHOOSE_N_LETTERS_RE = /Choose\s+(TWO|THREE|FOUR|FIVE|SIX|\d+)\s+letters/i;
 const CHOOSE_FROM_BOX_RE = /Choose\s+(?:TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|\d+)\s+answers from the box/i;
 
 export type ListeningQnaMcqQuestion = {
@@ -37,7 +51,8 @@ export type ListeningQnaMapSection = {
 
 export type ListeningQnaChooseTwoSection = {
   kind: "choose-two";
-  questionNumbers: [number, number];
+  /** TWO / THREE / … question numbers sharing one option bank (any-order letters). */
+  questionNumbers: number[];
   instructionLines: string[];
   prompt: string;
   options: { letter: string; text: string }[];
@@ -111,6 +126,18 @@ function parseAnswerKey(lines: readonly string[]): Record<string, string> {
       answers[`${a}&${b}`] = normalizeAnswerValue(value ?? "");
       continue;
     }
+    const ranged = line.match(RANGE_ANSWER_RE);
+    if (ranged) {
+      const start = Number.parseInt(ranged[1] ?? "", 10);
+      const end = Number.parseInt(ranged[2] ?? "", 10);
+      const value = normalizeAnswerValue(ranged[3] ?? "");
+      if (Number.isFinite(start) && Number.isFinite(end) && end >= start && end - start <= 8) {
+        const nums: number[] = [];
+        for (let n = start; n <= end; n += 1) nums.push(n);
+        answers[nums.join("&")] = value;
+      }
+      continue;
+    }
     const m = line.match(/^(\d+)\.?\s+(.+)$/);
     if (!m) continue;
     answers[m[1]!] = normalizeAnswerValue(m[2] ?? "");
@@ -178,10 +205,8 @@ function partAnswerSlice(
 
   for (const [key, value] of Object.entries(globalAnswers)) {
     if (key.includes("&")) {
-      const [aRaw, bRaw] = key.split("&");
-      const a = Number.parseInt(aRaw ?? "", 10);
-      const b = Number.parseInt(bRaw ?? "", 10);
-      if (a >= partStart && b <= partEnd) {
+      const nums = key.split("&").map((raw) => Number.parseInt(raw, 10));
+      if (nums.length > 0 && nums.every((n) => Number.isFinite(n) && n >= partStart && n <= partEnd)) {
         partAnswers[key] = value;
       }
       continue;
@@ -203,6 +228,23 @@ function peekLines(lines: string[], start: number, count: number): string[] {
   return out;
 }
 
+/**
+ * `7 When must Simon wear his glasses?` → ensure a blank marker so gap-fill renders.
+ * Leaves lines that already contain `7……` / `7...............` unchanged.
+ */
+function ensureShortAnswerBlank(line: string): string {
+  const trimmed = normalizeLine(line);
+  if (!trimmed) return line;
+  BLANK_RE.lastIndex = 0;
+  if (BLANK_RE.test(trimmed)) return line;
+  const m = trimmed.match(/^(\d{1,2})\s+(.+)$/);
+  if (!m) return line;
+  const num = Number.parseInt(m[1]!, 10);
+  if (num < 1 || num > 40) return line;
+  if (MCQ_OPTION_RE.test(trimmed)) return line;
+  return `${num} ………… ${m[2]!.trim()}`;
+}
+
 function parseNoteCompletionBlock(
   rawLines: string[],
   startIndex: number,
@@ -211,6 +253,7 @@ function parseNoteCompletionBlock(
   const bodyLines: string[] = [];
   let i = startIndex;
   let sawComplete = false;
+  let shortAnswerMode = false;
 
   while (i < rawLines.length) {
     const line = normalizeLine(rawLines[i] ?? "");
@@ -224,9 +267,10 @@ function parseNoteCompletionBlock(
       i += 1;
       continue;
     }
-    if (COMPLETE_BELOW_RE.test(line)) {
+    if (COMPLETE_BELOW_RE.test(line) || ANSWER_QUESTIONS_BELOW_RE.test(line) || WRITE_WORD_LIMIT_RE.test(line)) {
       instructionLines.push(line);
       sawComplete = true;
+      if (ANSWER_QUESTIONS_BELOW_RE.test(line)) shortAnswerMode = true;
       i += 1;
       continue;
     }
@@ -237,7 +281,7 @@ function parseNoteCompletionBlock(
       continue;
     }
     if (QUESTIONS_RANGE_RE.test(line) || SINGLE_QUESTION_RE.test(line)) break;
-    bodyLines.push(rawLines[i] ?? "");
+    bodyLines.push(shortAnswerMode ? ensureShortAnswerBlank(rawLines[i] ?? "") : (rawLines[i] ?? ""));
     i += 1;
   }
 
@@ -335,7 +379,7 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
       continue;
     }
 
-    if (COMPLETE_BELOW_RE.test(line)) {
+    if (COMPLETE_BELOW_RE.test(line) || ANSWER_QUESTIONS_BELOW_RE.test(line) || WRITE_WORD_LIMIT_RE.test(line)) {
       const { section, nextIndex } = parseNoteCompletionBlock(rawLines, i);
       sections.push(section);
       i = nextIndex;
@@ -346,7 +390,7 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
     const singleMatch = line.match(SINGLE_QUESTION_RE);
     if (rangeMatch || singleMatch) {
       const peek = peekLines(rawLines, i + 1, 4).join(" ");
-      if (COMPLETE_BELOW_RE.test(peek)) {
+      if (COMPLETE_BELOW_RE.test(peek) || ANSWER_QUESTIONS_BELOW_RE.test(peek) || WRITE_WORD_LIMIT_RE.test(peek)) {
         const { section, nextIndex } = parseNoteCompletionBlock(rawLines, i);
         sections.push(section);
         i = nextIndex;
@@ -364,7 +408,8 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
         if (MCQ_OPTION_RE.test(instr) || MAP_ITEM_RE.test(instr) || /^Opinions\s*$/i.test(instr)) break;
         if (
           /^Choose/i.test(instr) ||
-          /^Label the (?:map|plan)/i.test(instr) ||
+          LABEL_MAP_PLAN_RE.test(instr) ||
+          MATCH_ON_MAP_RE.test(instr) ||
           /^Drag the correct (letter|answer)/i.test(instr) ||
           /^Write the correct (letter|answer)/i.test(instr) ||
           /^Which\b/i.test(instr) ||
@@ -388,7 +433,8 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
         break;
       }
 
-      if (/Label the (?:map|plan) below/i.test(instructionLines.join(" "))) {
+      const instrJoined = instructionLines.join(" ");
+      if (LABEL_MAP_PLAN_RE.test(instrJoined) || MATCH_ON_MAP_RE.test(instrJoined)) {
         const items: { number: number; label: string }[] = [];
         const options: { letter: string; text: string }[] = [];
         let imageUrl: string | undefined;
@@ -409,11 +455,12 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
             j += 1;
             continue;
           }
-          const mapItem = row.match(MAP_ITEM_RE) || row.match(MATCHING_ITEM_RE);
+          const mapItem = row.match(MAP_ITEM_RE) || row.match(MATCHING_ITEM_RE) || row.match(BLANK_ONLY_ITEM_RE);
           if (mapItem) {
             const num = Number.parseInt(mapItem[1]!, 10);
             if (num >= 1 && num <= 40) {
-              items.push({ number: num, label: cleanMatchingItemLabel(mapItem[2] ?? "") });
+              const labelRaw = mapItem[2] ?? "";
+              items.push({ number: num, label: cleanMatchingItemLabel(labelRaw) });
             }
             j += 1;
             continue;
@@ -440,10 +487,15 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
         continue;
       }
 
-      if (/Choose\s+TWO\s+letters/i.test(instructionLines.join(" "))) {
-        const qNums = rangeMatch
-          ? ([Number.parseInt(rangeMatch[1]!, 10), Number.parseInt(rangeMatch[2]!, 10)] as [number, number])
-          : ([Number.parseInt(singleMatch![1]!, 10), Number.parseInt(singleMatch![1]!, 10)] as [number, number]);
+      if (CHOOSE_N_LETTERS_RE.test(instrJoined)) {
+        let qNums: number[] = [];
+        if (rangeMatch) {
+          const start = Number.parseInt(rangeMatch[1]!, 10);
+          const end = Number.parseInt(rangeMatch[2]!, 10);
+          for (let n = start; n <= end; n += 1) qNums.push(n);
+        } else if (singleMatch) {
+          qNums = [Number.parseInt(singleMatch[1]!, 10)];
+        }
         let prompt = "";
         const options: { letter: string; text: string }[] = [];
         j = i + 1;
@@ -460,7 +512,7 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
             continue;
           }
           if (QUESTIONS_RANGE_RE.test(row) || SINGLE_QUESTION_RE.test(row) || PART_HEADER_RE.test(row)) break;
-          if (/^Choose\s+TWO\s+letters/i.test(row) || /^Write\s/i.test(row)) {
+          if (CHOOSE_N_LETTERS_RE.test(row) || /^Write\s/i.test(row)) {
             j += 1;
             continue;
           }
@@ -469,23 +521,40 @@ function parsePartBody(partNumber: number, body: string, answers: Record<string,
           }
           j += 1;
         }
-        sections.push({ kind: "choose-two", questionNumbers: qNums, instructionLines, prompt, options });
+        if (qNums.length >= 2 && options.length > 0) {
+          sections.push({ kind: "choose-two", questionNumbers: qNums, instructionLines, prompt, options });
+        }
         i = j;
         continue;
       }
 
-      if (CHOOSE_FROM_BOX_RE.test(instructionLines.join(" "))) {
+      if (CHOOSE_FROM_BOX_RE.test(instrJoined)) {
         const { optionsTitle, options, itemsTitle, items, nextIndex } = parseOptionsItemsMatchingBlock(rawLines, i + 1);
         sections.push({ kind: "matching", instructionLines, optionsTitle, options, itemsTitle, items });
         i = nextIndex;
         continue;
       }
 
-      const instrText = instructionLines.join(" ");
-      if (/Write the correct (letter|answer)/i.test(instrText) && !/Label the (?:map|plan) below/i.test(instrText)) {
+      if (/Write the correct (letter|answer)/i.test(instrJoined) && !LABEL_MAP_PLAN_RE.test(instrJoined)) {
         const { optionsTitle, options, itemsTitle, items, nextIndex } = parseOptionsItemsMatchingBlock(rawLines, j);
         if (items.length > 0) {
-          sections.push({ kind: "matching", instructionLines, optionsTitle, options, itemsTitle, items });
+          /**
+           * Real-test scrapes often put place names in the A–F bank and leave
+           * `21 ……` blanks for a library/campus plan — treat as map so the image can attach.
+           */
+          const blankOnlyItems = items.every((item) => !item.label.trim() || /^[.\s…_]+$/u.test(item.label));
+          const hasLetterBank = options.length >= 3;
+          if (blankOnlyItems && hasLetterBank) {
+            sections.push({
+              kind: "map",
+              instructionLines,
+              letterRange: extractLetterRange(instrJoined),
+              items,
+              options,
+            });
+          } else {
+            sections.push({ kind: "matching", instructionLines, optionsTitle, options, itemsTitle, items });
+          }
           i = nextIndex;
           continue;
         }
@@ -576,8 +645,7 @@ export function listeningQnaPartQuestionNumbers(part: ListeningQnaPart): number[
         for (const item of section.items) nums.add(item.number);
         break;
       case "choose-two":
-        nums.add(section.questionNumbers[0]);
-        nums.add(section.questionNumbers[1]);
+        for (const n of section.questionNumbers) nums.add(n);
         break;
       case "matching":
         for (const item of section.items) nums.add(item.number);
